@@ -244,8 +244,8 @@ POR_CELDA.update([
     (_T + ('B7',), 'Hood and duct cleaning by a certified contractor (NFPA 96): quarterly if high volume or charbroil, '
                    'semiannual if moderate — the griddle and the fryers together grease up the duct fast'),
     (_T + ('D7',), 'Hood cleaning co.'), (_T + ('E7',), 'Quarterly'),
-    (_T + ('B8',), 'Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA '
-                   '1910.157); hood fire suppression inspected every 6 months (NFPA 96)'),
+    (_T + ('B8',), 'Hood fire suppression inspected every 6 months (NFPA 96) and annual extinguisher maintenance by a '
+                   'licensed fire protection company: new tag and record (OSHA 1910.157)'),          # ronda 1 m9
     (_T + ('D8',), 'Fire safety co.'),
     (_T + ('B9',), 'Extinguisher hydrostatic test by the fire protection company: Class K (wet chemical) and CO2 '
                    'units every 5 years, dry chemical as its label says (OSHA 1910.157(f); NFPA 10)'),
@@ -257,11 +257,13 @@ POR_CELDA.update([
                     'gaskets and refrigerant leak check'),
     (_T + ('D11',), 'Refrigeration tech'),
     (_T + ('A12',), '  WATER, WASTE & USED OIL'),
-    (_T + ('B13',), 'Used fryer oil pickup by a licensed recycler: file the pickup receipts (with fryers running all '
-                    'day, it is one of the biggest waste streams in a burger joint)'),
+    (_T + ('B13',), 'Used fryer oil: pickups by a licensed recycler as often as your volume needs; every quarter, check '
+                    'the receipts are on file and the outdoor container is closed and not leaking (with fryers running '
+                    'all day, it is one of the biggest waste streams in a burger joint)'),           # ronda 1 m8
     (_T + ('D13',), 'Oil recycler'),
-    (_T + ('B14',), 'Review the waste and recycling hauler contract and local recycling rules: takeout and delivery '
-                    'multiply the cardboard and packaging'),
+    (_T + ('B14',), 'Review the waste and recycling hauler contract and local recycling rules (takeout and delivery '
+                    'multiply the cardboard and packaging), and keep the grease trap pumping manifests, as often as your '
+                    'local FOG rules require'),                                                      # ronda 1 m7
     (_T + ('B15',), 'Legionella: if you have a cooling tower or at-risk hot water, keep a water management program as '
                     'your local health code requires'),
     (_T + ('D15',), 'Water treatment co.'),
@@ -338,6 +340,15 @@ for _k, _v in (
     POR_CELDA[_k] = _v
 for _f in range(20, 25):
     POR_CELDA[('07', 'Por Área', 'C%d' % _f)] = 'Counter / bar'                   # m21: «Barra» = mostrador
+# ronda 1 de la hamburguesería (burger/revision/REVISION-F2.md): celdas fijadas con la corrección EN del informe
+for _k, _v in (
+        (('06', 'Navidad', 'E13'), '2 weeks out'),                                # m1 (como la cafetería y la pizzería)
+        (('04', 'Parrillero', 'E9'), '11:15 AM'),                                 # m11: con la plancha ya encendida
+        (('05', 'Trimestral y Anual', 'E8'), 'Semiannual'),                       # m9: la supresión, cada 6 meses
+        (('B02', 'Instrucciones', 'B8'), '▸ Add the dates that matter in your area (local holidays, fairs). UK note: '
+                                         'Mothering Sunday (March), National Burger Day (last Thursday in August), bank '
+                                         'holidays and Boxing Day, in the free rows')):  # m12
+    POR_CELDA[_k] = _v
 for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'A%d' % _fila)] = _mes
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'B%d' % _fila)] = _evento
@@ -349,14 +360,18 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
 # cafetería y la pizzería). La EN los escribe como NÚMERO; los de kg y g, convertidos a lb y oz (redondeado a una
 # cifra de pedido); los de L (→ qt) y uds (→ ea), con la misma cifra.
 # ==========================================================================
+# Ronda 1 (duda D2 aprobada, como la pizzería): redondeados al formato de compra US (bacon 5 lb, patatas 20 lb = 4 bolsas
+# de 5 lb, aros 5 lb, onzas a 12, salsas de 0,5 L → 1 pt con la unidad «pt» en C26:C28); el semáforo sigue (número)
 _MINIMOS = [  # fila, ES, EN
-    (6, '40', 40), (7, '50', 50), (8, '2', 4), (9, '20', 20), (11, '40', 40), (12, '20', 20), (13, '20', 20),
-    (15, '50', 50), (16, '20', 20), (17, '300', 11), (18, '20', 20), (20, '5', 5), (21, '8', 8), (22, '5', 5),
-    (23, '0.5', 1), (24, '300', 11), (25, '1', 1), (26, '0.5', 0.5), (27, '0.5', 0.5), (28, '0.5', 0.5),
-    (30, '10', 22), (31, '2', 4), (32, '30', 30), (33, '1', 2), (35, '40', 40), (36, '40', 40), (37, '30', 30),
+    (6, '40', 40), (7, '50', 50), (8, '2', 5), (9, '20', 20), (11, '40', 40), (12, '20', 20), (13, '20', 20),
+    (15, '50', 50), (16, '20', 20), (17, '300', 12), (18, '20', 20), (20, '5', 5), (21, '8', 8), (22, '5', 5),
+    (23, '0.5', 1), (24, '300', 12), (25, '1', 1), (26, '0.5', 1), (27, '0.5', 1), (28, '0.5', 1),
+    (30, '10', 20), (31, '2', 5), (32, '30', 30), (33, '1', 2), (35, '40', 40), (36, '40', 40), (37, '30', 30),
     (38, '100', 100),
 ]
 VALORES_EN = OrderedDict((('05', 'Inventario Diario', 'D%d' % f), (es, en)) for f, es, en in _MINIMOS)
+for _f in (26, 27, 28):                                                           # BBQ, mostaza y mayonesa: 1 pt
+    POR_CELDA[('05', 'Inventario Diario', 'C%d' % _f)] = 'pt'
 
 # ==========================================================================
 # ADAPTAR (en español, con el dato US; las cifras y normas salen de REGLAS_US)
@@ -384,9 +399,9 @@ _PUNTO = ('Punto de la carne → doneness: 155 °F durante 17 s salvo que el cli
           'aviso al consumidor (FDA Food Code 3-401.11 y 3-603.11); la del menú infantil, siempre hecha')
 _POLLO = ('Pollo (nuggets, tenders, crispy): hasta 165 °F en el centro, comprobado con sonda (FDA Food Code '
           '3-401.11(A)(3)); se fríe desde congelado como diga el fabricante')
-_ACEITE = ('Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado '
-           'pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y '
-           'gafas. Sin cifra de temperatura del kit')
+_ACEITE = ('Ronda 1 m2: filtrar cada noche como diga el fabricante de la freidora (el filtrado integrado, con el aceite aún '
+           'caliente; el portátil, cuando se haya enfriado a lo que permita el manual) y cambiarlo cuando lo diga el '
+           'medidor de TPM, con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit')
 _TPM = ('Test polares → medidor de TPM (total polar materials, oil quality tester); en EE. UU. no hay límite federal: '
         'el aceite se cambia según el fabricante del medidor y de la freidora (sin cifra)')
 _ENFRIAR = ('Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de '
@@ -397,15 +412,15 @@ _BACON = 'Bacon precocinado: si se guarda, ' + _ENFRIAR[0].lower() + _ENFRIAR[1:
     _RECALENTAR[0].lower() + _RECALENTAR[1:]
 _HUEVO = ('con huevo pasteurizado, o aviso al consumidor en la carta si lleva huevo crudo o poco hecho (FDA Food Code '
           '3-603.11)')
-_CARNE_GUARDAR = ('Carne picada cruda: tapada, con fecha, a 41 °F o menos y en la balda de abajo, por debajo de lo listo '
-                  'para consumir (FDA Food Code 3-302.11)')
+_CARNE_GUARDAR = ('Carne picada cruda: tapada, con fecha, a 41 °F o menos, por debajo de lo listo para consumir y por '
+                  'encima de cualquier pollo crudo (ronda 1 m3; FDA Food Code 3-302.11)')
 _PATTIES = ('Patties formados con antelación: tapados, con fecha, a 41 °F o menos y separados de lo listo para consumir '
             '(FDA Food Code 3-302.11)')
 _APPS = 'Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps)'
 _HEREDA_ADAPTAR = [('01', 'Apertura Cocina', 'B9'), ('01', 'Apertura Cocina', 'B10'),
                    ('08', 'Apertura del Negocio', 'B8'), ('09', 'Cierre de Caja', 'B10'),
                    ('09', 'Registro Mensual', 'A37'),
-                   ('B02', 'Instrucciones', 'B8')] + [k for k in _A if k[:2] == ('09', 'Instrucciones')]
+                   ] + [k for k in _A if k[:2] == ('09', 'Instrucciones')]
 ADAPTAR = OrderedDict((k, _A[k]) for k in _HEREDA_ADAPTAR)
 ADAPTAR.update([
     # 01 · cocina (filas 12-18 de la apertura: POR_CELDA)
@@ -448,7 +463,7 @@ ADAPTAR.update([
     (('02', 'Plancha Grill', 'B15'), 'Campana para fundir = melting dome (basting cover)'),
     (('02', 'Plancha Grill', 'B21'), 'Prensa y espátulas: lavar, aclarar y sanitizar con ' + _TIRA),
     (('02', 'Línea Montaje', 'B6'), _LAVADO + '; los inserts, en la mesa refrigerada de la make line a 41 °F o menos '
-     '(FDA Food Code 3-501.16)'),
+     '(FDA Food Code 3-501.16), con la coletilla «— log reading: ____ °F» (ronda 1 m4)'),
     (('02', 'Línea Montaje', 'B10'), 'Huevo frito con la yema líquida = poco hecho: aviso al consumidor en la carta (FDA '
      'Food Code 3-603.11), o bien hecho'),
     (('02', 'Línea Montaje', 'B18'), 'Limpiar la make line completa y sanitizarla con ' + _TIRA),
@@ -480,8 +495,8 @@ ADAPTAR.update([
     # 05
     (('05', 'Instrucciones', 'B6'), 'Describe la lista US de «Quarterly & Annual»: control de plagas, campana y '
      'conductos (NFPA 96), extintores y su prueba hidrostática, extinción de la campana, gas, frío, aceite usado, '
-     'residuos y envases, legionela, agua, seguros, POS / sales tax y calibración de termómetros. Sin DDD, BIE, '
-     'Verifactu ni facturación española'),
+     'residuos, envases y trampa de grasa, legionela, agua, seguros, POS / sales tax y calibración de termómetros. '
+     'Sin DDD, BIE, Verifactu ni facturación española'),
     (('05', 'Inventario Diario', 'A6'), 'Patties de 150 g = 1/3 lb («1/3 lb patties»)'),
     (('05', 'Inventario Diario', 'A7'), 'Bolas de 80 g = 3 oz'),
     (('05', 'Limpieza Semanal', 'B9'), 'El equipo limpia los filtros de la campana; el conducto lo limpia el '
@@ -496,8 +511,9 @@ ADAPTAR.update([
      'centro (FDA Food Code 3-401.11(A)(3))'),
     (('05', 'Mantenimiento Mensual', 'B14'), 'Salidas de emergencia despejadas; añade: señales de salida (exit signs) '
      'iluminadas'),
-    (('05', 'Trimestral y Anual', 'B20'), _A[('05', 'Trimestral y Anual', 'B23')] + '; la sonda de la plancha, según su '
-     'fabricante'),
+    (('05', 'Trimestral y Anual', 'B20'), _A[('05', 'Trimestral y Anual', 'B23')] + '; ronda 1 m5: una vez al año, los '
+     'termostatos de la plancha y las sondas integradas contra un patrón; los termómetros de sonda, ice-point diario en '
+     'la estación de plancha'),
     # 06
     (('06', 'Noche Fútbol', 'A1'), 'Fútbol → fútbol americano (NFL): «Game Night / Super Bowl — Peak Sales»'),
     (('06', 'Noche Fútbol', 'B10'), 'Combo para el partido (game-day combo) en redes sociales'),
@@ -552,7 +568,8 @@ REGLAS_US.update([
                    'marking', 'FDA Food Code 2022 §3-501.16(A)(2) y §3-501.17')),
     ('temperaturas', ('plancha 200-230 °C ≈ 400–450 °F · aceite 175-180 °C ≈ 350–355 °F',
                       '[criterio del kit] cifras del ES convertidas')),
-    ('aceite', ('filtrado y cambio del aceite según el fabricante de la freidora; TPM sin límite federal',
+    ('aceite', ('filtrado cada noche según el fabricante de la freidora; cambio cuando lo diga el medidor de TPM (sin '
+                'límite federal); boil-out mensual según el fabricante',
                 '[fabricante] manual de la freidora y del medidor')),
     ('plazos_kit', ('carne picada fresca 3 días; salsas caseras 5 días; 12 min por burger', '[criterio del kit]')),
     ('agua', ('red: Consumer Confidence Report anual de la compañía; pozo propio: análisis según el departamento de salud',
@@ -566,8 +583,12 @@ REGLAS_US.update([
     ('foie', ('foie gras: venta prohibida en California', 'California Health and Safety Code §25982')),
     ('dias_fuertes', ('Super Bowl, March Madness, National Burger Month (28 de mayo: National Hamburger Day), 4 de '
                       'julio, temporada de fútbol americano, 18 de septiembre: National Cheeseburger Day, Halloween y '
-                      'Nochevieja', '[criterio del kit] calendario comercial US')),
-    ('inventario', ('mínimos de kg → lb (×2,2) y de g → oz (÷28,35); L → qt (1 qt ≈ 0,95 L); 150 g ≈ 1/3 lb',
+                      'Nochevieja; UK: National Burger Day, último jueves de agosto', '[criterio del kit] calendario '
+                      'comercial US / UK')),
+    ('utensilios_4h', ('utensilios en uso con TCS: lavar, enjuagar y desinfectar cada 4 h como mínimo',
+                       'FDA Food Code 2022 §4-602.11(C)')),
+    ('inventario', ('mínimos de kg → lb (×2,2) y de g → oz (÷28,35); L → qt (1 qt ≈ 0,95 L) o pt; 150 g ≈ 1/3 lb; '
+                    'redondeados al formato de compra US',
                     '[criterio del kit] conversión')),
 ])
 # °F que el kit puede afirmar (G7): las del base + 32 (calibración) + carne picada, plancha y aceite
@@ -681,7 +702,7 @@ def cruzar_censo(p):
     for k, (es, en) in VALORES_EN.items():
         if tx.get(k) != es:
             err.append('VALORES_EN: %r no trae en el ES %r (trae %r)' % (k, es, tx.get(k)))
-    factor = {('kg', 'lb'): 2.2046, ('g', 'oz'): 1 / 28.35, ('L', 'qt'): 1, ('uds', 'ea'): 1}
+    factor = {('kg', 'lb'): 2.2046, ('g', 'oz'): 1 / 28.35, ('L', 'qt'): 1, ('L', 'pt'): 2.113, ('uds', 'ea'): 1}
     for f, es, en in _MINIMOS:
         c = ('05', 'Inventario Diario', 'C%d' % f)
         u_es = tx.get(c)

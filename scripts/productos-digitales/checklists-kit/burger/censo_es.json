@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-18T02:17:26Z",
+  "generado": "2026-10-18T02:41:02Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-hamburgueseria",
-  "commit": "ac37ad56",
+  "commit": "41b0b0c4",
   "nota": "Censo del Kit de Tareas Recurrentes v2.0 PUBLICADO (11 xlsx). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. patrones_formula = fórmulas con las filas normalizadas a {r} (mapas.patron); «cifras» = el patrón compara con un número. tareas = filas con número en A y texto en B. dependencias = lo que depende de España (F1-inventario §1)."
  },
  "libros": {
