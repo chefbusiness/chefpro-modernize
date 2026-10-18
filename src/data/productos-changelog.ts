@@ -846,7 +846,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
         ],
       },
     ],
+  },  'catering-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 347 catering and event tasks already written, adapted to the US with notes for the UK.',
+          'US catering roles and areas (event chef, banquet captain, server / event runner, bartender; commissary, transport, setup, breakdown, office), BEOs and guaranteed counts, due-by times on a 12-hour clock; the counter on each checklist leaves out the tasks marked N/A.',
+          'Food safety off-site under the FDA Food Code: hot food at 135 °F or above and cold at 41 °F or below when loading, every 30 minutes on the road, on the buffet and at unloading; time as a public health control (served within 4 hours, then discarded; cold food up to 6 hours if it never passes 70 °F); chafing dishes hold, they do not reheat (165 °F first); leftovers cooled by the rule or discarded; parasite destruction for fish served raw; buffet signs and tray cards with the 9 major allergens (14 noted for the UK).',
+          'Venue setup with a temporary food establishment permit where required, a portable handwashing station, the venue\'s and fire marshal\'s open-flame rules for chafing fuel and tents; open bar under the license your state requires, 21+ with ID and responsible-service training (TIPS, ServSafe Alcohol).',
+          'A Quarterly & Annual sheet for the commissary: pest control, hood cleaning (NFPA 96), fire extinguishers (OSHA) and hood suppression, vehicle registration, commercial auto insurance and county permits, refrigeration by an EPA 608 technician, food handler cards and a Certified Food Protection Manager, insurance with the COI, I-9 and W-4, and sales tax settings.',
+          'The money for each event in US dollars: deposit, event settlement with the sales tax rate you enter applied to the taxable subtotal, balance due and an OVERDUE status, a billing log for 25 events and an optional cash bar count; a mandatory service charge is kept apart from the gratuity: what you pay out of it to staff is wages (IRS Rev. Rul. 2012-18).',
+          'A busy season calendar with 22 US dates, from Super Bowl Sunday and wedding season to July 4 cookouts, Thanksgiving and holiday parties, plus a UK note. Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
   },
+
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

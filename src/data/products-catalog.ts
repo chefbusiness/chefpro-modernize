@@ -219,11 +219,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-catering',
     url: '/kit-tareas-catering',
     price: '€12',
-    name: { es: 'Tareas: Catering / Eventos', en: 'Tasks: Catering / Events' },
+    name: { es: 'Tareas: Catering / Eventos', en: 'Catering Checklists Kit Pro' },
     description: {
       es: 'Listas de evento, montaje, servicio, desmontaje, trazabilidad.',
-      en: 'Event checklists: setup, service, breakdown, traceability.',
+      en: 'Catering checklists for off-site production, transport, setup and breakdown, the event manager, staff by role, the commissary and deposits and payments by event: 347 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `catering-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/catering-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-hotel': {
     id: 'kit-tareas-hotel',

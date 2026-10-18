@@ -1,0 +1,43 @@
+{
+  "producto": "kit-tareas-catering",
+  "fecha": "2026-10-18",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · Catering Checklists Kit Pro (catering/SPEC D1, 18-oct-2026). El id es el del CATÁLOGO (products-catalog.ts),",
+    "que con urlByLang.en pinta la landing EN /en/digital-products/catering-checklist-templates y $19.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto kit-tareas-catering --config scripts/astro-migration/fase8x-config/kit-tareas-catering-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Posts: los dos del blog EN que tratan el catering de verdad: Catering AI+ (128 menciones de catering/banquet/wedding)",
+    "y Cloud Kitchen Business Models (25, con su «Model 7: Catering Cloud Kitchen»: furgonetas refrigeradas, chafing",
+    "dishes, eventos corporativos). El siguiente (Allergen ID, 8) solo nombra el catering en prompts sueltos: fuera.",
+    "Víctimas = SLUGS EN de la landing, por relevancia: el Restaurant Financial Plan Kit en el de Catering AI+ (se quedan",
+    "el HACCP Kit por la cadena de frío y el Food Cost Kit por el costing del post) y el eBook de prompts en el de cloud",
+    "kitchens (se quedan Inventory y Scheduling, que un cloud kitchen usa a diario).",
+    "Nunca el Restaurant, el Bar ni el Coffee Shop Checklists Kit Pro, hermanos de línea y venta cruzada del dashboard."
+  ],
+  "nunca": [
+    "restaurant-checklist-templates",
+    "bar-checklist-templates",
+    "coffee-shop-checklist-templates"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 2,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "prompt-library-catering": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-financial-plan-templates",
+      "ancla_n": 10,
+      "parrafo": "Prompts plan the event; checklists run it on the day. The {ENLACE} writes that routine down in Excel: production from the BEO and packing in hotel pans and insulated carriers, transport with holding temperatures logged (135 °F or above hot, 41 °F or below cold), venue setup and breakdown, a checklist each for the event chef, banquet captain, server and bartender, and the deposit, settlement and balance of every event."
+    },
+    "cloud-kitchen-business-models": {
+      "accion": "SUSTITUIR",
+      "victima": "ai-prompts-for-restaurants",
+      "ancla_n": 10,
+      "parrafo": "A catering kitchen lives or dies on what happens after the food leaves the building. The {ENLACE} covers that side with the tasks already written: a commissary opening and closing checklist (the day's BEOs, a route sheet for each vehicle, insulated carriers loaded with the departure temperature logged), transport and delivery, venue setup and breakdown, and the deposit, invoice and balance of each event."
+    }
+  }
+}
