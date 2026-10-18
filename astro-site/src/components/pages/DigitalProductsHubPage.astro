@@ -61,6 +61,29 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Ghost Kitchen Checklists Kit Pro (18-oct-2026, sexto hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Dark Kitchen», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
+  // «293 pre-filled tasks», «Glovo, Uber Eats, Just Eat», «riders and dispatch» y «sign it off»; la EN trae 331
+  // tareas, 9 + 3 bonus, 12 ficheros, DoorDash, Uber Eats y Grubhub, y los repartidores de las apps). Imagen: la misma
+  // (sin texto en español).
+  {
+    name: 'Ghost Kitchen Checklists Kit Pro',
+    slug: '/kit-tareas-dark-kitchen',
+    description: '9 templates + 3 bonuses (12 files) with 331 ghost kitchen tasks already written: opening and closing, hot and cold stations, packing by brand, delivery apps and driver pickup, manager, duties by role, cleaning schedule, daily inventory and cash drawer count. Print it, delegate it, check it off.',
+    features: [
+      'Multi-brand opening and closing: kitchen and packing',
+      'Brands on and off in DoorDash, Uber Eats and Grubhub',
+      'Packing by brand, tamper-evident seals, hot and cold apart',
+      'Roles: multi-brand cook, packer, app manager, operations manager',
+      'Daily inventory, cleaning schedule and cash drawer count',
+    ],
+    iconName: 'Warehouse',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'dark-kitchen'],
+  },
   // Burger Joint Checklists Kit Pro (18-oct-2026, quinto hermano vertical del Restaurant Checklists Kit Pro): el más
   // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
   // («Recurring Tasks: Burger Joint», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
@@ -727,22 +750,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
-  },
-  {
-    name: 'Recurring Tasks: Dark Kitchen',
-    slug: '/kit-tareas-dark-kitchen',
-    description: '293 pre-filled opening, closing & cleaning checklist tasks for a ghost kitchen: multi-brand production stations, packaging, platforms (Glovo, Uber Eats, Just Eat), riders and dispatch. Print it, delegate it, and sign it off.',
-    features: [
-      'Multi-brand / ghost kitchen',
-      'Tablet and platform management',
-      'Brand-specific packaging',
-      'Rider and dispatch coordination',
-    ],
-    iconName: 'Warehouse',
-    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'dark-kitchen'],
   },
   {
     name: 'Recurring Tasks: Pastry Shop / Bakery',

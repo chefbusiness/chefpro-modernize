@@ -342,12 +342,17 @@ POR_CELDA = OrderedDict([
     (('09', 'Registro Mensual', 'H4'), 'Over/Short'), (('09', 'Registro Mensual', 'I4'), 'Bank Deposit'),
     (('09', 'Registro Mensual', 'J4'), 'Closed by'), (('09', 'Registro Mensual', 'A36'), 'TOTALS'),
     # 02 · pescado crudo: destrucción de parásitos (D10, FDA Food Code 3-402.11/3-402.12 y 3-203.12)
+    # (errata de texto del 18-oct-2026, desde la ronda 1 M2 de la ghost kitchen: las TRES opciones de 3-402.11, con la
+    # temperatura de cada tramo; el registro es 3-402.12)
     (('02', 'Fríos', 'B10'),
-     'Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F or '
-     'below for 7 days (or −31 °F or below until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)'),
+     'Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction (FDA Food Code 3-402.11): confirm it was '
+     'frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or '
+     'below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record '
+     '90 days (FDA Food Code 3-402.12)'),
     (('02', 'Mise en Place', 'B10'),
-     'Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below 7 days, or −31 °F or below '
-     '+ 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days'),
+     'Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below for 7 days; or −31 °F or below '
+     'until solid, then 15 h at −31 °F or below or 24 h at −4 °F or below; FDA Food Code 3-402.11), record kept 90 days '
+     '(FDA Food Code 3-402.12); raw oysters and clams: shellstock tags kept 90 days'),
     # 03 · conservación de fichajes (D11, 29 CFR 516.5-516.6)
     (('03', 'Mensual Manager', 'B16'),
      "File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require "

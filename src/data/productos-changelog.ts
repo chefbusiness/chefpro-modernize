@@ -887,6 +887,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'ghost-kitchen-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 331 ghost kitchen tasks already written, adapted to the US with notes for the UK.',
+          'US ghost kitchen roles and areas (line cooks, hot and cold station cooks, packer, app manager, shift manager, dishwasher / prep; kitchen, packing, driver pickup, office and storage), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Delivery with third-party apps (DoorDash, Uber Eats, Grubhub): order tablets, every brand turned on and off in each app, orders accepted in under 30 seconds, menus, 86s and allergens in each app listing, refunds, reviews, sales by brand and app, and app commissions by plan (some cities, such as New York and San Francisco, cap them). The whole-site checklist in a safe order: brands go live only once the tablets, printers and prep times are checked, and at close they go off before the alarm and the lock-up.',
+          "Food safety under the FDA Food Code: hot food held at 135 °F or above until it is packed and cold food at 41 °F or below, in separate bags until pickup; chicken to 165 °F, ground beef to 155 °F for 17 seconds and fish to 145 °F for 15 seconds, checked with a probe; raw fish for poke and sushi only if it was frozen to kill parasites (−4 °F for 7 days or −31 °F plus 15 hours) or the supplier states it in writing, with a consumer advisory on the app listing; sushi rice at 41 °F, under time as a public health control or acidified with a variance and a HACCP plan; cooling by the two-stage rule, reheating to 165 °F, date marking, sanitizer checked with test strips, and the 9 major allergens (the UK's 14 noted, before the order and at delivery).",
+          "Tamper-evident seals on every delivery bag (required in California for ready-to-eat food picked up by an app's driver; elsewhere, check local rules), allergen orders labeled and kept apart on the pickup shelf, and a brand launch checklist with the health permit and each brand's trade name (DBA) where the state requires it.",
+          'A Quarterly & Annual sheet for a US ghost kitchen: pest control, hood and duct cleaning under NFPA 96 (quarterly for a high-volume kitchen that cooks all day, semiannual if moderate), fire extinguishers (OSHA) with their hydrostatic test and hood suppression, gas, refrigeration by an EPA 608 technician, used fryer oil pickup by a licensed recycler, cardboard and plastic pickup by a hauler, thermometer calibration, insurance with products coverage, and the delivery app contracts, commissions and sales tax (marketplace facilitator rules vary by state). Fryer oil filtered and changed the way the fryer maker says, with no blanket temperature.',
+          "Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a daily inventory of 32 items in lb, qt, each and sets with par levels, packaging for each brand included; a delivery calendar with 22 US dates, from Super Bowl Sunday, March Madness and Cinco de Mayo to football season, Thanksgiving, holiday office parties and New Year's Eve, plus 5 rows for your own and a UK note.",
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'burger-joint-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',

@@ -51,6 +51,8 @@ TEMAS = {
     'pizza-shop-checklist-templates': ['pizza', 'pizzeria', 'pizzaiolo', 'neapolitan', 'wood-fired', 'dough ball', 'make line', 'pizza oven', 'delivery driver'],
     # Burger Joint Checklists Kit Pro (18-oct-2026): checklists de hamburguesería, plancha, smash burgers, freidora y make line.
     'burger-joint-checklist-templates': ['burger', 'hamburger', 'cheeseburger', 'smash burger', 'patty', 'patties', 'griddle', 'flat-top', 'fry station', 'fryer oil'],
+    # Ghost Kitchen Checklists Kit Pro (18-oct-2026): checklists de ghost / cloud kitchen multimarca, apps de delivery y empaquetado.
+    'ghost-kitchen-checklist-templates': ['ghost kitchen', 'cloud kitchen', 'virtual kitchen', 'virtual brand', 'delivery-only', 'multi-brand', 'doordash', 'grubhub', 'order tablet', 'tamper-evident'],
 }
 
 

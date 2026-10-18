@@ -1,0 +1,1104 @@
+{
+ "c0005": {
+  "en": "How the counter works",
+  "origen": "c0018",
+  "via": "exacta"
+ },
+ "c0006": {
+  "en": "▸ Mark ✓ in the \"✓ Done\" column (dropdown): that is the column that counts completed tasks.",
+  "origen": "c0019",
+  "via": "exacta"
+ },
+ "c0008": {
+  "en": "▸ The denominator counts the tasks written in the \"Task\" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.",
+  "origen": "c0021",
+  "via": "exacta"
+ },
+ "c0009": {
+  "en": "Free rows",
+  "origen": "c0022",
+  "via": "exacta"
+ },
+ "c0010": {
+  "en": "▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.",
+  "origen": "c0023",
+  "via": "exacta"
+ },
+ "c0011": {
+  "en": "▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.",
+  "origen": "c0024",
+  "via": "exacta"
+ },
+ "c0012": {
+  "en": "Sheet protection",
+  "origen": "c0025",
+  "via": "exacta"
+ },
+ "c0013": {
+  "en": "▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.",
+  "origen": "c0026",
+  "via": "exacta"
+ },
+ "c0014": {
+  "en": "▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.",
+  "origen": "c0027",
+  "via": "exacta"
+ },
+ "c0015": {
+  "en": "Works with",
+  "origen": "c0028",
+  "via": "exacta"
+ },
+ "c0018": {
+  "en": "▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.",
+  "origen": "c0031",
+  "via": "exacta"
+ },
+ "c0020": {
+  "en": "▸ You are in 01-ghost-kitchen-opening-closing-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx.",
+  "origen": "c0033",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx"
+  ]
+ },
+ "c0022": {
+  "en": "Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es",
+  "origen": "c0035",
+  "via": "exacta"
+ },
+ "c0023": {
+  "en": "Contact: info@aichef.pro",
+  "origen": "c0036",
+  "via": "exacta"
+ },
+ "c0027": {
+  "en": "Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________",
+  "origen": "c0031",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0035": {
+  "en": "  PERSONAL HYGIENE",
+  "origen": "c0048",
+  "via": "exacta"
+ },
+ "c0036": {
+  "en": "Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)",
+  "origen": "c0049",
+  "via": "exacta"
+ },
+ "c0039": {
+  "en": "No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics",
+  "origen": "c0052",
+  "via": "exacta"
+ },
+ "c0040": {
+  "en": "Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top",
+  "origen": "c0053",
+  "via": "exacta"
+ },
+ "c0042": {
+  "en": "Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)",
+  "origen": "c0055",
+  "via": "exacta"
+ },
+ "c0044": {
+  "en": "  EQUIPMENT",
+  "origen": "c0459",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0050": {
+  "en": "Check that the coolers (walk-in or reach-in) and the freezer ran all night and log the temperatures (cooler 41 °F or below, freezer 0 °F or below) — log reading: cooler ____ °F · freezer ____ °F. If out of range, don't use the product until it's been assessed",
+  "origen": "c0055",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0051": {
+  "en": "  MISE EN PLACE",
+  "origen": "c0077",
+  "via": "exacta"
+ },
+ "c0057": {
+  "en": "Check stock of every ingredient on the line",
+  "origen": "c0187",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0078": {
+  "en": "Check soap and paper towels in dispensers",
+  "origen": "c0078",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0082": {
+  "en": "Invalid mark",
+  "origen": "c0097",
+  "via": "exacta"
+ },
+ "c0083": {
+  "en": "Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending.",
+  "origen": "c0098",
+  "via": "exacta"
+ },
+ "c0085": {
+  "en": "  PRODUCT",
+  "origen": "c0108",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0095": {
+  "en": "Check walk-ins are closed and at temp (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F",
+  "origen": "c0119",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0097": {
+  "en": "  CLEANING",
+  "origen": "c0151",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0101": {
+  "en": "Sweep and mop the floor",
+  "origen": "c0134",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0106": {
+  "en": "Turn off the delivery tablets",
+  "origen": "c0139",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0109": {
+  "en": "Place tomorrow's orders",
+  "origen": "c0417",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0110": {
+  "en": "  TOMORROW'S PREP",
+  "origen": "c0126",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0111": {
+  "en": "Thaw tomorrow's needs in the walk-in at 41 °F or below (FDA 3-501.13), never at room temp",
+  "origen": "c0130",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0113": {
+  "en": "Make tomorrow's mise en place list",
+  "origen": "c0167",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0125": {
+  "en": "▸ You are in 02-cloud-kitchen-station-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c0229",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 02-kitchen-station-checklists.xlsx → 02-cloud-kitchen-station-checklists.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0134": {
+  "en": "  DURING",
+  "origen": "c0531",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0140": {
+  "en": "  AFTER",
+  "origen": "c0170",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0145": {
+  "en": "Wash the leafy greens and any produce served raw under running potable water. If you use a produce wash or chlorine, only a product approved for fruits and vegetables, at the label dose, and RINSE well",
+  "origen": "c0251",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0180": {
+  "en": "▸ You are in 03-ghost-kitchen-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c0313",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 03-restaurant-manager-checklist.xlsx → 03-ghost-kitchen-manager-checklist.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0197": {
+  "en": "  AT CLOSE",
+  "origen": "c0318",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0203": {
+  "en": "Review and approve team time-clock punches (in, out, breaks) in the POS or time-clock app",
+  "origen": "c0342",
+  "via": "exacta"
+ },
+ "c0204": {
+  "en": "Weekly Checklist (Monday)",
+  "origen": "c0229",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0205": {
+  "en": "Week of ___/___/______ to ___/___/______    Manager: _________________________",
+  "origen": "c0347",
+  "via": "exacta"
+ },
+ "c0207": {
+  "en": "  ANALYSIS",
+  "origen": "c0328",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0215": {
+  "en": "  ORDERS",
+  "origen": "c0244",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0218": {
+  "en": "Check cleaning supply stock",
+  "origen": "c0372",
+  "via": "exacta"
+ },
+ "c0225": {
+  "en": "  MAINTENANCE",
+  "origen": "c0407",
+  "via": "exacta"
+ },
+ "c0226": {
+  "en": "Supervise deep cleaning",
+  "origen": "c0246",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0228": {
+  "en": "Monthly Checklist",
+  "origen": "c0249",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0229": {
+  "en": "Month: ________________   Year: ______    Manager: _________________________",
+  "origen": "c0390",
+  "via": "exacta"
+ },
+ "c0231": {
+  "en": "  FINANCIAL",
+  "origen": "c0356",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0251": {
+  "en": "Shift Handover",
+  "origen": "c0271",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0252": {
+  "en": "  STATUS",
+  "origen": "c0281",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0257": {
+  "en": "  STOCK",
+  "origen": "c0290",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0261": {
+  "en": "  INCIDENTS",
+  "origen": "c0389",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0270": {
+  "en": "▸ You are in 04-virtual-kitchen-duties-by-role.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c0442",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 04-daily-duties-side-work-by-role.xlsx → 04-virtual-kitchen-duties-by-role.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0272": {
+  "en": "  OPENING",
+  "origen": "c0406",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0278": {
+  "en": "  PRODUCTION",
+  "origen": "c0441",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0285": {
+  "en": "  CLOSING",
+  "origen": "c0415",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0320": {
+  "en": "Check the full team is in",
+  "origen": "c0332",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0327": {
+  "en": "Supervise the full close",
+  "origen": "c0339",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0554": {
+  "en": "What it solves",
+  "origen": "c0778",
+  "via": "exacta"
+ },
+ "c0557": {
+  "en": "How to use this template",
+  "origen": "c0781",
+  "via": "exacta"
+ },
+ "c0337": {
+  "en": "Quarterly, annual and freezer shelf life",
+  "origen": "c0530",
+  "via": "exacta"
+ },
+ "c0341": {
+  "en": "▸ You are in 05-cloud-kitchen-cleaning-checklist-inventory-maintenance.xlsx: what is NOT daily (weekly, monthly, quarterly and annual). The day-to-day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c0534",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 05-restaurant-cleaning-schedule.xlsx → 05-cloud-kitchen-cleaning-checklist-inventory-maintenance.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0344": {
+  "en": "Product",
+  "origen": "c0409",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0345": {
+  "en": "On hand",
+  "origen": "c0502",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0347": {
+  "en": "Par",
+  "origen": "c0504",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0348": {
+  "en": "Status",
+  "origen": "c0505",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0349": {
+  "en": "Order",
+  "origen": "c0392",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0350": {
+  "en": "  PROTEINS",
+  "origen": "c0275",
+  "via": "exacta"
+ },
+ "c0362": {
+  "en": "  PRODUCE & FRESH",
+  "origen": "c0422",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0364": {
+  "en": "Tomato",
+  "origen": "c0387",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0365": {
+  "en": "Onion",
+  "origen": "c0426",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0366": {
+  "en": "Avocado",
+  "origen": "c0538",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0375": {
+  "en": "BBQ sauce",
+  "origen": "c0393",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0387": {
+  "en": "Napkins",
+  "origen": "c0550",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0391": {
+  "en": "Weekly Deep Cleaning Checklist",
+  "origen": "c0535",
+  "via": "exacta"
+ },
+ "c0392": {
+  "en": "  KITCHEN",
+  "origen": "c0597",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0396": {
+  "en": "Clean behind and under equipment",
+  "origen": "c0601",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0399": {
+  "en": "Mop floors with degreaser",
+  "origen": "c0452",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0404": {
+  "en": "FIFO Check — Expiration Dates",
+  "origen": "c0417",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0405": {
+  "en": "  WALK-INS",
+  "origen": "c0456",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0409": {
+  "en": "Rotate: oldest in front",
+  "origen": "c0422",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0410": {
+  "en": "Toss expired items",
+  "origen": "c0423",
+  "via": "exacta",
+  "fuente": "burger"
+ },
+ "c0411": {
+  "en": "  STORAGE",
+  "origen": "c0463",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0415": {
+  "en": "APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier",
+  "origen": "c0583",
+  "via": "exacta"
+ },
+ "c0432": {
+  "en": "Label with BOTH the production date AND the freeze date: the shelf life in this table counts from the freeze date",
+  "origen": "c0610",
+  "via": "exacta"
+ },
+ "c0438": {
+  "en": "Loses texture before safety; thaw and refresh in the oven",
+  "origen": "c0647",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0452": {
+  "en": "  SAFETY",
+  "origen": "c0628",
+  "via": "exacta"
+ },
+ "c0454": {
+  "en": "First-aid kit: stock, expiration dates",
+  "origen": "c0503",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0455": {
+  "en": "Quarterly & Annual Maintenance — Contracted Services",
+  "origen": "c0633",
+  "via": "exacta"
+ },
+ "c0457": {
+  "en": "  CONTRACTED — LICENSED COMPANY",
+  "origen": "c0635",
+  "via": "exacta"
+ },
+ "c0487": {
+  "en": "▸ You are in 06-ghost-kitchen-peak-and-event-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c0483",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 06-bar-event-checklists.xlsx → 06-ghost-kitchen-peak-and-event-checklists.xlsx",
+   "fichero 08-venue-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-bar-opening-closing-checklists.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ],
+  "fuente": "bar"
+ },
+ "c0504": {
+  "en": "Event / season: ___________________    Date: ___/___/______    Manager: _________________________",
+  "origen": "c0674",
+  "via": "exacta"
+ },
+ "c0506": {
+  "en": "  PREP",
+  "origen": "c0563",
+  "via": "exacta",
+  "fuente": "pizza"
+ },
+ "c0555": {
+  "en": "▸ Three master templates already structured —by time of day, by area and by role— with the sections in place and the zone or assignee preloaded: you only type your tasks.",
+  "origen": "c0779",
+  "via": "exacta"
+ },
+ "c0556": {
+  "en": "▸ Type in the GREEN cells of the \"Task\" column, under the matching section. The counter starts at 0 and goes up as you type: it counts what is there, not a fixed number.",
+  "origen": "c0780",
+  "via": "exacta"
+ },
+ "c0558": {
+  "en": "▸ Copy the structure of the pre-filled templates",
+  "origen": "c0782",
+  "via": "exacta"
+ },
+ "c0559": {
+  "en": "▸ Customize: add tasks, change assignees, adjust times",
+  "origen": "c0783",
+  "via": "exacta"
+ },
+ "c0560": {
+  "en": "▸ You can duplicate tabs (right-click → \"Move or Copy\")",
+  "origen": "c0784",
+  "via": "exacta"
+ },
+ "c0561": {
+  "en": "Customization tips",
+  "origen": "c0785",
+  "via": "exacta"
+ },
+ "c0562": {
+  "en": "▸ Group tasks by time of day (opening, service, closing)",
+  "origen": "c0786",
+  "via": "exacta"
+ },
+ "c0563": {
+  "en": "▸ Always assign an owner — tasks without an owner don't get done",
+  "origen": "c0787",
+  "via": "exacta"
+ },
+ "c0564": {
+  "en": "▸ Set a realistic due-by time — specific beats generic",
+  "origen": "c0788",
+  "via": "exacta"
+ },
+ "c0565": {
+  "en": "▸ Review and update the lists with your team every month",
+  "origen": "c0789",
+  "via": "exacta"
+ },
+ "c0566": {
+  "en": "▸ Print on US Letter and leave room for the shift manager's signature",
+  "origen": "c0790",
+  "via": "exacta"
+ },
+ "c0567": {
+  "en": "▸ You are in 07-blank-ghost-kitchen-checklist-template.xlsx: this is where you build YOUR lists when none of the others fit. Copy the structure of the one closest to what you need.",
+  "origen": "c0791",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 07-blank-checklist-template.xlsx → 07-blank-ghost-kitchen-checklist-template.xlsx"
+  ]
+ },
+ "c0568": {
+  "en": "Blank Template — By Time of Day",
+  "origen": "c0792",
+  "via": "exacta"
+ },
+ "c0569": {
+  "en": "Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________",
+  "origen": "c0040",
+  "via": "exacta"
+ },
+ "c0570": {
+  "en": "  OPENING — type your opening tasks below",
+  "origen": "c0793",
+  "via": "exacta"
+ },
+ "c0573": {
+  "en": "  SERVICE — type your service tasks below",
+  "origen": "c0796",
+  "via": "exacta"
+ },
+ "c0574": {
+  "en": "  CLOSING — type your closing tasks below",
+  "origen": "c0797",
+  "via": "exacta"
+ },
+ "c0577": {
+  "en": "Blank Template — By Work Area",
+  "origen": "c0798",
+  "via": "exacta"
+ },
+ "c0578": {
+  "en": "Date: ___/___/______    Manager: _________________________",
+  "origen": "c0799",
+  "via": "exacta"
+ },
+ "c0579": {
+  "en": "  KITCHEN — type your kitchen tasks below",
+  "origen": "c0800",
+  "via": "exacta"
+ },
+ "c0584": {
+  "en": "Blank Template — By Role",
+  "origen": "c0803",
+  "via": "exacta"
+ },
+ "c0587": {
+  "en": "  MANAGEMENT — type your management tasks below",
+  "origen": "c0804",
+  "via": "exacta"
+ },
+ "c0595": {
+  "en": "How to use",
+  "origen": "c0812",
+  "via": "exacta"
+ },
+ "c0597": {
+  "en": "▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.",
+  "origen": "c0814",
+  "via": "exacta"
+ },
+ "c0598": {
+  "en": "Editable cells",
+  "origen": "c0815",
+  "via": "exacta"
+ },
+ "c0599": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.",
+  "origen": "c0816",
+  "via": "exacta"
+ },
+ "c0600": {
+  "en": "▸ You are in 08-delivery-only-kitchen-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-ghost-kitchen-opening-closing-checklists.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.",
+  "origen": "c0817",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0602": {
+  "en": "Date: ____/____/________",
+  "origen": "c0819",
+  "via": "exacta"
+ },
+ "c0603": {
+  "en": "Shift manager: _________________________",
+  "origen": "c0820",
+  "via": "exacta"
+ },
+ "c0604": {
+  "en": "Disarm the alarm",
+  "origen": "c0821",
+  "via": "exacta"
+ },
+ "c0607": {
+  "en": "Turn on the main lights (interior and exterior)",
+  "origen": "c0823",
+  "via": "exacta"
+ },
+ "c0608": {
+  "en": "Turn on HVAC / heat depending on the season",
+  "origen": "c0824",
+  "via": "exacta"
+ },
+ "c0612": {
+  "en": "Turn on the POS / card terminal",
+  "origen": "c0828",
+  "via": "exacta"
+ },
+ "c0630": {
+  "en": "Manager signature: _________________________     Completion time: ________",
+  "origen": "c0842",
+  "via": "exacta"
+ },
+ "c0655": {
+  "en": "How to use — Cash Drawer Opening",
+  "origen": "c0863",
+  "via": "exacta"
+ },
+ "c0656": {
+  "en": "▸ Count the starting bank and type the amount in the GREEN cell \"Starting bank (opening float)\". The closing sheet reads it from there: no need to retype it.",
+  "origen": "c0864",
+  "via": "exacta"
+ },
+ "c0657": {
+  "en": "How to use — Cash Drawer Closing",
+  "origen": "c0865",
+  "via": "exacta"
+ },
+ "c0658": {
+  "en": "▸ In \"Cash Count by Denomination\" fill in ONLY the \"Quantity\" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a \"25¢ roll\" counts $10 and a \"10¢ roll\" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.",
+  "origen": "c0866",
+  "via": "exacta"
+ },
+ "c0659": {
+  "en": "▸ In the \"Closing Summary\" you only type three figures: \"Card sales, excl. tips\", \"Other tenders + card tips paid in cash\" and \"POS Z report: sales + tax, excl. tips\" (net sales plus sales tax, without tips or gratuities; many POS \"total\" lines include tips). Everything else is a formula.",
+  "origen": "c0867",
+  "via": "exacta"
+ },
+ "c0660": {
+  "en": "▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.",
+  "origen": "c0868",
+  "via": "exacta"
+ },
+ "c0661": {
+  "en": "▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.",
+  "origen": "c0869",
+  "via": "exacta"
+ },
+ "c0662": {
+  "en": "▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.",
+  "origen": "c0870",
+  "via": "exacta"
+ },
+ "c0663": {
+  "en": "▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.",
+  "origen": "c0871",
+  "via": "exacta"
+ },
+ "c0664": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.",
+  "origen": "c0872",
+  "via": "exacta"
+ },
+ "c0665": {
+  "en": "▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and the detail by zone in 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c0873",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0666": {
+  "en": "Cash Drawer Opening Checklist",
+  "origen": "c0874",
+  "via": "sufijo"
+ },
+ "c0667": {
+  "en": "Manager: _________________________",
+  "origen": "c0875",
+  "via": "exacta"
+ },
+ "c0668": {
+  "en": "Verify yesterday's starting bank",
+  "origen": "c0876",
+  "via": "exacta"
+ },
+ "c0670": {
+  "en": "Count the opening starting bank",
+  "origen": "c0878",
+  "via": "exacta"
+ },
+ "c0671": {
+  "en": "Write the starting bank in the green cell below",
+  "origen": "c0879",
+  "via": "exacta"
+ },
+ "c0672": {
+  "en": "Check there is enough change (coins, small bills)",
+  "origen": "c0880",
+  "via": "exacta"
+ },
+ "c0673": {
+  "en": "Check that the POS is on and open the register shift",
+  "origen": "c0881",
+  "via": "exacta"
+ },
+ "c0674": {
+  "en": "Print the opening X report (start-of-day report)",
+  "origen": "c0882",
+  "via": "exacta"
+ },
+ "c0675": {
+  "en": "Check the receipt paper roll",
+  "origen": "c0883",
+  "via": "exacta"
+ },
+ "c0676": {
+  "en": "Check the card terminal works",
+  "origen": "c0884",
+  "via": "exacta"
+ },
+ "c0677": {
+  "en": "Check the payment gateway connection",
+  "origen": "c0885",
+  "via": "exacta"
+ },
+ "c0678": {
+  "en": "Note issues from the previous shift",
+  "origen": "c0886",
+  "via": "exacta"
+ },
+ "c0679": {
+  "en": "Opening manager sign-off",
+  "origen": "c0887",
+  "via": "exacta"
+ },
+ "c0681": {
+  "en": "Deducted from cash on the \"Cash Drawer Closing\" sheet",
+  "origen": "c0889",
+  "via": "exacta"
+ },
+ "c0682": {
+  "en": "Manager signature: _________________________     Time: ________",
+  "origen": "c0890",
+  "via": "exacta"
+ },
+ "c0683": {
+  "en": "Cash Drawer Closing Checklist",
+  "origen": "c0891",
+  "via": "sufijo"
+ },
+ "c0684": {
+  "en": "Print the closing Z report (end-of-day report)",
+  "origen": "c0892",
+  "via": "exacta"
+ },
+ "c0685": {
+  "en": "Cash count by denomination (see table below)",
+  "origen": "c0893",
+  "via": "exacta"
+ },
+ "c0686": {
+  "en": "Calculate total cash",
+  "origen": "c0894",
+  "via": "exacta"
+ },
+ "c0689": {
+  "en": "Total collected = (cash counted − starting bank) + card sales + other",
+  "origen": "c0897",
+  "via": "exacta"
+ },
+ "c0690": {
+  "en": "Compare with the POS Z report → calculate the over/short",
+  "origen": "c0898",
+  "via": "exacta"
+ },
+ "c0691": {
+  "en": "Log the day's refunds",
+  "origen": "c0899",
+  "via": "exacta"
+ },
+ "c0692": {
+  "en": "Log the day's voids",
+  "origen": "c0900",
+  "via": "exacta"
+ },
+ "c0693": {
+  "en": "Set aside tomorrow's starting bank",
+  "origen": "c0901",
+  "via": "exacta"
+ },
+ "c0694": {
+  "en": "Prepare the bank deposit / put it in the safe",
+  "origen": "c0902",
+  "via": "exacta"
+ },
+ "c0695": {
+  "en": "Closing manager sign-off",
+  "origen": "c0903",
+  "via": "exacta"
+ },
+ "c0729": {
+  "en": "Invalid quantity",
+  "origen": "c0937",
+  "via": "exacta"
+ },
+ "c0730": {
+  "en": "Enter how many bills, coins or rolls: a whole number (0 or more), no decimals.",
+  "origen": "c0938",
+  "via": "exacta"
+ },
+ "c0731": {
+  "en": "Monthly Cash Log",
+  "origen": "c0939",
+  "via": "sufijo"
+ },
+ "c0732": {
+  "en": "Month: ________________     Year: ________",
+  "origen": "c0940",
+  "via": "exacta"
+ },
+ "c0733": {
+  "en": "General manager: _________________________",
+  "origen": "c0941",
+  "via": "exacta"
+ },
+ "c0743": {
+  "en": "\"Cash Counted\" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, \"Starting Bank\" is the AVERAGE starting bank of the days logged (a balance is not summed) and \"Over/Short\" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. \"Card Sales (no tips)\" excludes tips; \"Other + Tips Paid\" = other tenders + card tips paid in cash from the drawer. \"POS Z\" = net sales + sales tax, without tips.",
+  "origen": "c0951",
+  "via": "exacta"
+ },
+ "c0748": {
+  "en": "▸ Share it with the team at the 5-10 minute pre-shift meeting",
+  "origen": "c0956",
+  "via": "exacta"
+ },
+ "c0749": {
+  "en": "▸ Print it and post it at the pass for reference during service",
+  "origen": "c0957",
+  "via": "exacta"
+ },
+ "c0750": {
+  "en": "▸ You are in BONUS-01-ghost-kitchen-pre-shift-meeting-template.xlsx: the pre-shift meeting opens the shift that is then worked with 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c1002",
+  "via": "exacta",
+  "ajustes": [
+   "fichero BONUS-01-coffee-shop-pre-shift-meeting-template.xlsx → BONUS-01-ghost-kitchen-pre-shift-meeting-template.xlsx",
+   "fichero 01-coffee-shop-opening-closing-checklists.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ],
+  "fuente": "cafe"
+ },
+ "c0751": {
+  "en": "Pre-Shift Meeting",
+  "origen": "c0959",
+  "via": "exacta"
+ },
+ "c0752": {
+  "en": "Date: ___/___/______    Shift: ☐ Lunch  ☐ Dinner    Shift manager: _________________________",
+  "origen": "c0960",
+  "via": "exacta"
+ },
+ "c0759": {
+  "en": "SPECIALS & 86s",
+  "origen": "c0967",
+  "via": "exacta"
+ },
+ "c0763": {
+  "en": "Items OUT (86):",
+  "origen": "c0971",
+  "via": "exacta"
+ },
+ "c0765": {
+  "en": "ALLERGENS & SPECIAL NEEDS",
+  "origen": "c0973",
+  "via": "exacta"
+ },
+ "c0767": {
+  "en": "Special diets (vegan, gluten-free...):",
+  "origen": "c0975",
+  "via": "exacta"
+ },
+ "c0769": {
+  "en": "SHIFT TEAM",
+  "origen": "c0977",
+  "via": "exacta"
+ },
+ "c0770": {
+  "en": "Kitchen staff:",
+  "origen": "c0978",
+  "via": "exacta"
+ },
+ "c0773": {
+  "en": "Anyone out? Coverage:",
+  "origen": "c0981",
+  "via": "exacta"
+ },
+ "c0774": {
+  "en": "NOTES & INCIDENTS",
+  "origen": "c0982",
+  "via": "exacta"
+ },
+ "c0775": {
+  "en": "Issues from the previous shift:",
+  "origen": "c0983",
+  "via": "exacta"
+ },
+ "c0776": {
+  "en": "Shift goals:",
+  "origen": "c0984",
+  "via": "exacta"
+ },
+ "c0777": {
+  "en": "Manager's message:",
+  "origen": "c0985",
+  "via": "exacta"
+ },
+ "c0778": {
+  "en": "Shift manager signature: _________________________",
+  "origen": "c0986",
+  "via": "exacta"
+ },
+ "c0783": {
+  "en": "▸ Plan ahead: special menus, decorations, stock",
+  "origen": "c0991",
+  "via": "exacta"
+ },
+ "c0784": {
+  "en": "▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), bank holidays and Boxing Day, in the free rows",
+  "origen": "c0992",
+  "via": "exacta"
+ },
+ "c0785": {
+  "en": "▸ You are in BONUS-02-ghost-kitchen-delivery-calendar.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and 01-ghost-kitchen-opening-closing-checklists.xlsx.",
+  "origen": "c0761",
+  "via": "exacta",
+  "ajustes": [
+   "fichero BONUS-02-bar-events-calendar.xlsx → BONUS-02-ghost-kitchen-delivery-calendar.xlsx",
+   "fichero 08-venue-opening-closing-checklist.xlsx → 08-delivery-only-kitchen-opening-closing-checklist.xlsx",
+   "fichero 01-bar-opening-closing-checklists.xlsx → 01-ghost-kitchen-opening-closing-checklists.xlsx"
+  ],
+  "fuente": "bar"
+ },
+ "c0787": {
+  "en": "Year: ______    Add your local dates in the empty rows",
+  "origen": "c0995",
+  "via": "exacta"
+ },
+ "c0788": {
+  "en": "Month",
+  "origen": "c0996",
+  "via": "exacta"
+ },
+ "c0789": {
+  "en": "Date / Event",
+  "origen": "c0997",
+  "via": "exacta"
+ },
+ "c0790": {
+  "en": "Key Tasks",
+  "origen": "c0998",
+  "via": "exacta"
+ }
+}

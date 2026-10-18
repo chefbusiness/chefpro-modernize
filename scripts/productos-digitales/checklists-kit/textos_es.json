@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-17T21:00:19Z",
+  "generado": "2026-10-18T03:36:10Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas",
-  "commit": "4cd1e34f",
+  "commit": "27a6284f",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -29189,7 +29189,7 @@
    "es": "Pescado para consumo crudo o semicrudo (tartar, ceviche, carpaccio) — prevención de ANISAKIS: confirmar congelación previa ≥24 h a −20 °C (o −35 °C 15 h) y anotar el lote",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F or below for 7 days (or −31 °F or below until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)",
+   "en_por_celda": "Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction (FDA Food Code 3-402.11): confirm it was frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record 90 days (FDA Food Code 3-402.12)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 29,
@@ -29211,7 +29211,7 @@
    "es": "Pescado y marisco para consumo crudo o semicrudo — prevención de ANISAKIS: confirmar congelación previa ≥24 h a −20 °C (o −35 °C 15 h) y anotar el lote",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below 7 days, or −31 °F or below + 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days",
+   "en_por_celda": "Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below for 7 days; or −31 °F or below until solid, then 15 h at −31 °F or below or 24 h at −4 °F or below; FDA Food Code 3-402.11), record kept 90 days (FDA Food Code 3-402.12); raw oysters and clams: shellstock tags kept 90 days",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 28,
