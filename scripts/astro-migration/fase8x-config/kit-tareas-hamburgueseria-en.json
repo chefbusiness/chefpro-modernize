@@ -1,0 +1,49 @@
+{
+  "producto": "kit-tareas-hamburgueseria",
+  "fecha": "2026-10-18",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · Burger Joint Checklists Kit Pro (burger/SPEC D1, 18-oct-2026). El id es el del CATÁLOGO (products-catalog.ts),",
+    "que con urlByLang.en pinta la landing EN /en/digital-products/burger-joint-checklist-templates y $19.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto kit-tareas-hamburgueseria --config scripts/astro-migration/fase8x-config/kit-tareas-hamburgueseria-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Posts: el único del blog EN que trata la hamburguesa de verdad, Burgers Pro AI+ (162 menciones; el párrafo cierra la",
+    "sección del Kitchen Manager, antes de «Prompts for Burger Cook Specialist», ancla 6), y el de food cost con un caso",
+    "de hamburguesería: Restaurant Profit Margin Calculator («Case Study 2: The Burger Joint», fast casual con 3 locales y",
+    "márgenes que se escapan por recetas distintas en cada local; el párrafo cierra «Real Restaurant Success Stories»,",
+    "antes de «Before and After», ancla 4). Descartados: Robotic Restaurants (Flippy voltea burgers, pero ya lleva el",
+    "Pizza Shop Checklists Kit Pro: dos verticales en 3 banners), Ghost Kitchens (la hamburguesa es solo un ejemplo de",
+    "marca virtual) y Plant-Based Menus (veggie burger, sin operación de hamburguesería).",
+    "Víctimas = SLUGS EN de la landing, por relevancia: el Financial Plan Kit en el de Burgers Pro AI+ (se quedan el HACCP",
+    "Kit por el cumplimiento y el Food Cost Kit por el costing del post) y el Staff Scheduling Kit en el de márgenes (se",
+    "quedan el Inventory Kit por el food cost y el sobreporcionado y el Financial Plan Kit por la cuenta de resultados).",
+    "Nunca el Restaurant, el Bar, el Coffee Shop, el Catering ni el Pizza Shop Checklists Kit Pro, hermanos de línea y venta cruzada."
+  ],
+  "nunca": [
+    "restaurant-checklist-templates",
+    "bar-checklist-templates",
+    "coffee-shop-checklist-templates",
+    "catering-checklist-templates",
+    "pizza-shop-checklist-templates"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 2,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "prompt-library-burger-restaurant": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-financial-plan-templates",
+      "ancla_n": 6,
+      "parrafo": "Prompts help the kitchen manager plan the menu, the costs and the team; checklists make sure every shift actually runs that plan. The {ENLACE} writes the routine down in Excel, with 346 tasks already written: the hood on before the griddle and the fryers, the make line set up in order and held at 41 °F, smash burgers and ground beef checked with a probe to 155 °F, the fryer oil tested and filtered, the delivery apps on and off, and a checklist each for the grill cook, the line cook, the fry cook, the shift manager and the server, so the burger comes out the same no matter who is on the grill."
+    },
+    "restaurant-profit-margin-calculator": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 4,
+      "parrafo": "The burger case study shows where margins leak: three locations building the same burger three different ways. Standard recipes fix the cost on paper; a written routine makes every shift follow them. The {ENLACE} does that in Excel, with 346 tasks already written for opening and closing, the grill, the make line, the fry station and the shift manager, plus a daily inventory with par levels and a monthly check of food cost against a 28–32% target, so every location runs the same burger the same way."
+    }
+  }
+}

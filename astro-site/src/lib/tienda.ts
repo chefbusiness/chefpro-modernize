@@ -249,6 +249,17 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (18-oct-2026): Burger Joint Checklists Kit Pro, quinto hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/burger D1-D4). Gemelo del Kit de Tareas para Hamburguesería. vivo: true en la rama, que
+    // se fusiona cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop, el Catering y
+    // el Pizza Shop Checklists Kit Pro).
+    familia: 'kit-tareas-hamburgueseria',
+    productos: {
+      es: { slug: 'kit-tareas-hamburgueseria', vivo: true },
+      en: { slug: 'burger-joint-checklist-templates', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.
