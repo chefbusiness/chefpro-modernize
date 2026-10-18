@@ -451,6 +451,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-catering, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'catering-checklist-templates': {
+    accessPath: '/en/digital-products/catering-checklist-templates/access',
+    emailSubject: 'Your access to Catering Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Catering Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',
