@@ -1,6 +1,21 @@
 # Handoff — 18-oct-2026 (sesión Claude Code, noche delegada) — 5 kits de checklists EN + post pilar food truck
 
-## 0. Estado: 6 productos LISTOS a falta del Payment Link + 1 post en borrador
+## 0-bis. ✅ LIVE el 18-oct por la mañana (sesión Claude Code)
+
+- John creó los 6 Payment Links; comprobados con la CLI `--live` (USD 1900, one_time, exclusive, impuesto automático, redirección
+  a su `/access`, descripción sin comillas sueltas) y sus 6 env vars creadas (builds, all). `payment-links.ts` con 73 links (`69bf9ec1`).
+  - Bar `plink_1URqV74CcdRGidmEeZ31iUEK` · Coffee Shop `plink_1URqjs4CcdRGidmEday1AVpm` · Catering `plink_1URqqw4CcdRGidmEVYCPf73Z`
+  - Pizza Shop `plink_1URr854CcdRGidmEicL0m8YQ` · Burger Joint `plink_1URrGe4CcdRGidmEuygGQo9U` · Ghost Kitchen `plink_1URruy4CcdRGidmEVblVfAeh`
+- Preview del #140 con los links: `gate-flujo-postpago --only` 12/12 y 0 fallos en los 6. Fusionados #134 → #135 → #137 → #138 →
+  #139 → #140 (merge commits; Netlify saltó los intermedios y desplegó `1ce888d2`; el modo automático NO bloqueó `gh pr merge`).
+- LIVE: `--only` ×7 kits de checklists 12/12 · 0/0 · gate completo en el VPS **73 / 1.002 / 0 / 0** · `tienda-gate` · `robots-gate --live`
+  · llms.txt y sitemap con los 6 · sitemap reenviado en GSC.
+- Correos EN en borrador (fechas en `CALENDARIO-V2-SEMANAL.md`, entrada 18-oct): 14-dic, 19-dic → routine `trig_01WXGbQnAuFnc2A9X45imtje`
+  (20-nov); 4, 9, 14 y 19-ene → routine `trig_019bxdctG1zV4XcVjbHTzCdu` (20-dic). Siguiente hueco EN: 24-ene.
+- Worktrees y ramas de los 6 kits borrados (Mac y VPS, tras comprobar por hash que nada quedaba solo en el VPS). Queda `wt-ftpost` (#136).
+- Siguen abiertos de §3: OpenRouter 401, «Sergio Ramos» en el Burger Joint, HACCP Kit EN («15 h» sin temperatura), erratas ES, y el #136.
+
+## 0. Estado (noche): 6 productos LISTOS a falta del Payment Link + 1 post en borrador
 
 John (17-oct, 23:30): «continúa con todos los productos que puedas… en la mañana configuramos y creamos los enlaces de Stripe».
 Todos son hermanos verticales del **Restaurant Checklists Kit Pro** (LIVE 17-oct, #133), con el mismo circuito
