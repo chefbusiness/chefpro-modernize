@@ -61,6 +61,28 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Bar Checklists Kit Pro (18-oct-2026, primer hermano vertical del Restaurant Checklists Kit Pro): el más nuevo → 1;
+  // el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English» («Recurring
+  // Tasks: Bar / Cocktails», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía «9
+  // pre-filled checklists», «terrace» y «sign off»; la EN trae 9 + 3 bonus, 12 ficheros, patio e iniciales).
+  // Imagen: la del hero ES, sin texto.
+  {
+    name: 'Bar Checklists Kit Pro',
+    slug: '/kit-tareas-bar',
+    description: '9 templates + 3 bonuses (12 files) with 342 bar tasks already written: opening & closing checklists, cocktail, draft beer and wine stations, bar manager, bartender duties by role, inventory, events and a cash drawer count. Print it, delegate it, initial it.',
+    features: [
+      'Bar opening and closing: bar station, coffee, patio',
+      'Cocktail, draft beer and wine station checklists',
+      'Head bartender, bartender, barback and server duties',
+      'Weekly inventory, deep clean and maintenance',
+      'Cash drawer count and over/short log',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'bar'],
+  },
   // Restaurant Checklists Kit Pro (17-oct-2026, primer kit EN de la línea Tareas): el más nuevo → 1; How to Open a
   // Pastry Shop y el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
   // («Recurring Tasks: Casual Restaurant», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
@@ -699,22 +721,6 @@ const products = [
     tags: ['excel', 'templates', 'management', 'pastry'],
   },
 
-  {
-    name: 'Recurring Tasks: Bar / Cocktails',
-    slug: '/kit-tareas-bar',
-    description: '9 pre-filled operational checklists for bars and cocktail bars: mixology, bar service, draft beer, wine by the glass, terrace, inventory, and events. Print, delegate, and sign off.',
-    features: [
-      'Classic and contemporary mixology',
-      'Draft beer, wine, and coffee',
-      'Events: New Year\'s Eve, Halloween, tastings',
-      'Roles: head bartender, barback',
-    ],
-    iconName: 'Wine',
-    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'bar'],
-  },
   {
     name: 'Recurring Tasks: Catering / Events',
     slug: '/kit-tareas-catering',

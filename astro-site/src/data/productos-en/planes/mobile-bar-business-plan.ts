@@ -324,6 +324,7 @@ const data: PlanNegocioData = {
   footerLinks: [
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products', label: 'Digital Products' },
+    { href: '/en/digital-products/bar-checklist-templates', label: 'Bar Checklists Kit Pro' },
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
     { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },

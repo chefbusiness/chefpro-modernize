@@ -15,7 +15,10 @@ ES↔LatAm no se replica) y escribe, junto a este script (o en --salida):
                     adaptación por celda), citas de pestañas/rótulos/ficheros y GRUPO de traducción
                     (G1-G2 para los dos subagentes; GM = no se traduce).
 
-    python3 extraer_textos.py [--origen DIR] [--salida DIR] [--md]
+    python3 extraer_textos.py [--kit base|bar] [--origen DIR] [--salida DIR] [--md]
+
+--kit (kit.py): sin él, el kit base de siempre (dl/kit-tareas → junto a este script); con --kit <v>, el vertical
+(dl/<mapas.ORIGEN_ES> → <v>/, con <v>/mapas_<v>.py).
 
 No traduce nada (regla 1bis: los textos EN los escriben subagentes Anthropic, nunca bridge.py).
 Térmica: un solo proceso, en serie, sin builds ni navegador (11 libros, < 15 s).
@@ -47,12 +50,14 @@ from openpyxl.utils import get_column_letter, range_boundaries
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(AQUI, '..', '..', '..'))
-ORIGEN = os.path.join(REPO, 'astro-site', 'public', 'dl', 'kit-tareas')
 sys.path.insert(0, AQUI)
-import mapas                                                     # noqa: E402
+import kit                                                       # noqa: E402
+from kit import mapas                                            # noqa: E402
+ORIGEN = kit.ORIGEN                                              # base: dl/kit-tareas · vertical: dl/<ORIGEN_ES>
 
 VERDE = 'E8F5E9'
-INVARIABLES = {'N/A', 'AI Chef Pro', '© 2026 AI Chef Pro · aichef.pro', 'Mise en Place'}
+INVARIABLES = {'N/A', 'AI Chef Pro', '© 2026 AI Chef Pro · aichef.pro', 'Mise en Place'} | set(
+    getattr(mapas, 'INVARIABLES_EXTRA', ()))
 RX_VERSION = re.compile(r'^Versi[óo]n \d+\.\d+ · ')
 RX_LITERAL = re.compile(r'"((?:[^"]|"")*)"')
 RX_REF_HOJA = re.compile(r"(?:'((?:[^']|'')+)'|([^\W\d][\w.]*))!(?=\$?[A-Za-z]{1,3}\$?\d|\$?[A-Za-z]{1,3}:)")
@@ -97,6 +102,7 @@ DEPENDENCIAS = OrderedDict([
     ('excel_es', ('Menús de Excel en español', r'Revisar →|[Cc]lic(k)? derecho|Desproteger|Mover o copiar',
                   'Excel EN: «Review → Unprotect Sheet», «right-click → Insert», «Move or Copy»')),
 ])
+DEPENDENCIAS.update(getattr(mapas, 'DEPENDENCIAS_EXTRA', {}))   # vertical: añade o sustituye (kit.py)
 
 PISTAS = [
     (r'°C|[Tt]emperatura|cámara|congela', 'D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food '
@@ -139,6 +145,9 @@ PISTAS = [
     (r'Kit de Tareas', 'D2: «Restaurant Checklists Kit Pro»'),
     (r'86', '«86» / «86s» es jerga US: se queda'),
 ]
+# vertical (kit.py): PISTAS_CAMBIO sustituye el texto de una pista por su regex; PISTAS_EXTRA se añade al final
+PISTAS = [(rx, getattr(mapas, 'PISTAS_CAMBIO', {}).get(rx, t)) for rx, t in PISTAS
+          if rx not in getattr(mapas, 'PISTAS_FUERA', ())] + list(getattr(mapas, 'PISTAS_EXTRA', []))
 
 
 # --------------------------------------------------------------------------
@@ -553,8 +562,9 @@ def dos_bloques(orden, peso):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[1])
+    kit.argumento(ap)
     ap.add_argument('--origen', default=ORIGEN)
-    ap.add_argument('--salida', default=AQUI)
+    ap.add_argument('--salida', default=kit.DATOS)
     ap.add_argument('--md', action='store_true', help='imprime las tablas §0 y §1 de F1-inventario-es.md')
     args = ap.parse_args()
 

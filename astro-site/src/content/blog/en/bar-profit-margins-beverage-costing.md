@@ -2,7 +2,7 @@
 title: "Bar Profit Margins: Complete Guide to Beverage Costing and Pricing"
 description: "Bars rank among the most profitable concepts in the hospitality industry. While traditional restaurants typically struggle to achieve net profit margins of…"
 pubDate: 2026-03-31
-modDate: 2026-10-15
+modDate: 2026-10-18
 category: ai-in-gastronomy
 lang: en
 wpId: 3325
@@ -117,7 +117,7 @@ faq:
 <p>Pour cost and gross margin are two sides of the same coin. If your pour cost is 20%, your gross margin is 80%. The relationship is simple:</p>
 <p><strong>Gross Margin = 100% &#8211; Pour Cost %</strong></p>
 <p>This inverse relationship means that even small improvements in pour cost can significantly impact profitability. Reducing pour cost from 22% to 18%—a 4 percentage point change—improves gross margin from 78% to 82%. On $100,000 in monthly beverage revenue, that 4% difference represents an additional $4,000 in gross profit.</p>
-<h2>How to Calculate Pour Cost: The Complete Formula</h2>
+<p>Pour cost slips when nobody counts. The <a href="https://aichef.pro/en/digital-products/bar-checklist-templates">Bar Checklists Kit Pro</a> adds the routine behind the numbers: a weekly inventory of spirits, beer, wine and mixers, a monthly pour cost and waste review on the bar manager's checklist, and a cash drawer count with the over/short against the POS Z report.</p><h2>How to Calculate Pour Cost: The Complete Formula</h2>
 <p>Mastering <strong>pour cost calculation</strong> is fundamental to bar profitability management. Here&#8217;s the essential formula and practical applications.</p>
 <h3>The Basic Pour Cost Formula</h3>
 <p><strong>Pour Cost % = (Cost of Ingredients ÷ Menu Price) × 100</strong></p>
@@ -287,7 +287,7 @@ faq:
 </div>
 <hr>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Financial Plan Kit Pro</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, scenarios, and a financial ratios dashboard.</p><a href="/en/digital-products/restaurant-financial-plan-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bar-profit-margins-beverage-costing" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Financial Plan Kit Pro for $49</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Bar Checklists Kit Pro</h3><p class="mt-2 text-muted-foreground">Bar opening and closing checklists, cocktail, draft beer and wine stations, bar manager, bartender duties by role, inventory and a cash drawer count: 342 tasks already written.</p><a href="/en/digital-products/bar-checklist-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bar-profit-margins-beverage-costing" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Bar Checklists Kit Pro for $19</a></aside>
 
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">

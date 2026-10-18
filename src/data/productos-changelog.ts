@@ -807,6 +807,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'bar-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 342 bar tasks already written, adapted to the US with notes for the UK.',
+          'US bar roles and areas (head bartender, bartender, barback, cocktail server, bar station, stockroom, patio), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Responsible alcohol service: 21+ and ID checks, no service to visibly intoxicated guests, last call and closing time checked against your state\'s ABC/liquor authority, responsible-service training (TIPS, ServSafe Alcohol) where your state requires it, and Challenge 25 for the UK.',
+          'Draft beer at 38 °F with the CO₂ pressure set by your draft tech or distributor, beer lines cleaned every 2 weeks and an acid clean every 3 months (Brewers Association); ice handled as food under the FDA Food Code (scoop or tongs, never the glass) and wine temperatures in °F.',
+          'Contracted services for a US bar on the Quarterly & Annual sheet: pest control, fire extinguishers (OSHA), hood cleaning on the NFPA 96 schedule if you have a kitchen, gas and patio heaters, draft system service, refrigeration by an EPA 608 technician, music licensing (ASCAP, BMI, SESAC, GMR), liquor license and patio permit renewals.',
+          'Cash drawer count in US bills and coins (with quarter and dime rolls), starting bank, card tips kept out of sales and over/short against the POS Z report; a bar events calendar with 23 US dates, from Mardi Gras and St. Patrick\'s Day to Thanksgiving Eve and New Year\'s Eve, with a UK note.',
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

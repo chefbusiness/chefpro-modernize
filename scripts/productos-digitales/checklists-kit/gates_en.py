@@ -8,6 +8,7 @@ está escrito a mano: todo sale de censo_es.json, de los xlsx ES o de mapas.py; 
 la SPEC fija (§5 caso de caja y §8 G7, que además se cruzan con mapas.py).
 
     python3 gates_en.py                               # contra astro-site/public/dl/restaurant-checklist-templates/
+    python3 gates_en.py --kit bar ...                 # un vertical (kit.py), contra su censo y dl/<su slug>/
     python3 gates_en.py --dir /tmp/ck-dry             # contra un dry-run
     python3 gates_en.py --solo G1,G2 [--mes October] [--json informe.json]
     python3 gates_en.py --parcial [--textos DIR]      # dry-run parcial: la marca «PENDING-EN cNNNN» se tolera
@@ -58,7 +59,8 @@ sys.path.insert(0, AQUI)
 
 import openpyxl                                          # noqa: E402
 
-import mapas                                             # noqa: E402
+import kit                                               # noqa: E402  (--kit base|bar: kit.py)
+from kit import mapas                                    # noqa: E402
 import aplicar_en as A                                   # noqa: E402
 
 X = A.extraer_textos
@@ -73,7 +75,7 @@ CLAVES = mapas.CLAVES
 CLAVES_EN = set(CLAVES.values())
 FIRMA_EN = ('Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since '
             'age 17 · johnguerrero.es')                                       # SPEC §7.2, literal
-GRADOS_F_SPEC = {-31, -4, 0, 10, 32, 41, 70, 100, 135, 165}             # SPEC §8 G7 (ronda 1: +70 +165 −104)
+GRADOS_F_SPEC = set(getattr(mapas, 'GRADOS_F_SPEC', {-31, -4, 0, 10, 32, 41, 70, 100, 135, 165}))  # SPEC §8 G7
 CAJA_SPEC = {'total_1_de_cada': 204.91, 'fondo': 200, 'contado': 1250, 'tarjetas': 3000, 'otros': 150, 'z': 4200}
 
 SIGNOS_ES = set('¿¡«»€ºª')
@@ -124,9 +126,9 @@ def _simbolos_ok():
     """Lista blanca de caracteres no ASCII que no son letras: los del ES publicado (▸ ✓ — ☐ 💰 📊 …) + la
     tipografía del kit EN (– − ° · ¢). Los signos españoles (¿ ¡ « » € º ª) nunca entran."""
     ok = set('▸→☐✓✗⚠·—–…°§≤≥−±×½✅❌⭐¢') | {'️'}
-    te = json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8'))
+    te = json.load(open(os.path.join(kit.DATOS, 'textos_es.json'), encoding='utf-8'))
     textos = [c['es'] for c in te['cadenas']] + list(te['meta']['excluidas']['cadenas'])
-    censo = json.load(open(os.path.join(AQUI, 'censo_es.json'), encoding='utf-8'))
+    censo = json.load(open(os.path.join(kit.DATOS, 'censo_es.json'), encoding='utf-8'))
     for info in censo['libros'].values():
         for hd in info['hojas_detalle'].values():
             textos += list(hd['literales']) + list(hd['literales_cf'])
@@ -178,7 +180,7 @@ def restos_espanol(t):
     m = RX_SIGLAS_ES.search(t)
     if m:
         out.append(('sigla ES «%s»' % m.group(0), t[:80]))
-    if 'Restaurante Casual' in t or 'Kit de Tareas' in t:
+    if 'Restaurante Casual' in t or 'Kit de Tareas' in t or any(v in t for v in getattr(mapas, 'VARIANTES_ES', ())):
         out.append(('variante o marca ES', t[:80]))
     return out
 
@@ -498,8 +500,9 @@ def gateG1(R, carpeta, datos):
     for k, v in esperados.items():
         if tot[k] != v:
             R.fallo('total %s = %d ≠ esperado %d (censo)' % (k, tot[k], v))
-    if not tot['nombres_con_apostrofo']:
-        R.fallo("ningún definedName de «Valentine's Day» comprobado")
+    con_apostrofo = [mapas.HOJAS[h] for hs in mapas.HOJAS_ES_POR_LIBRO.values() for h in hs if "'" in mapas.HOJAS[h]]
+    if con_apostrofo and not tot['nombres_con_apostrofo']:
+        R.fallo('ningún definedName de %s comprobado' % ' / '.join('«%s»' % h for h in con_apostrofo))
     for k, v in sorted(tot.items()):
         R.dato(k, v)
 
@@ -1093,8 +1096,17 @@ def gateG8(R, carpeta, datos):
 # ==========================================================================
 F01, F02, F03, F09 = (mapas.FICHEROS[f] for f in ('01-apertura-cierre.xlsx', '02-partidas-cocina.xlsx',
                                                   '03-tareas-manager.xlsx', '09-apertura-cierre-caja.xlsx'))
-H_KO = mapas.HOJAS['Apertura Cocina']
+H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][1]]      # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
 H_CC = mapas.HOJAS['Cierre de Caja']
+H_AREA = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['06'][2]]    # base: «Valentine's Day»
+H_DIARIO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['03'][1]]  # «Manager Daily»
+RX_HORA_US = re.compile(r'^\d{1,2}:\d{2} [AP]M$')
+
+
+def _primera(ws, preferida, otras):
+    """La celda con el valor `preferido` (el del kit base) o, si la hoja no lo trae, la primera que cumple `otras`."""
+    c = next((c for c in ws._cells.values() if c.value == preferida), None)
+    return c or next(c for c in ws._cells.values() if isinstance(c.value, str) and otras(c.value))
 
 
 def _mutar(carpeta, fname, fn):
@@ -1122,25 +1134,26 @@ def _quitar_tarea(wb):
 
 
 def _area_rota(wb):
-    wb[mapas.HOJAS['San Valentín']].print_area = 'A1:C10'
+    wb[H_AREA].print_area = 'A1:C10'
 
 
 def _celda_glosario(wb):
     ws = wb[H_KO]
-    c = next(c for c in ws._cells.values() if c.value == mapas.GLOSARIO['Todo el equipo'])
+    puestos = {mapas.GLOSARIO[k] for k in mapas.PUESTOS_ES if k in mapas.GLOSARIO}
+    c = _primera(ws, mapas.GLOSARIO['Todo el equipo'], lambda v: v in puestos)
     c.value = 'Everybody'
 
 
 def _hora_mal(wb):
     ws = wb[H_KO]
-    c = next(c for c in ws._cells.values() if c.value == '7:00 AM')
-    c.value = '7 AM'
+    c = _primera(ws, '7:00 AM', RX_HORA_US.match)
+    c.value = c.value.replace(':00 ', ' ').replace(':', '.')
 
 
 def _hora_24(wb):
     ws = wb[H_KO]
-    c = next(c for c in ws._cells.values() if c.value == '7:00 AM')
-    c.value = '07:00'
+    c = _primera(ws, '7:00 AM', RX_HORA_US.match)
+    c.value = '07:00' if c.value == '7:00 AM' else '17:00'
 
 
 def _titulo_largo(wb):
@@ -1160,7 +1173,8 @@ def _cache_mal(wb):
 
 def _grados_mal(wb):
     ws = wb[mapas.HOJAS['Instrucciones']]
-    ws['B6'].value = (ws['B6'].value or '') + ' Hold cold food at 38 °F.'
+    g = next(x for x in range(38, 0, -1) if x not in GRADOS_F_SPEC)   # base: 38 · bar (38 °F es la cerveza): 37
+    ws['B6'].value = (ws['B6'].value or '') + ' Hold cold food at %d °F.' % g
 
 
 def _cita_mal(wb):
@@ -1176,7 +1190,7 @@ MUTACIONES = [
     ('G2', F03, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Petty cash: 150 € per week'), 'moneda'),
     ('G2', F01, _hora_24, '24 h'),
     ('G2', F02, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Budget $5 per station'), '«$»'),
-    ('G3', F03, lambda wb: setattr(wb[mapas.HOJAS['Diario Manager']].page_setup, 'paperSize', 9), 'paperSize'),
+    ('G3', F03, lambda wb: setattr(wb[H_DIARIO].page_setup, 'paperSize', 9), 'paperSize'),
     ('G3', F01, lambda wb: setattr(wb[H_KO].oddFooter.center, 'text', 'Page &P'), 'pie'),
     ('G3', F01, _titulo_largo, 'ajuste'),
     ('G4', F01, _celda_glosario, 'mapa-glosario'),
@@ -1227,8 +1241,8 @@ def cargar_datos(parcial=False, textos=A.TEXTOS_EN):
     tx, avisos = A.cargar_traducciones(textos, parcial)
     for a in avisos:
         print('  aviso: ' + a)
-    return {'censo': json.load(open(os.path.join(AQUI, 'censo_es.json'), encoding='utf-8')),
-            'te': json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8')),
+    return {'censo': json.load(open(os.path.join(kit.DATOS, 'censo_es.json'), encoding='utf-8')),
+            'te': json.load(open(os.path.join(kit.DATOS, 'textos_es.json'), encoding='utf-8')),
             'tx': tx, 'parcial': parcial}
 
 
@@ -1253,7 +1267,8 @@ def ejecutar(carpeta, mes, solo, datos, silencioso=False):
 
 
 def main():
-    ap = argparse.ArgumentParser(description='Gates F2 del Restaurant Checklists Kit Pro (EN)')
+    ap = argparse.ArgumentParser(description='Gates F2 del %s (EN)' % mapas.PRODUCTO)
+    kit.argumento(ap)
     ap.add_argument('--dir', default=A.DESTINO_REAL, help='carpeta con los 11 xlsx EN (por defecto dl/<slug>)')
     ap.add_argument('--mes', default=None, help='mes de la línea de versión (por defecto, el actual)')
     ap.add_argument('--solo', default=None, help='G1,G2,… (por defecto, todos)')

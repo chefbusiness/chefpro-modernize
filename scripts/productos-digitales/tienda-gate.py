@@ -88,6 +88,7 @@ GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia
 # KitTareasLandingPage recibe `lang` desde el 17-oct-2026 (Restaurant Checklists Kit Pro EN): sus 20 landings ES
 # (el kit base y las 19 verticales; el mega-pack NO usa la plantilla) tienen que seguir byte a byte iguales.
 # /kit-tareas cambia SOLO en el <head> (hreflang es + en + x-default, gemelo EN vivo): va en --esperadas.
+# Ídem /kit-tareas-bar desde el 18-oct-2026 (gemelo EN: Bar Checklists Kit Pro).
 TAREAS_ES = ['/kit-tareas', '/kit-tareas-asador', '/kit-tareas-bar', '/kit-tareas-cafeteria', '/kit-tareas-catering',
              '/kit-tareas-chef-privado', '/kit-tareas-chocolateria', '/kit-tareas-dark-kitchen',
              '/kit-tareas-food-truck', '/kit-tareas-hamburgueseria', '/kit-tareas-heladeria', '/kit-tareas-hotel',
@@ -355,7 +356,9 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # Ídem, Mobile Bar Business Plan Kit (13-oct): testimonios del Plan Coctelería de Eventos traducidos.
            'Laura Manchón', 'María Pino',
            # Ídem, Restaurant Checklists Kit Pro (17-oct): testimonios del Kit de Tareas Recurrentes traducidos.
-           'Raúl Domínguez', 'Fernando López', 'Hotel Gran Bahía']
+           'Raúl Domínguez', 'Fernando López', 'Hotel Gran Bahía',
+           # Ídem, Bar Checklists Kit Pro (18-oct): testimonios del Kit de Tareas: Bar / Cocktails traducidos.
+           'Claudia Martín', 'Sofía Hernández', 'Vermutería El Rincón', 'Ignacio López', 'Pablo García']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.

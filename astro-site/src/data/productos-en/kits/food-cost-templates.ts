@@ -382,6 +382,7 @@ const data: KitExcelData = {
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: '/en/digital-products/restaurant-checklist-templates', label: 'Restaurant Checklists Kit Pro' },
+    { href: '/en/digital-products/bar-checklist-templates', label: 'Bar Checklists Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
     { href: '/en/digital-products/restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro' },
     { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },

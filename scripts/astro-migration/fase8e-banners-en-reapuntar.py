@@ -41,6 +41,8 @@ TEMAS = {
     'restaurant-inventory-templates': ['inventory', 'stock', 'waste', 'purchas', 'supplier', 'ordering', 'storage'],
     # Restaurant Checklists Kit Pro (17-oct-2026): checklists de apertura, cierre, limpieza, side work y caja.
     'restaurant-checklist-templates': ['checklist', 'closing', 'cleaning', 'side work', 'pre-shift', 'line check', 'cash drawer', 'routine', 'daily task'],
+    # Bar Checklists Kit Pro (18-oct-2026): checklists de bar, coctelería, draft, bartender/barback y caja.
+    'bar-checklist-templates': ['bartender', 'barback', 'cocktail', 'pour cost', 'draft beer', 'beer line', 'happy hour', 'bar opening', 'bar closing', 'speed rail'],
 }
 
 

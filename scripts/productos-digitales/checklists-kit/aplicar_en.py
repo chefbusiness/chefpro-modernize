@@ -11,6 +11,7 @@ de idempotencia, `inject_cache` AL FINAL, `--dry-run`, `--idempotencia`). Aquí 
 de `textos_en/G*.json` (subagentes Anthropic, regla 1bis) y de `mapas.py`.
 
     python3 aplicar_en.py                      # escribe en astro-site/public/dl/restaurant-checklist-templates/
+    python3 aplicar_en.py --kit bar ...        # un vertical (kit.py): bar/ → dl/bar-checklist-templates/
     python3 aplicar_en.py --dry-run [--salida <carpeta>] [--mes October] [--idempotencia] [--json informe.json]
     python3 aplicar_en.py --dry-run --parcial  # lo que aún no tenga traducción lleva la marca «PENDING-EN cNNNN»
     python3 aplicar_en.py --dry-run --parcial --textos <carpeta vacía>   # ensayo solo con la marca de relleno
@@ -61,7 +62,8 @@ sys.path.insert(0, AQUI)
 import openpyxl                                              # noqa: E402
 from openpyxl.utils import get_column_letter                 # noqa: E402
 
-import mapas                                                 # noqa: E402
+import kit                                                   # noqa: E402  (--kit base|bar: kit.py)
+from kit import mapas                                        # noqa: E402
 import extraer_textos                                        # noqa: E402
 
 logging.disable(logging.CRITICAL)
@@ -69,7 +71,7 @@ logging.disable(logging.CRITICAL)
 ORIGEN = extraer_textos.ORIGEN                                                 # dl/kit-tareas (solo lectura)
 DESTINO_REAL = os.path.join(REPO, 'astro-site', 'public', 'dl', mapas.SLUG)   # restaurant-checklist-templates
 INJECT = os.path.join(SCRIPTS, 'inject_cache.py')
-TEXTOS_EN = os.path.join(AQUI, 'textos_en')
+TEXTOS_EN = kit.TEXTOS_EN                                                      # <datos del kit>/textos_en
 
 VERSION = mapas.VERSION_ES                                            # 2.0 (contenido v2.0 del ES)
 SUBJECT = mapas.DOCPROPS_EN['subject']                                # D19
@@ -124,10 +126,15 @@ def termica(umbral=62, reanuda=60):
 # Datos
 # ==========================================================================
 def cargar_traducciones(carpeta, parcial):
-    """textos_en/G<n>.json = {id: en}. En --parcial, un fichero a medio escribir (JSON inválido) se ignora con aviso."""
+    """textos_en/G<n>.json = {id: en}. En --parcial, un fichero a medio escribir (JSON inválido) se ignora con aviso.
+    Vertical (kit.py): además textos_en/heredado.json = {id: {"en": …, "origen": id del kit base}} (memoria de
+    traducción: cadenas ES idénticas a las del kit base); lo heredado y lo traducido no pueden contradecirse."""
     tx = OrderedDict()
     avisos = []
-    for p in sorted(glob.glob(os.path.join(carpeta, 'G[0-9].json'))):
+    ficheros = sorted(glob.glob(os.path.join(carpeta, 'G[0-9].json')))
+    if not kit.BASE and os.path.exists(os.path.join(carpeta, 'heredado.json')):
+        ficheros = [os.path.join(carpeta, 'heredado.json')] + ficheros
+    for p in ficheros:
         try:
             d = json.load(open(p, encoding='utf-8'))
         except ValueError as e:
@@ -136,6 +143,8 @@ def cargar_traducciones(carpeta, parcial):
             avisos.append('%s ilegible (¿a medio escribir?): ignorado' % os.path.basename(p))
             continue
         for k, v in d.items():
+            if isinstance(v, dict) and os.path.basename(p) == 'heredado.json':
+                v = v.get('en')
             if not isinstance(v, str) or not v.strip():
                 raise Aborta('%s: traducción vacía o no textual para %s' % (os.path.basename(p), k))
             if k in tx and tx[k] != v:
@@ -145,8 +154,8 @@ def cargar_traducciones(carpeta, parcial):
 
 
 def cargar_datos(parcial=False, textos=TEXTOS_EN):
-    te = json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8'))
-    censo = json.load(open(os.path.join(AQUI, 'censo_es.json'), encoding='utf-8'))
+    te = json.load(open(os.path.join(kit.DATOS, 'textos_es.json'), encoding='utf-8'))
+    censo = json.load(open(os.path.join(kit.DATOS, 'censo_es.json'), encoding='utf-8'))
     tx, avisos = cargar_traducciones(textos, parcial)
     por_id = {c['id']: c for c in te['cadenas']}
     ajenas = sorted(set(tx) - set(por_id))
@@ -869,7 +878,8 @@ def carpeta_dryrun(arg):
 
 
 def main():
-    ap = argparse.ArgumentParser(description='Restaurant Checklists Kit Pro (EN): montaje de los 11 xlsx')
+    ap = argparse.ArgumentParser(description='%s (EN): montaje de los 11 xlsx' % mapas.PRODUCTO)
+    kit.argumento(ap)
     ap.add_argument('--dry-run', action='store_true', help='escribe en el scratchpad (o --salida), no en dl/')
     ap.add_argument('--salida', default=None, help='carpeta del dry-run')
     ap.add_argument('--mes', default=None, help='mes de la línea de versión D19 (por defecto, el actual)')
