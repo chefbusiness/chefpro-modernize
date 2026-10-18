@@ -558,9 +558,13 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
 # aplicar_en.objetivo_ajuste / G3 (errata ES, como la pizzería y la hamburguesería): las tareas largas del ES no
 # llevan ajuste de texto y salen cortadas por la celda vecina; la EN activa el ajuste también donde el ES no cabía
 AJUSTE_MAQUETA_ES = True
-# aplicar_en.capa_ajuste (como la hamburguesería): 05 «Instrucciones» B2, el título, va en dos líneas de 26 pt; la EN
-# sube la fila a 50.5, el alto de los títulos de dos líneas de los demás libros
-ALTOS_FILA = {('05', 'Instrucciones', 2): 50.5}
+# aplicar_en.capa_ajuste (gancho de la hamburguesería; F2 real): 05 «FIFO Semanal» fila 34 (la última de la tabla de
+# congelación) ya va cortada en el ES (dos líneas en 24.5 pt; el EN necesita 27.2) → 27.5. El título del 05 NO necesita
+# alto propio: aquí el ES cabe en una línea y capa_ajuste ya lo sube a 50.5 como en los demás libros
+ALTOS_FILA = {('05', 'FIFO Semanal', 34): 27.5}
+# aplicar_en.capa_ajuste (gancho nuevo, F2 real): 01 «Cierre Cocina» B9 ya va cortada en el ES (sin ajuste) y su EN cita
+# «05-cloud-kitchen-cleaning-checklist-inventory-maintenance.xlsx», más largo que la columna B: se activa el ajuste
+AJUSTE_FORZADO = frozenset({('01', 'Cierre Cocina', 'B9')})
 # Celdas ES con °C cuya EN NO lleva cifra en °F: el aceite (manipularlo «por debajo de 40 °C» → según el fabricante)
 CELSIUS_SIN_F = frozenset({('01', 'Cierre Cocina', 'B13'), ('03', 'Handover Turno', 'B12'),
                            ('05', 'FIFO Semanal', 'B14'), ('05', 'Mantenimiento Mensual', 'B7')})

@@ -716,6 +716,17 @@ def capa_ajuste(L, wes):
             if alto > (ws.row_dimensions[fila].height or ALTO_DEFECTO):
                 ws.row_dimensions[fila].height = alto
                 n['altos_subidos'] += 1
+    # vertical (ghost kitchen): celdas que el ES ya traía cortadas SIN ajuste y cuya EN cita un nombre de fichero más
+    # largo que la columna (objetivo_ajuste no actúa: «palabra más larga» → maqueta heredada); la EN activa el ajuste
+    # (Excel parte el nombre y la fila automática crece). {(libro, hoja ES, celda)}. Sin la constante, no hace nada
+    for corto, h_es, coord in sorted(getattr(mapas, 'AJUSTE_FORZADO', ())):
+        if corto == L.corto:
+            cel = L.wb[mapas.HOJAS[h_es]][coord]
+            if not (cel.alignment and cel.alignment.wrap_text):
+                al = copy.copy(cel.alignment)
+                al.wrap_text = True
+                cel.alignment = al
+                n['ajuste_forzado'] = n.get('ajuste_forzado', 0) + 1
     L.rep.update(n)
 
 
