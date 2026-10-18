@@ -104,12 +104,14 @@ SCRATCH = os.environ.get(
 #: (SPEC checklists-kit §7.5: Letter, metadatos EN, «Instructions»; un `all` le forzaría A4 y español).
 #: bar-checklist-templates: Bar Checklists Kit Pro (EN), el mismo circuito con `--kit bar` (checklists-kit/bar/SPEC.md).
 #: coffee-shop-checklist-templates: Coffee Shop Checklists Kit Pro (EN), `--kit cafe` (checklists-kit/cafe/SPEC.md).
+#: catering-checklist-templates: Catering Checklists Kit Pro (EN), `--kit catering` (checklists-kit/catering/SPEC.md).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
              'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan',
              'restaurant-business-plan', 'bakery-business-plan', 'bar-business-plan', 'catering-business-plan',
              'mobile-bar-business-plan', 'food-cost-menu-engineering-guide', 'how-to-open-a-pastry-shop',
-             'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates'}
+             'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates',
+             'catering-checklist-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'

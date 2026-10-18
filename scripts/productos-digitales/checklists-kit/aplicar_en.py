@@ -704,7 +704,7 @@ def formatos_y_papel(L):
     nf = wb._number_formats
     usados = set(nf)
     for i, f in enumerate(list(nf)):
-        if '€' in f:
+        if '€' in f or f in FORMATOS:                            # vertical: también fechas ES (catering 09)
             nuevo = FORMATOS.get(f, '#,##0.00')
             while nuevo in usados:
                 nuevo += ';@'
