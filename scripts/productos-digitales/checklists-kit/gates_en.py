@@ -572,6 +572,9 @@ def zona_dolar():
     return z
 
 
+RX_PROHIBIDOS = re.compile(mapas.TERMINOS_PROHIBIDOS) if mapas.TERMINOS_PROHIBIDOS else None
+
+
 def gateG2(R, carpeta, datos):
     R.gate('G2 restos')
     n = Counter()
@@ -592,6 +595,12 @@ def gateG2(R, carpeta, datos):
                 continue
             if tipo == 'literal':
                 continue                                         # ✓, ?*, N/A, >0: los vigila G1 (= ES por CLAVES)
+            if RX_PROHIBIDOS is not None:                        # vertical (mapas.TERMINOS_PROHIBIDOS): toda pieza EN
+                n['terminos_revisados'] += 1
+                m = RX_PROHIBIDOS.search(t)
+                if m:
+                    R.fallo('%s: término prohibido %r en %s · …%s…' % (donde, m.group(0), tipo,
+                                                                       t[max(0, m.start() - 30):m.end() + 20]))
             if ('$' in t or '¢' in t):
                 n['con_dolar'] += 1
                 if (corto,) + (pos or ('', '')) not in zona:
@@ -765,7 +774,8 @@ def gateG4(R, carpeta, datos, mes):
                 if esp is None or got != esp:
                     R.fallo('%s %s!%s (%s %s): %r ≠ %r' % (d['f'], ws.title, d['c'], ident, tr,
                                                           (got or '')[:70] if isinstance(got, str) else got,
-                                                          (esp or '')[:70]))
+                                                          (esp or '')[:70] if not isinstance(esp, (int, float))
+                                                          else esp))
             elif t in A.CAMPO_DV:
                 attr = A.CAMPO_DV[t]
                 dvs = [x for x in ws.data_validations.dataValidation if str(x.sqref) == d['c']]
@@ -797,11 +807,23 @@ def gateG4(R, carpeta, datos, mes):
                 if isinstance(c.value, str) and c.data_type != 'f' and mapas.RX_HORA_CELDA.match(c.value):
                     n['horas'] += 1
                     got = ws_en[c.coordinate].value
-                    if got != mapas.hora_us(c.value):
+                    esp = mapas.POR_CELDA.get((corto, h_es, c.coordinate)) or mapas.hora_us(c.value)
+                    if got != esp:                       # POR_CELDA manda (cafe ronda 1: horas alineadas)
                         R.fallo('%s %s!%s: hora %r ≠ hora_us(%r) = %r' % (corto, ws_en.title, c.coordinate, got,
-                                                                          c.value, mapas.hora_us(c.value)))
+                                                                          c.value, esp))
     if n['horas'] != datos['censo']['totales']['horas_24h']:
         R.fallo('horas de celda %d ≠ censo %d' % (n['horas'], datos['censo']['totales']['horas_24h']))
+    # números fijados (mapas.VALORES_EN; vacío en el base y el bar): el ES trae el suyo y el EN el número decidido
+    wes_v = {}
+    for (c, h_es, coord), (v_es, v_en) in mapas.VALORES_EN.items():
+        n['valores_fijados'] += 1
+        if c not in wes_v:
+            wes_v[c] = cargar(next(p for _e, _en, corto, p, _pen in libros(carpeta) if corto == c))
+        got_es = wes_v[c][h_es][coord].value
+        got = wbs[c][mapas.HOJAS[h_es]][coord].value
+        if got_es != v_es or got != v_en or isinstance(got, bool):
+            R.fallo('%s %s!%s: valor fijado %r (ES %r) ≠ %r (ES %r)' % (c, mapas.HOJAS[h_es], coord, got, got_es,
+                                                                       v_en, v_es))
     if not n['firmas'] and not datos['parcial']:
         R.fallo('firma de autor no comprobada (¿cadena ausente?)')
     for k, v in sorted(n.items()):
@@ -941,6 +963,7 @@ def gateG6(R, carpeta, datos):
         wf, wv = cargar(pen), cargar(pen, data_only=True)
         wes_v, wes_f = cargar(pes, data_only=True), cargar(pes)
         sin_v = celdas_sin_v(pen)
+        sin_v_es = celdas_sin_v(pes)          # «<v></v>» legítimo: la fórmula da "" (p. ej. IF(B6="","",…) vacío)
         for h_es in wes_f.sheetnames:
             h_en = mapas.HOJAS[h_es]
             ws, ws_v, we_v = wf[h_en], wv[h_en], wes_v[h_es]
@@ -948,6 +971,9 @@ def gateG6(R, carpeta, datos):
                 if c.data_type != 'f':
                     continue
                 n['formulas'] += 1
+                if (ws.title, c.coordinate) in sin_v and (h_es, c.coordinate) in sin_v_es:
+                    n['vacias_como_es'] += 1                     # el ES tampoco trae valor: paridad
+                    continue
                 if (ws.title, c.coordinate) in sin_v:
                     R.fallo('%s:%s!%s sin caché (<f> sin <v>)' % (en, ws.title, c.coordinate))
                     continue
@@ -1179,7 +1205,9 @@ def _grados_mal(wb):
 
 def _cita_mal(wb):
     ws = wb[mapas.HOJAS['Instrucciones']]
-    ws['B6'].value = (ws['B6'].value or '') + ' (FDA Food Code 3-501.19)'
+    ok = permitidas()[0]                       # base y bar: 3-501.19 · cafe (la cita en REGLAS_US, ronda 1 M4): la siguiente
+    cod = next(c for c in ('3-501.19', '3-501.18', '3-202.11', '3-401.11') if not set(citas_de('FDA Food Code ' + c)) <= ok)
+    ws['B6'].value = (ws['B6'].value or '') + ' (FDA Food Code %s)' % cod
 
 
 MUTACIONES = [
@@ -1200,6 +1228,17 @@ MUTACIONES = [
     ('G7', F01, _grados_mal, '°F'),
     ('G7', F01, _cita_mal, 'cita normativa'),
 ]
+if mapas.TERMINOS_PROHIBIDOS:                                    # vertical con términos prohibidos (cafe)
+    MUTACIONES.append(('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', (
+        wb[mapas.HOJAS['Instrucciones']]['B6'].value or '') + ' ' + mapas.TERMINO_PROHIBIDO_EJEMPLO), 'término prohibido'))
+if mapas.VALORES_EN:                                             # vertical con números fijados (cafe: inventario)
+    _KV, (_ES_V, _EN_V) = next(iter(mapas.VALORES_EN.items()))
+
+    def _valor_mal(wb):
+        wb[mapas.HOJAS[_KV[1]]][_KV[2]].value = _ES_V                # vuelve el texto ES («2»): G4 lo caza
+
+    MUTACIONES.append(('G4', mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_KV[0]))], _valor_mal,
+                       'valor fijado'))
 
 
 def autotest(carpeta, mes, datos):

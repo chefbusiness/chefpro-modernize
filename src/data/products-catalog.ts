@@ -153,11 +153,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-cafeteria',
     url: '/kit-tareas-cafeteria',
     price: '€12',
-    name: { es: 'Tareas: Cafetería / Brunch', en: 'Tasks: Café / Brunch' },
+    name: { es: 'Tareas: Cafetería / Brunch', en: 'Coffee Shop Checklists Kit Pro' },
     description: {
       es: 'Apertura, cierre, barra y sala con plantilla específica de cafetería.',
-      en: 'Opening, closing, bar, and floor with a café-specific template.',
+      en: 'Coffee shop opening and closing checklists, espresso bar, kitchen and pastry case, manager, barista duties by role, inventory and a cash drawer count: 500 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `coffee-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/coffee-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-pizzeria': {
     id: 'kit-tareas-pizzeria',

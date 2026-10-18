@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
 kit.py — elige el kit del circuito de checklists EN: el base (Restaurant Checklists Kit Pro) o un vertical.
-Sesión Claude Code, 18-oct-2026 (Bar Checklists Kit Pro, el primer hermano; SPEC base §9).
+Sesión Claude Code, 18-oct-2026 (Bar Checklists Kit Pro, el primer hermano; SPEC base §9). Verticales dados de
+alta: VERTICALES (bar = Bar Checklists Kit Pro · cafe = Coffee Shop Checklists Kit Pro).
 
     python3 extraer_textos.py --kit bar          # o CHECKLISTS_KIT=bar python3 extraer_textos.py
+    python3 extraer_textos.py --kit cafe
 
 Sin --kit (ni la variable) todo es el kit base de siempre, byte a byte: `mapas.py`, origen `dl/kit-tareas` y los
 datos junto a los scripts (censo_es.json, textos_es.json, textos_en/). Con --kit <v>:
@@ -35,6 +37,7 @@ def _de_argv(argv):
     return None
 
 
+VERTICALES = ('bar', 'cafe')                                    # <v>/mapas_<v>.py, SPEC en <v>/SPEC.md
 NOMBRE = _de_argv(sys.argv) or os.environ.get('CHECKLISTS_KIT') or 'base'
 os.environ['CHECKLISTS_KIT'] = NOMBRE
 BASE = NOMBRE == 'base'
@@ -58,4 +61,5 @@ TEXTOS_EN = os.path.join(DATOS, 'textos_en')
 
 def argumento(ap):
     """Declara --kit en el argparse de cada script (ya se leyó al importar este módulo)."""
-    ap.add_argument('--kit', default=NOMBRE, help='kit: base (Restaurant) o un vertical con <v>/mapas_<v>.py')
+    ap.add_argument('--kit', default=NOMBRE,
+                    help='kit: base (Restaurant) o un vertical con <v>/mapas_<v>.py (%s)' % ', '.join(VERTICALES))

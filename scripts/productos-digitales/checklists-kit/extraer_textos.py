@@ -215,6 +215,8 @@ def clasificar_celda(fichero, ws, cel, texto, hojas_libro, claves_hoja):
     k = (f, ws.title, cel.coordinate)
     if k in mapas.POR_CELDA:
         return 'regenerar', 'rótulo fijado (mapas.POR_CELDA)'
+    if k in mapas.VALORES_EN:
+        return 'regenerar', 'valor fijado (mapas.VALORES_EN)'
     if ws.title == 'Instrucciones' and cel.coordinate == 'B2':
         return 'regenerar', 'D5 título interior (mapas.titulo_interior)'
     if RX_VERSION.match(texto):

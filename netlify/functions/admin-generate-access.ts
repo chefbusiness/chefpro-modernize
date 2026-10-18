@@ -42,6 +42,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'how-to-open-a-pastry-shop': { accessPath: '/en/digital-products/how-to-open-a-pastry-shop/access', label: 'How to Open a Pastry Shop', lang: 'en' },
   'restaurant-checklist-templates': { accessPath: '/en/digital-products/restaurant-checklist-templates/access', label: 'Restaurant Checklists Kit Pro', lang: 'en' },
   'bar-checklist-templates': { accessPath: '/en/digital-products/bar-checklist-templates/access', label: 'Bar Checklists Kit Pro', lang: 'en' },
+  'coffee-shop-checklist-templates': { accessPath: '/en/digital-products/coffee-shop-checklist-templates/access', label: 'Coffee Shop Checklists Kit Pro', lang: 'en' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
   'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },

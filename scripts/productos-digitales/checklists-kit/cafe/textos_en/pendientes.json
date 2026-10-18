@@ -1,0 +1,7221 @@
+{
+ "meta": {
+  "kit": "cafe",
+  "producto": "Coffee Shop Checklists Kit Pro",
+  "n_pendientes": 620,
+  "n_palabras": 3802,
+  "motivos": {
+   "contexto": 16,
+   "nueva": 588,
+   "corregida": 3,
+   "adaptar": 13
+  },
+  "n_heredadas": 226,
+  "heredadas_por_via": {
+   "exacta": 223,
+   "sufijo": 3
+  },
+  "heredadas_por_fuente": {
+   "base": 222,
+   "bar": 4
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "cafe/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "cafe/textos_en/heredado.json (cómo se dijo ya cada cosa: base y bar)",
+   "cafe/mapas_cafe.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, REGLAS_US",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0011",
+   "es": "▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "01 · Instrucciones · B7",
+    "02 · Instrucciones · B7",
+    "03 · Instrucciones · B7",
+    "… +6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "el local → the cafe / the shop (nunca «restaurant» ni «venue»)"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ \"N/A\" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). \"—\" = not done: it still counts as pending and lowers the percentage, which is the point."
+  },
+  {
+   "id": "c0020",
+   "es": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Instrucciones · B22",
+    "02 · Instrucciones · B22",
+    "03 · Instrucciones · B22",
+    "… +8"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-cafe-opening-closing-checklist.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day."
+  },
+  {
+   "id": "c0021",
+   "es": "▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra café).",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "01 · Instrucciones · B23",
+    "02 · Instrucciones · B23",
+    "03 · Instrucciones · B23",
+    "… +8"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-coffee-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0023",
+   "es": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.",
+   "grupo": "G1",
+   "palabras": 55,
+   "donde": [
+    "01 · Instrucciones · B25",
+    "02 · Instrucciones · B25",
+    "03 · Instrucciones · B25",
+    "… +8"
+   ],
+   "pistas": [
+    "el local → the cafe / the shop (nunca «restaurant» ni «venue»)"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail."
+  },
+  {
+   "id": "c0031",
+   "es": "Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Cocina · A2",
+    "01 · Apertura Sala · A2",
+    "01 · Apertura Barra Café · A2",
+    "… +15"
+   ],
+   "pistas": [
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»",
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0051",
+   "es": "Si el local tiene gas: abrir la llave general y comprobar que NO huele a gas; si huele, no enciendas nada, ventila y avisa al mantenedor",
+   "grupo": "G1",
+   "palabras": 26,
+   "donde": [
+    "01 · Apertura Cocina · B13"
+   ],
+   "pistas": [
+    "el local → the cafe / the shop (nunca «restaurant» ni «venue»)"
+   ],
+   "adaptar": "Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal y llama a la compañía de gas o al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Encender el horno y precalentar para croissants, quiches y bollería",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Cocina · B14"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0053",
+   "es": "Encender plancha/grill y tostadora para tostadas y brunch",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "Encender baño maría (si aplica)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B16"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "Baño maría = steam table / bain-marie: lo que se mantiene en caliente, a 135 °F o más (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0055",
+   "es": "Comprobar que las cámaras frigoríficas han funcionado toda la noche y registrar temperatura (refrigeración 0-4 °C) — anota la lectura: ____ °C. Si hay desviación, no uses el género hasta valorarlo",
+   "grupo": "G1",
+   "palabras": 31,
+   "donde": [
+    "01 · Apertura Cocina · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe; «cámaras» = walk-in cooler y walk-in freezer",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0056",
+   "es": "  MISE EN PLACE BRUNCH",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Cocina · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0057",
+   "es": "Preparar masa de pancakes/tortitas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B19"
+   ],
+   "pistas": [
+    "tortitas → pancakes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0058",
+   "es": "Cortar pan para tostadas (sourdough, brioche, integral)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0059",
+   "es": "Preparar huevos: batidos para revueltos, pochados listos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0060",
+   "es": "Preparar toppings: aguacate, tomate, salmón, bacon",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Montar bowls base: açaí, granola, fruta cortada",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0062",
+   "es": "Preparar salsas: hollandaise, pesto, hummus",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B24"
+   ],
+   "adaptar": "Ronda 1 M4: hollandaise con huevo pasteurizado; a 135 °F o más, o con la hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Preparar ensaladas y guarniciones del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "  STOCK Y VERIFICACIONES",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "Verificar stock de huevos, pan, aguacate, salmón",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0066",
+   "es": "Verificar stock de frutas frescas para bowls",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0068",
+   "es": "Verificar caducidades de productos abiertos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0069",
+   "es": "Comprobar que hay suficiente bacon/jamón para el día",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0070",
+   "es": "  HIGIENE Y SEGURIDAD",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0071",
+   "es": "Comprobar que el botiquín y el extintor están accesibles y sin nada delante",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Cocina · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "Verificar jabón y papel en dispensadores de cocina",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0073",
+   "es": "Desinfectar superficies de trabajo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Cocina · B35"
+   ],
+   "adaptar": "Ronda 1 M2: sanitizante aprobado a la concentración de la etiqueta, medida con tira",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0076",
+   "es": "Firma encargado/a: _________________________    Hora: _________",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · A44",
+    "01 · Apertura Sala · A38",
+    "01 · Apertura Barra Café · A42",
+    "… +23"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0079",
+   "es": "Checklist de Apertura — Sala y Terraza",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · A1"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0080",
+   "es": "  SALA INTERIOR",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura Sala · A5"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0084",
+   "es": "Limpiar y montar mesas: manteles/salvamanteles, cubiertos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Sala · B7"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0085",
+   "es": "Colocar menús/cartas en mesas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0086",
+   "es": "Verificar que las sillas están limpias y alineadas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Sala · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0087",
+   "es": "Actualizar pizarra del día (platos, especiales, precio brunch)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Sala · B10"
+   ],
+   "pistas": [
+    "pizarra → menu board / chalkboard"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0088",
+   "es": "Poner música ambiental a volumen adecuado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0089",
+   "es": "Verificar iluminación cálida (no fluorescente)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "  TERRAZA",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "01 · Apertura Sala · A13",
+    "01 · Cierre Sala · A11"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Sacar mesas y sillas de terraza",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B14"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0094",
+   "es": "Abrir sombrillas/toldos si hace sol",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0095",
+   "es": "Colocar macetas/decoración si aplica",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0096",
+   "es": "Verificar ceniceros limpios (zona fumadores)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B18"
+   ],
+   "adaptar": "Ceniceros solo si tu ciudad o estado permite fumar en el patio (muchos lo prohíben): dilo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0097",
+   "es": "  ESTACIONES DE SERVICIO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Sala · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0098",
+   "es": "Reponer servilletas, azúcar, sacarina, palillos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0099",
+   "es": "Verificar stock de salsas (kétchup, mostaza, tabasco)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Sala · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "Reponer pajitas de papel y agitadores",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0101",
+   "es": "Verificar TPV/datáfono: cargado y funcionando",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B23"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Preparar fondo de caja",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Sala · B24",
+    "04 · Encargado · B9"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "  LIMPIEZA RÁPIDA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura Sala · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "Barrer y fregar suelo de sala",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B26"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "Limpiar cristales de entrada",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Sala · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0107",
+   "es": "Limpiar baños: jabón, papel, ambientador",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0109",
+   "es": "Vaciar papeleras",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura Sala · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0110",
+   "es": "Checklist de Apertura — Barra / Cafetería",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Barra Café · A1"
+   ],
+   "pistas": [
+    "cafetería → coffee shop o cafe (SIN tilde: nunca «café» con tilde en inglés)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "  MÁQUINA DE ESPRESSO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Barra Café · A5",
+    "01 · Cierre Barra Café · A5",
+    "05 · Mantenimiento Mensual · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Encender máquina de espresso (15-20 min calentamiento)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra Café · B6"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Purgar grupo: dejar correr agua 5 segundos por cada grupo",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Barra Café · B7"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Calibrar molienda: extraer shot de prueba (25-30s, 25-30ml)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Barra Café · B8"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "adaptar": "Dial in: deja «25–30 s» y «25–30 ml» (así habla un barista US) y añade «(about 1 fl oz)» tras los ml",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0117",
+   "es": "Verificar presión de la máquina (9 bar)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0118",
+   "es": "Limpiar portafiltros y secar bien",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Barra Café · B10"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0119",
+   "es": "Verificar lance de vapor: purgar y limpiar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B11"
+   ],
+   "pistas": [
+    "lanza / lance de vapor → steam wand; purgar → purge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0120",
+   "es": "  STOCK BARRA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura Barra Café · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0121",
+   "es": "Verificar stock de café en grano (bolsa abierta + reserva)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Barra Café · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0122",
+   "es": "Verificar stock de leches: entera, desnatada, avena, soja, almendra",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Barra Café · B14"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "adaptar": "Leches: whole, skim (nonfat), oat, soy y almond. Alérgenos US entre los 9: milk, soy y tree nuts (almendra); la avena no lo es",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0123",
+   "es": "Verificar stock de cacao en polvo y canela",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra Café · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0124",
+   "es": "Verificar stock de siropes: vainilla, caramelo, avellana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B16"
+   ],
+   "pistas": [
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0125",
+   "es": "Verificar stock de té e infusiones (variedades)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "Verificar stock de zumos naturales / zumo de naranja",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra Café · B18"
+   ],
+   "pistas": [
+    "zumo → juice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0127",
+   "es": "Verificar stock de azúcar blanco, moreno, sacarina, estevia",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra Café · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "Verificar stock de vasos take-away, tapas, portavasos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra Café · B20"
+   ],
+   "pistas": [
+    "take-away → to-go"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "  PREPARACIÓN BARRA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura Barra Café · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Preparar jarritas de leche fría (entera + vegetal)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B22"
+   ],
+   "pistas": [
+    "jarritas de leche → milk pitchers",
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "adaptar": "Jarras de leche (milk pitchers) frías: la leche sale de la nevera a 41 °F o menos y vuelve a ella; una jarra por tipo de leche (la de vaca, la de soja y la de almendra son alérgenos)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "Preparar hielo (cubitera llena)",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Barra Café · B23"
+   ],
+   "pistas": [
+    "cubitera → ice bin; pala → ice scoop"
+   ],
+   "adaptar": "FDA Food Code: el hielo es un alimento. Cubitera = ice bin, limpia; pala (ice scoop) fuera del hielo o con el mango hacia fuera; nunca el vaso",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "Montar estación de toppings: cacao, canela, siropes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B24"
+   ],
+   "pistas": [
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0133",
+   "es": "Preparar batch brew / café filtro del día",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B25"
+   ],
+   "pistas": [
+    "café filtro → drip / batch brew; termo → airpot"
+   ],
+   "adaptar": "Ronda 1 M3: + si sirves cold brew, filtrar el lote que terminó el reposo y guardarlo tapado a 41 °F o menos, con date marking (7 días como máximo contando el día de preparación)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "Llenar termos de agua caliente para tés",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B26"
+   ],
+   "pistas": [
+    "café filtro → drip / batch brew; termo → airpot"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Preparar smoothies base si aplica",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Barra Café · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "  VITRINA Y PASTELERÍA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Barra Café · A28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "Limpiar cristal de vitrina interior y exterior",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra Café · B29"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0138",
+   "es": "Reponer vitrina con bollería del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Barra Café · B30"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)",
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0140",
+   "es": "Etiquetar precios y alérgenos en vitrina",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Barra Café · B31"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act): en bollería sobre todo trigo, huevo, leche, soja, frutos de cáscara (tree nuts), cacahuete y sésamo; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Verificar temperatura de vitrina refrigerada (refrigeración 0-4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Apertura Barra Café · B32",
+    "02 · Pastelería Vitrina · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "adaptar": "°F: vitrina refrigerada (refrigerated pastry case) a 41 °F o menos para lo TCS: tartas de crema, cheesecake, rellenos lácteos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Colocar pinzas/guantes para servir",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Barra Café · B33"
+   ],
+   "adaptar": "FDA Food Code 3-301.11: sin mano desnuda en lo listo para consumir: pinzas, papel de pastelería (bakery tissue) o guantes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0147",
+   "es": "Guardar salsas en recipientes herméticos con fecha",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0148",
+   "es": "Cubrir y refrigerar toppings de brunch",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0149",
+   "es": "Guardar pan sobrante en bolsa hermética",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0150",
+   "es": "Congelar lo que no se usará mañana (etiquetar)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Cocina · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0151",
+   "es": "  LIMPIEZA",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "01 · Cierre Cocina · A11",
+    "05 · Inventario Semanal · A48"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0152",
+   "es": "Limpiar y desinfectar plancha/grill",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0153",
+   "es": "Limpiar horno (interior si toca)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0154",
+   "es": "Limpiar superficies de trabajo y tablas de corte",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Cocina · B14"
+   ],
+   "adaptar": "Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0155",
+   "es": "Fregar y secar utensilios",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0156",
+   "es": "Vaciar y limpiar la freidora (si aplica): manipular el aceite SÓLO por debajo de 40 °C, nunca en caliente, con guantes y recipiente estable; el aceite usado, al bidón del gestor autorizado",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "01 · Cierre Cocina · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Filtrar según el procedimiento del fabricante de la freidora (los filtros integrados trabajan a temperatura de servicio; a mano, dejar enfriar antes, guantes resistentes al calor y recipiente estable), sin cifra de temperatura; el aceite usado va al contenedor del reciclador (used cooking oil recycler), no a un «gestor autorizado»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0157",
+   "es": "Barrer y fregar suelo de cocina",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0158",
+   "es": "Sacar basura y reciclar",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "  EQUIPOS Y SEGURIDAD",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0160",
+   "es": "Apagar horno, plancha, campana",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B20"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Verificar que cámaras están cerradas y a temperatura (refrigeración 0-4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "01 · Cierre Cocina · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Cerrar llave de gas (si aplica)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0164",
+   "es": "  PREPARACIÓN PARA MAÑANA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · A24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Descongelar lo necesario para mañana (pasar a cámara)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Cocina · B25"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Anotar faltantes para pedido de mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Preparar lista de mise en place del día siguiente",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Cocina · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Checklist de Cierre — Sala, Terraza y Caja",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Sala · A1"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D15: terraza → patio"
+   ],
+   "motivo": "contexto: Dining Room",
+   "base_en": "FOH Closing Checklist — Dining Room, Patio & Cash"
+  },
+  {
+   "id": "c0169",
+   "es": "  SALA Y MOBILIARIO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Sala · A5"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Desmontar mesas: recoger manteles, cubiertos, vasos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · B6"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "corregida: ronda 1 m11: placemats/napkins, como la apertura",
+   "base_en": "Break down tables: collect tablecloths, silverware, glasses"
+  },
+  {
+   "id": "c0172",
+   "es": "Limpiar todas las mesas con desinfectante",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Alinear sillas y mesas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "Barrer suelo de sala",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B9"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0175",
+   "es": "Fregar suelo de sala",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B10"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0176",
+   "es": "Recoger mesas y sillas de terraza (o apilar y encadenar)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Sala · B12"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "Cerrar sombrillas/toldos",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Sala · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "Limpiar zona de terraza",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B14"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0179",
+   "es": "Recoger ceniceros y vaciar",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B15"
+   ],
+   "adaptar": "Ceniceros solo si tu ciudad o estado permite fumar en el patio (muchos lo prohíben): dilo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Guardar decoración exterior si llueve",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Sala · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "  ESTACIONES Y BAÑOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Sala · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0182",
+   "es": "Reponer servilletas, azúcar, salsas para mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Limpiar estación de servicio",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0184",
+   "es": "Limpieza final de baños: jabón, papel, suelo",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Sala · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Vaciar todas las papeleras",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "  CAJA Y CIERRE",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Sala · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "Revisar propinas del equipo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B24"
+   ],
+   "pistas": [
+    "bote de propinas → tip jar"
+   ],
+   "adaptar": "Cuadrar las propinas del día (tip jar y propinas de tarjeta) y repartirlas según la política de la casa (tip pool); sin más afirmaciones legales",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Anotar incidencias del día",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "Apagar música, climatización, luces",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Checklist de Cierre — Barra / Cafetería",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Barra Café · A1"
+   ],
+   "pistas": [
+    "cafetería → coffee shop o cafe (SIN tilde: nunca «café» con tilde en inglés)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Backflush con pastilla de limpieza (cada grupo)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Barra Café · B6"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "adaptar": "Backflush diario con detergente para espresso (tabletas o polvo), grupo a grupo, según las instrucciones del fabricante de la máquina",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0194",
+   "es": "Limpiar portafiltros con agua caliente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Barra Café · B7"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0195",
+   "es": "Purgar lanza de vapor y limpiar con paño húmedo",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Barra Café · B8"
+   ],
+   "pistas": [
+    "lanza / lance de vapor → steam wand; purgar → purge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0196",
+   "es": "Limpiar bandeja de goteo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra Café · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0197",
+   "es": "Vaciar posos del cajón de borra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra Café · B10"
+   ],
+   "pistas": [
+    "cajón de borra → knock box; posos → grounds"
+   ],
+   "adaptar": "Cajón de borra → knock box (vaciar los posos)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0198",
+   "es": "Apagar máquina de espresso",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra Café · B11",
+    "04 · Barista · B26"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "  MOLINILLO Y EQUIPOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Barra Café · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "Limpiar molinillo: retirar café residual con cepillo",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Barra Café · B13"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Cerrar tolva del molinillo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra Café · B14"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Limpiar batidora/blender de smoothies",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Barra Café · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Vaciar y limpiar termos de café filtro",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Barra Café · B16"
+   ],
+   "pistas": [
+    "café filtro → drip / batch brew; termo → airpot"
+   ],
+   "adaptar": "Ronda 1 M3: + si sirves cold brew, arrancar el lote de mañana en un recipiente limpio y tapado, en frío salvo que tu departamento de salud permita el reposo a temperatura ambiente",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0204",
+   "es": "  STOCK Y VITRINA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Barra Café · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0205",
+   "es": "Guardar bollería sobrante (etiquetar con fecha)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra Café · B18"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "adaptar": "Date marking US: etiqueta con la fecha; lo TCS (cremas, cheesecake, rellenos lácteos) a 41 °F o menos y 7 días como máximo contando el día de preparación (FDA Food Code 3-501.17); la bollería seca, con la fecha del día",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0206",
+   "es": "Cubrir vitrina o vaciar si es refrigerada",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Barra Café · B19"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0207",
+   "es": "Guardar leches abiertas en cámara",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Barra Café · B20"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "adaptar": "Leche abierta (y el cold brew, si lo sirves) a la nevera a 41 °F o menos, tapada y con date marking: 7 días como máximo contando el día de apertura, sin pasar del use-by del fabricante (FDA Food Code 3-501.17(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0208",
+   "es": "Anotar stock de café en grano restante",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Barra Café · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0209",
+   "es": "Anotar pedidos necesarios para mañana (leche, café, etc.)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Barra Café · B22"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0210",
+   "es": "  LIMPIEZA BARRA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Barra Café · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Limpiar y desinfectar superficie de barra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra Café · B24"
+   ],
+   "adaptar": "Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)",
+   "motivo": "corregida: ronda 1 M2: + tira de sanitizante",
+   "base_en": "Clean and sanitize the bar top"
+  },
+  {
+   "id": "c0212",
+   "es": "Limpiar cristal de vitrina",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra Café · B25"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0213",
+   "es": "Lavar y secar jarritas de leche",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra Café · B26"
+   ],
+   "pistas": [
+    "jarritas de leche → milk pitchers",
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Vaciar cubitera de hielo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra Café · B27"
+   ],
+   "pistas": [
+    "cubitera → ice bin; pala → ice scoop"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0215",
+   "es": "Barrer zona de barra",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra Café · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Partida de Calientes — Plancha, Horno y Grill",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Calientes · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0229",
+   "es": "Encender y precalentar plancha para tostadas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Calientes · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0231",
+   "es": "Encender horno: precalentar para croissants y quiches",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Calientes · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "Preparar mise en place: bacon, huevos, salmón ahumado",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Calientes · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "Preparar batch de huevos revueltos base",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Calientes · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0235",
+   "es": "Preparar pancakes/tortitas: masa lista en jarra",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Calientes · B11"
+   ],
+   "pistas": [
+    "jarritas de leche → milk pitchers",
+    "tortitas → pancakes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0236",
+   "es": "Cortar y tostar pan: sourdough, brioche, centeno",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Calientes · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Verificar stock de mantequilla y aceite de oliva",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Calientes · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "Mantener plancha limpia entre comandas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Calientes · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Controlar punto de huevos: pochados, revueltos, fritos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Calientes · B16"
+   ],
+   "adaptar": "Ronda 1 M4: la yema líquida pide el aviso al consumidor en la carta salvo huevo pasteurizado (FDA Food Code 3-603.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "Reponer pan tostado según demanda",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Calientes · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Hornear croissants/bollería por tandas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Calientes · B18"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Controlar tiempos de espera en pase",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Calientes · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0245",
+   "es": "Limpiar y desinfectar plancha",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Calientes · B21"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Guardar mise en place sobrante (etiquetar)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Calientes · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0247",
+   "es": "Limpiar horno si se usó",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Calientes · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Anotar consumos del día para pedidos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Calientes · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Anotar las mermas del turno (producto, cantidad y motivo): sin este dato el food cost del mes sale mal",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "02 · Calientes · B25"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0250",
+   "es": "Partida de Fríos — Bowls, Ensaladas y Plato Frío",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Fríos · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0251",
+   "es": "Lavar y desinfectar las hojas verdes y los vegetales que se sirven crudos con lejía apta para uso alimentario según la dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARAR con agua potable abundante",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "02 · Fríos · B6"
+   ],
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Preparar base de açaí bowls",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Fríos · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0254",
+   "es": "Cortar fruta fresca: plátano, fresa, mango, arándanos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Fríos · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Preparar granola casera o verificar stock",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Fríos · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Preparar overnight oats (si se hacen en el momento)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Fríos · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Machacar aguacate fresco para smashed avocado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Fríos · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0258",
+   "es": "Preparar ensaladas base para menú del día",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Fríos · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Montar bowls al momento: base + toppings + salsa",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Fríos · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Mantener toppings frescos (cubrir cuando no se usan)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Fríos · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Reponer inserts de fruta y vegetales según se agoten",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Fríos · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Controlar temperatura de cámara de ingredientes fríos (refrigeración 0-4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "02 · Fríos · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Cubrir y refrigerar todos los inserts",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Fríos · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Desechar fruta cortada que lleve +24h",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Fríos · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0265",
+   "es": "Limpiar y desinfectar tablas y cuchillos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Fríos · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0266",
+   "es": "Anotar consumos para pedidos",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Fríos · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0267",
+   "es": "Anotar las mermas del turno: fruta cortada, aguacate y bowls montados que no se han vendido",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "02 · Fríos · B23"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0268",
+   "es": "Pastelería y Vitrina — Producción y Exposición",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pastelería Vitrina · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0269",
+   "es": "  PRODUCCIÓN MATUTINA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Pastelería Vitrina · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Hornear croissants, magdalenas, muffins del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pastelería Vitrina · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "Preparar tartas del día (cheesecake, carrot cake...)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pastelería Vitrina · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0272",
+   "es": "Glasear/decorar bollería",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Pastelería Vitrina · B8"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0273",
+   "es": "Preparar cookies y brownies",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Pastelería Vitrina · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0274",
+   "es": "Preparar puddings/flanes si aplica",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Pastelería Vitrina · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "  VITRINA",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "02 · Pastelería Vitrina · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0276",
+   "es": "Montar vitrina: colocar piezas con pinzas/guantes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pastelería Vitrina · B12"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "adaptar": "FDA Food Code 3-301.11: sin mano desnuda en lo listo para consumir: pinzas, papel de pastelería (bakery tissue) o guantes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0277",
+   "es": "Etiquetar cada producto: nombre, precio, alérgenos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pastelería Vitrina · B13"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act): en bollería sobre todo trigo, huevo, leche, soja, frutos de cáscara (tree nuts), cacahuete y sésamo; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0278",
+   "es": "Limpiar cristal de vitrina (interior y exterior)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pastelería Vitrina · B15"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Rotar producto: lo de ayer delante, lo nuevo detrás",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Pastelería Vitrina · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "Reponer vitrina cuando baje el stock visible",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pastelería Vitrina · B18"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "Retirar producto que no tenga buen aspecto",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pastelería Vitrina · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "Hornear segunda tanda si hay demanda",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pastelería Vitrina · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "Controlar stock de platos/bases para emplatar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pastelería Vitrina · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "  CIERRE VITRINA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Pastelería Vitrina · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "Retirar todo de la vitrina y guardar en cámara",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Pastelería Vitrina · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "Etiquetar sobrantes con fecha",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Pastelería Vitrina · B24",
+    "04 · Pastelero · B18"
+   ],
+   "adaptar": "Date marking US: etiqueta con la fecha; lo TCS (cremas, cheesecake, rellenos lácteos) a 41 °F o menos y 7 días como máximo contando el día de preparación (FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "Limpiar interior de vitrina",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Pastelería Vitrina · B25"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "Anotar producción, ventas y MERMA del día (piezas retiradas, regaladas o al personal): es el dato que ajusta la producción de mañana",
+   "grupo": "G1",
+   "palabras": 22,
+   "donde": [
+    "02 · Pastelería Vitrina · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "Preparar lista de producción para mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pastelería Vitrina · B27",
+    "04 · Pastelero · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0297",
+   "es": "Checklist Diario del Manager / Encargado",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0298",
+   "es": "  ANTES DE ABRIR",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Revisar reservas del día (brunch fin de semana)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "Comprobar que todo el equipo ha llegado",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "Briefing rápido: especiales del día, alérgenos, VIPs",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B9"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0306",
+   "es": "Verificar stock crítico: café, leche, pan, bollería",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B10"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods",
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "Supervisar tiempos de espera en barra y cocina",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "Gestionar reservas que llegan / walk-ins",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "Resolver incidencias con clientes",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Diario Manager · B14",
+    "04 · Encargado · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Controlar calidad de bebidas y platos en pase",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Apoyar en barra/sala si hay pico de trabajo",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Diario Manager · B16"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Supervisar limpieza de mesas entre clientes",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "  GESTIÓN Y ADMINISTRACIÓN",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario Manager · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Revisar redes sociales: responder comentarios y mensajes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B19"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Hacer foto del plato/bebida del día para RRSS",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Diario Manager · B20"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Revisar ventas del día hasta el momento",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "  AL CERRAR",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Diario Manager · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Supervisar cierre de cocina, sala y barra",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B24"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0320",
+   "es": "Cuadrar caja y anotar incidencias",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0321",
+   "es": "Preparar briefing para el turno de mañana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B26"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Revisar planificación de personal para mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0324",
+   "es": "Cerrar local: alarma, luces, gas, puertas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B29",
+    "04 · Encargado · B21"
+   ],
+   "pistas": [
+    "el local → the cafe / the shop (nunca «restaurant» ni «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Checklist Semanal del Manager (Lunes)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "  ANÁLISIS",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Semanal Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0331",
+   "es": "Analizar productos más vendidos y menos vendidos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0332",
+   "es": "Revisar feedback de clientes (Google, TripAdvisor, RRSS)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B8"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "RRSS → social media"
+   ],
+   "adaptar": "Plataformas US: Google, Yelp y TripAdvisor",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0333",
+   "es": "Evaluar desperdicio/merma de la semana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B9"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0334",
+   "es": "  PEDIDOS Y STOCK",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Semanal Manager · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "Hacer pedido semanal de café (variedades)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0336",
+   "es": "Hacer pedido semanal de leches (entera, vegetales)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B12"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0337",
+   "es": "Hacer pedido de bollería/pastelería si es externa",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal Manager · B13"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0338",
+   "es": "Hacer pedido de frescos: fruta, verdura, lácteos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0341",
+   "es": "Verificar stock de packaging: vasos, tapas, bolsas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0344",
+   "es": "  EQUIPO Y FORMACIÓN",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Semanal Manager · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "Revisar horarios del personal para la semana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "Reunión rápida de equipo (10 min): objetivos semana",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0347",
+   "es": "Identificar necesidad de refuerzo fin de semana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0348",
+   "es": "  MANTENIMIENTO Y LIMPIEZA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Semanal Manager · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0349",
+   "es": "Supervisar limpieza profunda semanal",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Semanal Manager · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "Verificar estado de máquina espresso",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "Revisar estado de mobiliario (sillas, mesas, terraza)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B25"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0352",
+   "es": "Verificar caducidades en almacén y cámaras",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B26"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0356",
+   "es": "  FINANCIERO",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Mensual Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0359",
+   "es": "Calcular food cost del mes",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0360",
+   "es": "Revisar coste laboral vs facturación",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0361",
+   "es": "Negociar precios con proveedores si aplica",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0362",
+   "es": "Revisar tarifas de delivery (Glovo, Uber Eats)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual Manager · B10"
+   ],
+   "pistas": [
+    "Glovo → DoorDash (plataformas US: DoorDash, Uber Eats, Grubhub)"
+   ],
+   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0364",
+   "es": "Evaluación rápida de desempeño del equipo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0365",
+   "es": "Revisar necesidades de formación (latte art, atención)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual Manager · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0366",
+   "es": "Actualizar cuadrante de vacaciones",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "Descalcificar máquina de espresso",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B17"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "adaptar": "Descalcificar = «descale … per the manufacturer's instructions» (en muchas máquinas comerciales lo hace el técnico); sin cifras ni productos que no diga el fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0372",
+   "es": "Revisar molinillo: muelas, calibración",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B18"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Mantenimiento horno: resistencias, puerta, juntas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0375",
+   "es": "Revisar lavavajillas: filtros, abrillantador, sal",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B20"
+   ],
+   "adaptar": "Lavavajillas = dish machine: filtros y rinse aid; la sal, solo si la máquina lleva descalcificador (water softener)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "Revisar climatización: filtros, temperatura",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B21",
+    "05 · Mantenimiento Mensual · B18"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "  MARKETING Y CARTA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Mensual Manager · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "Evaluar carta: rotar platos estacionales",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "Planificar especiales del mes siguiente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Revisar fotos de RRSS: calidad, frecuencia",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B26"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "Evaluar valoraciones online y responder reseñas pendientes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual Manager · B27"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "  ESTADO DEL SERVICIO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Mesas ocupadas y reservas pendientes",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0387",
+   "es": "Comandas en curso en cocina",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Bebidas pendientes en barra",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "  INCIDENCIAS",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Handover Turno · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0391",
+   "es": "Quejas o peticiones especiales de clientes",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Handover Turno · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "  STOCK Y EQUIPOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Estado del stock de café en grano",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Handover Turno · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "Stock de leches (qué queda y qué falta)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Handover Turno · B15"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Stock de bollería en vitrina",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B16"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)",
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0397",
+   "es": "Estado de la máquina de espresso (algún problema)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Handover Turno · B17"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Estado de limpieza general",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0405",
+   "es": "Tareas Diarias — Encargado/a de Cafetería",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "cafetería → coffee shop o cafe (SIN tilde: nunca «café» con tilde en inglés)",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0406",
+   "es": "  APERTURA",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Encargado · A5",
+    "04 · Camarero · A5",
+    "04 · Auxiliar · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0407",
+   "es": "Abrir local y desactivar alarma",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado · B6"
+   ],
+   "pistas": [
+    "el local → the cafe / the shop (nunca «restaurant» ni «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "Verificar que todo el equipo ha llegado",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Briefing: especiales, alérgenos, reservas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B8"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0410",
+   "es": "Supervisar apertura de cocina, sala y barra",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado · B10"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0412",
+   "es": "Gestionar reservas y walk-ins",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "Supervisar tiempos de espera",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Apoyar donde más se necesite (barra/sala/cocina)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Encargado · B15"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0415",
+   "es": "  CIERRE",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Encargado · A16",
+    "04 · Pastelero · A16",
+    "04 · Camarero · A18",
+    "… +1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0416",
+   "es": "Supervisar cierre de todas las áreas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0417",
+   "es": "Hacer pedidos para mañana",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Anotar incidencias y preparar briefing mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado · B20"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Tareas Diarias — Barista",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Barista · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0420",
+   "es": "  APERTURA BARRA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Barista · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Encender máquina de espresso y esperar calentamiento",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Barista · B6"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0422",
+   "es": "Purgar grupos y calibrar molienda (shot de prueba)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Barista · B7"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter",
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Verificar stock: café, leches, siropes, té",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barista · B8"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream",
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Preparar jarritas de leche fría",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Barista · B9"
+   ],
+   "pistas": [
+    "jarritas de leche → milk pitchers",
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "Montar estación de toppings y siropes",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barista · B10"
+   ],
+   "pistas": [
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "Preparar batch brew / café filtro",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Barista · B11"
+   ],
+   "pistas": [
+    "café filtro → drip / batch brew; termo → airpot"
+   ],
+   "adaptar": "Ronda 1 M3: + filtrar el cold brew, si lo sirves",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0427",
+   "es": "Llenar cubitera de hielo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Barista · B12"
+   ],
+   "pistas": [
+    "cubitera → ice bin; pala → ice scoop"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "Preparar cafés según comanda (espresso, latte, cappuccino)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Barista · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Mantener calidad constante: crema, temperatura, textura",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barista · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0430",
+   "es": "Limpiar portafiltro entre cada extracción",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Barista · B16"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0431",
+   "es": "Purgar lanza de vapor después de cada uso",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Barista · B17"
+   ],
+   "pistas": [
+    "lanza / lance de vapor → steam wand; purgar → purge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0432",
+   "es": "Reponer leches y café cuando baje el stock",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Barista · B18"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Preparar smoothies, zumos y bebidas frías",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barista · B19"
+   ],
+   "pistas": [
+    "zumo → juice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "  CIERRE BARRA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Barista · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0435",
+   "es": "Backflush máquina con pastilla de limpieza",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barista · B21"
+   ],
+   "adaptar": "Backflush con detergente para espresso, según las instrucciones del fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0436",
+   "es": "Limpiar molinillo con cepillo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Barista · B22"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0437",
+   "es": "Lavar jarritas y utensilios",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Barista · B23"
+   ],
+   "pistas": [
+    "jarritas de leche → milk pitchers"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0438",
+   "es": "Anotar stock restante de café para pedido",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Barista · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "Limpiar superficie de barra",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Barista · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "Tareas Diarias — Pastelero/a",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Pastelero · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0441",
+   "es": "  PRODUCCIÓN",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Pastelero · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0442",
+   "es": "Hornear bollería del día (croissants, muffins, magdalenas)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Pastelero · B6"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0443",
+   "es": "Preparar tartas del día",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Pastelero · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0444",
+   "es": "Glasear y decorar piezas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Pastelero · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0445",
+   "es": "Preparar cookies, brownies, bizcochos",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Pastelero · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0446",
+   "es": "  VITRINA Y SERVICIO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Pastelero · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0447",
+   "es": "Montar vitrina con producto del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pastelero · B11"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Etiquetar: nombre, precio, alérgenos de cada pieza",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Pastelero · B12"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act): en bollería sobre todo trigo, huevo, leche, soja, frutos de cáscara (tree nuts), cacahuete y sésamo; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0449",
+   "es": "Rotar producto en vitrina (FIFO)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Pastelero · B13"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0450",
+   "es": "Reponer vitrina durante el servicio",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Pastelero · B14"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0451",
+   "es": "Retirar producto que no esté fresco",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pastelero · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0452",
+   "es": "Retirar producto de vitrina y guardar en cámara",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Pastelero · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0453",
+   "es": "Limpiar zona de producción",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Pastelero · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0454",
+   "es": "Anotar ventas vs producción (ajustar cantidades)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pastelero · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0455",
+   "es": "Tareas Diarias — Camarero/a",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0458",
+   "es": "Reponer estación: servilletas, azúcar, cubiertos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Camarero · B7"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0459",
+   "es": "Montar terraza si toca",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B8"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0460",
+   "es": "Revisar carta y especiales del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0462",
+   "es": "Tomar comandas (conocer alérgenos de cada plato)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Camarero · B12"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0463",
+   "es": "Servir bebidas y platos en tiempo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0464",
+   "es": "Limpiar mesa entre clientes (rápido y discreto)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Camarero · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0465",
+   "es": "Ofrecer postre/segunda bebida proactivamente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Camarero · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0466",
+   "es": "Cobrar: efectivo o datáfono sin demora",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B16"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0467",
+   "es": "Despedir al cliente con amabilidad",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Camarero · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0468",
+   "es": "Desmontar mesas de tu sección",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Camarero · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0469",
+   "es": "Limpiar mesas y sillas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0470",
+   "es": "Reponer estación de servicio para mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0471",
+   "es": "Recoger terraza",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Camarero · B22"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0472",
+   "es": "Tareas Diarias — Auxiliar / Runner",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Auxiliar · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0473",
+   "es": "Barrer y fregar suelos de sala y baños",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Auxiliar · B6"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0474",
+   "es": "Limpiar cristales de entrada y ventanas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Auxiliar · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0475",
+   "es": "Limpiar baños: jabón, papel, ambientador, suelo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Auxiliar · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0476",
+   "es": "Vaciar papeleras y colocar bolsas nuevas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Auxiliar · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0477",
+   "es": "Recoger platos sucios de mesas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Auxiliar · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0478",
+   "es": "Llevar comandas de cocina a sala",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Auxiliar · B12"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0479",
+   "es": "Reponer cubiertos, servilletas y vasos en sala",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Auxiliar · B13"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0480",
+   "es": "Apoyar en barra: lavar vasos, reponer tazas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Auxiliar · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0481",
+   "es": "Mantener suelos limpios (pasar mopa si es necesario)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Auxiliar · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0482",
+   "es": "Office final: lavar toda la vajilla pendiente",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Auxiliar · B17"
+   ],
+   "adaptar": "«Office» aquí es la zona de friegue (dish pit), no la oficina: friegue final de toda la vajilla pendiente",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0483",
+   "es": "Barrer y fregar todos los suelos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Auxiliar · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0484",
+   "es": "Limpieza final de baños",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Auxiliar · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0485",
+   "es": "Sacar basura y reciclaje",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Auxiliar · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0495",
+   "es": "▸ La hoja «Trimestral y Anual» recoge el mantenimiento que se CONTRATA y que se pide en una inspección: DDD, conductos de extracción, extintores y BIE, instalación de gas, legionela, filtro de agua del espresso, seguro y facturación.",
+   "grupo": "G2",
+   "palabras": 37,
+   "donde": [
+    "05 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "Describe la lista US de la hoja «Quarterly & Annual»: control de plagas, campana (si se cocina bajo campana), extintores, legionela, gas, frío, aceite usado, filtro de agua y servicio técnico de la máquina de espresso, muelas del molinillo, termómetros, seguros y POS / sales tax. Sin DDD, BIE, Verifactu ni facturación española",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0499",
+   "es": "Inventario Diario de Partida — Stock Inmediato",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario Diario · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0500",
+   "es": "Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde    Responsable: ________________",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Inventario Diario · A2"
+   ],
+   "pistas": [
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»",
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0502",
+   "es": "Stock",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · B4",
+    "05 · Inventario Semanal · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0504",
+   "es": "Mínimo",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · D4"
+   ],
+   "pistas": [
+    "Mínimo (de stock) → Par (par level)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0505",
+   "es": "Estado",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · E4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0506",
+   "es": "Notas / Pedido",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · F4"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0507",
+   "es": "  CAFÉ",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0508",
+   "es": "Café en grano — blend principal",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Diario · A6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0510",
+   "es": "Café en grano — origen/especialidad",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Diario · A7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0511",
+   "es": "Café descafeinado en grano",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0512",
+   "es": "  LECHES",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0513",
+   "es": "Leche entera",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A10"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0515",
+   "es": "Leche desnatada",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A11",
+    "05 · Inventario Semanal · A13"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0516",
+   "es": "Leche de avena",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A12",
+    "05 · Inventario Semanal · A14"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0517",
+   "es": "Leche de soja",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A13",
+    "05 · Inventario Semanal · A15"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0518",
+   "es": "Leche de almendra",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A14",
+    "05 · Inventario Semanal · A16"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0519",
+   "es": "Nata para montar",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A15",
+    "05 · Inventario Semanal · A17"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0520",
+   "es": "  BEBIDAS",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0521",
+   "es": "Cacao en polvo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A17",
+    "05 · Inventario Semanal · A35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0522",
+   "es": "Matcha en polvo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0524",
+   "es": "Sirope de vainilla",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A19"
+   ],
+   "pistas": [
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0525",
+   "es": "Sirope de caramelo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A20"
+   ],
+   "pistas": [
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0526",
+   "es": "Té / Infusiones (variedades)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0528",
+   "es": "Zumo de naranja natural",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A22"
+   ],
+   "pistas": [
+    "zumo → juice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0529",
+   "es": "  PANADERÍA Y BOLLERÍA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0530",
+   "es": "Pan sourdough",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0531",
+   "es": "Pan brioche",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0532",
+   "es": "Pan integral/centeno",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0533",
+   "es": "Croissants",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0534",
+   "es": "Muffins / Magdalenas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0535",
+   "es": "Cookies / Brownies",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0536",
+   "es": "  FRESCOS BRUNCH",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0537",
+   "es": "Huevos",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0538",
+   "es": "Aguacate",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A32",
+    "05 · Inventario Semanal · A28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0539",
+   "es": "Salmón ahumado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A33",
+    "05 · Inventario Semanal · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0540",
+   "es": "Bacon",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A34",
+    "05 · Inventario Semanal · A30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0541",
+   "es": "Mantequilla",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A35",
+    "05 · Inventario Semanal · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0542",
+   "es": "Queso crema",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A36",
+    "05 · Inventario Semanal · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0543",
+   "es": "Fruta fresca (plátano, fresa, arándanos)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Diario · A37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0544",
+   "es": "Granola",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A38",
+    "05 · Inventario Semanal · A32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0545",
+   "es": "  PACKAGING (TAKE-AWAY)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0546",
+   "es": "Vasos take-away (medianos)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A40"
+   ],
+   "pistas": [
+    "take-away → to-go"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0547",
+   "es": "Vasos take-away (grandes)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A41"
+   ],
+   "pistas": [
+    "take-away → to-go"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0548",
+   "es": "Tapas para vasos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A42",
+    "05 · Inventario Semanal · A44"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0549",
+   "es": "Bolsas para bollería",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A43"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0550",
+   "es": "Servilletas",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A44",
+    "05 · Inventario Semanal · A46"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0551",
+   "es": "Firma responsable: _________________________    Hora: _________",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Diario · A46"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0553",
+   "es": "Inventario Semanal de Almacén — Conteo por Rubros",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Inventario Semanal · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0554",
+   "es": "Semana del ___/___/______ al ___/___/______    Responsable: ________________",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Inventario Semanal · A2"
+   ],
+   "pistas": [
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0555",
+   "es": "Producto / Rubro",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0556",
+   "es": "Coste unit.",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · D4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0557",
+   "es": "Valor total",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · E4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0558",
+   "es": "Pedido necesario",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · F4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0559",
+   "es": "  CAFÉ Y TÉ",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0560",
+   "es": "Café blend principal (bolsas 1kg)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Semanal · A6"
+   ],
+   "adaptar": "Unidad US: lb; «bolsas 1kg» → «2 lb bags» (1 kg ≈ 2.2 lb)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0561",
+   "es": "Café origen/especialidad",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0562",
+   "es": "Café descafeinado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0563",
+   "es": "Té surtido (cajas)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0564",
+   "es": "Matcha",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Semanal · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0565",
+   "es": "  LÁCTEOS Y LECHES",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0566",
+   "es": "Leche entera (briks/botellas)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Semanal · A12"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream",
+    "brik → carton (half-gallon / gallon)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0567",
+   "es": "  PANADERÍA / BOLLERÍA",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0568",
+   "es": "Pan sourdough (hogazas)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0569",
+   "es": "Pan brioche (piezas)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0570",
+   "es": "Croissants (congelados o frescos)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Semanal · A23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0571",
+   "es": "Masa de muffins / bollería",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Semanal · A24"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0572",
+   "es": "Harina, azúcar, levadura (producción propia)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Semanal · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0573",
+   "es": "  FRESCOS",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Semanal · A26",
+    "05 · FIFO Semanal · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0574",
+   "es": "Huevos (docenas)",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0576",
+   "es": "Fruta fresca variada",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0577",
+   "es": "Yogur natural",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0578",
+   "es": "  SECOS Y SIROPES",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0579",
+   "es": "Siropes (vainilla, caramelo, avellana)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Semanal · A36"
+   ],
+   "pistas": [
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0580",
+   "es": "Azúcar blanco",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0581",
+   "es": "Azúcar moreno",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A38"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0582",
+   "es": "Sacarina/estevia",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0583",
+   "es": "Miel",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Semanal · A40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0584",
+   "es": "  PACKAGING Y DESECHABLES",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A41"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0585",
+   "es": "Vasos take-away medianos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Semanal · A42"
+   ],
+   "pistas": [
+    "take-away → to-go"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0586",
+   "es": "Vasos take-away grandes",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Semanal · A43"
+   ],
+   "pistas": [
+    "take-away → to-go"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0587",
+   "es": "Bolsas papel bollería",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A45"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0588",
+   "es": "Pajitas de papel",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A47"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0589",
+   "es": "Detergente lavavajillas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A49"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0590",
+   "es": "Desinfectante superficies",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A50"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0591",
+   "es": "Pastillas backflush espresso",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A51"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0592",
+   "es": "Descalcificador máquina",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Semanal · A52"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0593",
+   "es": "Jabón de manos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Semanal · A53"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0594",
+   "es": "Papel higiénico y secamanos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Semanal · A54"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0595",
+   "es": "TOTAL:",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Semanal · D56"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0597",
+   "es": "  COCINA",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Limpieza Semanal · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0599",
+   "es": "Desmontar y limpiar campana extractora",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B7"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0600",
+   "es": "Limpiar interior de horno a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0601",
+   "es": "Limpiar detrás y debajo de equipos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0602",
+   "es": "Desinfectar tablas de corte (sumergir en lejía)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B10"
+   ],
+   "adaptar": "Sanitizar con un sanitizante aprobado a la concentración de la etiqueta, medida con tiras (test strips) (FDA Food Code 4-501.114); sin «lejía» a ojo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0603",
+   "es": "Limpiar estanterías de almacén",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0604",
+   "es": "  BARRA",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Limpieza Semanal · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0605",
+   "es": "Limpiar interior de vitrina a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B13"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0606",
+   "es": "Limpiar grupo de espresso con cepillo especial",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B14"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0607",
+   "es": "Limpiar molinillo interior (sin agua)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B15"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0608",
+   "es": "Limpiar nevera de barra interior",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0609",
+   "es": "Desinfectar superficie de barra completa",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0610",
+   "es": "  SALA Y BAÑOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · A18"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0611",
+   "es": "Limpiar cristales interiores y exteriores",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0612",
+   "es": "Limpiar sillas y bancos a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0613",
+   "es": "Fregar suelos con producto desengrasante",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0614",
+   "es": "Limpieza profunda de baños: azulejos, espejos, suelo",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0615",
+   "es": "Limpiar terraza a fondo (si aplica)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B23"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0618",
+   "es": "  CÁMARAS FRIGORÍFICAS",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · FIFO Semanal · A5"
+   ],
+   "pistas": [
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0619",
+   "es": "Verificar etiquetado y fechas de todos los productos abiertos",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · FIFO Semanal · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0622",
+   "es": "Rotar: producto más antiguo delante",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0623",
+   "es": "Desechar producto caducado o en mal estado",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · FIFO Semanal · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0624",
+   "es": "Verificar temperaturas de todas las cámaras (refrigeración 0-4 °C) — anota la lectura: ____ °C",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "05 · FIFO Semanal · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0625",
+   "es": "  BARRA Y VITRINA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0626",
+   "es": "Revisar caducidad de leches abiertas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B11"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "adaptar": "Leche abierta: fuera a los 7 días contando el de apertura o en el use-by de la etiqueta, lo que llegue antes (FDA Food Code 3-501.17(B)); a 41 °F o menos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0627",
+   "es": "Revisar caducidad de siropes abiertos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B12"
+   ],
+   "pistas": [
+    "sirope → syrup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0628",
+   "es": "Verificar estado de bollería (frescura)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B13"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0629",
+   "es": "Revisar caducidad de zumos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B14"
+   ],
+   "pistas": [
+    "zumo → juice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0631",
+   "es": "Revisar caducidad de café en grano (frescura)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · FIFO Semanal · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0632",
+   "es": "Revisar caducidad de tés e infusiones",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0633",
+   "es": "Revisar stock de packaging: vasos, tapas, bolsas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · FIFO Semanal · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0634",
+   "es": "Verificar que no hay plagas ni humedad",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · FIFO Semanal · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0635",
+   "es": "Revisar fruta fresca: desechar lo pasado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0636",
+   "es": "Revisar huevos: fecha de caducidad",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0637",
+   "es": "Revisar el pan y la bollería: congelar EN EL DÍA lo que no se usará y etiquetar con la fecha (vida útil por familia en la tabla del pie de esta hoja)",
+   "grupo": "G2",
+   "palabras": 32,
+   "donde": [
+    "05 · FIFO Semanal · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0642",
+   "es": "Croissants y masas de bollería crudas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B36"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0643",
+   "es": "1-2 meses",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · C36",
+    "05 · FIFO Semanal · C40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0644",
+   "es": "La levadura pierde fuerza: después sube mal aunque sea seguro comerlo",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · FIFO Semanal · D36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0645",
+   "es": "Pan y bollería ya horneada",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B37"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0647",
+   "es": "Pierde textura antes que seguridad; descongela y regenera en horno",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · FIFO Semanal · D37"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0648",
+   "es": "Tartas y bizcochos sin nata montada",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B38"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0650",
+   "es": "La nata montada y las cremas de huevo NO aguantan la congelación",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "05 · FIFO Semanal · D38"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0651",
+   "es": "Salmón ahumado y pescado azul",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0653",
+   "es": "Bacon, jamón y embutido loncheado",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0654",
+   "es": "La sal acelera el enranciamiento de la grasa",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · FIFO Semanal · D40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0655",
+   "es": "Fruta troceada y pulpas para bowls",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B41"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0657",
+   "es": "Congélala el mismo día del corte y en porciones de un solo uso",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · FIFO Semanal · D41"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0658",
+   "es": "Caldos, cremas y salsas propias",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B42"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0661",
+   "es": "Café en grano",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B43"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0662",
+   "es": "No congelar",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · FIFO Semanal · C43"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0663",
+   "es": "Para uso diario no se congela: la condensación de abrir y cerrar la bolsa arruina el grano",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "05 · FIFO Semanal · D43"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0665",
+   "es": "Descalcificar máquina de espresso completa",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mantenimiento Mensual · B6"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "adaptar": "Descalcificar = «descale … per the manufacturer's instructions» (en muchas máquinas comerciales lo hace el técnico); sin cifras ni productos que no diga el fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0666",
+   "es": "Cambiar juntas de grupo si están desgastadas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B7"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0667",
+   "es": "Verificar presión de caldera",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mantenimiento Mensual · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0668",
+   "es": "Limpiar filtro de agua",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mantenimiento Mensual · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0669",
+   "es": "  MOLINILLO",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Mantenimiento Mensual · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0670",
+   "es": "Limpiar muelas del molinillo a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B11"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0671",
+   "es": "Verificar desgaste de muelas (cambiar si aplica)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B12"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0672",
+   "es": "Calibrar dosificación",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Mantenimiento Mensual · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0673",
+   "es": "  COCINA Y GENERAL",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0674",
+   "es": "Revisión horno: resistencias, puerta, juntas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mantenimiento Mensual · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0675",
+   "es": "Lavavajillas: limpiar filtros, verificar abrillantador y sal",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B16"
+   ],
+   "adaptar": "Lavavajillas = dish machine: filtros y rinse aid; la sal, solo si la máquina lleva descalcificador (water softener)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0676",
+   "es": "Revisar campana extractora y filtros",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mantenimiento Mensual · B17"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0677",
+   "es": "Verificar estado de instalación eléctrica",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mantenimiento Mensual · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0678",
+   "es": "  SEGURIDAD Y CUMPLIMIENTO",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0679",
+   "es": "Verificar extintor: presión, caducidad, accesibilidad",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mantenimiento Mensual · B21"
+   ],
+   "adaptar": "Inspección visual mensual (OSHA 1910.157(e)(2)): manómetro en verde, pasador y precinto, acceso libre, etiqueta firmada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0680",
+   "es": "Revisar salidas de emergencia: despejadas y señalizadas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B23"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0694",
+   "es": "  GAS, FRÍO Y RESIDUOS",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Trimestral y Anual · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0702",
+   "es": "  AGUA Y EQUIPOS DE CAFÉ",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Trimestral y Anual · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0703",
+   "es": "Cambiar el filtro descalcificador de agua de la máquina de espresso y anotar la fecha del cambio",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "05 · Trimestral y Anual · B15"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0705",
+   "es": "Medir la dureza del agua (GH/KH) y ajustar el filtro: el agua es casi todo lo que hay en la taza",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "05 · Trimestral y Anual · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0706",
+   "es": "Revisión técnica completa de la máquina de espresso por el SAT: juntas, presión y válvula de seguridad",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "05 · Trimestral y Anual · B17"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter",
+    "SAT → espresso tech / service tech"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0707",
+   "es": "Revisar el desgaste de las muelas del molinillo por kilos molidos (orientativo: planas 400-600 kg, cónicas 800-1.200 kg) y cambiarlas si toca",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "05 · Trimestral y Anual · B18"
+   ],
+   "pistas": [
+    "molinillo → grinder; calibrar la molienda → dial in; muelas → burrs; tolva → hopper"
+   ],
+   "adaptar": "Peso US: planas 880–1,320 lb (400–600 kg), cónicas 1,760–2,650 lb (800–1,200 kg); orientativo, manda el fabricante del molinillo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0708",
+   "es": "Calibrar los termómetros y las sondas contra un patrón conocido (agua con hielo, 0 °C)",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "05 · Trimestral y Anual · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Calibración por el método del punto de hielo (32 °F)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0709",
+   "es": "  ADMINISTRACIÓN Y SEGUROS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Trimestral y Anual · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0720",
+   "es": "Brunch Dominical Especial — Prep y Servicio",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Brunch Dominical · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0721",
+   "es": "  PREPARACIÓN (SÁBADO / PRE-BRUNCH)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Brunch Dominical · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0722",
+   "es": "Confirmar reservas de brunch del domingo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Brunch Dominical · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0724",
+   "es": "Al confirmar cada reserva, anotar POR ESCRITO alérgenos, intolerancias y número real de comensales, y pasarlo a cocina y a barra",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "06 · Brunch Dominical · B7"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0725",
+   "es": "Hacer pedido extra: huevos, aguacate, salmón, fruta",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Brunch Dominical · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0726",
+   "es": "Preparar carta/menú especial de brunch",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Brunch Dominical · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0727",
+   "es": "Publicar en RRSS: foto + horario de brunch",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Brunch Dominical · B10"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0728",
+   "es": "Verificar stock extra de café y leches",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Brunch Dominical · B11"
+   ],
+   "pistas": [
+    "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0729",
+   "es": "  DOMINGO — APERTURA ESPECIAL",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Brunch Dominical · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0730",
+   "es": "Montar buffet de brunch si aplica (zumos, fruta, bollería)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Brunch Dominical · B13"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods",
+    "zumo → juice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0731",
+   "es": "Decoración especial de mesas (flores, servilletas de tela)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Brunch Dominical · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0732",
+   "es": "Preparar doble cantidad de mise en place brunch",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Brunch Dominical · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0733",
+   "es": "Preparar batch de zumo de naranja natural",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Brunch Dominical · B16"
+   ],
+   "pistas": [
+    "zumo → juice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0734",
+   "es": "Preparar smoothies base extra",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Brunch Dominical · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0735",
+   "es": "Gestionar cola de espera si hay lleno",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Brunch Dominical · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0736",
+   "es": "Reponer buffet continuamente",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Brunch Dominical · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0737",
+   "es": "Reforzar barra: dos baristas si es posible",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Brunch Dominical · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0738",
+   "es": "Controlar tiempos: brunch no debe tardar +15 min",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Brunch Dominical · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0739",
+   "es": "Ofrecer mimosa/bellini como extra",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Brunch Dominical · B23"
+   ],
+   "adaptar": "Mimosa / bellini solo si tu licencia de alcohol lo permite (beer & wine license) y a mayores de 21 con ID",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0740",
+   "es": "  CIERRE POST-BRUNCH",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Brunch Dominical · A24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0741",
+   "es": "Recoger buffet y guardar sobrantes etiquetados",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Brunch Dominical · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0742",
+   "es": "Limpieza extra de cocina (más volumen de lo normal)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Brunch Dominical · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0743",
+   "es": "Anotar qué se vendió más/menos para ajustar semana próxima",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Brunch Dominical · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0747",
+   "es": "  PREPARACIÓN (1 SEMANA ANTES)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · San Valentín · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0748",
+   "es": "Diseñar desayuno/brunch especial de San Valentín",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0750",
+   "es": "Pedir ingredientes especiales (fresas, chocolate, champagne)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B7"
+   ],
+   "adaptar": "Champán (champagne) solo si tu licencia de alcohol lo permite",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0752",
+   "es": "Preparar decoración: flores, velas, corazones",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · San Valentín · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0753",
+   "es": "2 días antes",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · San Valentín · E8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0754",
+   "es": "Publicar oferta en RRSS y aceptar reservas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B9"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0755",
+   "es": "Al confirmar cada reserva, recoger POR ESCRITO alérgenos e intolerancias y pasarlos a cocina y a barra (gluten, frutos secos, lactosa, huevo)",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "06 · San Valentín · B10"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales; ejemplos: trigo (gluten), frutos de cáscara (tree nuts) y cacahuete, leche, huevo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0758",
+   "es": "Montar decoración especial",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · San Valentín · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0759",
+   "es": "Preparar latte art especial (corazón)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · San Valentín · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0760",
+   "es": "Ofrecer tostada con forma de corazón o plato especial",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · San Valentín · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0761",
+   "es": "Postre especial: brownie con fresas / tarta red velvet",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · San Valentín · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0762",
+   "es": "Mimosa de cortesía para parejas (si aplica)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B16"
+   ],
+   "adaptar": "Bebida de bienvenida para parejas: sin alcohol, o una mimosa solo donde tu licencia y tu estado permiten regalar alcohol (21+ con ID)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0763",
+   "es": "Hacer fotos para RRSS durante el servicio",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B17"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0764",
+   "es": "Tareas Específicas — Navidad y Festivos de Invierno",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0765",
+   "es": "  PREPARACIÓN (2 SEMANAS ANTES)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Navidad · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0766",
+   "es": "Diseñar carta navideña especial",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Navidad · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0768",
+   "es": "Pedir stock: panettone, turrón, cava, chocolate caliente especial",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Navidad · B7"
+   ],
+   "adaptar": "Sin turrón ni cava: panettone, galletas de temporada (holiday cookies) y chocolate para el hot chocolate especial",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0771",
+   "es": "Planificar horarios especiales (Nochebuena, Navidad, Año Nuevo)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0772",
+   "es": "  MONTAJE NAVIDEÑO",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Navidad · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0773",
+   "es": "Decorar local: luces, guirnaldas, árbol si aplica",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · B11"
+   ],
+   "pistas": [
+    "el local → the cafe / the shop (nunca «restaurant» ni «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0775",
+   "es": "Decorar vitrina con tema navideño",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · B12"
+   ],
+   "pistas": [
+    "vitrina → pastry case (refrigerada: refrigerated pastry case)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0776",
+   "es": "Actualizar pizarra con carta de Navidad",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B13"
+   ],
+   "pistas": [
+    "pizarra → menu board / chalkboard"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0777",
+   "es": "  SERVICIO NAVIDEÑO",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Navidad · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0778",
+   "es": "Café especial navideño: gingerbread latte, pumpkin spice",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0779",
+   "es": "Chocolate caliente especial con toppings navideños",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0780",
+   "es": "Bollería navideña: panettone, roscón, stollen",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · B17"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "adaptar": "Sin roscón: panettone, stollen y galletas de temporada (holiday cookies)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0781",
+   "es": "Ofrecer turrón o polvorón con el café",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · B18"
+   ],
+   "adaptar": "Sin turrón ni polvorón: una galleta de temporada (p. ej. gingerbread) con el café",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0782",
+   "es": "Hacer fotos navideñas para RRSS",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · B19"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0783",
+   "es": "  CIERRE DE AÑO",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Navidad · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0784",
+   "es": "Verificar stock para semana sin entregas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0786",
+   "es": "Planificar equipo mínimo para festivos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0788",
+   "es": "Retirar decoración navideña después de Reyes",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B23"
+   ],
+   "adaptar": "Retirar la decoración navideña la primera semana de enero (sin Reyes)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0791",
+   "es": "  APERTURA DE TERRAZA (PRIMAVERA)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · A5"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0792",
+   "es": "Verificar el permiso/licencia de terraza vigente y renovarlo si caduca esta temporada",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "06 · Temporada Terraza · B6"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Permiso de la ciudad: outdoor dining / sidewalk cafe permit: comprobar que está vigente y renovarlo si caduca esta temporada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0794",
+   "es": "Sacar mobiliario de almacén / desembalar",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Terraza · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0796",
+   "es": "Verificar estado: tornillos, estabilidad, pintura",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Terraza · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0797",
+   "es": "Limpiar todas las mesas y sillas a fondo",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Temporada Terraza · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0798",
+   "es": "Colocar sombrillas/toldos y verificar mecanismo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Terraza · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0799",
+   "es": "Delimitar zona de terraza (vallas, maceteros)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Terraza · B11"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0800",
+   "es": "Colocar macetas, plantas y decoración",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Terraza · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0801",
+   "es": "  CIERRE DE TERRAZA (OTOÑO)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · A13"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0802",
+   "es": "Recoger decoración y plantas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0804",
+   "es": "Limpiar y secar todo el mobiliario",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Terraza · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0805",
+   "es": "Guardar sombrillas y toldos bien plegados",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Terraza · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0806",
+   "es": "Guardar mobiliario en almacén (protegido)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Terraza · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0825",
+   "es": "▸ Imprime en A4 y deja espacio para firma del encargado",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "07 · Instrucciones · B21"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "D17: US Letter",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "motivo": "contexto: shift manager",
+   "base_en": "▸ Print on US Letter and leave room for the shift manager's signature"
+  },
+  {
+   "id": "c0828",
+   "es": "Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Por Franja Horaria · A2"
+   ],
+   "pistas": [
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "motivo": "contexto: Shift manager",
+   "base_en": "Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________"
+  },
+  {
+   "id": "c0850",
+   "es": "▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "08 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day."
+  },
+  {
+   "id": "c0851",
+   "es": "▸ El detalle por área (cocina, sala, barra café) va en 01-apertura-cierre.xlsx: no repitas el trabajo, cada fichero cubre un nivel distinto.",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "08 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-coffee-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0853",
+   "es": "▸ Imprime la hoja del turno (apertura o cierre) o úsala en tablet; el responsable reparte y cada persona firma su tarea.",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "08 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "contexto: shift manager",
+   "base_en": "▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs."
+  },
+  {
+   "id": "c0858",
+   "es": "Apertura del Negocio — Cafetería / Brunch",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Apertura del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Cafetería / Brunch»",
+    "cafetería → coffee shop o cafe (SIN tilde: nunca «café» con tilde en inglés)"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Opening Checklist"
+  },
+  {
+   "id": "c0860",
+   "es": "Responsable de turno: _________________________",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · E2",
+    "08 · Cierre del Negocio · E2"
+   ],
+   "pistas": [
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "motivo": "contexto: Shift manager",
+   "base_en": "Shift manager: _________________________"
+  },
+  {
+   "id": "c0881",
+   "es": "Comprobar que la máquina de espresso está en temperatura y purgada (rutina completa en 01)",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "08 · Apertura del Negocio · B20"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0882",
+   "es": "Preparar barra de autoservicio",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B21"
+   ],
+   "pistas": [
+    "barra de autoservicio → self-serve station / condiment bar"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0884",
+   "es": "Cierre del Negocio — Cafetería / Brunch",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Cierre del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Cafetería / Brunch»",
+    "cafetería → coffee shop o cafe (SIN tilde: nunca «café» con tilde en inglés)"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Closing Checklist"
+  },
+  {
+   "id": "c0887",
+   "es": "Verificar que no quedan clientes en el local",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Cierre del Negocio · B6"
+   ],
+   "pistas": [
+    "el local → the cafe / the shop (nunca «restaurant» ni «venue»)"
+   ],
+   "motivo": "contexto: restaurant",
+   "base_en": "Make sure no guests remain in the restaurant"
+  },
+  {
+   "id": "c0900",
+   "es": "Comprobar que el grupo de café queda limpio y apagado (backflush en 01)",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "08 · Cierre del Negocio · B18"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0985",
+   "es": "Responsable general: _________________________",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "09 · Registro Mensual · F2"
+   ],
+   "pistas": [
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "motivo": "corregida: ronda 1 M5: «General manager» → «Manager»",
+   "base_en": "General manager: _________________________"
+  },
+  {
+   "id": "c0999",
+   "es": "▸ El jefe de sala o manager rellena antes del briefing",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "Glosario: sala → front of house (FOH) / dining room",
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "en la cafetería no hay FOH manager: shift lead o manager"
+   ],
+   "motivo": "contexto: FOH manager",
+   "base_en": "▸ The FOH manager or shift manager fills this out before the pre-shift meeting"
+  },
+  {
+   "id": "c1002",
+   "es": "▸ Estás en BONUS-01-briefing-servicio.xlsx: el briefing abre el turno que luego se trabaja con 01-apertura-cierre.xlsx.",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "B01 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "BONUS-01-briefing-servicio.xlsx",
+     "en": "BONUS-01-coffee-shop-pre-shift-meeting-template.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-coffee-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c1004",
+   "es": "Fecha: ___/___/______    Turno: ☐ Comida  ☐ Cena    Encargado: _________________________",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B01 · Briefing · B2"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "adaptar": "Turnos de cafetería: ☐ AM ☐ PM (sin comida / cena); «Encargado» → «Shift lead»",
+   "motivo": "adaptar",
+   "base_en": "Date: ___/___/______    Shift: ☐ Lunch  ☐ Dinner    Shift manager: _________________________"
+  },
+  {
+   "id": "c1030",
+   "es": "Firma encargado: _________________________",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing · B35"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "encargado/a / responsable de turno → shift lead (no «shift manager»)"
+   ],
+   "motivo": "contexto: Shift manager",
+   "base_en": "Shift manager signature: _________________________"
+  },
+  {
+   "id": "c1034",
+   "es": "▸ Consulta las fechas clave de hostelería mes a mes",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ Check the key restaurant dates month by month"
+  },
+  {
+   "id": "c1038",
+   "es": "Calendario Anual — Fechas Clave de Hostelería",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · A1"
+   ],
+   "motivo": "contexto: Restaurants",
+   "base_en": "Holiday Calendar — Key Dates for Restaurants"
+  },
+  {
+   "id": "c1048",
+   "es": "Roscón de Reyes, menú familiar",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C6"
+   ],
+   "adaptar": "Evento EN: «Jan 6 — King cake season begins». Sustituye a Reyes: el roscón → King cake (del 6 de enero, Epiphany, al Mardi Gras; sobre todo en Luisiana y la costa del Golfo). Tareas: King cake por encargo y en la vitrina si encaja con tu zona, menú familiar",
+   "motivo": "adaptar",
+   "base_en": "Pre-orders for takeout (wings, party platters), screens at the bar, extra bar and delivery staff"
+  },
+  {
+   "id": "c1051",
+   "es": "Menú parejas, decoración romántica, turnos extra",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C7"
+   ],
+   "adaptar": "Evento EN: «Feb 14 — Valentine's Day». Cafetería: menú para parejas de desayuno / brunch (no «date night»), decoración romántica, turnos extra",
+   "motivo": "adaptar",
+   "base_en": "Date-night menu, romantic decorations, extra shifts"
+  },
+  {
+   "id": "c1057",
+   "es": "Desayuno/brunch familiar, reservas ampliadas, detalle para el padre",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Calendario Anual · C9"
+   ],
+   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day». Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas de cafetería: bebidas y bollería temáticas (sin alcohol), decoración",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c1060",
+   "es": "Menú de vigilia, bacalao, potaje, torrijas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C10"
+   ],
+   "adaptar": "Evento EN: «Easter Sunday (varies)». Sustituye a Semana Santa (sin bacalao, potaje ni torrijas). Tareas: brunch de Pascua, bollería de temporada (hot cross buns), reservas ampliadas",
+   "motivo": "adaptar",
+   "base_en": "Easter brunch, specials (baked ham, lamb), expanded reservations"
+  },
+  {
+   "id": "c1066",
+   "es": "Menú de grupo cerrado, señal y precio por comensal, tartas por encargo",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C12"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "adaptar": "Evento EN: «Graduation season». Mismas tareas del ES (menú de grupo cerrado, depósito y precio por persona, tartas por encargo → custom cake orders); en EE. UU. son graduaciones y baby/bridal showers",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c1069",
+   "es": "Servicio de festivo, turnos especiales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C13"
+   ],
+   "adaptar": "Evento EN: «Teacher Appreciation Week (1st full week of May)». Sustituye al 1 de mayo. Tareas: promoción para profesores y colegios (pedidos de café para llevar en termo y bandejas de bollería), turnos especiales",
+   "motivo": "adaptar",
+   "base_en": "Margarita and taco specials, extra bar staff"
+  },
+  {
+   "id": "c1074",
+   "es": "Refuerzo de plantilla, stock verano",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C15"
+   ],
+   "adaptar": "Evento EN: «Memorial Day (last Monday)». Sustituye a «Inicio temporada alta». Tareas: reforzar plantilla, stock de verano (bebidas frías, cold brew si lo sirves, hielo), patio a pleno",
+   "motivo": "adaptar",
+   "base_en": "Add staff, summer stock, patio at full capacity"
+  },
+  {
+   "id": "c1076",
+   "es": "Menú especial, terraza nocturna",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · C16"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Evento EN: «3rd Sunday — Father's Day». Sustituye a San Juan. Tareas = las del Día del Padre del ES (fila 9): desayuno / brunch familiar, reservas ampliadas, detalle para el padre",
+   "motivo": "adaptar",
+   "base_en": "Steak and BBQ specials, expanded reservations"
+  },
+  {
+   "id": "c1079",
+   "es": "Personal extra, horarios ampliados, carta verano",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C17"
+   ],
+   "adaptar": "Evento EN: «Jul 4 — Independence Day». Sustituye a la fila de temporada alta (sus tareas pasan a la fila 18). Tareas: decidir el horario (abrir solo por la mañana o cerrar), patio a pleno rendimiento, refuerzo de bebidas frías y hielo",
+   "motivo": "adaptar",
+   "base_en": "Decide hours (many close or open daytime only), patio at full capacity, BBQ specials"
+  },
+  {
+   "id": "c1086",
+   "es": "Carta otoño, menú del día reforzado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C19"
+   ],
+   "adaptar": "Evento EN: «Back to school + Sep 29 — National Coffee Day». Sustituye a «Vuelta al cole / rutina». Tareas: carta de otoño (fall drinks) y desayuno reforzado para la vuelta a la rutina; el 29 de septiembre es el National Coffee Day: bebida o promoción del día y aviso en redes",
+   "motivo": "adaptar",
+   "base_en": "Fall menu and lunch specials for the back-to-routine crowd"
+  },
+  {
+   "id": "c1089",
+   "es": "Decoración temática, menú/cocktails especiales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C20"
+   ],
+   "adaptar": "Evento EN: «Oct 31 — Halloween». Decoración temática; bebidas y bollería especiales (sin cócteles)",
+   "motivo": "adaptar",
+   "base_en": "Themed decorations, special menu/cocktails"
+  },
+  {
+   "id": "c1092",
+   "es": "Brunch familiar de mediodía, bollería de temporada (huesos de santo, panellets)",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C21"
+   ],
+   "pistas": [
+    "bollería → pastries / baked goods"
+   ],
+   "adaptar": "Evento EN: «Thanksgiving (4th Thursday)». Sustituye a Todos los Santos (la bollería de temporada → pedidos de tartas de Thanksgiving: pumpkin y pecan pie). Tareas: decidir si se abre el jueves, pedidos de tartas y bollería para llevar, turnos del miércoles",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c1097",
+   "es": "Horario de festivo, refuerzo de mediodía, stock para tres días seguidos",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C23"
+   ],
+   "adaptar": "Evento EN: «Holiday gift card season». Sustituye al puente de la Constitución. Del Black Friday a Nochebuena. Tareas: promoción de tarjetas regalo, expositor junto a la caja (register), venta online",
+   "motivo": "adaptar",
+   "base_en": "Black Friday through Christmas Eve: gift card promotion (bonus card), display at the host stand, online sales"
+  },
+  {
+   "id": "c1099",
+   "es": "Menú de grupo, reservas grandes, turnos extra",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · C24"
+   ],
+   "pistas": [
+    "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
+   ],
+   "adaptar": "Evento EN: «Holiday catering (office orders)». Sustituye a las cenas de empresa. Tareas: pedidos de empresa (café para llevar en termo y bandejas de bollería), reservas de grupo, turnos extra",
+   "motivo": "adaptar",
+   "base_en": "Group menu, large reservations, extra shifts"
+  },
+  {
+   "id": "c1103",
+   "es": "Menú gala, cotillón, uvas, cava, turnos noche",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · C26"
+   ],
+   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Sin uvas, cava ni cotillón español. Tareas: decidir el horario (cerrar pronto o abrir de noche); si abres de noche, party favors y brindis a medianoche sin alcohol (o con champán solo si tu licencia lo permite; 21+ con ID), turnos",
+   "motivo": "adaptar",
+   "base_en": "Gala or prix fixe menu, party favors (hats, noisemakers), champagne toast at midnight, night shifts"
+  }
+ ]
+}

@@ -43,6 +43,8 @@ TEMAS = {
     'restaurant-checklist-templates': ['checklist', 'closing', 'cleaning', 'side work', 'pre-shift', 'line check', 'cash drawer', 'routine', 'daily task'],
     # Bar Checklists Kit Pro (18-oct-2026): checklists de bar, coctelería, draft, bartender/barback y caja.
     'bar-checklist-templates': ['bartender', 'barback', 'cocktail', 'pour cost', 'draft beer', 'beer line', 'happy hour', 'bar opening', 'bar closing', 'speed rail'],
+    # Coffee Shop Checklists Kit Pro (18-oct-2026): checklists de cafetería, barra de espresso, barista, vitrina y brunch.
+    'coffee-shop-checklist-templates': ['coffee shop', 'barista', 'espresso', 'latte', 'grinder', 'pastry case', 'brunch', 'cafe opening', 'cafe closing'],
 }
 
 
