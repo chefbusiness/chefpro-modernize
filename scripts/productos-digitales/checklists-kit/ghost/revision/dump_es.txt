@@ -1,0 +1,3387 @@
+Volcado de 11 xlsx de /root/wt-ghost/astro-site/public/dl/kit-tareas-dark-kitchen (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-apertura-cierre.xlsx
+# docProps: title='Tareas de Apertura y Cierre — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$33 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas de Apertura y Cierre — Dark Kitchen
+B4     : Cómo cuenta el contador
+B6     : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B7     : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B8     : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B10    : Filas libres
+B12    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B13    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B15    : Protección de la hoja
+B17    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B18    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B20    : Se conecta con
+B22    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B23    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B24    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B25    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B26    : ▸ Estás en 01-apertura-cierre.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx.
+B28    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B30    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B31    : Contacto: info@aichef.pro
+B33    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Apertura Cocina» · protegida=True · área='Apertura Cocina'!$A$1:$G$52 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Apertura — Cocina de Producción
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+A5     :   HIGIENE PERSONAL
+A6     : 1
+B6     : Uniforme y calzado de trabajo limpios, delantal cambiado y pelo recogido (gorro o redecilla)
+C6     : Cocina
+D6     : Todo el equipo
+E6     : 09:00
+A7     : 2
+B7     : Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin esmalte
+C7     : Cocina
+D7     : Todo el equipo
+E7     : 09:00
+A8     : 3
+B8     : Heridas y cortes cubiertos con apósito impermeable de color visible y guante encima
+C8     : Cocina
+D8     : Todo el equipo
+E8     : 09:00
+A9     : 4
+B9     : Lavado de manos al entrar y en cada cambio de tarea o de marca; lavamanos con jabón, papel y agua caliente
+C9     : Cocina
+D9     : Todo el equipo
+E9     : 09:00
+A10    : 5
+B10    : Declarar síntomas digestivos o respiratorios: quien los tenga no manipula alimentos
+C10    : Cocina
+D10    : Encargado/a
+E10    : 09:00
+A11    :   EQUIPOS
+A12    : 6
+B12    : Encender la campana extractora y ventilar la cocina ANTES de encender nada más
+C12    : Cocina
+D12    : Cocinero apertura
+E12    : 09:00
+A13    : 7
+B13    : Verificar el gas ANTES de encender nada: abrir la llave general y comprobar que NO huele a gas; si huele, no enciendas, ventila y avisa al mantenedor
+C13    : Cocina
+D13    : Cocinero apertura
+E13    : 09:00
+A14    : 8
+B14    : Encender los equipos en este orden: plancha, horno, freidora y fogones
+C14    : Cocina
+D14    : Cocinero apertura
+E14    : 09:00
+A15    : 9
+B15    : Encender baño maría si aplica
+C15    : Cocina
+D15    : Cocinero apertura
+E15    : 09:15
+A16    : 10
+B16    : Comprobar que las cámaras frigoríficas han funcionado toda la noche y registrar temperatura (refrigeración 0-4 °C) — anota la lectura: ____ °C. Si hay desviación, no uses el género hasta valorarlo
+C16    : Cocina
+D16    : Cocinero apertura
+E16    : 09:00
+A17    :   MISE EN PLACE
+A18    : 11
+B18    : Preparar mise en place de todas las marcas/conceptos
+C18    : Cocina
+D18    : Cocinero apertura
+E18    : 09:15
+A19    : 12
+B19    : Preparar salsas del día (caseras)
+C19    : Cocina
+D19    : Cocinero apertura
+E19    : 09:15
+A20    : 13
+B20    : Cortar vegetales, proteínas, guarniciones
+C20    : Cocina
+D20    : Cocinero apertura
+E20    : 09:15
+A21    : 14
+B21    : Pre-cocinar bases: arroces, pasta, fondos
+C21    : Cocina
+D21    : Cocinero apertura
+E21    : 09:30
+A22    : 15
+B22    : Montar estaciones de producción por marca
+C22    : Cocina
+D22    : Cocinero apertura
+E22    : 09:45
+A23    : 16
+B23    : Verificar stock de cada ingrediente en línea
+C23    : Cocina
+D23    : Cocinero apertura
+E23    : 10:00
+A24    :   PACKAGING Y DELIVERY
+A25    : 17
+B25    : Verificar stock de envases por marca (cajas, bowls, bolsas)
+C25    : Packaging
+D25    : Encargado/a
+E25    : 09:00
+A26    : 18
+B26    : Verificar stock de cubiertos desechables, servilletas, salsas
+C26    : Packaging
+D26    : Encargado/a
+E26    : 09:00
+A27    : 19
+B27    : Verificar stock de bolsas de delivery con logo
+C27    : Packaging
+D27    : Encargado/a
+E27    : 09:00
+A28    : 20
+B28    : Verificar precintos de seguridad / stickers
+C28    : Packaging
+D28    : Encargado/a
+E28    : 09:00
+A29    : 21
+B29    : Montar estación de empaquetado: envases, bolsas, ticket
+C29    : Packaging
+D29    : Encargado/a
+E29    : 09:30
+A30    :   TABLETS Y PLATAFORMAS
+A31    : 22
+B31    : Encender todas las tablets de delivery
+C31    : Office
+D31    : Encargado/a
+E31    : 10:30
+A32    : 23
+B32    : Verificar conexión wifi / datos en cada tablet
+C32    : Office
+D32    : Encargado/a
+E32    : 10:30
+A33    : 24
+B33    : Activar todas las marcas en Glovo, Uber Eats, Just Eat
+C33    : Office
+D33    : Encargado/a
+E33    : 10:30
+A34    : 25
+B34    : Verificar que menús están actualizados (precios, disponibilidad)
+C34    : Office
+D34    : Encargado/a
+E34    : 10:30
+A35    : 26
+B35    : Verificar que la información de ALÉRGENOS de cada plato sigue publicada y actualizada en la ficha de cada marca: en venta a distancia es obligatorio darla antes de que el cliente compre
+C35    : Office
+D35    : Encargado/a
+E35    : 10:30
+A36    : 27
+B36    : Verificar impresora de tickets funcionando
+C36    : Office
+D36    : Encargado/a
+E36    : 10:30
+A37    : 28
+B37    : Pausar marcas si no hay stock de algo (86)
+C37    : Office
+D37    : Encargado/a
+E37    : 10:30
+A38    :   HIGIENE DE SUPERFICIES Y BOTIQUÍN
+A39    : 29
+B39    : Comprobar que el botiquín y el extintor están accesibles y sin cajas de packaging delante
+C39    : Cocina
+D39    : Todos
+E39    : 09:00
+A40    : 30
+B40    : Desinfectar superficies de trabajo
+C40    : Cocina
+D40    : Cocinero apertura
+E40    : 09:00
+A41    : 31
+B41    : Verificar jabón y papel en dispensadores
+C41    : Cocina
+D41    : Cocinero apertura
+E41    : 09:00
+A48    : Tareas completadas:
+D48    = =COUNTIFS(B5:B46,"?*",F5:F46,"✓")   → caché 0.0
+E48    : de
+F48    = =COUNTIF(B5:B46,"?*")-COUNTIF(F5:F46,"N/A")   → caché 31.0
+A50    : Firma encargado/a: _________________________    Hora: _________
+A52    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F25 F26 F27 F28 F29 F31 F32 F33 F34 F35 F36 F37 F39 F40 F41 F42 F43 F44 F45 F46 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G46 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre Cocina» · protegida=True · área='Cierre Cocina'!$A$1:$G$44 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Cierre — Cocina de Producción
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PRODUCTO
+A6     : 1
+B6     : Etiquetar y fechar todas las pre-elaboraciones
+C6     : Cocina
+D6     : Cocinero cierre
+E6     : 22:00
+A7     : 2
+B7     : Guardar salsas en recipientes herméticos
+C7     : Cocina
+D7     : Cocinero cierre
+E7     : 22:00
+A8     : 3
+B8     : Cubrir y refrigerar toda la mise en place
+C8     : Cocina
+D8     : Cocinero cierre
+E8     : 22:00
+A9     : 4
+B9     : Congelar EN EL DÍA lo que no se usará mañana, en porciones de un solo uso y etiquetado con la fecha (vida útil por familia en la tabla del pie de «FIFO Semanal», en 05-tareas-semanales-mensuales.xlsx)
+C9     : Cocina
+D9     : Cocinero cierre
+E9     : 22:00
+A10    : 5
+B10    : Anotar las mermas del día por marca (producto, cantidad y motivo): sin ese dato el food cost por marca del mes sale mal
+C10    : Cocina
+D10    : Cocinero cierre
+E10    : 22:00
+A11    :   EQUIPOS
+A12    : 6
+B12    : Apagar plancha, horno, freidora, fogones
+C12    : Cocina
+D12    : Cocinero cierre
+E12    : 22:15
+A13    : 7
+B13    : Filtrar o cambiar el aceite de la freidora si toca: manipularlo SÓLO por debajo de 40 °C, nunca en caliente, con guantes y recipiente estable; el usado, al bidón del gestor autorizado
+C13    : Cocina
+D13    : Cocinero cierre
+E13    : 22:15
+A14    : 8
+B14    : Apagar campana extractora
+C14    : Cocina
+D14    : Cocinero cierre
+E14    : 22:15
+A15    : 9
+B15    : Verificar cámaras cerradas y a temperatura (refrigeración 0-4 °C) — anota la lectura: ____ °C
+C15    : Cocina
+D15    : Cocinero cierre
+E15    : 22:15
+A16    : 10
+B16    : Cerrar llave de gas
+C16    : Cocina
+D16    : Cocinero cierre
+E16    : 22:15
+A17    :   LIMPIEZA
+A18    : 11
+B18    : Limpiar todas las superficies y estaciones
+C18    : Cocina
+D18    : Auxiliar
+E18    : 22:15
+A19    : 12
+B19    : Fregar utensilios, bandejas, cacerolas
+C19    : Cocina
+D19    : Auxiliar
+E19    : 22:15
+A20    : 13
+B20    : Barrer y fregar suelo
+C20    : Cocina
+D20    : Auxiliar
+E20    : 22:30
+A21    : 14
+B21    : Sacar basura y reciclar (mucho cartón en dark kitchen)
+C21    : Cocina
+D21    : Auxiliar
+E21    : 22:30
+A22    : 15
+B22    : Limpiar estación de empaquetado
+C22    : Packaging
+D22    : Auxiliar
+E22    : 22:30
+A23    :   TABLETS Y CIERRE
+A24    : 16
+B24    : Desactivar todas las marcas en plataformas
+C24    : Office
+D24    : Encargado/a
+E24    : 22:00
+A25    : 17
+B25    : Apagar tablets de delivery
+C25    : Office
+D25    : Encargado/a
+E25    : 22:15
+A26    : 18
+B26    : Cuadrar pedidos del día vs facturación plataformas
+C26    : Office
+D26    : Encargado/a
+E26    : 22:15
+A27    : 19
+B27    : Anotar incidencias: pedidos cancelados, reembolsos, quejas
+C27    : Office
+D27    : Encargado/a
+E27    : 22:15
+A28    : 20
+B28    : Hacer pedidos para mañana
+C28    : Office
+D28    : Encargado/a
+E28    : 22:00
+A29    :   PREPARACIÓN MAÑANA
+A30    : 21
+B30    : Descongelar lo necesario para mañana
+C30    : Cocina
+D30    : Cocinero cierre
+E30    : 22:00
+A31    : 22
+B31    : Anotar faltantes por marca
+C31    : Cocina
+D31    : Cocinero cierre
+E31    : 22:00
+A32    : 23
+B32    : Preparar lista de mise en place del día siguiente
+C32    : Cocina
+D32    : Cocinero cierre
+E32    : 22:00
+A33    : 24
+B33    : Apagar luces y activar alarma
+C33    : General
+D33    : Encargado/a
+E33    : 22:30
+A40    : Tareas completadas:
+D40    = =COUNTIFS(B5:B38,"?*",F5:F38,"✓")   → caché 0.0
+E40    : de
+F40    = =COUNTIF(B5:B38,"?*")-COUNTIF(F5:F38,"N/A")   → caché 24.0
+A42    : Firma encargado/a: _________________________    Hora: _________
+A44    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F24 F25 F26 F27 F28 F30 F31 F32 F33 F34 F35 F36 F37 F38 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G38 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 02-partidas-cocina.xlsx
+# docProps: title='Estaciones de Producción — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$33 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Estaciones de Producción — Dark Kitchen
+B4     : Cómo cuenta el contador
+B6     : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B7     : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B8     : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B10    : Filas libres
+B12    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B13    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B15    : Protección de la hoja
+B17    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B18    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B20    : Se conecta con
+B22    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B23    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B24    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B25    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B26    : ▸ Estás en 02-partidas-cocina.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B28    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B30    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B31    : Contacto: info@aichef.pro
+B33    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Estación Caliente» · protegida=True · área='Estación Caliente'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Estación Caliente — Plancha, Horno y Fogones
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ANTES
+A6     : 1
+B6     : Precalentar plancha, horno, fogones según menús del día
+C6     : Cocina
+D6     : Cocinero caliente
+E6     : 09:00
+A7     : 2
+B7     : Preparar proteínas por marca: pollo, carne, pescado
+C7     : Cocina
+D7     : Cocinero caliente
+E7     : 09:15
+A8     : 3
+B8     : Preparar guarniciones calientes: arroces, pasta, verduras
+C8     : Cocina
+D8     : Cocinero caliente
+E8     : 09:15
+A9     : 4
+B9     : Verificar stock de ingredientes calientes
+C9     : Cocina
+D9     : Cocinero caliente
+E9     : 09:30
+A10    :   DURANTE
+A11    : 5
+B11    : Cocinar según tickets de cada marca
+C11    : Cocina
+D11    : Cocinero caliente
+E11    : —
+A12    : 6
+B12    : Leer las NOTAS del ticket ANTES de cocinar: si el cliente declara alergia o intolerancia, confirmar que la receta y la línea están limpias de ese alérgeno; si no puedes garantizarlo, cancela el pedido y avísale por la plataforma
+C12    : Cocina
+D12    : Cocinero caliente
+E12    : —
+A13    : 7
+B13    : Controlar tiempos: pedido debe estar listo en 8-12 min
+C13    : Cocina
+D13    : Cocinero caliente
+E13    : —
+A14    : 8
+B14    : Mantener temperatura y presentación constante
+C14    : Cocina
+D14    : Cocinero caliente
+E14    : —
+A15    : 9
+B15    : Coordinar con empaquetado: plato listo → empaquetar ya
+C15    : Cocina
+D15    : Cocinero caliente
+E15    : —
+A16    :   DESPUÉS
+A17    : 10
+B17    : Limpiar plancha, fogones y horno
+C17    : Cocina
+D17    : Cocinero caliente
+E17    : 22:00
+A18    : 11
+B18    : Guardar pre-elaboraciones etiquetadas
+C18    : Cocina
+D18    : Cocinero caliente
+E18    : 22:00
+A19    : 12
+B19    : Anotar las mermas del turno (producto, cantidad y motivo): lo que se pasa de punto o se devuelve también cuesta dinero
+C19    : Cocina
+D19    : Cocinero caliente
+E19    : 22:00
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Firma encargado/a: _________________________    Hora: _________
+A30    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Estación Fría» · protegida=True · área='Estación Fría'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Estación Fría — Ensaladas, Bowls y Poke
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ANTES
+A6     : 1
+B6     : Lavar y desinfectar las hojas verdes y los vegetales que se sirven crudos con lejía apta para uso alimentario según la dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARAR con agua potable abundante
+C6     : Cocina
+D6     : Cocinero frío
+E6     : 09:15
+A7     : 2
+B7     : Preparar bases: arroz sushi, quinoa, lechuga
+C7     : Cocina
+D7     : Cocinero frío
+E7     : 09:15
+A8     : 3
+B8     : Pescado que se sirve CRUDO, marinado o semicrudo (poke, sushi, tartar, ceviche) — prevención de ANISAKIS: usar sólo pescado congelado previamente ≥24 h a −20 °C (o 15 h a −35 °C), o exigir el certificado al proveedor, y anotar el lote
+C8     : Cocina
+D8     : Cocinero frío
+E8     : 09:15
+A9     : 4
+B9     : Preparar toppings: aguacate, edamame, mango, semillas
+C9     : Cocina
+D9     : Cocinero frío
+E9     : 09:15
+A10    : 5
+B10    : Preparar salsas: soja, teriyaki, sriracha mayo, ponzu
+C10    : Cocina
+D10    : Cocinero frío
+E10    : 09:15
+A11    : 6
+B11    : Montar inserts de línea fría
+C11    : Cocina
+D11    : Cocinero frío
+E11    : 09:45
+A12    :   DURANTE
+A13    : 7
+B13    : Montar bowls y ensaladas según ticket
+C13    : Cocina
+D13    : Cocinero frío
+E13    : —
+A14    : 8
+B14    : Mantener ingredientes frescos (cubrir cuando no se usan)
+C14    : Cocina
+D14    : Cocinero frío
+E14    : —
+A15    : 9
+B15    : Reponer inserts constantemente
+C15    : Cocina
+D15    : Cocinero frío
+E15    : —
+A16    :   DESPUÉS
+A17    : 10
+B17    : Cubrir y refrigerar todos los inserts
+C17    : Cocina
+D17    : Cocinero frío
+E17    : 22:00
+A18    : 11
+B18    : Desechar fruta/vegetales que lleven +24h cortados
+C18    : Cocina
+D18    : Cocinero frío
+E18    : 22:00
+A19    : 12
+B19    : Anotar las mermas del turno: fruta y aguacate cortados, inserts agotados y bowls montados que no se han vendido
+C19    : Cocina
+D19    : Cocinero frío
+E19    : 22:00
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Firma encargado/a: _________________________    Hora: _________
+A30    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Empaquetado» · protegida=True · área='Empaquetado'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Estación de Empaquetado y Expedición
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ANTES
+A6     : 1
+B6     : Montar estación: envases por marca, bolsas, stickers, cubiertos
+C6     : Packaging
+D6     : Empaquetador
+E6     : 09:30
+A7     : 2
+B7     : Verificar impresora de tickets/etiquetas
+C7     : Packaging
+D7     : Empaquetador
+E7     : 09:30
+A8     : 3
+B8     : Verificar precintos de seguridad por marca
+C8     : Packaging
+D8     : Empaquetador
+E8     : 09:30
+A9     : 4
+B9     : Organizar zona de expedición: estantería por plataforma
+C9     : Packaging
+D9     : Empaquetador
+E9     : 09:30
+A10    :   DURANTE
+A11    : 5
+B11    : Empaquetar plato en envase correcto de la marca
+C11    : Packaging
+D11    : Empaquetador
+E11    : —
+A12    : 6
+B12    : Añadir cubiertos, servilleta, salsa extra si aplica
+C12    : Packaging
+D12    : Empaquetador
+E12    : —
+A13    : 7
+B13    : Colocar sticker de marca + ticket del pedido
+C13    : Packaging
+D13    : Empaquetador
+E13    : —
+A14    : 8
+B14    : Identificar con una etiqueta VISIBLE los pedidos con alergia declarada y colocarlos separados en la estantería de expedición, para que no se crucen con el resto
+C14    : Packaging
+D14    : Empaquetador
+E14    : —
+A15    : 9
+B15    : Precintar bolsa con precinto de seguridad
+C15    : Packaging
+D15    : Empaquetador
+E15    : —
+A16    : 10
+B16    : Colocar en estantería de expedición (por rider/plataforma)
+C16    : Packaging
+D16    : Empaquetador
+E16    : —
+A17    : 11
+B17    : Verificar que pedido coincide con ticket antes de entregar
+C17    : Packaging
+D17    : Empaquetador
+E17    : —
+A18    : 12
+B18    : Entregar al rider y confirmar entrega en tablet
+C18    : Packaging
+D18    : Empaquetador
+E18    : —
+A19    :   DESPUÉS
+A20    : 13
+B20    : Limpiar estación de empaquetado
+C20    : Packaging
+D20    : Empaquetador
+E20    : 22:00
+A21    : 14
+B21    : Contar stock de envases restante
+C21    : Packaging
+D21    : Empaquetador
+E21    : 22:00
+A22    : 15
+B22    : Anotar packaging que hay que pedir
+C22    : Packaging
+D22    : Empaquetador
+E22    : 22:00
+A29    : Tareas completadas:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : de
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Firma encargado/a: _________________________    Hora: _________
+A33    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 03-tareas-manager.xlsx
+# docProps: title='Tareas del Manager / Operador — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$33 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas del Manager / Operador — Dark Kitchen
+B4     : Cómo cuenta el contador
+B6     : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B7     : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B8     : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B10    : Filas libres
+B12    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B13    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B15    : Protección de la hoja
+B17    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B18    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B20    : Se conecta con
+B22    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B23    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B24    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B25    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B26    : ▸ Estás en 03-tareas-manager.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B28    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B30    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B31    : Contacto: info@aichef.pro
+B33    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Diario Manager» · protegida=True · área='Diario Manager'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Diario del Manager / Operador
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ANTES DE ACTIVAR
+A6     : 1
+B6     : Revisar previsión de pedidos (historial mismo día semana pasada)
+C6     : Office
+D6     : Manager
+E6     : 09:00
+A7     : 2
+B7     : Verificar equipo completo por turno
+C7     : General
+D7     : Manager
+E7     : 09:00
+A8     : 3
+B8     : Briefing: platos 86, promos activas en cada marca, incidencias
+C8     : General
+D8     : Manager
+E8     : 09:15
+A9     : 4
+B9     : Verificar stock crítico de todas las marcas
+C9     : Almacén
+D9     : Manager
+E9     : 09:00
+A10    : 5
+B10    : Verificar que todas las tablets tienen batería y conexión
+C10    : Office
+D10    : Manager
+E10    : 10:00
+A11    :   DURANTE OPERACIÓN
+A12    : 6
+B12    : Monitorizar tiempos de preparación por marca
+C12    : Office
+D12    : Manager
+E12    : —
+A13    : 7
+B13    : Gestionar picos: redistribuir cocineros entre estaciones
+C13    : General
+D13    : Manager
+E13    : —
+A14    : 8
+B14    : Resolver incidencias: pedidos incorrectos, riders que no llegan
+C14    : Office
+D14    : Manager
+E14    : —
+A15    : 9
+B15    : Pausar marcas si hay saturación (mejor pausar que hacer mal)
+C15    : Office
+D15    : Manager
+E15    : —
+A16    : 10
+B16    : Monitorizar ratings en tiempo real si hay quejas
+C16    : Office
+D16    : Manager
+E16    : —
+A17    : 11
+B17    : Gestionar reembolsos y contacto con soporte plataformas
+C17    : Office
+D17    : Manager
+E17    : —
+A18    :   AL CERRAR
+A19    : 12
+B19    : Desactivar todas las marcas
+C19    : Office
+D19    : Manager
+E19    : 22:00
+A20    : 13
+B20    : Revisar facturación del día por plataforma y marca
+C20    : Office
+D20    : Manager
+E20    : 22:15
+A21    : 14
+B21    : Anotar incidencias: cancelaciones, reembolsos, tiempos altos
+C21    : Office
+D21    : Manager
+E21    : 22:15
+A22    : 15
+B22    : Hacer pedidos para mañana (proveedor principal + packaging)
+C22    : Office
+D22    : Manager
+E22    : 22:00
+A23    : 16
+B23    : Supervisar cierre de cocina
+C23    : General
+D23    : Manager
+E23    : 22:15
+A24    : 17
+B24    : Cerrar y validar el registro diario de jornada del equipo (entradas, salidas y pausas)
+C24    : Office
+D24    : Manager
+E24    : 22:30
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 17.0
+A33    : Firma encargado/a: _________________________    Hora: _________
+A35    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Semanal Manager» · protegida=True · área='Semanal Manager'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Semanal (Lunes)
+A2     : Semana del ___/___/______ al ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Día
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ANÁLISIS
+A6     : 1
+B6     : Revisar ventas semana por marca y plataforma
+C6     : Office
+D6     : Manager
+E6     : Lunes
+A7     : 2
+B7     : Analizar platos más vendidos por marca
+C7     : Office
+D7     : Manager
+E7     : Lunes
+A8     : 3
+B8     : Revisar tiempo medio de preparación (objetivo <12 min)
+C8     : Office
+D8     : Manager
+E8     : Lunes
+A9     : 4
+B9     : Analizar ratings por marca en cada plataforma
+C9     : Office
+D9     : Manager
+E9     : Lunes
+A10    : 5
+B10    : Revisar tasa de cancelación y reembolsos
+C10    : Office
+D10    : Manager
+E10    : Lunes
+A11    : 6
+B11    : Evaluar food cost por marca
+C11    : Office
+D11    : Manager
+E11    : Lunes
+A12    :   PEDIDOS
+A13    : 7
+B13    : Pedido semanal de ingredientes principales
+C13    : Office
+D13    : Manager
+E13    : Lunes
+A14    : 8
+B14    : Pedido de packaging por marca (envases, bolsas, stickers)
+C14    : Office
+D14    : Manager
+E14    : Lunes
+A15    : 9
+B15    : Verificar stock de productos de limpieza
+C15    : Almacén
+D15    : Manager
+E15    : Lunes
+A16    :   PLATAFORMAS
+A17    : 10
+B17    : Actualizar fotos de platos si hay cambios
+C17    : Office
+D17    : Manager
+E17    : Lunes
+A18    : 11
+B18    : Revisar que la ficha de cada plato declara sus alérgenos y que coincide con la receta REAL: si ha cambiado un ingrediente o un proveedor, ha cambiado el alérgeno
+C18    : Office
+D18    : Manager
+E18    : Lunes
+A19    : 12
+B19    : Revisar precios vs competencia en cada plataforma
+C19    : Office
+D19    : Manager
+E19    : Lunes
+A20    : 13
+B20    : Activar/desactivar promos según rendimiento
+C20    : Office
+D20    : Manager
+E20    : Lunes
+A21    : 14
+B21    : Responder reseñas pendientes en todas las plataformas
+C21    : Office
+D21    : Manager
+E21    : Lunes
+A22    :   MANTENIMIENTO
+A23    : 15
+B23    : Supervisar limpieza profunda
+C23    : General
+D23    : Manager
+E23    : Lunes
+A24    : 16
+B24    : Verificar caducidades en almacén
+C24    : Almacén
+D24    : Manager
+E24    : Lunes
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 16.0
+A33    : Firma encargado/a: _________________________    Hora: _________
+A35    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F17 F18 F19 F20 F21 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Mensual Manager» · protegida=True · área='Mensual Manager'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Mensual
+A2     : Mes: ________________   Año: ______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cadencia
+F4     : ✓ Completada
+G4     : Firma
+A5     :   FINANCIERO
+A6     : 1
+B6     : P&L por marca (ingresos - food cost - packaging - comisiones)
+C6     : Office
+D6     : Manager
+E6     : Día 1
+A7     : 2
+B7     : Food cost por marca (objetivo 25-30%)
+C7     : Office
+D7     : Manager
+E7     : Día 1
+A8     : 3
+B8     : Comisiones plataformas: Glovo ~30%, Uber Eats ~30%, Just Eat ~25%
+C8     : Office
+D8     : Manager
+E8     : Día 1
+A9     : 4
+B9     : Coste de packaging por pedido
+C9     : Office
+D9     : Manager
+E9     : Día 1
+A10    : 5
+B10    : Coste laboral vs facturación total
+C10    : Office
+D10    : Manager
+E10    : Día 1
+A11    : 6
+B11    : Archivar los registros de jornada del mes (hay que conservarlos 4 años)
+C11    : Office
+D11    : Manager
+E11    : Mensual
+A12    : 7
+B12    : Evaluar rentabilidad de cada marca virtual
+C12    : Office
+D12    : Manager
+E12    : Día 1
+A13    :   MARCAS
+A14    : 8
+B14    : Evaluar si alguna marca debe eliminarse (baja rentabilidad)
+C14    : Office
+D14    : Manager
+E14    : Mensual
+A15    : 9
+B15    : Evaluar lanzamiento de nueva marca virtual
+C15    : Office
+D15    : Manager
+E15    : Mensual
+A16    : 10
+B16    : Rotar menús estacionales por marca
+C16    : Office
+D16    : Manager
+E16    : Mensual
+A17    : 11
+B17    : Actualizar fotos profesionales de platos
+C17    : Office
+D17    : Manager
+E17    : Mensual
+A18    :   MANTENIMIENTO
+A19    : 12
+B19    : Revisión equipos: plancha, horno, freidora, cámaras
+C19    : Cocina
+D19    : Técnico
+E19    : Mensual
+A20    : 13
+B20    : Lavavajillas: filtros
+C20    : Cocina
+D20    : Manager
+E20    : Mensual
+A21    : 14
+B21    : Campana: filtros
+C21    : Cocina
+D21    : Técnico
+E21    : Mensual
+A22    : 15
+B22    : Extintor y botiquín
+C22    : General
+D22    : Manager
+E22    : Mensual
+A29    : Tareas completadas:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : de
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Firma encargado/a: _________________________    Hora: _________
+A33    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Handover Turno» · protegida=True · área='Handover Turno'!$A$1:$G$27 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cambio de Turno
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ESTADO
+A6     : 1
+B6     : Pedidos en curso por marca
+C6     : General
+D6     : Turno saliente
+E6     : —
+A7     : 2
+B7     : Pedidos con incidencia (reclamación, retraso)
+C7     : General
+D7     : Turno saliente
+E7     : —
+A8     : 3
+B8     : Marcas pausadas y motivo
+C8     : General
+D8     : Turno saliente
+E8     : —
+A9     :   STOCK
+A10    : 4
+B10    : Ingredientes que se están agotando
+C10    : Cocina
+D10    : Turno saliente
+E10    : —
+A11    : 5
+B11    : Packaging que queda poco
+C11    : Packaging
+D11    : Turno saliente
+E11    : —
+A12    : 6
+B12    : Estado del aceite de la freidora y fecha del último cambio (el cambio se hace en frío, por debajo de 40 °C)
+C12    : Cocina
+D12    : Turno saliente
+E12    : —
+A13    :   INCIDENCIAS
+A14    : 7
+B14    : Riders que no aparecieron
+C14    : General
+D14    : Turno saliente
+E14    : —
+A15    : 8
+B15    : Quejas de clientes recibidas
+C15    : General
+D15    : Turno saliente
+E15    : —
+A16    : 9
+B16    : Problemas técnicos: tablets, wifi, impresora
+C16    : General
+D16    : Turno saliente
+E16    : —
+A23    : Tareas completadas:
+D23    = =COUNTIFS(B5:B21,"?*",F5:F21,"✓")   → caché 0.0
+E23    : de
+F23    = =COUNTIF(B5:B21,"?*")-COUNTIF(F5:F21,"N/A")   → caché 9.0
+A25    : Firma encargado/a: _________________________    Hora: _________
+A27    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F14 F15 F16 F17 F18 F19 F20 F21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 04-tareas-perfiles.xlsx
+# docProps: title='Tareas por Perfil Profesional — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$33 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas por Perfil Profesional — Dark Kitchen
+B4     : Cómo cuenta el contador
+B6     : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B7     : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B8     : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B10    : Filas libres
+B12    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B13    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B15    : Protección de la hoja
+B17    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B18    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B20    : Se conecta con
+B22    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B23    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B24    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B25    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B26    : ▸ Estás en 04-tareas-perfiles.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B28    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B30    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B31    : Contacto: info@aichef.pro
+B33    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Cocinero Multi-Marca» · protegida=True · área='Cocinero Multi-Marca'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Cocinero Multi-Marca
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   APERTURA
+A6     : 1
+B6     : Encender equipos de tu estación
+C6     : Cocina
+D6     : Cocinero
+E6     : 09:00
+A7     : 2
+B7     : Preparar mise en place de TODAS las marcas que cubres
+C7     : Cocina
+D7     : Cocinero
+E7     : 09:15
+A8     : 3
+B8     : Verificar stock por marca en tu estación
+C8     : Cocina
+D8     : Cocinero
+E8     : 09:30
+A9     : 4
+B9     : Montar inserts y línea de producción
+C9     : Cocina
+D9     : Cocinero
+E9     : 09:45
+A10    :   PRODUCCIÓN
+A11    : 5
+B11    : Cocinar según tickets (atender por orden de llegada)
+C11    : Cocina
+D11    : Cocinero
+E11    : —
+A12    : 6
+B12    : Identificar marca del pedido antes de cocinar (receta correcta)
+C12    : Cocina
+D12    : Cocinero
+E12    : —
+A13    : 7
+B13    : Controlar tiempos: objetivo <10 min de preparación
+C13    : Cocina
+D13    : Cocinero
+E13    : —
+A14    : 8
+B14    : Emplatar en envase correcto de la marca
+C14    : Cocina
+D14    : Cocinero
+E14    : —
+A15    : 9
+B15    : Pasar al empaquetador con ticket visible
+C15    : Cocina
+D15    : Cocinero
+E15    : —
+A16    : 10
+B16    : Reponer mise en place entre picos
+C16    : Cocina
+D16    : Cocinero
+E16    : —
+A17    :   CIERRE
+A18    : 11
+B18    : Cubrir y refrigerar mise en place
+C18    : Cocina
+D18    : Cocinero
+E18    : 22:00
+A19    : 12
+B19    : Limpiar estación completa
+C19    : Cocina
+D19    : Cocinero
+E19    : 22:00
+A20    : 13
+B20    : Anotar consumos por marca
+C20    : Cocina
+D20    : Cocinero
+E20    : 22:00
+A27    : Tareas completadas:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : de
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Firma encargado/a: _________________________    Hora: _________
+A31    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Empaquetador» · protegida=True · área='Empaquetador'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Empaquetador / Expedidor
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   APERTURA
+A6     : 1
+B6     : Montar estación de empaquetado por marca
+C6     : Packaging
+D6     : Empaquetador
+E6     : 09:30
+A7     : 2
+B7     : Verificar stock: envases, bolsas, stickers, precintos por marca
+C7     : Packaging
+D7     : Empaquetador
+E7     : 09:30
+A8     : 3
+B8     : Verificar impresora de tickets
+C8     : Packaging
+D8     : Empaquetador
+E8     : 09:30
+A9     : 4
+B9     : Organizar estantería de expedición por plataforma
+C9     : Packaging
+D9     : Empaquetador
+E9     : 09:30
+A10    :   PRODUCCIÓN
+A11    : 5
+B11    : Recibir plato del cocinero y verificar vs ticket
+C11    : Packaging
+D11    : Empaquetador
+E11    : —
+A12    : 6
+B12    : Empaquetar en envase correcto de la marca
+C12    : Packaging
+D12    : Empaquetador
+E12    : —
+A13    : 7
+B13    : Añadir cubiertos, servilleta, salsas extra
+C13    : Packaging
+D13    : Empaquetador
+E13    : —
+A14    : 8
+B14    : Pegar sticker de marca + ticket
+C14    : Packaging
+D14    : Empaquetador
+E14    : —
+A15    : 9
+B15    : Precintar bolsa con sello de seguridad
+C15    : Packaging
+D15    : Empaquetador
+E15    : —
+A16    : 10
+B16    : Colocar en estantería por plataforma/rider
+C16    : Packaging
+D16    : Empaquetador
+E16    : —
+A17    : 11
+B17    : Entregar al rider verificando número de pedido
+C17    : Packaging
+D17    : Empaquetador
+E17    : —
+A18    :   CIERRE
+A19    : 12
+B19    : Limpiar estación
+C19    : Packaging
+D19    : Empaquetador
+E19    : 22:00
+A20    : 13
+B20    : Inventario de packaging restante
+C20    : Packaging
+D20    : Empaquetador
+E20    : 22:00
+A21    : 14
+B21    : Anotar lo que hay que pedir
+C21    : Packaging
+D21    : Empaquetador
+E21    : 22:00
+A28    : Tareas completadas:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : de
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Firma encargado/a: _________________________    Hora: _________
+A32    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Gestor Plataformas» · protegida=True · área='Gestor Plataformas'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Gestor de Plataformas / Tablets
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   APERTURA
+A6     : 1
+B6     : Encender tablets, verificar wifi y batería
+C6     : Office
+D6     : Gestor
+E6     : 10:00
+A7     : 2
+B7     : Activar todas las marcas en todas las plataformas
+C7     : Office
+D7     : Gestor
+E7     : 10:30
+A8     : 3
+B8     : Verificar que menús están actualizados
+C8     : Office
+D8     : Gestor
+E8     : 10:30
+A9     : 4
+B9     : Activar promos del día si aplica
+C9     : Office
+D9     : Gestor
+E9     : 10:30
+A10    : 5
+B10    : Marcar como 86 los platos que no haya stock
+C10    : Office
+D10    : Gestor
+E10    : 10:30
+A11    :   DURANTE
+A12    : 6
+B12    : Aceptar pedidos en tiempo (<30s)
+C12    : Office
+D12    : Gestor
+E12    : —
+A13    : 7
+B13    : Monitorizar tiempos de preparación estimados
+C13    : Office
+D13    : Gestor
+E13    : —
+A14    : 8
+B14    : Gestionar incidencias: cancelaciones, cambios, reembolsos
+C14    : Office
+D14    : Gestor
+E14    : —
+A15    : 9
+B15    : Pausar marcas si hay saturación
+C15    : Office
+D15    : Gestor
+E15    : —
+A16    : 10
+B16    : Comunicar al equipo los pedidos prioritarios
+C16    : Office
+D16    : Gestor
+E16    : —
+A17    :   CIERRE
+A18    : 11
+B18    : Desactivar todas las marcas
+C18    : Office
+D18    : Gestor
+E18    : 22:00
+A19    : 12
+B19    : Revisar resumen de pedidos del día
+C19    : Office
+D19    : Gestor
+E19    : 22:15
+A20    : 13
+B20    : Anotar incidencias para el manager
+C20    : Office
+D20    : Gestor
+E20    : 22:15
+A27    : Tareas completadas:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : de
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Firma encargado/a: _________________________    Hora: _________
+A31    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Encargado Operaciones» · protegida=True · área='Encargado Operaciones'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Encargado/a de Operaciones
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable: ________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   APERTURA
+A6     : 1
+B6     : Abrir local y desactivar alarma
+C6     : General
+D6     : Encargado/a
+E6     : 08:45
+A7     : 2
+B7     : Verificar equipo completo
+C7     : General
+D7     : Encargado/a
+E7     : 09:00
+A8     : 3
+B8     : Briefing: promos, 86s, incidencias, previsión pedidos
+C8     : General
+D8     : Encargado/a
+E8     : 09:15
+A9     : 4
+B9     : Supervisar apertura de cocina y empaquetado
+C9     : General
+D9     : Encargado/a
+E9     : 09:30
+A10    :   DURANTE
+A11    : 5
+B11    : Supervisar flujo: tickets → cocina → empaquetado → rider
+C11    : General
+D11    : Encargado/a
+E11    : —
+A12    : 6
+B12    : Redistribuir personal si hay pico en una marca
+C12    : General
+D12    : Encargado/a
+E12    : —
+A13    : 7
+B13    : Resolver problemas con riders/plataformas
+C13    : Office
+D13    : Encargado/a
+E13    : —
+A14    : 8
+B14    : Controlar calidad: verificar platos antes de empaquetar
+C14    : Cocina
+D14    : Encargado/a
+E14    : —
+A15    :   CIERRE
+A16    : 9
+B16    : Supervisar cierre completo
+C16    : General
+D16    : Encargado/a
+E16    : 22:00
+A17    : 10
+B17    : Cuadrar facturación por marca y plataforma
+C17    : Office
+D17    : Encargado/a
+E17    : 22:15
+A18    : 11
+B18    : Hacer pedidos para mañana
+C18    : Office
+D18    : Encargado/a
+E18    : 22:00
+A19    : 12
+B19    : Cerrar local
+C19    : General
+D19    : Encargado/a
+E19    : 22:30
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Firma encargado/a: _________________________    Hora: _________
+A30    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 05-tareas-semanales-mensuales.xlsx
+# docProps: title='Tareas Semanales, Mensuales e Inventarios — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$39 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas Semanales, Mensuales e Inventarios — Dark Kitchen
+B4     : Trimestral, anual y vida útil en congelación
+B6     : ▸ La hoja «Trimestral y Anual» recoge el mantenimiento que se CONTRATA y que se pide en una inspección: DDD, conductos de extracción, extintores y BIE, instalación de gas, legionela, frigorista, retirada del aceite usado y del cartón de packaging, seguro y facturación.
+B7     : ▸ Anota el número de parte en la columna verde y firma cuando la empresa haya venido; en la columna «Cadencia» tienes cada cuánto toca cada revisión.
+B8     : ▸ Al pie de «FIFO Semanal» tienes una tabla editable de vida útil en congelación por familia: una regla única para todo el congelador o tiras producto bueno o das por bueno producto pasado.
+B10    : Cómo cuenta el contador
+B12    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B13    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B14    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B16    : Filas libres
+B18    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B19    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B21    : Protección de la hoja
+B23    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B24    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B26    : Se conecta con
+B28    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B29    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B30    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B31    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B32    : ▸ Estás en 05-tareas-semanales-mensuales.xlsx: lo que NO es diario (semanal, mensual, trimestral y anual). El día a día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B34    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B36    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B37    : Contacto: info@aichef.pro
+B39    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Inventario Diario» · protegida=False · área='Inventario Diario'!$A$1:$F$45 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Inventario Diario — Dark Kitchen Multi-Marca
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Noche    Responsable: ________________
+A4     : Producto
+B4     : Stock
+C4     : Unidad
+D4     : Mínimo
+E4     : Estado
+F4     : Pedido
+A5     :   PROTEÍNAS
+A6     : Pollo (pechuga, muslo)
+C6     : kg
+D6     : 5
+E6     = =IF(B6="","",IF(B6<D6,"⚠️ PEDIR","OK"))   → caché None
+A7     : Carne picada / patties
+C7     : kg
+D7     : 3
+E7     = =IF(B7="","",IF(B7<D7,"⚠️ PEDIR","OK"))   → caché None
+A8     : Salmón / pescado
+C8     : kg
+D8     : 2
+E8     = =IF(B8="","",IF(B8<D8,"⚠️ PEDIR","OK"))   → caché None
+A9     : Tofu / proteína vegetal
+C9     : kg
+D9     : 1
+E9     = =IF(B9="","",IF(B9<D9,"⚠️ PEDIR","OK"))   → caché None
+A10    :   BASES Y CARBOHIDRATOS
+A11    : Arroz (blanco, sushi, integral)
+C11    : kg
+D11    : 5
+E11    = =IF(B11="","",IF(B11<D11,"⚠️ PEDIR","OK"))   → caché None
+A12    : Pasta (spaghetti, penne)
+C12    : kg
+D12    : 3
+E12    = =IF(B12="","",IF(B12<D12,"⚠️ PEDIR","OK"))   → caché None
+A13    : Pan burger / wraps / pita
+C13    : uds
+D13    : 30
+E13    = =IF(B13="","",IF(B13<D13,"⚠️ PEDIR","OK"))   → caché None
+A14    : Quinoa
+C14    : kg
+D14    : 1
+E14    = =IF(B14="","",IF(B14<D14,"⚠️ PEDIR","OK"))   → caché None
+A15    :   VEGETALES Y FRESCOS
+A16    : Lechuga / mix hojas
+C16    : kg
+D16    : 2
+E16    = =IF(B16="","",IF(B16<D16,"⚠️ PEDIR","OK"))   → caché None
+A17    : Tomate
+C17    : kg
+D17    : 2
+E17    = =IF(B17="","",IF(B17<D17,"⚠️ PEDIR","OK"))   → caché None
+A18    : Cebolla
+C18    : kg
+D18    : 2
+E18    = =IF(B18="","",IF(B18<D18,"⚠️ PEDIR","OK"))   → caché None
+A19    : Aguacate
+C19    : uds
+D19    : 8
+E19    = =IF(B19="","",IF(B19<D19,"⚠️ PEDIR","OK"))   → caché None
+A20    : Pepino
+C20    : kg
+D20    : 1
+E20    = =IF(B20="","",IF(B20<D20,"⚠️ PEDIR","OK"))   → caché None
+A21    : Edamame
+C21    : kg
+D21    : 0.5
+E21    = =IF(B21="","",IF(B21<D21,"⚠️ PEDIR","OK"))   → caché None
+A22    :   SALSAS Y CONDIMENTOS
+A23    : Salsa soja
+C23    : L
+D23    : 1
+E23    = =IF(B23="","",IF(B23<D23,"⚠️ PEDIR","OK"))   → caché None
+A24    : Teriyaki
+C24    : L
+D24    : 0.5
+E24    = =IF(B24="","",IF(B24<D24,"⚠️ PEDIR","OK"))   → caché None
+A25    : Sriracha
+C25    : L
+D25    : 0.5
+E25    = =IF(B25="","",IF(B25<D25,"⚠️ PEDIR","OK"))   → caché None
+A26    : Mayo casera
+C26    : L
+D26    : 1
+E26    = =IF(B26="","",IF(B26<D26,"⚠️ PEDIR","OK"))   → caché None
+A27    : Salsa BBQ
+C27    : L
+D27    : 0.5
+E27    = =IF(B27="","",IF(B27<D27,"⚠️ PEDIR","OK"))   → caché None
+A28    : Aceite oliva
+C28    : L
+D28    : 2
+E28    = =IF(B28="","",IF(B28<D28,"⚠️ PEDIR","OK"))   → caché None
+A29    :   PACKAGING — MARCA 1
+A30    : Envases principales (bowls/cajas)
+C30    : uds
+D30    : 50
+E30    = =IF(B30="","",IF(B30<D30,"⚠️ PEDIR","OK"))   → caché None
+A31    : Bolsas con logo
+C31    : uds
+D31    : 50
+E31    = =IF(B31="","",IF(B31<D31,"⚠️ PEDIR","OK"))   → caché None
+A32    : Stickers marca
+C32    : uds
+D32    : 50
+E32    = =IF(B32="","",IF(B32<D32,"⚠️ PEDIR","OK"))   → caché None
+A33    : Precintos seguridad
+C33    : uds
+D33    : 50
+E33    = =IF(B33="","",IF(B33<D33,"⚠️ PEDIR","OK"))   → caché None
+A34    :   PACKAGING — MARCA 2
+A35    : Envases principales
+C35    : uds
+D35    : 40
+E35    = =IF(B35="","",IF(B35<D35,"⚠️ PEDIR","OK"))   → caché None
+A36    : Bolsas con logo
+C36    : uds
+D36    : 40
+E36    = =IF(B36="","",IF(B36<D36,"⚠️ PEDIR","OK"))   → caché None
+A37    : Stickers marca
+C37    : uds
+D37    : 40
+E37    = =IF(B37="","",IF(B37<D37,"⚠️ PEDIR","OK"))   → caché None
+A38    : Precintos seguridad
+C38    : uds
+D38    : 40
+E38    = =IF(B38="","",IF(B38<D38,"⚠️ PEDIR","OK"))   → caché None
+A39    :   PACKAGING GENÉRICO
+A40    : Cubiertos desechables
+C40    : sets
+D40    : 60
+E40    = =IF(B40="","",IF(B40<D40,"⚠️ PEDIR","OK"))   → caché None
+A41    : Servilletas
+C41    : uds
+D41    : 100
+E41    = =IF(B41="","",IF(B41<D41,"⚠️ PEDIR","OK"))   → caché None
+A42    : Salsas en sobre
+C42    : uds
+D42    : 60
+E42    = =IF(B42="","",IF(B42<D42,"⚠️ PEDIR","OK"))   → caché None
+A43    : Bolsas extra grandes
+C43    : uds
+D43    : 20
+E43    = =IF(B43="","",IF(B43<D43,"⚠️ PEDIR","OK"))   → caché None
+A45    : — Kit de Tareas Recurrentes: Dark Kitchen · AI Chef Pro · aichef.pro —
+
+=== Hoja «Limpieza Semanal» · protegida=True · área='Limpieza Semanal'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Limpieza Profunda Semanal
+A2     : Semana del ___/___/______ al ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Día
+F4     : ✓ Completada
+G4     : Firma
+A5     :   COCINA
+A6     : 1
+B6     : Limpiar interior cámaras frigoríficas
+C6     : Cámara
+D6     : Auxiliar
+E6     : Lunes
+A7     : 2
+B7     : Desmontar y limpiar campana y filtros
+C7     : Cocina
+D7     : Auxiliar
+E7     : Lunes
+A8     : 3
+B8     : Limpiar detrás y debajo de equipos
+C8     : Cocina
+D8     : Auxiliar
+E8     : Lunes
+A9     : 4
+B9     : Desinfectar tablas de corte
+C9     : Cocina
+D9     : Auxiliar
+E9     : Lunes
+A10    : 5
+B10    : Limpiar freidora a fondo
+C10    : Cocina
+D10    : Auxiliar
+E10    : Lunes
+A11    : 6
+B11    : Fregar suelos con desengrasante
+C11    : Cocina
+D11    : Auxiliar
+E11    : Lunes
+A12    :   PACKAGING Y ALMACÉN
+A13    : 7
+B13    : Organizar almacén de packaging por marca
+C13    : Almacén
+D13    : Auxiliar
+E13    : Lunes
+A14    : 8
+B14    : Limpiar estanterías de expedición
+C14    : Packaging
+D14    : Auxiliar
+E14    : Lunes
+A15    : 9
+B15    : Verificar que no hay packaging dañado o caducado
+C15    : Almacén
+D15    : Manager
+E15    : Lunes
+A22    : Tareas completadas:
+D22    = =COUNTIFS(B5:B20,"?*",F5:F20,"✓")   → caché 0.0
+E22    : de
+F22    = =COUNTIF(B5:B20,"?*")-COUNTIF(F5:F20,"N/A")   → caché 9.0
+A24    : Firma encargado/a: _________________________    Hora: _________
+A26    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F19 F20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FIFO Semanal» · protegida=True · área='FIFO Semanal'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Revisión FIFO — Caducidades
+A2     : Semana del ___/___/______ al ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Día
+F4     : ✓ Completada
+G4     : Firma
+A5     :   CÁMARAS
+A6     : 1
+B6     : Verificar fechas de proteínas (fresco max 3 días)
+C6     : Cámara
+D6     : Cocinero
+E6     : Lunes
+A7     : 2
+B7     : Revisar salsas caseras abiertas (max 5 días)
+C7     : Cámara
+D7     : Cocinero
+E7     : Lunes
+A8     : 3
+B8     : Revisar vegetales cortados (max 2 días)
+C8     : Cámara
+D8     : Cocinero
+E8     : Lunes
+A9     : 4
+B9     : Rotar: antiguo delante
+C9     : Cámara
+D9     : Cocinero
+E9     : Lunes
+A10    : 5
+B10    : Desechar caducado
+C10    : Cámara
+D10    : Cocinero
+E10    : Lunes
+A11    :   ALMACÉN
+A12    : 6
+B12    : Revisar arroces y pasta: fecha, humedad
+C12    : Almacén
+D12    : Cocinero
+E12    : Lunes
+A13    : 7
+B13    : Revisar salsas industriales: fecha
+C13    : Almacén
+D13    : Cocinero
+E13    : Lunes
+A14    : 8
+B14    : Verificar el estado del aceite de la freidora (color, olor, humo) y anotar la fecha del último cambio; si hay que cambiarlo, en frío: por debajo de 40 °C, nunca en caliente
+C14    : Cocina
+D14    : Manager
+E14    : Lunes
+A21    : Tareas completadas:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : de
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Firma encargado/a: _________________________    Hora: _________
+A25    : VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C — ajústala a tu producto y a tu proveedor
+B26    : Familia
+C26    : Vida útil
+D26    : Notas
+B27    : Pollo y pavo crudos en piezas
+C27    : 6-9 meses
+D27    : Congélalos el día que llegan, no el día que caducan en fresco
+B28    : Carne picada y patties de hamburguesa
+C28    : 2-3 meses
+D28    : Toda la superficie está expuesta: se enrancia mucho antes que una pieza entera
+B29    : Pescado azul (salmón, atún)
+C29    : 2-3 meses
+D29    : La grasa se enrancia aunque esté congelado; si es para servir crudo, la congelación cuenta además como tratamiento anti-ANISAKIS
+B30    : Pescado blanco y marisco ya cocido
+C30    : 3-6 meses
+D30    : Congélalo en porciones planas: se descongela antes y con menos pérdida
+B31    : Salsas, fondos y caldos propios
+C31    : 3 meses
+D31    : Etiquetar con fecha de producción Y de congelación: la vida útil de esta tabla se cuenta desde la de congelación
+B32    : Arroz y pasta ya cocidos
+C32    : 1 mes
+D32    : Congelar el mismo día en porciones planas y regenerar por encima de 75 °C: el arroz cocido templado es el clásico de la toxiinfección
+B33    : Pan de burger, wraps y pita
+C33    : 1-3 meses
+D33    : Pierde textura antes que seguridad; descongela y regenera en horno
+B34    : Vegetales que se sirven crudos (aguacate, pepino, lechuga)
+C34    : No congelar
+D34    : Se deshacen al descongelar: en un bowl se ven, así que se piden frescos y se rota con FIFO
+A36    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Mantenimiento Mensual» · protegida=True · área='Mantenimiento Mensual'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Mantenimiento Mensual
+A2     : Mes: ________________   Año: ______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cadencia
+F4     : ✓ Completada
+G4     : Firma
+A5     :   EQUIPOS
+A6     : 1
+B6     : Revisión plancha/grill
+C6     : Cocina
+D6     : Técnico
+E6     : Mensual
+A7     : 2
+B7     : Cambio completo del aceite de la freidora, SIEMPRE por debajo de 40 °C y nunca en caliente; el usado se entrega al gestor autorizado y se archiva el documento
+C7     : Cocina
+D7     : Manager
+E7     : Mensual
+A8     : 3
+B8     : Lavavajillas: filtros, sal
+C8     : Cocina
+D8     : Manager
+E8     : Mensual
+A9     : 4
+B9     : Campana: motor, filtros
+C9     : Cocina
+D9     : Técnico
+E9     : Mensual
+A10    : 5
+B10    : Cámaras: juntas, termostato
+C10    : Cocina
+D10    : Técnico
+E10    : Mensual
+A11    :   TECNOLOGÍA
+A12    : 6
+B12    : Actualizar apps de plataformas en tablets
+C12    : Office
+D12    : Manager
+E12    : Mensual
+A13    : 7
+B13    : Verificar estado de tablets (batería, pantalla)
+C13    : Office
+D13    : Manager
+E13    : Mensual
+A14    : 8
+B14    : Verificar impresora de tickets (tinta, papel)
+C14    : Office
+D14    : Manager
+E14    : Mensual
+A15    : 9
+B15    : Verificar wifi: velocidad, estabilidad
+C15    : Office
+D15    : Manager
+E15    : Mensual
+A16    :   SEGURIDAD
+A17    : 10
+B17    : Extintor: presión, caducidad
+C17    : General
+D17    : Manager
+E17    : Mensual
+A18    : 11
+B18    : Botiquín: stock, caducidades
+C18    : General
+D18    : Manager
+E18    : Mensual
+A25    : Tareas completadas:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : de
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Firma encargado/a: _________________________    Hora: _________
+A29    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Trimestral y Anual» · protegida=True · área='Trimestral y Anual'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Mantenimiento Trimestral y Anual — Revisiones Contratadas
+A2     : Mes: ________________   Año: ______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Nº de parte
+D4     : Responsable
+E4     : Cadencia
+F4     : ✓ Completada
+G4     : Firma
+A5     :   CONTRATADO — EMPRESA AUTORIZADA
+A6     : 1
+B6     : Control de plagas (DDD): visita de la empresa autorizada, parte firmado y certificado en vigor
+D6     : Empresa DDD
+E6     : Trimestral
+A7     : 2
+B7     : Limpieza de campana y conductos de extracción por empresa homologada
+D7     : Empresa externa
+E7     : Anual
+A8     : 3
+B8     : Revisión de extintores y BIE por empresa mantenedora (etiqueta y acta de revisión)
+D8     : Mantenedor
+E8     : Anual
+A9     : 4
+B9     : Revisión periódica de la instalación de gas por empresa habilitada, si el local tiene gas
+D9     : Instalador gas
+E9     : Cada 5 años
+A10    : 5
+B10    : Prevención de legionela si hay agua caliente sanitaria de riesgo o torre de refrigeración
+D10    : Empresa autorizada
+E10    : Anual
+A11    :   FRÍO, ACEITE Y RESIDUOS
+A12    : 6
+B12    : Revisión de cámaras y abatidor por frigorista: estanqueidad, juntas y gas refrigerante
+D12    : Frigorista
+E12    : Anual
+A13    : 7
+B13    : Retirada del aceite usado de la freidora por gestor autorizado y archivo del documento de entrega
+D13    : Gestor autorizado
+E13    : Trimestral
+A14    : 8
+B14    : Retirada de cartón y plástico de packaging por gestor autorizado: contrato en vigor y albaranes archivados (un dark kitchen genera más envase que un restaurante de sala)
+D14    : Gestor autorizado
+E14    : Trimestral
+A15    : 9
+B15    : Calibrar los termómetros y las sondas contra un patrón conocido (agua con hielo, 0 °C)
+D15    : Manager
+E15    : Anual
+A16    :   ADMINISTRACIÓN Y PLATAFORMAS
+A17    : 10
+B17    : Revisar la póliza del local y la responsabilidad civil POR PRODUCTO: en delivery el plato se consume fuera y el seguro de sala no siempre lo cubre
+D17    : Manager
+E17    : Anual
+A18    : 11
+B18    : Revisar los contratos y las comisiones de cada plataforma y el software de facturación (requisitos antifraude / Verifactu)
+D18    : Manager
+E18    : Anual
+A25    : Tareas completadas:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : de
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Firma encargado/a: _________________________    Hora: _________
+A29    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 06-eventos-festivos.xlsx
+# docProps: title='Tareas para Picos y Eventos — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$33 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas para Picos y Eventos — Dark Kitchen
+B4     : Cómo cuenta el contador
+B6     : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B7     : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B8     : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B10    : Filas libres
+B12    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B13    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B15    : Protección de la hoja
+B17    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B18    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B20    : Se conecta con
+B22    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B23    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B24    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B25    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B26    : ▸ Estás en 06-eventos-festivos.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B28    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B30    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B31    : Contacto: info@aichef.pro
+B33    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Pico Viernes Noche» · protegida=True · área='Pico Viernes Noche'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Preparación Pico Viernes-Sábado Noche
+A2     : Semana del ___/___/______ al ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Día
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PREPARACIÓN (JUEVES)
+A6     : 1
+B6     : Pedido extra de ingredientes principales
+C6     : Office
+D6     : Manager
+E6     : Jueves
+A7     : 2
+B7     : Pedido extra de packaging (todas las marcas)
+C7     : Office
+D7     : Manager
+E7     : Jueves
+A8     : 3
+B8     : Confirmar equipo reforzado para viernes-sábado
+C8     : Office
+D8     : Manager
+E8     : Jueves
+A9     : 4
+B9     : Pre-elaborar salsas y bases en mayor cantidad
+C9     : Cocina
+D9     : Cocinero
+E9     : Viernes AM
+A10    :   VIERNES OPERACIÓN
+A11    : 5
+B11    : Mise en place 50% más de lo normal
+C11    : Cocina
+D11    : Cocinero
+E11    : Viernes
+A12    : 6
+B12    : Activar promos de fin de semana en plataformas
+C12    : Office
+D12    : Gestor
+E12    : Viernes 17:00
+A13    : 7
+B13    : Gestionar cola de pedidos sin comprometer tiempos
+C13    : Cocina
+D13    : Manager
+E13    : —
+A14    : 8
+B14    : Pausar marcas menos rentables si hay saturación extrema
+C14    : Office
+D14    : Manager
+E14    : —
+A21    : Tareas completadas:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : de
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Firma encargado/a: _________________________    Hora: _________
+A25    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Noche Fútbol» · protegida=True · área='Noche Fútbol'!$A$1:$G$24 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Noche de Fútbol / Evento Deportivo
+A2     : Evento / temporada: ___________________    Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Antelación
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PREPARACIÓN
+A6     : 1
+B6     : Stock doble de los platos más pedidos
+C6     : Cocina
+D6     : Cocinero
+E6     : Día antes
+A7     : 2
+B7     : Packaging extra (se duplican pedidos)
+C7     : Almacén
+D7     : Manager
+E7     : 2 días antes
+A8     : 3
+B8     : Reforzar equipo: cocinero y empaquetador extra
+C8     : Office
+D8     : Manager
+E8     : 3 días antes
+A9     : 4
+B9     : Activar promos combo en plataformas
+C9     : Office
+D9     : Gestor
+E9     : Día antes
+A10    :   DURANTE
+A11    : 5
+B11    : Producción a máximo rendimiento
+C11    : Cocina
+D11    : Todos
+E11    : —
+A12    : 6
+B12    : Empaquetado rápido: no sacrificar precinto ni verificación
+C12    : Packaging
+D12    : Empaquetador
+E12    : —
+A13    : 7
+B13    : Monitorizar tiempos — si superan 15 min, pausar marca menos rentable
+C13    : Office
+D13    : Manager
+E13    : —
+A20    : Tareas completadas:
+D20    = =COUNTIFS(B5:B18,"?*",F5:F18,"✓")   → caché 0.0
+E20    : de
+F20    = =COUNTIF(B5:B18,"?*")-COUNTIF(F5:F18,"N/A")   → caché 7.0
+A22    : Firma encargado/a: _________________________    Hora: _________
+A24    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G18 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Lanzamiento Marca» · protegida=True · área='Lanzamiento Marca'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Lanzamiento de Nueva Marca Virtual
+A2     : Evento / temporada: ___________________    Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Antelación
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PRE-LANZAMIENTO (2 SEMANAS)
+A6     : 1
+B6     : Definir menú: 8-12 platos máximo
+C6     : Office
+D6     : Manager
+E6     : 2 sem antes
+A7     : 2
+B7     : Diseñar packaging: envases, stickers, bolsas
+C7     : Office
+D7     : Manager
+E7     : 2 sem antes
+A8     : 3
+B8     : Crear perfil en plataformas: fotos, descripciones, precios
+C8     : Office
+D8     : Manager
+E8     : 1 sem antes
+A9     : 4
+B9     : Declarar los 14 alérgenos de cada plato en la ficha de la plataforma ANTES de activar la marca: en venta a distancia la información tiene que estar disponible antes de que el cliente compre
+C9     : Office
+D9     : Manager
+E9     : 1 sem antes
+A10    : 5
+B10    : Pedir stock inicial de packaging
+C10    : Office
+D10    : Manager
+E10    : 1 sem antes
+A11    : 6
+B11    : Formar al equipo en las recetas de la nueva marca
+C11    : Cocina
+D11    : Manager
+E11    : 3 días antes
+A12    : 7
+B12    : Test de producción: cocinar cada plato, cronometrar
+C12    : Cocina
+D12    : Cocinero
+E12    : 2 días antes
+A13    :   LANZAMIENTO
+A14    : 8
+B14    : Activar marca en plataformas
+C14    : Office
+D14    : Gestor
+E14    : Día 1
+A15    : 9
+B15    : Activar promo de lanzamiento (descuento o envío gratis)
+C15    : Office
+D15    : Gestor
+E15    : Día 1
+A16    : 10
+B16    : Monitorizar primeros pedidos: calidad, tiempo, feedback
+C16    : Office
+D16    : Manager
+E16    : Día 1-7
+A17    : 11
+B17    : Ajustar menú según datos de primera semana
+C17    : Office
+D17    : Manager
+E17    : Día 7
+A24    : Tareas completadas:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : de
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 11.0
+A26    : Firma encargado/a: _________________________    Hora: _________
+A28    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Navidad Fin Año» · protegida=True · área='Navidad Fin Año'!$A$1:$G$24 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Navidad y Fin de Año — Pico Estacional
+A2     : Evento / temporada: ___________________    Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Antelación
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PREPARACIÓN
+A6     : 1
+B6     : Stock extra para semana con menos entregas de proveedores
+C6     : Office
+D6     : Manager
+E6     : 10 días antes
+A7     : 2
+B7     : Menú especial navideño por marca
+C7     : Office
+D7     : Manager
+E7     : 15 días antes
+A8     : 3
+B8     : Packaging navideño si aplica
+C8     : Office
+D8     : Manager
+E8     : 15 días antes
+A9     : 4
+B9     : Planificar horarios especiales (24, 25, 31 Dic, 1 Ene)
+C9     : Office
+D9     : Manager
+E9     : 10 días antes
+A10    :   OPERACIÓN
+A11    : 5
+B11    : Activar menús navideños en plataformas
+C11    : Office
+D11    : Gestor
+E11    : Dic
+A12    : 6
+B12    : Stock verificado para cada servicio de la semana
+C12    : Almacén
+D12    : Manager
+E12    : Diario
+A13    : 7
+B13    : Gestionar volumen alto de pedidos Nochevieja
+C13    : Cocina
+D13    : Manager
+E13    : 31 Dic
+A20    : Tareas completadas:
+D20    = =COUNTIFS(B5:B18,"?*",F5:F18,"✓")   → caché 0.0
+E20    : de
+F20    = =COUNTIF(B5:B18,"?*")-COUNTIF(F5:F18,"N/A")   → caché 7.0
+A22    : Firma encargado/a: _________________________    Hora: _________
+A24    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G18 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 07-plantilla-personalizable.xlsx
+# docProps: title='Plantilla Maestra Personalizable · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$52 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Plantilla Maestra Personalizable
+B4     : Qué resuelve
+B6     : ▸ Tres plantillas maestras ya estructuradas —por franja horaria, por área y por perfil— con las secciones puestas y la zona o el responsable precargados: tú sólo escribes tus tareas.
+B7     : ▸ Escribe en las celdas VERDES de la columna «Tarea», bajo la sección que corresponda. El contador arranca en 0 y sube a medida que escribes: cuenta lo que hay, no un número fijo.
+B9     : Cómo usar esta plantilla
+B11    : ▸ Copia la estructura de las plantillas pre-rellenadas
+B12    : ▸ Personaliza: añade tareas, cambia responsables, ajusta horarios
+B13    : ▸ Puedes duplicar pestañas (click derecho → 'Mover o copiar')
+B15    : Consejos de personalización
+B17    : ▸ Agrupa las tareas por franja horaria (apertura, servicio, cierre)
+B18    : ▸ Asigna siempre un responsable — las tareas sin dueño no se hacen
+B19    : ▸ Pon hora límite realista — mejor ser específico que genérico
+B20    : ▸ Revisa y actualiza las listas cada mes con tu equipo
+B21    : ▸ Imprime en A4 y deja espacio para firma del encargado
+B23    : Cómo cuenta el contador
+B25    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B26    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B27    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B29    : Filas libres
+B31    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B32    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B34    : Protección de la hoja
+B36    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B37    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B39    : Se conecta con
+B41    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B42    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B43    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B44    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B45    : ▸ Estás en 07-plantilla-personalizable.xlsx: aquí construyes TUS listas cuando ninguna de las otras encaja. Copia la estructura de la que más se parezca.
+B47    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B49    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B50    : Contacto: info@aichef.pro
+B52    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Por Franja Horaria» · protegida=True · área='Por Franja Horaria'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla en Blanco — Por Franja Horaria
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   APERTURA — escribe aquí abajo tus tareas de apertura
+A6     : 1
+D6     : (Responsable)
+E6     : (Hora)
+A7     : 2
+A8     : 3
+A9     : 4
+A10    : 5
+A12    :   SERVICIO — escribe aquí abajo tus tareas de servicio
+A13    : 6
+D13    : (Responsable)
+E13    : (Hora)
+A14    : 7
+A15    : 8
+A16    : 9
+A17    : 10
+A19    :   CIERRE — escribe aquí abajo tus tareas de cierre
+A20    : 11
+D20    : (Responsable)
+E20    : (Hora)
+A21    : 12
+A22    : 13
+A23    : 14
+A24    : 15
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Por Área» · protegida=True · área='Por Área'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla en Blanco — Por Área de Trabajo
+A2     : Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   COCINA — escribe aquí abajo tus tareas de cocina
+A6     : 1
+C6     : Cocina
+D6     : (Responsable)
+E6     : (Hora)
+A7     : 2
+C7     : Cocina
+A8     : 3
+C8     : Cocina
+A9     : 4
+C9     : Cocina
+A10    : 5
+C10    : Cocina
+A12    :   SALA — escribe aquí abajo tus tareas de sala
+A13    : 6
+C13    : Sala
+D13    : (Responsable)
+E13    : (Hora)
+A14    : 7
+C14    : Sala
+A15    : 8
+C15    : Sala
+A16    : 9
+C16    : Sala
+A17    : 10
+C17    : Sala
+A19    :   BARRA — escribe aquí abajo tus tareas de barra
+A20    : 11
+C20    : Barra
+D20    : (Responsable)
+E20    : (Hora)
+A21    : 12
+C21    : Barra
+A22    : 13
+C22    : Barra
+A23    : 14
+C23    : Barra
+A24    : 15
+C24    : Barra
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Por Perfil» · protegida=True · área='Por Perfil'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla en Blanco — Por Perfil Profesional
+A2     : Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   COCINA — escribe aquí abajo tus tareas de cocina
+A6     : 1
+D6     : Jefe de Cocina
+E6     : (Hora)
+A7     : 2
+D7     : Jefe de Cocina
+A8     : 3
+D8     : Jefe de Cocina
+A9     : 4
+D9     : Jefe de Cocina
+A10    : 5
+D10    : Jefe de Cocina
+A12    :   SALA — escribe aquí abajo tus tareas de sala
+A13    : 6
+D13    : Jefe de Sala
+E13    : (Hora)
+A14    : 7
+D14    : Jefe de Sala
+A15    : 8
+D15    : Jefe de Sala
+A16    : 9
+D16    : Jefe de Sala
+A17    : 10
+D17    : Jefe de Sala
+A19    :   GERENCIA — escribe aquí abajo tus tareas de gerencia
+A20    : 11
+D20    : Gerente
+E20    : (Hora)
+A21    : 12
+D21    : Gerente
+A22    : 13
+D22    : Gerente
+A23    : 14
+D23    : Gerente
+A24    : 15
+D24    : Gerente
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 08-apertura-cierre-negocio.xlsx
+# docProps: title='Apertura y Cierre del Negocio — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$47 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre del Negocio — Dark Kitchen
+B4     : Qué resuelve
+B6     : ▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.
+B7     : ▸ El detalle por área (cocina) va en 01-apertura-cierre.xlsx: no repitas el trabajo, cada fichero cubre un nivel distinto.
+B9     : Cómo usar
+B11    : ▸ Imprime la hoja del turno (apertura o cierre) o úsala en tablet; el responsable reparte y cada persona firma su tarea.
+B12    : ▸ Cada tarea trae Responsable y Hora Límite precargados con el criterio del kit: ajústalos a tu horario real, son celdas verdes.
+B14    : Celdas editables
+B16    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma y Notas.
+B18    : Cómo cuenta el contador
+B20    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B21    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B22    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B24    : Filas libres
+B26    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B27    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B29    : Protección de la hoja
+B31    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B32    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B34    : Se conecta con
+B36    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B37    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B38    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B39    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B40    : ▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.
+B42    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B44    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B45    : Contacto: info@aichef.pro
+B47    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Apertura del Negocio» · protegida=True · área='Apertura del Negocio'!$A$1:$H$31 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura del Negocio — Dark Kitchen
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Desactivar alarma del local
+C5     : Acceso
+D5     : Encargado
+E5     : 09:00
+A6     : 2
+B6     : Encender luces generales (interior y exterior)
+C6     : General
+D6     : Encargado
+E6     : 09:00
+A7     : 3
+B7     : Encender climatización (HVAC) / calefacción según temporada
+C7     : General
+D7     : Encargado
+E7     : 09:00
+A8     : 4
+B8     : Abrir persianas / puerta principal
+C8     : Acceso
+D8     : Encargado
+E8     : 09:00
+A9     : 5
+B9     : Colocar la señalización del punto de recogida de riders y el cartel con el horario de cada marca
+C9     : Exterior
+D9     : Encargado
+E9     : 09:00
+A10    : 6
+B10    : Encender TPV / POS / datáfono
+C10    : Caja
+D10    : Encargado
+E10    : 09:00
+A11    : 7
+B11    : Encender la pantalla de comandas y la impresora de tickets de cada plataforma y comprobar que imprimen: sin ticket impreso el pedido se queda sin salir
+C11    : Operaciones
+D11    : Encargado
+E11    : 09:15
+A12    : 8
+B12    : Comprobar que el timbre o el interfono de la puerta de riders funciona y que las indicaciones de acceso publicadas en cada plataforma siguen siendo correctas
+C12    : Acceso
+D12    : Encargado
+E12    : 09:15
+A13    : 9
+B13    : Revisar los pedidos programados del día y ajustar los tiempos de preparación publicados en cada plataforma a la carga prevista
+C13    : Operaciones
+D13    : Encargado
+E13    : 09:15
+A14    : 10
+B14    : Comprobar baños: papel, jabón, limpieza, ambientador
+C14    : Baños
+D14    : Encargado
+E14    : 09:15
+A15    : 11
+B15    : Verificar limpieza de zonas comunes (entrada, pasillos)
+C15    : Zonas comunes
+D15    : Encargado
+E15    : 09:15
+A16    : 12
+B16    : Revisar la zona de recogida de riders: mostrador de entrega despejado, estanterías de expedición señalizadas por marca e iluminación en orden
+C16    : Recogida riders
+D16    : Encargado
+E16    : 09:15
+A17    : 13
+B17    : Montar el puesto de empaquetado y etiquetado: cajas, bolsas, tapas, cubiertos, precintos de seguridad y etiquetas de cada marca al alcance
+C17    : Packaging
+D17    : Encargado
+E17    : 09:30
+A18    : 14
+B18    : Comprobar que las etiquetas de marca, los flyers y las fichas de alérgenos impresas están repuestos en el puesto de empaquetado
+C18    : Packaging
+D18    : Encargado
+E18    : 09:30
+A19    : 15
+B19    : Encender displays / pantallas informativas si las hay
+C19    : General
+D19    : Encargado
+E19    : 09:30
+A20    : 16
+B20    : Encender tablets de plataformas delivery (Glovo, UberEats, JustEat)
+C20    : Operaciones
+D20    : Encargado
+E20    : 09:30
+A21    : 17
+B21    : Verificar stock de packaging
+C21    : Almacén
+D21    : Encargado
+E21    : 09:30
+A22    : 18
+B22    : Activar las marcas en las plataformas y comprobar que cada una figura como ABIERTA y recibiendo pedidos
+C22    : Operaciones
+D22    : Encargado
+E22    : 09:30
+A29    : Tareas completadas:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : de
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 18.0
+A30    : Firma del responsable: _________________________     Hora de finalización: ________
+A31    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre del Negocio» · protegida=True · área='Cierre del Negocio'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre del Negocio — Dark Kitchen
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Pausar los pedidos nuevos en todas las marcas: a partir de aquí sólo se terminan los pedidos ya aceptados
+C5     : Operaciones
+D5     : Encargado
+E5     : Cierre
+A6     : 2
+B6     : Verificar que no queda ningún rider esperando ni pedidos sin recoger en la estantería de expedición
+C6     : Recogida riders
+D6     : Encargado
+E6     : Cierre
+A7     : 3
+B7     : Limpiar y recoger la zona de recogida y el puesto de empaquetado: retirar cartón, precintos y etiquetas sobrantes y dejar el mostrador de entrega despejado
+C7     : Packaging
+D7     : Encargado
+E7     : Cierre
+A8     : 4
+B8     : Apagar TPV / POS / datáfono (o dejar en standby)
+C8     : Caja
+D8     : Encargado
+E8     : Cierre
+A9     : 5
+B9     : Cerrar persianas y puertas
+C9     : Acceso
+D9     : Encargado
+E9     : Cierre
+A10    : 6
+B10    : Apagar luces (dejar mínimas de seguridad)
+C10    : General
+D10    : Encargado
+E10    : Cierre
+A11    : 7
+B11    : Apagar climatización
+C11    : General
+D11    : Encargado
+E11    : Cierre
+A12    : 8
+B12    : Recoger señalización exterior
+C12    : Exterior
+D12    : Encargado
+E12    : Cierre
+A13    : 9
+B13    : Comprobar que ventanas están cerradas
+C13    : General
+D13    : Encargado
+E13    : Cierre
+A14    : 10
+B14    : Vaciar papeleras de zonas comunes y baños
+C14    : Baños
+D14    : Encargado
+E14    : Cierre
+A15    : 11
+B15    : Revisión final de seguridad (gas, agua, enchufes)
+C15    : General
+D15    : Encargado
+E15    : Cierre
+A16    : 12
+B16    : Activar alarma
+C16    : Acceso
+D16    : Encargado
+E16    : Cierre
+A17    : 13
+B17    : Cerrar con llave y verificar cierre
+C17    : Acceso
+D17    : Último en salir
+E17    : Cierre
+A18    : 14
+B18    : Desactivar las marcas en las plataformas y comprobar que ninguna queda ABIERTA aceptando pedidos
+C18    : Operaciones
+D18    : Último en salir
+E18    : Cierre
+A19    : 15
+B19    : Apagar tablets de plataformas
+C19    : Operaciones
+D19    : Último en salir
+E19    : Cierre
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Firma del responsable: _________________________     Hora de finalización: ________
+A28    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-apertura-cierre-caja.xlsx
+# docProps: title='Apertura y Cierre de Caja — Dark Kitchen · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$57 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre de Caja — Dark Kitchen
+B4     : Qué resuelve
+B6     : ▸ El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre — y el registro mensual para ver de un vistazo qué días no cuadraron.
+B8     : Cómo usar — Apertura de Caja
+B10    : ▸ Cuenta el fondo y escribe el importe en la celda VERDE «Fondo de caja inicial (€)». De ahí lo lee el cierre: no hay que volver a teclearlo.
+B12    : Cómo usar — Cierre de Caja
+B14    : ▸ En «Recuento de Efectivo por Denominación» rellena SOLO la columna «Cantidad» (número de billetes o monedas, entero): el subtotal y el TOTAL EFECTIVO se calculan solos.
+B15    : ▸ En el «Resumen de Cierre» sólo escribes tres cifras: Total Tarjetas, Total Otros y la Z del TPV. Lo demás es fórmula.
+B16    : ▸ El fondo se descuenta solo: TOTAL FACTURADO = (efectivo contado − fondo) + tarjetas + otros.
+B17    : ▸ DESCUADRE = TOTAL FACTURADO − Z del TPV. Si la casilla se pone ÁMBAR, la caja no cuadra: revísalo ANTES de firmar.
+B19    : Registro Mensual
+B21    : ▸ Una fila por día: escribe fondo, ventas por medio de pago, Z del TPV y depósito; el Total Facturado y el Descuadre se calculan solos y el descuadre se pone ámbar.
+B22    : ▸ El fondo de caja es un saldo, no una venta: la fila TOTALES muestra el fondo MEDIO de los días anotados, no su suma.
+B24    : Celdas editables
+B26    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma, Notas, las cantidades del recuento y los importes del resumen.
+B28    : Cómo cuenta el contador
+B30    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B31    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B32    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B34    : Filas libres
+B36    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B37    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B39    : Protección de la hoja
+B41    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B42    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B44    : Se conecta con
+B46    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B47    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B48    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B49    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B50    : ▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 08-apertura-cierre-negocio.xlsx y el detalle por zona, en 01-apertura-cierre.xlsx.
+B52    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B54    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B55    : Contacto: info@aichef.pro
+B57    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Apertura de Caja» · protegida=True · área='Apertura de Caja'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura de Caja — Dark Kitchen
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Hora Límite
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Verificar fondo de caja del día anterior
+C5     : Responsable de caja
+D5     : 09:15
+A6     : 2
+B6     : Contar fondo de caja inicial
+C6     : Responsable de caja
+D6     : 09:15
+A7     : 3
+B7     : Anotar el fondo de caja en la celda verde de abajo
+C7     : Responsable de caja
+D7     : 09:15
+A8     : 4
+B8     : Verificar cambio suficiente (monedas, billetes pequeños)
+C8     : Responsable de caja
+D8     : 09:15
+A9     : 5
+B9     : Comprobar que el TPV está encendido y abrir turno de caja
+C9     : Responsable de caja
+D9     : 09:30
+A10    : 6
+B10    : Imprimir X de apertura (informe de inicio)
+C10    : Responsable de caja
+D10    : 09:30
+A11    : 7
+B11    : Comprobar rollo de papel de ticket
+C11    : Responsable de caja
+D11    : 09:30
+A12    : 8
+B12    : Verificar datáfono operativo
+C12    : Responsable de caja
+D12    : 09:30
+A13    : 9
+B13    : Verificar conexión de pasarela de pago
+C13    : Responsable de caja
+D13    : 09:45
+A14    : 10
+B14    : Anotar incidencias del turno anterior
+C14    : Responsable de caja
+D14    : 09:45
+A15    : 11
+B15    : Firma del responsable de apertura
+C15    : Responsable de caja
+D15    : 09:45
+A22    : Tareas completadas:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : de
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Fondo de caja inicial (€)
+C23    : 0
+D23    : Se descuenta del efectivo en el Cierre de Caja
+A25    : Firma del responsable: _________________________     Hora: ________
+A26    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cierre de Caja» · protegida=True · área='Cierre de Caja'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre de Caja — Dark Kitchen
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Cuándo
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Imprimir Z de cierre (informe final del día)
+C5     : Responsable de caja
+D5     : Cierre
+A6     : 2
+B6     : Recuento de efectivo por denominación (ver tabla inferior)
+C6     : Responsable de caja
+D6     : Cierre
+A7     : 3
+B7     : Calcular total efectivo
+C7     : Responsable de caja
+D7     : Cierre
+A8     : 4
+B8     : Anotar total tarjetas (Visa/Mastercard)
+C8     : Responsable de caja
+D8     : Cierre
+A9     : 5
+B9     : Anotar otros medios (Bizum, vales, invitaciones)
+C9     : Responsable de caja
+D9     : Cierre
+A10    : 6
+B10    : Total facturado = efectivo contado − fondo + tarjetas + otros
+C10    : Responsable de caja
+D10    : Cierre
+A11    : 7
+B11    : Comparar con Z del TPV → calcular diferencia/descuadre
+C11    : Responsable de caja
+D11    : Cierre
+A12    : 8
+B12    : Registrar devoluciones del día
+C12    : Responsable de caja
+D12    : Cierre
+A13    : 9
+B13    : Registrar anulaciones del día
+C13    : Responsable de caja
+D13    : Cierre
+A14    : 10
+B14    : Separar fondo de caja para mañana
+C14    : Responsable de caja
+D14    : Cierre
+A15    : 11
+B15    : Preparar depósito bancario / guardar en caja fuerte
+C15    : Responsable de caja
+D15    : Cierre
+A16    : 12
+B16    : Firma del responsable de cierre
+C16    : Responsable de caja
+D16    : Cierre
+A23    : Tareas completadas:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : de
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Recuento de Efectivo por Denominación
+A25    : Denominación
+B25    : Cantidad
+C25    : Subtotal (€)
+A26    : BILLETES
+A27    : 500 €
+B27    : 0
+C27    = =B27*500   → caché 0.0
+A28    : 200 €
+B28    : 0
+C28    = =B28*200   → caché 0.0
+A29    : 100 €
+B29    : 0
+C29    = =B29*100   → caché 0.0
+A30    : 50 €
+B30    : 0
+C30    = =B30*50   → caché 0.0
+A31    : 20 €
+B31    : 0
+C31    = =B31*20   → caché 0.0
+A32    : 10 €
+B32    : 0
+C32    = =B32*10   → caché 0.0
+A33    : 5 €
+B33    : 0
+C33    = =B33*5   → caché 0.0
+A34    : MONEDAS
+A35    : 2 €
+B35    : 0
+C35    = =B35*2   → caché 0.0
+A36    : 1 €
+B36    : 0
+C36    = =B36*1   → caché 0.0
+A37    : 0,50 €
+B37    : 0
+C37    = =B37*0.5   → caché 0.0
+A38    : 0,20 €
+B38    : 0
+C38    = =B38*0.2   → caché 0.0
+A39    : 0,10 €
+B39    : 0
+C39    = =B39*0.1   → caché 0.0
+A40    : 0,05 €
+B40    : 0
+C40    = =B40*0.05   → caché 0.0
+A41    : 0,02 €
+B41    : 0
+C41    = =B41*0.02   → caché 0.0
+A42    : 0,01 €
+B42    : 0
+C42    = =B42*0.01   → caché 0.0
+A43    : TOTAL EFECTIVO
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Resumen de Cierre
+A46    : Concepto
+C46    : Importe (€)
+A47    : Total Efectivo (recuento)
+C47    = =C43   → caché 0.0
+A48    : Fondo de caja inicial (−)
+C48    = =IFERROR('Apertura de Caja'!C23,0)   → caché 0.0
+A49    : Ventas en efectivo (contado − fondo)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Total Tarjetas (Visa/MC)
+C50    : 0
+A51    : Total Otros (Bizum, Vales)
+C51    : 0
+A52    : TOTAL FACTURADO
+C52    = =C49+C50+C51   → caché 0.0
+A53    : Z del TPV
+C53    : 0
+A54    : DESCUADRE
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Firma del responsable: _________________________     Hora: ________
+A57    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Cantidad no válida · error=Escribe el número de billetes o monedas: un número entero y positivo, sin decimales. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Registro Mensual» · protegida=True · área='Registro Mensual'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Registro Mensual de Caja — Dark Kitchen
+A2     : Mes: ________________     Año: ________
+F2     : Responsable general: _________________________
+A4     : Fecha
+B4     : Fondo Apertura
+C4     : Efectivo Contado
+D4     : Ventas Tarjeta
+E4     : Ventas Otros
+F4     : Total Facturado
+G4     : Z del TPV
+H4     : Descuadre
+I4     : Depósito
+J4     : Responsable
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALES
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : «Efectivo Contado» es el recuento del cajón TAL CUAL, con el fondo dentro: el Total Facturado ya lo descuenta. En TOTALES, «Fondo Apertura» es el fondo MEDIO de los días anotados (un saldo no se suma) y «Descuadre» es el descuadre ACUMULADO en valor absoluto: un +50 y un −50 son 100 € de descuadre, no 0.
+A38    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-briefing-servicio.xlsx
+# docProps: title='BONUS: Plantilla de Briefing Pre-Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$23 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS: Plantilla de Briefing Pre-Servicio
+B4     : Cómo usar esta plantilla
+B6     : ▸ El manager o el gestor de plataformas rellena antes del briefing
+B7     : ▸ Se comunica al equipo en la reunión de 5-10 minutos pre-servicio
+B8     : ▸ Imprime y pega en la zona de pase para referencia durante servicio
+B10    : Se conecta con
+B12    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B13    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B14    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B15    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B16    : ▸ Estás en BONUS-01-briefing-servicio.xlsx: el briefing abre el turno que luego se trabaja con 01-apertura-cierre.xlsx.
+B18    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B20    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B21    : Contacto: info@aichef.pro
+B23    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Briefing» · protegida=True · área='Briefing'!$A$1:$C$37 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B1     : Briefing Pre-Servicio
+B2     : Fecha: ___/___/______    Turno: ☐ Comida  ☐ Cena    Encargado: _________________________
+B4     : PEDIDOS Y PREVISIÓN
+B5     : Pedidos previstos (mismo día de la semana pasada):
+B6     : Marcas activas hoy y horario de cada una:
+B7     : Promos activas por plataforma:
+B8     : Eventos que mueven la demanda (partido, festivo, lluvia):
+B9     : Saturación estimada de la cocina:
+C9     : _____ %
+B11    : PLATOS DEL DÍA Y 86s
+B12    : Plato destacado de la marca 1:
+B13    : Plato destacado de la marca 2:
+B14    : Extra o postre del día:
+B15    : Productos AGOTADOS (86):
+B16    : Cambios en el menú de las plataformas:
+B18    : ALÉRGENOS Y ESPECIALES
+B19    : Alérgenos a vigilar hoy (recetas o proveedores que han cambiado):
+B20    : Dietas especiales (vegano, celíaco...):
+B21    : Platos que NO se pueden servir sin un alérgeno y hay que rechazar:
+B23    : EQUIPO DEL TURNO
+B24    : Personal cocina:
+B25    : Personal de empaquetado y expedición:
+B26    : Gestor de plataformas y tablets:
+B27    : ¿Falta alguien? Cobertura:
+B29    : NOTAS E INCIDENCIAS
+B30    : Incidencias del turno anterior:
+B31    : Objetivos del turno:
+B32    : Mensaje del manager:
+B35    : Firma encargado: _________________________
+B37    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+####################################################################################################
+# BONUS-02-calendario-anual-tareas.xlsx
+# docProps: title='BONUS: Calendario Anual de Tareas Especiales · Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen · v2.0' · keywords='kit tareas dark kitchen, AI Chef Pro' · description='aichef.pro/kit-tareas-dark-kitchen' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$23 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS: Calendario Anual de Tareas Especiales
+B4     : Cómo usar esta plantilla
+B6     : ▸ Consulta las fechas clave de hostelería mes a mes
+B7     : ▸ Planifica con antelación: menús especiales, decoración, stock
+B8     : ▸ Añade las fechas relevantes de tu zona (fiestas locales, ferias)
+B10    : Se conecta con
+B12    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B13    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).
+B14    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B15    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B16    : ▸ Estás en BONUS-02-calendario-anual-tareas.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B18    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro
+B20    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B21    : Contacto: info@aichef.pro
+B23    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-dark-kitchen · info@aichef.pro
+
+=== Hoja «Calendario Anual» · protegida=True · área='Calendario Anual'!$A$1:$D$34 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Calendario Anual — Fechas Clave de Hostelería
+A2     : Año: ______    Añade tus fechas locales en las filas vacías
+A4     : Mes
+B4     : Fecha / Evento
+C4     : Tareas Clave
+D4     : Antelación
+A5     : Enero
+B5     : 1 Ene — Año Nuevo
+C5     : Decidir si se abre; si se cierra, pausar las marcas en TODAS las plataformas y publicar el horario con 1 semana
+D5     : 1 semana
+A6     : Enero
+B6     : 6 Ene — Reyes
+C6     : Roscón y menú familiar para llevar, pico de mediodía
+D6     : 1 semana
+A7     : Febrero
+B7     : 14 Feb — San Valentín
+C7     : Menú para dos en formato delivery, packaging cuidado y refuerzo de la cena
+D7     : 2 semanas
+A8     : Febrero
+B8     : Carnaval (variable)
+C8     : Menú temático en plataformas y promo de fin de semana
+D8     : 1 semana
+A9     : Marzo
+B9     : 19 Mar — Día del Padre
+C9     : Menú para llevar de sobremesa familiar, promo de mediodía en cada marca
+D9     : 2 semanas
+A10    : Marzo-Abril
+B10    : Semana Santa (variable)
+C10    : Menú de vigilia por marca (bacalao, potaje, torrijas) y refuerzo del mediodía
+D10    : 2 semanas
+A11    : Marzo-Abril
+B11    : Buen tiempo: cae el pedido de mediodía
+C11    : Ajustar producción y turnos a la baja, reforzar promos de cena y de fin de semana
+D11    : 1 mes
+A12    : Abril-Junio
+B12    : Comuniones y bautizos (temporada)
+C12    : Bandejas y menús de grupo para recoger o entregar, precio por persona y packaging para transporte
+D12    : 1 mes
+A13    : Mayo
+B13    : 1 Mayo — Día del Trabajo
+C13    : Servicio de festivo: confirmar riders y horario publicado por marca
+D13    : 1 semana
+A14    : Mayo
+B14    : Primer domingo — Día de la Madre
+C14    : Menú especial para llevar, packaging cuidado y refuerzo del pico de mediodía
+D14    : 2 semanas
+A15    : Junio
+B15    : Inicio temporada alta
+C15    : Refuerzo de plantilla y stock de verano; revisar tiempos de preparación en pico
+D15    : 1 mes
+A16    : Junio
+B16    : 24 Jun — San Juan
+C16    : Menú especial de noche, refuerzo del pico tardío y de la salida de riders
+D16    : 1 semana
+A17    : Julio-Agosto
+B17    : Temporada alta
+C17    : Personal extra, horarios ampliados y menú de verano por marca
+D17    : Continuo
+A18    : Agosto
+B18    : 15 Ago — Asunción
+C18    : Servicio de festivo con equipo reducido: revisar qué marcas se mantienen activas y cuáles se pausan
+D18    : 1 semana
+A19    : Septiembre
+B19    : Vuelta al cole / rutina
+C19    : Menú de otoño por marca y promo de mediodía para oficinas
+D19    : 2 semanas
+A20    : Octubre
+B20    : 31 Oct — Halloween
+C20    : Menú y packaging temáticos, promo de noche en plataformas
+D20    : 1 semana
+A21    : Noviembre
+B21    : 1 Nov — Todos los Santos
+C21    : Festivo de mediodía familiar: pico temprano y stock para dos días seguidos
+D21    : 1 semana
+A22    : Noviembre
+B22    : Frío y lluvia: sube el pedido
+C22    : Reforzar turnos y stock, vigilar los tiempos de preparación y el embalaje que aguanta el traslado
+D22    : 1 semana
+A23    : Diciembre
+B23    : 6-8 Dic — Puente de la Constitución y la Inmaculada
+C23    : Tres festivos seguidos: stock, refuerzo de turnos y horario publicado en cada plataforma
+D23    : 2 semanas
+A24    : Diciembre
+B24    : Pedidos de grupo y catering de oficina
+C24    : Menú cerrado por persona, packaging para transporte, confirmación con antelación y turnos extra
+D24    : 1 mes
+A25    : Diciembre
+B25    : 24-25 Dic — Nochebuena/Navidad
+C25    : Menú navideño por marca, packaging especial y stock para la semana con menos entregas de proveedor
+D25    : 2 semanas
+A26    : Diciembre
+B26    : 31 Dic — Nochevieja
+C26    : Menú de gala para llevar, cierre temprano de pedidos y horario avisado en cada plataforma
+D26    : 2 semanas
+A28    : (Tu fecha)
+B28    : (Añade aquí)
+C28    : (Tareas específicas)
+D28    : (Antelación)
+A29    : (Tu fecha)
+B29    : (Añade aquí)
+C29    : (Tareas específicas)
+D29    : (Antelación)
+A30    : (Tu fecha)
+B30    : (Añade aquí)
+C30    : (Tareas específicas)
+D30    : (Antelación)
+A31    : (Tu fecha)
+B31    : (Añade aquí)
+C31    : (Tareas específicas)
+D31    : (Antelación)
+A32    : (Tu fecha)
+B32    : (Añade aquí)
+C32    : (Tareas específicas)
+D32    : (Antelación)
+A34    : — Kit de Tareas Recurrentes · Dark Kitchen · AI Chef Pro · aichef.pro

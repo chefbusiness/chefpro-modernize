@@ -4,13 +4,14 @@ kit.py — elige el kit del circuito de checklists EN: el base (Restaurant Check
 Sesión Claude Code, 18-oct-2026 (Bar Checklists Kit Pro, el primer hermano; SPEC base §9). Verticales dados de
 alta: VERTICALES (bar = Bar Checklists Kit Pro · cafe = Coffee Shop Checklists Kit Pro · catering = Catering
 Checklists Kit Pro, con el 09 como libro propio: cobros por evento, no caja · pizza = Pizza Shop Checklists Kit Pro ·
-burger = Burger Joint Checklists Kit Pro).
+burger = Burger Joint Checklists Kit Pro · ghost = Ghost Kitchen Checklists Kit Pro).
 
     python3 extraer_textos.py --kit bar          # o CHECKLISTS_KIT=bar python3 extraer_textos.py
     python3 extraer_textos.py --kit cafe
     python3 extraer_textos.py --kit catering
     python3 extraer_textos.py --kit pizza
     python3 extraer_textos.py --kit burger
+    python3 extraer_textos.py --kit ghost
 
 Sin --kit (ni la variable) todo es el kit base de siempre, byte a byte: `mapas.py`, origen `dl/kit-tareas` y los
 datos junto a los scripts (censo_es.json, textos_es.json, textos_en/). Con --kit <v>:
@@ -42,7 +43,7 @@ def _de_argv(argv):
     return None
 
 
-VERTICALES = ('bar', 'cafe', 'catering', 'pizza', 'burger')                          # <v>/mapas_<v>.py, SPEC en <v>/SPEC.md
+VERTICALES = ('bar', 'cafe', 'catering', 'pizza', 'burger', 'ghost')                 # <v>/mapas_<v>.py, SPEC en <v>/SPEC.md
 NOMBRE = _de_argv(sys.argv) or os.environ.get('CHECKLISTS_KIT') or 'base'
 os.environ['CHECKLISTS_KIT'] = NOMBRE
 BASE = NOMBRE == 'base'

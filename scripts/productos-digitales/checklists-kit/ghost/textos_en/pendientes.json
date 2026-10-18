@@ -1,0 +1,4603 @@
+{
+ "meta": {
+  "kit": "ghost",
+  "producto": "Ghost Kitchen Checklists Kit Pro",
+  "n_pendientes": 362,
+  "n_palabras": 2870,
+  "motivos": {
+   "contexto": 10,
+   "nueva": 341,
+   "adaptar": 8,
+   "corregida": 3
+  },
+  "n_heredadas": 203,
+  "heredadas_por_via": {
+   "exacta": 200,
+   "sufijo": 3
+  },
+  "heredadas_por_fuente": {
+   "base": 144,
+   "cafe": 22,
+   "burger": 15,
+   "pizza": 19,
+   "bar": 3
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "ghost/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "ghost/textos_en/heredado.json (cómo se dijo ya cada cosa: base, bar, cafetería, catering, pizzería y hamburguesería)",
+   "ghost/mapas_ghost.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0007",
+   "es": "▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "01 · Instrucciones · B7",
+    "02 · Instrucciones · B7",
+    "03 · Instrucciones · B7",
+    "… +6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "el local → the kitchen / the site (nunca «venue» ni «restaurant» para el local)"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ \"N/A\" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). \"—\" = not done: it still counts as pending and lowers the percentage, which is the point."
+  },
+  {
+   "id": "c0016",
+   "es": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Instrucciones · B22",
+    "02 · Instrucciones · B22",
+    "03 · Instrucciones · B22",
+    "… +8"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-delivery-only-kitchen-opening-closing-checklist.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day."
+  },
+  {
+   "id": "c0017",
+   "es": "▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina).",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Instrucciones · B23",
+    "02 · Instrucciones · B23",
+    "03 · Instrucciones · B23",
+    "… +8"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-ghost-kitchen-opening-closing-checklists.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0019",
+   "es": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.",
+   "grupo": "G1",
+   "palabras": 55,
+   "donde": [
+    "01 · Instrucciones · B25",
+    "02 · Instrucciones · B25",
+    "03 · Instrucciones · B25",
+    "… +8"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "el local → the kitchen / the site (nunca «venue» ni «restaurant» para el local)"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail."
+  },
+  {
+   "id": "c0026",
+   "es": "Checklist de Apertura — Cocina de Producción",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0041",
+   "es": "Lavado de manos al entrar y en cada cambio de tarea o de marca; lavamanos con jabón, papel y agua caliente",
+   "grupo": "G1",
+   "palabras": 21,
+   "donde": [
+    "01 · Apertura Cocina · B9"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "Lavamanos = handwashing sink, con agua caliente (al menos 100 °F, FDA Food Code 5-202.12), jabón y papel",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0045",
+   "es": "Encender la campana extractora y ventilar la cocina ANTES de encender nada más",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Cocina · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "Añade: comprobar que tira (una servilleta contra los filtros se queda pegada) y que los filtros están puestos y limpios",
+   "motivo": "adaptar",
+   "base_en": "Turn on the exhaust hood and ventilate the kitchen BEFORE lighting anything else"
+  },
+  {
+   "id": "c0047",
+   "es": "Verificar el gas ANTES de encender nada: abrir la llave general y comprobar que NO huele a gas; si huele, no enciendas, ventila y avisa al mantenedor",
+   "grupo": "G1",
+   "palabras": 27,
+   "donde": [
+    "01 · Apertura Cocina · B13"
+   ],
+   "adaptar": "Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal y llama a la compañía de gas o al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "Encender los equipos en este orden: plancha, horno, freidora y fogones",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Apertura Cocina · B14"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0049",
+   "es": "Encender baño maría si aplica",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "baño maría → steam table / hot well"
+   ],
+   "adaptar": "Baño maría → steam table / hot well: Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Preparar mise en place de todas las marcas/conceptos",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B18"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0053",
+   "es": "Preparar salsas del día (caseras)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B19"
+   ],
+   "adaptar": "Si la salsa se cocina: Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado; la mayonesa casera (sriracha mayo, alioli), con huevo pasteurizado, o aviso al consumidor en la ficha del plato si lleva huevo crudo (FDA Food Code 3-603.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "Cortar vegetales, proteínas, guarniciones",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Cocina · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0055",
+   "es": "Pre-cocinar bases: arroces, pasta, fondos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B21"
+   ],
+   "adaptar": "Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado; si se mantienen en caliente: Lo hecho antes que se vaya a mantener en caliente se recalienta a 165 °F en 2 h como máximo (FDA Food Code 3-403.11) y se mantiene a 135 °F o más",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0056",
+   "es": "Montar estaciones de producción por marca",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B22"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0058",
+   "es": "  PACKAGING Y DELIVERY",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0059",
+   "es": "Verificar stock de envases por marca (cajas, bowls, bolsas)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B25"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Verificar stock de cubiertos desechables, servilletas, salsas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B26"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0062",
+   "es": "Verificar stock de bolsas de delivery con logo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Verificar precintos de seguridad / stickers",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B28"
+   ],
+   "pistas": [
+    "precinto / sello de seguridad → tamper-evident seal (sticker)"
+   ],
+   "adaptar": "Precinto de seguridad → tamper-evident seal (sticker o cinta que se rompe al abrir la bolsa): California lo exige para la comida lista para consumir que recoge un repartidor de app (AB 3336, desde 2021); en el resto, revisa la norma de tu ciudad o estado (check local rules) y las apps lo recomiendan",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "Montar estación de empaquetado: envases, bolsas, ticket",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B29"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "  TABLETS Y PLATAFORMAS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0066",
+   "es": "Encender todas las tablets de delivery",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B31"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0068",
+   "es": "Verificar conexión wifi / datos en cada tablet",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B32"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0069",
+   "es": "Activar todas las marcas en Glovo, Uber Eats, Just Eat",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Cocina · B33"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "Glovo / Just Eat → DoorDash / Grubhub (Uber Eats se queda, con espacio)"
+   ],
+   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps); tablets → order tablets",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0070",
+   "es": "Verificar que menús están actualizados (precios, disponibilidad)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0071",
+   "es": "Verificar que la información de ALÉRGENOS de cada plato sigue publicada y actualizada en la ficha de cada marca: en venta a distancia es obligatorio darla antes de que el cliente compre",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "01 · Apertura Cocina · B35"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "El cliente no puede preguntar en un mostrador: los alérgenos de cada plato (los 9 principales de EE. UU.; en UK, los 14), en la ficha del plato de cada app. En EE. UU. no hay una norma federal que lo exija a la comida de restaurante, pero las apps tienen el campo y algunos estados o ciudades piden avisos propios (check local rules); en UK es obligatorio en la venta a distancia: antes de comprar y al entregar",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "Verificar impresora de tickets funcionando",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B36"
+   ],
+   "pistas": [
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0073",
+   "es": "Pausar marcas si no hay stock de algo (86)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B37"
+   ],
+   "pistas": [
+    "«86» / «86s» es jerga US: se queda",
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "86 → 86 (jerga US: «86 an item»)",
+    "pausar una marca → pause the brand (in the app)"
+   ],
+   "adaptar": "86 → «86» (se dice igual): pausar en cada app el plato o la marca sin stock",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "  HIGIENE DE SUPERFICIES Y BOTIQUÍN",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · A38"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "Comprobar que el botiquín y el extintor están accesibles y sin cajas de packaging delante",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura Cocina · B39"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Desinfectar superficies de trabajo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Cocina · B40"
+   ],
+   "adaptar": "Superficies de trabajo: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "adaptar",
+   "base_en": "Sanitize work surfaces with an approved sanitizer at the label concentration: check it with a test strip",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0081",
+   "es": "Firma encargado/a: _________________________    Hora: _________",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · A50",
+    "01 · Cierre Cocina · A42",
+    "02 · Estación Caliente · A28",
+    "… +18"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)"
+   ],
+   "comun": true,
+   "motivo": "contexto: Shift lead",
+   "base_en": "Shift lead signature: _________________________    Time: _________",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0084",
+   "es": "Checklist de Cierre — Cocina de Producción",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0088",
+   "es": "Guardar salsas en recipientes herméticos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0089",
+   "es": "Cubrir y refrigerar toda la mise en place",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Cocina · B8"
+   ],
+   "adaptar": "Tapada y a 41 °F o menos; lo cocinado, enfriado antes: Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "Congelar EN EL DÍA lo que no se usará mañana, en porciones de un solo uso y etiquetado con la fecha (vida útil por familia en la tabla del pie de «FIFO Semanal», en 05-tareas-semanales-mensuales.xlsx)",
+   "grupo": "G1",
+   "palabras": 39,
+   "donde": [
+    "01 · Cierre Cocina · B9"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "Congelador a 0 °F o menos; la tabla de vida útil, en la hoja «FIFO Semanal» del 05 (nombres EN de la hoja y del fichero)",
+   "cita_rotulos": [
+    {
+     "es": "FIFO Semanal",
+     "en": "Weekly FIFO Check"
+    }
+   ],
+   "cita_ficheros": [
+    {
+     "es": "05-tareas-semanales-mensuales.xlsx",
+     "en": "05-cloud-kitchen-cleaning-checklist-inventory-maintenance.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Anotar las mermas del día por marca (producto, cantidad y motivo): sin ese dato el food cost por marca del mes sale mal",
+   "grupo": "G1",
+   "palabras": 23,
+   "donde": [
+    "01 · Cierre Cocina · B10"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0092",
+   "es": "Apagar plancha, horno, freidora, fogones",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Filtrar o cambiar el aceite de la freidora si toca: manipularlo SÓLO por debajo de 40 °C, nunca en caliente, con guantes y recipiente estable; el usado, al bidón del gestor autorizado",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "01 · Cierre Cocina · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "gestor de plataformas → app manager (delivery apps and tablets); gestor autorizado → licensed hauler / recycler"
+   ],
+   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas; el usado, al contenedor del reciclador (used cooking oil recycler). Sin cifra de temperatura del kit",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0094",
+   "es": "Apagar campana extractora",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · B14"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "Apagar la campana la última, cuando la plancha, el horno y la freidora ya se hayan enfriado",
+   "motivo": "adaptar",
+   "base_en": "Turn off the exhaust hood"
+  },
+  {
+   "id": "c0096",
+   "es": "Cerrar llave de gas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0098",
+   "es": "Limpiar todas las superficies y estaciones",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B18"
+   ],
+   "adaptar": "Limpiar todas las superficies y estaciones y luego sanitizarlas con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "Fregar utensilios, bandejas, cacerolas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Sacar basura y reciclar (mucho cartón en dark kitchen)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Cocina · B21"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Dark Kitchen»; dark kitchen → ghost kitchen (o cloud kitchen / virtual kitchen / delivery-only kitchen; NUNCA «dark kitchen»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "Limpiar estación de empaquetado",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B22",
+    "02 · Empaquetado · B20"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "  TABLETS Y CIERRE",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "Desactivar todas las marcas en plataformas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B24"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0107",
+   "es": "Cuadrar pedidos del día vs facturación plataformas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B26"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "facturación → sales (o revenue); facturación de plataformas → app sales / payouts",
+    "cuadrar → reconcile / balance"
+   ],
+   "adaptar": "Cuadrar → reconcile: los pedidos del día contra el informe de ventas o de pagos (payouts) de cada app",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "Anotar incidencias: pedidos cancelados, reembolsos, quejas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B27"
+   ],
+   "pistas": [
+    "reembolsos → refunds; cancelaciones → cancellations"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Anotar faltantes por marca",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B31"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0114",
+   "es": "Apagar luces y activar alarma",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "Estación Caliente — Plancha, Horno y Fogones",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Caliente · A1"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "  ANTES",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "02 · Estación Caliente · A5",
+    "02 · Estación Fría · A5",
+    "02 · Empaquetado · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "Precalentar plancha, horno, fogones según menús del día",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Estación Caliente · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "Preparar proteínas por marca: pollo, carne, pescado",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Estación Caliente · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "Cocinar cada proteína a su temperatura, comprobada con sonda en el centro: pollo 165 °F, carne picada 155 °F durante 17 s, pescado 145 °F durante 15 s (FDA Food Code 3-401.11); crudo separado de lo listo para consumir y en la balda de abajo (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "Preparar guarniciones calientes: arroces, pasta, verduras",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Caliente · B8"
+   ],
+   "adaptar": "Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16); lo que se guarde, lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0133",
+   "es": "Verificar stock de ingredientes calientes",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Estación Caliente · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Cocinar según tickets de cada marca",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Caliente · B11"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Leer las NOTAS del ticket ANTES de cocinar: si el cliente declara alergia o intolerancia, confirmar que la receta y la línea están limpias de ese alérgeno; si no puedes garantizarlo, cancela el pedido y avísale por la plataforma",
+   "grupo": "G1",
+   "palabras": 39,
+   "donde": [
+    "02 · Estación Caliente · B12"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "Controlar tiempos: pedido debe estar listo en 8-12 min",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Estación Caliente · B13"
+   ],
+   "pistas": [
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0138",
+   "es": "Mantener temperatura y presentación constante",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Estación Caliente · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16) hasta que el plato pasa al empaquetado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "Coordinar con empaquetado: plato listo → empaquetar ya",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Estación Caliente · B15"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Limpiar plancha, fogones y horno",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Estación Caliente · B17"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Guardar pre-elaboraciones etiquetadas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Estación Caliente · B18"
+   ],
+   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0143",
+   "es": "Anotar las mermas del turno (producto, cantidad y motivo): lo que se pasa de punto o se devuelve también cuesta dinero",
+   "grupo": "G1",
+   "palabras": 21,
+   "donde": [
+    "02 · Estación Caliente · B19"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0144",
+   "es": "Estación Fría — Ensaladas, Bowls y Poke",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Fría · A1"
+   ],
+   "pistas": [
+    "poke, sushi, tartare, ceviche (sin tildes en EN)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0147",
+   "es": "Preparar bases: arroz sushi, quinoa, lechuga",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Fría · B7"
+   ],
+   "pistas": [
+    "poke, sushi, tartare, ceviche (sin tildes en EN)"
+   ],
+   "adaptar": "Arroz de sushi: si se acidifica para tenerlo fuera de frío hace falta una varianza y un plan HACCP del departamento de salud (FDA Food Code 3-502.11); si no, a 41 °F o menos, o con time as a public health control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0148",
+   "es": "Pescado que se sirve CRUDO, marinado o semicrudo (poke, sushi, tartar, ceviche) — prevención de ANISAKIS: usar sólo pescado congelado previamente ≥24 h a −20 °C (o 15 h a −35 °C), o exigir el certificado al proveedor, y anotar el lote",
+   "grupo": "G1",
+   "palabras": 41,
+   "donde": [
+    "02 · Estación Fría · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "poke, sushi, tartare, ceviche (sin tildes en EN)"
+   ],
+   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): pescado congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; el registro (o la declaración escrita del proveedor) se guarda 90 días (3-402.12); aviso al consumidor en la ficha del plato de cada app (FDA Food Code 3-603.11). Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0149",
+   "es": "Preparar toppings: aguacate, edamame, mango, semillas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Fría · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0150",
+   "es": "Preparar salsas: soja, teriyaki, sriracha mayo, ponzu",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Estación Fría · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0151",
+   "es": "Montar inserts de línea fría",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Estación Fría · B11"
+   ],
+   "adaptar": "Inserts tapados y a 41 °F o menos en la mesa fría (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0152",
+   "es": "Montar bowls y ensaladas según ticket",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Fría · B13"
+   ],
+   "pistas": [
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0153",
+   "es": "Mantener ingredientes frescos (cubrir cuando no se usan)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Estación Fría · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0155",
+   "es": "Cubrir y refrigerar todos los inserts",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Estación Fría · B17"
+   ],
+   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17)",
+   "motivo": "adaptar",
+   "base_en": "Cover and refrigerate all inserts",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0156",
+   "es": "Desechar fruta/vegetales que lleven +24h cortados",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Estación Fría · B18"
+   ],
+   "adaptar": "Criterio del kit (calidad); las hojas verdes, el tomate y el melón cortados son TCS: a 41 °F o menos y con date marking (FDA Food Code 3-501.16 y 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0157",
+   "es": "Anotar las mermas del turno: fruta y aguacate cortados, inserts agotados y bowls montados que no se han vendido",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "02 · Estación Fría · B19"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0158",
+   "es": "Estación de Empaquetado y Expedición",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Empaquetado · A1"
+   ],
+   "pistas": [
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "Montar estación: envases por marca, bolsas, stickers, cubiertos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Empaquetado · B6"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check",
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Verificar impresora de tickets/etiquetas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Empaquetado · B7"
+   ],
+   "pistas": [
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Verificar precintos de seguridad por marca",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Empaquetado · B8"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "precinto / sello de seguridad → tamper-evident seal (sticker)"
+   ],
+   "adaptar": "Precinto de seguridad → tamper-evident seal (sticker o cinta que se rompe al abrir la bolsa): California lo exige para la comida lista para consumir que recoge un repartidor de app (AB 3336, desde 2021); en el resto, revisa la norma de tu ciudad o estado (check local rules) y las apps lo recomiendan",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0163",
+   "es": "Organizar zona de expedición: estantería por plataforma",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Empaquetado · B9"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0164",
+   "es": "Empaquetar plato en envase correcto de la marca",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Empaquetado · B11"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "adaptar": "Empaquetar en el envase de la marca; añade: lo caliente y lo frío en bolsas o compartimentos separados, para que lo caliente siga a 135 °F o más y lo frío a 41 °F o menos hasta que lo recoja el repartidor (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Añadir cubiertos, servilleta, salsa extra si aplica",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Empaquetado · B12"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Colocar sticker de marca + ticket del pedido",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Empaquetado · B13"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Identificar con una etiqueta VISIBLE los pedidos con alergia declarada y colocarlos separados en la estantería de expedición, para que no se crucen con el resto",
+   "grupo": "G1",
+   "palabras": 26,
+   "donde": [
+    "02 · Empaquetado · B14"
+   ],
+   "pistas": [
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Precintar bolsa con precinto de seguridad",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Empaquetado · B15"
+   ],
+   "pistas": [
+    "precinto / sello de seguridad → tamper-evident seal (sticker)"
+   ],
+   "adaptar": "Precinto de seguridad → tamper-evident seal (sticker o cinta que se rompe al abrir la bolsa): California lo exige para la comida lista para consumir que recoge un repartidor de app (AB 3336, desde 2021); en el resto, revisa la norma de tu ciudad o estado (check local rules) y las apps lo recomiendan",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0169",
+   "es": "Colocar en estantería de expedición (por rider/plataforma)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Empaquetado · B16"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup",
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch"
+   ],
+   "adaptar": "Estantería de expedición → driver pickup shelf, por app",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Verificar que pedido coincide con ticket antes de entregar",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Empaquetado · B17"
+   ],
+   "pistas": [
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "Entregar al rider y confirmar entrega en tablet",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Empaquetado · B18"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0172",
+   "es": "Contar stock de envases restante",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Empaquetado · B21"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Anotar packaging que hay que pedir",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Empaquetado · B22"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "Checklist Diario del Manager / Operador",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0182",
+   "es": "  ANTES DE ACTIVAR",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Revisar previsión de pedidos (historial mismo día semana pasada)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Diario Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Verificar equipo completo por turno",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "Briefing: platos 86, promos activas en cada marca, incidencias",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Diario Manager · B8"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "«86» / «86s» es jerga US: se queda",
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "86 → 86 (jerga US: «86 an item»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0187",
+   "es": "Verificar stock crítico de todas las marcas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B9"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Verificar que todas las tablets tienen batería y conexión",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Diario Manager · B10"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "  DURANTE OPERACIÓN",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Diario Manager · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "Monitorizar tiempos de preparación por marca",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B12"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Gestionar picos: redistribuir cocineros entre estaciones",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B13"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Resolver incidencias: pedidos incorrectos, riders que no llegan",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B14"
+   ],
+   "pistas": [
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0194",
+   "es": "Pausar marcas si hay saturación (mejor pausar que hacer mal)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Diario Manager · B15"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "pausar una marca → pause the brand (in the app)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0195",
+   "es": "Monitorizar ratings en tiempo real si hay quejas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B16"
+   ],
+   "pistas": [
+    "ratings / reseñas → ratings and reviews"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0196",
+   "es": "Gestionar reembolsos y contacto con soporte plataformas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B17"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "reembolsos → refunds; cancelaciones → cancellations"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0198",
+   "es": "Desactivar todas las marcas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Diario Manager · B19",
+    "04 · Gestor Plataformas · B18"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Revisar facturación del día por plataforma y marca",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B20"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "facturación → sales (o revenue); facturación de plataformas → app sales / payouts"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "Anotar incidencias: cancelaciones, reembolsos, tiempos altos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B21"
+   ],
+   "pistas": [
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times",
+    "reembolsos → refunds; cancelaciones → cancellations"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Hacer pedidos para mañana (proveedor principal + packaging)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B22"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Supervisar cierre de cocina",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Diario Manager · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0208",
+   "es": "Revisar ventas semana por marca y plataforma",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B6"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0210",
+   "es": "Analizar platos más vendidos por marca",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Revisar tiempo medio de preparación (objetivo <12 min)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal Manager · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0212",
+   "es": "Analizar ratings por marca en cada plataforma",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B9"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "ratings / reseñas → ratings and reviews"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0213",
+   "es": "Revisar tasa de cancelación y reembolsos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B10"
+   ],
+   "pistas": [
+    "reembolsos → refunds; cancelaciones → cancellations"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Evaluar food cost por marca",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B11"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Pedido semanal de ingredientes principales",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0217",
+   "es": "Pedido de packaging por marca (envases, bolsas, stickers)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal Manager · B14"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0219",
+   "es": "  PLATAFORMAS",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Semanal Manager · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Actualizar fotos de platos si hay cambios",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Revisar que la ficha de cada plato declara sus alérgenos y que coincide con la receta REAL: si ha cambiado un ingrediente o un proveedor, ha cambiado el alérgeno",
+   "grupo": "G1",
+   "palabras": 29,
+   "donde": [
+    "03 · Semanal Manager · B18"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); el gluten en sí no es uno de los 9 (el trigo sí) y la lactosa es una intolerancia, no un alérgeno: se recogen igual; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0222",
+   "es": "Revisar precios vs competencia en cada plataforma",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B19"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0223",
+   "es": "Activar/desactivar promos según rendimiento",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "Responder reseñas pendientes en todas las plataformas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B21"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "ratings / reseñas → ratings and reviews"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0227",
+   "es": "Verificar caducidades en almacén",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Semanal Manager · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "P&L por marca (ingresos - food cost - packaging - comisiones)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Mensual Manager · B6"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "Food cost por marca (objetivo 25-30%)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual Manager · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0235",
+   "es": "Comisiones plataformas: Glovo ~30%, Uber Eats ~30%, Just Eat ~25%",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Mensual Manager · B8"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "Glovo / Just Eat → DoorDash / Grubhub (Uber Eats se queda, con espacio)"
+   ],
+   "adaptar": "Comisiones US: DoorDash, Uber Eats y Grubhub cobran según el plan contratado (más o menos del 15 al 30 %); algunas ciudades las limitan (Nueva York, San Francisco): revisa tu contrato y la norma local. Sin cifras por plataforma",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0236",
+   "es": "Coste de packaging por pedido",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B9"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Coste laboral vs facturación total",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B10"
+   ],
+   "pistas": [
+    "facturación → sales (o revenue); facturación de plataformas → app sales / payouts"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Evaluar rentabilidad de cada marca virtual",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B12"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "  MARCAS",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Mensual Manager · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Evaluar si alguna marca debe eliminarse (baja rentabilidad)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual Manager · B14"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Evaluar lanzamiento de nueva marca virtual",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B15"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "Rotar menús estacionales por marca",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B16"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0245",
+   "es": "Actualizar fotos profesionales de platos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Revisión equipos: plancha, horno, freidora, cámaras",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Lavavajillas: filtros",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Mensual Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Campana: filtros",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Mensual Manager · B21"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "El equipo limpia los filtros de la campana; el conducto lo limpia el contratista (hoja «Quarterly & Annual», NFPA 96)",
+   "motivo": "adaptar",
+   "base_en": "Hood: filters",
+   "base_fuente": "burger"
+  },
+  {
+   "id": "c0250",
+   "es": "Extintor y botiquín",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Mensual Manager · B22"
+   ],
+   "adaptar": "OSHA 29 CFR 1910.157(e)(2): inspección visual MENSUAL de los extintores; botiquín (first aid kit) completo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Pedidos en curso por marca",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B6"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Pedidos con incidencia (reclamación, retraso)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Marcas pausadas y motivo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B8"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0258",
+   "es": "Ingredientes que se están agotando",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Packaging que queda poco",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B11"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Estado del aceite de la freidora y fecha del último cambio (el cambio se hace en frío, por debajo de 40 °C)",
+   "grupo": "G1",
+   "palabras": 22,
+   "donde": [
+    "03 · Handover Turno · B12"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Estado del aceite y fecha del último cambio; el cambio, como diga el fabricante de la freidora (sin cifra de temperatura del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Riders que no aparecieron",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B14"
+   ],
+   "pistas": [
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Quejas de clientes recibidas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Problemas técnicos: tablets, wifi, impresora",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B16"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "Tareas Diarias — Cocinero Multi-Marca",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Cocinero Multi-Marca · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0273",
+   "es": "Encender equipos de tu estación",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "Preparar mise en place de TODAS las marcas que cubres",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0276",
+   "es": "Verificar stock por marca en tu estación",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B8"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0277",
+   "es": "Montar inserts y línea de producción",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Cocinar según tickets (atender por orden de llegada)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B11"
+   ],
+   "pistas": [
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "Identificar marca del pedido antes de cocinar (receta correcta)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B12"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "Controlar tiempos: objetivo <10 min de preparación",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B13"
+   ],
+   "pistas": [
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "Emplatar en envase correcto de la marca",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B14"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "Pasar al empaquetador con ticket visible",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B15"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "Reponer mise en place entre picos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "Cubrir y refrigerar mise en place",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B18"
+   ],
+   "adaptar": "Tapada y a 41 °F o menos (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "Limpiar estación completa",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B19"
+   ],
+   "adaptar": "Limpiar la estación y luego sanitizarla con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "adaptar",
+   "base_en": "Clean the whole station",
+   "base_fuente": "bar"
+  },
+  {
+   "id": "c0288",
+   "es": "Anotar consumos por marca",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Multi-Marca · B20"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "Tareas Diarias — Empaquetador / Expedidor",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Empaquetador · A1"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "Montar estación de empaquetado por marca",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Empaquetador · B6"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Verificar stock: envases, bolsas, stickers, precintos por marca",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Empaquetador · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "precinto / sello de seguridad → tamper-evident seal (sticker)",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Verificar impresora de tickets",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Empaquetador · B8"
+   ],
+   "pistas": [
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Organizar estantería de expedición por plataforma",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Empaquetador · B9"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "Recibir plato del cocinero y verificar vs ticket",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Empaquetador · B11"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0295",
+   "es": "Empaquetar en envase correcto de la marca",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Empaquetador · B12"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0296",
+   "es": "Añadir cubiertos, servilleta, salsas extra",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Empaquetador · B13"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0297",
+   "es": "Pegar sticker de marca + ticket",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Empaquetador · B14"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0298",
+   "es": "Precintar bolsa con sello de seguridad",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Empaquetador · B15"
+   ],
+   "pistas": [
+    "precinto / sello de seguridad → tamper-evident seal (sticker)"
+   ],
+   "adaptar": "Precinto de seguridad → tamper-evident seal (sticker o cinta que se rompe al abrir la bolsa): California lo exige para la comida lista para consumir que recoge un repartidor de app (AB 3336, desde 2021); en el resto, revisa la norma de tu ciudad o estado (check local rules) y las apps lo recomiendan",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0299",
+   "es": "Colocar en estantería por plataforma/rider",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Empaquetador · B16"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup",
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0300",
+   "es": "Entregar al rider verificando número de pedido",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Empaquetador · B17"
+   ],
+   "pistas": [
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0301",
+   "es": "Limpiar estación",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Empaquetador · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Inventario de packaging restante",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Empaquetador · B20"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "Anotar lo que hay que pedir",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Empaquetador · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "Tareas Diarias — Gestor de Plataformas / Tablets",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Gestor Plataformas · A1"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "gestor de plataformas → app manager (delivery apps and tablets); gestor autorizado → licensed hauler / recycler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "Encender tablets, verificar wifi y batería",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Gestor Plataformas · B6"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "Activar todas las marcas en todas las plataformas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Gestor Plataformas · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps); tablets → order tablets",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "Verificar que menús están actualizados",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Gestor Plataformas · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "Activar promos del día si aplica",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Gestor Plataformas · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Marcar como 86 los platos que no haya stock",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Gestor Plataformas · B10"
+   ],
+   "pistas": [
+    "«86» / «86s» es jerga US: se queda",
+    "86 → 86 (jerga US: «86 an item»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Aceptar pedidos en tiempo (<30s)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Gestor Plataformas · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Monitorizar tiempos de preparación estimados",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Gestor Plataformas · B13"
+   ],
+   "pistas": [
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Gestionar incidencias: cancelaciones, cambios, reembolsos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Gestor Plataformas · B14"
+   ],
+   "pistas": [
+    "reembolsos → refunds; cancelaciones → cancellations"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Pausar marcas si hay saturación",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Gestor Plataformas · B15"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "pausar una marca → pause the brand (in the app)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Comunicar al equipo los pedidos prioritarios",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Gestor Plataformas · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Revisar resumen de pedidos del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Gestor Plataformas · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Anotar incidencias para el manager",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Gestor Plataformas · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "Tareas Diarias — Encargado/a de Operaciones",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado Operaciones · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Abrir local y desactivar alarma",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado Operaciones · B6"
+   ],
+   "pistas": [
+    "el local → the kitchen / the site (nunca «venue» ni «restaurant» para el local)"
+   ],
+   "motivo": "corregida: la cafetería dice «the shop»: en una ghost kitchen es la cocina (the kitchen / the site)",
+   "base_en": "Open the shop and disarm the alarm",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0321",
+   "es": "Briefing: promos, 86s, incidencias, previsión pedidos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado Operaciones · B8"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "«86» / «86s» es jerga US: se queda",
+    "86 → 86 (jerga US: «86 an item»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Supervisar apertura de cocina y empaquetado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado Operaciones · B9"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0323",
+   "es": "Supervisar flujo: tickets → cocina → empaquetado → rider",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado Operaciones · B11"
+   ],
+   "pistas": [
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)",
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0324",
+   "es": "Redistribuir personal si hay pico en una marca",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Encargado Operaciones · B12"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Resolver problemas con riders/plataformas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado Operaciones · B13"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Controlar calidad: verificar platos antes de empaquetar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado Operaciones · B14"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "Cuadrar facturación por marca y plataforma",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado Operaciones · B17"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "facturación → sales (o revenue); facturación de plataformas → app sales / payouts",
+    "cuadrar → reconcile / balance"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0329",
+   "es": "Cerrar local",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado Operaciones · B19"
+   ],
+   "pistas": [
+    "el local → the kitchen / the site (nunca «venue» ni «restaurant» para el local)"
+   ],
+   "motivo": "contexto: restaurant",
+   "base_en": "Close the restaurant",
+   "base_fuente": "burger"
+  },
+  {
+   "id": "c0338",
+   "es": "▸ La hoja «Trimestral y Anual» recoge el mantenimiento que se CONTRATA y que se pide en una inspección: DDD, conductos de extracción, extintores y BIE, instalación de gas, legionela, frigorista, retirada del aceite usado y del cartón de packaging, seguro y facturación.",
+   "grupo": "G2",
+   "palabras": 42,
+   "donde": [
+    "05 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)",
+    "facturación → sales (o revenue); facturación de plataformas → app sales / payouts"
+   ],
+   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y extinción de la campana, gas, legionela, frío, aceite usado, cartón y plástico del packaging, calibración de termómetros, seguros, contratos de las apps y sales tax. Sin DDD, BIE, Verifactu ni facturación española",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0339",
+   "es": "▸ Anota el número de parte en la columna verde y firma cuando la empresa haya venido; en la columna «Cadencia» tienes cada cuánto toca cada revisión.",
+   "grupo": "G2",
+   "palabras": 26,
+   "donde": [
+    "05 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Cadencia",
+     "en": "Frequency"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0340",
+   "es": "▸ Al pie de «FIFO Semanal» tienes una tabla editable de vida útil en congelación por familia: una regla única para todo el congelador o tiras producto bueno o das por bueno producto pasado.",
+   "grupo": "G2",
+   "palabras": 33,
+   "donde": [
+    "05 · Instrucciones · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "FIFO Semanal",
+     "en": "Weekly FIFO Check"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0342",
+   "es": "Inventario Diario — Dark Kitchen Multi-Marca",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario Diario · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Dark Kitchen»; dark kitchen → ghost kitchen (o cloud kitchen / virtual kitchen / delivery-only kitchen; NUNCA «dark kitchen»)",
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0343",
+   "es": "Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Noche    Responsable: ________________",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Inventario Diario · A2"
+   ],
+   "pistas": [
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»",
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "motivo": "corregida: la pizzería dice «☐ AM ☐ Mid ☐ PM»: el ES trae DOS turnos (☐ AM ☐ PM) y el responsable (Assigned to)",
+   "base_en": "Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Manager: ________________",
+   "base_fuente": "pizza"
+  },
+  {
+   "id": "c0351",
+   "es": "Pollo (pechuga, muslo)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0353",
+   "es": "Carne picada / patties",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0354",
+   "es": "Salmón / pescado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "Tofu / proteína vegetal",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0356",
+   "es": "  BASES Y CARBOHIDRATOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0357",
+   "es": "Arroz (blanco, sushi, integral)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A11"
+   ],
+   "pistas": [
+    "poke, sushi, tartare, ceviche (sin tildes en EN)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0358",
+   "es": "Pasta (spaghetti, penne)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0359",
+   "es": "Pan burger / wraps / pita",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0361",
+   "es": "Quinoa",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0363",
+   "es": "Lechuga / mix hojas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0367",
+   "es": "Pepino",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "Edamame",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "  SALSAS Y CONDIMENTOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0370",
+   "es": "Salsa soja",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0372",
+   "es": "Teriyaki",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Sriracha",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0374",
+   "es": "Mayo casera",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "Aceite oliva",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0377",
+   "es": "  PACKAGING — MARCA 1",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "Envases principales (bowls/cajas)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A30"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "Bolsas con logo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A31",
+    "05 · Inventario Diario · A36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "Stickers marca",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A32",
+    "05 · Inventario Diario · A37"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Precintos seguridad",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A33",
+    "05 · Inventario Diario · A38"
+   ],
+   "pistas": [
+    "precinto / sello de seguridad → tamper-evident seal (sticker)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "  PACKAGING — MARCA 2",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "Envases principales",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A35"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "  PACKAGING GENÉRICO",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Cubiertos desechables",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A40"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Salsas en sobre",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A42"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "Bolsas extra grandes",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A43"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Limpiar interior cámaras frigoríficas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "Desmontar y limpiar campana y filtros",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B7"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "El equipo desmonta y desengrasa los FILTROS de la campana (no la campana); el conducto lo limpia el contratista (hoja «Quarterly & Annual», NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0397",
+   "es": "Desinfectar tablas de corte",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B9"
+   ],
+   "adaptar": "Lavar, aclarar y sanitizar las tablas de corte con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "adaptar",
+   "base_en": "Cutting boards: wash, rinse and sanitize (approved sanitizer, test strip; FDA 4-501.114)",
+   "base_fuente": "pizza"
+  },
+  {
+   "id": "c0398",
+   "es": "Limpiar freidora a fondo",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B10"
+   ],
+   "adaptar": "Limpieza a fondo de la freidora (boil-out) como diga su fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0400",
+   "es": "  PACKAGING Y ALMACÉN",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0401",
+   "es": "Organizar almacén de packaging por marca",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B13"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0402",
+   "es": "Limpiar estanterías de expedición",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B14"
+   ],
+   "pistas": [
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0403",
+   "es": "Verificar que no hay packaging dañado o caducado",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Limpieza Semanal · B15"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0406",
+   "es": "Verificar fechas de proteínas (fresco max 3 días)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · FIFO Semanal · B6"
+   ],
+   "adaptar": "Proteínas frescas: 3 días como máximo (criterio del kit) y nunca más allá de la fecha del proveedor",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0407",
+   "es": "Revisar salsas caseras abiertas (max 5 días)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · FIFO Semanal · B7"
+   ],
+   "adaptar": "Salsas caseras: 5 días como máximo (criterio del kit; el date marking de la FDA permite 7 contando el de preparación, 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "Revisar vegetales cortados (max 2 días)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B8"
+   ],
+   "adaptar": "Vegetales cortados: 2 días como máximo (criterio del kit, dentro de los 7 del date marking de la FDA, 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0412",
+   "es": "Revisar arroces y pasta: fecha, humedad",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "Revisar salsas industriales: fecha",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Verificar el estado del aceite de la freidora (color, olor, humo) y anotar la fecha del último cambio; si hay que cambiarlo, en frío: por debajo de 40 °C, nunca en caliente",
+   "grupo": "G2",
+   "palabras": 32,
+   "donde": [
+    "05 · FIFO Semanal · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Color, olor y humo; anotar la fecha del último cambio; el cambio, como diga el fabricante de la freidora (sin cifra de temperatura del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Pollo y pavo crudos en piezas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Congélalos el día que llegan, no el día que caducan en fresco",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "05 · FIFO Semanal · D27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0422",
+   "es": "Carne picada y patties de hamburguesa",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Toda la superficie está expuesta: se enrancia mucho antes que una pieza entera",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · FIFO Semanal · D28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "Pescado azul (salmón, atún)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "La grasa se enrancia aunque esté congelado; si es para servir crudo, la congelación cuenta además como tratamiento anti-ANISAKIS",
+   "grupo": "G2",
+   "palabras": 20,
+   "donde": [
+    "05 · FIFO Semanal · D29"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "La congelación solo cuenta como destrucción de parásitos si se hace a −4 °F o menos durante 7 días (o a −31 °F o menos hasta sólido + 15 h), con registro (FDA Food Code 3-402.11): un congelador normal a 0 °F no llega; sin «anisakis»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0427",
+   "es": "Pescado blanco y marisco ya cocido",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Congélalo en porciones planas: se descongela antes y con menos pérdida",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · FIFO Semanal · D30"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0430",
+   "es": "Salsas, fondos y caldos propios",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Arroz y pasta ya cocidos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0435",
+   "es": "Congelar el mismo día en porciones planas y regenerar por encima de 75 °C: el arroz cocido templado es el clásico de la toxiinfección",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "05 · FIFO Semanal · D32"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Congelar el mismo día en porciones planas; para servirlo caliente, recalentar a 165 °F en 2 h como máximo (FDA Food Code 3-403.11). El arroz cocido templado es el clásico de la intoxicación (Bacillus cereus)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0436",
+   "es": "Pan de burger, wraps y pita",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "Vegetales que se sirven crudos (aguacate, pepino, lechuga)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · FIFO Semanal · B34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0441",
+   "es": "Se deshacen al descongelar: en un bowl se ven, así que se piden frescos y se rota con FIFO",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "05 · FIFO Semanal · D34"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0442",
+   "es": "Revisión plancha/grill",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0443",
+   "es": "Cambio completo del aceite de la freidora, SIEMPRE por debajo de 40 °C y nunca en caliente; el usado se entrega al gestor autorizado y se archiva el documento",
+   "grupo": "G2",
+   "palabras": 29,
+   "donde": [
+    "05 · Mantenimiento Mensual · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "gestor de plataformas → app manager (delivery apps and tablets); gestor autorizado → licensed hauler / recycler"
+   ],
+   "adaptar": "Cambio completo del aceite y limpieza a fondo (boil-out) filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas; el usado, al contenedor del reciclador (used cooking oil recycler). Sin cifra de temperatura del kit; archiva el recibo de la recogida",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0444",
+   "es": "Lavavajillas: filtros, sal",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B8"
+   ],
+   "adaptar": "Lavavajillas: filtros y niveles de químicos (la sal descalcificadora, solo si hay descalcificador)",
+   "motivo": "adaptar",
+   "base_en": "Dish machine: filters and chemical levels (water softener salt only if you have a softener)",
+   "base_fuente": "burger"
+  },
+  {
+   "id": "c0445",
+   "es": "Campana: motor, filtros",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B9"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0446",
+   "es": "Cámaras: juntas, termostato",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B10"
+   ],
+   "pistas": [
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0447",
+   "es": "  TECNOLOGÍA",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Mantenimiento Mensual · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Actualizar apps de plataformas en tablets",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B12"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0449",
+   "es": "Verificar estado de tablets (batería, pantalla)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B13"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0450",
+   "es": "Verificar impresora de tickets (tinta, papel)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B14"
+   ],
+   "pistas": [
+    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0451",
+   "es": "Verificar wifi: velocidad, estabilidad",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mantenimiento Mensual · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0453",
+   "es": "Extintor: presión, caducidad",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B17"
+   ],
+   "adaptar": "Inspección visual mensual (OSHA 1910.157(e)(2)): manómetro en verde, pasador y precinto, acceso libre, etiqueta firmada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0488",
+   "es": "Preparación Pico Viernes-Sábado Noche",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Pico Viernes Noche · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0489",
+   "es": "  PREPARACIÓN (JUEVES)",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Pico Viernes Noche · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0490",
+   "es": "Pedido extra de ingredientes principales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Pico Viernes Noche · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0492",
+   "es": "Pedido extra de packaging (todas las marcas)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Pico Viernes Noche · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0493",
+   "es": "Confirmar equipo reforzado para viernes-sábado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Pico Viernes Noche · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0494",
+   "es": "Pre-elaborar salsas y bases en mayor cantidad",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Pico Viernes Noche · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0496",
+   "es": "  VIERNES OPERACIÓN",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Pico Viernes Noche · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0497",
+   "es": "Mise en place 50% más de lo normal",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Pico Viernes Noche · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0499",
+   "es": "Activar promos de fin de semana en plataformas",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Pico Viernes Noche · B12"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0501",
+   "es": "Gestionar cola de pedidos sin comprometer tiempos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Pico Viernes Noche · B13"
+   ],
+   "pistas": [
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0502",
+   "es": "Pausar marcas menos rentables si hay saturación extrema",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Pico Viernes Noche · B14"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "pausar una marca → pause the brand (in the app)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0503",
+   "es": "Noche de Fútbol / Evento Deportivo",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · A1"
+   ],
+   "pistas": [
+    "fútbol → (American) football: NFL Sundays, Monday Night Football, college football Saturdays"
+   ],
+   "adaptar": "Fútbol → fútbol americano (NFL y el universitario): «Game Night / Big Game — Peak Delivery»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0507",
+   "es": "Stock doble de los platos más pedidos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Noche Fútbol · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0509",
+   "es": "Packaging extra (se duplican pedidos)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B7"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0511",
+   "es": "Reforzar equipo: cocinero y empaquetador extra",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Fútbol · B8"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0513",
+   "es": "Activar promos combo en plataformas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B9"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0514",
+   "es": "Producción a máximo rendimiento",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Noche Fútbol · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0515",
+   "es": "Empaquetado rápido: no sacrificar precinto ni verificación",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Noche Fútbol · B12"
+   ],
+   "pistas": [
+    "precinto / sello de seguridad → tamper-evident seal (sticker)",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0516",
+   "es": "Monitorizar tiempos — si superan 15 min, pausar marca menos rentable",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Noche Fútbol · B13"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times",
+    "pausar una marca → pause the brand (in the app)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0517",
+   "es": "Lanzamiento de Nueva Marca Virtual",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Lanzamiento Marca · A1"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0518",
+   "es": "  PRE-LANZAMIENTO (2 SEMANAS)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Lanzamiento Marca · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0519",
+   "es": "Definir menú: 8-12 platos máximo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Lanzamiento Marca · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0521",
+   "es": "Diseñar packaging: envases, stickers, bolsas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Lanzamiento Marca · B7"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0522",
+   "es": "Crear perfil en plataformas: fotos, descripciones, precios",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Lanzamiento Marca · B8"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "adaptar": "Crear el perfil de la marca en cada app; añade: cada cocina lleva su permiso sanitario (health permit); las marcas virtuales suelen ir con el de la cocina, pero algunas ciudades piden comunicarlas o registrarlas, y el nombre comercial de cada marca (DBA) se registra si tu estado lo pide: compruébalo con tu departamento de salud (check local rules)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0524",
+   "es": "Declarar los 14 alérgenos de cada plato en la ficha de la plataforma ANTES de activar la marca: en venta a distancia la información tiene que estar disponible antes de que el cliente compre",
+   "grupo": "G2",
+   "palabras": 34,
+   "donde": [
+    "06 · Lanzamiento Marca · B9"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "adaptar": "El cliente no puede preguntar en un mostrador: los alérgenos de cada plato (los 9 principales de EE. UU.; en UK, los 14), en la ficha del plato de cada app. En EE. UU. no hay una norma federal que lo exija a la comida de restaurante, pero las apps tienen el campo y algunos estados o ciudades piden avisos propios (check local rules); en UK es obligatorio en la venta a distancia: antes de comprar y al entregar; y, si un plato lleva pescado crudo o poco hecho (poke, sushi), el aviso al consumidor en su ficha (FDA Food Code 3-603.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0525",
+   "es": "Pedir stock inicial de packaging",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Lanzamiento Marca · B10"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0526",
+   "es": "Formar al equipo en las recetas de la nueva marca",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Lanzamiento Marca · B11"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0527",
+   "es": "Test de producción: cocinar cada plato, cronometrar",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Lanzamiento Marca · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0528",
+   "es": "  LANZAMIENTO",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · Lanzamiento Marca · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0529",
+   "es": "Activar marca en plataformas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Lanzamiento Marca · B14"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0530",
+   "es": "Activar promo de lanzamiento (descuento o envío gratis)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Lanzamiento Marca · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0531",
+   "es": "Monitorizar primeros pedidos: calidad, tiempo, feedback",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Lanzamiento Marca · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0533",
+   "es": "Ajustar menú según datos de primera semana",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Lanzamiento Marca · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0535",
+   "es": "Navidad y Fin de Año — Pico Estacional",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad Fin Año · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0536",
+   "es": "Stock extra para semana con menos entregas de proveedores",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Navidad Fin Año · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0538",
+   "es": "Menú especial navideño por marca",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad Fin Año · B7"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0540",
+   "es": "Packaging navideño si aplica",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Navidad Fin Año · B8"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0541",
+   "es": "Planificar horarios especiales (24, 25, 31 Dic, 1 Ene)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Navidad Fin Año · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0542",
+   "es": "  OPERACIÓN",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · Navidad Fin Año · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0543",
+   "es": "Activar menús navideños en plataformas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad Fin Año · B11"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0545",
+   "es": "Stock verificado para cada servicio de la semana",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Navidad Fin Año · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0547",
+   "es": "Gestionar volumen alto de pedidos Nochevieja",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad Fin Año · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0593",
+   "es": "▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "08 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day."
+  },
+  {
+   "id": "c0594",
+   "es": "▸ El detalle por área (cocina) va en 01-apertura-cierre.xlsx: no repitas el trabajo, cada fichero cubre un nivel distinto.",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "08 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-ghost-kitchen-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0601",
+   "es": "Apertura del Negocio — Dark Kitchen",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Apertura del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Dark Kitchen»; dark kitchen → ghost kitchen (o cloud kitchen / virtual kitchen / delivery-only kitchen; NUNCA «dark kitchen»)"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Opening Checklist"
+  },
+  {
+   "id": "c0609",
+   "es": "Abrir persianas / puerta principal",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B8"
+   ],
+   "adaptar": "Persianas → security gate / shutters; añade: salidas de emergencia despejadas y señales de salida (exit signs) iluminadas",
+   "motivo": "corregida: ronda 1 m15 del bar: + salidas de emergencia despejadas y señales de salida",
+   "base_en": "Raise security gate and open front door"
+  },
+  {
+   "id": "c0610",
+   "es": "Colocar la señalización del punto de recogida de riders y el cartel con el horario de cada marca",
+   "grupo": "G2",
+   "palabras": 18,
+   "donde": [
+    "08 · Apertura del Negocio · B9"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "adaptar": "Punto de recogida de riders → driver pickup (los repartidores de las apps); el cartel con el horario de cada marca",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0631",
+   "es": "Cierre del Negocio — Dark Kitchen",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Cierre del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Dark Kitchen»; dark kitchen → ghost kitchen (o cloud kitchen / virtual kitchen / delivery-only kitchen; NUNCA «dark kitchen»)"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Closing Checklist"
+  },
+  {
+   "id": "c0747",
+   "es": "▸ El manager o el gestor de plataformas rellena antes del briefing",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B01 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "gestor de plataformas → app manager (delivery apps and tablets); gestor autorizado → licensed hauler / recycler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0753",
+   "es": "PEDIDOS Y PREVISIÓN",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0754",
+   "es": "Pedidos previstos (mismo día de la semana pasada):",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0755",
+   "es": "Marcas activas hoy y horario de cada una:",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing · B6"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0756",
+   "es": "Promos activas por plataforma:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing · B7"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0757",
+   "es": "Eventos que mueven la demanda (partido, festivo, lluvia):",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0758",
+   "es": "Saturación estimada de la cocina:",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0760",
+   "es": "Plato destacado de la marca 1:",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing · B12"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0761",
+   "es": "Plato destacado de la marca 2:",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing · B13"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0762",
+   "es": "Extra o postre del día:",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0764",
+   "es": "Cambios en el menú de las plataformas:",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing · B16"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0766",
+   "es": "Alérgenos a vigilar hoy (recetas o proveedores que han cambiado):",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Briefing · B19"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0768",
+   "es": "Platos que NO se pueden servir sin un alérgeno y hay que rechazar:",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B01 · Briefing · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0771",
+   "es": "Personal de empaquetado y expedición:",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing · B25"
+   ],
+   "pistas": [
+    "estantería de expedición → driver pickup shelf; expedición → pickup / dispatch",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0772",
+   "es": "Gestor de plataformas y tablets:",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing · B26"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "gestor de plataformas → app manager (delivery apps and tablets); gestor autorizado → licensed hauler / recycler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0782",
+   "es": "▸ Consulta las fechas clave de hostelería mes a mes",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ Check the key restaurant dates month by month"
+  },
+  {
+   "id": "c0786",
+   "es": "Calendario Anual — Fechas Clave de Hostelería",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · A1"
+   ],
+   "motivo": "contexto: Restaurants",
+   "base_en": "Holiday Calendar — Key Dates for Restaurants"
+  },
+  {
+   "id": "c0793",
+   "es": "Decidir si se abre; si se cierra, pausar las marcas en TODAS las plataformas y publicar el horario con 1 semana",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "B02 · Calendario Anual · C5"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "pausar una marca → pause the brand (in the app)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0796",
+   "es": "Roscón y menú familiar para llevar, pico de mediodía",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Calendario Anual · C6"
+   ],
+   "adaptar": "Evento EN: «Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. Uno de los días con más pedidos a domicilio del año en EE. UU.: pedidos de grupo y anticipados (party orders), combos para compartir, stock y packaging extra, tiempos de preparación de cada app ajustados al pico y refuerzo del empaquetado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0799",
+   "es": "Menú para dos en formato delivery, packaging cuidado y refuerzo de la cena",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C7"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0802",
+   "es": "Menú temático en plataformas y promo de fin de semana",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C8"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0805",
+   "es": "Menú para llevar de sobremesa familiar, promo de mediodía en cada marca",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C9"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "Evento EN: «Lent Fridays + Easter Sunday (varies)». Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas = las de Semana Santa del ES (fila 10), adaptadas: los viernes de Cuaresma, opción de pescado o vegetal (meatless Fridays) en las marcas que encajen; el domingo de Pascua, decidir el horario y publicarlo en cada app. Sin bacalao, potaje ni torrijas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0808",
+   "es": "Menú de vigilia por marca (bacalao, potaje, torrijas) y refuerzo del mediodía",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C10"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day + March Madness». Sustituye a Semana Santa (pasa a la fila 9). Tareas: un especial de St. Patrick en las apps; los partidos de March Madness (marzo-abril) suben el delivery de tarde y de fin de semana: combos para compartir, stock, packaging y turnos extra. Sin alcohol (la cocina no lo vende)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0810",
+   "es": "Ajustar producción y turnos a la baja, reforzar promos de cena y de fin de semana",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario Anual · C11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0813",
+   "es": "Bandejas y menús de grupo para recoger o entregar, precio por persona y packaging para transporte",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario Anual · C12"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "adaptar": "Evento EN: «May 5 — Cinco de Mayo». Sustituye a las comuniones (sus tareas pasan a la fila 15, graduaciones). Tareas: especiales mexicanos en las marcas que encajen (tacos, bowls), promo en las apps y refuerzo de la cena. Sin margaritas ni alcohol",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0816",
+   "es": "Servicio de festivo: confirmar riders y horario publicado por marca",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C13"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "adaptar": "Evento EN: «2nd Sunday — Mother's Day». Sustituye al 1 de mayo (el Labor Day de EE. UU. va en septiembre, fila 19). Tareas = las del Día de la Madre del ES (fila 14): menú especial para llevar, packaging cuidado y refuerzo del pico de mediodía",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0818",
+   "es": "Menú especial para llevar, packaging cuidado y refuerzo del pico de mediodía",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C14"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "adaptar": "Evento EN: «Memorial Day (last Monday)». Sustituye al Día de la Madre (pasa a la fila 13). Tareas = las de «Inicio temporada alta» del ES (fila 15): empieza el verano, refuerzo de plantilla y stock de verano, revisar los tiempos de preparación del pico; decidir el horario del festivo y publicarlo en cada app",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0821",
+   "es": "Refuerzo de plantilla y stock de verano; revisar tiempos de preparación en pico",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C15"
+   ],
+   "pistas": [
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
+   ],
+   "adaptar": "Evento EN: «Graduation season». Sustituye a «Inicio temporada alta» (pasa a la fila 14). Tareas = las de las comuniones del ES (fila 12): bandejas y menús de grupo para recoger o entregar (graduation parties), precio por persona y packaging para el transporte",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0823",
+   "es": "Menú especial de noche, refuerzo del pico tardío y de la salida de riders",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "B02 · Calendario Anual · C16"
+   ],
+   "pistas": [
+    "rider → delivery driver (los repartidores de las apps); recogida de riders → driver pickup"
+   ],
+   "adaptar": "Evento EN: «3rd Sunday — Father's Day». Sustituye a San Juan. Tareas = las del Día del Padre del ES (fila 9): menú para llevar de comida familiar y promo de mediodía en cada marca",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0826",
+   "es": "Personal extra, horarios ampliados y menú de verano por marca",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C17"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "Evento EN: «Jul 4 — Independence Day». Sustituye a la fila de temporada alta (sus tareas pasan a la fila 18). Tareas: decidir el horario (muchos cierran o abren solo de día) y publicarlo en cada app; pedidos grandes para las fiestas (party orders) con hora de entrega",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0830",
+   "es": "Servicio de festivo con equipo reducido: revisar qué marcas se mantienen activas y cuáles se pausan",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario Anual · C18"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "Evento EN: «Summer peak season». Sustituye a la Asunción (el 15 de agosto no es festivo en EE. UU.). Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado y menú de verano por marca",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0833",
+   "es": "Menú de otoño por marca y promo de mediodía para oficinas",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C19"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand"
+   ],
+   "adaptar": "Evento EN: «Labor Day (1st Monday) + football season». Sustituye a la vuelta al cole. Tareas = las del ES (menú de otoño por marca y promo de mediodía para oficinas, sin el calco «vuelta a la rutina»), más combos para el fútbol americano (jueves, domingo y lunes por la noche y el universitario del sábado)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0836",
+   "es": "Menú y packaging temáticos, promo de noche en plataformas",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Calendario Anual · C20"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0839",
+   "es": "Festivo de mediodía familiar: pico temprano y stock para dos días seguidos",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C21"
+   ],
+   "adaptar": "Evento EN: «Thanksgiving (4th Thursday) + Black Friday». Sustituye a Todos los Santos. Decidir si se abre el jueves (muchos cierran) y, si se cierra, pausar las marcas en TODAS las apps; el viernes (Black Friday), refuerzo del mediodía y stock para dos días seguidos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0841",
+   "es": "Reforzar turnos y stock, vigilar los tiempos de preparación y el embalaje que aguanta el traslado",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario Anual · C22"
+   ],
+   "pistas": [
+    "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0844",
+   "es": "Tres festivos seguidos: stock, refuerzo de turnos y horario publicado en cada plataforma",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C23"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "adaptar": "Evento EN: «Holiday shopping weekends». Sustituye al puente de la Constitución (en EE. UU. no existe). Del Black Friday a Nochebuena, los fines de semana de compras y de frío: stock, refuerzo de turnos y horario publicado en cada app",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0846",
+   "es": "Menú cerrado por persona, packaging para transporte, confirmación con antelación y turnos extra",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C24"
+   ],
+   "pistas": [
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0848",
+   "es": "Menú navideño por marca, packaging especial y stock para la semana con menos entregas de proveedor",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario Anual · C25"
+   ],
+   "pistas": [
+    "marca → brand (virtual brand); multi-marca → multi-brand",
+    "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
+   ],
+   "adaptar": "Evento EN: «Dec 24–25 — Christmas». Decidir si se abre el día de Navidad (muchos cierran) y, si se cierra, pausar las marcas en TODAS las apps y publicar el horario; menú de temporada por marca, packaging especial y stock para la semana con menos entregas de proveedor",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0850",
+   "es": "Menú de gala para llevar, cierre temprano de pedidos y horario avisado en cada plataforma",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "B02 · Calendario Anual · C26"
+   ],
+   "pistas": [
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Menú de Nochevieja para pedir a domicilio (sin el calco «menú de gala»), cierre temprano de pedidos y horario avisado en cada app. Sin uvas, cava ni alcohol",
+   "motivo": "nueva"
+  }
+ ]
+}
