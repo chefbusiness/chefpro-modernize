@@ -62,7 +62,7 @@ E9     : 9:00 AM
 A10    : 5
 B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
 C10    : Kitchen
-D10    : Pizza maker
+D10    : Shift manager
 E10    : 9:00 AM
 A11    :   OVEN
 A12    : 6
@@ -86,7 +86,7 @@ C15    : Kitchen
 D15    : Pizza maker
 E15    : 10:00 AM
 A16    : 10
-B16    : Check oven temp: 750–840 °F (Neapolitan) — log reading: ____ °F
+B16    : Check oven temp against your oven's target (wood-fired Neapolitan 750–840 °F; gas deck, conveyor or electric: per your recipe and manufacturer) — target: ____ °F · reading: ____ °F
 C16    : Kitchen
 D16    : Pizza maker
 E16    : 10:45 AM
@@ -153,7 +153,7 @@ D29    : Pizza maker
 E29    : 11:00 AM
 A30    :   STOCK & CHECKS
 A31    : 23
-B31    : Check flour stock (00, whole wheat)
+B31    : Check flour stock (00, high-gluten or bread flour, whole wheat)
 C31    : Storage
 D31    : Line cook
 E31    : 10:00 AM
@@ -328,7 +328,7 @@ C9     : Kitchen
 D9     : Line cook
 E9     : 10:30 PM
 A10    : 5
-B10    : Date-mark everything: ready-to-eat food keeps 7 days at 41 °F, prep day = day 1 (FDA 3-501.17)
+B10    : Date-mark ready-to-eat TCS food kept over 24 h: 7 days max at 41 °F or below, prep day = day 1 (FDA 3-501.17)
 C10    : Kitchen
 D10    : Line cook
 E10    : 10:30 PM
@@ -339,17 +339,17 @@ C12    : Kitchen
 D12    : Pizza maker
 E12    : 10:30 PM
 A13    : 7
-B13    : Remove ash only when cold (at close, or first thing next morning) into a lidded METAL container, never trash or plastic (NFPA 96)
+B13    : Ash: never take it out hot at close; remove it cold, usually first thing next morning before lighting, into a closed METAL container kept at least 3 ft from the oven, never trash or plastic (NFPA 96)
 C13    : Kitchen
 D13    : Pizza maker
-E13    : 11:00 PM
+E13    : Next AM
 A14    : 8
 B14    : Brush the oven deck clean
 C14    : Kitchen
 D14    : Pizza maker
 E14    : 11:00 PM
 A15    : 9
-B15    : Turn off the exhaust hood (wood-fired oven: not while fire or embers remain; follow the manufacturers)
+B15    : Turn off the exhaust hood (wood-fired oven: not while fire or embers remain; follow the oven and hood manufacturers' instructions)
 C15    : Kitchen
 D15    : Line cook
 E15    : 11:00 PM
@@ -543,7 +543,7 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   BEFORE SERVICE
 A6     : 1
-B6     : Check oven temp: 750–840 °F Neapolitan / 570 °F Roman — log reading: ____ °F
+B6     : Check oven temp: 750–840 °F Neapolitan / 570 °F Roman; gas deck or conveyor: your recipe's target — log reading: ____ °F
 C6     : Oven
 D6     : Pizza maker
 E6     : 11:00 AM
@@ -574,7 +574,7 @@ C12    : Kitchen
 D12    : Pizza maker
 E12    : —
 A13    : 7
-B13    : Watch bake time: 60–90 sec Neapolitan / 3–5 min Roman
+B13    : Watch bake time: 60–90 sec Neapolitan / 3–5 min Roman; deck or conveyor: your recipe's time
 C13    : Oven
 D13    : Pizza maker
 E13    : —
@@ -584,7 +584,7 @@ C14    : Oven
 D14    : Pizza maker
 E14    : —
 A15    : 9
-B15    : Check doneness: leopard spotting, not burnt
+B15    : Check doneness: browned rim and crisp bottom (leopard spotting on Neapolitan), not burnt
 C15    : Oven
 D15    : Pizza maker
 E15    : —
@@ -641,7 +641,7 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   BEFORE SERVICE
 A6     : 1
-B6     : Set up make line inserts: tomato sauce, mozzarella, toppings — all at 41 °F or below (FDA 3-501.16)
+B6     : Set up make line inserts: tomato sauce, mozzarella, toppings — all at 41 °F or below (FDA 3-501.16); don't fill above the cold line and keep the lid closed between orders — log reading: ____ °F
 C6     : Kitchen
 D6     : Line cook
 E6     : 11:00 AM
@@ -958,7 +958,7 @@ D9     : Manager
 E9     : Monday
 A10    :   ORDERS
 A11    : 5
-B11    : Weekly flour order (00, semolina)
+B11    : Weekly flour order (00 or high-gluten, semolina)
 C11    : Office
 D11    : Manager
 E11    : Monday
@@ -1072,7 +1072,7 @@ C13    : Kitchen
 D13    : Technician
 E13    : Monthly
 A14    : 8
-B14    : Dish machine: filters, rinse aid, softener salt
+B14    : Dish machine: filters, rinse aid and chemical levels (water softener salt only if you have a softener)
 C14    : Kitchen
 D14    : Manager
 E14    : Monthly
@@ -1296,10 +1296,10 @@ C20    : Kitchen
 D20    : Pizza maker
 E20    : 10:30 PM
 A21    : 14
-B21    : Remove oven ash when cold into a lidded METAL container, never trash or plastic (NFPA 96)
+B21    : Ash: never take it out hot at close; remove it cold, usually first thing next morning before lighting, into a closed METAL container kept at least 3 ft from the oven, never trash or plastic (NFPA 96)
 C21    : Oven
 D21    : Pizza maker
-E21    : 11:00 PM
+E21    : Next AM
 A28    : Tasks done:
 D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
 E28    : of
@@ -1408,7 +1408,7 @@ A6     : 1
 B6     : Open the shop and disarm the alarm
 C6     : General
 D6     : Shift manager
-E6     : 10:00 AM
+E6     : 9:00 AM
 A7     : 2
 B7     : Check the full team is in
 C7     : General
@@ -1467,7 +1467,7 @@ C19    : Office
 D19    : Shift manager
 E19    : 10:30 PM
 A20    : 13
-B20    : Close the shop: alarm, lights, gas
+B20    : Close the shop: gas off, lights off, then set the alarm
 C20    : General
 D20    : Shift manager
 E20    : 11:00 PM
@@ -1524,7 +1524,7 @@ C12    : FOH
 D12    : Server
 E12    : —
 A13    : 7
-B13    : Serve pizzas and drinks (beer and wine only if your license allows; 21+ with ID)
+B13    : Serve pizzas and drinks (beer and wine only if your license allows; 21+ with ID; never serve anyone visibly intoxicated)
 C13    : FOH
 D13    : Server
 E13    : —
@@ -1633,7 +1633,7 @@ C17    : Office
 D17    : Delivery driver
 E17    : —
 A18    : 11
-B18    : Report delivery issues
+B18    : Report delivery issues and log your miles: drivers using their own car get reimbursed so vehicle costs never push pay below minimum wage (FLSA)
 C18    : Office
 D18    : Delivery driver
 E18    : —
@@ -1655,7 +1655,7 @@ B2     : 05 · Pizzeria Cleaning Checklist, Inventory & Maintenance Schedule
 B4     : Quarterly, annual and freezer shelf life
 B6     : ▸ The "Quarterly & Annual" tab covers the maintenance you CONTRACT and that an inspector asks for: pest control, hood, duct and wood-fired oven chimney (NFPA 96), oven check, extinguishers and their hydrostatic test, hood fire suppression, gas, refrigeration, Legionella, water, used oil, waste, insurance and POS / sales tax.
 B7     : ▸ Write the service report number in the green column and initial it once the company has been; the last task on the sheet is to log the date of the next visit.
-B8     : ▸ The monthly tab keeps the checks your own team does (hood filters, a look at the extinguisher): they don't replace the contracted inspection, they prepare for it.
+B8     : ▸ The monthly tab mixes your team's own checks (hood filters, a look at the extinguisher, first-aid kit) with the monthly ones for a technician or qualified person (oven, wood-fired exhaust, gas valves): they don't replace the contracted services in "Quarterly & Annual", they prepare for them.
 B9     : ▸ At the bottom of "Weekly FIFO Check" there is an editable freezer shelf-life table by food group: one blanket rule for the whole freezer either throws out good dough or approves cured meat that has gone off.
 B11    : How the counter works
 B13    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
@@ -1693,13 +1693,13 @@ A6     : Dough balls ready
 C6     : ea
 D6     : 30
 E6     = =IF(B6="","",IF(B6<D6,"⚠️ REORDER","OK"))   → caché None
-A7     : 00 flour
+A7     : 00 or high-gluten flour
 C7     : lb
-D7     : 22
+D7     : 25
 E7     = =IF(B7="","",IF(B7<D7,"⚠️ REORDER","OK"))   → caché None
 A8     : Semolina flour
 C8     : lb
-D8     : 7
+D8     : 10
 E8     = =IF(B8="","",IF(B8<D8,"⚠️ REORDER","OK"))   → caché None
 A9     : Fresh yeast
 C9     : oz
@@ -1707,12 +1707,12 @@ D9     : 4
 E9     = =IF(B9="","",IF(B9<D9,"⚠️ REORDER","OK"))   → caché None
 A10    : Salt
 C10    : lb
-D10    : 4
+D10    : 5
 E10    = =IF(B10="","",IF(B10<D10,"⚠️ REORDER","OK"))   → caché None
 A11    :   CHEESES
 A12    : Fior di latte mozzarella
 C12    : lb
-D12    : 11
+D12    : 10
 E12    = =IF(B12="","",IF(B12<D12,"⚠️ REORDER","OK"))   → caché None
 A13    : Buffalo mozzarella
 C13    : ea
@@ -1741,7 +1741,7 @@ D19    : 10
 E19    = =IF(B19="","",IF(B19<D19,"⚠️ REORDER","OK"))   → caché None
 A20    : Pesto
 C20    : oz
-D20    : 10
+D20    : 12
 E20    = =IF(B20="","",IF(B20<D20,"⚠️ REORDER","OK"))   → caché None
 A21    : Extra virgin olive oil
 C21    : qt
@@ -1749,12 +1749,12 @@ D21    : 2
 E21    = =IF(B21="","",IF(B21<D21,"⚠️ REORDER","OK"))   → caché None
 A22    : Truffle oil
 C22    : fl oz
-D22    : 3
+D22    : 4
 E22    = =IF(B22="","",IF(B22<D22,"⚠️ REORDER","OK"))   → caché None
 A23    :   MEATS & CHARCUTERIE
 A24    : Pepperoni
 C24    : lb
-D24    : 4
+D24    : 5
 E24    = =IF(B24="","",IF(B24<D24,"⚠️ REORDER","OK"))   → caché None
 A25    : Cooked ham
 C25    : lb
@@ -1766,7 +1766,7 @@ D26    : 2
 E26    = =IF(B26="","",IF(B26<D26,"⚠️ REORDER","OK"))   → caché None
 A27    : Anchovies
 C27    : oz
-D27    : 7
+D27    : 8
 E27    = =IF(B27="","",IF(B27<D27,"⚠️ REORDER","OK"))   → caché None
 A28    : Prosciutto
 C28    : lb
@@ -1791,7 +1791,7 @@ D33    : 1
 E33    = =IF(B33="","",IF(B33<D33,"⚠️ REORDER","OK"))   → caché None
 A34    : Arugula
 C34    : oz
-D34    : 7
+D34    : 8
 E34    = =IF(B34="","",IF(B34<D34,"⚠️ REORDER","OK"))   → caché None
 A35    : Cherry tomatoes
 C35    : lb
@@ -1818,7 +1818,7 @@ A41    : Napkins
 C41    : ea
 D41    : 100
 E41    = =IF(B41="","",IF(B41<D41,"⚠️ REORDER","OK"))   → caché None
-A42    : Delivery bags
+A42    : To-go bags (paper / plastic)
 C42    : ea
 D42    : 30
 E42    = =IF(B42="","",IF(B42<D42,"⚠️ REORDER","OK"))   → caché None
@@ -1850,7 +1850,7 @@ E7     : Monday
 A8     : 3
 B8     : Team cleans the oven mouth and the reachable flue; the contractor inspects and cleans the duct and chimney (see "Monthly Maintenance" and "Quarterly & Annual", NFPA 96)
 C8     : Kitchen
-D8     : Technician
+D8     : Pizza maker
 E8     : Monday
 A9     : 4
 B9     : Check oven gaskets and insulation
@@ -2050,12 +2050,12 @@ D9     : Technician
 E9     : Monthly
 A10    :   GENERAL
 A11    : 5
-B11    : Dish machine: filters, rinse aid, softener salt
+B11    : Dish machine: filters, rinse aid and chemical levels (water softener salt only if you have a softener)
 C11    : Kitchen
 D11    : Manager
 E11    : Monthly
 A12    : 6
-B12    : Exhaust hood: degrease and replace filters; the contractor cleans the DUCTS (see "Quarterly & Annual")
+B12    : Exhaust hood: degrease the hood and check the filters (replace only bent or damaged ones); the contractor cleans the DUCTS (see "Quarterly & Annual")
 C12    : Kitchen
 D12    : Technician
 E12    : Monthly
@@ -2242,10 +2242,10 @@ C13    : Kitchen
 D13    : Line cook
 E13    : 2:00 PM
 A14    : 8
-B14    : Turn on the delivery apps early
+B14    : Check every delivery app is live and set longer prep times for the rush
 C14    : FOH
 D14    : Shift manager
-E14    : 5:00 PM
+E14    : 2 h before kickoff
 A15    : 9
 B15    : Have pre-folded boxes ready
 C15    : Storage
@@ -2369,7 +2369,7 @@ A12    : 6
 B12    : Design a holiday menu (truffle pizza, special calzone)
 C12    : Office
 D12    : Manager
-E12    : 15 days out
+E12    : 2 weeks out
 A13    : 7
 B13    : Extra stock for the days your suppliers don't deliver (especially Christmas Day and New Year's Day)
 C13    : Office
@@ -2599,19 +2599,19 @@ A16    : 9
 C16    : FOH
 A17    : 10
 C17    : FOH
-A19    :   BAR — type your bar tasks below
+A19    :   COUNTER / BAR — type your counter or bar tasks below
 A20    : 11
-C20    : Bar
+C20    : Counter / bar
 D20    : (Assigned to)
 E20    : (Time)
 A21    : 12
-C21    : Bar
+C21    : Counter / bar
 A22    : 13
-C22    : Bar
+C22    : Counter / bar
 A23    : 14
-C23    : Bar
+C23    : Counter / bar
 A24    : 15
-C24    : Bar
+C24    : Counter / bar
 A31    : Tasks done:
 D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
 E31    : of
@@ -2803,12 +2803,12 @@ C19    : General
 D19    : Shift manager
 E19    : 9:30 AM
 A20    : 16
-B20    : Light the wood-fired oven (preheat per manufacturer; 1 h as a guide)
+B20    : Exhaust hood on, then light the oven (preheat per manufacturer; 1 h as a guide; detail in 01, Kitchen Opening)
 C20    : Kitchen
 D20    : Shift manager
-E20    : 9:30 AM
+E20    : 10:00 AM
 A21    : 17
-B21    : Set up the pizza counter if visible; slices (pizza by the slice) go in a hot case at 135 °F or above, or time-marked and tossed at 4 h (FDA 3-501.19)
+B21    : Set up the slice counter if you sell by the slice: hot case at 135 °F or above, or time-marked and tossed at 4 h with a written procedure on file (FDA 3-501.19)
 C21    : FOH
 D21    : Shift manager
 E21    : 9:30 AM
@@ -3499,7 +3499,7 @@ B1     : Pre-Shift Meeting
 B2     : Date: ___/___/______    Shift: ☐ Lunch  ☐ Dinner    Shift manager: _________________________
 B4     : RESERVATIONS & OCCUPANCY
 B5     : No. of reservations:
-B6     : Expected covers:
+B6     : Expected covers + delivery / carryout orders:
 B7     : VIP tables / special guests:
 B8     : Parties or events:
 B9     : Estimated occupancy:
@@ -3517,7 +3517,7 @@ B21    : Restrictions to communicate:
 B23    : SHIFT TEAM
 B24    : Kitchen staff:
 B25    : FOH staff:
-B26    : Bar staff:
+B26    : Drivers on shift (and bar staff, if any):
 B27    : Anyone out? Coverage:
 B29    : NOTES & INCIDENTS
 B30    : Issues from the previous shift:
@@ -3560,8 +3560,8 @@ B5     : Jan 1 — New Year's Day
 C5     : Decide whether to open; if closed, announce it on Google Business Profile, your website and the delivery apps 1 week ahead
 D5     : 1 week
 A6     : February
-B6     : Super Bowl Sunday (2nd Sunday in Feb)
-C6     : Pre-orders and big party orders, dough balls cold-fermenting ahead, extra drivers and boxes, a short menu to push more orders per hour
+B6     : Feb 9 — National Pizza Day + Super Bowl Sunday (2nd Sunday in Feb)
+C6     : National Pizza Day: a one-day deal and a social post. Super Bowl: pre-orders and big party orders, dough balls cold-fermenting ahead, extra drivers and boxes, a short menu to push more orders per hour
 D6     : 2 weeks
 A7     : February
 B7     : Feb 14 — Valentine's Day
@@ -3571,26 +3571,26 @@ A8     : February–March
 B8     : Mardi Gras (varies)
 C8     : Themed menu, decorations, staff costumes
 D8     : 1 week
-A9     : March
-B9     : Mar 17 — St. Patrick's Day + March Madness
-C9     : Themed specials; March Madness games (mid-March to early April) lift delivery: extra drivers; beer only with a license, 21+ with ID
+A9     : February–April
+B9     : Lent Fridays + Easter Sunday (varies)
+C9     : Meatless Fridays in Lent: cheese, veggie or marinara specials; Easter: decide hours, family orders
 D9     : 2 weeks
-A10    : March–April
-B10    : Lent Fridays + Easter Sunday (varies)
-C10    : Meatless Fridays in Lent: cheese, veggie or marinara specials; Easter: decide hours, family orders
+A10    : March
+B10    : Mar 14 — Pi Day + Mar 17 — St. Patrick's Day + March Madness
+C10    : Pi Day: a $3.14 deal or a pie special. St. Patrick's: themed specials. March Madness games (mid-March to early April) lift delivery: extra drivers; beer only with a license, 21+ with ID
 D10    : 2 weeks
 A11    : March–April
 B11    : Patio opening
 C11    : Setup, permit, patio menu
 D11    : 1 month
-A12    : May–June
-B12    : Graduation season
-C12    : Set group menu, deposit and price per person, private area; big carryout party orders for graduations
-D12    : 1 month
-A13    : May
-B13    : NBA & NHL playoffs (game nights)
-C13    : Game nights = delivery peak: extra drivers and dough, game-night deals, screens if you have a dining room
-D13    : 1 week
+A12    : April–June
+B12    : NBA & NHL playoffs (game nights)
+C12    : Game nights = delivery peak: extra drivers and dough, game-night deals, screens if you have a dining room
+D12    : 1 week
+A13    : May–June
+B13    : Graduation season
+C13    : Set group menu, deposit and price per person, private area; big carryout party orders for graduations
+D13    : 1 month
 A14    : May
 B14    : 2nd Sunday — Mother's Day
 C14    : Special menu, expanded reservations, a small gift for the moms
@@ -3609,15 +3609,15 @@ C17    : Decide hours, patio at full capacity, big party orders for the cookouts
 D17    : 1 week
 A18    : July–August
 B18    : Summer peak season
-C18    : Holiday service, extra staff, longer hours, summer menu; more drivers and the patio at full capacity
+C18    : Summer hours and menu, staff vacations; extra staff and drivers where summer is busy (beach and tourist areas); patio at full capacity
 D18    : Ongoing
 A19    : September
 B19    : Labor Day (1st Monday) + football season kickoff
-C19    : Fall menu, lunch specials for the back-to-routine crowd and game-day deals for football: Sunday and Monday night delivery peak
+C19    : Fall menu, back-to-school lunch specials and game-day deals for football: Thursday, Sunday and Monday night games and college Saturdays lift delivery
 D19    : 2 weeks
 A20    : October
-B20    : Oct 31 — Halloween
-C20    : Big delivery night: extra dough, boxes and drivers; themed decor and special pizzas (no cocktails)
+B20    : National Pizza Month + Oct 31 — Halloween
+C20    : National Pizza Month: a pizza of the week or a loyalty push all month. Halloween: big delivery night: extra dough, boxes and drivers; themed decor and special pizzas
 D20    : 1 week
 A21    : November
 B21    : Thanksgiving Eve + Thanksgiving (4th Thursday)
@@ -3641,7 +3641,7 @@ C25    : Decide whether to open on Christmas Day (many close). Menu, decorations
 D25    : 2 weeks
 A26    : December
 B26    : Dec 31 — New Year's Eve
-C26    : Big delivery night: extra dough and drivers, closing hours; if the dining room is open, party favors and a midnight toast (alcohol only if your license allows; 21+ with ID); night shifts
+C26    : Big delivery night: extra dough and drivers, closing hours; if the dining room is open, party favors and a midnight toast (alcohol only if your license allows and, if it's free, only where your state allows giving alcohol away; 21+ with ID); night shifts
 D26    : 2 weeks
 A28    : (Your date)
 B28    : (Add here)

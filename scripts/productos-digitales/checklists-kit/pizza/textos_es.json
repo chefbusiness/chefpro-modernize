@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-18T01:15:07Z",
+  "generado": "2026-10-18T01:53:53Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-pizzeria",
-  "commit": "5726f66a",
+  "commit": "51c11cf2",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 909,
-  "n_traducir": 631,
-  "n_adaptar": 86,
-  "n_palabras_subagentes": 4675,
+  "n_traducir": 624,
+  "n_adaptar": 82,
+  "n_palabras_subagentes": 4626,
   "n_apariciones": 2521,
   "grupos": [
    {
@@ -92,15 +92,15 @@
      "B01",
      "B02"
     ],
-    "n_cadenas": 331,
-    "n_adaptar": 44,
-    "n_palabras": 2522
+    "n_cadenas": 324,
+    "n_adaptar": 40,
+    "n_palabras": 2473
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 84 mapa-glosario, 36 mapa-hoja, 158 regenerar",
-    "n_cadenas": 278,
-    "n_palabras": 994
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 83 mapa-glosario, 36 mapa-hoja, 166 regenerar",
+    "n_cadenas": 285,
+    "n_palabras": 1043
    }
   ],
   "excluidas": {
@@ -2070,7 +2070,7 @@
    "n_apariciones": 1,
    "palabras": 9,
    "con_cifra": true,
-   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F (napolitana)",
+   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F; ronda 1 M2: horno de piso de gas, de cinta o eléctrico: el objetivo de tu receta y del fabricante, sin cifra (napolitana)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
@@ -3845,7 +3845,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
-   "adaptar": "La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
+   "adaptar": "Ronda 1 m1: la ceniza nunca en caliente al cierre; se retira en frío, normalmente a la mañana siguiente antes de encender, a un contenedor METÁLICO cerrado a 3 ft o más del horno (NFPA 96). Antes: La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
    "pistas": [
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
@@ -4487,7 +4487,7 @@
    "n_apariciones": 1,
    "palabras": 11,
    "con_cifra": true,
-   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F",
+   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F; ronda 1 M2: horno de piso de gas, de cinta o eléctrico: el objetivo de tu receta y del fabricante, sin cifra",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
@@ -7525,7 +7525,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
+   "adaptar": "Ronda 1 m1: la ceniza nunca en caliente al cierre; se retira en frío, normalmente a la mañana siguiente antes de encender, a un contenedor METÁLICO cerrado a 3 ft o más del horno (NFPA 96). Antes: La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
    "pistas": [
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
@@ -8245,7 +8245,7 @@
    "n_apariciones": 1,
    "palabras": 4,
    "con_cifra": false,
-   "adaptar": "Cerveza y vino solo si tu licencia lo permite, a mayores de 21 con ID",
+   "adaptar": "Cerveza y vino solo si tu licencia lo permite, a mayores de 21 con ID; nunca a quien esté visiblemente ebrio (ronda 1 m5)",
    "sha1": "82caf8f33b25",
    "donde": [
     {
@@ -12935,26 +12935,6 @@
    ]
   },
   {
-   "id": "c0642",
-   "es": "  BARRA — escribe aquí abajo tus tareas de barra",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "sha1": "501df709f091",
-   "donde": [
-    {
-     "f": "07",
-     "h": "Por Área",
-     "c": "A19",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0643",
    "es": "Plantilla en Blanco — Por Perfil Profesional",
    "grupo": "G2",
@@ -13616,7 +13596,7 @@
    "n_apariciones": 1,
    "palabras": 9,
    "con_cifra": true,
-   "adaptar": "Horno de leña: encenderlo con tiempo para que llegue a temperatura antes del servicio, el que diga su fabricante (1 h como referencia del kit; el de leña suele necesitar más)",
+   "adaptar": "Ronda 1 m2: primero la campana, luego el horno. Horno de leña: encenderlo con tiempo para que llegue a temperatura antes del servicio, el que diga su fabricante (1 h como referencia del kit; el de leña suele necesitar más)",
    "pistas": [
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
@@ -13640,7 +13620,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
-   "adaptar": "Si en esa barra expones porciones (pizza by the slice): en vitrina caliente a 135 °F o más, o con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "adaptar": "Ronda 1 m3: con procedimiento escrito a mano. Si en esa barra expones porciones (pizza by the slice): en vitrina caliente a 135 °F o más, o con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "sha1": "56394951d7c0",
    "donde": [
     {
@@ -14939,29 +14919,6 @@
    ]
   },
   {
-   "id": "c0808",
-   "es": "Nº de comensales previstos:",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "pistas": [
-    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
-   ],
-   "sha1": "9b4aa406cc75",
-   "donde": [
-    {
-     "f": "B01",
-     "h": "Briefing",
-     "c": "B6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0809",
    "es": "Mesas VIP / clientes especiales:",
    "grupo": "G2",
@@ -15291,26 +15248,6 @@
      "f": "B01",
      "h": "Briefing",
      "c": "B25",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0825",
-   "es": "Personal barra:",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 2,
-   "con_cifra": false,
-   "sha1": "de0f6a9aa894",
-   "donde": [
-    {
-     "f": "B01",
-     "h": "Briefing",
-     "c": "B26",
      "t": "celda",
      "tr": "traducir"
     }
@@ -15671,7 +15608,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. Uno de los días de más pizza a domicilio del año en EE. UU.: pedidos anticipados y grandes (party orders), más bolas de masa fermentando con antelación, repartidores y cajas extra, menú corto para sacar más pedidos por hora",
+   "adaptar": "Evento EN: «Feb 9 — National Pizza Day + Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. National Pizza Day (9-feb): una oferta de un día y un post. Super Bowl, uno de los días de más pizza a domicilio del año en EE. UU.: pedidos anticipados y grandes (party orders), más bolas de masa fermentando con antelación, repartidores y cajas extra, menú corto para sacar más pedidos por hora",
    "sha1": "ef755fd68ee4",
    "donde": [
     {
@@ -15724,48 +15661,6 @@
    ]
   },
   {
-   "id": "c0858",
-   "es": "Menú familiar de mediodía, reservas ampliadas y pizza XL para compartir",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 11,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day + March Madness». Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas: especiales temáticos; los partidos del torneo universitario (March Madness, de mediados de marzo a principios de abril) suben el delivery: repartidores extra; cerveza solo con licencia y 21+ con ID",
-   "sha1": "6d598b2c5f82",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0861",
-   "es": "Menú de vigilia, bacalao, potaje, torrijas",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Lent Fridays + Easter Sunday (varies)». Sustituye a Semana Santa: el «menú de vigilia» son los viernes de Cuaresma sin carne (meatless Fridays): especiales de queso, verduras o marinara; Pascua: decidir el horario, pedidos familiares",
-   "sha1": "05cfa4e357b8",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0863",
    "es": "Montaje, licencia, carta exterior",
    "grupo": "G2",
@@ -15781,53 +15676,6 @@
      "f": "B02",
      "h": "Calendario Anual",
      "c": "C11",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0867",
-   "es": "Menú de grupo cerrado, señal y precio por comensal, sala o terraza privatizada",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 13,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Graduation season». Mismas tareas del ES (menú de grupo cerrado, depósito y precio por persona, zona privada); en EE. UU. son graduaciones y fiestas de fin de curso: pedidos grandes para llevar (party orders)",
-   "pistas": [
-    "Glosario: sala → front of house (FOH) / dining room",
-    "D15: terraza → patio",
-    "Glosario: señal / anticipo → deposit"
-   ],
-   "sha1": "b894c9fcdbae",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C12",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0870",
-   "es": "Servicio de festivo, turnos especiales",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «NBA & NHL playoffs (game nights)». Sustituye al 1 de mayo. Tareas: noches de partido = pico de delivery: repartidores y masa extra, ofertas para ver el partido (game-night deals), pantallas si tienes sala",
-   "sha1": "f2c0f3b02033",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C13",
      "t": "celda",
      "tr": "traducir"
     }
@@ -15974,7 +15822,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Oct 31 — Halloween». Noche fuerte de delivery: masa, cajas y repartidores extra; decoración temática y pizzas especiales (sin cócteles)",
+   "adaptar": "Evento EN: «National Pizza Month + Oct 31 — Halloween». National Pizza Month (todo octubre): pizza de la semana o campaña de fidelización. Halloween, noche fuerte de delivery: masa, cajas y repartidores extra; decoración temática y pizzas especiales",
    "sha1": "60e6ba9a8ffe",
    "donde": [
     {
@@ -19923,7 +19771,8 @@
    "tratamiento": "mapa-hoja",
    "tratamientos": [
     "mapa-hoja",
-    "mapa-glosario"
+    "mapa-glosario",
+    "regenerar"
    ],
    "en_hoja": "Pizza Maker",
    "en_glosario": "Pizza maker",
@@ -19938,8 +19787,8 @@
      "h": "Apertura Cocina",
      "c": "D10",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
@@ -25876,6 +25725,10 @@
    "es": "Técnico",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Technician",
    "n_ficheros": 2,
    "n_apariciones": 11,
@@ -25912,8 +25765,8 @@
      "h": "Limpieza Semanal",
      "c": "D8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "05",
@@ -28343,6 +28196,10 @@
    "es": "Barra",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Bar",
    "n_ficheros": 2,
    "n_apariciones": 6,
@@ -28363,40 +28220,40 @@
      "h": "Por Área",
      "c": "C20",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C21",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C22",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C23",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C24",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -28458,8 +28315,8 @@
    "id": "c0585",
    "es": "15 días antes",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "15 days out",
+   "tratamiento": "regenerar",
+   "en_por_celda": "2 weeks out",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -28471,8 +28328,8 @@
      "h": "Navidad",
      "c": "E12",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -28967,6 +28824,28 @@
      "t": "celda",
      "tr": "mapa-glosario",
      "det": "mapas.GLOSARIO"
+    }
+   ]
+  },
+  {
+   "id": "c0642",
+   "es": "  BARRA — escribe aquí abajo tus tareas de barra",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "  COUNTER / BAR — type your counter or bar tasks below",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "501df709f091",
+   "donde": [
+    {
+     "f": "07",
+     "h": "Por Área",
+     "c": "A19",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -31298,6 +31177,50 @@
    ]
   },
   {
+   "id": "c0808",
+   "es": "Nº de comensales previstos:",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Expected covers + delivery / carryout orders:",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "9b4aa406cc75",
+   "donde": [
+    {
+     "f": "B01",
+     "h": "Briefing",
+     "c": "B6",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0825",
+   "es": "Personal barra:",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Drivers on shift (and bar staff, if any):",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 2,
+   "con_cifra": false,
+   "sha1": "de0f6a9aa894",
+   "donde": [
+    {
+     "f": "B01",
+     "h": "Briefing",
+     "c": "B26",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0832",
    "es": "BONUS: Plantilla de Briefing Pre-Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Pizzería",
    "grupo": "GM",
@@ -31502,7 +31425,7 @@
    "es": "6 Ene — Reyes",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Super Bowl Sunday (2nd Sunday in Feb)",
+   "en_por_celda": "Feb 9 — National Pizza Day + Super Bowl Sunday (2nd Sunday in Feb)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -31676,7 +31599,7 @@
    "es": "Marzo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "March",
+   "en_por_celda": "February–April",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 1,
@@ -31698,7 +31621,7 @@
    "es": "19 Mar — Día del Padre",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Mar 17 — St. Patrick's Day + March Madness",
+   "en_por_celda": "Lent Fridays + Easter Sunday (varies)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -31716,11 +31639,33 @@
    ]
   },
   {
+   "id": "c0858",
+   "es": "Menú familiar de mediodía, reservas ampliadas y pizza XL para compartir",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Meatless Fridays in Lent: cheese, veggie or marinara specials; Easter: decide hours, family orders",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 11,
+   "con_cifra": false,
+   "sha1": "6d598b2c5f82",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0859",
    "es": "Marzo-Abril",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "March–April",
+   "en_por_celda": "March",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 2,
@@ -31750,7 +31695,7 @@
    "es": "Semana Santa (variable)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Lent Fridays + Easter Sunday (varies)",
+   "en_por_celda": "Mar 14 — Pi Day + Mar 17 — St. Patrick's Day + March Madness",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -31761,6 +31706,28 @@
      "f": "B02",
      "h": "Calendario Anual",
      "c": "B10",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0861",
+   "es": "Menú de vigilia, bacalao, potaje, torrijas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Pi Day: a $3.14 deal or a pie special. St. Patrick's: themed specials. March Madness games (mid-March to early April) lift delivery: extra drivers; beer only with a license, 21+ with ID",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "05cfa4e357b8",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C10",
      "t": "celda",
      "tr": "regenerar",
      "det": "rótulo fijado (mapas.POR_CELDA)"
@@ -31840,7 +31807,7 @@
    "es": "Abril-Junio",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "May–June",
+   "en_por_celda": "April–June",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -31862,7 +31829,7 @@
    "es": "Comuniones y bautizos (temporada)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Graduation season",
+   "en_por_celda": "NBA & NHL playoffs (game nights)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 4,
@@ -31880,11 +31847,33 @@
    ]
   },
   {
+   "id": "c0867",
+   "es": "Menú de grupo cerrado, señal y precio por comensal, sala o terraza privatizada",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Game nights = delivery peak: extra drivers and dough, game-night deals, screens if you have a dining room",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 13,
+   "con_cifra": false,
+   "sha1": "b894c9fcdbae",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C12",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0868",
    "es": "Mayo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "May",
+   "en_por_celda": "May–June",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 1,
@@ -31914,7 +31903,7 @@
    "es": "1 Mayo — Día del Trabajo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "NBA & NHL playoffs (game nights)",
+   "en_por_celda": "Graduation season",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -31925,6 +31914,28 @@
      "f": "B02",
      "h": "Calendario Anual",
      "c": "B13",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0870",
+   "es": "Servicio de festivo, turnos especiales",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Set group menu, deposit and price per person, private area; big carryout party orders for graduations",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "f2c0f3b02033",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C13",
      "t": "celda",
      "tr": "regenerar",
      "det": "rótulo fijado (mapas.POR_CELDA)"
@@ -32208,7 +32219,7 @@
    "es": "31 Oct — Halloween",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Oct 31 — Halloween",
+   "en_por_celda": "National Pizza Month + Oct 31 — Halloween",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,

@@ -44,3 +44,21 @@ inventario). `heredar.py --kit pizza` sobre la rama: 0 cambios en heredado y pen
 Siguiente: UNA revisión adversarial sobre los volcados (lente de un pizza shop manager US + lente técnica): horno de
 leña (ceniza, campana, NFPA 96), masa en frío, make line, mozzarella, delivery (bolsas, propinas, seguro), el orden de
 los cierres 01 «FOH Closing» y 08, el calendario US y los mínimos del inventario en lb / oz.
+
+## Ronda 1 de la revisión adversarial (18-oct-2026 · sesión Claude Code)
+
+`revision/REVISION-F2.md` (0 BLOQUEANTE · 2 MAYOR · 21 menor · 6 dudas): **los 2 MAYOR, los 21 menores y la duda D2
+(mínimos del inventario, aprobada) aplicados en la fuente**; D1 y D3-D6, a v2.1 (tabla al final del informe). Solo texto:
+sin filas nuevas ni °F nuevos. `G1.json` = 377 ids (28 reescritos; 4 retirados porque el calendario intercambia las filas
+9↔10 y 12↔13 y sus C pasan a `POR_CELDA`); heredadas 247 (3 del 07 y el BONUS-01 pasan a `POR_CELDA`); `POR_CELDA` 222;
+`REGLAS_US` + `servicio_alcohol` y `kilometraje`. Sin cambios en el código compartido en esta ronda.
+
+| Paso | Resultado |
+|---|---|
+| Montaje | 11 xlsx, idempotencia 0 diferencias, 0 desbordes |
+| Gates | **VERDE 8/0** (G3 113 ajustes · 101 altos; G4 1.170 glosario · 280 regenerar · 859 traducir · 32 valores fijados; G7 33 °F y 33 citas, 54 permitidas) |
+| Autotest | **18/18 CAZADOS** |
+| censo · no-latinos | 0 defectos · 0 no latinos; heurística de textos cortados: 0 avisos en 2.558 celdas |
+| Hermanos | dry-run = `origin/main`, `96432c18`, `ac1d63f8`, `5726f66a`: 0 diferencias en los volcados; gates VERDE 8/0; autotest 16 / 16 / 18 / 20 OK |
+| Copia al Mac | sha256 11/11 iguales; `revision/dump_en.txt` regenerado (3.666 líneas) |
+| Landing (F3) | `astro-site/src/data/productos-en/tareas/pizza-shop-checklist-templates.ts`: el horno ya no promete 750–840 °F a cualquier horno (bullet, desc del 02 y bullet final) y el calendario nombra National Pizza Day, Pi Day y National Pizza Month (2 desc); 373 tareas y 22 fechas no cambian |

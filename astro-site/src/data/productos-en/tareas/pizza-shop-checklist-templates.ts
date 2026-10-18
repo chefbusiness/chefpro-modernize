@@ -118,7 +118,7 @@ const data: KitTareasData = {
       '9 templates + 3 bonuses (12 files) in Excel with 373 pizza shop tasks already written: opening and closing, pizza oven and dough, make line, delivery and takeout, manager, roles, cleaning, events and a cash drawer count. Print it, delegate it to your team, initial it and file it.',
     checkItems: [
       'Opening and closing checklists: kitchen, front of house, patio and delivery',
-      'Wood-fired or deck oven control: 750–840 °F, start-up, cleaning, wood and ash',
+      'Oven control for wood-fired, deck or conveyor ovens: target temp in °F, start-up, cleaning, wood and ash',
       'Pizza maker tasks: dough, hand stretching, 60–90 second bakes',
       'Delivery and takeout: pizza boxes, insulated bags, drivers and order checks',
       'Whole-shop opening and closing, and a cash drawer count by bill and coin',
@@ -144,7 +144,7 @@ const data: KitTareasData = {
       {
         icon: 'Flame',
         title: 'Pizza Kitchen Station Checklists: Pizza Oven, Make Line, Apps & Pasta',
-        desc: 'The pizza oven station (oven temperature in °F, 750–840 °F for Neapolitan and 570 °F for Roman-style, bake times, turning the pizza, managing the fire), the make line (inserts set in order, refilled before they run low, covered and refrigerated at close) and apps & pasta, before, during and after service.',
+        desc: 'The pizza oven station (oven temperature in °F, 750–840 °F for Neapolitan and 570 °F for Roman-style, or your own target for a gas deck or conveyor oven, bake times, turning the pizza, managing the fire), the make line (inserts set in order, refilled before they run low, covered and refrigerated at close) and apps & pasta, before, during and after service.',
       },
       {
         icon: 'ClipboardList',
@@ -189,7 +189,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Pizza Shop Holiday & Busy Days Calendar (US)',
-        desc: "22 key US dates for pizza shops, from Super Bowl Sunday and March Madness to Halloween, Thanksgiving Eve and New Year's Eve, with the key tasks and recommended lead time for each, a UK note and 5 free rows for your own.",
+        desc: "22 key US dates for pizza shops, from National Pizza Day, Super Bowl Sunday, Pi Day and March Madness to National Pizza Month, Halloween, Thanksgiving Eve and New Year's Eve, with the key tasks and recommended lead time for each, a UK note and 5 free rows for your own.",
       },
     ],
   },
@@ -252,7 +252,7 @@ const data: KitTareasData = {
         icon: 'Calendar',
         label: 'BONUS 2',
         title: 'Pizza Shop Holiday & Busy Days Calendar (US)',
-        desc: "22 key dates for US pizza shops (Super Bowl Sunday, Valentine's Day, St. Patrick's Day and March Madness, Lent Fridays, graduation season, the NBA and NHL playoffs, July 4, football season, Halloween, Thanksgiving Eve, holiday office orders, New Year's Eve) with the key tasks and the recommended lead time.",
+        desc: "22 key dates for US pizza shops (National Pizza Day, Super Bowl Sunday, Valentine's Day, Lent Fridays, Pi Day, St. Patrick's Day and March Madness, the NBA and NHL playoffs, graduation season, July 4, football season, National Pizza Month, Halloween, Thanksgiving Eve, holiday office orders, New Year's Eve) with the key tasks and the recommended lead time.",
         image: '/lovable-uploads/ai-gallery/tareas-pizzeria-mesa.jpg',
       },
       {
@@ -356,7 +356,7 @@ const data: KitTareasData = {
     items: [
       'Opening and closing checklists: oven, make line, front of house, delivery',
       'Pizza maker tasks: dough, hand stretching, 60–90 second bakes',
-      'Oven control: 750–840 °F, cleaning, wood and ash',
+      'Oven control: target temp in °F, cleaning, wood and ash',
       'Manager checklists: daily, weekly, monthly + shift handover',
       'Tasks by role: pizza maker, line cook, shift manager, server, delivery driver',
       'Delivery and takeout: pizza boxes, insulated bags, drivers, delivery apps',

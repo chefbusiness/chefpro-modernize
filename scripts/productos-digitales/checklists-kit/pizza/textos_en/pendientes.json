@@ -2,21 +2,21 @@
  "meta": {
   "kit": "pizza",
   "producto": "Pizza Shop Checklists Kit Pro",
-  "n_pendientes": 381,
-  "n_palabras": 2565,
+  "n_pendientes": 377,
+  "n_palabras": 2530,
   "motivos": {
    "contexto": 10,
-   "nueva": 360,
-   "adaptar": 10,
+   "nueva": 358,
+   "adaptar": 8,
    "corregida": 1
   },
-  "n_heredadas": 250,
+  "n_heredadas": 247,
   "heredadas_por_via": {
-   "exacta": 247,
+   "exacta": 244,
    "sufijo": 3
   },
   "heredadas_por_fuente": {
-   "base": 197,
+   "base": 194,
    "cafe": 50,
    "bar": 3
   },
@@ -206,7 +206,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
-   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F (napolitana)",
+   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F; ronda 1 M2: horno de piso de gas, de cinta o eléctrico: el objetivo de tu receta y del fabricante, sin cifra (napolitana)",
    "motivo": "nueva"
   },
   {
@@ -726,7 +726,7 @@
    "pistas": [
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
-   "adaptar": "La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
+   "adaptar": "Ronda 1 m1: la ceniza nunca en caliente al cierre; se retira en frío, normalmente a la mañana siguiente antes de encender, a un contenedor METÁLICO cerrado a 3 ft o más del horno (NFPA 96). Antes: La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
    "motivo": "nueva"
   },
   {
@@ -1005,7 +1005,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
-   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F",
+   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F; ronda 1 M2: horno de piso de gas, de cinta o eléctrico: el objetivo de tu receta y del fabricante, sin cifra",
    "motivo": "nueva"
   },
   {
@@ -2168,7 +2168,7 @@
    "pistas": [
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
-   "adaptar": "La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
+   "adaptar": "Ronda 1 m1: la ceniza nunca en caliente al cierre; se retira en frío, normalmente a la mañana siguiente antes de encender, a un contenedor METÁLICO cerrado a 3 ft o más del horno (NFPA 96). Antes: La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
    "motivo": "nueva"
   },
   {
@@ -2486,7 +2486,7 @@
    "donde": [
     "04 · Camarero · B13"
    ],
-   "adaptar": "Cerveza y vino solo si tu licencia lo permite, a mayores de 21 con ID",
+   "adaptar": "Cerveza y vino solo si tu licencia lo permite, a mayores de 21 con ID; nunca a quien esté visiblemente ebrio (ronda 1 m5)",
    "motivo": "nueva"
   },
   {
@@ -4336,7 +4336,7 @@
    "pistas": [
     "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
    ],
-   "adaptar": "Horno de leña: encenderlo con tiempo para que llegue a temperatura antes del servicio, el que diga su fabricante (1 h como referencia del kit; el de leña suele necesitar más)",
+   "adaptar": "Ronda 1 m2: primero la campana, luego el horno. Horno de leña: encenderlo con tiempo para que llegue a temperatura antes del servicio, el que diga su fabricante (1 h como referencia del kit; el de leña suele necesitar más)",
    "motivo": "nueva"
   },
   {
@@ -4347,7 +4347,7 @@
    "donde": [
     "08 · Apertura del Negocio · B21"
    ],
-   "adaptar": "Si en esa barra expones porciones (pizza by the slice): en vitrina caliente a 135 °F o más, o con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "adaptar": "Ronda 1 m3: con procedimiento escrito a mano. Si en esa barra expones porciones (pizza by the slice): en vitrina caliente a 135 °F o más, o con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "motivo": "nueva"
   },
   {
@@ -4407,60 +4407,9 @@
    "donde": [
     "B02 · Calendario Anual · C6"
    ],
-   "adaptar": "Evento EN: «Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. Uno de los días de más pizza a domicilio del año en EE. UU.: pedidos anticipados y grandes (party orders), más bolas de masa fermentando con antelación, repartidores y cajas extra, menú corto para sacar más pedidos por hora",
+   "adaptar": "Evento EN: «Feb 9 — National Pizza Day + Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. National Pizza Day (9-feb): una oferta de un día y un post. Super Bowl, uno de los días de más pizza a domicilio del año en EE. UU.: pedidos anticipados y grandes (party orders), más bolas de masa fermentando con antelación, repartidores y cajas extra, menú corto para sacar más pedidos por hora",
    "motivo": "adaptar",
    "base_en": "Pre-orders for takeout (wings, party platters), screens at the bar, extra bar and delivery staff"
-  },
-  {
-   "id": "c0858",
-   "es": "Menú familiar de mediodía, reservas ampliadas y pizza XL para compartir",
-   "grupo": "G2",
-   "palabras": 11,
-   "donde": [
-    "B02 · Calendario Anual · C9"
-   ],
-   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day + March Madness». Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas: especiales temáticos; los partidos del torneo universitario (March Madness, de mediados de marzo a principios de abril) suben el delivery: repartidores extra; cerveza solo con licencia y 21+ con ID",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0861",
-   "es": "Menú de vigilia, bacalao, potaje, torrijas",
-   "grupo": "G2",
-   "palabras": 6,
-   "donde": [
-    "B02 · Calendario Anual · C10"
-   ],
-   "adaptar": "Evento EN: «Lent Fridays + Easter Sunday (varies)». Sustituye a Semana Santa: el «menú de vigilia» son los viernes de Cuaresma sin carne (meatless Fridays): especiales de queso, verduras o marinara; Pascua: decidir el horario, pedidos familiares",
-   "motivo": "adaptar",
-   "base_en": "Easter brunch, specials (baked ham, lamb), expanded reservations"
-  },
-  {
-   "id": "c0867",
-   "es": "Menú de grupo cerrado, señal y precio por comensal, sala o terraza privatizada",
-   "grupo": "G2",
-   "palabras": 13,
-   "donde": [
-    "B02 · Calendario Anual · C12"
-   ],
-   "pistas": [
-    "Glosario: sala → front of house (FOH) / dining room",
-    "D15: terraza → patio",
-    "Glosario: señal / anticipo → deposit"
-   ],
-   "adaptar": "Evento EN: «Graduation season». Mismas tareas del ES (menú de grupo cerrado, depósito y precio por persona, zona privada); en EE. UU. son graduaciones y fiestas de fin de curso: pedidos grandes para llevar (party orders)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0870",
-   "es": "Servicio de festivo, turnos especiales",
-   "grupo": "G2",
-   "palabras": 5,
-   "donde": [
-    "B02 · Calendario Anual · C13"
-   ],
-   "adaptar": "Evento EN: «NBA & NHL playoffs (game nights)». Sustituye al 1 de mayo. Tareas: noches de partido = pico de delivery: repartidores y masa extra, ofertas para ver el partido (game-night deals), pantallas si tienes sala",
-   "motivo": "adaptar",
-   "base_en": "Margarita and taco specials, extra bar staff"
   },
   {
    "id": "c0872",
@@ -4535,7 +4484,7 @@
    "donde": [
     "B02 · Calendario Anual · C20"
    ],
-   "adaptar": "Evento EN: «Oct 31 — Halloween». Noche fuerte de delivery: masa, cajas y repartidores extra; decoración temática y pizzas especiales (sin cócteles)",
+   "adaptar": "Evento EN: «National Pizza Month + Oct 31 — Halloween». National Pizza Month (todo octubre): pizza de la semana o campaña de fidelización. Halloween, noche fuerte de delivery: masa, cajas y repartidores extra; decoración temática y pizzas especiales",
    "motivo": "adaptar",
    "base_en": "Themed decorations, special menu/cocktails"
   },
