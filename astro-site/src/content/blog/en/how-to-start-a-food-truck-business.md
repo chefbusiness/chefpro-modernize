@@ -21,7 +21,7 @@ faq:
   - q: "What's the easiest food truck to start?"
     a: "The easiest food truck to start sells a few items that share ingredients and are fast to serve from one window. Food that is quick to hand over and needs only one or two cooking methods works well, such as tacos, sandwiches, rice bowls or coffee. A short menu means less waste, a smaller equipment list and fewer storage needs, and it keeps your startup costs easier to manage."
   - q: "What sells best on a food truck?"
-    a: "There is no single best seller, but food that is quick to hand over, travels well and needs one or two cooking methods tends to suit a truck. Tacos, burgers, sandwiches and grilled cheese, rice bowls, coffee and desserts are common choices. Test your concept at a pop-up, a farmers market or a catered event, and let your own sales per item guide the menu."
+    a: "There is no national ranking of food truck best sellers you can rely on, so let your own sales decide. Items that are quick to hand over, travel well, use one or two cooking methods and have a low plate cost compared with their price tend to do well: tacos, burgers, grilled cheese, rice bowls, coffee and desserts are common choices. Track sales per item from your first week and cut what does not move."
   - q: "Do food trucks pay to park at events?"
     a: "Often, yes. Events and markets commonly charge a flat vendor fee, a share of your sales, or both, and some require a temporary food event permit. Private property needs the owner's written permission, and public streets follow the city's vending and parking rules. Ask the organizer what the fee covers and whether they require a certificate of insurance before you commit."
   - q: "Can I run a food truck out of my house?"
@@ -56,7 +56,7 @@ The easiest food trucks to start sell a few items that share ingredients and are
 
 Food that is quick to hand over, travels well and needs only one or two cooking methods suits a truck: tacos, burgers, sandwiches and grilled cheese, rice bowls, coffee and desserts are common examples. Your concept also decides your equipment and your truck size. A flat-top and a fryer need a different layout than an espresso machine and a pastry case.
 
-Experienced owners in food truck forums repeat the same advice: keep the menu short. It speeds up service at the window, cuts waste, shortens your equipment list and shrinks your storage needs.
+Keep the menu short. It speeds up service at the window, cuts waste, shortens your equipment list and shrinks your storage needs.
 
 Before you buy anything, test the concept at a pop-up, a farmers market stall or a catered event. A few weekends of real customers teach you more than a spreadsheet will.
 
@@ -74,9 +74,9 @@ If you are drawn to a delivery-only model instead of a window on the street, rea
 
 Food truck rules are local, and they decide where you can park, how many permits exist and what your truck must have, so read them before you spend money. A truck that is perfect on paper can still be illegal to operate where you live.
 
-The U.S. Chamber of Commerce Foundation's <a href="https://www.uschamberfoundation.org/solutions/incubator/food-truck-nation" rel="noopener">Food Truck Nation report</a> shows how much the burden varies. Over a year, starting and running a food truck required an entrepreneur to complete 45 separate government-mandated procedures over 37 business days and to spend $28,276 on permits, licenses and ongoing legal compliance. Those are averages across the 20 cities studied.
+The U.S. Chamber of Commerce Foundation's <a href="https://www.uschamberfoundation.org/solutions/incubator/food-truck-nation" rel="noopener">Food Truck Nation report</a> shows how much the burden varies. Over a year, starting and running a food truck required an entrepreneur to complete 45 separate government-mandated procedures over 37 business days and to spend $28,276 on permits, licenses and ongoing legal compliance. Those figures are averages from the report's index of 20 American cities.
 
-The easiest cities in the 2018 ranking were Portland, Denver and Orlando, with Philadelphia and Indianapolis completing the top five. The hardest were Boston, Washington, D.C., San Francisco, Minneapolis and Seattle. The report is from 2018 and rules have changed since, so use it to understand the pattern, not to judge a city today.
+In the 2018 ranking, <a href="https://www.route-fifty.com/management/2018/03/food-truck-regulation-ranking/146945/" rel="noopener">as Route Fifty reported</a>, Portland, Denver and Orlando came out as the easiest cities, while San Francisco, Washington, D.C. and Boston ranked as the hardest. The report is from 2018 and rules have changed since, so use it to understand the pattern, not to judge a city today.
 
 Vending licenses are usually issued city by city, and some cities cap the number of permits. New York City, for example, caps truck permits and issues them from waiting lists (the details are in step 8).
 
@@ -90,7 +90,7 @@ Call your city and county health department and ask:
 
 If you are looking at a used truck, call the health department before you buy it. A truck that cannot pass inspection in your county is an expensive lesson.
 
-## 3. Write a food truck business plan
+## 3. Build your plan and your numbers
 
 A food truck business plan turns your idea into numbers a lender can check: startup costs, monthly sales, costs, and the cash you need before you break even. It is also for you, because it tells you how many customers a day you need to survive.
 
@@ -132,10 +132,11 @@ According to <a href="https://www.businessnewsdaily.com/9237-how-to-start-food-t
 | Permits and licenses | $100 to $7,500 | Business News Daily |
 | First-year regulatory costs | $1,000 to $30,000+ | Homebase |
 | Insurance, per year | $1,000 to $4,000 | Business News Daily |
+| Insurance, per year | $2,000 to $6,000 | Homebase |
 | Commissary, per month | $200 to $1,200 | Business News Daily |
 | Initial monthly product inventory | $1,000 to $2,500 | Business News Daily |
 
-Why do the sources disagree so much? Business News Daily says the spread comes from truck size, staff, hours of operation and other variables, and the biggest swing is whether you buy new or used and which city you operate in. Your menu matters too, because it drives the equipment list.
+Why do the sources disagree so much? Business News Daily attributes the spread to truck size, the number of people working the truck, hours of operation and other variables. The table shows two more: a new truck can cost several times a used one, and permit costs depend heavily on the city. Your menu matters too, because it drives the equipment list.
 
 Many published ranges also leave out working capital, deposits and the pre-opening months, which makes them look smaller than what you really need in the bank. In the worked example inside our kit, the total cash needed is $146,399. That figure includes the truck, build-out, equipment, permits, deposits, pre-opening months, a contingency and working capital. Treat it as an example to replace with your own quotes, not as a prediction.
 
@@ -182,7 +183,7 @@ When you inspect a used truck, check this list:
 - Refrigeration temperatures
 - Whether it already passed a health inspection in your county
 
-Also check whether you need a commercial driver's license. Under the <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383/subpart-F/section-383.91" rel="noopener">federal rule</a> (49 CFR 383.91), you need a CDL if the truck's gross vehicle weight rating is 26,001 lb or more, or if you tow a trailer rated over 10,000 lb and the combination is rated 26,001 lb or more. States can add their own rules, so confirm with your state's motor vehicle agency.
+Also check whether you need a commercial driver's license. Under federal rules, you need a CDL if the truck's gross vehicle weight rating is 26,001 lb or more, or if you tow a trailer rated over 10,000 lb and the combination is rated 26,001 lb or more. The vehicle groups are defined in <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383/subpart-F/section-383.91" rel="noopener">49 CFR 383.91</a>, and states can add their own rules, so confirm with your state's motor vehicle agency.
 
 ## 7. Sign a commissary agreement
 
@@ -232,19 +233,19 @@ The IRS explains how to <a href="https://www.irs.gov/businesses/small-businesses
 
 Texas changed its system with House Bill 2844, passed May 26, 2025. Beginning July 1, 2026, all mobile food vendors in Texas must be licensed with the Texas Department of State Health Services (DSHS). Before that, they needed licenses from the local health department of each jurisdiction where they operated.
 
-A normal food truck is a Type III vendor, which prepares, cooks, holds and serves food from the vehicle. Type III pays an $876 application fee plus a $500 pre-licensing inspection. Type II (prepackaged TCS food with limited handling) pays $618 plus $400, and Type I (no TCS food) pays $309. The license expires one year after the pre-licensing inspection. Cities such as Denison and McKinney say they keep regulating zoning, approved operating locations, and fire and life safety. You still need a Texas sales tax permit and any city requirements. See the <a href="https://www.dshs.texas.gov/retail-food-establishments/permits-retail-food-establishments/mobile-food-vendors" rel="noopener">Texas DSHS</a> page for current details.
+A normal food truck is a Type III vendor, which prepares, cooks, holds and serves food from the vehicle. Type III pays an $876 application fee plus a $500 pre-licensing inspection. Type II (prepackaged TCS food with limited handling) pays $618 plus $400, and Type I (no TCS food) pays $309. The license expires one year after the pre-licensing inspection. Cities keep their own say: <a href="https://denisontx.gov/789/Mobile-Food-Vendors" rel="noopener">Denison</a>, for example, says it still regulates zoning and approved operating locations, fire and life safety, and traffic and noise, and that state licensure does not override local zoning, parking or location restrictions. You still need a Texas sales tax permit. See the <a href="https://www.dshs.texas.gov/retail-food-establishments/permits-retail-food-establishments/mobile-food-vendors" rel="noopener">Texas DSHS</a> page for current details.
 
 ### New York City: license vs. permit
 
 New York City separates two things. The Mobile Food Vending License is personal: a photo ID badge from the Health Department, valid for two years. You apply in person and must pass the Health Department's food protection course, and there is no waiting list.
 
-The Mobile Food Vending Unit Permit covers the truck or cart. The number of permits is capped by law and issued from waiting lists. Since July 1, 2022, the city must offer 445 supervisory license applications a year for 10 years to people on the waitlist. Restricted Area permits, for private property with the owner's permission, have no waitlist. Check <a href="https://nyc-business.nyc.gov/nycbusiness/description/mobile-food-vending-license" rel="noopener">NYC Business</a> for the current process.
+The Mobile Food Vending Unit Permit covers the truck or cart, and it is the hard part: permits are capped and issued from waiting lists. When the Health Department updated its rules in 2022, the cap stood at 5,100 permits for units on public streets and sidewalks, and <a href="https://www.nyc.gov/assets/doh/downloads/pdf/notice/2022/noa-ch6-mfv.pdf" rel="noopener">Local Law 18 of 2021</a> requires it to issue 445 supervisory license applications a year for ten years, which opens 4,450 new permits over that decade. Restricted Area permits, for private property with the owner's permission, have no waitlist. Check <a href="https://nyc-business.nyc.gov/nycbusiness/description/mobile-food-vending-license" rel="noopener">NYC Business</a> for the current process.
 
 ### Los Angeles County: plan check first
 
-In Los Angeles County, a mobile food facility is a vehicle used in conjunction with a commissary or other permanent food facility. Before you operate, you go through the Plan Check Program: an application, two sets of plans and a fee. The initial fee covers two plan reviews and two field inspections.
+In Los Angeles County, a mobile food facility is a vehicle used in conjunction with a commissary or other permanent food facility. Before you operate, you go through the Plan Check Program: you submit one complete set of plans and specifications for the vehicle, fill in a plan check application and pay the plan check and construction evaluation fee. The initial plan check review takes up to 20 working days.
 
-Plans are reviewed within 20 working days, or 10 if expedited. Every vehicle also needs a valid Los Angeles County Public Health Permit to operate in the county. The process and forms live with <a href="https://publichealth.lacounty.gov/eh/inspection/plan-check-operational-guidelines-mobile-food-facilities-mobile-support-unit.htm" rel="noopener">LA County Environmental Health</a>.
+Once the plans are approved and the build is finished, the county evaluates the construction, and after the final inspection it issues the public health permit. Every vehicle needs a valid Los Angeles County Public Health Permit to operate in the county. The process and forms live with <a href="https://publichealth.lacounty.gov/eh/inspection/plan-check-operational-guidelines-mobile-food-facilities-mobile-support-unit.htm" rel="noopener">LA County Environmental Health</a>.
 
 Food safety training belongs in this step too. Many places require a certified food protection manager and food handler cards for staff, depending on the state. To build a routine you can run inside a small kitchen, read our guide to <a href="https://aichef.pro/en/blog/haccp-food-safety-7-principles-restaurants">the 7 HACCP principles</a>.
 
@@ -267,9 +268,9 @@ The figures below come from <a href="https://www.insureon.com/food-business-insu
 
 Typical general liability limits are $1 million per occurrence and $2 million aggregate. Event organizers and private property owners commonly ask for a certificate of insurance, often naming them as additional insured, so ask your agent how fast you can get one.
 
-A personal auto policy generally does not cover a vehicle used for business. Workers' comp is required in most states once you have employees, and Texas is the well-known exception, where most private employers can choose not to carry it.
+A personal auto policy generally does not cover a vehicle used for business. Workers' comp is required in most states once you have employees, and Texas is the well-known exception: the <a href="https://www.tdi.texas.gov/wc/employer/index.html" rel="noopener">Texas Department of Insurance</a> says private employers can choose to carry it, but it is not required in most cases.
 
-For a sense of the overall budget, Business News Daily puts insurance at $1,000 to $4,000 a year. Get quotes from an agent who knows mobile food, because a general business agent may miss the details of a vehicle that is also a kitchen.
+For a sense of the overall budget, Business News Daily puts insurance at $1,000 to $4,000 a year and Homebase at $2,000 to $6,000. Get quotes from an agent who knows mobile food, because a general business agent may miss the details of a vehicle that is also a kitchen.
 
 ## 10. Equip the kitchen
 
@@ -336,7 +337,7 @@ The closest official data comes from the <a href="https://www.bls.gov/opub/ted/2
 
 You will also see claims online that most food trucks fail within a few years. Those percentages rarely cite a source, so don't plan around them.
 
-Trucks that struggle usually share the same reasons: underestimating startup costs, running out of cash in slow months, spots or events that don't bring enough customers, permits that take longer than planned, and breakdowns. For benchmarks on what healthy numbers look like, read our article on <a href="https://aichef.pro/en/blog/restaurant-profit-margins-explained-benchmarks">restaurant profit margins</a>.
+Trucks that struggle usually share the same reasons: underestimating startup costs, running out of cash in slow months, spots or events that don't bring enough customers, permits that take longer than planned, and breakdowns. To see how margins are usually broken down across restaurant formats, read our article on <a href="https://aichef.pro/en/blog/restaurant-profit-margins-explained-benchmarks">restaurant profit margins</a>, and treat any single margin figure quoted for trucks as a rough reference, not a target.
 
 Before you buy the truck, run your numbers in a pessimistic scenario. The <a href="https://aichef.pro/en/digital-products/food-truck-business-plan">Food Truck Business Plan Kit</a> includes three scenarios (pessimistic, base and optimistic) so you can see what happens when sales come in lower than you hoped.
 
