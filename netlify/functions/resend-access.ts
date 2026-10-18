@@ -391,6 +391,60 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-bar (ver verify-purchase.ts).
+  'bar-checklist-templates': {
+    accessPath: '/en/digital-products/bar-checklist-templates/access',
+    emailSubject: 'Your access to Bar Checklists Kit Pro',
+    emailTitle: 'Access your Bar Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-cafeteria (ver verify-purchase.ts).
+  'coffee-shop-checklist-templates': {
+    accessPath: '/en/digital-products/coffee-shop-checklist-templates/access',
+    emailSubject: 'Your access to Coffee Shop Checklists Kit Pro',
+    emailTitle: 'Access your Coffee Shop Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-catering (ver verify-purchase.ts).
+  'catering-checklist-templates': {
+    accessPath: '/en/digital-products/catering-checklist-templates/access',
+    emailSubject: 'Your access to Catering Checklists Kit Pro',
+    emailTitle: 'Access your Catering Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-pizzeria (ver verify-purchase.ts).
+  'pizza-shop-checklist-templates': {
+    accessPath: '/en/digital-products/pizza-shop-checklist-templates/access',
+    emailSubject: 'Your access to Pizza Shop Checklists Kit Pro',
+    emailTitle: 'Access your Pizza Shop Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-hamburgueseria (ver verify-purchase.ts).
+  'burger-joint-checklist-templates': {
+    accessPath: '/en/digital-products/burger-joint-checklist-templates/access',
+    emailSubject: 'Your access to Burger Joint Checklists Kit Pro',
+    emailTitle: 'Access your Burger Joint Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-dark-kitchen (ver verify-purchase.ts).
+  'ghost-kitchen-checklist-templates': {
+    accessPath: '/en/digital-products/ghost-kitchen-checklist-templates/access',
+    emailSubject: 'Your access to Ghost Kitchen Checklists Kit Pro',
+    emailTitle: 'Access your Ghost Kitchen Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

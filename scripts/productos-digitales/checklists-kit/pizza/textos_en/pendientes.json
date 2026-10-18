@@ -1,0 +1,4542 @@
+{
+ "meta": {
+  "kit": "pizza",
+  "producto": "Pizza Shop Checklists Kit Pro",
+  "n_pendientes": 377,
+  "n_palabras": 2530,
+  "motivos": {
+   "contexto": 10,
+   "nueva": 358,
+   "adaptar": 8,
+   "corregida": 1
+  },
+  "n_heredadas": 247,
+  "heredadas_por_via": {
+   "exacta": 244,
+   "sufijo": 3
+  },
+  "heredadas_por_fuente": {
+   "base": 194,
+   "cafe": 50,
+   "bar": 3
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "pizza/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "pizza/textos_en/heredado.json (cómo se dijo ya cada cosa: base, bar, cafetería y catering)",
+   "pizza/mapas_pizza.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0009",
+   "es": "▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "01 · Instrucciones · B7",
+    "02 · Instrucciones · B7",
+    "03 · Instrucciones · B7",
+    "… +6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "el local → the shop / the pizzeria (nunca «restaurant» ni «venue»)"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ \"N/A\" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). \"—\" = not done: it still counts as pending and lowers the percentage, which is the point."
+  },
+  {
+   "id": "c0018",
+   "es": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Instrucciones · B22",
+    "02 · Instrucciones · B22",
+    "03 · Instrucciones · B22",
+    "… +8"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-pizzeria-opening-closing-checklist.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day."
+  },
+  {
+   "id": "c0019",
+   "es": "▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala).",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Instrucciones · B23",
+    "02 · Instrucciones · B23",
+    "03 · Instrucciones · B23",
+    "… +8"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-pizza-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0021",
+   "es": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.",
+   "grupo": "G1",
+   "palabras": 55,
+   "donde": [
+    "01 · Instrucciones · B25",
+    "02 · Instrucciones · B25",
+    "03 · Instrucciones · B25",
+    "… +8"
+   ],
+   "pistas": [
+    "el local → the shop / the pizzeria (nunca «restaurant» ni «venue»)"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail."
+  },
+  {
+   "id": "c0028",
+   "es": "Checklist de Apertura — Cocina / Obrador",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0041",
+   "es": "Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin esmalte: la masa se estira a mano",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "01 · Apertura Cocina · B7"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "adaptar": "FDA Food Code 2-303.11: sin joyas en manos y brazos SALVO un anillo liso (alianza); uñas cortas y limpias, sin esmalte ni postizas salvo con guantes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "  HORNO",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "01 · Apertura Cocina · A11",
+    "05 · Limpieza Semanal · A5",
+    "05 · Mantenimiento Mensual · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0047",
+   "es": "Encender la campana extractora y ventilar la cocina ANTES de encender el horno: la leña y el gas necesitan tiro desde el primer minuto",
+   "grupo": "G1",
+   "palabras": 24,
+   "donde": [
+    "01 · Apertura Cocina · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "Comprobar el tiro de la chimenea y que la trampilla del horno de leña está abierta antes de prender nada",
+   "grupo": "G1",
+   "palabras": 20,
+   "donde": [
+    "01 · Apertura Cocina · B13"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0050",
+   "es": "Encender horno de leña/piedra (precalentar 45-60 min)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B15"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Horno de leña, de gas o eléctrico (deck oven): precalentar el tiempo que diga su fabricante; 45-60 min como referencia del kit (el de leña suele necesitar más)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0051",
+   "es": "Verificar temperatura del horno (400-450 °C para napolitana)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F; ronda 1 M2: horno de piso de gas, de cinta o eléctrico: el objetivo de tu receta y del fabricante, sin cifra (napolitana)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Preparar leña/pellets si es horno de leña",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B17"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Leña seca (o pellets) guardada lejos de la boca del horno y de cualquier fuente de calor, como digan el fabricante y tu fire marshal",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0053",
+   "es": "Limpiar piedra del horno con cepillo de latón",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B18"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "Encender horno de pastas/gratinados si aplica",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B19"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0056",
+   "es": "  MASA Y MISE EN PLACE",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0057",
+   "es": "Comprobar que las cámaras han funcionado toda la noche y registrar temperatura (refrigeración 0-4 °C / congelación ≤ −18 °C) — anota la lectura: ____ °C. Si hay desviación, no uses la masa ni el género hasta valorarlo",
+   "grupo": "G1",
+   "palabras": 36,
+   "donde": [
+    "01 · Apertura Cocina · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe; «cámaras» = walk-in cooler y walk-in freezer",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0059",
+   "es": "Sacar bolas de masa de cámara (temperar 1-2h)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0060",
+   "es": "Verificar estado de la masa: fermentación, textura, burbujas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B23"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Preparar masa fresca si no hay suficiente del día anterior",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Cocina · B24"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0062",
+   "es": "Preparar salsa de tomate del día (si es casera)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B25"
+   ],
+   "adaptar": "Si la salsa se cocina: Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado, a 41 °F o menos y con fecha",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Cortar mozzarella fresca y escurrir",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B26"
+   ],
+   "adaptar": "La mozzarella es TCS: a 41 °F o menos (FDA Food Code 3-501.16); se corta en tandas pequeñas y vuelve a la cámara",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "Preparar toppings: pepperoni, jamón, champiñones, aceitunas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "Preparar vegetales: rúcula, tomate fresco, cebolla, pimiento — los de consumo crudo (rúcula, albahaca, tomate) se lavan y desinfectan con lejía apta para uso alimentario a la dosis del fabricante y se ACLARAN con agua potable abundante",
+   "grupo": "G1",
+   "palabras": 36,
+   "donde": [
+    "01 · Apertura Cocina · B28"
+   ],
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0066",
+   "es": "Montar línea de montaje: masa → salsa → queso → toppings",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B29"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench",
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "adaptar": "Línea de montaje = make line (pizza prep table refrigerada): los inserts de salsa, queso y toppings a 41 °F o menos (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0068",
+   "es": "Verificar stock de harina (00, integral)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0070",
+   "es": "Verificar stock de mozzarella y quesos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0071",
+   "es": "Verificar stock de tomate (lata/fresco)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "  HIGIENE PRE-SERVICIO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "Lavarse las manos al volver del reparto o después de manejar dinero, cajas o basura, ANTES de volver a tocar la masa",
+   "grupo": "G1",
+   "palabras": 22,
+   "donde": [
+    "01 · Apertura Cocina · B37"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Desinfectar superficies de trabajo y mesa de amasado",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B38"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "adaptar": "Mesa de trabajo y de amasado: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0078",
+   "es": "Verificar jabón y papel en dispensadores",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0081",
+   "es": "Firma encargado/a: _________________________    Hora: _________",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · A48",
+    "01 · Apertura Sala · A30",
+    "01 · Cierre Cocina · A35",
+    "… +21"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "encargado/a → shift manager (NUNCA «shift lead»)"
+   ],
+   "comun": true,
+   "motivo": "contexto: Shift lead",
+   "base_en": "Shift lead signature: _________________________    Time: _________",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0085",
+   "es": "  SALA",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "01 · Apertura Sala · A5",
+    "01 · Cierre Sala · A5"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0089",
+   "es": "Limpiar y montar mesas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Sala · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Actualizar pizarra: pizza del día, especiales",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B9"
+   ],
+   "pistas": [
+    "pizarra → menu board / chalkboard"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Poner música ambiental",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Sala · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0094",
+   "es": "Verificar TPV/datáfono funcionando",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Sala · B11"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0099",
+   "es": "Limpiar mesas de terraza",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Sala · B15"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "Abrir sombrillas si hace sol",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0101",
+   "es": "  DELIVERY / TAKE-AWAY",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Sala · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Encender tablets de delivery (Glovo, Uber Eats, Just Eat)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Sala · B18"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)",
+    "Glovo / Just Eat → DoorDash / Grubhub (Uber Eats se queda)"
+   ],
+   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "Verificar stock de cajas de pizza (medianas, grandes, familiares)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Sala · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "Verificar stock de bolsas, servilletas, salsas en sobre",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Sala · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "Actualizar menú en apps si hay cambios",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Sala · B21"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0107",
+   "es": "Checklist de Cierre — Cocina / Obrador",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "  MASA Y PRODUCTO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0109",
+   "es": "Guardar bolas de masa sobrantes en cámara (etiquetar fecha)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Cocina · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "adaptar": "Fermentación en frío (cold fermentation): las bolas, en cajas de masa (dough boxes) tapadas, a la cámara a 41 °F o menos y con la fecha (y la hora) de la masa; el plazo de uso lo marca tu receta (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0110",
+   "es": "Cubrir y refrigerar salsa de tomate",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "Guardar mozzarella en su líquido, tapar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B8"
+   ],
+   "adaptar": "Mozzarella fresca abierta: tapada, a 41 °F o menos y con date marking: 7 días como máximo contando el día de apertura, sin pasar el use-by (FDA Food Code 3-501.17(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Cubrir y refrigerar todos los toppings",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0113",
+   "es": "Etiquetar todo con fecha",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B10"
+   ],
+   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0114",
+   "es": "  HORNO Y EQUIPOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Dejar enfriar horno (no apagar de golpe si es de leña)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Cierre Cocina · B12"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Retirar ceniza del horno cuando esté frío",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B13"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Ronda 1 m1: la ceniza nunca en caliente al cierre; se retira en frío, normalmente a la mañana siguiente antes de encender, a un contenedor METÁLICO cerrado a 3 ft o más del horno (NFPA 96). Antes: La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0117",
+   "es": "Limpiar piedra del horno con cepillo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B14"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0118",
+   "es": "Apagar campana extractora",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "Con horno de leña, la campana no se apaga mientras quede fuego o brasas: lo que digan el fabricante del horno y el de la campana",
+   "motivo": "adaptar",
+   "base_en": "Turn off the exhaust hood"
+  },
+  {
+   "id": "c0120",
+   "es": "Limpiar mesa de amasado y enharinar ligeramente",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B17"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0121",
+   "es": "Limpiar línea de montaje y bandejas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B18"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0122",
+   "es": "Fregar utensilios: pala, cortapizza, rodillos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B19"
+   ],
+   "pistas": [
+    "pala → pizza peel; cortapizza → pizza cutter; rasqueta / cortador de masa → dough cutter (bench scraper); rodillo → rolling pin"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0125",
+   "es": "Sacar basura y reciclar (cartón de cajas)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "  PREPARACIÓN MAÑANA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Cocina · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0127",
+   "es": "Preparar masa para mañana (amasado nocturno, fermentación lenta)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Cocina · B23"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "adaptar": "Fermentación en frío (cold fermentation): las bolas, en cajas de masa (dough boxes) tapadas, a la cámara a 41 °F o menos y con la fecha (y la hora) de la masa; el plazo de uso lo marca tu receta (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "Anotar faltantes para pedido",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "Anotar las mermas del día (producto, cantidad y motivo): bolas de masa pasadas, pizzas devueltas o mal montadas y toppings retirados — sin este dato el food cost del mes sale mal",
+   "grupo": "G1",
+   "palabras": 31,
+   "donde": [
+    "01 · Cierre Cocina · B25"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Descongelar lo necesario para mañana",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B26"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Descongelar en la cámara a 41 °F o menos (FDA Food Code 3-501.13), nunca a temperatura ambiente",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "Checklist de Cierre — Sala, Terraza y Delivery",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Sala · A1"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D15: terraza → patio",
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "Desmontar mesas",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Sala · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0133",
+   "es": "Limpiar mesas con desinfectante",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B7"
+   ],
+   "adaptar": "Limpiar las mesas y luego sanitizarlas con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); paños en su cubo de sanitizante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "Barrer y fregar suelo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Reponer servilletas y condimentos para mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Recoger mesas y sillas (o encadenar)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "Cerrar sombrillas",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Sala · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "Apagar tablets de delivery",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B14"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0140",
+   "es": "Contar cajas de pizza restantes para mañana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Sala · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Anotar incidencias",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Sala · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "Estación del Pizzero — Horno y Masa",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pizzero Horno · A1"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench",
+    "pizzero / maestro pizzero → pizza maker (pizzaiolo); cocinero de línea → line cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Verificar temperatura del horno (400-450 °C napolitana / 300 °C romana)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Pizzero Horno · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F; ronda 1 M2: horno de piso de gas, de cinta o eléctrico: el objetivo de tu receta y del fabricante, sin cifra",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0164",
+   "es": "Temperar bolas de masa (sacar de cámara)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pizzero Horno · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Estirar primeras bases para hora punta",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pizzero Horno · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Preparar harina en mesa de trabajo (semola)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pizzero Horno · B9"
+   ],
+   "pistas": [
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Verificar pala de pizza: limpia y enharinada",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pizzero Horno · B10"
+   ],
+   "pistas": [
+    "pala → pizza peel; cortapizza → pizza cutter; rasqueta / cortador de masa → dough cutter (bench scraper); rodillo → rolling pin"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0169",
+   "es": "Estirar masa a mano (no rodillo para napolitana)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Pizzero Horno · B12"
+   ],
+   "pistas": [
+    "pala → pizza peel; cortapizza → pizza cutter; rasqueta / cortador de masa → dough cutter (bench scraper); rodillo → rolling pin",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Controlar tiempo de horneado: 60-90s napolitana / 3-5min romana",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Pizzero Horno · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "Girar pizza en horno para cocción uniforme",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pizzero Horno · B14"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0172",
+   "es": "Verificar punto de la masa: leopardo, no quemada",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Pizzero Horno · B15"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench",
+    "leopardo → leopard spotting (leoparding)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Mantener temperatura constante del horno",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Pizzero Horno · B16",
+    "04 · Pizzero · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "Añadir leña/ajustar gas según necesidad",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pizzero Horno · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0175",
+   "es": "Cortar pizza y enviar al pase",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pizzero Horno · B18"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "Limpiar mesa de amasado",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Pizzero Horno · B20",
+    "04 · Pizzero · B18"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "Limpiar pala y cortapizza",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Pizzero Horno · B21"
+   ],
+   "pistas": [
+    "pala → pizza peel; cortapizza → pizza cutter; rasqueta / cortador de masa → dough cutter (bench scraper); rodillo → rolling pin"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0179",
+   "es": "Barrer harina del suelo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Pizzero Horno · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Línea de Montaje — Salsa, Queso y Toppings",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Línea Montaje · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "Montar inserts de línea: salsa tomate, mozzarella, toppings",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Línea Montaje · B6"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "adaptar": "Línea de montaje = make line (pizza prep table refrigerada): los inserts de salsa, queso y toppings a 41 °F o menos (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Cortar mozzarella fresca y escurrir bien",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Línea Montaje · B7"
+   ],
+   "adaptar": "La mozzarella es TCS: a 41 °F o menos (FDA Food Code 3-501.16); se corta en tandas pequeñas y vuelve a la cámara",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0184",
+   "es": "Laminar champiñones, cortar pimientos, aceitunas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Línea Montaje · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Preparar carnes: pepperoni, jamón, salchicha italiana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Línea Montaje · B9"
+   ],
+   "adaptar": "Carne cruda (p. ej. salchicha italiana sin cocinar) en su propio insert y con su utensilio, separada de lo listo para consumir (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "Preparar vegetales premium: rúcula, tomate cherry, alcachofa — la rúcula y la albahaca se añaden CRUDAS al salir del horno: lavar, desinfectar (lejía alimentaria a la dosis del fabricante) y aclarar con agua potable",
+   "grupo": "G1",
+   "palabras": 33,
+   "donde": [
+    "02 · Línea Montaje · B10"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»; la rúcula y la albahaca van crudas al salir del horno",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0187",
+   "es": "Verificar stock de cada ingrediente en línea",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Línea Montaje · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "Montar pizzas según comanda: base → salsa → queso → toppings",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Línea Montaje · B13"
+   ],
+   "pistas": [
+    "comanda → ticket; 86s → 86s (86'd items)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Reponer inserts cuando bajen al 30%",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Línea Montaje · B14"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "Mantener zona limpia y organizada",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Línea Montaje · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "Comunicar al pizzero: pizza lista para horno",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Línea Montaje · B16"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper",
+    "pizzero / maestro pizzero → pizza maker (pizzaiolo); cocinero de línea → line cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Limpiar línea de montaje completa",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Línea Montaje · B19"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "adaptar": "Limpiar la make line completa y sanitizarla con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0194",
+   "es": "Anotar las mermas del turno (producto, cantidad y motivo): inserts que no se pueden guardar, mozzarella oxidada y vegetales pasados",
+   "grupo": "G1",
+   "palabras": 20,
+   "donde": [
+    "02 · Línea Montaje · B20"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0195",
+   "es": "Anotar consumos para pedido de mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Línea Montaje · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0196",
+   "es": "Cocina Complementaria — Entrantes, Pasta y Postres",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Complementaria · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0197",
+   "es": "Lavar y desinfectar las hojas de consumo crudo (lechuga, rúcula, albahaca) con lejía apta para uso alimentario a la dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARAR con agua potable ANTES de montar las ensaladas base (César, caprese, mixta)",
+   "grupo": "G1",
+   "palabras": 41,
+   "donde": [
+    "02 · Complementaria · B6"
+   ],
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0198",
+   "es": "Preparar antipasti: bruschetta, arancini, focaccia",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Complementaria · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Hervir pasta fresca si aplica",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Complementaria · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "Preparar salsas de pasta: carbonara, pesto, arrabbiata",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Complementaria · B9"
+   ],
+   "adaptar": "Carbonara con huevo pasteurizado, o aviso al consumidor en la carta si lleva huevo crudo o poco hecho (FDA Food Code 3-603.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Montar postres: tiramisú, panna cotta, helado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Complementaria · B10"
+   ],
+   "adaptar": "Tiramisú con huevo pasteurizado, o aviso al consumidor en la carta si lleva huevo crudo o poco hecho (FDA Food Code 3-603.11); los postres TCS (tiramisú, panna cotta) a 41 °F o menos con date marking (7 días, FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Cocinar entrantes y pasta según comanda",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Complementaria · B12"
+   ],
+   "pistas": [
+    "comanda → ticket; 86s → 86s (86'd items)"
+   ],
+   "adaptar": "Lo hecho antes que se vaya a mantener en caliente se recalienta a 165 °F en 2 h como máximo (FDA Food Code 3-403.11) y se mantiene a 135 °F o más (salsas y pre-elaboraciones)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Emplatar y enviar al pase coordinando con pizzas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Complementaria · B13"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0204",
+   "es": "Reponer mise en place de pasta y ensaladas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Complementaria · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0205",
+   "es": "Guardar salsas y pre-elaboraciones etiquetadas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Complementaria · B16"
+   ],
+   "adaptar": "Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado; etiquetar con date marking (7 días como máximo contando el día de preparación, FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0206",
+   "es": "Limpiar zona de cocción",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Complementaria · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Revisar reservas del día",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Diario Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Briefing: especiales, alérgenos, 86s, reservas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B8"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "«86» / «86s» es jerga US: se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Verificar stock crítico: masa, mozzarella, harina, tomate",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B9"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0222",
+   "es": "Revisar estado del horno (si hubo problema ayer)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B10"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0223",
+   "es": "Supervisar tiempos: pizza debe salir en <15 min",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "Controlar calidad: verificar pizzas antes del pase",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B14"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Gestionar pedidos delivery: tiempos y calidad",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B15"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0230",
+   "es": "Cuadrar caja (efectivo + tarjeta + delivery)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B19"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)",
+    "cuadrar caja → cash up / balance the drawer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0231",
+   "es": "Hacer pedidos para mañana (harina, mozzarella, tomate)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "Verificar que se preparó masa para mañana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B23"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "Revisar ventas semana anterior (dine-in vs delivery)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal Manager · B6"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "Analizar pizzas más vendidas y menos vendidas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Revisar feedback: Google, TripAdvisor, apps delivery",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B8"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "adaptar": "Plataformas US: Google, Yelp y TripAdvisor, más las apps de delivery",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Evaluar desperdicio de masa y toppings",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B9"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "  PEDIDOS",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Semanal Manager · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0245",
+   "es": "Pedido semanal de harina (00, semola)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B11"
+   ],
+   "pistas": [
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Pedido de mozzarella y quesos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0247",
+   "es": "Pedido de tomate (San Marzano, pelado)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Pedido de embutidos y carnes",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Verificar stock de cajas pizza y packaging delivery",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal Manager · B15"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Refuerzo para viernes-sábado si es necesario",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Verificar estado del horno",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Semanal Manager · B22"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Revisar caducidades en almacén y cámaras",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Revisar P&L del mes",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Calcular food cost del mes (objetivo: 28-32%)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0268",
+   "es": "Revisar comisiones de apps delivery",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B10"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Revisión completa del horno: piedra, quemadores, chimenea",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual Manager · B13"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0272",
+   "es": "Lavavajillas: filtros, abrillantador, sal",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B14",
+    "05 · Mantenimiento Mensual · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0273",
+   "es": "Campana extractora: filtros",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Mensual Manager · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0274",
+   "es": "Climatización: filtros",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Mensual Manager · B16",
+    "05 · Mantenimiento Mensual · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "Botiquín: stock y caducidades",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0276",
+   "es": "  MARKETING",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Mensual Manager · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0277",
+   "es": "Evaluar carta: rotar pizzas estacionales",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0278",
+   "es": "Planificar promociones del mes siguiente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Revisar fotos de RRSS y apps delivery",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual Manager · B21"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)",
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "  ESTADO",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Handover Turno · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "Pedidos delivery pendientes",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · B8"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "Incidencias del turno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "Quejas de clientes",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "86s: qué se ha agotado",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B12"
+   ],
+   "pistas": [
+    "«86» / «86s» es jerga US: se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "  STOCK",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Handover Turno · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Estado de la masa (cuántas bolas quedan)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Handover Turno · B14"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Estado de mozzarella y toppings",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Cajas de pizza restantes",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "Temperatura del horno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Tareas Diarias — Pizzero / Maestro Pizzero",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Pizzero · A1"
+   ],
+   "pistas": [
+    "pizzero / maestro pizzero → pizza maker (pizzaiolo); cocinero de línea → line cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "Encender horno y esperar temperatura óptima",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pizzero · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "Sacar masa de cámara y temperar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pizzero · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0306",
+   "es": "Preparar mesa: harina, semola, pala",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Pizzero · B8"
+   ],
+   "pistas": [
+    "pala → pizza peel; cortapizza → pizza cutter; rasqueta / cortador de masa → dough cutter (bench scraper); rodillo → rolling pin",
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "Verificar estado de la masa: textura y fermentación",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Pizzero · B9"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "Estirar bases para hora punta",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Pizzero · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Estirar masa a mano para cada pizza",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Pizzero · B12"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Introducir pizza en horno con pala",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pizzero · B13"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper",
+    "pala → pizza peel; cortapizza → pizza cutter; rasqueta / cortador de masa → dough cutter (bench scraper); rodillo → rolling pin"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Controlar cocción: girar, verificar base",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Pizzero · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Cortar y enviar al pase",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Pizzero · B16"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Preparar masa para mañana (amasado nocturno)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pizzero · B19"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "adaptar": "Fermentación en frío (cold fermentation): las bolas, en cajas de masa (dough boxes) tapadas, a la cámara a 41 °F o menos y con la fecha (y la hora) de la masa; el plazo de uso lo marca tu receta (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Limpiar pala, cortapizza, rodillo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Pizzero · B20"
+   ],
+   "pistas": [
+    "pala → pizza peel; cortapizza → pizza cutter; rasqueta / cortador de masa → dough cutter (bench scraper); rodillo → rolling pin"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Retirar ceniza del horno cuando enfríe",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Pizzero · B21"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Ronda 1 m1: la ceniza nunca en caliente al cierre; se retira en frío, normalmente a la mañana siguiente antes de encender, a un contenedor METÁLICO cerrado a 3 ft o más del horno (NFPA 96). Antes: La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de plástico (NFPA 96, cocina con combustible sólido)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "Tareas Diarias — Cocinero de Línea",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Cocinero Línea · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Cortar mozzarella y escurrir",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0320",
+   "es": "Preparar todos los toppings en inserts",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Cocinero Línea · B7"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0321",
+   "es": "Montar línea de montaje ordenada",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Cocinero Línea · B8"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Preparar salsa de tomate si es casera",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Cocinero Línea · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0323",
+   "es": "Verificar stock de cada ingrediente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Cocinero Línea · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0324",
+   "es": "Montar pizzas según comanda",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B12"
+   ],
+   "pistas": [
+    "comanda → ticket; 86s → 86s (86'd items)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Reponer inserts cuando bajen",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B13"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Mantener línea limpia y organizada",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Cocinero Línea · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0327",
+   "es": "Preparar entrantes y pasta si aplica",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Cocinero Línea · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "Limpiar línea de montaje",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B18"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0329",
+   "es": "Anotar consumos para pedido",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0330",
+   "es": "Tareas Diarias — Encargado/a",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado/a → shift manager (NUNCA «shift lead»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0332",
+   "es": "Verificar equipo completo",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Encargado · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0333",
+   "es": "Briefing: especiales, 86s, reservas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B8"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "«86» / «86s» es jerga US: se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0334",
+   "es": "Encender tablets delivery",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Encargado · B9"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "Preparar caja",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0336",
+   "es": "Supervisar tiempos de cocina y delivery",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado · B12"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0337",
+   "es": "Resolver incidencias",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0338",
+   "es": "Controlar calidad en pase",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B15"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0339",
+   "es": "Supervisar cierre completo",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Encargado · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0340",
+   "es": "Cuadrar caja",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B18"
+   ],
+   "pistas": [
+    "cuadrar caja → cash up / balance the drawer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0342",
+   "es": "Cerrar local: alarma, luces, gas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado · B20"
+   ],
+   "pistas": [
+    "el local → the shop / the pizzeria (nunca «restaurant» ni «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "Colocar menús en mesas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "Reponer condimentos: aceite picante, orégano, parmesano",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0349",
+   "es": "Tomar comandas (conocer alérgenos)",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B12"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "comanda → ticket; 86s → 86s (86'd items)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una pizzería, trigo y leche van en casi todo. El gluten en sí no es uno de los 9 (el trigo sí) y la lactosa es una intolerancia, no un alérgeno: se recogen igual; en UK, los 14 (cereales con gluten)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "Servir pizzas y bebidas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B13"
+   ],
+   "adaptar": "Cerveza y vino solo si tu licencia lo permite, a mayores de 21 con ID; nunca a quien esté visiblemente ebrio (ronda 1 m5)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "Limpiar mesa rápido entre clientes",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Camarero · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0352",
+   "es": "Ofrecer postre y café proactivamente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Camarero · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0353",
+   "es": "Cobrar sin demora",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Camarero · B16"
+   ],
+   "adaptar": "Costumbre US: la cuenta se lleva cuando la mesa ha terminado o la pide, sin meter prisa; escríbelo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0354",
+   "es": "Desmontar y limpiar mesas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "Reponer condimentos para mañana",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0357",
+   "es": "Tareas Diarias — Repartidor / Rider (si propio)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Repartidor · A1"
+   ],
+   "pistas": [
+    "repartidor / rider → delivery driver"
+   ],
+   "adaptar": "Repartidor propio → in-house delivery driver (no las apps)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0358",
+   "es": "  INICIO TURNO",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Repartidor · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0359",
+   "es": "Verificar moto/bici: gasolina, luces, neumáticos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Repartidor · B6"
+   ],
+   "adaptar": "En EE. UU. el repartidor suele usar su coche: combustible, luces y neumáticos; carnet y seguro del vehículo en vigor y archivados (el seguro personal puede excluir el reparto: que lo confirme con su aseguradora)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0361",
+   "es": "Verificar bolsa térmica: limpia, en buen estado",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Repartidor · B7"
+   ],
+   "pistas": [
+    "bolsa térmica → insulated delivery bag (hot bag)"
+   ],
+   "adaptar": "Bolsa térmica = insulated delivery bag (hot bag): limpia y cerrada; lo caliente a 135 °F o más y lo frío (bebidas, ensaladas, postres) en una bolsa aparte a 41 °F o menos (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0362",
+   "es": "Verificar cargador de móvil y GPS funcionando",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Repartidor · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0363",
+   "es": "Recoger pedido: verificar comanda vs contenido caja",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Repartidor · B10"
+   ],
+   "pistas": [
+    "comanda → ticket; 86s → 86s (86'd items)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0364",
+   "es": "Transportar sin inclinar (queso se desplaza)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Repartidor · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0365",
+   "es": "Entregar en tiempo: objetivo <30 min desde pedido",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Repartidor · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0366",
+   "es": "Cobrar si es contra reembolso",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Repartidor · B13"
+   ],
+   "pistas": [
+    "contra reembolso → cash on delivery"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0367",
+   "es": "Volver al local sin demora",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Repartidor · B14"
+   ],
+   "pistas": [
+    "el local → the shop / the pizzeria (nunca «restaurant» ni «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "  FIN TURNO",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Repartidor · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "Limpiar bolsa térmica",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Repartidor · B16"
+   ],
+   "pistas": [
+    "bolsa térmica → insulated delivery bag (hot bag)"
+   ],
+   "adaptar": "Limpiar el interior de la bolsa, desinfectarlo con un sanitizante apto para superficies en contacto con alimentos y dejarla secar abierta",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0370",
+   "es": "Entregar efectivo recaudado al encargado",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Repartidor · B17"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado/a → shift manager (NUNCA «shift lead»)"
+   ],
+   "adaptar": "El efectivo de los pedidos, al shift manager con sus tickets; las propinas del repartidor son suyas: el negocio no puede quedárselas (FLSA, 29 U.S.C. 203(m)(2)(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0371",
+   "es": "Reportar incidencias de entrega",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Repartidor · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "▸ La hoja «Trimestral y Anual» recoge el mantenimiento que se CONTRATA y que se pide en una inspección: DDD, conductos de extracción y chimenea del horno de leña, extintores y BIE, instalación de gas, legionela, agua, seguro y facturación.",
+   "grupo": "G2",
+   "palabras": 39,
+   "donde": [
+    "05 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana, conductos y chimenea del horno de leña (NFPA 96), revisión del horno, extintores y su prueba hidrostática, extinción de la campana, gas, frío, legionela, agua, aceite usado, residuos, seguros y POS / sales tax. Sin DDD, BIE, Verifactu ni facturación española",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "▸ En la hoja mensual quedan las comprobaciones que hace tu propio equipo (filtros de campana, vista del extintor): no sustituyen a la revisión contratada, la preparan.",
+   "grupo": "G2",
+   "palabras": 26,
+   "donde": [
+    "05 · Instrucciones · B8"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "▸ Al pie de «FIFO Semanal» tienes una tabla editable de vida útil en congelación por familia: una regla única para todo el congelador o tira masa buena o valida embutido pasado.",
+   "grupo": "G2",
+   "palabras": 31,
+   "donde": [
+    "05 · Instrucciones · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "FIFO Semanal",
+     "en": "Weekly FIFO Check"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Inventario Diario — Stock de Producción Pizzería",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario Diario · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Pizzería»; pizzería → pizza shop / pizzeria"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Noche    Responsable: ________________",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Inventario Diario · A2"
+   ],
+   "pistas": [
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»",
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0392",
+   "es": "Pedido",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · F4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "  MASA Y HARINA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Bolas de masa listas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A6"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Harina 00",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A7"
+   ],
+   "pistas": [
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Harina semola",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A8"
+   ],
+   "pistas": [
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0399",
+   "es": "Levadura fresca",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0401",
+   "es": "Sal",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0402",
+   "es": "  QUESOS",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0403",
+   "es": "Mozzarella fior di latte",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A12"
+   ],
+   "pistas": [
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0404",
+   "es": "Mozzarella di bufala",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A13"
+   ],
+   "pistas": [
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0405",
+   "es": "Parmesano rallado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0406",
+   "es": "Gorgonzola",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0407",
+   "es": "Burrata",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Salsa de tomate (preparada)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0411",
+   "es": "Tomate San Marzano (latas)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario Diario · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0412",
+   "es": "Pesto",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "Aceite de oliva virgen extra",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Diario · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Aceite de trufa",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0416",
+   "es": "  EMBUTIDOS Y CARNES",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0417",
+   "es": "Pepperoni",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Jamón cocido",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Salchicha italiana",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0420",
+   "es": "Anchoas",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Prosciutto crudo",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0422",
+   "es": "  VEGETALES Y FRESCOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Champiñones frescos",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Aceitunas negras",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "Pimientos",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "Cebolla",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0427",
+   "es": "Rúcula",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "Tomate cherry",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Albahaca fresca",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0431",
+   "es": "  PACKAGING",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0432",
+   "es": "Cajas pizza mediana",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A38"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Cajas pizza grande",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "Cajas pizza familiar",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0436",
+   "es": "Bolsas delivery",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A42"
+   ],
+   "pistas": [
+    "bolsa térmica → insulated delivery bag (hot bag)",
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0437",
+   "es": "Firma: _________________________",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A44"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "Limpiar piedra del horno a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B6"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0441",
+   "es": "Limpiar exterior del horno",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B7"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0442",
+   "es": "Limpiar chimenea si es horno de leña",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B8"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "El equipo limpia la boca y lo accesible del tiro; el conducto y la chimenea los inspecciona y limpia el contratista (hojas «Monthly Maintenance» y «Quarterly & Annual», NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0443",
+   "es": "Revisar juntas y aislamiento del horno",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B9"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0445",
+   "es": "Limpiar interior de cámaras",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Desinfectar tablas de corte",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B14"
+   ],
+   "adaptar": "Tablas de corte: lavar, aclarar y sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0451",
+   "es": "Limpiar cristales",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Limpieza Semanal · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0452",
+   "es": "Fregar suelos con desengrasante",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0453",
+   "es": "Limpieza profunda de baños",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0454",
+   "es": "Limpiar terraza a fondo",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B20"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0455",
+   "es": "Revisión FIFO — Control de Caducidades",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0456",
+   "es": "  CÁMARAS",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · FIFO Semanal · A5"
+   ],
+   "pistas": [
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0457",
+   "es": "Verificar fechas de masa preparada",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B6"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "adaptar": "Masa preparada: la fecha (y la hora) de cada caja de masa; se usa en el plazo de tu receta, la más antigua primero",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0458",
+   "es": "Revisar mozzarella: fecha apertura, estado",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B7"
+   ],
+   "adaptar": "Mozzarella fresca abierta: tapada, a 41 °F o menos y con date marking: 7 días como máximo contando el día de apertura, sin pasar el use-by (FDA Food Code 3-501.17(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0459",
+   "es": "Revisar embutidos abiertos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B8"
+   ],
+   "adaptar": "Fiambres abiertos (jamón cocido): date marking, 7 días como máximo contando el día de apertura (FDA Food Code 3-501.17); el pepperoni curado y el prosciutto, según la etiqueta del fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0461",
+   "es": "Desechar producto caducado",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0462",
+   "es": "Comprobar que ningún producto congelado supera su vida útil (ver la tabla al pie de esta hoja)",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "05 · FIFO Semanal · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0463",
+   "es": "  ALMACÉN",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · FIFO Semanal · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0464",
+   "es": "Revisar harina: fecha, humedad, insectos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0465",
+   "es": "Revisar latas de tomate: fecha, abolladuras",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0466",
+   "es": "Verificar aceite de oliva: fecha, sabor",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0467",
+   "es": "Revisar stock de packaging",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0472",
+   "es": "Bolas de masa congeladas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B29"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0474",
+   "es": "El gluten pierde fuerza y la levadura, actividad: descongela 24 h en cámara, nunca a temperatura ambiente",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "05 · FIFO Semanal · D29"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "Descongela en la cámara a 41 °F o menos (FDA Food Code 3-501.13), nunca a temperatura ambiente",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0475",
+   "es": "Mozzarella rallada o en bloque",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0477",
+   "es": "La fior di latte fresca en su líquido NO se congela: se rompe y suelta agua sobre la pizza",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "05 · FIFO Semanal · D30"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "fior di latte → fresh mozzarella (fior di latte); mozzarella di bufala → buffalo mozzarella; semola → semolina; harina 00 → 00 flour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0478",
+   "es": "Embutido curado (pepperoni, salchichón)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0479",
+   "es": "La grasa se enrancia aunque esté congelada: es lo que antes se estropea",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · FIFO Semanal · D31"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0480",
+   "es": "Salchicha italiana y carne picada",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0481",
+   "es": "Mucha superficie expuesta: la familia más delicada de todas",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · FIFO Semanal · D32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0482",
+   "es": "Jamón cocido y fiambres",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0483",
+   "es": "Sueltan agua al descongelar: congélalos ya porcionados por servicio",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · FIFO Semanal · D33"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0484",
+   "es": "Salsa de tomate y fondos propios",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0487",
+   "es": "Pan, focaccia y masas horneadas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B35"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0490",
+   "es": "Verdura escaldada (champiñón, pimiento)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0493",
+   "es": "Marisco y pescado de topping",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0494",
+   "es": "El azul y el marisco son los primeros en enranciarse",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · FIFO Semanal · D37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0496",
+   "es": "Inspección completa del horno: piedra, quemadores, aislamiento",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B6"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0497",
+   "es": "Limpiar chimenea a fondo (horno de leña)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B7"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Sistema de extracción del horno de leña (campana, conducto y chimenea): inspección MENSUAL de grasa y creosota por una persona cualificada y limpieza cuando haya depósitos (NFPA 96, cocina con combustible sólido)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0498",
+   "es": "Calibrar termómetro del horno",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mantenimiento Mensual · B8"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0499",
+   "es": "Verificar válvulas de gas (si es horno de gas)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Mantenimiento Mensual · B9"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0500",
+   "es": "  GENERAL",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Mantenimiento Mensual · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0501",
+   "es": "Campana extractora: desengrasar y sustituir filtros; la limpieza de los CONDUCTOS por empresa homologada está en la hoja «Trimestral y Anual»",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "05 · Mantenimiento Mensual · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0502",
+   "es": "Extintor: comprobación visual del usuario (aguja en zona verde, precinto intacto, acceso libre); la revisión oficial la hace el mantenedor y está en la hoja «Trimestral y Anual»",
+   "grupo": "G2",
+   "palabras": 28,
+   "donde": [
+    "05 · Mantenimiento Mensual · B14"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "Inspección visual mensual (OSHA 1910.157(e)(2)): manómetro en verde, pasador y precinto, acceso libre, etiqueta firmada",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0503",
+   "es": "Botiquín: stock, caducidades",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0530",
+   "es": "Revisar el contrato de residuos y la retirada de cartón: las cajas de pizza son el grueso del volumen",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "05 · Trimestral y Anual · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0534",
+   "es": "Calibrar los termómetros y la sonda del horno contra un patrón conocido",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "05 · Trimestral y Anual · B21"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Calibración por el método del punto de hielo (32 °F); la sonda del horno, según su fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0543",
+   "es": "Noche de Fútbol / Super Bowl — Pico de Delivery",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Noche Fútbol · A1"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)",
+    "fútbol → (American) football: NFL Sundays, Monday Night Football, Super Bowl; noche de partido → game night"
+   ],
+   "adaptar": "Fútbol → fútbol americano (NFL): «Game Night / Super Bowl — Delivery Rush»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0546",
+   "es": "  PREPARACIÓN (DÍA ANTES)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Noche Fútbol · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0547",
+   "es": "Preparar 50% más masa de lo normal",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Noche Fútbol · B6"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0549",
+   "es": "Pedido extra de mozzarella y pepperoni",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Fútbol · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0551",
+   "es": "Verificar stock doble de cajas delivery",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Fútbol · B8"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0552",
+   "es": "Reforzar equipo: pizzero extra, repartidor extra",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Fútbol · B9"
+   ],
+   "pistas": [
+    "repartidor / rider → delivery driver",
+    "pizzero / maestro pizzero → pizza maker (pizzaiolo); cocinero de línea → line cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0554",
+   "es": "Publicar oferta en RRSS: combo partido",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Fútbol · B10"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "adaptar": "Oferta para el partido (game-day deal / combo) en redes sociales",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0555",
+   "es": "  DÍA DEL EVENTO",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Noche Fútbol · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0556",
+   "es": "Preparar bolas de masa extra",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B12"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0558",
+   "es": "Duplicar inserts de toppings más populares",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Fútbol · B13"
+   ],
+   "pistas": [
+    "línea de montaje → make line (pizza prep table); inserts → inserts; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0559",
+   "es": "Activar apps delivery con tiempo",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B14"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0560",
+   "es": "Tener cajas pre-montadas listas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0561",
+   "es": "Gestionar cola de pedidos sin perder calidad",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Noche Fútbol · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0562",
+   "es": "Tareas Específicas — San Valentín",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · San Valentín · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0563",
+   "es": "  PREPARACIÓN",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · San Valentín · A5",
+    "06 · Navidad · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0564",
+   "es": "Diseñar pizza especial de San Valentín (forma corazón)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · San Valentín · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0566",
+   "es": "Ingredientes premium: trufa, burrata, prosciutto",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · San Valentín · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0568",
+   "es": "Decoración: velas (LED), flores, manteles",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · San Valentín · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0569",
+   "es": "Publicar en RRSS y aceptar reservas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B9"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0570",
+   "es": "  DÍA",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · San Valentín · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0572",
+   "es": "Preparar pizza corazón para las comandas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B12"
+   ],
+   "pistas": [
+    "comanda → ticket; 86s → 86s (86'd items)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0573",
+   "es": "Ofrecer postre especial: tiramisú para dos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0574",
+   "es": "Prosecco de cortesía para parejas (si aplica)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B14"
+   ],
+   "adaptar": "Bebida de bienvenida para parejas: sin alcohol, o un prosecco solo donde tu licencia y tu estado permiten regalar alcohol (21+ con ID)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0576",
+   "es": "Tareas Específicas — Navidad y Fin de Año",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0578",
+   "es": "Recoger POR ESCRITO alérgenos, intolerancias y dietas de los comensales y trasladarlos a cocina: en una pizzería el gluten y la lactosa son la norma, no la excepción",
+   "grupo": "G2",
+   "palabras": 28,
+   "donde": [
+    "06 · Navidad · B6"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una pizzería, trigo y leche van en casi todo. El gluten en sí no es uno de los 9 (el trigo sí) y la lactosa es una intolerancia, no un alérgeno: se recogen igual; en UK, los 14 (cereales con gluten); por escrito",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0580",
+   "es": "Cerrar por escrito el precio por comensal y qué incluye (entrantes, pizzas, bebida, postre y café)",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "06 · Navidad · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0583",
+   "es": "Acordar la hora de entrada y de salida de la mesa y reservar masa suficiente para el grupo el día anterior",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "06 · Navidad · B10"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0584",
+   "es": "Diseñar carta navideña (pizza de trufa, calzone especial)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Navidad · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0586",
+   "es": "Stock extra para semana sin entregas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B13"
+   ],
+   "adaptar": "Stock extra para los días en que tus proveedores no entregan (sobre todo Christmas Day y New Year's Day)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0588",
+   "es": "Planificar horarios especiales",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Navidad · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0589",
+   "es": "Decorar local con tema navideño",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · B15"
+   ],
+   "pistas": [
+    "el local → the shop / the pizzeria (nunca «restaurant» ni «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0592",
+   "es": "Pizza de Navidad: trufa, quesos especiales",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0593",
+   "es": "Calzone especial festivo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Navidad · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0594",
+   "es": "Postre navideño: panettone, tiramisú al pandoro",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0595",
+   "es": "Verificar stock para toda la semana",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0597",
+   "es": "Inicio / Fin de Temporada de Terraza",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Terraza · A1"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0598",
+   "es": "  APERTURA (PRIMAVERA)",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Temporada Terraza · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0599",
+   "es": "Sacar mobiliario de almacén",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0601",
+   "es": "Limpiar mesas y sillas a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Terraza · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0602",
+   "es": "Verificar estado del mobiliario",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0603",
+   "es": "Colocar sombrillas y decoración",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0604",
+   "es": "Verificar permiso de terraza vigente",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Terraza · B10"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Permiso de la ciudad: outdoor dining / sidewalk cafe permit: comprobar que está vigente y renovarlo si caduca esta temporada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0605",
+   "es": "  CIERRE (OTOÑO)",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Temporada Terraza · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0606",
+   "es": "Recoger y limpiar mobiliario",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0608",
+   "es": "Guardar sombrillas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Temporada Terraza · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0609",
+   "es": "Inventario de mobiliario: roturas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0652",
+   "es": "▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "08 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day."
+  },
+  {
+   "id": "c0653",
+   "es": "▸ El detalle por área (cocina, sala) va en 01-apertura-cierre.xlsx: no repitas el trabajo, cada fichero cubre un nivel distinto.",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "08 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-pizza-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0660",
+   "es": "Apertura del Negocio — Pizzería",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Pizzería»; pizzería → pizza shop / pizzeria"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Opening Checklist"
+  },
+  {
+   "id": "c0667",
+   "es": "Abrir persianas / puerta principal",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B8"
+   ],
+   "adaptar": "Persianas → security gate / shutters; añade: salidas de emergencia despejadas y señales de salida (exit signs) iluminadas",
+   "motivo": "corregida: ronda 1 m15 del bar: + salidas de emergencia despejadas y señales de salida",
+   "base_en": "Raise security gate and open front door"
+  },
+  {
+   "id": "c0682",
+   "es": "Encender horno de leña (precalentar 1h antes del servicio)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "08 · Apertura del Negocio · B20"
+   ],
+   "pistas": [
+    "horno de leña → wood-fired oven; de piedra / solera → deck oven (stone deck); de cinta → conveyor oven; boca → oven mouth; tiro / trampilla → draft / flue damper"
+   ],
+   "adaptar": "Ronda 1 m2: primero la campana, luego el horno. Horno de leña: encenderlo con tiempo para que llegue a temperatura antes del servicio, el que diga su fabricante (1 h como referencia del kit; el de leña suele necesitar más)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0683",
+   "es": "Montar barra de pizza si es visible",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Apertura del Negocio · B21"
+   ],
+   "adaptar": "Ronda 1 m3: con procedimiento escrito a mano. Si en esa barra expones porciones (pizza by the slice): en vitrina caliente a 135 °F o más, o con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0685",
+   "es": "Cierre del Negocio — Pizzería",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Cierre del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Pizzería»; pizzería → pizza shop / pizzeria"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Closing Checklist"
+  },
+  {
+   "id": "c0835",
+   "es": "▸ Consulta las fechas clave de hostelería mes a mes",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ Check the key restaurant dates month by month"
+  },
+  {
+   "id": "c0839",
+   "es": "Calendario Anual — Fechas Clave de Hostelería",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · A1"
+   ],
+   "motivo": "contexto: Restaurants",
+   "base_en": "Holiday Calendar — Key Dates for Restaurants"
+  },
+  {
+   "id": "c0846",
+   "es": "Decidir si se abre; si se cierra, comunicarlo en Google Business Profile, en la web y en las apps de delivery con 1 semana",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "B02 · Calendario Anual · C5"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0849",
+   "es": "Roscón de Reyes, menú familiar",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C6"
+   ],
+   "adaptar": "Evento EN: «Feb 9 — National Pizza Day + Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. National Pizza Day (9-feb): una oferta de un día y un post. Super Bowl, uno de los días de más pizza a domicilio del año en EE. UU.: pedidos anticipados y grandes (party orders), más bolas de masa fermentando con antelación, repartidores y cajas extra, menú corto para sacar más pedidos por hora",
+   "motivo": "adaptar",
+   "base_en": "Pre-orders for takeout (wings, party platters), screens at the bar, extra bar and delivery staff"
+  },
+  {
+   "id": "c0872",
+   "es": "Menú especial, reservas ampliadas, detalle",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C14"
+   ],
+   "motivo": "contexto: brunch",
+   "base_en": "Special brunch menu, expanded reservations, a small gift for the moms"
+  },
+  {
+   "id": "c0877",
+   "es": "Menú especial, terraza nocturna",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · C16"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Evento EN: «3rd Sunday — Father's Day». Sustituye a San Juan. Tareas = las del Día del Padre del ES (fila 9): menú familiar, reservas ampliadas y pizza XL para compartir",
+   "motivo": "adaptar",
+   "base_en": "Steak and BBQ specials, expanded reservations"
+  },
+  {
+   "id": "c0880",
+   "es": "Personal extra, horarios ampliados, carta verano",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C17"
+   ],
+   "adaptar": "Evento EN: «Jul 4 — Independence Day». Sustituye a la fila de temporada alta (sus tareas pasan a la fila 18). Tareas: decidir el horario, patio a pleno rendimiento, pedidos grandes para las fiestas (party orders) y refuerzo de repartidores",
+   "motivo": "adaptar",
+   "base_en": "Decide hours (many close or open daytime only), patio at full capacity, BBQ specials"
+  },
+  {
+   "id": "c0884",
+   "es": "Servicio de festivo, refuerzo de turnos y de repartidores, terraza a pleno rendimiento",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C18"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "repartidor / rider → delivery driver"
+   ],
+   "adaptar": "Evento EN: «Summer peak season». Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado, carta de verano; más refuerzo de repartidores y patio a pleno rendimiento",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0887",
+   "es": "Carta otoño, menú del día reforzado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C19"
+   ],
+   "adaptar": "Evento EN: «Labor Day (1st Monday) + football season kickoff». Fin del verano. Tareas: carta de otoño, especiales de almuerzo (lunch specials) para la vuelta a la rutina y ofertas para los partidos de fútbol americano (game-day deals): domingos y lunes por la noche, pico de delivery",
+   "motivo": "adaptar",
+   "base_en": "Fall menu and lunch specials for the back-to-routine crowd"
+  },
+  {
+   "id": "c0890",
+   "es": "Decoración temática, menú/cocktails especiales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C20"
+   ],
+   "adaptar": "Evento EN: «National Pizza Month + Oct 31 — Halloween». National Pizza Month (todo octubre): pizza de la semana o campaña de fidelización. Halloween, noche fuerte de delivery: masa, cajas y repartidores extra; decoración temática y pizzas especiales",
+   "motivo": "adaptar",
+   "base_en": "Themed decorations, special menu/cocktails"
+  },
+  {
+   "id": "c0893",
+   "es": "Comida familiar de mediodía, pizza de temporada (setas, calabaza, castañas)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C21"
+   ],
+   "adaptar": "Evento EN: «Thanksgiving Eve + Thanksgiving (4th Thursday)». Sustituye a Todos los Santos. La noche del miércoles anterior es de las de más delivery del año: masa, repartidores y turnos extra; decidir si se abre el jueves (muchos cierran)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0898",
+   "es": "Horario de festivo, refuerzo de mediodía y de delivery, masa y stock para tres días seguidos",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario Anual · C23"
+   ],
+   "pistas": [
+    "bolas de masa → dough balls; temperar → temper (bring to room temp); fermentación lenta en frío → cold fermentation; amasar → mix the dough; mesa de amasado → dough bench",
+    "take-away → takeout / carryout; delivery apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub)"
+   ],
+   "adaptar": "Evento EN: «Holiday gift card season». Sustituye al puente de la Constitución. Del Black Friday a Nochebuena. Tareas: promoción de tarjetas regalo, expositor junto a la caja (register), venta online y en la app de pedidos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0900",
+   "es": "Menú de grupo, reservas grandes, turnos extra",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · C24"
+   ],
+   "adaptar": "Evento EN: «Holiday parties (office orders)». Sustituye a las cenas de empresa. Tareas: pedidos de empresa para las fiestas de oficina (party trays y pizzas grandes con hora de entrega), reservas de grupo, turnos extra",
+   "motivo": "adaptar",
+   "base_en": "Group menu, large reservations, extra shifts"
+  },
+  {
+   "id": "c0904",
+   "es": "Menú gala, cotillón, uvas, cava, turnos noche",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · C26"
+   ],
+   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Sin uvas, cava ni cotillón español. Una de las noches fuertes de delivery: masa y repartidores extra, horario de cierre; si abres la sala, party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite; 21+ con ID), turnos de noche",
+   "motivo": "adaptar",
+   "base_en": "Gala or prix fixe menu, party favors (hats, noisemakers), champagne toast at midnight, night shifts"
+  }
+ ]
+}

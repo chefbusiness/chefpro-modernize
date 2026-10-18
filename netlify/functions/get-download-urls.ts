@@ -905,6 +905,113 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/restaurant-checklist-templates/BONUS-02-restaurant-holiday-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-18): Bar Checklists Kit Pro. MISMAS claves que kit-tareas-bar (las de TEMPLATES de
+  // src/pages/BarChecklistsKitDashboard.tsx) → los 11 xlsx EN de /dl/bar-checklist-templates/
+  // (SPEC checklists-kit/bar §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
+  'bar-checklist-templates': {
+    'apertura-cierre': '/dl/bar-checklist-templates/01-bar-opening-closing-checklists.xlsx',
+    'partidas': '/dl/bar-checklist-templates/02-bar-station-checklists-cocktails-beer-wine.xlsx',
+    'manager': '/dl/bar-checklist-templates/03-bar-manager-checklist.xlsx',
+    'perfiles': '/dl/bar-checklist-templates/04-bartender-checklist-duties-by-role.xlsx',
+    'periodicas': '/dl/bar-checklist-templates/05-bar-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/bar-checklist-templates/06-bar-event-checklists.xlsx',
+    'personalizable': '/dl/bar-checklist-templates/07-blank-bar-checklist-template.xlsx',
+    'apertura-negocio': '/dl/bar-checklist-templates/08-venue-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/bar-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/bar-checklist-templates/BONUS-01-bar-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/bar-checklist-templates/BONUS-02-bar-events-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-18): Coffee Shop Checklists Kit Pro. MISMAS claves que kit-tareas-cafeteria (las de TEMPLATES
+  // de src/pages/CoffeeShopChecklistsKitDashboard.tsx; la 02 es `barista` como en el ES) → los 11 xlsx EN de
+  // /dl/coffee-shop-checklist-templates/ (SPEC checklists-kit/cafe §2), y el bonus común de equivalencias EN en
+  // lugar de la guía ES↔LatAm.
+  'coffee-shop-checklist-templates': {
+    'apertura-cierre': '/dl/coffee-shop-checklist-templates/01-coffee-shop-opening-closing-checklists.xlsx',
+    'barista': '/dl/coffee-shop-checklist-templates/02-cafe-kitchen-pastry-case-checklists.xlsx',
+    'manager': '/dl/coffee-shop-checklist-templates/03-coffee-shop-manager-checklist.xlsx',
+    'perfiles': '/dl/coffee-shop-checklist-templates/04-barista-checklist-duties-by-role.xlsx',
+    'periodicas': '/dl/coffee-shop-checklist-templates/05-cafe-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/coffee-shop-checklist-templates/06-coffee-shop-event-checklists.xlsx',
+    'personalizable': '/dl/coffee-shop-checklist-templates/07-blank-coffee-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/coffee-shop-checklist-templates/08-cafe-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/coffee-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/coffee-shop-checklist-templates/BONUS-01-coffee-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/coffee-shop-checklist-templates/BONUS-02-coffee-shop-holiday-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-18): Catering Checklists Kit Pro. MISMAS claves que kit-tareas-catering (las de TEMPLATES de
+  // src/pages/CateringChecklistsKitDashboard.tsx; la 02 es `partidas` y la 09 —cobros por evento, no arqueo— conserva
+  // `apertura-caja`, como en el ES) → los 11 xlsx EN de /dl/catering-checklist-templates/ (SPEC checklists-kit/catering
+  // §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
+  'catering-checklist-templates': {
+    'apertura-cierre': '/dl/catering-checklist-templates/01-catering-prep-production-checklist.xlsx',
+    'partidas': '/dl/catering-checklist-templates/02-catering-transport-delivery-checklist.xlsx',
+    'manager': '/dl/catering-checklist-templates/03-catering-event-manager-checklist.xlsx',
+    'perfiles': '/dl/catering-checklist-templates/04-catering-staff-checklists-by-role.xlsx',
+    'periodicas': '/dl/catering-checklist-templates/05-catering-event-setup-breakdown-checklist.xlsx',
+    'eventos': '/dl/catering-checklist-templates/06-catering-event-checklists-by-type.xlsx',
+    'personalizable': '/dl/catering-checklist-templates/07-catering-checklist-template.xlsx',
+    'apertura-negocio': '/dl/catering-checklist-templates/08-catering-commissary-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/catering-checklist-templates/09-catering-deposits-invoicing-payments.xlsx',
+    'bonus-briefing': '/dl/catering-checklist-templates/BONUS-01-catering-pre-event-briefing-template.xlsx',
+    'bonus-calendario': '/dl/catering-checklist-templates/BONUS-02-catering-events-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-18): Pizza Shop Checklists Kit Pro. MISMAS claves que kit-tareas-pizzeria (las de TEMPLATES de
+  // src/pages/PizzaShopChecklistsKitDashboard.tsx; la 02 es `horno`, como en el ES) → los 11 xlsx EN de
+  // /dl/pizza-shop-checklist-templates/ (SPEC checklists-kit/pizza §2), y el bonus común de equivalencias EN en lugar
+  // de la guía ES↔LatAm.
+  'pizza-shop-checklist-templates': {
+    'apertura-cierre': '/dl/pizza-shop-checklist-templates/01-pizza-shop-opening-closing-checklists.xlsx',
+    'horno': '/dl/pizza-shop-checklist-templates/02-pizza-kitchen-station-checklists.xlsx',
+    'manager': '/dl/pizza-shop-checklist-templates/03-pizzeria-manager-checklist.xlsx',
+    'perfiles': '/dl/pizza-shop-checklist-templates/04-pizza-shop-duties-by-role.xlsx',
+    'periodicas': '/dl/pizza-shop-checklist-templates/05-pizzeria-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/pizza-shop-checklist-templates/06-pizza-shop-event-checklists.xlsx',
+    'personalizable': '/dl/pizza-shop-checklist-templates/07-blank-pizza-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/pizza-shop-checklist-templates/08-pizzeria-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/pizza-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/pizza-shop-checklist-templates/BONUS-01-pizza-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/pizza-shop-checklist-templates/BONUS-02-pizza-shop-holiday-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-18): Burger Joint Checklists Kit Pro. MISMAS claves que kit-tareas-hamburgueseria (las de
+  // TEMPLATES de src/pages/BurgerJointChecklistsKitDashboard.tsx; la 02 es `plancha-grill`, como en el ES) → los 11
+  // xlsx EN de /dl/burger-joint-checklist-templates/ (SPEC checklists-kit/burger §2), y el bonus común de equivalencias
+  // EN en lugar de la guía ES↔LatAm.
+  'burger-joint-checklist-templates': {
+    'apertura-cierre': '/dl/burger-joint-checklist-templates/01-burger-joint-opening-closing-checklists.xlsx',
+    'plancha-grill': '/dl/burger-joint-checklist-templates/02-burger-kitchen-station-checklists.xlsx',
+    'manager': '/dl/burger-joint-checklist-templates/03-burger-restaurant-manager-checklist.xlsx',
+    'perfiles': '/dl/burger-joint-checklist-templates/04-burger-shop-duties-by-role.xlsx',
+    'periodicas': '/dl/burger-joint-checklist-templates/05-burger-restaurant-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/burger-joint-checklist-templates/06-burger-joint-event-checklists.xlsx',
+    'personalizable': '/dl/burger-joint-checklist-templates/07-blank-burger-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/burger-joint-checklist-templates/08-burger-restaurant-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/burger-joint-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/burger-joint-checklist-templates/BONUS-01-burger-joint-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/burger-joint-checklist-templates/BONUS-02-burger-joint-holiday-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-18): Ghost Kitchen Checklists Kit Pro. MISMAS claves que kit-tareas-dark-kitchen (las de
+  // TEMPLATES de src/pages/GhostKitchenChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx
+  // EN de /dl/ghost-kitchen-checklist-templates/ (SPEC checklists-kit/ghost §2), y el bonus común de equivalencias EN
+  // en lugar de la guía ES↔LatAm.
+  'ghost-kitchen-checklist-templates': {
+    'apertura-cierre': '/dl/ghost-kitchen-checklist-templates/01-ghost-kitchen-opening-closing-checklists.xlsx',
+    'partidas': '/dl/ghost-kitchen-checklist-templates/02-cloud-kitchen-station-checklists.xlsx',
+    'manager': '/dl/ghost-kitchen-checklist-templates/03-ghost-kitchen-manager-checklist.xlsx',
+    'perfiles': '/dl/ghost-kitchen-checklist-templates/04-virtual-kitchen-duties-by-role.xlsx',
+    'periodicas': '/dl/ghost-kitchen-checklist-templates/05-cloud-kitchen-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/ghost-kitchen-checklist-templates/06-ghost-kitchen-peak-and-event-checklists.xlsx',
+    'personalizable': '/dl/ghost-kitchen-checklist-templates/07-blank-ghost-kitchen-checklist-template.xlsx',
+    'apertura-negocio': '/dl/ghost-kitchen-checklist-templates/08-delivery-only-kitchen-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/ghost-kitchen-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/ghost-kitchen-checklist-templates/BONUS-01-ghost-kitchen-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/ghost-kitchen-checklist-templates/BONUS-02-ghost-kitchen-delivery-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

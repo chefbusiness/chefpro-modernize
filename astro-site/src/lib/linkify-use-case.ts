@@ -61,6 +61,12 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Food Cost + Menu Engineering Guide': '/en/digital-products/food-cost-menu-engineering-guide',
   'How to Open a Pastry Shop': '/en/digital-products/how-to-open-a-pastry-shop',
   'Restaurant Checklists Kit Pro': '/en/digital-products/restaurant-checklist-templates',
+  'Bar Checklists Kit Pro': '/en/digital-products/bar-checklist-templates',
+  'Coffee Shop Checklists Kit Pro': '/en/digital-products/coffee-shop-checklist-templates',
+  'Catering Checklists Kit Pro': '/en/digital-products/catering-checklist-templates',
+  'Pizza Shop Checklists Kit Pro': '/en/digital-products/pizza-shop-checklist-templates',
+  'Burger Joint Checklists Kit Pro': '/en/digital-products/burger-joint-checklist-templates',
+  'Ghost Kitchen Checklists Kit Pro': '/en/digital-products/ghost-kitchen-checklist-templates',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 

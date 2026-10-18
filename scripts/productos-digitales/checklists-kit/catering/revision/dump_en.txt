@@ -1,0 +1,2695 @@
+Volcado de 11 xlsx de /root/wt-catering/astro-site/public/dl/catering-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-catering-prep-production-checklist.xlsx
+# docProps: title='Catering Prep & Production Checklist (Off-Site Catering)' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Catering Prep & Production Checklist (Off-Site Catering)
+B4     : How to use this template:
+B5     : ▸ This checklist covers production in the commissary kitchen before the event.
+B6     : ▸ It includes mise en place, cooking, pre-plating and packing.
+B7     : ▸ Mark ✓ on every completed task. Adjust the timing to your operation.
+B9     : Customization:
+B10    : ▸ Green cells are editable: assigned to, time, notes.
+B11    : ▸ Add or remove tasks to fit the type of event.
+B12    : ▸ Print on US Letter and post it in the production area.
+B14    : Safety and shelf life:
+B15    : ▸ The first section of "Production" covers personal hygiene and a safe kitchen start-up: hood first, gas check next, and only then ovens, sous-vide and fryer.
+B16    : ▸ Fish served raw or undercooked (ceviche, tartare, marinated, cold-smoked) needs parasite destruction first: frozen at −4 °F or below for 7 days, or at −31 °F or below until solid plus 15 h (FDA Food Code 3-402.11). Ask the supplier for the freezing record, keep it 90 days and note the lot.
+B17    : ▸ At the bottom of the sheet there is an editable freezer shelf-life table by product family: adjust it to your product and your supplier. It sits outside the counter because it is a reference, not a task.
+B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B20    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Production» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Off-Site Prep & Production
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Advance Planning (48–72 h Before)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review the BEO (banquet event order): guaranteed count, menu, allergens
+C6     : Office
+A7     : 2
+B7     : Confirm the final menu with the client, including dietary restrictions
+C7     : Office
+A8     : 3
+B8     : Build the shopping list by supplier and category
+C8     : Office
+A9     : 4
+B9     : Check raw ingredient stock against the event's needs
+C9     : Production
+A10    : 5
+B10    : Place supplier orders with a safety margin (+10%)
+C10    : Office
+A11    : 6
+B11    : Confirm transport logistics: vehicle, time, route
+C11    : Transport
+A12    : 7
+B12    : Prepare the production run sheet with start times by station
+C12    : Production
+A13    : 8
+B13    : Assign roles and owners by station
+C13    : Office
+A15    : Personal Hygiene & Safe Kitchen Start-Up
+A16    : #
+B16    : Task
+C16    : Area
+D16    : Assigned to
+E16    : ✓
+F16    : Time
+G16    : Notes
+A17    : 1
+B17    : Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)
+C17    : Production
+A18    : 2
+B18    : No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics
+C18    : Production
+A19    : 3
+B19    : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C19    : Production
+A20    : 4
+B20    : Wash hands at the handwashing sink on arrival and at every change of task: soap, hot water (at least 100 °F, FDA Food Code 5-202.12) and single-use paper towels
+C20    : Production
+A21    : 5
+B21    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
+C21    : Production
+A22    : 6
+B22    : Turn on the exhaust hood and ventilate the kitchen BEFORE lighting anything else
+C22    : Production
+A23    : 7
+B23    : If the kitchen has gas: open the main valve and check there is NO gas smell. If you smell gas, don't turn anything on or touch any switches: get out and call the gas company or 911 from outside
+C23    : Production
+A24    : 8
+B24    : Turn on ovens, sous-vide, blast chiller and fryer only after the hood and the gas check
+C24    : Production
+A25    : Production: Day Before
+A26    : #
+B26    : Task
+C26    : Area
+D26    : Assigned to
+E26    : ✓
+F26    : Time
+G26    : Notes
+A27    : 1
+B27    : Receive and check deliveries: temperatures (cold food 41 °F or below), quantities, quality — log reading: ____ °F
+C27    : Production
+A28    : 2
+B28    : Store properly (cold 41 °F or below, frozen 0 °F or below, dry goods) and label with product and date; ready-to-eat food keeps 7 days max at 41 °F, prep day = day 1 (FDA Food Code 3-501.17). Shelf life by family is in the table at the bottom of this sheet
+C28    : Production
+A29    : 3
+B29    : Make base sauces, stocks and reductions
+C29    : Production
+A30    : 4
+B30    : Prep marinades, rubs and soaks that need time
+C30    : Production
+A31    : 5
+B31    : Make doughs, tart shells and desserts that need to rest
+C31    : Production
+A32    : 6
+B32    : Do the pre-cooking: confit, braises, sous-vide. Cool anything made ahead in shallow pans, an ice bath or the blast chiller: 135 °F to 70 °F within 2 h, then to 41 °F within 4 h more (FDA Food Code 3-501.14), and log it
+C32    : Production
+A33    : 7
+B33    : Cut and portion proteins per the recipe card
+C33    : Production
+A34    : 8
+B34    : Fish served raw or undercooked (ceviche, tartare, marinated, cold-smoked) — parasite destruction: get the supplier's freezing record (−4 °F or below for 7 days, or −31 °F or below until solid + 15 h; FDA Food Code 3-402.11) or freeze it yourself, keep the record 90 days and note the lot
+C34    : Production
+A35    : 9
+B35    : Prep sides and vegetables: wash, cut and blanch. Wash under running potable water (FDA Food Code 3-302.15); if you use a produce wash or chlorine, only one made for fruits and vegetables, at the label dose, and RINSE well afterwards
+C35    : Production
+A36    : 10
+B36    : Label everything with product, date, lot and allergens (the 9 major US allergens); ready-to-eat food keeps 7 days max at 41 °F, prep day = day 1
+C36    : Production
+A37    : 11
+B37    : Organize the walk-ins in loading order for transport
+C37    : Production
+A39    : Production: Event Day
+A40    : #
+B40    : Task
+C40    : Area
+D40    : Assigned to
+E40    : ✓
+F40    : Time
+G40    : Notes
+A41    : 1
+B41    : Check the walk-ins ran all night and log the temperatures (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F. If out of range, don't load the product until it's been assessed
+C41    : Production
+A42    : 2
+B42    : Finish the final preparations: bake, grill, fry
+C42    : Production
+A43    : 3
+B43    : Prep last-minute sauces and dressings
+C43    : Production
+A44    : 4
+B44    : Pre-plate cold appetizers and canapés
+C44    : Production
+A45    : 5
+B45    : Build presentation platters and edible centerpieces
+C45    : Production
+A46    : 6
+B46    : Check quantities against the BEO (cross-check)
+C46    : Production
+A47    : 7
+B47    : Pack in labeled hotel pans and insulated food carriers (cambros)
+C47    : Production
+A48    : 8
+B48    : Check temperatures before loading: hot food 135 °F or above, cold food 41 °F or below — log reading: ____ °F (if you have the HACCP Food Safety Kit Pro, log it on its temperature sheet; if not, in the "Notes" column)
+C48    : Production
+A49    : 9
+B49    : Check the packed utensils, smallwares and service equipment
+C49    : Production
+A50    : 10
+B50    : Log the day's production waste (product, quantity and reason): it is the data that corrects the costing for the next event
+C50    : Production
+A51    : 11
+B51    : Clean and sanitize the production area after loading
+C51    : Cleaning
+B52    : Tasks done:
+C52    = =COUNTIFS(B6:B51,"?*",E6:E51,"✓")-COUNTIFS(B6:B51,"Task",E6:E51,"✓")   → caché 0.0
+D52    : of
+E52    = =COUNTIF(B6:B51,"?*")-COUNTIF(B6:B51,"Task")-COUNTIF(E6:E51,"N/A")   → caché 38.0
+A53    : Signed off by: _________________  Date: ___/___/______
+A55    : APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier
+B56    : Food group
+C56    : Freezer time
+D56    : Notes
+B57    : Raw red meat and poultry, whole cuts
+C57    : 6–12 months
+D57    : Portion BEFORE freezing: never thaw and refreeze
+B58    : Ground meat and meat preparations
+C58    : 3 months
+D58    : More exposed surface: it goes rancid and oxidizes much sooner than a whole cut
+B59    : Raw white fish and shellfish
+C59    : 3–6 months
+D59    : Parasite destruction (−4 °F for 7 days, FDA Food Code 3-402.11) does not replace this shelf life: they are counted separately
+B60    : Oily fish (salmon, tuna, anchovy)
+C60    : 2–3 months
+D60    : Fat goes rancid even when frozen: it spoils first
+B61    : House stocks, sauces, creams and reductions
+C61    : 3 months
+D61    : Label with the production date AND the freezing date: shelf life counts from the freezing date
+B62    : Raw dough, tart shells and puff pastry
+C62    : 1–2 months
+D62    : Yeast loses strength: the dough rises poorly afterwards even if it is still safe
+B63    : Baked bread and pastries
+C63    : 1–3 months
+D63    : It loses texture before it loses safety; refresh it in the oven, never in the microwave
+B64    : Assembled canapes and bites
+C64    : 1 month
+D64    : Only the ones that freeze well: anything with mayonnaise, gelatin or whipped cream does NOT freeze
+B65    : Blanched vegetables, purees and sides
+C65    : 8–12 months
+D65    : Blanch before freezing: unblanched, it loses color and texture within a few weeks
+B66    : Product that has already gone out to service
+C66    : Do not freeze
+D66    : Food that has been out on the buffet or has broken the cold chain does not go back in the freezer: toss it
+A67    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E21 E22 E23 E24 E27 E28 E29 E30 E31 E32 E33 E34 E35 E36 E37 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E51 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G51 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 02-catering-transport-delivery-checklist.xlsx
+# docProps: title='Catering Transport & Delivery Checklist: Loading, Holding Temps & Load-In' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Catering Transport & Delivery Checklist: Loading, Holding Temps & Load-In
+B4     : How to use this template:
+B5     : ▸ Checklist for the safe transport of food and equipment.
+B6     : ▸ It covers loading, temperature control, load-in and traceability.
+B7     : ▸ It keeps food at safe temperatures in transit (41 °F or below / 135 °F or above, FDA Food Code 3-501.16).
+B9     : Customization:
+B10    : ▸ Adapt it to your type of vehicle (insulated van, truck).
+B11    : ▸ Add your usual routes and estimated drive times.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Transport & Delivery» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Transport & Logistics
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Vehicle Pre-Load
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check that the transport vehicle is clean and sanitized
+C6     : Transport
+A7     : 2
+B7     : Check that the vehicle's refrigeration system works
+C7     : Transport
+A8     : 3
+B8     : Pre-chill the vehicle to the target temperature (refrigerated 41 °F or below / frozen 0 °F or below) — log reading: ____ °F
+C8     : Transport
+A9     : 4
+B9     : Check fuel, registration, commercial auto insurance and, if your county requires it, the health department permit or inspection for the catering vehicle
+C9     : Transport
+A10    : 5
+B10    : Prepare an emergency kit: thermometer, thermal blankets, insulated bags
+C10    : Transport
+A11    : 6
+B11    : Load the service equipment first (heaviest at the back)
+C11    : Transport
+A13    : Food Loading
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Log the temperature of every hotel pan or carrier before loading (hot 135 °F or above, cold 41 °F or below) — log reading: ____ °F
+C15    : Transport
+A16    : 2
+B16    : Load frozen food first, refrigerated after
+C16    : Transport
+A17    : 3
+B17    : Keep raw and cooked food separate (avoid cross-contamination)
+C17    : Transport
+A18    : 4
+B18    : Secure the containers so they can't shift in transit
+C18    : Transport
+A19    : 5
+B19    : Check the load list against the event's packing list
+C19    : Transport
+A20    : 6
+B20    : Load serving utensils, smallwares and decor
+C20    : Transport
+A21    : 7
+B21    : Close and seal the vehicle. Log the departure time
+C21    : Transport
+A23    : During Transport
+A24    : #
+B24    : Task
+C24    : Area
+D24    : Assigned to
+E24    : ✓
+F24    : Time
+G24    : Notes
+A25    : 1
+B25    : Monitor the temperature every 30 min on the road: hot 135 °F or above, cold 41 °F or below — log reading: ____ °F (if you have the HACCP Food Safety Kit Pro, log it on its temperature sheet; if not, in the "Notes" column)
+C25    : Transport
+A26    : 2
+B26    : Hold the cold chain the whole trip: cold 41 °F or below, hot 135 °F or above. Anything traveling without temperature control goes under time as a public health control (FDA Food Code 3-501.19, written procedure required): mark the time it left 41 °F / 135 °F; the 4 h include the trip AND the service at the venue, and whatever is left at 4 h is discarded
+C26    : Transport
+A27    : 3
+B27    : Send the ETA to the setup crew at the venue
+C27    : Transport
+A28    : 4
+B28    : In case of a breakdown: activate the emergency plan (insulated bags)
+C28    : Transport
+A30    : Unloading at the Venue
+A31    : #
+B31    : Task
+C31    : Area
+D31    : Assigned to
+E31    : ✓
+F31    : Time
+G31    : Notes
+A32    : 1
+B32    : Log the arrival time and the vehicle temperature
+C32    : Transport
+A33    : 2
+B33    : Unload refrigerated food first, straight to the venue's cold storage
+C33    : Transport
+A34    : 3
+B34    : Check the visual condition of the food after transport
+C34    : Transport
+A35    : 4
+B35    : Log the product temperature at unloading: hot 135 °F or above, cold 41 °F or below — log reading: ____ °F (if you have the HACCP Food Safety Kit Pro, log it on its temperature sheet; if not, in the "Notes" column)
+C35    : Transport
+A36    : 5
+B36    : Unload service equipment and smallwares at the setup area
+C36    : Transport
+A37    : 6
+B37    : Check the unload list against the packing list (cross-check)
+C37    : Transport
+A38    : 7
+B38    : Park the vehicle and leave it accessible for the load-out later
+C38    : Transport
+B39    : Tasks done:
+C39    = =COUNTIFS(B6:B38,"?*",E6:E38,"✓")-COUNTIFS(B6:B38,"Task",E6:E38,"✓")   → caché 0.0
+D39    : of
+E39    = =COUNTIF(B6:B38,"?*")-COUNTIF(B6:B38,"Task")-COUNTIF(E6:E38,"N/A")   → caché 24.0
+A40    : Signed off by: _________________  Date: ___/___/______
+A41    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E21 E25 E26 E27 E28 E32 E33 E34 E35 E36 E37 E38 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G38 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 03-catering-event-manager-checklist.xlsx
+# docProps: title='Catering Event Manager Checklist + Quarterly & Annual Compliance' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Catering Event Manager Checklist + Quarterly & Annual Compliance
+B4     : How to use this template:
+B5     : ▸ Complete checklist for the catering director or event manager.
+B6     : ▸ It covers everything from the first meeting with the client to the post-event wrap-up.
+B7     : ▸ It includes team coordination, the run sheet and quality control.
+B9     : Customization:
+B10    : ▸ Adjust the timing to your usual type of event.
+B11    : ▸ Use the notes section for incidents.
+B13    : Beyond the event:
+B14    : ▸ The "Quarterly & Annual" sheet covers what is CONTRACTED and what an inspector asks for in writing: commissary pest control, hood and exhaust ducts (NFPA 96), fire extinguishers and hood suppression, gas lines, vehicles (registration, insurance, county permit if required), thermometer calibration, used oil, health permits, food handler cards and Certified Food Protection Manager, insurance and invoicing / sales tax.
+B15    : ▸ Write the report number of each inspection and the date of the next one in "Notes"; the "Frequency" column already shows the legal or recommended interval for each.
+B16    : ▸ After the event, close out and validate the whole team's time-clock records, extras included: setup and breakdown are paid hours too. Keep time cards 2 years and payroll records 3 years (FLSA minimum; some states require longer, e.g. NY 6).
+B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Event Manager» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Director / Event Manager Tasks
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Event Week (7 to 2 Days Out)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Production meeting with the chef: confirm menu, quantities, run sheet
+C6     : Office
+A7     : 2
+B7     : Confirm staff: number of servers, cooks, bartenders, runners (bartenders with the responsible-service training your state requires: TIPS, ServSafe Alcohol)
+C7     : Office
+A8     : 3
+B8     : Send the team briefing: arrival time, dress code, contact
+C8     : Office
+A9     : 4
+B9     : Confirm with the venue: load-in access, hours, facilities
+C9     : Office
+A10    : 5
+B10    : Check equipment: smallwares, glassware, linens, decor
+C10    : Office
+A11    : 6
+B11    : Prepare the floor plan for the room and setup with the table and station layout
+C11    : Office
+A12    : 7
+B12    : Confirm outside vendors: florist, DJ, photographer, AV
+C12    : Office
+A13    : 8
+B13    : Prepare the detailed event run sheet (minute by minute)
+C13    : Office
+A15    : Event Day — Before Service
+A16    : #
+B16    : Task
+C16    : Area
+D16    : Assigned to
+E16    : ✓
+F16    : Time
+G16    : Notes
+A17    : 1
+B17    : Arrive at the venue at least 3 h before the event starts
+C17    : Office
+A18    : 2
+B18    : Check access (loading dock), power, potable water, restrooms, cold storage and the handwashing station
+C18    : Office
+A19    : 3
+B19    : Coordinate the unloading and placement of the kitchen equipment
+C19    : Office
+A20    : 4
+B20    : Supervise the room setup: tables, chairs, linens
+C20    : Setup
+A21    : 5
+B21    : Check the buffet / station setup against the floor plan
+C21    : Setup
+A22    : 6
+B22    : Pre-event briefing with the service team: timing, menu, allergens, VIPs
+C22    : Office
+A23    : 7
+B23    : Pre-event briefing with the kitchen team: order of service, temperatures
+C23    : Office
+A24    : 8
+B24    : Final check-in with the client: confirm last-minute changes
+C24    : Office
+A25    : 9
+B25    : Check that music, lighting and room temperature are right
+C25    : Office
+A27    : During the Event
+A28    : #
+B28    : Task
+C28    : Area
+D28    : Assigned to
+E28    : ✓
+F28    : Time
+G28    : Notes
+A29    : 1
+B29    : Control service timing: appetizers, entrées, dessert, coffee
+C29    : Office
+A30    : 2
+B30    : Supervise plating quality and plate temperature
+C30    : Office
+A31    : 3
+B31    : Coordinate buffet and station refills
+C31    : Service
+A32    : 4
+B32    : Handle incidents: unplanned allergens, last-minute changes
+C32    : Office
+A33    : 5
+B33    : Stay in contact with the client and the wedding planner / organizer
+C33    : Office
+A34    : 6
+B34    : Supervise bar and beverage service
+C34    : Service
+A35    : 7
+B35    : Control plate clearing times between courses
+C35    : Service
+A36    : 8
+B36    : Check guest satisfaction (discreet walk-around)
+C36    : Office
+A38    : After the Event
+A39    : #
+B39    : Task
+C39    : Area
+D39    : Assigned to
+E39    : ✓
+F39    : Time
+G39    : Notes
+A40    : 1
+B40    : Supervise an orderly breakdown and the venue cleanup
+C40    : Breakdown
+A41    : 2
+B41    : Check the inventory of equipment picked up against what was delivered
+C41    : Office
+A42    : 3
+B42    : Log incidents, breakage and waste
+C42    : Office
+A43    : 4
+B43    : Confirm with the venue that the space is left in good condition
+C43    : Office
+A44    : 5
+B44    : Send a thank-you to the client (24–48 h after the event)
+C44    : Office
+A45    : 6
+B45    : Retrospective meeting with the team (feedback and improvements)
+C45    : Office
+A46    : 7
+B46    : Close out and validate the time-clock records of the whole event team, extras included (setup, service and breakdown), and file them with the month's: keep time cards 2 years and payroll records 3 years (FLSA minimum; some states require longer, e.g. NY 6)
+C46    : Office
+A47    : 8
+B47    : Update the event P&L: actual costs vs. budget
+C47    : Office
+B48    : Tasks done:
+C48    = =COUNTIFS(B6:B47,"?*",E6:E47,"✓")-COUNTIFS(B6:B47,"Task",E6:E47,"✓")   → caché 0.0
+D48    : of
+E48    = =COUNTIF(B6:B47,"?*")-COUNTIF(B6:B47,"Task")-COUNTIF(E6:E47,"N/A")   → caché 33.0
+A49    : Signed off by: _________________  Date: ___/___/______
+A50    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E21 E22 E23 E24 E25 E29 E30 E31 E32 E33 E34 E35 E36 E40 E41 E42 E43 E44 E45 E46 E47 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G47 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Hygiene & Pests — Licensed Contractor
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Frequency
+G5     : Notes
+A6     : 1
+B6     : Pest control of the commissary by a licensed operator: service visit and signed service report on file
+C6     : Office
+F6     : Monthly
+A7     : 2
+B7     : Hood and duct cleaning by a certified contractor (NFPA 96: quarterly if high volume or charbroil, semiannual if moderate)
+C7     : Office
+F7     : Semiannual
+A8     : 3
+B8     : Optional lab testing of surfaces and product (environmental swabs or product analysis) to verify your cleaning plan; not required in the US
+C8     : Production
+F8     : Semiannual
+A9     : 4
+B9     : Review the HACCP plan (food safety plan) and the supplier files: additions, removals and menu changes over the year (templates in the HACCP Food Safety Kit Pro)
+C9     : Office
+F9     : Annual
+A10    : 5
+B10    : Renew food handler cards where your state or county requires them, keep at least one Certified Food Protection Manager (e.g. ServSafe Manager) on staff (FDA Food Code 2-102.12) and file the cards of regular extras
+C10    : Office
+F10    : Annual
+A11    : 6
+B11    : Check that the commissary's health permit (food service license) covers catering and is renewed per your county
+C11    : Office
+F11    : Annual
+A13    : Vehicles & Cold Chain
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Frequency
+G14    : Notes
+A15    : 1
+B15    : Vehicle registration and commercial auto insurance renewed; the health department's catering vehicle permit or inspection, if your county requires one
+C15    : Transport
+F15    : Annual
+A16    : 2
+B16    : Vehicle refrigeration unit serviced by a qualified tech: refrigerant, door seals and temperature recorder
+C16    : Transport
+F16    : Semiannual
+A17    : 3
+B17    : Calibrate thermometers and probes with the ice-point method (32 °F) and log the deviation
+C17    : Production
+F17    : Quarterly
+A18    : 4
+B18    : State vehicle inspection if your state requires it, and check the on-board fire extinguisher
+C18    : Transport
+F18    : Annual
+A19    : 5
+B19    : Deep clean and sanitize the vehicle with a signed record
+C19    : Transport
+F19    : Quarterly
+A21    : Equipment, Gas & Waste
+A22    : #
+B22    : Task
+C22    : Area
+D22    : Assigned to
+E22    : ✓
+F22    : Frequency
+G22    : Notes
+A23    : 1
+B23    : Gas lines and appliance connections checked by a licensed pro if the kitchen has gas (as often as your local code requires)
+C23    : Production
+F23    : Annual
+A24    : 2
+B24    : Refrigeration service by an EPA 608-certified tech (walk-ins, reach-ins, blast chiller); ovens serviced per the manufacturer's schedule
+C24    : Production
+F24    : Annual
+A25    : 3
+B25    : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hood fire suppression inspected every 6 months (NFPA 96)
+C25    : Office
+F25    : Annual
+A26    : 4
+B26    : Used cooking oil pickup by a licensed recycler: file the pickup receipts
+C26    : Production
+F26    : Quarterly
+A28    : Paperwork, Insurance & Invoicing
+A29    : #
+B29    : Task
+C29    : Area
+D29    : Assigned to
+E29    : ✓
+F29    : Frequency
+G29    : Notes
+A30    : 1
+B30    : Review your insurance: general liability (at the limits venues usually ask for), liquor liability if you serve alcohol, commercial auto and workers' comp; keep the COI (certificate of insurance) ready, with the venue as additional insured if it asks
+C30    : Office
+F30    : Annual
+A31    : 2
+B31    : This quarter's new hires: check each new event employee has Form I-9 (completed by their 3rd business day) and W-4 on file, and the time-clock records filed
+C31    : Office
+F31    : Quarterly
+A32    : 3
+B32    : Invoicing and POS software check: sales tax rates and settings, user permissions, updates
+C32    : Office
+F32    : Annual
+A33    : 4
+B33    : Update costing prices and event rates with real supplier prices
+C33    : Office
+F33    : Quarterly
+A34    : 5
+B34    : Write the report number of each inspection and the date of the next one in "Notes"
+C34    : Office
+F34    : Quarterly
+B35    : Tasks done:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Task",E6:E34,"✓")   → caché 0.0
+D35    : of
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Task")-COUNTIF(E6:E34,"N/A")   → caché 20.0
+A36    : Signed off by: _________________  Date: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E23 E24 E25 E26 E30 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A6:G34 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 04-catering-staff-checklists-by-role.xlsx
+# docProps: title='Catering Staff Checklists by Role (Event Chef, Banquet Captain, Server, Bartender)' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Catering Staff Checklists by Role (Event Chef, Banquet Captain, Server, Bartender)
+B4     : How to use this template:
+B5     : ▸ Separate checklists by catering team role.
+B6     : ▸ Each role knows exactly what to do before, during and after.
+B7     : ▸ Great for onboarding temporary / extra staff.
+B9     : Customization:
+B10    : ▸ Adjust the roles to your team structure.
+B11    : ▸ Print only the tab for the role you need.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Event Chef» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Event Chef / Head Chef
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Before service
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check all the production received: quantities, temperatures, quality
+C6     : Production
+A7     : 2
+B7     : Organize the mise en place in the venue's kitchen
+C7     : Production
+A8     : 3
+B8     : Set up the work stations: hot, cold, dessert
+C8     : Production
+A9     : 4
+B9     : Check the venue's kitchen equipment: ovens, burners, refrigeration
+C9     : Production
+A10    : 5
+B10    : Do a plating test with a sample plate
+C10    : Production
+A11    : 6
+B11    : Pre-event briefing with the kitchen team: order of service, timing, allergens
+C11    : Production
+A13    : During service
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Control the order plates go out per the run sheet
+C15    : Production
+A16    : 2
+B16    : Supervise plating and quality at every pass
+C16    : Production
+A17    : 3
+B17    : Monitor product temperatures on the line (hot 135 °F or above, cold 41 °F or below)
+C17    : Production
+A18    : 4
+B18    : Coordinate service timing with the banquet captain / event manager
+C18    : Production
+A19    : 5
+B19    : Handle accommodations: allergy plates, special menus
+C19    : Production
+A20    : 6
+B20    : Track waste and leftovers during service
+C20    : Production
+A22    : After service
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Supervise cleaning of the kitchen and equipment
+C24    : Cleaning
+A25    : 2
+B25    : Inventory leftovers: keep only food that stayed at 135 °F or above / 41 °F or below and never went out to guests (cool hot food from 135 °F to 70 °F within 2 h, then to 41 °F within 4 h more, FDA Food Code 3-501.14); anything that sat on the buffet or was held under time as a public health control (FDA Food Code 3-501.19) gets discarded
+C25    : Production
+A26    : 3
+B26    : Log waste and notes to improve future costing
+C26    : Production
+A27    : 4
+B27    : Check that the venue's kitchen is left in good condition
+C27    : Cleaning
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Banquet Captain» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Banquet Captain / Floor Manager
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Before service
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check the room setup against the floor plan: tables, chairs, linens
+C6     : Setup
+A7     : 2
+B7     : Check glassware, flatware and china at each place setting
+C7     : Setup
+A8     : 3
+B8     : Check centerpieces, decor and signage
+C8     : Setup
+A9     : 4
+B9     : Assign sections / tables to each server
+C9     : Service
+A10    : 5
+B10    : Room briefing: menu, pairings, allergens, VIPs, protocol
+C10    : Service
+A11    : 6
+B11    : Check the mise en place at the servers' service station (pantry)
+C11    : Service
+A13    : During service
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Coordinate pass timing with the kitchen
+C15    : Service
+A16    : 2
+B16    : Supervise table service: technique, presentation, attitude
+C16    : Service
+A17    : 3
+B17    : Handle guests' special requests
+C17    : Service
+A18    : 4
+B18    : Control beverage service and pairings
+C18    : Service
+A19    : 5
+B19    : Coordinate clearing plates between courses
+C19    : Service
+A20    : 6
+B20    : Keep the event manager updated on timing
+C20    : Service
+A22    : After service
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Supervise room breakdown: glassware, flatware, china
+C24    : Breakdown
+A25    : 2
+B25    : Count and check the smallwares picked up against the starting inventory
+C25    : Breakdown
+A26    : 3
+B26    : Handle gratuities and feedback for the service team: gratuities per house policy and your state's rules; managers and supervisors can't keep any part of employees' tips (FLSA); a mandatory service charge is NOT a gratuity: what you pay out of it to staff is wages for the IRS (Rev. Rul. 2012-18)
+C26    : Office
+A27    : 4
+B27    : Report breakage and incidents to the event manager
+C27    : Office
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Server» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Server / Event Runner
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Before service
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Arrive at the venue in a full, clean uniform
+C6     : Service
+A7     : 2
+B7     : Attend the pre-event briefing: menu, allergens, VIPs, timing
+C7     : Service
+A8     : 3
+B8     : Set up and check your assigned table / section
+C8     : Setup
+A9     : 4
+B9     : Polish the glassware and flatware in your section
+C9     : Setup
+A10    : 5
+B10    : Check the mise en place at your station (bread, water, condiments)
+C10    : Service
+A11    : 6
+B11    : Know where the restrooms and emergency exits are (and the smoking area, only if the venue has one)
+C11    : Service
+A13    : During service
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Pour water and set out bread at the tables before guests arrive
+C15    : Service
+A16    : 2
+B16    : Serve plates as the banquet captain directs (side, technique)
+C16    : Service
+A17    : 3
+B17    : Clear used plates discreetly and efficiently
+C17    : Service
+A18    : 4
+B18    : Refill water, bread and wine as needed
+C18    : Service
+A19    : 5
+B19    : Anticipate guests' requests
+C19    : Service
+A20    : 6
+B20    : Tell the banquet captain about any incident or special request
+C20    : Service
+A22    : After service
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Strip your section: linens, glassware, flatware
+C24    : Breakdown
+A25    : 2
+B25    : Sort dirty smallwares by type in the wash / staging area
+C25    : Breakdown
+A26    : 3
+B26    : Help with the general breakdown if needed
+C26    : Breakdown
+A27    : 4
+B27    : Report breakage in your section to the banquet captain
+C27    : Breakdown
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Bartender» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Bartender / Bar Lead
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Before service
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Set up the bar per the floor plan: front bar, back bar, prep area
+C6     : Setup
+A7     : 2
+B7     : Check beverage stock: wine, beer, spirits, soft drinks, water. Client-supplied alcohol only if your state and the venue allow it
+C7     : Service
+A8     : 3
+B8     : Have enough ice and check the ice machine or bins; use an ice scoop, never a glass (ice is food)
+C8     : Service
+A9     : 4
+B9     : Cocktail mise en place: citrus, syrups, garnish
+C9     : Service
+A10    : 5
+B10    : Check glassware: wine glasses, tumblers, champagne flutes
+C10    : Service
+A11    : 6
+B11    : Prep cocktail batches if needed (sangria, punch, batched margaritas) in their own labeled containers; never refill a liquor bottle
+C11    : Service
+A13    : During service
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Run the welcome service: sparkling wine, welcome cocktail (21+ only)
+C15    : Service
+A16    : 2
+B16    : Pour wine at the tables if there is no sommelier (coordinate with servers)
+C16    : Service
+A17    : 3
+B17    : Run the open bar for the agreed hours: ID anyone who looks under 30 (21+) and don't serve anyone visibly intoxicated; operate under the license your state requires (the caterer's or the venue's) with bartenders holding the responsible-service training your state requires (TIPS, ServSafe Alcohol)
+C17    : Service
+A18    : 4
+B18    : Track consumption and restock to the pace of the event
+C18    : Service
+A19    : 5
+B19    : Keep the bar clean and tidy throughout the event
+C19    : Service
+A20    : 6
+B20    : Make the specialty cocktails on the event menu
+C20    : Service
+A22    : After service
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Inventory leftover bottles (open and sealed)
+C24    : Breakdown
+A25    : 2
+B25    : Break down and clean the bar: glassware, tools, surfaces
+C25    : Breakdown
+A26    : 3
+B26    : Pack the glassware and bar equipment for transport
+C26    : Breakdown
+A27    : 4
+B27    : Report actual vs. estimated consumption to the event manager
+C27    : Office
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 05-catering-event-setup-breakdown-checklist.xlsx
+# docProps: title='Catering Event Setup & Breakdown Checklist (Load-In / Load-Out)' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Catering Event Setup & Breakdown Checklist (Load-In / Load-Out)
+B4     : How to use this template:
+B5     : ▸ Detailed checklist to set up and break down the event space.
+B6     : ▸ It covers the room, temporary kitchen, bar, service station and support areas.
+B7     : ▸ Includes a final check before the doors open.
+B9     : Customization:
+B10    : ▸ Adapt it to the type of venue: hotel, estate, outdoor space, ballroom.
+B11    : ▸ Add zones specific to your usual operation.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Setup & Load-In» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Venue Setup
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Temporary Kitchen & Pantry Setup
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Place the temporary kitchen per the floor plan: access to power and water. If you cook on site at a public event, check whether your county or city requires a temporary food establishment permit
+C6     : Setup
+A7     : 2
+B7     : Set up work tables, shelves and support surfaces
+C7     : Setup
+A8     : 3
+B8     : Install equipment: portable ovens, butane burners, food warmers; open flame only if the venue and the fire marshal allow it
+C8     : Setup
+A9     : 4
+B9     : Check the water supply and the drain for washing. Provide potable water and a handwashing station next to the kitchen and service area if the site has no handwashing sink: hot water, soap, paper towels and a catch bucket, as your health department requires
+C9     : Setup
+A10    : 5
+B10    : Set up the plating area with enough room for the crew
+C10    : Setup
+A11    : 6
+B11    : Install a portable fridge/freezer or check the venue's: 41 °F or below (FDA Food Code 3-501.16)
+C11    : Setup
+A12    : 7
+B12    : Set up a staging area for hotel pans, containers and raw ingredients
+C12    : Setup
+A13    : 8
+B13    : Place a trash can with a liner and waste sorting
+C13    : Setup
+A15    : Room Setup
+A16    : #
+B16    : Task
+C16    : Area
+D16    : Assigned to
+E16    : ✓
+F16    : Time
+G16    : Notes
+A17    : 1
+B17    : Lay out the tables per the approved floor plan
+C17    : Setup
+A18    : 2
+B18    : Place the chairs and check they are stable
+C18    : Setup
+A19    : 3
+B19    : Put on the linens: tablecloths, runners, napkins
+C19    : Setup
+A20    : 4
+B20    : Set the flatware, glassware and china at each place setting
+C20    : Setup
+A21    : 5
+B21    : Place the centerpieces and floral decor
+C21    : Setup
+A22    : 6
+B22    : Put out table numbers / names and place cards, if used
+C22    : Setup
+A23    : 7
+B23    : Check the room lighting and adjust it to the mood
+C23    : Setup
+A24    : 8
+B24    : Check the sound/music and the microphones if there are speeches
+C24    : Setup
+A26    : Buffet / Station Setup
+A27    : #
+B27    : Task
+C27    : Area
+D27    : Assigned to
+E27    : ✓
+F27    : Time
+G27    : Notes
+A28    : 1
+B28    : Set up the buffet tables per the floor plan, with risers and decor
+C28    : Setup
+A29    : 2
+B29    : Place the chafing dishes and check the chafing fuel: they hold, they don't reheat (reheat cold food to 165 °F within 2 h first, FDA Food Code 3-403.11) and keep it at 135 °F or above; keep fuel cans away from linens and decor, never refill or move a lit chafer, keep an extinguisher at hand and follow the venue's and fire marshal's open-flame rules
+C29    : Setup
+A30    : 3
+B30    : Place the action stations: live cooking, wok, grill
+C30    : Setup
+A31    : 4
+B31    : Set up the dessert station with refrigeration if needed (41 °F or below for anything with cream or dairy)
+C31    : Setup
+A32    : 5
+B32    : Put a sign on each dish with its name and the major allergens it contains (the 9 US major allergens; UK: 14), and make sure the service team and the kitchen can answer without checking
+C32    : Setup
+A33    : 6
+B33    : Set up the beverage bar per the floor plan
+C33    : Setup
+A35    : Final Check Before Guests Arrive
+A36    : #
+B36    : Task
+C36    : Area
+D36    : Assigned to
+E36    : ✓
+F36    : Time
+G36    : Notes
+A37    : 1
+B37    : Final check of the sample table (photo for the standard)
+C37    : Office
+A38    : 2
+B38    : Check the room temperature (68–72 °F ideal)
+C38    : Office
+A39    : 3
+B39    : Check the restrooms: soap, paper, air freshener, cleanliness
+C39    : Cleaning
+A40    : 4
+B40    : Check that the emergency exits are clear and the exit signs are visible
+C40    : Office
+A41    : 5
+B41    : Take an overall photo of the finished room (for your files and social media)
+C41    : Office
+B42    : Tasks done:
+C42    = =COUNTIFS(B6:B41,"?*",E6:E41,"✓")-COUNTIFS(B6:B41,"Task",E6:E41,"✓")   → caché 0.0
+D42    : of
+E42    = =COUNTIF(B6:B41,"?*")-COUNTIF(B6:B41,"Task")-COUNTIF(E6:E41,"N/A")   → caché 27.0
+A43    : Signed off by: _________________  Date: ___/___/______
+A44    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E21 E22 E23 E24 E28 E29 E30 E31 E32 E33 E37 E38 E39 E40 E41 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G41 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Breakdown & Load-Out» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Post-Event Breakdown
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Room Breakdown
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Collect the linens and sort them: clean, soiled, damaged
+C6     : Breakdown
+A7     : 2
+B7     : Collect the glassware by type in racks with dividers
+C7     : Breakdown
+A8     : 3
+B8     : Collect the flatware and count the pieces against inventory
+C8     : Breakdown
+A9     : 4
+B9     : Collect the china and stack it by type
+C9     : Breakdown
+A10    : 5
+B10    : Take down the centerpieces and decor
+C10    : Breakdown
+A11    : 6
+B11    : Collect the tables and chairs and return them to their original position
+C11    : Breakdown
+A13    : Kitchen Breakdown
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Turn off all equipment: ovens, burners, food warmers. Snuff the chafing fuel with its lid or snuffer and let it cool before packing
+C15    : Breakdown
+A16    : 2
+B16    : Clean work surfaces and equipment
+C16    : Cleaning
+A17    : 3
+B17    : Collect the utensils and hotel pans. Count and check
+C17    : Breakdown
+A18    : 4
+B18    : Handle leftovers: food that was held at 41 °F or below (or 135 °F or above) and never went out to the room: cool the hot food (135 °F to 70 °F within 2 h, then to 41 °F within 4 h more, FDA Food Code 3-501.14) and put the cold food straight back at 41 °F or below, in a clean, labeled, dated container; anything that sat exposed on the buffet or was held under time as a public health control gets discarded. Log the event's waste
+C18    : Breakdown
+A19    : 5
+B19    : Take down the temporary kitchen and portable equipment
+C19    : Breakdown
+A20    : 6
+B20    : Clean the kitchen area and leave it as you found it
+C20    : Cleaning
+A22    : Load-Out & Departure
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Load the kitchen equipment and smallwares into the vehicle
+C24    : Transport
+A25    : 2
+B25    : Check that nothing is left at the venue (final walk-through)
+C25    : Breakdown
+A26    : 3
+B26    : Confirm with the venue contact that the space is left in order
+C26    : Office
+A27    : 4
+B27    : Log the departure time and the condition of the equipment
+C27    : Office
+A28    : 5
+B28    : Close the vehicle and check the temperature for the return trip (41 °F or below for anything coming back cold)
+C28    : Transport
+B29    : Tasks done:
+C29    = =COUNTIFS(B6:B28,"?*",E6:E28,"✓")-COUNTIFS(B6:B28,"Task",E6:E28,"✓")   → caché 0.0
+D29    : of
+E29    = =COUNTIF(B6:B28,"?*")-COUNTIF(B6:B28,"Task")-COUNTIF(E6:E28,"N/A")   → caché 17.0
+A30    : Signed off by: _________________  Date: ___/___/______
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G28 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 06-catering-event-checklists-by-type.xlsx
+# docProps: title='Catering Event Checklists: Weddings, Corporate, Cocktail Receptions & Outdoor' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Catering Event Checklists: Weddings, Corporate, Cocktail Receptions & Outdoor
+B4     : How to use this template:
+B5     : ▸ Checklists adapted to each type of catering event.
+B6     : ▸ Weddings, corporate events, cocktail receptions and outdoor events.
+B7     : ▸ Use the tab for the type of event you have coming up.
+B9     : Customization:
+B10    : ▸ Every event has its own quirks. Use these lists as a base.
+B11    : ▸ Combine them with the general checklists (01-05) for full coverage.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Weddings» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Wedding — Specific Checklist
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Pre-Wedding (Week Before)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Confirm with the wedding planner the guaranteed count already locked by 15 days out; any later change only as your contract allows
+C6     : Office
+A7     : 2
+B7     : Confirm the table layout and the seating chart
+C7     : Office
+A8     : 3
+B8     : Check the kids' menu and the number of children
+C8     : Office
+A9     : 4
+B9     : Collect each guest's allergies and intolerances IN WRITING and mark them on the seating chart; settle the alternative dishes with the kitchen and who serves them
+C9     : Office
+A10    : 5
+B10    : Confirm the schedule: cocktail hour, dinner, open bar, cake
+C10    : Office
+A11    : 6
+B11    : Coordinate access and timing with the florist, DJ and photographer
+C11    : Office
+A12    : 7
+B12    : Prepare the wedding cake or coordinate with an outside bakery
+C12    : Production
+A14    : Wedding Day
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Welcome cocktail hour: timing, canapes, drinks
+C16    : Service
+A17    : 2
+B17    : Table service: coordinate the courses with the wedding protocol
+C17    : Service
+A18    : 3
+B18    : Cake cutting: coordinate with the photographer and DJ
+C18    : Service
+A19    : 4
+B19    : Open bar: control the start and end times; ID anyone who looks under 30 (21+) and don't serve anyone visibly intoxicated; operate under the license your state requires (the caterer's or the venue's)
+C19    : Service
+A20    : 5
+B20    : Late-night snack service (if applicable)
+C20    : Service
+A21    : 6
+B21    : Make sure the couple and the head table are looked after at all times
+C21    : Service
+B22    : Tasks done:
+C22    = =COUNTIFS(B6:B21,"?*",E6:E21,"✓")-COUNTIFS(B6:B21,"Task",E6:E21,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B6:B21,"?*")-COUNTIF(B6:B21,"Task")-COUNTIF(E6:E21,"N/A")   → caché 13.0
+A23    : Signed off by: _________________  Date: ___/___/______
+A24    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G21 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Corporate» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Corporate Event — Checklist
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Pre-Event
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Confirm with the company: event agenda, coffee breaks, meals
+C6     : Office
+A7     : 2
+B7     : Check the AV requirements: projector, screen, microphone, podium
+C7     : Office
+A8     : 3
+B8     : Plan the coffee breaks: morning and afternoon, with variety
+C8     : Production
+A9     : 4
+B9     : Confirm attendees' allergies, intolerances and special diets IN WRITING, and pass them to the kitchen and the service team
+C9     : Office
+A10    : 5
+B10    : Coordinate setup access with the hotel / venue
+C10    : Office
+A12    : During the event
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Morning coffee break: serve at the exact agreed time
+C14    : Service
+A15    : 2
+B15    : Lunch: service per format (buffet, plated, boxed)
+C15    : Service
+A16    : 3
+B16    : Afternoon coffee break: refill and vary the offer vs. the morning
+C16    : Service
+A17    : 4
+B17    : Keep the water, coffee and snack station stocked all day
+C17    : Service
+A18    : 5
+B18    : Networking cocktail hour: set up quickly after the final session
+C18    : Service
+B19    : Tasks done:
+C19    = =COUNTIFS(B6:B18,"?*",E6:E18,"✓")-COUNTIFS(B6:B18,"Task",E6:E18,"✓")   → caché 0.0
+D19    : of
+E19    = =COUNTIF(B6:B18,"?*")-COUNTIF(B6:B18,"Task")-COUNTIF(E6:E18,"N/A")   → caché 10.0
+A20    : Signed off by: _________________  Date: ___/___/______
+A21    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G18 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Cocktail Reception» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cocktail Reception / Standing — Checklist
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Preparation
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Work out the ratio: 12–15 pieces per person for a 2-hour cocktail reception
+C6     : Production
+A7     : 2
+B7     : Prepare canape trays with variety: seafood, meat, vegetable
+C7     : Production
+A8     : 3
+B8     : Prep the action stations: ceviche, tartare, wok
+C8     : Production
+A9     : 4
+B9     : Ceviche, tartare and any fish served raw or undercooked — parasite destruction: use only fish with documented freezing (−4 °F or below for 7 days, or −31 °F or below until solid + 15 h; FDA Food Code 3-402.11), keep the record 90 days and note the lot; put the raw/undercooked consumer advisory on the station sign or menu (FDA Food Code 3-603.11)
+C9     : Production
+A10    : 5
+B10    : Every server must know the allergens on the tray they pass: an allergen card per tray, reviewed at the pre-event briefing. US: the 9 major allergens (FALCPA + FASTER Act: milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy and sesame); UK: 14
+C10    : Service
+A11    : 6
+B11    : Set up a cocktail bar with 3–4 options + soft drinks + water, only under the alcohol license your state requires (or the venue's); 21+ with ID
+C11    : Setup
+A12    : 7
+B12    : Work out staffing: 1 server per 20 guests for passed trays
+C12    : Office
+A14    : During the Cocktail Reception
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Send out trays every 10–15 min, rotating the offer
+C16    : Service
+A17    : 2
+B17    : Refill the action stations to match the pace of consumption
+C17    : Service
+A18    : 3
+B18    : Watch the flow of drinks: don't leave anyone without a glass
+C18    : Service
+A19    : 4
+B19    : Continuously collect used glassware and napkins
+C19    : Service
+A20    : 5
+B20    : Keep the areas clean and presentable throughout the event
+C20    : Cleaning
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Outdoor Events» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Outdoor Event — Checklist
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Outdoor Logistics
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check the weather forecast 72 h, 24 h and 2 h before
+C6     : Office
+A7     : 2
+B7     : Confirm a rain plan B (tent, indoors, alternate date)
+C7     : Office
+A8     : 3
+B8     : Check vehicle access to the site and the unloading area
+C8     : Transport
+A9     : 4
+B9     : Check the power supply: generator or the venue's hookup
+C9     : Office
+A10    : 5
+B10    : Locate the nearest potable water source and provide a handwashing station (hot water, soap, paper towels and a catch bucket, as your health department requires)
+C10    : Office
+A11    : 6
+B11    : Set up a tent or canopy for the kitchen and service area if needed; large tents often need a fire marshal permit and flame-resistant fabric: ask your city
+C11    : Setup
+A13    : Outdoor Food Safety
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Protect food from direct sun and ambient heat
+C15    : Production
+A16    : 2
+B16    : Double the temperature checks: outdoors, food warms up much faster. Hold hot food at 135 °F or above and cold food at 41 °F or below. Food without temperature control falls under time as a public health control (FDA Food Code 3-501.19): mark the time it came out of temperature control and serve it within 4 h; whatever is left at 4 h is discarded, and it can't go back into hot or cold holding to restart the clock. Cold food can go up to 6 h only if it came out at 41 °F or below and you check it never passes 70 °F: discard it as soon as it does, and at 6 h. This needs a written procedure and, depending on your county, notice to the health department. In hot weather, refill more often and in smaller amounts
+C16    : Production
+A17    : 3
+B17    : Use covered display cases or film to protect from insects
+C17    : Service
+A18    : 4
+B18    : Cut exposure time: refill more often, in smaller quantities
+C18    : Service
+A19    : 5
+B19    : Keep extra ice and insulated carriers as backup
+C19    : Production
+A20    : 6
+B20    : Check the lighting if the event runs into the night
+C20    : Office
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 07-catering-checklist-template.xlsx
+# docProps: title='Catering Checklist Template (Blank & Editable)' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Catering Checklist Template (Blank & Editable)
+B4     : How to use this template:
+B5     : ▸ 3 blank templates to build your own task lists.
+B6     : ▸ Format by event phase, by venue area or by role.
+B7     : ▸ Use as a base for events with special requirements.
+B9     : Customization:
+B10    : ▸ Fill the cells with your own tasks.
+B11    : ▸ Copy the tab that best fits your operation.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «By Event Phase» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Template by Event Phase
+A2     : AI Chef Pro · aichef.pro — Write your own tasks
+A4     : #
+B4     : Task
+C4     : Area / phase
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+A5     : 1
+A6     : 2
+A7     : 3
+A8     : 4
+A9     : 5
+A10    : 6
+A11    : 7
+A12    : 8
+A13    : 9
+A14    : 10
+A15    : 11
+A16    : 12
+A17    : 13
+A18    : 14
+A19    : 15
+A20    : 16
+A21    : 17
+A22    : 18
+A23    : 19
+A24    : 20
+A25    : 21
+A26    : 22
+A27    : 23
+A28    : 24
+A29    : 25
+A30    : 26
+A31    : 27
+A32    : 28
+A33    : 29
+A34    : 30
+A35    : 31
+A36    : 32
+A37    : 33
+A38    : 34
+A39    : 35
+A40    : 36
+A41    : 37
+A42    : 38
+A43    : 39
+A44    : 40
+A45    : 41
+A46    : 42
+A47    : 43
+A48    : 44
+A49    : 45
+A50    : 46
+A51    : 47
+A52    : 48
+A53    : 49
+A54    : 50
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 E30 E31 E32 E33 E34 E35 E36 E37 E38 E39 E40 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E51 E52 E53 E54 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G54 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «By Area» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Template by Venue Area
+A2     : AI Chef Pro · aichef.pro — Write your own tasks
+A4     : #
+B4     : Task
+C4     : Area / phase
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+A5     : 1
+A6     : 2
+A7     : 3
+A8     : 4
+A9     : 5
+A10    : 6
+A11    : 7
+A12    : 8
+A13    : 9
+A14    : 10
+A15    : 11
+A16    : 12
+A17    : 13
+A18    : 14
+A19    : 15
+A20    : 16
+A21    : 17
+A22    : 18
+A23    : 19
+A24    : 20
+A25    : 21
+A26    : 22
+A27    : 23
+A28    : 24
+A29    : 25
+A30    : 26
+A31    : 27
+A32    : 28
+A33    : 29
+A34    : 30
+A35    : 31
+A36    : 32
+A37    : 33
+A38    : 34
+A39    : 35
+A40    : 36
+A41    : 37
+A42    : 38
+A43    : 39
+A44    : 40
+A45    : 41
+A46    : 42
+A47    : 43
+A48    : 44
+A49    : 45
+A50    : 46
+A51    : 47
+A52    : 48
+A53    : 49
+A54    : 50
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 E30 E31 E32 E33 E34 E35 E36 E37 E38 E39 E40 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E51 E52 E53 E54 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G54 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «By Role» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Template by Role
+A2     : AI Chef Pro · aichef.pro — Write your own tasks
+A4     : #
+B4     : Task
+C4     : Area / phase
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+A5     : 1
+A6     : 2
+A7     : 3
+A8     : 4
+A9     : 5
+A10    : 6
+A11    : 7
+A12    : 8
+A13    : 9
+A14    : 10
+A15    : 11
+A16    : 12
+A17    : 13
+A18    : 14
+A19    : 15
+A20    : 16
+A21    : 17
+A22    : 18
+A23    : 19
+A24    : 20
+A25    : 21
+A26    : 22
+A27    : 23
+A28    : 24
+A29    : 25
+A30    : 26
+A31    : 27
+A32    : 28
+A33    : 29
+A34    : 30
+A35    : 31
+A36    : 32
+A37    : 33
+A38    : 34
+A39    : 35
+A40    : 36
+A41    : 37
+A42    : 38
+A43    : 39
+A44    : 40
+A45    : 41
+A46    : 42
+A47    : 43
+A48    : 44
+A49    : 45
+A50    : 46
+A51    : 47
+A52    : 48
+A53    : 49
+A54    : 50
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 E30 E31 E32 E33 E34 E35 E36 E37 E38 E39 E40 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E51 E52 E53 E54 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G54 · expression  · fórmula=['$E5="✓"'] · texto=None
+####################################################################################################
+# 08-catering-commissary-opening-closing-checklist.xlsx
+# docProps: title='Catering Commissary Opening & Closing Checklist' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$46 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Catering Commissary Opening & Closing Checklist
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE COMMISSARY: what gets opened and closed for the entire business, not for each area. Use it as the backbone of the day.
+B7     : ▸ The MONEY is not here: deposits, settlement and payment for each event live in 09-catering-deposits-invoicing-payments.xlsx.
+B9     : How to use
+B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the lead assigns tasks and each person initials theirs.
+B12    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B14    : Editable cells
+B16    : ▸ Everything filled in daily is GREEN: Assigned to, Due by (When, at closing), ✓ Done, Initials and Notes.
+B18    : How the counter works
+B20    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B21    : ▸ "N/A" = doesn't apply (to this event, or to your commissary): that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B22    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B24    : Free rows
+B26    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B27    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B29    : Sheet protection
+B31    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B32    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B34    : Works with
+B36    : ▸ 08-catering-commissary-opening-closing-checklist.xlsx — checklist for the WHOLE COMMISSARY: it is the BACKBONE of the day.
+B37    : ▸ 09-catering-deposits-invoicing-payments.xlsx — the INVOICING: deposits, settlement and payment for each event.
+B38    : ▸ Order of use: commissary → events. Each file covers one level: the business file marks the MILESTONE (open, load, close) and the payments file tracks the MONEY of each event (deposit, invoice and balance). If a task shows up in both, that is on purpose: one is the milestone and the other the detail.
+B39    : ▸ You are in 08-catering-commissary-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the commissary; the MONEY is in 09-catering-deposits-invoicing-payments.xlsx.
+B41    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+B43    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B44    : Contact: info@aichef.pro
+B46    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Commissary Opening» · protegida=True · área='Commissary Opening'!$A$1:$H$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Commissary Opening Checklist
+A2     : Date: ____/____/________
+E2     : Manager on duty: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm and open the commissary, the equipment storage room and the loading dock
+C5     : Entrance
+D5     : Ops manager
+E5     : 7:00 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Ops manager
+E6     : 7:00 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Ops manager
+E7     : 7:00 AM
+A8     : 4
+B8     : Raise the security gate and unlock the doors
+C8     : Entrance
+D8     : Ops manager
+E8     : 7:00 AM
+A9     : 5
+B9     : Check the transport vehicles: clean, fueled and the refrigeration on, pre-chilled to 41 °F or below before anything is loaded
+C9     : Logistics
+D9     : Ops manager
+E9     : 7:00 AM
+A10    : 6
+B10    : Turn on the card terminal and the invoicing software (deposits and balances paid by card)
+C10    : POS
+D10    : Ops manager
+E10    : 7:00 AM
+A11    : 7
+B11    : Give each driver the route sheet for their vehicle: events, addresses, delivery times and contact phone
+C11    : Logistics
+D11    : Ops manager
+E11    : 7:15 AM
+A12    : 8
+B12    : Print the day's BEOs (banquet event orders) and hand them out: one for production, one for transport and one for each event's lead
+C12    : Office
+D12    : Ops manager
+E12    : 7:15 AM
+A13    : 9
+B13    : Call each client's day-of contact: confirm arrival time, site contact and any last-minute changes (the guaranteed count is already locked; extra guests are billed per the contract)
+C13    : Office
+D13    : Ops manager
+E13    : 7:15 AM
+A14    : 10
+B14    : Check the restrooms and the staff locker room: paper, soap, paper towels and cleanliness
+C14    : Restrooms
+D14    : Ops manager
+E14    : 7:15 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Ops manager
+E15    : 7:15 AM
+A16    : 12
+B16    : Inspect the furniture and linens going out today (tables, chairs and tabletops) and set aside anything damaged
+C16    : Storage
+D16    : Ops manager
+E16    : 7:15 AM
+A17    : 13
+B17    : Prepare the outdoor equipment if there is an outdoor event: tents, umbrellas, patio heaters (propane, per the local fire code) and weights
+C17    : Outside
+D17    : Ops manager
+E17    : 7:30 AM
+A18    : 14
+B18    : Confirm access and load-in time with each venue: dock, elevator, permits and contact person
+C18    : Office
+D18    : Ops manager
+E18    : 7:30 AM
+A19    : 15
+B19    : Pre-event briefing with the day's team: events, critical times, allergens and who goes on each event (the full script is in BONUS-01-catering-pre-event-briefing-template.xlsx)
+C19    : General
+D19    : Ops manager
+E19    : 7:30 AM
+A20    : 16
+B20    : Check the portable equipment
+C20    : Storage
+D20    : Ops manager
+E20    : 7:30 AM
+A21    : 17
+B21    : Review the day's order of events
+C21    : Office
+D21    : Ops manager
+E21    : 7:30 AM
+A22    : 18
+B22    : Load the insulated carriers for the events leaving first and log the departure temperature (hot 135 °F or above, cold 41 °F or below) — log reading: ____ °F (loading details go in the Transport & Delivery sheet of 02-catering-transport-delivery-checklist.xlsx)
+C22    : Outside
+D22    : Ops manager
+E22    : 7:30 AM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 18.0
+A30    : Manager signature: _________________________     Completion time: ________
+A31    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Commissary Closing» · protegida=True · área='Commissary Closing'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Commissary Closing Checklist
+A2     : Date: ____/____/________
+E2     : Manager on duty: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Unload and clean the delivery vehicles: returned food that still qualifies goes straight to the blast chiller or walk-in to finish cooling (FDA Food Code 3-501.14); the rest is discarded
+C5     : Logistics
+D5     : Ops manager
+E5     : Close
+A6     : 2
+B6     : Check in the portable equipment that came back
+C6     : Storage
+D6     : Ops manager
+E6     : Close
+A7     : 3
+B7     : Collect and store the outdoor equipment that came back (tents, umbrellas and patio heaters)
+C7     : Outside
+D7     : Ops manager
+E7     : Close
+A8     : 4
+B8     : Clear and hose down the loading dock: no carts, no pallets and no trash
+C8     : Outside
+D8     : Ops manager
+E8     : Close
+A9     : 5
+B9     : Empty trash cans in common areas and restrooms
+C9     : Restrooms
+D9     : Ops manager
+E9     : Close
+A10    : 6
+B10    : Turn off the commissary equipment that shouldn't run overnight (ovens, fryer, hood) and leave the walk-ins and blast chiller on
+C10    : General
+D10    : Ops manager
+E10    : Close
+A11    : 7
+B11    : Turn off the card terminal (or leave it on standby)
+C11    : POS
+D11    : Ops manager
+E11    : Close
+A12    : 8
+B12    : Final safety check (gas, water, outlets)
+C12    : General
+D12    : Ops manager
+E12    : Close
+A13    : 9
+B13    : Check that windows are closed
+C13    : General
+D13    : Ops manager
+E13    : Close
+A14    : 10
+B14    : Turn off HVAC
+C14    : General
+D14    : Ops manager
+E14    : Close
+A15    : 11
+B15    : Check that no staff or visitors are left in the commissary before closing
+C15    : General
+D15    : Ops manager
+E15    : Close
+A16    : 12
+B16    : Turn off lights (leave security lighting)
+C16    : General
+D16    : Ops manager
+E16    : Close
+A17    : 13
+B17    : Set the alarm
+C17    : Entrance
+D17    : Ops manager
+E17    : Close
+A18    : 14
+B18    : Close security gate and doors
+C18    : Entrance
+D18    : Last one out
+E18    : Close
+A19    : 15
+B19    : Lock up and verify it is locked
+C19    : Entrance
+D19    : Last one out
+E19    : Close
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Manager signature: _________________________     Completion time: ________
+A28    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-catering-deposits-invoicing-payments.xlsx
+# docProps: title='Catering Deposits, Invoicing & Payments: Event Settlement & Billing Log' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$60 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 09 · Catering Deposits, Invoicing & Payments: Event Settlement & Billing Log
+B4     : What it solves
+B6     : ▸ The money for each EVENT from start to finish: what must be closed beforehand (signed quote, deposit collected, billing details), what to do afterwards (actual count, extras, invoice, balance) and how much is left to collect.
+B7     : ▸ This is not a cash count: a catering business has no counter or POS shift. It gets paid per event, almost always by check, ACH (bank transfer) or card, so what to watch is the outstanding BALANCE and its due date, not the drawer over/short.
+B9     : How to Use — Before the Event
+B11    : ▸ Go through it with the calendar in hand: the "When" column counts DAYS before the event (By 15 days out, By 7 days out, By 3 days out, Day before: deadlines), not hours. Nothing leaves here without a quote accepted in writing and the deposit collected and logged.
+B13    : How to Use — After the Event
+B15    : ▸ The days that follow (event day, day after, 7 days after, 30 days after): actual count vs. guaranteed count, extras used, invoice sent, balance communicated, payment logged and reconciled with the bank.
+B17    : How to Use — Event Settlement
+B19    : ▸ Fill in only the GREEN cells: quote and extras BEFORE sales tax, how that base splits between "Taxable subtotal" and "Non-taxable subtotal", the deposit already collected, what was paid after the event and the balance due date. The total, the sales tax, the balance, the amount outstanding and the STATUS are formulas. The sales tax comes from the rate in cell C3 of the "Event Billing Log".
+B20    : ▸ What carries sales tax is decided by your state (check with your CPA or the department of revenue): in many states food, drinks, rentals and the mandatory service charge. A mandatory service charge is NOT a tip: it is your revenue, and whatever part of it you pay to staff is wages on payroll for the IRS, not tips (Rev. Rul. 2012-18). Some states (e.g., NY, MA) presume an undisclosed service charge belongs to staff: state your policy in the contract. The gratuity is the client's choice, goes on a separate line and belongs to the team. A tax-exempt client needs their exemption certificate on file. If the two subtotals don't add up to quote + extras, the sheet warns you.
+B21    : ▸ BALANCE DUE turns AMBER while any balance remains, and the STATUS changes to "OVERDUE" only once the due date has passed: it is the signal to chase the payment.
+B22    : ▸ If the event had a bar with CASH payment, count the money in the optional table at the bottom (denominations, minus the starting bank) and, if you like, add that net cash to "Paid after the event" yourself. It is not linked on purpose: most events have no cash, and a fixed formula would leave a 0 subtracting where it shouldn't. The cash table has US bills and coins ($100 … 1¢; a "25¢ roll" counts $10 and a "10¢ roll" $5); in the UK, Canada or Australia, unprotect the sheet (no password) and change each row's label and the multiplier in its Subtotal formula.
+B24    : Event Billing Log
+B26    : ▸ One row per event: at a glance you see how much was invoiced, which deposits came in, what is pending and how many events are OVERDUE. The TOTALS row adds up the year and counts the pending ones.
+B28    : Editable cells
+B30    : ▸ Everything you fill in is GREEN: Assigned to, When, ✓ Done, Initials, the settlement amounts and the Event Billing Log rows.
+B32    : How the counter works
+B34    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B35    : ▸ "N/A" = doesn't apply (to this event, or to your commissary): that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B36    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B38    : Free rows
+B40    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B41    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B43    : Sheet protection
+B45    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B46    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B48    : Works with
+B50    : ▸ 08-catering-commissary-opening-closing-checklist.xlsx — checklist for the WHOLE COMMISSARY: it is the BACKBONE of the day.
+B51    : ▸ 09-catering-deposits-invoicing-payments.xlsx — the INVOICING: deposits, settlement and payment for each event.
+B52    : ▸ Order of use: commissary → events. Each file covers one level: the business file marks the MILESTONE (open, load, close) and the payments file tracks the MONEY of each event (deposit, invoice and balance). If a task shows up in both, that is on purpose: one is the milestone and the other the detail.
+B53    : ▸ You are in 09-catering-deposits-invoicing-payments.xlsx: this is the INVOICING — the MONEY of each event (deposit, settlement, invoice and balance due); the frame of the day is in 08-catering-commissary-opening-closing-checklist.xlsx.
+B55    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+B57    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B58    : Contact: info@aichef.pro
+B60    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Before the Event» · protegida=True · área='Before the Event'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Before the Event
+A2     : Event / client: _________________________
+D2     : Event date: ____/____/________    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Event quote signed or accepted in writing (an email or a signed PDF counts; a verbal confirmation doesn't)
+C5     : Sales
+D5     : By 15 days out
+A6     : 2
+B6     : Deadline for the guaranteed count (final headcount) sent to the client in writing; the count locks on that date, per your contract
+C6     : Sales
+D6     : By 15 days out
+A7     : 3
+B7     : Deposit (retainer) of 30–50% per your contract collected and logged: date, amount and payment method
+C7     : Accounting
+D7     : By 15 days out
+A8     : 4
+B8     : Payment method for the balance agreed (check, ACH, card or cash) and payment terms in writing
+C8     : Accounting
+D8     : By 15 days out
+A9     : 5
+B9     : Complete billing details: legal name, address and billing email and, if the client is tax-exempt, their exemption certificate
+C9     : Accounting
+D9     : By 15 days out
+A10    : 6
+B10    : Checked that the client has no earlier unpaid invoices (look in the "Event Billing Log")
+C10    : Accounting
+D10    : By 15 days out
+A11    : 7
+B11    : Cancellation and change terms sent in writing and accepted
+C11    : Sales
+D11    : By 7 days out
+A12    : 8
+B12    : Outside vendors for the event (tent, sound, smallwares rental) with the order closed and their payment or deposit made
+C12    : Event manager
+D12    : By 7 days out
+A13    : 9
+B13    : Event costing closed and margin checked before producing
+C13    : Owner / GM
+D13    : By 7 days out
+A14    : 10
+B14    : COI (certificate of insurance) for general liability (and liquor liability if you serve alcohol) in force, with the venue as additional insured if it asks
+C14    : Owner / GM
+D14    : By 7 days out
+A15    : 11
+B15    : Allergies and intolerances received from the client in writing and passed to the kitchen
+C15    : Event manager
+D15    : By 3 days out
+A16    : 12
+B16    : Only if there will be a cash bar: starting bank prepared and logged in the optional section of "Event Settlement"
+C16    : Accounting
+D16    : Day before
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A25    : Signed off by: _________________________     Date: ____/____/________
+A26    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «After the Event» · protegida=True · área='After the Event'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : After the Event
+A2     : Event / client: _________________________
+D2     : Event date: ____/____/________    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Actual count of guests vs. the guaranteed count, logged the same day; bill what your contract says (normally the greater of the two)
+C5     : Event manager
+D5     : Event day
+A6     : 2
+B6     : Extras used logged: extra staff hours, drinks, add-ons and breakage
+C6     : Event manager
+D6     : Event day
+A7     : 3
+B7     : Only if there was a cash bar: cash count in the optional section of "Event Settlement"
+C7     : Accounting
+D7     : Event day
+A8     : 4
+B8     : Breakage or incident charges communicated to the client before the invoice goes out, so they never show up on it as a surprise
+C8     : Event manager
+D8     : Day after
+A9     : 5
+B9     : Invoice issued with the sales tax on what your state taxes and, on separate lines, the service charge and any gratuity
+C9     : Accounting
+D9     : Day after
+A10    : 6
+B10    : Balance (total − deposit) communicated to the client with its due date
+C10    : Accounting
+D10    : Day after
+A11    : 7
+B11    : "Event Settlement" filled in and logged as a row in the "Event Billing Log"
+C11    : Accounting
+D11    : Day after
+A12    : 8
+B12    : Balance payment logged: date, payment method and reference
+C12    : Accounting
+D12    : 7 days after
+A13    : 9
+B13    : Payment reconciled with the bank statement (the money is in the account, not just promised)
+C13    : Accounting
+D13    : 7 days after
+A14    : 10
+B14    : Review or rating requested from the client while the event is fresh
+C14    : Sales
+D14    : 7 days after
+A15    : 11
+B15    : Event file archived: quote, invoice, BEO and incidents
+C15    : Accounting
+D15    : 30 days after
+A16    : 12
+B16    : OVERDUE balances in the "Event Billing Log" reviewed and chased one by one
+C16    : Owner / GM
+D16    : 30 days after
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A25    : Signed off by: _________________________     Date: ____/____/________
+A26    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Event Settlement» · protegida=True · área='Event Settlement'!$A$1:$D$51 · títulos=None · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Event Settlement
+A2     : Fill in ONLY the green cells
+C2     : Invoice #: ______________
+A4     : Item
+C4     : Amount ($)
+D4     : What to enter
+A5     : Event / client
+D5     : Name of the event and of the client being invoiced.
+A6     : Event date
+D6     : The day of service, not the day the quote was signed.
+A7     : Guaranteed count
+D7     : The guaranteed count on the accepted quote.
+A8     : Actual count
+D8     : The actual count. The difference is what gets argued over at invoicing: log it the same day.
+A9     : 🧾 Subtotals & sales tax
+A10    : Accepted quote (before tax)
+C10    : 0
+D10    : The accepted amount BEFORE sales tax, mandatory service charge included if your quote has one.
+A11    : Extras (before tax)
+C11    : 0
+D11    : Extra staff hours, extra drinks, add-ons and breakage charges; before sales tax.
+A12    : Taxable subtotal
+C12    : 0
+D12    : What your state taxes: in many states food, drinks, rentals and the mandatory service charge (ask your CPA or the department of revenue).
+A13    : Non-taxable subtotal
+C13    : 0
+D13    : What is exempt in your state, or everything if the client is tax-exempt with their certificate; 0 if everything carries sales tax. The gratuity doesn't go here.
+A14    : Check: the two subtotals must add up to quote + extras
+C14    = =IF(C10+C11+C12+C13=0,"",IF(ABS(C12+C13-C10-C11)<=0.01,"OK: the two subtotals add up to quote + extras","CHECK: the two subtotals do not add up to quote + extras"))   → caché None
+D14    : If it doesn't add up, check the split: the invoice total comes from these two subtotals, not from the quote.
+A15    : Sales tax (rate set in Event Billing Log C3)
+C15    = =IFERROR(ROUND(C12*'Event Billing Log'!$C$3,2),0)   → caché 0.0
+D15    : Formula: taxable subtotal × the rate in Event Billing Log C3. It stays at $0 until you enter your rate there.
+A16    : Non-taxable subtotal: no sales tax
+C16    = =IFERROR(ROUND(C13*0,2),0)   → caché 0.0
+D16    : Always $0: exempt items and tax-exempt clients carry no sales tax. Nothing to enter.
+A17    : INVOICE TOTAL
+C17    = =IFERROR(C12+C13+C15+C16,0)   → caché 0.0
+D17    : The two subtotals plus the sales tax: what the invoice says.
+A18    : 💰 Deposit, balance & payment
+A19    : Deposit received (−)
+C19    : 0
+D19    : What was collected at signing (the deposit, usually 30–50%); it is subtracted from the total.
+A20    : Balance after deposit
+C20    = =IFERROR(C17-C19,0)   → caché 0.0
+D20    : Formula: total − deposit. This is what gets invoiced at the end.
+A21    : Paid after the event
+C21    : 0
+D21    : What came in AFTER the event and is reconciled with the bank.
+A22    : BALANCE DUE
+C22    = =IFERROR(C20-C21,0)   → caché 0.0
+D22    : Formula: balance − paid. Amber while anything is left to collect.
+A23    : Balance due date
+D23    : The date you agreed with the client. Without it, the status can never say OVERDUE.
+A24    : STATUS
+C24    = =IF(C17<=0,"",IF(C22<=0.01,"Paid",IF(C23="","Pending",IF(TODAY()>C23,"OVERDUE","Pending"))))   → caché None
+D24    : "Paid" if not a cent is left · "Pending" while there is still a balance · "OVERDUE" if the due date has also passed.
+A26    : 💰 Only if there was a CASH bar
+A27    : Count the cash in dollars and, if you like, add the "Net cash from the event" to "Paid after the event" yourself. It is NOT linked automatically: most events have no cash bar, and a fixed formula would leave a 0 subtracting where it shouldn't.
+A28    : Denomination
+B28    : Quantity
+C28    : Subtotal ($)
+D28    : Enter only what is in the drawer
+A29    : BILLS
+A30    : $100
+B30    : 0
+C30    = =IFERROR(B30*100,0)   → caché 0.0
+A31    : $50
+B31    : 0
+C31    = =IFERROR(B31*50,0)   → caché 0.0
+A32    : $20
+B32    : 0
+C32    = =IFERROR(B32*20,0)   → caché 0.0
+A33    : $10
+B33    : 0
+C33    = =IFERROR(B33*10,0)   → caché 0.0
+A34    : $5
+B34    : 0
+C34    = =IFERROR(B34*5,0)   → caché 0.0
+A35    : $2
+B35    : 0
+C35    = =IFERROR(B35*2,0)   → caché 0.0
+A36    : $1
+B36    : 0
+C36    = =IFERROR(B36*1,0)   → caché 0.0
+A37    : COINS
+A38    : $1 coin
+B38    : 0
+C38    = =IFERROR(B38*1,0)   → caché 0.0
+A39    : 50¢
+B39    : 0
+C39    = =IFERROR(B39*0.5,0)   → caché 0.0
+A40    : 25¢
+B40    : 0
+C40    = =IFERROR(B40*0.25,0)   → caché 0.0
+A41    : 10¢
+B41    : 0
+C41    = =IFERROR(B41*0.1,0)   → caché 0.0
+A42    : 5¢
+B42    : 0
+C42    = =IFERROR(B42*0.05,0)   → caché 0.0
+A43    : 1¢
+B43    : 0
+C43    = =IFERROR(B43*0.01,0)   → caché 0.0
+A44    : 25¢ roll
+B44    : 0
+C44    = =IFERROR(B44*10,0)   → caché 0.0
+A45    : 10¢ roll
+B45    : 0
+C45    = =IFERROR(B45*5,0)   → caché 0.0
+A46    : TOTAL CASH
+C46    = =IFERROR(SUM(C30:C45),0)   → caché 0.0
+A47    : Cash bar starting bank (−)
+C47    : 0
+D47    : The change the bar started with. It is not a sale.
+A48    : Net cash from the event
+C48    = =IFERROR(C46-C47,0)   → caché 0.0
+D48    : Formula: total counted − starting bank. This one does count as event payment.
+A50    : Signed off by: _________________________     Date: ____/____/________
+A51    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF C22 · cellIs greaterThan · fórmula=['0.01'] · texto=None
+CF C24 · cellIs equal · fórmula=['"OVERDUE"'] · texto=None
+
+=== Hoja «Event Billing Log» · protegida=True · área='Event Billing Log'!$A$1:$K$37 · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Event Billing Log
+A2     : Year: ________
+G2     : Billing manager: ______________
+A3     : Sales tax rate (state + local) — set it first
+C3     : 0
+D3     : 0 = no sales tax until you enter your combined rate (state + local), e.g. 0.0825 for 8.25%. "Event Settlement" applies it to the taxable subtotal; here it is applied to the whole base, so "Invoice total" is an estimate if part of the event is exempt: the exact figure is in "Event Settlement".
+A5     : Date
+B5     : Event / client
+C5     : Guests
+D5     : Pre-tax (quote + extras)
+E5     : Invoice total
+F5     : Deposit
+G5     : Paid
+H5     : Balance due
+I5     : Payment method
+J5     : Due date
+K5     : Status
+D6     : 0
+E6     = =IFERROR(IF(D6=0,0,ROUND(D6*(1+$C$3),2)),0)   → caché 0.0
+F6     : 0
+G6     : 0
+H6     = =IFERROR(IF(E6=0,0,E6-F6-G6),0)   → caché 0.0
+K6     = =IF(E6=0,"",IF(H6<=0.01,"Paid",IF(J6="","Pending",IF(TODAY()>J6,"OVERDUE","Pending"))))   → caché None
+D7     : 0
+E7     = =IFERROR(IF(D7=0,0,ROUND(D7*(1+$C$3),2)),0)   → caché 0.0
+F7     : 0
+G7     : 0
+H7     = =IFERROR(IF(E7=0,0,E7-F7-G7),0)   → caché 0.0
+K7     = =IF(E7=0,"",IF(H7<=0.01,"Paid",IF(J7="","Pending",IF(TODAY()>J7,"OVERDUE","Pending"))))   → caché None
+D8     : 0
+E8     = =IFERROR(IF(D8=0,0,ROUND(D8*(1+$C$3),2)),0)   → caché 0.0
+F8     : 0
+G8     : 0
+H8     = =IFERROR(IF(E8=0,0,E8-F8-G8),0)   → caché 0.0
+K8     = =IF(E8=0,"",IF(H8<=0.01,"Paid",IF(J8="","Pending",IF(TODAY()>J8,"OVERDUE","Pending"))))   → caché None
+D9     : 0
+E9     = =IFERROR(IF(D9=0,0,ROUND(D9*(1+$C$3),2)),0)   → caché 0.0
+F9     : 0
+G9     : 0
+H9     = =IFERROR(IF(E9=0,0,E9-F9-G9),0)   → caché 0.0
+K9     = =IF(E9=0,"",IF(H9<=0.01,"Paid",IF(J9="","Pending",IF(TODAY()>J9,"OVERDUE","Pending"))))   → caché None
+D10    : 0
+E10    = =IFERROR(IF(D10=0,0,ROUND(D10*(1+$C$3),2)),0)   → caché 0.0
+F10    : 0
+G10    : 0
+H10    = =IFERROR(IF(E10=0,0,E10-F10-G10),0)   → caché 0.0
+K10    = =IF(E10=0,"",IF(H10<=0.01,"Paid",IF(J10="","Pending",IF(TODAY()>J10,"OVERDUE","Pending"))))   → caché None
+D11    : 0
+E11    = =IFERROR(IF(D11=0,0,ROUND(D11*(1+$C$3),2)),0)   → caché 0.0
+F11    : 0
+G11    : 0
+H11    = =IFERROR(IF(E11=0,0,E11-F11-G11),0)   → caché 0.0
+K11    = =IF(E11=0,"",IF(H11<=0.01,"Paid",IF(J11="","Pending",IF(TODAY()>J11,"OVERDUE","Pending"))))   → caché None
+D12    : 0
+E12    = =IFERROR(IF(D12=0,0,ROUND(D12*(1+$C$3),2)),0)   → caché 0.0
+F12    : 0
+G12    : 0
+H12    = =IFERROR(IF(E12=0,0,E12-F12-G12),0)   → caché 0.0
+K12    = =IF(E12=0,"",IF(H12<=0.01,"Paid",IF(J12="","Pending",IF(TODAY()>J12,"OVERDUE","Pending"))))   → caché None
+D13    : 0
+E13    = =IFERROR(IF(D13=0,0,ROUND(D13*(1+$C$3),2)),0)   → caché 0.0
+F13    : 0
+G13    : 0
+H13    = =IFERROR(IF(E13=0,0,E13-F13-G13),0)   → caché 0.0
+K13    = =IF(E13=0,"",IF(H13<=0.01,"Paid",IF(J13="","Pending",IF(TODAY()>J13,"OVERDUE","Pending"))))   → caché None
+D14    : 0
+E14    = =IFERROR(IF(D14=0,0,ROUND(D14*(1+$C$3),2)),0)   → caché 0.0
+F14    : 0
+G14    : 0
+H14    = =IFERROR(IF(E14=0,0,E14-F14-G14),0)   → caché 0.0
+K14    = =IF(E14=0,"",IF(H14<=0.01,"Paid",IF(J14="","Pending",IF(TODAY()>J14,"OVERDUE","Pending"))))   → caché None
+D15    : 0
+E15    = =IFERROR(IF(D15=0,0,ROUND(D15*(1+$C$3),2)),0)   → caché 0.0
+F15    : 0
+G15    : 0
+H15    = =IFERROR(IF(E15=0,0,E15-F15-G15),0)   → caché 0.0
+K15    = =IF(E15=0,"",IF(H15<=0.01,"Paid",IF(J15="","Pending",IF(TODAY()>J15,"OVERDUE","Pending"))))   → caché None
+D16    : 0
+E16    = =IFERROR(IF(D16=0,0,ROUND(D16*(1+$C$3),2)),0)   → caché 0.0
+F16    : 0
+G16    : 0
+H16    = =IFERROR(IF(E16=0,0,E16-F16-G16),0)   → caché 0.0
+K16    = =IF(E16=0,"",IF(H16<=0.01,"Paid",IF(J16="","Pending",IF(TODAY()>J16,"OVERDUE","Pending"))))   → caché None
+D17    : 0
+E17    = =IFERROR(IF(D17=0,0,ROUND(D17*(1+$C$3),2)),0)   → caché 0.0
+F17    : 0
+G17    : 0
+H17    = =IFERROR(IF(E17=0,0,E17-F17-G17),0)   → caché 0.0
+K17    = =IF(E17=0,"",IF(H17<=0.01,"Paid",IF(J17="","Pending",IF(TODAY()>J17,"OVERDUE","Pending"))))   → caché None
+D18    : 0
+E18    = =IFERROR(IF(D18=0,0,ROUND(D18*(1+$C$3),2)),0)   → caché 0.0
+F18    : 0
+G18    : 0
+H18    = =IFERROR(IF(E18=0,0,E18-F18-G18),0)   → caché 0.0
+K18    = =IF(E18=0,"",IF(H18<=0.01,"Paid",IF(J18="","Pending",IF(TODAY()>J18,"OVERDUE","Pending"))))   → caché None
+D19    : 0
+E19    = =IFERROR(IF(D19=0,0,ROUND(D19*(1+$C$3),2)),0)   → caché 0.0
+F19    : 0
+G19    : 0
+H19    = =IFERROR(IF(E19=0,0,E19-F19-G19),0)   → caché 0.0
+K19    = =IF(E19=0,"",IF(H19<=0.01,"Paid",IF(J19="","Pending",IF(TODAY()>J19,"OVERDUE","Pending"))))   → caché None
+D20    : 0
+E20    = =IFERROR(IF(D20=0,0,ROUND(D20*(1+$C$3),2)),0)   → caché 0.0
+F20    : 0
+G20    : 0
+H20    = =IFERROR(IF(E20=0,0,E20-F20-G20),0)   → caché 0.0
+K20    = =IF(E20=0,"",IF(H20<=0.01,"Paid",IF(J20="","Pending",IF(TODAY()>J20,"OVERDUE","Pending"))))   → caché None
+D21    : 0
+E21    = =IFERROR(IF(D21=0,0,ROUND(D21*(1+$C$3),2)),0)   → caché 0.0
+F21    : 0
+G21    : 0
+H21    = =IFERROR(IF(E21=0,0,E21-F21-G21),0)   → caché 0.0
+K21    = =IF(E21=0,"",IF(H21<=0.01,"Paid",IF(J21="","Pending",IF(TODAY()>J21,"OVERDUE","Pending"))))   → caché None
+D22    : 0
+E22    = =IFERROR(IF(D22=0,0,ROUND(D22*(1+$C$3),2)),0)   → caché 0.0
+F22    : 0
+G22    : 0
+H22    = =IFERROR(IF(E22=0,0,E22-F22-G22),0)   → caché 0.0
+K22    = =IF(E22=0,"",IF(H22<=0.01,"Paid",IF(J22="","Pending",IF(TODAY()>J22,"OVERDUE","Pending"))))   → caché None
+D23    : 0
+E23    = =IFERROR(IF(D23=0,0,ROUND(D23*(1+$C$3),2)),0)   → caché 0.0
+F23    : 0
+G23    : 0
+H23    = =IFERROR(IF(E23=0,0,E23-F23-G23),0)   → caché 0.0
+K23    = =IF(E23=0,"",IF(H23<=0.01,"Paid",IF(J23="","Pending",IF(TODAY()>J23,"OVERDUE","Pending"))))   → caché None
+D24    : 0
+E24    = =IFERROR(IF(D24=0,0,ROUND(D24*(1+$C$3),2)),0)   → caché 0.0
+F24    : 0
+G24    : 0
+H24    = =IFERROR(IF(E24=0,0,E24-F24-G24),0)   → caché 0.0
+K24    = =IF(E24=0,"",IF(H24<=0.01,"Paid",IF(J24="","Pending",IF(TODAY()>J24,"OVERDUE","Pending"))))   → caché None
+D25    : 0
+E25    = =IFERROR(IF(D25=0,0,ROUND(D25*(1+$C$3),2)),0)   → caché 0.0
+F25    : 0
+G25    : 0
+H25    = =IFERROR(IF(E25=0,0,E25-F25-G25),0)   → caché 0.0
+K25    = =IF(E25=0,"",IF(H25<=0.01,"Paid",IF(J25="","Pending",IF(TODAY()>J25,"OVERDUE","Pending"))))   → caché None
+D26    : 0
+E26    = =IFERROR(IF(D26=0,0,ROUND(D26*(1+$C$3),2)),0)   → caché 0.0
+F26    : 0
+G26    : 0
+H26    = =IFERROR(IF(E26=0,0,E26-F26-G26),0)   → caché 0.0
+K26    = =IF(E26=0,"",IF(H26<=0.01,"Paid",IF(J26="","Pending",IF(TODAY()>J26,"OVERDUE","Pending"))))   → caché None
+D27    : 0
+E27    = =IFERROR(IF(D27=0,0,ROUND(D27*(1+$C$3),2)),0)   → caché 0.0
+F27    : 0
+G27    : 0
+H27    = =IFERROR(IF(E27=0,0,E27-F27-G27),0)   → caché 0.0
+K27    = =IF(E27=0,"",IF(H27<=0.01,"Paid",IF(J27="","Pending",IF(TODAY()>J27,"OVERDUE","Pending"))))   → caché None
+D28    : 0
+E28    = =IFERROR(IF(D28=0,0,ROUND(D28*(1+$C$3),2)),0)   → caché 0.0
+F28    : 0
+G28    : 0
+H28    = =IFERROR(IF(E28=0,0,E28-F28-G28),0)   → caché 0.0
+K28    = =IF(E28=0,"",IF(H28<=0.01,"Paid",IF(J28="","Pending",IF(TODAY()>J28,"OVERDUE","Pending"))))   → caché None
+D29    : 0
+E29    = =IFERROR(IF(D29=0,0,ROUND(D29*(1+$C$3),2)),0)   → caché 0.0
+F29    : 0
+G29    : 0
+H29    = =IFERROR(IF(E29=0,0,E29-F29-G29),0)   → caché 0.0
+K29    = =IF(E29=0,"",IF(H29<=0.01,"Paid",IF(J29="","Pending",IF(TODAY()>J29,"OVERDUE","Pending"))))   → caché None
+D30    : 0
+E30    = =IFERROR(IF(D30=0,0,ROUND(D30*(1+$C$3),2)),0)   → caché 0.0
+F30    : 0
+G30    : 0
+H30    = =IFERROR(IF(E30=0,0,E30-F30-G30),0)   → caché 0.0
+K30    = =IF(E30=0,"",IF(H30<=0.01,"Paid",IF(J30="","Pending",IF(TODAY()>J30,"OVERDUE","Pending"))))   → caché None
+A31    : TOTALS
+D31    = =IFERROR(SUM(D6:D30),0)   → caché 0.0
+E31    = =IFERROR(SUM(E6:E30),0)   → caché 0.0
+F31    = =IFERROR(SUM(F6:F30),0)   → caché 0.0
+G31    = =IFERROR(SUM(G6:G30),0)   → caché 0.0
+H31    = =IFERROR(SUM(H6:H30),0)   → caché 0.0
+A33    : Events with a balance PENDING
+D33    = =COUNTIF(K6:K30,"Pending")   → caché 0.0
+E33    : With a balance due and still within terms.
+A34    : OVERDUE events
+D34    = =COUNTIF(K6:K30,"OVERDUE")   → caché 0.0
+E34    : Past due and unpaid: chase them today.
+A36    : Signed off by: _________________________     Date: ____/____/________
+A37    : — Catering Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H6:H30 · cellIs greaterThan · fórmula=['0.01'] · texto=None
+CF A6:K30 · expression  · fórmula=['$K6="OVERDUE"'] · texto=None
+####################################################################################################
+# BONUS-01-catering-pre-event-briefing-template.xlsx
+# docProps: title='BONUS: Catering Pre-Event Briefing Template (Team Huddle)' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Catering Pre-Event Briefing Template (Team Huddle)
+B4     : How to use this template:
+B5     : ▸ Template for the pre-event huddle with the whole team.
+B6     : ▸ Held 30–60 min before doors open.
+B7     : ▸ Includes event info, menu, allergens, VIPs and roles.
+B9     : Customization:
+B10    : ▸ Fill it in before each event and hand it out to the team.
+B11    : ▸ Print one copy for the kitchen and one for the service team.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Event Briefing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pre-Event Briefing
+A2     : AI Chef Pro · aichef.pro — Catering Checklists Kit Pro
+A4     : Event Information
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Event type: _______________ (wedding/corporate/cocktail/other)
+C6     : Office
+A7     : 2
+B7     : Client: _______________ Contact: _______________
+C7     : Office
+A8     : 3
+B8     : Guaranteed count: ___ Tables: ___ Staff: ___
+C8     : Office
+A9     : 4
+B9     : Doors open: ___ Service starts: ___
+C9     : Office
+A10    : 5
+B10    : Estimated end: ___ Latest breakdown: ___
+C10    : Office
+A12    : Menu & Allergens
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Review the full menu with the team: appetizers, entrées, desserts
+C14    : Production
+A15    : 2
+B15    : Confirm special dishes: vegan, gluten-free, kosher, halal
+C15    : Production
+A16    : 3
+B16    : Critical allergens at the tables: identify the guests and the alternative dishes
+C16    : Production
+A17    : 4
+B17    : Pairings: white wine with ___, red with ___, sparkling wine / champagne for ___
+C17    : Service
+A18    : 5
+B18    : Order of service: 1.___  2.___  3.___  4.___  5.___
+C18    : Service
+A20    : Team & Roles
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Event chef: _______________ (kitchen lead)
+C22    : Office
+A23    : 2
+B23    : Banquet captain: _______________ (floor lead)
+C23    : Office
+A24    : 3
+B24    : Bartender: _______________ (bar lead)
+C24    : Office
+A25    : 4
+B25    : Section servers: assign tables/areas
+C25    : Office
+A26    : 5
+B26    : Runners: assign to the kitchen or the floor as needed
+C26    : Office
+A27    : 6
+B27    : Venue emergency contact: _______________
+C27    : Office
+A29    : VIPs & Protocol
+A30    : #
+B30    : Task
+C30    : Area
+D30    : Assigned to
+E30    : ✓
+F30    : Time
+G30    : Notes
+A31    : 1
+B31    : Identify the host's / couple's / CEO's table
+C31    : Service
+A32    : 2
+B32    : VIP guests needing special attention: _______________
+C32    : Service
+A33    : 3
+B33    : Speech/toast protocol: estimated time ___
+C33    : Service
+A34    : 4
+B34    : Venue restrictions: music cut-off time, noise level
+C34    : Office
+B35    : Tasks done:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Task",E6:E34,"✓")   → caché 0.0
+D35    : of
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Task")-COUNTIF(E6:E34,"N/A")   → caché 20.0
+A36    : Signed off by: _________________  Date: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G34 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# BONUS-02-catering-events-calendar.xlsx
+# docProps: title='BONUS: Catering Busy Season & Events Calendar (US)' · subject='Catering Checklists Kit Pro · v2.0' · keywords='catering checklist, catering event checklist, catering checklist template, off-site catering, catering setup checklist, BEO, AI Chef Pro' · description='aichef.pro/en/digital-products/catering-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Catering Busy Season & Events Calendar (US)
+B4     : How to use this template:
+B5     : ▸ The 22 key dates of the year for catering businesses.
+B6     : ▸ Includes peak wedding season, corporate events and holidays.
+B7     : ▸ Each date includes the recommended prep lead time.
+B9     : Customization:
+B10    : ▸ Add your local dates (state fairs, festivals, city celebrations). UK note: add bank holidays and Boxing Day in the free rows.
+B11    : ▸ Use it to plan temporary staff and advance purchasing.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/catering-checklist-templates · info@aichef.pro
+
+=== Hoja «Events Calendar» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Annual Peak Season Calendar — Catering
+A2     : AI Chef Pro · aichef.pro — 22 key dates to plan your year
+A4     : #
+B4     : Date / period
+C4     : Type
+D4     : Key tasks
+E4     : Lead time
+F4     : Notes
+A5     : 1
+B5     : Feb — Super Bowl Sunday (2nd Sunday)
+C5     : Celebration
+D5     : Game-day trays and drop-off catering: wings, sliders, dips; orders closed the week before
+E5     : 3 weeks
+A6     : 2
+B6     : Feb 14 — Valentine's Day
+C6     : Holiday
+D6     : Romantic dinners, tasting menus for couples
+E6     : 4 weeks
+A7     : 3
+B7     : Mar 17 — St. Patrick's Day
+C7     : Holiday
+D7     : Corporate parties and family gatherings with a themed menu; alcohol only under the license your state requires (yours or the venue's), 21+ with ID
+E7     : 3 weeks
+A8     : 4
+B8     : Mar–Apr — Easter & Passover (dates vary)
+C8     : Holiday
+D8     : Easter brunch and family dinners (ham, lamb, seasonal desserts); Passover seder if your clients ask (kosher only with a certified kitchen and supervision)
+E8     : 3 weeks
+A9     : 5
+B9     : April — First Communions (season starts), quinceaneras & bar/bat mitzvahs
+C9     : Celebration
+D9     : Kids' + adult menus, themed decor
+E9     : 2–3 months
+A10    : 6
+B10    : May — Wedding season starts
+C10    : Wedding
+D10    : High demand for temporary staff, book vendors
+E10    : 6–12 months
+A11    : 7
+B11    : May — First Communions & quinceaneras (peak) + Mother's Day (2nd Sunday)
+C11    : Celebration
+D11    : Peak demand: 2–3 simultaneous events possible; add Mother's Day brunches to order
+E11    : 3–4 months
+A12    : 8
+B12    : May–June — Weddings + graduation parties
+C12    : Mixed
+D12    : Graduation open houses and party trays, outdoor events, rain plan Bs, tents
+E12    : 6–12 months
+A13    : 9
+B13    : June — Corporate summer picnics & team building
+C13    : Corporate
+D13    : Team building + catering, outdoor cocktail format
+E13    : 2 months
+A14    : 10
+B14    : July–August — Summer weddings & July 4 cookouts
+C14    : Mixed
+D14    : Heat management, fresh menus, more staff, plus July 4 cookouts
+E14    : 6–12 months
+A15    : 11
+B15    : September — Back to business (after Labor Day)
+C15    : Corporate
+D15    : Kick-offs, conventions, mass coffee breaks
+E15    : 1–2 months
+A16    : 12
+B16    : Sep–Oct — Fall wedding season (peak)
+C16    : Wedding
+D16    : Fall menus (pumpkin, apple, mushrooms)
+E16    : 6–12 months
+A17    : 13
+B17    : Oct 31 — Halloween
+C17    : Holiday
+D17    : Themed events and decor; themed drinks (alcohol only under license)
+E17    : 4 weeks
+A18    : 14
+B18    : October — Holiday party bookings open
+C18    : Corporate
+D18    : Quotes for December, early bookings
+E18    : 2–3 months
+A19    : 15
+B19    : November — Thanksgiving (4th Thursday)
+C19    : Holiday
+D19    : Takeout Thanksgiving dinners and corporate Friendsgivings (turkey, sides and pies to order); close orders the weekend before
+E19    : 4 weeks
+A20    : 16
+B20    : Early Dec — Holiday party peak weekends
+C20    : Mixed
+D20    : The first December weekends: corporate parties, winter weddings and family gatherings; lock in extra staff and stock BEFORE
+E20    : 4 weeks
+A21    : 17
+B21    : December — Corporate holiday parties
+C21    : Corporate
+D21    : Peak corporate demand of the year. Extra staff
+E21    : 2–3 months
+A22    : 18
+B22    : December — Hanukkah, Christmas Eve & Christmas dinners
+C22    : Celebration
+D22    : Holiday menus: prime rib, ham, seafood, seasonal desserts; for Hanukkah (dates vary), latkes and brisket
+E22    : 4–6 weeks
+A23    : 19
+B23    : Dec 31 — New Year's Eve
+C23    : Holiday
+D23    : Premium menu, party favors, open bar under your license (21+ with ID) and a champagne toast at midnight
+E23    : 2–3 months
+A24    : 20
+B24    : Year-round — Baptisms, baby & bridal showers
+C24    : Celebration
+D24    : Cocktail or seated format, kids' + adult menu
+E24    : 1–2 months
+A25    : 21
+B25    : Year-round — Funeral receptions & celebrations of life
+C25    : Celebration
+D25    : Discreet service, coffee + canapes, fast delivery
+E25    : 24–48 h
+A26    : 22
+B26    : Year-round — Product launches
+C26    : Corporate
+D26    : Client branding, premium finger food, AV
+E26    : 3–6 weeks

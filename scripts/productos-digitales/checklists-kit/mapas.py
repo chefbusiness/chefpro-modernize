@@ -197,6 +197,8 @@ GLOSARIO = OrderedDict([
 # Zonas y puestos (columnas C y D): lo que el censo cuenta como «puestos y zonas de la hostelería española»
 _DESDE, _HASTA = list(GLOSARIO).index('Cocina'), list(GLOSARIO).index('(Responsable)')
 PUESTOS_ES = frozenset(list(GLOSARIO)[_DESDE:_HASTA + 1])
+# Claves de GLOSARIO que pueden no aparecer en el ES (un vertical hereda el glosario base entero; kit.py)
+GLOSARIO_OPCIONAL = frozenset()
 
 # ==========================================================================
 # 4. Horas (D9): las horas límite son TEXTO «07:00» (no son horas de Excel) → «7:00 AM». Las que van dentro de una
@@ -255,6 +257,7 @@ PATRONES_SIN_CAMBIO = set()            # patrones con comparación numérica que
 #    Las tareas (columna C) las escribe el traductor: con ADAPTAR cuando el evento cambia.
 # ==========================================================================
 HOJA_CAL = ('B02', 'Calendario Anual')
+FILAS_CALENDARIO = range(5, 27)        # filas del BONUS-02 que cubre CALENDARIO (un vertical puede tener otras)
 CALENDARIO = OrderedDict([
     (5, ('January', "Jan 1 — New Year's Day", '1 week', None)),
     (6, ('February', 'Super Bowl Sunday (2nd Sunday in Feb)', '2 weeks',
@@ -339,12 +342,17 @@ POR_CELDA = OrderedDict([
     (('09', 'Registro Mensual', 'H4'), 'Over/Short'), (('09', 'Registro Mensual', 'I4'), 'Bank Deposit'),
     (('09', 'Registro Mensual', 'J4'), 'Closed by'), (('09', 'Registro Mensual', 'A36'), 'TOTALS'),
     # 02 · pescado crudo: destrucción de parásitos (D10, FDA Food Code 3-402.11/3-402.12 y 3-203.12)
+    # (errata de texto del 18-oct-2026, desde la ronda 1 M2 de la ghost kitchen: las TRES opciones de 3-402.11, con la
+    # temperatura de cada tramo; el registro es 3-402.12)
     (('02', 'Fríos', 'B10'),
-     'Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F or '
-     'below for 7 days (or −31 °F or below until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)'),
+     'Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction (FDA Food Code 3-402.11): confirm it was '
+     'frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or '
+     'below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record '
+     '90 days (FDA Food Code 3-402.12)'),
     (('02', 'Mise en Place', 'B10'),
-     'Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below 7 days, or −31 °F or below '
-     '+ 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days'),
+     'Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below for 7 days; or −31 °F or below '
+     'until solid, then 15 h at −31 °F or below or 24 h at −4 °F or below; FDA Food Code 3-402.11), record kept 90 days '
+     '(FDA Food Code 3-402.12); raw oysters and clams: shellstock tags kept 90 days'),
     # 03 · conservación de fichajes (D11, 29 CFR 516.5-516.6)
     (('03', 'Mensual Manager', 'B16'),
      "File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require "
@@ -507,11 +515,17 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
 CLAVES = OrderedDict([('N/A', 'N/A')])
 DV_LISTAS_ESPECIALES = OrderedDict()
 DV_NUEVAS = OrderedDict()
-VALORES_EN = OrderedDict()             # ningún número ni fecha cambia (las cifras de caja van en FORMULAS_POR_CELDA)
+VALORES_EN = OrderedDict()             # ningún número ni fecha cambia (las cifras de caja van en FORMULAS_POR_CELDA);
+                                       # un vertical: (libro, hoja ES, celda) → (valor ES, número EN) (mapas_cafe)
 
 # ==========================================================================
 # 10. Formatos (D13)
 # ==========================================================================
+# G2 (gates_en.py): RX de términos que ninguna celda EN puede llevar (p. ej. roles de restaurante en un vertical) y el
+# texto que inyecta el autotest. None en el base (y en el bar): el gate no se activa y su salida no cambia.
+TERMINOS_PROHIBIDOS = None
+TERMINO_PROHIBIDO_EJEMPLO = None
+
 FORMATOS_EN = OrderedDict([('#,##0.00 €', '#,##0.00'), ('€#,##0.00', '#,##0.00')])
 
 # ==========================================================================
@@ -637,8 +651,8 @@ def autotest():
             err.append('rótulo de denominación > 10 caracteres (ancho de la columna A): %s' % en)
         if cara != xen:
             err.append('denominación con valor distinto del rótulo: %s ×%s' % (en, xen))
-    if sorted(CALENDARIO) != list(range(5, 27)):
-        err.append('CALENDARIO debe cubrir las filas 5-26 del BONUS-02')
+    if sorted(CALENDARIO) != list(FILAS_CALENDARIO):
+        err.append('CALENDARIO debe cubrir las filas %d-%d del BONUS-02' % (FILAS_CALENDARIO[0], FILAS_CALENDARIO[-1]))
     for k, (val, fuente) in REGLAS_US.items():
         if not fuente:
             err.append('regla sin fuente: ' + k)
@@ -737,7 +751,7 @@ def cruzar_censo(p):
             err.append('DENOMINACIONES: la fila %d del ES no es %r' % (f, es))
     todos = set(textos_celda.values())
     for k in GLOSARIO:
-        if k not in todos:
+        if k not in todos and k not in GLOSARIO_OPCIONAL:
             err.append('GLOSARIO con una clave que no es una celda del ES: %r' % k)
     return err
 

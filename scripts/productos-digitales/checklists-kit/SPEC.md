@@ -206,3 +206,6 @@ TIENDA §3.4).
 `extraer_textos.py --origen dl/kit-tareas-<vertical>` + un `mapas_<vertical>.py` que importe este `mapas.py` y solo
 añada sus pestañas, puestos, `POR_CELDA` y `ADAPTAR` propios (el glosario, `hora_us`, la caja y el calendario US ya
 están), y un solo par de traductores por tanda con el glosario de esta edición.
+**Hecho (18-oct, Bar Checklists Kit Pro):** `kit.py` (`--kit <v>`: mapas, origen y datos del vertical; sin él, el
+base byte a byte), `<v>/mapas_<v>.py` y `heredar.py` (memoria de traducción → `heredado.json` + `pendientes.json`).
+Delta del primer hermano: `bar/SPEC.md`.

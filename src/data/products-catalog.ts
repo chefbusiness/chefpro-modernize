@@ -153,41 +153,53 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-cafeteria',
     url: '/kit-tareas-cafeteria',
     price: '€12',
-    name: { es: 'Tareas: Cafetería / Brunch', en: 'Tasks: Café / Brunch' },
+    name: { es: 'Tareas: Cafetería / Brunch', en: 'Coffee Shop Checklists Kit Pro' },
     description: {
       es: 'Apertura, cierre, barra y sala con plantilla específica de cafetería.',
-      en: 'Opening, closing, bar, and floor with a café-specific template.',
+      en: 'Coffee shop opening and closing checklists, espresso bar, kitchen and pastry case, manager, barista duties by role, inventory and a cash drawer count: 500 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `coffee-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/coffee-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-pizzeria': {
     id: 'kit-tareas-pizzeria',
     url: '/kit-tareas-pizzeria',
     price: '€12',
-    name: { es: 'Tareas: Pizzería', en: 'Tasks: Pizzeria' },
+    name: { es: 'Tareas: Pizzería', en: 'Pizza Shop Checklists Kit Pro' },
     description: {
       es: 'Listas de prep, mise, servicio y delivery específicas.',
-      en: 'Prep, mise, service, and delivery checklists tailored to pizzerias.',
+      en: 'Pizza shop checklists for opening and closing, the pizza oven and dough, the make line, delivery and takeout, the manager, duties by role, cleaning and the cash drawer: 373 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `pizza-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/pizza-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-hamburgueseria': {
     id: 'kit-tareas-hamburgueseria',
     url: '/kit-tareas-hamburgueseria',
     price: '€12',
-    name: { es: 'Tareas: Hamburguesería', en: 'Tasks: Burger Joint' },
+    name: { es: 'Tareas: Hamburguesería', en: 'Burger Joint Checklists Kit Pro' },
     description: {
       es: 'Listas de prep, montaje, servicio y delivery.',
-      en: 'Prep, build, service, and delivery checklists.',
+      en: 'Burger joint checklists for opening and closing, the grill and smash burgers, the make line, the fry station, delivery and takeout, the manager, duties by role, cleaning and the cash drawer: 346 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `burger-joint-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/burger-joint-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-dark-kitchen': {
     id: 'kit-tareas-dark-kitchen',
     url: '/kit-tareas-dark-kitchen',
     price: '€12',
-    name: { es: 'Tareas: Dark Kitchen', en: 'Tasks: Dark Kitchen' },
+    name: { es: 'Tareas: Dark Kitchen', en: 'Ghost Kitchen Checklists Kit Pro' },
     description: {
       es: 'Operativa multi-marca y multi-plataforma.',
-      en: 'Multi-brand, multi-platform operations.',
+      en: 'Ghost kitchen checklists for opening and closing, the hot and cold stations, packing by brand, the delivery apps and driver pickup, the manager, duties by role, cleaning and the cash drawer: 331 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `ghost-kitchen-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/ghost-kitchen-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-pasteleria': {
     id: 'kit-tareas-pasteleria',
@@ -203,21 +215,27 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-bar',
     url: '/kit-tareas-bar',
     price: '€12',
-    name: { es: 'Tareas: Bar / Cocktails', en: 'Tasks: Bar / Cocktails' },
+    name: { es: 'Tareas: Bar / Cocktails', en: 'Bar Checklists Kit Pro' },
     description: {
       es: 'Apertura, cierre, mise y prep de garnishes.',
-      en: 'Opening, closing, mise, and garnish prep.',
+      en: 'Bar opening and closing checklists, cocktail, draft beer and wine stations, bar manager, bartender duties by role, inventory and a cash drawer count: 342 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `bar-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/bar-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-catering': {
     id: 'kit-tareas-catering',
     url: '/kit-tareas-catering',
     price: '€12',
-    name: { es: 'Tareas: Catering / Eventos', en: 'Tasks: Catering / Events' },
+    name: { es: 'Tareas: Catering / Eventos', en: 'Catering Checklists Kit Pro' },
     description: {
       es: 'Listas de evento, montaje, servicio, desmontaje, trazabilidad.',
-      en: 'Event checklists: setup, service, breakdown, traceability.',
+      en: 'Catering checklists for off-site production, transport, setup and breakdown, the event manager, staff by role, the commissary and deposits and payments by event: 347 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `catering-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/catering-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-hotel': {
     id: 'kit-tareas-hotel',

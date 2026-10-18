@@ -1,0 +1,41 @@
+---
+// /en/digital-products/ghost-kitchen-checklist-templates — Ghost Kitchen Checklists Kit Pro (tienda internacional EN).
+// COPIA de pages/en/digital-products/restaurant-checklist-templates.astro (thin wrapper: data →
+// KitTareasLandingPage, SEO → BaseLayout) con lang="en". Réplica del ES /kit-tareas-dark-kitchen: misma plantilla,
+// mismos componentes; solo cambian los datos (data/productos-en/tareas/ghost-kitchen-checklist-templates.ts).
+//
+// - basePath SIN «/en»: BaseLayout ya antepone el prefijo del idioma (con «/en» saldría /en/en/…).
+// - hreflang recíproco con el gemelo ES vía alternatesFamilia('kit-tareas-dark-kitchen') (lib/tienda.ts).
+// - whatsapp={false}: la plantilla pinta su propio botón de soporte (como el ES).
+// - omitGlobalApp: el SoftwareApplication global lleva ofertas en EUR y rating; en la tienda EN
+//   no puede salir ninguno de los dos (tienda-gate.py).
+// - miselup={false}: la tarjeta de Miselup es solo para la tienda ES (TIENDA §3.9).
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import KitTareasLandingPage from '../../../components/pages/KitTareasLandingPage.astro';
+import data from '../../../data/productos-en/tareas/ghost-kitchen-checklist-templates';
+import { alternatesFamilia } from '../../../lib/tienda';
+
+const lang = 'en';
+const hreflang = alternatesFamilia('kit-tareas-dark-kitchen');
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO) para que Vite la inline en build.
+// data.stripeEnvKey documenta cuál es; aquí se resuelve literal. Sin la env var (el Payment Link
+// lo crea John), el CTA cae a '#comprar' como en el resto de la línea.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_GHOST_KITCHEN_CHECKLISTS_KIT || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  miselup={false}
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/digital-products/${data.slug}`}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
+  ogImage={data.seo.ogImage}
+>
+  <KitTareasLandingPage data={data} stripeLink={stripeLink} lang={lang} />
+</BaseLayout>

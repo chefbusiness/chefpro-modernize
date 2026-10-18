@@ -41,6 +41,18 @@ TEMAS = {
     'restaurant-inventory-templates': ['inventory', 'stock', 'waste', 'purchas', 'supplier', 'ordering', 'storage'],
     # Restaurant Checklists Kit Pro (17-oct-2026): checklists de apertura, cierre, limpieza, side work y caja.
     'restaurant-checklist-templates': ['checklist', 'closing', 'cleaning', 'side work', 'pre-shift', 'line check', 'cash drawer', 'routine', 'daily task'],
+    # Bar Checklists Kit Pro (18-oct-2026): checklists de bar, coctelería, draft, bartender/barback y caja.
+    'bar-checklist-templates': ['bartender', 'barback', 'cocktail', 'pour cost', 'draft beer', 'beer line', 'happy hour', 'bar opening', 'bar closing', 'speed rail'],
+    # Coffee Shop Checklists Kit Pro (18-oct-2026): checklists de cafetería, barra de espresso, barista, vitrina y brunch.
+    'coffee-shop-checklist-templates': ['coffee shop', 'barista', 'espresso', 'latte', 'grinder', 'pastry case', 'brunch', 'cafe opening', 'cafe closing'],
+    # Catering Checklists Kit Pro (18-oct-2026): checklists de catering y eventos, BEO, montaje, transporte y banquetes.
+    'catering-checklist-templates': ['catering', 'caterer', 'banquet', 'beo', 'off-site', 'off-premise', 'chafing', 'wedding', 'load-in', 'event setup'],
+    # Pizza Shop Checklists Kit Pro (18-oct-2026): checklists de pizzería, horno de leña, masa, make line y reparto.
+    'pizza-shop-checklist-templates': ['pizza', 'pizzeria', 'pizzaiolo', 'neapolitan', 'wood-fired', 'dough ball', 'make line', 'pizza oven', 'delivery driver'],
+    # Burger Joint Checklists Kit Pro (18-oct-2026): checklists de hamburguesería, plancha, smash burgers, freidora y make line.
+    'burger-joint-checklist-templates': ['burger', 'hamburger', 'cheeseburger', 'smash burger', 'patty', 'patties', 'griddle', 'flat-top', 'fry station', 'fryer oil'],
+    # Ghost Kitchen Checklists Kit Pro (18-oct-2026): checklists de ghost / cloud kitchen multimarca, apps de delivery y empaquetado.
+    'ghost-kitchen-checklist-templates': ['ghost kitchen', 'cloud kitchen', 'virtual kitchen', 'virtual brand', 'delivery-only', 'multi-brand', 'doordash', 'grubhub', 'order tablet', 'tamper-evident'],
 }
 
 

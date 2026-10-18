@@ -208,6 +208,69 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (18-oct-2026): Bar Checklists Kit Pro, primer hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/bar D1-D4). Gemelo del Kit de Tareas para Bar. vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Restaurant Checklists Kit Pro).
+    familia: 'kit-tareas-bar',
+    productos: {
+      es: { slug: 'kit-tareas-bar', vivo: true },
+      en: { slug: 'bar-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (18-oct-2026): Coffee Shop Checklists Kit Pro, segundo hermano vertical del Restaurant Checklists
+    // Kit Pro (SPEC checklists-kit/cafe D1-D4). Gemelo del Kit de Tareas para Cafetería. vivo: true en la rama, que
+    // se fusiona cuando existe el Payment Link (mismo criterio que el Restaurant y el Bar Checklists Kit Pro).
+    familia: 'kit-tareas-cafeteria',
+    productos: {
+      es: { slug: 'kit-tareas-cafeteria', vivo: true },
+      en: { slug: 'coffee-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (18-oct-2026): Catering Checklists Kit Pro, tercer hermano vertical del Restaurant Checklists Kit Pro
+    // (SPEC checklists-kit/catering D1-D4). Gemelo del Kit de Tareas para Catering. vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar y el Coffee Shop Checklists Kit Pro).
+    familia: 'kit-tareas-catering',
+    productos: {
+      es: { slug: 'kit-tareas-catering', vivo: true },
+      en: { slug: 'catering-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (18-oct-2026): Pizza Shop Checklists Kit Pro, cuarto hermano vertical del Restaurant Checklists Kit Pro
+    // (SPEC checklists-kit/pizza D1-D4). Gemelo del Kit de Tareas para Pizzería. vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop y el Catering
+    // Checklists Kit Pro).
+    familia: 'kit-tareas-pizzeria',
+    productos: {
+      es: { slug: 'kit-tareas-pizzeria', vivo: true },
+      en: { slug: 'pizza-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (18-oct-2026): Burger Joint Checklists Kit Pro, quinto hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/burger D1-D4). Gemelo del Kit de Tareas para Hamburguesería. vivo: true en la rama, que
+    // se fusiona cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop, el Catering y
+    // el Pizza Shop Checklists Kit Pro).
+    familia: 'kit-tareas-hamburgueseria',
+    productos: {
+      es: { slug: 'kit-tareas-hamburgueseria', vivo: true },
+      en: { slug: 'burger-joint-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (18-oct-2026): Ghost Kitchen Checklists Kit Pro, sexto hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/ghost D1-D4). Gemelo del Kit de Tareas para Dark Kitchen. vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop, el Catering, el
+    // Pizza Shop y el Burger Joint Checklists Kit Pro).
+    familia: 'kit-tareas-dark-kitchen',
+    productos: {
+      es: { slug: 'kit-tareas-dark-kitchen', vivo: true },
+      en: { slug: 'ghost-kitchen-checklist-templates', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.

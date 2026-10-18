@@ -11,6 +11,7 @@ de idempotencia, `inject_cache` AL FINAL, `--dry-run`, `--idempotencia`). Aquí 
 de `textos_en/G*.json` (subagentes Anthropic, regla 1bis) y de `mapas.py`.
 
     python3 aplicar_en.py                      # escribe en astro-site/public/dl/restaurant-checklist-templates/
+    python3 aplicar_en.py --kit bar ...        # un vertical (kit.py): bar/ → dl/bar-checklist-templates/
     python3 aplicar_en.py --dry-run [--salida <carpeta>] [--mes October] [--idempotencia] [--json informe.json]
     python3 aplicar_en.py --dry-run --parcial  # lo que aún no tenga traducción lleva la marca «PENDING-EN cNNNN»
     python3 aplicar_en.py --dry-run --parcial --textos <carpeta vacía>   # ensayo solo con la marca de relleno
@@ -61,7 +62,8 @@ sys.path.insert(0, AQUI)
 import openpyxl                                              # noqa: E402
 from openpyxl.utils import get_column_letter                 # noqa: E402
 
-import mapas                                                 # noqa: E402
+import kit                                                   # noqa: E402  (--kit base|bar: kit.py)
+from kit import mapas                                        # noqa: E402
 import extraer_textos                                        # noqa: E402
 
 logging.disable(logging.CRITICAL)
@@ -69,7 +71,7 @@ logging.disable(logging.CRITICAL)
 ORIGEN = extraer_textos.ORIGEN                                                 # dl/kit-tareas (solo lectura)
 DESTINO_REAL = os.path.join(REPO, 'astro-site', 'public', 'dl', mapas.SLUG)   # restaurant-checklist-templates
 INJECT = os.path.join(SCRIPTS, 'inject_cache.py')
-TEXTOS_EN = os.path.join(AQUI, 'textos_en')
+TEXTOS_EN = kit.TEXTOS_EN                                                      # <datos del kit>/textos_en
 
 VERSION = mapas.VERSION_ES                                            # 2.0 (contenido v2.0 del ES)
 SUBJECT = mapas.DOCPROPS_EN['subject']                                # D19
@@ -88,6 +90,9 @@ HOJA_INSTR_EN = mapas.HOJAS['Instrucciones']
 CLAVES = mapas.CLAVES
 CAMPO_DV = {'dv-error-titulo': 'errorTitle', 'dv-error': 'error', 'dv-prompt-titulo': 'promptTitle', 'dv-prompt': 'prompt'}
 DV_MENSAJES_EN = getattr(mapas, 'DV_MENSAJES_EN', OrderedDict())      # arreglos por aparición (si los hubiera)
+# vertical: (libro, hoja ES, sqref) → (fórmula ES, fórmula EN) de una regla de CF cambiada a propósito (desviación
+# declarada en su SPEC; catering ronda 1 M5). Vacío en el base, el bar y la cafetería.
+CF_POR_CELDA = getattr(mapas, 'CF_POR_CELDA', OrderedDict())
 RELLENO = 'PENDING-EN %s'                                             # --parcial: marca de lo que aún no está
 RX_RELLENO = re.compile(r'PENDING-EN c\d{4}')
 PT_LINEA = 1.36                                                       # alto de línea ≈ 1.36 × cuerpo (pt)
@@ -124,10 +129,15 @@ def termica(umbral=62, reanuda=60):
 # Datos
 # ==========================================================================
 def cargar_traducciones(carpeta, parcial):
-    """textos_en/G<n>.json = {id: en}. En --parcial, un fichero a medio escribir (JSON inválido) se ignora con aviso."""
+    """textos_en/G<n>.json = {id: en}. En --parcial, un fichero a medio escribir (JSON inválido) se ignora con aviso.
+    Vertical (kit.py): además textos_en/heredado.json = {id: {"en": …, "origen": id del kit base}} (memoria de
+    traducción: cadenas ES idénticas a las del kit base); lo heredado y lo traducido no pueden contradecirse."""
     tx = OrderedDict()
     avisos = []
-    for p in sorted(glob.glob(os.path.join(carpeta, 'G[0-9].json'))):
+    ficheros = sorted(glob.glob(os.path.join(carpeta, 'G[0-9].json')))
+    if not kit.BASE and os.path.exists(os.path.join(carpeta, 'heredado.json')):
+        ficheros = [os.path.join(carpeta, 'heredado.json')] + ficheros
+    for p in ficheros:
         try:
             d = json.load(open(p, encoding='utf-8'))
         except ValueError as e:
@@ -136,6 +146,8 @@ def cargar_traducciones(carpeta, parcial):
             avisos.append('%s ilegible (¿a medio escribir?): ignorado' % os.path.basename(p))
             continue
         for k, v in d.items():
+            if isinstance(v, dict) and os.path.basename(p) == 'heredado.json':
+                v = v.get('en')
             if not isinstance(v, str) or not v.strip():
                 raise Aborta('%s: traducción vacía o no textual para %s' % (os.path.basename(p), k))
             if k in tx and tx[k] != v:
@@ -145,8 +157,8 @@ def cargar_traducciones(carpeta, parcial):
 
 
 def cargar_datos(parcial=False, textos=TEXTOS_EN):
-    te = json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8'))
-    censo = json.load(open(os.path.join(AQUI, 'censo_es.json'), encoding='utf-8'))
+    te = json.load(open(os.path.join(kit.DATOS, 'textos_es.json'), encoding='utf-8'))
+    censo = json.load(open(os.path.join(kit.DATOS, 'censo_es.json'), encoding='utf-8'))
     tx, avisos = cargar_traducciones(textos, parcial)
     por_id = {c['id']: c for c in te['cadenas']}
     ajenas = sorted(set(tx) - set(por_id))
@@ -191,6 +203,8 @@ def regenerado_esperado(corto, h_es, coord, es, mes):
     k = (corto, h_es, coord)
     if k in mapas.POR_CELDA:
         return mapas.POR_CELDA[k]
+    if k in mapas.VALORES_EN:                                    # vertical: un número fijado (mínimos del inventario)
+        return mapas.VALORES_EN[k][1]
     if h_es == 'Instrucciones' and coord == 'B2':
         return mapas.titulo_interior(next(f for f in mapas.LIBROS_ES if extraer_textos.corto(f) == corto))
     if RX_VERSION_ES.match(es):
@@ -442,6 +456,17 @@ def dv_lista_en(items, donde):
     return dv_lista(out)
 
 
+def cf_formula_en(corto, h_es, sqref, f, T):
+    """Fórmula EN de una regla de CF: CF_POR_CELDA (desviación declarada) o HOJAS + CLAVES. (nueva, por_celda)."""
+    k = (corto, h_es, sqref)
+    if k in CF_POR_CELDA:
+        es, en = CF_POR_CELDA[k]
+        if f != es:
+            raise Aborta('%s %s CF %s: CF_POR_CELDA espera %r y el ES trae %r' % (corto, h_es, sqref, es, f))
+        return en, True
+    return T.formula(f), False
+
+
 def reescribir_dv_cf(L, T):
     n = OrderedDict([('dv_listas', 0), ('dv_personalizadas', 0), ('dv_ref', 0), ('dv_mensajes', 0),
                      ('dv_mensajes_fijados', 0), ('cf_reglas', 0), ('cf_text', 0)])
@@ -488,11 +513,17 @@ def reescribir_dv_cf(L, T):
         for cf in ws.conditional_formatting:
             for regla in cf.rules:
                 if regla.formula:
-                    regla.formula = [T.formula(x) for x in regla.formula]
+                    nuevas = [cf_formula_en(L.corto, h_es, str(cf.sqref), x, T) for x in regla.formula]
+                    regla.formula = [x for x, _pc in nuevas]
                     n['cf_reglas'] += 1
+                    if any(pc for _x, pc in nuevas):
+                        n['cf_por_celda'] = n.get('cf_por_celda', 0) + 1
                 if regla.text:
                     regla.text = clave_en(regla.text, 'CF %s %s' % (ws.title, cf.sqref))
                     n['cf_text'] += 1
+    if n.get('cf_por_celda', 0) != sum(1 for k in CF_POR_CELDA if k[0] == L.corto):
+        raise Aborta('%s: CF_POR_CELDA aplicadas %d de %d' % (L.corto, n.get('cf_por_celda', 0),
+                                                             sum(1 for k in CF_POR_CELDA if k[0] == L.corto)))
     sin_usar = [k for k in DV_MENSAJES_EN if k[0] == L.corto and k not in usados]
     if sin_usar:
         raise Aborta('%s: DV_MENSAJES_EN sin DV donde aplicarse: %r' % (L.corto, sin_usar))
@@ -513,6 +544,13 @@ def capa_por_celda(L):
             L.poner(h, coord, v, es_texto)
             n += 1
     L.rep['por_celda'] = n
+    nv = 0
+    for (c, h, coord), (es, en) in mapas.VALORES_EN.items():   # vacío en el base y el bar
+        if c == L.corto:
+            L.poner(h, coord, en, lambda v, es=es: v == es)
+            nv += 1
+    if nv:
+        L.rep['valores_en'] = nv
 
 
 COMILLAS = {'\u2019': "'", '\u2018': "'", '\u201c': '"', '\u201d': '"'}
@@ -624,7 +662,11 @@ def objetivo_ajuste(ws_en, ws_es, cel, anclas, cubiertas):
     if not wrap_es and ancho_texto(t, cel) > disponible + 1e-9:
         disp_es = caja(ws_es, cel_es, anclas, cubiertas)[3]
         if not (isinstance(es, str) and ancho_texto(es, cel_es) <= disp_es + 1e-9):
-            return False, None, False                            # el ES tampoco cabía: maqueta heredada
+            if (not getattr(mapas, 'AJUSTE_MAQUETA_ES', False) or palabra_mas_larga(t, cel) > ancho + 1e-9
+                    or filas > 1):
+                return False, None, False                        # el ES tampoco cabía: maqueta heredada
+            # pizzería (errata ES): sus tareas largas no llevan ajuste y salen cortadas también en el ES; la EN lo
+            # activa donde el ajuste basta (las etiquetas de columna estrecha, como «Verified by:», se quedan)
         if palabra_mas_larga(t, cel) > ancho + 1e-9 or filas > 1:
             return False, None, True                             # ni con ajuste: hay que acortar el EN
         necesita = True
@@ -666,6 +708,25 @@ def capa_ajuste(L, wes):
                 if alto > (actual or ALTO_DEFECTO):
                     ws.row_dimensions[cel.row].height = alto
                     n['altos_subidos'] += 1
+    # vertical (hamburguesería): filas que el ES ya traía cortadas con ajuste (l_en == l_es: maqueta heredada) y que la
+    # EN sube a mano; {(libro, hoja ES, fila): alto}. Sin la constante (base y demás hermanos), no hace nada
+    for (corto, h_es, fila), alto in getattr(mapas, 'ALTOS_FILA', {}).items():
+        if corto == L.corto:
+            ws = L.wb[mapas.HOJAS[h_es]]
+            if alto > (ws.row_dimensions[fila].height or ALTO_DEFECTO):
+                ws.row_dimensions[fila].height = alto
+                n['altos_subidos'] += 1
+    # vertical (ghost kitchen): celdas que el ES ya traía cortadas SIN ajuste y cuya EN cita un nombre de fichero más
+    # largo que la columna (objetivo_ajuste no actúa: «palabra más larga» → maqueta heredada); la EN activa el ajuste
+    # (Excel parte el nombre y la fila automática crece). {(libro, hoja ES, celda)}. Sin la constante, no hace nada
+    for corto, h_es, coord in sorted(getattr(mapas, 'AJUSTE_FORZADO', ())):
+        if corto == L.corto:
+            cel = L.wb[mapas.HOJAS[h_es]][coord]
+            if not (cel.alignment and cel.alignment.wrap_text):
+                al = copy.copy(cel.alignment)
+                al.wrap_text = True
+                cel.alignment = al
+                n['ajuste_forzado'] = n.get('ajuste_forzado', 0) + 1
     L.rep.update(n)
 
 
@@ -686,7 +747,7 @@ def formatos_y_papel(L):
     nf = wb._number_formats
     usados = set(nf)
     for i, f in enumerate(list(nf)):
-        if '€' in f:
+        if '€' in f or f in FORMATOS:                            # vertical: también fechas ES (catering 09)
             nuevo = FORMATOS.get(f, '#,##0.00')
             while nuevo in usados:
                 nuevo += ';@'
@@ -869,7 +930,8 @@ def carpeta_dryrun(arg):
 
 
 def main():
-    ap = argparse.ArgumentParser(description='Restaurant Checklists Kit Pro (EN): montaje de los 11 xlsx')
+    ap = argparse.ArgumentParser(description='%s (EN): montaje de los 11 xlsx' % mapas.PRODUCTO)
+    kit.argumento(ap)
     ap.add_argument('--dry-run', action='store_true', help='escribe en el scratchpad (o --salida), no en dl/')
     ap.add_argument('--salida', default=None, help='carpeta del dry-run')
     ap.add_argument('--mes', default=None, help='mes de la línea de versión D19 (por defecto, el actual)')

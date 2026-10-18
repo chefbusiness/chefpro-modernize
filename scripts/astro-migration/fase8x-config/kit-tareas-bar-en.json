@@ -1,0 +1,43 @@
+{
+  "producto": "kit-tareas-bar",
+  "fecha": "2026-10-18",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · Bar Checklists Kit Pro (bar/SPEC D1, 18-oct-2026). El id es el del CATÁLOGO (products-catalog.ts),",
+    "que con urlByLang.en pinta la landing EN /en/digital-products/bar-checklist-templates y $19.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto kit-tareas-bar --config scripts/astro-migration/fase8x-config/kit-tareas-bar-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Posts: los tres del blog EN que más hablan de bar (Bartender Consultant, márgenes y beverage cost, Sommelier).",
+    "Víctimas = SLUGS EN de la landing, por relevancia y por reparto (son los más repetidos del corpus EN): HACCP en el",
+    "del bartender (se queda el Food Cost Kit por el pour cost) y el Restaurant Financial Plan Kit en los otros dos.",
+    "Nunca el Restaurant Checklists Kit Pro, hermano de línea y venta cruzada del dashboard."
+  ],
+  "nunca": [
+    "restaurant-checklist-templates"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 3,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "prompt-library-bartender-consulting": {
+      "accion": "SUSTITUIR",
+      "victima": "haccp-templates",
+      "parrafo": "Recipes and costing only pay off when the bar runs the same way every shift. The {ENLACE} writes that routine down: bar opening and closing, the cocktail, draft beer and wine stations, daily duties for the head bartender, bartender and barback, and a weekly inventory by category, ready to print and initial."
+    },
+    "bar-profit-margins-beverage-costing": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-financial-plan-templates",
+      "ancla_n": 3,
+      "parrafo": "Pour cost slips when nobody counts. The {ENLACE} adds the routine behind the numbers: a weekly inventory of spirits, beer, wine and mixers, a monthly pour cost and waste review on the bar manager's checklist, and a cash drawer count with the over/short against the POS Z report."
+    },
+    "prompt-library-sommelier-consulting": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-financial-plan-templates",
+      "ancla_n": 8,
+      "parrafo": "Wine by the glass loses money one open bottle at a time. The {ENLACE} includes a wine station checklist (whites and rosés at 46–50 °F, no open bottle older than 3 days, the by-the-glass board kept current) and a cellar check, alongside the bar's opening, closing and inventory routines."
+    }
+  }
+}

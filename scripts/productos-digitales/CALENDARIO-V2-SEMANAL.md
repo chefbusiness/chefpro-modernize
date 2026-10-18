@@ -682,3 +682,15 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   completo (VPS) **67 productos / 930 entregables / 0** · tienda · robots. Sitemap reenviado. **Tienda EN: 16 productos.**
 - Correo EN **9-dic 14:00Z**: borrador `a52e0565-a6bc-4a56-be43-887b32621033` + routine `trig_01GWsawxCZ8CbSBZ387HsMqo` (9-nov 15:07Z).
   Plantilla `broadcast-restaurant-checklists-lanzamiento-en.html`. **Siguiente hueco EN: 14-dic 14:00Z.**
+
+### ▶️ 2026-10-18 (Claude Code en el Mac + VPS, noche delegada + cierre por la mañana) — **6 Checklists Kits verticales (EN, $19)** — LIVE
+- Bar, Coffee Shop, Catering, Pizza Shop, Burger Joint y Ghost Kitchen: hermanos del Restaurant Checklists con el circuito
+  `checklists-kit/` (`--kit <vertical>`). PR apilados #134 → #135 → #137 → #138 → #139 → #140, fusionados en ese orden (merge
+  `1ce888d2`). ≈ 1,2-1,9 M tokens cada uno. Handoff: `SESSION_HANDOFF_2026-10-18-checklists-verticales-en.md`.
+- Stripe: los 6 links comprobados con la CLI `--live` (USD 1900, one_time, exclusive, impuesto automático, redirección a su `/access`)
+  + sus env `VITE_STRIPE_PAYMENT_LINK_<VERTICAL>_CHECKLISTS_KIT` + mapa de 73 links (`69bf9ec1`). Gates LIVE: `--only` ×7 kits de
+  checklists 12/12 y 0/0 · completo (VPS) **73 productos / 1.002 entregables / 0 / 0** · tienda · robots. Sitemap reenviado. **Tienda EN: 22 productos.**
+- Correos EN (borradores; se salta la semana de Navidad a Reyes, la peor para B2B en EE. UU.):
+  Bar **14-dic** `32c61f17` · Coffee Shop **19-dic** `ff22235e` → routine `trig_01WXGbQnAuFnc2A9X45imtje` (20-nov 15:00Z) ·
+  Catering **4-ene** `07edb170` · Pizza Shop **9-ene** `31c061de` · Burger Joint **14-ene** `3a412ac0` · Ghost Kitchen **19-ene** `b1f582a8`
+  → routine `trig_019bxdctG1zV4XcVjbHTzCdu` (20-dic 15:00Z). Todos a las 14:00Z. **Siguiente hueco EN: 24-ene 14:00Z.**

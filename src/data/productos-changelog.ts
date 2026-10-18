@@ -807,6 +807,129 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'bar-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 342 bar tasks already written, adapted to the US with notes for the UK.',
+          'US bar roles and areas (head bartender, bartender, barback, cocktail server, bar station, stockroom, patio), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Responsible alcohol service: 21+ and ID checks, no service to visibly intoxicated guests, last call and closing time checked against your state\'s ABC/liquor authority, responsible-service training (TIPS, ServSafe Alcohol) where your state requires it, and Challenge 25 for the UK.',
+          'Draft beer at 38 °F with the CO₂ pressure set by your draft tech or distributor, beer lines cleaned every 2 weeks and an acid clean every 3 months (Brewers Association); ice handled as food under the FDA Food Code (scoop or tongs, never the glass) and wine temperatures in °F.',
+          'Contracted services for a US bar on the Quarterly & Annual sheet: pest control, fire extinguishers (OSHA), hood cleaning on the NFPA 96 schedule if you have a kitchen, gas and patio heaters, draft system service, refrigeration by an EPA 608 technician, music licensing (ASCAP, BMI, SESAC, GMR), liquor license and patio permit renewals.',
+          'Cash drawer count in US bills and coins (with quarter and dime rolls), starting bank, card tips kept out of sales and over/short against the POS Z report; a bar events calendar with 23 US dates, from Mardi Gras and St. Patrick\'s Day to Thanksgiving Eve and New Year\'s Eve, with a UK note.',
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'coffee-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 500 coffee shop and brunch tasks already written, adapted to the US with notes for the UK.',
+          'US coffee shop roles and areas (shift lead, barista, baker, server, busser / runner; espresso bar, front of house, patio, kitchen, pastry case), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Espresso bar in barista terms: dial in with a test shot (25–30 s, 25–30 ml, about 1 fl oz), group heads purged, a daily backflush with espresso machine detergent and descaling per the manufacturer; grinder burrs by pounds ground and water hardness (GH/KH) on the Quarterly & Annual sheet.',
+          'Food safety under the FDA Food Code: open milk and the refrigerated pastry case at 41 °F or below, 7-day date marking, no bare-hand contact with ready-to-eat food, ice handled as food (scoop, never the glass) and allergen labels with the 9 major allergens (14 noted for the UK).',
+          'Contracted services for a US coffee shop on the Quarterly & Annual sheet: pest control, hood cleaning on the NFPA 96 schedule if you cook under a hood, fire extinguishers (OSHA), refrigeration by an EPA 608 technician, the espresso tech, insurance and POS / sales tax settings; the daily inventory uses US units and flags REORDER below your minimum.',
+          'Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a coffee shop calendar with 22 US dates, from King cake season to National Coffee Day, Thanksgiving pie orders and holiday catering, plus 5 rows for your own and a UK note. Mimosas at brunch only with a license, 21+ with ID.',
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },  'catering-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 347 catering and event tasks already written, adapted to the US with notes for the UK.',
+          'US catering roles and areas (event chef, banquet captain, server / event runner, bartender; commissary, transport, setup, breakdown, office), BEOs and guaranteed counts, due-by times on a 12-hour clock; the counter on each checklist leaves out the tasks marked N/A.',
+          'Food safety off-site under the FDA Food Code: hot food at 135 °F or above and cold at 41 °F or below when loading, every 30 minutes on the road, on the buffet and at unloading; time as a public health control (served within 4 hours, then discarded; cold food up to 6 hours if it never passes 70 °F); chafing dishes hold, they do not reheat (165 °F first); leftovers cooled by the rule or discarded; parasite destruction for fish served raw; buffet signs and tray cards with the 9 major allergens (14 noted for the UK).',
+          'Venue setup with a temporary food establishment permit where required, a portable handwashing station, the venue\'s and fire marshal\'s open-flame rules for chafing fuel and tents; open bar under the license your state requires, 21+ with ID and responsible-service training (TIPS, ServSafe Alcohol).',
+          'A Quarterly & Annual sheet for the commissary: pest control, hood cleaning (NFPA 96), fire extinguishers (OSHA) and hood suppression, vehicle registration, commercial auto insurance and county permits, refrigeration by an EPA 608 technician, food handler cards and a Certified Food Protection Manager, insurance with the COI, I-9 and W-4, and sales tax settings.',
+          'The money for each event in US dollars: deposit, event settlement with the sales tax rate you enter applied to the taxable subtotal, balance due and an OVERDUE status, a billing log for 25 events and an optional cash bar count; a mandatory service charge is kept apart from the gratuity: what you pay out of it to staff is wages (IRS Rev. Rul. 2012-18).',
+          'A busy season calendar with 22 US dates, from Super Bowl Sunday and wedding season to July 4 cookouts, Thanksgiving and holiday parties, plus a UK note. Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'pizza-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 373 pizza shop tasks already written, adapted to the US with notes for the UK.',
+          'US pizza shop roles and areas (pizza maker, line cook, shift manager, server, delivery driver, dishwasher / prep; pizza oven station, make line, apps & pasta, front of house, patio, delivery), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Wood-fired and deck ovens in °F (750–840 °F for Neapolitan, 570 °F for Roman-style), preheat and cool-down per the manufacturer, the hood on before the fire and the ash removed cold into a metal container with a lid; the closing order fixed so the oven is left to cool first and the alarm and lock-up come last.',
+          'Food safety under the FDA Food Code: walk-in at 41 °F or below and freezer at 0 °F or below, the make line and cold-fermented dough at 41 °F or below, opened mozzarella date-marked for 7 days, raw meat stored apart, thawing in the walk-in, house-made sauce cooled by the two-stage rule and reheated to 165 °F, slices held at 135 °F or tossed at 4 hours, a menu advisory for raw-egg desserts and the 9 major allergens (wheat is one; 14 noted for the UK).',
+          'Delivery with third-party apps (DoorDash, Uber Eats, Grubhub): insulated bags with hot food at 135 °F or above and cold items apart at 41 °F or below, a delivery target under 30 minutes and every order checked against the ticket.',
+          'A Quarterly & Annual sheet for a US pizza shop: pest control, hood, duct and chimney cleaning under NFPA 96 (inspected monthly with a solid-fuel oven), a wood-fired oven check, fire extinguishers (OSHA) and hood suppression, gas, refrigeration by an EPA 608 technician (make line included), water, used cooking oil, insurance (with hired and non-owned auto if drivers use their own cars) and POS / sales tax settings with the delivery app integrations.',
+          "Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a pizza shop calendar with 22 US dates, from Super Bowl Sunday, March Madness and Lent Fridays to Halloween, Thanksgiving Eve and New Year's Eve, plus 5 rows for your own and a UK note. Beer and wine only with a license, 21+ with ID.",
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'ghost-kitchen-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 331 ghost kitchen tasks already written, adapted to the US with notes for the UK.',
+          'US ghost kitchen roles and areas (line cooks, hot and cold station cooks, packer, app manager, shift manager, dishwasher / prep; kitchen, packing, driver pickup, office and storage), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Delivery with third-party apps (DoorDash, Uber Eats, Grubhub): order tablets, every brand turned on and off in each app, orders accepted in under 30 seconds, menus, 86s and allergens in each app listing, refunds, reviews, sales by brand and app, and app commissions by plan (some cities, such as New York and San Francisco, cap them). The whole-site checklist in a safe order: brands go live only once the tablets, printers and prep times are checked, and at close they go off before the alarm and the lock-up.',
+          "Food safety under the FDA Food Code: hot food held at 135 °F or above until it is packed and cold food at 41 °F or below, in separate bags until pickup; chicken to 165 °F, ground beef to 155 °F for 17 seconds and fish to 145 °F for 15 seconds, checked with a probe; raw fish for poke and sushi only if it was frozen to kill parasites (−4 °F for 7 days or −31 °F plus 15 hours) or the supplier states it in writing, with a consumer advisory on the app listing; sushi rice at 41 °F, under time as a public health control or acidified with a variance and a HACCP plan; cooling by the two-stage rule, reheating to 165 °F, date marking, sanitizer checked with test strips, and the 9 major allergens (the UK's 14 noted, before the order and at delivery).",
+          "Tamper-evident seals on every delivery bag (required in California for ready-to-eat food picked up by an app's driver; elsewhere, check local rules), allergen orders labeled and kept apart on the pickup shelf, and a brand launch checklist with the health permit and each brand's trade name (DBA) where the state requires it.",
+          'A Quarterly & Annual sheet for a US ghost kitchen: pest control, hood and duct cleaning under NFPA 96 (quarterly for a high-volume kitchen that cooks all day, semiannual if moderate), fire extinguishers (OSHA) with their hydrostatic test and hood suppression, gas, refrigeration by an EPA 608 technician, used fryer oil pickup by a licensed recycler, cardboard and plastic pickup by a hauler, thermometer calibration, insurance with products coverage, and the delivery app contracts, commissions and sales tax (marketplace facilitator rules vary by state). Fryer oil filtered and changed the way the fryer maker says, with no blanket temperature.',
+          "Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a daily inventory of 32 items in lb, qt, each and sets with par levels, packaging for each brand included; a delivery calendar with 22 US dates, from Super Bowl Sunday, March Madness and Cinco de Mayo to football season, Thanksgiving, holiday office parties and New Year's Eve, plus 5 rows for your own and a UK note.",
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'burger-joint-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 346 burger joint tasks already written, adapted to the US with notes for the UK.',
+          'US burger joint roles and areas (grill cook, line cook, fry cook, shift manager, server, dishwasher / prep; grill station, make line, fry station, front of house, patio, delivery and takeout), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'The flat-top griddle at about 400–450 °F and the fryer oil at 350–355 °F, smash burgers from a 3–3.5 oz ball, and the kitchen opening in a safe order: the hood on and drawing before the gas, the griddle and the fryers; the closing order fixed so the griddles are cleaned and the fryer oil filtered before the hood goes off, and the alarm and lock-up come last.',
+          "Food safety under the FDA Food Code: ground beef cooked to 155 °F for 17 seconds and checked with a probe, undercooked only on request with a consumer advisory and never for the kids' menu, chicken to 165 °F; raw ground beef held at 41 °F or below until it hits the griddle and stored below ready-to-eat food, hands washed and gloves changed between raw meat and buns or toppings, thawing in the walk-in; the make line, cut toppings and coleslaw at 41 °F or below and date-marked for up to 7 days, cooked bacon cooled by the two-stage rule or reheated to 165 °F, sanitizer checked with test strips, and the 9 major allergens (the bun usually carries wheat, milk, egg, soy and sesame; the UK's 14 noted).",
+          'Fryer oil checked with a TPM tester and filtered or changed the way the fryer maker says, with no blanket temperature; delivery with third-party apps (DoorDash, Uber Eats, Grubhub).',
+          'A Quarterly & Annual sheet for a US burger joint: pest control, hood and duct cleaning under NFPA 96 (quarterly for a high-volume or charbroil kitchen, semiannual if moderate), fire extinguishers (OSHA) with their hydrostatic test and hood suppression, gas, refrigeration by an EPA 608 technician (make line included), used fryer oil pickup by a licensed recycler, water, insurance (liquor liability if you serve alcohol), the POS with sales tax and the delivery app integrations, and thermometer calibration.',
+          "Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a daily inventory of 28 products in lb, oz, qt and each with par levels; a burger joint calendar with 22 US dates, from Super Bowl Sunday, March Madness and National Burger Month to National Cheeseburger Day, Thanksgiving and New Year's Eve, plus 5 rows for your own and a UK note. Beer only with a license, 21+ with ID.",
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

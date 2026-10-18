@@ -431,6 +431,66 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-bar, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'bar-checklist-templates': {
+    accessPath: '/en/digital-products/bar-checklist-templates/access',
+    emailSubject: 'Your access to Bar Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Bar Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-cafeteria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'coffee-shop-checklist-templates': {
+    accessPath: '/en/digital-products/coffee-shop-checklist-templates/access',
+    emailSubject: 'Your access to Coffee Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Coffee Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-catering, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'catering-checklist-templates': {
+    accessPath: '/en/digital-products/catering-checklist-templates/access',
+    emailSubject: 'Your access to Catering Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Catering Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-pizzeria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'pizza-shop-checklist-templates': {
+    accessPath: '/en/digital-products/pizza-shop-checklist-templates/access',
+    emailSubject: 'Your access to Pizza Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Pizza Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-hamburgueseria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'burger-joint-checklist-templates': {
+    accessPath: '/en/digital-products/burger-joint-checklist-templates/access',
+    emailSubject: 'Your access to Burger Joint Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Burger Joint Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-18): gemelo de kit-tareas-dark-kitchen, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'ghost-kitchen-checklist-templates': {
+    accessPath: '/en/digital-products/ghost-kitchen-checklist-templates/access',
+    emailSubject: 'Your access to Ghost Kitchen Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Ghost Kitchen Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

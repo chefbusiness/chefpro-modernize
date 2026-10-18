@@ -1,0 +1,3512 @@
+Volcado de 11 xlsx de astro-site/public/dl/burger-joint-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-burger-joint-opening-closing-checklists.xlsx
+# docProps: title='Burger Joint Opening & Closing Checklists: Kitchen, FOH & Takeout' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Burger Joint Opening & Closing Checklists: Kitchen, FOH & Takeout
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B23    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 01-burger-joint-opening-closing-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-burger-restaurant-opening-closing-checklist.xlsx.
+B28    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Kitchen Opening» · protegida=True · área='Kitchen Opening'!$A$1:$G$50 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Checklist — Kitchen / Burger Line
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PERSONAL HYGIENE
+A6     : 1
+B6     : Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)
+C6     : Kitchen
+D6     : All staff
+E6     : 10:00 AM
+A7     : 2
+B7     : No jewelry on hands or arms except a plain band; short, clean nails, no polish or false nails unless gloved
+C7     : Kitchen
+D7     : All staff
+E7     : 10:00 AM
+A8     : 3
+B8     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C8     : Kitchen
+D8     : All staff
+E8     : 10:00 AM
+A9     : 4
+B9     : Wash hands on arrival and between tasks; handwashing sink with soap, paper towels and hot water (100 °F+)
+C9     : Kitchen
+D9     : All staff
+E9     : 10:00 AM
+A10    : 5
+B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
+C10    : Kitchen
+D10    : Shift manager
+E10    : 10:00 AM
+A11    :   GRIDDLE & FRYER
+A12    : 6
+B12    : Turn on the hood and ventilate the kitchen BEFORE any equipment: the griddle and the fryers are the two big sources of smoke and grease
+C12    : Kitchen
+D12    : Line cook
+E12    : 10:45 AM
+A13    : 7
+B13    : Check the hood really draws (a napkin held against the filters stays put) and the filters are in place and clean
+C13    : Kitchen
+D13    : Line cook
+E13    : 10:45 AM
+A14    : 8
+B14    : Open the main gas valve and make sure there is NO gas smell before lighting anything; if you smell gas, don't turn anything on or touch a switch: get out and call the gas utility or 911 from outside
+C14    : Kitchen
+D14    : Line cook
+E14    : 10:45 AM
+A15    : 9
+B15    : Turn on the flat-top griddle / grill and preheat it (about 400–450 °F)
+C15    : Kitchen
+D15    : Line cook
+E15    : 11:00 AM
+A16    : 10
+B16    : Turn on the fryers and check the oil level
+C16    : Kitchen
+D16    : Line cook
+E16    : 11:00 AM
+A17    : 11
+B17    : Turn on the bun toaster or oven if you toast the buns in it
+C17    : Kitchen
+D17    : Line cook
+E17    : 11:00 AM
+A18    : 12
+B18    : Check the fryer oil temperature (350–355 °F for fries)
+C18    : Kitchen
+D18    : Line cook
+E18    : 11:15 AM
+A19    :   BURGER MISE EN PLACE
+A20    : 13
+B20    : Check the walk-in cooler and freezer ran all night and log temps (cooler 41 °F or below / freezer 0 °F or below) — log reading: ____ °F. If out of range, don't use the beef or product until it's assessed
+C20    : Walk-in
+D20    : Line cook
+E20    : 10:15 AM
+A21    : 14
+B21    : Pull ground beef / smash patties from the walk-in in small batches; hold at 41 °F or below until the griddle, no tempering at room temp
+C21    : Kitchen
+D21    : Line cook
+E21    : 10:30 AM
+A22    : 15
+B22    : Portion beef if making smash burgers to order
+C22    : Kitchen
+D22    : Line cook
+E22    : 10:30 AM
+A23    : 16
+B23    : Slice buns: brioche, pretzel, classic
+C23    : Kitchen
+D23    : Line cook
+E23    : 10:30 AM
+A24    : 17
+B24    : Prep toppings: lettuce, tomato, onion, pickles
+C24    : Kitchen
+D24    : Line cook
+E24    : 10:30 AM
+A25    : 18
+B25    : Prep house sauces: burger sauce, BBQ, honey mustard — cool cooked BBQ from 135 to 70 °F in 2 h, then to 41 °F in 4 h more (FDA 3-501.14), covered; pasteurized eggs in mayo-based sauces, or a consumer advisory if raw or undercooked egg (FDA 3-603.11)
+C25    : Kitchen
+D25    : Line cook
+E25    : 10:30 AM
+A26    : 19
+B26    : Slice cheese: American, cheddar, gouda, blue cheese, Swiss
+C26    : Kitchen
+D26    : Line cook
+E26    : 10:30 AM
+A27    : 20
+B27    : Prep bacon: precooked or ready for the griddle — to store, cool cooked bacon from 135 to 70 °F in 2 h, then to 41 °F in 4 h more (FDA 3-501.14); to hot-hold, reheat to 165 °F within 2 h (FDA 3-403.11) and hold at 135 °F or above
+C27    : Kitchen
+D27    : Line cook
+E27    : 10:45 AM
+A28    : 21
+B28    : Set up the make line: bun → patty → cheese → toppings → sauces
+C28    : Kitchen
+D28    : Line cook
+E28    : 11:00 AM
+A29    :   FRIES & SIDES
+A30    : 22
+B30    : Cut fresh fries or check frozen stock
+C30    : Kitchen
+D30    : Line cook
+E30    : 10:30 AM
+A31    : 23
+B31    : Prep onion rings (batter)
+C31    : Kitchen
+D31    : Line cook
+E31    : 10:30 AM
+A32    : 24
+B32    : Prep the day's coleslaw — 41 °F or below, date-marked: 7 days max, prep day = day 1 (FDA 3-501.16, 3-501.17)
+C32    : Kitchen
+D32    : Line cook
+E32    : 10:30 AM
+A33    : 25
+B33    : Check stock of nachos, jalapenos, guacamole
+C33    : Kitchen
+D33    : Line cook
+E33    : 10:30 AM
+A34    :   STOCK & SANITIZING
+A35    : 26
+B35    : Check beef stock (portions for the day)
+C35    : Walk-in
+D35    : Line cook
+E35    : 10:00 AM
+A36    : 27
+B36    : Check bun stock
+C36    : Storage
+D36    : Line cook
+E36    : 10:00 AM
+A37    : 28
+B37    : Check expiration dates on opened products
+C37    : Walk-in
+D37    : Line cook
+E37    : 10:00 AM
+A38    : 29
+B38    : Wash hands and put on fresh gloves when going from RAW beef to buns, toppings or sauces (FDA 2-301.14, 3-304.15); raw-side board, tongs and spatula stay off the make line (FDA 3-302.11)
+C38    : Kitchen
+D38    : All staff
+E38    : 10:00 AM
+A39    : 30
+B39    : Clean, then sanitize work surfaces (approved sanitizer at label strength, test strip; FDA 4-501.114)
+C39    : Kitchen
+D39    : Line cook
+E39    : 10:00 AM
+A46    : Tasks done:
+D46    = =COUNTIFS(B5:B44,"?*",F5:F44,"✓")   → caché 0.0
+E46    : of
+F46    = =COUNTIF(B5:B44,"?*")-COUNTIF(F5:F44,"N/A")   → caché 30.0
+A48    : Shift manager signature: _________________________    Time: _________
+A50    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 F27 F28 F30 F31 F32 F33 F35 F36 F37 F38 F39 F40 F41 F42 F43 F44 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G44 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Opening» · protegida=True · área='FOH Opening'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Checklist — FOH & Takeout
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOH
+A6     : 1
+B6     : Turn on lights and A/C
+C6     : FOH
+D6     : Server
+E6     : 11:00 AM
+A7     : 2
+B7     : Clean and set tables
+C7     : FOH
+D7     : Server
+E7     : 11:00 AM
+A8     : 3
+B8     : Place menus on tables and at the counter
+C8     : FOH
+D8     : Server
+E8     : 11:00 AM
+A9     : 4
+B9     : Update the menu board: burger of the day, combos
+C9     : FOH
+D9     : Shift manager
+E9     : 11:15 AM
+A10    : 5
+B10    : Put on background music
+C10    : FOH
+D10    : Shift manager
+E10    : 11:15 AM
+A11    : 6
+B11    : Check the POS / card terminal
+C11    : FOH
+D11    : Shift manager
+E11    : 11:15 AM
+A12    : 7
+B12    : Set up the starting bank
+C12    : FOH
+D12    : Shift manager
+E12    : 11:15 AM
+A13    :   DELIVERY & TAKEOUT
+A14    : 8
+B14    : Turn on the delivery tablets (DoorDash, Uber Eats, Grubhub)
+C14    : FOH
+D14    : Shift manager
+E14    : 11:30 AM
+A15    : 9
+B15    : Check stock of burger boxes, bags, napkins
+C15    : Storage
+D15    : Shift manager
+E15    : 11:00 AM
+A16    : 10
+B16    : Check stock of containers for fries and sides
+C16    : Storage
+D16    : Shift manager
+E16    : 11:00 AM
+A17    : 11
+B17    : Update the menu on the delivery apps for changes / 86s
+C17    : Office
+D17    : Shift manager
+E17    : 11:00 AM
+A18    :   RESTROOMS & CLEANING
+A19    : 12
+B19    : Sweep and mop the FOH floor
+C19    : FOH
+D19    : Dishwasher / prep
+E19    : 10:30 AM
+A20    : 13
+B20    : Clean restrooms: soap, paper, floor
+C20    : Restrooms
+D20    : Dishwasher / prep
+E20    : 10:30 AM
+A21    : 14
+B21    : Clean the entrance windows
+C21    : FOH
+D21    : Dishwasher / prep
+E21    : 10:30 AM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Kitchen Closing» · protegida=True · área='Kitchen Closing'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Kitchen Closing Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PRODUCT
+A6     : 1
+B6     : Store leftover beef in the walk-in: raw ground beef covered, date-marked, 41 °F or below, below ready-to-eat food and above any raw chicken (FDA 3-302.11)
+C6     : Kitchen
+D6     : Line cook
+E6     : 10:30 PM
+A7     : 2
+B7     : Cover and refrigerate toppings: cut tomato, lettuce and onion are TCS, so 41 °F or below and date-marked (7 days max; FDA 3-501.17)
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 PM
+A8     : 3
+B8     : Store house sauces in airtight containers: 41 °F or below, date-marked, 5 days max (kit guideline; FDA allows 7, 3-501.17)
+C8     : Kitchen
+D8     : Line cook
+E8     : 10:30 PM
+A9     : 4
+B9     : Store leftover buns in an airtight bag
+C9     : Kitchen
+D9     : Line cook
+E9     : 10:30 PM
+A10    : 5
+B10    : Date-mark ready-to-eat TCS food kept over 24 h: 7 days max at 41 °F or below, prep day = day 1 (FDA 3-501.17)
+C10    : Kitchen
+D10    : Line cook
+E10    : 10:30 PM
+A11    :   GRIDDLE & EQUIPMENT
+A12    : 6
+B12    : Deep-clean the flat-top griddle (scraper + degreaser)
+C12    : Kitchen
+D12    : Line cook
+E12    : 10:30 PM
+A13    : 7
+B13    : Turn the fryer off after service; the hood stays on until the fryer and griddle have cooled
+C13    : Kitchen
+D13    : Line cook
+E13    : 10:30 PM
+A14    : 8
+B14    : Filter the oil every night as the fryer manufacturer says (built-in filtration usually runs with the oil still hot, right after service; a portable filter only once it has cooled to what the manual allows) and change it when the TPM tester says; heat-resistant gloves, apron and goggles
+C14    : Kitchen
+D14    : Line cook
+E14    : 10:45 PM
+A15    : 9
+B15    : Turn off the griddle and oven; the hood last, once the fryer and griddle have cooled
+C15    : Kitchen
+D15    : Line cook
+E15    : 10:45 PM
+A16    : 10
+B16    : Check walk-ins are closed and at temp (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F
+C16    : Kitchen
+D16    : Line cook
+E16    : 10:45 PM
+A17    :   CLEANING
+A18    : 11
+B18    : Clean the make line and trays
+C18    : Kitchen
+D18    : Dishwasher / prep
+E18    : 10:30 PM
+A19    : 12
+B19    : Wash utensils: spatulas, presses, knives
+C19    : Kitchen
+D19    : Dishwasher / prep
+E19    : 10:30 PM
+A20    : 13
+B20    : Sweep and mop the kitchen floor
+C20    : Kitchen
+D20    : Dishwasher / prep
+E20    : 10:45 PM
+A21    : 14
+B21    : Take out the trash and recycle (cardboard, used oil)
+C21    : Kitchen
+D21    : Dishwasher / prep
+E21    : 10:45 PM
+A22    :   TOMORROW'S PREP
+A23    : 15
+B23    : Prep patties for tomorrow (if formed ahead): covered, date-marked, 41 °F or below, apart from ready-to-eat food (FDA 3-302.11)
+C23    : Kitchen
+D23    : Line cook
+E23    : 10:00 PM
+A24    : 16
+B24    : Note shortages for the order
+C24    : Kitchen
+D24    : Line cook
+E24    : 10:30 PM
+A25    : 17
+B25    : Log the day's waste (product, amount and reason): overcooked or dropped patties, stale buns, tossed toppings and returned orders — without it, monthly food cost comes out wrong
+C25    : Kitchen
+D25    : Line cook
+E25    : 10:30 PM
+A26    : 18
+B26    : Thaw tomorrow's beef in the walk-in at 41 °F or below if needed (FDA 3-501.13), never at room temp
+C26    : Kitchen
+D26    : Line cook
+E26    : 10:30 PM
+A33    : Tasks done:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : of
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 18.0
+A35    : Shift manager signature: _________________________    Time: _________
+A37    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Closing» · protegida=True · área='FOH Closing'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Closing Checklist — FOH & Delivery
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOH
+A6     : 1
+B6     : Clear and clean tables, then sanitize (approved sanitizer, test strip; FDA 4-501.114); wiping cloths stay in sanitizer
+C6     : FOH
+D6     : Server
+E6     : 10:30 PM
+A7     : 2
+B7     : Sweep and mop the floor
+C7     : FOH
+D7     : Dishwasher / prep
+E7     : 10:45 PM
+A8     : 3
+B8     : Restock condiments for tomorrow (ketchup, mustard)
+C8     : FOH
+D8     : Server
+E8     : 10:30 PM
+A9     :   DELIVERY & REGISTER
+A10    : 4
+B10    : Turn off the delivery tablets
+C10    : FOH
+D10    : Shift manager
+E10    : 10:30 PM
+A11    : 5
+B11    : Count remaining packaging
+C11    : Storage
+D11    : Shift manager
+E11    : 10:30 PM
+A12    : 6
+B12    : Balance the register (cash + card + delivery)
+C12    : Office
+D12    : Shift manager
+E12    : 10:45 PM
+A13    : 7
+B13    : Log incidents
+C13    : Office
+D13    : Shift manager
+E13    : 10:45 PM
+A14    :   FINAL CLOSE
+A15    : 8
+B15    : Final restroom clean
+C15    : Restrooms
+D15    : Dishwasher / prep
+E15    : 10:45 PM
+A16    : 9
+B16    : Turn off lights, HVAC, music
+C16    : FOH
+D16    : Shift manager
+E16    : 11:00 PM
+A17    : 10
+B17    : Set the alarm and lock up
+C17    : FOH
+D17    : Shift manager
+E17    : 11:00 PM
+A24    : Tasks done:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : of
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 10.0
+A26    : Shift manager signature: _________________________    Time: _________
+A28    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F13 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 02-burger-kitchen-station-checklists.xlsx
+# docProps: title='Burger Kitchen Station Checklists: Grill, Make Line & Fry Station' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Burger Kitchen Station Checklists: Grill, Make Line & Fry Station
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B23    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 02-burger-kitchen-station-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-burger-restaurant-opening-closing-checklist.xlsx and 01-burger-joint-opening-closing-checklists.xlsx.
+B28    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Grill Station» · protegida=True · área='Grill Station'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Griddle Station — Smash & Classic Burgers
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Preheat the flat-top griddle to 400–450 °F — log reading: ____ °F
+C6     : Kitchen
+D6     : Grill cook
+E6     : 11:00 AM
+A7     : 2
+B7     : Check patty / ground beef stock
+C7     : Walk-in
+D7     : Grill cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Set up the smash press if used
+C8     : Kitchen
+D8     : Grill cook
+E8     : 11:00 AM
+A9     : 4
+B9     : Prep bacon on the griddle or precook — to store, cool cooked bacon from 135 to 70 °F in 2 h, then to 41 °F in 4 h more (FDA 3-501.14); to hot-hold, reheat to 165 °F within 2 h (FDA 3-403.11) and hold at 135 °F or above
+C9     : Kitchen
+D9     : Grill cook
+E9     : 11:00 AM
+A10    : 5
+B10    : Check spatulas, presses and the probe thermometer: ice-point check (32 °F), recalibrate if it's off
+C10    : Kitchen
+D10    : Grill cook
+E10    : 11:00 AM
+A11    : 6
+B11    : Keep raw-side tools apart: board, tongs and spatula marked and separate from those for buns and toppings (FDA 3-302.11)
+C11    : Kitchen
+D11    : Grill cook
+E11    : 11:00 AM
+A12    :   DURING SERVICE
+A13    : 7
+B13    : Smash burger: 3–3.5 oz ball → press on the hot griddle
+C13    : Kitchen
+D13    : Grill cook
+E13    : —
+A14    : 8
+B14    : Check doneness with a probe thermometer: ground beef needs 155 °F for 17 s at the CENTER (FDA 3-401.11; also 145 °F 3 min, 150 °F 1 min, 158 °F instant). Less done only on guest request with a consumer advisory on the menu (FDA 3-603.11), never on the kids' menu
+C14    : Kitchen
+D14    : Grill cook
+E14    : —
+A15    : 9
+B15    : Melt cheese: cover with a melting dome for 30 sec
+C15    : Kitchen
+D15    : Grill cook
+E15    : —
+A16    : 10
+B16    : Toast buns on the griddle (cut side down, 20–30 sec)
+C16    : Kitchen
+D16    : Grill cook
+E16    : —
+A17    : 11
+B17    : Keep the griddle clean between batches (scraper); wash, rinse and sanitize spatulas, press and tongs at least every 4 h during service, or swap in clean ones (FDA 4-602.11)
+C17    : Kitchen
+D17    : Grill cook
+E17    : —
+A18    : 12
+B18    : Call the make line: burger ready to build
+C18    : Kitchen
+D18    : Grill cook
+E18    : —
+A19    :   AFTER
+A20    : 13
+B20    : Deep-clean the griddle with scraper and degreaser
+C20    : Kitchen
+D20    : Grill cook
+E20    : 10:30 PM
+A21    : 14
+B21    : Wash, rinse and sanitize press and spatulas (approved sanitizer, test strip; FDA 4-501.114)
+C21    : Kitchen
+D21    : Grill cook
+E21    : 10:30 PM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Make Line» · protegida=True · área='Make Line'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Make Line — Buns, Toppings & Sauces
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Set up inserts: lettuce, tomato, onion and pickles — raw-eaten produce washed under running potable water (FDA 3-302.15); if using a produce wash, only one approved for fruits and vegetables, at label dose, then RINSE. Inserts in the make-line cooler at 41 °F or below (FDA 3-501.16) — log reading: ____ °F
+C6     : Kitchen
+D6     : Line cook
+E6     : 11:00 AM
+A7     : 2
+B7     : Fill squeeze bottles: burger sauce, BBQ, mayo, mustard
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Slice cheese
+C8     : Kitchen
+D8     : Line cook
+E8     : 10:30 AM
+A9     : 4
+B9     : Check bun stock (brioche, pretzel, sesame)
+C9     : Kitchen
+D9     : Line cook
+E9     : 10:30 AM
+A10    : 5
+B10    : Prep extras: fried egg, jalapenos, crispy onion rings — a runny yolk is undercooked: consumer advisory on the menu (FDA 3-603.11), or cook it through
+C10    : Kitchen
+D10    : Line cook
+E10    : 10:30 AM
+A11    :   DURING SERVICE
+A12    : 6
+B12    : Build burgers to ticket: bottom bun → sauce → patty → cheese → toppings → top bun
+C12    : Kitchen
+D12    : Line cook
+E12    : —
+A13    : 7
+B13    : Skewer with a frill pick if it's a tall burger
+C13    : Kitchen
+D13    : Line cook
+E13    : —
+A14    : 8
+B14    : Restock inserts as they run low
+C14    : Kitchen
+D14    : Line cook
+E14    : —
+A15    : 9
+B15    : Pack for takeout / delivery (wrap in paper, box)
+C15    : Kitchen
+D15    : Line cook
+E15    : —
+A16    :   AFTER
+A17    : 10
+B17    : Cover and refrigerate all inserts
+C17    : Kitchen
+D17    : Line cook
+E17    : 10:30 PM
+A18    : 11
+B18    : Clean the whole make line and sanitize it (approved sanitizer, test strip; FDA 4-501.114)
+C18    : Kitchen
+D18    : Line cook
+E18    : 10:30 PM
+A19    : 12
+B19    : Log the shift's waste (product, amount and reason): inserts you can't save, torn cheese slices, squashed buns and misbuilt burgers
+C19    : Kitchen
+D19    : Line cook
+E19    : 10:30 PM
+A20    : 13
+B20    : Log usage
+C20    : Kitchen
+D20    : Line cook
+E20    : 10:30 PM
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Fry Station» · protegida=True · área='Fry Station'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Fry Station — Fries & Sides
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Check oil level and quality with a TPM tester (total polar materials); no federal limit: change per the tester and fryer manufacturer
+C6     : Kitchen
+D6     : Fry cook
+E6     : 11:00 AM
+A7     : 2
+B7     : Turn on the fryer and preheat to 350–355 °F — log reading: ____ °F
+C7     : Kitchen
+D7     : Fry cook
+E7     : 11:00 AM
+A8     : 3
+B8     : Prep fries: cut fresh or pull frozen
+C8     : Kitchen
+D8     : Fry cook
+E8     : 10:30 AM
+A9     : 4
+B9     : Prep battered items: onion rings, jalapeno poppers
+C9     : Kitchen
+D9     : Fry cook
+E9     : 10:30 AM
+A10    : 5
+B10    : Prep chicken nuggets / tenders if used — cook to 165 °F at the center, probe-checked (FDA 3-401.11); fry from frozen per the manufacturer
+C10    : Kitchen
+D10    : Fry cook
+E10    : 10:30 AM
+A11    :   DURING SERVICE
+A12    : 6
+B12    : Fry fries in batches (don't overload the basket)
+C12    : Kitchen
+D12    : Fry cook
+E12    : —
+A13    : 7
+B13    : Watch time: fries 3–4 min, rings 2–3 min
+C13    : Kitchen
+D13    : Fry cook
+E13    : —
+A14    : 8
+B14    : Salt and season on the way out
+C14    : Kitchen
+D14    : Fry cook
+E14    : —
+A15    : 9
+B15    : Serve in a basket or paper cone per presentation
+C15    : Kitchen
+D15    : Fry cook
+E15    : —
+A16    : 10
+B16    : Keep the area free of splatter
+C16    : Kitchen
+D16    : Fry cook
+E16    : —
+A17    :   AFTER
+A18    : 11
+B18    : Turn off the fryer at the end of service
+C18    : Kitchen
+D18    : Fry cook
+E18    : 10:30 PM
+A19    : 12
+B19    : Filter the oil every night as the fryer manufacturer says (built-in filtration usually runs with the oil still hot, right after service; a portable filter only once it has cooled to what the manual allows) and change it when the TPM tester says; heat-resistant gloves, apron and goggles
+C19    : Kitchen
+D19    : Fry cook
+E19    : 10:30 PM
+A20    : 13
+B20    : Clean the outside of the fryer
+C20    : Kitchen
+D20    : Fry cook
+E20    : 10:30 PM
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 03-burger-restaurant-manager-checklist.xlsx
+# docProps: title='Burger Restaurant Manager Checklist: Daily, Weekly, Monthly & Shift Handover' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Burger Restaurant Manager Checklist: Daily, Weekly, Monthly & Shift Handover
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B23    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 03-burger-restaurant-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-burger-restaurant-opening-closing-checklist.xlsx and 01-burger-joint-opening-closing-checklists.xlsx.
+B28    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Manager Daily» · protegida=True · área='Manager Daily'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Daily Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE OPENING
+A6     : 1
+B6     : Review today's reservations and events
+C6     : Office
+D6     : Manager
+E6     : 10:00 AM
+A7     : 2
+B7     : Check the full crew is in
+C7     : General
+D7     : Manager
+E7     : 10:00 AM
+A8     : 3
+B8     : Pre-shift: burger of the day, 86s, promos, allergens
+C8     : General
+D8     : Manager
+E8     : 10:15 AM
+A9     : 4
+B9     : Check stock: beef, buns, cheese, fries
+C9     : Storage
+D9     : Manager
+E9     : 10:00 AM
+A10    :   SERVICE
+A11    : 5
+B11    : Monitor ticket times: burgers out in under 12 min
+C11    : General
+D11    : Manager
+E11    : —
+A12    : 6
+B12    : Check quality: doneness, presentation — 155 °F for 17 s unless the guest asks for less done and the menu has the consumer advisory (FDA 3-401.11, 3-603.11); kids' menu always cooked through
+C12    : Kitchen
+D12    : Manager
+E12    : —
+A13    : 7
+B13    : Manage delivery: timing and correct packaging
+C13    : Office
+D13    : Manager
+E13    : —
+A14    : 8
+B14    : Resolve issues
+C14    : General
+D14    : Manager
+E14    : —
+A15    :   CLOSING
+A16    : 9
+B16    : Supervise the full close
+C16    : General
+D16    : Manager
+E16    : 10:30 PM
+A17    : 10
+B17    : Balance the register (cash + card + delivery)
+C17    : Office
+D17    : Manager
+E17    : 10:45 PM
+A18    : 11
+B18    : Place tomorrow's orders (beef, buns, fries)
+C18    : Office
+D18    : Manager
+E18    : 10:30 PM
+A19    : 12
+B19    : Log today's incidents and 86s
+C19    : Office
+D19    : Manager
+E19    : 10:45 PM
+A20    : 13
+B20    : Review and approve team time-clock punches (in, out, breaks) in the POS or time-clock app
+C20    : Office
+D20    : Manager
+E20    : 10:45 PM
+A21    : 14
+B21    : Close: gas, lights, alarm
+C21    : General
+D21    : Manager
+E21    : 11:00 PM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Weekly» · protegida=True · área='Manager Weekly'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Checklist (Monday)
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   ANALYSIS
+A6     : 1
+B6     : Review weekly sales (dine-in vs delivery vs takeout)
+C6     : Office
+D6     : Manager
+E6     : Monday
+A7     : 2
+B7     : Analyze best-selling burgers
+C7     : Office
+D7     : Manager
+E7     : Monday
+A8     : 3
+B8     : Review feedback: Google, Yelp, TripAdvisor, delivery apps
+C8     : Office
+D8     : Manager
+E8     : Monday
+A9     : 4
+B9     : Assess beef and bun waste
+C9     : Office
+D9     : Manager
+E9     : Monday
+A10    :   ORDERS
+A11    : 5
+B11    : Beef order (blend, Angus, wagyu per menu)
+C11    : Office
+D11    : Manager
+E11    : Monday
+A12    : 6
+B12    : Bun order (brioche, pretzel)
+C12    : Office
+D12    : Manager
+E12    : Monday
+A13    : 7
+B13    : Fries order (fresh or frozen)
+C13    : Office
+D13    : Manager
+E13    : Monday
+A14    : 8
+B14    : Cheese and sauce order
+C14    : Office
+D14    : Manager
+E14    : Monday
+A15    : 9
+B15    : Delivery packaging stock
+C15    : Storage
+D15    : Manager
+E15    : Monday
+A16    : 10
+B16    : Cleaning supplies stock
+C16    : Storage
+D16    : Manager
+E16    : Monday
+A17    :   MAINTENANCE
+A18    : 11
+B18    : Supervise deep cleaning
+C18    : General
+D18    : Manager
+E18    : Monday
+A19    : 12
+B19    : Fryer oil test (TPM tester; no federal limit, change per manufacturer)
+C19    : Kitchen
+D19    : Manager
+E19    : Monday
+A20    : 13
+B20    : Check expiration dates
+C20    : Storage
+D20    : Manager
+E20    : Monday
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Monthly» · protegida=True · área='Manager Monthly'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Checklist
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   FINANCIAL
+A6     : 1
+B6     : Review the month's P&L
+C6     : Office
+D6     : Manager
+E6     : Day 1
+A7     : 2
+B7     : Food cost (target 28–32%)
+C7     : Office
+D7     : Manager
+E7     : Day 1
+A8     : 3
+B8     : Labor cost vs sales
+C8     : Office
+D8     : Manager
+E8     : Day 1
+A9     : 4
+B9     : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C9     : Office
+D9     : Manager
+E9     : Monthly
+A10    : 5
+B10    : Delivery app commissions
+C10    : Office
+D10    : Manager
+E10    : Day 1
+A11    :   MAINTENANCE
+A12    : 6
+B12    : Griddle: check the surface and thermostat with a surface thermometer, and deep-clean the grease trough
+C12    : Kitchen
+D12    : Technician
+E12    : Monthly
+A13    : 7
+B13    : Fryer boil-out: drain, clean with fryer cleaner and refill with fresh oil, per the manufacturer (the oil itself is changed whenever the TPM tester says, not once a month)
+C13    : Kitchen
+D13    : Manager
+E13    : Monthly
+A14    : 8
+B14    : Dish machine: filters, rinse aid and chemical levels (water softener salt only if you have a softener)
+C14    : Kitchen
+D14    : Manager
+E14    : Monthly
+A15    : 9
+B15    : Hood: filters
+C15    : Kitchen
+D15    : Technician
+E15    : Monthly
+A16    : 10
+B16    : HVAC: filters
+C16    : General
+D16    : Technician
+E16    : Monthly
+A17    : 11
+B17    : Extinguisher and first aid kit: check — monthly visual inspection of extinguishers (OSHA 1910.157(e)(2)); first aid kit fully stocked
+C17    : General
+D17    : Manager
+E17    : Monthly
+A18    :   MARKETING
+A19    : 12
+B19    : Review the menu: rotate specialty burgers
+C19    : Office
+D19    : Manager
+E19    : Monthly
+A20    : 13
+B20    : Plan the month's promos
+C20    : Office
+D20    : Manager
+E20    : Monthly
+A21    : 14
+B21    : Photos for social media and delivery apps
+C21    : Office
+D21    : Manager
+E21    : Monthly
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shift Handover» · protegida=True · área='Shift Handover'!$A$1:$G$27 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Shift Handover
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   STATUS
+A6     : 1
+B6     : Occupied tables and pending reservations
+C6     : General
+D6     : Outgoing shift
+E6     : —
+A7     : 2
+B7     : Tickets in progress
+C7     : General
+D7     : Outgoing shift
+E7     : —
+A8     : 3
+B8     : Pending delivery orders
+C8     : General
+D8     : Outgoing shift
+E8     : —
+A9     :   STOCK
+A10    : 4
+B10    : Patties left
+C10    : Kitchen
+D10    : Outgoing shift
+E10    : —
+A11    : 5
+B11    : Buns left
+C11    : Kitchen
+D11    : Outgoing shift
+E11    : —
+A12    : 6
+B12    : Fryer oil status
+C12    : Kitchen
+D12    : Outgoing shift
+E12    : —
+A13    : 7
+B13    : 86s: what ran out
+C13    : Kitchen
+D13    : Outgoing shift
+E13    : —
+A14    :   INCIDENTS
+A15    : 8
+B15    : Shift incidents
+C15    : General
+D15    : Outgoing shift
+E15    : —
+A16    : 9
+B16    : Customer complaints
+C16    : General
+D16    : Outgoing shift
+E16    : —
+A23    : Tasks done:
+D23    = =COUNTIFS(B5:B21,"?*",F5:F21,"✓")   → caché 0.0
+E23    : of
+F23    = =COUNTIF(B5:B21,"?*")-COUNTIF(F5:F21,"N/A")   → caché 9.0
+A25    : Shift manager signature: _________________________    Time: _________
+A27    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F13 F15 F16 F17 F18 F19 F20 F21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 04-burger-shop-duties-by-role.xlsx
+# docProps: title='Burger Shop Duties by Role: Grill Cook, Line Cook, Fry Cook, Shift Manager & Server' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Burger Shop Duties by Role: Grill Cook, Line Cook, Fry Cook, Shift Manager & Server
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B23    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 04-burger-shop-duties-by-role.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-burger-restaurant-opening-closing-checklist.xlsx and 01-burger-joint-opening-closing-checklists.xlsx.
+B28    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Grill Cook» · protegida=True · área='Grill Cook'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Grill Cook / Grill Master
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Turn on the griddle and preheat
+C6     : Kitchen
+D6     : Grill cook
+E6     : 11:00 AM
+A7     : 2
+B7     : Pull ground beef from the walk-in in small batches; hold at 41 °F or below until the griddle, no tempering at room temp (FDA 3-501.16); if using TPHC (written procedure on file): mark the time and toss at 4 h (FDA 3-501.19)
+C7     : Kitchen
+D7     : Grill cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Set up the smash press and spatulas
+C8     : Kitchen
+D8     : Grill cook
+E8     : 11:00 AM
+A9     : 4
+B9     : Precook bacon if used — to store, cool cooked bacon from 135 to 70 °F in 2 h, then to 41 °F in 4 h more (FDA 3-501.14); to hot-hold, reheat to 165 °F within 2 h (FDA 3-403.11) and hold at 135 °F or above
+C9     : Kitchen
+D9     : Grill cook
+E9     : 11:15 AM
+A10    :   SERVICE
+A11    : 5
+B11    : Cook patties to ticket and requested doneness: 155 °F for 17 s unless the guest asks for less done and the menu has the consumer advisory (FDA 3-401.11, 3-603.11); kids' menu always cooked through
+C11    : Kitchen
+D11    : Grill cook
+E11    : —
+A12    : 6
+B12    : Smash: press the ball on the hot griddle 30–45 sec
+C12    : Kitchen
+D12    : Grill cook
+E12    : —
+A13    : 7
+B13    : Melt cheese with the dome
+C13    : Kitchen
+D13    : Grill cook
+E13    : —
+A14    : 8
+B14    : Toast buns on the griddle
+C14    : Kitchen
+D14    : Grill cook
+E14    : —
+A15    : 9
+B15    : Keep the griddle clean between batches
+C15    : Kitchen
+D15    : Grill cook
+E15    : —
+A16    :   CLOSING
+A17    : 10
+B17    : Deep-clean the griddle
+C17    : Kitchen
+D17    : Grill cook
+E17    : 10:30 PM
+A18    : 11
+B18    : Store leftover beef labeled: raw ground beef covered, date-marked, 41 °F or below, below ready-to-eat food and above any raw chicken (FDA 3-302.11)
+C18    : Kitchen
+D18    : Grill cook
+E18    : 10:30 PM
+A19    : 12
+B19    : Prep patties for tomorrow if needed: covered, date-marked, 41 °F or below, apart from ready-to-eat food (FDA 3-302.11)
+C19    : Kitchen
+D19    : Grill cook
+E19    : 10:00 PM
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Shift manager signature: _________________________    Time: _________
+A30    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Line Cook» · protegida=True · área='Line Cook'!$A$1:$G$27 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Line Cook / Make Line
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Prep toppings in inserts
+C6     : Kitchen
+D6     : Line cook
+E6     : 10:30 AM
+A7     : 2
+B7     : Fill squeeze bottles with sauces
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Slice cheese
+C8     : Kitchen
+D8     : Line cook
+E8     : 10:30 AM
+A9     : 4
+B9     : Set up an orderly line
+C9     : Kitchen
+D9     : Line cook
+E9     : 11:00 AM
+A10    :   SERVICE
+A11    : 5
+B11    : Build burgers to ticket
+C11    : Kitchen
+D11    : Line cook
+E11    : —
+A12    : 6
+B12    : Keep inserts restocked
+C12    : Kitchen
+D12    : Line cook
+E12    : —
+A13    : 7
+B13    : Pack takeout and delivery
+C13    : Kitchen
+D13    : Line cook
+E13    : —
+A14    :   CLOSING
+A15    : 8
+B15    : Cover and refrigerate inserts (41 °F or below; FDA 3-501.16)
+C15    : Kitchen
+D15    : Line cook
+E15    : 10:30 PM
+A16    : 9
+B16    : Clean the make line and sanitize it (approved sanitizer, test strip; FDA 4-501.114)
+C16    : Kitchen
+D16    : Line cook
+E16    : 10:30 PM
+A23    : Tasks done:
+D23    = =COUNTIFS(B5:B21,"?*",F5:F21,"✓")   → caché 0.0
+E23    : of
+F23    = =COUNTIF(B5:B21,"?*")-COUNTIF(F5:F21,"N/A")   → caché 9.0
+A25    : Shift manager signature: _________________________    Time: _________
+A27    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F15 F16 F17 F18 F19 F20 F21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Fry Cook» · protegida=True · área='Fry Cook'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Fry Cook
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Turn on the fryer, check the oil
+C6     : Kitchen
+D6     : Fry cook
+E6     : 11:00 AM
+A7     : 2
+B7     : Prep fries and sides
+C7     : Kitchen
+D7     : Fry cook
+E7     : 10:30 AM
+A8     :   SERVICE
+A9     : 3
+B9     : Fry fries in batches
+C9     : Kitchen
+D9     : Fry cook
+E9     : —
+A10    : 4
+B10    : Fry sides: rings, nuggets, jalapenos — chicken to 165 °F at the center, probe-checked (FDA 3-401.11); fry from frozen per the manufacturer
+C10    : Kitchen
+D10    : Fry cook
+E10    : —
+A11    : 5
+B11    : Salt and season on the way out
+C11    : Kitchen
+D11    : Fry cook
+E11    : —
+A12    : 6
+B12    : Serve in a basket or paper cone
+C12    : Kitchen
+D12    : Fry cook
+E12    : —
+A13    :   CLOSING
+A14    : 7
+B14    : Turn off the fryer; clean the outside once the oil is filtered
+C14    : Kitchen
+D14    : Fry cook
+E14    : 10:30 PM
+A15    : 8
+B15    : Filter the oil as the fryer manufacturer says (built-in filtration: with the oil still hot; portable filter: once it has cooled to what the manual allows); heat-resistant gloves, apron and goggles
+C15    : Kitchen
+D15    : Fry cook
+E15    : 10:30 PM
+A22    : Tasks done:
+D22    = =COUNTIFS(B5:B20,"?*",F5:F20,"✓")   → caché 0.0
+E22    : of
+F22    = =COUNTIF(B5:B20,"?*")-COUNTIF(F5:F20,"N/A")   → caché 8.0
+A24    : Shift manager signature: _________________________    Time: _________
+A26    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F9 F10 F11 F12 F14 F15 F16 F17 F18 F19 F20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shift Manager» · protegida=True · área='Shift Manager'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Shift Manager
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Open the restaurant, disarm the alarm
+C6     : General
+D6     : Shift manager
+E6     : 10:00 AM
+A7     : 2
+B7     : Check equipment
+C7     : General
+D7     : Shift manager
+E7     : 10:00 AM
+A8     : 3
+B8     : Team pre-shift meeting
+C8     : General
+D8     : Shift manager
+E8     : 10:15 AM
+A9     : 4
+B9     : Turn on the delivery tablets (DoorDash, Uber Eats, Grubhub)
+C9     : FOH
+D9     : Shift manager
+E9     : 11:30 AM
+A10    : 5
+B10    : Set up the register
+C10    : FOH
+D10    : Shift manager
+E10    : 11:00 AM
+A11    :   SERVICE
+A12    : 6
+B12    : Monitor ticket times and quality
+C12    : General
+D12    : Shift manager
+E12    : —
+A13    : 7
+B13    : Manage delivery
+C13    : Office
+D13    : Shift manager
+E13    : —
+A14    : 8
+B14    : Resolve issues
+C14    : General
+D14    : Shift manager
+E14    : —
+A15    :   CLOSING
+A16    : 9
+B16    : Supervise the close
+C16    : General
+D16    : Shift manager
+E16    : 10:30 PM
+A17    : 10
+B17    : Balance the register
+C17    : Office
+D17    : Shift manager
+E17    : 10:45 PM
+A18    : 11
+B18    : Tomorrow's orders
+C18    : Office
+D18    : Shift manager
+E18    : 10:30 PM
+A19    : 12
+B19    : Close the restaurant
+C19    : General
+D19    : Shift manager
+E19    : 11:00 PM
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Shift manager signature: _________________________    Time: _________
+A30    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Server» · protegida=True · área='Server'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Server
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Set tables
+C6     : FOH
+D6     : Server
+E6     : 11:00 AM
+A7     : 2
+B7     : Restock condiments: ketchup, mustard, Tabasco, salt
+C7     : FOH
+D7     : Server
+E7     : 11:00 AM
+A8     : 3
+B8     : Check the menu and today's promos
+C8     : FOH
+D8     : Server
+E8     : 11:00 AM
+A9     :   SERVICE
+A10    : 4
+B10    : Greet and seat guests
+C10    : FOH
+D10    : Server
+E10    : —
+A11    : 5
+B11    : Take orders (doneness, allergens): the 9 major US allergens — buns usually carry wheat, milk, egg, soy and sesame, cheese has milk, sauces egg; mustard isn't one of the 9 (UK: 14 allergens). Less done only with the menu's consumer advisory, never kids' burgers
+C11    : FOH
+D11    : Server
+E11    : —
+A12    : 6
+B12    : Serve burgers and sides
+C12    : FOH
+D12    : Server
+E12    : —
+A13    : 7
+B13    : Suggest combos and extras
+C13    : FOH
+D13    : Server
+E13    : —
+A14    : 8
+B14    : Reset tables quickly between guests
+C14    : FOH
+D14    : Server
+E14    : —
+A15    : 9
+B15    : Close out the check
+C15    : FOH
+D15    : Server
+E15    : —
+A16    :   CLOSING
+A17    : 10
+B17    : Clear and clean tables, then sanitize (approved sanitizer, test strip; FDA 4-501.114); wiping cloths stay in sanitizer
+C17    : FOH
+D17    : Server
+E17    : 10:30 PM
+A18    : 11
+B18    : Restock condiments for tomorrow
+C18    : FOH
+D18    : Server
+E18    : 10:30 PM
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Shift manager signature: _________________________    Time: _________
+A29    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 05-burger-restaurant-cleaning-checklist-inventory-maintenance.xlsx
+# docProps: title='Burger Restaurant Cleaning Checklist, Inventory & Maintenance Schedule' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$40 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Burger Restaurant Cleaning Checklist, Inventory & Maintenance Schedule
+B4     : Quarterly, annual and freezer shelf life
+B6     : ▸ The "Quarterly & Annual" tab covers the maintenance you CONTRACT out and an inspector may ask to see: pest control, hood and duct cleaning (NFPA 96), extinguishers and their hydrostatic test, hood fire suppression, gas, refrigeration, used-oil pickup, waste, containers and grease trap, Legionella, water, insurance, POS / sales tax and thermometer calibration.
+B7     : ▸ Write the service report number in the green column and initial it once the company has been; the last task on the sheet is to log the date of the next visit.
+B8     : ▸ The monthly tab mixes your team's own checks (hood filters, a look at the extinguisher) with the ones for a technician (griddle thermostat, hood fan motor): they don't replace the contracted services in "Quarterly & Annual", they prepare for them.
+B9     : ▸ At the bottom of "Weekly FIFO Check" there's an editable table of freezer shelf life by food family: one rule for the whole freezer and you either toss good fries or serve rancid bacon.
+B11    : How the counter works
+B13    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B14    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B15    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B17    : Free rows
+B19    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B20    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B22    : Sheet protection
+B24    : ▸ Checklist sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked. The Daily Inventory sheet is left unprotected so you can add products: don't type over the Status column.
+B25    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B27    : Works with
+B29    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B30    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B31    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B32    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B33    : ▸ You are in 05-burger-restaurant-cleaning-checklist-inventory-maintenance.xlsx: what is NOT daily (weekly, monthly, quarterly and annual). The day-to-day is in 08-burger-restaurant-opening-closing-checklist.xlsx and 01-burger-joint-opening-closing-checklists.xlsx.
+B35    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B37    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B38    : Contact: info@aichef.pro
+B40    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Daily Inventory» · protegida=False · área='Daily Inventory'!$A$1:$F$40 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Inventory — Production Stock
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Manager: ________________
+A4     : Product
+B4     : On hand
+C4     : Unit
+D4     : Par
+E4     : Status
+F4     : Order
+A5     :   BEEF
+A6     : 1/3 lb patties
+C6     : ea
+D6     : 40
+E6     = =IF(B6="","",IF(B6<D6,"⚠️ REORDER","OK"))   → caché None
+A7     : Smash beef (3 oz balls)
+C7     : ea
+D7     : 50
+E7     = =IF(B7="","",IF(B7<D7,"⚠️ REORDER","OK"))   → caché None
+A8     : Bacon
+C8     : lb
+D8     : 5
+E8     = =IF(B8="","",IF(B8<D8,"⚠️ REORDER","OK"))   → caché None
+A9     : Breaded / crispy chicken
+C9     : ea
+D9     : 20
+E9     = =IF(B9="","",IF(B9<D9,"⚠️ REORDER","OK"))   → caché None
+A10    :   BUNS
+A11    : Brioche buns
+C11    : ea
+D11    : 40
+E11    = =IF(B11="","",IF(B11<D11,"⚠️ REORDER","OK"))   → caché None
+A12    : Pretzel buns
+C12    : ea
+D12    : 20
+E12    = =IF(B12="","",IF(B12<D12,"⚠️ REORDER","OK"))   → caché None
+A13    : Classic / sesame buns
+C13    : ea
+D13    : 20
+E13    = =IF(B13="","",IF(B13<D13,"⚠️ REORDER","OK"))   → caché None
+A14    :   CHEESES
+A15    : American / cheddar slices
+C15    : ea
+D15    : 50
+E15    = =IF(B15="","",IF(B15<D15,"⚠️ REORDER","OK"))   → caché None
+A16    : Smoked gouda
+C16    : ea
+D16    : 20
+E16    = =IF(B16="","",IF(B16<D16,"⚠️ REORDER","OK"))   → caché None
+A17    : Blue cheese
+C17    : oz
+D17    : 12
+E17    = =IF(B17="","",IF(B17<D17,"⚠️ REORDER","OK"))   → caché None
+A18    : Swiss
+C18    : ea
+D18    : 20
+E18    = =IF(B18="","",IF(B18<D18,"⚠️ REORDER","OK"))   → caché None
+A19    :   TOPPINGS & SAUCES
+A20    : Lettuce
+C20    : ea
+D20    : 5
+E20    = =IF(B20="","",IF(B20<D20,"⚠️ REORDER","OK"))   → caché None
+A21    : Tomato
+C21    : ea
+D21    : 8
+E21    = =IF(B21="","",IF(B21<D21,"⚠️ REORDER","OK"))   → caché None
+A22    : Onion
+C22    : ea
+D22    : 5
+E22    = =IF(B22="","",IF(B22<D22,"⚠️ REORDER","OK"))   → caché None
+A23    : Pickles
+C23    : lb
+D23    : 1
+E23    = =IF(B23="","",IF(B23<D23,"⚠️ REORDER","OK"))   → caché None
+A24    : Jalapenos
+C24    : oz
+D24    : 12
+E24    = =IF(B24="","",IF(B24<D24,"⚠️ REORDER","OK"))   → caché None
+A25    : House burger sauce
+C25    : qt
+D25    : 1
+E25    = =IF(B25="","",IF(B25<D25,"⚠️ REORDER","OK"))   → caché None
+A26    : BBQ sauce
+C26    : pt
+D26    : 1
+E26    = =IF(B26="","",IF(B26<D26,"⚠️ REORDER","OK"))   → caché None
+A27    : Mustard
+C27    : pt
+D27    : 1
+E27    = =IF(B27="","",IF(B27<D27,"⚠️ REORDER","OK"))   → caché None
+A28    : Mayo
+C28    : pt
+D28    : 1
+E28    = =IF(B28="","",IF(B28<D28,"⚠️ REORDER","OK"))   → caché None
+A29    :   FRIES & SIDES
+A30    : Fresh / frozen fries
+C30    : lb
+D30    : 20
+E30    = =IF(B30="","",IF(B30<D30,"⚠️ REORDER","OK"))   → caché None
+A31    : Onion rings
+C31    : lb
+D31    : 5
+E31    = =IF(B31="","",IF(B31<D31,"⚠️ REORDER","OK"))   → caché None
+A32    : Chicken nuggets
+C32    : ea
+D32    : 30
+E32    = =IF(B32="","",IF(B32<D32,"⚠️ REORDER","OK"))   → caché None
+A33    : Coleslaw
+C33    : lb
+D33    : 2
+E33    = =IF(B33="","",IF(B33<D33,"⚠️ REORDER","OK"))   → caché None
+A34    :   PACKAGING
+A35    : Burger boxes
+C35    : ea
+D35    : 40
+E35    = =IF(B35="","",IF(B35<D35,"⚠️ REORDER","OK"))   → caché None
+A36    : Fry containers
+C36    : ea
+D36    : 40
+E36    = =IF(B36="","",IF(B36<D36,"⚠️ REORDER","OK"))   → caché None
+A37    : To-go bags (paper / plastic)
+C37    : ea
+D37    : 30
+E37    = =IF(B37="","",IF(B37<D37,"⚠️ REORDER","OK"))   → caché None
+A38    : Napkins
+C38    : ea
+D38    : 100
+E38    = =IF(B38="","",IF(B38<D38,"⚠️ REORDER","OK"))   → caché None
+A40    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro —
+
+=== Hoja «Weekly Deep Clean» · protegida=True · área='Weekly Deep Clean'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Deep Cleaning Checklist
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN
+A6     : 1
+B6     : Deep-clean the flat-top griddle: grease trough and drawer, splash guards, front and sides (griddle brick or screen + griddle cleaner), then re-season
+C6     : Kitchen
+D6     : Dishwasher / prep
+E6     : Monday
+A7     : 2
+B7     : Clean inside the fryer (remove baskets)
+C7     : Kitchen
+D7     : Dishwasher / prep
+E7     : Monday
+A8     : 3
+B8     : Clean inside the walk-ins
+C8     : Walk-in
+D8     : Dishwasher / prep
+E8     : Monday
+A9     : 4
+B9     : Take down the hood filters and degrease them — the crew cleans the filters; the contractor cleans the ducts ("Quarterly & Annual" tab, NFPA 96)
+C9     : Kitchen
+D9     : Dishwasher / prep
+E9     : Monday
+A10    : 5
+B10    : Clean behind and under equipment
+C10    : Kitchen
+D10    : Dishwasher / prep
+E10    : Monday
+A11    :   FOH & RESTROOMS
+A12    : 6
+B12    : Clean windows
+C12    : FOH
+D12    : Dishwasher / prep
+E12    : Monday
+A13    : 7
+B13    : Mop floors with degreaser
+C13    : General
+D13    : Dishwasher / prep
+E13    : Monday
+A14    : 8
+B14    : Restroom deep clean
+C14    : Restrooms
+D14    : Dishwasher / prep
+E14    : Monday
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Shift manager signature: _________________________    Time: _________
+A25    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Weekly FIFO Check» · protegida=True · área='Weekly FIFO Check'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : FIFO Check — Expiration Dates
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   WALK-INS
+A6     : 1
+B6     : Check beef dates (fresh: 3 days max, never past the supplier's date)
+C6     : Walk-in
+D6     : Line cook
+E6     : Monday
+A7     : 2
+B7     : Check opened cheeses: covered, opening date, not past the manufacturer's date
+C7     : Walk-in
+D7     : Line cook
+E7     : Monday
+A8     : 3
+B8     : Check house sauces (5 days max, kit guideline; FDA allows 7 counting prep day, 3-501.17)
+C8     : Walk-in
+D8     : Line cook
+E8     : Monday
+A9     : 4
+B9     : Rotate: oldest in front
+C9     : Walk-in
+D9     : Line cook
+E9     : Monday
+A10    : 5
+B10    : Toss expired items
+C10    : Walk-in
+D10    : Line cook
+E10    : Monday
+A11    : 6
+B11    : Check no frozen product is past its shelf life (see the table at the bottom of this sheet)
+C11    : Walk-in
+D11    : Line cook
+E11    : Monday
+A12    :   STORAGE
+A13    : 7
+B13    : Check buns: date, freshness
+C13    : Storage
+D13    : Line cook
+E13    : Monday
+A14    : 8
+B14    : Check packaging stock
+C14    : Storage
+D14    : Manager
+E14    : Monday
+A15    : 9
+B15    : Check fryer oil: TPM test (no federal limit; change per tester and fryer manufacturer)
+C15    : Kitchen
+D15    : Manager
+E15    : Monday
+A22    : Tasks done:
+D22    = =COUNTIFS(B5:B20,"?*",F5:F20,"✓")   → caché 0.0
+E22    : of
+F22    = =COUNTIF(B5:B20,"?*")-COUNTIF(F5:F20,"N/A")   → caché 9.0
+A24    : Shift manager signature: _________________________    Time: _________
+A26    : APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier
+B27    : Food group
+C27    : Freezer time
+D27    : Notes
+B28    : Patties and raw ground beef
+C28    : 3–4 months
+D28    : Freeze already portioned and separated with paper: ground beef has lots of exposed surface and goes rancid sooner than a whole cut
+B29    : Bacon
+C29    : 1–2 months
+D29    : Fat goes rancid even frozen: it's the first thing to taste old
+B30    : Raw chicken (crispy, tenders, nuggets)
+C30    : 3–6 months
+D30    : Freezer straight to the fryer, as the manufacturer says; chicken to 165 °F at the center (FDA 3-401.11)
+B31    : Burger buns (brioche, pretzel, sesame)
+C31    : 2–3 months
+D31    : Freeze the day they arrive, not when they're already going stale; thaw at room temp inside their bag
+B32    : Frozen par-fried fries
+C32    : 6–12 months
+D32    : NEVER thaw: straight from the freezer into the oil or they go soft and spatter
+B33    : Onion rings and battered items
+C33    : 6 months
+D33    : Same as fries: straight into the oil
+B34    : Sliced cheese
+C34    : 2–3 months
+D34    : Gets crumbly when thawed but melts the same: use only for melting, not cold
+B35    : House sauces and stocks
+C35    : 3 months
+D35    : Label with BOTH the production date AND the freeze date: the shelf life in this table counts from the freeze date
+B36    : Blanched vegetables (onion, pepper)
+C36    : 8–12 months
+D36    : Unblanched, half that
+A38    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F19 F20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Monthly Maintenance» · protegida=True · área='Monthly Maintenance'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Maintenance
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   EQUIPMENT
+A6     : 1
+B6     : Griddle check: surface, thermostat
+C6     : Kitchen
+D6     : Technician
+E6     : Monthly
+A7     : 2
+B7     : Fryer boil-out: drain, clean with fryer cleaner and refill with fresh oil, per the manufacturer (the oil itself is changed whenever the TPM tester says, not once a month)
+C7     : Kitchen
+D7     : Manager
+E7     : Monthly
+A8     : 3
+B8     : Dish machine: filters and chemical levels (water softener salt only if you have a softener)
+C8     : Kitchen
+D8     : Manager
+E8     : Monthly
+A9     : 4
+B9     : Exhaust hood: check the fan motor and the filters (replace only bent or damaged ones); the contractor cleans the DUCTS (see "Quarterly & Annual")
+C9     : Kitchen
+D9     : Technician
+E9     : Monthly
+A10    : 5
+B10    : HVAC: filters
+C10    : General
+D10    : Technician
+E10    : Monthly
+A11    :   SAFETY
+A12    : 6
+B12    : Extinguisher: monthly visual check (gauge in the green, pin and seal intact, access clear, tag signed); the official service is by the maintainer, see "Quarterly & Annual"
+C12    : General
+D12    : Manager
+E12    : Monthly
+A13    : 7
+B13    : First-aid kit: stock, expiration dates
+C13    : General
+D13    : Manager
+E13    : Monthly
+A14    : 8
+B14    : Emergency exits clear; exit signs lit
+C14    : General
+D14    : Manager
+E14    : Monthly
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Shift manager signature: _________________________    Time: _________
+A25    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=True · área='Quarterly & Annual'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Report #
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   CONTRACTED — LICENSED COMPANY
+A6     : 1
+B6     : Pest control by a licensed operator: service visit and signed service report on file
+D6     : Pest control co.
+E6     : Monthly
+A7     : 2
+B7     : Hood and duct cleaning by a certified contractor (NFPA 96): quarterly if high volume or charbroil, semiannual if moderate — the griddle and the fryers together grease up the duct fast
+D7     : Hood cleaning co.
+E7     : Quarterly
+A8     : 3
+B8     : Hood fire suppression inspected every 6 months (NFPA 96) and annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157)
+D8     : Fire safety co.
+E8     : Semiannual
+A9     : 4
+B9     : Extinguisher hydrostatic test by the fire protection company: Class K (wet chemical) and CO2 units every 5 years, dry chemical as its label says (OSHA 1910.157(f); NFPA 10)
+D9     : Fire safety co.
+E9     : Every 5 years
+A10    : 5
+B10    : Gas lines and appliance connections (griddle, fryers, range) checked by a licensed pro, as often as your local code requires
+D10    : Licensed plumber
+E10    : Annual
+A11    : 6
+B11    : Refrigeration service by an EPA 608-certified tech: walk-in, reach-ins and the make line — coils, gaskets and refrigerant leak check
+D11    : Refrigeration tech
+E11    : Annual
+A12    :   WATER, WASTE & USED OIL
+A13    : 7
+B13    : Used fryer oil: pickups by a licensed recycler as often as your volume needs; every quarter, check the receipts are on file and the outdoor container is closed and not leaking (with fryers running all day, it is one of the biggest waste streams in a burger joint)
+D13    : Oil recycler
+E13    : Quarterly
+A14    : 8
+B14    : Review the waste and recycling hauler contract and local recycling rules (takeout and delivery multiply the cardboard and packaging), and keep the grease trap pumping manifests, as often as your local FOG rules require
+D14    : Manager
+E14    : Quarterly
+A15    : 9
+B15    : Legionella: if you have a cooling tower or at-risk hot water, keep a water management program as your local health code requires
+D15    : Water treatment co.
+E15    : Annual
+A16    : 10
+B16    : Water quality: on city water, read your utility's annual Consumer Confidence Report; on a private well or tank, test it as your health department requires; service any filter or softener per its maker
+D16    : Water lab
+E16    : Annual
+A17    :   ADMIN & EQUIPMENT
+A18    : 11
+B18    : Review insurance (general liability, property, workers' comp; liquor liability if you serve alcohol) and renewal dates
+D18    : Manager
+E18    : Annual
+A19    : 12
+B19    : POS check: software updates, sales tax rates and settings, user permissions — plus the online ordering and delivery app integrations
+D19    : Manager
+E19    : Annual
+A20    : 13
+B20    : Once a year, have the griddle thermostats and any built-in probes checked against a known standard; the probe thermometers get a daily ice-point check (32 °F) at the grill station — the core temp of ground beef depends on them
+D20    : Technician
+E20    : Annual
+A21    : 14
+B21    : Log the next service date for each contract and file the signed report
+D21    : Manager
+E21    : Quarterly
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 06-burger-joint-event-checklists.xlsx
+# docProps: title='Burger Joint Event Checklists: Game Night, Burger Week, Holidays & Patio' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Burger Joint Event Checklists: Game Night, Burger Week, Holidays & Patio
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B23    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 06-burger-joint-event-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-burger-restaurant-opening-closing-checklist.xlsx and 01-burger-joint-opening-closing-checklists.xlsx.
+B28    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Game Night» · protegida=True · área='Game Night'!$A$1:$G$27 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Game Night / Super Bowl — Peak Sales
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREP
+A6     : 1
+B6     : Prep 50% more beef than usual
+C6     : Kitchen
+D6     : Grill cook
+E6     : Day before
+A7     : 2
+B7     : Extra order: buns, cheese, fries
+C7     : Office
+D7     : Manager
+E7     : 2 days out
+A8     : 3
+B8     : Double the delivery packaging stock
+C8     : Storage
+D8     : Manager
+E8     : Day before
+A9     : 4
+B9     : Add staff
+C9     : Office
+D9     : Manager
+E9     : 3 days out
+A10    : 5
+B10    : Post a game-day combo on social media
+C10    : Office
+D10    : Manager
+E10    : 2 days out
+A11    :   THE DAY
+A12    : 6
+B12    : Prep extra patties
+C12    : Kitchen
+D12    : Grill cook
+E12    : Morning
+A13    : 7
+B13    : Double toppings and sauces
+C13    : Kitchen
+D13    : Line cook
+E13    : 2:00 PM
+A14    : 8
+B14    : Clean fryer oil for the rush
+C14    : Kitchen
+D14    : Fry cook
+E14    : 2:00 PM
+A15    : 9
+B15    : Pre-assembled boxes
+C15    : Storage
+D15    : Dishwasher / prep
+E15    : 5:00 PM
+A16    : 10
+B16    : Manage the line without losing quality
+C16    : Kitchen
+D16    : Manager
+E16    : —
+A23    : Tasks done:
+D23    = =COUNTIFS(B5:B21,"?*",F5:F21,"✓")   → caché 0.0
+E23    : of
+F23    = =COUNTIF(B5:B21,"?*")-COUNTIF(F5:F21,"N/A")   → caché 10.0
+A25    : Shift manager signature: _________________________    Time: _________
+A27    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Burger Week» · protegida=True · área='Burger Week'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Burger Week / Limited-Edition Burgers
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREP
+A6     : 1
+B6     : Design 3–5 specialty burgers (limited edition)
+C6     : Office
+D6     : Manager
+E6     : 2 weeks out
+A7     : 2
+B7     : Order premium ingredients (wagyu, truffle, foie gras where legal)
+C7     : Office
+D7     : Manager
+E7     : 1 week out
+A8     : 3
+B8     : Create graphics: menu, social media, apps
+C8     : Office
+D8     : Manager
+E8     : 1 week out
+A9     : 4
+B9     : Train the team on the new recipes
+C9     : Kitchen
+D9     : Manager
+E9     : 3 days out
+A10    :   DURING
+A11    : 5
+B11    : Check special-item stock every morning
+C11    : Kitchen
+D11    : Manager
+E11    : Daily
+A12    : 6
+B12    : Count sales per specialty burger
+C12    : Office
+D12    : Manager
+E12    : Daily
+A13    : 7
+B13    : Post daily content on social media
+C13    : Office
+D13    : Manager
+E13    : Daily
+A14    : 8
+B14    : Reorder if anything runs out
+C14    : Office
+D14    : Manager
+E14    : Daily
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Shift manager signature: _________________________    Time: _________
+A25    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Holiday Season» · protegida=True · área='Holiday Season'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Christmas & New Year's
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   WHEN THE BOOKING IS CONFIRMED
+A6     : 1
+B6     : Collect guests' allergens, intolerances and diets IN WRITING and pass them to the kitchen: the 9 major US allergens (UK: 14) — buns (wheat, sesame, milk, egg, soy), cheese (milk), sauces (egg) and battered items are in almost the whole menu; mustard isn't one of the 9 (UK: yes) and lactose is an intolerance, not an allergen, but log it too
+C6     : Office
+D6     : Manager
+E6     : At booking
+A7     : 2
+B7     : Confirm which alternatives you can really serve: gluten-free bun, veggie burger, no cheese — and how cross-contact is avoided on the griddle, make line and shared fryer oil (battered items)
+C7     : Kitchen
+D7     : Manager
+E7     : At booking
+A8     : 3
+B8     : Agree in writing on the price per guest and what it includes (burger, sides, drink and dessert)
+C8     : Office
+D8     : Manager
+E8     : At booking
+A9     : 4
+B9     : Collect the deposit and record the amount and date
+C9     : Office
+D9     : Manager
+E9     : At booking
+A10    : 5
+B10    : Sign the cancellation policy and the deadline for the final guest count
+C10    : Office
+D10    : Manager
+E10    : At booking
+A11    : 6
+B11    : Agree on arrival and departure times and set aside enough beef and buns for the group the day before
+C11    : FOH
+D11    : Manager
+E11    : At booking
+A12    :   PREP
+A13    : 7
+B13    : Holiday burger: festive ingredients
+C13    : Office
+D13    : Manager
+E13    : 2 weeks out
+A14    : 8
+B14    : Extra stock for the days your suppliers don't deliver (especially Christmas Day and New Year's Day)
+C14    : Office
+D14    : Manager
+E14    : 10 days out
+A15    : 9
+B15    : Special hours
+C15    : Office
+D15    : Manager
+E15    : 10 days out
+A16    : 10
+B16    : Decorate the restaurant
+C16    : FOH
+D16    : Server
+E16    : Dec 1
+A17    :   SERVICE
+A18    : 11
+B18    : Holiday special burger available
+C18    : Kitchen
+D18    : Grill cook
+E18    : —
+A19    : 12
+B19    : Holiday combo: burger + sides + drink
+C19    : FOH
+D19    : Server
+E19    : —
+A20    : 13
+B20    : Social media photos
+C20    : General
+D20    : Manager
+E20    : —
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Patio Season» · protegida=True · área='Patio Season'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Patio Season Start / End
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Bring out the furniture
+C6     : Patio
+D6     : Dishwasher / prep
+E6     : Spring
+A7     : 2
+B7     : Wipe down tables and chairs
+C7     : Patio
+D7     : Dishwasher / prep
+E7     : Spring
+A8     : 3
+B8     : Check condition
+C8     : Patio
+D8     : Manager
+E8     : Spring
+A9     : 4
+B9     : Umbrellas and decor
+C9     : Patio
+D9     : Server
+E9     : Spring
+A10    : 5
+B10    : Outdoor dining / sidewalk cafe permit current (renew if it expires this season)
+C10    : Office
+D10    : Manager
+E10    : Spring
+A11    :   CLOSING
+A12    : 6
+B12    : Bring in and clean the furniture
+C12    : Patio
+D12    : Dishwasher / prep
+E12    : Fall
+A13    : 7
+B13    : Store the umbrellas
+C13    : Storage
+D13    : Dishwasher / prep
+E13    : Fall
+A14    : 8
+B14    : Breakage inventory
+C14    : Office
+D14    : Manager
+E14    : Fall
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Shift manager signature: _________________________    Time: _________
+A25    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 07-blank-burger-shop-checklist-template.xlsx
+# docProps: title='Blank Burger Shop Checklist Template (Editable)' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$52 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Blank Burger Shop Checklist Template (Editable)
+B4     : What it solves
+B6     : ▸ Three master templates already structured —by time of day, by area and by role— with the sections in place and the zone or assignee preloaded: you only type your tasks.
+B7     : ▸ Type in the GREEN cells of the "Task" column, under the matching section. The counter starts at 0 and goes up as you type: it counts what is there, not a fixed number.
+B9     : How to use this template
+B11    : ▸ Copy the structure of the pre-filled templates
+B12    : ▸ Customize: add tasks, change assignees, adjust times
+B13    : ▸ You can duplicate tabs (right-click → "Move or Copy")
+B15    : Customization tips
+B17    : ▸ Group tasks by time of day (opening, service, closing)
+B18    : ▸ Always assign an owner — tasks without an owner don't get done
+B19    : ▸ Set a realistic due-by time — specific beats generic
+B20    : ▸ Review and update the lists with your team every month
+B21    : ▸ Print on US Letter and leave room for the shift manager's signature
+B23    : How the counter works
+B25    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B26    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B27    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B29    : Free rows
+B31    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B32    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B34    : Sheet protection
+B36    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B37    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B39    : Works with
+B41    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B42    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B43    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B44    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B45    : ▸ You are in 07-blank-burger-shop-checklist-template.xlsx: this is where you build YOUR lists when none of the others fit. Copy the structure of the one closest to what you need.
+B47    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B49    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B50    : Contact: info@aichef.pro
+B52    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «By Time of Day» · protegida=True · área='By Time of Day'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Time of Day
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING — type your opening tasks below
+A6     : 1
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+A8     : 3
+A9     : 4
+A10    : 5
+A12    :   SERVICE — type your service tasks below
+A13    : 6
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+A15    : 8
+A16    : 9
+A17    : 10
+A19    :   CLOSING — type your closing tasks below
+A20    : 11
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+A22    : 13
+A23    : 14
+A24    : 15
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Area» · protegida=True · área='By Area'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Work Area
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+C6     : Kitchen
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+C7     : Kitchen
+A8     : 3
+C8     : Kitchen
+A9     : 4
+C9     : Kitchen
+A10    : 5
+C10    : Kitchen
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+C13    : FOH
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+C14    : FOH
+A15    : 8
+C15    : FOH
+A16    : 9
+C16    : FOH
+A17    : 10
+C17    : FOH
+A19    :   COUNTER / BAR — type your counter or bar tasks below
+A20    : 11
+C20    : Counter / bar
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+C21    : Counter / bar
+A22    : 13
+C22    : Counter / bar
+A23    : 14
+C23    : Counter / bar
+A24    : 15
+C24    : Counter / bar
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Role» · protegida=True · área='By Role'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Role
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+D6     : Kitchen manager
+E6     : (Time)
+A7     : 2
+D7     : Kitchen manager
+A8     : 3
+D8     : Kitchen manager
+A9     : 4
+D9     : Kitchen manager
+A10    : 5
+D10    : Kitchen manager
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+D13    : FOH manager
+E13    : (Time)
+A14    : 7
+D14    : FOH manager
+A15    : 8
+D15    : FOH manager
+A16    : 9
+D16    : FOH manager
+A17    : 10
+D17    : FOH manager
+A19    :   MANAGEMENT — type your management tasks below
+A20    : 11
+D20    : GM
+E20    : (Time)
+A21    : 12
+D21    : GM
+A22    : 13
+D22    : GM
+A23    : 14
+D23    : GM
+A24    : 15
+D24    : GM
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 08-burger-restaurant-opening-closing-checklist.xlsx
+# docProps: title='Burger Restaurant Opening & Closing Checklist (Whole Building)' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$47 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Burger Restaurant Opening & Closing Checklist (Whole Building)
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day.
+B7     : ▸ The detail by area (kitchen, FOH) is in 01-burger-joint-opening-closing-checklists.xlsx: don't repeat the work, each file covers a different level.
+B9     : How to use
+B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.
+B12    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B14    : Editable cells
+B16    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B18    : How the counter works
+B20    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B21    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B22    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B24    : Free rows
+B26    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B27    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B29    : Sheet protection
+B31    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B32    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B34    : Works with
+B36    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B37    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B38    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B39    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B40    : ▸ You are in 08-burger-restaurant-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-burger-joint-opening-closing-checklists.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.
+B42    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B44    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B45    : Contact: info@aichef.pro
+B47    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Restaurant Opening» · protegida=True · área='Restaurant Opening'!$A$1:$H$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Restaurant Opening Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm
+C5     : Entrance
+D5     : Shift manager
+E5     : 10:00 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Shift manager
+E6     : 10:00 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Shift manager
+E7     : 10:00 AM
+A8     : 4
+B8     : Raise the security gate and open the front door; exits clear and exit signs lit
+C8     : Entrance
+D8     : Shift manager
+E8     : 10:00 AM
+A9     : 5
+B9     : Set up outdoor signage / menu board
+C9     : Outside
+D9     : Shift manager
+E9     : 10:00 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Shift manager
+E10    : 10:00 AM
+A11    : 7
+B11    : Turn on the reservation system / order tablet
+C11    : Front counter
+D11    : Shift manager
+E11    : 10:15 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Shift manager
+E12    : 10:15 AM
+A13    : 9
+B13    : Review today's reservations and special events
+C13    : Front counter
+D13    : Shift manager
+E13    : 10:15 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Shift manager
+E14    : 10:15 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Shift manager
+E15    : 10:15 AM
+A16    : 12
+B16    : Check furniture condition (chairs, tables, lighting)
+C16    : FOH
+D16    : Shift manager
+E16    : 10:15 AM
+A17    : 13
+B17    : Set up the patio if applicable (tables, chairs, umbrellas/heaters)
+C17    : Patio
+D17    : Shift manager
+E17    : 10:30 AM
+A18    : 14
+B18    : Check that menus are in order
+C18    : FOH
+D18    : Shift manager
+E18    : 10:30 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Shift manager
+E19    : 10:30 AM
+A20    : 16
+B20    : Turn on griddles and fryers (hood already on, per the "Kitchen Opening" tab) and preheat per the manufacturer (about 20 min)
+C20    : Kitchen
+D20    : Shift manager
+E20    : 11:00 AM
+A21    : 17
+B21    : Set up the toppings line
+C21    : Kitchen
+D21    : Shift manager
+E21    : 11:00 AM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 17.0
+A29    : Manager signature: _________________________     Completion time: ________
+A30    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Restaurant Closing» · protegida=True · área='Restaurant Closing'!$A$1:$H$27 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Restaurant Closing Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Turn off background music
+C5     : General
+D5     : Shift manager
+E5     : Close
+A6     : 2
+B6     : Make sure no guests remain inside
+C6     : FOH
+D6     : Shift manager
+E6     : Close
+A7     : 3
+B7     : Clean and bring in the patio if used
+C7     : Patio
+D7     : Shift manager
+E7     : Close
+A8     : 4
+B8     : Griddles and fryers: clean the griddles and filter or change the fryer oil as the fryer maker says, before the hood goes off
+C8     : Kitchen
+D8     : Closing line cook
+E8     : Close
+A9     : 5
+B9     : Turn off the POS / card terminal (or leave on standby)
+C9     : Register
+D9     : Shift manager
+E9     : Close
+A10    : 6
+B10    : Bring in the outdoor signage
+C10    : Outside
+D10    : Shift manager
+E10    : Close
+A11    : 7
+B11    : Empty trash cans in common areas and restrooms
+C11    : Restrooms
+D11    : Shift manager
+E11    : Close
+A12    : 8
+B12    : Final safety check (gas, water, outlets; griddles and fryers off)
+C12    : General
+D12    : Shift manager
+E12    : Close
+A13    : 9
+B13    : Check that windows are closed
+C13    : General
+D13    : Shift manager
+E13    : Close
+A14    : 10
+B14    : Turn off HVAC
+C14    : General
+D14    : Shift manager
+E14    : Close
+A15    : 11
+B15    : Turn off lights (leave security lighting)
+C15    : General
+D15    : Shift manager
+E15    : Close
+A16    : 12
+B16    : Set the alarm
+C16    : Entrance
+D16    : Last one out
+E16    : Close
+A17    : 13
+B17    : Close security gate and doors
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A18    : 14
+B18    : Lock up and verify it is locked
+C18    : Entrance
+D18    : Last one out
+E18    : Close
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 14.0
+A26    : Manager signature: _________________________     Completion time: ________
+A27    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$57 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B47    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B48    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B49    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B50    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-burger-restaurant-opening-closing-checklist.xlsx and the detail by zone in 01-burger-joint-opening-closing-checklists.xlsx.
+B52    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B54    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B55    : Contact: info@aichef.pro
+B57    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / shift manager
+D5     : 10:15 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / shift manager
+D6     : 10:15 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / shift manager
+D7     : 10:15 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / shift manager
+D8     : 10:15 AM
+A9     : 5
+B9     : Check that the POS is on and open the register shift
+C9     : Cashier / shift manager
+D9     : 10:30 AM
+A10    : 6
+B10    : Print the opening X report (start-of-day report)
+C10    : Cashier / shift manager
+D10    : 10:30 AM
+A11    : 7
+B11    : Check the receipt paper roll
+C11    : Cashier / shift manager
+D11    : 10:30 AM
+A12    : 8
+B12    : Check the card terminal works
+C12    : Cashier / shift manager
+D12    : 10:30 AM
+A13    : 9
+B13    : Check the payment gateway connection
+C13    : Cashier / shift manager
+D13    : 10:45 AM
+A14    : 10
+B14    : Note issues from the previous shift
+C14    : Cashier / shift manager
+D14    : 10:45 AM
+A15    : 11
+B15    : Opening manager sign-off
+C15    : Cashier / shift manager
+D15    : 10:45 AM
+A22    : Tasks done:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Starting bank (opening float)
+C23    : 0
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
+A25    : Manager signature: _________________________     Time: ________
+A26    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / shift manager
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / shift manager
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / shift manager
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / shift manager
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / shift manager
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / shift manager
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / shift manager
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / shift manager
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / shift manager
+D13    : Close
+A14    : 10
+B14    : Set aside tomorrow's starting bank
+C14    : Cashier / shift manager
+D14    : Close
+A15    : 11
+B15    : Prepare the bank deposit / put it in the safe
+C15    : Cashier / shift manager
+D15    : Close
+A16    : 12
+B16    : Closing manager sign-off
+C16    : Cashier / shift manager
+D16    : Close
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Cash Count by Denomination
+A25    : Denomination
+B25    : Quantity
+C25    : Subtotal
+A26    : BILLS
+A27    : $100
+B27    : 0
+C27    = =B27*100   → caché 0.0
+A28    : $50
+B28    : 0
+C28    = =B28*50   → caché 0.0
+A29    : $20
+B29    : 0
+C29    = =B29*20   → caché 0.0
+A30    : $10
+B30    : 0
+C30    = =B30*10   → caché 0.0
+A31    : $5
+B31    : 0
+C31    = =B31*5   → caché 0.0
+A32    : $2
+B32    : 0
+C32    = =B32*2   → caché 0.0
+A33    : $1
+B33    : 0
+C33    = =B33*1   → caché 0.0
+A34    : COINS
+A35    : $1 coin
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : 50¢
+B36    : 0
+C36    = =B36*0.5   → caché 0.0
+A37    : 25¢
+B37    : 0
+C37    = =B37*0.25   → caché 0.0
+A38    : 10¢
+B38    : 0
+C38    = =B38*0.1   → caché 0.0
+A39    : 5¢
+B39    : 0
+C39    = =B39*0.05   → caché 0.0
+A40    : 1¢
+B40    : 0
+C40    = =B40*0.01   → caché 0.0
+A41    : 25¢ roll
+B41    : 0
+C41    = =B41*10   → caché 0.0
+A42    : 10¢ roll
+B42    : 0
+C42    = =B42*5   → caché 0.0
+A43    : TOTAL CASH
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Closing Summary
+A46    : Item
+C46    : Amount
+A47    : Total cash (count)
+C47    = =C43   → caché 0.0
+A48    : Starting bank (−)
+C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
+A49    : Net cash (counted − starting bank)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Card sales, excl. tips
+C50    : 0
+A51    : Other tenders + card tips paid in cash
+C51    : 0
+A52    : TOTAL COLLECTED
+C52    = =C49+C50+C51   → caché 0.0
+A53    : POS Z report: sales + tax, excl. tips
+C53    : 0
+A54    : OVER / SHORT
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Manager signature: _________________________     Time: ________
+A57    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : General manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-burger-joint-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Burger Joint Pre-Shift Meeting Template (Huddle Notes)' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Burger Joint Pre-Shift Meeting Template (Huddle Notes)
+B4     : How to use this template
+B6     : ▸ The FOH manager or shift manager fills this out before the pre-shift meeting
+B7     : ▸ Share it with the team at the 5-10 minute pre-shift meeting
+B8     : ▸ Print it and post it at the pass for reference during service
+B10    : Works with
+B12    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B13    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-01-burger-joint-pre-shift-meeting-template.xlsx: the pre-shift meeting opens the shift that is then worked with 01-burger-joint-opening-closing-checklists.xlsx.
+B18    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Meeting» · protegida=True · área='Pre-Shift Meeting'!$A$1:$C$37 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B1     : Pre-Shift Meeting
+B2     : Date: ___/___/______    Shift: ☐ Lunch  ☐ Dinner    Shift manager: _________________________
+B4     : RESERVATIONS & OCCUPANCY
+B5     : No. of reservations:
+B6     : Expected covers + takeout / delivery orders:
+B7     : VIP tables / special guests:
+B8     : Parties or events:
+B9     : Estimated occupancy:
+C9     : _____ %
+B11    : SPECIALS & 86s
+B12    : Special 1:
+B13    : Special 2:
+B14    : Dessert special:
+B15    : Items OUT (86):
+B16    : Menu changes:
+B18    : ALLERGENS & SPECIAL NEEDS
+B19    : Reservations with declared allergens:
+B20    : Special diets (vegan, gluten-free...):
+B21    : Restrictions to communicate:
+B23    : SHIFT TEAM
+B24    : Kitchen staff:
+B25    : FOH staff:
+B26    : Counter staff (and bar staff, if any):
+B27    : Anyone out? Coverage:
+B29    : NOTES & INCIDENTS
+B30    : Issues from the previous shift:
+B31    : Shift goals:
+B32    : Manager's message:
+B35    : Shift manager signature: _________________________
+B37    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+####################################################################################################
+# BONUS-02-burger-joint-holiday-calendar.xlsx
+# docProps: title='BONUS: Burger Joint Holiday & Busy Days Calendar (US)' · subject='Burger Joint Checklists Kit Pro · v2.0' · keywords='burger joint checklist, burger restaurant checklist, burger shop opening checklist, burger restaurant closing checklist, burger kitchen cleaning checklist, grill station checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/burger-joint-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Burger Joint Holiday & Busy Days Calendar (US)
+B4     : How to use this template
+B6     : ▸ Check the key restaurant dates month by month
+B7     : ▸ Plan ahead: special menus, decorations, stock
+B8     : ▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), National Burger Day (last Thursday in August), bank holidays and Boxing Day, in the free rows
+B10    : Works with
+B12    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B13    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-02-burger-joint-holiday-calendar.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-burger-restaurant-opening-closing-checklist.xlsx and 01-burger-joint-opening-closing-checklists.xlsx.
+B18    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/burger-joint-checklist-templates · info@aichef.pro
+
+=== Hoja «Holiday Calendar» · protegida=True · área='Holiday Calendar'!$A$1:$D$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Holiday Calendar — Key Dates for Restaurants
+A2     : Year: ______    Add your local dates in the empty rows
+A4     : Month
+B4     : Date / Event
+C4     : Key Tasks
+D4     : Lead time
+A5     : January
+B5     : Jan 1 — New Year's Day
+C5     : Decide whether to open; if closed, announce it on Google Business Profile, your website and the delivery apps 1 week ahead
+D5     : 1 week
+A6     : February
+B6     : Super Bowl Sunday (2nd Sunday in Feb)
+C6     : Super Bowl Sunday: one of the biggest takeout and delivery days of the year — big advance party orders, extra patties and buns, extra boxes and a short menu to push more orders per hour
+D6     : 2 weeks
+A7     : February
+B7     : Feb 14 — Valentine's Day
+C7     : Date-night menu, romantic decorations, extra shifts
+D7     : 2 weeks
+A8     : February–March
+B8     : Mardi Gras (varies)
+C8     : Themed menu, decorations, staff costumes
+D8     : 1 week
+A9     : February–April
+B9     : Lent Fridays + Easter Sunday (varies)
+C9     : Meatless Fridays in Lent: a fish or veggie burger option; Easter Sunday: decide hours
+D9     : 2 weeks
+A10    : March
+B10    : Mar 17 — St. Patrick's Day + March Madness
+C10    : Burger special of the day; March Madness games fill the dining room and lift delivery: extra shifts; beer only with a license and 21+ with ID, no 2-for-1 drink deals (several states ban them)
+D10    : 2 weeks
+A11    : March–April
+B11    : Patio opening
+C11    : Setup, permit, patio menu
+D11    : 1 month
+A12    : May
+B12    : National Burger Month (May 28: National Hamburger Day)
+C12    : Burger special of the month; May 28 deal on social media and the delivery apps; extra beef and buns
+D12    : 2 weeks
+A13    : May–June
+B13    : Graduation season
+C13    : Set group menu, deposit and price per person, private area; big carryout party orders for graduations
+D13    : 1 month
+A14    : May
+B14    : 2nd Sunday — Mother's Day
+C14    : Special menu, expanded reservations, a small gift for the moms
+D14    : 2 weeks
+A15    : May
+B15    : Memorial Day (last Monday)
+C15    : Add staff, summer stock, patio at full capacity
+D15    : 1 month
+A16    : June
+B16    : 3rd Sunday — Father's Day
+C16    : Midday family menu, expanded reservations and an XL burger to share
+D16    : 2 weeks
+A17    : July
+B17    : Jul 4 — Independence Day
+C17    : Decide hours (many close or open daytime only), patio at full capacity, big party orders for the holiday
+D17    : 1 week
+A18    : July–August
+B18    : Summer peak season
+C18    : Extra staff, longer hours, summer menu; more shifts and delivery drivers, and the patio at full capacity
+D18    : Ongoing
+A19    : September
+B19    : Labor Day (1st Monday) + football season + Sep 18: National Cheeseburger Day
+C19    : Fall menu, back-to-school lunch specials, game-day combos for football (Thursday, Sunday and Monday night games and college Saturdays) and a cheeseburger deal on the 18th
+D19    : 2 weeks
+A20    : October
+B20    : Oct 31 — Halloween
+C20    : Themed decorations and a special Halloween burger; big delivery night: extra packaging and shifts
+D20    : 1 week
+A21    : November
+B21    : Thanksgiving (4th Thursday) + Black Friday
+C21    : Decide whether to open on Thursday (many close); on Friday, a seasonal burger and a stronger lunch for the shoppers
+D21    : 1 month
+A22    : November
+B22    : Patio closing
+C22    : Store furniture, take inventory, make repairs
+D22    : 1 week
+A23    : Nov–Dec
+B23    : Holiday gift card season
+C23    : Gift card promotion, display by the register, and sales online and in the ordering app
+D23    : 2 weeks
+A24    : December
+B24    : Holiday parties (office orders)
+C24    : Office orders for holiday parties (burgers and sides for groups, with pickup or delivery time), group reservations, extra shifts
+D24    : 1 month
+A25    : December
+B25    : Dec 24–25 — Christmas
+C25    : Decide whether to open on Christmas Day (many close). Menu, decorations, special stock
+D25    : 2 weeks
+A26    : December
+B26    : Dec 31 — New Year's Eve
+C26    : Closing hours and night shifts; if the dining room stays open late, party favors and a midnight toast (alcohol only if your license allows, 21+ with ID; free drinks only where your state allows them)
+D26    : 2 weeks
+A28    : (Your date)
+B28    : (Add here)
+C28    : (Key tasks)
+D28    : (Lead time)
+A29    : (Your date)
+B29    : (Add here)
+C29    : (Key tasks)
+D29    : (Lead time)
+A30    : (Your date)
+B30    : (Add here)
+C30    : (Key tasks)
+D30    : (Lead time)
+A31    : (Your date)
+B31    : (Add here)
+C31    : (Key tasks)
+D31    : (Lead time)
+A32    : (Your date)
+B32    : (Add here)
+C32    : (Key tasks)
+D32    : (Lead time)
+A34    : — Burger Joint Checklists Kit Pro · AI Chef Pro · aichef.pro

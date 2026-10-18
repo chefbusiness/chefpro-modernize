@@ -1,0 +1,157 @@
+{
+ "c0016": {
+  "en": "Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es",
+  "origen": "c0035",
+  "via": "exacta"
+ },
+ "c0038": {
+  "en": "Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)",
+  "origen": "c0049",
+  "via": "exacta"
+ },
+ "c0039": {
+  "en": "No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics",
+  "origen": "c0052",
+  "via": "exacta"
+ },
+ "c0040": {
+  "en": "Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top",
+  "origen": "c0053",
+  "via": "exacta"
+ },
+ "c0042": {
+  "en": "Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)",
+  "origen": "c0055",
+  "via": "exacta"
+ },
+ "c0043": {
+  "en": "Turn on the exhaust hood and ventilate the kitchen BEFORE lighting anything else",
+  "origen": "c0058",
+  "via": "exacta"
+ },
+ "c0074": {
+  "en": "APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier",
+  "origen": "c0583",
+  "via": "exacta"
+ },
+ "c0088": {
+  "en": "Fat goes rancid even when frozen: it spoils first",
+  "origen": "c0589",
+  "via": "exacta"
+ },
+ "c0106": {
+  "en": "Invalid mark",
+  "origen": "c0097",
+  "via": "exacta"
+ },
+ "c0107": {
+  "en": "Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending.",
+  "origen": "c0098",
+  "via": "exacta"
+ },
+ "c0203": {
+  "en": "Quarterly & Annual Maintenance — Contracted Services",
+  "origen": "c0633",
+  "via": "exacta"
+ },
+ "c0463": {
+  "en": "What it solves",
+  "origen": "c0778",
+  "via": "exacta"
+ },
+ "c0466": {
+  "en": "How to use",
+  "origen": "c0812",
+  "via": "exacta"
+ },
+ "c0468": {
+  "en": "▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.",
+  "origen": "c0814",
+  "via": "exacta"
+ },
+ "c0469": {
+  "en": "Editable cells",
+  "origen": "c0815",
+  "via": "exacta"
+ },
+ "c0471": {
+  "en": "How the counter works",
+  "origen": "c0018",
+  "via": "exacta"
+ },
+ "c0472": {
+  "en": "▸ Mark ✓ in the \"✓ Done\" column (dropdown): that is the column that counts completed tasks.",
+  "origen": "c0019",
+  "via": "exacta"
+ },
+ "c0474": {
+  "en": "▸ The denominator counts the tasks written in the \"Task\" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.",
+  "origen": "c0021",
+  "via": "exacta"
+ },
+ "c0475": {
+  "en": "Free rows",
+  "origen": "c0022",
+  "via": "exacta"
+ },
+ "c0476": {
+  "en": "▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.",
+  "origen": "c0023",
+  "via": "exacta"
+ },
+ "c0477": {
+  "en": "▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.",
+  "origen": "c0024",
+  "via": "exacta"
+ },
+ "c0478": {
+  "en": "Sheet protection",
+  "origen": "c0025",
+  "via": "exacta"
+ },
+ "c0479": {
+  "en": "▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.",
+  "origen": "c0026",
+  "via": "exacta"
+ },
+ "c0480": {
+  "en": "▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.",
+  "origen": "c0027",
+  "via": "exacta"
+ },
+ "c0481": {
+  "en": "Works with",
+  "origen": "c0028",
+  "via": "exacta"
+ },
+ "c0487": {
+  "en": "Contact: info@aichef.pro",
+  "origen": "c0036",
+  "via": "exacta"
+ },
+ "c0489": {
+  "en": "Date: ____/____/________",
+  "origen": "c0819",
+  "via": "exacta"
+ },
+ "c0497": {
+  "en": "Turn on the main lights (interior and exterior)",
+  "origen": "c0823",
+  "via": "exacta"
+ },
+ "c0499": {
+  "en": "Turn on HVAC / heat depending on the season",
+  "origen": "c0824",
+  "via": "exacta"
+ },
+ "c0513": {
+  "en": "Check cleanliness of common areas (entrance, hallways)",
+  "origen": "c0836",
+  "via": "exacta"
+ },
+ "c0523": {
+  "en": "Manager signature: _________________________     Completion time: ________",
+  "origen": "c0842",
+  "via": "exacta"
+ }
+}

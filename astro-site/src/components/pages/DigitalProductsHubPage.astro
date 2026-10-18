@@ -61,6 +61,139 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Ghost Kitchen Checklists Kit Pro (18-oct-2026, sexto hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Dark Kitchen», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
+  // «293 pre-filled tasks», «Glovo, Uber Eats, Just Eat», «riders and dispatch» y «sign it off»; la EN trae 331
+  // tareas, 9 + 3 bonus, 12 ficheros, DoorDash, Uber Eats y Grubhub, y los repartidores de las apps). Imagen: la misma
+  // (sin texto en español).
+  {
+    name: 'Ghost Kitchen Checklists Kit Pro',
+    slug: '/kit-tareas-dark-kitchen',
+    description: '9 templates + 3 bonuses (12 files) with 331 ghost kitchen tasks already written: opening and closing, hot and cold stations, packing by brand, delivery apps and driver pickup, manager, duties by role, cleaning schedule, daily inventory and cash drawer count. Print it, delegate it, check it off.',
+    features: [
+      'Multi-brand opening and closing: kitchen and packing',
+      'Brands on and off in DoorDash, Uber Eats and Grubhub',
+      'Packing by brand, tamper-evident seals, hot and cold apart',
+      'Roles: multi-brand cook, packer, app manager, operations manager',
+      'Daily inventory, cleaning schedule and cash drawer count',
+    ],
+    iconName: 'Warehouse',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'dark-kitchen'],
+  },
+  // Burger Joint Checklists Kit Pro (18-oct-2026, quinto hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Burger Joint», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
+  // «302 pre-filled tasks», «assembly line», «meat doneness» sin norma y «sign it off»; la EN trae 346 tareas, 9 + 3
+  // bonus, 12 ficheros, make line, carne picada a 155 °F con sonda y test TPM). Imagen: la misma (sin texto en español).
+  {
+    name: 'Burger Joint Checklists Kit Pro',
+    slug: '/kit-tareas-hamburgueseria',
+    description: '9 templates + 3 bonuses (12 files) with 346 burger joint tasks already written: opening and closing, the grill and smash burgers, make line, fry station, delivery and takeout, manager, duties by role, cleaning schedule, daily inventory and cash drawer count. Print it, delegate it, check it off.',
+    features: [
+      'Opening and closing: kitchen, FOH and takeout',
+      'Griddle, smash burgers and doneness checked to 155 °F',
+      'Fry station: oil temperature, TPM test and filtering',
+      'Roles: grill cook, line cook, fry cook, shift manager, server',
+      'Daily inventory, cleaning schedule and cash drawer count',
+    ],
+    iconName: 'Beef',
+    image: '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'burger'],
+  },
+  // Pizza Shop Checklists Kit Pro (18-oct-2026, cuarto hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Pizzeria», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
+  // «330 tasks + inventory», «assembly line» y «sign it off»; la EN trae 373 tareas, 9 + 3 bonus, 12 ficheros, make
+  // line, horno en °F y delivery driver). Imagen: la misma (sin texto en español).
+  {
+    name: 'Pizza Shop Checklists Kit Pro',
+    slug: '/kit-tareas-pizzeria',
+    description: '9 templates + 3 bonuses (12 files) with 373 pizza shop tasks already written: opening and closing, pizza oven and dough, make line, delivery and takeout, manager, duties by role, cleaning schedule, daily inventory and cash drawer count. Print it, delegate it, check it off.',
+    features: [
+      'Opening and closing: kitchen, FOH and delivery',
+      'Wood-fired or deck oven, dough and the make line',
+      'Delivery: insulated bags, drivers and order checks',
+      'Roles: pizza maker, line cook, shift manager, server, driver',
+      'Daily inventory, cleaning schedule and cash drawer count',
+    ],
+    iconName: 'Pizza',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'pizzeria'],
+  },
+  // Catering Checklists Kit Pro (18-oct-2026, tercer hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Catering / Events», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
+  // (decía «9 pre-filled checklists», «dining room manager» y «cold chain»; la EN trae 347 tareas, 9 + 3 bonus,
+  // 12 ficheros, banquet captain y temperaturas en °F). Imagen: la misma (sin texto en español).
+  {
+    name: 'Catering Checklists Kit Pro',
+    slug: '/kit-tareas-catering',
+    description: '9 templates + 3 bonuses (12 files) with 347 catering and event tasks already written: off-site production, transport, setup and breakdown, event manager, staff by role, weddings, corporate and cocktail receptions, and deposits and payments by event. Print it, delegate it, check it off.',
+    features: [
+      'Off-site production, packing and transport',
+      'Holding temperatures in °F, load-in and setup',
+      'Weddings, corporate, cocktail receptions, outdoor',
+      'Roles: event chef, banquet captain, server, bartender',
+      'Deposits, event settlement and overdue balances',
+    ],
+    iconName: 'Tent',
+    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'catering', 'mobile-catering'],
+  },
+  // Coffee Shop Checklists Kit Pro (18-oct-2026, segundo hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Cafe / Brunch», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
+  // (decía «463 tasks», «terrace» y «sign off»; la EN trae 500 tareas, 9 + 3 bonus, 12 ficheros, patio e iniciales).
+  // Imagen: el hero EN de la landing (el hero ES lleva «TOMA CAFÉ» en las bolsas).
+  {
+    name: 'Coffee Shop Checklists Kit Pro',
+    slug: '/kit-tareas-cafeteria',
+    description: '9 templates + 3 bonuses (12 files) with 500 coffee shop tasks already written: opening & closing checklists, espresso bar, kitchen and pastry case, manager, barista duties by role, inventory, Sunday brunch and a cash drawer count. Print it, delegate it, initial it.',
+    features: [
+      'Opening and closing: espresso bar, kitchen, patio',
+      'Barista tasks: dial in, purge, backflush',
+      'Pastry case control and Sunday brunch',
+      'Daily inventory with reorder alerts',
+      'Cash drawer count and over/short log',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/use-case-coffee-shop-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'cafe'],
+  },
+  // Bar Checklists Kit Pro (18-oct-2026, primer hermano vertical del Restaurant Checklists Kit Pro): el más nuevo → 1;
+  // el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English» («Recurring
+  // Tasks: Bar / Cocktails», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía «9
+  // pre-filled checklists», «terrace» y «sign off»; la EN trae 9 + 3 bonus, 12 ficheros, patio e iniciales).
+  // Imagen: la del hero ES, sin texto.
+  {
+    name: 'Bar Checklists Kit Pro',
+    slug: '/kit-tareas-bar',
+    description: '9 templates + 3 bonuses (12 files) with 342 bar tasks already written: opening & closing checklists, cocktail, draft beer and wine stations, bar manager, bartender duties by role, inventory, events and a cash drawer count. Print it, delegate it, initial it.',
+    features: [
+      'Bar opening and closing: bar station, coffee, patio',
+      'Cocktail, draft beer and wine station checklists',
+      'Head bartender, bartender, barback and server duties',
+      'Weekly inventory, deep clean and maintenance',
+      'Cash drawer count and over/short log',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'bar'],
+  },
   // Restaurant Checklists Kit Pro (17-oct-2026, primer kit EN de la línea Tareas): el más nuevo → 1; How to Open a
   // Pastry Shop y el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
   // («Recurring Tasks: Casual Restaurant», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
@@ -619,70 +752,6 @@ const products = [
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
   },
   {
-    name: 'Recurring Tasks: Cafe / Brunch',
-    slug: '/kit-tareas-cafeteria',
-    description: '463 tasks + inventories with built-in formulas: opening/closing, barista, pastry display case, brunch, terrace. Print it, delegate it, and sign it off.',
-    features: [
-      'Daily bar inventory with alerts',
-      'Barista-specific tasks',
-      'Display case and pastry control',
-      'Sunday brunch and events',
-    ],
-    iconName: 'Coffee',
-    image: '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'cafe'],
-  },
-  {
-    name: 'Recurring Tasks: Pizzeria',
-    slug: '/kit-tareas-pizzeria',
-    description: '330 tasks + inventory: wood-fired/stone oven, Neapolitan dough, assembly line, delivery. Print it, delegate it, and sign it off.',
-    features: [
-      'Oven and temperature control',
-      'Pizza assembly line',
-      'Delivery and packaging management',
-      'Dough: fermentation and stretching',
-    ],
-    iconName: 'Pizza',
-    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'pizzeria'],
-  },
-  {
-    name: 'Recurring Tasks: Burger Joint',
-    slug: '/kit-tareas-hamburgueseria',
-    description: '302 pre-filled tasks: griddle/grill, smash burgers, fryer, assembly line, delivery and packaging. Print it, delegate it, and sign it off.',
-    features: [
-      'Griddle control and meat doneness',
-      'Smash burger and grill technique',
-      'Fryer: polar compounds test, filtering, temperature',
-      'Delivery and burger packaging',
-    ],
-    iconName: 'Beef',
-    image: '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'burger'],
-  },
-  {
-    name: 'Recurring Tasks: Dark Kitchen',
-    slug: '/kit-tareas-dark-kitchen',
-    description: '293 pre-filled opening, closing & cleaning checklist tasks for a ghost kitchen: multi-brand production stations, packaging, platforms (Glovo, Uber Eats, Just Eat), riders and dispatch. Print it, delegate it, and sign it off.',
-    features: [
-      'Multi-brand / ghost kitchen',
-      'Tablet and platform management',
-      'Brand-specific packaging',
-      'Rider and dispatch coordination',
-    ],
-    iconName: 'Warehouse',
-    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'dark-kitchen'],
-  },
-  {
     name: 'Recurring Tasks: Pastry Shop / Bakery',
     slug: '/kit-tareas-pasteleria',
     description: '15 templates for pastry shops and bakeries: 9 checklists + 4 logs + 2 bonuses. Dough production, fermentation, creams, decoration, display case, roles, events. Print it, delegate it, and sign it off.',
@@ -699,38 +768,6 @@ const products = [
     tags: ['excel', 'templates', 'management', 'pastry'],
   },
 
-  {
-    name: 'Recurring Tasks: Bar / Cocktails',
-    slug: '/kit-tareas-bar',
-    description: '9 pre-filled operational checklists for bars and cocktail bars: mixology, bar service, draft beer, wine by the glass, terrace, inventory, and events. Print, delegate, and sign off.',
-    features: [
-      'Classic and contemporary mixology',
-      'Draft beer, wine, and coffee',
-      'Events: New Year\'s Eve, Halloween, tastings',
-      'Roles: head bartender, barback',
-    ],
-    iconName: 'Wine',
-    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'bar'],
-  },
-  {
-    name: 'Recurring Tasks: Catering / Events',
-    slug: '/kit-tareas-catering',
-    description: '9 pre-filled operational checklists for catering companies: off-site production, transport, setup, service, breakdown, and post-event. Weddings, corporate events, cocktail parties.',
-    features: [
-      'Off-site production and packaging',
-      'Transport and cold chain',
-      'Weddings, corporate events, cocktail parties, outdoor',
-      'Roles: event chef, dining room manager, server',
-    ],
-    iconName: 'Tent',
-    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'catering', 'mobile-catering'],
-  },
   {
     name: 'Recurring Tasks: Full Hotel',
     slug: '/kit-tareas-hotel',
