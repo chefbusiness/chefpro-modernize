@@ -32,7 +32,7 @@
 //     retirado SOLO en EN: «Grupo Burger Factory» (Burger Factory es una cadena real de Canadá; ver el comentario en
 //     la lista); «The Burger Lab» (homónimos sueltos, sin cadena conocida en US/UK/CA/AU) y «BurgerExpress» (una
 //     cadena británica de los 80 cerrada en 1993) se quedan. Dos frases que el kit contradice, cambiadas (regla de
-//     John, 11-oct): Sergio Ramos
+//     John, 11-oct): Sergio Ramos (retirado después en EN, 18-oct: homónimo del futbolista)
 //     («guía para cada grosor: rare, medium rare, medium, well done» → cada patty comprobado con sonda, que el kit sí
 //     trae) y Diego Castillo («etiquetado» → el palillo con bandera en las burgers altas, que el kit sí trae).
 //   · Imágenes: las 7 del ES no llevan texto en español (menús y bolsas en inglés) y se quedan; fuera solo la OG ES
@@ -418,12 +418,8 @@ const data: KitTareasData = {
         text: 'The fryer checklist is great. Oil quality testing, daily filtering, temperature control for fries and onion rings. We used to forget to filter and the oil lasted half as long.',
         avatar: '/avatars/avatar-6.jpg',
       },
-      {
-        name: 'Sergio Ramos',
-        role: 'Grill Cook, Grill House BCN',
-        text: 'The doneness part alone is worth the price. Now every patty is checked with a probe thermometer before it goes out. Complaints about doneness dropped to zero.',
-        avatar: '/avatars/avatar-7.jpg',
-      },
+      // «Sergio Ramos, Grill Cook, Grill House BCN» retirado SOLO en EN (18-oct-2026, decisión delegada por John): es el
+      // nombre de un futbolista muy conocido en EE. UU. (Liga MX incluida) y se leería como testimonio falso o aval de famoso.
       {
         name: 'Diego Castillo',
         role: 'Delivery Manager, BurgerExpress',
