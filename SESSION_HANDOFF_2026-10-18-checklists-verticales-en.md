@@ -13,7 +13,15 @@
 - Correos EN en borrador (fechas en `CALENDARIO-V2-SEMANAL.md`, entrada 18-oct): 14-dic, 19-dic → routine `trig_01WXGbQnAuFnc2A9X45imtje`
   (20-nov); 4, 9, 14 y 19-ene → routine `trig_019bxdctG1zV4XcVjbHTzCdu` (20-dic). Siguiente hueco EN: 24-ene.
 - Worktrees y ramas de los 6 kits borrados (Mac y VPS, tras comprobar por hash que nada quedaba solo en el VPS). Queda `wt-ftpost` (#136).
-- Siguen abiertos de §3: OpenRouter 401, «Sergio Ramos» en el Burger Joint, HACCP Kit EN («15 h» sin temperatura), erratas ES, y el #136.
+- **Decisiones delegadas por John («todo lo demás decídelo tú», 18-oct):**
+  - OpenRouter 401 → política: fallback a subagentes sonnet/haiku sin parar (regla 5 de `~/.claude/CLAUDE.md`).
+  - Post food truck **#136 fusionado** (`3ffd0253`) tras mergear `main` en su rama (sin conflictos) y comprobar el preview.
+  - «Sergio Ramos» retirado SOLO en EN (`b9da7186`): homónimo del futbolista. Quedan 8 testimonios.
+  - HACCP Kit EN: **no hace falta tocarlo**. Las plantillas 15 y 18 traen las 3 vías de 3-402.11 y la landing resume dos con su temperatura.
+  - Erratas ES: el fallo FUNCIONAL (mínimos del Inventario Diario guardados como texto → el semáforo pide siempre) **arreglado ya**
+    en cafetería, dark kitchen, hamburguesería y pizzería (`adf52a52`, 126 celdas, gate de censo por fichero; escaneo de los 20 kits ES = 0).
+    Las de orden y redacción (SPEC §5/§6 de cada vertical) quedan para la **v2.1 de esos 6 kits ES**, con un correo conjunto.
+  - Restaurant Checklists: el «»» de la descripción de Stripe solo se quita desde el panel (la key no tiene `product_write`).
 
 ## 0. Estado (noche): 6 productos LISTOS a falta del Payment Link + 1 post en borrador
 
