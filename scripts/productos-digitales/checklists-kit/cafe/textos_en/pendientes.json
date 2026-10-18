@@ -2,20 +2,21 @@
  "meta": {
   "kit": "cafe",
   "producto": "Coffee Shop Checklists Kit Pro",
-  "n_pendientes": 617,
-  "n_palabras": 3787,
+  "n_pendientes": 620,
+  "n_palabras": 3802,
   "motivos": {
    "contexto": 16,
    "nueva": 588,
+   "corregida": 3,
    "adaptar": 13
   },
-  "n_heredadas": 229,
+  "n_heredadas": 226,
   "heredadas_por_via": {
-   "exacta": 226,
+   "exacta": 223,
    "sufijo": 3
   },
   "heredadas_por_fuente": {
-   "base": 225,
+   "base": 222,
    "bar": 4
   },
   "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
@@ -273,6 +274,7 @@
    "donde": [
     "01 · Apertura Cocina · B24"
    ],
+   "adaptar": "Ronda 1 M4: hollandaise con huevo pasteurizado; a 135 °F o más, o con la hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "motivo": "nueva"
   },
   {
@@ -373,6 +375,7 @@
    "donde": [
     "01 · Apertura Cocina · B35"
    ],
+   "adaptar": "Ronda 1 M2: sanitizante aprobado a la concentración de la etiqueta, medida con tira",
    "motivo": "nueva"
   },
   {
@@ -932,6 +935,7 @@
    "pistas": [
     "café filtro → drip / batch brew; termo → airpot"
    ],
+   "adaptar": "Ronda 1 M3: + si sirves cold brew, filtrar el lote que terminó el reposo y guardarlo tapado a 41 °F o menos, con date marking (7 días como máximo contando el día de preparación)",
    "motivo": "nueva"
   },
   {
@@ -1118,6 +1122,7 @@
    "donde": [
     "01 · Cierre Cocina · B14"
    ],
+   "adaptar": "Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)",
    "motivo": "nueva"
   },
   {
@@ -1283,6 +1288,20 @@
     "Glosario: sala → front of house (FOH) / dining room"
    ],
    "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Desmontar mesas: recoger manteles, cubiertos, vasos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · B6"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "corregida: ronda 1 m11: placemats/napkins, como la apertura",
+   "base_en": "Break down tables: collect tablecloths, silverware, glasses"
   },
   {
    "id": "c0172",
@@ -1629,6 +1648,7 @@
    "pistas": [
     "café filtro → drip / batch brew; termo → airpot"
    ],
+   "adaptar": "Ronda 1 M3: + si sirves cold brew, arrancar el lote de mañana en un recipiente limpio y tapado, en frío salvo que tu departamento de salud permita el reposo a temperatura ambiente",
    "motivo": "nueva"
   },
   {
@@ -1681,7 +1701,7 @@
     "Glosario: cámara → walk-in cooler / walk-in freezer",
     "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
    ],
-   "adaptar": "Leche abierta (y el cold brew, si lo sirves) a la nevera a 41 °F o menos (FDA Food Code 3-501.16), tapada y con su fecha; manda la fecha de la etiqueta (sin inventar días)",
+   "adaptar": "Leche abierta (y el cold brew, si lo sirves) a la nevera a 41 °F o menos, tapada y con date marking: 7 días como máximo contando el día de apertura, sin pasar del use-by del fabricante (FDA Food Code 3-501.17(B))",
    "motivo": "nueva"
   },
   {
@@ -1716,6 +1736,18 @@
     "01 · Cierre Barra Café · A23"
    ],
    "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Limpiar y desinfectar superficie de barra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra Café · B24"
+   ],
+   "adaptar": "Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)",
+   "motivo": "corregida: ronda 1 M2: + tira de sanitizante",
+   "base_en": "Clean and sanitize the bar top"
   },
   {
    "id": "c0212",
@@ -1879,6 +1911,7 @@
    "donde": [
     "02 · Calientes · B16"
    ],
+   "adaptar": "Ronda 1 M4: la yema líquida pide el aviso al consumidor en la carta salvo huevo pasteurizado (FDA Food Code 3-603.11)",
    "motivo": "nueva"
   },
   {
@@ -3465,6 +3498,7 @@
    "pistas": [
     "café filtro → drip / batch brew; termo → airpot"
    ],
+   "adaptar": "Ronda 1 M3: + filtrar el cold brew, si lo sirves",
    "motivo": "nueva"
   },
   {
@@ -5390,7 +5424,7 @@
    "pistas": [
     "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
    ],
-   "adaptar": "Leche abierta: manda la fecha de la etiqueta del fabricante y la que anotaste al abrirla; a 41 °F o menos",
+   "adaptar": "Leche abierta: fuera a los 7 días contando el de apertura o en el use-by de la etiqueta, lo que llegue antes (FDA Food Code 3-501.17(B)); a 41 °F o menos",
    "motivo": "nueva"
   },
   {
@@ -6882,6 +6916,20 @@
     "Espresso US: máquina de espresso → espresso machine; grupo → group head; portafiltro → portafilter"
    ],
    "motivo": "nueva"
+  },
+  {
+   "id": "c0985",
+   "es": "Responsable general: _________________________",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "09 · Registro Mensual · F2"
+   ],
+   "pistas": [
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "motivo": "corregida: ronda 1 M5: «General manager» → «Manager»",
+   "base_en": "General manager: _________________________"
   },
   {
    "id": "c0999",

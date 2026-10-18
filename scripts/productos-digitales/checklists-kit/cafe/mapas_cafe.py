@@ -47,6 +47,18 @@ MEMORIA = [
 RX_CONTEXTO_PENDIENTE = (r'(?i)\b(?:restaurants?(?! consultant)|dining room|host stand|head chef|sous chef|'
                          r'prep cooks?|shift managers?|FOH managers?|bartenders?|barbacks?|cocktails?|draft|kegs?|'
                          r'liquor|beer|wine|21\+|venue|speed rail|ice well)\b')
+# heredar.py: cadenas idénticas a una fuente cuyo EN se corrigió en la revisión de la cafetería (→ pendientes → G1.json)
+NO_HEREDAR = {
+    'Limpiar y desinfectar superficie de barra': 'ronda 1 M2: + tira de sanitizante',
+    'Responsable general: _________________________': 'ronda 1 M5: «General manager» → «Manager»',
+    'Desmontar mesas: recoger manteles, cubiertos, vasos': 'ronda 1 m11: placemats/napkins, como la apertura',
+}
+# gates_en.py G2 (ronda 1 M5): términos de restaurante que NINGUNA celda EN de la cafetería puede llevar (la firma de
+# autor, «restaurant consultant», queda fuera por el lookahead). TERMINO_PROHIBIDO_EJEMPLO: lo que inyecta el autotest.
+TERMINOS_PROHIBIDOS = (r'(?i:\b(?:restaurants?(?! consultant)|dining rooms?|host stands?|head chefs?|sous chefs?|'
+                       r'FOH managers?|general managers?|shift managers?|venues?|bartenders?|barbacks?)\b)|'
+                       r'\b(?:GM|MOD)\b')
+TERMINO_PROHIBIDO_EJEMPLO = 'Ask the host stand.'
 REFERENCIAS_TRADUCTOR = ['cafe/SPEC.md', 'SPEC.md §0-§3 y §7.2 (brief)', 'textos_en/glosario.json (glosario de la '
                          'prosa del kit base)', 'cafe/textos_en/heredado.json (cómo se dijo ya cada cosa: base y bar)',
                          'cafe/mapas_cafe.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, REGLAS_US',
@@ -123,6 +135,9 @@ HOJAS_ES_POR_LIBRO = OrderedDict([
 GLOSARIO = OrderedDict(_base.GLOSARIO)
 _GLOSARIO_CAFE = OrderedDict([
     ('Encargado', 'Shift lead'), ('Encargado/a', 'Shift lead'), ('Barista', 'Barista'),
+    # ronda 1 M5: roles y zonas del base que en una coffee shop no existen (07 «By Role», 08, 09)
+    ('Jefe de Cocina', 'Kitchen lead'), ('Jefe de Sala', 'Shift lead'), ('Gerente', 'Manager'),
+    ('Recepción', 'Front counter'), ('Responsable de caja', 'Cashier / shift lead'),
     ('Pastelero/a', 'Baker'), ('Camarero/a', 'Server'), ('Auxiliar', 'Busser / runner'),
     ('Camarero/a apertura', 'Opening server'), ('Camarero/a cierre', 'Closing server'),
     ('Cocinero calientes', 'Hot line cook'), ('Cocinero fríos', 'Cold station cook'),
@@ -241,6 +256,18 @@ POR_CELDA.update([
     (_T + ('B21',), "Review insurance (general liability, property, workers' comp; liquor liability if you serve "
                     'alcohol) and renewal dates'),
     (_T + ('B22',), 'POS check: software updates, sales tax rates and settings, user permissions'),
+    # ronda 1 m1: la apertura del local va a la hora de la primera tarea (la pastelería hornea a las 6:30 AM; errata ES)
+    (('08', 'Apertura del Negocio', 'E5'), '6:30 AM'), (('08', 'Apertura del Negocio', 'E6'), '6:30 AM'),
+    (('08', 'Apertura del Negocio', 'E7'), '6:30 AM'), (('08', 'Apertura del Negocio', 'E8'), '6:30 AM'),
+    (('04', 'Encargado', 'E6'), '6:30 AM'),
+    # ronda 1 m14: el 05 no promete hojas protegidas que no lo están (los inventarios van sin proteger; errata ES)
+    (('05', 'Instrucciones', 'B23'), '▸ Checklist sheets with formulas are protected WITHOUT a password: the input cells '
+                                     '(the green ones) are unlocked. The two inventory sheets are left unprotected so '
+                                     "you can add products: don't type over the Status or Total value columns."),
+    # ronda 1 m15: «15 días antes» bajo «PREPARACIÓN (2 SEMANAS ANTES)»
+    (('06', 'Navidad', 'E6'), '2 weeks out'), (('06', 'Navidad', 'E8'), '2 weeks out'),
+    # ronda 1 m12: el bacon se compra por libras
+    (('05', 'Inventario Diario', 'C34'), 'lb'),
 ])
 for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'A%d' % _fila)] = _mes
@@ -256,7 +283,7 @@ _MINIMOS = [  # fila, ES, EN
     (6, '2', 4), (7, '1', 2), (8, '0.5', 1), (10, '5', 5), (11, '3', 3), (12, '3', 3), (13, '2', 2), (14, '2', 2),
     (15, '1', 1), (17, '0.5', 1), (18, '100', 4), (19, '0.5', 0.5), (20, '0.5', 0.5), (21, '20', 20), (22, '3', 3),
     (24, '10', 10), (25, '8', 8), (26, '6', 6), (27, '12', 12), (28, '10', 10), (29, '8', 8), (31, '30', 30),
-    (32, '6', 6), (33, '300', 10), (34, '500', 18), (35, '250', 8), (36, '250', 8), (37, '2', 4), (38, '0.5', 1),
+    (32, '6', 6), (33, '300', 10), (34, '500', 1), (35, '250', 8), (36, '250', 8), (37, '2', 4), (38, '0.5', 1),
     (40, '50', 50), (41, '30', 30), (42, '80', 80), (43, '30', 30), (44, '100', 100),
 ]
 VALORES_EN = OrderedDict((('05', 'Inventario Diario', 'D%d' % f), (es, en)) for f, es, en in _MINIMOS)
@@ -315,8 +342,22 @@ ADAPTAR.update([
      'grupo, según las instrucciones del fabricante de la máquina'),
     (('01', 'Cierre Barra Café', 'B10'), 'Cajón de borra → knock box (vaciar los posos)'),
     (('01', 'Cierre Barra Café', 'B18'), _DATE_BOLLERIA + '; la bollería seca, con la fecha del día'),
-    (('01', 'Cierre Barra Café', 'B20'), 'Leche abierta (y el cold brew, si lo sirves) a la nevera a 41 °F o menos '
-     '(FDA Food Code 3-501.16), tapada y con su fecha; manda la fecha de la etiqueta (sin inventar días)'),
+    (('01', 'Cierre Barra Café', 'B20'), 'Leche abierta (y el cold brew, si lo sirves) a la nevera a 41 °F o menos, '
+     'tapada y con date marking: 7 días como máximo contando el día de apertura, sin pasar del use-by del fabricante '
+     '(FDA Food Code 3-501.17(B))'),
+    (('01', 'Cierre Barra Café', 'B16'), 'Ronda 1 M3: + si sirves cold brew, arrancar el lote de mañana en un recipiente '
+     'limpio y tapado, en frío salvo que tu departamento de salud permita el reposo a temperatura ambiente'),
+    (('01', 'Cierre Barra Café', 'B24'), 'Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)'),
+    (('01', 'Apertura Barra Café', 'B25'), 'Ronda 1 M3: + si sirves cold brew, filtrar el lote que terminó el reposo y '
+     'guardarlo tapado a 41 °F o menos, con date marking (7 días como máximo contando el día de preparación)'),
+    (('01', 'Apertura Cocina', 'B24'), 'Ronda 1 M4: hollandaise con huevo pasteurizado; a 135 °F o más, o con la hora '
+     'marcada y a la basura a las 4 h (FDA Food Code 3-501.19)'),
+    (('01', 'Apertura Cocina', 'B35'), 'Ronda 1 M2: sanitizante aprobado a la concentración de la etiqueta, medida con '
+     'tira'),
+    (('01', 'Cierre Cocina', 'B14'), 'Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)'),
+    (('02', 'Calientes', 'B16'), 'Ronda 1 M4: la yema líquida pide el aviso al consumidor en la carta salvo huevo '
+     'pasteurizado (FDA Food Code 3-603.11)'),
+    (('04', 'Barista', 'B11'), 'Ronda 1 M3: + filtrar el cold brew, si lo sirves'),
     # 02
     (('02', 'Fríos', 'B6'), _A[('02', 'Fríos', 'B6')]),
     (('02', 'Fríos', 'B17'), _TEMP_FRIO),
@@ -344,8 +385,8 @@ ADAPTAR.update([
     (('05', 'Limpieza Semanal', 'B10'), 'Sanitizar con un sanitizante aprobado a la concentración de la etiqueta, medida '
      'con tiras (test strips) (FDA Food Code 4-501.114); sin «lejía» a ojo'),
     (('05', 'FIFO Semanal', 'B9'), _TEMP_FRIO),
-    (('05', 'FIFO Semanal', 'B11'), 'Leche abierta: manda la fecha de la etiqueta del fabricante y la que anotaste al '
-     'abrirla; a 41 °F o menos'),
+    (('05', 'FIFO Semanal', 'B11'), 'Leche abierta: fuera a los 7 días contando el de apertura o en el use-by de la '
+     'etiqueta, lo que llegue antes (FDA Food Code 3-501.17(B)); a 41 °F o menos'),
     (('05', 'Mantenimiento Mensual', 'B6'), _DESCALE),
     (('05', 'Mantenimiento Mensual', 'B16'), _LAVAVAJILLAS),
     (('05', 'Mantenimiento Mensual', 'B21'), _A[('05', 'Mantenimiento Mensual', 'B21')]),
@@ -381,8 +422,11 @@ CELSIUS_SIN_F = frozenset({('01', 'Cierre Cocina', 'B16')})
 # ==========================================================================
 REGLAS_US = OrderedDict(_base.REGLAS_US)
 REGLAS_US.update([
-    ('leche', ('leche y alternativas vegetales abiertas a 41 °F o menos; manda la fecha de la etiqueta',
-               'FDA Food Code 2022 §3-501.16; [fabricante] etiqueta del envase')),
+    ('leche', ('leche y alternativas abiertas a 41 °F o menos; 7 días desde la apertura (día 1), sin pasar el use-by '
+               'del fabricante', 'FDA Food Code 2022 §3-501.16 y §3-501.17(B)')),
+    ('cold_brew', ('a 41 °F o menos, tapado y con fecha, 7 días; el reposo, donde lo permita el departamento de salud',
+                   'FDA Food Code 2022 §3-501.16 y §3-501.17; [local] departamento de salud')),
+    ('tphc', ('4 h sin control de temperatura con la hora marcada; después, a la basura', 'FDA Food Code 2022 §3-501.19(B)')),
     ('alergenos_leches', ('milk, soy y tree nuts están entre los 9; la avena no', 'FALCPA 2004 + FASTER Act 2021')),
     ('vitrina', ('vitrina refrigerada a 41 °F o menos para lo TCS; date marking 7 días',
                  'FDA Food Code 2022 §3-501.16 y §3-501.17')),
@@ -467,6 +511,14 @@ def autotest():
             err.append('VALORES_EN: el EN de %r debe ser un número > 0: %r' % (k, en))
         if k in POR_CELDA or k in ADAPTAR:
             err.append('VALORES_EN y POR_CELDA/ADAPTAR sobre la misma celda: %r' % (k,))
+    import re
+    rx = re.compile(TERMINOS_PROHIBIDOS)
+    if not rx.search(TERMINO_PROHIBIDO_EJEMPLO):
+        err.append('TERMINO_PROHIBIDO_EJEMPLO no lo caza TERMINOS_PROHIBIDOS')
+    for k, v in list(GLOSARIO.items()) + list(POR_CELDA.items()):
+        if k not in _base.GLOSARIO or k in _GLOSARIO_CAFE:
+            if rx.search(v):
+                err.append('texto EN fijado con un término prohibido: %r → %r' % (k, v))
     return err
 
 
@@ -482,18 +534,18 @@ def cruzar_censo(p):
     for k, (es, en) in VALORES_EN.items():
         if tx.get(k) != es:
             err.append('VALORES_EN: %r no trae en el ES %r (trae %r)' % (k, es, tx.get(k)))
-    unidad = {('05', 'Inventario Diario', 'D%d' % f): tx.get(('05', 'Inventario Diario', 'C%d' % f))
-              for f, _es, _en in _MINIMOS}
-    for k, (es, en) in VALORES_EN.items():
-        u = unidad[k]
-        if u in ('L', 'uds') and float(es) != en:
-            err.append('VALORES_EN: %r en %s no cambia de cifra (%s → %s)' % (k, u, es, en))
-        if u in ('kg', 'g') and float(es) == en:
-            err.append('VALORES_EN: %r en %s tiene que ir convertido (%s)' % (k, u, es))
-        if u == 'kg' and not (1.5 <= en / float(es) <= 2.5):
-            err.append('VALORES_EN: kg → lb fuera de ×2,2 en %r (%s → %s)' % (k, es, en))
-        if u == 'g' and not (20 <= float(es) / en <= 36):
-            err.append('VALORES_EN: g → oz fuera de ÷28,35 en %r (%s → %s)' % (k, es, en))
+    factor = {('kg', 'lb'): 2.2046, ('g', 'oz'): 1 / 28.35, ('g', 'lb'): 1 / 453.6, ('L', 'qt'): 1, ('uds', 'ea'): 1}
+    for f, es, en in _MINIMOS:
+        c = ('05', 'Inventario Diario', 'C%d' % f)
+        u_es = tx.get(c)
+        u_en = POR_CELDA.get(c) or GLOSARIO.get(u_es)
+        x = factor.get((u_es, u_en))
+        if x is None:
+            err.append('VALORES_EN: unidad %s → %s sin factor en la fila %d' % (u_es, u_en, f))
+        elif x == 1 and float(es) != en:
+            err.append('VALORES_EN: fila %d en %s no cambia de cifra (%s → %s)' % (f, u_es, es, en))
+        elif x != 1 and not (0.5 <= en / (float(es) * x) <= 1.5):
+            err.append('VALORES_EN: fila %d, %s %s → %s %s fuera de la conversión' % (f, es, u_es, en, u_en))
     return err
 
 

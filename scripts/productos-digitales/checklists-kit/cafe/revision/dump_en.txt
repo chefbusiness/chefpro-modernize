@@ -91,7 +91,7 @@ C16    : Kitchen
 D16    : Opening line cook
 E16    : 7:15 AM
 A17    : 11
-B17    : Check that the walk-in cooler and freezer ran all night and log the temperature (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F. If out of range, don't use the product until it's been assessed
+B17    : Check that the coolers (walk-in or reach-in) and the freezer ran all night and log the temperatures (cooler 41 °F or below, freezer 0 °F or below) — log reading: cooler ____ °F · freezer ____ °F. If out of range, don't use the product until it's been assessed
 C17    : Kitchen
 D17    : Opening line cook
 E17    : 7:00 AM
@@ -122,7 +122,7 @@ C23    : Kitchen
 D23    : Opening line cook
 E23    : 7:30 AM
 A24    : 17
-B24    : Prep sauces: hollandaise, pesto, hummus
+B24    : Prep sauces: hollandaise (use pasteurized eggs; hold it at 135 °F or above, or time-mark it and toss it after 4 hours), pesto, hummus
 C24    : Kitchen
 D24    : Opening line cook
 E24    : 7:45 AM
@@ -169,7 +169,7 @@ C34    : Kitchen
 D34    : Opening line cook
 E34    : 7:00 AM
 A35    : 26
-B35    : Sanitize work surfaces
+B35    : Sanitize work surfaces with an approved sanitizer at the label concentration: check it with a test strip
 C35    : Kitchen
 D35    : Opening line cook
 E35    : 7:00 AM
@@ -193,7 +193,7 @@ D4     : Assigned to
 E4     : Due by
 F4     : ✓ Done
 G4     : Initials
-A5     :   DINING ROOM
+A5     :   SEATING AREA
 A6     : 1
 B6     : Turn on lights and A/C
 C6     : FOH
@@ -251,7 +251,7 @@ C17    : Patio
 D17    : Opening server
 E17    : 7:30 AM
 A18    : 12
-B18    : Check that ashtrays are clean (smoking area)
+B18    : Check that ashtrays are clean (only if local law allows smoking on your patio)
 C18    : Patio
 D18    : Opening server
 E18    : 7:30 AM
@@ -339,7 +339,7 @@ C8     : Bar
 D8     : Barista
 E8     : 7:05 AM
 A9     : 4
-B9     : Check the machine pressure (9 bar)
+B9     : Check the brew pressure gauge during the test shot (about 9 bar)
 C9     : Bar
 D9     : Barista
 E9     : 7:05 AM
@@ -411,7 +411,7 @@ C24    : Bar
 D24    : Barista
 E24    : 7:10 AM
 A25    : 18
-B25    : Brew the day's drip / batch brew
+B25    : Brew the day's drip / batch brew; if you serve cold brew, filter the batch that finished steeping and store it covered at 41 °F or below, date-marked (7 days max counting the brew day)
 C25    : Bar
 D25    : Barista
 E25    : 7:15 AM
@@ -509,7 +509,7 @@ C13    : Kitchen
 D13    : Closing line cook
 E13    : 5:15 PM
 A14    : 8
-B14    : Clean work surfaces and cutting boards
+B14    : Clean and sanitize work surfaces and cutting boards; check the sanitizer with a test strip (range on its label)
 C14    : Kitchen
 D14    : Closing line cook
 E14    : 5:15 PM
@@ -540,7 +540,7 @@ C20    : Kitchen
 D20    : Closing line cook
 E20    : 5:30 PM
 A21    : 14
-B21    : Check that the walk-ins are closed and at temperature (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F
+B21    : Check that the coolers and freezer are closed and at temperature (cooler 41 °F or below, freezer 0 °F or below) — log reading: cooler ____ °F · freezer ____ °F
 C21    : Kitchen
 D21    : Closing line cook
 E21    : 5:30 PM
@@ -590,9 +590,9 @@ D4     : Assigned to
 E4     : Due by
 F4     : ✓ Done
 G4     : Initials
-A5     :   DINING ROOM & FURNITURE
+A5     :   SEATING AREA & FURNITURE
 A6     : 1
-B6     : Break down tables: collect tablecloths, silverware, glasses
+B6     : Break down tables: collect placemats/napkins, silverware, glasses
 C6     : FOH
 D6     : Closing server
 E6     : 5:00 PM
@@ -633,7 +633,7 @@ C14    : Patio
 D14    : Closing server
 E14    : 5:00 PM
 A15    : 9
-B15    : Collect and empty the ashtrays
+B15    : Collect and empty the ashtrays (if you have a smoking area)
 C15    : Patio
 D15    : Closing server
 E15    : 5:00 PM
@@ -716,7 +716,7 @@ C6     : Bar
 D6     : Barista
 E6     : 5:00 PM
 A7     : 2
-B7     : Clean the portafilters with hot water
+B7     : Soak the portafilters and baskets in espresso machine cleaner (per its label), then rinse with hot water
 C7     : Bar
 D7     : Barista
 E7     : 5:00 PM
@@ -757,7 +757,7 @@ C15    : Bar
 D15    : Barista
 E15    : 5:05 PM
 A16    : 10
-B16    : Empty and clean the drip coffee airpots
+B16    : Empty and clean the drip coffee airpots; if you serve cold brew, start tomorrow's batch in a clean, covered container, steeped in the cooler unless your health department allows room-temperature steeping
 C16    : Bar
 D16    : Barista
 E16    : 5:05 PM
@@ -773,7 +773,7 @@ C19    : Bar
 D19    : Barista
 E19    : 5:10 PM
 A20    : 13
-B20    : Put opened milk (and cold brew, if you serve it) in the walk-in cooler at 41 °F or below, covered and dated; the date on the label rules
+B20    : Put opened milk (and cold brew, if you serve it) in the cooler at 41 °F or below, covered and date-marked: 7 days max counting the day it was opened, never past the use-by date on the label
 C20    : Bar
 D20    : Barista
 E20    : 5:10 PM
@@ -789,7 +789,7 @@ D22    : Barista
 E22    : 5:10 PM
 A23    :   BAR CLEANING
 A24    : 16
-B24    : Clean and sanitize the bar top
+B24    : Clean and sanitize the bar top; check the sanitizer with a test strip (range on its label)
 C24    : Bar
 D24    : Barista
 E24    : 5:15 PM
@@ -804,7 +804,7 @@ C26    : Bar
 D26    : Barista
 E26    : 5:15 PM
 A27    : 19
-B27    : Empty the ice bin
+B27    : Empty, clean and sanitize the ice bin
 C27    : Bar
 D27    : Barista
 E27    : 5:15 PM
@@ -908,7 +908,7 @@ C15    : Kitchen
 D15    : Hot line cook
 E15    : —
 A16    : 10
-B16    : Check egg doneness: poached, scrambled, fried
+B16    : Check egg doneness: poached, scrambled, fried (runny yolks need the consumer advisory on the menu unless the eggs are pasteurized, FDA 3-603.11)
 C16    : Kitchen
 D16    : Hot line cook
 E16    : —
@@ -1151,7 +1151,7 @@ D21    : Baker
 E21    : —
 A22    :   PASTRY CASE CLOSE
 A23    : 15
-B23    : Clear the case; store everything in the walk-in
+B23    : Clear the case: TCS items (custards, cheesecake, dairy fillings) to the cooler at 41 °F or below; dry baked goods covered and dated
 C23    : Bar
 D23    : Baker
 E23    : 5:00 PM
@@ -1694,7 +1694,7 @@ A6     : 1
 B6     : Open the shop and disarm the alarm
 C6     : General
 D6     : Shift lead
-E6     : 7:00 AM
+E6     : 6:30 AM
 A7     : 2
 B7     : Make sure the whole team has arrived
 C7     : General
@@ -1809,7 +1809,7 @@ C10    : Bar
 D10    : Barista
 E10    : 7:10 AM
 A11    : 6
-B11    : Brew the drip / batch brew
+B11    : Brew the drip / batch brew (and filter the cold brew, if you serve it)
 C11    : Bar
 D11    : Barista
 E11    : 7:15 AM
@@ -1949,7 +1949,7 @@ D15    : Baker
 E15    : —
 A16    :   CLOSING
 A17    : 10
-B17    : Pull product from the case and store in the walk-in
+B17    : Pull product from the case: TCS items to the cooler, dry baked goods covered and dated
 C17    : Bar
 D17    : Baker
 E17    : 5:00 PM
@@ -2140,7 +2140,7 @@ D15    : Busser / runner
 E15    : —
 A16    :   CLOSING
 A17    : 10
-B17    : Final dish area: wash all remaining dishes
+B17    : Final dish area: wash all remaining dishes and check the dish machine's sanitizer with a test strip (or the final-rinse temperature on its data plate)
 C17    : Kitchen
 D17    : Busser / runner
 E17    : 5:00 PM
@@ -2186,7 +2186,7 @@ B16    : Free rows
 B18    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
 B19    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
 B21    : Sheet protection
-B23    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B23    : ▸ Checklist sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked. The two inventory sheets are left unprotected so you can add products: don't type over the Status or Total value columns.
 B24    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B26    : Works with
 B28    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
@@ -2223,7 +2223,7 @@ C8     : lb
 D8     : 1
 E8     = =IF(B8="","",IF(B8<D8,"⚠️ REORDER","OK"))   → caché None
 A9     :   MILKS
-A10    : Whole milk
+A10    : Whole milk (1 gal = 4 qt)
 C10    : qt
 D10    : 5
 E10    = =IF(B10="","",IF(B10<D10,"⚠️ REORDER","OK"))   → caché None
@@ -2311,8 +2311,8 @@ C33    : oz
 D33    : 10
 E33    = =IF(B33="","",IF(B33<D33,"⚠️ REORDER","OK"))   → caché None
 A34    : Bacon
-C34    : oz
-D34    : 18
+C34    : lb
+D34    : 1
 E34    = =IF(B34="","",IF(B34<D34,"⚠️ REORDER","OK"))   → caché None
 A35    : Butter
 C35    : oz
@@ -2365,7 +2365,7 @@ D4     : Unit cost
 E4     : Total value
 F4     : Order needed
 A5     :   COFFEE & TEA
-A6     : House blend coffee (2 lb bags)
+A6     : House blend coffee (5 lb or 2 lb bags)
 C6     : lb
 E6     = =IF(B6="","",B6*D6)   → caché None
 A7     : Single origin/specialty coffee
@@ -2381,7 +2381,7 @@ A10    : Matcha
 C10    : oz
 E10    = =IF(B10="","",B10*D10)   → caché None
 A11    :   DAIRY & MILKS
-A12    : Whole milk (cartons/bottles)
+A12    : Whole milk (1 gal = 4 qt)
 C12    : qt
 E12    = =IF(B12="","",B12*D12)   → caché None
 A13    : Skim (nonfat) milk
@@ -2522,7 +2522,7 @@ C6     : Kitchen
 D6     : Busser / runner
 E6     : Monday
 A7     : 2
-B7     : Take apart and clean the exhaust hood
+B7     : Remove and degrease the hood filters (hood and duct cleaning is the contractor's job: see Quarterly & Annual)
 C7     : Kitchen
 D7     : Busser / runner
 E7     : Monday
@@ -2563,7 +2563,7 @@ C15    : Bar
 D15    : Barista
 E15    : Monday
 A16    : 10
-B16    : Clean inside the bar fridge
+B16    : Clean inside the bar fridge; check the ice machine bin and chute for mold or slime (full clean and sanitize per the manufacturer)
 C16    : Bar
 D16    : Barista
 E16    : Monday
@@ -2640,13 +2640,13 @@ C8     : Walk-in
 D8     : Line cook
 E8     : Monday
 A9     : 4
-B9     : Check the temperatures of all walk-ins (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F
+B9     : Check the temperatures of all coolers and freezers (cooler 41 °F or below, freezer 0 °F or below) — log reading: cooler ____ °F · freezer ____ °F
 C9     : Walk-in
 D9     : Line cook
 E9     : Monday
 A10    :   BAR & PASTRY CASE
 A11    : 5
-B11    : Check expiration dates on opened milk: the manufacturer's label date and the date you wrote when you opened it rule; keep it at 41 °F or below
+B11    : Check dates on opened milk: toss it at 7 days counting the day it was opened or at the label's use-by date, whichever comes first; keep it at 41 °F or below
 C11    : Bar
 D11    : Barista
 E11    : Monday
@@ -2767,7 +2767,7 @@ C8     : Bar
 D8     : Technician
 E8     : Monthly
 A9     : 4
-B9     : Clean the water filter
+B9     : Check the water filter: pressure/flow and capacity used (change it on the Quarterly & Annual schedule)
 C9     : Bar
 D9     : Technician
 E9     : Monthly
@@ -3039,7 +3039,7 @@ C22    : Kitchen
 D22    : Line cook
 E22    : —
 A23    : 16
-B23    : Offer mimosas/bellinis as an add-on (only with an alcohol license; 21+ with ID)
+B23    : Offer mimosas/bellinis as an add-on (only with an alcohol license; guests 21+ with ID, served only by staff old enough under your state's law)
 C23    : FOH
 D23    : Server
 E23    : —
@@ -3127,7 +3127,7 @@ C15    : Kitchen
 D15    : Baker
 E15    : 6:30 AM
 A16    : 10
-B16    : Welcome drink for couples: alcohol-free, or a mimosa only where your license and state allow giving alcohol away (21+ with ID)
+B16    : Welcome drink for couples: alcohol-free, or a mimosa only where your license and state allow giving alcohol away, served by staff old enough under your state's law (21+ with ID)
 C16    : Bar
 D16    : Barista
 E16    : —
@@ -3161,7 +3161,7 @@ A6     : 1
 B6     : Design the special holiday menu
 C6     : Office
 D6     : Manager
-E6     : 15 days out
+E6     : 2 weeks out
 A7     : 2
 B7     : Order stock: panettone, holiday cookies, special hot chocolate mix
 C7     : Office
@@ -3171,7 +3171,7 @@ A8     : 3
 B8     : Buy holiday decorations
 C8     : Office
 D8     : Manager
-E8     : 15 days out
+E8     : 2 weeks out
 A9     : 4
 B9     : Plan special hours (Christmas Eve, Christmas Day, New Year's)
 C9     : Office
@@ -3195,7 +3195,7 @@ D13    : Manager
 E13    : Dec 1
 A14    :   HOLIDAY SERVICE
 A15    : 8
-B15    : Special holiday coffee: gingerbread latte, pumpkin spice
+B15    : Special holiday coffee: gingerbread latte, peppermint mocha, eggnog latte
 C15    : Bar
 D15    : Barista
 E15    : —
@@ -3221,7 +3221,7 @@ D19    : Manager
 E19    : —
 A20    :   YEAR-END CLOSE
 A21    : 13
-B21    : Check stock for the week with no deliveries
+B21    : Check stock for the holiday weeks: confirm your suppliers' delivery days around Dec 25 and Jan 1
 C21    : Storage
 D21    : Manager
 E21    : Dec 23
@@ -3484,40 +3484,40 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   KITCHEN — type your kitchen tasks below
 A6     : 1
-D6     : Head chef
+D6     : Kitchen lead
 E6     : (Time)
 A7     : 2
-D7     : Head chef
+D7     : Kitchen lead
 A8     : 3
-D8     : Head chef
+D8     : Kitchen lead
 A9     : 4
-D9     : Head chef
+D9     : Kitchen lead
 A10    : 5
-D10    : Head chef
+D10    : Kitchen lead
 A12    :   FOH — type your FOH tasks below
 A13    : 6
-D13    : FOH manager
+D13    : Shift lead
 E13    : (Time)
 A14    : 7
-D14    : FOH manager
+D14    : Shift lead
 A15    : 8
-D15    : FOH manager
+D15    : Shift lead
 A16    : 9
-D16    : FOH manager
+D16    : Shift lead
 A17    : 10
-D17    : FOH manager
+D17    : Shift lead
 A19    :   MANAGEMENT — type your management tasks below
 A20    : 11
-D20    : GM
+D20    : Manager
 E20    : (Time)
 A21    : 12
-D21    : GM
+D21    : Manager
 A22    : 13
-D22    : GM
+D22    : Manager
 A23    : 14
-D23    : GM
+D23    : Manager
 A24    : 15
-D24    : GM
+D24    : Manager
 A31    : Tasks done:
 D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
 E31    : of
@@ -3580,22 +3580,22 @@ A5     : 1
 B5     : Disarm the alarm
 C5     : Entrance
 D5     : Shift lead
-E5     : 6:45 AM
+E5     : 6:30 AM
 A6     : 2
 B6     : Turn on the main lights (interior and exterior)
 C6     : General
 D6     : Shift lead
-E6     : 6:45 AM
+E6     : 6:30 AM
 A7     : 3
 B7     : Turn on HVAC / heat depending on the season
 C7     : General
 D7     : Shift lead
-E7     : 6:45 AM
+E7     : 6:30 AM
 A8     : 4
 B8     : Raise security gate and open front door
 C8     : Entrance
 D8     : Shift lead
-E8     : 6:45 AM
+E8     : 6:30 AM
 A9     : 5
 B9     : Set up outdoor signage / menu board
 C9     : Outside
@@ -3608,7 +3608,7 @@ D10    : Shift lead
 E10    : 6:45 AM
 A11    : 7
 B11    : Turn on the reservation system / order tablet
-C11    : Host stand
+C11    : Front counter
 D11    : Shift lead
 E11    : 7:00 AM
 A12    : 8
@@ -3618,7 +3618,7 @@ D12    : Shift lead
 E12    : 7:00 AM
 A13    : 9
 B13    : Review today's reservations and special events
-C13    : Host stand
+C13    : Front counter
 D13    : Shift lead
 E13    : 7:00 AM
 A14    : 10
@@ -3817,47 +3817,47 @@ F4     : Initials
 G4     : Notes
 A5     : 1
 B5     : Verify yesterday's starting bank
-C5     : Cashier / MOD
+C5     : Cashier / shift lead
 D5     : 7:00 AM
 A6     : 2
 B6     : Count the opening starting bank
-C6     : Cashier / MOD
+C6     : Cashier / shift lead
 D6     : 7:00 AM
 A7     : 3
 B7     : Write the starting bank in the green cell below
-C7     : Cashier / MOD
+C7     : Cashier / shift lead
 D7     : 7:00 AM
 A8     : 4
 B8     : Check there is enough change (coins, small bills)
-C8     : Cashier / MOD
+C8     : Cashier / shift lead
 D8     : 7:00 AM
 A9     : 5
 B9     : Check that the POS is on and open the register shift
-C9     : Cashier / MOD
+C9     : Cashier / shift lead
 D9     : 7:15 AM
 A10    : 6
 B10    : Print the opening X report (start-of-day report)
-C10    : Cashier / MOD
+C10    : Cashier / shift lead
 D10    : 7:15 AM
 A11    : 7
 B11    : Check the receipt paper roll
-C11    : Cashier / MOD
+C11    : Cashier / shift lead
 D11    : 7:15 AM
 A12    : 8
 B12    : Check the card terminal works
-C12    : Cashier / MOD
+C12    : Cashier / shift lead
 D12    : 7:15 AM
 A13    : 9
 B13    : Check the payment gateway connection
-C13    : Cashier / MOD
+C13    : Cashier / shift lead
 D13    : 7:30 AM
 A14    : 10
 B14    : Note issues from the previous shift
-C14    : Cashier / MOD
+C14    : Cashier / shift lead
 D14    : 7:30 AM
 A15    : 11
 B15    : Opening manager sign-off
-C15    : Cashier / MOD
+C15    : Cashier / shift lead
 D15    : 7:30 AM
 A22    : Tasks done:
 C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
@@ -3885,51 +3885,51 @@ F4     : Initials
 G4     : Notes
 A5     : 1
 B5     : Print the closing Z report (end-of-day report)
-C5     : Cashier / MOD
+C5     : Cashier / shift lead
 D5     : Close
 A6     : 2
 B6     : Cash count by denomination (see table below)
-C6     : Cashier / MOD
+C6     : Cashier / shift lead
 D6     : Close
 A7     : 3
 B7     : Calculate total cash
-C7     : Cashier / MOD
+C7     : Cashier / shift lead
 D7     : Close
 A8     : 4
 B8     : Batch out the card terminal; note card sales WITHOUT tips
-C8     : Cashier / MOD
+C8     : Cashier / shift lead
 D8     : Close
 A9     : 5
 B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
-C9     : Cashier / MOD
+C9     : Cashier / shift lead
 D9     : Close
 A10    : 6
 B10    : Total collected = (cash counted − starting bank) + card sales + other
-C10    : Cashier / MOD
+C10    : Cashier / shift lead
 D10    : Close
 A11    : 7
 B11    : Compare with the POS Z report → calculate the over/short
-C11    : Cashier / MOD
+C11    : Cashier / shift lead
 D11    : Close
 A12    : 8
 B12    : Log the day's refunds
-C12    : Cashier / MOD
+C12    : Cashier / shift lead
 D12    : Close
 A13    : 9
 B13    : Log the day's voids
-C13    : Cashier / MOD
+C13    : Cashier / shift lead
 D13    : Close
 A14    : 10
 B14    : Set aside tomorrow's starting bank
-C14    : Cashier / MOD
+C14    : Cashier / shift lead
 D14    : Close
 A15    : 11
 B15    : Prepare the bank deposit / put it in the safe
-C15    : Cashier / MOD
+C15    : Cashier / shift lead
 D15    : Close
 A16    : 12
 B16    : Closing manager sign-off
-C16    : Cashier / MOD
+C16    : Cashier / shift lead
 D16    : Close
 A23    : Tasks done:
 C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
@@ -4018,7 +4018,7 @@ CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Monthly Cash Log
 A2     : Month: ________________     Year: ________
-F2     : General manager: _________________________
+F2     : Manager: _________________________
 A4     : Day
 B4     : Starting Bank
 C4     : Cash Counted

@@ -580,6 +580,9 @@ def zona_dolar():
     return z
 
 
+RX_PROHIBIDOS = re.compile(mapas.TERMINOS_PROHIBIDOS) if mapas.TERMINOS_PROHIBIDOS else None
+
+
 def gateG2(R, carpeta, datos):
     R.gate('G2 restos')
     n = Counter()
@@ -600,6 +603,12 @@ def gateG2(R, carpeta, datos):
                 continue
             if tipo == 'literal':
                 continue                                         # ✓, ?*, N/A, >0: los vigila G1 (= ES por CLAVES)
+            if RX_PROHIBIDOS is not None:                        # vertical (mapas.TERMINOS_PROHIBIDOS): toda pieza EN
+                n['terminos_revisados'] += 1
+                m = RX_PROHIBIDOS.search(t)
+                if m:
+                    R.fallo('%s: término prohibido %r en %s · …%s…' % (donde, m.group(0), tipo,
+                                                                       t[max(0, m.start() - 30):m.end() + 20]))
             if ('$' in t or '¢' in t):
                 n['con_dolar'] += 1
                 if (corto,) + (pos or ('', '')) not in zona:
@@ -806,9 +815,10 @@ def gateG4(R, carpeta, datos, mes):
                 if isinstance(c.value, str) and c.data_type != 'f' and mapas.RX_HORA_CELDA.match(c.value):
                     n['horas'] += 1
                     got = ws_en[c.coordinate].value
-                    if got != mapas.hora_us(c.value):
+                    esp = mapas.POR_CELDA.get((corto, h_es, c.coordinate)) or mapas.hora_us(c.value)
+                    if got != esp:                       # POR_CELDA manda (cafe ronda 1: horas alineadas)
                         R.fallo('%s %s!%s: hora %r ≠ hora_us(%r) = %r' % (corto, ws_en.title, c.coordinate, got,
-                                                                          c.value, mapas.hora_us(c.value)))
+                                                                          c.value, esp))
     if n['horas'] != datos['censo']['totales']['horas_24h']:
         R.fallo('horas de celda %d ≠ censo %d' % (n['horas'], datos['censo']['totales']['horas_24h']))
     # números fijados (mapas.VALORES_EN; vacío en el base y el bar): el ES trae el suyo y el EN el número decidido
@@ -1250,7 +1260,13 @@ def _grados_mal(wb):
 
 def _cita_mal(wb):
     ws = wb[mapas.HOJAS['Instrucciones']]
-    ws['B6'].value = (ws['B6'].value or '') + ' ' + CITA_MAL
+    if hasattr(mapas, 'CITA_AUTOTEST'):        # el kit fija su cita no permitida
+        ws['B6'].value = (ws['B6'].value or '') + ' ' + CITA_MAL
+        return
+    ok = permitidas()[0]                       # base y bar: 3-501.19 · cafe (la cita en REGLAS_US, ronda 1 M4): la siguiente
+    cod = next(c for c in ('3-501.19', '3-501.18', '3-202.11', '3-401.11', '3-304.11', '4-204.112')
+               if not set(citas_de('FDA Food Code ' + c)) <= ok)
+    ws['B6'].value = (ws['B6'].value or '') + ' (FDA Food Code %s)' % cod
 
 
 MUTACIONES = [
@@ -1271,6 +1287,9 @@ MUTACIONES = [
     ('G7', F01, _grados_mal, '°F'),
     ('G7', F01, _cita_mal, 'cita normativa'),
 ]
+if mapas.TERMINOS_PROHIBIDOS:                                    # vertical con términos prohibidos (cafe)
+    MUTACIONES.append(('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', (
+        wb[mapas.HOJAS['Instrucciones']]['B6'].value or '') + ' ' + mapas.TERMINO_PROHIBIDO_EJEMPLO), 'término prohibido'))
 if mapas.VALORES_EN:                                             # vertical con números fijados (cafe: inventario)
     _KV, (_ES_V, _EN_V) = next(iter(mapas.VALORES_EN.items()))
 

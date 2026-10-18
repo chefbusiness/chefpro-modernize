@@ -163,11 +163,6 @@
   "origen": "c0185",
   "via": "exacta"
  },
- "c0170": {
-  "en": "Break down tables: collect tablecloths, silverware, glasses",
-  "origen": "c0189",
-  "via": "exacta"
- },
  "c0187": {
   "en": "Balance the day's register",
   "origen": "c0340",
@@ -178,11 +173,6 @@
   "origen": "c0116",
   "via": "exacta",
   "fuente": "bar"
- },
- "c0211": {
-  "en": "Clean and sanitize the bar top",
-  "origen": "c0205",
-  "via": "exacta"
  },
  "c0225": {
   "en": "▸ You are in 02-cafe-kitchen-pastry-case-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx and 01-coffee-shop-opening-closing-checklists.xlsx.",
@@ -965,11 +955,6 @@
  "c0984": {
   "en": "Month: ________________     Year: ________",
   "origen": "c0940",
-  "via": "exacta"
- },
- "c0985": {
-  "en": "General manager: _________________________",
-  "origen": "c0941",
   "via": "exacta"
  },
  "c0995": {

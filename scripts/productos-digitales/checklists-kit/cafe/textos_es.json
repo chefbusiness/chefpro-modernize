@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-17T23:17:34Z",
+  "generado": "2026-10-17T23:50:32Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-cafeteria",
-  "commit": "79d328a8",
+  "commit": "44456cab",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -63,7 +63,7 @@
   },
   "n_cadenas": 1108,
   "n_traducir": 846,
-  "n_adaptar": 83,
+  "n_adaptar": 91,
   "n_palabras_subagentes": 5847,
   "n_apariciones": 3089,
   "grupos": [
@@ -77,7 +77,7 @@
      "04"
     ],
     "n_cadenas": 414,
-    "n_adaptar": 35,
+    "n_adaptar": 43,
     "n_palabras": 2813
    },
    {
@@ -98,7 +98,7 @@
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 90 mapa-glosario, 39 mapa-hoja, 133 regenerar",
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 89 mapa-glosario, 39 mapa-hoja, 134 regenerar",
     "n_cadenas": 262,
     "n_palabras": 917
    }
@@ -807,6 +807,10 @@
    "es": "▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.",
    "grupo": "G1",
    "tratamiento": "traducir",
+   "tratamientos": [
+    "traducir",
+    "regenerar"
+   ],
    "n_ficheros": 9,
    "n_apariciones": 9,
    "palabras": 24,
@@ -846,7 +850,8 @@
      "h": "Instrucciones",
      "c": "B23",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "06",
@@ -2246,6 +2251,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M4: hollandaise con huevo pasteurizado; a 135 °F o más, o con la hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "sha1": "0f75d04613ea",
    "donde": [
     {
@@ -2466,6 +2472,7 @@
    "n_apariciones": 1,
    "palabras": 4,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M2: sanitizante aprobado a la concentración de la etiqueta, medida con tira",
    "sha1": "7ea19a6353fa",
    "donde": [
     {
@@ -4221,6 +4228,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M3: + si sirves cold brew, filtrar el lote que terminó el reposo y guardarlo tapado a 41 °F o menos, con date marking (7 días como máximo contando el día de preparación)",
    "pistas": [
     "café filtro → drip / batch brew; termo → airpot"
    ],
@@ -4643,6 +4651,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)",
    "sha1": "a529a94a9fa9",
    "donde": [
     {
@@ -5686,6 +5695,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M3: + si sirves cold brew, arrancar el lote de mañana en un recipiente limpio y tapado, en frío salvo que tu departamento de salud permita el reposo a temperatura ambiente",
    "pistas": [
     "café filtro → drip / batch brew; termo → airpot"
    ],
@@ -5776,7 +5786,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
-   "adaptar": "Leche abierta (y el cold brew, si lo sirves) a la nevera a 41 °F o menos (FDA Food Code 3-501.16), tapada y con su fecha; manda la fecha de la etiqueta (sin inventar días)",
+   "adaptar": "Leche abierta (y el cold brew, si lo sirves) a la nevera a 41 °F o menos, tapada y con date marking: 7 días como máximo contando el día de apertura, sin pasar del use-by del fabricante (FDA Food Code 3-501.17(B))",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: cámara → walk-in cooler / walk-in freezer",
@@ -5865,6 +5875,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M2: + comprobar el sanitizante con una tira (rango de su etiqueta)",
    "sha1": "f937ccdb80e4",
    "donde": [
     {
@@ -6283,6 +6294,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M4: la yema líquida pide el aviso al consumidor en la carta salvo huevo pasteurizado (FDA Food Code 3-603.11)",
    "sha1": "5b023cf2abf7",
    "donde": [
     {
@@ -9837,6 +9849,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
+   "adaptar": "Ronda 1 M3: + filtrar el cold brew, si lo sirves",
    "pistas": [
     "café filtro → drip / batch brew; termo → airpot"
    ],
@@ -13892,7 +13905,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
-   "adaptar": "Leche abierta: manda la fecha de la etiqueta del fabricante y la que anotaste al abrirla; a 41 °F o menos",
+   "adaptar": "Leche abierta: fuera a los 7 días contando el de apertura o en el use-by de la etiqueta, lo que llegue antes (FDA Food Code 3-501.17(B)); a 41 °F o menos",
    "pistas": [
     "leche entera → whole milk; desnatada → skim (nonfat); avena / soja / almendra → oat / soy / almond milk; nata para montar → heavy whipping cream"
    ],
@@ -34028,6 +34041,10 @@
    "es": "g",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "oz",
    "n_ficheros": 1,
    "n_apariciones": 6,
@@ -34056,8 +34073,8 @@
      "h": "Inventario Diario",
      "c": "C34",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "05",
@@ -35594,8 +35611,8 @@
    "id": "c0767",
    "es": "15 días antes",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "15 days out",
+   "tratamiento": "regenerar",
+   "en_por_celda": "2 weeks out",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 3,
@@ -35607,16 +35624,16 @@
      "h": "Navidad",
      "c": "E6",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "06",
      "h": "Navidad",
      "c": "E8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -36225,7 +36242,7 @@
    "es": "Jefe de Cocina",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "Head chef",
+   "en_glosario": "Kitchen lead",
    "n_ficheros": 1,
    "n_apariciones": 5,
    "palabras": 3,
@@ -36279,7 +36296,7 @@
    "es": "Jefe de Sala",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "FOH manager",
+   "en_glosario": "Shift lead",
    "n_ficheros": 1,
    "n_apariciones": 5,
    "palabras": 3,
@@ -36333,7 +36350,7 @@
    "es": "Gerente",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "GM",
+   "en_glosario": "Manager",
    "n_ficheros": 1,
    "n_apariciones": 5,
    "palabras": 1,
@@ -36584,7 +36601,7 @@
    "es": "Recepción",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "Host stand",
+   "en_glosario": "Front counter",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 1,
@@ -37008,7 +37025,7 @@
    "es": "Responsable de caja",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "Cashier / MOD",
+   "en_glosario": "Cashier / shift lead",
    "n_ficheros": 1,
    "n_apariciones": 23,
    "palabras": 3,
