@@ -46,6 +46,11 @@ MEMORIA = [('base', '', _SUF('Restaurante Casual')), ('bar', 'bar', _SUF('Bar / 
 RX_CONTEXTO_PENDIENTE = (r'(?i)\b(?:restaurants?(?! consultant)|dining room|host stand|head chef|sous chef|'
                          r'line cooks?|prep cooks?|shift managers?|FOH managers?|coffee shops?|cafes?|baristas?|'
                          r'tip jar|venues?|line-up|patio season)\b')
+# gates_en.py G2: términos de otros kits que NINGUNA celda EN del catering puede llevar (la firma de autor, «restaurant
+# consultant», queda fuera por el lookahead; «Head Chef» sí vale: el chef de evento). Lo que inyecta el autotest:
+TERMINOS_PROHIBIDOS = (r'(?i:\b(?:restaurants?(?! consultant)|host stands?|sous chefs?|FOH managers?|shift managers?|'
+                       r'coffee shops?|cafes?|baristas?|tip jars?|line-up)\b)')
+TERMINO_PROHIBIDO_EJEMPLO = 'Ask the shift manager.'
 REFERENCIAS_TRADUCTOR = ['catering/SPEC.md', 'SPEC.md §0-§3 y §7.2 (brief)', 'textos_en/glosario.json (glosario de '
                          'la prosa del kit base)', 'catering/textos_en/heredado.json (cómo se dijo ya cada cosa: '
                          'base, bar y cafetería)', 'catering/mapas_catering.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, '
@@ -128,10 +133,14 @@ H_LIQ, H_REG = 'Liquidación del Evento', 'Registro de Eventos'
 # load-out, BEO, banquet captain, guaranteed count; «D-15» → «15 days out».
 # ==========================================================================
 GLOSARIO = OrderedDict(_base.GLOSARIO)
+CLAVES_ESTADO = OrderedDict([('Cobrado', 'Paid'), ('Pendiente', 'Pending'), ('VENCIDO', 'OVERDUE')])
 _GLOSARIO_CATERING = OrderedDict([
     # subtítulo de marca (A2) de las checklists: el producto EN, igual en todo el kit
     ('AI Chef Pro · aichef.pro — Kit de Tareas: Catering / Eventos', 'AI Chef Pro · aichef.pro — ' + PRODUCTO),
     ('AI Chef Pro · aichef.pro — Escribe tus propias tareas', 'AI Chef Pro · aichef.pro — Write your own tasks'),
+    # «Pendiente» citado entre comillas es el ESTADO (Paid / Pending / OVERDUE, CLAVES), no la columna de importe
+    # (H5 del registro = «Balance due» por POR_CELDA, que manda en esa celda): así lo cita c0645 (Liquidación D24)
+    ('Pendiente', CLAVES_ESTADO['Pendiente']),
     ('Hora', 'Time'), ('Zona/Fase', 'Area / phase'), ('Evento / Cliente', 'Event / client'), ('Fórmula.', 'Formula.'),
     # zonas (columna C)
     ('Producción', 'Production'), ('Transporte', 'Transport'), ('Montaje', 'Setup'), ('Desmontaje', 'Breakdown'),
@@ -165,7 +174,7 @@ PUESTOS_ES = frozenset(_base.PUESTOS_ES | {'Producción', 'Transporte', 'Montaje
 CLAVES = OrderedDict(_base.CLAVES)
 CLAVES.update([
     ('Tarea', 'Task'),
-    ('Cobrado', 'Paid'), ('Pendiente', 'Pending'), ('VENCIDO', 'OVERDUE'),
+    *CLAVES_ESTADO.items(),
     ('OK: las dos bases suman presupuesto + extras', 'OK: the two subtotals add up to quote + extras'),
     ('REVISA: las dos bases no suman presupuesto + extras', 'CHECK: the two subtotals do not add up to quote + extras'),
 ])
@@ -672,6 +681,13 @@ def autotest():
         for k, v in caso['esperado'].items():
             if isinstance(v, str) and v not in estados and v not in CLAVES.values():
                 err.append('CASOS_G5 %s: texto esperado %r que no es una CLAVE EN' % (caso['nombre'], v))
+    import re
+    rx = re.compile(TERMINOS_PROHIBIDOS)
+    if not rx.search(TERMINO_PROHIBIDO_EJEMPLO):
+        err.append('TERMINO_PROHIBIDO_EJEMPLO no lo caza TERMINOS_PROHIBIDOS')
+    for k, v in list(_GLOSARIO_CATERING.items()) + list(POR_CELDA.items()) + list(CLAVES.items()):
+        if rx.search(v):
+            err.append('término prohibido en un texto EN fijado: %r → %r' % (k, v))
     if CITA_AUTOTEST.strip('()').split()[-1] in ' '.join(f for _v, f in REGLAS_US.values()):
         err.append('CITA_AUTOTEST está en REGLAS_US: G7 no la cazaría')
     return err

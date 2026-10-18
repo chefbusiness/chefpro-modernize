@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-18T00:09:46Z",
+  "generado": "2026-10-18T00:20:45Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-catering",
-  "commit": "44456cab",
+  "commit": "810e54c9",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -12073,7 +12073,7 @@
     },
     {
      "es": "Pendiente",
-     "en": "Balance due"
+     "en": "Pending"
     }
    ],
    "pistas": [

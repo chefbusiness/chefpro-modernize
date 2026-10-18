@@ -455,7 +455,7 @@
  "c0639": "What came in AFTER the event and is reconciled with the bank.",
  "c0641": "Formula: balance − paid. Amber while anything is left to collect.",
  "c0643": "The date you agreed with the client. Without it, the status can never say OVERDUE.",
- "c0645": "\"Paid\" if not a cent is left · \"Balance due\" while there is still a balance · \"OVERDUE\" if the due date has also passed.",
+ "c0645": "\"Paid\" if not a cent is left · \"Pending\" while there is still a balance · \"OVERDUE\" if the due date has also passed.",
  "c0647": "Count the cash in dollars and, if you like, add the \"Net cash from the event\" to \"Paid after the event\" yourself. It is NOT linked automatically: most events have no cash bar, and a fixed formula would leave a 0 subtracting where it shouldn't.",
  "c0651": "Enter only what is in the drawer",
  "c0671": "The change the bar started with. It is not a sale.",
