@@ -1439,6 +1439,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-18): twin of kit-tareas-dark-kitchen, independent product.
+  'ghost-kitchen-checklist-templates': {
+    id: 'ghost-kitchen-checklist-templates',
+    name: 'Ghost Kitchen Checklists Kit Pro',
+    priceLabel: '$19',
+    accessPath: '/en/digital-products/ghost-kitchen-checklist-templates/access',
+    emailSubject: 'Your access to Ghost Kitchen Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Ghost Kitchen Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Ghost Kitchen Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'apertura-cierre': '/dl/ghost-kitchen-checklist-templates/01-ghost-kitchen-opening-closing-checklists.xlsx',
+      'partidas': '/dl/ghost-kitchen-checklist-templates/02-cloud-kitchen-station-checklists.xlsx',
+      'manager': '/dl/ghost-kitchen-checklist-templates/03-ghost-kitchen-manager-checklist.xlsx',
+      'perfiles': '/dl/ghost-kitchen-checklist-templates/04-virtual-kitchen-duties-by-role.xlsx',
+      'periodicas': '/dl/ghost-kitchen-checklist-templates/05-cloud-kitchen-cleaning-checklist-inventory-maintenance.xlsx',
+      'eventos': '/dl/ghost-kitchen-checklist-templates/06-ghost-kitchen-peak-and-event-checklists.xlsx',
+      'personalizable': '/dl/ghost-kitchen-checklist-templates/07-blank-ghost-kitchen-checklist-template.xlsx',
+      'apertura-negocio': '/dl/ghost-kitchen-checklist-templates/08-delivery-only-kitchen-opening-closing-checklist.xlsx',
+      'apertura-caja': '/dl/ghost-kitchen-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+      'bonus-briefing': '/dl/ghost-kitchen-checklist-templates/BONUS-01-ghost-kitchen-pre-shift-meeting-template.xlsx',
+      'bonus-calendario': '/dl/ghost-kitchen-checklist-templates/BONUS-02-ghost-kitchen-delivery-calendar.xlsx',
+    },
+    lang: 'en',
+  },
 
   'guia-dark-kitchen': {
     id: 'guia-dark-kitchen',

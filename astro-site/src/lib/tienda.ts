@@ -260,6 +260,17 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (18-oct-2026): Ghost Kitchen Checklists Kit Pro, sexto hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/ghost D1-D4). Gemelo del Kit de Tareas para Dark Kitchen. vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop, el Catering, el
+    // Pizza Shop y el Burger Joint Checklists Kit Pro).
+    familia: 'kit-tareas-dark-kitchen',
+    productos: {
+      es: { slug: 'kit-tareas-dark-kitchen', vivo: true },
+      en: { slug: 'ghost-kitchen-checklist-templates', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.

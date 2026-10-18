@@ -15,6 +15,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'food-cost-menu-engineering-guide': { usd: 59 },
   'food-cost-templates': { usd: 19 },
   'food-truck-business-plan': { usd: 39 },
+  'ghost-kitchen-checklist-templates': { usd: 19 },
   'guia-chocolateria-obrador': { eur: 65 },
   'guia-churreria-chocolateria': { eur: 65 },
   'guia-dark-kitchen': { eur: 24 },

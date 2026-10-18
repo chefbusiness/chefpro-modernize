@@ -994,6 +994,24 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/burger-joint-checklist-templates/BONUS-02-burger-joint-holiday-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-18): Ghost Kitchen Checklists Kit Pro. MISMAS claves que kit-tareas-dark-kitchen (las de
+  // TEMPLATES de src/pages/GhostKitchenChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx
+  // EN de /dl/ghost-kitchen-checklist-templates/ (SPEC checklists-kit/ghost §2), y el bonus común de equivalencias EN
+  // en lugar de la guía ES↔LatAm.
+  'ghost-kitchen-checklist-templates': {
+    'apertura-cierre': '/dl/ghost-kitchen-checklist-templates/01-ghost-kitchen-opening-closing-checklists.xlsx',
+    'partidas': '/dl/ghost-kitchen-checklist-templates/02-cloud-kitchen-station-checklists.xlsx',
+    'manager': '/dl/ghost-kitchen-checklist-templates/03-ghost-kitchen-manager-checklist.xlsx',
+    'perfiles': '/dl/ghost-kitchen-checklist-templates/04-virtual-kitchen-duties-by-role.xlsx',
+    'periodicas': '/dl/ghost-kitchen-checklist-templates/05-cloud-kitchen-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/ghost-kitchen-checklist-templates/06-ghost-kitchen-peak-and-event-checklists.xlsx',
+    'personalizable': '/dl/ghost-kitchen-checklist-templates/07-blank-ghost-kitchen-checklist-template.xlsx',
+    'apertura-negocio': '/dl/ghost-kitchen-checklist-templates/08-delivery-only-kitchen-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/ghost-kitchen-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/ghost-kitchen-checklist-templates/BONUS-01-ghost-kitchen-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/ghost-kitchen-checklist-templates/BONUS-02-ghost-kitchen-delivery-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

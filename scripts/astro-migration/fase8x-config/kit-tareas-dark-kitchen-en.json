@@ -1,0 +1,50 @@
+{
+  "producto": "kit-tareas-dark-kitchen",
+  "fecha": "2026-10-18",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · Ghost Kitchen Checklists Kit Pro (ghost/SPEC D1, 18-oct-2026). El id es el del CATÁLOGO (products-catalog.ts),",
+    "que con urlByLang.en pinta la landing EN /en/digital-products/ghost-kitchen-checklist-templates y $19.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto kit-tareas-dark-kitchen --config scripts/astro-migration/fase8x-config/kit-tareas-dark-kitchen-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Posts: el pilar del blog EN sobre el modelo, Ghost Kitchen Complete Guide (86 menciones; el párrafo cierra «Running",
+    "Multiple Brands from One Kitchen», antes de «Ghost Kitchen Profitability»), y Cloud Kitchen Business Models (110; el",
+    "párrafo cierra «Model 2: Multi-Brand Cloud Kitchen», antes de «Model 3»). Ese post ya lleva el Catering Checklists Kit",
+    "Pro por su «Model 7: Catering Cloud Kitchen»: aquí no es una vertical colada (el criterio que apartó Robotic Restaurants",
+    "de la hamburguesería), porque el post entero trata del modelo de este kit. Los otros tres del clúster (dark vs ghost vs",
+    "cloud, virtual kitchen launch, tech stack) quedan para futuros rebalanceos (TEMAS de fase8e-banners-en-reapuntar.py).",
+    "Víctimas = SLUGS EN de la landing, por relevancia: el Staff Scheduling Kit en los dos (en la guía se quedan el",
+    "Inventory Kit por el reparto de ingredientes entre marcas y el Financial Plan Kit por la rentabilidad; en el de modelos,",
+    "el Inventory Kit y el Catering Checklists Kit Pro).",
+    "Nunca el Restaurant, el Bar, el Coffee Shop, el Catering, el Pizza Shop ni el Burger Joint Checklists Kit Pro,",
+    "hermanos de línea y venta cruzada."
+  ],
+  "nunca": [
+    "restaurant-checklist-templates",
+    "bar-checklist-templates",
+    "coffee-shop-checklist-templates",
+    "catering-checklist-templates",
+    "pizza-shop-checklist-templates",
+    "burger-joint-checklist-templates"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 2,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "ghost-kitchen-complete-guide": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 6,
+      "parrafo": "Once the brands are live, the hard part is running them the same way on every shift. The {ENLACE} turns that into Excel checklists with 331 tasks already written: opening and closing, with the brands going live only after the tablets, printers and prep times are checked; hot food held at 135 °F or above until it is packed and cold food at 41 °F or below, bagged apart; raw fish for poke and sushi handled under the FDA Food Code; packing by brand with tamper-evident seals; a weekly review of prep times, ratings and food cost by brand; and peak checklists for the Friday rush, game night and a new brand launch."
+    },
+    "cloud-kitchen-business-models": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 5,
+      "parrafo": "Several brands in one kitchen only work if every shift follows the same routine. The {ENLACE} writes it down in Excel, with 331 tasks already written: the hot and cold stations, each brand's containers and stickers, hot and cold food bagged apart, every brand turned on and off in DoorDash, Uber Eats and Grubhub, orders accepted in under 30 seconds, a driver pickup shelf for each app, and a checklist each for the multi-brand cook, the packer, the app manager and the operations manager."
+    }
+  }
+}

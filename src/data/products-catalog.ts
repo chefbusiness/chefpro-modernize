@@ -192,11 +192,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-dark-kitchen',
     url: '/kit-tareas-dark-kitchen',
     price: '€12',
-    name: { es: 'Tareas: Dark Kitchen', en: 'Tasks: Dark Kitchen' },
+    name: { es: 'Tareas: Dark Kitchen', en: 'Ghost Kitchen Checklists Kit Pro' },
     description: {
       es: 'Operativa multi-marca y multi-plataforma.',
-      en: 'Multi-brand, multi-platform operations.',
+      en: 'Ghost kitchen checklists for opening and closing, the hot and cold stations, packing by brand, the delivery apps and driver pickup, the manager, duties by role, cleaning and the cash drawer: 331 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `ghost-kitchen-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/ghost-kitchen-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-pasteleria': {
     id: 'kit-tareas-pasteleria',
