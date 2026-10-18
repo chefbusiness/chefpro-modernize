@@ -1,0 +1,3666 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/pizza-shop-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-pizza-shop-opening-closing-checklists.xlsx
+# docProps: title='Pizza Shop Opening & Closing Checklists: Kitchen, FOH & Delivery' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Pizza Shop Opening & Closing Checklists: Kitchen, FOH & Delivery
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 01-pizza-shop-opening-closing-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-pizzeria-opening-closing-checklist.xlsx.
+B28    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Kitchen Opening» · protegida=True · área='Kitchen Opening'!$A$1:$G$50 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Checklist — Kitchen / Prep Area
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PERSONAL HYGIENE
+A6     : 1
+B6     : Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)
+C6     : Kitchen
+D6     : All staff
+E6     : 9:00 AM
+A7     : 2
+B7     : No jewelry on hands or arms except a plain band; short, clean nails, no polish or false nails unless gloved
+C7     : Kitchen
+D7     : All staff
+E7     : 9:00 AM
+A8     : 3
+B8     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C8     : Kitchen
+D8     : All staff
+E8     : 9:00 AM
+A9     : 4
+B9     : Wash hands on arrival and between tasks; handwashing sink with soap, paper towels and hot water (100 °F+)
+C9     : Kitchen
+D9     : All staff
+E9     : 9:00 AM
+A10    : 5
+B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
+C10    : Kitchen
+D10    : Pizza maker
+E10    : 9:00 AM
+A11    :   OVEN
+A12    : 6
+B12    : Turn on the exhaust hood and ventilate the kitchen BEFORE lighting the oven: wood and gas need draft from minute one
+C12    : Kitchen
+D12    : Pizza maker
+E12    : 9:45 AM
+A13    : 7
+B13    : Check the chimney draft and that the wood-fired oven damper is open before lighting anything
+C13    : Kitchen
+D13    : Pizza maker
+E13    : 9:45 AM
+A14    : 8
+B14    : Open the main gas valve and check for gas; if you smell it, touch nothing, get out and call the gas company or 911
+C14    : Kitchen
+D14    : Pizza maker
+E14    : 9:50 AM
+A15    : 9
+B15    : Light the oven and preheat per manufacturer (45–60 min)
+C15    : Kitchen
+D15    : Pizza maker
+E15    : 10:00 AM
+A16    : 10
+B16    : Check oven temp: 750–840 °F (Neapolitan) — log reading: ____ °F
+C16    : Kitchen
+D16    : Pizza maker
+E16    : 10:45 AM
+A17    : 11
+B17    : Stage dry wood or pellets away from the oven mouth and heat sources (per manufacturer)
+C17    : Kitchen
+D17    : Pizza maker
+E17    : 10:00 AM
+A18    : 12
+B18    : Brush the oven deck clean with a brass brush
+C18    : Kitchen
+D18    : Pizza maker
+E18    : 10:00 AM
+A19    : 13
+B19    : Turn on the pasta / finishing oven if needed
+C19    : Kitchen
+D19    : Line cook
+E19    : 10:30 AM
+A20    :   DOUGH & MISE EN PLACE
+A21    : 14
+B21    : Check the walk-in cooler and freezer ran all night and log temps (cooler 41 °F or below / freezer 0 °F or below) — log reading: ____ °F. If out of range, don't use the dough or product until it's assessed
+C21    : Walk-in
+D21    : Pizza maker
+E21    : 9:30 AM
+A22    : 15
+B22    : Pull dough balls from the walk-in to temper (1–2 h)
+C22    : Kitchen
+D22    : Pizza maker
+E22    : 10:00 AM
+A23    : 16
+B23    : Check dough condition: proofing, texture, bubbles
+C23    : Kitchen
+D23    : Pizza maker
+E23    : 10:00 AM
+A24    : 17
+B24    : Mix fresh dough if there isn't enough from yesterday
+C24    : Kitchen
+D24    : Pizza maker
+E24    : 9:00 AM
+A25    : 18
+B25    : Make today's tomato sauce if house-made; if cooked, cool 135 → 70 °F in 2 h and to 41 °F in 4 h more (FDA 3-501.14), then cover, date and hold at 41 °F or below
+C25    : Kitchen
+D25    : Line cook
+E25    : 10:00 AM
+A26    : 19
+B26    : Slice fresh mozzarella and drain; it is TCS: 41 °F or below (FDA 3-501.16), small batches back to the walk-in
+C26    : Kitchen
+D26    : Line cook
+E26    : 10:30 AM
+A27    : 20
+B27    : Prep toppings: pepperoni, ham, mushrooms, olives
+C27    : Kitchen
+D27    : Line cook
+E27    : 10:30 AM
+A28    : 21
+B28    : Prep produce: arugula, fresh tomato, onion, bell pepper. Wash raw-eaten items (arugula, basil, tomato) under running potable water; any produce wash or chlorine must be food-safe, at label dose, then RINSE
+C28    : Kitchen
+D28    : Line cook
+E28    : 10:30 AM
+A29    : 22
+B29    : Set up the make line (dough → sauce → cheese → toppings); inserts at 41 °F or below (FDA 3-501.16)
+C29    : Kitchen
+D29    : Pizza maker
+E29    : 11:00 AM
+A30    :   STOCK & CHECKS
+A31    : 23
+B31    : Check flour stock (00, whole wheat)
+C31    : Storage
+D31    : Line cook
+E31    : 10:00 AM
+A32    : 24
+B32    : Check mozzarella and cheese stock
+C32    : Walk-in
+D32    : Line cook
+E32    : 10:00 AM
+A33    : 25
+B33    : Check tomato stock (canned/fresh)
+C33    : Storage
+D33    : Line cook
+E33    : 10:00 AM
+A34    : 26
+B34    : Prep the rush order list
+C34    : Kitchen
+D34    : Line cook
+E34    : 10:15 AM
+A35    : 27
+B35    : Check expiration dates on opened products
+C35    : Walk-in
+D35    : Line cook
+E35    : 10:15 AM
+A36    :   PRE-SHIFT HYGIENE
+A37    : 28
+B37    : Wash hands when back from a delivery or after handling cash, boxes or trash, BEFORE touching dough again
+C37    : Kitchen
+D37    : All staff
+E37    : 10:00 AM
+A38    : 29
+B38    : Clean, then sanitize work surfaces and dough bench (approved sanitizer, test strip; FDA 4-501.114)
+C38    : Kitchen
+D38    : Line cook
+E38    : 10:00 AM
+A39    : 30
+B39    : Check soap and paper towels in dispensers
+C39    : Kitchen
+D39    : Line cook
+E39    : 10:00 AM
+A46    : Tasks done:
+D46    = =COUNTIFS(B5:B44,"?*",F5:F44,"✓")   → caché 0.0
+E46    : of
+F46    = =COUNTIF(B5:B44,"?*")-COUNTIF(F5:F44,"N/A")   → caché 30.0
+A48    : Shift manager signature: _________________________    Time: _________
+A50    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 F29 F31 F32 F33 F34 F35 F37 F38 F39 F40 F41 F42 F43 F44 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G44 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Opening» · protegida=True · área='FOH Opening'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Checklist — FOH & Patio
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOH
+A6     : 1
+B6     : Turn on lights and A/C
+C6     : FOH
+D6     : Server
+E6     : 11:00 AM
+A7     : 2
+B7     : Clean and set tables
+C7     : FOH
+D7     : Server
+E7     : 11:00 AM
+A8     : 3
+B8     : Place menus on tables
+C8     : FOH
+D8     : Server
+E8     : 11:00 AM
+A9     : 4
+B9     : Update the menu board: pizza of the day, specials
+C9     : FOH
+D9     : Shift manager
+E9     : 11:15 AM
+A10    : 5
+B10    : Put on background music
+C10    : FOH
+D10    : Shift manager
+E10    : 11:15 AM
+A11    : 6
+B11    : Check the POS / card terminal is working
+C11    : FOH
+D11    : Shift manager
+E11    : 11:15 AM
+A12    : 7
+B12    : Set up the starting bank
+C12    : FOH
+D12    : Shift manager
+E12    : 11:15 AM
+A13    :   PATIO
+A14    : 8
+B14    : Set out patio tables and chairs
+C14    : Patio
+D14    : Server
+E14    : 11:00 AM
+A15    : 9
+B15    : Clean patio tables
+C15    : Patio
+D15    : Server
+E15    : 11:00 AM
+A16    : 10
+B16    : Open umbrellas if sunny
+C16    : Patio
+D16    : Server
+E16    : 11:00 AM
+A17    :   DELIVERY / TAKEOUT
+A18    : 11
+B18    : Turn on the delivery tablets (DoorDash, Uber Eats, Grubhub)
+C18    : FOH
+D18    : Shift manager
+E18    : 11:30 AM
+A19    : 12
+B19    : Check pizza box stock (medium, large, X-large)
+C19    : Storage
+D19    : Shift manager
+E19    : 11:00 AM
+A20    : 13
+B20    : Check stock of bags, napkins, sauce packets
+C20    : Storage
+D20    : Shift manager
+E20    : 11:00 AM
+A21    : 14
+B21    : Update the menu on third-party delivery apps if it changed
+C21    : Office
+D21    : Shift manager
+E21    : 11:00 AM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Kitchen Closing» · protegida=True · área='Kitchen Closing'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Closing Checklist — Kitchen / Prep Area
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   DOUGH & PRODUCT
+A6     : 1
+B6     : Cold-ferment leftover dough balls in covered dough boxes at 41 °F or below, labeled with date and time; use within your recipe's window
+C6     : Kitchen
+D6     : Pizza maker
+E6     : 10:30 PM
+A7     : 2
+B7     : Cover and refrigerate the tomato sauce
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 PM
+A8     : 3
+B8     : Opened fresh mozzarella: cover, hold at 41 °F or below, date-mark (7 days max, day opened = day 1, never past use-by; FDA 3-501.17(B))
+C8     : Kitchen
+D8     : Line cook
+E8     : 10:30 PM
+A9     : 4
+B9     : Cover and refrigerate all toppings
+C9     : Kitchen
+D9     : Line cook
+E9     : 10:30 PM
+A10    : 5
+B10    : Date-mark everything: ready-to-eat food keeps 7 days at 41 °F, prep day = day 1 (FDA 3-501.17)
+C10    : Kitchen
+D10    : Line cook
+E10    : 10:30 PM
+A11    :   OVEN & EQUIPMENT
+A12    : 6
+B12    : Let the oven cool down (never shut a wood-fired oven off abruptly)
+C12    : Kitchen
+D12    : Pizza maker
+E12    : 10:30 PM
+A13    : 7
+B13    : Remove ash only when cold (at close, or first thing next morning) into a lidded METAL container, never trash or plastic (NFPA 96)
+C13    : Kitchen
+D13    : Pizza maker
+E13    : 11:00 PM
+A14    : 8
+B14    : Brush the oven deck clean
+C14    : Kitchen
+D14    : Pizza maker
+E14    : 11:00 PM
+A15    : 9
+B15    : Turn off the exhaust hood (wood-fired oven: not while fire or embers remain; follow the manufacturers)
+C15    : Kitchen
+D15    : Line cook
+E15    : 11:00 PM
+A16    :   CLEANING
+A17    : 10
+B17    : Clean the dough bench and lightly flour it
+C17    : Kitchen
+D17    : Line cook
+E17    : 10:45 PM
+A18    : 11
+B18    : Clean the make line and trays
+C18    : Kitchen
+D18    : Line cook
+E18    : 10:45 PM
+A19    : 12
+B19    : Wash utensils: peel, pizza cutter, rolling pins
+C19    : Kitchen
+D19    : Dishwasher / prep
+E19    : 10:45 PM
+A20    : 13
+B20    : Sweep and mop the kitchen floor
+C20    : Kitchen
+D20    : Dishwasher / prep
+E20    : 11:00 PM
+A21    : 14
+B21    : Take out trash and recycling (cardboard boxes)
+C21    : Kitchen
+D21    : Dishwasher / prep
+E21    : 11:00 PM
+A22    :   TOMORROW'S PREP
+A23    : 15
+B23    : Prep tomorrow's dough: balls in covered dough boxes for cold fermentation at 41 °F or below, dated and timed (use window per recipe)
+C23    : Kitchen
+D23    : Pizza maker
+E23    : 10:00 PM
+A24    : 16
+B24    : Note shortages for the order
+C24    : Kitchen
+D24    : Line cook
+E24    : 10:30 PM
+A25    : 17
+B25    : Log the day's waste (product, amount, reason): dough balls past use, remade or returned pizzas, discarded toppings — without it, monthly food cost is off
+C25    : Kitchen
+D25    : Pizza maker
+E25    : 10:45 PM
+A26    : 18
+B26    : Thaw tomorrow's needs in the walk-in at 41 °F or below (FDA 3-501.13), never at room temp
+C26    : Kitchen
+D26    : Line cook
+E26    : 10:30 PM
+A33    : Tasks done:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : of
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 18.0
+A35    : Shift manager signature: _________________________    Time: _________
+A37    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Closing» · protegida=True · área='FOH Closing'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Closing Checklist — FOH, Patio & Delivery
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOH
+A6     : 1
+B6     : Strip the tables
+C6     : FOH
+D6     : Server
+E6     : 10:30 PM
+A7     : 2
+B7     : Clean tables, then sanitize (approved sanitizer, test strip; FDA 4-501.114); keep wiping cloths in sanitizer
+C7     : FOH
+D7     : Server
+E7     : 10:30 PM
+A8     : 3
+B8     : Sweep and mop the floor
+C8     : FOH
+D8     : Dishwasher / prep
+E8     : 10:45 PM
+A9     : 4
+B9     : Restock napkins and condiments for tomorrow
+C9     : FOH
+D9     : Server
+E9     : 10:45 PM
+A10    :   PATIO
+A11    : 5
+B11    : Stack chairs and tables (or chain them)
+C11    : Patio
+D11    : Server
+E11    : 10:30 PM
+A12    : 6
+B12    : Close the umbrellas
+C12    : Patio
+D12    : Server
+E12    : 10:30 PM
+A13    :   DELIVERY, REGISTER & RESTROOMS
+A14    : 7
+B14    : Turn off the delivery tablets
+C14    : FOH
+D14    : Shift manager
+E14    : 10:30 PM
+A15    : 8
+B15    : Count the pizza boxes left for tomorrow
+C15    : Storage
+D15    : Shift manager
+E15    : 10:30 PM
+A16    : 9
+B16    : Balance the day's register
+C16    : Office
+D16    : Shift manager
+E16    : 10:45 PM
+A17    : 10
+B17    : Log incidents
+C17    : Office
+D17    : Shift manager
+E17    : 10:45 PM
+A18    : 11
+B18    : Final restroom clean
+C18    : Restrooms
+D18    : Dishwasher / prep
+E18    : 10:45 PM
+A19    : 12
+B19    : Restock soap and paper towels
+C19    : Restrooms
+D19    : Dishwasher / prep
+E19    : 10:45 PM
+A20    :   LOCK-UP
+A21    : 13
+B21    : Turn off the FOH lights, HVAC and music
+C21    : FOH
+D21    : Shift manager
+E21    : 11:00 PM
+A22    : 14
+B22    : Set the alarm and lock up
+C22    : FOH
+D22    : Shift manager
+E22    : 11:00 PM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 14.0
+A31    : Shift manager signature: _________________________    Time: _________
+A33    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F14 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 02-pizza-kitchen-station-checklists.xlsx
+# docProps: title='Pizza Kitchen Station Checklists: Pizza Oven, Make Line, Apps & Pasta' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Pizza Kitchen Station Checklists: Pizza Oven, Make Line, Apps & Pasta
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 02-pizza-kitchen-station-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-pizzeria-opening-closing-checklist.xlsx and 01-pizza-shop-opening-closing-checklists.xlsx.
+B28    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pizza Oven Station» · protegida=True · área='Pizza Oven Station'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pizza Maker Station — Oven & Dough
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Check oven temp: 750–840 °F Neapolitan / 570 °F Roman — log reading: ____ °F
+C6     : Oven
+D6     : Pizza maker
+E6     : 11:00 AM
+A7     : 2
+B7     : Temper dough balls (pull from the walk-in)
+C7     : Kitchen
+D7     : Pizza maker
+E7     : 10:00 AM
+A8     : 3
+B8     : Stretch the first dough rounds for the rush
+C8     : Kitchen
+D8     : Pizza maker
+E8     : 11:30 AM
+A9     : 4
+B9     : Set out flour on the bench (semolina)
+C9     : Kitchen
+D9     : Pizza maker
+E9     : 11:00 AM
+A10    : 5
+B10    : Check the pizza peel: clean and floured
+C10    : Oven
+D10    : Pizza maker
+E10    : 11:00 AM
+A11    :   DURING SERVICE
+A12    : 6
+B12    : Hand-stretch the dough (no rolling pin for Neapolitan)
+C12    : Kitchen
+D12    : Pizza maker
+E12    : —
+A13    : 7
+B13    : Watch bake time: 60–90 sec Neapolitan / 3–5 min Roman
+C13    : Oven
+D13    : Pizza maker
+E13    : —
+A14    : 8
+B14    : Turn the pizza in the oven for an even bake
+C14    : Oven
+D14    : Pizza maker
+E14    : —
+A15    : 9
+B15    : Check doneness: leopard spotting, not burnt
+C15    : Oven
+D15    : Pizza maker
+E15    : —
+A16    : 10
+B16    : Hold a steady oven temp — log reading: ____ °F
+C16    : Oven
+D16    : Pizza maker
+E16    : —
+A17    : 11
+B17    : Add wood / adjust gas as needed
+C17    : Oven
+D17    : Pizza maker
+E17    : —
+A18    : 12
+B18    : Cut the pizza and send it to the pass
+C18    : Kitchen
+D18    : Pizza maker
+E18    : —
+A19    :   AFTER SERVICE
+A20    : 13
+B20    : Clean the dough bench
+C20    : Kitchen
+D20    : Pizza maker
+E20    : 10:30 PM
+A21    : 14
+B21    : Clean the peel and pizza cutter
+C21    : Kitchen
+D21    : Pizza maker
+E21    : 10:30 PM
+A22    : 15
+B22    : Sweep flour off the floor
+C22    : Kitchen
+D22    : Pizza maker
+E22    : 10:30 PM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Shift manager signature: _________________________    Time: _________
+A33    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Make Line» · protegida=True · área='Make Line'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Make Line — Sauce, Cheese & Toppings
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Set up make line inserts: tomato sauce, mozzarella, toppings — all at 41 °F or below (FDA 3-501.16)
+C6     : Kitchen
+D6     : Line cook
+E6     : 11:00 AM
+A7     : 2
+B7     : Slice fresh mozzarella and drain well; TCS: 41 °F or below (FDA 3-501.16), small batches back to the walk-in
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Slice mushrooms, bell peppers, olives
+C8     : Kitchen
+D8     : Line cook
+E8     : 10:30 AM
+A9     : 4
+B9     : Prep meats: pepperoni, ham, Italian sausage — raw meat (e.g., uncooked sausage) in its own insert with its own utensil, apart from ready-to-eat food (FDA 3-302.11)
+C9     : Kitchen
+D9     : Line cook
+E9     : 10:30 AM
+A10    : 5
+B10    : Prep premium produce: arugula, cherry tomatoes, artichoke — arugula and basil go on RAW after the oven: wash under running potable water; any produce wash or chlorine must be food-safe, at label dose, then RINSE
+C10    : Kitchen
+D10    : Line cook
+E10    : 10:30 AM
+A11    : 6
+B11    : Check stock of every ingredient on the line
+C11    : Kitchen
+D11    : Line cook
+E11    : 11:00 AM
+A12    :   DURING SERVICE
+A13    : 7
+B13    : Build pizzas to ticket: dough → sauce → cheese → toppings
+C13    : Kitchen
+D13    : Line cook
+E13    : —
+A14    : 8
+B14    : Restock inserts when they drop to 30%
+C14    : Kitchen
+D14    : Line cook
+E14    : —
+A15    : 9
+B15    : Keep the area clean and organized
+C15    : Kitchen
+D15    : Line cook
+E15    : —
+A16    : 10
+B16    : Tell the pizza maker: pizza ready for the oven
+C16    : Kitchen
+D16    : Line cook
+E16    : —
+A17    :   AFTER SERVICE
+A18    : 11
+B18    : Cover and refrigerate all inserts
+C18    : Kitchen
+D18    : Line cook
+E18    : 10:30 PM
+A19    : 12
+B19    : Clean the whole make line and sanitize it (approved sanitizer, test strip; FDA 4-501.114)
+C19    : Kitchen
+D19    : Line cook
+E19    : 10:30 PM
+A20    : 13
+B20    : Log the shift's waste (product, amount, reason): inserts that can't be saved, spoiled mozzarella and past-date produce
+C20    : Kitchen
+D20    : Line cook
+E20    : 10:30 PM
+A21    : 14
+B21    : Log usage for tomorrow's order
+C21    : Kitchen
+D21    : Line cook
+E21    : 10:30 PM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Apps & Pasta» · protegida=True · área='Apps & Pasta'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Apps & Pasta — Starters, Pasta & Desserts
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Wash raw-eaten greens (lettuce, arugula, basil) under running potable water BEFORE building the base salads (Caesar, caprese, house); any produce wash or chlorine must be food-safe, at label dose, then RINSE
+C6     : Kitchen
+D6     : Line cook
+E6     : 10:30 AM
+A7     : 2
+B7     : Prep appetizers: bruschetta, arancini, focaccia
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Boil fresh pasta if needed
+C8     : Kitchen
+D8     : Line cook
+E8     : 11:00 AM
+A9     : 4
+B9     : Prep pasta sauces: carbonara, pesto, arrabbiata — carbonara with pasteurized eggs, or a consumer advisory on the menu if raw or undercooked egg (FDA 3-603.11)
+C9     : Kitchen
+D9     : Line cook
+E9     : 10:30 AM
+A10    : 5
+B10    : Plate desserts: tiramisu, panna cotta, ice cream — tiramisu with pasteurized eggs, or a menu advisory if raw or undercooked egg (FDA 3-603.11); TCS desserts at 41 °F or below, date-marked (7 days; FDA 3-501.17)
+C10    : Kitchen
+D10    : Line cook
+E10    : 10:30 AM
+A11    :   DURING SERVICE
+A12    : 6
+B12    : Cook appetizers and pasta to ticket; reheat anything made ahead to 165 °F within 2 h (FDA 3-403.11) and hold hot at 135 °F or above (sauces, pre-preps)
+C12    : Kitchen
+D12    : Line cook
+E12    : —
+A13    : 7
+B13    : Plate and send to the pass, coordinating with the pizzas
+C13    : Kitchen
+D13    : Line cook
+E13    : —
+A14    : 8
+B14    : Restock pasta and salad mise en place
+C14    : Kitchen
+D14    : Line cook
+E14    : —
+A15    :   AFTER SERVICE
+A16    : 9
+B16    : Store sauces and pre-preps covered and date-marked (7 days max, prep day = day 1); cool 135 → 70 °F in 2 h, then to 41 °F in 4 h more (FDA 3-501.14, 3-501.17)
+C16    : Kitchen
+D16    : Line cook
+E16    : 10:30 PM
+A17    : 10
+B17    : Clean the cooking area
+C17    : Kitchen
+D17    : Line cook
+E17    : 10:30 PM
+A24    : Tasks done:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : of
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 10.0
+A26    : Shift manager signature: _________________________    Time: _________
+A28    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 03-pizzeria-manager-checklist.xlsx
+# docProps: title='Pizzeria Manager Checklist: Daily, Weekly, Monthly & Shift Handover' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Pizzeria Manager Checklist: Daily, Weekly, Monthly & Shift Handover
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 03-pizzeria-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-pizzeria-opening-closing-checklist.xlsx and 01-pizza-shop-opening-closing-checklists.xlsx.
+B28    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Manager Daily» · protegida=True · área='Manager Daily'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Daily Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE OPENING
+A6     : 1
+B6     : Review today's reservations
+C6     : Office
+D6     : Manager
+E6     : 10:00 AM
+A7     : 2
+B7     : Make sure the whole team has arrived
+C7     : General
+D7     : Manager
+E7     : 10:00 AM
+A8     : 3
+B8     : Pre-shift meeting: specials, allergens, 86s, reservations
+C8     : General
+D8     : Manager
+E8     : 10:15 AM
+A9     : 4
+B9     : Check critical stock: dough, mozzarella, flour, tomato
+C9     : Storage
+D9     : Manager
+E9     : 10:00 AM
+A10    : 5
+B10    : Check the oven (if there was a problem yesterday)
+C10    : Kitchen
+D10    : Manager
+E10    : 10:00 AM
+A11    :   DURING SERVICE
+A12    : 6
+B12    : Watch ticket times: pizza out in under 15 min
+C12    : General
+D12    : Manager
+E12    : —
+A13    : 7
+B13    : Manage reservations and walk-ins
+C13    : FOH
+D13    : Manager
+E13    : —
+A14    : 8
+B14    : Quality check: inspect pizzas before the pass
+C14    : Kitchen
+D14    : Manager
+E14    : —
+A15    : 9
+B15    : Manage delivery orders: times and quality
+C15    : Office
+D15    : Manager
+E15    : —
+A16    : 10
+B16    : Resolve guest issues
+C16    : General
+D16    : Manager
+E16    : —
+A17    :   AT CLOSE
+A18    : 11
+B18    : Supervise the close of every area
+C18    : General
+D18    : Manager
+E18    : 10:30 PM
+A19    : 12
+B19    : Balance the register (cash + card + delivery)
+C19    : Office
+D19    : Manager
+E19    : 10:45 PM
+A20    : 13
+B20    : Place tomorrow's orders (flour, mozzarella, tomato)
+C20    : Office
+D20    : Manager
+E20    : 10:30 PM
+A21    : 14
+B21    : Log the day's incidents
+C21    : Office
+D21    : Manager
+E21    : 10:45 PM
+A22    : 15
+B22    : Review and approve team time-clock punches (in, out, breaks) in the POS or time-clock app
+C22    : Office
+D22    : Manager
+E22    : 10:45 PM
+A23    : 16
+B23    : Confirm tomorrow's dough was prepped
+C23    : Kitchen
+D23    : Manager
+E23    : 10:30 PM
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 16.0
+A32    : Shift manager signature: _________________________    Time: _________
+A34    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Weekly» · protegida=True · área='Manager Weekly'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Manager Checklist (Monday)
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   ANALYSIS
+A6     : 1
+B6     : Review last week's sales (dine-in vs delivery)
+C6     : Office
+D6     : Manager
+E6     : Monday
+A7     : 2
+B7     : Analyze best- and worst-selling pizzas
+C7     : Office
+D7     : Manager
+E7     : Monday
+A8     : 3
+B8     : Review feedback: Google, Yelp, TripAdvisor and delivery apps
+C8     : Office
+D8     : Manager
+E8     : Monday
+A9     : 4
+B9     : Evaluate dough and topping waste
+C9     : Office
+D9     : Manager
+E9     : Monday
+A10    :   ORDERS
+A11    : 5
+B11    : Weekly flour order (00, semolina)
+C11    : Office
+D11    : Manager
+E11    : Monday
+A12    : 6
+B12    : Mozzarella and cheese order
+C12    : Office
+D12    : Manager
+E12    : Monday
+A13    : 7
+B13    : Tomato order (San Marzano, peeled)
+C13    : Office
+D13    : Manager
+E13    : Monday
+A14    : 8
+B14    : Cured meats and meats order
+C14    : Office
+D14    : Manager
+E14    : Monday
+A15    : 9
+B15    : Check pizza box and delivery packaging stock
+C15    : Storage
+D15    : Manager
+E15    : Monday
+A16    : 10
+B16    : Check cleaning supply stock
+C16    : Storage
+D16    : Manager
+E16    : Monday
+A17    :   TEAM
+A18    : 11
+B18    : Review the staff schedule for the week
+C18    : Office
+D18    : Manager
+E18    : Monday
+A19    : 12
+B19    : Add coverage for Friday–Saturday if needed
+C19    : Office
+D19    : Manager
+E19    : Monday
+A20    :   MAINTENANCE
+A21    : 13
+B21    : Supervise the weekly deep clean
+C21    : General
+D21    : Manager
+E21    : Monday
+A22    : 14
+B22    : Check the oven
+C22    : Kitchen
+D22    : Manager
+E22    : Monday
+A23    : 15
+B23    : Check expiration dates in storage and walk-ins
+C23    : Storage
+D23    : Manager
+E23    : Monday
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 15.0
+A32    : Shift manager signature: _________________________    Time: _________
+A34    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Monthly» · protegida=True · área='Manager Monthly'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Monthly Checklist
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   FINANCIAL
+A6     : 1
+B6     : Review the month's P&L
+C6     : Office
+D6     : Manager
+E6     : Day 1
+A7     : 2
+B7     : Calculate the month's food cost (target: 28–32%)
+C7     : Office
+D7     : Manager
+E7     : Day 1
+A8     : 3
+B8     : Review labor cost vs. sales
+C8     : Office
+D8     : Manager
+E8     : Day 1
+A9     : 4
+B9     : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C9     : Office
+D9     : Manager
+E9     : Monthly
+A10    : 5
+B10    : Review delivery app commissions
+C10    : Office
+D10    : Manager
+E10    : Day 1
+A11    : 6
+B11    : Negotiate supplier prices if needed
+C11    : Office
+D11    : Manager
+E11    : Day 1
+A12    :   MAINTENANCE
+A13    : 7
+B13    : Full oven inspection: deck, burners, chimney
+C13    : Kitchen
+D13    : Technician
+E13    : Monthly
+A14    : 8
+B14    : Dish machine: filters, rinse aid, softener salt
+C14    : Kitchen
+D14    : Manager
+E14    : Monthly
+A15    : 9
+B15    : Exhaust hood: filters
+C15    : Kitchen
+D15    : Technician
+E15    : Monthly
+A16    : 10
+B16    : HVAC: filters
+C16    : General
+D16    : Technician
+E16    : Monthly
+A17    : 11
+B17    : First-aid kit: stock and expiration dates
+C17    : General
+D17    : Manager
+E17    : Monthly
+A18    :   MARKETING
+A19    : 12
+B19    : Review the menu: rotate seasonal pizzas
+C19    : Office
+D19    : Manager
+E19    : Monthly
+A20    : 13
+B20    : Plan next month's promotions
+C20    : Office
+D20    : Manager
+E20    : Monthly
+A21    : 14
+B21    : Review social media and delivery app photos
+C21    : Office
+D21    : Manager
+E21    : Monthly
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shift Handover» · protegida=True · área='Shift Handover'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Shift Change Checklist (Handover)
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   STATUS
+A6     : 1
+B6     : Occupied tables and pending reservations
+C6     : General
+D6     : Outgoing shift
+E6     : —
+A7     : 2
+B7     : Tickets in progress in the kitchen
+C7     : General
+D7     : Outgoing shift
+E7     : —
+A8     : 3
+B8     : Pending delivery orders
+C8     : General
+D8     : Outgoing shift
+E8     : —
+A9     :   INCIDENTS
+A10    : 4
+B10    : Shift incidents
+C10    : General
+D10    : Outgoing shift
+E10    : —
+A11    : 5
+B11    : Customer complaints
+C11    : General
+D11    : Outgoing shift
+E11    : —
+A12    : 6
+B12    : 86s: what ran out
+C12    : General
+D12    : Outgoing shift
+E12    : —
+A13    :   STOCK
+A14    : 7
+B14    : Dough status (how many balls are left)
+C14    : Kitchen
+D14    : Outgoing shift
+E14    : —
+A15    : 8
+B15    : Mozzarella and toppings status
+C15    : Kitchen
+D15    : Outgoing shift
+E15    : —
+A16    : 9
+B16    : Pizza boxes left
+C16    : Storage
+D16    : Outgoing shift
+E16    : —
+A17    : 10
+B17    : Oven temperature — log reading: ____ °F
+C17    : Kitchen
+D17    : Outgoing shift
+E17    : —
+A24    : Tasks done:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : of
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 10.0
+A26    : Shift manager signature: _________________________    Time: _________
+A28    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F14 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 04-pizza-shop-duties-by-role.xlsx
+# docProps: title='Pizza Shop Duties by Role: Pizza Maker, Line Cook, Shift Manager, Server & Driver' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Pizza Shop Duties by Role: Pizza Maker, Line Cook, Shift Manager, Server & Driver
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 04-pizza-shop-duties-by-role.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-pizzeria-opening-closing-checklist.xlsx and 01-pizza-shop-opening-closing-checklists.xlsx.
+B28    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pizza Maker» · protegida=True · área='Pizza Maker'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Pizza Maker / Pizzaiolo
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Light the oven and reach target temp — log reading: ____ °F
+C6     : Oven
+D6     : Pizza maker
+E6     : 10:00 AM
+A7     : 2
+B7     : Pull dough from the walk-in and temper it
+C7     : Kitchen
+D7     : Pizza maker
+E7     : 10:00 AM
+A8     : 3
+B8     : Set up the bench: flour, semolina, peel
+C8     : Kitchen
+D8     : Pizza maker
+E8     : 10:30 AM
+A9     : 4
+B9     : Check dough condition: texture and proofing
+C9     : Kitchen
+D9     : Pizza maker
+E9     : 10:00 AM
+A10    : 5
+B10    : Stretch dough rounds for the rush
+C10    : Kitchen
+D10    : Pizza maker
+E10    : 11:30 AM
+A11    :   SERVICE
+A12    : 6
+B12    : Hand-stretch dough for each pizza
+C12    : Kitchen
+D12    : Pizza maker
+E12    : —
+A13    : 7
+B13    : Slide the pizza into the oven with the peel
+C13    : Oven
+D13    : Pizza maker
+E13    : —
+A14    : 8
+B14    : Watch the bake: turn it, check the bottom
+C14    : Oven
+D14    : Pizza maker
+E14    : —
+A15    : 9
+B15    : Hold a steady oven temp — log reading: ____ °F
+C15    : Oven
+D15    : Pizza maker
+E15    : —
+A16    : 10
+B16    : Cut and send to the pass
+C16    : Kitchen
+D16    : Pizza maker
+E16    : —
+A17    :   CLOSING
+A18    : 11
+B18    : Clean the dough bench
+C18    : Kitchen
+D18    : Pizza maker
+E18    : 10:30 PM
+A19    : 12
+B19    : Prep tomorrow's dough: balls in covered dough boxes, cold-fermented at 41 °F or below, dated and timed (use window per recipe)
+C19    : Kitchen
+D19    : Pizza maker
+E19    : 10:00 PM
+A20    : 13
+B20    : Clean peel, pizza cutter, rolling pin
+C20    : Kitchen
+D20    : Pizza maker
+E20    : 10:30 PM
+A21    : 14
+B21    : Remove oven ash when cold into a lidded METAL container, never trash or plastic (NFPA 96)
+C21    : Oven
+D21    : Pizza maker
+E21    : 11:00 PM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift manager signature: _________________________    Time: _________
+A32    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Line Cook» · protegida=True · área='Line Cook'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Line Cook
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Slice mozzarella and drain
+C6     : Kitchen
+D6     : Line cook
+E6     : 10:30 AM
+A7     : 2
+B7     : Prep all toppings in inserts
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Set up an organized make line
+C8     : Kitchen
+D8     : Line cook
+E8     : 11:00 AM
+A9     : 4
+B9     : Make tomato sauce if house-made
+C9     : Kitchen
+D9     : Line cook
+E9     : 10:00 AM
+A10    : 5
+B10    : Check stock of every ingredient
+C10    : Kitchen
+D10    : Line cook
+E10    : 11:00 AM
+A11    :   SERVICE
+A12    : 6
+B12    : Build pizzas to ticket
+C12    : Kitchen
+D12    : Line cook
+E12    : —
+A13    : 7
+B13    : Restock inserts as they run low
+C13    : Kitchen
+D13    : Line cook
+E13    : —
+A14    : 8
+B14    : Keep the line clean and organized
+C14    : Kitchen
+D14    : Line cook
+E14    : —
+A15    : 9
+B15    : Prep appetizers and pasta if needed
+C15    : Kitchen
+D15    : Line cook
+E15    : —
+A16    :   CLOSING
+A17    : 10
+B17    : Cover and refrigerate all inserts
+C17    : Kitchen
+D17    : Line cook
+E17    : 10:30 PM
+A18    : 11
+B18    : Clean the make line
+C18    : Kitchen
+D18    : Line cook
+E18    : 10:30 PM
+A19    : 12
+B19    : Log usage for the order
+C19    : Kitchen
+D19    : Line cook
+E19    : 10:30 PM
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Shift manager signature: _________________________    Time: _________
+A30    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shift Manager» · protegida=True · área='Shift Manager'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Shift Manager
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Open the shop and disarm the alarm
+C6     : General
+D6     : Shift manager
+E6     : 10:00 AM
+A7     : 2
+B7     : Check the full team is in
+C7     : General
+D7     : Shift manager
+E7     : 10:00 AM
+A8     : 3
+B8     : Pre-shift meeting: specials, 86s, reservations
+C8     : General
+D8     : Shift manager
+E8     : 10:15 AM
+A9     : 4
+B9     : Turn on the delivery tablets (DoorDash, Uber Eats, Grubhub)
+C9     : FOH
+D9     : Shift manager
+E9     : 11:30 AM
+A10    : 5
+B10    : Set up the register
+C10    : FOH
+D10    : Shift manager
+E10    : 11:00 AM
+A11    :   SERVICE
+A12    : 6
+B12    : Watch kitchen and delivery times
+C12    : General
+D12    : Shift manager
+E12    : —
+A13    : 7
+B13    : Manage reservations and walk-ins
+C13    : FOH
+D13    : Shift manager
+E13    : —
+A14    : 8
+B14    : Resolve issues
+C14    : General
+D14    : Shift manager
+E14    : —
+A15    : 9
+B15    : Check quality at the pass
+C15    : Kitchen
+D15    : Shift manager
+E15    : —
+A16    :   CLOSING
+A17    : 10
+B17    : Supervise the full close
+C17    : General
+D17    : Shift manager
+E17    : 10:30 PM
+A18    : 11
+B18    : Balance the register
+C18    : Office
+D18    : Shift manager
+E18    : 10:45 PM
+A19    : 12
+B19    : Place tomorrow's orders
+C19    : Office
+D19    : Shift manager
+E19    : 10:30 PM
+A20    : 13
+B20    : Close the shop: alarm, lights, gas
+C20    : General
+D20    : Shift manager
+E20    : 11:00 PM
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Server» · protegida=True · área='Server'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Server
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Set the tables in your section
+C6     : FOH
+D6     : Server
+E6     : 11:00 AM
+A7     : 2
+B7     : Place menus on tables
+C7     : FOH
+D7     : Server
+E7     : 11:00 AM
+A8     : 3
+B8     : Restock condiments: chili oil, oregano, Parmesan
+C8     : FOH
+D8     : Server
+E8     : 11:00 AM
+A9     : 4
+B9     : Set up the patio if needed
+C9     : Patio
+D9     : Server
+E9     : 11:00 AM
+A10    :   SERVICE
+A11    : 5
+B11    : Greet and seat guests
+C11    : FOH
+D11    : Server
+E11    : —
+A12    : 6
+B12    : Take orders and know the 9 major allergens (milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy, sesame): wheat and milk are in nearly every pizza. Gluten itself isn't one of the 9 (wheat is) and lactose is an intolerance, not an allergen: record both anyway. UK: 14 (cereals containing gluten)
+C12    : FOH
+D12    : Server
+E12    : —
+A13    : 7
+B13    : Serve pizzas and drinks (beer and wine only if your license allows; 21+ with ID)
+C13    : FOH
+D13    : Server
+E13    : —
+A14    : 8
+B14    : Reset tables quickly between guests
+C14    : FOH
+D14    : Server
+E14    : —
+A15    : 9
+B15    : Offer dessert and coffee proactively
+C15    : FOH
+D15    : Server
+E15    : —
+A16    : 10
+B16    : Bring the check when the table is done or asks, without rushing
+C16    : FOH
+D16    : Server
+E16    : —
+A17    :   CLOSING
+A18    : 11
+B18    : Strip and clean tables
+C18    : FOH
+D18    : Server
+E18    : 10:30 PM
+A19    : 12
+B19    : Restock condiments for tomorrow
+C19    : FOH
+D19    : Server
+E19    : 10:30 PM
+A20    : 13
+B20    : Bring in the patio
+C20    : Patio
+D20    : Server
+E20    : 10:30 PM
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Delivery Driver» · protegida=True · área='Delivery Driver'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — In-House Delivery Driver
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   START OF SHIFT
+A6     : 1
+B6     : Check your car: fuel, lights, tires; license and vehicle insurance current and on file (your personal policy may exclude delivery: confirm with your insurer)
+C6     : Outside
+D6     : Delivery driver
+E6     : —
+A7     : 2
+B7     : Check the hot bag (insulated delivery bag): clean and closed; hot food at 135 °F or above, cold items (drinks, salads, desserts) in a separate bag at 41 °F or below (FDA 3-501.16)
+C7     : Outside
+D7     : Delivery driver
+E7     : —
+A8     : 3
+B8     : Check phone charger and GPS work
+C8     : Outside
+D8     : Delivery driver
+E8     : —
+A9     :   SERVICE
+A10    : 4
+B10    : Pick up the order: check the ticket against the box contents
+C10    : Kitchen
+D10    : Delivery driver
+E10    : —
+A11    : 5
+B11    : Carry it level, no tilting (the cheese slides)
+C11    : Outside
+D11    : Delivery driver
+E11    : —
+A12    : 6
+B12    : Deliver on time: target under 30 min from order
+C12    : Outside
+D12    : Delivery driver
+E12    : —
+A13    : 7
+B13    : Collect payment if cash on delivery
+C13    : Outside
+D13    : Delivery driver
+E13    : —
+A14    : 8
+B14    : Return to the shop without delay
+C14    : Outside
+D14    : Delivery driver
+E14    : —
+A15    :   END OF SHIFT
+A16    : 9
+B16    : Clean the hot bag: wipe the inside, sanitize (food-contact safe) and air-dry open
+C16    : Outside
+D16    : Delivery driver
+E16    : —
+A17    : 10
+B17    : Hand order cash and tickets to the shift manager; the driver's tips are the driver's, the shop can't keep them (FLSA, 29 U.S.C. 203(m)(2)(B))
+C17    : Office
+D17    : Delivery driver
+E17    : —
+A18    : 11
+B18    : Report delivery issues
+C18    : Office
+D18    : Delivery driver
+E18    : —
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Shift manager signature: _________________________    Time: _________
+A29    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F13 F14 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 05-pizzeria-cleaning-checklist-inventory-maintenance.xlsx
+# docProps: title='Pizzeria Cleaning Checklist, Inventory & Maintenance Schedule' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$40 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Pizzeria Cleaning Checklist, Inventory & Maintenance Schedule
+B4     : Quarterly, annual and freezer shelf life
+B6     : ▸ The "Quarterly & Annual" tab covers the maintenance you CONTRACT and that an inspector asks for: pest control, hood, duct and wood-fired oven chimney (NFPA 96), oven check, extinguishers and their hydrostatic test, hood fire suppression, gas, refrigeration, Legionella, water, used oil, waste, insurance and POS / sales tax.
+B7     : ▸ Write the service report number in the green column and initial it once the company has been; the last task on the sheet is to log the date of the next visit.
+B8     : ▸ The monthly tab keeps the checks your own team does (hood filters, a look at the extinguisher): they don't replace the contracted inspection, they prepare for it.
+B9     : ▸ At the bottom of "Weekly FIFO Check" there is an editable freezer shelf-life table by food group: one blanket rule for the whole freezer either throws out good dough or approves cured meat that has gone off.
+B11    : How the counter works
+B13    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B14    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B15    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B17    : Free rows
+B19    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B20    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B22    : Sheet protection
+B24    : ▸ Checklist sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked. The Daily Inventory sheet is left unprotected so you can add products: don't type over the Status column.
+B25    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B27    : Works with
+B29    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B30    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B31    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B32    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B33    : ▸ You are in 05-pizzeria-cleaning-checklist-inventory-maintenance.xlsx: what is NOT daily (weekly, monthly, quarterly and annual). The day-to-day is in 08-pizzeria-opening-closing-checklist.xlsx and 01-pizza-shop-opening-closing-checklists.xlsx.
+B35    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B37    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B38    : Contact: info@aichef.pro
+B40    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Daily Inventory» · protegida=False · área='Daily Inventory'!$A$1:$F$46 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Inventory — Pizza Shop Production Stock
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Manager: ________________
+A4     : Product
+B4     : On hand
+C4     : Unit
+D4     : Par
+E4     : Status
+F4     : Order
+A5     :   DOUGH & FLOUR
+A6     : Dough balls ready
+C6     : ea
+D6     : 30
+E6     = =IF(B6="","",IF(B6<D6,"⚠️ REORDER","OK"))   → caché None
+A7     : 00 flour
+C7     : lb
+D7     : 22
+E7     = =IF(B7="","",IF(B7<D7,"⚠️ REORDER","OK"))   → caché None
+A8     : Semolina flour
+C8     : lb
+D8     : 7
+E8     = =IF(B8="","",IF(B8<D8,"⚠️ REORDER","OK"))   → caché None
+A9     : Fresh yeast
+C9     : oz
+D9     : 4
+E9     = =IF(B9="","",IF(B9<D9,"⚠️ REORDER","OK"))   → caché None
+A10    : Salt
+C10    : lb
+D10    : 4
+E10    = =IF(B10="","",IF(B10<D10,"⚠️ REORDER","OK"))   → caché None
+A11    :   CHEESES
+A12    : Fior di latte mozzarella
+C12    : lb
+D12    : 11
+E12    = =IF(B12="","",IF(B12<D12,"⚠️ REORDER","OK"))   → caché None
+A13    : Buffalo mozzarella
+C13    : ea
+D13    : 6
+E13    = =IF(B13="","",IF(B13<D13,"⚠️ REORDER","OK"))   → caché None
+A14    : Grated Parmesan
+C14    : lb
+D14    : 2
+E14    = =IF(B14="","",IF(B14<D14,"⚠️ REORDER","OK"))   → caché None
+A15    : Gorgonzola
+C15    : lb
+D15    : 1
+E15    = =IF(B15="","",IF(B15<D15,"⚠️ REORDER","OK"))   → caché None
+A16    : Burrata
+C16    : ea
+D16    : 4
+E16    = =IF(B16="","",IF(B16<D16,"⚠️ REORDER","OK"))   → caché None
+A17    :   SAUCES & BASES
+A18    : Tomato sauce (prepared)
+C18    : qt
+D18    : 5
+E18    = =IF(B18="","",IF(B18<D18,"⚠️ REORDER","OK"))   → caché None
+A19    : San Marzano tomatoes (cans)
+C19    : ea
+D19    : 10
+E19    = =IF(B19="","",IF(B19<D19,"⚠️ REORDER","OK"))   → caché None
+A20    : Pesto
+C20    : oz
+D20    : 10
+E20    = =IF(B20="","",IF(B20<D20,"⚠️ REORDER","OK"))   → caché None
+A21    : Extra virgin olive oil
+C21    : qt
+D21    : 2
+E21    = =IF(B21="","",IF(B21<D21,"⚠️ REORDER","OK"))   → caché None
+A22    : Truffle oil
+C22    : fl oz
+D22    : 3
+E22    = =IF(B22="","",IF(B22<D22,"⚠️ REORDER","OK"))   → caché None
+A23    :   MEATS & CHARCUTERIE
+A24    : Pepperoni
+C24    : lb
+D24    : 4
+E24    = =IF(B24="","",IF(B24<D24,"⚠️ REORDER","OK"))   → caché None
+A25    : Cooked ham
+C25    : lb
+D25    : 2
+E25    = =IF(B25="","",IF(B25<D25,"⚠️ REORDER","OK"))   → caché None
+A26    : Italian sausage
+C26    : lb
+D26    : 2
+E26    = =IF(B26="","",IF(B26<D26,"⚠️ REORDER","OK"))   → caché None
+A27    : Anchovies
+C27    : oz
+D27    : 7
+E27    = =IF(B27="","",IF(B27<D27,"⚠️ REORDER","OK"))   → caché None
+A28    : Prosciutto
+C28    : lb
+D28    : 1
+E28    = =IF(B28="","",IF(B28<D28,"⚠️ REORDER","OK"))   → caché None
+A29    :   PRODUCE & FRESH
+A30    : Fresh mushrooms
+C30    : lb
+D30    : 2
+E30    = =IF(B30="","",IF(B30<D30,"⚠️ REORDER","OK"))   → caché None
+A31    : Black olives
+C31    : lb
+D31    : 1
+E31    = =IF(B31="","",IF(B31<D31,"⚠️ REORDER","OK"))   → caché None
+A32    : Bell peppers
+C32    : lb
+D32    : 1
+E32    = =IF(B32="","",IF(B32<D32,"⚠️ REORDER","OK"))   → caché None
+A33    : Onion
+C33    : lb
+D33    : 1
+E33    = =IF(B33="","",IF(B33<D33,"⚠️ REORDER","OK"))   → caché None
+A34    : Arugula
+C34    : oz
+D34    : 7
+E34    = =IF(B34="","",IF(B34<D34,"⚠️ REORDER","OK"))   → caché None
+A35    : Cherry tomatoes
+C35    : lb
+D35    : 1
+E35    = =IF(B35="","",IF(B35<D35,"⚠️ REORDER","OK"))   → caché None
+A36    : Fresh basil
+C36    : bunches
+D36    : 3
+E36    = =IF(B36="","",IF(B36<D36,"⚠️ REORDER","OK"))   → caché None
+A37    :   PACKAGING
+A38    : Medium pizza boxes
+C38    : ea
+D38    : 40
+E38    = =IF(B38="","",IF(B38<D38,"⚠️ REORDER","OK"))   → caché None
+A39    : Large pizza boxes
+C39    : ea
+D39    : 30
+E39    = =IF(B39="","",IF(B39<D39,"⚠️ REORDER","OK"))   → caché None
+A40    : X-large pizza boxes
+C40    : ea
+D40    : 15
+E40    = =IF(B40="","",IF(B40<D40,"⚠️ REORDER","OK"))   → caché None
+A41    : Napkins
+C41    : ea
+D41    : 100
+E41    = =IF(B41="","",IF(B41<D41,"⚠️ REORDER","OK"))   → caché None
+A42    : Delivery bags
+C42    : ea
+D42    : 30
+E42    = =IF(B42="","",IF(B42<D42,"⚠️ REORDER","OK"))   → caché None
+A44    : Signature: _________________________
+A46    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro —
+
+=== Hoja «Weekly Deep Clean» · protegida=True · área='Weekly Deep Clean'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Deep Cleaning Checklist
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   OVEN
+A6     : 1
+B6     : Deep-clean the oven deck
+C6     : Kitchen
+D6     : Pizza maker
+E6     : Monday
+A7     : 2
+B7     : Clean the oven exterior
+C7     : Kitchen
+D7     : Dishwasher / prep
+E7     : Monday
+A8     : 3
+B8     : Team cleans the oven mouth and the reachable flue; the contractor inspects and cleans the duct and chimney (see "Monthly Maintenance" and "Quarterly & Annual", NFPA 96)
+C8     : Kitchen
+D8     : Technician
+E8     : Monday
+A9     : 4
+B9     : Check oven gaskets and insulation
+C9     : Kitchen
+D9     : Manager
+E9     : Monday
+A10    :   KITCHEN
+A11    : 5
+B11    : Clean inside the walk-ins
+C11    : Walk-in
+D11    : Dishwasher / prep
+E11    : Monday
+A12    : 6
+B12    : Remove and degrease the hood filters (hood and duct cleaning is the contractor's job: see Quarterly & Annual)
+C12    : Kitchen
+D12    : Dishwasher / prep
+E12    : Monday
+A13    : 7
+B13    : Clean behind and under equipment
+C13    : Kitchen
+D13    : Dishwasher / prep
+E13    : Monday
+A14    : 8
+B14    : Cutting boards: wash, rinse and sanitize (approved sanitizer, test strip; FDA 4-501.114)
+C14    : Kitchen
+D14    : Dishwasher / prep
+E14    : Monday
+A15    : 9
+B15    : Clean storage shelves
+C15    : Storage
+D15    : Dishwasher / prep
+E15    : Monday
+A16    :   FOH & RESTROOMS
+A17    : 10
+B17    : Clean windows
+C17    : FOH
+D17    : Dishwasher / prep
+E17    : Monday
+A18    : 11
+B18    : Mop floors with degreaser
+C18    : General
+D18    : Dishwasher / prep
+E18    : Monday
+A19    : 12
+B19    : Deep-clean the restrooms
+C19    : Restrooms
+D19    : Dishwasher / prep
+E19    : Monday
+A20    : 13
+B20    : Deep-clean the patio
+C20    : Patio
+D20    : Dishwasher / prep
+E20    : Monday
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Weekly FIFO Check» · protegida=True · área='Weekly FIFO Check'!$A$1:$G$39 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : FIFO Check — Expiration Control
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   WALK-INS
+A6     : 1
+B6     : Check dates on prepared dough: date (and time) on every dough box; use within your recipe's window, oldest first
+C6     : Walk-in
+D6     : Line cook
+E6     : Monday
+A7     : 2
+B7     : Check opened mozzarella: covered, 41 °F or below, date-marked (7 days max, day opened = day 1, never past use-by; FDA 3-501.17(B))
+C7     : Walk-in
+D7     : Line cook
+E7     : Monday
+A8     : 3
+B8     : Check opened deli meats (cooked ham): date-marked, 7 days max from the day opened (FDA 3-501.17); cured pepperoni and prosciutto per the maker's label
+C8     : Walk-in
+D8     : Line cook
+E8     : Monday
+A9     : 4
+B9     : Rotate: oldest product in front
+C9     : Walk-in
+D9     : Line cook
+E9     : Monday
+A10    : 5
+B10    : Discard expired product
+C10    : Walk-in
+D10    : Line cook
+E10    : Monday
+A11    : 6
+B11    : Check no frozen product is past its shelf life (see the table at the bottom of this sheet)
+C11    : Walk-in
+D11    : Line cook
+E11    : Monday
+A12    :   STORAGE
+A13    : 7
+B13    : Check flour: date, moisture, insects
+C13    : Storage
+D13    : Line cook
+E13    : Monday
+A14    : 8
+B14    : Check canned tomatoes: date, dents
+C14    : Storage
+D14    : Line cook
+E14    : Monday
+A15    : 9
+B15    : Check olive oil: date, taste
+C15    : Storage
+D15    : Line cook
+E15    : Monday
+A16    : 10
+B16    : Check packaging stock
+C16    : Storage
+D16    : Manager
+E16    : Monday
+A23    : Tasks done:
+D23    = =COUNTIFS(B5:B21,"?*",F5:F21,"✓")   → caché 0.0
+E23    : of
+F23    = =COUNTIF(B5:B21,"?*")-COUNTIF(F5:F21,"N/A")   → caché 10.0
+A25    : Shift manager signature: _________________________    Time: _________
+A27    : APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier
+B28    : Food group
+C28    : Freezer time
+D28    : Notes
+B29    : Frozen dough balls
+C29    : 1–2 months
+D29    : Gluten loses strength and yeast loses activity: thaw 24 h in the walk-in at 41 °F or below (FDA 3-501.13), never at room temperature
+B30    : Shredded or block mozzarella
+C30    : 2–3 months
+D30    : Fresh fior di latte in its liquid can't be frozen: it breaks down and weeps water onto the pizza
+B31    : Cured meats (pepperoni, salami)
+C31    : 2–3 months
+D31    : Fat goes rancid even frozen: it spoils first
+B32    : Italian sausage and ground meat
+C32    : 2–3 months
+D32    : Lots of exposed surface: the most delicate group of all
+B33    : Cooked ham and deli meats
+C33    : 1–2 months
+D33    : They release water when thawed: freeze them already portioned per service
+B34    : House-made tomato sauce and stocks
+C34    : 3 months
+D34    : Label with BOTH the production date AND the freeze date: the shelf life in this table counts from the freeze date
+B35    : Bread, focaccia and baked doughs
+C35    : 1–3 months
+D35    : Loses texture before it loses safety
+B36    : Blanched vegetables (mushroom, bell pepper)
+C36    : 8–12 months
+D36    : Unblanched, half that
+B37    : Seafood and fish toppings
+C37    : 2–3 months
+D37    : Oily fish and shellfish are the first to go rancid
+A39    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F19 F20 F21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Monthly Maintenance» · protegida=True · área='Monthly Maintenance'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Equipment Maintenance
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   OVEN
+A6     : 1
+B6     : Full oven inspection: deck, burners, insulation
+C6     : Kitchen
+D6     : Technician
+E6     : Monthly
+A7     : 2
+B7     : Wood-fired exhaust (hood, duct, chimney): MONTHLY grease and creosote inspection by a qualified person; clean when deposits are found (NFPA 96)
+C7     : Kitchen
+D7     : Technician
+E7     : Monthly
+A8     : 3
+B8     : Calibrate the oven thermometer
+C8     : Kitchen
+D8     : Technician
+E8     : Monthly
+A9     : 4
+B9     : Check gas valves (gas ovens)
+C9     : Kitchen
+D9     : Technician
+E9     : Monthly
+A10    :   GENERAL
+A11    : 5
+B11    : Dish machine: filters, rinse aid, softener salt
+C11    : Kitchen
+D11    : Manager
+E11    : Monthly
+A12    : 6
+B12    : Exhaust hood: degrease and replace filters; the contractor cleans the DUCTS (see "Quarterly & Annual")
+C12    : Kitchen
+D12    : Technician
+E12    : Monthly
+A13    : 7
+B13    : HVAC: filters
+C13    : General
+D13    : Technician
+E13    : Monthly
+A14    : 8
+B14    : Extinguisher: monthly visual check (gauge in the green, pin and seal intact, access clear, tag signed); the official service is by the maintainer, see "Quarterly & Annual"
+C14    : General
+D14    : Manager
+E14    : Monthly
+A15    : 9
+B15    : First-aid kit: stock, expiration dates
+C15    : General
+D15    : Manager
+E15    : Monthly
+A22    : Tasks done:
+D22    = =COUNTIFS(B5:B20,"?*",F5:F20,"✓")   → caché 0.0
+E22    : of
+F22    = =COUNTIF(B5:B20,"?*")-COUNTIF(F5:F20,"N/A")   → caché 9.0
+A24    : Shift manager signature: _________________________    Time: _________
+A26    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=True · área='Quarterly & Annual'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Report #
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   CONTRACTED — LICENSED COMPANY
+A6     : 1
+B6     : Pest control by a licensed operator: service visit and signed service report on file
+D6     : Pest control co.
+E6     : Monthly
+A7     : 2
+B7     : Hood, duct and chimney cleaning by a certified contractor (NFPA 96): a system serving a wood-fired or other solid-fuel oven is inspected monthly (Monthly Maintenance sheet) and cleaned whenever buildup is found; gas or electric ovens only: quarterly if high volume, semiannual if moderate
+D7     : Hood cleaning co.
+E7     : Quarterly
+A8     : 3
+B8     : Wood-fired oven checked by the oven manufacturer's tech or a qualified contractor: dome, floor, door, flue and chimney cap
+D8     : Oven tech
+E8     : Annual
+A9     : 4
+B9     : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hood fire suppression inspected every 6 months (NFPA 96)
+D9     : Fire safety co.
+E9     : Annual
+A10    : 5
+B10    : Extinguisher hydrostatic test by the fire protection company: Class K (wet chemical) and CO2 units every 5 years, dry chemical as its label says (OSHA 1910.157(f); NFPA 10)
+D10    : Fire safety co.
+E10    : Every 5 years
+A11    : 6
+B11    : Gas lines and appliance connections (gas oven, burners, range) checked by a licensed pro, as often as your local code requires
+D11    : Licensed plumber
+E11    : Annual
+A12    :   WATER, WASTE & TESTING
+A13    : 7
+B13    : Refrigeration service by an EPA 608-certified tech: walk-in, reach-ins and the make line (pizza prep table) — coils, gaskets and refrigerant leak check
+D13    : Refrigeration tech
+E13    : Annual
+A14    : 8
+B14    : Legionella: if you have a cooling tower or at-risk hot water, keep a water management program as your local health code requires
+D14    : Water treatment co.
+E14    : Annual
+A15    : 9
+B15    : Water quality: on city water, read your utility's annual Consumer Confidence Report; on a private well or tank, test it as your health department requires; service any filter or softener per its maker (the water goes into every batch of dough)
+D15    : Water lab
+E15    : Annual
+A16    : 10
+B16    : Used cooking oil pickup by a licensed recycler: file the pickup receipts
+D16    : Oil recycler
+E16    : Quarterly
+A17    : 11
+B17    : Review the waste contract and cardboard pickup: pizza boxes are most of the volume
+D17    : Manager
+E17    : Quarterly
+A18    :   ADMIN & EQUIPMENT
+A19    : 12
+B19    : Review insurance (general liability, property, workers' comp; liquor liability if you serve alcohol; hired and non-owned auto if drivers deliver in their own cars) and renewal dates
+D19    : Manager
+E19    : Annual
+A20    : 13
+B20    : POS check: software updates, sales tax rates and settings, user permissions — plus the online ordering and delivery app integrations
+D20    : Manager
+E20    : Annual
+A21    : 14
+B21    : Calibrate thermometers by the ice-point method (32 °F); the oven probe per its manufacturer
+D21    : Technician
+E21    : Annual
+A22    : 15
+B22    : Log the next service date for each contract and file the signed report
+D22    : Manager
+E22    : Quarterly
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Shift manager signature: _________________________    Time: _________
+A33    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 06-pizza-shop-event-checklists.xlsx
+# docProps: title="Pizza Shop Event Checklists: Game Night, Valentine's Day, Holidays & Patio" · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Pizza Shop Event Checklists: Game Night, Valentine's Day, Holidays & Patio
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 06-pizza-shop-event-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-pizzeria-opening-closing-checklist.xlsx and 01-pizza-shop-opening-closing-checklists.xlsx.
+B28    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Game Night» · protegida=True · área='Game Night'!$A$1:$G$27 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Game Night / Super Bowl — Delivery Rush
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREP (DAY BEFORE)
+A6     : 1
+B6     : Prep 50% more dough than usual
+C6     : Kitchen
+D6     : Pizza maker
+E6     : Day before
+A7     : 2
+B7     : Order extra mozzarella and pepperoni
+C7     : Office
+D7     : Manager
+E7     : 2 days out
+A8     : 3
+B8     : Check double the delivery box stock
+C8     : Storage
+D8     : Manager
+E8     : Day before
+A9     : 4
+B9     : Add staff: extra pizza maker, extra driver
+C9     : Office
+D9     : Manager
+E9     : 3 days out
+A10    : 5
+B10    : Post a game-day combo deal on social media
+C10    : Office
+D10    : Manager
+E10    : 2 days out
+A11    :   EVENT DAY
+A12    : 6
+B12    : Make extra dough balls
+C12    : Kitchen
+D12    : Pizza maker
+E12    : Morning
+A13    : 7
+B13    : Double the most popular topping inserts
+C13    : Kitchen
+D13    : Line cook
+E13    : 2:00 PM
+A14    : 8
+B14    : Turn on the delivery apps early
+C14    : FOH
+D14    : Shift manager
+E14    : 5:00 PM
+A15    : 9
+B15    : Have pre-folded boxes ready
+C15    : Storage
+D15    : Dishwasher / prep
+E15    : 5:00 PM
+A16    : 10
+B16    : Manage the order queue without losing quality
+C16    : Kitchen
+D16    : Pizza maker
+E16    : —
+A23    : Tasks done:
+D23    = =COUNTIFS(B5:B21,"?*",F5:F21,"✓")   → caché 0.0
+E23    : of
+F23    = =COUNTIF(B5:B21,"?*")-COUNTIF(F5:F21,"N/A")   → caché 10.0
+A25    : Shift manager signature: _________________________    Time: _________
+A27    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Valentine's Day» · protegida=True · área='Valentine''s Day'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Specific Tasks — Valentine's Day
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREP
+A6     : 1
+B6     : Design a Valentine's special pizza (heart-shaped)
+C6     : Office
+D6     : Manager
+E6     : 7 days out
+A7     : 2
+B7     : Premium ingredients: truffle, burrata, prosciutto
+C7     : Office
+D7     : Manager
+E7     : 5 days out
+A8     : 3
+B8     : Decor: (LED) candles, flowers, tablecloths
+C8     : FOH
+D8     : Server
+E8     : 2 days out
+A9     : 4
+B9     : Post on social media and take reservations
+C9     : Office
+D9     : Manager
+E9     : 7 days out
+A10    :   THE DAY
+A11    : 5
+B11    : Set up the special decor
+C11    : FOH
+D11    : Server
+E11    : 4:00 PM
+A12    : 6
+B12    : Make the heart pizza for the tickets
+C12    : Kitchen
+D12    : Pizza maker
+E12    : —
+A13    : 7
+B13    : Offer a special dessert: tiramisu for two
+C13    : Kitchen
+D13    : Line cook
+E13    : —
+A14    : 8
+B14    : Welcome drink for couples: alcohol-free, or prosecco only where your license and state allow giving alcohol away (21+ with ID)
+C14    : Bar
+D14    : Server
+E14    : —
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Shift manager signature: _________________________    Time: _________
+A25    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Holiday Season» · protegida=True · área='Holiday Season'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Specific Tasks — Holiday Season & New Year's Eve
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   WHEN THE BOOKING IS CONFIRMED
+A6     : 1
+B6     : Collect guests' allergies, intolerances and diets IN WRITING and pass them to the kitchen: the 9 major US allergens (milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy, sesame); wheat and milk are in nearly everything at a pizza shop. Gluten itself isn't one of the 9 and lactose is an intolerance, not an allergen: record both anyway. UK: 14
+C6     : Office
+D6     : Manager
+E6     : At booking
+A7     : 2
+B7     : Confirm the price per guest and what it includes in writing (appetizers, pizzas, drink, dessert and coffee)
+C7     : Office
+D7     : Manager
+E7     : At booking
+A8     : 3
+B8     : Collect the deposit and record the amount and date
+C8     : Office
+D8     : Manager
+E8     : At booking
+A9     : 4
+B9     : Sign the cancellation policy and the deadline for the final guest count
+C9     : Office
+D9     : Manager
+E9     : At booking
+A10    : 5
+B10    : Agree arrival and departure times for the table and set aside enough dough for the group the day before
+C10    : FOH
+D10    : Manager
+E10    : At booking
+A11    :   PREP
+A12    : 6
+B12    : Design a holiday menu (truffle pizza, special calzone)
+C12    : Office
+D12    : Manager
+E12    : 15 days out
+A13    : 7
+B13    : Extra stock for the days your suppliers don't deliver (especially Christmas Day and New Year's Day)
+C13    : Office
+D13    : Manager
+E13    : 10 days out
+A14    : 8
+B14    : Plan special hours
+C14    : Office
+D14    : Manager
+E14    : 10 days out
+A15    : 9
+B15    : Decorate the shop for the holidays
+C15    : FOH
+D15    : Server
+E15    : Dec 1
+A16    :   HOLIDAY SERVICE
+A17    : 10
+B17    : Holiday pizza: truffle, specialty cheeses
+C17    : Kitchen
+D17    : Pizza maker
+E17    : —
+A18    : 11
+B18    : Festive special calzone
+C18    : Kitchen
+D18    : Pizza maker
+E18    : —
+A19    : 12
+B19    : Holiday dessert: panettone, pandoro tiramisu
+C19    : Kitchen
+D19    : Line cook
+E19    : —
+A20    : 13
+B20    : Check stock for the whole week
+C20    : Storage
+D20    : Manager
+E20    : Dec 23
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift manager signature: _________________________    Time: _________
+A31    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Patio Season» · protegida=True · área='Patio Season'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Patio Season Start / End
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING (SPRING)
+A6     : 1
+B6     : Bring furniture out of storage
+C6     : Patio
+D6     : Dishwasher / prep
+E6     : Spring
+A7     : 2
+B7     : Deep-clean tables and chairs
+C7     : Patio
+D7     : Dishwasher / prep
+E7     : Spring
+A8     : 3
+B8     : Check furniture condition
+C8     : Patio
+D8     : Manager
+E8     : Spring
+A9     : 4
+B9     : Set up umbrellas and decor
+C9     : Patio
+D9     : Server
+E9     : Spring
+A10    : 5
+B10    : Check the outdoor dining / sidewalk cafe permit is current; renew it if it expires this season
+C10    : Office
+D10    : Manager
+E10    : Spring
+A11    :   CLOSING (FALL)
+A12    : 6
+B12    : Bring in and clean the furniture
+C12    : Patio
+D12    : Dishwasher / prep
+E12    : Fall
+A13    : 7
+B13    : Store the umbrellas
+C13    : Storage
+D13    : Dishwasher / prep
+E13    : Fall
+A14    : 8
+B14    : Furniture inventory: breakage
+C14    : Office
+D14    : Manager
+E14    : Fall
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Shift manager signature: _________________________    Time: _________
+A25    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 07-blank-pizza-shop-checklist-template.xlsx
+# docProps: title='Blank Pizza Shop Checklist Template (Editable)' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$52 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Blank Pizza Shop Checklist Template (Editable)
+B4     : What it solves
+B6     : ▸ Three master templates already structured —by time of day, by area and by role— with the sections in place and the zone or assignee preloaded: you only type your tasks.
+B7     : ▸ Type in the GREEN cells of the "Task" column, under the matching section. The counter starts at 0 and goes up as you type: it counts what is there, not a fixed number.
+B9     : How to use this template
+B11    : ▸ Copy the structure of the pre-filled templates
+B12    : ▸ Customize: add tasks, change assignees, adjust times
+B13    : ▸ You can duplicate tabs (right-click → "Move or Copy")
+B15    : Customization tips
+B17    : ▸ Group tasks by time of day (opening, service, closing)
+B18    : ▸ Always assign an owner — tasks without an owner don't get done
+B19    : ▸ Set a realistic due-by time — specific beats generic
+B20    : ▸ Review and update the lists with your team every month
+B21    : ▸ Print on US Letter and leave room for the shift manager's signature
+B23    : How the counter works
+B25    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B26    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B27    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B29    : Free rows
+B31    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B32    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B34    : Sheet protection
+B36    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B37    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B39    : Works with
+B41    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B42    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B43    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B44    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B45    : ▸ You are in 07-blank-pizza-shop-checklist-template.xlsx: this is where you build YOUR lists when none of the others fit. Copy the structure of the one closest to what you need.
+B47    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B49    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B50    : Contact: info@aichef.pro
+B52    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «By Time of Day» · protegida=True · área='By Time of Day'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Time of Day
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING — type your opening tasks below
+A6     : 1
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+A8     : 3
+A9     : 4
+A10    : 5
+A12    :   SERVICE — type your service tasks below
+A13    : 6
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+A15    : 8
+A16    : 9
+A17    : 10
+A19    :   CLOSING — type your closing tasks below
+A20    : 11
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+A22    : 13
+A23    : 14
+A24    : 15
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Area» · protegida=True · área='By Area'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Work Area
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+C6     : Kitchen
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+C7     : Kitchen
+A8     : 3
+C8     : Kitchen
+A9     : 4
+C9     : Kitchen
+A10    : 5
+C10    : Kitchen
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+C13    : FOH
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+C14    : FOH
+A15    : 8
+C15    : FOH
+A16    : 9
+C16    : FOH
+A17    : 10
+C17    : FOH
+A19    :   BAR — type your bar tasks below
+A20    : 11
+C20    : Bar
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+C21    : Bar
+A22    : 13
+C22    : Bar
+A23    : 14
+C23    : Bar
+A24    : 15
+C24    : Bar
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Role» · protegida=True · área='By Role'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Role
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+D6     : Kitchen manager
+E6     : (Time)
+A7     : 2
+D7     : Kitchen manager
+A8     : 3
+D8     : Kitchen manager
+A9     : 4
+D9     : Kitchen manager
+A10    : 5
+D10    : Kitchen manager
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+D13    : FOH manager
+E13    : (Time)
+A14    : 7
+D14    : FOH manager
+A15    : 8
+D15    : FOH manager
+A16    : 9
+D16    : FOH manager
+A17    : 10
+D17    : FOH manager
+A19    :   MANAGEMENT — type your management tasks below
+A20    : 11
+D20    : GM
+E20    : (Time)
+A21    : 12
+D21    : GM
+A22    : 13
+D22    : GM
+A23    : 14
+D23    : GM
+A24    : 15
+D24    : GM
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 08-pizzeria-opening-closing-checklist.xlsx
+# docProps: title='Pizzeria Opening & Closing Checklist (Whole Shop)' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$47 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Pizzeria Opening & Closing Checklist (Whole Shop)
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE SHOP: what gets opened and closed for the entire business, not for each area. Use it as the backbone of the day.
+B7     : ▸ The detail by area (kitchen, FOH) is in 01-pizza-shop-opening-closing-checklists.xlsx: don't repeat the work, each file covers a different level.
+B9     : How to use
+B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.
+B12    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B14    : Editable cells
+B16    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B18    : How the counter works
+B20    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B21    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B22    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B24    : Free rows
+B26    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B27    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B29    : Sheet protection
+B31    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B32    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B34    : Works with
+B36    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B37    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B38    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B39    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B40    : ▸ You are in 08-pizzeria-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-pizza-shop-opening-closing-checklists.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.
+B42    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B44    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B45    : Contact: info@aichef.pro
+B47    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pizza Shop Opening» · protegida=True · área='Pizza Shop Opening'!$A$1:$H$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pizza Shop Opening Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm
+C5     : Entrance
+D5     : Shift manager
+E5     : 9:00 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Shift manager
+E6     : 9:00 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Shift manager
+E7     : 9:00 AM
+A8     : 4
+B8     : Raise security gate / open front door; exits clear, exit signs lit
+C8     : Entrance
+D8     : Shift manager
+E8     : 9:00 AM
+A9     : 5
+B9     : Set up outdoor signage / menu board
+C9     : Outside
+D9     : Shift manager
+E9     : 9:00 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Shift manager
+E10    : 9:00 AM
+A11    : 7
+B11    : Turn on the reservation system / order tablet
+C11    : Front counter
+D11    : Shift manager
+E11    : 9:15 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Shift manager
+E12    : 9:15 AM
+A13    : 9
+B13    : Review today's reservations and special events
+C13    : Front counter
+D13    : Shift manager
+E13    : 9:15 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Shift manager
+E14    : 9:15 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Shift manager
+E15    : 9:15 AM
+A16    : 12
+B16    : Check furniture condition (chairs, tables, lighting)
+C16    : FOH
+D16    : Shift manager
+E16    : 9:15 AM
+A17    : 13
+B17    : Set up the patio if applicable (tables, chairs, umbrellas/heaters)
+C17    : Patio
+D17    : Shift manager
+E17    : 9:30 AM
+A18    : 14
+B18    : Check that menus are in order
+C18    : FOH
+D18    : Shift manager
+E18    : 9:30 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Shift manager
+E19    : 9:30 AM
+A20    : 16
+B20    : Light the wood-fired oven (preheat per manufacturer; 1 h as a guide)
+C20    : Kitchen
+D20    : Shift manager
+E20    : 9:30 AM
+A21    : 17
+B21    : Set up the pizza counter if visible; slices (pizza by the slice) go in a hot case at 135 °F or above, or time-marked and tossed at 4 h (FDA 3-501.19)
+C21    : FOH
+D21    : Shift manager
+E21    : 9:30 AM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 17.0
+A29    : Manager signature: _________________________     Completion time: ________
+A30    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Pizza Shop Closing» · protegida=True · área='Pizza Shop Closing'!$A$1:$H$27 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pizza Shop Closing Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Turn off background music
+C5     : General
+D5     : Shift manager
+E5     : Close
+A6     : 2
+B6     : Make sure no guests remain in the shop
+C6     : FOH
+D6     : Shift manager
+E6     : Close
+A7     : 3
+B7     : Clean and bring in the patio if used
+C7     : Patio
+D7     : Shift manager
+E7     : Close
+A8     : 4
+B8     : Wood-fired oven: let it cool down on its own, with the door and flue set as its manufacturer says (never douse it with water)
+C8     : Kitchen
+D8     : Shift manager
+E8     : Close
+A9     : 5
+B9     : Turn off the POS / card terminal (or leave on standby)
+C9     : Register
+D9     : Shift manager
+E9     : Close
+A10    : 6
+B10    : Bring in the outdoor signage
+C10    : Outside
+D10    : Shift manager
+E10    : Close
+A11    : 7
+B11    : Empty trash cans in common areas and restrooms
+C11    : Restrooms
+D11    : Shift manager
+E11    : Close
+A12    : 8
+B12    : Final safety check (gas, water, outlets and the oven)
+C12    : General
+D12    : Shift manager
+E12    : Close
+A13    : 9
+B13    : Check that windows are closed
+C13    : General
+D13    : Shift manager
+E13    : Close
+A14    : 10
+B14    : Turn off HVAC
+C14    : General
+D14    : Shift manager
+E14    : Close
+A15    : 11
+B15    : Turn off lights (leave security lighting)
+C15    : General
+D15    : Shift manager
+E15    : Close
+A16    : 12
+B16    : Set the alarm
+C16    : Entrance
+D16    : Last one out
+E16    : Close
+A17    : 13
+B17    : Close security gate and doors
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A18    : 14
+B18    : Lock up and verify it is locked
+C18    : Entrance
+D18    : Last one out
+E18    : Close
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 14.0
+A26    : Manager signature: _________________________     Completion time: ________
+A27    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$57 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B47    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B48    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B49    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B50    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-pizzeria-opening-closing-checklist.xlsx and the detail by zone in 01-pizza-shop-opening-closing-checklists.xlsx.
+B52    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B54    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B55    : Contact: info@aichef.pro
+B57    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / shift manager
+D5     : 9:15 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / shift manager
+D6     : 9:15 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / shift manager
+D7     : 9:15 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / shift manager
+D8     : 9:15 AM
+A9     : 5
+B9     : Check that the POS is on and open the register shift
+C9     : Cashier / shift manager
+D9     : 9:30 AM
+A10    : 6
+B10    : Print the opening X report (start-of-day report)
+C10    : Cashier / shift manager
+D10    : 9:30 AM
+A11    : 7
+B11    : Check the receipt paper roll
+C11    : Cashier / shift manager
+D11    : 9:30 AM
+A12    : 8
+B12    : Check the card terminal works
+C12    : Cashier / shift manager
+D12    : 9:30 AM
+A13    : 9
+B13    : Check the payment gateway connection
+C13    : Cashier / shift manager
+D13    : 9:45 AM
+A14    : 10
+B14    : Note issues from the previous shift
+C14    : Cashier / shift manager
+D14    : 9:45 AM
+A15    : 11
+B15    : Opening manager sign-off
+C15    : Cashier / shift manager
+D15    : 9:45 AM
+A22    : Tasks done:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Starting bank (opening float)
+C23    : 0
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
+A25    : Manager signature: _________________________     Time: ________
+A26    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / shift manager
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / shift manager
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / shift manager
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / shift manager
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / shift manager
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / shift manager
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / shift manager
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / shift manager
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / shift manager
+D13    : Close
+A14    : 10
+B14    : Set aside tomorrow's starting bank
+C14    : Cashier / shift manager
+D14    : Close
+A15    : 11
+B15    : Prepare the bank deposit / put it in the safe
+C15    : Cashier / shift manager
+D15    : Close
+A16    : 12
+B16    : Closing manager sign-off
+C16    : Cashier / shift manager
+D16    : Close
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Cash Count by Denomination
+A25    : Denomination
+B25    : Quantity
+C25    : Subtotal
+A26    : BILLS
+A27    : $100
+B27    : 0
+C27    = =B27*100   → caché 0.0
+A28    : $50
+B28    : 0
+C28    = =B28*50   → caché 0.0
+A29    : $20
+B29    : 0
+C29    = =B29*20   → caché 0.0
+A30    : $10
+B30    : 0
+C30    = =B30*10   → caché 0.0
+A31    : $5
+B31    : 0
+C31    = =B31*5   → caché 0.0
+A32    : $2
+B32    : 0
+C32    = =B32*2   → caché 0.0
+A33    : $1
+B33    : 0
+C33    = =B33*1   → caché 0.0
+A34    : COINS
+A35    : $1 coin
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : 50¢
+B36    : 0
+C36    = =B36*0.5   → caché 0.0
+A37    : 25¢
+B37    : 0
+C37    = =B37*0.25   → caché 0.0
+A38    : 10¢
+B38    : 0
+C38    = =B38*0.1   → caché 0.0
+A39    : 5¢
+B39    : 0
+C39    = =B39*0.05   → caché 0.0
+A40    : 1¢
+B40    : 0
+C40    = =B40*0.01   → caché 0.0
+A41    : 25¢ roll
+B41    : 0
+C41    = =B41*10   → caché 0.0
+A42    : 10¢ roll
+B42    : 0
+C42    = =B42*5   → caché 0.0
+A43    : TOTAL CASH
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Closing Summary
+A46    : Item
+C46    : Amount
+A47    : Total cash (count)
+C47    = =C43   → caché 0.0
+A48    : Starting bank (−)
+C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
+A49    : Net cash (counted − starting bank)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Card sales, excl. tips
+C50    : 0
+A51    : Other tenders + card tips paid in cash
+C51    : 0
+A52    : TOTAL COLLECTED
+C52    = =C49+C50+C51   → caché 0.0
+A53    : POS Z report: sales + tax, excl. tips
+C53    : 0
+A54    : OVER / SHORT
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Manager signature: _________________________     Time: ________
+A57    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : General manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-pizza-shop-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Pizza Shop Pre-Shift Meeting Template (Huddle Notes)' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Pizza Shop Pre-Shift Meeting Template (Huddle Notes)
+B4     : How to use this template
+B6     : ▸ The FOH manager or shift manager fills this out before the pre-shift meeting
+B7     : ▸ Share it with the team at the 5-10 minute pre-shift meeting
+B8     : ▸ Print it and post it at the pass for reference during service
+B10    : Works with
+B12    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B13    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-01-pizza-shop-pre-shift-meeting-template.xlsx: the pre-shift meeting opens the shift that is then worked with 01-pizza-shop-opening-closing-checklists.xlsx.
+B18    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Meeting» · protegida=True · área='Pre-Shift Meeting'!$A$1:$C$37 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B1     : Pre-Shift Meeting
+B2     : Date: ___/___/______    Shift: ☐ Lunch  ☐ Dinner    Shift manager: _________________________
+B4     : RESERVATIONS & OCCUPANCY
+B5     : No. of reservations:
+B6     : Expected covers:
+B7     : VIP tables / special guests:
+B8     : Parties or events:
+B9     : Estimated occupancy:
+C9     : _____ %
+B11    : SPECIALS & 86s
+B12    : Special 1:
+B13    : Special 2:
+B14    : Dessert special:
+B15    : Items OUT (86):
+B16    : Menu changes:
+B18    : ALLERGENS & SPECIAL NEEDS
+B19    : Reservations with declared allergens:
+B20    : Special diets (vegan, gluten-free...):
+B21    : Restrictions to communicate:
+B23    : SHIFT TEAM
+B24    : Kitchen staff:
+B25    : FOH staff:
+B26    : Bar staff:
+B27    : Anyone out? Coverage:
+B29    : NOTES & INCIDENTS
+B30    : Issues from the previous shift:
+B31    : Shift goals:
+B32    : Manager's message:
+B35    : Shift manager signature: _________________________
+B37    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+####################################################################################################
+# BONUS-02-pizza-shop-holiday-calendar.xlsx
+# docProps: title='BONUS: Pizza Shop Holiday & Busy Days Calendar (US)' · subject='Pizza Shop Checklists Kit Pro · v2.0' · keywords='pizza shop checklist, pizzeria checklist, pizza shop opening checklist, pizzeria closing checklist, pizza kitchen cleaning checklist, pizza oven checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/pizza-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Pizza Shop Holiday & Busy Days Calendar (US)
+B4     : How to use this template
+B6     : ▸ Check the key dates for pizza shops month by month
+B7     : ▸ Plan ahead: special menus, decorations, stock
+B8     : ▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), bank holidays and Boxing Day, in the free rows
+B10    : Works with
+B12    : ▸ 08-pizzeria-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B13    : ▸ 01-pizza-shop-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: shop → areas → cash. Each file covers one level: the shop file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-02-pizza-shop-holiday-calendar.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-pizzeria-opening-closing-checklist.xlsx and 01-pizza-shop-opening-closing-checklists.xlsx.
+B18    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/pizza-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Holiday Calendar» · protegida=True · área='Holiday Calendar'!$A$1:$D$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Holiday Calendar — Key Dates for Pizza Shops
+A2     : Year: ______    Add your local dates in the empty rows
+A4     : Month
+B4     : Date / Event
+C4     : Key Tasks
+D4     : Lead time
+A5     : January
+B5     : Jan 1 — New Year's Day
+C5     : Decide whether to open; if closed, announce it on Google Business Profile, your website and the delivery apps 1 week ahead
+D5     : 1 week
+A6     : February
+B6     : Super Bowl Sunday (2nd Sunday in Feb)
+C6     : Pre-orders and big party orders, dough balls cold-fermenting ahead, extra drivers and boxes, a short menu to push more orders per hour
+D6     : 2 weeks
+A7     : February
+B7     : Feb 14 — Valentine's Day
+C7     : Date-night menu, romantic decorations, extra shifts
+D7     : 2 weeks
+A8     : February–March
+B8     : Mardi Gras (varies)
+C8     : Themed menu, decorations, staff costumes
+D8     : 1 week
+A9     : March
+B9     : Mar 17 — St. Patrick's Day + March Madness
+C9     : Themed specials; March Madness games (mid-March to early April) lift delivery: extra drivers; beer only with a license, 21+ with ID
+D9     : 2 weeks
+A10    : March–April
+B10    : Lent Fridays + Easter Sunday (varies)
+C10    : Meatless Fridays in Lent: cheese, veggie or marinara specials; Easter: decide hours, family orders
+D10    : 2 weeks
+A11    : March–April
+B11    : Patio opening
+C11    : Setup, permit, patio menu
+D11    : 1 month
+A12    : May–June
+B12    : Graduation season
+C12    : Set group menu, deposit and price per person, private area; big carryout party orders for graduations
+D12    : 1 month
+A13    : May
+B13    : NBA & NHL playoffs (game nights)
+C13    : Game nights = delivery peak: extra drivers and dough, game-night deals, screens if you have a dining room
+D13    : 1 week
+A14    : May
+B14    : 2nd Sunday — Mother's Day
+C14    : Special menu, expanded reservations, a small gift for the moms
+D14    : 2 weeks
+A15    : May
+B15    : Memorial Day (last Monday)
+C15    : Add staff, summer stock, patio at full capacity
+D15    : 1 month
+A16    : June
+B16    : 3rd Sunday — Father's Day
+C16    : Family menu, expanded reservations and XL pizza to share
+D16    : 2 weeks
+A17    : July
+B17    : Jul 4 — Independence Day
+C17    : Decide hours, patio at full capacity, big party orders for the cookouts and extra drivers
+D17    : 1 week
+A18    : July–August
+B18    : Summer peak season
+C18    : Holiday service, extra staff, longer hours, summer menu; more drivers and the patio at full capacity
+D18    : Ongoing
+A19    : September
+B19    : Labor Day (1st Monday) + football season kickoff
+C19    : Fall menu, lunch specials for the back-to-routine crowd and game-day deals for football: Sunday and Monday night delivery peak
+D19    : 2 weeks
+A20    : October
+B20    : Oct 31 — Halloween
+C20    : Big delivery night: extra dough, boxes and drivers; themed decor and special pizzas (no cocktails)
+D20    : 1 week
+A21    : November
+B21    : Thanksgiving Eve + Thanksgiving (4th Thursday)
+C21    : Thanksgiving Eve is one of the biggest delivery nights of the year: dough, drivers and extra shifts; decide whether to open Thursday (many close)
+D21    : 1 month
+A22    : November
+B22    : Patio closing
+C22    : Store furniture, take inventory, make repairs
+D22    : 1 week
+A23    : Nov–Dec
+B23    : Holiday gift card season
+C23    : Gift card promo, display by the register, online and ordering-app sales (Black Friday to Christmas Eve)
+D23    : 2 weeks
+A24    : December
+B24    : Holiday parties (office orders)
+C24    : Office orders for office parties (party trays and large pizzas with a delivery time), group bookings, extra shifts
+D24    : 1 month
+A25    : December
+B25    : Dec 24–25 — Christmas
+C25    : Decide whether to open on Christmas Day (many close). Menu, decorations, special stock
+D25    : 2 weeks
+A26    : December
+B26    : Dec 31 — New Year's Eve
+C26    : Big delivery night: extra dough and drivers, closing hours; if the dining room is open, party favors and a midnight toast (alcohol only if your license allows; 21+ with ID); night shifts
+D26    : 2 weeks
+A28    : (Your date)
+B28    : (Add here)
+C28    : (Key tasks)
+D28    : (Lead time)
+A29    : (Your date)
+B29    : (Add here)
+C29    : (Key tasks)
+D29    : (Lead time)
+A30    : (Your date)
+B30    : (Add here)
+C30    : (Key tasks)
+D30    : (Lead time)
+A31    : (Your date)
+B31    : (Add here)
+C31    : (Key tasks)
+D31    : (Lead time)
+A32    : (Your date)
+B32    : (Add here)
+C32    : (Key tasks)
+D32    : (Lead time)
+A34    : — Pizza Shop Checklists Kit Pro · AI Chef Pro · aichef.pro

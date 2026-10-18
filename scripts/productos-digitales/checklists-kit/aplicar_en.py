@@ -662,7 +662,11 @@ def objetivo_ajuste(ws_en, ws_es, cel, anclas, cubiertas):
     if not wrap_es and ancho_texto(t, cel) > disponible + 1e-9:
         disp_es = caja(ws_es, cel_es, anclas, cubiertas)[3]
         if not (isinstance(es, str) and ancho_texto(es, cel_es) <= disp_es + 1e-9):
-            return False, None, False                            # el ES tampoco cabía: maqueta heredada
+            if (not getattr(mapas, 'AJUSTE_MAQUETA_ES', False) or palabra_mas_larga(t, cel) > ancho + 1e-9
+                    or filas > 1):
+                return False, None, False                        # el ES tampoco cabía: maqueta heredada
+            # pizzería (errata ES): sus tareas largas no llevan ajuste y salen cortadas también en el ES; la EN lo
+            # activa donde el ajuste basta (las etiquetas de columna estrecha, como «Verified by:», se quedan)
         if palabra_mas_larga(t, cel) > ancho + 1e-9 or filas > 1:
             return False, None, True                             # ni con ajuste: hay que acortar el EN
         necesita = True

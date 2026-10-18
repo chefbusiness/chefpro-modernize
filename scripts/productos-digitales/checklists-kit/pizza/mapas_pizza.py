@@ -464,6 +464,9 @@ ADAPTAR[('08', 'Apertura del Negocio', 'B8')] = (_A[('08', 'Apertura del Negocio
 for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
     if _dir:
         ADAPTAR[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = 'Evento EN: «%s». %s' % (_evento, _dir)
+# aplicar_en.objetivo_ajuste / G3 (errata ES): las tareas largas del ES no llevan ajuste de texto y salen cortadas por
+# la celda vecina (en el base sí lo llevan); la EN activa el ajuste también donde el ES tampoco cabía
+AJUSTE_MAQUETA_ES = True
 # Celdas ES con °C cuya EN NO lleva cifra en °F: ninguna (las del horno, convertidas)
 CELSIUS_SIN_F = frozenset()
 
