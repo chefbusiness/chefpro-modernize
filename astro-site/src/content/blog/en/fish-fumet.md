@@ -1,6 +1,6 @@
 ---
-title: "Fish fumet: what it is, and how long it should simmer"
-description: "A fish fumet is a short stock of white fish bones and aromatics, strained and used as a base. How the clocks differ, why it turns bitter, and where it goes in a sauce."
+title: "Fumet: what it means, and how long a fish fumet should simmer"
+description: "Fumet means a concentrated cooking liquid. On a fish station it is a short stock of white bones. How that differs from a bowl of soup, why the clocks disagree, and why it turns bitter."
 pubDate: 2026-10-22
 modDate: 2026-10-23
 category: glossary
@@ -34,7 +34,7 @@ faq:
     a: "Cool it fast, in an ice bath or a blast chiller, and do not leave it on the bench until it is merely warm. Published fridge times run from a couple of days to about a week, and the freezer from a couple of months upward. In a working kitchen, a few days in the fridge is the cautious read. Freeze what you will not use, bring it back to the boil before it goes into a sauce, and throw it out if it smells, whatever a card allowed."
 ---
 
-<p>On a fish station, a <strong>fumet</strong> is the stock you build from clean bones and a few aromatics, started cold and finished in about half an hour. It is there to disappear into a sauce, a soup or a rice dish and leave the sea behind in the bite. The word is French. English uses it more loosely, which is why a dictionary search and a kitchen search do not land on the same pot.</p>
+<p><strong>Fumet</strong> means a concentrated cooking liquid. The French word names an aroma; in the kitchen it names the liquid that carries it. On a fish station that liquid is the stock you build from clean white bones and a few aromatics, started cold and finished while it still tastes clean, often inside half an hour. It is there to disappear into a sauce, a soup or a rice dish and leave the sea behind in the bite. English uses the same word more loosely, which is why a dictionary search and a kitchen search do not land on the same pot.</p>
 <h2>What the word covers, and what the station means</h2>
 <p>Cambridge defines a fumet as a strong stock of fish or meat. BBC Food stretches it further: a concentrated cooking liquid, often of mushrooms or fish, boiled down toward a syrup, and it reserves “fond” for meat, poultry and game. Both are real uses of the English word. Neither is the pot a brigade means when the board says fumet.</p>
 <p>That pot is a white fish stock. The frames are not roasted, the simmer stays gentle, and you stop while the flavour is still clean. In an American kitchen the same pot is often just called fish stock, and the careful versions of it are the short ones. Some restaurant pages treat fumet as the concentrate and stock as the thin pot. The bones are the same job. If you want it stronger, strain, then reduce the liquid. The name does not change because you boiled it down. A broth you would serve in a bowl, salted for drinking, is a different specification.</p>

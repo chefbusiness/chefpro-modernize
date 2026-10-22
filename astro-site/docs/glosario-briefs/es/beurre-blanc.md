@@ -1,10 +1,22 @@
 # Brief SERP — beurre blanc (ES)
 
-Fuente: Serper, Google España, 23 oct 2026. No hay volúmenes: DataForSEO no respondió y no se inventan. Se abrieron las fichas orgánicas que el ranking nombra. No se copia su texto.
+Fuente: Serper, Google España, 23 oct 2026. Se abrieron las fichas orgánicas que el ranking nombra. No se copia su texto. DataForSEO no aportó volúmenes; las cifras de abajo son solo las de Ahrefs que pasó John. No se inventa ninguna otra.
+
+## Volúmenes (Ahrefs, media mensual, últimos 12 meses)
+
+Contexto menor. John corrigió el criterio: el volumen no decide si se escribe ni cuánto. Cada término lleva la ficha completa. Manda la SERP (qué cubre el top, qué le falta, intención, subtemas y preguntas).
+
+- beurre blanc: 1300
+- salsa beurre blanc: 350
+- beurre blanc receta: 150
+- que es beurre blanc: 40
+- lubina beurre blanc: 20
+
+El título lleva «salsa beurre blanc» porque así titula el top español (Directo al Paladar, ¡Hola!, Martiko), no por la cifra. Lubina entra en la lista de pescados del pase, que ya estaba. La ficha no se acorta ni se alarga por estos números.
 
 ## Keyword principal
 
-beurre blanc / salsa beurre blanc / qué es la beurre blanc
+salsa beurre blanc / beurre blanc / qué es la beurre blanc
 
 ## Lo que devolvió Serper, en este orden
 

@@ -1,10 +1,21 @@
 # Brief SERP — fish fumet (EN-US)
 
-Fuente: Serper, Google en inglés (US), 23 oct 2026. Sin volúmenes. Se abrieron las cinco piezas del corte. No se copia su texto.
+Fuente: Serper, Google en inglés (US), 23 oct 2026. Se abrieron las cinco piezas del corte. No se copia su texto. Las cifras son solo las de Ahrefs que pasó John. No se inventa ninguna otra.
+
+## Volúmenes (Ahrefs, media mensual, últimos 12 meses)
+
+Contexto menor. El volumen no decide si se escribe ni cuánto (John). Manda la SERP.
+
+- fumet meaning: 2000
+- fumet: 1900
+- fish fumet: 500
+- fumet definition: 400
+
+La intención de definición ya estaba en la SERP: el diccionario mete carne, BBC mete setas, y la PAA abre con «what is a fish fumet?». El título y el primer párrafo responden qué significa la palabra antes del reloj de cocción. La ficha de método se mantiene entera.
 
 ## Keyword principal
 
-fish fumet / what is a fish fumet / fish stock vs fumet
+fumet meaning / what is a fish fumet / fish fumet vs fish stock
 
 ## Top de Serper
 

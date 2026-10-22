@@ -1,6 +1,14 @@
 # Brief SERP — beurre manié (ES)
 
-Fuente: Serper, Google España, 23 oct 2026. Sin volúmenes. La SERP sigue siendo corta: enciclopedia, vídeo y una ficha que da una proporción distinta de la de partida.
+Fuente: Serper, Google España, 23 oct 2026. La SERP es corta de páginas útiles: enciclopedia, vídeo y una ficha que da una proporción distinta de la de partida. Las cifras son solo las de Ahrefs que pasó John. No se inventa ninguna otra.
+
+## Volúmenes (Ahrefs, media mensual, últimos 12 meses)
+
+Contexto menor. John corrigió de forma expresa la idea de dejar esta ficha corta por la demanda: el volumen no decide si se escribe ni cuánto. El beurre manié en español lleva la misma ficha completa que el resto.
+
+- beurre manié: 10
+
+La comparación con el roux está porque eso es la SERP (Wikipedia, Gastronomía y Cía, TikTok, el hilo de Reddit «¿cuándo usar beurre manié en vez de roux?»), y porque el top se deja el gesto de partida: peso, 1:2, minuto de cocción, papilla, gluten. No porque la cifra sea baja.
 
 ## Keyword principal
 

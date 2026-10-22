@@ -1,6 +1,6 @@
 ---
 title: "Fumet de pescado: qué es y cómo se cuece sin que amargue"
-description: "El fumet es el fondo de espinas de pescado blanco, corto y sin tostar. En qué se distingue del caldo, cuánto tiempo lleva y cómo se usa en salsa y arroz."
+description: "El fumet de pescado es el fondo corto de espinas blancas. En qué se distingue del caldo, cómo va el de gambas o marisco, y por qué amarga si se pasa."
 pubDate: 2026-10-22
 modDate: 2026-10-23
 category: glosario
@@ -97,7 +97,9 @@ faq:
 <h2>Dónde trabaja: salsa, arroz, sopa</h2>
 <p>En la salsa de pescado es la diferencia entre un bocado que sigue en el mar y una mantequilla con limón. Una <a href="https://aichef.pro/blog/salsa-veloute-concepto-y-definicion">velouté</a> de pescado sale de este fondo y de un roux claro. Una reducción corta, montada luego con mantequilla, también. Si el fumet falta, el pescado del plato se queda solo.</p>
 <p>En el arroz a banda, en el del senyoret, en la fideuà y en la paella de pescado el grano se bebe el líquido entero. Pruébalo antes de echarlo a la paella y corrige la sal sabiendo que todavía va a reducir. Un fumet flojo no lo salva el marisco de encima. Un fumet salado de más deja el arroz incomible aunque el sofrito sea bueno.</p>
-<p>Las cáscaras van aparte. Un fumet de marisco —gamba, cigala, buey— se puede sofreír un momento, sin dejar que la cáscara se queme, y se cuece con el mismo reloj corto. Ese líquido es el del arroz de marisco y el de una bisqué. Si lo mezclas con el pote blanco, el lenguado de mañana hereda un fondo que no le corresponde. El caldo del súper, o el de casa hecho con más agua y una hora de fuego, se prueba igual: puede sacar de un apuro en una paella de domingo y no sustituye la mise de la partida.</p>
+<h3>Fumet de gambas y de marisco</h3>
+<p>Las cáscaras van aparte. El fumet de gambas es ese pote: cáscaras de gamba, sofritas un momento sin que se quemen, y el mismo reloj corto. Cigala o buey pueden compartir el cazo si la ficha llama al líquido fumet de marisco, no fumet blanco. Sirve para el arroz de marisco y para una bisqué. Mezclado con el pote de espina blanca, el lenguado de mañana hereda un fondo que no le corresponde.</p>
+<p>El caldo del súper, también el brik que se pide como fumet de Mercadona, puede sacar de un apuro en una paella de domingo si se prueba antes: la sal ya viene puesta. El de casa, con más agua y una hora de fuego, se prueba igual. Ninguno de los dos es la mise de la partida, y ninguno se reduce como un fondo que todavía no se ha salado.</p>
 <p>Llevar el cazo a la sala como si fuera una sopa, sin ajustarlo, cambia la intensidad y a menudo la sal. Si la ficha convierte el fumet en un plato, es otro trabajo: más agua o menos, otro punto de sal, y un nombre en la carta. El fondo de la partida no es esa sopa.</p>
 <h2>Errores que cuestan el cazo</h2>
 <ul>

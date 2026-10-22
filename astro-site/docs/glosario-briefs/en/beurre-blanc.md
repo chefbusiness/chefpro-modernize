@@ -1,10 +1,24 @@
 # Brief SERP — beurre blanc (EN-US)
 
-Fuente: Serper, Google en inglés (US), 23 oct 2026. Sin volúmenes: DataForSEO no respondió. Se abrieron las cinco fichas del corte. No se copia su texto.
+Fuente: Serper, Google en inglés (US), 23 oct 2026. Se abrieron las cinco fichas del corte. No se copia su texto. Las cifras son solo las de Ahrefs que pasó John. No se inventa ninguna otra.
+
+## Volúmenes (Ahrefs, media mensual, últimos 12 meses)
+
+Contexto menor. El volumen no decide si se escribe ni cuánto (John). Manda la SERP.
+
+- beurre blanc: 29000
+- beurre blanc sauce: 7900
+- lemon beurre blanc: 3700
+- beurre blanc recipe: 1500
+- what is beurre blanc: 1000
+- citrus beurre blanc: 900
+- lemon caper beurre blanc: 500
+
+Limón, cítrico y lemon-caper tienen sección propia porque el top ya los trata como variación (The Kitchn mete limón en la receta y ofrece cítrico; otras fichas los dejan en una frase) y porque hace falta separarlos de una mantequilla avellana con limón, que es otra salsa. La longitud de la ficha no sale de estas cifras.
 
 ## Keyword principal
 
-beurre blanc / beurre blanc sauce
+beurre blanc / beurre blanc sauce / lemon beurre blanc
 
 ## Top de Serper
 
@@ -26,9 +40,9 @@ Definición y receta en el mismo clic. Google premia la receta larga con reglas 
 
 ## H2 y FAQ elegidos
 
-H2: qué es y a qué sabe; de dónde sale; proporción; cómo se monta; por qué se corta; qué se puede cambiar en la comanda (ajo, sin vino, limón, holandesa, beurre rouge); en el pase; errores.
+H2: qué es y a qué sabe; de dónde sale; proporción; cómo se monta; por qué se corta; qué se puede cambiar en la comanda; lemon, citrus y lemon-caper; en el pase; errores.
 
-FAQ: qué lleva; por qué la mantequilla va fría; si se puede adelantar; diferencia con la holandesa; qué es el beurre rouge; a qué sabe; cómo se pronuncia; si se puede hacer sin vino; si lleva ajo; si es una salsa «ligera».
+FAQ: qué lleva; por qué la mantequilla va fría; si se puede adelantar; diferencia con la holandesa; qué es el beurre rouge; a qué sabe; cómo se pronuncia; si se puede hacer sin vino; si lleva ajo; qué es el lemon beurre blanc; qué es el lemon-caper; si es una salsa «ligera».
 
 La respuesta de salud no lleva kcal. Una ración es mantequilla. El número depende de la ración y aquí no se ha analizado esta proporción.
 

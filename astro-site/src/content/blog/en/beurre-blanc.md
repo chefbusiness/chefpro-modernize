@@ -1,6 +1,6 @@
 ---
 title: "Beurre blanc: what it is and how to mount it for service"
-description: "Beurre blanc is a shallot, white wine and vinegar reduction mounted with cold butter. A working ratio, why it splits, and how it differs from hollandaise."
+description: "Beurre blanc is a shallot, white wine and vinegar reduction mounted with cold butter. Lemon and lemon-caper are named variants. Why it splits, and how it differs from hollandaise."
 pubDate: 2026-10-22
 modDate: 2026-10-23
 category: glossary
@@ -40,6 +40,10 @@ faq:
     a: "The aromatic is shallot. A clove of garlic is a different sauce and it will take over the plate. If the ticket asks for garlic, name it. Do not drop it into the classic pan and send it as the Loire sauce."
   - q: "Is beurre blanc healthy?"
     a: "A portion is mostly butter. If you are counting fat, count it as butter, not as a light dressing. This card does not print a calorie figure: the number depends on the portion, and this ratio has not been sent to a lab. It is a sauce for a piece of fish."
+  - q: "What is a lemon beurre blanc?"
+    a: "The same cold-butter mount, with lemon juice taking the place of some or all of the vinegar. It tastes brighter, and the spec has to say lemon. Butter cooked to a nut colour and finished with lemon is a different sauce."
+  - q: "What is a lemon-caper beurre blanc?"
+    a: "A lemon beurre blanc with rinsed capers stirred in off the heat, once the butter has emulsified. Capers bring salt from the brine if you skip the rinse. Taste before you season."
 ---
 
 <p><strong>Beurre blanc</strong> is the white butter sauce you mount, to the minute, on a short reduction of shallot, white wine and vinegar. The French name means white butter, and along the Loire it still shows up as <strong>beurre nantais</strong>. Say it closer to "burr blahn", the last syllable nasal, than to the way the letters look in English. The butter is not a finish you flick over a finished sauce. The butter is the sauce. It goes in cold, in pieces, off the boil, and the plate leaves while the emulsion is still smooth. It tastes of butter and cooked shallot, with a clean acid edge, and the colour stays the colour of the butter. Egg and a nut-brown toast belong to other sauces.</p>
@@ -146,7 +150,11 @@ faq:
 </tbody>
 </table></div>
 <p>A mounted meat jus can be excellent and still be the wrong plate. The guest is waiting for something pale and sharp. <a href="https://aichef.pro/en/blog/monter-au-beurre">Mounting with butter</a> uses the same cold cube, on a sauce that was already there. A <a href="https://aichef.pro/en/blog/gastrique">gastrique</a> is a different acid altogether, sugar and vinegar, and it does not stand in for this reduction.</p>
-<p>Two variations get asked for as if they were the classic. Garlic is one. A grated clove will sit on top of the shallot and the wine, and the plate tastes of garlic. If that is the ticket, write it. Leaving the wine out is the other. Vinegar, or lemon, plus a spoon of water can still hold the butter, and the sauce comes up sharper, with less of the roundness the wine was there to give. Lemon juice in place of the vinegar is the same kind of decision: a citrus beurre blanc, named on the spec, not a quiet squeeze at the pass.</p>
+<p>Two variations get asked for as if they were the classic. Garlic is one. A grated clove will sit on top of the shallot and the wine, and the plate tastes of garlic. If that is the ticket, write it. Leaving the wine out is the other. Vinegar plus a spoon of water can still hold the butter, and the sauce comes up sharper, with less of the roundness the wine was there to give. The spec says so.</p>
+<h2>Lemon, citrus, and lemon-caper</h2>
+<p>The Loire sauce takes its acid from white wine vinegar. A lemon beurre blanc keeps the same mount and moves that acid: lemon juice stands in for the vinegar, or shares the reduction with a smaller splash of it. The butter is still cold, the pan still stays off the boil, and the ticket says lemon, because the plate tastes brighter.</p>
+<p>Citrus beyond lemon — orange, blood orange, yuzu — is the same decision with another fruit. The juice goes into the reduction. It does not land as a quiet squeeze over a finished classic. Name the fruit. A guest who ordered beurre blanc is waiting for shallot, wine and vinegar.</p>
+<p>Lemon-caper is that lemon sauce with capers. Rinse them first, or the brine salts the pan before you have tasted it. Stir them in when the butter is already emulsified and the pan is off the heat, so they stay whole instead of stewing in the reduction. Then taste, and salt only if the capers left room. A nut-brown butter finished with lemon is a beurre noisette. It can be a very good sauce. It is not this emulsion.</p>
 <h2>On the pass</h2>
 <p>Pike is the classic. On a modern menu the same sauce sits happily with sole, turbot, hake, monkfish, a just-seared scallop or warm asparagus. Salmon takes it if the wine can stand up to the fat, which is why so many American cards put the two together. It argues with a dark meat glaze on the same bite.</p>
 <p>Mise is the strained reduction, in a small container, and the butter in cubes in the station fridge. That bowl is the visible cost of every portion. If the service cannot hold the minute, choose a sauce that can sit, and leave beurre blanc off that menu.</p>

@@ -1,6 +1,21 @@
 # Brief SERP — fumet de pescado (ES)
 
-Fuente: Serper, Google España, 23 oct 2026. Sin volúmenes. Se abrieron las fichas que el corte permite identificar. No se copia su texto.
+Fuente: Serper, Google España, 23 oct 2026. Se abrieron las fichas que el corte permite identificar. No se copia su texto. Las cifras son solo las de Ahrefs que pasó John. No se inventa ninguna otra.
+
+## Volúmenes (Ahrefs, media mensual, últimos 12 meses)
+
+Contexto menor. El volumen no decide si se escribe ni cuánto (John). La ficha sigue completa. Manda la SERP.
+
+- fumet de pescado: 6600
+- fumet: 2400
+- fumet mercadona: 2200
+- fumet de gambas: 1000
+- fumet de pescado receta: 900
+- fumet de peix: 400
+- como hacer fumet de pescado: 350
+- fumet de marisco: 300
+
+El H1 se queda en «fumet de pescado», que es como titula el top (Directo al Paladar, Mercado Las Águilas, Leioa) y como pregunta el autocompletado «es lo mismo que caldo de pescado». Gambas y marisco ya estaban en el cuerpo porque la SERP los saca al lado; el brik se nombra como Mercadona una vez, sin ficha de producto. «Fumet de peix» es la consulta en catalán: no se abre una URL en catalán. El séptimo idioma del sitio es el neerlandés.
 
 ## Keyword principal
 
@@ -22,7 +37,7 @@ Lectura de apoyo ya hecha, fuera de este corte: Wikipedia ES (20/25 minutos, «f
 
 receta, mercadona, de la abuela, «es lo mismo que caldo de pescado», arguiñano, para paella, de marisco, thermomix, ingredientes.
 
-Mercadona, Arguiñano y Thermomix no se convierten en sección. La pregunta real es si un caldo comprado, o el de casa con una hora de fuego, sustituye al fondo. Se responde en la ficha, sin ficha de producto ni programa de robot.
+Arguiñano y Thermomix no se convierten en sección ni en programa. Mercadona se nombra una vez, como el brik que la gente pide, sin ficha de producto ni ingredientes inventados. La pregunta real es si un caldo comprado, o el de casa con una hora de fuego, sustituye al fondo.
 
 ## Intención
 
@@ -30,7 +45,7 @@ Receta doméstica, y enseguida «¿es lo mismo que el caldo?» y «¿me vale par
 
 ## H2 y FAQ elegidos
 
-H2: qué es y en qué se distingue del caldo; qué espina; cómo se cuece; el clarificado, cuando el fumet se va a beber; dónde trabaja (salsa, paella, arroz, marisco); errores.
+H2: qué es y en qué se distingue del caldo; qué espina; cómo se cuece; el clarificado, cuando el fumet se va a beber; dónde trabaja (salsa, paella, arroz); fumet de gambas y de marisco; errores.
 
 FAQ: ¿es un caldo?; ¿cuánto tiempo?; ¿por qué amarga?; ¿se tuestan las espinas?; ¿cuánto aguanta?; ¿hay que clarificarlo?; ¿el de marisco es el mismo?; ¿sirve el del súper para una paella?
 

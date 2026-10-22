@@ -1,6 +1,6 @@
 ---
-title: "Beurre blanc: qué es y cómo se monta al momento"
-description: "El beurre blanc es una salsa de chalota, vino blanco y vinagre montada con mantequilla fría. Proporción de trabajo, por qué se corta y con qué pescado se manda."
+title: "Salsa beurre blanc: qué es y cómo se monta al momento"
+description: "La salsa beurre blanc es chalota, vino blanco y vinagre montados con mantequilla fría. Proporción de trabajo, por qué se corta y con qué pescado se manda."
 pubDate: 2026-10-22
 modDate: 2026-10-23
 category: glosario
@@ -147,7 +147,7 @@ faq:
 </table></div>
 <p>Un jugo de carne con un poco de mantequilla puede estar muy bien y, aun así, no cubre una comanda de beurre blanc. El comensal espera algo pálido, ácido y mantecoso. El <a href="https://aichef.pro/blog/montar-al-burro">montaje al burro</a> usa el mismo dado frío, sobre una salsa que ya existía.</p>
 <h2>En el pase</h2>
-<p>El sitio clásico es el lucio. En una carta de hoy se sienta igual de bien con lenguado, rodaballo, merluza, rape, una vieira recién marcada o unos espárragos tibios. El salmón lo admite si el vino aguanta su grasa. Se lleva mal con un fondo oscuro en el mismo bocado, porque los dos quieren mandar.</p>
+<p>El sitio clásico es el lucio. En una carta de hoy se sienta igual de bien con lenguado, lubina, rodaballo, merluza, rape, una vieira recién marcada o unos espárragos tibios. El salmón lo admite si el vino aguanta su grasa. Se lleva mal con un fondo oscuro en el mismo bocado, porque los dos quieren mandar.</p>
 <p>La mise es la reducción ya colada, en poca cantidad, y la mantequilla en dados en el frío de la partida. El jefe mira ese cuenco porque es el coste visible de cada ración, y mira también si alguien monta por costumbre platos que no lo llevaban. Si el turno no puede sostener el minuto, hay otras salsas que aguantan el baño, como la holandesa o un <a href="https://aichef.pro/blog/ligado-con-yema">ligado con yema</a>. El beurre blanc se elige cuando el plato lo pide.</p>
 <figure><img src="/blog-assets/2026/05/mayonesa-cuerpo.jpg" alt="Beurre blanc servido al momento sobre un pescado, opaco y sin charco de grasa en el plato." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 <h2>Errores que se repiten</h2>

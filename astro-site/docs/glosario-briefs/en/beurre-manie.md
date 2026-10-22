@@ -1,6 +1,14 @@
 # Brief SERP — beurre manié (EN-US)
 
-Fuente: Serper, Google en inglés (US), 23 oct 2026. Sin volúmenes. Se abrieron las fichas del corte. No se copia su texto.
+Fuente: Serper, Google en inglés (US), 23 oct 2026. Se abrieron las fichas del corte. No se copia su texto. Las cifras son solo las de Ahrefs que pasó John. No se inventa ninguna otra.
+
+## Volúmenes (Ahrefs, media mensual, últimos 12 meses)
+
+Contexto menor. El volumen no decide si se escribe ni cuánto (John). La ficha sigue completa. Manda la SERP: receta, «what is», y roux contra esta pasta.
+
+- beurre manie: 2800
+- beurre manie recipe: 400
+- what is beurre manie: 100
 
 ## Keyword principal
 
