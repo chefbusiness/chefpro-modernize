@@ -19,7 +19,7 @@
     "precios": "Preise",
     "integraciones": "Integrationen",
     "reducir_costes": "Kosten senken",
-    "herramientas_ia": "KI-Tools für Restaurants",
+    "herramientas_ia": "KI-Agenten für Restaurants",
     "carta_menu": "Speisekarte mit KI",
     "marketing_ia": "Marketing mit KI",
     "chatgpt_ia": "ChatGPT für Restaurants",
@@ -40,8 +40,8 @@
     "title_prefix": "Transformieren Sie Ihr",
     "title_suffix": "mit",
     "title_brand": "AI Chef Pro",
-    "subtitle": "50+ Spezialisierte KI-Tools für Köche. Von Kulinarischer Kreativität bis Digital Marketing.",
-    "description": "Suite von KI-Tools und KI-Agenten, Modelle für den täglichen Gebrauch von Köchen und Gastronomiefachleuten.",
+    "subtitle": "75+ KI-Agenten für Köche. Von der kulinarischen Kreativität bis zum digitalen Marketing.",
+    "description": "Eine Suite von KI-Agenten, trainiert für den Alltag von Köchen und Gastronomiefachleuten.",
     "rating": "Bewertung: 5 Sterne",
     "business_types": [
       "Management",
@@ -64,7 +64,7 @@
     "v2_social_count": "generierte Rezepte, Prozesse & Lösungen",
     "v2_title_prefix": "Kreieren, steuern und ausbauen:",
     "v2_title_suffix": "mit",
-    "v2_subtitle": "Automatisieren Sie Rezepte, Food Cost, Warenverluste, Speisekarten und Marketing mit 50+ KI-Agenten für Restaurants und Gastronomiebetriebe.",
+    "v2_subtitle": "Automatisieren Sie Rezepte, Food Cost, Warenverlust, Speisekarte und Marketing mit 75+ KI-Agenten für Restaurants.",
     "v2_description": "Trainiert auf den täglichen Arbeitsabläufen von Küchenchefs, Patissiers, Bäckern und Gastronomiebetreibern – nicht auf generischem Restaurant-Marketing.",
     "v2_stat_agents": "KI-Agenten",
     "v2_stat_tools": "Business- & Kalkulationstools",
@@ -458,7 +458,7 @@
     "v2_business_cta": "Pläne ansehen, die alle 6 Tools freischalten"
   },
   "gallery": {
-    "badge": "50+ Spezialisierte KI-Agenten in Aktion",
+    "badge": "75+ Spezialisierte KI-Agenten in Aktion",
     "title": "Entdecken Sie die Macht von AI Chef Pro",
     "description": "Erkunden Sie echte Screenshots unserer spezialisierten KI-Agenten für Gastronomiefachleute",
     "previous": "Vorherige",
@@ -706,7 +706,7 @@
           "content": "Diese Seite enthält rechtliche Informationen zur Nutzung von AI Chef Pro und seinen Services.",
           "content_paragraphs": [
             "<h2>1. Allgemeine Informationen</h2><p><strong>Website-Eigentümer:</strong> John Guerrero</p><p><strong>Handelsname:</strong> AI Chef Pro</p><p><strong>Kontakt-E-Mail:</strong> info@aichef.pro</p><p><strong>Telefon:</strong> +34 744 717 942</p>",
-            "<h2>2. Zweck und Aktivität</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die Tools und KI-Agenten für Kochprofis anbietet. Unsere Services umfassen mehr als 55 spezialisierte KI-Agenten von kulinarischer Kreativität bis hin zur gastronomischen Unternehmensführung.</p>",
+            "<h2>2. Zweck und Aktivität</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die KI-Agenten für Kochprofis anbietet. Unsere Services umfassen 75+ KI-Agenten von kulinarischer Kreativität bis hin zur gastronomischen Unternehmensführung.</p>",
             "<h2>8. Kontakt</h2><p>Für rechtliche Beratung oder Beschwerden können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
           ]
         },
@@ -747,7 +747,7 @@
           "content": "Diese allgemeinen Geschäftsbedingungen regeln die Nutzung von AI Chef Pro und seinen Services.",
           "content_paragraphs": [
             "<h2>1. Annahme der Bedingungen</h2><p>Durch den Zugriff auf und die Nutzung von AI Chef Pro akzeptieren Sie diese Geschäftsbedingungen. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, sollten Sie unsere kulinarischen KI-Dienste nicht nutzen.</p>",
-            "<h2>2. Servicebeschreibung</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die mehr als 55 Tools für Küchenprofi anbietet, einschließlich kulinarischer Kreativität, Weltkochbücher und Unternehmensführung.</p>",
+            "<h2>2. Servicebeschreibung</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die 75+ KI-Agenten für Küchenprofi anbietet, einschließlich kulinarischer Kreativität, Weltkochbücher und Unternehmensführung.</p>",
             "<h2>3. Benutzerregistrierung und Konto</h2><p>Um auf bestimmte Funktionen zugreifen zu können, müssen Sie ein Konto erstellen und genaue, aktuelle Informationen angeben. Sie sind verantwortlich für die Vertraulichkeit Ihres Kontos und Passworts.</p>",
             "<h2>4. Erlaubte Nutzung</h2><p>Sie dürfen AI Chef Pro für legitime gastronomische berufliche Zwecke verwenden. Die Nutzung für illegale Aktivitäten, Spam oder jede Aktivität, die unseren Diensten oder anderen Benutzern schaden könnte, ist nicht erlaubt.</p>",
             "<h2>5. Geistiges Eigentum</h2><p>Alle Inhalte, Marken, Logos und Technologien von AI Chef Pro gehören John Guerrero oder seinen Lizenzgebern. Von der KI generierte Rezepte und Inhalte können vom Benutzer entsprechend seinem Abonnement verwendet werden.</p>",
@@ -950,7 +950,7 @@
   },
   "features": {
     "title": "Hauptmerkmale",
-    "description": "Entdecken Sie die fortschrittlichsten KI-Tools für kulinarische Profis",
+    "description": "75+ KI-Agenten für Köche, die den Alltag in der Profiküche beschleunigen wollen.",
     "ai_assistant": "KI-Assistent",
     "ai_assistant_desc": "Intelligente Unterstützung für alle gastronomischen Herausforderungen",
     "food_pairing": "Food Pairing",
@@ -969,7 +969,7 @@
     "ai_powered": "Fortgeschrittene Künstliche Intelligenz",
     "ai_powered_desc": "GPT-Modelle spezialisiert auf Gastronomie",
     "specialized": "Spezialisierte Tools",
-    "specialized_desc": "50+ KI-Agenten für jeden gastronomischen Bedarf",
+    "specialized_desc": "75+ KI-Agenten für jeden gastronomischen Bedarf",
     "global": "Weltküche",
     "global_desc": "21 Kochbücher aus Weltküchen",
     "business_tools": "Unternehmensführung",
@@ -1017,7 +1017,7 @@
         "uses": "10.000/Monat",
         "description": "Ideal für Küchenhelfer, Köche und Postenchefs",
         "features": {
-          "0": "50+ Agenten & Tools enthalten",
+          "0": "75+ KI-Agenten enthalten",
           "1": "10.000 monatliche Credits",
           "2": "Weltweite Kochbücher",
           "3": "E-Mail-Support"
@@ -1029,7 +1029,7 @@
         "v2_hint": "≈ ein Monat Rezepte, Kalkulationen und Speisekarten für einen Posten",
         "v2_cta": "Als Mitglied starten",
         "v2_features": [
-          "50+ Agenten & Tools enthalten",
+          "75+ KI-Agenten enthalten",
           "10.000 monatliche Credits",
           "25+ internationale Kochbücher",
           "E-Mail-Support"
@@ -1043,7 +1043,7 @@
         "uses": "85.000/Monat",
         "description": "Für Küchenchefs, Chefköche und Restaurantmanager",
         "features": {
-          "0": "50+ Agenten & Tools enthalten",
+          "0": "75+ KI-Agenten enthalten",
           "1": "85.000 monatliche Credits",
           "2": "Zugang zu allen Weltküchen",
           "3": "Erweiterte Business-Tools",
@@ -1063,7 +1063,7 @@
         "uses": "175.000/Monat",
         "description": "Für gastronomische Unternehmer und Restaurantketten",
         "features": {
-          "0": "50+ Agenten & Tools enthalten",
+          "0": "75+ KI-Agenten enthalten",
           "1": "175.000 monatliche Credits",
           "2": "Zugang zu allen Weltküchen",
           "3": "Erweiterte Business-Tools",
@@ -1083,7 +1083,7 @@
         "uses": "∞",
         "description": "Unbegrenzte monatliche Credits für anspruchsvolle Profis",
         "features": {
-          "0": "50+ Agenten & Tools enthalten",
+          "0": "75+ KI-Agenten enthalten",
           "1": "Unbegrenzte monatliche Credits",
           "2": "Zugang zu allen Weltküchen",
           "3": "Erweiterte Business-Tools",
@@ -1107,7 +1107,7 @@
         "discount": "Sparen Sie 2 Monate",
         "description": "Ideal für gastronomische Unternehmer, Restaurantbesitzer und Manager",
         "features": {
-          "0": "50+ Agenten & Tools enthalten",
+          "0": "75+ KI-Agenten enthalten",
           "1": "Unbegrenzte Credits das ganze Jahr",
           "2": "Zugang zu allen Weltküchen",
           "3": "Erweiterte Business-Tools",
@@ -1194,11 +1194,11 @@
     "title": "Häufig gestellte Fragen",
     "description": "Finden Sie Antworten auf die häufigsten Fragen zu AI Chef Pro",
     "q1": "Was ist in AI Chef Pro enthalten?",
-    "a1": "AI Chef Pro umfasst 50+ auf Gastronomie spezialisierte KI-Agenten, von kulinarischer Kreativität bis hin zu Business-Tools. Sie erhalten Zugang zu Kochbüchern aus 25 Weltküchen, KI-Rezeptgeneratoren, wissenschaftlichem Food Pairing, Management-Tools und vielem mehr.",
+    "a1": "AI Chef Pro umfasst 75+ auf Gastronomie spezialisierte KI-Agenten, von kulinarischer Kreativität bis hin zu Business-Tools. Sie erhalten Zugang zu Kochbüchern aus 25 Weltküchen, KI-Rezeptgeneratoren, wissenschaftlichem Food Pairing, Management-Tools und vielem mehr.",
     "q2": "Kann ich AI Chef Pro als Anfänger verwenden?",
     "a2": "Absolut! AI Chef Pro ist für Profis aller Erfahrungsstufen konzipiert. Unsere Tools enthalten detaillierte Erklärungen, Schritt-für-Schritt-Techniken und Coaching, die Ihnen helfen, Ihre gastronomischen Fähigkeiten zu entwickeln.",
     "q3": "Wie funktioniert der AI Chef Mitglied-Plan?",
-    "a3": "Der AI Chef Mitglied-Plan kostet 10 € pro Monat und beinhaltet 10.000 monatliche Credits mit Zugriff auf die 50+ Tools. Wenn Sie mehr benötigen, können Sie auf AI Chef Premium Pro (25 €/Monat, 85.000 Credits) oder höher wechseln. Keine Mindestlaufzeit: Sie können den Plan wechseln oder jederzeit kündigen.",
+    "a3": "Der AI Chef Mitglied-Plan kostet 10 € pro Monat und beinhaltet 10.000 monatliche Credits mit Zugriff auf die 75+ KI-Agenten. Wenn Sie mehr benötigen, können Sie auf AI Chef Premium Pro (25 €/Monat, 85.000 Credits) oder höher wechseln. Keine Mindestlaufzeit: Sie können den Plan wechseln oder jederzeit kündigen.",
     "q4": "Passen sich die Rezepte an verschiedene Portionsgrößen an?",
     "a4": "Ja, alle unsere Tools enthalten automatische Portionsberechnung. Sie können jedes Rezept für 1 Person oder für 1000 Gäste anpassen, und unser System berechnet automatisch die genauen Mengen jeder Zutat.",
     "q5": "Unterstützt es Nahrungsmittelbeschränkungen?",
@@ -1209,7 +1209,7 @@
   "footer": {
     "description": "KI-Tools Suite für kulinarische Fachkräfte",
     "brand_desc": "<strong>Künstliche Intelligenz für den heutigen Koch.</strong> Entwickeln Sie Ihr berufliches Potenzial mit dem Einsatz und der Unterstützung von künstlicher Intelligenz in Ihrem Alltag.",
-    "suite_desc": "Suite von KI-Tools und KI-Agenten, modelliert für Köche und Gastronomiefachleute.",
+    "suite_desc": "Suite von KI-KI-Agenten, modelliert für Köche und Gastronomiefachleute.",
     "newsletter_title": "Newsletter Abonnieren",
     "newsletter_placeholder": "E-Mail eingeben",
     "newsletter_button": "Abonnieren",
@@ -1232,7 +1232,7 @@
     "nav_software_gestion": "Küchenverwaltungssoftware",
     "nav_recetas": "KI-Rezepte",
     "nav_escandallos": "Food-Cost-Rechner KI",
-    "nav_ai_tools": "KI-Tools",
+    "nav_ai_tools": "KI-Agenten",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
     "plans_button": "Pläne Ansehen",
@@ -1255,7 +1255,7 @@
     "glosario_ia": "KI-Glossar",
     "glosario_culinario": "Kulinarisch-wissenschaftliches Glossar",
     "roadmap": "AI Chef Pro Roadmap",
-    "app_tools": "50+ Tools in den KI-Agenten",
+    "app_tools": "75+ KI-Agenten",
     "app_login": "Anmelden",
     "free_tools_hub": "Kostenlose Tools",
     "mentoria_online": "Online-Mentoring",
@@ -1380,16 +1380,16 @@
     }
   },
   "seo": {
-    "title": "AI Chef Pro: 50+ KI-Tools fur Koche und Restaurants",
-    "description": "KI-Suite fur Koche und Restaurants. 50+ Tools: KI-Rezepte, Food Cost Rechner, Speisekarten-Engineering, Marketing-Automatisierung. Starten Sie heute.",
-    "keywords": "ai chef pro, ai chef, ki fur restaurants, kunstliche intelligenz gastronomie, ki tools koch, ki restaurant software",
-    "og_image_alt": "AI Chef Pro - Suite mit 50+ KI-Tools für Profiköche"
+    "title": "KI-Agenten für Köche und Restaurants | AI Chef Pro",
+    "description": "KI-Agenten für Köche und Restaurants: 75+ Spezialisten für Food Cost, Rezepte, Speisekarte und Marketing. Starten Sie heute ab 10 € im Monat.",
+    "keywords": "ki-agenten für köche, ki-agenten restaurant, ki gastronomie, food cost ki, ai chef pro",
+    "og_image_alt": "KI-Agenten für Köche und Restaurants | AI Chef Pro"
   },
   "pages": {
     "index": {
-      "seo_title": "AI Chef Pro: 50+ KI-Tools fur Koche und Restaurants",
-      "seo_description": "KI-Suite fur professionelle Koche und Restaurants. 50+ Tools: KI-Rezepte, Food Cost, Speisekarten, Marketing. Starten Sie heute.",
-      "seo_keywords": "ai chef pro, ai chef, ki fur restaurants, ki tools koch, ki gastronomie"
+      "seo_title": "KI-Agenten für Köche und Restaurants | AI Chef Pro",
+      "seo_description": "KI-Agenten für Köche und Restaurants: 75+ Spezialisten für Food Cost, Rezepte, Speisekarte und Marketing. Starten Sie heute ab 10 € im Monat.",
+      "seo_keywords": "ki-agenten für köche, ki-agenten restaurant, ki gastronomie, food cost ki, ai chef pro"
     },
     "mentoria_online": {
       "seo_title": "Online-Mentoring für Köche - KI-Gastronomie-Beratung | AI Chef Pro",
@@ -1403,7 +1403,7 @@
       "heading": "Impressum",
       "content_paragraphs": [
         "<h2>1. Allgemeine Informationen</h2><p><strong>Websiteinhaber:</strong> John Guerrero</p><p><strong>Handelsname:</strong> AI Chef Pro</p><p><strong>Kontakt-E-Mail:</strong> info@aichef.pro</p><p><strong>Telefon:</strong> +34 744 717 942</p>",
-        "<h2>2. Zweck und Tätigkeit</h2><p>AI Chef Pro ist eine KI-Plattform, spezialisiert auf Gastronomie, die Tools und KI-Agenten für Küchenprofis bietet. Unsere Dienste umfassen über 55 spezialisierte KI-Agenten von kulinarischer Kreativität bis zum gastronomischen Geschäftsmanagement.</p>",
+        "<h2>2. Zweck und Tätigkeit</h2><p>AI Chef Pro ist eine KI-Plattform, spezialisiert auf Gastronomie, die KI-Agenten für Küchenprofis bietet. Unsere Dienste umfassen 75+ KI-Agenten von kulinarischer Kreativität bis zum gastronomischen Geschäftsmanagement.</p>",
         "<h2>3. Geistiges Eigentum</h2><p>Alle Inhalte, Marken, Logos, Designs, Quellcodes, Datenbanken und andere Elemente von AI Chef Pro sind durch Gesetze zum geistigen Eigentum geschützt. Vervielfältigung, Verbreitung oder öffentliche Kommunikation ohne ausdrückliche Genehmigung ist untersagt.</p>",
         "<h2>4. Inhaltshaftung</h2><p>AI Chef Pro behält sich das Recht vor, Inhalte ohne Vorankündigung zu ändern, zu aktualisieren oder zu entfernen. Wir garantieren keine Verfügbarkeit, Kontinuität oder Unfehlbarkeit des Dienstes.</p>",
         "<h2>5. Externe Links</h2><p>Unsere Website kann Links zu Websites Dritter enthalten. AI Chef Pro ist nicht verantwortlich für deren Inhalte, Datenschutzrichtlinien oder Praktiken.</p>",
@@ -1448,7 +1448,7 @@
       "heading": "Nutzungsbedingungen",
       "content_paragraphs": [
         "<h2>1. Annahme der Bedingungen</h2><p>Durch den Zugriff auf und die Nutzung von AI Chef Pro akzeptieren Sie diese Bedingungen. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, sollten Sie unsere kulinarischen KI-Dienste nicht nutzen.</p>",
-        "<h2>2. Dienstbeschreibung</h2><p>AI Chef Pro ist eine KI-Plattform, spezialisiert auf Gastronomie, die über 55 Tools für Küchenprofis anbietet, einschließlich kulinarischer Kreativität, Weltkochbücher und Geschäftsmanagement.</p>",
+        "<h2>2. Dienstbeschreibung</h2><p>AI Chef Pro ist eine KI-Plattform, spezialisiert auf Gastronomie, die 75+ KI-Agenten für Küchenprofis anbietet, einschließlich kulinarischer Kreativität, Weltkochbücher und Geschäftsmanagement.</p>",
         "<h2>3. Registrierung und Benutzerkonto</h2><p>Für den Zugriff auf bestimmte Funktionen müssen Sie ein Konto mit genauen und aktuellen Informationen erstellen. Sie sind für die Vertraulichkeit Ihres Kontos und Passworts verantwortlich.</p>",
         "<h2>4. Erlaubte Nutzung</h2><p>Sie dürfen AI Chef Pro für legitime professionelle gastronomische Zwecke nutzen. Die Nutzung für illegale oder schädliche Aktivitäten ist untersagt.</p>",
         "<h2>5. Geistiges Eigentum</h2><p>Alle Inhalte, Marken und Technologien von AI Chef Pro sind Eigentum ihrer jeweiligen Inhaber. KI-generierte Rezepte können gemäß Ihrem Abonnement genutzt werden.</p>",
@@ -1460,9 +1460,9 @@
       ]
     },
     "services": {
-      "seo_title": "Dienstleistungen - AI Chef Pro | KI-Lösungen für Gastronomie",
-      "seo_description": "Entdecken Sie alle Dienstleistungen von AI Chef Pro. Komplette Suite von KI-Tools für Gastronomie-Profis.",
-      "seo_keywords": "ai chef pro dienstleistungen, gastronomie lösungen, ki küchen tools"
+      "seo_title": "KI-Agenten: Services für die Gastronomie | AI Chef Pro",
+      "seo_description": "Services mit KI-Agenten für die Gastronomie: Mentoring, Präsenzschulung und eine Suite von 75+. Sehen Sie, was enthalten ist, und starten Sie ab 10 € im Monat.",
+      "seo_keywords": "ki-agenten services, ki-agenten gastronomie, mentoring koch, präsenzschulung ki, ai chef pro"
     }
   },
   "alt_texts": {
@@ -1646,15 +1646,15 @@
   },
   "landingRestaurantes": {
     "seo": {
-      "title": "KI-Tools für Restaurants | AI Chef Pro",
-      "description": "50+ KI-Tools für Restaurantbesitzer. Kosten kontrollieren, Speisekarte gestalten, Allergene verwalten und Marketing automatisieren. Starten Sie heute.",
-      "keywords": "ki tools restaurant, künstliche intelligenz restaurant, restaurant management ki, ki für restaurantbesitzer, food cost ki, digitale speisekarte ki, restaurant marketing ki",
+      "title": "KI-Agenten für Restaurants: 75+ Spezialisten | AI Chef Pro",
+      "description": "KI-Agenten für Restaurants: 75+ Spezialisten für Kosten, Speisekarte, Allergene und Marketing. Ohne Bindung. Starten Sie heute ab 10 € im Monat.",
+      "keywords": "ki-agenten für restaurants, ki-agenten gastronomie, food cost ki, speisekarte ki, ai chef pro",
       "url_slug": "ki-tools-restaurant"
     },
     "hero": {
-      "badge": "50+ auf Gastronomie spezialisierte Tools",
-      "h1": "KI-Tools für Restaurants",
-      "subtitle": "Die KI-Suite für Restaurantbesitzer, Bar- und Café-Betreiber. Ohne technische Kenntnisse. Ohne Lernkurve.",
+      "badge": "75+ KI-Agenten für die Gastronomie",
+      "h1": "KI-Agenten für Restaurants",
+      "subtitle": "75+ KI-Agenten für Restaurants, Bars und Cafés. Ohne technische Kenntnisse.",
       "tagline": "Kosten kontrollieren · Speisekarte gestalten · Marketing automatisieren · Abfall reduzieren",
       "cta_primary": "Jetzt starten",
       "cta_secondary": "Pläne und Preise ansehen",
@@ -1674,8 +1674,8 @@
         "label": "Reduzierung von Lebensmittelverschwendung"
       },
       {
-        "metric": "50+",
-        "label": "auf Gastronomie spezialisierte Tools"
+        "metric": "75+",
+        "label": "KI-Agenten für die Gastronomie"
       }
     ],
     "tools_section": {
@@ -1783,7 +1783,7 @@
     "faq": [
       {
         "question": "Welche KI-Tools sind für ein Restaurant nützlich?",
-        "answer": "Die nützlichsten KI-Tools für Restaurants umfassen: Speisekarten-Generatoren, Gerichtkostenrechner, Allergen-Manager, Social-Media-Marketing-Tools, Einkaufsplaner und Abfallkontrolle. AI Chef Pro bündelt 50+ dieser spezialisierten Tools in einer einzigen Suite."
+        "answer": "Die nützlichsten KI-Tools für Restaurants umfassen: Speisekarten-Generatoren, Gerichtkostenrechner, Allergen-Manager, Social-Media-Marketing-Tools, Einkaufsplaner und Abfallkontrolle. AI Chef Pro bündelt 75+ KI-Agenten in einer einzigen Suite."
       },
       {
         "question": "Kann KI helfen, die Kosten in einem Restaurant zu senken?",
@@ -1800,7 +1800,7 @@
     ],
     "cta_section": {
       "title": "Starten Sie heute mit KI-Tools für Ihr Restaurant",
-      "subtitle": "Sofortiger Zugang zu 50+ auf Gastronomie spezialisierten Tools.",
+      "subtitle": "Sofortiger Zugang zu 75+ auf Gastronomie spezialisierten Tools.",
       "primary": "ausprobieren AI Chef Pro",
       "secondary": "Alle Pläne ansehen"
     },
@@ -2006,8 +2006,8 @@
         "label": "durchschnittliche Kundenbewertung bei Google"
       },
       {
-        "metric": "50+",
-        "label": "Gastronomie-Marketing-Tools"
+        "metric": "75+",
+        "label": "KI-Agenten"
       }
     ],
     "tools_section": {
@@ -2160,8 +2160,8 @@
     },
     "results": [
       {
-        "metric": "50+",
-        "label": "in Gastronomie trainierte Tools"
+        "metric": "75+",
+        "label": "KI-Agenten"
       },
       {
         "metric": "10x",
@@ -2372,8 +2372,8 @@
         "label": "Aktive Restaurants"
       },
       {
-        "metric": "50+",
-        "label": "KI-Küchentools"
+        "metric": "75+",
+        "label": "KI-Agenten"
       },
       {
         "metric": "30%",
@@ -2394,7 +2394,7 @@
         {
           "feature": "Rezeptverwaltung",
           "other": "Word-Dateien oder Papier",
-          "aichef": "50+ spezialisierte KI-Tools"
+          "aichef": "75+ KI-Agenten"
         },
         {
           "feature": "Allergenkontrolle",
@@ -2523,7 +2523,7 @@
     "faq": [
       {
         "question": "Was ist eine KI-Küchenverwaltungssoftware?",
-        "answer": "Es ist eine Plattform, die künstliche Intelligenz einsetzt, um Küchenmanagementaufgaben zu automatisieren: Food-Cost-Kalkulation, Inventar, Rezepte, Allergene und Rentabilitätsanalyse. AI Chef Pro integriert 50+ auf die Gastronomie spezialisierte Tools."
+        "answer": "Es ist eine Plattform, die künstliche Intelligenz einsetzt, um Küchenmanagementaufgaben zu automatisieren: Food-Cost-Kalkulation, Inventar, Rezepte, Allergene und Rentabilitätsanalyse. AI Chef Pro integriert 75+ auf die Gastronomie spezialisierte Tools."
       },
       {
         "question": "Kann ich meine Food-Cost-Kalkulationen mit AI Chef Pro verwalten?",
@@ -2575,8 +2575,8 @@
         "label": "Weniger Zeit für Menüentwicklung"
       },
       {
-        "metric": "50+",
-        "label": "Spezialisierte Tools"
+        "metric": "75+",
+        "label": "KI-Agenten"
       }
     ],
     "comparison": {
@@ -2774,8 +2774,8 @@
         "label": "Aktive Restaurants"
       },
       {
-        "metric": "50+",
-        "label": "Spezialisierte Tools"
+        "metric": "75+",
+        "label": "KI-Agenten"
       }
     ],
     "comparison": {
@@ -2945,9 +2945,9 @@
   },
   "toolHub": {
     "seo": {
-      "title": "8 Kostenlose KI-Tools fur Restaurants | AI Chef Pro",
-      "description": "Kostenlose KI-Tools fur Restaurants: Food Cost Rechner, Rentabilitatsrechner, Allergen-Detektor und mehr. Ohne Registrierung.",
-      "keywords": "kostenlose restaurant tools, food cost rechner kostenlos, ki tools restaurant kostenlos"
+      "title": "8 kostenlose Tools für Ihr Restaurant | AI Chef Pro",
+      "description": "Kostenlose Tools für Ihr Restaurant: Food Cost, Allergene und Rentabilität, ohne Anmeldung. Die kostenpflichtige Suite hat 75+ KI-Agenten. Testen Sie sie heute.",
+      "keywords": "kostenlose tools restaurant, food cost rechner gratis, 75+ ki-agenten, ai chef pro"
     },
     "breadcrumb": "Kostenlose Tools",
     "other_tools_title": "Weitere kostenlose Tools",
@@ -3021,7 +3021,7 @@
     },
     "cta": {
       "title": "Benötigen Sie mehr Leistung?",
-      "subtitle": "Diese Tools sind nur eine Probe der 50+ KI-Funktionen in AI Chef Pro Premium.",
+      "subtitle": "Diese Rechner sind nur eine Probe der 75+ KI-Agenten von AI Chef Pro.",
       "primary": "Premium-Plan ansehen",
       "secondary": "starten AI Chef Pro"
     }
@@ -3567,7 +3567,7 @@
     ],
     "cta_section": {
       "title": "Digitalisieren Sie Ihr Restaurant noch heute mit KI",
-      "subtitle": "AI Chef Pro ist die umfassendste KI-Suite für die Gastronomie: 50+ Tools zur Verwaltung Ihres Restaurants mit künstlicher Intelligenz.",
+      "subtitle": "AI Chef Pro ist die umfassendste KI-Suite für die Gastronomie: 75+ KI-Agenten zur Verwaltung Ihres Restaurants mit künstlicher Intelligenz.",
       "primary": "AI Chef Pro testen",
       "secondary": "Alle Pläne ansehen"
     }

@@ -46,9 +46,9 @@ const priceNote =
 
 export const TRAINING: Record<ParityLang, PageCopy> = {
   en: {
-    title: 'In-person AI training for restaurants | AI Chef Pro',
+    title: 'In-person AI agent training for kitchens | AI Chef Pro',
     description:
-      'John Guerrero travels to your kitchen for an AI session: conference from 990 €, workshop 1,490 €, full day 2,490 €. Prices are euro, VAT excluded, base for peninsular Spain. Travel quoted.',
+      'In-person AI agent training for kitchens: conference, workshop or full day with John Guerrero and 75+ AI agents. Ask for a date. Prices in euro.',
     keywords: 'in-person AI training restaurants, restaurant AI workshop, chef AI course, hospitality AI training',
     eyebrow: 'In-person training',
     h1: 'AI training in your kitchen, with the chef who built the suite',
@@ -122,9 +122,9 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'See plans and pricing',
   },
   fr: {
-    title: 'Formation IA en restauration, sur place | AI Chef Pro',
+    title: 'Formation sur place avec des agents IA | AI Chef Pro',
     description:
-      'John Guerrero se déplace dans votre cuisine : conférence dès 990 €, atelier 1 490 €, journée 2 490 €. Prix en euros, hors TVA, base Espagne péninsulaire. Déplacement en sus. Pas de CPF.',
+      'Formation sur place avec des agents IA : conférence, atelier ou journée avec John Guerrero et 75+ agents dans votre cuisine. Demandez une date.',
     keywords: 'formation IA restauration, atelier intelligence artificielle cuisine, formation présentielle restaurant, chef formateur IA',
     eyebrow: 'Formation sur place',
     h1: 'Une formation IA dans votre cuisine, avec le chef qui a construit la suite',
@@ -169,7 +169,7 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
         answer:
           'C’est une session de travail sur les coûts, les allergènes, la carte ou les contenus. Ce n’est ni un dossier CPF, ni un avis juridique.',
         paragraphs: [
-          'Le catalogue sur lequel vous vous exercez est celui de l’espace où vous vous connectez. La page tarifs en français indique aujourd’hui plus de 50 agents.',
+          'Le catalogue sur lequel vous vous exercez est celui de l’espace où vous vous connectez. La page tarifs en français indique aujourd’hui 75+ agents.',
         ],
       },
     ],
@@ -197,9 +197,9 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Voir les tarifs',
   },
   de: {
-    title: 'Präsenzschulung KI für die Gastronomie | AI Chef Pro',
+    title: 'KI-Agenten: Präsenzschulung für die Küche | AI Chef Pro',
     description:
-      'John Guerrero kommt in Ihre Küche: Vortrag ab 990 €, Workshop 1.490 €, Tag 2.490 €. Preise in Euro, ohne MwSt., Basis spanisches Festland. Reise extra. Kein Bildungsgutschein.',
+      'Präsenzschulung mit KI-Agenten für Ihre Brigade: Vortrag, Workshop oder ganzer Tag. John Guerrero bringt 75+ Agenten in Ihre Küche. Fragen Sie ein Datum an.',
     keywords: 'KI Schulung Gastronomie, Präsenzschulung KI Küche, Workshop künstliche Intelligenz Restaurant, Koch Schulung KI',
     eyebrow: 'Präsenzschulung',
     h1: 'KI-Schulung in Ihrer Küche, mit dem Koch, der die Suite gebaut hat',
@@ -242,7 +242,7 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
         h2: 'Was der Tag ist und was er nicht ist',
         answer: 'Es ist eine Arbeitssession zu Wareneinsatz, Allergenen, Karte oder Inhalten. Es ist kein Bildungsgutschein und kein Rechtsrat.',
         paragraphs: [
-          'Der Katalog, an dem Sie üben, ist der des Arbeitsbereichs, in dem Sie sich anmelden. Die deutsche Preisseite nennt heute mehr als 50 Agenten.',
+          'Der Katalog, an dem Sie üben, ist der des Arbeitsbereichs, in dem Sie sich anmelden. Die deutsche Preisseite nennt heute 75+ Agenten.',
         ],
       },
     ],
@@ -270,9 +270,9 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Preise ansehen',
   },
   it: {
-    title: 'Formazione IA in ristorazione, in presenza | AI Chef Pro',
+    title: 'Formazione in presenza con agenti IA | AI Chef Pro',
     description:
-      'John Guerrero viene in cucina: conferenza da 990 €, workshop 1.490 €, giornata 2.490 €. Prezzi in euro, IVA esclusa, base Spagna peninsulare. Trasferta a parte.',
+      'Formazione in presenza con agenti IA per la tua brigata: conferenza, workshop o giornata. John Guerrero porta i 75+ agenti nella tua cucina. Chiedi una data.',
     keywords: 'formazione IA ristorazione, workshop intelligenza artificiale cucina, corso chef IA, formazione in presenza ristorante',
     eyebrow: 'Formazione in presenza',
     h1: 'Formazione IA nella tua cucina, con lo chef che ha costruito la suite',
@@ -315,7 +315,7 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
         h2: 'Che cosa è la giornata, e che cosa non è',
         answer: 'È una sessione di lavoro su costi, allergeni, menu o contenuti. Non è un finanziamento e non è un parere legale.',
         paragraphs: [
-          'Il catalogo su cui ti eserciti è quello dello spazio in cui entri. La pagina prezzi in italiano indica oggi più di 50 agenti.',
+          'Il catalogo su cui ti eserciti è quello dello spazio in cui entri. La pagina prezzi in italiano indica oggi 75+ agenti.',
         ],
       },
     ],
@@ -343,9 +343,9 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Vedi i prezzi',
   },
   pt: {
-    title: 'Formação de IA na restauração, presencial | AI Chef Pro',
+    title: 'Formação presencial com agentes de IA | AI Chef Pro',
     description:
-      'John Guerrero vai à tua cozinha: conferência desde 990 €, workshop 1.490 €, dia 2.490 €. Preços em euros, IVA excluído, base Espanha peninsular. Deslocação à parte. Sem apoio do IEFP.',
+      'Formação presencial com agentes de IA para a sua brigada: conferência, workshop ou dia inteiro. John Guerrero leva os 75+ agentes à sua cozinha. Peça data.',
     keywords: 'formação IA restauração, workshop inteligência artificial cozinha, formação presencial restaurante, chef formador IA',
     eyebrow: 'Formação presencial',
     h1: 'Formação de IA na tua cozinha, com o chef que construiu a suite',
@@ -388,7 +388,7 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
         h2: 'O que o dia é, e o que não é',
         answer: 'É uma sessão de trabalho sobre custos, alergénios, carta ou conteúdos. Não é um apoio do IEFP nem um parecer jurídico.',
         paragraphs: [
-          'O catálogo em que treinas é o do espaço onde entras. A página de preços em português indica hoje mais de 50 agentes.',
+          'O catálogo em que treinas é o do espaço onde entras. A página de preços em português indica hoje 75+ agentes.',
         ],
       },
     ],
@@ -416,9 +416,9 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Ver preços',
   },
   nl: {
-    title: 'AI-training voor de horeca, op locatie | AI Chef Pro',
+    title: 'AI-agenten: training op locatie voor de keuken | AI Chef Pro',
     description:
-      'John Guerrero komt naar je keuken: lezing vanaf 990 €, workshop 1.490 €, dag 2.490 €. Prijzen in euro, exclusief btw, basis Spaans vasteland. Reis apart. Geen SLIM-vergoeding.',
+      'Training op locatie met AI-agenten voor uw brigade: lezing, workshop of hele dag. John Guerrero brengt 75+ agenten naar uw keuken. Vraag een datum aan.',
     keywords: 'AI training horeca, workshop kunstmatige intelligentie keuken, training op locatie restaurant, chef AI cursus',
     eyebrow: 'Training op locatie',
     h1: 'AI-training in je keuken, met de chef die de suite bouwde',
@@ -461,7 +461,7 @@ export const TRAINING: Record<ParityLang, PageCopy> = {
         h2: 'Wat de dag is, en wat hij niet is',
         answer: 'Het is een werksessie over kostprijs, allergenen, kaart of content. Het is geen SLIM-aanvraag en geen juridisch advies.',
         paragraphs: [
-          'De catalogus waarop je oefent is die van de werkruimte waar je inlogt. De Nederlandse prijspagina noemt vandaag meer dan 50 agenten.',
+          'De catalogus waarop je oefent is die van de werkruimte waar je inlogt. De Nederlandse prijspagina noemt vandaag 75+ agenten.',
         ],
       },
     ],

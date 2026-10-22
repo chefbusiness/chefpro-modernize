@@ -5,9 +5,9 @@ const support =
 
 export const CONTACT: Record<ParityLang, PageCopy> = {
   en: {
-    title: 'Contact and Support — AI Chef Pro',
+    title: 'Contact about AI agents for your kitchen | AI Chef Pro',
     description:
-      'Contact AI Chef Pro at info@aichef.pro, from your account on enapp.aichef.pro, or on WhatsApp +34 744 717 942. Indicative reply: 24–48 business hours (Spain).',
+      'Contact about AI agents for chefs: email info@aichef.pro, use in-app support or WhatsApp. A person replies within 24–48 business hours. Write today.',
     keywords: 'contact AI Chef Pro, AI Chef Pro support, AI Chef Pro email, restaurant AI help',
     eyebrow: 'Contact',
     h1: 'Talk to a person, not a ticket queue',
@@ -79,9 +79,9 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'See plans and pricing',
   },
   fr: {
-    title: 'Contact et assistance — AI Chef Pro',
+    title: 'Contact sur les agents IA pour les chefs | AI Chef Pro',
     description:
-      'Contactez AI Chef Pro : info@aichef.pro, l’assistance dans frapp.aichef.pro, ou WhatsApp +34 744 717 942. Réponse indicative sous 24 à 48 heures ouvrées (Espagne).',
+      'Contact sur les agents IA pour les chefs : écrivez à info@aichef.pro, ouvrez l’app ou WhatsApp. Une personne répond sous 24 à 48 h ouvrées. Écrivez aujourd’hui.',
     keywords: 'contacter AI Chef Pro, support AI Chef Pro, assistance restauration IA, email AI Chef Pro',
     eyebrow: 'Contact',
     h1: 'Écrivez-nous : une personne vous répond',
@@ -148,14 +148,14 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Essayez la suite avant de trancher',
     ctaBody:
-      'Le forfait Membre est à 10 € par mois, avec 10 000 crédits. La page tarifs en français indique aujourd’hui plus de 50 agents : le catalogue français est encore en cours. Vous résiliez quand vous voulez.',
+      'Le forfait Membre est à 10 € par mois, avec 10 000 crédits. La page tarifs en français indique aujourd’hui 75+ agents. Vous résiliez quand vous voulez.',
     ctaPrimary: 'Écrire à info@aichef.pro',
     ctaSecondary: 'Voir les tarifs',
   },
   de: {
-    title: 'Kontakt und Support — AI Chef Pro',
+    title: 'Kontakt zu KI-Agenten für Ihre Küche | AI Chef Pro',
     description:
-      'AI Chef Pro erreichen Sie unter info@aichef.pro, im Support von deapp.aichef.pro oder per WhatsApp +34 744 717 942. Richtwert: Antwort in 24–48 Stunden an Werktagen (Spanien).',
+      'Kontakt zu KI-Agenten für Köche: schreiben Sie an info@aichef.pro, nutzen Sie die App oder WhatsApp. Eine Person antwortet in 24–48 Werktagen.',
     keywords: 'AI Chef Pro Kontakt, Support Gastronomie KI, AI Chef Pro E-Mail',
     eyebrow: 'Kontakt',
     h1: 'Schreiben Sie uns: Es antwortet ein Mensch',
@@ -222,14 +222,14 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Testen Sie die Suite, bevor Sie entscheiden',
     ctaBody:
-      'Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Die deutsche Preisseite nennt heute mehr als 50 Agenten: der Katalog wird noch ergänzt. Sie kündigen, wann Sie wollen.',
+      'Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Die deutsche Preisseite nennt heute 75+ Agenten. Sie kündigen, wann Sie wollen.',
     ctaPrimary: 'E-Mail an info@aichef.pro',
     ctaSecondary: 'Preise ansehen',
   },
   it: {
-    title: 'Contatti e assistenza — AI Chef Pro',
+    title: 'Contatto sugli agenti IA per gli chef | AI Chef Pro',
     description:
-      'Contatta AI Chef Pro: info@aichef.pro, assistenza dentro itapp.aichef.pro, oppure WhatsApp +34 744 717 942. Risposta indicativa in 24–48 ore lavorative (Spagna).',
+      'Contatto sugli agenti IA per gli chef: scrivi a info@aichef.pro, apri l’app o WhatsApp. Una persona risponde in 24-48 ore lavorative. Scrivi oggi.',
     keywords: 'contatti AI Chef Pro, assistenza AI Chef Pro, supporto ristorante IA, email AI Chef Pro',
     eyebrow: 'Contatti',
     h1: 'Scrivici: ti risponde una persona',
@@ -296,14 +296,14 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Prova la suite mentre decidi',
     ctaBody:
-      'Il piano Membro costa 10 € al mese, con 10.000 crediti. La pagina prezzi in italiano indica oggi più di 50 agenti: il catalogo italiano è ancora in completamento. Disdici quando vuoi.',
+      'Il piano Membro costa 10 € al mese, con 10.000 crediti. La pagina prezzi in italiano indica oggi 75+ agenti. Disdici quando vuoi.',
     ctaPrimary: 'Scrivi a info@aichef.pro',
     ctaSecondary: 'Vedi i prezzi',
   },
   pt: {
-    title: 'Contacto e apoio — AI Chef Pro',
+    title: 'Contacto sobre agentes de IA para chefs | AI Chef Pro',
     description:
-      'Contacta o AI Chef Pro: info@aichef.pro, apoio dentro de ptapp.aichef.pro, ou WhatsApp +34 744 717 942. Resposta indicativa em 24–48 horas úteis (Espanha).',
+      'Contacto sobre agentes de IA para chefs: escreva para info@aichef.pro, abra a app ou o WhatsApp. Uma pessoa responde em 24-48 h úteis. Escreva hoje.',
     keywords: 'contacto AI Chef Pro, apoio AI Chef Pro, suporte restauração IA, email AI Chef Pro',
     eyebrow: 'Contacto',
     h1: 'Escreve-nos: responde uma pessoa',
@@ -370,14 +370,14 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Experimenta a suite enquanto decides',
     ctaBody:
-      'O plano Membro custa 10 € por mês, com 10.000 créditos. A página de preços em português indica hoje mais de 50 agentes: o catálogo ainda está a ser completado. Cancelas quando quiseres.',
+      'O plano Membro custa 10 € por mês, com 10.000 créditos. A página de preços em português indica hoje 75+ agentes. Cancelas quando quiseres.',
     ctaPrimary: 'Escrever para info@aichef.pro',
     ctaSecondary: 'Ver preços',
   },
   nl: {
-    title: 'Contact en support — AI Chef Pro',
+    title: 'Contact over AI-agenten voor uw keuken | AI Chef Pro',
     description:
-      'Neem contact op met AI Chef Pro: info@aichef.pro, support in nlapp.aichef.pro, of WhatsApp +34 744 717 942. Richttijd: antwoord binnen 24–48 werkuren (Spanje).',
+      'Contact over AI-agenten voor koks: mail info@aichef.pro, open de app of WhatsApp. Een persoon antwoordt binnen 24–48 werkuren. Mail vandaag.',
     keywords: 'contact AI Chef Pro, support AI Chef Pro, horeca AI hulp, e-mail AI Chef Pro',
     eyebrow: 'Contact',
     h1: 'Schrijf ons: er antwoordt een mens',
@@ -444,7 +444,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
     blocks: [],
     ctaTitle: 'Probeer de suite terwijl je nadenkt',
     ctaBody:
-      'Het Lid-abonnement kost € 10 per maand, met 10.000 credits. De Nederlandse prijspagina noemt vandaag meer dan 50 agenten: die catalogus wordt nog aangevuld. Je zegt op wanneer je wilt.',
+      'Het Lid-abonnement kost € 10 per maand, met 10.000 credits. De Nederlandse prijspagina noemt vandaag 75+ agenten. Je zegt op wanneer je wilt.',
     ctaPrimary: 'Mail info@aichef.pro',
     ctaSecondary: 'Bekijk de prijzen',
   },
