@@ -1,7 +1,7 @@
 import type { Locale } from '../i18n/config';
-import { APP_URLS as SHARED_APP_URLS, appCtaUrl } from '../../../src/lib/app-urls';
+import { APP_URLS as SHARED_APP_URLS, appCtaUrl, guestHomePath } from '../../../src/lib/app-urls';
 
-export { appCtaUrl };
+export { appCtaUrl, guestHomePath };
 
 /**
  * Helper de la plataforma (Pickaxe whitelabel) para el árbol Astro. El mapa

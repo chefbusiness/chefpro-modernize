@@ -1,9 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { ChefHat, Globe, Calculator, Camera } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import { appCtaUrl, guestHomePath } from '@/lib/app-urls';
 
 export default function CategoryCTAs() {
-  const { getAppUrl, currentLanguage, t } = useLanguage();
+  const { currentLanguage, t } = useLanguage();
 
   const ctaButtons = [
     {
@@ -11,7 +12,6 @@ export default function CategoryCTAs() {
       icon: ChefHat,
       title: t('category_ctas.creativity.title'),
       description: t('category_ctas.creativity.description'),
-      path: '/cocina-creativa',
       color: 'from-orange-500 to-red-600'
     },
     {
@@ -19,7 +19,6 @@ export default function CategoryCTAs() {
       icon: Globe,
       title: t('category_ctas.world.title'),
       description: t('category_ctas.world.description'),
-      path: '/recetarios',
       color: 'from-blue-500 to-cyan-600'
     },
     {
@@ -27,7 +26,6 @@ export default function CategoryCTAs() {
       icon: Calculator,
       title: t('category_ctas.business.title'),
       description: t('category_ctas.business.description'),
-      path: '/herramientas',
       color: 'from-green-500 to-emerald-600'
     },
     {
@@ -35,13 +33,12 @@ export default function CategoryCTAs() {
       icon: Camera,
       title: t('category_ctas.marketing.title'),
       description: t('category_ctas.marketing.description'),
-      path: '/contenidos',
       color: 'from-purple-500 to-pink-600'
     }
   ];
 
-  const handleCTAClick = (path: string) => {
-    window.open(`${getAppUrl(currentLanguage)}${path}`, '_blank');
+  const handleCTAClick = (id: string) => {
+    window.open(appCtaUrl(currentLanguage, 'home-categorias', id, guestHomePath(currentLanguage)), '_blank');
   };
 
   return (
@@ -73,7 +70,7 @@ export default function CategoryCTAs() {
                   </div>
                   <Button 
                     className="w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"
-                    onClick={() => handleCTAClick(cta.path)}
+                    onClick={() => handleCTAClick(cta.id)}
                   >
                     {t('category_ctas.cta_button')}
                   </Button>

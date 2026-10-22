@@ -11,12 +11,13 @@ import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { Star, ZoomIn } from 'lucide-react';
 import { featuredApps } from '@/data/featured';
 import { useLanguage } from '@/hooks/useLanguage';
+import { appCtaUrl, guestHomePath } from '@/lib/app-urls';
 
 export default function FeaturedApps() {
-  const { getAppUrl, currentLanguage, t } = useLanguage();
+  const { currentLanguage, t } = useLanguage();
 
   const handleAppClick = (appSlug: string) => {
-    window.open(`${getAppUrl(currentLanguage)}/${appSlug}`, '_blank');
+    window.open(appCtaUrl(currentLanguage, 'home-destacadas', appSlug, guestHomePath(currentLanguage)), '_blank');
   };
 
   return (

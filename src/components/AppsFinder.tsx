@@ -4,13 +4,14 @@ import { Button } from '@/components/ui/button';
 import { personas, getRecommendedApps } from '@/data/personas';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useTranslation } from 'react-i18next';
+import { appCtaUrl, guestHomePath } from '@/lib/app-urls';
 
 export default function AppsFinder() {
-  const { getAppUrl, currentLanguage } = useLanguage();
+  const { currentLanguage } = useLanguage();
   const { t } = useTranslation();
 
   const handleAppClick = (appSlug: string) => {
-    window.open(`${getAppUrl(currentLanguage)}/${appSlug}`, '_blank');
+    window.open(appCtaUrl(currentLanguage, 'home-apps', appSlug, guestHomePath(currentLanguage)), '_blank');
   };
 
   return (
