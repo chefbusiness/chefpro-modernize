@@ -1,8 +1,8 @@
 ---
-title: "Confit: Concepto y Definición"
-description: "Descubre qué es el confit: técnica francesa de cocción lenta en grasa. Historia de Gascuña, temperaturas, tiempos y paso a paso. Guía profesional completa."
+title: "Confit: qué es y cómo se cocina en grasa"
+description: "El confit es una cocción lenta en grasa, nacida en Gascuña como método de conservación. Qué cambia en la textura y para qué se usa hoy."
 pubDate: 2026-03-08
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/confit-de-pato.jpg
 imageAlt: "Confit: Concepto y Definición"

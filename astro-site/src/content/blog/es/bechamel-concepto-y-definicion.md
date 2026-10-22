@@ -1,8 +1,8 @@
 ---
-title: "Bechamel: Concepto y Definición"
-description: "Salsa madre francesa con roux blanco y leche. Prepara bechamel perfecta."
+title: "Bechamel: qué es y cómo se hace con roux"
+description: "La bechamel es una salsa madre francesa de leche y roux blanco. Para qué sirve, cómo ligarla y en qué se distingue de otras salsas blancas."
 pubDate: 2026-02-18
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/bechamel-destacada.jpg
 imageAlt: "Salsa bechamel cremosa en un cazo"

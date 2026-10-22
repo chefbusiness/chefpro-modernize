@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type FormEvent } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import * as XLSX from 'xlsx';
@@ -14,6 +14,8 @@ import PricingV2 from '@/components/PricingV2';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import { useLanguage } from '@/hooks/useLanguage';
+import { appCtaUrl } from '@/lib/app-urls';
+import { subscribeLead } from '@/lib/subscribe-lead';
 
 const SITE_URL = 'https://aichef.pro';
 
@@ -44,7 +46,7 @@ interface CalcResult {
 
 export default function CalculadoraFoodCost() {
   const { t } = useTranslation();
-  const { currentLanguage, getAppUrl } = useLanguage();
+  const { currentLanguage } = useLanguage();
 
   const k = (key: string) => t(`toolFoodCost.${key}`, { returnObjects: true });
   const s = (key: string) => t(`toolFoodCost.${key}`) as string;
@@ -65,6 +67,12 @@ export default function CalculadoraFoodCost() {
     { id: 3, name: '', qty: '', cost: '' },
   ]);
   const [result, setResult] = useState<CalcResult | null>(null);
+  const [leadEmail, setLeadEmail] = useState('');
+  const [leadConsent, setLeadConsent] = useState(false);
+  const [leadCompany, setLeadCompany] = useState('');
+  const [leadPending, setLeadPending] = useState(false);
+  const [leadReady, setLeadReady] = useState(false);
+  const [leadError, setLeadError] = useState('');
 
   const addIngredient = () => {
     setIngredients(prev => [
@@ -115,7 +123,44 @@ export default function CalculadoraFoodCost() {
     setResult(null);
   };
 
-  const downloadExcel = () => {
+  const privacyHref = lang === 'es' ? '/privacidad' : `/${lang}/privacidad`;
+
+  const submitLead = async (e: FormEvent) => {
+    e.preventDefault();
+    const email = leadEmail.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setLeadError(s('tool.lead_invalid'));
+      return;
+    }
+    if (!leadConsent) {
+      setLeadError(s('tool.lead_consent_required'));
+      return;
+    }
+    setLeadPending(true);
+    setLeadError('');
+    const saved = await subscribeLead({
+      email,
+      lang,
+      source: 'food-cost',
+      consent: true,
+      company: leadCompany,
+    });
+    setLeadPending(false);
+    if (!saved.ok) {
+      setLeadError(
+        saved.error === 'invalid_email'
+          ? s('tool.lead_invalid')
+          : saved.error === 'consent_required'
+            ? s('tool.lead_consent_required')
+            : s('tool.lead_error'),
+      );
+      return;
+    }
+    setLeadReady(true);
+    downloadExcel();
+  };
+
+  function downloadExcel() {
     if (!result) return;
 
     const today = new Date().toLocaleDateString(lang, { year: 'numeric', month: '2-digit', day: '2-digit' });
@@ -318,7 +363,7 @@ export default function CalculadoraFoodCost() {
                 <Button
                   size="lg"
                   variant="outline"
-                  onClick={() => window.open(getAppUrl(lang), '_blank')}
+                  onClick={() => window.open(appCtaUrl(lang, 'tool-food-cost', 'hero'), '_blank')}
                 >
                   {s('hero.cta_premium')}
                 </Button>
@@ -453,8 +498,56 @@ export default function CalculadoraFoodCost() {
                     )}
                   </div>
 
-                  {/* Download button — shown only after calculation */}
-                  {result && (
+                  {/* Excel: email + consentimiento antes de descargar. */}
+                  {result && !leadReady && (
+                    <form onSubmit={submitLead} className="space-y-3 rounded-xl border border-emerald-200 bg-emerald-50/40 p-4" noValidate>
+                      <p className="text-sm font-medium text-foreground">{s('tool.lead_title')}</p>
+                      <Input
+                        type="email"
+                        required
+                        autoComplete="email"
+                        value={leadEmail}
+                        onChange={(e) => setLeadEmail(e.target.value)}
+                        placeholder={s('tool.lead_email_placeholder')}
+                      />
+                      <label className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+                        <input
+                          type="checkbox"
+                          required
+                          checked={leadConsent}
+                          onChange={(e) => setLeadConsent(e.target.checked)}
+                          className="mt-0.5 h-4 w-4 shrink-0 rounded border border-input"
+                        />
+                        <span>
+                          {s('tool.lead_consent')}{' '}
+                          <a href={privacyHref} className="underline underline-offset-2 hover:text-foreground">
+                            {s('tool.lead_privacy')}
+                          </a>
+                        </span>
+                      </label>
+                      <input
+                        type="text"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        aria-hidden="true"
+                        value={leadCompany}
+                        onChange={(e) => setLeadCompany(e.target.value)}
+                        className="hidden"
+                      />
+                      <Button
+                        type="submit"
+                        disabled={leadPending}
+                        className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold"
+                      >
+                        <Download className="mr-2 h-4 w-4" />
+                        {leadPending ? s('tool.lead_sending') : s('tool.export_excel')}
+                      </Button>
+                      {leadError && (
+                        <p role="alert" className="text-xs text-red-600">{leadError}</p>
+                      )}
+                    </form>
+                  )}
+                  {result && leadReady && (
                     <Button
                       className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold"
                       onClick={downloadExcel}
@@ -508,7 +601,7 @@ export default function CalculadoraFoodCost() {
                         <p className="text-sm text-muted-foreground mb-3">{s('tool.cta_after')}</p>
                         <Button
                           className="bg-green-600 hover:bg-green-700 text-white"
-                          onClick={() => window.open(getAppUrl(lang), '_blank')}
+                          onClick={() => window.open(appCtaUrl(lang, 'tool-food-cost', 'resultado'), '_blank')}
                         >
                           {s('cta_section.primary')}
                           <ArrowRight className="ml-2 h-4 w-4" />
@@ -610,7 +703,7 @@ export default function CalculadoraFoodCost() {
               <Button
                 size="lg"
                 className="bg-white text-green-700 hover:bg-green-50"
-                onClick={() => window.open(getAppUrl(lang), '_blank')}
+                onClick={() => window.open(appCtaUrl(lang, 'tool-food-cost', 'cta'), '_blank')}
               >
                 {s('cta_section.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -619,7 +712,7 @@ export default function CalculadoraFoodCost() {
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white/20"
-                onClick={() => window.open(getAppUrl(lang), '_blank')}
+                onClick={() => window.open(appCtaUrl(lang, 'tool-food-cost', 'cta-secundario'), '_blank')}
               >
                 {s('cta_section.secondary')}
               </Button>

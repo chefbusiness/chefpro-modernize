@@ -8,12 +8,12 @@
 import { Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
-import { appUrl } from '../lib/app-url';
+import { appCtaUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const imageGenUrl = appUrl(lang);
+const imageGenUrl = appCtaUrl(lang, 'home-galeria', 'generar');
 
 type AIModel = 'nano_banana' | 'seedream' | 'ideogram';
 interface GalleryImage { id: number; src: string; model: AIModel }

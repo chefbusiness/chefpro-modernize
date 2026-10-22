@@ -1,8 +1,8 @@
 ---
-title: "Salsa Holandesa: Concepto y Definición"
-description: "Emulsión clásica de yemas y mantequilla. Prepara holandesa sin cortar."
+title: "Salsa holandesa: qué es y cómo emulsionarla"
+description: "La holandesa es una salsa madre de yema y mantequilla clarificada, acabada con zumo de limón. Cómo se monta en caliente y qué textura tiene."
 pubDate: 2026-02-21
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/holandesa-destacada.jpg
 imageAlt: "Salsa holandesa emulsionada amarilla"

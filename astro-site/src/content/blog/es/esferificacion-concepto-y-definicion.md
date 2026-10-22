@@ -1,8 +1,8 @@
 ---
-title: "Esferificación: Concepto y Definición"
-description: "Técnica molecular para crear esferas líquidas. Domina esferificación básica y reversa profesional."
+title: "Esferificación: qué es, básica y reversa"
+description: "La esferificación crea esferas líquidas con una membrana de gel, al estilo del caviar. Alginato y calcio, y la diferencia entre la básica y la reversa."
 pubDate: 2026-02-14
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/02/esferificacion-concepto-definicion-aichefpro-1.jpeg
 imageAlt: "Esferificación: Concepto y Definición"

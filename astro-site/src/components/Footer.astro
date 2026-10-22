@@ -1,6 +1,7 @@
 ---
 // Footer.astro — port de ModernFooter.tsx (paridad visual).
-// El newsletter es estático (no wired, igual que el onSubmit no-op de la SPA): un <script> evita el submit.
+// El newsletter guarda el email en la audiencia de captación del idioma
+// (netlify/functions/subscribe.ts). El cálculo del food cost usa el mismo endpoint.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { tiendaHref, TIENDA_NOMBRE } from '../lib/tienda';
@@ -8,7 +9,7 @@ import { blogHubHref, categoryPath, getCategories, getPublishedPosts, hasBlog, p
 import { integracionesHref } from '../data/integraciones';
 // Helper compartido: la copia local que había aquí sólo mapeaba en/it/fr/de, así
 // que pt y nl caían a la plataforma española pese a que ptapp/nlapp existen.
-import { appUrl } from '../lib/app-url';
+import { appCtaUrl } from '../lib/app-url';
 // Ruta de la página de precios por idioma: helper compartido con Header.astro,
 // Hero.astro y BusinessToolsShowcase.astro. Aquí había una SÉPTIMA copia del
 // mapa literal, incrustada en el href.
@@ -115,9 +116,30 @@ const blogLinks: FooterLink[] =
 
       <div class="lg:col-span-2">
         <h4 class="text-sm font-semibold">{t(lang, 'footer.newsletter_title')}</h4>
-        <form id="newsletter-form" class="mt-3 flex max-w-md gap-2">
-          <input type="email" placeholder={t(lang, 'footer.newsletter_placeholder')} class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm flex-1" />
-          <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3">{t(lang, 'footer.newsletter_button')}</button>
+        <form
+          id="newsletter-form"
+          class="mt-3 max-w-md space-y-2"
+          data-lang={lang}
+          data-msg-success={t(lang, 'footer.newsletter_success')}
+          data-msg-error={t(lang, 'footer.newsletter_error')}
+          data-msg-invalid={t(lang, 'footer.newsletter_invalid')}
+          data-msg-consent={t(lang, 'footer.newsletter_consent_required')}
+          data-msg-sending={t(lang, 'footer.newsletter_sending')}
+          novalidate
+        >
+          <div class="flex gap-2">
+            <input type="email" name="email" required autocomplete="email" placeholder={t(lang, 'footer.newsletter_placeholder')} class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:text-sm flex-1" />
+            <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3">{t(lang, 'footer.newsletter_button')}</button>
+          </div>
+          <label class="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+            <input type="checkbox" name="consent" required class="mt-0.5 h-4 w-4 shrink-0 rounded border border-input" />
+            <span>
+              {t(lang, 'footer.newsletter_consent')}{' '}
+              <a href={legalHref('privacidad')} class="underline underline-offset-2 hover:text-foreground">{t(lang, 'footer.privacy')}</a>
+            </span>
+          </label>
+          <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden" />
+          <p id="newsletter-status" role="status" aria-live="polite" class="text-xs" hidden></p>
         </form>
       </div>
     </div>
@@ -157,7 +179,7 @@ const blogLinks: FooterLink[] =
                sitio propio en Formación porque es donde el usuario busca aprender
                (John, 2026-07-31). -->
           <li><a href="https://youtube.com/@aichefpro" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.youtube_canal')}</a></li>
-          <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.planes_precios')}</a></li>
+          <li><a href={appCtaUrl(lang, 'footer', 'planes')} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.planes_precios')}</a></li>
         </ul>
       </div>
 
@@ -183,10 +205,10 @@ const blogLinks: FooterLink[] =
           {tiendaHref(lang) && (<li><a href={tiendaHref(lang)} target="_blank" class="text-muted-foreground hover:text-foreground transition-colors">{TIENDA_NOMBRE[lang]}</a></li>)}
           <li><a href={usosHub} class="text-primary hover:text-primary/80 transition-colors font-medium">{casosLabel}</a></li>
           {lang === 'es' && (<li><a href="/seo-restaurantes-por-ciudad" class="text-primary hover:text-primary/80 transition-colors font-medium">Recursos por ciudad</a></li>)}
-          <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_tools')}</a></li>
+          <li><a href={appCtaUrl(lang, 'footer', 'herramientas')} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_tools')}</a></li>
           <li><a href={s(FREE_TOOLS_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.free_tools_hub')}</a></li>
           <li><a href={s(AI_TOOLS_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.nav_ai_tools')}</a></li>
-          <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_login')}</a></li>
+          <li><a href={appCtaUrl(lang, 'footer', 'login')} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_login')}</a></li>
         </ul>
       </div>
 
@@ -264,6 +286,68 @@ const blogLinks: FooterLink[] =
 </footer>
 
 <script>
-  // Newsletter no wired todavía (paridad con el onSubmit no-op de ModernFooter.tsx)
-  document.getElementById('newsletter-form')?.addEventListener('submit', (e) => e.preventDefault());
+  const form = document.getElementById('newsletter-form') as HTMLFormElement | null;
+  const status = document.getElementById('newsletter-status');
+  if (form && status) {
+    const msg = {
+      success: form.dataset.msgSuccess ?? '',
+      error: form.dataset.msgError ?? '',
+      invalid: form.dataset.msgInvalid ?? '',
+      consent: form.dataset.msgConsent ?? '',
+      sending: form.dataset.msgSending ?? '',
+    };
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = form.querySelector('input[name="email"]') as HTMLInputElement | null;
+      const consentInput = form.querySelector('input[name="consent"]') as HTMLInputElement | null;
+      const companyInput = form.querySelector('input[name="company"]') as HTMLInputElement | null;
+      const button = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+      const email = (emailInput?.value ?? '').trim();
+      const consent = !!consentInput?.checked;
+      status.hidden = false;
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = msg.invalid;
+        return;
+      }
+      if (!consent) {
+        status.textContent = msg.consent;
+        return;
+      }
+      if (button) button.disabled = true;
+      status.textContent = msg.sending;
+      fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          lang: form.dataset.lang || 'es',
+          source: 'newsletter',
+          consent: true,
+          company: companyInput?.value ?? '',
+        }),
+      })
+        .then(async (res) => {
+          const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
+          return { ok: res.ok && !!data.ok, error: data.error };
+        })
+        .then((result) => {
+          if (result.ok) {
+            status.textContent = msg.success;
+            form.reset();
+          } else if (result.error === 'invalid_email') {
+            status.textContent = msg.invalid;
+          } else if (result.error === 'consent_required') {
+            status.textContent = msg.consent;
+          } else {
+            status.textContent = msg.error;
+          }
+        })
+        .catch(() => {
+          status.textContent = msg.error;
+        })
+        .finally(() => {
+          if (button) button.disabled = false;
+        });
+    });
+  }
 </script>

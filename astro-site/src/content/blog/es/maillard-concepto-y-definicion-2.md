@@ -1,8 +1,8 @@
 ---
-title: "Reacción de Maillard: Concepto y Definición"
-description: "Comprende la reacción química más importante en cocina. Descubre cómo funciona la reacción de Maillard."
+title: "Reacción de Maillard: qué es y a qué temperatura"
+description: "La reacción de Maillard ocurre al juntarse aminoácidos y azúcares en seco por encima de 140 °C. Es la que dora y tuesta carne, pan y café."
 pubDate: 2026-03-02
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/maillard-destacada.jpg
 imageAlt: "Reacción de Maillard en carne sellada"

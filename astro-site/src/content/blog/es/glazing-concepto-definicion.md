@@ -1,8 +1,8 @@
 ---
-title: "Glazing: Concepto y Definición"
-description: "Descubre qué es el glazing en cocina profesional: técnica de brillo para verduras, carnes y repostería. Tipos, aplicaciones y paso a paso."
+title: "Glaseado (glazing): qué es y dónde se usa"
+description: "El glazing cubre un alimento con una capa brillante. No es solo de pastelería: en cocina también se aplica a verduras, carnes y pescados."
 pubDate: 2026-03-07
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/glazing-featured.jpg
 imageAlt: "Glazing: Concepto y Definición"

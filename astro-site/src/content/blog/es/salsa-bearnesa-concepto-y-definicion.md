@@ -1,8 +1,8 @@
 ---
-title: "Salsa Bearnesa: Concepto y Definición"
-description: "Derivada de holandesa con estragón y chalota. Salsa francesa refinada."
+title: "Salsa bearnesa: qué es y cómo se hace"
+description: "La bearnesa es una salsa madre caliente, hija de la holandesa, con reducción de vinagre, vino blanco, chalota y estragón. Textura y usos."
 pubDate: 2026-02-22
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/bearnesa-destacada.jpg
 imageAlt: "Salsa bearnesa con estragón"

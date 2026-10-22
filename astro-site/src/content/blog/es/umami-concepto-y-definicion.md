@@ -1,8 +1,8 @@
 ---
-title: "Umami: Concepto y Definición"
-description: "Descubre el quinto sabor fundamental en gastronomía. Comprende qué es el umami, su ciencia y aplicación culinaria."
+title: "Umami: qué es el quinto sabor"
+description: "El umami es el quinto sabor: profundo, sabroso y persistente, ni dulce, ni salado, ni ácido, ni amargo. Qué sensación aporta a un plato."
 pubDate: 2026-02-10
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/umami-destacada.jpg
 imageAlt: "Ingredientes ricos en umami"

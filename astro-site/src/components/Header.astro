@@ -6,13 +6,15 @@ import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
 import { tiendaHref, TIENDA_NOMBRE } from '../lib/tienda';
-import { appUrl } from '../lib/app-url';
+import { appCtaUrl } from '../lib/app-url';
 import { integracionesHref } from '../data/integraciones';
 import { PRICING_PATHS } from '../lib/pricing-path';
 import { FLAG_SVG } from '../../../src/lib/lang-flags';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
+const loginUrl = appCtaUrl(lang, 'header', 'login');
+const ctaUrl = appCtaUrl(lang, 'header', 'cta');
 
 const LOCALES: Locale[] = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
 
@@ -357,9 +359,9 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
             </div>
           </details>
 
-          <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors bg-accent-light text-accent-foreground hover:bg-accent h-9 px-3 hidden md:inline-flex">{t(lang, 'nav.login')}</a>
+          <a href={loginUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors bg-accent-light text-accent-foreground hover:bg-accent h-9 px-3 hidden md:inline-flex">{t(lang, 'nav.login')}</a>
 
-          <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-9 px-3 bg-primary text-primary-foreground hover:bg-primary/90 hidden md:inline-flex">{t(lang, 'cta.primary')}</a>
+          <a href={ctaUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-9 px-3 bg-primary text-primary-foreground hover:bg-primary/90 hidden md:inline-flex">{t(lang, 'cta.primary')}</a>
 
           <!-- Botón menú móvil -->
           <button id="mobile-menu-open" type="button" class={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 ${deskHide}`} aria-label="Abrir menú">
@@ -541,8 +543,8 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
 
     <div class="sticky bottom-0 bg-card/95 backdrop-blur-sm border-t p-4" style="padding-bottom: max(16px, env(safe-area-inset-bottom));">
       <div class="flex gap-2">
-        <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground flex-1 h-10 transition-colors">{t(lang, 'nav.login')}</a>
-        <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs font-medium bg-primary text-primary-foreground hover:bg-primary/90 flex-1 h-10 transition-colors">{t(lang, 'cta.primary')}</a>
+        <a href={loginUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground flex-1 h-10 transition-colors">{t(lang, 'nav.login')}</a>
+        <a href={ctaUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs font-medium bg-primary text-primary-foreground hover:bg-primary/90 flex-1 h-10 transition-colors">{t(lang, 'cta.primary')}</a>
       </div>
     </div>
   </div>

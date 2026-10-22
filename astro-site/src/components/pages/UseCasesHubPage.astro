@@ -27,7 +27,7 @@ import Icon from '../Icon.astro';
 import { t } from '../../i18n/translations';
 import { SITE, type Locale } from '../../i18n/config';
 import SocialCountLive from '../SocialCountLive.astro';
-import { appUrl } from '../../lib/app-url';
+import { appCtaUrl } from '../../lib/app-url';
 import {
   SEGMENTS,
   getUseCasesByType,
@@ -43,7 +43,7 @@ const { lang = 'es' } = Astro.props;
 
 const SITE_URL = SITE;
 
-const APP_URL = appUrl(lang);
+const APP_URL = appCtaUrl(lang, 'use-cases', 'hub');
 
 // ── UI strings — COPIADO VERBATIM de UseCasesHub.tsx (líneas 49-89). SOLO es + en. ──
 const UI: Record<string, {

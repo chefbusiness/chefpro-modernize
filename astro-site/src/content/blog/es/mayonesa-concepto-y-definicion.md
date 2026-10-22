@@ -1,8 +1,8 @@
 ---
-title: "Mayonesa: Concepto y Definición"
-description: "Emulsión básica de huevo y aceite. Domina mayonesa casera perfecta."
+title: "Mayonesa: qué es y cómo se emulsiona"
+description: "La mayonesa es una emulsión fría de yema y aceite, sin harina ni calor. Cómo se monta gota a gota y qué textura tiene cuando está bien hecha."
 pubDate: 2026-02-21
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/mayonesa-destacada.jpg
 imageAlt: "Mayonesa casera emulsionada"

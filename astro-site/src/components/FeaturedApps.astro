@@ -7,12 +7,11 @@ import { Star, ZoomIn, ArrowLeft, ArrowRight, X } from 'lucide-react';
 import { featuredApps } from '../../../src/data/featured';
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
-import { appUrl } from '../lib/app-url';
+import { appCtaUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const appBase = appUrl(lang);
 ---
 
 <section id="destacadas" class="container py-16 bg-muted/20">
@@ -74,7 +73,7 @@ const appBase = appUrl(lang);
                 <div class="flex items-center p-6 pt-0 p-4 sm:p-6 pt-0">
                   <button
                     type="button"
-                    data-app-url={`${appBase}/${app.slug}`}
+                    data-app-url={appCtaUrl(lang, 'home-destacadas', app.slug, `/${app.slug}`)}
                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"
                   >
                     {t(lang, `${appKey}.cta`)}

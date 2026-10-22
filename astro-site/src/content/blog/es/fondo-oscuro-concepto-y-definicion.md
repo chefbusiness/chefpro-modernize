@@ -1,8 +1,8 @@
 ---
-title: "Fondo Oscuro: Concepto y Definición"
-description: "Caldo concentrado con huesos tostados para salsas oscuras."
+title: "Fondo oscuro: qué es y cómo se elabora"
+description: "El fondo oscuro es un caldo de huesos y recortes tostados, con verduras, tomate y hierbas. Color caoba y base de las salsas clásicas de carne."
 pubDate: 2026-02-19
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/fondo-oscuro-destacada.jpg
 imageAlt: "Fondo oscuro intenso en olla"

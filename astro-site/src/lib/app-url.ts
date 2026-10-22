@@ -1,5 +1,7 @@
 import type { Locale } from '../i18n/config';
-import { APP_URLS as SHARED_APP_URLS } from '../../../src/lib/app-urls';
+import { APP_URLS as SHARED_APP_URLS, appCtaUrl } from '../../../src/lib/app-urls';
+
+export { appCtaUrl };
 
 /**
  * Helper de la plataforma (Pickaxe whitelabel) para el árbol Astro. El mapa
@@ -26,11 +28,3 @@ export function appUrl(lang: Locale | string): string {
   return APP_URLS[lang as Locale] ?? APP_URLS.es;
 }
 
-/** CTA con UTM. `medium` distingue el origen (pricing, hero, banner…). */
-export function appCtaUrl(
-  lang: Locale | string,
-  medium: string,
-  content: string,
-): string {
-  return `${appUrl(lang)}/?utm_source=web&utm_medium=${medium}&utm_content=${content}`;
-}

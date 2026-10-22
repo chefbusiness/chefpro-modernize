@@ -1,8 +1,8 @@
 ---
-title: "Fond: Concepto y Definición"
-description: "Base de salsas y caldos en cocina francesa. Aprende qué es el fond y sus tipos."
+title: "Fond: qué es el fondo de cocina"
+description: "El fond es una base concentrada y gelatinosa de huesos, carne, verduras y hierbas. No es un caldo: sostiene salsas, sopas, guisos y reducciones."
 pubDate: 2026-02-17
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/fond-destacada.jpg
 imageAlt: "Fondos de cocina en cazos"

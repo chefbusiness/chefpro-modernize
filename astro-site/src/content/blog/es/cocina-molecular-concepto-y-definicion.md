@@ -1,8 +1,8 @@
 ---
-title: "Cocina Molecular: Concepto y Definición"
-description: "Disciplina culinaria que aplica principios científicos a la gastronomía moderna. Descubre la cocina molecular de vanguardia."
+title: "Cocina molecular: qué es y ejemplos"
+description: "La cocina molecular aplica la ciencia al plato: esferificaciones, espumas y geles. La gastronomía molecular, en cambio, estudia el porqué de la cocina."
 pubDate: 2026-02-12
-modDate: 2026-08-01
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/02/gastronomia-molecular-aichefpro-1.jpg
 imageAlt: "Cocina Molecular: Concepto y Definición"

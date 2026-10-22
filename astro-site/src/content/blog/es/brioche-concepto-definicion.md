@@ -1,8 +1,8 @@
 ---
-title: "Brioche: Concepto y Definición"
-description: "Descubre qué es el brioche: historia desde el siglo XVII, tipos franceses (Nanterre, Saint-Genix, trenzado), ingredientes, técnica paso a paso y secretos…"
+title: "Brioche: qué es y en qué se diferencia"
+description: "El brioche es un pan francés de miga suave, corteza dorada y sabor a mantequilla. No es un pan salado ni un pastel: queda entre los dos."
 pubDate: 2026-03-10
-modDate: 2026-09-05
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/brioche-featured.jpg
 imageAlt: "Brioche: Concepto y Definición"

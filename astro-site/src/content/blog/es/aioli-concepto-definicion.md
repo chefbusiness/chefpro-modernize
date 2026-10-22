@@ -1,8 +1,8 @@
 ---
-title: "Aioli: Concepto y Definición"
-description: "Descubre qué es el aioli: salsa emulsionada de ajo y aceite originaria de Provenza y España. Diferencias con mayonesa, receta tradicional, técnicas de…"
+title: "Aioli o allioli: qué es y qué lleva"
+description: "El aioli (allioli) es una emulsión de ajo y aceite de oliva, de Provenza y del Levante español. Qué lleva de verdad y en qué se aparta de la mayonesa."
 pubDate: 2026-03-12
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/aioli-featured.jpg
 imageAlt: "Aioli: Concepto y Definición"

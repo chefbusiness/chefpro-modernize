@@ -1,8 +1,8 @@
 ---
-title: "Escabeche: Concepto y Definición"
-description: "Descubre qué es el escabeche: técnica de conservación y marinado de origen persa-árabe. Historia, diferencias con ceviche, variaciones españolas y peruanas…"
+title: "Escabeche: qué es y cómo se marina"
+description: "El escabeche marina y conserva con vinagre, aceite y especias. Qué sabor ácido y aromático deja y por qué se intensifica con el tiempo."
 pubDate: 2026-03-14
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/escabeche-featured.jpg
 imageAlt: "Escabeche: Concepto y Definición"

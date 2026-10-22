@@ -32,14 +32,14 @@ import {
 import { getProductsByIds } from '../../../../src/data/products-catalog';
 import { linkifyHtml } from '../../lib/linkify-use-case';
 import SocialCountLive from '../SocialCountLive.astro';
-import { appUrl } from '../../lib/app-url';
+import { appCtaUrl } from '../../lib/app-url';
 
 interface Props { lang?: Locale; uc: UseCase }
 const { lang = 'es', uc } = Astro.props;
 
 const SITE_URL = SITE;
 
-const APP_URL = appUrl(lang);
+const APP_URL = appCtaUrl(lang, 'use-case', uc.id);
 
 // ── UI strings (rendered in JSX) — COPIADO VERBATIM de UseCasePage.tsx (líneas 72-254) ──
 const UI: Record<string, {
