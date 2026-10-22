@@ -1,8 +1,8 @@
 ---
-title: "What is beurre manié? Raw butter and flour, not a roux"
-description: "Beurre manié is soft butter and flour in equal parts by weight, whisked in raw at the end so a thin sauce tightens. It is not cooked first, and it is not a roux."
+title: "Beurre manié: what it is, and how it differs from a roux"
+description: "Beurre manié is soft butter and flour, equal parts by weight, whisked raw into a thin sauce. How much to use, why weight beats volume, and how it differs from a slurry."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glossary
 tags: ["beurre manie", "sauce", "thickener"]
 lang: en
@@ -18,37 +18,126 @@ translations:
   nl: "beurre-manie"
 definedTerm:
   name: "Beurre manié"
-  description: "Beurre manié is soft butter worked with flour in equal parts by weight, kept raw and whisked into a sauce at the end. You do not cook it first. It tightens a thin sauce on the pass without the toasted colour of a roux, and the head chef treats it as a late finish, not as a base."
+  description: "Beurre manié, kneaded butter, is a raw paste of soft butter and flour in equal parts by weight. You whisk it into a sauce, soup or stew at the end, then simmer it briefly so the flour loses its raw taste. A roux uses the same two ingredients and is cooked before any liquid goes in."
 faq:
   - q: "Is beurre manié the same as a roux?"
-    a: "No. A roux is flour cooked in fat before any liquid goes in. Beurre manié stays raw, equal parts butter and flour by weight, and you whisk it in at the end. Cook the paste first and you have started a roux, which is a different gesture with a different flavour. Use the raw paste when the sauce already exists and only the body is short."
-  - q: "Do you cook beurre manié before it goes into the sauce?"
-    a: "You do not. The butter is soft and the flour is raw, worked together and added at the end. Cooking it first would toast the flour and turn the gesture into a roux. Once it is in the sauce, a quiet simmer lets the starch swell. A hard boil is a good way to grease the pan and lose the butter."
-  - q: "When should you reach for beurre manié on the pass?"
-    a: "Reach for it when a sauce is thin at the call and you cannot wait on a longer reduction. It is a finish, not a base you build in the morning. Whisk small pieces into the hot sauce, off a hard boil, and taste."
-  - q: "Why does a head chef watch a raw butter paste so closely?"
-    a: "Because it is an easy way to hide a thin stock. Flour and butter look cheap next to a reduction, so the station reaches for them too fast. The guest then eats a cereal note instead of the pot you meant to serve. The head chef wants the paste used as a correction, named out loud, and kept out of sauces that were supposed to shine from reduction alone."
+    a: "They share butter and flour, and that is where it ends. A roux is cooked before the liquid is added, and the colour runs from white to brown depending on how long the flour toasts. Beurre manié stays raw. You knead it and whisk it into a sauce that already exists. Cook the paste in a dry pan first and you have started a roux."
+  - q: "Equal parts by weight or by volume?"
+    a: "Weigh them. The same amount of soft butter and flour is the ratio that behaves in a professional kitchen. Volume is what several American write-ups use, and it misleads, because a spoon of flour weighs less than a spoon of butter. The paste comes out slack or dry, and you will not know which until the sauce does."
+  - q: "Do you cook it before it goes in?"
+    a: "You do not cook the paste. You do cook it once it is in the sauce. Raw flour tastes of paste if you send the plate in that minute. A quiet simmer of a minute or two swells the starch and takes the raw edge off. A hard boil just greases the pan."
+  - q: "How much for a litre?"
+    a: "For a litre that is only a little thin, 15 to 20 g of butter and the same of flour is usually enough. Add it in pieces and taste. If the sauce was supposed to be built on a roux from the start, this will not replace that base. It only corrects the body."
+  - q: "How long can you keep it?"
+    a: "Wrapped, in the fridge, for the week you mean to use it, and it freezes in coins. Published times do not agree: some cards say two weeks in the fridge, others a month. Smell it before it goes into a sauce. Frozen paste needs to soften, or it sits in the liquid as lumps. Do not microwave the butter to get there."
+  - q: "When do you use it instead of a roux?"
+    a: "When the sauce already tastes right and only the body is short, and there is no time to cook a roux in a second pan. A roux is decided at the start, because the flour cooks in the fat and, if you toast it, the colour and the flavour change. Beurre manié will not build that base. It finishes the texture."
+  - q: "How do you pronounce beurre manié?"
+    a: "Closer to 'burr man-YAY'. The second word ends on a French é, not on a flat English 'ee'."
+  - q: "Can you make it gluten free?"
+    a: "The classic paste is wheat flour. A guest who cannot eat gluten gets a starch slurry, and the ticket says slurry. The slurry thickens differently and it is not beurre manié. A gluten-free flour blend is another recipe. Test it before service. Do not swap it in silence."
+  - q: "Can you make it with olive oil?"
+    a: "Oil and flour can thicken a dairy-free pot. The oil will taste, the paste will not keep the way butter does, and the name on the ticket has to change. Beurre manié is butter."
 ---
 
-<p>Beurre manié is soft butter worked with flour in equal parts by weight, kept raw and whisked into a sauce at the end. You do not cook it first. It tightens a thin sauce on the pass without the toasted colour of a roux, and the head chef treats it as a late finish, not as a base.</p>
+<p><strong>Beurre manié</strong> is soft butter worked with flour, equal parts by weight, whisked in at the end to give body to a sauce, soup or stew that has come out thin. The name means kneaded butter. You do not cook it first. The fat coats the flour, and as it melts in the hot liquid it lets the flour go without lumps. It is a station auxiliary. It is not a sauce with its own line on the menu.</p>
+<h2>What it is doing in the pan</h2>
+<p>The stew tastes right and runs like soup, or the pan sauce will not coat a spoon. Building a <a href="https://aichef.pro/en/blog/what-is-a-roux">roux</a> in a second pan takes a minute the pass does not have. Throwing loose flour into boiling liquid makes dumplings. Beurre manié answers both: the paste is already made, you break off a piece, and the whisk spreads it.</p>
+<p>The shine it leaves looks a little like <a href="https://aichef.pro/en/blog/monter-au-beurre">mounting with butter</a>, and the ticket will notice if you confuse them. Mounting uses cold butter and no flour. It rounds a sauce. It does not really thicken one. Beurre manié thickens because the flour is in there, which is why it has to cook for a minute after it goes in. If all you wanted was shine, you picked the wrong gesture.</p>
 <aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/role/head-chef?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Open the head chef page</a></p></aside>
-<h2>What it is, on the line</h2>
-<p>On the line, beurre manié is the paste you keep soft beside the stove, not a pot you started in the morning. You work butter that yields to a spoon with flour in equal parts by weight until the paste is even, with no dry pockets and no melted pool. It stays raw. You do not cook it before it meets the sauce. When a pan is thin at the pass, you whisk in small pieces off a hard boil and let the starch swell. The guest gets body in the sauce you already had.</p>
-<p>A roux cooks the flour in fat before any liquid arrives, and that cooking is the whole point of it. Beurre manié never takes that step. The flour goes in raw, carried by soft butter, at the end. Fry the paste first and you have left this gesture and started another. The head chef will taste a raw flour note if you drop in a lump and walk away. Whisk it through, let the sauce return to a quiet simmer, and the starch finishes without the toasted colour of a blond or brown roux.</p>
-<h2>What it is not</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesture</th><th>What it does</th><th>What it does not do</th></tr></thead><tbody><tr><td>Knead it raw</td><td>Tightens a finished sauce</td><td>Does not cook the flour first</td></tr><tr><td>Equal parts by weight</td><td>Soft butter carries the flour</td><td>Is not a roux</td></tr><tr><td>Whisk in at the end</td><td>Gives body on the pass</td><td>Does not replace a proper reduction</td></tr><tr><td>Keep the paste soft</td><td>Ready in mise en place</td><td>Does not sit melted and greasy</td></tr></tbody></table></div>
 <figure><img src="/blog-assets/2026/05/bechamel-cuerpo.jpg" alt="A cook whisking small pieces of raw butter-and-flour paste into a simmering sauce, the surface just starting to cling to the spoon." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How it behaves on the pass</h2>
-<p>Service is when this paste earns its place. A reduction that still tastes honest can look a shade thin when the plate is called, and you will not send a guest a sauce that runs to the rim. Beurre manié is the correction you can make between the call and the pass without building a new base. Keep the pan off a rolling boil so the butter stays in the sauce instead of leaking out as grease. Add with a light hand, look again, and only then add another piece. A heavy dump turns the sauce dull and pasty.</p>
-<p>Mise en place for beurre manié is humble and easy to miss. The butter has to yield to the flour, so it cannot live in the coldest part of the fridge until the ticket is already in your hand. Soften it before service and keep the paste covered so it does not crust. Flour and butter are ordinary stores, which is why cooks reach for them when a costly reduction looks thin. The margin suffers if the paste hides a stock you should have reduced, because the guest then eats flour instead of the meat you already spent time on.</p>
-<p>The guest never needs the French name. They need a sauce that clings to the meat or the vegetable and still tastes of the pot, not of a thickener. Done well, beurre manié disappears into the coat. Done in a rush, it leaves a faint cereal shadow and a surface that looks flat. That is the trade you accept when you choose this finish instead of a longer reduction. Tell the station what you did. The next plate should match, and the head chef should know the sauce was corrected at the pass rather than built that way from the start.</p>
+<h2>The ratio, and why the scale wins</h2>
+<p>Weigh both. A hundred grams of soft butter and a hundred of flour make a paste you can roll into a log and cut into coins, or into balls you pull as you need them. For a small correction, twenty and twenty is plenty. The butter has to be soft from sitting out, not from the microwave. Melted butter will not hold the flour, and the paste splits before it ever meets the sauce.</p>
+<p>A lot of American cards print equal spoons, and one well-known clip even calls the paste a roux. A spoon of flour weighs less than a spoon of butter, so equal spoons are a fattier paste, close to the one-part-flour, two-parts-butter ratio that shows up in other languages. Both will thicken. Weighing one to one, the same count as the roux, is how you know how much starch went in. If the house spec says one to two, follow the spec. Do not mix the two pastes in one pot and hope the spoon will sort it out.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Butter</th>
+<th>Flour</th>
+<th>What you should see</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A litre that is slightly thin</td>
+<td>15-20 g</td>
+<td>15-20 g</td>
+<td>A light coat on the spoon, after a minute’s simmer</td>
+</tr>
+<tr>
+<td>A stew that is clearly too loose</td>
+<td>30-40 g</td>
+<td>30-40 g</td>
+<td>More body. Add it in two goes and taste</td>
+</tr>
+<tr>
+<td>A week’s mise</td>
+<td>100 g</td>
+<td>100 g</td>
+<td>Portion it and keep it cold</td>
+</tr>
+</tbody>
+</table></div>
+<p>Those amounts are a place to start, not a law. A liquid that still has an hour of reduction ahead will thicken on its own, and a heavy hand now leaves you with mortar at the end. Taste on a spoon.</p>
+<h2>How it goes into the pot</h2>
+<h3>1. Knead until you cannot see flour</h3>
+<p>Fingers, a fork or a spatula. The paste should be smooth, pale and a bit sticky. Streaks of flour mean you are not done. If it is stiff enough to crack, it is too cold or short of butter. It should smear off a spoon. A paste you can roll into a hard ball will sit in the sauce as a lump.</p>
+<h3>2. Whisk it in off a hard boil</h3>
+<p>The liquid should be hot, just moving. Pull it for a second if it is galloping. Add a piece, whisk until it vanishes, and look at the spoon before you add another. The flour swells as it heats. Get ahead of that and you overshoot. A spoonful at a time, then a minute or two before the next, is enough discipline. Stop and look.</p>
+<h3>3. Let it simmer</h3>
+<p>Bring it back to a quiet bubble for a minute, two if you can, scraping the bottom. That is what cooks out the raw flour. Taste. If it still tastes of paste, do not thicken it further. Cook it longer. Sending the plate at that point is the fault a guest will not forgive, even when the sauce naps.</p>
+<h2>Roux, slurry, and mounting</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Gesture</th>
+<th>When</th>
+<th>What changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roux</td>
+<td>At the start, flour already cooked in fat</td>
+<td>The base. White, blond or brown depending on the toast</td>
+</tr>
+<tr>
+<td>Beurre manié</td>
+<td>At the end, raw, whisked in hot</td>
+<td>Corrects the body and leaves a butter shine</td>
+</tr>
+<tr>
+<td><a href="https://aichef.pro/en/blog/starch-slurry">Starch slurry</a></td>
+<td>Starch loosened in cold liquid, then boiled</td>
+<td>Thickens fast. The shine, and sometimes the flavour, are not flour’s</td>
+</tr>
+<tr>
+<td>Monter au beurre</td>
+<td>Cold butter, no flour, off the boil</td>
+<td>Shine and roundness. It will not replace a thickener</td>
+</tr>
+</tbody>
+</table></div>
+<p>A brown roux thickens less than a white one, because the toast has already spent some of the flour’s strength. Beurre manié never toasts. It thickens like raw flour, so a small amount shows, and it tastes raw if you skip the simmer. A cornstarch slurry, which is what many gravy guides offer instead, can look glossier than you want and does nothing for the butter. Choose it when you want starch and no extra fat. Choose beurre manié when the sauce is thin and a little more butter would help.</p>
+<h2>Where it belongs</h2>
+<p>A blanquette that ran long, a braising juice that will not coat, a fish soup with no body, the pan sauce from a sauté. Use it when the cooking has already done the flavour and only the texture is short.</p>
+<p>Skip it when the sauce was meant to start with a roux and someone tries to build that character in the last minute. You will not get the toasted flavour, or the colour. Skip it in a <a href="https://aichef.pro/en/blog/beurre-blanc">beurre blanc</a>, which has no flour in it. And skip it when the real problem was salt or a weak stock. The paste hides a thin stock for a minute. It does not fix one.</p>
 <figure><img src="/blog-assets/2026/05/veloute-cuerpo.jpg" alt="A finished sauce coating meat on a warm plate, glossy enough to stay put, with the raw paste bowl set back on the station." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How people search for it</h2>
-<p>People type beurre manie without the accent and beurre manié with it, and both names point at this raw paste of butter and flour. You will also see kneaded butter, and the muddled label raw roux, which is the mix-up to undo. Search the same idea when a stew looks thin at the pass and someone wants a late thickener that is not a slurry and not a cooked roux. The paste stays raw, in equal parts by weight, and it goes in at the end.</p>
+<h2>Mistakes</h2>
 <ul>
-<li><a href="https://aichef.pro/en/blog/what-is-a-roux">What a roux is</a></li>
+<li><strong>Loose flour on a boil.</strong> Lumps. The flour has to arrive coated in fat.</li>
+<li><strong>Butter melted in the microwave.</strong> The paste breaks before it hits the sauce. Soft, not liquid.</li>
+<li><strong>Sending it raw.</strong> A flour taste. Give it a minute at a bare simmer after you whisk.</li>
+<li><strong>Too much.</strong> The sauce keeps thickening as it cools and as whatever reduction is left finishes. Stop, taste, then add another piece if you still need it.</li>
+<li><strong>Frozen paste straight into the pan.</strong> It will not disperse. Let it soften.</li>
+</ul>
+<p>Keep it covered in the cold for the stretch you will actually use, or freeze it in coins. Because the published fridge times disagree, smell it and look at it before it goes into a sauce that is about to leave the kitchen. Rancid butter does not disappear into a stew.</p>
+<h2>Keep reading</h2>
+<ul>
+<li><a href="https://aichef.pro/en/blog/what-is-a-roux">What is a roux</a></li>
 <li><a href="https://aichef.pro/en/blog/monter-au-beurre">Monter au beurre</a></li>
 <li><a href="https://aichef.pro/en/blog/starch-slurry">Starch slurry</a></li>
-<li><a href="https://aichef.pro/en/blog/category/glossary">More from the glossary</a></li>
+<li><a href="https://aichef.pro/en/blog/category/glossary">Back to the glossary</a></li>
 </ul>
 <aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://enapp.aichef.pro/guest?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Enter as a guest</a></p></aside>

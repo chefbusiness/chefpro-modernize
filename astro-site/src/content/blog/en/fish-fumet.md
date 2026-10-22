@@ -1,8 +1,8 @@
 ---
-title: "What is a fumet? Fish stock, not a bowl of soup"
-description: "A fumet is fish stock from bones and aromatics, not roasted like a dark stock. Cook it too long and it turns bitter. It is a sauce base, not a soup."
+title: "Fish fumet: what it is, and how long it should simmer"
+description: "A fish fumet is a short stock of white fish bones and aromatics, strained and used as a base. How the clocks differ, why it turns bitter, and where it goes in a sauce."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glossary
 tags: ["fumet", "fish stock", "sauce"]
 lang: en
@@ -18,37 +18,95 @@ translations:
   nl: "visfumet"
 definedTerm:
   name: "Fumet"
-  description: "A fumet is a fish stock of bones and aromatics, simmered until it tastes clean and sweet of the fish. You do not roast the bones as you would for a dark stock. Cook it too long and it turns bitter. It is not a soup. You keep it for sauces, and a bitter pot is waste."
+  description: "In a professional kitchen a fish fumet is a white stock of clean fish bones and aromatics, started in cold water and simmered gently until it tastes clean: often twenty to thirty minutes on a station pot, and 35 to 45 on a gallon school formula. The bones stay pale. It is a base for sauces, soups and rice, strained without pressing the solids. English dictionaries also use fumet for other concentrated cooking liquids, including meat, which is a wider sense than the pot on a fish station."
 faq:
-  - q: "What is a fumet?"
-    a: "A fumet is a fish stock made from bones and aromatics. You do not roast the bones the way you would for a dark meat stock. The simmer stays gentle, you skim, and you stop when the liquid tastes clean and sweet of the fish. It is a base for sauces. It is not a soup you send to the table in a bowl."
-  - q: "How is a fish fumet different from a dark stock?"
-    a: "A dark stock wants roasted bones and a deeper colour. A fumet stays pale. The bones and aromatics go in without that roast, and the flavour should stay high and clean rather than brown and toasted. Treat fish bones like meat bones, with a hard roast and a long careless simmer, and you miss the point and often gain a bitter pot."
-  - q: "Why does a fumet turn bitter?"
-    a: "Because the bones were cooked past the moment they had given a clean flavour, or because gills, blood or a poor rinse stayed in the pot. Extra time does not make a fish stock nobler. It makes it bitter, and cream or butter on the pass will not hide that from a guest. Taste while it simmers. Strain when it is sweet and clear."
-  - q: "Can you serve a fumet as the dish?"
-    a: "Not if what you have is the stock. A fumet is mise en place for sauces, a velouté, a reduction. Serving it in a bowl and calling it dinner skips seasoning, finish and the decision to write a soup. The guest should meet it inside a sauce, as clean fish flavour and a light body."
+  - q: "Is a fumet the same as fish stock?"
+    a: "On most English-language stations, yes: fumet is the name for that fish stock. In a French or Spanish brigade it means the short white one, bones and aromatics, twenty to thirty minutes, not roasted. A longer, saltier broth you would drink, or a stock made from oily fish, is a different pot. Taste it before you swap them."
+  - q: "How long should it simmer?"
+    a: "Start tasting at twenty minutes of a bare simmer. A small station pot is often ready between twenty and thirty. The Culinary Institute of America's gallon formula is written at 35 to 45 minutes. A restaurant card published by the James Beard Foundation keeps the bones in for at least two hours, then strains and reduces. That longer pot is a different specification. On white fish the clean flavour is already there around the half hour, and the extra time is where the bone starts to taste. More body comes from reducing the strained liquid, not from a longer cook."
+  - q: "How do you pronounce fumet?"
+    a: "In French it is two syllables, with the stress on the second, closer to 'fyoo-MEH' than to 'FUM-it'."
+  - q: "Why does fish stock go bitter?"
+    a: "The bones stayed in too long, the gills or blood went in with them, or the pot boiled hard enough to emulsify the scum. You cannot cook that bitterness out, and cream will not hide it. Stop when it tastes clean. If it has already turned, make another."
+  - q: "Do you brown the bones?"
+    a: "Not the way you brown bones for a dark meat stock. That roast burns the frame and tastes of scorched skin. Sweat the aromatics if you like, then cover the bones with cold liquid and keep the simmer lazy. Depth from browning belongs in another stock."
+  - q: "How long does it keep?"
+    a: "Cool it fast, in an ice bath or a blast chiller, and do not leave it on the bench until it is merely warm. Published fridge times run from a couple of days to about a week, and the freezer from a couple of months upward. In a working kitchen, a few days in the fridge is the cautious read. Freeze what you will not use, bring it back to the boil before it goes into a sauce, and throw it out if it smells, whatever a card allowed."
 ---
 
-<p>A fumet is a fish stock of bones and aromatics, simmered until it tastes clean and sweet of the fish. You do not roast the bones as you would for a dark stock. Cook it too long and it turns bitter. It is not a soup. You keep it for sauces, and a bitter pot is waste.</p>
+<p>On a fish station, a <strong>fumet</strong> is the stock you build from clean bones and a few aromatics, started cold and finished in about half an hour. It is there to disappear into a sauce, a soup or a rice dish and leave the sea behind in the bite. The word is French. English uses it more loosely, which is why a dictionary search and a kitchen search do not land on the same pot.</p>
+<h2>What the word covers, and what the station means</h2>
+<p>Cambridge defines a fumet as a strong stock of fish or meat. BBC Food stretches it further: a concentrated cooking liquid, often of mushrooms or fish, boiled down toward a syrup, and it reserves “fond” for meat, poultry and game. Both are real uses of the English word. Neither is the pot a brigade means when the board says fumet.</p>
+<p>That pot is a white fish stock. The frames are not roasted, the simmer stays gentle, and you stop while the flavour is still clean. In an American kitchen the same pot is often just called fish stock, and the careful versions of it are the short ones. Some restaurant pages treat fumet as the concentrate and stock as the thin pot. The bones are the same job. If you want it stronger, strain, then reduce the liquid. The name does not change because you boiled it down. A broth you would serve in a bowl, salted for drinking, is a different specification.</p>
 <aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/food-cost-calculator-restaurant?utm_source=web&amp;utm_medium=glosario&amp;utm_content=fish-fumet">Open the food cost calculator</a></p></aside>
-<h2>What it is, on the line</h2>
-<p>Clean bones, and heads only if they are properly trimmed, go into the pot with aromatics and cold liquid. You bring a fumet up gently and you skim. You do not blast it. The aim is a stock that smells of the fish and of the aromatics, not of mud. This is not a dark fond, and the bones are not roasted first. Roasting belongs to meat stocks that want colour and a deeper roast note. Here the colour stays pale and the flavour stays high and clear. A hard boil knocks the stock cloudy. A quiet simmer is the whole craft of the first stage.</p>
-<p>Bitterness is the fault that defines a tired fumet. Push the bones past the point where they have given their best and the stock turns bitter, faster still if gills, blood or a dirty rinse stayed in the pot. You will not roast that bitterness away, and you should not bury it under cream and hope the guest misses it. Taste early and often. When the flavour is sweet and clear, stop. A fumet you keep cooking because the ticket is not ready will punish the sauces later. Strain it, cool it with the same discipline you use for any stock, and say when it was made.</p>
-<h2>What it is not</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesture</th><th>What it does</th><th>What it does not do</th></tr></thead><tbody><tr><td>Bones and aromatics</td><td>A clean, pale fish stock</td><td>Is not roasted like a dark stock</td></tr><tr><td>Stop when it tastes sweet</td><td>Clear flavour for sauces</td><td>Does not improve if you keep cooking</td></tr><tr><td>Strain and hold with care</td><td>A base in mise en place</td><td>Is not a soup for the guest</td></tr><tr><td>Build the sauce on it</td><td>The pass inherits the pot</td><td>Does not get rescued at the window</td></tr></tbody></table></div>
+<h2>Which bones, and which aromatics</h2>
+<p>Use lean white fish: sole, turbot, halibut, cod, snapper, bass, monkfish. Cut the frames so they fit, rinse off the blood, and pull the gills if the head is in the pot. Guts, scales and the dark bloodline cloud the stock and push it toward bitterness. Oily fish — mackerel, sardine, tuna — and, for a classic fumet, salmon, make a strong, fatty pot. A salmon fumet can be its own specification, simmered on the short side and labelled for salmon sauces. It does not replace the white one.</p>
+<p>Keep the aromatics small, because the cook is short: onion or shallot, the white of a leek, a little celery, parsley stems, a bay leaf, a few peppercorns. Carrot is optional and easy to overdo. A splash of dry white wine at the start is common and not compulsory. Some school cards are only bones, onion, leek, parsley and water. If you use wine, use one you would drink.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>A sauce-station pot</th>
+<th>Working amount</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean white bones and trim</td>
+<td>1 kg</td>
+<td>Cut small so they give up flavour quickly</td>
+</tr>
+<tr>
+<td>Onion or shallot and leek white</td>
+<td>150-200 g together</td>
+<td>Small pieces, same reason</td>
+</tr>
+<tr>
+<td>Dry white wine</td>
+<td>150 ml, if you use it</td>
+<td>At the start. The pot still works without it</td>
+</tr>
+<tr>
+<td>Cold water</td>
+<td>Just to cover</td>
+<td>Extra water makes a thin stock</td>
+</tr>
+<tr>
+<td>Bare simmer</td>
+<td>Taste from 20 minutes</td>
+<td>Skim. Strain before you reduce. Do not press the solids</td>
+</tr>
+</tbody>
+</table></div>
+<p>A published school card from Leioa is deliberately lighter: 200 g of bones and 750 ml of water, thirty minutes at the most. It teaches the method. For a sauce you will reduce, the pot above has more fish in the water.</p>
+<h2>The simmer</h2>
+<h3>1. Cold water, then the scum</h3>
+<p>Bones and aromatics start covered, not swimming. As the pot warms, a grey foam rises. Lift it off before a hard boil beats it back into the liquid. A rolling boil leaves the fumet cloudy and tasting of overcooked protein. You want the surface barely moving.</p>
+<h3>2. Taste it, then decide how long</h3>
+<p>From the moment the surface moves, start tasting. A small station pot is often ready between twenty and thirty minutes. The Culinary Institute of America's ratio guide, written for a gallon, uses about 11 lb of fish bones, 1 lb of white mirepoix, 1 lb of white wine and 4½ quarts of water, and its cooking-times table puts fish stock and fumet at 35 to 45 minutes. A James Beard Foundation restaurant card simmers the bones for at least two hours, then strains and reduces the liquid by a third. That is a long specification, not the short pot on a fish station. On white fish the clean flavour is already there around the half hour, and the second hour is where the bone starts to show. If a house spec asks for the long cook, taste it, and do the reducing after the frames are out. A short pot can set softly once it is cold. That is a sign the bones have given up gelatin. It is not a reason to leave them in until the hour.</p>
+<h3>3. Strain without squeezing, then cool</h3>
+<p>A fine sieve, gravity, no pressing. Squeezing the bones puts the sediment back. Cool the fumet quickly, and do not lid it while it is hot. When you pull it for service, bring it to the boil for a few minutes and taste it again.</p>
 <figure><img src="/blog-assets/2026/05/veloute-cuerpo.jpg" alt="A cook skimming a gently simmering fish fumet, the stock still pale, a tasting spoon resting on the bench." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How it behaves on the pass</h2>
-<p>On the pass, fumet is rarely the liquid you are correcting at the last moment. It became the sauce, the velouté or the reduction while you were still in prep. What the window needs is a stock that was right when it was strained, because you will not take bitterness out between the call and the plate. Taste the sauce as a sauce. If the bitter note is there, the plate changes or it does not go. The head chef would rather a simple finish from a clean fumet than a complicated one from a pot that sat too long.</p>
-<p>The margin is the bones you bought or took off the fillet, and the sauces you lose if the pot fails. Fish bones are part of the yield, not a free offcut you can spoil without a cost. A bitter fumet means those bones, the aromatics and the stove gave you nothing you can send. Make the volume the service can actually use, not a huge pot that will sit until it turns. The head chef costs the sauce that comes from the fumet. If you only need enough for the sauces on tonight&#x27;s board, do not simmer a pot you cannot cool and hold with care.</p>
-<p>The guest should never be handed a bowl of fumet and told it is the dish. It is not a soup. In the sauce, they should taste clean fish, a light body, and aromatics that sit behind the main flavour. Bitterness, mud, or a boiled smell means the stock was pushed too far or skimmed too little. A good fumet disappears into the plate as freshness. That is the standard the pass inherits from mise en place. Keep the name for the stock. Use soup words only when you have actually seasoned and finished a soup for a bowl.</p>
+<h2>Where it earns its place</h2>
+<p>A fish sauce made on water tastes of the butter and the acid, and the fish on the plate sits alone. The same sauce on a short, clean fumet still tastes of the sea after you swallow. A fish velouté is this stock plus a pale roux. A mounted butter sauce can start here too, once you have reduced it. If you are judging body, the spoon test is the same one covered under <a href="https://aichef.pro/en/blog/nap-a-sauce">napping a sauce</a>.</p>
+<p>In a seafood rice or a stew, the grain or the sauce drinks the liquid. Taste before it goes in the pan and salt it knowing it will reduce. A thin fumet is not rescued by the shellfish on top. A fumet salted as if it were soup becomes too salty the moment it reduces. Sending the stockpot out as a bowl, without that adjustment, changes both the strength and the salt. If the spec turns the fumet into a dish, that is a second recipe.</p>
+<p>It is also not a <a href="https://aichef.pro/en/blog/glace-de-viande">glace de viande</a>. A meat glaze is a dark stock reduced until it sets hard when cold. Borrowing that habit — roast, then reduce for hours — is how a fish pot goes bitter. A <a href="https://aichef.pro/en/blog/what-is-demi-glace">demi-glace</a> belongs to the meat section for the same reason.</p>
+<h2>Mistakes that waste the bones</h2>
+<ul>
+<li><strong>Gills, blood and guts.</strong> They bitter and cloud the pot. Clean them before the water is hot.</li>
+<li><strong>A hard boil.</strong> It emulsifies fat and scum. The fumet goes grey.</li>
+<li><strong>Past half an hour, just in case.</strong> The clean flavour leaves and the bone stays. Strain and reduce the liquid if you need body.</li>
+<li><strong>Roasting the frames like a brown stock.</strong> That is a meat habit. On fish it tastes of burnt skin.</li>
+<li><strong>Pressing the sieve.</strong> You put back what you skimmed.</li>
+<li><strong>Salting it like a soup</strong> and then reducing it in a sauce. Salt the dish, or salt the fumet very lightly and taste it in context.</li>
+</ul>
 <figure><img src="/blog-assets/2026/05/fond-cuerpo.jpg" alt="Strained fumet in a clear container, light gold and clean, labelled by habit of the station and cooling for mise en place." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How people search for it</h2>
-<p>People type fumet, fish stock and fish fumet for the same pot: bones and aromatics, not roasted like a dark meat stock, simmered only until it tastes clean. It is a base. A search that treats it as a soup to eat from a bowl has the wrong meal in mind. Cook it too long, or leave gills and blood in the pot, and the sauces on the pass inherit a fault you cannot whisk out. Strain it when it tastes sweet and clear.</p>
+<p>The bones are already paid for in the fish you bought. Throwing them away throws away tomorrow’s sauce. Keeping them bloody, with the gills still in, makes a fumet you will throw away anyway. Ask which fish the pot came from, not only whether it tastes pleasant. A <a href="https://aichef.pro/en/blog/starch-slurry">starch slurry</a> will not rescue a bitter one. It will only thicken the bitterness.</p>
+<h2>Keep reading</h2>
 <ul>
 <li><a href="https://aichef.pro/en/blog/glace-de-viande">Glace de viande</a></li>
-<li><a href="https://aichef.pro/en/blog/starch-slurry">Starch slurry</a></li>
-<li><a href="https://aichef.pro/en/blog/what-is-demi-glace">What demi-glace is</a></li>
-<li><a href="https://aichef.pro/en/blog/category/glossary">More from the glossary</a></li>
+<li><a href="https://aichef.pro/en/blog/what-is-demi-glace">What is demi-glace</a></li>
+<li><a href="https://aichef.pro/en/blog/nap-a-sauce">Nap a sauce</a></li>
+<li><a href="https://aichef.pro/en/blog/category/glossary">Back to the glossary</a></li>
 </ul>
 <aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://enapp.aichef.pro/guest?utm_source=web&amp;utm_medium=glosario&amp;utm_content=fish-fumet">Enter as a guest</a></p></aside>
