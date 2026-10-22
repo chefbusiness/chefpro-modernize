@@ -19,7 +19,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BlogCTA from '../components/blog/BlogCTA.astro';
 import PostCard from '../components/blog/PostCard.astro';
-import { SITE } from '../i18n/config';
+import { LOCALES, SITE, type Locale } from '../i18n/config';
 import {
   blogBase,
   categoryPath,
@@ -54,6 +54,27 @@ const par = post.data.translations;
 const lang = post.data.lang;
 const slug = postSlug(post);
 const cat = getCategory(category, lang);
+
+/** Ruta pública de un post (con prefijo de idioma, salvo el español). */
+const hrefDe = (locale: Locale, target: string) =>
+  locale === 'es' ? `/blog/${target}` : `/${locale}/blog/${target}`;
+
+/**
+ * hreflang solo entre traducciones declaradas. Sin `translations`, el post
+ * declara únicamente su idioma. Con el campo, entran el idioma actual y cada
+ * locale que tenga slug: el layout ya sabe emitir los siete, no solo es/en.
+ */
+const hreflangLocales: Locale[] = par
+  ? LOCALES.filter((l) => l === lang || Boolean(par[l]))
+  : [lang];
+const alternates: Partial<Record<Locale, string>> | undefined = par
+  ? Object.fromEntries(
+      hreflangLocales.map((l) => {
+        const target = l === lang ? (par[l] ?? slug) : par[l];
+        return [l, hrefDe(l, target as string)];
+      }),
+    )
+  : undefined;
 /** Ruta SIN prefijo de idioma — la que espera BaseLayout para canonical/hreflang. */
 const canonicalPath = `/blog/${slug}`;
 /** Ruta REAL (con prefijo) — la que va en JSON-LD y enlaces. */
@@ -276,13 +297,8 @@ const schemas: object[] = [
   description={description}
   lang={lang}
   basePath={canonicalPath}
-  locales={par ? (['es', 'en'] as const).filter((l) => l === lang || par[l]) : [lang]}
-  alternates={par
-    ? {
-        ...(par.es || lang === 'es' ? { es: `/blog/${par.es ?? slug}` } : {}),
-        ...(par.en || lang === 'en' ? { en: `/en/blog/${par.en ?? slug}` } : {}),
-      }
-    : undefined}
+  locales={hreflangLocales}
+  alternates={alternates}
   ogImage={image ? `${SITE}${image}` : undefined}
 >
   <Fragment slot="head">

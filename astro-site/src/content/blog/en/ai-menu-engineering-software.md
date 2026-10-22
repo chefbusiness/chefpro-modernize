@@ -1,15 +1,21 @@
 ---
 title: "AI Menu Engineering Software: How Artificial Intelligence Optimizes Restaurant Menus"
-description: "Your restaurant is bustling. Every table is full, the kitchen is humming, and guests seem happy. Yet at the end of the month, your profit margins are…"
+description: "How AI menu engineering works: the popularity and margin matrix, what a model can suggest, and why the recipe cost comes first. The product comparison is a different page."
 pubDate: 2026-03-10
-modDate: 2026-10-15
+modDate: 2026-10-22
 category: ai-chef-pro
 lang: en
 wpId: 3241
 image: /blog-assets/en/2026/02/menu-engineering-ipad.jpg
 imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
+faq:
+  - q: "What is AI menu engineering software?"
+    a: "AI menu engineering software applies the popularity and contribution-margin matrix and suggests which dishes to promote, reprice or drop. This page explains that method. The shortlist of menu engineering software as a product category is a different article."
+  - q: "Do I need recipe costing before menu engineering?"
+    a: "Yes. The matrix uses contribution margin, and contribution margin needs a recipe cost. If the ingredient cost is still a guess, the star and dog labels are guesses too. Cost the recipe first, then classify the dish."
 ---
 
+<div style="background: #f8f9fa; padding: 25px; border-left: 4px solid #ffde59; margin: 30px 0;"><strong>Two different searches.</strong> If you are comparing <strong>menu engineering software</strong> — what to buy and how it differs from a POS — read the <a href="https://aichef.pro/en/blog/menu-engineering-software-complete-guide">menu engineering software guide</a>. This page explains how AI changes the analysis once you already have sales and a recipe cost. Start with <a href="https://aichef.pro/en/blog/best-recipe-costing-software-compared">recipe costing software</a> and the <a href="https://aichef.pro/en/food-cost-calculator-restaurant">food cost calculator</a> when the dish cost is still a guess. The workspace, if you want it, is the <a href="https://enapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=ai-menu-engineering-software">English guest home</a>.</div>
 <p>Your restaurant is bustling. Every table is full, the kitchen is humming, and guests seem happy. Yet at the end of the month, your profit margins are razor-thin—or worse, you&#8217;re barely breaking even. If this scenario sounds familiar, you&#8217;re not alone. According to the National Restaurant Association, the average restaurant profit margin hovers between 3-5%, with many operators struggling to achieve even that.</p>
 <p>The culprit? Often, it&#8217;s not your food quality, service, or location—it&#8217;s your menu. More specifically, it&#8217;s a menu that hasn&#8217;t been engineered for profitability. Traditional menu design focuses on what sounds delicious or looks appealing, but menu engineering software takes a data-driven approach that can transform your bottom line.</p>
 <p>In this comprehensive guide, we&#8217;ll explore how AI-powered menu engineering software works, why it&#8217;s becoming essential for modern restaurants, and how tools like AI Chef Pro can help you optimize every dish for maximum profitability while keeping guests delighted.</p>
