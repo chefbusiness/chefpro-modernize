@@ -11,9 +11,9 @@ const refund = {
 
 export const FAQ: Record<ParityLang, PageCopy> = {
   en: {
-    title: 'FAQ — AI Chef Pro for Restaurants',
+    title: 'FAQ: AI agents for restaurant kitchens | AI Chef Pro',
     description:
-      'Straight answers on AI Chef Pro: €10/month Member plan, 10,000 credits, 75+ agents on the English workspace, cancellation, invoices and allergen scope (EU 14 vs US FDA major 9).',
+      'FAQ on AI agents for restaurants: what the suite of 75+ includes, the €10 a month plan and how to cancel. Get a straight answer and start today.',
     keywords: 'AI Chef Pro FAQ, AI Chef Pro pricing, restaurant AI credits, cancel AI Chef Pro',
     eyebrow: 'FAQ',
     h1: 'Questions operators actually ask',
@@ -100,16 +100,16 @@ export const FAQ: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'See plans and pricing',
   },
   fr: {
-    title: 'Questions fréquentes — AI Chef Pro',
+    title: 'FAQ sur les agents IA pour restaurants | AI Chef Pro',
     description:
-      'Réponses directes sur AI Chef Pro : forfait Membre à 10 €/mois, 10 000 crédits, plus de 50 agents sur l’espace français, résiliation et allergènes INCO (14 allergènes).',
+      'FAQ sur les agents IA pour restaurants : ce que couvre la suite de 75+, le forfait à 10 € par mois et comment résilier. Trouvez la réponse et commencez.',
     keywords: 'FAQ AI Chef Pro, tarif AI Chef Pro, crédits IA restauration, résilier AI Chef Pro, allergènes restaurant',
     eyebrow: 'Questions fréquentes',
     h1: 'Les questions que se posent les restaurateurs',
     lead: 'Prix, crédits, résiliation et ce que l’aide aux allergènes couvre — et ne couvre pas.',
     answerLabel: 'Réponse directe',
     answer:
-      'AI Chef Pro est une suite d’agents spécialisés pour la cuisine professionnelle, dans le navigateur. Le forfait Membre coûte 10 € par mois avec 10 000 crédits. La page tarifs en français indique aujourd’hui plus de 50 agents : ce catalogue est encore en cours. Pas de forfait gratuit, pas d’engagement. Les prix restent en euros.',
+      'AI Chef Pro est une suite d’agents spécialisés pour la cuisine professionnelle, dans le navigateur. Le forfait Membre coûte 10 € par mois avec 10 000 crédits. La page tarifs en français indique aujourd’hui 75+ agents. Pas de forfait gratuit, pas d’engagement. Les prix restent en euros.',
     homeLabel: 'Accueil',
     crumb: 'Questions fréquentes',
     faqHeading: 'Questions fréquentes',
@@ -122,7 +122,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Qu’est-ce qu’AI Chef Pro ?',
-            a: 'Une suite d’agents d’intelligence artificielle pour les cuisiniers et les exploitants, pas un chatbot généraliste. Le forfait Membre est à 10 € par mois avec 10 000 crédits. L’espace français affiche aujourd’hui plus de 50 agents ; l’espace espagnol en publie 75+.',
+            a: 'Une suite d’agents d’intelligence artificielle pour les cuisiniers et les exploitants, pas un chatbot généraliste. Le forfait Membre est à 10 € par mois avec 10 000 crédits. L’espace français affiche aujourd’hui 75+ agents.',
           },
           {
             q: 'Qui est derrière le produit ?',
@@ -189,16 +189,16 @@ export const FAQ: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Voir les tarifs',
   },
   de: {
-    title: 'Häufige Fragen — AI Chef Pro',
+    title: 'FAQ zu KI-Agenten für Restaurants und Köche | AI Chef Pro',
     description:
-      'Direkte Antworten zu AI Chef Pro: Mitglied 10 €/Monat, 10.000 Credits, auf der deutschen Seite mehr als 50 Agenten, Kündigung und Allergene nach VO (EU) Nr. 1169/2011.',
+      'FAQ zu KI-Agenten für Restaurants: was die Suite von 75+ enthält, das Abo ab 10 € im Monat und wie Sie kündigen. Holen Sie sich die Antwort und starten Sie.',
     keywords: 'AI Chef Pro FAQ, Preise AI Chef Pro, Credits Gastronomie KI, AI Chef Pro kündigen, Allergene Gastronomie',
     eyebrow: 'Häufige Fragen',
     h1: 'Fragen, die Betriebe wirklich stellen',
     lead: 'Preis, Credits, Kündigung und was die Allergen-Hilfe leistet — und was nicht.',
     answerLabel: 'Kurzantwort',
     answer:
-      'AI Chef Pro ist eine Suite spezialisierter Agenten für die Profiküche, im Browser. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Die deutsche Preisseite nennt heute mehr als 50 Agenten; der Katalog wird noch ergänzt. Kein Gratisplan, keine Laufzeitbindung. Preise in Euro.',
+      'AI Chef Pro ist eine Suite spezialisierter Agenten für die Profiküche, im Browser. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Die deutsche Preisseite nennt heute 75+ Agenten. Kein Gratisplan, keine Laufzeitbindung. Preise in Euro.',
     homeLabel: 'Startseite',
     crumb: 'Häufige Fragen',
     faqHeading: 'Häufige Fragen',
@@ -211,7 +211,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Was ist AI Chef Pro?',
-            a: 'Eine Suite spezialisierter KI-Agenten für Köche und Betriebe, kein allgemeiner Chatbot. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Der deutsche Arbeitsbereich nennt heute mehr als 50 Agenten; der spanische veröffentlicht 75+.',
+            a: 'Eine Suite spezialisierter KI-Agenten für Köche und Betriebe, kein allgemeiner Chatbot. Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Der deutsche Arbeitsbereich nennt heute 75+ Agenten.',
           },
           {
             q: 'Wer steht dahinter?',
@@ -278,16 +278,16 @@ export const FAQ: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Preise ansehen',
   },
   it: {
-    title: 'Domande frequenti — AI Chef Pro',
+    title: 'FAQ sugli agenti IA per ristoranti e chef | AI Chef Pro',
     description:
-      'Risposte dirette su AI Chef Pro: piano Membro a 10 €/mese, 10.000 crediti, più di 50 agenti sullo spazio italiano, disdetta e 14 allergeni del Reg. UE 1169/2011.',
+      'FAQ sugli agenti IA per ristoranti: cosa include la suite di 75+, il piano a 10 € al mese e come disdire. Trova la risposta e inizia oggi stesso.',
     keywords: 'FAQ AI Chef Pro, prezzi AI Chef Pro, crediti IA ristorante, disdire AI Chef Pro, allergeni ristorante',
     eyebrow: 'Domande frequenti',
     h1: 'Le domande che fa chi ha un locale',
     lead: 'Prezzo, crediti, disdetta e cosa fa — e non fa — l’aiuto sugli allergeni.',
     answerLabel: 'Risposta diretta',
     answer:
-      'AI Chef Pro è una suite di agenti specializzati per la cucina professionale, nel browser. Il piano Membro costa 10 € al mese con 10.000 crediti. La pagina prezzi in italiano indica oggi più di 50 agenti: il catalogo è ancora in completamento. Niente piano gratuito, niente permanenza. Prezzi in euro.',
+      'AI Chef Pro è una suite di agenti specializzati per la cucina professionale, nel browser. Il piano Membro costa 10 € al mese con 10.000 crediti. La pagina prezzi in italiano indica oggi 75+ agenti. Niente piano gratuito, niente permanenza. Prezzi in euro.',
     homeLabel: 'Home',
     crumb: 'Domande frequenti',
     faqHeading: 'Domande frequenti',
@@ -300,7 +300,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Che cos’è AI Chef Pro?',
-            a: 'Una suite di agenti di intelligenza artificiale per cuochi e gestori, non un chatbot generico. Il piano Membro costa 10 € al mese con 10.000 crediti. Lo spazio italiano indica oggi più di 50 agenti; quello spagnolo ne pubblica 75+.',
+            a: 'Una suite di agenti di intelligenza artificiale per cuochi e gestori, non un chatbot generico. Il piano Membro costa 10 € al mese con 10.000 crediti. Lo spazio italiano indica oggi 75+ agenti.',
           },
           {
             q: 'Chi c’è dietro?',
@@ -367,16 +367,16 @@ export const FAQ: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Vedi i prezzi',
   },
   pt: {
-    title: 'Perguntas frequentes — AI Chef Pro',
+    title: 'FAQ sobre agentes de IA para restaurantes | AI Chef Pro',
     description:
-      'Respostas diretas sobre o AI Chef Pro: plano Membro a 10 €/mês, 10.000 créditos, mais de 50 agentes no espaço em português, cancelamento e 14 alergénios (Reg. UE 1169/2011).',
+      'FAQ sobre agentes de IA para restaurantes: o que inclui a suite de 75+, o plano a 10 € por mês e como cancelar. Veja a resposta e comece hoje.',
     keywords: 'FAQ AI Chef Pro, preços AI Chef Pro, créditos IA restauração, cancelar AI Chef Pro, alergénios restaurante',
     eyebrow: 'Perguntas frequentes',
     h1: 'As perguntas que um restaurante faz mesmo',
     lead: 'Preço, créditos, cancelamento e o que a ajuda de alergénios faz — e não faz.',
     answerLabel: 'Resposta direta',
     answer:
-      'O AI Chef Pro é uma suite de agentes especializados para a cozinha profissional, no browser. O plano Membro custa 10 € por mês com 10.000 créditos. A página de preços em português indica hoje mais de 50 agentes: o catálogo ainda está a ser completado. Não há plano grátis nem permanência. Preços em euros. O site é de Portugal.',
+      'O AI Chef Pro é uma suite de agentes especializados para a cozinha profissional, no browser. O plano Membro custa 10 € por mês com 10.000 créditos. A página de preços em português indica hoje 75+ agentes. Não há plano grátis nem permanência. Preços em euros. O site é de Portugal.',
     homeLabel: 'Início',
     crumb: 'Perguntas frequentes',
     faqHeading: 'Perguntas frequentes',
@@ -389,7 +389,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'O que é o AI Chef Pro?',
-            a: 'Uma suite de agentes de inteligência artificial para cozinheiros e operadores, não um chatbot genérico. O plano Membro custa 10 € por mês com 10.000 créditos. O espaço em português indica hoje mais de 50 agentes; o espaço espanhol publica 75+.',
+            a: 'Uma suite de agentes de inteligência artificial para cozinheiros e operadores, não um chatbot genérico. O plano Membro custa 10 € por mês com 10.000 créditos. O espaço em português indica hoje 75+ agentes.',
           },
           {
             q: 'Quem está por trás?',
@@ -456,16 +456,16 @@ export const FAQ: Record<ParityLang, PageCopy> = {
     ctaSecondary: 'Ver preços',
   },
   nl: {
-    title: 'Veelgestelde vragen — AI Chef Pro',
+    title: 'FAQ over AI-agenten voor restaurants | AI Chef Pro',
     description:
-      'Korte antwoorden over AI Chef Pro: Lid-abonnement € 10 per maand, 10.000 credits, meer dan 50 agenten op de Nederlandse pagina, opzeggen en de 14 allergenen (Verordening (EU) nr. 1169/2011).',
+      'FAQ over AI-agenten voor restaurants: wat de suite van 75+ dekt, het abonnement vanaf € 10 per maand en hoe u opzegt. Lees het antwoord en start vandaag.',
     keywords: 'FAQ AI Chef Pro, prijzen AI Chef Pro, credits horeca AI, AI Chef Pro opzeggen, allergenen horeca',
     eyebrow: 'Veelgestelde vragen',
     h1: 'Vragen die een zaak echt stelt',
     lead: 'Prijs, credits, opzeggen en wat de allergenenhulp wel en niet doet.',
     answerLabel: 'Kort antwoord',
     answer:
-      'AI Chef Pro is een suite van gespecialiseerde agenten voor de professionele keuken, in de browser. Het Lid-abonnement kost € 10 per maand met 10.000 credits. De Nederlandse prijspagina noemt vandaag meer dan 50 agenten; die catalogus wordt nog aangevuld. Geen gratis abonnement en geen contractduur. Prijzen in euro.',
+      'AI Chef Pro is een suite van gespecialiseerde agenten voor de professionele keuken, in de browser. Het Lid-abonnement kost € 10 per maand met 10.000 credits. De Nederlandse prijspagina noemt vandaag 75+ agenten. Geen gratis abonnement en geen contractduur. Prijzen in euro.',
     homeLabel: 'Home',
     crumb: 'Veelgestelde vragen',
     faqHeading: 'Veelgestelde vragen',
@@ -478,7 +478,7 @@ export const FAQ: Record<ParityLang, PageCopy> = {
         faqs: [
           {
             q: 'Wat is AI Chef Pro?',
-            a: 'Een suite van gespecialiseerde AI-agenten voor koks en ondernemers, geen algemene chatbot. Het Lid-abonnement kost € 10 per maand met 10.000 credits. De Nederlandse werkruimte noemt vandaag meer dan 50 agenten; de Spaanse publiceert 75+.',
+            a: 'Een suite van gespecialiseerde AI-agenten voor koks en ondernemers, geen algemene chatbot. Het Lid-abonnement kost € 10 per maand met 10.000 credits. De Nederlandse werkruimte noemt vandaag 75+ agenten.',
           },
           {
             q: 'Wie zit erachter?',

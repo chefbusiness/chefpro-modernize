@@ -19,7 +19,7 @@
     "precios": "Prijzen",
     "integraciones": "Integraties",
     "reducir_costes": "Kosten verlagen",
-    "herramientas_ia": "AI-Tools Restaurant",
+    "herramientas_ia": "AI-agenten voor restaurants",
     "carta_menu": "Menu met AI",
     "marketing_ia": "Marketing met AI",
     "chatgpt_ia": "ChatGPT voor Restaurants",
@@ -40,8 +40,8 @@
     "title_prefix": "Transformeer uw",
     "title_suffix": "met",
     "title_brand": "AI Chef Pro",
-    "subtitle": "50+ Gespecialiseerde AI-tools voor Chefs. Van Culinaire Creativiteit tot Digitale Marketing.",
-    "description": "Suite van AI-tools en Toepassingen, modellen getraind voor dagelijks gebruik door Chefs, Koks en horeca-professionals.",
+    "subtitle": "75+ AI-agenten voor koks. Van culinaire creativiteit tot digitale marketing.",
+    "description": "Een suite van AI-agenten, getraind voor het dagelijkse werk van chefs, koks en horecaprofessionals.",
     "rating": "Beoordeling: 5 sterren",
     "business_types": [
       "Beheer",
@@ -64,7 +64,7 @@
     "v2_social_count": "recepten, processen & oplossingen gegenereerd",
     "v2_title_prefix": "Creëer, beheer en laat uw",
     "v2_title_suffix": "groeien met",
-    "v2_subtitle": "Automatiseer recepten, food cost, verspilling, menu's en marketing met 50+ AI-agents ontwikkeld voor restaurants en horecabedrijven.",
+    "v2_subtitle": "Automatiseer recepten, foodcost, derving, menu’s en marketing met 75+ AI-agenten voor restaurants en horecabedrijven.",
     "v2_description": "Getraind op de dagelijkse werkprocessen van keukenchefs, patissiers, bakkers en horecaondernemers — niet op generieke restaurantmarketing.",
     "v2_stat_agents": "AI-agents",
     "v2_stat_tools": "bedrijfs- en kostentools",
@@ -453,7 +453,7 @@
     "v2_business_cta": "Bekijk abonnementen die alle 6 tools ontgrendelen"
   },
   "gallery": {
-    "badge": "50+ Gespecialiseerde AI-agents in Actie",
+    "badge": "75+ Gespecialiseerde AI-agents in Actie",
     "title": "Ontdek de Kracht van AI Chef Pro",
     "description": "Bekijk echte screenshots van onze gespecialiseerde AI-agents voor gastronomie professionals",
     "previous": "Vorige",
@@ -701,7 +701,7 @@
           "content": "Deze pagina bevat juridische informatie gerelateerd aan het gebruik van AI Chef Pro en zijn services.",
           "content_paragraphs": [
             "<h2>1. Algemene Informatie</h2><p><strong>Website Eigenaar:</strong> John Guerrero</p><p><strong>Handelsnaam:</strong> AI Chef Pro</p><p><strong>Contact Email:</strong> info@aichef.pro</p><p><strong>Telefoon:</strong> +34 744 717 942</p>",
-            "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat tools en AI-agents biedt voor kookprofessionals. Onze services omvatten meer dan 55 gespecialiseerde AI-agents van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
+            "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat AI-agenten biedt voor kookprofessionals. Onze services omvatten 75+ AI-agenten van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
             "<h2>8. Contact</h2><p>Voor juridisch advies of klachten kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
           ]
         },
@@ -735,7 +735,7 @@
           "content": "Deze algemene voorwaarden regelen het gebruik van AI Chef Pro en zijn services.",
           "content_paragraphs": [
             "<h2>1. Acceptatie van de Voorwaarden</h2><p>Door toegang te krijgen tot en gebruik te maken van AI Chef Pro, accepteer je deze algemene voorwaarden. Als je niet akkoord gaat met een deel van deze voorwaarden, mag je onze culinaire kunstmatige intelligentie services niet gebruiken.</p>",
-            "<h2>2. Service Beschrijving</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat meer dan 55 tools biedt voor kookprofessionals, inclusief culinaire creativiteit, wereldkookboeken en bedrijfsbeheer.</p>",
+            "<h2>2. Service Beschrijving</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat 75+ AI-agenten biedt voor kookprofessionals, inclusief culinaire creativiteit, wereldkookboeken en bedrijfsbeheer.</p>",
             "<h2>3. Gebruikersregistratie en Account</h2><p>Om toegang te krijgen tot bepaalde functionaliteiten, moet je een account aanmaken door nauwkeurige en bijgewerkte informatie te verstrekken. Je bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van je account en wachtwoord.</p>",
             "<h2>10. Contact</h2><p>Voor vragen over deze voorwaarden kun je contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
           ]
@@ -932,7 +932,7 @@
   },
   "features": {
     "title": "Hoofdkenmerken",
-    "description": "Ontdek de meest geavanceerde AI-tools voor culinaire professionals",
+    "description": "75+ AI-agenten voor wie elke dag in een professionele keuken werkt.",
     "ai_assistant": "AI-Assistent",
     "ai_assistant_desc": "Intelligente ondersteuning voor alle gastronomische uitdagingen",
     "food_pairing": "Food Pairing",
@@ -951,7 +951,7 @@
     "ai_powered": "Geavanceerde Kunstmatige Intelligentie",
     "ai_powered_desc": "GPT-modellen gespecialiseerd in gastronomie",
     "specialized": "Gespecialiseerde Tools",
-    "specialized_desc": "50+ AI-agents voor elke gastronomische behoefte",
+    "specialized_desc": "75+ AI-agents voor elke gastronomische behoefte",
     "global": "Wereldkeuken",
     "global_desc": "21 kookboeken van wereldkeukens",
     "business_tools": "Bedrijfsbeheer",
@@ -999,7 +999,7 @@
         "uses": "10.000/maand",
         "description": "Ideaal voor keukenhulpen, koks en postchefs",
         "features": {
-          "0": "50+ agents & tools inbegrepen",
+          "0": "75+ AI-agenten inbegrepen",
           "1": "10.000 maandelijkse credits",
           "2": "Wereldwijde kookboeken",
           "3": "E-mailondersteuning"
@@ -1011,7 +1011,7 @@
         "v2_hint": "≈ een maand recepten, kostprijzen en menu's voor één kok",
         "v2_cta": "Beginnen als Lid",
         "v2_features": [
-          "50+ agents & tools inbegrepen",
+          "75+ AI-agenten inbegrepen",
           "10.000 maandelijkse credits",
           "25+ wereldkookboeken",
           "E-mailondersteuning"
@@ -1025,7 +1025,7 @@
         "uses": "85.000/maand",
         "description": "Voor Keukenchefs, Chefkoks en Restaurantmanagers",
         "features": {
-          "0": "50+ agents & tools inbegrepen",
+          "0": "75+ AI-agenten inbegrepen",
           "1": "85.000 maandelijkse credits",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
@@ -1045,7 +1045,7 @@
         "uses": "175.000/maand",
         "description": "Voor gastronomische ondernemers en restaurantketens",
         "features": {
-          "0": "50+ agents & tools inbegrepen",
+          "0": "75+ AI-agenten inbegrepen",
           "1": "175.000 maandelijkse credits",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
@@ -1065,7 +1065,7 @@
         "uses": "∞",
         "description": "Onbeperkte maandelijkse credits voor veeleisende professionals",
         "features": {
-          "0": "50+ agents & tools inbegrepen",
+          "0": "75+ AI-agenten inbegrepen",
           "1": "Onbeperkte maandelijkse credits",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
@@ -1089,7 +1089,7 @@
         "discount": "Bespaar 2 maanden",
         "description": "Ideaal voor gastronomische ondernemers, restauranteigenaren en leidinggevenden",
         "features": {
-          "0": "50+ agents & tools inbegrepen",
+          "0": "75+ AI-agenten inbegrepen",
           "1": "Onbeperkte credits het hele jaar",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
@@ -1176,11 +1176,11 @@
     "title": "Veelgestelde Vragen",
     "description": "Vind antwoorden op de meest gestelde vragen over AI Chef Pro",
     "q1": "Wat is inbegrepen in AI Chef Pro?",
-    "a1": "AI Chef Pro omvat 50+ gespecialiseerde gastronomische AI-agents, van culinaire creativiteit tot bedrijfstools. U krijgt toegang tot kookboeken van 25 wereldkeukens, AI-receptgeneratoren, wetenschappelijke food pairing, managementtools en veel meer.",
+    "a1": "AI Chef Pro omvat 75+ gespecialiseerde gastronomische AI-agents, van culinaire creativiteit tot bedrijfstools. U krijgt toegang tot kookboeken van 25 wereldkeukens, AI-receptgeneratoren, wetenschappelijke food pairing, managementtools en veel meer.",
     "q2": "Kan ik AI Chef Pro gebruiken als ik een beginner ben?",
     "a2": "Absoluut! AI Chef Pro is ontworpen voor professionals van alle niveaus. Onze tools bevatten gedetailleerde uitleg, stap-voor-stap technieken en coaching die u zullen helpen uw gastronomische vaardigheden te ontwikkelen.",
     "q3": "Hoe werkt het AI Chef Lid-plan?",
-    "a3": "Het AI Chef Lid-plan kost €10 per maand en omvat 10.000 maandelijkse credits met toegang tot de 50+ tools. Wanneer u meer nodig heeft, kunt u overstappen naar AI Chef Premium Pro (€25/maand, 85.000 credits) of hoger. Maandelijks opzegbaar: u wijzigt uw plan of annuleert wanneer u wilt.",
+    "a3": "Het AI Chef Lid-plan kost €10 per maand en omvat 10.000 maandelijkse credits met toegang tot de 75+ AI-agenten. Wanneer u meer nodig heeft, kunt u overstappen naar AI Chef Premium Pro (€25/maand, 85.000 credits) of hoger. Maandelijks opzegbaar: u wijzigt uw plan of annuleert wanneer u wilt.",
     "q4": "Passen recepten zich aan aan verschillende portiegroottes?",
     "a4": "Ja, al onze tools bevatten automatische portieberekening. U kunt elk recept aanpassen voor 1 persoon of voor 1000 gasten, en ons systeem berekent automatisch de exacte hoeveelheden van elk ingrediënt.",
     "q5": "Bevat het ondersteuning voor voedingsbeperkingen?",
@@ -1214,7 +1214,7 @@
     "nav_software_gestion": "Keukenbeheersoftware",
     "nav_recetas": "AI-Recepten",
     "nav_escandallos": "Food Cost Berekening AI",
-    "nav_ai_tools": "AI-Tools",
+    "nav_ai_tools": "AI-agenten",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
     "plans_button": "Bekijk Plannen",
@@ -1237,7 +1237,7 @@
     "glosario_ia": "AI Woordenlijst",
     "glosario_culinario": "Culinair Wetenschappelijk Woordenboek",
     "roadmap": "AI Chef Pro Roadmap",
-    "app_tools": "50+ Tools in de AI-agents",
+    "app_tools": "75+ AI-agenten",
     "app_login": "Inloggen",
     "free_tools_hub": "Gratis Tools",
     "mentoria_online": "Online Mentoring",
@@ -1362,16 +1362,16 @@
     }
   },
   "seo": {
-    "title": "AI Chef Pro: 50+ AI-Tools voor Koks en Restaurants",
-    "description": "AI-suite voor koks en restaurants. 50+ tools: AI-recepten, food cost calculator, menukaart engineering, marketing automatisering. Start vandaag.",
-    "keywords": "ai chef pro, ai chef, ai voor restaurants, kunstmatige intelligentie horeca, ai tools kok, ai restaurant software",
-    "og_image_alt": "AI Chef Pro - Suite van 50+ AI-tools voor Professionele Chefs"
+    "title": "AI-agenten voor koks, restaurants en horeca | AI Chef Pro",
+    "description": "AI-agenten voor koks en restaurants: 75+ specialisten voor foodcost, recepten, menukaart en marketing. Start vandaag vanaf € 10 per maand, zonder binding.",
+    "keywords": "ai-agenten voor koks, ai-agenten restaurant, ai horeca, foodcost ai, ai chef pro",
+    "og_image_alt": "AI-agenten voor koks, restaurants en horeca | AI Chef Pro"
   },
   "pages": {
     "index": {
-      "seo_title": "AI Chef Pro: 50+ AI-Tools voor Koks en Restaurants",
-      "seo_description": "AI-suite voor professionele koks en restaurants. 50+ tools: AI-recepten, food cost, menukaart, marketing. Start vandaag.",
-      "seo_keywords": "ai chef pro, ai chef, ai voor restaurants, ai tools kok, ai horeca"
+      "seo_title": "AI-agenten voor koks, restaurants en horeca | AI Chef Pro",
+      "seo_description": "AI-agenten voor koks en restaurants: 75+ specialisten voor foodcost, recepten, menukaart en marketing. Start vandaag vanaf € 10 per maand, zonder binding.",
+      "seo_keywords": "ai-agenten voor koks, ai-agenten restaurant, ai horeca, foodcost ai, ai chef pro"
     },
     "mentoria_online": {
       "seo_title": "Online Mentorschap voor Chefs - AI Gastronomisch Advies | AI Chef Pro",
@@ -1385,7 +1385,7 @@
       "heading": "Juridische Kennisgeving",
       "content_paragraphs": [
         "<h2>1. Algemene Informatie</h2><p><strong>Website-eigenaar:</strong> John Guerrero</p><p><strong>Handelsnaam:</strong> AI Chef Pro</p><p><strong>Contact E-mail:</strong> info@aichef.pro</p><p><strong>Telefoon:</strong> +34 744 717 942</p>",
-        "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een AI-platform gespecialiseerd in gastronomie dat tools en AI-agents biedt voor culinaire professionals. Onze diensten omvatten meer dan 55 gespecialiseerde AI-agents van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
+        "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een AI-platform gespecialiseerd in gastronomie dat AI-agenten biedt voor culinaire professionals. Onze diensten omvatten 75+ AI-agenten van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
         "<h2>3. Intellectueel Eigendom</h2><p>Alle inhoud, merken, logo's, ontwerpen, broncodes, databases en andere elementen van AI Chef Pro zijn beschermd door wetten op intellectueel eigendom. Reproductie, distributie of openbare communicatie zonder uitdrukkelijke toestemming is verboden.</p>",
         "<h2>4. Aansprakelijkheid voor Inhoud</h2><p>AI Chef Pro behoudt zich het recht voor om inhoud zonder voorafgaande kennisgeving te wijzigen, bij te werken of te verwijderen. Wij garanderen niet de beschikbaarheid, continuïteit of onfeilbaarheid van de dienst.</p>",
         "<h2>5. Externe Links</h2><p>Onze website kan links naar websites van derden bevatten. AI Chef Pro is niet verantwoordelijk voor de inhoud, het privacybeleid of de praktijken van deze externe sites.</p>",
@@ -1430,7 +1430,7 @@
       "heading": "Servicevoorwaarden",
       "content_paragraphs": [
         "<h2>1. Aanvaarding van Voorwaarden</h2><p>Door toegang te krijgen tot en gebruik te maken van AI Chef Pro, aanvaardt u deze voorwaarden. Als u het niet eens bent met enig deel van deze voorwaarden, moet u onze culinaire AI-diensten niet gebruiken.</p>",
-        "<h2>2. Dienstbeschrijving</h2><p>AI Chef Pro is een AI-platform gespecialiseerd in gastronomie dat meer dan 55 tools biedt voor culinaire professionals, waaronder culinaire creativiteit, wereldwijde kookboeken en bedrijfsbeheer.</p>",
+        "<h2>2. Dienstbeschrijving</h2><p>AI Chef Pro is een AI-platform gespecialiseerd in gastronomie dat 75+ AI-agenten biedt voor culinaire professionals, waaronder culinaire creativiteit, wereldwijde kookboeken en bedrijfsbeheer.</p>",
         "<h2>3. Registratie en Gebruikersaccount</h2><p>Om toegang te krijgen tot bepaalde functies, moet u een account aanmaken met nauwkeurige en actuele informatie. U bent verantwoordelijk voor het vertrouwelijk houden van uw account en wachtwoord.</p>",
         "<h2>4. Toegestaan Gebruik</h2><p>U mag AI Chef Pro gebruiken voor legitieme professionele gastronomische doeleinden. Gebruik voor illegale of schadelijke activiteiten is verboden.</p>",
         "<h2>5. Intellectueel Eigendom</h2><p>Alle inhoud, merken en technologieën van AI Chef Pro zijn eigendom van hun respectieve houders. Door AI gegenereerde recepten kunnen worden gebruikt volgens uw abonnement.</p>",
@@ -1442,9 +1442,9 @@
       ]
     },
     "services": {
-      "seo_title": "Services - AI Chef Pro | AI-oplossingen voor Gastronomie",
-      "seo_description": "Ontdek alle diensten van AI Chef Pro. Complete suite van AI-tools voor gastronomische professionals.",
-      "seo_keywords": "ai chef pro services, gastronomie oplossingen, ai keuken tools"
+      "seo_title": "Diensten met AI-agenten voor de horeca | AI Chef Pro",
+      "seo_description": "Diensten met AI-agenten voor de horeca: mentoring, training op locatie en een suite van 75+. Bekijk wat erin zit en start vanaf € 10 per maand.",
+      "seo_keywords": "diensten ai-agenten, ai-agenten horeca, mentoring chef, training op locatie, ai chef pro"
     }
   },
   "alt_texts": {
@@ -1628,15 +1628,15 @@
   },
   "landingRestaurantes": {
     "seo": {
-      "title": "AI-Tools voor Restaurants | AI Chef Pro",
-      "description": "50+ AI-tools voor restauranteigenaren. Beheers kosten, ontwerp uw menu, beheer allergenen en automatiseer marketing. Start vandaag.",
-      "keywords": "ai tools restaurant, kunstmatige intelligentie restaurant, restaurant management ai, ai voor restauranteigenaren, food cost ai, digitaal menu ai, restaurant marketing ai",
+      "title": "AI-agenten voor restaurants: 75+ specialisten | AI Chef Pro",
+      "description": "AI-agenten voor restaurants: 75+ specialisten voor kosten, menukaart, allergenen en marketing. Zonder binding. Start vandaag vanaf € 10 per maand.",
+      "keywords": "ai-agenten voor restaurants, ai-agenten horeca, foodcost ai, menukaart ai, ai chef pro",
       "url_slug": "ai-tools-restaurant"
     },
     "hero": {
-      "badge": "50+ gespecialiseerde tools voor horeca",
-      "h1": "AI-Tools voor Restaurants",
-      "subtitle": "De AI-suite voor eigenaren van restaurants, bars en cafés. Geen technische kennis vereist. Geen leercurve.",
+      "badge": "75+ AI-agenten voor de horeca",
+      "h1": "AI-agenten voor restaurants",
+      "subtitle": "75+ AI-agenten voor restaurants, bars en cafés. Geen technische kennis nodig.",
       "tagline": "Kosten beheersen · Menu ontwerpen · Marketing automatiseren · Verspilling verminderen",
       "cta_primary": "Nu beginnen",
       "cta_secondary": "Plannen en prijzen bekijken",
@@ -1656,8 +1656,8 @@
         "label": "vermindering van voedselverspilling"
       },
       {
-        "metric": "50+",
-        "label": "gespecialiseerde tools voor gastronomie"
+        "metric": "75+",
+        "label": "AI-agenten voor de horeca"
       }
     ],
     "tools_section": {
@@ -1765,7 +1765,7 @@
     "faq": [
       {
         "question": "Welke AI-tools zijn nuttig voor een restaurant?",
-        "answer": "De meest nuttige AI-tools voor restaurants zijn: menugeneratoren, gerechtkostencalculatoren, allergenenmanagers, social media marketingtools, inkoopplanners en verspillingscontrole. AI Chef Pro bundelt 50+ van deze gespecialiseerde tools in één suite."
+        "answer": "De meest nuttige AI-tools voor restaurants zijn: menugeneratoren, gerechtkostencalculatoren, allergenenmanagers, social media marketingtools, inkoopplanners en verspillingscontrole. AI Chef Pro bundelt 75+ AI-agenten in één suite."
       },
       {
         "question": "Kan kunstmatige intelligentie helpen om kosten te verlagen in een restaurant?",
@@ -1782,7 +1782,7 @@
     ],
     "cta_section": {
       "title": "Begin vandaag met AI-tools voor uw restaurant",
-      "subtitle": "Geen verplichtingen · Zeg op wanneer u wilt. Directe toegang tot 50+ gespecialiseerde tools voor gastronomie en horeca.",
+      "subtitle": "Geen verplichtingen · Zeg op wanneer u wilt. Directe toegang tot 75+ AI-agenten voor gastronomie en horeca.",
       "primary": "Nu uitproberen",
       "secondary": "Alle plannen bekijken"
     },
@@ -1988,8 +1988,8 @@
         "label": "gemiddelde klantbeoordeling op Google"
       },
       {
-        "metric": "50+",
-        "label": "gastronomische marketingtools"
+        "metric": "75+",
+        "label": "AI-agenten"
       }
     ],
     "tools_section": {
@@ -2142,8 +2142,8 @@
     },
     "results": [
       {
-        "metric": "50+",
-        "label": "tools getraind in gastronomie"
+        "metric": "75+",
+        "label": "AI-agenten"
       },
       {
         "metric": "10x",
@@ -2354,8 +2354,8 @@
         "label": "Actieve restaurants"
       },
       {
-        "metric": "50+",
-        "label": "AI-keukentools"
+        "metric": "75+",
+        "label": "AI-agenten"
       },
       {
         "metric": "30%",
@@ -2376,7 +2376,7 @@
         {
           "feature": "Receptenbeheer",
           "other": "Word-bestanden of papier",
-          "aichef": "50+ gespecialiseerde AI-tools"
+          "aichef": "75+ AI-agenten"
         },
         {
           "feature": "Allergenencontrole",
@@ -2505,7 +2505,7 @@
     "faq": [
       {
         "question": "Wat is AI keukenbeheersoftware?",
-        "answer": "Het is een platform dat kunstmatige intelligentie gebruikt om keukenbeheertaken te automatiseren: food cost, inventaris, recepten, allergenen en winstgevendheidsanalyse. AI Chef Pro integreert 50+ tools gespecialiseerd in de horeca."
+        "answer": "Het is een platform dat kunstmatige intelligentie gebruikt om keukenbeheertaken te automatiseren: food cost, inventaris, recepten, allergenen en winstgevendheidsanalyse. AI Chef Pro integreert 75+ AI agents gespecialiseerd in de horeca."
       },
       {
         "question": "Kan ik mijn food costs beheren met AI Chef Pro?",
@@ -2557,8 +2557,8 @@
         "label": "Minder tijd aan menuontwikkeling"
       },
       {
-        "metric": "50+",
-        "label": "Gespecialiseerde tools"
+        "metric": "75+",
+        "label": "AI-agenten"
       }
     ],
     "comparison": {
@@ -2756,8 +2756,8 @@
         "label": "Actieve restaurants"
       },
       {
-        "metric": "50+",
-        "label": "Gespecialiseerde tools"
+        "metric": "75+",
+        "label": "AI-agenten"
       }
     ],
     "comparison": {
@@ -2927,9 +2927,9 @@
   },
   "toolHub": {
     "seo": {
-      "title": "8 Gratis AI-Tools voor Restaurants | AI Chef Pro",
-      "description": "Gratis AI-tools voor restaurants: food cost calculator, winstgevendheid simulator, allergenendetektor en menu generator. Zonder registratie.",
-      "keywords": "gratis restaurant tools, food cost calculator gratis, ai tools restaurant gratis"
+      "title": "8 gratis tools voor uw restaurant, direct | AI Chef Pro",
+      "description": "Gratis tools voor uw restaurant: foodcost, allergenen en winst, zonder account. De betaalde suite heeft 75+ AI-agenten. Probeer die vandaag.",
+      "keywords": "gratis tools restaurant, foodcost calculator gratis, 75+ ai-agenten, ai chef pro"
     },
     "breadcrumb": "Gratis Tools",
     "other_tools_title": "Andere gratis tools",
@@ -3003,7 +3003,7 @@
     },
     "cta": {
       "title": "Heeft u meer kracht nodig?",
-      "subtitle": "Deze tools zijn slechts een voorbeeld van de 50+ AI-functies beschikbaar in AI Chef Pro Premium.",
+      "subtitle": "Deze rekenmachines zijn maar een voorbeeld van de 75+ AI-agenten van AI Chef Pro.",
       "primary": "Premium Plan bekijken",
       "secondary": "starten AI Chef Pro"
     }
@@ -3549,7 +3549,7 @@
     ],
     "cta_section": {
       "title": "Digitaliseer uw restaurant vandaag nog met AI",
-      "subtitle": "AI Chef Pro is de meest complete AI-suite voor gastronomie: 50+ tools om uw restaurant te beheren met kunstmatige intelligentie.",
+      "subtitle": "AI Chef Pro is de meest complete AI-suite voor gastronomie: 75+ AI agents om uw restaurant te beheren met kunstmatige intelligentie.",
       "primary": "AI Chef Pro proberen",
       "secondary": "Alle plannen bekijken"
     }

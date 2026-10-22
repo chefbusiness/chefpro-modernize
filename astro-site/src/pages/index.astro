@@ -23,13 +23,14 @@ import CategoryCTAs from '../components/CategoryCTAs.astro';
 import FAQ from '../components/FAQ.astro';
 import ConversionNotifications from '../components/ConversionNotifications.astro';
 import Footer from '../components/Footer.astro';
+import { t } from '../i18n/translations';
 
 const lang = 'es';
 ---
 
 <BaseLayout
-  title="AI Chef Pro: 75+ Herramientas de IA para Chefs y Restaurantes"
-  description="Suite de inteligencia artificial para chefs y restaurantes. 75+ herramientas: recetas con IA, food cost, escandallos, marketing gastronómico. Empieza hoy."
+  title={t(lang, 'pages.index.seo_title')}
+  description={t(lang, 'pages.index.seo_description')}
   lang="es"
   basePath="/"
 >

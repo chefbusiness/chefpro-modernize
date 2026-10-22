@@ -15,16 +15,16 @@ const catalogs = [
 
 export const PROMPTS: Record<PromptLang, PageCopy> = {
   fr: {
-    title: 'Bibliothèques de prompts pour la restauration | AI Chef Pro',
+    title: 'Agents IA : bibliothèques de prompts | AI Chef Pro',
     description:
-      'À quoi sert une bibliothèque de prompts en cuisine : fiches, carte, allergènes, contenu. Les catalogues publiés aujourd’hui sont l’espagnol (menu complet) et l’anglais (26 bibliothèques vérifiées).',
+      'Agents IA pour la cuisine : la suite en publie 75+. Cette page explique les prompts et ouvre les catalogues en espagnol et en anglais. Consultez-les.',
     keywords: 'bibliothèque de prompts restauration, prompts cuisine professionnelle, prompts IA restaurant, prompt chef',
     eyebrow: 'Prompts',
     h1: 'Des prompts de cuisine, pas un chatbot généraliste',
     lead: 'Une bibliothèque de prompts est un lot de consignes prêtes pour un agent précis : fiche technique, carte, allergènes, contenu.',
     answerLabel: 'Réponse directe',
     answer:
-      'Les deux catalogues que vous pouvez lire sans vous connecter sont la bibliothèque espagnole (menu complet de l’espace espagnol) et la bibliothèque anglaise (26 bibliothèques dont les noms ont été vérifiés). Cette page en français n’invente pas une troisième liste d’agents. Après connexion sur frapp.aichef.pro, vous voyez les agents que cet espace contient aujourd’hui. La page tarifs française indique plus de 50 agents.',
+      'Les deux catalogues que vous pouvez lire sans vous connecter sont la bibliothèque espagnole (menu complet de l’espace espagnol) et la bibliothèque anglaise (26 bibliothèques dont les noms ont été vérifiés). Cette page en français n’invente pas une troisième liste d’agents. Après connexion sur frapp.aichef.pro, vous voyez les agents que cet espace contient aujourd’hui. La page tarifs française indique 75+ agents.',
     homeLabel: 'Accueil',
     crumb: 'Bibliothèques de prompts',
     faqHeading: 'Questions',
@@ -71,16 +71,16 @@ export const PROMPTS: Record<PromptLang, PageCopy> = {
     ctaSecondary: 'Voir les tarifs',
   },
   de: {
-    title: 'Prompt-Bibliotheken für die Gastronomie | AI Chef Pro',
+    title: 'KI-Agenten: Prompt-Bibliotheken der Küche | AI Chef Pro',
     description:
-      'Wofür eine Prompt-Bibliothek in der Küche da ist: Kalkulation, Karte, Allergene, Inhalte. Veröffentlichte Kataloge: Spanisch (volles Menü) und Englisch (26 geprüfte Bibliotheken).',
+      'KI-Agenten mit Prompt-Bibliotheken für die Küche: die Suite nennt 75+. Diese Seite erklärt die Prompts und öffnet die Kataloge auf Spanisch und Englisch.',
     keywords: 'Prompt Bibliothek Gastronomie, Prompts Profiküche, KI Prompts Restaurant, Prompt Koch',
     eyebrow: 'Prompts',
     h1: 'Küchen-Prompts, kein allgemeiner Chatbot',
     lead: 'Eine Prompt-Bibliothek ist ein Satz fertiger Anweisungen für einen bestimmten Agenten: Kalkulation, Karte, Allergene, Inhalte.',
     answerLabel: 'Kurzantwort',
     answer:
-      'Die zwei Kataloge, die Sie ohne Anmeldung lesen können, sind die spanische Bibliothek (volles Menü des spanischen Arbeitsbereichs) und die englische Bibliothek (26 Bibliotheken, deren Namen einzeln geprüft wurden). Diese deutsche Seite erfindet keine dritte Agentenliste. Nach der Anmeldung in deapp.aichef.pro sehen Sie die Agenten, die dieser Bereich heute enthält. Die deutsche Preisseite nennt mehr als 50 Agenten.',
+      'Die zwei Kataloge, die Sie ohne Anmeldung lesen können, sind die spanische Bibliothek (volles Menü des spanischen Arbeitsbereichs) und die englische Bibliothek (26 Bibliotheken, deren Namen einzeln geprüft wurden). Diese deutsche Seite erfindet keine dritte Agentenliste. Nach der Anmeldung in deapp.aichef.pro sehen Sie die Agenten, die dieser Bereich heute enthält. Die deutsche Preisseite nennt 75+ Agenten.',
     homeLabel: 'Startseite',
     crumb: 'Prompt-Bibliotheken',
     faqHeading: 'Fragen',
@@ -127,16 +127,16 @@ export const PROMPTS: Record<PromptLang, PageCopy> = {
     ctaSecondary: 'Preise ansehen',
   },
   it: {
-    title: 'Librerie di prompt per la ristorazione | AI Chef Pro',
+    title: 'Agenti IA: librerie di prompt per la cucina | AI Chef Pro',
     description:
-      'A che serve una libreria di prompt in cucina: schede, menu, allergeni, contenuti. I cataloghi pubblicati oggi sono lo spagnolo (menu completo) e l’inglese (26 librerie verificate).',
+      'Agenti IA con librerie di prompt pronte da copiare: la suite pubblica 75+. Questa pagina spiega i prompt e apre i cataloghi in spagnolo e in inglese.',
     keywords: 'libreria di prompt ristorazione, prompt cucina professionale, prompt IA ristorante, prompt chef',
     eyebrow: 'Prompt',
     h1: 'Prompt di cucina, non un chatbot generico',
     lead: 'Una libreria di prompt è un set di consegne pronte per un agente preciso: scheda costo, menu, allergeni, contenuti.',
     answerLabel: 'Risposta diretta',
     answer:
-      'I due cataloghi che puoi leggere senza entrare sono la libreria spagnola (menu completo dello spazio spagnolo) e la libreria inglese (26 librerie i cui nomi sono stati verificati uno per uno). Questa pagina italiana non inventa una terza lista di agenti. Dopo l’accesso su itapp.aichef.pro vedi gli agenti che quello spazio contiene oggi. La pagina prezzi italiana indica più di 50 agenti.',
+      'I due cataloghi che puoi leggere senza entrare sono la libreria spagnola (menu completo dello spazio spagnolo) e la libreria inglese (26 librerie i cui nomi sono stati verificati uno per uno). Questa pagina italiana non inventa una terza lista di agenti. Dopo l’accesso su itapp.aichef.pro vedi gli agenti che quello spazio contiene oggi. La pagina prezzi italiana indica 75+ agenti.',
     homeLabel: 'Home',
     crumb: 'Librerie di prompt',
     faqHeading: 'Domande',
@@ -183,16 +183,16 @@ export const PROMPTS: Record<PromptLang, PageCopy> = {
     ctaSecondary: 'Vedi i prezzi',
   },
   pt: {
-    title: 'Bibliotecas de prompts para a restauração | AI Chef Pro',
+    title: 'Agentes de IA: bibliotecas de prompts | AI Chef Pro',
     description:
-      'Para que serve uma biblioteca de prompts na cozinha: fichas, carta, alergénios, conteúdo. Os catálogos publicados hoje são o espanhol (menu completo) e o inglês (26 bibliotecas verificadas).',
+      'Agentes de IA com bibliotecas de prompts prontas a copiar: a suite publica 75+. Esta página explica os prompts e abre os catálogos em espanhol e inglês.',
     keywords: 'biblioteca de prompts restauração, prompts cozinha profissional, prompts IA restaurante, prompt chef',
     eyebrow: 'Prompts',
     h1: 'Prompts de cozinha, não um chatbot genérico',
     lead: 'Uma biblioteca de prompts é um conjunto de instruções prontas para um agente concreto: ficha técnica, carta, alergénios, conteúdo.',
     answerLabel: 'Resposta direta',
     answer:
-      'Os dois catálogos que podes ler sem entrar são a biblioteca espanhola (menu completo do espaço espanhol) e a biblioteca inglesa (26 bibliotecas cujos nomes foram verificados um a um). Esta página em português não inventa uma terceira lista de agentes. Depois de entrares em ptapp.aichef.pro, vês os agentes que esse espaço tem hoje. A página de preços em português indica mais de 50 agentes.',
+      'Os dois catálogos que podes ler sem entrar são a biblioteca espanhola (menu completo do espaço espanhol) e a biblioteca inglesa (26 bibliotecas cujos nomes foram verificados um a um). Esta página em português não inventa uma terceira lista de agentes. Depois de entrares em ptapp.aichef.pro, vês os agentes que esse espaço tem hoje. A página de preços em português indica 75+ agentes.',
     homeLabel: 'Início',
     crumb: 'Bibliotecas de prompts',
     faqHeading: 'Perguntas',
@@ -239,16 +239,16 @@ export const PROMPTS: Record<PromptLang, PageCopy> = {
     ctaSecondary: 'Ver preços',
   },
   nl: {
-    title: 'Promptbibliotheken voor de horeca | AI Chef Pro',
+    title: 'AI-agenten: promptbibliotheken voor de keuken | AI Chef Pro',
     description:
-      'Waar een promptbibliotheek in de keuken voor dient: kostprijs, kaart, allergenen, content. Gepubliceerde catalogi: Spaans (volledig menu) en Engels (26 gecontroleerde bibliotheken).',
+      'AI-agenten met promptbibliotheken voor de keuken: de suite noemt 75+. Deze pagina legt de prompts uit en opent de catalogi in het Spaans en het Engels.',
     keywords: 'promptbibliotheek horeca, prompts professionele keuken, AI prompts restaurant, prompt kok',
     eyebrow: 'Prompts',
     h1: 'Keukenprompts, geen algemene chatbot',
     lead: 'Een promptbibliotheek is een set kant-en-klare opdrachten voor één agent: kostprijs, kaart, allergenen, content.',
     answerLabel: 'Kort antwoord',
     answer:
-      'De twee catalogi die je zonder inloggen kunt lezen, zijn de Spaanse bibliotheek (het volledige menu van de Spaanse werkruimte) en de Engelse bibliotheek (26 bibliotheken waarvan de namen één voor één zijn gecontroleerd). Deze Nederlandse pagina verzint geen derde agentenlijst. Na het inloggen op nlapp.aichef.pro zie je de agenten die die werkruimte vandaag bevat. De Nederlandse prijspagina noemt meer dan 50 agenten.',
+      'De twee catalogi die je zonder inloggen kunt lezen, zijn de Spaanse bibliotheek (het volledige menu van de Spaanse werkruimte) en de Engelse bibliotheek (26 bibliotheken waarvan de namen één voor één zijn gecontroleerd). Deze Nederlandse pagina verzint geen derde agentenlijst. Na het inloggen op nlapp.aichef.pro zie je de agenten die die werkruimte vandaag bevat. De Nederlandse prijspagina noemt 75+ agenten.',
     homeLabel: 'Home',
     crumb: 'Promptbibliotheken',
     faqHeading: 'Vragen',

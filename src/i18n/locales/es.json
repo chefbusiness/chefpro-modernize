@@ -20,7 +20,7 @@
     "precios": "Precios",
     "integraciones": "Integraciones",
     "reducir_costes": "Reducir Costes con IA",
-    "herramientas_ia": "Herramientas IA para Restaurantes",
+    "herramientas_ia": "Agentes de IA para restaurantes",
     "carta_menu": "Carta y Menú con IA",
     "marketing_ia": "Marketing con IA",
     "chatgpt_ia": "ChatGPT para Restaurantes",
@@ -43,8 +43,8 @@
     "title_prefix": "Transforma tu",
     "title_suffix": "con",
     "title_brand": "AI Chef Pro",
-    "subtitle": "75+ Herramientas de IA Especializadas para Chefs. Desde Creatividad Culinaria hasta Marketing Digital.",
-    "description": "Suite de Herramientas y Agentes de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.",
+    "subtitle": "75+ agentes de IA para chefs. De la creatividad culinaria al marketing digital.",
+    "description": "Suite de agentes de IA entrenados para el día a día de chefs, cocineros y profesionales de la hostelería.",
     "rating": "Calificación: 5 estrellas",
     "business_types": [
       "Gestión",
@@ -67,7 +67,7 @@
     "v2_social_count": "recetas, procesos y soluciones generadas",
     "v2_title_prefix": "Crea, gestiona y haz crecer tu",
     "v2_title_suffix": "con",
-    "v2_subtitle": "Automatiza recetas, food cost, mermas, cartas y marketing con más de 75 agentes de IA diseñados para restaurantes y negocios de hostelería.",
+    "v2_subtitle": "Automatiza recetas, food cost, mermas, cartas y marketing con 75+ agentes de IA diseñados para restaurantes y negocios de hostelería.",
     "v2_description": "Entrenado con los flujos de trabajo reales de jefes de cocina, pasteleros, panaderos y gestores de hostelería, no con marketing genérico de restauración.",
     "v2_stat_agents": "agentes de IA",
     "v2_stat_tools": "herramientas de negocio y costes",
@@ -578,7 +578,7 @@
         "uses": "10.000/mes",
         "description": "Ideal para ayudantes de cocina, cocineros y jefes de partida",
         "features": {
-          "0": "75+ agentes y herramientas incluidos",
+          "0": "75+ agentes de IA incluidos",
           "1": "10.000 créditos mensuales",
           "2": "Recetarios mundiales",
           "3": "Soporte por email"
@@ -590,7 +590,7 @@
         "v2_hint": "≈ un mes de recetas, escandallos y cartas para una partida",
         "v2_cta": "Empezar como Miembro",
         "v2_features": [
-          "75+ agentes y herramientas incluidos",
+          "75+ agentes de IA incluidos",
           "10.000 créditos mensuales",
           "Más de 25 recetarios del mundo",
           "Soporte por email"
@@ -604,7 +604,7 @@
         "uses": "85.000/mes",
         "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes",
         "features": {
-          "0": "75+ agentes y herramientas incluidos",
+          "0": "75+ agentes de IA incluidos",
           "1": "85.000 créditos mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -624,7 +624,7 @@
         "uses": "175.000/mes",
         "description": "Para empresarios gastronómicos y cadenas de restaurantes",
         "features": {
-          "0": "75+ agentes y herramientas incluidos",
+          "0": "75+ agentes de IA incluidos",
           "1": "175.000 créditos mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -644,7 +644,7 @@
         "uses": "∞",
         "description": "Créditos ilimitados mensuales para profesionales exigentes",
         "features": {
-          "0": "75+ agentes y herramientas incluidos",
+          "0": "75+ agentes de IA incluidos",
           "1": "Créditos ilimitados mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -668,7 +668,7 @@
         "discount": "Ahorra 2 meses",
         "description": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos",
         "features": {
-          "0": "75+ agentes y herramientas incluidos",
+          "0": "75+ agentes de IA incluidos",
           "1": "Créditos ilimitados durante todo el año",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -694,7 +694,7 @@
   },
   "features": {
     "title": "Características Principales",
-    "description": "Suite completa de herramientas y agentes IA para chefs y cocineros que desean acelerar y optimizar su trabajo diario en cocinas profesionales y liberar su creatividad.",
+    "description": "Suite de 75+ agentes de IA para chefs que quieren acelerar el trabajo diario en cocina.",
     "ai_assistant": "Modelo de Asistente Culinario IA",
     "ai_assistant_desc": "Recomendaciones personalizadas de recetas y técnicas adaptadas a tus preferencias culinarias. Más de 20 recetarios.",
     "food_pairing": "Food Pairing y Sustituciones de Ingredientes",
@@ -727,7 +727,7 @@
     "q2": "¿Puedo usar AI Chef Pro si soy principiante?",
     "a2": "¡Absolutamente! AI Chef Pro está diseñado para profesionales de todos los niveles. Nuestras herramientas incluyen explicaciones detalladas, técnicas paso a paso y coaching que te ayudarán a desarrollar tus habilidades gastronómicas.",
     "q3": "¿Cómo funciona el plan AI Chef Miembro?",
-    "a3": "El plan AI Chef Miembro cuesta 10 € al mes e incluye 10.000 créditos mensuales con acceso a las 75+ herramientas. Cuando necesites más, puedes pasar a AI Chef Premium Pro (25 €/mes, 85.000 créditos) o superior. Sin permanencia: cambias de plan o cancelas cuando quieras.",
+    "a3": "El plan AI Chef Miembro cuesta 10 € al mes e incluye 10.000 créditos mensuales con acceso a los 75+ agentes de IA. Cuando necesites más, puedes pasar a AI Chef Premium Pro (25 €/mes, 85.000 créditos) o superior. Sin permanencia: cambias de plan o cancelas cuando quieras.",
     "q4": "¿Las recetas se adaptan a diferentes tamaños de porción?",
     "a4": "Sí, todas nuestras herramientas incluyen cálculo automático de porciones. Puedes ajustar cualquier receta para 1 persona o para 1000 comensales, y nuestro sistema calculará automáticamente las cantidades exactas de cada ingrediente.",
     "q5": "¿Incluye soporte para restricciones alimentarias?",
@@ -761,7 +761,7 @@
     "nav_software_gestion": "Software Gestión Cocina",
     "nav_recetas": "Recetas con IA",
     "nav_escandallos": "Escandallos con IA",
-    "nav_ai_tools": "Herramientas IA",
+    "nav_ai_tools": "Agentes de IA",
     "nav_free_tools": "Herramientas Gratuitas",
     "contact_title": "Contacto",
     "plans_button": "Ver Planes",
@@ -784,7 +784,7 @@
     "glosario_ia": "Glosario IA",
     "glosario_culinario": "Glosario Científico Culinario",
     "roadmap": "Roadmap AI Chef Pro",
-    "app_tools": "75+ Herramientas en Agente IA",
+    "app_tools": "75+ agentes de IA",
     "app_login": "Iniciar Sesión",
     "free_tools_hub": "Herramientas Gratuitas",
     "mentoria_online": "Mentoría Online",
@@ -1105,16 +1105,16 @@
     }
   },
   "seo": {
-    "title": "AI Chef Pro: 75+ Herramientas de IA para Chefs y Restaurantes",
-    "description": "Suite de inteligencia artificial para chefs y restaurantes. 75+ herramientas: recetas con IA, food cost, escandallos, marketing gastronomico. Empieza hoy.",
-    "keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, inteligencia artificial hosteleria, herramientas ia chef, ia para chefs, software restaurante ia, ia cocina profesional, agentes IA ia gastronomia, chef pro, aichef, apps IA cocina, aplicaciones IA hostelería, apps inteligencia artificial restaurante",
-    "og_image_alt": "AI Chef Pro - Suite de 75+ Herramientas de IA para Chefs Profesionales"
+    "title": "Agentes de IA para chefs y restaurantes | AI Chef Pro",
+    "description": "Agentes de IA para chefs y restaurantes: 75+ especialistas en food cost, escandallos, recetas y carta. Empieza hoy desde 10 € al mes, sin permanencia.",
+    "keywords": "agentes de ia para chefs, agentes de ia para restaurantes, ia hostelería, food cost ia, escandallos ia, ai chef pro",
+    "og_image_alt": "Agentes de IA para chefs y restaurantes | AI Chef Pro"
   },
   "pages": {
     "index": {
-      "seo_title": "AI Chef Pro: 75+ Herramientas de IA para Chefs y Restaurantes",
-      "seo_description": "Suite de inteligencia artificial para chefs y restaurantes. 75+ herramientas: recetas con IA, food cost, escandallos, marketing gastronomico. Empieza hoy.",
-      "seo_keywords": "ai chef pro, chef ia, ia para restaurantes, inteligencia artificial hosteleria, herramientas ia chef, ia para chefs, ia cocina profesional, software restaurante ia, ai chef"
+      "seo_title": "Agentes de IA para chefs y restaurantes | AI Chef Pro",
+      "seo_description": "Agentes de IA para chefs y restaurantes: 75+ especialistas en food cost, escandallos, recetas y carta. Empieza hoy desde 10 € al mes, sin permanencia.",
+      "seo_keywords": "agentes de ia para chefs, agentes de ia para restaurantes, ia hostelería, food cost ia, escandallos ia, ai chef pro"
     },
     "mentoria_online": {
       "seo_title": "Mentoría Online para Chefs - Consultoría IA Gastronómica | AI Chef Pro",
@@ -1128,7 +1128,7 @@
       "heading": "Aviso Legal",
       "content_paragraphs": [
         "<h2>1. Información General</h2><p><strong>Titular del Sitio Web:</strong> John Guerrero</p><p><strong>Denominación Comercial:</strong> AI Chef Pro</p><p><strong>Email de Contacto:</strong> info@aichef.pro</p><p><strong>Teléfono:</strong> +34 744 717 942</p>",
-        "<h2>2. Objeto y Actividad</h2><p>AI Chef Pro es una plataforma de inteligencia artificial especializada en gastronomía que ofrece herramientas y agentes IA para profesionales de la cocina. Nuestros servicios incluyen más de 55 agentes IA especializados que cubren desde creatividad culinaria hasta gestión empresarial gastronómica.</p>",
+        "<h2>2. Objeto y Actividad</h2><p>AI Chef Pro es una plataforma de inteligencia artificial especializada en gastronomía que ofrece agentes de IA para profesionales de la cocina. Nuestros servicios incluyen 75+ agentes de IA que cubren desde creatividad culinaria hasta gestión empresarial gastronómica.</p>",
         "<h2>3. Propiedad Intelectual</h2><p>Todos los contenidos, marcas, logos, diseños, códigos fuente, bases de datos y cualquier otro elemento que forme parte de AI Chef Pro están protegidos por las leyes de propiedad intelectual e industrial. Queda prohibida la reproducción, distribución o comunicación pública sin autorización expresa.</p>",
         "<h2>4. Responsabilidad de Contenidos</h2><p>AI Chef Pro se reserva el derecho de modificar, actualizar o eliminar los contenidos sin previo aviso. No garantizamos la disponibilidad, continuidad o infalibilidad del servicio, aunque ponemos todos los medios técnicos a nuestro alcance para evitar interrupciones.</p>",
         "<h2>5. Enlaces Externos</h2><p>Nuestro sitio web puede contener enlaces a sitios web de terceros. AI Chef Pro no se hace responsable del contenido, políticas de privacidad o prácticas de estos sitios externos.</p>",
@@ -1173,7 +1173,7 @@
       "heading": "Términos y Condiciones",
       "content_paragraphs": [
         "<h2>1. Aceptación de los Términos</h2><p>Al acceder y utilizar AI Chef Pro, aceptas estos términos y condiciones. Si no estás de acuerdo con alguna parte de estos términos, no debes usar nuestros servicios de inteligencia artificial culinaria.</p>",
-        "<h2>2. Descripción del Servicio</h2><p>AI Chef Pro es una plataforma de inteligencia artificial especializada en gastronomía que ofrece más de 55 herramientas para profesionales de la cocina, incluyendo creatividad culinaria, recetarios mundiales y gestión empresarial.</p>",
+        "<h2>2. Descripción del Servicio</h2><p>AI Chef Pro es una plataforma de inteligencia artificial especializada en gastronomía que ofrece 75+ agentes de IA para profesionales de la cocina, incluyendo creatividad culinaria, recetarios mundiales y gestión empresarial.</p>",
         "<h2>3. Registro y Cuenta de Usuario</h2><p>Para acceder a ciertas funcionalidades, debes crear una cuenta proporcionando información precisa y actualizada. Eres responsable de mantener la confidencialidad de tu cuenta y contraseña.</p>",
         "<h2>4. Uso Permitido</h2><p>Puedes utilizar AI Chef Pro para fines profesionales gastronómicos legítimos. No está permitido el uso para actividades ilegales, spam, o cualquier actividad que pueda dañar nuestros servicios o a otros usuarios.</p>",
         "<h2>5. Propiedad Intelectual</h2><p>Todos los contenidos, marcas, logos y tecnologías de AI Chef Pro son propiedad de sus titulares. Las recetas y contenidos generados por IA pueden ser utilizados por el usuario según su suscripción.</p>",
@@ -1185,9 +1185,9 @@
       ]
     },
     "services": {
-      "seo_title": "Servicios - AI Chef Pro | Soluciones de IA para Gastronomía",
-      "seo_description": "Descubre todos los servicios de AI Chef Pro. Suite completa de herramientas de IA para profesionales gastronómicos.",
-      "seo_keywords": "servicios ai chef pro, soluciones gastronomía, herramientas ia cocina"
+      "seo_title": "Servicios de agentes de IA para hostelería | AI Chef Pro",
+      "seo_description": "Servicios de agentes de IA para hostelería: mentoría, formación presencial y una suite de 75+. Mira qué incluye y empieza desde 10 € al mes.",
+      "seo_keywords": "servicios de agentes de ia, agentes de ia hostelería, mentoría chef, formación presencial ia, ai chef pro"
     }
   },
   "alt_texts": {
@@ -1371,15 +1371,15 @@
   },
   "landingRestaurantes": {
     "seo": {
-      "title": "Herramientas de IA para Restaurantes | AI Chef Pro",
-      "description": "75+ herramientas de inteligencia artificial para dueños de restaurantes. Controla costes, diseña carta, gestiona alérgenos y automatiza el marketing. Empieza hoy.",
-      "keywords": "herramientas ia restaurante, inteligencia artificial restaurante, software ia hostelería, ia para dueños de restaurante, gestión restaurante con ia, food cost ia, carta digital ia, marketing restaurante ia",
+      "title": "Agentes de IA para restaurantes: 75+ | AI Chef Pro",
+      "description": "Agentes de IA para restaurantes: 75+ especialistas en costes, carta, alérgenos y marketing. Sin permanencia. Empieza hoy desde 10 € al mes y compara planes.",
+      "keywords": "agentes de ia para restaurantes, agentes ia hostelería, food cost ia, carta restaurante ia, ai chef pro",
       "url_slug": "herramientas-ia-para-restaurantes"
     },
     "hero": {
-      "badge": "75+ herramientas especializadas en hostelería",
-      "h1": "Herramientas de IA para Restaurantes",
-      "subtitle": "La suite de inteligencia artificial diseñada para dueños de restaurantes, bares y cafeterías. Sin conocimientos técnicos. Sin curva de aprendizaje.",
+      "badge": "75+ agentes de IA para hostelería",
+      "h1": "Agentes de IA para restaurantes",
+      "subtitle": "75+ agentes de IA para restaurantes, bares y cafeterías. Sin conocimientos técnicos.",
       "tagline": "Controla costes · Diseña tu carta · Automatiza el marketing · Reduce mermas",
       "cta_primary": "Empezar ahora",
       "cta_secondary": "Ver planes y precios",
@@ -1400,7 +1400,7 @@
       },
       {
         "metric": "75+",
-        "label": "herramientas especializadas en gastronomía"
+        "label": "agentes de IA para hostelería"
       }
     ],
     "tools_section": {
@@ -1508,7 +1508,7 @@
     "faq": [
       {
         "question": "¿Qué herramientas de IA son útiles para un restaurante?",
-        "answer": "Las herramientas de IA más útiles para restaurantes incluyen: generadores de carta y menú digital, calculadoras de coste de plato, gestores de alérgenos, herramientas de marketing gastronómico para redes sociales, planificadores de compras y control de mermas. AI Chef Pro agrupa 75+ de estas herramientas especializadas en una sola suite."
+        "answer": "Las herramientas de IA más útiles para restaurantes incluyen: generadores de carta y menú digital, calculadoras de coste de plato, gestores de alérgenos, herramientas de marketing gastronómico para redes sociales, planificadores de compras y control de mermas. AI Chef Pro reúne 75+ agentes de IA en una sola suite."
       },
       {
         "question": "¿Puede la inteligencia artificial ayudar a reducir costes en un restaurante?",
@@ -1525,7 +1525,7 @@
     ],
     "cta_section": {
       "title": "Empieza hoy con las herramientas de IA para tu restaurante",
-      "subtitle": "Sin permanencia · Cancela cuando quieras. Acceso inmediato a 75+ herramientas especializadas en gastronomía y hostelería.",
+      "subtitle": "Sin permanencia · Cancela cuando quieras. Acceso inmediato a 75+ agentes de IA en gastronomía y hostelería.",
       "primary": "Probar ahora",
       "secondary": "Ver todos los planes"
     },
@@ -1732,7 +1732,7 @@
       },
       {
         "metric": "75+",
-        "label": "herramientas de marketing gastronómico"
+        "label": "agentes de IA"
       }
     ],
     "tools_section": {
@@ -1886,7 +1886,7 @@
     "results": [
       {
         "metric": "75+",
-        "label": "herramientas entrenadas en gastronomía"
+        "label": "agentes de IA"
       },
       {
         "metric": "10x",
@@ -2098,7 +2098,7 @@
       },
       {
         "metric": "75+",
-        "label": "Herramientas de cocina IA"
+        "label": "Agentes de IA"
       },
       {
         "metric": "30%",
@@ -2119,7 +2119,7 @@
         {
           "feature": "Gestión de recetas",
           "other": "Ficheros Word o papel",
-          "aichef": "75+ herramientas IA especializadas"
+          "aichef": "75+ agentes de IA"
         },
         {
           "feature": "Control de alérgenos",
@@ -2248,7 +2248,7 @@
     "faq": [
       {
         "question": "¿Qué es un software de gestión de cocina con IA?",
-        "answer": "Es una plataforma que usa inteligencia artificial para automatizar las tareas de gestión de cocina: escandallos, inventario, recetas, alérgenos y análisis de rentabilidad. AI Chef Pro integra 75+ herramientas especializadas en hostelería."
+        "answer": "Es una plataforma que usa inteligencia artificial para automatizar las tareas de gestión de cocina: escandallos, inventario, recetas, alérgenos y análisis de rentabilidad. AI Chef Pro integra 75+ agentes de IA en hostelería."
       },
       {
         "question": "¿Puedo gestionar mis escandallos con AI Chef Pro?",
@@ -2301,7 +2301,7 @@
       },
       {
         "metric": "75+",
-        "label": "Herramientas especializadas"
+        "label": "Agentes de IA"
       }
     ],
     "comparison": {
@@ -2500,7 +2500,7 @@
       },
       {
         "metric": "75+",
-        "label": "Herramientas especializadas"
+        "label": "Agentes de IA"
       }
     ],
     "comparison": {
@@ -2670,9 +2670,9 @@
   },
   "toolHub": {
     "seo": {
-      "title": "8 Herramientas Gratuitas de IA para Restaurantes | AI Chef Pro",
-      "description": "Herramientas gratuitas de IA para restaurantes: calculadora food cost, simulador de rentabilidad, detector alergenos, generador de menu y mas. Sin registro.",
-      "keywords": "herramientas gratuitas restaurante, calculadora food cost gratis, ai food cost calculator, simulador rentabilidad restaurante, software food cost gratis, herramientas ia restaurante gratis"
+      "title": "8 herramientas gratis para tu restaurante | AI Chef Pro",
+      "description": "Herramientas gratis para tu restaurante: food cost, alérgenos y rentabilidad, sin registro. La suite de pago reúne 75+ agentes de IA. Pruébala hoy.",
+      "keywords": "herramientas gratis restaurante, calculadora food cost gratis, simulador rentabilidad, 75+ agentes de ia, ai chef pro"
     },
     "breadcrumb": "Herramientas Gratuitas",
     "other_tools_title": "Otras herramientas gratuitas",
@@ -2746,7 +2746,7 @@
     },
     "cta": {
       "title": "¿Necesitas más potencia?",
-      "subtitle": "Estas herramientas son solo una muestra de las 75+ funciones de IA disponibles en AI Chef Pro Premium.",
+      "subtitle": "Estas calculadoras son solo una muestra de los 75+ agentes de IA de AI Chef Pro.",
       "primary": "Ver Plan Premium",
       "secondary": "Empezar AI Chef Pro"
     }
@@ -3292,7 +3292,7 @@
     ],
     "cta_section": {
       "title": "Digitaliza tu restaurante con IA hoy mismo",
-      "subtitle": "AI Chef Pro es la suite de IA más completa para gastronomía: 75+ herramientas para gestionar tu restaurante con inteligencia artificial.",
+      "subtitle": "AI Chef Pro es la suite de IA más completa para gastronomía: 75+ agentes de IA para gestionar tu restaurante con inteligencia artificial.",
       "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     }
