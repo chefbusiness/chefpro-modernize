@@ -1,15 +1,38 @@
 ---
-title: "Qué es una emulsión y cómo se hace"
-description: "Una emulsión es la mezcla estable de dos líquidos que no se unen, como aceite y agua. Tipos (O/W y W/O), emulsionantes y por qué se corta una salsa emulsionada."
+title: "Emulsión: dos líquidos que no se mezclan, hasta que sí"
+description: "Una emulsión dispersa dos líquidos que no se mezclan, con yema, mostaza o lecitina. Mayonesa, holandesa y vinagreta no aguantan igual."
 pubDate: 2026-03-18
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/emulsion-featured.jpg
 imageAlt: "Emulsión: Concepto y Definición"
 lang: es
 wpId: 3234
+translations:
+  es: "emulsion-concepto-definicion"
+  en: "what-is-an-emulsion"
+  fr: "emulsion-culinaire"
+  de: "emulsion-kueche"
+  it: "emulsione"
+  pt: "emulsao"
+  nl: "emulsie"
+definedTerm:
+  name: "Emulsión"
+  description: "Una emulsión dispersa dos líquidos que no se mezclan, en gotas tan finas que el conjunto parece uno solo. Hace falta un emulsionante, como la yema, la mostaza o la lecitina, en la frontera de cada gota. Mayonesa, holandesa y vinagreta son emulsiones y no aguantan igual. Si se corta, las fases se han vuelto a separar."
+faq:
+  - q: "¿Por qué se corta una emulsión?"
+    a: "La emulsión se corta cuando se añade aceite demasiado rápido o en exceso, superando la capacidad del emulsionante para estabilizar las gotas. Las moléculas de aceite se aglomeran y se separan del agua."
+  - q: "¿Se puede hacer mayonesa sin huevo?"
+    a: "Sí. La mostaza sola puede emulsionar pequeñas cantidades. Para mayonesas veganas, el aquafaba (agua de garbanzos cocidos), la lecitina de soja o la goma xantana son excelentes sustitutos de la yema."
+  - q: "¿Cuánto dura una emulsión casera?"
+    a: "Las emulsiones con yema de huevo duran 2-3 días refrigeradas. Las emulsiones con mostaza o emulsionantes vegetales pueden durar hasta una semana. La estabilidad depende del pH, temperatura y sanidad."
+  - q: "¿Por qué usar mostaza en las emulsiones?"
+    a: "La mostaza contiene mucílagos (polisacáridos) que actúan como agentes emulsionantes secundarios. Además de su sabor, ayuda a estabilizar la emulsión y prevenir que se corte fácilmente."
+  - q: "¿Puedo emulsionar con aceite de oliva virgen extra?"
+    a: "Sí, pero con moderación. El AOVE tiene compuestos polifenólicos que pueden hacer la emulsión amarga si se usa en exceso. Se recomienda usar máximo 30% AOVE y 70% aceite neutro."
 ---
-
+<p data-glosario-lead="1">Una emulsión dispersa dos líquidos que no se mezclan, en gotas tan finas que el conjunto parece uno solo. Hace falta un emulsionante, como la yema, la mostaza o la lecitina, en la frontera de cada gota. Mayonesa, holandesa y vinagreta son emulsiones y no aguantan igual. Si se corta, las fases se han vuelto a separar.</p>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Agentes de IA para la partida</p><p class="mt-2 text-foreground">Esta técnica se trabaja con los agentes de IA de cocina, desde la ficha web de chef jefe de cocina. No abre un agente concreto de la app.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=emulsion-concepto-definicion">Ver la ficha de chef jefe de cocina</a></p></aside>
 <p>La <strong>emulsión</strong> es una de las técnicas culinarias fundamentales que transforma dos líquidos inmiscibles —como aceite y agua— en una preparación estable y homogénea. Este proceso, aparentemente mágico, es la base de salsas icónicas como la mayonesa, la holandesa y la bearnesa, además de innumerables preparaciones modernas de la gastronomía molecular.</p>
 <p>Comprender la ciencia detrás de las emulsiones permite al cocinero no solo crear salsas perfectas, sino también recuperar emulsiones cortadas, experimentar con nuevas texturas y elevar significativamente la calidad de sus preparaciones. En este artículo del glosario culinario de AI Chef Pro, exploraremos qué es exactamente una emulsión, los tipos que existen, los emulsionantes naturales disponibles, y cómo dominar esta técnica esencial.</p>
 <h2>¿Qué es una Emulsión?</h2>
@@ -177,13 +200,6 @@ wpId: 3234
 <p>Técnica que utiliza alginato y cloruro cálcico para crear esferas líquidas. Cada esfera es una emulsión encapsulada donde el líquido está rodeado por una membrana gelatinosa.</p>
 <h3>Gelificaciones</h3>
 <p>La combinación de emulsiones con gelificantes (agar-agar, goma xantana) permite crear texturas que mantienen la estabilidad de la emulsión mientras aportan cuerpo y estructura.</p>
-<h2>Preguntas Frecuentes</h2>
-<p><strong>¿Por qué se corta una emulsión?</strong><br /> La emulsión se corta cuando se añade aceite demasiado rápido o en exceso, superando la capacidad del emulsionante para estabilizar las gotas. Las moléculas de aceite se aglomeran y se separan del agua.</p>
-<p><strong>¿Se puede hacer mayonesa sin huevo?</strong><br /> Sí. La mostaza sola puede emulsionar pequeñas cantidades. Para mayonesas veganas, el aquafaba (agua de garbanzos cocidos), la lecitina de soja o la goma xantana son excelentes sustitutos de la yema.</p>
-<p><strong>¿Cuánto dura una emulsión casera?</strong><br /> Las emulsiones con yema de huevo duran 2-3 días refrigeradas. Las emulsiones con mostaza o emulsionantes vegetales pueden durar hasta una semana. La estabilidad depende del pH, temperatura y sanidad.</p>
-<p><strong>¿Por qué usar mostaza en las emulsiones?</strong><br /> La mostaza contiene mucílagos (polisacáridos) que actúan como agentes emulsionantes secundarios. Además de su sabor, ayuda a estabilizar la emulsión y prevenir que se corte fácilmente.</p>
-<p><strong>¿Puedo emulsionar con aceite de oliva virgen extra?</strong><br /> Sí, pero con moderación. El AOVE tiene compuestos polifenólicos que pueden hacer la emulsión amarga si se usa en exceso. Se recomienda usar máximo 30% AOVE y 70% aceite neutro.</p>
-
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=emulsion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
 
 <h2>Conclusión</h2>
@@ -196,3 +212,12 @@ wpId: 3234
 <p style="color: #888; font-size: 12px; margin-top: 10px;">     Desde 10 €/mes • 48.733+ recetas generadas   </p>
 </p></div>
 <p><strong>¿Listo para crear emulsiones perfectas?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=emulsion-concepto-definicion">AI Chef Pro</a>.</p>
+
+<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
+<p>Se busca emulsión, emulsion con una sola ese, emulsionar y salsa emulsionada. No es ligar con fécula. Mayonesa, holandesa y vinagreta son emulsiones, y no aguantan el mismo tiempo ni el mismo calor.</p>
+<ul>
+<li><a href="https://aichef.pro/blog/beurre-blanc">Qué es el beurre blanc</a></li>
+<li><a href="https://aichef.pro/blog/ligado-con-yema">El ligado con yema</a></li>
+<li><a href="https://aichef.pro/blog/mayonesa-concepto-y-definicion">La mayonesa</a></li>
+</ul>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Prueba los agentes de IA</p><p class="mt-2 text-foreground">Entra como invitado y pregunta por esta técnica. La puerta es la de invitado, no la ficha de un agente.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=emulsion-concepto-definicion">Entrar como invitado</a></p></aside>

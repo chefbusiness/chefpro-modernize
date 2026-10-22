@@ -1,3 +1,9 @@
+
+# Glosario tanda 1 (2026-10-22): el slug duplicado de Maillard
+# va al canónico. La regla del apex cubre el enlace interno viejo;
+# la del subdominio va antes de la genérica blog.aichef.pro/:slug.
+/blog/maillard-concepto-y-definicion-2   /blog/reaccion-de-maillard   301
+/blog/maillard-concepto-y-definicion-2/  /blog/reaccion-de-maillard   301
 # ── Productos digitales: entregables renombrados ──
 # Netlify resuelve por PRIMERA COINCIDENCIA, así que estas reglas van ANTES de
 # cualquier «# Genérica» del fichero. Los enlaces de descarga viajan dentro de
@@ -393,6 +399,8 @@ https://blog.aichef.pro/tecnicas-de-coccion-al-vacio-sous-vide https://aichef.pr
 https://blog.aichef.pro/chile-crisp-condimento-viral-2026 https://aichef.pro/blog/chili-crisp 301!
 
 # Genérica: cualquier post A/B/C conserva su slug bajo /blog
+https://blog.aichef.pro/maillard-concepto-y-definicion-2 https://aichef.pro/blog/reaccion-de-maillard 301!
+https://blog.aichef.pro/maillard-concepto-y-definicion-2/ https://aichef.pro/blog/reaccion-de-maillard 301!
 https://blog.aichef.pro/:slug https://aichef.pro/blog/:slug 301!
 # Catch-all (paths de 2+ segmentos no contemplados)
 https://blog.aichef.pro/* https://aichef.pro/blog 301!

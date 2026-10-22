@@ -42,7 +42,7 @@ interface Props {
 const AUTOR_URL = 'https://johnguerrero.es';
 
 const { post } = Astro.props;
-const { title, description, pubDate, modDate, image, imageAlt, faq, category, howto } = post.data;
+const { title, description, pubDate, modDate, image, imageAlt, faq, category, howto, definedTerm } = post.data;
 /**
  * Par de traducción (8C). Sin él, cada post declara solo su propio hreflang
  * —correcto mientras el blog EN fue contenido distinto—; con él, los dos se
@@ -268,7 +268,34 @@ const schemas: object[] = [
         })),
       }]
     : []),
+  ...(definedTerm
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'DefinedTerm',
+        name: definedTerm.name,
+        description: definedTerm.description,
+        inLanguage: lang,
+        url: `${SITE}${urlPath}`,
+        inDefinedTermSet: {
+          '@type': 'DefinedTermSet',
+          name: cat?.name ?? 'Glosario',
+          url: `${SITE}${cat ? categoryPath(cat.slug, lang) : blogBase(lang)}`,
+        },
+      }]
+    : []),
 ];
+
+const HREFLANG_LANGS = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'] as const;
+const altPath = (l: (typeof HREFLANG_LANGS)[number], s: string) =>
+  l === 'es' ? `/blog/${s}` : `/${l}/blog/${s}`;
+const pairedLangs = par
+  ? HREFLANG_LANGS.filter((l) => l === lang || Boolean(par[l]))
+  : [lang];
+const alternates = par
+  ? Object.fromEntries(
+      pairedLangs.map((l) => [l, altPath(l, l === lang ? slug : (par[l] as string))])
+    )
+  : undefined;
 ---
 
 <BaseLayout
@@ -276,13 +303,8 @@ const schemas: object[] = [
   description={description}
   lang={lang}
   basePath={canonicalPath}
-  locales={par ? (['es', 'en'] as const).filter((l) => l === lang || par[l]) : [lang]}
-  alternates={par
-    ? {
-        ...(par.es || lang === 'es' ? { es: `/blog/${par.es ?? slug}` } : {}),
-        ...(par.en || lang === 'en' ? { en: `/en/blog/${par.en ?? slug}` } : {}),
-      }
-    : undefined}
+  locales={pairedLangs}
+  alternates={alternates}
   ogImage={image ? `${SITE}${image}` : undefined}
 >
   <Fragment slot="head">

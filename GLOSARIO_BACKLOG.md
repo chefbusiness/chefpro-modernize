@@ -1,0 +1,3893 @@
+# Glosario gastronómico — backlog maestro
+
+Programa de 1 a 2 años. Cada ficha se escribe en los 7 idiomas del sitio, al mismo nivel, con el término que la gente busca en ese mercado. El español va delante. Esto es la tanda 1: el mapa, no las miles de fichas.
+
+Fuente de agentes: `scripts/astro-migration/fase8c-agentes/catalogo-hub.json`. Un agente del catálogo que no es oficio de cocina (`¿Quién Soy?`) no entra. Las áreas de sala, gestión, hostelería y la profesión van al final: no son agentes, y hacen falta igual.
+
+Estado **publicado**: ya existe un post de la categoría glosario en español. Estado **semilla**: propuesto, sin ficha todavía. No hay volúmenes inventados. Las impresiones de Search Console que cita el encargo de esta tanda (homogeneización 13.214 a posición 6,6; abocar/abocado por encima de 20.000 y sin cubrir bien «abocado»; hidrólisis, maceración, roux, demi-glace y Maillard) se tratan como dato del encargo, no como una medición nueva.
+
+Agentes: **84**. Términos semilla en agentes: **3400**. De esos, el cruce marca **405** como ya publicados en el glosario español.
+
+## Tanda 1 — lo que sale en esta entrega
+
+Quick wins en español (title, definición de 40–60 palabras, FAQ con DefinedTerm y FAQPage, variantes y CTA): homogeneización, abocar/abocado, hidrólisis, maceración, roux, demi-glace y reacción de Maillard. El slug `maillard-concepto-y-definicion-2` pasa con 301 a `/blog/reaccion-de-maillard`.
+
+Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en los 7 idiomas: beurre manié, napar, montar al burro, beurre blanc, gastrique, ligado con yema, glace de viande, fumet y papilla de almidón. Roux (en alemán, Mehlschwitze), emulsión y demi-glace se abren en los idiomas que aún no los tenían y apuntan al post español ya publicado.
+
+## Por agente
+
+### Creatividad Culinaria
+
+#### Cocina Creativa · librería `libreria-de-prompts-para-recetario-cocina-creativa-ai` — 21 publicados, 21 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- roux — publicado (`es/bechamel-concepto-y-definicion`)
+- beurre manié — publicado (`es/beurre-manie`)
+- napar — publicado (`es/napar-una-salsa`)
+- montar al burro — publicado (`es/montar-al-burro`)
+- beurre blanc — publicado (`es/beurre-blanc`)
+- demi-glace — publicado (`es/demi-glace-concepto-y-definicion`)
+- glace de viande — publicado (`es/glace-de-viande`)
+- fumet — publicado (`es/fumet-de-pescado`)
+- fondo oscuro — publicado (`es/fondo-oscuro-concepto-y-definicion`)
+- fondo blanco — publicado (`es/fondo-blanco-concepto-y-definicion`)
+- emulsión — publicado (`es/emulsion-concepto-definicion`)
+- ligado con yema — publicado (`es/ligado-con-yema`)
+- gastrique — publicado (`es/gastrique`)
+- deglasar — publicado (`es/deglasear-concepto-definicion`)
+- reducción — publicado (`es/reduccion-concepto-definicion`)
+- reacción de Maillard — publicado (`es/reaccion-de-maillard`)
+- caramelización — semilla
+- hidrólisis — publicado (`es/hidrolisis-concepto-definicion`)
+- maceración — publicado (`es/maceracion-concepto-definicion`)
+- salmuera — semilla
+- confitar — semilla
+- brasear — semilla
+- escalfar — semilla
+- sofrito — semilla
+- mirepoix — semilla
+- bouquet garni — semilla
+- court-bouillon — semilla
+
+#### Pastelería Creativa · librería `libreria-de-prompts-para-pasteleria-creativa-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- merengue — semilla
+- pata de gato — semilla
+- pâte à bombe — semilla
+- cremeux — semilla
+- ganache — semilla
+- praliné — semilla
+- feuilletage — semilla
+- detrempe — semilla
+- touraje — semilla
+- puff pastry — semilla
+- bizcocho — semilla
+- genovesa — semilla
+- joconde — semilla
+- dacquoise — semilla
+- sablée — semilla
+- crema pastelera — semilla
+- crema diplomática — semilla
+- mousseline — semilla
+- chantilly — semilla
+- baumé — semilla
+- punto de bola — semilla
+- punto de hebra — semilla
+- invertir azúcar — semilla
+- gelatina — semilla
+- pectina — semilla
+- agar — publicado (`es/papilla-de-almidon`)
+- isomalt — semilla
+
+#### Chocolatería Creativa · librería `libreria-de-prompts-para-chocolateria-creativa-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- atemperado — semilla
+- curva de temperado — semilla
+- cristal V — semilla
+- manteca de cacao — semilla
+- cobertura — semilla
+- porcentaje de cacao — semilla
+- ganache — semilla
+- praliné — semilla
+- gianduja — semilla
+- tableta — semilla
+- bonbón — semilla
+- corteza — semilla
+- molde de policarbonato — semilla
+- desmoldeo — semilla
+- bloom de grasa — semilla
+- bloom de azúcar — semilla
+- viscosidad — semilla
+- fluidez — semilla
+- conchado — semilla
+- refinado — semilla
+- nibs — semilla
+- licor de cacao — semilla
+- cacao en polvo — semilla
+- emulsión de ganache — semilla
+- lecitina — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
+- vainilla — semilla
+- inclusión — semilla
+
+#### Heladería Creativa · librería `libreria-de-prompts-para-heladeria-creativa-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- mix de helado — semilla
+- sólidos totales — semilla
+- sólidos lácteos — semilla
+- grasa láctea — semilla
+- poder anticongelante — semilla
+- PAC — semilla
+- POD — semilla
+- overrun — semilla
+- mantecatura — semilla
+- maduración del mix — semilla
+- homogeneización — publicado (`es/homogeneizacion-concepto-definicion`)
+- pasteurización del mix — semilla
+- estabilizante — semilla
+- emulsionante — semilla
+- neutro — semilla
+- sacarosa — semilla
+- dextrosa — semilla
+- azúcar invertido — semilla
+- maltodextrina — semilla
+- fibra — semilla
+- proteína láctea — semilla
+- sorbete — semilla
+- sherbet — semilla
+- granizado — semilla
+- semifrío — semilla
+- parfait — semilla
+- vitrina de helado — semilla
+
+#### Panadería Creativa · librería `libreria-de-prompts-para-panaderia-creativa-ai` — 8 publicados, 34 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- masa madre — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- prefermento — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- poolish — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- biga — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- esponja — semilla
+- autólisis — semilla
+- hidratación — semilla
+- amasado — semilla
+- desarrollo del gluten — semilla
+- ventana de gluten — semilla
+- pliegue — semilla
+- fermentación en bloque — semilla
+- puntado — semilla
+- formado — semilla
+- banneton — semilla
+- greñado — semilla
+- vapor de horno — semilla
+- resorte de horno — semilla
+- miga — semilla
+- cortezas — semilla
+- gelatinización del almidón — semilla
+- reacción de Maillard — publicado (`es/reaccion-de-maillard`)
+- harina de fuerza — semilla
+- cenizas — semilla
+- W del alveograma — semilla
+- P/L — semilla
+- centeno — semilla
+
+#### Fermentus Con AI+ · librería `libreria-de-prompts-para-fermentus-ai` — 6 publicados, 36 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- fermentación láctica — semilla
+- fermentación alcohólica — semilla
+- fermentación acética — semilla
+- koji — publicado (`es/fermentacion-koji-umami-natural`)
+- miso — semilla
+- garum — semilla
+- shoyu — semilla
+- kombucha — semilla
+- kéfir — semilla
+- kvass — semilla
+- chucrut — semilla
+- kimchi — semilla
+- encurtido — semilla
+- salmuera — semilla
+- actividad de agua — semilla
+- pH — semilla
+- cultivo iniciador — semilla
+- inoculación — semilla
+- anaerobiosis — semilla
+- aerobiosis — semilla
+- moho noble — semilla
+- levadura salvaje — semilla
+- bacterias lácticas — semilla
+- SCOBY — semilla
+- hidrólisis — publicado (`es/hidrolisis-concepto-definicion`)
+- proteólisis — semilla
+- umami — publicado (`es/fermentacion-koji-umami-natural`)
+
+#### VegChef Plant-Based · librería `libreria-de-prompts-para-vegchef-plant-based-ai` — 5 publicados, 37 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- proteína vegetal — semilla
+- legumbre — semilla
+- seitán — semilla
+- tofu — semilla
+- tempeh — semilla
+- jackfruit — semilla
+- seta — semilla
+- umami vegetal — semilla
+- kombu — semilla
+- miso — semilla
+- aquafaba — semilla
+- emulsión sin huevo — semilla
+- lecitina de soja — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
+- metilcelulosa — semilla
+- gelificación vegetal — semilla
+- almidón — publicado (`es/papilla-de-almidon`)
+- fibra — semilla
+- texturizado de guisante — semilla
+- caldo vegetal — semilla
+- fondo vegetal — semilla
+- sofrito — semilla
+- parrilla de verdura — semilla
+- marcado — semilla
+- glaseado de verdura — semilla
+- puré — semilla
+- aceite de hierbas — semilla
+- fermentado vegetal — semilla
+
+#### Food Pairing AI · librería `libreria-de-prompts-para-food-pairing-ai` — 8 publicados, 34 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food pairing — publicado (`es/que-es-el-food-pairing`)
+- compuesto aromático — semilla
+- puente de sabor — semilla
+- contraste — semilla
+- afinidad — semilla
+- maridaje — semilla
+- umami — publicado (`es/fermentacion-koji-umami-natural`)
+- acidez — semilla
+- grasa — publicado (`es/confit-concepto-definicion`)
+- dulzor — semilla
+- amargor — semilla
+- sal — semilla
+- textura — semilla
+- temperatura de servicio — semilla
+- vino — publicado (`es/que-significa-abocar-en-cocina`)
+- cerveza — semilla
+- sake — semilla
+- té — semilla
+- cóctel — semilla
+- destilado — semilla
+- tanino — semilla
+- cuerpo — semilla
+- persistencia — semilla
+- retrogusto — semilla
+- equilibrio — semilla
+- salsa como puente — semilla
+- reducción — publicado (`es/reduccion-concepto-definicion`)
+
+### Gastro Conocimiento
+
+#### Gastro Lexicum · librería `libreria-de-prompts-para-gastro-lexicum-ai` — 21 publicados, 21 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- roux — publicado (`es/bechamel-concepto-y-definicion`)
+- beurre manié — publicado (`es/beurre-manie`)
+- napar — publicado (`es/napar-una-salsa`)
+- montar al burro — publicado (`es/montar-al-burro`)
+- beurre blanc — publicado (`es/beurre-blanc`)
+- demi-glace — publicado (`es/demi-glace-concepto-y-definicion`)
+- glace de viande — publicado (`es/glace-de-viande`)
+- fumet — publicado (`es/fumet-de-pescado`)
+- fondo oscuro — publicado (`es/fondo-oscuro-concepto-y-definicion`)
+- fondo blanco — publicado (`es/fondo-blanco-concepto-y-definicion`)
+- emulsión — publicado (`es/emulsion-concepto-definicion`)
+- ligado con yema — publicado (`es/ligado-con-yema`)
+- gastrique — publicado (`es/gastrique`)
+- deglasar — publicado (`es/deglasear-concepto-definicion`)
+- reducción — publicado (`es/reduccion-concepto-definicion`)
+- reacción de Maillard — publicado (`es/reaccion-de-maillard`)
+- caramelización — semilla
+- hidrólisis — publicado (`es/hidrolisis-concepto-definicion`)
+- maceración — publicado (`es/maceracion-concepto-definicion`)
+- salmuera — semilla
+- confitar — semilla
+- brasear — semilla
+- escalfar — semilla
+- sofrito — semilla
+- mirepoix — semilla
+- definición operativa — semilla
+- sinónimo de oficio — semilla
+
+### Consultoría Gastro Pro
+
+#### Consultor Gastronómico · librería `libreria-de-prompts-para-consultor-gastronomico-ai` — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food cost — semilla
+- ingeniería de menú — semilla
+- margen de contribución — semilla
+- precio de venta — semilla
+- ticket medio — semilla
+- rotación de mesa — semilla
+- prime cost — semilla
+- coste de personal — semilla
+- merma teórica — semilla
+- merma real — semilla
+- inventario — semilla
+- alergenos en carta — semilla
+- APPCC — semilla
+- proveedor — semilla
+- estacionalidad — semilla
+- carta ingeniería — semilla
+- plato estrella — semilla
+- plato perro — semilla
+- plato puzzle — semilla
+- plato vaca — semilla
+- umbral de rentabilidad — semilla
+- punto muerto — semilla
+- horas de cocina — semilla
+- productividad — semilla
+- estándar de receta — semilla
+- porcionado — semilla
+- compra — semilla
+
+#### Chef Consultor Pro · librería `libreria-de-prompts-para-chef-consultor-pro-ai` — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food cost — semilla
+- ingeniería de menú — semilla
+- margen de contribución — semilla
+- precio de venta — semilla
+- ticket medio — semilla
+- rotación de mesa — semilla
+- prime cost — semilla
+- coste de personal — semilla
+- merma teórica — semilla
+- merma real — semilla
+- inventario — semilla
+- alergenos en carta — semilla
+- APPCC — semilla
+- proveedor — semilla
+- estacionalidad — semilla
+- carta ingeniería — semilla
+- plato estrella — semilla
+- plato perro — semilla
+- plato puzzle — semilla
+- plato vaca — semilla
+- umbral de rentabilidad — semilla
+- punto muerto — semilla
+- horas de cocina — semilla
+- productividad — semilla
+- estándar de receta — semilla
+- porcionado — semilla
+- compra — semilla
+
+#### Heladero Consultor Pro · librería `libreria-de-prompts-para-heladero-consultor-pro-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- mix de helado — semilla
+- sólidos totales — semilla
+- sólidos lácteos — semilla
+- grasa láctea — semilla
+- poder anticongelante — semilla
+- PAC — semilla
+- POD — semilla
+- overrun — semilla
+- mantecatura — semilla
+- maduración del mix — semilla
+- homogeneización — publicado (`es/homogeneizacion-concepto-definicion`)
+- pasteurización del mix — semilla
+- estabilizante — semilla
+- emulsionante — semilla
+- neutro — semilla
+- sacarosa — semilla
+- dextrosa — semilla
+- azúcar invertido — semilla
+- maltodextrina — semilla
+- fibra — semilla
+- proteína láctea — semilla
+- sorbete — semilla
+- sherbet — semilla
+- granizado — semilla
+- semifrío — semilla
+- parfait — semilla
+- vitrina de helado — semilla
+
+#### Chocolatero Consultor Pro · librería `libreria-de-prompts-para-chocolatero-consultor-pro-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- atemperado — semilla
+- curva de temperado — semilla
+- cristal V — semilla
+- manteca de cacao — semilla
+- cobertura — semilla
+- porcentaje de cacao — semilla
+- ganache — semilla
+- praliné — semilla
+- gianduja — semilla
+- tableta — semilla
+- bonbón — semilla
+- corteza — semilla
+- molde de policarbonato — semilla
+- desmoldeo — semilla
+- bloom de grasa — semilla
+- bloom de azúcar — semilla
+- viscosidad — semilla
+- fluidez — semilla
+- conchado — semilla
+- refinado — semilla
+- nibs — semilla
+- licor de cacao — semilla
+- cacao en polvo — semilla
+- emulsión de ganache — semilla
+- lecitina — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
+- vainilla — semilla
+- inclusión — semilla
+
+#### Pastelero Consultor Pro · librería `libreria-de-prompts-para-pastelero-consultor-pro-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- merengue — semilla
+- pata de gato — semilla
+- pâte à bombe — semilla
+- cremeux — semilla
+- ganache — semilla
+- praliné — semilla
+- feuilletage — semilla
+- detrempe — semilla
+- touraje — semilla
+- puff pastry — semilla
+- bizcocho — semilla
+- genovesa — semilla
+- joconde — semilla
+- dacquoise — semilla
+- sablée — semilla
+- crema pastelera — semilla
+- crema diplomática — semilla
+- mousseline — semilla
+- chantilly — semilla
+- baumé — semilla
+- punto de bola — semilla
+- punto de hebra — semilla
+- invertir azúcar — semilla
+- gelatina — semilla
+- pectina — semilla
+- agar — publicado (`es/papilla-de-almidon`)
+- isomalt — semilla
+
+#### Pizzero Consultor Pro · librería `libreria-de-prompts-para-pizzero-consultor-pro-ai` — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- masa — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- hidratación de pizza — semilla
+- poolish — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- biga — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- fermentación en frío — semilla
+- horno de pizza — semilla
+- solera — semilla
+- cornicione — semilla
+- salsa de tomate — semilla
+- mozzarella — semilla
+- fior di latte — semilla
+- estirado — semilla
+- pala — semilla
+- pizza a la pala — semilla
+- napolitana — semilla
+- romana — semilla
+- new york — semilla
+- pepperoni — semilla
+- alicci — semilla
+- merma de masa — semilla
+- food cost de pizza — semilla
+- tiempo de ticket — semilla
+- delivery de pizza — semilla
+- corte — publicado (`es/tipos-de-cortes-en-la-cocina-profesional`)
+- aceite de acabado — semilla
+- albahaca — semilla
+- horno de leña — semilla
+
+#### Barista Consultor Pro · librería `libreria-de-prompts-para-barista-consultor-pro-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- espresso — semilla
+- ratio — semilla
+- extracción — semilla
+- molienda — semilla
+- tiempo de shot — semilla
+- crema — semilla
+- canalización — semilla
+- temperatura del agua — semilla
+- leche texturizada — semilla
+- microespuma — semilla
+- latte art — semilla
+- filtro — semilla
+- pour over — semilla
+- inmersión — semilla
+- tueste — semilla
+- origen — semilla
+- cata — publicado (`es/deglasear-concepto-definicion`)
+- acidez del café — semilla
+- dulzor del café — semilla
+- amargor — semilla
+- agua del café — semilla
+- descalcificación — semilla
+- merma de café — semilla
+- food cost de bebida — semilla
+- carta de cafetería — semilla
+- brunch — semilla
+- pastelería de barra — semilla
+
+#### Sommelier Consultor Pro · librería `libreria-de-prompts-para-sommelier-consultor-pro-ai` — 4 publicados, 38 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- cata — publicado (`es/deglasear-concepto-definicion`)
+- servicio de vino — semilla
+- decantar — semilla
+- copas — semilla
+- temperatura de servicio — semilla
+- maridaje — semilla
+- carta de vinos — semilla
+- margen de bodega — semilla
+- compra de vino — semilla
+- añada — semilla
+- crianza — semilla
+- tanino — semilla
+- acidez — semilla
+- cuerpo — semilla
+- dulzor residual — semilla
+- vino abocado — semilla
+- espumoso — semilla
+- generoso — semilla
+- sake — semilla
+- cerveza de guarda — semilla
+- corcho — semilla
+- reducción en botella — semilla
+- fault — semilla
+- por copa — semilla
+- coravin — semilla
+- bodega — semilla
+- rotación de botella — semilla
+
+#### Bartender Consultor Pro · librería `libreria-de-prompts-para-bartender-consultor-pro-ai` — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- mise en place de barra — semilla
+- especificación de cóctel — semilla
+- dilución — semilla
+- shake — semilla
+- stir — semilla
+- build — semilla
+- hielo — semilla
+- jigger — semilla
+- bitter — semilla
+- almíbar — semilla
+- cordial — semilla
+- shrub — semilla
+- fermentado de barra — semilla
+- garum de barra — semilla
+- destilado — semilla
+- vermú — semilla
+- vino por copa — semilla
+- cerveza de barril — semilla
+- espuma de sifón — semilla
+- clarificación — semilla
+- leche clarificada — semilla
+- fat wash — semilla
+- coste de cóctel — semilla
+- merma de cítrico — semilla
+- bottle keep — semilla
+- happy hour — semilla
+- carta de barra — semilla
+
+#### Panadero Consultor Pro · librería `libreria-de-prompts-para-panadero-consultor-pro-ai` — 8 publicados, 34 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- masa madre — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- prefermento — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- poolish — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- biga — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- esponja — semilla
+- autólisis — semilla
+- hidratación — semilla
+- amasado — semilla
+- desarrollo del gluten — semilla
+- ventana de gluten — semilla
+- pliegue — semilla
+- fermentación en bloque — semilla
+- puntado — semilla
+- formado — semilla
+- banneton — semilla
+- greñado — semilla
+- vapor de horno — semilla
+- resorte de horno — semilla
+- miga — semilla
+- cortezas — semilla
+- gelatinización del almidón — semilla
+- reacción de Maillard — publicado (`es/reaccion-de-maillard`)
+- harina de fuerza — semilla
+- cenizas — semilla
+- W del alveograma — semilla
+- P/L — semilla
+- centeno — semilla
+
+### Gastro Profile Pro
+
+#### Chef Privado Pro · librería `libreria-de-prompts-para-chef-privado-pro-ai` — 13 publicados, 27 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- roux — publicado (`es/bechamel-concepto-y-definicion`)
+- beurre manié — publicado (`es/beurre-manie`)
+- napar — publicado (`es/napar-una-salsa`)
+- montar al burro — publicado (`es/montar-al-burro`)
+- beurre blanc — publicado (`es/beurre-blanc`)
+- demi-glace — publicado (`es/demi-glace-concepto-y-definicion`)
+- glace de viande — publicado (`es/glace-de-viande`)
+- fumet — publicado (`es/fumet-de-pescado`)
+- fondo oscuro — publicado (`es/fondo-oscuro-concepto-y-definicion`)
+- fondo blanco — publicado (`es/fondo-blanco-concepto-y-definicion`)
+- menú a domicilio — semilla
+- showcooking — semilla
+- brief del cliente — semilla
+- alergias del hogar — semilla
+- compra para evento — semilla
+- emplatado en casa — semilla
+- timing — semilla
+- vaisselle — semilla
+- menú de familia — semilla
+- restricción — semilla
+- presupuesto del cliente — semilla
+- degustación privada — semilla
+- cocina de casa — semilla
+- transporte de plato — semilla
+- servicio en mesa del cliente — semilla
+
+#### Chef Ejecutivo Pro · librería `libreria-de-prompts-para-chef-ejecutivo-pro-ai` — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food cost — semilla
+- ingeniería de menú — semilla
+- margen de contribución — semilla
+- precio de venta — semilla
+- ticket medio — semilla
+- rotación de mesa — semilla
+- prime cost — semilla
+- coste de personal — semilla
+- merma teórica — semilla
+- merma real — semilla
+- inventario — semilla
+- alergenos en carta — semilla
+- APPCC — semilla
+- proveedor — semilla
+- estacionalidad — semilla
+- carta ingeniería — semilla
+- plato estrella — semilla
+- plato perro — semilla
+- plato puzzle — semilla
+- plato vaca — semilla
+- umbral de rentabilidad — semilla
+- punto muerto — semilla
+- horas de cocina — semilla
+- productividad — semilla
+- estándar de receta — semilla
+- porcionado — semilla
+- compra — semilla
+
+#### Gerente de Restaurante Pro · librería `libreria-de-prompts-para-gerente-de-restaurante-pro-ai` — 3 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food cost — semilla
+- ingeniería de menú — semilla
+- margen de contribución — semilla
+- precio de venta — semilla
+- ticket medio — semilla
+- rotación de mesa — semilla
+- prime cost — semilla
+- coste de personal — semilla
+- merma teórica — semilla
+- merma real — semilla
+- inventario — semilla
+- alergenos en carta — semilla
+- APPCC — semilla
+- proveedor — semilla
+- estacionalidad — semilla
+- carta ingeniería — semilla
+- plato estrella — semilla
+- plato perro — semilla
+- plato puzzle — semilla
+- plato vaca — semilla
+- umbral de rentabilidad — semilla
+- punto muerto — semilla
+- horas de cocina — semilla
+
+#### Comida del Personal · librería `libreria-de-prompts-para-comida-de-personal` — 3 publicados, 31 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- staff meal — semilla
+- coste de personal meal — semilla
+- nutrición de brigada — semilla
+- turno partido — semilla
+- familia — semilla
+- aprovechamiento — semilla
+- menú de equipo — semilla
+- alergias del equipo — semilla
+- cocción de gran volumen — semilla
+- tiempo de comida — semilla
+- satisfacción de brigada — semilla
+- presupuesto diario — semilla
+- variedad semanal — semilla
+- proteína — semilla
+- verdura — semilla
+- legumbre — semilla
+- batch cooking — semilla
+- higiene del office — semilla
+- feedback del equipo — semilla
+
+### Hotel & Hospitality AI Pro
+
+#### Hotel Staff Meal Planner — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de staff meal — semilla
+
+#### Hotel Bar & Lounge Menu AI — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- barra de hotel — semilla
+
+#### In-Room Dining Optimizer — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de room service — semilla
+
+#### F&B Reporting Assistant — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- informe F&B — semilla
+
+#### Buffet Master AI — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de buffet — semilla
+
+#### Hotel Pastelería & Panadería Pro — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de pastelería de hotel — semilla
+
+#### Desarrollador de Conceptos F&B — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- concepto F&B — semilla
+
+#### Hotel F&B Cost Controller — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- food cost hotelero — semilla
+
+#### Mini-Bar & Amenities AI — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de minibar — semilla
+
+#### Diseñador de Menú Room Service — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de menú de habitación — semilla
+
+#### Banquet Event Order AI — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de BEO — semilla
+
+#### Hotel Menu Engineering Pro — 0 publicados, 42 semillas
+
+- room service — semilla
+- banquete — semilla
+- BEO — semilla
+- coffee break — semilla
+- buffet — semilla
+- mise en place de banquet — semilla
+- recalentado de buffet — semilla
+- cadena de calor — semilla
+- cadena de frío — semilla
+- minibar — semilla
+- amenities — semilla
+- outlet — semilla
+- F&B cost — semilla
+- ingeniería de menú hotelero — semilla
+- desayuno — semilla
+- show cooking de buffet — semilla
+- staff meal — semilla
+- coste por cubierto — semilla
+- no-show de banquete — semilla
+- garantía de pax — semilla
+- alergia en banquete — semilla
+- menú de grupo — semilla
+- menú de habitación — semilla
+- in-room dining — semilla
+- horario de cocina 24h — semilla
+- pastelería de hotel — semilla
+- panadería de hotel — semilla
+- barra de lobby — semilla
+- late night menu — semilla
+- occupancy y previsión de cubiertos — semilla
+- paquete de boda — semilla
+- coffee break dulce — semilla
+- estación de huevos — semilla
+- estación de fruta — semilla
+- merma de buffet — semilla
+- regeneración en sala de banquetes — semilla
+- etiqueta de buffet — semilla
+- HACCP hotelero — semilla
+- coste de desayuno — semilla
+- upselling de room service — semilla
+- minibar food cost — semilla
+- estándar de ingeniería de menú hotelero — semilla
+
+### Recetarios de Europa
+
+#### Cocina Alemana — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- sauerbraten — semilla
+- spätzle — semilla
+- schnitzel — semilla
+- pretzel — semilla
+- chucrut — semilla
+- bratwurst — semilla
+- kartoffelknödel — semilla
+- saumagen — semilla
+- schwarzwälder — semilla
+- leberkäse — semilla
+- brezel — semilla
+- senf — semilla
+- rindswurst — semilla
+- eintopf — semilla
+- rote grütze — semilla
+- marzipan — semilla
+- stollen — semilla
+- currywurst — semilla
+- flammkuchen — semilla
+- maultaschen — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Belga — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- moules — semilla
+- fritas belgas — semilla
+- waffle — semilla
+- carbonade — semilla
+- waterzooi — semilla
+- speculoos — semilla
+- cerveza trapense — semilla
+- endivia — semilla
+- anguila en verde — semilla
+- stoofvlees — semilla
+- gofre de Lieja — semilla
+- chocolate belga — semilla
+- croqueta de gamba — semilla
+- tomate-crevette — semilla
+- filet américain — semilla
+- witloof — semilla
+- tarta de arroz — semilla
+- jenever — semilla
+- conejo a la cerveza — semilla
+- vol-au-vent — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Británica — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- roast — semilla
+- yorkshire pudding — semilla
+- gravy — semilla
+- shepherd's pie — semilla
+- fish and chips — semilla
+- bangers — semilla
+- black pudding — semilla
+- scone — semilla
+- clotted cream — semilla
+- custard — semilla
+- sticky toffee — semilla
+- beef wellington — semilla
+- full breakfast — semilla
+- cornish pasty — semilla
+- scotch egg — semilla
+- crumble — semilla
+- trifle — semilla
+- mince pie — semilla
+- bubble and squeak — semilla
+- ploughman's — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Croata — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- peka — semilla
+- pašticada — semilla
+- crni rižot — semilla
+- buzara — semilla
+- štrukli — semilla
+- kulen — semilla
+- janjetina — semilla
+- blitva — semilla
+- gregada — semilla
+- fritaja — semilla
+- sarma — semilla
+- palačinke — semilla
+- rakija — semilla
+- pršut — semilla
+- sir iz ulja — semilla
+- maneštra — semilla
+- brodet — semilla
+- fritule — semilla
+- rozata — semilla
+- paški sir — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Española · librería `libreria-de-prompts-para-cocina-espanola-ai` — 12 publicados, 30 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- sofrito — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa española — publicado (`es/salsa-espanola-concepto-y-definicion`)
+- allioli — publicado (`es/aioli-concepto-definicion`)
+- escabeche — publicado (`es/escabeche-concepto-definicion`)
+- adobo — semilla
+- salmuera — semilla
+- paella — semilla
+- socarrat — semilla
+- jamón — semilla
+- tapa — publicado (`es/tapas-concepto-definicion`)
+- ración — publicado (`es/chili-crisp`)
+- guiso — semilla
+- pisto — semilla
+- romesco — semilla
+- pil-pil — semilla
+- salsa verde — semilla
+- fritura andaluza — semilla
+- asador — semilla
+- arroz caldoso — semilla
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+- alérgeno del plato — semilla
+
+#### Cocina Francesa — 15 publicados, 27 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- roux — publicado (`es/bechamel-concepto-y-definicion`)
+- fonds — semilla
+- demi-glace — publicado (`es/demi-glace-concepto-y-definicion`)
+- velouté — publicado (`es/salsa-veloute-concepto-y-definicion`)
+- béchamel — publicado (`es/bechamel-concepto-y-definicion`)
+- hollandaise — semilla
+- béarnaise — semilla
+- mirepoix — semilla
+- bouquet garni — semilla
+- brunoise — semilla
+- julienne — semilla
+- concassé — semilla
+- napper — semilla
+- monter au beurre — semilla
+- beurre blanc — publicado (`es/beurre-blanc`)
+- gastrique — publicado (`es/gastrique`)
+- fumet — publicado (`es/fumet-de-pescado`)
+- glace — publicado (`es/demi-glace-concepto-y-definicion`)
+- liaison — semilla
+- court-bouillon — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Griega — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- sofrito griego — semilla
+- horiatiki — semilla
+- tzatziki — semilla
+- moussaka — semilla
+- pastitsio — semilla
+- souvlaki — semilla
+- gyro — semilla
+- spanakopita — semilla
+- dolma — semilla
+- avgolemono — semilla
+- taramasalata — semilla
+- fava — semilla
+- horta — semilla
+- aceite de oliva — semilla
+- orégano seco — semilla
+- limón — semilla
+- yogur — semilla
+- filo — semilla
+- baklava — semilla
+- ouzo — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Italiana · librería `libreria-de-prompts-para-cocina-italiana-ai` — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- soffritto — semilla
+- soffritto di odori — semilla
+- ragù — semilla
+- fondo bruno — semilla
+- fumetto — semilla
+- mantecare — semilla
+- risotto — semilla
+- sfumare — semilla
+- pomodoro — semilla
+- pasta fresca — semilla
+- sfoglia — semilla
+- besciamella — semilla
+- ragù alla bolognese — semilla
+- brasato — semilla
+- brodo — semilla
+- battuto — semilla
+- odori — semilla
+- aglio olio — semilla
+- pesto — semilla
+- sugo — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Países Bajos — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- stamppot — semilla
+- erwtensoep — semilla
+- bitterballen — semilla
+- kroket — semilla
+- haring — semilla
+- poffertjes — semilla
+- pannenkoek — semilla
+- hutspot — semilla
+- boerenkool — semilla
+- rookworst — semilla
+- frikandel — semilla
+- kapsalon — semilla
+- drop — semilla
+- speculaas — semilla
+- oliebollen — semilla
+- stroopwafel — semilla
+- kaas — semilla
+- mosterdsoep — semilla
+- zuurkool — semilla
+- appelmoes — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Portuguesa — 8 publicados, 34 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- refogado — semilla
+- caldo verde — semilla
+- bacalhau — semilla
+- açorda — semilla
+- cataplana — semilla
+- arroz de marisco — semilla
+- francesinha — semilla
+- prego — semilla
+- alheira — semilla
+- chouriço — semilla
+- piri-piri — semilla
+- amêijoas — semilla
+- polvo à lagareiro — semilla
+- cozido — semilla
+- leitão — semilla
+- pastel de nata — semilla
+- arroz doce — semilla
+- sardinhas — semilla
+- caldo — publicado (`es/consomme-concepto-definicion`)
+- azeite — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Suiza — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- fondue — semilla
+- raclette — semilla
+- rösti — semilla
+- zürcher geschnetzeltes — semilla
+- älplermagronen — semilla
+- birchermüesli — semilla
+- basler läckerli — semilla
+- cervelat — semilla
+- maluns — semilla
+- capuns — semilla
+- saucisse aux choux — semilla
+- papel — semilla
+- queso de alp — semilla
+- chocolate suizo — semilla
+- merengue — semilla
+- crema de chocolate — semilla
+- vino suizo — semilla
+- hierbas de los Alpes — semilla
+- pan de centeno — semilla
+- caldo de ternera — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Turca — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- soğan — semilla
+- salça — semilla
+- yoğurt — semilla
+- kebap — semilla
+- pide — semilla
+- lahmacun — semilla
+- börek — semilla
+- dolma — semilla
+- mercimek — semilla
+- ezogelin — semilla
+- menemen — semilla
+- köfte — semilla
+- baklava — semilla
+- lokum — semilla
+- ayran — semilla
+- sumak — semilla
+- pul biber — semilla
+- nar ekşisi — semilla
+- zeytinyağı — semilla
+- pilav — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+### Recetarios de Latam
+
+#### Cocina Argentina — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- asado — semilla
+- parrilla — semilla
+- achuras — semilla
+- chimichurri — semilla
+- salsa criolla — semilla
+- empanada — semilla
+- provoleta — semilla
+- matambre — semilla
+- vacío — semilla
+- entrana — semilla
+- molleja — semilla
+- choripán — semilla
+- dulce de leche — semilla
+- alfajor — semilla
+- medialuna — semilla
+- mate — semilla
+- malbec — semilla
+- humita — semilla
+- locro — semilla
+- fugazza — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Brasileña — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- refogado — semilla
+- feijoada — semilla
+- farofa — semilla
+- moqueca — semilla
+- acarajé — semilla
+- vatapá — semilla
+- caruru — semilla
+- pão de queijo — semilla
+- brigadeiro — semilla
+- coxinha — semilla
+- churrasco — semilla
+- picanha — semilla
+- caipirinha — semilla
+- dendê — semilla
+- mandioca — semilla
+- tapioca — semilla
+- arroz e feijão — semilla
+- vinagrete — semilla
+- queijo coalho — semilla
+- açaí — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Chilena — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- sofrito — semilla
+- pebre — semilla
+- merkén — semilla
+- empanada de pino — semilla
+- pastel de choclo — semilla
+- cazuela — semilla
+- curanto — semilla
+- mariscal — semilla
+- chupe — semilla
+- porotos — semilla
+- completo — semilla
+- mote — semilla
+- sopaipilla — semilla
+- manjar — semilla
+- pejerrey — semilla
+- reineta — semilla
+- chorrillana — semilla
+- plateada — semilla
+- charquicán — semilla
+- ajo — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Colombiana — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- hogao — semilla
+- ajiaco — semilla
+- bandeja paisa — semilla
+- arepa — semilla
+- sancocho — semilla
+- lechona — semilla
+- empanada — semilla
+- patacón — semilla
+- arroz con coco — semilla
+- suero — semilla
+- aji — semilla
+- frijol — semilla
+- chicharrón — semilla
+- buñuelo — semilla
+- natilla — semilla
+- obleas — semilla
+- changua — semilla
+- mute — semilla
+- tamal — semilla
+- chocolatada — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Dominicana — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- sofrito — semilla
+- sancocho — semilla
+- la bandera — semilla
+- mangú — semilla
+- los tres golpes — semilla
+- chicharrón — semilla
+- moro — semilla
+- habichuelas — semilla
+- pollo guisado — semilla
+- queso frito — semilla
+- casabe — semilla
+- yaniqueque — semilla
+- majarete — semilla
+- habichuela con dulce — semilla
+- chinola — semilla
+- wasakaka — semilla
+- chivo liniero — semilla
+- arroz — semilla
+- plátano — semilla
+- ají — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Ecuatoriana — 9 publicados, 33 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- encebollado — semilla
+- ceviche — publicado (`es/ceviche-concepto-definicion`)
+- llapingacho — semilla
+- fritada — semilla
+- hornado — semilla
+- locro — semilla
+- seco de chivo — semilla
+- encocado — semilla
+- bolón — semilla
+- patacón — semilla
+- aji criollo — semilla
+- mote — semilla
+- humita — semilla
+- colada morada — semilla
+- fanesca — semilla
+- cuy — semilla
+- chaulafán — semilla
+- encebolla — semilla
+- verde — semilla
+- maní — publicado (`es/beurre-manie`)
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Jamaicana — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- jerk — semilla
+- escoveitch — semilla
+- ackee — semilla
+- saltfish — semilla
+- rice and peas — semilla
+- curry goat — semilla
+- oxtail — semilla
+- festival — semilla
+- bammy — semilla
+- callaloo — semilla
+- pimento — semilla
+- scotch bonnet — semilla
+- allspice — semilla
+- browning — semilla
+- rundown — semilla
+- patty — semilla
+- festival dumpling — semilla
+- sorrel — semilla
+- plantain — semilla
+- thyme — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Mexicana — 12 publicados, 30 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- sofrito — semilla
+- recaudo — semilla
+- mole — publicado (`es/cocina-molecular-concepto-y-definicion`)
+- nixtamal — semilla
+- masa — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- salsa roja — semilla
+- salsa verde — semilla
+- adobo — semilla
+- marinada — semilla
+- barbacoa — semilla
+- birria — semilla
+- consomé — publicado (`es/consomme-concepto-definicion`)
+- taco — semilla
+- tortilla — semilla
+- chile — semilla
+- epazote — semilla
+- hoja santa — semilla
+- achiote — semilla
+- escabeche — publicado (`es/escabeche-concepto-definicion`)
+- caldo — publicado (`es/consomme-concepto-definicion`)
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Paraguaya — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- so'o — semilla
+- chipa — semilla
+- sopa paraguaya — semilla
+- vorí vorí — semilla
+- mbeyú — semilla
+- chipa guasu — semilla
+- payagua mascada — semilla
+- locro — semilla
+- asado — semilla
+- borracho — semilla
+- kosereva — semilla
+- dulce de mamón — semilla
+- tereré — semilla
+- mandioca — semilla
+- queso paraguay — semilla
+- morcilla — semilla
+- chorizo — semilla
+- empanada — semilla
+- mbaipy — semilla
+- cocido — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Peruana — 8 publicados, 34 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- aderezo — semilla
+- ají amarillo — semilla
+- ají panca — semilla
+- leche de tigre — semilla
+- ceviche — publicado (`es/ceviche-concepto-definicion`)
+- tiradito — semilla
+- lomo saltado — semilla
+- ají de gallina — semilla
+- causa — semilla
+- anticucho — semilla
+- pachamanca — semilla
+- chaufa — semilla
+- huancaína — semilla
+- ocopa — semilla
+- rocoto — semilla
+- culantro — semilla
+- choclo — semilla
+- cancha — semilla
+- suspiro — semilla
+- picarones — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Venezolana — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- sofrito — semilla
+- pabellón — semilla
+- arepa — semilla
+- hallaca — semilla
+- cachapa — semilla
+- tequeño — semilla
+- asado negro — semilla
+- caraotas — semilla
+- tajadas — semilla
+- perico — semilla
+- queso de mano — semilla
+- guayanesa — semilla
+- hervido — semilla
+- sancocho — semilla
+- empanada — semilla
+- golfeado — semilla
+- quesillo — semilla
+- papelón — semilla
+- aliño — semilla
+- guasacaca — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+### Recetarios de Asia
+
+#### Cocina China — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- wok hei — semilla
+- velveting — semilla
+- salteado — semilla
+- vapor — semilla
+- rojo cocido — semilla
+- cinco especias — semilla
+- salsa de soja — semilla
+- doubanjiang — semilla
+- shaoxing — semilla
+- almidón de maíz — semilla
+- dim sum — semilla
+- bao — semilla
+- jiaozi — semilla
+- arroz frito — semilla
+- fideos — semilla
+- caldo maestro — semilla
+- glaseado cantonés — semilla
+- aceite de sésamo — semilla
+- jengibre — semilla
+- cebolleta — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina India — 7 publicados, 35 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- tadka — semilla
+- masala — semilla
+- garam masala — semilla
+- curry — semilla
+- dosa — semilla
+- idli — semilla
+- naan — semilla
+- roti — semilla
+- dal — semilla
+- raita — semilla
+- chutney — semilla
+- tandoor — semilla
+- biryani — semilla
+- ghee — semilla
+- paneer — semilla
+- tikka — semilla
+- korma — semilla
+- vindaloo — semilla
+- sambar — semilla
+- rasam — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Japonesa — 9 publicados, 33 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- dashi — semilla
+- kombu — semilla
+- katsuobushi — semilla
+- umami — publicado (`es/fermentacion-koji-umami-natural`)
+- shoyu — semilla
+- miso — semilla
+- mirin — semilla
+- sake de cocina — semilla
+- sushi — semilla
+- nigiri — semilla
+- sashimi — semilla
+- tempura — semilla
+- donabe — semilla
+- kaiseki — semilla
+- agemono — semilla
+- nimono — semilla
+- yakimono — semilla
+- sunomono — semilla
+- shio — semilla
+- koji — publicado (`es/fermentacion-koji-umami-natural`)
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+#### Cocina Tailandesa — 8 publicados, 34 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- pasta de curry — semilla
+- leche de coco — semilla
+- fish sauce — semilla
+- galanga — semilla
+- hierba limón — semilla
+- lima kaffir — semilla
+- chili — publicado (`es/chili-crisp`)
+- pad thai — semilla
+- tom yum — semilla
+- tom kha — semilla
+- som tum — semilla
+- mango sticky rice — semilla
+- nam pla — semilla
+- palm sugar — semilla
+- tamarindo — semilla
+- albahaca thai — semilla
+- cilantro raíz — semilla
+- wokk — semilla
+- salteado — semilla
+- balance ácido-sal-dulce-picante — semilla
+- fondo — publicado (`es/fumet-de-pescado`)
+- salsa — publicado (`es/beurre-blanc`)
+- guarnición — semilla
+- cocción — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- fermentación — publicado (`es/fermentacion-koji-umami-natural`)
+- escandallo del plato — semilla
+- merma del despiece — semilla
+
+### Herramientas y Utilities
+
+#### ID Alérgenos · librería `libreria-de-prompts-para-id-alergenos` — 6 publicados, 36 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- gluten — semilla
+- crustáceos — semilla
+- huevo — semilla
+- pescado — publicado (`es/fumet-de-pescado`)
+- cacahuete — semilla
+- soja — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
+- leche — semilla
+- frutos de cáscara — semilla
+- apio — semilla
+- mostaza — semilla
+- sésamo — semilla
+- sulfitos — semilla
+- altramuces — semilla
+- moluscos — semilla
+- Reglamento 1169 — semilla
+- contaminación cruzada — semilla
+- trazas — semilla
+- ficha de alérgenos — semilla
+- carta de alérgenos — semilla
+- información oral — semilla
+- Anexo II — semilla
+- salsa con gluten — semilla
+- roux y gluten — semilla
+- lecitina de soja — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
+- sulfitos en el vino de salsa — semilla
+- apio en el mirepoix — semilla
+- frutos secos en obrador — semilla
+
+#### Mermas GenCal · librería `libreria-de-prompts-para-mermas-gencal` — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- merma de limpieza — semilla
+- merma de cocción — semilla
+- merma de porcionado — semilla
+- rendimiento neto — semilla
+- peso bruto — semilla
+- peso neto — semilla
+- factor de corrección — semilla
+- despiece — semilla
+- recorte — semilla
+- hueso — semilla
+- piel — semilla
+- espinas — semilla
+- aprovechamiento — semilla
+- fondo con recortes — semilla
+- fumet con espinas — semilla
+- inventario teórico — semilla
+- inventario real — semilla
+- rotura — semilla
+- caducidad — semilla
+- FIFO — semilla
+- merma evitable — semilla
+- merma inevitable — semilla
+- estándar de merma — semilla
+- sobreproducción — semilla
+- plato devuelto — semilla
+- buffet sobrante — semilla
+- pan del día — semilla
+
+#### Calcula Pax — 4 publicados, 36 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- pax — semilla
+- gramaje por comensal — semilla
+- merma de evento — semilla
+- bebida por persona — semilla
+- pan por persona — semilla
+- producción por pax — semilla
+- buffer — semilla
+- no-show — semilla
+- menú infantil — semilla
+- menú de staff del evento — semilla
+- hielo — semilla
+- vajilla por pax — semilla
+- timing — semilla
+- estación — semilla
+- porcionado — semilla
+- ficha por comensal — semilla
+- coste por cabeza — semilla
+- proteína por persona — semilla
+- guarnición — semilla
+- salsa por ración — semilla
+- postre de corte — semilla
+- café — semilla
+- agua — publicado (`es/hidrolisis-concepto-definicion`)
+- restricciones del listado — semilla
+- producción escalada — semilla
+
+#### Conversor Ing — 1 publicados, 33 semillas
+
+- gramo — semilla
+- kilogramo — semilla
+- mililitro — semilla
+- litro — semilla
+- onza — semilla
+- libra — semilla
+- cup — semilla
+- cucharada — semilla
+- cucharadita — semilla
+- °C — semilla
+- °F — semilla
+- porcentaje de panadero — semilla
+- ratio — semilla
+- partes — semilla
+- concentración — semilla
+- baumé — semilla
+- brix — semilla
+- salmuera % — semilla
+- factor — semilla
+- densidad — semilla
+- conversión de horno — semilla
+- gas mark — semilla
+- pieza — semilla
+- manojo — semilla
+- lata — semilla
+- botella — semilla
+- ración — publicado (`es/chili-crisp`)
+- yield — semilla
+- peso escurrido — semilla
+- peso neto — semilla
+- alérgeno en la conversión — semilla
+- redondeo de ficha — semilla
+- unidad de compra — semilla
+- unidad de receta — semilla
+
+#### Mental Coach — 1 publicados, 38 semillas
+
+- chef — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- jefe de cocina — semilla
+- sous chef — semilla
+- chef de partie — semilla
+- commis — semilla
+- pastelero — semilla
+- panadero — semilla
+- heladero — semilla
+- chocolatero — semilla
+- sumiller — semilla
+- jefe de sala — semilla
+- maître — semilla
+- camarero — semilla
+- barista — semilla
+- bartender — semilla
+- gerente — semilla
+- propietario — semilla
+- consultor gastronómico — semilla
+- F&B manager — semilla
+- brigada — semilla
+- partida — semilla
+- briefing — semilla
+- formación en el puesto — semilla
+- estándar — semilla
+- repetibilidad — semilla
+- oficio — semilla
+- juicio sensorial — semilla
+- fatiga de servicio — semilla
+- liderazgo de pase — semilla
+- relevo — semilla
+- estrés de servicio — semilla
+- comunicación de brigada — semilla
+- feedback — semilla
+- error en el pase — semilla
+- recuperación — semilla
+- liderazgo — semilla
+- relevo de turno — semilla
+- conflicto — semilla
+- cierre de servicio — semilla
+
+### Conceptos de Negocio
+
+#### Catering AI+ · librería `libreria-de-prompts-para-catering-ai` — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- evento — semilla
+- pax — semilla
+- briefing de evento — semilla
+- producción anticipada — semilla
+- transporte — semilla
+- cadena de frío en ruta — semilla
+- regeneración en sala — semilla
+- montaje — semilla
+- desmontaje — semilla
+- ficha de evento — semilla
+- alergias del brief — semilla
+- menú de boda — semilla
+- menú corporativo — semilla
+- coffee break — semilla
+- cóctel de pie — semilla
+- estación de vivo — semilla
+- show cooking — semilla
+- vaisselle — semilla
+- dotación — semilla
+- merma de evento — semilla
+- sobras — semilla
+- depósito — semilla
+- seña — semilla
+- balance de evento — semilla
+- coste por comensal — semilla
+- personal extra — semilla
+- timing de servicio — semilla
+
+#### Burger Pro AI+ · librería `libreria-de-prompts-para-burger-pro-ai` — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- smash — semilla
+- blend de carne — semilla
+- punto de la carne — semilla
+- Maillard en plancha — semilla
+- pan brioche — semilla
+- pan potato — semilla
+- salsa de la casa — semilla
+- encurtido — semilla
+- queso fundido — semilla
+- bacon — semilla
+- fritura — semilla
+- aceite de freidora — semilla
+- patata — semilla
+- doble cocción de patata — semilla
+- ticket de burger — semilla
+- combo — semilla
+- delivery de burger — semilla
+- tiempo de ticket — semilla
+- holding — semilla
+- vapor del pan — semilla
+- merma de blend — semilla
+- rendimiento de la pieza — semilla
+- food cost de burger — semilla
+- estación de plancha — semilla
+- estación de fritura — semilla
+- montaje — semilla
+- alergeno del pan — semilla
+
+#### Food Truck AI+ — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food truck — semilla
+- commissary — semilla
+- ruta — semilla
+- generador — semilla
+- agua a bordo — semilla
+- carta corta — semilla
+- mise en place previa — semilla
+- ventana de servicio — semilla
+- ticket medio de calle — semilla
+- tiempo de cola — semilla
+- menú de tres pasos — semilla
+- food cost de truck — semilla
+- merma por clima — semilla
+- licencia — semilla
+- punto de venta — semilla
+- propina — semilla
+- combo de calle — semilla
+- bebida — semilla
+- alergenos en ventana — semilla
+- limpieza de camión — semilla
+- aceite — semilla
+- gas — semilla
+- nevera de camión — semilla
+- producción en obrador — semilla
+- transporte de género — semilla
+- cadena de frío — semilla
+- evento privado con truck — semilla
+
+#### Bar & Lounge AI+ — 3 publicados, 39 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- mise en place de barra — semilla
+- especificación de cóctel — semilla
+- dilución — semilla
+- shake — semilla
+- stir — semilla
+- build — semilla
+- hielo — semilla
+- jigger — semilla
+- bitter — semilla
+- almíbar — semilla
+- cordial — semilla
+- shrub — semilla
+- fermentado de barra — semilla
+- garum de barra — semilla
+- destilado — semilla
+- vermú — semilla
+- vino por copa — semilla
+- cerveza de barril — semilla
+- espuma de sifón — semilla
+- clarificación — semilla
+- leche clarificada — semilla
+- fat wash — semilla
+- coste de cóctel — semilla
+- merma de cítrico — semilla
+- bottle keep — semilla
+- happy hour — semilla
+- carta de barra — semilla
+
+#### Casual Restaurants AI+ — 3 publicados, 37 semillas
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food cost — semilla
+- ingeniería de menú — semilla
+- margen de contribución — semilla
+- precio de venta — semilla
+- ticket medio — semilla
+- menú del día — semilla
+- plato de carta — semilla
+- ticket — semilla
+- turno — semilla
+- familia — semilla
+- combo — semilla
+- take away — semilla
+- terraza — semilla
+- barra — semilla
+- postre — semilla
+- café — semilla
+- pan — semilla
+- ensalada — semilla
+- guarnición — semilla
+- salsa de la casa — semilla
+- especial del día — semilla
+- merma del día — semilla
+- apertura — semilla
+- cierre — semilla
+- reserva de grupo — semilla
+
+### Proveedores Gastro
+
+#### Sosa Ingredients Agent — 6 publicados, 29 semillas
+
+- texturizante — semilla
+- esferificación — publicado (`es/esferificacion-concepto-y-definicion`)
+- alginato — semilla
+- calcic — semilla
+- agar — publicado (`es/papilla-de-almidon`)
+- goma xantana — publicado (`es/goma-xantana-concepto-definicion`)
+- goma garrofín — semilla
+- lecitina — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
+- metilcelulosa — semilla
+- maltodextrina — semilla
+- isomalt — semilla
+- gelatina — semilla
+- pectina — semilla
+- gellan — semilla
+- iota — semilla
+- kappa — semilla
+- albúmina — semilla
+- yopol — semilla
+- aire — semilla
+- espuma — publicado (`es/espumas-ferran-adria-concepto-y-definicion`)
+- gel — semilla
+- noodles de agar — semilla
+- crujiente — semilla
+- polvo de aceite — semilla
+- emulsión — publicado (`es/emulsion-concepto-definicion`)
+- estabilizante — semilla
+- dosis — semilla
+- dispersión — semilla
+- hidratación del texturizante — semilla
+- reposo — semilla
+- gelificación en frío — semilla
+- gelificación en caliente — semilla
+- sabor neutro — semilla
+- ficha de aplicación — semilla
+- alergeno del texturizante — semilla
+
+#### tSpoonLab Agent — 2 publicados, 35 semillas
+
+- escandallo — semilla
+- ficha técnica — semilla
+- alergenos — semilla
+- coste — semilla
+- valor nutricional — semilla
+- porción — publicado (`es/vinagreta-concepto-y-definicion`)
+- merma — semilla
+- proceso — semilla
+- foto de ficha — semilla
+- ingrediente — semilla
+- subreceta — semilla
+- salsa como subreceta — semilla
+- actualización de precio — semilla
+- proveedor — semilla
+- etiqueta — semilla
+- APPCC en ficha — semilla
+- tiempo de proceso — semilla
+- utensilio — semilla
+- punto de cocción — semilla
+- rendimiento — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- versión de ficha — semilla
+- aprobación — semilla
+- publicación en carta — semilla
+- formación con la ficha — semilla
+- unidad de receta — semilla
+- peso neto — semilla
+- peso bruto — semilla
+- factor de corrección — semilla
+- método — semilla
+- temperatura de cocción — semilla
+- enfriamiento — semilla
+- abatido en ficha — semilla
+- regeneración en ficha — semilla
+- vida útil — semilla
+- lote de producción — semilla
+- responsable de ficha — semilla
+
+### Contenidos y RRSS
+
+#### InstaFlow AI Pro — 0 publicados, 30 semillas
+
+- keyword local — semilla
+- SEO de restaurante — semilla
+- Google Business Profile — semilla
+- reseña — semilla
+- respuesta a reseña — semilla
+- foto de plato — semilla
+- reel — semilla
+- copy de carta — semilla
+- descripción de plato — semilla
+- menú engineering visible — semilla
+- ticket medio — semilla
+- oferta — semilla
+- captación — semilla
+- retención — semilla
+- newsletter — semilla
+- reserva — semilla
+- no-show — semilla
+- delivery — semilla
+- marketplace — semilla
+- comisión de app — semilla
+- foto de obrador — semilla
+- historia de origen — semilla
+- estacionalidad en redes — semilla
+- alergenos en la web — semilla
+- carta digital — semilla
+- reel de proceso — semilla
+- carrusel de receta — semilla
+- story de pase — semilla
+- hashtag local — semilla
+- CTA a reserva — semilla
+
+#### PinterAI Content Pro — 0 publicados, 40 semillas
+
+- keyword local — semilla
+- SEO de restaurante — semilla
+- Google Business Profile — semilla
+- reseña — semilla
+- respuesta a reseña — semilla
+- foto de plato — semilla
+- reel — semilla
+- copy de carta — semilla
+- descripción de plato — semilla
+- menú engineering visible — semilla
+- ticket medio — semilla
+- oferta — semilla
+- captación — semilla
+- retención — semilla
+- newsletter — semilla
+- reserva — semilla
+- no-show — semilla
+- delivery — semilla
+- marketplace — semilla
+- comisión de app — semilla
+- foto de obrador — semilla
+- historia de origen — semilla
+- estacionalidad en redes — semilla
+- alergenos en la web — semilla
+- carta digital — semilla
+- QR — semilla
+- precio psicológico — semilla
+- ancla de precio — semilla
+- pin de receta — semilla
+- tablero de temporada — semilla
+- foto vertical — semilla
+- guardado — semilla
+- tráfico a carta — semilla
+- idea de emplatado — semilla
+- color del plato — semilla
+- texto del pin — semilla
+- estacionalidad visual — semilla
+- enlace a la carta — semilla
+- tablero de salsas — semilla
+- tablero de obrador — semilla
+
+#### Pinterest Pins Gen — 0 publicados, 36 semillas
+
+- keyword local — semilla
+- SEO de restaurante — semilla
+- Google Business Profile — semilla
+- reseña — semilla
+- respuesta a reseña — semilla
+- foto de plato — semilla
+- reel — semilla
+- copy de carta — semilla
+- descripción de plato — semilla
+- menú engineering visible — semilla
+- ticket medio — semilla
+- oferta — semilla
+- captación — semilla
+- retención — semilla
+- newsletter — semilla
+- reserva — semilla
+- no-show — semilla
+- delivery — semilla
+- marketplace — semilla
+- comisión de app — semilla
+- foto de obrador — semilla
+- historia de origen — semilla
+- estacionalidad en redes — semilla
+- alergenos en la web — semilla
+- carta digital — semilla
+- pin — semilla
+- texto sobre foto — semilla
+- estacionalidad visual — semilla
+- idea de emplatado — semilla
+- color de plato — semilla
+- formato vertical — semilla
+- portada de receta — semilla
+- ingrediente hero — semilla
+- proceso en cuatro fotos — semilla
+- guardado — semilla
+- tablero — semilla
+
+#### BlogPost SEO Gen+ — 1 publicados, 34 semillas
+
+- keyword local — semilla
+- SEO de restaurante — semilla
+- Google Business Profile — semilla
+- reseña — semilla
+- respuesta a reseña — semilla
+- foto de plato — semilla
+- reel — semilla
+- copy de carta — semilla
+- descripción de plato — semilla
+- menú engineering visible — semilla
+- ticket medio — semilla
+- oferta — semilla
+- captación — semilla
+- retención — semilla
+- newsletter — semilla
+- reserva — semilla
+- no-show — semilla
+- delivery — semilla
+- marketplace — semilla
+- comisión de app — semilla
+- foto de obrador — semilla
+- historia de origen — semilla
+- estacionalidad en redes — semilla
+- alergenos en la web — semilla
+- intención de búsqueda — semilla
+- definición — publicado (`es/consomme-concepto-definicion`)
+- pregunta frecuente — semilla
+- enlace interno — semilla
+- title — semilla
+- meta description — semilla
+- hreflang — semilla
+- variante ortográfica — semilla
+- People Also Ask — semilla
+- párrafo de definición — semilla
+- glosario — semilla
+
+#### Keyword Discovery AI+ — 2 publicados, 30 semillas
+
+- keyword — semilla
+- intención — semilla
+- sinónimo — semilla
+- variante ortográfica — semilla
+- búsqueda local — semilla
+- long tail — semilla
+- pregunta — semilla
+- comparación — semilla
+- cómo se hace — publicado (`es/salsa-espanola-concepto-y-definicion`)
+- qué es — publicado (`es/consomme-concepto-definicion`)
+- precio — semilla
+- cerca de mí — semilla
+- en inglés de cocina — semilla
+- falso amigo — semilla
+- estacional — semilla
+- marca vs genérico — semilla
+- canibalización — semilla
+- página existente — semilla
+- glosario — semilla
+- carta — semilla
+- blog — semilla
+- landing — semilla
+- SERP — semilla
+- título — semilla
+- meta — semilla
+- FAQ — semilla
+- entidad — semilla
+- modificador local — semilla
+- idioma de búsqueda — semilla
+- demanda de definición — semilla
+- demanda de proceso — semilla
+- demanda de compra — semilla
+
+#### MenuDish Local SEO — 0 publicados, 36 semillas
+
+- keyword local — semilla
+- SEO de restaurante — semilla
+- Google Business Profile — semilla
+- reseña — semilla
+- respuesta a reseña — semilla
+- foto de plato — semilla
+- reel — semilla
+- copy de carta — semilla
+- descripción de plato — semilla
+- menú engineering visible — semilla
+- ticket medio — semilla
+- oferta — semilla
+- captación — semilla
+- retención — semilla
+- newsletter — semilla
+- reserva — semilla
+- no-show — semilla
+- delivery — semilla
+- marketplace — semilla
+- comisión de app — semilla
+- foto de obrador — semilla
+- historia de origen — semilla
+- estacionalidad en redes — semilla
+- alergenos en la web — semilla
+- Google Business — semilla
+- categoría del local — semilla
+- foto de fachada — semilla
+- horario — semilla
+- menú en la ficha — semilla
+- pregunta de Maps — semilla
+- reseña reciente — semilla
+- publicación de plato — semilla
+- categoría de cocina — semilla
+- atributos del local — semilla
+- enlace de reserva — semilla
+- foto de carta — semilla
+
+#### Gastro Calendar — 0 publicados, 32 semillas
+
+- calendario de carta — semilla
+- temporada — semilla
+- festivo — semilla
+- campaña — semilla
+- menú de navidad — semilla
+- menú de verano — semilla
+- producto de mes — semilla
+- publicación — semilla
+- reserva de campaña — semilla
+- proveedor de temporada — semilla
+- merma de campaña — semilla
+- post de calendario — semilla
+- story — semilla
+- evento del barrio — semilla
+- feria — semilla
+- puente — semilla
+- cierre por festivo — semilla
+- especial de un día — semilla
+- comunicación al equipo — semilla
+- briefing de campaña — semilla
+- menú de Semana Santa — semilla
+- menú de feria — semilla
+- producto de otoño — semilla
+- producto de primavera — semilla
+- cambio de carta — semilla
+- comunicación de alérgeno de campaña — semilla
+- coste del menú festivo — semilla
+- previsión de cubiertos — semilla
+- briefing de sala — semilla
+- foto de campaña — semilla
+- reserva de grupo — semilla
+- cierre de inventario de campaña — semilla
+
+### Modelos IA + LLM
+
+#### ChatGPT 5.5 — 2 publicados, 28 semillas
+
+- prompt — semilla
+- contexto — publicado (`es/context-window-ventana-contexto-ia`)
+- ficha técnica asistida — semilla
+- revisión humana — semilla
+- alérgeno no delegable — semilla
+- borrador de carta — semilla
+- traducción de menú — semilla
+- tono — semilla
+- límite del modelo — semilla
+- verificación — semilla
+- instrucción de sistema — semilla
+- ejemplo — publicado (`es/cocina-molecular-concepto-y-definicion`)
+- formato de salida — semilla
+- tabla — semilla
+- lista — semilla
+- temperatura que se contrasta — semilla
+- norma que se contrasta — semilla
+- no inventar cifra — semilla
+- borrador de post — semilla
+- borrador de respuesta a reseña — semilla
+- resumen de briefing — semilla
+- traducción de alérgeno — semilla
+- adaptación de mercado — semilla
+- registro de cambios — semilla
+- versión — semilla
+- fuente — semilla
+- duda de partida — semilla
+- juicio del chef — semilla
+- lo que el modelo no prueba — semilla
+- lo que el cocinero firma — semilla
+
+#### Sonar Deep Research — 0 publicados, 30 semillas
+
+- fuente — semilla
+- cita — semilla
+- normativa — semilla
+- no inventar cifra — semilla
+- comparar fuentes — semilla
+- fecha de la fuente — semilla
+- SERP — semilla
+- intención — semilla
+- resumen para cocina — semilla
+- duda que se verifica en el pase — semilla
+- reglamento — semilla
+- ficha técnica oficial — semilla
+- precio de mercado con fecha — semilla
+- contraste de dos fuentes — semilla
+- lo que no dice la fuente — semilla
+- alcance geográfico — semilla
+- idioma de la fuente — semilla
+- actualización — semilla
+- resumen para el gerente — semilla
+- resumen para el chef — semilla
+- alerta de cifra huérfana — semilla
+- norma de alérgenos — semilla
+- norma de higiene — semilla
+- convenio — semilla
+- impuesto — semilla
+- licencia — semilla
+- no es asesoría legal — semilla
+- pregunta siguiente — semilla
+- hueco de la fuente — semilla
+- decisión que sigue siendo del local — semilla
+
+### Otras Plataformas
+
+#### Timlup – Asistente de Checklists — 1 publicados, 31 semillas
+
+- apertura — semilla
+- cierre — semilla
+- limpieza — semilla
+- APPCC — semilla
+- temperatura — publicado (`es/coccion-a-baja-temperatura-concepto-y-definicion`)
+- registro — semilla
+- turno — semilla
+- responsable — semilla
+- incidencia — semilla
+- check de cámara — semilla
+- check de aceite — semilla
+- check de baño maría — semilla
+- recepción — semilla
+- alérgenos del día — semilla
+- briefing — semilla
+- cierre de caja — semilla
+- merma del día — semilla
+- pedido — semilla
+- mantenimiento — semilla
+- formación — semilla
+- check de pase — semilla
+- check de sala — semilla
+- check de baños — semilla
+- check de barra — semilla
+- aceite de fritura — semilla
+- etiquetado del día — semilla
+- FIFO del día — semilla
+- temperaturas de entrega — semilla
+- firma — semilla
+- plan de acción — semilla
+- reincidencia — semilla
+- foto de incidencia — semilla
+
+## Áreas transversales
+
+### Sala
+
+Oficio de sala, fuera del catálogo de agentes de cocina.
+
+1 publicados, 41 semillas.
+
+- mise en place de sala — semilla
+- briefing de servicio — semilla
+- comanda — semilla
+- pase de sala — semilla
+- marcaje — semilla
+- cubierto — semilla
+- servicio a la francesa — semilla
+- servicio a la inglesa — semilla
+- servicio a la rusa — semilla
+- empanado de mesa — semilla
+- crumb — semilla
+- decantar — semilla
+- escanciar — semilla
+- abocar en sala — semilla
+- maridaje de sala — semilla
+- sugerencia — semilla
+- alergia en sala — semilla
+- tiempo de mesa — semilla
+- rotación — semilla
+- queja — semilla
+- recuperación de queja — semilla
+- cuenta — semilla
+- propina — semilla
+- reserva — semilla
+- no-show — semilla
+- walk-in — semilla
+- lista de espera — semilla
+- plano de sala — semilla
+- estación de camarero — semilla
+- runner — semilla
+- sommelier — semilla
+- jefe de sala — semilla
+- protocolo — semilla
+- etiqueta — semilla
+- pan de cortesía — semilla
+- agua — publicado (`es/hidrolisis-concepto-definicion`)
+- café de cierre — semilla
+- petit four — semilla
+- despedida — semilla
+- feedback de sala a cocina — semilla
+- tempo del menú — semilla
+- venta sugerida — semilla
+
+### Gestión
+
+Números del negocio: margen, caja, turno y compra.
+
+3 publicados, 37 semillas.
+
+- mise en place — publicado (`es/mise-en-place`)
+- ficha técnica — semilla
+- escandallo — semilla
+- merma — semilla
+- rendimiento — semilla
+- alérgeno — semilla
+- lote — publicado (`es/papillote-concepto-definicion`)
+- trazabilidad — semilla
+- abatido — publicado (`es/que-es-un-abatidor-de-temperatura`)
+- regeneración — semilla
+- servicio — semilla
+- pase — semilla
+- comanda — semilla
+- briefing de cocina — semilla
+- partida — semilla
+- food cost — semilla
+- ingeniería de menú — semilla
+- margen de contribución — semilla
+- precio de venta — semilla
+- ticket medio — semilla
+- rotación de mesa — semilla
+- prime cost — semilla
+- coste de personal — semilla
+- merma teórica — semilla
+- merma real — semilla
+- inventario — semilla
+- alergenos en carta — semilla
+- APPCC — semilla
+- proveedor — semilla
+- estacionalidad — semilla
+- carta ingeniería — semilla
+- plato estrella — semilla
+- plato perro — semilla
+- plato puzzle — semilla
+- plato vaca — semilla
+- umbral de rentabilidad — semilla
+- punto muerto — semilla
+- horas de cocina — semilla
+- productividad — semilla
+- estándar de receta — semilla
+
+### Hostelería
+
+El local como sistema: concepto, turno, norma y equipo.
+
+1 publicados, 41 semillas.
+
+- concepto de negocio — semilla
+- propuesta de valor — semilla
+- ticket — semilla
+- cubierto — semilla
+- ocupación — semilla
+- estacionalidad — semilla
+- turno de comida — semilla
+- turno de cena — semilla
+- delivery — semilla
+- take away — semilla
+- dark kitchen — semilla
+- terraza — semilla
+- barra — semilla
+- licencia de actividad — semilla
+- aforo — semilla
+- ruido — semilla
+- horario — semilla
+- convenio de hostelería — semilla
+- formación — semilla
+- rotación de personal — semilla
+- cultura de equipo — semilla
+- estándar de servicio — semilla
+- manual de operaciones — semilla
+- APPCC — semilla
+- limpieza — semilla
+- apertura — semilla
+- cierre — semilla
+- caja — semilla
+- reserva — semilla
+- reputación — semilla
+- competencia de barrio — semilla
+- proveedor local — semilla
+- sostenibilidad operativa — semilla
+- desperdicio — semilla
+- energía de cocina — semilla
+- agua — publicado (`es/hidrolisis-concepto-definicion`)
+- seguro — semilla
+- inspección — semilla
+- libro de reclamaciones — semilla
+- menú del día — semilla
+- carta — semilla
+- menú degustación — semilla
+
+### La profesión
+
+Oficios, brigada y el juicio que un agente no sustituye.
+
+3 publicados, 39 semillas.
+
+- chef — publicado (`es/tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro`)
+- jefe de cocina — semilla
+- sous chef — semilla
+- chef de partie — semilla
+- commis — semilla
+- pastelero — semilla
+- panadero — semilla
+- heladero — semilla
+- chocolatero — semilla
+- sumiller — semilla
+- jefe de sala — semilla
+- maître — semilla
+- camarero — semilla
+- barista — semilla
+- bartender — semilla
+- gerente — semilla
+- propietario — semilla
+- consultor gastronómico — semilla
+- F&B manager — semilla
+- brigada — semilla
+- partida — semilla
+- briefing — semilla
+- formación en el puesto — semilla
+- estándar — semilla
+- repetibilidad — semilla
+- oficio — semilla
+- juicio sensorial — semilla
+- fatiga de servicio — semilla
+- liderazgo de pase — semilla
+- relevo — semilla
+- cuaderno de partida — semilla
+- vocabulario de cocina — semilla
+- orden de trabajo — semilla
+- crítica de plato — semilla
+- cata — publicado (`es/deglasear-concepto-definicion`)
+- calibración del equipo — semilla
+- carrera — semilla
+- aprendizaje — publicado (`es/aprendizaje-automatico-machine-learning`)
+- mentor — semilla
+- escuela — semilla
+- prácticas — semilla
+- coste de un error en servicio — semilla

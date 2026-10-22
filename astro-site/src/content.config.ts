@@ -33,12 +33,22 @@ const blog = defineCollection({
     translations: z.object({
       es: z.string().optional(),
       en: z.string().optional(),
-      /** 2026-08-08: el blog IT nace como contenido NATIVO, no traducido, así
-       *  que normalmente NO llevará este campo. Se declara para el caso puntual
-       *  en que un post italiano SÍ sea la adaptación de uno español o inglés
-       *  (p. ej. una librería de prompts), donde el par hreflang es verdadero. */
+      fr: z.string().optional(),
+      de: z.string().optional(),
       it: z.string().optional(),
+      pt: z.string().optional(),
+      nl: z.string().optional(),
     }).optional(),
+    /**
+     * Término de glosario. Si está, BlogPost emite DefinedTerm además del
+     * FAQPage. La description es la definición directa (texto plano).
+     */
+    definedTerm: z
+      .object({
+        name: z.string(),
+        description: z.string(),
+      })
+      .optional(),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     /**
      * Pasos visibles de un procedimiento. Si está, BlogPost emite HowTo

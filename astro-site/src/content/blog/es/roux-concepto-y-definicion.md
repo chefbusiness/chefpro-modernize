@@ -1,15 +1,38 @@
 ---
-title: "Roux: tipos, proporción y cómo se hace"
-description: "El roux es la mezcla cocida de harina y grasa que espesa las salsas. Aprende los tipos (blanco, rubio y oscuro), la proporción 1:1 en peso y cómo evitar grumos."
+title: "Roux: harina cocida en grasa, antes del líquido"
+description: "El roux es harina cocida en grasa, a partes iguales en peso, antes del líquido. Blanco, rubio u oscuro. En alemán, Mehlschwitze. No es un beurre manié."
 pubDate: 2026-02-17
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/roux-destacada.jpg
 imageAlt: "Roux dorado removido en un cazo"
 lang: es
 wpId: 2730
+translations:
+  es: "roux-concepto-y-definicion"
+  en: "what-is-a-roux"
+  fr: "qu-est-ce-qu-un-roux"
+  de: "mehlschwitze"
+  it: "roux"
+  pt: "o-que-e-um-roux"
+  nl: "wat-is-een-roux"
+definedTerm:
+  name: "Roux"
+  description: "El roux es harina cocida en una grasa, a partes iguales en peso, antes de que entre el líquido. Ese cocinado quita el sabor a harina cruda y prepara el almidón para espesar sin grumos. Puede quedar blanco, rubio u oscuro. En alemán el mismo gesto se llama Mehlschwitze. No es la pasta cruda del beurre manié."
+faq:
+  - q: "¿Se puede hacer roux con otras grasas que no sean mantequilla?"
+    a: "Sí, absolutamente. Aunque la mantequilla es la grasa clásica por su sabor, puedes usar aceite de oliva, manteca de cerdo, grasa de pato o incluso aceite de girasol. La elección depende del plato: para un gumbo criollo, por ejemplo, se suele usar aceite vegetal; para una bechamel tradicional, mantequilla. Eso sí, cada grasa aporta un matiz distinto al resultado final."
+  - q: "¿Cuánto roux necesito para espesar un litro de líquido?"
+    a: "Depende de la textura que busques. Como referencia general, con 60-70 gramos de roux (30-35 g de harina + 30-35 g de grasa) consigues una bechamel ligera para un litro de leche. Si quieres una salsa más espesa para croquetas, sube a 100-120 gramos de roux por litro. Recuerda que el roux oscuro espesa menos, así que ajusta al alza."
+  - q: "¿Se puede conservar el roux ya hecho?"
+    a: "Sí, y es un truco que ahorra tiempo en cocina profesional. Una vez cocinado, extiende el roux en una bandeja para que enfríe rápido, pásalo a un recipiente hermético y guárdalo en la nevera hasta dos semanas. También puedes congelarlo en porciones y usarlo directamente desde el congelador sobre el líquido caliente."
+  - q: "¿Por qué mi bechamel sabe a harina aunque haya hecho roux?"
+    a: "Lo más probable es que el roux no se cocinara lo suficiente antes de añadir la leche. Incluso un roux blanco necesita un par de minutos de cocción para que la harina pierda el sabor a crudo. Otro motivo puede ser que hayas añadido la leche demasiado rápido, bajando bruscamente la temperatura de la mezcla y deteniendo la cocción de la harina."
+  - q: "¿El roux sin gluten funciona igual?"
+    a: "No exactamente igual, pero se puede hacer. Las harinas sin gluten (como la de arroz o la de maíz) tienen menos poder espesante y una textura algo más granulosa. Necesitarás más cantidad para lograr el mismo cuerpo y el sabor cambia ligeramente. Si trabajas en un restaurante con opciones sin gluten, vale la pena hacer pruebas hasta dar con la proporción adecuada para cada salsa."
 ---
-
+<p data-glosario-lead="1">El roux es harina cocida en una grasa, a partes iguales en peso, antes de que entre el líquido. Ese cocinado quita el sabor a harina cruda y prepara el almidón para espesar sin grumos. Puede quedar blanco, rubio u oscuro. En alemán el mismo gesto se llama Mehlschwitze. No es la pasta cruda del beurre manié.</p>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Calcula el coste de la salsa</p><p class="mt-2 text-foreground">Un fondo o una reducción se comen el margen si no los escandallas. La calculadora de food cost está en la web, sin salir del glosario hacia un agente de la app.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/calculadora-food-cost-restaurante?utm_source=web&amp;utm_medium=glosario&amp;utm_content=roux-concepto-y-definicion">Abrir la calculadora de food cost</a></p></aside>
 <p>El roux es una mezcla de harina y grasa —normalmente mantequilla— que se cocina a fuego lento para eliminar el sabor a harina cruda y conseguir un espesante base para salsas, sopas y guisos. Si alguna vez te has preguntado <strong>qué es el roux</strong> y por qué aparece en todas las recetas de cocina clásica, la respuesta es sencilla: es el pilar silencioso sobre el que se construyen la bechamel, la velouté y muchas otras preparaciones que dan cuerpo y textura a los platos.</p>
 <h2>Qué es el roux: mucho más que harina y mantequilla</h2>
 <p>Hablar de <strong>qué es el roux</strong> es hablar del ADN de la cocina francesa y, por extensión, de buena parte de la cocina profesional occidental. En esencia, el roux es un <strong>espesante cocido</strong> que actúa como agente ligante. La magia ocurre cuando el almidón de la harina se gelatiniza al entrar en contacto con un líquido caliente, pero solo si antes hemos cocinado esa harina en grasa para sellar los gránulos de almidón y evitar que formen grumos. Esa cocción previa en grasa es lo que diferencia un roux bien hecho de una simple papilla improvisada.</p>
@@ -97,18 +120,6 @@ wpId: 2730
 <p>Un roux oscuro no es un roux quemado. Si aparecen motas negras o el olor es acre en lugar de tostado, has pasado el punto de no retorno. No intentes aprovecharlo: el sabor amargo arruinará toda la preparación. Tira la mezcla, limpia la cacerola y empieza de nuevo con fuego más bajo.</p>
 <h3>Usar fuego demasiado alto</h3>
 <p>La paciencia es la gran virtud del cocinero que prepara roux. Un fuego alto quema la mantequilla por fuera mientras la harina sigue cruda por dentro. Trabaja siempre a fuego medio-bajo y dedícale el tiempo que pida cada tipo de roux.</p>
-<h2>Preguntas frecuentes</h2>
-<h3>¿Se puede hacer roux con otras grasas que no sean mantequilla?</h3>
-<p>Sí, absolutamente. Aunque la mantequilla es la grasa clásica por su sabor, puedes usar aceite de oliva, manteca de cerdo, grasa de pato o incluso aceite de girasol. La elección depende del plato: para un gumbo criollo, por ejemplo, se suele usar aceite vegetal; para una bechamel tradicional, mantequilla. Eso sí, cada grasa aporta un matiz distinto al resultado final.</p>
-<h3>¿Cuánto roux necesito para espesar un litro de líquido?</h3>
-<p>Depende de la textura que busques. Como referencia general, con 60-70 gramos de roux (30-35 g de harina + 30-35 g de grasa) consigues una bechamel ligera para un litro de leche. Si quieres una salsa más espesa para croquetas, sube a 100-120 gramos de roux por litro. Recuerda que el roux oscuro espesa menos, así que ajusta al alza.</p>
-<h3>¿Se puede conservar el roux ya hecho?</h3>
-<p>Sí, y es un truco que ahorra tiempo en cocina profesional. Una vez cocinado, extiende el roux en una bandeja para que enfríe rápido, pásalo a un recipiente hermético y guárdalo en la nevera hasta dos semanas. También puedes congelarlo en porciones y usarlo directamente desde el congelador sobre el líquido caliente.</p>
-<h3>¿Por qué mi bechamel sabe a harina aunque haya hecho roux?</h3>
-<p>Lo más probable es que el roux no se cocinara lo suficiente antes de añadir la leche. Incluso un roux blanco necesita un par de minutos de cocción para que la harina pierda el sabor a crudo. Otro motivo puede ser que hayas añadido la leche demasiado rápido, bajando bruscamente la temperatura de la mezcla y deteniendo la cocción de la harina.</p>
-<h3>¿El roux sin gluten funciona igual?</h3>
-<p>No exactamente igual, pero se puede hacer. Las harinas sin gluten (como la de arroz o la de maíz) tienen menos poder espesante y una textura algo más granulosa. Necesitarás más cantidad para lograr el mismo cuerpo y el sabor cambia ligeramente. Si trabajas en un restaurante con opciones sin gluten, vale la pena hacer pruebas hasta dar con la proporción adecuada para cada salsa.</p>
-
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Pizzería</h3><p class="mt-2 text-muted-foreground">Listas de prep, mise, servicio y delivery específicas.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=roux-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Pizzería por €12</a></aside>
 
 <h2>Sigue aprendiendo</h2>
@@ -121,5 +132,12 @@ wpId: 2730
 <li><a href="https://aichef.pro/blog/mayonesa-concepto-y-definicion">Mayonesa: concepto y definición</a></li>
 <li><a href="https://aichef.pro/blog/salsas-madre-cocina-guia">Salsas madre de la cocina: la guía completa</a></li>
 </ul>
-<p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Se puede hacer roux con otras grasas que no sean mantequilla?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, absolutamente. Aunque la mantequilla es la grasa clásica por su sabor, puedes usar aceite de oliva, manteca de cerdo, grasa de pato o incluso aceite de girasol. La elección depende del plato: para un gumbo criollo, por ejemplo, se suele usar aceite vegetal; para una bechamel tradicional, mantequilla. Eso sí, cada grasa aporta un matiz distinto al resultado final."}}, {"@type": "Question", "name": "¿Cuánto roux necesito para espesar un litro de líquido?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de la textura que busques. Como referencia general, con 60-70 gramos de roux (30-35 g de harina + 30-35 g de grasa) consigues una bechamel ligera para un litro de leche. Si quieres una salsa más espesa para croquetas, sube a 100-120 gramos de roux por litro. Recuerda que el roux oscuro espesa menos, así que ajusta al alza."}}, {"@type": "Question", "name": "¿Se puede conservar el roux ya hecho?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, y es un truco que ahorra tiempo en cocina profesional. Una vez cocinado, extiende el roux en una bandeja para que enfríe rápido, pásalo a un recipiente hermético y guárdalo en la nevera hasta dos semanas. También puedes congelarlo en porciones y usarlo directamente desde el congelador sobre el líquido caliente."}}, {"@type": "Question", "name": "¿Por qué mi bechamel sabe a harina aunque haya hecho roux?", "acceptedAnswer": {"@type": "Answer", "text": "Lo más probable es que el roux no se cocinara lo suficiente antes de añadir la leche. Incluso un roux blanco necesita un par de minutos de cocción para que la harina pierda el sabor a crudo. Otro motivo puede ser que hayas añadido la leche demasiado rápido, bajando bruscamente la temperatura de la mezcla y deteniendo la cocción de la harina."}}, {"@type": "Question", "name": "¿El roux sin gluten funciona igual?", "acceptedAnswer": {"@type": "Answer", "text": "No exactamente igual, pero se puede hacer. Las harinas sin gluten (como la de arroz o la de maíz) tienen menos poder espesante y una textura algo más granulosa. Necesitarás más cantidad para lograr el mismo cuerpo y el sabor cambia ligeramente. Si trabajas en un restaurante con opciones sin gluten, vale la pena hacer pruebas hasta dar con la proporción adecuada para cada salsa."}}]}</script></p>
-<p><script type="application/ld+json">{"@context": "https://schema.org", "@type": "DefinedTerm", "name": "Roux", "description": "El roux es una mezcla de harina y grasa —normalmente mantequilla— que se cocina a fuego lento para eliminar el sabor a harina cruda y conseguir un espesante base para salsas, sopas y guisos. Si alguna vez te has preguntado qué es el roux y por qué aparece en todas las recetas de cocina clásica, la r", "url": "https://aichef.pro/blog/roux-concepto-y-definicion", "inDefinedTermSet": {"@type": "DefinedTermSet", "name": "Glosario gastronómico y léxico culinario — AI Chef Pro", "url": "https://blog.aichef.pro/category/glosario-y-lexico-cientifico-culinario/"}}</script></p>
+
+<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
+<p>Se busca roux, rue por error, roux blanco, roux rubio y roux oscuro. En alemán el gesto se llama Mehlschwitze. No es un beurre manié: esa pasta va cruda y al final. Tampoco es una papilla de almidón. La proporción de la que habla la partida es partes iguales en peso, cocidas antes de mojar.</p>
+<ul>
+<li><a href="https://aichef.pro/blog/beurre-manie">Qué es el beurre manié</a></li>
+<li><a href="https://aichef.pro/blog/papilla-de-almidon">La papilla de almidón</a></li>
+<li><a href="https://aichef.pro/blog/demi-glace-concepto-y-definicion">Qué es la demi-glace</a></li>
+</ul>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Prueba los agentes de IA</p><p class="mt-2 text-foreground">Entra como invitado y pregunta por esta técnica. La puerta es la de invitado, no la ficha de un agente.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=roux-concepto-y-definicion">Entrar como invitado</a></p></aside>

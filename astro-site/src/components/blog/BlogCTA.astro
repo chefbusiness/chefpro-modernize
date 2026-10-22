@@ -21,7 +21,8 @@ interface Props {
 const { utmContent = 'blog-post', lang = 'es' } = Astro.props;
 const appUrl = `${plataforma(lang)}/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
 
-// Copy por idioma; nl no tiene blog todavía y cae al español.
+// Copy por idioma. nl tiene blog desde 2026-10-22: sin esta entrada el CTA
+// neerlandés salía en castellano.
 // 2026-08-17 — FIN DEL PLAN GRATIS (fase11, 2026-08-15): este componente se
 // escapó del barrido y siguió diciendo «Pruébalo gratis» en 4 idiomas hasta
 // hoy. Copy nuevo con el framing de John («planes para todos los bolsillos,
@@ -65,6 +66,12 @@ const COPY = {
     body:
       'Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Planes para todos los bolsillos, desde 10 €/mes.',
     cta: 'Descubrir AI Chef Pro',
+  },
+  nl: {
+    heading: '75+ culinaire AI-agents aan het werk voor uw zaak',
+    body:
+      'Receptkostprijs, kaarten, HACCP, horecamarketing en meer. Abonnementen voor elk budget, vanaf € 10 per maand.',
+    cta: 'Ontdek AI Chef Pro',
   },
 } as const;
 
