@@ -23,3 +23,30 @@ export const APP_URLS = {
   pt: 'https://ptapp.aichef.pro',
   nl: 'https://nlapp.aichef.pro',
 } as const;
+
+export type AppLang = keyof typeof APP_URLS;
+
+/**
+ * Enlace a la plataforma con el mismo esquema UTM que precios y el CTA del blog:
+ * utm_source + utm_medium + utm_content. `path` es la ruta dentro del subdominio
+ * (por defecto la raíz).
+ *
+ * Sin cross-domain linker. aichef.pro y los subdominios *app comparten dominio
+ * registrable: gtag guarda `_gcl_aw` en `.aichef.pro` y el subdominio la lee
+ * sola (GoogleTag.astro). Añadir `linker` reescribiría el clic y puede pisar
+ * esa cookie. Estas URLs solo añaden query string; no tocan gtag ni el banner.
+ */
+export function appCtaUrl(
+  lang: string,
+  medium: string,
+  content: string,
+  path = '/',
+): string {
+  const base = (APP_URLS[lang as AppLang] ?? APP_URLS.es).replace(/\/$/, '');
+  const clean = path.startsWith('/') ? path : `/${path}`;
+  const url = new URL(`${base}${clean === '/' ? '/' : clean}`);
+  url.searchParams.set('utm_source', 'web');
+  url.searchParams.set('utm_medium', medium);
+  url.searchParams.set('utm_content', content);
+  return url.toString();
+}

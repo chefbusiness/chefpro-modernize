@@ -1,8 +1,8 @@
 ---
-title: "Roner: Concepto y Definición"
-description: "Equipo esencial para cocina a baja temperatura. Conoce qué es un roner y cómo revoluciona la cocina."
+title: "Roner: qué es el termocirculador"
+description: "Un roner es un termocirculador de inmersión: calienta el agua a una temperatura fija y la hace circular. Es el equipo de la cocción a baja temperatura."
 pubDate: 2026-03-02
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/roner-destacada.jpg
 imageAlt: "Roner termocirculador en cubeta"

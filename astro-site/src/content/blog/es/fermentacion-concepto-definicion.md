@@ -1,8 +1,8 @@
 ---
-title: "Fermentación: Concepto y Definición"
-description: "Descubre qué es la fermentación: proceso microbiano anaeróbico que transforma alimentos. Tipos (láctica, alcohólica, acética), beneficios para la salud, y…"
+title: "Fermentación: qué es y qué tipos hay"
+description: "La fermentación es un proceso microbiano anaeróbico que transforma los alimentos. Tipos láctica, alcohólica y acética, y qué aporta en cocina."
 pubDate: 2026-03-18
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/fermentacion-featured.jpg
 imageAlt: "Fermentación: Concepto y Definición"

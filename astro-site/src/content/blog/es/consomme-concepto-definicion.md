@@ -1,8 +1,8 @@
 ---
-title: "Consommé: Concepto y Definición"
-description: "Descubre qué es el consommé: caldo clarificado cristalino de la alta cocina francesa. Técnica de clarificación con raft, historia con Escoffier, tipos y…"
+title: "Consomé: qué es el caldo clarificado"
+description: "El consomé es un caldo clarificado, cristalino y concentrado, de la alta cocina francesa. En qué se aparta de un caldo y qué exige la clarificación."
 pubDate: 2026-03-14
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/consomme-featured.jpg
 imageAlt: "Consommé: Concepto y Definición"

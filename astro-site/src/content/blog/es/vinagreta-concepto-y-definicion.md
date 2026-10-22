@@ -1,8 +1,8 @@
 ---
-title: "Vinagreta: Concepto y Definición"
-description: "Emulsión temporal de aceite y vinagre para ensaladas."
+title: "Vinagreta: qué es y la proporción clásica"
+description: "La vinagreta es un aliño frío de aceite y vinagre, en la proporción clásica de tres a uno. Es una emulsión temporal: la mostaza ayuda a estabilizarla."
 pubDate: 2026-02-22
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/05/vinagreta-destacada.jpg
 imageAlt: "Vinagreta emulsionada en frasco"

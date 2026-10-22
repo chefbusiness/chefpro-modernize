@@ -1,8 +1,11 @@
+import { useState, type FormEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { Facebook, Instagram, Twitter, Youtube, Music } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import { appCtaUrl } from '@/lib/app-urls';
+import { subscribeLead } from '@/lib/subscribe-lead';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 
 // El hub de herramientas gratuitas existe en los 7 idiomas. Antes estaba
@@ -137,10 +140,52 @@ const MENTORIA_SLUGS: Record<string, string> = {
 };
 
 export default function ModernFooter() {
-  const { getAppUrl, currentLanguage, t } = useLanguage();
+  const { currentLanguage, t } = useLanguage();
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterConsent, setNewsletterConsent] = useState(false);
+  const [newsletterCompany, setNewsletterCompany] = useState('');
+  const [newsletterPending, setNewsletterPending] = useState(false);
+  const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'ok' | 'error'>('idle');
+  const [newsletterError, setNewsletterError] = useState('');
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    const email = newsletterEmail.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setNewsletterStatus('error');
+      setNewsletterError(t('footer.newsletter_invalid'));
+      return;
+    }
+    if (!newsletterConsent) {
+      setNewsletterStatus('error');
+      setNewsletterError(t('footer.newsletter_consent_required'));
+      return;
+    }
+    setNewsletterPending(true);
+    setNewsletterStatus('idle');
+    const result = await subscribeLead({
+      email,
+      lang: currentLanguage,
+      source: 'newsletter',
+      consent: true,
+      company: newsletterCompany,
+    });
+    setNewsletterPending(false);
+    if (result.ok) {
+      setNewsletterStatus('ok');
+      setNewsletterEmail('');
+      setNewsletterConsent(false);
+      setNewsletterCompany('');
+      return;
+    }
+    setNewsletterStatus('error');
+    setNewsletterError(
+      result.error === 'invalid_email'
+        ? t('footer.newsletter_invalid')
+        : result.error === 'consent_required'
+          ? t('footer.newsletter_consent_required')
+          : t('footer.newsletter_error'),
+    );
   };
 
   const legalHref = (slug: string) =>
@@ -179,15 +224,51 @@ export default function ModernFooter() {
           {/* Newsletter */}
           <div className="lg:col-span-2">
             <h4 className="text-sm font-semibold">{t('footer.newsletter_title')}</h4>
-            <form onSubmit={handleNewsletterSubmit} className="mt-3 flex max-w-md gap-2">
-              <Input
-                type="email"
-                placeholder={t('footer.newsletter_placeholder')}
-                className="flex-1"
+            <form onSubmit={handleNewsletterSubmit} className="mt-3 max-w-md space-y-2" noValidate>
+              <div className="flex gap-2">
+                <Input
+                  type="email"
+                  required
+                  autoComplete="email"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  placeholder={t('footer.newsletter_placeholder')}
+                  className="flex-1"
+                />
+                <Button type="submit" size="sm" disabled={newsletterPending}>
+                  {newsletterPending ? t('footer.newsletter_sending') : t('footer.newsletter_button')}
+                </Button>
+              </div>
+              <label className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
+                <input
+                  type="checkbox"
+                  required
+                  checked={newsletterConsent}
+                  onChange={(e) => setNewsletterConsent(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border border-input"
+                />
+                <span>
+                  {t('footer.newsletter_consent')}{' '}
+                  <a href={legalHref('privacidad')} className="underline underline-offset-2 hover:text-foreground">
+                    {t('footer.privacy')}
+                  </a>
+                </span>
+              </label>
+              <input
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                value={newsletterCompany}
+                onChange={(e) => setNewsletterCompany(e.target.value)}
+                className="hidden"
               />
-              <Button type="submit" size="sm">
-                {t('footer.newsletter_button')}
-              </Button>
+              {newsletterStatus === 'ok' && (
+                <p role="status" className="text-xs text-emerald-700">{t('footer.newsletter_success')}</p>
+              )}
+              {newsletterStatus === 'error' && (
+                <p role="alert" className="text-xs text-red-600">{newsletterError}</p>
+              )}
             </form>
           </div>
         </div>
@@ -305,7 +386,7 @@ export default function ModernFooter() {
               )}
               <li>
                 <a
-                  href={getAppUrl(lang)}
+                  href={appCtaUrl(lang, 'footer', 'planes')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -434,7 +515,7 @@ export default function ModernFooter() {
               )}
               <li>
                 <a
-                  href={getAppUrl(lang)}
+                  href={appCtaUrl(lang, 'footer', 'herramientas')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -460,7 +541,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href={getAppUrl(lang)}
+                  href={appCtaUrl(lang, 'footer', 'login')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"

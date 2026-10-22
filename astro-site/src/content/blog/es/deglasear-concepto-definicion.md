@@ -1,8 +1,8 @@
 ---
-title: "Deglasear: Concepto y Definición"
-description: "Descubre qué es deglasear: técnica culinaria para recuperar jugos caramelizados y crear salsas. El fond o sucs, líquidos adecuados, proceso paso a paso y…"
+title: "Deglasar: qué es y cómo rescatar el fondo"
+description: "Deglasar es recuperar con un líquido los jugos caramelizados del fondo de la sartén. Para qué sirve y cómo ese fondo se convierte en salsa."
 pubDate: 2026-03-17
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/deglasear-featured.jpg
 imageAlt: "Deglasear: Concepto y Definición"
