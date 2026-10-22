@@ -1,20 +1,22 @@
 ---
 // CategoryCTAs.astro — port de CategoryCTAs.tsx.
-// Botones con window.open(`${appUrl}${path}`) → <a target="_blank"> (idiom Hero.astro);
+// Botones con window.open → <a target="_blank"> (idiom Hero.astro).
+// El destino es la home de invitado del idioma, no la ruta del agente: esa
+// página sale vacía («No content is available yet») si no hay sesión.
 // Button reproducido inline; iconos lucide dinámicos renderizados server-side (SVG estático). Sin JS.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { ChefHat, Globe, Calculator, Camera } from 'lucide-react';
-import { appCtaUrl } from '../lib/app-url';
+import { appCtaUrl, guestHomePath } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
 const ctaButtons = [
-  { id: 'creativity', icon: ChefHat, title: t(lang, 'category_ctas.creativity.title'), description: t(lang, 'category_ctas.creativity.description'), path: '/cocina-creativa', color: 'from-orange-500 to-red-600' },
-  { id: 'world', icon: Globe, title: t(lang, 'category_ctas.world.title'), description: t(lang, 'category_ctas.world.description'), path: '/recetarios', color: 'from-blue-500 to-cyan-600' },
-  { id: 'business', icon: Calculator, title: t(lang, 'category_ctas.business.title'), description: t(lang, 'category_ctas.business.description'), path: '/herramientas', color: 'from-green-500 to-emerald-600' },
-  { id: 'marketing', icon: Camera, title: t(lang, 'category_ctas.marketing.title'), description: t(lang, 'category_ctas.marketing.description'), path: '/contenidos', color: 'from-purple-500 to-pink-600' },
+  { id: 'creativity', icon: ChefHat, title: t(lang, 'category_ctas.creativity.title'), description: t(lang, 'category_ctas.creativity.description'), color: 'from-orange-500 to-red-600' },
+  { id: 'world', icon: Globe, title: t(lang, 'category_ctas.world.title'), description: t(lang, 'category_ctas.world.description'), color: 'from-blue-500 to-cyan-600' },
+  { id: 'business', icon: Calculator, title: t(lang, 'category_ctas.business.title'), description: t(lang, 'category_ctas.business.description'), color: 'from-green-500 to-emerald-600' },
+  { id: 'marketing', icon: Camera, title: t(lang, 'category_ctas.marketing.title'), description: t(lang, 'category_ctas.marketing.description'), color: 'from-purple-500 to-pink-600' },
 ];
 ---
 
@@ -44,7 +46,7 @@ const ctaButtons = [
                 <p class="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 leading-relaxed">{cta.description}</p>
               </div>
               <a
-                href={appCtaUrl(lang, 'home-categorias', cta.id, cta.path)}
+                href={appCtaUrl(lang, 'home-categorias', cta.id, guestHomePath(lang))}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"

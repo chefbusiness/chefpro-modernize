@@ -2,12 +2,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '@/components/ui/button';
 import { creativityApps } from '@/data/apps';
 import { useLanguage } from '@/hooks/useLanguage';
+import { appCtaUrl, guestHomePath } from '@/lib/app-urls';
 
 export default function CreatividadShowcase() {
-  const { getAppUrl, currentLanguage, t } = useLanguage();
+  const { currentLanguage, t } = useLanguage();
 
   const handleAppClick = (appSlug: string) => {
-    window.open(`${getAppUrl(currentLanguage)}/${appSlug}`, '_blank');
+    window.open(appCtaUrl(currentLanguage, 'home-creatividad', appSlug, guestHomePath(currentLanguage)), '_blank');
   };
 
   // Mapeo de colores individuales por app
