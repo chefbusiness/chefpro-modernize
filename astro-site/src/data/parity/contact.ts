@@ -155,7 +155,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
   de: {
     title: 'Kontakt zu KI-Agenten für Ihre Küche | AI Chef Pro',
     description:
-      'Kontakt zu KI-Agenten für Köche: schreiben Sie an info@aichef.pro, nutzen Sie die App oder WhatsApp. Eine Person antwortet in 24–48 Werktagen.',
+      'Kontakt zu KI-Agenten für Köche: schreiben Sie an info@aichef.pro, nutzen Sie die App oder WhatsApp. Eine Person antwortet in 24–48 Stunden.',
     keywords: 'AI Chef Pro Kontakt, Support Gastronomie KI, AI Chef Pro E-Mail',
     eyebrow: 'Kontakt',
     h1: 'Schreiben Sie uns: Es antwortet ein Mensch',
