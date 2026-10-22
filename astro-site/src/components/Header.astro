@@ -1,8 +1,10 @@
 ---
 // Header.astro — port de ModernHeader.tsx + AnnouncementBar.tsx (paridad visual).
-// Sin React: mega-menús desktop = hover CSS (group), dropdown idioma = enlaces planos,
-// menú móvil = panel deslizante con <script> vanilla mínimo, colapsables = <details>.
+// Sin React: mega-menús desktop con intención de hover (puente + cierre ~280 ms),
+// clic, teclado y táctil; dropdown idioma = enlaces planos; menú móvil = panel
+// deslizante con script vanilla mínimo, colapsables = details.
 import { t } from '../i18n/translations';
+import Icon from './Icon.astro';
 import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
 import { tiendaHref, TIENDA_NOMBRE } from '../lib/tienda';
@@ -167,11 +169,125 @@ const annHref =
     : lang === 'en'
       ? '/en/blog/best-ai-tools-for-chefs-2026'
       : (FREE_TOOLS_HUB[lang] ?? FREE_TOOLS_HUB.es);
-const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 // Tienda de productos digitales: solo en los idiomas con tienda ACTIVA (lib/tienda.ts); fr nunca
 // enlaza a la tienda ES.
 const tiendaUrl = tiendaHref(lang);
 const tiendaLabel = TIENDA_NOMBRE[lang];
+
+// Iconos lucide (Icon.astro, la misma librería inline del sitio). El tono de
+// cada opción de Servicios conserva el color que ya identificaba la landing.
+const servicioItems = [
+  {
+    href: mentoriaHref,
+    label: t(lang, 'nav.mentoria_online'),
+    desc: pick({ es: 'Sesiones 1:1 para tu cocina', en: '1:1 sessions for your kitchen', fr: 'Séances individuelles pour votre cuisine', de: 'Einzelgespräche für Ihre Küche', it: 'Sessioni individuali per la tua cucina', pt: 'Sessões individuais para a sua cozinha', nl: 'Individuele sessies voor uw keuken' }, 'Sesiones 1:1 para tu cocina'),
+    icon: 'GraduationCap',
+    well: 'bg-accent text-accent-foreground',
+    title: 'text-foreground',
+  },
+  {
+    href: trainingHref,
+    label: t(lang, 'nav.formacion_presencial'),
+    desc: pick({ es: 'Cursos presenciales con tu equipo', en: 'On-site courses with your team', fr: 'Cours sur place avec votre équipe', de: 'Präsenzkurse mit Ihrem Team', it: 'Corsi in sede con il tuo team', pt: 'Cursos presenciais com a sua equipe', nl: 'Trainingen op locatie met uw team' }, 'Cursos presenciales con tu equipo'),
+    icon: 'Building2',
+    well: 'bg-accent text-accent-foreground',
+    title: 'text-foreground',
+  },
+  {
+    href: aiTools,
+    label: t(lang, 'nav.herramientas_ia'),
+    desc: pick({ es: 'La suite de agentes para el restaurante', en: 'The agent suite for your restaurant', fr: "La suite d'agents pour votre restaurant", de: 'Die Agenten-Suite für Ihr Restaurant', it: 'La suite di agenti per il ristorante', pt: 'A suite de agentes para o restaurante', nl: 'De agentensuite voor uw restaurant' }, 'La suite de agentes para el restaurante'),
+    icon: 'Sparkles',
+    well: 'bg-primary/10 text-primary',
+    title: 'text-primary',
+  },
+  {
+    href: costes,
+    label: t(lang, 'nav.reducir_costes'),
+    desc: pick({ es: 'Food cost, mermas y escandallos', en: 'Food cost, waste and recipe costing', fr: 'Food cost, pertes et fiches techniques', de: 'Wareneinsatz, Schwund und Kalkulation', it: 'Food cost, sprechi e schede ricetta', pt: 'Food cost, desperdício e fichas técnicas', nl: 'Foodcost, derving en calculatie' }, 'Food cost, mermas y escandallos'),
+    icon: 'TrendingDown',
+    well: 'bg-red-500/10 text-red-600',
+    title: 'text-red-600',
+  },
+  {
+    href: menuSlug,
+    label: t(lang, 'nav.carta_menu'),
+    desc: pick({ es: 'Ingeniería de carta con IA', en: 'Menu engineering with AI', fr: "Ingénierie de carte avec l'IA", de: 'Speisekarten-Engineering mit KI', it: "Ingegneria del menu con l'IA", pt: 'Engenharia de cardápio com IA', nl: 'Menukaart-engineering met AI' }, 'Ingeniería de carta con IA'),
+    icon: 'Utensils',
+    well: 'bg-emerald-500/10 text-emerald-600',
+    title: 'text-emerald-600',
+  },
+  {
+    href: marketing,
+    label: t(lang, 'nav.marketing_ia'),
+    desc: pick({ es: 'Contenido y captación de clientes', en: 'Content and guest acquisition', fr: 'Contenu et acquisition de clients', de: 'Inhalte und Gästegewinnung', it: 'Contenuti e acquisizione clienti', pt: 'Conteúdo e captação de clientes', nl: 'Content en gastenwerving' }, 'Contenido y captación de clientes'),
+    icon: 'Megaphone',
+    well: 'bg-violet-500/10 text-violet-600',
+    title: 'text-violet-600',
+  },
+  {
+    href: chatgpt,
+    label: t(lang, 'nav.chatgpt_ia'),
+    desc: pick({ es: 'Usos prácticos en cocina y sala', en: 'Practical uses in kitchen and service', fr: 'Usages pratiques en cuisine et en salle', de: 'Praktische Einsätze in Küche und Service', it: 'Usi pratici in cucina e in sala', pt: 'Usos práticos na cozinha e na sala', nl: 'Praktisch gebruik in keuken en bediening' }, 'Usos prácticos en cocina y sala'),
+    icon: 'MessageSquare',
+    well: 'bg-indigo-500/10 text-indigo-600',
+    title: 'text-indigo-600',
+  },
+];
+const serviciosIntro = pick({ es: 'Formación, operación y captación', en: 'Training, operations and demand', fr: 'Formation, exploitation et acquisition', de: 'Schulung, Betrieb und Nachfrage', it: 'Formazione, operatività e acquisizione', pt: 'Formação, operação e captação', nl: 'Training, operatie en vraag' }, 'Formación, operación y captación');
+const porRolIntro = pick({ es: 'Quién lleva el negocio', en: 'Who runs the business', fr: "Qui pilote l'activité", de: 'Wer den Betrieb führt', it: "Chi guida l'attività", pt: 'Quem conduz o negócio', nl: 'Wie de zaak leidt' }, 'Quién lleva el negocio');
+const porConceptoIntro = pick({ es: 'El formato del local', en: 'The venue format', fr: "Le format de l'établissement", de: 'Das Format des Betriebs', it: 'Il formato del locale', pt: 'O formato do espaço', nl: 'Het format van de zaak' }, 'El formato del local');
+const porCiudadIntro = 'Apertura en España y Latinoamérica';
+
+const ROLE_ICON: Record<string, string> = {
+  'propietario-restaurante': 'Crown',
+  'gerente-restaurante': 'UserCog',
+  'chef-ejecutivo-corporativo': 'BriefcaseBusiness',
+  'chef-jefe-cocina': 'ChefHat',
+  'chef-catering': 'Truck',
+};
+const CONCEPT_ICON: Record<string, string> = {
+  'restaurante-casual': 'Utensils',
+  pizzeria: 'Pizza',
+  'dark-kitchen': 'Warehouse',
+  'catering-eventos': 'PartyPopper',
+  'hotel-completo-fb': 'Hotel',
+  'restaurante-gastronomico-michelin': 'Award',
+};
+
+const agenteCols = [
+  {
+    icon: 'Sparkles',
+    title: t(lang, 'categories_labels.creatividad'),
+    desc: t(lang, 'categories.creativity.description'),
+    items: [
+      { href: sectionHref('showcase-creatividad'), label: t(lang, 'nav.creatividad'), desc: '', icon: 'Sparkles' },
+      { href: sectionHref('showcase-creatividad'), label: t(lang, 'apps.creativity.pasteleria_creativa.name'), desc: t(lang, 'apps.creativity.pasteleria_creativa.description'), icon: 'Cake' },
+      { href: sectionHref('showcase-creatividad'), label: t(lang, 'apps.creativity.food_pairing.name'), desc: t(lang, 'apps.creativity.food_pairing.description'), icon: 'FlaskConical' },
+    ],
+  },
+  {
+    icon: 'BookOpen',
+    title: t(lang, 'categories_labels.recetarios'),
+    desc: t(lang, 'categories.cookbooks.description'),
+    items: [
+      { href: sectionHref('recetarios'), label: t(lang, 'categories.world_cookbooks.europa.name'), desc: t(lang, 'categories.world_cookbooks.europa.count'), icon: 'Wheat' },
+      { href: sectionHref('recetarios'), label: t(lang, 'categories.world_cookbooks.latinoamerica.name'), desc: t(lang, 'categories.world_cookbooks.latinoamerica.count'), icon: 'Palmtree' },
+      { href: sectionHref('recetarios'), label: t(lang, 'categories.world_cookbooks.asia.name'), desc: t(lang, 'categories.world_cookbooks.asia.count'), icon: 'UtensilsCrossed' },
+    ],
+  },
+  {
+    icon: 'BriefcaseBusiness',
+    title: t(lang, 'showcase.business_title'),
+    desc: t(lang, 'showcase.business_description'),
+    items: [
+      { href: sectionHref('herramientas-business'), label: t(lang, 'apps.business.mermas_gencal.name'), desc: t(lang, 'apps.business.mermas_gencal.description'), icon: 'Recycle' },
+      { href: sectionHref('herramientas-business'), label: t(lang, 'apps.business.id_alergenos.name'), desc: t(lang, 'apps.business.id_alergenos.description'), icon: 'ShieldAlert' },
+      { href: sectionHref('herramientas-business'), label: t(lang, 'apps.business.mental_coach.name'), desc: t(lang, 'apps.business.mental_coach.description'), icon: 'Heart' },
+    ],
+  },
+];
+const megaTriggerClass = 'nav-mega-trigger inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-3 2xl:px-4 py-2 text-sm font-medium text-foreground/60 transition-colors hover:bg-accent hover:text-foreground focus-visible:bg-accent focus-visible:text-foreground focus-visible:outline-none';
 ---
 
 <div class="sticky top-0 z-50">
@@ -198,119 +314,194 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
           <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro Logo" class="h-6 sm:h-8 w-auto max-w-none shrink-0" />
         </a>
 
-        <!-- Desktop nav (mega-menús vía hover CSS) -->
+        <!-- Desktop nav. El <ul> no lleva "group": un hover abriría todos los paneles (bug 2026-07-03). -->
         <nav class={`relative z-10 hidden max-w-max flex-1 items-center justify-center ${deskNavShow}`}>
-          <!-- OJO: el <ul> NO puede llevar clase "group" — es ancestro de todos los paneles
-               y un hover en cualquier item abriría todos los mega-menús a la vez (bug 2026-07-03). -->
           <ul class="flex flex-1 list-none items-center justify-center space-x-1">
             <li class="hidden 2xl:block">
               <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={homeHref}>{t(lang, 'nav.inicio')}</a>
             </li>
 
             <!-- Servicios -->
-            <li class="group relative">
-              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-3 2xl:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+            <li class="nav-mega relative" data-mega>
+              <button type="button" class={megaTriggerClass} data-mega-trigger aria-expanded="false" aria-haspopup="true" aria-controls="mega-servicios">
                 {t(lang, 'nav.servicios')}
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-mega-chevron relative top-[1px] ml-1 h-3 w-3" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
               </button>
-              <div class="invisible absolute left-0 top-full z-50 mt-1.5 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 rounded-md border bg-popover text-popover-foreground shadow-lg">
-                <div class="grid w-[400px] gap-3 p-4 md:grid-cols-1">
-                  <div class="space-y-2">
-                    <h4 class="font-medium leading-none text-accent">{t(lang, 'nav.servicios')}</h4>
-                    <div class="grid gap-1">
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={mentoriaHref}>{t(lang, 'nav.mentoria_online')}</a>
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={trainingHref}>{t(lang, 'nav.formacion_presencial')}</a>
-                      <a class="block text-sm font-medium text-primary hover:text-primary/80 transition-colors py-1" href={aiTools}>{t(lang, 'nav.herramientas_ia')}</a>
-                      <a class="block text-sm font-medium text-red-600 hover:text-red-500 transition-colors py-1" href={costes}>{t(lang, 'nav.reducir_costes')}</a>
-                      <a class="block text-sm font-medium text-emerald-600 hover:text-emerald-500 transition-colors py-1" href={menuSlug}>{t(lang, 'nav.carta_menu')}</a>
-                      <a class="block text-sm font-medium text-violet-600 hover:text-violet-500 transition-colors py-1" href={marketing}>{t(lang, 'nav.marketing_ia')}</a>
-                      <a class="block text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors py-1" href={chatgpt}>{t(lang, 'nav.chatgpt_ia')}</a>
-                    </div>
+              <div id="mega-servicios" class="nav-mega-panel" data-mega-panel role="region" aria-label={t(lang, 'nav.servicios')}>
+                <div class="w-[28rem] max-w-[calc(100vw-2rem)] overflow-hidden rounded-xl border bg-popover text-popover-foreground shadow-lg">
+                  <div class="flex items-center gap-2.5 border-b px-4 py-3">
+                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground" aria-hidden="true">
+                      <Icon name="Briefcase" class="h-4 w-4" />
+                    </span>
+                    <span class="min-w-0">
+                      <span class="block text-sm font-semibold leading-none">{t(lang, 'nav.servicios')}</span>
+                      <span class="mt-1 block text-xs text-muted-foreground">{serviciosIntro}</span>
+                    </span>
+                  </div>
+                  <div class="grid gap-0.5 p-2">
+                    {servicioItems.map((item) => (
+                      <a class="flex items-start gap-3 rounded-lg px-2 py-2 transition-colors hover:bg-accent/70 focus-visible:bg-accent focus-visible:outline-none" href={item.href}>
+                        <span class:list={['mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg', item.well]} aria-hidden="true">
+                          <Icon name={item.icon} class="h-4 w-4" />
+                        </span>
+                        <span class="min-w-0">
+                          <span class:list={['block text-sm font-medium leading-snug', item.title]}>{item.label}</span>
+                          <span class="mt-0.5 block text-xs leading-snug text-muted-foreground">{item.desc}</span>
+                        </span>
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>
             </li>
 
             <!-- Casos de uso -->
-            <li class="group relative">
-              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-3 2xl:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+            <li class="nav-mega relative" data-mega>
+              <button type="button" class={megaTriggerClass} data-mega-trigger aria-expanded="false" aria-haspopup="true" aria-controls="mega-casos">
                 {casosLabel}
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-mega-chevron relative top-[1px] ml-1 h-3 w-3" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
               </button>
-              <div class="invisible absolute left-0 top-full z-50 mt-1.5 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 rounded-md border bg-popover text-popover-foreground shadow-lg">
-                <div class={`grid gap-4 p-4 ${lang === 'es' ? 'w-[960px] md:grid-cols-3' : 'w-[640px] md:grid-cols-2'}`}>
-                  <div class="space-y-2">
-                    <h4 class="font-medium leading-none text-accent">{porRolLabel}</h4>
-                    <div class="grid gap-1">
-                      {roleItems.map((item) => {
-                        const d = pickItem(item);
-                        return <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`${rolePrefix}/${d.slug}`}>{d.label}</a>;
-                      })}
-                      <a class="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1" href={usosHub}>{verRolesLabel}</a>
-                      <div class="mt-3 pt-3 border-t">
-                        <a class="block px-3 py-2 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/5 hover:from-indigo-500/15 hover:to-purple-500/10 transition-colors" href={consultorHref}>
-                          <div class="font-semibold text-sm text-indigo-700">{consultorTitle}</div>
-                          <div class="text-xs text-muted-foreground mt-0.5">{consultorDesc}</div>
+              <div id="mega-casos" class="nav-mega-panel" data-mega-panel role="region" aria-label={casosLabel}>
+                <div class={`overflow-hidden rounded-xl border bg-popover text-popover-foreground shadow-lg ${lang === 'es' ? 'w-[min(960px,calc(100vw-2rem))]' : 'w-[min(680px,calc(100vw-2rem))]'}`}>
+                  <div class={`grid gap-2 p-3 ${lang === 'es' ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+                    <div>
+                      <div class="mb-1 flex items-center gap-2.5 px-2 py-1.5">
+                        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground" aria-hidden="true">
+                          <Icon name="Users" class="h-4 w-4" />
+                        </span>
+                        <span class="min-w-0">
+                          <span class="block text-sm font-semibold leading-none text-accent">{porRolLabel}</span>
+                          <span class="mt-1 block text-xs text-muted-foreground">{porRolIntro}</span>
+                        </span>
+                      </div>
+                      <div class="grid">
+                        {roleItems.map((item) => {
+                          const d = pickItem(item);
+                          return (
+                            <a class="flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm text-foreground/80 transition-colors hover:bg-accent hover:text-foreground focus-visible:bg-accent focus-visible:outline-none" href={`${rolePrefix}/${d.slug}`}>
+                              <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-muted text-foreground" aria-hidden="true">
+                                <Icon name={ROLE_ICON[item.es.slug] || 'Users'} class="h-3.5 w-3.5" />
+                              </span>
+                              <span class="min-w-0 leading-snug">{d.label}</span>
+                            </a>
+                          );
+                        })}
+                        <a class="mt-1 flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm font-semibold text-primary transition-colors hover:bg-accent focus-visible:bg-accent focus-visible:outline-none" href={usosHub}>
+                          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary" aria-hidden="true">
+                            <Icon name="LayoutGrid" class="h-3.5 w-3.5" />
+                          </span>
+                          {verRolesLabel}
+                        </a>
+                        <a class="mt-2 flex items-start gap-2.5 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/5 px-2.5 py-2 transition-colors hover:from-indigo-500/15 hover:to-purple-500/10" href={consultorHref}>
+                          <span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-indigo-500/15 text-indigo-700" aria-hidden="true">
+                            <Icon name="Sparkles" class="h-3.5 w-3.5" />
+                          </span>
+                          <span class="min-w-0">
+                            <span class="block text-sm font-semibold text-indigo-700">{consultorTitle}</span>
+                            <span class="mt-0.5 block text-xs text-muted-foreground">{consultorDesc}</span>
+                          </span>
                         </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="space-y-2">
-                    <h4 class="font-medium leading-none text-accent">{porConceptoLabel}</h4>
-                    <div class="grid gap-1">
-                      {conceptItems.map((item) => {
-                        const d = pickItem(item);
-                        return <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`${conceptPrefix}/${d.slug}`}>{d.label}</a>;
-                      })}
-                      <a class="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1" href={usosHub}>{verConceptosLabel}</a>
-                    </div>
-                  </div>
-                  {lang === 'es' && (
-                    <div class="space-y-2">
-                      <h4 class="font-medium leading-none text-accent">Por ciudad</h4>
-                      <div class="grid gap-1">
-                        {cityItems.map((c) => (
-                          <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`/abrir-restaurante/${c.slug}`}>Abrir restaurante en {c.label}</a>
-                        ))}
-                        <a class="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1" href="/seo-restaurantes-por-ciudad">Ver 15 ciudades + 5 recursos →</a>
+                    <div>
+                      <div class="mb-1 flex items-center gap-2.5 px-2 py-1.5">
+                        <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground" aria-hidden="true">
+                          <Icon name="Store" class="h-4 w-4" />
+                        </span>
+                        <span class="min-w-0">
+                          <span class="block text-sm font-semibold leading-none text-accent">{porConceptoLabel}</span>
+                          <span class="mt-1 block text-xs text-muted-foreground">{porConceptoIntro}</span>
+                        </span>
+                      </div>
+                      <div class="grid">
+                        {conceptItems.map((item) => {
+                          const d = pickItem(item);
+                          return (
+                            <a class="flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm text-foreground/80 transition-colors hover:bg-accent hover:text-foreground focus-visible:bg-accent focus-visible:outline-none" href={`${conceptPrefix}/${d.slug}`}>
+                              <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-muted text-foreground" aria-hidden="true">
+                                <Icon name={CONCEPT_ICON[item.es.slug] || 'Store'} class="h-3.5 w-3.5" />
+                              </span>
+                              <span class="min-w-0 leading-snug">{d.label}</span>
+                            </a>
+                          );
+                        })}
+                        <a class="mt-1 flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm font-semibold text-primary transition-colors hover:bg-accent focus-visible:bg-accent focus-visible:outline-none" href={usosHub}>
+                          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary" aria-hidden="true">
+                            <Icon name="LayoutGrid" class="h-3.5 w-3.5" />
+                          </span>
+                          {verConceptosLabel}
+                        </a>
                       </div>
                     </div>
-                  )}
+                    {lang === 'es' && (
+                      <div>
+                        <div class="mb-1 flex items-center gap-2.5 px-2 py-1.5">
+                          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground" aria-hidden="true">
+                            <Icon name="MapPin" class="h-4 w-4" />
+                          </span>
+                          <span class="min-w-0">
+                            <span class="block text-sm font-semibold leading-none text-accent">Por ciudad</span>
+                            <span class="mt-1 block text-xs text-muted-foreground">{porCiudadIntro}</span>
+                          </span>
+                        </div>
+                        <div class="grid">
+                          {cityItems.map((c) => (
+                            <a class="flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm text-foreground/80 transition-colors hover:bg-accent hover:text-foreground focus-visible:bg-accent focus-visible:outline-none" href={`/abrir-restaurante/${c.slug}`}>
+                              <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-muted text-foreground" aria-hidden="true">
+                                <Icon name="MapPin" class="h-3.5 w-3.5" />
+                              </span>
+                              <span class="min-w-0 leading-snug">Abrir restaurante en {c.label}</span>
+                            </a>
+                          ))}
+                          <a class="mt-1 flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm font-semibold text-primary transition-colors hover:bg-accent focus-visible:bg-accent focus-visible:outline-none" href="/seo-restaurantes-por-ciudad">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary" aria-hidden="true">
+                              <Icon name="Map" class="h-3.5 w-3.5" />
+                            </span>
+                            Ver 15 ciudades + 5 recursos →
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </li>
 
-            <!-- Aplicaciones -->
-            <li class="group relative">
-              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-3 2xl:px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+            <!-- Agentes IA -->
+            <li class="nav-mega relative" data-mega>
+              <button type="button" class={megaTriggerClass} data-mega-trigger aria-expanded="false" aria-haspopup="true" aria-controls="mega-agentes">
                 {t(lang, 'nav.aplicaciones')}
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-mega-chevron relative top-[1px] ml-1 h-3 w-3" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
               </button>
-              <div class="invisible absolute left-0 top-full z-50 mt-1.5 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 rounded-md border bg-popover text-popover-foreground shadow-lg">
-                <div class="grid w-[600px] gap-3 p-4 md:grid-cols-3">
-                  <div class="space-y-2">
-                    <h4 class="font-medium leading-none text-accent">{t(lang, 'categories_labels.creatividad')}</h4>
-                    <div class="grid gap-1">
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('showcase-creatividad')}>{t(lang, 'nav.creatividad')}</a>
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('showcase-creatividad')}>{t(lang, 'apps.creativity.pasteleria_creativa.name')}</a>
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('showcase-creatividad')}>{t(lang, 'apps.creativity.food_pairing.name')}</a>
-                    </div>
-                  </div>
-                  <div class="space-y-2">
-                    <h4 class="font-medium leading-none text-accent">{t(lang, 'categories_labels.recetarios')}</h4>
-                    <div class="grid gap-1">
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('recetarios')}>{t(lang, 'categories.world_cookbooks.europa.name')} ({cookbookCount('categories.world_cookbooks.europa.count')})</a>
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('recetarios')}>{t(lang, 'categories.world_cookbooks.latinoamerica.name')} ({cookbookCount('categories.world_cookbooks.latinoamerica.count')})</a>
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('recetarios')}>{t(lang, 'categories.world_cookbooks.asia.name')} ({cookbookCount('categories.world_cookbooks.asia.count')})</a>
-                    </div>
-                  </div>
-                  <div class="space-y-2">
-                    <h4 class="font-medium leading-none text-accent">{t(lang, 'showcase.business_title')}</h4>
-                    <div class="grid gap-1">
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('herramientas-business')}>{t(lang, 'apps.business.mermas_gencal.name')}</a>
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('herramientas-business')}>{t(lang, 'apps.business.id_alergenos.name')}</a>
-                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={sectionHref('herramientas-business')}>{t(lang, 'apps.business.mental_coach.name')}</a>
-                    </div>
+              <div id="mega-agentes" class="nav-mega-panel" data-mega-panel role="region" aria-label={t(lang, 'nav.aplicaciones')}>
+                <div class="w-[min(860px,calc(100vw-2rem))] overflow-hidden rounded-xl border bg-popover text-popover-foreground shadow-lg">
+                  <div class="grid gap-2 p-3 md:grid-cols-3">
+                    {agenteCols.map((col) => (
+                      <div>
+                        <div class="mb-1 flex items-start gap-2.5 px-2 py-1.5">
+                          <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground" aria-hidden="true">
+                            <Icon name={col.icon} class="h-4 w-4" />
+                          </span>
+                          <span class="min-w-0">
+                            <span class="block text-sm font-semibold leading-none text-accent">{col.title}</span>
+                            <span class="mt-1 block text-xs leading-snug text-muted-foreground">{col.desc}</span>
+                          </span>
+                        </div>
+                        <div class="grid">
+                          {col.items.map((item) => (
+                            <a class="flex items-start gap-2.5 rounded-lg px-2 py-1.5 transition-colors hover:bg-accent focus-visible:bg-accent focus-visible:outline-none" href={item.href}>
+                              <span class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-muted text-foreground" aria-hidden="true">
+                                <Icon name={item.icon} class="h-3.5 w-3.5" />
+                              </span>
+                              <span class="min-w-0">
+                                <span class="block text-sm font-medium leading-snug text-foreground">{item.label}</span>
+                                {item.desc && <span class="mt-0.5 block text-xs leading-snug text-muted-foreground">{item.desc}</span>}
+                              </span>
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -339,13 +530,14 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
         <div class="w-full flex-1 md:w-auto md:flex-none"></div>
         <nav class="flex items-center gap-2">
           <!-- Selector de idioma (enlaces planos vía <details>): globo + código; en el desplegable, bandera SVG + código -->
-          <details class="relative">
-            <summary aria-label={`${langLabel}: ${currentLangName}`} title={currentLangName} class="list-none inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-2.5 cursor-pointer">
+          <details class="js-pop relative">
+            <summary aria-expanded="false" aria-label={`${langLabel}: ${currentLangName}`} title={currentLangName} class="list-none inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-2.5 cursor-pointer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
               <span>{lang.toUpperCase()}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 opacity-60" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </summary>
-            <div class="absolute right-0 mt-1 bg-popover border border-border shadow-lg z-[100] min-w-[120px] rounded-md p-1">
+            <div class="nav-pop-panel">
+            <div class="bg-popover border border-border shadow-lg z-[100] min-w-[120px] rounded-md p-1">
               {languages.map((l) => (
                 <a href={langHref(l.code)} hreflang={l.code} title={l.name} data-lang-choice={l.code} aria-current={lang === l.code ? 'true' : undefined} class="flex items-center gap-2.5 rounded-sm px-2.5 py-1.5 text-sm font-medium hover:bg-accent hover:text-accent-foreground cursor-pointer focus:bg-accent focus:text-accent-foreground">
                   <span class={flagClass} set:html={FLAG_SVG[l.code]} />
@@ -357,6 +549,7 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
                 </a>
               ))}
             </div>
+            </div>
           </details>
 
           <a href={loginUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors bg-accent-light text-accent-foreground hover:bg-accent h-9 px-3 hidden md:inline-flex">{t(lang, 'nav.login')}</a>
@@ -364,7 +557,7 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
           <a href={ctaUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-9 px-3 bg-primary text-primary-foreground hover:bg-primary/90 hidden md:inline-flex">{t(lang, 'cta.primary')}</a>
 
           <!-- Botón menú móvil -->
-          <button id="mobile-menu-open" type="button" class={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 ${deskHide}`} aria-label="Abrir menú">
+          <button id="mobile-menu-open" type="button" class={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 ${deskHide}`} aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
           </button>
         </nav>
@@ -449,12 +642,22 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
               <p class="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground uppercase tracking-wider">{pick({ es: 'Por rol', en: 'By role', fr: 'Par rôle', de: 'Nach Rolle', it: 'Per ruolo', pt: 'Por função', nl: 'Per rol' }, 'Por rol')}</p>
               {roleItemsMobile.map((item) => {
                 const d = pickItem(item);
-                return <a href={`${rolePrefix}/${d.slug}`} class="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">{d.label}</a>;
+                return (
+                  <a href={`${rolePrefix}/${d.slug}`} class="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">
+                    <Icon name={ROLE_ICON[item.es.slug] || 'Users'} class="h-4 w-4 shrink-0 text-muted-foreground" />
+                    {d.label}
+                  </a>
+                );
               })}
               <p class="px-3 pt-3 pb-1 text-xs font-semibold text-muted-foreground uppercase tracking-wider">{pick({ es: 'Por concepto', en: 'By concept', fr: 'Par concept', de: 'Nach Konzept', it: 'Per concetto', pt: 'Por conceito', nl: 'Per concept' }, 'Por concepto')}</p>
               {conceptItemsMobile.map((item) => {
                 const d = pickItem(item);
-                return <a href={`${conceptPrefix}/${d.slug}`} class="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">{d.label}</a>;
+                return (
+                  <a href={`${conceptPrefix}/${d.slug}`} class="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">
+                    <Icon name={CONCEPT_ICON[item.es.slug] || 'Store'} class="h-4 w-4 shrink-0 text-muted-foreground" />
+                    {d.label}
+                  </a>
+                );
               })}
             </div>
           </details>
@@ -490,27 +693,33 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
 
         <div class="shrink-0 bg-border h-[1px] w-full"></div>
 
-        <!-- Aplicaciones -->
+        <!-- Agentes IA: mismas subopciones que el mega-menú de escritorio -->
         <div class="space-y-3">
-          <h3 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3">{t(lang, 'nav.aplicaciones')}</h3>
-          <div class="space-y-1">
-            <a href={sectionHref('showcase-creatividad')} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
-              {t(lang, 'nav.creatividad')}
-            </a>
-            <a href={sectionHref('recetarios')} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg>
-              {t(lang, 'nav.recetarios')}
-            </a>
-            <a href={sectionHref('herramientas-business')} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-              {t(lang, 'nav.herramientas')}
-            </a>
-            <a href={sectionHref('filtro-apps')} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-              {t(lang, 'finder.title_prefix')} {t(lang, 'finder.title_highlight')}
-            </a>
-          </div>
+          <h3 class="flex items-center gap-2 text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3">
+            <Icon name="Sparkles" class="h-3.5 w-3.5" />
+            {t(lang, 'nav.aplicaciones')}
+          </h3>
+          {agenteCols.map((col) => (
+            <div class="space-y-1">
+              <p class="flex items-center gap-2 px-3 pt-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                <Icon name={col.icon} class="h-3.5 w-3.5" />
+                {col.title}
+              </p>
+              {col.items.map((item) => (
+                <a href={item.href} class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+                  <Icon name={item.icon} class="h-4 w-4 shrink-0 text-muted-foreground" />
+                  <span class="min-w-0">
+                    <span class="block leading-snug">{item.label}</span>
+                    {item.desc && <span class="block text-xs font-normal text-muted-foreground">{item.desc}</span>}
+                  </span>
+                </a>
+              ))}
+            </div>
+          ))}
+          <a href={sectionHref('filtro-apps')} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+            <Icon name="Search" class="h-4 w-4 shrink-0 text-muted-foreground" />
+            {t(lang, 'finder.title_prefix')} {t(lang, 'finder.title_highlight')}
+          </a>
         </div>
 
         <div class="shrink-0 bg-border h-[1px] w-full"></div>
@@ -518,8 +727,8 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
         <!-- Idioma -->
         <div class="space-y-3">
           <h3 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3">Idioma / Language</h3>
-          <details class="relative">
-            <summary class="list-none inline-flex w-full items-center justify-start gap-3 px-3 py-3 h-auto rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer">
+          <details class="js-pop relative">
+            <summary aria-expanded="false" class="list-none inline-flex w-full items-center justify-start gap-3 px-3 py-3 h-auto rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
               <span class="flex items-center gap-2"><span class={flagClass} set:html={FLAG_SVG[lang]} />{currentLangName}</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m6 9 6 6 6-6"/></svg>
@@ -548,7 +757,53 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
   </div>
 </div>
 
+<style>
+  /* El panel empieza en el borde inferior del botón. El padding es el puente:
+     el hueco visual sigue dentro del <li>, así el cursor no suelta el hover. */
+  .nav-mega-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+    padding-top: 10px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav-mega.is-open > .nav-mega-panel {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-mega-panel > div {
+    max-height: calc(100vh - 5.5rem);
+    overflow-y: auto;
+  }
+  .nav-mega.is-open > .nav-mega-trigger {
+    background-color: hsl(var(--accent) / 0.7);
+    color: hsl(var(--foreground));
+  }
+  .nav-mega-chevron {
+    transition: transform 180ms ease;
+  }
+  .nav-mega.is-open .nav-mega-chevron {
+    transform: rotate(180deg);
+  }
+  .nav-pop-panel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100;
+    padding-top: 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .nav-mega-chevron { transition: none; }
+  }
+</style>
+
 <script>
+  const CLOSE_MS = 280;
+
   // AnnouncementBar dismiss (localStorage, paridad con AnnouncementBar.tsx)
   const annBar = document.getElementById('announcement-bar');
   if (annBar) {
@@ -561,12 +816,142 @@ const tiendaLabel = TIENDA_NOMBRE[lang];
 
   // Menú móvil (Sheet) — abrir/cerrar sin framework
   const menu = document.getElementById('mobile-menu');
-  const openMenu = () => { menu?.classList.remove('hidden'); document.body.style.overflow = 'hidden'; };
-  const closeMenu = () => { menu?.classList.add('hidden'); document.body.style.overflow = ''; };
-  document.getElementById('mobile-menu-open')?.addEventListener('click', openMenu);
+  const menuBtn = document.getElementById('mobile-menu-open');
+  const openMenu = () => {
+    menu?.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    menuBtn?.setAttribute('aria-expanded', 'true');
+  };
+  const closeMenu = () => {
+    menu?.classList.add('hidden');
+    document.body.style.overflow = '';
+    menuBtn?.setAttribute('aria-expanded', 'false');
+  };
+  menuBtn?.addEventListener('click', openMenu);
   document.getElementById('mobile-menu-close')?.addEventListener('click', closeMenu);
   document.getElementById('mobile-menu-overlay')?.addEventListener('click', closeMenu);
   menu?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+
+  // Mega-menús: hover con cierre retardado, clic que fija, foco y Escape.
+  const megas = Array.from(document.querySelectorAll('[data-mega]'));
+  const closeTimers = new WeakMap();
+  let suppressFocusOpen = false;
+  const hoverOK = () => window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  const setExpanded = (item, open) => {
+    const btn = item.querySelector('[data-mega-trigger]');
+    const panel = item.querySelector('[data-mega-panel]');
+    item.classList.toggle('is-open', open);
+    btn?.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (!panel) return;
+    panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+    if (open) panel.removeAttribute('inert');
+    else panel.setAttribute('inert', '');
+  };
+
+  const closeMega = (item) => {
+    const pending = closeTimers.get(item);
+    if (pending) clearTimeout(pending);
+    closeTimers.delete(item);
+    item.classList.remove('is-pinned');
+    setExpanded(item, false);
+  };
+
+  const openMega = (item, pin = false) => {
+    const pending = closeTimers.get(item);
+    if (pending) clearTimeout(pending);
+    closeTimers.delete(item);
+    megas.forEach((other) => { if (other !== item) closeMega(other); });
+    document.querySelectorAll('details.js-pop[open]').forEach((d) => { d.open = false; });
+    if (pin) item.classList.add('is-pinned');
+    setExpanded(item, true);
+  };
+
+  const scheduleClose = (item) => {
+    if (item.classList.contains('is-pinned')) return;
+    const pending = closeTimers.get(item);
+    if (pending) clearTimeout(pending);
+    closeTimers.set(item, setTimeout(() => {
+      if (!item.classList.contains('is-pinned')) setExpanded(item, false);
+    }, CLOSE_MS));
+  };
+
+  megas.forEach((item) => {
+    const btn = item.querySelector('[data-mega-trigger]');
+    const panel = item.querySelector('[data-mega-panel]');
+    setExpanded(item, false);
+
+    item.addEventListener('pointerenter', (e) => {
+      if (!hoverOK() || e.pointerType !== 'mouse') return;
+      const pending = closeTimers.get(item);
+      if (pending) clearTimeout(pending);
+      closeTimers.delete(item);
+      if (!item.classList.contains('is-open')) openMega(item);
+    });
+    item.addEventListener('pointerleave', (e) => {
+      if (!hoverOK() || e.pointerType !== 'mouse') return;
+      scheduleClose(item);
+    });
+    btn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (item.classList.contains('is-pinned')) closeMega(item);
+      else openMega(item, true);
+    });
+    btn?.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowDown') return;
+      e.preventDefault();
+      openMega(item, true);
+      panel?.querySelector('a')?.focus();
+    });
+    panel?.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => closeMega(item));
+    });
+    item.addEventListener('focusin', () => {
+      if (suppressFocusOpen) return;
+      const pending = closeTimers.get(item);
+      if (pending) clearTimeout(pending);
+      closeTimers.delete(item);
+      if (!item.classList.contains('is-open')) openMega(item);
+    });
+    item.addEventListener('focusout', (e) => {
+      if (item.contains(e.relatedTarget)) return;
+      item.classList.remove('is-pinned');
+      scheduleClose(item);
+    });
+  });
+
+  document.querySelectorAll('details.js-pop').forEach((d) => {
+    const summary = d.querySelector('summary');
+    const sync = () => summary?.setAttribute('aria-expanded', d.open ? 'true' : 'false');
+    d.addEventListener('toggle', () => {
+      sync();
+      if (d.open) megas.forEach(closeMega);
+    });
+    sync();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    const open = megas.find((m) => m.classList.contains('is-open'));
+    if (open) {
+      const btn = open.querySelector('[data-mega-trigger]');
+      closeMega(open);
+      suppressFocusOpen = true;
+      btn?.focus();
+      setTimeout(() => { suppressFocusOpen = false; }, 0);
+    }
+    document.querySelectorAll('details.js-pop[open]').forEach((d) => { d.open = false; });
+    if (menu && !menu.classList.contains('hidden')) closeMenu();
+  });
+
+  document.addEventListener('pointerdown', (e) => {
+    const target = e.target;
+    if (!(target instanceof Node)) return;
+    megas.forEach((item) => { if (!item.contains(target)) closeMega(item); });
+    document.querySelectorAll('details.js-pop[open]').forEach((d) => {
+      if (!d.contains(target)) d.open = false;
+    });
+  });
 
   // Selector de idioma: la cookie preferred-lang significa «el usuario ELIGIÓ»
   // (contrato de lang-redirect.ts) y por eso SOLO se siembra en este click —
