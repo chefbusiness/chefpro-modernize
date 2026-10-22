@@ -1,5 +1,5 @@
 ---
-title: "Ligado con yema: templar sin cuajar la salsa"
+title: "Ligado con yema: cómo espesar una salsa sin que se corte"
 description: "El ligado con yema templa la yema con un poco de líquido caliente y la devuelve al cazo para enriquecer. Si el conjunto hierve, la yema cuaja. No es una holandesa."
 pubDate: 2026-10-22
 modDate: 2026-10-22

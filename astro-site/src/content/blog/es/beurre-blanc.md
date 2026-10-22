@@ -1,5 +1,5 @@
 ---
-title: "Beurre blanc: la salsa de mantequilla que se sirve ya"
+title: "Beurre blanc: qué es la salsa de mantequilla y cómo se sirve al momento"
 description: "El beurre blanc es chalota, vino blanco y vinagre reducidos, y mantequilla fría batida al final. Es una emulsión inestable: se sirve en el momento, no se guarda."
 pubDate: 2026-10-22
 modDate: 2026-10-22

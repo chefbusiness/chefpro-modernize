@@ -1,5 +1,5 @@
 ---
-title: "Beurre manié: qué es y en qué no es un roux"
+title: "Beurre manié: qué es y en qué se diferencia del roux"
 description: "El beurre manié es mantequilla blanda y harina a partes iguales, cruda, para corregir una salsa corta al final. No se cocina antes y no es un roux."
 pubDate: 2026-10-22
 modDate: 2026-10-22

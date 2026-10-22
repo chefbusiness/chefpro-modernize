@@ -1,5 +1,5 @@
 ---
-title: "Papilla de almidón: ligar sin apagar el brillo"
+title: "Papilla de almidón: cómo ligar una salsa sin perder el brillo"
 description: "La papilla de almidón es fécula dispersa en líquido frío y añadida a la salsa que simmer. Espesa. También apaga el brillo que guardan una reducción o un buen roux."
 pubDate: 2026-10-22
 modDate: 2026-10-22
