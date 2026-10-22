@@ -6,7 +6,7 @@
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
-import { appUrl } from '../lib/app-url';
+import { appCtaUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -38,7 +38,7 @@ const total = slides.length;
 const counterTemplate = t(lang, 'gallery.counter');
 const initialCounter = counterTemplate.replace('{{current}}', '1').replace('{{total}}', String(total));
 const first = slides[0];
-const exploreUrl = appUrl(lang);
+const exploreUrl = appCtaUrl(lang, 'gallery', 'explore');
 ---
 
 <section class="container mx-auto px-4 py-8 md:py-12">

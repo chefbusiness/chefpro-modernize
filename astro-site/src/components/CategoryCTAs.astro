@@ -5,7 +5,7 @@
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { ChefHat, Globe, Calculator, Camera } from 'lucide-react';
-import { appUrl } from '../lib/app-url';
+import { appCtaUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -44,7 +44,7 @@ const ctaButtons = [
                 <p class="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 leading-relaxed">{cta.description}</p>
               </div>
               <a
-                href={`${appUrl(lang)}${cta.path}`}
+                href={appCtaUrl(lang, 'category-cta', cta.id, cta.path)}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"

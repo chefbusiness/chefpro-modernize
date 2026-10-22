@@ -26,11 +26,9 @@ export function appUrl(lang: Locale | string): string {
   return APP_URLS[lang as Locale] ?? APP_URLS.es;
 }
 
-/** CTA con UTM. `medium` distingue el origen (pricing, hero, banner…). */
-export function appCtaUrl(
-  lang: Locale | string,
-  medium: string,
-  content: string,
-): string {
-  return `${appUrl(lang)}/?utm_source=web&utm_medium=${medium}&utm_content=${content}`;
-}
+/**
+ * CTA con UTM. La implementación vive en `src/lib/app-urls.ts` para que los
+ * islands React (que no pueden importar astro-site) usen la misma cadena.
+ * `medium` = ubicación, `content` = pieza. `path` opcional para un agente.
+ */
+export { appCtaUrl } from '../../../src/lib/app-urls';

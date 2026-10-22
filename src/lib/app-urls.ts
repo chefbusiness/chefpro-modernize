@@ -23,3 +23,25 @@ export const APP_URLS = {
   pt: 'https://ptapp.aichef.pro',
   nl: 'https://nlapp.aichef.pro',
 } as const;
+
+/**
+ * CTA a la plataforma con el mismo UTM que precios (`Pricing.astro`):
+ * `utm_source=web`, `utm_medium` = ubicación, `utm_content` = pieza.
+ * El host sale del idioma. `path` es opcional (`/cocina-creativa`); vacío
+ * apunta a la raíz de la app, igual que el helper histórico.
+ *
+ * No añade cross-domain linker: la cookie de Ads (`_gcl_aw`) ya viaja en
+ * `.aichef.pro` (ver `GoogleTag.astro`).
+ */
+export function appCtaUrl(
+  lang: string,
+  medium: string,
+  content: string,
+  path = '',
+): string {
+  const host = APP_URLS[lang as keyof typeof APP_URLS] ?? APP_URLS.es;
+  const base = host.replace(/\/$/, '');
+  const suffix = path ? (path.startsWith('/') ? path : `/${path}`) : '/';
+  const q = `utm_source=web&utm_medium=${encodeURIComponent(medium)}&utm_content=${encodeURIComponent(content)}`;
+  return `${base}${suffix}?${q}`;
+}

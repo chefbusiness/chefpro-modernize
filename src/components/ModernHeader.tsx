@@ -93,6 +93,7 @@ const HERRAMIENTAS_GRATUITAS_SLUGS: Record<string, string> = {
   nl: 'nl/gratis-tools-restaurant',
 };
 import { useLanguage, type Language } from '@/hooks/useLanguage';
+import { appCtaUrl } from '@/lib/app-urls';
 import { FLAG_SVG } from '@/lib/lang-flags';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -141,7 +142,7 @@ const LangFlag = ({ code }: { code: Language }) => (
 );
 
 export default function ModernHeader() {
-  const { currentLanguage, changeLanguage, t, getAppUrl } = useLanguage();
+  const { currentLanguage, changeLanguage, t } = useLanguage();
   // 2026-08-20: ítems del mega-menú de apps → secciones de la landing con ruta
   // completa (funcionan desde cualquier página). Gemelo de Header.astro.
   const sectionHref = (id: string) => (currentLanguage === 'es' ? `/#${id}` : `/${currentLanguage}#${id}`);
@@ -150,11 +151,11 @@ export default function ModernHeader() {
   const currentLang = languages.find(lang => lang.code === currentLanguage);
 
   const handleCTAClick = () => {
-    window.open(getAppUrl(currentLanguage), '_blank');
+    window.open(appCtaUrl(currentLanguage, 'header', 'primary'), '_blank');
   };
 
   const handleLoginClick = () => {
-    window.open(getAppUrl(currentLanguage), '_blank');
+    window.open(appCtaUrl(currentLanguage, 'header', 'login'), '_blank');
   };
 
   return (
