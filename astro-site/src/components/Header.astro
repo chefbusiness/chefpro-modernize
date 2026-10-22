@@ -1,13 +1,12 @@
----
 // Header.astro — port de ModernHeader.tsx + AnnouncementBar.tsx (paridad visual).
 // Sin React: mega-menús desktop = hover CSS (group), dropdown idioma = enlaces planos,
 // menú móvil = panel deslizante con <script> vanilla mínimo, colapsables = <details>.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
-import { formacionHref } from '../lib/institutional';
 import { tiendaHref, TIENDA_NOMBRE } from '../lib/tienda';
 import { appCtaUrl } from '../lib/app-url';
+import { formacionHref } from '../lib/institutional';
 import { integracionesHref } from '../data/integraciones';
 import { PRICING_PATHS } from '../lib/pricing-path';
 import { FLAG_SVG } from '../../../src/lib/lang-flags';
@@ -16,6 +15,7 @@ interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 const loginUrl = appCtaUrl(lang, 'header', 'login');
 const ctaUrl = appCtaUrl(lang, 'header', 'cta');
+const trainingHref = formacionHref(lang);
 
 const LOCALES: Locale[] = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
 
@@ -70,7 +70,6 @@ const homeHref = lang === 'es' ? '/' : `/${lang}`;
 // Ancla CON ruta = funciona desde cualquier página. IDs verificados en los 7 idiomas.
 const sectionHref = (id: string) => `${homeHref}#${id}`;
 const mentoriaHref = lang === 'es' ? '/mentoria-online' : `/${lang}/mentoria-online`;
-const trainingHref = formacionHref(lang);
 // F8 2026-07-19: página de precios dedicada por idioma (antes ancla /#pricing).
 // El mapa vivía aquí; desde el CRO de Keak (20-sep-2026) lo comparten el hero y
 // la sección de Herramientas Business, así que está en ../lib/pricing-path.ts.
