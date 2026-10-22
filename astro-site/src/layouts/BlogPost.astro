@@ -42,7 +42,7 @@ interface Props {
 const AUTOR_URL = 'https://johnguerrero.es';
 
 const { post } = Astro.props;
-const { title, description, pubDate, modDate, image, imageAlt, faq, category } = post.data;
+const { title, description, pubDate, modDate, image, imageAlt, faq, category, howto } = post.data;
 /**
  * Par de traducción (8C). Sin él, cada post declara solo su propio hreflang
  * —correcto mientras el blog EN fue contenido distinto—; con él, los dos se
@@ -72,9 +72,8 @@ const minutes = readingTime(post.body ?? '');
  * Frecuentes» con F mayúscula. Al abrir el árbol francés (2026-08-16) se pasa a
  * un mapa por idioma y se rellenan a la vez `it` y `fr`.
  *
- * El fallback sigue siendo el español para pt/nl, que aún no tienen blog: el
- * día que lo tengan, su entrada va AQUÍ antes de publicar el primer post.
- * (El de entró el 2026-08-18 al abrir el árbol alemán, ANTES del primer post.)
+ * El fallback sigue siendo el español. Cada idioma con blog tiene su entrada
+ * aquí, nl incluida desde el primer post (allergenenlijst, 2026-10-22).
  */
 const COPY = {
   en: {
@@ -85,6 +84,7 @@ const COPY = {
     by: 'By',
     updated: '· Updated on',
     readingTime: 'min read',
+    howtoHeading: 'How to do it',
     faqHeading: 'Frequently asked questions',
     related: 'Keep reading',
     authorBio:
@@ -98,6 +98,7 @@ const COPY = {
     by: 'Di',
     updated: '· Aggiornato il',
     readingTime: 'min di lettura',
+    howtoHeading: 'Come si fa',
     faqHeading: 'Domande frequenti',
     related: 'Continua a leggere',
     authorBio:
@@ -111,6 +112,7 @@ const COPY = {
     by: 'Par',
     updated: '· Mis à jour le',
     readingTime: 'min de lecture',
+    howtoHeading: 'Mode d’emploi',
     faqHeading: 'Questions fréquentes',
     related: 'À lire ensuite',
     authorBio:
@@ -127,6 +129,7 @@ const COPY = {
     by: 'Von',
     updated: '· Aktualisiert am',
     readingTime: 'Min. Lesezeit',
+    howtoHeading: 'So geht’s',
     faqHeading: 'Häufig gestellte Fragen',
     related: 'Weiterlesen',
     authorBio:
@@ -145,10 +148,26 @@ const COPY = {
     by: 'Por',
     updated: '· Atualizado a',
     readingTime: 'min de leitura',
+    howtoHeading: 'Como se faz',
     faqHeading: 'Perguntas frequentes',
     related: 'Continuar a ler',
     authorBio:
       'Chef e consultor gastronómico: 29 anos de alta restauração e 15 de consultoria a restaurantes.',
+  },
+  // 2026-10-22 — apertura del blog NL, antes del primer post (allergenenlijst).
+  nl: {
+    titleSuffix: 'Blog AI Chef Pro',
+    breadcrumbLabel: 'Kruimelpad',
+    home: 'Home',
+    blog: 'Blog',
+    by: 'Door',
+    updated: '· Bijgewerkt op',
+    readingTime: 'min lezen',
+    howtoHeading: 'Zo doe je het',
+    faqHeading: 'Veelgestelde vragen',
+    related: 'Lees verder',
+    authorBio:
+      'Chef en horeca-adviseur: 29 jaar in de hoge horeca en 15 jaar advies aan restaurants.',
   },
   es: {
     titleSuffix: 'Blog AI Chef Pro',
@@ -158,6 +177,7 @@ const COPY = {
     by: 'Por',
     updated: '· Actualizado el',
     readingTime: 'min de lectura',
+    howtoHeading: 'Cómo se hace',
     faqHeading: 'Preguntas frecuentes',
     related: 'Sigue leyendo',
     authorBio:
@@ -230,6 +250,21 @@ const schemas: object[] = [
           '@type': 'Question',
           name: f.q,
           acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }]
+    : []),
+  ...(howto
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: howto.name,
+        description: howto.description,
+        inLanguage: lang,
+        step: howto.steps.map((s, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: s.name,
+          text: s.text,
         })),
       }]
     : []),
@@ -312,6 +347,20 @@ const schemas: object[] = [
       <div class="blog-prose prose prose-lg max-w-none dark:prose-invert prose-headings:font-bold prose-a:text-primary prose-img:rounded-xl">
         <slot />
       </div>
+
+      {howto && (
+        <section class="mt-10">
+          <h2 class="text-2xl font-bold text-foreground">{T.howtoHeading}</h2>
+          <p class="mt-3 text-base font-medium text-foreground">{howto.description}</p>
+          <ol class="mt-4 list-decimal space-y-3 pl-5 text-muted-foreground">
+            {howto.steps.map((s) => (
+              <li>
+                <span class="font-semibold text-foreground">{s.name}. </span>{s.text}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       {faq.length > 0 && (
         <section class="mt-10">

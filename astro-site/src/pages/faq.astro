@@ -11,6 +11,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../i18n/config';
+import { ALL_LOCALES, alternatesFor } from '../lib/institutional';
 
 const lang = 'es';
 const basePath = '/faq';
@@ -155,7 +156,8 @@ const schemas = [
   keywords={keywords}
   lang={lang}
   basePath={basePath}
-  locales={['es']}
+  locales={ALL_LOCALES}
+  alternates={alternatesFor('faq')}
   ogImage={`${SITE}/og-image.jpg`}
 >
   <Fragment slot="head">

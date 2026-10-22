@@ -40,6 +40,17 @@ const blog = defineCollection({
       it: z.string().optional(),
     }).optional(),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    /**
+     * Pasos visibles de un procedimiento. Si está, BlogPost emite HowTo
+     * además del FAQPage. El texto del schema es el mismo que la lista.
+     */
+    howto: z
+      .object({
+        name: z.string(),
+        description: z.string(),
+        steps: z.array(z.object({ name: z.string(), text: z.string() })).min(1),
+      })
+      .optional(),
     draft: z.boolean().default(false),
   }),
 });

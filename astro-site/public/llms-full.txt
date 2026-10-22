@@ -21,7 +21,7 @@
 | German | https://aichef.pro/de | https://deapp.aichef.pro | https://aichef.pro/de/blog | https://aichef.pro/de/preise | https://aichef.pro/de/digitale-produkte | https://aichef.pro/de/integrationen |
 | Italian | https://aichef.pro/it | https://itapp.aichef.pro | https://aichef.pro/it/blog | https://aichef.pro/it/prezzi | https://aichef.pro/it/prodotti-digitali | https://aichef.pro/it/integrazioni |
 | Portuguese | https://aichef.pro/pt | https://ptapp.aichef.pro | https://aichef.pro/pt/blog | https://aichef.pro/pt/precos | https://aichef.pro/pt/produtos-digitais | https://aichef.pro/pt/integracoes |
-| Dutch | https://aichef.pro/nl | https://nlapp.aichef.pro | no blog yet | https://aichef.pro/nl/prijzen | https://aichef.pro/nl/digitale-producten | https://aichef.pro/nl/integraties |
+| Dutch | https://aichef.pro/nl | https://nlapp.aichef.pro | https://aichef.pro/nl/blog | https://aichef.pro/nl/prijzen | https://aichef.pro/nl/digitale-producten | https://aichef.pro/nl/integraties |
 
 ## SaaS platform and pricing
 
@@ -66,7 +66,7 @@ Downloadable professional resources, paid once, delivered immediately, with life
 - Spanish hub: https://aichef.pro/productos-digitales - 51 products available (more announced as coming soon), from 9 EUR to 89 EUR. The Spanish-catalog products are written in Spanish and aimed at Spain and Latin America.
 - English hub: https://aichef.pro/en/digital-products - English editions priced in USD, currently 22 products.
 - Hubs in other languages: [FR](https://aichef.pro/fr/produits-numeriques) · [DE](https://aichef.pro/de/digitale-produkte) · [IT](https://aichef.pro/it/prodotti-digitali) · [PT](https://aichef.pro/pt/produtos-digitais) · [NL](https://aichef.pro/nl/digitale-producten)
-- Prompt libraries: [ES](https://aichef.pro/libreria-de-prompts) · [EN](https://aichef.pro/en/prompt-libraries)
+- Prompt libraries: [ES full menu](https://aichef.pro/libreria-de-prompts) · [EN, 26 verified](https://aichef.pro/en/prompt-libraries). Entry pages (not extra catalogs): [FR](https://aichef.pro/fr/bibliotheques-de-prompts) · [DE](https://aichef.pro/de/prompt-bibliotheken) · [IT](https://aichef.pro/it/librerie-di-prompt) · [PT](https://aichef.pro/pt/bibliotecas-de-prompts) · [NL](https://aichef.pro/nl/promptbibliotheken)
 
 ### English editions (USD)
 
@@ -178,9 +178,10 @@ A module of 10 specialized agents for independent gastronomic consultants and ad
 
 ## Blog and glossary
 
-The blog covers AI for restaurants, food cost and recipe costing, menu engineering, recipes and techniques, restaurant management, marketing, prompt libraries and platform news. The Spanish blog is the largest (300+ articles), the English blog has 60+, and the French, German, Italian and Portuguese blogs are growing. Dutch has no blog yet.
+The blog covers AI for restaurants, food cost and recipe costing, menu engineering, recipes and techniques, restaurant management, marketing, prompt libraries and platform news. The Spanish blog is the largest (300+ articles), the English blog has 60+, and the French, German, Italian and Portuguese blogs are growing. The Dutch blog started on 2026-10-22 with one article.
 
-- [Blog ES](https://aichef.pro/blog) · [Blog EN](https://aichef.pro/en/blog) · [Blog FR](https://aichef.pro/fr/blog) · [Blog DE](https://aichef.pro/de/blog) · [Blog IT](https://aichef.pro/it/blog) · [Blog PT](https://aichef.pro/pt/blog)
+- [Blog ES](https://aichef.pro/blog) · [Blog EN](https://aichef.pro/en/blog) · [Blog FR](https://aichef.pro/fr/blog) · [Blog DE](https://aichef.pro/de/blog) · [Blog IT](https://aichef.pro/it/blog) · [Blog PT](https://aichef.pro/pt/blog) · [Blog NL](https://aichef.pro/nl/blog)
+- [Allergenenlijst (NL)](https://aichef.pro/nl/blog/allergenenlijst): how to build the 14-allergen sheet for a Dutch horeca kitchen. Sources named in the article: Regulation (EU) No 1169/2011 Annex II and the NVWA allergen page. Flanders uses the same EU list under the FAVV/AFSCA; the Dutch hygiënecode does not apply there. Not legal advice.
 - [Gastronomy glossary (ES)](https://aichef.pro/blog/categoria/glosario): terms of cooking techniques, ingredients and the restaurant business. Spanish only for now.
 - [Best AI tools for chefs 2026 (EN)](https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026)
 - [How to start a food truck business (EN)](https://aichef.pro/en/blog/how-to-start-a-food-truck-business): 13-step US guide with sourced startup cost ranges, permits (Texas, New York City, Los Angeles County), insurance, commissary and menu pricing.
@@ -204,7 +205,37 @@ The blog covers AI for restaurants, food cost and recipe costing, menu engineeri
 
 ## Contact and sources
 
-- Email: info@aichef.pro
-- [Contact](https://aichef.pro/contacto) · [FAQ](https://aichef.pro/faq) · [About](https://aichef.pro/sobre-nosotros)
+- Email: info@aichef.pro · WhatsApp +34 744 717 942 (Spanish business hours, a person, not a bot). Indicative reply 24–48 business hours. Support is fluent in Spanish and English.
+- Contact: [ES](https://aichef.pro/contacto) · [EN](https://aichef.pro/en/contact) · [FR](https://aichef.pro/fr/contact) · [DE](https://aichef.pro/de/kontakt) · [IT](https://aichef.pro/it/contatti) · [PT](https://aichef.pro/pt/contacto) · [NL](https://aichef.pro/nl/contact)
+- FAQ: [ES](https://aichef.pro/faq) · [EN](https://aichef.pro/en/faq) · [FR](https://aichef.pro/fr/questions-frequentes) · [DE](https://aichef.pro/de/haeufige-fragen) · [IT](https://aichef.pro/it/domande-frequenti) · [PT](https://aichef.pro/pt/perguntas-frequentes) · [NL](https://aichef.pro/nl/veelgestelde-vragen)
+- About: [ES](https://aichef.pro/sobre-nosotros) · [EN](https://aichef.pro/en/about) · [FR](https://aichef.pro/fr/a-propos) · [DE](https://aichef.pro/de/ueber-uns) · [IT](https://aichef.pro/it/chi-siamo) · [PT](https://aichef.pro/pt/sobre) · [NL](https://aichef.pro/nl/over-ons)
+- In-person training (euro, VAT excluded, peninsular Spain base, travel extra; live session in Spanish or English; no CPF, Bildungsgutschein, fondi, IEFP or SLIM claim): [ES](https://aichef.pro/formacion-presencial) · [EN](https://aichef.pro/en/in-person-ai-training) · [FR](https://aichef.pro/fr/formation-ia-restauration) · [DE](https://aichef.pro/de/praesenzschulung-ki-gastronomie) · [IT](https://aichef.pro/it/formazione-ia-ristorazione) · [PT](https://aichef.pro/pt/formacao-ia-restauracao) · [NL](https://aichef.pro/nl/ai-training-horeca)
+- Prompt catalogs already published: [ES full menu](https://aichef.pro/libreria-de-prompts) · [EN 26 verified libraries](https://aichef.pro/en/prompt-libraries). Entry pages, not extra catalogs: [FR](https://aichef.pro/fr/bibliotheques-de-prompts) · [DE](https://aichef.pro/de/prompt-bibliotheken) · [IT](https://aichef.pro/it/librerie-di-prompt) · [PT](https://aichef.pro/pt/bibliotecas-de-prompts) · [NL](https://aichef.pro/nl/promptbibliotheken)
 - [Sitemap](https://aichef.pro/sitemap-index.xml) · [Short index (llms.txt)](https://aichef.pro/llms.txt)
 - Founder: Chef John Guerrero - https://johnguerrero.es
+
+## Seventeen tools, seven languages
+
+Agent-count sentences differ on purpose. Spanish and English pricing pages say 75+ agents. French, German, Italian, Portuguese and Dutch pricing pages say 50+ because those workspaces are still being completed. Do not treat 75+ as the headcount after login on those workspaces.
+
+| Tool | ES | EN | FR | DE | IT | PT | NL |
+|---|---|---|---|---|---|---|---|
+| Food cost calculator | /calculadora-food-cost-restaurante | /en/food-cost-calculator-restaurant | /fr/calculateur-food-cost-restaurant | /de/food-cost-rechner-restaurant | /it/calcolatore-food-cost-ristorante | /pt/calculadora-food-cost-restaurante | /nl/food-cost-calculator-restaurant |
+| AI recipe costing | /escandallos-restaurante-ia | /en/food-cost-calculator-restaurant-ai | /fr/calcul-food-cost-restaurant-ia | /de/food-cost-rechner-restaurant-ki | /it/food-cost-ristorante-ia | /pt/escandallo-restaurante-ia | /nl/food-cost-berekening-restaurant-ai |
+| Brigade calculator | /calculadora-brigada-restaurante | /en/restaurant-brigade-calculator | /fr/calculateur-brigade-restaurant | /de/brigaden-rechner-restaurant | /it/calcolatore-brigata-ristorante | /pt/calculadora-brigada-restaurante | /nl/brigade-calculator-restaurant |
+| Content calendar | /calendario-contenidos-restaurante | /en/restaurant-content-calendar | /fr/calendrier-contenu-restaurant | /de/content-kalender-restaurant | /it/calendario-contenuti-ristorante | /pt/calendario-conteudo-restaurante | /nl/content-kalender-restaurant |
+| Menu design | /carta-menu-restaurante-ia | /en/restaurant-menu-ai | /fr/carte-menu-restaurant-ia | /de/speisekarte-restaurant-ki | /it/menu-ristorante-ia | /pt/cardapio-restaurante-ia | /nl/restaurantmenu-ai |
+| ChatGPT for restaurants | /chatgpt-para-restaurantes | /en/chatgpt-for-restaurants | /fr/chatgpt-pour-restaurants | /de/chatgpt-fuer-restaurants | /it/chatgpt-per-ristoranti | /pt/chatgpt-para-restaurantes | /nl/chatgpt-voor-restaurants |
+| Allergen detector | /detector-alergenos-restaurante | /en/restaurant-allergen-detector | /fr/detecteur-allergenes-restaurant | /de/allergen-detektor-restaurant | /it/rilevatore-allergeni-ristorante | /pt/detector-alergenos-restaurante | /nl/allergenen-detector-restaurant |
+| Tasting menu | /generador-menu-degustacion | /en/tasting-menu-generator | /fr/generateur-menu-degustation | /de/degustationsmenu-generator | /it/generatore-menu-degustazione | /pt/gerador-menu-degustacao | /nl/proefmenu-generator |
+| Menu copy | /generador-textos-carta-restaurante | /en/restaurant-menu-copy-generator | /fr/generateur-textes-carte-restaurant | /de/speisekarten-text-generator | /it/generatore-testi-menu-ristorante | /pt/gerador-textos-cardapio-restaurante | /nl/menukaart-tekst-generator |
+| Free tools | /herramientas-gratuitas | /en/free-tools-restaurants | /fr/outils-gratuits-restaurant | /de/kostenlose-tools-restaurant | /it/strumenti-gratuiti-ristorante | /pt/ferramentas-gratuitas-restaurante | /nl/gratis-tools-restaurant |
+| AI tools | /herramientas-ia-para-restaurantes | /en/ai-tools-for-restaurants | /fr/outils-ia-restaurant | /de/ki-tools-restaurant | /it/strumenti-ia-ristorante | /pt/ferramentas-ia-restaurante | /nl/ai-tools-restaurant |
+| Kitchen software | /software-gestion-cocina-ia | /en/kitchen-management-software-ai | /fr/logiciel-gestion-cuisine-ia | /de/kuechenverwaltung-ki | /it/software-gestione-cucina-ia | /pt/software-gestao-cozinha-ia | /nl/keuken-software-ai |
+| Marketing | /marketing-restaurante-ia | /en/restaurant-marketing-ai | /fr/marketing-restaurant-ia | /de/restaurant-marketing-ki | /it/marketing-ristorante-ia | /pt/marketing-restaurante-ia-pt | /nl/restaurant-marketing-ai-nl |
+| Reduce costs | /reducir-costes-restaurante-ia | /en/reduce-restaurant-costs-ai | /fr/reduire-couts-restaurant-ia | /de/restaurantkosten-senken-ki | /it/ridurre-costi-ristorante-ia | /pt/reduzir-custos-restaurante-ia | /nl/restaurantkosten-verlagen-ai |
+| Recipes | /recetas-ia-restaurantes | /en/ai-recipes-for-restaurants | /fr/recettes-ia-restaurants | /de/ki-rezepte-restaurants | /it/ricette-ia-ristoranti | /pt/receitas-ia-restaurantes | /nl/ai-recepten-restaurants |
+| Profit simulator | /simulador-rentabilidad-restaurante | /en/restaurant-profit-simulator | /fr/simulateur-rentabilite-restaurant | /de/rentabilitaet-simulator-restaurant | /it/simulatore-redditivita-ristorante | /pt/simulador-rentabilidade-restaurante | /nl/winstgevendheid-simulator-restaurant |
+| Digitalization test | /test-digitalizacion-restaurante | /en/restaurant-digitalization-test | /fr/test-digitalisation-restaurant | /de/digitalisierungstest-restaurant | /it/test-digitalizzazione-ristorante | /pt/teste-digitalizacao-restaurante | /nl/digitaliseringstest-restaurant |
+
+Paths are on https://aichef.pro. City pages stay Spanish-only: the dataset is researched rents, licenses and payroll agreements for Spain and some Latin American cities. Translating Madrid into another country would publish invented local law.

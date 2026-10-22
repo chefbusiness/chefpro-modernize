@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FormacionPresencialPage from '../components/pages/FormacionPresencialPage.astro';
 import { SITE } from '../i18n/config';
+import { ALL_LOCALES, alternatesFor } from '../lib/institutional';
 
 // SOLO ES: la SPA (FormacionPresencial.tsx) hardcodea el SEOHead en español y esta ruta
 // NO tiene variantes de idioma (el sitemap solo lista /formacion-presencial). Por eso
@@ -15,7 +16,8 @@ const lang = 'es';
   keywords="formación IA restaurantes, curso inteligencia artificial hostelería, workshop IA cocina profesional, consultoría IA restaurantes, formación presencial IA gastronomía"
   lang={lang}
   basePath="/formacion-presencial"
-  locales={['es']}
+  locales={ALL_LOCALES}
+  alternates={alternatesFor('training')}
   ogImage={`${SITE}/og-image.jpg`}
 >
   <FormacionPresencialPage lang={lang} />
