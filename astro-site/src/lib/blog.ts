@@ -84,6 +84,14 @@ const CATEGORIES_EN: BlogCategory[] = [
     description:
       'Ready-to-use prompt libraries for every AI Chef Pro agent: copy them, adapt them to your operation and get straight to a usable answer instead of staring at a blank chat.',
   },
+  {
+    // 2026-10-22 — programa de glosario. El ES ya tenía la categoría por el
+    // histórico de WordPress; el resto de idiomas la abre ahora, con slug nativo.
+    slug: 'glossary',
+    name: 'Culinary Glossary',
+    description:
+      'Working definitions for the pass: sauces, emulsions, stocks and the words a cook actually looks up.',
+  },
 ];
 
 // 2026-08-08 — Blog ITALIANO. Arranca en 0 posts, así que la taxonomía nace
@@ -93,8 +101,8 @@ const CATEGORIES_EN: BlogCategory[] = [
 // llenarlas. El hub sólo pinta las categorías que YA tienen posts, así que una
 // caja vacía no ensucia nada mientras se llena.
 //
-// No hay 'glosario' a propósito: en español son 69 posts que vienen del
-// histórico de WordPress, no una decisión editorial que replicar de cero.
+// 2026-10-22 — el programa de glosario abre 'glossario'. Los 69 posts ES
+// siguieron viniendo del histórico; esta caja es contenido nuevo, no un volcado.
 const CATEGORIES_IT: BlogCategory[] = [
   {
     slug: 'ia-in-gastronomia',
@@ -120,6 +128,12 @@ const CATEGORIES_IT: BlogCategory[] = [
     description:
       'Tutto sulla piattaforma: guide agli agenti IA culinari, novità di ogni rilascio e i flussi di lavoro che chef e gestori ci fanno girare davvero ogni giorno.',
   },
+  {
+    slug: 'glossario',
+    name: 'Glossario di cucina',
+    description:
+      'Definizioni di lavoro per il passe: salse, emulsioni, fondi e le parole che un cuoco cerca davvero.',
+  },
 ];
 
 // 2026-08-16 — Blog FRANCÉS. Mismo criterio que el italiano: nace con 0 posts y
@@ -128,8 +142,8 @@ const CATEGORIES_IT: BlogCategory[] = [
 // una traducción de la taxonomía española. El hub sólo pinta las categorías que
 // YA tienen posts, así que una caja vacía no ensucia nada mientras se llena.
 //
-// Tampoco hay 'glossaire': los 69 posts de glosario del ES vienen del histórico
-// de WordPress, no de una decisión editorial que replicar de cero.
+// 2026-10-22 — el programa de glosario abre 'glossaire'. No es un volcado de
+// los 69 posts españoles: cada ficha nace con el término que se busca en francés.
 //
 // Las descripciones son FRANCÉS NATIVO (redactadas sobre el research, no
 // traducidas del ES ni del IT). Apóstrofo RECTO a propósito: es la convención
@@ -159,6 +173,12 @@ const CATEGORIES_FR: BlogCategory[] = [
     name: 'AI Chef Pro',
     description:
       'Tout sur la plateforme : guides des agents IA culinaires, nouveautés de chaque version et les flux de travail que chefs et gérants font réellement tourner au quotidien.',
+  },
+  {
+    slug: 'glossaire',
+    name: 'Glossaire culinaire',
+    description:
+      "Définitions de travail pour le passe : sauces, émulsions, fonds et les mots qu'un cuisinier cherche vraiment.",
   },
 ];
 
@@ -198,6 +218,12 @@ const CATEGORIES_DE: BlogCategory[] = [
     description:
       'Alles über die Plattform: Guides zu den kulinarischen KI-Agenten, Neuigkeiten zu jedem Release und die Workflows, mit denen Küchenchefs und Betreiber täglich wirklich arbeiten.',
   },
+  {
+    slug: 'glossar',
+    name: 'Küchenglossar',
+    description:
+      'Arbeitsdefinitionen für die Ausgabe: Saucen, Emulsionen, Fonds und die Wörter, die eine Küche wirklich nachschlägt.',
+  },
 ];
 
 // 2026-08-19 — Blog PORTUGUÉS. Mismo criterio que IT, FR y DE: nace con 0
@@ -233,6 +259,12 @@ const CATEGORIES_PT: BlogCategory[] = [
     description:
       'Tudo sobre a plataforma: guias dos agentes de IA culinários, novidades de cada versão e os fluxos de trabalho que chefs e gestores realmente usam no dia a dia.',
   },
+  {
+    slug: 'glossario',
+    name: 'Glossário de cozinha',
+    description:
+      'Definições de trabalho para o passe: molhos, emulsões, fundos e as palavras que um cozinheiro procura mesmo.',
+  },
 ];
 
 // 2026-10-22 — Blog NEERLANDÉS. Cuatro cajas según el research de Google.nl
@@ -264,6 +296,12 @@ const CATEGORIES_NL: BlogCategory[] = [
     name: 'AI Chef Pro',
     description:
       'Alles over het platform: de culinaire AI-agents, wat er in elke release verandert en de workflows die keukens er echt mee draaien.',
+  },
+  {
+    slug: 'glossarium',
+    name: 'Culinair glossarium',
+    description:
+      'Werkdefinities voor de passe: sauzen, emulsies, fondsen en de woorden die een keuken echt opzoekt.',
   },
 ];
 

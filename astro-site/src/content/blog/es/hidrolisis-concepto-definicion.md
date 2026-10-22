@@ -1,15 +1,30 @@
 ---
-title: "Hidrólisis: qué es y sus usos en cocina"
-description: "La hidrólisis es la reacción en la que el agua rompe una molécula. Te explicamos sus tipos, el papel de las enzimas y ejemplos en carnes, quesos y soja."
+title: "Hidrólisis: qué es cuando el agua rompe el alimento"
+description: "La hidrólisis es la ruptura de una molécula por el agua. Así maduran la carne y el queso, y el colágeno de un fondo acaba en gelatina. No es Maillard."
 pubDate: 2026-03-20
-modDate: 2026-10-04
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/hidrolisis-featured.jpg
 imageAlt: "Hidrólisis: Concepto y Definición"
 lang: es
 wpId: 3249
+definedTerm:
+  name: "Hidrólisis"
+  description: "La hidrólisis es la reacción en la que el agua rompe una molécula grande en trozos más pequeños. En la cocina aparece al madurar una carne, al afinar un queso o al cocer un fondo hasta que el colágeno se vuelve gelatina. No es la reacción de Maillard, que necesita una superficie seca y un calor que el agua impide."
+faq:
+  - q: "¿Qué diferencia hay entre hidrólisis y digestión?"
+    a: "La digestión es el proceso completo de descomposición de alimentos en el organismo, que incluye hidrólisis pero también absorción y otros procesos. La hidrólisis es específicamente la ruptura química con agua."
+  - q: "¿La cocción destruye enzimas?"
+    a: "Sí, las temperaturas superiores a 60-70°C generalmente desnaturalizan las enzimas y detienen la hidrólisis enzimática. En frío siguen actuando, solo que despacio: por eso la maduración se hace a 0-4 °C, temperatura que frena a los microorganismos mientras las proteasas trabajan."
+  - q: "¿Por qué la carne madurada sabe mejor?"
+    a: "La hidrólisis proteica libera aminoácidos y péptidos que tienen sabor (umami) y aroma, además de ablandar la textura al romper fibras musculares."
+  - q: "¿Puedo acelerar la hidrólisis en casa?"
+    a: "Puedes usar enzimas comerciales (como la papaína de la papaya o la bromelina de la piña fresca; en la fruta en conserva están inactivadas por el calor) para ablandar carnes más rápidamente, aunque el resultado es diferente a la maduración tradicional."
+  - q: "¿Es segura la carne madurada?"
+    a: "Sí, si se controla temperatura y humedad. La superficie exterior se corta antes de consumir. La desecación de la superficie dificulta el crecimiento de bacterias."
 ---
-
+<p data-glosario-lead="1">La hidrólisis es la reacción en la que el agua rompe una molécula grande en trozos más pequeños. En la cocina aparece al madurar una carne, al afinar un queso o al cocer un fondo hasta que el colágeno se vuelve gelatina. No es la reacción de Maillard, que necesita una superficie seca y un calor que el agua impide.</p>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Agentes de IA para la partida</p><p class="mt-2 text-foreground">Esta técnica se trabaja con los agentes de IA de cocina, desde la ficha web de chef jefe de cocina. No abre un agente concreto de la app.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=hidrolisis-concepto-definicion">Ver la ficha de chef jefe de cocina</a></p></aside>
 <p>La <strong>hidrólisis</strong> es uno de los procesos químicos fundamentales en la cocina, aunque muchas veces pasa desapercibido. Desde la maduración de la carne hasta la maduración del queso, desde el malteado de la cebada hasta la cocción lenta de un guiso, la hidrólisis está presente transformando moléculas complejas en compuestos más simples y sabrosos. Este proceso, que literalmente significa «romper con agua», es la clave detrás de innumerables preparaciones culinarias.</p>
 <p>Comprender la hidrólisis permite al cocinero profesional no solo optimizar sus técnicas, sino también innovar en la cocina molecular y la gastronomía moderna. En este artículo del glosario culinario de AI Chef Pro, exploraremos qué es exactamente la hidrólisis, los tipos que existen, sus aplicaciones en la cocina, y cómo utilizar este conocimiento para mejorar tus preparaciones.</p>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/hidrolisis-interna.jpg" alt="Enzimas y proceso de hidrólisis" style="width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 8px;"></p>
@@ -180,13 +195,6 @@ wpId: 3249
 <li>Tampoco cocina en el sentido sanitario: el ácido no garantiza la eliminación de parásitos como el anisakis. En la UE, el pescado que se sirve crudo o marinado debe congelarse antes (a -20 °C durante al menos 24 horas o a -35 °C durante al menos 15 horas).</li>
 </ul>
 <p>Lo mismo ocurre con escabeches y encurtidos: el ácido conserva porque baja el pH (por debajo de 4,6 impide el desarrollo de <em>Clostridium botulinum</em>), no porque hidrolice nada.</p>
-<h2>Preguntas Frecuentes</h2>
-<p><strong>¿Qué diferencia hay entre hidrólisis y digestión?</strong><br /> La digestión es el proceso completo de descomposición de alimentos en el organismo, que incluye hidrólisis pero también absorción y otros procesos. La hidrólisis es específicamente la ruptura química con agua.</p>
-<p><strong>¿La cocción destruye enzimas?</strong><br /> Sí, las temperaturas superiores a 60-70°C generalmente desnaturalizan las enzimas y detienen la hidrólisis enzimática. En frío siguen actuando, solo que despacio: por eso la maduración se hace a 0-4 °C, temperatura que frena a los microorganismos mientras las proteasas trabajan.</p>
-<p><strong>¿Por qué la carne madurada sabe mejor?</strong><br /> La hidrólisis proteica libera aminoácidos y péptidos que tienen sabor (umami) y aroma, además de ablandar la textura al romper fibras musculares.</p>
-<p><strong>¿Puedo acelerar la hidrólisis en casa?</strong><br /> Puedes usar enzimas comerciales (como la papaína de la papaya o la bromelina de la piña fresca; en la fruta en conserva están inactivadas por el calor) para ablandar carnes más rápidamente, aunque el resultado es diferente a la maduración tradicional.</p>
-<p><strong>¿Es segura la carne madurada?</strong><br /> Sí, si se controla temperatura y humedad. La superficie exterior se corta antes de consumir. La desecación de la superficie dificulta el crecimiento de bacterias.</p>
-
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=hidrolisis-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
 
 <h2>Conclusión</h2>
@@ -199,3 +207,11 @@ wpId: 3249
 <p style="color: #888; font-size: 12px; margin-top: 10px;">     AI Chef Miembro 10 €/mes • 48.733+ recetas generadas   </p>
 </p></div>
 <p><strong>¿Listo para aplicar la ciencia en tu cocina?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=hidrolisis-concepto-definicion">AI Chef Pro</a>.</p>
+
+<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
+<p>Se busca hidrólisis e hidrolisis, sin tilde. Las dos escrituras quieren esta reacción: el agua rompe una molécula grande. No es la reacción de Maillard ni una caramelización. En la partida se reconoce al madurar, al fermentar o al convertir colágeno en gelatina, sin necesidad de un número que esta ficha no va a inventar.</p>
+<ul>
+<li><a href="https://aichef.pro/blog/reaccion-de-maillard">La reacción de Maillard</a></li>
+<li><a href="https://aichef.pro/blog/maceracion-concepto-definicion">Qué es la maceración</a></li>
+</ul>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Prueba los agentes de IA</p><p class="mt-2 text-foreground">Entra como invitado y pregunta por esta técnica. La puerta es la de invitado, no la ficha de un agente.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=hidrolisis-concepto-definicion">Entrar como invitado</a></p></aside>

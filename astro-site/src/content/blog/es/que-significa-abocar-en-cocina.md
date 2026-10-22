@@ -1,8 +1,8 @@
 ---
-title: "Qué Significa Abocar en Cocina: Definición y Usos Reales"
-description: "Qué significa abocar en cocina: definición directa, etimología, usos en la partida y diferencias con trasvasar, decantar y escanciar."
+title: "Abocar y abocado: qué significan en cocina y en el vino"
+description: "Abocar es verter un líquido boca a boca y dejar el poso. Abocado es un vino de dulzor moderado, o estar destinado a algo. Con b, no avocar."
 pubDate: 2024-12-11
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado.jpeg
 imageAlt: "Abocado"
@@ -21,8 +21,12 @@ faq:
     a: "Es una expresión figurada que indica estar destinado o encaminado inevitablemente a una situación concreta. Por ejemplo, 'un cocinero sin mise en place está abocado al desastre'. Mantiene la idea de verterse hacia un desenlace, pero no tiene relación directa con la técnica culinaria de abocar líquidos."
   - q: "¿Cuál es la diferencia entre abocar y trasvasar?"
     a: "Abocar se centra en verter con cuidado para dejar el poso, aproximando las bocas de los recipientes y sin oxigenar. Trasvasar es simplemente pasar un líquido de un envase a otro, a menudo con cierta altura o agitación, buscando oxigenar (como en vinos jóvenes). Abocar es un trasiego delicado; trasvasar puede ser más enérgico."
+definedTerm:
+  name: "Abocar"
+  description: "Abocar es verter un líquido acercando la boca de un recipiente a la del otro, para pasarlo limpio y dejar el poso. No es decantar un vino de guarda ni colar con un chino. Abocado, con o, es otra cosa: un vino de dulzor moderado, o quien está destinado a un desenlace. La grafía de cocina lleva b."
 ---
-
+<p data-glosario-lead="1">Abocar es verter un líquido acercando la boca de un recipiente a la del otro, para pasarlo limpio y dejar el poso. No es decantar un vino de guarda ni colar con un chino. Abocado, con o, es otra cosa: un vino de dulzor moderado, o quien está destinado a un desenlace. La grafía de cocina lleva b.</p>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Agentes de IA para la partida</p><p class="mt-2 text-foreground">Esta técnica se trabaja con los agentes de IA de cocina, desde la ficha web de chef jefe de cocina. No abre un agente concreto de la app.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-significa-abocar-en-cocina">Ver la ficha de chef jefe de cocina</a></p></aside>
 Abocar en cocina es el acto de verter o trasvasar el contenido de un recipiente a otro aproximando las bocas de ambos, de ahí su nombre. En un sentido más técnico, significa verter con cuidado un líquido que ha reposado para no arrastrar el poso ni las impurezas del fondo. Es un gesto de trasiego preciso, no una cocción.
 
 ## Etimología: de la propia palabra «boca»
@@ -105,4 +109,12 @@ Un abocado limpio no es fruto de la improvisación. Sigue estos pasos y conviert
 6. **Usa un embudo o un colador de malla fina si la receta lo exige.** No es obligatorio, pero en líquidos muy delicados (aceites de hierbas, reducciones claras) un colador de malla fina sobre el recipiente de destino da un plus de seguridad.
 7. **Reserva el poso.** A menudo concentra sabor; se puede aprovechar para un fondo de trabajo o para dar cuerpo a una salsa. Si no sirve, descártalo con responsabilidad.
 
-Dominar el abocado no solo mejora la presentación de fondos y aliños, sino que demuestra oficio y respeto por la materia prima. Si te surgen dudas sobre esta u otras técnicas, los agentes de IA culinarios de [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=abocar) te ayudan a resolverlas al instante. Con más de 70 agentes en 7 idiomas y español nativo, puedes consultar términos, ajustar recetas o planificar partidas. El plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, suficiente para despejar las dudas del día a día.
+Dominar el abocado no solo mejora la presentación de fondos y aliños, sino que demuestra oficio y respeto por la materia prima. Si te surgen dudas sobre esta u otras técnicas, los agentes de IA culinarios de [AI Chef Pro](https://app.aichef.pro/invitado?utm_source=web&utm_medium=glosario&utm_content=que-significa-abocar-en-cocina) te ayudan a resolverlas al instante. Con los agentes de IA en 7 idiomas y español nativo, puedes consultar términos, ajustar recetas o planificar partidas. El plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, suficiente para despejar las dudas del día a día.
+
+<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
+<p>Las búsquedas mezclan abocar, abocado, abocada y la falta avocar. En cocina el verbo es abocar, con b, de boca. Avocar es un término jurídico y aquí no significa nada. Abocado, con o, nombra un vino con dulzor moderado y también la expresión estar abocado a un desenlace. No son el gesto de trasiego.</p>
+<ul>
+<li><a href="https://aichef.pro/blog/maceracion-concepto-definicion">Qué es la maceración</a></li>
+<li><a href="https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion">El fondo oscuro</a></li>
+</ul>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Prueba los agentes de IA</p><p class="mt-2 text-foreground">Entra como invitado y pregunta por esta técnica. La puerta es la de invitado, no la ficha de un agente.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-significa-abocar-en-cocina">Entrar como invitado</a></p></aside>

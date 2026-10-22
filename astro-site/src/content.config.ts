@@ -43,6 +43,16 @@ const blog = defineCollection({
       pt: z.string().optional(),
       nl: z.string().optional(),
     }).optional(),
+    /**
+     * Término de glosario. Si está, BlogPost emite DefinedTerm además del
+     * FAQPage. La description es la definición directa (texto plano).
+     */
+    definedTerm: z
+      .object({
+        name: z.string(),
+        description: z.string(),
+      })
+      .optional(),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     /**
      * Pasos visibles de un procedimiento. Si está, BlogPost emite HowTo

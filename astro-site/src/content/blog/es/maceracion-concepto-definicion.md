@@ -1,15 +1,30 @@
 ---
-title: "Maceración: qué es y tipos en cocina"
-description: "La maceración aromatiza y ablanda un alimento dejándolo reposar en un líquido o con azúcar. Conoce sus tipos (azúcar, alcohol), usos, errores y conservación."
+title: "Maceración: qué es y en qué no es un marinado"
+description: "La maceración extrae sabor de un sólido en un líquido o con azúcar, sin cocerlo. No es lo mismo que un marinado ácido de carne ni que infusionar a fuego."
 pubDate: 2026-03-21
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: glosario
 image: /blog-assets/2026/03/maceracion-featured.jpg
 imageAlt: "Maceración: Concepto y Definición"
 lang: es
 wpId: 3258
+definedTerm:
+  name: "Maceración"
+  description: "La maceración extrae sabor de un sólido dejado en un líquido o con azúcar, sin la cocción que se llevaría los aromas. Una fruta con azúcar, una piel en alcohol o una especia en almíbar son maceraciones. Un marinado ácido de carne es un pariente de otro uso, no el mismo gesto ni el mismo trabajo de partida."
+faq:
+  - q: "¿Cuál es la diferencia entre macerar y marinar?"
+    a: "La maceración extrae sabores del alimento hacia el líquido. La marinada añade sabores del líquido al alimento. Aunque similares, tienen objetivos opuestos."
+  - q: "¿Puedo reutilizar el líquido de maceración?"
+    a: "Sí, y es uno de los mejores productos. Los jarabes de frutas maceradas son excelentes para cócteles, postres y salsas."
+  - q: "¿Por qué mi licor está turbio?"
+    a: "Probablemente contiene partículas en suspensión. Filtrar mediante papel de café, tela fina o dejar decantar y usar solo la parte clara."
+  - q: "¿La maceración extrae nutrientes?"
+    a: "Sí, especialmente compuestos polifenólicos, vitaminas hidrosolubles y antioxidantes. El jarabe resultante es nutritivo."
+  - q: "¿Puedo macerar frutas congeladas?"
+    a: "Sí, pero liberan más agua al descongelarse. Reducir ligeramente la cantidad de líquido o azúcar añadido."
 ---
-
+<p data-glosario-lead="1">La maceración extrae sabor de un sólido dejado en un líquido o con azúcar, sin la cocción que se llevaría los aromas. Una fruta con azúcar, una piel en alcohol o una especia en almíbar son maceraciones. Un marinado ácido de carne es un pariente de otro uso, no el mismo gesto ni el mismo trabajo de partida.</p>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Agentes de IA para la partida</p><p class="mt-2 text-foreground">Esta técnica se trabaja con los agentes de IA de cocina, desde la ficha web de chef jefe de cocina. No abre un agente concreto de la app.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=maceracion-concepto-definicion">Ver la ficha de chef jefe de cocina</a></p></aside>
 <p>La <strong>maceración</strong> es una de las técnicas más antiguas y versátiles de la cocina, utilizada desde tiempos ancestrales para extraer sabores, aromas y principios activos de alimentos sólidos mediante su inmersión en líquidos. Desde las frutas que desprenden su dulzor en azúcar hasta las hierbas que transfieren su esencia al alcohol, este proceso de transformación química suave es fundamental tanto en la cocina doméstica como en la alta gastronomía.</p>
 <p>Comprender la maceración permite al chef no solo crear preparaciones clásicas como licores caseros y frutas confitadas, sino también desarrollar técnicas innovadoras de extracción de sabores y texturas. En este artículo del glosario culinario de AI Chef Pro, exploraremos qué es exactamente la maceración, los tipos que existen, sus mecanismos científicos, y cómo aplicar esta técnica ancestral en la cocina contemporánea.</p>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/maceracion-interna.jpg" alt="Fresas macerando con azúcar" style="width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 8px;"></p>
@@ -210,13 +225,6 @@ wpId: 3258
 <li><strong>Azúcar:</strong> Indefinido si >65% concentración.</li>
 <li><strong>Envasado al vacío:</strong> Extiende vida útil 2-3x.</li>
 </ul>
-<h2>Preguntas Frecuentes</h2>
-<p><strong>¿Cuál es la diferencia entre macerar y marinar?</strong><br /> La maceración extrae sabores del alimento hacia el líquido. La marinada añade sabores del líquido al alimento. Aunque similares, tienen objetivos opuestos.</p>
-<p><strong>¿Puedo reutilizar el líquido de maceración?</strong><br /> Sí, y es uno de los mejores productos. Los jarabes de frutas maceradas son excelentes para cócteles, postres y salsas.</p>
-<p><strong>¿Por qué mi licor está turbio?</strong><br /> Probablemente contiene partículas en suspensión. Filtrar mediante papel de café, tela fina o dejar decantar y usar solo la parte clara.</p>
-<p><strong>¿La maceración extrae nutrientes?</strong><br /> Sí, especialmente compuestos polifenólicos, vitaminas hidrosolubles y antioxidantes. El jarabe resultante es nutritivo.</p>
-<p><strong>¿Puedo macerar frutas congeladas?</strong><br /> Sí, pero liberan más agua al descongelarse. Reducir ligeramente la cantidad de líquido o azúcar añadido.</p>
-
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=maceracion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
 
 <h2>Conclusión</h2>
@@ -229,3 +237,11 @@ wpId: 3258
 <p style="color: #888; font-size: 12px; margin-top: 10px;">     AI Chef Miembro: 10 €/mes • 48.733+ recetas generadas   </p>
 </p></div>
 <p><strong>¿Listo para crear licores y almíbares caseros?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=maceracion-concepto-definicion">AI Chef Pro</a>.</p>
+
+<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
+<p>Se busca maceración, maceracion sin tilde, y macerar. No es lo mismo que marinar, aunque el buscador los junte. Macerar, en esta ficha, es dejar un sólido en líquido o con azúcar para extraer sabor sin cocción. Marinar una carne con ácido y grasa es otro gesto, con otro riesgo y otro tiempo de cámara.</p>
+<ul>
+<li><a href="https://aichef.pro/blog/que-significa-abocar-en-cocina">Qué significa abocar</a></li>
+<li><a href="https://aichef.pro/blog/hidrolisis-concepto-definicion">Qué es la hidrólisis</a></li>
+</ul>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Prueba los agentes de IA</p><p class="mt-2 text-foreground">Entra como invitado y pregunta por esta técnica. La puerta es la de invitado, no la ficha de un agente.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=maceracion-concepto-definicion">Entrar como invitado</a></p></aside>

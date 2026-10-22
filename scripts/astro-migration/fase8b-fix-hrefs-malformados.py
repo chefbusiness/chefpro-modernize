@@ -35,7 +35,7 @@ CONTENT = REPO / 'astro-site' / 'src' / 'content' / 'blog' / 'es'
 # Destinos del subdominio viejo cuyo slug NO coincide con un post de Astro.
 # Verificado uno a uno contra la colección y contra el texto del enlace.
 MAPEO_EXPLICITO = {
-    'maillard': '/blog/maillard-concepto-y-definicion-2',
+    'maillard': '/blog/reaccion-de-maillard',
     'sous-vide': '/blog/sous-vide-concepto-definicion',
     'dry-aging': '/blog/ia-maduracion-carnes-manual-tecnico-control-optimizacion',
     'gestion-eficiente-de-inventario-en-cocinas-con-ia':

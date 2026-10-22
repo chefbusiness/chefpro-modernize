@@ -42,7 +42,7 @@ interface Props {
 const AUTOR_URL = 'https://johnguerrero.es';
 
 const { post } = Astro.props;
-const { title, description, pubDate, modDate, image, imageAlt, faq, category, howto } = post.data;
+const { title, description, pubDate, modDate, image, imageAlt, faq, category, howto, definedTerm } = post.data;
 /**
  * Par de traducción (8C). Sin él, cada post declara solo su propio hreflang
  * —correcto mientras el blog EN fue contenido distinto—; con él, los dos se
@@ -287,6 +287,21 @@ const schemas: object[] = [
           name: s.name,
           text: s.text,
         })),
+      }]
+    : []),
+  ...(definedTerm
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'DefinedTerm',
+        name: definedTerm.name,
+        description: definedTerm.description,
+        inLanguage: lang,
+        url: `${SITE}${urlPath}`,
+        inDefinedTermSet: {
+          '@type': 'DefinedTermSet',
+          name: cat?.name ?? 'Glosario',
+          url: `${SITE}${cat ? categoryPath(cat.slug, lang) : blogBase(lang)}`,
+        },
       }]
     : []),
 ];

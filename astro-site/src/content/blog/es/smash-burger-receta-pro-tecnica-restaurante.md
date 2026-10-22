@@ -18,7 +18,7 @@ wpId: 2771
 
 
 
-<p class="wp-block-paragraph">A diferencia de las hamburguesas tradicionales, el smash burger se aplasta sobre la plancha caliente, creando una reacción de <a href="/blog/maillard-concepto-y-definicion-2">Maillard</a> que sella los jugos y genera una costra caramelizada única. Con esta guía Pro, lograrás resultados de restaurante gourmet en tu cocina.</p>
+<p class="wp-block-paragraph">A diferencia de las hamburguesas tradicionales, el smash burger se aplasta sobre la plancha caliente, creando una reacción de <a href="/blog/reaccion-de-maillard">Maillard</a> que sella los jugos y genera una costra caramelizada única. Con esta guía Pro, lograrás resultados de restaurante gourmet en tu cocina.</p>
 
 
 
@@ -589,7 +589,7 @@ wpId: 2771
 
 
 <ul class="wp-block-list">
-<li><a href="/blog/maillard-concepto-y-definicion-2">Reacción de Maillard</a>: Caramelización que crea sabor</li>
+<li><a href="/blog/reaccion-de-maillard">Reacción de Maillard</a>: Caramelización que crea sabor</li>
 
 
 

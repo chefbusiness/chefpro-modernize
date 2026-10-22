@@ -33,8 +33,9 @@ const GUEST_PATH: Record<Locale, string> = {
 };
 const appUrl = `${plataforma(lang)}${GUEST_PATH[lang] ?? '/invitado'}?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
 
-// Copy por idioma. nl tiene blog desde 2026-10-22: si cae al español, el
-// cierre del artículo neerlandés saluda en otro idioma. Tratamiento: u.
+// Copy por idioma. nl tiene blog desde 2026-10-22: sin esta entrada el CTA
+// neerlandés salía en castellano. Si cae al español, el cierre del artículo
+// saluda en otro idioma. Tratamiento: u.
 // 2026-08-17 — FIN DEL PLAN GRATIS (fase11, 2026-08-15): este componente se
 // escapó del barrido y siguió diciendo «Pruébalo gratis» en 4 idiomas hasta
 // hoy. Copy nuevo con el framing de John («planes para todos los bolsillos,
