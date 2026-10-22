@@ -12,6 +12,7 @@
 // pasar el idioma.
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { DEFAULT_LOCALE, type Locale } from '../i18n/config';
+import { PROMPT_HUB_PATHS } from './institutional';
 
 export interface BlogCategory {
   slug: string;
@@ -234,6 +235,38 @@ const CATEGORIES_PT: BlogCategory[] = [
   },
 ];
 
+// 2026-10-22 — Blog NEERLANDÉS. Cuatro cajas según el research de Google.nl
+// (ROADMAP_BLOG_NEERLANDES.md), no un calco del italiano: en NL el clúster de
+// food cost casi no existe y la demanda viva está en allergenen, hygiënecode
+// y técnica (snijtechnieken). El compuesto va pegado en el nombre visible.
+// El hub sólo pinta categorías que ya tienen posts.
+const CATEGORIES_NL: BlogCategory[] = [
+  {
+    slug: 'voedselveiligheid',
+    name: 'Voedselveiligheid',
+    description:
+      'Allergenenlijst, hygiënecode en HACCP voor de horeca: wat de NVWA vraagt, wat je in de keuken ophangt en hoe je het bijhoudt als de kaart verandert.',
+  },
+  {
+    slug: 'keukentechniek',
+    name: 'Keukentechniek',
+    description:
+      'Snijtechnieken, kooktechnieken en mise en place voor een brigade: maten, temperaturen en werkwijzen die een service overleven.',
+  },
+  {
+    slug: 'restaurantmanagement',
+    name: 'Restaurantmanagement',
+    description:
+      'Wat in Nederland wél gezocht wordt aan de bedrijfsvoering: menu engineering. Geen kalkulatie-pilaar: die vraag is hier te dun.',
+  },
+  {
+    slug: 'ai-chef-pro',
+    name: 'AI Chef Pro',
+    description:
+      'Alles over het platform: de culinaire AI-agents, wat er in elke release verandert en de workflows die keukens er echt mee draaien.',
+  },
+];
+
 /** Taxonomía por idioma. Los idiomas sin blog propio devuelven lista vacía. */
 export const BLOG_CATEGORIES_BY_LANG: Partial<Record<Locale, BlogCategory[]>> = {
   es: CATEGORIES_ES,
@@ -242,6 +275,7 @@ export const BLOG_CATEGORIES_BY_LANG: Partial<Record<Locale, BlogCategory[]>> = 
   fr: CATEGORIES_FR,
   de: CATEGORIES_DE,
   pt: CATEGORIES_PT,
+  nl: CATEGORIES_NL,
 };
 
 /** Categorías de un idioma (vacío si ese idioma aún no tiene blog). */
@@ -302,6 +336,9 @@ const ROUTE_SEGMENTS: Partial<Record<Locale, { category: string; page: string }>
   fr: { category: 'categorie', page: 'page' },
   de: { category: 'kategorie', page: 'seite' },
   pt: { category: 'categoria', page: 'pagina' },
+  // 'categorie' en 'pagina' zijn de Nederlandse woorden. Zonder deze entry
+  // viel nl terug op het Engelse 'category'/'page'.
+  nl: { category: 'categorie', page: 'pagina' },
 };
 const segments = (lang: Locale) => ROUTE_SEGMENTS[lang] ?? ROUTE_SEGMENTS.en!;
 
@@ -331,18 +368,16 @@ export const hasBlog = (lang: Locale): boolean =>
 
 /**
  * Hub del blog para la navegación global (Header/Footer/Hero), que se pinta en
- * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /nl/blog no existe
- * todavía y sería un 404. Los idiomas sin blog propio caen al ES, que es el
- * comportamiento que ya tenían antes de 8B.6. (El FR tiene árbol propio desde
- * el 2026-08-16, el DE desde el 2026-08-18 y el PT desde el 2026-08-19, así
- * que ya no caen; sólo queda el NL.)
+ * los 7 idiomas. Desde 2026-10-22 también nl tiene árbol propio; un idioma
+ * sin taxonomía seguiría cayendo al blog español para no enlazar un 404.
  */
 export const blogHubHref = (lang: Locale): string =>
   hasBlog(lang) ? blogBase(lang) : blogBase(DEFAULT_LOCALE);
 
 /**
- * Hub de las LIBRERÍAS DE PROMPTS, mismo patrón que `blogHubHref`: sólo hay
- * versión nativa en es y en, y los demás idiomas caen al español.
+ * Hub de las LIBRERÍAS DE PROMPTS. es y en tienen catálogo publicado (y NO
+ * son equivalentes entre sí). fr, de, it, pt y nl tienen puerta de entrada
+ * localizada. Un idioma desconocido cae al español.
  *
  * OJO, no confundirlo con la CATEGORÍA del blog del mismo nombre. Son cosas
  * distintas y el parecido ha costado un enlace roto: en inglés existe a la vez
@@ -355,8 +390,13 @@ export const blogHubHref = (lang: Locale): string =>
  * sitemap excluye toda ruta acabada en `-library` (así se llaman los dashboards
  * de pago), así que `/en/prompt-library` desaparecía del sitemap sin un aviso.
  */
-export const promptHubHref = (lang: Locale): string =>
-  lang === 'en' ? '/en/prompt-libraries' : '/libreria-de-prompts';
+export const promptHubHref = (lang: Locale): string => {
+  if (lang === 'en') return '/en/prompt-libraries';
+  if (lang === 'fr' || lang === 'de' || lang === 'it' || lang === 'pt' || lang === 'nl') {
+    return PROMPT_HUB_PATHS[lang];
+  }
+  return '/libreria-de-prompts';
+};
 
 export type BlogPost = CollectionEntry<'blog'>;
 
@@ -464,6 +504,16 @@ export function formatDatePt(d: Date): string {
   return `${d.getUTCDate()} de ${MONTHS_PT[d.getUTCMonth()]} de ${d.getUTCFullYear()}`;
 }
 
+const MONTHS_NL = [
+  'januari', 'februari', 'maart', 'april', 'mei', 'juni',
+  'juli', 'augustus', 'september', 'oktober', 'november', 'december',
+];
+
+/** "22 oktober 2026" — dag, maand in kleine letters, geen voorzetsel. */
+export function formatDateNl(d: Date): string {
+  return `${d.getUTCDate()} ${MONTHS_NL[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
 /** Fecha larga en el idioma del post (fallback: formato ES). */
 export function formatDate(d: Date, lang: Locale = DEFAULT_LOCALE): string {
   if (lang === 'en') return formatDateEn(d);
@@ -471,6 +521,7 @@ export function formatDate(d: Date, lang: Locale = DEFAULT_LOCALE): string {
   if (lang === 'fr') return formatDateFr(d);
   if (lang === 'de') return formatDateDe(d);
   if (lang === 'pt') return formatDatePt(d);
+  if (lang === 'nl') return formatDateNl(d);
   return formatDateEs(d);
 }
 

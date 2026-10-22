@@ -36,6 +36,18 @@ const TIENDA_NOMBRE: Record<string, string> = {
 };
 const tiendaHref = (l: string): string | null => TIENDA_PATHS[l] ?? null;
 
+// Formación presencial. DUPLICADO de INSTITUTIONAL_PATHS.training
+// (astro-site/src/lib/institutional.ts): la SPA no puede importar de astro-site/.
+const FORMACION_PATHS: Record<string, string> = {
+  es: '/formacion-presencial',
+  en: '/en/in-person-ai-training',
+  fr: '/fr/formation-ia-restauration',
+  de: '/de/praesenzschulung-ki-gastronomie',
+  it: '/it/formazione-ia-ristorazione',
+  pt: '/pt/formacao-ia-restauracao',
+  nl: '/nl/ai-training-horeca',
+};
+
 // Landing de integraciones (2026-09-05). DUPLICADO a propósito de
 // astro-site/src/data/integraciones.ts (fuente canónica): la SPA está en otra
 // raíz y no puede importar de astro-site/. Si cambia un slug, tocar los dos.
@@ -371,19 +383,14 @@ export default function ModernFooter() {
                   {t('footer.mentoria_online')}
                 </a>
               </li>
-              {/* Sólo ES: no hay página traducida y /it/formacion-presencial da 404.
-                  El Header y Footer.astro ya tenían este guard; este gemelo de la
-                  SPA no, y lo montan 17 páginas italianas vía island. */}
-              {lang === 'es' && (
-                <li>
-                  <a
-                    href="/formacion-presencial"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t('footer.formacion_presencial')}
-                  </a>
-                </li>
-              )}
+              <li>
+                <a
+                  href={FORMACION_PATHS[lang] || FORMACION_PATHS.es}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t('footer.formacion_presencial')}
+                </a>
+              </li>
               <li>
                 <a
                   href={appCtaUrl(lang, 'footer', 'planes')}

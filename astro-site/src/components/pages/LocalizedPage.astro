@@ -1,0 +1,396 @@
+---
+// Páginas institucionales localizadas (en, fr, de, it, pt, nl) y hubs de
+// prompts (fr, de, it, pt, nl). El español sigue en sus .astro de origen:
+// aquí no se reescribe ese copy.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+import { SITE } from '../../i18n/config';
+import { appCtaUrl } from '../../lib/app-url';
+import { pricingHref } from '../../lib/pricing-path';
+import {
+  ALL_LOCALES,
+  INSTITUTIONAL_PATHS,
+  PROMPT_HUB_LOCALES,
+  PROMPT_HUB_PATHS,
+  alternatesFor,
+  basePathFor,
+  promptHubBasePath,
+  type InstitutionalKey,
+} from '../../lib/institutional';
+import { getPage, type PageKind, type ParityLang } from '../../data/parity';
+
+interface Props {
+  lang: ParityLang;
+  kind: PageKind;
+}
+
+const { lang, kind } = Astro.props;
+const copy = getPage(kind, lang);
+const EMAIL = 'info@aichef.pro';
+const WA_NUMBER = '34744717942';
+const WA_DISPLAY = '+34 744 717 942';
+const waText = copy.waText ?? 'Hello, I have a question about AI Chef Pro.';
+const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waText)}`;
+
+const isPrompt = kind === 'prompts';
+const institutionalKey = (isPrompt ? null : kind) as InstitutionalKey | null;
+const path = isPrompt
+  ? PROMPT_HUB_PATHS[lang as keyof typeof PROMPT_HUB_PATHS]
+  : INSTITUTIONAL_PATHS[institutionalKey!][lang];
+const basePath = isPrompt
+  ? promptHubBasePath(lang as keyof typeof PROMPT_HUB_PATHS)
+  : basePathFor(institutionalKey!, lang);
+const locales = isPrompt ? PROMPT_HUB_LOCALES : ALL_LOCALES;
+const alternates = isPrompt ? PROMPT_HUB_PATHS : alternatesFor(institutionalKey!);
+const pageUrl = `${SITE}${path}`;
+const homeUrl = `${SITE}/${lang}`;
+const appHref = appCtaUrl(lang, kind, 'hero');
+const appFinal = appCtaUrl(lang, kind, 'cta-final');
+const prices = pricingHref(lang);
+
+const allFaqs = [
+  ...(copy.faqs ?? []),
+  ...copy.blocks.flatMap((b) => b.faqs ?? []),
+];
+
+const channelHref = (icon: string) => {
+  if (icon === 'mail') return `mailto:${EMAIL}`;
+  if (icon === 'whatsapp') return waUrl;
+  return appCtaUrl(lang, kind, 'soporte-app');
+};
+
+const schemaType =
+  kind === 'contact' ? 'ContactPage'
+  : kind === 'faq' ? 'FAQPage'
+  : kind === 'about' ? 'AboutPage'
+  : kind === 'training' ? 'Course'
+  : 'WebPage';
+
+const schemas: object[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: copy.homeLabel, item: homeUrl },
+      { '@type': 'ListItem', position: 2, name: copy.crumb, item: pageUrl },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': schemaType,
+    name: copy.title,
+    url: pageUrl,
+    description: copy.description,
+    inLanguage: lang,
+    ...(kind === 'contact'
+      ? {
+          mainEntity: {
+            '@type': 'Organization',
+            name: 'AI Chef Pro',
+            url: SITE,
+            email: EMAIL,
+            contactPoint: [{
+              '@type': 'ContactPoint',
+              contactType: 'customer support',
+              email: EMAIL,
+              telephone: '+34744717942',
+              areaServed: 'Worldwide',
+              availableLanguage: ['Spanish', 'English'],
+            }],
+          },
+        }
+      : {}),
+    ...(kind === 'about'
+      ? {
+          mainEntity: {
+            '@type': 'Person',
+            name: 'John Guerrero',
+            jobTitle: 'Founder',
+            url: 'https://johnguerrero.es',
+            worksFor: { '@type': 'Organization', name: 'AI Chef Pro', url: SITE },
+          },
+        }
+      : {}),
+    ...(kind === 'training'
+      ? {
+          provider: { '@type': 'Organization', name: 'AI Chef Pro', url: SITE },
+          offers: (copy.offers ?? [])
+            .filter((o) => typeof o.amount === 'number')
+            .map((o) => ({
+              '@type': 'Offer',
+              name: o.name,
+              price: o.amount,
+              priceCurrency: 'EUR',
+              description: `${o.meta}. ${o.detail}`,
+              url: pageUrl,
+            })),
+        }
+      : {}),
+  },
+];
+
+if (allFaqs.length > 0 && kind !== 'faq') {
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: allFaqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+
+if (kind === 'faq') {
+  const faqSchema = schemas[1] as { mainEntity?: unknown };
+  faqSchema.mainEntity = allFaqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  }));
+}
+
+if (copy.howto) {
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: copy.howto.name,
+    description: copy.howto.description,
+    inLanguage: lang,
+    step: copy.howto.steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  });
+}
+---
+
+<BaseLayout
+  title={copy.title}
+  description={copy.description}
+  keywords={copy.keywords}
+  lang={lang}
+  basePath={basePath}
+  locales={locales}
+  alternates={alternates}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-5xl px-4 py-14">
+    <header class="mx-auto mb-8 max-w-3xl text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-primary">{copy.eyebrow}</p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground md:text-5xl">{copy.h1}</h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">{copy.lead}</p>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+        {kind === 'contact' ? (
+          <a href={`mailto:${EMAIL}`} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+            {copy.emailCta}
+          </a>
+        ) : (
+          <a href={kind === 'training' ? `mailto:${EMAIL}` : appHref} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark" target={kind === 'training' ? undefined : '_blank'} rel={kind === 'training' ? undefined : 'noopener'}>
+            {copy.ctaPrimary}
+          </a>
+        )}
+        <a href={kind === 'contact' ? appHref : prices} class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10" target={kind === 'contact' ? '_blank' : undefined} rel={kind === 'contact' ? 'noopener' : undefined}>
+          {kind === 'contact' ? copy.appCta : copy.ctaSecondary}
+        </a>
+      </div>
+    </header>
+
+    <aside class="mx-auto mb-14 max-w-3xl rounded-xl border border-primary/30 bg-primary/5 p-5 text-left">
+      <p class="text-xs font-semibold uppercase tracking-wide text-primary">{copy.answerLabel}</p>
+      <p class="mt-2 text-base text-foreground">{copy.answer}</p>
+    </aside>
+
+    {copy.channels && (
+      <section aria-label={copy.crumb} class="grid grid-cols-1 gap-5 md:grid-cols-3">
+        {copy.channels.map((c) => (
+          <article class="flex flex-col rounded-xl border border-border bg-card p-6 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wide text-primary">{c.tag}</p>
+            <h2 class="mt-1 text-lg font-bold text-foreground">{c.title}</h2>
+            <p class="mt-3 flex-1 text-sm text-muted-foreground">{c.body}</p>
+            <p class="mt-4 text-sm font-medium text-foreground">{c.meta}</p>
+            <a
+              href={channelHref(c.icon)}
+              target={c.icon === 'mail' ? undefined : '_blank'}
+              rel={c.icon === 'mail' ? undefined : 'noopener'}
+              class="mt-4 inline-flex w-full items-center justify-center rounded-md border border-border bg-background h-11 px-5 text-sm font-semibold text-foreground transition-colors hover:bg-accent/10"
+            >
+              {c.cta}
+            </a>
+          </article>
+        ))}
+      </section>
+    )}
+
+    {copy.honesty && (
+      <section class="mx-auto mt-14 max-w-3xl rounded-xl border border-border bg-card p-6 text-center">
+        <p class="text-sm text-muted-foreground">{copy.honesty}</p>
+      </section>
+    )}
+
+    {copy.chips && (
+      <ul class="mx-auto mt-4 flex max-w-3xl flex-wrap justify-center gap-2">
+        {copy.chips.map((chip) => (
+          <li class="rounded-full border border-border bg-card px-3 py-1 text-sm text-foreground">{chip}</li>
+        ))}
+      </ul>
+    )}
+
+    {copy.stats && (
+      <section class="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-4 md:grid-cols-4">
+        {copy.stats.map((s) => (
+          <div class="rounded-xl border border-border bg-card p-4 text-center">
+            <p class="text-2xl font-bold text-foreground">{s.big}</p>
+            <p class="mt-1 text-sm text-muted-foreground">{s.label}</p>
+          </div>
+        ))}
+      </section>
+    )}
+
+    {copy.offers && (
+      <section class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2">
+        {copy.offers.map((o) => (
+          <article class:list={['rounded-xl border bg-card p-6 shadow-sm', o.popular ? 'border-primary' : 'border-border']}>
+            <h2 class="text-lg font-bold text-foreground">{o.name}</h2>
+            <p class="mt-2 text-2xl font-bold text-foreground">{o.priceLabel}</p>
+            <p class="mt-1 text-sm font-medium text-primary">{o.meta}</p>
+            <p class="mt-3 text-sm text-muted-foreground">{o.detail}</p>
+          </article>
+        ))}
+      </section>
+    )}
+
+    {copy.priceNote && (
+      <p class="mx-auto mt-6 max-w-3xl text-sm text-muted-foreground">{copy.priceNote}</p>
+    )}
+
+    {copy.howto && (
+      <section class="mx-auto mt-14 max-w-3xl">
+        <h2 class="text-2xl font-bold text-foreground">{copy.howto.name}</h2>
+        <p class="mt-3 text-base font-medium text-foreground">{copy.howto.description}</p>
+        <ol class="mt-4 list-decimal space-y-3 pl-5 text-sm text-muted-foreground">
+          {copy.howto.steps.map((s) => (
+            <li>
+              <span class="font-semibold text-foreground">{s.name}. </span>{s.text}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {copy.catalogs && (
+      <section class="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2">
+        {copy.catalogs.map((c) => (
+          <article class="rounded-xl border border-border bg-card p-6">
+            <h2 class="text-lg font-bold text-foreground">
+              <a href={c.href} class="hover:text-primary">{c.title}</a>
+            </h2>
+            <p class="mt-3 text-sm text-muted-foreground">{c.body}</p>
+          </article>
+        ))}
+      </section>
+    )}
+
+    {copy.blocks.map((block) => (
+      <section id={block.id} class="mx-auto mt-16 max-w-3xl">
+        <h2 class="text-2xl font-bold text-foreground md:text-3xl">{block.h2}</h2>
+        <p class="mt-4 text-base font-medium text-foreground">{block.answer}</p>
+        {block.paragraphs?.map((p) => (
+          <p class="mt-3 text-sm text-muted-foreground">{p}</p>
+        ))}
+        {block.bullets && (
+          <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+            {block.bullets.map((b) => <li>{b}</li>)}
+          </ul>
+        )}
+        {block.faqs && (
+          <div class="mt-6 space-y-3">
+            {block.faqs.map((f) => (
+              <details class="group rounded-xl border border-border bg-card p-5">
+                <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+                  {f.q}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <p class="mt-3 text-sm text-muted-foreground">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        )}
+      </section>
+    ))}
+
+    {copy.plans && (
+      <section class="mx-auto mt-16 max-w-3xl">
+        <h2 class="text-2xl font-bold text-foreground">{copy.plansHeading}</h2>
+        <div class="mt-4 overflow-x-auto rounded-xl border border-border">
+          <table class="w-full text-left text-sm">
+            <tbody>
+              {copy.plans.map((row) => (
+                <tr class="border-b border-border last:border-0">
+                  <th class="p-3 font-semibold text-foreground">{row.name}</th>
+                  <td class="p-3 text-foreground">{row.price}</td>
+                  <td class="p-3 text-muted-foreground">{row.detail}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
+
+    {copy.standards && (
+      <section class="mx-auto mt-16 max-w-3xl">
+        <h2 class="text-2xl font-bold text-foreground">{copy.standardsHeading}</h2>
+        <div class="mt-4 space-y-4">
+          {copy.standards.map((s) => (
+            <article class="rounded-xl border border-border bg-card p-5">
+              <h3 class="font-semibold text-foreground">{s.title}</h3>
+              <p class="mt-2 text-sm text-muted-foreground">{s.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {copy.faqs && copy.faqs.length > 0 && (
+      <section class="mx-auto mt-16 max-w-3xl">
+        <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">{copy.faqHeading}</h2>
+        <div class="space-y-3">
+          {copy.faqs.map((f) => (
+            <details class="group rounded-xl border border-border bg-card p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+                {f.q}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              <p class="mt-3 text-sm text-muted-foreground">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">{copy.ctaTitle}</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">{copy.ctaBody}</p>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+        <a href={kind === 'training' || kind === 'contact' ? `mailto:${EMAIL}` : appFinal} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark" target={kind === 'training' || kind === 'contact' ? undefined : '_blank'} rel={kind === 'training' || kind === 'contact' ? undefined : 'noopener'}>
+          {copy.ctaPrimary}
+        </a>
+        <a href={prices} class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
+          {copy.ctaSecondary}
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

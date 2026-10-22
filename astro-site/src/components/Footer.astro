@@ -14,6 +14,7 @@ import { appCtaUrl } from '../lib/app-url';
 // Hero.astro y BusinessToolsShowcase.astro. Aquí había una SÉPTIMA copia del
 // mapa literal, incrustada en el href.
 import { pricingHref } from '../lib/pricing-path';
+import { formacionHref } from '../lib/institutional';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -170,11 +171,7 @@ const blogLinks: FooterLink[] =
         <ul class="space-y-3 text-sm">
           <li><a href={pricingHref(lang)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'nav.precios')}</a></li>
           <li><a href={s(MENTORIA_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.mentoria_online')}</a></li>
-          <!-- Sólo ES: la formación presencial no tiene página traducida y
-               /it/formacion-presencial da 404. El Header ya tenía este guard;
-               el Footer no, así que enlazaba con etiqueta italiana a una página
-               en español en las 83 URLs de /it. -->
-          {lang === 'es' && (<li><a href="/formacion-presencial" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.formacion_presencial')}</a></li>)}
+          <li><a href={formacionHref(lang)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.formacion_presencial')}</a></li>
           <!-- Canal oficial de YouTube: además del icono social del pie, tiene
                sitio propio en Formación porque es donde el usuario busca aprender
                (John, 2026-07-31). -->
