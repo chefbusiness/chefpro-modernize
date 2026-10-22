@@ -88,7 +88,7 @@ faq:
 </table></div>
 <p>La nata no está en la tabla. Algunas cocinas añaden una cucharada a la reducción, la dejan reducir a la mitad y entonces montan: la salsa aguanta mejor. Es un recurso honesto cuando el turno es largo, y hay que escribirlo en la ficha porque el sabor ya no es el del beurre blanc pelado. Echar la nata al final, como si ligara por sí sola, es otra salsa.</p>
 <h2>El de limón, y el nombre en la carta</h2>
-<p>En castellano la salsa se llama mantequilla blanca. En el pase se pide en francés, o como beurre nantais, porque la traducción sola no describe el plato. Quien la busca «en español» quiere esa frase, y quiere también el método: la frase no cambia el cazo.</p>
+<p>En castellano la salsa se llama mantequilla blanca. En el pase se pide en francés, o como beurre nantais, porque la traducción sola no le dice al comensal qué va a comer. El nombre no cambia el cazo: la reducción y la mantequilla son las mismas.</p>
 <p>El ácido del Loira es el vinagre. El limón entra después, si la casa lo quiere: unas gotas al final refrescan una reducción que ya está hecha. Cambiar el vinagre por zumo, o montar sobre cava y limón, es una variante, y se escribe en la ficha porque el cítrico manda. Lo mismo si alguien pide la salsa sin vino y sostiene la emulsión solo con vinagre y una cucharada de agua: sale más seca y más ácida, y la comanda tiene que decirlo. El aromático sigue siendo la chalota. Un diente de ajo se come el vino, el vinagre y el pescado.</p>
 <h2>Cómo se monta, paso a paso</h2>
 <p>El trabajo se parte en dos. La reducción pertenece a la mise en place. El montaje pertenece al pase.</p>
