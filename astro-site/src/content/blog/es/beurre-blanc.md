@@ -1,5 +1,5 @@
 ---
-title: "Beurre blanc: la salsa de mantequilla que se sirve ya"
+title: "Beurre blanc: qué es la salsa de mantequilla y cómo se sirve al momento"
 description: "El beurre blanc es chalota, vino blanco y vinagre reducidos, y mantequilla fría batida al final. Es una emulsión inestable: se sirve en el momento, no se guarda."
 pubDate: 2026-10-22
 modDate: 2026-10-22
@@ -31,7 +31,7 @@ faq:
 ---
 
 <p>El beurre blanc es una salsa de chalota, vino blanco y vinagre reducidos, montada después con mantequilla fría. La mantequilla es el cuerpo, no un adorno. Es una emulsión inestable: si hierve o si espera, se corta. Se hace para el pase y se manda enseguida. No es un jugo montado ni un beurre manié.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Agentes de IA para la partida</p><p class="mt-2 text-foreground">Esta técnica se trabaja con los agentes de IA de cocina, desde la ficha web de chef jefe de cocina. No abre un agente concreto de la app.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Ver la ficha de chef jefe de cocina</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Ver la ficha de chef jefe de cocina</a></p></aside>
 <h2>Qué es, en la práctica</h2>
 <p>La base es poca y ácida. Chalota picada, vino blanco y vinagre se reducen hasta que el líquido casi no cubre la chalota y el ácido se ha calmado sin desaparecer. Ahí entra la mantequilla fría, en trozos, fuera de un hervor fuerte, batiendo. El beurre blanc no lleva harina. El cuerpo lo pone la grasa dispersa en ese poco de líquido. Si la reducción se seca del todo, no hay dónde emulsionar. Si se queda larga, la salsa sale floja y el ácido manda. El punto se prueba, no se cronometra.</p>
 <p>Es una emulsión que no perdona la espera. En caliente y en movimiento se tiene. En un baño que se pasa de calor, o en un cazo olvidado al fondo del pase, la mantequilla se suelta y ves un charco de grasa sobre un líquido claro. No se recupera como una mayonesa a la que le falta un hilo de agua. Se vuelve a montar con mantequilla fría si aún hay base, o se tira el plato y se hace otra. Por eso la casa que lo lleva en carta lo monta al canto, no a primera hora.</p>
@@ -51,4 +51,4 @@ faq:
 <li><a href="https://aichef.pro/blog/ligado-con-yema">Ligado con yema</a></li>
 <li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
 </ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Prueba los agentes de IA</p><p class="mt-2 text-foreground">Entra como invitado y pregunta por esta técnica. La puerta es la de invitado, no la ficha de un agente.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Entrar como invitado</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Entrar como invitado</a></p></aside>

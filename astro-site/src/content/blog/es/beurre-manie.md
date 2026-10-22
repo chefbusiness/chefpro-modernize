@@ -1,5 +1,5 @@
 ---
-title: "Beurre manié: qué es y en qué no es un roux"
+title: "Beurre manié: qué es y en qué se diferencia del roux"
 description: "El beurre manié es mantequilla blanda y harina a partes iguales, cruda, para corregir una salsa corta al final. No se cocina antes y no es un roux."
 pubDate: 2026-10-22
 modDate: 2026-10-22
@@ -31,7 +31,7 @@ faq:
 ---
 
 <p>El beurre manié es una pasta de mantequilla blanda y harina a partes iguales en peso, cruda, que se bate al final para dar cuerpo a una salsa corta. No se cocina antes. No es un roux. En el pase sirve para corregir, no para construir la salsa que debías tener lista por la mañana.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Agentes de IA para la partida</p><p class="mt-2 text-foreground">Esta técnica se trabaja con los agentes de IA de cocina, desde la ficha web de chef jefe de cocina. No abre un agente concreto de la app.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Ver la ficha de chef jefe de cocina</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Ver la ficha de chef jefe de cocina</a></p></aside>
 <h2>Qué es, en la práctica</h2>
 <p>En el pase no arrancas un roux. El estofado ha salido corto, el fumet del sábado ha quedado líquido y la brigada está emplatando. El beurre manié vive para ese momento: una pasta hecha en la mise en place, guardada blanda, que se deshace en trozos dentro del líquido a hervor suave. Si la tiras de golpe y no bates, la harina se encapsula y el comensal encuentra una bola cruda. El gesto es de corrección. Quien lo usa para todas las salsas del día está escondiendo un roux que no hizo.</p>
 <p>La diferencia con el roux es el orden. En el roux la harina se cocina en la grasa antes de que llegue el líquido, y ese tueste es el sentido del gesto. En el beurre manié la harina entra cruda, llevada por la mantequilla, cuando la salsa ya existe. Si fríes la pasta antes, has salido de este gesto y has empezado otro. El jefe lo nota en el sabor a cereal si dejas el trozo sin batir. Un hervor quieto deja que el almidón hinche sin el color de un roux rubio o oscuro.</p>
@@ -51,4 +51,4 @@ faq:
 <li><a href="https://aichef.pro/blog/papilla-de-almidon">Papilla de almidón</a></li>
 <li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
 </ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Prueba los agentes de IA</p><p class="mt-2 text-foreground">Entra como invitado y pregunta por esta técnica. La puerta es la de invitado, no la ficha de un agente.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Entrar como invitado</a></p></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Entrar como invitado</a></p></aside>
