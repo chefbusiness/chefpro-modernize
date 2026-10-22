@@ -1,8 +1,8 @@
 ---
-title: "Fondo bruno: cos'è, la ricetta professionale e le salse che ne derivano"
-description: "Tutto sul fondo bruno: proporzioni per 5 litri, procedimento in 8 fasi, tempi di cottura e le migliori salse derivate come bordolese e demi-glace."
+title: "Fondo bruno e demi-glace: ricetta professionale e salse derivate"
+description: "Fondo bruno e demi-glace (anche cercata come demi glace): proporzioni per 5 litri, cottura e salse derivate. La demi-glace è il fondo ridotto della metà."
 pubDate: 2026-08-16
-modDate: 2026-08-16
+modDate: 2026-10-22
 category: tecnica-e-ricette
 tags: ["fondo bruno", "salse", "tecnica di cucina", "preparazioni di base"]
 image: /blog-assets/2026/08/fondo-bruno-destacada.jpg
@@ -19,6 +19,8 @@ faq:
     a: "Per una versione veloce puoi usare la pentola a pressione: in circa 2 ore ottieni un fondo bruno onesto, anche se meno profondo di quello tradizionale. In alternativa, prepara un jus veloce facendo rosolare bene dei ritagli di carne e riducendoli in 45-60 minuti. Sii chiaro con te stesso: avrà meno corpo e meno gelatina, ma può salvarti un servizio."
   - q: "Cosa usare al posto del fondo bruno?"
     a: "Se non hai fondo bruno, puoi usare una demi-glace o un fondo bruno pronto professionale in pasta o polvere. Sono pratici e possono salvarti un servizio, ma leggi sempre l'etichetta: spesso contengono sale e glutammato, che cambiano l'equilibrio del piatto. Un fondo fatto in casa non è salato, quindi con i prodotti pronti dovrai correggere il condimento con molta attenzione."
+  - q: "Che cos'è la demi-glace?"
+    a: "La demi-glace è un fondo bruno ridotto della metà circa, fino a consistenza sciropposa. Il fondo bruno è la materia prima; la demi-glace è il prodotto che usi in padella. La stessa salsa si cerca anche senza trattino, come demi glace. Non è un brodo e non si sala in partenza, perché la riduzione concentra il sale."
 ---
 
 <p>Sono le otto del mattino e in cucina entra il profumo delle ossa che si tostano in forno. Non è un odore qualsiasi: è quello che annuncia una giornata di lavoro lenta, paziente, fatta di schiumature e di controlli al sobbollire. La pentola sul fuoco tremerà appena per ore, e da lì, a sera, uscirà la base di mezza carta dei secondi. Quel liquido scuro e gelatinoso è il fondo bruno, e se sei qui a leggere, probabilmente sai già che è la differenza tra una salsa che si ricorda e un sugo che si dimentica.</p>

@@ -2534,15 +2534,15 @@
   },
   "landingRecetas": {
     "seo": {
-      "title": "Receitas com IA para Restaurantes | AI Chef Pro",
-      "description": "Gere receitas profissionais com IA: 25 cozinhas do mundo, menus de época, fichas técnicas e escalonamento automático. Mais de 5.000 restaurantes já o usam.",
-      "keywords": "receitas IA restaurantes, gerador receitas profissionais, receitas IA chef, menu época IA, fichas técnicas receitas, 25 cozinhas mundo"
+      "title": "IA para receitas de restaurante | AI Chef Pro",
+      "description": "IA para receitas de restaurante: fichas técnicas, ementa de época e escalonamento de doses. Plano Membro a partir de 10 €/mês, sem fidelização. Não há plano gratuito.",
+      "keywords": "ia para receitas, ia de receitas, melhor ia para receitas, receitas ia restaurantes, aplicações ia receitas, aplicativos ia receitas"
     },
     "breadcrumb": "Receitas com IA para Restaurantes",
     "hero": {
       "badge": "Gerador Profissional de Receitas com IA",
-      "h1": "Receitas com IA para Restaurantes: 25 Cozinhas do Mundo",
-      "subtitle": "Gere receitas tecnicamente corretas instantaneamente. Menus de época, fichas técnicas profissionais e escalonamento automático de doses para o seu restaurante.",
+      "h1": "IA para receitas: receitas profissionais para restaurantes",
+      "subtitle": "Receitas com ficha técnica, alergénios e doses para a sua cozinha. Em Portugal diz-se aplicações; nas pesquisas do Brasil também aparece como aplicativos. Plano Membro a partir de 10 €/mês, sem plano gratuito.",
       "tagline": "Do conceito ao prato em minutos, não em horas.",
       "cta_primary": "Experimentar agora",
       "cta_secondary": "Ver planos e preços",
@@ -2707,6 +2707,10 @@
       "title": "Perguntas frequentes sobre receitas com IA para restaurantes"
     },
     "faq": [
+      {
+        "question": "Qual é a melhor IA para receitas?",
+        "answer": "Para uma cozinha profissional, a melhor IA para receitas é a que devolve ficha técnica, alergénios e doses, não só um texto. O AI Chef Pro faz isso em português de Portugal (aplicações; nas buscas do Brasil também aparece como aplicativos) a partir de 10 €/mês, com 10.000 créditos e sem fidelização. Um chatbot gratuito pode sugerir um jantar em casa. Não há plano gratuito no AI Chef Pro."
+      },
       {
         "question": "Pode a IA criar receitas profissionais para restaurantes?",
         "answer": "Sim. O AI Chef Pro gera receitas com vocabulário técnico culinário correto, incluindo técnicas precisas, pontos de confeção, apresentação e harmonizações. Ao contrário de uma IA generalista, entende a lógica de cada cozinha do mundo."

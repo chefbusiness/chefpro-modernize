@@ -1,8 +1,8 @@
 ---
 title: "Portionsgrößen-Tabelle für die Gastronomie: Wie viel Gramm pro Person — von à la carte bis Buffet"
-description: "Die Profi-Portionsgrößen-Tabelle für die Gastronomie: Gramm pro Person für Fleisch, Fisch, Beilagen, Suppe & Dessert – von à la carte bis Buffet."
+description: "Portionsgrößen-Tabelle für Erwachsene à la carte: Gramm pro Person für Fleisch, Gemüse, Kartoffeln, Suppe und Dessert, plus Buffet und Menü."
 pubDate: 2026-08-19
-modDate: 2026-08-19
+modDate: 2026-10-22
 category: restaurant-management
 tags: ["portionsgrößen", "portionsgrößen tabelle", "kalkulation", "gastronomie"]
 image: /blog-assets/2026/08/portionen-destacada.jpg
@@ -19,6 +19,12 @@ faq:
     a: "Als Beilage rechnen Sie für Nudeln 80 bis 100 g roh pro Person, für Reis 60 bis 80 g roh. Beachten Sie den Garfaktor: Nudeln verdoppeln ihr Gewicht beim Kochen ungefähr, Reis verdreifacht es. Aus 80 g rohen Nudeln werden also etwa 160 g gegart, aus 70 g Reis etwa 210 g. Diese Mengen passen gut zu Fleisch oder Fisch. Wenn Nudeln oder Reis das Hauptgericht sind, erhöhen Sie die Menge: Nudeln 125 bis 150 g roh, Reis entsprechend mehr."
   - q: "Wie berechnet man Portionsgrößen für ein Menü mit mehreren Gängen?"
     a: "Bei einem Menü mit drei oder mehr Gängen reduzieren Sie die Portionen des Hauptgangs um rund 20 bis 25 Prozent gegenüber à la carte. Das Dessert planen Sie am unteren Ende des Richtwerts, also etwa 80 g statt 120 g. Die Vorspeise und der Zwischengang fallen ohnehin kleiner aus. So bleibt der Gast zufrieden, ohne übersättigt zu sein. Rechnen Sie immer mit rohen Gewichten und berücksichtigen Sie den Garverlust. So gelingt eine ausgewogene Menüfolge."
+  - q: "Wie viel Gemüse rechnet man pro Person?"
+    a: "Als Gemüsebeilage rechnen Sie 150 bis 200 g pro Person. Blattsalat als Beilage liegt tiefer, bei 50 bis 80 g, weil das Volumen nach dem Anrichten größer wirkt als das Rohgewicht. Diese Spannen stehen in der Tabelle dieses Artikels und gelten für die à-la-carte-Beilage, nicht für ein Gemüsegericht als Hauptgang."
+  - q: "Wie viel Kartoffeln pro Person?"
+    a: "Kartoffeln als Sättigungsbeilage liegen bei 200 bis 250 g. Für Püree kalkulieren Sie nach gegartem Gewicht, nicht nach dem Rohgewicht der Knolle. Die Tabelle nennt denselben Richtwert. Sie ist kein Buffetwert und kein Kinderteller."
+  - q: "Gelten die Portionsgrößen der Tabelle für Erwachsene?"
+    a: "Ja. Die Tabelle ist die Referenz für Erwachsene à la carte. Für ein Menü mit drei oder mehr Gängen wird der Hauptgang um rund 20 bis 25 Prozent kleiner kalkuliert. In der Gemeinschaftsverpflegung rechnet der Artikel für Senioren rund 20 Prozent weniger und für Kinder, je nach Alter, etwa die Hälfte bis zwei Drittel der Erwachsenenportion. Eine Gramm-Tabelle nach Kinderalter steht hier nicht."
 ---
 
 <p>In Küche A und Küche B hängt dieselbe Karte, und beide Küchen führen dasselbe Schnitzel als Aushängeschild. In Küche A kommt jeden Abend ein 180-Gramm-Stück auf den Teller – gewogen, vorportioniert, kompromisslos gleich. In Küche B entscheidet die Tagesform: Mal sind es 150 Gramm, mal 220, an hektischen Abenden auch 230. Der Gast merkt den Unterschied selten, aber die Bilanz am Monatsende merkt ihn sehr genau. Wer vier Wochen lang ohne System portioniert, verschenkt Monat für Monat eine vierstellige Summe – ohne dass ein einziger Gast mehr bestellt oder besser gegessen hätte. Dabei würde der Unterschied sofort auffallen, wenn man zwei Teller nebeneinanderstellte: Das eine Schnitzel wirkt karg, das andere üppig – und beide kommen aus derselben Küche.</p>
@@ -145,7 +151,9 @@ faq:
 
 <p>Die Tabelle liefert die Richtwerte — Ihre Küche liefert die Realität: Was auf den Tellern zurückkommt, ist die ehrlichste Rückmeldung darüber, ob Ihre Portionen stimmen.</p>
 
-<p>Auf <a href="https://deapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=portionsgroessen-tabelle" target="_blank" rel="noopener noreferrer">deapp.aichef.pro</a> finden Sie mehr als 50 KI-Werkzeuge von AI Chef Pro für Küchenchefs und Gastronomen; für diese Aufgabe begleitet Sie <strong><a href="https://deapp.aichef.pro/mermas-gencal-doybs-de?utm_source=blog&utm_medium=cta&utm_content=portionsgroessen-tabelle" target="_blank" rel="noopener noreferrer">Lebensmittelabfälle AI</a></strong>: Erfassen Sie mit ihm eine Woche lang Ihre Tellerrückläufe, und er rechnet Ihnen aus, was die Tonne wirklich kostet — und welche Komponente Ihrer Karte überportioniert ist.</p>
+<p>Dieselben Grammzahlen gehören in die Kalkulation. Der <a href="https://aichef.pro/de/blog/wareneinsatz-berechnen">Wareneinsatz</a> und die <a href="https://aichef.pro/de/blog/kalkulation-gastronomie">Kalkulation in der Gastronomie</a> rechnen mit dem Rohgewicht, das Sie einkaufen. Garzeiten, die das Gewicht auf dem Teller verändern, stehen in der <a href="https://aichef.pro/de/blog/sous-vide-tabelle">Sous-vide-Tabelle</a>. Die Vorbereitung, bevor die Portion auf den Pass kommt, ist die <a href="https://aichef.pro/de/blog/mise-en-place">Mise en Place</a>. Wer die Menge erst in der Rezeptur festlegt, findet die Einordnung der Küchen-Apps 2026 unter <a href="https://aichef.pro/de/blog/beste-ki-apps-rezepte-2026">beste KI-Apps für Rezepte</a>.</p>
+
+<p>Die Tellerrückläufe einer Woche erfassen Sie in der <a href="https://deapp.aichef.pro/guest?utm_source=blog&amp;utm_medium=cta&amp;utm_content=portionsgroessen-tabelle">deutschen Gäste-Startseite</a> von AI Chef Pro (75+ Agenten, Mitglied ab 10 € im Monat, keine Einzel-Agenten-URL). Welcher Gang überportioniert ist, sehen Sie an dem, was zurückkommt — nicht an einer neuen Grammzahl, die diese Tabelle nicht enthält.</p>
 
 <h2>Ihr nächster Schritt</h2>
 
