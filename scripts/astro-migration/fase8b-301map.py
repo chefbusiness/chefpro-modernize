@@ -143,10 +143,18 @@ def main():
 
     lines += [
         '',
-        '# Idiomas GTranslate históricos (MT muerta) → hub',
+        '# GTranslate. Los seis idiomas con blog propio caen en SU índice.',
+        '# El 1:1 (mismo slug o el post más parecido) lo resuelve antes la edge',
+        '# function legacy-blog-lang. No volver a volcar en/fr/de/it/pt/nl a /blog:',
+        '# era la regla que tiraba a español lo ganado en esos prefijos.',
+        '# El resto de idiomas de GTranslate no tiene blog: el índice ES, no la home.',
     ]
+    hubs = {
+        'en': '/en/blog', 'fr': '/fr/blog', 'de': '/de/blog',
+        'it': '/it/blog', 'pt': '/pt/blog', 'nl': '/nl/blog',
+    }
     for l in LANGS:
-        lines.append('%s/%s/* %s/blog 301!' % (HOST, l, DEST))
+        lines.append('%s/%s/* %s%s 301!' % (HOST, l, DEST, hubs.get(l, '/blog')))
 
     lines += ['', '# Tier D — excepciones explícitas (NO migran a /blog/{slug})']
     n_d = 0
@@ -156,7 +164,16 @@ def main():
         n_d += 1
         why = v['why']
         if 'pSEO' in why:
-            target = '%s/abrir-restaurante' % DEST
+            # /abrir-restaurante a secas es un 404 (solo existen /abrir-restaurante/{ciudad}
+            # y el hub /seo-restaurantes-por-ciudad). Lima y Miami no están en el cluster.
+            ciudades = (
+                'ciudad-de-mexico', 'buenos-aires', 'barcelona', 'guadalajara',
+                'valencia', 'sevilla', 'malaga', 'bilbao', 'zaragoza', 'monterrey',
+                'queretaro', 'bogota', 'medellin', 'santiago', 'madrid',
+            )
+            city = next((c for c in ciudades if slug.endswith('-' + c)), None)
+            target = ('%s/abrir-restaurante/%s' % (DEST, city) if city
+                      else '%s/seo-restaurantes-por-ciudad' % DEST)
         elif 'duplicado' in why:
             target = '%s/blog/%s' % (DEST, why.split('301 a ')[-1].strip())
         else:  # escuelas US y resto

@@ -2547,15 +2547,15 @@
   },
   "landingRecetas": {
     "seo": {
-      "title": "Ricette con IA per Ristoranti | AI Chef Pro",
-      "description": "Genera ricette professionali con IA: 25 cucine del mondo, menu di stagione, schede tecniche e scaling automatico. Oltre 5.000 ristoranti lo usano già.",
-      "keywords": "ricette IA ristoranti, generatore ricette professionali, ricette IA chef, menu stagione IA, schede tecniche ricette, 25 cucine del mondo"
+      "title": "Ricette AI per ristoranti | Agenti IA | AI Chef Pro",
+      "description": "Ricette AI per ristoranti, con agenti IA: schede tecniche, menu di stagione e dosi. Dal piano Membro a 10 €/mese, senza vincoli. Non esiste un piano gratuito.",
+      "keywords": "ricette ai, ricette ia, agenti ia cucina, migliore ia per ricette, ricette ia ristoranti"
     },
     "breadcrumb": "Ricette con IA per Ristoranti",
     "hero": {
       "badge": "Generatore Professionale di Ricette con IA",
-      "h1": "Ricette con IA per Ristoranti: 25 Cucine del Mondo",
-      "subtitle": "Genera ricette tecnicamente corrette all'istante. Menu di stagione, schede tecniche professionali e scaling automatico delle porzioni per il tuo ristorante.",
+      "h1": "Ricette AI per ristoranti, con agenti IA",
+      "subtitle": "Schede tecniche, allergeni e dosi per la tua cucina. Gli agenti IA partono dal piano Membro a 10 €/mese. Non esiste un piano gratuito.",
       "tagline": "Dal concetto al piatto in minuti, non in ore.",
       "cta_primary": "Prova adesso",
       "cta_secondary": "Vedi piani e prezzi",
@@ -2720,6 +2720,10 @@
       "title": "Domande frequenti sulle ricette con IA per ristoranti"
     },
     "faq": [
+      {
+        "question": "Qual è la migliore IA per le ricette?",
+        "answer": "Per un ristorante, la migliore IA per le ricette è quella che consegna scheda tecnica, allergeni e dosi, non solo un testo. AI Chef Pro lo fa con agenti IA, da 10 €/mese e 10.000 crediti, senza vincoli. Non esiste un piano gratuito. Un chatbot gratuito può bastare per una cena a casa."
+      },
       {
         "question": "L'IA può creare ricette professionali per ristoranti?",
         "answer": "Sì. AI Chef Pro genera ricette con vocabolario tecnico culinario corretto, incluse tecniche precise, punti di cottura, presentazione e abbinamenti. A differenza di un'IA generalista, capisce la logica di ogni cucina del mondo."

@@ -2,12 +2,19 @@
 title: "Las 7 Mejores Apps de IA para Crear Recetas en 2026"
 description: "Comparativa 2026 de las mejores apps de IA para crear recetas: 7 herramientas analizadas por caso de uso, precio y veredicto franco. Descubre cuál elegir."
 pubDate: 2025-09-02
-modDate: 2026-08-31
+modDate: 2026-10-22
 category: ai-chef-pro
 image: /blog-assets/2025/09/7-mejores-apps-ia-cocina-pro-4.jpeg
 imageAlt: "Las 7 Mejores Apps de IA para Crear Recetas de Cocina en 2025: Comparativa Completa"
 lang: es
 wpId: 1404
+translations:
+  es: las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa
+  fr: meilleures-applications-ia-recettes-2026
+  de: beste-ki-apps-rezepte-2026
+  it: migliori-app-ia-ricette-2026
+  pt: melhores-aplicacoes-ia-receitas-2026
+  nl: beste-ai-apps-recepten-2026
 faq:
   - q: "¿Cuál es la mejor app de IA para crear recetas en 2026?"
     a: "Depende de tu perfil. Para cocina casera de aprovechamiento, SuperCook o Mr. Cook son muy ágiles. Si controlas macros y menús semanales, ChefGPT destaca. Y para hostelería profesional, la suite más completa es AI Chef Pro, con escandallos, alérgenos y desarrollo de carta en español."

@@ -19,10 +19,23 @@ interface Props {
   lang?: Locale;
 }
 const { utmContent = 'blog-post', lang = 'es' } = Astro.props;
-const appUrl = `${plataforma(lang)}/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
+/** Inicio de invitado del idioma, nunca la ruta de un agente. ES /invitado,
+ *  IT /ospite, el resto /guest. La raíz del subdominio ya redirige ahí; el
+ *  CTA la nombra para que el enlace no dependa de esa redirección. */
+const GUEST_PATH: Record<Locale, string> = {
+  es: '/invitado',
+  en: '/guest',
+  fr: '/guest',
+  de: '/guest',
+  it: '/ospite',
+  pt: '/guest',
+  nl: '/guest',
+};
+const appUrl = `${plataforma(lang)}${GUEST_PATH[lang] ?? '/invitado'}?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
 
 // Copy por idioma. nl tiene blog desde 2026-10-22: sin esta entrada el CTA
-// neerlandés salía en castellano.
+// neerlandés salía en castellano. Si cae al español, el cierre del artículo
+// saluda en otro idioma. Tratamiento: u.
 // 2026-08-17 — FIN DEL PLAN GRATIS (fase11, 2026-08-15): este componente se
 // escapó del barrido y siguió diciendo «Pruébalo gratis» en 4 idiomas hasta
 // hoy. Copy nuevo con el framing de John («planes para todos los bolsillos,
@@ -61,17 +74,17 @@ const COPY = {
       'Fichas técnicas, ementas, HACCP, marketing gastronómico e muito mais. Planos para todas as carteiras, desde 10 €/mês.',
     cta: 'Descobrir o AI Chef Pro',
   },
+  nl: {
+    heading: '75+ culinaire AI-agents voor uw zaak',
+    body:
+      'Recepten, kostprijs, allergenen, marketing en meer. Formules voor elk budget, vanaf €10 per maand.',
+    cta: 'Ontdek AI Chef Pro',
+  },
   es: {
     heading: 'Más de 75 agentes de IA culinarios trabajando para tu negocio',
     body:
       'Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Planes para todos los bolsillos, desde 10 €/mes.',
     cta: 'Descubrir AI Chef Pro',
-  },
-  nl: {
-    heading: '75+ culinaire AI-agents aan het werk voor uw zaak',
-    body:
-      'Receptkostprijs, kaarten, HACCP, horecamarketing en meer. Abonnementen voor elk budget, vanaf € 10 per maand.',
-    cta: 'Ontdek AI Chef Pro',
   },
 } as const;
 

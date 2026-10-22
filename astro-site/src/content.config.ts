@@ -35,6 +35,10 @@ const blog = defineCollection({
       en: z.string().optional(),
       fr: z.string().optional(),
       de: z.string().optional(),
+      /** 2026-08-08: el blog IT nace como contenido NATIVO, no traducido, así
+       *  que normalmente NO llevará este campo. Se declara para el caso puntual
+       *  en que un post italiano SÍ sea la adaptación de uno español o inglés
+       *  (p. ej. una librería de prompts), donde el par hreflang es verdadero. */
       it: z.string().optional(),
       pt: z.string().optional(),
       nl: z.string().optional(),
