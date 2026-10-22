@@ -1,23 +1,64 @@
 # PENDIENTE — Cutover de `enblog.aichef.pro` (acción de John)
 
-> Estado a 2026-07-28. El blog EN ya está **live** en https://aichef.pro/en/blog (39 posts).
-> Falta **sólo** apuntar el subdominio: hasta entonces el WordPress inglés sigue sirviendo
-> las mismas piezas y hay contenido duplicado entre las dos propiedades.
-> Mismo procedimiento que el cutover ES (8B.5, 2026-07-19), **con la trampa que nos costó aquella vez**.
+> Decisión del 2026-10-22: los subdominios de blog se dan por muertos. Todo el
+> contenido vive en `aichef.pro`. El diagnóstico en vivo de ese día cambió el
+> plan de abajo: **no es el mismo hosting para los dos**.
 
-## Qué está hecho y qué no
+## Dónde se sirve cada uno (medido el 2026-10-22)
 
-| | Estado |
+| Host | DNS | Quién responde | Qué hacer |
+|---|---|---|---|
+| `blog.aichef.pro` | CNAME `aichefpro.netlify.app` | Netlify (`server: Netlify`, `x-nf-request-id`). El WordPress ya no está en el camino. | Nada de DNS ni de Hostinger. El arreglo está en este repo y se activa al desplegar. |
+| `enblog.aichef.pro` | A `92.112.198.181`, `148.135.128.8` | WordPress en Hostinger (`platform: hostinger`, `server: hcdn`, `x-powered-by: PHP/8.3.35`, LiteSpeed). Canonical propio, HTTP 200. | Aplicar el `.htaccess` de abajo. El DNS a Netlify es el cierre, no el primer paso. |
+| `aichef.pro` | A `75.2.60.5` (anycast de Netlify) y `www` CNAME al mismo site | Astro | Canónico. |
+| `app.aichef.pro` | CNAME `cname.vercel-dns.com` | Vercel (Pickaxe) | No se toca. |
+
+No hay otro proyecto Vercel en la cuenta con «aichef» en el nombre. El sitio de Netlify que ya tiene el alias `blog` es `aichefpro`.
+
+## Qué es más simple y más seguro
+
+**Para `enblog`, el `.htaccess` ahora. El CNAME a Netlify después.**
+
+El `.htaccess` (`scripts/astro-migration/hostinger/enblog.htaccess`) corta los 200 hoy, sin pelearse con las A records. Hostinger ya demostró (cutover de `blog`, más abajo) que recrea las A si el subdominio sigue siendo el dominio principal de la instancia WordPress. El mapa de Netlify ya está en `astro-site/public/_redirects` y es el mismo: cuando el `.htaccess` lleve días en verde, se desvincula el WordPress y se apunta el CNAME. Hasta entonces las reglas de Netlify siguen inertes.
+
+La alternativa del plugin Redirection es `scripts/astro-migration/hostinger/enblog-redirection.csv` (Import). Cubre cada URL censada una a una y no incluye un comodín, para no cerrar `/wp-admin`. El `.htaccess` es el completo: también tiene el comodín y deja el admin fuera a propósito.
+
+Pasos en hPanel, en este orden:
+
+1. Archivos del WordPress de `enblog` → `.htaccess` de la raíz. Pegar el fichero **encima** de `# BEGIN WordPress`. Dentro, WordPress lo borra al guardar enlaces permanentes.
+2. No redirige `/wp-admin`, `/wp-login.php` ni `/wp-json`. Si se redirigen, no hay forma de quitar el fichero.
+3. hPanel → caché / CDN → purgar `enblog.aichef.pro`. La hCDN estaba devolviendo 200 cacheados (`x-hcdn-cache-status: HIT`).
+4. Comprobar, con barra final (WordPress hace 301 a la barra):
+   ```bash
+   curl -sI https://enblog.aichef.pro/best-ai-tools-for-chefs-2026/
+   curl -sI https://enblog.aichef.pro/menu-engineering-software-complete-guide/
+   curl -sI https://enblog.aichef.pro/ai-menu-engineering-for-chefs-in-london/
+   curl -sI https://enblog.aichef.pro/
+   ```
+   Los dos primeros tienen que ir a `https://aichef.pro/en/blog/<mismo-slug>` (301) y esa URL tiene que dar 200. La guía de ciudad y la portada van a `https://aichef.pro/en/blog`.
+5. Solo entonces, si se quiere apagar Hostinger: desvincular `enblog` de la instancia WP (aparcarla en su `*.hostingersite.com`), añadir `enblog.aichef.pro` como domain alias del site `aichefpro` en Netlify, y CNAME `enblog` → `aichefpro.netlify.app`. La trampa de las A records de abajo sigue vigente.
+
+**Para `blog.aichef.pro` no hay paso de Hostinger.** Ya es alias de Netlify. Al desplegar este repo:
+
+- `/{en,fr,de,it,pt,nl}/…` deja de caer en `/blog` (español). La edge function `legacy-blog-lang` manda al mismo post si existe y, si no, al índice de ese idioma. `_redirects` repite el índice por si la función no corre.
+- Las guías de ciudad `ia-*-en-{ciudad}` dejan de ir a `/abrir-restaurante` (era un **404**) y van a `/abrir-restaurante/{ciudad}`, o al hub `/seo-restaurantes-por-ciudad` si la ciudad no está (Lima, Miami).
+- La portada del subdominio, para un navegador, ya no hace 302 a `/en` del mismo host: `lang-redirect` solo actúa en `aichef.pro` y `www`.
+
+Mapa completo: `scripts/astro-migration/legacy-subdominios-301.csv`.
+Candidatos a recrear (comparativas sin post nativo en FR/DE/IT/PT/NL): `scripts/astro-migration/legacy-subdominios-huerfanos.csv`.
+
+## Qué está hecho y qué no (histórico, 2026-07-28)
+
+El blog EN ya estaba live en https://aichef.pro/en/blog. Faltaba apuntar `enblog`.
+El procedimiento de DNS es el mismo que el cutover ES (8B.5, 2026-07-19), **con la trampa que costó aquella vez**. El `.htaccess` de arriba no sustituye ese cuidado: lo aplaza hasta que los 301 ya estén sirviendo.
+
+| | Estado a 2026-10-22 |
 |---|---|
-| 39 posts EN en Astro, con imágenes, sitemap y hreflang | ✅ live |
-| Navegación EN (header, footer, hero, barra de anuncios) apuntando al blog EN | ✅ live |
-| Mapa 301 completo de `enblog.aichef.pro` en `astro-site/public/_redirects` | ✅ escrito, **inerte** |
-| `enblog.aichef.pro` como alias del site en Netlify + DNS | ❌ **pendiente (tú)** |
-| Apagar el WordPress inglés | ❌ no hasta que la batería dé 7/7 y el backup esté a salvo |
-
-Las reglas son *host-scoped*: mientras el DNS apunte a Hostinger no se ejecuta ninguna,
-así que el bloque es inofensivo. No hay prisa técnica; la única penalización de esperar
-es el duplicado EN mientras tanto.
+| Posts EN en Astro, con imágenes, sitemap y hreflang | ✅ live (el censo REST de enblog sigue en 89; 39 con slug idéntico en `/en/blog`, 50 guías de ciudad al índice) |
+| Mapa 301 de `enblog.aichef.pro` en `astro-site/public/_redirects` | ✅ escrito, **inerte hasta el CNAME** |
+| El mismo mapa en `.htaccess` para Hostinger | ✅ en el repo, **pendiente de pegarlo** |
+| `enblog.aichef.pro` como alias del site en Netlify + DNS | ❌ no hacerlo antes del `.htaccess` y de desvincular el WP |
+| `blog.aichef.pro` | ✅ ya es alias de Netlify desde 8B.5 |
 
 ## La trampa de la vez anterior (esto es lo que costó dinero en 8B.5)
 
@@ -34,12 +75,11 @@ Se resolvió así:
 2. Sólo entonces el CNAME `blog` → `aichefpro.netlify.app` se quedó quieto.
 3. Netlify emitió el certificado SSL en minutos, sin tocar nada más.
 
-**Antes de tocar el DNS de `enblog`, comprueba si está en la misma situación**: si es el
-dominio principal de su instancia WP, primero desvincúlalo y aparca el WP en su
-`*.hostingersite.com`. Si no lo haces, verás A records reapareciendo solas y perderás la
-tarde.
+**Antes de tocar el DNS de `enblog`, hay que hacer lo mismo**: si es el dominio
+principal de su instancia WP, primero desvincularlo y aparcar el WP en su
+`*.hostingersite.com`. Si no, las A records reaparecen.
 
-## Pasos
+## Pasos de DNS — solo después del .htaccess
 
 1. Netlify → site `aichefpro` → **Domain management** → añadir `enblog.aichef.pro` como
    *domain alias*.
@@ -48,24 +88,20 @@ tarde.
 3. Esperar propagación + certificado (en 8B.5 fueron minutos).
 4. Batería de verificación:
    ```bash
-   python3 scripts/astro-migration/fase8b-auditar-301.py --sitio en  # offline, 189/189
+   python3 scripts/astro-migration/fase8b-auditar-301.py --sitio en  # offline, necesita el export del VPS y un dist
    python3 scripts/astro-migration/fase8b6-gate-301-en.py            # contra la red, 7/7
    ```
    El primero simula el motor de Netlify contra el censo completo del WordPress
    inglés (posts, páginas, categorías, tags, infraestructura) y exige que el
-   destino final exista en el `dist`; se puede correr ya, sin DNS. El segundo va
+   destino final exista en el `dist`; se puede correr ya, sin DNS, si el export
+   sigue en el VPS (`/root/aichef-blog-media/enblog-export/`). El segundo va
    contra la red y sólo pasa después del cutover.
-   Comprueba portada, post migrado, guía de ciudad no migrada, archive de categoría,
-   feed, medios y catch-all: que cada uno haga **301** y que el destino responda **200**.
-   *Antes* del cutover este gate da 0/7 con "sigue sirviendo el WP" — es lo normal.
 5. Search Console, cuando el gate esté en verde:
-   - reenviar `https://aichef.pro/sitemap-index.xml` (se puede por API/MCP);
-   - **borrar a mano** los 4 sitemaps de `enblog.aichef.pro` que siguen dados de alta
-     (`sitemap_index.xml`, `post-sitemap.xml`, `page-sitemap.xml`, `category-sitemap.xml`),
-     igual que quedan por borrar los 5 del subdominio ES. La API sí permite darlos de
-     baja, pero es una operación destructiva desactivada por defecto: son 30 segundos
-     en la UI y evita que Google siga leyendo mapas de un sitio que ya no existe.
-6. Sólo con 7/7: dar por cerrada la Fase 8B.6 y planificar el apagado del WordPress inglés.
+   - reenviar `https://aichef.pro/sitemap-index.xml`;
+   - **borrar a mano** los sitemaps de `enblog.aichef.pro` que sigan dados de alta
+     (`sitemap_index.xml`, `post-sitemap.xml`, `page-sitemap.xml`, `category-sitemap.xml`).
+     El sitemap de producción (`sitemap-0.xml`, 1.279 URLs el 2026-10-22) no cita
+     ni `blog.` ni `enblog.`.
 
 ## Antes de apagar/cancelar nada
 
@@ -77,5 +113,7 @@ tarde.
 
 ## Rollback
 
-Deshacer el CNAME y devolver el subdominio a Hostinger. El WordPress inglés no se toca
-hasta el final justamente para que el rollback sea volver a apuntar el DNS.
+Quitar el bloque pegado en el `.htaccess` (el admin sigue abierto) y purgar la hCDN.
+Si ya se cambió el DNS: deshacer el CNAME y devolver el subdominio a Hostinger.
+El WordPress inglés no se toca hasta el final justamente para que el rollback sea
+volver a apuntar el DNS.

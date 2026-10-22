@@ -68,6 +68,12 @@ export default async (request: Request, context: NetlifyContext) => {
   // Only act on root "/" — language-prefixed paths (/en, /de, /fr/...) pass through
   if (url.pathname !== '/') return;
 
+  // blog.aichef.pro y enblog.aichef.pro comparten esta función cuando son alias
+  // del site. En «/» un 302 relativo a /en se come el 301 del subdominio
+  // (medido: la portada de blog.aichef.pro caía en /en del mismo host y de ahí
+  // al blog en español). El idioma automático es solo del apex.
+  if (url.hostname !== 'aichef.pro' && url.hostname !== 'www.aichef.pro') return;
+
   // Skip bots so they keep indexing "/" as Spanish canonical
   const ua = request.headers.get('user-agent') || '';
   if (BOT_REGEX.test(ua)) return;

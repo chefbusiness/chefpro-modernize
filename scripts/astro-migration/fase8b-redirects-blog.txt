@@ -8,9 +8,10 @@ https://blog.aichef.pro/feed https://aichef.pro/blog/rss.xml 301!
 https://blog.aichef.pro/feed/* https://aichef.pro/blog/rss.xml 301!
 https://blog.aichef.pro/sitemap_index.xml https://aichef.pro/sitemap-index.xml 301!
 
-# Hub librería (página WP 234) → categoría (interino hasta hub 8C)
-https://blog.aichef.pro/libreria-de-prompts https://aichef.pro/blog/categoria/libreria-de-prompts 301!
-https://blog.aichef.pro/libreria-de-prompts/* https://aichef.pro/blog/categoria/libreria-de-prompts 301!
+# Hub librería (página WP 234) → el hub REAL, reconstruido en 8C (2026-07-31):
+# la archive de la categoría es un listado por fecha y perdía el sentido del original.
+https://blog.aichef.pro/libreria-de-prompts https://aichef.pro/libreria-de-prompts 301!
+https://blog.aichef.pro/libreria-de-prompts/* https://aichef.pro/libreria-de-prompts 301!
 
 # Medios: misma estructura year/month en /blog-assets
 https://blog.aichef.pro/wp-content/uploads/* https://aichef.pro/blog-assets/:splat 301!
@@ -29,13 +30,67 @@ https://blog.aichef.pro/category/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/tag/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/author/* https://aichef.pro/blog 301!
 
-# Idiomas GTranslate históricos (MT muerta) → hub
-https://blog.aichef.pro/en/* https://aichef.pro/blog 301!
-https://blog.aichef.pro/fr/* https://aichef.pro/blog 301!
-https://blog.aichef.pro/de/* https://aichef.pro/blog 301!
-https://blog.aichef.pro/it/* https://aichef.pro/blog 301!
-https://blog.aichef.pro/pt/* https://aichef.pro/blog 301!
-https://blog.aichef.pro/nl/* https://aichef.pro/blog 301!
+# Las MISMAS archives SIN la base /category/: ese WordPress tiene la base
+# vacía, así que su URL canónica (el campo `link` del REST) es /{slug}/ en
+# la raíz. Sin estas reglas caen en la genérica de abajo y acaban en
+# /blog/{slug-de-categoria}, que no existe: 301 a un 404. Cazado el
+# 2026-07-28 con la batería del cutover EN, llevaba live desde 8B.5.
+https://blog.aichef.pro/ai-chef-pro https://aichef.pro/blog/categoria/ai-chef-pro 301!
+https://blog.aichef.pro/ai-chef-pro/* https://aichef.pro/blog/categoria/ai-chef-pro 301!
+https://blog.aichef.pro/glosario-y-lexico-ai https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/glosario-y-lexico-ai/* https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/glosario-y-lexico-cientifico-culinario https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/glosario-y-lexico-cientifico-culinario/* https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/guias-ia-locales https://aichef.pro/blog 301!
+https://blog.aichef.pro/guias-ia-locales/* https://aichef.pro/blog 301!
+https://blog.aichef.pro/ia-en-gastronomia https://aichef.pro/blog/categoria/ia-en-gastronomia 301!
+https://blog.aichef.pro/ia-en-gastronomia/* https://aichef.pro/blog/categoria/ia-en-gastronomia 301!
+https://blog.aichef.pro/libreria-de-prompts-blog https://aichef.pro/blog/categoria/libreria-de-prompts 301!
+https://blog.aichef.pro/libreria-de-prompts-blog/* https://aichef.pro/blog/categoria/libreria-de-prompts 301!
+https://blog.aichef.pro/recetario-pro-ai https://aichef.pro/blog/categoria/recetas 301!
+https://blog.aichef.pro/recetario-pro-ai/* https://aichef.pro/blog/categoria/recetas 301!
+https://blog.aichef.pro/tutoriales https://aichef.pro/blog/categoria/tutoriales 301!
+https://blog.aichef.pro/tutoriales/* https://aichef.pro/blog/categoria/tutoriales 301!
+
+# Páginas del WordPress (un solo segmento → sin regla caerían en la genérica)
+https://blog.aichef.pro/about https://aichef.pro/sobre-nosotros 301!
+https://blog.aichef.pro/blog https://aichef.pro/blog 301!
+https://blog.aichef.pro/contact https://aichef.pro/contacto 301!
+https://blog.aichef.pro/home https://aichef.pro/ 301!
+https://blog.aichef.pro/politica-de-privacidad https://aichef.pro/privacidad 301!
+https://blog.aichef.pro/roadmap https://aichef.pro/blog 301!
+
+# Infraestructura del WP: sitemaps, robots, basura de bots y archives de año
+https://blog.aichef.pro/2024 https://aichef.pro/blog 301!
+https://blog.aichef.pro/2025 https://aichef.pro/blog 301!
+https://blog.aichef.pro/2026 https://aichef.pro/blog 301!
+https://blog.aichef.pro/amp https://aichef.pro/blog 301!
+https://blog.aichef.pro/author-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/category-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/favicon.ico https://aichef.pro/favicon.ico 301!
+https://blog.aichef.pro/page-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap1.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap2.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap3.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post_tag-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/robots.txt https://aichef.pro/robots.txt 301!
+https://blog.aichef.pro/sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/wp-admin https://aichef.pro/blog 301!
+https://blog.aichef.pro/wp-login.php https://aichef.pro/blog 301!
+https://blog.aichef.pro/xmlrpc.php https://aichef.pro/blog 301!
+
+# GTranslate. Los seis idiomas con blog propio caen en SU índice.
+# El 1:1 (mismo slug o el post más parecido) lo resuelve antes la edge
+# function legacy-blog-lang. No volver a volcar en/fr/de/it/pt/nl a /blog:
+# era la regla que tiraba a español lo ganado en esos prefijos.
+# El resto de idiomas de GTranslate no tiene blog: el índice ES, no la home.
+https://blog.aichef.pro/en/* https://aichef.pro/en/blog 301!
+https://blog.aichef.pro/fr/* https://aichef.pro/fr/blog 301!
+https://blog.aichef.pro/de/* https://aichef.pro/de/blog 301!
+https://blog.aichef.pro/it/* https://aichef.pro/it/blog 301!
+https://blog.aichef.pro/pt/* https://aichef.pro/pt/blog 301!
+https://blog.aichef.pro/nl/* https://aichef.pro/nl/blog 301!
 https://blog.aichef.pro/fa/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/ka/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/uz/* https://aichef.pro/blog 301!
@@ -73,58 +128,58 @@ https://blog.aichef.pro/gd/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/eu/* https://aichef.pro/blog 301!
 
 # Tier D — excepciones explícitas (NO migran a /blog/{slug})
-https://blog.aichef.pro/desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo-2 https://aichef.pro/blog/desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo 301!
+https://blog.aichef.pro/desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo-2 https://aichef.pro/blog/ia-para-crear-menus-semanales 301!
 https://blog.aichef.pro/ia-alimentaria-revolucion-tecnologica-en-la-industria-de-alimentos-2025 https://aichef.pro/blog/ia-alimentaria-revolucion-tecnologica-en-la-industria-de-alimentos 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-barcelona https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-bogota https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-buenos-aires https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-guadalajara https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-lima https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-madrid https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-miami https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-santiago https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-chefs-en-valencia https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-panaderos-en-barcelona https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-panaderos-en-buenos-aires https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-panaderos-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-panaderos-en-lima https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-panaderos-en-madrid https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-reposteros-en-barcelona https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-reposteros-en-buenos-aires https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-reposteros-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-reposteros-en-madrid https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-escandallos-para-reposteros-en-miami https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-barcelona https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-bogota https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-buenos-aires https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-guadalajara https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-lima https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-madrid https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-miami https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-santiago https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-valencia https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-barcelona https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-bogota https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-buenos-aires https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-guadalajara https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-lima https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-madrid https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-miami https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-santiago https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-valencia https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-barcelona https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-bogota https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-buenos-aires https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-guadalajara https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-lima https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-madrid https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-miami https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-santiago https://aichef.pro/abrir-restaurante 301!
-https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-valencia https://aichef.pro/abrir-restaurante 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-barcelona https://aichef.pro/abrir-restaurante/barcelona 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-bogota https://aichef.pro/abrir-restaurante/bogota 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-buenos-aires https://aichef.pro/abrir-restaurante/buenos-aires 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante/ciudad-de-mexico 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-guadalajara https://aichef.pro/abrir-restaurante/guadalajara 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-lima https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-madrid https://aichef.pro/abrir-restaurante/madrid 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-miami https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-santiago https://aichef.pro/abrir-restaurante/santiago 301!
+https://blog.aichef.pro/ia-escandallos-para-chefs-en-valencia https://aichef.pro/abrir-restaurante/valencia 301!
+https://blog.aichef.pro/ia-escandallos-para-panaderos-en-barcelona https://aichef.pro/abrir-restaurante/barcelona 301!
+https://blog.aichef.pro/ia-escandallos-para-panaderos-en-buenos-aires https://aichef.pro/abrir-restaurante/buenos-aires 301!
+https://blog.aichef.pro/ia-escandallos-para-panaderos-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante/ciudad-de-mexico 301!
+https://blog.aichef.pro/ia-escandallos-para-panaderos-en-lima https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-escandallos-para-panaderos-en-madrid https://aichef.pro/abrir-restaurante/madrid 301!
+https://blog.aichef.pro/ia-escandallos-para-reposteros-en-barcelona https://aichef.pro/abrir-restaurante/barcelona 301!
+https://blog.aichef.pro/ia-escandallos-para-reposteros-en-buenos-aires https://aichef.pro/abrir-restaurante/buenos-aires 301!
+https://blog.aichef.pro/ia-escandallos-para-reposteros-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante/ciudad-de-mexico 301!
+https://blog.aichef.pro/ia-escandallos-para-reposteros-en-madrid https://aichef.pro/abrir-restaurante/madrid 301!
+https://blog.aichef.pro/ia-escandallos-para-reposteros-en-miami https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-barcelona https://aichef.pro/abrir-restaurante/barcelona 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-bogota https://aichef.pro/abrir-restaurante/bogota 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-buenos-aires https://aichef.pro/abrir-restaurante/buenos-aires 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante/ciudad-de-mexico 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-guadalajara https://aichef.pro/abrir-restaurante/guadalajara 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-lima https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-madrid https://aichef.pro/abrir-restaurante/madrid 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-miami https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-santiago https://aichef.pro/abrir-restaurante/santiago 301!
+https://blog.aichef.pro/ia-fidelizacion-para-duenos-restaurante-en-valencia https://aichef.pro/abrir-restaurante/valencia 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-barcelona https://aichef.pro/abrir-restaurante/barcelona 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-bogota https://aichef.pro/abrir-restaurante/bogota 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-buenos-aires https://aichef.pro/abrir-restaurante/buenos-aires 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante/ciudad-de-mexico 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-guadalajara https://aichef.pro/abrir-restaurante/guadalajara 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-lima https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-madrid https://aichef.pro/abrir-restaurante/madrid 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-miami https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-santiago https://aichef.pro/abrir-restaurante/santiago 301!
+https://blog.aichef.pro/ia-ingenieria-menu-para-chefs-en-valencia https://aichef.pro/abrir-restaurante/valencia 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-barcelona https://aichef.pro/abrir-restaurante/barcelona 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-bogota https://aichef.pro/abrir-restaurante/bogota 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-buenos-aires https://aichef.pro/abrir-restaurante/buenos-aires 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-ciudad-de-mexico https://aichef.pro/abrir-restaurante/ciudad-de-mexico 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-guadalajara https://aichef.pro/abrir-restaurante/guadalajara 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-lima https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-madrid https://aichef.pro/abrir-restaurante/madrid 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-miami https://aichef.pro/seo-restaurantes-por-ciudad 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-santiago https://aichef.pro/abrir-restaurante/santiago 301!
+https://blog.aichef.pro/ia-marketing-gastronomico-para-duenos-restaurante-en-valencia https://aichef.pro/abrir-restaurante/valencia 301!
 https://blog.aichef.pro/top-10-escuelas-baristas-estados-unidos-2026 https://aichef.pro/blog 301!
 https://blog.aichef.pro/top-10-escuelas-bartender-mixologia-estados-unidos-2026 https://aichef.pro/blog 301!
 https://blog.aichef.pro/top-10-escuelas-catering-estados-unidos-2026 https://aichef.pro/blog 301!

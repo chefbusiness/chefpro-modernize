@@ -17,6 +17,47 @@
   function = "lang-redirect"
   path = "/"
 
+# GTranslate de blog.aichef.pro/{en,fr,de,it,pt,nl}. La función mira el host y
+# no hace nada en aichef.pro: solo redirige el subdominio legacy. El mapa 1:1
+# está en legacy-blog-lang-map.ts; si no hay equivalente, cae al índice de ese
+# idioma. Las reglas de _redirects repiten el índice por si la función no corre.
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/en"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/en/*"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/fr"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/fr/*"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/de"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/de/*"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/it"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/it/*"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/pt"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/pt/*"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/nl"
+[[edge_functions]]
+  function = "legacy-blog-lang"
+  path = "/nl/*"
+
 # Fase 6: www → apex (paridad con el netlify.toml de la raíz). Inerte en
 # staging (www.aichef.pro no apunta aquí); necesario desde el cutover.
 [[redirects]]
