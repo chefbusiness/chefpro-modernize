@@ -5,7 +5,7 @@ pubDate: 2026-02-20
 modDate: 2026-10-23
 category: glosario
 image: /blog-assets/2026/05/demi-glace-destacada.jpg
-imageAlt: "Demi-glace brillante napando"
+imageAlt: "Cucharón vertiendo demi-glace oscura y brillante en una sartén"
 lang: es
 wpId: 2736
 translations:
@@ -18,36 +18,36 @@ translations:
   nl: "demi-glace"
 definedTerm:
   name: "Demi-glace"
-  description: "La demi-glace es la salsa española afinada con un último hervor y un poco de vino generoso. En A Guide to Modern Cookery (1907), Auguste Escoffier junta la misma cantidad de salsa española y de fondo oscuro, reduce esa mezcla hasta dejar un poco menos de la mitad y, fuera del fuego, la termina con jerez seco. Con 500 ml de cada líquido, el punto son 450 ml de salsa y 50 ml de jerez. El nombre significa medio glaseado. Demi-glace, demi glace y demiglace son tres formas de escribir la misma salsa."
+  description: "La demi-glace es una salsa oscura clásica de la cocina francesa. Se hace mezclando a partes iguales salsa española y fondo oscuro, y reduciendo la mezcla a fuego suave hasta que queda algo menos de la mitad. Fuera del fuego se termina con un poco de jerez o de Madeira. Así la describe Auguste Escoffier, que la consideraba la base de todas las salsas oscuras derivadas. Su nombre significa «media glasa», y puedes encontrarla escrita como demi-glace, demi glace o demiglace."
 faq:
   - q: "¿Demi-glace, demi glace y demiglace son la misma salsa?"
     a: "Sí. Son tres grafías del mismo nombre francés. La salsa es la reducción de salsa española y fondo oscuro terminada con un vino generoso."
   - q: "¿Se puede hacer una demi-glace sin salsa española?"
-    a: "Muchas cocinas reducen solo el fondo oscuro hasta que cubre la cuchara y le llaman demi-glace. Esa salsa no lleva la harina ni el tomate de la española, así que sabe más a glace corta. La de Escoffier parte de la salsa española."
+    a: "Sí, y es lo más habitual hoy en los restaurantes: se reduce solo el fondo oscuro hasta que nape. Esa salsa no lleva la harina ni el tomate de la española, así que sabe más a carne y se parece a una glace de viande poco reducida. La demi-glace clásica de Escoffier sí parte de la salsa española."
   - q: "¿En qué se diferencia de la glace de viande?"
-    a: "La glace es fondo oscuro reducido hasta un jarabe, sin harina. La demi-glace de Escoffier lleva la salsa española, se queda en el punto de una salsa y se termina con jerez o, en la edición francesa de 1903, con Madeira."
+    a: "La glace de viande es fondo oscuro reducido hasta que queda espeso como un jarabe, sin harina ni vino. La demi-glace clásica lleva salsa española, se reduce menos, hasta tener textura de salsa, y se termina con jerez o Madeira."
   - q: "¿Hay que salar el fondo antes de reducir?"
     a: "No. Escoffier pide los fondos sin sal, porque al reducir se concentran. Si el fondo ya va salado, la demi-glace queda salada antes de tiempo. Prueba al final y corrige entonces."
   - q: "¿Cuánto dura en la nevera?"
-    a: "Enfríala rápido, con la superficie tapada o pintada con un poco de mantequilla para que no haga piel. En la nevera úsala en los días siguientes. Lo que sobre, congélalo en porciones pequeñas."
+    a: "Enfríala rápido y guárdala tapada, con film en contacto o con la superficie pintada con un poco de mantequilla para que no haga piel. En la nevera aguanta 3 o 4 días. Lo que no vayas a usar, congélalo en porciones pequeñas."
   - q: "¿Qué textura tiene en frío?"
     a: "Espesa y llega a cuajar en una gelatina blanda, porque concentra la gelatina del fondo y además lleva el almidón del roux de la española. Al calentarla, vuelve a ser salsa."
 faqInBody: true
 ---
 
-La demi-glace es la salsa española afinada con un último hervor y un poco de vino generoso. En A Guide to Modern Cookery (1907), Auguste Escoffier junta la misma cantidad de salsa española y de fondo oscuro, reduce esa mezcla hasta dejar un poco menos de la mitad y, fuera del fuego, la termina con jerez seco. Con 500 ml de cada líquido, el punto son 450 ml de salsa y 50 ml de jerez. El nombre significa medio glaseado. Demi-glace, demi glace y demiglace son tres formas de escribir la misma salsa.
+La demi-glace es una salsa oscura clásica de la cocina francesa. Se hace mezclando a partes iguales salsa española y fondo oscuro, y reduciendo la mezcla a fuego suave hasta que queda algo menos de la mitad. Fuera del fuego se termina con un poco de jerez o de Madeira. Así la describe Auguste Escoffier, que la consideraba la base de todas las salsas oscuras derivadas. Su nombre significa «media glasa», y puedes encontrarla escrita como demi-glace, demi glace o demiglace.
 
 ## Qué es la demi-glace
 
-La [salsa española](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion) es un fondo oscuro ligado con roux tostado y tomate, y luego despumado durante horas. La demi-glace toma esa salsa y la concentra otra vez con más [fondo oscuro](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion). Por eso lleva harina, tomate y el sabor del fondo reducido. Cuando está bien hecha, cubre el dorso de una cuchara: ese punto se llama [napar](https://aichef.pro/blog/napar-una-salsa).
+La [salsa española](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion) es un fondo oscuro ligado con roux tostado y tomate. Se cuece despacio durante horas y se va espumando, es decir, retirando la espuma y las impurezas que suben a la superficie. Para hacer demi-glace se mezcla esa salsa con más [fondo oscuro](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion) y se vuelve a reducir. El resultado lleva harina, tomate y el sabor concentrado del fondo. Está en su punto cuando cubre el dorso de una cuchara con una capa fina y uniforme, lo que en cocina se llama [napar](https://aichef.pro/blog/napar-una-salsa).
 
-En muchas cocinas de ahora se salta la española. Se reduce el fondo hasta que napa y a esa reducción también se le llama demi-glace. Es una salsa útil, con otro sabor: no lleva el roux ni el tomate de la española, y se acerca a una [glace de viande](https://aichef.pro/blog/glace-de-viande) que todavía se puede servir a cucharadas. Si cambias una por otra en una receta, pruébala antes.
+Hoy, en muchos restaurantes, se prescinde de la salsa española: se reduce solo el fondo oscuro hasta que napa, y a eso también se le llama demi-glace. Es una salsa muy útil, pero distinta. Al no llevar roux ni tomate, sabe más a carne y se parece más a una [glace de viande](https://aichef.pro/blog/glace-de-viande) menos reducida. Si una receta pide demi-glace, pruébala antes para saber cuál de las dos estás usando.
 
 ## Origen
 
-En Le Guide Culinaire (1903), Escoffier define la demi-glace como la española llevada al último despumado, el aclarado largo que le quita impurezas. La termina fuera del fuego con medio decilitro de Madeira muy seco por litro de salsa, es decir 50 ml. Añade el vino fuera del fuego porque, si hierve, se le va el aroma.
+En Le Guide Culinaire (1903), Escoffier define la demi-glace como la salsa española llevada a su máxima perfección después de un último espumado. La termina fuera del fuego con medio decilitro (50 ml) de Madeira muy seco por cada litro de salsa, y explica por qué: si el vino hierve, pierde el aroma.
 
-La edición inglesa de 1907, A Guide to Modern Cookery, escribe la reducción con números. Una medida de salsa española y otra de fondo oscuro de primera se reducen hasta dejar nueve décimas de una medida, y fuera del fuego se completan con una décima de jerez seco. Esa es la proporción de la receta de abajo. El vino cambia de una edición a la otra: Madeira en francés, jerez en inglés.
+En la edición inglesa de 1907, A Guide to Modern Cookery, Escoffier da las cantidades de la reducción. Mezcla una medida de salsa española con otra de buen fondo oscuro, reduce hasta que quedan nueve décimas de una medida y termina fuera del fuego con una décima de medida de un buen jerez. Dicho de forma sencilla: partes iguales de salsa española y fondo, reducidas a menos de la mitad, y una décima parte de vino al final. En esa proporción se basa la receta de este artículo.
 
 ## Ingredientes y proporciones
 
@@ -57,9 +57,9 @@ Para unos 500 ml de salsa terminada, que es la mitad de la fórmula de 1907:
 | --- | --- |
 | Salsa española | 500 ml |
 | Fondo oscuro, sin sal | 500 ml |
-| Jerez seco, fuera del fuego | 50 ml |
+| Jerez seco (fino o amontillado), fuera del fuego | 50 ml |
 
-El fondo de Escoffier es el que llama estouffade, hecho con jarrete de ternera y de buey. Un fondo de ternera solo da una salsa más clara. No lo sales antes de reducir.
+Escoffier usaba un fondo oscuro de ternera y buey, al que llamaba estouffade. Si lo haces solo con ternera, la salsa queda más clara y suave. En cualquier caso, el fondo tiene que ir sin sal, porque al reducir se concentra.
 
 Si sigues la edición francesa de 1903, el vino es Madeira muy seco: 50 ml por cada litro de salsa ya reducida, también fuera del fuego.
 
@@ -69,7 +69,7 @@ Si sigues la edición francesa de 1903, el vino es Madeira muy seco: 50 ml por c
 
 **1. Junta la española y el fondo.** Pon los dos líquidos en un cazo ancho de fondo grueso. Un cazo ancho evapora antes que uno estrecho y alto.
 
-**2. Reduce a fuego suave.** Lleva la mezcla a un hervor lento y espuma de vez en cuando. Quiere bajar de 1 litro a 450 ml. No hace falta un reloj: marca el nivel al empezar, o viértela en un medidor cuando veas que ha bajado bastante. Si el hervor es violento, la salsa salta, se enturbia y se pega en el borde.
+**2. Reduce a fuego suave.** Llévalo a un hervor suave y retira la espuma de vez en cuando. Tienes que pasar de 1 litro a unos 450 ml. Para saber cuándo has llegado, marca el nivel inicial en el cazo o pasa la salsa a una jarra medidora cuando veas que ha bajado bastante. No la hiervas fuerte, porque salpica, se enturbia y se pega a las paredes del cazo.
 
 **3. Cuélala.** Pásala por un colador fino o por un paño, sin apretar el poso.
 
@@ -77,23 +77,23 @@ Si sigues la edición francesa de 1903, el vino es Madeira muy seco: 50 ml por c
 
 ## Por qué falla y cómo arreglarlo
 
-Si el fondo iba salado, la reducción queda salada y no hay marcha atrás cómoda. Alárgala con un poco de fondo sin sal y vuelve a probar, sabiendo que también se diluye el sabor.
+Si el fondo llevaba sal, la reducción quedará salada. Puedes corregirlo en parte añadiendo un poco de fondo sin sal, aunque así también se diluye el sabor. Por eso el fondo para demi-glace nunca se sala.
 
-Si después de reducir sigue líquida, el fondo tenía poca gelatina o la española estaba corta. Sigue a fuego suave hasta que cubra la cuchara. Espesarla con más harina la acerca a un [roux](https://aichef.pro/blog/roux-concepto-y-definicion) nuevo y le cambia el sabor.
+Si después de reducir sigue líquida, el fondo tenía poca gelatina o la salsa española estaba poco ligada. Sigue reduciendo a fuego suave hasta que nape. No la espeses con harina ni con maicena, porque cambia el sabor y pierde brillo.
 
-Si se pega o amarga, el fuego estaba alto cuando ya quedaba poca salsa. Esa amargura no se tapa. Hay que empezar otra vez y bajar el fuego en cuanto la salsa espese.
+Si se pega o amarga, es que el fuego estaba demasiado alto al final, cuando quedaba poca salsa. Ese amargor no se puede corregir, así que hay que empezar de nuevo. Baja el fuego en cuanto la salsa empiece a espesar.
 
-Si añades el jerez y luego la hierves, el vino se queda plano. Escoffier lo dice con claridad: el hervor se lleva el aroma.
+Si hierves la salsa después de añadir el jerez, el vino pierde el aroma. Añádelo siempre al final y fuera del fuego.
 
 ## En el servicio
 
 Se prepara antes del servicio, en la mise en place, y se mantiene caliente al baño maría, sin que vuelva a hervir. En cada plato se usa a cucharadas, sola o para reforzar un jugo. Si solo le falta brillo, se monta con un poco de mantequilla fría en el momento de servir.
 
-Lo que sobre se enfría rápido, removiendo para que no haga piel, y se guarda en la nevera. Úsalo en los días siguientes. En porciones pequeñas se congela bien: una pastilla basta para un par de salsas.
+Lo que sobre se enfría rápido, removiendo de vez en cuando para que no haga piel, y se guarda tapado en la nevera hasta 3 o 4 días. También se congela bien en porciones pequeñas, por ejemplo en una cubitera, para sacar solo lo que necesites.
 
 ## Variantes
 
-**Solo con fondo.** Reducir fondo oscuro sin sal hasta que nape, sin española. Es la demi-glace de muchos restaurantes. Queda más limpia de harina y más corta de tomate.
+**Solo con fondo.** Se reduce fondo oscuro sin sal hasta que nape, sin salsa española. Es la demi-glace que hoy se usa en muchos restaurantes. No lleva harina, sabe más a carne y menos a tomate.
 
 **Con Madeira.** Es el acabado de la edición francesa de 1903: 50 ml de Madeira muy seco por litro, fuera del fuego. El jerez seco es el de la edición inglesa.
 
@@ -119,16 +119,16 @@ Es la base de las salsas oscuras pequeñas: lionesa, bordelesa, cazadora y las q
 Sí. Son tres grafías del mismo nombre francés. La salsa es la reducción de salsa española y fondo oscuro terminada con un vino generoso.
 
 **¿Se puede hacer una demi-glace sin salsa española?**
-Muchas cocinas reducen solo el fondo oscuro hasta que cubre la cuchara y le llaman demi-glace. Esa salsa no lleva la harina ni el tomate de la española, así que sabe más a glace corta. La de Escoffier parte de la salsa española.
+Sí, y es lo más habitual hoy en los restaurantes: se reduce solo el fondo oscuro hasta que nape. Esa salsa no lleva la harina ni el tomate de la española, así que sabe más a carne y se parece a una glace de viande poco reducida. La demi-glace clásica de Escoffier sí parte de la salsa española.
 
 **¿En qué se diferencia de la glace de viande?**
-La glace es fondo oscuro reducido hasta un jarabe, sin harina. La demi-glace de Escoffier lleva la salsa española, se queda en el punto de una salsa y se termina con jerez o, en la edición francesa de 1903, con Madeira.
+La glace de viande es fondo oscuro reducido hasta que queda espeso como un jarabe, sin harina ni vino. La demi-glace clásica lleva salsa española, se reduce menos, hasta tener textura de salsa, y se termina con jerez o Madeira.
 
 **¿Hay que salar el fondo antes de reducir?**
 No. Escoffier pide los fondos sin sal, porque al reducir se concentran. Si el fondo ya va salado, la demi-glace queda salada antes de tiempo. Prueba al final y corrige entonces.
 
 **¿Cuánto dura en la nevera?**
-Enfríala rápido, con la superficie tapada o pintada con un poco de mantequilla para que no haga piel. En la nevera úsala en los días siguientes. Lo que sobre, congélalo en porciones pequeñas.
+Enfríala rápido y guárdala tapada, con film en contacto o con la superficie pintada con un poco de mantequilla para que no haga piel. En la nevera aguanta 3 o 4 días. Lo que no vayas a usar, congélalo en porciones pequeñas.
 
 **¿Qué textura tiene en frío?**
 Espesa y llega a cuajar en una gelatina blanda, porque concentra la gelatina del fondo y además lleva el almidón del roux de la española. Al calentarla, vuelve a ser salsa.

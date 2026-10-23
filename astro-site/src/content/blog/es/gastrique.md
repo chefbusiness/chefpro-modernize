@@ -6,8 +6,8 @@ modDate: 2026-10-23
 category: glosario
 tags: ["gastrique", "vinagre", "salsas"]
 lang: es
-image: /blog-assets/2026/05/pillar-salsas-destacada.jpg
-imageAlt: "Azúcar tomando color de caramelo en un cazo pequeño, con un cuenco de vinagre apartado a un lado."
+image: /blog-assets/2026/05/gastrique-destacada.jpg
+imageAlt: "Gastrique de caramelo y vinagre en un cazo, junto a un plato de pato con la salsa"
 translations:
   es: "gastrique"
   en: "gastrique"
@@ -29,7 +29,7 @@ faq:
   - q: "¿Es lo mismo que un agrodolce?"
     a: "Los dos juegan con dulce y ácido. El agrodolce es la versión italiana, a menudo con vinagre, azúcar o miel, pasas y piñones, y se sirve con la verdura o la carne. El gastrique es la base francesa de caramelo y vinagre, pensada para entrar en una salsa."
   - q: "¿Con qué se usa?"
-    a: "Con pato, con caza, con un jugo oscuro y con salsas de fruta. Escoffier lo mete en la salsa romaine junto con salsa española y fondo de caza. Unas cucharadas bastan. Condimenta una salsa que ya tiene cuerpo."
+    a: "Con pato, caza, cerdo, jugos oscuros y salsas de fruta. Escoffier lo usa en la salsa romaine, junto con salsa española y fondo de caza. Basta con unas cucharadas, añadidas a una salsa que ya tiene cuerpo."
   - q: "¿Cómo se pronuncia gastrique?"
     a: "Aproximadamente «gastrík», con el acento en la última sílaba."
 faqInBody: true
@@ -39,15 +39,15 @@ El gastrique es un caramelo rubio de azúcar disuelto con vinagre. Queda un jara
 
 ## Qué es el gastrique
 
-El azúcar se funde y se colorea. El vinagre, que es agua y ácido, enfría ese caramelo y lo disuelve. Lo que queda es un jarabe: dulce del azúcar, ácido del vinagre, con el amargor suave de un caramelo claro. No lleva aceite. Por eso no se comporta como una vinagreta, que se separa en cuanto reposa y se echa sobre una hoja.
+Primero se funde el azúcar hasta que toma color de caramelo claro. Después se añade el vinagre, que disuelve el caramelo y, al reducir, forma un jarabe dulce y ácido a la vez, con un ligero amargor de caramelo. No lleva aceite, así que no tiene nada que ver con una vinagreta.
 
-Tampoco es una salsa terminada. Es el condimento agridulce que luego entra en un fondo, en una [demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion) o en un jugo de asado. Si lo usas solo, en cantidad, el plato queda dulce.
+Tampoco es una salsa terminada. Es un condimento agridulce que se añade en pequeña cantidad a un fondo, a una [demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion) o a un jugo de asado. Si te pasas, la salsa queda dulce.
 
 ## Origen
 
-La palabra, en los léxicos de cocina franceses, nombra esta base de las salsas agridulces y de las salsas de fruta, entre ellas la salsa de naranja del pato. Escoffier, en 1903, ya cocina el mismo preparado y no le pone nombre. En la salsa romaine escribe: 50 g de azúcar a caramelo rubio, disueltos con un decilitro y medio de vinagre. Después añade 600 ml de salsa española y 300 ml de fondo de caza, reduce, y termina con piñones y pasas.
+En la cocina francesa, gastrique es el nombre de esta base de caramelo y vinagre, que se usa en salsas agridulces y de fruta, como la del pato a la naranja. Escoffier ya la prepara en Le Guide Culinaire (1903), aunque sin darle nombre. En la salsa romaine lleva 50 g de azúcar a caramelo rubio y lo disuelve con un decilitro y medio de vinagre. Después añade 600 ml de salsa española y 300 ml de fondo de caza, reduce la salsa y la termina con piñones y pasas.
 
-Esa proporción, 50 g de azúcar y 150 ml de vinagre, es la que tiene sentido enseñar. Partes iguales es una costumbre posterior, más dulce.
+Esa proporción, 50 g de azúcar por 150 ml de vinagre, da un gastrique bastante ácido. Hoy muchos cocineros ponen más azúcar, incluso partes iguales, cuando quieren un resultado más dulce.
 
 ## Ingredientes y proporciones
 
@@ -59,37 +59,33 @@ Para la base, sin la salsa en la que luego se diluye:
 | Vinagre de vino blanco | 150 ml |
 | Agua, solo para ayudar a fundir el azúcar | 15 ml, una cucharada |
 
-El vinagre de vino blanco es el más neutro para aprender el punto. Un vinagre de jerez da un sabor más largo y más dulce de entrada. Uno muy suave obliga a reducir más. Prueba el jarabe antes de echarlo a la salsa.
+El vinagre de vino blanco es el más neutro y el más fácil para empezar. El de jerez aporta más aroma. Si usas un vinagre suave, el gastrique quedará menos ácido. Prueba el jarabe antes de añadirlo a la salsa.
 
 ## Cómo se hace, paso a paso
-
-<figure><img src="/blog-assets/2026/05/pillar-salsas-cuerpo.jpg" alt="Vinagre entrando en un caramelo apartado del fuego, en un cazo hondo, con el líquido aún burbujeando." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 
 **1. Funde el azúcar.** Pon el azúcar y la cucharada de agua en un cazo pequeño de fondo grueso. El agua ayuda a que se funda parejo. Cocina a fuego medio, sin remover con una cuchara: si remueves, el azúcar cristaliza. Puedes menear el cazo.
 
 **2. Llévalo a caramelo rubio.** Cuando tome color ámbar claro, huele a caramelo y todavía no a quemado, retíralo del fuego. El paso de rubio a oscuro es de segundos.
 
-**3. Añade el vinagre con cuidado.** Fuera del fuego, vierte el vinagre poco a poco. Escupe y el caramelo se endurece un momento. Es normal. Vuelve al fuego suave y cuece hasta que el caramelo se disuelva y el conjunto espese en un jarabe.
+**3. Añade el vinagre con cuidado.** Fuera del fuego, vierte el vinagre poco a poco y apártate un poco, porque salpica y suelta vapores fuertes. El caramelo se endurecerá un momento; es normal. Vuelve a ponerlo a fuego suave y cuece hasta que el caramelo se disuelva y el líquido se reduzca a un jarabe ligero.
 
-**4. Prueba.** Tiene que picar y quedarse un dulzor detrás. Si el vinagre gana por goleada, añade una pizca más de azúcar y vuelve a disolver. Si está empalagoso, reduce un minuto más o alarga con unas gotas de vinagre.
+**4. Prueba.** Primero tiene que notarse el ácido y después el dulzor. Si está demasiado ácido, añade un poco más de azúcar y deja que se disuelva. Si está demasiado dulce, añade unas gotas de vinagre.
 
 ## Por qué falla y cómo arreglarlo
 
 El fallo más común es el caramelo oscuro. Amarga, y ni el vinagre ni la nata lo disimulan. Tíralo y empieza con fuego más bajo.
 
-Si el azúcar cristaliza en un bloque blanco, había impurezas o se removió demasiado pronto. Puedes añadir un poco de agua y fundirlo otra vez, con paciencia. Si sigue granuloso, empieza de nuevo con un cazo limpio.
+Si el azúcar cristaliza y forma una masa blanca y arenosa, suele ser porque lo removiste o porque había restos en el cazo. Añade un poco de agua y fúndelo de nuevo a fuego suave. Si sigue granuloso, empieza otra vez en un cazo limpio.
 
 Si al echar el vinagre el caramelo se agarra en un bloque duro y no se disuelve, dale tiempo a fuego suave. El agua del vinagre lo suelta. Si una parte se ha quemado en el fondo, no la rasques: vierte el jarabe limpio a otro cazo.
 
 ## En el servicio
 
-Se hace antes del servicio y se guarda en un tarro. En frío espeso, casi como un caramelo blando. Al templarlo, vuelve a ser jarabe. Durante el servicio se añade a cucharaditas a la salsa ya reducida, se prueba y solo entonces se añade más.
+Se prepara antes del servicio y se guarda en un tarro. En frío se espesa mucho, casi como un caramelo blando, y al templarlo vuelve a quedar líquido. Durante el servicio se añade a cucharaditas a la salsa ya reducida, probando cada vez antes de añadir más.
 
-Una salsa que ya está en su punto de sal se pasa con facilidad si reduces el gastrique dentro mucho rato: el vinagre se concentra. Mézclalo, hierve un minuto para unir, y prueba.
+Una vez añadido, no lo dejes reducir mucho tiempo dentro de la salsa, porque el ácido y el dulce se concentran y la salsa se desequilibra. Basta con que hierva un minuto para que se integre.
 
-<figure><img src="/blog-assets/2026/05/umami-cuerpo.jpg" alt="Una salsa oscura de carne con un brillo agridulce, napando una pieza asada en el pase." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-
-Tapado, en la nevera, aguanta varias semanas. Si huele a vinagre plano o fermenta, haz otro. Es barato y rápido.
+Bien tapado y en la nevera, se conserva varias semanas.
 
 ## Variantes
 
@@ -97,15 +93,15 @@ Tapado, en la nevera, aguanta varias semanas. Si huele a vinagre plano o ferment
 
 **Con vinagre de jerez o de manzana.** Cambia el aroma. El método es el mismo. El de manzana va bien con cerdo y con fruta.
 
-**Con zumo, después del vinagre.** Un gastrique de naranja o de mango añade el zumo cuando el caramelo ya está disuelto, y lo reduce hasta jarabe otra vez. Ahí el zumo pasa a formar parte de una salsa corta.
+**Con zumo de fruta.** Para un gastrique de naranja, de frambuesa o de mango, se añade el zumo después del vinagre, cuando el caramelo ya se ha disuelto, y se reduce de nuevo hasta que quede un jarabe.
 
-**Agrodolce.** En la cocina italiana, el juego dulce-ácido se hace a menudo con vinagre y azúcar o miel, y se completa con pasas y piñones. Se parece en la idea y se come de otra manera, como condimento del propio plato.
+**Agrodolce.** Es el agridulce italiano: vinagre con azúcar o miel, a menudo con pasas y piñones. La idea es parecida, pero el agrodolce suele formar parte del propio plato, por ejemplo en unas cebollitas o en una caponata, más que de una salsa.
 
 ## Para qué se usa
 
-Para salsas de pato a la naranja, para un jugo de caza, para cerdo y para verduras dulces como la zanahoria o la cebolla asada. En la romaine de Escoffier va con salsa española, fondo de caza, piñones y pasas. También despierta un [beurre blanc](https://aichef.pro/blog/beurre-blanc) si quieres una mantequilla con un filo agridulce: unas gotas al final.
+Se usa en la salsa del pato a la naranja, en jugos de caza, con cerdo y con verduras dulces como la zanahoria o la cebolla asada. En la salsa romaine de Escoffier acompaña a la salsa española, el fondo de caza, los piñones y las pasas.
 
-Si la salsa ya [napa](https://aichef.pro/blog/napar-una-salsa) y solo le falta contraste, el gastrique se añade. No espesa. Si la salsa está líquida, primero dale cuerpo y después el dulce.
+El gastrique no espesa. Si la salsa está líquida, dale cuerpo primero, reduciéndola o ligándola hasta que [nape](https://aichef.pro/blog/napar-una-salsa), y añade el gastrique al final, solo para equilibrar el sabor.
 
 ## Para seguir en el glosario
 
@@ -129,7 +125,7 @@ No. El punto del texto es caramelo rubio, de color ámbar claro. Si lo dejas lle
 Los dos juegan con dulce y ácido. El agrodolce es la versión italiana, a menudo con vinagre, azúcar o miel, pasas y piñones, y se sirve con la verdura o la carne. El gastrique es la base francesa de caramelo y vinagre, pensada para entrar en una salsa.
 
 **¿Con qué se usa?**
-Con pato, con caza, con un jugo oscuro y con salsas de fruta. Escoffier lo mete en la salsa romaine junto con salsa española y fondo de caza. Unas cucharadas bastan. Condimenta una salsa que ya tiene cuerpo.
+Con pato, caza, cerdo, jugos oscuros y salsas de fruta. Escoffier lo usa en la salsa romaine, junto con salsa española y fondo de caza. Basta con unas cucharadas, añadidas a una salsa que ya tiene cuerpo.
 
 **¿Cómo se pronuncia gastrique?**
 Aproximadamente «gastrík», con el acento en la última sílaba.

@@ -6,8 +6,8 @@ modDate: 2026-10-23
 category: glosario
 tags: ["montar al burro", "mantequilla", "salsas"]
 lang: es
-image: /blog-assets/2026/05/holandesa-destacada.jpg
-imageAlt: "Trozos de mantequilla fría junto a un batidor y un cazo de salsa oscura recién apartado del hervor."
+image: /blog-assets/2026/05/montar-al-burro-destacada.jpg
+imageAlt: "Dados de mantequilla fría fundiéndose en un jugo oscuro reducido, fuera del fuego"
 translations:
   es: "montar-al-burro"
   en: "monter-au-beurre"
@@ -18,7 +18,7 @@ translations:
   nl: "saus-monteren-met-boter"
 definedTerm:
   name: "Montar al burro"
-  description: "Montar al burro es batir mantequilla fría, en trozos, dentro de una salsa que ya está caliente, con el cazo fuera del hervor. La mantequilla se reparte en la salsa, le da brillo y redondea el sabor. El nombre viene del francés monter au beurre: aquí «burro» es la mantequilla, beurre, no el animal. En la salsa alemana, Escoffier añade 100 g de mantequilla fresca por litro en el momento de servir, fuera del fuego."
+  description: "Montar al burro es incorporar mantequilla fría, en dados, a una salsa caliente, batiendo y sin que hierva. La mantequilla se emulsiona con la salsa, le da brillo y suaviza su sabor. «Burro» significa mantequilla en italiano, y la expresión equivale al francés monter au beurre, montar con mantequilla. Escoffier, por ejemplo, termina la salsa alemana con 100 g de mantequilla por litro justo antes de servirla."
 faq:
   - q: "¿Montar al burro es lo mismo que el beurre blanc?"
     a: "Los dos llevan mantequilla batida, y el trabajo es distinto. El beurre blanc se construye entero con una reducción de chalota, vino y vinagre, y la mantequilla es casi todo el volumen. Montar al burro es el acabado de una salsa que ya tenías: un jugo, una reducción, una demi-glace."
@@ -27,84 +27,80 @@ faq:
   - q: "¿Por qué la mantequilla va fría y el cazo fuera del hervor?"
     a: "Fría, se funde poco a poco y da tiempo a repartirla. Si ya está blanda o derretida, cae en grasa y cuesta más emulsionarla. Si el cazo hierve, la grasa se separa y la superficie queda aceitosa."
   - q: "¿Cuánta mantequilla se echa?"
-    a: "En la salsa alemana, Escoffier pone 100 g por litro en el momento de servir. Para 250 ml, son 25 g. Empieza por ahí. Si la salsa ya brilla y sabe redonda, no añadas más: a partir de ese punto solo gana peso."
+    a: "En la salsa alemana, Escoffier pone 100 g por litro en el momento de servir, así que para 250 ml son 25 g. Empieza por ahí. Si la salsa ya brilla y tiene un sabor redondo, no añadas más, porque solo conseguirás que quede más pesada."
   - q: "¿Se puede hervir después de montarla?"
     a: "No. El hervor separa la mantequilla. Si la salsa además lleva yema, Escoffier fija un límite más bajo: 60 °C, que son 140 °F. Móntala cuando el plato ya va a salir."
   - q: "¿Por qué se llama montar al burro?"
-    a: "Es el nombre de cocina en español para el francés monter au beurre, montar con mantequilla. Burro, en esta frase, viene de beurre. No tiene nada que ver con el animal."
+    a: "Porque burro significa mantequilla en italiano. La expresión equivale al francés monter au beurre, montar con mantequilla, y no tiene nada que ver con el animal."
 faqInBody: true
 ---
 
-Montar al burro es batir mantequilla fría, en trozos, dentro de una salsa que ya está caliente, con el cazo fuera del hervor. La mantequilla se reparte en la salsa, le da brillo y redondea el sabor. El nombre viene del francés monter au beurre: aquí «burro» es la mantequilla, beurre, no el animal. En la salsa alemana, Escoffier añade 100 g de mantequilla fresca por litro en el momento de servir, fuera del fuego.
+Montar al burro es incorporar mantequilla fría, en dados, a una salsa caliente, batiendo y sin que hierva. La mantequilla se emulsiona con la salsa, le da brillo y suaviza su sabor. «Burro» significa mantequilla en italiano, y la expresión equivale al francés monter au beurre, montar con mantequilla. Escoffier, por ejemplo, termina la salsa alemana con 100 g de mantequilla por litro justo antes de servirla.
 
 ## Qué es montar al burro
 
-La salsa ya existe. Puede ser un jugo de asado, una reducción de vino o una [demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion). Le falta brillo, o está un punto áspera de tanto reducir. La mantequilla fría, batida fuera del hervor, se funde en gotas muy finas y se queda suspendida. Eso es una emulsión pequeña, dentro de una salsa que ya tenía cuerpo.
+Se usa con una salsa que ya está hecha, como un jugo de asado, una reducción de vino o una [demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion). Si le falta brillo o ha quedado un poco áspera de tanto reducir, se le añade mantequilla fría y se bate sin que hierva. La mantequilla se funde en gotas muy finas que quedan repartidas en la salsa: es una pequeña emulsión.
 
-No espesa de verdad. Si la salsa corre por el plato como un caldo, la mantequilla le dará brillo y seguirá corriendo. Para espesar hacen falta harina, almidón o una reducción más larga. El [beurre manié](https://aichef.pro/blog/beurre-manie) es el que lleva harina. Aquí no entra.
+Montar al burro no espesa. Si la salsa está líquida, seguirá líquida, aunque brille más. Para espesarla hace falta reducirla más o ligarla con harina o almidón, por ejemplo con un [beurre manié](https://aichef.pro/blog/beurre-manie), que es mantequilla amasada con harina.
 
-Un [beurre blanc](https://aichef.pro/blog/beurre-blanc) es otra salsa. El beurre blanc es la salsa entera: chalota, vino, vinagre y una cantidad grande de mantequilla. Montar al burro es un acabado, medido en gramos.
+Tampoco hay que confundirlo con un [beurre blanc](https://aichef.pro/blog/beurre-blanc). El beurre blanc es una salsa completa, hecha casi solo de mantequilla sobre una reducción de chalota, vino y vinagre. Montar al burro es solo el acabado de otra salsa, con una cantidad pequeña de mantequilla.
 
 ## Origen
 
-En francés se dice monter au beurre, montar con mantequilla. El español de cocina calcó beurre como «burro», y el nombre se quedó. Conviene decirlo claro la primera vez, porque suena a otra cosa.
+En francés se dice monter au beurre, montar con mantequilla. En las cocinas españolas se dice «montar al burro», con la palabra italiana para la mantequilla, burro. No tiene nada que ver con el animal.
 
-Escoffier, en la salsa alemana de Le Guide Culinaire (1903), la misma que en Ma Cuisine (1934) llama parisienne, separa el momento de la mantequilla del resto de la cocción. La salsa se reduce y se cuela antes. Los 100 g de mantequilla fresca por litro se añaden justo al servir. En la edición inglesa de 1907 repite la idea: si la montas con antelación, la mantequilla se separa. Y, cuando la salsa ya va ligada con yema, no debe pasar de 60 °C después de esa grasa.
+En la salsa alemana de Le Guide Culinaire (1903), Escoffier deja la mantequilla para el final: reduce y cuela la salsa, y añade los 100 g de mantequilla por litro justo al servirla. En la edición inglesa de 1907 explica por qué: si se añade antes, la salsa se corta. Y si la salsa está ligada con yema, una vez que lleva la mantequilla no debe pasar de 60 °C.
 
 ## Ingredientes y proporciones
 
-Para una salsa de cuatro raciones justas, o para ir montando de poco en poco:
+Para cuatro raciones:
 
 | Ingrediente | Cantidad |
 | --- | --- |
 | Salsa caliente, ya reducida y en su punto de sal | 250 ml |
 | Mantequilla sin sal, muy fría, en dados | 25 g |
 
-Es la proporción de la salsa alemana, 100 g por litro, aplicada a un cazo pequeño. La mantequilla con sal te impide probar con claridad, porque la salsa ya debería estar sazonada.
+Es la proporción de Escoffier para la salsa alemana, 100 g por litro, aplicada a una cantidad pequeña. Usa mantequilla sin sal, porque la salsa ya tiene que estar sazonada.
 
 ## Cómo se hace, paso a paso
 
-<figure><img src="/blog-assets/2026/05/holandesa-cuerpo.jpg" alt="Un cocinero bate mantequilla fría en una salsa caliente en el pase y la superficie empieza a brillar." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-
 **1. Deja la salsa en su punto antes de la mantequilla.** Tiene que saber bien y cubrir la cuchara si eso es lo que buscas. La mantequilla no corrige una salsa aguada ni una salsa salada. La sal, además, se nota más en cuanto entra la grasa.
 
-**2. Aparta el cazo del hervor.** El líquido puede estar muy caliente. No puede estar hirviendo.
+**2. Aparta el cazo del hervor.** La salsa tiene que estar muy caliente, pero sin hervir.
 
 **3. Bate la mantequilla en dos o tres veces.** Añade unos dados y bate hasta que desaparezcan. Sigue con el resto. La superficie pasa de mate a brillante. Si el cazo se queda demasiado caliente, apártalo un momento y sigue batiendo.
 
-**4. Prueba y sirve.** Si brilla y el sabor está redondo, para. Servir enseguida. Un hervor posterior deshace el trabajo.
+**4. Prueba y sirve.** Cuando la salsa brille y tenga un sabor redondo, deja de añadir mantequilla y sírvela enseguida. Si vuelve a hervir, la mantequilla se separa.
 
 ## Por qué se separa y cómo arreglarlo
 
 Se separa por calor de más, por mantequilla blanda o por echarla de una vez. Verás un borde aceitoso, o una salsa que brilla en el centro y nada en grasa en el borde.
 
-Si acaba de separarse, prueba esto. Pon una cucharada de agua fría o de nata en un cazo limpio y ve batiendo dentro la salsa, poco a poco, fuera del fuego. Muchas veces vuelve a unirse. Si lleva rato separada y además hervida, el arreglo es peor: la grasa ya se ha soltado del todo y conviene emulsionarla de nuevo con ese líquido frío, sin prometer que quede como al principio.
+Si acaba de separarse, pon una cucharada de agua fría o de nata en un cazo limpio y ve añadiendo la salsa poco a poco, batiendo, fuera del fuego. Muchas veces vuelve a ligar. Si ha hervido y lleva rato separada, es más difícil, pero puedes intentarlo igual.
 
-Añadir más mantequilla a una salsa ya separada no la compone. Primero tiene que volver a estar unida.
+Añadir más mantequilla a una salsa separada no la arregla: primero hay que volver a ligarla.
 
 ## En el servicio
 
-La mantequilla se corta en dados y se deja en la nevera hasta el momento. La salsa espera sin montar. Se monta por raciones o por una bandeja corta, cuando el plato va a salir. Una cazuela grande montada al principio del servicio estará aceitosa al final.
+Corta la mantequilla en dados y guárdala en la nevera hasta el momento de usarla. La salsa se mantiene caliente sin la mantequilla y se monta por raciones, o en pequeñas cantidades, cuando el plato va a salir. Si montas toda la salsa al principio del servicio, al final estará grasienta.
 
-Si la salsa lleva yema, respeta los 60 °C de Escoffier después de la mantequilla. Por debajo de eso se mantiene al baño maría. Por encima, la yema y la grasa se separan juntas.
+Si la salsa lleva yema, no dejes que pase de 60 °C después de añadir la mantequilla, como indica Escoffier. Si se calienta más, la yema cuaja y la mantequilla se separa.
 
-<figure><img src="/blog-assets/2026/05/bearnesa-cuerpo.jpg" alt="Un jugo con brillo suave sobre carne laminada, con la mantequilla todavía fría en la partida." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-
-No montes más de la que vayas a servir. La que sobre, si la hierves al día siguiente para «recuperarla», suelta la mantequilla. Guárdala en la nevera y caliéntala luego muy suave, batiendo, o acepta que el brillo de ayer no vuelve entero.
+No montes más salsa de la que vayas a servir. Si te sobra, guárdala en la nevera y caliéntala al día siguiente muy despacio, batiendo y sin que hierva. Aun así, perderá parte del brillo.
 
 ## Variantes
 
-**Con una nuez por plato.** En lugar de montar toda la cazuela, se echa un dado de mantequilla en la cuchara de salsa, sobre el plato, y se mezcla. El efecto es el mismo en pequeño, y no arriesgas el resto.
+**Una nuez por ración.** En lugar de montar toda la salsa, pon en un cazo pequeño la ración que va a cada plato, añade un dado de mantequilla y bate. Así no arriesgas el resto.
 
-**Montar un beurre blanc.** Ahí la mantequilla es casi toda la salsa, unos 200 g para una reducción pequeña, y no solo el acabado. La manera de batir, con la mantequilla fría, se parece. La receta, no.
+**Beurre blanc.** Aquí la mantequilla no es un acabado, sino casi toda la salsa: unos 200 g sobre una reducción pequeña. La técnica de batir mantequilla fría es la misma, pero la receta es otra.
 
-**Con nata.** Redondea y estabiliza un poco, y el sabor es de nata. Escoffier, en algunas salsas, usa las dos: nata durante la reducción y mantequilla al final.
+**Con nata.** Una cucharada de nata antes de la mantequilla hace la salsa algo más estable, aunque le da sabor a nata. Escoffier usa a veces las dos: nata durante la reducción y mantequilla al final.
 
 ## Para qué se usa
 
-Para jugos de carne, salsas de vino, demi-glace y reducciones de pescado que ya tienen cuerpo y quieren brillo. También para suavizar una salsa que ha quedado un punto ácida o salina, siempre que el fallo sea pequeño. La grasa tapa un filo. Una salsa muy salada sigue salada.
+Se usa en jugos de carne, salsas de vino, demi-glace y reducciones de pescado que ya tienen cuerpo y solo necesitan brillo. También suaviza una salsa que ha quedado un poco ácida, pero no arregla una salsa salada.
 
-Si lo que ves en la cuchara es una salsa líquida, no la montes todavía. Redúcela, o espesala con lo que corresponda, y monta al final.
+Si la salsa está líquida, no la montes todavía: redúcela o lígala primero, y monta al final.
 
 ## Para seguir en el glosario
 
@@ -125,10 +121,10 @@ El beurre manié lleva harina. Se amasa crudo y se usa para espesar. Montar al b
 Fría, se funde poco a poco y da tiempo a repartirla. Si ya está blanda o derretida, cae en grasa y cuesta más emulsionarla. Si el cazo hierve, la grasa se separa y la superficie queda aceitosa.
 
 **¿Cuánta mantequilla se echa?**
-En la salsa alemana, Escoffier pone 100 g por litro en el momento de servir. Para 250 ml, son 25 g. Empieza por ahí. Si la salsa ya brilla y sabe redonda, no añadas más: a partir de ese punto solo gana peso.
+En la salsa alemana, Escoffier pone 100 g por litro en el momento de servir, así que para 250 ml son 25 g. Empieza por ahí. Si la salsa ya brilla y tiene un sabor redondo, no añadas más, porque solo conseguirás que quede más pesada.
 
 **¿Se puede hervir después de montarla?**
 No. El hervor separa la mantequilla. Si la salsa además lleva yema, Escoffier fija un límite más bajo: 60 °C, que son 140 °F. Móntala cuando el plato ya va a salir.
 
 **¿Por qué se llama montar al burro?**
-Es el nombre de cocina en español para el francés monter au beurre, montar con mantequilla. Burro, en esta frase, viene de beurre. No tiene nada que ver con el animal.
+Porque burro significa mantequilla en italiano. La expresión equivale al francés monter au beurre, montar con mantequilla, y no tiene nada que ver con el animal.

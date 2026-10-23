@@ -7,7 +7,7 @@ category: glossary
 tags: ["demi-glace", "sauce"]
 lang: en
 image: /blog-assets/2026/05/demi-glace-destacada.jpg
-imageAlt: "A wide pot of dark demi-glace reduced to a shining coat, a spoon lifted to show the sauce clinging to the back."
+imageAlt: "Ladle pouring glossy dark demi-glace into a skillet"
 translations:
   es: "demi-glace-concepto-y-definicion"
   en: "what-is-demi-glace"
@@ -18,36 +18,36 @@ translations:
   nl: "demi-glace"
 definedTerm:
   name: "Demi-glace"
-  description: "Demi-glace is espagnole sauce refined with a last simmer and a little fortified wine. In A Guide to Modern Cookery (1907), Auguste Escoffier combines equal amounts of espagnole and brown stock, reduces that mixture to a little under half, and finishes it off the heat with dry sherry. With 500 ml (about 2 cups) of each liquid, the target is 450 ml of sauce and 50 ml of sherry. The name means half-glaze. Demi-glace, demi glace, and demiglace are three spellings of the same sauce."
+  description: "Demi-glace is a classic French brown sauce. You make it by combining equal parts espagnole sauce and brown stock and reducing the mixture over gentle heat until a little less than half remains. Off the heat, you finish it with a splash of sherry or Madeira. That is how Auguste Escoffier describes it, and he treats it as the base of all the smaller brown sauces. The name means \"half-glaze,\" and you will see it spelled demi-glace, demi glace, or demiglace."
 faq:
   - q: "Are demi-glace, demi glace, and demiglace the same sauce?"
     a: "Yes. They are three spellings of the same French name. The sauce is espagnole and brown stock, reduced and finished with a fortified wine."
   - q: "Can you make demi-glace without espagnole?"
-    a: "Many kitchens reduce brown stock alone until it coats a spoon and still call it demi-glace. That sauce has neither the flour nor the tomato of espagnole, so it tastes closer to a light meat glaze. Escoffier's demi-glace starts from espagnole."
+    a: "Yes, and most restaurants do it that way today: they reduce brown stock alone until it coats a spoon. That sauce has neither the flour nor the tomato of espagnole, so it tastes meatier and is closer to a lightly reduced glace de viande. Escoffier's classic demi-glace does start from espagnole."
   - q: "How is demi-glace different from glace de viande?"
-    a: "A meat glaze is brown stock reduced to a syrup, with no flour. Escoffier's demi-glace contains espagnole, stops at sauce consistency, and is finished with sherry or, in the 1903 French edition, with Madeira."
+    a: "Glace de viande is brown stock reduced until it is as thick as syrup, with no flour and no wine. Classic demi-glace contains espagnole, is reduced less, only to the thickness of a sauce, and is finished with sherry or Madeira."
   - q: "Should you salt the stock before reducing it?"
     a: "No. Escoffier wants unsalted stock, because reduction concentrates whatever is in it. Salted stock turns the demi-glace salty too soon. Taste at the end and adjust then."
   - q: "How long does demi-glace keep in the refrigerator?"
-    a: "Cool it quickly, with the surface covered or dotted with a little butter so a skin does not form. Use it within a few days. Freeze the rest in small portions."
+    a: "Cool it quickly and keep it covered, with plastic wrap pressed onto the surface or a little butter dotted on top so a skin does not form. It keeps for 3 to 4 days in the refrigerator. Freeze what you will not use in small portions."
   - q: "What texture does it have when cold?"
     a: "It thickens and sets into a soft jelly, because it concentrates the gelatin from the stock and also contains the starch from the roux in the espagnole. Warmed up, it becomes a sauce again."
 faqInBody: true
 ---
 
-Demi-glace is espagnole sauce refined with a last simmer and a little fortified wine. In A Guide to Modern Cookery (1907), Auguste Escoffier combines equal amounts of espagnole and brown stock, reduces that mixture to a little under half, and finishes it off the heat with dry sherry. With 500 ml (about 2 cups) of each liquid, the target is 450 ml of sauce and 50 ml of sherry. The name means half-glaze. Demi-glace, demi glace, and demiglace are three spellings of the same sauce.
+Demi-glace is a classic French brown sauce. You make it by combining equal parts espagnole sauce and brown stock and reducing the mixture over gentle heat until a little less than half remains. Off the heat, you finish it with a splash of sherry or Madeira. That is how Auguste Escoffier describes it, and he treats it as the base of all the smaller brown sauces. The name means "half-glaze," and you will see it spelled demi-glace, demi glace, or demiglace.
 
 ## What demi-glace is
 
-Espagnole is brown stock thickened with a toasted roux and tomato, then skimmed for hours. Demi-glace takes that sauce and concentrates it again with more brown stock. It therefore contains flour, tomato, and the taste of reduced stock. When it is ready, it coats the back of a spoon. That consistency is called [nappé](https://aichef.pro/en/blog/nap-a-sauce).
+Espagnole is brown stock thickened with a toasted roux and tomato. It simmers slowly for hours while you skim it, which means lifting off the foam and impurities that rise to the surface. To make demi-glace, you combine that sauce with more brown stock and reduce it again. The result contains flour, tomato, and the concentrated flavor of the stock. It is ready when it coats the back of a spoon in a thin, even layer. Cooks call that consistency [nappé](https://aichef.pro/en/blog/nap-a-sauce).
 
-Many kitchens today skip the espagnole. They reduce the stock until it coats a spoon and call that reduction demi-glace as well. It is a useful sauce, with a different flavor: it has neither the roux nor the tomato, and it sits closer to a [glace de viande](https://aichef.pro/en/blog/glace-de-viande) that you can still serve by the spoonful. If you swap one for the other in a recipe, taste it first.
+Many restaurants today skip the espagnole. They reduce brown stock alone until it coats a spoon and call that demi-glace too. It is a very useful sauce, but it is a different one. With no roux and no tomato, it tastes meatier and is closer to a lightly reduced [glace de viande](https://aichef.pro/en/blog/glace-de-viande). If a recipe calls for demi-glace, taste yours first so you know which kind you are using.
 
 ## Where it comes from
 
-In Le Guide Culinaire (1903), Escoffier defines demi-glace as espagnole brought to its last skimming, the long clarifying simmer that lifts out impurities. He finishes it off the heat with half a deciliter of very dry Madeira per liter of sauce, which is 50 ml. He adds the wine off the heat because boiling drives off the aroma.
+In Le Guide Culinaire (1903), Escoffier defines demi-glace as espagnole brought to its peak by a final skimming. He finishes it off the heat with half a deciliter (50 ml) of very dry Madeira per liter of sauce, and he explains why: if the wine boils, it loses its aroma.
 
-The 1907 English edition, A Guide to Modern Cookery, writes the reduction in numbers. One measure of espagnole and one measure of first-class brown stock are reduced until nine-tenths of a measure remain, then finished off the heat with one-tenth of a measure of excellent sherry. That is the ratio in the recipe below. The wine changes from one edition to the other: Madeira in French, sherry in English.
+In the 1907 English edition, A Guide to Modern Cookery, he gives amounts for the reduction. He combines one measure of espagnole with one measure of first-class brown stock, reduces it to nine-tenths of a measure, and finishes it off the heat with one-tenth of a measure of excellent sherry. Put simply, that is equal parts espagnole and stock, reduced to a little under half, with a tenth of wine at the end. The recipe below follows that ratio.
 
 ## Ingredients and ratios
 
@@ -57,19 +57,19 @@ For about 500 ml (2 cups) of finished sauce, half of the 1907 formula:
 | --- | --- |
 | Espagnole sauce | 500 ml (about 2 cups) |
 | Unsalted brown stock | 500 ml (about 2 cups) |
-| Dry sherry, off the heat | 50 ml (about 3 1/2 tablespoons) |
+| Dry sherry (fino or amontillado), off the heat | 50 ml (about 3 1/2 tablespoons) |
 
-Escoffier's stock is the one he calls estouffade, made with veal and beef shin. Veal stock alone gives a paler sauce. Do not salt it before you reduce.
+Escoffier used a brown stock made from veal and beef, which he called estouffade. Veal stock alone gives a paler, milder sauce. Either way, the stock must be unsalted, because reduction concentrates it.
 
 If you follow the 1903 French edition, the wine is very dry Madeira: 50 ml per liter of already reduced sauce, also off the heat.
 
 ## How to make it, step by step
 
-<figure><img src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Espagnole and dark stock side by side on the bench before they go into one pot to reduce for demi-glace." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+<figure><img src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Dark sauce reducing in a skillet with a wooden spoon" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 
 **1. Combine the espagnole and the stock.** Put both liquids in a wide, heavy saucepan. A wide pan evaporates faster than a tall, narrow one.
 
-**2. Reduce over gentle heat.** Bring the mixture to a slow simmer and skim now and then. You want it to drop from 1 liter to 450 ml (a scant 2 cups). You do not need a timer. Mark the level at the start, or pour it into a measuring jug when it has dropped enough. A hard boil makes the sauce jump, cloud, and catch around the rim.
+**2. Reduce over gentle heat.** Bring it to a gentle simmer and skim it now and then. You want to go from 1 liter to about 450 ml (a scant 2 cups). To know when you are there, mark the starting level on the pan, or pour the sauce into a measuring cup once it has dropped noticeably. Do not let it boil hard, because it will spatter, turn cloudy, and stick to the sides of the pan.
 
 **3. Strain it.** Pass it through a fine sieve or a cloth. Do not press the sediment.
 
@@ -77,23 +77,23 @@ If you follow the 1903 French edition, the wine is very dry Madeira: 50 ml per l
 
 ## Why it fails and how to fix it
 
-If the stock was salted, the reduction comes out salty, and there is no clean way back. Loosen it with a little unsalted stock and taste again, knowing that you are also diluting the flavor.
+If the stock was salted, the reduction will be salty. You can soften that a little by adding some unsalted stock, but you also dilute the flavor. That is why stock for demi-glace is never salted.
 
-If it is still thin after the reduction, the stock had little gelatin or the espagnole was thin. Keep it over gentle heat until it coats the spoon. Thickening it with more flour turns it into a new [roux](https://aichef.pro/en/blog/what-is-a-roux) and changes the flavor.
+If it is still thin after reducing, the stock had little gelatin or the espagnole was too thin. Keep reducing over gentle heat until it coats a spoon. Do not thicken it with flour or cornstarch, because that changes the flavor and dulls the shine.
 
-If it catches or tastes bitter, the heat was high when little sauce was left. You cannot cover that bitterness. Start again, and lower the heat as soon as the sauce thickens.
+If it sticks or tastes bitter, the heat was too high at the end, when little sauce was left. You cannot fix that bitterness, so start again. Lower the heat as soon as the sauce begins to thicken.
 
-If you add the sherry and then boil it, the wine tastes flat. Escoffier is clear about this: boiling carries off the aroma.
+If you boil the sauce after adding the sherry, the wine loses its aroma. Always add it last, off the heat.
 
 ## During service
 
 Make it before service, during mise en place, the prep that happens ahead of time, and hold it warm over a water bath without letting it boil again. On each plate, use it by the spoonful, on its own or to strengthen a jus. If it only needs shine, mount it with a little cold butter at the moment you serve.
 
-Cool leftovers quickly, stirring so a skin does not form, and refrigerate them. Use them within a few days. Frozen in small portions, one piece is enough for a couple of sauces.
+Cool leftovers quickly, stirring now and then so a skin does not form, and keep them covered in the refrigerator for 3 to 4 days. Demi-glace also freezes well in small portions, for example in an ice cube tray, so you can take out only what you need.
 
 ## Variations
 
-**Stock only.** Reduce unsalted brown stock until it coats a spoon, with no espagnole. This is the demi-glace of many restaurants. It tastes cleaner of flour and shorter on tomato.
+**Stock only.** Reduce unsalted brown stock until it coats a spoon, with no espagnole. This is the demi-glace many restaurants use today. It has no flour and tastes meatier and less of tomato.
 
 **With Madeira.** This is the finish of the 1903 French edition: 50 ml of very dry Madeira per liter, off the heat. Dry sherry is the finish of the English edition.
 
@@ -102,8 +102,6 @@ Cool leftovers quickly, stirring so a skin does not form, and refrigerate them. 
 ## What to use it for
 
 It is the base of the small brown sauces: Lyonnaise, Bordelaise, chasseur, and the ones finished at the last minute with the juices of a roast. It also stretches a pan reduction when the meat has given up little liquid. A spoonful in a braise adds body without another hour of boiling.
-
-<figure><img src="/blog-assets/2026/05/fondo-oscuro-cuerpo.jpg" alt="A cook finishing a steak pan with a ladle of demi-glace at the pass, the sauce tightening around the meat juices." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 
 ## More from the glossary
 
@@ -118,16 +116,16 @@ It is the base of the small brown sauces: Lyonnaise, Bordelaise, chasseur, and t
 Yes. They are three spellings of the same French name. The sauce is espagnole and brown stock, reduced and finished with a fortified wine.
 
 **Can you make demi-glace without espagnole?**
-Many kitchens reduce brown stock alone until it coats a spoon and still call it demi-glace. That sauce has neither the flour nor the tomato of espagnole, so it tastes closer to a light meat glaze. Escoffier's demi-glace starts from espagnole.
+Yes, and most restaurants do it that way today: they reduce brown stock alone until it coats a spoon. That sauce has neither the flour nor the tomato of espagnole, so it tastes meatier and is closer to a lightly reduced glace de viande. Escoffier's classic demi-glace does start from espagnole.
 
 **How is demi-glace different from glace de viande?**
-A meat glaze is brown stock reduced to a syrup, with no flour. Escoffier's demi-glace contains espagnole, stops at sauce consistency, and is finished with sherry or, in the 1903 French edition, with Madeira.
+Glace de viande is brown stock reduced until it is as thick as syrup, with no flour and no wine. Classic demi-glace contains espagnole, is reduced less, only to the thickness of a sauce, and is finished with sherry or Madeira.
 
 **Should you salt the stock before reducing it?**
 No. Escoffier wants unsalted stock, because reduction concentrates whatever is in it. Salted stock turns the demi-glace salty too soon. Taste at the end and adjust then.
 
 **How long does demi-glace keep in the refrigerator?**
-Cool it quickly, with the surface covered or dotted with a little butter so a skin does not form. Use it within a few days. Freeze the rest in small portions.
+Cool it quickly and keep it covered, with plastic wrap pressed onto the surface or a little butter dotted on top so a skin does not form. It keeps for 3 to 4 days in the refrigerator. Freeze what you will not use in small portions.
 
 **What texture does it have when cold?**
 It thickens and sets into a soft jelly, because it concentrates the gelatin from the stock and also contains the starch from the roux in the espagnole. Warmed up, it becomes a sauce again.
