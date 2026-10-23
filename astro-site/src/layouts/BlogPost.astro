@@ -42,7 +42,7 @@ interface Props {
 const AUTOR_URL = 'https://johnguerrero.es';
 
 const { post } = Astro.props;
-const { title, description, pubDate, modDate, image, imageAlt, faq, category, howto, definedTerm } = post.data;
+const { title, description, pubDate, modDate, image, imageAlt, faq, category, howto, definedTerm, faqInBody } = post.data;
 /**
  * Par de traducción (8C). Sin él, cada post declara solo su propio hreflang
  * —correcto mientras el blog EN fue contenido distinto—; con él, los dos se
@@ -393,7 +393,7 @@ const schemas: object[] = [
         </section>
       )}
 
-      {faq.length > 0 && (
+      {faq.length > 0 && !faqInBody && (
         <section class="mt-10">
           <h2 class="text-2xl font-bold text-foreground">{T.faqHeading}</h2>
           <div class="mt-4 divide-y divide-border rounded-xl border border-border">

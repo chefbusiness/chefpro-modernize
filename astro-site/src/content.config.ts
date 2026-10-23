@@ -55,6 +55,12 @@ const blog = defineCollection({
       .optional(),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     /**
+     * La FAQ ya está en el cuerpo, con la misma redacción que `faq`.
+     * BlogPost sigue emitiendo el FAQPage desde el array, pero no pinta
+     * el bloque otra vez. El resto de posts no lo declara y no cambia.
+     */
+    faqInBody: z.boolean().default(false),
+    /**
      * Pasos visibles de un procedimiento. Si está, BlogPost emite HowTo
      * además del FAQPage. El texto del schema es el mismo que la lista.
      */

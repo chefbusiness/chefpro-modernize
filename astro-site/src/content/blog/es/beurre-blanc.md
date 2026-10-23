@@ -1,13 +1,13 @@
 ---
-title: "Beurre blanc: qué es la salsa de mantequilla y cómo se sirve al momento"
-description: "El beurre blanc es chalota, vino blanco y vinagre reducidos, y mantequilla fría batida al final. Es una emulsión inestable: se sirve en el momento, no se guarda."
+title: "Salsa beurre blanc: qué es y cómo se hace"
+description: "El beurre blanc es una salsa francesa de mantequilla, chalota, vino blanco y vinagre. Te explicamos su origen, las proporciones, el paso a paso y cómo salvarla si se corta."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
 tags: ["beurre blanc", "emulsion", "salsas"]
 lang: es
-image: /blog-assets/2026/05/bearnesa-destacada.jpg
-imageAlt: "Reducción corta de chalota y vino en un cazo pequeño, con dados de mantequilla fría al lado, listos para montar."
+image: /blog-assets/2026/05/beurre-blanc-destacada.jpg
+imageAlt: "Rodaballo con salsa beurre blanc y un cazo de cobre con más salsa al fondo"
 translations:
   es: "beurre-blanc"
   en: "beurre-blanc"
@@ -18,37 +18,97 @@ translations:
   nl: "beurre-blanc"
 definedTerm:
   name: "Beurre blanc"
-  description: "El beurre blanc es una salsa de chalota, vino blanco y vinagre reducidos, montada después con mantequilla fría. La mantequilla es el cuerpo, no un adorno. Es una emulsión inestable: si hierve o si espera, se corta. Se hace para el pase y se manda enseguida. No es un jugo montado ni un beurre manié."
+  description: "El beurre blanc es una salsa francesa de mantequilla. Se hace reduciendo chalota picada con vino blanco y vinagre, y después se incorpora mantequilla fría poco a poco, batiendo, hasta conseguir una salsa cremosa, de color marfil y con un punto ácido. Su nombre significa «mantequilla blanca» y nació en el valle del Loira, cerca de Nantes, para acompañar pescados de río. Hoy es una de las salsas clásicas del pescado blanco, el marisco y verduras como los espárragos."
 faq:
-  - q: "¿El beurre blanc lleva harina?"
-    a: "No. El cuerpo lo da la mantequilla fría batida sobre una reducción corta de chalota, vino blanco y vinagre. Si le metes harina estás en un roux o en un beurre manié, y la salsa deja de ser esta. El ácido y la grasa tienen que sostenerse solos, por eso es inestable."
-  - q: "¿Se puede dejar hecho antes del servicio?"
-    a: "La reducción, sí. El montaje, no. En cuanto la mantequilla entra, la salsa vive del calor justo y del batido. Si hierve o si espera, se corta: la grasa sube y el líquido se queda abajo. Se monta cuando el plato está cantado y se manda enseguida. Sala tiene que saber que no espera en la barra."
-  - q: "¿Es lo mismo que montar al burro?"
-    a: "No. Montar al burro añade mantequilla fría a una salsa que ya existía, para brillo y redondez. El beurre blanc es la salsa entera: la reducción ácida más la mantequilla. Un jugo de carne montado no sustituye a un beurre blanc en la comanda."
-  - q: "¿Qué lo diferencia de la mantequilla avellana?"
-    a: "La mantequilla avellana se tuesta hasta oler a nuez y se usa como grasa aromática, a menudo sola. El beurre blanc no persigue ese tostado: persigue una emulsión pálida, ácida y mantecosa. Si la mantequilla se dora dentro del cazo, te has salido del gesto."
+  - q: "¿Qué diferencia hay entre el beurre blanc y la salsa holandesa?"
+    a: "Las dos son emulsiones calientes de mantequilla con un toque ácido, pero la holandesa lleva yemas de huevo, que la hacen más estable y espesa. El beurre blanc solo lleva la reducción y la mantequilla, por lo que es más ligero y más delicado."
+  - q: "¿Lleva nata el beurre blanc?"
+    a: "La receta clásica no. Algunos cocineros añaden un poco a la reducción para que la salsa aguante mejor, pero es una variante."
+  - q: "¿Se puede preparar con antelación?"
+    a: "La reducción sí: se puede hacer horas antes y guardarla en la nevera. La mantequilla conviene incorporarla poco antes de servir."
+  - q: "¿Se puede recalentar?"
+    a: "No es recomendable, porque se corta con facilidad. Si se ha enfriado y solidificado, caliéntala muy suavemente al baño maría mientras bates."
+  - q: "¿Cómo se pronuncia?"
+    a: "Aproximadamente «bur blan», con la última sílaba nasal."
+  - q: "¿Cómo se llama en español?"
+    a: "Se traduce como «mantequilla blanca», aunque en cocina y en las cartas de restaurante se usa casi siempre el nombre francés."
+faqInBody: true
 ---
 
-<p>El beurre blanc es una salsa de chalota, vino blanco y vinagre reducidos, montada después con mantequilla fría. La mantequilla es el cuerpo, no un adorno. Es una emulsión inestable: si hierve o si espera, se corta. Se hace para el pase y se manda enseguida. No es un jugo montado ni un beurre manié.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Ver la ficha de chef jefe de cocina</a></p></aside>
-<h2>Qué es, en la práctica</h2>
-<p>La base es poca y ácida. Chalota picada, vino blanco y vinagre se reducen hasta que el líquido casi no cubre la chalota y el ácido se ha calmado sin desaparecer. Ahí entra la mantequilla fría, en trozos, fuera de un hervor fuerte, batiendo. El beurre blanc no lleva harina. El cuerpo lo pone la grasa dispersa en ese poco de líquido. Si la reducción se seca del todo, no hay dónde emulsionar. Si se queda larga, la salsa sale floja y el ácido manda. El punto se prueba, no se cronometra.</p>
-<p>Es una emulsión que no perdona la espera. En caliente y en movimiento se tiene. En un baño que se pasa de calor, o en un cazo olvidado al fondo del pase, la mantequilla se suelta y ves un charco de grasa sobre un líquido claro. No se recupera como una mayonesa a la que le falta un hilo de agua. Se vuelve a montar con mantequilla fría si aún hay base, o se tira el plato y se hace otra. Por eso la casa que lo lleva en carta lo monta al canto, no a primera hora.</p>
-<h2>Con qué no se confunde</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesto</th><th>Qué hace</th><th>Qué no hace</th></tr></thead><tbody><tr><td>Reducir chalota, vino y vinagre</td><td>Deja una base ácida y corta</td><td>No es un fondo de carne</td></tr><tr><td>Montar con mantequilla fría</td><td>La grasa es el cuerpo</td><td>No lleva harina</td></tr><tr><td>Servir en el momento</td><td>La emulsión se tiene en caliente</td><td>No se guarda para el turno</td></tr><tr><td>Distinguirlo del montaje</td><td>Es una salsa con nombre</td><td>No es montar un jugo al burro</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/vinagreta-cuerpo.jpg" alt="Un cocinero bate mantequilla fría en una salsa pálida que se vuelve opaca y lisa." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se comporta en el pase</h2>
-<p>No lo confundas con montar al burro. Montar al burro pule una salsa que ya existía: un jugo, una reducción de carne, una velouté. El beurre blanc es la salsa. Si en la comanda pone beurre blanc y mandas un fondo oscuro con un poco de mantequilla, has cambiado el plato. El comensal espera algo pálido, ácido y mantecoso, al lado de un pescado o de una verdura, no un jugo cárnico brillante. El nombre francés se queda; la explicación en pase es «la salsa blanca de mantequilla, ahora».</p>
-<p>La mise en place es la reducción ya colada, en poca cantidad, y mantequilla fría en dados. La chalota se puede dejar dentro o colar, según la casa: colada, la salsa es más limpia; con la chalota, tiene más textura. Ninguna de las dos opciones autoriza a hacer el montaje a las once de la mañana. El ácido y el vino se pueden adelantar. La mantequilla, no. El jefe mira el cuenco de mantequilla porque es el coste visible de cada ración, y mira también si la partida lo monta por costumbre en platos que no lo llevaban.</p>
-<p>En el plato se ve el corte antes que el defecto de sabor. Una salsa entera es opaca, lisa y se queda en el pescado. Una salsa cortada brilla como aceite y deja el ácido desnudo. Si el comensal mueve el bocado y la grasa se separa en el plato, el pase ha llegado tarde. Se sirve en el minuto. Se avisa a sala de que no espera en la barra. Y si el turno no puede sostener ese minuto, el beurre blanc no debería estar en la carta de ese servicio: hay salsas que aguantan y esta no es una de ellas.</p>
-<figure><img src="/blog-assets/2026/05/mayonesa-cuerpo.jpg" alt="Beurre blanc servido al momento sobre un pescado, opaco y sin charco de grasa en el plato." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se escribe y cómo se busca</h2>
-<p>Se busca beurre blanc, salsa beurre blanc, mantequilla blanca y burro blanco. No es la mantequilla avellana, que es mantequilla tostada hasta el color de la nuez, ni el beurre manié, que lleva harina. Quien pregunta si se puede guardar, si se corta o si lleva nata está delante de esta emulsión inestable de chalota, vino blanco, vinagre y mantequilla fría.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/montar-al-burro">Montar al burro</a></li>
-<li><a href="https://aichef.pro/blog/emulsion-concepto-definicion">Qué es una emulsión</a></li>
-<li><a href="https://aichef.pro/blog/ligado-con-yema">Ligado con yema</a></li>
-<li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Entrar como invitado</a></p></aside>
+El beurre blanc es una salsa francesa de mantequilla. Se hace reduciendo chalota picada con vino blanco y vinagre, y después se incorpora mantequilla fría poco a poco, batiendo, hasta conseguir una salsa cremosa, de color marfil y con un punto ácido. Su nombre significa «mantequilla blanca» y nació en el valle del Loira, cerca de Nantes, para acompañar pescados de río. Hoy es una de las salsas clásicas del pescado blanco, el marisco y verduras como los espárragos.
+
+## Qué es el beurre blanc
+
+Técnicamente es una emulsión: la grasa de la mantequilla queda repartida en gotas muy finas dentro del poco líquido que deja la reducción. A diferencia de la holandesa o la bearnesa, no lleva yema de huevo que la estabilice, y por eso es más delicada. Si se calienta demasiado, la mantequilla se separa y la salsa se corta. Si se enfría, se espesa y queda grasienta.
+
+En un restaurante, la reducción se prepara con antelación, durante la mise en place. La mantequilla se incorpora poco antes del servicio y la salsa se mantiene templada al baño maría hasta el momento de salsear el plato.
+
+## Origen
+
+La tradición atribuye el beurre blanc a Clémence Lefeuvre, cocinera de un restaurante a orillas del Loira, en Saint-Julien-de-Concelles, a finales del siglo XIX. La versión más contada dice que intentaba hacer una bearnesa, olvidó las yemas y descubrió que la mantequilla montada sobre la reducción funcionaba igual de bien. Sea o no cierta la anécdota, la salsa se hizo famosa acompañando el lucio del Loira, y en la zona todavía se la conoce también como beurre nantais.
+
+## Ingredientes y proporciones
+
+Para unos 200 ml de salsa, suficiente para cuatro raciones:
+
+| Ingrediente | Cantidad |
+| --- | --- |
+| Chalota picada muy fina | 50 g (dos chalotas medianas) |
+| Vino blanco seco | 100 ml |
+| Vinagre de vino blanco | 50 ml |
+| Mantequilla sin sal, muy fría y en dados | 200 g |
+| Sal y pimienta blanca | Al gusto |
+
+El vino tradicional es un Muscadet, pero sirve cualquier blanco seco y sin madera. Como la mantequilla es casi todo el volumen de la salsa, conviene usar una de buena calidad, con un contenido de grasa alto.
+
+## Cómo se hace, paso a paso
+
+<figure><img src="/blog-assets/2026/05/beurre-blanc-cazo.jpg" alt="Cazo con salsa beurre blanc recién montada, varillas, dados de mantequilla fría y chalota picada" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+
+**1. Haz la reducción.** Pon la chalota, el vino y el vinagre en un cazo pequeño de fondo grueso. Cuécelo a fuego medio hasta que solo queden unas dos cucharadas de líquido. La chalota debe quedar tierna y húmeda, nunca seca ni dorada, porque amargaría la salsa.
+
+**2. Incorpora la mantequilla.** Baja el fuego al mínimo. Añade dos o tres dados de mantequilla y bate con unas varillas hasta que casi se hayan fundido. Repite con el resto, siempre poco a poco y sin dejar de batir. La salsa irá ganando cuerpo y brillo. Si notas que el cazo se calienta demasiado, apártalo unos segundos del fuego y sigue batiendo.
+
+**3. Termina y sirve.** Sazona con sal y pimienta blanca. Puedes colarla para obtener una textura completamente lisa o dejar la chalota, que le da más sabor. Sírvela enseguida o mantenla templada.
+
+## Por qué se corta y cómo arreglarlo
+
+El beurre blanc se corta casi siempre por exceso de calor: si la salsa hierve o supera los 60 °C aproximadamente, la grasa se separa y se ve aceitosa. También se corta si se añade la mantequilla demasiado deprisa o si está blanda en lugar de fría.
+
+Si se ha cortado, no la tires. Pon una cucharada de agua fría o de nata en un cazo limpio y ve añadiendo la salsa cortada poco a poco, batiendo, como si montaras de nuevo. En la mayoría de los casos la emulsión se recupera.
+
+## Cómo mantenerla durante el servicio
+
+Lo ideal es hacerla justo antes de servir. Si necesitas tenerla preparada un rato, guárdala en un recipiente al baño maría con agua caliente, a unos 55–60 °C, o en un termo, y bátela de vez en cuando. No la recalientes al fuego directo.
+
+## Variantes
+
+**Con nata.** Añadir una cucharada de nata a la reducción antes de la mantequilla hace la salsa más estable y fácil de mantener. Es un truco muy habitual en restaurantes, aunque el sabor queda algo menos limpio que el del beurre blanc clásico.
+
+**Al limón.** Se sustituye parte del vinagre por zumo de limón, o se añaden unas gotas al final. Queda más fresca y va muy bien con pescados delicados y vieiras.
+
+**Beurre rouge.** Es la misma técnica con vino tinto en lugar de blanco. Se sirve con pescados de sabor más intenso y con algunas carnes.
+
+## Con qué servirla
+
+Es perfecta con pescados blancos como la lubina, el rodaballo, el lenguado o la merluza, y con salmón, vieiras, langostinos o espárragos. También acompaña bien unas verduras al vapor o un huevo escalfado.
+
+## Preguntas frecuentes
+
+**¿Qué diferencia hay entre el beurre blanc y la salsa holandesa?**
+Las dos son emulsiones calientes de mantequilla con un toque ácido, pero la holandesa lleva yemas de huevo, que la hacen más estable y espesa. El beurre blanc solo lleva la reducción y la mantequilla, por lo que es más ligero y más delicado.
+
+**¿Lleva nata el beurre blanc?**
+La receta clásica no. Algunos cocineros añaden un poco a la reducción para que la salsa aguante mejor, pero es una variante.
+
+**¿Se puede preparar con antelación?**
+La reducción sí: se puede hacer horas antes y guardarla en la nevera. La mantequilla conviene incorporarla poco antes de servir.
+
+**¿Se puede recalentar?**
+No es recomendable, porque se corta con facilidad. Si se ha enfriado y solidificado, caliéntala muy suavemente al baño maría mientras bates.
+
+**¿Cómo se pronuncia?**
+Aproximadamente «bur blan», con la última sílaba nasal.
+
+**¿Cómo se llama en español?**
+Se traduce como «mantequilla blanca», aunque en cocina y en las cartas de restaurante se usa casi siempre el nombre francés.
