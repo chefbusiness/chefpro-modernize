@@ -1,8 +1,8 @@
 ---
-title: "Demi-glace: qué es, y demiglace no es otra salsa"
-description: "La demi-glace, o demiglace, es salsa española y fondo oscuro reducidos hasta napar. No es la glace de viande ni un caldo reducido a ojo."
+title: "Demi-glace: qué es y cómo se hace"
+description: "La demi-glace es salsa española y fondo oscuro a partes iguales, reducidos y terminados con jerez. Te explicamos la proporción de Escoffier, el paso a paso y en qué se distingue de la glace."
 pubDate: 2026-02-20
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
 image: /blog-assets/2026/05/demi-glace-destacada.jpg
 imageAlt: "Demi-glace brillante napando"
@@ -18,113 +18,117 @@ translations:
   nl: "demi-glace"
 definedTerm:
   name: "Demi-glace"
-  description: "La demi-glace es la reducción de salsa española y fondo oscuro hasta que el conjunto napa. Arrastra el roux oscuro de la española y el colágeno del fondo. También se escribe demi glace, demiglace y salsa demi-glace: es la misma salsa. No es la glace de viande, que va más lejos y puede no llevar harina."
+  description: "La demi-glace es la salsa española afinada con un último hervor y un poco de vino generoso. En A Guide to Modern Cookery (1907), Auguste Escoffier junta la misma cantidad de salsa española y de fondo oscuro, reduce esa mezcla hasta dejar un poco menos de la mitad y, fuera del fuego, la termina con jerez seco. Con 500 ml de cada líquido, el punto son 450 ml de salsa y 50 ml de jerez. El nombre significa medio glaseado. Demi-glace, demi glace y demiglace son tres formas de escribir la misma salsa."
 faq:
-  - q: "¿Se puede espesar una demi-glace con maicena o harina si queda demasiado líquida?"
-    a: "En la receta clásica no hace falta, porque la ligazón la proporciona el roux de la salsa española y el colágeno del fondo. Si por algún motivo la reducción no ha llegado a la textura deseada, es preferible continuar reduciendo suavemente antes que añadir un espesante externo que enturbie el brillo y altere el sabor final. Solo en casos de emergencia se podría recurrir a un poco de maicena diluida en agua fría, pero el resultado nunca será el mismo que con una reducción paciente."
-  - q: "¿Cuánto tiempo se puede conservar la demi-glace en la nevera o el congelador?"
-    a: "Refrigerada en envase hermético y bien cubierta, aguanta perfectamente entre 5 y 7 días si se ha mantenido la cadena de frío correctamente. En congelador, porcionada en bolsas al vacío o en cubiteras herméticas, puede durar hasta 6 meses sin perder cualidades notables. El truco profesional es enfriarla rápido en baño de agua y hielo antes de guardarla, para frenar cualquier desarrollo bacteriano y preservar al máximo sus aromas."
+  - q: "¿Demi-glace, demi glace y demiglace son la misma salsa?"
+    a: "Sí. Son tres grafías del mismo nombre francés. La salsa es la reducción de salsa española y fondo oscuro terminada con un vino generoso."
   - q: "¿Se puede hacer una demi-glace sin salsa española?"
-    a: "Sí, existen adaptaciones modernas que omiten la salsa española y parten directamente de un fondo oscuro muy concentrado, ligándolo con una reducción de vino tinto y, a veces, con un toque de fécula. El resultado se acerca más a un fondo reducido enriquecido, pero no alcanza la untuosidad ni el carácter tostado del roux que define a la demi-glace clásica. Si buscas el perfil de sabor original y la textura napante, la salsa española sigue siendo insustituible."
-  - q: "¿Qué tipo de carne da mejor resultado para el fondo de la demi-glace?"
-    a: "La ternera es, con diferencia, la opción más versátil y la que proporciona un sabor limpio y profundo a la vez. Los huesos de cañón y las rodajas de codillo aportan una cantidad ideal de colágeno, mientras que un poco de rabo o morcillo enriquecen el gusto. Para caza (liebre, venado) se puede optar por fondos más específicos, pero en el día a día de un restaurante, una buena demi-glace de ternera es la navaja suiza que sirve para casi todo."
-  - q: "¿Qué textura debe tener una demi-glace bien hecha al enfriarse?"
-    a: "En frío (nevera) debe cuajar como una gelatina firme, temblorosa pero que no se deshace con facilidad. Al tacto, ha de notarse sedosa y elástica, sin grumos ni cristales de hielo. Esta consistencia es la garantía de que la concentración de colágeno y la reducción han sido las adecuadas. Una demi-glace que en frío queda líquida o granulada indica un fallo en la proporción de huesos, un exceso de agua inicial o una reducción insuficiente."
+    a: "Muchas cocinas reducen solo el fondo oscuro hasta que cubre la cuchara y le llaman demi-glace. Esa salsa no lleva la harina ni el tomate de la española, así que sabe más a glace corta. La de Escoffier parte de la salsa española."
+  - q: "¿En qué se diferencia de la glace de viande?"
+    a: "La glace es fondo oscuro reducido hasta un jarabe, sin harina. La demi-glace de Escoffier lleva la salsa española, se queda en el punto de una salsa y se termina con jerez o, en la edición francesa de 1903, con Madeira."
+  - q: "¿Hay que salar el fondo antes de reducir?"
+    a: "No. Escoffier pide los fondos sin sal, porque al reducir se concentran. Si el fondo ya va salado, la demi-glace queda salada antes de tiempo. Prueba al final y corrige entonces."
+  - q: "¿Cuánto dura en la nevera?"
+    a: "Enfríala rápido, con la superficie tapada o pintada con un poco de mantequilla para que no haga piel. En la nevera úsala en los días siguientes. Lo que sobre, congélalo en porciones pequeñas."
+  - q: "¿Qué textura tiene en frío?"
+    a: "Espesa y llega a cuajar en una gelatina blanda, porque concentra la gelatina del fondo y además lleva el almidón del roux de la española. Al calentarla, vuelve a ser salsa."
+faqInBody: true
 ---
-<p data-glosario-lead="1">La demi-glace es la reducción de salsa española y fondo oscuro hasta que el conjunto napa. Arrastra el roux oscuro de la española y el colágeno del fondo. También se escribe demi glace, demiglace y salsa demi-glace: es la misma salsa. No es la glace de viande, que va más lejos y puede no llevar harina.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/calculadora-food-cost-restaurante?utm_source=web&amp;utm_medium=glosario&amp;utm_content=demi-glace-concepto-y-definicion">Abrir la calculadora de food cost</a></p></aside>
-<p>La <strong>demi-glace</strong> es una salsa madre derivada de la cocina clásica francesa que se obtiene reduciendo a la mitad una mezcla de <strong>salsa española</strong> y <strong>fondo oscuro</strong> hasta conseguir una textura densa, brillante y con gran poder napante. Si te preguntas <strong>qué es la demi-glace</strong> en el día a día de una cocina profesional, imagina el concentrado definitivo de sabor cárnico: una preparación que realza guisos, carnes asadas y sirve de cimiento para un sinfín de salsas compuestas.</p>
-<h2>¿Qué es la demi-glace exactamente?</h2>
-<p>Hablamos de uno de los pilares de la gastronomía que, aunque bebe directamente del recetario de Auguste Escoffier, sigue siendo hoy una herramienta insustituible en cualquier restaurante que se tome en serio los fondos. La demi-glace no es un simple caldo reducido; es el matrimonio perfecto entre una <a href="https://aichef.pro/blog/salsa-espanola-concepto-y-definicion"><strong>salsa española</strong></a> bien elaborada y un <a href="https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion"><strong>fondo oscuro</strong></a> de calidad, cocinados juntos durante horas hasta evaporar aproximadamente la mitad del líquido y concentrar al máximo su estructura gelatinosa. El resultado es un líquido viscoso, con un color caoba profundo y un brillo que indica la presencia de colágeno bien disuelto. Al probarlo, notas una intensidad umami que llena la boca sin ser pesada, un equilibrio entre el dulzor de los vegetales caramelizados y la profundidad tostada de los huesos.</p>
-<p>Para que te hagas una idea más clara, piensa en la demi-glace como un <strong>potenciador natural de sabor</strong>. No se trata de una salsa terminada que viertes directamente sobre el plato (salvo excepciones), sino de una base que transforma un simple vino reducido o un aromático en una salsa compleja en cuestión de minutos. Esta característica la convierte en un recurso diario para chefs que necesitan consistencia y velocidad durante el servicio sin sacrificar calidad.</p>
-<div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
-<p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
-<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza por 10€/mes.</p>
-<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=demi-glace-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro &rarr;</a></div>
+
+La demi-glace es la salsa española afinada con un último hervor y un poco de vino generoso. En A Guide to Modern Cookery (1907), Auguste Escoffier junta la misma cantidad de salsa española y de fondo oscuro, reduce esa mezcla hasta dejar un poco menos de la mitad y, fuera del fuego, la termina con jerez seco. Con 500 ml de cada líquido, el punto son 450 ml de salsa y 50 ml de jerez. El nombre significa medio glaseado. Demi-glace, demi glace y demiglace son tres formas de escribir la misma salsa.
+
+## Qué es la demi-glace
+
+La [salsa española](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion) es un fondo oscuro ligado con roux tostado y tomate, y luego despumado durante horas. La demi-glace toma esa salsa y la concentra otra vez con más [fondo oscuro](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion). Por eso lleva harina, tomate y el sabor del fondo reducido. Cuando está bien hecha, cubre el dorso de una cuchara: ese punto se llama [napar](https://aichef.pro/blog/napar-una-salsa).
+
+En muchas cocinas de ahora se salta la española. Se reduce el fondo hasta que napa y a esa reducción también se le llama demi-glace. Es una salsa útil, con otro sabor: no lleva el roux ni el tomate de la española, y se acerca a una [glace de viande](https://aichef.pro/blog/glace-de-viande) que todavía se puede servir a cucharadas. Si cambias una por otra en una receta, pruébala antes.
+
+## Origen
+
+En Le Guide Culinaire (1903), Escoffier define la demi-glace como la española llevada al último despumado, el aclarado largo que le quita impurezas. La termina fuera del fuego con medio decilitro de Madeira muy seco por litro de salsa, es decir 50 ml. Añade el vino fuera del fuego porque, si hierve, se le va el aroma.
+
+La edición inglesa de 1907, A Guide to Modern Cookery, escribe la reducción con números. Una medida de salsa española y otra de fondo oscuro de primera se reducen hasta dejar nueve décimas de una medida, y fuera del fuego se completan con una décima de jerez seco. Esa es la proporción de la receta de abajo. El vino cambia de una edición a la otra: Madeira en francés, jerez en inglés.
+
+## Ingredientes y proporciones
+
+Para unos 500 ml de salsa terminada, que es la mitad de la fórmula de 1907:
+
+| Ingrediente | Cantidad |
+| --- | --- |
+| Salsa española | 500 ml |
+| Fondo oscuro, sin sal | 500 ml |
+| Jerez seco, fuera del fuego | 50 ml |
+
+El fondo de Escoffier es el que llama estouffade, hecho con jarrete de ternera y de buey. Un fondo de ternera solo da una salsa más clara. No lo sales antes de reducir.
+
+Si sigues la edición francesa de 1903, el vino es Madeira muy seco: 50 ml por cada litro de salsa ya reducida, también fuera del fuego.
+
+## Cómo se hace, paso a paso
+
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Reducción de demi-glace en cazo" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
-<h2>Cómo se elabora una demi-glace clásica paso a paso</h2>
-<p>Hacer demi-glace es un acto de paciencia. No hay atajos que funcionen igual. Aunque cada casa tiene ligeras variaciones, el proceso tradicional se resume en tres grandes etapas que suelen ocupar, como mínimo, dos días de cocción intermitente.</p>
-<h3>1. Partir de buenos cimientos: fondo oscuro y salsa española</h3>
-<p>El punto de partida son dos preparaciones indispensables. El <strong>fondo oscuro</strong> (de ternera, normalmente) se consigue tostando huesos y verduras en el horno, desglasando con agua o vino y cociendo a fuego muy lento entre 8 y 12 horas. La <strong>salsa española</strong> añade la estructura ligada: un roux tostado oscuro que se humedece con ese mismo fondo y se enriquece con tomate concentrado, hierbas y a veces un toque de cerdo o panceta. Ambas son el esqueleto de la receta; si alguna flojea, la demi-glace lo acusará sin remedio.</p>
-<h3>2. Reducción larga y paciente</h3>
-<p>Se mezclan partes iguales de salsa española y fondo oscuro fresco –todavía sin salar en exceso– en una marmita amplia. La clave está en mantener un hervor suave pero constante, retirando impurezas y espumas superficiales cada media hora con un cucharón o una espumadera. Esta reducción suele durar entre 6 y 10 horas, durante las cuales el líquido pasa de tener un aspecto más bien opaco a volverse translúcido, brillante y con una consistencia que <strong>nape ligeramente el dorso de una cuchara</strong> sin escurrir. En muchas cocinas se acelera ligeramente el hervor al final para forzar la emulsión de las gelatinas con el roux, consiguiendo esa textura sedosa que caracteriza a una demi-glace bien ejecutada.</p>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=demi-glace-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+**1. Junta la española y el fondo.** Pon los dos líquidos en un cazo ancho de fondo grueso. Un cazo ancho evapora antes que uno estrecho y alto.
 
-<h3>3. Colado, reposo y conservación</h3>
-<p>Terminada la reducción, el líquido se pasa por un colador fino o una estameña y se deja atemperar. Al enfriar, debe tener el comportamiento de una gelatina firme pero temblorosa, señal de que la concentración de colágeno es la correcta. Se envasa en caliente o se solidifica en moldes para porcionar. En hostelería, es habitual tenerla envasada al vacío y refrigerada durante semanas, o congelada en cubos bien protegidos durante meses, para ir dosificando según las necesidades de cada servicio.</p>
-<h2>Usos profesionales de la demi-glace en cocina</h2>
-<p>Quien la ha trabajado sabe que la demi-glace es una auténtica <strong>bala de sabor</strong> en la trastienda de la cocina. Estos son los escenarios donde brilla de verdad:</p>
-<ul>
-<li><strong>Salsas de acompañamiento para carnes rojas y caza:</strong> la bordelesa (con vino tinto, chalota y tuétano), la al vino de Oporto, la pimienta verde o la clásica salsa de trufa. Todas parten de desglasar la sartén de la carne y añadir un cucharón de demi-glace más un elemento distintivo.</li>
-<li><strong>Salsas derivadas para platos emblemáticos:</strong> la popular salsa Robert (con mostaza y cebolla), la cazadora, la charcutera o la diable se montan en minutos si tienes la base lista.</li>
-<li><strong>Finalización de guisos y braseados:</strong> un fondo de ternera al vino tinto, un estofado de rabo de toro o unas carrilleras ganan untuosidad y brillo al incorporar demi-glace en los últimos 20 minutos de cocción.</li>
-<li><strong>Potenciador silencioso de rellenos y jugos:</strong> en patés en croûte, terrinas o incluso para ligar rellenos de carne picada, un par de cucharadas elevan el conjunto sin necesidad de más ingredientes.</li>
-<li><strong>Personalización rápida durante el pase:</strong> con un fondo de demi-glace en el cazo, cualquier chef puede improvisar una salsa a medida con los jugos de la proteína del momento y un aromático distinto cada día.</li>
-</ul>
-<h2>Diferencia entre demi-glace y glace de viande</h2>
-<p>Es muy habitual que estos dos términos se confundan, incluso entre estudiantes de cocina. Aunque comparten origen, el resultado final y su papel en cocina son bastante distintos. Esta tabla comparativa te ayudará a verlo de un vistazo:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th scope="col">Característica</th>
-<th scope="col">Demi-glace</th>
-<th scope="col">Glace de viande</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Base de partida</strong></td>
-<td>Mezcla de salsa española + fondo oscuro</td>
-<td>Exclusivamente fondo oscuro de carne (ternera o caza)</td>
-</tr>
-<tr>
-<td><strong>Ligazón</strong></td>
-<td>Sí, contiene roux (harina y grasa tostada)</td>
-<td>No, es un fondo sin ningún espesante añadido</td>
-</tr>
-<tr>
-<td><strong>Textura final</strong></td>
-<td>Viscosa, aterciopelada, napante gracias al roux y al colágeno</td>
-<td>Extremadamente densa, casi como un sirope o un caramelo salado</td>
-</tr>
-<tr>
-<td><strong>Nivel de reducción</strong></td>
-<td>Hasta la mitad del volumen inicial aproximadamente</td>
-<td>Mucho mayor; un litro de fondo puede quedar en apenas 100-150 ml</td>
-</tr>
-<tr>
-<td><strong>Uso principal</strong></td>
-<td>Base versátil para salsas compuestas y finalización de platos</td>
-<td>Potenciador en gotas; toque de sabor puntual para caldos, risottos o reducciones muy cortas</td>
-</tr>
-<tr>
-<td><strong>Sabor</strong></td>
-<td>Profundo, equilibrado, con notas tostadas y de verduras caramelizadas</td>
-<td>Concentrado cárnico casi puro, más agresivo y salino si no se dosifica bien</td>
-</tr>
-</tbody>
-</table></div>
-<p>En resumen, la <strong>glace de viande</strong> es un ingrediente casi extremo de concentración, mientras que la demi-glace es una preparación más equilibrada y lista para ser transformada en multitud de salsas. En muchas cocinas se complementan: la demi-glace como base diaria y la glace como recurso de emergencia para reforzar un fondo que haya quedado corto de intensidad.</p>
-<h2>¿Merece la pena hacer demi-glace hoy en día?</h2>
-<p>Con las prisas del servicio moderno, algunos cocineros jóvenes se preguntan si vale la pena dedicar dos días a una elaboración que no se sirve directamente al comensal. La respuesta de cualquier chef con oficio es un sí rotundo. La demi-glace casera aporta un brillo, una textura envolvente y una profundidad de sabor que ningún concentrado comercial puede replicar por completo. Además, es una inversión de tiempo que rinde mucho: de un lote bien hecho puedes sacar decenas de servicios y salsas distintas, multiplicando la eficiencia en cocina sin sacrificar la identidad de cada plato.</p>
-<p>Si estás empezando, preparar tu primera demi-glace es también una masterclass práctica sobre el comportamiento de las gelatinas, el manejo de las temperaturas y la construcción de sabor por capas. Entenderla te da el control total sobre cualquier reducción que hagas el resto de tu vida profesional.</p>
+**2. Reduce a fuego suave.** Lleva la mezcla a un hervor lento y espuma de vez en cuando. Quiere bajar de 1 litro a 450 ml. No hace falta un reloj: marca el nivel al empezar, o viértela en un medidor cuando veas que ha bajado bastante. Si el hervor es violento, la salsa salta, se enturbia y se pega en el borde.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=demi-glace-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+**3. Cuélala.** Pásala por un colador fino o por un paño, sin apretar el poso.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Heladería</h3><p class="mt-2 text-muted-foreground">Obrador, vitrina, mantecadora, exposición.</p><a href="/kit-tareas-heladeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=demi-glace-concepto-y-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Heladería por €12</a></aside>
+**4. Añade el jerez fuera del fuego.** Incorpora los 50 ml, remueve y prueba. Si la vas a guardar, pinta la superficie con un poco de mantequilla o tápala en contacto, para que no forme piel.
 
-<h2>Sigue aprendiendo</h2>
-<ul>
-<li><a href="https://aichef.pro/blog/reaccion-de-maillard">Reacción de Maillard: concepto y definición</a></li>
-<li><a href="https://aichef.pro/blog/umami-concepto-y-definicion">Umami: concepto y definición</a></li>
-</ul>
+## Por qué falla y cómo arreglarlo
 
-<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
-<p>Se busca demi-glace, demi glace, demiglace, demi glacé y salsa demi-glace. Son la misma salsa. No es la glace de viande, que lleva el fondo más lejos y puede no llevar harina. Si el bote no dice de qué está hecho, el nombre no basta para fiarse.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/glace-de-viande">Qué es la glace de viande</a></li>
-<li><a href="https://aichef.pro/blog/napar-una-salsa">Qué es napar</a></li>
-<li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Qué es el roux</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=demi-glace-concepto-y-definicion">Entrar como invitado</a></p></aside>
+Si el fondo iba salado, la reducción queda salada y no hay marcha atrás cómoda. Alárgala con un poco de fondo sin sal y vuelve a probar, sabiendo que también se diluye el sabor.
+
+Si después de reducir sigue líquida, el fondo tenía poca gelatina o la española estaba corta. Sigue a fuego suave hasta que cubra la cuchara. Espesarla con más harina la acerca a un [roux](https://aichef.pro/blog/roux-concepto-y-definicion) nuevo y le cambia el sabor.
+
+Si se pega o amarga, el fuego estaba alto cuando ya quedaba poca salsa. Esa amargura no se tapa. Hay que empezar otra vez y bajar el fuego en cuanto la salsa espese.
+
+Si añades el jerez y luego la hierves, el vino se queda plano. Escoffier lo dice con claridad: el hervor se lleva el aroma.
+
+## En el servicio
+
+Se prepara antes del servicio, en la mise en place, y se mantiene caliente al baño maría, sin que vuelva a hervir. En cada plato se usa a cucharadas, sola o para reforzar un jugo. Si solo le falta brillo, se monta con un poco de mantequilla fría en el momento de servir.
+
+Lo que sobre se enfría rápido, removiendo para que no haga piel, y se guarda en la nevera. Úsalo en los días siguientes. En porciones pequeñas se congela bien: una pastilla basta para un par de salsas.
+
+## Variantes
+
+**Solo con fondo.** Reducir fondo oscuro sin sal hasta que nape, sin española. Es la demi-glace de muchos restaurantes. Queda más limpia de harina y más corta de tomate.
+
+**Con Madeira.** Es el acabado de la edición francesa de 1903: 50 ml de Madeira muy seco por litro, fuera del fuego. El jerez seco es el de la edición inglesa.
+
+**De ternera o de buey.** El fondo de ternera da una salsa más suave. El que lleva buey, como la estouffade de Escoffier, sabe más intenso. Los dos se trabajan igual.
+
+## Para qué se usa
+
+Es la base de las salsas oscuras pequeñas: lionesa, bordelesa, cazadora y las que se montan en el último minuto con el jugo de una pieza. También alarga una reducción de asado cuando la pieza ha soltado poco. Una cucharada dentro de un estofado le da cuerpo sin tener que hervirlo otra hora.
+
+## Para seguir en el glosario
+
+- [Salsa española](https://aichef.pro/blog/salsa-espanola-concepto-y-definicion)
+- [Fondo oscuro](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion)
+- [Glace de viande](https://aichef.pro/blog/glace-de-viande)
+- [Roux](https://aichef.pro/blog/roux-concepto-y-definicion)
+- [Napar una salsa](https://aichef.pro/blog/napar-una-salsa)
+- [Reacción de Maillard](https://aichef.pro/blog/reaccion-de-maillard)
+- [Umami](https://aichef.pro/blog/umami-concepto-y-definicion)
+
+## Preguntas frecuentes
+
+**¿Demi-glace, demi glace y demiglace son la misma salsa?**
+Sí. Son tres grafías del mismo nombre francés. La salsa es la reducción de salsa española y fondo oscuro terminada con un vino generoso.
+
+**¿Se puede hacer una demi-glace sin salsa española?**
+Muchas cocinas reducen solo el fondo oscuro hasta que cubre la cuchara y le llaman demi-glace. Esa salsa no lleva la harina ni el tomate de la española, así que sabe más a glace corta. La de Escoffier parte de la salsa española.
+
+**¿En qué se diferencia de la glace de viande?**
+La glace es fondo oscuro reducido hasta un jarabe, sin harina. La demi-glace de Escoffier lleva la salsa española, se queda en el punto de una salsa y se termina con jerez o, en la edición francesa de 1903, con Madeira.
+
+**¿Hay que salar el fondo antes de reducir?**
+No. Escoffier pide los fondos sin sal, porque al reducir se concentran. Si el fondo ya va salado, la demi-glace queda salada antes de tiempo. Prueba al final y corrige entonces.
+
+**¿Cuánto dura en la nevera?**
+Enfríala rápido, con la superficie tapada o pintada con un poco de mantequilla para que no haga piel. En la nevera úsala en los días siguientes. Lo que sobre, congélalo en porciones pequeñas.
+
+**¿Qué textura tiene en frío?**
+Espesa y llega a cuajar en una gelatina blanda, porque concentra la gelatina del fondo y además lleva el almidón del roux de la española. Al calentarla, vuelve a ser salsa.

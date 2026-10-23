@@ -1,8 +1,8 @@
 ---
-title: "Monter au beurre: mount a hot sauce with cold butter"
-description: "Monter au beurre means whisking cold butter into a hot sauce, off a hard boil, for shine and roundness. It is not beurre blanc, and it is not beurre manié."
+title: "Monter au beurre: what it is and how to do it"
+description: "Monter au beurre means whisking cold butter into a hot sauce, off the boil, for shine. Here is the name, Escoffier's amount, and how to keep the butter from separating."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glossary
 tags: ["monter au beurre", "butter", "sauce"]
 lang: en
@@ -18,37 +18,117 @@ translations:
   nl: "saus-monteren-met-boter"
 definedTerm:
   name: "Monter au beurre"
-  description: "Monter au beurre means you whisk cold butter into a hot sauce, off a hard boil, for shine and roundness. It is a finish on the pass, not a new sauce. It is not beurre blanc, and it is not beurre manié, which carries raw flour. You polish a sauce you already have."
+  description: "Monter au beurre means whisking cold butter, in pieces, into a sauce that is already hot, with the pan off the boil. The butter disperses through the sauce, gives it shine, and rounds the flavor. The French name means to mount with butter. In sauce allemande, Escoffier adds 100 g of fresh butter per liter at the moment of serving, off the heat."
 faq:
   - q: "Is monter au beurre the same as beurre blanc?"
-    a: "No. Beurre blanc is a sauce in its own right: shallot, white wine and vinegar, reduced, then mounted with cold butter. Monter au beurre takes a sauce you already have and whisks cold butter into it, off a hard boil, for shine and roundness. There is no new acid base. If you wanted the pale butter sauce, say beurre blanc. If you wanted a last polish, say mount it."
-  - q: "Is mounting with butter the same as beurre manié?"
-    a: "No. Beurre manié is soft butter and flour in equal parts by weight, kept raw and added to tighten. Monter au beurre has no flour. The butter is there for gloss and a rounder flavour, not for starch. If the sauce is thin in body and you need it to cling, the raw paste is the other gesture."
-  - q: "Why must the butter be cold, and the pan off a hard boil?"
-    a: "Cold butter melts into the sauce as you whisk, instead of collapsing into oil the moment it lands. A hard boil pushes the fat back out, and the sauce looks greasy on the plate. Keep the pan hot but quiet, add the butter in pieces, and stop when the surface shines."
-  - q: "Can you mount every sauce on the menu?"
-    a: "You can, and that is how the margin disappears. Butter on every plate, whether the dish was written for it or not, turns a finish into a habit. Taste first. A sharp or thin-flavoured sauce may want the roundness. A sauce that is already rich may only want a small piece, or none."
+    a: "Both use whisked butter, and the job is different. Beurre blanc is built entirely from a reduction of shallot, wine, and vinegar, and the butter is most of the volume. Monter au beurre finishes a sauce you already had: a jus, a reduction, a demi-glace."
+  - q: "Is it the same as beurre manié?"
+    a: "Beurre manié contains flour. You knead it raw and use it to thicken. Monter au beurre is butter alone. It gives shine and softness, and it does not replace a thickener if the sauce is thin."
+  - q: "Why does the butter go in cold, and the pan stay off the boil?"
+    a: "Cold, it melts little by little and you have time to disperse it. If it is already soft or melted, it falls in as fat and is harder to emulsify. If the pan is boiling, the fat separates and the surface turns oily."
+  - q: "How much butter do you add?"
+    a: "In sauce allemande, Escoffier uses 100 g per liter at the moment of serving. For 250 ml, that is 25 g. Start there. If the sauce already shines and tastes round, stop. Past that point it only gets heavier."
+  - q: "Can you boil it after mounting?"
+    a: "The boil separates the butter. If the sauce also contains yolk, Escoffier sets a lower limit: 60°C (140°F). Mount it when the plate is about to go out."
+  - q: "What does monter au beurre mean?"
+    a: "It means to mount with butter. You whisk cold butter into a hot sauce. In Spanish kitchens the same finish is called montar al burro, and burro in that phrase means butter, from the French beurre. It has nothing to do with the animal."
+faqInBody: true
 ---
 
-<p>Monter au beurre means you whisk cold butter into a hot sauce, off a hard boil, for shine and roundness. It is a finish on the pass, not a new sauce. It is not beurre blanc, and it is not beurre manié, which carries raw flour. You polish a sauce you already have.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/role/head-chef?utm_source=web&amp;utm_medium=glosario&amp;utm_content=monter-au-beurre">Open the head chef page</a></p></aside>
-<h2>What it is, on the line</h2>
-<p>Mount with butter when the sauce is already itself. The pan is hot, the reduction tastes finished, and the body is close. You take cold butter and whisk it in off a hard boil, in pieces the sauce can take. Monter au beurre is that whisk. The butter should disappear and leave a shine, a rounder mouth, and a little more cling. If the pan is roaring, the butter splits out as fat and the sauce looks greasy. Quiet heat, a constant whisk, then stop. The gloss is the signal, not a bigger lump of butter.</p>
-<p>This is not beurre blanc. Beurre blanc starts with shallot, white wine and vinegar, and the butter is the body of that sauce. Monter au beurre starts with a sauce you already have, and the butter is the last polish. It is also not beurre manié. There is no flour in the butter. If you need starch, you are in a different gesture. Cooks blur the three names because butter is in all of them. The head chef should not let that blur reach the pass. A mounted jus, a beurre blanc and a manié-tightened stew are different plates.</p>
-<h2>What it is not</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesture</th><th>What it does</th><th>What it does not do</th></tr></thead><tbody><tr><td>Whisk in cold butter</td><td>Adds shine and roundness</td><td>Does not go into a hard boil</td></tr><tr><td>Finish a sauce you have</td><td>Polishes the pan on the pass</td><td>Is not beurre blanc</td></tr><tr><td>Butter only, no flour</td><td>Gloss without starch</td><td>Is not beurre manié</td></tr><tr><td>Send it straight away</td><td>The gloss stays with the plate</td><td>Does not hold through a long wait</td></tr></tbody></table></div>
+Monter au beurre means whisking cold butter, in pieces, into a sauce that is already hot, with the pan off the boil. The butter disperses through the sauce, gives it shine, and rounds the flavor. The French name means to mount with butter. In sauce allemande, Escoffier adds 100 g of fresh butter per liter at the moment of serving, off the heat.
+
+## What monter au beurre is
+
+The sauce already exists. It might be a roasting jus, a wine reduction, or a [demi-glace](https://aichef.pro/en/blog/what-is-demi-glace). It wants shine, or it has turned a little harsh from reducing. Cold butter, whisked off the boil, melts into very fine droplets and stays suspended. That is a small emulsion inside a sauce that already had body.
+
+It does not truly thicken. If the sauce runs across the plate like a broth, the butter will shine and the sauce will still run. Thickening needs flour, starch, or a longer reduction. [Beurre manié](https://aichef.pro/en/blog/beurre-manie) is the one with flour. This finish has none.
+
+A [beurre blanc](https://aichef.pro/en/blog/beurre-blanc) is a different sauce. Beurre blanc is the whole sauce: shallot, wine, vinegar, and a large amount of butter. Monter au beurre is a finish, measured in grams.
+
+## Where it comes from
+
+In French, monter au beurre means to mount with butter. Spanish kitchens calqued beurre as burro, so the same finish is called montar al burro. Burro, in that phrase, is the butter. It is worth saying once, because the Spanish name sounds like something else.
+
+In sauce allemande, in Le Guide Culinaire (1903), the same sauce he later calls parisienne in Ma Cuisine (1934), Escoffier separates the butter from the rest of the cooking. The sauce is reduced and strained first. The 100 g of fresh butter per liter go in just as you serve. The 1907 English edition repeats the idea: if you mount ahead of time, the butter separates. And once the sauce is already thickened with yolk, it should not go above 60°C (140°F) after that fat.
+
+## Ingredients and proportions
+
+For a sauce of about four servings, or for mounting a little at a time:
+
+| Ingredient | Amount |
+| --- | --- |
+| Hot sauce, already reduced and salted | 250 ml (about 1 cup) |
+| Unsalted butter, very cold, in cubes | 25 g (a scant 2 tablespoons) |
+
+That is the allemande ratio, 100 g per liter, applied to a small pan. Salted butter makes it hard to taste clearly, because the sauce should already be seasoned.
+
+## How to do it, step by step
+
 <figure><img src="/blog-assets/2026/05/holandesa-cuerpo.jpg" alt="A cook whisking cold butter into a hot sauce at the pass, the surface turning glossy under the pass lights." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How it behaves on the pass</h2>
-<p>On the pass, monter au beurre is one of the last things your hands do. The plate is called, the sauce is in a small pan, and you have a moment to make it look alive. Cold butter from mise en place, not a warm block that is already soft and oily, goes in piece by piece. You whisk until the surface turns glossy and the flavour tastes rounder, then you send it. Hold the sauce and the gloss dies, or the butter and the liquid let go of each other. This finish waits for the guest who is already at the table.</p>
-<p>The margin lives in how much butter you mount, and in whether the sauce needed it. Butter is a store you can burn through, plate after plate, until the dish carries more fat than it was written for. The head chef watches that habit. A sauce that is already rich does not need a heavy mount to taste complete. A sauce that is sharp or thin in flavour may need the roundness. Taste before you add, and taste after the first piece. Mise en place is cold butter, ready for the dishes you will actually mount, not a tub you attack because the plate looks bare.</p>
-<p>The guest sees shine before they taste roundness. A mounted sauce catches the light on the meat and smells of butter without tasting only of butter. Overdo it and the plate feels heavy, and the stock and the reduction step back. Skip it on a dish that was written with a mount, and the sauce looks dull and the flavour stays angular. Tell the station which sauces get mounted and which do not. Consistency across the pass is worth more than one brilliant plate the next cook cannot repeat. Name the gesture when you hand the pan over.</p>
+
+**1. Bring the sauce to the right point before the butter.** It should taste right, and it should coat a spoon if that is the body you want. Butter will not fix a watery sauce or a salty one. Salt also tastes stronger once the fat goes in.
+
+**2. Take the pan off the boil.** The liquid can be very hot. It cannot be boiling.
+
+**3. Whisk the butter in two or three additions.** Add a few cubes and whisk until they disappear. Continue with the rest. The surface goes from dull to shining. If the pan stays too hot, move it off for a moment and keep whisking.
+
+**4. Taste and serve.** If it shines and the flavor is round, stop. Serve at once. A later boil undoes the work.
+
+## Why it separates, and how to fix it
+
+It separates from too much heat, from soft butter, or from adding the butter all at once. You will see an oily edge, or a sauce that shines in the middle and swims in fat at the rim.
+
+If it has just separated, try this. Put a spoonful of cold water or cream in a clean pan and whisk the sauce into it, a little at a time, off the heat. It often comes back together. If it has been separated for a while and has also boiled, the repair is harder: the fat has already let go, and you emulsify it again with that cold liquid, without promising it will look as it did at the start.
+
+More butter in a sauce that has already split will not repair it. It has to come back together first.
+
+## During service
+
+Cut the butter into cubes and leave it in the refrigerator until the moment you need it. The sauce waits unmounted. You mount it by the portion, or by a short batch, when the plate is about to go out. A large pot mounted at the start of service will be oily at the end.
+
+If the sauce contains yolk, keep Escoffier's 60°C (140°F) after the butter. Below that, hold it over a water bath. Above it, the yolk and the fat separate together.
+
 <figure><img src="/blog-assets/2026/05/bearnesa-cuerpo.jpg" alt="A plated jus with a soft shine on sliced meat, the butter dish still cold on the station behind the pass." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How people search for it</h2>
-<p>People search monter au beurre and mount with butter for the same finish: cold butter whisked into a hot sauce, off a hard boil, for shine and roundness. You will also see mount a sauce, monter au beurre technique, and finish with butter. Do not let those searches land on beurre blanc or on beurre manié. One is its own emulsion of shallot, wine, vinegar and butter. The other is raw flour in soft butter. This gesture has no flour and no separate reduction.</p>
-<ul>
-<li><a href="https://aichef.pro/en/blog/beurre-blanc">What beurre blanc is</a></li>
-<li><a href="https://aichef.pro/en/blog/beurre-manie">What beurre manié is</a></li>
-<li><a href="https://aichef.pro/en/blog/what-is-an-emulsion">What an emulsion is</a></li>
-<li><a href="https://aichef.pro/en/blog/category/glossary">More from the glossary</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://enapp.aichef.pro/guest?utm_source=web&amp;utm_medium=glosario&amp;utm_content=monter-au-beurre">Enter as a guest</a></p></aside>
+
+Do not mount more than you will send. Leftovers, if you boil them the next day to "save" them, let go of the butter. Keep them in the refrigerator and warm them later very gently, whisking, or accept that yesterday's shine does not come back whole.
+
+## Variations
+
+**A knob on the plate.** Instead of mounting the whole pot, put a cube of butter into the spoon of sauce, on the plate, and stir. The effect is the same on a small scale, and you do not risk the rest.
+
+**Mounting a beurre blanc.** There the butter is almost the whole sauce, about 200 g for a small reduction, and the finish is only a small part of that. The whisking, with cold butter, is similar. The recipe is different.
+
+**With cream.** It rounds the sauce and steadies it a little, and the flavor is cream. In some sauces Escoffier uses both: cream during the reduction, and butter at the end.
+
+## What you use it for
+
+Meat jus, wine sauces, demi-glace, and fish reductions that already have body and want shine. Also to soften a sauce that has come out a little sharp or salty, as long as the fault is small. The fat covers a sharp edge. A sauce that is badly over-salted stays over-salted.
+
+If what you see on the spoon is a thin sauce, do not mount it yet. Reduce it, or thicken it with whatever that sauce needs, and mount at the end.
+
+## More from the glossary
+
+- [Beurre blanc](https://aichef.pro/en/blog/beurre-blanc)
+- [Beurre manié](https://aichef.pro/en/blog/beurre-manie)
+- [What an emulsion is](https://aichef.pro/en/blog/what-is-an-emulsion)
+- [The glossary](https://aichef.pro/en/blog/category/glossary)
+
+## Frequently asked questions
+
+**Is monter au beurre the same as beurre blanc?**
+Both use whisked butter, and the job is different. Beurre blanc is built entirely from a reduction of shallot, wine, and vinegar, and the butter is most of the volume. Monter au beurre finishes a sauce you already had: a jus, a reduction, a demi-glace.
+
+**Is it the same as beurre manié?**
+Beurre manié contains flour. You knead it raw and use it to thicken. Monter au beurre is butter alone. It gives shine and softness, and it does not replace a thickener if the sauce is thin.
+
+**Why does the butter go in cold, and the pan stay off the boil?**
+Cold, it melts little by little and you have time to disperse it. If it is already soft or melted, it falls in as fat and is harder to emulsify. If the pan is boiling, the fat separates and the surface turns oily.
+
+**How much butter do you add?**
+In sauce allemande, Escoffier uses 100 g per liter at the moment of serving. For 250 ml, that is 25 g. Start there. If the sauce already shines and tastes round, stop. Past that point it only gets heavier.
+
+**Can you boil it after mounting?**
+The boil separates the butter. If the sauce also contains yolk, Escoffier sets a lower limit: 60°C (140°F). Mount it when the plate is about to go out.
+
+**What does monter au beurre mean?**
+It means to mount with butter. You whisk cold butter into a hot sauce. In Spanish kitchens the same finish is called montar al burro, and burro in that phrase means butter, from the French beurre. It has nothing to do with the animal.
