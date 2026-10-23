@@ -105,13 +105,13 @@ Si el servicio es largo, liga la salsa por tandas. Una salsa con yema no debe pa
 
 ## Para qué se usa
 
-Se usa en veloutés, blanquetas, fricasés y salsas de pescado como la normanda, y también en cremas de verduras que se van a servir enseguida. Si la salsa tiene que quedar sin huevo, o transparente y brillante, es mejor ligarla con una [papilla de almidón](https://aichef.pro/blog/papilla-de-almidon).
+Se usa en veloutés, blanquetas, fricasés y salsas de pescado como la normanda, y también en cremas de verduras que se van a servir enseguida. Si la salsa tiene que quedar sin huevo, o transparente y brillante, es mejor [ligar con maicena](https://aichef.pro/blog/ligar-con-maicena).
 
 ## Para seguir en el glosario
 
 - [Emulsión](https://aichef.pro/blog/emulsion-concepto-definicion)
 - [Beurre blanc](https://aichef.pro/blog/beurre-blanc)
-- [Papilla de almidón](https://aichef.pro/blog/papilla-de-almidon)
+- [Ligar con maicena](https://aichef.pro/blog/ligar-con-maicena)
 - [El glosario](https://aichef.pro/blog/categoria/glosario)
 
 ## Preguntas frecuentes

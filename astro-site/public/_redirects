@@ -4,6 +4,9 @@
 # la del subdominio va antes de la genérica blog.aichef.pro/:slug.
 /blog/maillard-concepto-y-definicion-2   /blog/reaccion-de-maillard   301
 /blog/maillard-concepto-y-definicion-2/  /blog/reaccion-de-maillard   301
+# Glosario (2026-10-23): la ficha «papilla de almidón» pasa a «ligar con maicena».
+/blog/papilla-de-almidon   /blog/ligar-con-maicena   301
+/blog/papilla-de-almidon/  /blog/ligar-con-maicena   301
 # ── Productos digitales: entregables renombrados ──
 # Netlify resuelve por PRIMERA COINCIDENCIA, así que estas reglas van ANTES de
 # cualquier «# Genérica» del fichero. Los enlaces de descarga viajan dentro de

@@ -116,7 +116,7 @@ Una salsa que todavía sabe a harina no se arregla con sal ni con nata. Le falta
 
 **Con aceite.** Útil en un roux muy oscuro, del tipo que se usa en algunos guisos largos, porque aguanta más fuego que la mantequilla. El sabor es menos fino. La proporción sigue siendo en peso.
 
-**Sin gluten.** La harina de trigo lleva gluten, así que no sirve. Escoffier ya señalaba que se puede hacer un roux con almidón puro, con menos cantidad y con mucho más cuidado. En la práctica, para una salsa sin gluten es más sencillo usar una [papilla de almidón](https://aichef.pro/blog/papilla-de-almidon) de arrurruz o de fécula.
+**Sin gluten.** La harina de trigo lleva gluten, así que no sirve. Escoffier ya señalaba que se puede hacer un roux con almidón puro, con menos cantidad y con mucho más cuidado. En la práctica, para una salsa sin gluten es más sencillo usar un [ligado con maicena](https://aichef.pro/blog/ligar-con-maicena) de arrurruz o de fécula.
 
 ## Para qué se usa
 
@@ -132,7 +132,7 @@ Sirve para hacer la bechamel, el velouté y la salsa española, y todas las sals
 - [Mayonesa](https://aichef.pro/blog/mayonesa-concepto-y-definicion)
 - [Salsas madre](https://aichef.pro/blog/salsas-madre-cocina-guia)
 - [Beurre manié](https://aichef.pro/blog/beurre-manie)
-- [Papilla de almidón](https://aichef.pro/blog/papilla-de-almidon)
+- [Ligar con maicena](https://aichef.pro/blog/ligar-con-maicena)
 - [Demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion)
 
 ## Preguntas frecuentes

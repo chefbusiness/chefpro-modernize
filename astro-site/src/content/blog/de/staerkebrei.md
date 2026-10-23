@@ -9,7 +9,7 @@ lang: de
 image: /blog-assets/2026/05/espanola-destacada.jpg
 imageAlt: "Stärke wird in kalter Flüssigkeit glatt gerührt, der Becher steht neben der simmernden Sauce"
 translations:
-  es: "papilla-de-almidon"
+  es: "ligar-con-maicena"
   en: "starch-slurry"
   fr: "liaison-a-la-fecule"
   de: "staerkebrei"

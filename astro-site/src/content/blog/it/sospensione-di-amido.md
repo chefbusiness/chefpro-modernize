@@ -9,7 +9,7 @@ lang: it
 image: /blog-assets/2026/05/espanola-destacada.jpg
 imageAlt: "Amido sciolto in liquido freddo in una ciotola, senza grumi, prima della pentola"
 translations:
-  es: "papilla-de-almidon"
+  es: "ligar-con-maicena"
   en: "starch-slurry"
   fr: "liaison-a-la-fecule"
   de: "staerkebrei"

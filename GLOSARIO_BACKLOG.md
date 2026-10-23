@@ -105,7 +105,7 @@ Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en lo
 - invertir azúcar — semilla
 - gelatina — semilla
 - pectina — semilla
-- agar — publicado (`es/papilla-de-almidon`)
+- agar — publicado (`es/ligar-con-maicena`)
 - isomalt — semilla
 
 #### Chocolatería Creativa · librería `libreria-de-prompts-para-chocolateria-creativa-ai` — 4 publicados, 38 semillas
@@ -320,7 +320,7 @@ Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en lo
 - lecitina de soja — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
 - metilcelulosa — semilla
 - gelificación vegetal — semilla
-- almidón — publicado (`es/papilla-de-almidon`)
+- almidón — publicado (`es/ligar-con-maicena`)
 - fibra — semilla
 - texturizado de guisante — semilla
 - caldo vegetal — semilla
@@ -649,7 +649,7 @@ Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en lo
 - invertir azúcar — semilla
 - gelatina — semilla
 - pectina — semilla
-- agar — publicado (`es/papilla-de-almidon`)
+- agar — publicado (`es/ligar-con-maicena`)
 - isomalt — semilla
 
 #### Pizzero Consultor Pro · librería `libreria-de-prompts-para-pizzero-consultor-pro-ai` — 7 publicados, 35 semillas
@@ -3255,7 +3255,7 @@ Definiciones nuevas del clúster de salsas, emulsiones y cocina de fondos, en lo
 - esferificación — publicado (`es/esferificacion-concepto-y-definicion`)
 - alginato — semilla
 - calcic — semilla
-- agar — publicado (`es/papilla-de-almidon`)
+- agar — publicado (`es/ligar-con-maicena`)
 - goma xantana — publicado (`es/goma-xantana-concepto-definicion`)
 - goma garrofín — semilla
 - lecitina — publicado (`es/lecitina-de-soja-concepto-y-definicion`)
