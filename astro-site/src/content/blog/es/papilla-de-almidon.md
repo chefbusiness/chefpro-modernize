@@ -1,13 +1,13 @@
 ---
-title: "Papilla de almidón: cómo ligar una salsa sin perder el brillo"
-description: "La papilla de almidón es fécula dispersa en líquido frío y añadida a la salsa que simmer. Espesa. También apaga el brillo que guardan una reducción o un buen roux."
+title: "Papilla de almidón: qué es y cómo se usa"
+description: "La papilla de almidón es fécula desleída en líquido frío para espesar una salsa. Te explicamos la cantidad, por qué va en frío y qué almidón usar."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
 tags: ["almidon", "fecula", "salsas"]
 lang: es
-image: /blog-assets/2026/05/espanola-destacada.jpg
-imageAlt: "Un cuenco con almidón disperso en líquido frío, sin grumos, junto a un cazo de salsa que simmer."
+image: /blog-assets/2026/05/papilla-de-almidon-destacada.jpg
+imageAlt: "Maicena desleída en agua fría en un vaso, con un cazo de salsa oscura al fondo"
 translations:
   es: "papilla-de-almidon"
   en: "starch-slurry"
@@ -18,37 +18,112 @@ translations:
   nl: "zetmeelpap"
 definedTerm:
   name: "Papilla de almidón"
-  description: "La papilla de almidón es fécula o almidón disperso en un líquido frío, que después se vierte en la salsa a hervor suave para espesarla. En frío no forma grumos; en caliente gelifica. Espesa deprisa. A cambio, suele dejar la salsa mate y con una boca de almidón si te pasas. No sustituye a un roux ni a una reducción."
+  description: "La papilla de almidón es almidón (maicena, fécula de patata o arrurruz) desleído en un poco de líquido frío, que se añade batiendo a una salsa caliente para espesarla. En cocina también se dice simplemente «ligar con maicena». Para una salsa normal, una buena cantidad de partida es 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Escoffier usaba arrurruz para su jus de veau lié: 30 g por cada litro de fondo de ternera reducido."
 faq:
   - q: "¿Por qué se deslíe en frío?"
-    a: "Porque el almidón en un líquido caliente gelifica por fuera y deja el centro seco: eso es el grumo. En frío se separa en el líquido y, al entrar en la salsa caliente, espesa de manera pareja. El polvo directo al cazo no se perdona batiendo después."
+    a: "Porque el almidón, si cae seco sobre una salsa caliente, gelifica por fuera y encierra polvo seco por dentro. Eso es el grumo. El líquido frío separa los granos. Al entrar en la salsa caliente, se hinchan todos a la vez."
+  - q: "¿Cuánto almidón hace falta?"
+    a: "Para un cuerpo medio, 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Es una cantidad de partida: hierve un minuto y comprueba con la cuchara. Escoffier usa 30 g de arrurruz por litro para su jugo de ternera."
   - q: "¿Es lo mismo que un roux?"
-    a: "No. El roux cocina harina en grasa antes de mojar, y ese cocinado cambia el sabor y el color. La papilla es almidón y líquido frío, sin ese tueste. Espesa más rápido y suele velar el brillo. Son correcciones distintas, para platos distintos."
-  - q: "¿Cuándo no hay que usarla?"
-    a: "Cuando la salsa se vende por el brillo de una reducción, de una glace o de un buen roux. La fécula apaga ese reflejo y deja boca de almidón si te pasas. En esos cazos, el arreglo es seguir reduciendo o usar el espesante que la ficha ya había elegido."
-  - q: "¿Por qué el jefe desconfía del bote de fécula?"
-    a: "Porque arregla el síntoma y esconde el fondo flojo. Una partida que liga así todos los jugos deja de reducir y el comensal come el velo. El bote tiene sitio en las fichas que lo piden. No es la herramienta universal del pase."
+    a: "Los dos espesan gracias al almidón, pero se usan de forma distinta. El roux se hace cociendo harina en grasa antes de añadir el líquido, y aporta el sabor de esa cocción. La papilla es solo almidón y líquido frío, sin grasa, y se añade al final."
+  - q: "¿Maicena, arrurruz o fécula de patata?"
+    a: "La maicena necesita un hervor corto para espesar y perder el sabor a crudo, y deja la salsa algo turbia. El arrurruz es el que usa Escoffier para un jugo transparente. La fécula de patata espesa mucho y se vuelve gomosa si la cueces o la bates de más. Con cualquiera de ellas, deja de añadir en cuanto la salsa nape."
+  - q: "¿Se puede echar el almidón a puñados sobre la salsa?"
+    a: "No, si quieres una salsa sin grumos. Haz primero la papilla y viértela en la salsa en hilo, batiendo. Prepárala justo antes de usarla: si reposa, el almidón se va al fondo y hay que volver a batirla."
+  - q: "¿Cuándo no conviene?"
+    a: "Cuando quieres el sabor de un roux tostado, cuando la salsa se va a congelar o cuando todavía tiene que cocer mucho tiempo, porque la maicena pierde fuerza con un hervor largo. En esos casos es mejor espesar con roux desde el principio."
+faqInBody: true
 ---
 
-<p>La papilla de almidón es fécula o almidón disperso en un líquido frío, que después se vierte en la salsa a hervor suave para espesarla. En frío no forma grumos; en caliente gelifica. Espesa deprisa. A cambio, suele dejar la salsa mate y con una boca de almidón si te pasas. No sustituye a un roux ni a una reducción.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=papilla-de-almidon">Ver la ficha de chef jefe de cocina</a></p></aside>
-<h2>Qué es, en la práctica</h2>
-<p>El almidón en seco, echado a un líquido caliente, se encapsula: por fuera gelifica y por dentro queda polvo. Por eso se dispersa antes en agua fría, vino frío o un poco del mismo líquido ya templado, hasta que no quedan grumos en el cuenco. Esa papilla entra en la salsa que se mueve, a hervor suave, y se bate. En unos momentos el líquido pasa de transparente a más corto y, a menudo, de brillante a velado. Ese velo es la firma. Si la salsa debía relucir como una reducción, la papilla acaba de cambiar el plato.</p>
-<p>No es un roux. El roux cocina la harina en grasa antes del líquido, y ese tueste forma parte del sabor. No es un beurre manié, que lleva la harina cruda dentro de mantequilla. La papilla es solo almidón y líquido frío. Espesa más por menos cantidad, y por eso tienta en el pase: un cazo fino se arregla sin montar una base. La tentación es el problema. Una salsa que se corrige así todos los días es una salsa que nunca se redujo, y el comensal come el velo en lugar del fondo.</p>
-<h2>Con qué no se confunde</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesto</th><th>Qué hace</th><th>Qué no hace</th></tr></thead><tbody><tr><td>Dispersar en frío</td><td>Evita el grumo</td><td>No se echa el polvo al cazo</td></tr><tr><td>Verter al hervor suave</td><td>El almidón gelifica y espesa</td><td>Un hervor violento la estropea</td></tr><tr><td>Parar en cuanto napa</td><td>Corrige un líquido corto</td><td>No devuelve el brillo de una reducción</td></tr><tr><td>Decirlo en el pase</td><td>Es un arreglo, no la base</td><td>No es un roux ni un beurre manié</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/roux-cuerpo.jpg" alt="Un cocinero vierte la papilla en un hilo sobre la salsa y bate para que no se formen grumos." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se comporta en el pase</h2>
-<p>Hay platos donde es el camino escrito. Un jugo ligero que debe quedar corto y translúcido, un relleno, una salsa de un guiso que no busca el brillo de la demi-glace. Ahí la papilla es honesta, siempre que se haga bien y se cueza lo justo para quitar el sabor a crudo. Hay platos donde no lo es: una glace, un beurre blanc, una reducción de asado que la casa vende por su brillo. Meter fécula ahí para salir del paso se ve en la lámpara del pase, aunque desde la cocina el cazo parezca «ya espeso».</p>
-<p>La mise en place no es un bote de maicena abierto al lado del fuego, con la cuchara húmeda dentro. Es un almidón elegido, seco, y el hábito de dispersarlo cada vez. La papa, el maíz o la flecha no se comportan igual en la boca, y la casa decide cuál admite. Cambiarlo a mitad del servicio porque se acabó el bote cambia el plato. El jefe prefiere una salsa un punto más suelta y brillante que una salsa pastosa que napa a la fuerza. El cuerpo se puede perseguir; el brillo, una vez matado, no vuelve.</p>
-<p>El comensal no dice «papilla». Dice que la salsa está rara, o no dice nada y deja el jugo en el plato. Una capa mate, un sabor a cereal y una sensación que se pega al paladar delatan el exceso. Una capa corta, limpia y todavía brillante puede ser un uso medido. La partida tiene que saber en qué fichas entra y en cuáles la respuesta al cazo fino es seguir reduciendo o coger el beurre manié si esa era la corrección prevista. Improvisar fécula en todo es una firma, y no es la que la casa quiere.</p>
-<figure><img src="/blog-assets/2026/05/bechamel-cuerpo.jpg" alt="Dos cucharas de salsa: una brillante de reducción y otra más mate después de ligar con almidón." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se escribe y cómo se busca</h2>
-<p>Se busca papilla de almidón, slurry, maicena desleída, fécula disuelta y cómo ligar una salsa con maicena. También aparece como papilla de fécula. No es un roux ni un beurre manié. El gesto es siempre el mismo: almidón en líquido frío, luego al cazo que simmer, y parar antes de que el brillo se apague del todo.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Qué es el roux</a></li>
-<li><a href="https://aichef.pro/blog/beurre-manie">Qué es el beurre manié</a></li>
-<li><a href="https://aichef.pro/blog/napar-una-salsa">Qué es napar</a></li>
-<li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=papilla-de-almidon">Entrar como invitado</a></p></aside>
+La papilla de almidón es almidón (maicena, fécula de patata o arrurruz) desleído en un poco de líquido frío, que se añade batiendo a una salsa caliente para espesarla. En cocina también se dice simplemente «ligar con maicena». Para una salsa normal, una buena cantidad de partida es 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Escoffier usaba arrurruz para su jus de veau lié: 30 g por cada litro de fondo de ternera reducido.
+
+## Qué es la papilla de almidón
+
+El almidón espesa cuando sus granos se calientan dentro de un líquido: absorben agua, se hinchan y la salsa gana cuerpo. Si los granos entran secos y en bloque, los de fuera se hinchan, forman una piel y los de dentro siguen crudos. Por eso se deslíen antes en líquido frío, hasta que no queda ni un grumo. Esa mezcla es la papilla.
+
+A diferencia del [roux](https://aichef.pro/blog/roux-concepto-y-definicion), la papilla no lleva grasa ni se tuesta, así que apenas cambia el sabor de la salsa. Eso sí, si te pasas de cantidad, la salsa queda pastosa y pierde sabor. El [beurre manié](https://aichef.pro/blog/beurre-manie) también se añade al final, pero lleva mantequilla y harina de trigo; la papilla es solo almidón y líquido.
+
+## Origen
+
+Escoffier usa este método en Le Guide Culinaire (1903) para su jus de veau lié, un jugo de ternera ligado. Reduce 4 litros de fondo de ternera claro hasta dejarlos en 1 litro, lo liga con 30 g de arrurruz desleído en unas cucharadas de fondo frío y lo cuela. Elige el arrurruz porque deja el jugo transparente.
+
+## Ingredientes y proporciones
+
+Para 250 ml de salsa, con almidón de maíz:
+
+| Ingrediente | Cantidad |
+| --- | --- |
+| Almidón de maíz | 8 g |
+| Agua o fondo, bien fríos | 30 ml (2 cucharadas) |
+| Salsa que quieres espesar | 250 ml |
+
+Hierve la salsa uno o dos minutos y comprueba si [napa](https://aichef.pro/blog/napar-una-salsa). Si todavía está líquida, añade un poco más de papilla. Las salsas ácidas, con tomate o vino, pueden necesitar algo más, porque el ácido debilita el almidón. Con fécula de patata necesitarás algo menos, y con arrurruz, una cantidad parecida a la de maicena.
+
+## Cómo se hace, paso a paso
+
+**1. Deslíe el almidón.** En un bol o una taza, con el líquido frío. Bate hasta que esté liso y opaco, sin polvo en el fondo. Si lo dejas reposar, se asienta: bátalo otra vez justo antes de usarlo.
+
+**2. Viértela en hilo sobre la salsa caliente.** A fuego medio y sin dejar de batir. Si la echas de golpe y sin batir, se forman grumos.
+
+**3. Cuece lo justo.** Con maicena, lleva la salsa a un hervor suave y mantenlo uno o dos minutos, hasta que espese y pierda el sabor a crudo. El arrurruz espesa antes de hervir y no conviene cocerlo mucho, porque pierde fuerza y queda viscoso.
+
+**4. Prueba la cuchara y la sal.** El almidón no sazona. Si la salsa estaba en su punto, al espesar parece más suave. Corrige al final.
+
+## Por qué falla y cómo arreglarlo
+
+Los grumos aparecen cuando el almidón no está bien desleído o cuando no se bate la salsa al añadir la papilla. Si ya se han formado, bate con fuerza y, si no desaparecen, cuela la salsa.
+
+Si no espesa, la papilla era poca, la salsa estaba demasiado ácida, o todavía no ha llegado a hervir el almidón de maíz. Dale ese minuto. Después decide si añades más.
+
+Si espesa y, tras diez minutos hirviendo, vuelve a quedar líquida, es que la has cocido demasiado: la maicena pierde fuerza con un hervor largo. Retira la salsa del fuego. Las salsas que tienen que cocer mucho tiempo es mejor espesarlas con roux desde el principio.
+
+Si queda mate y con sabor a engrudo, has puesto demasiada. Añade un poco de fondo caliente y vuelve a probar. Ten en cuenta que una salsa ligada con almidón nunca brilla tanto como una reducción.
+
+## En el servicio
+
+La papilla se prepara en el momento o poco antes. Durante el servicio, ten la maicena medida y el agua fría a mano, y liga solo la salsa que vayas a usar. Si ligas al principio y la salsa sigue hirviendo durante horas, al final estará más líquida.
+
+Evita congelar salsas ligadas con maicena, porque al descongelarlas sueltan agua y cambian de textura.
+
+## Variantes
+
+**Arrurruz.** El de Escoffier para el jus claro. Da un brillo más limpio que el maíz. Si lo hierves fuerte mucho rato, pierde cuerpo.
+
+**Fécula de patata.** Espesa con poca cantidad y deja la salsa bastante clara. Si la bates de más o la hierves demasiado, se pone gomosa. Añádela al final y para en cuanto nape.
+
+**Maicena (almidón de maíz).** Es la más fácil de encontrar. Deja la salsa algo turbia y necesita un hervor corto para perder el sabor a crudo.
+
+**Harina desleída en agua.** También espesa, pero necesita más cocción para no saber a harina cruda, y no da el sabor de un roux, porque la harina no se ha cocinado en grasa. En una salsa oscura se nota.
+
+## Para qué se usa
+
+Para un jugo que quieres claro, para una salsa de verdura, para un salteado con su líquido y para corregir, al final, una salsa que no da tiempo a reducir. No sustituye el roux de una bechamel ni el de una española, porque esos sabores dependen de la harina cocida en grasa.
+
+Si la salsa ya napa por reducción, no hace falta añadir papilla. Solo le quitarías brillo.
+
+## Para seguir en el glosario
+
+- [Roux](https://aichef.pro/blog/roux-concepto-y-definicion)
+- [Beurre manié](https://aichef.pro/blog/beurre-manie)
+- [Napar una salsa](https://aichef.pro/blog/napar-una-salsa)
+- [El glosario](https://aichef.pro/blog/categoria/glosario)
+
+## Preguntas frecuentes
+
+**¿Por qué se deslíe en frío?**
+Porque el almidón, si cae seco sobre una salsa caliente, gelifica por fuera y encierra polvo seco por dentro. Eso es el grumo. El líquido frío separa los granos. Al entrar en la salsa caliente, se hinchan todos a la vez.
+
+**¿Cuánto almidón hace falta?**
+Para un cuerpo medio, 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Es una cantidad de partida: hierve un minuto y comprueba con la cuchara. Escoffier usa 30 g de arrurruz por litro para su jugo de ternera.
+
+**¿Es lo mismo que un roux?**
+Los dos espesan gracias al almidón, pero se usan de forma distinta. El roux se hace cociendo harina en grasa antes de añadir el líquido, y aporta el sabor de esa cocción. La papilla es solo almidón y líquido frío, sin grasa, y se añade al final.
+
+**¿Maicena, arrurruz o fécula de patata?**
+La maicena necesita un hervor corto para espesar y perder el sabor a crudo, y deja la salsa algo turbia. El arrurruz es el que usa Escoffier para un jugo transparente. La fécula de patata espesa mucho y se vuelve gomosa si la cueces o la bates de más. Con cualquiera de ellas, deja de añadir en cuanto la salsa nape.
+
+**¿Se puede echar el almidón a puñados sobre la salsa?**
+No, si quieres una salsa sin grumos. Haz primero la papilla y viértela en la salsa en hilo, batiendo. Prepárala justo antes de usarla: si reposa, el almidón se va al fondo y hay que volver a batirla.
+
+**¿Cuándo no conviene?**
+Cuando quieres el sabor de un roux tostado, cuando la salsa se va a congelar o cuando todavía tiene que cocer mucho tiempo, porque la maicena pierde fuerza con un hervor largo. En esos casos es mejor espesar con roux desde el principio.

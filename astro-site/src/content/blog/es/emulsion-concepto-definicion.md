@@ -1,11 +1,11 @@
 ---
-title: "Emulsión: dos líquidos que no se mezclan, hasta que sí"
-description: "Una emulsión dispersa dos líquidos que no se mezclan, con yema, mostaza o lecitina. Mayonesa, holandesa y vinagreta no aguantan igual."
+title: "Emulsión: qué es y cómo se hace una mayonesa que aguante"
+description: "Una emulsión reparte dos líquidos que no se mezclan, como el aceite y el agua, con ayuda de la yema. Te explicamos la mayonesa de Escoffier, por qué se corta y cómo recuperarla."
 pubDate: 2026-03-18
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
-image: /blog-assets/2026/03/emulsion-featured.jpg
-imageAlt: "Emulsión: Concepto y Definición"
+image: /blog-assets/2026/05/emulsion-destacada.jpg
+imageAlt: "Mayonesa recién emulsionada en un bol con varillas, junto a aceite, yemas y limón"
 lang: es
 wpId: 3234
 translations:
@@ -18,206 +18,119 @@ translations:
   nl: "emulsie"
 definedTerm:
   name: "Emulsión"
-  description: "Una emulsión dispersa dos líquidos que no se mezclan, en gotas tan finas que el conjunto parece uno solo. Hace falta un emulsionante, como la yema, la mostaza o la lecitina, en la frontera de cada gota. Mayonesa, holandesa y vinagreta son emulsiones y no aguantan igual. Si se corta, las fases se han vuelto a separar."
+  description: "Una emulsión es una mezcla de dos líquidos que no se disuelven entre sí, como el aceite y el agua, en la que uno queda repartido en gotas tan finas dentro del otro que parecen un solo líquido. Para que esas gotas no vuelvan a juntarse hace falta un emulsionante, y en cocina el más eficaz es la yema de huevo. La mayonesa, la holandesa, el beurre blanc y la vinagreta son emulsiones, pero cada una aguanta de forma distinta el paso del tiempo y el calor."
 faq:
   - q: "¿Por qué se corta una emulsión?"
-    a: "La emulsión se corta cuando se añade aceite demasiado rápido o en exceso, superando la capacidad del emulsionante para estabilizar las gotas. Las moléculas de aceite se aglomeran y se separan del agua."
-  - q: "¿Se puede hacer mayonesa sin huevo?"
-    a: "Sí. La mostaza sola puede emulsionar pequeñas cantidades. Para mayonesas veganas, el aquafaba (agua de garbanzos cocidos), la lecitina de soja o la goma xantana son excelentes sustitutos de la yema."
-  - q: "¿Cuánto dura una emulsión casera?"
-    a: "Las emulsiones con yema de huevo duran 2-3 días refrigeradas. Las emulsiones con mostaza o emulsionantes vegetales pueden durar hasta una semana. La estabilidad depende del pH, temperatura y sanidad."
-  - q: "¿Por qué usar mostaza en las emulsiones?"
-    a: "La mostaza contiene mucílagos (polisacáridos) que actúan como agentes emulsionantes secundarios. Además de su sabor, ayuda a estabilizar la emulsión y prevenir que se corte fácilmente."
-  - q: "¿Puedo emulsionar con aceite de oliva virgen extra?"
-    a: "Sí, pero con moderación. El AOVE tiene compuestos polifenólicos que pueden hacer la emulsión amarga si se usa en exceso. Se recomienda usar máximo 30% AOVE y 70% aceite neutro."
+    a: "Porque las gotas de grasa se vuelven a juntar y el líquido se separa. En la mayonesa, Escoffier señala tres causas: echar el aceite demasiado rápido al principio, usarlo frío o solidificado, y pasarse de la cantidad que la yema puede sostener."
+  - q: "¿Cuánto aceite admite una yema?"
+    a: "Escoffier pone el límite en unos 70 g de aceite por yema si la salsa se va a guardar, y unos 85 g si se va a usar enseguida. En la práctica, una yema admite más si vas aligerando la salsa con unas gotas de agua o de vinagre, pero ese límite es una buena referencia para que no se corte."
+  - q: "¿Hay que hacer la mayonesa sobre hielo?"
+    a: "Escoffier dice lo contrario. El frío estropea la mayonesa y en invierno es una causa habitual de que se corte. El aceite tiene que estar a temperatura de cocina. Si está frío, tiémplalo un poco."
+  - q: "¿La mostaza es obligatoria?"
+    a: "En su mayonesa, no. La yema, el vinagre, la sal y el aceite bastan. La mostaza ayuda, y él la usa como recurso si se ha cortado poca cantidad: media cucharadita de café de mostaza puede ocupar el lugar de una yema nueva."
+  - q: "¿Se puede usar aceite de oliva virgen extra?"
+    a: "Sí, siempre que no esté frío. Un virgen extra muy verde y picante domina la salsa y puede amargar. Si buscas un sabor suave, usa un aceite de oliva suave o mezcla girasol con un poco de virgen extra."
+  - q: "¿Cuánto dura una mayonesa casera?"
+    a: "Si está hecha con huevo crudo, guárdala tapada en la nevera y consúmela en 24 horas. Si el frío la endurece, déjala unos minutos a temperatura ambiente y bátela antes de usarla."
+faqInBody: true
 ---
-<p data-glosario-lead="1">Una emulsión dispersa dos líquidos que no se mezclan, en gotas tan finas que el conjunto parece uno solo. Hace falta un emulsionante, como la yema, la mostaza o la lecitina, en la frontera de cada gota. Mayonesa, holandesa y vinagreta son emulsiones y no aguantan igual. Si se corta, las fases se han vuelto a separar.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=emulsion-concepto-definicion">Ver la ficha de chef jefe de cocina</a></p></aside>
-<p>La <strong>emulsión</strong> es una de las técnicas culinarias fundamentales que transforma dos líquidos inmiscibles —como aceite y agua— en una preparación estable y homogénea. Este proceso, aparentemente mágico, es la base de salsas icónicas como la mayonesa, la holandesa y la bearnesa, además de innumerables preparaciones modernas de la gastronomía molecular.</p>
-<p>Comprender la ciencia detrás de las emulsiones permite al cocinero no solo crear salsas perfectas, sino también recuperar emulsiones cortadas, experimentar con nuevas texturas y elevar significativamente la calidad de sus preparaciones. En este artículo del glosario culinario de AI Chef Pro, exploraremos qué es exactamente una emulsión, los tipos que existen, los emulsionantes naturales disponibles, y cómo dominar esta técnica esencial.</p>
-<h2>¿Qué es una Emulsión?</h2>
-<p>Una <strong>emulsión</strong> es un <strong>sistema coloidal formado por la dispersión de dos líquidos inmiscibles, donde una fase se distribuye en forma de pequeñas gotas microscópicas dentro de la otra fase continua</strong>. Para que esta mezcla sea estable, se requiere la presencia de un tercer componente llamado emulsionante o agente emulsionante.</p>
-<h3>Componentes de una Emulsión:</h3>
-<ul>
-<li><strong>Fase dispersa:</strong> El líquido que se distribuye en gotas (generalmente el que está en menor proporción).</li>
-<li><strong>Fase continua:</strong> El líquido que envuelve las gotas (generalmente el que está en mayor proporción).</li>
-<li><strong>Emulsionante:</strong> Sustancia que estabiliza la mezcla reduciendo la tensión superficial.</li>
-</ul>
-<h3>Tipos de Emulsiones Culinarias</h3>
-<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
-<thead>
-<tr style="background: #000000; color: white;">
-<th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Estructura</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Ejemplos</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>O/W (Aceite en Agua)</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Gotas de aceite dispersas en agua</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Mayonesa, salsa holandesa, bearnesa, leche</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>W/O (Agua en Aceite)</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Gotas de agua dispersas en aceite</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Mantequilla, margarina, vinagretas tradicionales</td>
-</tr>
-</tbody>
-</table></div>
-<h2>Historia de las Emulsiones</h2>
-<h3>Orígenes Antiguos</h3>
-<p>Las emulsiones culinarias datan de la antigüedad. Los <strong>romanos</strong> ya preparaban una salsa similar a la mayonesa llamada <em>aleatum</em>, hecha con ajo, aceite y vinagre. Sin embargo, la emulsión como técnica sistematizada floreció en la <strong>cocina francesa del siglo XVII</strong>.</p>
-<h3>El Nacimiento de la Mayonesa</h3>
-<p>Según la tradición culinaria, la <strong>mayonesa nació en 1756</strong> en Mahón, Menorca, cuando el <strong>duque de Richelieu</strong> conquistó el puerto y su chef tuvo que improvisar una salsa con los ingredientes disponibles: huevos y aceite de oliva. La salsa «mahonesa» o «mayonesa» se convirtió en un pilar de la gastronomía francesa.</p>
-<h3>Evolución hacia la Gastronomía Moderna</h3>
-<p>En el siglo XX, con el advenimiento de la <strong>cocina molecular</strong>, las emulsiones alcanzaron nuevas dimensiones. Técnicas como la <strong>esferificación</strong>, las <strong>espumas</strong> y los <strong>aireados</strong> son extensiones modernas del concepto de emulsión, permitiendo texturas y presentaciones antes impensables.</p>
-<h2>Ciencia de las Emulsiones</h2>
-<h3>Tensión Superficial</h3>
-<p>El agua y el aceite no se mezclan naturalmente debido a la <strong>tensión superficial</strong> y sus propiedades polares:</p>
-<ul>
-<li>El <strong>agua es polar</strong> (tiene carga eléctrica desbalanceada).</li>
-<li>El <strong>aceite es apolar</strong> (carga eléctrica neutra).</li>
-<li>Esta diferencia hace que se repelan mutuamente.</li>
-</ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Mega Pack Tareas Recurrentes</h3><p class="mt-2 text-muted-foreground">Los 13 kits de tareas de hostelería en un solo pack.</p><a href="/mega-pack-tareas?utm_source=blog&amp;utm_medium=banner&amp;utm_content=emulsion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Mega Pack Tareas Recurrentes por €89</a></aside>
+Una emulsión es una mezcla de dos líquidos que no se disuelven entre sí, como el aceite y el agua, en la que uno queda repartido en gotas tan finas dentro del otro que parecen un solo líquido. Para que esas gotas no vuelvan a juntarse hace falta un emulsionante, y en cocina el más eficaz es la yema de huevo. La mayonesa, la holandesa, el beurre blanc y la vinagreta son emulsiones, pero cada una aguanta de forma distinta el paso del tiempo y el calor.
 
-<h3>El Papel del Emulsionante</h3>
-<p>Los emulsionantes son moléculas <strong>anfipáticas</strong> (tienen dos extremos diferentes):</p>
-<ul>
-<li><strong>Extremo hidrofílico:</strong> Atraído por el agua (cabeza polar).</li>
-<li><strong>Extremo lipofílico:</strong> Atraído por las grasas (cola apolar).</li>
-</ul>
-<p>Esta dualidad permite que el emulsionante se posicione en la interfaz entre ambos líquidos, creando una barrera protectora alrededor de las gotas dispersas y evitando que se aglomeren y separen.</p>
-<h3>Emulsionantes Naturales en Cocina</h3>
-<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
-<thead>
-<tr style="background: #000000; color: white;">
-<th style="padding: 14px; border: 1px solid #ddd;">Emulsionante</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Componente Activo</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Usos</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Yema de huevo</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Lecitina</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Mayonesa, holandesa, bearnesa</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Mostaza</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Mucílagos</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Vinagretas, estabilizador</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Leche</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Caseína</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Salsas suaves, sopas cremas</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Miel</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Azúcares + proteínas</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Aderezos dulces, marinados</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Aquafaba</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Proteínas + almidón</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Mayonesa vegana, merengue</td>
-</tr>
-</tbody>
-</table></div>
-<h2>Cómo Crear una Emulsión Perfecta</h2>
-<h3>Ingredientes y Proporciones (Mayonesa Clásica)</h3>
-<ul>
-<li>1 yema de huevo (emulsionante).</li>
-<li>1 cucharadita de mostaza Dijon (estabilizador).</li>
-<li>250-300 ml de aceite neutro.</li>
-<li>1-2 cucharadas de vinagre o limón (acidez).</li>
-<li>Sal y pimienta al gusto.</li>
-</ul>
-<h3>Proceso Paso a Paso</h3>
-<p><strong>Paso 1: Temperatura Ambiente</strong><br /> Todos los ingredientes deben estar a 20-22°C. Temperaturas frías dificultan la emulsión; temperaturas altas pueden cocinar las yemas.</p>
-<p><strong>Paso 2: Base Emulsionante</strong><br /> En un bowl, mezclar la yema con la mostaza y una pizca de sal. Batir ligeramente hasta homogeneizar.</p>
-<p><strong>Paso 3: Añadir Aceite Got a Got</strong><br /> Comenzar añadiendo el aceite <strong>gota a gota</strong> mientras se bate vigorosamente. Esta fase inicial es crítica: las gotas deben ser mínimas para formar la estructura base.</p>
-<p><strong>Paso 4: Aumentar el Flujo</strong><br /> Una vez que la mezcla comienza a espesarse (después de ~50 ml), se puede aumentar gradualmente el flujo de aceite a un hilo fino continuo.</p>
-<p><strong>Paso 5: Incorporar Ácido</strong><br /> Cuando se ha añadido la mitad del aceite, incorporar el vinagre o limón. El ácido aporta sabor y ayuda a estabilizar la emulsión.</p>
-<p><strong>Paso 6: Completar</strong><br /> Seguir añadiendo el resto del aceite en flujo constante, batiendo siempre, hasta alcanzar la consistencia deseada.</p>
-<p><strong>Paso 7: Rectificar</strong><br /> Probar y ajustar de sal, pimienta y acidez.</p>
-<h3>Temperatura Óptima</h3>
-<p>La temperatura ideal para formar emulsiones es entre <strong>20-25°C</strong>. Por debajo de 15°C, los aceites se vuelven viscosos y dificultan la dispersión; por encima de 30°C, las yemas pueden cocinarse prematuramente.</p>
+## Qué es una emulsión
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=emulsion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+El aceite y el agua se separan en cuanto dejas de agitar. Un emulsionante se coloca en la frontera de cada gota y evita que se fusionen. La yema lo hace gracias a la lecitina y a sus proteínas. La mostaza ayuda, sobre todo en una vinagreta, porque aporta mucílago, una sustancia que también estabiliza.
 
-<h2>Problemas Comunes y Soluciones</h2>
-<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
-<thead>
-<tr style="background: #000000; color: white;">
-<th style="padding: 14px; border: 1px solid #ddd;">Problema</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Causa</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Solución</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Emulsión cortada</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Aceite añadido demasiado rápido</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Añadir nueva yema y batir la mezcla cortada poco a poco</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Demasiado espesa</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Exceso de aceite o yema grande</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Añadir agua o limón frío gota a gota mientras se bate</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Sin brillo/opaca</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Temperatura incorrecta o emulsión vieja</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Rehacer con ingredientes frescos a temperatura ambiente</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Sabor amargo</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Exceso de aceite de oliva virgen</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Usar máximo 30% aceite de oliva, resto neutro (girasol/canola)</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Líquida/fluida</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Insuficiente aceite o yema pequeña</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Seguir añadiendo aceite hasta espesarse</td>
-</tr>
-</tbody>
-</table></div>
-<h2>Recuperar una Emulsión Cortada</h2>
-<p>Cuando la emulsión «se corta» (se separa en fases), no es necesario desecharla:</p>
-<ol>
-<li><strong>Método de la nueva yema:</strong> Colocar una yema fresca en un bowl limpio y añadir la mezcla cortada poco a poco, batiendo constantemente.</li>
-<li><strong>Método del agua caliente:</strong> Añadir 1 cucharada de agua muy caliente mientras se bate vigorosamente.</li>
-<li><strong>Método del procesador:</strong> Verter la mezcla cortada en un procesador de alimentos con hoja metálica y procesar a alta velocidad.</li>
-</ol>
-<h2>Emulsiones en la Gastronomía Moderna</h2>
-<h3>Espumas y Aireados</h3>
-<p>Usando sifones o batidoras de inmersión, se crean emulsiones con aire incorporado, resultando en texturas ligeras y esponjosas. La lecitina de soja es el emulsionante preferido para estas preparaciones.</p>
-<h3>Esferificación</h3>
-<p>Técnica que utiliza alginato y cloruro cálcico para crear esferas líquidas. Cada esfera es una emulsión encapsulada donde el líquido está rodeado por una membrana gelatinosa.</p>
-<h3>Gelificaciones</h3>
-<p>La combinación de emulsiones con gelificantes (agar-agar, goma xantana) permite crear texturas que mantienen la estabilidad de la emulsión mientras aportan cuerpo y estructura.</p>
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=emulsion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+Hay emulsiones que esperan y otras que hay que servir en el momento:
 
-<h2>Conclusión</h2>
-<p>La <strong>emulsión</strong> es una técnica que ejemplifica perfectamente la intersección entre ciencia y arte culinario. Comprender los principios de tensión superficial, la función de los emulsionantes y las condiciones óptimas de temperatura permite al cocinero crear salsas consistentes, recuperar preparaciones fallidas y explorar nuevas fronteras en la gastronomía moderna.</p>
-<p>Desde la humilde mayonesa casera hasta las complejas espumas de la cocina molecular, las emulsiones siguen siendo una demostración de cómo la comprensión científica puede liberar la creatividad culinaria. Con práctica y atención a los detalles, cualquier cocinero puede dominar esta técnica fundamental.</p>
-<div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
-<h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Domina Emulsiones con AI Chef Pro</h3>
-<p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para salsas, emulsiones y técnicas avanzadas.<br />     Recetas paso a paso y solución de problemas en tiempo real.   </p>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=emulsion-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR AI CHEF MIEMBRO →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     Desde 10 €/mes • 48.733+ recetas generadas   </p>
-</p></div>
-<p><strong>¿Listo para crear emulsiones perfectas?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=emulsion-concepto-definicion">AI Chef Pro</a>.</p>
+| Salsa | Qué la mantiene | Cómo se comporta |
+| --- | --- | --- |
+| Mayonesa | Yema, aceite y un ácido, en frío | Es la más estable. Hecha con huevo crudo, se guarda en la nevera y se consume en 24 horas |
+| Holandesa y bearnesa | Yema y mantequilla, en caliente | Se sirven templadas. El hervor o un exceso de calor las separan |
+| [Beurre blanc](https://aichef.pro/blog/beurre-blanc) | Mantequilla y una reducción, sin yema | Es la más frágil. Se monta poco antes de servir |
+| Vinagreta | Aceite y vinagre, a veces mostaza | Se separa al reposar. Se agita otra vez y vuelve |
 
-<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
-<p>Se busca emulsión, emulsion con una sola ese, emulsionar y salsa emulsionada. No es ligar con fécula. Mayonesa, holandesa y vinagreta son emulsiones, y no aguantan el mismo tiempo ni el mismo calor.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/beurre-blanc">Qué es el beurre blanc</a></li>
-<li><a href="https://aichef.pro/blog/ligado-con-yema">El ligado con yema</a></li>
-<li><a href="https://aichef.pro/blog/mayonesa-concepto-y-definicion">La mayonesa</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=emulsion-concepto-definicion">Entrar como invitado</a></p></aside>
+En las tres primeras, la grasa queda en gotas dentro de la parte acuosa: es lo que se llama una emulsión de aceite en agua. La mantequilla es el caso contrario, gotas de agua repartidas en grasa. Las salsas emulsionadas son casi siempre del primer tipo.
+
+## Origen
+
+El nombre viene del latín *emulgere*, ordeñar, porque la leche es una emulsión natural. La mayonesa es el mejor ejemplo para entender cómo funciona una emulsión, y Auguste Escoffier la explica con detalle en la edición inglesa de su libro, A Guide to Modern Cookery (1907).
+
+Para seis yemas pide media onza de sal (unos 14 g), un quinto de pinta de vinagre (algo más de 110 ml), un cuarto de galón de aceite (algo más de un litro) añadido en hilo, el zumo de un limón y, al final, tres cucharadas de agua hirviendo, que según él ayudan a que la salsa no se corte. También da un límite: cada yema absorbe unos 70 g de aceite si la salsa se va a guardar, y unos 85 g si se va a usar enseguida. Pasarse de esa cantidad es, según Escoffier, una de las causas de que la mayonesa se corte.
+
+## Ingredientes y proporciones
+
+Para unos 200 g de mayonesa, respetando el límite de aceite de Escoffier:
+
+| Ingrediente | Cantidad |
+| --- | --- |
+| Yemas | 2 |
+| Sal | 2 g, una pizca generosa |
+| Vinagre de vino blanco | 15 ml, una cucharada |
+| Aceite, a temperatura ambiente | 150 g |
+| Zumo de limón | unas gotas, al final |
+| Agua hirviendo | 1 cucharadita, al final |
+
+La cantidad de aceite respeta el límite de Escoffier, entre 70 y 85 g por yema. En la práctica, una yema puede emulsionar bastante más aceite si vas aligerando la salsa con unas gotas de agua o de vinagre cuando se pone muy espesa, pero con esta proporción la mayonesa sale sin problemas.
+
+## Cómo se hace, paso a paso
+
+**1. Bate las yemas con la sal y el vinagre.** Usa un bol a temperatura ambiente, no frío. Escoffier insiste en que el vinagre esté bien mezclado con las yemas antes de empezar a añadir el aceite.
+
+**2. Añade el aceite en un hilo.** Sin parar de batir. Las primeras cucharadas, despacio. Cuando la salsa ya tiene cuerpo, puedes ir un poco más rápido. Si aflojas y se ve aceite suelto en el borde, para y bate hasta que vuelva a estar unida.
+
+**3. Termina.** Añade el zumo de limón, rectifica de sal e incorpora la cucharadita de agua hirviendo sin dejar de batir. El agua aligera un poco la salsa y, según Escoffier, la hace más estable. Tápala y guárdala en la nevera.
+
+## Por qué se corta y cómo arreglarla
+
+Escoffier enumera tres causas. El aceite entró demasiado deprisa al principio. El aceite estaba frío o solidificado. O había más aceite del que las yemas podían sostener.
+
+Para recuperarla, pon una yema nueva en un bol limpio con unas gotas de vinagre, bátala, y ve añadiendo la salsa cortada poco a poco, como si fuera aceite. Si solo se ha cortado una cantidad pequeña, media cucharadita de café de mostaza puede hacer el papel de esa yema.
+
+Tampoco hace falta trabajar sobre hielo. Escoffier dice que el frío perjudica a la mayonesa y que en invierno es una causa frecuente de que se corte. Si el aceite está frío, déjalo a temperatura ambiente antes de empezar.
+
+## En el servicio
+
+La mayonesa se puede preparar con antelación y se guarda tapada en la nevera. Si está hecha con huevo crudo, consúmela en 24 horas y no la dejes fuera de la nevera. En los restaurantes lo habitual es hacerla con yema pasteurizada.
+
+La holandesa y el beurre blanc se preparan poco antes del servicio y se mantienen templados al baño maría, sin que lleguen a hervir. La vinagreta se vuelve a batir justo antes de usarla. Cada una se maneja de una forma, y por eso no se pueden tratar igual.
+
+## Variantes
+
+**Holandesa.** En Le Guide Culinaire (1903), Escoffier reduce agua y vinagre con sal y pimienta, añade 5 yemas y monta la salsa con 500 g de mantequilla a fuego suave. Durante el montaje añade unas cucharadas de agua para aligerarla. Es una emulsión caliente: si se calienta demasiado, la yema cuaja o la mantequilla se separa. La bearnesa se hace igual, con una reducción de chalota, estragón y vinagre. Escoffier dice que, en el fondo, es una mayonesa de mantequilla, y que basta con servirla tibia.
+
+**Beurre blanc.** Reducción de chalota, vino blanco y vinagre, montada con mantequilla fría, sin yema. Por eso se corta con más facilidad que la holandesa.
+
+**Sin huevo.** La mostaza sola puede estabilizar una vinagreta. Para una salsa espesa tipo mayonesa sin yema se usa otro emulsionante, como la leche en la lactonesa o el agua de cocer garbanzos. El allioli tradicional, hecho solo con ajo y aceite, también es una emulsión sin huevo.
+
+**Con aceite de oliva.** Funciona bien si no está frío. Un virgen extra muy intenso puede dominar la salsa y dejar un punto amargo. Por eso muchas cocinas usan un aceite de oliva suave o de girasol y añaden un poco de virgen extra al final para dar aroma.
+
+## Para qué se usa
+
+La mayonesa se sirve con pescado frío, huevos y verduras, y es la base de muchas otras salsas frías. La holandesa acompaña pescados, espárragos y huevos; el beurre blanc, pescados y verduras. La vinagreta sirve para aliñar. El [ligado con yema](https://aichef.pro/blog/ligado-con-yema) también usa la yema, pero para otra cosa: espesar al final una salsa caliente que ya está hecha.
+
+## Para seguir en el glosario
+
+- [Beurre blanc](https://aichef.pro/blog/beurre-blanc)
+- [Ligado con yema](https://aichef.pro/blog/ligado-con-yema)
+- [Mayonesa](https://aichef.pro/blog/mayonesa-concepto-y-definicion)
+
+## Preguntas frecuentes
+
+**¿Por qué se corta una emulsión?**
+Porque las gotas de grasa se vuelven a juntar y el líquido se separa. En la mayonesa, Escoffier señala tres causas: echar el aceite demasiado rápido al principio, usarlo frío o solidificado, y pasarse de la cantidad que la yema puede sostener.
+
+**¿Cuánto aceite admite una yema?**
+Escoffier pone el límite en unos 70 g de aceite por yema si la salsa se va a guardar, y unos 85 g si se va a usar enseguida. En la práctica, una yema admite más si vas aligerando la salsa con unas gotas de agua o de vinagre, pero ese límite es una buena referencia para que no se corte.
+
+**¿Hay que hacer la mayonesa sobre hielo?**
+Escoffier dice lo contrario. El frío estropea la mayonesa y en invierno es una causa habitual de que se corte. El aceite tiene que estar a temperatura de cocina. Si está frío, tiémplalo un poco.
+
+**¿La mostaza es obligatoria?**
+En su mayonesa, no. La yema, el vinagre, la sal y el aceite bastan. La mostaza ayuda, y él la usa como recurso si se ha cortado poca cantidad: media cucharadita de café de mostaza puede ocupar el lugar de una yema nueva.
+
+**¿Se puede usar aceite de oliva virgen extra?**
+Sí, siempre que no esté frío. Un virgen extra muy verde y picante domina la salsa y puede amargar. Si buscas un sabor suave, usa un aceite de oliva suave o mezcla girasol con un poco de virgen extra.
+
+**¿Cuánto dura una mayonesa casera?**
+Si está hecha con huevo crudo, guárdala tapada en la nevera y consúmela en 24 horas. Si el frío la endurece, déjala unos minutos a temperatura ambiente y bátela antes de usarla.

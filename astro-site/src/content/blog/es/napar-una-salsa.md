@@ -1,13 +1,13 @@
 ---
 title: "Napar una salsa: qué es el punto nappé"
-description: "Napar es que la salsa cubra el dorso de la cuchara. Es una prueba de cuerpo en el pase, no una salsa con nombre propio. Se mira y luego se prueba."
+description: "Napar es cubrir con una salsa que se queda en el alimento. Te explicamos la prueba de la cuchara que usa Escoffier, cómo llegar a ese punto y cómo corregirlo."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
 tags: ["napar", "nappe", "salsas"]
 lang: es
-image: /blog-assets/2026/05/veloute-destacada.jpg
-imageAlt: "Una cuchara de metal recién sacada de un cazo, con el dorso cubierto por una salsa oscura que no se escurre."
+image: /blog-assets/2026/05/napar-destacada.jpg
+imageAlt: "Salsa que napa el dorso de una cuchara, con una raya limpia que no se cierra"
 translations:
   es: "napar-una-salsa"
   en: "nap-a-sauce"
@@ -18,37 +18,117 @@ translations:
   nl: "saus-napperen"
 definedTerm:
   name: "Napar"
-  description: "Napar es que la salsa cubra el dorso de la cuchara y no se escurra en un hilo claro. Es una prueba de cuerpo, en la mise en place y en el pase, no una salsa con nombre propio. Un jugo fino no napa. Una pasta puede napar y estar mal: se mira y después se prueba."
+  description: "Napar es cubrir un alimento con una salsa lo bastante espesa para que se quede encima y no se escurra en un charco. El punto se llama nappé. Escoffier da por terminada la glace de viande cuando la salsa envuelve la cuchara con una capa brillante y pegada: «qu'elle nappe la cuiller». En la práctica, se pasa un dedo por el dorso de esa cuchara. Si el surco se mantiene, la salsa napa."
 faq:
-  - q: "¿Nappé es una salsa que se puede pedir?"
-    a: "No. Nappé describe el cuerpo: la salsa cubre el dorso de la cuchara en vez de escurrirse. Un jugo, una velouté o una glace pueden llegar a ese punto, y ninguno cambia de nombre por ello. Si en una comanda pone nappé, te están pidiendo que mires la capa, no que busques un cazo que viva bajo esa palabra. Después se prueba."
-  - q: "¿Cómo se napa una salsa sin aparato?"
-    a: "Se mete una cuchara limpia, se levanta y se mira el dorso. Si la salsa lo cubre, napa. Un hilo claro que se va significa que falta cuerpo. Una manta gruesa que no se nivela significa que te has pasado. Un dedo a través de la capa debe dejar una raya que aguante. Luego se prueba. La prueba juzga si se queda. No sazona el cazo por ti."
+  - q: "¿Nappé es el nombre de una salsa?"
+    a: "No. Nappé, o «a la napa», describe el punto de espesor de una salsa, no una salsa concreta. Una demi-glace, un velouté o un jugo pueden estar a la napa, y cada uno sabe distinto."
+  - q: "¿Cómo se comprueba sin termómetro ni aparato?"
+    a: "Con una cuchara. Métela en la salsa, sácala y mira el dorso: tiene que quedar cubierto. Pasa el dedo por encima. Si el surco se mantiene y la salsa no lo cierra enseguida, está en su punto. Si se escurre y deja el metal a la vista, está líquida."
   - q: "¿Una salsa brillante siempre napa?"
-    a: "Brillo y cuerpo no son lo mismo. Un jugo fino puede relucir bajo la luz del pase y aun así correrse hasta el borde. Una papilla de almidón puede espesar hasta cubrir la cuchara y seguir mate. Napar es la capa en la cuchara, leída junto con la superficie que el plato debía tener. Una reducción y un buen roux guardan un brillo que la fécula suele apagar."
-  - q: "¿Por qué al jefe le importa una prueba de cuchara?"
-    a: "Porque el comensal ve el fallo en el plato, no en el cazo. Una salsa que parecía bien en un recipiente hondo puede inundar un plato caliente, y una salsa corregida a la carrera puede quedar pastosa. La prueba es la forma en que la partida se pone de acuerdo, antes de salir, en que el cuerpo está."
+    a: "No. El brillo y el cuerpo son cosas distintas. Una salsa montada con mantequilla puede brillar y correr por el plato, y una salsa espesada con almidón puede napar y quedar mate. Fíjate en si la salsa se queda en la cuchara."
+  - q: "¿Qué hago si se escurre?"
+    a: "Si tiene tiempo, redúcela a fuego suave. Si no lo tiene, espésala con lo que corresponda a esa salsa: un poco de roux si estás a tiempo, beurre manié o papilla de almidón si ya está hecha. Vuelve a hacer la prueba de la cuchara."
+  - q: "¿Qué hago si está demasiado espesa?"
+    a: "Añade fondo o agua caliente a cucharadas, batiendo, y vuelve a comprobarla. Una salsa demasiado espesa no cubre bien la carne: se queda amontonada encima."
+  - q: "¿Cómo se pronuncia nappé?"
+    a: "Aproximadamente «napé», con el acento en la última sílaba. Napar es el verbo en español. El francés es napper."
+faqInBody: true
 ---
 
-<p>Napar es que la salsa cubra el dorso de la cuchara y no se escurra en un hilo claro. Es una prueba de cuerpo, en la mise en place y en el pase, no una salsa con nombre propio. Un jugo fino no napa. Una pasta puede napar y estar mal: se mira y después se prueba.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=napar-una-salsa">Ver la ficha de chef jefe de cocina</a></p></aside>
-<h2>Qué es, en la práctica</h2>
-<p>Napar una salsa es ver si se va a quedar. Metes la cuchara, la levantas y miras el dorso. Si la salsa lo cubre, napa. Si cae en un chorro transparente, todavía no. No es una salsa del recetario ni un estilo de cocción. Una velouté, un jugo y una glace pueden napar o no, según hasta dónde haya llegado la reducción. Estás juzgando el líquido que tienes delante, nada más. El nombre del plato no cambia porque la cuchara haya quedado cubierta.</p>
-<p>En los buscadores aparecen napar, nappé, nappe y napar la salsa para la misma prueba, y la grafía no cambia el cazo. Si la cuchara sale casi limpia, la salsa no va a aguantar en la carne o en el pescado. Si cuelga como una manta que no se nivela, te has pasado y tienes una pasta. Un dedo a través de la capa debe dejar una raya que se quede. El jefe quiere el medio: una película que permanece, todavía brillante, que sepa a la reducción y no al almidón. Ese aspecto se aprende antes de que el pase te lo enseñe mal.</p>
-<h2>Con qué no se confunde</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesto</th><th>Qué hace</th><th>Qué no hace</th></tr></thead><tbody><tr><td>Cubrir la cuchara</td><td>Dice que hay cuerpo</td><td>No es una salsa con nombre</td></tr><tr><td>Trazar una raya</td><td>La raya se queda si napa</td><td>No mide un tiempo ni un fuego</td></tr><tr><td>Mirar otra vez en el plato</td><td>Caza la salsa que se corre</td><td>No cambia el nombre del jugo</td></tr><tr><td>Probar después de mirar</td><td>Una pasta puede napar y fallar</td><td>No perdona un espesante mate</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Un salsero sostiene la cuchara sobre un cazo ancho en el pase y mira si la salsa se queda." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se comporta en el pase</h2>
-<p>En el pase, napar es un idioma entre partidas. El salsero dice que el cazo está, y el jefe de partida fía en que la cuchara se metió, no en que se adivinó. Una salsa que se veía bien en un cazo hondo puede verse fina cuando se abre en un plato caliente, así que se mira otra vez si el plato tiene que llevar capa. No estás rebautizando la salsa. Estás diciendo que tiene cuerpo para irse con la comida hasta la mesa. Un jugo que inunda el borde falla el plato aunque el sabor sea bueno.</p>
-<p>La mise en place es donde se aprende el aspecto, no en la prisa. Reduce un cucharón de la salsa que vas a servir y mira cómo crece la capa. Una reducción y un buen roux guardan un brillo que la papilla de almidón apaga, así que la forma de ligar cambia lo que significa napar. El margen está en esa elección. Perseguir cuerpo solo con fécula deja la salsa mate. Perseguirlo solo con más reducción cuesta tiempo y género. El jefe prefiere que sepas qué camino traía la ficha antes de inventar un arreglo que cambia la salsa pedida.</p>
-<p>El comensal lee la capa sin la palabra. La salsa que se queda en la loncha, en el pescado, en una cinta que no llega al borde, se siente terminada. La que se encharca como un caldo se siente descuidada, aunque sepa bien. Tu trabajo es mandar el cuerpo que el plato tenía escrito. Si la prueba de la cuchara falla, no se discute: se reduce un poco más, o se corrige con el espesante que la casa permite, y se vuelve a mirar antes de que el plato suba. Mirar forma parte de sazonar.</p>
-<figure><img src="/blog-assets/2026/05/espanola-cuerpo.jpg" alt="Salsa en una cinta limpia sobre carne laminada, sin correrse hasta el borde de un plato caliente." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se escribe y cómo se busca</h2>
-<p>Se busca napar, nappé, nappe y napar una salsa cuando se quiere la prueba de la cuchara, no una receta con título propio. También aparecen punto nappé, que nape y cubrir el dorso de la cuchara. En la partida española el verbo es napar. Sirve para decir que un jugo, una velouté o una glace tienen cuerpo para quedarse, y para decir que eso no es el nombre de la salsa.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/demi-glace-concepto-y-definicion">Qué es la demi-glace</a></li>
-<li><a href="https://aichef.pro/blog/glace-de-viande">Glace de viande</a></li>
-<li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Qué es el roux</a></li>
-<li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=napar-una-salsa">Entrar como invitado</a></p></aside>
+Napar es cubrir un alimento con una salsa lo bastante espesa para que se quede encima y no se escurra en un charco. El punto se llama nappé. Escoffier da por terminada la glace de viande cuando la salsa envuelve la cuchara con una capa brillante y pegada: «qu'elle nappe la cuiller». En la práctica, se pasa un dedo por el dorso de esa cuchara. Si el surco se mantiene, la salsa napa.
+
+## Qué es napar
+
+El verbo viene del francés napper, cubrir. En español se dice napar, y del punto se dice que está «a la napa» o nappé. Sirve para comprobar si una salsa tiene el cuerpo justo, ya sea una [demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion), un velouté o un jugo reducido. En pastelería se usa igual: la crema inglesa está a la napa cuando cubre la cuchara, hacia los 82-84 °C.
+
+Para comprobarlo, moja una cuchara de metal en la salsa, sácala y mira el dorso. Si la salsa está líquida, se escurre y deja el metal a la vista. Si está en su punto, lo cubre con una capa uniforme. Pasa el dedo por el dorso: si el surco se mantiene y la salsa no lo vuelve a cubrir enseguida, está lista. Si está tan espesa que parece una pasta, te has pasado y tendrás que aligerarla.
+
+Escoffier usa esta misma prueba, sin el dedo, para la [glace de viande](https://aichef.pro/blog/glace-de-viande) y para la salsa alemana, que debe cubrir bien la espátula. Pasar el dedo es simplemente la forma más cómoda de ver si esa capa aguanta.
+
+## Origen
+
+Napper es un término de la cocina francesa, y nappé es el adjetivo que describe ese punto. Escoffier no inventó la palabra, pero en Le Guide Culinaire (1903) la usa para indicar cuándo una preparación está terminada: la glace de viande está lista cuando napa la cuchara, no al cabo de un tiempo determinado. En la demi-glace, la misma prueba indica si la reducción ya tiene cuerpo de salsa.
+
+No hay que confundir el punto de napa con el brillo, que muchas veces viene de la mantequilla que se añade al final. Una salsa puede brillar y estar líquida. Por eso se mira el dorso de la cuchara y, después, se prueba.
+
+## Cómo se comprueba
+
+No hay una tabla de gramos que valga para todas las salsas. El cuerpo sale de sitios distintos:
+
+| Cómo ha ganado cuerpo | Qué mirar en la cuchara |
+| --- | --- |
+| Reducción o glace | Capa brillante, lenta, que se pega |
+| [Roux](https://aichef.pro/blog/roux-concepto-y-definicion), en una bechamel o un velouté | Capa lisa, algo mate si no lleva mantequilla al final |
+| Papilla de almidón | Cubre enseguida al hervir un minuto, y puede quedar más opaca |
+| Yema y nata | Capa sedosa. Si hierve, el grano delata que la yema ha cuajado |
+
+<figure><img src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Sartén con una salsa oscura reducida y una cuchara de madera" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+
+**1. Saca una cuchara limpia.** El dorso tiene que verse. Una cuchara ya llena de salsa vieja engaña.
+
+**2. Mójala y levántala.** Cuenta un par de segundos. Si cae un hilo fino y el metal se queda desnudo, sigue cocinando o espésala.
+
+**3. Pasa el dedo.** Si el surco se mantiene limpio, la salsa napa. Si se cierra enseguida, todavía está líquida. Si no se forma surco porque la salsa parece una pasta, aligérala.
+
+**4. Prueba.** Una salsa puede napar y aun así estar salada, amarga o saber a harina cruda. Pruébala siempre antes de servirla.
+
+## Por qué falla la prueba
+
+La salsa se escurre porque le falta reducción o espesante. También puede correrse en un plato muy caliente, aunque en el cazo estuviera bien. Si emplatas en platos muy calientes, deja la salsa un poco más espesa.
+
+Si está demasiado espesa, es porque se ha reducido de más o porque se ha puesto demasiado roux o almidón. Corrígela añadiendo líquido caliente poco a poco, a cucharadas.
+
+Si ves un brillo aceitoso y un borde de grasa suelta, la mantequilla se ha separado. Vuelve a emulsionarla fuera del fuego antes de juzgar el cuerpo.
+
+## En el servicio
+
+Se comprueba en la preparación y otra vez en el momento de salsear. Una salsa que esperó al baño maría espesa al enfriarse un poco y parece que napa, y al calentarla del todo vuelve a correr. Júzgala a la temperatura a la que va a salir.
+
+Si tienes que corregirla durante el servicio, hazlo en el cazo y con poca cantidad, y repite la prueba de la cuchara. No añadas espesante directamente en el plato, porque se forman grumos.
+
+En el plato, una salsa que napa se queda sobre la carne o la verdura sin extenderse. Si llega hasta el borde, estaba demasiado líquida o has puesto demasiada.
+
+## Formas de dar cuerpo a una salsa
+
+**Por reducción.** Es el camino de un jugo o de una glace. Tarda más y concentra el sabor, también la sal.
+
+**Por roux.** Es el camino de la bechamel, el velouté y la española. El espesante va al principio.
+
+**Con beurre manié o con papilla de almidón.** Se usan al final, cuando la salsa ya está hecha y no hay tiempo de reducirla más.
+
+**Con yema.** Da un cuerpo fino y un sabor más rico. Si la salsa no lleva harina, no puede hervir después.
+
+Cada método da una textura un poco distinta, pero la prueba de la cuchara sirve para todos.
+
+## Para qué sirve el punto
+
+Sirve para saber si una salsa está lista sin depender de la opinión de cada uno. También es útil en las fichas técnicas: «reducir hasta que nape» es mucho más preciso que «reducir un rato», y cualquier cocinero puede repetir la prueba.
+
+Se aplica sobre todo a las salsas calientes y a algunas frías espesas, como la mayonesa o la crema inglesa. Una vinagreta, en cambio, no tiene que napar: solo tiene que aliñar.
+
+## Para seguir en el glosario
+
+- [Demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion)
+- [Glace de viande](https://aichef.pro/blog/glace-de-viande)
+- [Roux](https://aichef.pro/blog/roux-concepto-y-definicion)
+- [El glosario](https://aichef.pro/blog/categoria/glosario)
+
+## Preguntas frecuentes
+
+**¿Nappé es el nombre de una salsa?**
+No. Nappé, o «a la napa», describe el punto de espesor de una salsa, no una salsa concreta. Una demi-glace, un velouté o un jugo pueden estar a la napa, y cada uno sabe distinto.
+
+**¿Cómo se comprueba sin termómetro ni aparato?**
+Con una cuchara. Métela en la salsa, sácala y mira el dorso: tiene que quedar cubierto. Pasa el dedo por encima. Si el surco se mantiene y la salsa no lo cierra enseguida, está en su punto. Si se escurre y deja el metal a la vista, está líquida.
+
+**¿Una salsa brillante siempre napa?**
+No. El brillo y el cuerpo son cosas distintas. Una salsa montada con mantequilla puede brillar y correr por el plato, y una salsa espesada con almidón puede napar y quedar mate. Fíjate en si la salsa se queda en la cuchara.
+
+**¿Qué hago si se escurre?**
+Si tiene tiempo, redúcela a fuego suave. Si no lo tiene, espésala con lo que corresponda a esa salsa: un poco de roux si estás a tiempo, beurre manié o papilla de almidón si ya está hecha. Vuelve a hacer la prueba de la cuchara.
+
+**¿Qué hago si está demasiado espesa?**
+Añade fondo o agua caliente a cucharadas, batiendo, y vuelve a comprobarla. Una salsa demasiado espesa no cubre bien la carne: se queda amontonada encima.
+
+**¿Cómo se pronuncia nappé?**
+Aproximadamente «napé», con el acento en la última sílaba. Napar es el verbo en español. El francés es napper.

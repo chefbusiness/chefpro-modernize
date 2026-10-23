@@ -1,13 +1,13 @@
 ---
-title: "What is a gastrique? Caramel loosened with vinegar"
-description: "A gastrique is sugar cooked to caramel and loosened with vinegar, a sweet-sour base. It is not a vinaigrette. Build it before service and add it by taste."
+title: "Gastrique: what it is and how to make it"
+description: "A gastrique is sugar cooked to a light caramel and dissolved with vinegar. Here is the ratio from Escoffier's sauce romaine, the method, and what to use it with."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glossary
 tags: ["gastrique", "caramel", "sauce"]
 lang: en
-image: /blog-assets/2026/05/pillar-salsas-destacada.jpg
-imageAlt: "Dark amber caramel in a small heavy pan just as vinegar hits it, the surface seizing, a whisk ready in the cook's hand."
+image: /blog-assets/2026/05/gastrique-destacada.jpg
+imageAlt: "Caramel and vinegar gastrique in a saucepan, next to a plate of duck with the sauce"
 translations:
   es: "gastrique"
   en: "gastrique"
@@ -18,37 +18,114 @@ translations:
   nl: "gastrique"
 definedTerm:
   name: "Gastrique"
-  description: "A gastrique is sugar cooked to a caramel and loosened with vinegar, a sweet-sour base rather than a finished sauce. It is not a vinaigrette. You make it before service and keep it in mise en place. On the pass you add a little when a reduction wants a caramel edge."
+  description: "A gastrique is a light caramel of sugar dissolved with vinegar. It becomes a sweet-sharp syrup used as the base of sauces, especially with meat or fruit. In the sauce romaine of Le Guide Culinaire (1903), Auguste Escoffier cooks 50 g of sugar to a blond caramel and dissolves it with 150 ml of vinegar. In that book he does not use the word gastrique. He describes the preparation inside the sauce. Today it is the usual name for that base."
 faq:
-  - q: "What is a gastrique made of?"
-    a: "Sugar cooked to a caramel, then loosened with vinegar. The caramel will seize when the vinegar goes in, and you stir until it dissolves into a sharp, dark syrup. That syrup is a base, not a finished sauce and not a vinaigrette. There is no oil in the gesture."
-  - q: "Is a gastrique just vinegar and a pinch of sugar?"
-    a: "No. Sugar stirred into hot vinegar, or vinegar splashed into a pan with a little sugar, never becomes a caramel. The cooked sugar note is the point. If the caramel stayed pale, the sweetness tastes raw. If it scorched, every sauce you season with it turns bitter. Take the time while the kitchen is quiet."
-  - q: "How do you use a gastrique without making the plate sweet?"
-    a: "Treat it as a seasoning, the way you treat salt. A small spoon in a reduction, then a taste, then a decision. The guest should notice brightness and a round edge, not a dessert. Rich meat and some fruit garnishes can carry it. A delicate sauce cannot. The head chef wants the same hand on every plate, agreed in prep, not improvised when the ticket is already late."
-  - q: "Why is a gastrique not a vinaigrette?"
-    a: "A vinaigrette brings oil and acid together, and often mustard, and you taste the oil. A gastrique has no oil in its definition. It is a caramel loosened with vinegar, kept as a sweet-sour base for other sauces. Whisk oil into it and you have left the gesture."
+  - q: "Is a gastrique a vinaigrette?"
+    a: "A vinaigrette mixes vinegar and oil, and you shake it to dress a salad. A gastrique cooks sugar to a light caramel and dissolves it with vinegar. There is no oil in it. You use it as the base of a sauce."
+  - q: "Is the ratio equal parts?"
+    a: "In Escoffier's sauce romaine, no. It is 50 g of sugar and 150 ml of vinegar. Equal parts give a sweeter gastrique, which some kitchens prefer. Taste and adjust, because vinegars are not equally sharp."
+  - q: "Should the sugar go to a dark caramel?"
+    a: "No. The point in the text is a blond caramel, light amber. If you let it reach a dark brown, it turns bitter, and the vinegar will not take that bitterness away."
+  - q: "Is it the same as agrodolce?"
+    a: "Both play sweet against acid. Agrodolce is the Italian version, often vinegar with sugar or honey, raisins, and pine nuts, served with the vegetable or the meat. A gastrique is the French base of caramel and vinegar, meant to go into a sauce."
+  - q: "What do you use it with?"
+    a: "Duck, game, pork, dark jus, and fruit sauces. Escoffier uses it in sauce romaine, together with espagnole and game stock. A few spoonfuls are enough, added to a sauce that already has body."
+  - q: "How do you pronounce gastrique?"
+    a: "Roughly ga-streek, with the stress on the last syllable."
+faqInBody: true
 ---
 
-<p>A gastrique is sugar cooked to a caramel and loosened with vinegar, a sweet-sour base rather than a finished sauce. It is not a vinaigrette. You make it before service and keep it in mise en place. On the pass you add a little when a reduction wants a caramel edge.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/role/head-chef?utm_source=web&amp;utm_medium=glosario&amp;utm_content=gastrique">Open the head chef page</a></p></aside>
-<h2>What it is, on the line</h2>
-<p>Sugar goes into the pan and you cook it until it smells of caramel and the colour is honestly deep. Vinegar then loosens that caramel. The pan will seize and protest. You stir until the caramel dissolves back into a sharp, dark syrup. That syrup is the gastrique. It is a base and a seasoning, a way to put sweet and sour into a sauce without flinging sugar and vinegar in as two separate afterthoughts. It is not a sauce you flood over a plate. Used in quantity, it tastes like itself and nothing of the dish.</p>
-<p>A vinaigrette puts oil and acid together, and you taste both. A gastrique has no oil in the gesture. The sweetness is cooked sugar, and the acid is the vinegar that loosened the caramel. Whisk oil into it and you have started a different sauce. Keep the names apart on the pass. When a cook says gastrique and means a splash of vinegar and some sugar stirred into a hot pan, the dish will not have the same depth. The caramel has to happen. That cooked note is the whole point of taking the time to make it.</p>
-<h2>What it is not</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesture</th><th>What it does</th><th>What it does not do</th></tr></thead><tbody><tr><td>Cook sugar to caramel</td><td>Gives a cooked sweet note</td><td>Is not raw sugar stirred in late</td></tr><tr><td>Loosen with vinegar</td><td>Makes a sweet-sour base</td><td>Is not a vinaigrette</td></tr><tr><td>Add by taste on the pass</td><td>Lifts a rich sauce</td><td>Does not flood the plate</td></tr><tr><td>Make it before service</td><td>Sits ready in mise en place</td><td>Does not get built in the rush</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/pillar-salsas-cuerpo.jpg" alt="A finished gastrique, dark and syrupy, in a clear container on the mise en place shelf beside a pan of brown jus." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How it behaves on the pass</h2>
-<p>On the pass, gastrique is a small spoon from a pot you made in mise en place. You add it to a jus or a reduction that needs a lift, and you taste before you add again. Sweet-sour is easy to overshoot. Too much and the plate tastes of confectionery vinegar. Too little and you did not change the sauce. The head chef wants the same hand from every cook, so the amount is learned against the house dishes, not guessed in the rush. A gastrique that scorched when you made it will taste bitter in every sauce it touches. Throw that batch out.</p>
-<p>Mise en place is the caramel, done before the tickets start. Sugar burns the moment you turn to read an order, so this is a job for a quiet stretch with your eyes on the pan. The margin is in that attention. Burnt sugar is waste, and a timid caramel that never coloured is only sweet vinegar, which will not do the work. Vinegar and sugar are modest stores next to meat, but a failed batch still costs the time you needed for other prep. Make what the booked service can use. Taste it on its own, then taste it in a spoon of the sauce it will join.</p>
-<p>The guest tastes gastrique as brightness with a round caramel note, often beside rich meat or a fruit element that needs an edge. They should not be able to name sugar. If they can, you added too much, or the caramel was pale and the sweetness stayed raw. Used well, it wakes a dark sauce and keeps a rich plate from sitting heavy. Used badly, it turns a careful reduction into a sweet-and-sour glaze the dish never asked for. Agree on the station which plates take it. A house taste the guest can trust is worth more than a clever splash on one plate.</p>
-<figure><img src="/blog-assets/2026/05/umami-cuerpo.jpg" alt="A cook tasting a spoon of dark sauce after adding a little gastrique, the pass board blurred behind the pan." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How people search for it</h2>
-<p>Gastrique is the word people type, sometimes with sauce in front of it, when they want the sweet-sour caramel base. You will also see gastrique sauce, vinegar caramel, and sugar vinegar reduction. The gesture is sugar cooked to a caramel and loosened with vinegar. It is not a vinaigrette, and a search that sends you to oil and mustard has changed the subject. On a ticket it may be shortened to a spoon of gastrique in the jus. That spoon comes from mise en place.</p>
-<ul>
-<li><a href="https://aichef.pro/en/blog/beurre-blanc">What beurre blanc is</a></li>
-<li><a href="https://aichef.pro/en/blog/nap-a-sauce">How to nap a sauce</a></li>
-<li><a href="https://aichef.pro/en/blog/what-is-demi-glace">What demi-glace is</a></li>
-<li><a href="https://aichef.pro/en/blog/category/glossary">More from the glossary</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://enapp.aichef.pro/guest?utm_source=web&amp;utm_medium=glosario&amp;utm_content=gastrique">Enter as a guest</a></p></aside>
+A gastrique is a light caramel of sugar dissolved with vinegar. It becomes a sweet-sharp syrup used as the base of sauces, especially with meat or fruit. In the sauce romaine of Le Guide Culinaire (1903), Auguste Escoffier cooks 50 g of sugar to a blond caramel and dissolves it with 150 ml of vinegar. In that book he does not use the word gastrique. He describes the preparation inside the sauce. Today it is the usual name for that base.
+
+## What a gastrique is
+
+First you melt sugar until it turns a light caramel color. Then you add vinegar, which dissolves the caramel and, as it reduces, turns into a syrup that is sweet and sharp at the same time, with a slight caramel bitterness. There is no oil in it, so it has nothing to do with a vinaigrette.
+
+It is not a finished sauce either. It is a sweet-sour seasoning that you add in small amounts to a stock, a [demi-glace](https://aichef.pro/en/blog/what-is-demi-glace), or a pan jus. If you add too much, the sauce turns sweet.
+
+## Where it comes from
+
+In French cooking, gastrique is the name for this caramel-and-vinegar base, which goes into sweet-sour and fruit sauces such as the orange sauce for duck. Escoffier already makes it in Le Guide Culinaire (1903), although he does not give it a name. For sauce romaine, he cooks 50 g of sugar to a blond caramel and dissolves it with one and a half deciliters (150 ml) of vinegar. He then adds 600 ml of espagnole and 300 ml of game stock, reduces the sauce, and finishes it with pine nuts and raisins.
+
+That ratio, 50 g of sugar to 150 ml of vinegar, gives a fairly sharp gastrique. Many cooks today use more sugar, even equal parts, when they want a sweeter result.
+
+## Ingredients and ratios
+
+For the base alone, before the sauce it will be stirred into:
+
+| Ingredient | Amount |
+| --- | --- |
+| Sugar | 50 g (about 1/4 cup) |
+| White wine vinegar | 150 ml (about 2/3 cup) |
+| Water, only to help the sugar melt | 15 ml (1 tablespoon) |
+
+White wine vinegar is the most neutral and the easiest to start with. Sherry vinegar adds more aroma. A mild vinegar gives a less sharp gastrique. Taste the syrup before you add it to the sauce.
+
+## How to make it, step by step
+
+**1. Melt the sugar.** Put the sugar and the tablespoon of water in a small heavy saucepan. The water helps it melt evenly. Cook over medium heat. Do not stir with a spoon. Stirring makes the sugar crystallize. You can swirl the pan.
+
+**2. Take it to a blond caramel.** When it is light amber, smells of caramel, and does not yet smell burnt, take it off the heat. Blond turns to dark in seconds.
+
+**3. Add the vinegar carefully.** Off the heat, pour in the vinegar gradually and stand back, because it spatters and gives off sharp fumes. The caramel will harden for a moment; that is normal. Return the pan to gentle heat and cook until the caramel dissolves and the liquid reduces to a light syrup.
+
+**4. Taste.** You should taste the acid first and the sweetness after. If it is too sharp, add a little more sugar and let it dissolve. If it is too sweet, add a few drops of vinegar.
+
+## Why it fails and how to fix it
+
+The usual failure is a dark caramel. It tastes bitter, and neither vinegar nor cream will disguise it. Throw it out and start again on lower heat.
+
+If the sugar crystallizes into a white, sandy mass, you probably stirred it or there was residue in the pan. Add a little water and melt it again over gentle heat. If it stays grainy, start over in a clean pan.
+
+If the caramel seizes into a hard lump when the vinegar goes in and will not dissolve, give it time over gentle heat. The water in the vinegar releases it. If part of it has scorched on the bottom, do not scrape. Pour the clean syrup into another pan.
+
+## During service
+
+Make it before service and keep it in a jar. Cold, it thickens a lot, almost like a soft caramel, and it turns liquid again when warmed. During service, add it by the teaspoon to a sauce that is already reduced, tasting each time before you add more.
+
+Once it is in, do not let the sauce reduce for long, because the acid and the sugar concentrate and throw the sauce off balance. A minute at a simmer is enough to blend it in.
+
+Covered and refrigerated, it keeps for several weeks.
+
+## Variations
+
+**With more sugar.** Equal parts, 50 g and 50 ml, give a sweeter gastrique. Use it when the sauce you are seasoning is very acidic, or when the fruit is not very sweet.
+
+**With sherry vinegar or cider vinegar.** The aroma changes. The method stays the same. Cider vinegar suits pork and fruit.
+
+**With fruit juice.** For an orange, raspberry, or mango gastrique, add the juice after the vinegar, once the caramel has dissolved, and reduce again to a syrup.
+
+**Agrodolce.** This is the Italian sweet-sour: vinegar with sugar or honey, often with raisins and pine nuts. The idea is similar, but agrodolce is usually part of the dish itself, as in glazed pearl onions or caponata, rather than part of a sauce.
+
+## What to use it for
+
+Use it in orange sauce for duck, in game jus, with pork, and with sweet vegetables such as carrots or roasted onions. In Escoffier's sauce romaine, it goes with espagnole, game stock, pine nuts, and raisins.
+
+A gastrique does not thicken. If the sauce is thin, give it body first, by reducing or thickening it until it [naps](https://aichef.pro/en/blog/nap-a-sauce), and add the gastrique at the end, only to balance the flavor.
+
+## More from the glossary
+
+- [What demi-glace is](https://aichef.pro/en/blog/what-is-demi-glace)
+- [Beurre blanc](https://aichef.pro/en/blog/beurre-blanc)
+- [Nap a sauce](https://aichef.pro/en/blog/nap-a-sauce)
+- [The glossary](https://aichef.pro/en/blog/category/glossary)
+
+## Frequently asked questions
+
+**Is a gastrique a vinaigrette?**
+A vinaigrette mixes vinegar and oil, and you shake it to dress a salad. A gastrique cooks sugar to a light caramel and dissolves it with vinegar. There is no oil in it. You use it as the base of a sauce.
+
+**Is the ratio equal parts?**
+In Escoffier's sauce romaine, no. It is 50 g of sugar and 150 ml of vinegar. Equal parts give a sweeter gastrique, which some kitchens prefer. Taste and adjust, because vinegars are not equally sharp.
+
+**Should the sugar go to a dark caramel?**
+No. The point in the text is a blond caramel, light amber. If you let it reach a dark brown, it turns bitter, and the vinegar will not take that bitterness away.
+
+**Is it the same as agrodolce?**
+Both play sweet against acid. Agrodolce is the Italian version, often vinegar with sugar or honey, raisins, and pine nuts, served with the vegetable or the meat. A gastrique is the French base of caramel and vinegar, meant to go into a sauce.
+
+**What do you use it with?**
+Duck, game, pork, dark jus, and fruit sauces. Escoffier uses it in sauce romaine, together with espagnole and game stock. A few spoonfuls are enough, added to a sauce that already has body.
+
+**How do you pronounce gastrique?**
+Roughly ga-streek, with the stress on the last syllable.

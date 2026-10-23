@@ -1,13 +1,13 @@
 ---
-title: "What is demi-glace? Demi glace, demiglace, and the nap"
-description: "Demi-glace is espagnole and dark stock reduced until the sauce naps. Written as demi glace or demiglace, it is still not the same pot as glace de viande."
+title: "Demi-glace: what it is and how to make it"
+description: "Demi-glace is espagnole and brown stock in equal parts, reduced and finished with sherry. Here is Escoffier's ratio, the method, and how it differs from a meat glaze."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glossary
 tags: ["demi-glace", "sauce"]
 lang: en
 image: /blog-assets/2026/05/demi-glace-destacada.jpg
-imageAlt: "A wide pot of dark demi-glace reduced to a shining coat, a spoon lifted to show the sauce clinging to the back."
+imageAlt: "Ladle pouring glossy dark demi-glace into a skillet"
 translations:
   es: "demi-glace-concepto-y-definicion"
   en: "what-is-demi-glace"
@@ -18,37 +18,114 @@ translations:
   nl: "demi-glace"
 definedTerm:
   name: "Demi-glace"
-  description: "Demi-glace is espagnole and dark stock reduced together until the sauce naps. You will also see demi glace and demiglace. The spelling does not change the pot. It is not glace de viande, which is dark stock pushed until it gels when cold. Demi-glace stops as a coat, with espagnole still in the body."
+  description: "Demi-glace is a classic French brown sauce. You make it by combining equal parts espagnole sauce and brown stock and reducing the mixture over gentle heat until a little less than half remains. Off the heat, you finish it with a splash of sherry or Madeira. That is how Auguste Escoffier describes it, and he treats it as the base of all the smaller brown sauces. The name means \"half-glaze,\" and you will see it spelled demi-glace, demi glace, or demiglace."
 faq:
-  - q: "What is demi-glace?"
-    a: "Espagnole and dark stock, reduced together until the sauce coats the back of a spoon. That nap is the point you are aiming at. You will see the same sauce written as demi glace and as demiglace. The spelling changes nothing in the pot. It is a dark sauce you make before service and use on the pass to glaze, extend or finish."
-  - q: "Is demiglace the same as demi glace and demi-glace?"
-    a: "Yes. They are three ways of writing one name. Menus, tickets and search boxes move the hyphen or drop it. The sauce is still espagnole plus dark stock, reduced until it naps. If the liquid in the pot is only reduced stock and it gels when cold, you are holding glace de viande, whatever the label says."
-  - q: "How is demi-glace different from a meat glaze?"
-    a: "A meat glaze, glace de viande, is dark stock reduced until it naps and then until it sets to a gel when cold. Demi-glace includes espagnole, so a roux is part of the body, and you stop when the sauce coats. One is a concentrate you add with care."
-  - q: "Can you make demi-glace to order on the pass?"
-    a: "Not honestly. The espagnole and the dark stock are mise en place, and the reduction that marries them is too. At the window you finish: meat juices, a ladle of the sauce, maybe a mount of cold butter for shine. If the mother sauce is salty, floury or thin, fix that pot or stop using it. Every plate will inherit the fault. The guest never needs the spelling."
+  - q: "Are demi-glace, demi glace, and demiglace the same sauce?"
+    a: "Yes. They are three spellings of the same French name. The sauce is espagnole and brown stock, reduced and finished with a fortified wine."
+  - q: "Can you make demi-glace without espagnole?"
+    a: "Yes, and most restaurants do it that way today: they reduce brown stock alone until it coats a spoon. That sauce has neither the flour nor the tomato of espagnole, so it tastes meatier and is closer to a lightly reduced glace de viande. Escoffier's classic demi-glace does start from espagnole."
+  - q: "How is demi-glace different from glace de viande?"
+    a: "Glace de viande is brown stock reduced until it is as thick as syrup, with no flour and no wine. Classic demi-glace contains espagnole, is reduced less, only to the thickness of a sauce, and is finished with sherry or Madeira."
+  - q: "Should you salt the stock before reducing it?"
+    a: "No. Escoffier wants unsalted stock, because reduction concentrates whatever is in it. Salted stock turns the demi-glace salty too soon. Taste at the end and adjust then."
+  - q: "How long does demi-glace keep in the refrigerator?"
+    a: "Cool it quickly and keep it covered, with plastic wrap pressed onto the surface or a little butter dotted on top so a skin does not form. It keeps for 3 to 4 days in the refrigerator. Freeze what you will not use in small portions."
+  - q: "What texture does it have when cold?"
+    a: "It thickens and sets into a soft jelly, because it concentrates the gelatin from the stock and also contains the starch from the roux in the espagnole. Warmed up, it becomes a sauce again."
+faqInBody: true
 ---
 
-<p>Demi-glace is espagnole and dark stock reduced together until the sauce naps. You will also see demi glace and demiglace. The spelling does not change the pot. It is not glace de viande, which is dark stock pushed until it gels when cold. Demi-glace stops as a coat, with espagnole still in the body.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/food-cost-calculator-restaurant?utm_source=web&amp;utm_medium=glosario&amp;utm_content=what-is-demi-glace">Open the food cost calculator</a></p></aside>
-<h2>What it is, on the line</h2>
-<p>Espagnole brings the brown sauce, roux and long simmer included, and dark stock brings the roasted bones. You put them in one pot and reduce until the spoon says nappé. That coat is the finish line for demi-glace. You are not chasing a gel in the fridge. You are making a sauce that can glaze meat, lengthen a jus, or stand under a compound sauce on the pass. Demi glace and demiglace are the same name with the space or the hyphen written differently, which is how people search and how a ticket sometimes arrives. Cook the sauce in front of you. Do not cook the spelling.</p>
-<p>Glace de viande starts narrower and goes further. It is dark stock alone, reduced until it naps and then until it gels when cold. Demi-glace has espagnole in the pot, so the roux is part of how the body forms, along with whatever the stock itself gives. The flavour is deep and brown, and the sauce is built to be used, not only dotted on as a concentrate. If your pot gels like a meat glaze and never was an espagnole, do not rename it demi-glace to make the menu sound grander. The head chef costs the two pots differently because they spend the stove and the stores differently.</p>
-<h2>What it is not</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesture</th><th>What it does</th><th>What it does not do</th></tr></thead><tbody><tr><td>Espagnole plus dark stock</td><td>Reduced until the spoon is nappé</td><td>Is not stock on its own</td></tr><tr><td>Stop at the coat</td><td>A sauce you can serve and extend</td><td>Is not glace de viande</td></tr><tr><td>Demi-glace, demi glace, demiglace</td><td>Three spellings, one pot</td><td>Does not change the method</td></tr><tr><td>Finish it on the plate</td><td>The mother sauce meets the meat</td><td>Does not start from raw at the window</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Espagnole and dark stock side by side on the bench before they go into one pot to reduce for demi-glace." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How it behaves on the pass</h2>
-<p>On the pass, demi-glace is a pot that mise en place already finished. You do not reduce espagnole from a raw start between courses. What you do at the window is the last step: the drippings of the meat, a ladle of demi-glace, perhaps a mount of cold butter if the dish wants shine and roundness. The sauce should still taste of the meat in the pan, not only of the mother sauce. Nappé still applies. If the ladle was too heavy and the sauce looks thick and dull, loosen it with a little stock you trust, then taste again.</p>
-<p>The margin is why this sauce is either a quiet pride or a quiet leak. Espagnole and dark stock are already expensive in time and product before you reduce them any further. A demi-glace you make and forget in the cold hold is a loss nobody photographs. A demi-glace you pour with a heavy hand on every plate, including dishes that wanted a lighter jus, spends the pot and flattens the menu into one brown note. The head chef watches both habits. Know which dishes take a full coat and which take a spoon to fortify a quicker pan. That is costing, done with a ladle.</p>
-<p>The guest reads demi-glace as a dark glossy coat with a long roasted flavour and a body that stays on the meat. They will not care that a search box said demiglace or that the ticket said demi glace. They will care if the sauce is salty, floury or thin. Those faults live in the espagnole, in the stock, or in a sloppy finish, and they are visible at the pass. Taste the mother sauce when you take it from mise en place. If it is wrong, every plate you build on it will be wrong in the same way. Fix the pot, or leave it.</p>
-<figure><img src="/blog-assets/2026/05/fondo-oscuro-cuerpo.jpg" alt="A cook finishing a steak pan with a ladle of demi-glace at the pass, the sauce tightening around the meat juices." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How people search for it</h2>
-<p>People search demi-glace, demi glace and demiglace for one sauce: espagnole plus dark stock, reduced until it naps. The hyphen, the space and the closed-up spelling are all in use, on menus and in the search box. Do not let that search land on glace de viande or meat glaze. A meat glaze is dark stock taken further, until it gels when cold, with no espagnole required. Demi-glace stops at a coat you can serve and extend. On the pass the pot should already be made.</p>
-<ul>
-<li><a href="https://aichef.pro/en/blog/glace-de-viande">Glace de viande</a></li>
-<li><a href="https://aichef.pro/en/blog/what-is-a-roux">What a roux is</a></li>
-<li><a href="https://aichef.pro/en/blog/nap-a-sauce">How to nap a sauce</a></li>
-<li><a href="https://aichef.pro/en/blog/category/glossary">More from the glossary</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://enapp.aichef.pro/guest?utm_source=web&amp;utm_medium=glosario&amp;utm_content=what-is-demi-glace">Enter as a guest</a></p></aside>
+Demi-glace is a classic French brown sauce. You make it by combining equal parts espagnole sauce and brown stock and reducing the mixture over gentle heat until a little less than half remains. Off the heat, you finish it with a splash of sherry or Madeira. That is how Auguste Escoffier describes it, and he treats it as the base of all the smaller brown sauces. The name means "half-glaze," and you will see it spelled demi-glace, demi glace, or demiglace.
+
+## What demi-glace is
+
+Espagnole is brown stock thickened with a toasted roux and tomato. It simmers slowly for hours while you skim it, which means lifting off the foam and impurities that rise to the surface. To make demi-glace, you combine that sauce with more brown stock and reduce it again. The result contains flour, tomato, and the concentrated flavor of the stock. It is ready when it coats the back of a spoon in a thin, even layer. Cooks call that consistency [nappé](https://aichef.pro/en/blog/nap-a-sauce).
+
+Many restaurants today skip the espagnole. They reduce brown stock alone until it coats a spoon and call that demi-glace too. It is a very useful sauce, but it is a different one. With no roux and no tomato, it tastes meatier and is closer to a lightly reduced [glace de viande](https://aichef.pro/en/blog/glace-de-viande). If a recipe calls for demi-glace, taste yours first so you know which kind you are using.
+
+## Where it comes from
+
+In Le Guide Culinaire (1903), Escoffier defines demi-glace as espagnole brought to its peak by a final skimming. He finishes it off the heat with half a deciliter (50 ml) of very dry Madeira per liter of sauce, and he explains why: if the wine boils, it loses its aroma.
+
+In the 1907 English edition, A Guide to Modern Cookery, he gives amounts for the reduction. He combines one measure of espagnole with one measure of first-class brown stock, reduces it to nine-tenths of a measure, and finishes it off the heat with one-tenth of a measure of excellent sherry. Put simply, that is equal parts espagnole and stock, reduced to a little under half, with a tenth of wine at the end. The recipe below follows that ratio.
+
+## Ingredients and ratios
+
+For about 500 ml (2 cups) of finished sauce, half of the 1907 formula:
+
+| Ingredient | Amount |
+| --- | --- |
+| Espagnole sauce | 500 ml (about 2 cups) |
+| Unsalted brown stock | 500 ml (about 2 cups) |
+| Dry sherry (fino or amontillado), off the heat | 50 ml (about 3 1/2 tablespoons) |
+
+Escoffier used a brown stock made from veal and beef, which he called estouffade. Veal stock alone gives a paler, milder sauce. Either way, the stock must be unsalted, because reduction concentrates it.
+
+If you follow the 1903 French edition, the wine is very dry Madeira: 50 ml per liter of already reduced sauce, also off the heat.
+
+## How to make it, step by step
+
+<figure><img src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Dark sauce reducing in a skillet with a wooden spoon" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+
+**1. Combine the espagnole and the stock.** Put both liquids in a wide, heavy saucepan. A wide pan evaporates faster than a tall, narrow one.
+
+**2. Reduce over gentle heat.** Bring it to a gentle simmer and skim it now and then. You want to go from 1 liter to about 450 ml (a scant 2 cups). To know when you are there, mark the starting level on the pan, or pour the sauce into a measuring cup once it has dropped noticeably. Do not let it boil hard, because it will spatter, turn cloudy, and stick to the sides of the pan.
+
+**3. Strain it.** Pass it through a fine sieve or a cloth. Do not press the sediment.
+
+**4. Add the sherry off the heat.** Stir in the 50 ml and taste. If you are keeping it, dot the surface with a little butter or lay a cover directly on the sauce so a skin does not form.
+
+## Why it fails and how to fix it
+
+If the stock was salted, the reduction will be salty. You can soften that a little by adding some unsalted stock, but you also dilute the flavor. That is why stock for demi-glace is never salted.
+
+If it is still thin after reducing, the stock had little gelatin or the espagnole was too thin. Keep reducing over gentle heat until it coats a spoon. Do not thicken it with flour or cornstarch, because that changes the flavor and dulls the shine.
+
+If it sticks or tastes bitter, the heat was too high at the end, when little sauce was left. You cannot fix that bitterness, so start again. Lower the heat as soon as the sauce begins to thicken.
+
+If you boil the sauce after adding the sherry, the wine loses its aroma. Always add it last, off the heat.
+
+## During service
+
+Make it before service, during mise en place, the prep that happens ahead of time, and hold it warm over a water bath without letting it boil again. On each plate, use it by the spoonful, on its own or to strengthen a jus. If it only needs shine, mount it with a little cold butter at the moment you serve.
+
+Cool leftovers quickly, stirring now and then so a skin does not form, and keep them covered in the refrigerator for 3 to 4 days. Demi-glace also freezes well in small portions, for example in an ice cube tray, so you can take out only what you need.
+
+## Variations
+
+**Stock only.** Reduce unsalted brown stock until it coats a spoon, with no espagnole. This is the demi-glace many restaurants use today. It has no flour and tastes meatier and less of tomato.
+
+**With Madeira.** This is the finish of the 1903 French edition: 50 ml of very dry Madeira per liter, off the heat. Dry sherry is the finish of the English edition.
+
+**Veal or beef.** Veal stock gives a milder sauce. A stock that includes beef, like Escoffier's estouffade, tastes stronger. The method is the same.
+
+## What to use it for
+
+It is the base of the small brown sauces: Lyonnaise, Bordelaise, chasseur, and the ones finished at the last minute with the juices of a roast. It also stretches a pan reduction when the meat has given up little liquid. A spoonful in a braise adds body without another hour of boiling.
+
+## More from the glossary
+
+- [Glace de viande](https://aichef.pro/en/blog/glace-de-viande)
+- [What a roux is](https://aichef.pro/en/blog/what-is-a-roux)
+- [Nap a sauce](https://aichef.pro/en/blog/nap-a-sauce)
+- [The glossary](https://aichef.pro/en/blog/category/glossary)
+
+## Frequently asked questions
+
+**Are demi-glace, demi glace, and demiglace the same sauce?**
+Yes. They are three spellings of the same French name. The sauce is espagnole and brown stock, reduced and finished with a fortified wine.
+
+**Can you make demi-glace without espagnole?**
+Yes, and most restaurants do it that way today: they reduce brown stock alone until it coats a spoon. That sauce has neither the flour nor the tomato of espagnole, so it tastes meatier and is closer to a lightly reduced glace de viande. Escoffier's classic demi-glace does start from espagnole.
+
+**How is demi-glace different from glace de viande?**
+Glace de viande is brown stock reduced until it is as thick as syrup, with no flour and no wine. Classic demi-glace contains espagnole, is reduced less, only to the thickness of a sauce, and is finished with sherry or Madeira.
+
+**Should you salt the stock before reducing it?**
+No. Escoffier wants unsalted stock, because reduction concentrates whatever is in it. Salted stock turns the demi-glace salty too soon. Taste at the end and adjust then.
+
+**How long does demi-glace keep in the refrigerator?**
+Cool it quickly and keep it covered, with plastic wrap pressed onto the surface or a little butter dotted on top so a skin does not form. It keeps for 3 to 4 days in the refrigerator. Freeze what you will not use in small portions.
+
+**What texture does it have when cold?**
+It thickens and sets into a soft jelly, because it concentrates the gelatin from the stock and also contains the starch from the roux in the espagnole. Warmed up, it becomes a sauce again.

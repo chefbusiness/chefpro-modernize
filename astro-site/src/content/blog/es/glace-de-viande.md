@@ -1,13 +1,13 @@
 ---
-title: "Glace de viande: el fondo reducido hasta gelificar"
-description: "La glace de viande es un fondo oscuro reducido hasta napar y, en frío, gelificar. Va más allá que la demi-glace y cuesta tiempo y género."
+title: "Glace de viande: qué es y cómo se hace"
+description: "La glace de viande es un fondo oscuro reducido hasta que cubre la cuchara y, en frío, cuaja. Te explicamos el método de Escoffier, por qué gelifica y cómo usarla."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
 tags: ["glace de viande", "fondos", "reduccion"]
 lang: es
-image: /blog-assets/2026/05/demi-glace-destacada.jpg
-imageAlt: "Un fondo oscuro reducido en un cazo ancho, brillante, cubriendo el dorso de una cuchara."
+image: /blog-assets/2026/05/glace-de-viande-destacada.jpg
+imageAlt: "Glace de viande reducida que cubre el dorso de una cuchara, y glace fría gelificada en un ramequín"
 translations:
   es: "glace-de-viande"
   en: "glace-de-viande"
@@ -18,37 +18,110 @@ translations:
   nl: "vleesglace"
 definedTerm:
   name: "Glace de viande"
-  description: "La glace de viande es un fondo oscuro reducido hasta que napa en caliente y, al enfriar, gelifica. No es un caldo corto ni una demi-glace. Concentra el colágeno y el sabor de los huesos tostados en poco líquido. El jefe la mira como tiempo y como género, sin necesidad de inventar una cifra."
+  description: "La glace de viande es un fondo oscuro reducido muy despacio hasta que queda espeso y brillante, como un jarabe. Su nombre significa «glasa de carne». En caliente cubre la cuchara con una capa que no se escurre. En frío cuaja como una gelatina firme, porque la gelatina de los huesos queda muy concentrada. Auguste Escoffier la describe en Le Guide Culinaire (1903) y la usa para reforzar salsas y abrillantar carnes. Montada con mantequilla, también la sirve como salsa."
 faq:
   - q: "¿La glace de viande es una demi-glace?"
-    a: "No. La demi-glace sale de salsa española y fondo oscuro reducidos hasta napar, y arrastra el roux de la española. La glace de viande lleva el fondo oscuro más lejos, hasta napar en caliente y gelificar en frío, y su cuerpo puede venir solo de lo que soltaron los huesos. En la carta y en el pase no se intercambian los nombres."
+    a: "Son dos reducciones distintas. La demi-glace de Escoffier parte de salsa española y fondo oscuro, y se termina con jerez o Madeira. La glace es solo fondo, reducido hasta el jarabe, sin harina y sin ese vino."
   - q: "¿Por qué gelifica al enfriar?"
-    a: "Porque la reducción concentra lo que los huesos cedieron al fondo. En caliente napa. En frío ese concentrado tiembla y se sostiene. Si al enfriar sigue líquido, aún no es glace: falta reducción. Si amarga, el fuego fue demasiado violento y lo pegado del cazo volvió al líquido."
-  - q: "¿Se sirve sola en el plato?"
-    a: "Casi nunca como un cucharón. Es un concentrado. Un poco termina un jugo o un braseado. Mucho aplasta y, si el fondo ya iba sazonado, sala de más. Se prueba en la salsa terminada, no solo a cucharaditas del bloque frío."
-  - q: "¿Por qué es un asunto de margen?"
-    a: "Porque hace falta mucho fondo para poca glace, y el fondo ya consumió huesos, horno y tiempo de una persona. Usarla para tapar jugos flojos en toda la carta, o echarla a perder por un exceso de sal, cobra ese trabajo dos veces. Va porcionada y solo en los platos que la ficha señala."
+    a: "Durante la cocción larga del fondo, el colágeno de los huesos se convierte en gelatina. Al reducir, esa gelatina se concentra. En frío, la gelatina cuaja y la glace se puede cortar. Al calentarla, se funde otra vez."
+  - q: "¿Hasta qué volumen hay que reducirla?"
+    a: "Escoffier no da una cifra: indica parar cuando la glace cubre la cuchara con una capa brillante y bien adherida. Como orientación, suele quedar una décima parte del fondo inicial, pero depende de la gelatina que tenga. Un fondo con poca gelatina puede reducirse mucho y no llegar a cuajar."
+  - q: "¿Sirve un caldo ya salado?"
+    a: "No conviene. Escoffier pide el fondo sin sal, porque la reducción concentra todo lo que lleva. Un caldo salado queda incomible antes de llegar al jarabe. Uno muy aguado, con poca gelatina, puede no cuajar aunque lo reduzcas mucho."
+  - q: "¿Se puede usar sola, como salsa?"
+    a: "Tal cual no, porque es demasiado intensa. Se usa a cucharaditas para reforzar salsas y jugos, o fundida para abrillantar una carne. Para servirla como salsa, Escoffier la monta con mantequilla o con nata."
+  - q: "¿Cómo se pronuncia?"
+    a: "Aproximadamente «glas de viánd». La s de glace se pronuncia, y la e final no suena."
+faqInBody: true
 ---
 
-<p>La glace de viande es un fondo oscuro reducido hasta que napa en caliente y, al enfriar, gelifica. No es un caldo corto ni una demi-glace. Concentra el colágeno y el sabor de los huesos tostados en poco líquido. El jefe la mira como tiempo y como género, sin necesidad de inventar una cifra.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/calculadora-food-cost-restaurante?utm_source=web&amp;utm_medium=glosario&amp;utm_content=glace-de-viande">Abrir la calculadora de food cost</a></p></aside>
-<h2>Qué es, en la práctica</h2>
-<p>Se parte de un fondo oscuro que ya está bien hecho: huesos tostados, verdura, un hervor que nunca fue un galope. Reducir es quitar agua, no castigar el cazo. El líquido baja, el color se cierra y la cuchara empieza a cubrirse. Cuando enfría y el conjunto tiembla como una gelatina firme, estás en glace. Si enfría y sigue siendo un caldo, te has quedado antes. Si se agarra y amarga, te has pasado de fuego, no de reducción bien llevada. El borde del cazo se limpia para que lo que se pega no queme y vuelva al líquido.</p>
-<p>La demi-glace no es este punto. La demi-glace junta salsa española y fondo oscuro y se reduce hasta napar: lleva el roux de la española y un camino propio. La glace de viande puede no llevar harina. Su cuerpo, en frío, lo da lo que los huesos soltaron. Usarlas como sinónimos hace que alguien compre un frasco, lo llame glace y monte encima una salsa que la casa creía un fondo reducido de verdad. En la ficha y en el pase los dos nombres se dicen enteros.</p>
-<h2>Con qué no se confunde</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesto</th><th>Qué hace</th><th>Qué no hace</th></tr></thead><tbody><tr><td>Reducir el fondo oscuro</td><td>Concentra hasta napar</td><td>No es un caldo corto</td></tr><tr><td>Gelificar en frío</td><td>El colágeno da el cuerpo</td><td>No depende de un roux</td></tr><tr><td>Usarla como concentrado</td><td>Empuja un jugo</td><td>No es la salsa de todos los platos</td></tr><tr><td>Separarla de la demi-glace</td><td>Va más allá en la reducción</td><td>No es un frasco intercambiable</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/fondo-oscuro-cuerpo.jpg" alt="Bloques de glace enfriada, firmes y temblorosos, porcionados en una placa de la cámara." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se comporta en el pase</h2>
-<p>En el servicio no se manda un cazo de glace como si fuera la salsa del plato, salvo que la carta lo diga así. Se usa como un concentrado: un poco deshace un fondo, empuja un jugo, termina un braseado. Poca cantidad cambia la boca. Mucha cantidad saliniza y aplasta, sobre todo si el fondo de origen ya iba sazonado. Por eso se prueba el conjunto, no la glace sola. Sola es intensa a propósito. En el plato tiene que seguir sabiéndose la carne que el comensal ha pedido.</p>
-<p>El coste no necesita una cifra inventada para verse. Hace falta mucho fondo para poca glace, y el fondo ya costó huesos, horno y horas de una persona que no está en el pase. Tirarla por un error de sal, o usarla para disimular un jugo flojo en todos los platos, es comerse el margen dos veces. La mise en place la tiene porcionada, fría, y la partida sabe en qué platos entra. El jefe pregunta eso antes de preguntar si está rica.</p>
-<p>El comensal nota untuosidad y profundidad, no la palabra. Una salsa terminada con glace se queda en la carne, brilla sin fécula y sabe a asado largo. Si está salada, reducida de más o simplemente pegada como un lacre negro, el gesto se ha pasado. Si el plato sale aguado teniendo glace en la cámara, la partida no la usó o el fondo de partida era pobre y se esperaba que el tarro lo arreglara. La glace concentra lo que había. No inventa un fondo que no se hizo.</p>
-<figure><img src="/blog-assets/2026/05/maillard-cuerpo.jpg" alt="Un jugo de carne terminado con un poco de glace, napando la pieza sin llegar al borde del plato." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se escribe y cómo se busca</h2>
-<p>Se busca glace de viande, glace de carne, carne glaseada en el sentido de fondo y meat glaze. No es el glaseado dulce de un pastel ni la demi-glace. Las grafías glace, glacé y glass se mezclan en el buscador: aquí es el fondo oscuro reducido hasta napar y gelificar en frío. Quien pregunta si lleva harina está rozando la demi-glace, que es otro camino.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/demi-glace-concepto-y-definicion">Qué es la demi-glace</a></li>
-<li><a href="https://aichef.pro/blog/fumet-de-pescado">Qué es un fumet</a></li>
-<li><a href="https://aichef.pro/blog/napar-una-salsa">Qué es napar</a></li>
-<li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=glace-de-viande">Entrar como invitado</a></p></aside>
+La glace de viande es un fondo oscuro reducido muy despacio hasta que queda espeso y brillante, como un jarabe. Su nombre significa «glasa de carne». En caliente cubre la cuchara con una capa que no se escurre. En frío cuaja como una gelatina firme, porque la gelatina de los huesos queda muy concentrada. Auguste Escoffier la describe en Le Guide Culinaire (1903) y la usa para reforzar salsas y abrillantar carnes. Montada con mantequilla, también la sirve como salsa.
+
+## Qué es la glace de viande
+
+Se parte de un fondo oscuro ya colado y sin sal. Se va evaporando agua hasta que lo que queda es sobre todo sabor y gelatina. No lleva harina. Por eso, en caliente, brilla y cae de la cuchara en gotas anchas y lentas, y en frío se comporta como una gelatina firme.
+
+La [demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion) se reduce menos y es otra preparación. Lleva salsa española, y por tanto roux y tomate, y se termina con jerez o Madeira. Una forma fácil de distinguirlas es enfriarlas. La glace cuaja en un bloque firme y oscuro, sin sabor a harina, mientras que la demi-glace clásica queda como una gelatina blanda.
+
+## Origen
+
+Escoffier obtiene la glace reduciendo el fondo oscuro que llama estouffade. A medida que baja el volumen, cuela el líquido por un paño y lo pasa a cazos cada vez más pequeños. El fuego puede ser fuerte al principio, pero al final tiene que ser suave, porque con poco líquido la glace se quema enseguida.
+
+Según Escoffier, la glace está en su punto cuando envuelve la cuchara con una capa brillante y bien adherida, es decir, cuando napa la cuchara («qu'elle nappe la cuiller»). Si quieres una glace más clara y de sabor más suave, él mismo propone reducir un fondo de ternera normal en lugar del fondo oscuro.
+
+## Ingredientes y proporciones
+
+La cantidad de glace que sale depende de la gelatina que tenga el fondo, así que no hay una cifra exacta. Como referencia, suele quedar alrededor de una décima parte: de 2 litros de un buen fondo oscuro salen unos 200 ml de glace.
+
+| Ingrediente | Cantidad |
+| --- | --- |
+| Fondo oscuro o de ternera, sin sal y colado | 2 litros |
+
+Si el fondo está turbio o tiene grasa, desgrásalo y cuélalo antes de empezar. La grasa no se integra en la glace: queda flotando y, si se quema, amarga.
+
+## Cómo se hace, paso a paso
+
+<figure><img src="/blog-assets/2026/05/fondo-oscuro-cuerpo.jpg" alt="Bandeja con huesos y verduras tostados al horno para preparar un fondo oscuro" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+
+**1. Desgrasa y cuela el fondo.** Es más fácil con el fondo frío, porque la grasa se solidifica en la superficie y se retira con una cuchara.
+
+**2. Reduce en un cazo ancho.** Fuego medio al principio, espumando. Cuando haya bajado a la mitad, cuélalo a un cazo más pequeño.
+
+**3. Baja el fuego.** En la última fase el líquido está espeso y se pega con facilidad. Mantén un hervor muy suave, que apenas mueva la superficie. Para saber si está lista, mete una cuchara limpia: tiene que salir cubierta por una capa brillante que no se escurra como si fuera agua.
+
+**4. Enfría y guarda.** Viértela en un recipiente bajo. Al enfriar cuaja. Córtala en porciones.
+
+## Por qué falla y cómo arreglarlo
+
+Si se quema en el fondo del cazo, amarga, y ese amargor pasa a toda la glace. No se puede disimular con azúcar ni con vino, así que tira la parte que sepa a quemado. La próxima vez, pásala antes a un cazo más pequeño y baja el fuego.
+
+Si después de reducir mucho sigue sin cuajar al enfriarse, es que el fondo tenía poca gelatina: llevaba pocos huesos, se coció poco tiempo o se hizo con huesos ya aprovechados. Eso no se arregla durante la reducción. La próxima vez, haz el fondo con huesos ricos en colágeno, como jarrete, rodilla o patas de ternera, y cuécelo el tiempo suficiente.
+
+Si queda salada, es porque el fondo llevaba sal. Una vez reducida no tiene arreglo, y por eso el fondo para glace se hace siempre sin sal.
+
+## En el servicio
+
+La glace se prepara con antelación. Ocupa poco espacio y se conserva mejor que el fondo del que sale. Durante el servicio, funde al baño maría solo la cantidad que vayas a usar y no la hiervas, porque se reseca y puede amargar.
+
+Una cucharadita fundida en una salsa o en un jugo poco concentrado le da cuerpo y sabor. Si pintas una carne asada con glace caliente, le das brillo. Escoffier también la monta con mantequilla o con nata para servirla como salsa.
+
+En la nevera, bien tapada, aguanta alrededor de una semana. Congelada en porciones pequeñas se conserva varios meses. Si al sacarla huele agria o rancia, tírala.
+
+## Variantes
+
+**Glace de ternera.** Se hace igual, con fondo de ternera. Queda más clara y de sabor más suave.
+
+**Glace de ave o de caza.** Se hace igual, con fondo de ave o de caza. Cada una sabe al fondo del que sale, así que no son intercambiables.
+
+**Jus de veau lié.** Escoffier también lo describe en Le Guide Culinaire, pero es otra preparación: 4 litros de fondo de ternera reducidos a 1 litro y ligados con 30 g de arrurruz desleído en un poco de fondo frío. Es una salsa ligada con almidón y no cuaja al enfriarse como la glace.
+
+## Para qué se usa
+
+Sirve para reforzar salsas y jugos, para abrillantar carnes asadas y para tener a mano el sabor de un fondo en muy poco espacio: una cucharadita da a una salsa el sabor de un buen chorro de fondo reducido.
+
+## Para seguir en el glosario
+
+- [Demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion)
+- [Fumet de pescado](https://aichef.pro/blog/fumet-de-pescado)
+- [Napar una salsa](https://aichef.pro/blog/napar-una-salsa)
+- [El glosario](https://aichef.pro/blog/categoria/glosario)
+
+## Preguntas frecuentes
+
+**¿La glace de viande es una demi-glace?**
+Son dos reducciones distintas. La demi-glace de Escoffier parte de salsa española y fondo oscuro, y se termina con jerez o Madeira. La glace es solo fondo, reducido hasta el jarabe, sin harina y sin ese vino.
+
+**¿Por qué gelifica al enfriar?**
+Durante la cocción larga del fondo, el colágeno de los huesos se convierte en gelatina. Al reducir, esa gelatina se concentra. En frío, la gelatina cuaja y la glace se puede cortar. Al calentarla, se funde otra vez.
+
+**¿Hasta qué volumen hay que reducirla?**
+Escoffier no da una cifra: indica parar cuando la glace cubre la cuchara con una capa brillante y bien adherida. Como orientación, suele quedar una décima parte del fondo inicial, pero depende de la gelatina que tenga. Un fondo con poca gelatina puede reducirse mucho y no llegar a cuajar.
+
+**¿Sirve un caldo ya salado?**
+No conviene. Escoffier pide el fondo sin sal, porque la reducción concentra todo lo que lleva. Un caldo salado queda incomible antes de llegar al jarabe. Uno muy aguado, con poca gelatina, puede no cuajar aunque lo reduzcas mucho.
+
+**¿Se puede usar sola, como salsa?**
+Tal cual no, porque es demasiado intensa. Se usa a cucharaditas para reforzar salsas y jugos, o fundida para abrillantar una carne. Para servirla como salsa, Escoffier la monta con mantequilla o con nata.
+
+**¿Cómo se pronuncia?**
+Aproximadamente «glas de viánd». La s de glace se pronuncia, y la e final no suena.

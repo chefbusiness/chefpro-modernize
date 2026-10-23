@@ -1,8 +1,8 @@
 ---
-title: "What is a roux? Flour cooked in fat before the liquid"
-description: "A roux is flour cooked in fat, equal parts by weight, before the liquid. White, blond and brown change the toast. In German the name is Mehlschwitze."
+title: "Roux: what it is and how to make it"
+description: "A roux is flour cooked in fat before the liquid goes in. Here is Escoffier's ratio, the three colors, and how much you need for a liter."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glossary
 tags: ["roux", "sauce"]
 lang: en
@@ -18,37 +18,135 @@ translations:
   nl: "wat-is-een-roux"
 definedTerm:
   name: "Roux"
-  description: "A roux is flour cooked in fat before the liquid, in equal parts by weight. White, blond and brown take that gesture further, with more colour and toast. In German the name is Mehlschwitze, the German name, not an English translation. You build it in mise en place. It is not beurre manié, which stays raw."
+  description: "A roux is flour cooked in fat, before the liquid of the sauce goes in. The fat cooks the flour and keeps it from lumping. In Le Guide Culinaire (1903), Auguste Escoffier gives 500 g of clarified butter and 600 g of flour, and he calls those the proportions for 1 kilo. With whole butter, which still contains water, equal weights come close to that ratio. The color of the cooking changes the flavor and the thickening power: white for béchamel, blond for velouté, and a light hazelnut for espagnole."
 faq:
-  - q: "What is a roux?"
-    a: "Flour cooked in fat before any liquid goes in, in equal parts by weight. The cooking changes the raw flour note and lets the paste disperse when the liquid arrives. White, blond and brown are the same gesture held longer, so the colour and the toast deepen. In German the name is Mehlschwitze, the German name, not an English translation."
-  - q: "Why cook the flour before the liquid?"
-    a: "So the fat coats the flour and the starch does not seize into lumps of raw paste when the liquid hits it. You also cook out the raw flour flavour the guest would otherwise find in the sauce. Stir the paste so it colours evenly. Pale, toasted or deep brown is a decision about the dish, made in mise en place."
-  - q: "Is a roux the same as beurre manié?"
-    a: "No. Both can be equal parts of fat and flour by weight, and that is where the likeness ends. A roux is cooked before the liquid. Beurre manié is kept raw and whisked into a finished sauce at the end. Cook the raw paste and you have left beurre manié. Skip the cooking and you do not have a roux, whatever the ticket calls it."
-  - q: "What does Mehlschwitze mean on an English-speaking pass?"
-    a: "It is the German name for a roux. You do not translate it into a new English technique, and you do not treat it as a slurry or a raw paste. Flour cooked in fat before the liquid is the gesture, whether the cook beside you says roux or Mehlschwitze. Use the German name when you are speaking German. Use roux on this pass."
+  - q: "Are the amounts equal parts?"
+    a: "In Escoffier's recipe, it is 500 g of clarified butter and 600 g of flour. Clarified butter contains no water, while regular butter is about 80 percent fat. So with regular butter, the equivalent is close to equal parts by weight: for example, 60 g of butter and 60 g of flour (about 4 tablespoons of butter and 1/2 cup of flour)."
+  - q: "How much roux do I need to thicken a liter of liquid?"
+    a: "In his velouté, 625 g of blond roux go into 5.5 liters of white stock. With his flour ratio, that is about 60 g of flour per liter. Use it as a start for a sauce that should coat a spoon, and correct it with the spoon test. A more deeply toasted roux thickens less."
+  - q: "Can you make it with a fat other than butter?"
+    a: "Yes. Escoffier asks for clarified butter, and for the brown roux he also allows clean clarified drippings from the pot. Oil is useful when you do not want a butter flavor, especially in a long dark roux, because whole butter burns sooner. The ratio by weight stays the same."
+  - q: "Why does béchamel taste of flour?"
+    a: "Because the white roux was undercooked, or because the sauce did not boil long enough afterward. A white roux only needs a few minutes, just long enough to lose the raw-flour taste, and the sauce then has to bubble, while you stir, until that taste is gone."
+  - q: "Can you keep a roux you have already made?"
+    a: "Yes. Escoffier recommends making the brown roux ahead, because it takes a while to cook. Cooled and covered, it keeps for several days in the refrigerator, and you can freeze it. A cold roux dissolves well in hot liquid."
+  - q: "Does a gluten-free roux work the same way?"
+    a: "Not with wheat flour, which contains gluten. Escoffier noted that you can make a roux with pure starch, using a smaller amount (about half the volume) and much more care. For a gluten-free sauce, the simplest option is an arrowroot or potato-starch slurry."
+faqInBody: true
 ---
 
-<p>A roux is flour cooked in fat before the liquid, in equal parts by weight. White, blond and brown take that gesture further, with more colour and toast. In German the name is Mehlschwitze, the German name, not an English translation. You build it in mise en place. It is not beurre manié, which stays raw.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/food-cost-calculator-restaurant?utm_source=web&amp;utm_medium=glosario&amp;utm_content=what-is-a-roux">Open the food cost calculator</a></p></aside>
-<h2>What it is, on the line</h2>
-<p>You cook the flour in the fat first. Butter is the usual fat in a classical sauce, and another fat does the job when the dish asks for it. Equal parts by weight means the flour is properly coated and the paste can move under the spoon. You stir over a heat that lets you see the colour change instead of racing it. A white roux stops when the raw flour smell has eased and the paste is still pale. A blond roux continues until the smell is toasted and the colour warms. A brown roux goes darker and more savoury, for sauces that want that colour.</p>
-<p>Mehlschwitze is what a German-speaking cook calls a roux. It is the German name for flour cooked in fat before the liquid. It is not an English phrase, and it is not a different technique wearing a borrowed word. Do not translate it into an English phrase and then cook a slurry by mistake. On this pass the word is roux. The work is the same: cook the flour, then add the liquid, whisking so the paste disperses instead of clumping. A careless splash invites lumps you will fight for the rest of the sauce.</p>
-<h2>What it is not</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesture</th><th>What it does</th><th>What it does not do</th></tr></thead><tbody><tr><td>Cook flour in fat first</td><td>Readies the starch for liquid</td><td>Does not meet the sauce raw</td></tr><tr><td>Equal parts by weight</td><td>The fat coats the flour</td><td>Is not a handful guessed in the pan</td></tr><tr><td>White, blond or brown</td><td>Colour and toast both change</td><td>Is not beurre manié</td></tr><tr><td>Mehlschwitze in German</td><td>The German name for this gesture</td><td>Is not an English translation</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/roux-cuerpo.jpg" alt="Three pans of roux on a stove, one still pale, one blond and toasted, one deep brown, each at a different stage." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How it behaves on the pass</h2>
-<p>On the pass, a roux should already exist. You do not stand in the window cooking flour while tickets stack up. Mise en place holds the white, blond or brown paste the menu needs, or the sauce that paste has already become. What the pass still needs is a taste. A sauce thickened with roux can turn dull if you took it too far, or floury if the paste was undercooked. The guest should not meet a cereal flavour in a sauce meant to taste of stock, milk or meat. The head chef tastes for that note because it means the base was rushed.</p>
-<p>The margin in a roux is small in the stores and large in the sauces that stand on it. The stock, the milk and the time inside the sauce are where the cost sits. Scorch the paste or leave it raw and you spoil the batch you built on top. That is the waste the head chef minds. Beurre manié is the raw cousin you reach for at the end, equal parts by weight as well, and a slurry is the starch-in-cold-liquid cousin. Neither replaces a roux the dish was written with. Swap them to save prep and you change the flavour and the shine.</p>
-<p>The guest never orders a roux. They order the sauce that stands on it, and your work is invisible when it is right: body without paste, a colour that belongs to the dish, a flavour of the liquid rather than of burnt flour. White for the pale sauces, blond where a light toast helps, brown where the plate is dark and savoury. Hold that choice steady from the first ticket to the last. A station that sends a different coat every time the same dish leaves has lost control of mise en place. The word is short. The habit of cooking the flour properly, every service, is the craft.</p>
-<figure><img src="/blog-assets/2026/05/espanola-cuerpo.jpg" alt="A cook whisking hot liquid into a cooked roux, the paste smoothing out into a sauce on the bench before service." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How people search for it</h2>
-<p>People type roux when they want flour cooked in fat before the liquid, in equal parts by weight. You will also see white roux, blond roux, brown roux, and what is a roux. In German the same gesture is called Mehlschwitze, and that is the German name, not a translation you reword in English. Do not let a search for roux land on a cornstarch slurry or on beurre manié. The slurry never cooks flour in fat. Beurre manié stays raw and goes in at the end.</p>
-<ul>
-<li><a href="https://aichef.pro/en/blog/beurre-manie">What beurre manié is</a></li>
-<li><a href="https://aichef.pro/en/blog/starch-slurry">Starch slurry</a></li>
-<li><a href="https://aichef.pro/en/blog/what-is-demi-glace">What demi-glace is</a></li>
-<li><a href="https://aichef.pro/en/blog/category/glossary">More from the glossary</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://enapp.aichef.pro/guest?utm_source=web&amp;utm_medium=glosario&amp;utm_content=what-is-a-roux">Enter as a guest</a></p></aside>
+A roux is flour cooked in fat, before the liquid of the sauce goes in. The fat cooks the flour and keeps it from lumping. In Le Guide Culinaire (1903), Auguste Escoffier gives 500 g of clarified butter and 600 g of flour, and he calls those the proportions for 1 kilo. With whole butter, which still contains water, equal weights come close to that ratio. The color of the cooking changes the flavor and the thickening power: white for béchamel, blond for velouté, and a light hazelnut for espagnole.
+
+## What a roux is
+
+You melt the fat, add the flour, and cook it, stirring, until it reaches the color the sauce calls for. That paste is the roux, and the liquid goes in afterward. If you added flour straight to a hot liquid, it would form lumps with raw centers. The fat separates the grains of flour so they cook evenly.
+
+Color changes flavor and thickening power. A white roux tastes of cooked flour, with no toast, and it thickens more. A dark roux tastes of hazelnut and thickens less, because a long cooking changes part of the starch. Escoffier warns that if the heat is too high, the starch burns inside the grain, the sauce turns bitter, and you may need double or triple the roux for the same body, without binding well. That bitterness does not cook out later.
+
+[Beurre manié](https://aichef.pro/en/blog/beurre-manie) uses the same ingredients and works the other way around: the flour goes in raw, kneaded with butter, at the end of a sauce that is already made. If you cook that paste first, you have started a roux.
+
+## Where it comes from
+
+Roux means "reddish" in French, after the color flour takes on as it toasts. In Le Guide Culinaire (1903), Escoffier describes three kinds, with the same ratio of butter to flour and different cooking times.
+
+The white one cooks for only a few minutes, long enough to take away the raw-flour taste, without taking color. It is the roux for béchamel.
+
+The blond one stops at a light blond. In the 1903 French text he stops it as soon as it has a slightly blond tint. The 1907 English text says to stop as soon as the color begins to change, before any real color shows. In the pan, that is a pale straw color. It is the roux for velouté.
+
+The brown one cooks slowly to a light hazelnut color, with a hazelnut smell, the smell of baked flour. It is the roux for espagnole. It wants clarified butter or a clean fat, because the water and the milk solids in whole butter get in the way of a long, even cooking.
+
+He gives 500 g of clarified butter, or clean clarified drippings from the pot, and 600 g of flour, and he labels that batch the proportions for 1 kilo. The 1907 English edition rounds the same idea to 8 oz of clarified butter and 9 oz of flour for about 1 lb of roux.
+
+Clarified butter is melted butter with the water and the white sediment taken off. Whole butter is about 80 percent fat. At home, 60 g of whole butter and 60 g of flour come close to his 50 g of clarified fat and 60 g of flour.
+
+## Ingredients and proportions
+
+To thicken 500 ml, using the flour from his velouté, about 60 g per liter:
+
+| Ingredient | Amount |
+| --- | --- |
+| Wheat flour | 30 g (about 1/4 cup) |
+| Clarified butter | 25 g (a scant 2 tablespoons) |
+| or whole butter, if you do not clarify | 30 g (about 2 tablespoons) |
+| Milk or stock, depending on the sauce | 500 ml (about 2 cups) |
+
+In the velouté in the book, 625 g of blond roux go into 5.5 liters of white veal stock. Worked out from 600 g of flour for every 500 g of butter, that is about 60 g of flour per liter at the start. The sauce still reduces and gets skimmed after that. The spoon decides at the end: if it coats too heavily, lengthen it with liquid; if it runs off, give it a little more cooking or a little more roux.
+
+A brown roux, at the same weight, thickens less. Do not use the same amount of a nearly black roux and expect the body of a white one.
+
+## How to make it, step by step
+
+<figure><img src="/blog-assets/2026/05/roux-cuerpo.jpg" alt="Three bowls of roux: white, blond, and brown" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+
+**1. Melt the fat** in a heavy pan, over medium-low heat. It should not burn. If you use whole butter, the foam is the water and the milk solids. For a short white roux, you can continue. For a brown roux, clarify it first, or use oil.
+
+**2. Add the flour all at once** and stir until no dry powder remains. The paste should be smooth.
+
+**3. Cook to the color.** White: a few minutes, a smell of cooked flour, no browning. Blond: a pale straw color. Brown: light hazelnut, gentle heat, stirring often. The step from hazelnut to burnt is quick. If you smell bitterness, it has gone too far.
+
+**4. Add the liquid.** To avoid lumps, one of the two should be cooler than the other. For béchamel, Escoffier pours boiling milk onto a roux that is almost cold; for velouté, he dissolves the roux in cold stock. If the roux and the liquid are both very hot, it is harder to get a smooth sauce. Whisk from the very start.
+
+**5. Bring it to a boil and simmer.** Stirring constantly, bring the sauce to a boil, lower the heat, and let it simmer gently until it thickens and no longer tastes of flour. A simple béchamel needs about 15 minutes. Escoffier's, which also contains veal and onion, simmers for about an hour, and his velouté for an hour and a half, while he skims it so it stays clean.
+
+**6. Season at the end.** If the liquid reduces, the salt concentrates. Taste when the body is already there.
+
+## Why it fails, and how to fix it
+
+**It tastes of flour.** The white roux was cooked too briefly, or the sauce never came to a boil afterward. Let it simmer longer over gentle heat, stirring so it does not stick.
+
+**It has lumps.** The liquid and the roux were both very hot, or you did not whisk enough at the start. Whisk hard off the heat, and if the lumps stay, strain the sauce. Next time, let the roux cool a little or use cold liquid.
+
+**The brown roux tastes bitter.** The heat was too high. Escoffier warns that the bitterness will not cook out, so start again over lower heat.
+
+**It is too thick or too thin.** If it is too thick, add hot liquid. If it is too thin, let it reduce or whisk in a little cold roux. Do not sprinkle flour straight into the sauce.
+
+## During service
+
+Make the roux during prep, when you have time to watch the heat. Escoffier recommends making the brown roux ahead, because it takes longer. Covered and refrigerated, it keeps for several days, and you can freeze it in portions.
+
+During service, keep roux-thickened sauces warm over a water bath, with a little butter on top or plastic wrap pressed onto the surface so a skin does not form. If they get too thick while they wait, add a splash of hot milk or stock.
+
+A sauce that still tastes of flour is not fixed with salt or with cream. It needs more cooking.
+
+## Variations
+
+**Béchamel.** White roux and milk. Escoffier pours the boiling milk onto a roux that is almost cold.
+
+**Velouté.** Blond roux and white stock of veal, poultry, or fish. The fish one, in his book, is skimmed for much less time than the meat one.
+
+**Espagnole.** Brown roux and brown stock, with a long skimming and tomato. From there, with another reduction, comes [demi-glace](https://aichef.pro/en/blog/what-is-demi-glace).
+
+**With oil.** Useful in a very dark roux, the kind some long stews use, because it stands more heat than butter. The flavor is less fine. The ratio is still by weight. Escoffier himself gives clarified butter or clean drippings.
+
+**Gluten-free.** Wheat flour contains gluten, so it will not work. Escoffier already noted that you can make a roux with pure starch, using a smaller amount and much more care. In practice, for a gluten-free sauce it is simpler to use an arrowroot or potato-starch [starch slurry](https://aichef.pro/en/blog/starch-slurry).
+
+## What you use it for
+
+Use it to make béchamel, velouté, and espagnole, and all the sauces built on them. Also to thicken a stew from the start, when you want the flavor of cooked flour. Hollandaise, béarnaise, and mayonnaise contain no roux: they are emulsions of egg yolk with butter (the first two) or with oil (mayonnaise).
+
+## More from the glossary
+
+- [Beurre manié](https://aichef.pro/en/blog/beurre-manie)
+- [Starch slurry](https://aichef.pro/en/blog/starch-slurry)
+- [Demi-glace](https://aichef.pro/en/blog/what-is-demi-glace)
+- [The glossary](https://aichef.pro/en/blog/category/glossary)
+
+## Frequently asked questions
+
+**Are the amounts equal parts?**
+In Escoffier's recipe, it is 500 g of clarified butter and 600 g of flour. Clarified butter contains no water, while regular butter is about 80 percent fat. So with regular butter, the equivalent is close to equal parts by weight: for example, 60 g of butter and 60 g of flour (about 4 tablespoons of butter and 1/2 cup of flour).
+
+**How much roux do I need to thicken a liter of liquid?**
+In his velouté, 625 g of blond roux go into 5.5 liters of white stock. With his flour ratio, that is about 60 g of flour per liter. Use it as a start for a sauce that should coat a spoon, and correct it with the spoon test. A more deeply toasted roux thickens less.
+
+**Can you make it with a fat other than butter?**
+Yes. Escoffier asks for clarified butter, and for the brown roux he also allows clean clarified drippings from the pot. Oil is useful when you do not want a butter flavor, especially in a long dark roux, because whole butter burns sooner. The ratio by weight stays the same.
+
+**Why does béchamel taste of flour?**
+Because the white roux was undercooked, or because the sauce did not boil long enough afterward. A white roux only needs a few minutes, just long enough to lose the raw-flour taste, and the sauce then has to bubble, while you stir, until that taste is gone.
+
+**Can you keep a roux you have already made?**
+Yes. Escoffier recommends making the brown roux ahead, because it takes a while to cook. Cooled and covered, it keeps for several days in the refrigerator, and you can freeze it. A cold roux dissolves well in hot liquid.
+
+**Does a gluten-free roux work the same way?**
+Not with wheat flour, which contains gluten. Escoffier noted that you can make a roux with pure starch, using a smaller amount (about half the volume) and much more care. For a gluten-free sauce, the simplest option is an arrowroot or potato-starch slurry.
