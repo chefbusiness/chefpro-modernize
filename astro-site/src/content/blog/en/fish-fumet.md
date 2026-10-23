@@ -29,7 +29,7 @@ faq:
   - q: "Should you brown the fish bones?"
     a: "For a classic fumet, no. Rinse them and sweat them with the vegetables, without color. A hard browning burns the bones and makes the stock bitter."
   - q: "How long does fish fumet keep?"
-    a: "Cool it quickly, in a shallow pan or over ice, and refrigerate it. Freeze what you will not use soon. An old fumet smells like tired fish, and that smell gets into the sauce."
+    a: "Cool it quickly, in a shallow pan or over ice, and refrigerate it. Freeze what you will not use soon. An old fumet smells of fish that is no longer fresh, and that smell gets into the sauce."
   - q: "How do you pronounce fumet?"
     a: "Roughly fyoo-MEH. The second syllable is short, close to the French."
 faqInBody: true
@@ -111,7 +111,7 @@ The bones cooked too long, gills or blood stayed in the pot, or the stock boiled
 For a classic fumet, no. Rinse them and sweat them with the vegetables, without color. A hard browning burns the bones and makes the stock bitter.
 
 **How long does fish fumet keep?**
-Cool it quickly, in a shallow pan or over ice, and refrigerate it. Freeze what you will not use soon. An old fumet smells like tired fish, and that smell gets into the sauce.
+Cool it quickly, in a shallow pan or over ice, and refrigerate it. Freeze what you will not use soon. An old fumet smells of fish that is no longer fresh, and that smell gets into the sauce.
 
 **How do you pronounce fumet?**
 Roughly fyoo-MEH. The second syllable is short, close to the French.
