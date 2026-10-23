@@ -6,6 +6,8 @@ modDate: 2026-10-23
 category: glossary
 tags: ["fumet", "fish stock", "sauce"]
 lang: en
+image: /blog-assets/2026/05/fumet-de-pescado-destacada.jpg
+imageAlt: "Fish fumet simmering with white-fish bones, leek, fennel and celery, with strained fumet in a glass jug"
 translations:
   es: "fumet-de-pescado"
   en: "fish-fumet"
@@ -43,7 +45,7 @@ Straight from the pot it is often unsalted, and too strong to eat with a spoon. 
 
 ## Where the name comes from
 
-Fumet is French. Classical French cooking treats it as a white stock with a short simmer, made from white-fish bones and mild vegetables, and professional kitchens still teach it that way.
+Fumet is French and refers to the aroma a food gives off as it cooks. In classical French cooking, as Auguste Escoffier codified it in the early twentieth century, fish fumet is one of the basic stocks: a white stock with a short simmer, made from white-fish bones. Professional kitchens still teach it that way.
 
 ## Ingredients and ratios
 
@@ -80,13 +82,13 @@ It turns bitter when the bones cook too long, when gills or blood stay in the po
 
 ## During service
 
-In a restaurant it is made during mise en place, and the sauces and the rice for service come out of it. If the finished sauce is bitter, change the base. Cool leftovers right away, do not leave them out for hours, and freeze what you will not use soon. An old fumet smells like tired fish, and that smell reaches the plate.
+In a restaurant it is made during mise en place, because many of the day's sauces and rice dishes start from it. If it tastes bitter, do not use it: that bitterness will carry into everything you make with it. Cool leftovers right away, do not leave them out for hours, and freeze whatever you will not use within a couple of days. An old fumet smells of fish that is no longer fresh, and that smell reaches the plate.
 
 ## Shrimp and shellfish fumet
 
 Shrimp, prawn, and lobster shells follow the same idea and make a different stock. Sweat them until they smell sweet and turn pink, then cover them with water, skim, and start tasting at 20 minutes. The flavor is sweeter and stronger, which suits seafood rice and a shellfish sauce.
 
-## Clarifying it, if you want to drink it
+## How to clarify it
 
 A fine sieve or a cloth takes out bones, vegetables, and sediment. A slight haze does not matter in a sauce or in rice. If you want the liquid clear enough to serve in a cup, whisk egg whites into the cold fumet, heat it slowly, and once they rise into a raft, leave it for a few minutes. Strain it through a damp cloth. What you get is a consommé.
 

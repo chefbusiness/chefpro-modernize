@@ -6,6 +6,8 @@ modDate: 2026-10-23
 category: glossary
 tags: ["beurre manie", "sauce", "thickener"]
 lang: en
+image: /blog-assets/2026/05/beurre-manie-destacada.jpg
+imageAlt: "Beurre manié: butter and flour paste rolled into a log and cut into cubes on marble"
 translations:
   es: "beurre-manie"
   en: "beurre-manie"
@@ -23,7 +25,7 @@ faq:
   - q: "When do you use beurre manié instead of a roux?"
     a: "Use it when the sauce is already made, still too thin, and reducing it further is not worth it. A roux is a decision you make at the start. Beurre manié is the correction at the end."
   - q: "Is the ratio by weight or by volume?"
-    a: "Weigh equal parts. Flour weighs less than butter, so equal spoons land closer to one part flour and two parts butter. If your recipe gives another ratio, follow the recipe."
+    a: "The classic ratio is by weight: the same amount of butter and flour. A tablespoon of flour weighs much less than a tablespoon of butter, so measuring by spoons gives a different paste."
   - q: "Do you cook beurre manié before it goes into the sauce?"
     a: "You do not cook the paste first. Once it is in the sauce, let the sauce simmer gently for a minute, short of a hard boil, so the starch cooks and the raw-flour taste goes away."
   - q: "Can you make it without gluten?"
@@ -52,7 +54,7 @@ For a paste you can use right away:
 | Unsalted butter, softened | 50 g (about 3 1/2 tablespoons) |
 | All-purpose flour | 50 g (about 6 to 7 tablespoons) |
 
-Weigh equal parts. Flour weighs less than butter, so the same spoon of each lands closer to one part flour and two parts butter, which is why some recipes write it that way. Both thicken a sauce. More butter means a little less thickening and more butter flavor. If your recipe gives another ratio, follow it. There is no fixed dose per quart: add small pieces, whisk, and stop when the sauce coats the back of a spoon.
+The classic ratio is equal parts by weight. Some recipes use a little more butter than flour, which gives a softer paste with more butter flavor that thickens slightly less. There is no fixed amount per quart: add small pieces, whisk, and stop when the sauce coats the back of a spoon.
 
 ## How to make it, step by step
 
@@ -74,7 +76,7 @@ Too much paste leaves the sauce dull, heavy, and tasting of cereal. When it coat
 
 Have the paste made and soft before service starts, and keep it covered if service runs long so it does not crust. Use it when a sauce is thin at plating and reducing it further would make it too salty or leave you with too little. Add a little, see how it falls from the spoon, and only then add more.
 
-If you had time to reduce a thin stock, reduce it. The paste would leave a flour taste on the plate. If the sauce already has body and only needs shine, finish it with cold butter and no flour. Covered in the refrigerator, it keeps as long as the butter it was made from, and you can freeze it in portions.
+If you have time to reduce the sauce, do that instead: reduction concentrates flavor, while flour dulls it slightly. If the sauce already has body and only needs shine, finish it with cold butter and no flour. Well covered, beurre manié keeps for several days in the refrigerator, and you can freeze it in portions.
 
 ## Roux, slurry, and plain butter
 
@@ -83,8 +85,6 @@ A roux is made at the start. You cook the flour in the fat, with more or less co
 A cornstarch slurry thickens without adding butter. Use it when the sauce should not take more fat, and when it has to be gluten-free. The wheat flour in beurre manié contains gluten.
 
 Cold butter whisked in at the end, with no flour, gives shine and a rounder flavor. When the sauce needs body, that butter is not enough, and you need the paste.
-
-If the sauce cannot take dairy, work the flour into olive oil. The sauce will taste of the oil.
 
 ## Where you use it
 
@@ -99,7 +99,7 @@ Both are butter and flour, and the work is different. A roux is cooked before an
 Use it when the sauce is already made, still too thin, and reducing it further is not worth it. A roux is a decision you make at the start. Beurre manié is the correction at the end.
 
 **Is the ratio by weight or by volume?**
-Weigh equal parts. Flour weighs less than butter, so equal spoons land closer to one part flour and two parts butter. If your recipe gives another ratio, follow the recipe.
+The classic ratio is by weight: the same amount of butter and flour. A tablespoon of flour weighs much less than a tablespoon of butter, so measuring by spoons gives a different paste.
 
 **Do you cook beurre manié before it goes into the sauce?**
 You do not cook the paste first. Once it is in the sauce, let the sauce simmer gently for a minute, short of a hard boil, so the starch cooks and the raw-flour taste goes away.

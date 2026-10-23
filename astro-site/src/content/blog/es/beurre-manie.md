@@ -6,6 +6,8 @@ modDate: 2026-10-23
 category: glosario
 tags: ["beurre manie", "salsas", "espesante"]
 lang: es
+image: /blog-assets/2026/05/beurre-manie-destacada.jpg
+imageAlt: "Beurre manié: pasta de mantequilla y harina en cilindro y en dados sobre mármol"
 translations:
   es: "beurre-manie"
   en: "beurre-manie"
@@ -23,7 +25,7 @@ faq:
   - q: "¿Cuándo se usa en vez del roux?"
     a: "Cuando la salsa ya está hecha, sigue líquida y no compensa seguir reduciendo. El roux se decide al principio. El beurre manié corrige al final."
   - q: "¿La proporción es a peso o a cucharadas?"
-    a: "En cocina se pesa a partes iguales. La harina pesa menos que la mantequilla, así que las mismas cucharadas se acercan a una parte de harina por dos de mantequilla. Las dos pastas espesan. Si tu receta indica otra proporción, síguela."
+    a: "La proporción clásica es en peso: la misma cantidad de mantequilla que de harina. Si mides con cucharas, ten en cuenta que una cucharada de harina pesa bastante menos que una de mantequilla, así que el resultado no será el mismo."
   - q: "¿Hay que cocer el beurre manié dentro de la salsa?"
     a: "La pasta no se cocina antes de echarla. Una vez dentro, deja la salsa un minuto a fuego suave, sin hervor fuerte, para que el almidón cueza y desaparezca el sabor a harina cruda."
   - q: "¿Se puede hacer sin gluten?"
@@ -37,11 +39,11 @@ El beurre manié es una pasta de mantequilla blanda y harina, amasadas a partes 
 
 ## Qué es el beurre manié
 
-Se prepara en la mise en place y se guarda blanda y tapada, cerca del fogón, durante el servicio. Cuando un estofado, un velouté o una salsa de sartén salen claros y no da tiempo a seguir reduciendo, se deshace un trozo en el líquido caliente y se bate. La salsa gana cuerpo en un minuto, sin el color tostado de un roux. La mantequilla tiene que ceder a la cuchara: si sale dura de la nevera, la harina queda en grumos. Déjala ablandar antes del servicio.
+Se prepara durante la mise en place y se guarda tapada, a temperatura ambiente, cerca de los fuegos. Cuando un guiso, un velouté o una salsa quedan demasiado líquidos y no hay tiempo para seguir reduciendo, se añade un trozo de esta pasta al líquido caliente y se bate. En un minuto la salsa gana cuerpo, sin el color tostado que aportaría un roux. Para que funcione, la mantequilla tiene que estar blanda: si está dura, la harina no se reparte bien y se forman grumos.
 
 ## Origen
 
-Beurre es mantequilla y manié quiere decir amasada. El nombre describe el trabajo: mantequilla y harina unidas con la mano o con una espátula, hasta que no queden zonas secas. Es una técnica clásica de la salsa francesa, de la misma familia que el roux, y se usa al final, cuando la salsa ya está hecha y solo le falta cuerpo.
+Beurre significa mantequilla y manié, amasada. El nombre describe exactamente cómo se hace: se trabajan la mantequilla y la harina con los dedos o con una espátula hasta que no quedan restos de harina seca. Es una técnica clásica de la cocina francesa, de la misma familia que el roux, pero con una diferencia importante: se usa al final, cuando la salsa ya está hecha y solo le falta cuerpo.
 
 ## Ingredientes y proporciones
 
@@ -52,7 +54,7 @@ Para una pasta de uso inmediato:
 | Mantequilla sin sal, blanda | 50 g |
 | Harina de trigo | 50 g |
 
-La proporción de cocina es el peso, a partes iguales. La harina pesa menos que la mantequilla, así que la misma cuchara de cada una se acerca a una parte de harina por dos de mantequilla. Por eso algunas recetas escriben esa proporción, o miden en cucharadas iguales. Las dos espesan. Con más mantequilla, la pasta espesa un poco menos y sabe más a mantequilla. Si tu receta da otra proporción, síguela. No hay una dosis fija por litro: añade trozos pequeños, bate y para cuando la salsa cubra el dorso de la cuchara.
+La proporción clásica es de partes iguales en peso. Algunas recetas usan algo más de mantequilla que de harina, lo que da una pasta un poco más suave y con más sabor a mantequilla, pero que espesa algo menos. No hay una cantidad fija por litro: añade trozos pequeños, bate y para cuando la salsa cubra el dorso de una cuchara.
 
 ## Cómo se hace, paso a paso
 
@@ -74,15 +76,15 @@ Echar de más deja la salsa mate, pesada y con sabor a cereal. Cuando cubra la c
 
 Ten la pasta hecha y blanda antes de empezar, y tápala si el servicio es largo para que no forme costra. Úsala al emplatar si la salsa está clara y reducirla más la dejaría salada o escasa. Añade poco, mira cómo cae de la cuchara y solo entonces echa más.
 
-Si el fondo daba tiempo a reducir, redúcelo: la pasta dejaría sabor a harina. Si la salsa ya tiene cuerpo y solo pide brillo, termínala con mantequilla fría, sin harina. Tapada en la nevera, aguanta lo que aguantaría esa mantequilla, y se puede congelar en porciones.
+Si tienes tiempo de reducir la salsa, es mejor hacerlo: la reducción concentra el sabor y la harina lo apaga un poco. Si la salsa ya tiene cuerpo y solo le falta brillo, termínala con mantequilla fría, sin harina. Bien tapado, el beurre manié se conserva varios días en la nevera, y también se puede congelar en porciones.
 
-## El roux, la papilla y la mantequilla
+## Diferencias con el roux y otros espesantes
 
 El roux se hace al principio. La harina se cocina en la grasa, con más o menos color, y el líquido se añade después. Ese tueste forma parte del sabor de una bechamel o de un velouté. En el beurre manié la harina entra cruda, dentro de una salsa que ya existe, y se cuece solo el minuto final.
 
-La papilla de almidón de maíz espesa sin añadir mantequilla, y es la salida cuando la salsa no debe llevar más grasa. También sirve si tiene que ser sin gluten: la harina de trigo del beurre manié contiene gluten. La papilla es otro espesante y lleva otro nombre.
+La maicena desleída en un poco de agua fría espesa sin añadir grasa. Es la opción adecuada cuando la salsa no admite más mantequilla o tiene que ser sin gluten, porque la harina de trigo del beurre manié sí lo contiene.
 
-La mantequilla fría, batida al final y sin harina, da brillo y un sabor más redondo. Si falta cuerpo, con mantequilla sola no basta.
+Montar la salsa con mantequilla fría al final, sin harina, le da brillo y un sabor más redondo, pero no la espesa de verdad.
 
 ## Dónde se usa
 
@@ -97,7 +99,7 @@ Los dos llevan grasa y harina, y el trabajo es distinto. El roux se cocina antes
 Cuando la salsa ya está hecha, sigue líquida y no compensa seguir reduciendo. El roux se decide al principio. El beurre manié corrige al final.
 
 **¿La proporción es a peso o a cucharadas?**
-En cocina se pesa a partes iguales. La harina pesa menos que la mantequilla, así que las mismas cucharadas se acercan a una parte de harina por dos de mantequilla. Las dos pastas espesan. Si tu receta indica otra proporción, síguela.
+La proporción clásica es en peso: la misma cantidad de mantequilla que de harina. Si mides con cucharas, ten en cuenta que una cucharada de harina pesa bastante menos que una de mantequilla, así que el resultado no será el mismo.
 
 **¿Hay que cocer el beurre manié dentro de la salsa?**
 La pasta no se cocina antes de echarla. Una vez dentro, deja la salsa un minuto a fuego suave, sin hervor fuerte, para que el almidón cueza y desaparezca el sabor a harina cruda.
