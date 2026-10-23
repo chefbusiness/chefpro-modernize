@@ -9,7 +9,7 @@ lang: pt
 image: /blog-assets/2026/05/espanola-destacada.jpg
 imageAlt: "Amido a dispersar-se num líquido frio, sem grumos, antes de entrar no molho"
 translations:
-  es: "papilla-de-almidon"
+  es: "ligar-con-maicena"
   en: "starch-slurry"
   fr: "liaison-a-la-fecule"
   de: "staerkebrei"

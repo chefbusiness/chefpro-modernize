@@ -86,7 +86,7 @@ SLUGS = {
         "nl": "visfumet",
     },
     "papilla": {
-        "es": "papilla-de-almidon",
+        "es": "ligar-con-maicena",
         "en": "starch-slurry",
         "fr": "liaison-a-la-fecule",
         "de": "staerkebrei",

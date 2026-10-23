@@ -6,10 +6,10 @@ modDate: 2026-10-23
 category: glossary
 tags: ["slurry", "cornstarch", "sauce"]
 lang: en
-image: /blog-assets/2026/05/papilla-de-almidon-destacada.jpg
+image: /blog-assets/2026/05/ligar-con-maicena-destacada.jpg
 imageAlt: "Cornstarch mixed with cold water in a glass, with a saucepan of brown sauce behind"
 translations:
-  es: "papilla-de-almidon"
+  es: "ligar-con-maicena"
   en: "starch-slurry"
   fr: "liaison-a-la-fecule"
   de: "staerkebrei"

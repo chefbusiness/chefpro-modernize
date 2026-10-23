@@ -154,7 +154,7 @@ COPY_BUSCA = {
 COPY_LINKS = {
     "roux": [
         ("https://aichef.pro/blog/beurre-manie", "Qué es el beurre manié"),
-        ("https://aichef.pro/blog/papilla-de-almidon", "La papilla de almidón"),
+        ("https://aichef.pro/blog/ligar-con-maicena", "Ligar con maicena"),
         ("https://aichef.pro/blog/demi-glace-concepto-y-definicion", "Qué es la demi-glace"),
     ],
     "demi": [

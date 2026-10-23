@@ -9,7 +9,7 @@ lang: fr
 image: /blog-assets/2026/05/espanola-destacada.jpg
 imageAlt: "Fécule délayée à froid dans un petit bol, sans grumeaux, avant d'entrer dans la sauce"
 translations:
-  es: "papilla-de-almidon"
+  es: "ligar-con-maicena"
   en: "starch-slurry"
   fr: "liaison-a-la-fecule"
   de: "staerkebrei"

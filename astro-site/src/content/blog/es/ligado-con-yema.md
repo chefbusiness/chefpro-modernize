@@ -31,7 +31,7 @@ faq:
   - q: "¿Qué hago si se ha cortado en grumos?"
     a: "Si solo ves unas hebras, cuélala por un colador fino enseguida, fuera del fuego. Si ha cuajado del todo, ya no se recupera: vuelve a ligar con salsa y yemas nuevas, a fuego más suave."
   - q: "¿Cuándo no conviene usarlo?"
-    a: "Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o una papilla de almidón."
+    a: "Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o un poco de maicena desleída."
 faqInBody: true
 ---
 
@@ -105,13 +105,13 @@ Si el servicio es largo, liga la salsa por tandas. Una salsa con yema no debe pa
 
 ## Para qué se usa
 
-Se usa en veloutés, blanquetas, fricasés y salsas de pescado como la normanda, y también en cremas de verduras que se van a servir enseguida. Si la salsa tiene que quedar sin huevo, o transparente y brillante, es mejor ligarla con una [papilla de almidón](https://aichef.pro/blog/papilla-de-almidon).
+Se usa en veloutés, blanquetas, fricasés y salsas de pescado como la normanda, y también en cremas de verduras que se van a servir enseguida. Si la salsa tiene que quedar sin huevo, o transparente y brillante, es mejor [ligar con maicena](https://aichef.pro/blog/ligar-con-maicena).
 
 ## Para seguir en el glosario
 
 - [Emulsión](https://aichef.pro/blog/emulsion-concepto-definicion)
 - [Beurre blanc](https://aichef.pro/blog/beurre-blanc)
-- [Papilla de almidón](https://aichef.pro/blog/papilla-de-almidon)
+- [Ligar con maicena](https://aichef.pro/blog/ligar-con-maicena)
 - [El glosario](https://aichef.pro/blog/categoria/glosario)
 
 ## Preguntas frecuentes
@@ -132,4 +132,4 @@ En la salsa normanda, Escoffier usa 5 yemas y 200 ml de nata para 750 ml de velo
 Si solo ves unas hebras, cuélala por un colador fino enseguida, fuera del fuego. Si ha cuajado del todo, ya no se recupera: vuelve a ligar con salsa y yemas nuevas, a fuego más suave.
 
 **¿Cuándo no conviene usarlo?**
-Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o una papilla de almidón.
+Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o un poco de maicena desleída.

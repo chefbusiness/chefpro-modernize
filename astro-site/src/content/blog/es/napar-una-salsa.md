@@ -27,7 +27,7 @@ faq:
   - q: "¿Una salsa brillante siempre napa?"
     a: "No. El brillo y el cuerpo son cosas distintas. Una salsa montada con mantequilla puede brillar y correr por el plato, y una salsa espesada con almidón puede napar y quedar mate. Fíjate en si la salsa se queda en la cuchara."
   - q: "¿Qué hago si se escurre?"
-    a: "Si tiene tiempo, redúcela a fuego suave. Si no lo tiene, espésala con lo que corresponda a esa salsa: un poco de roux si estás a tiempo, beurre manié o papilla de almidón si ya está hecha. Vuelve a hacer la prueba de la cuchara."
+    a: "Si tiene tiempo, redúcela a fuego suave. Si no lo tiene, espésala con lo que corresponda a esa salsa: un poco de roux si estás a tiempo, beurre manié o maicena desleída si ya está hecha. Vuelve a hacer la prueba de la cuchara."
   - q: "¿Qué hago si está demasiado espesa?"
     a: "Añade fondo o agua caliente a cucharadas, batiendo, y vuelve a comprobarla. Una salsa demasiado espesa no cubre bien la carne: se queda amontonada encima."
   - q: "¿Cómo se pronuncia nappé?"
@@ -59,7 +59,7 @@ No hay una tabla de gramos que valga para todas las salsas. El cuerpo sale de si
 | --- | --- |
 | Reducción o glace | Capa brillante, lenta, que se pega |
 | [Roux](https://aichef.pro/blog/roux-concepto-y-definicion), en una bechamel o un velouté | Capa lisa, algo mate si no lleva mantequilla al final |
-| Papilla de almidón | Cubre enseguida al hervir un minuto, y puede quedar más opaca |
+| [Maicena desleída](https://aichef.pro/blog/ligar-con-maicena) | Cubre enseguida al hervir un minuto, y puede quedar más opaca |
 | Yema y nata | Capa sedosa. Si hierve, el grano delata que la yema ha cuajado |
 
 <figure><img src="/blog-assets/2026/05/demi-glace-cuerpo.jpg" alt="Sartén con una salsa oscura reducida y una cuchara de madera" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
@@ -94,7 +94,7 @@ En el plato, una salsa que napa se queda sobre la carne o la verdura sin extende
 
 **Por roux.** Es el camino de la bechamel, el velouté y la española. El espesante va al principio.
 
-**Con beurre manié o con papilla de almidón.** Se usan al final, cuando la salsa ya está hecha y no hay tiempo de reducirla más.
+**Con beurre manié o con maicena desleída.** Se usan al final, cuando la salsa ya está hecha y no hay tiempo de reducirla más.
 
 **Con yema.** Da un cuerpo fino y un sabor más rico. Si la salsa no lleva harina, no puede hervir después.
 
@@ -125,7 +125,7 @@ Con una cuchara. Métela en la salsa, sácala y mira el dorso: tiene que quedar 
 No. El brillo y el cuerpo son cosas distintas. Una salsa montada con mantequilla puede brillar y correr por el plato, y una salsa espesada con almidón puede napar y quedar mate. Fíjate en si la salsa se queda en la cuchara.
 
 **¿Qué hago si se escurre?**
-Si tiene tiempo, redúcela a fuego suave. Si no lo tiene, espésala con lo que corresponda a esa salsa: un poco de roux si estás a tiempo, beurre manié o papilla de almidón si ya está hecha. Vuelve a hacer la prueba de la cuchara.
+Si tiene tiempo, redúcela a fuego suave. Si no lo tiene, espésala con lo que corresponda a esa salsa: un poco de roux si estás a tiempo, beurre manié o maicena desleída si ya está hecha. Vuelve a hacer la prueba de la cuchara.
 
 **¿Qué hago si está demasiado espesa?**
 Añade fondo o agua caliente a cucharadas, batiendo, y vuelve a comprobarla. Una salsa demasiado espesa no cubre bien la carne: se queda amontonada encima.
