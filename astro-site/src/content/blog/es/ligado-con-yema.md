@@ -31,7 +31,7 @@ faq:
   - q: "¿Qué hago si se ha cortado en grumos?"
     a: "Si solo ves unas hebras, cuélala por un colador fino enseguida, fuera del fuego. Si ha cuajado del todo, ya no se recupera: vuelve a ligar con salsa y yemas nuevas, a fuego más suave."
   - q: "¿Cuándo no conviene usarlo?"
-    a: "Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o una papilla de almidón."
+    a: "Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o un poco de maicena desleída."
 faqInBody: true
 ---
 
@@ -132,4 +132,4 @@ En la salsa normanda, Escoffier usa 5 yemas y 200 ml de nata para 750 ml de velo
 Si solo ves unas hebras, cuélala por un colador fino enseguida, fuera del fuego. Si ha cuajado del todo, ya no se recupera: vuelve a ligar con salsa y yemas nuevas, a fuego más suave.
 
 **¿Cuándo no conviene usarlo?**
-Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o una papilla de almidón.
+Cuando la salsa no lleva harina y tiene que hervir después, cuando se va a congelar o cuando ya tiene el cuerpo justo y solo le falta brillo. Para dar brillo, basta con montarla con mantequilla fría. Para un plato sin huevo, usa un roux o un poco de maicena desleída.

@@ -31,7 +31,7 @@ faq:
   - q: "¿Se puede conservar el roux ya hecho?"
     a: "Sí. Escoffier recomienda hacer el roux oscuro con antelación, porque tarda en cocerse. Enfriado y tapado, se guarda varios días en la nevera, y también se puede congelar. Un roux frío se disuelve bien en un líquido caliente."
   - q: "¿El roux sin gluten funciona igual?"
-    a: "No con harina de trigo, que lleva gluten. Escoffier ya señalaba que se puede hacer un roux con almidón puro, usando menos cantidad y con mucho más cuidado. Para una salsa sin gluten, lo más sencillo es una papilla de arrurruz o de fécula de patata."
+    a: "No con harina de trigo, que lleva gluten. Escoffier ya señalaba que se puede hacer un roux con almidón puro, usando menos cantidad y con mucho más cuidado. Para una salsa sin gluten, lo más sencillo es arrurruz desleído en agua fría o fécula de patata desleída en agua fría."
 faqInBody: true
 ---
 
@@ -116,7 +116,7 @@ Una salsa que todavía sabe a harina no se arregla con sal ni con nata. Le falta
 
 **Con aceite.** Útil en un roux muy oscuro, del tipo que se usa en algunos guisos largos, porque aguanta más fuego que la mantequilla. El sabor es menos fino. La proporción sigue siendo en peso.
 
-**Sin gluten.** La harina de trigo lleva gluten, así que no sirve. Escoffier ya señalaba que se puede hacer un roux con almidón puro, con menos cantidad y con mucho más cuidado. En la práctica, para una salsa sin gluten es más sencillo usar un [ligado con maicena](https://aichef.pro/blog/ligar-con-maicena) de arrurruz o de fécula.
+**Sin gluten.** La harina de trigo lleva gluten, así que no sirve. Escoffier ya señalaba que se puede hacer un roux con almidón puro, con menos cantidad y con mucho más cuidado. En la práctica, para una salsa sin gluten es más sencillo [ligar con maicena](https://aichef.pro/blog/ligar-con-maicena), con arrurruz o con fécula de patata desleídos en agua fría.
 
 ## Para qué se usa
 
@@ -153,4 +153,4 @@ Porque el roux blanco se quedó corto de cocción, o porque la salsa no hirvió 
 Sí. Escoffier recomienda hacer el roux oscuro con antelación, porque tarda en cocerse. Enfriado y tapado, se guarda varios días en la nevera, y también se puede congelar. Un roux frío se disuelve bien en un líquido caliente.
 
 **¿El roux sin gluten funciona igual?**
-No con harina de trigo, que lleva gluten. Escoffier ya señalaba que se puede hacer un roux con almidón puro, usando menos cantidad y con mucho más cuidado. Para una salsa sin gluten, lo más sencillo es una papilla de arrurruz o de fécula de patata.
+No con harina de trigo, que lleva gluten. Escoffier ya señalaba que se puede hacer un roux con almidón puro, usando menos cantidad y con mucho más cuidado. Para una salsa sin gluten, lo más sencillo es arrurruz desleído en agua fría o fécula de patata desleída en agua fría.

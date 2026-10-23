@@ -1,6 +1,6 @@
 ---
 title: "Ligar con maicena: qué es y cómo se usa"
-description: "Ligar con maicena es fécula desleída en líquido frío para espesar una salsa. Te explicamos la cantidad, por qué va en frío y qué almidón usar."
+description: "Ligar con maicena es espesar una salsa con almidón desleído en líquido frío. Te explicamos la cantidad, por qué va en frío y qué almidón usar."
 pubDate: 2026-10-22
 modDate: 2026-10-23
 category: glosario
@@ -18,7 +18,7 @@ translations:
   nl: "zetmeelpap"
 definedTerm:
   name: "Ligar con maicena"
-  description: "Ligar con maicena es almidón (maicena, fécula de patata o arrurruz) desleído en un poco de líquido frío, que se añade batiendo a una salsa caliente para espesarla. En cocina también se dice simplemente «ligar con maicena». Para una salsa normal, una buena cantidad de partida es 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Escoffier usaba arrurruz para su jus de veau lié: 30 g por cada litro de fondo de ternera reducido."
+  description: "Ligar con maicena es espesar una salsa caliente añadiéndole, sin dejar de batir, almidón (maicena, fécula de patata o arrurruz) desleído en un poco de líquido frío. A esa mezcla se le llama maicena desleída y, en algunos libros, papilla de almidón. Para una salsa normal, una buena cantidad de partida es 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Escoffier usaba arrurruz para su jus de veau lié: 30 g por cada litro de fondo de ternera reducido."
 faq:
   - q: "¿Por qué se deslíe en frío?"
     a: "Porque el almidón, si cae seco sobre una salsa caliente, gelifica por fuera y encierra polvo seco por dentro. Eso es el grumo. El líquido frío separa los granos. Al entrar en la salsa caliente, se hinchan todos a la vez."
@@ -35,7 +35,7 @@ faq:
 faqInBody: true
 ---
 
-Ligar con maicena es almidón (maicena, fécula de patata o arrurruz) desleído en un poco de líquido frío, que se añade batiendo a una salsa caliente para espesarla. En cocina también se dice simplemente «ligar con maicena». Para una salsa normal, una buena cantidad de partida es 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Escoffier usaba arrurruz para su jus de veau lié: 30 g por cada litro de fondo de ternera reducido.
+Ligar con maicena es espesar una salsa caliente añadiéndole, sin dejar de batir, almidón (maicena, fécula de patata o arrurruz) desleído en un poco de líquido frío. A esa mezcla se le llama maicena desleída y, en algunos libros, papilla de almidón. Para una salsa normal, una buena cantidad de partida es 8 g de maicena desleídos en 30 ml de agua fría por cada 250 ml de salsa. Escoffier usaba arrurruz para su jus de veau lié: 30 g por cada litro de fondo de ternera reducido.
 
 ## Qué es ligar con maicena
 
