@@ -1,13 +1,13 @@
 ---
-title: "What is beurre blanc? Serve this butter sauce at once"
-description: "Beurre blanc is shallot, white wine and vinegar, reduced and mounted with cold butter. It is an unstable emulsion, so you serve it at the moment."
+title: "Beurre blanc: what it is and how to make it"
+description: "Beurre blanc is a French sauce of butter, shallot, white wine, and vinegar. Here is where it comes from, the ratios, the method, and how to save it if it breaks."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glossary
 tags: ["beurre blanc", "emulsion", "sauce"]
 lang: en
-image: /blog-assets/2026/05/bearnesa-destacada.jpg
-imageAlt: "A small pan of pale glossy beurre blanc, shallot reduction still visible at the edge, a bowl of cold butter beside the whisk."
+image: /blog-assets/2026/05/beurre-blanc-destacada.jpg
+imageAlt: "Turbot with beurre blanc and a copper saucepan of the same sauce in the background"
 translations:
   es: "beurre-blanc"
   en: "beurre-blanc"
@@ -18,37 +18,95 @@ translations:
   nl: "beurre-blanc"
 definedTerm:
   name: "Beurre blanc"
-  description: "Beurre blanc is a reduction of shallot, white wine and vinegar, mounted with cold butter. It is an unstable emulsion, so you serve it at the moment. It will not wait the way a starch-bound sauce will. Hold the reduction in mise en place and mount it on the pass."
+  description: "Beurre blanc is a French butter sauce. You reduce minced shallot with white wine and white wine vinegar, then whisk in cold butter a little at a time until the sauce turns creamy, ivory, and lightly tart. The name means white butter. It comes from the Loire Valley, near Nantes, where it was served with river fish. Cooks still use it for lean white fish, shellfish, and vegetables such as asparagus."
 faq:
-  - q: "What is in a beurre blanc?"
-    a: "Shallot, white wine and vinegar, reduced until the liquid is potent, then mounted with cold butter off a hard boil. There is no flour and no yolk. The butter is whisked in so it disperses and the sauce looks pale and glossy. Taste the reduction before the butter goes in. If it is watery, reduce further. If it is harsh, you have already gone too far. The butter rounds it."
-  - q: "Why will beurre blanc not hold through service?"
-    a: "It is an unstable emulsion. Nothing in the pan has the holding power of an egg yolk in a cold mayonnaise. A hard boil splits it, and a long wait lets fat and liquid part company. You can hold the reduction in mise en place. You mount to the call, plate by plate or in a small wave. The head chef looks for gloss."
-  - q: "Is beurre blanc the same as mounting a jus with butter?"
-    a: "No. Mounting a jus is monter au beurre: cold butter whisked into a sauce you already made, for shine and roundness. Beurre blanc is the sauce. Its body is the butter, and its flavour is the shallot, wine and vinegar reduction. Use the mount when the pan already has a jus. Use beurre blanc when the plate is supposed to taste of that pale, sharp butter sauce."
-  - q: "What does the guest notice when beurre blanc is tired?"
-    a: "A greasy film, a waxy weight, or a sharp edge with no butter to round it. Sometimes the sauce has split into a clear rim and a dull centre. Those are hold and heat faults, and they show up under the lamp before they show up in the dining room. Send it as you mount it."
+  - q: "What is the difference between beurre blanc and hollandaise?"
+    a: "Both are warm butter emulsions with a little acid. Hollandaise contains egg yolks, which make it thicker and more stable. Beurre blanc is only the reduction and the butter, so it is lighter and more delicate."
+  - q: "Does beurre blanc contain cream?"
+    a: "The classic recipe does not. Some cooks add a little cream to the reduction so the sauce holds better. That is a variation."
+  - q: "Can you make beurre blanc ahead of time?"
+    a: "You can make the reduction hours ahead and keep it in the refrigerator. Whisk in the butter shortly before you serve."
+  - q: "Can you reheat beurre blanc?"
+    a: "Reheating is risky, because the sauce breaks easily. If it has cooled and firmed up, warm it very gently over a water bath while you whisk."
+  - q: "How do you pronounce beurre blanc?"
+    a: "Roughly bur blahn, with a nasal last syllable."
+  - q: "What does beurre blanc mean?"
+    a: "It means white butter. On menus and in kitchens, people almost always keep the French name."
+faqInBody: true
 ---
 
-<p>Beurre blanc is a reduction of shallot, white wine and vinegar, mounted with cold butter. It is an unstable emulsion, so you serve it at the moment. It will not wait the way a starch-bound sauce will. Hold the reduction in mise en place and mount it on the pass.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/en/use-cases/role/head-chef?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Open the head chef page</a></p></aside>
-<h2>What it is, on the line</h2>
-<p>You start beurre blanc with the reduction, not with the butter. Shallot, white wine and vinegar cook down until the liquid is potent and almost syrupy, still sharp, no longer watery. That reduction is the acid and the aroma. Cold butter then goes in off a hard boil, whisked until the sauce looks pale and glossy. The butter is dispersed in what little liquid remains. There is no flour and no yolk. What holds it is the whisk, a gentle heat, and your attention. Walk away and it will not be waiting in the same state.</p>
-<p>Call it an unstable emulsion. Mayonnaise can hold because the yolk is a strong emulsifier and the sauce is cold. Beurre blanc has no such safety. Heat that climbs to a hard boil splits it. A long wait lets it slacken into fat and liquid. It is not a hollandaise, and it is not a vinaigrette you shake back together later in the service. You serve it at the moment the fish or the vegetable is ready. If it splits, a splash of the reduction or a fresh piece of cold butter, whisked in, may bring it back.</p>
-<h2>What it is not</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesture</th><th>What it does</th><th>What it does not do</th></tr></thead><tbody><tr><td>Reduce shallot, wine, vinegar</td><td>Builds the sharp aromatic base</td><td>Is not a vinaigrette</td></tr><tr><td>Mount with cold butter</td><td>Makes a pale glossy sauce</td><td>Is not a stable emulsion</td></tr><tr><td>Serve at the moment</td><td>Goes out with the plate</td><td>Does not wait under the lamp</td></tr><tr><td>Hold the reduction only</td><td>Mise en place stays usable</td><td>Does not hold the mounted sauce</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/vinagreta-cuerpo.jpg" alt="A cook mounting cold butter into a shallot, wine and vinegar reduction, the sauce turning creamy as the whisk moves." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How it behaves on the pass</h2>
-<p>On the pass, the reduction sits ready and the butter stays cold. That is the mise en place. You do not mount a hotel pan of beurre blanc at the start of service and hope. Each plate, or each small wave, gets its own finish. The saucier whisks, tastes sharpness against the roundness of the butter, and sends. The head chef looks at the surface. Gloss and a soft cling mean the emulsion is still together. A ring of clear fat at the edge means it has let go, and that plate does not leave. The guest should taste shallot and acid through the butter, not a greasy film.</p>
-<p>The margin in beurre blanc is the butter and the wine you reduce away. Both are easy to waste if the station mounts more than the pass can send, because a mounted sauce you cannot serve is a loss. Build the reduction for the service you have, and mount to the call. The head chef would rather see a smaller pan made again than a split bath thrown out. Taste the reduction before any butter goes in. If it is harsh, you have gone too far. If it is watery, you have not gone far enough. No figure on a card replaces that taste.</p>
-<p>The guest meets beurre blanc as a pale sauce with a clean acid edge and a butter finish that should feel light, not waxy. It belongs with fish, with vegetables, and with anything that wants richness without a dark glaze. It does not belong in a holding drawer. If the plate waits under the lamp, the sauce suffers before the food does. Coordinate the pass so the mount happens as the plate is wiped and called away. The ingredients are few. The timing is the recipe. A station that understands the hold will send the same sauce from the first ticket to the last.</p>
-<figure><img src="/blog-assets/2026/05/mayonesa-cuerpo.jpg" alt="Pale butter sauce spooned beside a piece of fish on a warm plate, the surface still glossy at the pass." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>How people search for it</h2>
-<p>Beurre blanc is what people type when they want the pale butter sauce, and the spelling rarely changes. You will also see beurre blanc sauce, white butter sauce, and shallot butter sauce in the same search. The pot is a reduction of shallot, white wine and vinegar, mounted with cold butter. It is not monter au beurre, which polishes some other sauce, and it is not beurre manié, which carries flour. Call it an unstable emulsion and serve it at the moment.</p>
-<ul>
-<li><a href="https://aichef.pro/en/blog/monter-au-beurre">Monter au beurre</a></li>
-<li><a href="https://aichef.pro/en/blog/what-is-an-emulsion">What an emulsion is</a></li>
-<li><a href="https://aichef.pro/en/blog/gastrique">What a gastrique is</a></li>
-<li><a href="https://aichef.pro/en/blog/category/glossary">More from the glossary</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cook with AI agents</p><p class="mt-2 text-foreground">Ask AI Chef Pro's AI agents for recipes, tech sheets and variations of this technique tailored to your kitchen.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://enapp.aichef.pro/guest?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-blanc">Enter as a guest</a></p></aside>
+Beurre blanc is a French butter sauce. You reduce minced shallot with white wine and white wine vinegar, then whisk in cold butter a little at a time until the sauce turns creamy, ivory, and lightly tart. The name means white butter. It comes from the Loire Valley, near Nantes, where it was served with river fish. Cooks still use it for lean white fish, shellfish, and vegetables such as asparagus.
+
+## What beurre blanc is
+
+Technically, it is an emulsion. The butterfat breaks into very fine droplets and stays suspended in the small amount of liquid left from the reduction. Hollandaise and béarnaise get their stability from egg yolks. Beurre blanc has no yolk, which is why it is more delicate. If it gets too hot, the butter separates and the sauce breaks. If it cools, it thickens and tastes greasy.
+
+In a restaurant, the reduction is made ahead, during mise en place. The butter goes in shortly before service, and the sauce stays warm over a water bath until you spoon it onto the plate.
+
+## Where it comes from
+
+The usual story credits Clémence Lefeuvre, a cook at a restaurant on the Loire in Saint-Julien-de-Concelles, in the late nineteenth century. She set out to make a béarnaise, left out the egg yolks, and found that butter whisked into the reduction worked just as well. Whether or not that is exactly how it happened, the sauce became famous with pike from the Loire. In that part of France people still call it beurre nantais.
+
+## Ingredients and ratios
+
+For about 200 ml of sauce, enough for four servings:
+
+| Ingredient | Amount |
+| --- | --- |
+| Shallot, minced very fine | 50 g (two medium shallots) |
+| Dry white wine | 100 ml (a scant 1/2 cup) |
+| White wine vinegar | 50 ml (about 3 1/2 tablespoons) |
+| Unsalted butter, very cold, cut into cubes | 200 g (about 1 3/4 sticks) |
+| Salt and white pepper | To taste |
+
+Muscadet is the traditional wine. Any dry white without oak will do. Butter makes up almost the entire volume of the sauce, so use a good one with a high fat content.
+
+## How to make it, step by step
+
+**1. Make the reduction.** Put the shallot, wine, and vinegar in a small heavy saucepan. Cook over medium heat until about two tablespoons of liquid remain. The shallot should be tender and still moist, never dry or browned. If it browns, the sauce turns bitter.
+
+**2. Whisk in the butter.** Turn the heat to low. Add two or three cubes of butter and whisk until they are almost melted. Repeat with the rest, a little at a time, whisking the whole time. The sauce will thicken and turn glossy. If the saucepan starts to get too hot, take it off the burner for a few seconds and keep whisking.
+
+**3. Finish and serve.** Season with salt and white pepper. Strain it if you want the sauce completely smooth, or leave the shallot in for more flavor. Serve it right away, or hold it warm.
+
+## Why it breaks and how to fix it
+
+Beurre blanc almost always breaks from too much heat. If the sauce boils, or if it climbs past about 140°F (60°C), the fat separates and the surface looks oily. It also breaks if you add the butter too quickly, or if the butter is soft instead of cold.
+
+If it breaks, do not throw it out. Put a spoonful of cold water or cream in a clean saucepan and whisk the broken sauce in a little at a time, the same way you built it. Most of the time the emulsion comes back together.
+
+## How to hold it during service
+
+The best plan is to finish it just before you serve. If it has to wait, keep it in a bowl set over hot water, around 130 to 140°F (55 to 60°C), or in a thermos, and whisk it now and then. Do not put it back on a direct flame to reheat it.
+
+## Variations
+
+**With cream.** A spoonful of cream, added to the reduction before the butter, makes the sauce more stable and easier to hold. Restaurants do this often. The flavor is a little less clean than a classic beurre blanc.
+
+**With lemon.** Replace part of the vinegar with lemon juice, or add a few drops at the end. The sauce tastes fresher, and it goes well with delicate fish and with scallops.
+
+**Beurre rouge.** Use the same method with red wine instead of white. It suits stronger-tasting fish and some meats.
+
+## What to serve it with
+
+It is a good sauce for white fish such as branzino, turbot, sole, or hake, and for salmon, scallops, shrimp, or asparagus. It also goes well with steamed vegetables or a poached egg.
+
+## Frequently asked questions
+
+**What is the difference between beurre blanc and hollandaise?**
+Both are warm butter emulsions with a little acid. Hollandaise contains egg yolks, which make it thicker and more stable. Beurre blanc is only the reduction and the butter, so it is lighter and more delicate.
+
+**Does beurre blanc contain cream?**
+The classic recipe does not. Some cooks add a little cream to the reduction so the sauce holds better. That is a variation.
+
+**Can you make beurre blanc ahead of time?**
+You can make the reduction hours ahead and keep it in the refrigerator. Whisk in the butter shortly before you serve.
+
+**Can you reheat beurre blanc?**
+Reheating is risky, because the sauce breaks easily. If it has cooled and firmed up, warm it very gently over a water bath while you whisk.
+
+**How do you pronounce beurre blanc?**
+Roughly bur blahn, with a nasal last syllable.
+
+**What does beurre blanc mean?**
+It means white butter. On menus and in kitchens, people almost always keep the French name.

@@ -1,13 +1,13 @@
 ---
-title: "Fumet: el fondo de pescado que no se cuece de más"
-description: "El fumet es un fondo de espinas y aromáticos, sin tostar como un fondo oscuro. Si se cuece de más, amarga. No es la sopa que sale a la sala."
+title: "Fumet de pescado: qué es y cómo se hace"
+description: "El fumet de pescado es un fondo corto de espinas y aromáticos. Te explicamos en qué se distingue del caldo, las proporciones, el paso a paso y por qué amarga si se cuece de más."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
 tags: ["fumet", "fondos", "pescado"]
 lang: es
-image: /blog-assets/2026/05/fondo-blanco-destacada.jpg
-imageAlt: "Espinas de pescado blanco, lavadas, con chalota y hierbas, en una olla cubierta de agua a hervor suave."
+image: /blog-assets/2026/05/fumet-de-pescado-destacada.jpg
+imageAlt: "Fumet de pescado cociendo con espinas de pescado blanco, puerro, hinojo y apio, y fumet ya colado en una jarra"
 translations:
   es: "fumet-de-pescado"
   en: "fish-fumet"
@@ -17,38 +17,99 @@ translations:
   pt: "fumet-de-peixe"
   nl: "visfumet"
 definedTerm:
-  name: "Fumet"
-  description: "El fumet es un fondo de pescado hecho con espinas, recortes y aromáticos, sin el tostado de un fondo oscuro. Se cuece poco, a hervor suave, y se corta antes de que el hueso amargue. Sirve de base a salsas y arroces caldosos. No es un plato de cuchara ni un caldo genérico con pescado de cualquier clase."
+  name: "Fumet de pescado"
+  description: "El fumet de pescado es un fondo francés hecho con espinas, recortes y aromáticos. Se cubre con agua fría, se mantiene a hervor suave y se retira del fuego cuando el líquido sabe limpio y dulce de pescado, antes de que la espina amargue. Con él se preparan salsas, arroces y paellas de marisco. En casa se llama muchas veces caldo de pescado, aunque en cocina el uso no es el mismo."
 faq:
-  - q: "¿El fumet es un caldo de pescado?"
-    a: "En la carta de muchas casas se mezclan los nombres. En la partida, el fumet es el fondo de espinas blancas y aromáticos, cocido poco y colado fino, pensado como base. Un caldo de pescado de la casa puede llevar más agua, más tiempo u otro género, y a veces se bebe. No se intercambian sin probar y sin mirar la ficha."
-  - q: "¿Por qué amarga?"
-    a: "Por la espina cocida de más, por las agallas, por la sangre o por un hervor violento que emulsiona la suciedad. El amargor no se corrige con nata ni con azúcar. Se corta la cocción en cuanto el fondo sabe limpio, se cuela sin remover el poso y, si ya amargó, se hace otro."
-  - q: "¿Se tuestan las espinas?"
-    a: "No como se tuestan los huesos de un fondo oscuro. Ese tostado quema la espina y deja sabor a piel quemada. El fumet se suda, se moja y se cuece suave. La profundidad de un asado pertenece a otro fondo."
-  - q: "¿Se manda a la mesa tal cual?"
-    a: "No como sopa, salvo que la ficha lo convierta en un plato y lo ajuste. El fumet está pensado para desaparecer en una salsa, un arroz o una reducción. Llevar el cazo del fondo a la sala, sin ese trabajo, cambia la intensidad y a menudo la sal."
+  - q: "¿El fumet es lo mismo que el caldo de pescado?"
+    a: "En muchas recetas y en el supermercado se usan como sinónimos. En cocina profesional, el fumet es un fondo corto de espinas blancas, sin sal, pensado como base para otras elaboraciones. El caldo suele cocerse más, puede llevar más ingredientes y a menudo se sazona para tomarlo como sopa. Pruébalos antes de sustituir uno por otro."
+  - q: "¿Cuánto tiempo se cuece un fumet?"
+    a: "En un puchero de un kilo de espinas, prueba a los 20 minutos y cuélalo en cuanto sepa limpio, casi siempre antes de los 30 minutos. Si lo quieres más intenso, cuélalo y reduce el líquido, ya sin las espinas."
+  - q: "¿Por qué amarga el fumet?"
+    a: "Por una cocción demasiado larga, por agallas o sangre en la olla, o por un hervor fuerte. La nata, el azúcar o el vino no lo tapan. Hay que hacerlo de nuevo, con espinas limpias."
+  - q: "¿Se doran las espinas?"
+    a: "En el fumet clásico, no. Se lavan y se sudan con la verdura sin que tomen color. Un dorado fuerte quema la espina y deja un sabor amargo."
+  - q: "¿El fumet de gambas es el mismo?"
+    a: "La lógica es la misma, cáscaras y una cocción corta, y el sabor es de crustáceo, más dulce y más intenso. Va bien en arroces y salsas de marisco."
+  - q: "¿Sirve el fumet envasado para una paella?"
+    a: "Sí, es un buen recurso cuando no tienes espinas. Prueba la sal antes de usarlo, porque muchos vienen bastante sazonados y el arroz la concentra al reducirse el caldo."
+faqInBody: true
 ---
 
-<p>El fumet es un fondo de pescado hecho con espinas, recortes y aromáticos, sin el tostado de un fondo oscuro. Se cuece poco, a hervor suave, y se corta antes de que el hueso amargue. Sirve de base a salsas y arroces caldosos. No es un plato de cuchara ni un caldo genérico con pescado de cualquier clase.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/calculadora-food-cost-restaurante?utm_source=web&amp;utm_medium=glosario&amp;utm_content=fumet-de-pescado">Abrir la calculadora de food cost</a></p></aside>
-<h2>Qué es, en la práctica</h2>
-<p>Las espinas que valen son las de pescado blanco, limpias de agallas y de sangre, que amargan y enturbian. Se sudan con aromáticos, a menudo con un golpe de vino blanco, y se cubren de agua fría. El hervor es el mínimo que mueva la superficie. Un galope emulsiona la grasa y la proteína suelta y te deja un caldo gris. El tiempo largo es el otro enemigo: pasado el punto, la espina suelta un amargor que ya no se quita colando. Se prueba, se cuela con cuidado para no remover el fondo, y se enfría.</p>
-<p>No se tuesta como un fondo oscuro de carne. El color tostado de los huesos de ternera es Maillard y fondo largo. En el pescado ese mismo gesto quema la espina y da sabor a piel quemada. Hay cocinas que doran muy levemente una cabeza para un plato concreto. Eso no convierte el fumet en un fondo oscuro ni autoriza el horno fuerte. Si quieres profundidad de asado, estás en otro fondo y en otro plato. El fumet huele a mar limpio, a vino y a verdura dulce, no a brasa.</p>
-<h2>Con qué no se confunde</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesto</th><th>Qué hace</th><th>Qué no hace</th></tr></thead><tbody><tr><td>Espinas blancas y limpias</td><td>Dan un fondo de mar limpio</td><td>Sangre y agallas lo enturbian</td></tr><tr><td>Hervor suave y corto</td><td>Extrae sin amargar</td><td>No se cuece como un fondo de carne</td></tr><tr><td>Sin tostado fuerte</td><td>No es un fondo oscuro</td><td>Quemar la espina no lo mejora</td></tr><tr><td>Usarlo como base</td><td>Desaparece en la salsa o el arroz</td><td>No es la sopa de la sala</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/veloute-cuerpo.jpg" alt="Un colador fino pasando un fumet claro a otro recipiente, sin remover el poso de la olla." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se comporta en el pase</h2>
-<p>Tampoco es la sopa que sale a la sala. Un fumet bien hecho es intenso y, muchas veces, salado de más si alguien lo sazona pensando en beberlo. Su trabajo es desaparecer dentro de una velouté de pescado, de un arroz, de una reducción que luego se monta con mantequilla. Llevarlo a la mesa como consomé, sin ajustarlo, es un error de ficha. Y llamarlo caldo de pescado a secas, cuando el caldo de la casa lleva más agua, más tiempo y otro pescado, mezcla dos líquidos que la partida no puede intercambiar a ciegas.</p>
-<p>El margen está en la merma del pescado del día. Las espinas del servicio son género que ya pagaste al comprar la pieza. Tirarlas es tirar la base del día siguiente. Guardarlas mal, con sangre y agallas, es hacer un fumet que habrá que tirar igual. La mise en place las lava, las parte para que quepan, y cuece lo que se va a usar. Un fumet de más, olvidado en cámara hasta que huele, no es aprovechamiento: es un residuo con ollas sucias. El jefe pregunta qué pescado lo originó, no solo si está rico.</p>
-<p>El comensal lo nota cuando falta. Una salsa de pescado hecha con agua sabe a la mantequilla y al ácido, y el pescado del plato se queda solo. Hecha con un fumet corto y limpio, el bocado sigue en el mar después de tragar. Si amarga, si huele a espina vieja o a grasa cocida de más, el fondo se pasó o nació sucio. No se disimula con nata. Se hace otro, con espinas de ese día, y el cazo anterior no entra en la salsa que va a salir.</p>
-<figure><img src="/blog-assets/2026/05/fond-cuerpo.jpg" alt="Una salsa de pescado hecha con fumet, pálida y brillante, junto a una ración en el pase." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se escribe y cómo se busca</h2>
-<p>Se busca fumet, fumet de pescado, fondo de pescado y caldo de pescado como si fueran lo mismo. No lo son del todo: el fumet es el fondo corto de espinas blancas y aromáticos, sin tostar como un fondo oscuro y sin servir como sopa. También se escribe fumé por error. Quien pregunta cuánto tiempo, y la respuesta honesta es «hasta que está, y no más», está evitando el amargor de la espina.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/glace-de-viande">Glace de viande</a></li>
-<li><a href="https://aichef.pro/blog/emulsion-concepto-definicion">Qué es una emulsión</a></li>
-<li><a href="https://aichef.pro/blog/napar-una-salsa">Qué es napar</a></li>
-<li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=fumet-de-pescado">Entrar como invitado</a></p></aside>
+El fumet de pescado es un fondo francés hecho con espinas, recortes y aromáticos. Se cubre con agua fría, se mantiene a hervor suave y se retira del fuego cuando el líquido sabe limpio y dulce de pescado, antes de que la espina amargue. Con él se preparan salsas, arroces y paellas de marisco. En casa se llama muchas veces caldo de pescado, aunque en cocina el uso no es el mismo.
+
+## Qué es el fumet de pescado
+
+En el supermercado y en muchas recetas se usan fumet y caldo de pescado como sinónimos, pero en una cocina profesional no son lo mismo. El fumet es un fondo de cocción corta, hecho con espinas de pescado blanco y verduras suaves, que se usa como base para salsas y arroces y se deja sin sal. El caldo de pescado suele cocerse más tiempo, puede llevar más ingredientes y muchas veces se sazona para tomarlo como sopa. Por eso, si sustituyes uno por otro, prueba antes la sal: un caldo ya salado se pasa en cuanto se reduce. El fumet clásico es pálido, porque las espinas no se doran y no lleva zanahoria, que le daría color.
+
+## Origen
+
+La palabra fumet viene del francés y hace referencia al aroma que desprende un alimento al cocinarse. En la cocina clásica francesa, que Auguste Escoffier ordenó a principios del siglo XX, el fumet de pescado es uno de los fondos básicos: un fondo blanco y de cocción corta, hecho con espinas de pescado blanco. Así se sigue enseñando hoy en las escuelas de cocina.
+
+## Ingredientes y proporciones
+
+Para un kilo de espinas:
+
+| Ingrediente | Cantidad |
+| --- | --- |
+| Espinas y recortes de pescado blanco, sin agallas | 1 kg |
+| Cebolla | 100 g (una mediana) |
+| Puerro, la parte blanca | 80 g |
+| Apio | 50 g (una rama) |
+| Hinojo, opcional | 40 g |
+| Vino blanco seco, opcional | 150 ml |
+| Agua fría | la justa para cubrir, unos 1,5–2 l |
+| Perejil, laurel y unos granos de pimienta | un ramillete |
+| Mantequilla o aceite suave | 20 g |
+| Sal | ninguna, si después se va a reducir |
+
+Lenguado, rodaballo, merluza, rape, gallo o lubina dan un fumet limpio. Sardina, caballa y salmón sueltan demasiada grasa para un fondo de uso general. Si va a una salsa o a un arroz, no lo sales en la olla: la sal se concentra al reducir.
+
+## Cómo se hace, paso a paso
+
+**1. Limpia las espinas.** Quita las agallas y la sangre, y enjuágalas hasta que el agua salga clara. Si vienen muy sangradas, cuécelas un minuto, escúrrelas y empieza con agua nueva.
+
+**2. Rehoga sin dorar.** Con la mantequilla o el aceite, a fuego medio-bajo, cuece la cebolla, el puerro, el apio y el hinojo sin que doren. Añade las espinas y remuévelas un par de minutos, todavía sin color.
+
+**3. Añade el líquido y cuece a fuego suave.** Si usas vino, redúcelo a la mitad. Cubre con agua fría, lleva la olla al hervor mínimo, el justo para que la superficie se mueva, y espuma. Prueba a los 20 minutos. Cuando sepa limpio y dulce de pescado, retíralo. En este tamaño suele estar antes de los 30 minutos.
+
+**4. Cuela y enfría.** Pásalo por un colador fino o por un paño, sin apretar el poso. Enfríalo en un recipiente ancho o al baño de hielo, y mételo en la nevera.
+
+## Por qué amarga y cómo evitarlo
+
+Amarga si las espinas se cuecen de más, si quedaron agallas o sangre, o si el hervor fue fuerte. Un hervor vivo deja el fondo gris, con sabor a espina pasada. La nata, el azúcar o el vino no lo tapan: hay que hacerlo de nuevo. Si solo está turbio y sabe bien, sí vale para una salsa o un arroz.
+
+## En el servicio
+
+En un restaurante se prepara durante la mise en place, porque es la base de muchas salsas y arroces del día. Si al probarlo notas un fondo amargo, no lo uses: ese amargor pasará a todo lo que prepares con él. Enfría enseguida lo que sobre, no lo dejes horas fuera de la nevera y congela lo que no vayas a usar en un par de días. Un fumet pasado huele a pescado viejo, y ese olor llega al plato.
+
+## Fumet de gambas y de marisco
+
+Con cáscaras y cabezas de gamba, langostino o bogavante se hace un fondo distinto siguiendo la misma lógica. A diferencia de las espinas, las cáscaras sí se pueden rehogar hasta que tomen un color rosado y huelan bien, porque ese ligero tostado les da sabor; lo que hay que evitar es que se quemen. Después se cubren de agua, se espuman y se prueban también a los 20 minutos. El resultado es más dulce e intenso, ideal para un arroz de marisco o una salsa de crustáceos.
+
+## Cómo clarificarlo
+
+Colarlo por un paño elimina los restos de espinas, verdura y posos. Si queda algo turbio, no importa para una salsa o un arroz. Si quieres un líquido completamente transparente, por ejemplo para servirlo como consomé, mezcla claras de huevo batidas con el fumet frío y caliéntalo despacio. Las claras subirán y formarán una costra que atrapa las impurezas. Déjalo unos minutos a fuego mínimo, sin remover, y cuélalo con cuidado por un paño húmedo.
+
+## Para qué se usa
+
+Es la base de salsas de pescado, arroces caldosos, paellas de marisco, suquets y zarzuelas. Si quieres tomarlo como sopa, tendrás que sazonarlo, porque sale casi sin sal. Si no tienes espinas, el fumet envasado sirve como recurso, pero pruébalo antes: muchos llevan bastante sal.
+
+## Preguntas frecuentes
+
+**¿El fumet es lo mismo que el caldo de pescado?**
+En muchas recetas y en el supermercado se usan como sinónimos. En cocina profesional, el fumet es un fondo corto de espinas blancas, sin sal, pensado como base para otras elaboraciones. El caldo suele cocerse más, puede llevar más ingredientes y a menudo se sazona para tomarlo como sopa. Pruébalos antes de sustituir uno por otro.
+
+**¿Cuánto tiempo se cuece un fumet?**
+En un puchero de un kilo de espinas, prueba a los 20 minutos y cuélalo en cuanto sepa limpio, casi siempre antes de los 30 minutos. Si lo quieres más intenso, cuélalo y reduce el líquido, ya sin las espinas.
+
+**¿Por qué amarga el fumet?**
+Por una cocción demasiado larga, por agallas o sangre en la olla, o por un hervor fuerte. La nata, el azúcar o el vino no lo tapan. Hay que hacerlo de nuevo, con espinas limpias.
+
+**¿Se doran las espinas?**
+En el fumet clásico, no. Se lavan y se sudan con la verdura sin que tomen color. Un dorado fuerte quema la espina y deja un sabor amargo.
+
+**¿El fumet de gambas es el mismo?**
+La lógica es la misma, cáscaras y una cocción corta, y el sabor es de crustáceo, más dulce y más intenso. Va bien en arroces y salsas de marisco.
+
+**¿Sirve el fumet envasado para una paella?**
+Sí, es un buen recurso cuando no tienes espinas. Prueba la sal antes de usarlo, porque muchos vienen bastante sazonados y el arroz la concentra al reducirse el caldo.

@@ -1,13 +1,13 @@
 ---
-title: "Beurre manié: qué es y en qué se diferencia del roux"
-description: "El beurre manié es mantequilla blanda y harina a partes iguales, cruda, para corregir una salsa corta al final. No se cocina antes y no es un roux."
+title: "Beurre manié: qué es y cómo se hace"
+description: "El beurre manié es una pasta cruda de mantequilla y harina, a partes iguales en peso, para dar cuerpo a una salsa al final. Te explicamos la proporción, el paso a paso y en qué se diferencia del roux."
 pubDate: 2026-10-22
-modDate: 2026-10-22
+modDate: 2026-10-23
 category: glosario
 tags: ["beurre manie", "salsas", "espesante"]
 lang: es
-image: /blog-assets/2026/05/roux-destacada.jpg
-imageAlt: "Pasta cruda de mantequilla pálida y harina, amasada y lisa, sobre una mesa de acero junto a un batidor y un cazo de salsa."
+image: /blog-assets/2026/05/beurre-manie-destacada.jpg
+imageAlt: "Beurre manié: pasta de mantequilla y harina en cilindro y en dados sobre mármol"
 translations:
   es: "beurre-manie"
   en: "beurre-manie"
@@ -18,37 +18,94 @@ translations:
   nl: "beurre-manie"
 definedTerm:
   name: "Beurre manié"
-  description: "El beurre manié es una pasta de mantequilla blanda y harina a partes iguales en peso, cruda, que se bate al final para dar cuerpo a una salsa corta. No se cocina antes. No es un roux. En el pase sirve para corregir, no para construir la salsa que debías tener lista por la mañana."
+  description: "El beurre manié es una pasta de mantequilla blanda y harina, amasadas a partes iguales en peso y sin cocer. Cuando una salsa ya hecha se queda demasiado líquida, se bate esa pasta en trozos pequeños dentro del líquido caliente y se deja un minuto a fuego suave. El almidón de la harina espesa la salsa y la mantequilla reparte la harina. El nombre es francés y significa mantequilla amasada."
 faq:
   - q: "¿El beurre manié es un roux?"
-    a: "No. El roux es harina cocida en grasa antes de que entre el líquido. El beurre manié se queda crudo, a partes iguales de mantequilla y harina en peso, y se bate al final. Si cueces la pasta antes, has empezado un roux, que es otro gesto y otro sabor. La pasta cruda vale cuando la salsa ya existe y solo le falta cuerpo."
-  - q: "¿Se cocina el beurre manié antes de echarlo?"
-    a: "No. La mantequilla está blanda y la harina cruda. Se amasan juntas y se añaden al final. Cocinarlas antes tostaría la harina y convertiría el gesto en un roux. Ya dentro de la salsa, un hervor suave deja que el almidón hinche. Un hervor violento suelta la grasa y deja el cazo brillante de aceite."
-  - q: "¿Cuándo se usa en el pase?"
-    a: "Cuando la salsa está corta en el momento del pase y no da tiempo a seguir reduciendo. Es un final, no la base de la mañana. Se bate en trozos pequeños, fuera de un hervor fuerte, y se prueba. Si con el primer trozo ya napa, no hace falta el segundo."
-  - q: "¿Por qué el jefe mira esta pasta con recelo?"
-    a: "Porque es una forma fácil de tapar un fondo flojo. Harina y mantequilla parecen baratas al lado de una reducción, y la partida tira de ellas demasiado pronto. El comensal se come entonces una nota de cereal en lugar de la olla que querías servir. El jefe quiere la pasta como corrección, dicha en voz alta, y fuera de las salsas que debían brillar solo por reducción."
+    a: "Los dos llevan grasa y harina, y el trabajo es distinto. El roux se cocina antes de añadir el líquido. El beurre manié se amasa en crudo y se bate al final, dentro de una salsa que ya está hecha."
+  - q: "¿Cuándo se usa en vez del roux?"
+    a: "Cuando la salsa ya está hecha, sigue líquida y no compensa seguir reduciendo. El roux se decide al principio. El beurre manié corrige al final."
+  - q: "¿La proporción es a peso o a cucharadas?"
+    a: "La proporción clásica es en peso: la misma cantidad de mantequilla que de harina. Si mides con cucharas, ten en cuenta que una cucharada de harina pesa bastante menos que una de mantequilla, así que el resultado no será el mismo."
+  - q: "¿Hay que cocer el beurre manié dentro de la salsa?"
+    a: "La pasta no se cocina antes de echarla. Una vez dentro, deja la salsa un minuto a fuego suave, sin hervor fuerte, para que el almidón cueza y desaparezca el sabor a harina cruda."
+  - q: "¿Se puede hacer sin gluten?"
+    a: "Con harina de trigo, no, porque esa harina contiene gluten. Para una salsa sin gluten, deslíe almidón de maíz en un poco de líquido frío y añádelo batiendo."
+  - q: "¿Cómo se pronuncia beurre manié?"
+    a: "Aproximadamente «bur manié», con el acento en la última sílaba, como la e de «café»."
+faqInBody: true
 ---
 
-<p>El beurre manié es una pasta de mantequilla blanda y harina a partes iguales en peso, cruda, que se bate al final para dar cuerpo a una salsa corta. No se cocina antes. No es un roux. En el pase sirve para corregir, no para construir la salsa que debías tener lista por la mañana.</p>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Ver la ficha de chef jefe de cocina</a></p></aside>
-<h2>Qué es, en la práctica</h2>
-<p>En el pase no arrancas un roux. El estofado ha salido corto, el fumet del sábado ha quedado líquido y la brigada está emplatando. El beurre manié vive para ese momento: una pasta hecha en la mise en place, guardada blanda, que se deshace en trozos dentro del líquido a hervor suave. Si la tiras de golpe y no bates, la harina se encapsula y el comensal encuentra una bola cruda. El gesto es de corrección. Quien lo usa para todas las salsas del día está escondiendo un roux que no hizo.</p>
-<p>La diferencia con el roux es el orden. En el roux la harina se cocina en la grasa antes de que llegue el líquido, y ese tueste es el sentido del gesto. En el beurre manié la harina entra cruda, llevada por la mantequilla, cuando la salsa ya existe. Si fríes la pasta antes, has salido de este gesto y has empezado otro. El jefe lo nota en el sabor a cereal si dejas el trozo sin batir. Un hervor quieto deja que el almidón hinche sin el color de un roux rubio o oscuro.</p>
-<h2>Con qué no se confunde</h2>
-<div class="table-scroll"><table><thead><tr><th>Gesto</th><th>Qué hace</th><th>Qué no hace</th></tr></thead><tbody><tr><td>Amasar en crudo</td><td>Aprieta una salsa ya hecha</td><td>No cuece la harina antes</td></tr><tr><td>Partes iguales en peso</td><td>La mantequilla lleva la harina</td><td>No es un roux</td></tr><tr><td>Batir al final</td><td>Da cuerpo en el pase</td><td>No sustituye una reducción</td></tr><tr><td>Guardar la pasta blanda</td><td>Lista en la mise en place</td><td>No se fríe antes de usarla</td></tr></tbody></table></div>
-<figure><img src="/blog-assets/2026/05/bechamel-cuerpo.jpg" alt="Un cocinero bate trozos de pasta cruda de mantequilla y harina en una salsa a hervor suave." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se comporta en el pase</h2>
-<p>La mise en place es humilde y fácil de olvidar. La mantequilla tiene que ceder a la cuchara: si sale de la zona más fría de la cámara cuando el ticket ya está en la mano, no amasa. Ablándala antes del servicio y tapa la pasta para que no forme costra. Harina y mantequilla son género de almacén, y por eso la partida las busca cuando una reducción cara se ve fina. El margen se resiente si la pasta tapa un fondo que había que reducir: el comensal come harina en lugar del producto en el que ya gastaste tiempo.</p>
-<p>En el plato, el nombre francés no le hace falta a nadie. Hace falta una salsa que se quede en la carne o en la verdura y siga sabiendo a la olla, no al espesante. Bien hecho, el beurre manié desaparece en el napado. Hecho con prisa, deja una sombra de cereal y una superficie mate. Ese es el trato que aceptas cuando eliges este final en vez de seguir reduciendo. Dilo en voz alta al pasar el cazo. El siguiente plato tiene que salir igual, y el jefe tiene que saber que la salsa se corrigió en el pase.</p>
-<p>No confundas este final con montar al burro ni con un beurre blanc. Montar al burro es mantequilla fría sin harina, para brillo y redondez. El beurre blanc es una salsa propia, de chalota, vino y vinagre. El beurre manié lleva harina y solo aprieta. Si la salsa ya napa y solo le falta luz, no le metas pasta. Si está líquida y el comensal va a ver el caldo correrse hasta el borde, la pasta es el arreglo de ese minuto, dicho y anotado, no una costumbre de la partida.</p>
-<figure><img src="/blog-assets/2026/05/veloute-cuerpo.jpg" alt="Salsa terminada que se queda sobre la carne en un plato caliente, con el cuenco de pasta apartado en la partida." loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
-<h2>Cómo se escribe y cómo se busca</h2>
-<p>Se busca beurre manié con acento y beurre manie sin él, y también mantequilla amasada. La confusión habitual es llamarlo roux crudo: no lo es, porque el roux se cocina. Quien teclea cómo espesar una salsa al final, sin fécula y sin empezar de cero, está buscando este gesto. La pasta va cruda, a partes iguales en peso, y entra al final.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/roux-concepto-y-definicion">Qué es el roux</a></li>
-<li><a href="https://aichef.pro/blog/montar-al-burro">Montar al burro</a></li>
-<li><a href="https://aichef.pro/blog/papilla-de-almidon">Papilla de almidón</a></li>
-<li><a href="https://aichef.pro/blog/categoria/glosario">Sigue en el glosario</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=beurre-manie">Entrar como invitado</a></p></aside>
+El beurre manié es una pasta de mantequilla blanda y harina, amasadas a partes iguales en peso y sin cocer. Cuando una salsa ya hecha se queda demasiado líquida, se bate esa pasta en trozos pequeños dentro del líquido caliente y se deja un minuto a fuego suave. El almidón de la harina espesa la salsa y la mantequilla reparte la harina. El nombre es francés y significa mantequilla amasada.
+
+## Qué es el beurre manié
+
+Se prepara durante la mise en place y se guarda tapada, a temperatura ambiente, cerca de los fuegos. Cuando un guiso, un velouté o una salsa quedan demasiado líquidos y no hay tiempo para seguir reduciendo, se añade un trozo de esta pasta al líquido caliente y se bate. En un minuto la salsa gana cuerpo, sin el color tostado que aportaría un roux. Para que funcione, la mantequilla tiene que estar blanda: si está dura, la harina no se reparte bien y se forman grumos.
+
+## Origen
+
+Beurre significa mantequilla y manié, amasada. El nombre describe exactamente cómo se hace: se trabajan la mantequilla y la harina con los dedos o con una espátula hasta que no quedan restos de harina seca. Es una técnica clásica de la cocina francesa, de la misma familia que el roux, pero con una diferencia importante: se usa al final, cuando la salsa ya está hecha y solo le falta cuerpo.
+
+## Ingredientes y proporciones
+
+Para una pasta de uso inmediato:
+
+| Ingrediente | Cantidad |
+| --- | --- |
+| Mantequilla sin sal, blanda | 50 g |
+| Harina de trigo | 50 g |
+
+La proporción clásica es de partes iguales en peso. Algunas recetas usan algo más de mantequilla que de harina, lo que da una pasta un poco más suave y con más sabor a mantequilla, pero que espesa algo menos. No hay una cantidad fija por litro: añade trozos pequeños, bate y para cuando la salsa cubra el dorso de una cuchara.
+
+## Cómo se hace, paso a paso
+
+**1. Ablanda la mantequilla.** Tiene que estar blanda, a temperatura de cocina, y no fundida. Si se ha derretido, la harina no se reparte y la pasta queda grasienta.
+
+**2. Amasa la harina.** Incorpora la harina a la mantequilla con una espátula o con los dedos, hasta que la pasta esté lisa, sin bolsas de harina seca ni vetas de mantequilla. Tápala hasta el momento de usarla.
+
+**3. Bátela dentro de la salsa.** Con la salsa caliente, por debajo de un hervor fuerte, añade un trozo pequeño y bate enseguida. Espera a que espese y prueba. Si todavía corre, añade otro trozo. Déjala un minuto a fuego suave para que el almidón cueza y desaparezca el sabor a harina cruda.
+
+## Por qué falla y cómo arreglarlo
+
+Los grumos aparecen cuando el trozo es grande o cuando no se bate. Si ya están, bate fuera del hervor o pasa la salsa por un colador. El sabor a harina cruda queda si, después de incorporarla, no le das ese minuto a fuego suave.
+
+Si la salsa hierve con fuerza, la mantequilla se separa y la superficie queda aceitosa. Baja el fuego y bate: muchas veces vuelve a unirse. Si se ha separado del todo, pon un poco de líquido frío en un cazo limpio y ve añadiendo la salsa poco a poco, sin dejar de batir.
+
+Echar de más deja la salsa mate, pesada y con sabor a cereal. Cuando cubra la cuchara, para.
+
+## En el servicio
+
+Ten la pasta hecha y blanda antes de empezar, y tápala si el servicio es largo para que no forme costra. Úsala al emplatar si la salsa está clara y reducirla más la dejaría salada o escasa. Añade poco, mira cómo cae de la cuchara y solo entonces echa más.
+
+Si tienes tiempo de reducir la salsa, es mejor hacerlo: la reducción concentra el sabor y la harina lo apaga un poco. Si la salsa ya tiene cuerpo y solo le falta brillo, termínala con mantequilla fría, sin harina. Bien tapado, el beurre manié se conserva varios días en la nevera, y también se puede congelar en porciones.
+
+## Diferencias con el roux y otros espesantes
+
+El roux se hace al principio. La harina se cocina en la grasa, con más o menos color, y el líquido se añade después. Ese tueste forma parte del sabor de una bechamel o de un velouté. En el beurre manié la harina entra cruda, dentro de una salsa que ya existe, y se cuece solo el minuto final.
+
+La maicena desleída en un poco de agua fría espesa sin añadir grasa. Es la opción adecuada cuando la salsa no admite más mantequilla o tiene que ser sin gluten, porque la harina de trigo del beurre manié sí lo contiene.
+
+Montar la salsa con mantequilla fría al final, sin harina, le da brillo y un sabor más redondo, pero no la espesa de verdad.
+
+## Dónde se usa
+
+Funciona en estofados, blanquetas, veloutés, salsas de asado y verduras guisadas que han soltado mucho líquido. No entra en un beurre blanc, que es una salsa de mantequilla sin harina.
+
+## Preguntas frecuentes
+
+**¿El beurre manié es un roux?**
+Los dos llevan grasa y harina, y el trabajo es distinto. El roux se cocina antes de añadir el líquido. El beurre manié se amasa en crudo y se bate al final, dentro de una salsa que ya está hecha.
+
+**¿Cuándo se usa en vez del roux?**
+Cuando la salsa ya está hecha, sigue líquida y no compensa seguir reduciendo. El roux se decide al principio. El beurre manié corrige al final.
+
+**¿La proporción es a peso o a cucharadas?**
+La proporción clásica es en peso: la misma cantidad de mantequilla que de harina. Si mides con cucharas, ten en cuenta que una cucharada de harina pesa bastante menos que una de mantequilla, así que el resultado no será el mismo.
+
+**¿Hay que cocer el beurre manié dentro de la salsa?**
+La pasta no se cocina antes de echarla. Una vez dentro, deja la salsa un minuto a fuego suave, sin hervor fuerte, para que el almidón cueza y desaparezca el sabor a harina cruda.
+
+**¿Se puede hacer sin gluten?**
+Con harina de trigo, no, porque esa harina contiene gluten. Para una salsa sin gluten, deslíe almidón de maíz en un poco de líquido frío y añádelo batiendo.
+
+**¿Cómo se pronuncia beurre manié?**
+Aproximadamente «bur manié», con el acento en la última sílaba, como la e de «café».
