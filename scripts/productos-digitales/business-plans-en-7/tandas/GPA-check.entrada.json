@@ -1,0 +1,1492 @@
+{
+ "tanda": "GPA-check",
+ "salida": "scripts/productos-digitales/business-plans-en-7/textos_en/GPA-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 73,
+ "n_palabras": 455,
+ "pistas": {
+  "P01": "Celda a celda: escribe SOLO el texto de ESTA celda (una tabla o una tarea): mira su pista propia",
+  "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P03": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P04": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 1, tarea 2/11: estructura: LLC, con o sin elección de S corp; en E, la responsabilidad importa porque cocinas con llama abierta (propano) en eventos ajenos, no «tow a smoker» [sobrevive con ajuste: E]",
+  "P05": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 1, tarea 6/11: seller's permit / sales tax permit: en muchos estados tributa toda la factura de catering (la paella, el personal, los alquileres y, según el estado, el service charge); sin «smoked meats» [sobrevive con ajuste: E]",
+  "P06": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 1, tarea 8/11: solicitar el préstamo a dos lenders (banco o SBA 7(a)) con el plan, el Excel y presupuestos escritos de la van, las paelleras y los quemadores; no firmar la van antes de la aprobación [sobrevive con ajuste: E]",
+  "P07": "D117/D120: la van de carga usada (paelleras, quemadores, cilindros y coolers); nunca «truck» ni «trailer» (gate; «paella food trucks» solo para el no-comprador)",
+  "P08": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 1, tarea 9/11: contrato tipo de paella catering con un abogado: depósito para bloquear la fecha (los caterers US piden 25-50 %; la calculadora del kit propone 50 %), saldo antes del evento, tramos de cancelación sin huecos, recuento final y guest minimum, service charge frente a gratuity, PLAN B de viento y lluvia (carpa de la estación, interior con inducción o nueva fecha), cláusula por si el venue o un burn ban no permiten el fuego (paella cocinada en la commissary y servida en caliente), el vino de la sangría lo compra el cliente, uso de fotos [sobrevive con ajuste: B y E]",
+  "P09": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 1, tarea 10/11: plan de seguridad alimentaria basado en HACCP para paella: el arroz cocido es TCS (B. cereus); servir a ≥ 135 °F (57 °C) o con time as a public health control de 4 h con SOP escrito, hora marcada y descarte (3-501.19, si tu condado lo admite); MÍNIMOS del Food Code: pollo 165 °F (74 °C), pescado y marisco 145 °F (63 °C) 15 s, chorizo crudo mexicano 155 °F (68 °C) 17 s (el curado español es listo para comer); sobras a la basura, nunca enfriadas para reutilizar; marisco de approved source y shellstock tags guardadas 90 días (3-203.12) [sobrevive con ajuste: B y E]",
+  "P10": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P11": "D119: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
+  "P12": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 1/13: elegir una commissary compartida con permiso: horas para sofrito, caldo y marisco limpio, almacén frío y seco, sitio para paelleras y quemadores; pregunta si admite cilindros de propano; nunca cocina de casa (Food Code 3-201.11(B)) [sobrevive con ajuste: B y E]",
+  "P13": "D117: paella catering en el evento del cliente; sin ventanilla, festivales, mercados ni venta ambulante (gate)",
+  "P14": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 2/13: commissary agreement por escrito: horas, zonas de almacén (paelleras, quemadores, cilindros si los admite) y limpieza [sobrevive con ajuste: E]",
+  "P15": "D121: el combustible de COCINA (propano; leña solo con permiso) es variable (fila 15); el de la van, fijo (fila 27); el caso no tiene generador",
+  "P16": "D117/D121: paella packages y add-ons; «food» y «menu» valen; nunca «chef» suelto (di paella chef), «plated» ni «stations» salvo «live paella station» (gate)",
+  "P17": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 3/13: catering / health permit del condado + pregunta si cocinar el arroz en el evento cabe en su regla (en California, «limited food preparation» en eventos privados con catering: CalRFC §113818, San Diego County): «ask your county»; si no, se cocina en la commissary y la paella viaja en caliente [sobrevive con ajuste: B y E]",
+  "P18": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 5/13: fire marshal: la estación de propano al aire libre o bajo su propio toldo de cocina, lejos de la carpa de invitados (Virginia, solo como ejemplo: cooking tents a ≥ 20 ft de otras carpas y cilindros de LP-gas fuera, 13VAC5-52-360), extintores y permiso según el fire code local; leña solo con permiso y nunca con burn ban: «check with your fire marshal» [sobrevive con ajuste: B y E]",
+  "P19": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 6/13: comprar la van de carga usada con inspección mecánica (kilometraje, mantenimiento, carga útil); no es frigorífica: el marisco crudo va en coolers con hielo [sobrevive con ajuste: B y E]",
+  "P20": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P21": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 7/13: título y registro de la van en el DMV a nombre del negocio + commercial auto + inland marine para paelleras, quemadores y equipo en tránsito; una cargo van no necesita CDL (solo con GVWR ≥ 26,001 lb) [sobrevive con ajuste: B y E]",
+  "P22": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 8/13: upfit de la van: estanterías, racks verticales para los cilindros (de pie, sujetos y con ventilación), sujeciones y rotulación; comprueba que el seguro lo cubre [sobrevive con ajuste: B y E]",
+  "P23": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 9/13: general liability o BOP que NO excluya la llama abierta en eventos (pídelo por escrito); COI y additional insured para los venues [sobrevive con ajuste: E]",
+  "P24": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P25": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 10/13: liquor liability SOLO si tu personal sirve alcohol que compra el cliente (p. ej. su vino en la sangría); sin licencia no vendes alcohol [sobrevive con ajuste: E]",
+  "P26": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 11/13: workers' comp antes del primer empleado (opcional en Texas) [sobrevive]",
+  "P27": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P28": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 2, tarea 12/13: residuos, aceite usado y conchas con un hauler con licencia (a menudo vía commissary); sin ceniza [sobrevive con ajuste: B y E]",
+  "P29": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 1/12: lista de equipo propio frente a alquilado por paquete: drop-off paella, live paella party y full-service live paella [sobrevive con ajuste: E]",
+  "P30": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 2/12: insulated food carriers para el drop-off (la paella a ≥ 135 °F o bajo time as a public health control), coolers con hielo para el marisco crudo (≤ 41 °F) y termómetros de sonda calibrados; nunca «Cambro» ni «hot box» [sobrevive con ajuste: B y E]",
+  "P31": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 3/12: paelleras por tamaño (36 / 32 / 26 in con los cm entre paréntesis) y quemadores de 3 aros con patas: prueba cada aro, el regulador y las mangueras antes del primer evento [nueva]",
+  "P32": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 5/12: proveedor de marisco de approved source: mejillones y almejas con la etiqueta del dealer (shellstock tags, 90 días); pollo y verdura; cash-and-carry tipo Restaurant Depot; comparar mínimos y precios [sobrevive con ajuste: B y E]",
+  "P33": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 6/12: kit de la estación de paella: paletas y cucharones, wind guards, mesa de trabajo, toldo de la estación, protector de suelo, extintor a mano [nueva]",
+  "P34": "MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal",
+  "P35": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 7/12: arroz bomba, azafrán (en gramos) y despensa española (smoked paprika, aceite de oliva, base de caldo) de un importador: precio por trimestre y stock de reserva [nueva]",
+  "P36": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P37": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 8/12: acuerdo con party rentals (mesas, mantelería, vajilla) [sobrevive]",
+  "P38": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 9/12: desechables para el drop-off (bandejas y tapas que aguanten el calor, platos y cubiertos de bambú o plástico); etiqueta con la hora de salida del hot holding y descarte a las 4 h, o chafing dishes (time as a public health control, 3-501.19: «ask your county»); sin butcher paper [sobrevive con ajuste: E]",
+  "P39": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 10/12: registro de temperaturas en el transporte (data logger en cada insulated carrier y en la van) [sobrevive con ajuste: E, sin «hot box»]",
+  "P40": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 3, tarea 12/12: prueba completa por tamaño de paellera con el equipo: arroz, caldo y propano reales, tiempos y raciones, para afinar la calculadora [sobrevive con ajuste: B y E]",
+  "P41": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 4, tarea 1/10: plan de personal por evento: ≈ 1 persona del equipo por 25 invitados (miamigrillcatering.com); un paella chef por ≈ 3 paelleras y un ayudante desde 4 paelleras u 80 invitados (Kit estimate) [sobrevive con ajuste: E]",
+  "P42": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P43": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 4, tarea 7/10: seguridad del propano y del fuego: prueba de fugas con agua jabonosa, extintores, manta ignífuga, cierre de los cilindros y quién vigila los quemadores en el servicio [sobrevive con ajuste: B y E]",
+  "P44": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 4, tarea 8/10: OSHA basics: quemaduras, calor, levantar paelleras llenas y cilindros entre dos, conducción de la van [sobrevive con ajuste: B y E]",
+  "P45": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 4, tarea 9/10: guion del espectáculo (el socarrat reveal), uniforme, briefing y alérgenos: entre los 9 mayores de EE. UU. están el pescado y los crustáceos (crab, lobster, shrimp); los moluscos (mejillones, almejas) se declaran igual; huevo del alioli, trigo del pan y de la fideua, sulfitos de la gamba congelada, contacto cruzado por paletas y paelleras [sobrevive con ajuste: B y E]",
+  "P46": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P47": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P48": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 5, tarea 1/12: marca, logo, los 8 menu styles de paella (seafood, chicken & seafood, chicken & chorizo, Valencian, farm vegetable, paella negra, lobster & seafood, easy-eat peeled seafood) y fotos profesionales de la paella cocinada en vivo [sobrevive con ajuste: B y E]",
+  "P49": "Glosario §9: paella catering, paella chef, live paella, backyard paella party, drop-off, full-service, tapas hour, weddings, corporate events / holiday parties, first communions, quinceañeras",
+  "P50": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 5, tarea 9/12: Instagram y redes con fotos y vídeo de la paella cocinada en vivo y del socarrat (con permiso del cliente); seguimiento por texto / SMS [sobrevive con ajuste: B y E]",
+  "P51": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 5, tarea 10/12: plantilla de presupuesto con la calculadora del kit (paelleras por tamaño, arroz por invitado, shopping list) + CRM + software que envía la propuesta, firma y cobra el depósito [sobrevive con ajuste: E]",
+  "P52": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 5, tarea 12/12: tasting de lanzamiento: una paella cocinada en vivo para planners, venues y empresas + el primer bridal show local [sobrevive con ajuste: E]",
+  "P53": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 6, tarea 2/10: visita o llamada técnica al venue 2 semanas antes: suelo llano para los quemadores, viento y sombra, distancia a la carpa de invitados, agua para el lavamanos, acceso de la van y normas de fuego del venue por escrito [sobrevive con ajuste: B y E]",
+  "P54": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 6, tarea 4/10: pedidos: arroz y despensa con margen, marisco 1-2 días antes con sus etiquetas; sofrito, caldo y marisco limpio la víspera en la commissary, etiquetados; D = «3-5 days out, then the day before» [sobrevive con ajuste: B, D y E]",
+  "P55": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 6, tarea 5/10: carga de la van con la lista (paelleras, quemadores, cilindros de pie y sujetos, coolers a ≤ 41 °F con el marisco) y registro de temperaturas al cargar y al llegar [sobrevive con ajuste: B y E]",
+  "P56": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 6, tarea 6/10: llegar 2-3 h antes, montar la estación fuera de la carpa de invitados, encender, ≈ 1 h de cocción (pollo a 165 °F, marisco a 145 °F) y servir a ≥ 135 °F o bajo time as a public health control; las sobras, a la basura [sobrevive con ajuste: B y E]",
+  "P57": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 6, tarea 7/10: recogida: limpiar y aceitar las paelleras, cerrar y revisar los cilindros, devolver los alquileres [sobrevive con ajuste: B y E]",
+  "P58": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P59": "D125: escribe una TAREA de un live paella caterer (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del paellero (fuente_es_pael.json) + research §6 y el glosario §9; columna C: «Paella chef» (nunca «Pitmaster» ni «chef» suelto); plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «3.25 oz (92 g)», «135 °F (57 °C)», «2 gallons (7.6 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); las PAELLERAS en pulgadas con los cm entre paréntesis: «36 in (90 cm)»; el AZAFRÁN en gramos (así se vende en EE. UU.; el gate no veta «g»); nada de kg, km, litros ni °C como unidad principal (gate). El MÍNIMO del FDA Food Code (165 °F aves · 145 °F 15 s pescado y marisco · 155 °F 17 s chorizo crudo mexicano · hot holding 135 °F o time as a public health control de 4 h) se nombra SIEMPRE como tal. Esta fila: fase 6, tarea 9/10: revisión semanal: arroz por invitado, invitados por paellera, propano por evento, food cost y horas por evento frente a la calculadora [sobrevive con ajuste: B y E]"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "single-member LLC",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan + TPHC SOP",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cliente/día → (motor)": "events per year",
+  "ticket medio sin IVA → (motor)": "average price per guest (excl. sales tax, service included)",
+  "días de apertura → (motor)": "average guests per event",
+  "aparcamiento y base del vehículo": "commissary kitchen & equipment storage",
+  "empresa de paellas para eventos · show cooking": "paella catering (nombre, H1, ficheros) · live paella · «cooked live in front of your guests» · «prepared on site»; «Spanish catering» como variante con tapas",
+  "fiesta de paellas en casa": "backyard paella party",
+  "paellero (persona) · paellera": "paella chef («Paella chef (required)») · paella pan («giant traditional pan»); el negocio: paella caterer",
+  "paellero de gas (quemador)": "paella burner (3-ring) with legs / stand + regulator",
+  "socarrat · arroz · azafrán": "socarrat («golden socarrat reveal») · bomba rice / Spanish rice · saffron (en gramos)",
+  "sofrito · caldo · fumet": "sofrito · stock · fish stock",
+  "marinera · mixta · campera": "seafood paella / paella marinera · chicken & seafood · chicken & chorizo",
+  "valenciana · huerta · negra · bogavante": "Valencian paella (rabbit on request) · farm vegetable · paella negra · lobster & seafood",
+  "entrantes · alioli · jamón": "tapas (patatas bravas, Spanish tortilla, cheese & cold cuts) · garlic aioli · Serrano ham carving station (sin tilde: «jamón» lo rechaza el detector)",
+  "sangría · descorche": "sangria bar (sin alcohol, o con el vino que compra el cliente) · non-alcoholic options · corkage fee (no se modela)",
+  "animación": "flamenco · Spanish guitarist",
+  "precio y mínimo": "per person · «a minimum of 20 guests is required for on-site cooking» · overall minimum",
+  "temporada alta": "peak season · holiday season",
+  "personal y formato": "buffet attendant · serving staff · buffet · family-style (solo como formato de servicio del operador; el gate no lo veta, pero no es un paquete del kit)",
+  "para llevar": "delivery orders · «pick up & delivery» · drop-off",
+  "desplazamiento · menaje": "travel fee («included up to 20 mile radius») · dishes & flatware (bamboo / plastic)",
+  "botella · carpa de cocina": "20-lb propane cylinder / LP-gas container · cooking tent",
+  "normas": "limited food preparation (CA) · shellstock tags · time as a public health control",
+  "cocina de apoyo": "commissary (nunca «support kitchen»)",
+  "isotermo": "insulated food carriers (nunca «Cambro»: es marca)",
+  "paellero": "paella chef (persona) o paella caterer (negocio); nunca «paellero» ni «chef» suelto",
+  "trípode de leña": "wood-fire setup (solo con permiso)",
+  "ración": "serving / per person",
+  "show cooking": "live paella",
+  "fiesta popular": "fuera del caso (temporary food establishment)",
+  "comunión, bautizo": "first communion, baptism, quinceañera",
+  "finca": "venue / backyard",
+  "garrofó": "lima beans",
+  "ferraura": "flat green beans",
+  "bogavante": "lobster",
+  "fideuà": "fideua (noodle paella), sin tilde",
+  "pimentón": "smoked paprika",
+  "regla de los 15 kg": "no aplica (fire code local)",
+  "época de peligro": "burn ban",
+  "manipulador": "food handler card",
+  "anticipo": "deposit",
+  "IVA": "sales tax",
+  "escandallo": "cost per guest / food cost",
+  "fijo discontinuo / freelance": "part-time hourly W-2 staff",
+  "medidas (John, 13-oct)": "US customary first, metric in parentheses: lb / oz (g), °F (°C), gallons / quarts (liters), miles, sq ft (sq m); pans in inches with cm in parentheses; saffron in grams"
+ },
+ "pestanas_es_en": {
+  "PAEP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "PAEC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Propane & Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the Paella Catering Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average price per guest (excl. sales tax, service included)",
+  "PVP equivalente con IVA (calculado)": "Price per guest incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol sold (licensed only)",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "CHECKLIST APERTURA — FOOD TRUCK": "PAELLA CATERING STARTUP CHECKLIST — LIVE PAELLA CATERER",
+  "FASE 2: VEHÍCULO Y PERMISOS": "PHASE 2: COMMISSARY, PROPANE STATION, FIRE RULES & PERMITS",
+  "INSTRUCCIONES DE USO — Plan financiero Food Truck": "HOW TO USE THIS WORKBOOK — Paella Catering Financial Projections",
+  "PLAN DE NEGOCIO: FOOD TRUCK": "BUSINESS PLAN: PAELLA CATERING COMPANY",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — Food Truck urbano": "Base case — live paella caterer (cooked on site at events)",
+  "Break-even — Food Truck": "Break-even — Paella Catering",
+  "Ticket medio sin IVA": "Average price per guest (excl. sales tax)",
+  "Clientes/día (media del año 1)": "Events per year (year-1 average)",
+  "Clientes/día (media)": "Events per year (average)",
+  "Clientes/día": "Events per year",
+  "Días de apertura al año": "Average guests per event",
+  "Coste variable por cliente": "Variable cost per guest",
+  "Margen de contribución por cliente": "Contribution margin per guest",
+  "Ticket menos coste variable unitario": "Price per guest minus variable cost per guest",
+  "Clientes necesarios al año": "Guests needed per year",
+  "Clientes necesarios al día": "Events needed per year",
+  "Clientes necesarios al año (caja)": "Guests needed per year (cash)",
+  "Clientes necesarios al día (caja)": "Events needed per year (cash)",
+  "Clientes/día previstos en el plan": "Events per year in the plan",
+  "Clientes/día para el equilibrio": "Events per year to break even",
+  "Clientes al año por jornada equivalente": "Guests per year per full-time equivalent",
+  "Comisiones de delivery": "Corporate catering marketplace fees",
+  "Coste de mercancía — comida": "Cost of goods — paella packages (rice, seafood, meats, saffron, salad & bread)",
+  "Coste de mercancía — bebida": "Cost of goods — add-ons",
+  "Consumibles y envases": "Disposables & cooking fuel"
+ },
+ "cadenas": [
+  {
+   "id": "c0676",
+   "es": "Capital 1 € Ley Crea y Crece",
+   "donde": [
+    "PAEC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "An LLC separates personal and business liability, which matters when you tow a smoker and cook with fire at other people's events. An S corp election can cut self-employment tax once profit is steady; ask your accountant when it pays off.",
+   "propuesta_de": "GBQ-check c0676 (BBQC F1 - Constitución!E6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "Separar finanzas",
+   "donde": [
+    "PAEC · F1 - Constitución!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Apply on your state tax agency website. In many states sales tax applies to the whole catering invoice: smoked meats, staff and rentals, and in some states the service charge. Confirm your state's rule before you quote.",
+   "propuesta_de": "GBQ-check c0692 (BBQC F1 - Constitución!E10)",
+   "pistas": [
+    "P01",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Mínimo 300.000 €, cubre intoxicaciones",
+   "donde": [
+    "PAEC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Bring the Word plan, the Excel projections and written quotes for the smoker trailer and the van. SBA 7(a) loans go through participating banks: ask what owner equity they expect and how long approval takes, and do not sign for the trailer until the loan is approved.",
+   "propuesta_de": "GBQ-check c0700 (BBQC F1 - Constitución!E12)",
+   "pistas": [
+    "P01",
+    "P03",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Seguro del vehículo (furgoneta o remolque)",
+   "donde": [
+    "PAEC · F1 - Constitución!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Have an attorney draft your standard BBQ catering contract",
+   "propuesta_de": "GBQ-check c0701 (BBQC F1 - Constitución!B13)",
+   "pistas": [
+    "P01",
+    "P07",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0704",
+   "es": "A todo riesgo recomendado",
+   "donde": [
+    "PAEC · F1 - Constitución!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Cover a 50% nonrefundable deposit, final payment date, cancellation tiers, guest minimum, final guest count date, and service charge versus gratuity. Add a weather and burn ban clause (propane backup or a new date) and photo permission. Reuse it for every event.",
+   "propuesta_de": "GBQ-check c0704 (BBQC F1 - Constitución!E13)",
+   "pistas": [
+    "P01",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0705",
+   "es": "Registro de actividades de tratamiento de datos personales",
+   "donde": [
+    "PAEC · F1 - Constitución!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Write your HACCP-based food safety plan for smoked meats and transport SOPs",
+   "propuesta_de": "GBQ-check c0705 (BBQC F1 - Constitución!B14)",
+   "pistas": [
+    "P01",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0708",
+   "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes del programa de fidelización, personal y proveedores",
+   "donde": [
+    "PAEC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Safe minimums (FDA Food Code): 145 °F (63 °C) for intact cuts, 155 °F (68 °C) for injected, tenderized or ground meat including sausage (an injected brisket counts), 165 °F (74 °C) for poultry, hot holding at 135 °F (57 °C) or higher. Cool to 70 °F (21 °C) within 2 hours and to 41 °F (5 °C) within a total of 6 hours; reheat to 165 °F (74 °C). Tenderness temperatures for brisket are a quality target, not a safety limit.",
+   "propuesta_de": "GBQ-check c0708 (BBQC F1 - Constitución!E14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P10",
+    "P11",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "Selección y compra del vehículo",
+   "donde": [
+    "PAEC · F2 - Vehículo!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose a shared commissary kitchen where you can smoke: hours, storage, smoker trailer parking",
+   "propuesta_de": "GBQ-check c0718 (BBQC F2 - Vehículo!B5)",
+   "pistas": [
+    "P01",
+    "P07",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Furgoneta adaptada, remolque o trailer. Nuevo o 2a mano",
+   "donde": [
+    "PAEC · F2 - Vehículo!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Visit at least three and ask first: may I run a smoker here, and where does the wood go? Compare hours, walk-in space, parking for the smoker trailer and the deposit. A home kitchen is never allowed for catering, and cottage food rules do not cover meat.",
+   "propuesta_de": "GBQ-check c0721 (BBQC F2 - Vehículo!E5)",
+   "pistas": [
+    "P01",
+    "P07",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0725",
+   "es": "Ventanilla, mostrador, instalaciones",
+   "donde": [
+    "PAEC · F2 - Vehículo!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Your health department asks for it with the permit application. It should name your hours, storage areas, trailer parking, smoking rules and cleaning duties; keep a signed copy on file.",
+   "propuesta_de": "GBQ-check c0725 (BBQC F2 - Vehículo!E6)",
+   "pistas": [
+    "P01",
+    "P13",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0726",
+   "es": "Certificación gas (si cocina a gas)",
+   "donde": [
+    "PAEC · F2 - Vehículo!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Apply for the county catering / health permit and ask about the trailer",
+   "propuesta_de": "GBQ-check c0726 (BBQC F2 - Vehículo!B7)",
+   "pistas": [
+    "P01",
+    "P15",
+    "P16",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "Revisión anual obligatoria",
+   "donde": [
+    "PAEC · F2 - Vehículo!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Expect an application, a fee, a menu review and an inspection of the commissary and the van. Ask your county directly: does smoking or serving from the trailer at the event make it a mobile food unit? If yes, permit it; if not, smoke at the commissary and carry the meat in hot boxes.",
+   "propuesta_de": "GBQ-check c0729 (BBQC F2 - Vehículo!E7)",
+   "pistas": [
+    "P01",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0734",
+   "es": "Proyecto técnico sanitario",
+   "donde": [
+    "PAEC · F2 - Vehículo!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Check with your fire marshal on solid fuel cooking, propane and tents",
+   "propuesta_de": "GBQ-check c0734 (BBQC F2 - Vehículo!B9)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Planos de instalación, flujos y depósitos de agua",
+   "donde": [
+    "PAEC · F2 - Vehículo!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Cooking with wood or charcoal usually needs a Class K plus 2A:10BC extinguisher, 10 ft between your pit and other vendors and limited propane on site (often up to 200 lb). Rules follow your city's fire code, so ask the fire marshal. Check your county's burn ban order before every event (some allow cooking in a closed smoker or grill, others do not) and ask venues about cooking under tents.",
+   "propuesta_de": "GBQ-check c0737 (BBQC F2 - Vehículo!E9)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Autorización sanitaria del vehículo",
+   "donde": [
+    "PAEC · F2 - Vehículo!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy your smoker trailer and a used cargo van, and have both inspected",
+   "propuesta_de": "GBQ-check c0738 (BBQC F2 - Vehículo!B10)",
+   "pistas": [
+    "P01",
+    "P07",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0741",
+   "es": "Inspección del vehículo ya equipado",
+   "donde": [
+    "PAEC · F2 - Vehículo!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Look for an offset or reverse-flow smoker trailer in the 500-gallon class. Check welds, axles, brakes and firebox thickness, and read the title for liens. Confirm your own pickup is rated to tow it. Get a mechanical inspection of the van and check mileage, service records and payload.",
+   "propuesta_de": "GBQ-check c0741 (BBQC F2 - Vehículo!E10)",
+   "pistas": [
+    "P01",
+    "P07",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "Permiso venta ambulante (municipal)",
+   "donde": [
+    "PAEC · F2 - Vehículo!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Title and register the trailer and van, and buy commercial auto and inland marine coverage",
+   "propuesta_de": "GBQ-check c0742 (BBQC F2 - Vehículo!B11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P20",
+    "P13",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "CADA municipio tiene su normativa",
+   "donde": [
+    "PAEC · F2 - Vehículo!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Register both at your state DMV in the business name. Commercial auto should cover the trailer; inland marine covers the smoker and gear in transit. A CDL is needed only at 26,001 lb or more (pickup and trailer: a combined rating of 26,001 lb or more with a trailer over 10,000 lb). Towing across state lines above 10,000 lb combined may bring federal rules (USDOT number, DOT medical card): check with FMCSA.",
+   "propuesta_de": "GBQ-check c0745 (BBQC F2 - Vehículo!E11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "Permiso de ocupación de la vía pública",
+   "donde": [
+    "PAEC · F2 - Vehículo!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Upfit the trailer and van: warming cabinet, handwash if required, shelving and tie-downs",
+   "propuesta_de": "GBQ-check c0746 (BBQC F2 - Vehículo!B12)",
+   "pistas": [
+    "P01",
+    "P20",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0749",
+   "es": "Si operas en espacio público fijo",
+   "donde": [
+    "PAEC · F2 - Vehículo!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ask your county what the trailer needs (handwash sink, water tanks) before you build. Add racks, tie-downs and non-slip liners in the van so loads cannot shift, and check that your insurer covers the upfit.",
+   "propuesta_de": "GBQ-check c0749 (BBQC F2 - Vehículo!E12)",
+   "pistas": [
+    "P01",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "Muchos mercados tienen lista de espera",
+   "donde": [
+    "PAEC · F2 - Vehículo!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Venues and planners ask for a certificate of insurance (COI) naming them as additional insured. Ask your broker for same-day COIs, and tell them you cook with open fire.",
+   "propuesta_de": "GBQ-check c0753 (BBQC F2 - Vehículo!E13)",
+   "pistas": [
+    "P01",
+    "P13",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "B para <3.500kg, C para mayor",
+   "donde": [
+    "PAEC · F2 - Vehículo!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Most BBQ caterers do not sell or pour alcohol: the client hires a licensed bar service with its own insurance. Skip this unless your staff pour, and ask your broker where you stand.",
+   "propuesta_de": "GBQ-check c0757 (BBQC F2 - Vehículo!E14)",
+   "pistas": [
+    "P01",
+    "P24",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0761",
+   "es": "También son obligatorias en venta ambulante: el modelo y el texto del cartel los aprueba tu Comunidad Autónoma",
+   "donde": [
+    "PAEC · F2 - Vehículo!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Required in almost every state once you have employees, including part-time event staff (Texas is the exception: optional there, but venues and lenders often ask for it). Premiums depend on payroll and class code; cooks near open fire may be rated higher.",
+   "propuesta_de": "GBQ-check c0761 (BBQC F2 - Vehículo!E15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P20",
+    "P13",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0762",
+   "es": "Contrato con gestor autorizado de residuos y aceite usado",
+   "donde": [
+    "PAEC · F2 - Vehículo!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Arrange waste, grease and ash removal with a licensed hauler",
+   "propuesta_de": "GBQ-check c0762 (BBQC F2 - Vehículo!B16)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P27",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0765",
+   "es": "Se comprueba en la inspección sanitaria del vehículo. Este mismo checklist ya avisa de que la freidora genera aceite usado que hay que gestionar, pero nunca contrataba el servicio",
+   "donde": [
+    "PAEC · F2 - Vehículo!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "The commissary often handles it. Confirm who removes grease and trash. Cool ash fully and keep it in a lidded metal container until it is hauled away.",
+   "propuesta_de": "GBQ-check c0765 (BBQC F2 - Vehículo!E16)",
+   "pistas": [
+    "P01",
+    "P07",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0775",
+   "es": "Adaptar al concepto: burgers, crepes, plancha...",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Drop-off, staffed buffet and live-fire premium need different equipment. Rent what you use rarely and buy what you use at nearly every event.",
+   "propuesta_de": "GBQ-check c0775 (BBQC F3 - Equipamiento!E5)",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0776",
+   "es": "Freidora (si aplica)",
+   "donde": [
+    "PAEC · F3 - Equipamiento!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy insulated food carriers, hot boxes and calibrated probe thermometers",
+   "propuesta_de": "GBQ-check c0776 (BBQC F3 - Equipamiento!B6)",
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "Con filtro y gestión aceite usado",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose carriers that hold smoked meats at 135 °F (57 °C) or higher for the whole trip. Calibrate thermometers in ice water and keep spares in the van.",
+   "propuesta_de": "GBQ-check c0779 (BBQC F3 - Equipamiento!E6)",
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0780",
+   "es": "Campana extractora con filtros",
+   "donde": [
+    "PAEC · F3 - Equipamiento!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up your live-fire rig and propane backup, and test each cooking chamber",
+   "propuesta_de": "GBQ-check c0780 (BBQC F3 - Equipamiento!B7)",
+   "pistas": [
+    "P01",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0781",
+   "es": "Instalador",
+   "donde": [
+    "PAEC · F3 - Equipamiento!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Paella chef",
+   "propuesta_de": "GBQ-check c0781 (BBQC F3 - Equipamiento!C7)",
+   "pistas": [
+    "P01",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "1-2 semanas",
+   "donde": [
+    "PAEC · F3 - Equipamiento!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GBQ-check c0782 (BBQC F3 - Equipamiento!D7)",
+   "pistas": [
+    "P01",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0783",
+   "es": "Obligatoria en espacio cerrado",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Build the rig you will sell: Santa Maria grill, Argentine parrilla, asado crosses or La Caja China. Test temperature across the smoker and rig, and keep a propane backup ready for burn ban days.",
+   "propuesta_de": "GBQ-check c0783 (BBQC F3 - Equipamiento!E7)",
+   "pistas": [
+    "P01",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "Generador eléctrico insonorizado",
+   "donde": [
+    "PAEC · F3 - Equipamiento!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Open accounts with an approved-source meat supplier and a cash-and-carry",
+   "propuesta_de": "GBQ-check c0788 (BBQC F3 - Equipamiento!B9)",
+   "pistas": [
+    "P01",
+    "P15",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "5-7 kW mínimo, insonorizado (<70dB)",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy only from approved sources (USDA or state inspected), such as a broadline distributor or Restaurant Depot. A whole hog must never come from a custom exempt plant, since that meat is stamped not for sale. Compare delivery minimums and price lists.",
+   "propuesta_de": "GBQ-check c0791 (BBQC F3 - Equipamiento!E9)",
+   "pistas": [
+    "P01",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "Depósito de agua limpia y de aguas residuales",
+   "donde": [
+    "PAEC · F3 - Equipamiento!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy carving station gear: board, knives, gloves and heat lamp",
+   "propuesta_de": "GBQ-check c0792 (BBQC F3 - Equipamiento!B10)",
+   "pistas": [
+    "P01",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Instalador",
+   "donde": [
+    "PAEC · F3 - Equipamiento!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Paella chef",
+   "propuesta_de": "GBQ-check c0793 (BBQC F3 - Equipamiento!C10)",
+   "pistas": [
+    "P01",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "1 semana",
+   "donde": [
+    "PAEC · F3 - Equipamiento!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GBQ-check c0794 (BBQC F3 - Equipamiento!D10)",
+   "pistas": [
+    "P01",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Mínimo 40 L de agua limpia y 60 L de residual",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A carving station sells the show. Buy a stable board, two sharp slicing knives, cut-resistant gloves and a heat lamp, and script how you slice in front of guests.",
+   "propuesta_de": "GBQ-check c0795 (BBQC F3 - Equipamiento!E10)",
+   "pistas": [
+    "P01",
+    "P34",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "Fregadero doble seno",
+   "donde": [
+    "PAEC · F3 - Equipamiento!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Line up a wood and charcoal supplier",
+   "propuesta_de": "GBQ-check c0796 (BBQC F3 - Equipamiento!B11)",
+   "pistas": [
+    "P01",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Instalador",
+   "donde": [
+    "PAEC · F3 - Equipamiento!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Paella chef",
+   "propuesta_de": "GBQ-check c0797 (BBQC F3 - Equipamiento!C11)",
+   "pistas": [
+    "P01",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0798",
+   "es": "Con adaptación",
+   "donde": [
+    "PAEC · F3 - Equipamiento!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GBQ-check c0798 (BBQC F3 - Equipamiento!D11)",
+   "pistas": [
+    "P01",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Obligatorio por normativa sanitaria",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ask for seasoned post oak or hickory, and red oak for Santa Maria. Buy by the cord from two suppliers, store it dry and away from the fire, and check how much each event burns.",
+   "propuesta_de": "GBQ-check c0799 (BBQC F3 - Equipamiento!E11)",
+   "pistas": [
+    "P01",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0803",
+   "es": "Tablet y datáfono con cobertura 4G",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Negotiate a caterer rate and standard delivery and pickup times. Rentals are billed to the client, so build them into your proposal.",
+   "propuesta_de": "GBQ-check c0803 (BBQC F3 - Equipamiento!E12)",
+   "pistas": [
+    "P01",
+    "P36",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "Adaptado al espacio reducido",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Use butcher paper, foil pans and sauce cups that survive heat. Use compostable items where your city requires them, and test that lids do not leak in a moving van. Label each pan with the time it left hot holding and a discard time 4 hours later, or leave chafing dishes; ask your county whether it accepts time as a public health control (Food Code 3-501.19).",
+   "propuesta_de": "GBQ-check c0807 (BBQC F3 - Equipamiento!E13)",
+   "pistas": [
+    "P01",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Obligatorio en muchos municipios desde 2023",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Place a logger in each hot box and in the van's cargo area. Save the report after every event as proof that food stayed at 135 °F (57 °C) or higher.",
+   "propuesta_de": "GBQ-check c0811 (BBQC F3 - Equipamiento!E14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0816",
+   "es": "Toldo, mesas plegables, banderolas",
+   "donde": [
+    "PAEC · F3 - Equipamiento!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Run a full test cook and yield test with your team",
+   "propuesta_de": "GBQ-check c0816 (BBQC F3 - Equipamiento!B16)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0819",
+   "es": "Kit de montaje rápido para cada servicio",
+   "donde": [
+    "PAEC · F3 - Equipamiento!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Smoke overnight, hold in hot boxes, load, drive and carve at a friend's venue. Weigh raw and cooked pounds per cut to calibrate the kit calculator, and time every step.",
+   "propuesta_de": "GBQ-check c0819 (BBQC F3 - Equipamiento!E16)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0825",
+   "es": "Propietario + 1 ayudante mínimo",
+   "donde": [
+    "PAEC · F4 - Personal!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A buffet needs roughly one server or buffet attendant per 25-30 guests; full-service adds a pitmaster and a carver. Write the ratio down and use it to price labor in every quote.",
+   "propuesta_de": "GBQ-check c0825 (BBQC F4 - Personal!E5)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Protocolo alérgenos",
+   "donde": [
+    "PAEC · F4 - Personal!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Train your crew on fire safety: extinguishers, propane, shutdown and ash",
+   "propuesta_de": "GBQ-check c0846 (BBQC F4 - Personal!B11)",
+   "pistas": [
+    "P01",
+    "P42",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0849",
+   "es": "14 alérgenos, cartel visible en food truck",
+   "donde": [
+    "PAEC · F4 - Personal!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Show everyone where the Class K and 2A:10BC extinguishers are, how to shut off propane, and how to cool and bin ash. Name who watches the pit at all times during service.",
+   "propuesta_de": "GBQ-check c0849 (BBQC F4 - Personal!E11)",
+   "pistas": [
+    "P01",
+    "P42",
+    "P07",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0850",
+   "es": "Ensayo montaje/desmontaje completo",
+   "donde": [
+    "PAEC · F4 - Personal!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Cover OSHA basics: burns, heat and smoke, lifting and towing safety",
+   "propuesta_de": "GBQ-check c0850 (BBQC F4 - Personal!B12)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0853",
+   "es": "Cronometrar: objetivo <30 min montaje",
+   "donde": [
+    "PAEC · F4 - Personal!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Train staff on hot pans, heat and smoke exposure, safe lifting of meat and wood, and driving with a trailer. Keep an injury log and a first-aid kit in the van and at every event.",
+   "propuesta_de": "GBQ-check c0853 (BBQC F4 - Personal!E12)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0854",
+   "es": "Registro horario diario de la jornada de todo el equipo",
+   "donde": [
+    "PAEC · F4 - Personal!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Train service protocol: carving script, uniform, briefing and the nine major allergens",
+   "propuesta_de": "GBQ-check c0854 (BBQC F4 - Personal!B13)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0857",
+   "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años. Aplica desde el primer contrato del ayudante, aunque sea a tiempo parcial",
+   "donde": [
+    "PAEC · F4 - Personal!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Run a pre-event briefing every time. Everyone should know the nine major allergens, including sesame, and which rubs, sauces and sides contain them, and how to hand an allergy question to the pitmaster.",
+   "propuesta_de": "GBQ-check c0857 (BBQC F4 - Personal!E13)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P46",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0864",
+   "es": "Crear identidad visual y marca",
+   "donde": [
+    "PAEC · F5 - Marketing!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Create your brand, logo, regional menu styles and professional photos",
+   "propuesta_de": "GBQ-check c0864 (BBQC F5 - Marketing!B5)",
+   "pistas": [
+    "P01",
+    "P47",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0867",
+   "es": "Logo, colores, rotulación, packaging branded",
+   "donde": [
+    "PAEC · F5 - Marketing!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Offer menu styles such as Texas, Carolina, Kansas City, Memphis, Santa Maria and Argentine asado. Photograph the meat, the carving station and the smoker trailer; photos sell catering far better than menus.",
+   "propuesta_de": "GBQ-check c0867 (BBQC F5 - Marketing!E5)",
+   "pistas": [
+    "P01",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0896",
+   "es": "Evento de inauguración",
+   "donde": [
+    "PAEC · F5 - Marketing!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Post pit and event photos on Instagram and social media",
+   "propuesta_de": "GBQ-check c0896 (BBQC F5 - Marketing!B13)",
+   "pistas": [
+    "P01",
+    "P49",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0899",
+   "es": "Primer servicio con promo: 2x1, redes, influencers",
+   "donde": [
+    "PAEC · F5 - Marketing!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Share photos and short videos of the pit with the client's permission. Use text messages for quick client follow-ups; keep inquiries in your CRM.",
+   "propuesta_de": "GBQ-check c0899 (BBQC F5 - Marketing!E13)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0903",
+   "es": "Tarjeta digital o QR: el décimo menú, gratis",
+   "donde": [
+    "PAEC · F5 - Marketing!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "The calculator gives pounds of meat and price per guest, the smoke schedule and the shopping list; the template turns it into a polished quote. Log every inquiry and follow up within 48 hours. Pick catering software that sends the quote, collects the e-signature and takes the deposit by card or ACH.",
+   "propuesta_de": "GBQ-check c0903 (BBQC F5 - Marketing!E14)",
+   "pistas": [
+    "P01",
+    "P16",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0911",
+   "es": "El propio checklist promete un programa de fidelización móvil con QR que recoge datos de contacto: necesita su información previa",
+   "donde": [
+    "PAEC · F5 - Marketing!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Invite planners, venue managers and office managers to taste your smoked meats. Ask your local wedding venues when the next bridal show is and reserve a booth early.",
+   "propuesta_de": "GBQ-check c0911 (BBQC F5 - Marketing!E16)",
+   "pistas": [
+    "P01",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0918",
+   "es": "Registro diario ventas por ubicación",
+   "donde": [
+    "PAEC · F6 - 90 Días!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Visit or call the venue 2 weeks out: smoker placement, access, water and fire rules",
+   "propuesta_de": "GBQ-check c0918 (BBQC F6 - 90 Días!B6)",
+   "pistas": [
+    "P01",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0921",
+   "es": "Saber qué ubicaciones funcionan y cuáles no",
+   "donde": [
+    "PAEC · F6 - 90 Días!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Check loading access, parking, power and water. Decide where the smoker trailer or carving station goes, and ask the venue for its fire rules in writing. Photograph the space.",
+   "propuesta_de": "GBQ-check c0921 (BBQC F6 - 90 Días!E6)",
+   "pistas": [
+    "P01",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0926",
+   "es": "Ajustar carta según ventas",
+   "donde": [
+    "PAEC · F6 - 90 Días!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Order meat 5-7 days out, then rub, trim and portion 1-2 days out",
+   "propuesta_de": "GBQ-check c0926 (BBQC F6 - 90 Días!B8)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0928",
+   "es": "Mes 1",
+   "donde": [
+    "PAEC · F6 - 90 Días!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "5-7 days out, then 1-2 days out",
+   "propuesta_de": "GBQ-check c0928 (BBQC F6 - 90 Días!D8)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0929",
+   "es": "Eliminar platos lentos, potenciar bestsellers",
+   "donde": [
+    "PAEC · F6 - 90 Días!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Order raw pounds from the calculator against the final guest count, with a small buffer. Follow the smoke schedule (Start the pit by) and build one production list with who does what.",
+   "propuesta_de": "GBQ-check c0929 (BBQC F6 - 90 Días!E8)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0930",
+   "es": "Optimizar ruta semanal",
+   "donde": [
+    "PAEC · F6 - 90 Días!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Probe, rest and hold the meat, then complete the loading and transport checklist",
+   "propuesta_de": "GBQ-check c0930 (BBQC F6 - 90 Días!B9)",
+   "pistas": [
+    "P01",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0933",
+   "es": "Fijar los mejores días/ubicaciones como ruta fija",
+   "donde": [
+    "PAEC · F6 - 90 Días!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Hold at 135 °F (57 °C) or higher in hot boxes. Check carriers, pans, equipment and rentals against the list, and record food temperatures when you load and again when you arrive.",
+   "propuesta_de": "GBQ-check c0933 (BBQC F6 - 90 Días!E9)",
+   "pistas": [
+    "P01",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0934",
+   "es": "Encuestas a clientes y reseñas de Google",
+   "donde": [
+    "PAEC · F6 - 90 Días!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up 60-90 minutes before service and run the carving station",
+   "propuesta_de": "GBQ-check c0934 (BBQC F6 - 90 Días!B10)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P11",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0937",
+   "es": "Pedir reseñas, responder todas",
+   "donde": [
+    "PAEC · F6 - 90 Días!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Arrive early, set up the buffet and check hot and cold temperatures before guests arrive. Run the live pit only where your permit and the venue allow it. Brief staff, then keep a service timeline.",
+   "propuesta_de": "GBQ-check c0937 (BBQC F6 - 90 Días!E10)",
+   "pistas": [
+    "P01",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0938",
+   "es": "Evaluar eventos y festivales",
+   "donde": [
+    "PAEC · F6 - 90 Días!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Pick up, clean, cool the ash and return rentals",
+   "propuesta_de": "GBQ-check c0938 (BBQC F6 - 90 Días!B11)",
+   "pistas": [
+    "P01",
+    "P13",
+    "P49",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0941",
+   "es": "Festivales = facturación x3-5 en un día",
+   "donde": [
+    "PAEC · F6 - 90 Días!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Count and inspect rentals before you leave. Make sure ash is cold and sealed in a metal container. Return rentals clean by the agreed time to avoid late fees.",
+   "propuesta_de": "GBQ-check c0941 (BBQC F6 - 90 Días!E11)",
+   "pistas": [
+    "P01",
+    "P13",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0946",
+   "es": "Primer cierre trimestral",
+   "donde": [
+    "PAEC · F6 - 90 Días!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Review real yield, food cost and labor hours per event against the calculator",
+   "propuesta_de": "GBQ-check c0946 (BBQC F6 - 90 Días!B13)",
+   "pistas": [
+    "P01",
+    "P58",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0949",
+   "es": "Comparar P&L real vs plan financiero",
+   "donde": [
+    "PAEC · F6 - 90 Días!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Compare raw versus cooked pounds, food cost, staff hours and rentals with what the calculator projected. Small gaps add up quickly across a season.",
+   "propuesta_de": "GBQ-check c0949 (BBQC F6 - 90 Días!E13)",
+   "pistas": [
+    "P01",
+    "P59"
+   ]
+  }
+ ]
+}

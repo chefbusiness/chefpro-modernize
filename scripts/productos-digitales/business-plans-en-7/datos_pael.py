@@ -230,7 +230,7 @@ RX_PAEL_NO = [
     (r'(?i)\bplated\b', 'catering genérico («plated»)', None),
     (r'(?i)\b(?:chef-attended|themed|action|food) stations?\b', 'catering genérico («themed / action / food stations»)',
      None),
-    (r'(?i)(?<!paella )(?<!carving )(?<!cooking )(?<!handwashing )(?<!handwash )\bstations?\b',
+    (r'(?i)(?<!paella )(?<!carving )(?<!cooking )(?<!handwashing )(?<!handwash )(?<!propane )\bstations?\b',
      'catering genérico («stations»: solo live paella station, Serrano ham carving station, cooking / handwashing station)',
      None),
     (r'(?i)\bchef-attended\b', 'catering genérico («chef-attended»)', None),
