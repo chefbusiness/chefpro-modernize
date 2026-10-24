@@ -61,6 +61,29 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Ice Cream Shop Checklists Kit Pro (24-oct-2026, séptimo hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Artisan Ice Cream Shop», entre los kits de tareas): se sube y su copy pasa a describir la edición
+  // EN (decía «9 pre-filled operational checklists», «churning», «High/low season»; la EN trae 298 tareas, 9 + 3 bonus,
+  // 12 ficheros, batch freezing, peak season / off-season y ice cream catering). Imagen: la del ES lleva texto en español
+  // («HELADOS ARTESANALES MADRID 2026», «PRECIOS») → el hero de la landing EN.
+  {
+    name: 'Ice Cream Shop Checklists Kit Pro',
+    slug: '/kit-tareas-heladeria',
+    description: '9 templates + 3 bonuses (12 files) with 298 ice cream shop tasks already written: opening and closing, production (pasteurizing, aging and batch freezing), manager, duties by role, cleaning schedule, peak season, ice cream catering and cash drawer count. Print it, delegate it, check it off.',
+    features: [
+      'Opening and closing: dipping cabinets, toppings and counter',
+      'Pasteurizing, aging and batch freezing in °F',
+      'Roles: ice cream maker, scooper, shift lead',
+      'Peak season, off-season and ice cream catering',
+      'Cleaning schedule, whole-shop checklist and cash drawer count',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/use-case-heladeria-conos.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'ice-cream'],
+  },
   // Ghost Kitchen Checklists Kit Pro (18-oct-2026, sexto hermano vertical del Restaurant Checklists Kit Pro): el más
   // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
   // («Recurring Tasks: Dark Kitchen», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
@@ -783,22 +806,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'management', 'hotel'],
-  },
-  {
-    name: 'Recurring Tasks: Artisan Ice Cream Shop',
-    slug: '/kit-tareas-heladeria',
-    description: '9 pre-filled operational checklists for artisan gelato and ice cream shops: production (pasteurization, churning), service, management, and seasonality.',
-    features: [
-      'Production: pasteurization and churning',
-      'Display case, toppings, and counter service',
-      'Roles: ice cream maker, counter staff, manager',
-      'High/low season plus event catering',
-    ],
-    iconName: 'IceCream',
-    image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'ice-cream'],
   },
   {
     name: 'Recurring Tasks: Chocolate Shop / Workshop',

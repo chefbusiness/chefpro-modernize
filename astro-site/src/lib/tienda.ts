@@ -271,6 +271,17 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (24-oct-2026): Ice Cream Shop Checklists Kit Pro, séptimo hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/icecream D1-D4). Gemelo del Kit de Tareas Heladería. vivo: true en la rama, que se fusiona
+    // cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop, el Catering, el Pizza
+    // Shop, el Burger Joint y el Ghost Kitchen Checklists Kit Pro).
+    familia: 'kit-tareas-heladeria',
+    productos: {
+      es: { slug: 'kit-tareas-heladeria', vivo: true },
+      en: { slug: 'ice-cream-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.

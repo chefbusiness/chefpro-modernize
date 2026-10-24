@@ -38,7 +38,8 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Guide: Bakery with Production Room': '/guia-panaderia-obrador',
   // 'Business Plan: Coffee Shop' (nombre EN viejo del catálogo) → landing EN desde el 4-oct-2026.
   'Business Plan: Coffee Shop': '/en/digital-products/coffee-shop-business-plan',
-  'Tasks: Ice Cream Shop': '/kit-tareas-heladeria',
+  // Nombre EN viejo del catálogo → landing EN desde el 24-oct-2026 (Ice Cream Shop Checklists Kit Pro).
+  'Tasks: Ice Cream Shop': '/en/digital-products/ice-cream-shop-checklist-templates',
   'Tasks: Pizzeria': '/kit-tareas-pizzeria',
   // Producto con landing propia en la tienda EN (products-catalog.ts urlByLang.en): la
   // mención inglesa enlaza a ESA landing, no a la española (TIENDA-INTERNACIONAL §3.10).
@@ -63,6 +64,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Pizza Shop Checklists Kit Pro': '/en/digital-products/pizza-shop-checklist-templates',
   'Burger Joint Checklists Kit Pro': '/en/digital-products/burger-joint-checklist-templates',
   'Ghost Kitchen Checklists Kit Pro': '/en/digital-products/ghost-kitchen-checklist-templates',
+  'Ice Cream Shop Checklists Kit Pro': '/en/digital-products/ice-cream-shop-checklist-templates',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 
