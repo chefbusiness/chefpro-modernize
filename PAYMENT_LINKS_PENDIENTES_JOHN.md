@@ -23,8 +23,8 @@
 | 1 | Ice Cream Shop Checklists Kit Pro | $19 | #156 | ✅ listo |
 | 2 | Chocolate Shop Checklists Kit Pro | $19 | #157 | ✅ listo |
 | 3 | Pastry Shop Checklists Kit Pro | $19 | #157 | ✅ listo |
-| 4 | BBQ Catering Business Plan Kit | $39 | — | 🔨 F1 (research) |
-| 5 | Paella Catering Business Plan Kit | $39 | — | ⏳ en cola |
+| 4 | BBQ Catering Business Plan Kit | $39 | #158 | ✅ listo |
+| 5 | Paella Catering Business Plan Kit | $39 | — | 🔨 F2 (entregables) |
 
 ### 1. Ice Cream Shop Checklists Kit Pro — $19.00 USD (PR #156)
 
@@ -48,3 +48,10 @@
 - Redirección: `https://aichef.pro/en/digital-products/pastry-shop-checklist-templates/access?session_id={CHECKOUT_SESSION_ID}`
 - Descripción: Thirteen Excel templates and three bonuses for pastry shops: nine checklists for opening and closing, production stations, manager and role duties, cleaning, holiday campaigns and the cash drawer, plus four logs for weekly production and waste, custom cake orders, the bakery allergen chart and temperatures. One-time payment, lifetime access.
 - Env que crearé: `VITE_STRIPE_PAYMENT_LINK_PASTRY_SHOP_CHECKLISTS_KIT`
+
+### 4. BBQ Catering Business Plan Kit — $39.00 USD (PR #158)
+
+- Nombre en Stripe: **BBQ Catering Business Plan Kit**
+- Redirección: `https://aichef.pro/en/digital-products/bbq-catering-business-plan/access?session_id={CHECKOUT_SESSION_ID}`
+- Descripción: Business plan kit for an off-site BBQ catering company: a 10-section Word business plan, 3-year Excel financial projections, a per-guest pricing calculator with meat yields and shopping lists by guest count, and a 68-task startup checklist. One-time payment, lifetime access.
+- Env que crearé: `VITE_STRIPE_PAYMENT_LINK_BBQ_CATERING_BUSINESS_PLAN`
