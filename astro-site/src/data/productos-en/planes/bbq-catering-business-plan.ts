@@ -39,7 +39,7 @@
 //     -hero (parrilla argentina = línea live-fire premium, nunca de hero). Fuera -1 («ASADOR»), -3 (restaurante), -4
 //     («QUEBRACHO CHARCOAL MADRID 2026») y -5 («ASADO MADRID», food truck). Las 3 bbq-catering-*.jpg las GENERA EL
 //     ORQUESTADOR con generate-images (F3-NOTAS §4): deben existir en public/lovable-uploads/ai-gallery/ antes del merge.
-//     OG provisional = recorte 1200×630 de -2; se rehace desde bbq-catering-smoker-trailer-wedding.jpg.
+//     OG = recorte 1200×630 de bbq-catering-smoker-trailer-wedding.jpg (generada el 24-oct con generate-images).
 // DINERO: stripeEnvKey = VITE_STRIPE_PAYMENT_LINK_BBQ_CATERING_BUSINESS_PLAN (resuelto en el wrapper .astro; sin la env
 // var el CTA cae a '#comprar' hasta que John cree el Payment Link).
 import type { PlanNegocioData, PlanNegocioFaq } from '../../productos/planes/types';
