@@ -126,7 +126,7 @@ DOCX_ENCABEZADOS = OrderedDict([('bbq', [37, 44, 51, 59, 67, 76, 83, 91, 100, 10
 DOCX_INDICE = OrderedDict([('bbq', list(range(24, 34)))])
 DOCX_ULTIMO_9 = OrderedDict([('bbq', '108')])
 DOCX_TANDAS = OrderedDict([('bbq_a', ('bbq', [1, 2, 3, 4, 5])), ('bbq_b', ('bbq', [6, 7, 8, 9, 10]))])
-PRESTAMO_SEMILLA = OrderedDict([('bbq', 98000)])                    # punto fijo del dry-run (research §8: ≈ $98,500)
+PRESTAMO_SEMILLA = OrderedDict([('bbq', 101000)])                   # punto fijo del dry-run (research §8: ≈ $98,500)
 
 AUTOTEST = OrderedDict([
     ('P1', 'BBQP'), ('P2', 'BBQP'), ('C1', 'BBQC'), ('C2', 'BBQC'),

@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-24T12:44:06Z",
+  "generado": "2026-10-24T12:45:29Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-food-truck"
   ],
-  "commit": "741c9af9",
+  "commit": "a2acee16",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {

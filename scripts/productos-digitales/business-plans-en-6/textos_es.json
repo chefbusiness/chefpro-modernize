@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-24T12:44:06Z",
+  "generado": "2026-10-24T12:45:29Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "741c9af9",
+  "commit": "a2acee16",
   "libros": {
    "BBQP": {
     "es": "plan-financiero-food-truck.xlsx",
@@ -24,9 +24,9 @@
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: motor común cuyo EN publicado del Catering no trae vocabulario que no valga para un BBQ caterer (van frigorífica, generador, estaciones, chef, emplatado…). preparar_tandas escribe su EN. No van a los redactores",
-    "n_cadenas": 314,
-    "n_palabras": 3507,
-    "n_plan": 301,
+    "n_cadenas": 312,
+    "n_palabras": 3472,
+    "n_plan": 299,
     "n_check": 14,
     "n_localizar": 0,
     "n_max_len": 17
@@ -34,9 +34,9 @@
    {
     "id": "GRC-plan",
     "descripcion": "REUTILIZADAS con revisión: EN publicado del Catering en ESA celda que vale para un BBQ caterer salvo matices (notas del plan, método D18). preparar_tandas escribe su EN; la tanda GBQ-plan las revisa en textos_en/GRC-plan.revision.json (solo las que cambian)",
-    "n_cadenas": 84,
-    "n_palabras": 1754,
-    "n_plan": 84,
+    "n_cadenas": 79,
+    "n_palabras": 1587,
+    "n_plan": 79,
     "n_check": 0,
     "n_localizar": 57,
     "n_max_len": 2
@@ -44,9 +44,9 @@
    {
     "id": "GBQ-plan",
     "descripcion": "Plan financiero (BBQP) que se ESCRIBE para el BBQ caterer: celdas cuyo EN del Catering habla de van frigorífica, generador, estaciones, chef, emplatado… (propuesta = ese EN), las forzadas por contenido BBQ, las que no tienen EN del Catering y las 56 celdas de la tabla D19 (5 filas con propuesta)",
-    "n_cadenas": 121,
-    "n_palabras": 2823,
-    "n_plan": 121,
+    "n_cadenas": 128,
+    "n_palabras": 3025,
+    "n_plan": 128,
     "n_check": 0,
     "n_localizar": 67,
     "n_max_len": 0
@@ -388,77 +388,6 @@
     "conjunto": "business-plans-en-4 (Catering EN publicado)",
     "donde": [
      "CATP 0. Supuestos!A10"
-    ]
-   }
-  },
-  {
-   "id": "c0018",
-   "es": "Peso de la COMIDA sobre el total de ventas. Es un INPUT: cámbialo aquí y el P&L, la tesorería y el IVA repercutido se recalculan solos",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "bbq"
-   ],
-   "n_apariciones": 1,
-   "palabras": 27,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D99/D103: smoked meats, sides, BBQ packages y add-ons; «food» y «menu» valen; nunca «chef» (di pitmaster o pit cook), «plated» ni «stations» salvo «carving station» (gate)",
-    "D103: cuota de BBQ PACKAGES (carnes ahumadas, sides, pan y salsas, personal) 88 %; el resto (fila 12) son add-ons: live pit on site, postres, aperitivos, bebidas sin alcohol, alquileres, travel fees. Es una ENTRADA"
-   ],
-   "sha1": "38d78a560f3a",
-   "donde": [
-    {
-     "f": "BBQP",
-     "h": "0. Supuestos",
-     "c": "C11",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0018",
-    "en": "Share of FOOD in total sales. It is an INPUT: change it here and the P&L, the cash flow and the sales tax collected recalculate on their own",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-4 (Catering EN publicado)",
-    "donde": [
-     "CATP 0. Supuestos!C11"
-    ]
-   }
-  },
-  {
-   "id": "c0020",
-   "es": "Se calcula como el resto: comida + bebida = 100 %",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "bbq"
-   ],
-   "n_apariciones": 1,
-   "palabras": 8,
-   "pistas": [
-    "D99/D103: smoked meats, sides, BBQ packages y add-ons; «food» y «menu» valen; nunca «chef» (di pitmaster o pit cook), «plated» ni «stations» salvo «carving station» (gate)",
-    "D103: calculado como el resto: BBQ packages + add-ons = 100 %"
-   ],
-   "sha1": "94841b99cd5c",
-   "donde": [
-    {
-     "f": "BBQP",
-     "h": "0. Supuestos",
-     "c": "C12",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0020",
-    "en": "Calculated as the remainder: food + beverage = 100%",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-4 (Catering EN publicado)",
-    "donde": [
-     "CATP 0. Supuestos!C12"
     ]
    }
   },
@@ -11216,120 +11145,6 @@
    }
   },
   {
-   "id": "c0012",
-   "es": "El fichero v1.1 proyectaba 175.000 € en el año 2 sobre 135.000 € (+29,6 %): se redondea a la baja porque un food truck de un año no tiene todavía rutas ni clientela corporativa consolidadas (mismo criterio conservador que tapas-bar y cafetería)",
-   "grupo": "GRC-plan",
-   "tratamiento": "traducir",
-   "planes": [
-    "bbq"
-   ],
-   "n_apariciones": 1,
-   "palabras": 44,
-   "pistas": [
-    "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
-    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
-    "D101: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
-    "D99/D102: el smoker trailer (lo arrastra la pickup del dueño, «tow vehicle») y la furgoneta de carga usada; nunca «truck» (gate; «BBQ food trucks» solo para el competidor)",
-    "D100: crecimiento de EVENTOS 12 % en el año 2 (reseñas y bodas reservadas con meses; lo limita un solo smoker trailer)"
-   ],
-   "sha1": "281161afc758",
-   "donde": [
-    {
-     "f": "BBQP",
-     "h": "0. Supuestos",
-     "c": "C7",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GCAT-plan",
-    "id": "c0012",
-    "en": "Growth in events in year 2 over year 1 (enter 0.15 for 15%). Kept conservative on purpose: in its first year a caterer has few repeat clients and referrals, and weddings are booked months ahead.",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-4 (Catering EN publicado)",
-    "donde": [
-     "CATP 0. Supuestos!C7"
-    ]
-   }
-  },
-  {
-   "id": "c0014",
-   "es": "El fichero v1.1 proyectaba 215.000 € sobre 175.000 € (+22,9 %): igual, redondeado a la baja",
-   "grupo": "GRC-plan",
-   "tratamiento": "traducir",
-   "planes": [
-    "bbq"
-   ],
-   "n_apariciones": 1,
-   "palabras": 17,
-   "pistas": [
-    "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
-    "D100: crecimiento de EVENTOS 8 % en el año 3, por la misma razón"
-   ],
-   "sha1": "bb56c1533f00",
-   "donde": [
-    {
-     "f": "BBQP",
-     "h": "0. Supuestos",
-     "c": "C8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GCAT-plan",
-    "id": "c0014",
-    "en": "Growth in events in year 3 over year 2, kept conservative for the same reason: repeat corporate clients and planner referrals build up slowly.",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-4 (Catering EN publicado)",
-    "donde": [
-     "CATP 0. Supuestos!C8"
-    ]
-   }
-  },
-  {
-   "id": "c0026",
-   "es": "Packaging biodegradable: extremo bajo del 3-5 % de la fila «Coste packaging / ventas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones. Es una partida realmente cara en un food truck (obligatoria por normativa municipal en muchos casos, como recuerda la fase de equipamiento de tu checklist) y por eso se cita al lado del food cost, no dentro de «varios»",
-   "grupo": "GRC-plan",
-   "tratamiento": "traducir",
-   "planes": [
-    "bbq"
-   ],
-   "n_apariciones": 1,
-   "palabras": 65,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
-    "D99/D102: el smoker trailer (lo arrastra la pickup del dueño, «tow vehicle») y la furgoneta de carga usada; nunca «truck» (gate; «BBQ food trucks» solo para el competidor)",
-    "D103: desechables + leña, carbón, pellets y propane backup 3.5 % (Kit estimate: desechables 2.5 % + combustible de cocina 1 %, ≈ 60-100 lb de leña por cocción); escala con las libras y los eventos; el combustible del VEHÍCULO va en la fila 27 del P&L"
-   ],
-   "sha1": "4d2ef733da01",
-   "donde": [
-    {
-     "f": "BBQP",
-     "h": "0. Supuestos",
-     "c": "C15",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GCAT-plan",
-    "id": "c0026",
-    "en": "Disposable plates, cutlery, napkins and containers for drop-off orders, as a % of sales. It sits next to cost of goods sold instead of hiding in miscellaneous. Some cities restrict foam and single-use plastics, so check your local rules.",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-4 (Catering EN publicado)",
-    "donde": [
-     "CATP 0. Supuestos!C15"
-    ]
-   }
-  },
-  {
    "id": "c0028",
    "es": "A CERO por defecto: este negocio vende en el punto de venta móvil, no reparte a domicilio. Súbelo si activas un canal de delivery desde una ubicación fija",
    "grupo": "GRC-plan",
@@ -11396,43 +11211,6 @@
     "conjunto": "business-plans-en-4 (Catering EN publicado)",
     "donde": [
      "CATP 0. Supuestos!C17"
-    ]
-   }
-  },
-  {
-   "id": "c0032",
-   "es": "Tarjeta y bizum sobre el total facturado: un food truck urbano cobra en tarjeta/contactless la mayoría de los tickets",
-   "grupo": "GRC-plan",
-   "tratamiento": "traducir",
-   "planes": [
-    "bbq"
-   ],
-   "n_apariciones": 1,
-   "palabras": 20,
-   "pistas": [
-    "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
-    "D101: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
-    "D99/D102: el smoker trailer (lo arrastra la pickup del dueño, «tow vehicle») y la furgoneta de carga usada; nunca «truck» (gate; «BBQ food trucks» solo para el competidor)",
-    "D100: tarjeta 3 %: los particulares pagan depósito y saldo con tarjeta; algunas empresas, por ACH o cheque"
-   ],
-   "sha1": "1f8e12b50878",
-   "donde": [
-    {
-     "f": "BBQP",
-     "h": "0. Supuestos",
-     "c": "C18",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GCAT-plan",
-    "id": "c0032",
-    "en": "Card and ACH fees on total sales. Many companies pay by ACH or check, which lowers the cost; cards cost more. The example (2.5%) is a blended rate: a percentage plus a per-transaction fee, which weighs more on small invoices. Check your processor's statement and enter your effective rate (Kit estimate).",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-4 (Catering EN publicado)",
-    "donde": [
-     "CATP 0. Supuestos!C18"
     ]
    }
   },
@@ -11769,41 +11547,6 @@
     "conjunto": "business-plans-en-4 (Catering EN publicado)",
     "donde": [
      "CATP PyG 3 Años!F16"
-    ]
-   }
-  },
-  {
-   "id": "c0237",
-   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que el checklist ya exige en su fase de personal",
-   "grupo": "GRC-plan",
-   "tratamiento": "traducir",
-   "planes": [
-    "bbq"
-   ],
-   "n_apariciones": 1,
-   "palabras": 21,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D103: reparación del smoker y del equipo (puertas, juntas, termómetros, ruedas y luces del trailer)"
-   ],
-   "sha1": "232b0f33a544",
-   "donde": [
-    {
-     "f": "BBQP",
-     "h": "PyG 3 Años",
-     "c": "F33",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GCAT-plan",
-    "id": "c0237",
-    "en": "A licensed pest control company, usually arranged through the commissary. It is part of the HACCP-based food safety plan your checklist asks for in the staff phase.",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-4 (Catering EN publicado)",
-    "donde": [
-     "CATP PyG 3 Años!F33"
     ]
    }
   },
@@ -14504,6 +14247,154 @@
    }
   },
   {
+   "id": "c0012",
+   "es": "El fichero v1.1 proyectaba 175.000 € en el año 2 sobre 135.000 € (+29,6 %): se redondea a la baja porque un food truck de un año no tiene todavía rutas ni clientela corporativa consolidadas (mismo criterio conservador que tapas-bar y cafetería)",
+   "grupo": "GBQ-plan",
+   "tratamiento": "traducir",
+   "planes": [
+    "bbq"
+   ],
+   "n_apariciones": 1,
+   "palabras": 44,
+   "pistas": [
+    "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "D101: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
+    "D99/D102: el smoker trailer (lo arrastra la pickup del dueño, «tow vehicle») y la furgoneta de carga usada; nunca «truck» (gate; «BBQ food trucks» solo para el competidor)",
+    "D100: crecimiento de EVENTOS 12 % en el año 2 (reseñas y bodas reservadas con meses; lo limita un solo smoker trailer)"
+   ],
+   "sha1": "281161afc758",
+   "donde": [
+    {
+     "f": "BBQP",
+     "h": "0. Supuestos",
+     "c": "C7",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GCAT-plan",
+    "id": "c0012",
+    "en": "Growth in events in year 2 over year 1 (enter 0.15 for 15%). Kept conservative on purpose: in its first year a caterer has few repeat clients and referrals, and weddings are booked months ahead.",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-4 (Catering EN publicado)",
+    "donde": [
+     "CATP 0. Supuestos!C7"
+    ]
+   }
+  },
+  {
+   "id": "c0014",
+   "es": "El fichero v1.1 proyectaba 215.000 € sobre 175.000 € (+22,9 %): igual, redondeado a la baja",
+   "grupo": "GBQ-plan",
+   "tratamiento": "traducir",
+   "planes": [
+    "bbq"
+   ],
+   "n_apariciones": 1,
+   "palabras": 17,
+   "pistas": [
+    "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "D100: crecimiento de EVENTOS 8 % en el año 3, por la misma razón"
+   ],
+   "sha1": "bb56c1533f00",
+   "donde": [
+    {
+     "f": "BBQP",
+     "h": "0. Supuestos",
+     "c": "C8",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GCAT-plan",
+    "id": "c0014",
+    "en": "Growth in events in year 3 over year 2, kept conservative for the same reason: repeat corporate clients and planner referrals build up slowly.",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-4 (Catering EN publicado)",
+    "donde": [
+     "CATP 0. Supuestos!C8"
+    ]
+   }
+  },
+  {
+   "id": "c0018",
+   "es": "Peso de la COMIDA sobre el total de ventas. Es un INPUT: cámbialo aquí y el P&L, la tesorería y el IVA repercutido se recalculan solos",
+   "grupo": "GBQ-plan",
+   "tratamiento": "traducir",
+   "planes": [
+    "bbq"
+   ],
+   "n_apariciones": 1,
+   "palabras": 27,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D99/D103: smoked meats, sides, BBQ packages y add-ons; «food» y «menu» valen; nunca «chef» (di pitmaster o pit cook), «plated» ni «stations» salvo «carving station» (gate)",
+    "D103: cuota de BBQ PACKAGES (carnes ahumadas, sides, pan y salsas, personal) 88 %; el resto (fila 12) son add-ons: live pit on site, postres, aperitivos, bebidas sin alcohol, alquileres, travel fees. Es una ENTRADA"
+   ],
+   "sha1": "38d78a560f3a",
+   "donde": [
+    {
+     "f": "BBQP",
+     "h": "0. Supuestos",
+     "c": "C11",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GM",
+    "id": "c0018",
+    "en": "Share of FOOD in total sales. It is an INPUT: change it here and the P&L, the cash flow and the sales tax collected recalculate on their own",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-4 (Catering EN publicado)",
+    "donde": [
+     "CATP 0. Supuestos!C11"
+    ]
+   }
+  },
+  {
+   "id": "c0020",
+   "es": "Se calcula como el resto: comida + bebida = 100 %",
+   "grupo": "GBQ-plan",
+   "tratamiento": "traducir",
+   "planes": [
+    "bbq"
+   ],
+   "n_apariciones": 1,
+   "palabras": 8,
+   "pistas": [
+    "D99/D103: smoked meats, sides, BBQ packages y add-ons; «food» y «menu» valen; nunca «chef» (di pitmaster o pit cook), «plated» ni «stations» salvo «carving station» (gate)",
+    "D103: calculado como el resto: BBQ packages + add-ons = 100 %"
+   ],
+   "sha1": "94841b99cd5c",
+   "donde": [
+    {
+     "f": "BBQP",
+     "h": "0. Supuestos",
+     "c": "C12",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GM",
+    "id": "c0020",
+    "en": "Calculated as the remainder: food + beverage = 100%",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-4 (Catering EN publicado)",
+    "donde": [
+     "CATP 0. Supuestos!C12"
+    ]
+   }
+  },
+  {
    "id": "c0022",
    "es": "Coste de mercancía de la comida: dentro del 28-33 % de la fila «Food cost comida» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones («depende del concepto: burger 30 %, tacos 25 %, poke 35 %»). Se toma el extremo bajo del rango porque la compra diaria que exige un food truck, sin cámara grande, reduce la merma frente a una cocina fija. Es la palanca más sensible del plan: con el 33 % el resultado del primer año se queda muy justo",
    "grupo": "GBQ-plan",
@@ -14572,6 +14463,80 @@
     "conjunto": "business-plans-en-4 (Catering EN publicado)",
     "donde": [
      "CATP 0. Supuestos!C14"
+    ]
+   }
+  },
+  {
+   "id": "c0026",
+   "es": "Packaging biodegradable: extremo bajo del 3-5 % de la fila «Coste packaging / ventas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones. Es una partida realmente cara en un food truck (obligatoria por normativa municipal en muchos casos, como recuerda la fase de equipamiento de tu checklist) y por eso se cita al lado del food cost, no dentro de «varios»",
+   "grupo": "GBQ-plan",
+   "tratamiento": "traducir",
+   "planes": [
+    "bbq"
+   ],
+   "n_apariciones": 1,
+   "palabras": 65,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D99/D102: el smoker trailer (lo arrastra la pickup del dueño, «tow vehicle») y la furgoneta de carga usada; nunca «truck» (gate; «BBQ food trucks» solo para el competidor)",
+    "D103: desechables + leña, carbón, pellets y propane backup 3.5 % (Kit estimate: desechables 2.5 % + combustible de cocina 1 %, ≈ 60-100 lb de leña por cocción); escala con las libras y los eventos; el combustible del VEHÍCULO va en la fila 27 del P&L"
+   ],
+   "sha1": "4d2ef733da01",
+   "donde": [
+    {
+     "f": "BBQP",
+     "h": "0. Supuestos",
+     "c": "C15",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GCAT-plan",
+    "id": "c0026",
+    "en": "Disposable plates, cutlery, napkins and containers for drop-off orders, as a % of sales. It sits next to cost of goods sold instead of hiding in miscellaneous. Some cities restrict foam and single-use plastics, so check your local rules.",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-4 (Catering EN publicado)",
+    "donde": [
+     "CATP 0. Supuestos!C15"
+    ]
+   }
+  },
+  {
+   "id": "c0032",
+   "es": "Tarjeta y bizum sobre el total facturado: un food truck urbano cobra en tarjeta/contactless la mayoría de los tickets",
+   "grupo": "GBQ-plan",
+   "tratamiento": "traducir",
+   "planes": [
+    "bbq"
+   ],
+   "n_apariciones": 1,
+   "palabras": 20,
+   "pistas": [
+    "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+    "D101: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
+    "D99/D102: el smoker trailer (lo arrastra la pickup del dueño, «tow vehicle») y la furgoneta de carga usada; nunca «truck» (gate; «BBQ food trucks» solo para el competidor)",
+    "D100: tarjeta 3 %: los particulares pagan depósito y saldo con tarjeta; algunas empresas, por ACH o cheque"
+   ],
+   "sha1": "1f8e12b50878",
+   "donde": [
+    {
+     "f": "BBQP",
+     "h": "0. Supuestos",
+     "c": "C18",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GCAT-plan",
+    "id": "c0032",
+    "en": "Card and ACH fees on total sales. Many companies pay by ACH or check, which lowers the cost; cards cost more. The example (2.5%) is a blended rate: a percentage plus a per-transaction fee, which weighs more on small invoices. Check your processor's statement and enter your effective rate (Kit estimate).",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-4 (Catering EN publicado)",
+    "donde": [
+     "CATP 0. Supuestos!C18"
     ]
    }
   },
@@ -15858,6 +15823,41 @@
     "conjunto": "business-plans-en-4 (Catering EN publicado)",
     "donde": [
      "CATP PyG 3 Años!F32"
+    ]
+   }
+  },
+  {
+   "id": "c0237",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que el checklist ya exige en su fase de personal",
+   "grupo": "GBQ-plan",
+   "tratamiento": "traducir",
+   "planes": [
+    "bbq"
+   ],
+   "n_apariciones": 1,
+   "palabras": 21,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D103: reparación del smoker y del equipo (puertas, juntas, termómetros, ruedas y luces del trailer)"
+   ],
+   "sha1": "232b0f33a544",
+   "donde": [
+    {
+     "f": "BBQP",
+     "h": "PyG 3 Años",
+     "c": "F33",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GCAT-plan",
+    "id": "c0237",
+    "en": "A licensed pest control company, usually arranged through the commissary. It is part of the HACCP-based food safety plan your checklist asks for in the staff phase.",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-4 (Catering EN publicado)",
+    "donde": [
+     "CATP PyG 3 Años!F33"
     ]
    }
   },
