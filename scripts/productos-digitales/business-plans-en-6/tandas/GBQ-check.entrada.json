@@ -1,0 +1,4629 @@
+{
+ "tanda": "GBQ-check",
+ "salida": "scripts/productos-digitales/business-plans-en-6/textos_en/GBQ-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 275,
+ "n_palabras": 1277,
+ "pistas": {
+  "P01": "Celda a celda: escribe SOLO el texto de ESTA celda (una tabla o una tarea): mira su pista propia",
+  "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P03": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 1/11: estructura: single-member LLC frente a S corp con tu contador (ES: autónomo / SL) [sobrevive]",
+  "P04": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P05": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 2/11: registrar la LLC en el Secretary of State + registered agent + operating agreement [sobrevive]",
+  "P06": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P07": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 3/11: EIN gratis en el IRS para la LLC + alta estatal de nóminas y desempleo (vas a tener personal W-2) [sobrevive]",
+  "P08": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P09": "D99/D102: el smoker trailer (lo arrastra la pickup del dueño, «tow vehicle») y la furgoneta de carga usada; nunca «truck» (gate; «BBQ food trucks» solo para el competidor)",
+  "P10": "D99: BBQ catering en el evento del cliente; sin ventanilla, festivales, mercados ni venta ambulante (gate)",
+  "P11": "D103: el combustible de COCINA (leña, carbón, pellets, propane backup) es variable (fila 15); el del vehículo y el remolque, fijo (fila 27); el caso no tiene generador",
+  "P12": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P13": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 4/11: cuenta bancaria del negocio y finanzas separadas [sobrevive]",
+  "P14": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 5/11: seller's permit / sales tax permit del estado: en muchos estados tributa toda la factura de catering (comida, personal, alquileres y, según el estado, el service charge) [sobrevive]",
+  "P15": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 6/11: business license de la ciudad o el condado (+ DBA si usas nombre comercial) [sobrevive]",
+  "P16": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 7/11: contador / bookkeeper y estimated taxes trimestrales [sobrevive]",
+  "P17": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 8/11: software de catering: propuestas, contratos con firma electrónica, depósitos y saldos [sobrevive]",
+  "P18": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 9/11: contrato tipo con un abogado: depósito del 50 % nonrefundable, saldo entre 72 h y 14 días antes, tramos de cancelación sin huecos, variación de invitados y guest minimum, service charge frente a gratuity, fuerza mayor por burn ban (propane backup o nueva fecha), uso de fotos [sobrevive con ajuste del contenido]",
+  "P19": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 10/11: plan de seguridad alimentaria basado en HACCP para carnes ahumadas: cocinar a 145 °F (intactas), 155 °F (inyectadas, ablandadas o picadas, sausage incluida: inyectar un brisket lo vuelve non-intact) y 165 °F (aves); hot holding ≥ 135 °F; enfriado a 70 °F en 2 h y a 41 °F en 6 h en total; recalentado a 165 °F (FDA Food Code 3-401.11, 3-501.16, 3-501.14, 3-403.11); la temperatura de calidad (brisket ≈ 203 °F) es otra cosa [sobrevive con ajuste]",
+  "P20": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P21": "D101: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
+  "P22": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P23": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 1, tarea 11/11: Certified Food Protection Manager (ServSafe Manager) del dueño / pitmaster [sobrevive]",
+  "P24": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P25": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 1/13: elegir una commissary compartida con permiso: horas, almacén frío y seco, aparcamiento del smoker trailer DONDE SE PUEDA AHUMAR y sitio para la leña (visita y precios); nunca cocina de casa: FDA Food Code 3-201.11(B), y el cottage food excluye la carne (Texas) [sobrevive con ajuste]",
+  "P26": "D99/D103: smoked meats, sides, BBQ packages y add-ons; «food» y «menu» valen; nunca «chef» (di pitmaster o pit cook), «plated» ni «stations» salvo «carving station» (gate)",
+  "P27": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 2/13: commissary agreement por escrito (lo exige el health department) [sobrevive]",
+  "P28": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 3/13: catering / health permit del condado + pregunta si ahumar o servir desde el trailer en el evento lo convierte en mobile food unit (Texas, 25 TAC §228.221: opera desde una central preparation facility; Florida y North Carolina, parecido): «ask your county»; si no hay permiso, ahúma en la commissary y lleva la carne en hot boxes [sobrevive con ajuste]",
+  "P29": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 4/13: temporary food event permits para eventos comunitarios o públicos [sobrevive]",
+  "P30": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 5/13: fire marshal: solid fuel cooking (BBQ pits) con extintor Class K + 2A:10BC, 10 ft de separación, propano ≤ 200 lb (IFC 906.4.1 y 319.8.1, según los adopte tu ciudad); burn bans y cocina bajo carpas: «check with your fire marshal» (sin cifras no verificadas) [sobrevive con ajuste]",
+  "P31": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 6/13: comprar el smoker trailer (offset / reverse-flow, clase 500 gal, nuevo) y la furgoneta de carga usada, con inspección; el tow vehicle es tu pickup: comprueba que puede remolcar el trailer [nueva: la propuesta del catering habla de una van frigorífica]",
+  "P32": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 7/13: título y registro del trailer y de la furgoneta en el DMV + commercial auto que cubra el remolque + inland marine para el smoker y el equipo en tránsito [nueva]",
+  "P33": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 8/13: upfit: el trailer (warming cabinet, lavamanos y depósitos si el condado lo exige, cajas, luces) y la furgoneta (estanterías, sujeciones, wrap) [nueva]",
+  "P34": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 9/13: general liability o BOP; COI y «additional insured» que piden los venues [sobrevive]",
+  "P35": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 10/13: liquor liability SOLO si el cliente pone alcohol y lo sirve tu personal; lo normal es que el cliente contrate un servicio de bar con licencia y su propio seguro [sobrevive con ajuste]",
+  "P36": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P37": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 11/13: workers' comp antes del primer empleado [sobrevive]",
+  "P38": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 12/13: residuos, grasa y CENIZA con un hauler con licencia (a menudo vía commissary); la ceniza, fría y en contenedor metálico con tapa [sobrevive con ajuste]",
+  "P39": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 2, tarea 13/13: control de plagas con empresa con licencia (vía commissary) y avisos obligatorios [sobrevive]",
+  "P40": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 1/12: lista de equipo propio frente a alquilado (party rentals) por paquete: drop-off, staffed buffet y live-fire premium [sobrevive con ajuste]",
+  "P41": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 2/12: insulated food carriers, hot boxes y termómetros de sonda calibrados (nunca «Cambro» en el texto: es marca) [sobrevive con ajuste]",
+  "P42": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 3/12: el smoker del trailer, el live-fire rig (Santa Maria grill, Argentine parrilla, asado crosses, La Caja China) y el propane backup: prueba de temperatura de cada cámara [nueva]",
+  "P43": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 4/12: hotel pans, sheet pans y utensilios [sobrevive]",
+  "P44": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 5/12: carving station: tabla, cuchillos, guantes, lámpara de calor y el guion del corte delante del invitado [nueva]",
+  "P45": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 6/12: proveedor de carne de origen autorizado (approved source: inspección USDA o estatal; el whole hog nunca custom exempt, que va marcado «not for sale») + cash-and-carry tipo Restaurant Depot; pedido 5-7 días antes [sobrevive con ajuste]",
+  "P46": "MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál",
+  "P47": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 7/12: proveedor de leña (post oak, hickory; red oak para Santa Maria) y carbón: seca, por cord, guardada lejos del fuego [nueva]",
+  "P48": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 8/12: acuerdo con una empresa de party rentals (mesas, mantelería, vajilla) con tarifa pactada [sobrevive]",
+  "P49": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 9/12: desechables y envases para drop-off (butcher paper, foil, bandejas) [sobrevive]",
+  "P50": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 10/12: registros de temperatura en el transporte (data logger) [sobrevive]",
+  "P51": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 11/12: montar el espacio en la commissary: estanterías, etiquetado, FIFO [sobrevive]",
+  "P52": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 3, tarea 12/12: test cook completo con el equipo: cocción nocturna, hot holding, carving y un yield test (libras crudas frente a cocinadas por corte) para afinar la calculadora [sobrevive con ajuste]",
+  "P53": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 1/10: plan de personal por evento según el paquete: ≈ 1 server o buffet attendant por 25-30 invitados en buffet, pitmaster y carver en full-service (Kit estimate) [sobrevive con ajuste]",
+  "P54": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 2/10: pool de event staff en nómina W-2 (nunca 1099 ni «freelance»: FLSA; California AB5) [sobrevive]",
+  "P55": "Glosario §9: BBQ catering, pitmaster, drop-off, staffed buffet, full-service, live pit on site, weddings, corporate events / holiday parties, private parties, graduation parties",
+  "P56": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 3/10: offer letters, I-9 y W-4; salario mínimo estatal [sobrevive]",
+  "P57": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P58": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P59": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 4/10: new-hire reporting al estado [sobrevive]",
+  "P60": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 5/10: proveedor de nóminas y workers' comp en marcha [sobrevive]",
+  "P61": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 6/10: food handler cards de todo el equipo [sobrevive]",
+  "P62": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 7/10: seguridad del fuego: extintores (Class K y 2A:10BC), manejo del propano, apagado y ceniza, y quién vigila el pit durante el servicio [nueva: sustituye a la certificación de alcohol de los bartenders]",
+  "P63": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 8/10: OSHA basics: calor y humo, quemaduras, cargas pesadas (carne, leña) y conducción con remolque [sobrevive con ajuste]",
+  "P64": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 9/10: formación de servicio: guion de la carving station y del live-fire, uniforme, briefing y los 9 alérgenos mayores (rubs, salsas y sides) [sobrevive con ajuste]",
+  "P65": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 4, tarea 10/10: política de service charge y gratuity (IRS Rev. Rul. 2012-18: el service charge obligatorio es salario) [sobrevive]",
+  "P66": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P67": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 1/12: marca, logo, menú por estilos regionales (Texas, Carolina, Kansas City, Memphis, Santa Maria, Argentine asado) y fotos profesionales de la carne y del smoker trailer [sobrevive con ajuste]",
+  "P68": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P69": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 2/12: web con paquetes, precios «desde» por invitado y formulario de presupuesto [sobrevive]",
+  "P70": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 3/12: Google Business Profile y reseñas [sobrevive]",
+  "P71": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 4/12: perfiles en The Knot, WeddingWire y Zola (ES: Bodas.net) [sobrevive con ajuste]",
+  "P72": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 5/12: ezCater para el drop-off corporativo (+ Thumbtack para fiestas privadas) [sobrevive con ajuste]",
+  "P73": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 6/12: prospección B2B: office managers, HR y event planners [sobrevive]",
+  "P74": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 7/12: acuerdos con venues y wedding planners (preferred vendor lists) [sobrevive]",
+  "P75": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 8/12: política de degustaciones para prospectos [sobrevive]",
+  "P76": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 9/12: Instagram y redes con fotos y vídeo del pit (ES: WhatsApp → texto / SMS) [sobrevive]",
+  "P77": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 10/12: plantilla de presupuesto con la calculadora del kit (libras por invitado, smoke schedule y shopping list) y seguimiento en el CRM [sobrevive con ajuste]",
+  "P78": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P79": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 11/12: programa de referidos y reseñas después de cada evento [sobrevive]",
+  "P80": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 5, tarea 12/12: tasting / pop-up de lanzamiento para planners, venues y empresas + el primer bridal show local [nueva]",
+  "P81": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 1/10: briefing con el cliente 3 semanas antes («3 weeks out»): invitados, paquete, estilo regional, alergias y hora de servicio [sobrevive con ajuste: fuera el calco «D-21»]",
+  "P82": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 2/10: visita o llamada técnica al venue 2 semanas antes: dónde va el smoker trailer o la carving station, acceso, suelo, agua y normas de fuego del venue [sobrevive con ajuste: fuera «D-14»]",
+  "P83": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 3/10: pedido de carne 5-7 días antes (libras crudas de la calculadora) y rubs, trimming y porcionado en la commissary 1-2 días antes, con el plan de ahumado («Start the pit by» de la calculadora) [sobrevive con ajuste: fuera «D-7 / D-1»]",
+  "P84": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 4/10: cocción con sonda, reposo, hot holding ≥ 135 °F en hot boxes y checklist de carga y transporte con temperaturas [sobrevive con ajuste]",
+  "P85": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 5/10: montaje 60-90 min antes, carving station y servicio; el pit en el evento solo si el permiso lo cubre [sobrevive con ajuste]",
+  "P86": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 6/10: recogida, limpieza, ceniza fría y devolución de alquileres [sobrevive]",
+  "P87": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 7/10: saldo cobrado antes del evento (entre 72 h y 14 días según el contrato) y factura de extras en 48 h; control de depósitos [sobrevive con ajuste]",
+  "P88": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 8/10: pedir reseña y fotos; seguimiento en el CRM [sobrevive]",
+  "P89": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P90": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 9/10: revisión semanal del yield real (libras crudas frente a cocinadas), el food cost y las horas de personal por evento frente a la calculadora [sobrevive con ajuste]",
+  "P91": "D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES del parrillero (fuente_es_bbq.json) + research §6 y el glosario §9; columna C: «Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); MEDIDAS US (John, 13-oct; SPEC §0): principales lb y oz, °F, miles, gallons / quarts y sq ft; la métrica entre paréntesis para UK y Australia: «12 lb (5.4 kg)», «225 °F (107 °C)», «5 gallons (19 liters)», «200 sq ft (19 sq m)» (el gate común no admite «m²»); nada de kg, km, litros ni °C como unidad principal (gate). TEMPERATURAS: la de CALIDAD (brisket ≈ 203 °F, Kit estimate) y el MÍNIMO SEGURO del FDA Food Code (145 / 155 / 165 °F, hot holding 135 °F) nunca en la misma columna ni en la misma frase sin decir cuál es cuál. Esta fila: fase 6, tarea 10/10: revisión a los 90 días: precio por invitado, guest minimums y paquetes [sobrevive]"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "single-member LLC",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cliente/día → (motor)": "events per year",
+  "ticket medio sin IVA → (motor)": "average price per guest (excl. sales tax, service included)",
+  "días de apertura → (motor)": "average guests per event",
+  "aparcamiento y base del vehículo": "commissary kitchen & smoker trailer parking",
+  "empresa de parrilla para eventos": "BBQ catering company / BBQ caterer («barbecue» solo como variante)",
+  "maestro parrillero (dueño)": "pitmaster («Owner / Pitmaster & Sales»; nunca «grill master»)",
+  "BBQ pit con hogar lateral": "offset smoker (offset firebox) · reverse-flow · stick burner (solo en prosa)",
+  "remolque-parrilla": "smoker trailer",
+  "combustible": "solid fuel (wood, charcoal, pellets) · pellet smoker",
+  "leña de roble": "post oak (TX) · hickory · red oak (Santa Maria)",
+  "cocción lenta": "low and slow",
+  "pecho entero · punta · parte magra": "packer brisket · point · flat",
+  "puntas caramelizadas": "burnt ends (Kansas City)",
+  "paleta de cerdo desmigada": "pulled pork (pork butt / shoulder)",
+  "costillar": "spare ribs · St. Louis style · baby backs",
+  "adobo seco · corteza · anillo de humo": "(dry) rub · bark · smoke ring",
+  "meseta · envolver": "the stall · the wrap / Texas crutch (foil o butcher paper)",
+  "reposo y mantenimiento": "resting · holding en insulated food carriers / hot boxes («Cambro» es marca: no en rótulos)",
+  "mantener caliente (norma)": "hot holding at 135 °F (Food Code 3-501.16)",
+  "enfriar · recalentar": "cooling (to 70 °F within 2 hours and to 41 °F within a total of 6 hours) · reheating for hot holding (165 °F)",
+  "merma / rendimiento": "yield («about 50% of the fresh weight») · shrink",
+  "gramos por invitado": "pounds of meat per guest («one-third to one-half pound»); lb crudas en la calculadora",
+  "precio por invitado · mínimo": "per person / per guest · guest minimum",
+  "entrega sin servicio": "drop-off · Drop & Set · delivered ready to serve",
+  "servicio completo": "full-service (setup, service, cleanup)",
+  "buffet con personal": "(staffed) buffet · tend the buffet",
+  "corte al momento": "carving station · carving to order",
+  "parrilla en el evento": "live pit on site · on-site pit (add-on premium, no la base)",
+  "guarniciones": "sides (mac and cheese, potato salad, coleslaw, collard greens, baked beans)",
+  "bandejas": "chafing dishes · buffet trays · boxed BBQ lunches",
+  "señal · cargo del evento": "deposit («50% nonrefundable») · event fee / service fee (≠ gratuity)",
+  "cocina de apoyo": "commissary / central preparation facility (nunca «support kitchen»)",
+  "remolque que cocina en el evento": "mobile food unit (TX) · mobile food dispensing vehicle (FL) · mobile food facility (CA), según el estado",
+  "autorización puntual": "temporary food establishment permit (CA: TFF)",
+  "origen autorizado": "approved source · USDA-inspected · «custom exempt… not for sale» (whole hog)",
+  "extintor": "Class K extinguisher (2.5 gallons para solid fuel) + 2A:10BC",
+  "asado argentino": "Argentine asado · parrilla · chimichurri",
+  "parrilla de altura regulable": "Santa Maria grill · tri-tip over red oak",
+  "cochinillo / caja china": "pig roast · whole hog · La Caja China · lechón",
+  "estilos regionales": "Texas · Kansas City · Memphis · Carolina («four types of BBQ»)",
+  "parrillero": "pitmaster (persona) o BBQ caterer (negocio)",
+  "asador": "asado cross o spit roast; nunca «roaster» como negocio",
+  "brasa": "live fire / coals",
+  "fijo discontinuo / freelance": "part-time hourly W-2 staff",
+  "plan B de gas": "propane backup",
+  "época de peligro": "county burn ban",
+  "chuletón": "bone-in ribeye / tomahawk",
+  "picaña": "picanha",
+  "entraña": "skirt steak",
+  "vacío": "flank / bavette",
+  "provoleta": "grilled provolone",
+  "finca": "venue (ranch, barn venue)",
+  "IVA": "sales tax",
+  "señal": "deposit",
+  "escandallo": "cost per guest / food cost",
+  "medidas (John, 13-oct)": "US customary first, metric in parentheses: lb / oz (kg), °F (°C), gallons (liters), miles, sq ft (sq m)"
+ },
+ "pestanas_es_en": {
+  "BBQP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "BBQC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Pits, Fire & Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the BBQ Catering Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US BBQ CATERING BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average price per guest (excl. sales tax, service included)",
+  "PVP equivalente con IVA (calculado)": "Price per guest incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol sold (licensed only)",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "CHECKLIST APERTURA — FOOD TRUCK": "BBQ CATERING STARTUP CHECKLIST — OFF-SITE BBQ CATERER",
+  "FASE 2: VEHÍCULO Y PERMISOS": "PHASE 2: COMMISSARY, SMOKER TRAILER, FIRE RULES & PERMITS",
+  "INSTRUCCIONES DE USO — Plan financiero Food Truck": "HOW TO USE THIS WORKBOOK — BBQ Catering Financial Projections",
+  "PLAN DE NEGOCIO: FOOD TRUCK": "BUSINESS PLAN: BBQ CATERING COMPANY",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — Food Truck urbano": "Base case — BBQ caterer (smoked meats, off-site)",
+  "Break-even — Food Truck": "Break-even — BBQ Catering",
+  "Ticket medio sin IVA": "Average price per guest (excl. sales tax)",
+  "Clientes/día (media del año 1)": "Events per year (year-1 average)",
+  "Clientes/día (media)": "Events per year (average)",
+  "Clientes/día": "Events per year",
+  "Días de apertura al año": "Average guests per event",
+  "Coste variable por cliente": "Variable cost per guest",
+  "Margen de contribución por cliente": "Contribution margin per guest",
+  "Ticket menos coste variable unitario": "Price per guest minus variable cost per guest",
+  "Clientes necesarios al año": "Guests needed per year",
+  "Clientes necesarios al día": "Events needed per year",
+  "Clientes necesarios al año (caja)": "Guests needed per year (cash)",
+  "Clientes necesarios al día (caja)": "Events needed per year (cash)",
+  "Clientes/día previstos en el plan": "Events per year in the plan",
+  "Clientes/día para el equilibrio": "Events per year to break even",
+  "Clientes al año por jornada equivalente": "Guests per year per full-time equivalent",
+  "Comisiones de delivery": "Corporate catering marketplace fees",
+  "Coste de mercancía — comida": "Cost of goods — BBQ packages (meat, sides, bread & sauces)",
+  "Coste de mercancía — bebida": "Cost of goods — add-ons",
+  "Consumibles y envases": "Disposables, wood & cooking fuel"
+ },
+ "cadenas": [
+  {
+   "id": "c0664",
+   "es": "FASE 1: CONSTITUCIÓN Y TRÁMITES",
+   "donde": [
+    "BBQC · F1 - Constitución!A2"
+   ],
+   "propuesta_en": "PHASE 1: BUSINESS SETUP & REGISTRATIONS",
+   "propuesta_de": "GR c0664 (CATC F1 - Constitución!A2)"
+  },
+  {
+   "id": "c0669",
+   "es": "Elegir forma jurídica (SL o autónomo)",
+   "donde": [
+    "BBQC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose your legal structure with your accountant: LLC or S corp",
+   "propuesta_de": "GCAT-check c0669 (CATC F1 - Constitución!B5)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0670",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F1 - Constitución!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Accountant",
+   "propuesta_de": "GCAT-check c0670 (CATC F1 - Constitución!C5)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0671",
+   "es": "Semana 1",
+   "donde": [
+    "BBQC · F1 - Constitución!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Week 1",
+   "propuesta_de": "GCAT-check c0671 (CATC F1 - Constitución!D5)",
+   "pistas": [
+    "P01",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0672",
+   "es": "Autónomo viable si empiezas solo, SL si hay socios",
+   "donde": [
+    "BBQC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "An LLC separates personal and business liability and suits partners. An S corp election can cut self-employment tax once profit is steady; ask your accountant when it pays off.",
+   "propuesta_de": "GCAT-check c0672 (CATC F1 - Constitución!E5)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "Constitución SL / alta autónomo",
+   "donde": [
+    "BBQC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "File your LLC with the Secretary of State and appoint a registered agent",
+   "propuesta_de": "GCAT-check c0673 (CATC F1 - Constitución!B6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0674",
+   "es": "Notario/Gestor",
+   "donde": [
+    "BBQC · F1 - Constitución!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Attorney",
+   "propuesta_de": "GCAT-check c0674 (CATC F1 - Constitución!C6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0675",
+   "es": "1-5 días",
+   "donde": [
+    "BBQC · F1 - Constitución!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 1-2",
+   "propuesta_de": "GCAT-check c0675 (CATC F1 - Constitución!D6)",
+   "pistas": [
+    "P01",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0676",
+   "es": "Capital 1 € Ley Crea y Crece",
+   "donde": [
+    "BBQC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "File the articles of organization and sign an operating agreement, even for a single-member LLC. Filing fees and processing times vary by state; check the state website.",
+   "propuesta_de": "GCAT-check c0676 (CATC F1 - Constitución!E6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P06",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0677",
+   "es": "Alta Hacienda: modelo 036/037",
+   "donde": [
+    "BBQC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get your EIN from the IRS and register for state payroll and unemployment tax",
+   "propuesta_de": "GCAT-check c0677 (CATC F1 - Constitución!B7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0678",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F1 - Constitución!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0678 (CATC F1 - Constitución!C7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F1 - Constitución!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-3",
+   "propuesta_de": "GCAT-check c0679 (CATC F1 - Constitución!D7)",
+   "pistas": [
+    "P01",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0680",
+   "es": "Epígrafe IAE: 672.x (servicios de restauración en quioscos, food trucks e instalaciones móviles análogas) o 677.9 (venta ambulante sin elaboración) — la elección la valida tu gestor según si elaboras el producto en el vehículo o sólo lo vendes",
+   "donde": [
+    "BBQC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Apply once the state approves your LLC. The EIN is free and takes minutes online at irs.gov. Register with your state workforce agency before your first hire, so your payroll provider can file from day one.",
+   "propuesta_de": "GCAT-check c0680 (CATC F1 - Constitución!E7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P08",
+    "P04",
+    "P09",
+    "P10",
+    "P11",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0681",
+   "es": "Alta Seguridad Social",
+   "donde": [
+    "BBQC · F1 - Constitución!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Open a business bank account and keep finances separate",
+   "propuesta_de": "GCAT-check c0681 (CATC F1 - Constitución!B8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P12",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0682",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F1 - Constitución!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0682 (CATC F1 - Constitución!C8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0683",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F1 - Constitución!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-3",
+   "propuesta_de": "GCAT-check c0683 (CATC F1 - Constitución!D8)",
+   "pistas": [
+    "P01",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0684",
+   "es": "Cuota según la base mínima del tramo que te corresponda. Consulta el importe del ejercicio en curso y verifica con tu gestoría si te aplica la cuota reducida de inicio de actividad",
+   "donde": [
+    "BBQC · F1 - Constitución!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Bring your EIN letter and formation documents. Keep a card for purchases and a separate account for deposits, so event deposits never mix with personal money.",
+   "propuesta_de": "GCAT-check c0684 (CATC F1 - Constitución!E8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0685",
+   "es": "Certificado digital",
+   "donde": [
+    "BBQC · F1 - Constitución!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get a seller's permit and register for state sales tax",
+   "propuesta_de": "GCAT-check c0685 (CATC F1 - Constitución!B9)",
+   "pistas": [
+    "P01",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0686",
+   "es": "FNMT",
+   "donde": [
+    "BBQC · F1 - Constitución!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Accountant",
+   "propuesta_de": "GCAT-check c0686 (CATC F1 - Constitución!C9)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0687",
+   "es": "1-3 días",
+   "donde": [
+    "BBQC · F1 - Constitución!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-4",
+   "propuesta_de": "GCAT-check c0687 (CATC F1 - Constitución!D9)",
+   "pistas": [
+    "P01",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0688",
+   "es": "Imprescindible para los trámites telemáticos",
+   "donde": [
+    "BBQC · F1 - Constitución!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "In many states sales tax applies to the whole catering invoice: food, staff and rentals. Confirm your state's rule and whether service charges are taxed before you quote.",
+   "propuesta_de": "GCAT-check c0688 (CATC F1 - Constitución!E9)",
+   "pistas": [
+    "P01",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0689",
+   "es": "Apertura cuenta bancaria",
+   "donde": [
+    "BBQC · F1 - Constitución!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Apply for the city or county business license (and a DBA if you use a trade name)",
+   "propuesta_de": "GCAT-check c0689 (CATC F1 - Constitución!B10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0690",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F1 - Constitución!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0690 (CATC F1 - Constitución!C10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0691",
+   "es": "1-3 días",
+   "donde": [
+    "BBQC · F1 - Constitución!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-4",
+   "propuesta_de": "GCAT-check c0691 (CATC F1 - Constitución!D10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "Separar finanzas",
+   "donde": [
+    "BBQC · F1 - Constitución!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Check every city where you plan to cater: some require a license to operate there. A DBA (fictitious business name) is filed with the county or state.",
+   "propuesta_de": "GCAT-check c0692 (CATC F1 - Constitución!E10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0693",
+   "es": "Inscripción en el Registro Sanitario de tu Comunidad Autónoma (declaración responsable de inicio de actividad alimentaria)",
+   "donde": [
+    "BBQC · F1 - Constitución!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Hire an accountant or bookkeeper and set up quarterly estimated taxes",
+   "propuesta_de": "GCAT-check c0693 (CATC F1 - Constitución!B11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0694",
+   "es": "Sanidad CCAA",
+   "donde": [
+    "BBQC · F1 - Constitución!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0694 (CATC F1 - Constitución!C11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0695",
+   "es": "Variable",
+   "donde": [
+    "BBQC · F1 - Constitución!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-4",
+   "propuesta_de": "GCAT-check c0695 (CATC F1 - Constitución!D11)",
+   "pistas": [
+    "P01",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0696",
+   "es": "El Registro General Sanitario estatal NO aplica al minorista que sirve al consumidor final (art. 2.2 del RD 191/2011): el que te toca es el autonómico, el mismo que pide la fase 2 de este checklist con la autorización sanitaria del vehículo",
+   "donde": [
+    "BBQC · F1 - Constitución!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ask for catering experience. Estimated taxes are due quarterly; put a share of every deposit into a tax savings account so the bill never surprises you.",
+   "propuesta_de": "GCAT-check c0696 (CATC F1 - Constitución!E11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P09",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0697",
+   "es": "Seguro RC profesional",
+   "donde": [
+    "BBQC · F1 - Constitución!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose catering software for proposals, contracts, deposits and invoices",
+   "propuesta_de": "GCAT-check c0697 (CATC F1 - Constitución!B12)",
+   "pistas": [
+    "P01",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0698",
+   "es": "Aseguradora",
+   "donde": [
+    "BBQC · F1 - Constitución!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0698 (CATC F1 - Constitución!C12)",
+   "pistas": [
+    "P01",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0699",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F1 - Constitución!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GCAT-check c0699 (CATC F1 - Constitución!D12)",
+   "pistas": [
+    "P01",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Mínimo 300.000 €, cubre intoxicaciones",
+   "donde": [
+    "BBQC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "One tool should send the quote, collect the e-signature and take the deposit by card or ACH. Test it with a mock proposal before you pay for a full year.",
+   "propuesta_de": "GCAT-check c0700 (CATC F1 - Constitución!E12)",
+   "pistas": [
+    "P01",
+    "P06",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Seguro del vehículo (furgoneta o remolque)",
+   "donde": [
+    "BBQC · F1 - Constitución!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Have an attorney draft your standard catering contract",
+   "propuesta_de": "GCAT-check c0701 (CATC F1 - Constitución!B13)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0702",
+   "es": "Aseguradora",
+   "donde": [
+    "BBQC · F1 - Constitución!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Attorney",
+   "propuesta_de": "GCAT-check c0702 (CATC F1 - Constitución!C13)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0703",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F1 - Constitución!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-6",
+   "propuesta_de": "GCAT-check c0703 (CATC F1 - Constitución!D13)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0704",
+   "es": "A todo riesgo recomendado",
+   "donde": [
+    "BBQC · F1 - Constitución!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Cover deposit, cancellation and postponement terms, guest minimum, final guest count date, and service charge versus gratuity. Reuse it for every event.",
+   "propuesta_de": "GCAT-check c0704 (CATC F1 - Constitución!E13)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0705",
+   "es": "Registro de actividades de tratamiento de datos personales",
+   "donde": [
+    "BBQC · F1 - Constitución!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Write your HACCP-based food safety plan and transport SOPs",
+   "propuesta_de": "GCAT-check c0705 (CATC F1 - Constitución!B14)",
+   "pistas": [
+    "P01",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0706",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F1 - Constitución!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0706 (CATC F1 - Constitución!C14)",
+   "pistas": [
+    "P01",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0707",
+   "es": "Antes de abrir",
+   "donde": [
+    "BBQC · F1 - Constitución!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0707 (CATC F1 - Constitución!D14)",
+   "pistas": [
+    "P01",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0708",
+   "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes del programa de fidelización, personal y proveedores",
+   "donde": [
+    "BBQC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Document temperatures, cooling, reheating and hot and cold holding during transport. Your health department may ask for it at permit review.",
+   "propuesta_de": "GCAT-check c0708 (CATC F1 - Constitución!E14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P20",
+    "P21",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0709",
+   "es": "Adaptar el TPV móvil al sistema Veri*factu / factura electrónica",
+   "donde": [
+    "BBQC · F1 - Constitución!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get your Certified Food Protection Manager certificate (ServSafe Manager)",
+   "propuesta_de": "GCAT-check c0709 (CATC F1 - Constitución!B15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P22",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0710",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F1 - Constitución!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0710 (CATC F1 - Constitución!C15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0711",
+   "es": "Antes de abrir",
+   "donde": [
+    "BBQC · F1 - Constitución!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0711 (CATC F1 - Constitución!D15)",
+   "pistas": [
+    "P01",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0712",
+   "es": "El RD 1007/2023 y su calendario escalonado obligan a que el software de facturación sea verificable. Consulta la fecha que te aplica antes de comprar el TPV móvil y el datáfono que ya presupuesta la hoja de Inversión Inicial: cambiarlo después cuesta el doble",
+   "donde": [
+    "BBQC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Most health departments require one certified manager. Take an ANSI-accredited exam and keep a copy for your permit file and for every event binder.",
+   "propuesta_de": "GCAT-check c0712 (CATC F1 - Constitución!E15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P22",
+    "P24",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "Selección y compra del vehículo",
+   "donde": [
+    "BBQC · F2 - Vehículo!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose a shared commissary kitchen: hours, cold and dry storage, van parking",
+   "propuesta_de": "GCAT-check c0718 (CATC F2 - Vehículo!B5)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F2 - Vehículo!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0719 (CATC F2 - Vehículo!C5)",
+   "pistas": [
+    "P01",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0720",
+   "es": "2-6 semanas",
+   "donde": [
+    "BBQC · F2 - Vehículo!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 1-3",
+   "propuesta_de": "GCAT-check c0720 (CATC F2 - Vehículo!D5)",
+   "pistas": [
+    "P01",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Furgoneta adaptada, remolque o trailer. Nuevo o 2a mano",
+   "donde": [
+    "BBQC · F2 - Vehículo!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Visit at least three. Compare peak-hour availability, walk-in space, parking for the van and the deposit. Ask whether the health department has approved the kitchen for catering.",
+   "propuesta_de": "GCAT-check c0721 (CATC F2 - Vehículo!E5)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "Adaptación del vehículo para cocina",
+   "donde": [
+    "BBQC · F2 - Vehículo!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Sign a written commissary agreement",
+   "propuesta_de": "GCAT-check c0722 (CATC F2 - Vehículo!B6)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P26",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0723",
+   "es": "Taller especializado",
+   "donde": [
+    "BBQC · F2 - Vehículo!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0723 (CATC F2 - Vehículo!C6)",
+   "pistas": [
+    "P01",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "4-8 semanas",
+   "donde": [
+    "BBQC · F2 - Vehículo!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-4",
+   "propuesta_de": "GCAT-check c0724 (CATC F2 - Vehículo!D6)",
+   "pistas": [
+    "P01",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0725",
+   "es": "Ventanilla, mostrador, instalaciones",
+   "donde": [
+    "BBQC · F2 - Vehículo!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Most health departments ask for it with the permit application. It should name your hours, storage areas, parking and cleaning duties; keep a signed copy on file.",
+   "propuesta_de": "GCAT-check c0725 (CATC F2 - Vehículo!E6)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0726",
+   "es": "Certificación gas (si cocina a gas)",
+   "donde": [
+    "BBQC · F2 - Vehículo!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Apply for the county catering / health permit",
+   "propuesta_de": "GCAT-check c0726 (CATC F2 - Vehículo!B7)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P26",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0727",
+   "es": "Instalador autorizado",
+   "donde": [
+    "BBQC · F2 - Vehículo!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0727 (CATC F2 - Vehículo!C7)",
+   "pistas": [
+    "P01",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0728",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F2 - Vehículo!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-8",
+   "propuesta_de": "GCAT-check c0728 (CATC F2 - Vehículo!D7)",
+   "pistas": [
+    "P01",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "Revisión anual obligatoria",
+   "donde": [
+    "BBQC · F2 - Vehículo!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Many counties review your catering SOPs and charge a plan review fee before issuing the permit; a full plan review applies if you lease your own kitchen. Expect an application, a fee, a menu review and an inspection of the kitchen and the van.",
+   "propuesta_de": "GCAT-check c0729 (CATC F2 - Vehículo!E7)",
+   "pistas": [
+    "P01",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "ITV especial (si modificación estructural)",
+   "donde": [
+    "BBQC · F2 - Vehículo!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get temporary food event permits for community or public events",
+   "propuesta_de": "GCAT-check c0730 (CATC F2 - Vehículo!B8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "ITV",
+   "donde": [
+    "BBQC · F2 - Vehículo!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0731 (CATC F2 - Vehículo!C8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F2 - Vehículo!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "As needed, 2-4 weeks ahead",
+   "propuesta_de": "GCAT-check c0732 (CATC F2 - Vehículo!D8)",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0733",
+   "es": "Obligatorio si se modifica la carrocería",
+   "donde": [
+    "BBQC · F2 - Vehículo!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Your catering permit usually does not cover public or community events. Each event may need its own temporary food permit; apply well before the date.",
+   "propuesta_de": "GCAT-check c0733 (CATC F2 - Vehículo!E8)",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0734",
+   "es": "Proyecto técnico sanitario",
+   "donde": [
+    "BBQC · F2 - Vehículo!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Check fire marshal rules for open flame, chafing fuel and tents",
+   "propuesta_de": "GCAT-check c0734 (CATC F2 - Vehículo!B9)",
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0735",
+   "es": "Ingeniero",
+   "donde": [
+    "BBQC · F2 - Vehículo!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0735 (CATC F2 - Vehículo!C9)",
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0736",
+   "es": "2-3 semanas",
+   "donde": [
+    "BBQC · F2 - Vehículo!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-8",
+   "propuesta_de": "GCAT-check c0736 (CATC F2 - Vehículo!D9)",
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Planos de instalación, flujos y depósitos de agua",
+   "donde": [
+    "BBQC · F2 - Vehículo!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Rules depend on the venue and the city. Ask venues about open flame, fuel canisters and cooking under tents, and keep fire extinguishers on the van.",
+   "propuesta_de": "GCAT-check c0737 (CATC F2 - Vehículo!E9)",
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Autorización sanitaria del vehículo",
+   "donde": [
+    "BBQC · F2 - Vehículo!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy a used refrigerated cargo van and have it inspected",
+   "propuesta_de": "GCAT-check c0738 (CATC F2 - Vehículo!B10)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0739",
+   "es": "Sanidad CCAA",
+   "donde": [
+    "BBQC · F2 - Vehículo!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0739 (CATC F2 - Vehículo!C10)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0740",
+   "es": "2-4 semanas",
+   "donde": [
+    "BBQC · F2 - Vehículo!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-8",
+   "propuesta_de": "GCAT-check c0740 (CATC F2 - Vehículo!D10)",
+   "pistas": [
+    "P01",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0741",
+   "es": "Inspección del vehículo ya equipado",
+   "donde": [
+    "BBQC · F2 - Vehículo!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get a mechanical inspection and test the refrigeration unit under load. Check mileage, service records and payload, and read the title for liens.",
+   "propuesta_de": "GCAT-check c0741 (CATC F2 - Vehículo!E10)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "Permiso venta ambulante (municipal)",
+   "donde": [
+    "BBQC · F2 - Vehículo!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Register and title the van and buy commercial auto insurance",
+   "propuesta_de": "GCAT-check c0742 (CATC F2 - Vehículo!B11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P08",
+    "P10",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "Ayuntamiento",
+   "donde": [
+    "BBQC · F2 - Vehículo!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0743 (CATC F2 - Vehículo!C11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0744",
+   "es": "1-3 meses",
+   "donde": [
+    "BBQC · F2 - Vehículo!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-8",
+   "propuesta_de": "GCAT-check c0744 (CATC F2 - Vehículo!D11)",
+   "pistas": [
+    "P01",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "CADA municipio tiene su normativa",
+   "donde": [
+    "BBQC · F2 - Vehículo!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Register it in the business name. A CDL is needed only when the gross vehicle weight rating is 26,001 lb or more, which a standard cargo van is not.",
+   "propuesta_de": "GCAT-check c0745 (CATC F2 - Vehículo!E11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "Permiso de ocupación de la vía pública",
+   "donde": [
+    "BBQC · F2 - Vehículo!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Upfit the van: shelving, load restraints and branding",
+   "propuesta_de": "GCAT-check c0746 (CATC F2 - Vehículo!B12)",
+   "pistas": [
+    "P01",
+    "P08",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0747",
+   "es": "Ayuntamiento",
+   "donde": [
+    "BBQC · F2 - Vehículo!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0747 (CATC F2 - Vehículo!C12)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0748",
+   "es": "1-2 meses",
+   "donde": [
+    "BBQC · F2 - Vehículo!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 6-10",
+   "propuesta_de": "GCAT-check c0748 (CATC F2 - Vehículo!D12)",
+   "pistas": [
+    "P01",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0749",
+   "es": "Si operas en espacio público fijo",
+   "donde": [
+    "BBQC · F2 - Vehículo!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Add racks, tie-downs and non-slip liners so loads cannot shift. A wrap helps marketing, but check that your insurer covers the upfit.",
+   "propuesta_de": "GCAT-check c0749 (CATC F2 - Vehículo!E12)",
+   "pistas": [
+    "P01",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0750",
+   "es": "Inscripción en mercados/ferias",
+   "donde": [
+    "BBQC · F2 - Vehículo!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy general liability (or a business owner's policy) and order certificates of insurance",
+   "propuesta_de": "GCAT-check c0750 (CATC F2 - Vehículo!B13)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0751",
+   "es": "Organizadores",
+   "donde": [
+    "BBQC · F2 - Vehículo!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Insurance broker",
+   "propuesta_de": "GCAT-check c0751 (CATC F2 - Vehículo!C13)",
+   "pistas": [
+    "P01",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0752",
+   "es": "Variable",
+   "donde": [
+    "BBQC · F2 - Vehículo!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-8",
+   "propuesta_de": "GCAT-check c0752 (CATC F2 - Vehículo!D13)",
+   "pistas": [
+    "P01",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "Muchos mercados tienen lista de espera",
+   "donde": [
+    "BBQC · F2 - Vehículo!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Venues and planners ask for a certificate of insurance (COI) naming them as additional insured. Ask your broker for same-day COIs.",
+   "propuesta_de": "GCAT-check c0753 (CATC F2 - Vehículo!E13)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "Carnet conducir adecuado",
+   "donde": [
+    "BBQC · F2 - Vehículo!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Add liquor liability if you serve alcohol the client buys",
+   "propuesta_de": "GCAT-check c0754 (CATC F2 - Vehículo!B14)",
+   "pistas": [
+    "P01",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0755",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F2 - Vehículo!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Insurance broker",
+   "propuesta_de": "GCAT-check c0755 (CATC F2 - Vehículo!C14)",
+   "pistas": [
+    "P01",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0756",
+   "es": "Variable",
+   "donde": [
+    "BBQC · F2 - Vehículo!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-8",
+   "propuesta_de": "GCAT-check c0756 (CATC F2 - Vehículo!D14)",
+   "pistas": [
+    "P01",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "B para <3.500kg, C para mayor",
+   "donde": [
+    "BBQC · F2 - Vehículo!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Skip it if no alcohol is served at your events. If your bartenders pour client-supplied alcohol, you need liquor liability and certified bartenders.",
+   "propuesta_de": "GCAT-check c0757 (CATC F2 - Vehículo!E14)",
+   "pistas": [
+    "P01",
+    "P36",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0758",
+   "es": "Hojas de reclamaciones oficiales y su cartel anunciador",
+   "donde": [
+    "BBQC · F2 - Vehículo!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy workers' compensation coverage before your first hire",
+   "propuesta_de": "GCAT-check c0758 (CATC F2 - Vehículo!B15)",
+   "pistas": [
+    "P01",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F2 - Vehículo!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Insurance broker",
+   "propuesta_de": "GCAT-check c0759 (CATC F2 - Vehículo!C15)",
+   "pistas": [
+    "P01",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0760",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F2 - Vehículo!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 6-10",
+   "propuesta_de": "GCAT-check c0760 (CATC F2 - Vehículo!D15)",
+   "pistas": [
+    "P01",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0761",
+   "es": "También son obligatorias en venta ambulante: el modelo y el texto del cartel los aprueba tu Comunidad Autónoma",
+   "donde": [
+    "BBQC · F2 - Vehículo!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Required in almost every state once you have employees, including part-time event staff. Premiums depend on payroll and class code.",
+   "propuesta_de": "GCAT-check c0761 (CATC F2 - Vehículo!E15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P08",
+    "P10",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0762",
+   "es": "Contrato con gestor autorizado de residuos y aceite usado",
+   "donde": [
+    "BBQC · F2 - Vehículo!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Arrange waste and grease removal with a licensed hauler",
+   "propuesta_de": "GCAT-check c0762 (CATC F2 - Vehículo!B16)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0763",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F2 - Vehículo!C16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0763 (CATC F2 - Vehículo!C16)",
+   "pistas": [
+    "P01",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0764",
+   "es": "2 semanas",
+   "donde": [
+    "BBQC · F2 - Vehículo!D16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 6-10",
+   "propuesta_de": "GCAT-check c0764 (CATC F2 - Vehículo!D16)",
+   "pistas": [
+    "P01",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0765",
+   "es": "Se comprueba en la inspección sanitaria del vehículo. Este mismo checklist ya avisa de que la freidora genera aceite usado que hay que gestionar, pero nunca contrataba el servicio",
+   "donde": [
+    "BBQC · F2 - Vehículo!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "The commissary often handles it. Confirm who removes grease and trash for the van and what you must label, store and log.",
+   "propuesta_de": "GCAT-check c0765 (CATC F2 - Vehículo!E16)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0766",
+   "es": "Contrato de desinsectación, desratización y desinfección (DDD)",
+   "donde": [
+    "BBQC · F2 - Vehículo!B17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Arrange pest control with a licensed company and post required notices",
+   "propuesta_de": "GCAT-check c0766 (CATC F2 - Vehículo!B17)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0767",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F2 - Vehículo!C17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0767 (CATC F2 - Vehículo!C17)",
+   "pistas": [
+    "P01",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0768",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F2 - Vehículo!D17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 6-10",
+   "propuesta_de": "GCAT-check c0768 (CATC F2 - Vehículo!D17)",
+   "pistas": [
+    "P01",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0769",
+   "es": "Empresa inscrita en el ROESB; el certificado forma parte del plan APPCC móvil que ya exige la fase 4 de este checklist",
+   "donde": [
+    "BBQC · F2 - Vehículo!E17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Usually through the commissary. Keep service records and post the permit and any required notices where inspectors expect them.",
+   "propuesta_de": "GCAT-check c0769 (CATC F2 - Vehículo!E17)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0771",
+   "es": "FASE 3: EQUIPAMIENTO Y SETUP",
+   "donde": [
+    "BBQC · F3 - Equipamiento!A2"
+   ],
+   "propuesta_en": "PHASE 3: EQUIPMENT & SETUP",
+   "propuesta_de": "GR c0771 (CATC F3 - Equipamiento!A2)"
+  },
+  {
+   "id": "c0772",
+   "es": "Plancha industrial (gas o eléctrica)",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "List what you own versus what you rent for each service style",
+   "propuesta_de": "GCAT-check c0772 (CATC F3 - Equipamiento!B5)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0773",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0773 (CATC F3 - Equipamiento!C5)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0774",
+   "es": "1-2 semanas",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 1-2",
+   "propuesta_de": "GCAT-check c0774 (CATC F3 - Equipamiento!D5)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0775",
+   "es": "Adaptar al concepto: burgers, crepes, plancha...",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Drop-off, buffet, family-style, plated and stations need different equipment. Rent what you use rarely and buy what you use at nearly every event.",
+   "propuesta_de": "GCAT-check c0775 (CATC F3 - Equipamiento!E5)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0776",
+   "es": "Freidora (si aplica)",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy chafing dishes, insulated carriers and calibrated thermometers",
+   "propuesta_de": "GCAT-check c0776 (CATC F3 - Equipamiento!B6)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0777",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0777 (CATC F3 - Equipamiento!C6)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0778",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-4",
+   "propuesta_de": "GCAT-check c0778 (CATC F3 - Equipamiento!D6)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "Con filtro y gestión aceite usado",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose insulated carriers that hold food hot or cold for the whole trip. Calibrate thermometers and keep spares in the van.",
+   "propuesta_de": "GCAT-check c0779 (CATC F3 - Equipamiento!E6)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0780",
+   "es": "Campana extractora con filtros",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy portable cooking and power: induction, burners and a generator",
+   "propuesta_de": "GCAT-check c0780 (CATC F3 - Equipamiento!B7)",
+   "pistas": [
+    "P01",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0781",
+   "es": "Instalador",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0781 (CATC F3 - Equipamiento!C7)",
+   "pistas": [
+    "P01",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "1-2 semanas",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GCAT-check c0782 (CATC F3 - Equipamiento!D7)",
+   "pistas": [
+    "P01",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0783",
+   "es": "Obligatoria en espacio cerrado",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Venues rarely have enough power for heavy cooking. Induction units are quiet and safer indoors; use a generator only where fire rules allow.",
+   "propuesta_de": "GCAT-check c0783 (CATC F3 - Equipamiento!E7)",
+   "pistas": [
+    "P01",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "Nevera/congelador compacto",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Stock hotel pans, sheet pans and utensils",
+   "propuesta_de": "GCAT-check c0784 (CATC F3 - Equipamiento!B8)",
+   "pistas": [
+    "P01",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0785 (CATC F3 - Equipamiento!C8)",
+   "pistas": [
+    "P01",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0786",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GCAT-check c0786 (CATC F3 - Equipamiento!D8)",
+   "pistas": [
+    "P01",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "12V o 220V según generador",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Standardize on hotel pan sizes so everything stacks, travels and fits the carriers. Label pans and lids by station.",
+   "propuesta_de": "GCAT-check c0787 (CATC F3 - Equipamiento!E8)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "Generador eléctrico insonorizado",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buy serving and presentation pieces for chef-attended stations",
+   "propuesta_de": "GCAT-check c0788 (CATC F3 - Equipamiento!B9)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0789 (CATC F3 - Equipamiento!C9)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0790",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0790 (CATC F3 - Equipamiento!D9)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "5-7 kW mínimo, insonorizado (<70dB)",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Platters, risers, signage and a small tool kit per station. A consistent look is what makes your themed stations memorable in photos.",
+   "propuesta_de": "GCAT-check c0791 (CATC F3 - Equipamiento!E9)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "Depósito de agua limpia y de aguas residuales",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Open accounts with a broadline distributor (US Foods, Sysco) and a cash-and-carry such as Restaurant Depot",
+   "propuesta_de": "GCAT-check c0792 (CATC F3 - Equipamiento!B10)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Instalador",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0793 (CATC F3 - Equipamiento!C10)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-4",
+   "propuesta_de": "GCAT-check c0794 (CATC F3 - Equipamiento!D10)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Mínimo 40 L de agua limpia y 60 L de residual",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Compare delivery minimums, credit terms and price lists. Restaurant Depot works well for small orders; broadline accounts cut costs as volume grows.",
+   "propuesta_de": "GCAT-check c0795 (CATC F3 - Equipamiento!E10)",
+   "pistas": [
+    "P01",
+    "P46",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "Fregadero doble seno",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Line up specialty suppliers for your themed stations",
+   "propuesta_de": "GCAT-check c0796 (CATC F3 - Equipamiento!B11)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Instalador",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0797 (CATC F3 - Equipamiento!C11)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0798",
+   "es": "Con adaptación",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GCAT-check c0798 (CATC F3 - Equipamiento!D11)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Obligatorio por normativa sanitaria",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Think of tortillas, proteins for carving, fresh pasta, fish for poke. Get quotes and delivery days from at least two suppliers per item.",
+   "propuesta_de": "GCAT-check c0799 (CATC F3 - Equipamiento!E11)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "TPV móvil y datáfono 4G",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Sign an agreement with a party rental company for tables, linens and dinnerware",
+   "propuesta_de": "GCAT-check c0800 (CATC F3 - Equipamiento!B12)",
+   "pistas": [
+    "P01",
+    "P22",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0801",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0801 (CATC F3 - Equipamiento!C12)",
+   "pistas": [
+    "P01",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0802 (CATC F3 - Equipamiento!D12)",
+   "pistas": [
+    "P01",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0803",
+   "es": "Tablet y datáfono con cobertura 4G",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Negotiate a caterer rate and standard delivery and pickup times. Rentals are billed to the client, so build them into your proposal.",
+   "propuesta_de": "GCAT-check c0803 (CATC F3 - Equipamiento!E12)",
+   "pistas": [
+    "P01",
+    "P22",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0804",
+   "es": "Menaje y utensilios cocina",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose disposables and packaging for drop-off orders",
+   "propuesta_de": "GCAT-check c0804 (CATC F3 - Equipamiento!B13)",
+   "pistas": [
+    "P01",
+    "P26",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0805 (CATC F3 - Equipamiento!C13)",
+   "pistas": [
+    "P01",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0806",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0806 (CATC F3 - Equipamiento!D13)",
+   "pistas": [
+    "P01",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "Adaptado al espacio reducido",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Use compostable items where your city requires them. Test that hot food stays hot and that lids do not leak in a moving van.",
+   "propuesta_de": "GCAT-check c0807 (CATC F3 - Equipamiento!E13)",
+   "pistas": [
+    "P01",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Packaging biodegradable",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up temperature logging for transport with a data logger",
+   "propuesta_de": "GCAT-check c0808 (CATC F3 - Equipamiento!B14)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0809",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0809 (CATC F3 - Equipamiento!C14)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0810",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 5-6",
+   "propuesta_de": "GCAT-check c0810 (CATC F3 - Equipamiento!D14)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Obligatorio en muchos municipios desde 2023",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Place a logger in each carrier and in the van's cargo area. Save the report after every event as proof that food stayed in the safe zone.",
+   "propuesta_de": "GCAT-check c0811 (CATC F3 - Equipamiento!E14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0812",
+   "es": "Rotulación integral del vehículo",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up your commissary space: shelving, labeling and FIFO",
+   "propuesta_de": "GCAT-check c0812 (CATC F3 - Equipamiento!B15)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0813",
+   "es": "Rotulista",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0813 (CATC F3 - Equipamiento!C15)",
+   "pistas": [
+    "P01",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "1-2 semanas",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 5-7",
+   "propuesta_de": "GCAT-check c0814 (CATC F3 - Equipamiento!D15)",
+   "pistas": [
+    "P01",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0815",
+   "es": "Primera impresión, marca visible a distancia",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Label and date everything, and store first in, first out. Shared kitchens are inspected often, so a tidy, labeled space protects your permit.",
+   "propuesta_de": "GCAT-check c0815 (CATC F3 - Equipamiento!E15)",
+   "pistas": [
+    "P01",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0816",
+   "es": "Toldo, mesas plegables, banderolas",
+   "donde": [
+    "BBQC · F3 - Equipamiento!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Run a full dry run of an event with your team",
+   "propuesta_de": "GCAT-check c0816 (CATC F3 - Equipamiento!B16)",
+   "pistas": [
+    "P01",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0817",
+   "es": "Proveedor",
+   "donde": [
+    "BBQC · F3 - Equipamiento!C16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0817 (CATC F3 - Equipamiento!C16)",
+   "pistas": [
+    "P01",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0818",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F3 - Equipamiento!D16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 7-9",
+   "propuesta_de": "GCAT-check c0818 (CATC F3 - Equipamiento!D16)",
+   "pistas": [
+    "P01",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0819",
+   "es": "Kit de montaje rápido para cada servicio",
+   "donde": [
+    "BBQC · F3 - Equipamiento!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Cook, pack, load, drive and set up for a mock event at a friend's venue. Time every step and fix what was slow before a client sees it.",
+   "propuesta_de": "GCAT-check c0819 (CATC F3 - Equipamiento!E16)",
+   "pistas": [
+    "P01",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0822",
+   "es": "Definir equipo mínimo (2-3 personas)",
+   "donde": [
+    "BBQC · F4 - Personal!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set a staffing plan per event by service style (servers per guest)",
+   "propuesta_de": "GCAT-check c0822 (CATC F4 - Personal!B5)",
+   "pistas": [
+    "P01",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0823",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F4 - Personal!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0823 (CATC F4 - Personal!C5)",
+   "pistas": [
+    "P01",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0824",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F4 - Personal!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 1-2",
+   "propuesta_de": "GCAT-check c0824 (CATC F4 - Personal!D5)",
+   "pistas": [
+    "P01",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0825",
+   "es": "Propietario + 1 ayudante mínimo",
+   "donde": [
+    "BBQC · F4 - Personal!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Buffets need fewer servers than plated dinners. Write a servers-per-guest ratio for each style and use it to price labor in every quote.",
+   "propuesta_de": "GCAT-check c0825 (CATC F4 - Personal!E5)",
+   "pistas": [
+    "P01",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0826",
+   "es": "Contratación ayudante (si aplica)",
+   "donde": [
+    "BBQC · F4 - Personal!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Build a pool of event staff on W-2 payroll, not 1099",
+   "propuesta_de": "GCAT-check c0826 (CATC F4 - Personal!B6)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0827",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F4 - Personal!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0827 (CATC F4 - Personal!C6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0828",
+   "es": "1-2 semanas",
+   "donde": [
+    "BBQC · F4 - Personal!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 2-6",
+   "propuesta_de": "GCAT-check c0828 (CATC F4 - Personal!D6)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Contrato temporal o fijo-discontinuo para eventos",
+   "donde": [
+    "BBQC · F4 - Personal!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Event servers and bartenders are usually employees, not contractors (FLSA economic reality test; California AB5). Misclassification brings back wages and penalties.",
+   "propuesta_de": "GCAT-check c0829 (CATC F4 - Personal!E6)",
+   "pistas": [
+    "P01",
+    "P55",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0830",
+   "es": "Formación en higiene alimentaria de todo el equipo",
+   "donde": [
+    "BBQC · F4 - Personal!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Prepare offer letters, I-9 and W-4 for each hire, and check state minimum wage",
+   "propuesta_de": "GCAT-check c0830 (CATC F4 - Personal!B7)",
+   "pistas": [
+    "P01",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0831",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F4 - Personal!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0831 (CATC F4 - Personal!C7)",
+   "pistas": [
+    "P01",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0832",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F4 - Personal!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "At hiring",
+   "propuesta_de": "GCAT-check c0832 (CATC F4 - Personal!D7)",
+   "pistas": [
+    "P01",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "El «carnet de manipulador» está derogado (RD 109/2010): la formación la acredita la EMPRESA y se documenta en el plan APPCC móvil",
+   "donde": [
+    "BBQC · F4 - Personal!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Complete Form I-9 within three business days of the start date and collect a W-4. Check state and local minimum wage and any minimum shift rules.",
+   "propuesta_de": "GCAT-check c0833 (CATC F4 - Personal!E7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P57",
+    "P58",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0834",
+   "es": "Formación en APPCC móvil",
+   "donde": [
+    "BBQC · F4 - Personal!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "File new-hire reports with your state",
+   "propuesta_de": "GCAT-check c0834 (CATC F4 - Personal!B8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0835",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F4 - Personal!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Payroll provider",
+   "propuesta_de": "GCAT-check c0835 (CATC F4 - Personal!C8)",
+   "pistas": [
+    "P01",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F4 - Personal!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Within 20 days of hire",
+   "propuesta_de": "GCAT-check c0836 (CATC F4 - Personal!D8)",
+   "pistas": [
+    "P01",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Temperaturas, cadena de frío en el vehículo y trazabilidad",
+   "donde": [
+    "BBQC · F4 - Personal!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Every state requires one, usually within 20 days. Most payroll providers file it for you automatically; confirm that yours does.",
+   "propuesta_de": "GCAT-check c0837 (CATC F4 - Personal!E8)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "Formación operativa food truck",
+   "donde": [
+    "BBQC · F4 - Personal!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up a payroll provider and workers' comp on payroll",
+   "propuesta_de": "GCAT-check c0838 (CATC F4 - Personal!B9)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0839",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F4 - Personal!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Accountant",
+   "propuesta_de": "GCAT-check c0839 (CATC F4 - Personal!C9)",
+   "pistas": [
+    "P01",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0840",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F4 - Personal!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GCAT-check c0840 (CATC F4 - Personal!D9)",
+   "pistas": [
+    "P01",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0841",
+   "es": "Montaje, servicio rápido, desmontaje y limpieza",
+   "donde": [
+    "BBQC · F4 - Personal!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Connect payroll to your workers' comp policy so premiums follow actual hours. Set a clear pay schedule, including how event-night overtime is paid.",
+   "propuesta_de": "GCAT-check c0841 (CATC F4 - Personal!E9)",
+   "pistas": [
+    "P01",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0842",
+   "es": "Plan PRL (prevención riesgos)",
+   "donde": [
+    "BBQC · F4 - Personal!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get food handler cards for your whole team",
+   "propuesta_de": "GCAT-check c0842 (CATC F4 - Personal!B10)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0843",
+   "es": "Titular o servicio ajeno",
+   "donde": [
+    "BBQC · F4 - Personal!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Event staff",
+   "propuesta_de": "GCAT-check c0843 (CATC F4 - Personal!C10)",
+   "pistas": [
+    "P01",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0844",
+   "es": "1-2 semanas",
+   "donde": [
+    "BBQC · F4 - Personal!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Before the first shift",
+   "propuesta_de": "GCAT-check c0844 (CATC F4 - Personal!D10)",
+   "pistas": [
+    "P01",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0845",
+   "es": "Riesgos específicos: gas, aceite, espacio reducido",
+   "donde": [
+    "BBQC · F4 - Personal!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Many states and counties require a food handler card for anyone handling food. Cards are cheap, online and valid for about 2-3 years.",
+   "propuesta_de": "GCAT-check c0845 (CATC F4 - Personal!E10)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Protocolo alérgenos",
+   "donde": [
+    "BBQC · F4 - Personal!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get alcohol server certification for your bartenders (TIPS, ServSafe Alcohol or TABC)",
+   "propuesta_de": "GCAT-check c0846 (CATC F4 - Personal!B11)",
+   "pistas": [
+    "P01",
+    "P58",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0847",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F4 - Personal!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Bartenders",
+   "propuesta_de": "GCAT-check c0847 (CATC F4 - Personal!C11)",
+   "pistas": [
+    "P01",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0848",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F4 - Personal!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0848 (CATC F4 - Personal!D11)",
+   "pistas": [
+    "P01",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0849",
+   "es": "14 alérgenos, cartel visible en food truck",
+   "donde": [
+    "BBQC · F4 - Personal!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Required or strongly recommended where alcohol is served. Insurers often ask for it, and it is a selling point for planners and venues.",
+   "propuesta_de": "GCAT-check c0849 (CATC F4 - Personal!E11)",
+   "pistas": [
+    "P01",
+    "P58",
+    "P09",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0850",
+   "es": "Ensayo montaje/desmontaje completo",
+   "donde": [
+    "BBQC · F4 - Personal!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Cover OSHA basics: burns, lifting and driving safety",
+   "propuesta_de": "GCAT-check c0850 (CATC F4 - Personal!B12)",
+   "pistas": [
+    "P01",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0851",
+   "es": "Equipo",
+   "donde": [
+    "BBQC · F4 - Personal!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0851 (CATC F4 - Personal!C12)",
+   "pistas": [
+    "P01",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0852",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F4 - Personal!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0852 (CATC F4 - Personal!D12)",
+   "pistas": [
+    "P01",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0853",
+   "es": "Cronometrar: objetivo <30 min montaje",
+   "donde": [
+    "BBQC · F4 - Personal!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Train staff on hot pans, safe lifting and loading, and van driving. Keep an injury log and a first-aid kit in the van and at every event.",
+   "propuesta_de": "GCAT-check c0853 (CATC F4 - Personal!E12)",
+   "pistas": [
+    "P01",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0854",
+   "es": "Registro horario diario de la jornada de todo el equipo",
+   "donde": [
+    "BBQC · F4 - Personal!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Train service and event protocol: uniform, briefing and the nine major allergens",
+   "propuesta_de": "GCAT-check c0854 (CATC F4 - Personal!B13)",
+   "pistas": [
+    "P01",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0855",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F4 - Personal!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef / Event captain",
+   "propuesta_de": "GCAT-check c0855 (CATC F4 - Personal!C13)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0856",
+   "es": "Desde el primer contrato",
+   "donde": [
+    "BBQC · F4 - Personal!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 5-7",
+   "propuesta_de": "GCAT-check c0856 (CATC F4 - Personal!D13)",
+   "pistas": [
+    "P01",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0857",
+   "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años. Aplica desde el primer contrato del ayudante, aunque sea a tiempo parcial",
+   "donde": [
+    "BBQC · F4 - Personal!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Run a pre-event briefing every time. Everyone should know the nine major allergens and how to hand an allergy question to the chef.",
+   "propuesta_de": "GCAT-check c0857 (CATC F4 - Personal!E13)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P12",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0858",
+   "es": "Informar al equipo del registro horario y del tratamiento de sus datos",
+   "donde": [
+    "BBQC · F4 - Personal!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set your service charge and gratuity policy",
+   "propuesta_de": "GCAT-check c0858 (CATC F4 - Personal!B14)",
+   "pistas": [
+    "P01",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0859",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F4 - Personal!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Accountant",
+   "propuesta_de": "GCAT-check c0859 (CATC F4 - Personal!C14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0860",
+   "es": "Desde el primer contrato",
+   "donde": [
+    "BBQC · F4 - Personal!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-5",
+   "propuesta_de": "GCAT-check c0860 (CATC F4 - Personal!D14)",
+   "pistas": [
+    "P01",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0861",
+   "es": "La cláusula informativa se entrega con el contrato; el fichaje es un tratamiento de datos, no sólo una obligación laboral",
+   "donde": [
+    "BBQC · F4 - Personal!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A mandatory service charge is not a tip: the part paid out to staff is wages (IRS Rev. Rul. 2012-18). A gratuity is voluntary and goes to staff. Keep them on separate invoice lines and check your state's sales tax rule.",
+   "propuesta_de": "GCAT-check c0861 (CATC F4 - Personal!E14)",
+   "pistas": [
+    "P01",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0864",
+   "es": "Crear identidad visual y marca",
+   "donde": [
+    "BBQC · F5 - Marketing!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Create your brand, logo, themed station menu and professional photos",
+   "propuesta_de": "GCAT-check c0864 (CATC F5 - Marketing!B5)",
+   "pistas": [
+    "P01",
+    "P66",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0865",
+   "es": "Diseñador",
+   "donde": [
+    "BBQC · F5 - Marketing!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0865 (CATC F5 - Marketing!C5)",
+   "pistas": [
+    "P01",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0866",
+   "es": "2-3 semanas",
+   "donde": [
+    "BBQC · F5 - Marketing!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 1-4",
+   "propuesta_de": "GCAT-check c0866 (CATC F5 - Marketing!D5)",
+   "pistas": [
+    "P01",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0867",
+   "es": "Logo, colores, rotulación, packaging branded",
+   "donde": [
+    "BBQC · F5 - Marketing!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Photograph the stations, the plating and the team in action. Photos sell catering far better than menus, so invest here.",
+   "propuesta_de": "GCAT-check c0867 (CATC F5 - Marketing!E5)",
+   "pistas": [
+    "P01",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0868",
+   "es": "Ficha Google My Business",
+   "donde": [
+    "BBQC · F5 - Marketing!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Build a website with menus, per-guest starting prices and a quote request form",
+   "propuesta_de": "GCAT-check c0868 (CATC F5 - Marketing!B6)",
+   "pistas": [
+    "P01",
+    "P68",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0869",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0869 (CATC F5 - Marketing!C6)",
+   "pistas": [
+    "P01",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0870",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F5 - Marketing!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-6",
+   "propuesta_de": "GCAT-check c0870 (CATC F5 - Marketing!D6)",
+   "pistas": [
+    "P01",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0871",
+   "es": "Categoría: Food truck. Fotos, ubicaciones",
+   "donde": [
+    "BBQC · F5 - Marketing!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Show packages by service style and a starting price per guest. A short form that asks for date, venue and guest count gets you better leads.",
+   "propuesta_de": "GCAT-check c0871 (CATC F5 - Marketing!E6)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0872",
+   "es": "Perfiles RRSS (Instagram + TikTok)",
+   "donde": [
+    "BBQC · F5 - Marketing!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up your Google Business Profile and collect reviews",
+   "propuesta_de": "GCAT-check c0872 (CATC F5 - Marketing!B7)",
+   "pistas": [
+    "P01",
+    "P68",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0873",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0873 (CATC F5 - Marketing!C7)",
+   "pistas": [
+    "P01",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0874",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F5 - Marketing!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 3-4",
+   "propuesta_de": "GCAT-check c0874 (CATC F5 - Marketing!D7)",
+   "pistas": [
+    "P01",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0875",
+   "es": "Video del truck + comida = viral potencial",
+   "donde": [
+    "BBQC · F5 - Marketing!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Pick the catering category and add your service area and photos. Ask every client for a review; local search brings many leads.",
+   "propuesta_de": "GCAT-check c0875 (CATC F5 - Marketing!E7)",
+   "pistas": [
+    "P01",
+    "P26",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0876",
+   "es": "Página web con el calendario de ubicaciones",
+   "donde": [
+    "BBQC · F5 - Marketing!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Create profiles on The Knot and WeddingWire",
+   "propuesta_de": "GCAT-check c0876 (CATC F5 - Marketing!B8)",
+   "pistas": [
+    "P01",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0877",
+   "es": "Dev",
+   "donde": [
+    "BBQC · F5 - Marketing!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0877 (CATC F5 - Marketing!C8)",
+   "pistas": [
+    "P01",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0878",
+   "es": "1-2 semanas",
+   "donde": [
+    "BBQC · F5 - Marketing!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0878 (CATC F5 - Marketing!D8)",
+   "pistas": [
+    "P01",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0879",
+   "es": "Dónde estarás cada día de la semana",
+   "donde": [
+    "BBQC · F5 - Marketing!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Both are the main directories for wedding clients. Upload photos, list packages and answer inquiries within a few hours.",
+   "propuesta_de": "GCAT-check c0879 (CATC F5 - Marketing!E8)",
+   "pistas": [
+    "P01",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0880",
+   "es": "Sesión fotos/video profesional",
+   "donde": [
+    "BBQC · F5 - Marketing!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Join ezCater to reach corporate clients",
+   "propuesta_de": "GCAT-check c0880 (CATC F5 - Marketing!B9)",
+   "pistas": [
+    "P01",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0881",
+   "es": "Fotógrafo",
+   "donde": [
+    "BBQC · F5 - Marketing!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0881 (CATC F5 - Marketing!C9)",
+   "pistas": [
+    "P01",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0882",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F5 - Marketing!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0882 (CATC F5 - Marketing!D9)",
+   "pistas": [
+    "P01",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0883",
+   "es": "Comida en acción, truck rotulado, servicio",
+   "donde": [
+    "BBQC · F5 - Marketing!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "ezCater is a corporate catering marketplace that charges a commission on each order. Include that commission in your prices from the start.",
+   "propuesta_de": "GCAT-check c0883 (CATC F5 - Marketing!E9)",
+   "pistas": [
+    "P01",
+    "P26",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0884",
+   "es": "Acuerdos con mercados y eventos",
+   "donde": [
+    "BBQC · F5 - Marketing!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Prospect corporate clients: office managers, HR and event planners",
+   "propuesta_de": "GCAT-check c0884 (CATC F5 - Marketing!B10)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P55",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0885",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0885 (CATC F5 - Marketing!C10)",
+   "pistas": [
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0886",
+   "es": "2-4 semanas",
+   "donde": [
+    "BBQC · F5 - Marketing!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 5-10",
+   "propuesta_de": "GCAT-check c0886 (CATC F5 - Marketing!D10)",
+   "pistas": [
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0887",
+   "es": "Mercados fijos semanales = ingresos recurrentes",
+   "donde": [
+    "BBQC · F5 - Marketing!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Build a list of nearby offices and drop off sample lunches. Repeat weekday orders make your base, so follow up every contact.",
+   "propuesta_de": "GCAT-check c0887 (CATC F5 - Marketing!E10)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0888",
+   "es": "Registro en apps de food trucks",
+   "donde": [
+    "BBQC · F5 - Marketing!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Make agreements with venues and wedding planners (preferred vendor lists)",
+   "propuesta_de": "GCAT-check c0888 (CATC F5 - Marketing!B11)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0889",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0889 (CATC F5 - Marketing!C11)",
+   "pistas": [
+    "P01",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0890",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F5 - Marketing!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 6-12",
+   "propuesta_de": "GCAT-check c0890 (CATC F5 - Marketing!D11)",
+   "pistas": [
+    "P01",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0891",
+   "es": "Roaming Hunger, apps locales de street food",
+   "donde": [
+    "BBQC · F5 - Marketing!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ask each venue how to join its preferred list. Offer a tasting for the planner; their referrals turn into weekend bookings.",
+   "propuesta_de": "GCAT-check c0891 (CATC F5 - Marketing!E11)",
+   "pistas": [
+    "P01",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0892",
+   "es": "Acuerdos con empresas/oficinas",
+   "donde": [
+    "BBQC · F5 - Marketing!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Define your tasting policy for prospects",
+   "propuesta_de": "GCAT-check c0892 (CATC F5 - Marketing!B12)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0893",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0893 (CATC F5 - Marketing!C12)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0894",
+   "es": "2 semanas",
+   "donde": [
+    "BBQC · F5 - Marketing!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0894 (CATC F5 - Marketing!D12)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0895",
+   "es": "Lunch corporativo: recurrencia garantizada",
+   "donde": [
+    "BBQC · F5 - Marketing!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Decide who gets a tasting, how many guests attend and whether the fee is credited toward the booking. Track the bookings each tasting produces.",
+   "propuesta_de": "GCAT-check c0895 (CATC F5 - Marketing!E12)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0896",
+   "es": "Evento de inauguración",
+   "donde": [
+    "BBQC · F5 - Marketing!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Post event photos on Instagram and social media",
+   "propuesta_de": "GCAT-check c0896 (CATC F5 - Marketing!B13)",
+   "pistas": [
+    "P01",
+    "P55",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0897",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0897 (CATC F5 - Marketing!C13)",
+   "pistas": [
+    "P01",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0898",
+   "es": "1 día",
+   "donde": [
+    "BBQC · F5 - Marketing!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ongoing from Week 5",
+   "propuesta_de": "GCAT-check c0898 (CATC F5 - Marketing!D13)",
+   "pistas": [
+    "P01",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0899",
+   "es": "Primer servicio con promo: 2x1, redes, influencers",
+   "donde": [
+    "BBQC · F5 - Marketing!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Share event photos with the client's permission. Use text or SMS for quick client follow-ups; keep inquiries in your CRM.",
+   "propuesta_de": "GCAT-check c0899 (CATC F5 - Marketing!E13)",
+   "pistas": [
+    "P01",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0900",
+   "es": "Programa de fidelización móvil",
+   "donde": [
+    "BBQC · F5 - Marketing!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Create a proposal template with the kit calculator and track leads in your CRM",
+   "propuesta_de": "GCAT-check c0900 (CATC F5 - Marketing!B14)",
+   "pistas": [
+    "P01",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0901",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0901 (CATC F5 - Marketing!C14)",
+   "pistas": [
+    "P01",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0902",
+   "es": "1 semana",
+   "donde": [
+    "BBQC · F5 - Marketing!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 4-6",
+   "propuesta_de": "GCAT-check c0902 (CATC F5 - Marketing!D14)",
+   "pistas": [
+    "P01",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0903",
+   "es": "Tarjeta digital o QR: el décimo menú, gratis",
+   "donde": [
+    "BBQC · F5 - Marketing!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Your calculator gives the price per guest; the template turns it into a polished quote. Log every inquiry and follow up within 48 hours.",
+   "propuesta_de": "GCAT-check c0903 (CATC F5 - Marketing!E14)",
+   "pistas": [
+    "P01",
+    "P26",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0904",
+   "es": "Licencia de derechos de autor por música ambiental en ferias y festivales (SGAE/AGEDI-AIE)",
+   "donde": [
+    "BBQC · F5 - Marketing!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Start a referral and review program for after each event",
+   "propuesta_de": "GCAT-check c0904 (CATC F5 - Marketing!B15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P78",
+    "P10",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0905",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0905 (CATC F5 - Marketing!C15)",
+   "pistas": [
+    "P01",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0906",
+   "es": "Antes de poner música propia",
+   "donde": [
+    "BBQC · F5 - Marketing!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weeks 8-12",
+   "propuesta_de": "GCAT-check c0906 (CATC F5 - Marketing!D15)",
+   "pistas": [
+    "P01",
+    "P78",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0907",
+   "es": "Distinta de la licencia del organizador del festival, que cubre el recinto, no cada puesto individual",
+   "donde": [
+    "BBQC · F5 - Marketing!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Send a thank-you message with a review link a day after the event. Offer something small to clients who refer a friend or a company.",
+   "propuesta_de": "GCAT-check c0907 (CATC F5 - Marketing!E15)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0908",
+   "es": "Cláusula informativa y consentimiento en el programa de fidelización con QR",
+   "donde": [
+    "BBQC · F5 - Marketing!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Host a launch event or showcase for planners and companies",
+   "propuesta_de": "GCAT-check c0908 (CATC F5 - Marketing!B16)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0909",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F5 - Marketing!C16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0909 (CATC F5 - Marketing!C16)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0910",
+   "es": "Antes de abrir",
+   "donde": [
+    "BBQC · F5 - Marketing!D16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 3",
+   "propuesta_de": "GCAT-check c0910 (CATC F5 - Marketing!D16)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0911",
+   "es": "El propio checklist promete un programa de fidelización móvil con QR que recoge datos de contacto: necesita su información previa",
+   "donde": [
+    "BBQC · F5 - Marketing!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Invite planners, venue managers and office managers to a tasting of your stations. It is your best single day of sales.",
+   "propuesta_de": "GCAT-check c0911 (CATC F5 - Marketing!E16)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0914",
+   "es": "Testear ubicaciones (mínimo 5)",
+   "donde": [
+    "BBQC · F6 - 90 Días!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Hold the client briefing at D-21: guests, diets and event timeline",
+   "propuesta_de": "GCAT-check c0914 (CATC F6 - 90 Días!B5)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0915",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Event captain",
+   "propuesta_de": "GCAT-check c0915 (CATC F6 - 90 Días!C5)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0916",
+   "es": "Mes 1",
+   "donde": [
+    "BBQC · F6 - 90 Días!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "D-21",
+   "propuesta_de": "GCAT-check c0916 (CATC F6 - 90 Días!D5)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0917",
+   "es": "Evaluar facturación por ubicación y día",
+   "donde": [
+    "BBQC · F6 - 90 Días!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Confirm the guest count, dietary needs, service style, arrival time and who your contact is on the day. Send the summary in writing.",
+   "propuesta_de": "GCAT-check c0917 (CATC F6 - 90 Días!E5)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0918",
+   "es": "Registro diario ventas por ubicación",
+   "donde": [
+    "BBQC · F6 - 90 Días!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Visit the venue at D-14: access, kitchen, outlets and water",
+   "propuesta_de": "GCAT-check c0918 (CATC F6 - 90 Días!B6)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0919",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Event captain",
+   "propuesta_de": "GCAT-check c0919 (CATC F6 - 90 Días!C6)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0920",
+   "es": "Diario",
+   "donde": [
+    "BBQC · F6 - 90 Días!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "D-14",
+   "propuesta_de": "GCAT-check c0920 (CATC F6 - 90 Días!D6)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0921",
+   "es": "Saber qué ubicaciones funcionan y cuáles no",
+   "donde": [
+    "BBQC · F6 - 90 Días!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Check loading access, parking, elevator, power, water and fire rules. Photograph the space and note where stations and chafers will go.",
+   "propuesta_de": "GCAT-check c0921 (CATC F6 - 90 Días!E6)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0922",
+   "es": "Control food cost semanal",
+   "donde": [
+    "BBQC · F6 - 90 Días!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Order ingredients at D-7 and D-1 and write the production list",
+   "propuesta_de": "GCAT-check c0922 (CATC F6 - 90 Días!B7)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0923",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef",
+   "propuesta_de": "GCAT-check c0923 (CATC F6 - 90 Días!C7)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0924",
+   "es": "Semanal",
+   "donde": [
+    "BBQC · F6 - 90 Días!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "D-7 and D-1",
+   "propuesta_de": "GCAT-check c0924 (CATC F6 - 90 Días!D7)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0925",
+   "es": "Pesar el género, controlar mermas y ajustar pedidos",
+   "donde": [
+    "BBQC · F6 - 90 Días!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Order against the final guest count and add a small buffer. Build one production list with prep times and who does what.",
+   "propuesta_de": "GCAT-check c0925 (CATC F6 - 90 Días!E7)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0926",
+   "es": "Ajustar carta según ventas",
+   "donde": [
+    "BBQC · F6 - 90 Días!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Complete the loading and transport checklist with temperatures",
+   "propuesta_de": "GCAT-check c0926 (CATC F6 - 90 Días!B8)",
+   "pistas": [
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0927",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Executive chef / Driver",
+   "propuesta_de": "GCAT-check c0927 (CATC F6 - 90 Días!C8)",
+   "pistas": [
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0928",
+   "es": "Mes 1",
+   "donde": [
+    "BBQC · F6 - 90 Días!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Day of event, before departure",
+   "propuesta_de": "GCAT-check c0928 (CATC F6 - 90 Días!D8)",
+   "pistas": [
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0929",
+   "es": "Eliminar platos lentos, potenciar bestsellers",
+   "donde": [
+    "BBQC · F6 - 90 Días!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Check carriers, pans, equipment and rentals against the list. Record food temperatures when you load and again when you arrive.",
+   "propuesta_de": "GCAT-check c0929 (CATC F6 - 90 Días!E8)",
+   "pistas": [
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0930",
+   "es": "Optimizar ruta semanal",
+   "donde": [
+    "BBQC · F6 - 90 Días!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up 60-90 minutes before service and run the event",
+   "propuesta_de": "GCAT-check c0930 (CATC F6 - 90 Días!B9)",
+   "pistas": [
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0931",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Event captain",
+   "propuesta_de": "GCAT-check c0931 (CATC F6 - 90 Días!C9)",
+   "pistas": [
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0932",
+   "es": "Mes 1-2",
+   "donde": [
+    "BBQC · F6 - 90 Días!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Day of event",
+   "propuesta_de": "GCAT-check c0932 (CATC F6 - 90 Días!D9)",
+   "pistas": [
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0933",
+   "es": "Fijar los mejores días/ubicaciones como ruta fija",
+   "donde": [
+    "BBQC · F6 - 90 Días!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Arrive early, set up the stations and check hot and cold temperatures before guests arrive. Brief staff, then keep a service timeline.",
+   "propuesta_de": "GCAT-check c0933 (CATC F6 - 90 Días!E9)",
+   "pistas": [
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0934",
+   "es": "Encuestas a clientes y reseñas de Google",
+   "donde": [
+    "BBQC · F6 - 90 Días!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Pick up, clean and return rentals",
+   "propuesta_de": "GCAT-check c0934 (CATC F6 - 90 Días!B10)",
+   "pistas": [
+    "P01",
+    "P20",
+    "P21",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0935",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Event captain / Event staff",
+   "propuesta_de": "GCAT-check c0935 (CATC F6 - 90 Días!C10)",
+   "pistas": [
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0936",
+   "es": "Mes 1-3",
+   "donde": [
+    "BBQC · F6 - 90 Días!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Day of event or next morning",
+   "propuesta_de": "GCAT-check c0936 (CATC F6 - 90 Días!D10)",
+   "pistas": [
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0937",
+   "es": "Pedir reseñas, responder todas",
+   "donde": [
+    "BBQC · F6 - 90 Días!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Count and inspect rentals before you leave. Return them clean by the agreed time to avoid late fees.",
+   "propuesta_de": "GCAT-check c0937 (CATC F6 - 90 Días!E10)",
+   "pistas": [
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0938",
+   "es": "Evaluar eventos y festivales",
+   "donde": [
+    "BBQC · F6 - 90 Días!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Send the final invoice within 48 hours; track deposits and balances",
+   "propuesta_de": "GCAT-check c0938 (CATC F6 - 90 Días!B11)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P55",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0939",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0939 (CATC F6 - 90 Días!C11)",
+   "pistas": [
+    "P01",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0940",
+   "es": "Mes 2",
+   "donde": [
+    "BBQC · F6 - 90 Días!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Within 48 hours after the event",
+   "propuesta_de": "GCAT-check c0940 (CATC F6 - 90 Días!D11)",
+   "pistas": [
+    "P01",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0941",
+   "es": "Festivales = facturación x3-5 en un día",
+   "donde": [
+    "BBQC · F6 - 90 Días!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Private clients usually pay the balance 5-7 days before the event; invoice overages within 48 hours and follow corporate invoices on their 30-day terms.",
+   "propuesta_de": "GCAT-check c0941 (CATC F6 - 90 Días!E11)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0942",
+   "es": "Renegociar proveedores",
+   "donde": [
+    "BBQC · F6 - 90 Días!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ask for a review and photos; follow up in your CRM",
+   "propuesta_de": "GCAT-check c0942 (CATC F6 - 90 Días!B12)",
+   "pistas": [
+    "P01",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0943",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0943 (CATC F6 - 90 Días!C12)",
+   "pistas": [
+    "P01",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0944",
+   "es": "Mes 2",
+   "donde": [
+    "BBQC · F6 - 90 Días!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-3 days after the event",
+   "propuesta_de": "GCAT-check c0944 (CATC F6 - 90 Días!D12)",
+   "pistas": [
+    "P01",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0945",
+   "es": "Con volumen real, pedir mejores precios",
+   "donde": [
+    "BBQC · F6 - 90 Días!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Thank the client, share a review link and ask permission to use photos. Note preferences for the next booking.",
+   "propuesta_de": "GCAT-check c0945 (CATC F6 - 90 Días!E12)",
+   "pistas": [
+    "P01",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0946",
+   "es": "Primer cierre trimestral",
+   "donde": [
+    "BBQC · F6 - 90 Días!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Review food cost and labor per event against the calculator every week",
+   "propuesta_de": "GCAT-check c0946 (CATC F6 - 90 Días!B13)",
+   "pistas": [
+    "P01",
+    "P89",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0947",
+   "es": "Gestor",
+   "donde": [
+    "BBQC · F6 - 90 Días!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner / Executive chef",
+   "propuesta_de": "GCAT-check c0947 (CATC F6 - 90 Días!C13)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0948",
+   "es": "Mes 3",
+   "donde": [
+    "BBQC · F6 - 90 Días!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weekly",
+   "propuesta_de": "GCAT-check c0948 (CATC F6 - 90 Días!D13)",
+   "pistas": [
+    "P01",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0949",
+   "es": "Comparar P&L real vs plan financiero",
+   "donde": [
+    "BBQC · F6 - 90 Días!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Compare actual food, staff hours and rentals with what the calculator projected. Small gaps add up quickly across a season.",
+   "propuesta_de": "GCAT-check c0949 (CATC F6 - 90 Días!E13)",
+   "pistas": [
+    "P01",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0950",
+   "es": "Plan de expansión (segundo truck o local fijo)",
+   "donde": [
+    "BBQC · F6 - 90 Días!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Do your 90-day review: price per guest, guest minimums and packages",
+   "propuesta_de": "GCAT-check c0950 (CATC F6 - 90 Días!B14)",
+   "pistas": [
+    "P01",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0951",
+   "es": "Titular",
+   "donde": [
+    "BBQC · F6 - 90 Días!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GCAT-check c0951 (CATC F6 - 90 Días!C14)",
+   "pistas": [
+    "P01",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0952",
+   "es": "Mes 3",
+   "donde": [
+    "BBQC · F6 - 90 Días!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Day 90",
+   "propuesta_de": "GCAT-check c0952 (CATC F6 - 90 Días!D14)",
+   "pistas": [
+    "P01",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0953",
+   "es": "Si funciona, evaluar un segundo vehículo o un local fijo",
+   "donde": [
+    "BBQC · F6 - 90 Días!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Look at which events earned the most, which took too long and which packages sold. Adjust prices, minimums and offers.",
+   "propuesta_de": "GCAT-check c0953 (CATC F6 - 90 Días!E14)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0958",
+   "es": "El contador de cada pestaña cuenta sólo las ✓; las N/A salen del total.",
+   "donde": [
+    "BBQC · Instrucciones!A6"
+   ],
+   "propuesta_en": "Each tab's counter counts only the ✓; N/A items come out of the total.",
+   "propuesta_de": "GR c0958 (CATC Instrucciones!A6)"
+  }
+ ]
+}

@@ -364,6 +364,24 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-24): gemelo de plan-negocio-parrillero-asador-eventos (ver verify-purchase.ts).
+  'bbq-catering-business-plan': {
+    accessPath: '/en/digital-products/bbq-catering-business-plan/access',
+    emailSubject: 'Your access to BBQ Catering Business Plan Kit',
+    emailTitle: 'Access your BBQ Catering Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a smoke schedule and a shopping list by guest count and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-24): gemelo de plan-negocio-paellero-eventos (ver verify-purchase.ts).
+  'paella-catering-business-plan': {
+    accessPath: '/en/digital-products/paella-catering-business-plan/access',
+    emailSubject: 'Your access to Paella Catering Business Plan Kit',
+    emailTitle: 'Access your Paella Catering Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a paella yield and pan sizing table and a shopping list by guest count and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu (ver verify-purchase.ts).
   'food-cost-menu-engineering-guide': {
     accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',
@@ -442,6 +460,33 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailSubject: 'Your access to Ghost Kitchen Checklists Kit Pro',
     emailTitle: 'Access your Ghost Kitchen Checklists Kit Pro',
     emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-24): gemelo de kit-tareas-heladeria (ver verify-purchase.ts).
+  'ice-cream-shop-checklist-templates': {
+    accessPath: '/en/digital-products/ice-cream-shop-checklist-templates/access',
+    emailSubject: 'Your access to Ice Cream Shop Checklists Kit Pro',
+    emailTitle: 'Access your Ice Cream Shop Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-24): gemelo de kit-tareas-chocolateria (ver verify-purchase.ts).
+  'chocolate-shop-checklist-templates': {
+    accessPath: '/en/digital-products/chocolate-shop-checklist-templates/access',
+    emailSubject: 'Your access to Chocolate Shop Checklists Kit Pro',
+    emailTitle: 'Access your Chocolate Shop Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-24): gemelo de kit-tareas-pasteleria (ver verify-purchase.ts).
+  'pastry-shop-checklist-templates': {
+    accessPath: '/en/digital-products/pastry-shop-checklist-templates/access',
+    emailSubject: 'Your access to Pastry Shop Checklists Kit Pro',
+    emailTitle: 'Access your Pastry Shop Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 13 Excel templates, the 2 bonus templates and the Equivalents Guide:',
     emailCta: 'Access my templates',
     lang: 'en',
   },

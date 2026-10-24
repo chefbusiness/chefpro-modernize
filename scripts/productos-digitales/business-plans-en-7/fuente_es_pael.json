@@ -1,0 +1,4128 @@
+{
+ "meta": {
+  "generado": "2026-10-24T14:14:24+00:00",
+  "script": "scripts/productos-digitales/business-plans-en-7/fuente_pael.py",
+  "uso": "CONTENIDO de paella catering para los redactores (D119, D125, D126). NO se traduce tal cual: se condensa y se adapta a EE. UU. con research (F1-research-us-delta.md §1, §5, §6, §8 y el glosario §9). Las CIFRAS del ES NO se usan (D128: 157.920, 105 eventos/año, 94 invitados, 16 €/invitado, 22,4 %…): las del caso salen del libro EN (tokens). Fuera: tareas marcadas SOLO_ES y lo español de las PARCIALES, «España», «ChefBusiness», normativa española (RD, Reglamento (CE), ITC-ICG, ADR, AESAN, APPCC, CCAA), proveedores y marcas españolas (Garcima, Vaello, GGM, Arcos), importes en €, «autónomo», «fijo discontinuo» y «freelance» (en US: part-time hourly W-2 staff), fiestas populares y contrato menor, el anexo CCAA y la deuda del ES («Paella valenciana DO»: la DO ampara el arroz, no el plato). Medidas US: pulgadas para las paelleras con cm entre paréntesis, oz de arroz crudo, galones y cuartos de caldo, °F con el mínimo del Food Code nombrado como tal; azafrán en gramos",
+  "fuentes": {
+   "scripts/productos-digitales/paellero-2_2/datos_checklist.py": "85db21e296d20e07042e664f02e67c42f2c9e64bfcce81bb658b07d694c407c0",
+   "scripts/productos-digitales/paellero-2_2/textos/pae_es_a.json": "12fa3b79645ba2e0879ab48fcd516a0bf10096281c5be40d30ac8c4db7682c78",
+   "scripts/productos-digitales/paellero-2_2/textos/pae_es_b.json": "6fa8cfbc4ac8fa3464da4fe010bd776345eb1e2b4f61faebe7af48745d5814f5",
+   "astro-site/public/dl/plan-negocio-paellero-eventos/manual-tecnico-paellero-profesional.docx": "2e4fddabc37c488fbc1138520c0bd539ee7b76fbf9f3db5846066017b14c39c3",
+   "astro-site/public/dl/plan-negocio-paellero-eventos/carta-12-paellas-arroces.docx": "81f5f683b388b4b0324cc3d0348a55640eddc9ec6e85cd45261095a378398660",
+   "astro-site/public/dl/plan-negocio-paellero-eventos/10-experiencias-tematicas-paellero.docx": "c6bc77e49f1d706d0ade8c184bfa2fc6eeb43603c55ba70e584f35122edf80b8",
+   "astro-site/public/dl/plan-negocio-paellero-eventos/modelos-contrato-paellero-eventos.docx": "380e27617ef2d965e3f97c04fd2e6d9f93e344f904e92aeddcc3493adf52ecc0",
+   "astro-site/public/dl/plan-negocio-paellero-eventos/catalogo-equipamiento-utensilios-menaje-paellero.docx": "26cf9a90e2df5254b635ad7815563303b33e68a749f34be4212c1b7e5b637f50"
+  }
+ },
+ "checklist_es": {
+  "titulo": "CHECKLIST DE APERTURA — PAELLERO / PAELLA PARA EVENTOS",
+  "fases": {
+   "F1 - Constitución": {
+    "titulo": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (semanas 1-4)",
+    "fase_en_sugerida": "P1 Business Setup (1-2 → LLC; 6 banco; 7 y 9 → contador y estimated taxes; 12 → términos de la web) · P1 contrato (F6·4) y plan HACCP (F2·4)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Elegir forma jurídica: SL unipersonal o autónomo",
+      "responsable": "Gestoría",
+      "plazo": "Semana 1",
+      "nota": "El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF: compara las dos opciones con tu gestoría con las cifras del plan"
+     },
+     {
+      "n": 2,
+      "tarea": "Constituir la SL o darte de alta como autónomo",
+      "responsable": "Notaría / Gestoría",
+      "plazo": "Semanas 1-2",
+      "nota": "La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)"
+     },
+     {
+      "n": 3,
+      "tarea": "Alta censal (modelo 036/037) en el epígrafe 677.9 del IAE",
+      "responsable": "Gestoría",
+      "plazo": "Semana 2",
+      "nota": "La nota del epígrafe 677.9 («otros servicios de alimentación propios de la restauración», RDLeg 1175/1990) incluye el servicio de comidas para eventos. Exento de cuota con una cifra de negocio inferior a 1 millón de euros",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 4,
+      "tarea": "Alta en la Seguridad Social (administrador o autónomo)",
+      "responsable": "Gestoría",
+      "plazo": "Semana 2",
+      "nota": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 5,
+      "tarea": "Certificado digital",
+      "responsable": "Titular",
+      "plazo": "Semana 1",
+      "nota": "Imprescindible para Hacienda, la Seguridad Social, la declaración responsable sanitaria y FACe",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 6,
+      "tarea": "Cuenta bancaria y tarjeta del negocio",
+      "responsable": "Titular",
+      "plazo": "Semana 2",
+      "nota": "Separadas de las personales: por ellas pasan los anticipos, las facturas de empresas y ayuntamientos y los proveedores"
+     },
+     {
+      "n": 7,
+      "tarea": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+      "responsable": "Titular",
+      "plazo": "Semanas 2-4",
+      "nota": "Nóminas de los fijos discontinuos cada mes con llamamientos. El software de facturación tiene que cumplir el RD 1007/2023 (Veri*factu): confirma la fecha que te aplica antes de contratarlo",
+      "marca": "PARCIAL: fuera lo español (gestoría y Veri*factu → contador)"
+     },
+     {
+      "n": 8,
+      "tarea": "IVA trimestral (modelo 303) al 10 %",
+      "responsable": "Gestoría",
+      "plazo": "Cada trimestre",
+      "nota": "Servicio de paella en el evento al 10 %, alcohol incluido (art. 91.Uno.2.2.º de la Ley 37/1992). Carpas o mobiliario facturados aparte, al 21 %",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 9,
+      "tarea": "Pagos fraccionados y retenciones (modelos 202 o 130, y 111)",
+      "responsable": "Gestoría",
+      "plazo": "Cada trimestre",
+      "nota": "SL: modelo 202; autónomo: modelo 130. Las retenciones de las nóminas van en el 111",
+      "marca": "PARCIAL: fuera lo español (modelos 202 / 130 / 111 → estimated taxes)"
+     },
+     {
+      "n": 10,
+      "tarea": "Declaraciones anuales: 390 y 347",
+      "responsable": "Gestoría",
+      "plazo": "Enero-febrero",
+      "nota": "390: resumen anual del IVA. 347: clientes o proveedores con más de 3.005,06 € en el año (ayuntamientos y fincas habituales suelen pasarlo)",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 11,
+      "tarea": "RGPD: registro de actividades de tratamiento y cláusulas en presupuestos y contratos",
+      "responsable": "Titular",
+      "plazo": "Antes del primer presupuesto",
+      "nota": "Art. 30 del RGPD y LOPDGDD. Tratas datos de clientes, de invitados (las alergias son datos de salud) y del personal",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 12,
+      "tarea": "Web: aviso legal, privacidad, cookies (LSSI) y condiciones de contratación",
+      "responsable": "Titular",
+      "plazo": "Antes de publicar la web",
+      "nota": "Precio final con IVA para particulares. En un servicio de comida con fecha no hay derecho de desistimiento de 14 días (art. 103.l del TRLGDCU): tu política de anticipo (30 %) y cancelación tiene que estar escrita y firmada, como en los contratos del kit",
+      "marca": "PARCIAL: fuera lo español (LSSI → términos de la web)"
+     }
+    ]
+   },
+   "F2 - Sanidad, fuego y gas": {
+    "titulo": "FASE 2: COCINA DE APOYO, SANIDAD, FUEGO, GAS Y PERMISOS (semanas 3-8)",
+    "fase_en_sugerida": "P2 Propane & Permits (1 commissary; 2 → county catering / health permit + limited food preparation; 4 → plan HACCP con arroz TCS; 7-9 → GL sin exclusión de llama abierta, commercial auto, inland marine; 10-13 → propano, cilindros en la van, extintores; 14 → burn ban y leña; 15 → fire marshal y venue; 16 → residuos y aceite)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Contrato de uso de una cocina de apoyo compartida y autorizada",
+      "responsable": "Titular",
+      "plazo": "Semanas 3-6",
+      "nota": "La paella se cocina en el evento, pero los caldos, sofritos y la preparación del marisco no se pueden hacer en casa: lo prohíbe el art. 13.5.b del RD 1021/2022. Pide en el contrato horas, cámara, almacén de paelleras y quemadores, DDD y residuos"
+     },
+     {
+      "n": 2,
+      "tarea": "Declaración responsable e inscripción en el registro sanitario autonómico",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Un servicio que vende al consumidor final se inscribe en el registro de su comunidad autónoma previa declaración responsable (RD 1021/2022, que reescribe el art. 2 del RD 191/2011)"
+     },
+     {
+      "n": 3,
+      "tarea": "RGSEAA: sólo si suministras a otros establecimientos",
+      "responsable": "Titular",
+      "plazo": "Solo si aplica",
+      "nota": "El Registro General Sanitario (RGSEAA) sólo hace falta si suministras a otros establecimientos (paellas o caldos para restaurantes) de forma no marginal; para servir al cliente final, no (art. 2 del RD 191/2011)",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 4,
+      "tarea": "Plan APPCC itinerante: prerrequisitos y puntos de control",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Puntos críticos: frío del marisco y la carne en el transporte, cocción y servicio a 63 °C o más (art. 30 del RD 1086/2020) y alioli con huevo pasteurizado o sin huevo. Nunca arroz tibio a temperatura ambiente. Guarda una comida testigo de cada arroz (100 g, identificada y fechada, a 4 °C o menos o congelada, 7 días): obligatoria en todos tus eventos, porque son tu actividad principal (art. 30.8.d del RD 1086/2020), y en cualquier encargo de más de 40 personas (30.8.e); conservación según el 30.10"
+     },
+     {
+      "n": 5,
+      "tarea": "Fichas de alérgenos de cada arroz y de las salsas",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Reglamento (UE) 1169/2011 y RD 126/2015: crustáceos, moluscos, pescado, apio de los caldos, sulfitos, huevo del alioli, gluten de la fideuá. La tabla del manual técnico es tu punto de partida"
+     },
+     {
+      "n": 6,
+      "tarea": "Agua: análisis sólo si llevas depósito propio",
+      "responsable": "Titular",
+      "plazo": "Solo si aplica",
+      "nota": "Si usas el agua de red del recinto no hace falta. Con depósito propio, agua apta para consumo y registro de su limpieza en el APPCC"
+     },
+     {
+      "n": 7,
+      "tarea": "Seguro de responsabilidad civil con incendio, explosión e intoxicación alimentaria",
+      "responsable": "Aseguradora",
+      "plazo": "Antes del primer evento",
+      "nota": "Recomendado: al menos 600.000 €, con daños al recinto (césped, pavimento) y RC de producto. Es lo que suelen pedir fincas, empresas y ayuntamientos: adjunta el certificado a los presupuestos"
+     },
+     {
+      "n": 8,
+      "tarea": "Seguro de la furgoneta para uso comercial",
+      "responsable": "Aseguradora",
+      "plazo": "Al comprarla",
+      "nota": "Declara el uso profesional y la carga de botellas de gas"
+     },
+     {
+      "n": 9,
+      "tarea": "Seguro de equipos y cláusula de fuerza mayor en los contratos",
+      "responsable": "Titular / Aseguradora",
+      "plazo": "Antes del primer evento",
+      "nota": "La cancelación por una prohibición de fuego no se asegura: va en la cláusula de fuerza mayor del contrato, con un plan B pactado (cocina del recinto o equipos sin llama)"
+     },
+     {
+      "n": 10,
+      "tarea": "Gas: una botella de menos de 15 kg por quemador, con regulador y tubo flexible en fecha",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Una botella de menos de 15 kg conectada a un solo aparato móvil no es una instalación y la conectas tú (RD 919/2006, art. 2.1.h; ITC-ICG 08 §5.2). Aparatos con marcado CE (Reglamento (UE) 2016/426); revisa la fecha del tubo y prueba fugas con agua jabonosa",
+      "marca": "PARCIAL: fuera lo español (regla de los 15 kg → fire code local)"
+     },
+     {
+      "n": 11,
+      "tarea": "Botellas de 35 kg o varias conectadas: montaje por una empresa instaladora de gas",
+      "responsable": "Instaladora",
+      "plazo": "Solo si aplica",
+      "nota": "Una instalación de envases de más de 15 kg o en batería la ejecuta una empresa instaladora (ITC-ICG 06 §2.2). Confirma con Industria de tu comunidad cómo lo aplica a un montaje de un día",
+      "marca": "PARCIAL: fuera lo español (empresa instaladora (ITC-ICG) → fire marshal)"
+     },
+     {
+      "n": 12,
+      "tarea": "Transporte de las botellas en la furgoneta",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Hasta 333 kg de gas por vehículo se viaja en el régimen de exención del ADR (1.1.3.6): botellas en pie y sujetas, ventilación, válvulas cerradas y un extintor de 2 kg en el vehículo (fuente secundaria: confírmalo con tu aseguradora)"
+     },
+     {
+      "n": 13,
+      "tarea": "Extintores, manta ignífuga y cubo de arena en cada evento",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Un extintor de polvo ABC de 6 kg por zona de fuego, revisado por una empresa mantenedora (RD 513/2017). Es lo que suelen exigir ayuntamientos y fincas"
+     },
+     {
+      "n": 14,
+      "tarea": "Fuego y leña: época de peligro y franja forestal de cada comunidad",
+      "responsable": "Titular",
+      "plazo": "Por evento",
+      "nota": "Cada comunidad regula el fuego en montes y zonas colindantes (Ley 43/2003, art. 44.3): franja de 400-500 m y época de peligro en verano. En alerta máxima caen las autorizaciones y algunas prohíben también el gas. Consulta el anexo autonómico del plan de negocio",
+      "marca": "PARCIAL: fuera lo español (época de peligro por CCAA → burn ban)"
+     },
+     {
+      "n": 15,
+      "tarea": "Autorización municipal o del recinto para cocinar al aire libre",
+      "responsable": "Titular",
+      "plazo": "30-60 días antes",
+      "nota": "Vía pública: autorización del ayuntamiento (ordenanza o bando). Finca privada: permiso del propietario; si está en terreno forestal o en su franja, manda la norma autonómica. Vender raciones al público por tu cuenta es venta no sedentaria con autorización municipal (Ley 7/1996, arts. 53-54)"
+     },
+     {
+      "n": 16,
+      "tarea": "Hojas de reclamaciones, residuos y aceite usado",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Hojas de reclamaciones según la norma de tu comunidad. Aceite usado a un gestor autorizado, salvo que lo recoja la cocina de apoyo",
+      "marca": "PARCIAL: fuera lo español (hojas de reclamaciones → fuera)"
+     }
+    ]
+   },
+   "F3 - Equipo y proveedores": {
+    "titulo": "FASE 3: EQUIPAMIENTO Y PROVEEDORES (semanas 4-8)",
+    "fase_en_sugerida": "P3 Equipment (1-4 → paelleras, quemadores, leña con permiso, cilindros; 5-10 → utensilios, coolers y sondas, kit de la estación, EPI; 11-13 → arroz bomba, marisco con trazabilidad y shellstock tags, azafrán y despensa; 14 → van y software)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Paelleras por diámetro según la tabla de escalado del manual",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "De 60 a 120 cm para bodas, empresas y fiestas privadas y una de 150 cm para fiestas populares. Raciones por paellera: tabla 1 del manual técnico; el catálogo trae los modelos"
+     },
+     {
+      "n": 2,
+      "tarea": "Quemadores de anillos con sus patas",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Un quemador por paellera que vayas a cocinar a la vez, del tamaño que pide la tabla del manual"
+     },
+     {
+      "n": 3,
+      "tarea": "Trípodes y leña, sólo donde el fuego esté permitido",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Leña seca de naranjo, olivo o sarmiento; cubo de arena y extintor al lado"
+     },
+     {
+      "n": 4,
+      "tarea": "Botellas de gas y reserva",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Propano en exterior (el butano vaporiza mal con frío). Una botella de reserva por evento"
+     },
+     {
+      "n": 5,
+      "tarea": "Cuchillería, tablas de colores, paletas y cucharas",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Tablas de colores para separar carne, pescado y verdura (APPCC)"
+     },
+     {
+      "n": 6,
+      "tarea": "Vajilla, cubertería y cuencos de alioli para tu dotación",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Para los invitados de un evento medio; en bodas grandes y fiestas populares, menaje de alquiler o desechable"
+     },
+     {
+      "n": 7,
+      "tarea": "Neveras, isotermos, acumuladores y sondas",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Cadena de frío del marisco y la carne hasta el evento y sondas para el registro del APPCC"
+     },
+     {
+      "n": 8,
+      "tarea": "Básculas de cocina y de precisión",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Para escandallar cada arroz con la calculadora del kit: 100 g de arroz por ración de evento"
+     },
+     {
+      "n": 9,
+      "tarea": "Cajas de transporte, carpa, mesa de show cooking y protector de suelo",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Zona de cocción bajo carpa y protección del césped o del pavimento del recinto"
+     },
+     {
+      "n": 10,
+      "tarea": "EPI de calor y uniformes",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Delantal de cuero o algodón grueso y guantes térmicos"
+     },
+     {
+      "n": 11,
+      "tarea": "Arroz con denominación de origen a precio trimestral",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Bomba o variedades de la DO Arroz de Valencia o de Calasparra; pacta precio por trimestre"
+     },
+     {
+      "n": 12,
+      "tarea": "Carne, marisco y verdura con trazabilidad",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Mayorista de carne, pescadero con lote y fecha, y verdura de temporada (garrofó y ferraura) de cooperativa"
+     },
+     {
+      "n": 13,
+      "tarea": "Caldos, azafrán y pimentón",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Caldos propios en la cocina de apoyo o comprados con su ficha de alérgenos; azafrán y pimentón con DO"
+     },
+     {
+      "n": 14,
+      "tarea": "Furgoneta, TPV y software de presupuestos",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Furgoneta isoterma con ATP y anclajes de botellas; datáfono y software de facturación Veri*factu"
+     }
+    ]
+   },
+   "F4 - Personal": {
+    "titulo": "FASE 4: PERSONAL (semanas 6-10)",
+    "fase_en_sugerida": "P4 Staff (1 → W-2; 3-5 → food handler cards, alérgenos, OSHA quemaduras / propano / cargas; 8 → segundo paella chef; 9 → guion del show (socarrat reveal); 10 → fichas por tamaño de paellera)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Ayudantes como fijos discontinuos o a través de una ETT",
+      "responsable": "Gestoría",
+      "plazo": "Antes del primer evento",
+      "nota": "Contrato fijo discontinuo (art. 16 del Estatuto de los Trabajadores) con llamamiento por evento. Nunca con facturas de autónomo: con tu horario y tu dirección es falso autónomo (art. 1.1 ET)"
+     },
+     {
+      "n": 2,
+      "tarea": "Alta en la Seguridad Social antes de cada llamamiento",
+      "responsable": "Gestoría",
+      "plazo": "Antes de cada evento",
+      "nota": "El alta va antes de empezar a trabajar, también para un solo día",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 3,
+      "tarea": "Formación en higiene alimentaria acreditada por la empresa",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "El antiguo título de manipulador de alimentos ya no se exige: la empresa forma y acredita a su personal (Reglamento (CE) 852/2004, anexo II, cap. XII). Con un módulo de alérgenos y de marisco"
+     },
+     {
+      "n": 4,
+      "tarea": "Formación en alérgenos y en el plan APPCC",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Cada persona que sirve tiene que saber qué lleva cada arroz y cómo evitar el contacto cruzado con paletas y paelleras compartidas"
+     },
+     {
+      "n": 5,
+      "tarea": "Prevención de riesgos laborales: quemaduras, gas, calor y cargas",
+      "responsable": "Servicio de prevención",
+      "plazo": "Antes del primer evento",
+      "nota": "Evaluación de riesgos y plan de prevención (Ley 31/1995), EPI de calor y pausas en los eventos de verano"
+     },
+     {
+      "n": 6,
+      "tarea": "Registro de jornada",
+      "responsable": "Titular",
+      "plazo": "Desde el primer día",
+      "nota": "Obligatorio para todo el personal, también los fijos discontinuos (art. 34.9 ET)"
+     },
+     {
+      "n": 7,
+      "tarea": "Información de protección de datos al trabajador",
+      "responsable": "Gestoría",
+      "plazo": "Al contratar",
+      "nota": "Cláusula informativa en el contrato y en el registro de jornada",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 8,
+      "tarea": "Segundo paellero para los eventos grandes",
+      "responsable": "Titular",
+      "plazo": "Antes de la temporada",
+      "nota": "El manual técnico pone el techo de un paellero en tres paelleras y pide un segundo paellero a partir de unos 150 invitados: tenlo localizado en tu bolsa de fijos discontinuos"
+     },
+     {
+      "n": 9,
+      "tarea": "Guion del show cooking",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Qué cuentas del sofrito, del caldo y del socarrat mientras cocinas: lo que convierte la paella en una experiencia y justifica el suplemento"
+     },
+     {
+      "n": 10,
+      "tarea": "Fichas de trabajo por diámetro de paellera",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Arroz, caldo, tiempos y quemador de cada paellera, sacados de las tablas del manual técnico"
+     }
+    ]
+   },
+   "F5 - Marca y captación": {
+    "titulo": "FASE 5: MARCA Y CAPTACIÓN (meses 1-3)",
+    "fase_en_sugerida": "P5 Marketing (1-7; 8 WhatsApp → texto / SMS; 9 → The Knot / WeddingWire / Zola; 10 → ezCater; 11-13 → planners, empresas, venues; 15-16 → dossiers, referidos, tasting de lanzamiento)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Nombre, logo e identidad visual",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Comprueba que el nombre está libre en la OEPM y como dominio"
+     },
+     {
+      "n": 2,
+      "tarea": "Dominio y correos profesionales",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Presupuestos, reservas y empresas"
+     },
+     {
+      "n": 3,
+      "tarea": "Web con formulario de presupuesto y SEO técnico",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Galería, tipos de evento, zona de servicio y formulario; datos estructurados y Search Console. «Paellas a domicilio» suma unas 1.900 búsquedas al mes en España"
+     },
+     {
+      "n": 4,
+      "tarea": "Fotos y vídeo profesionales del show cooking",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Es lo que miran los novios y los planners antes de pedir presupuesto"
+     },
+     {
+      "n": 5,
+      "tarea": "Perfil de empresa en Google y primeras reseñas",
+      "responsable": "Titular",
+      "plazo": "Mes 1-3",
+      "nota": "Categorías de servicio de comidas para eventos y la zona que cubres; pide la reseña después de cada evento"
+     },
+     {
+      "n": 6,
+      "tarea": "Instagram, TikTok y Pinterest con cocciones reales",
+      "responsable": "Titular",
+      "plazo": "Mes 1+",
+      "nota": "El socarrat y la paella de 150 cm funcionan solos en vídeo"
+     },
+     {
+      "n": 7,
+      "tarea": "LinkedIn para empresas y agencias",
+      "responsable": "Titular",
+      "plazo": "Mes 2",
+      "nota": "Comidas de empresa, team building y Navidad"
+     },
+     {
+      "n": 8,
+      "tarea": "WhatsApp Business con plantillas",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Bienvenida, presupuesto, confirmación y recordatorio de alérgenos"
+     },
+     {
+      "n": 9,
+      "tarea": "Alta en directorios de bodas",
+      "responsable": "Titular",
+      "plazo": "Mes 2",
+      "nota": "Bodas.net y Zankyou, con fotos y precios orientativos"
+     },
+     {
+      "n": 10,
+      "tarea": "Alta en directorios de eventos para empresas y en Hosply",
+      "responsable": "Titular",
+      "plazo": "Mes 2",
+      "nota": "Visibilidad ante agencias, planners y empresas",
+      "marca": "PARCIAL: fuera lo español (Hosply → ezCater)"
+     },
+     {
+      "n": 11,
+      "tarea": "Wedding planners: lista y primer contacto",
+      "responsable": "Titular",
+      "plazo": "Mes 1-3",
+      "nota": "Lista de los planners de tu zona y un correo personal a cada uno (sección 5 del plan de negocio)"
+     },
+     {
+      "n": 12,
+      "tarea": "Degustación para planners y fincas",
+      "responsable": "Titular",
+      "plazo": "Mes 2-4",
+      "nota": "Una paella en directo para los que más bodas mueven: es tu mejor dossier"
+     },
+     {
+      "n": 13,
+      "tarea": "Agencias, empresas y hoteles de la zona",
+      "responsable": "Titular",
+      "plazo": "Mes 2-4",
+      "nota": "Comidas de verano, Navidad y show cooking en terrazas y hoteles"
+     },
+     {
+      "n": 14,
+      "tarea": "Ayuntamientos y comisiones de fiestas: contrato menor y factura por FACe",
+      "responsable": "Titular",
+      "plazo": "Mes 2-6",
+      "nota": "Un ayuntamiento compra por contrato menor (servicios de menos de 15.000 €, Ley 9/2017 art. 118) y paga a 30 días desde la conformidad (art. 198.4), sin anticipo. Si eres SL, la factura va en electrónico a su punto general de entrada (FACe en la mayoría; Ley 25/2013, art. 4), salvo que exima las de hasta 5.000 €. Alta en la Plataforma de Contratación para ver las licitaciones",
+      "marca": "SOLO_ES (fuera)"
+     },
+     {
+      "n": 15,
+      "tarea": "Dossiers para bodas, empresas y ayuntamientos",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Con las 10 experiencias y la carta de 12 arroces del kit, y los precios por ración de cada tipo de evento"
+     },
+     {
+      "n": 16,
+      "tarea": "Publicidad, referidos y jornada de puertas abiertas",
+      "responsable": "Titular",
+      "plazo": "Mes 2+",
+      "nota": "Google Ads local en temporada, un detalle por recomendación y una paella abierta al año para planners"
+     }
+    ]
+   },
+   "F6 - Primer evento": {
+    "titulo": "FASE 6: PRIMER EVENTO Y 90 DÍAS",
+    "fase_en_sugerida": "P6 First 90 Days (1-6 briefing, visita, depósito, contrato, alérgenos, plan B de viento y lluvia; 7-8 → pedidos y la víspera en la commissary; 9-12 → carga, llegada 2-3 h antes, cocción y servicio, recogida; 13-15 → cobro, reseña, costes reales frente a la calculadora)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Briefing del cliente",
+      "responsable": "Titular",
+      "plazo": "30 días antes",
+      "nota": "Invitados, arroces, alergias, horario, lugar, agua, luz y acceso para la furgoneta"
+     },
+     {
+      "n": 2,
+      "tarea": "Visita técnica del lugar",
+      "responsable": "Titular",
+      "plazo": "21 días antes",
+      "nota": "Si son más de 80 invitados o es un lugar nuevo: punto de fuego, viento, sombra, suelo, agua y si está en terreno forestal o en su franja"
+     },
+     {
+      "n": 3,
+      "tarea": "Presupuesto firmado y anticipo del 30 %",
+      "responsable": "Titular",
+      "plazo": "Al reservar la fecha",
+      "nota": "Sin anticipo no se bloquea la fecha. Particulares: el 70 % restante el día del evento; empresas: a 30 días de la factura. En efectivo, sólo pagos por debajo de 1.000 € (Ley 7/2012, art. 7). Los ayuntamientos no adelantan: pagan a 30 días desde la conformidad"
+     },
+     {
+      "n": 4,
+      "tarea": "Contrato firmado con cancelación, fuerza mayor y plan B",
+      "responsable": "Titular",
+      "plazo": "Al reservar la fecha",
+      "nota": "Modelos del kit: tramos de cancelación, sin desistimiento en un servicio con fecha (art. 103.l TRLGDCU) y plan B si una alerta de incendios prohíbe el fuego o el gas"
+     },
+     {
+      "n": 5,
+      "tarea": "Menú y alérgenos confirmados por escrito",
+      "responsable": "Titular",
+      "plazo": "7 días antes",
+      "nota": "Cuántas raciones de cada arroz y qué invitados tienen alergias o intolerancias"
+     },
+     {
+      "n": 6,
+      "tarea": "Plan B de lluvia, viento o prohibición de fuego",
+      "responsable": "Titular",
+      "plazo": "7 días antes",
+      "nota": "Carpa y cortavientos; cocina del recinto o equipos sin llama si la alerta lo exige"
+     },
+     {
+      "n": 7,
+      "tarea": "Pedidos de arroz, carne y verdura; marisco el día antes",
+      "responsable": "Titular",
+      "plazo": "5-7 días antes",
+      "nota": "Confirma la entrega 48-72 horas antes; el marisco fresco, el día anterior y en frío"
+     },
+     {
+      "n": 8,
+      "tarea": "Caldos y mise en place en la cocina de apoyo",
+      "responsable": "Titular / Ayudante",
+      "plazo": "Día anterior",
+      "nota": "Caldos, sofritos y marisco limpio en la cocina autorizada, nunca en casa (art. 13.5.b del RD 1021/2022)"
+     },
+     {
+      "n": 9,
+      "tarea": "Carga de la furgoneta con la lista del manual",
+      "responsable": "Ayudante",
+      "plazo": "Día del evento",
+      "nota": "Paelleras, quemadores, botellas en pie y sujetas, extintores, neveras y fichas de alérgenos"
+     },
+     {
+      "n": 10,
+      "tarea": "Salida con margen, montaje y encendido",
+      "responsable": "Titular",
+      "plazo": "Día del evento",
+      "nota": "Una hora de margen sobre el trayecto y 30-45 minutos para montar y encender"
+     },
+     {
+      "n": 11,
+      "tarea": "Cocción, show cooking y servicio",
+      "responsable": "Titular",
+      "plazo": "Día del evento",
+      "nota": "Registro de temperaturas en el APPCC y servicio a 63 °C o más; nada de arroz tibio a temperatura ambiente. Aparta la comida testigo de cada arroz (art. 30.8 del RD 1086/2020)"
+     },
+     {
+      "n": 12,
+      "tarea": "Recogida, limpieza y fotos del espacio",
+      "responsable": "Ayudante",
+      "plazo": "Final del evento",
+      "nota": "Fotos del espacio antes y después: te protegen ante una reclamación de daños"
+     },
+     {
+      "n": 13,
+      "tarea": "Cobro y factura",
+      "responsable": "Titular",
+      "plazo": "D+1 / D+2",
+      "nota": "Particulares: el 70 % el día del evento. Empresas: a 30 días de la factura. Ayuntamientos: factura electrónica en su punto general de entrada (FACe en la mayoría, salvo que exima las de hasta 5.000 €) y cobro a 30 días desde la conformidad"
+     },
+     {
+      "n": 14,
+      "tarea": "Reseña, fotos y agradecimiento al planner",
+      "responsable": "Titular",
+      "plazo": "D+2",
+      "nota": "Pide la reseña y el permiso para publicar las fotos; si vino por un planner, agradéceselo"
+     },
+     {
+      "n": 15,
+      "tarea": "CRM, costes reales frente al presupuesto y cierre trimestral",
+      "responsable": "Titular",
+      "plazo": "D+7 y cada trimestre",
+      "nota": "Compara el coste real de cada evento con la calculadora y ajusta precios"
+     }
+    ]
+   }
+  }
+ },
+ "docx_es_por_ranura": {
+  "39": "Un servicio de paellas para eventos vive de cuatro tipos de cliente que contratan en momentos distintos. Las bodas y las fiestas privadas se reservan con meses de antelación y se concentran de mayo a octubre. Las empresas piden comidas de equipo, team building y la cena de Navidad. Y los ayuntamientos y las comisiones de fiestas encargan paellas para cientos de personas. Este plan es para ti si quieres montar ese negocio sin restaurante, con una cocina de apoyo compartida y autorizada, una furgoneta isoterma y un equipo corto. Acompaña al kit un Excel de 9 hojas, un checklist de 83 tareas, una calculadora de precios, contratos, una carta de 12 arroces, 10 experiencias, un manual técnico, un catálogo, 88 proveedores, una guía de sistemas de cocción y el roadmap food truck.",
+  "40": "El concepto es la paella cocinada en directo delante de los invitados: el sofrito, el caldo y el socarrat como parte del espectáculo, en paelleras grandes sobre gas y, donde la normativa y el terreno lo permiten, sobre leña. Trabajas sin local propio. Caldos y preparación salen de una cocina de apoyo compartida y autorizada, que cuesta {CUOTA_COCINA_MES} al mes, y una furgoneta isoterma lleva producto, frío, paelleras y botellas a cada evento. Cocinar en casa para eventos está prohibido (RD 1021/2022, art. 13.5.b), así que esa cocina forma parte del modelo. La carta de 12 arroces y las 10 experiencias del kit te permiten vender algo más que una paella mixta, y los alérgenos se resuelven por escrito en cada presupuesto.",
+  "41": "La inversión total es de {INVERSION_TOTAL}: {CAPEX} de puesta en marcha y equipamiento más {FONDO_MANIOBRA} de fondo de maniobra. Las partidas más pesadas son la furgoneta isoterma ({FURGONETA}), las paelleras ({PAELLERAS}), los quemadores con sus patas y trípodes ({QUEMADORES}) y el lanzamiento comercial. No montas ni alquilas un restaurante, y eso mantiene la inversión muy por debajo de la de un local con cocina propia. La necesidad de caja de la apertura es de {NECESIDAD_CAJA}, con el IVA de la inversión ({IVA_INVERSION}) incluido, que después recuperas en el modelo 303. La cubres con {RECURSOS_PROPIOS} de recursos propios y un préstamo de {PRESTAMO} al {TIPO_PRESTAMO} a {PLAZO_PRESTAMO} años, {CARENCIA} de ellos de carencia.",
+  "42": "En el primer año planificamos {EVENTOS_ANO} eventos con {INVITADOS_EVENTO} raciones de media, a {PRECIO_INVITADO} por ración sin IVA. Esa media sale de la mezcla de bodas, empresas, fiestas privadas y fiestas populares, y baja por estas últimas: no es el precio de una boda. Suman {VENTAS_A1} de ventas, que crecen hasta {VENTAS_A2} y {VENTAS_A3} porque cada evento sirve más raciones, con los mismos eventos. El neto del primer año es de {NETO_A1}, la cobertura mínima de la deuda es de {DSCR_MIN} y el equilibrio contable llega con {BE_EVENTOS_ANO} eventos al año.",
+  "43": "El equipo promotor es corto. Tú eres el paellero titular, a jornada completa: cocinas en el evento y también vendes y compras. Te acompañan un ayudante de cocina, que hace de segundo paellero, y dos auxiliares de evento para el montaje, el caldo y el emplatado. Los tres son fijos discontinuos (art. 16 del Estatuto de los Trabajadores) y se llaman cuando hay evento. En total son {PLANTILLA_PERSONAS} personas. Sustituye este párrafo por tu propia trayectoria: un banco quiere ver quién ha dirigido una cocina de arroces y quién ha sabido vender eventos. El plan demuestra que se puede empezar sin restaurante con riesgo controlado, si cada evento se presupuesta con su anticipo.",
+  "46": "Tus clientes no compran solo paella: compran un evento que sale bien. Las parejas y las familias quieren un único interlocutor que resuelva el menú, los horarios y el montaje, y que el arroz esté en su punto cuando se sienta la gente. Las empresas, las agencias y los wedding planners necesitan un proveedor puntual, con contrato, seguro y factura, para una comida de equipo, un team building o una cena de Navidad. Los ayuntamientos y las comisiones de fiestas compran volumen, cientos de raciones a un precio ajustado, y exigen papeles en regla. Cambia el ciclo de venta: una pareja contrata una vez y con meses de antelación, mientras que las empresas y las comisiones repiten.",
+  "47": "La propuesta de valor descansa en tres pilares. El primero es el ritual de la paella hecho delante del invitado: el sofrito, el momento del caldo y el socarrat final, explicados por quien cocina. Ese rato se cobra como experiencia, no solo como comida. El segundo es la carta de 12 arroces y las 10 experiencias del kit, con arroz y producto de denominación de origen, de modo que no ofreces solo la paella mixta de siempre. El tercero es la fiabilidad: alérgenos resueltos por escrito, puntualidad, montaje limpio y una degustación previa para los eventos grandes. Cada pilar te da un motivo para cobrar la experiencia y no entrar en la guerra del precio por ración.",
+  "48": "Presupuestas por ración, sin IVA: la media es de {PRECIO_INVITADO}, o {PRECIO_INVITADO_IVA} con IVA. Sale de una mezcla: 15 bodas y cenas en finca de 120 invitados a 28 €, 30 comidas de empresa de 70 a 24 €, 50 fiestas privadas de 40 a 18 € y 10 fiestas populares de 400 raciones a 5 €. Suman los {EVENTOS_ANO} eventos del Excel; la mezcla da 15,84 € y 94,3 raciones, y el Excel redondea a {PRECIO_INVITADO} y {INVITADOS_EVENTO} raciones (un 0,7 % más de ventas), con un ticket de {TICKET_EVENTO} por evento. Las fiestas populares tiran la media hacia abajo, así que no la uses como precio de boda. El anticipo del 30 % bloquea la fecha.",
+  "49": "Compites con cuatro alternativas. Los paelleros tradicionales sin marca son baratos y conocidos en su zona, pero suelen faltar en la gestión: presupuesto claro, contrato, seguro y factura. Los caterings generalistas ponen la paella como un plato más y rara vez cocinan en directo. Los restaurantes de arroces que hacen eventos tienen buen producto, aunque su cocina atiende primero la sala. Y los proveedores de paella gigante por volumen ganan en el precio por ración de las fiestas populares. Te colocas en el hueco: show cooking con narrativa, producto con denominación de origen y una persona responsable del evento. No compites por la paella más barata, sino por la mejor experiencia.",
+  "50": "Cada evento sigue seis fases para que nada dependa de la memoria. Primero, el briefing con el cliente y el presupuesto. Segundo, el contrato con el anticipo del 30 %. Tercero, la compra y los caldos en la cocina de apoyo autorizada, con el autocontrol APPCC. Cuarto, la carga de la furgoneta isoterma con paelleras, quemadores, botellas y extintor. Quinto, el montaje, el encendido y el servicio en directo en el espacio del cliente. Sexto, la recogida, la liquidación y la petición de reseña. La calculadora del kit construye el presupuesto con tus propios costes.",
+  "53": "La demanda de paellas para eventos viene del cliente, y las búsquedas lo muestran. Según DataForSEO (octubre de 2026), cada mes se busca «paellas a domicilio» unas 1.900 veces, «paellas gigantes» 390, «catering paellas» 170 y «paella para eventos» 110. Quien escribe eso quiere contratar, no montar un negocio: las búsquedas de emprendedores, como «cómo montar un negocio de paellas», casi no tienen volumen. Eso te interesa, porque indica que el cliente busca proveedor cerca de su evento y que una web clara, con un buen perfil en Google, puede captarlo. La paella para recoger, sin servicio, entra en el plan como canal, con un 5 % de las ventas.",
+  "54": "Los particulares son los compradores más emocionales: bodas, prebodas, comuniones, bautizos y cumpleaños. Quieren una experiencia que sus invitados recuerden y comparan fotos, reseñas y precio por persona antes de pedir presupuesto. Como referencia, una paella sola para grupos se publica a 11-14 € por persona, con una variedad y desplazamiento aparte (tarifa de un proveedor de Cataluña, 2026), y la paella en directo con experiencia, a 20-39 €. En la paella gigante, la ficha de un proveedor en Bodas.net la ofrece a 3-10 € por invitado, con un mínimo de 300. En el plan, las bodas se presupuestan a 28 € por ración y las fiestas privadas a 18 €, y la degustación y el contrato ayudan a defender ese precio.",
+  "55": "Los clientes de empresa compran con otra lógica: comidas de equipo, team building, jornadas con show cooking y la cena de Navidad. Decide un responsable de oficina, de recursos humanos o de una agencia, que quiere un proveedor puntual, con contrato, seguro y factura con IVA. Pagan a plazo, como máximo a 60 días según la Ley 3/2004, pero repiten. Los ayuntamientos y las comisiones de fiestas son un cliente aparte: contratan por contrato menor (LCSP, art. 118), pagan a 30 días desde la conformidad (art. 198.4) y, si eres una SL, exigen factura electrónica por FACe. Como referencia, la fiesta popular de Sayalonga de 2025 fue de 400 raciones por 1.480 € en la Plataforma de Contratación.",
+  "56": "En el caso de ejemplo, las bodas, las empresas, las fiestas privadas y las fiestas populares se reparten en la mezcla que ves en el concepto. Es una estimación del kit, no un dato de mercado. El calendario tampoco es uniforme: de mayo a octubre se concentra la mayor parte de la actividad, con las bodas, las comuniones y las fiestas patronales de agosto y septiembre, más la Navidad de empresa; enero, febrero y noviembre son los meses flojos, y las Fallas pesan solo en el Levante. En el Excel, el mes de menor saldo de caja es el {MES_SALDO_MINIMO}, con {SALDO_MINIMO}. Ajusta la curva a tu zona y sustituye los porcentajes por lo que te digan tus reservas.",
+  "57": "Hay tendencias que conviene vigilar sin apoyarse en cifras que no podemos citar. Los clientes piden cada vez más opciones sin gluten, vegetarianas y seguras para alérgicos, y esperan que quien cocina las resuelva sin dramas. El show cooking gana terreno frente al banquete sentado. Y crece el interés por el arroz y el producto de proximidad con denominación de origen.",
+  "58": "La demanda tiene riesgos que el plan debe nombrar. La temporada es corta: una primavera floja deja un hueco que el otoño no siempre compensa. Los clientes cancelan o reducen invitados a última hora, y por eso importan el anticipo y los tramos de cancelación. Y una alerta de incendios puede prohibir el fuego, incluso el gas, el día del evento. El plan recoge el golpe en el escenario pesimista del Excel: {ESC_PES_EVENTOS} eventos y un resultado de {ESC_PES_NETO}.",
+  "61": "Antes de fijar ningún precio, dibuja el mapa de quién compite contigo a menos de una hora de tu cocina de apoyo. La lista suele incluir paelleros tradicionales, caterings que ofrecen paella, restaurantes de arroces con servicio de eventos y proveedores de paella gigante. Anota de cada uno qué incluye su precio por ración, su mínimo de invitados, si cocina en directo y qué dicen sus reseñas. No hace falta inventar cifras: basta con pedir presupuestos y mirar sus webs y los directorios.",
+  "62": "Las cinco fuerzas de Porter se ven así en un servicio de paellas para eventos. El poder de los proveedores es bajo: hay muchos arroceros, carniceros y vendedores de equipo, y es fácil cambiar. El poder de los clientes es moderado, porque comparan presupuestos y reseñas, aunque una buena degustación y una propuesta clara fidelizan; el de los ayuntamientos es mayor, pues compran por volumen y precio. La amenaza de sustitutos es real: un restaurante de arroces, un catering de bandejas o una paella casera pueden reemplazarte con poco presupuesto. La rivalidad es más intensa de mayo a octubre, cuando todos compiten por las mismas fechas. Los nuevos entrantes son una amenaza moderada: las paelleras son baratas, pero la cocina de apoyo autorizada, el seguro, el gas bien instalado y la furgoneta isoterma exigen caja y planificación, y eso frena a los aficionados.",
+  "63": "Los competidores directos son otros paelleros y caterings que cocinan en directo los mismos tamaños de evento y atienden los mismos espacios, además de los restaurantes de arroces con servicio de eventos. Los indirectos son la paella para recoger, las bandejas de supermercado y los amigos que la cocinan en casa. Para compararte con justicia, alinea el precio por ración, qué incluye, si cocina en directo, el mínimo de invitados y las reseñas en Google y en Bodas.net. Después decide dónde ganas: el ritual en directo, la carta de arroces, la rapidez de respuesta o la claridad del presupuesto. Dilo en una sola frase y úsala en todas partes.",
+  "64": "Las barreras de entrada son de cumplimiento y de caja. Necesitas una cocina de apoyo autorizada, porque cocinar en casa para eventos está prohibido (RD 1021/2022, art. 13.5.b), y tu actividad se inscribe en el registro autonómico mediante declaración responsable. El RGSEAA solo aplica si suministras a otros establecimientos. Si el frío lo pone la caja de la furgoneta, necesita el certificado ATP (RD 237/2000); si llevas neveras y acumuladores, tu defensa es el registro de temperaturas. Con botellas de 35 kg o varias conectadas, el gas exige una empresa instaladora autorizada. Y el seguro de responsabilidad civil de al menos 600.000 €, con incendio, explosión e intoxicación, y un equipo fijo discontinuo completan el listón.",
+  "65": "Cuatro factores deciden si funciona. El primero es la fiabilidad: llegar con margen, con las raciones acordadas y la paella lista a la hora. El segundo es la seguridad alimentaria: el arroz se sirve a 63 °C o más, o se enfría deprisa, y nunca se deja tibio a temperatura ambiente. El tercero es el plan B del fuego: una alerta puede prohibir la leña, e incluso el gas, y tu contrato y tu equipo tienen que tener una salida. El cuarto son las relaciones con fincas, wedding planners y ayuntamientos, que reparten muchas contrataciones. Un servicio pequeño que cuide estos cuatro puntos puede quitar trabajo a los grandes.",
+  "66": "El análisis DAFO de este concepto es claro. Fortalezas: costes fijos bajos, porque pagas una cocina de apoyo de {COCINA_ANO} al año en lugar de un local, un ritual en directo muy reconocible y una mezcla de cuatro tipos de cliente. Debilidades: dependencia de pocas personas clave, capacidad limitada en los fines de semana de mayor demanda (el plan prevé hasta {CAPACIDAD_EVENTO} raciones por evento) y un calendario desigual. Oportunidades: empresas que quieren proveedor fijo, fincas y planners con listas de recomendados, y comisiones de fiestas que repiten cada año. Amenazas: una intoxicación alimentaria, un incidente con el gas, las cancelaciones tardías, la subida de costes del arroz y la carne, y los precios bajos de la paella sola.",
+  "69": "La estrategia de marketing sigue dos embudos. Las bodas y las fiestas privadas tienen un ciclo largo: el cliente te encuentra en internet, pide presupuesto, asiste a una degustación y firma meses antes de la fecha. Las empresas y las comisiones de fiestas tienen un ciclo corto y de repetición: una comida bien resuelta lleva al siguiente pedido y a una recomendación dentro de la misma oficina o del mismo pueblo. Trata cada embudo con su mensaje y su canal, pero apoya ambos en la misma promesa: una paella en directo que sale bien, con un cocinero que se ve y un contrato que da tranquilidad.",
+  "70": "La web es tu principal herramienta de venta, porque el cliente la mira antes de llamar. Debe mostrar la carta de arroces, precios «desde» por ración según el tipo de evento, fotos de cocciones reales y un formulario de presupuesto breve que pregunte la fecha, el lugar, el número de invitados y los alérgenos. A su lado, un perfil de Google Business completo, con fotos, zona de servicio y reseñas recientes, te pone delante de quien busca paella cerca. Responde a cada reseña, buena o mala, en un día. Las fotos coherentes y los vídeos cortos de una paella en marcha venden más que cualquier eslogan, y cuestan poco de mantener.",
+  "71": "Los directorios traen contactos cualificados cuando el perfil está completo. Para bodas, Bodas.net y Zankyou son los sitios donde las parejas comparan, leen reseñas y piden presupuesto. Para empresas, funcionan mejor los directorios de eventos corporativos, Hosply, LinkedIn y la propuesta directa a agencias y hoteles. Para los ayuntamientos y las comisiones de fiestas, mira la Plataforma de Contratación del Sector Público y escribe a las concejalías de fiestas de tu zona. Ten en cuenta que algunas fincas cobran un canon al proveedor externo, y calcula ese coste antes de aceptar. Usa los directorios para conseguir clientes nuevos y, cuando repitan, invítalos a pedir directamente contigo.",
+  "72": "La venta directa funciona bien si estás dispuesto a salir a la calle. Empieza por las fincas, los wedding planners y las agencias de tu zona, y lleva una ficha de una página con la carta, las experiencias y un precio por ración. Ofrece una degustación en directo a los planners y a los responsables de fiestas más relevantes: quien te ve cocinar te recomienda con más confianza. Un espacio que te incluye en su lista de proveedores te envía eventos sin coste de publicidad. Las ferias de novios sirven para conocer parejas en persona. Tras cada visita, manda un correo y programa un recordatorio. Un ritmo constante de pequeños contactos cada semana rinde más que una gran campaña.",
+  "73": "La degustación es tu paso más cercano a la venta, así que la presupuestas como una partida del plan. Se ofrece a clientes en serio, sobre todo parejas y empresas con eventos grandes, con una paellera pequeña y una propuesta impresa. Puedes cobrarla y descontarla del contrato si el cliente firma. La propuesta recoge el menú, las raciones, el personal, el precio por ración, el anticipo del 30 % para bloquear la fecha, el resto el día del evento y las condiciones de cancelación. Después haces seguimiento en el plazo de un día, y cuando el cliente acepta le envías el contrato y cobras el anticipo.",
+  "74": "El mejor marketing llega después del evento. Pide una reseña en Google a los pocos días, cuando el cliente aún recuerda la fiesta, y envía un agradecimiento breve con una foto si da su permiso. Las empresas y las comisiones que repiten reciben un proceso sencillo para repetir el pedido, con su menú habitual guardado y un contacto con nombre. Pide a los clientes satisfechos que te presenten a un amigo que organiza una fiesta o a un compañero que gestiona eventos, y agradéceselo con un detalle. Un programa de recomendación bien llevado cuesta menos que cualquier contacto nuevo.",
+  "75": "El ejemplo reserva {MARKETING_ANO} al año de marketing, sobre todo para directorios, fotografía y algo de publicidad en buscadores, más el lanzamiento, que ya está dentro de la inversión. Anota de dónde viene cada contacto (web, Bodas.net, Zankyou, recomendación, finca, planner o ayuntamiento) y calcula el coste de marketing por evento conseguido. Si un canal consigue eventos a menor coste, recibe más presupuesto, y si no, lo dejas. Revisa las cifras cada trimestre y ajusta.",
+  "78": "Lo primero que debes resolver es dónde cocinas lo que no se cocina delante del invitado. Este plan no construye una cocina: alquila tiempo en una cocina de apoyo compartida y autorizada, con una cuota de {CUOTA_COCINA_MES} al mes en el caso del kit, una cifra de partida que has de contrastar con la oferta de tu zona. Allí se hacen los fondos y caldos, el sofrito, el pelado y troceado y la mise en place del día anterior, y de allí sale la furgoneta cargada. Nunca se prepara en casa: la normativa prohíbe elaborar en domicilios particulares los alimentos de un evento (RD 1021/2022, art. 13.5.b), y una inspección o una intoxicación te pillarían sin amparo. La cocina autorizada te da además cámara de frío, almacén seco, agua abundante y un sitio donde dejar la furgoneta limpia. En el evento solo ocurre lo que tiene gracia ver: el arroz sobre el fuego, el caldo que se reparte, el socarrat que se rasca. Todo lo demás llega hecho, medido y a la temperatura correcta. Así el show cooking es repetible y no depende de que el día salga redondo, y puedes planificar cuántas horas de cocina reservas cada semana según los eventos que tengas cerrados.",
+  "79": "El equipo sigue una regla simple: es tuyo lo que viaja contigo. Compras una furgoneta isoterma con certificado ATP ({FURGONETA}), las paelleras ({PAELLERAS}) y los quemadores y trípodes de leña ({QUEMADORES}), y alquilas lo que se usa un día al año. Cada paellera se dimensiona por su diámetro, con 100 g de arroz por ración: la de 90 cm da de 30 a 40 raciones, la de 120 cm de 60 a 80 y la de 150 cm de 90 a 120. Con el gas, la regla es una botella de menos de 15 kg por quemador, que conectas tú con regulador y tubo flexible; si el montaje pide botellas de 35 kg o varias en batería, interviene una empresa instaladora autorizada.",
+  "80": "Todos los eventos siguen las mismas fases. La fecha se reserva con el presupuesto, el contrato y el anticipo del 30 %. A D-30 cierras el briefing con raciones, alergias y formato. A D-21 haces la visita técnica: punto de fuego, dirección del viento, agua, acceso de la furgoneta y, si hay monte cerca, la franja forestal. A D-7 cierras menú y alergias por escrito. El día antes pides el marisco fresco y se preparan caldos y mise en place en la cocina de apoyo. El día del evento cargas con la lista del manual, montas, enciendes y cocinas a la vista. Tras el servicio recoges, haces las fotos y facturas.",
+  "81": "La seguridad alimentaria no se detiene cuando la comida sale de la cocina de apoyo. El arroz se sirve a 63 °C o más (RD 1086/2020, art. 30) y lo frío viaja en la furgoneta isoterma o en neveras, con la temperatura registrada en la carga, a la llegada y al final del servicio. Un arroz tibio es el fallo más habitual y el más evitable: se cocina por tandas ajustadas a la hora del servicio, no con margen de sobra. El personal crece con el evento: un paellero lleva hasta tres paelleras, desde cuatro paelleras o desde 80 invitados entra un ayudante y a partir de unos 150 hace falta un segundo paellero.",
+  "82": "Compras el arroz a un mayorista y el marisco y la carne a pocos especialistas, con un proveedor de reserva para cada uno. Los contratos del kit fijan el cobro. Los particulares pagan el 30 % al firmar y el 70 % el día del evento, en efectivo solo si el pago es inferior a 1.000 €. Si cancela el cliente, paga el 30 % del total con más de 60 días, el 50 % entre 60 y 30, el 75 % con menos de 30 y el 100 % en las 72 horas previas; es simétrica si cancela el paellero. Las empresas abonan el 30 % y el 70 % a 30 días de la factura, y si cancelan se les retiene nada, el 30 % o el 60 % del anticipo (este último, más 200 € de gestión) según la antelación, y el 100 % a menos de 15 días. Los ayuntamientos no adelantan nada: contratan con su propio contrato menor y pagan a 30 días desde la conformidad.",
+  "85": "El equipo es pequeño y cada puesto tiene una función clara. Tú eres el paellero titular, a jornada completa: vendes, compras, haces caldos y llevas la paella en los eventos que importan. Un ayudante, que puede ser segundo paellero, es fijo discontinuo con una jornada del 65 % y te cubre los eventos grandes. Dos auxiliares de evento, también fijos discontinuos, montan, reparten el caldo, emplatan y recogen en las bodas y las fiestas populares. No hay oficina, ni local, ni encargado de sala: la estructura se paga con los eventos.",
+  "86": "El personal cuesta {PERSONAL_A1} en el primer año, con la Seguridad Social de la empresa incluida, lo que equivale a un {PERSONAL_PCT_A1} de las ventas. Esa cifra reúne a las {PLANTILLA_PERSONAS} personas de la plantilla, tú incluido o incluida, con las horas que el Excel programa para el volumen del primer año. Es la partida más grande después de la mercancía y la que más se mueve con el calendario, porque en un mes de bodas y fiestas trabajan todos y en febrero casi nadie. Por eso el ayudante y los auxiliares no son plantilla de jornada completa, sino fijos discontinuos que se llaman cuando hay evento. Si cierras menos eventos de los previstos, programas menos horas y el coste baja. Si cierras más, lo asumes con las mismas personas hasta donde llegue la cobertura y después incorporas a alguien más, nunca a quien te factura por días.",
+  "87": "Cada evento exige horas de producción, carga, montaje, cocción, servicio y recogida, y varias personas por servicio. El Excel compara las horas programadas con las necesarias y da una cobertura del {COBERTURA_HORAS}. Léela con cuidado: compara todas las horas contratadas, incluidas las del titular a jornada completa, con solo las de evento (dos personas, ocho horas y {EVENTOS_ANO} eventos), y por eso sale alta: las horas de ventas, compras y caldos no están entre las necesarias. Una cobertura alta no significa que sobre gente. Significa que la plantilla del caso aguanta los eventos de la temporada, con margen para una semana de dos bodas.",
+  "88": "El ayudante y los auxiliares son personal fijo discontinuo (art. 16 del Estatuto de los Trabajadores): tienen contrato indefinido y los llamas en los días y las temporadas en que hay trabajo, de mayo a octubre y en las fiestas del pueblo. Es la fórmula natural para una paellería con muchas bodas y celebraciones en temporada y pocas fuera. No lo sustituyas por autónomos que te facturan por evento: si trabajan con tus medios, a tu horario y bajo tus órdenes, es un falso autónomo (art. 1.1) y el riesgo de sanción y de reclamación es tuyo. Cada llamamiento se comunica con antelación y se registra, y las horas de cada persona quedan anotadas día a día. Es un contrato que da seguridad a ambas partes y te permite contar con gente que ya conoce tu forma de trabajar.",
+  "89": "La formación forma parte del plan, no es un extra. Todo el que manipula alimentos recibe formación en higiene acorde con su puesto, a cargo de la empresa, como exige el Reglamento (CE) 852/2004; el antiguo carné de manipulador ya no existe. En cada evento hay al menos una persona que domina los alérgenos, porque la comida no envasada debe informar de ellos (Reglamento (UE) 1169/2011 y RD 126/2015). A eso se suma la prevención de riesgos laborales propia del oficio: quemaduras, manejo del gas y de las botellas, calor y levantamiento de cargas. Antes del primer evento del año, el equipo ensaya el guion del show cooking, cuándo se enciende, cuándo se añade el caldo, cómo se explica el socarrat al invitado, y repasa el plan de emergencia con el extintor y la manta ignífuga a mano. El ensayo cuesta una mañana y evita improvisar delante de cien personas.",
+  "90": "Antes de fijar sueldos, mira el convenio provincial de hostelería que te corresponda (ALEH V, art. 4): las tablas salariales y las jornadas que mandan son las de tu provincia. Por eso el Excel deja la casilla del salario de convenio a cero, con una nota que te pide copiar tu tabla, en lugar de imponerte una cifra que cambia de un territorio a otro. Cada persona de la plantilla debe tener su jornada registrada, también en un evento largo que acaba de madrugada (art. 34.9), y un calendario de llamamientos que puedas enseñar. Cuando el volumen de eventos suba, es mejor ampliar la bolsa de fijos discontinuos formados que alargar las jornadas de las mismas personas.",
+  "93": "En conjunto, el caso del kit describe un negocio pequeño y viable sobre el papel. Las ventas del primer año alcanzan {VENTAS_A1}, con un margen bruto del {MARGEN_BRUTO_PCT_A1} y un resultado neto de {NETO_A1}. Son cifras de planificación del Excel, no una previsión: se sostienen mientras cierres los eventos del plan al precio medio de la mezcla. Esa media incluye las fiestas populares, que se cobran mucho más bajo, así que no es el precio de una boda. Las secciones siguientes desglosan de dónde sale cada cifra y qué ocurre cuando el año sale peor de lo previsto.",
+  "94": "La inversión se construye con partidas que puedes presupuestar hoy. Las compras suman {CAPEX}, con la furgoneta isoterma ({FURGONETA}) como la mayor, seguida de las paelleras ({PAELLERAS}) y los quemadores y trípodes ({QUEMADORES}), además de neveras, menaje, la rotulación, la marca, la web, las fotos y el dossier, la constitución de la sociedad y la declaración responsable. A eso se suma un fondo de maniobra de {FONDO_MANIOBRA}, que cubre los primeros meses mientras entran los primeros cobros. La inversión total es de {INVERSION_TOTAL}. Sobre ella el IVA soportado es de {IVA_INVERSION}, que adelantas y recuperas después, de modo que la necesidad de caja real es de {NECESIDAD_CAJA}. Se financia con {RECURSOS_PROPIOS} de recursos propios y un préstamo de {PRESTAMO} al {TIPO_PRESTAMO} a {PLAZO_PRESTAMO} años, con {CARENCIA} año de carencia en el que solo pagas intereses. La cuota anual, ya con amortización, es de {CUOTA_ANUAL}. Es una orientación, no una oferta: tu banco fijará las condiciones, y conviene pedir presupuesto de la furgoneta y de las paelleras antes de dar nada por cerrado.",
+  "95": "Los ingresos crecen con el volumen, no con el precio: el Excel sube un {CREC_A2} y un {CREC_A3} las raciones por evento (de {INVITADOS_EVENTO} a {INVITADOS_EVENTO_A2} y {INVITADOS_EVENTO_A3}) con los mismos {EVENTOS_ANO} eventos y el mismo precio. En la práctica es lo que pasa cuando una boda de cien invitados pasa a ciento diez, o cuando un cliente fiel te trae a más gente. El caso pasa así de {VENTAS_A1} en el primer año a {VENTAS_A2} en el segundo y {VENTAS_A3} en el tercero. El resultado neto es de {NETO_A1}, {NETO_A2} y {NETO_A3}: baja en el tercer año aunque las ventas suban, porque el impuesto de sociedades deja el tipo reducido de las empresas de nueva creación y pasa al tipo general.",
+  "96": "Los costes se contrastan con rangos de referencia. La mercancía de comida pesa un {FOOD_COST} y la de bebida, un {BEBIDA_COST}; en conjunto la mercancía es un {MERCANCIA_PCT_A1} de las ventas, y el margen bruto, tras todos los costes variables, queda en un {MARGEN_BRUTO_PCT_A1}. El personal supone un {PERSONAL_PCT_A1} y la cocina de apoyo, {COCINA_ANO} al año. El marketing suma {MARKETING_ANO} y los seguros, {SEGUROS_ANO}. Los intereses del primer año son {INTERESES_A1}.",
+  "97": "El equilibrio se mide en raciones y en eventos. Contablemente, el negocio cubre costes con {BE_INVITADOS_EVENTO} raciones por evento si cierras los {EVENTOS_ANO} eventos del plan, o con {BE_EVENTOS_ANO} eventos al año con el evento medio ({BE_INGRESOS} de ingresos). En caja el umbral es de {BE_EVENTOS_ANO_CAJA} eventos, con una holgura del {HOLGURA_CAJA} que es la del primer año, el de carencia, con solo intereses. Desde el segundo devuelves principal y el equilibrio de caja sube a {BE_INGRESOS_CAJA_A2}: el crecimiento deja una holgura del {HOLGURA_CAJA_A2}, más ajustada, y la del tercer año es del {HOLGURA_CAJA_A3}; sin crecer harían falta unos {BE_EVENTOS_CAJA_A2} eventos.",
+  "98": "Puedes fallar por la caja aunque el beneficio sea bueno. El Excel supone que los clientes pagan a {DIAS_COBRO} días de media, que a los proveedores les pagas en un plazo parecido y que las nóminas salen cada mes. El saldo mínimo de tesorería es de {SALDO_MINIMO}, en el mes {MES_SALDO_MINIMO}; el DSCR mínimo es de {DSCR_MIN} y el payback, de {PAYBACK} años. Los anticipos de los particulares no se modelan: la caja real será algo mejor que la de la hoja de Tesorería.",
+  "99": "Dos escenarios muestran lo rápido que se mueven los números. El pesimista supone {ESC_PES_EVENTOS} eventos, con menos raciones y un precio más bajo, y da ventas de {ESC_PES_VENTAS} y un neto de {ESC_PES_NETO}: pérdidas. Es el aviso honesto del plan: en un año flojo se pierde dinero y la caja aprieta antes, sobre todo desde el segundo año, cuando se devuelve el préstamo. Tienes cuatro palancas: el precio por ración, las raciones por evento, el número de eventos y los costes fijos. El optimista llega a {ESC_OPT_VENTAS} con {ESC_OPT_EVENTOS} eventos y un neto de {ESC_OPT_NETO}. El Excel manda: si cambias una celda verde, este documento se queda atrás.",
+  "102": "Puedes constituirte como sociedad limitada unipersonal, con un capital desde 1 euro, o empezar como autónomo; el plan está calculado con sociedad. La actividad se da de alta en el epígrafe 677.9 del IAE. En el IVA, la regla es sencilla: el servicio de comidas en el evento tributa al 10 %, bebidas alcohólicas incluidas (Ley 37/1992, art. 91.Uno.2.2.º), y al 21 % el alcohol de la paella para recoger y lo que facturas aparte. En personal, cumples el Estatuto de los Trabajadores: fijos discontinuos (art. 16), ningún falso autónomo (art. 1.1) y registro de jornada (art. 34.9). Este plan es una herramienta de planificación: confirma estas cifras con tu asesoría fiscal.",
+  "103": "La actividad se registra ante la comunidad autónoma mediante una declaración responsable, que inscribe tu empresa en el registro autonómico de establecimientos (RD 1021/2022, que reescribe el art. 2 del RD 191/2011). El RGSEAA solo aplica si suministras a otros establecimientos, algo que este plan no contempla. Además, está prohibido preparar en casa para eventos (RD 1021/2022, art. 13.5.b), por lo que necesitas una cocina de apoyo autorizada. Con tus clientes, el contrato manda: un servicio de comida con fecha determinada no tiene derecho de desistimiento (TRLGDCU, art. 103.l), y por eso el kit incluye un anticipo y un calendario de cancelación que el cliente firma. Con particulares, el efectivo solo vale para pagos por debajo de 1.000 € (Ley 7/2012, art. 7). Los datos de tus clientes, alergias incluidas, se tratan según el RGPD y la LOPDGDD.",
+  "104": "Dentro de la cocina y en el transporte rige el autocontrol. Debes tener un sistema de APPCC y formación de manipuladores (Reglamento (CE) 852/2004) y respetar las temperaturas del RD 1086/2020 (art. 30): 63 °C o más en caliente, y las de frío que fije cada producto. Registra las temperaturas y guarda esos registros, porque son tu defensa si alguien enferma tras un evento. Y guarda una comida testigo de cada arroz (100 g, identificada y fechada, a 4 °C o menos o congelada, durante 7 días): es obligatoria en los eventos y en los encargos de más de 40 personas (art. 30.8 y 30.10). Los alérgenos de los platos, incluida la comida sin envasar, se informan por escrito (Reglamento (UE) 1169/2011 y RD 126/2015). El kit incluye el modelo para el briefing y para la hoja de cada evento.",
+  "105": "El gas es la parte más delicada de la actividad. Una botella de menos de 15 kg conectada a un solo aparato no se considera instalación, y la conecta el propio usuario con regulador y tubo flexible con abrazadera (RD 919/2006, art. 2.1.h; ITC-ICG 08). Las botellas de 35 kg, o varias en batería, las monta una empresa instaladora autorizada (ITC-ICG 06). Para un evento con varias paelleras, calcula los quemadores y las botellas antes de la visita técnica y pregunta a tu proveedor y a tu comunidad cómo lo aplican a montajes de un solo día. Haz que revisen las mangueras y los reguladores cada temporada y cámbialos cuando caduquen, porque una fuga mal atendida es el accidente que más te puede costar.",
+  "106": "El fuego lo regula cada comunidad autónoma en montes y zonas colindantes (Ley 43/2003, art. 44.3), con una franja y una época de peligro, y una alerta de incendios puede prohibir también el gas. Por eso tus contratos llevan una cláusula de fuerza mayor y un plan B, como cocinar en un espacio sin riesgo o servir desde la cocina de apoyo. En el anexo por comunidades tienes las normas por territorio.",
+  "107": "En las fiestas populares tu cliente es una administración. El ayuntamiento compra por contrato menor (Ley 9/2017, art. 118), paga a 30 días desde la conformidad y sin anticipo (art. 198.4) y, si eres SL, la factura se presenta en electrónico en su punto general de entrada (FACe en la mayoría; Ley 25/2013, art. 4), salvo que exima las de hasta 5.000 €. Vender raciones al público por tu cuenta es otra cosa: es venta no sedentaria y exige autorización municipal (Ley 7/1996, arts. 53-54). Cada ayuntamiento pone sus condiciones, así que pregunta antes de comprometer la fecha.",
+  "108": "El último eslabón es la furgoneta y el transporte. La comida que viaja en una furgoneta isoterma debe ir en un vehículo conforme al ATP (RD 237/2000), que pasa una inspección periódica. Las botellas de gas viajan sujetas, en pie, con las válvulas cerradas y buena ventilación: hasta 333 kg de gas por vehículo entras en la exención del ADR (1.1.3.6) con extintor a bordo; con más peso cambian las obligaciones. Asegura la furgoneta y el equipo, y contrata una responsabilidad civil que cubra incendio, explosión e intoxicación alimentaria por al menos 600.000 €. El ejemplo presupuesta {SEGUROS_ANO} al año; pide presupuesto a un corredor que conozca los eventos con fuego.",
+  "111": "El plan se sostiene por cómo está construido. No hay restaurante que alquilar ni local que reformar: solo una cocina de apoyo autorizada y una furgoneta isoterma. Cuatro clientes se reparten la demanda: las bodas dan el precio, las empresas llenan la semana, las fiestas privadas cubren los huecos y las fiestas populares dan volumen. El caso es viable: ventas de {VENTAS_A1}, neto de {NETO_A1}, DSCR mínimo de {DSCR_MIN} y payback de {PAYBACK} años. La holgura de caja es del {HOLGURA_CAJA} en el primer año, de carencia, y del {HOLGURA_CAJA_A2} en el segundo, con el préstamo ya en devolución: más ajustada, y por eso conviene vigilarla. Si el volumen se estanca, tienes las palancas del precio, las raciones, los eventos y los fijos.",
+  "112": "Conoce los riesgos antes de firmar nada. Una alerta de incendios puede prohibir el fuego y hasta el gas: cláusula de fuerza mayor y plan B. La lluvia y el viento se resuelven con una carpa, cortavientos y un plan documentado. La intoxicación y el arroz tibio se previenen con APPCC, registros de temperatura y el seguro de responsabilidad civil. Un accidente con el gas, con botellas bien sujetas, revisión y personal formado. La avería o el robo del equipo, con seguro y repuesto. El impago o el retraso de un ayuntamiento, con el contrato menor firmado, la factura en su registro y la vigilancia del pago a 30 días. La dependencia de pocos wedding planners, con captación directa. La subida del arroz y del marisco, con precios revisados cada temporada. Y la falta de ayudantes en temporada alta, con una bolsa de fijos discontinuos formados y llamamientos anticipados.",
+  "113": "Las fortalezas vienen del ritual. Vendes pocas cosas y las haces delante del invitado: el sofrito, el caldo, el socarrat, con un paellero que explica lo que hace. Una carta de 12 arroces y las 10 experiencias del kit te dejan adaptar el servicio a una boda, una empresa o una fiesta de pueblo sin reinventar el negocio. Los alérgenos están resueltos por escrito. Mantienes bajos los costes fijos gracias a una cocina de apoyo compartida y una sola furgoneta, de modo que un mes flojo duele menos. Y tu mejor argumento comercial no es el precio, sino el recuerdo que deja una paella cocinada a la vista.",
+  "114": "La hoja de ruta sigue las seis fases del checklist que acompaña al kit, con sus 83 tareas repartidas en 12, 16, 14, 10, 16 y 15. La «Fase 1: Constitución y fiscalidad» cubre la forma jurídica, el alta y la cuenta. La «Fase 2: Cocina de apoyo, sanidad, fuego, gas y permisos» incluye el contrato de la cocina, la declaración responsable, el APPCC, el gas y los seguros. La «Fase 3: Equipamiento y proveedores» cubre la furgoneta, las paelleras y la red de compras. La «Fase 4: Personal» prepara los contratos fijos discontinuos y la formación. La «Fase 5: Marca y captación» monta la web, los directorios y las primeras degustaciones. La «Fase 6: Primer evento y 90 días» ejecuta los primeros servicios y revisa cada uno. No pases a la fase siguiente mientras queden abiertos los permisos de la actual.",
+  "115": "Mide pocas cosas cada semana y no esperes al asesor. Registra los eventos cerrados al mes y la tasa de conversión de presupuestos en contratos firmados. Compara el precio medio por ración, sin IVA, con los {PRECIO_INVITADO} del plan, que es una media de la mezcla y baja por las fiestas populares, el food cost con el {FOOD_COST} previsto y las horas de personal con lo programado en el Excel. Anota las cancelaciones y los eventos en que el fuego o el gas no se pudieron usar, y cuánto tardan en pagarte los ayuntamientos. Cada mes mira el saldo de caja y compáralo con el saldo mínimo de {SALDO_MINIMO} del Excel. Si tres semanas seguidas no cierras eventos, no esperes a fin de trimestre: revisa precio, captación y calendario.",
+  "116": "A tres años vista, el plan es hacer crecer la base de clientes que repiten, bodas por recomendación, empresas recurrentes y ayuntamientos fieles, que alisa el calendario y abarata el coste comercial de cada evento, mientras el volumen por evento sube un {CREC_A2} en el segundo año y un {CREC_A3} en el tercero. Con ello las ventas llegan a {VENTAS_A3} y el neto a {NETO_A3}, que son un {NETO_PCT_A3} de las ventas. Una segunda furgoneta o un segundo equipo de paelleras solo tienen sentido cuando el calendario de temporada alta esté lleno y el equipo ya no pueda atender las peticiones, no antes. Mientras tanto, el crecimiento sale de llenar mejor los eventos que ya tienes, no de multiplicar el trabajo ni los gastos fijos, y cada mejora de precio o de raciones se anota y se revisa al cerrar la temporada con los datos reales delante.",
+  "117": "Los siguientes pasos son sencillos y van en orden. Abre el Excel y sustituye las cifras del ejemplo por las tuyas, en las celdas verdes: eventos al año, precio por ración y raciones por evento. Recuerda que, si cambias una de ellas, este documento se queda atrás: manda el Excel. Usa la calculadora para convertir tus cifras en presupuestos que puedas enviar, y el checklist para no saltarte ningún permiso. Este plan es una herramienta de planificación, no asesoría legal ni fiscal: confirma con tu asesoría y con la administración de tu comunidad lo que afecte a tu caso. Y recuerda que, con el préstamo en devolución, la caja del segundo y del tercer año (holguras del {HOLGURA_CAJA_A2} y del {HOLGURA_CAJA_A3}) es la que más hay que vigilar."
+ },
+ "manual_tecnico": {
+  "parrafos": [
+   {
+    "i": 0,
+    "estilo": "Normal",
+    "texto": "Manual Técnico Paellero"
+   },
+   {
+    "i": 1,
+    "estilo": "Normal",
+    "texto": "Escalado y quemadores · Técnica del fuego · Caldos · Seguridad · Alérgenos · Cocción de 12 paellas"
+   },
+   {
+    "i": 2,
+    "estilo": "Normal",
+    "texto": "La pieza que separa al amateur del profesional"
+   },
+   {
+    "i": 3,
+    "estilo": "Normal",
+    "texto": "ChefBusiness Consultoría Gastronómica"
+   },
+   {
+    "i": 5,
+    "estilo": "Heading 1",
+    "texto": "1. Cómo usar este manual"
+   },
+   {
+    "i": 6,
+    "estilo": "Normal",
+    "texto": "Este manual es la guía de cocina del pack «Paellero / Paella para Eventos». Está pensado para tenerlo a mano en la furgoneta y en la mesa de trabajo: qué arroz usar, qué paellera y qué fuego poner, cuánto caldo llevar, a qué hora empezar y cómo servir con seguridad."
+   },
+   {
+    "i": 7,
+    "estilo": "Normal",
+    "texto": "Se usa junto con el resto del pack:"
+   },
+   {
+    "i": 8,
+    "estilo": "List Bullet",
+    "texto": "Carta de 12 paellas y arroces: recetas, ingredientes y escandallo. Los nombres de las paellas son los mismos."
+   },
+   {
+    "i": 9,
+    "estilo": "List Bullet",
+    "texto": "Calculadora de costes y presupuestos: cuánto cuesta y cuánto cobrar. Este manual dice cuánto arroz, caldo y fuego necesitas para esas raciones."
+   },
+   {
+    "i": 10,
+    "estilo": "List Bullet",
+    "texto": "Checklist de evento: la lista del día. La sección 13 de este manual amplía la parte de material."
+   },
+   {
+    "i": 11,
+    "estilo": "Normal",
+    "texto": "Las cifras de escalado, tiempos y consumos son referencias orientativas del sector. Cada paellera, quemador y arroz se comportan algo distinto: haz una prueba antes de tu primer evento grande y ajusta las tablas a tu equipo."
+   },
+   {
+    "i": 12,
+    "estilo": "Heading 1",
+    "texto": "2. Tipos de arroz para paella profesional"
+   },
+   {
+    "i": 13,
+    "estilo": "Heading 2",
+    "texto": "Tabla de arroces"
+   },
+   {
+    "i": 15,
+    "estilo": "Heading 2",
+    "texto": "Cómo elegir según el evento y el equipo"
+   },
+   {
+    "i": 16,
+    "estilo": "List Bullet",
+    "texto": "Poca experiencia, exterior o evento largo: Bomba. Perdona errores de fuego y aguanta sin pasarse. Es el arroz de casi toda la carta."
+   },
+   {
+    "i": 17,
+    "estilo": "List Bullet",
+    "texto": "Boda o evento premium: Bomba o J. Sendra; Sénia para los arroces melosos y caldosos de bogavante."
+   },
+   {
+    "i": 18,
+    "estilo": "List Bullet",
+    "texto": "Evento popular con presupuesto ajustado: Bahía, con fuego muy controlado."
+   },
+   {
+    "i": 19,
+    "estilo": "List Bullet",
+    "texto": "Más de 200 personas y margen apretado: Marisma o Líder, sabiendo que el resultado será más corriente."
+   },
+   {
+    "i": 20,
+    "estilo": "List Bullet",
+    "texto": "Arroz a banda: Albufera, de grano suelto, para que el caldo sea el protagonista."
+   },
+   {
+    "i": 21,
+    "estilo": "Normal",
+    "texto": "Regla práctica: cuanto menos control tengas del fuego (exterior, viento, paelleras grandes), más conviene un arroz que perdone."
+   },
+   {
+    "i": 22,
+    "estilo": "Heading 2",
+    "texto": "Conservación del arroz crudo"
+   },
+   {
+    "i": 23,
+    "estilo": "List Bullet",
+    "texto": "Envase cerrado o recipiente hermético, en lugar fresco, seco y sin olores fuertes. Respeta la fecha de consumo preferente y rota el stock."
+   },
+   {
+    "i": 24,
+    "estilo": "List Bullet",
+    "texto": "Pesa el arroz de cada paellera en el obrador y llévalo en bolsas cerradas, etiquetadas con el diámetro de la paellera. Ahorras minutos y evitas errores en el evento."
+   },
+   {
+    "i": 25,
+    "estilo": "Heading 1",
+    "texto": "3. Paelleras, quemadores y escalado"
+   },
+   {
+    "i": 26,
+    "estilo": "Normal",
+    "texto": "Es lo más preguntado: cuántas raciones da cada paellera, cuánto arroz y caldo necesita y qué fuego le corresponde."
+   },
+   {
+    "i": 27,
+    "estilo": "Heading 2",
+    "texto": "Tabla de escalado por diámetro de paellera"
+   },
+   {
+    "i": 28,
+    "estilo": "Normal",
+    "texto": "Referencia habitual del sector, en línea con las cartas de capacidad de los fabricantes de paelleras. Cada paellera admite una cantidad de arroz y da un rango de raciones: el número bajo corresponde a una ración generosa de evento (unos 100 g de arroz en crudo) y el alto a una ración de menú (unos 75 g). Para presupuestar y calcular el material de un evento usa siempre el número bajo. La capa de grano debe ser fina y uniforme (en torno a 1 cm como máximo) y el caldo se calcula a unos 2,5 L por kilo de arroz; con Bomba, que absorbe más, cuenta hasta 3 L por kilo, y lleva algo más si cocinas al aire libre con viento, porque evapora más. Son cifras orientativas: ajústalas a tu arroz con la tabla anterior."
+   },
+   {
+    "i": 30,
+    "estilo": "Normal",
+    "texto": "La paellera debe sobresalir unos centímetros del quemador: si el quemador es más ancho que su base, la llama sube por los lados y quema el borde."
+   },
+   {
+    "i": 31,
+    "estilo": "Heading 2",
+    "texto": "Varias medianas mejor que una gigante"
+   },
+   {
+    "i": 32,
+    "estilo": "Normal",
+    "texto": "Para grupos grandes usa varias paelleras medianas (80-100 cm) en paralelo y no una enorme:"
+   },
+   {
+    "i": 33,
+    "estilo": "List Bullet",
+    "texto": "Control del fuego: en una paellera de 150 cm el centro y el borde se cocinan a ritmos distintos y corregirlo sin remover es casi imposible."
+   },
+   {
+    "i": 34,
+    "estilo": "List Bullet",
+    "texto": "Tiempos: las medianas hierven y reposan con más regularidad, y puedes escalonar los arranques para que no coincidan en el socarrat."
+   },
+   {
+    "i": 35,
+    "estilo": "List Bullet",
+    "texto": "Servicio: una de 90 cm se reparte en pocos minutos; la gigante obliga a esperar y se enfría o se pasa mientras se sirve."
+   },
+   {
+    "i": 36,
+    "estilo": "List Bullet",
+    "texto": "Riesgo: si una paellera sale mal, pierdes 30-40 raciones y no 90-120."
+   },
+   {
+    "i": 37,
+    "estilo": "Normal",
+    "texto": "La paellera grande tiene sentido como espectáculo, siempre con medianas de respaldo."
+   },
+   {
+    "i": 38,
+    "estilo": "Heading 2",
+    "texto": "Cómo cubrir 50, 100 y 200 invitados"
+   },
+   {
+    "i": 39,
+    "estilo": "Normal",
+    "texto": "Ejemplos calculados con el número bajo del rango (ración generosa de evento) y un margen de caldo del 10 %."
+   },
+   {
+    "i": 41,
+    "estilo": "Normal",
+    "texto": "Si ofreces dos variedades (una de carne y otra de marisco), reparte las paelleras por variedad y mantén el mismo tamaño: es más fácil controlar cada cocción."
+   },
+   {
+    "i": 42,
+    "estilo": "Heading 2",
+    "texto": "Nivelado, viento y exterior"
+   },
+   {
+    "i": 43,
+    "estilo": "List Bullet",
+    "texto": "Nivela siempre quemador y paellera con un nivel de burbuja. Si el caldo se va a un lado, el arroz queda crudo en un extremo y pasado en el otro. Comprueba con agua antes de empezar."
+   },
+   {
+    "i": 44,
+    "estilo": "List Bullet",
+    "texto": "Suelo firme: evita césped blando, arena suelta o pendientes; una chapa o tablero bajo las patas reparte el peso."
+   },
+   {
+    "i": 45,
+    "estilo": "List Bullet",
+    "texto": "Viento: pantallas cortavientos, quemador con la espalda al viento dominante y cubierta antiviento. Con viento fuerte, paelleras más pequeñas y llama más baja."
+   },
+   {
+    "i": 46,
+    "estilo": "List Bullet",
+    "texto": "Sol y lluvia: busca sombra para el puesto y las neveras. Con toldo o carpa, mantén una zona libre alrededor del fuego y no cocines nunca bajo una carpa cerrada."
+   },
+   {
+    "i": 47,
+    "estilo": "Heading 1",
+    "texto": "4. Técnica del fuego, el arte del paellero"
+   },
+   {
+    "i": 48,
+    "estilo": "Normal",
+    "texto": "El fuego es el alma de la paella. Una buena técnica de fuego marca la diferencia entre un arroz vulgar y una paella memorable. La técnica correcta sigue 4 fases."
+   },
+   {
+    "i": 49,
+    "estilo": "Heading 2",
+    "texto": "Fase 1: el sofrito (5-12 min, fuego medio-alto)"
+   },
+   {
+    "i": 50,
+    "estilo": "Normal",
+    "texto": "El sofrito es la base aromática. Aceite de oliva DO + cebolla finamente picada + ajo + tomate rallado + pimiento. Cocínalo a fuego medio-alto hasta que el tomate evapore el agua y concentre. El sofrito debe quedar oscuro, casi caramelizado. Es donde se construye el sabor."
+   },
+   {
+    "i": 51,
+    "estilo": "Heading 2",
+    "texto": "Fase 2: las proteínas y verduras (8-15 min, fuego medio)"
+   },
+   {
+    "i": 52,
+    "estilo": "Normal",
+    "texto": "Sella pollo y conejo en el sofrito hasta dorar. Incorpora garrofó y ferraura (paella valenciana) o las verduras del concepto. Cocina 5-8 min. Si es de marisco, sella los mariscos 5 min y resérvalos para incorporarlos al final."
+   },
+   {
+    "i": 53,
+    "estilo": "Heading 2",
+    "texto": "Fase 3: el caldo y el arroz (12-14 min, fuego alto)"
+   },
+   {
+    "i": 54,
+    "estilo": "Normal",
+    "texto": "Incorpora caldo caliente al borde de la paellera. Sube el fuego a alto. Añade el arroz en cruz (símbolo tradicional). Distribúyelo uniformemente con la cuchara. NO REMOVER después de este punto. Mantén 12-14 min a fuego alto hasta que el caldo se reduzca casi por completo."
+   },
+   {
+    "i": 55,
+    "estilo": "Heading 2",
+    "texto": "Fase 4: el socarrat (3-5 min, fuego alto)"
+   },
+   {
+    "i": 56,
+    "estilo": "Normal",
+    "texto": "El socarrat es la corteza caramelizada del fondo. Sube el fuego al máximo durante los 3-5 min finales sin remover. Escucha el sonido (chisporroteo seco) y huele (caramelo + arroz tostado). En cuanto huela a quemado leve, retira del fuego. Reposa 5 min antes de servir."
+   },
+   {
+    "i": 57,
+    "estilo": "Heading 2",
+    "texto": "Trabajar con anillos en paelleras grandes"
+   },
+   {
+    "i": 58,
+    "estilo": "List Bullet",
+    "texto": "Sofrito y proteínas: enciende solo los anillos de la zona donde trabajas y mueve los ingredientes hacia el calor."
+   },
+   {
+    "i": 59,
+    "estilo": "List Bullet",
+    "texto": "Caldo y arroz: todos los anillos a fuego alto para que el hervor sea parejo de borde a borde."
+   },
+   {
+    "i": 60,
+    "estilo": "List Bullet",
+    "texto": "Si el borde se seca antes que el centro, baja el anillo exterior y mantén el interior alto; si pasa al revés, haz lo contrario."
+   },
+   {
+    "i": 61,
+    "estilo": "List Bullet",
+    "texto": "Socarrat: todos los anillos al máximo los últimos minutos. Si el fondo se tuesta desigual, gira la paellera un cuarto de vuelta con guantes: girarla no es remover el arroz."
+   },
+   {
+    "i": 62,
+    "estilo": "List Bullet",
+    "texto": "Revisa cada anillo antes del evento: una boquilla obstruida da un hervor desigual que no se corrige con la cuchara."
+   },
+   {
+    "i": 63,
+    "estilo": "Heading 2",
+    "texto": "Gas frente a leña"
+   },
+   {
+    "i": 65,
+    "estilo": "Normal",
+    "texto": "Para empezar y para eventos de volumen, gas. La leña es un extra premium que puedes ofrecer cuando domines el fuego."
+   },
+   {
+    "i": 66,
+    "estilo": "Heading 2",
+    "texto": "Cómo trabajar con leña"
+   },
+   {
+    "i": 67,
+    "estilo": "List Bullet",
+    "texto": "Naranjo: aroma suave y brasa constante, muy valorado en la paella valenciana."
+   },
+   {
+    "i": 68,
+    "estilo": "List Bullet",
+    "texto": "Sarmiento: llama viva y rápida, ideal para arrancar y para el golpe final de socarrat."
+   },
+   {
+    "i": 69,
+    "estilo": "List Bullet",
+    "texto": "Olivo: brasa densa y duradera; combina bien con el sarmiento."
+   },
+   {
+    "i": 70,
+    "estilo": "List Bullet",
+    "texto": "Usa leña seca y sin tratar: nada de palés, maderas barnizadas ni restos de obra."
+   },
+   {
+    "i": 71,
+    "estilo": "List Bullet",
+    "texto": "Monta el fuego bajo la paellera, con el trípode o fogón nivelado. Enciéndelo con tiempo: necesitas llama viva para las fases 1-3 y buenas brasas para el final."
+   },
+   {
+    "i": 72,
+    "estilo": "List Bullet",
+    "texto": "Cubo de arena y extintor al lado, y un par de metros despejados alrededor."
+   },
+   {
+    "i": 73,
+    "estilo": "Heading 1",
+    "texto": "5. Caldos profesionales, la base oculta"
+   },
+   {
+    "i": 74,
+    "estilo": "Heading 2",
+    "texto": "Caldo de pollo y conejo (valenciana, alicantina y montaña)"
+   },
+   {
+    "i": 75,
+    "estilo": "List Bullet",
+    "texto": "1 carcasa de pollo + huesos de conejo + apio + zanahoria + cebolla + bouquet de hierbas (laurel, romero)."
+   },
+   {
+    "i": 76,
+    "estilo": "List Bullet",
+    "texto": "Cuece a fuego suave 90-120 min. Espuma varias veces."
+   },
+   {
+    "i": 77,
+    "estilo": "List Bullet",
+    "texto": "Cuela y enfría. Refrigera 24 h y elimina la grasa solidificada de la superficie."
+   },
+   {
+    "i": 78,
+    "estilo": "Heading 2",
+    "texto": "Fumet de pescado (marisco, senyoret, a banda y fideuá)"
+   },
+   {
+    "i": 79,
+    "estilo": "List Bullet",
+    "texto": "Cabezas + espinas + cabezas de gambas + verduras blancas (puerro, cebolla, apio)."
+   },
+   {
+    "i": 80,
+    "estilo": "List Bullet",
+    "texto": "Cuece a fuego suave SOLO 25-30 min. Más tiempo amarga."
+   },
+   {
+    "i": 81,
+    "estilo": "List Bullet",
+    "texto": "Cuela con malla fina. No lo mezcles con caldos de carne."
+   },
+   {
+    "i": 82,
+    "estilo": "Heading 2",
+    "texto": "Caldo de calamar (arroz negro)"
+   },
+   {
+    "i": 83,
+    "estilo": "List Bullet",
+    "texto": "Patas y aletas de calamar + cebolla + ajo + tomate + tinta de calamar."
+   },
+   {
+    "i": 84,
+    "estilo": "List Bullet",
+    "texto": "Cuece 35-40 min. Tritura y cuela."
+   },
+   {
+    "i": 85,
+    "estilo": "List Bullet",
+    "texto": "Aporta el color negro intenso y el sabor profundo."
+   },
+   {
+    "i": 86,
+    "estilo": "Heading 2",
+    "texto": "Caldo vegetal (paella vegetal)"
+   },
+   {
+    "i": 87,
+    "estilo": "List Bullet",
+    "texto": "Cebolla, puerro, zanahoria, apio, tomate maduro y restos limpios de alcachofa y espárrago, con laurel y unas hebras de azafrán al final."
+   },
+   {
+    "i": 88,
+    "estilo": "List Bullet",
+    "texto": "Cuece a fuego suave 40-45 min, cuela y rectifica de sal. Evita coliflor y col: dominan el sabor."
+   },
+   {
+    "i": 89,
+    "estilo": "Heading 2",
+    "texto": "Proporciones orientativas por litro de caldo"
+   },
+   {
+    "i": 91,
+    "estilo": "Normal",
+    "texto": "Son proporciones de partida: pruébalas, ajusta sal e intensidad y anótalas en tu ficha técnica."
+   },
+   {
+    "i": 92,
+    "estilo": "Heading 2",
+    "texto": "Cuánto caldo llevar al evento"
+   },
+   {
+    "i": 93,
+    "estilo": "List Number",
+    "texto": "Suma el arroz de todas las paelleras en kilos y multiplícalo por la proporción de tu arroz (2,5 es un valor medio con Bomba)."
+   },
+   {
+    "i": 94,
+    "estilo": "List Number",
+    "texto": "Añade un 10-15 % de margen para evaporación, viento y paelleras que pidan más."
+   },
+   {
+    "i": 95,
+    "estilo": "List Number",
+    "texto": "Redondea al alza y calcula por tipo de caldo: 30 L de fumet no sustituyen a 30 L de caldo de pollo."
+   },
+   {
+    "i": 96,
+    "estilo": "List Number",
+    "texto": "Llévalo caliente en ollas o termos con tapa, o caliéntalo en el sitio en un fuego aparte. Caldo frío es arroz crudo en el centro."
+   },
+   {
+    "i": 97,
+    "estilo": "Normal",
+    "texto": "Ejemplo: 4 paelleras de 90 cm con 3 kg de arroz cada una = 12 kg x 2,5 = 30 L + 10-15 % de margen = 33-35 L. Lleva 35 L."
+   },
+   {
+    "i": 98,
+    "estilo": "Heading 1",
+    "texto": "6. Salmueras y marinados"
+   },
+   {
+    "i": 99,
+    "estilo": "Heading 2",
+    "texto": "Salmuera básica para pollo y conejo (24 h antes)"
+   },
+   {
+    "i": 100,
+    "estilo": "Normal",
+    "texto": "1 L de agua + 70 g de sal + 30 g de azúcar + ajo aplastado + tomillo + romero. Sumerge 12-24 h. Resultado: carne más jugosa y sabor profundo. Técnica clave para eventos premium."
+   },
+   {
+    "i": 101,
+    "estilo": "Heading 2",
+    "texto": "Marinado de mariscos (1-2 h antes)"
+   },
+   {
+    "i": 102,
+    "estilo": "Normal",
+    "texto": "Aceite de oliva + ajo picado + perejil + zumo de limón + sal en escamas. Solo para gambas y langostinos. No marines mejillón ni calamar (se endurecen)."
+   },
+   {
+    "i": 103,
+    "estilo": "Heading 1",
+    "texto": "7. Tabla de cocción, 12 paellas profesionales"
+   },
+   {
+    "i": 105,
+    "estilo": "Normal",
+    "texto": "Los tiempos son los de una paellera mediana con fuego bien regulado. En paelleras de 100 cm o más, o con viento, añade unos minutos y vigila el fondo."
+   },
+   {
+    "i": 106,
+    "estilo": "Heading 1",
+    "texto": "8. Cronograma de un evento"
+   },
+   {
+    "i": 107,
+    "estilo": "Normal",
+    "texto": "Ejemplo para un servicio a las 14:00 con 4 paelleras de 90 cm (unos 100 invitados), un paellero y un ayudante. Es una referencia: adapta las horas a tus tiempos reales de montaje."
+   },
+   {
+    "i": 109,
+    "estilo": "Normal",
+    "texto": "Los arranques tienen en cuenta el reposo de 5 minutos y se escalonan para que las paelleras no lleguen todas juntas al socarrat."
+   },
+   {
+    "i": 110,
+    "estilo": "Heading 2",
+    "texto": "Cuántas paelleras puede llevar un paellero"
+   },
+   {
+    "i": 111,
+    "estilo": "List Bullet",
+    "texto": "Una o dos: un paellero en solitario sin problemas."
+   },
+   {
+    "i": 112,
+    "estilo": "List Bullet",
+    "texto": "Tres: es el techo razonable de un paellero experto si las escalona. Sin ayudante, algo se quema o se enfría."
+   },
+   {
+    "i": 113,
+    "estilo": "List Bullet",
+    "texto": "Cuatro o más, o más de 80 invitados: necesitas ayudante (caldo, fuegos, material y servicio) y, a partir de unos 150 invitados, un segundo paellero."
+   },
+   {
+    "i": 114,
+    "estilo": "Heading 1",
+    "texto": "9. Seguridad alimentaria en el evento"
+   },
+   {
+    "i": 115,
+    "estilo": "Normal",
+    "texto": "Son buenas prácticas básicas para cocinar y servir en exterior. Complétalas con las exigencias de tu ayuntamiento y de tu registro sanitario y con el plan de higiene de tu empresa."
+   },
+   {
+    "i": 116,
+    "estilo": "Heading 2",
+    "texto": "Cadena de frío y cocinado"
+   },
+   {
+    "i": 117,
+    "estilo": "List Bullet",
+    "texto": "Transporta carne, pollo, conejo y marisco en neveras o contenedores isotérmicos a 4 °C o menos, con acumuladores de frío y a la sombra. Saca solo lo que vayas a cocinar."
+   },
+   {
+    "i": 118,
+    "estilo": "List Bullet",
+    "texto": "Separa crudo de cocinado y carnes de marisco, en recipientes cerrados y etiquetados."
+   },
+   {
+    "i": 119,
+    "estilo": "List Bullet",
+    "texto": "Como referencia práctica, las carnes deben cocinarse por completo, sin zonas rosadas, y en aves y conejo la sonda debe marcar unos 75 °C en el corazón de la pieza. El huevo de la alicantina debe quedar cuajado."
+   },
+   {
+    "i": 120,
+    "estilo": "List Bullet",
+    "texto": "Descongela el marisco congelado en nevera, nunca a temperatura ambiente."
+   },
+   {
+    "i": 121,
+    "estilo": "Heading 2",
+    "texto": "Mantenimiento y servicio"
+   },
+   {
+    "i": 122,
+    "estilo": "List Bullet",
+    "texto": "El arroz servido debe mantenerse por encima de 65 °C (paellera tapada sobre fuego muy bajo) y consumirse en las 2 horas siguientes a su cocinado."
+   },
+   {
+    "i": 123,
+    "estilo": "List Bullet",
+    "texto": "No guardes arroz cocinado a temperatura ambiente: es el riesgo de Bacillus cereus, una bacteria cuyas esporas sobreviven a la cocción y producen toxinas si el arroz se queda tibio."
+   },
+   {
+    "i": 124,
+    "estilo": "List Bullet",
+    "texto": "Si sobra arroz y quieres conservarlo: extiéndelo en capa fina, enfríalo rápido y refrigéralo en menos de 2 horas. Si no puedes, deséchalo."
+   },
+   {
+    "i": 125,
+    "estilo": "List Bullet",
+    "texto": "Sirve con utensilios limpios y mantén el alioli por debajo de 8 °C hasta el servicio (sección 11)."
+   },
+   {
+    "i": 126,
+    "estilo": "Heading 2",
+    "texto": "Higiene del montaje en exterior"
+   },
+   {
+    "i": 127,
+    "estilo": "List Bullet",
+    "texto": "Agua potable y lavamanos portátil con jabón y papel desechable."
+   },
+   {
+    "i": 128,
+    "estilo": "List Bullet",
+    "texto": "Superficies, tablas por colores y utensilios limpios y desinfectados antes de empezar."
+   },
+   {
+    "i": 129,
+    "estilo": "List Bullet",
+    "texto": "Ropa limpia, pelo recogido y nada de joyas en las manos. Si estás enfermo, no manipules alimentos."
+   },
+   {
+    "i": 130,
+    "estilo": "List Bullet",
+    "texto": "Cubo de basura con tapa, y ningún aceite ni caldo al suelo."
+   },
+   {
+    "i": 131,
+    "estilo": "Heading 2",
+    "texto": "Registro mínimo de temperaturas"
+   },
+   {
+    "i": 132,
+    "estilo": "Normal",
+    "texto": "Una hoja por evento, con fecha y tu firma: temperatura de las neveras a la salida y a la llegada, temperatura al corazón de las carnes cocinadas, temperatura de mantenimiento del arroz, hora de fin de cocinado y de servicio, y destino de las sobras. Te protege ante una reclamación."
+   },
+   {
+    "i": 133,
+    "estilo": "Heading 1",
+    "texto": "10. Alérgenos por paella"
+   },
+   {
+    "i": 134,
+    "estilo": "Normal",
+    "texto": "El Reglamento (UE) 1169/2011 obliga a informar de los 14 alérgenos de su Anexo II: cereales con gluten, crustáceos, huevos, pescado, cacahuetes, soja, leche, frutos de cáscara, apio, mostaza, sésamo, dióxido de azufre y sulfitos, altramuces y moluscos. En un servicio de catering la información debe estar disponible para el cliente antes de que coma."
+   },
+   {
+    "i": 135,
+    "estilo": "Normal",
+    "texto": "La tabla se ha elaborado receta a receta a partir de los ingredientes de la Carta de 12 paellas y de los caldos de este manual."
+   },
+   {
+    "i": 136,
+    "estilo": "Heading 2",
+    "texto": "Tabla de alérgenos de las 12 paellas"
+   },
+   {
+    "i": 137,
+    "estilo": "Normal",
+    "texto": "Leyenda: Sí = presente en la receta · – = no figura en la receta · Alioli, Romesco, Picada, Pan = solo si sirves ese acompañamiento · Aparte = solo si sirves ese producto aparte · Verif. = verifica etiquetas de proveedor · Receta = según la receta del caldo."
+   },
+   {
+    "i": 139,
+    "estilo": "Normal",
+    "texto": "Notas de lectura:"
+   },
+   {
+    "i": 140,
+    "estilo": "List Bullet",
+    "texto": "Apio: está en los caldos base de este manual (pollo y conejo, fumet y vegetal). Si compras caldo hecho, lee la etiqueta. El caldo de calamar del manual no lo lleva."
+   },
+   {
+    "i": 141,
+    "estilo": "List Bullet",
+    "texto": "Moluscos: incluye mejillón, calamar y sepia."
+   },
+   {
+    "i": 142,
+    "estilo": "List Bullet",
+    "texto": "Sulfitos: ninguna receta de la carta lleva vino, pero gambas y langostinos pueden venir tratados con sulfitos y el vinagre de Jerez del romesco los contiene. Si ofreces vino, vermut o cava como maridaje, recuerda que también contienen sulfitos."
+   },
+   {
+    "i": 143,
+    "estilo": "List Bullet",
+    "texto": "Alioli: el clásico lleva huevo; la versión vegana con aquafaba no."
+   },
+   {
+    "i": 144,
+    "estilo": "List Bullet",
+    "texto": "Cacahuetes, soja, leche, mostaza, sésamo y altramuces no figuran en ninguna receta de la carta ni en las salsas de este manual. Aun así, verifica las fichas de tus proveedores: caldos comprados, ovoproductos o pan pueden llevar trazas. Si tu picada o tu romesco llevan pan frito, añade gluten."
+   },
+   {
+    "i": 145,
+    "estilo": "Heading 2",
+    "texto": "Salsas y acompañamientos"
+   },
+   {
+    "i": 147,
+    "estilo": "Normal",
+    "texto": "Entrega al cliente una ficha impresa con esta tabla adaptada a tu carta y ten a mano las etiquetas originales de los productos."
+   },
+   {
+    "i": 148,
+    "estilo": "Heading 1",
+    "texto": "11. Salsas y acompañamientos profesionales"
+   },
+   {
+    "i": 149,
+    "estilo": "Heading 2",
+    "texto": "Alioli artesano clásico"
+   },
+   {
+    "i": 150,
+    "estilo": "Normal",
+    "texto": "3 dientes de ajo + 1 huevo + sal + zumo de limón + 250 ml de AOVE. Emulsiona con turmix de abajo arriba muy lento. Resérvalo en frío 30 min antes de servir."
+   },
+   {
+    "i": 151,
+    "estilo": "Normal",
+    "texto": "Seguridad alimentaria: en eventos y servicios a terceros elabora el alioli con huevo pasteurizado (ovoproducto) o en su versión tradicional sin huevo (solo ajo y aceite), y mantenlo refrigerado por debajo de 8 °C hasta el servicio."
+   },
+   {
+    "i": 152,
+    "estilo": "Heading 2",
+    "texto": "Alioli de azafrán DO"
+   },
+   {
+    "i": 153,
+    "estilo": "Normal",
+    "texto": "Misma base + hebras de azafrán DO La Mancha infusionadas en 1 cucharada de agua caliente 10 min. Color amarillo brillante. Ideal para paella valenciana premium."
+   },
+   {
+    "i": 154,
+    "estilo": "Heading 2",
+    "texto": "Salsa romesco profesional"
+   },
+   {
+    "i": 155,
+    "estilo": "Normal",
+    "texto": "Tomate asado + ñora rehidratada + almendra tostada + ajo + AOVE + vinagre de Jerez. Tritura. Tradicional acompañante del arroz a banda y la fideuá."
+   },
+   {
+    "i": 156,
+    "estilo": "Heading 2",
+    "texto": "Picada catalana clásica"
+   },
+   {
+    "i": 157,
+    "estilo": "Normal",
+    "texto": "Almendra + avellana + ajo + perejil + AOVE + sal. Para fideuá y arroces de marisco. Añádela al final de la cocción para liberar aromas."
+   },
+   {
+    "i": 158,
+    "estilo": "Heading 1",
+    "texto": "12. Problemas y soluciones"
+   },
+   {
+    "i": 160,
+    "estilo": "Heading 1",
+    "texto": "13. Checklist de material para el evento"
+   },
+   {
+    "i": 161,
+    "estilo": "Normal",
+    "texto": "Marca cada línea antes de cargar la furgoneta."
+   },
+   {
+    "i": 162,
+    "estilo": "List Bullet",
+    "texto": "Paelleras del tamaño necesario, más una de reserva."
+   },
+   {
+    "i": 163,
+    "estilo": "List Bullet",
+    "texto": "Quemadores de gas con anillos limpios y comprobados, o trípode y fogón para leña."
+   },
+   {
+    "i": 164,
+    "estilo": "List Bullet",
+    "texto": "Bombonas llenas, con una de reserva."
+   },
+   {
+    "i": 165,
+    "estilo": "List Bullet",
+    "texto": "Manguera y regulador homologados, en buen estado y en fecha, y agua jabonosa para comprobar fugas."
+   },
+   {
+    "i": 166,
+    "estilo": "List Bullet",
+    "texto": "Extintor revisado y accesible, y cubo de arena si cocinas con leña."
+   },
+   {
+    "i": 167,
+    "estilo": "List Bullet",
+    "texto": "Nivel de burbuja, cuñas, pantallas cortavientos y guantes resistentes al calor."
+   },
+   {
+    "i": 168,
+    "estilo": "List Bullet",
+    "texto": "Paletas, cucharas de madera, espumaderas y cucharones."
+   },
+   {
+    "i": 169,
+    "estilo": "List Bullet",
+    "texto": "Termómetro de sonda y hoja de registro de temperaturas."
+   },
+   {
+    "i": 170,
+    "estilo": "List Bullet",
+    "texto": "Neveras isotérmicas con acumuladores de frío, y recipientes con tapa y etiquetas."
+   },
+   {
+    "i": 171,
+    "estilo": "List Bullet",
+    "texto": "Ollas o termos para el caldo caliente."
+   },
+   {
+    "i": 172,
+    "estilo": "List Bullet",
+    "texto": "Tablas por colores, cuchillos y mesas de trabajo."
+   },
+   {
+    "i": 173,
+    "estilo": "List Bullet",
+    "texto": "Lavamanos portátil con agua, jabón y papel desechable."
+   },
+   {
+    "i": 174,
+    "estilo": "List Bullet",
+    "texto": "Paños limpios para tapar las paellas en el reposo."
+   },
+   {
+    "i": 175,
+    "estilo": "List Bullet",
+    "texto": "Platos, cubiertos, servilletas y limones."
+   },
+   {
+    "i": 176,
+    "estilo": "List Bullet",
+    "texto": "Alioli y salsas en frío, y ficha de alérgenos impresa."
+   },
+   {
+    "i": 177,
+    "estilo": "List Bullet",
+    "texto": "Bolsas de basura, productos de limpieza y botiquín."
+   },
+   {
+    "i": 178,
+    "estilo": "Heading 1",
+    "texto": "14. Errores frecuentes del paellero amateur"
+   },
+   {
+    "i": 179,
+    "estilo": "List Bullet",
+    "texto": "Remover el arroz tras incorporar el caldo. NUNCA hacerlo."
+   },
+   {
+    "i": 180,
+    "estilo": "List Bullet",
+    "texto": "Caldo frío en vez de caliente. El arroz se cocina mal y queda crudo en el centro."
+   },
+   {
+    "i": 181,
+    "estilo": "List Bullet",
+    "texto": "Sofrito poco hecho. Es la base del sabor. Si está pálido, la paella no levanta."
+   },
+   {
+    "i": 182,
+    "estilo": "List Bullet",
+    "texto": "Demasiado fuego al inicio del arroz. Quema el fondo antes de hidratarse."
+   },
+   {
+    "i": 183,
+    "estilo": "List Bullet",
+    "texto": "Servir inmediatamente. Reposa siempre 5 min con paño tapando."
+   },
+   {
+    "i": 184,
+    "estilo": "List Bullet",
+    "texto": "No dimensionar la paellera al número de invitados. Apretar el arroz hace que se pase."
+   },
+   {
+    "i": 185,
+    "estilo": "List Bullet",
+    "texto": "Olvidar el socarrat. Es el sello del paellero profesional."
+   },
+   {
+    "i": 186,
+    "estilo": "List Bullet",
+    "texto": "No nivelar el quemador ni proteger la llama del viento."
+   },
+   {
+    "i": 187,
+    "estilo": "List Bullet",
+    "texto": "Dejar sobras de arroz a temperatura ambiente: es el mayor riesgo sanitario del servicio."
+   },
+   {
+    "i": 188,
+    "estilo": "List Bullet",
+    "texto": "No tener preparada la información de alérgenos antes del servicio."
+   }
+  ],
+  "tablas": [
+   [
+    [
+     "Arroz",
+     "Característica",
+     "Ratio caldo:arroz",
+     "Aplicación"
+    ],
+    [
+     "Bomba DO Valencia / Calasparra",
+     "Más absorción, no se pasa, robusta para principiantes",
+     "Hasta 3 partes de caldo por 1 de arroz",
+     "Paella valenciana, marisco, eventos populares"
+    ],
+    [
+     "J. Sendra DO Valencia",
+     "Equilibrio absorción + textura cremosa premium",
+     "2,5-2,8 partes caldo por 1 arroz",
+     "Boda exclusiva, restaurante gourmet"
+    ],
+    [
+     "Albufera DO Valencia",
+     "Granos cortos, alta absorción, textura suelta",
+     "2,5-3 partes caldo por 1 arroz",
+     "Paella tradicional, arroz a banda"
+    ],
+    [
+     "Sénia DO Valencia",
+     "Textura más cremosa que Bomba",
+     "2,3-2,7 partes caldo por 1 arroz",
+     "Paella senyoret, arroz meloso"
+    ],
+    [
+     "Bahía",
+     "Variedad económica, granos medios",
+     "2,2-2,5 partes caldo por 1 arroz",
+     "Paella popular, eventos de volumen"
+    ],
+    [
+     "Marisma / Líder",
+     "Variedad mayorista, calidad media",
+     "2,2-2,4 partes caldo por 1 arroz",
+     "Eventos masivos de más de 200 personas"
+    ]
+   ],
+   [
+    [
+     "Diámetro paellera",
+     "Raciones aprox.",
+     "Arroz (g)",
+     "Caldo (L)",
+     "Quemador recomendado"
+    ],
+    [
+     "50 cm",
+     "7-9",
+     "700",
+     "1,8",
+     "1 anillo, unos 25 cm"
+    ],
+    [
+     "60 cm",
+     "11-15",
+     "1.100",
+     "2,8",
+     "1-2 anillos, hasta 40 cm"
+    ],
+    [
+     "70 cm",
+     "16-21",
+     "1.600",
+     "4,0",
+     "2 anillos, hasta 50 cm"
+    ],
+    [
+     "80 cm",
+     "22-29",
+     "2.200",
+     "5,5",
+     "2 anillos, hasta 60 cm"
+    ],
+    [
+     "90 cm",
+     "30-40",
+     "3.000",
+     "7,5",
+     "3 anillos, hasta 70 cm"
+    ],
+    [
+     "100 cm",
+     "38-50",
+     "3.800",
+     "9,5",
+     "3 anillos, hasta 80 cm"
+    ],
+    [
+     "120 cm",
+     "60-80",
+     "6.000",
+     "15,0",
+     "4 anillos, hasta 100 cm"
+    ],
+    [
+     "150 cm",
+     "90-120",
+     "9.000",
+     "22,5",
+     "4-5 anillos, hasta 120 cm"
+    ]
+   ],
+   [
+    [
+     "Invitados",
+     "Opción recomendada",
+     "Raciones",
+     "Arroz total",
+     "Caldo total",
+     "Equipo"
+    ],
+    [
+     "50",
+     "2 paelleras de 90 cm",
+     "60",
+     "6 kg",
+     "17 L",
+     "1 paellero"
+    ],
+    [
+     "100",
+     "4 paelleras de 90 cm (o 2 de 120 cm)",
+     "120",
+     "12 kg",
+     "33 L",
+     "1 paellero + 1 ayudante"
+    ],
+    [
+     "200",
+     "6 paelleras de 100 cm (o 7 de 90 cm)",
+     "228",
+     "23 kg",
+     "63 L",
+     "2 paelleros + 1-2 ayudantes"
+    ]
+   ],
+   [
+    [
+     "Criterio",
+     "Gas",
+     "Leña"
+    ],
+    [
+     "Control del fuego",
+     "Muy alto: la llama se regula al instante y por anillos",
+     "Medio: depende de tu experiencia con llama y brasa"
+    ],
+    [
+     "Sabor",
+     "Neutro, deja el protagonismo al arroz",
+     "Aroma ahumado característico, muy apreciado"
+    ],
+    [
+     "Permisos",
+     "Suelen ser más sencillos; confirma con el recinto",
+     "Suelen exigir autorización del recinto y del ayuntamiento, sobre todo con riesgo de incendio"
+    ],
+    [
+     "Seguridad",
+     "Fugas, bombonas y mangueras: revisar antes de cada uso",
+     "Chispas, humo y brasas: zona despejada y extintor"
+    ],
+    [
+     "Coste",
+     "Quemador y bombonas; consumo fácil de calcular",
+     "Trípode o fogón y leña seca; más transporte y limpieza"
+    ]
+   ],
+   [
+    [
+     "Caldo",
+     "Base por litro de caldo final",
+     "Cocción",
+     "Rendimiento aprox."
+    ],
+    [
+     "Pollo y conejo",
+     "500-600 g de carcasa y huesos + 100 g de cada verdura",
+     "90-120 min",
+     "70-75 % del agua inicial"
+    ],
+    [
+     "Fumet de pescado",
+     "400-500 g de espinas y cabezas + 100 g de verdura blanca",
+     "25-30 min",
+     "85-90 %"
+    ],
+    [
+     "Calamar",
+     "250-300 g de patas y aletas + 100 g de cebolla y tomate",
+     "35-40 min",
+     "80-85 %"
+    ],
+    [
+     "Vegetal",
+     "600-700 g de verdura variada",
+     "40-45 min",
+     "85-90 %"
+    ]
+   ],
+   [
+    [
+     "Paella",
+     "Arroz",
+     "Min total",
+     "Ingredientes principales",
+     "Caldo",
+     "Tiempos por fase",
+     "Socarrat"
+    ],
+    [
+     "Paella valenciana DO",
+     "Bomba",
+     "30",
+     "Pollo + conejo + garrofó + ferraura + judía",
+     "Caldo pollo+conejo",
+     "5+5+5+10+5",
+     "Sí — corteza caramelo"
+    ],
+    [
+     "Paella de marisco",
+     "Bomba",
+     "25",
+     "Gamba + langostino + mejillón + calamar",
+     "Fumet pescado",
+     "Sofrito 8 + sellado 5 + caldo 12",
+     "Sí — tostado"
+    ],
+    [
+     "Paella senyoret pelada",
+     "Bomba o J. Sendra",
+     "20",
+     "Marisco pelado + alcachofa",
+     "Fumet pescado",
+     "Sofrito 6 + caldo 14",
+     "Sí"
+    ],
+    [
+     "Arroz negro de calamar",
+     "Bomba",
+     "20",
+     "Calamar + tinta + alioli aparte",
+     "Caldo calamar + tinta",
+     "Sofrito 8 + caldo 12",
+     "Sí"
+    ],
+    [
+     "Paella mixta",
+     "Bomba",
+     "27",
+     "Pollo + langostino + mejillón + verduras",
+     "Caldo pollo + fumet 50/50",
+     "Sofrito 8 + sellado 5 + caldo 14",
+     "Sí"
+    ],
+    [
+     "Arroz a banda",
+     "Albufera",
+     "23",
+     "Solo arroz con caldo de marisco — sin tropezones",
+     "Fumet pescado intenso",
+     "Sofrito 5 + caldo 18",
+     "Sí — corteza fina"
+    ],
+    [
+     "Fideuá",
+     "Fideo gordo n.4",
+     "21",
+     "Marisco + sepia + gamba + caldo pescado",
+     "Fumet + tomate",
+     "Sofrito 5 + sellado 4 + caldo 12",
+     "Sí"
+    ],
+    [
+     "Arroz meloso bogavante",
+     "Sénia",
+     "20",
+     "Bogavante medio + verduras + perejil",
+     "Caldo bogavante",
+     "Sofrito 6 + caldo 14",
+     "No — meloso"
+    ],
+    [
+     "Arroz caldoso bogavante",
+     "Sénia",
+     "22",
+     "Bogavante + caldo abundante + cucharón",
+     "Caldo bogavante",
+     "Sofrito 6 + caldo 16",
+     "No — caldoso"
+    ],
+    [
+     "Arroz montaña",
+     "Bomba",
+     "28",
+     "Pollo + conejo + cordero + champiñón + bosque",
+     "Caldo carne + setas",
+     "Sofrito 8 + sellado 6 + caldo 14",
+     "Sí"
+    ],
+    [
+     "Paella alicantina (con costra)",
+     "Bomba",
+     "30",
+     "Pollo + conejo + huevo encima horneado",
+     "Caldo pollo+conejo",
+     "Sofrito 8 + sellado 5 + caldo 12 + horno 5",
+     "Sí + costra huevo"
+    ],
+    [
+     "Paella vegetal DO",
+     "Bomba",
+     "29",
+     "Garrofó + ferraura + alcachofa + espárrago + pimiento",
+     "Caldo vegetal",
+     "Sofrito 8 + verduras 7 + caldo 14",
+     "Sí"
+    ]
+   ],
+   [
+    [
+     "Hora",
+     "Qué haces",
+     "Detalle"
+    ],
+    [
+     "10:30",
+     "Llegada y reconocimiento",
+     "Acceso, suelo, viento, sombra, agua y zona de lavado. Habla con el organizador"
+    ],
+    [
+     "10:45",
+     "Montaje de fuegos",
+     "Quemadores nivelados, bombonas fuera del alcance del público, manguera y regulador revisados, prueba de fugas"
+    ],
+    [
+     "11:30",
+     "Zona de trabajo",
+     "Mesas, neveras, lavamanos portátil, paelleras y utensilios. Anota la temperatura de las neveras"
+    ],
+    [
+     "12:00",
+     "Mise en place",
+     "Reparte ingredientes por paellera, pesa el arroz y comprueba el caldo disponible"
+    ],
+    [
+     "12:30",
+     "Caldos",
+     "Ponlos a calentar en un fuego aparte: deben estar calientes al empezar el arroz"
+    ],
+    [
+     "13:15",
+     "Preparación final",
+     "Paelleras sobre los fuegos con el aceite, ingredientes a mano y aviso al organizador"
+    ],
+    [
+     "13:20",
+     "Arranque de las de 30 min",
+     "Valenciana y alicantina"
+    ],
+    [
+     "13:25",
+     "Arranque de las de 25-29 min",
+     "Marisco, mixta, montaña y vegetal"
+    ],
+    [
+     "13:30",
+     "Arranque de las de 20-23 min",
+     "Senyoret, negro, a banda, fideuá y bogavante"
+    ],
+    [
+     "13:45",
+     "Socarrat",
+     "Las primeras paelleras entran en socarrat: escucha y huele, y retira cada una cuando toque (a partir de 13:50)"
+    ],
+    [
+     "13:55",
+     "Reposo",
+     "Retira del fuego y tapa con paño 5 min; saca el alioli de la nevera"
+    ],
+    [
+     "14:00",
+     "Servicio",
+     "Sirve caliente y mantén el resto tapado"
+    ],
+    [
+     "15:00",
+     "Fin de servicio",
+     "Control de temperatura y destino de las sobras (sección 9)"
+    ],
+    [
+     "15:30",
+     "Recogida",
+     "Fuegos apagados y fríos, bombonas cerradas, limpieza y carga"
+    ]
+   ],
+   [
+    [
+     "Paella",
+     "Crustáceos",
+     "Moluscos",
+     "Pescado",
+     "Gluten",
+     "Huevo",
+     "Frutos de cáscara",
+     "Apio",
+     "Sulfitos"
+    ],
+    [
+     "1. Paella valenciana DO",
+     "–",
+     "–",
+     "–",
+     "–",
+     "Alioli",
+     "–",
+     "Sí",
+     "–"
+    ],
+    [
+     "2. Paella de marisco premium",
+     "Sí",
+     "Sí",
+     "Sí",
+     "–",
+     "Sí (alioli)",
+     "–",
+     "Sí",
+     "Verif."
+    ],
+    [
+     "3. Paella senyoret pelada",
+     "Sí",
+     "Sí",
+     "Sí",
+     "–",
+     "Alioli",
+     "–",
+     "Sí",
+     "Verif."
+    ],
+    [
+     "4. Arroz negro de calamar",
+     "–",
+     "Sí",
+     "–",
+     "–",
+     "Alioli",
+     "–",
+     "–",
+     "–"
+    ],
+    [
+     "5. Paella mixta tradicional",
+     "Sí",
+     "Sí",
+     "Sí",
+     "–",
+     "Alioli",
+     "–",
+     "Sí",
+     "Verif."
+    ],
+    [
+     "6. Arroz a banda",
+     "Sí",
+     "Aparte",
+     "Sí",
+     "–",
+     "Alioli",
+     "Romesco",
+     "Sí",
+     "Romesco"
+    ],
+    [
+     "7. Fideuá",
+     "Sí",
+     "Sí",
+     "Sí",
+     "Sí",
+     "Alioli",
+     "Sí",
+     "Sí",
+     "Verif. + Romesco"
+    ],
+    [
+     "8. Arroz meloso de bogavante",
+     "Sí",
+     "–",
+     "Receta",
+     "–",
+     "–",
+     "–",
+     "Receta",
+     "Verif."
+    ],
+    [
+     "9. Arroz caldoso de bogavante",
+     "Sí",
+     "–",
+     "Receta",
+     "Pan",
+     "–",
+     "–",
+     "Receta",
+     "Verif."
+    ],
+    [
+     "10. Arroz de montaña",
+     "–",
+     "–",
+     "–",
+     "–",
+     "–",
+     "–",
+     "Receta",
+     "–"
+    ],
+    [
+     "11. Paella alicantina con costra",
+     "–",
+     "–",
+     "–",
+     "–",
+     "Sí",
+     "Picada",
+     "Sí",
+     "–"
+    ],
+    [
+     "12. Paella vegetal DO",
+     "–",
+     "–",
+     "–",
+     "–",
+     "–",
+     "–",
+     "Sí",
+     "–"
+    ]
+   ],
+   [
+    [
+     "Salsa",
+     "Alérgenos",
+     "Se sirve con"
+    ],
+    [
+     "Alioli artesano clásico",
+     "Huevo",
+     "Valenciana, marisco, senyoret, negro, mixta, a banda, fideuá"
+    ],
+    [
+     "Alioli de azafrán",
+     "Huevo",
+     "Valenciana premium"
+    ],
+    [
+     "Alioli vegano (aquafaba)",
+     "Ninguno de los 14 por receta",
+     "Paella vegetal"
+    ],
+    [
+     "Romesco",
+     "Frutos de cáscara (almendra), sulfitos (vinagre de Jerez)",
+     "Arroz a banda, fideuá"
+    ],
+    [
+     "Picada catalana",
+     "Frutos de cáscara (almendra, avellana)",
+     "Fideuá, paella alicantina"
+    ],
+    [
+     "Pan crujiente",
+     "Gluten",
+     "Arroz caldoso de bogavante"
+    ]
+   ],
+   [
+    [
+     "Problema",
+     "Causa probable",
+     "Cómo corregirlo"
+    ],
+    [
+     "Arroz duro o crudo en el centro",
+     "Caldo frío, poco caldo o fuego bajo en la fase 3",
+     "Añade caldo caliente por el borde, tapa unos minutos y sube la llama; la próxima vez calienta y mide mejor el caldo"
+    ],
+    [
+     "Arroz pasado o empastado",
+     "Exceso de caldo, arroz removido o reposo demasiado largo",
+     "No tiene vuelta atrás: sírvelo como arroz meloso y ajusta la proporción la próxima vez"
+    ],
+    [
+     "Sin socarrat",
+     "Fuego flojo al final o paellera muy llena",
+     "Fuego al máximo 3-5 min sin remover, con todos los anillos"
+    ],
+    [
+     "Fondo quemado",
+     "Fuego alto al inicio, sofrito pegado o paellera sin nivelar",
+     "Retira al primer olor a quemado, sirve sin raspar el fondo y revisa nivelado y llama"
+    ],
+    [
+     "Paella insípida",
+     "Sofrito pálido, caldo flojo o falta de sal",
+     "Prueba y rectifica el caldo antes del arroz; sofrito oscuro y caldo concentrado"
+    ],
+    [
+     "Sobra caldo",
+     "Fuego flojo, paellera plana o viento",
+     "Sube el fuego unos minutos; si el arroz ya está hecho, retira caldo con cuidado"
+    ],
+    [
+     "Falta caldo",
+     "Evaporación, viento o paellera grande",
+     "Añade caldo caliente por el borde en pequeñas tandas sin remover; lleva siempre margen"
+    ],
+    [
+     "Cocción desigual en paellera grande",
+     "Quemador mal nivelado o anillos mal regulados",
+     "Gira un cuarto de vuelta, baja el anillo que trabaja más y usa paelleras medianas"
+    ],
+    [
+     "Viento que desvía o apaga la llama",
+     "Llama expuesta, sin pantalla",
+     "Pantallas cortavientos, quemador orientado y paellera más pequeña"
+    ]
+   ]
+  ]
+ },
+ "carta_paellas": {
+  "parrafos": [
+   {
+    "i": 0,
+    "estilo": "Normal",
+    "texto": "Carta 12 Paellas y Arroces"
+   },
+   {
+    "i": 1,
+    "estilo": "Normal",
+    "texto": "Paellero / Paella para Eventos · Recetas profesionales · Food cost por ración · Maridaje"
+   },
+   {
+    "i": 2,
+    "estilo": "Normal",
+    "texto": "Versión técnica para uso interno + versión comercial para cliente"
+   },
+   {
+    "i": 3,
+    "estilo": "Normal",
+    "texto": "ChefBusiness Consultoría Gastronómica"
+   },
+   {
+    "i": 5,
+    "estilo": "Normal",
+    "texto": "Fiestas populares por volumen: una paella grande para un ayuntamiento o una comisión de fiestas, de 300-400 raciones o más, se cobra a 3-6 € por ración sin IVA, con una sola variedad y servicio en plato desechable. Referencias: contratos menores publicados en la Plataforma de Contratación del Sector Público (Sayalonga, 2025: 400 raciones de paella mixta con menaje y servicio por 1.480 €) y la ficha de un proveedor de paella gigante en Bodas.net (3-10 € por invitado, mínimo 300). En las fiestas privadas (cumpleaños, comuniones, peñas) con una paella y un entrante, el plan financiero usa 18 € por ración; una paella sola para grupos se cobra a 11-14 € por persona (tarifa publicada de un proveedor de Cataluña, 2026)."
+   },
+   {
+    "i": 6,
+    "estilo": "Normal",
+    "texto": "1. Paella Valenciana DO"
+   },
+   {
+    "i": 7,
+    "estilo": "Normal",
+    "texto": "Tradicional · Auténtica"
+   },
+   {
+    "i": 8,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Pollo de corral + conejo + garrofó + ferraura + judía verde + tomate maduro + AOVE + arroz Bomba DO + caldo casero + azafrán DO La Mancha + romero + sal."
+   },
+   {
+    "i": 9,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Limón en cuartos · Alioli artesano"
+   },
+   {
+    "i": 10,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Verdejo DO Rueda joven · Vermut artesano"
+   },
+   {
+    "i": 11,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 2,20 € por ración"
+   },
+   {
+    "i": 12,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 26-32 €"
+   },
+   {
+    "i": 13,
+    "estilo": "Normal",
+    "texto": "2. Paella de Marisco Premium"
+   },
+   {
+    "i": 14,
+    "estilo": "Normal",
+    "texto": "Marisco · Mediterráneo"
+   },
+   {
+    "i": 15,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Gamba roja DO Denia + langostino del Mediterráneo + mejillón gallego + calamar + cigala (opc.) + sofrito + arroz Bomba + fumet de pescado + azafrán + alioli al ajo asado."
+   },
+   {
+    "i": 16,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Limón · Alioli al ajo asado"
+   },
+   {
+    "i": 17,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Albariño DO Rías Baixas"
+   },
+   {
+    "i": 18,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 5,80 € por ración"
+   },
+   {
+    "i": 19,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 35-45 €"
+   },
+   {
+    "i": 20,
+    "estilo": "Normal",
+    "texto": "3. Paella Senyoret Pelada"
+   },
+   {
+    "i": 21,
+    "estilo": "Normal",
+    "texto": "Premium · Cómoda"
+   },
+   {
+    "i": 22,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Marisco totalmente pelado (gambas + langostinos peladas + sepia limpia) + alcachofa + verduras + arroz Bomba + fumet intenso + azafrán."
+   },
+   {
+    "i": 23,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Cuchara apoyo · Alioli"
+   },
+   {
+    "i": 24,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Verdejo joven · Cava brut nature"
+   },
+   {
+    "i": 25,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 5,20 € por ración"
+   },
+   {
+    "i": 26,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 32-38 €"
+   },
+   {
+    "i": 27,
+    "estilo": "Normal",
+    "texto": "4. Arroz Negro de Calamar"
+   },
+   {
+    "i": 28,
+    "estilo": "Normal",
+    "texto": "Marisco · Visual"
+   },
+   {
+    "i": 29,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Calamar limpio + sofrito + tinta de calamar + arroz Bomba + caldo de calamar + alioli aparte como contraste blanco visual."
+   },
+   {
+    "i": 30,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Alioli artesano blanco"
+   },
+   {
+    "i": 31,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Albariño · Verdejo"
+   },
+   {
+    "i": 32,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 3,60 € por ración"
+   },
+   {
+    "i": 33,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 26-32 €"
+   },
+   {
+    "i": 34,
+    "estilo": "Normal",
+    "texto": "5. Paella Mixta Tradicional"
+   },
+   {
+    "i": 35,
+    "estilo": "Normal",
+    "texto": "Versátil · Familiar"
+   },
+   {
+    "i": 36,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Pollo + langostino + mejillón + calamar + sofrito + verduras + arroz Bomba + caldo mixto pollo+pescado."
+   },
+   {
+    "i": 37,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Limón · Alioli"
+   },
+   {
+    "i": 38,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Tinto joven · Rosado"
+   },
+   {
+    "i": 39,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 3,50 € por ración"
+   },
+   {
+    "i": 40,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 22-28 €"
+   },
+   {
+    "i": 41,
+    "estilo": "Normal",
+    "texto": "6. Arroz a Banda"
+   },
+   {
+    "i": 42,
+    "estilo": "Normal",
+    "texto": "Levante · Esencial"
+   },
+   {
+    "i": 43,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Solo arroz con caldo de pescado intenso, sin tropezones. Acompaña al servicio del pescado y marisco aparte. Tradición Levante."
+   },
+   {
+    "i": 44,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Romesco aparte · Alioli"
+   },
+   {
+    "i": 45,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Verdejo · Albariño"
+   },
+   {
+    "i": 46,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 3,40 € por ración"
+   },
+   {
+    "i": 47,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 22-28 €"
+   },
+   {
+    "i": 48,
+    "estilo": "Normal",
+    "texto": "7. Fideuá"
+   },
+   {
+    "i": 49,
+    "estilo": "Normal",
+    "texto": "Marisco · Diferencial"
+   },
+   {
+    "i": 50,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Fideo n.4 + sepia + langostino + caldo pescado + tomate + ajo + perejil + picada al final."
+   },
+   {
+    "i": 51,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Romesco · Alioli"
+   },
+   {
+    "i": 52,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Verdejo · Vino blanco joven"
+   },
+   {
+    "i": 53,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 3,50 € por ración"
+   },
+   {
+    "i": 54,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 24-30 €"
+   },
+   {
+    "i": 55,
+    "estilo": "Normal",
+    "texto": "8. Arroz Meloso de Bogavante"
+   },
+   {
+    "i": 56,
+    "estilo": "Normal",
+    "texto": "Premium · Gourmet"
+   },
+   {
+    "i": 57,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Bogavante mediano + sofrito + arroz Sénia + caldo de bogavante + perejil. Textura melosa cremosa final."
+   },
+   {
+    "i": 58,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Cuchara · Limón"
+   },
+   {
+    "i": 59,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Champagne · Cava reserva"
+   },
+   {
+    "i": 60,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 6,00 € por ración"
+   },
+   {
+    "i": 61,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 38-48 €"
+   },
+   {
+    "i": 62,
+    "estilo": "Normal",
+    "texto": "9. Arroz Caldoso de Bogavante"
+   },
+   {
+    "i": 63,
+    "estilo": "Normal",
+    "texto": "Premium · Calor"
+   },
+   {
+    "i": 64,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Bogavante + sofrito + arroz Sénia + caldo abundante de bogavante + perejil. Servido en cucharón."
+   },
+   {
+    "i": 65,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Cuchara · Pan crujiente"
+   },
+   {
+    "i": 66,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Albariño · Verdejo"
+   },
+   {
+    "i": 67,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 6,00 € por ración"
+   },
+   {
+    "i": 68,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 36-46 €"
+   },
+   {
+    "i": 69,
+    "estilo": "Normal",
+    "texto": "10. Arroz de Montaña"
+   },
+   {
+    "i": 70,
+    "estilo": "Normal",
+    "texto": "Carne · Otoño-invierno"
+   },
+   {
+    "i": 71,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Pollo + conejo + cordero + champiñón + setas de bosque + arroz Bomba + caldo de carne + romero."
+   },
+   {
+    "i": 72,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Limón · AOVE de Jaén"
+   },
+   {
+    "i": 73,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Tinto joven · Crianza"
+   },
+   {
+    "i": 74,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 3,20 € por ración"
+   },
+   {
+    "i": 75,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 26-32 €"
+   },
+   {
+    "i": 76,
+    "estilo": "Normal",
+    "texto": "11. Paella Alicantina con Costra"
+   },
+   {
+    "i": 77,
+    "estilo": "Normal",
+    "texto": "Tradicional · Singular"
+   },
+   {
+    "i": 78,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Pollo + conejo + arroz Bomba + caldo + huevo batido encima al final + horno 5 min para gratinar la costra dorada."
+   },
+   {
+    "i": 79,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Limón · Picada"
+   },
+   {
+    "i": 80,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Verdejo · Tinto joven"
+   },
+   {
+    "i": 81,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 3,40 € por ración"
+   },
+   {
+    "i": 82,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 26-32 €"
+   },
+   {
+    "i": 83,
+    "estilo": "Normal",
+    "texto": "12. Paella Vegetal DO Inclusive"
+   },
+   {
+    "i": 84,
+    "estilo": "Normal",
+    "texto": "Vegetariana / Vegana"
+   },
+   {
+    "i": 85,
+    "estilo": "Normal",
+    "texto": "Ingredientes: Garrofó + ferraura + alcachofa + espárrago + pimiento del piquillo DO Lodosa + arroz Bomba + caldo vegetal aromático + azafrán."
+   },
+   {
+    "i": 86,
+    "estilo": "Normal",
+    "texto": "Acompañamientos: Limón · Alioli (vegano: aquafaba)"
+   },
+   {
+    "i": 87,
+    "estilo": "Normal",
+    "texto": "Maridaje recomendado: Verdejo · Vermut"
+   },
+   {
+    "i": 88,
+    "estilo": "Normal",
+    "texto": "Food cost de la paella (sin entrantes): 2,00 € por ración"
+   },
+   {
+    "i": 89,
+    "estilo": "Normal",
+    "texto": "PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): 22-28 €"
+   }
+  ],
+  "tablas": []
+ },
+ "experiencias_10": {
+  "parrafos": [
+   {
+    "i": 0,
+    "estilo": "Normal",
+    "texto": "10 Experiencias Temáticas"
+   },
+   {
+    "i": 1,
+    "estilo": "Normal",
+    "texto": "Paellero / Paella para Eventos · Catálogo comercial"
+   },
+   {
+    "i": 2,
+    "estilo": "Normal",
+    "texto": "Cada experiencia con concepto, pax recomendado, ticket y storytelling"
+   },
+   {
+    "i": 3,
+    "estilo": "Normal",
+    "texto": "ChefBusiness Consultoría Gastronómica"
+   },
+   {
+    "i": 5,
+    "estilo": "Normal",
+    "texto": "Introducción"
+   },
+   {
+    "i": 6,
+    "estilo": "Normal",
+    "texto": "Las 10 experiencias temáticas son productos comerciales empaquetados que el paellero ofrece a clientes B2C y B2B. Cada una tiene su ticket recomendado y su storytelling, y puedes preparar su dossier visual para presentarla. Vender experiencias en lugar de menús te deja cobrar la experiencia y no solo el plato, y mejora la percepción premium del servicio."
+   },
+   {
+    "i": 7,
+    "estilo": "Normal",
+    "texto": "1. Boda en Finca · Paella Valenciana DO"
+   },
+   {
+    "i": 8,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2B wedding planners + B2C particular bodas"
+   },
+   {
+    "i": 9,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 60-150 pax"
+   },
+   {
+    "i": 10,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 26-38 €/pax"
+   },
+   {
+    "i": 11,
+    "estilo": "Normal",
+    "texto": "La paella valenciana auténtica con DO, garrofó, ferraura, conejo de campo y pollo de corral. Cocinada en directo en la finca con showcooking explicativo. Servicio en vajilla cerámica premium con alioli artesano y mantel cream estilo rural."
+   },
+   {
+    "i": 12,
+    "estilo": "Normal",
+    "texto": "2. Corporate Showcooking · Paella Marisco Premium"
+   },
+   {
+    "i": 13,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2B agencias eventos + empresas"
+   },
+   {
+    "i": 14,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 40-80 pax"
+   },
+   {
+    "i": 15,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 32-45 €/pax"
+   },
+   {
+    "i": 16,
+    "estilo": "Normal",
+    "texto": "Paella de marisco con gamba roja DO Denia, langostinos del Mediterráneo, mejillón y calamar. Showcooking en terraza corporate con narrativa explicativa del paellero. Maridaje con vino Albariño DO Rías Baixas. Imagen perfecta para eventos de team-building y comidas anuales."
+   },
+   {
+    "i": 17,
+    "estilo": "Normal",
+    "texto": "3. Fiesta del Pueblo · Paella Popular Comunitaria"
+   },
+   {
+    "i": 18,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2B ayuntamientos + asociaciones"
+   },
+   {
+    "i": 19,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 150-400 pax"
+   },
+   {
+    "i": 20,
+    "estilo": "Normal",
+    "texto": "Ticket por ración: 3-6 € sin IVA para el ayuntamiento (volumen, una variedad); 12-18 € si es la comida de una peña con entrante y servicio"
+   },
+   {
+    "i": 21,
+    "estilo": "Normal",
+    "texto": "Paella mixta gigante para fiesta popular del pueblo. En paelleras de 120-150 cm, con gas o con leña donde esté permitido. Servicio en bandejas comunes. Concepto que conecta con la tradición valenciana y andaluza de las paellas comunitarias."
+   },
+   {
+    "i": 22,
+    "estilo": "Normal",
+    "texto": "4. Bautizo · Paella Mixta Familiar"
+   },
+   {
+    "i": 23,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2C particular bautizos / comuniones"
+   },
+   {
+    "i": 24,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 40-80 pax"
+   },
+   {
+    "i": 25,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 22-28 €/pax"
+   },
+   {
+    "i": 26,
+    "estilo": "Normal",
+    "texto": "Concepto familiar con paella mixta (pollo + marisco) para que niños y adultos disfruten. Servicio en finca particular o jardín. Mesa con flores y mantel cream. Showcooking ligero con explicación al niño protagonista."
+   },
+   {
+    "i": 27,
+    "estilo": "Normal",
+    "texto": "5. Cumpleaños · Paella Senyoret Pelada"
+   },
+   {
+    "i": 28,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2C particular cumpleaños"
+   },
+   {
+    "i": 29,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 20-40 pax"
+   },
+   {
+    "i": 30,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 25-32 €/pax"
+   },
+   {
+    "i": 31,
+    "estilo": "Normal",
+    "texto": "Paella senyoret (todo pelado) para cumpleaños premium. Sin necesidad de pelar marisco durante la comida. Servicio en mesa con velas y mantel decorado. Concepto cómodo y elegante."
+   },
+   {
+    "i": 32,
+    "estilo": "Normal",
+    "texto": "6. Falles + Festes · Paella Tradicional Valenciana"
+   },
+   {
+    "i": 33,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2B asociaciones falleras + B2C grupos"
+   },
+   {
+    "i": 34,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 80-200 pax"
+   },
+   {
+    "i": 35,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 16-24 €/pax"
+   },
+   {
+    "i": 36,
+    "estilo": "Normal",
+    "texto": "Paella valenciana DO en marzo (Falles Valencia) o junio (Fogueres de Sant Joan, Alicante). Conexión cultural con la tradición. Servicio comunitario con mantel falleros y showcooking en directo."
+   },
+   {
+    "i": 37,
+    "estilo": "Normal",
+    "texto": "7. Boda Exclusiva 5* · Arroz Negro y Senyoret Premium"
+   },
+   {
+    "i": 38,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2B wedding planners luxury + B2C bodas exclusivas"
+   },
+   {
+    "i": 39,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 80-150 pax"
+   },
+   {
+    "i": 40,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 38-55 €/pax"
+   },
+   {
+    "i": 41,
+    "estilo": "Normal",
+    "texto": "Concepto premium con dos arroces: arroz negro de calamar con alioli y paella senyoret de marisco gourmet. Vajilla cerámica artesanal Pordamsa. Maridaje con vino Verdejo DO Rueda. Imagen perfecta para boda 5* en finca exclusiva."
+   },
+   {
+    "i": 42,
+    "estilo": "Normal",
+    "texto": "8. Hotel Show Cooking · Paella en Restaurante"
+   },
+   {
+    "i": 43,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2B hoteles 4-5*"
+   },
+   {
+    "i": 44,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 30-60 pax"
+   },
+   {
+    "i": 45,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 30-42 €/pax"
+   },
+   {
+    "i": 46,
+    "estilo": "Normal",
+    "texto": "Show cooking en restaurante de hotel con paella visible para huéspedes. Concepto que diferencia al hotel de la competencia. Sesión de 2 horas con explicación al cliente. Posible recurrente semanal en temporada alta."
+   },
+   {
+    "i": 47,
+    "estilo": "Normal",
+    "texto": "9. Paella Vegetariana / Vegana DO"
+   },
+   {
+    "i": 48,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2C + B2B con clientes con restricciones"
+   },
+   {
+    "i": 49,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 30-80 pax"
+   },
+   {
+    "i": 50,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 22-32 €/pax"
+   },
+   {
+    "i": 51,
+    "estilo": "Normal",
+    "texto": "Paella 100 % vegetariana o vegana con garrofó, ferraura, alcachofa, espárrago, pimiento del piquillo DO. Caldo vegetal. Concepto cada vez más demandado en bodas y corporate inclusive. Diferenciador clave para captar segmento ético."
+   },
+   {
+    "i": 52,
+    "estilo": "Normal",
+    "texto": "10. Brunch Mediterráneo · Arroz Banda + Fideuá"
+   },
+   {
+    "i": 53,
+    "estilo": "Normal",
+    "texto": "Segmento objetivo: B2C grupos + B2B corporate"
+   },
+   {
+    "i": 54,
+    "estilo": "Normal",
+    "texto": "Pax recomendado: 30-70 pax"
+   },
+   {
+    "i": 55,
+    "estilo": "Normal",
+    "texto": "Ticket por pax: 26-36 €/pax"
+   },
+   {
+    "i": 56,
+    "estilo": "Normal",
+    "texto": "Concepto brunch con arroz a banda + fideuá como protagonistas. Servido en formato familiar. Maridaje con vermut artesano + cerveza artesanal local. Concepto perfecto para domingo de verano en terraza o jardín."
+   }
+  ],
+  "tablas": []
+ },
+ "contrato": {
+  "parrafos": [
+   {
+    "i": 0,
+    "estilo": "Normal",
+    "texto": "Modelos de Contrato — Paellero / Paella para Eventos"
+   },
+   {
+    "i": 1,
+    "estilo": "Normal",
+    "texto": "Plantillas legales editables · Modelo B2C particular + Modelo B2B profesional"
+   },
+   {
+    "i": 2,
+    "estilo": "Normal",
+    "texto": "Plantillas orientativas: revísalas con tu asesor antes de usarlas y adapta nombre, fecha, importe y demás datos"
+   },
+   {
+    "i": 3,
+    "estilo": "Normal",
+    "texto": "ChefBusiness Consultoría Gastronómica"
+   },
+   {
+    "i": 5,
+    "estilo": "Normal",
+    "texto": "MODELO 1 — Contrato B2C particular"
+   },
+   {
+    "i": 6,
+    "estilo": "Normal",
+    "texto": "En [Ciudad], a [Fecha]."
+   },
+   {
+    "i": 7,
+    "estilo": "Normal",
+    "texto": "REUNIDOS: De una parte, [Nombre del Paellero], con NIF [NIF], domicilio fiscal [Dirección], en nombre propio o en representación de [Razón social del Paellero] (en adelante, \"el Paellero\")."
+   },
+   {
+    "i": 8,
+    "estilo": "Normal",
+    "texto": "Y de otra parte, [Nombre del Cliente], con DNI [DNI], domicilio en [Dirección] (en adelante, \"el Cliente\")."
+   },
+   {
+    "i": 9,
+    "estilo": "Normal",
+    "texto": "Ambas partes se reconocen capacidad legal suficiente para contratar y, a tal efecto, EXPONEN:"
+   },
+   {
+    "i": 10,
+    "estilo": "Normal",
+    "texto": "PRIMERA — Objeto del contrato"
+   },
+   {
+    "i": 11,
+    "estilo": "Normal",
+    "texto": "Por el presente contrato, el Paellero se compromete a prestar al Cliente el servicio de paella en directo para [número de comensales] comensales, en el evento que se celebrará en [Lugar del Evento], el día [Fecha del Evento], desde [hora inicio] hasta [hora fin]."
+   },
+   {
+    "i": 12,
+    "estilo": "Normal",
+    "texto": "SEGUNDA — Servicios incluidos"
+   },
+   {
+    "i": 13,
+    "estilo": "List Bullet",
+    "texto": "Paellero profesional + ayudante (si aplica)."
+   },
+   {
+    "i": 14,
+    "estilo": "List Bullet",
+    "texto": "Equipamiento: paellera profesional + paellero gas + utensilios + vajilla cerámica + cubertería."
+   },
+   {
+    "i": 15,
+    "estilo": "List Bullet",
+    "texto": "Ingredientes premium: arroz DO Valencia + ingredientes según menú acordado."
+   },
+   {
+    "i": 16,
+    "estilo": "List Bullet",
+    "texto": "Showcooking explicativo en directo durante la cocción."
+   },
+   {
+    "i": 17,
+    "estilo": "List Bullet",
+    "texto": "Servicio en mesa o emplatado individual según briefing."
+   },
+   {
+    "i": 18,
+    "estilo": "List Bullet",
+    "texto": "Limpieza completa de la zona tras el servicio."
+   },
+   {
+    "i": 19,
+    "estilo": "Normal",
+    "texto": "TERCERA — Importe y forma de pago"
+   },
+   {
+    "i": 20,
+    "estilo": "Normal",
+    "texto": "El importe total del servicio asciende a [Importe Total] € (IVA incluido). El pago se estructurará de la siguiente manera:"
+   },
+   {
+    "i": 21,
+    "estilo": "List Bullet",
+    "texto": "30 % de anticipo a la firma del presente contrato: [Importe Anticipo] €."
+   },
+   {
+    "i": 22,
+    "estilo": "List Bullet",
+    "texto": "70 % restante el día del evento, una vez finalizado el servicio: [Importe Final] €."
+   },
+   {
+    "i": 23,
+    "estilo": "List Bullet",
+    "texto": "Forma de pago: transferencia bancaria a IBAN [IBAN del Paellero] o en efectivo el día del evento solo si el pago es inferior a 1.000 € (la ley prohíbe pagar en efectivo 1.000 € o más entre un empresario y un consumidor, art. 7 de la Ley 7/2012)."
+   },
+   {
+    "i": 24,
+    "estilo": "Normal",
+    "texto": "CUARTA — Cancelaciones"
+   },
+   {
+    "i": 25,
+    "estilo": "List Bullet",
+    "texto": "Cancelación por el Cliente con más de 60 días de antelación: el Cliente abonará el 30 % del importe total del servicio (cubierto con el anticipo ya entregado)."
+   },
+   {
+    "i": 26,
+    "estilo": "List Bullet",
+    "texto": "Cancelación por el Cliente entre 60 y 30 días antes del evento: el Cliente abonará el 50 % del importe total del servicio."
+   },
+   {
+    "i": 27,
+    "estilo": "List Bullet",
+    "texto": "Cancelación por el Cliente con menos de 30 días de antelación: el Cliente abonará el 75 % del importe total del servicio."
+   },
+   {
+    "i": 28,
+    "estilo": "List Bullet",
+    "texto": "Cancelación por el Cliente en las 72 horas previas al evento: el Cliente abonará el 100 % del importe total del servicio."
+   },
+   {
+    "i": 29,
+    "estilo": "List Bullet",
+    "texto": "Cancelación por el Paellero sin causa justificada: el Paellero devolverá al Cliente todas las cantidades recibidas y le abonará, además, una indemnización equivalente a la que correspondería al Cliente según la escala anterior en función de la antelación con la que se produzca la cancelación. Quedan exceptuados los supuestos de fuerza mayor de la cláusula quinta."
+   },
+   {
+    "i": 30,
+    "estilo": "Normal",
+    "texto": "Al tratarse de un servicio de comida con fecha determinada, el Cliente no dispone del derecho de desistimiento (art. 103.l del Texto Refundido de la Ley General para la Defensa de los Consumidores y Usuarios)."
+   },
+   {
+    "i": 31,
+    "estilo": "Normal",
+    "texto": "QUINTA — Fuerza mayor"
+   },
+   {
+    "i": 32,
+    "estilo": "Normal",
+    "texto": "En caso de fuerza mayor (catástrofe natural, prohibición administrativa, condiciones meteorológicas extremas declaradas por AEMET, intervención de la autoridad sanitaria, la prohibición del uso del fuego o del gas por la época o el nivel de peligro de incendios), ambas partes podrán reprogramar el evento sin coste adicional. Antes de reprogramar, las partes intentarán el plan B pactado en el briefing (cocina del recinto o equipos sin llama). Si la reprogramación no es posible, se devolverá el anticipo al Cliente íntegramente."
+   },
+   {
+    "i": 33,
+    "estilo": "Normal",
+    "texto": "SEXTA — Responsabilidad civil y seguros"
+   },
+   {
+    "i": 34,
+    "estilo": "Normal",
+    "texto": "El Paellero declara tener póliza de Responsabilidad Civil Profesional vigente con cobertura mínima de 600.000 €, incluyendo cobertura específica por intoxicación alimentaria. El Paellero no será responsable de daños derivados de uso indebido del lugar por terceros ajenos al servicio."
+   },
+   {
+    "i": 35,
+    "estilo": "Normal",
+    "texto": "SÉPTIMA — Protección de datos (RGPD)"
+   },
+   {
+    "i": 36,
+    "estilo": "Normal",
+    "texto": "El Paellero tratará los datos personales del Cliente conforme a la normativa RGPD vigente. Los datos serán utilizados exclusivamente para la gestión del presente contrato. El Cliente podrá ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a [email del Paellero]."
+   },
+   {
+    "i": 37,
+    "estilo": "Normal",
+    "texto": "OCTAVA — Derechos de imagen"
+   },
+   {
+    "i": 38,
+    "estilo": "Normal",
+    "texto": "El Paellero podrá tomar fotografías del servicio (no de los invitados sin consentimiento) para uso promocional. El Cliente declara haber sido informado y otorga su consentimiento. Si el Cliente desea exclusión, lo notificará por escrito antes del evento."
+   },
+   {
+    "i": 39,
+    "estilo": "Normal",
+    "texto": "NOVENA — Jurisdicción"
+   },
+   {
+    "i": 40,
+    "estilo": "Normal",
+    "texto": "Para cualquier controversia derivada del presente contrato, al tratarse de un contrato con consumidor serán competentes los Juzgados y Tribunales del domicilio del Cliente. Si el Cliente contrata como empresa, serán competentes los Juzgados y Tribunales de [Ciudad] que las partes pacten."
+   },
+   {
+    "i": 41,
+    "estilo": "Normal",
+    "texto": "Y en prueba de conformidad, ambas partes firman el presente contrato."
+   },
+   {
+    "i": 42,
+    "estilo": "Normal",
+    "texto": "Firma del Paellero: ________________      Firma del Cliente: ________________"
+   },
+   {
+    "i": 43,
+    "estilo": "Normal",
+    "texto": "MODELO 2 — Contrato B2B profesional (wedding planner / agencia)"
+   },
+   {
+    "i": 44,
+    "estilo": "Normal",
+    "texto": "En [Ciudad], a [Fecha]."
+   },
+   {
+    "i": 45,
+    "estilo": "Normal",
+    "texto": "REUNIDOS: De una parte, [Nombre del Paellero], con NIF [NIF], en nombre propio o en representación de [Razón social del Paellero] (\"el Paellero\")."
+   },
+   {
+    "i": 46,
+    "estilo": "Normal",
+    "texto": "Y de otra parte, [Razón Social Wedding Planner / Agencia], con CIF [CIF], domicilio social en [Dirección], representada por [Nombre del Representante] con DNI [DNI] (\"la Agencia\"), actuando en nombre y por cuenta del Cliente Final identificado en el Anexo I."
+   },
+   {
+    "i": 47,
+    "estilo": "Normal",
+    "texto": "PRIMERA — Objeto y servicios"
+   },
+   {
+    "i": 48,
+    "estilo": "Normal",
+    "texto": "El Paellero se compromete a prestar el servicio de paella profesional para el evento especificado en el Anexo I (Briefing del Evento), incluyendo todos los servicios listados en el Anexo II (Servicios Detallados)."
+   },
+   {
+    "i": 49,
+    "estilo": "Normal",
+    "texto": "SEGUNDA — Tarifa y facturación"
+   },
+   {
+    "i": 50,
+    "estilo": "Normal",
+    "texto": "El precio acordado se factura directamente a la Agencia, según las condiciones del Anexo III (Anexo Tarifario). La Agencia gestionará el cobro al Cliente Final en su nombre. La factura del Paellero se emitirá a la Agencia con IVA al 10 % (servicio de hostelería, art. 91.Uno.2.2.º de la Ley 37/1992 del IVA)."
+   },
+   {
+    "i": 51,
+    "estilo": "Normal",
+    "texto": "TERCERA — Plazos de pago"
+   },
+   {
+    "i": 52,
+    "estilo": "List Bullet",
+    "texto": "Anticipo del 30 % a la firma del contrato."
+   },
+   {
+    "i": 53,
+    "estilo": "List Bullet",
+    "texto": "Saldo del 70 % a 30 días desde la fecha de factura tras la celebración del evento."
+   },
+   {
+    "i": 54,
+    "estilo": "List Bullet",
+    "texto": "Penalización por demora: el interés de demora del art. 7 de la Ley 3/2004 en caso de retraso superior a 15 días."
+   },
+   {
+    "i": 55,
+    "estilo": "Normal",
+    "texto": "CUARTA — SLA y compromisos del Paellero"
+   },
+   {
+    "i": 56,
+    "estilo": "List Bullet",
+    "texto": "Disponibilidad telefónica del Paellero por evento: T-30, T-15, T-7, T-3, T-1."
+   },
+   {
+    "i": 57,
+    "estilo": "List Bullet",
+    "texto": "Visita técnica al lugar del evento si > 80 pax o ubicación no estándar."
+   },
+   {
+    "i": 58,
+    "estilo": "List Bullet",
+    "texto": "Llegada al lugar del evento con margen mínimo 45 min sobre hora estimada."
+   },
+   {
+    "i": 59,
+    "estilo": "List Bullet",
+    "texto": "Imagen profesional: uniformidad + EPI homologado + comunicación correcta con invitados."
+   },
+   {
+    "i": 60,
+    "estilo": "List Bullet",
+    "texto": "Limpieza del lugar tras servicio + foto de estado para protección RC."
+   },
+   {
+    "i": 61,
+    "estilo": "List Bullet",
+    "texto": "Capacidad de aporte de menú alternativo en caso de alergias o restricciones declaradas."
+   },
+   {
+    "i": 62,
+    "estilo": "Normal",
+    "texto": "QUINTA — Cancelaciones B2B"
+   },
+   {
+    "i": 63,
+    "estilo": "Normal",
+    "texto": "Las cancelaciones B2B se rigen por el principio de protección comercial mutua. Las condiciones específicas son:"
+   },
+   {
+    "i": 64,
+    "estilo": "List Bullet",
+    "texto": "Más de 60 días antes: devolución 100 % del anticipo."
+   },
+   {
+    "i": 65,
+    "estilo": "List Bullet",
+    "texto": "Entre 60 y 30 días: retención 30 % del anticipo."
+   },
+   {
+    "i": 66,
+    "estilo": "List Bullet",
+    "texto": "Entre 30 y 15 días: retención 60 % del anticipo + factura por gestión 200 €."
+   },
+   {
+    "i": 67,
+    "estilo": "List Bullet",
+    "texto": "Menos de 15 días: facturación del 100 % del importe."
+   },
+   {
+    "i": 68,
+    "estilo": "Normal",
+    "texto": "QUINTA BIS — Fuerza mayor"
+   },
+   {
+    "i": 69,
+    "estilo": "Normal",
+    "texto": "En caso de fuerza mayor (catástrofe natural, prohibición administrativa, condiciones meteorológicas extremas declaradas por AEMET, intervención de la autoridad sanitaria o prohibición del uso del fuego o del gas por la época o el nivel de peligro de incendios), las partes intentarán primero el plan B pactado en el Anexo I (cocina del recinto o equipos sin llama); si no es posible, reprogramarán el evento sin coste adicional, y si la reprogramación tampoco lo es, el Paellero devolverá íntegramente el anticipo a la Agencia."
+   },
+   {
+    "i": 70,
+    "estilo": "Normal",
+    "texto": "SEXTA — RC profesional ampliada"
+   },
+   {
+    "i": 71,
+    "estilo": "Normal",
+    "texto": "El Paellero declara tener póliza RC profesional con cobertura de [600.000] € como mínimo, incluyendo intoxicación alimentaria, daños a terceros e incidente material. La póliza es exclusiva del Paellero — la Agencia no asume responsabilidad por incidentes derivados del servicio."
+   },
+   {
+    "i": 72,
+    "estilo": "Normal",
+    "texto": "SÉPTIMA — Confidencialidad"
+   },
+   {
+    "i": 73,
+    "estilo": "Normal",
+    "texto": "Ambas partes se comprometen a mantener confidencialidad sobre los datos del Cliente Final, el importe acordado y cualquier información comercial intercambiada. La obligación se extiende durante 3 años desde la firma del contrato."
+   },
+   {
+    "i": 74,
+    "estilo": "Normal",
+    "texto": "OCTAVA — Ámbito territorial"
+   },
+   {
+    "i": 75,
+    "estilo": "Normal",
+    "texto": "El Paellero atiende eventos en un radio de [X km] desde su base. Eventos fuera del radio incluyen recargo de 0,95 €/km adicionales. La Agencia confirmará el radio en el Anexo I."
+   },
+   {
+    "i": 76,
+    "estilo": "Normal",
+    "texto": "NOVENA — Jurisdicción"
+   },
+   {
+    "i": 77,
+    "estilo": "Normal",
+    "texto": "Los Juzgados y Tribunales de [Ciudad] son competentes para cualquier controversia. Ambas partes renuncian expresamente a su propio fuero."
+   },
+   {
+    "i": 78,
+    "estilo": "Normal",
+    "texto": "ANEXO I — BRIEFING DEL EVENTO"
+   },
+   {
+    "i": 79,
+    "estilo": "Normal",
+    "texto": "Cliente Final: ________________ · Fecha: ________________ · Hora: ________________"
+   },
+   {
+    "i": 80,
+    "estilo": "Normal",
+    "texto": "Lugar: ________________ · Pax: ________________ · Tipo de paella: ________________"
+   },
+   {
+    "i": 81,
+    "estilo": "Normal",
+    "texto": "Particularidades / restricciones: ________________________________________"
+   },
+   {
+    "i": 82,
+    "estilo": "Normal",
+    "texto": "ANEXO II — SERVICIOS DETALLADOS"
+   },
+   {
+    "i": 83,
+    "estilo": "List Bullet",
+    "texto": "Paellero profesional + 1 ayudante."
+   },
+   {
+    "i": 84,
+    "estilo": "List Bullet",
+    "texto": "Paella(s) tipo: [tipo]."
+   },
+   {
+    "i": 85,
+    "estilo": "List Bullet",
+    "texto": "Ingredientes premium: [detallar]."
+   },
+   {
+    "i": 86,
+    "estilo": "List Bullet",
+    "texto": "Vajilla cerámica + cubertería + servicio."
+   },
+   {
+    "i": 87,
+    "estilo": "List Bullet",
+    "texto": "Showcooking explicativo en directo."
+   },
+   {
+    "i": 88,
+    "estilo": "List Bullet",
+    "texto": "Limpieza posterior."
+   },
+   {
+    "i": 89,
+    "estilo": "Normal",
+    "texto": "ANEXO III — TARIFA"
+   },
+   {
+    "i": 90,
+    "estilo": "Normal",
+    "texto": "Precio por pax: ________________ €"
+   },
+   {
+    "i": 91,
+    "estilo": "Normal",
+    "texto": "Suplemento desplazamiento: ________________ €"
+   },
+   {
+    "i": 92,
+    "estilo": "Normal",
+    "texto": "Ayudantes adicionales: ________________ €"
+   },
+   {
+    "i": 93,
+    "estilo": "Normal",
+    "texto": "TOTAL: ________________ €"
+   },
+   {
+    "i": 94,
+    "estilo": "Normal",
+    "texto": "Firma del Paellero: ________________      Firma de la Agencia: ________________"
+   }
+  ],
+  "tablas": []
+ },
+ "catalogo_equipo": {
+  "parrafos": [
+   {
+    "i": 0,
+    "estilo": "Normal",
+    "texto": "Catálogo Equipamiento, Utensilios y Menaje"
+   },
+   {
+    "i": 1,
+    "estilo": "Normal",
+    "texto": "Paellero / Paella para Eventos · 18 piezas con SKU, URL y precio orientativo"
+   },
+   {
+    "i": 2,
+    "estilo": "Normal",
+    "texto": "Edición 2026 · Garcima · Vaello · GGM · Arcos · Pordamsa · Texfire"
+   },
+   {
+    "i": 3,
+    "estilo": "Normal",
+    "texto": "ChefBusiness Consultoría Gastronómica"
+   },
+   {
+    "i": 5,
+    "estilo": "Normal",
+    "texto": "Introducción"
+   },
+   {
+    "i": 6,
+    "estilo": "Normal",
+    "texto": "Este catálogo describe las 18 piezas críticas de equipamiento para montar un servicio profesional de paellero / paella para eventos. Cada pieza está justificada por su función, con SKU exacto, URL del proveedor y precio orientativo de abril 2026 (confírmalo con el proveedor). La inversión inicial completa (con la furgoneta, la cocina de apoyo y el fondo de maniobra) está calculada en el plan financiero de este kit; este catálogo detalla el equipamiento de cocción y servicio."
+   },
+   {
+    "i": 7,
+    "estilo": "Normal",
+    "texto": "1. Paellera Garcima 60 cm pulida"
+   },
+   {
+    "i": 8,
+    "estilo": "Normal",
+    "texto": "Función: Paella eventos pequeños ≈ 11-15 raciones (ver la tabla de escalado del Manual Técnico)"
+   },
+   {
+    "i": 9,
+    "estilo": "Normal",
+    "texto": "Paellera de acero pulido de 60 cm de diámetro, capacidad ≈ 11-15 raciones (ver la tabla de escalado del Manual Técnico), tipo cumpleaños familiar."
+   },
+   {
+    "i": 10,
+    "estilo": "List Bullet",
+    "texto": "SKU: Garcima 20120"
+   },
+   {
+    "i": 11,
+    "estilo": "List Bullet",
+    "texto": "URL: garcima.com/producto/paella-pulida-60cm/"
+   },
+   {
+    "i": 12,
+    "estilo": "List Bullet",
+    "texto": "Precio: 85 €"
+   },
+   {
+    "i": 13,
+    "estilo": "List Bullet",
+    "texto": "Marca: Garcima"
+   },
+   {
+    "i": 14,
+    "estilo": "Normal",
+    "texto": "2. Paellera Garcima 90 cm pulida"
+   },
+   {
+    "i": 15,
+    "estilo": "Normal",
+    "texto": "Función: Paella eventos medianos ≈ 30-40 raciones (ver la tabla de escalado del Manual Técnico)"
+   },
+   {
+    "i": 16,
+    "estilo": "Normal",
+    "texto": "Paellera de 90 cm, ideal para bodas íntimas y eventos medianos. Acero pulido tradicional, capacidad ≈ 30-40 raciones (ver la tabla de escalado del Manual Técnico)."
+   },
+   {
+    "i": 17,
+    "estilo": "List Bullet",
+    "texto": "SKU: Garcima 20140"
+   },
+   {
+    "i": 18,
+    "estilo": "List Bullet",
+    "texto": "URL: garcima.com/producto/paella-pulida-90cm/"
+   },
+   {
+    "i": 19,
+    "estilo": "List Bullet",
+    "texto": "Precio: 165 €"
+   },
+   {
+    "i": 20,
+    "estilo": "List Bullet",
+    "texto": "Marca: Garcima"
+   },
+   {
+    "i": 21,
+    "estilo": "Normal",
+    "texto": "3. Paellera Garcima 120 cm pulida"
+   },
+   {
+    "i": 22,
+    "estilo": "Normal",
+    "texto": "Función: Paella eventos grandes ≈ 60-80 raciones (ver la tabla de escalado del Manual Técnico)"
+   },
+   {
+    "i": 23,
+    "estilo": "Normal",
+    "texto": "Paellera grande para bodas y eventos corporate. Acero pulido reforzado, capacidad ≈ 60-80 raciones (ver la tabla de escalado del Manual Técnico)."
+   },
+   {
+    "i": 24,
+    "estilo": "List Bullet",
+    "texto": "SKU: Garcima 20160"
+   },
+   {
+    "i": 25,
+    "estilo": "List Bullet",
+    "texto": "URL: garcima.com/producto/paella-pulida-120cm/"
+   },
+   {
+    "i": 26,
+    "estilo": "List Bullet",
+    "texto": "Precio: 289 €"
+   },
+   {
+    "i": 27,
+    "estilo": "List Bullet",
+    "texto": "Marca: Garcima"
+   },
+   {
+    "i": 28,
+    "estilo": "Normal",
+    "texto": "4. Paellero gas Vaello Campos 80 cm 4 fuegos"
+   },
+   {
+    "i": 29,
+    "estilo": "Normal",
+    "texto": "Función: Quemador profesional principal"
+   },
+   {
+    "i": 30,
+    "estilo": "Normal",
+    "texto": "Paellero de gas profesional de 4 fuegos, potencia 50 kW. Para paelleras 80-120 cm."
+   },
+   {
+    "i": 31,
+    "estilo": "List Bullet",
+    "texto": "SKU: Vaello PG-80-4F"
+   },
+   {
+    "i": 32,
+    "estilo": "List Bullet",
+    "texto": "URL: vaellocampos.com/paelleros-gas/"
+   },
+   {
+    "i": 33,
+    "estilo": "List Bullet",
+    "texto": "Precio: 385 €"
+   },
+   {
+    "i": 34,
+    "estilo": "List Bullet",
+    "texto": "Marca: Vaello Campos"
+   },
+   {
+    "i": 35,
+    "estilo": "Normal",
+    "texto": "5. Paellero gas Garcima 50 cm 3 fuegos"
+   },
+   {
+    "i": 36,
+    "estilo": "Normal",
+    "texto": "Función: Quemador profesional secundario"
+   },
+   {
+    "i": 37,
+    "estilo": "Normal",
+    "texto": "Quemador secundario para paelleras 60-90 cm. Cubierta protectora antiviento."
+   },
+   {
+    "i": 38,
+    "estilo": "List Bullet",
+    "texto": "SKU: Garcima 76050"
+   },
+   {
+    "i": 39,
+    "estilo": "List Bullet",
+    "texto": "URL: garcima.com/producto/paellero-gas-50cm/"
+   },
+   {
+    "i": 40,
+    "estilo": "List Bullet",
+    "texto": "Precio: 215 €"
+   },
+   {
+    "i": 41,
+    "estilo": "List Bullet",
+    "texto": "Marca: Garcima"
+   },
+   {
+    "i": 42,
+    "estilo": "Normal",
+    "texto": "6. Trípode + cadenas para fuego de leña"
+   },
+   {
+    "i": 43,
+    "estilo": "Normal",
+    "texto": "Función: Cocción tradicional premium"
+   },
+   {
+    "i": 44,
+    "estilo": "Normal",
+    "texto": "Trípode profesional con cadenas regulables. Para paellera 90-120 cm sobre fuego de leña."
+   },
+   {
+    "i": 45,
+    "estilo": "List Bullet",
+    "texto": "SKU: Mareva TR-120"
+   },
+   {
+    "i": 46,
+    "estilo": "List Bullet",
+    "texto": "URL: mareva.es/producto/tripode-paella/"
+   },
+   {
+    "i": 47,
+    "estilo": "List Bullet",
+    "texto": "Precio: 175 €"
+   },
+   {
+    "i": 48,
+    "estilo": "List Bullet",
+    "texto": "Marca: Mareva"
+   },
+   {
+    "i": 49,
+    "estilo": "Normal",
+    "texto": "7. Set cuchillos Arcos Maitre 3 piezas"
+   },
+   {
+    "i": 50,
+    "estilo": "Normal",
+    "texto": "Función: Cuchillería profesional"
+   },
+   {
+    "i": 51,
+    "estilo": "Normal",
+    "texto": "Set chef + cebollero + paring de Arcos serie Maitre, mango ergonómico."
+   },
+   {
+    "i": 52,
+    "estilo": "List Bullet",
+    "texto": "SKU: Arcos Maitre 240200"
+   },
+   {
+    "i": 53,
+    "estilo": "List Bullet",
+    "texto": "URL: arcos.com/producto/maitre-3p/"
+   },
+   {
+    "i": 54,
+    "estilo": "List Bullet",
+    "texto": "Precio: 118 €"
+   },
+   {
+    "i": 55,
+    "estilo": "List Bullet",
+    "texto": "Marca: Arcos Albacete"
+   },
+   {
+    "i": 56,
+    "estilo": "Normal",
+    "texto": "8. Tablas HACCP Vogue 4 colores"
+   },
+   {
+    "i": 57,
+    "estilo": "Normal",
+    "texto": "Función: Higiene alimentaria APPCC"
+   },
+   {
+    "i": 58,
+    "estilo": "Normal",
+    "texto": "Set 4 tablas color HACCP — verde, roja, azul, amarilla. Polietileno alta densidad."
+   },
+   {
+    "i": 59,
+    "estilo": "List Bullet",
+    "texto": "SKU: Vogue HC885"
+   },
+   {
+    "i": 60,
+    "estilo": "List Bullet",
+    "texto": "URL: vogueprofesional.es/tablas-haccp/"
+   },
+   {
+    "i": 61,
+    "estilo": "List Bullet",
+    "texto": "Precio: 85 €"
+   },
+   {
+    "i": 62,
+    "estilo": "List Bullet",
+    "texto": "Marca: Vogue Profesional"
+   },
+   {
+    "i": 63,
+    "estilo": "Normal",
+    "texto": "9. Cuchara palo paellero 80 cm"
+   },
+   {
+    "i": 64,
+    "estilo": "Normal",
+    "texto": "Función: Utensilio cocción paella"
+   },
+   {
+    "i": 65,
+    "estilo": "Normal",
+    "texto": "Cuchara madera haya 80 cm para remover paellas grandes. Set 3 unidades repuesto."
+   },
+   {
+    "i": 66,
+    "estilo": "List Bullet",
+    "texto": "SKU: Lacor 60860"
+   },
+   {
+    "i": 67,
+    "estilo": "List Bullet",
+    "texto": "URL: lacor.es/producto/cuchara-paellero/"
+   },
+   {
+    "i": 68,
+    "estilo": "List Bullet",
+    "texto": "Precio: 32 €"
+   },
+   {
+    "i": 69,
+    "estilo": "List Bullet",
+    "texto": "Marca: Lacor"
+   },
+   {
+    "i": 70,
+    "estilo": "Normal",
+    "texto": "10. Vajilla cerámica Pordamsa 30 platos paella"
+   },
+   {
+    "i": 71,
+    "estilo": "Normal",
+    "texto": "Función: Servicio en mesa profesional"
+   },
+   {
+    "i": 72,
+    "estilo": "Normal",
+    "texto": "Plato cerámica blanco esmaltado 28 cm, hondo. Set 30 unidades para eventos premium."
+   },
+   {
+    "i": 73,
+    "estilo": "List Bullet",
+    "texto": "SKU: Pordamsa Pearl 282805"
+   },
+   {
+    "i": 74,
+    "estilo": "List Bullet",
+    "texto": "URL: pordamsa.com/producto/plato-paella/"
+   },
+   {
+    "i": 75,
+    "estilo": "List Bullet",
+    "texto": "Precio: 245 €"
+   },
+   {
+    "i": 76,
+    "estilo": "List Bullet",
+    "texto": "Marca: Pordamsa"
+   },
+   {
+    "i": 77,
+    "estilo": "Normal",
+    "texto": "11. Cubertería inox Steelite 60 sets"
+   },
+   {
+    "i": 78,
+    "estilo": "Normal",
+    "texto": "Función: Cubertería profesional eventos"
+   },
+   {
+    "i": 79,
+    "estilo": "Normal",
+    "texto": "Set tenedor + cuchara + cuchillo Steelite Brentford. 60 servicios para 50-60 pax."
+   },
+   {
+    "i": 80,
+    "estilo": "List Bullet",
+    "texto": "SKU: Steelite Brentford 5402S010"
+   },
+   {
+    "i": 81,
+    "estilo": "List Bullet",
+    "texto": "URL: steelite.com/producto/brentford/"
+   },
+   {
+    "i": 82,
+    "estilo": "List Bullet",
+    "texto": "Precio: 385 €"
+   },
+   {
+    "i": 83,
+    "estilo": "List Bullet",
+    "texto": "Marca: Steelite"
+   },
+   {
+    "i": 84,
+    "estilo": "Normal",
+    "texto": "12. Cuencos cerámica alioli 24 unidades"
+   },
+   {
+    "i": 85,
+    "estilo": "Normal",
+    "texto": "Función: Servicio acompañamientos"
+   },
+   {
+    "i": 86,
+    "estilo": "Normal",
+    "texto": "Cuencos cerámica 8 cm para alioli y salsas. Pordamsa serie Soul."
+   },
+   {
+    "i": 87,
+    "estilo": "List Bullet",
+    "texto": "SKU: Pordamsa Soul 287805"
+   },
+   {
+    "i": 88,
+    "estilo": "List Bullet",
+    "texto": "URL: pordamsa.com/producto/cuenco-soul/"
+   },
+   {
+    "i": 89,
+    "estilo": "List Bullet",
+    "texto": "Precio: 85 €"
+   },
+   {
+    "i": 90,
+    "estilo": "List Bullet",
+    "texto": "Marca: Pordamsa"
+   },
+   {
+    "i": 91,
+    "estilo": "Normal",
+    "texto": "13. Cajas plástico modular 60 L (set 8 unidades)"
+   },
+   {
+    "i": 92,
+    "estilo": "Normal",
+    "texto": "Función: Transporte equipamiento"
+   },
+   {
+    "i": 93,
+    "estilo": "Normal",
+    "texto": "Cajas Schoeller Allibert 60 L con tapa, apilables. Para transporte furgoneta."
+   },
+   {
+    "i": 94,
+    "estilo": "List Bullet",
+    "texto": "SKU: Schoeller 60100"
+   },
+   {
+    "i": 95,
+    "estilo": "List Bullet",
+    "texto": "URL: schoellerallibert.es/producto/sa60l/"
+   },
+   {
+    "i": 96,
+    "estilo": "List Bullet",
+    "texto": "Precio: 165 €"
+   },
+   {
+    "i": 97,
+    "estilo": "List Bullet",
+    "texto": "Marca: Schoeller Allibert"
+   },
+   {
+    "i": 98,
+    "estilo": "Normal",
+    "texto": "14. Nevera profesional portátil 80 L"
+   },
+   {
+    "i": 99,
+    "estilo": "Normal",
+    "texto": "Función: Cadena frío mariscos"
+   },
+   {
+    "i": 100,
+    "estilo": "Normal",
+    "texto": "Nevera profesional con compresor 80 L. Mantiene 4-6 °C durante 18 horas."
+   },
+   {
+    "i": 101,
+    "estilo": "List Bullet",
+    "texto": "SKU: Indelb TB80A"
+   },
+   {
+    "i": 102,
+    "estilo": "List Bullet",
+    "texto": "URL: indelb.com/producto/tb80a/"
+   },
+   {
+    "i": 103,
+    "estilo": "List Bullet",
+    "texto": "Precio: 489 €"
+   },
+   {
+    "i": 104,
+    "estilo": "List Bullet",
+    "texto": "Marca: Indelb"
+   },
+   {
+    "i": 105,
+    "estilo": "Normal",
+    "texto": "15. Delantal cuero paellero Texfire"
+   },
+   {
+    "i": 106,
+    "estilo": "Normal",
+    "texto": "Función: Protección + imagen profesional"
+   },
+   {
+    "i": 107,
+    "estilo": "Normal",
+    "texto": "Delantal cuero engrasado profesional, resistente al fuego. Personalizable con logo."
+   },
+   {
+    "i": 108,
+    "estilo": "List Bullet",
+    "texto": "SKU: Texfire DEL-CUERO-PRO"
+   },
+   {
+    "i": 109,
+    "estilo": "List Bullet",
+    "texto": "URL: texfire.es/producto/delantal-cuero/"
+   },
+   {
+    "i": 110,
+    "estilo": "List Bullet",
+    "texto": "Precio: 75 €"
+   },
+   {
+    "i": 111,
+    "estilo": "List Bullet",
+    "texto": "Marca: Texfire"
+   },
+   {
+    "i": 112,
+    "estilo": "Normal",
+    "texto": "16. Chaqueta chef + gorra Texfire (set 2)"
+   },
+   {
+    "i": 113,
+    "estilo": "Normal",
+    "texto": "Función: Uniformidad"
+   },
+   {
+    "i": 114,
+    "estilo": "Normal",
+    "texto": "Chaqueta chef blanca + gorra paellero. Personalizable con logo bordado."
+   },
+   {
+    "i": 115,
+    "estilo": "List Bullet",
+    "texto": "SKU: Texfire CH-PAELLERO"
+   },
+   {
+    "i": 116,
+    "estilo": "List Bullet",
+    "texto": "URL: texfire.es/producto/uniforme-paella/"
+   },
+   {
+    "i": 117,
+    "estilo": "List Bullet",
+    "texto": "Precio: 95 €"
+   },
+   {
+    "i": 118,
+    "estilo": "List Bullet",
+    "texto": "Marca: Texfire"
+   },
+   {
+    "i": 119,
+    "estilo": "Normal",
+    "texto": "17. Termómetro pinchable digital Testo"
+   },
+   {
+    "i": 120,
+    "estilo": "Normal",
+    "texto": "Función: Control APPCC PCC"
+   },
+   {
+    "i": 121,
+    "estilo": "Normal",
+    "texto": "Termómetro digital con sonda. Para verificación T° interna en pollo y arroz."
+   },
+   {
+    "i": 122,
+    "estilo": "List Bullet",
+    "texto": "SKU: Testo 104 IR"
+   },
+   {
+    "i": 123,
+    "estilo": "List Bullet",
+    "texto": "URL: testo.es/producto/104-ir/"
+   },
+   {
+    "i": 124,
+    "estilo": "List Bullet",
+    "texto": "Precio: 118 €"
+   },
+   {
+    "i": 125,
+    "estilo": "List Bullet",
+    "texto": "Marca: Testo"
+   },
+   {
+    "i": 126,
+    "estilo": "Normal",
+    "texto": "18. Báscula precisión 5 kg / 0.1 g"
+   },
+   {
+    "i": 127,
+    "estilo": "Normal",
+    "texto": "Función: Escandallo de costes"
+   },
+   {
+    "i": 128,
+    "estilo": "Normal",
+    "texto": "Báscula profesional precisión 5 kg / 0.1 g para escandallos por porción."
+   },
+   {
+    "i": 129,
+    "estilo": "List Bullet",
+    "texto": "SKU: OHAUS Valor 1000"
+   },
+   {
+    "i": 130,
+    "estilo": "List Bullet",
+    "texto": "URL: ohaus.com/producto/v11p15/"
+   },
+   {
+    "i": 131,
+    "estilo": "List Bullet",
+    "texto": "Precio: 85 €"
+   },
+   {
+    "i": 132,
+    "estilo": "List Bullet",
+    "texto": "Marca: OHAUS"
+   }
+  ],
+  "tablas": []
+ }
+}

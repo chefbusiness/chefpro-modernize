@@ -1,0 +1,3012 @@
+{
+ "tanda": "GPA-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-7/textos_en/GPA-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 109,
+ "n_palabras": 2967,
+ "pistas": {
+  "P01": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P02": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P03": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P04": "D119: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
+  "P05": "D118: caso US = 135 eventos/año × 58 invitados × $40 por invitado (sin sales tax, con el paella chef, el personal y el service charge dentro, sin la gratuity voluntaria) ≈ $313,200 (research §8; la calibración D15 puede subir B4 de 5 en 5 hasta 150); drivers: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar). La propuesta EN es la del BBQ en esta celda: cambia lo que hable de smoker trailer, pit, carne, leña o del caso del BBQ; los años 2-3 crecen en EVENTOS (B7/B8); compara con la capacidad del equipo (fila 51); el ejemplo es un dueño-paella chef a tiempo completo con segundo cocinero los fines de semana, no la media del primer año",
+  "P06": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P07": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P08": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P09": "D117/D120: la van de carga usada (paelleras, quemadores, cilindros y coolers); nunca «truck» ni «trailer» (gate; «paella food trucks» solo para el no-comprador)",
+  "P10": "D118: caso US = 135 eventos/año × 58 invitados × $40 por invitado (sin sales tax, con el paella chef, el personal y el service charge dentro, sin la gratuity voluntaria) ≈ $313,200 (research §8; la calibración D15 puede subir B4 de 5 en 5 hasta 150); drivers: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar). La propuesta EN es la del BBQ en esta celda: cambia lo que hable de smoker trailer, pit, carne, leña o del caso del BBQ; precio medio por invitado de la MEZCLA (drop-off, backyard parties, empresa, bodas, premium) SIN sales tax, con el paella chef, el personal y el service charge dentro y SIN la gratuity voluntaria. Los operadores cotizan por persona (paella en vivo con ensalada y pan $12-31 en tasteofpaella.com y zola.com; menú español con personal $44-65 en miamigrillcatering.com y zola.com): la calculadora del kit cotiza 3 paquetes por invitado; para pasar de ella a esta celda, pondera el precio de cada paquete por sus invitados del año (D123)",
+  "P11": "D118: caso US = 135 eventos/año × 58 invitados × $40 por invitado (sin sales tax, con el paella chef, el personal y el service charge dentro, sin la gratuity voluntaria) ≈ $313,200 (research §8; la calibración D15 puede subir B4 de 5 en 5 hasta 150); drivers: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar). La propuesta EN es la del BBQ en esta celda: cambia lo que hable de smoker trailer, pit, carne, leña o del caso del BBQ; invitados medios por evento; la mezcla del ejemplo va de drop-offs de 30 a bodas de 110 (guest minimums de los operadores leídos: 20 en tasteofpaella.com, 30 en zola.com)",
+  "P12": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P13": "D118: crecimiento de EVENTOS 10 % en el año 2 (reseñas y bodas reservadas con meses; lo limita un dueño-paella chef con una van)",
+  "P14": "D118: crecimiento de EVENTOS 6 % en el año 3, por la misma razón",
+  "P15": "D117/D121: paella packages y add-ons; «food» y «menu» valen; nunca «chef» suelto (di paella chef), «plated» ni «stations» salvo «live paella station» (gate)",
+  "P16": "D121: cuota de PAELLA PACKAGES (paella cocinada en vivo, ensalada y pan, paella chef y personal) 88 %; el resto (fila 12) son add-ons: tapas, postres, sangría sin alcohol y bebidas, alquileres, horas extra, travel fees. Es una ENTRADA",
+  "P17": "D121: calculado como el resto: paella packages + add-ons = 100 %",
+  "P18": "D118: coste de los paella packages 28 % = arroz, marisco, pollo y chorizo, azafrán, caldo, ensalada y pan, con un colchón por sobreproducción y por el precio volátil del marisco (Kit estimate); el food cost de catering va del 28 al 35 % (galleysolutions.com)",
+  "P19": "D118: coste de los add-ons 35 % (Kit estimate: tapas y postres, alquileres que repercutes casi a coste)",
+  "P20": "D121: desechables y combustible de cocina 3.5 % (Kit estimate: propano ≈ 6-8 lb por evento de 60 invitados, $10-15, + desechables ≈ $0.75 por invitado; cubre la leña donde un permiso la admita); escala con las paelleras y los eventos; el combustible del VEHÍCULO va en la fila 27 del P&L",
+  "P21": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P22": "D118: tarjeta 3 %: los particulares pagan depósito y saldo con tarjeta; algunas empresas, por ACH o cheque",
+  "P23": "Glosario: aparcamiento y base del vehículo → «commissary & truck parking»",
+  "P24": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P25": "Glosario: «commissary kitchen & equipment storage»; nunca «support kitchen»",
+  "P26": "D121: el combustible de COCINA (propano; leña solo con permiso) es variable (fila 15); el de la van, fijo (fila 27); el caso no tiene generador",
+  "P27": "D121: commissary compartida con permiso: horas de producción (sofrito, caldo, marisco limpio) + almacén frío y seco + sitio para paelleras y quemadores (pregunta si admite cilindros de propano); research: ≈ 30 h × $22 + almacén, Kit estimate; $15-$45 la hora, el 42 % cobra $20-$29 (thefoodcorridor.com); nunca «support kitchen»",
+  "P28": "D121: agua, luz y teléfono que no cubre la commissary; SIN propano: el combustible de cocina es variable (fila 15)",
+  "P29": "D121: seguros al año = general liability / BOP que NO excluya la llama abierta en eventos + commercial auto + workers' comp + inland marine para paelleras y quemadores (Kit estimate por póliza; Insureon publica medias: GL $45/mes, commercial auto $204/mes, insureon.com); los venues piden COI y additional insured; liquor liability solo si tu personal sirve el alcohol del cliente",
+  "P30": "D121: varios 3 % de las ventas: imprevistos de cada evento (marisco extra, hielo, limones, parking en el venue); es VARIABLE. SIN combustible: el de la van va en la fila 27 del P&L (fijo) y el propano, en la fila 15",
+  "P31": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P32": "D118: préstamo que calibra el libro: supera el tope de $50,000 del SBA Microloan, así que el ejemplo encaja en un SBA 7(a) o un préstamo bancario; el lender pide plan y proyecciones",
+  "P33": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P34": "D118: 7 años: la van, los quemadores y las paelleras pierden valor antes que un local",
+  "P35": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P36": "D120: 7 años: quemadores y soportes, paelleras, la van usada y su upfit, y la inspección del fire marshal / del propano (la base de vida del vehículo, fila 31 de \"Startup Costs\")",
+  "P37": "D120: 5 años: kit de propano y seguridad, fit-out de la commissary, software, smallwares y utensilios de paella, montaje y holding",
+  "P38": "D118: DATO INFORMATIVO (no entra en ningún cálculo): el techo de eventos al año que tu equipo puede atender (una van; dos eventos el mismo sábado con el segundo paella chef; los sábados de mayo, junio y octubre son el cuello de botella); compáralo con la fila 4 y con el optimista",
+  "P39": "D117: paella catering en el evento del cliente; sin ventanilla, festivales, mercados ni venta ambulante (gate)",
+  "P40": "D118: rampa 50 % → 8 meses: las bodas se reservan con meses de antelación y las empresas tardan en repetir",
+  "P41": "D118: 1 mes de commissary antes de abrir (pruebas por tamaño de paellera, permisos y preventa en el primer bridal show)",
+  "P42": "D120: imprevistos 10 % sobre quemadores, paelleras, la van, su upfit y la inspección (filas 7, 8, 11, 12 y 15 de \"Startup Costs\")",
+  "P43": "Glosario §9: paella catering, paella chef, live paella, backyard paella party, drop-off, full-service, tapas hour, weddings, corporate events / holiday parties, first communions, quinceañeras",
+  "P44": "D118: cobro medio 7 días: depósito al reservar la fecha (los caterers US piden entre el 25 y el 50 %: Kit estimate; la calculadora propone 50 %) y saldo antes del evento; empresas a 30 días; el libro no modela anticipos (nota de la Tesorería)",
+  "P45": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P46": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P47": "D117/D118: alcohol 0 %: sin licencia no vendes alcohol; la sangría va sin alcohol o con el vino que compra el cliente, sin margen (docx §9); nunca «bartender» (gate)",
+  "P48": "D120: cuatro quemadores de paella de 3 aros con patas (un quemador XL de 3 aros con trípode y regulador para paelleras de hasta 36 in ronda los $549: Kit estimate con precios de tienda.com), un rolling stand ($399 el de 2 aros) y wind guards",
+  "P49": "D120: paelleras por tamaño: 2 de 36 in (90 cm) ≈ 40 invitados cada una, 3 de 32 in (80 cm) ≈ 30 y 3 de 26 in (65 cm) ≈ 18 (Kit estimate); una de 36 in ronda los $349 (tienda.com, Kit estimate); acero al carbono o esmaltadas",
+  "P50": "D120: kit de propano y seguridad: ocho cilindros de 20 lb (≈ 4.7 gal cada uno), reguladores, mangueras en fecha, 2 extintores (el fire marshal dice cuáles) y manta ignífuga",
+  "P51": "D120: fit-out de la commissary: estanterías, sheet pans, cubetas etiquetadas para sofrito y caldo",
+  "P52": "D120: van de carga usada: lleva paelleras, quemadores, cilindros (de pie, sujetos y con ventilación) y coolers; NO es frigorífica: el marisco crudo viaja en coolers con hielo a ≤ 41 °F y la paella del drop-off en insulated carriers a ≥ 135 °F",
+  "P53": "D120: upfit de la van: estanterías, racks verticales para los cilindros, sujeciones y rotulación (wrap); comprueba que tu seguro lo cubre",
+  "P54": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P55": "D7: los valores de la lista son «Yes» / «No»",
+  "P56": "D120: LLC + contrato tipo revisado por un abogado (depósito, tramos de cancelación, recuento final, plan B por viento y lluvia, cláusula de fuego no autorizado)",
+  "P57": "D120: permisos y certificaciones del año 1: catering / health permit del condado, temporary event permits, business license, sales tax permit, ServSafe Manager, food handler cards; varía mucho por estado y condado",
+  "P58": "D120: permiso del fire marshal o del evento e inspección del montaje de propano SOLO si tu ciudad o el venue lo exigen; si no, pon 0",
+  "P59": "D120: software de catering (propuestas, contratos con firma electrónica, depósitos y saldos) + lector de tarjetas + tablet",
+  "P60": "D121: marketplaces de catering corporativo (p. ej. ezCater), no apps de delivery",
+  "P61": "D120: smallwares y utensilios de paella: paletas, cucharones, cuchillos, tablas de colores, hotel pans, termómetros de sonda calibrados, guantes de calor; se amortizan",
+  "P62": "D120: inventario inicial: arroz bomba, azafrán, base de caldo, marisco y pollo para las pruebas, desechables de los primeros eventos",
+  "P63": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P64": "D120: web, fotos y vídeo de la paella cocinada en vivo, altas en The Knot / WeddingWire / Zola / ezCater, Google Business Profile y el primer bridal show",
+  "P65": "D120: montaje y holding: carpa para la estación de cocina (fuera de la carpa de invitados), mesas plegables, lavamanos (San Diego County pide uno de 5 gal: sandiegocounty.gov), coolers para el marisco, 6 chafing dishes para las tapas, insulated carriers para el drop-off; nunca «Cambro» (es marca)",
+  "P66": "D120: lo que compras: quemadores, paelleras, la van y su upfit, el kit de propano, el montaje, el lanzamiento y la constitución; el colchón de caja no es inversión",
+  "P67": "D121: ventas de paella packages por invitado: la paella cocinada en vivo con ensalada y pan, el paella chef y el personal (drop-off, backyard parties, empresa, bodas, premium)",
+  "P68": "D121: ventas de add-ons: tapas hour, postres, sangría sin alcohol y bebidas, alquileres, horas extra, travel fees",
+  "P69": "D121: el importe mensual se teclea en \"0. Assumptions\"; aquí × 12: commissary + almacén de paelleras y quemadores",
+  "P70": "D121: agua, luz y teléfono que no cubre la commissary; sin propano (va en la fila 15)",
+  "P71": "D121: retirada de residuos, aceite usado y conchas con un hauler con licencia (a menudo lo gestiona la commissary)",
+  "P72": "D121: repuesto de paelleras (se deforman), quemadores (aros obstruidos) y mangueras (caducan)",
+  "P73": "D121: ServSafe Manager (Certified Food Protection Manager) y food handler cards del equipo, y su renovación",
+  "P74": "D121: degustaciones para parejas, planners y empresas (una paella pequeña cocinada en vivo); muchos operadores las descuentan si reservan",
+  "P75": "D122: techo del coste de mercancía 35 % (kit benchmark, editable; food cost de catering 28-35 %, galleysolutions.com)",
+  "P76": "D122: techo de personal 38 % (kit benchmark, editable), con el sueldo del dueño dentro",
+  "P77": "D122: techo de commissary y almacén 7 % (kit benchmark, editable): no hay local",
+  "P78": "D121: Owner / Paella Chef & Sales: vende, hace las degustaciones y cocina la paella en los eventos; el resto de su retribución sale del beneficio",
+  "P79": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P80": "D121: lead cook / second paella chef (part-time W-2, 0.4 FTE): lleva la segunda estación en los eventos grandes y el segundo evento del sábado; paga entre la media y el p75 de «cooks, restaurant» (BLS OEWS mayo 2025: $18.62 y $21.45)",
+  "P81": "D121: event staff por horas y en W-2 (servers, buffet attendants); su FTE es una fracción; ≈ 1 persona del equipo por 25 invitados (miamigrillcatering.com); la gratuity voluntaria es suya",
+  "P82": "D121: prep cook / driver part-time W-2: sofrito, caldo y marisco limpio en la commissary, carga y conducción de la van",
+  "P83": "D118: horas por persona y evento: preparación, carga, viaje, llegada 2-3 h antes, montaje y ≈ 1 h de cocción, ≈ 2 h de servicio y recogida",
+  "P84": "D118: personas por evento: drop-off 1 · backyard party 2 · empresa 3 · boda 4.5 · premium 4 (Kit estimate); ponderado con la mezcla del docx, ≈ 2.5",
+  "P85": "D117: «0. Assumptions» es la hoja de mando: eventos al año, precio por invitado sin sales tax, invitados por evento, mezcla paella packages / add-ons, coste de mercancía; la van es de carga, no frigorífica",
+  "P86": "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+  "P87": "D18 (paella caterer): la propuesta es la del BBQ EN (o del Catering) en esa celda, que ya describe el MÉTODO del libro para un negocio de eventos con comida; reescribe SOLO lo que hable de smoker trailer, pit, leña, carne o BBQ → quemadores y paelleras, la van de carga, el propano (combustible de cocina), la commissary, el paella chef. Sin cifras del caso. Fila del espacio: «Commissary kitchen and equipment storage» (el coste del espacio, en \"0. Assumptions\")",
+  "P88": "D18 (paella caterer): la propuesta es la del BBQ EN (o del Catering) en esa celda, que ya describe el MÉTODO del libro para un negocio de eventos con comida; reescribe SOLO lo que hable de smoker trailer, pit, leña, carne o BBQ → quemadores y paelleras, la van de carga, el propano (combustible de cocina), la commissary, el paella chef. Sin cifras del caso",
+  "P89": "D18 (paella caterer): la propuesta es la del BBQ EN (o del Catering) en esa celda, que ya describe el MÉTODO del libro para un negocio de eventos con comida; reescribe SOLO lo que hable de smoker trailer, pit, leña, carne o BBQ → quemadores y paelleras, la van de carga, el propano (combustible de cocina), la commissary, el paella chef. Sin cifras del caso. Fila de seguros del vehículo: los de la van (commercial auto) y el inland marine de paelleras y quemadores, una sola vez y como gasto anual",
+  "P90": "D18 (paella caterer): la propuesta es la del BBQ EN (o del Catering) en esa celda, que ya describe el MÉTODO del libro para un negocio de eventos con comida; reescribe SOLO lo que hable de smoker trailer, pit, leña, carne o BBQ → quemadores y paelleras, la van de carga, el propano (combustible de cocina), la commissary, el paella chef. Sin cifras del caso. Fila de combustible de cocina (D121): «Propane (and wood where a permit allows it)»: va en la línea de desechables y combustible de cocina (variable, % de ventas), no en utilities ni en una línea aparte",
+  "P91": "D18 (paella caterer): la propuesta es la del BBQ EN (o del Catering) en esa celda, que ya describe el MÉTODO del libro para un negocio de eventos con comida; reescribe SOLO lo que hable de smoker trailer, pit, leña, carne o BBQ → quemadores y paelleras, la van de carga, el propano (combustible de cocina), la commissary, el paella chef. Sin cifras del caso. Fila «Fuel and miscellaneous»: A «Miscellaneous event costs» · B «A miscellaneous line typed in among the fixed costs» · C «A percentage of sales, treated as a variable cost; van fuel has its own fixed line» · D «Extra seafood, ice, lemons and venue parking rise and fall with the number of events: among the fixed costs they would distort the break-even.»",
+  "P92": "Celda a celda: escribe SOLO el texto de ESTA celda (una tabla o una tarea): mira su pista propia",
+  "P93": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: precio por persona de la paella cocinada en vivo con ensalada y pan: $12-13 por plato (zola.com, Viton Paella) a $26-31 por persona y $45 la de langosta (tasteofpaella.com) [NUEVA]",
+  "P94": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: menú español completo con personal: $44-65 por persona (zola.com, Señor Pepe's desde $44; miamigrillcatering.com $65 → $53 según tramo); en bodas «couples usually spend $50» (weddingwire.com, Paella Time) [NUEVA]",
+  "P95": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: arroz por invitado: 80-100 g (3-3.5 oz) de arroz crudo; +10-15 % en grupos; caldo 2-3 veces el volumen de arroz — Kit estimate (las fuentes solo se leyeron en resumen) [NUEVA]",
+  "P96": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: invitados por paellera: 36 in (90 cm) ≈ 40 · 32 in (80 cm) ≈ 30 · 26 in (65 cm) ≈ 18 — Kit estimate [NUEVA]",
+  "P97": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: food cost de catering 28-35 % del precio — galleysolutions.com [propuesta del BBQ]",
+  "P98": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: paelleras y quemadores: paellera de 36 in ≈ $349 · quemador XL de 3 aros con trípode y regulador ≈ $549 · rolling stand de 2 aros $399 · alquiler de una de 36 in $39.90 — Kit estimate (precios de tienda en resumen) [NUEVA]",
+  "P99": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: paella chef y attendant cobrados aparte: «Paella chef (required)» $300 por 2 h (+$85 la hora extra), buffet attendant $190 por 2 h, vajilla $5-10 por persona, mínimo $1,250 — cafesevilla.com [NUEVA: la fila 63 del BBQ citaba operadores BBQ y no vale]",
+  "P100": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: sueldos BLS OEWS mayo 2025: cooks, restaurant (35-2014) media $18.62/h, p75 $21.45; food servers, nonrestaurant (35-3041) media $17.37/h, p75 $18.51; chefs and head cooks (35-1011) mediana $30.03/h — bls.gov (ÚNICA celda del kit donde vale «chefs and head cooks») [propuesta del BBQ]",
+  "P101": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: commissary compartida $15-$45 la hora (el 42 % cobra $20-$29) — thefoodcorridor.com (2023 Shared Kitchen Operator Survey) [propuesta del BBQ]",
+  "P102": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: mínimos: 20-30 invitados (tasteofpaella.com: 20, 25 en peak season; zola.com, Viton Paella: 30 en vivo) y $500-1,600 (zola.com: Qué Paella $500, Señor Pepe's $1,600) [NUEVA]",
+  "P103": "D19/D122: tabla «US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §1 y §5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: propano y desechables por evento: 6-8 lb de propano (≈ $10-15) en un evento de 60 invitados + desechables ≈ $0.75 por invitado — Kit estimate; personal: 1 persona del equipo por 25 invitados (miamigrillcatering.com) [NUEVA]",
+  "P104": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "single-member LLC",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan + TPHC SOP",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cliente/día → (motor)": "events per year",
+  "ticket medio sin IVA → (motor)": "average price per guest (excl. sales tax, service included)",
+  "días de apertura → (motor)": "average guests per event",
+  "aparcamiento y base del vehículo": "commissary kitchen & equipment storage",
+  "empresa de paellas para eventos · show cooking": "paella catering (nombre, H1, ficheros) · live paella · «cooked live in front of your guests» · «prepared on site»; «Spanish catering» como variante con tapas",
+  "fiesta de paellas en casa": "backyard paella party",
+  "paellero (persona) · paellera": "paella chef («Paella chef (required)») · paella pan («giant traditional pan»); el negocio: paella caterer",
+  "paellero de gas (quemador)": "paella burner (3-ring) with legs / stand + regulator",
+  "socarrat · arroz · azafrán": "socarrat («golden socarrat reveal») · bomba rice / Spanish rice · saffron (en gramos)",
+  "sofrito · caldo · fumet": "sofrito · stock · fish stock",
+  "marinera · mixta · campera": "seafood paella / paella marinera · chicken & seafood · chicken & chorizo",
+  "valenciana · huerta · negra · bogavante": "Valencian paella (rabbit on request) · farm vegetable · paella negra · lobster & seafood",
+  "entrantes · alioli · jamón": "tapas (patatas bravas, Spanish tortilla, cheese & cold cuts) · garlic aioli · Serrano ham carving station (sin tilde: «jamón» lo rechaza el detector)",
+  "sangría · descorche": "sangria bar (sin alcohol, o con el vino que compra el cliente) · non-alcoholic options · corkage fee (no se modela)",
+  "animación": "flamenco · Spanish guitarist",
+  "precio y mínimo": "per person · «a minimum of 20 guests is required for on-site cooking» · overall minimum",
+  "temporada alta": "peak season · holiday season",
+  "personal y formato": "buffet attendant · serving staff · buffet · family-style (solo como formato de servicio del operador; el gate no lo veta, pero no es un paquete del kit)",
+  "para llevar": "delivery orders · «pick up & delivery» · drop-off",
+  "desplazamiento · menaje": "travel fee («included up to 20 mile radius») · dishes & flatware (bamboo / plastic)",
+  "botella · carpa de cocina": "20-lb propane cylinder / LP-gas container · cooking tent",
+  "normas": "limited food preparation (CA) · shellstock tags · time as a public health control",
+  "cocina de apoyo": "commissary (nunca «support kitchen»)",
+  "isotermo": "insulated food carriers (nunca «Cambro»: es marca)",
+  "paellero": "paella chef (persona) o paella caterer (negocio); nunca «paellero» ni «chef» suelto",
+  "trípode de leña": "wood-fire setup (solo con permiso)",
+  "ración": "serving / per person",
+  "show cooking": "live paella",
+  "fiesta popular": "fuera del caso (temporary food establishment)",
+  "comunión, bautizo": "first communion, baptism, quinceañera",
+  "finca": "venue / backyard",
+  "garrofó": "lima beans",
+  "ferraura": "flat green beans",
+  "bogavante": "lobster",
+  "fideuà": "fideua (noodle paella), sin tilde",
+  "pimentón": "smoked paprika",
+  "regla de los 15 kg": "no aplica (fire code local)",
+  "época de peligro": "burn ban",
+  "manipulador": "food handler card",
+  "anticipo": "deposit",
+  "IVA": "sales tax",
+  "escandallo": "cost per guest / food cost",
+  "fijo discontinuo / freelance": "part-time hourly W-2 staff",
+  "medidas (John, 13-oct)": "US customary first, metric in parentheses: lb / oz (g), °F (°C), gallons / quarts (liters), miles, sq ft (sq m); pans in inches with cm in parentheses; saffron in grams"
+ },
+ "pestanas_es_en": {
+  "PAEP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "PAEC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Propane & Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the Paella Catering Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US PAELLA CATERING BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average price per guest (excl. sales tax, service included)",
+  "PVP equivalente con IVA (calculado)": "Price per guest incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol sold (licensed only)",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "CHECKLIST APERTURA — FOOD TRUCK": "PAELLA CATERING STARTUP CHECKLIST — LIVE PAELLA CATERER",
+  "FASE 2: VEHÍCULO Y PERMISOS": "PHASE 2: COMMISSARY, PROPANE STATION, FIRE RULES & PERMITS",
+  "INSTRUCCIONES DE USO — Plan financiero Food Truck": "HOW TO USE THIS WORKBOOK — Paella Catering Financial Projections",
+  "PLAN DE NEGOCIO: FOOD TRUCK": "BUSINESS PLAN: PAELLA CATERING COMPANY",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — Food Truck urbano": "Base case — live paella caterer (cooked on site at events)",
+  "Break-even — Food Truck": "Break-even — Paella Catering",
+  "Ticket medio sin IVA": "Average price per guest (excl. sales tax)",
+  "Clientes/día (media del año 1)": "Events per year (year-1 average)",
+  "Clientes/día (media)": "Events per year (average)",
+  "Clientes/día": "Events per year",
+  "Días de apertura al año": "Average guests per event",
+  "Coste variable por cliente": "Variable cost per guest",
+  "Margen de contribución por cliente": "Contribution margin per guest",
+  "Ticket menos coste variable unitario": "Price per guest minus variable cost per guest",
+  "Clientes necesarios al año": "Guests needed per year",
+  "Clientes necesarios al día": "Events needed per year",
+  "Clientes necesarios al año (caja)": "Guests needed per year (cash)",
+  "Clientes necesarios al día (caja)": "Events needed per year (cash)",
+  "Clientes/día previstos en el plan": "Events per year in the plan",
+  "Clientes/día para el equilibrio": "Events per year to break even",
+  "Clientes al año por jornada equivalente": "Guests per year per full-time equivalent",
+  "Comisiones de delivery": "Corporate catering marketplace fees",
+  "Coste de mercancía — comida": "Cost of goods — paella packages (rice, seafood, meats, saffron, salad & bread)",
+  "Coste de mercancía — bebida": "Cost of goods — add-ons",
+  "Consumibles y envases": "Disposables & cooking fuel"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Clientes servidos al día de media del año. Es el mismo «Clientes/día objetivo (Año 1)» que ya declaraba el fichero v1.1",
+   "donde": [
+    "PAEP · 0. Supuestos!C4"
+   ],
+   "fila": "Clientes/día (media del año 1)",
+   "valor_us": 135,
+   "propuesta_en": "Average number of events you cater per year, counting every drop-off, buffet, wedding, party and live-fire booking. It is the main volume driver of the whole workbook: the P&L, break-even and scenarios all read it, and years 2 and 3 grow in events. The example is a full-time pitmaster with a pit cook, not the average first year. Compare it with the capacity row further down.",
+   "propuesta_de": "GBQ-plan c0006 (BBQP 0. Supuestos!C4)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA. Es el mismo 12 € que ya usaban Punto Equilibrio y la columna realista de Escenarios (declarar que es SIN IVA no cambia ningún número, sólo aclara qué era). Dentro del rango 10-15 € de la fila «Ticket medio food truck» de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones",
+   "donde": [
+    "PAEP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 40,
+   "propuesta_en": "EXCL. sales tax, with staffing and the service charge included and the voluntary gratuity left out: the blended price per guest across everything you sell, not the price of any one package. Price per guest incl. sales tax = this value × (1 + your sales tax rate). Operators quote by package (drop-off, staffed buffet, full-service); the benchmarks table on the \"Instructions\" tab shows the ranges. To bring a quote from the Pricing Calculator here, divide its subtotal plus the service charge you keep by the billable guests (its own price per guest excludes the service charge), then weight each package by the guests you expect to serve in a year.",
+   "propuesta_de": "GBQ-plan c0008 (BBQP 0. Supuestos!C5)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P08",
+    "P01",
+    "P03",
+    "P04",
+    "P09",
+    "P10"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "El MISMO dato lo usan la cuenta de resultados, el punto de equilibrio y los escenarios. La versión anterior traía TRES calendarios que no coincidían: 25 días de servicio al mes en el punto de equilibrio (300 al año), 5 servicios por semana durante 48 semanas en los escenarios (240 al año) y ninguno declarado en la cuenta de resultados. Se fijan 250 días —5 días de servicio a la semana por 50 semanas activas, dentro de los «4-6 días operativos por semana» que declara este mismo libro— porque son los únicos que reproducen al céntimo la facturación que el propio libro ya publicaba: 45 × 12 × 250 = 135.000 €",
+   "donde": [
+    "PAEP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 58,
+   "propuesta_en": "Average number of guests per event across your whole mix, from drop-off lunches for a few dozen people to weddings of well over a hundred. Operators set guest minimums (see the benchmarks table on the \"Instructions\" tab). Sales per event = guests × price per guest. One cell for the whole workbook: the P&L, break-even and scenarios all read it, so they always agree.",
+   "propuesta_de": "GBQ-plan c0010 (BBQP 0. Supuestos!C6)",
+   "pistas": [
+    "P07",
+    "P02",
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "El fichero v1.1 proyectaba 175.000 € en el año 2 sobre 135.000 € (+29,6 %): se redondea a la baja porque un food truck de un año no tiene todavía rutas ni clientela corporativa consolidadas (mismo criterio conservador que tapas-bar y cafetería)",
+   "donde": [
+    "PAEP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.1,
+   "propuesta_en": "Growth in events in year 2 over year 1 (enter 0.12 for 12%). Kept conservative on purpose: reviews and wedding bookings build up months ahead, and a single smoker trailer limits how fast you can grow.",
+   "propuesta_de": "GBQ-plan c0012 (BBQP 0. Supuestos!C7)",
+   "pistas": [
+    "P07",
+    "P01",
+    "P02",
+    "P12",
+    "P04",
+    "P09",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "El fichero v1.1 proyectaba 215.000 € sobre 175.000 € (+22,9 %): igual, redondeado a la baja",
+   "donde": [
+    "PAEP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "valor_us": 0.06,
+   "propuesta_en": "Growth in events in year 3 over year 2, kept conservative for the same reason: repeat corporate clients and planner referrals build up slowly, and one smoker trailer limits the weekends you can sell.",
+   "propuesta_de": "GBQ-plan c0014 (BBQP 0. Supuestos!C8)",
+   "pistas": [
+    "P07",
+    "P02",
+    "P12",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0018",
+   "es": "Peso de la COMIDA sobre el total de ventas. Es un INPUT: cámbialo aquí y el P&L, la tesorería y el IVA repercutido se recalculan solos",
+   "donde": [
+    "PAEP · 0. Supuestos!C11"
+   ],
+   "fila": "Ventas de COMIDA sobre el total",
+   "valor_us": 0.88,
+   "propuesta_en": "Share of sales that comes from BBQ packages: smoked meats, sides, bread and sauces, and the staffing that serves them. It is an INPUT: change it here and the P&L, the cash flow and the sales tax collected recalculate on their own. The rest of your sales are add-ons.",
+   "propuesta_de": "GBQ-plan c0018 (BBQP 0. Supuestos!C11)",
+   "pistas": [
+    "P06",
+    "P15",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0020",
+   "es": "Se calcula como el resto: comida + bebida = 100 %",
+   "donde": [
+    "PAEP · 0. Supuestos!C12"
+   ],
+   "fila": "Ventas de BEBIDA sobre el total",
+   "propuesta_en": "Calculated as the remainder: BBQ packages + add-ons = 100%. Add-ons are the live pit on site, desserts, appetizers, non-alcoholic drinks, rentals and travel fees.",
+   "propuesta_de": "GBQ-plan c0020 (BBQP 0. Supuestos!C12)",
+   "pistas": [
+    "P15",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Coste de mercancía de la comida: dentro del 28-33 % de la fila «Food cost comida» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones («depende del concepto: burger 30 %, tacos 25 %, poke 35 %»). Se toma el extremo bajo del rango porque la compra diaria que exige un food truck, sin cámara grande, reduce la merma frente a una cocina fija. Es la palanca más sensible del plan: con el 33 % el resultado del primer año se queda muy justo",
+   "donde": [
+    "PAEP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.28,
+   "propuesta_en": "Cost of goods sold on BBQ package sales: raw meat (bought at raw weight: brisket and pork butt yield about half after smoking), sides, bread and sauces, with a cushion for overproduction. The example sits inside the 28-35% food cost range for caterers in the benchmarks table on the \"Instructions\" tab. Meat prices swing, so it is the most sensitive lever in the plan: test it at the top of the range before you trust the result.",
+   "propuesta_de": "GBQ-plan c0022 (BBQP 0. Supuestos!C13)",
+   "pistas": [
+    "P03",
+    "P09",
+    "P15",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "Bebidas embotelladas y refrescos: extremo bajo del 22-28 % de la fila «Food cost bebidas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones («refrescos y agua embotellada, margen alto»)",
+   "donde": [
+    "PAEP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.35,
+   "propuesta_en": "Cost of goods sold on add-ons: bought-in desserts and appetizers, and rentals you pass on at close to cost. The live pit on site is almost all margin. There is no alcohol in this line: the client buys it separately.",
+   "propuesta_de": "GBQ-plan c0024 (BBQP 0. Supuestos!C14)",
+   "pistas": [
+    "P03",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Packaging biodegradable: extremo bajo del 3-5 % de la fila «Coste packaging / ventas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones. Es una partida realmente cara en un food truck (obligatoria por normativa municipal en muchos casos, como recuerda la fase de equipamiento de tu checklist) y por eso se cita al lado del food cost, no dentro de «varios»",
+   "donde": [
+    "PAEP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.035,
+   "propuesta_en": "Disposables, wood and cooking fuel as a % of sales: plates, cutlery, napkins and foil pans, plus the wood, charcoal, pellets and propane backup that go into every cook (roughly 60-100 lb of wood per cook, or 27-45 kg: Kit estimate). It scales with the pounds of meat you smoke and the number of events. Vehicle and trailer fuel is NOT here: it has its own fixed line on the \"3-Year P&L\" tab. Some cities restrict foam and single-use plastics, so check your local rules.",
+   "propuesta_de": "GBQ-plan c0026 (BBQP 0. Supuestos!C15)",
+   "pistas": [
+    "P06",
+    "P03",
+    "P09",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0032",
+   "es": "Tarjeta y bizum sobre el total facturado: un food truck urbano cobra en tarjeta/contactless la mayoría de los tickets",
+   "donde": [
+    "PAEP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.03,
+   "propuesta_en": "Card and ACH fees on total sales. Private clients pay their deposit and balance by card; many companies pay by ACH or check, which lowers the cost. The example is a blended rate: a percentage plus a per-transaction fee, which weighs more on small invoices. Check your processor's statement and enter your effective rate (Kit estimate).",
+   "propuesta_de": "GBQ-plan c0032 (BBQP 0. Supuestos!C18)",
+   "pistas": [
+    "P21",
+    "P04",
+    "P09",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "ESTE NEGOCIO NO PAGA RENTA DE LOCAL: esta celda es el coste mensual del aparcamiento o la nave en la que el vehículo pernocta y se prepara cada jornada, y de ella salen también la fianza y los meses previos a la apertura. Es un concepto distinto del generador, que va en la celda de suministros. 400 €/mes es lo que cuesta una plaza cubierta con toma de agua y desagüe para un vehículo comercial grande en una ciudad media española: pide presupuesto en tu zona antes de firmar",
+   "donde": [
+    "PAEP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 1100,
+   "propuesta_en": "Monthly cost of your commissary kitchen (hours + storage) and the parking spot for your smoker trailer: one cell for everything you pay the commissary. Pick one where you can smoke in the yard, and ask the health department and the fire marshal before you sign. The deposit and the months before opening are calculated from it. Shared kitchens charge roughly 15-45 per hour (The Food Corridor, 2023 Shared Kitchen Operator Survey): multiply by your cook hours and add storage and parking. A permitted commissary is required: smoked meat for clients cannot be cooked in a home kitchen, and cottage food rules do not cover it. Get quotes in your area before you sign.",
+   "propuesta_de": "GBQ-plan c0042 (BBQP 0. Supuestos!C24)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P23",
+    "P02",
+    "P24",
+    "P09",
+    "P25",
+    "P26",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Combustible del generador eléctrico y mantenimiento de las tomas de agua y de vertido. Es el mismo concepto que la versión anterior llamaba «Generador (combustible/alquiler)» dentro de los costes fijos: ahora vive en una celda, para poder cambiarlo en un solo sitio y que el resto del libro se entere",
+   "donde": [
+    "PAEP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 150,
+   "propuesta_en": "Water, electricity and phone that the commissary fee does not cover. Wood, charcoal and propane backup are not here: they scale with your cooks and live in the disposables, wood and cooking fuel row above. It is the one cell for this cost, so you change it in one place and the rest of the workbook follows.",
+   "propuesta_de": "GBQ-plan c0046 (BBQP 0. Supuestos!C26)",
+   "pistas": [
+    "P02",
+    "P03",
+    "P26",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil profesional alimentaria —la fase 1 de tu checklist pide un mínimo de 300.000 € de cobertura— más el seguro del vehículo a todo riesgo. Es la MISMA prima que la versión anterior contaba dos veces, una en la inversión y otra como gasto del año: aquí se cuenta una sola vez, que es como se paga",
+   "donde": [
+    "PAEP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 5500,
+   "propuesta_en": "General liability or a BOP (venues and planners often require 1M per occurrence), commercial auto that covers the smoker trailer, workers' comp for your W-2 staff and inland marine for the smoker. Venues ask for a certificate of insurance (COI) naming them as additional insured. Add liquor liability only if the client supplies alcohol and your staff serves it. Insureon publishes averages for small businesses (see the benchmarks table on the \"Instructions\" tab); the example is a Kit estimate, so get quotes from an insurance agent. It is counted once, as an annual expense, not also in startup costs.",
+   "propuesta_de": "GBQ-plan c0048 (BBQP 0. Supuestos!C27)",
+   "pistas": [
+    "P07",
+    "P02",
+    "P09",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Combustible del vehículo para desplazarse entre ubicaciones más el colchón de gasto corriente no presupuestado. Es un coste VARIABLE: sube y baja con los servicios que se hacen, así que no puede vivir entre los fijos, porque movería el punto de equilibrio sin que se notara. Agrupa dos partidas que la versión anterior tenía sueltas: el combustible, que ya era variable, y los varios e imprevistos, que estaban mal clasificados como fijos",
+   "donde": [
+    "PAEP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "valor_us": 0.03,
+   "propuesta_en": "Extra meat on the day, ice and parking at the venue: the unbudgeted costs of each event. It is a VARIABLE cost: it rises and falls with the number of events, so it cannot sit among the fixed costs or it would move the break-even without anyone noticing. Fuel is not here: vehicle and trailer fuel has its own fixed line on the \"3-Year P&L\" tab, and cooking fuel is in the disposables row.",
+   "propuesta_de": "GBQ-plan c0050 (BBQP 0. Supuestos!C28)",
+   "pistas": [
+    "P06",
+    "P02",
+    "P09",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0055",
+   "es": "Principal solicitado. La hoja de Financiación comprueba que el origen de fondos cuadra con la necesidad de caja de la hoja 1 (25.000 € de recursos propios + 72.000 € de préstamo = 97.000 €). Está por encima de los 73.400 € que sumaba la versión anterior porque el fondo de maniobra pasa a ser de verdad de tres meses, y porque ahora se suman a la necesidad de caja el IVA de la inversión —que hay que adelantar aunque se recupere— y los imprevistos de la puesta en marcha",
+   "donde": [
+    "PAEP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR",
+   "propuesta_en": "Principal requested: bank or SBA 7(a). The example loan is above the $50,000 ceiling of the SBA Microloan, so it fits an SBA 7(a) loan or a secured bank loan. If your loan is an SBA 7(a), this is the cell. It is the only loan that the amortization schedule, the P&L interest and the DSCR use. The \"Financing\" tab checks that the sources of funds match the total cash needed on the \"Startup Costs\" tab (which includes working capital and the smoker trailer, van and fit-out contingency): copy the loan suggested there into this cell until the difference reaches zero. A lender will ask for your plan and projections.",
+   "propuesta_de": "GBQ-plan c0055 (BBQP 0. Supuestos!C31)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P31",
+    "P02",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual; un préstamo de menor importe y sin garantía inmobiliaria (el vehículo es la garantía) suele salir algo por encima del de un local: pide oferta a dos entidades y a una línea ICO/ENISA de emprendedores antes de fijarlo",
+   "donde": [
+    "PAEP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "propuesta_en": "Nominal annual rate (not APR). The example (10%) is the kit's assumption for an SBA 7(a) loan. A smaller loan secured by a smoker trailer, a used van and kitchen equipment often prices above a storefront loan: ask two lenders for quotes, and ask about SBA-guaranteed loans, before you set it.",
+   "propuesta_de": "GBQ-plan c0057 (BBQP 0. Supuestos!C32)",
+   "pistas": [
+    "P06",
+    "P31",
+    "P02",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0059",
+   "es": "Años totales, carencia incluida. Un vehículo se amortiza más rápido que unas obras de local, así que el plazo también es más corto",
+   "donde": [
+    "PAEP · 0. Supuestos!C33"
+   ],
+   "fila": "Plazo del préstamo (años)",
+   "valor_us": 7,
+   "propuesta_en": "Total years, interest-only period included. A smoker trailer and a van lose value faster than a storefront build-out, so the term is shorter. SBA 7(a) allows up to 10 years for equipment and working capital.",
+   "propuesta_de": "GBQ-plan c0059 (BBQP 0. Supuestos!C33)",
+   "pistas": [
+    "P06",
+    "P33",
+    "P09",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Vehículo, adaptación y rotulación, instalación de gas, depósito de aguas y proyecto técnico: todo lo que va montado en el vehículo se amortiza con él. Ocho años son el 12,5 % anual, por debajo del coeficiente lineal máximo del 16 % que la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades fija para los elementos de transporte. Confírmalo con tu asesor",
+   "donde": [
+    "PAEP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 7,
+   "propuesta_en": "The smoker trailer, the van, their upfits (warming cabinet, storage boxes, racks, wrap) and the trailer inspection: everything mounted on a vehicle is depreciated with it. Straight-line book depreciation; tax methods such as MACRS or Section 179 are separate, so confirm with your accountant.",
+   "propuesta_de": "GBQ-plan c0079 (BBQP 0. Supuestos!C44)",
+   "pistas": [
+    "P06",
+    "P35",
+    "P12",
+    "P09",
+    "P26",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Equipamiento de cocina, generador, TPV, menaje y toldo. El uso es más intenso que en una cocina fija por el montaje y el desmontaje diarios, pero el coeficiente lineal máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades es del 12 % para maquinaria y del 10 % para mobiliario: por debajo de 9-10 años el exceso no sería deducible. Confírmalo con tu asesor",
+   "donde": [
+    "PAEP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 5,
+   "propuesta_en": "The live-fire rig, commissary storage fit-out, software, smallwares and pit tools, and holding and service equipment. Loading and unloading at every event wears them faster than a fixed kitchen, so a short life is prudent. Straight-line book depreciation; MACRS or Section 179 are tax treatments: confirm with your accountant.",
+   "propuesta_de": "GBQ-plan c0081 (BBQP 0. Supuestos!C45)",
+   "pistas": [
+    "P06",
+    "P35",
+    "P21",
+    "P26",
+    "P15",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "DATO INFORMATIVO: no entra en ningún cálculo de este libro. Son las cuatro mesas altas plegables de cuatro posiciones que presupuesta la partida «Toldo, mobiliario exterior plegable» de la hoja de inversión. Un food truck no tiene aforo legal ni plazas sentadas, así que aquí no se calcula ninguna rotación por plaza: el techo real de este negocio son los clientes por servicio, que la tabla de referencias de este mismo libro sitúa en 40-80, y quien manda sobre el volumen es la celda «Clientes/día» de arriba",
+   "donde": [
+    "PAEP · 0. Supuestos!C51"
+   ],
+   "fila": "Plazas de pie y mesas altas junto al vehículo",
+   "valor_us": 200,
+   "propuesta_en": "INFORMATION ONLY: it does not enter any calculation in this workbook. It is your estimate of the most events a year your pit and crew can handle with one smoker trailer; Saturdays in May, June and October are the bottleneck. Compare it with the events per year you plan and with the optimistic scenario: if the plan goes above it, you need a second pit or more staff. Volume itself is driven by the \"Events per year\" cell above.",
+   "propuesta_de": "GBQ-plan c0087 (BBQP 0. Supuestos!C51)",
+   "pistas": [
+    "P01",
+    "P03",
+    "P04",
+    "P09",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0089",
+   "es": "Un food truck que arranca no factura desde el primer día lo mismo que a los seis meses: hay que probar ubicaciones, entrar en los mercados y que la gente te conozca. Con 100 % se elimina la rampa y el año 1 se proyecta a velocidad de crucero",
+   "donde": [
+    "PAEP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "valor_us": 0.5,
+   "propuesta_en": "A new caterer does not book in month one what it books in month eight: weddings are reserved months ahead and corporate clients want to try you first. Events per year above is the year-1 AVERAGE: the ramp only spreads year 1's sales across the months (slower start, stronger finish) and keeps the annual total. At 100% there is no ramp.",
+   "propuesta_de": "GBQ-plan c0089 (BBQP 0. Supuestos!C52)",
+   "pistas": [
+    "P09",
+    "P39",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0093",
+   "es": "La adaptación del vehículo dura 4-8 semanas según la fase 2 de tu propio checklist: son dos meses de aparcamiento y base que se pagan antes de facturar el primer euro, así que forman parte de la inversión y no de la cuenta de resultados",
+   "donde": [
+    "PAEP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler del aparcamiento ANTES de abrir",
+   "valor_us": 1,
+   "propuesta_en": "Getting the commissary agreement, the permits, the fire inspection and the trailer ready takes weeks, and your test cooks happen before your first booking, so you pay commissary rent before you earn anything. It belongs in startup costs, not in the P&L.",
+   "propuesta_de": "GBQ-plan c0093 (BBQP 0. Supuestos!C54)",
+   "pistas": [
+    "P07",
+    "P23",
+    "P02",
+    "P09",
+    "P25",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0095",
+   "es": "Se conserva el mismo 8 % que la versión anterior tenía escrito a mano en su fila de imprevistos, ahora calculado por fórmula sobre las partidas de compra y adaptación del vehículo: si cambias el precio del vehículo, los imprevistos se recalculan solos. La nota de esa fila, en la hoja de Inversión, enumera exactamente qué partidas entran",
+   "donde": [
+    "PAEP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de compra y adaptación del vehículo (%)",
+   "valor_us": 0.1,
+   "propuesta_en": "Calculated by formula on the smoker trailer, its upfit, the van, its upfit and the trailer inspection lines: if you change the trailer price, the contingency recalculates on its own. The note on that row of the \"Startup Costs\" tab lists exactly which lines are included.",
+   "propuesta_de": "GBQ-plan c0095 (BBQP 0. Supuestos!C55)",
+   "pistas": [
+    "P02",
+    "P09",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0098",
+   "es": "En la ventanilla se cobra al contado (0 días). Súbelo si trabajas con organizadores de eventos o con clientes de catering que pagan a 15 o 30 días, o con plataformas que liquidan más tarde",
+   "donde": [
+    "PAEP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 7,
+   "propuesta_en": "Average days between the event and the money in your bank. Private clients usually pay a 50% nonrefundable deposit when they book and the balance days before the event, and many companies pay at 30 days, so the example sits in between. Raise it if clients or marketplaces pay later. The workbook does not model deposits: they improve your real cash flow.",
+   "propuesta_de": "GBQ-plan c0098 (BBQP 0. Supuestos!C58)",
+   "pistas": [
+    "P01",
+    "P04",
+    "P39",
+    "P43",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0106",
+   "es": "Bebida ALCOHÓLICA sobre el total de bebida: casi nula — la línea de bebida de este plan es refrescos, agua y zumos, como describe la fila «Food cost bebidas» de la tabla de referencias («refrescos y agua embotellada»); sólo alguna cerveza envasada ocasional en festivales de música. El resto va al IVA reducido de hostelería. Este mismo peso reparte el IVA que SOPORTAS al comprar la bebida (la parte alcohólica al tipo general y el resto al reducido): si tu proveedor te factura al 21 % los refrescos y zumos con azúcares o edulcorantes añadidos —que es lo que manda el art. 91.Uno.1.1.º de la Ley 37/1992—, soportarás algo más de IVA del que estima el libro; lo recuperas igual con el modelo 303",
+   "donde": [
+    "PAEP · 0. Supuestos!C62"
+   ],
+   "fila": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "valor_us": 0,
+   "propuesta_en": "ZERO by default: a BBQ caterer sells no alcohol. If the client supplies it, a licensed service should pour it under its own insurance. Selling alcohol requires a liquor license (and, in some states, an event-by-event caterer's permit): check your state before adding it. Keep liquor liability coverage whenever your staff pours at your events.",
+   "propuesta_de": "GBQ-plan c0106 (BBQP 0. Supuestos!C62)",
+   "pistas": [
+    "P06",
+    "P45",
+    "P02",
+    "P03",
+    "P46",
+    "P39",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0144",
+   "es": "Furgoneta adaptada o remolque. Segunda mano desde 15K",
+   "donde": [
+    "PAEP · Inversión Inicial!D7"
+   ],
+   "fila": "Vehículo food truck (nuevo o segunda mano)",
+   "valor_us": 2500,
+   "propuesta_en": "A new offset or reverse-flow smoker trailer, 500-gallon class (wood, charcoal or pellets). Examples we read: Meadow Creek TS500 at $20,395 (webstaurantstore.com); Yoder Frontiersman at $8,495-$16,295 plus shipping (yodersmokers.com). The tow vehicle is YOUR pickup, at 0 in this plan. If you don't have one, budget a used pickup that tows at least 5,000 lb (2,270 kg), checked against the loaded trailer weight: roughly 25,000-40,000 (Kit estimate).",
+   "propuesta_de": "GBQ-plan c0144 (BBQP Inversión Inicial!D7)",
+   "pistas": [
+    "P09",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0147",
+   "es": "Ventanilla servicio, mostrador, rotulación integral",
+   "donde": [
+    "PAEP · Inversión Inicial!D8"
+   ],
+   "fila": "Adaptación y rotulación vehículo",
+   "valor_us": 1800,
+   "propuesta_en": "Warming cabinet, hand sink and water tanks if your county requires them (smoking or serving at the event can make the trailer a mobile food unit), storage boxes and lights.",
+   "propuesta_de": "GBQ-plan c0147 (BBQP Inversión Inicial!D8)",
+   "pistas": [
+    "P39",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0149",
+   "es": "Plancha, freidora, campaña, nevera, fregadero",
+   "donde": [
+    "PAEP · Inversión Inicial!D9"
+   ],
+   "fila": "Equipamiento cocina móvil",
+   "valor_us": 900,
+   "propuesta_en": "Live-fire rig for the premium line: Santa Maria grill, Argentine parrilla, asado crosses and La Caja China for pig roasts. It is depreciated with the equipment. Lower it to 0 if you will only smoke.",
+   "propuesta_de": "GBQ-plan c0149 (BBQP Inversión Inicial!D9)",
+   "pistas": [
+    "P50"
+   ]
+  },
+  {
+   "id": "c0151",
+   "es": "Generador insonorizado o kit conexión a red",
+   "donde": [
+    "PAEP · Inversión Inicial!D10"
+   ],
+   "fila": "Generador eléctrico o conexión",
+   "valor_us": 1500,
+   "propuesta_en": "Racks, meat lugs and a vacuum sealer in the commissary. Ask the kitchen what it already provides before you budget this line.",
+   "propuesta_de": "GBQ-plan c0151 (BBQP Inversión Inicial!D10)",
+   "pistas": [
+    "P26",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0153",
+   "es": "Certificación gas obligatoria, revisión anual",
+   "donde": [
+    "PAEP · Inversión Inicial!D11"
+   ],
+   "fila": "Instalación gas (si aplica)",
+   "valor_us": 18000,
+   "propuesta_en": "A used cargo van for drop-offs and buffets: it carries the hot boxes and insulated food carriers. It is not refrigerated: cooked meat travels in hot holding at 135 °F (57 °C) or above, and raw meat goes from your supplier to the commissary. Prices vary with size, mileage and condition, so get several quotes. A Transit-size van does not need a CDL (that starts at 26,001 lb GVWR).",
+   "propuesta_de": "GBQ-plan c0153 (BBQP Inversión Inicial!D11)",
+   "pistas": [
+    "P26",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0155",
+   "es": "Depósito de agua limpia y de aguas residuales del vehículo: es el equipo que exige el proyecto técnico sanitario para servir comida fuera de un local con acometida",
+   "donde": [
+    "PAEP · Inversión Inicial!D12"
+   ],
+   "fila": "Depósito de agua + aguas residuales",
+   "valor_us": 3000,
+   "propuesta_en": "Shelving, racks, tie-downs for hot boxes and carriers, and the vehicle wrap.",
+   "propuesta_de": "GBQ-plan c0155 (BBQP Inversión Inicial!D12)",
+   "pistas": [
+    "P09",
+    "P15",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0157",
+   "es": "SL unipersonal exprés. Las tasas y el arancel del Registro Mercantil no llevan IVA, pero los honorarios del notario y de tu gestoría sí (21 %, deducible): el libro deja la fila entera fuera del IVA que hay que adelantar para no inflarlo. Si tu presupuesto es sobre todo de honorarios, cambia el desplegable de la columna «¿Lleva IVA?» a «Sí»",
+   "donde": [
+    "PAEP · Inversión Inicial!D13"
+   ],
+   "fila": "Constitución SL + notaría + registro",
+   "valor_us": 1500,
+   "propuesta_en": "State filing fees for the LLC (Secretary of State) plus an attorney's review of your standard contract (50% nonrefundable deposit, cancellation tiers and a burn ban clause) or a filing service; a registered agent is also needed. Fees vary a lot by state. The \"Taxable / recoverable tax?\" column is set to No: it only matters if you enter a recoverable input tax rate (for example UK VAT).",
+   "propuesta_de": "GBQ-plan c0157 (BBQP Inversión Inicial!D13)",
+   "pistas": [
+    "P06",
+    "P54",
+    "P03",
+    "P55",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0160",
+   "es": "Varía mucho por municipio y comunidad autónoma: pide el importe en el tuyo antes de cerrar el presupuesto",
+   "donde": [
+    "PAEP · Inversión Inicial!D14"
+   ],
+   "fila": "Licencias y permisos (promedio)",
+   "valor_us": 2000,
+   "propuesta_en": "Varies a lot by city, county and state: get the amounts for yours before you close the budget. Expect the catering or health permit, mobile food unit or temporary event permits, the fire marshal inspection, the business license, the sales tax permit, ServSafe Manager and food handler cards.",
+   "propuesta_de": "GBQ-plan c0160 (BBQP Inversión Inicial!D14)",
+   "pistas": [
+    "P06",
+    "P02",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0162",
+   "es": "Obligatorio para la actividad alimentaria móvil: planos de instalación, flujos y depósitos de agua",
+   "donde": [
+    "PAEP · Inversión Inicial!D15"
+   ],
+   "fila": "Proyecto técnico sanitario",
+   "valor_us": 500,
+   "propuesta_en": "Only if your county requires it: some review the trailer or your written procedures before issuing the permit and charge a plan review fee. In Texas, a mobile food unit works out of a central preparation facility (25 TAC §228.221). If your county doesn't, enter 0.",
+   "propuesta_de": "GBQ-plan c0162 (BBQP Inversión Inicial!D15)",
+   "pistas": [
+    "P58"
+   ]
+  },
+  {
+   "id": "c0164",
+   "es": "TPV tablet + datáfono 4G para cobros",
+   "donde": [
+    "PAEP · Inversión Inicial!D16"
+   ],
+   "fila": "TPV móvil + datáfono",
+   "valor_us": 1200,
+   "propuesta_en": "Catering software for proposals, e-signature contracts, deposits and final balances, plus a card reader and a tablet.",
+   "propuesta_de": "GBQ-plan c0164 (BBQP Inversión Inicial!D16)",
+   "pistas": [
+    "P21",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0166",
+   "es": "Menaje, utensilios y cubertería desechable: es el equipamiento que se amortiza. La primera compra de envases entra aquí sólo como arranque; el packaging de cada día NO se amortiza, va como coste variable en la línea «Consumibles y envases» de la cuenta de resultados, al porcentaje sobre ventas de la hoja de Supuestos",
+   "donde": [
+    "PAEP · Inversión Inicial!D17"
+   ],
+   "fila": "Menaje, utensilios, packaging eco",
+   "valor_us": 1800,
+   "propuesta_en": "Knives, cutting boards, hotel pans, calibrated probe thermometers, butcher paper and foil, and heat-resistant gloves: the tools that get depreciated. Daily disposables are NOT depreciated: they go in the disposables, wood and cooking fuel line of the P&L, at the % of sales set in the \"0. Assumptions\" tab.",
+   "propuesta_de": "GBQ-plan c0166 (BBQP Inversión Inicial!D17)",
+   "pistas": [
+    "P03",
+    "P60",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0168",
+   "es": "Género para las primeras dos semanas de servicio. El libro calcula el IVA que adelantas por esta fila al tipo general, aunque los alimentos se compren al 10 % (o al 4 %): son unos euros de más en la caja del arranque, que se recuperan igual con el modelo 303",
+   "donde": [
+    "PAEP · Inversión Inicial!D18"
+   ],
+   "fila": "Stock inicial de producto",
+   "valor_us": 2500,
+   "propuesta_en": "Meat for your test cooks, rubs, sauces, wood and disposables for your first events. With 0% recoverable input tax (the US default), any sales tax you pay on this purchase is treated as a cost.",
+   "propuesta_de": "GBQ-plan c0168 (BBQP Inversión Inicial!D18)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P45",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0170",
+   "es": "RRSS, web, flyers, ficha Google, evento inaugural",
+   "donde": [
+    "PAEP · Inversión Inicial!D19"
+   ],
+   "fila": "Marketing lanzamiento",
+   "valor_us": 4500,
+   "propuesta_en": "Website, photos of the meat and the smoker trailer, listings on The Knot, WeddingWire, Zola and ezCater, Google Business Profile and your first bridal show.",
+   "propuesta_de": "GBQ-plan c0170 (BBQP Inversión Inicial!D19)",
+   "pistas": [
+    "P63",
+    "P43",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0172",
+   "es": "Mesas altas plegables, sombrilla, banderolas",
+   "donde": [
+    "PAEP · Inversión Inicial!D20"
+   ],
+   "fila": "Toldo, mobiliario exterior plegable",
+   "valor_us": 3000,
+   "propuesta_en": "Six insulated food carriers, two hot boxes, ten chafing dishes, coolers, tables, a canopy and a cutting board for the carving station.",
+   "propuesta_de": "GBQ-plan c0172 (BBQP Inversión Inicial!D20)",
+   "pistas": [
+    "P65"
+   ]
+  },
+  {
+   "id": "c0180",
+   "es": "Es lo que se compra: obra, equipamiento, lanzamiento y gastos de constitución. El colchón de caja no es inversión, es circulante",
+   "donde": [
+    "PAEP · Inversión Inicial!D27"
+   ],
+   "fila": "CAPEX (inversión sin el fondo de maniobra)",
+   "propuesta_en": "What you buy: smoker trailer, van, upfits, live-fire rig, equipment, launch and formation costs. The cash cushion is not an investment: it is working capital.",
+   "propuesta_de": "GBQ-plan c0180 (BBQP Inversión Inicial!D27)",
+   "pistas": [
+    "P66"
+   ]
+  },
+  {
+   "id": "c0205",
+   "es": "Producto principal servido en ubicaciones fijas y mercados, más el catering y las celebraciones privadas (la línea «Catering/eventos privados» de la v1.1, que en el fichero original NO llevaba coste de mercancía propio: aquí SÍ lo lleva, con el mismo tipo que la comida de calle)",
+   "donde": [
+    "PAEP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de comida (calle, mercados y catering privado)",
+   "propuesta_en": "Sales of BBQ packages: the smoked meats, sides, bread and sauces plus the staffing that serves them, across drop-offs, buffets, parties, weddings and live-fire events. All of it carries cost of goods sold at the BBQ package rate.",
+   "propuesta_de": "GBQ-plan c0205 (BBQP PyG 3 Años!F10)",
+   "pistas": [
+    "P02",
+    "P03",
+    "P39",
+    "P15",
+    "P43",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0207",
+   "es": "Bebidas embotelladas de acompañamiento del menú: el food truck no sirve bebida de barra",
+   "donde": [
+    "PAEP · PyG 3 Años!F11"
+   ],
+   "fila": "Ventas de bebida (refrescos, agua y zumos embotellados)",
+   "propuesta_en": "Sales of add-ons: the live pit on site (your smoker trailer at the event, a paid extra), desserts, appetizers, non-alcoholic drinks, rentals and travel fees. The client buys any alcohol separately, so there is no alcohol revenue.",
+   "propuesta_de": "GBQ-plan c0207 (BBQP PyG 3 Años!F11)",
+   "pistas": [
+    "P09",
+    "P15",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0221",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Es la plaza de aparcamiento y la base del vehículo (agua, limpieza y vaciado de residuales), no la renta de un local. Los meses previos a la apertura están en la hoja de Inversión y NO se cuentan dos veces",
+   "donde": [
+    "PAEP · PyG 3 Años!F22"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "propuesta_en": "The monthly amount is typed in \"0. Assumptions\"; here it is multiplied by twelve. It covers your commissary hours, storage and the parking spot for the smoker trailer, not storefront rent. The months before opening are on the \"Startup Costs\" tab and are NOT counted twice.",
+   "propuesta_de": "GBQ-plan c0221 (BBQP PyG 3 Años!F22)",
+   "pistas": [
+    "P23",
+    "P09",
+    "P25",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0225",
+   "es": "Combustible del generador eléctrico, agua limpia y vaciado de residuales en la base del vehículo. Luz y gas van al 21 % y la factura del agua al 10 %: el libro aplica a toda la partida el tipo de la columna de al lado (21 %), así que si el agua pesa mucho en tu caso, sepárala en su propia línea",
+   "donde": [
+    "PAEP · PyG 3 Años!F24"
+   ],
+   "fila": "Suministros (luz, agua, gas)",
+   "propuesta_en": "Water, electricity and phone that the commissary fee does not cover. No propane or wood here: they scale with your cooks and sit in the disposables, wood and cooking fuel line.",
+   "propuesta_de": "GBQ-plan c0225 (BBQP PyG 3 Años!F24)",
+   "pistas": [
+    "P23",
+    "P09",
+    "P25",
+    "P26",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0235",
+   "es": "Gestor autorizado. El propio checklist ya avisa de que la freidora genera aceite usado que hay que gestionar, pero nunca contrataba el servicio. Pide presupuesto en tu zona",
+   "donde": [
+    "PAEP · PyG 3 Años!F32"
+   ],
+   "fila": "Gestión de residuos (orgánico, cartón y aceite usado)",
+   "valor_us": 600,
+   "propuesta_en": "Licensed hauler for trash, grease and ash. Ask the commissary first: many include pickup in the fee. If yours does not, get a quote in your area. Let ash cool completely and keep it in a metal container with a lid.",
+   "propuesta_de": "GBQ-plan c0235 (BBQP PyG 3 Años!F32)",
+   "pistas": [
+    "P06",
+    "P54",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0237",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que el checklist ya exige en su fase de personal",
+   "donde": [
+    "PAEP · PyG 3 Años!F33"
+   ],
+   "fila": "Desinsectación, desratización y desinfección (DDD)",
+   "valor_us": 1000,
+   "propuesta_en": "Repairs for the smoker and your equipment: doors, gaskets, thermometers, and the wheels and lights of the trailer.",
+   "propuesta_de": "GBQ-plan c0237 (BBQP PyG 3 Años!F33)",
+   "pistas": [
+    "P06",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0239",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no (art. 30.5 de la Ley 31/1995). A quién se marca como responsable se corrige en el propio checklist",
+   "donde": [
+    "PAEP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 600,
+   "propuesta_en": "ServSafe Manager (Certified Food Protection Manager) and food handler cards for you and your team, plus their renewals. The required cards vary by state.",
+   "propuesta_de": "GBQ-plan c0239 (BBQP PyG 3 Años!F34)",
+   "pistas": [
+    "P06",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0241",
+   "es": "Sólo se paga si el food truck pone música propia en ferias y festivales (distinto de la licencia del organizador, que cubre el recinto y no cada puesto). Presupuesto mínimo por si se usa",
+   "donde": [
+    "PAEP · PyG 3 Años!F35"
+   ],
+   "fila": "Derechos de autor por música ambiental (SGAE/AGEDI-AIE)",
+   "valor_us": 1500,
+   "propuesta_en": "Food cost and labor for the tastings you offer couples, planners and companies (meat, sides and pit hours). Many caterers charge a fee and credit it toward the booking: if you do, lower this line.",
+   "propuesta_de": "GBQ-plan c0241 (BBQP PyG 3 Años!F35)",
+   "pistas": [
+    "P46",
+    "P09",
+    "P39",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0268",
+   "es": "Techo mezclado de los food cost que publica la tabla de referencias de este libro (comida 28-33 %, bebida 22-28 %). La ratio de al lado mide sólo la MERCANCÍA: los consumibles y los envases tienen su propia línea en la cuenta de resultados y no entran aquí, así que el caso base se queda holgadamente por debajo del techo",
+   "donde": [
+    "PAEP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.35,
+   "propuesta_en": "Ceiling for cost of goods (disposables, wood and cooking fuel have their own line): kit benchmark (editable estimate), based on the 28-35% food cost range for caterers in the benchmarks table.",
+   "propuesta_de": "GBQ-plan c0268 (BBQP PyG 3 Años!F53)",
+   "pistas": [
+    "P15",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0270",
+   "es": "Techo del propio libro: la fila «Coste personal sobre ventas» (25-32 %) de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones («menos personal que un restaurante: 2-3 personas»)",
+   "donde": [
+    "PAEP · PyG 3 Años!F54"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.38,
+   "propuesta_en": "Ceiling: kit benchmark (editable estimate), above the 25-35% labor range that pricing guides report because it includes the owner/pitmaster's own pay.",
+   "propuesta_de": "GBQ-plan c0270 (BBQP PyG 3 Años!F54)",
+   "pistas": [
+    "P03",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0272",
+   "es": "No hay referencia de local en este libro (el food truck no paga renta de local): 5 % es un techo prudente para el aparcamiento/base del vehículo, muy por debajo del 8-12 % de un negocio con local fijo (mismo orden que el resto de la familia, adaptado a este molde)",
+   "donde": [
+    "PAEP · PyG 3 Años!F55"
+   ],
+   "fila": "Aparcamiento / Ventas",
+   "valor_us": 0.07,
+   "propuesta_en": "There is no storefront rent in this workbook: 7% is a prudent ceiling for the commissary kitchen and smoker trailer parking, a kit benchmark (editable estimate). A business with its own fixed kitchen carries a much higher occupancy cost.",
+   "propuesta_de": "GBQ-plan c0272 (BBQP PyG 3 Años!F55)",
+   "pistas": [
+    "P23",
+    "P09",
+    "P25",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0344",
+   "es": "Elabora el producto, conduce el vehículo entre ubicaciones y lleva la gestión, compras y RRSS. Cubre el turno fuerte de los 250 días de servicio al año",
+   "donde": [
+    "PAEP · Personal!J5"
+   ],
+   "fila": "Propietario/a — chef, gestión y conducción",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 4507
+   },
+   "propuesta_en": "Sells, runs the tastings, plans menus, and works the pit and the carving station at weddings and premium events. Covers the main shift at every event. The rest of the owner's pay comes from profit.",
+   "propuesta_de": "GBQ-plan c0344 (BBQP Personal!J5)",
+   "pistas": [
+    "P63",
+    "P09",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0346",
+   "es": "Prep, montaje, atención al cliente y desmontaje. A tiempo parcial: un food truck de dos servicios diarios como máximo no necesita una segunda persona a jornada completa. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "PAEP · Personal!J6"
+   ],
+   "fila": "Ayudante de cocina y servicio",
+   "valor_us": {
+    "B": 1,
+    "C": 0.4,
+    "D": 1387
+   },
+   "propuesta_en": "Pit cook / lead cook, part-time W-2: runs the overnight cook with probes and handles hot holding. One pit cook can watch several cooks at once. Paid at or above the pay floor in proportion to FTE, around the 75th percentile for restaurant cooks (BLS OEWS, May 2025).",
+   "propuesta_de": "GBQ-plan c0346 (BBQP Personal!J6)",
+   "pistas": [
+    "P06",
+    "P79",
+    "P01",
+    "P04",
+    "P09",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0348",
+   "es": "Sólo para los picos de afluencia que el propio fichero describe («Festivales = facturación x3-5 en un día»): unas pocas jornadas al mes, no un puesto estable. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "PAEP · Personal!J7"
+   ],
+   "fila": "Refuerzo de festivales y eventos grandes",
+   "valor_us": {
+    "B": 4,
+    "C": 0.1,
+    "D": 1248
+   },
+   "propuesta_en": "Servers, buffet attendants and carvers hired per event and paid hourly as W-2 employees, about one per 25-30 guests at a buffet (Kit estimate). Their FTE is a fraction because they only work event hours. Treating them as 1099 contractors is a misclassification risk (FLSA; California AB5). Paid at or above the pay floor in proportion to FTE. The voluntary gratuity is theirs.",
+   "propuesta_de": "GBQ-plan c0348 (BBQP Personal!J7)",
+   "pistas": [
+    "P06",
+    "P79",
+    "P03",
+    "P39",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0350",
+   "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) del propietario y del ayudante, y del descanso semanal. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "PAEP · Personal!J8"
+   ],
+   "fila": "Suplencias de vacaciones y descansos",
+   "valor_us": {
+    "B": 1,
+    "C": 0.3,
+    "D": 884
+   },
+   "propuesta_en": "Part-time W-2 prep cook and driver: portions and mixes rubs in the commissary, loads the van and drives to venues. Paid at or above the pay floor in proportion to FTE.",
+   "propuesta_de": "GBQ-plan c0350 (BBQP Personal!J8)",
+   "pistas": [
+    "P06",
+    "P79",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0364",
+   "es": "Jornada efectiva completa del día de servicio: carga, desplazamiento, montaje, servicio, recogida y limpieza. El servicio al público es sólo una parte",
+   "donde": [
+    "PAEP · Personal!J18"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "valor_us": 9,
+   "propuesta_en": "Hours of work per person for one event: portioning, the overnight cook, loading, travel, setup, two to three hours of service, breakdown and cleanup. Serving is only part of it. Hours × people × events per year sets the event staff cost.",
+   "propuesta_de": "GBQ-plan c0364 (BBQP Personal!J18)",
+   "pistas": [
+    "P83"
+   ]
+  },
+  {
+   "id": "c0366",
+   "es": "Presencia media a bordo. En los picos de un festival hará falta un segundo par de manos: súbelo aquí y la plantilla se dimensiona sola",
+   "donde": [
+    "PAEP · Personal!J19"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "valor_us": 2.5,
+   "propuesta_en": "Average number of people working each event: about 1.5 on a drop-off, 3 on a staffed buffet for 70, 5 on a full-service company event, 7 at a wedding with the live pit (2 on the pit and 5 servers, as in the calculator's example) and 5 on a live-fire booking (Kit estimate). Weighted by the example mix in the Word plan, that averages about 3.4. Raise it for bigger events: the staffing sizes itself.",
+   "propuesta_de": "GBQ-plan c0366 (BBQP Personal!J19)",
+   "pistas": [
+    "P39",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0379",
+   "es": "1. «0. Supuestos» es la hoja de mando: clientes, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+   "donde": [
+    "PAEP · Instrucciones!A5"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "propuesta_en": "1. \"0. Assumptions\" is the control sheet: events per year, price per guest excl. sales tax, guests per event, the mix of BBQ packages and add-ons, cost of goods sold, commissary and smoker trailer parking, financing and taxes.",
+   "propuesta_de": "GBQ-plan c0379 (BBQP Instrucciones!A5)",
+   "pistas": [
+    "P06",
+    "P08",
+    "P01",
+    "P03",
+    "P04",
+    "P15",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0419",
+   "es": "Aparcamiento y base del vehículo",
+   "donde": [
+    "PAEP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Commissary kitchen and smoker trailer parking",
+   "propuesta_de": "GBQ-plan c0419 (BBQP Instrucciones!A39)",
+   "pistas": [
+    "P86",
+    "P23",
+    "P09",
+    "P25",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0421",
+   "es": "400 €/mes (4.800 € al año), más dos meses de fianza y dos meses antes de abrir",
+   "donde": [
+    "PAEP · Instrucciones!C39"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "por_celda": true,
+   "propuesta_en": "A monthly commissary cost (hours + storage) and the parking spot for the smoker trailer, plus a deposit and rent for the months before opening",
+   "propuesta_de": "GBQ-plan c0421 (BBQP Instrucciones!C39)",
+   "pistas": [
+    "P86",
+    "P06",
+    "P07",
+    "P02",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0422",
+   "es": "Un food truck necesita un sitio en el que pernoctar, cargar agua y vaciar residuos. El plan anterior no lo pagaba en ninguna línea, así que el negocio parecía no tener ningún coste de suelo",
+   "donde": [
+    "PAEP · Instrucciones!D39"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "por_celda": true,
+   "propuesta_en": "Smoked meat has to be cooked in a permitted kitchen, not at home, so a commissary or shared kitchen is a real recurring cost. Leaving it out makes the business look like it has no occupancy cost.",
+   "propuesta_de": "GRC-plan c0422 (BBQP Instrucciones!D39)",
+   "pistas": [
+    "P86",
+    "P02",
+    "P09",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0429",
+   "es": "dos vidas útiles: el vehículo, su adaptación y los imprevistos de la puesta en marcha a 8 años, y el equipamiento y el mobiliario a 10. La cuota del año la calcula la hoja de Inversión",
+   "donde": [
+    "PAEP · Instrucciones!C41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "propuesta_en": "Two useful lives: the smoker trailer, the van and their upfits on one, and the live-fire rig and the equipment on the other. The Startup Costs tab calculates the annual charge.",
+   "propuesta_de": "GBQ-plan c0429 (BBQP Instrucciones!C41)",
+   "pistas": [
+    "P86",
+    "P09",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0430",
+   "es": "El vehículo se amortiza más rápido que el equipamiento porque son cosas distintas para Hacienda. Y el fondo de maniobra, el stock y el marketing no se amortizan: no son inmovilizado",
+   "donde": [
+    "PAEP · Instrucciones!D41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "propuesta_en": "The trailer and the van wear out at a different speed than the rig and the equipment. Working capital, opening inventory and launch marketing are not fixed assets, so they are not depreciated.",
+   "propuesta_de": "GBQ-plan c0430 (BBQP Instrucciones!D41)",
+   "pistas": [
+    "P86",
+    "P06",
+    "P09",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0431",
+   "es": "Seguro del vehículo y RC",
+   "donde": [
+    "PAEP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Smoker trailer and van insurance, and liability",
+   "propuesta_de": "GBQ-plan c0431 (BBQP Instrucciones!A42)",
+   "pistas": [
+    "P86",
+    "P09",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Generador",
+   "donde": [
+    "PAEP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Wood, charcoal and propane backup",
+   "propuesta_de": "GBQ-plan c0435 (BBQP Instrucciones!A43)",
+   "pistas": [
+    "P86",
+    "P26",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "2.400 € al año dentro de la celda de suministros",
+   "donde": [
+    "PAEP · Instrucciones!C43"
+   ],
+   "fila": "Generador",
+   "por_celda": true,
+   "propuesta_en": "Included in the disposables, wood and cooking fuel line",
+   "propuesta_de": "GRC-plan c0437 (BBQP Instrucciones!C43)",
+   "pistas": [
+    "P86",
+    "P07",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "Era el mismo gasto escrito en dos sitios. Ahora se cambia en uno solo y el resto del libro se entera",
+   "donde": [
+    "PAEP · Instrucciones!D43"
+   ],
+   "fila": "Generador",
+   "por_celda": true,
+   "propuesta_en": "Wood, charcoal and propane backup scale with the pounds of meat you smoke and the number of events: here they live in one percentage of sales, and the rest of the workbook follows.",
+   "propuesta_de": "GRC-plan c0438 (BBQP Instrucciones!D43)",
+   "pistas": [
+    "P86",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "el mismo 8 %, pero calculado sobre la compra y la adaptación del vehículo",
+   "donde": [
+    "PAEP · Instrucciones!C44"
+   ],
+   "fila": "Imprevistos de la puesta en marcha",
+   "por_celda": true,
+   "propuesta_en": "A percentage calculated on the smoker trailer, van and upfit lines",
+   "propuesta_de": "GBQ-plan c0441 (BBQP Instrucciones!C44)",
+   "pistas": [
+    "P86",
+    "P09",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "Si cambias el precio del vehículo, los imprevistos se recalculan solos en vez de quedarse en la cifra vieja",
+   "donde": [
+    "PAEP · Instrucciones!D44"
+   ],
+   "fila": "Imprevistos de la puesta en marcha",
+   "por_celda": true,
+   "propuesta_en": "If you change the trailer price, the contingency recalculates instead of staying at the old amount.",
+   "propuesta_de": "GBQ-plan c0442 (BBQP Instrucciones!D44)",
+   "pistas": [
+    "P86",
+    "P09",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "un solo 5 % sobre las ventas, tratado como coste variable",
+   "donde": [
+    "PAEP · Instrucciones!C49"
+   ],
+   "fila": "Combustible y varios",
+   "por_celda": true,
+   "propuesta_en": "A percentage of sales, treated as a variable cost; vehicle and trailer fuel has its own fixed line",
+   "propuesta_de": "GRC-plan c0461 (BBQP Instrucciones!C49)",
+   "pistas": [
+    "P86",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "El combustible sube y baja con los servicios que se hacen: ponerlo entre los fijos falseaba el punto de equilibrio",
+   "donde": [
+    "PAEP · Instrucciones!D49"
+   ],
+   "fila": "Combustible y varios",
+   "por_celda": true,
+   "propuesta_en": "Extra meat, ice and venue parking rise and fall with the number of events: among the fixed costs they would distort the break-even.",
+   "propuesta_de": "GBQ-plan c0462 (BBQP Instrucciones!D49)",
+   "pistas": [
+    "P86",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "sumados a la línea de comida, con el mismo coste de mercancía que el resto (28 %)",
+   "donde": [
+    "PAEP · Instrucciones!C50"
+   ],
+   "fila": "Catering y eventos privados",
+   "por_celda": true,
+   "propuesta_en": "Every sale carries its cost of goods: BBQ packages and add-ons each at their own rate",
+   "propuesta_de": "GRC-plan c0465 (BBQP Instrucciones!C50)",
+   "pistas": [
+    "P86",
+    "P15",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Food cost comida",
+   "donde": [
+    "PAEP · Instrucciones!A55"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P15",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "28-33 %",
+   "donde": [
+    "PAEP · Instrucciones!B55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "Fichero v1.1",
+   "donde": [
+    "PAEP · Instrucciones!C55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "Depende del concepto: burger 30 %, tacos 25 %, poke 35 %. Este plan trabaja con el 28 %, el extremo bajo: si tu carta va al 33 %, el resultado del primer año se queda muy justo",
+   "donde": [
+    "PAEP · Instrucciones!D55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Food cost bebidas",
+   "donde": [
+    "PAEP · Instrucciones!A56"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0481",
+   "es": "22-28 %",
+   "donde": [
+    "PAEP · Instrucciones!B56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0482",
+   "es": "Fichero v1.1",
+   "donde": [
+    "PAEP · Instrucciones!C56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0483",
+   "es": "Refrescos y agua embotellada, margen alto",
+   "donde": [
+    "PAEP · Instrucciones!D56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0484",
+   "es": "Coste packaging / ventas",
+   "donde": [
+    "PAEP · Instrucciones!A57"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0485",
+   "es": "3-5 %",
+   "donde": [
+    "PAEP · Instrucciones!B57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0486",
+   "es": "Fichero v1.1",
+   "donde": [
+    "PAEP · Instrucciones!C57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0487",
+   "es": "Packaging eco más caro pero obligatorio en muchos municipios",
+   "donde": [
+    "PAEP · Instrucciones!D57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P06",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0492",
+   "es": "Ticket medio food truck",
+   "donde": [
+    "PAEP · Instrucciones!A59"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P01",
+    "P04",
+    "P09",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0493",
+   "es": "10-15 €",
+   "donde": [
+    "PAEP · Instrucciones!B59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P07",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0494",
+   "es": "Fichero v1.1",
+   "donde": [
+    "PAEP · Instrucciones!C59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0495",
+   "es": "Menú completo: plato + bebida + extra. El de este plan son 12 € SIN IVA, que con el tipo de hostelería salen 13,20 € de PVP",
+   "donde": [
+    "PAEP · Instrucciones!D59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P06",
+    "P07",
+    "P08",
+    "P01",
+    "P12",
+    "P15",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0499",
+   "es": "Depende de ubicación, evento y día de la semana. Este plan proyecta 45, el extremo bajo del rango, a propósito",
+   "donde": [
+    "PAEP · Instrucciones!D60"
+   ],
+   "fila": "Clientes por servicio",
+   "por_celda": true,
+   "propuesta_en": "Caterer food cost as a share of the price. Meat prices swing, so re-cost every quote and test the result at the top of the range.",
+   "propuesta_de": "GBQ-plan c0499 (BBQP Instrucciones!D60)",
+   "pistas": [
+    "P92",
+    "P43",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0500",
+   "es": "Margen bruto objetivo",
+   "donde": [
+    "PAEP · Instrucciones!A61"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0501",
+   "es": "> 62 %",
+   "donde": [
+    "PAEP · Instrucciones!B61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0502",
+   "es": "Fichero v1.1",
+   "donde": [
+    "PAEP · Instrucciones!C61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0503",
+   "es": "Inferior a un restaurante por el peso del packaging y el combustible",
+   "donde": [
+    "PAEP · Instrucciones!D61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0508",
+   "es": "Retorno de la inversión",
+   "donde": [
+    "PAEP · Instrucciones!A63"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0509",
+   "es": "12-24 meses",
+   "donde": [
+    "PAEP · Instrucciones!B63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0510",
+   "es": "Fichero v1.1",
+   "donde": [
+    "PAEP · Instrucciones!C63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0511",
+   "es": "Es la referencia del sector. El de ESTE plan lo calcula la hoja de Tesorería y sale más largo: se mide sobre la inversión completa, con el fondo de maniobra dentro —el IVA no cuenta, porque se recupera con el modelo 303— y con el flujo que genera el negocio ANTES de pagar al banco. Esa misma hoja publica debajo el plazo medido sólo sobre lo que se compra, sin el fondo de maniobra, que sale más corto",
+   "donde": [
+    "PAEP · Instrucciones!D63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P06",
+    "P45",
+    "P31",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0515",
+   "es": "Mercados, eventos, zona de oficinas, festivales",
+   "donde": [
+    "PAEP · Instrucciones!D64"
+   ],
+   "fila": "Días operativos/semana",
+   "por_celda": true,
+   "propuesta_en": "Mean hourly wages for restaurant cooks (35-2014) and nonrestaurant food servers (35-3041), and the median for chefs and head cooks (35-1011); 75th percentile $21.45 for cooks and $18.51 for servers. The plan pays the pit cook near the 75th percentile and the owner/pitmaster below the chefs and head cooks median: the rest comes from profit.",
+   "propuesta_de": "GBQ-plan c0515 (BBQP Instrucciones!D64)",
+   "pistas": [
+    "P92",
+    "P39",
+    "P43",
+    "P100"
+   ]
+  },
+  {
+   "id": "c0519",
+   "es": "Comida (12-15 h) y/o cena (19-23 h) según ubicación",
+   "donde": [
+    "PAEP · Instrucciones!D65"
+   ],
+   "fila": "Servicios por día",
+   "por_celda": true,
+   "propuesta_en": "2023 Shared Kitchen Operator Survey; 42% of operators charge $20-$29 per hour. Storage and parking cost extra, and not every kitchen lets you smoke in the yard.",
+   "propuesta_de": "GBQ-plan c0519 (BBQP Instrucciones!D65)",
+   "pistas": [
+    "P92",
+    "P15",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0520",
+   "es": "Coste de combustible/mes",
+   "donde": [
+    "PAEP · Instrucciones!A66"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0521",
+   "es": "300-500 €",
+   "donde": [
+    "PAEP · Instrucciones!B66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P07",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0522",
+   "es": "Fichero v1.1",
+   "donde": [
+    "PAEP · Instrucciones!C66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0523",
+   "es": "Desplazamiento entre ubicaciones. En este plan va dentro del «Varios e imprevistos» de los costes variables",
+   "donde": [
+    "PAEP · Instrucciones!D66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P03",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0528",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "PAEP · Instrucciones!A68"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P06",
+    "P79",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0529",
+   "es": "PROVINCIAL de hostelería o de comercio (según clasificación de la venta ambulante)",
+   "donde": [
+    "PAEP · Instrucciones!B68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P104",
+    "P39",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0530",
+   "es": "Fichero v1.1 (fase 4 del checklist)",
+   "donde": [
+    "PAEP · Instrucciones!C68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P02",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0531",
+   "es": "No existe una tabla salarial estatal única: copia la tabla que te corresponda en la celda de Supuestos",
+   "donde": [
+    "PAEP · Instrucciones!D68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P92",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0597",
+   "es": "El mismo cálculo sobre lo que se COMPRA (obra, equipamiento, lanzamiento y constitución), sin el fondo de maniobra: ese dinero no se gasta, se inmoviliza y vuelve al cerrar el negocio. Informativo: el payback que se publica es el de arriba",
+   "donde": [
+    "PAEP · Tesorería 12 meses!D32"
+   ],
+   "fila": "Payback sobre el CAPEX, sin fondo de maniobra (años)",
+   "propuesta_en": "The same calculation on what you BUY (smoker trailer, van, upfits, live-fire rig, equipment, launch and formation costs), without working capital: that money is not spent, it is tied up and comes back when the business closes. For reference only: the payback that matters is the one above",
+   "propuesta_de": "GBQ-plan c0597 (BBQP Tesorería 12 meses!D32)"
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GRB-plan": {
+   "salida": "scripts/productos-digitales/business-plans-en-7/textos_en/GRB-plan.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 98,
+   "cadenas": [
+    {
+     "id": "c0028",
+     "es": "A CERO por defecto: este negocio vende en el punto de venta móvil, no reparte a domicilio. Súbelo si activas un canal de delivery desde una ubicación fija",
+     "en_actual": "Share of your sales that comes through corporate catering marketplaces such as ezCater, rather than from clients who book you directly. Set it to 0 if you only sell direct. The marketplace sends you the order but keeps a commission (next row).",
+     "de": "GRC-plan c0028 (BBQP 0. Supuestos!C16)",
+     "donde": [
+      "PAEP · 0. Supuestos!C16"
+     ]
+    },
+    {
+     "id": "c0030",
+     "es": "Sin uso mientras pct_delivery esté a 0: rango habitual de comisión de plataforma si algún día operas desde una ubicación fija con reparto",
+     "en_actual": "Commission the marketplace keeps on those sales. ezCater charges about 15% on food and delivery (Kit estimate); fees change, so check the current schedule when you sign up. Not used while the marketplace share is 0%.",
+     "de": "GRC-plan c0030 (BBQP 0. Supuestos!C17)",
+     "donde": [
+      "PAEP · 0. Supuestos!C17"
+     ]
+    },
+    {
+     "id": "c0044",
+     "es": "Dos meses de fianza por la plaza o la nave, menos que los tres habituales de un local comercial",
+     "en_actual": "Months of deposit on the commissary agreement. Many shared kitchens ask for one month up front: far less than the deposit on a commercial lease. Negotiate it in the written agreement.",
+     "de": "GRC-plan c0044 (BBQP 0. Supuestos!C25)",
+     "donde": [
+      "PAEP · 0. Supuestos!C25"
+     ]
+    },
+    {
+     "id": "c0053",
+     "es": "Aportación del titular. Con menos, el banco no entra: pide un 25-30 % de fondos propios sobre la necesidad de caja de este plan",
+     "en_actual": "Your own money. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) on the total cash needed in this plan.",
+     "de": "GRC-plan c0053 (BBQP 0. Supuestos!C30)",
+     "donde": [
+      "PAEP · 0. Supuestos!C30"
+     ]
+    },
+    {
+     "id": "c0061",
+     "es": "Primer año sólo intereses, que es cuando la caja está más tensa (adaptación del vehículo + primeras semanas de rodaje probando ubicaciones)",
+     "en_actual": "ZERO by default: repayment starts in year 1, so the year-1 DSCR already measures the full loan payment. If you negotiate an interest-only first year, enter it here and read the year-1 DSCR with care.",
+     "de": "GRC-plan c0061 (BBQP 0. Supuestos!C34)",
+     "donde": [
+      "PAEP · 0. Supuestos!C34"
+     ]
+    },
+    {
+     "id": "c0063",
+     "es": "Mínimo que exige este mismo libro (Instrucciones): un colchón por debajo de 3 meses no cubre un bache de mal tiempo o de temporada baja de eventos",
+     "en_actual": "The minimum this workbook asks for (see \"Instructions\"): a cushion below 3 months does not cover a slow stretch, such as the off-season for weddings or a corporate client who pays late.",
+     "de": "GRC-plan c0063 (BBQP 0. Supuestos!C35)",
+     "donde": [
+      "PAEP · 0. Supuestos!C35"
+     ]
+    },
+    {
+     "id": "c0108",
+     "es": "10 %, igual que el resto de lo que se sirve para consumir en el acto: el art. 91.Uno.2.2.º de la Ley 37/1992 del IVA grava al tipo reducido los servicios de hostelería y «el suministro de comidas y bebidas para consumir en el acto», sin excluir el alcohol, y eso es lo que hace un food truck. Si vendes alcohol envasado PARA LLEVAR no hay consumo en el acto y esa parte va al tipo general: el libro lo aplica sólo a la parte alcohólica que sale por el canal de la celda «Ventas por delivery sobre el total», que en este plan está a cero; súbela si abres ese canal",
+     "en_actual": "Only used if you enter alcohol sales above, which is zero in this plan. Example rate: the same as the rest of the sales (state + local combined). Some states tax alcohol at a different rate or add liquor taxes: if you sell alcohol, enter the rate that applies.",
+     "de": "GRC-plan c0108 (BBQP 0. Supuestos!C63)",
+     "donde": [
+      "PAEP · 0. Supuestos!C63"
+     ]
+    },
+    {
+     "id": "c0117",
+     "es": "El convenio PROVINCIAL de hostelería (o el de comercio, según cómo se clasifique la actividad de venta ambulante en tu provincia) es el suelo real del sector: cópialo de la tabla salarial que corresponda. Con 0 el semáforo compara sólo contra el SMI",
+     "en_actual": "Enter the minimum wage of your state or city, annualized for a full-time job (hourly rate × 2,080 hours). The pay floor in the \"Staffing\" tab is the HIGHER of this cell and the federal minimum. With 0 or blank, the traffic light compares only against the federal floor. Check current rates at dol.gov.",
+     "de": "GRC-plan c0117 (BBQP 0. Supuestos!C68)",
+     "donde": [
+      "PAEP · 0. Supuestos!C68"
+     ]
+    },
+    {
+     "id": "c0123",
+     "es": "Días fuera de rango",
+     "en_actual": "Value out of range",
+     "de": "GRC-plan c0123 (BBQP 0. Supuestos!B6 B58 B59 / BBQP Escenarios!B7 D7)",
+     "donde": [
+      "PAEP · 0. Supuestos!B6 B58 B59",
+      "PAEP · Escenarios!B7 D7"
+     ]
+    },
+    {
+     "id": "c0124",
+     "es": "Los días van de 1 a 365.",
+     "en_actual": "Enter a whole number from 1 to 365: guests per event or days.",
+     "de": "GRC-plan c0124 (BBQP 0. Supuestos!B6 B58 B59 / BBQP Escenarios!B7 D7)",
+     "donde": [
+      "PAEP · 0. Supuestos!B6 B58 B59",
+      "PAEP · Escenarios!B7 D7"
+     ]
+    },
+    {
+     "id": "c0213",
+     "es": "Sobre las ventas DEL CANAL. Con 0 % de delivery en Supuestos, esta línea vale cero",
+     "en_actual": "Applied to the sales of THAT CHANNEL. With 0% corporate catering marketplace sales in Assumptions, this line is zero",
+     "de": "GRC-plan c0213 (BBQP PyG 3 Años!F16)",
+     "donde": [
+      "PAEP · PyG 3 Años!F16"
+     ]
+    },
+    {
+     "id": "c0265",
+     "es": "Suelo del propio libro: la fila «Margen bruto objetivo» (> 62 %) de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones. Más bajo que el de un restaurante por el peso del packaging y del combustible",
+     "en_actual": "Floor set by this workbook: kit benchmark (editable estimate). The workbook's gross margin also subtracts card fees, marketplace commissions and miscellaneous costs, so the floor sits below the 65-70% that caterer pricing guides quote on food cost alone.",
+     "de": "GBQ-plan c0265 (BBQP PyG 3 Años!F51)",
+     "donde": [
+      "PAEP · PyG 3 Años!F51"
+     ]
+    },
+    {
+     "id": "c0274",
+     "es": "Derivado del suelo de EBITDA que declara este producto para el año 2 —la fila «EBITDA objetivo (año 2)», 20-30 %, de la tabla de referencias—: descontando amortización, intereses e Impuesto de Sociedades, un EBITDA en la franja baja del rango deja un resultado neto positivo ya en el año 1, aunque ajustado por ser el primer ejercicio",
+     "en_actual": "Floor of 5%: a kit benchmark (editable estimate), a little below the 7-8% average net margin that caterers report (itsacheckmate.com). A new business with a loan to repay starts lower.",
+     "de": "GRC-plan c0274 (BBQP PyG 3 Años!F56)",
+     "donde": [
+      "PAEP · PyG 3 Años!F56"
+     ]
+    },
+    {
+     "id": "c0309",
+     "es": "Clientes/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por cliente (filas). En verde, los que están por debajo de los clientes que prevé el plan.",
+     "en_actual": "Events per year needed to cover costs for each price per guest (columns, in steps around the plan's price) and each variable cost per guest (rows). Green cells are below the events per year the plan forecasts.",
+     "de": "GRC-plan c0309 (BBQP Punto Equilibrio!A29)",
+     "donde": [
+      "PAEP · Punto Equilibrio!A29"
+     ]
+    },
+    {
+     "id": "c0310",
+     "es": "Clientes/día necesarios: ticket medio sin IVA (columnas) × coste variable por cliente (filas)",
+     "en_actual": "Events per year needed: price per guest excl. sales tax (columns) × variable cost per guest (rows)",
+     "de": "GRC-plan c0310 (BBQP Punto Equilibrio!A31)",
+     "donde": [
+      "PAEP · Punto Equilibrio!A31"
+     ]
+    },
+    {
+     "id": "c0324",
+     "es": "La MISMA plantilla en los tres escenarios. Si en el pesimista se dispara, el ajuste hay que hacerlo en la hoja de Personal, no aquí",
+     "en_actual": "The SAME staffing in all three scenarios. In the pessimistic case your real event-staff cost falls with the number of events (you pay hours per event), so the real result would be somewhat better than shown. If labor cost still blows up, adjust it in the \"Staffing\" tab, not here",
+     "de": "GRC-plan c0324 (BBQP Escenarios!E23)",
+     "donde": [
+      "PAEP · Escenarios!E23"
+     ]
+    },
+    {
+     "id": "c0326",
+     "es": "Clientes que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+     "en_actual": "Guests each full-time equivalent in the \"Staffing\" table would have to serve in a year. In the optimistic scenario it tells you whether you need to hire",
+     "de": "GRC-plan c0326 (BBQP Escenarios!E24)",
+     "donde": [
+      "PAEP · Escenarios!E24"
+     ]
+    },
+    {
+     "id": "c0331",
+     "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los clientes, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+     "en_actual": "The \"Base\" column reads its three inputs (events per year, price per guest and guests per event) from the \"0. Assumptions\" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: only events, price and guests change. FIXED COSTS are the same in all three, while variable costs follow the sales of each scenario.",
+     "de": "GRC-plan c0331 (BBQP Escenarios!A28)",
+     "donde": [
+      "PAEP · Escenarios!A28"
+     ]
+    },
+    {
+     "id": "c0360",
+     "es": "Art. 34.1 del Estatuto de los Trabajadores; tu convenio provincial puede fijar menos",
+     "en_actual": "40 hours a week is the FLSA overtime threshold for non-exempt employees; some states add daily overtime rules. Change it if your own full-time week is different",
+     "de": "GRC-plan c0360 (BBQP Personal!J16)",
+     "donde": [
+      "PAEP · Personal!J16"
+     ]
+    },
+    {
+     "id": "c0381",
+     "es": "3. Sólo «Punto Equilibrio» se deriva entera de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+     "en_actual": "3. Only \"Break-Even\" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in \"Scenarios\", seasonality and the launch ramp-up in \"12-Month Cash Flow\", and the other funding sources in \"Financing\" (rows 8-11 count as sources but are not amortized: your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+     "de": "GRC-plan c0381 (BBQP Instrucciones!A7)",
+     "donde": [
+      "PAEP · Instrucciones!A7"
+     ]
+    },
+    {
+     "id": "c0382",
+     "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —bollería y pastelería incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica al alcohol del canal de delivery. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+     "en_actual": "4. All figures are EXCL. SALES TAX. To turn a quoted price into a price excl. sales tax, divide it by 1 + your sales tax rate (with an 8% rate, divide by 1.08); if an item is taxed at a different rate in your state, use that rate. In many states the whole catering invoice is taxable, including staff and rentals; check yours. The rate of each sales line is in the \"Sales tax rate on the line (%)\" column of the P&L, and from it come the receipts, the sales tax collected and the equivalent price per guest incl. sales tax. With the default 0% recoverable input tax, the sales tax you pay on purchases and startup costs is treated as a cost; in the UK, enter 20% if you are VAT-registered.",
+     "de": "GRC-plan c0382 (BBQP Instrucciones!A8)",
+     "donde": [
+      "PAEP · Instrucciones!A8"
+     ]
+    },
+    {
+     "id": "c0386",
+     "es": "8. El documento Word de este pack es el de la versión 1.1: las cifras válidas son las de este Excel, que es el que se recalcula solo cuando cambias una celda verde.",
+     "en_actual": "8. The Word business plan in this kit uses the same example figures as this workbook. The workbook is the one that recalculates on its own when you change a green cell: if you change one, update the matching figures in the Word document.",
+     "de": "GRC-plan c0386 (BBQP Instrucciones!A12)",
+     "donde": [
+      "PAEP · Instrucciones!A12"
+     ]
+    },
+    {
+     "id": "c0397",
+     "es": "Clientes/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+     "en_actual": "Events per year for the ACCOUNTING break-even (depreciation included)",
+     "de": "GRC-plan c0397 (BBQP Instrucciones!A30)",
+     "donde": [
+      "PAEP · Instrucciones!A30"
+     ]
+    },
+    {
+     "id": "c0403",
+     "es": "Coste de personal en la cuenta de resultados",
+     "en_actual": "Labor cost in the P&L",
+     "de": "GRC-plan c0403 (BBQP Instrucciones!A35)",
+     "donde": [
+      "PAEP · Instrucciones!A35"
+     ]
+    },
+    {
+     "id": "c0404",
+     "es": "42.000 €",
+     "en_actual": "A typed-in number that does not match the Staffing tab",
+     "de": "GRC-plan c0404 (BBQP Instrucciones!B35)",
+     "donde": [
+      "PAEP · Instrucciones!B35"
+     ]
+    },
+    {
+     "id": "c0405",
+     "es": "42.081 €, leídos de la hoja Personal",
+     "en_actual": "Read directly from the Staffing tab",
+     "de": "GRC-plan c0405 (BBQP Instrucciones!C35)",
+     "donde": [
+      "PAEP · Instrucciones!C35"
+     ]
+    },
+    {
+     "id": "c0406",
+     "es": "La cuenta de resultados usaba una cifra tecleada a mano que no era la de su propia hoja de Personal, que sumaba 76.566 €. Ahora la lee de ahí: si cambias un sueldo, el plan entero se recalcula",
+     "en_actual": "If you change a salary, the whole plan recalculates, so the P&L and the staffing table can never disagree.",
+     "de": "GRC-plan c0406 (BBQP Instrucciones!D35)",
+     "donde": [
+      "PAEP · Instrucciones!D35"
+     ]
+    },
+    {
+     "id": "c0407",
+     "es": "Plantilla",
+     "en_actual": "Staffing",
+     "de": "GRC-plan c0407 (BBQP Instrucciones!A36)",
+     "donde": [
+      "PAEP · Instrucciones!A36"
+     ]
+    },
+    {
+     "id": "c0408",
+     "es": "3 puestos / 76.566 € al año",
+     "en_actual": "One line called \"staff\", with no link to event hours or pay floors",
+     "de": "GRC-plan c0408 (BBQP Instrucciones!B36)",
+     "donde": [
+      "PAEP · Instrucciones!B36"
+     ]
+    },
+    {
+     "id": "c0409",
+     "es": "4 puestos (1 a jornada completa y 3 parciales) / 42.081 € al año",
+     "en_actual": "Positions with their FTE, sized to the hours your events need, with event staff paid per event",
+     "de": "GRC-plan c0409 (BBQP Instrucciones!C36)",
+     "donde": [
+      "PAEP · Instrucciones!C36"
+     ]
+    },
+    {
+     "id": "c0410",
+     "es": "Dimensionada para los 250 días de servicio que hace este plan, con una línea nueva para cubrir vacaciones y descansos. Con la plantilla anterior el personal se comía el 56,7 % de las ventas y el negocio no era viable con sus propios números",
+     "en_actual": "A plan staffed for fewer hours than it sells does not work on its own numbers. This layout makes that gap visible before a lender does.",
+     "de": "GRC-plan c0410 (BBQP Instrucciones!D36)",
+     "donde": [
+      "PAEP · Instrucciones!D36"
+     ]
+    },
+    {
+     "id": "c0411",
+     "es": "Días de servicio al año",
+     "en_actual": "Events, guests and price",
+     "de": "GRC-plan c0411 (BBQP Instrucciones!A37)",
+     "donde": [
+      "PAEP · Instrucciones!A37"
+     ]
+    },
+    {
+     "id": "c0412",
+     "es": "tres calendarios distintos en el mismo paquete: 300 días en el punto de equilibrio, 240 en los escenarios y ninguno declarado en la cuenta de resultados",
+     "en_actual": "Sales typed as one lump sum, with no link to bookings",
+     "de": "GRC-plan c0412 (BBQP Instrucciones!B37)",
+     "donde": [
+      "PAEP · Instrucciones!B37"
+     ]
+    },
+    {
+     "id": "c0413",
+     "es": "250 días, un solo dato para todo el libro",
+     "en_actual": "Revenue = events per year × guests per event × price per guest, one cell each for the whole workbook",
+     "de": "GRC-plan c0413 (BBQP Instrucciones!C37)",
+     "donde": [
+      "PAEP · Instrucciones!C37"
+     ]
+    },
+    {
+     "id": "c0414",
+     "es": "Son los días que hacen exacta la facturación que el propio plan ya publicaba: 45 clientes × 12 € × 250 días = 135.000 €. Equivalen a 5 días de servicio por semana durante 50 semanas",
+     "en_actual": "Break-even, scenarios and the P&L read the same three cells, so they always agree, and you can see which lever moves the result: more events, bigger events or a higher price.",
+     "de": "GRC-plan c0414 (BBQP Instrucciones!D37)",
+     "donde": [
+      "PAEP · Instrucciones!D37"
+     ]
+    },
+    {
+     "id": "c0415",
+     "es": "Ticket medio",
+     "en_actual": "Price per guest",
+     "de": "GRC-plan c0415 (BBQP Instrucciones!A38)",
+     "donde": [
+      "PAEP · Instrucciones!A38"
+     ]
+    },
+    {
+     "id": "c0416",
+     "es": "12 € sin decir si llevaba IVA",
+     "en_actual": "A price with no statement of whether sales tax or service is included",
+     "de": "GRC-plan c0416 (BBQP Instrucciones!B38)",
+     "donde": [
+      "PAEP · Instrucciones!B38"
+     ]
+    },
+    {
+     "id": "c0417",
+     "es": "12 € SIN IVA",
+     "en_actual": "Declared EXCL. sales tax, with service included and the voluntary gratuity left out",
+     "de": "GRC-plan c0417 (BBQP Instrucciones!C38)",
+     "donde": [
+      "PAEP · Instrucciones!C38"
+     ]
+    },
+    {
+     "id": "c0418",
+     "es": "El número no cambia; lo que cambia es que ahora se declara qué es. Con el IVA de hostelería son 13,20 € de precio de venta al público, dentro del rango 10-15 € que recoge este mismo libro",
+     "en_actual": "Declaring it changes no number: it just says what the number is. Price per guest incl. sales tax = price per guest × (1 + sales tax rate), and the workbook calculates it for you.",
+     "de": "GRC-plan c0418 (BBQP Instrucciones!D38)",
+     "donde": [
+      "PAEP · Instrucciones!D38"
+     ]
+    },
+    {
+     "id": "c0420",
+     "es": "no estaba",
+     "en_actual": "Left out: the model shows no cost of space",
+     "de": "GRC-plan c0420 (BBQP Instrucciones!B39)",
+     "donde": [
+      "PAEP · Instrucciones!B39"
+     ]
+    },
+    {
+     "id": "c0423",
+     "es": "Fondo de maniobra",
+     "en_actual": "Working capital",
+     "de": "GRC-plan c0423 (BBQP Instrucciones!A40)",
+     "donde": [
+      "PAEP · Instrucciones!A40"
+     ]
+    },
+    {
+     "id": "c0424",
+     "es": "6.000 €, etiquetados «3 meses»",
+     "en_actual": "A round number labeled \"3 months\" that does not match the fixed costs",
+     "de": "GRC-plan c0424 (BBQP Instrucciones!B40)",
+     "donde": [
+      "PAEP · Instrucciones!B40"
+     ]
+    },
+    {
+     "id": "c0425",
+     "es": "18.053 €: tres meses de costes fijos de caja, calculados por fórmula",
+     "en_actual": "Three months of cash fixed costs, calculated by formula",
+     "de": "GRC-plan c0425 (BBQP Instrucciones!C40)",
+     "donde": [
+      "PAEP · Instrucciones!C40"
+     ]
+    },
+    {
+     "id": "c0426",
+     "es": "Los 6.000 € daban para 1,1 meses, no para 3. Es el colchón que evita cerrar por una racha de mal tiempo o un mes flojo de eventos",
+     "en_actual": "A round number often covers far less than the label says. This cushion is what keeps you open through a slow month between wedding seasons.",
+     "de": "GRC-plan c0426 (BBQP Instrucciones!D40)",
+     "donde": [
+      "PAEP · Instrucciones!D40"
+     ]
+    },
+    {
+     "id": "c0427",
+     "es": "Amortización",
+     "en_actual": "Depreciation",
+     "de": "GRC-plan c0427 (BBQP Instrucciones!A41)",
+     "donde": [
+      "PAEP · Instrucciones!A41"
+     ]
+    },
+    {
+     "id": "c0428",
+     "es": "10.343 € al año, a 7 años planos sobre todo, incluido lo que no es inmovilizado",
+     "en_actual": "One useful life for everything, including items that are not fixed assets",
+     "de": "GRC-plan c0428 (BBQP Instrucciones!B41)",
+     "donde": [
+      "PAEP · Instrucciones!B41"
+     ]
+    },
+    {
+     "id": "c0432",
+     "es": "2.500 € en la inversión Y 2.500 € al año en los gastos: la misma prima contada dos veces",
+     "en_actual": "Counted twice: once in startup costs and again as an annual expense",
+     "de": "GRC-plan c0432 (BBQP Instrucciones!B42)",
+     "donde": [
+      "PAEP · Instrucciones!B42"
+     ]
+    },
+    {
+     "id": "c0433",
+     "es": "2.500 € al año, una sola vez",
+     "en_actual": "Counted once, as an annual expense",
+     "de": "GRC-plan c0433 (BBQP Instrucciones!C42)",
+     "donde": [
+      "PAEP · Instrucciones!C42"
+     ]
+    },
+    {
+     "id": "c0434",
+     "es": "Contarla en los dos sitios inflaba la inversión, el IVA a adelantar y el dinero que hay que pedir al banco",
+     "en_actual": "Counting a premium in both places inflates the startup costs, the cash you need to raise and the loan you ask for.",
+     "de": "GRC-plan c0434 (BBQP Instrucciones!D42)",
+     "donde": [
+      "PAEP · Instrucciones!D42"
+     ]
+    },
+    {
+     "id": "c0436",
+     "es": "2.400 € al año como línea suelta, además de los suministros",
+     "en_actual": "A separate fuel line, on top of utilities",
+     "de": "GRC-plan c0436 (BBQP Instrucciones!B43)",
+     "donde": [
+      "PAEP · Instrucciones!B43"
+     ]
+    },
+    {
+     "id": "c0439",
+     "es": "Imprevistos de la puesta en marcha",
+     "en_actual": "Startup contingency",
+     "de": "GRC-plan c0439 (BBQP Instrucciones!A44)",
+     "donde": [
+      "PAEP · Instrucciones!A44"
+     ]
+    },
+    {
+     "id": "c0440",
+     "es": "5.500 € escritos a mano (un 8 % del total)",
+     "en_actual": "A lump sum typed by hand",
+     "de": "GRC-plan c0440 (BBQP Instrucciones!B44)",
+     "donde": [
+      "PAEP · Instrucciones!B44"
+     ]
+    },
+    {
+     "id": "c0443",
+     "es": "Impuesto de Sociedades",
+     "en_actual": "Income tax",
+     "de": "GRC-plan c0443 (BBQP Instrucciones!A45)",
+     "donde": [
+      "PAEP · Instrucciones!A45"
+     ]
+    },
+    {
+     "id": "c0444",
+     "es": "25 % los tres años, sin compensar pérdidas",
+     "en_actual": "A flat rate every year, with no offset for losses",
+     "de": "GRC-plan c0444 (BBQP Instrucciones!B45)",
+     "donde": [
+      "PAEP · Instrucciones!B45"
+     ]
+    },
+    {
+     "id": "c0445",
+     "es": "15 % los dos primeros ejercicios con beneficio, compensando las pérdidas anteriores",
+     "en_actual": "One effective rate for years 1-2 and another from year 3, offsetting net operating losses carried forward",
+     "de": "GRC-plan c0445 (BBQP Instrucciones!C45)",
+     "donde": [
+      "PAEP · Instrucciones!C45"
+     ]
+    },
+    {
+     "id": "c0446",
+     "es": "Es el tipo que la ley reserva a las empresas de nueva creación, y las pérdidas de un año se restan del beneficio de los siguientes",
+     "en_actual": "A loss in one year reduces taxable profit in later years. The model offsets losses fully as a simplification (federal rules cap the offset at 80% of taxable income). If you operate as a pass-through (sole proprietorship or LLC), set the rate to 0 and budget your personal tax separately.",
+     "de": "GRC-plan c0446 (BBQP Instrucciones!D45)",
+     "donde": [
+      "PAEP · Instrucciones!D45"
+     ]
+    },
+    {
+     "id": "c0447",
+     "es": "Cuota del préstamo",
+     "en_actual": "Loan payment",
+     "de": "GRC-plan c0447 (BBQP Instrucciones!A46)",
+     "donde": [
+      "PAEP · Instrucciones!A46"
+     ]
+    },
+    {
+     "id": "c0448",
+     "es": "la cuota entera restaba en el resultado",
+     "en_actual": "The full payment deducted in the P&L",
+     "de": "GRC-plan c0448 (BBQP Instrucciones!B46)",
+     "donde": [
+      "PAEP · Instrucciones!B46"
+     ]
+    },
+    {
+     "id": "c0449",
+     "es": "sólo los intereses en el resultado; la devolución del principal, en la tesorería",
+     "en_actual": "Only interest in the P&L; principal repaid in the cash flow",
+     "de": "GRC-plan c0449 (BBQP Instrucciones!C46)",
+     "donde": [
+      "PAEP · Instrucciones!C46"
+     ]
+    },
+    {
+     "id": "c0450",
+     "es": "Meter la cuota completa antes del resultado convierte la cuenta de resultados en un flujo de caja y el banco lo ve al instante",
+     "en_actual": "Putting the full payment above the line turns the P&L into a cash flow, and a lender spots it immediately.",
+     "de": "GRC-plan c0450 (BBQP Instrucciones!D46)",
+     "donde": [
+      "PAEP · Instrucciones!D46"
+     ]
+    },
+    {
+     "id": "c0451",
+     "es": "Plan de financiación",
+     "en_actual": "Financing plan",
+     "de": "GRC-plan c0451 (BBQP Instrucciones!A47)",
+     "donde": [
+      "PAEP · Instrucciones!A47"
+     ]
+    },
+    {
+     "id": "c0452",
+     "es": "no existía",
+     "en_actual": "None",
+     "de": "GRC-plan c0452 (BBQP Instrucciones!B47)",
+     "donde": [
+      "PAEP · Instrucciones!B47"
+     ]
+    },
+    {
+     "id": "c0453",
+     "es": "hoja nueva: de dónde sale el dinero, a qué se destina y el cuadro de amortización del préstamo año a año",
+     "en_actual": "A dedicated tab: where the money comes from, what it pays for and the amortization schedule year by year",
+     "de": "GRC-plan c0453 (BBQP Instrucciones!C47)",
+     "donde": [
+      "PAEP · Instrucciones!C47"
+     ]
+    },
+    {
+     "id": "c0454",
+     "es": "Es la hoja que pide el banco junto con la cuenta de resultados, y la que avisa si el dinero que se aporta no llega a lo que hace falta",
+     "en_actual": "It is the sheet a lender asks for next to the P&L, and it warns you when the money you put in falls short of what you need.",
+     "de": "GRC-plan c0454 (BBQP Instrucciones!D47)",
+     "donde": [
+      "PAEP · Instrucciones!D47"
+     ]
+    },
+    {
+     "id": "c0455",
+     "es": "Tesorería mes a mes",
+     "en_actual": "Month-by-month cash flow",
+     "de": "GRC-plan c0455 (BBQP Instrucciones!A48)",
+     "donde": [
+      "PAEP · Instrucciones!A48"
+     ]
+    },
+    {
+     "id": "c0456",
+     "es": "no existía",
+     "en_actual": "None",
+     "de": "GRC-plan c0456 (BBQP Instrucciones!B48)",
+     "donde": [
+      "PAEP · Instrucciones!B48"
+     ]
+    },
+    {
+     "id": "c0457",
+     "es": "hoja nueva de 12 meses: cobros, pagos, IVA trimestral y saldo acumulado",
+     "en_actual": "A 12-month tab: cash in, cash out, quarterly sales tax and the cumulative balance",
+     "de": "GRC-plan c0457 (BBQP Instrucciones!C48)",
+     "donde": [
+      "PAEP · Instrucciones!C48"
+     ]
+    },
+    {
+     "id": "c0458",
+     "es": "Responde a la única pregunta que decide una operación bancaria: en qué mes se queda el negocio sin caja",
+     "en_actual": "It answers the one question that decides a loan: in which month does the business run out of cash?",
+     "de": "GRC-plan c0458 (BBQP Instrucciones!D48)",
+     "donde": [
+      "PAEP · Instrucciones!D48"
+     ]
+    },
+    {
+     "id": "c0459",
+     "es": "Combustible y varios",
+     "en_actual": "Miscellaneous event costs",
+     "de": "GBQ-plan c0459 (BBQP Instrucciones!A49)",
+     "donde": [
+      "PAEP · Instrucciones!A49"
+     ]
+    },
+    {
+     "id": "c0460",
+     "es": "4.800 € de combustible sueltos + 2.000 € de varios metidos entre los costes fijos",
+     "en_actual": "A miscellaneous line typed in among the fixed costs",
+     "de": "GBQ-plan c0460 (BBQP Instrucciones!B49)",
+     "donde": [
+      "PAEP · Instrucciones!B49"
+     ]
+    },
+    {
+     "id": "c0463",
+     "es": "Catering y eventos privados",
+     "en_actual": "Cost of goods on all sales",
+     "de": "GRC-plan c0463 (BBQP Instrucciones!A50)",
+     "donde": [
+      "PAEP · Instrucciones!A50"
+     ]
+    },
+    {
+     "id": "c0464",
+     "es": "10.000 € de ingresos sin ningún coste de materia prima imputado",
+     "en_actual": "Revenue with no cost of goods sold attached",
+     "de": "GRC-plan c0464 (BBQP Instrucciones!B50)",
+     "donde": [
+      "PAEP · Instrucciones!B50"
+     ]
+    },
+    {
+     "id": "c0466",
+     "es": "Una línea de ingresos que no paga género da un margen que no existe",
+     "en_actual": "A revenue line that pays for no ingredients shows a margin that does not exist.",
+     "de": "GRC-plan c0466 (BBQP Instrucciones!D50)",
+     "donde": [
+      "PAEP · Instrucciones!D50"
+     ]
+    },
+    {
+     "id": "c0467",
+     "es": "Sueldos y SMI",
+     "en_actual": "Wages and minimum wage",
+     "de": "GRC-plan c0467 (BBQP Instrucciones!A51)",
+     "donde": [
+      "PAEP · Instrucciones!A51"
+     ]
+    },
+    {
+     "id": "c0468",
+     "es": "sueldos sin comparar con ningún suelo legal",
+     "en_actual": "Wages never compared with any legal floor",
+     "de": "GRC-plan c0468 (BBQP Instrucciones!B51)",
+     "donde": [
+      "PAEP · Instrucciones!B51"
+     ]
+    },
+    {
+     "id": "c0469",
+     "es": "ninguna fila por debajo del SMI en proporción a su jornada, y una celda para el convenio de tu provincia",
+     "en_actual": "No row below the pay floor in proportion to its FTE, and a cell for your state or local minimum wage",
+     "de": "GRC-plan c0469 (BBQP Instrucciones!C51)",
+     "donde": [
+      "PAEP · Instrucciones!C51"
+     ]
+    },
+    {
+     "id": "c0470",
+     "es": "El convenio provincial de hostelería manda sobre el SMI: cópialo en la hoja de Supuestos y el semáforo te avisa si algún sueldo se queda corto",
+     "en_actual": "State and local minimums are often higher than the federal one: enter yours in \"0. Assumptions\" and the traffic light warns you when a wage falls short.",
+     "de": "GRC-plan c0470 (BBQP Instrucciones!D51)",
+     "donde": [
+      "PAEP · Instrucciones!D51"
+     ]
+    },
+    {
+     "id": "c0488",
+     "es": "Coste personal sobre ventas",
+     "en_actual": "Net profit margin",
+     "de": "GBQ-plan c0488 (BBQP Instrucciones!A58)",
+     "donde": [
+      "PAEP · Instrucciones!A58"
+     ]
+    },
+    {
+     "id": "c0489",
+     "es": "25-32 %",
+     "en_actual": "7-8%",
+     "de": "GBQ-plan c0489 (BBQP Instrucciones!B58)",
+     "donde": [
+      "PAEP · Instrucciones!B58"
+     ]
+    },
+    {
+     "id": "c0490",
+     "es": "Fichero v1.1",
+     "en_actual": "itsacheckmate.com",
+     "de": "GBQ-plan c0490 (BBQP Instrucciones!C58)",
+     "donde": [
+      "PAEP · Instrucciones!C58"
+     ]
+    },
+    {
+     "id": "c0491",
+     "es": "Menos personal que un restaurante: 2-3 personas",
+     "en_actual": "Average for caterers. A new business with a loan to repay starts lower: improve it with more events, bigger events or a higher price per guest.",
+     "de": "GBQ-plan c0491 (BBQP Instrucciones!D58)",
+     "donde": [
+      "PAEP · Instrucciones!D58"
+     ]
+    },
+    {
+     "id": "c0496",
+     "es": "Clientes por servicio",
+     "en_actual": "Food cost",
+     "de": "GBQ-plan c0496 (BBQP Instrucciones!A60)",
+     "donde": [
+      "PAEP · Instrucciones!A60"
+     ]
+    },
+    {
+     "id": "c0497",
+     "es": "40-80",
+     "en_actual": "28-35% of price",
+     "de": "GBQ-plan c0497 (BBQP Instrucciones!B60)",
+     "donde": [
+      "PAEP · Instrucciones!B60"
+     ]
+    },
+    {
+     "id": "c0498",
+     "es": "Fichero v1.1",
+     "en_actual": "galleysolutions.com",
+     "de": "GBQ-plan c0498 (BBQP Instrucciones!C60)",
+     "donde": [
+      "PAEP · Instrucciones!C60"
+     ]
+    },
+    {
+     "id": "c0504",
+     "es": "EBITDA objetivo (año 2)",
+     "en_actual": "Corporate marketplace commission",
+     "de": "GBQ-plan c0504 (BBQP Instrucciones!A62)",
+     "donde": [
+      "PAEP · Instrucciones!A62"
+     ]
+    },
+    {
+     "id": "c0505",
+     "es": "20-30 %",
+     "en_actual": "About 15%",
+     "de": "GBQ-plan c0505 (BBQP Instrucciones!B62)",
+     "donde": [
+      "PAEP · Instrucciones!B62"
+     ]
+    },
+    {
+     "id": "c0506",
+     "es": "Fichero v1.1",
+     "en_actual": "Kit estimate",
+     "de": "GBQ-plan c0506 (BBQP Instrucciones!C62)",
+     "donde": [
+      "PAEP · Instrucciones!C62"
+     ]
+    },
+    {
+     "id": "c0507",
+     "es": "Muy rentable si aciertas las ubicaciones. Con los supuestos de partida este plan se queda por debajo del rango: es lo que hay que mejorar subiendo clientes por servicio o ticket",
+     "en_actual": "ezCater lists about 15% on food and delivery, plus card processing. Fees change: check the current schedule before you count on a rate.",
+     "de": "GBQ-plan c0507 (BBQP Instrucciones!D62)",
+     "donde": [
+      "PAEP · Instrucciones!D62"
+     ]
+    },
+    {
+     "id": "c0512",
+     "es": "Días operativos/semana",
+     "en_actual": "Hourly pay (BLS OEWS, May 2025)",
+     "de": "GBQ-plan c0512 (BBQP Instrucciones!A64)",
+     "donde": [
+      "PAEP · Instrucciones!A64"
+     ]
+    },
+    {
+     "id": "c0513",
+     "es": "4-6",
+     "en_actual": "$18.62 cooks · $17.37 servers · $30.03 head cooks",
+     "de": "GBQ-plan c0513 (BBQP Instrucciones!B64)",
+     "donde": [
+      "PAEP · Instrucciones!B64"
+     ]
+    },
+    {
+     "id": "c0514",
+     "es": "Fichero v1.1",
+     "en_actual": "bls.gov",
+     "de": "GBQ-plan c0514 (BBQP Instrucciones!C64)",
+     "donde": [
+      "PAEP · Instrucciones!C64"
+     ]
+    },
+    {
+     "id": "c0516",
+     "es": "Servicios por día",
+     "en_actual": "Shared kitchen rate",
+     "de": "GBQ-plan c0516 (BBQP Instrucciones!A65)",
+     "donde": [
+      "PAEP · Instrucciones!A65"
+     ]
+    },
+    {
+     "id": "c0517",
+     "es": "1-2",
+     "en_actual": "$15-$45 per hour",
+     "de": "GBQ-plan c0517 (BBQP Instrucciones!B65)",
+     "donde": [
+      "PAEP · Instrucciones!B65"
+     ]
+    },
+    {
+     "id": "c0518",
+     "es": "Fichero v1.1",
+     "en_actual": "thefoodcorridor.com",
+     "de": "GBQ-plan c0518 (BBQP Instrucciones!C65)",
+     "donde": [
+      "PAEP · Instrucciones!C65"
+     ]
+    },
+    {
+     "id": "c0524",
+     "es": "Permisos anuales (promedio)",
+     "en_actual": "Insurance",
+     "de": "GBQ-plan c0524 (BBQP Instrucciones!A67)",
+     "donde": [
+      "PAEP · Instrucciones!A67"
+     ]
+    },
+    {
+     "id": "c0525",
+     "es": "2.000-5.000 €",
+     "en_actual": "$45 / $96 / $82 / $204 per month",
+     "de": "GBQ-plan c0525 (BBQP Instrucciones!B67)",
+     "donde": [
+      "PAEP · Instrucciones!B67"
+     ]
+    },
+    {
+     "id": "c0526",
+     "es": "Fichero v1.1",
+     "en_actual": "insureon.com",
+     "de": "GBQ-plan c0526 (BBQP Instrucciones!C67)",
+     "donde": [
+      "PAEP · Instrucciones!C67"
+     ]
+    },
+    {
+     "id": "c0527",
+     "es": "Varía mucho por municipio y comunidad autónoma",
+     "en_actual": "Insureon averages for businesses under 5 employees: general liability, BOP, workers' comp and commercial auto. Your quotes will differ; add liquor liability only if your staff pours the client's alcohol.",
+     "de": "GBQ-plan c0527 (BBQP Instrucciones!D67)",
+     "donde": [
+      "PAEP · Instrucciones!D67"
+     ]
+    }
+   ]
+  }
+ }
+}

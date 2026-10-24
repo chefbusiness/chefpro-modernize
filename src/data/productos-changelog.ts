@@ -722,6 +722,60 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
+  // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
+  // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  // Las cifras no salen aquí: nada que confirmar con la F2 salvo los conteos (8 menu styles, 68 tareas).
+  'paella-catering-business-plan': {
+    version: '2.2',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2 for a live paella caterer that cooks giant paellas in front of the guests in 26- to 36-inch paella pans over 3-ring propane burners, with salad and bread, preps the sofrito, the stock and the seafood at a commissary and adds drop-off paella and a premium seafood-and-tapas line: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing calculator and a startup checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example is a full-time owner-operator with a second paella chef on weekends, not a typical first year.',
+          'The model runs on events per year, average price per guest (excluding sales tax, with staffing and the service charge included) and average guests per event, with the break-even measured in events per year. Corporate catering marketplace bookings carry their own fee, and client deposits are not counted, which keeps the cash flow on the cautious side.',
+          'Revenue and costs excluding sales tax in the P&L, and a 12-month cash flow that includes the sales tax you collect on the whole invoice and remits it quarterly (an 8% example rate you replace with your state and local rate).',
+          'Payroll with four roles — the owner as paella chef and in sales, a part-time lead cook who works as second paella chef, hourly event staff (servers and buffet attendants) and a part-time prep cook who drives the van, all on W-2 payroll — employer payroll taxes, a federal and a state or local minimum wage floor, and a check of the event hours you need against the hours you hire.',
+          'Startup costs with paella burners and stands, eight paella pans, a propane and fire-safety kit, commissary prep and storage, a used cargo van with upright cylinder racks, permits and certifications, smallwares and paella tools, and the event setup (a canopy for the cooking station, a handwashing station, coolers and insulated food carriers), plus commissary rent with equipment storage: no storefront.',
+          'Financing sheet with owner equity and your main loan (bank or SBA 7(a)), amortized with no interest-only period by default and the DSCR checked against a 1.25× target; an SBA Microloan, investors and local grants are listed as other sources of funds, without amortization.',
+          'New pricing calculator: three packages (drop-off paella, live paella party and full-service live paella) and a tapas hour switch, from your paella style, guests, ounces of uncooked rice per guest, ingredient prices, propane and staff hours to the pans for the size you pick, a price per guest and a quote with service charge, sales tax, a 50% deposit and the balance, with the margin calculated and the voluntary gratuity kept off the price; a Paella Yield & Pan Sizing table with the Food Code minimum in its own column, a Shopping List by Guest Count and three example quotes.',
+          "68-task startup checklist in 6 phases: business setup (LLC, EIN, seller's permit, business license, catering contract), propane and permits (written commissary agreement, your county on cooking at the event, fire marshal, propane cylinders in the van, shellstock tags), equipment, staff (W-2, ServSafe Manager and food handler cards), marketing and the first 90 days.",
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
+  // Tienda EN (2026-10-24): BBQ Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-parrillero-
+  // asador-eventos con otro concepto (SPEC business-plans-en-6 D96-D113: off-site BBQ caterer con smoker trailer desde una
+  // commissary + calculadora de libras de carne por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  // Las cifras no salen aquí: nada que confirmar con la F2 salvo los conteos (13 cortes, 68 tareas).
+  'bbq-catering-business-plan': {
+    version: '2.2',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2 for a full-service, off-site BBQ caterer that smokes brisket, pulled pork, ribs, chicken and sausage in the commissary yard, holds them hot in insulated carriers and hot boxes, serves a staffed buffet with a carving station and takes the smoker trailer to weddings and premium events as a paid live pit on site: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing calculator and a startup checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example is a full-time operator with a pit cook, not a typical first year.',
+          'The model runs on events per year, average price per guest (excluding sales tax, with staffing and the service charge included) and average guests per event, with the break-even measured in events per year. Corporate catering marketplace bookings carry their own fee, and client deposits are not counted, which keeps the cash flow on the cautious side.',
+          'Revenue and costs excluding sales tax in the P&L, and a 12-month cash flow that includes the sales tax you collect on the whole invoice and remits it quarterly (an 8% example rate you replace with your state and local rate).',
+          'Payroll with four roles — the owner as pitmaster and in sales, a pit cook, hourly event staff (servers, buffet attendants, carvers) and a part-time prep cook who drives the van, all on W-2 payroll — employer payroll taxes, a federal and a state or local minimum wage floor, and a check of the event hours you need against the hours you hire.',
+          'Startup costs with a new smoker trailer and its upfit, a live-fire rig, commissary storage, a used cargo van and its upfit, permits and certifications, smallwares and pit tools, and holding and service equipment, plus commissary rent with trailer parking: no storefront, and the owner\'s own truck tows the trailer.',
+          'Financing sheet with owner equity and your main loan (bank or SBA 7(a)), amortized with no interest-only period by default and the DSCR checked against a 1.25× target; an SBA Microloan, investors and local grants are listed as other sources of funds, without amortization.',
+          'New pricing calculator: three packages (drop-off, full-service BBQ buffet and live-fire premium) and a live pit on site switch, from ounces of cooked meat per guest, your meat mix and raw prices, yield, sides, wood, staff hours and mileage to a price per guest and per pound of cooked meat and a quote with service charge, sales tax, a 50% deposit and the balance, with the margin calculated and the voluntary gratuity kept off the price; a Meat Yield & Smoke Schedule with the Food Code minimum and the quality target in separate columns, a Shopping List by Guest Count and three example quotes.',
+          "68-task startup checklist in 6 phases: business setup (LLC, EIN, seller's permit, business license, catering contract), pits, fire and permits (written commissary agreement, your county on smoking at the event, fire marshal, DMV, commercial auto and inland marine), equipment, staff (W-2, ServSafe Manager and food handler cards), marketing and the first 90 days.",
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-13): Mobile Bar Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-cocteleria-
   // eventos con otro concepto (SPEC business-plans-en-5 D81-D95: dry hire mobile bar + calculadora de precios).
   // Textos en inglés: los pinta <ProductChangelog lang="en"/>.
@@ -883,6 +937,69 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'A Quarterly & Annual sheet for a US pizza shop: pest control, hood, duct and chimney cleaning under NFPA 96 (inspected monthly with a solid-fuel oven), a wood-fired oven check, fire extinguishers (OSHA) and hood suppression, gas, refrigeration by an EPA 608 technician (make line included), water, used cooking oil, insurance (with hired and non-owned auto if drivers use their own cars) and POS / sales tax settings with the delivery app integrations.',
           "Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a pizza shop calendar with 22 US dates, from Super Bowl Sunday, March Madness and Lent Fridays to Halloween, Thanksgiving Eve and New Year's Eve, plus 5 rows for your own and a UK note. Beer and wine only with a license, 21+ with ID.",
           'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'pastry-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 413 pastry shop tasks already written in 9 checklists and the pre-shift huddle, 4 logs ready to fill in and 2 bonuses, adapted to the US with notes for the UK.',
+          'US pastry shop roles and areas (head pastry chef, pastry cook, pastry assistant, counter associate and shift lead; kitchen, ovens, bakery case, counter and walk-ins), who does it and due-by times on a 12-hour clock for a kitchen that starts at 5:00 AM and a shop that opens at 8:00 AM, and a ✓, — or N/A drop-down on every task.',
+          'Production and food safety under the FDA Food Code, in °F: bakery cases, anything custard-, cream- or cheese-filled and perishable savory items at 41 °F or below, creams cooled from 135 °F to 70 °F in 2 hours and to 41 °F in 4 more, date marking of 7 days at most (24 hours as the kit\'s quality target for anything made with eggs), mousses made with cooked meringue or pasteurized whites, dough temperatures, proofing and baking in °F, and sanitizer checked with test strips.',
+          'Production schedule and waste log with 32 US bakery items in 5 categories (viennoiserie, cakes and pastries, bread, savory, cookies and small cakes), waste cost in your currency and a weekly summary against a waste target you set; leftovers to donate are covered by the Bill Emerson Good Samaritan Food Donation Act.',
+          'Cake order form with size in inches, the cake message, the customer\'s allergies with a separate consent, deposit and balance due (a 30–50% deposit as common practice, not law), a US privacy notice and marketing consent under the TCPA and CAN-SPAM, plus a monthly order log, a pickup schedule by time slot and the day\'s order sheet.',
+          'Bakery allergen chart with 43 starter items to verify: the 9 major US allergens (FALCPA and the FASTER Act), sulfites and the UK\'s 14, written notice for unpackaged items under FDA Food Code 2022 3-602.12(C) where adopted, a case sign and case labels; a food temperature log by unit, a receiving log with US rejection criteria (41 °F, shell eggs in air at 45 °F), prep labels and a shelf-life chart in °F.',
+          "US holidays and events: the holiday season with Three Kings Day and King cake (the baby figurine packed separately), Valentine's Day, Easter, Mother's and Father's Day, celebration cakes for First Communions, graduations and showers, Thanksgiving pies, seasonal staff under the federal rules for minors on bakery machines, and a calendar of 17 key dates and occasions with a UK note.",
+          'Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report with a monthly cash log; every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'chocolate-shop-checklist-templates': {
+    version: '2.1',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.1',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.1: 9 checklist templates plus 2 bonuses with 338 chocolate shop tasks already written, adapted to the US with notes for the UK.',
+          'US chocolate shop roles and areas (chocolatier, sales associate and shift lead; kitchen, cool room, display case, shop floor and counter), a ✓, — or N/A drop-down on every task, and the counter on each checklist leaves out the tasks marked N/A. The whole-shop checklist comes with who does it and due-by times on a 12-hour clock for a shop that opens mid-morning.',
+          "Tempering and molding in °F: the kitchen at 64–68 °F and 50–60% humidity, the cool room at 59–64 °F, the bonbon display case at 60–64 °F, typical curves for dark, milk and white chocolate (your couverture maker's chart rules), molds at 68–72 °F, chilling at 54–57 °F and a shelf-life table by product type.",
+          'Food safety under the FDA Food Code: fresh-cream ganache treated as TCS until a lab test of water activity and pH says otherwise (41 °F or below, date marking of 7 days, never in the bonbon case or the cool room), exclusion of staff with vomiting, diarrhea or jaundice, no bare-hand contact with bonbons and samples, one set of tongs per tray, nut and peanut runs last, sanitizer checked with test strips, the written allergen notice for unwrapped items (3-602.12(C), where adopted) and full labels on chocolate wrapped in the shop (3-602.11).',
+          "The whole-shop closing checklist in a safe order: the display cases off only once the product is stored, the kitchen temperature logged, a safety check that never unplugs the cool room, the fridges or a melter, HVAC on night mode and the alarm and lock-up last.",
+          'A Quarterly & Annual sheet for a US chocolate shop: pest control by a licensed operator, lab tests of water activity and pH for new ganaches and fillings, food handler cards and a certified food protection manager, tempering and panning machine service, refrigeration by an EPA 608 technician, calibration and a legal-for-trade scale, fire extinguishers (OSHA), gas, hood cleaning under NFPA 96 only if you cook with grease, insurance with spoilage coverage, the health permit and any state candy manufacturing license, and the POS and sales tax on candy.',
+          "US seasons: the holiday season with Hanukkah gelt, the pre-order deadline and your carrier's shipping cutoff, seasonal staff under the federal limits for minors, Valentine's Day and Easter, plus a 12-month calendar with US dates, from Valentine's Day and Mother's Day to Sweetest Day, National Chocolate Day and Thanksgiving, featured products by month and a UK note; bonbons with alcohol only where state law allows.",
+          'Cash drawer count in US bills and coins with sales by the pound (legal-for-trade scale, price per pound, pounds balanced at close) and pre-order deposits rung as deposits; time records under the FLSA in the manager checklist; every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'ice-cream-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 298 ice cream shop tasks already written, adapted to the US with notes for the UK.',
+          'US scoop shop roles and areas (ice cream maker, scooper and shift lead; production, counter, seating area and patio), a ✓, — or N/A drop-down on every task, and the counter on each checklist leaves out the tasks marked N/A. The whole-shop checklist comes with who does it and due-by times on a 12-hour clock for a shop that opens mid-morning.',
+          "Production in °F: fats and emulsifiers added while the mix heats, the mix pasteurized at 185 °F for 15 seconds as the kit's target (typical state minimums and your pasteurizer's validated program come first), cooled by the FDA Food Code's two-stage rule and aged at 36–39 °F (never above 41 °F), the draw temperature from your batch freezer maker, pans pre-chilled at −4 °F, hardening and storage at 0 °F or below, yield and overrun (ice cream must weigh at least 4.5 lb per gallon), a shelf-life table in °F and a note on state frozen dessert and dairy licenses.",
+          'Counter and food safety under the FDA Food Code: dipping cabinets at 6–10 °F during service and left on at night (never off with product inside; a night setting only if the model has one), scoops in a running-water dipper well or one per flavor, an allergy-order routine (washed hands, fresh gloves, a clean scoop), the 9 major allergens (the UK\'s 14 noted), no bare-hand contact with cones and toppings, samples on single-use tasting spoons, sanitizer checked with test strips, and labels on pints packed ahead for a grab-and-go freezer.',
+          "The whole-shop closing checklist in a safe order: the dipping cabinets' night covers and closing temperatures before the register, a safety check that never unplugs a freezer, and the alarm and lock-up last. Weekly upkeep leaves the refrigerant to an EPA 608-certified technician.",
+          'A Quarterly & Annual sheet for a US ice cream shop: pest control by a licensed operator, hood and duct cleaning under NFPA 96 only if you cook with grease (waffles, crepes), refrigeration by an EPA 608 technician, thermometer calibration, fire extinguishers (OSHA) with their hydrostatic test, gas and electrical, backflow testing (dipper wells and the ice machine), the health permit and the state frozen dessert license, food handler cards and a certified food protection manager, insurance with equipment breakdown and food spoilage coverage, and the POS and sales tax.',
+          "US seasons: peak season from Memorial Day to Labor Day with summer staff (federal hour and equipment limits for 14- and 15-year-olds, work permits by state), pints and quarts to go (sold by weight only on a legal-for-trade scale), the off-season, ice cream catering at 0 °F with product at 10 °F or below on arrival, and a 12-month calendar with US dates, from Valentine's Day and National Ice Cream Day (the third Sunday of July) to Thanksgiving and the holidays, featured flavors by month and a UK note.",
+          'Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; time records under the FLSA in the manager checklist; every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
         ],
       },
     ],
