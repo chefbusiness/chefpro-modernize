@@ -46,7 +46,7 @@ A9     : 4
 B9     : Heridas y cortes cubiertos con apósito impermeable de color visible y guante encima
 C9     : Obrador
 A10    : 5
-B10    : Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto: comunicarlo al encargado y reasignar tarea
+B10    : Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto ni entra en obrador ni mostrador: comunicarlo al encargado
 C10    : Obrador
 A11    : 6
 B11    : Encender la extracción del obrador ANTES que ningún otro equipo
@@ -92,7 +92,7 @@ E24    : ✓
 F24    : Hora
 G24    : Notas
 A25    : 1
-B25    : Montar vitrina: bombones, tabletas, figuras, trufas
+B25    : Montar vitrina: bombones, tabletas, figuras, trufas; los de ganache de nata fresca y las trufas de nata, solo en vitrina refrigerada a 0-4 °C
 C25    : Vitrina
 A26    : 2
 B26    : Verificar el etiquetado de cada producto expuesto: denominación, precio (y precio por kilo si se vende al peso) y los alérgenos declarados —leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos— más las trazas
@@ -154,7 +154,7 @@ E5     : ✓
 F5     : Hora
 G5     : Notas
 A6     : 1
-B6     : Retirar productos de vitrina y guardar en conservación
+B6     : Retirar productos de vitrina y guardar en conservación; la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C
 C6     : Vitrina
 A7     : 2
 B7     : Cubrir bombones que queden expuestos con film
@@ -418,7 +418,7 @@ A24    : 6
 B24    : Desmoldar, verificar acabado y pesar cada tableta
 C24    : Moldeado
 A25    : 7
-B25    : Envolver en papel/aluminio y etiquetar con lote y fecha
+B25    : Envolver en papel/aluminio y etiquetar: denominación, ingredientes con los alérgenos destacados, peso neto, lote y fecha de consumo preferente
 C25    : Envasado
 A27    : Control de calidad y registro
 A28    : #
@@ -435,13 +435,13 @@ A30    : 2
 B30    : Registrar lotes de producción: producto, cantidad, fecha
 C30    : Admin
 A31    : 3
-B31    : Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja)
+B31    : Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja); la ganache de nata fresca, con fecha de caducidad (art. 24 del Reglamento UE 1169/2011)
 C31    : Admin
 A32    : 4
 B32    : Anotar las mermas del día: producto, cantidad y motivo (rotura, mal templado, bloom, prueba). El chocolate sin relleno y sin contaminar se puede refundir; el que lleva ganache o fruta, a residuo
 C32    : Admin
 A33    : 5
-B33    : Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe) — anota la lectura: ____ °C
+B33    : Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe); la ganache de nata fresca, en cámara a 0-4 °C — anota la lectura: ____ °C
 C33    : Conservación
 B34    : Tareas completadas:
 C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Tarea",E6:E33,"✓")   → caché 0.0
@@ -962,7 +962,7 @@ A28    : 1
 B28    : Cuadrar caja y registrar ventas
 C28    : Caja
 A29    : 2
-B29    : Retirar productos de vitrina para conservación
+B29    : Retirar productos de vitrina para conservación (la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C)
 C29    : Vitrina
 A30    : 3
 B30    : Limpiar mostradores, cristales y suelo de tienda

@@ -76,6 +76,8 @@ NO_HEREDAR = {
     '▸ Imprime en A4 y deja en obrador y mostrador.': 'obrador → kitchen (la zona «Kitchen» del kit), no «production '
                                                       'room» como en la heladería',
     'Resolver incidencias con clientes': 'una tienda dice «customers», no «guests» (EN de la cafetería)',
+    # ronda 1 m11: «Service setup» (heladería) es jerga de restaurante; el 01 «Instructions» B6 ya dice «shop setup»
+    'Montaje de servicio': 'una tienda monta la tienda y la vitrina, no «service»',
 }
 # gates_en.py G2: términos de otros kits que NINGUNA celda EN de la chocolatería puede llevar. «patio», «kitchen»,
 # «liqueur» (bombones de licor), «hot chocolate», «coffee» (sabor), «restaurant supply» y la firma «restaurant
@@ -332,8 +334,12 @@ POR_CELDA.update([
     (_M + ('C42',), '4–8 weeks'), (_M + ('C43',), '2–4 months'), (_M + ('C44',), '3–4 weeks'),
     (_M + ('C45',), '3–6 months'), (_M + ('C46',), '1–3 months'), (_M + ('C47',), '3–4 weeks'),
     (_M + ('C48',), 'Never'),
-    (_M + ('D41',), 'Treat it as TCS: 41 °F or below, 7 days max (FDA date marking). Let the box warm up CLOSED before '
-                    'opening, or it sweats. Longer only with a lab water-activity test'),
+    # ronda 1 B1: sin el análisis (aw y pH), lo de nata fresca no va a la vitrina templada ni a la cool room
+    (_M + ('D41',), 'Treat it as TCS until a lab test (water activity and pH; FDA 1-201.10) shows it is not: 41 °F or '
+                    'below, 7 days max (date marking), so NOT in the 60–64 °F display case or the cool room — use a '
+                    'refrigerated case or the fridge. Let the box warm up CLOSED before opening, or it sweats'),
+    # ronda 1 m3: el enfriado a 54–57 °F no puede ir en la cool room (59–64 °F)
+    (_M + ('C10',), 'Fridge'), (_M + ('C14',), 'Fridge'), (_M + ('C23',), 'Fridge'),
     # 05 · Trimestral y Anual: servicios contratados y papeles de una chocolate shop US (sin DDD, BIE, legionela,
     # RGSEAA ni Verifactu)
     (_T + ('A4',), 'Pest control, hygiene & lab tests — contracted'),
@@ -343,11 +349,12 @@ POR_CELDA.update([
     (_T + ('B7',), 'Exhaust and ventilation: filters and fans cleaned as the manufacturer says; if you cook with grease '
                    'under a hood (NFPA 96), hood and duct cleaning by a certified contractor at its frequency for your '
                    'volume'),
-    (_T + ('B8',), 'Lab tests by an outside lab: water activity (aw) of new ganaches and fillings, to set their shelf life '
-                   'and confirm which ones are TCS (FDA Food Code 1-201.10); water testing only if you are on a private '
-                   'well'),
-    (_T + ('B9',), 'Food handler cards for all staff (renewals as your state or county requires) and a certified food '
-                   'protection manager on the team (FDA Food Code 2-102.12)'),
+    (_T + ('B8',), 'Lab tests by an outside lab: water activity and pH of each new ganache or filling BEFORE it goes on '
+                   'sale, and again if the recipe changes, to set its shelf life and confirm whether it is TCS (FDA Food '
+                   'Code 1-201.10); water testing only if you are on a private well'),
+    (_T + ('F8',), 'Per new recipe'),
+    (_T + ('B9',), 'Food handler cards where your state or county requires them (renewals on its schedule) and a '
+                   'certified food protection manager on the team (FDA Food Code 2-102.12)'),
     (_T + ('B15',), 'Refrigeration service by an EPA 608-certified tech: cool room, fridges and display cases — coils, '
                     'gaskets, refrigerant leak check and defrost cycle'),
     (_T + ('B17',), 'Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA '
@@ -374,16 +381,16 @@ _CIERRE_08 = [  # fila ES de origen, EN, zona EN, responsable EN
     (5, 'Turn off background music', 'General', 'Shift lead'),
     (7, 'Clean up and bring in the patio, if you have one', 'Patio', 'Shift lead'),
     (12, 'Bring in the outdoor signage and sidewalk sign', 'Outside', 'Shift lead'),
-    (18, 'Turn off the chocolate display cases once all the product is back in the cool room', 'Display case',
-     'Shift lead'),
+    (18, 'Turn off the chocolate display cases once all the product is back in the cool room (TCS fresh-cream items: '
+         'fridge)', 'Display case', 'Shift lead'),
     (19, 'Log the closing temp of the kitchen (target 64–68 °F) — log reading: ____ °F', 'Kitchen', 'Shift lead'),
     (8, 'Turn off the POS / card terminal (or leave on standby)', 'Register', 'Shift lead'),
     (14, 'Empty trash cans in common areas and restrooms', 'Restrooms', 'Shift lead'),
-    (15, 'Final safety check: gas appliances off (if you have gas), water off, small appliances unplugged — never the '
-         'cool room or the fridges', 'General', 'Shift lead'),
+    (15, 'Final safety check: gas appliances off (if you have gas), no taps left running, small appliances unplugged — '
+         'never the cool room, the fridges or a melter kept on overnight', 'General', 'Shift lead'),
     (13, 'Check that windows are closed', 'General', 'Shift lead'),
-    (11, 'Turn off HVAC or set it to night mode: keep the shop below 68 °F if any chocolate stays out of the cool room',
-     'General', 'Shift lead'),
+    (11, 'Set HVAC to night mode — never fully off in warm weather: wrapped bars on the shelves need the shop at 68 °F '
+         'or below overnight', 'General', 'Shift lead'),
     (10, 'Turn off lights (leave security lighting on)', 'General', 'Shift lead'),
     (16, 'Set the alarm', 'Entrance', 'Last one out'),
     (9, 'Close security gate and doors', 'Entrance', 'Last one out'),
@@ -456,6 +463,8 @@ _FECHAS = ('fechas US: lo TCS (ganache de nata fresca, rellenos con actividad de
            'a 41 °F como máximo, contando el día de elaboración como día 1 (FDA Food Code 3-501.17); el resto, consumo '
            'preferente (best-by, criterio del kit)')
 _RESENAS = 'Plataformas US: Google Business Profile y Yelp'
+_TCS_VITRINA = ('la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina '
+                'refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room')
 _SEGURIDAD = ('APPCC → seguridad alimentaria (food safety): registros de temperatura y limpieza; ' + _HACCP_KIT)
 _GAS_NO_LLAVE = ('en EE. UU. la llave general del gas no se abre ni se cierra cada día: sin «abrir/cerrar la llave '
                  'general»')
@@ -480,9 +489,12 @@ ADAPTAR = OrderedDict([
      'la manteca de cacao funde; ' + _LOG),
     (('01', 'Apertura', 'B20'), 'Tienda a 68–72 °F'),
     (('01', 'Apertura', 'B21'), _HACCP_KIT + '; lectura en °F'),
+    # ronda 1 B1 (y errata ES 1, parcheada en el ES LIVE): la ganache de nata fresca, en frío
+    (('01', 'Apertura', 'B25'), _TCS_VITRINA),
     (('01', 'Apertura', 'B26'), _VITRINA),
     (('01', 'Apertura', 'B29'), _MUESTRAS),
     # 01 · Cierre
+    (('01', 'Cierre', 'B6'), 'Conservación → cool room; ' + _TCS_VITRINA),
     (('01', 'Cierre', 'B10'), 'El mostrador donde se manipula producto: limpiar y luego sanitizar con ' + _TIRA
      + '; los cristales, con limpiacristales'),
     (('01', 'Cierre', 'B17'), 'Cool room a 59–64 °F y fridge de rellenos a 41 °F o menos; ' + _LOG2),
@@ -537,6 +549,7 @@ ADAPTAR = OrderedDict([
     # 04 · perfiles
     (('04', 'Chocolatero', 'B12'), _ENVASADO),
     (('04', 'Dependiente', 'B7'), _VITRINA),
+    (('04', 'Dependiente', 'B29'), 'Conservación → cool room; ' + _TCS_VITRINA),
     (('04', 'Dependiente', 'B8'), _MUESTRAS),
     (('04', 'Dependiente', 'B15'), 'añade: con guantes o pinzas, nunca a mano desnuda (FDA Food Code 3-301.11)'),
     (('04', 'Dependiente', 'B16'), 'Señal → deposit; encargos → pre-orders / custom orders'),
@@ -653,8 +666,9 @@ REGLAS_US.update([
                   '64–68 °F; manda la curva del fabricante de cada cobertura',
                   '[fabricante] curva de templado de cada cobertura; [criterio del kit] cifras del ES en °F')),
     ('tcs_ganache', ('ganache de nata fresca y rellenos con actividad de agua alta: TCS (41 °F o menos; date marking 7 '
-                     'días) salvo un análisis de laboratorio (aw) que demuestre que no lo son; el granel de ganache, '
-                     'congelado a 0 °F o menos; el chocolate acabado no se congela',
+                     'días) salvo un análisis de laboratorio (aw y pH) que demuestre que no lo son; sin el análisis, '
+                     'nunca en la vitrina de 60–64 °F ni en la cool room: vitrina refrigerada o nevera a 41 °F o menos; '
+                     'el granel de ganache, congelado a 0 °F o menos; el chocolate acabado no se congela',
                      'FDA Food Code 2022 §1-201.10 (TCS food, tablas A y B); §3-501.16(A)(2); §3-501.17')),
     ('mano_desnuda', ('sin contacto de la mano desnuda con lo listo para consumir (bombones, trufas, muestras)',
                       'FDA Food Code 2022 §3-301.11')),
@@ -676,7 +690,20 @@ REGLAS_US.update([
                         'o de salud')),
     ('impuesto_candy', ('muchos estados gravan los caramelos (candy) aunque la alimentación esté exenta',
                         '[estatal] Streamlined Sales and Use Tax Agreement (definición de «candy»)')),
-    ('licor', ('bombones con alcohol: norma estatal', '[estatal]')),
+    # ronda 1 m7: por encima del 0,5 % de alcohol, la confitería está adulterada salvo que la ley del estado donde se
+    # vende la permita (también el estado de destino de un envío); algunos estados piden 21+ y advertencias (NY)
+    ('licor', ('bombones con alcohol: por encima del 0,5 % solo donde la ley del estado lo permite, también el de destino '
+               'de los envíos; algunos estados exigen 21+ y advertencias', '[estatal]; FD&C Act §402(d); 21 U.S.C. '
+               '342(d); NY Agriculture & Markets Law §200')),
+    # ronda 1 M2: vómitos, diarrea o ictericia = exclusión; el responsable avisa a la autoridad (ictericia o enfermedad
+    # diagnosticada); garganta con fiebre o herida infectada sin cubrir = restricción
+    ('enfermos', ('vómitos, diarrea o ictericia: exclusión y aviso del responsable a la autoridad sanitaria por ictericia o '
+                  'enfermedad diagnosticada; garganta con fiebre o herida infectada sin cubrir: restricción (sin '
+                  'alimento sin envasar)', 'FDA Food Code 2022 §2-201.11; §2-201.12')),
+    # ronda 1 m9: personal de temporada menor de edad
+    ('menores', ('14-15 años: límites de horas; menores de 16, sin manejar ni limpiar máquinas eléctricas como la '
+                 'temperadora o el bombo; work permits estatales', '29 CFR 570.35, 570.34 y 570.33(e); [estatal] work '
+                 'permits')),
     ('campana', (_base.REGLAS_US['campana'][0] + '; solo si se cocina con grasa bajo campana; la extracción general del '
                  'obrador, según su fabricante', _base.REGLAS_US['campana'][1])),
     ('seguro_frio', ('equipment breakdown con spoilage; business interruption', '[criterio del kit] seguros US')),

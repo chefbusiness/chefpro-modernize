@@ -1,19 +1,19 @@
 {
  "meta": {
-  "generado": "2026-10-24T10:10:38Z",
+  "generado": "2026-10-24T10:58:38Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-chocolateria",
-  "commit": "67cc4a42",
+  "commit": "f2307f25",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
     "en": "01-chocolate-shop-opening-closing-checklists.xlsx",
-    "sha256": "f340ceb3d20b4db8c0f8910c81e9d465751ca4e33c277862382326aea7b55949"
+    "sha256": "bac09d69684f0b6f395bd627f35fe2b43d96411d1779df96cb950319c8bc8c6c"
    },
    "02": {
     "es": "02-partidas-produccion.xlsx",
     "en": "02-chocolate-tempering-molding-checklists.xlsx",
-    "sha256": "df7579389da3874d8244ecaaa5dbd8a3f7bda44357a78d2b7f5e913b4223c52a"
+    "sha256": "96206399528fadb7d11f297b393fed7c4155e7926bbfdd4161bd86f827bd255d"
    },
    "03": {
     "es": "03-tareas-manager.xlsx",
@@ -23,7 +23,7 @@
    "04": {
     "es": "04-tareas-perfiles.xlsx",
     "en": "04-chocolate-shop-duties-by-role.xlsx",
-    "sha256": "227908ce4c243c992ad4a691c89c89ac4a12800321169a39c22e5edccae555d2"
+    "sha256": "4012fc13b8beb8d2e2eb95d540db53ac354c9c1fe460291e9025d9386f759be4"
    },
    "05": {
     "es": "05-tareas-semanales-mensuales.xlsx",
@@ -63,8 +63,8 @@
   },
   "n_cadenas": 753,
   "n_traducir": 538,
-  "n_adaptar": 126,
-  "n_palabras_subagentes": 5385,
+  "n_adaptar": 129,
+  "n_palabras_subagentes": 5478,
   "n_apariciones": 1779,
   "grupos": [
    {
@@ -77,8 +77,8 @@
      "04"
     ],
     "n_cadenas": 276,
-    "n_adaptar": 60,
-    "n_palabras": 2710
+    "n_adaptar": 63,
+    "n_palabras": 2803
    },
    {
     "id": "G2",
@@ -758,19 +758,20 @@
   },
   {
    "id": "c0033",
-   "es": "Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto: comunicarlo al encargado y reasignar tarea",
+   "es": "Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto ni entra en obrador ni mostrador: comunicarlo al encargado",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 18,
+   "palabras": 21,
    "con_cifra": false,
    "adaptar": "FDA Food Code 2-201.11: el responsable (person in charge) comprueba que nadie tiene vómitos, diarrea, ictericia, dolor de garganta con fiebre o una herida infectada; quien los tenga no manipula alimentos",
    "pistas": [
     "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "obrador → kitchen (chocolate kitchen / production kitchen)",
     "encargado → shift lead"
    ],
-   "sha1": "5ba57e4522c1",
+   "sha1": "3171c1648fef",
    "donde": [
     {
      "f": "01",
@@ -1061,21 +1062,24 @@
   },
   {
    "id": "c0051",
-   "es": "Montar vitrina: bombones, tabletas, figuras, trufas",
+   "es": "Montar vitrina: bombones, tabletas, figuras, trufas; los de ganache de nata fresca y las trufas de nata, solo en vitrina refrigerada a 0-4 °C",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
+   "palabras": 25,
+   "con_cifra": true,
+   "adaptar": "la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
    "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
     "trufa → truffle; rocas → clusters",
     "tableta → bar (chocolate bar)",
     "figuras → molded figures (huecas → hollow figures)",
+    "ganache → ganache; rellenos → fillings",
     "vitrina → display case; escaparate → store window"
    ],
-   "sha1": "0272ee4a59e4",
+   "sha1": "63a76c2c0854",
    "donde": [
     {
      "f": "01",
@@ -2052,17 +2056,23 @@
   },
   {
    "id": "c0074",
-   "es": "Retirar productos de vitrina y guardar en conservación",
+   "es": "Retirar productos de vitrina y guardar en conservación; la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
+   "palabras": 25,
+   "con_cifra": true,
+   "adaptar": "Conservación → cool room; la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
    "pistas": [
-    "vitrina → display case; escaparate → store window"
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "trufa → truffle; rocas → clusters",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
    ],
-   "sha1": "8b5cf6a97116",
+   "sha1": "1e56a6977f6e",
    "donde": [
     {
      "f": "01",
@@ -3730,15 +3740,18 @@
   },
   {
    "id": "c0154",
-   "es": "Envolver en papel/aluminio y etiquetar con lote y fecha",
+   "es": "Envolver en papel/aluminio y etiquetar: denominación, ingredientes con los alérgenos destacados, peso neto, lote y fecha de consumo preferente",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 10,
+   "palabras": 20,
    "con_cifra": false,
    "adaptar": "Papel de aluminio → foil; Etiqueta US de lo que se envasa en la tienda (tabletas, cajas cerradas, bolsas): nombre del producto, ingredientes por peso, contenido neto (oz y g), alérgenos principales y nombre y lugar del negocio (FDA Food Code 3-602.11); el lote y la fecha de consumo preferente (best-by) son criterio del kit: en EE. UU. la fecha es voluntaria salvo en la fórmula infantil",
-   "sha1": "279c459ee897",
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "sha1": "cdae849a991f",
    "donde": [
     {
      "f": "02",
@@ -3814,15 +3827,18 @@
   },
   {
    "id": "c0159",
-   "es": "Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja)",
+   "es": "Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja); la ganache de nata fresca, con fecha de caducidad (art. 24 del Reglamento UE 1169/2011)",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 19,
-   "con_cifra": false,
+   "palabras": 35,
+   "con_cifra": true,
    "adaptar": "fechas US: lo TCS (ganache de nata fresca, rellenos con actividad de agua alta) lleva date marking de 7 días a 41 °F como máximo, contando el día de elaboración como día 1 (FDA Food Code 3-501.17); el resto, consumo preferente (best-by, criterio del kit)",
-   "sha1": "b97b6d0fd9cc",
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "sha1": "965336878153",
    "donde": [
     {
      "f": "02",
@@ -3861,18 +3877,21 @@
   },
   {
    "id": "c0161",
-   "es": "Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe) — anota la lectura: ____ °C",
+   "es": "Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe); la ganache de nata fresca, en cámara a 0-4 °C — anota la lectura: ____ °C",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 29,
+   "palabras": 40,
    "con_cifra": true,
    "adaptar": "Producto terminado a 59–64 °F y 50–60 % de humedad, a oscuras y lejos de olores; coletilla «— log reading: ____ °F»",
    "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "ganache → ganache; rellenos → fillings",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
    ],
-   "sha1": "49a921118ee4",
+   "sha1": "77365558a574",
    "donde": [
     {
      "f": "02",
@@ -6796,17 +6815,23 @@
   },
   {
    "id": "c0325",
-   "es": "Retirar productos de vitrina para conservación",
+   "es": "Retirar productos de vitrina para conservación (la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C)",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
+   "palabras": 23,
+   "con_cifra": true,
+   "adaptar": "Conservación → cool room; la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
    "pistas": [
-    "vitrina → display case; escaparate → store window"
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "trufa → truffle; rocas → clusters",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
    ],
-   "sha1": "0f7551ac164d",
+   "sha1": "aaf13b68ad28",
    "donde": [
     {
      "f": "04",
@@ -17284,6 +17309,10 @@
    "es": "Conservación",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Cool room",
    "n_ficheros": 4,
    "n_apariciones": 9,
@@ -17312,24 +17341,24 @@
      "h": "Moldeado",
      "c": "C10",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "02",
      "h": "Moldeado",
      "c": "C14",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "02",
      "h": "Moldeado",
      "c": "C23",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "02",
@@ -19913,7 +19942,7 @@
    "es": "Actividad de agua alta: en refrigeración a 0-4 °C y atemperar CERRADOS antes de abrir, o condensan",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Treat it as TCS: 41 °F or below, 7 days max (FDA date marking). Let the box warm up CLOSED before opening, or it sweats. Longer only with a lab water-activity test",
+   "en_por_celda": "Treat it as TCS until a lab test (water activity and pH; FDA 1-201.10) shows it is not: 41 °F or below, 7 days max (date marking), so NOT in the 60–64 °F display case or the cool room — use a refrigerated case or the fridge. Let the box warm up CLOSED before opening, or it sweats",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 18,
@@ -21517,7 +21546,7 @@
    "es": "Analítica de superficies, de producto y del agua de la red interior en laboratorio externo (legionela sólo si tienes torre de refrigeración o acumulador de agua caliente)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Lab tests by an outside lab: water activity (aw) of new ganaches and fillings, to set their shelf life and confirm which ones are TCS (FDA Food Code 1-201.10); water testing only if you are on a private well",
+   "en_por_celda": "Lab tests by an outside lab: water activity and pH of each new ganache or filling BEFORE it goes on sale, and again if the recipe changes, to set its shelf life and confirm whether it is TCS (FDA Food Code 1-201.10); water testing only if you are on a private well",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 27,
@@ -21539,6 +21568,10 @@
    "es": "Semestral",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Semiannual",
    "n_ficheros": 1,
    "n_apariciones": 2,
@@ -21551,8 +21584,8 @@
      "h": "Trimestral y Anual",
      "c": "F8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "05",
@@ -21569,7 +21602,7 @@
    "es": "Renovar los carnés de manipulador de alimentos del equipo y archivar los certificados",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Food handler cards for all staff (renewals as your state or county requires) and a certified food protection manager on the team (FDA Food Code 2-102.12)",
+   "en_por_celda": "Food handler cards where your state or county requires them (renewals on its schedule) and a certified food protection manager on the team (FDA Food Code 2-102.12)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 13,
@@ -22561,7 +22594,7 @@
    "es": "Cerrar persianas y puertas",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Turn off the chocolate display cases once all the product is back in the cool room",
+   "en_por_celda": "Turn off the chocolate display cases once all the product is back in the cool room (TCS fresh-cream items: fridge)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 4,
@@ -22649,7 +22682,7 @@
    "es": "Comprobar que ventanas están cerradas",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Final safety check: gas appliances off (if you have gas), water off, small appliances unplugged — never the cool room or the fridges",
+   "en_por_celda": "Final safety check: gas appliances off (if you have gas), no taps left running, small appliances unplugged — never the cool room, the fridges or a melter kept on overnight",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -22693,7 +22726,7 @@
    "es": "Revisión final de seguridad (gas, agua, enchufes)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Turn off HVAC or set it to night mode: keep the shop below 68 °F if any chocolate stays out of the cool room",
+   "en_por_celda": "Set HVAC to night mode — never fully off in warm weather: wrapped bars on the shelves need the shop at 68 °F or below overnight",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 7,

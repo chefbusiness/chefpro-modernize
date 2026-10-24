@@ -16,8 +16,8 @@ B11    : ▸ Adjust temperatures to your equipment and local rules.
 B12    : ▸ Print on US Letter and keep it in the kitchen and at the counter.
 B14    : Hygiene and temperatures:
 B15    : ▸ The first section of "Opening" is personal hygiene and a safe start: exhaust fan first, gas check next (if you have gas equipment), and only then the tempering machine, display cases and climate control.
-B16    : ▸ The cool room and fridges are not "turned on": check that they ran all night and log the reading. Targets for this trade: kitchen 64–68 °F, cool room 59–64 °F at 50–60% humidity, fillings and ganaches 41 °F or below, bonbon display case 60–64 °F.
-B17    : ▸ Above 68 °F cocoa butter starts to melt: the bonbon sweats, loses its shine and within two days fat bloom shows up. That is why the display case gets its own check.
+B16    : ▸ The cool room and fridges are not "turned on": check that they ran all night and log the reading. Targets for this trade: kitchen 64–68 °F, cool room 59–64 °F at 50–60% humidity, fillings and ganaches 41 °F or below, bonbon display case 60–64 °F. Fresh-cream ganache is TCS unless a lab test says otherwise: it does not go in the 60–64 °F case.
+B17    : ▸ Above 68 °F chocolate softens and bloom risk climbs: the bonbon sweats, loses its shine and within two days fat bloom shows up. That is why the display case gets its own check.
 B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B20    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
 
@@ -46,7 +46,7 @@ A9     : 4
 B9     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
 C9     : Kitchen
 A10    : 5
-B10    : Anyone with vomiting, diarrhea, jaundice, sore throat with fever or an infected wound does NOT handle food: tell the shift lead and reassign the task (FDA 2-201.11)
+B10    : Vomiting, diarrhea or jaundice: that person does NOT work today — send them home (exclusion) and the person in charge reports jaundice or a diagnosed illness to the health department; sore throat with fever or an uncovered infected wound: reassign away from unwrapped food (FDA 2-201.11, 2-201.12)
 C10    : Kitchen
 A11    : 6
 B11    : Turn on the kitchen exhaust fan BEFORE any other equipment
@@ -63,7 +63,7 @@ E14    : ✓
 F14    : Time
 G14    : Notes
 A15    : 1
-B15    : Turn on the tempering machine and preheat to 113 °F
+B15    : Turn on the tempering machine and preheat per the manufacturer (typically 113 °F)
 C15    : Tempering
 A16    : 2
 B16    : Check the cool room ran all night (no outages or alarms) and log the temperature: target 59–64 °F and 50–60% humidity — log reading: ____ °F
@@ -75,15 +75,15 @@ A18    : 4
 B18    : Turn on display case lighting and shop floor lights
 C18    : Display case
 A19    : 5
-B19    : Check the bonbon display case holds 60–64 °F and is not fogging up before setting out product (above 68 °F cocoa butter melts and bonbons lose their shine) — log reading: ____ °F
+B19    : Check the bonbon display case has reached 60–64 °F (it is switched on when you arrive) and is not fogging up before setting out product (above 68 °F chocolate softens and bonbons lose their shine) — log reading: ____ °F
 C19    : Display case
 A20    : 6
-B20    : Turn on the A/C — keep the shop at 68–72 °F
+B20    : Turn on the A/C — keep the shop at 68–72 °F (unwrapped bonbons stay in the 60–64 °F case)
 C20    : Shop
 A21    : 7
 B21    : Log kitchen, cool room and fridge temperatures: in the temperature log of the HACCP Food Safety Kit Pro if you have it; if not, right here in "Notes"
 C21    : Office
-A23    : Service setup
+A23    : Shop and display setup
 A24    : #
 B24    : Task
 C24    : Area
@@ -92,7 +92,7 @@ E24    : ✓
 F24    : Time
 G24    : Notes
 A25    : 1
-B25    : Set up the display case: bonbons, bars, molded figures, truffles
+B25    : Set up the display case: bonbons, bars, molded figures, truffles — fresh-cream (TCS) items only if lab-tested as non-TCS; otherwise in a refrigerated case at 41 °F or below (shelf life table in file 02)
 C25    : Display case
 A26    : 2
 B26    : Check the sign on every display tray: product name, price (and price per lb if sold by weight) and a written allergen notice for unwrapped items (the 9 majors: milk, egg, wheat, soy, peanuts, tree nuts, sesame, fish, shellfish; UK: 14) plus any "may contain" statements; FDA Food Code 2022 3-602.12(C), where adopted
@@ -104,7 +104,7 @@ A28    : 4
 B28    : Check stock of assorted bonbon gift boxes
 C28    : Packaging
 A29    : 5
-B29    : Set up the sample station with the day's samples: tongs, toothpicks or single-use cups, never bare hands (FDA 3-301.11)
+B29    : Set up the sample station with the day's samples: one set of tongs per tray (nut and peanut items never share tongs), toothpicks or single-use cups, never bare hands (FDA 3-301.11)
 C29    : Counter
 A30    : 6
 B30    : Check the POS is active and the starting bank was already counted and logged before you unlock the door: no recount here, it is done on the "Cash Drawer Opening" tab of file 09 (milestone in files 08/09)
@@ -154,7 +154,7 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Take product out of the display case and store it in the cool room
+B6     : Take product out of the display case: bonbons and bars to the cool room; any TCS fresh-cream item to the fridge (41 °F or below)
 C6     : Display case
 A7     : 2
 B7     : Cover any bonbons left out with plastic wrap
@@ -209,7 +209,7 @@ A24    : 1
 B24    : Turn off equipment except the cool room and fridges
 C24    : General
 A25    : 2
-B25    : Make sure gas burners are off (the main valve is for emergencies only) and that water and lights are off
+B25    : Make sure gas burners are off (the main valve is for emergencies only), no taps are left running and lights are off
 C25    : General
 A26    : 3
 B26    : Take out the trash and recycle cardboard/plastic
@@ -263,7 +263,7 @@ A6     : 1
 B6     : Check dark couverture stock (55–70% cocoa)
 C6     : Dry storage
 A7     : 2
-B7     : Check milk couverture stock (35–40% cocoa)
+B7     : Check milk couverture stock (30–40% cocoa)
 C7     : Dry storage
 A8     : 3
 B8     : Check white couverture stock (28–33% cocoa)
@@ -277,7 +277,7 @@ C10    : Kitchen
 A11    : 6
 B11    : Chop the couverture and load it into the tempering machine
 C11    : Tempering
-A13    : Tempering Process — Dark Chocolate
+A13    : Tempering Process — Dark Chocolate (typical curve; your couverture's chart rules)
 A14    : #
 B14    : Task
 C14    : Area
@@ -300,7 +300,7 @@ C18    : Tempering
 A19    : 5
 B19    : Log batch, time and final temperature
 C19    : Office
-A21    : Tempering Process — Milk Chocolate
+A21    : Tempering Process — Milk Chocolate (typical curve; your couverture's chart rules)
 A22    : #
 B22    : Task
 C22    : Area
@@ -320,7 +320,7 @@ C25    : Tempering
 A26    : 4
 B26    : Tempering test, thin layer on paper: at 64–68 °F it should set in 3–5 min, with even shine and no streaks, starting from the working temperature of 84–86 °F. If not, remelt and retemper — never mold "and hope for the best". Log the batch, time and final temperature
 C26    : Office
-A28    : Tempering Process — White Chocolate
+A28    : Tempering Process — White Chocolate (typical curve; your couverture's chart rules)
 A29    : #
 B29    : Task
 C29    : Area
@@ -362,7 +362,7 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Prep clean molds at room temperature (68–72 °F)
+B6     : Prep clean molds, slightly warmer than the room (68–72 °F)
 C6     : Molding
 A7     : 2
 B7     : Pour tempered chocolate into the molds — tap to remove air bubbles
@@ -374,20 +374,20 @@ A9     : 4
 B9     : Invert molds over a rack and let drain
 C9     : Molding
 A10    : 5
-B10    : Chill at 54–57 °F for 10–15 min
-C10    : Cool room
+B10    : Chill 10–15 min in a cooling cabinet or fridge set to 54–57 °F
+C10    : Fridge
 A11    : 6
 B11    : Prepare the day's fillings/ganaches per recipe
 C11    : Kitchen
 A12    : 7
-B12    : Fill bonbons to 80%, leaving room for the cap
+B12    : Fill bonbons to 80%, leaving room for the cap; let the filling set before capping (ganache: usually overnight — if it is TCS, in the fridge)
 C12    : Molding
 A13    : 8
 B13    : Cap with tempered chocolate — smooth with a spatula
 C13    : Molding
 A14    : 9
 B14    : Chill 15–20 min until the chocolate contracts
-C14    : Cool room
+C14    : Fridge
 A15    : 10
 B15    : Unmold, check shine and store on trays
 C15    : Molding
@@ -400,20 +400,20 @@ E18    : ✓
 F18    : Time
 G18    : Notes
 A19    : 1
-B19    : Prep clean bar molds at room temperature
+B19    : Prep clean bar molds, slightly warmer than the room (68–72 °F)
 C19    : Molding
 A20    : 2
 B20    : Pour tempered chocolate and tap/vibrate
 C20    : Molding
 A21    : 3
-B21    : Add inclusions if needed: nuts, dried fruit, salt
+B21    : Add inclusions if needed: nuts, dried fruit, salt — run nut and peanut bars LAST, then clean molds, tools and the tempering machine before plain bars (allergen cross-contact)
 C21    : Molding
 A22    : 4
 B22    : Smooth the surface with a spatula
 C22    : Molding
 A23    : 5
-B23    : Chill at 54–57 °F for 20–30 min
-C23    : Cool room
+B23    : Chill 20–30 min in a cooling cabinet or fridge set to 54–57 °F
+C23    : Fridge
 A24    : 6
 B24    : Unmold, check the finish and weigh each bar
 C24    : Molding
@@ -441,7 +441,7 @@ A32    : 4
 B32    : Log the day's waste: product, quantity and reason (breakage, bad temper, bloom, test). Plain chocolate that is uncontaminated can be remelted; anything with ganache or fruit goes in the trash
 C32    : Office
 A33    : 5
-B33    : Store finished product at 59–64 °F and 50–60% humidity, in the dark and away from strong odors (cocoa absorbs them) — log reading: ____ °F
+B33    : Store finished product at 59–64 °F and 50–60% humidity, in the dark and away from strong odors (cocoa absorbs them); TCS fresh-cream items in the fridge at 41 °F or below — log reading: ____ °F
 C33    : Cool room
 B34    : Tasks done:
 C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Task",E6:E33,"✓")   → caché 0.0
@@ -460,19 +460,19 @@ C40    : 6–12 months
 D40    : Same as the bar, but a hollow piece cracks with sudden temperature changes
 B41    : Fresh-cream ganache bonbons
 C41    : 7 days at 41 °F
-D41    : Treat it as TCS: 41 °F or below, 7 days max (FDA date marking). Let the box warm up CLOSED before opening, or it sweats. Longer only with a lab water-activity test
+D41    : Treat it as TCS until a lab test (water activity and pH; FDA 1-201.10) shows it is not: 41 °F or below, 7 days max (date marking), so NOT in the 60–64 °F display case or the cool room — use a refrigerated case or the fridge. Let the box warm up CLOSED before opening, or it sweats
 B42    : Bonbons with UHT cream, sorbate or alcohol
 C42    : 4–8 weeks
-D42    : Preservative and alcohol lower water activity; without them you will not reach even half of this. Only with a lab-tested water activity (not TCS); otherwise, treat it as fresh-cream ganache
+D42    : Preservative and alcohol lower water activity; without them you will not reach even half of this. Only with a lab test of water activity and pH showing it is not TCS; otherwise, treat it as fresh-cream ganache
 B43    : Praline, gianduja and nut bonbons
 C43    : 2–4 months
 D43    : Nut fat goes rancid and refrigeration does not prevent it: go by the date, not the look
 B44    : Truffles and coated clusters
 C44    : 3–4 weeks
-D44    : If they contain cream or butter, count them as fresh ganache
+D44    : Truffles with fresh cream or butter follow the fresh-cream row (TCS unless lab-tested); nut or praline centers, this row
 B45    : Liqueur and sugar-crystallized bonbons
 C45    : 3–6 months
-D45    : Watch for sugar crystallization in the shell: it cracks and leaks. Alcohol-filled candy: check your state rules
+D45    : Watch for sugar crystallization in the shell: it cracks and leaks. Alcohol: above 0.5% only where state law allows; ship only to states that allow it (FD&C Act §402(d)); some states set 21+ — check your state rules
 B46    : Candied nuts and chocolate-dipped candied fruit
 C46    : 1–3 months
 D46    : They clump with moisture; airtight packaging with a desiccant if your kitchen is humid
@@ -863,7 +863,7 @@ E23    : ✓
 F23    : Time
 G23    : Notes
 A24    : 1
-B24    : Clean the tempering machine after every use
+B24    : Clean the tempering machine after every use, and always before switching from milk to dark or white: milk carried over into dark chocolate is an undeclared allergen
 C24    : Tempering
 A25    : 2
 B25    : Clean molds and dry them properly
@@ -902,7 +902,7 @@ A7     : 2
 B7     : Check the sign on every display tray: price, price per lb if sold by weight, and the written allergen notice for unwrapped items (the 9 majors: milk, egg, wheat, soy, peanuts, tree nuts, sesame, fish, shellfish; UK: 14) plus any "may contain" statements (FDA 3-602.12(C), where adopted)
 C7     : Display case
 A8     : 3
-B8     : Set up the sample area: tongs, toothpicks or single-use cups, never bare hands (FDA 3-301.11)
+B8     : Set up the sample area: one set of tongs per tray (nut and peanut items never share tongs), toothpicks or single-use cups, never bare hands (FDA 3-301.11)
 C8     : Counter
 A9     : 4
 B9     : Turn on the POS and check the starting bank
@@ -922,7 +922,7 @@ A14    : 1
 B14    : Serve customers: advise on products and pairings
 C14    : Shop
 A15    : 2
-B15    : Build custom bonbon gift boxes with gloves or tongs, never bare hands (FDA 3-301.11)
+B15    : Build custom bonbon gift boxes with gloves or tongs, never bare hands (FDA 3-301.11); for an allergy request, fresh gloves and pieces from untouched trays
 C15    : Packaging
 A16    : 3
 B16    : Handle pre-orders and advance orders: when you CONFIRM the order, write down allergens and intolerances, quantities, pickup date and time, price, deposit collected and cancellation terms
@@ -962,7 +962,7 @@ A28    : 1
 B28    : Balance the register and log sales
 C28    : Register
 A29    : 2
-B29    : Move products from the display case to the cool room
+B29    : Move products from the display case to the cool room; any TCS fresh-cream item to the fridge (41 °F or below)
 C29    : Display case
 A30    : 3
 B30    : Clean counters, display glass and shop floor
@@ -1063,7 +1063,7 @@ B9     : Customization:
 B10    : ▸ Adjust frequencies to your production volume.
 B11    : ▸ Add tasks specific to your kitchen.
 B13    : Beyond the month:
-B14    : ▸ The "Quarterly & Annual" tab covers what you hire out and what an inspection asks for in writing: pest control, hood exhaust (NFPA 96, only if you cook with grease), water-activity (aw) tests, food handler cards and CFPM, tempering and panning machine service, refrigeration (EPA 608), probe and scale calibration, extinguishers (OSHA), gas, insurance and POS / sales tax.
+B14    : ▸ The "Quarterly & Annual" tab covers what you hire out and what an inspection asks for in writing: pest control, hood exhaust (NFPA 96, only if you cook with grease), water-activity (aw) tests, food handler cards and CFPM, tempering machine service (and panning machine, if you have one), refrigeration (EPA 608), probe and scale calibration, extinguishers (OSHA), gas, insurance and POS / sales tax.
 B15    : ▸ Write the report number of each inspection and the date of the next one in "Notes"; the "Frequency" column already shows the legal or recommended interval for each.
 B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B18    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
@@ -1162,7 +1162,7 @@ A33    : 3
 B33    : Check mold condition (scratched, warped)
 C33    : Molding
 A34    : 4
-B34    : Check the precision scale with a test weight; the retail scale must be legal-for-trade (NTEP), inspected and sealed by your state weights and measures office
+B34    : Check the precision scale with a test weight; the retail scale must be legal-for-trade (NTEP), inspected and sealed by your state or local (county/city) weights and measures office
 C34    : Kitchen
 B35    : Tasks done:
 C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Task",E6:E34,"✓")   → caché 0.0
@@ -1273,11 +1273,11 @@ B7     : Exhaust and ventilation: filters and fans cleaned as the manufacturer s
 C7     : General
 F7     : Annual
 A8     : 3
-B8     : Lab tests by an outside lab: water activity (aw) of new ganaches and fillings, to set their shelf life and confirm which ones are TCS (FDA Food Code 1-201.10); water testing only if you are on a private well
+B8     : Lab tests by an outside lab: water activity and pH of each new ganache or filling BEFORE it goes on sale, and again if the recipe changes, to set its shelf life and confirm whether it is TCS (FDA Food Code 1-201.10); water testing only if you are on a private well
 C8     : Office
-F8     : Semiannual
+F8     : Per new recipe
 A9     : 4
-B9     : Food handler cards for all staff (renewals as your state or county requires) and a certified food protection manager on the team (FDA Food Code 2-102.12)
+B9     : Food handler cards where your state or county requires them (renewals on its schedule) and a certified food protection manager on the team (FDA Food Code 2-102.12)
 C9     : Team
 F9     : Annual
 A10    : 5
@@ -1293,7 +1293,7 @@ E13    : ✓
 F13    : Frequency
 G13    : Notes
 A14    : 1
-B14    : Technician service on the tempering machine and panning machine: probes, heating elements, gaskets and auger wear
+B14    : Technician service on the tempering machine (and panning machine, if you have one): probes, heating elements, gaskets and, on continuous machines, auger wear
 C14    : Tempering
 F14    : Annual
 A15    : 2
@@ -1353,7 +1353,7 @@ CF A6:G25 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=Non
 B2     : 06 · Chocolate Shop Seasonal Checklists: Holiday Season, Valentine's Day & Easter
 B4     : How to use this template:
 B5     : ▸ Planning for seasonal campaigns and special events.
-B6     : ▸ Holiday Season, Valentine's Day, Easter, Mother's Day and more.
+B6     : ▸ Holiday Season, Valentine's Day and Easter (Mother's Day and the rest of the year: BONUS 02 calendar).
 B7     : ▸ Each campaign has production, packaging and marketing.
 B9     : Customization:
 B10    : ▸ Adjust dates and products to your catalog.
@@ -1386,7 +1386,7 @@ A8     : 3
 B8     : Design and order holiday packaging: boxes, ribbons, cards
 C8     : Packaging
 A9     : 4
-B9     : Plan extra production: shifts, seasonal staff
+B9     : Plan extra production: shifts and seasonal staff (minors: FLSA hour limits; under 16, no operating or cleaning the tempering or panning machine; check state work permits)
 C9     : Team
 A10    : 5
 B10    : Launch pre-sales on the web and social media
@@ -1403,7 +1403,7 @@ E14    : ✓
 F14    : Time
 G14    : Notes
 A15    : 1
-B15    : Make artisan bark and toffee: praline, nut brittle, truffle
+B15    : Make holiday bark, toffee and brittle: peppermint bark, chocolate-dipped English toffee, nut brittle
 C15    : Production
 A16    : 2
 B16    : Make chocolate figures: Santas, trees, ornaments
@@ -1541,7 +1541,7 @@ A8     : 3
 B8     : Design spring packaging
 C8     : Packaging
 A9     : 4
-B9     : Plan chocolate Easter basket production if applicable
+B9     : Plan filled Easter basket orders and showpiece eggs, if you offer them
 C9     : Production
 A11    : Easter production
 A12    : #
@@ -1558,7 +1558,7 @@ A14    : 2
 B14    : Make Easter figures: bunnies, chicks
 C14    : Molding
 A15    : 3
-B15    : Make decorated chocolate Easter baskets
+B15    : Make large decorated and filled eggs and chocolate centerpieces; assemble filled Easter baskets
 C15    : Production
 A16    : 4
 B16    : Make spring bonbons
@@ -1842,7 +1842,7 @@ C8     : Outside
 D8     : Shift lead
 E8     : Close
 A9     : 5
-B9     : Turn off the chocolate display cases once all the product is back in the cool room
+B9     : Turn off the chocolate display cases once all the product is back in the cool room (TCS fresh-cream items: fridge)
 C9     : Display case
 D9     : Shift lead
 E9     : Close
@@ -1862,7 +1862,7 @@ C12    : Restrooms
 D12    : Shift lead
 E12    : Close
 A13    : 9
-B13    : Final safety check: gas appliances off (if you have gas), water off, small appliances unplugged — never the cool room or the fridges
+B13    : Final safety check: gas appliances off (if you have gas), no taps left running, small appliances unplugged — never the cool room, the fridges or a melter kept on overnight
 C13    : General
 D13    : Shift lead
 E13    : Close
@@ -1872,7 +1872,7 @@ C14    : General
 D14    : Shift lead
 E14    : Close
 A15    : 11
-B15    : Turn off HVAC or set it to night mode: keep the shop below 68 °F if any chocolate stays out of the cool room
+B15    : Set HVAC to night mode — never fully off in warm weather: wrapped bars on the shelves need the shop at 68 °F or below overnight
 C15    : General
 D15    : Shift lead
 E15    : Close
@@ -2074,7 +2074,7 @@ B14    : Balance the sales by weight: lb rung up on the POS vs. what came off th
 C14    : Cashier / shift lead
 D14    : Close
 A15    : 11
-B15    : Log the deposits collected on pre-orders and the list of pre-orders awaiting pickup (not the day's sales)
+B15    : Ring pre-order deposits on the POS as deposits (not the day's sales) so the over/short stays right, and update the list of pre-orders awaiting pickup
 C15    : Cashier / shift lead
 D15    : Close
 A16    : 12
@@ -2603,7 +2603,7 @@ B2     : BONUS: Chocolate Shop Holiday Calendar & Product Planner (US)
 B4     : How to use this template:
 B5     : ▸ One month per row with the 12 campaigns and key dates of the US chocolate year.
 B6     : ▸ Plan production, packaging and marketing ahead of time.
-B7     : ▸ Adjust the dates to your area and market. UK: Mothering Sunday (March), bank holidays and Boxing Day.
+B7     : ▸ Adjust the dates to your area and market. UK: Mothering Sunday (3 weeks before Easter: March or early April), bank holidays and Boxing Day.
 B9     : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B10    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
 
@@ -2626,15 +2626,15 @@ B6     : Valentine's Day (14): hearts and limited editions · pre-order deadline
 C6     : Hearts, Premium Bonbons, Personalized Bars
 D6     : Peak
 A7     : March
-B7     : St. Patrick's Day (17) · Easter prep (date varies) · kids' spring break workshops
+B7     : St. Patrick's Day (17) · Easter prep (Easter itself falls in March some years: 2027, March 28) · kids' spring break workshops
 C7     : Eggs, Bunnies, Mint Bonbons
 D7     : High
 A8     : April
-B8     : Easter (date varies): eggs, bunnies and baskets · graduation season starts (Apr–Jun): custom boxes and figures
+B8     : Easter (date varies): eggs, bunnies and baskets · graduation and spring wedding orders open (ceremonies May–June): favors and custom boxes
 C8     : Eggs, Bunnies, Floral Bonbons
 D8     : High
 A9     : May
-B9     : Mother's Day (2nd Sunday): premium gift boxes, pre-orders closed 2 weeks out · Teacher Appreciation Week · graduation peak
+B9     : Mother's Day (2nd Sunday): premium gift boxes, pre-orders open 2–3 weeks out, order deadline a few days before · Teacher Appreciation Week · graduation peak
 C9     : Premium Bonbons, Gift Boxes, Engraved Bars
 D9     : High
 A10    : June
@@ -2654,7 +2654,7 @@ B13    : Labor Day (1st Monday) · back to routine · fall collection · local f
 C13    : Nut Bonbons, Praline, Spiced Bonbons
 D13    : Medium
 A14    : October
-B14    : Halloween (31): seasonal figures and bonbons · Sweetest Day · National Chocolate Day (28) · holiday production ramps up · publish the holiday catalog
+B14    : Sweetest Day (3rd Saturday, mainly Midwest) · National Chocolate Day (28) · Halloween (31): seasonal figures and bonbons · holiday production ramps up · publish the holiday catalog
 C14    : Halloween Figures, Pumpkin Spice Bonbons, Dark Bars
 D14    : Medium
 A15    : November

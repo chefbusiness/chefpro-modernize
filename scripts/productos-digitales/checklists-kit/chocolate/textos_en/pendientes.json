@@ -2,21 +2,21 @@
  "meta": {
   "kit": "chocolate",
   "producto": "Chocolate Shop Checklists Kit Pro",
-  "n_pendientes": 433,
-  "n_palabras": 4278,
+  "n_pendientes": 434,
+  "n_palabras": 4374,
   "motivos": {
    "nueva": 427,
-   "corregida": 2,
+   "corregida": 3,
    "adaptar": 2,
    "contexto": 2
   },
-  "n_heredadas": 105,
+  "n_heredadas": 104,
   "heredadas_por_via": {
-   "exacta": 102,
+   "exacta": 101,
    "sufijo": 3
   },
   "heredadas_por_fuente": {
-   "icecream": 101,
+   "icecream": 100,
    "cafe": 2,
    "catering": 2
   },
@@ -211,14 +211,15 @@
   },
   {
    "id": "c0033",
-   "es": "Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto: comunicarlo al encargado y reasignar tarea",
+   "es": "Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto ni entra en obrador ni mostrador: comunicarlo al encargado",
    "grupo": "G1",
-   "palabras": 18,
+   "palabras": 21,
    "donde": [
     "01 · Apertura · B10"
    ],
    "pistas": [
     "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "obrador → kitchen (chocolate kitchen / production kitchen)",
     "encargado → shift lead"
    ],
    "adaptar": "FDA Food Code 2-201.11: el responsable (person in charge) comprueba que nadie tiene vómitos, diarrea, ictericia, dolor de garganta con fiebre o una herida infectada; quien los tenga no manipula alimentos",
@@ -373,20 +374,35 @@
    "motivo": "nueva"
   },
   {
-   "id": "c0051",
-   "es": "Montar vitrina: bombones, tabletas, figuras, trufas",
+   "id": "c0050",
+   "es": "Montaje de servicio",
    "grupo": "G1",
-   "palabras": 6,
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura · A23"
+   ],
+   "motivo": "corregida: una tienda monta la tienda y la vitrina, no «service»",
+   "base_en": "Service setup",
+   "base_fuente": "icecream"
+  },
+  {
+   "id": "c0051",
+   "es": "Montar vitrina: bombones, tabletas, figuras, trufas; los de ganache de nata fresca y las trufas de nata, solo en vitrina refrigerada a 0-4 °C",
+   "grupo": "G1",
+   "palabras": 25,
    "donde": [
     "01 · Apertura · B25"
    ],
    "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
     "trufa → truffle; rocas → clusters",
     "tableta → bar (chocolate bar)",
     "figuras → molded figures (huecas → hollow figures)",
+    "ganache → ganache; rellenos → fillings",
     "vitrina → display case; escaparate → store window"
    ],
+   "adaptar": "la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
    "motivo": "nueva"
   },
   {
@@ -558,15 +574,21 @@
   },
   {
    "id": "c0074",
-   "es": "Retirar productos de vitrina y guardar en conservación",
+   "es": "Retirar productos de vitrina y guardar en conservación; la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C",
    "grupo": "G1",
-   "palabras": 8,
+   "palabras": 25,
    "donde": [
     "01 · Cierre · B6"
    ],
    "pistas": [
-    "vitrina → display case; escaparate → store window"
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "trufa → truffle; rocas → clusters",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
    ],
+   "adaptar": "Conservación → cool room; la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
    "motivo": "nueva"
   },
   {
@@ -1526,11 +1548,14 @@
   },
   {
    "id": "c0154",
-   "es": "Envolver en papel/aluminio y etiquetar con lote y fecha",
+   "es": "Envolver en papel/aluminio y etiquetar: denominación, ingredientes con los alérgenos destacados, peso neto, lote y fecha de consumo preferente",
    "grupo": "G1",
-   "palabras": 10,
+   "palabras": 20,
    "donde": [
     "02 · Moldeado · B25"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
    ],
    "adaptar": "Papel de aluminio → foil; Etiqueta US de lo que se envasa en la tienda (tabletas, cajas cerradas, bolsas): nombre del producto, ingredientes por peso, contenido neto (oz y g), alérgenos principales y nombre y lugar del negocio (FDA Food Code 3-602.11); el lote y la fecha de consumo preferente (best-by) son criterio del kit: en EE. UU. la fecha es voluntaria salvo en la fórmula infantil",
    "motivo": "nueva"
@@ -1570,11 +1595,14 @@
   },
   {
    "id": "c0159",
-   "es": "Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja)",
+   "es": "Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja); la ganache de nata fresca, con fecha de caducidad (art. 24 del Reglamento UE 1169/2011)",
    "grupo": "G1",
-   "palabras": 19,
+   "palabras": 35,
    "donde": [
     "02 · Moldeado · B31"
+   ],
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
    ],
    "adaptar": "fechas US: lo TCS (ganache de nata fresca, rellenos con actividad de agua alta) lleva date marking de 7 días a 41 °F como máximo, contando el día de elaboración como día 1 (FDA Food Code 3-501.17); el resto, consumo preferente (best-by, criterio del kit)",
    "motivo": "nueva"
@@ -1597,14 +1625,17 @@
   },
   {
    "id": "c0161",
-   "es": "Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe) — anota la lectura: ____ °C",
+   "es": "Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe); la ganache de nata fresca, en cámara a 0-4 °C — anota la lectura: ____ °C",
    "grupo": "G1",
-   "palabras": 29,
+   "palabras": 40,
    "donde": [
     "02 · Moldeado · B33"
    ],
    "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "ganache → ganache; rellenos → fillings",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
    ],
    "adaptar": "Producto terminado a 59–64 °F y 50–60 % de humedad, a oscuras y lejos de olores; coletilla «— log reading: ____ °F»",
    "motivo": "nueva"
@@ -3162,15 +3193,21 @@
   },
   {
    "id": "c0325",
-   "es": "Retirar productos de vitrina para conservación",
+   "es": "Retirar productos de vitrina para conservación (la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C)",
    "grupo": "G1",
-   "palabras": 6,
+   "palabras": 23,
    "donde": [
     "04 · Dependiente · B29"
    ],
    "pistas": [
-    "vitrina → display case; escaparate → store window"
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "trufa → truffle; rocas → clusters",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
    ],
+   "adaptar": "Conservación → cool room; la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
    "motivo": "nueva"
   },
   {

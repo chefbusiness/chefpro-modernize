@@ -1,15 +1,15 @@
 {
  "meta": {
-  "generado": "2026-10-24T10:10:38Z",
+  "generado": "2026-10-24T10:58:38Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-chocolateria",
-  "commit": "67cc4a42",
+  "commit": "f2307f25",
   "nota": "Censo del Kit de Tareas Recurrentes v2.0 PUBLICADO (11 xlsx). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. patrones_formula = fórmulas con las filas normalizadas a {r} (mapas.patron); «cifras» = el patrón compara con un número. tareas = filas con número en A y texto en B. dependencias = lo que depende de España (F1-inventario §1)."
  },
  "libros": {
   "01-apertura-cierre.xlsx": {
    "corto": "01",
-   "sha256": "f340ceb3d20b4db8c0f8910c81e9d465751ca4e33c277862382326aea7b55949",
+   "sha256": "bac09d69684f0b6f395bd627f35fe2b43d96411d1779df96cb950319c8bc8c6c",
    "nombre_en": "01-chocolate-shop-opening-closing-checklists.xlsx",
    "titulo_en": "Chocolate Shop Opening & Closing Checklists: Kitchen, Display Case & Counter",
    "hojas": [
@@ -301,7 +301,8 @@
       "B16",
       "B17",
       "B19",
-      "B20"
+      "B20",
+      "B25"
      ],
      "textos_moneda": [],
      "verdes": 50,
@@ -414,7 +415,7 @@
       "C8": "Obrador",
       "B9": "Heridas y cortes cubiertos con apósito impermeable de color visible y guante encima",
       "C9": "Obrador",
-      "B10": "Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto: comunicarlo al encargado y reasignar tarea",
+      "B10": "Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto ni entra en obrador ni mostrador: comunicarlo al encargado",
       "C10": "Obrador",
       "B11": "Encender la extracción del obrador ANTES que ningún otro equipo",
       "C11": "Obrador",
@@ -450,7 +451,7 @@
       "E24": "✓",
       "F24": "Hora",
       "G24": "Notas",
-      "B25": "Montar vitrina: bombones, tabletas, figuras, trufas",
+      "B25": "Montar vitrina: bombones, tabletas, figuras, trufas; los de ganache de nata fresca y las trufas de nata, solo en vitrina refrigerada a 0-4 °C",
       "C25": "Vitrina",
       "B26": "Verificar el etiquetado de cada producto expuesto: denominación, precio (y precio por kilo si se vende al peso) y los alérgenos declarados —leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos— más las trazas",
       "C26": "Vitrina",
@@ -626,6 +627,7 @@
      "formatos": {},
      "formatos_euro": [],
      "textos_celsius": [
+      "B6",
       "B17"
      ],
      "textos_moneda": [],
@@ -730,7 +732,7 @@
       "E5": "✓",
       "F5": "Hora",
       "G5": "Notas",
-      "B6": "Retirar productos de vitrina y guardar en conservación",
+      "B6": "Retirar productos de vitrina y guardar en conservación; la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C",
       "C6": "Vitrina",
       "B7": "Cubrir bombones que queden expuestos con film",
       "C7": "Vitrina",
@@ -816,7 +818,7 @@
     "horas": 0,
     "numeros_ejemplo": 41,
     "formatos_euro": 0,
-    "textos_celsius": 8,
+    "textos_celsius": 10,
     "textos_moneda": 0,
     "horas_24h": 0,
     "verdes": 83,
@@ -839,7 +841,7 @@
   },
   "02-partidas-produccion.xlsx": {
    "corto": "02",
-   "sha256": "df7579389da3874d8244ecaaa5dbd8a3f7bda44357a78d2b7f5e913b4223c52a",
+   "sha256": "96206399528fadb7d11f297b393fed7c4155e7926bbfdd4161bd86f827bd255d",
    "nombre_en": "02-chocolate-tempering-molding-checklists.xlsx",
    "titulo_en": "Chocolate Tempering & Molding Checklists: Dark, Milk & White, Bonbons & Bars",
    "hojas": [
@@ -1613,7 +1615,7 @@
       "C23": "Conservación",
       "B24": "Desmoldar, verificar acabado y pesar cada tableta",
       "C24": "Moldeado",
-      "B25": "Envolver en papel/aluminio y etiquetar con lote y fecha",
+      "B25": "Envolver en papel/aluminio y etiquetar: denominación, ingredientes con los alérgenos destacados, peso neto, lote y fecha de consumo preferente",
       "C25": "Envasado",
       "A27": "Control de calidad y registro",
       "A28": "#",
@@ -1627,11 +1629,11 @@
       "C29": "Obrador",
       "B30": "Registrar lotes de producción: producto, cantidad, fecha",
       "C30": "Admin",
-      "B31": "Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja)",
+      "B31": "Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja); la ganache de nata fresca, con fecha de caducidad (art. 24 del Reglamento UE 1169/2011)",
       "C31": "Admin",
       "B32": "Anotar las mermas del día: producto, cantidad y motivo (rotura, mal templado, bloom, prueba). El chocolate sin relleno y sin contaminar se puede refundir; el que lleva ganache o fruta, a residuo",
       "C32": "Admin",
-      "B33": "Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe) — anota la lectura: ____ °C",
+      "B33": "Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe); la ganache de nata fresca, en cámara a 0-4 °C — anota la lectura: ____ °C",
       "C33": "Conservación",
       "B34": "Tareas completadas:",
       "D34": "de",
@@ -2791,7 +2793,7 @@
   },
   "04-tareas-perfiles.xlsx": {
    "corto": "04",
-   "sha256": "227908ce4c243c992ad4a691c89c89ac4a12800321169a39c22e5edccae555d2",
+   "sha256": "4012fc13b8beb8d2e2eb95d540db53ac354c9c1fe460291e9025d9386f759be4",
    "nombre_en": "04-chocolate-shop-duties-by-role.xlsx",
    "titulo_en": "Chocolate Shop Duties by Role: Chocolatier, Sales Associate & Shift Lead",
    "hojas": [
@@ -3325,7 +3327,8 @@
      "formatos": {},
      "formatos_euro": [],
      "textos_celsius": [
-      "B24"
+      "B24",
+      "B29"
      ],
      "textos_moneda": [],
      "verdes": 32,
@@ -3482,7 +3485,7 @@
       "G27": "Notas",
       "B28": "Cuadrar caja y registrar ventas",
       "C28": "Caja",
-      "B29": "Retirar productos de vitrina para conservación",
+      "B29": "Retirar productos de vitrina para conservación (la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C)",
       "C29": "Vitrina",
       "B30": "Limpiar mostradores, cristales y suelo de tienda",
       "C30": "Limpieza",
@@ -3792,7 +3795,7 @@
     "horas": 0,
     "numeros_ejemplo": 44,
     "formatos_euro": 0,
-    "textos_celsius": 1,
+    "textos_celsius": 2,
     "textos_moneda": 0,
     "horas_24h": 0,
     "verdes": 90,
@@ -10761,7 +10764,7 @@
   "horas": 0,
   "numeros_ejemplo": 574,
   "formatos_euro": 282,
-  "textos_celsius": 36,
+  "textos_celsius": 39,
   "textos_moneda": 20,
   "horas_24h": 30,
   "verdes": 1471,
@@ -10787,8 +10790,8 @@
   "celsius": {
    "etiqueta": "Temperaturas en °C",
    "destino": "D10: °F + FDA Food Code (ADAPTAR o POR_CELDA)",
-   "apariciones": 36,
-   "cadenas": 36,
+   "apariciones": 39,
+   "cadenas": 39,
    "donde": [
     "01:Instrucciones!B16",
     "01:Instrucciones!B17",
@@ -10797,6 +10800,8 @@
     "01:Apertura!B17",
     "01:Apertura!B19",
     "01:Apertura!B20",
+    "01:Apertura!B25",
+    "01:Cierre!B6",
     "01:Cierre!B17",
     "02:Instrucciones!B15",
     "02:Templado!B9",
@@ -10820,6 +10825,7 @@
     "02:Moldeado!D41",
     "02:Moldeado!D48",
     "04:Dependiente!B24",
+    "04:Dependiente!B29",
     "05:Semanal!B32",
     "06:San Valentín!B23",
     "08:Apertura del Negocio!B20",
@@ -11396,10 +11402,11 @@
   "alergenos": {
    "etiqueta": "Alérgenos (UE 14)",
    "destino": "D10: 9 alérgenos US; nota UK 14",
-   "apariciones": 9,
-   "cadenas": 9,
+   "apariciones": 10,
+   "cadenas": 10,
    "donde": [
     "01:Apertura!B26",
+    "02:Moldeado!B25",
     "04:Dependiente!B7",
     "04:Dependiente!B16",
     "05:Mensual!B25",
@@ -11503,8 +11510,8 @@
   "temperaturas_choco": {
    "etiqueta": "Temperaturas del chocolate (obrador, conservación, vitrina, templado, enfriado)",
    "destino": "D-CHOC: °F de REGLAS_US (choco_temps, templado)",
-   "apariciones": 36,
-   "cadenas": 36,
+   "apariciones": 39,
+   "cadenas": 39,
    "donde": [
     "01:Instrucciones!B16",
     "01:Instrucciones!B17",
@@ -11513,6 +11520,8 @@
     "01:Apertura!B17",
     "01:Apertura!B19",
     "01:Apertura!B20",
+    "01:Apertura!B25",
+    "01:Cierre!B6",
     "01:Cierre!B17",
     "02:Instrucciones!B15",
     "02:Templado!B9",
@@ -11536,6 +11545,7 @@
     "02:Moldeado!D41",
     "02:Moldeado!D48",
     "04:Dependiente!B24",
+    "04:Dependiente!B29",
     "05:Semanal!B32",
     "06:San Valentín!B23",
     "08:Apertura del Negocio!B20",
@@ -11547,10 +11557,11 @@
   "alergenos_vitrina": {
    "etiqueta": "Alérgenos en la vitrina y en lo envasado",
    "destino": "D-CHOC: los 9 de EE. UU.; 3-602.12(C) en la vitrina; 3-602.11 en lo envasado",
-   "apariciones": 9,
-   "cadenas": 9,
+   "apariciones": 10,
+   "cadenas": 10,
    "donde": [
     "01:Apertura!B26",
+    "02:Moldeado!B25",
     "04:Dependiente!B7",
     "04:Dependiente!B16",
     "05:Mensual!B25",

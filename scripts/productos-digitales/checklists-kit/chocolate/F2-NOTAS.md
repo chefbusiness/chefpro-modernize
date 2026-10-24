@@ -169,3 +169,93 @@ En «Instructions» B7 va la nota UK (Mothering Sunday, bank holidays, Boxing Da
 - **05 «Quarterly & Annual»**: aw de laboratorio, bombo (panning machine), báscula legal-for-trade, candy en el sales
   tax, NFPA 96 solo con grasa, EPA 608.
 - **Código común**: no se toca nada de la F2. `censo-entregables.py` solo añade el slug a `PRODUCTOS_LETTER`.
+
+## Ronda 1 de la revisión adversarial (`revision/REVISION-F2.md`: 1 BLOQUEANTE · 3 MAYOR · 21 menores · 3 ERRATAS ES · 8 dudas)
+
+Aplicados el BLOQUEANTE, los 3 MAYOR, los 21 menores (salvo lo que dice la tabla) y la duda 3. Todo va por texto en
+celdas existentes, sin filas nuevas:
+- 43 cadenas de G1, incluida c0050, que sale de la memoria por `NO_HEREDAR`;
+- 10 `POR_CELDA`: 02 D41, C10, C14 y C23; 05 B8, F8 y B9; 08 «Shop Closing» filas 9, 13 y 15;
+- 3 `ADAPTAR`, por el °C nuevo del ES;
+- `REGLAS_US`:
+  - `tcs_ganache`: aw y pH; sin análisis, nunca en la vitrina de 60–64 °F ni en la cool room;
+  - `enfermos`: §2-201.12;
+  - `licor`: 0,5 %, FD&C Act §402(d), 21 U.S.C. 342(d) y NY AML §200;
+  - `menores`: 29 CFR 570.35, 570.34 y 570.33(e).
+
+`GRADOS_F_SPEC` no cambia.
+
+**Construcción.** Se hizo en un worktree aparte del VPS (`/root/wt-choco-r1`, `--detach` sobre la rama), porque la
+pastelería tenía sin commitear `aplicar_en.py` y `gates_en.py` en `/root/wt-chocopastry`. Comprobado: con ese código
+suyo, el dry-run del chocolate da el mismo volcado que el publicado (0 diferencias en 2.669 líneas). Lo suyo no lo he
+tocado.
+
+**ES LIVE parcheado** (`kit-tareas-chocolateria`, sin cambio de versión). El parche es de XML de celda `inlineStr`, con
+el `patch_es.py` de la heladería: estilos, DV, CF y caché quedan byte a byte. Cambian **7 celdas**:
+- 01 «Apertura» B10 y B25;
+- 01 «Cierre» B6;
+- 02 «Moldeado» B25, B31 y B33;
+- 04 «Dependiente» B29.
+
+Detalle en `SPEC.md` §5. Los otros 8 libros conservan el sha256. El volcado ES de antes y de después difiere solo en
+esas 7 líneas. Los mismos textos van en `scripts/generate-tareas-chocolateria.py` (B25, B6, 02 B25 y 04 B29) y en
+`kit-tareas-v2_0/contenido_kit_tareas_chocolateria.py` (B10, B31 y B33).
+
+**Regeneración** (`extraer_textos` → `mapas_chocolate` → `heredar`):
+- los mismos 753 ids; cambian los textos ES de c0033, c0051, c0074, c0154, c0159, c0161 y c0325;
+- 104 heredadas y 434 pendientes (+c0050), igual a G1;
+- 0 errores en `mapas_chocolate`;
+- 39 celdas ES con °C.
+
+| Id | Dónde (EN) | Arreglo |
+|---|---|---|
+| B1 | 02 D41 · D44 · B12 · B33 · 01 «Instructions» B16 · 01 «Opening» B25 · 01 «Closing» B6 · 04 «Sales Associate» B29 · 08 «Shop Closing» B9 | POR_CELDA D41 (TCS hasta un análisis de aw y pH; sin él, ni la vitrina de 60–64 °F ni la cool room, sino vitrina refrigerada o fridge) · G1 c0182, c0143, c0161, c0015, c0051, c0074, c0325 · 08 fila 9 «(TCS fresh-cream items: fridge)». B31 y 03 «Weekly» B14 ya decían 7 días a 41 °F. Sin TPHC (3-501.19 pediría 70 °F) |
+| M1 | 02 B21 · 04 «Chocolatier» B24 · 01 B29 · 04 B8 · 04 B15 | G1 c0150 (los de frutos secos y cacahuete al final, y limpieza antes de las tabletas lisas) · c0303 (temperadora antes de pasar de leche a negro o blanco) · c0056 y c0311 (unas pinzas por bandeja) · c0316 (petición de alérgicos) |
+| M2 | 01 «Opening» B10 | G1 c0033: exclusión con vómitos, diarrea o ictericia; el PIC avisa a la autoridad; reasignar solo con garganta con fiebre o herida sin cubrir (2-201.11, 2-201.12) · ES LIVE B10 |
+| M3 | 06 «Holiday Season» B15 | G1 c0442 (peppermint bark, English toffee, nut brittle) |
+| m1 | 02 A13 · A21 · A28 · 01 B15 | G1 c0119, c0125, c0130 («typical curve; your couverture's chart rules») · c0037 («per the manufacturer (typically 113 °F)») |
+| m2 | 02 B7 | G1 c0114 (30–40 %) |
+| m3 | 02 B6 · B19 · B10 · B23 · C10 · C14 · C23 | G1 c0137, c0148 (algo más templados que la sala, 68–72 °F) · c0141, c0152 (cooling cabinet o fridge a 54–57 °F) · POR_CELDA C10, C14 y C23 = «Fridge» |
+| m4 | 01 «Instructions» B17 · 01 B20 · 08 «Shop Closing» B15 | G1 c0016 («softens and bloom risk climbs»), c0046 · POR_CELDA 08 fila 15 (night mode, nunca apagado) |
+| m5 | 02 B12 | G1 c0143 (dejar que el relleno cristalice antes de tapar) |
+| m6 | 01 B19 | G1 c0045 («has reached», se enciende al llegar) |
+| m7 | 02 D45 | G1 c0185 (0,5 %, estados que lo permiten, también para los envíos; 21+) · `REGLAS_US['licor']` |
+| m8 | 02 D41 · D42 · 05 «Quarterly & Annual» B8 / F8 | aw y pH · POR_CELDA B8 (antes de la venta y al cambiar la receta) y F8 «Per new recipe» |
+| m9 | 06 «Holiday Season» B9 | G1 c0438 (FLSA; menores de 16, sin temperadora ni bombo) · `REGLAS_US['menores']` |
+| m10 | 06 «Easter» B9 · B15 | G1 c0473, c0477 |
+| m11 | 01 «Opening» A23 | `NO_HEREDAR` + G1 c0050 «Shop and display setup» |
+| m12 | 06 «Instructions» B6 | G1 c0426 (Mother's Day → calendario BONUS 02) |
+| m13 | 05 «Quarterly & Annual» B9 | POR_CELDA B9 (food handler cards donde lo pida el estado o el condado) |
+| m14 | 05 «Instructions» B14 · 05 B14 | G1 c0352, c0409 (bombo «if you have one»; auger solo en las continuas) |
+| m15 | 05 «Weekly» B34 | G1 c0378 (state or local) |
+| m16 | 01 «Closing» B25 · 08 B13 | G1 c0093 · POR_CELDA 08 fila 13 («no taps left running») |
+| m17 | B02 marzo · abril | G1 c0723 (Pascua de 2027, 28 de marzo), c0726 (abren los encargos de graduaciones y bodas) |
+| m18 | B02 mayo | G1 c0729 (encargos desde 2-3 semanas antes; fecha límite unos días antes) |
+| m19 | B02 «Instructions» B7 | G1 c0708 (Mothering Sunday, 3 semanas antes de Pascua) |
+| m20 | B02 octubre | G1 c0745 (Sweetest Day el 3.er sábado, Midwest; orden cronológico) |
+| m21 | 08 B13 | POR_CELDA 08 fila 13 (no desenchufar un melter que se queda encendido) |
+| Duda 3 | 09 «Cash Drawer Closing» B15 | G1 c0620 (las señales, en el POS como depósito, para que el over/short cuadre) |
+| ERRATAS ES 1-3 | ES LIVE | las 7 celdas de arriba |
+
+**No aplicado:**
+- B1: TPHC (3-501.19), que pediría 70 °F en `GRADOS_F_SPEC`;
+- M1: la cita de formación 2-103.11(O), porque no hay tarea donde ponerla;
+- m21: el 01 «Closing» B14 («Clean and dry the tempering machine»), que no cambia;
+- dudas 1 (la cubre m1) y 2, 4, 5, 6, 7, 8;
+- en el ES, m2, m3 y m5 y el 04 «Chocolatero» B12: no son de seguridad y quedan anotados en `SPEC.md` §5 para la v2.x.
+
+| Paso | Resultado |
+|---|---|
+| Montaje | 11 xlsx · idempotencia 0 diferencias · `inject_cache` 139/139 · 0 desbordes · 0 rellenos |
+| Gates | **VERDE 8/0**. G1 igual (37 hojas, 139 fórmulas, 26 DV, 26 CF, 195 merges, 831 desbloqueadas) · G3 43 ajustes · 55 altos · G4 790 glosario · 187 regenerar · 601 traducir · G7 99 °F y 27 citas normativas (49 permitidas) · 39 celdas ES con °C · 1 `CELSIUS_SIN_F` |
+| Autotest | **19/19 CAZADOS** |
+| Celdas cortadas | **0 nuevas** en 1.759 · queda «Denomination» (09) · 65 del ES arregladas |
+| censo-entregables · no-latinos | EN: 0 · 0. ES (`kit-tareas-chocolateria`): 0 · 0 |
+| Copia al Mac | sha256 32/32 iguales VPS ↔ Mac (11 EN, 11 ES, volcados, textos, mapas y generadores) |
+| Volcados | `dump_en.txt` y `dump_es.txt` regenerados, 2.669 líneas cada uno; el ES cambia en 7 líneas |
+| Landing | Tareas y hojas, igual (338 en 37). Cambia: la ganache de nata fresca va a una vitrina refrigerada a 41 °F salvo análisis de aw y pH; hay tareas de contacto cruzado de alérgenos; los enfermos se excluyen; en el calendario, Pascua de 2027 el 28 de marzo, encargos de graduaciones y bodas en abril, Mother's Day con encargos desde 2-3 semanas antes, y Sweetest Day el 3.er sábado de octubre |
+
+**Medición (punto 5 del orquestador, sin arreglar).** La errata de «reasignar tarea» con diarrea o vómitos en el 01
+solo aparece en 1 de los 20 kits ES LIVE de `dl/kit-tareas*`: `kit-tareas-chocolateria/01-apertura-cierre.xlsx`,
+«Apertura» B10. Los otros 19 no tienen ninguna línea de síntomas en su 01 (búsqueda de «diarr», «mitos», «reasign» y
+«enferm» en el XML de las hojas y en sharedStrings).
