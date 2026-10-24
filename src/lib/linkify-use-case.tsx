@@ -58,6 +58,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Bar Business Plan Kit': '/en/digital-products/bar-business-plan',
   'Catering Business Plan Kit': '/en/digital-products/catering-business-plan',
   'Mobile Bar Business Plan Kit': '/en/digital-products/mobile-bar-business-plan',
+  'BBQ Catering Business Plan Kit': '/en/digital-products/bbq-catering-business-plan',
   'Food Cost + Menu Engineering Guide': '/en/digital-products/food-cost-menu-engineering-guide',
   'How to Open a Pastry Shop': '/en/digital-products/how-to-open-a-pastry-shop',
   'Restaurant Checklists Kit Pro': '/en/digital-products/restaurant-checklist-templates',

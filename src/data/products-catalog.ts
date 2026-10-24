@@ -546,11 +546,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-parrillero-asador-eventos',
     url: '/plan-negocio-parrillero-asador-eventos',
     price: '€45',
-    name: { es: 'Plan de Negocio: Parrillero para Eventos', en: 'Business Plan: Grill Catering' },
+    name: { es: 'Plan de Negocio: Parrillero para Eventos', en: 'BBQ Catering Business Plan Kit' },
     description: {
       es: 'Asador y parrilla para eventos, con 11 entregables.',
-      en: 'Grill and barbecue catering for events, with 11 deliverables.',
+      en: 'Word business plan, Excel financial projections, pricing calculator and startup checklist.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `bbq-catering-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/bbq-catering-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-cocteleria-eventos': {
     id: 'plan-negocio-cocteleria-eventos',

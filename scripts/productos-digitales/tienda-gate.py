@@ -73,7 +73,9 @@ ROBOTS_GATE = REPO / 'scripts/astro-migration/robots-gate.py'
 PROD = 'https://aichef.pro'
 KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gestion-personal', '/kit-plan-financiero']
 # PlanNegocioLandingPage recibe `lang` desde el 4-oct-2026 (planes de negocio EN): sus 10 landings ES
-# tienen que seguir byte a byte iguales, igual que las de KitExcel.
+# tienen que seguir byte a byte iguales, igual que las de KitExcel. Las que estrenan gemelo EN cambian SOLO en el <head>
+# (hreflang es + en + x-default) y van en --esperadas en el PR que lo estrena: la última,
+# /plan-negocio-parrillero-asador-eventos (gemelo EN: BBQ Catering Business Plan Kit, 24-oct-2026).
 PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
              '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
              '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',
@@ -399,7 +401,11 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # («Laura Fernández», «Ana Belén Torres», «Isabel García» y «Fernando López» ya van arriba), y el nombre de esa
            # edición española en su subtítulo.
            'Pastelería La Miga de Oro', 'Dulce Tradición Obrador', 'Carlos Martín',
-           'Pastelería Familiar El Rincón Dulce', 'Raquel Sánchez', 'Kit de Tareas Recurrentes: Pastelería / Obrador']
+           'Pastelería Familiar El Rincón Dulce', 'Raquel Sánchez', 'Kit de Tareas Recurrentes: Pastelería / Obrador',
+           # Ídem, BBQ Catering Business Plan Kit (24-oct): testimonios del Plan Parrillero y Asador para Eventos traducidos
+           # («Federico Aguirre» y «Sandra Vera» no llevan tilde) y el topónimo «Costa del Sol» (su « del » es nombre propio).
+           'Mariano Rodríguez', 'Lucía Sanz', 'Tomás García', 'Diego López', 'Andrés Camacho', 'Marcos Pérez',
+           'Costa del Sol']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.
