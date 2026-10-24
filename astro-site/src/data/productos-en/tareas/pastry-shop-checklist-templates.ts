@@ -60,7 +60,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Pastry Shop Checklists Kit Pro',
     productDescription:
-      '13 templates + 3 bonuses (16 files) for pastry shops and bakeries: 9 Excel checklists with 413 tasks already written (doughs and fermentation, creams and fillings, decorating, the bakery case, manager, roles, cleaning, holidays and celebration cakes, whole-shop opening and closing, cash drawer) and 4 logs ready to fill in: production schedule and waste log, cake order form and order log, bakery allergen chart (9 major allergens, UK 14) and food temperature and receiving logs.',
+      '13 templates + 3 bonuses (16 files) for pastry shops and bakeries: 413 tasks already written in 9 Excel checklists and the pre-shift huddle (doughs and fermentation, creams and fillings, decorating, the bakery case, manager, roles, cleaning, holidays and celebration cakes, whole-shop opening and closing, cash drawer) and 4 logs ready to fill in: production schedule and waste log, cake order form and order log, bakery allergen chart (9 major allergens, UK 14) and food temperature and receiving logs.',
     price: '19.00',
     priceValidUntil: '2026-12-31',
     // FAQPage schema: versiones CORTAS de las FAQ on-page (mismo patrón que el ES y los hermanos EN).
@@ -131,7 +131,7 @@ const data: KitTareasData = {
       'Kitchen opening and closing: ovens, mixers, the retarder-proofer, walk-ins and the bakery case',
       'Production stations: doughs and fermentation, creams and fillings, decorating',
       'Roles: head pastry chef, pastry cook, pastry assistant and counter associate',
-      "Holidays and events: holiday season, Three Kings Day, Valentine's Day, Easter, celebration cakes and Thanksgiving pies",
+      "Holidays and events: the holiday season with Three Kings Day, Valentine's Day, Easter, celebration cakes and Thanksgiving pies",
       'Blank templates + a pre-shift meeting template',
       'Production schedule with a waste log, cake order form, bakery allergen chart (9 major allergens, UK 14) and food temperature log',
     ],
@@ -155,7 +155,7 @@ const data: KitTareasData = {
       {
         icon: 'Croissant',
         title: 'Pastry Kitchen Production Checklists: Doughs, Creams & Fillings, Decorating',
-        desc: 'Doughs and fermentation (croissant, brioche and danish with the dough at 72–75 °F, lamination, proofing at no more than 82 °F and two bakes a day; artisan bread baked with steam; sweet and savory tart bases), creams and fillings (pastry cream cooled from 135 to 70 °F in 2 hours and to 41 °F in 4 more, buttercream, ganache, curds, mousses made with cooked meringue or pasteurized whites, entremets, mirror glaze and caramel) and decorating and finishing (glazing, custom cakes from their order form, and the bakery case stocked and restocked every 2 hours), with a Target / Spec column for the key parameters.',
+        desc: 'Doughs and fermentation (croissant dough checked at 72–75 °F, laminated, proofed at no more than 82 °F and baked twice a day; artisan bread baked with steam; sweet and savory tart bases), creams and fillings (pastry cream cooled from 135 to 70 °F in 2 hours and to 41 °F in 4 more, buttercream, ganache, curds, mousses made with cooked meringue or pasteurized whites, entremets, mirror glaze and caramel) and decorating and finishing (glazing, custom cakes from their order form, and the bakery case stocked and restocked every 2 hours), with a Target / Spec column for the key parameters.',
       },
       {
         icon: 'ClipboardList',
@@ -175,7 +175,7 @@ const data: KitTareasData = {
       {
         icon: 'PartyPopper',
         title: "Pastry Shop Holiday & Event Checklists: Holidays, Valentine's, Easter, Mother's Day, Celebration Cakes & Thanksgiving",
-        desc: "The holiday season (cookie tins, Yule logs, stollen and panettone, pickup slots for Dec 22–24 and New Year's Eve) with Three Kings Day (rosca de Reyes and King cake, the baby figurine packed separately), Valentine's Day, Easter (hot cross buns, Easter breads, carrot cake, chocolate eggs), Mother's & Father's Day, celebration cakes for First Communions, graduations and showers (consultation, written quote, tasting, deposit, tiered cake assembly and delivery) and Thanksgiving pies, with cream pies held at 41 °F. Each campaign closes with its wrap-up.",
+        desc: "The holiday season (cookie tins, Yule logs, stollen and panettone, pickup slots for Dec 22–24 and New Year's Eve) with Three Kings Day (Three Kings bread or rosca de Reyes and King cake, the baby figurine packed separately), Valentine's Day, Easter (hot cross buns, Easter breads, carrot cake, chocolate eggs), Mother's & Father's Day, celebration cakes for First Communions, graduations and showers (consultation, written quote, tasting, deposit, tiered cake assembly and delivery) and Thanksgiving pies, with cream pies held at 41 °F. Each campaign closes with its wrap-up.",
       },
       {
         icon: 'FileEdit',
@@ -273,7 +273,7 @@ const data: KitTareasData = {
         icon: 'Calendar',
         label: 'BONUS 2',
         title: 'Pastry Shop Holiday & Events Calendar (US)',
-        desc: "17 key dates for a US pastry shop (Three Kings Day and King cake, Valentine's Day, Pi Day, Easter, Mother's Day, Thanksgiving pies, Christmas, wedding season) with the special production and the lead time for each.",
+        desc: "17 key dates and occasions for a US pastry shop (Three Kings Day and King cake, Valentine's Day, Pi Day, Easter, Mother's Day, Thanksgiving pies, Christmas, wedding season) with the special production and the lead time for each.",
         image: '/lovable-uploads/ai-gallery/guia-pasteleria-1.jpg',
       },
       {
@@ -339,7 +339,7 @@ const data: KitTareasData = {
     },
     {
       q: 'Does it include holidays and celebration cakes?',
-      a: "Yes, with US dates. The holiday season checklist runs from November to January: cookie tins and trays, Yule logs, stollen and panettone, gift boxes, pickup slots for December 22–24, New Year's Eve orders and Three Kings Day (rosca de Reyes and King cake, with the baby figurine packed separately because it is a choking hazard). Seasonal hires come with the federal rules for minors: no one under 18 runs or cleans dough mixers, sheeters or dividers (benchtop mixers of 5 quarts or less excepted), and 14- and 15-year-olds don't bake. Valentine's Day, Easter (hot cross buns, Easter breads, carrot cake, chocolate eggs) and Mother's & Father's Day have their own checklists, as do celebration cakes for First Communions, graduations and showers (consultation, written quote, tasting, deposit, tiered cake assembly and delivery with cream-filled items at 41 °F) and Thanksgiving pies (pre-orders, pickup slots on the Wednesday before, cream pies held at 41 °F). Each campaign ends with a wrap-up of what sold and what was wasted, and the bonus calendar adds 17 key dates.",
+      a: "Yes, with US dates. The holiday season checklist runs from November to January: cookie tins and trays, Yule logs, stollen and panettone, gift boxes, pickup slots for December 22–24, New Year's Eve orders and Three Kings Day (Three Kings bread or rosca de Reyes and King cake, with the baby figurine packed separately because it is a choking hazard). Seasonal hires come with the federal rules for minors: no one under 18 runs or cleans dough mixers, sheeters or dividers (benchtop mixers of 5 quarts or less excepted), and 14- and 15-year-olds don't bake. Valentine's Day, Easter (hot cross buns, Easter breads, carrot cake, chocolate eggs) and Mother's & Father's Day have their own checklists, as do celebration cakes for First Communions, graduations and showers (consultation, written quote, tasting, deposit, tiered cake assembly and delivery with cream-filled items at 41 °F) and Thanksgiving pies (pre-orders, pickup slots on the Wednesday before, cream pies held at 41 °F). Each campaign ends with a wrap-up of what sold and what was wasted, and the bonus calendar adds 17 key dates and occasions.",
     },
     {
       q: 'What should a bakery cleaning schedule include?',
@@ -347,7 +347,7 @@ const data: KitTareasData = {
     },
     {
       q: 'Is there a free bakery checklist template in Excel or PDF?',
-      a: 'Yes, you will find free checklist templates online, and a blank one is fine to get started. This kit is something else: 9 Excel checklists with 413 pastry shop tasks already written and sorted by shift, area and role, 4 logs ready to fill in (production and waste, cake orders, allergens, temperatures), °F temperatures under the FDA Food Code and a cash count in US dollars. Print it on US Letter, or save any sheet as a PDF from Excel.',
+      a: 'Yes, you will find free checklist templates online, and a blank one is fine to get started. This kit is something else: 413 pastry shop tasks already written in 9 Excel checklists and a pre-shift huddle, sorted by shift, area and role, 4 logs ready to fill in (production and waste, cake orders, allergens, temperatures), °F temperatures under the FDA Food Code and a cash count in US dollars. Print it on US Letter, or save any sheet as a PDF from Excel.',
     },
     {
       q: 'Are the tasks already filled in for a pastry shop?',
@@ -396,7 +396,7 @@ const data: KitTareasData = {
       'Production control: temperatures, times, FIFO',
       'Manager checklists: daily, weekly and monthly',
       'Tasks by role: head pastry chef, pastry cook, assistant, counter associate',
-      "Holidays and events: holiday season, Three Kings Day, Valentine's Day, Easter, celebration cakes, Thanksgiving",
+      "Holidays and events: the holiday season with Three Kings Day, Valentine's Day, Easter, celebration cakes, Thanksgiving",
       'Weekly production schedule with a waste log',
       'Cake order form and custom order log',
       'Bakery allergen chart (9 major allergens, UK 14) with case sign and labels',

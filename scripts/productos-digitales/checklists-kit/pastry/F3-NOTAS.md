@@ -99,6 +99,24 @@
   tiendas, UK/CA/AU con FIR 2014, moneda, suscripción, garantía) y 6 en el JSON-LD (las de mayor demanda: opening
   checklist, cake order form, allergen chart, food temperature log, UK/CA/AU, garantía).
 
+## 3 bis. Revisión adversarial (UNA, sonnet, landing contra los volcados)
+
+0 BLOQUEANTES. Aplicado:
+- **MAYOR:** «9 Excel checklists with 413 tasks» era falso (los 9 checklists suman 399; 413 = + las 14 del briefing) →
+  «413 tasks already written in 9 checklists and the pre-shift huddle» en la ficha (schema y FAQ), el hub, el changelog,
+  `llms-full.txt` y el correo. La description SEO («15 Excel … 413 tasks») ya era correcta.
+- La tarjeta 02 atribuía 72–75 °F, laminado y 82 °F a «croissant, brioche and danish»: son de la masa de croissant
+  (brioche y danesa solo salen en el título del bloque) → «croissant dough checked at 72–75 °F…».
+- «17 key dates» → «17 key dates and occasions» (varias filas del B02 son «Varies»: ferias locales, encargos de empresa,
+  cumpleaños, bautizos y showers) en bonus, FAQ, dashboard, changelog, llms-full y correo.
+- Three Kings Day es un bloque DENTRO de «Holiday Season»: hero y CTA dicen «the holiday season with Three Kings Day».
+- «rosca de Reyes» se queda (uso real en EE. UU. y el propio calendario lo usa), pero precedida de «Three Kings bread».
+Para la ronda de la F2 (no es error de la landing): el abatidor dice «135 → 70 °F in 2 h, then 41 °F within 4 h» en la
+cabecera del registro (13 «Temperature Log» L4) y «then 41 °F in 4 h» en el 02 B7, mientras las Instructions del 13 dicen
+«in 4 more h»; la landing usa la forma del Food Code («4 more»). Unificar en los xlsx.
+Para John: el `authorBio` («chef-owner… run operations for restaurant groups») es la traducción literal de la bio de la
+ficha ES de pastelería; no sale de los xlsx.
+
 ## 4. Pendiente
 
 1. **John:** Payment Link USD $19 con redirección a

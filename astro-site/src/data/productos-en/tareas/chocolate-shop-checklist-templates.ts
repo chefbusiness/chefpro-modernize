@@ -168,7 +168,7 @@ const data: KitTareasData = {
       {
         icon: 'Gift',
         title: "Chocolate Shop Seasonal Checklists: Holiday Season, Valentine's Day & Easter",
-        desc: "Holiday season (Nov–Dec: a catalog with bark, toffee, bonbons, molded figures and Hanukkah gelt, extra couverture and packaging, seasonal staff with the federal limits for minors, pre-sales, the pre-order deadline and your carrier's shipping cutoff, corporate gift sets and orders confirmed in writing with allergens and deposit), Valentine's Day (heart bonbons, bars with an engraved message, premium truffles, gift boxes, the countdown and home deliveries) and Easter (eggs, bunnies and chicks, large filled eggs and centerpieces, Easter baskets, a labeled spring collection and an egg-decorating workshop).",
+        desc: "Holiday season (prep in October, campaign in November and December: a catalog with bark, toffee, bonbons, molded figures and Hanukkah gelt, extra couverture and packaging, seasonal staff with the federal limits for minors, pre-sales, the pre-order deadline and your carrier's shipping cutoff, corporate gift sets and orders confirmed in writing with allergens and deposit), Valentine's Day (heart bonbons, bars with an engraved message, premium truffles, gift boxes, the countdown and home deliveries) and Easter (eggs, bunnies and chicks, large filled eggs and centerpieces, Easter baskets, a labeled spring collection and an egg-decorating workshop).",
       },
       {
         icon: 'FileEdit',
@@ -178,7 +178,7 @@ const data: KitTareasData = {
       {
         icon: 'Building2',
         title: 'Chocolate Store Opening & Closing Checklist (Whole Shop)',
-        desc: "The checklist for the whole shop, not just the kitchen: alarm, lights, HVAC, the security gate, outdoor and pre-order signs (and no direct sun on the store window), the POS, the climate-controlled display cases switched on first thing, today's pre-orders, restrooms, the patio, a price and allergen tag on every tray, and the case (60–64 °F, under 55% humidity) and kitchen readings logged, with due-by times for a shop that opens at 10 AM. At close, in a safe order: the cases off only once the product is back in the cool room, the kitchen temperature logged, the POS, a safety check that never unplugs the cool room, the fridges or a melter, HVAC on night mode (never fully off in warm weather) and the lock-up last. Who does it is filled in for all 32 tasks.",
+        desc: "The checklist for the whole shop, not just the kitchen: alarm, lights, HVAC, the security gate, outdoor and pre-order signs (and no direct sun on the store window), the POS, the climate-controlled display cases switched on first thing, today's pre-orders, restrooms, the patio, a price and allergen tag on every tray, and the case (60–64 °F, under 55% humidity) and kitchen readings logged, with due-by times from 9:00 to 9:30 AM, before the doors open. At close, in a safe order: the cases off only once the product is back in the cool room, the kitchen temperature logged, the POS, a safety check that never unplugs the cool room, the fridges or a melter, HVAC on night mode (never fully off in warm weather) and the lock-up last. Who does it is filled in for all 32 tasks.",
       },
       {
         icon: 'Wallet',

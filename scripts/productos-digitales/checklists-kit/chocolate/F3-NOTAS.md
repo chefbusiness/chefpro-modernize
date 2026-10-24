@@ -58,7 +58,8 @@
 
 - **Cifras: las de los xlsx EN de la F2 tras la ronda 1** (`F2-NOTAS.md` «Cifras para la landing», contrastadas con
   `revision/dump_en.txt`): 338 tareas en 37 hojas; 41 en el 01 (25 + 16), 32 en el 08 con responsable (horas 9:00-9:30 AM en
-  la apertura y «Close» en el cierre; la tienda abre a las 10 AM, D9), 12 meses en el B02. Temperaturas (D-CHOC): obrador
+  la apertura y «Close» en el cierre; la hora de apertura de la tienda, 10 AM, es supuesto de la SPEC D9 y NO sale en el
+  xlsx: la landing dice «due-by times from 9:00 to 9:30 AM, before the doors open» y el changelog «mid-morning»), 12 meses en el B02. Temperaturas (D-CHOC): obrador
   64–68 °F y 50–60 %, cool room 59–64 °F, vitrina 60–64 °F y < 55 %, tienda 68–72 °F, moldes 68–72 °F, enfriado 54–57 °F,
   nevera 41 °F; curvas «typical curve; your couverture's chart rules»; temperadora «typically 113 °F». Food cost 30–35 %
   (03 «Weekly Tasks», Friday: criterio del kit, sí está en el xlsx). Porcentajes de cacao 55–70 / 30–40 / 28–33 % (ronda 1, m2).
@@ -103,6 +104,15 @@
   firma, Trail, varias tiendas, UK/CA/AU, moneda, suscripción, garantía) y 6 en el JSON-LD. UK: rangos en °C (obrador
   18–20, cool room 15–18, vitrina 16–18, tienda 20–22 °C), ganache fresca a 8 °C o menos, 14 alérgenos; hojas 08-09
   protegidas sin contraseña (como el base).
+
+## 3 bis. Revisión adversarial (UNA, sonnet, landing contra los volcados de los dos kits)
+
+0 BLOQUEANTES. Aplicado en el chocolate: «opens at 10 AM» (no está en el xlsx) → «due-by times from 9:00 to 9:30 AM,
+before the doors open» en la tarjeta 08 y «mid-morning» en el changelog; la tarjeta 06 dice ya «prep in October, campaign
+in November and December» (la FAQ decía octubre y la tarjeta solo Nov–Dec). Confirmado sin cambios: curvas de templado,
+1/16–1/8 in, 54–57 °F, frutos secos al final, tabla de vida útil, 32 tareas del 08 con responsable, caja (cartuchos,
+propinas, pesa de prueba, señales), calendario (pico en febrero y diciembre, encargos hasta el 10), licor 0,5 % y 21+,
+hojas protegidas sin contraseña. No verificable en los xlsx (y bien convertido): los °C de la FAQ UK.
 
 ## 4. Pendiente
 

@@ -40,7 +40,7 @@ const TEMPLATES = [
   { key: 'alergenos', icon: ShieldAlert, title: 'Bakery Allergen Chart (9 Major Allergens, UK 14): Matrix, Chart, Case Sign & Labels', desc: 'Starter matrix with 43 items (to check against your recipes and spec sheets), allergen chart, case sign and case labels.' },
   { key: 'temperaturas', icon: Thermometer, title: 'Food Temperature Log, Receiving Log, Prep Labels & Shelf Life Chart', desc: 'Monthly temperature log by unit, receiving log with rejection criteria, prep labels and a shelf-life chart in °F.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Pastry Shop Pre-Shift Meeting Template (Huddle Notes)', desc: 'Pre-shift huddle template for the pastry kitchen.' },
-  { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Pastry Shop Holiday & Events Calendar (US)', desc: '17 key dates for a US pastry shop.' },
+  { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Pastry Shop Holiday & Events Calendar (US)', desc: '17 key dates and occasions for a US pastry shop.' },
   { key: 'equivalents-guide', icon: Globe, title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.' },
 ];
 
