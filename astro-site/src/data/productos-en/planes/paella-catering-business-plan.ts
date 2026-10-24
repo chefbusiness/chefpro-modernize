@@ -44,8 +44,8 @@
 //     en un evento de empresa en una azotea), -4 (paelleras, quemador de 3 aros y azafrán) y -6 (estilos de paella). Fuera
 //     -1 (cartel «PAELLA VALENCIANA D.O.»: texto y deuda DO), -3 (restaurante, no es nuestro comprador) y -5 (food truck con
 //     rótulos en español y precios en €). Las 3 paella-catering-*.jpg las GENERA EL ORQUESTADOR con generate-images
-//     (F3-NOTAS §4): deben existir en public/lovable-uploads/ai-gallery/ antes del merge. OG PROVISIONAL = recorte 1200×630
-//     de plan-paellero-eventos-hero.jpg; rehacer desde paella-catering-seafood-paella-wedding.jpg cuando exista.
+//     (F3-NOTAS §4): deben existir en public/lovable-uploads/ai-gallery/ antes del merge. OG = recorte 1200×630 de
+//     paella-catering-seafood-paella-wedding.jpg (las 3 generadas el 24-oct con generate-images).
 // DINERO: stripeEnvKey = VITE_STRIPE_PAYMENT_LINK_PAELLA_CATERING_BUSINESS_PLAN (resuelto en el wrapper .astro; sin la env
 // var el CTA cae a '#comprar' hasta que John cree el Payment Link).
 import type { PlanNegocioData, PlanNegocioFaq } from '../../productos/planes/types';
