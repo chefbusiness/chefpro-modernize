@@ -270,7 +270,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
     name: { es: 'Tareas: Chocolatería', en: 'Chocolate Shop Checklists Kit Pro' },
     description: {
       es: 'Temperado, moldeado, ensamble, packaging.',
-      en: "Chocolate shop checklists for opening and closing, tempering and molding, the manager, duties by role, cleaning and inventory, the holiday season, Valentine's Day and Easter, and the cash drawer with sales by weight: 338 tasks already written.",
+      en: 'Chocolate shop checklists for opening and closing, tempering and molding, the manager, duties by role, cleaning and inventory, seasonal campaigns from the holidays to Easter, and the cash drawer with sales by weight: 338 tasks already written.',
     },
     // Tienda EN (24-oct-2026): producto propio, `chocolate-shop-checklist-templates`, $19 USD.
     urlByLang: { en: '/en/digital-products/chocolate-shop-checklist-templates' },
