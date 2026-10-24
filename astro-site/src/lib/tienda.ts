@@ -188,6 +188,15 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (24-oct-2026): Paella Catering Business Plan Kit (SPEC business-plans-en-7 D114). vivo: true en la rama, que
+    // se fusiona cuando existe el Payment Link (mismo criterio que el Catering, el Mobile Bar y el BBQ Catering Business Plan Kit).
+    familia: 'plan-negocio-paellero-eventos',
+    productos: {
+      es: { slug: 'plan-negocio-paellero-eventos', vivo: true },
+      en: { slug: 'paella-catering-business-plan', vivo: true },
+    },
+  },
+  {
     // Tienda EN (15-oct-2026): Food Cost + Menu Engineering Guide, primera guía de la tienda EN
     // (SPEC guia-food-cost-en D1). vivo: true en la rama, que se fusiona cuando existe el Payment Link.
     familia: 'guia-food-cost-ingenieria-menu',

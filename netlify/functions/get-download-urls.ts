@@ -861,6 +861,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/bbq-catering-business-plan/bbq-catering-startup-checklist.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-24): Paella Catering Business Plan Kit. MISMAS claves que plan-negocio-paellero-eventos y que el BBQ
+  // (las del TEMPLATES de src/pages/PaellaCateringBusinessPlanDashboard.tsx) → los 4 ficheros EN de
+  // /dl/paella-catering-business-plan/ (SPEC business-plans-en-7 D116; los trae la F2) y el bonus común de equivalencias EN.
+  'paella-catering-business-plan': {
+    'plan-negocio': '/dl/paella-catering-business-plan/paella-catering-business-plan.docx',
+    'plan-financiero': '/dl/paella-catering-business-plan/paella-catering-financial-projections.xlsx',
+    'calculadora-pricing': '/dl/paella-catering-business-plan/paella-catering-pricing-calculator.xlsx',
+    'checklist-apertura': '/dl/paella-catering-business-plan/paella-catering-startup-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

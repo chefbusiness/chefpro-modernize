@@ -61,6 +61,26 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Paella Catering Business Plan Kit (24-oct-2026, séptima tanda de planes EN): el más nuevo → 1; el BBQ Catering Business
+  // Plan Kit pasa a la 2 y el resto de vivos bajan un puesto. Sustituye a la tarjeta vieja «Business Plan: Paella Catering for
+  // Events», que describía el kit español (11 entregables, 88 proveedores, anexo de fuego por CCAA, catálogo de marcas,
+  // roadmap de rice truck). Imagen: el hero ES del paellero (paella en vivo en una boda al aire libre, sin texto).
+  {
+    name: 'Paella Catering Business Plan Kit',
+    slug: '/plan-negocio-paellero-eventos',
+    description: 'Paella catering business plan template for a live paella and Spanish catering company: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in events per year, cash flow and loan schedule, a pricing calculator from pans, rice and price per guest to quote with a pan sizing table and a shopping list, and a 68-task startup checklist.',
+    features: [
+      '10-section business plan in Word',
+      'Pricing calculator: pans, rice and price per guest to quote',
+      'Paella yield, pan sizing and shopping list by guest count',
+      '68 tasks: commissary agreement, fire marshal, propane',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-paellero-eventos-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'catering', 'events', 'mobile-catering', 'business-plan'],
+  },
   // BBQ Catering Business Plan Kit (24-oct-2026, sexta tanda de planes EN): el más nuevo → 1; Pastry Shop, Chocolate Shop e
   // Ice Cream Shop Checklists Kit Pro pasan a 2-4 y el resto de vivos bajan un puesto. Sustituye a la tarjeta vieja
   // «Business Plan: Grill Catering for Events», que describía el kit español (11 entregables, 93 proveedores, anexo de
@@ -790,22 +810,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['pdf', 'guides', 'dark-kitchen'],
-  },
-  {
-    name: 'Business Plan: Paella Catering for Events',
-    slug: '/plan-negocio-paellero-eventos',
-    description: 'Professional kit for launching your premium mobile paella and rice-dish service for events in Spain. Hybrid model for private clients, companies and town councils: 10-section Word business plan with an open-fire annex + 9-sheet Excel financial plan + per-event quote calculator + 83-task opening checklist in 6 phases + 88 suppliers under the Valencia and Calasparra rice Designations of Origin + Garcima/Vaello equipment catalog + technical fire and socarrat manual + 12-paella menu + contract templates + Guide to 8 systems + rice-truck roadmap.',
-    features: [
-      '11 deliverables (Word + Excel)',
-      'Hybrid model: private clients, companies and town councils',
-      'Open-fire legal annex (8 Spanish regions)',
-      'Technical fire and socarrat manual + 12 paellas',
-    ],
-    iconName: 'Flame',
-    image: '/lovable-uploads/ai-gallery/plan-paellero-eventos-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['business-plan', 'paella-cook', 'paella', 'rice-restaurant', 'events', 'mobile-catering'],
   },
   {
     name: 'Business Plan: Private Chef / At-Home Showcooking',

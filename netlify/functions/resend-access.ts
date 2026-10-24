@@ -373,6 +373,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-24): gemelo de plan-negocio-paellero-eventos (ver verify-purchase.ts).
+  'paella-catering-business-plan': {
+    accessPath: '/en/digital-products/paella-catering-business-plan/access',
+    emailSubject: 'Your access to Paella Catering Business Plan Kit',
+    emailTitle: 'Access your Paella Catering Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a paella yield and pan sizing table and a shopping list by guest count and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu (ver verify-purchase.ts).
   'food-cost-menu-engineering-guide': {
     accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',

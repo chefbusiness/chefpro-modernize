@@ -411,6 +411,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-24): gemelo de plan-negocio-paellero-eventos, producto independiente con su propio acceso
+  // (mismo patrón que bbq-catering-business-plan).
+  'paella-catering-business-plan': {
+    accessPath: '/en/digital-products/paella-catering-business-plan/access',
+    emailSubject: 'Your access to Paella Catering Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Paella Catering Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a paella yield and pan sizing table and a shopping list by guest count and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
   // (mismo patrón que mobile-bar-business-plan).
   'food-cost-menu-engineering-guide': {
