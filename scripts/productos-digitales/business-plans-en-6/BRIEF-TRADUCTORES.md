@@ -92,7 +92,8 @@ nunca «pickup truck»; solo «BBQ food trucks» para el competidor y el nombre 
 «mixers», «specialty / cash bar»; del ES: «Spain», «IVA», «VAT» (salvo la nota UK), «EUR» / «€», «autónomo», «fijo
 discontinuo», SL, IAE, AESAN, APPCC, «RD …», «Reglamento (CE)», CCAA, ATP, FACe, Veri*factu, Bodas.net, Zankyou, Hosply,
 GGM, «parrillero», «chuletón», «lechazo», «cochinillo», «carné»; de la jerga: «freelance», «grill master», «support
-kitchen», «grill / roast catering», «Cambro»; calcos «D-21 / D-14 / D-1»; kg / km / °C / litros fuera de paréntesis.
+kitchen», «grill / roast catering», «Cambro»; calcos «D-21 / D-14 / D-1»; kg / km / °C / litros fuera de paréntesis;
+y **«lechón»** (el detector de español rechaza la tilde: di «whole hog» o «pig roast»).
 
 **Cifras PROHIBIDAS (D110; las rechaza el check):** del ES del parrillero 190.000 · 205.200 · 215.460 · 76.522 · 54.596 ·
 21.926 · 87.357 · 65.400 · 15.737 · 160.401 · 151.894 · 182.179 · 192.570 · 109.706 · 80.294 · 92.616 · 57.983 · 14.527 ·
