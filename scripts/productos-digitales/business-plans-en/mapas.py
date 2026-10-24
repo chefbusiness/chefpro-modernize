@@ -1229,8 +1229,16 @@ elif CONJUNTO == 'bbq':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-6'))
     import mapas_bbq as _bbq                                                       # noqa: E402
     _bbq.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'pael':
+    # Paella Catering Business Plan Kit (F2 de business-plans-en-7, 24-oct-2026): fuente ES = food truck ES, diccionario
+    # por celda en cadena = EN del BBQ y, si no hay, EN publicado del CATERING; código del BBQ (D119), datos en
+    # business-plans-en-7/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-7'))
+    import mapas_pael as _pael                                                     # noqa: E402
+    _pael.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
-    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq)' % CONJUNTO)
+    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael)' % CONJUNTO)
 
 
 if __name__ == '__main__':
