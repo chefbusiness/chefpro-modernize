@@ -662,7 +662,8 @@ HIGIENE_TAREAS = [
     ('Heridas y cortes cubiertos con apósito impermeable de color visible y '
      'guante encima', 'Obrador'),
     ('Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO '
-     'manipula producto: comunicarlo al encargado y reasignar tarea',
+     'manipula producto ni entra en obrador ni mostrador: comunicarlo al '
+     'encargado',
      'Obrador'),
     ('Encender la extracción del obrador ANTES que ningún otro equipo',
      'Obrador'),
@@ -924,10 +925,12 @@ MERMAS_MOLDEADO = ('Anotar las mermas del día: producto, cantidad y motivo '
                    'ganache o fruta, a residuo')
 ALMACENAR = ('Almacenar el producto terminado a 15-18 °C y 50-60 % de '
              'humedad, en oscuridad y lejos de olores fuertes (el cacao los '
-             'absorbe) — anota la lectura: ____ °C')
+             'absorbe); la ganache de nata fresca, en cámara a 0-4 °C — anota '
+             'la lectura: ____ °C')
 LOTE_VIDA = [
     ('Etiquetar cada lote con fecha de producción y consumo preferente según '
-     'su familia (tabla al pie de la hoja)', 'Admin'),
+     'su familia (tabla al pie de la hoja); la ganache de nata fresca, con '
+     'fecha de caducidad (art. 24 del Reglamento UE 1169/2011)', 'Admin'),
 ]
 
 TITULO_VIDA = ('VIDA ÚTIL Y CONSERVACIÓN ORIENTATIVAS A 15-18 °C Y 50-60 % DE '

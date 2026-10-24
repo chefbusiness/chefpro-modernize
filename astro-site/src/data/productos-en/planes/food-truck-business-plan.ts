@@ -78,6 +78,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "It's built for a food truck that sells to walk-up customers, with events as part of the calendar. If most of your work will be catered events — weddings, corporate lunches and buffets at the client's venue — our Catering Business Plan Kit is written for that: a full-service caterer working from a shared commissary kitchen with a refrigerated van, a break-even in events per year and a pricing calculator that turns your cost per guest into a quote.",
   },
   {
+    q: 'Is there a plan for a BBQ caterer?',
+    a: "Yes, if you'll smoke for catered events instead of selling from a window. Our BBQ Catering Business Plan Kit covers an off-site BBQ caterer: smoking at a commissary, a smoker trailer at the event as a paid live pit on site, when your county treats a trailer that cooks at the event as a mobile food unit, the fire marshal, a break-even in events per year and a pricing calculator that turns pounds of meat per guest into a quote. For a BBQ food truck that sells to walk-up customers, this kit fits better.",
+  },
+  {
     q: 'Can I present this plan to a lender or investors?',
     a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%). It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
@@ -315,6 +319,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
     { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: '/en/digital-products/mobile-bar-business-plan', label: 'Mobile Bar Business Plan Kit' },
+    { href: '/en/digital-products/bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     // Post pilar del blog EN (18-oct-2026): captación para «how to start a food truck business».
     { href: '/en/blog/how-to-start-a-food-truck-business', label: 'How to Start a Food Truck Business' },

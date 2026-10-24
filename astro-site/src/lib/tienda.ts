@@ -179,6 +179,15 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (24-oct-2026): BBQ Catering Business Plan Kit (SPEC business-plans-en-6 D96). vivo: true en la rama, que
+    // se fusiona cuando existe el Payment Link (mismo criterio que el Catering y el Mobile Bar Business Plan Kit).
+    familia: 'plan-negocio-parrillero-asador-eventos',
+    productos: {
+      es: { slug: 'plan-negocio-parrillero-asador-eventos', vivo: true },
+      en: { slug: 'bbq-catering-business-plan', vivo: true },
+    },
+  },
+  {
     // Tienda EN (15-oct-2026): Food Cost + Menu Engineering Guide, primera guía de la tienda EN
     // (SPEC guia-food-cost-en D1). vivo: true en la rama, que se fusiona cuando existe el Payment Link.
     familia: 'guia-food-cost-ingenieria-menu',
@@ -268,6 +277,37 @@ export const FAMILIAS: FamiliaProducto[] = [
     productos: {
       es: { slug: 'kit-tareas-dark-kitchen', vivo: true },
       en: { slug: 'ghost-kitchen-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (24-oct-2026): Ice Cream Shop Checklists Kit Pro, séptimo hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/icecream D1-D4). Gemelo del Kit de Tareas Heladería. vivo: true en la rama, que se fusiona
+    // cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop, el Catering, el Pizza
+    // Shop, el Burger Joint y el Ghost Kitchen Checklists Kit Pro).
+    familia: 'kit-tareas-heladeria',
+    productos: {
+      es: { slug: 'kit-tareas-heladeria', vivo: true },
+      en: { slug: 'ice-cream-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (24-oct-2026): Chocolate Shop Checklists Kit Pro, octavo hermano vertical del Restaurant Checklists Kit
+    // Pro (SPEC checklists-kit/chocolate D1-D4). Gemelo del Kit de Tareas Chocolatería. vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que los siete hermanos anteriores).
+    familia: 'kit-tareas-chocolateria',
+    productos: {
+      es: { slug: 'kit-tareas-chocolateria', vivo: true },
+      en: { slug: 'chocolate-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (24-oct-2026): Pastry Shop Checklists Kit Pro, noveno hermano vertical (SPEC checklists-kit/pastry
+    // D1-D4). Gemelo del Kit de Tareas Pastelería. vivo: true en la rama, que se fusiona con el Payment Link y con los 15
+    // xlsx de la F2 en dl/ (mismo criterio).
+    familia: 'kit-tareas-pasteleria',
+    productos: {
+      es: { slug: 'kit-tareas-pasteleria', vivo: true },
+      en: { slug: 'pastry-shop-checklist-templates', vivo: true },
     },
   },
   {

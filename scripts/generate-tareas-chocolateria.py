@@ -338,7 +338,7 @@ def gen_01():
             ("Registrar temperaturas en hoja de control APPCC", "Admin"),
         ]),
         ("Montaje de servicio", [
-            ("Montar vitrina: bombones, tabletas, figuras, trufas", "Vitrina"),
+            ("Montar vitrina: bombones, tabletas, figuras, trufas; los de ganache de nata fresca y las trufas de nata, solo en vitrina refrigerada a 0-4 °C", "Vitrina"),
             ("Verificar etiquetado de alérgenos en cada producto expuesto", "Vitrina"),
             ("Reponer bolsas, cajas regalo, papel de seda, cintas", "Packaging"),
             ("Verificar stock de cajas de bombones surtidos", "Packaging"),
@@ -355,7 +355,7 @@ def gen_01():
     ])
     create_task_sheet(wb, "Cierre", LIMPIEZA_COLOR, "Cierre de Chocolatería", [
         ("Cierre de tienda", [
-            ("Retirar productos de vitrina y guardar en conservación", "Vitrina"),
+            ("Retirar productos de vitrina y guardar en conservación; la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C", "Vitrina"),
             ("Cubrir bombones que queden expuestos con film", "Vitrina"),
             ("Cuadre de caja y registro de ventas del día", "Caja"),
             ("Apagar TPV y cerrar terminal de pago", "Caja"),
@@ -444,7 +444,7 @@ def gen_02():
             ("Alisar superficie con espátula", "Moldeado"),
             ("Enfriar en cámara a 12-14°C durante 20-30 min", "Conservación"),
             ("Desmoldar, verificar acabado y pesar cada tableta", "Moldeado"),
-            ("Envolver en papel/aluminio y etiquetar con lote y fecha", "Envasado"),
+            ("Envolver en papel/aluminio y etiquetar: denominación, ingredientes con los alérgenos destacados, peso neto, lote y fecha de consumo preferente", "Envasado"),
         ]),
         ("Control de calidad y registro", [
             ("Verificar brillo, textura y snap de productos", "Obrador"),
@@ -608,7 +608,7 @@ def gen_04():
         ]),
         ("Cierre de tienda", [
             ("Cuadrar caja y registrar ventas", "Caja"),
-            ("Retirar productos de vitrina para conservación", "Vitrina"),
+            ("Retirar productos de vitrina para conservación (la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C)", "Vitrina"),
             ("Limpiar mostradores, cristales y suelo de tienda", "Limpieza"),
         ]),
     ])

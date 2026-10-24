@@ -90,6 +90,67 @@ coctelería para eventos → **mobile bar** (negocio) · barra móvil (mueble) �
 jefe de barra → **lead bartender** · ayudante → **barback** · certificado del seguro → **COI / additional insured** ·
 requisitos de la sala → **venue requirements** · temporada alta de bodas → **peak wedding season**.
 
+## Heladería (Ice Cream Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/icecream/SPEC.md` §R)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| heladería (artesanal) | ice cream store · artisan ice cream shop | **ice cream shop** (246.000/mes) · **ice cream parlor** (27.100) · **scoop shop** (4.400, jerga del oficio) · **gelato shop** (27.100) solo si es gelato | firme (DataForSEO 24-oct) |
+| vitrina de helado | showcase · vitrine | **dipping cabinet** (320/mes; la de gelato, **gelato case**), servicio a 6–10 °F | firme (medido); temperatura [fabricante] |
+| mantecadora · mantecar | creaming machine | **batch freezer** (210/mes) · **batch-freeze / churn**; temperatura de extracción = **draw temperature** | por verificar (uso del sector) |
+| maduración de la mezcla · cámara de maduración | maturation | **aging the mix** · **aging cooler / aging tank** (36–39 °F) | por verificar |
+| abatidor (de helado) | abater | **blast freezer** / **hardening cabinet** · abatir = **harden** | por verificar |
+| porcionador · pala · espátula | portioner | **scoop** (dipper) · **spade**; el agua corriente para los scoops = **dipper well** (1.000/mes; FDA Food Code 3-304.12(D)) | firme (Food Code); resto por verificar |
+| cubeta (de vitrina) · tarrina · tarrina para llevar | bucket · tub-let | **pan** · **cup** · **pint / quart** (envasar para llevar = **pack-out**; preenvasado con etiqueta, 3-602.11) | por verificar |
+| cucurucho · barquillo · cucharilla de prueba | cornet | **cone** (waffle / sugar cone) · **wafer** · **tasting spoon** (las muestras = **samples**) | por verificar |
+| variegato · inclusiones · virutas | variegate | **swirl / ripple** · **mix-ins** · **sprinkles** | por verificar |
+| rendimiento del aire batido | air yield | **overrun** (210/mes); techo legal: ice cream ≥ 4,5 lb/galón (21 CFR 135.110) | firme (CFR) |
+| tarta helada · semifrío | frozen cake | **ice cream cake** (135.000/mes) · **semifreddo** | firme (medido) |
+| dependiente de heladería · heladero de obrador · encargado | shop assistant · ice cream man | **scooper** / counter staff · **ice cream maker** (producción) · **shift lead** | por verificar («ice cream scooper», 33.100, es sobre todo el utensilio) |
+| temporada alta · reapertura de temporada | high season | **peak season** (Memorial Day → Labor Day) · **Opening Day** (las de temporada) · invierno = **off-season** | por verificar |
+| licencia de obrador de helados | ice cream workshop license | **frozen dessert (manufacturer) license** / **dairy (milk handlers) license**, estatal; al público, el **health permit** local | firme: Vermont, Massachusetts, Arizona, Georgia (SPEC §3) |
+| seguro de pérdida de género por avería del frío | merchandise loss insurance | **equipment breakdown** coverage con **food spoilage** | por verificar |
+| Día del Helado | Ice Cream Day | **National Ice Cream Day** (3.er domingo de julio; 27.100/mes, pico de 246.000) · **National Ice Cream Month** (julio) | firme: Proclamation 5219 (1984) |
+
+## Chocolatería (Chocolate Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/chocolate/SPEC.md` §R)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| chocolatería (obrador-tienda) · bombonería | chocolaterie · bonbonnerie | **chocolate shop** (49.500/mes, intención local) · **chocolatier** (27.100; el oficio y la casa) · **chocolate store** (9.900); «candy shop» (33.100) es una tienda de caramelos, más amplia | firme (DataForSEO 24-oct) |
+| maestro chocolatero | master chocolate maker | **chocolatier** | firme (medido) |
+| bombón · trufa · tableta · figura hueca | bonbon box · tablet | **bonbon** (90.500; molded bonbon) · **truffle** (27.100) · **bar** · **hollow figure** / molded figure | firme (medido) |
+| templar · temperadora · siembra · mármol · punto de trabajo | temperer | **temper** · **tempering machine** (2.400) / melter · **seeding** · **tabling** (marble slab) · **working temperature**; las curvas, «per the manufacturer's tempering curve» | firme (medido); curvas [fabricante] |
+| cobertura (negra, con leche, blanca) | coverture | **couverture** (callets / wafers): dark · milk · white | por verificar |
+| cáscara · sellar / tapa · relleno | crust · seal | **shell** · **cap / capping** · **filling** (ganache, praline, gianduja) | por verificar |
+| fat bloom · sugar bloom · snap · brillo | — | **fat bloom** · **sugar bloom** · **snap** · **shine / gloss** | por verificar |
+| bombo (grageado) | drum | **panning machine** (panning) | por verificar |
+| cámara de conservación (15-18 °C) · nevera de rellenos | conservation chamber | **cool room** (59–64 °F, 50–60 %) · **fridge** (41 °F o menos) | por verificar |
+| vitrina climatizada · escaparate | showcase · vitrine | **display case** (climate-controlled) · **store window** | por verificar |
+| obrador (de chocolatería) | workshop | **kitchen** (chocolate / production kitchen) | por verificar (fila de «obrador» de arriba) |
+| dependiente · encargado | shop assistant | **sales associate** · **shift lead** | por verificar |
+| encargo · señal · regalos de empresa | order · signal | **pre-order / custom order** · **deposit** · **corporate gifting** (gift boxes) | por verificar |
+| ganache de nata fresca | fresh cream ganache shelf-stable | **TCS** salvo análisis de **water activity (aw)**: 41 °F y date marking 7 días | firme: FDA Food Code 2022 §1-201.10 y §3-501.17 |
+| alérgenos a la vista en la vitrina | allergen board | **written allergen notification** de lo no envasado | firme: FDA Food Code 2022 §3-602.12(C) (donde se adopte) |
+| turrón · monas de Pascua · panellets | nougat Spanish | sin equivalente: **bark / toffee / brittle** (fiestas) · **Easter baskets** · **host gifts** y chocolate turkeys (Thanksgiving) | por verificar (criterio del kit) |
+| bombones de licor | liquor bonbons | **liqueur bonbons** («liquor» es el destilado); norma estatal para caramelos con alcohol | por verificar |
+
+## Pastelería (Pastry Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/pastry/SPEC.md` §R; base: `guia-pasteleria-en/F1-research-us.md` §13.1)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| pastelería (con tienda y obrador) | patisserie shop · cake store | **pastry shop** (40.500/mes) · **bakery** si hay pan · **bakery-café** si sirve café | firme (DataForSEO 24-oct) |
+| obrador · zona de producción | workshop · obrador | **pastry kitchen** / **kitchen** (celda corta) · **production kitchen** | firme (guía EN D9) |
+| vitrina (refrigerada) · despacho | showcase · dispatch | **bakery case** (590/mes; **refrigerated bakery case**, 41 °F para lo TCS, FDA 3-501.16) · **counter** | firme (medido + Food Code) |
+| jefe pastelero · pastelero/oficial · ayudante · dependiente · encargado | pastry boss · shop assistant | **head pastry chef** · **pastry cook** · **pastry assistant** · **counter associate** · **shift lead** | por verificar (uso del sector; guía EN §13.1) |
+| bollería | bun-ery | **viennoiserie** (oficio) · **breakfast pastries** (cliente) | firme (guía EN D9) |
+| cámara de fermentación controlada · retardador · abatidor | fermentation chamber | **retarder-proofer** · **retarder** · **blast chiller** (congelar: **blast freezer**) | firme (guía EN D9) |
+| laminadora · amasadora · batidora planetaria | laminator | **dough sheeter** · **spiral mixer** · **planetary mixer** (menores de 18 no las usan ni limpian: 29 CFR 570.62) | firme (CFR); nombres por verificar |
+| encargo · ficha de encargo · señal · pendiente · dedicatoria · recogida | commission · signal | **custom order** / **pre-order** · **order form** (480/mes «cake order form») · **deposit** · **balance due** · **cake message** · **pickup** (franja: **pickup slot**) | firme (medido); depósito = práctica, no ley (guía EN §8) |
+| merma · producto del día anterior · escandallo | yesterday product | **waste** (waste log) · **day-old** · **recipe costing** / cost card | por verificar |
+| ficha técnica · albarán | technical sheet · delivery note | **spec sheet** · **invoice / packing slip** | por verificar |
+| registro de temperaturas · recepción de mercancía · etiqueta de elaborado | | **temperature log** (320/mes «food temperature log») · **receiving log** (140) · **prep label** (date marking, 3-501.17) | firme (medido + Food Code) |
+| carta de alérgenos · cartel de alérgenos · contaminación cruzada | allergen letter | **allergen chart** (320/mes) · **allergen sign** (aviso escrito, 3-602.12(C)) · **cross-contact** | firme (guía EN §3.1) |
+| roscón de Reyes · torrijas · huesos de santo · panellets · polvorones · turrón | | **rosca de Reyes / Three Kings bread** + **King cake** (6-ene → Mardi Gras) · **hot cross buns** (perfil de alérgenos) · **amaretti** · **pignoli cookies** · **polvorones / Mexican wedding cookies** · **torrone** | criterio del kit (mismo perfil de alérgenos; guía EN §7) |
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en

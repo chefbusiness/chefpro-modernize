@@ -851,6 +851,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/mobile-bar-business-plan/mobile-bar-startup-checklist.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-24): BBQ Catering Business Plan Kit. MISMAS claves que plan-negocio-parrillero-asador-eventos y que
+  // el mobile bar (las del TEMPLATES de src/pages/BbqCateringBusinessPlanDashboard.tsx) → los 4 ficheros EN de
+  // /dl/bbq-catering-business-plan/ (SPEC business-plans-en-6 D98) y el bonus común de equivalencias EN.
+  'bbq-catering-business-plan': {
+    'plan-negocio': '/dl/bbq-catering-business-plan/bbq-catering-business-plan.docx',
+    'plan-financiero': '/dl/bbq-catering-business-plan/bbq-catering-financial-projections.xlsx',
+    'calculadora-pricing': '/dl/bbq-catering-business-plan/bbq-catering-pricing-calculator.xlsx',
+    'checklist-apertura': '/dl/bbq-catering-business-plan/bbq-catering-startup-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.
@@ -1010,6 +1020,62 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/ghost-kitchen-checklist-templates/09-cash-drawer-opening-closing.xlsx',
     'bonus-briefing': '/dl/ghost-kitchen-checklist-templates/BONUS-01-ghost-kitchen-pre-shift-meeting-template.xlsx',
     'bonus-calendario': '/dl/ghost-kitchen-checklist-templates/BONUS-02-ghost-kitchen-delivery-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-24): Ice Cream Shop Checklists Kit Pro. MISMAS claves que kit-tareas-heladeria (las de
+  // TEMPLATES de src/pages/IceCreamShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx
+  // EN de /dl/ice-cream-shop-checklist-templates/ (SPEC checklists-kit/icecream §2), y el bonus común de equivalencias
+  // EN en lugar de la guía ES↔LatAm.
+  'ice-cream-shop-checklist-templates': {
+    'apertura-cierre': '/dl/ice-cream-shop-checklist-templates/01-ice-cream-shop-opening-closing-checklists.xlsx',
+    'partidas': '/dl/ice-cream-shop-checklist-templates/02-ice-cream-production-checklists.xlsx',
+    'manager': '/dl/ice-cream-shop-checklist-templates/03-ice-cream-shop-manager-checklist.xlsx',
+    'perfiles': '/dl/ice-cream-shop-checklist-templates/04-ice-cream-shop-duties-by-role.xlsx',
+    'periodicas': '/dl/ice-cream-shop-checklist-templates/05-ice-cream-shop-cleaning-checklist-maintenance.xlsx',
+    'eventos': '/dl/ice-cream-shop-checklist-templates/06-ice-cream-shop-seasonal-catering-checklists.xlsx',
+    'personalizable': '/dl/ice-cream-shop-checklist-templates/07-blank-ice-cream-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/ice-cream-shop-checklist-templates/08-ice-cream-parlor-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/ice-cream-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/ice-cream-shop-checklist-templates/BONUS-01-ice-cream-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/ice-cream-shop-checklist-templates/BONUS-02-ice-cream-shop-seasonal-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-24): Chocolate Shop Checklists Kit Pro. MISMAS claves que kit-tareas-chocolateria (las de TEMPLATES de
+  // src/pages/ChocolateShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx EN de /dl/chocolate-shop-checklist-templates/
+  // (SPEC checklists-kit/chocolate §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
+  'chocolate-shop-checklist-templates': {
+    'apertura-cierre': '/dl/chocolate-shop-checklist-templates/01-chocolate-shop-opening-closing-checklists.xlsx',
+    'partidas': '/dl/chocolate-shop-checklist-templates/02-chocolate-tempering-molding-checklists.xlsx',
+    'manager': '/dl/chocolate-shop-checklist-templates/03-chocolate-shop-manager-checklist.xlsx',
+    'perfiles': '/dl/chocolate-shop-checklist-templates/04-chocolate-shop-duties-by-role.xlsx',
+    'periodicas': '/dl/chocolate-shop-checklist-templates/05-chocolate-shop-cleaning-checklist-maintenance.xlsx',
+    'eventos': '/dl/chocolate-shop-checklist-templates/06-chocolate-shop-seasonal-checklists.xlsx',
+    'personalizable': '/dl/chocolate-shop-checklist-templates/07-blank-chocolate-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/chocolate-shop-checklist-templates/08-chocolate-store-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/chocolate-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/chocolate-shop-checklist-templates/BONUS-01-chocolate-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/chocolate-shop-checklist-templates/BONUS-02-chocolate-shop-holiday-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-24): Pastry Shop Checklists Kit Pro. MISMAS claves que kit-tareas-pasteleria (las de TEMPLATES de
+  // src/pages/PastryShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 15 xlsx EN de /dl/pastry-shop-checklist-templates/
+  // (SPEC checklists-kit/pastry §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
+  'pastry-shop-checklist-templates': {
+    'apertura-cierre': '/dl/pastry-shop-checklist-templates/01-pastry-kitchen-bakery-case-opening-closing-checklists.xlsx',
+    'partidas': '/dl/pastry-shop-checklist-templates/02-pastry-kitchen-production-checklists.xlsx',
+    'manager': '/dl/pastry-shop-checklist-templates/03-pastry-shop-manager-checklist.xlsx',
+    'perfiles': '/dl/pastry-shop-checklist-templates/04-pastry-chef-duties-by-role.xlsx',
+    'periodicas': '/dl/pastry-shop-checklist-templates/05-bakery-cleaning-schedule-maintenance-inventory.xlsx',
+    'eventos': '/dl/pastry-shop-checklist-templates/06-pastry-shop-holiday-event-checklists.xlsx',
+    'personalizable': '/dl/pastry-shop-checklist-templates/07-blank-pastry-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/pastry-shop-checklist-templates/08-pastry-shop-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/pastry-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'plan-produccion': '/dl/pastry-shop-checklist-templates/10-bakery-production-schedule-waste-log.xlsx',
+    'encargos': '/dl/pastry-shop-checklist-templates/11-cake-order-form-order-log.xlsx',
+    'alergenos': '/dl/pastry-shop-checklist-templates/12-bakery-allergen-chart.xlsx',
+    'temperaturas': '/dl/pastry-shop-checklist-templates/13-food-temperature-log-receiving-log.xlsx',
+    'bonus-briefing': '/dl/pastry-shop-checklist-templates/BONUS-01-pastry-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/pastry-shop-checklist-templates/BONUS-02-pastry-shop-holiday-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   'kit-tareas-sushi-bar': {

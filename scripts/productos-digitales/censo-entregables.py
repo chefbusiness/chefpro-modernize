@@ -155,11 +155,14 @@ PRODUCTOS_LETTER = frozenset({'food-cost-templates', 'restaurant-inventory-templ
                               'food-truck-business-plan', 'coffee-shop-business-plan',
                               'restaurant-business-plan', 'bakery-business-plan', 'bar-business-plan',
                               'catering-business-plan', 'mobile-bar-business-plan',
+                              'bbq-catering-business-plan',
                               'food-cost-menu-engineering-guide', 'how-to-open-a-pastry-shop',
                               'restaurant-checklist-templates', 'bar-checklist-templates',
+                              'chocolate-shop-checklist-templates',
+                              'pastry-shop-checklist-templates',
                               'coffee-shop-checklist-templates', 'catering-checklist-templates',
                               'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
-                              'ghost-kitchen-checklist-templates'})
+                              'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates'})
 PAPEL_A4, PAPEL_LETTER = 9, 1
 HOJAS_TEXTO = ('Instrucciones', 'Índice', 'Indice', 'Instructions')
 

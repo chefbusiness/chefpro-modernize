@@ -401,6 +401,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-24): gemelo de plan-negocio-parrillero-asador-eventos, producto independiente con su propio acceso
+  // (mismo patrón que mobile-bar-business-plan).
+  'bbq-catering-business-plan': {
+    accessPath: '/en/digital-products/bbq-catering-business-plan/access',
+    emailSubject: 'Your access to BBQ Catering Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>BBQ Catering Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a smoke schedule and a shopping list by guest count and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
   // (mismo patrón que mobile-bar-business-plan).
   'food-cost-menu-engineering-guide': {
@@ -488,6 +498,36 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailSubject: 'Your access to Ghost Kitchen Checklists Kit Pro',
     emailTitle: 'Thank you for your purchase!',
     emailBody: 'Your access to <strong>Ghost Kitchen Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-24): gemelo de kit-tareas-heladeria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'ice-cream-shop-checklist-templates': {
+    accessPath: '/en/digital-products/ice-cream-shop-checklist-templates/access',
+    emailSubject: 'Your access to Ice Cream Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Ice Cream Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-24): gemelo de kit-tareas-chocolateria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'chocolate-shop-checklist-templates': {
+    accessPath: '/en/digital-products/chocolate-shop-checklist-templates/access',
+    emailSubject: 'Your access to Chocolate Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Chocolate Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-24): gemelo de kit-tareas-pasteleria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'pastry-shop-checklist-templates': {
+    accessPath: '/en/digital-products/pastry-shop-checklist-templates/access',
+    emailSubject: 'Your access to Pastry Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Pastry Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 13 Excel templates, the 2 bonus templates and the Equivalents Guide:',
     emailCta: 'Access my templates',
     lang: 'en',
   },
