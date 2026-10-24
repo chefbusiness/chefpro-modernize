@@ -206,3 +206,83 @@ ficheros generados sin seguimiento tras comprobar su sha256 (los JSON que ya est
 7. Cifras de mercado solo de research «leída» (check_textos lo comprueba); en la D19, 4 de 14 filas son «Kit estimate» (57
    arroz, 59 invitados por paellera, 61 paelleras y quemadores, 62 marketplace) y la 68 mezcla Kit y fuente leída.
 8. Si se rehace la extracción, los ids de `textos_es.json` pueden moverse y las salidas de los redactores dejan de casar.
+
+## 8. Cierre de la F2 (24-oct, sesión Claude Code): xlsx + docx EN, gates, F3 fusionada
+
+Tandas del paso 2 en `b58c30b0` / `12d38ab6` (`check_textos --todas` OK, las 7; GPA-plan con 14 avisos de longitud;
+`GRB-plan.revision.json` con 1 corrección). Paso 3 en el VPS sobre `e2ef83b5` (alta de G9: `paella-catering-business-plan`
+en `PRODUCTOS_LETTER` de `censo-entregables.py` y en `EXCLUIDOS` de `postprocess-transversal.py`, cada uno en línea propia):
+- `aplicar_en --idempotencia`: préstamo **$64,000** en 1 vuelta, textos 535 + 318, faltan 0, **0 diferencias** entre dos
+  construcciones, inject_cache 722 / 12 fórmulas y **0 fallos de pycel**, D15 sin fallos (holgura 15.8 %).
+- `ensamblar_docx --plan pael`: G8 VERDE (131 párrafos, 10 Heading 1, 8,499 palabras).
+- **Coherencia texto ↔ libro** (sin un solo arreglo de texto): (a) docx [56], la mezcla escrita (25 drop-offs de 30 a $22
+  · 60 backyard parties de 45 a $34 · 25 eventos de empresa «75 guests at $38» · 18 bodas de 110 a $52 · 7 premium de 70 a
+  $65) suma 135 = {{eventos_a1}} y $314,360 frente a los $313,200 del libro (−0.4 %, 57.7 invitados frente a 58); bodas 13 %
+  de los eventos (18/135) y 33 % de las ventas (102,960 / 314,360); picos de mayo, junio y octubre y mínimos de enero y
+  febrero = la estacionalidad con Month 1 = marzo. (b) [42] «near $225,000 in sales in year 1 (a kit estimate)» = research
+  §8. (c) `pesimista_caja` = **−$10,040**: el «the cash runs out» de [58] y [99] es cierto. (d) Depósito: docx [48], [73] y
+  [98] «25-50% (kit estimate), the calculator proposes 50%» = libro (`0. Assumptions!C58` «25-50%: Kit estimate»,
+  `12-Month Cash Flow!O5` «not modeled») = calculadora (50 % por defecto, «US caterers ask 25-50%») = checklist
+  (`Phase 1!E13` «a 25-50% nonrefundable deposit… the pricing calculator suggests 50%»). (e) Porcentajes en claro del docx
+  (10 % de contingencia, 20 % de Texas, 28-35 %, 7-8 %, VAT 20 %): todos en research / SPEC (check_textos los coteja).
+  Ningún gate saltó por texto; ninguna cifra ni fórmula tocada.
+
+**Caso final** (`cifras_caso.json`, 118 tokens, **ninguna cifra distinta del dry-run** del paso 1; solo cambia la marca de
+tiempo; sha256 `b354a97c99b53bde…`):
+- 135 eventos × 58 invitados × $40.00 sin sales tax, con el paella chef, el personal y el service charge → ventas
+  **$313,200** / $344,520 / $365,191 ($2,320 por evento, 7,830 invitados).
+- CAPEX **$49,480** + fondo de maniobra $39,486 = **$88,966** · fondos propios $25,000 (28 %) + préstamo **$64,000** al 10 % a
+  7 años (cuota $13,146; SBA 7(a): supera el tope de $50,000 del Microloan).
+- Margen bruto 60.9 % · mercancía 28.8 % · personal 33.8 % · commissary y almacén 4.2 % · EBITDA $39,227 (12.5 %) · neto
+  **$20,319 (6.5 %)** / $32,133 / $39,133.
+- Equilibrio **116 eventos/año** (115.83 contable · 116.54 de caja), holgura **15.8 %** (caída absorbible 14 %) · **DSCR mín
+  2.47×** · saldo mínimo $31,627 (mes 2) · payback 2.3 años · 7 personas = 2.1 FTE, cobertura 138 % · seguros $5,500 ·
+  marketing $8,000.
+- Pesimista (101 · $36.00 · 52) $189,072, −$48,514 y caja **−$10,040: se agota** · optimista (169 · $44.00 · 64) $475,904 y
+  +$126,196. Los 5 umbrales del P&L en verde los 3 años.
+
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp7.py gates_en` (G1-G9 sobre `dl/paella-catering-business-plan/`) | **TODO VERDE** (G2 incluye `RX_PAEL_NO` y cifras prohibidas; G9 = censo-entregables + no latinos) |
+| `bp7.py gates_en --autotest` · `ensamblar_docx --autotest` · `calculadora --autotest` | **20/20** · **8/8** · VERDE (509 comprobaciones) |
+| `barrido_pael.py` (celdas, literales de fórmula, DV, docProps, párrafos y tablas) | 1,889 piezas · **0** `RX_PAEL_NO` / cifras prohibidas · 0 español · 0 no latinos (`entregables_pael.json`) |
+| `censo-entregables --fail --letter --only paella-catering-business-plan` · `gate-no-latinos --only` | 4 ficheros, 1,096 fórmulas, **0 defectos** · 0 caracteres |
+| `bp7.py verificar` | OK: 272 celdas de tarea (73 + 199) y **16 sha256 del diccionario sin deriva** (BBQ y catering) |
+| Regresión §2 (FT/CAF, REST/PAN, BAR, CAT, MBAR, BBQ y PAEL completo) | TODO VERDE · 20/20 en los 7 · docx 18/18 · 16/16 · 8/8 ×5 · `check_textos` 7 / 8 / 6 / 6 / 6 / 6 / 7 OK · calculadoras CAT (136), MBAR (778), BBQ (581) y PAEL (509) VERDE |
+
+| Entregable (`astro-site/public/dl/paella-catering-business-plan/`) | Contenido | sha256 (Mac = VPS) |
+|---|---|---|
+| `paella-catering-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 8,499 palabras, Letter | `d7eccbf09e08f3b0192e3cd75127f1ac995a69c7f9877bd8c288682ba04fba9e` |
+| `paella-catering-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US sin calibrar | `765e496038990ff0c0fbb9c1ca711827ea24f8a5eadede4b5dc9c385acbcfe10` |
+| `paella-catering-pricing-calculator.xlsx` | 5 hojas, 362 fórmulas | `7550983c3ce50c51a30f8a2be2869d0a2c580d2bbdb42bf7bda6420c30e5932d` |
+| `paella-catering-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `aa32db167cb0224ece1bf53e3619b64a7817481036e12978f49e1cb7efefd8c6` |
+
+**F3 fusionada** (`origin/feat/paella-catering-business-plan-en-f3`, `a9f3c3cf` + imágenes `8c94d63f`, sin conflictos) y
+**cifras de la landing** (bloque `CASO` de `astro-site/src/data/productos-en/planes/paella-catering-business-plan.ts`, ahora
+«confirmado con F2-NOTAS §8 (24-oct)»):
+
+| Clave | F3 (provisional) | **Final** |
+|---|---|---|
+| eventos · invitados · precio · ventas | 135 · 58 · $40.00 · $313,200 | **igual** |
+| inversion · circulante · necesidad | $49,480 · $37,920 · $87,400 | **$49,480 · $39,486 · $88,966** |
+| propios · prestamo | $25,000 · $62,400 | **$25,000 · $64,000** |
+| neto · netoPct | $21,000 · 6.7% | **$20,319 · 6.5%** |
+| equilibrio · dscr | 115 · 3.1× | **116 · 2.47×** |
+| marketing · seguros · pesimista | $8,000 · $5,500 · 101 / $36.00 / 52 | **igual** (caja −$10,040) |
+| ejDropoff · ejFiesta · ejBoda | $22 · $34 · $52 | **$22.50 · $32.00 · $53.00** |
+| arrozOz · menuStyles · formulas | 3.25 · 8 · 700 | **igual** (libro 722 → «more than 700»; calculadora 362; 1,096 en los 3 xlsx) |
+
+Frases de la ficha contrastadas con los ficheros (F3-NOTAS §3) y corregidas solo donde no casaban: (1) la calculadora NO
+reparte los invitados en paelleras de varios tamaños: calcula las de **un** tamaño elegido → «pans for the size you pick» en
+las FAQ del precio y de la paellera de 36 in, en las tarjetas de la calculadora, del pan sizing y de los precios, en el
+dashboard, en el correo y en el changelog; (2) «Pans from 18 to 40 inches (45-100 cm)» → **46-100 cm** (18 in = 46 cm); (3)
+el checklist pide «a **25-50%** deposit» (la calculadora propone 50 %): tarjeta del checklist y dashboard; (4) FAQ UK / CA /
+AU (lección M4 del BBQ): «works in pounds, ounces and gallons, with kilograms and liters alongside on the pan sizing sheet
+(1 lb = 0.454 kg; 1 gallon = 3.8 liters), degrees Fahrenheit with Celsius, pan sizes in inches with centimeters, saffron in
+grams and miles»; (5) precio por unidad que no confunda: «the price you pay for each ingredient (per pound, saffron per
+gram)». Sin «truck» para el vehículo (solo «paella food truck» y el Food Truck Kit). El resto casa: nota UK del docx §9,
+los 3 paquetes y el «Tapas hour?», los $/lb en blanco con el Kit por estilo, 4 puestos de `Staffing`, el checklist (contrato,
+plan HACCP con arroz TCS, Phase 2 con commissary agreement, condado, fire marshal, cilindros verticales y sujetos, approved
+source y shellstock tags 90 días, ServSafe Manager, Thumbtack, Google Business Profile, launch tasting), «excl. sales tax;
+staffing and service charge included», el pesimista que agota la caja, 135 eventos = dueño a tiempo completo con segundo
+paella chef los fines de semana, depósito de clientes no modelado. `esbuild` de la ficha, del dashboard y del changelog: OK.

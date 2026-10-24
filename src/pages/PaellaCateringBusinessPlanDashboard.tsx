@@ -39,14 +39,14 @@ const TEMPLATES = [
     icon: Calculator,
     type: '.xlsx',
     title: 'Paella Catering Pricing Calculator (Pans, Rice and Price per Guest to Quote)',
-    desc: "From your package, paella style, guest count, ounces of uncooked rice per guest, ingredient prices, propane, staff hours and an optional tapas hour to the pans by size, a price per guest and a quote with the service charge, sales tax, deposit and balance, plus the margin it leaves. Includes the Paella Yield & Pan Sizing table, the Shopping List by Guest Count and 3 example quotes: a corporate drop-off, a backyard paella party and a wedding with a tapas hour.",
+    desc: "From your package, paella style, guest count, ounces of uncooked rice per guest, ingredient prices, propane, staff hours and an optional tapas hour to the pans for the size you pick, a price per guest and a quote with the service charge, sales tax, deposit and balance, plus the margin it leaves. Includes the Paella Yield & Pan Sizing table, the Shopping List by Guest Count and 3 example quotes: a corporate drop-off, a backyard paella party and a wedding with a tapas hour.",
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Paella Catering Startup Checklist (68 Tasks)',
-    desc: "68 tasks in 6 phases: business setup (LLC, EIN, seller's permit, business license, catering contract with a 50% deposit), propane and permits (written commissary agreement, your county on cooking at the event, fire marshal, cylinders in the van, shellstock tags), equipment, staff, marketing and your first 90 days.",
+    desc: "68 tasks in 6 phases: business setup (LLC, EIN, seller's permit, business license, catering contract with a 25-50% deposit), propane and permits (written commissary agreement, your county on cooking at the event, fire marshal, cylinders in the van, shellstock tags), equipment, staff, marketing and your first 90 days.",
   },
   {
     key: 'equivalents-guide',
