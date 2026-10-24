@@ -155,7 +155,7 @@ const data: KitTareasData = {
       {
         icon: 'Croissant',
         title: 'Pastry Kitchen Production Checklists: Doughs, Creams & Fillings, Decorating',
-        desc: 'Doughs and fermentation (croissant, brioche and danish with the dough at 72–75 °F, lamination, proofing at no more than 82 °F and two bakes a day; artisan bread baked with steam; sablée and brisée bases), creams and fillings (pastry cream cooled from 135 to 70 °F in 2 hours and to 41 °F in 4 more, buttercream, ganache, curds, mousses made with cooked meringue or pasteurized whites, entremets, mirror glaze and caramel) and decorating and finishing (glazing, custom cakes from their order form, and the bakery case stocked and restocked every 2 hours), with a Target / Spec column for the key parameters.',
+        desc: 'Doughs and fermentation (croissant, brioche and danish with the dough at 72–75 °F, lamination, proofing at no more than 82 °F and two bakes a day; artisan bread baked with steam; sweet and savory tart bases), creams and fillings (pastry cream cooled from 135 to 70 °F in 2 hours and to 41 °F in 4 more, buttercream, ganache, curds, mousses made with cooked meringue or pasteurized whites, entremets, mirror glaze and caramel) and decorating and finishing (glazing, custom cakes from their order form, and the bakery case stocked and restocked every 2 hours), with a Target / Spec column for the key parameters.',
       },
       {
         icon: 'ClipboardList',
@@ -331,7 +331,7 @@ const data: KitTareasData = {
     },
     {
       q: 'Does it cover doughs, creams and decorating?',
-      a: 'Yes. The production workbook has a sheet for each station, with a Target / Spec column for the key parameters. Doughs and fermentation: the sourdough starter, croissant dough mixed short and checked at 72–75 °F, chilled before laminating (3 single or 2 double folds), shaped for a second bake and for tomorrow, proofed at no more than 82 °F and baked at 375–400 °F; artisan bread divided, shaped, proofed in bannetons, scored and baked with steam; sablée and brisée bases blind-baked at 350 °F. Creams and fillings: pastry cream cooled fast and labeled, buttercream, ganache, diplomat cream, curds, mousses with cooked meringue or pasteurized whites, entremets frozen for glazing, mirror glaze, fondant, Italian meringue and caramel. Decorating and finishing: glazing, decorating, custom cakes from their order form and the bakery case, restocked every 2 hours.',
+      a: 'Yes. The production workbook has a sheet for each station, with a Target / Spec column for the key parameters. Doughs and fermentation: the sourdough starter, croissant dough mixed short and checked at 72–75 °F, chilled before laminating (3 single or 2 double folds), shaped for a second bake and for tomorrow, proofed at no more than 82 °F and baked at 375–400 °F; artisan bread divided, shaped, proofed in bannetons, scored and baked with steam; sweet and savory tart bases blind-baked at 350 °F. Creams and fillings: pastry cream cooled fast and labeled, buttercream, ganache, diplomat cream, curds, mousses with cooked meringue or pasteurized whites, entremets frozen for glazing, mirror glaze, fondant, Italian meringue and caramel. Decorating and finishing: glazing, decorating, custom cakes from their order form and the bakery case, restocked every 2 hours.',
     },
     {
       q: 'How does the production schedule and waste log work?',

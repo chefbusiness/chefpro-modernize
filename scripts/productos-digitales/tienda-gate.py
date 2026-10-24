@@ -92,7 +92,9 @@ GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia
 # Coffee Shop Checklists Kit Pro, 18-oct-2026), /kit-tareas-catering (gemelo EN: Catering Checklists Kit Pro, 18-oct-2026)
 # /kit-tareas-pizzeria (gemelo EN: Pizza Shop Checklists Kit Pro, 18-oct-2026), /kit-tareas-hamburgueseria (gemelo EN:
 # Burger Joint Checklists Kit Pro, 18-oct-2026), /kit-tareas-dark-kitchen (gemelo EN: Ghost Kitchen Checklists Kit
-# Pro, 18-oct-2026) y /kit-tareas-heladeria (gemelo EN: Ice Cream Shop Checklists Kit Pro, 24-oct-2026).
+# Pro, 18-oct-2026), /kit-tareas-heladeria (gemelo EN: Ice Cream Shop Checklists Kit Pro, 24-oct-2026),
+# /kit-tareas-chocolateria (gemelo EN: Chocolate Shop Checklists Kit Pro, 24-oct-2026) y /kit-tareas-pasteleria
+# (gemelo EN: Pastry Shop Checklists Kit Pro, 24-oct-2026).
 TAREAS_ES = ['/kit-tareas', '/kit-tareas-asador', '/kit-tareas-bar', '/kit-tareas-cafeteria', '/kit-tareas-catering',
              '/kit-tareas-chef-privado', '/kit-tareas-chocolateria', '/kit-tareas-dark-kitchen',
              '/kit-tareas-food-truck', '/kit-tareas-hamburgueseria', '/kit-tareas-heladeria', '/kit-tareas-hotel',
@@ -387,7 +389,17 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # traducidos tal cual, y el nombre de esa edición española en su subtítulo.
            'Adrián Molina', 'Lucía Torres', 'Heladería La Cremería', 'Heladería El Polo Norte', 'Raúl Ibáñez',
            'Sofía Delgado', 'Ana Belén Ruiz', 'Heladería Sabores del Sur',
-           'Kit de Tareas Recurrentes: Heladería Artesanal']
+           'Kit de Tareas Recurrentes: Heladería Artesanal',
+           # Ídem, Chocolate Shop Checklists Kit Pro (24-oct): testimonios del Kit de Tareas: Chocolatería traducidos tal
+           # cual, y el nombre de esa edición española en su subtítulo.
+           'Miguel Ángel Roca', 'Chocolatería Roca', 'Bombonería La Trufa Dorada', 'Javier Solís',
+           'Chocolates Artesanos Solís', 'Andrés Beltrán', 'Chocolatería Origen',
+           'Kit de Tareas Recurrentes: Chocolatería / Obrador de Chocolate',
+           # Ídem, Pastry Shop Checklists Kit Pro (24-oct): testimonios del Kit de Tareas: Pastelería traducidos tal cual
+           # («Laura Fernández», «Ana Belén Torres», «Isabel García» y «Fernando López» ya van arriba), y el nombre de esa
+           # edición española en su subtítulo.
+           'Pastelería La Miga de Oro', 'Dulce Tradición Obrador', 'Carlos Martín',
+           'Pastelería Familiar El Rincón Dulce', 'Raquel Sánchez', 'Kit de Tareas Recurrentes: Pastelería / Obrador']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.
