@@ -1039,22 +1039,28 @@ PRUEBA_ARROZ = 3.0
 def _escenario(destino, cambios, err, nombre, precios=None, arroz=None):
     """Hoja principal con valores cambiados vía pycel (compilador nuevo: sin estado de otros escenarios)."""
     from pycel import ExcelCompiler
-    xl = ExcelCompiler(filename=destino)
+    fichero = destino
+    if precios:                                     # las celdas de precio están vacías: copia con los precios tecleados
+        wb = openpyxl.load_workbook(destino)
+        for j, p in enumerate(precios):
+            wb[H2]['%s%d' % (ING_COLS[j], Y_PRECIO)].value = p
+        wb[H2]['B%d' % Y_ARROZ].value = arroz
+        fichero = os.path.join('/tmp', 'pael-calc-precios-%d.xlsx' % os.getpid())
+        wb.save(fichero)
+    xl = ExcelCompiler(filename=fichero)
     for k in S:                                                     # pycel: la celda tiene que estar en el grafo
         xl.evaluate("'%s'!B%d" % (H1, S[k]))
     e = OrderedDict(_DEF)
     for k, v in cambios.items():
         xl.set_value("'%s'!B%d" % (H1, K[k]), v)
         e[k] = v
-    if precios:
-        for j, p in enumerate(precios):
-            xl.set_value("'%s'!%s%d" % (H2, ING_COLS[j], Y_PRECIO), p)
-        xl.set_value("'%s'!B%d" % (H2, Y_ARROZ), arroz)
     esperado = calcular(e, precios, arroz)
     n = 0
     for k, v in esperado.items():
         n += 1
         _cmp(err, '%s · %s!B%d (%s) pycel' % (nombre, H1, S[k], k), xl.evaluate("'%s'!B%d" % (H1, S[k])), v)
+    if fichero != destino:
+        os.remove(fichero)
     return esperado, n
 
 
