@@ -61,6 +61,73 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Pastry Shop Checklists Kit Pro (24-oct-2026, noveno hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el Chocolate Shop (octavo, mismo día) → 2 y el resto de vivos bajan dos puestos. Es la MISMA tarjeta que ya
+  // estaba como «Coming soon in English» («Recurring Tasks: Pastry Shop / Bakery», entre los kits de tareas): se sube y
+  // su copy pasa a describir la edición EN (decía «journeyman» y «Epiphany»; la EN trae 413 tareas en 9 checklists y el briefing, 4
+  // registros y 2 bonus + la guía de equivalencias = 16 ficheros, con fechas US). Imagen: la del ES, sin texto.
+  {
+    name: 'Pastry Shop Checklists Kit Pro',
+    slug: '/kit-tareas-pasteleria',
+    description: '13 templates + 3 bonuses (16 files): 413 pastry shop tasks already written in 9 checklists and a pre-shift huddle, plus 4 logs: production schedule and waste log, cake order form, bakery allergen chart and food temperature log. Print it, delegate it, check it off.',
+    features: [
+      'Kitchen and bakery case opening and closing',
+      'Doughs, creams and fillings, decorating in °F',
+      'Roles: head pastry chef, pastry cook, assistant, counter',
+      'Cake order form, allergen chart, temperature log',
+      'Holidays, celebration cakes and Thanksgiving pies',
+    ],
+    iconName: 'Croissant',
+    image: '/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'pastry'],
+  },
+  // Chocolate Shop Checklists Kit Pro (24-oct-2026, octavo hermano vertical): → 2, tras el Pastry Shop. Es la MISMA
+  // tarjeta que ya estaba como «Coming soon in English» («Recurring Tasks: Chocolate Shop / Workshop»): se sube y su copy
+  // pasa a describir la edición EN (338 tareas, 9 + 3 bonus, 12 ficheros, templado en °F, venta al peso). Imagen: la del
+  // ES lleva rótulos en francés («Atelier du Chocolat», marca real) → el hero de la landing EN.
+  {
+    name: 'Chocolate Shop Checklists Kit Pro',
+    slug: '/kit-tareas-chocolateria',
+    description: "9 templates + 3 bonuses (12 files) with 338 chocolate shop tasks already written: opening and closing, tempering and molding, manager, duties by role, cleaning and inventory, holiday season, Valentine's Day, Easter and cash drawer count. Print it, delegate it, check it off.",
+    features: [
+      'Opening and closing: kitchen, display case and counter',
+      'Tempering dark, milk and white, molding bonbons and bars',
+      'Roles: chocolatier, sales associate, shift lead',
+      "Holiday season, Valentine's Day and Easter",
+      'Cleaning schedule, whole-shop checklist and cash count by weight',
+    ],
+    iconName: 'CakeSlice',
+    image: '/lovable-uploads/ai-gallery/use-case-chocolatero-bombones.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'chocolate'],
+  },
+  // Ice Cream Shop Checklists Kit Pro (24-oct-2026, séptimo hermano vertical del Restaurant Checklists Kit Pro): entró en
+  // la 1 y bajó a la 3 el mismo día, con el Pastry Shop y el Chocolate Shop. Es la MISMA tarjeta que ya estaba como
+  // «Coming soon in English»
+  // («Recurring Tasks: Artisan Ice Cream Shop», entre los kits de tareas): se sube y su copy pasa a describir la edición
+  // EN (decía «9 pre-filled operational checklists», «churning», «High/low season»; la EN trae 298 tareas, 9 + 3 bonus,
+  // 12 ficheros, batch freezing, peak season / off-season y ice cream catering). Imagen: la del ES lleva texto en español
+  // («HELADOS ARTESANALES MADRID 2026», «PRECIOS») → el hero de la landing EN.
+  {
+    name: 'Ice Cream Shop Checklists Kit Pro',
+    slug: '/kit-tareas-heladeria',
+    description: '9 templates + 3 bonuses (12 files) with 298 ice cream shop tasks already written: opening and closing, production (pasteurizing, aging and batch freezing), manager, duties by role, cleaning schedule, peak season, ice cream catering and cash drawer count. Print it, delegate it, check it off.',
+    features: [
+      'Opening and closing: dipping cabinets, toppings and counter',
+      'Pasteurizing, aging and batch freezing in °F',
+      'Roles: ice cream maker, scooper, shift lead',
+      'Peak season, off-season and ice cream catering',
+      'Cleaning schedule, whole-shop checklist and cash drawer count',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/use-case-heladeria-conos.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'ice-cream'],
+  },
   // Ghost Kitchen Checklists Kit Pro (18-oct-2026, sexto hermano vertical del Restaurant Checklists Kit Pro): el más
   // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
   // («Recurring Tasks: Dark Kitchen», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
@@ -751,22 +818,6 @@ const products = [
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
   },
-  {
-    name: 'Recurring Tasks: Pastry Shop / Bakery',
-    slug: '/kit-tareas-pasteleria',
-    description: '15 templates for pastry shops and bakeries: 9 checklists + 4 logs + 2 bonuses. Dough production, fermentation, creams, decoration, display case, roles, events. Print it, delegate it, and sign it off.',
-    features: [
-      'Complete artisan production',
-      'Doughs, fermentation, creams, decoration',
-      'Events: Christmas, Epiphany, Valentine\'s Day',
-      'Roles: head pastry chef, journeyman, assistant',
-    ],
-    iconName: 'Croissant',
-    image: '/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'pastry'],
-  },
 
   {
     name: 'Recurring Tasks: Full Hotel',
@@ -783,38 +834,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'management', 'hotel'],
-  },
-  {
-    name: 'Recurring Tasks: Artisan Ice Cream Shop',
-    slug: '/kit-tareas-heladeria',
-    description: '9 pre-filled operational checklists for artisan gelato and ice cream shops: production (pasteurization, churning), service, management, and seasonality.',
-    features: [
-      'Production: pasteurization and churning',
-      'Display case, toppings, and counter service',
-      'Roles: ice cream maker, counter staff, manager',
-      'High/low season plus event catering',
-    ],
-    iconName: 'IceCream',
-    image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'ice-cream'],
-  },
-  {
-    name: 'Recurring Tasks: Chocolate Shop / Workshop',
-    slug: '/kit-tareas-chocolateria',
-    description: '11 templates for artisan chocolate shops: 9 checklists plus 2 bonus. Production (tempering, molding, bonbons), display case, service, management, and seasonality.',
-    features: [
-      'Production: tempering, molding, and bonbons',
-      'Display case, packaging, and counter service',
-      'Roles: chocolatier, counter staff, manager',
-      'Seasonal: Christmas, Valentine\'s Day, Easter',
-    ],
-    iconName: 'CakeSlice',
-    image: '/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'chocolate'],
   },
   {
     name: 'Recurring Tasks: Creative / Chef-Driven Restaurant',

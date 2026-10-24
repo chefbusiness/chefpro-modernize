@@ -108,6 +108,9 @@ SCRATCH = os.environ.get(
 #: pizza-shop-checklist-templates: Pizza Shop Checklists Kit Pro (EN), `--kit pizza` (checklists-kit/pizza/SPEC.md).
 #: burger-joint-checklist-templates: Burger Joint Checklists Kit Pro (EN), `--kit burger` (checklists-kit/burger/SPEC.md).
 #: ghost-kitchen-checklist-templates: Ghost Kitchen Checklists Kit Pro (EN), `--kit ghost` (checklists-kit/ghost/SPEC.md).
+#: ice-cream-shop-checklist-templates: Ice Cream Shop Checklists Kit Pro (EN), `--kit icecream` (checklists-kit/icecream/SPEC.md).
+#: chocolate-shop-checklist-templates: Chocolate Shop Checklists Kit Pro (EN), `--kit chocolate` (checklists-kit/chocolate/SPEC.md).
+#: pastry-shop-checklist-templates: Pastry Shop Checklists Kit Pro (EN), `--kit pastry` (checklists-kit/pastry/SPEC.md).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
              'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan',
@@ -115,7 +118,8 @@ EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'mobile-bar-business-plan', 'food-cost-menu-engineering-guide', 'how-to-open-a-pastry-shop',
              'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates',
              'catering-checklist-templates', 'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
-             'ghost-kitchen-checklist-templates'}
+             'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',
+             'chocolate-shop-checklist-templates', 'pastry-shop-checklist-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'

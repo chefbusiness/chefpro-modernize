@@ -98,6 +98,7 @@ RX_RELLENO = re.compile(r'PENDING-EN c\d{4}')
 PT_LINEA = 1.36                                                       # alto de línea ≈ 1.36 × cuerpo (pt)
 ALTO_DEFECTO = 15.0
 ALTO_MAX = 409.0
+PT_UNIDAD = 5.25                                                      # 1 unidad de ancho ≈ 7 px = 5,25 pt (texto girado)
 
 
 class Aborta(Exception):
@@ -585,6 +586,7 @@ def normalizar_comillas(L):
 #   · con ajuste en una fila de alto fijo, o celda combinada de una sola fila (Excel no autoajusta combinadas):
 #     si el EN pide más líneas que el ES, alto = líneas EN × 1.36 × cuerpo + el aire del ES (≤ 6 pt); nunca baja.
 #     Las filas de alto automático sin combinar las autoajusta Excel al abrir (como en el ES).
+#   · texto girado (textRotation): se mide contra el alto de la fila; ni ajuste ni alto, solo el aviso de desborde.
 # ==========================================================================
 def ancho_col(ws, idx):
     for d in ws.column_dimensions.values():
@@ -656,6 +658,15 @@ def objetivo_ajuste(ws_en, ws_es, cel, anclas, cubiertas):
     cj = caja(ws_en, cel, anclas, cubiertas)
     if cj is None:
         return False, None, False
+    if cel.alignment is not None and cel.alignment.textRotation:
+        # texto girado (pastelería, 12: cabeceras de alérgenos a 90° en una fila de 95 pt): la línea corre a lo alto
+        # de la fila (o filas, si es combinada), no a lo ancho. Ni ajuste ni alto: desborde solo si el EN ya no cabe a
+        # lo alto y el ES sí. Ningún otro kit del circuito trae celdas giradas (su resultado no cambia)
+        r1, r2 = (anclas[(cel.row, cel.column)][1::2] if (cel.row, cel.column) in anclas else (cel.row, cel.row))
+        dims = [ws_es.row_dimensions.get(r) for r in range(r1, r2 + 1)]
+        disp = sum((d.height if d is not None and d.height else ALTO_DEFECTO) for d in dims) / PT_UNIDAD
+        cabia_es = isinstance(es, str) and ancho_texto(es, cel_es) <= disp + 1e-9
+        return False, None, cabia_es and ancho_texto(t, cel) > disp + 1e-9
     ancho, filas, combinada, disponible = cj
     wrap_es = bool(cel_es.alignment and cel_es.alignment.wrap_text)
     necesita = False

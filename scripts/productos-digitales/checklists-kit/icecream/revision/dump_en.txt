@@ -1,0 +1,2510 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/ice-cream-shop-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-ice-cream-shop-opening-closing-checklists.xlsx
+# docProps: title='Ice Cream Shop Opening & Closing Checklists: Dipping Cabinets, Toppings & Counter' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Ice Cream Shop Opening & Closing Checklists: Dipping Cabinets, Toppings & Counter
+B4     : How to use this template:
+B5     : ▸ Complete checklist for the daily opening and closing of your ice cream shop.
+B6     : ▸ Includes the dipping cabinet and walk-in checks, setup and closing.
+B7     : ▸ Mark ✓ on each completed task. Adjust the times to your shop.
+B9     : Customization:
+B10    : ▸ Green cells are editable: assigned to, time, notes.
+B11    : ▸ Adjust temperatures to your equipment and local rules.
+B12    : ▸ Print on US Letter and keep it in the production room and at the counter.
+B14    : Hygiene, allergens and temperatures:
+B15    : ▸ The first section of "Opening" covers personal hygiene and a safe start: exhaust fan first and, if you have gas for waffles or crepes, a gas-smell check before turning anything on.
+B16    : ▸ A shop runs three different temperatures; never mix them up: storage 0 °F or below, dipping cabinet service 6–10 °F (per the manufacturer) and mix aging 36–39 °F, never above 41 °F. Dipping cabinets are NOT turned off at night: they stay on — on their night/storage setting if your model has one, per the manufacturer.
+B17    : ▸ Allergens travel on the scoop: use the dipper well or one scoop per flavor. Water does not remove allergens: for an allergy order, wash hands, wear fresh gloves and use a clean, sanitized scoop. Cones, wafers and cookies contain wheat; pistachio, hazelnut and almond are tree nuts, and peanut butter flavors and toppings carry peanuts (US: 9 major allergens; UK: 14).
+B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B20    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Opening» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Ice Cream Shop Opening
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Personal hygiene and safe start
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Clean uniform and apron, hair covered with a cap or hairnet, non-slip shoes
+C6     : General
+A7     : 2
+B7     : No jewelry on hands or arms except a plain band; short, clean, unpolished nails; no bare-hand contact with cones or toppings
+C7     : General
+A8     : 3
+B8     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C8     : General
+A9     : 4
+B9     : Wash hands at the handwashing sink on arrival and at every change of task: soap, hot water (at least 100 °F, FDA Food Code 5-202.12) and single-use paper towels
+C9     : General
+A10    : 5
+B10    : Person in charge checks that no one has symptoms (vomiting, diarrhea, jaundice, sore throat with fever, infected wound); sick staff don't handle food
+C10    : General
+A11    : 6
+B11    : Turn on the production room exhaust and ventilate before starting the pasteurizer and batch freezer
+C11    : Production
+A12    : 7
+B12    : If the production room or waffle/crepe area has GAS: check there is NO gas smell BEFORE lighting anything. If you smell gas, touch nothing, get everyone out and call the gas company or 911 from outside
+C12    : Production
+A14    : Equipment startup and checks
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : First thing: if your dipping cabinets have a night/storage setting, switch them back to service mode (6–10 °F, per the manufacturer), and confirm they held temperature all night — log reading: ____ °F
+C16    : Dipping cabinet
+A17    : 2
+B17    : Check the walk-in and reach-in freezers ran all night and log the temperature (0 °F or below) — log reading: ____ °F. If out of range, hold the product until assessed
+C17    : Freezer
+A18    : 3
+B18    : Check the aging cooler (36–39 °F) — log reading: ____ °F: above 41 °F, the person in charge assesses the mix (how warm, for how long) before it is used
+C18    : Aging
+A19    : 4
+B19    : Check that the blast freezer / hardening cabinet is working
+C19    : Hardening
+A20    : 5
+B20    : Turn on the dipping cabinet lights and the seating area lights
+C20    : Dipping cabinet
+A21    : 6
+B21    : Log the day's temperatures (dipping cabinets, freezers and aging): in the temperature sheet of the HACCP Food Safety Kit Pro if you have it; if not, in the "Notes" column of this sheet
+C21    : Office
+A23    : Service setup
+A24    : #
+B24    : Task
+C24    : Area
+D24    : Assigned to
+E24    : ✓
+F24    : Time
+G24    : Notes
+A25    : 1
+B25    : Set up fresh toppings: wash raw FRUIT under running potable water (food-safe produce wash only, at label dose, then RINSE); nuts and sprinkles in a closed container
+C25    : Counter
+A26    : 2
+B26    : Use the dipper well (running water) or one scoop per flavor: tree nuts and peanuts (pistachio, hazelnut, peanut butter) travel from pan to pan on the scoop
+C26    : Counter
+A27    : 3
+B27    : Keep the ALLERGEN chart by flavor in view and check it matches today's pans in the dipping cabinet (milk, egg, tree nuts, peanuts, wheat in cones, wafers and cookies, soy, sesame)
+C27    : Counter
+A28    : 4
+B28    : Prepare sauces: chocolate, caramel, berry, dulce de leche (dairy and cut fruit covered at 41 °F or below; hot fudge in its warmer per the manufacturer)
+C28    : Counter
+A29    : 5
+B29    : Restock cones, cups, spoons and napkins
+C29    : Counter
+A30    : 6
+B30    : Check stock of house-made cones and wafers
+C30    : Counter
+A31    : 7
+B31    : Clean the dipping cabinet glass (inside and out)
+C31    : Cleaning
+A32    : 8
+B32    : Check that the pans in the dipping cabinet look right (no ice crystals)
+C32    : Dipping cabinet
+A34    : Opening to the public
+A35    : #
+B35    : Task
+C35    : Area
+D35    : Assigned to
+E35    : ✓
+F35    : Time
+G35    : Notes
+A36    : 1
+B36    : Turn on the POS / cash register and verify the starting bank
+C36    : Register
+A37    : 2
+B37    : Check that the card terminal and payment device work
+C37    : Register
+A38    : 3
+B38    : Put out the outdoor sign or board with today's flavors
+C38    : Counter
+A39    : 4
+B39    : Check the patio / outdoor area is clean, if used
+C39    : Patio
+A40    : 5
+B40    : Unlock the door and turn on the outdoor sign
+C40    : General
+B41    : Tasks done:
+C41    = =COUNTIFS(B6:B40,"?*",E6:E40,"✓")-COUNTIFS(B6:B40,"Task",E6:E40,"✓")   → caché 0.0
+D41    : of
+E41    = =COUNTIF(B6:B40,"?*")-COUNTIF(B6:B40,"Task")-COUNTIF(E6:E40,"N/A")   → caché 26.0
+A42    : Signed off by: _________________  Date: ___/___/______
+A43    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E21 E25 E26 E27 E28 E29 E30 E31 E32 E36 E37 E38 E39 E40 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G40 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Closing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Ice Cream Shop Closing
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Product storage
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Cover all pans with plastic wrap or an airtight lid
+C6     : Dipping cabinet
+A7     : 2
+B7     : Leave the dipping cabinets ON (never turn them off with product inside: an overnight shutdown can ruin the whole batch); use the night/storage setting only if your model has one, per the manufacturer
+C7     : Dipping cabinet
+A8     : 3
+B8     : Log the day's waste (flavor, lb and reason: ran out, discarded, icy or thawed): it corrects food cost and tomorrow's production plan
+C8     : Office
+A9     : 4
+B9     : Label pans with an updated use-by date
+C9     : Dipping cabinet
+A10    : 5
+B10    : Check pan stock for tomorrow's production
+C10    : Freezer
+A12    : Equipment and service-area cleaning
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Clean, then sanitize the dipping cabinet exterior surfaces (test strip)
+C14    : Cleaning
+A15    : 2
+B15    : Empty and clean the sauce dispensers
+C15    : Cleaning
+A16    : 3
+B16    : Wash, rinse and sanitize scoops and spades (test strip); empty, scrub and sanitize the dipper well
+C16    : Cleaning
+A17    : 4
+B17    : Clean, then sanitize the counter, scale and checkout area (test strip)
+C17    : Cleaning
+A18    : 5
+B18    : Empty trash cans and replace liners
+C18    : Cleaning
+A19    : 6
+B19    : Mop the floors in the seating area, production room and storage
+C19    : Cleaning
+A20    : 7
+B20    : Clear and clean the patio, if used
+C20    : Patio
+A22    : Administrative close
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Cash count: cash, card and other tenders
+C24    : Register
+A25    : 2
+B25    : Log the day's sales by flavor (top sellers)
+C25    : Office
+A26    : 3
+B26    : Note shift incidents in the logbook
+C26    : Office
+A27    : 4
+B27    : Turn off lights, outdoor sign and non-essential equipment
+C27    : General
+A28    : 5
+B28    : Lock up and check the doors and alarm
+C28    : General
+B29    : Tasks done:
+C29    = =COUNTIFS(B6:B28,"?*",E6:E28,"✓")-COUNTIFS(B6:B28,"Task",E6:E28,"✓")   → caché 0.0
+D29    : of
+E29    = =COUNTIF(B6:B28,"?*")-COUNTIF(B6:B28,"Task")-COUNTIF(E6:E28,"N/A")   → caché 17.0
+A30    : Signed off by: _________________  Date: ___/___/______
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G28 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 02-ice-cream-production-checklists.xlsx
+# docProps: title='Ice Cream & Gelato Production Checklists: Pasteurizing, Aging & Batch Freezing' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Ice Cream & Gelato Production Checklists: Pasteurizing, Aging & Batch Freezing
+B4     : How to use this template:
+B5     : ▸ Checklist for the two key production phases of artisan ice cream.
+B6     : ▸ Pasteurizing: mix, heat treatment, cooling and aging. Note: pasteurizing your own mix usually requires a STATE frozen dessert or dairy manufacturer license (e.g. Vermont, Georgia; Arizona exempts on-premises sales with an approved plan), and some states also require one to batch-freeze pasteurized mix or run a soft serve machine (Vermont, Massachusetts); with bought pasteurized mix a health permit is usually enough. Check with your state department of agriculture or health.
+B7     : ▸ Batch freezing: texturizing, draw, hardening and storage.
+B9     : Customization:
+B10    : ▸ Adjust temperatures and times to your equipment and recipes.
+B11    : ▸ Use the notes to log batches, yield and overrun.
+B12    : ▸ Print and keep it in the production room next to the recipe cards.
+B14    : Shelf life and expiry:
+B15    : ▸ At the bottom of "Batch Freezing" there is an editable shelf life table by food group: adjust it to your product and supplier. It sits outside the counter because it is a reference, not a task.
+B16    : ▸ Pasteurized base mix is NOT frozen: it is aged at 36–39 °F (never above 41 °F) and batch-frozen within 3–5 days (kit criterion, inside the 7-day FDA date marking, 3-501.17). What gets frozen is the finished ice cream, at 0 °F or below.
+B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pasteurizing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pasteurizing Station
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Mix preparation
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Weigh all ingredients per the flavor recipe card
+C6     : Production
+A7     : 2
+B7     : Blend dry ingredients (sugars, stabilizers, milk powder)
+C7     : Production
+A8     : 3
+B8     : Add liquids (milk, cream) to the pasteurizer
+C8     : Pasteurizer
+A9     : 4
+B9     : Add the dry blend to the liquids with the mixer / high-shear blender
+C9     : Pasteurizer
+A11    : Pasteurizing and cooling
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Add fats and emulsifiers (cream, butter, egg yolks, stabilizer blend) while the mix HEATS through 104–122 °F, before the pasteurizing hold: anything added after pasteurizing goes in raw — log reading: ____ °F
+C13    : Pasteurizer
+A14    : 2
+B14    : Pasteurize at 185 °F for 15 seconds (the kit's high-temp target); typical state minimums: batch 155 °F for 30 min or HTST 175 °F for 25 s — check your state rules and your pasteurizer's validated program, and keep the recording chart if your license requires one — log reading: ____ °F
+C14    : Pasteurizer
+A15    : 3
+B15    : Cool the mix fast to 41 °F or below: 135 → 70 °F within 2 h, then to 41 °F within 4 h (pasteurizer cooling cycle, a blast chiller or an ice bath; faster if your license says so) — log reading: ____ °F
+C15    : Pasteurizer
+A16    : 4
+B16    : Verify the final mix temperature (41 °F or below, ideally 36–39 °F) — log reading: ____ °F
+C16    : Production
+A18    : Aging
+A19    : #
+B19    : Task
+C19    : Area
+D19    : Assigned to
+E19    : ✓
+F19    : Time
+G19    : Notes
+A20    : 1
+B20    : Transfer the mix to a clean aging container
+C20    : Aging
+A21    : 2
+B21    : Label: flavor, date, aging start time, batch
+C21    : Aging
+A22    : 3
+B22    : Respect the aging time: minimum 4 h, ideal 8–12 h at 36–39 °F — log reading: ____ °F
+C22    : Aging
+A23    : 4
+B23    : Clean, then sanitize the pasteurizer after each use, per the manufacturer (test strip)
+C23    : Cleaning
+A24    : 5
+B24    : Record the production batch on the traceability sheet
+C24    : Office
+B25    : Tasks done:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Task",E6:E24,"✓")   → caché 0.0
+D25    : of
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Task")-COUNTIF(E6:E24,"N/A")   → caché 13.0
+A26    : Signed off by: _________________  Date: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G24 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Batch Freezing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Batch Freezing Station
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Batch freezing prep
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check that the mix has completed its aging time
+C6     : Aging
+A7     : 2
+B7     : Stir the mix gently before pouring it into the batch freezer
+C7     : Production
+A8     : 3
+B8     : Set the batch freezer draw temperature (per the manufacturer): ice cream 16–19 °F | sorbet 10–14 °F
+C8     : Batch freezer
+A9     : 4
+B9     : Pre-chill pans in the freezer (−4 °F)
+C9     : Freezer
+A11    : Batch freezing and draw
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Pour the mix into the batch freezer and start the cycle
+C13    : Batch freezer
+A14    : 2
+B14    : Add swirls, mix-ins or ripple in the last minute, if used
+C14    : Batch freezer
+A15    : 3
+B15    : Draw the ice cream into a pre-chilled pan with a spade
+C15    : Production
+A16    : 4
+B16    : Label the pan: flavor, production date, use-by date and batch — shelf life by food group is in the table at the bottom of this sheet
+C16    : Production
+A17    : 5
+B17    : Weigh the pan and log yield / overrun (ice cream must weigh at least 4.5 lb per gallon, 21 CFR 135.110; gelato has no federal standard)
+C17    : Production
+A19    : Hardening and storage
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Harden the pan to 0 °F or below in the blast freezer (freezing cycle) — log reading: ____ °F
+C21    : Hardening
+A22    : 2
+B22    : Move the pan to the storage freezer, 0 °F to −4 °F — log reading: ____ °F
+C22    : Freezer
+A23    : 3
+B23    : Log the day's production: flavor, lb, batch, destination
+C23    : Office
+A24    : 4
+B24    : Clean the batch freezer per the manufacturer: remove the dasher, scraper blades and door gasket, clean the cylinder in place, then sanitize
+C24    : Cleaning
+A25    : 5
+B25    : Clean, then sanitize production surfaces and utensils used (test strip)
+C25    : Cleaning
+B26    : Tasks done:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Task",E6:E25,"✓")   → caché 0.0
+D26    : of
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Task")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Signed off by: _________________  Date: ___/___/______
+A29    : SHELF LIFE GUIDE — adjust it to your product, equipment and supplier
+B30    : Food group
+C30    : Shelf life
+D30    : Notes
+B31    : House-made ice cream and sorbet in a covered pan
+C31    : 2–3 months at 0 °F
+D31    : In the dipping cabinet quality drops within 3–5 days: rotate by flavor, not by the long freezer date
+B32    : Pasteurized base mix, not yet batch-frozen
+C32    : 3–5 days at 36–39 °F
+D32    : Never freeze the base: it separates and loses structure when thawed
+B33    : Assembled ice cream cakes and semifreddo
+C33    : 1 month at 0 °F
+D33    : Wrapped and boxed: they soak up freezer odors very easily
+B34    : Frozen fruit and fruit purees
+C34    : 6–12 months at 0 °F
+D34    : Freeze in single-use portions: never thaw and refreeze
+B35    : Nuts, pastes and pralines
+C35    : 6 months at 0 °F · 2–3 months refrigerated
+D35    : Nut fat goes rancid without warning: always put the opening date on the jar
+B36    : Opened swirls, sauces and toppings
+C36    : Per the manufacturer's label
+D36    : The clock starts at OPENING: write it on the container the same day
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G25 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 03-ice-cream-shop-manager-checklist.xlsx
+# docProps: title='Ice Cream Shop Manager Checklist: Daily, Weekly & Monthly' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Ice Cream Shop Manager Checklist: Daily, Weekly & Monthly
+B4     : How to use this template:
+B5     : ▸ Checklist for the daily, weekly and monthly management of the ice cream shop.
+B6     : ▸ Covers production, sales, equipment, purchasing and financial control.
+B7     : ▸ The shift lead should review these tasks every day / week / month.
+B9     : Customization:
+B10    : ▸ Adjust frequencies and responsibilities to your structure.
+B11    : ▸ Green cells are editable so you can customize them.
+B12    : ▸ Use the notes to log KPIs and observations.
+B14    : Time records:
+B15    : ▸ Under the FLSA you must keep accurate records of the hours worked by hourly (non-exempt) staff, seasonal staff included (29 CFR 516.2): close out and initial daily, file monthly.
+B16    : ▸ Keep time records 2 years and payroll records 3 (29 CFR 516.5–516.6; some states require longer, e.g. NY 6), available to the Department of Labor.
+B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Daily Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Daily Tasks
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Planning and production
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review today's production plan (flavors and quantities)
+C6     : Production
+A7     : 2
+B7     : Check stock of key ingredients (milk, cream, sugar, fruit)
+C7     : Storage
+A8     : 3
+B8     : Review the previous shift's temperature logs
+C8     : Office
+A9     : 4
+B9     : Check aging mixes ready to batch-freeze
+C9     : Aging
+A11    : Sales and operations
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Review yesterday's sales by flavor (spot top sellers)
+C13    : Office
+A14    : 2
+B14    : Assign the team to positions: production room, counter, patio
+C14    : Team
+A15    : 3
+B15    : Check supplier orders pending delivery
+C15    : Storage
+A16    : 4
+B16    : Handle incidents from the previous shift (logbook)
+C16    : Office
+A17    : 5
+B17    : Review and approve the team's time-clock punches (in, out, breaks) in the POS or time-clock app, seasonal staff and minors included
+C17    : Team
+A19    : Service and quality
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Check the dipping cabinet display (visual appeal, tidiness)
+C21    : Dipping cabinet
+A22    : 2
+B22    : Check flavor rotation in the dipping cabinet (FIFO)
+C22    : Dipping cabinet
+A23    : 3
+B23    : Taste the flavor of the day / new recipe, if needed, with a clean spoon each time (never the same one twice)
+C23    : Production
+A24    : 4
+B24    : Answer online reviews and reply to comments (Google Business Profile, Yelp)
+C24    : Office
+B25    : Tasks done:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Task",E6:E24,"✓")   → caché 0.0
+D25    : of
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Task")-COUNTIF(E6:E24,"N/A")   → caché 13.0
+A26    : Signed off by: _________________  Date: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G24 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Weekly Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Weekly Tasks
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Analysis and control
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Analyze the week's sales by flavor (ranking, trends)
+C6     : Office
+A7     : 2
+B7     : Calculate weekly food cost: target 28–32% or lower
+C7     : Office
+A8     : 3
+B8     : Review compliance with the opening/closing checklists
+C8     : Office
+A9     : 4
+B9     : Quick team meeting: feedback, improvements, planning
+C9     : Team
+A11    : Purchasing and menu
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Place the weekly order for ingredients
+C13    : Storage
+A14    : 2
+B14    : Plan next week's flavors (rotation, seasonality)
+C14    : Production
+A15    : 3
+B15    : Update the menu board with available flavors
+C15    : Counter
+A16    : 4
+B16    : Check stock of packaging, cones, cups and extras
+C16    : Storage
+A18    : Maintenance
+A19    : #
+B19    : Task
+C19    : Area
+D19    : Assigned to
+E19    : ✓
+F19    : Time
+G19    : Notes
+A20    : 1
+B20    : Check equipment condition: batch freezer, pasteurizer, dipping cabinets
+C20    : Production
+A21    : 2
+B21    : Supervise the weekly deep clean of equipment
+C21    : Cleaning
+A22    : 3
+B22    : Check expiry dates in storage and freezers (FIFO)
+C22    : Storage
+B23    : Tasks done:
+C23    = =COUNTIFS(B6:B22,"?*",E6:E22,"✓")-COUNTIFS(B6:B22,"Task",E6:E22,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B6:B22,"?*")-COUNTIF(B6:B22,"Task")-COUNTIF(E6:E22,"N/A")   → caché 11.0
+A24    : Signed off by: _________________  Date: ___/___/______
+A25    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E20 E21 E22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G22 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Monthly Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Monthly Tasks
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Financial control
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Prepare the monthly P&L: sales, ingredient costs, labor, fixed costs
+C6     : Office
+A7     : 2
+B7     : Take a full valued inventory (ingredients, packaging, product)
+C7     : Storage
+A8     : 3
+B8     : Review monthly food cost by flavor family
+C8     : Office
+A9     : 4
+B9     : Evaluate profitability by flavor (unit margin)
+C9     : Office
+A11    : Team and training
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Team performance reviews
+C13    : Team
+A14    : 2
+B14    : Plan next month's schedule and time off
+C14    : Team
+A15    : 3
+B15    : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C15    : Team
+A16    : 4
+B16    : Training session: new recipes, techniques, customer service
+C16    : Team
+A18    : Product and maintenance
+A19    : #
+B19    : Task
+C19    : Area
+D19    : Assigned to
+E19    : ✓
+F19    : Time
+G19    : Notes
+A20    : 1
+B20    : Preventive equipment maintenance (check gaskets, filters)
+C20    : Production
+A21    : 2
+B21    : Plan next month's seasonal menu
+C21    : Office
+A22    : 3
+B22    : Update flavor recipe cards if anything changes
+C22    : Office
+A23    : 4
+B23    : Review and answer the month's online reviews (Google Business Profile, Yelp)
+C23    : Office
+A24    : 5
+B24    : Evaluate suppliers: quality, price, reliability
+C24    : Office
+A25    : 6
+B25    : Review the month's food safety documents and logs
+C25    : Office
+B26    : Tasks done:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Task",E6:E25,"✓")   → caché 0.0
+D26    : of
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Task")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Signed off by: _________________  Date: ___/___/______
+A28    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E20 E21 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G25 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 04-ice-cream-shop-duties-by-role.xlsx
+# docProps: title='Ice Cream Shop Duties by Role: Ice Cream Maker, Scooper & Shift Lead' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Ice Cream Shop Duties by Role: Ice Cream Maker, Scooper & Shift Lead
+B4     : How to use this template:
+B5     : ▸ Three sheets with the specific tasks for each role.
+B6     : ▸ Ice Cream Maker: production, batch freezing, equipment cleaning.
+B7     : ▸ Scooper & Counter: customer service, dipping cabinet, register.
+B8     : ▸ Shift Lead: supervision, flow, incidents.
+B10    : Customization:
+B11    : ▸ Adapt to the size of your team and structure.
+B12    : ▸ Hand each role its own sheet.
+B14    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B15    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Ice Cream Maker» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Ice Cream Maker Tasks
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Start of shift
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check aging mixes ready to batch-freeze
+C6     : Aging
+A7     : 2
+B7     : Check that the pasteurizer and batch freezer are clean and in working order
+C7     : Production
+A8     : 3
+B8     : Weigh ingredients per the recipe cards in the production plan
+C8     : Production
+A9     : 4
+B9     : Set out clean, pre-chilled pans
+C9     : Freezer
+A11    : Production
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Prepare and pasteurize mixes per the day's plan
+C13    : Pasteurizer
+A14    : 2
+B14    : Batch-freeze flavors in priority order (sold-out ones first)
+C14    : Batch freezer
+A15    : 3
+B15    : Add swirls and mix-ins per the flavor recipe card
+C15    : Batch freezer
+A16    : 4
+B16    : Refill the dipping cabinet with tempered pans (moved up from the storage freezer ahead of time so they're scoopable; neat visual finish)
+C16    : Dipping cabinet
+A17    : 5
+B17    : Log production batches: flavor, lb, date, use-by
+C17    : Office
+A19    : End of shift
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Clean and sanitize the batch freezer (remove dasher and gasket), per the manufacturer
+C21    : Cleaning
+A22    : 2
+B22    : Clean the pasteurizer if it was used
+C22    : Cleaning
+A23    : 3
+B23    : Clean the production room: surfaces, scales, utensils (clean, then sanitize; test strip)
+C23    : Cleaning
+A24    : 4
+B24    : Leave mixes aging for the next day
+C24    : Aging
+A25    : 5
+B25    : Report incidents and stock to the shift lead
+C25    : Office
+B26    : Tasks done:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Task",E6:E25,"✓")   → caché 0.0
+D26    : of
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Task")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Signed off by: _________________  Date: ___/___/______
+A28    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G25 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Scooper & Counter» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Scooper & Counter Tasks
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Start of shift
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check the dipping cabinet display (tidy, clean, appealing)
+C6     : Dipping cabinet
+A7     : 2
+B7     : Set up toppings, sauces, cones and cups at the counter
+C7     : Counter
+A8     : 3
+B8     : Check that the register/POS and card terminal work
+C8     : Register
+A9     : 4
+B9     : Review today's flavor board and allergens
+C9     : Counter
+A11    : During service
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Serve customers: explain flavors and allergens, make recommendations; samples on a single-use tasting spoon that never goes back in the pan
+C13    : Service
+A14    : 2
+B14    : Serve ice cream with a neat presentation (even scoop, topping)
+C14    : Service
+A15    : 3
+B15    : Ring up correctly and offer the loyalty card
+C15    : Register
+A16    : 4
+B16    : Keep the counter, dipping cabinet glass and service area clean
+C16    : Cleaning
+A17    : 5
+B17    : Tell production when a flavor runs out or gets low
+C17    : Service
+A18    : 6
+B18    : Manage lines and customer flow at peak times
+C18    : Service
+A20    : End of shift
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Cash count: cash, card and other tenders
+C22    : Register
+A23    : 2
+B23    : Clear toppings and sauces; store perishables covered at 41 °F or below, dry items in a closed container
+C23    : Counter
+A24    : 3
+B24    : Clean the counter area and service equipment
+C24    : Cleaning
+A25    : 4
+B25    : Report incidents and best-selling flavors to the shift lead
+C25    : Office
+B26    : Tasks done:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Task",E6:E25,"✓")   → caché 0.0
+D26    : of
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Task")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Signed off by: _________________  Date: ___/___/______
+A28    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E18 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G25 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Shift Lead» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Shift Lead Tasks
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Start of shift
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Supervise the full opening per the checklist
+C6     : Office
+A7     : 2
+B7     : Check who is on the team and assign positions
+C7     : Team
+A8     : 3
+B8     : Review the previous shift's logbook
+C8     : Office
+A9     : 4
+B9     : Check dipping cabinet (6–10 °F) and freezer (0 °F or below) temperatures in the temperature log — log reading: ____ °F
+C9     : Dipping cabinet
+A11    : During the shift
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Watch customer flow and reinforce positions if needed
+C13    : Service
+A14    : 2
+B14    : Handle complaints and special customer requests
+C14    : Service
+A15    : 3
+B15    : Monitor dipping cabinet temperatures (6–10 °F) during service — log reading: ____ °F
+C15    : Dipping cabinet
+A16    : 4
+B16    : Schedule team breaks without hurting service
+C16    : Team
+A17    : 5
+B17    : Approve discounts, comps or price changes
+C17    : Office
+A19    : End of shift
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Supervise the full closing per the checklist
+C21    : Office
+A22    : 2
+B22    : Log the shift's incidents in the logbook
+C22    : Office
+A23    : 3
+B23    : Verify the cash count and sign
+C23    : Register
+A24    : 4
+B24    : Pass relevant news to the next shift / manager
+C24    : Office
+B25    : Tasks done:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Task",E6:E24,"✓")   → caché 0.0
+D25    : of
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Task")-COUNTIF(E6:E24,"N/A")   → caché 13.0
+A26    : Signed off by: _________________  Date: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G24 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 05-ice-cream-shop-cleaning-checklist-maintenance.xlsx
+# docProps: title='Ice Cream Shop Cleaning Checklist & Maintenance Schedule' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Ice Cream Shop Cleaning Checklist & Maintenance Schedule
+B4     : How to use this template:
+B5     : ▸ Weekly deep cleaning, equipment maintenance and monthly control.
+B6     : ▸ Essential to keep product quality up and food safety in order.
+B7     : ▸ Set a fixed day of the week for deep cleaning.
+B9     : Customization:
+B10    : ▸ Adapt the frequencies to your production volume and equipment.
+B11    : ▸ Monthly tasks can be spread across the month.
+B13    : What is neither weekly nor monthly:
+B14    : ▸ The "Quarterly & Annual" sheet covers what is hired out and what an inspection asks for: pest control, hood and exhaust ducts (NFPA 96, if you cook with grease), refrigeration (EPA 608), thermometer calibration, fire extinguishers (OSHA), gas, backflow, health permit and state frozen dessert license if you manufacture, food handler cards and allergens, insurance (including spoilage) and POS / sales tax.
+B15    : ▸ On that sheet the "Frequency" column replaces "Time", and the service report # goes in "Notes": without the signed report, the task isn't done for inspection purposes.
+B16    : ▸ Equipment breakdown coverage with food spoilage is not an extra in an ice cream shop: it's what pays out when a freezer dies in July.
+B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Weekly Deep Clean» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Deep Cleaning Checklist
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Dipping cabinets and service area
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Remove and clean the inner racks of the dipping cabinets
+C6     : Dipping cabinet
+A7     : 2
+B7     : Clean the full interior of the dipping cabinets (walls, base, glass)
+C7     : Dipping cabinet
+A8     : 3
+B8     : Clean and sanitize the sauce and topping dispensers (take apart, wash, rinse, sanitize; test strip)
+C8     : Counter
+A9     : 4
+B9     : Sanitize the cone, cup and extras trays
+C9     : Counter
+A11    : Production room and equipment
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Take apart and clean the batch freezer parts (dasher, scraper blades, door gasket); clean the cylinder in place
+C13    : Production
+A14    : 2
+B14    : Clean the condenser filters on refrigeration units
+C14    : Production
+A15    : 3
+B15    : Clean production room walls and shelves
+C15    : Production
+A16    : 4
+B16    : Sanitize the aging containers
+C16    : Aging
+A17    : 5
+B17    : Clean the ice machine if used, per the manufacturer
+C17    : Production
+A19    : Walk-ins and storage
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Clean the inside of the storage freezers (not a task for 14–15-year-olds: FLSA)
+C21    : Freezer
+A22    : 2
+B22    : Check expiry dates (FIFO) in the walk-ins and storage
+C22    : Storage
+A23    : 3
+B23    : Clean storage shelves and floor
+C23    : Storage
+B24    : Tasks done:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Task",E6:E23,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Task")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Signed off by: _________________  Date: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Weekly Upkeep & Stock» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Upkeep & Stock
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Preventive maintenance
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Batch freezer check per the manufacturer: scraper blades, dasher and door gasket for wear, and the draw temperature on the day's first batch — never run a freezing cycle with the cylinder empty — log reading: ____ °F
+C6     : Production
+A7     : 2
+B7     : Check that each refrigeration unit holds temperature, with no frost or odd noises; call the certified technician if not (staff never handle refrigerant)
+C7     : Production
+A8     : 3
+B8     : Check production scales with calibration weights; a scale used to sell by weight must be legal-for-trade (NTEP)
+C8     : Production
+A9     : 4
+B9     : Check the condition of utensils: spades, scoops, molds
+C9     : Production
+A10    : 5
+B10    : If you serve coffee: backflush the group head with detergent and replace the gasket if due. If you have a dishwasher: run its cleaning cycle (filters and wash arms)
+C10    : Production
+A12    : Inventory and rotation
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Quick inventory of key ingredients
+C14    : Storage
+A15    : 2
+B15    : Check flavor rotation in the dipping cabinet (pull slow movers)
+C15    : Dipping cabinet
+A16    : 3
+B16    : Check stock of packaging and serving supplies
+C16    : Storage
+B17    : Tasks done:
+C17    = =COUNTIFS(B6:B16,"?*",E6:E16,"✓")-COUNTIFS(B6:B16,"Task",E6:E16,"✓")   → caché 0.0
+D17    : of
+E17    = =COUNTIF(B6:B16,"?*")-COUNTIF(B6:B16,"Task")-COUNTIF(E6:E16,"N/A")   → caché 8.0
+A18    : Signed off by: _________________  Date: ___/___/______
+A19    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G16 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Monthly Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Tasks
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Calibration and maintenance
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Calibrate thermometers and probes: ice water (32 °F); check dipping cabinet and freezer thermometers against a reference
+C6     : Production
+A7     : 2
+B7     : Preventive maintenance of the pasteurizer (gaskets, heating elements)
+C7     : Production
+A8     : 3
+B8     : Check the door gaskets on walk-in coolers and freezers
+C8     : Freezer
+A9     : 4
+B9     : Check the insulation of walk-ins and dipping cabinets
+C9     : Freezer
+A11    : Inventory and control
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Full valued inventory: ingredients, packaging, finished product
+C13    : Storage
+A14    : 2
+B14    : Calculate actual monthly food cost vs target (28–32% or lower)
+C14    : Office
+A15    : 3
+B15    : Review the month's accumulated waste by flavor
+C15    : Office
+A17    : Documentation and quality
+A18    : #
+B18    : Task
+C18    : Area
+D18    : Assigned to
+E18    : ✓
+F18    : Time
+G18    : Notes
+A19    : 1
+B19    : Plan next month's seasonal menu
+C19    : Office
+A20    : 2
+B20    : Review and file the month's food safety records (temperature, cleaning and batch logs)
+C20    : Office
+A21    : 3
+B21    : Labeling check: pre-packed pints show name, ingredients, allergens, net weight and shop name and address (FDA Food Code 3-602.11); traceability and an allergen chart matching the recipes
+C21    : Office
+A22    : 4
+B22    : Deep clean the whole shop (floors, walls, ceilings)
+C22    : Cleaning
+A23    : 5
+B23    : Update recipe cards if recipes change
+C23    : Office
+B24    : Tasks done:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Task",E6:E23,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Task")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Signed off by: _________________  Date: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E19 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Contracted services — monthly to annual
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Frequency
+G5     : Notes
+A6     : 1
+B6     : Pest control by a licensed operator: service visit and signed service report on file (write the report # in the Notes column)
+C6     : Cleaning
+F6     : Monthly
+A7     : 2
+B7     : Exhaust hood and ducts: if you cook with grease (waffle irons, crepes) under a hood, cleaning by a certified contractor at the NFPA 96 frequency for your cooking volume (low volume, e.g. waffle cones or a seasonal shop: annually); a steam-only hood over the pasteurizer, as its manufacturer says
+C7     : Cleaning
+F7     : Annual
+A8     : 3
+B8     : Refrigeration service by an EPA 608-certified tech: walk-in and reach-in freezers, dipping cabinets, batch freezer and blast freezer — coils, gaskets and refrigerant leak check
+C8     : Freezer
+F8     : Quarterly
+A9     : 4
+B9     : Calibration check of the dipping cabinet, freezer and pasteurizer thermometers against a reference thermometer; if your state licenses your pasteurizer, its recording thermometer is checked as that license requires
+C9     : Production
+F9     : Semiannual
+A11    : Annual — fire, gas & water safety
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Frequency
+G12    : Notes
+A13    : 1
+B13    : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hydrostatic tests as the label says (OSHA 1910.157(f))
+C13    : Office
+F13    : Annual
+A14    : 2
+B14    : Gas lines and appliance connections (waffle iron, crepe griddle, water heater) checked by a licensed pro if you have gas, and the electrical system, as often as your local code requires
+C14    : Office
+F14    : Annual
+A15    : 3
+B15    : Backflow preventers tested by a certified tester where your water utility requires it (most do, yearly): dipper wells, the ice machine and any espresso machine hook up to the water supply
+C15    : Office
+F15    : Annual
+A17    : Annual — permits, training, insurance & systems
+A18    : #
+B18    : Task
+C18    : Area
+D18    : Assigned to
+E18    : ✓
+F18    : Frequency
+G18    : Notes
+A19    : 1
+B19    : Check your health permit is current and posted — and, if you pasteurize your own mix (or your state also licenses batch-freezing or soft serve), your state frozen dessert / dairy license too
+C19    : Office
+F19    : Annual
+A20    : 2
+B20    : Review food handler cards and allergen training for ALL staff, summer hires included, and that a certified food protection manager is on the team (FDA Food Code 2-102.12)
+C20    : Office
+F20    : Annual
+A21    : 3
+B21    : Renew insurance and review coverage: general liability, property, workers' comp and equipment breakdown with food spoilage — a freezer down in July can take the whole season with it
+C21    : Office
+F21    : Annual
+A22    : 4
+B22    : POS check before year-end: software updates, sales tax rates and settings, user permissions
+C22    : Office
+F22    : Annual
+A23    : 5
+B23    : File the year's temperature, cleaning and batch logs, and update your food safety plan when you change equipment, recipes or suppliers
+C23    : Office
+F23    : Annual
+B24    : Tasks done:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Task",E6:E23,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Task")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Signed off by: _________________  Date: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E19 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 06-ice-cream-shop-seasonal-catering-checklists.xlsx
+# docProps: title='Ice Cream Shop Seasonal Checklists: Peak Season, Off-Season & Ice Cream Catering' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Ice Cream Shop Seasonal Checklists: Peak Season, Off-Season & Ice Cream Catering
+B4     : How to use this template:
+B5     : ▸ Seasonal planning for an ice cream shop.
+B6     : ▸ Peak season (Memorial Day to Labor Day): maximum production and an expanded menu; spring is pre-season.
+B7     : ▸ Off-season (fall–winter): reduced menu, complementary products.
+B8     : ▸ Catering and events: logistics and off-site service.
+B10    : Customization:
+B11    : ▸ Adjust dates and flavors to your region.
+B12    : ▸ Use as the basis for quarterly planning.
+B14    : Before accepting an event:
+B15    : ▸ The first section of "Ice Cream Catering" is what you agree BEFORE producing: allergens in writing, guest count, price, deposit and cancellation terms.
+B16    : ▸ Always ask for a deposit: event ice cream is made to order and, if the event falls through, it can't be resold.
+B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Peak Season» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Peak Season — Spring / Summer
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Pre-season prep (March–April)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Expand the menu to 18–24 flavors: add seasonal fruit flavors
+C6     : Production
+A7     : 2
+B7     : Reinforce the team: hire in March–April so the summer team is trained by Memorial Day. Minors 14–15: FLSA hours, no work inside freezers beyond stepping in to grab an item, and no operating or cleaning the batch freezer, pasteurizer or other power-driven machines (29 CFR 570.33); check state work permits
+C7     : Team
+A8     : 3
+B8     : Increase ingredient stock 40–50% over winter
+C8     : Storage
+A9     : 4
+B9     : Check production capacity (batch freezer, pasteurizer, freezers)
+C9     : Production
+A10    : 5
+B10    : Plan extended opening hours
+C10    : Office
+A12    : Peak season operations (Memorial Day–Labor Day)
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Produce daily to demand (2–3 batch-freezing runs)
+C14    : Production
+A15    : 2
+B15    : Set up and run patio / outdoor service (city patio permit if required)
+C15    : Patio
+A16    : 3
+B16    : Reinforce the counter at peak times (at least 2 scoopers)
+C16    : Service
+A17    : 4
+B17    : Social media campaign: flavor photos, stories, production reels
+C17    : Social media
+A18    : 5
+B18    : Prepare to-go packaging: pints and quarts. Pints packed ahead for the freezer case carry a label: flavor name, ingredients, allergens, net weight and your shop's name and city (FDA Food Code 3-602.11); hand-packed to order they are not "packaged". Selling by weight needs a legal-for-trade scale
+C18    : Counter
+A19    : 6
+B19    : Daily stock check: fresh fruit, dairy, sugars
+C19    : Storage
+B20    : Tasks done:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Task",E6:E19,"✓")   → caché 0.0
+D20    : of
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Task")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Signed off by: _________________  Date: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G19 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Off-Season» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Off-Season — Fall / Winter
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Menu and operations adjustments (October–February)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Cut the menu to 10–14 flavors: chocolate, peppermint, eggnog (alcohol-free), cinnamon, pumpkin
+C6     : Production
+A7     : 2
+B7     : Add complementary products: hot chocolate, waffles, crepes and ice cream cakes for birthdays and parties
+C7     : Production
+A8     : 3
+B8     : Adjust hours and staff shifts to reduced demand
+C8     : Team
+A9     : 4
+B9     : Cut production frequency (1 batch every 2–3 days)
+C9     : Production
+A11    : Maintenance and development
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Deep maintenance of all equipment
+C13    : Production
+A14    : 2
+B14    : Test and develop new recipes for next season
+C14    : Production
+A15    : 3
+B15    : Team training: techniques, customer service, allergens
+C15    : Team
+A16    : 4
+B16    : Refresh shop decor and signage if needed
+C16    : General
+A17    : 5
+B17    : Review and renegotiate supplier contracts
+C17    : Office
+B18    : Tasks done:
+C18    = =COUNTIFS(B6:B17,"?*",E6:E17,"✓")-COUNTIFS(B6:B17,"Task",E6:E17,"✓")   → caché 0.0
+D18    : of
+E18    = =COUNTIF(B6:B17,"?*")-COUNTIF(B6:B17,"Task")-COUNTIF(E6:E17,"N/A")   → caché 9.0
+A19    : Signed off by: _________________  Date: ___/___/______
+A20    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G17 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Ice Cream Catering» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Catering and Events
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : When the order or event is confirmed
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Get guests' allergies and intolerances IN WRITING and confirm which flavors you can serve: an ice cream menu concentrates MILK, TREE NUTS, PEANUTS, EGG, WHEAT (cones, wafers, cookies), SOY and SESAME (US: 9 major allergens; UK: 14)
+C6     : Office
+A7     : 2
+B7     : Confirm in writing guest count, formats, time and place of service and who receives the gear on site (public event: check the county temporary food permit and handwashing water)
+C7     : Office
+A8     : 3
+B8     : Set the price per guest (or per pint / gallon) and collect a DEPOSIT before producing: ice cream is made to order and not resold
+C8     : Office
+A9     : 4
+B9     : Agree in writing the cancellation terms and the last day the guest count can change
+C9     : Office
+A10    : 5
+B10    : Check there is room in the 0 °F freezer for the whole order BEFORE accepting it
+C10    : Logistics
+A12    : Event prep
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Design the catering menu: formats (scoops, cups, mini cups, ice cream cake)
+C14    : Office
+A15    : 2
+B15    : Calculate production: 2–3 scoops per guest, at least 4 flavors
+C15    : Production
+A16    : 3
+B16    : Produce 24–48 h ahead and store at 0 °F or below
+C16    : Production
+A17    : 4
+B17    : Pack the off-site service kit: pans, one scoop per flavor (no running-water dipper well on site), spades, gloves, napkins and a probe thermometer
+C17    : Logistics
+A19    : Logistics and transport
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Check the cold chain for transport (insulated carriers; dry ice with gloves, never touching the ice cream, vehicle ventilated). Dry ice over-hardens the ice cream: let the pans temper before scooping
+C21    : Logistics
+A22    : 2
+B22    : Load the vehicle with product and service gear
+C22    : Logistics
+A23    : 3
+B23    : Check product temperature on arrival (10 °F or below) — log reading: ____ °F. If higher, don't serve it: assess first
+C23    : Logistics
+A25    : Service and close
+A26    : #
+B26    : Task
+C26    : Area
+D26    : Assigned to
+E26    : ✓
+F26    : Time
+G26    : Notes
+A27    : 1
+B27    : Set up the serving table at the event per the client's brief
+C27    : Service
+A28    : 2
+B28    : Serve from a dipping cart or a dry-ice cooler, scoops kept in their pan with the handle up (FDA Food Code 3-304.12(A)); check temps during service and throw out any ice cream that melts — never refreeze it — log reading: ____ °F
+C28    : Service
+A29    : 3
+B29    : Collect gear, clean the area and haul it back
+C29    : Logistics
+A30    : 4
+B30    : Send the invoice and a satisfaction survey to the client
+C30    : Office
+B31    : Tasks done:
+C31    = =COUNTIFS(B6:B30,"?*",E6:E30,"✓")-COUNTIFS(B6:B30,"Task",E6:E30,"✓")   → caché 0.0
+D31    : of
+E31    = =COUNTIF(B6:B30,"?*")-COUNTIF(B6:B30,"Task")-COUNTIF(E6:E30,"N/A")   → caché 16.0
+A32    : Signed off by: _________________  Date: ___/___/______
+A33    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E21 E22 E23 E27 E28 E29 E30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G30 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 07-blank-ice-cream-shop-checklist-template.xlsx
+# docProps: title='Blank Ice Cream Shop Checklist Template (Editable)' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Blank Ice Cream Shop Checklist Template (Editable)
+B4     : How to use this template:
+B5     : ▸ Three blank templates to build your own checklists.
+B6     : ▸ By Area: organize tasks by area of the shop.
+B7     : ▸ By Shift: split tasks into morning / afternoon shifts.
+B8     : ▸ By Role: assign tasks by employee role.
+B10    : Customization:
+B11    : ▸ Fill in the tasks to fit your business.
+B12    : ▸ You can duplicate sheets to create more templates.
+B13    : ▸ Print on US Letter and laminate for daily use.
+B15    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B16    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «By Area» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template — By Area
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «By Shift» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template — By Shift
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «By Role» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template — By Role
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+####################################################################################################
+# 08-ice-cream-parlor-opening-closing-checklist.xlsx
+# docProps: title='Ice Cream Parlor Opening & Closing Checklist (Whole Shop)' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$45 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Ice Cream Parlor Opening & Closing Checklist (Whole Shop)
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE SHOP: what gets opened and closed for the entire business, not for each area. Use it as the backbone of the day.
+B8     : How to use
+B10    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift lead assigns tasks and each person initials theirs.
+B11    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B13    : Editable cells
+B15    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 08-ice-cream-parlor-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B36    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B37    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B38    : ▸ You are in 08-ice-cream-parlor-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the shop; the MONEY is in 09-cash-drawer-opening-closing.xlsx.
+B40    : — Ice Cream Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B43    : Contact: info@aichef.pro
+B45    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Shop Opening» · protegida=True · área='Shop Opening'!$A$1:$H$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Ice Cream Shop Opening Checklist
+A2     : Date: ____/____/________
+E2     : Shift lead: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm
+C5     : Entrance
+D5     : Shift lead
+E5     : 10:00 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Shift lead
+E6     : 10:00 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Shift lead
+E7     : 10:00 AM
+A8     : 4
+B8     : Raise security gate and open front door
+C8     : Entrance
+D8     : Shift lead
+E8     : 10:00 AM
+A9     : 5
+B9     : Set up outdoor signage / menu board
+C9     : Outside
+D9     : Shift lead
+E9     : 10:00 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Shift lead
+E10    : 10:00 AM
+A11    : 7
+B11    : Turn on the online-order tablet (pickup and delivery apps), if you use one
+C11    : Counter
+D11    : Shift lead
+E11    : 10:15 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Shift lead
+E12    : 10:15 AM
+A13    : 9
+B13    : Review today's pre-orders (ice cream cakes, custom pints, catering) and special events
+C13    : Front counter
+D13    : Shift lead
+E13    : 10:15 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Shift lead
+E14    : 10:15 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Shift lead
+E15    : 10:15 AM
+A16    : 12
+B16    : Check furniture condition (chairs, tables, lighting)
+C16    : Seating area
+D16    : Shift lead
+E16    : 10:15 AM
+A17    : 13
+B17    : Set up the patio if applicable (tables, chairs, umbrellas/patio heaters)
+C17    : Patio
+D17    : Shift lead
+E17    : 10:30 AM
+A18    : 14
+B18    : Check that the menu boards and flavor list are in order
+C18    : Seating area
+D18    : Shift lead
+E18    : 10:30 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Shift lead
+E19    : 10:30 AM
+A20    : 16
+B20    : Dipping cabinets back in service mode — done FIRST THING on arrival (file 01, Opening tab), so the pans soften to scooping temp before the door opens; they stay on overnight with product inside
+C20    : Shop
+D20    : Shift lead
+E20    : 10:30 AM
+A21    : 17
+B21    : Dipping cabinets at serving temp (6–10 °F; reading logged in file 01, Opening tab)
+C21    : Shop
+D21    : Shift lead
+E21    : 10:30 AM
+A22    : 18
+B22    : Put up the flavor signage
+C22    : Shop
+D22    : Shift lead
+E22    : 10:30 AM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 18.0
+A30    : Manager signature: _________________________     Completion time: ________
+A31    : — Ice Cream Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shop Closing» · protegida=True · área='Shop Closing'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Ice Cream Shop Closing Checklist
+A2     : Date: ____/____/________
+E2     : Shift lead: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Check no customers are left in the shop
+C5     : Seating area
+D5     : Shift lead
+E5     : Close
+A6     : 2
+B6     : Turn off background music
+C6     : General
+D6     : Shift lead
+E6     : Close
+A7     : 3
+B7     : Clean up and bring in the patio, if you have one
+C7     : Patio
+D7     : Shift lead
+E7     : Close
+A8     : 4
+B8     : Bring in the outdoor signage and sidewalk sign
+C8     : Outside
+D8     : Shift lead
+E8     : Close
+A9     : 5
+B9     : Put the night covers or lids on the dipping cabinets: they stay ON (night/storage setting only if your model has one, per the manufacturer)
+C9     : Shop
+D9     : Shift lead
+E9     : Close
+A10    : 6
+B10    : Log the closing temps: dipping cabinets (6–10 °F, or their night setting) and freezers (0 °F or below) — log reading: ____ °F
+C10    : Shop
+D10    : Shift lead
+E10    : Close
+A11    : 7
+B11    : Turn off the POS / card terminal (or leave on standby)
+C11    : Register
+D11    : Shift lead
+E11    : Close
+A12    : 8
+B12    : Empty trash cans in common areas and restrooms
+C12    : Restrooms
+D12    : Shift lead
+E12    : Close
+A13    : 9
+B13    : Final safety check: gas appliances off (waffle irons, griddles) if any, dipper well tap off, small appliances unplugged — never the freezers or dipping cabinets
+C13    : General
+D13    : Shift lead
+E13    : Close
+A14    : 10
+B14    : Check that windows are closed
+C14    : General
+D14    : Shift lead
+E14    : Close
+A15    : 11
+B15    : Turn off HVAC
+C15    : General
+D15    : Shift lead
+E15    : Close
+A16    : 12
+B16    : Turn off lights (leave security lighting on)
+C16    : General
+D16    : Shift lead
+E16    : Close
+A17    : 13
+B17    : Set the alarm
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A18    : 14
+B18    : Close security gate and doors
+C18    : Entrance
+D18    : Last one out
+E18    : Close
+A19    : 15
+B19    : Lock up and verify it is locked
+C19    : Entrance
+D19    : Last one out
+E19    : Close
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Manager signature: _________________________     Completion time: ________
+A28    : — Ice Cream Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$56 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 08-ice-cream-parlor-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B47    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B48    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B49    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the REGISTER — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-ice-cream-parlor-opening-closing-checklist.xlsx.
+B51    : — Ice Cream Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B53    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B54    : Contact: info@aichef.pro
+B56    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / shift lead
+D5     : 10:15 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / shift lead
+D6     : 10:15 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / shift lead
+D7     : 10:15 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / shift lead
+D8     : 10:15 AM
+A9     : 5
+B9     : Check that the POS is on and open the register shift
+C9     : Cashier / shift lead
+D9     : 10:30 AM
+A10    : 6
+B10    : Print the opening X report (start-of-day report)
+C10    : Cashier / shift lead
+D10    : 10:30 AM
+A11    : 7
+B11    : Check the receipt paper roll
+C11    : Cashier / shift lead
+D11    : 10:30 AM
+A12    : 8
+B12    : Check the card terminal works
+C12    : Cashier / shift lead
+D12    : 10:30 AM
+A13    : 9
+B13    : Check the payment gateway connection
+C13    : Cashier / shift lead
+D13    : 10:45 AM
+A14    : 10
+B14    : Note issues from the previous shift
+C14    : Cashier / shift lead
+D14    : 10:45 AM
+A15    : 11
+B15    : Opening manager sign-off
+C15    : Cashier / shift lead
+D15    : 10:45 AM
+A22    : Tasks done:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Starting bank (opening float)
+C23    : 0
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
+A25    : Manager signature: _________________________     Time: ________
+A26    : — Ice Cream Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / shift lead
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / shift lead
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / shift lead
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / shift lead
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / shift lead
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / shift lead
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / shift lead
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / shift lead
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / shift lead
+D13    : Close
+A14    : 10
+B14    : Set aside tomorrow's starting bank
+C14    : Cashier / shift lead
+D14    : Close
+A15    : 11
+B15    : Prepare the bank deposit / put it in the safe
+C15    : Cashier / shift lead
+D15    : Close
+A16    : 12
+B16    : Closing manager sign-off
+C16    : Cashier / shift lead
+D16    : Close
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Cash Count by Denomination
+A25    : Denomination
+B25    : Quantity
+C25    : Subtotal
+A26    : BILLS
+A27    : $100
+B27    : 0
+C27    = =B27*100   → caché 0.0
+A28    : $50
+B28    : 0
+C28    = =B28*50   → caché 0.0
+A29    : $20
+B29    : 0
+C29    = =B29*20   → caché 0.0
+A30    : $10
+B30    : 0
+C30    = =B30*10   → caché 0.0
+A31    : $5
+B31    : 0
+C31    = =B31*5   → caché 0.0
+A32    : $2
+B32    : 0
+C32    = =B32*2   → caché 0.0
+A33    : $1
+B33    : 0
+C33    = =B33*1   → caché 0.0
+A34    : COINS
+A35    : $1 coin
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : 50¢
+B36    : 0
+C36    = =B36*0.5   → caché 0.0
+A37    : 25¢
+B37    : 0
+C37    = =B37*0.25   → caché 0.0
+A38    : 10¢
+B38    : 0
+C38    = =B38*0.1   → caché 0.0
+A39    : 5¢
+B39    : 0
+C39    = =B39*0.05   → caché 0.0
+A40    : 1¢
+B40    : 0
+C40    = =B40*0.01   → caché 0.0
+A41    : 25¢ roll
+B41    : 0
+C41    = =B41*10   → caché 0.0
+A42    : 10¢ roll
+B42    : 0
+C42    = =B42*5   → caché 0.0
+A43    : TOTAL CASH
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Closing Summary
+A46    : Item
+C46    : Amount
+A47    : Total cash (count)
+C47    = =C43   → caché 0.0
+A48    : Starting bank (−)
+C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
+A49    : Net cash (counted − starting bank)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Card sales, excl. tips
+C50    : 0
+A51    : Other tenders + card tips paid in cash
+C51    : 0
+A52    : TOTAL COLLECTED
+C52    = =C49+C50+C51   → caché 0.0
+A53    : POS Z report: sales + tax, excl. tips
+C53    : 0
+A54    : OVER / SHORT
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Manager signature: _________________________     Time: ________
+A57    : — Ice Cream Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : Manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Ice Cream Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-ice-cream-shop-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Ice Cream Shop Pre-Shift Meeting Template (Huddle Notes)' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Ice Cream Shop Pre-Shift Meeting Template (Huddle Notes)
+B4     : How to use this template:
+B5     : ▸ Quick start-of-shift huddle (5–10 minutes).
+B6     : ▸ Production: flavors to make, mixes ready, sold-out flavors.
+B7     : ▸ Team: position assignments, special events.
+B8     : ▸ Goals: today's sales, star flavor, continuous improvement.
+B10    : Customization:
+B11    : ▸ Print daily and fill in before the huddle.
+B12    : ▸ Post it in the production room and at the counter for reference during the shift.
+B14    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B15    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Huddle» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Ice Cream Shop Daily Huddle
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Today's production
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review flavors to make today (production plan)
+C6     : Production
+A7     : 2
+B7     : Check mixes ready after aging to batch-freeze
+C7     : Aging
+A8     : 3
+B8     : Identify flavors sold out or below minimum in the dipping cabinet
+C8     : Dipping cabinet
+A9     : 4
+B9     : Confirm pending ingredient deliveries
+C9     : Storage
+A10    : 5
+B10    : Announce any new recipe or flavor test
+C10    : Production
+A12    : Team and service
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Confirm who is on and assign positions
+C14    : Team
+A15    : 2
+B15    : Share events, special orders or catering for the day
+C15    : Office
+A16    : 3
+B16    : Announce promotions, the new flavor or today's samples
+C16    : Service
+A17    : 4
+B17    : Review incidents from the last shift that need action
+C17    : Office
+A19    : Shift goals
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Announce today's sales goal
+C21    : Office
+A22    : 2
+B22    : Pick the star flavor to recommend to customers
+C22    : Service
+A23    : 3
+B23    : Assign today's improvement task (extra cleaning, restocking, etc.)
+C23    : General
+A24    : 4
+B24    : Remind everyone to focus on customer service and allergens
+C24    : Service
+B25    : Tasks done:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Task",E6:E24,"✓")   → caché 0.0
+D25    : of
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Task")-COUNTIF(E6:E24,"N/A")   → caché 13.0
+A26    : Signed off by: _________________  Date: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G24 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# BONUS-02-ice-cream-shop-seasonal-calendar.xlsx
+# docProps: title='BONUS: Ice Cream Shop Seasonal Calendar & Flavor Planner (US)' · subject='Ice Cream Shop Checklists Kit Pro · v2.0' · keywords='ice cream shop checklist, ice cream shop opening checklist, ice cream parlor, scoop shop, gelato shop, ice cream production, batch freezer, dipping cabinet, AI Chef Pro' · description='aichef.pro/en/digital-products/ice-cream-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Ice Cream Shop Seasonal Calendar & Flavor Planner (US)
+B4     : How to use this template:
+B5     : ▸ Annual planning with key dates and themed flavors.
+B6     : ▸ Organize seasonal production, campaigns and events.
+B7     : ▸ Mark ✓ the actions completed each month.
+B9     : Customization:
+B10    : ▸ Adjust flavors and dates to your region.
+B11    : ▸ Add local events and festivals in your town.
+B12    : ▸ Plan at least 1 month ahead.
+B14    : Calendar dates:
+B15    : ▸ The dates are US ones: Valentine's Day, St. Patrick's Day, Easter, Mother's Day (2nd Sunday of May), Memorial Day–Labor Day, Father's Day (3rd Sunday of June), July 4th, National Ice Cream Month (July) and National Ice Cream Day (3rd Sunday of July), Halloween, Thanksgiving (4th Thursday of November) and the December holidays.
+B16    : ▸ Change any that don't apply where you are and add your town's events (county fairs, summer festivals, high school games): they are what moves a neighborhood scoop shop. UK: Mothering Sunday (3 weeks before Easter: March or early April), bank holidays and Boxing Day.
+B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Seasonal Calendar» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Ice Cream Shop Seasonal Calendar
+A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
+A4     : Month
+B4     : Key actions / Key dates
+C4     : Featured flavors
+D4     : Season
+E4     : ✓
+F4     : Notes
+A5     : January
+B5     : Low season: reduced menu. Ice cream cakes and pints for birthdays. Maintenance and new recipes; if your shop is seasonal and closed, use the month for renovations, suppliers and budget.
+C5     : Chocolate, Cinnamon, Coffee, Peppermint
+D5     : Low
+A6     : February
+B6     : Valentine's Day (Feb 14): limited edition (strawberry, raspberry, red velvet); heart-shaped ice cream cakes to order, with a deposit. Develop spring recipes.
+C6     : Strawberry, Raspberry, Red Velvet, White Chocolate
+D6     : Low
+A7     : March
+B7     : St. Patrick's Day (Mar 17): mint chip and green flavors. Many seasonal shops reopen: announce Opening Day. Prep for the season: stock, hiring, equipment.
+C7     : Mint Chocolate Chip, Coffee, Vanilla, Lemon
+D7     : Shoulder
+A8     : April
+B8     : Easter (date varies): spring flavors and ice cream cakes to order. Expand the menu with fruit flavors. Hire and train the summer team (many are minors: FLSA hours and job limits, see the "Peak Season" sheet). Prep the patio and its permit.
+C8     : Strawberry, Lemon, Mango, Vanilla Bean
+D8     : Shoulder
+A9     : May
+B9     : Mother's Day (2nd Sunday): ice cream cakes to order, with a deposit and orders closed 2 weeks out. Graduations (May–June): group orders and catering. Memorial Day (last Monday): PEAK SEASON starts: full 18–24 flavor menu, patio open, extended hours.
+C9     : Strawberry, Pistachio, Mango, Raspberry
+D9     : Shoulder
+A10    : June
+B10    : School's out and graduations. Father's Day (3rd Sunday): ice cream cakes to order. Juneteenth (Jun 19, federal holiday): decide hours. Maximum production and social media campaign.
+C10    : Peach, Cherry, Cantaloupe, Coconut
+D10    : Peak
+A11    : July
+B11    : National Ice Cream Month (all July) and National Ice Cream Day (3rd Sunday): flavor or promo of the day, lines, extra staff. July 4th: holiday hours and group orders (red, white & blue flavors). Maximum production, extended hours.
+C11    : Watermelon, Peach, Blueberry, Sorbets
+D11    : Peak
+A12    : August
+B12    : Peak of the season. Stock +50%. County fairs, summer festivals and event catering. Back-to-school (mid to late August) pulls young staff: lock in September shifts.
+C12    : Peach, Blackberry, Lemonade Sorbet, Passion Fruit
+D12    : Peak
+A13    : September
+B13    : Labor Day (1st Monday): last big summer weekend. Then transition: scale the menu back gradually; back-to-school family promos. Many seasonal shops close after Labor Day or in October.
+C13    : Apple, Caramel, Maple, Coffee
+D13    : Shoulder
+A14    : October
+B14    : Halloween (Oct 31): themed flavors (pumpkin, caramel apple) and seasonal toppings. Cut the menu to 10–14 flavors. If you close for the season: closing date, notice to customers and staff.
+C14    : Pumpkin, Apple Cider, Caramel, Chocolate
+D14    : Low
+A15    : November
+B15    : Off-season. Thanksgiving (4th Thursday): ice cream to top the pies, pints and quarts to order; decide hours (many close). Black Friday and Small Business Saturday: gift cards. Add hot chocolate and waffles. Maintenance.
+C15    : Pumpkin Pie, Pecan, Maple, Cinnamon
+D15    : Low
+A16    : December
+B16    : Holidays: peppermint, eggnog (alcohol-free) and gingerbread; ice cream cakes and gift pints, gift cards and corporate catering. Christmas (25th) and New Year's Eve (31st): decide hours.
+C16    : Peppermint, Eggnog, Gingerbread, Cinnamon
+D16    : Low
+A18    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
