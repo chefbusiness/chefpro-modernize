@@ -1,0 +1,527 @@
+{
+ "c0005": {
+  "en": "How to use this template:",
+  "origen": "c0004",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0009": {
+  "en": "Customization:",
+  "origen": "c0008",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0010": {
+  "en": "▸ Green cells are editable: assigned to, time, notes.",
+  "origen": "c0009",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0017": {
+  "en": "Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es",
+  "origen": "c0026",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0031": {
+  "en": "Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top",
+  "origen": "c0044",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0032": {
+  "en": "Wash hands at the handwashing sink on arrival and at every change of task: soap, hot water (at least 100 °F, FDA Food Code 5-202.12) and single-use paper towels",
+  "origen": "c0041",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0070": {
+  "en": "Signed off by: _________________  Date: ___/___/______",
+  "origen": "c0073",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0071": {
+  "en": "Invalid mark",
+  "origen": "c0077",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0072": {
+  "en": "Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending.",
+  "origen": "c0078",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0073": {
+  "en": "Mark ✓ if done",
+  "origen": "c0108",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0310": {
+  "en": "Weekly Deep Cleaning Checklist",
+  "origen": "c0596",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0453": {
+  "en": "What it solves",
+  "origen": "c0813",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0455": {
+  "en": "How to use",
+  "origen": "c0852",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0456": {
+  "en": "▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift lead assigns tasks and each person initials theirs.",
+  "origen": "c0853",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0457": {
+  "en": "▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.",
+  "origen": "c0854",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0458": {
+  "en": "Editable cells",
+  "origen": "c0855",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0459": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.",
+  "origen": "c0856",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0460": {
+  "en": "How the counter works",
+  "origen": "c0009",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0461": {
+  "en": "▸ Mark ✓ in the \"✓ Done\" column (dropdown): that is the column that counts completed tasks.",
+  "origen": "c0010",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0463": {
+  "en": "▸ The denominator counts the tasks written in the \"Task\" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.",
+  "origen": "c0012",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0464": {
+  "en": "Free rows",
+  "origen": "c0013",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0465": {
+  "en": "▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.",
+  "origen": "c0014",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0466": {
+  "en": "▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.",
+  "origen": "c0015",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0467": {
+  "en": "Sheet protection",
+  "origen": "c0016",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0468": {
+  "en": "▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.",
+  "origen": "c0017",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0469": {
+  "en": "▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.",
+  "origen": "c0018",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0470": {
+  "en": "Works with",
+  "origen": "c0019",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0471": {
+  "en": "▸ 08-ice-cream-parlor-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.",
+  "origen": "c0020",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-cafe-opening-closing-checklist.xlsx → 08-ice-cream-parlor-opening-closing-checklist.xlsx"
+  ],
+  "fuente": "cafe"
+ },
+ "c0472": {
+  "en": "▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.",
+  "origen": "c0022",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0476": {
+  "en": "Contact: info@aichef.pro",
+  "origen": "c0027",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0478": {
+  "en": "Date: ____/____/________",
+  "origen": "c0859",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0479": {
+  "en": "Shift lead: _________________________",
+  "origen": "c0860",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0483": {
+  "en": "Disarm the alarm",
+  "origen": "c0861",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0486": {
+  "en": "Turn on the main lights (interior and exterior)",
+  "origen": "c0863",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0487": {
+  "en": "Turn on HVAC / heat depending on the season",
+  "origen": "c0864",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0488": {
+  "en": "Raise security gate and open front door",
+  "origen": "c0865",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0489": {
+  "en": "Set up outdoor signage / menu board",
+  "origen": "c0866",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0491": {
+  "en": "Turn on the POS / card terminal",
+  "origen": "c0868",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0493": {
+  "en": "Play background music at a suitable volume",
+  "origen": "c0872",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0496": {
+  "en": "Check restrooms: paper, soap, cleanliness, air freshener",
+  "origen": "c0874",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0498": {
+  "en": "Check cleanliness of common areas (entrance, hallways)",
+  "origen": "c0875",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0500": {
+  "en": "Check furniture condition (chairs, tables, lighting)",
+  "origen": "c0877",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0504": {
+  "en": "Turn on displays / info screens if any",
+  "origen": "c0880",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0509": {
+  "en": "Manager signature: _________________________     Completion time: ________",
+  "origen": "c0883",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0533": {
+  "en": "▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.",
+  "origen": "c0906",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0534": {
+  "en": "How to use — Cash Drawer Opening",
+  "origen": "c0907",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0535": {
+  "en": "▸ Count the starting bank and type the amount in the GREEN cell \"Starting bank (opening float)\". The closing sheet reads it from there: no need to retype it.",
+  "origen": "c0908",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0536": {
+  "en": "How to use — Cash Drawer Closing",
+  "origen": "c0909",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0537": {
+  "en": "▸ In \"Cash Count by Denomination\" fill in ONLY the \"Quantity\" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a \"25¢ roll\" counts $10 and a \"10¢ roll\" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.",
+  "origen": "c0910",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0538": {
+  "en": "▸ In the \"Closing Summary\" you only type three figures: \"Card sales, excl. tips\", \"Other tenders + card tips paid in cash\" and \"POS Z report: sales + tax, excl. tips\" (net sales plus sales tax, without tips or gratuities; many POS \"total\" lines include tips). Everything else is a formula.",
+  "origen": "c0911",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0539": {
+  "en": "▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.",
+  "origen": "c0912",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0540": {
+  "en": "▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.",
+  "origen": "c0913",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0541": {
+  "en": "▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.",
+  "origen": "c0914",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0542": {
+  "en": "▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.",
+  "origen": "c0915",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0543": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.",
+  "origen": "c0916",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0545": {
+  "en": "Cash Drawer Opening Checklist",
+  "origen": "c0918",
+  "via": "sufijo",
+  "fuente": "cafe"
+ },
+ "c0546": {
+  "en": "Manager: _________________________",
+  "origen": "c0919",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0547": {
+  "en": "Verify yesterday's starting bank",
+  "origen": "c0920",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0549": {
+  "en": "Count the opening starting bank",
+  "origen": "c0922",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0550": {
+  "en": "Write the starting bank in the green cell below",
+  "origen": "c0923",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0551": {
+  "en": "Check there is enough change (coins, small bills)",
+  "origen": "c0924",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0552": {
+  "en": "Check that the POS is on and open the register shift",
+  "origen": "c0925",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0553": {
+  "en": "Print the opening X report (start-of-day report)",
+  "origen": "c0926",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0554": {
+  "en": "Check the receipt paper roll",
+  "origen": "c0927",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0555": {
+  "en": "Check the card terminal works",
+  "origen": "c0928",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0556": {
+  "en": "Check the payment gateway connection",
+  "origen": "c0929",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0557": {
+  "en": "Note issues from the previous shift",
+  "origen": "c0930",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0558": {
+  "en": "Opening manager sign-off",
+  "origen": "c0931",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0560": {
+  "en": "Deducted from cash on the \"Cash Drawer Closing\" sheet",
+  "origen": "c0933",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0561": {
+  "en": "Manager signature: _________________________     Time: ________",
+  "origen": "c0934",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0562": {
+  "en": "Cash Drawer Closing Checklist",
+  "origen": "c0935",
+  "via": "sufijo",
+  "fuente": "cafe"
+ },
+ "c0563": {
+  "en": "Print the closing Z report (end-of-day report)",
+  "origen": "c0936",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0564": {
+  "en": "Cash count by denomination (see table below)",
+  "origen": "c0937",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0565": {
+  "en": "Calculate total cash",
+  "origen": "c0938",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0568": {
+  "en": "Total collected = (cash counted − starting bank) + card sales + other",
+  "origen": "c0941",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0569": {
+  "en": "Compare with the POS Z report → calculate the over/short",
+  "origen": "c0942",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0570": {
+  "en": "Log the day's refunds",
+  "origen": "c0943",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0571": {
+  "en": "Log the day's voids",
+  "origen": "c0944",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0572": {
+  "en": "Set aside tomorrow's starting bank",
+  "origen": "c0945",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0573": {
+  "en": "Prepare the bank deposit / put it in the safe",
+  "origen": "c0946",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0574": {
+  "en": "Closing manager sign-off",
+  "origen": "c0947",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0608": {
+  "en": "Invalid quantity",
+  "origen": "c0981",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0609": {
+  "en": "Enter how many bills, coins or rolls: a whole number (0 or more), no decimals.",
+  "origen": "c0982",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0610": {
+  "en": "Monthly Cash Log",
+  "origen": "c0983",
+  "via": "sufijo",
+  "fuente": "cafe"
+ },
+ "c0611": {
+  "en": "Month: ________________     Year: ________",
+  "origen": "c0984",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0612": {
+  "en": "Manager: _________________________",
+  "origen": "c0985",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0622": {
+  "en": "\"Cash Counted\" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, \"Starting Bank\" is the AVERAGE starting bank of the days logged (a balance is not summed) and \"Over/Short\" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. \"Card Sales (no tips)\" excludes tips; \"Other + Tips Paid\" = other tenders + card tips paid in cash from the drawer. \"POS Z\" = net sales + sales tax, without tips.",
+  "origen": "c0995",
+  "via": "exacta",
+  "fuente": "cafe"
+ }
+}

@@ -491,6 +491,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-24): gemelo de kit-tareas-heladeria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-schedule-templates).
+  'ice-cream-shop-checklist-templates': {
+    accessPath: '/en/digital-products/ice-cream-shop-checklist-templates/access',
+    emailSubject: 'Your access to Ice Cream Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Ice Cream Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

@@ -91,8 +91,8 @@ GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia
 # Ídem /kit-tareas-bar desde el 18-oct-2026 (gemelo EN: Bar Checklists Kit Pro), /kit-tareas-cafeteria (gemelo EN:
 # Coffee Shop Checklists Kit Pro, 18-oct-2026), /kit-tareas-catering (gemelo EN: Catering Checklists Kit Pro, 18-oct-2026)
 # /kit-tareas-pizzeria (gemelo EN: Pizza Shop Checklists Kit Pro, 18-oct-2026), /kit-tareas-hamburgueseria (gemelo EN:
-# Burger Joint Checklists Kit Pro, 18-oct-2026) y /kit-tareas-dark-kitchen (gemelo EN: Ghost Kitchen Checklists Kit
-# Pro, 18-oct-2026).
+# Burger Joint Checklists Kit Pro, 18-oct-2026), /kit-tareas-dark-kitchen (gemelo EN: Ghost Kitchen Checklists Kit
+# Pro, 18-oct-2026) y /kit-tareas-heladeria (gemelo EN: Ice Cream Shop Checklists Kit Pro, 24-oct-2026).
 TAREAS_ES = ['/kit-tareas', '/kit-tareas-asador', '/kit-tareas-bar', '/kit-tareas-cafeteria', '/kit-tareas-catering',
              '/kit-tareas-chef-privado', '/kit-tareas-chocolateria', '/kit-tareas-dark-kitchen',
              '/kit-tareas-food-truck', '/kit-tareas-hamburgueseria', '/kit-tareas-heladeria', '/kit-tareas-hotel',
@@ -184,7 +184,9 @@ def estatico() -> None:
     rg = robots_gate()
     grupos = rg.parse_robots(ROBOTS.read_text(encoding='utf-8'))
     raw = ROBOTS.read_text(encoding='utf-8')
-    bloques = [b for b in re.split(r'\n(?=User-agent:)', raw) if b.startswith('User-agent:')]
+    # grupos separados por línea en blanco: un grupo puede abrir con VARIOS User-agent seguidos que comparten reglas
+    # (el de los bots de IA desde el #143); cortar en cada «User-agent:» daba bloques vacíos y un falso rojo
+    bloques = [b for b in re.split(r'\n\s*\n', raw) if re.search(r'^User-agent:', b, re.M)]
     activas = [lg for lg, t in no_es.items() if t['activa']]
     for lg, t in no_es.items():
         lineas = [f'Disallow: {t["hub"]}/*/{k}{v}' for k in ('access', 'library') for v in ('$', '/', '?')]
@@ -380,7 +382,12 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            'Rubén Torres', 'La Brasería Burger', 'Andrés Molina', 'Kit de Tareas Recurrentes: Hamburguesería',
            # Ídem, Ghost Kitchen Checklists Kit Pro (18-oct): testimonios del Kit de Tareas: Dark Kitchen traducidos tal
            # cual (el nombre de esa edición española no lleva tildes ni restos; el resto de nombres, tampoco).
-           'Adrián Soto']
+           'Adrián Soto',
+           # Ídem, Ice Cream Shop Checklists Kit Pro (24-oct): testimonios del Kit de Tareas: Heladería Artesanal
+           # traducidos tal cual, y el nombre de esa edición española en su subtítulo.
+           'Adrián Molina', 'Lucía Torres', 'Heladería La Cremería', 'Heladería El Polo Norte', 'Raúl Ibáñez',
+           'Sofía Delgado', 'Ana Belén Ruiz', 'Heladería Sabores del Sur',
+           'Kit de Tareas Recurrentes: Heladería Artesanal']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.

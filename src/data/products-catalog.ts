@@ -251,11 +251,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-heladeria',
     url: '/kit-tareas-heladeria',
     price: '€12',
-    name: { es: 'Tareas: Heladería', en: 'Tasks: Ice Cream Shop' },
+    name: { es: 'Tareas: Heladería', en: 'Ice Cream Shop Checklists Kit Pro' },
     description: {
       es: 'Obrador, vitrina, mantecadora, exposición.',
-      en: 'Production, display case, batch freezer, and merchandising.',
+      en: 'Ice cream shop checklists for opening and closing, production (pasteurizing, aging and batch freezing), the manager, duties by role, cleaning, peak season and ice cream catering, and the cash drawer: 298 tasks already written.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `ice-cream-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/ice-cream-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-chocolateria': {
     id: 'kit-tareas-chocolateria',

@@ -1466,6 +1466,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-24): twin of kit-tareas-heladeria, independent product.
+  'ice-cream-shop-checklist-templates': {
+    id: 'ice-cream-shop-checklist-templates',
+    name: 'Ice Cream Shop Checklists Kit Pro',
+    priceLabel: '$19',
+    accessPath: '/en/digital-products/ice-cream-shop-checklist-templates/access',
+    emailSubject: 'Your access to Ice Cream Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Ice Cream Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Ice Cream Shop Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'apertura-cierre': '/dl/ice-cream-shop-checklist-templates/01-ice-cream-shop-opening-closing-checklists.xlsx',
+      'partidas': '/dl/ice-cream-shop-checklist-templates/02-ice-cream-production-checklists.xlsx',
+      'manager': '/dl/ice-cream-shop-checklist-templates/03-ice-cream-shop-manager-checklist.xlsx',
+      'perfiles': '/dl/ice-cream-shop-checklist-templates/04-ice-cream-shop-duties-by-role.xlsx',
+      'periodicas': '/dl/ice-cream-shop-checklist-templates/05-ice-cream-shop-cleaning-checklist-maintenance.xlsx',
+      'eventos': '/dl/ice-cream-shop-checklist-templates/06-ice-cream-shop-seasonal-catering-checklists.xlsx',
+      'personalizable': '/dl/ice-cream-shop-checklist-templates/07-blank-ice-cream-shop-checklist-template.xlsx',
+      'apertura-negocio': '/dl/ice-cream-shop-checklist-templates/08-ice-cream-parlor-opening-closing-checklist.xlsx',
+      'apertura-caja': '/dl/ice-cream-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+      'bonus-briefing': '/dl/ice-cream-shop-checklist-templates/BONUS-01-ice-cream-shop-pre-shift-meeting-template.xlsx',
+      'bonus-calendario': '/dl/ice-cream-shop-checklist-templates/BONUS-02-ice-cream-shop-seasonal-calendar.xlsx',
+    },
+    lang: 'en',
+  },
 
   'guia-dark-kitchen': {
     id: 'guia-dark-kitchen',

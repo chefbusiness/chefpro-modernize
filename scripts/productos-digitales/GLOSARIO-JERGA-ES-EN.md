@@ -90,6 +90,27 @@ coctelería para eventos → **mobile bar** (negocio) · barra móvil (mueble) �
 jefe de barra → **lead bartender** · ayudante → **barback** · certificado del seguro → **COI / additional insured** ·
 requisitos de la sala → **venue requirements** · temporada alta de bodas → **peak wedding season**.
 
+## Heladería (Ice Cream Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/icecream/SPEC.md` §R)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| heladería (artesanal) | ice cream store · artisan ice cream shop | **ice cream shop** (246.000/mes) · **ice cream parlor** (27.100) · **scoop shop** (4.400, jerga del oficio) · **gelato shop** (27.100) solo si es gelato | firme (DataForSEO 24-oct) |
+| vitrina de helado | showcase · vitrine | **dipping cabinet** (320/mes; la de gelato, **gelato case**), servicio a 6–10 °F | firme (medido); temperatura [fabricante] |
+| mantecadora · mantecar | creaming machine | **batch freezer** (210/mes) · **batch-freeze / churn**; temperatura de extracción = **draw temperature** | por verificar (uso del sector) |
+| maduración de la mezcla · cámara de maduración | maturation | **aging the mix** · **aging cooler / aging tank** (36–39 °F) | por verificar |
+| abatidor (de helado) | abater | **blast freezer** / **hardening cabinet** · abatir = **harden** | por verificar |
+| porcionador · pala · espátula | portioner | **scoop** (dipper) · **spade**; el agua corriente para los scoops = **dipper well** (1.000/mes; FDA Food Code 3-304.12(D)) | firme (Food Code); resto por verificar |
+| cubeta (de vitrina) · tarrina · tarrina para llevar | bucket · tub-let | **pan** · **cup** · **pint / quart** (envasar para llevar = **pack-out**; preenvasado con etiqueta, 3-602.11) | por verificar |
+| cucurucho · barquillo · cucharilla de prueba | cornet | **cone** (waffle / sugar cone) · **wafer** · **tasting spoon** (las muestras = **samples**) | por verificar |
+| variegato · inclusiones · virutas | variegate | **swirl / ripple** · **mix-ins** · **sprinkles** | por verificar |
+| rendimiento del aire batido | air yield | **overrun** (210/mes); techo legal: ice cream ≥ 4,5 lb/galón (21 CFR 135.110) | firme (CFR) |
+| tarta helada · semifrío | frozen cake | **ice cream cake** (135.000/mes) · **semifreddo** | firme (medido) |
+| dependiente de heladería · heladero de obrador · encargado | shop assistant · ice cream man | **scooper** / counter staff · **ice cream maker** (producción) · **shift lead** | por verificar («ice cream scooper», 33.100, es sobre todo el utensilio) |
+| temporada alta · reapertura de temporada | high season | **peak season** (Memorial Day → Labor Day) · **Opening Day** (las de temporada) · invierno = **off-season** | por verificar |
+| licencia de obrador de helados | ice cream workshop license | **frozen dessert (manufacturer) license** / **dairy (milk handlers) license**, estatal; al público, el **health permit** local | firme: Vermont, Massachusetts, Arizona, Georgia (SPEC §3) |
+| seguro de pérdida de género por avería del frío | merchandise loss insurance | **equipment breakdown** coverage con **food spoilage** | por verificar |
+| Día del Helado | Ice Cream Day | **National Ice Cream Day** (3.er domingo de julio; 27.100/mes, pico de 246.000) · **National Ice Cream Month** (julio) | firme: Proclamation 5219 (1984) |
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en

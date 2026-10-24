@@ -1012,6 +1012,24 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/ghost-kitchen-checklist-templates/BONUS-02-ghost-kitchen-delivery-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-24): Ice Cream Shop Checklists Kit Pro. MISMAS claves que kit-tareas-heladeria (las de
+  // TEMPLATES de src/pages/IceCreamShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx
+  // EN de /dl/ice-cream-shop-checklist-templates/ (SPEC checklists-kit/icecream §2), y el bonus común de equivalencias
+  // EN en lugar de la guía ES↔LatAm.
+  'ice-cream-shop-checklist-templates': {
+    'apertura-cierre': '/dl/ice-cream-shop-checklist-templates/01-ice-cream-shop-opening-closing-checklists.xlsx',
+    'partidas': '/dl/ice-cream-shop-checklist-templates/02-ice-cream-production-checklists.xlsx',
+    'manager': '/dl/ice-cream-shop-checklist-templates/03-ice-cream-shop-manager-checklist.xlsx',
+    'perfiles': '/dl/ice-cream-shop-checklist-templates/04-ice-cream-shop-duties-by-role.xlsx',
+    'periodicas': '/dl/ice-cream-shop-checklist-templates/05-ice-cream-shop-cleaning-checklist-maintenance.xlsx',
+    'eventos': '/dl/ice-cream-shop-checklist-templates/06-ice-cream-shop-seasonal-catering-checklists.xlsx',
+    'personalizable': '/dl/ice-cream-shop-checklist-templates/07-blank-ice-cream-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/ice-cream-shop-checklist-templates/08-ice-cream-parlor-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/ice-cream-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/ice-cream-shop-checklist-templates/BONUS-01-ice-cream-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/ice-cream-shop-checklist-templates/BONUS-02-ice-cream-shop-seasonal-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',
