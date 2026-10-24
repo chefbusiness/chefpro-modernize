@@ -111,6 +111,28 @@ requisitos de la sala → **venue requirements** · temporada alta de bodas → 
 | seguro de pérdida de género por avería del frío | merchandise loss insurance | **equipment breakdown** coverage con **food spoilage** | por verificar |
 | Día del Helado | Ice Cream Day | **National Ice Cream Day** (3.er domingo de julio; 27.100/mes, pico de 246.000) · **National Ice Cream Month** (julio) | firme: Proclamation 5219 (1984) |
 
+## Chocolatería (Chocolate Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/chocolate/SPEC.md` §R)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| chocolatería (obrador-tienda) · bombonería | chocolaterie · bonbonnerie | **chocolate shop** (49.500/mes, intención local) · **chocolatier** (27.100; el oficio y la casa) · **chocolate store** (9.900); «candy shop» (33.100) es una tienda de caramelos, más amplia | firme (DataForSEO 24-oct) |
+| maestro chocolatero | master chocolate maker | **chocolatier** | firme (medido) |
+| bombón · trufa · tableta · figura hueca | bonbon box · tablet | **bonbon** (90.500; molded bonbon) · **truffle** (27.100) · **bar** · **hollow figure** / molded figure | firme (medido) |
+| templar · temperadora · siembra · mármol · punto de trabajo | temperer | **temper** · **tempering machine** (2.400) / melter · **seeding** · **tabling** (marble slab) · **working temperature**; las curvas, «per the manufacturer's tempering curve» | firme (medido); curvas [fabricante] |
+| cobertura (negra, con leche, blanca) | coverture | **couverture** (callets / wafers): dark · milk · white | por verificar |
+| cáscara · sellar / tapa · relleno | crust · seal | **shell** · **cap / capping** · **filling** (ganache, praline, gianduja) | por verificar |
+| fat bloom · sugar bloom · snap · brillo | — | **fat bloom** · **sugar bloom** · **snap** · **shine / gloss** | por verificar |
+| bombo (grageado) | drum | **panning machine** (panning) | por verificar |
+| cámara de conservación (15-18 °C) · nevera de rellenos | conservation chamber | **cool room** (59–64 °F, 50–60 %) · **fridge** (41 °F o menos) | por verificar |
+| vitrina climatizada · escaparate | showcase · vitrine | **display case** (climate-controlled) · **store window** | por verificar |
+| obrador (de chocolatería) | workshop | **kitchen** (chocolate / production kitchen) | por verificar (fila de «obrador» de arriba) |
+| dependiente · encargado | shop assistant | **sales associate** · **shift lead** | por verificar |
+| encargo · señal · regalos de empresa | order · signal | **pre-order / custom order** · **deposit** · **corporate gifting** (gift boxes) | por verificar |
+| ganache de nata fresca | fresh cream ganache shelf-stable | **TCS** salvo análisis de **water activity (aw)**: 41 °F y date marking 7 días | firme: FDA Food Code 2022 §1-201.10 y §3-501.17 |
+| alérgenos a la vista en la vitrina | allergen board | **written allergen notification** de lo no envasado | firme: FDA Food Code 2022 §3-602.12(C) (donde se adopte) |
+| turrón · monas de Pascua · panellets | nougat Spanish | sin equivalente: **bark / toffee / brittle** (fiestas) · **Easter baskets** · **host gifts** y chocolate turkeys (Thanksgiving) | por verificar (criterio del kit) |
+| bombones de licor | liquor bonbons | **liqueur bonbons** («liquor» es el destilado); norma estatal para caramelos con alcohol | por verificar |
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en
