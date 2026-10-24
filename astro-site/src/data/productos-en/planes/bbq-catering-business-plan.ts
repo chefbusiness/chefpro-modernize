@@ -149,7 +149,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'What currency will I pay in?',
-    a: 'The price is $39 USD, a one-time payment. At checkout, Stripe can show the amount in your local currency (for example GBP, EUR, CAD or AUD) and converts it for you. The Excel cells have no currency symbol, so you type amounts in your own currency; the Word plan's example is in US dollars.',
+    a: 'The price is $39 USD, a one-time payment. At checkout, Stripe can show the amount in your local currency (for example GBP, EUR, CAD or AUD) and converts it for you. The Excel cells have no currency symbol, so you type amounts in your own currency; the example in the Word plan is in US dollars.',
   },
   {
     q: 'Is it a subscription? Are future updates included?',

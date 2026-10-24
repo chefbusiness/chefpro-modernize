@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-24T13:23:05Z",
+  "generado": "2026-10-24T13:48:04Z",
   "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
   "fuentes": {
    "bbq": "bbq-catering-financial-projections.xlsx"
@@ -80,8 +80,8 @@
   },
   "consumibles_pct": {
    "valor": 0.035,
-   "fmt": "pct0",
-   "texto": "4%",
+   "fmt": "pct1",
+   "texto": "3.5%",
    "hoja_es": "0. Supuestos",
    "celda": "B15"
   },
