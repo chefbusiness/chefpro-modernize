@@ -1,6 +1,11 @@
 # Handoff — 24-oct-2026 (sesión Claude Code, Mac + VPS) — Chocolate Shop + Pastry Shop Checklists Kit Pro (EN, $19)
 
-## ▶️ Para retomar
+## ✅ Cerrado el 25-oct-2026 (sesión Claude Code)
+
+LIVE con el resto del lote EN de 5 (merge `7e7afc6e`). Links, gates, correos (29-ene y 3-feb) y routine: entrada del 25-oct en
+`scripts/productos-digitales/CALENDARIO-V2-SEMANAL.md`. Lo de abajo es histórico.
+
+## ▶️ Para retomar (histórico)
 
 - **Estado:** los dos productos LISTOS a falta del Payment Link. PR **#157** (draft), rama `feat/chocolate-pastry-checklists-en`,
   **apilada sobre #156** (Ice Cream Shop Checklists). Worktree del Mac `scratchpad/wt-chocopastry`; VPS `/root/wt-chocopastry`.

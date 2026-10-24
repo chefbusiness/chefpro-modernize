@@ -1,6 +1,11 @@
 # Handoff — 24-oct-2026 (sesión Claude Code, Mac + VPS) — Ice Cream Shop Checklists Kit Pro (EN, $19)
 
-## ▶️ Para retomar (sesión nueva tras /clear)
+## ✅ Cerrado el 25-oct-2026 (sesión Claude Code)
+
+LIVE con el resto del lote EN de 5 (merge `7e7afc6e`). Link, gates, correo (24-ene) y routine: entrada del 25-oct en
+`scripts/productos-digitales/CALENDARIO-V2-SEMANAL.md`. Lo de abajo es histórico.
+
+## ▶️ Para retomar (histórico)
 
 - **Estado:** producto LISTO a falta del Payment Link. PR **#156** (draft), rama `feat/ice-cream-shop-checklists-en`
   (worktree del Mac en el scratchpad de la sesión `wt-icecream`; en el VPS `/root/wt-icecream`). Preview:
