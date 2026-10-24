@@ -48,6 +48,8 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'burger-joint-checklist-templates': { accessPath: '/en/digital-products/burger-joint-checklist-templates/access', label: 'Burger Joint Checklists Kit Pro', lang: 'en' },
   'ghost-kitchen-checklist-templates': { accessPath: '/en/digital-products/ghost-kitchen-checklist-templates/access', label: 'Ghost Kitchen Checklists Kit Pro', lang: 'en' },
   'ice-cream-shop-checklist-templates': { accessPath: '/en/digital-products/ice-cream-shop-checklist-templates/access', label: 'Ice Cream Shop Checklists Kit Pro', lang: 'en' },
+  'chocolate-shop-checklist-templates': { accessPath: '/en/digital-products/chocolate-shop-checklist-templates/access', label: 'Chocolate Shop Checklists Kit Pro', lang: 'en' },
+  'pastry-shop-checklist-templates': { accessPath: '/en/digital-products/pastry-shop-checklist-templates/access', label: 'Pastry Shop Checklists Kit Pro', lang: 'en' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
   'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },
