@@ -705,8 +705,9 @@ def hoja_yield(wb):
         for j, q in enumerate(qty):
             _f(ws, '%s%d' % (ING_COLS[j], r), q, fmt=DEC2, fill=VERDE, locked=False)
         _f(ws, 'M%d' % r, kit, fmt=MONEDA, fill=VERDE, locked=False)
-        _f(ws, 'N%d' % r, '=IF(ISNUMBER(%s),%s,0)*%s/16+SUMPRODUCT(B%d:L%d,$B$%d:$L$%d)' % (
-            arroz, arroz, rice_oz, r, r, Y_HELP_P, Y_HELP_P), fmt=MONEDA)
+        # suma explícita (no SUMPRODUCT: pycel devuelve un float de numpy que su ROUNDUP no sabe redondear)
+        _f(ws, 'N%d' % r, '=IF(ISNUMBER(%s),%s,0)*%s/16+%s' % (
+            arroz, arroz, rice_oz, '+'.join('%s%d*%s$%d' % (c, r, c, Y_HELP_P) for c in ING_COLS)), fmt=MONEDA)
         terminos = ['IF(%s%d>0,%s$%d,0)' % (c, r, c, Y_HELP_F) for c in ING_COLS]
         _f(ws, 'O%d' % r, '=IF(ISNUMBER(%s),IF(%s>0,0,1),1)+%s' % (arroz, arroz, '+'.join(terminos)), fmt=ENTERO)
         _f(ws, 'P%d' % r, fc, wrap=True)
