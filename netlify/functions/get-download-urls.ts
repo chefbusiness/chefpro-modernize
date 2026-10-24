@@ -851,6 +851,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/mobile-bar-business-plan/mobile-bar-startup-checklist.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-24): BBQ Catering Business Plan Kit. MISMAS claves que plan-negocio-parrillero-asador-eventos y que
+  // el mobile bar (las del TEMPLATES de src/pages/BbqCateringBusinessPlanDashboard.tsx) → los 4 ficheros EN de
+  // /dl/bbq-catering-business-plan/ (SPEC business-plans-en-6 D98) y el bonus común de equivalencias EN.
+  'bbq-catering-business-plan': {
+    'plan-negocio': '/dl/bbq-catering-business-plan/bbq-catering-business-plan.docx',
+    'plan-financiero': '/dl/bbq-catering-business-plan/bbq-catering-financial-projections.xlsx',
+    'calculadora-pricing': '/dl/bbq-catering-business-plan/bbq-catering-pricing-calculator.xlsx',
+    'checklist-apertura': '/dl/bbq-catering-business-plan/bbq-catering-startup-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

@@ -401,6 +401,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-24): gemelo de plan-negocio-parrillero-asador-eventos, producto independiente con su propio acceso
+  // (mismo patrón que mobile-bar-business-plan).
+  'bbq-catering-business-plan': {
+    accessPath: '/en/digital-products/bbq-catering-business-plan/access',
+    emailSubject: 'Your access to BBQ Catering Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>BBQ Catering Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a smoke schedule and a shopping list by guest count and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
   // (mismo patrón que mobile-bar-business-plan).
   'food-cost-menu-engineering-guide': {

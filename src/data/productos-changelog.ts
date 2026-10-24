@@ -722,6 +722,33 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-24): BBQ Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-parrillero-
+  // asador-eventos con otro concepto (SPEC business-plans-en-6 D96-D113: off-site BBQ caterer con smoker trailer desde una
+  // commissary + calculadora de libras de carne por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  // Las cifras no salen aquí: nada que confirmar con la F2 salvo los conteos (13 cortes, 68 tareas).
+  'bbq-catering-business-plan': {
+    version: '2.2',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2 for a full-service, off-site BBQ caterer that smokes brisket, pulled pork, ribs, chicken and sausage in the commissary yard, holds them hot in insulated carriers and hot boxes, serves a staffed buffet with a carving station and takes the smoker trailer to weddings and premium events as a paid live pit on site: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing calculator and a startup checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example is a full-time operator with a pit cook, not a typical first year.',
+          'The model runs on events per year, average price per guest (excluding sales tax, with staffing and the service charge included) and average guests per event, with the break-even measured in events per year. Corporate catering marketplace bookings carry their own fee, and client deposits are not counted, which keeps the cash flow on the cautious side.',
+          'Revenue and costs excluding sales tax in the P&L, and a 12-month cash flow that includes the sales tax you collect on the whole invoice and remits it quarterly (an 8% example rate you replace with your state and local rate).',
+          'Payroll with four roles — the owner as pitmaster and in sales, a pit cook, hourly event staff (servers, buffet attendants, carvers) and a part-time prep cook who drives the van, all on W-2 payroll — employer payroll taxes, a federal and a state or local minimum wage floor, and a check of the event hours you need against the hours you hire.',
+          'Startup costs with a new smoker trailer and its upfit, a live-fire rig, commissary storage, a used cargo van and its upfit, permits and certifications, smallwares and pit tools, and holding and service equipment, plus commissary rent with trailer parking: no storefront, and the owner\'s own truck tows the trailer.',
+          'Financing sheet with owner equity and your main loan (bank or SBA 7(a)), amortized with no interest-only period by default and the DSCR checked against a 1.25× target; an SBA Microloan, investors and local grants are listed as other sources of funds, without amortization.',
+          'New pricing calculator: three packages (drop-off, full-service BBQ buffet and live-fire premium) and a live pit on site switch, from ounces of cooked meat per guest, your meat mix and raw prices, yield, sides, wood, staff hours and mileage to a price per guest and per pound of cooked meat and a quote with service charge, sales tax, a 50% deposit and the balance, with the margin calculated and the voluntary gratuity kept off the price; a Meat Yield & Smoke Schedule with the Food Code minimum and the quality target in separate columns, a Shopping List by Guest Count and three example quotes.',
+          "68-task startup checklist in 6 phases: business setup (LLC, EIN, seller's permit, business license, catering contract), pits, fire and permits (written commissary agreement, your county on smoking at the event, fire marshal, DMV, commercial auto and inland marine), equipment, staff (W-2, ServSafe Manager and food handler cards), marketing and the first 90 days.",
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-13): Mobile Bar Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-cocteleria-
   // eventos con otro concepto (SPEC business-plans-en-5 D81-D95: dry hire mobile bar + calculadora de precios).
   // Textos en inglés: los pinta <ProductChangelog lang="en"/>.
