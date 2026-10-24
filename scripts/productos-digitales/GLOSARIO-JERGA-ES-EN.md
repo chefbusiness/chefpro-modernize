@@ -133,6 +133,24 @@ requisitos de la sala → **venue requirements** · temporada alta de bodas → 
 | turrón · monas de Pascua · panellets | nougat Spanish | sin equivalente: **bark / toffee / brittle** (fiestas) · **Easter baskets** · **host gifts** y chocolate turkeys (Thanksgiving) | por verificar (criterio del kit) |
 | bombones de licor | liquor bonbons | **liqueur bonbons** («liquor» es el destilado); norma estatal para caramelos con alcohol | por verificar |
 
+## Pastelería (Pastry Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/pastry/SPEC.md` §R; base: `guia-pasteleria-en/F1-research-us.md` §13.1)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| pastelería (con tienda y obrador) | patisserie shop · cake store | **pastry shop** (40.500/mes) · **bakery** si hay pan · **bakery-café** si sirve café | firme (DataForSEO 24-oct) |
+| obrador · zona de producción | workshop · obrador | **pastry kitchen** / **kitchen** (celda corta) · **production kitchen** | firme (guía EN D9) |
+| vitrina (refrigerada) · despacho | showcase · dispatch | **bakery case** (590/mes; **refrigerated bakery case**, 41 °F para lo TCS, FDA 3-501.16) · **counter** | firme (medido + Food Code) |
+| jefe pastelero · pastelero/oficial · ayudante · dependiente · encargado | pastry boss · shop assistant | **head pastry chef** · **pastry cook** · **pastry assistant** · **counter associate** · **shift lead** | por verificar (uso del sector; guía EN §13.1) |
+| bollería | bun-ery | **viennoiserie** (oficio) · **breakfast pastries** (cliente) | firme (guía EN D9) |
+| cámara de fermentación controlada · retardador · abatidor | fermentation chamber | **retarder-proofer** · **retarder** · **blast chiller** (congelar: **blast freezer**) | firme (guía EN D9) |
+| laminadora · amasadora · batidora planetaria | laminator | **dough sheeter** · **spiral mixer** · **planetary mixer** (menores de 18 no las usan ni limpian: 29 CFR 570.62) | firme (CFR); nombres por verificar |
+| encargo · ficha de encargo · señal · pendiente · dedicatoria · recogida | commission · signal | **custom order** / **pre-order** · **order form** (480/mes «cake order form») · **deposit** · **balance due** · **cake message** · **pickup** (franja: **pickup slot**) | firme (medido); depósito = práctica, no ley (guía EN §8) |
+| merma · producto del día anterior · escandallo | yesterday product | **waste** (waste log) · **day-old** · **recipe costing** / cost card | por verificar |
+| ficha técnica · albarán | technical sheet · delivery note | **spec sheet** · **invoice / packing slip** | por verificar |
+| registro de temperaturas · recepción de mercancía · etiqueta de elaborado | | **temperature log** (320/mes «food temperature log») · **receiving log** (140) · **prep label** (date marking, 3-501.17) | firme (medido + Food Code) |
+| carta de alérgenos · cartel de alérgenos · contaminación cruzada | allergen letter | **allergen chart** (320/mes) · **allergen sign** (aviso escrito, 3-602.12(C)) · **cross-contact** | firme (guía EN §3.1) |
+| roscón de Reyes · torrijas · huesos de santo · panellets · polvorones · turrón | | **rosca de Reyes / Three Kings bread** + **King cake** (6-ene → Mardi Gras) · **hot cross buns** (perfil de alérgenos) · **amaretti** · **pignoli cookies** · **polvorones / Mexican wedding cookies** · **torrone** | criterio del kit (mismo perfil de alérgenos; guía EN §7) |
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en
