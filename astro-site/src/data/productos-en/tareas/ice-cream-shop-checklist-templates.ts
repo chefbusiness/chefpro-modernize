@@ -95,13 +95,15 @@ const data: KitTareasData = {
 
   images: {
     // hero bg (6) y strip del ContentGrid: fotos sin texto en español (ver cabecera). El ES repite el hero y la
-    // vitrina en el bonus; la EN, el cucurucho y la vitrina cenital.
+    // vitrina en el bonus; la EN, el cucurucho y la fruta de temporada. Fuera (24-oct, orquestador): la vitrina cenital
+    // (etiquetas en italiano mal escritas por la IA y la marca real «Amarena Fabbri») y el servicio («Gelato Madre · Madrid»
+    // en el delantal).
     gallery: [
       '/lovable-uploads/ai-gallery/use-case-heladeria-conos.jpg',
-      '/lovable-uploads/ai-gallery/use-case-heladeria-flavors.jpg',
+      '/lovable-uploads/ai-gallery/use-case-maestro-heladero-spatula.jpg',
       '/lovable-uploads/ai-gallery/use-case-heladeria-team.jpg',
       '/lovable-uploads/ai-gallery/use-case-maestro-heladero-mantecadora.jpg',
-      '/lovable-uploads/ai-gallery/tareas-heladeria-servicio.jpg',
+      '/lovable-uploads/ai-gallery/use-case-maestro-heladero-fruta.jpg',
       '/lovable-uploads/ai-gallery/consultor-heladero-equipo.jpg',
     ],
     // Mismo reparto que el ES (why = obrador, buyBox = producción, cta = hero).
@@ -256,7 +258,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Ice Cream Shop Seasonal Calendar & Flavor Planner (US)',
         desc: "12 months with the key US dates (Valentine's Day, St. Patrick's Day, Easter, Mother's Day, Memorial Day, Father's Day, July 4, National Ice Cream Month and Day, Labor Day, Halloween, Thanksgiving, the holidays), four featured flavors a month, the season and the key action for each.",
-        image: '/lovable-uploads/ai-gallery/use-case-heladeria-flavors.jpg',
+        image: '/lovable-uploads/ai-gallery/use-case-maestro-heladero-fruta.jpg',
       },
       {
         icon: 'Globe',
