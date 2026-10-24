@@ -1,6 +1,12 @@
 # Handoff — 24-oct-2026 (sesión Claude Code, Mac + VPS) — BBQ Catering + Paella Catering Business Plan Kit (EN, $39)
 
-## ▶️ Para retomar
+## ✅ Cerrado el 25-oct-2026 (sesión Claude Code)
+
+Los 5 del lote están **LIVE**: links de Stripe comprobados, env en Netlify, pila fusionada (merge `7e7afc6e`), gates LIVE en verde
+(completo en el VPS: 78 productos · 1052 entregables · 0 fallos), sitemap en GSC, 5 borradores de correo EN + routine
+`trig_011hh6jpM66sktLqw3dDhY8H` (16-ene-2027). Detalle: `CALENDARIO-V2-SEMANAL.md` (entrada del 25-oct). Lo de abajo es histórico.
+
+## ▶️ Para retomar (histórico)
 
 - **Estado:** los dos productos LISTOS a falta del Payment Link. Cierran el **lote EN de 5** que John pidió el 24-oct antes de salir
   («cuando tengas cinco productos terminados… hacemos la configuración en Stripe»): #156 Ice Cream Shop Checklists · #157 Chocolate +

@@ -720,3 +720,13 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   ≈ 2,4 M. Handoff `SESSION_HANDOFF_2026-10-24-bbq-paella-catering-plans-en.md`.
 - PR apilados 156 → 157 → 158 → 159. Correos EN previstos (14:00Z): 24-ene Ice Cream · 29-ene Chocolate · 3-feb Pastry · 8-feb BBQ ·
   13-feb Paella. **Siguiente hueco EN: 18-feb.** Tienda EN tras el lote: 27 productos.
+
+### ✅ 2026-10-25 (madrugada, Claude Code en el Mac) — **Lote EN de 5 LIVE**
+
+- John creó los 5 Payment Links (comprobados con la CLI: USD, pago único, `exclusive`, redirección a `/access`); env `VITE_*` en
+  Netlify (builds, all); `payment-links.ts` regenerado (`580c8384`); pila fusionada con el #159 (merge `7e7afc6e`, los 4 PR MERGED).
+- LIVE: `gate-flujo-postpago --only` ×5 con 0 fallos y 0 avisos · gate completo en el VPS **78 productos · 1052 entregables · 0 fallos** ·
+  `tienda-gate --base https://aichef.pro` verde · `robots-gate --live` verde · sitemap reenviado a GSC (los 5 dentro).
+- Correos EN (borradores, segmento EN, `hello@news.aichef.pro`): Ice Cream **24-ene** `46c47e9f` · Chocolate **29-ene** `0735f547` ·
+  Pastry **3-feb** `a71df3dc` · BBQ **8-feb** `72b926e7` · Paella **13-feb** `d7cc1366` → routine `trig_011hh6jpM66sktLqw3dDhY8H`
+  (16-ene-2027 15:00Z). Todos a las 14:00Z. **Siguiente hueco EN: 18-feb 14:00Z.**
