@@ -710,7 +710,7 @@ def hoja_yield(wb):
               'Cooling leftovers: to 70 °F (21 °C) within 2 hours and to 41 °F (5 °C) within a total of 6 hours '
               '(3-501.14); slice or portion brisket so it cools fast. Reheating cooked meat for hot holding: to 165 °F '
               '(74 °C) for 15 seconds (3-403.11).',
-              'Yield: brisket and pork butt end up at about 50% of their raw weight (fieryfoodscentral.com, Dr. BBQ); '
+              'Yield: brisket and pork butt end up at about 50%% of their raw weight (fieryfoodscentral.com, Dr. BBQ); '
               'every other yield is a kit estimate. Weigh your own raw and cooked pounds on your test cook and type '
               'them here: the "%s" and "%s" tabs follow.' % (H1, H3),
               'Whole hog: buy it from a USDA- or state-inspected plant; custom-exempt meat is marked "not for sale" '
