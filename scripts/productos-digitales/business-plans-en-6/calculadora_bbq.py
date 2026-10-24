@@ -90,7 +90,7 @@ NOMBRES_PAQ = list(PAQUETES)
 # --------------------------------------------------------------------------
 _FC_ASADO = '145 °F (63 °C) for 4 min as a whole roast; 155 °F (68 °C) for 17 s if injected'
 _FC_INTACTA = '145 °F (63 °C) for 15 s; 155 °F (68 °C) for 17 s if injected or tenderized'
-_FC_PICADA = '155 °F (68 °C) for 17 s (ground meat, sausage included)'
+_FC_PICADA = '155 °F (68 °C) for 17 s (ground meat, sausage included; 165 °F if it is chicken or turkey sausage)'
 _FC_AVES = '165 °F (74 °C), instantaneous (poultry)'
 _KIT = 'Kit estimate'
 _LEIDA = 'fieryfoodscentral.com (about 50% of the fresh weight)'
@@ -179,8 +179,9 @@ ENTRADAS = [
     ('wage_server', 'Server / attendant hourly wage', MONEDA, 18.0,
      'Kit estimate, about the 75th percentile of nonrestaurant food servers (BLS OEWS, May 2025: $18.51). W-2.'),
     ('payroll', "Employer payroll taxes and workers' comp (% of wages)", PCT, 0.10, 'Kit estimate.'),
-    ('rentals', 'Rentals passed through (tables, linens, chafing dishes, tent)', MONEDA, 0.0,
-     'What the rental company charges you for this event.'),
+    ('rentals', 'Rentals for this event (your cost; they carry your margin)', MONEDA, 0.0,
+     'What the rental company charges you for tables, linens, chafing dishes or a tent. They sit in the direct cost, so '
+     'the target margin applies to them too.'),
     ('miles', 'Round-trip miles', ENTERO, 30, 'Commissary → venue → commissary.'),
     ('per_mile', 'Cost per mile (van, or pickup + smoker trailer)', MONEDA, 0.70,
      'Kit estimate: use your real cost per mile or the current IRS standard mileage rate.'),
@@ -246,10 +247,12 @@ SALIDAS += [
     ('c_guest', 'Direct cost per billable guest', MONEDA, '{c_total}/{billable}', ''),
     ('price', 'PRICE PER GUEST before fees, service charge and tax', MONEDA,
      'roundup({c_total}/(1-{margin}-{commission})/{billable}*2)/2',
-     'Rounded up to the next 0.50. Market check: drop-off runs about $15-$30 per person and full-service up to $75 '
-     '(q39kc.com); a Los Angeles operator charges $40-58 for parties and $65-85 for weddings (eventective.com).'),
-    ('price_lb', 'Equivalent price per lb of cooked meat', MONEDA, '{price}/({oz_guest}/16)',
-     'The same price expressed per cooked pound, the way many drop-off menus quote.'),
+     'Rounded up to the next 0.50. While "Meat prices" says Missing, this price uses the package food cost estimate, not '
+     'your meat prices. Market check: drop-off runs about $15-$30 per person and full-service up to $75 (q39kc.com); a Los '
+     'Angeles operator charges $40-58 for parties and $65-85 for weddings (eventective.com).'),
+    ('price_lb', 'All-in price per lb of cooked meat (sides, staff and margin included)', MONEDA, '{price}/({oz_guest}/16)',
+     'The price per guest divided by the cooked meat per guest. It includes sides, staff, travel and margin, so do not '
+     'compare it with by-the-pound menu prices for meat alone.'),
     ('fee_pit', 'Live pit on site fee', MONEDA, 'if({live_pit}=="Yes",{live_pit_fee},0)', ''),
     ('subtotal', 'Food & service subtotal', MONEDA, '{price}*{billable}+{fee_pit}+{event_fee}',
      'Price per guest × billable guests + live pit fee + event fee.'),
@@ -306,17 +309,17 @@ EJEMPLOS = OrderedDict([
 ])
 EJ_NOTAS = OrderedDict([
     ('Corporate drop-off, 40 guests', 'Boxed BBQ lunch for an office, delivered and set (20-guest delivery minimum, as at '
-                                      'hutchinsbbq.com). It lands within 10% of the $22 drop-off line in the workbook\'s '
-                                      'example mix and inside the $15-$30 per person drop-off range (q39kc.com).'),
+                                      'hutchinsbbq.com). It lands within 10% of the $22 drop-off line in the example mix '
+                                      'of the Word plan (section 3) and inside the $15-$30 per person drop-off range (q39kc.com).'),
     ('Graduation party, staffed buffet, 70 guests', 'Backyard graduation party with a staffed buffet and a carving '
                                                     'station, 30-guest minimum. Within 10% of the $35 party line of the '
-                                                    'example mix, below the $40-58 that a Los Angeles operator charges for '
+                                                    'example mix in the Word plan, below the $40-58 that a Los Angeles operator charges for '
                                                     'parties (eventective.com).'),
     ('Wedding, 130 guests, full-service + live pit on site', 'Full-service wedding with the smoker trailer on site for a '
                                                              '$650 flat fee, rentals passed through and a 10% service '
                                                              'charge; 75-guest minimum. The price per guest, with the '
                                                              'live pit fee spread over the guests, lands within 10% of the '
-                                                             '$52 wedding line of the example mix, below the $65-85 of Los '
+                                                             '$52 wedding line of the example mix in the Word plan, below the $65-85 of Los '
                                                              'Angeles (eventective.com).'),
 ])
 
@@ -815,7 +818,8 @@ def hoja_compra(wb):
           ENTERO, '')
     linea('boxes', 'Insulated food carriers or hot boxes', lambda c: '=ROUNDUP(%s$%d/%s,0)' % (c, filas['pans'],
                                                                                                R['pans_box']), ENTERO,
-          'Keep the meat at 135 °F (57 °C) or above until you serve it.')
+          'Meat pans only: add carriers for hot sides such as mac and cheese and beans. Keep the food at 135 °F (57 °C) or '
+          'above until you serve it.')
     linea('pit', 'Pit crew (suggested)', lambda c: '=IF(%s>0,ROUNDUP(%s/%s,0),0)' % (pit, gr(c), pit), ENTERO,
           'From the package table of the "%s" tab.' % H1)
     linea('srv', 'Servers and attendants (suggested)', lambda c: '=IF(%s>0,ROUNDUP(%s/%s,0),0)' % (srv, gr(c), srv),
@@ -843,7 +847,7 @@ def hoja_ejemplos(wb):
     _cabecera(ws, '3 EXAMPLE QUOTES — calculated with the same formulas as the "%s" tab' % H1,
               'Kit estimates for illustration. No meat price is typed here: until you type yours, the food cost uses the '
               'package estimate per guest, as in the "%s" tab. Each quote lands within 10%% of the price of its line in '
-              'the workbook\'s example mix ($22 drop-off, $35 party, $52 wedding). Change the inputs in "%s" to price '
+              'the example mix in the Word plan (section 3) ($22 drop-off, $35 party, $52 wedding). Change the inputs in "%s" to price '
               'your own events.' % (H1, H1), 'D')
     _f(ws, 'A4', 'INPUTS', b=True, fill=GRIS)
     for j, nombre in enumerate(EJEMPLOS):
@@ -906,7 +910,8 @@ INSTRUCCIONES = [
      'day and overnight cook hours), rentals and mileage. Then the marketplace fee, your target margin, the service '
      'charge, the sales tax rate and the switch "Does your state tax the service charge?". The price per guest is the '
      'direct cost divided by (1 - target margin - marketplace fee) and by the billable guests, rounded up to the next '
-     '0.50; the live pit fee and any event fee go on top. The tab also shows the same price per cooked lb.', False),
+     '0.50; the live pit fee and any event fee go on top. The tab also shows that price per cooked lb, all-in: not '
+     'comparable with by-the-pound menu prices.', False),
     ('4. Deposit and cancellation: a 50% nonrefundable deposit books the date (the operators read for this kit ask for '
      'it: eventective.com, hutchinsbbq.com) and four cancellation tiers with no gaps tell you what you keep. Put the same '
      'tiers in your contract, with a force majeure clause for a county burn ban (propane backup or a new date).', False),
@@ -920,7 +925,8 @@ INSTRUCCIONES = [
      False),
     ('FOOD SAFETY (FDA FOOD CODE 2022)', True),
     ('Cook to the minimum: 145 °F (63 °C) for 15 seconds for intact meat; 145 °F for 4 minutes for whole roasts; 155 °F '
-     '(68 °C) for 17 seconds for injected, tenderized or ground meat, sausage included; 165 °F (74 °C) for poultry '
+     '(68 °C) for 17 seconds for injected, tenderized or ground meat, sausage included (165 °F for chicken or turkey '
+     'sausage); 165 °F (74 °C) for poultry '
      '(3-401.11). Hold hot at 135 °F (57 °C) or above (3-501.16). Cool to 70 °F (21 °C) within 2 hours and to 41 °F '
      '(5 °C) within a total of 6 hours (3-501.14). Reheat for hot holding to 165 °F (3-403.11). The quality target of '
      'each cut is a different number: see the "%s" tab.' % H2, False),
