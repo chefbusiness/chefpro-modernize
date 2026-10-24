@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-24T14:52:06Z",
+  "generado": "2026-10-24T15:25:59Z",
   "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
   "fuentes": {
    "pael": "paella-catering-financial-projections.xlsx"
@@ -554,20 +554,6 @@
    "hoja_es": "0. Supuestos",
    "celda": "B4"
   },
-  "eventos_a2": {
-   "valor": 148.5,
-   "fmt": "int",
-   "texto": "148",
-   "hoja_es": "PyG 3 Años",
-   "celda": "C6"
-  },
-  "eventos_a3": {
-   "valor": 157.41,
-   "fmt": "int",
-   "texto": "157",
-   "hoja_es": "PyG 3 Años",
-   "celda": "D6"
-  },
   "precio_invitado": {
    "valor": 40,
    "fmt": "usd2",
@@ -808,6 +794,18 @@
    "valor": 0.28100685881540993,
    "fmt": "pct0",
    "texto": "28%",
+   "deriv": true
+  },
+  "eventos_a2": {
+   "valor": 149,
+   "fmt": "int",
+   "texto": "149",
+   "deriv": true
+  },
+  "eventos_a3": {
+   "valor": 157,
+   "fmt": "int",
+   "texto": "157",
    "deriv": true
   },
   "ventas_evento": {

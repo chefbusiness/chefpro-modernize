@@ -228,7 +228,7 @@ en `PRODUCTOS_LETTER` de `censo-entregables.py` y en `EXCLUIDOS` de `postprocess
   Ningún gate saltó por texto; ninguna cifra ni fórmula tocada.
 
 **Caso final** (`cifras_caso.json`, 118 tokens, **ninguna cifra distinta del dry-run** del paso 1; solo cambia la marca de
-tiempo; sha256 `b354a97c99b53bde…`):
+tiempo; tras la ronda §9, `eventos_a2` vale 149 (redondeado como el libro, M3); sha256 `f8d79611…`):
 - 135 eventos × 58 invitados × $40.00 sin sales tax, con el paella chef, el personal y el service charge → ventas
   **$313,200** / $344,520 / $365,191 ($2,320 por evento, 7,830 invitados).
 - CAPEX **$49,480** + fondo de maniobra $39,486 = **$88,966** · fondos propios $25,000 (28 %) + préstamo **$64,000** al 10 % a
@@ -252,10 +252,10 @@ tiempo; sha256 `b354a97c99b53bde…`):
 
 | Entregable (`astro-site/public/dl/paella-catering-business-plan/`) | Contenido | sha256 (Mac = VPS) |
 |---|---|---|
-| `paella-catering-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 8,499 palabras, Letter | `d7eccbf09e08f3b0192e3cd75127f1ac995a69c7f9877bd8c288682ba04fba9e` |
-| `paella-catering-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US sin calibrar | `765e496038990ff0c0fbb9c1ca711827ea24f8a5eadede4b5dc9c385acbcfe10` |
-| `paella-catering-pricing-calculator.xlsx` | 5 hojas, 362 fórmulas | `7550983c3ce50c51a30f8a2be2869d0a2c580d2bbdb42bf7bda6420c30e5932d` |
-| `paella-catering-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `aa32db167cb0224ece1bf53e3619b64a7817481036e12978f49e1cb7efefd8c6` |
+| `paella-catering-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 8,628 palabras, Letter | `f74e8dbf2fd572ff016a6f76d3c93c6d8e28b96b125aad7bdb94b550ca5acbc4` |
+| `paella-catering-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US sin calibrar | `a52444ce30cedffdf75d5a7306a06e1d4b3cb11c295dd070274dbc0ba0b27180` |
+| `paella-catering-pricing-calculator.xlsx` | 5 hojas, 362 fórmulas (cilindros por quemador, ronda §9) | `5a2a64ce2fc46dd8420ab92a0860080709ed0b1468974bd47b8b577610078a37` |
+| `paella-catering-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `36a53266311a79399e7a7c7226673f6ef4ac3fe333422b337d95ab1645ee570f` |
 
 **F3 fusionada** (`origin/feat/paella-catering-business-plan-en-f3`, `a9f3c3cf` + imágenes `8c94d63f`, sin conflictos) y
 **cifras de la landing** (bloque `CASO` de `astro-site/src/data/productos-en/planes/paella-catering-business-plan.ts`, ahora
@@ -286,3 +286,49 @@ plan HACCP con arroz TCS, Phase 2 con commissary agreement, condado, fire marsha
 source y shellstock tags 90 días, ServSafe Manager, Thumbtack, Google Business Profile, launch tasting), «excl. sales tax;
 staffing and service charge included», el pesimista que agota la caja, 135 eventos = dueño a tiempo completo con segundo
 paella chef los fines de semana, depósito de clientes no modelado. `esbuild` de la ficha, del dashboard y del changelog: OK.
+
+**sha256 de §8** actualizados con la ronda de la revisión final (§9).
+
+## 9. Ronda de la revisión final (24-oct, sesión Claude Code): texto + el recuento de cilindros
+
+Informe en `REVISION-FINAL.md` (0 B · 3 M · 19 m, «listo tras arreglos de texto»). Decisiones del orquestador: M1 con la
+fórmula, M2, M3 y los 19 menores donde fueran seguros. **Ninguna cifra del caso, ningún precio, coste ni ejemplo cambia**:
+libro idéntico salvo textos (préstamo $64,000 en 1 vuelta, 0 diferencias, 0 fallos de pycel, D15 verde); calculadora con
+los mismos $22.50 / $32.00 / $53.00 y el mismo coste de cada ejemplo; en `cifras_caso.json` solo cambian `eventos_a2`
+(148.5 → 149, M3) y `eventos_a3` (157.41 → 157) por el redondeo del token. Sin re-extracción: mismos 959 ids y mismos
+grupos (`TAREAS_PAEL` y sus pistas se quedan con el orden anterior: solo guiaban a los redactores).
+
+| # | Arreglo | Dónde | Estado |
+|---|---|---|---|
+| M1 | Cilindros = `MAX(paelleras, ROUNDUP(lb/20,0)) + 1` («one per burner, plus one spare») en `Pricing Calculator!B50`, `3 Example Quotes!B50:D50` y `Shopping List!B36:F36`, rótulos y notas nuevos; autotest con la misma lógica (boda 4, 150 invitados 5, 300 invitados 9). No entra en ningún coste | `calculadora_pael.py` | aplicado |
+| M2 | Personal por evento: `Pricing Calculator!C84` (chefs y ayudante + 1 server por 25 encima; el 1 por 25 total de Miami Grill es el extremo ajustado), nota del paquete full-service, `Staffing!J19` (la boda de la calculadora lleva 8, ≈ 570 h más en 18 bodas, cobertura > 100 %; media 2.5), `3 Example Quotes!B86` (dos paella chefs, uno en el tapas hour; alquileres con margen), docx [87] («the lean end… closer to one person per 14 guests») y [80] | calculadora · `GPA-plan.json` · docx | aplicado |
+| M3 | Token `eventos_a2/_a3` como derivado con redondeo al entero (149 / 157, como muestra el libro); [42] «as events grow by 10% and then 6% (about 149 and 157 a year)»; [95] «to about 149 and then 157 (the workbook keeps the annual averages with decimals)» | `datos_pael.py` · docx | aplicado |
+| m1 | [41] y [94]: las líneas más caras por su importe (van, lanzamiento, upfit, montaje, inventario, quemadores; las paelleras, $1,800) | docx | aplicado |
+| m2 | [113] «some competitors» | docx | aplicado |
+| m3 | [80] «final planning call» | docx | aplicado |
+| m4 | [48] «holds the date» · [43] y [85] «the second set of pans» · [69] «Build all three» · `Phase 1!E13` «a canopy over the cooking station» | docx · checklist | aplicado |
+| m5 | [108] los 14 alérgenos UK: «unlike the U.S. nine, include mollusks, celery, mustard, lupin and sulphites» | docx | aplicado |
+| m6 | Inducción como opción no presupuestada con paelleras más pequeñas: [40], [105] (×2), [112] y `Phase 1!E13` | docx · checklist | aplicado |
+| m7 | `Startup Costs!D7`: «burners for the 26-32 in pans cost less» (cuadra con los $2,500 de la fila) | `GPA-plan.json` | aplicado |
+| m8 | Drop-off «portioned into foil or hotel pans and delivered hot in insulated carriers» (`Pricing Calculator!C82` y `3 Example Quotes!B84`) | calculadora | aplicado |
+| m9 | Caldo: `Paella Yield & Pan Sizing!C5` «1.2 quarts per lb (2.5 liters per kg) for most paella rice; bomba… up to 1.45 quarts per lb (3 liters per kg)»; landing igual. **B5 se queda en 1.2** (ningún precio usa el caldo; los ejemplos no cambian) | calculadora · ficha | aplicado (texto) |
+| m10 | `K15` (40 in): «a burner rated for 40 in (100 cm) pans, larger than the XL 3-ring» | calculadora | aplicado |
+| m11 | `Phase 3!B7/E7`: pans, burners **and propane kit**; ocho cilindros, extintores, manta y cuenta de recarga o intercambio | checklist | aplicado |
+| m12 | `Phase 6!C10` «Paella chef / Event captain» (vía `GLB-check.revision.json`); `Staffing!J7` «One of them acts as event captain on the day» | checklist · `GPA-plan.json` | aplicado |
+| m13 | Orden por semanas en `Phase 3` (5, 6, 9, 7, 8, 11, 10, 12-16), `Phase 4` (5-9, 14, 10-13) y `Phase 5` (5-9, 12, 14, 10, 13, 11, 15, 16); recuentos 11/13/12/10/12/10 intactos (las celdas fijas, en `GLB-check.revision.json`: 29) | checklist | aplicado |
+| m14 | Landing «the split between paella packages and add-ons» | ficha | aplicado |
+| m15 | Landing «The Excel cells have no currency symbol, so you type amounts in your own currency; the example in the Word plan is in US dollars.» | ficha | aplicado |
+| m16 | Tarjeta del checklist de la landing con cada cosa en su fase (préstamo, ServSafe Manager en P1; propane kit, carriers, approved source y tags en P3; formación de propano en P4) | ficha | aplicado |
+| m17 | Landing «…for 50, 100 or 200 guests, or any count you type» · «85-100 g» en la landing y en `Instructions!B57` | ficha · `GPA-plan.json` | aplicado |
+| m18 | [56] «In Florida, where the peak runs from winter into spring, move share from July and August into January to April.» | docx | aplicado |
+| m19 | «kit estimate» en minúscula en la prosa del docx ([79], [87], [98]) | docx | aplicado |
+
+No aplicado: nada. Desviación menor: en la landing, «the Word plan's example» se escribe «the example in the Word plan»
+(la cadena va entre comillas simples en el TS, como en el BBQ).
+
+**Regeneración y gates (VPS)**: `aplicar_en --idempotencia` (préstamo $64,000 en 1 vuelta, faltan 0, 0 diferencias, 0
+fallos de pycel, D15 sin fallos) · `ensamblar_docx --plan pael` G8 VERDE (8,628 palabras) · calculadora regenerada (362
+fórmulas, autotest VERDE, 509 comprobaciones) · `gates_en` G1-G9 **TODO VERDE** · `--autotest` 20/20 · `ensamblar_docx
+--autotest` 8/8 · `barrido_pael` 1,889 piezas, 0 fallos · `check_textos --todas` las 7 OK · `censo --letter` 0 defectos ·
+`gate-no-latinos` 0 · `verificar` OK (16 sha256) · regresión FT/CAF, REST/PAN, BAR, CAT, MBAR, BBQ y PAEL TODO VERDE
+(39 comandos, rc 0; calculadoras CAT, MBAR, BBQ y PAEL VERDE). `esbuild` de la ficha OK. sha256 (Mac = VPS) en la tabla de §8.

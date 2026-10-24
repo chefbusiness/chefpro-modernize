@@ -7,9 +7,9 @@
    "parrafos": 131,
    "con_texto": 110,
    "heading1": 10,
-   "palabras": 8499,
+   "palabras": 8628,
    "piezas": 116,
-   "sha256": "d7eccbf09e08f3b0192e3cd75127f1ac995a69c7f9877bd8c288682ba04fba9e",
+   "sha256": "f74e8dbf2fd572ff016a6f76d3c93c6d8e28b96b125aad7bdb94b550ca5acbc4",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -18,7 +18,7 @@
    "hojas": 9,
    "formulas": 722,
    "piezas": 818,
-   "sha256": "765e496038990ff0c0fbb9c1ca711827ea24f8a5eadede4b5dc9c385acbcfe10",
+   "sha256": "a52444ce30cedffdf75d5a7306a06e1d4b3cb11c295dd070274dbc0ba0b27180",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -27,7 +27,7 @@
    "hojas": 5,
    "formulas": 362,
    "piezas": 520,
-   "sha256": "7550983c3ce50c51a30f8a2be2869d0a2c580d2bbdb42bf7bda6420c30e5932d",
+   "sha256": "5a2a64ce2fc46dd8420ab92a0860080709ed0b1468974bd47b8b577610078a37",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -36,7 +36,7 @@
    "hojas": 7,
    "formulas": 12,
    "piezas": 435,
-   "sha256": "aa32db167cb0224ece1bf53e3619b64a7817481036e12978f49e1cb7efefd8c6",
+   "sha256": "36a53266311a79399e7a7c7226673f6ef4ac3fe333422b337d95ab1645ee570f",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
