@@ -12849,7 +12849,7 @@
    "n_apariciones": 1,
    "palabras": 14,
    "con_cifra": false,
-   "adaptar": "Añade al final: la tabla trae billetes y monedas de EE. UU. (el penny ya no se acuña pero sigue siendo de curso legal; un «25¢ roll» cuenta $10 y un «10¢ roll» $5); en UK, Canadá o Australia, desprotege la hoja (sin contraseña) y cambia el rótulo y el valor de cada fila",
+   "adaptar": "Añade al final: la tabla trae billetes y monedas de EE. UU. (el penny ya no se acuña pero sigue siendo de curso legal; un «25¢ roll» cuenta $10 y un «10¢ roll» $5); en UK, Canadá o Australia, cambia el rótulo y el valor de cada fila",
    "sha1": "8b997c8be8ae",
    "donde": [
     {
@@ -36332,7 +36332,7 @@
    "es": "Z del TPV",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "POS Z report: sales + tax, excl. tips",
+   "en_por_celda": "POS Z: sales + tax, excl. tips",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 3,

@@ -414,7 +414,7 @@ POR_CELDA = OrderedDict([
     (('09', _HC, 'A39'), 'Closing Summary'), (('09', _HC, 'A40'), 'Item'), (('09', _HC, 'B40'), 'Amount'),
     (('09', _HC, 'A41'), 'Total cash (count)'), (('09', _HC, 'A42'), 'Starting bank (−)'),
     (('09', _HC, 'A43'), 'Card sales, excl. tips'), (('09', _HC, 'A44'), 'Other tenders + card tips paid in cash'),
-    (('09', _HC, 'A45'), 'TOTAL COLLECTED'), (('09', _HC, 'A46'), 'POS Z report: sales + tax, excl. tips'),
+    (('09', _HC, 'A45'), 'TOTAL COLLECTED'), (('09', _HC, 'A46'), 'POS Z: sales + tax, excl. tips'),
     (('09', _HC, 'A47'), 'OVER / SHORT'),
     # 09 · Registro Mensual: cabecera (la C ya es efectivo neto: el ES la llama «Ventas Efectivo») y totales
     (('09', _HR, 'A4'), 'Day'), (('09', _HR, 'B4'), 'Starting Bank'), (('09', _HR, 'C4'), 'Cash Sales (net)'),
@@ -737,7 +737,9 @@ ADAPTAR = OrderedDict([
     (('09', 'Instrucciones', 'B12'), _base.ADAPTAR[('09', 'Instrucciones', 'B17')]),
     (('09', 'Instrucciones', 'B13'), 'Registro: efectivo neto (sin el fondo), tarjetas sin propinas, otros + propinas '
                                      'pagadas y la Z; el over/short se calcula solo'),
-    (('09', 'Instrucciones', 'B17'), _base.ADAPTAR[('09', 'Instrucciones', 'B14')]),
+    # el 09 de la pastelería no va protegido: sin «desprotege la hoja» del base
+    (('09', 'Instrucciones', 'B17'), _base.ADAPTAR[('09', 'Instrucciones', 'B14')].replace(
+        'desprotege la hoja (sin contraseña) y ', '')),
     (('09', 'Apertura de Caja', 'B7'), 'Cita el rótulo EN de la celda: "Starting bank (opening float)"'),
     (('09', 'Apertura de Caja', 'B9'), 'TPV → POS'),
     (('09', 'Apertura de Caja', 'B10'), 'X de apertura → X report'),
@@ -872,6 +874,9 @@ for _fila, (_fecha, _evento, _antel, _ae, _ag) in CALENDARIO.items():
 # Celdas ES con °C cuya EN NO lleva cifra en °F (G7 no les exige °F): ninguna
 CELSIUS_SIN_F = frozenset()
 AJUSTE_MAQUETA_ES = True
+# 13 «Recepción de Mercancía» A38:K40 (combinada de 3 filas automáticas, 45 pt): los criterios US (huevos a 45 °F,
+# leche, 3-202.11) piden 4 líneas (54 pt); capa_ajuste no sube combinadas de varias filas → la fila 40 a 30 pt
+ALTOS_FILA = {('13', 'Recepción de Mercancía', 40): 30.0}
 
 # ==========================================================================
 # REGLAS_US: las del base que aplican + las de la pastelería (fuente única de lo que el kit puede afirmar)
