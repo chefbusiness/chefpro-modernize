@@ -341,7 +341,7 @@ FILAS_CALENDARIO = range(4, 21)
 CALENDARIO = OrderedDict([
     (4, ('Jan 6 → Mardi Gras', "Three Kings Day & King cake season", '2 weeks',
          'Rosca de Reyes (Three Kings bread) para el 6 de enero y King cake hasta el Mardi Gras (relleno de crema, '
-         'cream cheese o praliné); sin «nata, trufa» españolas',
+         'cream cheese o praliné) y paczki para el Fat Tuesday; sin «nata, trufa» españolas',
          'Fuerte en las comunidades hispanas y en la costa del Golfo (Luisiana); el muñequito, aparte para que lo meta '
          'el cliente')),
     (5, ('Feb 14', "Valentine's Day", '2 weeks', None, None)),
@@ -356,7 +356,7 @@ CALENDARIO = OrderedDict([
     (8, ('2nd Sunday in May', "Mother's Day", '2 weeks',
          'Tartas con dedicatoria, cupcakes, cajas de macarons y bollería para el brunch',
          'Pico muy fuerte: refuerza el mostrador. Father\'s Day es el 3.er domingo de junio (más flojo)')),
-    (9, ('May–Jun (varies)', 'First Communions & graduations', '2–3 months (catalog by February)',
+    (9, ('May peak · Apr–Jun (varies)', 'First Communions & graduations', '2–3 months (catalog by February)',
          'Tartas personalizadas, mesas dulces (dessert tables) y galletas decoradas (en graduaciones, con los colores '
          'del colegio)',
          'Cita la hoja «Celebration Cakes (Apr-Jun)» del 06 con su EN exacto: «→ 06 Holiday & Event Checklists · '
@@ -364,7 +364,7 @@ CALENDARIO = OrderedDict([
     (10, ('Jun–Aug', 'Summer (Memorial Day → Labor Day) & July 4', '4 weeks',
           'Sustituye a «helados, tartas frías, granizados»: tartas de fruta (fruit pies y tarts), icebox cakes y, para '
           'el 4 de julio, tarta bandera y cupcakes rojo, blanco y azul',
-          'Con calor, todo lo relleno de crema en la vitrina refrigerada a 41 °F o menos')),
+          'Todo el año (no solo con calor), todo lo relleno de crema en la vitrina refrigerada a 41 °F o menos')),
     (11, ('Oct 31', 'Halloween', '2 weeks', None, None)),
     (12, ('Nov 1–2 · 4th Thursday of Nov', 'Day of the Dead & Thanksgiving', '3 weeks',
           'Sustituye a Todos los Santos: pan de muerto (1-2 de noviembre) y, para Thanksgiving, pies (pumpkin, pecan, '
@@ -380,7 +380,8 @@ CALENDARIO = OrderedDict([
           None)),
     (15, ('Dec 31', "New Year's Eve", '1 week',
           'Tartas para la cena, petit fours y macarons',
-          'Pedidos mayoristas (wholesale) de otros negocios de comida; sin la palabra «restaurant»')),
+          'Pedidos mayoristas (wholesale) de otros negocios de comida, con el aviso de que la venta mayorista puede '
+          'necesitar su propia licencia; sin la palabra «restaurant»')),
     (16, ('Varies', 'Local festivals & fairs', '3 weeks',
           'Los dulces tradicionales de tu zona', None)),
     (17, ('Varies (peak May–Oct)', 'Wedding season', '2–3 months',
@@ -441,7 +442,7 @@ POR_CELDA = OrderedDict([
     (_MD + ('C34',), '350 °F · 5 more min'),
     (_MD + ('C35',), 'Down to 68–72 °F'),
     (_CR + ('C7',), '135 °F → 70 °F within 2 h, then 41 °F or below within 4 more h (FDA Food Code 3-501.14)'),
-    (_CR + ('C8',), 'Syrup at 244–250 °F · butter at 64–68 °F'),
+    (_CR + ('C8',), 'Italian: syrup at 244–250 °F · Swiss: whites and sugar to 160 °F · butter at 64–68 °F'),
     (_CR + ('C9',), 'Filling 2:1 chocolate:cream · glaze 1:1 · cream at 175–185 °F'),
     (_CR + ('C11',), 'Cook to 180–183 °F'),
     (_CR + ('C12',), 'Kit target: use within 24 h at 41 °F or below (legal max 7 days, FDA Food Code 3-501.17)'),
@@ -503,7 +504,7 @@ POR_CELDA = OrderedDict([
     (_CV + ('B28',), 'US: FALCPA + FASTER Act (9 major food allergens); FDA Food Code 2022 §3-602.12(C), written notice '
                      'for unpackaged food where your state has adopted it. UK: Food Information Regulations 2014 (14).'),
     # 13 · cabeceras del registro de temperaturas (CF_POR_CELDA con los mismos umbrales) y de la recepción
-    (_RT + ('B4',), 'Walk-in cooler\n(32 to 41 °F)'), (_RT + ('D4',), 'Dough retarder\n(36 to 41 °F)'),
+    (_RT + ('B4',), 'Walk-in cooler\n(32 to 41 °F)'), (_RT + ('D4',), 'Dough retarder\n(36 to 41 °F, in retard mode)'),
     (_RT + ('F4',), 'Freezer\n(0 °F or below)'), (_RT + ('H4',), 'Bakery case 1\n(32 to 41 °F)'),
     (_RT + ('J4',), 'Bakery case 2\n(32 to 41 °F)'),
     (_RT + ('L4',), 'Blast chiller\n(135 °F → 70 °F in 2 h, then 41 °F within 4 h)'), (_RT + ('L5',), 'Temp at 2 h'),
@@ -517,7 +518,14 @@ POR_CELDA = OrderedDict([
     (_VU + ('D11',), 'Kit target 24 h (eggs) unless a shelf-life study shows more; legal max 7 days at 41 °F '
                      '(3-501.17). In a sanitized jar'),
     (_VU + ('D16',), 'Cream-filled: case at 41 °F or below (FDA Food Code 3-501.16)'),
-    (_VU + ('D17',), 'Next day: day-old discount or waste. Cream-filled: case at 41 °F or below (3-501.16)'),
+    (_VU + ('D17',), 'Next day: day-old discount or waste. Custard-, cream- or cheese-filled pieces and savory items '
+                     '(quiche, ham & cheese, empanadas): case at 41 °F or below (3-501.16), or time as a control '
+                     'with a written procedure (3-501.19: 4 h, then discard)'),
+    # ronda 1: m6 (refuerzo del mostrador lo decide el Manager), m7 (cierre de obrador) y m8 (última recogida)
+    (('06', 'San Valentín', 'D17'), 'Manager'), (('06', 'Día Madre-Padre', 'D14'), 'Manager'),
+    (('01', 'Cierre Obrador', 'E27'), '8:05 PM'), (('01', 'Cierre Obrador', 'D27'), 'Shift lead'),
+    (('01', 'Cierre Obrador', 'D29'), 'Shift lead'),
+    (('11', 'Agenda de Entregas', 'A17'), '7:30 PM'),
 ])
 for _f, _es, _xes, _en, _xen in DENOMINACIONES:
     POR_CELDA[(HOJA_CAJA[0], HOJA_CAJA[1], 'A%d' % _f)] = _en
@@ -527,7 +535,23 @@ for _fila, (_fecha, _evento, _antel, _ae, _ag) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'F%d' % _fila)] = _antel
 FORMATOS_EN = OrderedDict(_base.FORMATOS_EN)
 FORMATOS_EN.update([('dd/mm/yyyy', 'mm/dd/yyyy')])             # fechas del 10, el 11 y el 13 (D-PAS)
-VALORES_EN = OrderedDict()             # el inventario del ES pastelería no trae mínimos numéricos (deuda adf52a52: no aplica)
+# ronda 1 (M3, m10): propuestas de la matriz que la EN cambia a ● (concha y Mexican wedding cookies llevan leche o
+# mantequilla en EE. UU.; la piel confitada de los hot cross buns va sulfitada). El inventario no trae mínimos.
+VALORES_EN = OrderedDict([
+    (('12', 'Matriz Alérgenos', 'I8'), ('○', '●')),
+    (('12', 'Matriz Alérgenos', 'I28'), ('○', '●')),
+    (('12', 'Matriz Alérgenos', 'N24'), ('○', '●')),
+])
+# G6: las fórmulas que dependen de esas tres celdas cambian con ellas (totales de fila y de columna de la matriz y su
+# reflejo en la carta); valores EN declarados, comprobados por G6 (gates_en.G6_ESPERADO)
+G6_ESPERADO = OrderedDict([
+    (('12', 'Matriz Alérgenos', 'Q8'), 3), (('12', 'Matriz Alérgenos', 'Q24'), 4),
+    (('12', 'Matriz Alérgenos', 'Q28'), 3),                                  # Total ● de la fila (ES 2, 3, 2)
+    (('12', 'Matriz Alérgenos', 'I53'), 34), (('12', 'Matriz Alérgenos', 'N53'), 3),   # contienen ● (ES 32, 2)
+    (('12', 'Matriz Alérgenos', 'I54'), 5), (('12', 'Matriz Alérgenos', 'N54'), 3),    # trazas ○ (ES 7, 4)
+    (('12', 'Carta de Alérgenos', 'H9'), '●'), (('12', 'Carta de Alérgenos', 'M25'), '●'),
+    (('12', 'Carta de Alérgenos', 'H29'), '●'),                              # la carta, desde la matriz
+])
 
 # ==========================================================================
 # CF_POR_CELDA (desviación declarada, D7): umbrales de color del 13 en °F; mismas reglas, mismos rangos
@@ -539,7 +563,7 @@ CF_POR_CELDA = OrderedDict([
     (_RT + ('H6:I36',), ('AND(H6<>"",OR(H6<0,H6>4))', 'AND(H6<>"",OR(H6<32,H6>41))')),
     (_RT + ('J6:K36',), ('AND(J6<>"",OR(J6<0,J6>4))', 'AND(J6<>"",OR(J6<32,J6>41))')),
     (_RT + ('L6:L36',), ('AND(L6<>"",L6>10)', 'AND(L6<>"",L6>70)')),
-    (_RM + ('G5:G34',), ('4', '41')),
+    (_RM + ('G5:G34',), ('4', '45')),        # ronda 1 m11: huevos (aire) y leche se admiten hasta 45 °F
 ])
 
 # ==========================================================================
@@ -871,12 +895,87 @@ for _fila, (_fecha, _evento, _antel, _ae, _ag) in CALENDARIO.items():
         ADAPTAR[(HOJA_CAL[0], HOJA_CAL[1], 'E%d' % _fila)] = 'Evento EN: «%s». %s' % (_evento, _ae)
     if _ag:
         ADAPTAR[(HOJA_CAL[0], HOJA_CAL[1], 'G%d' % _fila)] = 'Evento EN: «%s». %s' % (_evento, _ag)
+# Ronda 1 de la revisión adversarial (24-oct): el ADAPTAR sigue al EN corregido
+ADAPTAR.update([
+    (('02', 'Decoración y Acabado', 'B15'), 'Bollería sin relleno de crema (croissants, pain au chocolat, palmiers, fruit '
+                                            'danishes); sin «custard danishes» en la vitrina ambiente'),
+    (('02', 'Decoración y Acabado', 'C15'), 'Ambiente; lo relleno de natillas, crema o queso, a la vitrina refrigerada a '
+                                            '41 °F o menos (FDA Food Code 3-501.16)'),
+    (('08', 'Apertura del Negocio', 'B15'), 'Orden: bollería, vitrina refrigerada y salado al final; quiche, empanadas y '
+                                            'croissant de jamón y queso también a 41 °F o menos (FDA Food Code 3-501.16)'),
+    (('B01', 'Briefing Diario', 'B6'), 'Con las referencias EN del GLOSARIO: viennoiserie (croissants, fruit danishes, '
+                                       'conchas...)'),
+    (('02', 'Cremas y Rellenos', 'B15'), 'Chocolate fundido (melted, no tempered) + merengue cocido (italiano o suizo) o '
+                                         'claras pasteurizadas (FDA Food Code 3-302.13)'),
+    (('02', 'Cremas y Rellenos', 'B18'), 'Praliné y crocante de frutos secos (praline paste, nut brittle; sin «pralines», '
+                                         'que en EE. UU. es el dulce de pecana) en su puesto, con utensilios propios '
+                                         '(contacto cruzado de alérgenos)'),
+    (('02', 'Masas y Fermentación', 'B25'), 'Añade: el sésamo y las semillas, en sus bandejas y su mesa (contacto cruzado)'),
+    (('04', 'Pastelero', 'B17'), 'Añade: con alergia CONFIRMADA, ese encargo el primero del día, en mesa limpia y '
+                                 'sanitizada, con utensilios limpios y etiquetado aparte'),
+    (('01', 'Apertura Obrador', 'B17'), 'Añade: lavamanos con jabón y papel, despejados (FDA Food Code 6-301.12)'),
+    (('04', 'Dependiente Vitrina', 'B11'), 'Añade: con pinzas o papel de pastelería, nunca a mano desnuda (FDA Food Code '
+                                           '3-301.11)'),
+    (('B01', 'Briefing Diario', 'B23'), 'Añade: quien tenga vómitos, diarrea o ictericia avisa al manager y no trabaja con '
+                                        'alimentos (FDA Food Code 2-201.11 y 2-201.12)'),
+    (('06', 'Navidad', 'B9'), 'Personal de temporada (holiday help); añade: 16-17 años, sin amasadoras ni batidoras, '
+                              'laminadoras, divisoras ni boleadoras, tampoco limpiarlas (29 CFR 570.62, HO 11), salvo '
+                              'batidoras portátiles de sobremesa de 5 qt o menos y ½ hp o menos; 14-15 años, ninguna '
+                              'máquina eléctrica ni hornear (29 CFR 570.33(e) y (h)) y nada antes de las 7 AM ni después '
+                              'de las 7 PM en curso escolar (29 CFR 570.35)'),
+    (('06', 'Navidad', 'B12'), 'Fechas: Dec 24, 25 y 31 y Jan 1; el 6 de enero solo si vendes roscas'),
+    (('06', 'Navidad', 'B29'), 'Encargos de rosca de Reyes; el King cake se vende del 6 de enero al Mardi Gras'),
+    (('06', 'Navidad', 'B31'), 'Primera hornada la madrugada del 4 al 5 (un tercio, para recoger el 5 y la mañana del 6)'),
+    (('06', 'Navidad', 'B32'), 'Hornada principal la madrugada del 5 al 6 (60-70 %: el 6 es el día fuerte en EE. UU.)'),
+    (('06', 'Navidad', 'B33'), 'Rosca rellena (nata, crema pastelera, cream cheese): al momento y en la vitrina '
+                               'refrigerada a 41 °F o menos; la mexicana suele venderse sin rellenar'),
+    (('06', 'Todos los Santos (Oct-Nov)', 'B13'), 'Sustituye a panellets: pies de fruta (apple, cherry) y nut pie (pecan, '
+                                                  'con huevo: en frío salvo que la autoridad sanitaria lo acepte como no '
+                                                  'TCS)'),
+    (('06', 'Todos los Santos (Oct-Nov)', 'B14'), 'Sustituye a buñuelos de viento: custard pies (pumpkin, sweet potato), '
+                                                  'enfriados de 135 a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code '
+                                                  '3-501.14) y guardados a 41 °F o menos: son TCS (3-501.16)'),
+    (('06', 'Todos los Santos (Oct-Nov)', 'B22'), 'Reponer la vitrina cada 2 h: los custard pies salen de la vitrina '
+                                                  'refrigerada'),
+    (('08', 'Apertura del Negocio', 'B24'), 'Persiana → roll-down security gate (si la hay)'),
+    (('08', 'Cierre del Negocio', 'B22'), 'Persiana → roll-down security gate (si la hay)'),
+    (('11', 'Instrucciones', 'B17'), 'Privacidad US [criterio del kit], sin RGPD: datos personales y de salud (alergias); '
+                                     'solo lo necesario; la casilla de las alergias, distinta de la de marketing y sin '
+                                     'premarcar; las fichas, bajo llave y el tiempo que aconseje el seguro o el abogado '
+                                     '(prueba ante una reclamación), luego se destruyen; ley de privacidad del estado'),
+    (('11', 'Ficha de Encargo', 'A46'), 'Aviso de privacidad US [criterio del kit]: quién, para qué, alergias con el '
+                                        'consentimiento de arriba, datos de otras personas con su permiso, cuánto se '
+                                        'guarda (lo necesario para el encargo, los impuestos y posibles reclamaciones), '
+                                        'no se vende ni se comparte, dudas en el mostrador'),
+    (('11', 'Ficha de Encargo', 'A23'), 'Añade: los 9 primeros son los alérgenos principales de EE. UU. (FALCPA + FASTER '
+                                        'Act); el resto, gluten para celíacos, sulfitos y los de UK'),
+    (('12', 'Etiquetas Vitrina', 'B2'), 'Abreviaturas US fijas: «W wheat · E eggs · M milk · TN tree nuts · P peanuts · S '
+                                        'soy · SE sesame · F fish · SH shellfish · SU sulfites»; cartulina (card stock)'),
+    (('12', 'Matriz Alérgenos', 'V24'), 'Sulfitos: la piel confitada y las pasas suelen ir sulfitadas (10 ppm o más): '
+                                        'propuesta ●, como ingrediente'),
+    (('12', 'Matriz Alérgenos', 'V28'), 'Leche: las Mexican wedding cookies suelen llevar mantequilla (●); con manteca, ○. '
+                                        'Sésamo: algunos polvorones lo llevan'),
+    (('13', 'Recepción de Mercancía', 'A38'), 'Criterios US: refrigerado TCS por encima de 41 °F; huevos con cáscara en '
+                                              'un camión a más de 45 °F de aire; leche y nata, de 41 a 45 °F solo si la '
+                                              'ley de lácteos lo permite y enfriadas a 41 °F en 4 h (FDA Food Code '
+                                              '3-202.11 y 3-501.14); congelado con signos de descongelación; envase '
+                                              'roto; fecha a menos de 2 días; camión sucio o sin frío; factura que no '
+                                              'coincide; añade: la columna se pone en rojo por encima de 45 °F'),
+    (('13', 'Registro de Temperaturas', 'A40'), 'Criterio del kit: más de 2 h por encima de 41 °F o tiempo desconocido → '
+                                                'se tira; el tiempo como control (FDA Food Code 3-501.19, hasta 4 h) '
+                                                'solo con procedimiento escrito previo y hora marcada, nunca a posteriori '
+                                                'tras una avería'),
+    (('B02', 'Instrucciones', 'B7'), 'Añade la nota UK: Mothering Sunday (3 semanas antes de Pascua: marzo o primeros '
+                                     'de abril), bank holidays y Boxing Day en las filas libres'),
+])
 # Celdas ES con °C cuya EN NO lleva cifra en °F (G7 no les exige °F): ninguna
 CELSIUS_SIN_F = frozenset()
 AJUSTE_MAQUETA_ES = True
 # 13 «Recepción de Mercancía» A38:K40 (combinada de 3 filas automáticas, 45 pt): los criterios US (huevos a 45 °F,
 # leche, 3-202.11) piden 4 líneas (54 pt); capa_ajuste no sube combinadas de varias filas → la fila 40 a 30 pt
-ALTOS_FILA = {('13', 'Recepción de Mercancía', 40): 30.0}
+# ronda 1: los criterios crecen a 5 líneas (68 pt; aviso del rojo a 45 °F) y la nota de «Registro de Temperaturas»
+# A40:O41 (2 filas de 21,8 pt) a 4 (54 pt; tiempo como control no aplicable a una avería)
+ALTOS_FILA = {('13', 'Recepción de Mercancía', 40): 42.0, ('13', 'Registro de Temperaturas', 41): 37.0}
 
 # ==========================================================================
 # REGLAS_US: las del base que aplican + las de la pastelería (fuente única de lo que el kit puede afirmar)
@@ -887,7 +986,8 @@ for _k in ('parasitos', 'moluscos', 'recalentado', 'aviso_consumidor', 'campana'
            'lavado_vegetal', 'joyas', 'enfermos', 'lavamanos'):
     del REGLAS_US[_k]
 REGLAS_US.update([
-    ('vitrina_tcs', ('vitrina refrigerada a 41 °F o menos para lo TCS: cremas, natillas, nata, cheesecake, pies de crema',
+    ('vitrina_tcs', ('vitrina refrigerada a 41 °F o menos para lo TCS: cremas, natillas, nata, queso crema, cheesecake, '
+                     'custard pies y lo salado perecedero (quiche, empanadas, jamón y queso)',
                      'FDA Food Code 2022 §3-501.16(A)(2); §1-201.10 (TCS)')),
     ('enfriar_cremas', ('135 → 70 °F en 2 h y → 41 °F en 4 h más (crema pastelera, curd, ganache con nata)',
                         'FDA Food Code 2022 §3-501.14')),
@@ -908,9 +1008,16 @@ REGLAS_US.update([
                      '[fuente] FDA, guía de alérgenos (advisory labeling); [criterio del kit]')),
     ('donacion', ('donación de buena fe protegida salvo negligencia grave o dolo', '42 U.S.C. 1791 (Bill Emerson Good '
                                                                                  'Samaritan Food Donation Act)')),
-    ('menores_hornear', ('menores de 18: sin amasadoras, batidoras industriales, laminadoras ni divisoras (también '
-                         'limpiarlas), salvo batidoras de sobremesa ≤ 5 quarts; 14-15 años: sin hornear',
-                         '29 CFR 570.62 (HO 11); 29 CFR 570.33(h); DOL Fact Sheet #58')),
+    ('menores_hornear', ('16-17 años: sin amasadoras ni batidoras, laminadoras, divisoras ni boleadoras (tampoco '
+                         'limpiarlas), salvo batidoras portátiles de sobremesa ≤ 5 qt y ≤ ½ hp; 14-15 años: ninguna '
+                         'máquina eléctrica, sin hornear y nada antes de las 7 AM ni después de las 7 PM en curso '
+                         'escolar', '29 CFR 570.62 (HO 11); 29 CFR 570.33(e) y (h); 29 CFR 570.35; DOL Fact Sheet '
+                         '#58')),
+    ('enfermos_pas', ('vómitos, diarrea o ictericia: el trabajador avisa y queda excluido',
+                      'FDA Food Code 2022 §2-201.11; §2-201.12')),
+    ('lavamanos_pas', ('lavamanos con jabón y papel, despejados', 'FDA Food Code 2022 §6-301.12')),
+    ('mano_desnuda', ('sin mano desnuda en lo listo para consumir: pinzas o papel de pastelería',
+                      'FDA Food Code 2022 §3-301.11')),
     ('marketing', ('mensajes de texto de marketing con consentimiento escrito previo; emails con baja',
                    '47 CFR 64.1200 (TCPA); 15 U.S.C. 7704 (CAN-SPAM)')),
     ('deposito', ('depósito del 30-50 %: práctica habitual, no ley; reglas estatales sobre depósitos no reembolsables',
@@ -931,7 +1038,7 @@ REGLAS_US.update([
 # °F que el kit puede afirmar (G7): seguridad (0, 32, 41, 45, 70, 135), cámara de masas (36), proceso del 02 y del 13
 # (conversiones de POR_CELDA y ADAPTAR) y hornos
 GRADOS_F_SPEC = {0, 32, 36, 37, 39, 41, 43, 45, 54, 57, 64, 68, 70, 72, 75, 77, 79, 81, 82, 84, 86, 88, 90, 95, 99,
-                 104, 113, 122, 131, 135, 175, 180, 183, 185, 244, 250, 320, 325, 340, 350, 375, 400, 450, 480}
+                 104, 113, 122, 131, 135, 160, 175, 180, 183, 185, 244, 250, 320, 325, 340, 350, 375, 400, 450, 480}
 
 # ==========================================================================
 # Pistas y dependencias de la pastelería (extraer_textos.py)

@@ -254,3 +254,107 @@ En «Instructions» B7 va la nota UK (Mothering Sunday, bank holidays, Boxing Da
 - **Versión**: los 15 EN dicen «Version 2.0 · October 2026»; el ES mezcla 2.0 y 2.1 (SPEC §5).
 - **Código común**: la rama de texto girado de `objetivo_ajuste`. ¿Es razonable 5,25 pt por unidad de ancho?
   Conservador: a 11 pt, un carácter mide unos 5,5-6 px y una unidad, 7 px.
+
+## Ronda 1 de la revisión adversarial (`revision/REVISION-F2.md`: 1 BLOQUEANTE · 8 MAYOR · 22 menores · erratas ES de maquetación)
+
+Aplicados el BLOQUEANTE, los 8 MAYOR y 20 de los 22 menores (decisiones del orquestador). Todo va por celda: G1/G2
+JSON, `POR_CELDA`, `VALORES_EN`, `CF_POR_CELDA` y `ALTOS_FILA`. No hay filas nuevas ni tareas nuevas, así que las
+cifras de tareas no cambian. M8 y m20 se han arreglado **en el ES LIVE** y la EN los hereda: G1 sigue exigiendo la
+misma maqueta que el ES, sin desviación declarada.
+
+### Parche del ES LIVE (`kit-tareas-pasteleria`, sin cambio de versión, XML)
+
+Lo hace el script del scratchpad `patch_es_pas.py`. Estilos, DV, CF, caché y docProps quedan byte a byte.
+
+| Fichero ES | Cambio |
+|---|---|
+| `09-apertura-cierre-caja.xlsx` | «Instrucciones»: área `$A$1:$A$20` → `$A$1:$B$30` · «Registro Mensual»: área `$A$1:$I$38` → `$A$1:$J$38` · «Cierre de Caja»: columna A 5 → **24** y B 50 → **31** (mismo ancho impreso; rótulos A41-A46 y «Denominación» A19 enteros) |
+| `02-partidas-cocina.xlsx` | «Cremas y Rellenos» C8: «Almíbar a 118-121 °C · mantequilla a 18-20 °C» → «Italiano: almíbar a 118-121 °C · suizo: claras y azúcar a 71 °C · mantequilla a 18-20 °C» |
+
+- El volcado ES de antes y de después difiere en 3 líneas: C8 y las dos áreas. Los anchos no salen en el volcado; se
+  han comprobado con openpyxl: A 24, B 31.
+- ES: `censo-entregables --only kit-tareas-pasteleria --fail` 0 defectos · `gate-no-latinos` 0.
+- El generador `scripts/productos-digitales/kit-pasteleria-v2_0-postprocess.py` lleva lo mismo (C8, áreas y anchos).
+  `generate-tareas-pasteleria*.py` no define ni esas celdas ni esas áreas.
+- Regenerados `extraer_textos` (censo_es.json y textos_es.json), `mapas_pastry` y `heredar`: los 1.361 ids siguen
+  igual, solo cambia el ES de c0162 (C8, regenerar) y los ADAPTAR. Siguen 63 heredadas y 820 pendientes.
+
+### Tabla de la ronda
+
+| Id | Dónde (EN) | Aplicado en |
+|---|---|---|
+| B1 | 02 «Decorating & Finishing» B15/C15 · 08 «Shop Opening» B15 · B02 G10 · 13 «Shelf Life» D17 · B01 B6 | c0208 (fruit danishes, sin custard en la vitrina ambiente), c0209 (lo relleno de natillas, crema o queso, a 41 °F, 3-501.16), c0697 (quiche, empanadas y croissant de jamón y queso a la vitrina refrigerada), c1320 («all year round»), c1259 · `POR_CELDA` D17 (relleno y salado: 41 °F o tiempo como control, 3-501.19) · `REGLAS_US['vitrina_tcs']` con lo salado |
+| M1 | 02 «Creams & Fillings» B18 · 02 «Doughs & Fermentation» B25 · 04 «Pastry Cook» B17 · 01 «Kitchen Opening» B21 | c0178 (praline paste y nut brittle en su puesto, con utensilios propios), c0136 (sésamo y semillas en sus bandejas), c0348 (alergia confirmada: primero del día, mesa sanitizada, etiqueta aparte), c0043 (harinas de frutos secos y semillas en cubos cerrados) |
+| M2 | B01 B23 · 01 «Kitchen Opening» B17 · 04 «Counter Associate» B11 | c1274 (exclusión, 2-201.11 / 2-201.12), c0037 (lavamanos, 6-301.12), c0376 (pinzas o papel, 3-301.11) · `REGLAS_US` + `enfermos_pas`, `lavamanos_pas`, `mano_desnuda` |
+| M3 | 12 «Allergen Matrix» I8 (concha), I28 (polvorones) | `VALORES_EN` ○ → ● · c1103 (V28) · `G6_ESPERADO` (abajo) |
+| M4 | 06 «Thanksgiving (Nov)» B13, B14, B22 | c0621 (fruit pies; pecan = nut pie, con huevo: en frío salvo que la autoridad sanitaria diga lo contrario), c0622 (custard pies, 135 → 70 °F en 2 h → 41 °F en 4 h, 3-501.14; TCS, 3-501.16), c0632 |
+| M5 | 06 «Holiday Season» B9 | c0475 (HO 11 solo 16-17 años; batidoras portátiles ≤ 5 qt y ≤ ½ hp; 14-15 años sin máquinas eléctricas, 570.33(e), ni hornear, (h); nada antes de las 7 AM ni después de las 7 PM en curso escolar, 570.35) · `REGLAS_US['menores_hornear']` |
+| M6 | 06 «Holiday Season» B29, B31, B32, B33 | c0503 (King cake del 6 de enero al Mardi Gras), c0507 (primera hornada: un tercio, para el 5 y la mañana del 6), c0509 (hornada principal 60-70 %: el 6 es el día fuerte), c0511 (rellena: al momento y a 41 °F; la mexicana suele ir sin rellenar). Las fechas E31/E32 («Jan 4–5», «Jan 5–6») ya casaban |
+| M7 | 02 «Creams & Fillings» B15 · 13 «Shelf Life» D7 · 01 «Kitchen Opening» B16 | c0172 «melted chocolate», c1217 «Bring to room temperature», c0036 (mantequilla «to working temperature», el otro calco de «atemperar») |
+| M8 | 09 «Cash Drawer Closing» A41-A46 | ES LIVE (columna A 24 / B 31) |
+| m1 | 02 «Creams & Fillings» C8 | `POR_CELDA` «Italian: syrup at 244–250 °F · Swiss: whites and sugar to 160 °F · …» · `GRADOS_F_SPEC` + 160 · ES LIVE C8 |
+| m2 | 02 «Doughs & Fermentation» B30/B31 | c0143/c0145 con su tilde («sablée», «brisée») · `gates_en.LISTA_BLANCA_TILDE` + las dos |
+| m3 | 02 B18 | con M1 (c0178) |
+| m4 | 05 «Monthly Maintenance» B6 · 06 «Easter» B8 · 08 B24 / «Shop Closing» B22 | c0424 (self-clean cycle), c0544 (chicks), c0709 / c0730 (roll-down security gate, if you have one) |
+| m5 | 06 «Holiday Season» B12 | c0480 (24, 25 y 31 de diciembre y 1 de enero; el 6, solo si se venden roscas) |
+| m6 | 06 «Valentine's Day» D17 · «Mother's & Father's Day» D14 | `POR_CELDA` = «Manager» |
+| m7 | 01 «Kitchen Closing» E27, D27, D29 · 08 «Shop Opening» B5 | `POR_CELDA` E27 «8:05 PM», D27 y D29 «Shift lead» · c0684 (desarmar la zona de la tienda si el obrador no lo ha hecho) |
+| m8 | 11 «Pickup Schedule» A17 | `POR_CELDA` «7:30 PM» (última franja antes de cerrar la puerta a las 7:50) |
+| m9 | 12 «Case Labels» B2 · frase de contacto cruzado (12 «Allergen Matrix» A54 y «Case Sign» B7) · 11 «Order Form» A23 | c1146 (+ P peanuts, F fish, SH shellfish), c1122 (+ fish, «replace with your own list»), c0983 (+ sulfitos) |
+| m10 | 12 «Allergen Matrix» N24 (hot cross buns) | `VALORES_EN` ○ → ● · c1098 (V24) |
+| m11 | 13 «Receiving Log» CF G5:G34 · A38 | `CF_POR_CELDA` > 41 → **> 45** (huevos y leche legales a 42-45 °F ya no salen en rojo) · c1194 (paréntesis de la leche al derecho y aviso: rojo solo por encima de 45 °F; entre 41 y 45 °F, solo huevos con cáscara y leche o nata donde se permita) · `ALTOS_FILA` fila 40 → 42 pt |
+| m12 | 13 «Temperature Log» D4 · M5 | `POR_CELDA` D4 «Dough retarder (36 to 41 °F, in retard mode)» · c1177 «Min. to 70 °F» |
+| m13 | 13 «Temperature Log» A40 | c1180 (el tiempo como control exige procedimiento previo y hora marcada; no se aplica a posteriori a una avería) · `ALTOS_FILA` fila 41 → 37 pt |
+| m14 | 13 «Shelf Life» A10 | c1222 «Cooked chocolate truffle cream (filling)» |
+| m15 | 11 «Instructions» B17 · «Order Form» A46 | c0945 (bajo llave el tiempo que aconseje el seguro o el abogado, como prueba ante una reclamación) [criterio del kit], c1015 |
+| m16 | B02 B9 / G9 | `CALENDARIO` B9 «May peak · Apr–Jun (varies)» (con «Apr–Jun» al principio, la comprobación cronológica de `mapas_pastry` falla: abril iría antes que mayo) · c1315 (parroquias hispanas, italianas, polacas y filipinas) |
+| m17 | B02 «Instructions» B7 | c1283 (Mothering Sunday: 3 semanas antes de Pascua, marzo o principios de abril) |
+| m18 | B02 G15 | c1341 (la venta mayorista puede necesitar su propia licencia; sin «restaurants», término prohibido) |
+| m19 | B02 E4 | c1292 (+ paczki para el Fat Tuesday) |
+| m20 | 09 áreas de impresión | ES LIVE |
+| m21 | 10 «Made vs Sold» DV K | **No aplicado**: la lista del desplegable ya mide unos 200 de los 255 caracteres que admite Excel, y sus valores son claves (CLAVES, SUMIF). Añadir «Day-old markdown» obliga a tocar la DV del ES |
+| m22 | 05 «Monthly Maintenance» B15 | c0433 (+ control de plagas: trampas, puntos de entrada e informe de la empresa) |
+| Dudas 1-5 | — | Solo las que ya cubren los arreglos: 3 (fruit danishes) con B1; 4 (M8/m20) en el ES; 5 (matriz) con `VALORES_EN` + `G6_ESPERADO`. La 1 (suizo a 160 °F en las mousses) y la 2 (pecan) se quedan como están: B15-B16 siguen con «cooked Italian or Swiss meringue or pasteurized whites», y el pecan va con la frase de la autoridad sanitaria |
+
+- **ADAPTAR**: un bloque «Ronda 1» en `mapas_pastry` alinea la guía del traductor con el EN nuevo. Así, una
+  re-traducción no reintroduce ni el «con calor», ni el 5 de enero, ni las «custard danishes».
+- **`REGLAS_US`**: cambia `menores_hornear` (570.33(e) y 570.35); se añaden `enfermos_pas` (2-201.11, 2-201.12),
+  `lavamanos_pas` (6-301.12) y `mano_desnuda` (3-301.11); 3-501.14 y 3-501.16 ya estaban. G7: 52 citas, todas
+  permitidas (42).
+
+### Código común (`gates_en.py`, dos cambios)
+
+- `G6_ESPERADO` (getattr, vacío por defecto) recoge los valores calculados que cambian a propósito porque dependen de
+  `VALORES_EN`. G6 los compara con lo declarado, no con el ES.
+  - En la pastelería son 10: los «Total ●» Q8, Q24 y Q28; los totales de columna I53, N53, I54 y N54; y la carta
+    H9, M25 y H29.
+  - Sin la declaración, G6 da exactamente esos 10 fallos. Cualquier otra diferencia sigue fallando.
+- `LISTA_BLANCA_TILDE` + «sablée», «brisée».
+- **Hermanos (9)**: comparé la salida de `gates_en` y `--autotest` de HEAD (`b3f6790c`) con la del nuevo, sobre lo
+  publicado y en un worktree limpio. Es **idéntica en los 9**:
+  - base, bar, catering, heladería y chocolatería: VERDE 8/0, autotest OK (16 / 16 / 20 / 19 / 19);
+  - cafetería, pizzería, hamburguesería y ghost kitchen: su ROJO previo de `adf52a52`, igual que antes.
+  `aplicar_en.py` no se toca en esta ronda.
+
+### Resultados de la ronda
+
+| Paso | Resultado |
+|---|---|
+| Montaje | 15 xlsx · idempotencia 0 diferencias · `inject_cache` sin fallos · 0 desbordes · 0 rellenos · 46 ajustes · 50 altos subidos (2 por `ALTOS_FILA`) |
+| **Gates** | **VERDE 8/0**. G1 igual (62 hojas, 1.866 fórmulas, 41 DV, 51 CF, 344 merges, 429 tareas; anchos y áreas = censo regenerado). G3 46 ajustes · 53 altos. G4 280 regenerar · 955 traducir · 220 horas · **3 valores fijados**. G6 1.408 con valor · **10 declarados**. G7 183 °F · 52 citas (42 permitidas) |
+| Autotest | **20/20 CAZADOS**: los 19 de antes y el «valor fijado» de `VALORES_EN` (12) |
+| Celdas cortadas | **0 nuevas**. 44 que ya traía el ES (28 «Verified by:» y 16 rótulos y títulos que se pasan por menos de 1 pt); las 6 del 09 desaparecen con la columna A de 24. 30 del ES que la EN arregla |
+| censo-entregables · no-latinos | EN 0 · 0 · ES 0 · 0 |
+| Copia al Mac | sha256 26/26 iguales VPS ↔ Mac (15 EN, 2 ES, volcados, datos y código) |
+| Volcados | `revision/dump_en.txt` y `dump_es.txt` regenerados, 6.498 líneas cada uno |
+
+**Cifras para la landing**: las tareas no cambian (413 en las checklists + 17 eventos; por fichero, igual que arriba),
+ni las hojas (62) ni las plantillas del 10 al 13. Lo que sí cambia de contenido:
+- **12:** la matriz propone leche ● en la concha y los polvorones y sulfitos ● en los hot cross buns; la leyenda de
+  las etiquetas trae ya 10 abreviaturas.
+- **13:**
+  - la recepción se pone en rojo por encima de 45 °F;
+  - la cámara de masas se lee en modo retardo;
+  - la vida útil añade lo salado y lo relleno a 41 °F.
+- **11:** la última franja de recogida es a las 7:30 PM, y las fichas se guardan el tiempo que aconseje el seguro.
+- **B02:** las comuniones son «May peak · Apr–Jun» y en enero aparecen los paczki para el Fat Tuesday.

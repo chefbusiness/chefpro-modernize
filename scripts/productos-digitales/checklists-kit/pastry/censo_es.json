@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-24T10:28:19Z",
+  "generado": "2026-10-24T11:45:04Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-pasteleria",
-  "commit": "a5fa9b90",
+  "commit": "b3f6790c",
   "nota": "Censo del Kit de Tareas Recurrentes v2.0 PUBLICADO (11 xlsx). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. patrones_formula = fórmulas con las filas normalizadas a {r} (mapas.patron); «cifras» = el patrón compara con un número. tareas = filas con número en A y texto en B. dependencias = lo que depende de España (F1-inventario §1)."
  },
  "libros": {
@@ -858,7 +858,7 @@
   },
   "02-partidas-cocina.xlsx": {
    "corto": "02",
-   "sha256": "c39847e6f9ebc0997988a22d601280be84c466c0d787222b113e27930e40206b",
+   "sha256": "a9645b0acf163e3bab7d1c02bd83d4c1715258662f58992c2872ac35a52cd1e5",
    "nombre_en": "02-pastry-kitchen-production-checklists.xlsx",
    "titulo_en": "Pastry Kitchen Production Checklists: Doughs, Creams & Fillings, Decorating",
    "hojas": [
@@ -1665,7 +1665,7 @@
       "E7": "Pastelero",
       "F7": "06:30",
       "B8": "Preparar crema de mantequilla (merengue suizo o italiana)",
-      "C8": "Almíbar a 118-121 °C · mantequilla a 18-20 °C",
+      "C8": "Italiano: almíbar a 118-121 °C · suizo: claras y azúcar a 71 °C · mantequilla a 18-20 °C",
       "D8": "Obrador",
       "E8": "Pastelero",
       "F8": "06:30",
@@ -9352,7 +9352,7 @@
   },
   "09-apertura-cierre-caja.xlsx": {
    "corto": "09",
-   "sha256": "7b31b7bc26c3e52094e024e5ce4aa4556c1fd11ec71e94f69b4e5e6f6616035f",
+   "sha256": "184a809f0b549b1da79fb300f9fb56ce50b25b261f03ea2e07df7b6dd9eb0399",
    "nombre_en": "09-cash-drawer-opening-closing.xlsx",
    "titulo_en": "Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log",
    "hojas": [
@@ -9423,7 +9423,7 @@
       "autoFilter": true
      },
      "autofiltro": null,
-     "area_impresion": "'Instrucciones'!$A$1:$A$20",
+     "area_impresion": "'Instrucciones'!$A$1:$B$30",
      "titulos_impresion": {
       "filas": null,
       "columnas": null
@@ -10017,8 +10017,8 @@
      "desbloqueadas": 0,
      "columnas_ocultas": [],
      "anchos": {
-      "A": 5.0,
-      "B": 50.0,
+      "A": 24.0,
+      "B": 31.0,
       "C": 16.0,
       "D": 14.0,
       "E": 12.0,
@@ -11717,7 +11717,7 @@
       "autoFilter": true
      },
      "autofiltro": null,
-     "area_impresion": "'Registro Mensual'!$A$1:$I$38",
+     "area_impresion": "'Registro Mensual'!$A$1:$J$38",
      "titulos_impresion": {
       "filas": "$4:$4",
       "columnas": null

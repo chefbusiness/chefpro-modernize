@@ -83,6 +83,9 @@ HOJA_CAJA = getattr(mapas, 'HOJA_CAJA', ('09', 'Cierre de Caja'))
 CASOS_G5 = getattr(mapas, 'CASOS_G5', None)
 CON_HOJA_EXTRA = getattr(mapas, 'FORMULAS_CON_HOJA_EXTRA', {})
 SIN_MARCA = frozenset(getattr(mapas, 'LIBROS_SIN_MARCA', ()))   # libros cuyo ES no trae la línea de marca D19
+# vertical: {(libro, hoja ES, celda): valor EN} de fórmulas cuyo resultado cambia a propósito respecto al ES porque
+# dependen de mapas.VALORES_EN (pastelería, ronda 1: la matriz del 12 y su carta). G6 las compara con lo declarado
+G6_ESPERADO = getattr(mapas, 'G6_ESPERADO', {})
 
 SIGNOS_ES = set('¿¡«»€ºª')
 RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio|local|kit criterion)[^\]]*\]|\bSPEC\b|\((?:D|I)\d{1,2}\)|'
@@ -93,7 +96,8 @@ RX_TILDE = re.compile(r'[áéíóúüñÁÉÍÓÚÜÑ]')
 # «café» como palabra inglesa va sin tilde («sidewalk cafe permit», grafía de los permisos US): no entra.
 LISTA_BLANCA_TILDE = {'entrée', 'entrées', 'sauté', 'sautéed', 'sautéing', 'purée', 'purées',
                       'jalapeño', 'jalapeños', 'piña', 'crème', 'brûlée', 'résumé', 'naïve', 'flambé', 'frappé',
-                      'rosé', 'canapé', 'canapés', 'soufflé', 'consommé', 'crêpe', 'crêpes', 'déjà', 'à'}
+                      'rosé', 'canapé', 'canapés', 'soufflé', 'consommé', 'crêpe', 'crêpes', 'déjà', 'à',
+                      'sablée', 'brisée'}                       # pastelería: masas sablée y brisée
 FRASES_OK = ('Cinco de Mayo', 'al dente', 'pico de gallo', 'chili con carne', 'à la carte', 'a la carte',
              'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide', 'dulce de leche',   # heladería: el término US
              'rosca de Reyes', 'Rosca de Reyes', 'pan de muerto', 'Pan de muerto')   # pastelería: nombres US (D14)
@@ -1047,6 +1051,12 @@ def gateG6(R, carpeta, datos):
                 n['con_valor' if v is not None else 'vacias'] += 1
                 if 'COUNT' in c.value.upper():
                     n['contadores'] += 1
+                if (corto, h_es, c.coordinate) in G6_ESPERADO:
+                    esp = G6_ESPERADO[(corto, h_es, c.coordinate)]
+                    n['declarados'] += 1
+                    if not (v == esp or (num(v) and num(esp) and abs(v - esp) < TOL)):
+                        R.fallo('%s:%s!%s valor %r ≠ declarado %r (ES %r)' % (en, ws.title, c.coordinate, v, esp, ve))
+                    continue
                 if (ve is None) != (v is None):
                     R.fallo('%s:%s!%s caché %r (ES %r)' % (en, ws.title, c.coordinate, v, ve))
                 elif isinstance(ve, str):

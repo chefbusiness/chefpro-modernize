@@ -368,7 +368,7 @@ PARAMETROS_02 = {
     'Enfriar rápido en baño maría invertido o abatidor, tapar y etiquetar':
         'De +65 °C a +10 °C en menos de 2 h · después ≤4 °C',
     'Preparar crema de mantequilla (merengue suizo o italiana)':
-        'Almíbar a 118-121 °C · mantequilla a 18-20 °C',
+        'Italiano: almíbar a 118-121 °C · suizo: claras y azúcar a 71 °C · mantequilla a 18-20 °C',
     'Preparar ganache de relleno o de baño según el uso':
         'Relleno 2:1 chocolate:nata · baño 1:1 · nata a 80-85 °C',
     'Preparar crema diplomática (pastelera + nata montada)':
@@ -1393,6 +1393,7 @@ def _instrucciones_09(wb, informe):
             cel._style = copy.copy(estilos[estilo])
     ws.column_dimensions['A'].width = 3
     ws.column_dimensions['B'].width = 108
+    ws.print_area = 'A1:B30'          # parche 24-oct-2026: el área era A1:A20 y el texto va en la B
     informe.append('    Instrucciones reescritas para la caja (molde del resto '
                    'del kit, con las referencias al 08 y al 10)')
 
@@ -1495,6 +1496,9 @@ def ajustar_09(wb, informe):
     _instrucciones_09(wb, informe)
 
     ws = wb['Cierre de Caja']
+    # parche 24-oct-2026: los rótulos del Resumen de Cierre (A41-A46) no cabían en una columna A de 5
+    ws.column_dimensions['A'].width = 24
+    ws.column_dimensions['B'].width = 31
     # --- moneda de 0,02 € (auditoría L1-02/L1-23) ------------------------
     if ws.cell(row=35, column=1).value != '0,02 €':
         insertar_fila(ws, 35)
@@ -1612,6 +1616,7 @@ def ajustar_09(wb, informe):
     rm.column_dimensions['H'].width = 14
     rm.column_dimensions['I'].width = 14
     rm.column_dimensions['J'].width = 16
+    rm.print_area = 'A1:J38'          # parche 24-oct-2026: el área se quedaba en A1:I38, sin «Responsable»
 
     ws_desc = 'H5:H35'
     rm.conditional_formatting._cf_rules = {

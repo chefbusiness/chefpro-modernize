@@ -887,6 +887,48 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'pastry-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 413 pastry shop tasks already written in 9 checklists and the pre-shift huddle, 4 logs ready to fill in and 2 bonuses, adapted to the US with notes for the UK.',
+          'US pastry shop roles and areas (head pastry chef, pastry cook, pastry assistant, counter associate and shift lead; kitchen, ovens, bakery case, counter and walk-ins), who does it and due-by times on a 12-hour clock for a kitchen that starts at 5:00 AM and a shop that opens at 8:00 AM, and a ✓, — or N/A drop-down on every task.',
+          'Production and food safety under the FDA Food Code, in °F: bakery cases, anything custard-, cream- or cheese-filled and perishable savory items at 41 °F or below, creams cooled from 135 °F to 70 °F in 2 hours and to 41 °F in 4 more, date marking of 7 days at most (24 hours as the kit\'s quality target for anything made with eggs), mousses made with cooked meringue or pasteurized whites, dough temperatures, proofing and baking in °F, and sanitizer checked with test strips.',
+          'Production schedule and waste log with 32 US bakery items in 5 categories (viennoiserie, cakes and pastries, bread, savory, cookies and small cakes), waste cost in your currency and a weekly summary against a waste target you set; leftovers to donate are covered by the Bill Emerson Good Samaritan Food Donation Act.',
+          'Cake order form with size in inches, the cake message, the customer\'s allergies with a separate consent, deposit and balance due (a 30–50% deposit as common practice, not law), a US privacy notice and marketing consent under the TCPA and CAN-SPAM, plus a monthly order log, a pickup schedule by time slot and the day\'s order sheet.',
+          'Bakery allergen chart with 43 starter items to verify: the 9 major US allergens (FALCPA and the FASTER Act), sulfites and the UK\'s 14, written notice for unpackaged items under FDA Food Code 2022 3-602.12(C) where adopted, a case sign and case labels; a food temperature log by unit, a receiving log with US rejection criteria (41 °F, shell eggs in air at 45 °F), prep labels and a shelf-life chart in °F.',
+          "US holidays and events: the holiday season with Three Kings Day and King cake (the baby figurine packed separately), Valentine's Day, Easter, Mother's and Father's Day, celebration cakes for First Communions, graduations and showers, Thanksgiving pies, seasonal staff under the federal rules for minors on bakery machines, and a calendar of 17 key dates and occasions with a UK note.",
+          'Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report with a monthly cash log; every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'chocolate-shop-checklist-templates': {
+    version: '2.1',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.1',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.1: 9 checklist templates plus 2 bonuses with 338 chocolate shop tasks already written, adapted to the US with notes for the UK.',
+          'US chocolate shop roles and areas (chocolatier, sales associate and shift lead; kitchen, cool room, display case, shop floor and counter), a ✓, — or N/A drop-down on every task, and the counter on each checklist leaves out the tasks marked N/A. The whole-shop checklist comes with who does it and due-by times on a 12-hour clock for a shop that opens mid-morning.',
+          "Tempering and molding in °F: the kitchen at 64–68 °F and 50–60% humidity, the cool room at 59–64 °F, the bonbon display case at 60–64 °F, typical curves for dark, milk and white chocolate (your couverture maker's chart rules), molds at 68–72 °F, chilling at 54–57 °F and a shelf-life table by product type.",
+          'Food safety under the FDA Food Code: fresh-cream ganache treated as TCS until a lab test of water activity and pH says otherwise (41 °F or below, date marking of 7 days, never in the bonbon case or the cool room), exclusion of staff with vomiting, diarrhea or jaundice, no bare-hand contact with bonbons and samples, one set of tongs per tray, nut and peanut runs last, sanitizer checked with test strips, the written allergen notice for unwrapped items (3-602.12(C), where adopted) and full labels on chocolate wrapped in the shop (3-602.11).',
+          "The whole-shop closing checklist in a safe order: the display cases off only once the product is stored, the kitchen temperature logged, a safety check that never unplugs the cool room, the fridges or a melter, HVAC on night mode and the alarm and lock-up last.",
+          'A Quarterly & Annual sheet for a US chocolate shop: pest control by a licensed operator, lab tests of water activity and pH for new ganaches and fillings, food handler cards and a certified food protection manager, tempering and panning machine service, refrigeration by an EPA 608 technician, calibration and a legal-for-trade scale, fire extinguishers (OSHA), gas, hood cleaning under NFPA 96 only if you cook with grease, insurance with spoilage coverage, the health permit and any state candy manufacturing license, and the POS and sales tax on candy.',
+          "US seasons: the holiday season with Hanukkah gelt, the pre-order deadline and your carrier's shipping cutoff, seasonal staff under the federal limits for minors, Valentine's Day and Easter, plus a 12-month calendar with US dates, from Valentine's Day and Mother's Day to Sweetest Day, National Chocolate Day and Thanksgiving, featured products by month and a UK note; bonbons with alcohol only where state law allows.",
+          'Cash drawer count in US bills and coins with sales by the pound (legal-for-trade scale, price per pound, pounds balanced at close) and pre-order deposits rung as deposits; time records under the FLSA in the manager checklist; every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'ice-cream-shop-checklist-templates': {
     version: '2.0',
     updated: '2026-10-24',

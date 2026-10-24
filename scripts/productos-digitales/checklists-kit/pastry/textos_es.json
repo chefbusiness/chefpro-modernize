@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-24T10:28:19Z",
+  "generado": "2026-10-24T11:45:04Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-pasteleria",
-  "commit": "a5fa9b90",
+  "commit": "b3f6790c",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -13,7 +13,7 @@
    "02": {
     "es": "02-partidas-cocina.xlsx",
     "en": "02-pastry-kitchen-production-checklists.xlsx",
-    "sha256": "c39847e6f9ebc0997988a22d601280be84c466c0d787222b113e27930e40206b"
+    "sha256": "a9645b0acf163e3bab7d1c02bd83d4c1715258662f58992c2872ac35a52cd1e5"
    },
    "03": {
     "es": "03-tareas-manager.xlsx",
@@ -48,7 +48,7 @@
    "09": {
     "es": "09-apertura-cierre-caja.xlsx",
     "en": "09-cash-drawer-opening-closing.xlsx",
-    "sha256": "7b31b7bc26c3e52094e024e5ce4aa4556c1fd11ec71e94f69b4e5e6f6616035f"
+    "sha256": "184a809f0b549b1da79fb300f9fb56ce50b25b261f03ea2e07df7b6dd9eb0399"
    },
    "10": {
     "es": "10-plan-produccion-semanal.xlsx",
@@ -83,7 +83,7 @@
   },
   "n_cadenas": 1361,
   "n_traducir": 883,
-  "n_adaptar": 198,
+  "n_adaptar": 208,
   "n_palabras_subagentes": 8513,
   "n_apariciones": 3231,
   "grupos": [
@@ -100,7 +100,7 @@
      "07"
     ],
     "n_cadenas": 489,
-    "n_adaptar": 101,
+    "n_adaptar": 109,
     "n_palabras": 3821
    },
    {
@@ -117,14 +117,14 @@
      "B02"
     ],
     "n_cadenas": 394,
-    "n_adaptar": 97,
+    "n_adaptar": 99,
     "n_palabras": 4692
    },
    {
     "id": "GM",
     "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 30 mapa-clave, 188 mapa-glosario, 48 mapa-hoja, 212 regenerar",
     "n_cadenas": 478,
-    "n_palabras": 1689
+    "n_palabras": 1697
    }
   ],
   "excluidas": {
@@ -1016,6 +1016,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
+   "adaptar": "Añade: lavamanos con jabón y papel, despejados (FDA Food Code 6-301.12)",
    "sha1": "faa11889ca65",
    "donde": [
     {
@@ -2551,6 +2552,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
+   "adaptar": "Añade: el sésamo y las semillas, en sus bandejas y su mesa (contacto cruzado)",
    "sha1": "254451668597",
    "donde": [
     {
@@ -3085,7 +3087,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
-   "adaptar": "Merengue cocido (italiano o suizo) o claras pasteurizadas en lo que no se hornea (FDA Food Code 3-302.13); dilo así, sin más cifras",
+   "adaptar": "Chocolate fundido (melted, no tempered) + merengue cocido (italiano o suizo) o claras pasteurizadas (FDA Food Code 3-302.13)",
    "sha1": "cd303f7fcde0",
    "donde": [
     {
@@ -3167,6 +3169,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
+   "adaptar": "Praliné y crocante de frutos secos (praline paste, nut brittle; sin «pralines», que en EE. UU. es el dulce de pecana) en su puesto, con utensilios propios (contacto cruzado de alérgenos)",
    "sha1": "17157e25cdd3",
    "donde": [
     {
@@ -3652,6 +3655,7 @@
    "n_apariciones": 1,
    "palabras": 9,
    "con_cifra": false,
+   "adaptar": "Bollería sin relleno de crema (croissants, pain au chocolat, palmiers, fruit danishes); sin «custard danishes» en la vitrina ambiente",
    "pistas": [
     "vitrina → bakery case (refrigerada: refrigerated bakery case); despacho → counter",
     "bollería → viennoiserie (cliente: breakfast pastries)"
@@ -3676,6 +3680,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
+   "adaptar": "Ambiente; lo relleno de natillas, crema o queso, a la vitrina refrigerada a 41 °F o menos (FDA Food Code 3-501.16)",
    "sha1": "a34b8df932f7",
    "donde": [
     {
@@ -6152,6 +6157,7 @@
    "n_apariciones": 1,
    "palabras": 12,
    "con_cifra": true,
+   "adaptar": "Añade: con alergia CONFIRMADA, ese encargo el primero del día, en mesa limpia y sanitizada, con utensilios limpios y etiquetado aparte",
    "pistas": [
     "Citas de libro (→ NN …): «01 Apertura y Cierre» → «01 Opening & Closing» · «06 Eventos y Festivos» → «06 Holiday & Event Checklists» · «08 Apertura y Cierre del Negocio» → «08 Shop Opening & Closing» · «09 Apertura y Cierre de Caja» → «09 Cash Drawer Opening & Closing» · «10 Plan de Producción Semanal» → «10 Production Schedule & Waste Log» · «11 Control de Encargos» → «11 Cake Orders» · «12 Control de Alérgenos de Vitrina» → «12 Bakery Allergen Chart» · «13 Registro de Temperaturas» → «13 Temperature & Receiving Logs» · «BONUS-01 Briefing de Servicio» → «BONUS-01 Pre-Shift Meeting». Hoja citada (con «hoja», «hojas» o sola tras «·») → ‹sheet \"EN\"› / ‹sheets \"EN\" and \"EN\"›, entre comillas dobles rectas: Producido vs Vendido → \"Made vs Sold\" · Plan Semanal → \"Weekly Plan\" · Etiquetas de Elaborado → \"Prep Labels\" · Vidas Útiles → \"Shelf Life\" · Registro de Temperaturas → \"Temperature Log\" · Ficha de Encargo → \"Order Form\" · Encargos de Hoy → \"Today's Orders\" · Etiquetas Vitrina → \"Case Labels\" · Cartel Vitrina → \"Case Sign\" · Carta de Alérgenos → \"Allergen Chart\" · Matriz Alérgenos → \"Allergen Matrix\" · Apertura de Caja → \"Cash Drawer Opening\" · Cierre de Caja → \"Cash Drawer Closing\" · Apertura del Negocio → \"Shop Opening\" · Cierre del Negocio → \"Shop Closing\" · Apertura Obrador → \"Kitchen Opening\" · Cierre Obrador → \"Kitchen Closing\" · Comuniones (Abr-Jun) → \"Celebration Cakes (Apr-Jun)\"; «columna Acción» → ‹\"Action\" column›; «fichero 08» → «file 08»",
     "encargo → custom order (pedido anticipado: pre-order); ficha de encargo → order form"
@@ -6724,6 +6730,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
+   "adaptar": "Añade: con pinzas o papel de pastelería, nunca a mano desnuda (FDA Food Code 3-301.11)",
    "sha1": "aafd156be0ea",
    "donde": [
     {
@@ -8385,7 +8392,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "Personal de temporada (holiday help); añade: si contratas menores de 18, no pueden usar ni limpiar amasadoras, batidoras industriales, laminadoras ni divisoras (FLSA, 29 CFR 570.62; salvo batidoras de sobremesa de 5 quarts o menos); con 14-15 años, nada de hornear (29 CFR 570.33(h))",
+   "adaptar": "Personal de temporada (holiday help); añade: 16-17 años, sin amasadoras ni batidoras, laminadoras, divisoras ni boleadoras, tampoco limpiarlas (29 CFR 570.62, HO 11), salvo batidoras portátiles de sobremesa de 5 qt o menos y ½ hp o menos; 14-15 años, ninguna máquina eléctrica ni hornear (29 CFR 570.33(e) y (h)) y nada antes de las 7 AM ni después de las 7 PM en curso escolar (29 CFR 570.35)",
    "sha1": "b1435c3c490f",
    "donde": [
     {
@@ -8449,7 +8456,7 @@
    "n_apariciones": 1,
    "palabras": 17,
    "con_cifra": true,
-   "adaptar": "Fechas: Nochebuena, Navidad y Nochevieja (Dec 24, 25 y 31) y Three Kings Day (Jan 6); sin el 1 de enero como día de venta especial",
+   "adaptar": "Fechas: Dec 24, 25 y 31 y Jan 1; el 6 de enero solo si vendes roscas",
    "sha1": "f5e160bb1ccf",
    "donde": [
     {
@@ -8762,7 +8769,7 @@
    "n_apariciones": 1,
    "palabras": 18,
    "con_cifra": true,
-   "adaptar": "Encargos de rosca de Reyes (y King cake si lo haces); Citas de libro: usa el EN de CITAS_LIBRO y las pestañas entre comillas dobles rectas (‹· sheet \"…\"›)",
+   "adaptar": "Encargos de rosca de Reyes; el King cake se vende del 6 de enero al Mardi Gras",
    "pistas": [
     "Citas de libro (→ NN …): «01 Apertura y Cierre» → «01 Opening & Closing» · «06 Eventos y Festivos» → «06 Holiday & Event Checklists» · «08 Apertura y Cierre del Negocio» → «08 Shop Opening & Closing» · «09 Apertura y Cierre de Caja» → «09 Cash Drawer Opening & Closing» · «10 Plan de Producción Semanal» → «10 Production Schedule & Waste Log» · «11 Control de Encargos» → «11 Cake Orders» · «12 Control de Alérgenos de Vitrina» → «12 Bakery Allergen Chart» · «13 Registro de Temperaturas» → «13 Temperature & Receiving Logs» · «BONUS-01 Briefing de Servicio» → «BONUS-01 Pre-Shift Meeting». Hoja citada (con «hoja», «hojas» o sola tras «·») → ‹sheet \"EN\"› / ‹sheets \"EN\" and \"EN\"›, entre comillas dobles rectas: Producido vs Vendido → \"Made vs Sold\" · Plan Semanal → \"Weekly Plan\" · Etiquetas de Elaborado → \"Prep Labels\" · Vidas Útiles → \"Shelf Life\" · Registro de Temperaturas → \"Temperature Log\" · Ficha de Encargo → \"Order Form\" · Encargos de Hoy → \"Today's Orders\" · Etiquetas Vitrina → \"Case Labels\" · Cartel Vitrina → \"Case Sign\" · Carta de Alérgenos → \"Allergen Chart\" · Matriz Alérgenos → \"Allergen Matrix\" · Apertura de Caja → \"Cash Drawer Opening\" · Cierre de Caja → \"Cash Drawer Closing\" · Apertura del Negocio → \"Shop Opening\" · Cierre del Negocio → \"Shop Closing\" · Apertura Obrador → \"Kitchen Opening\" · Cierre Obrador → \"Kitchen Closing\" · Comuniones (Abr-Jun) → \"Celebration Cakes (Apr-Jun)\"; «columna Acción» → ‹\"Action\" column›; «fichero 08» → «file 08»",
     "encargo → custom order (pedido anticipado: pre-order); ficha de encargo → order form",
@@ -8809,7 +8816,7 @@
    "n_apariciones": 1,
    "palabras": 24,
    "con_cifra": true,
-   "adaptar": "Primera hornada de roscas la madrugada del 4 al 5 (60-70 % del volumen, para la venta de la tarde del 5)",
+   "adaptar": "Primera hornada la madrugada del 4 al 5 (un tercio, para recoger el 5 y la mañana del 6)",
    "sha1": "51b988bb179e",
    "donde": [
     {
@@ -8830,6 +8837,7 @@
    "n_apariciones": 1,
    "palabras": 14,
    "con_cifra": true,
+   "adaptar": "Hornada principal la madrugada del 5 al 6 (60-70 %: el 6 es el día fuerte en EE. UU.)",
    "sha1": "ce1f94f486e1",
    "donde": [
     {
@@ -8850,7 +8858,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
-   "adaptar": "Rellenos US de la rosca o del King cake: nata montada, crema pastelera, cream cheese; sin «trufa» ni «cabello de ángel»",
+   "adaptar": "Rosca rellena (nata, crema pastelera, cream cheese): al momento y en la vitrina refrigerada a 41 °F o menos; la mexicana suele venderse sin rellenar",
    "sha1": "3b87818568f3",
    "donde": [
     {
@@ -10512,7 +10520,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "Sustituye a panellets: «Hornear los pies de fruta (apple, pecan)»",
+   "adaptar": "Sustituye a panellets: pies de fruta (apple, cherry) y nut pie (pecan, con huevo: en frío salvo que la autoridad sanitaria lo acepte como no TCS)",
    "sha1": "87807140b05f",
    "donde": [
     {
@@ -10533,7 +10541,7 @@
    "n_apariciones": 1,
    "palabras": 12,
    "con_cifra": false,
-   "adaptar": "Sustituye a buñuelos de viento: «Hornear los pies de crema (pumpkin, sweet potato), enfriarlos y guardarlos a 41 °F o menos: son TCS (FDA Food Code 3-501.16)»",
+   "adaptar": "Sustituye a buñuelos de viento: custard pies (pumpkin, sweet potato), enfriados de 135 a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) y guardados a 41 °F o menos: son TCS (3-501.16)",
    "sha1": "1786509e75e6",
    "donde": [
     {
@@ -10696,7 +10704,7 @@
    "n_apariciones": 1,
    "palabras": 12,
    "con_cifra": true,
-   "adaptar": "Reponer la vitrina cada 2 h: los pies de crema salen de la vitrina refrigerada",
+   "adaptar": "Reponer la vitrina cada 2 h: los custard pies salen de la vitrina refrigerada",
    "pistas": [
     "vitrina → bakery case (refrigerada: refrigerated bakery case); despacho → counter"
    ],
@@ -11919,6 +11927,7 @@
    "n_apariciones": 1,
    "palabras": 14,
    "con_cifra": false,
+   "adaptar": "Orden: bollería, vitrina refrigerada y salado al final; quiche, empanadas y croissant de jamón y queso también a 41 °F o menos (FDA Food Code 3-501.16)",
    "pistas": [
     "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
     "pastelería → pastry shop (bakery solo si el texto habla de pan)",
@@ -12125,7 +12134,7 @@
    "n_apariciones": 1,
    "palabras": 9,
    "con_cifra": false,
-   "adaptar": "Persianas → security gate / shutters",
+   "adaptar": "Persiana → roll-down security gate (si la hay)",
    "sha1": "0bc9d8ac106d",
    "donde": [
     {
@@ -12591,7 +12600,7 @@
    "n_apariciones": 1,
    "palabras": 10,
    "con_cifra": false,
-   "adaptar": "Persianas → security gate / shutters",
+   "adaptar": "Persiana → roll-down security gate (si la hay)",
    "sha1": "3c536ebdc5e2",
    "donde": [
     {
@@ -14822,7 +14831,7 @@
    "n_apariciones": 1,
    "palabras": 84,
    "con_cifra": false,
-   "adaptar": "Privacidad US [criterio del kit], sin RGPD: la ficha recoge datos personales y de salud (alergias); recoge solo lo necesario, la casilla de consentimiento de las alergias es distinta de la de marketing y ninguna va marcada de antemano; guarda las fichas bajo llave, no a la vista, y destrúyelas (shred) al mes de la entrega salvo lo que necesites para impuestos; revisa la ley de privacidad de tu estado",
+   "adaptar": "Privacidad US [criterio del kit], sin RGPD: datos personales y de salud (alergias); solo lo necesario; la casilla de las alergias, distinta de la de marketing y sin premarcar; las fichas, bajo llave y el tiempo que aconseje el seguro o el abogado (prueba ante una reclamación), luego se destruyen; ley de privacidad del estado",
    "pistas": [
     "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
    ],
@@ -15538,7 +15547,7 @@
    "n_apariciones": 1,
    "palabras": 27,
    "con_cifra": true,
-   "adaptar": "Añade: los 9 primeros son los alérgenos principales de EE. UU. (FALCPA + FASTER Act); el resto, gluten para celíacos y los de UK; Citas de libro: usa el EN de CITAS_LIBRO y las pestañas entre comillas dobles rectas (‹· sheet \"…\"›)",
+   "adaptar": "Añade: los 9 primeros son los alérgenos principales de EE. UU. (FALCPA + FASTER Act); el resto, gluten para celíacos, sulfitos y los de UK",
    "pistas": [
     "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
     "Citas de libro (→ NN …): «01 Apertura y Cierre» → «01 Opening & Closing» · «06 Eventos y Festivos» → «06 Holiday & Event Checklists» · «08 Apertura y Cierre del Negocio» → «08 Shop Opening & Closing» · «09 Apertura y Cierre de Caja» → «09 Cash Drawer Opening & Closing» · «10 Plan de Producción Semanal» → «10 Production Schedule & Waste Log» · «11 Control de Encargos» → «11 Cake Orders» · «12 Control de Alérgenos de Vitrina» → «12 Bakery Allergen Chart» · «13 Registro de Temperaturas» → «13 Temperature & Receiving Logs» · «BONUS-01 Briefing de Servicio» → «BONUS-01 Pre-Shift Meeting». Hoja citada (con «hoja», «hojas» o sola tras «·») → ‹sheet \"EN\"› / ‹sheets \"EN\" and \"EN\"›, entre comillas dobles rectas: Producido vs Vendido → \"Made vs Sold\" · Plan Semanal → \"Weekly Plan\" · Etiquetas de Elaborado → \"Prep Labels\" · Vidas Útiles → \"Shelf Life\" · Registro de Temperaturas → \"Temperature Log\" · Ficha de Encargo → \"Order Form\" · Encargos de Hoy → \"Today's Orders\" · Etiquetas Vitrina → \"Case Labels\" · Cartel Vitrina → \"Case Sign\" · Carta de Alérgenos → \"Allergen Chart\" · Matriz Alérgenos → \"Allergen Matrix\" · Apertura de Caja → \"Cash Drawer Opening\" · Cierre de Caja → \"Cash Drawer Closing\" · Apertura del Negocio → \"Shop Opening\" · Cierre del Negocio → \"Shop Closing\" · Apertura Obrador → \"Kitchen Opening\" · Cierre Obrador → \"Kitchen Closing\" · Comuniones (Abr-Jun) → \"Celebration Cakes (Apr-Jun)\"; «columna Acción» → ‹\"Action\" column›; «fichero 08» → «file 08»",
@@ -15851,7 +15860,7 @@
    "n_apariciones": 1,
    "palabras": 126,
    "con_cifra": true,
-   "adaptar": "Aviso de privacidad US [criterio del kit], sin RGPD ni bases jurídicas: quién (el negocio de esta ficha), para qué (tomar, preparar, entregar y facturar este encargo), alergias (solo para preparar el encargo con seguridad, con el consentimiento de arriba), datos de otras personas (con su permiso), cuánto se guarda (se destruye al mes de la entrega salvo lo que pidan los impuestos), no se vende ni se comparte, y dudas en el mostrador",
+   "adaptar": "Aviso de privacidad US [criterio del kit]: quién, para qué, alergias con el consentimiento de arriba, datos de otras personas con su permiso, cuánto se guarda (lo necesario para el encargo, los impuestos y posibles reclamaciones), no se vende ni se comparte, dudas en el mostrador",
    "pistas": [
     "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check",
     "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»",
@@ -16800,7 +16809,7 @@
    "n_apariciones": 1,
    "palabras": 14,
    "con_cifra": false,
-   "adaptar": "Sulfitos: si las pasas o la piel confitada llevan sulfitos (10 ppm o más), decláralos como ingrediente, no como traza",
+   "adaptar": "Sulfitos: la piel confitada y las pasas suelen ir sulfitadas (10 ppm o más): propuesta ●, como ingrediente",
    "sha1": "0e8de02690bb",
    "donde": [
     {
@@ -16821,7 +16830,7 @@
    "n_apariciones": 1,
    "palabras": 10,
    "con_cifra": false,
-   "adaptar": "Sésamo: algunos polvorones llevan ajonjolí; leche: el perfil propuesto es con manteca (lard o shortening); con mantequilla, la leche es ●",
+   "adaptar": "Leche: las Mexican wedding cookies suelen llevar mantequilla (●); con manteca, ○. Sésamo: algunos polvorones lo llevan",
    "sha1": "17535419ad21",
    "donde": [
     {
@@ -17279,7 +17288,7 @@
    "n_apariciones": 1,
    "palabras": 28,
    "con_cifra": false,
-   "adaptar": "Abreviaturas US fijas: «W wheat · E eggs · M milk · TN tree nuts · S soy · SE sesame · SU sulfites»; imprimir en cartulina (card stock)",
+   "adaptar": "Abreviaturas US fijas: «W wheat · E eggs · M milk · TN tree nuts · P peanuts · S soy · SE sesame · F fish · SH shellfish · SU sulfites»; cartulina (card stock)",
    "pistas": [
     "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
    ],
@@ -17717,7 +17726,7 @@
    "n_apariciones": 1,
    "palabras": 68,
    "con_cifra": true,
-   "adaptar": "Criterio del kit: si lo TCS ha estado por encima de 41 °F más de 2 h, o no sabes cuánto, tíralo y anótalo como merma (solo un procedimiento escrito de tiempo como control permite hasta 4 h sin frío, FDA Food Code 3-501.19); Citas de libro: usa el EN de CITAS_LIBRO y las pestañas entre comillas dobles rectas (‹· sheet \"…\"›)",
+   "adaptar": "Criterio del kit: más de 2 h por encima de 41 °F o tiempo desconocido → se tira; el tiempo como control (FDA Food Code 3-501.19, hasta 4 h) solo con procedimiento escrito previo y hora marcada, nunca a posteriori tras una avería",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: mermas → waste (waste log)",
@@ -17972,7 +17981,7 @@
    "n_apariciones": 1,
    "palabras": 110,
    "con_cifra": true,
-   "adaptar": "Criterios US: refrigerado TCS por encima de 41 °F; huevos con cáscara en un camión a más de 45 °F de aire; leche y nata, hasta 45 °F si la ley de lácteos lo permite y se enfrían a 41 °F en 4 h (FDA Food Code 3-202.11 y 3-501.14); congelado con signos de descongelación; envase roto; fecha a menos de 2 días; camión sucio o sin frío; factura que no coincide. Albarán → invoice",
+   "adaptar": "Criterios US: refrigerado TCS por encima de 41 °F; huevos con cáscara en un camión a más de 45 °F de aire; leche y nata, de 41 a 45 °F solo si la ley de lácteos lo permite y enfriadas a 41 °F en 4 h (FDA Food Code 3-202.11 y 3-501.14); congelado con signos de descongelación; envase roto; fecha a menos de 2 días; camión sucio o sin frío; factura que no coincide; añade: la columna se pone en rojo por encima de 45 °F",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "albarán → invoice / packing slip"
@@ -18865,7 +18874,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "Con las referencias EN del GLOSARIO: viennoiserie (croissants, custard danishes, conchas...)",
+   "adaptar": "Con las referencias EN del GLOSARIO: viennoiserie (croissants, fruit danishes, conchas...)",
    "pistas": [
     "bollería → viennoiserie (cliente: breakfast pastries)"
    ],
@@ -19170,6 +19179,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
+   "adaptar": "Añade: quien tenga vómitos, diarrea o ictericia avisa al manager y no trabaja con alimentos (FDA Food Code 2-201.11 y 2-201.12)",
    "sha1": "62f27778eccf",
    "donde": [
     {
@@ -19298,7 +19308,7 @@
    "n_apariciones": 1,
    "palabras": 10,
    "con_cifra": false,
-   "adaptar": "Añade la nota UK: Mothering Sunday (marzo), bank holidays y Boxing Day en las filas libres",
+   "adaptar": "Añade la nota UK: Mothering Sunday (3 semanas antes de Pascua: marzo o primeros de abril), bank holidays y Boxing Day en las filas libres",
    "sha1": "40fa9cc17e47",
    "donde": [
     {
@@ -19405,7 +19415,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Three Kings Day & King cake season». Rosca de Reyes (Three Kings bread) para el 6 de enero y King cake hasta el Mardi Gras (relleno de crema, cream cheese o praliné); sin «nata, trufa» españolas",
+   "adaptar": "Evento EN: «Three Kings Day & King cake season». Rosca de Reyes (Three Kings bread) para el 6 de enero y King cake hasta el Mardi Gras (relleno de crema, cream cheese o praliné) y paczki para el Fat Tuesday; sin «nata, trufa» españolas",
    "sha1": "66903a0ce073",
    "donde": [
     {
@@ -19688,7 +19698,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Summer (Memorial Day → Labor Day) & July 4». Con calor, todo lo relleno de crema en la vitrina refrigerada a 41 °F o menos",
+   "adaptar": "Evento EN: «Summer (Memorial Day → Labor Day) & July 4». Todo el año (no solo con calor), todo lo relleno de crema en la vitrina refrigerada a 41 °F o menos",
    "pistas": [
     "vitrina → bakery case (refrigerada: refrigerated bakery case); despacho → counter"
    ],
@@ -19898,7 +19908,7 @@
    "n_apariciones": 1,
    "palabras": 3,
    "con_cifra": false,
-   "adaptar": "Evento EN: «New Year's Eve». Pedidos mayoristas (wholesale) de otros negocios de comida; sin la palabra «restaurant»",
+   "adaptar": "Evento EN: «New Year's Eve». Pedidos mayoristas (wholesale) de otros negocios de comida, con el aviso de que la venta mayorista puede necesitar su propia licencia; sin la palabra «restaurant»",
    "sha1": "0d316c60241e",
    "donde": [
     {
@@ -24860,7 +24870,8 @@
    "tratamiento": "mapa-hoja",
    "tratamientos": [
     "mapa-hoja",
-    "mapa-glosario"
+    "mapa-glosario",
+    "regenerar"
    ],
    "en_hoja": "Head Pastry Chef",
    "en_glosario": "Head pastry chef",
@@ -24891,8 +24902,8 @@
      "h": "Cierre Obrador",
      "c": "D27",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
@@ -24907,8 +24918,8 @@
      "h": "Cierre Obrador",
      "c": "D29",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "02",
@@ -25578,6 +25589,10 @@
    "es": "Dependiente",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Counter associate",
    "n_ficheros": 6,
    "n_apariciones": 62,
@@ -25918,8 +25933,8 @@
      "h": "San Valentín",
      "c": "D17",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "06",
@@ -25942,8 +25957,8 @@
      "h": "Día Madre-Padre",
      "c": "D14",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "06",
@@ -29212,15 +29227,15 @@
   },
   {
    "id": "c0162",
-   "es": "Almíbar a 118-121 °C · mantequilla a 18-20 °C",
+   "es": "Italiano: almíbar a 118-121 °C · suizo: claras y azúcar a 71 °C · mantequilla a 18-20 °C",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Syrup at 244–250 °F · butter at 64–68 °F",
+   "en_por_celda": "Italian: syrup at 244–250 °F · Swiss: whites and sugar to 160 °F · butter at 64–68 °F",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 10,
+   "palabras": 18,
    "con_cifra": true,
-   "sha1": "b77553179438",
+   "sha1": "5f575abad26e",
    "donde": [
     {
      "f": "02",
@@ -41921,7 +41936,7 @@
    "es": "Cámara de masas\n(2 a 6 °C)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Dough retarder\n(36 to 41 °F)",
+   "en_por_celda": "Dough retarder\n(36 to 41 °F, in retard mode)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 7,
@@ -43671,7 +43686,7 @@
    "es": "Al día siguiente, a merma o a promoción. Si va rellena, a vitrina a 4 °C o menos (art. 4.1, fila 9)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Next day: day-old discount or waste. Cream-filled: case at 41 °F or below (3-501.16)",
+   "en_por_celda": "Next day: day-old discount or waste. Custard-, cream- or cheese-filled pieces and savory items (quiche, ham & cheese, empanadas): case at 41 °F or below (3-501.16), or time as a control with a written procedure (3-501.19: 4 h, then discard)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 23,
@@ -44293,7 +44308,7 @@
    "es": "Abr-Jun (variable)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "May–Jun (varies)",
+   "en_por_celda": "May peak · Apr–Jun (varies)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,

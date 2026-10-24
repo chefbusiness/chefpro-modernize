@@ -114,6 +114,14 @@ cuando el censo trae 0 desbloqueadas, o se declara otra.
 - 03 «Semanal Manager» E25 y 04 «Jefe Pastelero» E9: «Recepción» en la columna de hora (se lee «a la recepción»).
 - Versiones mezcladas (2.0 agosto / 2.1 septiembre) entre libros del mismo kit.
 - 06 «Instrucciones» B5: «hasta el 40 % de su año» sin fuente (la EN no da la cifra).
+- **RESUELTAS en el ES LIVE (ronda 1 de la F2, 24-oct-2026, parche XML sin cambio de versión; la EN las hereda):**
+  - 09 «Instrucciones»: área de impresión `A1:A20` (el texto va en la B) → `A1:B30`.
+  - 09 «Registro Mensual»: área `A1:I38`, sin la J «Responsable» → `A1:J38`.
+  - 09 «Cierre de Caja»: los rótulos del Resumen de Cierre (A41-A46) no cabían en la columna A de 5 → A = 24 y
+    B = 31 (el ancho impreso no cambia).
+  - 02 «Cremas y Rellenos» C8: almíbar a 118-121 °C también para el merengue suizo → «Italiano: almíbar a
+    118-121 °C · suizo: claras y azúcar a 71 °C · mantequilla a 18-20 °C».
+  - Las mismas correcciones, en `scripts/productos-digitales/kit-pasteleria-v2_0-postprocess.py`.
 
 ## R. Research (una pasada, 24-oct-2026)
 

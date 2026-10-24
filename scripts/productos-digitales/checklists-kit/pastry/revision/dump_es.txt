@@ -493,7 +493,7 @@ E7     : Pastelero
 F7     : 06:30
 A8     : 3
 B8     : Preparar crema de mantequilla (merengue suizo o italiana)
-C8     : Almíbar a 118-121 °C · mantequilla a 18-20 °C
+C8     : Italiano: almíbar a 118-121 °C · suizo: claras y azúcar a 71 °C · mantequilla a 18-20 °C
 D8     : Obrador
 E8     : Pastelero
 F8     : 06:30
@@ -2807,7 +2807,7 @@ CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
 # 09-apertura-cierre-caja.xlsx
 # docProps: title='09 — Apertura y Cierre de Caja · Kit de Tareas Pastelería / Obrador' · subject='Kit de Tareas Recurrentes · Pastelería / Obrador · v2.0' · keywords='pastelería, obrador, checklist, tareas, AI Chef Pro' · description='aichef.pro/kit-tareas-pasteleria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
 
-=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$A$20 · títulos=None · paneles=None · papel=9 · orientación=portrait
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$30 · títulos=None · paneles=None · papel=9 · orientación=portrait
 B2     : 09 — Apertura y Cierre de Caja · Pastelería / Obrador
 B4     : Qué resuelve:
 B5     : ▸ El arqueo diario de la caja de la tienda: fondo inicial, recuento por denominación y cuadre contra la Z del TPV
@@ -2984,7 +2984,7 @@ DV D5 D6 D7 D8 D9 D10 D11 D12 D13 D14 D15 D16 · list  · f1="✓,—,N/A" · f2
 CF B47 · cellIs notEqual · fórmula=['0'] · texto=None
 CF A5:F16 · expression  · fórmula=['$D5="✓"'] · texto=None
 
-=== Hoja «Registro Mensual» · protegida=False · área='Registro Mensual'!$A$1:$I$38 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+=== Hoja «Registro Mensual» · protegida=False · área='Registro Mensual'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
     pie: AI Chef Pro · aichef.pro · Página &P de &N
 A1     : Registro Mensual de Caja — Pastelería / Obrador
 A2     : Mes: ________________     Año: ________
