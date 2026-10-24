@@ -408,8 +408,8 @@ def gen_02():
             ("Incorporar mezcla de secos sobre líquidos con batidora/turbo", "Pasteurizador"),
         ]),
         ("Pasteurización y enfriamiento", [
+            ("Añadir grasas y emulsionantes al alcanzar 40-50°C en ascenso", "Pasteurizador"),
             ("Pasteurizar a 85°C durante 15 segundos (alta pasteurización)", "Pasteurizador"),
-            ("Añadir grasas y emulsionantes al alcanzar 40-50°C en descenso", "Pasteurizador"),
             ("Enfriar rápidamente a 4°C en abatidor o ciclo de enfriamiento", "Abatidor"),
             ("Verificar temperatura final de la mezcla (<4°C)", "Obrador"),
         ]),
@@ -439,7 +439,7 @@ def gen_02():
             ("Abatir cubeta a -18°C en abatidor (ciclo de congelación)", "Abatidor"),
             ("Trasladar cubeta a cámara de conservación -18°C/-20°C", "Cámara"),
             ("Registrar producción del día: sabor, kg, lote, destino", "Admin"),
-            ("Limpiar mantecadora: desmontar cuchillas, junta, cilindro", "Limpieza"),
+            ("Limpiar mantecadora: desmontar cuchillas, batidor y junta; el cilindro se limpia en su sitio", "Limpieza"),
             ("Desinfectar superficies de obrador y utensilios utilizados", "Limpieza"),
         ]),
     ])
@@ -635,7 +635,7 @@ def gen_05():
             ("Desinfectar bandejas de cucuruchos, tarrinas y complementos", "Mostrador"),
         ]),
         ("Obrador y maquinaria", [
-            ("Desmontar y limpiar piezas de mantecadora (cuchillas, junta, cilindro)", "Obrador"),
+            ("Desmontar y limpiar piezas de mantecadora (cuchillas, batidor y junta; el cilindro, en su sitio)", "Obrador"),
             ("Limpiar filtros de condensadores de equipos de frío", "Obrador"),
             ("Limpiar paredes y estantes de obrador", "Obrador"),
             ("Desinfectar contenedores de maduración", "Maduración"),
@@ -649,7 +649,7 @@ def gen_05():
     ])
     create_task_sheet(wb, "Gestión Semanal", ADMIN_COLOR, "Gestión y Mantenimiento Semanal", [
         ("Mantenimiento preventivo", [
-            ("Test de mantecadora en vacío: verificar temperatura y ciclo", "Obrador"),
+            ("Revisar la mantecadora según el fabricante: cuchillas, batidor y junta; temperatura de extracción en la primera tanda (nunca en vacío)", "Obrador"),
             ("Verificar niveles de refrigerante en equipos de frío", "Obrador"),
             ("Calibrar balanzas de obrador (pesos patrón)", "Obrador"),
             ("Revisar estado de utensilios: espátulas, porcionadores, moldes", "Obrador"),
