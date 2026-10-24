@@ -536,11 +536,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-paellero-eventos',
     url: '/plan-negocio-paellero-eventos',
     price: '€45',
-    name: { es: 'Plan de Negocio: Paellero para Eventos', en: 'Business Plan: Paella Catering' },
+    name: { es: 'Plan de Negocio: Paellero para Eventos', en: 'Paella Catering Business Plan Kit' },
     description: {
       es: 'Paella para eventos: plan de negocio y kit con 11 entregables.',
-      en: 'Paella for events: business plan and kit with 11 deliverables.',
+      en: 'Word business plan, Excel financial projections, pricing calculator and startup checklist.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `paella-catering-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/paella-catering-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-parrillero-asador-eventos': {
     id: 'plan-negocio-parrillero-asador-eventos',

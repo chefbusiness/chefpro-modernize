@@ -722,6 +722,33 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
+  // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
+  // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  // Las cifras no salen aquí: nada que confirmar con la F2 salvo los conteos (8 menu styles, 68 tareas).
+  'paella-catering-business-plan': {
+    version: '2.2',
+    updated: '2026-10-24',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2 for a live paella caterer that cooks giant paellas in front of the guests in 26- to 36-inch paella pans over 3-ring propane burners, with salad and bread, preps the sofrito, the stock and the seafood at a commissary and adds drop-off paella and a premium seafood-and-tapas line: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing calculator and a startup checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example is a full-time owner-operator with a second paella chef on weekends, not a typical first year.',
+          'The model runs on events per year, average price per guest (excluding sales tax, with staffing and the service charge included) and average guests per event, with the break-even measured in events per year. Corporate catering marketplace bookings carry their own fee, and client deposits are not counted, which keeps the cash flow on the cautious side.',
+          'Revenue and costs excluding sales tax in the P&L, and a 12-month cash flow that includes the sales tax you collect on the whole invoice and remits it quarterly (an 8% example rate you replace with your state and local rate).',
+          'Payroll with four roles — the owner as paella chef and in sales, a part-time lead cook who works as second paella chef, hourly event staff (servers and buffet attendants) and a part-time prep cook who drives the van, all on W-2 payroll — employer payroll taxes, a federal and a state or local minimum wage floor, and a check of the event hours you need against the hours you hire.',
+          'Startup costs with paella burners and stands, eight paella pans, a propane and fire-safety kit, commissary prep and storage, a used cargo van with upright cylinder racks, permits and certifications, smallwares and paella tools, and the event setup (a canopy for the cooking station, a handwashing station, coolers and insulated food carriers), plus commissary rent with equipment storage: no storefront.',
+          'Financing sheet with owner equity and your main loan (bank or SBA 7(a)), amortized with no interest-only period by default and the DSCR checked against a 1.25× target; an SBA Microloan, investors and local grants are listed as other sources of funds, without amortization.',
+          'New pricing calculator: three packages (drop-off paella, live paella party and full-service live paella) and a tapas hour switch, from your paella style, guests, ounces of uncooked rice per guest, ingredient prices, propane and staff hours to the pans by size, a price per guest and a quote with service charge, sales tax, a 50% deposit and the balance, with the margin calculated and the voluntary gratuity kept off the price; a Paella Yield & Pan Sizing table with the Food Code minimum in its own column, a Shopping List by Guest Count and three example quotes.',
+          "68-task startup checklist in 6 phases: business setup (LLC, EIN, seller's permit, business license, catering contract), propane and permits (written commissary agreement, your county on cooking at the event, fire marshal, propane cylinders in the van, shellstock tags), equipment, staff (W-2, ServSafe Manager and food handler cards), marketing and the first 90 days.",
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-24): BBQ Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-parrillero-
   // asador-eventos con otro concepto (SPEC business-plans-en-6 D96-D113: off-site BBQ caterer con smoker trailer desde una
   // commissary + calculadora de libras de carne por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.

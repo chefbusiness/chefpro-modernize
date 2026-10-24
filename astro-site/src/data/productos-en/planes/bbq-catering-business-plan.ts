@@ -132,6 +132,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Buy this one if smoke is your product: a pitmaster, a smoker trailer, an overnight cook, pounds of meat per guest, smoker yield and the fire rules around a wood or charcoal pit. The Catering Business Plan Kit is written for a general event caterer — plated service, chef-attended stations and a refrigerated van — and its calculator works from food cost per guest. Both share the same lender-ready format and the same Excel engine, driven by events per year, price per guest and guests per event.",
   },
   {
+    q: 'Is there a plan for a paella caterer?',
+    a: "Yes. If you'd rather cook giant paellas live in front of the guests than smoke meats, our Paella Catering Business Plan Kit is written for that: paella pans and 3-ring propane burners at the event, sofrito, stock and seafood prepped at a commissary, cooked rice as a TCS food, propane rules and a pricing calculator that turns your guest count into pans, rice and a price per guest, with a pan sizing table and a shopping list by guest count.",
+  },
+  {
     q: 'Is this plan for a BBQ food truck or restaurant?',
     a: "No. It's built for an off-site BBQ caterer with no storefront, which sells events, not plates to walk-up customers. If you're opening a BBQ food truck, our Food Truck Business Plan Kit fits better; for a BBQ restaurant, start from the Restaurant Business Plan Kit. The Excel workbook takes any numbers you type, but the written plan describes a BBQ catering company, so you'd rewrite more of the text.",
   },
@@ -366,6 +370,7 @@ const data: PlanNegocioData = {
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products', label: 'Digital Products' },
     { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
+    { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/catering-checklist-templates', label: 'Catering Checklists Kit Pro' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },

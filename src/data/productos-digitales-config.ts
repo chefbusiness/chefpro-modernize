@@ -1241,6 +1241,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-24): twin of plan-negocio-paellero-eventos, independent product.
+  'paella-catering-business-plan': {
+    id: 'paella-catering-business-plan',
+    name: 'Paella Catering Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/paella-catering-business-plan/access',
+    emailSubject: 'Your access to Paella Catering Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Paella Catering Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a paella yield and pan sizing table and a shopping list by guest count and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Paella Catering Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a paella yield and pan sizing table and a shopping list by guest count and the 68-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/paella-catering-business-plan/paella-catering-business-plan.docx',
+      'plan-financiero': '/dl/paella-catering-business-plan/paella-catering-financial-projections.xlsx',
+      'calculadora-pricing': '/dl/paella-catering-business-plan/paella-catering-pricing-calculator.xlsx',
+      'checklist-apertura': '/dl/paella-catering-business-plan/paella-catering-startup-checklist.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
   'food-cost-menu-engineering-guide': {
     id: 'food-cost-menu-engineering-guide',
