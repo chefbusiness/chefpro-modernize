@@ -184,7 +184,9 @@ def estatico() -> None:
     rg = robots_gate()
     grupos = rg.parse_robots(ROBOTS.read_text(encoding='utf-8'))
     raw = ROBOTS.read_text(encoding='utf-8')
-    bloques = [b for b in re.split(r'\n(?=User-agent:)', raw) if b.startswith('User-agent:')]
+    # grupos separados por línea en blanco: un grupo puede abrir con VARIOS User-agent seguidos que comparten reglas
+    # (el de los bots de IA desde el #143); cortar en cada «User-agent:» daba bloques vacíos y un falso rojo
+    bloques = [b for b in re.split(r'\n\s*\n', raw) if re.search(r'^User-agent:', b, re.M)]
     activas = [lg for lg, t in no_es.items() if t['activa']]
     for lg, t in no_es.items():
         lineas = [f'Disallow: {t["hub"]}/*/{k}{v}' for k in ('access', 'library') for v in ('$', '/', '?')]

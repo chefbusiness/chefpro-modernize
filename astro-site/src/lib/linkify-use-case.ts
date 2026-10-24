@@ -44,7 +44,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Business Plan: Coffee Shop': '/en/digital-products/coffee-shop-business-plan',
   // Nombre EN viejo del catálogo → landing EN desde el 24-oct-2026 (Ice Cream Shop Checklists Kit Pro).
   'Tasks: Ice Cream Shop': '/en/digital-products/ice-cream-shop-checklist-templates',
-  'Tasks: Pizzeria': '/kit-tareas-pizzeria',
+  'Tasks: Pizzeria': '/en/digital-products/pizza-shop-checklist-templates', // landing EN viva desde el 18-oct-2026
   // Producto con landing propia en la tienda EN (products-catalog.ts urlByLang.en): la
   // mención inglesa enlaza a ESA landing, no a la española (TIENDA-INTERNACIONAL §3.10).
   'Food Cost Kit Pro': '/en/digital-products/food-cost-templates',
