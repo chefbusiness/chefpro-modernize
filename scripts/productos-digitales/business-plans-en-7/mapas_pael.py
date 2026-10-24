@@ -125,7 +125,7 @@ DOCX_ENCABEZADOS = OrderedDict([('pael', [37, 44, 51, 59, 67, 76, 83, 91, 100, 1
 DOCX_INDICE = OrderedDict([('pael', list(range(24, 34)))])
 DOCX_ULTIMO_9 = OrderedDict([('pael', '108')])
 DOCX_TANDAS = OrderedDict([('pael_a', ('pael', [1, 2, 3, 4, 5])), ('pael_b', ('pael', [6, 7, 8, 9, 10]))])
-PRESTAMO_SEMILLA = OrderedDict([('pael', 62000)])                   # punto fijo del dry-run (research §8: ≈ $62,400)
+PRESTAMO_SEMILLA = OrderedDict([('pael', 64000)])                   # punto fijo del dry-run (research §8: ≈ $62,400)
 
 AUTOTEST = OrderedDict([
     ('P1', 'PAEP'), ('P2', 'PAEP'), ('C1', 'PAEC'), ('C2', 'PAEC'),
