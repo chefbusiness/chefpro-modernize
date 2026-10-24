@@ -273,7 +273,8 @@ const data: GuiaData = {
   stickyLabel: 'HOW TO OPEN A PASTRY SHOP — $69',
 
   // D17/D19: enlaces recíprocos con Bakery Business Plan, Food Cost Kit Pro, HACCP Kit y Food Cost Guide (los
-  // cuatro enlazan de vuelta a esta guía desde sus propios footerLinks).
+  // cuatro enlazan de vuelta a esta guía desde sus propios footerLinks). + Pastry Shop Checklists Kit Pro (24-oct-2026):
+  // la operación diaria de la pastelería que la guía enseña a abrir; su pie y su dashboard enlazan de vuelta aquí.
   footerLinks: [
     { label: 'aichef.pro', href: '/en' },
     { label: 'Digital Products', href: '/en/digital-products' },
@@ -281,6 +282,7 @@ const data: GuiaData = {
     { label: 'Food Cost Kit Pro', href: '/en/digital-products/food-cost-templates' },
     { label: 'HACCP Food Safety Kit Pro', href: '/en/digital-products/haccp-templates' },
     { label: 'Food Cost + Menu Engineering Guide', href: '/en/digital-products/food-cost-menu-engineering-guide' },
+    { label: 'Pastry Shop Checklists Kit Pro', href: '/en/digital-products/pastry-shop-checklist-templates' },
     { label: 'Contact', href: 'mailto:info@aichef.pro' },
   ],
 

@@ -1,0 +1,5595 @@
+{
+ "meta": {
+  "kit": "chocolate",
+  "producto": "Chocolate Shop Checklists Kit Pro",
+  "n_pendientes": 434,
+  "n_palabras": 4374,
+  "motivos": {
+   "nueva": 427,
+   "corregida": 3,
+   "adaptar": 2,
+   "contexto": 2
+  },
+  "n_heredadas": 104,
+  "heredadas_por_via": {
+   "exacta": 101,
+   "sufijo": 3
+  },
+  "heredadas_por_fuente": {
+   "icecream": 100,
+   "cafe": 2,
+   "catering": 2
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "chocolate/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "chocolate/textos_en/heredado.json (cómo se dijo ya cada cosa: heladería, cafetería, base, catering, pizzería, hamburguesería, ghost kitchen y bar)",
+   "chocolate/mapas_chocolate.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../GLOSARIO-JERGA-ES-EN.md (sección Chocolatería)"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "▸ Checklist completo para la apertura y cierre diario de tu chocolatería u obrador.",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Instrucciones · B5"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0007",
+   "es": "▸ Incluye encendido de equipos de templado, vitrinas, montaje de servicio y cierre.",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0012",
+   "es": "▸ Imprime en A4 y deja en obrador y mostrador.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "D17: US Letter",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "A4 → US Letter",
+   "motivo": "corregida: obrador → kitchen (la zona «Kitchen» del kit), no «production room» como en la heladería",
+   "base_en": "▸ Print on US Letter and keep it in the production room and at the counter.",
+   "base_fuente": "icecream"
+  },
+  {
+   "id": "c0013",
+   "es": "Higiene y temperaturas:",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0014",
+   "es": "▸ La primera sección de «Apertura» es de higiene personal y de arranque seguro: extracción primero, comprobación del gas después (si lo tienes) y sólo entonces temperadora, vitrinas y climatización.",
+   "grupo": "G1",
+   "palabras": 29,
+   "donde": [
+    "01 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "Sin «comprobación del gas» como paso de abrir llaves: «si tienes gas, comprueba que no huele a gas»; en EE. UU. la llave general del gas no se abre ni se cierra cada día: sin «abrir/cerrar la llave general»",
+   "cita_rotulos": [
+    {
+     "es": "Apertura",
+     "en": "Opening"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0015",
+   "es": "▸ Las cámaras no se «encienden»: se comprueba que han funcionado toda la noche y se anota la lectura. Objetivos de este oficio: obrador 18-20 °C, conservación 15-18 °C con 50-60 % de humedad, rellenos y ganaches 0-4 °C, vitrina de bombonería 16-18 °C.",
+   "grupo": "G1",
+   "palabras": 47,
+   "donde": [
+    "01 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window",
+    "obrador → kitchen (chocolate kitchen / production kitchen)",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Objetivos US del kit en °F: obrador (kitchen) 64–68 °F (ES 18-20 °C); cuarto de conservación (cool room) 59–64 °F (ES 15-18 °C) con 50–60 % de humedad; rellenos y ganaches en la nevera (fridge) a 41 °F o menos (FDA Food Code 3-501.16); vitrina de bombonería (display case) 60–64 °F (ES 16-18 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0016",
+   "es": "▸ Por encima de 20 °C la manteca de cacao empieza a fundir: el bombón suda, pierde brillo y en dos días aparece el fat bloom. Es la razón de que la vitrina lleve su propio control.",
+   "grupo": "G1",
+   "palabras": 36,
+   "donde": [
+    "01 · Instrucciones · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "20 °C → 68 °F",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0020",
+   "es": "Apertura de Chocolatería",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0022",
+   "es": "Higiene personal y arranque seguro del obrador",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura · A4"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0028",
+   "es": "Uniforme y calzado de trabajo limpios, delantal cambiado y pelo recogido bajo gorro o redecilla",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0030",
+   "es": "Sin anillos, pulseras, reloj ni pendientes colgantes; uñas cortas, limpias y sin esmalte ni postizos",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura · B7"
+   ],
+   "adaptar": "FDA Food Code 2-303.11: sin joyas en manos y brazos SALVO un anillo liso (alianza); uñas cortas y limpias, sin esmalte ni postizas salvo con guantes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0031",
+   "es": "Lavado de manos con jabón y secado con papel de un solo uso, y otra vez en cada cambio de tarea (el chocolate acabado ya no lleva ningún paso que destruya patógenos)",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "01 · Apertura · B8"
+   ],
+   "adaptar": "Lavamanos = handwashing sink, con agua caliente (al menos 100 °F, FDA Food Code 5-202.12), jabón y papel; añade: lo listo para consumir (bombones, trufas, muestras) no se toca con la mano desnuda: guantes, pinzas o papel (FDA Food Code 3-301.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0033",
+   "es": "Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto ni entra en obrador ni mostrador: comunicarlo al encargado",
+   "grupo": "G1",
+   "palabras": 21,
+   "donde": [
+    "01 · Apertura · B10"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "obrador → kitchen (chocolate kitchen / production kitchen)",
+    "encargado → shift lead"
+   ],
+   "adaptar": "FDA Food Code 2-201.11: el responsable (person in charge) comprueba que nadie tiene vómitos, diarrea, ictericia, dolor de garganta con fiebre o una herida infectada; quien los tenga no manipula alimentos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0034",
+   "es": "Encender la extracción del obrador ANTES que ningún otro equipo",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura · B11"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0035",
+   "es": "Si el obrador tiene instalación de gas (fogón, marmita o quemador): comprobar que no hay olor, abrir la llave general y sólo después encender los equipos",
+   "grupo": "G1",
+   "palabras": 26,
+   "donde": [
+    "01 · Apertura · B12"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal y llama a la compañía de gas o al 911 desde fuera; en EE. UU. la llave general del gas no se abre ni se cierra cada día: sin «abrir/cerrar la llave general»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0037",
+   "es": "Encender temperadora de chocolate y precalentar a 45 °C",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "adaptar": "Temperadora → tempering machine (melter); precalentar según el fabricante (el kit: 113 °F, ES 45 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0039",
+   "es": "Comprobar que la cámara de conservación ha funcionado toda la noche (sin cortes ni alarmas) y registrar la temperatura: objetivo 15-18 °C y 50-60 % de humedad — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 33,
+   "donde": [
+    "01 · Apertura · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Cámara de conservación → cool room a 59–64 °F con 50–60 % de humedad; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0041",
+   "es": "Comprobar que la nevera de rellenos y ganaches ha funcionado toda la noche y registrar la temperatura: objetivo 0-4 °C — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 26,
+   "donde": [
+    "01 · Apertura · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "ganache → ganache; rellenos → fillings",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Nevera de rellenos y ganaches → fridge a 41 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0043",
+   "es": "Encender iluminación de vitrina y sala de tienda",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura · B18"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0045",
+   "es": "Comprobar que la vitrina de bombonería mantiene 16-18 °C y no condensa antes de montar el género (por encima de 20 °C la manteca de cacao funde y el bombón pierde brillo) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 38,
+   "donde": [
+    "01 · Apertura · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "Vitrina de bombonería → display case a 60–64 °F, sin condensación; por encima de 68 °F la manteca de cacao funde; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "Encender aire acondicionado — mantener sala 20-22 °C",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura · B20"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "adaptar": "Tienda a 68–72 °F",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "Registrar las temperaturas de obrador, cámara y nevera: si tienes el Pack APPCC, en su hoja de temperaturas; si no, aquí mismo en «Notas»",
+   "grupo": "G1",
+   "palabras": 24,
+   "donde": [
+    "01 · Apertura · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "obrador → kitchen (chocolate kitchen / production kitchen)",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge",
+    "APPCC → food safety (HACCP solo si lo exige tu estado)"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); lectura en °F",
+   "cita_rotulos": [
+    {
+     "es": "Notas",
+     "en": "Notes"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0050",
+   "es": "Montaje de servicio",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura · A23"
+   ],
+   "motivo": "corregida: una tienda monta la tienda y la vitrina, no «service»",
+   "base_en": "Service setup",
+   "base_fuente": "icecream"
+  },
+  {
+   "id": "c0051",
+   "es": "Montar vitrina: bombones, tabletas, figuras, trufas; los de ganache de nata fresca y las trufas de nata, solo en vitrina refrigerada a 0-4 °C",
+   "grupo": "G1",
+   "palabras": 25,
+   "donde": [
+    "01 · Apertura · B25"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "trufa → truffle; rocas → clusters",
+    "tableta → bar (chocolate bar)",
+    "figuras → molded figures (huecas → hollow figures)",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Verificar el etiquetado de cada producto expuesto: denominación, precio (y precio por kilo si se vende al peso) y los alérgenos declarados —leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos— más las trazas",
+   "grupo": "G1",
+   "palabras": 38,
+   "donde": [
+    "01 · Apertura · B26"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "cáscara → shell; sellar / tapa → cap (capping)",
+    "kg / kilo → lb; mm → in"
+   ],
+   "adaptar": "Vitrina US: cartel de cada bandeja con nombre y precio (y precio por libra si vendes al peso) y aviso por escrito de los alérgenos principales de lo que se vende sin envasar (FDA Food Code 2022 3-602.12(C), donde tu estado lo haya adoptado; buena práctica en todo caso). Alérgenos US: los 9 principales (FALCPA + FASTER Act): leche, huevo, frutos de cáscara (tree nuts), cacahuete, trigo (barquillos, galletas, crujientes), soja (también la lecitina), sésamo, pescado y crustáceos; los sulfitos no son uno de los 9 (si tu fruta confitada los lleva, déjalos en el cartel); en UK, los 14. Sin «cereales con gluten»: se dice «wheat». «Trazas» → «may contain» (contacto cruzado en líneas compartidas): en EE. UU. es voluntario y tiene que ser veraz",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0053",
+   "es": "Reponer bolsas, cajas regalo, papel de seda, cintas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura · B27"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0055",
+   "es": "Verificar stock de cajas de bombones surtidos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura · B28"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0056",
+   "es": "Preparar zona de degustación con muestras del día",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura · B29"
+   ],
+   "pistas": [
+    "degustación → samples / tasting; maridajes → pairings"
+   ],
+   "adaptar": "Muestras (samples) con pinzas, palillo o cápsula de un solo uso; nunca a mano desnuda (FDA Food Code 3-301.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0058",
+   "es": "Comprobar que el TPV está activo y que el fondo de caja ya se ha contado y anotado antes de abrir la puerta: el recuento no se repite aquí, se hace en «Apertura de Caja» del fichero 09 (hito en 08/09)",
+   "grupo": "G1",
+   "palabras": 42,
+   "donde": [
+    "01 · Apertura · B30"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "TPV / datáfono → POS / card terminal"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Apertura de Caja",
+     "en": "Cash Drawer Opening"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0060",
+   "es": "Colocar pizarra con novedades y productos destacados",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Verificaciones finales",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura · A33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0062",
+   "es": "Comprobar que música ambiental funciona",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura · B35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Verificar limpieza de cristales de vitrina",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura · B36"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "Confirmar pedidos online pendientes de preparar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura · B37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "Revisar agenda: pedidos especiales, eventos, encargos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura · B38"
+   ],
+   "pistas": [
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "Cierre de Chocolatería",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0073",
+   "es": "Cierre de tienda",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre · A4",
+    "04 · Dependiente · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "Retirar productos de vitrina y guardar en conservación; la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C",
+   "grupo": "G1",
+   "palabras": 25,
+   "donde": [
+    "01 · Cierre · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "trufa → truffle; rocas → clusters",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Conservación → cool room; la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "Cubrir bombones que queden expuestos con film",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre · B7"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0076",
+   "es": "Comprobar que el arqueo del día ha quedado cerrado y firmado y las ventas registradas: el cuadre no se repite aquí, se hace en «Cierre de Caja» del fichero 09 (hito en 08/09)",
+   "grupo": "G1",
+   "palabras": 34,
+   "donde": [
+    "01 · Cierre · B8"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "arqueo / cuadre de caja → cash count / reconcile"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Cierre de Caja",
+     "en": "Cash Drawer Closing"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Comprobar que el TPV y el terminal de pago quedan cerrados DESPUÉS del arqueo, nunca antes: el cierre de terminal se manda en «Cierre del Negocio» del fichero 08 (hito en 08/09)",
+   "grupo": "G1",
+   "palabras": 33,
+   "donde": [
+    "01 · Cierre · B9"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "TPV / datáfono → POS / card terminal",
+    "arqueo / cuadre de caja → cash count / reconcile"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Cierre del Negocio",
+     "en": "Shop Closing"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0078",
+   "es": "Limpiar mostradores y cristales de vitrina",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B10"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "El mostrador donde se manipula producto: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); los cristales, con limpiacristales",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0079",
+   "es": "Cierre de obrador",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre · A12"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0080",
+   "es": "Limpiar y secar temperadora de chocolate",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B14"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0081",
+   "es": "Limpiar moldes usados y dejar secando",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0083",
+   "es": "Guardar coberturas abiertas en recipientes herméticos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B16"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0085",
+   "es": "Comprobar y registrar las temperaturas antes de cerrar: cámara de conservación 15-18 °C y nevera de rellenos 0-4 °C — anota las lecturas: ____ °C / ____ °C",
+   "grupo": "G1",
+   "palabras": 28,
+   "donde": [
+    "01 · Cierre · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "ganache → ganache; rellenos → fillings",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Cool room a 59–64 °F y fridge de rellenos a 41 °F o menos; coletilla «— log readings: ____ °F / ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0086",
+   "es": "Limpiar superficies de mármol/granito de obrador",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre · B18"
+   ],
+   "pistas": [
+    "siembra → seeding; mármol → marble slab (tabling)",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Limpiar y luego sanitizar las superficies de mármol o granito con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); y secar bien: el agua no puede tocar el chocolate",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0087",
+   "es": "Anotar las mermas del día: producto, cantidad y motivo (rotura, mal templado, bloom, caducidad, degustación o prueba)",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "01 · Cierre · B19"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)",
+    "degustación → samples / tasting; maridajes → pairings"
+   ],
+   "adaptar": "Mermas → waste log: producto, cantidad y motivo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0088",
+   "es": "Barrer y fregar suelo de obrador",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B20"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "Seguridad y cierre",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Apagar equipos excepto cámaras y neveras",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B24"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Cerrar la llave general de gas si el obrador la tiene y verificar que agua y luces quedan apagadas",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "01 · Cierre · B25"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Apagar los equipos de gas según el fabricante (si tienes gas) y comprobar agua y luces; en EE. UU. la llave general del gas no se abre ni se cierra cada día: sin «abrir/cerrar la llave general»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0094",
+   "es": "Sacar basura y reciclar cartón/plástico",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "▸ Control de producción artesanal: templado, moldeado, bombones, tabletas.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Instrucciones · B5"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "▸ Registra lotes, temperaturas y tiempos de cada proceso.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "▸ Adapta las recetas base a tus fórmulas propias.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "▸ Ajusta temperaturas de templado según tipo de cobertura.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "adaptar": "Ajustar el templado a la curva del fabricante de cada cobertura (couverture)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "▸ Imprime y deja en obrador junto a la temperadora.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0107",
+   "es": "Templado y conservación:",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "▸ Antes de templar se comprueba el AIRE del obrador: 18-20 °C y 50-60 % de humedad. Las tres curvas de cobertura de esta hoja sólo funcionan dentro de esa ventana.",
+   "grupo": "G1",
+   "palabras": 31,
+   "donde": [
+    "02 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Aire del obrador: 64–68 °F y 50–60 % de humedad (ES 18-20 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0109",
+   "es": "▸ Al pie de «Moldeado» tienes una tabla editable de vida útil por familia: ajústala a tu fórmula. Está fuera del contador porque es una referencia, no una tarea.",
+   "grupo": "G1",
+   "palabras": 28,
+   "donde": [
+    "02 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Moldeado",
+     "en": "Molding & Bars"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0110",
+   "es": "▸ El chocolate acabado NO se congela: al descongelar condensa, el agua disuelve el azúcar de la superficie y deja sugar bloom. Sólo el granel de ganache admite congelación.",
+   "grupo": "G1",
+   "palabras": 28,
+   "donde": [
+    "02 · Instrucciones · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "ganache → ganache; rellenos → fillings",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "adaptar": "añade: el granel de ganache se congela a 0 °F o menos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "Control de Templado",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Templado · A1"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Preparación de coberturas",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Templado · A4"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0113",
+   "es": "Verificar stock de cobertura negra (55-70% cacao)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Templado · B6"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0114",
+   "es": "Verificar stock de cobertura con leche (35-40% cacao)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Templado · B7"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Verificar stock de cobertura blanca (28-33% cacao)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Templado · B8"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Comprobar la temperatura y la humedad del obrador ANTES de templar: objetivo 18-20 °C y 50-60 % de humedad (por encima, la manteca no cristaliza y aparece bloom) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 34,
+   "donde": [
+    "02 · Templado · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Obrador a 64–68 °F y 50–60 % de humedad; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0117",
+   "es": "Pesar cobertura según orden de producción del día",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Templado · B10"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0118",
+   "es": "Trocear cobertura y colocar en temperadora",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Templado · B11"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0119",
+   "es": "Proceso de templado — Chocolate negro",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Templado · A13"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0120",
+   "es": "Fundir a 50-55 °C — registrar temperatura",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Templado · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Fundir a 122–131 °F (ES 50-55 °C); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0121",
+   "es": "Enfriar a 27-28 °C sobre mármol o por siembra",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Templado · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "siembra → seeding; mármol → marble slab (tabling)"
+   ],
+   "adaptar": "Enfriar a 81–82 °F (ES 27-28 °C) sobre mármol (tabling) o por siembra (seeding); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0122",
+   "es": "Recalentar a 31-32 °C — punto de trabajo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Templado · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recalentar a 88–90 °F (ES 31-32 °C), temperatura de trabajo; cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0123",
+   "es": "Test de templado en punta de espátula: debe secar en 3-5 min a 20 °C, con brillo, snap seco y contracción en el molde. Si no, volver a fundir y templar — no se moldea «a ver si sale»",
+   "grupo": "G1",
+   "palabras": 39,
+   "donde": [
+    "02 · Templado · B18"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "adaptar": "El test seca en 3-5 min a 68 °F (ES 20 °C); snap = el chasquido al partir",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0124",
+   "es": "Registrar lote, hora y temperatura final",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Templado · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0125",
+   "es": "Proceso de templado — Chocolate con leche",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Templado · A21"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "Fundir a 45-50 °C — registrar temperatura",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Templado · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Fundir a 113–122 °F (ES 45-50 °C); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0127",
+   "es": "Enfriar a 26-27 °C sobre mármol o por siembra",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Templado · B24"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "siembra → seeding; mármol → marble slab (tabling)"
+   ],
+   "adaptar": "Enfriar a 79–81 °F (ES 26-27 °C) sobre mármol (tabling) o por siembra (seeding); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "Recalentar a 29-30 °C — punto de trabajo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Templado · B25"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recalentar a 84–86 °F (ES 29-30 °C), temperatura de trabajo; cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "Test de templado en capa fina sobre papel: a 18-20 °C debe cristalizar en 3-5 min, con brillo uniforme y sin vetas, partiendo del punto de trabajo de 29-30 °C. Si no, volver a fundir y retemplar — no se moldea «a ver si sale». Registrar el lote, la hora y la temperatura final",
+   "grupo": "G1",
+   "palabras": 56,
+   "donde": [
+    "02 · Templado · B26"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "adaptar": "Test a 64–68 °F (ES 18-20 °C) desde la temperatura de trabajo de 84–86 °F (ES 29-30 °C); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Proceso de templado — Chocolate blanco",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Templado · A28"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "Fundir a 40-45 °C — registrar temperatura",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Templado · B30"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Fundir a 104–113 °F (ES 40-45 °C); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "Enfriar a 25-26 °C sobre mármol o por siembra",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Templado · B31"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "siembra → seeding; mármol → marble slab (tabling)"
+   ],
+   "adaptar": "Enfriar a 77–79 °F (ES 25-26 °C) sobre mármol (tabling) o por siembra (seeding); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0133",
+   "es": "Recalentar a 28-29 °C — punto de trabajo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Templado · B32"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recalentar a 82–84 °F (ES 28-29 °C), temperatura de trabajo; cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "Test de templado en capa fina sobre papel: a 18-20 °C debe cristalizar en 3-5 min, con brillo uniforme y sin vetas, partiendo del punto de trabajo de 28-29 °C. Si no, volver a fundir y retemplar — no se moldea «a ver si sale». Registrar el lote, la hora y la temperatura final",
+   "grupo": "G1",
+   "palabras": 56,
+   "donde": [
+    "02 · Templado · B33"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "adaptar": "Test a 64–68 °F (ES 18-20 °C) desde la temperatura de trabajo de 82–84 °F (ES 28-29 °C); cifras del kit en °F; manda la curva de templado del fabricante de tu cobertura (couverture), que viene en el envase o en su ficha técnica",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Producción: Moldeado y Bombones",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Moldeado · A1"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Moldeado de bombones",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Moldeado · A4"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "Preparar moldes limpios y a temperatura ambiente (20-22 °C)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Moldeado · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Moldes (polycarbonate molds) a 68–72 °F (ES 20-22 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0138",
+   "es": "Verter chocolate templado en moldes — golpear para eliminar burbujas",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Moldeado · B7"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "Vaciar exceso — dejar cáscara uniforme de 2-3mm",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Moldeado · B8"
+   ],
+   "pistas": [
+    "cáscara → shell; sellar / tapa → cap (capping)"
+   ],
+   "adaptar": "Cáscara (shell) de 1/16–1/8 in (ES 2-3 mm)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0140",
+   "es": "Invertir moldes sobre rejilla y dejar escurrir",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Enfriar en cámara a 12-14 °C durante 10-15 min",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Moldeado · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Enfriar a 54–57 °F (ES 12-14 °C) durante 10-15 min",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Preparar rellenos/ganaches según receta del día",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B11"
+   ],
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0143",
+   "es": "Rellenar bombones al 80% dejando margen para tapa",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Moldeado · B12"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "cáscara → shell; sellar / tapa → cap (capping)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0144",
+   "es": "Sellar con chocolate templado — alisar con espátula",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B13"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "cáscara → shell; sellar / tapa → cap (capping)"
+   ],
+   "adaptar": "Sellar → cap (capping) con chocolate templado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0145",
+   "es": "Enfriar en cámara 15-20 min hasta contracción",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Moldeado · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0146",
+   "es": "Desmoldar, verificar brillo y almacenar en bandejas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B15"
+   ],
+   "pistas": [
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0147",
+   "es": "Producción de tabletas",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Moldeado · A17"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0148",
+   "es": "Preparar moldes de tableta limpios y atemperados",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B19"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0149",
+   "es": "Verter chocolate templado y golpear/vibrar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Moldeado · B20"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0150",
+   "es": "Añadir inclusiones si aplica: frutos secos, frutas, sal",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Moldeado · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0151",
+   "es": "Alisar superficie con espátula",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Moldeado · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0152",
+   "es": "Enfriar en cámara a 12-14 °C durante 20-30 min",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Moldeado · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Enfriar a 54–57 °F (ES 12-14 °C) durante 20-30 min",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0153",
+   "es": "Desmoldar, verificar acabado y pesar cada tableta",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B24"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0154",
+   "es": "Envolver en papel/aluminio y etiquetar: denominación, ingredientes con los alérgenos destacados, peso neto, lote y fecha de consumo preferente",
+   "grupo": "G1",
+   "palabras": 20,
+   "donde": [
+    "02 · Moldeado · B25"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Papel de aluminio → foil; Etiqueta US de lo que se envasa en la tienda (tabletas, cajas cerradas, bolsas): nombre del producto, ingredientes por peso, contenido neto (oz y g), alérgenos principales y nombre y lugar del negocio (FDA Food Code 3-602.11); el lote y la fecha de consumo preferente (best-by) son criterio del kit: en EE. UU. la fecha es voluntaria salvo en la fórmula infantil",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0156",
+   "es": "Control de calidad y registro",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Moldeado · A27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0157",
+   "es": "Verificar brillo, textura y snap de productos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B29"
+   ],
+   "pistas": [
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0158",
+   "es": "Registrar lotes de producción: producto, cantidad, fecha",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja); la ganache de nata fresca, con fecha de caducidad (art. 24 del Reglamento UE 1169/2011)",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "02 · Moldeado · B31"
+   ],
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "adaptar": "fechas US: lo TCS (ganache de nata fresca, rellenos con actividad de agua alta) lleva date marking de 7 días a 41 °F como máximo, contando el día de elaboración como día 1 (FDA Food Code 3-501.17); el resto, consumo preferente (best-by, criterio del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0160",
+   "es": "Anotar las mermas del día: producto, cantidad y motivo (rotura, mal templado, bloom, prueba). El chocolate sin relleno y sin contaminar se puede refundir; el que lleva ganache o fruta, a residuo",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "02 · Moldeado · B32"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "ganache → ganache; rellenos → fillings",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe); la ganache de nata fresca, en cámara a 0-4 °C — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 40,
+   "donde": [
+    "02 · Moldeado · B33"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "ganache → ganache; rellenos → fillings",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Producto terminado a 59–64 °F y 50–60 % de humedad, a oscuras y lejos de olores; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Tabletas y chocolate sin relleno",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Moldeado · B39"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)",
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "El enemigo no es el tiempo: es la humedad, la luz y los olores. Sellado y en oscuridad",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "02 · Moldeado · D39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Figuras huecas y piezas macizas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Moldeado · B40"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Igual que la tableta, pero la pieza hueca se raja con los cambios bruscos de temperatura",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "02 · Moldeado · D40"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "Bombones de ganache con nata fresca",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Moldeado · B41"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "Bombones de ganache con nata UHT, sorbato o alcohol",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Moldeado · B42"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0176",
+   "es": "El conservante y el alcohol bajan la actividad de agua; sin ellos no se llega ni a la mitad",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "02 · Moldeado · D42"
+   ],
+   "adaptar": "añade: solo si su actividad de agua está comprobada en laboratorio (no TCS); si no, como la ganache de nata fresca",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "Bombones de praliné, gianduja y frutos secos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B43"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "praliné → praline (sin tilde); gianduja → gianduja; guirlache → nut brittle; garrapiñados → candied nuts; frutas confitadas → candied fruit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0179",
+   "es": "La grasa del fruto seco se enrancia y el frío no lo evita: manda la fecha, no el aspecto",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "02 · Moldeado · D43"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Trufas y rocas recubiertas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Moldeado · B44"
+   ],
+   "pistas": [
+    "trufa → truffle; rocas → clusters"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0182",
+   "es": "Si llevan nata o mantequilla, se cuentan como ganache fresca",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Moldeado · D44"
+   ],
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Bombones de licor y cristalizados",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Moldeado · B45"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "licor → liqueur (nunca «liquor»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Vigilar la cristalización del azúcar en la cáscara: revienta y gotea",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Moldeado · D45"
+   ],
+   "pistas": [
+    "cáscara → shell; sellar / tapa → cap (capping)"
+   ],
+   "adaptar": "añade al final: «Alcohol-filled candy: check your state rules»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "Frutos secos garrapiñados y frutas confitadas bañadas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Moldeado · B46"
+   ],
+   "pistas": [
+    "praliné → praline (sin tilde); gianduja → gianduja; guirlache → nut brittle; garrapiñados → candied nuts; frutas confitadas → candied fruit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "Se apelmazan con la humedad; envasado hermético con desecante si tu obrador es húmedo",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Moldeado · D46"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Barquillos y crujientes bañados",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Moldeado · B47"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "Pierden el crujiente mucho antes que la seguridad: se retiran por calidad",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Moldeado · D47"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "Chocolate acabado: NO congelar",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Moldeado · B48"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Al descongelar condensa, el agua disuelve el azúcar de la superficie y deja sugar bloom. Sólo el granel de ganache admite ≤ −18 °C 1-2 meses, descongelado 24 h en cámara y sin abrir",
+   "grupo": "G1",
+   "palabras": 34,
+   "donde": [
+    "02 · Moldeado · D48"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "ganache → ganache; rellenos → fillings",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "≤ −18 °C → 0 °F o menos; descongelar 24 h en la nevera (41 °F o menos) sin abrir",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "▸ Tareas diarias, semanales y mensuales del encargado/director.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Instrucciones · B5"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "▸ Incluye control de food cost, mermas y KPIs de producción.",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "materia prima → ingredients; food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "▸ Personaliza según el tamaño de tu operación.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "▸ Adapta los KPIs a tus objetivos mensuales.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Obligaciones del encargado:",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Instrucciones · B13"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0204",
+   "es": "▸ El registro de jornada se cierra y se valida CADA DÍA (obrador y tienda) y se archiva cada mes: es obligatorio desde el RD-ley 8/2019 y hay que conservarlo 4 años.",
+   "grupo": "G1",
+   "palabras": 33,
+   "donde": [
+    "03 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Registro de jornada US: la FLSA obliga a registrar las horas trabajadas del personal por horas (non-exempt) (29 CFR 516.2), obrador y tienda; fichajes 2 años y nóminas 3 (29 CFR 516.5-516.6; algunos estados piden más, p. ej. NY 6). Sin RD-ley 8/2019 ni «4 años»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0205",
+   "es": "▸ El bloque de fin de semana del «Semanal» existe porque en una chocolatería con tienda el sábado y el domingo son el pico de venta, y la planificación del lunes se hace con lo que allí se anota.",
+   "grupo": "G1",
+   "palabras": 38,
+   "donde": [
+    "03 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Semanal",
+     "en": "Weekly Tasks"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0208",
+   "es": "Primera hora (apertura)",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0209",
+   "es": "Revisar agenda: pedidos especiales, encargos, entregas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario · B6"
+   ],
+   "pistas": [
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Comprobar producción planificada vs stock actual",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0212",
+   "es": "Briefing con equipo: prioridades del día, encargos especiales",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario · B8"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Verificar temperaturas de obrador, cámaras y tienda",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "obrador → kitchen (chocolate kitchen / production kitchen)",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0215",
+   "es": "Revisar pedidos online recibidos overnight",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Durante el día",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0217",
+   "es": "Supervisar calidad de producción: templado, acabados, peso",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario · B14"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0219",
+   "es": "Control de mermas y chocolate descartado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario · B15"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Gestionar atención al cliente y consultas especiales",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Seguimiento de pedidos a proveedores pendientes",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0222",
+   "es": "Publicar contenido en RRSS: producto del día, proceso",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario · B18"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "Cierre del día",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "Revisar ventas del día vs objetivo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Verificar stock para producción de mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0227",
+   "es": "Anotar incidencias y notas para el día siguiente",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0228",
+   "es": "Cerrar y validar el registro diario de jornada de todo el equipo, obrador y tienda: es obligatorio (RD-ley 8/2019) y hay que conservarlo 4 años",
+   "grupo": "G1",
+   "palabras": 27,
+   "donde": [
+    "03 · Diario · B25"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "US: revisar y aprobar los fichajes del equipo (time-clock punches: entradas, salidas y pausas) en el POS o en la app de fichaje; obrador y tienda; sin RD-ley 8/2019 ni «4 años»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0229",
+   "es": "Confirmar equipo y horarios de mañana",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0231",
+   "es": "Lunes — Planificación",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "Planificar producción de la semana según demanda",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0233",
+   "es": "Revisar stock de coberturas, rellenos y packaging",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal · B7"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white",
+    "ganache → ganache; rellenos → fillings",
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "Lanzar pedidos a proveedores para la semana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0236",
+   "es": "Revisar pedidos especiales y encargos de la semana",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal · B9"
+   ],
+   "pistas": [
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Martes — Calidad",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0238",
+   "es": "Auditar temperaturas registradas de la semana anterior",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "Verificar fechas de caducidad de rellenos y ganaches",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal · B14"
+   ],
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "adaptar": "fechas US: lo TCS (ganache de nata fresca, rellenos con actividad de agua alta) lleva date marking de 7 días a 41 °F como máximo, contando el día de elaboración como día 1 (FDA Food Code 3-501.17); el resto, consumo preferente (best-by, criterio del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Revisar mermas acumuladas y causas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal · B15"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "Miércoles — Equipo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Revisar rendimiento individual: productividad, calidad",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Formación puntual: nueva técnica o producto",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "Ajustar turnos si hay picos de demanda previstos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0245",
+   "es": "Jueves — Comercial",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Revisar ventas por producto: tabletas, bombones, figuras",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal · B25"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "tableta → bar (chocolate bar)",
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0247",
+   "es": "Actualizar precios si hay cambios en materia prima",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal · B26"
+   ],
+   "pistas": [
+    "materia prima → ingredients; food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Planificar ofertas o promociones del fin de semana",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Viernes — Food Cost",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Semanal · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0250",
+   "es": "Calcular food cost semanal: materia prima / ventas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal · B31"
+   ],
+   "pistas": [
+    "materia prima → ingredients; food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0251",
+   "es": "Comparar food cost real vs objetivo (30-35%)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal · B32"
+   ],
+   "pistas": [
+    "materia prima → ingredients; food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0252",
+   "es": "Ajustar recetas o porciones si hay desviación",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Preparar resumen semanal para dirección",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal · B34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0254",
+   "es": "Sábado y domingo — Tienda a pleno",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal · A36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Reponer la vitrina antes de cada pico: media mañana y media tarde, sin esperar a que se vacíe",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "03 · Semanal · B38"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Revisar el stock de packaging de regalo: cajas, lazos y bolsas se agotan el sábado y no hay proveedor hasta el lunes",
+   "grupo": "G1",
+   "palabras": 22,
+   "donde": [
+    "03 · Semanal · B39"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Anotar las roturas de stock y qué se dejó de vender, para la planificación del lunes",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "03 · Semanal · B40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Inventario y finanzas",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Mensual · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Inventario completo: coberturas, frutos secos, licores, packaging",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual · B6"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white",
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons",
+    "licor → liqueur (nunca «liquor»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Calcular food cost mensual y comparar con objetivo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual · B7"
+   ],
+   "pistas": [
+    "materia prima → ingredients; food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Revisar facturas de proveedores y negociar si aplica",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Análisis de ventas por categoría: bombones, tabletas, figuras, regalos",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Mensual · B9"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "tableta → bar (chocolate bar)",
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0265",
+   "es": "Evaluación de equipo: feedback individual",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0266",
+   "es": "Planificar formación del mes siguiente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0267",
+   "es": "Revisar y actualizar procedimientos operativos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0269",
+   "es": "Producto y marketing",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Mensual · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Lanzar nuevo producto o sabor del mes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "Actualizar carta y etiquetado si hay cambios",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0272",
+   "es": "Planificar contenido RRSS del mes siguiente",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual · B22"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0273",
+   "es": "Revisar Google Reviews y responder pendientes",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual · B23"
+   ],
+   "adaptar": "Plataformas US: Google Business Profile y Yelp",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "▸ Checklists específicos por puesto de trabajo.",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "▸ Cada perfil tiene sus tareas claramente definidas.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "▸ Ideal para onboarding de nuevos empleados.",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "Perfiles incluidos:",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Instrucciones · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "▸ Maestro chocolatero / Obrador",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Instrucciones · B10"
+   ],
+   "pistas": [
+    "maestro chocolatero → chocolatier",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "▸ Dependiente de tienda",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "dependiente → sales associate"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "▸ Encargado de turno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "Maestro Chocolatero / Obrador",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Chocolatero · A1"
+   ],
+   "pistas": [
+    "maestro chocolatero → chocolatier",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "Producción diaria",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Chocolatero · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "Revisar orden de producción del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Chocolatero · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "Preparar y pesar ingredientes según fichas técnicas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Chocolatero · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Templar coberturas según tipo (negro/leche/blanco)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Chocolatero · B8"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Producir bombones según recetas del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Chocolatero · B9"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Producir tabletas y figuras según planificación",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Chocolatero · B10"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)",
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "Preparar ganaches y rellenos según ficha",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Chocolatero · B11"
+   ],
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0295",
+   "es": "Envasar y etiquetar producto terminado",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Chocolatero · B12"
+   ],
+   "adaptar": "Etiqueta US de lo que se envasa en la tienda (tabletas, cajas cerradas, bolsas): nombre del producto, ingredientes por peso, contenido neto (oz y g), alérgenos principales y nombre y lugar del negocio (FDA Food Code 3-602.11); el lote y la fecha de consumo preferente (best-by) son criterio del kit: en EE. UU. la fecha es voluntaria salvo en la fórmula infantil",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0296",
+   "es": "Registrar lotes de producción y cantidades",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Chocolatero · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0297",
+   "es": "Calidad y control",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Chocolatero · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0298",
+   "es": "Verificar templado: brillo, snap, contracción",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Chocolatero · B17"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0299",
+   "es": "Controlar pesos de bombones y tabletas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Chocolatero · B18"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0300",
+   "es": "Registrar temperaturas de proceso",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Chocolatero · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0301",
+   "es": "Registrar mermas y desperdicio",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Chocolatero · B20"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Limpieza de obrador",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Chocolatero · A22"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "Limpiar temperadora al finalizar cada uso",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Chocolatero · B24"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "Limpiar moldes y secar correctamente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Chocolatero · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "Limpiar mármol de trabajo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Chocolatero · B26"
+   ],
+   "pistas": [
+    "siembra → seeding; mármol → marble slab (tabling)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0306",
+   "es": "Dejar obrador ordenado para el turno siguiente",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Chocolatero · B27"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "Dependiente de Tienda",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Dependiente · A1"
+   ],
+   "pistas": [
+    "dependiente → sales associate"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "Apertura de tienda",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Dependiente · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "Montar vitrina con productos del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Dependiente · B6"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Verificar el etiquetado de cada referencia: precio, precio por kilo si se vende al peso, y los alérgenos declarados (leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos) más las trazas",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "04 · Dependiente · B7"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "cáscara → shell; sellar / tapa → cap (capping)",
+    "kg / kilo → lb; mm → in"
+   ],
+   "adaptar": "Vitrina US: cartel de cada bandeja con nombre y precio (y precio por libra si vendes al peso) y aviso por escrito de los alérgenos principales de lo que se vende sin envasar (FDA Food Code 2022 3-602.12(C), donde tu estado lo haya adoptado; buena práctica en todo caso). Alérgenos US: los 9 principales (FALCPA + FASTER Act): leche, huevo, frutos de cáscara (tree nuts), cacahuete, trigo (barquillos, galletas, crujientes), soja (también la lecitina), sésamo, pescado y crustáceos; los sulfitos no son uno de los 9 (si tu fruta confitada los lleva, déjalos en el cartel); en UK, los 14. Sin «cereales con gluten»: se dice «wheat». «Trazas» → «may contain» (contacto cruzado en líneas compartidas): en EE. UU. es voluntario y tiene que ser veraz",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Preparar zona de degustación",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Dependiente · B8"
+   ],
+   "pistas": [
+    "degustación → samples / tasting; maridajes → pairings"
+   ],
+   "adaptar": "Muestras (samples) con pinzas, palillo o cápsula de un solo uso; nunca a mano desnuda (FDA Food Code 3-301.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Activar TPV y comprobar fondo de caja",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente · B9"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Reponer packaging: bolsas, cajas, papel de seda",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente · B10"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Atención al cliente",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Dependiente · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Atender clientes: asesorar sobre productos y maridajes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente · B14"
+   ],
+   "pistas": [
+    "degustación → samples / tasting; maridajes → pairings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Preparar cajas de bombones personalizadas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Dependiente · B15"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "adaptar": "añade: con guantes o pinzas, nunca a mano desnuda (FDA Food Code 3-301.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Gestionar encargos y pedidos por adelantado: al CONFIRMAR el encargo, dejar por escrito alérgenos e intolerancias, unidades, fecha y hora de recogida, precio, señal cobrada y condiciones de cancelación",
+   "grupo": "G1",
+   "palabras": 29,
+   "donde": [
+    "04 · Dependiente · B16"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: señal / anticipo → deposit",
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "adaptar": "Señal → deposit; encargos → pre-orders / custom orders",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "Ofrecer degustación del producto destacado del día",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente · B17"
+   ],
+   "pistas": [
+    "degustación → samples / tasting; maridajes → pairings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Cobrar y emitir ticket/factura",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Dependiente · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0320",
+   "es": "Mantenimiento de tienda",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Dependiente · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0321",
+   "es": "Reponer vitrina conforme se venden productos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Dependiente · B22"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Mantener limpieza de mostradores y cristales",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Dependiente · B23"
+   ],
+   "adaptar": "Mostrador: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); cristales, con limpiacristales",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0323",
+   "es": "Vigilar la temperatura de la tienda (20-22 °C) y la de la vitrina (16-18 °C): por encima el bombón suda y pierde brillo — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 30,
+   "donde": [
+    "04 · Dependiente · B24"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "Tienda a 68–72 °F y vitrina a 60–64 °F; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0324",
+   "es": "Cuadrar caja y registrar ventas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Dependiente · B28"
+   ],
+   "pistas": [
+    "arqueo / cuadre de caja → cash count / reconcile"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Retirar productos de vitrina para conservación (la ganache de nata fresca y las trufas de nata, a la cámara de 0-4 °C)",
+   "grupo": "G1",
+   "palabras": 23,
+   "donde": [
+    "04 · Dependiente · B29"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "trufa → truffle; rocas → clusters",
+    "ganache → ganache; rellenos → fillings",
+    "vitrina → display case; escaparate → store window",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Conservación → cool room; la ganache de nata fresca y las trufas de nata son TCS salvo análisis de laboratorio (aw y pH): vitrina refrigerada o nevera (fridge) a 41 °F o menos, nunca la vitrina de 60–64 °F ni la cool room",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Limpiar mostradores, cristales y suelo de tienda",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0327",
+   "es": "Encargado de Turno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Encargado · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "Supervisión general",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0329",
+   "es": "Verificar apertura correcta (obrador + tienda)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado · B6"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0330",
+   "es": "Asignar tareas al equipo según prioridades",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0331",
+   "es": "Supervisar calidad de producción",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0332",
+   "es": "Gestionar pedidos urgentes de proveedores",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0333",
+   "es": "Resolver incidencias con clientes",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B10"
+   ],
+   "motivo": "corregida: una tienda dice «customers», no «guests» (EN de la cafetería)",
+   "base_en": "Resolve guest issues",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0334",
+   "es": "Control operativo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "Verificar stock mínimo de coberturas y packaging",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado · B14"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white",
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0336",
+   "es": "Supervisar temperaturas de cámaras y obrador",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "obrador → kitchen (chocolate kitchen / production kitchen)",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0337",
+   "es": "Control de mermas y desperdicio del turno",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado · B16"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0338",
+   "es": "Verificar cumplimiento de APPCC (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "04 · Encargado · B17"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → food safety (HACCP solo si lo exige tu estado)"
+   ],
+   "adaptar": "APPCC → seguridad alimentaria (food safety): registros de temperatura y limpieza; «Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0340",
+   "es": "Revisar producción completada vs planificada",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0341",
+   "es": "Dejar notas para el turno siguiente",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0342",
+   "es": "Supervisar cierre correcto de obrador y tienda",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado · B23"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "▸ Deep clean, mantenimiento de equipos, inventarios periódicos.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0347",
+   "es": "▸ Programa estas tareas en el calendario semanal/mensual.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0348",
+   "es": "▸ Marca ✓ cuando se complete cada tarea.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0349",
+   "es": "▸ Ajusta frecuencias según volumen de producción.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "▸ Añade tareas específicas de tu obrador.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "Más allá del mes:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Instrucciones · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0352",
+   "es": "▸ La hoja «Trimestral y Anual» recoge lo que se CONTRATA y se pide por escrito en una inspección: DDD, conductos de extracción, analíticas, carnés de manipulador, SAT de temperadora y cámaras, calibración de sondas y báscula, extintores, instalación de gas, RGSEAA, póliza y facturación.",
+   "grupo": "G2",
+   "palabras": 44,
+   "donde": [
+    "05 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Describe la lista US de la hoja «Quarterly & Annual»: control de plagas, extracción (NFPA 96 solo si se cocina con grasa bajo campana), análisis de actividad de agua de ganaches y rellenos, food handler cards y certified food protection manager, servicio técnico de la temperadora y del bombo (panning machine), frío (EPA 608), calibración de termómetros y báscula (legal-for-trade si vendes al peso), extintores (OSHA), gas, seguros, health permit (y licencia estatal de fabricación si la piden) y POS / sales tax. Sin DDD, BIE, legionela, RGSEAA ni facturación española",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0353",
+   "es": "▸ Anota en «Notas» el número de parte de cada revisión y la fecha de la siguiente; la columna «Cadencia» ya viene con la periodicidad legal o recomendada de cada una.",
+   "grupo": "G2",
+   "palabras": 30,
+   "donde": [
+    "05 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "«Cadencia» → \"Frequency\"; el nº de parte → el número del informe de servicio (service report #), en \"Notes\"; la cadencia es la habitual o la que pide la norma US de cada fila",
+   "cita_rotulos": [
+    {
+     "es": "Notas",
+     "en": "Notes"
+    },
+    {
+     "es": "Cadencia",
+     "en": "Frequency"
+    }
+   ],
+   "motivo": "adaptar",
+   "base_en": "▸ Write the report number of each inspection and the date of the next one in \"Notes\"; the \"Frequency\" column already shows the legal or recommended interval for each.",
+   "base_fuente": "catering"
+  },
+  {
+   "id": "c0354",
+   "es": "Tareas Semanales",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Semanal · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "Deep clean — Obrador",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Semanal · A4"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0356",
+   "es": "Limpieza profunda de temperadora: desmontar y limpiar",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B6"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0357",
+   "es": "Limpiar y desinfectar mármol de trabajo con producto alimentario",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Semanal · B7"
+   ],
+   "pistas": [
+    "siembra → seeding; mármol → marble slab (tabling)"
+   ],
+   "adaptar": "Mármol: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); y secar bien: el agua no puede tocar el chocolate",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0358",
+   "es": "Limpiar todos los moldes: verificar que no tengan restos",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Semanal · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0359",
+   "es": "Desinfectar superficies de envasado",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Semanal · B9"
+   ],
+   "adaptar": "Superficies de envasado: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0360",
+   "es": "Limpiar y organizar estanterías de obrador",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Semanal · B10"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0361",
+   "es": "Fregar suelo a fondo con desengrasante alimentario",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0362",
+   "es": "Deep clean — Tienda",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Semanal · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0363",
+   "es": "Limpiar cristales de vitrina interior y exterior",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B15"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0364",
+   "es": "Limpiar estanterías y expositores de tienda",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Semanal · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0365",
+   "es": "Limpiar escaparate",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Semanal · B17"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0366",
+   "es": "Desinfectar zona de degustación",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Semanal · B18"
+   ],
+   "pistas": [
+    "degustación → samples / tasting; maridajes → pairings"
+   ],
+   "adaptar": "Zona de degustación: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0367",
+   "es": "Inventario semanal",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Semanal · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "Contar stock de coberturas: negra, leche, blanca",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B22"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "Contar stock de frutos secos y frutas deshidratadas",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Semanal · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0370",
+   "es": "Contar stock de rellenos y ganaches preparados",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B24"
+   ],
+   "pistas": [
+    "ganache → ganache; rellenos → fillings"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0371",
+   "es": "Contar stock de packaging: cajas, bolsas, cintas, papel",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Semanal · B25"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0372",
+   "es": "Contar stock de consumibles: guantes, film, etiquetas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Anotar roturas de stock y generar pedido",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0374",
+   "es": "Mantenimiento de equipos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Semanal · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0375",
+   "es": "Verificar funcionamiento de temperadora",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Semanal · B31"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "Verificar y registrar las temperaturas de los equipos de frío: cámara de conservación 15-18 °C y nevera de rellenos 0-4 °C — anota las lecturas: ____ °C / ____ °C",
+   "grupo": "G2",
+   "palabras": 30,
+   "donde": [
+    "05 · Semanal · B32"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "ganache → ganache; rellenos → fillings",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge"
+   ],
+   "adaptar": "Cool room a 59–64 °F y fridge de rellenos a 41 °F o menos; coletilla «— log readings: ____ °F / ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0377",
+   "es": "Comprobar estado de moldes (rayados, deformados)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Semanal · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "Verificar báscula de precisión con peso patrón",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Semanal · B34"
+   ],
+   "adaptar": "Báscula de precisión (obrador) con pesa patrón; añade: la báscula de venta al peso tiene que ser legal para el comercio (legal-for-trade, NTEP) y la revisa y precinta la oficina de pesas y medidas de tu estado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "Tareas Mensuales",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Mensual · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "Mantenimiento profundo",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Mensual · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Mantenimiento profesional de temperadora si aplica",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mensual · B6"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "Limpieza de filtros de aire acondicionado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mensual · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "Revisión de instalación eléctrica y enchufes",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mensual · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "Calibración de termómetros y sondas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mensual · B9"
+   ],
+   "adaptar": "Termómetros y sondas: comprobación en agua con hielo (32 °F)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Verificar estado de extintores",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mensual · B10"
+   ],
+   "adaptar": "Inspección visual mensual (OSHA 1910.157(e)(2)): manómetro en verde, pasador y precinto, acceso libre, etiqueta firmada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Inventario mensual completo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mensual · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0387",
+   "es": "Inventario completo: coberturas por tipo y proveedor",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mensual · B14"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Inventario: frutos secos, pralinés, licores, extractos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mensual · B15"
+   ],
+   "pistas": [
+    "praliné → praline (sin tilde); gianduja → gianduja; guirlache → nut brittle; garrapiñados → candied nuts; frutas confitadas → candied fruit",
+    "licor → liqueur (nunca «liquor»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "Inventario: moldes, utillaje, herramientas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mensual · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0390",
+   "es": "Inventario: packaging completo (cajas, bolsas, lazos)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mensual · B17"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0391",
+   "es": "Comparar inventario real vs teórico: detectar desfases",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mensual · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0392",
+   "es": "APPCC y seguridad",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mensual · A20"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → food safety (HACCP solo si lo exige tu estado)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Revisar registros APPCC del mes: temperaturas, limpieza (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "05 · Mensual · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → food safety (HACCP solo si lo exige tu estado)"
+   ],
+   "adaptar": "APPCC → seguridad alimentaria (food safety): registros de temperatura y limpieza; «Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Verificar plan de control de plagas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mensual · B23"
+   ],
+   "adaptar": "Plan de control de plagas → el del operador con licencia (licensed pest control operator)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "Actualizar fichas técnicas si hay nuevos productos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mensual · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Revisar etiquetado: ingredientes, alérgenos, lotes",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mensual · B25"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Etiquetado: ingredientes, alérgenos (los 9 de EE. UU.) y lotes; la etiqueta de lo envasado en la tienda (FDA Food Code 3-602.11) y el aviso de alérgenos de la vitrina (3-602.12(C))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0407",
+   "es": "Revisar el plan de autocontrol de higiene y las fichas técnicas de producto: altas, bajas y cambios de proveedor del año",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "05 · Trimestral y Anual · B10"
+   ],
+   "adaptar": "Plan de autocontrol → tus procedimientos de seguridad alimentaria (food safety procedures); fichas técnicas → product specs y la tabla de alérgenos (allergen chart)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "Equipos, instalaciones y seguridad",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Trimestral y Anual · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Revisión de la temperadora y del bombo por el SAT: sondas, resistencias, juntas y desgaste del tornillo",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "05 · Trimestral y Anual · B14"
+   ],
+   "pistas": [
+    "temperadora → tempering machine (melter); templar → temper (tabling sobre mármol, seeding por siembra); punto de trabajo → working temperature",
+    "bombo → panning machine (panning)"
+   ],
+   "adaptar": "SAT → el servicio técnico del fabricante; bombo → panning machine; tornillo → auger",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0411",
+   "es": "Calibrar termómetros, sondas y báscula de precisión contra un patrón conocido y anotar la desviación",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "05 · Trimestral y Anual · B16"
+   ],
+   "adaptar": "Termómetros y sondas por el punto de hielo (32 °F) o contra uno de referencia; la báscula de precisión, con pesa patrón; añade: la báscula de venta al peso tiene que ser legal para el comercio (legal-for-trade, NTEP) y la revisa y precinta la oficina de pesas y medidas de tu estado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Archivar los registros de jornada del trimestre y anotar en «Notas» el nº de parte de cada revisión y la fecha de la siguiente",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "05 · Trimestral y Anual · B25"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "Archivar los fichajes (time records) del trimestre (FLSA, 29 CFR 516) y anotar en \"Notes\" el número del informe de servicio de cada revisión y la fecha de la siguiente",
+   "cita_rotulos": [
+    {
+     "es": "Notas",
+     "en": "Notes"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "▸ Planificación de campañas estacionales y eventos especiales.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "▸ Navidad, San Valentín, Pascua, Día de la Madre y más.",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Instrucciones · B6"
+   ],
+   "adaptar": "Holiday season (Christmas y Hanukkah), Valentine's Day, Easter, Mother's Day y más",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0427",
+   "es": "▸ Cada campaña tiene producción, packaging y marketing.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "▸ Ajusta fechas y productos a tu catálogo.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "▸ Añade ferias locales y eventos de tu zona.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0430",
+   "es": "Antes de cerrar una campaña:",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Instrucciones · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0431",
+   "es": "▸ Todo encargo —de particular o de empresa— se confirma POR ESCRITO con alérgenos e intolerancias, unidades, fecha y hora de entrega, precio, señal y condiciones de cancelación.",
+   "grupo": "G2",
+   "palabras": 27,
+   "donde": [
+    "06 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: señal / anticipo → deposit",
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "adaptar": "Señal → deposit",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0432",
+   "es": "▸ Publica la fecha límite de encargos de cada campaña antes de abrir la preventa: lo que revienta la última semana no es la producción, es el pedido que entra el día 22.",
+   "grupo": "G2",
+   "palabras": 32,
+   "donde": [
+    "06 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "adaptar": "El día 22 → el 22 de diciembre; añade: y la fecha límite de envíos (shipping cutoff) de tu transportista",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Campaña de Navidad (Nov-Dic)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · A1"
+   ],
+   "adaptar": "Holiday Season (Nov–Dec): Christmas, Hanukkah y regalos de empresa",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "Preparación (Octubre)",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Navidad · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0435",
+   "es": "Diseñar catálogo navideño: turrones, bombones, figuras",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B6"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "figuras → molded figures (huecas → hollow figures)",
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Sin turrones: bark (peppermint bark), bombones, figuras (Santa, árboles, adornos) y gelt de Hanukkah",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0436",
+   "es": "Pedir coberturas y materias primas extra",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B7"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0437",
+   "es": "Diseñar y pedir packaging navideño: cajas, lazos, tarjetas",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Navidad · B8"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0438",
+   "es": "Planificar producción extra: turnos, personal temporal",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "Lanzar preventa en web y RRSS",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B10"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "Fijar y publicar la FECHA LÍMITE de encargos de Navidad y los horarios de recogida del 24 y el 31 (en tienda, en la web y en RRSS)",
+   "grupo": "G2",
+   "palabras": 28,
+   "donde": [
+    "06 · Navidad · B11"
+   ],
+   "pistas": [
+    "encargos → pre-orders / custom orders; señal → deposit",
+    "RRSS → social media"
+   ],
+   "adaptar": "24 y 31 → Christmas Eve y New Year's Eve; añade la fecha límite de envíos (shipping cutoff) según tu transportista",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0441",
+   "es": "Producción navideña (Nov-Dic)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Navidad · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0442",
+   "es": "Producir turrones artesanales: praliné, guirlache, trufa",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B15"
+   ],
+   "pistas": [
+    "trufa → truffle; rocas → clusters",
+    "praliné → praline (sin tilde); gianduja → gianduja; guirlache → nut brittle; garrapiñados → candied nuts; frutas confitadas → candied fruit",
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Sustituye a los turrones: bark, toffee, brittle (el guirlache) y trufas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0443",
+   "es": "Producir figuras de chocolate: Papá Noel, árboles, bolas",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Navidad · B16"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "adaptar": "Papá Noel → Santa",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0444",
+   "es": "Producir bombones especiales navideños",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Navidad · B17"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0445",
+   "es": "Producir cestas y lotes corporativos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · B18"
+   ],
+   "adaptar": "Cestas y lotes corporativos → corporate gift boxes y baskets",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0446",
+   "es": "Control de calidad extra: cada lote verificado",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0447",
+   "es": "Tienda y marketing",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Navidad · A21",
+    "06 · Pascua · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Decorar tienda y escaparate con temática navideña",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · B23"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0449",
+   "es": "Montar expositor especial de regalos corporativos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Navidad · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0450",
+   "es": "Publicar catálogo navideño en RRSS y web",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Navidad · B25"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0451",
+   "es": "Gestionar los pedidos corporativos: al CONFIRMAR cada pedido, dejar por escrito alérgenos e intolerancias, unidades, fecha y lugar de entrega, precio unitario, señal y condiciones de cancelación",
+   "grupo": "G2",
+   "palabras": 27,
+   "donde": [
+    "06 · Navidad · B26"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: señal / anticipo → deposit",
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "adaptar": "Señal → deposit; lugar de entrega → dirección de entrega",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0452",
+   "es": "Campaña de San Valentín (Feb)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · San Valentín · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0453",
+   "es": "Preparación (Enero)",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · San Valentín · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0454",
+   "es": "Diseñar colección San Valentín: corazones, bombones premium",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B6"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0455",
+   "es": "Pedir moldes especiales si se necesitan",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0456",
+   "es": "Diseñar packaging romántico: cajas corazón, cintas rojas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B8"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0457",
+   "es": "Planificar promoción en RRSS: countdown, sorteos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B9"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0458",
+   "es": "Producción (1-14 Feb)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · San Valentín · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0459",
+   "es": "Producir bombones en forma de corazón",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B13"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0460",
+   "es": "Producir tabletas con mensaje grabado",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · San Valentín · B14"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0461",
+   "es": "Producir trufas y bombones premium edición limitada",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B15"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "trufa → truffle; rocas → clusters"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0462",
+   "es": "Preparar cajas surtidas de bombones para regalo",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B16"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0463",
+   "es": "Ventas y marketing",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · San Valentín · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0464",
+   "es": "Decorar tienda y vitrina con temática San Valentín",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · San Valentín · B20"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0465",
+   "es": "Ofrecer servicio de personalización: mensaje en tableta",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · San Valentín · B21"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0466",
+   "es": "Publicar contenido diario en RRSS: countdown",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · San Valentín · B22"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0467",
+   "es": "Gestionar los pedidos especiales y las entregas a domicilio: confirmar por escrito alérgenos, dirección, franja de entrega y quién recibe; en reparto propio, el producto viaja por debajo de 18 °C y nunca en el maletero al sol",
+   "grupo": "G2",
+   "palabras": 38,
+   "donde": [
+    "06 · San Valentín · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Por debajo de 18 °C → por debajo de 64 °F, y nunca en el maletero al sol; añade: en los envíos, caja aislada (insulated mailer) y cold packs cuando haga calor en el destino",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0468",
+   "es": "Campaña de Pascua (Mar-Abr)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Pascua · A1"
+   ],
+   "adaptar": "Easter (Mar–Apr)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0469",
+   "es": "Preparación (Febrero)",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Pascua · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0470",
+   "es": "Diseñar colección Pascua: huevos, figuras, monas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Pascua · B6"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)",
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Sin monas: huevos, conejos (bunnies) y cestas de Pascua (Easter baskets)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0471",
+   "es": "Pedir moldes de huevos y figuras",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Pascua · B7"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0472",
+   "es": "Diseñar packaging primaveral",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Pascua · B8"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0473",
+   "es": "Planificar producción de monas de chocolate si aplica",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Pascua · B9"
+   ],
+   "pistas": [
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Sustituye a las monas: cestas de Pascua (Easter baskets) por encargo, si las ofreces",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0474",
+   "es": "Producción de Pascua",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Pascua · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0475",
+   "es": "Producir huevos de chocolate: pequeños, medianos, grandes",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Pascua · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0476",
+   "es": "Producir figuras de Pascua: conejos, pollitos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Pascua · B14"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "adaptar": "Conejos y pollitos → bunnies y chicks",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0477",
+   "es": "Producir monas de chocolate decoradas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Pascua · B15"
+   ],
+   "pistas": [
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Sustituye a las monas: huevos grandes decorados y rellenos (filled eggs) o centros de mesa de chocolate",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0478",
+   "es": "Producir bombones primaverales",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Pascua · B16"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0479",
+   "es": "Envasar y etiquetar la colección de Pascua: denominación, peso neto, lote, consumo preferente y alérgenos declarados (leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos)",
+   "grupo": "G2",
+   "palabras": 29,
+   "donde": [
+    "06 · Pascua · B17"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "cáscara → shell; sellar / tapa → cap (capping)"
+   ],
+   "adaptar": "Etiqueta US de lo que se envasa en la tienda (tabletas, cajas cerradas, bolsas): nombre del producto, ingredientes por peso, contenido neto (oz y g), alérgenos principales y nombre y lugar del negocio (FDA Food Code 3-602.11); el lote y la fecha de consumo preferente (best-by) son criterio del kit: en EE. UU. la fecha es voluntaria salvo en la fórmula infantil. Alérgenos US: los 9 principales (FALCPA + FASTER Act): leche, huevo, frutos de cáscara (tree nuts), cacahuete, trigo (barquillos, galletas, crujientes), soja (también la lecitina), sésamo, pescado y crustáceos; los sulfitos no son uno de los 9 (si tu fruta confitada los lleva, déjalos en el cartel); en UK, los 14. Sin «cereales con gluten»: se dice «wheat»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0480",
+   "es": "Decorar tienda con temática primaveral/Pascua",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Pascua · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0481",
+   "es": "Montar escaparate con huevos y figuras",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Pascua · B22"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0482",
+   "es": "Publicar colección en RRSS con fotos de calidad",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Pascua · B23"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0483",
+   "es": "Organizar taller de decoración de huevos si aplica",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Pascua · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0490",
+   "es": "▸ Por zona, por turno y por perfil.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0491",
+   "es": "▸ Ideal para tareas específicas de tu negocio.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0492",
+   "es": "▸ Escribe tus tareas en las filas vacías.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0493",
+   "es": "▸ Usa los mismos códigos de zona que en las otras plantillas.",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0525",
+   "es": "Apertura del Negocio — Chocolatería / Bombonería",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Apertura del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "contexto: Ice Cream",
+   "base_en": "Ice Cream Shop Opening Checklist",
+   "base_fuente": "icecream"
+  },
+  {
+   "id": "c0536",
+   "es": "Montar la señalización exterior y el cartel de encargos por adelantado, y comprobar que al escaparate no le da el sol directo: el chocolate expuesto se funde y pierde el brillo",
+   "grupo": "G2",
+   "palabras": 31,
+   "donde": [
+    "08 · Apertura del Negocio · B9"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "fat bloom / sugar bloom; snap; brillo → shine (gloss)",
+    "vitrina → display case; escaparate → store window",
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0539",
+   "es": "Encender las vitrinas temperadas de bombones y tabletas nada más entrar: tardan en bajar y el género no se monta hasta que estén en rango",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "08 · Apertura del Negocio · B11"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "tableta → bar (chocolate bar)",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "Vitrinas temperadas → climate-controlled display cases",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0541",
+   "es": "Revisar los encargos comprometidos para hoy: unidades, hora de recogida y quién los prepara, y dejar preparadas las cajas de regalo y las cintas de los que se recojan por la mañana",
+   "grupo": "G2",
+   "palabras": 32,
+   "donde": [
+    "08 · Apertura del Negocio · B13"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons",
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0546",
+   "es": "Revisar el estado del mobiliario de tienda: mostrador, estanterías y escaparate sin desperfectos, sin bombillas fundidas y sin cristales rayados",
+   "grupo": "G2",
+   "palabras": 20,
+   "donde": [
+    "08 · Apertura del Negocio · B16"
+   ],
+   "pistas": [
+    "vitrina → display case; escaparate → store window"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0548",
+   "es": "Montar terraza si aplica (mesas, sillas, sombrillas/estufas)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Apertura del Negocio · B17"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "terraza → patio"
+   ],
+   "adaptar": "Terraza → patio, si tienes, con el permiso de la ciudad si lo pide (mesas, sillas, sombrillas o estufas de exterior / patio heaters)",
+   "motivo": "adaptar",
+   "base_en": "Set up the patio if applicable (tables, chairs, umbrellas/patio heaters)",
+   "base_fuente": "icecream"
+  },
+  {
+   "id": "c0550",
+   "es": "Comprobar antes de abrir que ninguna bandeja de la vitrina se queda sin su etiqueta de precio (y sin el precio por kilo, si se vende al peso) ni sin sus alérgenos a la vista, y que hay repuesto en cámara para reponer durante el día",
+   "grupo": "G2",
+   "palabras": 46,
+   "donde": [
+    "08 · Apertura del Negocio · B18"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "vitrina → display case; escaparate → store window",
+    "cámara de conservación → cool room (59–64 °F); nevera de rellenos → fridge",
+    "kg / kilo → lb; mm → in"
+   ],
+   "adaptar": "Precio por kilo → precio por libra; los alérgenos a la vista, por escrito (FDA Food Code 2022 3-602.12(C), donde se haya adoptado); repuesto en la cool room",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0552",
+   "es": "Comprobar que las vitrinas temperadas han alcanzado 16-18 °C y menos del 55 % de humedad antes de montar el género — anota la lectura: ____ °C",
+   "grupo": "G2",
+   "palabras": 26,
+   "donde": [
+    "08 · Apertura del Negocio · B20"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "Vitrinas a 60–64 °F y menos del 55 % de humedad; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0553",
+   "es": "Verificar la temperatura y la humedad del obrador: objetivo 18-20 °C y 50-60 % — anota la lectura: ____ °C",
+   "grupo": "G2",
+   "palabras": 20,
+   "donde": [
+    "08 · Apertura del Negocio · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Obrador a 64–68 °F y 50–60 % de humedad; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0555",
+   "es": "Cierre del Negocio — Chocolatería / Bombonería",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Cierre del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)",
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "contexto: Ice Cream",
+   "base_en": "Ice Cream Shop Closing Checklist",
+   "base_fuente": "icecream"
+  },
+  {
+   "id": "c0597",
+   "es": "Encender la báscula de mostrador, comprobar la tara de bandejas y estuches y verificarla con un peso patrón (venta al peso)",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "09 · Apertura de Caja · B9"
+   ],
+   "adaptar": "Báscula de mostrador: tara de bandejas y cajas y comprobación con pesa patrón; añade: la báscula de venta al peso tiene que ser legal para el comercio (legal-for-trade, NTEP) y la revisa y precinta la oficina de pesas y medidas de tu estado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0598",
+   "es": "Comprobar que el precio por kilo de cada referencia a granel coincide con el del TPV y con el cartel de la vitrina",
+   "grupo": "G2",
+   "palabras": 23,
+   "donde": [
+    "09 · Apertura de Caja · B10"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "vitrina → display case; escaparate → store window",
+    "TPV / datáfono → POS / card terminal",
+    "kg / kilo → lb; mm → in"
+   ],
+   "adaptar": "Precio por kilo → precio por libra (per lb) de cada referencia al peso, el mismo en el POS y en el cartel de la vitrina",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0619",
+   "es": "Cuadrar la venta al peso: kilos registrados en el TPV frente a lo descontado de las bandejas del día, y anotar la diferencia",
+   "grupo": "G2",
+   "palabras": 23,
+   "donde": [
+    "09 · Cierre de Caja · B14"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal",
+    "arqueo / cuadre de caja → cash count / reconcile",
+    "kg / kilo → lb; mm → in"
+   ],
+   "adaptar": "Kilos → libras (lb) registradas en el POS frente a lo que falta de las bandejas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0620",
+   "es": "Registrar las señales cobradas por encargos y la lista de encargos pendientes de recoger (no son venta del día)",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "09 · Cierre de Caja · B15"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "adaptar": "Señales → deposits de los encargos (pre-orders); no son venta del día",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0675",
+   "es": "▸ Reunión de 5 minutos al inicio del turno.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0676",
+   "es": "▸ Producción del día, pedidos especiales, equipo, promociones.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0677",
+   "es": "▸ Imprime y rellena cada mañana con el equipo.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0678",
+   "es": "▸ Las celdas verdes son editables.",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0679",
+   "es": "▸ Adapta las secciones a tu operación.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0680",
+   "es": "Briefing Diario de Chocolatería",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing · A1"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0682",
+   "es": "Productos a producir hoy: ___________________________",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0683",
+   "es": "Cantidad de bombones planificada: _______ unidades",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing · B7"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0684",
+   "es": "Cantidad de tabletas planificada: _______ unidades",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing · B8"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0685",
+   "es": "Figuras/piezas especiales: ___________________________",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing · B9"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0686",
+   "es": "Coberturas necesarias: negra ___ kg / leche ___ kg / blanca ___ kg",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B01 · Briefing · B10"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white",
+    "kg / kilo → lb; mm → in"
+   ],
+   "adaptar": "kg → lb (cobertura = couverture: dark / milk / white)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0687",
+   "es": "Temperatura y humedad del obrador al arrancar: ____ °C / ____ % (objetivo 18-20 °C y 50-60 %)",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "B01 · Briefing · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Obrador: ____ °F / ____ % (objetivo 64–68 °F y 50–60 %)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0688",
+   "es": "Pedidos especiales",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0689",
+   "es": "Pedido 1: _____________ — Entrega: ___/___",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0690",
+   "es": "Pedido 2: _____________ — Entrega: ___/___",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0691",
+   "es": "Pedido 3: _____________ — Entrega: ___/___",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0692",
+   "es": "Pedidos online pendientes: ___________________________",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0693",
+   "es": "Equipo del turno",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0694",
+   "es": "Obrador: ___________________________",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing · B22"
+   ],
+   "pistas": [
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0695",
+   "es": "Tienda: ___________________________",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0696",
+   "es": "Encargado: ___________________________",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing · B24"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0697",
+   "es": "Ausencias / cambios: ___________________________",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0698",
+   "es": "Notas y promociones",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing · A27"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0699",
+   "es": "Producto destacado del día: ___________________________",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0700",
+   "es": "Promoción activa: ___________________________",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0701",
+   "es": "Eventos / visitas especiales: ___________________________",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0702",
+   "es": "Incidencias del turno anterior: ___________________________",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing · B32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0706",
+   "es": "▸ Un mes por fila con las 12 campañas y fechas señaladas del año chocolatero español.",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "B02 · Instrucciones · B5"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "maestro chocolatero → chocolatier"
+   ],
+   "adaptar": "Año chocolatero de EE. UU.: Valentine's Day, Easter, Mother's Day (2.º domingo de mayo), Father's Day (3.er domingo de junio), Halloween, Thanksgiving (4.º jueves de noviembre) y las fiestas de diciembre (Christmas y Hanukkah). Sin fechas españolas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0707",
+   "es": "▸ Planifica producción, packaging y marketing con antelación.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "cajas regalo → gift boxes; papel de seda → tissue paper; cintas / lazos → ribbons"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0708",
+   "es": "▸ Adapta las fechas a tu zona y mercado.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B02 · Instrucciones · B7"
+   ],
+   "adaptar": "Añade la nota UK: Mothering Sunday (marzo), bank holidays y Boxing Day",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0709",
+   "es": "Calendario Anual — Chocolatería",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Chocolatería»; chocolatería → chocolate shop (chocolatier si se habla del oficio; chocolate store en el 08)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0715",
+   "es": "Reyes (6): liquidar turrón y figuras de Navidad · rebajas post-Navidad · lanzar la colección de invierno · planificar San Valentín",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "B02 · Calendario · B5"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)",
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Mes EN: «January». Sustituye a Reyes (6 de enero: no es fecha comercial en EE. UU.). Liquidar el stock de las fiestas (rebajas de enero), lanzar la colección de invierno, y preparar Valentine's Day: diseño, moldes y packaging; publicar la fecha límite de encargos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0719",
+   "es": "San Valentín (14): corazones y edición limitada · fecha límite de encargos el día 10 · entregas exprés los días 13 y 14",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "B02 · Calendario · B6"
+   ],
+   "pistas": [
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "adaptar": "Mes EN: «February». Valentine's Day (14 de febrero), el gran pico del año: corazones y edición limitada; fecha límite de encargos el día 10 y entregas exprés el 13 y el 14; los envíos, con la fecha límite del transportista (shipping cutoff)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0723",
+   "es": "Día del Padre (19) · preparación de Pascua (fecha móvil) · talleres infantiles de Semana Santa",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "B02 · Calendario · B7"
+   ],
+   "adaptar": "Mes EN: «March». Sustituye al Día del Padre (en EE. UU. va en junio, fila 10). St. Patrick's Day (17 de marzo): bombones de menta y en verde; preparar Easter (fecha variable, marzo o abril): huevos y conejos (bunnies); talleres infantiles",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0726",
+   "es": "Semana Santa y Pascua: monas y huevos · arrancan las COMUNIONES (abril-junio): detalles de mesa, figuras y cajas personalizadas",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "B02 · Calendario · B8"
+   ],
+   "pistas": [
+    "figuras → molded figures (huecas → hollow figures)",
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Mes EN: «April». Easter (fecha variable): huevos, conejos y cestas de Pascua (Easter baskets) por encargo. Sustituye a las comuniones: bodas y baby showers de primavera (detalles para invitados: favors) y cajas personalizadas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0729",
+   "es": "Día de la Madre (1.er domingo) · pico de COMUNIONES · edición regalo premium",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario · B9"
+   ],
+   "adaptar": "Mes EN: «May». Mother's Day (2.º domingo de mayo, no el 1.º como en España): cajas premium por encargo, encargos cerrados 2 weeks out; Teacher Appreciation Week (1.ª semana completa de mayo): cajas pequeñas de regalo; graduaciones (mayo-junio): regalos y cajas personalizadas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0732",
+   "es": "Últimas comuniones · inicio del verano: adaptar catálogo (menos ganache fresca, más tableta y producto estable)",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "B02 · Calendario · B10"
+   ],
+   "pistas": [
+    "tableta → bar (chocolate bar)",
+    "ganache → ganache; rellenos → fillings",
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Mes EN: «June». Father's Day (3.er domingo de junio); temporada de bodas (favors) y graduaciones; empieza el verano: adaptar el catálogo (menos ganache fresca, más tableta y producto estable) y preparar los envíos con calor (caja aislada y cold packs)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0735",
+   "es": "Temporada turística: packs souvenir y colaboraciones locales · vigilar a diario la temperatura de tienda y vitrina",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "vitrina → display case; escaparate → store window"
+   ],
+   "adaptar": "Mes EN: «July». Verano: packs souvenir y colaboraciones locales si tu zona tiene turismo; 4 de julio (festivo federal): decide el horario; envíos con calor: caja aislada (insulated mailer) y cold packs, y enviar de lunes a miércoles para que no pase el fin de semana en un almacén; vigilar a diario la temperatura de tienda y vitrina",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0738",
+   "es": "Asunción (15): festivo nacional, la tienda abre para el turista aunque el obrador pare · mantenimiento profundo · vacaciones escalonadas · cerrar el pedido de coberturas de Navidad",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "B02 · Calendario · B12"
+   ],
+   "pistas": [
+    "cobertura → couverture (callets / wafers); negra / con leche / blanca → dark / milk / white",
+    "obrador → kitchen (chocolate kitchen / production kitchen)"
+   ],
+   "adaptar": "Mes EN: «August». Sustituye a la Asunción (el 15 de agosto no es festivo en EE. UU.). Verano bajo: mantenimiento profundo, vacaciones escalonadas y cerrar el pedido de cobertura (couverture) para el último trimestre; vuelta al cole (mediados-finales de agosto)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0742",
+   "es": "Vuelta a la rutina · colección de otoño · ferias gastronómicas · abrir la agenda de pedidos corporativos de Navidad",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "B02 · Calendario · B13"
+   ],
+   "adaptar": "Mes EN: «September». Labor Day (1.er lunes de septiembre); vuelta a la rutina; colección de otoño; ferias y festivales gastronómicos; abrir la agenda de regalos de empresa (corporate gifting) del último trimestre: catálogo y precios por volumen",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0745",
+   "es": "Halloween (31): figuras y bombones de temporada · producción navideña a pleno · publicar el catálogo de Navidad",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario · B14"
+   ],
+   "pistas": [
+    "bombón → bonbon (molded bonbon); cajas de bombones surtidos → assorted bonbon boxes",
+    "figuras → molded figures (huecas → hollow figures)"
+   ],
+   "adaptar": "Mes EN: «October». Halloween (31 de octubre): figuras y bombones de temporada; Sweetest Day (3.er sábado de octubre, sobre todo en el Medio Oeste) y National Chocolate Day (28 de octubre, fecha comercial): campaña en redes; producción de las fiestas (holidays) a pleno y publicar el catálogo de fiestas y el de regalos de empresa",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0748",
+   "es": "Todos los Santos (1): panellets y huesos de santo bañados · Black Friday (último viernes) · preventa de Navidad · turrones y cestas",
+   "grupo": "G2",
+   "palabras": 20,
+   "donde": [
+    "B02 · Calendario · B15"
+   ],
+   "pistas": [
+    "sin turrón, monas, panellets, comuniones ni Reyes: su equivalente US (bark / toffee, Easter baskets, Thanksgiving, favors de bodas)"
+   ],
+   "adaptar": "Mes EN: «November». Sustituye a Todos los Santos (sin panellets ni huesos de santo). Thanksgiving (4.º jueves de noviembre): regalos para el anfitrión (host gifts) y centros de mesa de chocolate; Black Friday y Small Business Saturday (el sábado después de Thanksgiving); preventa de las fiestas; regalos de empresa",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0751",
+   "es": "NAVIDAD, máxima producción · puente de la Constitución y la Inmaculada (6-8): fin de semana largo de máxima venta en tienda · fecha límite de encargos y horarios especiales del 24 y el 31",
+   "grupo": "G2",
+   "palabras": 33,
+   "donde": [
+    "B02 · Calendario · B16"
+   ],
+   "pistas": [
+    "encargos → pre-orders / custom orders; señal → deposit"
+   ],
+   "adaptar": "Mes EN: «December». Fiestas (holidays), máxima producción: Christmas y Hanukkah (fecha variable: gelt de chocolate); fecha límite de encargos y de envíos (shipping cutoff del transportista) y horarios especiales del 24 y el 31 (Christmas Eve y New Year's Eve). Sin turrones ni el puente de la Constitución",
+   "motivo": "nueva"
+  }
+ ]
+}

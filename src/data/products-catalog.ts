@@ -205,11 +205,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-pasteleria',
     url: '/kit-tareas-pasteleria',
     price: '€12',
-    name: { es: 'Tareas: Pastelería / Obrador', en: 'Tasks: Pastry Shop / Bakery' },
+    name: { es: 'Tareas: Pastelería / Obrador', en: 'Pastry Shop Checklists Kit Pro' },
     description: {
       es: 'Producción, conservación, vitrina, exposición.',
-      en: 'Production, storage, display case, and merchandising.',
+      en: 'Pastry shop checklists for the kitchen and the bakery case, production stations, the manager, duties by role, cleaning, holidays and celebration cakes, plus a production schedule and waste log, cake order form, bakery allergen chart and food temperature log.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `pastry-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/pastry-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-bar': {
     id: 'kit-tareas-bar',
@@ -251,21 +254,27 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-heladeria',
     url: '/kit-tareas-heladeria',
     price: '€12',
-    name: { es: 'Tareas: Heladería', en: 'Tasks: Ice Cream Shop' },
+    name: { es: 'Tareas: Heladería', en: 'Ice Cream Shop Checklists Kit Pro' },
     description: {
       es: 'Obrador, vitrina, mantecadora, exposición.',
-      en: 'Production, display case, batch freezer, and merchandising.',
+      en: 'Ice cream shop checklists for opening and closing, production (pasteurizing, aging and batch freezing), the manager, duties by role, cleaning, peak season and ice cream catering, and the cash drawer: 298 tasks already written.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `ice-cream-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/ice-cream-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-chocolateria': {
     id: 'kit-tareas-chocolateria',
     url: '/kit-tareas-chocolateria',
     price: '€12',
-    name: { es: 'Tareas: Chocolatería', en: 'Tasks: Chocolate Shop' },
+    name: { es: 'Tareas: Chocolatería', en: 'Chocolate Shop Checklists Kit Pro' },
     description: {
       es: 'Temperado, moldeado, ensamble, packaging.',
-      en: 'Tempering, molding, assembly, and packaging.',
+      en: 'Chocolate shop checklists for opening and closing, tempering and molding, the manager, duties by role, cleaning and inventory, seasonal campaigns from the holidays to Easter, and the cash drawer with sales by weight: 338 tasks already written.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `chocolate-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/chocolate-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-restaurante-creativo': {
     id: 'kit-tareas-restaurante-creativo',
@@ -527,21 +536,27 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-paellero-eventos',
     url: '/plan-negocio-paellero-eventos',
     price: '€45',
-    name: { es: 'Plan de Negocio: Paellero para Eventos', en: 'Business Plan: Paella Catering' },
+    name: { es: 'Plan de Negocio: Paellero para Eventos', en: 'Paella Catering Business Plan Kit' },
     description: {
       es: 'Paella para eventos: plan de negocio y kit con 11 entregables.',
-      en: 'Paella for events: business plan and kit with 11 deliverables.',
+      en: 'Word business plan, Excel financial projections, pricing calculator and startup checklist.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `paella-catering-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/paella-catering-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-parrillero-asador-eventos': {
     id: 'plan-negocio-parrillero-asador-eventos',
     url: '/plan-negocio-parrillero-asador-eventos',
     price: '€45',
-    name: { es: 'Plan de Negocio: Parrillero para Eventos', en: 'Business Plan: Grill Catering' },
+    name: { es: 'Plan de Negocio: Parrillero para Eventos', en: 'BBQ Catering Business Plan Kit' },
     description: {
       es: 'Asador y parrilla para eventos, con 11 entregables.',
-      en: 'Grill and barbecue catering for events, with 11 deliverables.',
+      en: 'Word business plan, Excel financial projections, pricing calculator and startup checklist.',
     },
+    // Tienda EN (24-oct-2026): producto propio, `bbq-catering-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/bbq-catering-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-cocteleria-eventos': {
     id: 'plan-negocio-cocteleria-eventos',

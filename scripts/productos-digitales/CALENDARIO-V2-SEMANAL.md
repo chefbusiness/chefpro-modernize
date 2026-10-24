@@ -694,3 +694,29 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   Bar **14-dic** `32c61f17` · Coffee Shop **19-dic** `ff22235e` → routine `trig_01WXGbQnAuFnc2A9X45imtje` (20-nov 15:00Z) ·
   Catering **4-ene** `07edb170` · Pizza Shop **9-ene** `31c061de` · Burger Joint **14-ene** `3a412ac0` · Ghost Kitchen **19-ene** `b1f582a8`
   → routine `trig_019bxdctG1zV4XcVjbHTzCdu` (20-dic 15:00Z). Todos a las 14:00Z. **Siguiente hueco EN: 24-ene 14:00Z.**
+
+### ▶️ 2026-10-24 (Claude Code en el Mac + VPS) — **Ice Cream Shop Checklists Kit Pro (EN, $19)** — listo a falta del Payment Link
+
+- Elegido por demanda US (DataForSEO, 24-oct): ice cream shop business plan 320 · how to open an ice cream shop 170 · how to start
+  an ice cream shop 90. Descartados: Food Truck Checklists (el kit ES es v1.1 con otro molde), «How to Open a Restaurant» (880) y
+  «How to Start a Ghost Kitchen» (210), que dependen de guías ES aún en v1.1; «taco truck business plan» 9.900 es la misma serie que
+  «food truck business plan» (Google la agrupa; la SERP es genérica de food truck).
+- Séptimo hermano del circuito `checklists-kit/` (`--kit icecream`, molde mixto: 01-07 + bonus como el catering, 08-09 como el base).
+  PR #156 draft. F1 0,43 M · traducción 0,17 M · F2 0,21 M · F3 0,39 M · revisión 0,22 M · ronda 1 0,36 M ≈ **1,8 M** (S, techo 2,5 M).
+- La revisión cazó una **errata de seguridad en el ES LIVE** (heladería 02 «Pasteurización»: grasas y yemas DESPUÉS de pasteurizar):
+  parcheada en el mismo PR con otras dos (mantecadora en vacío, cilindro), sin cambio de versión; también en `generate-tareas-heladeria.py`.
+- Correo EN: hueco **24-ene 14:00Z** (borrador + routine el 25-dic, Resend no programa a > 30 días). Siguiente hueco EN: 29-ene.
+
+### ▶️ 2026-10-24 (tarde-noche, Claude Code en el Mac + VPS, John fuera) — **Lote EN de 5: 4 productos más listos a falta del Payment Link**
+
+- John: «avances con otras traducciones, tres o cuatro productos más. Cuando tengas cinco productos terminados y yo esté de vuelta
+  en el ordenador, hacemos la configuración en Stripe». Lista para John: `PAYMENT_LINKS_PENDIENTES_JOHN.md` (en main).
+- **#157 Chocolate Shop + Pastry Shop Checklists Kit Pro ($19 cada uno)**: hermanos 8 y 9 de `checklists-kit/` (`--kit chocolate`,
+  11 xlsx, molde híbrido; `--kit pastry`, 15 xlsx con libros propios 10-13, molde base). ≈ 1,2 M y ≈ 1,75 M + F3 conjunta 0,65 M.
+  🔴 Parche de seguridad del ES LIVE de chocolatería (ganache de nata fresca en frío y con fecha de caducidad, etiqueta con alérgenos,
+  síntomas = no entra en obrador) y de maquetación del ES de pastelería (09). Handoff `SESSION_HANDOFF_2026-10-24-chocolate-pastry-checklists-en.md`.
+- **#158 BBQ Catering Business Plan Kit ($39)** desde el parrillero 2.2 (`business-plans-en-6/`, conjunto `bbq`) ≈ 2,8 M y
+  **#159 Paella Catering Business Plan Kit ($39)** desde el paellero 2.2 (`business-plans-en-7/`, conjunto `pael`, hermano del `bbq`)
+  ≈ 2,4 M. Handoff `SESSION_HANDOFF_2026-10-24-bbq-paella-catering-plans-en.md`.
+- PR apilados 156 → 157 → 158 → 159. Correos EN previstos (14:00Z): 24-ene Ice Cream · 29-ene Chocolate · 3-feb Pastry · 8-feb BBQ ·
+  13-feb Paella. **Siguiente hueco EN: 18-feb.** Tienda EN tras el lote: 27 productos.

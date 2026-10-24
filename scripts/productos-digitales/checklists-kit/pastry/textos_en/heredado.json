@@ -1,0 +1,379 @@
+{
+ "c0005": {
+  "en": "How to use this template:",
+  "origen": "c0005",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0006": {
+  "en": "▸ Print the checklist for the right shift every day",
+  "origen": "c0006",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0009": {
+  "en": "Customization:",
+  "origen": "c0009",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0010": {
+  "en": "▸ Green cells are editable — adjust who is assigned and the times",
+  "origen": "c0010",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0016": {
+  "en": "Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift lead: _________________________",
+  "origen": "c0828",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0085": {
+  "en": "Set the alarm and lock up",
+  "origen": "c0191",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0227": {
+  "en": "▸ Daily: what to check every day",
+  "origen": "c0190",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0229": {
+  "en": "▸ Monthly: periodic reviews",
+  "origen": "c0192",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0232": {
+  "en": "Manager Daily Checklist",
+  "origen": "c0197",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0237": {
+  "en": "Check team attendance and cover call-outs",
+  "origen": "c0201",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0239": {
+  "en": "Confirm today's supplier deliveries",
+  "origen": "c0203",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0248": {
+  "en": "  End of Day",
+  "origen": "c0210",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0254": {
+  "en": "Manager Weekly Checklist",
+  "origen": "c0346",
+  "via": "exacta"
+ },
+ "c0260": {
+  "en": "  Tuesday — Team",
+  "origen": "c0225",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0261": {
+  "en": "Review the week's employee schedule",
+  "origen": "c0226",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0264": {
+  "en": "  Wednesday — Quality",
+  "origen": "c0229",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0279": {
+  "en": "Manager Monthly Checklist",
+  "origen": "c0353",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0286": {
+  "en": "  Maintenance",
+  "origen": "c0252",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0292": {
+  "en": "Calibrate thermometers and probes (ice-point method, 32 °F)",
+  "origen": "c0259",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0315": {
+  "en": "Checklists for each job role.",
+  "origen": "c0270",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0316": {
+  "en": "▸ Each tab = one job",
+  "origen": "c0271",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0317": {
+  "en": "▸ Perfect for onboarding new staff",
+  "origen": "c0272",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0390": {
+  "en": "▸ Deep cleaning by zone",
+  "origen": "c0340",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0391": {
+  "en": "▸ Equipment maintenance",
+  "origen": "c0341",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0422": {
+  "en": "Monthly Equipment Maintenance",
+  "origen": "c0664",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0432": {
+  "en": "Check the walk-in door gaskets",
+  "origen": "c0387",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0440": {
+  "en": "Weekly Inventory & Stock Control",
+  "origen": "c0389",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0539": {
+  "en": "  Planning",
+  "origen": "c0502",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0564": {
+  "en": "  Prep",
+  "origen": "c0155",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c0646": {
+  "en": "Blank Template — By Time of Day",
+  "origen": "c0827",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0657": {
+  "en": "Blank Template — By Role",
+  "origen": "c0841",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0680": {
+  "en": "Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es",
+  "origen": "c0026",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0753": {
+  "en": "Contact: info@aichef.pro",
+  "origen": "c0027",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0754": {
+  "en": "Cash Drawer Opening Checklist",
+  "origen": "c0918",
+  "via": "sufijo",
+  "fuente": "cafe"
+ },
+ "c0755": {
+  "en": "Date: ____/____/________",
+  "origen": "c0859",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0756": {
+  "en": "Manager: _________________________",
+  "origen": "c0919",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0758": {
+  "en": "Verify yesterday's starting bank",
+  "origen": "c0920",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0759": {
+  "en": "Count the opening starting bank",
+  "origen": "c0922",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0761": {
+  "en": "Check there is enough change (coins, small bills)",
+  "origen": "c0924",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0764": {
+  "en": "Check the receipt paper roll",
+  "origen": "c0927",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0766": {
+  "en": "Check the payment gateway connection",
+  "origen": "c0929",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0767": {
+  "en": "Note issues from the previous shift",
+  "origen": "c0930",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0768": {
+  "en": "Opening manager sign-off",
+  "origen": "c0931",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0770": {
+  "en": "Deducted from cash on the \"Cash Drawer Closing\" sheet",
+  "origen": "c0933",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0771": {
+  "en": "Manager signature: _________________________     Time: ________",
+  "origen": "c0934",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0772": {
+  "en": "Cash Drawer Closing Checklist",
+  "origen": "c0935",
+  "via": "sufijo",
+  "fuente": "cafe"
+ },
+ "c0774": {
+  "en": "Cash count by denomination (see table below)",
+  "origen": "c0937",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0775": {
+  "en": "Calculate total cash",
+  "origen": "c0938",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0780": {
+  "en": "Log the day's refunds",
+  "origen": "c0943",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0781": {
+  "en": "Log the day's voids",
+  "origen": "c0944",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0782": {
+  "en": "Set aside tomorrow's starting bank",
+  "origen": "c0945",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0783": {
+  "en": "Prepare the bank deposit / put it in the safe",
+  "origen": "c0946",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0784": {
+  "en": "Closing manager sign-off",
+  "origen": "c0947",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0817": {
+  "en": "Invalid quantity",
+  "origen": "c0981",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0819": {
+  "en": "Monthly Cash Log",
+  "origen": "c0983",
+  "via": "sufijo",
+  "fuente": "cafe"
+ },
+ "c0820": {
+  "en": "Month: ________________     Year: ________",
+  "origen": "c0984",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0821": {
+  "en": "Manager: _________________________",
+  "origen": "c0985",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c1252": {
+  "en": "Template for the daily team meeting before opening.",
+  "origen": "c0735",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c1257": {
+  "en": "Pre-Shift Meeting",
+  "origen": "c0739",
+  "via": "sufijo",
+  "fuente": "bar"
+ },
+ "c1273": {
+  "en": "  Shift Team",
+  "origen": "c0751",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c1276": {
+  "en": "Special hours today",
+  "origen": "c0754",
+  "via": "exacta",
+  "fuente": "bar"
+ },
+ "c1285": {
+  "en": "Annual Calendar of Key Dates",
+  "origen": "c0762",
+  "via": "sufijo",
+  "fuente": "bar"
+ },
+ "c1345": {
+  "en": "ADD YOUR LOCAL DATES",
+  "origen": "c0834",
+  "via": "exacta",
+  "fuente": "bar"
+ }
+}

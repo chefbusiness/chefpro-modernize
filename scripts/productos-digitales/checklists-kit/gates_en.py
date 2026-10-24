@@ -83,9 +83,12 @@ HOJA_CAJA = getattr(mapas, 'HOJA_CAJA', ('09', 'Cierre de Caja'))
 CASOS_G5 = getattr(mapas, 'CASOS_G5', None)
 CON_HOJA_EXTRA = getattr(mapas, 'FORMULAS_CON_HOJA_EXTRA', {})
 SIN_MARCA = frozenset(getattr(mapas, 'LIBROS_SIN_MARCA', ()))   # libros cuyo ES no trae la línea de marca D19
+# vertical: {(libro, hoja ES, celda): valor EN} de fórmulas cuyo resultado cambia a propósito respecto al ES porque
+# dependen de mapas.VALORES_EN (pastelería, ronda 1: la matriz del 12 y su carta). G6 las compara con lo declarado
+G6_ESPERADO = getattr(mapas, 'G6_ESPERADO', {})
 
 SIGNOS_ES = set('¿¡«»€ºª')
-RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio|local)[^\]]*\]|\bSPEC\b|\((?:D|I)\d{1,2}\)|'
+RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio|local|kit criterion)[^\]]*\]|\bSPEC\b|\((?:D|I)\d{1,2}\)|'
                            r'\bD\d{1,2}\b(?=[:,)])|\bTEC-\d+\b|\bkit-tareas\b')
 RX_CITA_ANIDADA = re.compile(r'\(\(|\)\)\)')
 LIMITE_DV = {'promptTitle': 32, 'errorTitle': 32, 'prompt': 255, 'error': 255}     # Excel
@@ -93,9 +96,11 @@ RX_TILDE = re.compile(r'[áéíóúüñÁÉÍÓÚÜÑ]')
 # «café» como palabra inglesa va sin tilde («sidewalk cafe permit», grafía de los permisos US): no entra.
 LISTA_BLANCA_TILDE = {'entrée', 'entrées', 'sauté', 'sautéed', 'sautéing', 'purée', 'purées',
                       'jalapeño', 'jalapeños', 'piña', 'crème', 'brûlée', 'résumé', 'naïve', 'flambé', 'frappé',
-                      'rosé', 'canapé', 'canapés', 'soufflé', 'consommé', 'crêpe', 'crêpes', 'déjà', 'à'}
+                      'rosé', 'canapé', 'canapés', 'soufflé', 'consommé', 'crêpe', 'crêpes', 'déjà', 'à',
+                      'sablée', 'brisée'}                       # pastelería: masas sablée y brisée
 FRASES_OK = ('Cinco de Mayo', 'al dente', 'pico de gallo', 'chili con carne', 'à la carte', 'a la carte',
-             'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide')
+             'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide', 'dulce de leche',   # heladería: el término US
+             'rosca de Reyes', 'Rosca de Reyes', 'pan de muerto', 'Pan de muerto')   # pastelería: nombres US (D14)
 FUNCIONALES_ES = {
     'de', 'del', 'las', 'el', 'los', 'y', 'que', 'con', 'para', 'por', 'una', 'unos', 'unas', 'es', 'al', 'se',
     'su', 'sus', 'como', 'pero', 'muy', 'cuando', 'donde', 'porque', 'este', 'esta', 'esto', 'estos', 'desde',
@@ -1046,6 +1051,12 @@ def gateG6(R, carpeta, datos):
                 n['con_valor' if v is not None else 'vacias'] += 1
                 if 'COUNT' in c.value.upper():
                     n['contadores'] += 1
+                if (corto, h_es, c.coordinate) in G6_ESPERADO:
+                    esp = G6_ESPERADO[(corto, h_es, c.coordinate)]
+                    n['declarados'] += 1
+                    if not (v == esp or (num(v) and num(esp) and abs(v - esp) < TOL)):
+                        R.fallo('%s:%s!%s valor %r ≠ declarado %r (ES %r)' % (en, ws.title, c.coordinate, v, esp, ve))
+                    continue
                 if (ve is None) != (v is None):
                     R.fallo('%s:%s!%s caché %r (ES %r)' % (en, ws.title, c.coordinate, v, ve))
                 elif isinstance(ve, str):
@@ -1181,9 +1192,13 @@ def gateG8(R, carpeta, datos):
 # ==========================================================================
 # Autotest: cada gate tiene que cazar un defecto inyectado en una COPIA
 # ==========================================================================
-F01, F02, F03 = (mapas.FICHEROS[f] for f in ('01-apertura-cierre.xlsx', '02-partidas-cocina.xlsx',
-                                             '03-tareas-manager.xlsx'))
-F09 = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith('09-'))]   # catering: 09-cobros-…
+def _libro(corto):
+    """Fichero EN del libro `corto` («01»…) por su prefijo: los nombres ES cambian por vertical (heladería: 02-partidas-produccion, 06-eventos-temporada)."""
+    return mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(corto + '-'))]
+
+
+F01, F02, F03, F06 = (_libro(c) for c in ('01', '02', '03', '06'))
+F09 = _libro('09')                                         # catering: 09-cobros-…
 H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][1]]      # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
 H_CC = mapas.HOJAS[HOJA_CAJA[1]]                           # base: «Cash Drawer Closing» · catering: «Event Settlement»
 _HH = getattr(mapas, 'HOJA_HORAS', None)                   # catering: las horas de celda están en el 08
@@ -1219,7 +1234,13 @@ def _set(ws, coord, v):
 def _bloquear_verde(wb):
     from openpyxl.styles import Protection
     ws = wb[H_VERDE]
-    c = next(c for c in ws._cells.values() if es_verde(c) and c.protection.locked is False)
+    c = next((c for c in ws._cells.values() if es_verde(c) and c.protection.locked is False), None)
+    if c is None:
+        # kit sin protección (pastelería: 0 hojas protegidas y 0 celdas desbloqueadas en el ES): la mutación inversa,
+        # desbloquear una verde (o la primera celda real), la caza el mismo control de G1 («desbloqueadas distintas»)
+        c = next((c for c in celdas_reales(ws) if es_verde(c)), None) or next(celdas_reales(ws))
+        c.protection = Protection(locked=False)
+        return
     c.protection = Protection(locked=True)
 
 
@@ -1287,7 +1308,7 @@ def _cita_mal(wb):
 MUTACIONES = [
     ('G1', F_VERDE, _bloquear_verde, 'desbloqueadas'),
     ('G1', F01, _quitar_tarea, 'tareas'),
-    ('G1', mapas.FICHEROS['06-eventos-festivos.xlsx'], _area_rota, 'área de impresión'),
+    ('G1', F06, _area_rota, 'área de impresión'),
     ('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Revisa cada tarea con el equipo'), 'ES'),
     ('G2', F03, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Petty cash: 150 € per week'), 'moneda'),
     ('G2', F_HORAS, _hora_24, '24 h'),

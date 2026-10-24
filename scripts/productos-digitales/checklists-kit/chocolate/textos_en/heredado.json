@@ -1,0 +1,635 @@
+{
+ "c0005": {
+  "en": "How to use this template:",
+  "origen": "c0005",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0008": {
+  "en": "▸ Mark ✓ on each completed task. Adjust the times to your shop.",
+  "origen": "c0008",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0009": {
+  "en": "Customization:",
+  "origen": "c0009",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0010": {
+  "en": "▸ Green cells are editable: assigned to, time, notes.",
+  "origen": "c0010",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0011": {
+  "en": "▸ Adjust temperatures to your equipment and local rules.",
+  "origen": "c0011",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0017": {
+  "en": "Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es",
+  "origen": "c0017",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0032": {
+  "en": "Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top",
+  "origen": "c0031",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0036": {
+  "en": "Equipment startup and checks",
+  "origen": "c0037",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0068": {
+  "en": "Signed off by: _________________  Date: ___/___/______",
+  "origen": "c0070",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0069": {
+  "en": "Invalid mark",
+  "origen": "c0071",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0070": {
+  "en": "Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending.",
+  "origen": "c0072",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0071": {
+  "en": "Mark ✓ if done",
+  "origen": "c0073",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0095": {
+  "en": "Set the alarm and lock up",
+  "origen": "c0191",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0207": {
+  "en": "Manager Daily Tasks",
+  "origen": "c0183",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0230": {
+  "en": "Manager Weekly Tasks",
+  "origen": "c0202",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0258": {
+  "en": "Manager Monthly Tasks",
+  "origen": "c0217",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0264": {
+  "en": "Team and training",
+  "origen": "c0223",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0339": {
+  "en": "End of shift",
+  "origen": "c0258",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0397": {
+  "en": "Quarterly & Annual Maintenance — Contracted Services",
+  "origen": "c0681",
+  "via": "exacta",
+  "fuente": "cafe"
+ },
+ "c0415": {
+  "en": "Paperwork, Insurance & Invoicing",
+  "origen": "c0227",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0489": {
+  "en": "▸ 3 blank templates to build your own task lists.",
+  "origen": "c0449",
+  "via": "exacta",
+  "fuente": "catering"
+ },
+ "c0494": {
+  "en": "Customizable Template — By Area",
+  "origen": "c0446",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0495": {
+  "en": "Customizable Template — By Shift",
+  "origen": "c0447",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0496": {
+  "en": "Customizable Template — By Role",
+  "origen": "c0448",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0501": {
+  "en": "What it solves",
+  "origen": "c0453",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0502": {
+  "en": "▸ This is the checklist for the WHOLE SHOP: what gets opened and closed for the entire business, not for each area. Use it as the backbone of the day.",
+  "origen": "c0454",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0503": {
+  "en": "How to use",
+  "origen": "c0455",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0504": {
+  "en": "▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift lead assigns tasks and each person initials theirs.",
+  "origen": "c0456",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0505": {
+  "en": "▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.",
+  "origen": "c0457",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0506": {
+  "en": "Editable cells",
+  "origen": "c0458",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0507": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.",
+  "origen": "c0459",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0508": {
+  "en": "How the counter works",
+  "origen": "c0460",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0509": {
+  "en": "▸ Mark ✓ in the \"✓ Done\" column (dropdown): that is the column that counts completed tasks.",
+  "origen": "c0461",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0510": {
+  "en": "▸ \"N/A\" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). \"—\" = not done: it still counts as pending and lowers the percentage, which is the point.",
+  "origen": "c0462",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0511": {
+  "en": "▸ The denominator counts the tasks written in the \"Task\" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.",
+  "origen": "c0463",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0512": {
+  "en": "Free rows",
+  "origen": "c0464",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0513": {
+  "en": "▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.",
+  "origen": "c0465",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0514": {
+  "en": "▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.",
+  "origen": "c0466",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0515": {
+  "en": "Sheet protection",
+  "origen": "c0467",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0516": {
+  "en": "▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.",
+  "origen": "c0468",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0517": {
+  "en": "▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.",
+  "origen": "c0469",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0518": {
+  "en": "Works with",
+  "origen": "c0470",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0519": {
+  "en": "▸ 08-chocolate-store-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.",
+  "origen": "c0471",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-ice-cream-parlor-opening-closing-checklist.xlsx → 08-chocolate-store-opening-closing-checklist.xlsx"
+  ],
+  "fuente": "icecream"
+ },
+ "c0520": {
+  "en": "▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.",
+  "origen": "c0472",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0521": {
+  "en": "▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.",
+  "origen": "c0473",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0522": {
+  "en": "▸ You are in 08-chocolate-store-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the shop; the MONEY is in 09-cash-drawer-opening-closing.xlsx.",
+  "origen": "c0474",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-ice-cream-parlor-opening-closing-checklist.xlsx → 08-chocolate-store-opening-closing-checklist.xlsx"
+  ],
+  "fuente": "icecream"
+ },
+ "c0524": {
+  "en": "Contact: info@aichef.pro",
+  "origen": "c0476",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0526": {
+  "en": "Date: ____/____/________",
+  "origen": "c0478",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0527": {
+  "en": "Shift lead: _________________________",
+  "origen": "c0479",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0531": {
+  "en": "Disarm the alarm",
+  "origen": "c0483",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0533": {
+  "en": "Turn on the main lights (interior and exterior)",
+  "origen": "c0486",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0534": {
+  "en": "Turn on HVAC / heat depending on the season",
+  "origen": "c0487",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0535": {
+  "en": "Raise security gate and open front door",
+  "origen": "c0488",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0538": {
+  "en": "Turn on the POS / card terminal",
+  "origen": "c0491",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0540": {
+  "en": "Play background music at a suitable volume",
+  "origen": "c0493",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0542": {
+  "en": "Check restrooms: paper, soap, cleanliness, air freshener",
+  "origen": "c0496",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0544": {
+  "en": "Check cleanliness of common areas (entrance, hallways)",
+  "origen": "c0498",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0551": {
+  "en": "Turn on displays / info screens if any",
+  "origen": "c0504",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0554": {
+  "en": "Manager signature: _________________________     Completion time: ________",
+  "origen": "c0509",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0578": {
+  "en": "▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.",
+  "origen": "c0533",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0579": {
+  "en": "How to use — Cash Drawer Opening",
+  "origen": "c0534",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0580": {
+  "en": "▸ Count the starting bank and type the amount in the GREEN cell \"Starting bank (opening float)\". The closing sheet reads it from there: no need to retype it.",
+  "origen": "c0535",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0581": {
+  "en": "How to use — Cash Drawer Closing",
+  "origen": "c0536",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0582": {
+  "en": "▸ In \"Cash Count by Denomination\" fill in ONLY the \"Quantity\" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a \"25¢ roll\" counts $10 and a \"10¢ roll\" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.",
+  "origen": "c0537",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0583": {
+  "en": "▸ In the \"Closing Summary\" you only type three figures: \"Card sales, excl. tips\", \"Other tenders + card tips paid in cash\" and \"POS Z report: sales + tax, excl. tips\" (net sales plus sales tax, without tips or gratuities; many POS \"total\" lines include tips). Everything else is a formula.",
+  "origen": "c0538",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0584": {
+  "en": "▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.",
+  "origen": "c0539",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0585": {
+  "en": "▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.",
+  "origen": "c0540",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0586": {
+  "en": "▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.",
+  "origen": "c0541",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0587": {
+  "en": "▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.",
+  "origen": "c0542",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0588": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.",
+  "origen": "c0543",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0589": {
+  "en": "▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the REGISTER — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-chocolate-store-opening-closing-checklist.xlsx.",
+  "origen": "c0544",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-ice-cream-parlor-opening-closing-checklist.xlsx → 08-chocolate-store-opening-closing-checklist.xlsx"
+  ],
+  "fuente": "icecream"
+ },
+ "c0590": {
+  "en": "Cash Drawer Opening Checklist",
+  "origen": "c0545",
+  "via": "sufijo",
+  "fuente": "icecream"
+ },
+ "c0591": {
+  "en": "Manager: _________________________",
+  "origen": "c0546",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0592": {
+  "en": "Verify yesterday's starting bank",
+  "origen": "c0547",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0594": {
+  "en": "Count the opening starting bank",
+  "origen": "c0549",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0595": {
+  "en": "Write the starting bank in the green cell below",
+  "origen": "c0550",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0596": {
+  "en": "Check there is enough change (coins, small bills)",
+  "origen": "c0551",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0599": {
+  "en": "Check that the POS is on and open the register shift",
+  "origen": "c0552",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0600": {
+  "en": "Print the opening X report (start-of-day report)",
+  "origen": "c0553",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0601": {
+  "en": "Check the receipt paper roll",
+  "origen": "c0554",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0602": {
+  "en": "Check the card terminal works",
+  "origen": "c0555",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0603": {
+  "en": "Check the payment gateway connection",
+  "origen": "c0556",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0604": {
+  "en": "Note issues from the previous shift",
+  "origen": "c0557",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0605": {
+  "en": "Opening manager sign-off",
+  "origen": "c0558",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0607": {
+  "en": "Deducted from cash on the \"Cash Drawer Closing\" sheet",
+  "origen": "c0560",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0608": {
+  "en": "Manager signature: _________________________     Time: ________",
+  "origen": "c0561",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0609": {
+  "en": "Cash Drawer Closing Checklist",
+  "origen": "c0562",
+  "via": "sufijo",
+  "fuente": "icecream"
+ },
+ "c0610": {
+  "en": "Print the closing Z report (end-of-day report)",
+  "origen": "c0563",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0611": {
+  "en": "Cash count by denomination (see table below)",
+  "origen": "c0564",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0612": {
+  "en": "Calculate total cash",
+  "origen": "c0565",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0615": {
+  "en": "Total collected = (cash counted − starting bank) + card sales + other",
+  "origen": "c0568",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0616": {
+  "en": "Compare with the POS Z report → calculate the over/short",
+  "origen": "c0569",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0617": {
+  "en": "Log the day's refunds",
+  "origen": "c0570",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0618": {
+  "en": "Log the day's voids",
+  "origen": "c0571",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0621": {
+  "en": "Set aside tomorrow's starting bank",
+  "origen": "c0572",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0622": {
+  "en": "Prepare the bank deposit / put it in the safe",
+  "origen": "c0573",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0623": {
+  "en": "Closing manager sign-off",
+  "origen": "c0574",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0657": {
+  "en": "Invalid quantity",
+  "origen": "c0608",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0658": {
+  "en": "Enter how many bills, coins or rolls: a whole number (0 or more), no decimals.",
+  "origen": "c0609",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0659": {
+  "en": "Monthly Cash Log",
+  "origen": "c0610",
+  "via": "sufijo",
+  "fuente": "icecream"
+ },
+ "c0660": {
+  "en": "Month: ________________     Year: ________",
+  "origen": "c0611",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0661": {
+  "en": "Manager: _________________________",
+  "origen": "c0612",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0671": {
+  "en": "\"Cash Counted\" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, \"Starting Bank\" is the AVERAGE starting bank of the days logged (a balance is not summed) and \"Over/Short\" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. \"Card Sales (no tips)\" excludes tips; \"Other + Tips Paid\" = other tenders + card tips paid in cash from the drawer. \"POS Z\" = net sales + sales tax, without tips.",
+  "origen": "c0622",
+  "via": "exacta",
+  "fuente": "icecream"
+ },
+ "c0681": {
+  "en": "Today's production",
+  "origen": "c0633",
+  "via": "exacta",
+  "fuente": "icecream"
+ }
+}
