@@ -63,8 +63,10 @@
 | Temporada y fechas US | Proclamation 5219 (1984: National Ice Cream Month y Day); 5 U.S.C. 6103 (Memorial, Juneteenth, Labor, Thanksgiving); 36 U.S.C. 117 y 109 |
 | Seguro con food spoilage · hielo seco · plazos y sabores | [criterio del kit] |
 
-°F que el kit puede afirmar (G7, `GRADOS_F_SPEC`): −4, 0, 6, 10, 14, 16, 19, 32, 36, 39, 41, 70, 100, 104, 122, 135, 185.
-`CELSIUS_SIN_F` = 08 «Cierre» B19 (sus temperaturas suben a la fila 10 con el reorden; en la 19 queda la llave).
+°F que el kit puede afirmar (G7, `GRADOS_F_SPEC`): −4, 0, 6, 10, 14, 16, 19, 32, 36, 39, 41, 70, 100, 104, 122, 135, 155,
+175, 185 (155 y 175: los mínimos estatales habituales de pasteurización, ronda 1 de la F2). Sin las reglas base de
+pescado crudo (−31 °F) ni de recalentado (165 °F). `CELSIUS_SIN_F` = 08 «Cierre» B19 (sus temperaturas suben a la fila
+10 con el reorden; en la 19 queda la llave) y 01 «Cierre» B7 (ronda 1 M1: la vitrina se queda encendida, sin cifra).
 
 ## 4. Memoria de traducción (`../heredar.py --kit icecream`, `MEMORIA`: cafetería, base, catering, pizzería, hamburguesería, ghost kitchen y bar)
 
@@ -86,6 +88,10 @@ Para la F2: `aplicar_en`/`gates_en` ya traen los ganchos del molde ligero del ca
 - 08 «Cierre del Negocio» B18-B19: cubrir las vitrinas y registrar las temperaturas de cierre DESPUÉS de activar la
   alarma (B16) y cerrar con llave (B17); B9 cierra persianas antes de recoger la señalización (B12) y vaciar papeleras
   (B14); B15 «enchufes» sin excluir congeladores y vitrinas.
+- **RESUELTAS en el ES LIVE en esta rama (ronda 1 de la F2, `1adefb9e`, sin cambio de versión):** 02 «Pasteurización»
+  B13/B14 (grasas y emulsionantes ANTES de pasteurizar, «40-50 °C en ascenso»; iban después y «en descenso»); 05 «Gestión
+  Semanal» B6 (fuera el «test de mantecadora en vacío»); 02 «Mantecación» B24 y 05 «Limpieza Semanal» B13 (el cilindro
+  no se desmonta, se limpia en su sitio). El generador `scripts/generate-tareas-heladeria.py` lleva los mismos textos.
 - 08 «Apertura del Negocio» B20: «mantecadoras encendidas» al abrir (la mantecadora solo se enciende para mantecar).
   Horas de 07:00-07:45 (08 y 09) de cafetería: una heladería abre a media mañana (la EN las sube 3 h).
 - 05 «Gestión Semanal» B7: «verificar niveles de refrigerante» lo hace el personal (solo un técnico certificado:

@@ -105,3 +105,60 @@ Thanksgiving + Black Friday / Small Business Saturday · holidays (Christmas, Ne
   per the manufacturer» (01 B28) ya no lleva cifra; si alguien añade 165 °F, G7 lo para.
 - **Código común**: `gates_en.py` solo cambia cómo el autotest busca los libros (por prefijo); `aplicar_en.py` y
   `mapas.py` intactos.
+
+## Ronda 1 de la revisión adversarial (`revision/REVISION-F2.md`: 1 BLOQUEANTE · 6 MAYOR · 14 menor · 7 dudas)
+
+Aplicados el BLOQUEANTE, los 6 MAYOR y los 14 menores, en la fuente; de las 7 dudas, ninguna. Tres erratas eran del ES
+y se han parcheado en el ES LIVE (`1adefb9e`, sin cambio de versión). El parche se hizo en el XML de las celdas
+`inlineStr`, así que estilos, DV, CF, caché y docProps quedan byte a byte:
+- 02 «Pasteurización» B13/B14, intercambiadas, con «en ascenso»;
+- 05 «Gestión Semanal» B6;
+- 02 «Mantecación» B24;
+- 05 «Limpieza Semanal» B13.
+
+El volcado ES de antes y de después difiere solo en esas 5 celdas, y el ES pasa `censo-entregables` (0) y
+`gate-no-latinos` (0). El generador `scripts/generate-tareas-heladeria.py` lleva los mismos textos. Después se
+regeneraron `extraer_textos`, `mapas_icecream` y `heredar`:
+- se mantienen las 87 heredadas y las 403 pendientes, con los mismos ids que G1;
+- c0120 y c0121 siguen al intercambio de filas: ahora c0120 es «grasas en ascenso» y c0121 es «pasteurizar».
+
+| Id | Dónde (EN) | Arreglado en |
+|---|---|---|
+| B1 | 02 «Pasteurizing» B13-B14 | ES LIVE (intercambio + «en ascenso») · G1 c0120 (grasas, yemas y estabilizante MIENTRAS sube a 104–122 °F) y c0121 · ADAPTAR B13/B14 intercambiados · `REGLAS_US['pasteurizacion']` |
+| M1 | 01 «Instructions» B16 · 01 «Opening» B16 · 01 «Closing» B7 · 08 «Shop Opening» B20 · 08 «Shop Closing» B9-B10 | G1 c0015, c0038, c0077 (+ c0007, la línea de Instructions que hablaba de «switching… to service mode») · POR_CELDA 08 B20, cierre filas 9 y 10 (B10: «dipping cabinets (6–10 °F, or their night setting)», no «0 °F») · ADAPTAR 01 B16 / B16 / B7 · `CELSIUS_SIN_F` + 01 «Cierre» B7. Horas sin tocar (autotest +3 h igual) |
+| M2 | 05 «Weekly Upkeep & Stock» B6 | ES LIVE · G1 c0328 (revisión según el fabricante; draw temperature en la primera tanda; nunca en vacío) |
+| M3 | 06 «Ice Cream Catering» B6 · 01 «Opening» B26 · 01 «Instructions» B17 | G1 c0414, c0052, c0016 (cacahuete) |
+| M4 | 06 «Peak Season» B18 · 05 «Monthly Tasks» B21 | G1 c0398, c0348 (nombre, ingredientes, alérgenos, peso neto y negocio, 3-602.11) · `_EMPAQUE` · `REGLAS_US['etiqueta_envasado']` = §3-602.11(B) |
+| M5 | 06 «Peak Season» B7 · 05 «Weekly Deep Clean» B21 · B02 abril B8 | G1 c0388 (marzo-abril; congeladores y maquinaria, 29 CFR 570.33), c0323, c0678 («hours and job limits») · `_MENORES` · `REGLAS_US['menores']` + 570.33(e)/(i) |
+| M6 | 06 «Ice Cream Catering» B17 · B21 · B28 | G1 c0424, c0426, c0431 (un scoop por sabor, templar tras el hielo seco, carrito o nevera, mango fuera §3-304.12(A), temperatura en servicio, lo derretido se tira) · `REGLAS_US['dipper_well']` + §3-304.12(A) · `REGLAS_US['catering_servicio']` |
+| m1 | 02 «Pasteurizing» B15 / C15 | G1 c0122 (blast chiller o baño de hielo; más rápido si la licencia lo pide) · POR_CELDA C15 = «Pasteurizer» · `_ENFRIAR_MEZCLA` |
+| m2 | 02 «Pasteurizing» B14 (antes B13) | G1 c0121: 185 °F 15 s como objetivo del kit + «typical state minimums: batch 155 °F for 30 min or HTST 175 °F for 25 s — check your state rules» y el registro gráfico · `GRADOS_F_SPEC` + 155, 175 · `REGLAS_US['pasteurizacion']` (N.J.A.C. 8:21-7.27, Ohio 901:11-3-05, 77 Ill. Adm. Code 785, MCL 288.735, PMO) |
+| m3 | 02 «Instructions» B6 · 05 «Quarterly & Annual» B19 | G1 c0104 (Arizona exime la venta en el local; «agriculture or health») · POR_CELDA B19 · `_LICENCIA` |
+| m4 | 02 «Batch Freezing» B24 · 05 «Weekly Deep Clean» B13 | ES LIVE · G1 c0146, c0317 (el cilindro, en su sitio) · ADAPTAR B24 |
+| m5 | 04 «Ice Cream Maker» B16 | G1 c0256 (tempered pans) |
+| m6 | 05 «Weekly Upkeep & Stock» B10 · 05 «Quarterly & Annual» B15 | G1 c0332 (café y lavavajillas, por separado) · POR_CELDA B15 («any espresso machine») |
+| m7 | 05 «Quarterly & Annual» A4 | POR_CELDA: «Contracted services — monthly to annual» (con m8 la sección tiene mensual, anual, trimestral y semestral) |
+| m8 | 05 «Quarterly & Annual» B7 / F7 | POR_CELDA B7 (frecuencia de NFPA 96 por volumen; bajo volumen o de temporada: anual) y F7 = «Annual» · `REGLAS_US['campana']` (tabla 11.4, la del base) |
+| m9 | 08 «Shop Closing» B13 · 01 «Opening» B12 | POR_CELDA cierre fila 13 (gas appliances off if any, grifo del dipper well) · G1 c0036 (sin «open the main valve») |
+| m10 | 01 «Opening» B28 | G1 c0054 «dulce de leche» · `gates_en.FRASES_OK` + «dulce de leche» (G2 lo leía como español) |
+| m11 | 03 «Weekly Tasks» B7 · 05 «Monthly Tasks» B14 | G1 c0205, c0344 («28–32% or lower») |
+| m12 | B02 «Instructions» B16 | G1 c0660 (3 semanas antes de Pascua: marzo o principios de abril) |
+| m13 | 03 «Weekly Tasks» B22 | G1 c0216 (sin coletilla de lectura) |
+| m14 | 01 «Opening» B18 | G1 c0042 (el responsable valora la mezcla) · ADAPTAR B18 |
+| Dudas 1-7 | — | **No aplicadas**: hot fudge casero, draw temperature, 2–3 scoops por invitado, rango de food cost, puerta del 08 B8, llegada a 10 °F y Nutrition Facts quedan como están (criterio del kit, o sin una fuente clara) |
+
+**Código común: solo `gates_en.py`, en dos puntos.** El dry-run de los hermanos no cambia (`aplicar_en.py` y `mapas.py`
+intactos), y con el de `origin/main` los 7 kits publicados dan la misma salida en gates y autotest (0 diferencias).
+- el autotest busca los libros por prefijo (pasada anterior);
+- «dulce de leche» se añade a `FRASES_OK`.
+
+| Paso | Resultado |
+|---|---|
+| Montaje | 11 xlsx · idempotencia 0 diferencias · `inject_cache` 141/141 · 0 desbordes · 0 rellenos |
+| Gates | **VERDE 8/0**. G1 igual que antes (38 hojas, 141 fórmulas, 27 DV, 27 CF, 189 merges, 811 desbloqueadas). G3 44 ajustes · 51 altos. G4 722 glosario · 184 regenerar · 557 traducir. G7 60 °F y 17 citas normativas, todas en `REGLAS_US` (57 permitidas); 2 `CELSIUS_SIN_F` |
+| Autotest | **19/19 CAZADOS** |
+| Celdas cortadas | **0 nuevas** en las 1.633 celdas, incluidas las que se alargan (06 B6, B7, B17, B18, B28 · 01 «Opening» B16, B26 · 01 «Closing» B7 · 08 B9, B10, B20 · 05 B6 · 02 B13-B15). Queda «Denomination» (09) |
+| censo-entregables · no-latinos | EN: 0 · 0. ES: 0 · 0 |
+| Copia al Mac | sha256 30/30 iguales VPS ↔ Mac (11 EN, 11 ES, volcados, datos y código) |
+| Volcados | `revision/dump_en.txt` y `dump_es.txt` regenerados, 2.510 líneas cada uno |
+| Landing EN | 22 retoques en `ice-cream-shop-checklist-templates.ts` para casar con el xlsx, más `llms-full.txt` y `productos-changelog.ts` (vitrinas, pasteurización); detalle en `F3-NOTAS.md` §4.3. `transpileModule` sin diagnósticos |

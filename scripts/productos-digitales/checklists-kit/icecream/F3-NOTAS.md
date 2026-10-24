@@ -97,9 +97,23 @@
    `/en/digital-products/ice-cream-shop-checklist-templates/access?session_id={CHECKOUT_SESSION_ID}` y env
    `VITE_STRIPE_PAYMENT_LINK_ICE_CREAM_SHOP_CHECKLISTS_KIT` (scope builds); luego `sync-payment-links.py`.
 2. `vivo: true` ya en la rama: fusionar SOLO con el link y con los 11 xlsx de la F2 en `dl/` (o `vivo: false`).
-3. **Orquestador, tras la F2:** confirmar contra los xlsx EN las cifras de §3 (sobre todo 18–24 / 10–14 sabores,
-  2–3 tandas, 24–48 h, 4 h / 8–12 h, el orden del «Shop Closing» y que el texto de las tareas de alérgenos y scoop
-  dice lo que la FAQ resume), y que los títulos de las hojas casan con la ficha. Re-ejecutar
+3. **HECHO (ronda 1 de la F2, 24-oct · sesión Claude Code), contra `revision/dump_en.txt` nuevo:**
+  - **Confirmadas tal cual:** 18–24 sabores (06 «Peak Season» B6) · 10–14 (06 «Off-Season» B6 y B02 octubre) · 2–3
+    tandas al día (06 B14) · al menos 2 scoopers (06 B16) · 24–48 h (06 «Ice Cream Catering» B16) · maduración mínimo
+    4 h, lo ideal 8–12 h (02 «Pasteurizing» B22) · 298 tareas y su reparto (§3) · los 11 títulos = los de la ficha.
+  - **Orden del «Shop Closing»** (08 B5-B19): clientes → música → patio → señalización → fundas de las vitrinas (siguen
+    encendidas) → temperaturas de cierre → POS → papeleras → seguridad → ventanas → HVAC → luces → alarma → persiana →
+    llave. Casa con la FAQ.
+  - **Food cost:** el xlsx dice «target 28–32% or lower» (03 «Weekly Tasks» B7 y 05 «Monthly Tasks» B14, criterio del
+    kit); la landing sigue sin cifra («food cost against your target»).
+  - **Corregido en la ficha** (22 cambios) para casar con la ronda 1: vitrinas sin «storage mode» universal (se quedan
+    encendidas; modo nocturno solo si el modelo lo trae) en la FAQ de schema, las tarjetas 01 y la FAQ de apertura,
+    cierre y temperaturas; producción con grasas antes de pasteurizar, 185 °F 15 s como objetivo del kit y los mínimos
+    estatales (155 °F 30 min · 175 °F 25 s); el dasher, las palas y la junta fuera y el cilindro en su sitio; la
+    revisión semanal de la mantecadora (nunca en vacío); etiqueta completa de los pints (3-602.11); menores contratados
+    en marzo-abril con los límites de 570.33; catering con frío, un scoop por sabor y descarte durante el servicio;
+    fuera «a pan no other scoop has touched» (el xlsx no lo dice). Cacahuete: la FAQ ya lo listaba. También
+    `llms-full.txt` y `productos-changelog.ts` (vitrinas y pasteurización). Re-ejecutar
   `gate-flujo-postpago --offline --only ice-cream-shop-checklist-templates` (debe quedar solo «SIN Payment Link»).
 4. **Preexistente, fuera de esta F3:** `tienda-gate.py` estático sale rojo por robots.txt («tienda en/fr/de/it/pt/nl
   ACTIVA sin sus 6 Disallow en 10 de 16 bloques»); robots.txt no se ha tocado aquí (último cambio, #143). Lo mismo
