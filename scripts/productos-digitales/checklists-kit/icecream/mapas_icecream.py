@@ -565,6 +565,10 @@ for _fila, (_mes, _sabores, _temp, _dir) in CALENDARIO.items():
 # aplicar_en.objetivo_ajuste / G3 (como la pizzería, la hamburguesería y la ghost kitchen): la EN activa el ajuste
 # también donde el ES no cabía
 AJUSTE_MAQUETA_ES = True
+# F2: 02 «Mantecación» fila 35 (tabla de vida útil). En el ES la fila es automática y la crece C35 (3 líneas en la
+# columna de 14); en la EN, `capa_ajuste` le pone 30 pt por la nota combinada de la D (2 líneas) y ese alto fijo corta
+# C35 «6 months at 0 °F · 2–3 months refrigerated» (3 líneas = 45 pt)
+ALTOS_FILA = {('02', 'Mantecación', 35): 45.0}
 # Celdas ES con °C cuya EN NO lleva cifra: solo la fila 19 del cierre del 08 (sus temperaturas suben a la fila 10 con el
 # reorden; en la 19 EN queda la llave). G7 la declara; el resto de °C del ES lleva su °F en la EN
 CELSIUS_SIN_F = frozenset({('08', 'Cierre del Negocio', 'B19')})
@@ -573,6 +577,10 @@ CELSIUS_SIN_F = frozenset({('08', 'Cierre del Negocio', 'B19')})
 # REGLAS_US: las del base + las de la heladería (fuente única de las cifras y normas que el kit puede afirmar)
 # ==========================================================================
 REGLAS_US = OrderedDict(_base.REGLAS_US)
+# Fuera las dos del base que una heladería no hace (SPEC §3: «sin recalentado: no aplica»; sin pescado crudo): así G7
+# caza cualquier 165 °F o −31 °F que se cuele y las cifras permitidas = GRADOS_F_SPEC
+for _k in ('parasitos', 'recalentado'):
+    del REGLAS_US[_k]
 REGLAS_US.update([
     ('helado_temps', ('conservación 0 °F o menos; vitrina 6–10 °F; maduración 36–39 °F (≤ 41 °F); extracción helado '
                       '16–19 °F / sorbete 10–14 °F; cubetas a −4 °F; llegada del catering ≤ 10 °F',

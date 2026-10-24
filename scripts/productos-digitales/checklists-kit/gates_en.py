@@ -1181,9 +1181,13 @@ def gateG8(R, carpeta, datos):
 # ==========================================================================
 # Autotest: cada gate tiene que cazar un defecto inyectado en una COPIA
 # ==========================================================================
-F01, F02, F03 = (mapas.FICHEROS[f] for f in ('01-apertura-cierre.xlsx', '02-partidas-cocina.xlsx',
-                                             '03-tareas-manager.xlsx'))
-F09 = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith('09-'))]   # catering: 09-cobros-…
+def _libro(corto):
+    """Fichero EN del libro `corto` («01»…) por su prefijo: los nombres ES cambian por vertical (heladería: 02-partidas-produccion, 06-eventos-temporada)."""
+    return mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(corto + '-'))]
+
+
+F01, F02, F03, F06 = (_libro(c) for c in ('01', '02', '03', '06'))
+F09 = _libro('09')                                         # catering: 09-cobros-…
 H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][1]]      # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
 H_CC = mapas.HOJAS[HOJA_CAJA[1]]                           # base: «Cash Drawer Closing» · catering: «Event Settlement»
 _HH = getattr(mapas, 'HOJA_HORAS', None)                   # catering: las horas de celda están en el 08
@@ -1287,7 +1291,7 @@ def _cita_mal(wb):
 MUTACIONES = [
     ('G1', F_VERDE, _bloquear_verde, 'desbloqueadas'),
     ('G1', F01, _quitar_tarea, 'tareas'),
-    ('G1', mapas.FICHEROS['06-eventos-festivos.xlsx'], _area_rota, 'área de impresión'),
+    ('G1', F06, _area_rota, 'área de impresión'),
     ('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Revisa cada tarea con el equipo'), 'ES'),
     ('G2', F03, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Petty cash: 150 € per week'), 'moneda'),
     ('G2', F_HORAS, _hora_24, '24 h'),
