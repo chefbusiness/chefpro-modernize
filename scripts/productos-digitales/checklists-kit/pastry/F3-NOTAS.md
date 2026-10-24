@@ -4,7 +4,7 @@
 > `feat/chocolate-pastry-checklists-en-f3` (sale de `28efc8d3`). La F2 de la pastelería va en la rama hermana
 > `feat/chocolate-pastry-checklists-en`: sus 15 xlsx y los volcados entraron allí en `7fd4a21b` mientras esta F3 estaba
 > en marcha; las cifras de abajo salen de ese `revision/dump_en.txt` (leído con `git show`, sin traerlo a esta rama) y
-> quedan **a confirmar tras la ronda de revisión de la pastelería**. Molde: la F3 del Ice Cream Shop
+> quedaban a confirmar tras la ronda de la pastelería: **CONFIRMADAS** contra el volcado de la ronda 1 (`4c4a158b`, §3 ter). Molde: la F3 del Ice Cream Shop
 > (`../icecream/F3-NOTAS.md`) punto por punto; notas del chocolate y lo común (verificación, render, pendientes de
 > preview) en `../chocolate/F3-NOTAS.md`. Sin build, Playwright ni navegador (regla térmica; CPU 42-51 °C). No toca
 > `checklists-kit/` (salvo este fichero y el del chocolate) ni `astro-site/public/dl/`.
@@ -49,7 +49,7 @@
   «NO en disco» (están en la rama hermana, no en esta) y «SIN Payment Link». Tras fusionar las dos ramas debe quedar
   solo el del link.
 
-## 3. Cifras (A CONFIRMAR tras la ronda de la pastelería) y decisiones de contenido
+## 3. Cifras (CONFIRMADAS tras la ronda 1 de la pastelería, ver §3 ter) y decisiones de contenido
 
 - **Tareas: 413** en los 9 checklists y el briefing, con el método de los hermanos (filas con número en A y texto en B;
   da 298 en la heladería y 338 en el chocolate): 01 = 22 + 20 = **42** (6 bloques, igual que el ES) · 02 = 26 + 18 + 13 =
@@ -117,13 +117,35 @@ cabecera del registro (13 «Temperature Log» L4) y «then 41 °F in 4 h» en el
 Para John: el `authorBio` («chef-owner… run operations for restaurant groups») es la traducción literal de la bio de la
 ficha ES de pastelería; no sale de los xlsx.
 
+## 3 ter. Pasada tras la ronda 1 de la pastelería (24-oct, sesión Claude Code, sobre la rama fusionada `7f4f7d3d`)
+
+**Cifras CONFIRMADAS** contra el `revision/dump_en.txt` nuevo (`4c4a158b`), con el mismo método: 413 tareas con el mismo
+reparto por hoja (01 42 · 02 57 · 03 54 · 04 50 · 05 44 · 06 90 · 08 39 · 09 23 · B01 14), 43 productos en la matriz, 32
+en el plan, 17 fechas y ocasiones en el B02, 62 hojas, plantillas 10-13. Sin cambio de cifras en la landing.
+
+Cambios de contenido de la ronda que tocaban la landing (ficha, FAQ, changelog y correo; el hub y `llms-full.txt` no
+afirmaban nada de esto y siguen casando):
+- Vitrina refrigerada a 41 °F también para lo relleno de crema, natillas o queso y para el salado perecedero (quiche,
+  empanadas, croissant de jamón y queso): tarjeta 08, FAQ de apertura y de temperaturas, changelog y correo.
+- Thanksgiving: «cream pies» → custard pies (calabaza, boniato) enfriadas 135 → 70 → 41 °F y en frío; la pecan, en frío
+  salvo que sanidad la acepte como no TCS: tarjeta 06 y FAQ de festivos.
+- Menores: 16-17 años sin amasadoras ni batidoras de masa, laminadoras, divisoras ni boleadoras (salvo las de sobremesa de
+  5 qt y ½ hp o menos); 14-15 años sin máquinas a motor ni hornear y de 7 AM a 7 PM en curso escolar (570.62, 570.33(e)
+  y (h), 570.35): FAQ de festivos.
+- Rosca: el 6 de enero es el día fuerte; King cake hasta Mardi Gras: FAQ de festivos.
+- Cámara de masas «in retard mode»: tarjeta 13 y FAQ del registro. Recepción: leche y nata entre 41 y 45 °F solo donde la
+  ley láctea lo permite (la frase anterior colgaba el paréntesis del rechazo). El rojo de la recepción por encima de 45 °F
+  no lo cita la landing (dice «rejection criteria», que siguen: TCS > 41 °F, huevos con aire > 45 °F).
+- Sin cambio: la matriz (leche ● en concha y polvorones, sulfitos ● en hot cross buns, leyenda de 10 abreviaturas) y la
+  última recogida a las 7:30 PM y la conservación de fichas según el seguro (la landing no daba ese detalle).
+
 ## 4. Pendiente
 
 1. **John:** Payment Link USD $19 con redirección a
    `/en/digital-products/pastry-shop-checklist-templates/access?session_id={CHECKOUT_SESSION_ID}` y env
    `VITE_STRIPE_PAYMENT_LINK_PASTRY_SHOP_CHECKLISTS_KIT` (scope builds); luego `sync-payment-links.py`.
 2. `vivo: true` en la rama: fusionar con el link **y** con los 15 xlsx de la F2 en `dl/` (o `vivo: false`).
-3. **Ronda de la pastelería (F2):** confirmar las cifras del §3 contra el volcado final y repasar la ficha si cambian
+3. ~~**Ronda de la pastelería (F2):** confirmar las cifras del §3 contra el volcado final~~ HECHO (§3 ter); y repasar la ficha si cambian
    textos que la landing cita (contadores, 43 productos, 32 productos, horas 5:00 / 6:45 / 8:00 AM, 30–50 %, 28–35 %,
    < 5 %, rechazo en recepción, menores). Si la ronda decide que el contador descuente N/A, se puede añadir a la FAQ de
    firma.
