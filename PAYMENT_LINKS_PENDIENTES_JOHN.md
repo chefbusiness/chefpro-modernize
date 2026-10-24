@@ -21,9 +21,9 @@
 | # | Producto | Precio | PR | Estado |
 |---|---|---|---|---|
 | 1 | Ice Cream Shop Checklists Kit Pro | $19 | #156 | ✅ listo |
-| 2 | Chocolate Shop Checklists Kit Pro | $19 | (en curso) | 🔨 F1 |
-| 3 | Pastry Shop Checklists Kit Pro | $19 | (en curso) | 🔨 F1 |
-| 4 | BBQ Catering Business Plan Kit | $39 | — | ⏳ en cola |
+| 2 | Chocolate Shop Checklists Kit Pro | $19 | #157 | ✅ listo |
+| 3 | Pastry Shop Checklists Kit Pro | $19 | #157 | ✅ listo |
+| 4 | BBQ Catering Business Plan Kit | $39 | — | 🔨 F1 (research) |
 | 5 | Paella Catering Business Plan Kit | $39 | — | ⏳ en cola |
 
 ### 1. Ice Cream Shop Checklists Kit Pro — $19.00 USD (PR #156)
@@ -33,3 +33,18 @@
 - Descripción: Nine Excel checklist templates and three bonuses for ice cream shops: opening and closing, pasteurizing and batch freezing, manager and role duties, cleaning and maintenance, peak season and ice cream catering, cash drawer. One-time payment, lifetime access.
 - Env que crearé: `VITE_STRIPE_PAYMENT_LINK_ICE_CREAM_SHOP_CHECKLISTS_KIT`
 - Ojo: este PR lleva también el parche de seguridad del kit ES de heladería (grasas y yemas antes de pasteurizar).
+
+### 2. Chocolate Shop Checklists Kit Pro — $19.00 USD (PR #157)
+
+- Nombre en Stripe: **Chocolate Shop Checklists Kit Pro**
+- Redirección: `https://aichef.pro/en/digital-products/chocolate-shop-checklist-templates/access?session_id={CHECKOUT_SESSION_ID}`
+- Descripción: Nine Excel checklist templates and three bonuses for chocolate shops: opening and closing, tempering and molding, manager and role duties, cleaning and maintenance, holiday season, Valentine's Day and Easter, cash drawer with sales by weight. One-time payment, lifetime access.
+- Env que crearé: `VITE_STRIPE_PAYMENT_LINK_CHOCOLATE_SHOP_CHECKLISTS_KIT`
+- Ojo: el PR lleva también un parche de seguridad del kit ES de chocolatería (ganache de nata fresca en frío, etiqueta con alérgenos, exclusión por síntomas).
+
+### 3. Pastry Shop Checklists Kit Pro — $19.00 USD (PR #157)
+
+- Nombre en Stripe: **Pastry Shop Checklists Kit Pro**
+- Redirección: `https://aichef.pro/en/digital-products/pastry-shop-checklist-templates/access?session_id={CHECKOUT_SESSION_ID}`
+- Descripción: Thirteen Excel templates and three bonuses for pastry shops: nine checklists for opening and closing, production stations, manager and role duties, cleaning, holiday campaigns and the cash drawer, plus four logs for weekly production and waste, custom cake orders, the bakery allergen chart and temperatures. One-time payment, lifetime access.
+- Env que crearé: `VITE_STRIPE_PAYMENT_LINK_PASTRY_SHOP_CHECKLISTS_KIT`
