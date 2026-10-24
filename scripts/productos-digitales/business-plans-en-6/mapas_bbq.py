@@ -241,13 +241,15 @@ CAT_CELDA = _cargar_cat()
 CAT_TEXTO = _cargar_cat_texto()
 # celdas que van a los redactores aunque su EN del catering parezca limpio: llevan contenido propio del BBQ caterer
 # (F1-inventario §1: 41 celdas, menos P&L A10/A11, que fija POR_CELDA al adoptar «BBQ packages / Add-ons» (D103), más
-# C4, C5, C27, C58 y C62, que también cambian con el caso BBQ: 44; F2-NOTAS §4)
+# las que el EN del catering dejaría mal con el caso BBQ: C4, C5, C27, C58, C62, C7/C8 («enter 0.15»), C11/C12 (food +
+# beverage), C15 (sin leña), C18 («The example (2.5%)», M4 del bar móvil) y P&L F33 (pest control → smoker repair): 51;
+# F2-NOTAS §4)
 _S, _I, _P, _R = '0. Supuestos', 'Inversión Inicial', 'PyG 3 Años', 'Personal'
 FORZAR_TRADUCTORES = set(
-    [('BBQP', _S, c) for c in ('C4', 'C5', 'C6', 'C13', 'C24', 'C26', 'C27', 'C44', 'C45', 'C51', 'C52', 'C54', 'C55',
-                               'C58', 'C62')] +
+    [('BBQP', _S, c) for c in ('C4', 'C5', 'C6', 'C7', 'C8', 'C11', 'C12', 'C13', 'C15', 'C18', 'C24', 'C26', 'C27',
+                               'C44', 'C45', 'C51', 'C52', 'C54', 'C55', 'C58', 'C62')] +
     [('BBQP', _I, 'D%d' % f) for f in range(7, 21)] +
-    [('BBQP', _P, c) for c in ('F10', 'F11', 'F24', 'F32', 'F34', 'F35', 'F53', 'F54', 'F55')] +
+    [('BBQP', _P, c) for c in ('F10', 'F11', 'F24', 'F32', 'F33', 'F34', 'F35', 'F53', 'F54', 'F55')] +
     [('BBQP', _R, c) for c in ('J5', 'J6', 'J7', 'J8', 'J18', 'J19')])
 # D104: filas de la tabla D19 que heredan la PROPUESTA del catering (misma fila): neto 7-8 % (58), marketplace 15 % (62),
 # depósito → 50 % nonrefundable (63), shared kitchen $15-45/h (65), seguros Insureon (67)
