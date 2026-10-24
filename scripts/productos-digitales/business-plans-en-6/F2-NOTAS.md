@@ -216,7 +216,7 @@ Paso 3 en el VPS sobre `04ca3786` + el alta de G9 (`bbq-catering-business-plan` 
   deposit» → «a 50% nonrefundable deposit»; el saldo «3 to 14 days before» del checklist (P6 fila 11) = las 72 horas /
   14 días del docx. Ningún gate saltó por texto; ninguna cifra ni fórmula tocada.
 
-**Caso final** (`cifras_caso.json`, 118 tokens, **ninguna cifra distinta del dry-run** del paso 1; sha256 `c5e5759c…`):
+**Caso final** (`cifras_caso.json`, 118 tokens, **ninguna cifra distinta del dry-run** del paso 1; sha256 `9ab158af…` tras la ronda §9, donde solo cambia el texto de `consumibles_pct`, 4% → 3.5%):
 - 150 eventos × 75 invitados × $38.00 sin sales tax, con personal y service charge ($41.04 con el impuesto) → ventas
   **$427,500** / $478,800 / $517,104 ($2,850 por evento, 11,250 invitados).
 - CAPEX **$83,300** + fondo de maniobra $52,371 = **$135,671** · fondos propios $35,000 (26 %) + préstamo **$101,000** al
@@ -239,10 +239,10 @@ Paso 3 en el VPS sobre `04ca3786` + el alta de G9 (`bbq-catering-business-plan` 
 
 | Entregable (`astro-site/public/dl/bbq-catering-business-plan/`) | Contenido | sha256 (Mac = VPS) |
 |---|---|---|
-| `bbq-catering-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 8,067 palabras, Letter | `0c73a5393f14a5705a30139c927264ec2b349106a63c76fbf15d148ba35949d7` |
-| `bbq-catering-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US sin calibrar | `7e08ff9360cc0adfba62db1b3d16d8a50e82889cc92844e3b56ffaac32217e65` |
-| `bbq-catering-pricing-calculator.xlsx` | 5 hojas, 422 fórmulas (sin cambios desde el paso 1) | `c07c582b937a60127dd65dadf0bf5e6b6bc2f96ac4f6421211b429e3d496ca63` |
-| `bbq-catering-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `be0062bd92437424c35cb266128d4b7cdc6c85c1d8b7f4f8f4ad10e510514bbd` |
+| `bbq-catering-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 8,184 palabras, Letter | `83d19450a065618ac3eae1cee8bb5d04c2f2fb19adc25e230f6d26ddf73f1bb0` |
+| `bbq-catering-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US sin calibrar | `762f0c03ff0d745c17558b39fe827af6bbe58be80a2dcdb9b4d64921c7951ef6` |
+| `bbq-catering-pricing-calculator.xlsx` | 5 hojas, 422 fórmulas (rótulos y notas de la ronda §9) | `157960955672e58af6457d166475e0895fc8fa5c2c28ecbe4e69b4d6562586d9` |
+| `bbq-catering-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `acb9bc3495d5f0965781cdb1ce343fef1ec6993ba855af226dce16fd31a5e925` |
 
 **Cifras exactas para la landing** (bloque `CASO` de la ficha EN de la F3, rama `feat/bbq-catering-business-plan-en-f3`):
 
@@ -261,3 +261,48 @@ Paso 3 en el VPS sobre `04ca3786` + el alta de G9 (`bbq-catering-business-plan` 
 Aviso para la F3 (fuera de este paso): la FAQ del coste de la ficha dice «Your own truck tows the trailer»; el gate del
 producto veta «truck» (di «pickup» o «tow vehicle»), y su comentario de la contingencia dice «filas 7-12» cuando la
 fórmula es 10 % × filas 7, 8, 11, 12 y 15.
+
+**sha256 de §8** actualizados con la ronda de la revisión final (§9).
+
+## 9. Ronda de la revisión final (24-oct, sesión Claude Code): todo por la vía de TEXTO
+
+Informe en `REVISION-FINAL.md` (0 B · 6 M · 18 m, «listo tras arreglos de texto»). Decisiones del orquestador: M1-M6 SÍ
+con el texto del informe y los 18 menores donde fueran seguros. **Ninguna cifra del caso ni ninguna fórmula cambian**: el
+único cambio en `cifras_caso.json` es el TEXTO de `consumibles_pct` (4% → 3.5%, M1); los 117 valores restantes y todos
+los valores, idénticos. Re-extracción en el VPS (pistas del checklist reordenadas): mismos 959 ids, mismo `es` y mismo grupo.
+
+| # | Arreglo | Dónde | Estado |
+|---|---|---|---|
+| M1 | Token `consumibles_pct` con un decimal: docx [96] «add 3.5%» | `datos_bbq.tokens_bbq` (formato `pct1` solo en `bbq`) | aplicado |
+| M2 | `Phase 1` fila 12 = solicitud del préstamo (dos lenders, banco o SBA 7(a), no firmar el trailer antes de la aprobación); el software pasa a `Phase 5!E14`; docx [114] reescrito (trailer y van en la Phase 2; las fases se solapan, ningún evento pagado con permisos abiertos). Recuentos 11/13/12/10/12/10 intactos | `GBQ-check.json` · `TAREAS_BBQ` · `docx_en_bbq_b.json` | aplicado |
+| M3 | «All-in price per lb of cooked meat (sides, staff and margin included)» y su nota en las dos hojas de precios; `Instructions` «all-in: not comparable with by-the-pound menu prices»; landing: «all-in equivalent» (×3) y la razón «BBQ Catering Prices per Guest, Drop-Off vs. Full-Service» | `calculadora_bbq.py` · ficha EN | aplicado |
+| M4 | FAQ UK/CA/AU: la calculadora trabaja en lb, oz y galones (con 1 lb = 0.454 kg; 1 gallon = 3.8 liters), °F con °C al lado, millas | ficha EN | aplicado |
+| M5 | `Instructions!D64` «Mean hourly wages… and the median for chefs and head cooks» | `GBQ-plan.json` | aplicado |
+| M6 | `Staffing!J19`: 1.5 · 3 · 5 · 7 (2 en el pit + 5 servers, el ejemplo de la calculadora) · 5 → media ≈ 3.4 con la mezcla del docx | `GBQ-plan.json` · pista J19 | aplicado |
+| m1 | docx [104]: «report to it daily for supplies, cleaning and servicing… Certified Food Protection Manager certificate» | docx | aplicado |
+| m2 | docx [102] «before your health permit» | docx | aplicado |
+| m3 | Workers' comp opcional en Texas: docx [88], [107] y `Phase 2!E15` | docx · checklist | aplicado |
+| m4 | CDL con pickup + remolque (26,001 lb combinado con remolque > 10,000 lb) y la regla federal entre estados (USDOT, tarjeta médica DOT, FMCSA): docx [108] y `Phase 2!E11` | docx · checklist | aplicado |
+| m5 | `Phase 2!E9`: orden de burn ban del condado antes de cada evento; «10 ft between your pit and other vendors» | checklist | aplicado |
+| m6 | Arrastre ≥ 5,000 lb (2,270 kg), comprobado con el peso del trailer cargado: `Startup Costs!D7` y FAQ de coste de la landing | `GBQ-plan.json` · pista D7 · ficha EN | aplicado |
+| m7 | Calcos y británico: [49] «cleanup», [80] «breakdown» y «the final planning call with the client», [43] «small», [82] «any chafing dishes», [62] «meatpacker»; `Phase 6!B5` «final planning call»; `Phase 5!E13` «text messages» | docx · checklist | aplicado |
+| m8 | docx [41] y [94] sin la frase repetida de la caja inicial; [41] «the launch budget ({{inv_lanzamiento}}) and the live-fire rig ({{inv_rig}})» | docx | aplicado |
+| m9 | Orden del checklist: contador en la Week 1 y primero, «an LLC, with or without an S corp election»; `Phase 2!D15` «Weeks 3-5»; `Phase 3` proveedor de carne antes de la carving station; `Phase 6` cobro del saldo detrás de la visita | checklist · `TAREAS_BBQ` | aplicado |
+| m10 | «the example mix in the Word plan (section 3)» en `3 Example Quotes!A2` y en las 3 notas | calculadora | aplicado |
+| m11 | `Instructions!D59`: «at 1/3 lb cooked per guest; at the calculator's 8 oz, about 270 lb (123 kg)» | `GBQ-plan.json` | aplicado |
+| m12 | Aviso del coste provisional en la nota del precio por invitado | calculadora | aplicado |
+| m13 | «Rentals for this event (your cost; they carry your margin)» (sin cambiar la fórmula) | calculadora | aplicado |
+| m14 | Hot boxes: «Meat pans only: add carriers for hot sides…» | calculadora | aplicado |
+| m15 | Salchicha de ave a 165 °F: `Meat Yield!G18` e `Instructions` | calculadora | aplicado |
+| m16 | Drop-off: etiqueta con la hora de salida del hot holding y descarte a las 4 h, o chafing; Food Code 3-501.19 «ask your county» | `Phase 3!E13` | aplicado |
+| m17 | Landing: «the split between BBQ packages and add-ons»; «raw pounds and pieces per cut and the total cooked pounds»; «The Excel cells have no currency symbol…; the example in the Word plan is in US dollars» | ficha EN (esbuild de la ficha OK) | aplicado |
+| m18 | docx [108] «once you are VAT-registered»; °C entre paréntesis en las temperaturas del checklist (`Phase 1!E14`, `Phase 3!E6/E14`, `Phase 6!E9`) | docx · checklist | aplicado |
+
+No aplicado: nada. Desviación menor: en la landing, «the Word plan's example» se escribe «the example in the Word plan»
+(la cadena va entre comillas simples en el TS).
+
+**Regeneración y gates (VPS)**: `aplicar_en --idempotencia` (préstamo $101,000 en 1 vuelta, faltan 0, 0 diferencias, 0
+fallos de pycel, D15 sin fallos) · `ensamblar_docx --plan bbq` G8 VERDE (8,184 palabras) · calculadora regenerada (422
+fórmulas, autotest VERDE, 581 comprobaciones) · `gates_en` G1-G9 **TODO VERDE** · `--autotest` 20/20 · `ensamblar_docx
+--autotest` 8/8 · `barrido_bbq` 1,989 piezas, 0 fallos · `check_textos --todas` las 6 OK · `censo --letter` 0 defectos
+(1,156 fórmulas) · `gate-no-latinos` 0 · regresión FT/CAF, REST/PAN, BAR, CAT y MBAR TODO VERDE (20/20 · 18/18 · 16/16 · 8/8 · 8/8; `check_textos` 7 / 8 / 6 / 6 / 6 OK; calculadoras CAT y MBAR VERDE). sha256 (Mac = VPS) en la tabla de §8.

@@ -403,6 +403,8 @@ def tokens_bbq(base):
                 if 'ft' not in rot:
                     continue                               # partidas de la cafetería
                 src = ('fila', hoja, {'bbq': rot['ft']}, col)
+        if t == 'consumibles_pct':
+            fmt = 'pct1'                               # M1 de REVISION-FINAL: 3.5 %, no 4 %
         out[t] = (fmt, src, _DESC.get(t, desc))
     out.update(TOKENS_PROPIOS)
     return out
@@ -769,7 +771,7 @@ CELDA_PISTAS = OrderedDict([
     (('BBQP', _I, 'D7'), 'D102: smoker trailer nuevo clase 500 gal (offset / reverse-flow; leña, carbón o pellets): Meadow '
                          'Creek TS500 $20,395 (webstaurantstore.com); Yoder Frontiersman $8,495-$16,295 + envío '
                          '(yodersmokers.com). El vehículo de arrastre es el del DUEÑO ($0 en el plan): si no lo tienes, '
-                         'una pickup usada que remolque ≥ 3,000 lb (Kit estimate $25,000-$40,000). Nunca «truck»: di '
+                         'una pickup usada que remolque ≥ 5,000 lb, comprobado con el peso del trailer cargado (Kit estimate $25,000-$40,000). Nunca «truck»: di '
                          '«tow vehicle» o «pickup»'),
     (('BBQP', _I, 'D8'), 'D102: upfit del trailer: warming cabinet, lavamanos y depósitos de agua si tu condado lo exige '
                          '(cocinar en el evento puede convertirlo en mobile food unit), cajas de almacenaje y luces'),
@@ -837,8 +839,9 @@ CELDA_PISTAS = OrderedDict([
                          'la furgoneta'),
     (('BBQP', _R, 'J18'), 'D100: horas por persona y evento: porcionado, cocción nocturna (repartida), carga, viaje, '
                           'montaje, 2-3 h de servicio y recogida'),
-    (('BBQP', _R, 'J19'), 'D100: personas por evento de media: drop-off 1.5 · buffet 3 · empresa full-service 4 · bodas 5 '
-                          '· live-fire 4 (Kit estimate)'),
+    (('BBQP', _R, 'J19'), 'D100 (M6 de REVISION-FINAL): personas por evento: drop-off 1.5 · buffet de 70 3 · empresa '
+                          'full-service 5 · boda con live pit 7 (2 en el pit + 5 servers, como el ejemplo de la calculadora) · '
+                          'live-fire 5 (Kit estimate); ponderado con la mezcla del docx, ≈ 3.4'),
     (('BBQP', _ES, 'E23'), 'D100: la MISMA plantilla en los tres escenarios; en el pesimista el coste real del event staff '
                            'baja con los eventos (pagas horas por evento), así que el resultado real sería algo mejor'),
     (('BBQP', _N, 'A5'), 'D99: «0. Assumptions» es la hoja de mando: eventos al año, precio por invitado sin sales tax, '
@@ -911,16 +914,17 @@ _CK = ('D107: escribe una TAREA de un BBQ caterer off-site (B tarea · C respons
        '«Executive chef» → «Pitmaster»; plazos US («Week 1», «3 weeks out», nunca «D-21»); ' + REGLA_UNIDADES + '. '
        'Esta fila: ')
 TAREAS_BBQ = OrderedDict([
-    ('F1 - Constitución', [
-        'estructura: single-member LLC frente a S corp con tu contador (ES: autónomo / SL) [sobrevive]',
+    ('F1 - Constitución', [                                  # M2 y m9 de REVISION-FINAL: contador en la semana 1, préstamo en la fila 12
+        'contador / bookkeeper y estimated taxes trimestrales (semana 1) [sobrevive]',
+        'estructura: LLC, con o sin elección de S corp, con tu contador (ES: autónomo / SL) [sobrevive]',
         'registrar la LLC en el Secretary of State + registered agent + operating agreement [sobrevive]',
         'EIN gratis en el IRS para la LLC + alta estatal de nóminas y desempleo (vas a tener personal W-2) [sobrevive]',
         'cuenta bancaria del negocio y finanzas separadas [sobrevive]',
         'seller\'s permit / sales tax permit del estado: en muchos estados tributa toda la factura de catering (comida, '
         'personal, alquileres y, según el estado, el service charge) [sobrevive]',
         'business license de la ciudad o el condado (+ DBA si usas nombre comercial) [sobrevive]',
-        'contador / bookkeeper y estimated taxes trimestrales [sobrevive]',
-        'software de catering: propuestas, contratos con firma electrónica, depósitos y saldos [sobrevive]',
+        'solicitar el préstamo a dos lenders (banco o SBA 7(a)) con el plan, el Excel y los presupuestos del trailer y la '
+        'van; no firmar el trailer antes de la aprobación [nueva: el software pasa a P5 fila 14]',
         'contrato tipo con un abogado: depósito del 50 % nonrefundable, saldo entre 72 h y 14 días antes, tramos de '
         'cancelación sin huecos, variación de invitados y guest minimum, service charge frente a gratuity, fuerza mayor '
         'por burn ban (propane backup o nueva fecha), uso de fotos [sobrevive con ajuste del contenido]',
@@ -967,10 +971,10 @@ TAREAS_BBQ = OrderedDict([
         'el smoker del trailer, el live-fire rig (Santa Maria grill, Argentine parrilla, asado crosses, La Caja China) y '
         'el propane backup: prueba de temperatura de cada cámara [nueva]',
         'hotel pans, sheet pans y utensilios [sobrevive]',
-        'carving station: tabla, cuchillos, guantes, lámpara de calor y el guion del corte delante del invitado [nueva]',
         'proveedor de carne de origen autorizado (approved source: inspección USDA o estatal; el whole hog nunca custom '
         'exempt, que va marcado «not for sale») + cash-and-carry tipo Restaurant Depot; pedido 5-7 días antes '
         '[sobrevive con ajuste]',
+        'carving station: tabla, cuchillos, guantes, lámpara de calor y el guion del corte delante del invitado [nueva]',
         'proveedor de leña (post oak, hickory; red oak para Santa Maria) y carbón: seca, por cord, guardada lejos del '
         'fuego [nueva]',
         'acuerdo con una empresa de party rentals (mesas, mantelería, vajilla) con tarifa pactada [sobrevive]',
@@ -1008,16 +1012,19 @@ TAREAS_BBQ = OrderedDict([
         'acuerdos con venues y wedding planners (preferred vendor lists) [sobrevive]',
         'política de degustaciones para prospectos [sobrevive]',
         'Instagram y redes con fotos y vídeo del pit (ES: WhatsApp → texto / SMS) [sobrevive]',
-        'plantilla de presupuesto con la calculadora del kit (libras por invitado, smoke schedule y shopping list) y '
-        'seguimiento en el CRM [sobrevive con ajuste]',
+        'plantilla de presupuesto con la calculadora del kit (libras por invitado, smoke schedule y shopping list), '
+        'seguimiento en el CRM y software de catering que envía la propuesta, firma y cobra el depósito [sobrevive con '
+        'ajuste]',
         'programa de referidos y reseñas después de cada evento [sobrevive]',
         'tasting / pop-up de lanzamiento para planners, venues y empresas + el primer bridal show local [nueva]',
     ]),
     ('F6 - 90 Días', [
-        'briefing con el cliente 3 semanas antes («3 weeks out»): invitados, paquete, estilo regional, alergias y hora '
+        'llamada final de planificación con el cliente 3 semanas antes («3 weeks out»): invitados, paquete, estilo regional, alergias y hora '
         'de servicio [sobrevive con ajuste: fuera el calco «D-21»]',
         'visita o llamada técnica al venue 2 semanas antes: dónde va el smoker trailer o la carving station, acceso, '
         'suelo, agua y normas de fuego del venue [sobrevive con ajuste: fuera «D-14»]',
+        'saldo cobrado antes del evento (entre 72 h y 14 días según el contrato) y factura de extras en 48 h; control de '
+        'depósitos [sobrevive con ajuste]',
         'pedido de carne 5-7 días antes (libras crudas de la calculadora) y rubs, trimming y porcionado en la '
         'commissary 1-2 días antes, con el plan de ahumado («Start the pit by» de la calculadora) [sobrevive con ajuste: '
         'fuera «D-7 / D-1»]',
@@ -1026,8 +1033,6 @@ TAREAS_BBQ = OrderedDict([
         'montaje 60-90 min antes, carving station y servicio; el pit en el evento solo si el permiso lo cubre '
         '[sobrevive con ajuste]',
         'recogida, limpieza, ceniza fría y devolución de alquileres [sobrevive]',
-        'saldo cobrado antes del evento (entre 72 h y 14 días según el contrato) y factura de extras en 48 h; control de '
-        'depósitos [sobrevive con ajuste]',
         'pedir reseña y fotos; seguimiento en el CRM [sobrevive]',
         'revisión semanal del yield real (libras crudas frente a cocinadas), el food cost y las horas de personal por '
         'evento frente a la calculadora [sobrevive con ajuste]',
