@@ -1,0 +1,4999 @@
+{
+ "meta": {
+  "kit": "icecream",
+  "producto": "Ice Cream Shop Checklists Kit Pro",
+  "n_pendientes": 403,
+  "n_palabras": 3862,
+  "motivos": {
+   "nueva": 395,
+   "contexto": 4,
+   "adaptar": 4
+  },
+  "n_heredadas": 87,
+  "heredadas_por_via": {
+   "exacta": 84,
+   "sufijo": 3
+  },
+  "heredadas_por_fuente": {
+   "catering": 6,
+   "cafe": 81
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "icecream/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "icecream/textos_en/heredado.json (cómo se dijo ya cada cosa: base, cafetería, catering, pizzería, hamburguesería, ghost kitchen y bar)",
+   "icecream/mapas_icecream.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "▸ Checklist completo para la apertura y cierre diario de tu heladería.",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Instrucciones · B5"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0007",
+   "es": "▸ Incluye el paso de las vitrinas a modo servicio, la comprobación de cámaras, el montaje y el cierre.",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "01 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0008",
+   "es": "▸ Marca ✓ cada tarea completada. Adapta horarios a tu negocio.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0011",
+   "es": "▸ Ajusta temperaturas según tu equipamiento y normativa local.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "el local → the shop"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0012",
+   "es": "▸ Imprime en A4 y deja en obrador y mostrador.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "D17: US Letter",
+    "obrador → production room (o kitchen)"
+   ],
+   "adaptar": "A4 → US Letter",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0013",
+   "es": "Higiene, alérgenos y temperaturas:",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0014",
+   "es": "▸ La primera sección de «Apertura» es de higiene personal y de arranque seguro: extracción primero y, si tienes gas para gofres o crepes, comprobación de olor antes de encender nada.",
+   "grupo": "G1",
+   "palabras": 30,
+   "donde": [
+    "01 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Apertura",
+     "en": "Opening"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0015",
+   "es": "▸ Las tres temperaturas de una heladería son distintas y no se mezclan: conservación −18 °C, servicio de vitrina −14 a −12 °C y maduración de la mezcla 2-4 °C. Las vitrinas NO se apagan por la noche: pasan a conservación.",
+   "grupo": "G1",
+   "palabras": 41,
+   "donde": [
+    "01 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "adaptar": "Temperaturas US del kit: conservación a 0 °F o menos (ES −18 °C); servicio en la vitrina (dipping cabinet) a 6–10 °F (ES −14 a −12 °C; fabricante); maduración de la mezcla (aging) a 36–39 °F y nunca por encima de 41 °F (ES 2-4 °C; FDA Food Code 3-501.16). Las vitrinas NO se apagan por la noche: pasan a conservación",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0016",
+   "es": "▸ Los alérgenos viajan en la pala: un porcionador por cubeta y enjuague entre sabores. El barquillo y la galleta llevan gluten, y pistacho, avellana y almendra son de declaración obligatoria.",
+   "grupo": "G1",
+   "palabras": 30,
+   "donde": [
+    "01 · Instrucciones · B17"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "porcionador / pala → scoop (dipper); espátula → spade",
+    "cubeta → pan (tub / tray de la vitrina)",
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer"
+   ],
+   "adaptar": "Scoop (porcionador) y dipper well: Práctica US: el scoop, entre bola y bola, en el dipper well de agua corriente (FDA Food Code 3-304.12) o un scoop por sabor; el agua corriente NO quita los alérgenos: para un pedido con alergia, manos lavadas, guantes nuevos, scoop limpio y sanitizado y, si se puede, una cubeta que no haya tocado otro scoop (criterio del kit). Alérgenos US: los 9 principales (FALCPA + FASTER Act): leche, huevo, frutos de cáscara (pistacho, avellana, almendra), cacahuete, trigo (cucuruchos, barquillos y galletas), soja y sésamo, además de pescado y crustáceos; los sulfitos no son uno de los 9 (si los usas, déjalos en tu carta); en UK, los 14. El gluten se dice «wheat» (el trigo es el alérgeno). Sin «de declaración obligatoria»: en EE. UU. la etiqueta es para lo envasado (FDA Food Code 3-602.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0020",
+   "es": "Apertura de Heladería",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0022",
+   "es": "Higiene personal y arranque seguro",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0028",
+   "es": "Uniforme y delantal limpios, pelo recogido con gorro o redecilla y calzado antideslizante",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0030",
+   "es": "Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin esmalte: se sirve con porcionador y se manipulan cucuruchos y toppings",
+   "grupo": "G1",
+   "palabras": 21,
+   "donde": [
+    "01 · Apertura · B7"
+   ],
+   "pistas": [
+    "porcionador / pala → scoop (dipper); espátula → spade",
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer",
+    "toppings → toppings; virutas → sprinkles"
+   ],
+   "adaptar": "FDA Food Code 2-303.11: sin joyas en manos y brazos SALVO un anillo liso (alianza); uñas cortas y limpias, sin esmalte ni postizas salvo con guantes; y sin tocar con la mano desnuda lo listo para consumir: cucuruchos por el envoltorio o con servilleta o guantes, toppings con utensilio (FDA Food Code 3-301.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0033",
+   "es": "Declarar síntomas digestivos o respiratorios: quien los tenga no manipula helado, fruta ni toppings",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Apertura · B10"
+   ],
+   "pistas": [
+    "toppings → toppings; virutas → sprinkles"
+   ],
+   "adaptar": "FDA Food Code 2-201.11: el responsable (person in charge) comprueba que nadie tiene vómitos, diarrea, ictericia, dolor de garganta con fiebre o una herida infectada; quien los tenga no manipula alimentos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0034",
+   "es": "Encender la extracción del obrador y ventilar antes de poner en marcha pasteurizador y mantecadora",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura · B11"
+   ],
+   "pistas": [
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn",
+    "obrador → production room (o kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0036",
+   "es": "Si el obrador o la zona de gofres/crepes tiene GAS: abrir la llave general y comprobar que NO huele a gas ANTES de encender nada. Si huele, no enciendas, ventila y avisa al mantenedor",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "01 · Apertura · B12"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)",
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal y llama a la compañía de gas o al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0037",
+   "es": "Encendido y verificación de equipos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0038",
+   "es": "Pasar las vitrinas de exposición de conservación nocturna (−18 °C) a modo servicio (−14 a −12 °C) y comprobar que han mantenido la temperatura toda la noche — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "01 · Apertura · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Vitrinas → dipping cabinets: de modo conservación (0 °F) a modo servicio (6–10 °F; fabricante); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0040",
+   "es": "Comprobar que las cámaras de conservación han funcionado toda la noche y registrar la temperatura (≤ −18 °C) — anota la lectura: ____ °C. Si hay desviación, no sirvas el producto hasta valorarlo",
+   "grupo": "G1",
+   "palabras": 31,
+   "donde": [
+    "01 · Apertura · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Cámaras de conservación → walk-in / reach-in freezers a 0 °F o menos; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0042",
+   "es": "Comprobar la cámara de maduración (2-4 °C) — anota la lectura: ____ °C: por encima de 4 °C una mezcla pasteurizada vuelve a ser un caldo de cultivo",
+   "grupo": "G1",
+   "palabras": 28,
+   "donde": [
+    "01 · Apertura · B18"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "maduración de la mezcla → aging (age the mix)",
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Cámara de maduración → aging cooler (o tanque de maduración) a 36–39 °F; por encima de 41 °F la mezcla pasteurizada deja de estar segura (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0044",
+   "es": "Comprobar abatidor de temperatura operativo",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "abatidor → blast freezer / hardening cabinet; abatir → harden",
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Abatidor de temperatura → blast freezer / hardening cabinet",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "Encender iluminación de vitrinas y sala",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura · B20"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0047",
+   "es": "Registrar las temperaturas del día (vitrinas, cámaras y maduración): si tienes el Pack APPCC, en su hoja de temperaturas; si no, en la columna «Notas» de esta hoja",
+   "grupo": "G1",
+   "palabras": 28,
+   "donde": [
+    "01 · Apertura · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "maduración de la mezcla → aging (age the mix)",
+    "APPCC → food safety (HACCP solo si lo exige la licencia)"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); lectura en °F",
+   "cita_rotulos": [
+    {
+     "es": "Notas",
+     "en": "Notes"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0049",
+   "es": "Montaje de servicio",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0050",
+   "es": "Montar toppings frescos: la FRUTA que se sirve cruda, lavada y desinfectada con lejía apta para uso alimentario según la dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARADA con agua potable abundante; frutos secos y virutas, en recipiente cerrado",
+   "grupo": "G1",
+   "palabras": 41,
+   "donde": [
+    "01 · Apertura · B25"
+   ],
+   "pistas": [
+    "toppings → toppings; virutas → sprinkles"
+   ],
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»; frutos secos y virutas (sprinkles), en recipiente cerrado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Un porcionador por cubeta y enjuague entre sabores: el pistacho, la avellana y la almendra viajan de una cubeta a otra en la pala y son ALÉRGENOS de declaración obligatoria",
+   "grupo": "G1",
+   "palabras": 30,
+   "donde": [
+    "01 · Apertura · B26"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "porcionador / pala → scoop (dipper); espátula → spade",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "adaptar": "Práctica US: el scoop, entre bola y bola, en el dipper well de agua corriente (FDA Food Code 3-304.12) o un scoop por sabor; el agua corriente NO quita los alérgenos: para un pedido con alergia, manos lavadas, guantes nuevos, scoop limpio y sanitizado y, si se puede, una cubeta que no haya tocado otro scoop (criterio del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0053",
+   "es": "Tener a la vista la carta de ALÉRGENOS por sabor y comprobar que se corresponde con las cubetas que hay hoy en vitrina (leche, frutos secos, huevo, gluten del barquillo y la galleta, soja y sulfitos)",
+   "grupo": "G1",
+   "palabras": 36,
+   "donde": [
+    "01 · Apertura · B27"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "cubeta → pan (tub / tray de la vitrina)",
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer",
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act): leche, huevo, frutos de cáscara (pistacho, avellana, almendra), cacahuete, trigo (cucuruchos, barquillos y galletas), soja y sésamo, además de pescado y crustáceos; los sulfitos no son uno de los 9 (si los usas, déjalos en tu carta); en UK, los 14. El gluten se dice «wheat» (el trigo es el alérgeno); «carta de alérgenos» → allergen chart",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "Preparar salsas: chocolate, caramelo, frutos rojos, dulce de leche",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura · B28"
+   ],
+   "adaptar": "Salsas y toppings como diga su etiqueta (fabricante); lo lácteo abierto (dulce de leche, nata montada) y la fruta cortada, tapados y a 41 °F o menos (FDA Food Code 3-501.16); el hot fudge, en su calentador según el fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0055",
+   "es": "Reponer cucuruchos, tarrinas, cucharillas y servilletas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura · B29"
+   ],
+   "pistas": [
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer",
+    "tarrina → cup; tarrina para llevar → pint / quart",
+    "cucharilla → spoon (tasting spoon para las muestras)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0056",
+   "es": "Verificar stock de conos artesanales y barquillos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura · B30"
+   ],
+   "pistas": [
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0057",
+   "es": "Limpiar cristales de vitrina (interior y exterior)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura · B31"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0059",
+   "es": "Verificar aspecto visual de cubetas en vitrina (sin cristales de hielo)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Apertura · B32"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0060",
+   "es": "Apertura al público",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura · A34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Encender TPV / caja registradora y verificar fondo de caja",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura · B36"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Verificar datáfono y terminal de pagos operativo",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura · B37"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "Colocar pizarra/carta exterior con sabores del día",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura · B38"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "Verificar limpieza de zona de terraza/exterior si procede",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura · B39"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0067",
+   "es": "Abrir puerta y encender rótulo exterior",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura · B40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "Cierre de Heladería",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "Conservación de producto",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0076",
+   "es": "Tapar todas las cubetas con film/tapa hermética",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre · B6"
+   ],
+   "pistas": [
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Pasar las vitrinas de exposición a modo conservación (−18 °C): no se apagan — con género dentro, una parada nocturna se lleva por delante la partida entera",
+   "grupo": "G1",
+   "palabras": 26,
+   "donde": [
+    "01 · Cierre · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "adaptar": "Modo conservación a 0 °F (ES −18 °C): con producto dentro no se apagan",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0078",
+   "es": "Anotar las mermas del día (sabor, kg y motivo: agotado, desechado, cristalizado o descongelado): es el dato que corrige el food cost y la planificación de producción de mañana",
+   "grupo": "G1",
+   "palabras": 29,
+   "donde": [
+    "01 · Cierre · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: mermas → waste (waste log)",
+    "materias primas (MP) → ingredients (raw materials); food cost se queda",
+    "kg → lb; tarrinas de 0,5 L y 1 L → pints y quarts"
+   ],
+   "adaptar": "Mermas → waste log: sabor, cantidad (lb o cubetas) y motivo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0079",
+   "es": "Etiquetar cubetas con fecha de caducidad actualizada",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre · B9"
+   ],
+   "pistas": [
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0080",
+   "es": "Verificar stock de cubetas para producción del día siguiente",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre · B10"
+   ],
+   "pistas": [
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0081",
+   "es": "Limpieza de equipos y zona de servicio",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0082",
+   "es": "Limpiar y desinfectar vitrinas (superficies exteriores)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B14"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0083",
+   "es": "Vaciar y limpiar dispensadores de salsas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0084",
+   "es": "Limpiar y desinfectar porcionadores/espátulas de servicio",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre · B16"
+   ],
+   "pistas": [
+    "porcionador / pala → scoop (dipper); espátula → spade"
+   ],
+   "adaptar": "Scoops y espátulas: lavar, aclarar y sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); añade: vaciar, frotar y sanitizar el dipper well",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0085",
+   "es": "Limpiar mostrador, báscula y zona de cobro",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre · B17"
+   ],
+   "adaptar": "Mostrador, báscula y zona de cobro: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0086",
+   "es": "Vaciar papeleras y reponer bolsas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0087",
+   "es": "Fregar suelos de sala, obrador y almacén",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre · B19"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "obrador → production room (o kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0088",
+   "es": "Recoger y limpiar zona de terraza si procede",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre · B20"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0089",
+   "es": "Cierre administrativo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "Cuadre de caja: efectivo, tarjeta, otros medios de pago",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre · B24"
+   ],
+   "pistas": [
+    "cuadre de caja → cash count / reconcile"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Registrar ventas del día por sabor (top sellers)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0092",
+   "es": "Anotar incidencias del turno en libro de novedades",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Apagar iluminación, rótulo exterior y equipos no esenciales",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0094",
+   "es": "Cerrar y verificar puertas y alarma",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "▸ Checklist para las dos fases clave de producción de helado artesanal.",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "▸ Pasteurización: mezcla, tratamiento térmico, enfriamiento y maduración.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "adaptar": "Añade al final una nota corta del kit: pasteurizar la mezcla propia suele exigir una licencia ESTATAL de fabricante de frozen dessert o de lácteos (Vermont, Georgia, Arizona…) y algunos estados la piden incluso para mantecar una mezcla ya pasteurizada o tener una máquina de soft serve (Vermont, Massachusetts); con mezcla comprada ya pasteurizada suele bastar el health permit: compruébalo con el departamento de agricultura de tu estado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "▸ Mantecación: texturización, extracción, abatimiento y almacenaje.",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "▸ Ajusta temperaturas y tiempos a tu maquinaria y recetas.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Instrucciones · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0107",
+   "es": "▸ Usa las notas para registrar lotes, rendimientos y overrun.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "▸ Imprime y deja en el obrador junto a las fichas técnicas.",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0109",
+   "es": "Vida útil y caducidades:",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Instrucciones · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0110",
+   "es": "▸ Al pie de «Mantecación» tienes una tabla editable de vida útil por familia: ajústala a tu producto y a tu proveedor. Está fuera del contador porque es una referencia, no una tarea.",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "02 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Mantecación",
+     "en": "Batch Freezing"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "▸ La mezcla base pasteurizada NO se congela: se madura a 2-4 °C y se manteca en 3-5 días. Lo que se congela es el producto terminado, a −18 °C.",
+   "grupo": "G1",
+   "palabras": 31,
+   "donde": [
+    "02 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "La mezcla base pasteurizada NO se congela: se madura a 36–39 °F (nunca por encima de 41 °F) y se manteca en 3-5 días (criterio del kit, dentro de los 7 del date marking de la FDA, 3-501.17); lo que se congela es el helado terminado, a 0 °F o menos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Partida de Pasteurización",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Pasteurización · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0113",
+   "es": "Preparación de la mezcla",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Pasteurización · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0114",
+   "es": "Pesar todos los ingredientes según ficha técnica del sabor",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Pasteurización · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Mezclar ingredientes secos (azúcares, estabilizantes, leche en polvo)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Pasteurización · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Añadir líquidos (leche, nata) al pasteurizador",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Pasteurización · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0118",
+   "es": "Incorporar mezcla de secos sobre líquidos con batidora/turbo",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Pasteurización · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0119",
+   "es": "Pasteurización y enfriamiento",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Pasteurización · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0120",
+   "es": "Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Pasteurización · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Cifra del kit en °F: 185 °F durante 15 s (ES 85 °C 15 s, alta pasteurización); añade, breve, que mandan el programa validado de tu pasteurizador y el mínimo de tu licencia estatal (la nota de la licencia va en «Instructions» B6)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0121",
+   "es": "Añadir grasas y emulsionantes al alcanzar 40-50 °C en descenso",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Pasteurización · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "40-50 °C → 104–122 °F",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0122",
+   "es": "Enfriar rápidamente a 4 °C en abatidor o ciclo de enfriamiento",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Pasteurización · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "abatidor → blast freezer / hardening cabinet; abatir → harden"
+   ],
+   "adaptar": "La mezcla pasteurizada es TCS: enfriarla de 135 °F a 70 °F en 2 h y a 41 °F o menos en 4 h más (FDA Food Code 3-501.14); el ciclo de enfriamiento del pasteurizador suele hacerlo mucho antes (fabricante)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0123",
+   "es": "Verificar temperatura final de la mezcla (<4 °C)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Pasteurización · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Temperatura final de la mezcla: 41 °F o menos (lo ideal, 36–39 °F)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0124",
+   "es": "Trasvasar mezcla a contenedor de maduración limpio",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pasteurización · B20"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0125",
+   "es": "Etiquetar: sabor, fecha, hora inicio maduración, lote",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pasteurización · B21"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "Respetar tiempo de maduración: mínimo 4h, óptimo 8-12h a 2-4 °C",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "02 · Pasteurización · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "adaptar": "Maduración (aging): mínimo 4 h, lo óptimo 8-12 h, a 36–39 °F (criterio del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0127",
+   "es": "Limpiar y desinfectar pasteurizador tras cada uso",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Pasteurización · B23"
+   ],
+   "adaptar": "Limpiar y luego sanitizar el pasteurizador tras cada uso, como diga su fabricante; sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "Registrar lote de producción en hoja de trazabilidad",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Pasteurización · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "Partida de Mantecación",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Mantecación · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Preparación de mantecación",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Mantecación · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "Verificar que la mezcla ha completado tiempo de maduración",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Mantecación · B6"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "Agitar suavemente la mezcla antes de verter en mantecadora",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Mantecación · B7"
+   ],
+   "pistas": [
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0133",
+   "es": "Programar mantecadora: crema −7 °C/−9 °C | sorbete −10 °C/−12 °C",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Mantecación · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn",
+    "sorbete → sorbet"
+   ],
+   "adaptar": "Temperatura de extracción (draw temperature) según el fabricante de la mantecadora (batch freezer): helado 16–19 °F | sorbete 10–14 °F (ES −7/−9 °C y −10/−12 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Preparar cubetas pre-enfriadas en congelador (−20 °C)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Mantecación · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "adaptar": "Cubetas (pans) pre-enfriadas en el congelador a −4 °F (ES −20 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Mantecación y extracción",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Mantecación · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "Verter mezcla en mantecadora y comenzar ciclo",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Mantecación · B13"
+   ],
+   "pistas": [
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0138",
+   "es": "Añadir variegatos, inclusiones o ripple en último minuto si procede",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Mantecación · B14"
+   ],
+   "pistas": [
+    "variegato / ripple → swirl (ripple); inclusiones → mix-ins / inclusions"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "Extraer helado en cubeta pre-enfriada con espátula",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Mantecación · B15"
+   ],
+   "pistas": [
+    "porcionador / pala → scoop (dipper); espátula → spade",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0140",
+   "es": "Etiquetar cubeta: sabor, fecha de producción, caducidad y lote — la vida útil por familia está en la tabla del pie de esta hoja",
+   "grupo": "G1",
+   "palabras": 23,
+   "donde": [
+    "02 · Mantecación · B16"
+   ],
+   "pistas": [
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Pesar cubeta y registrar rendimiento / overrun",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Mantecación · B17"
+   ],
+   "pistas": [
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "adaptar": "Pesar la cubeta y anotar rendimiento y overrun; añade: el helado («ice cream») tiene que pesar al menos 4,5 lb por galón (21 CFR 135.110): un overrun demasiado alto lo deja fuera de la norma; el gelato no tiene norma federal",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Abatimiento y almacenaje",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Mantecación · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0143",
+   "es": "Abatir cubeta a −18 °C en abatidor (ciclo de congelación)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Mantecación · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "abatidor → blast freezer / hardening cabinet; abatir → harden",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "adaptar": "Endurecer (harden) la cubeta a 0 °F o menos en el abatidor (blast freezer / hardening cabinet)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0144",
+   "es": "Trasladar cubeta a cámara de conservación −18 °C/−20 °C",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Mantecación · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "adaptar": "Al congelador de conservación, de 0 °F a −4 °F (ES −18/−20 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0145",
+   "es": "Registrar producción del día: sabor, kg, lote, destino",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Mantecación · B23"
+   ],
+   "pistas": [
+    "kg → lb; tarrinas de 0,5 L y 1 L → pints y quarts"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0146",
+   "es": "Limpiar mantecadora: desmontar cuchillas, junta, cilindro",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Mantecación · B24"
+   ],
+   "pistas": [
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "adaptar": "Desmontar y limpiar la mantecadora como diga su fabricante (cuchillas / dasher, junta y cilindro) y luego sanitizarla",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0147",
+   "es": "Desinfectar superficies de obrador y utensilios utilizados",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Mantecación · B25"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)"
+   ],
+   "adaptar": "Superficies del obrador y utensilios: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0148",
+   "es": "VIDA ÚTIL ORIENTATIVA — ajústala a tu producto, a tu maquinaria y a tu proveedor",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Mantecación · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0151",
+   "es": "Helado y sorbete artesanal en cubeta tapada",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Mantecación · B31"
+   ],
+   "pistas": [
+    "cubeta → pan (tub / tray de la vitrina)",
+    "sorbete → sorbet"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0153",
+   "es": "En vitrina de servicio la calidad cae en 3-5 días: rota por sabor, no por la fecha larga de la cámara",
+   "grupo": "G1",
+   "palabras": 22,
+   "donde": [
+    "02 · Mantecación · D31"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0154",
+   "es": "Mezcla base pasteurizada, sin mantecar",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Mantecación · B32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0156",
+   "es": "La base no se congela: al descongelar se separa y pierde estructura",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Mantecación · D32"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0157",
+   "es": "Tarta helada y semifrío montados",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Mantecación · B33"
+   ],
+   "pistas": [
+    "tarta helada → ice cream cake; semifrío → semifreddo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "Envueltos y en caja: absorben el olor de la cámara con una facilidad enorme",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Mantecación · D33"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0160",
+   "es": "Fruta y purés de fruta congelados",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Mantecación · B34"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Congela en porciones de un solo uso: descongelar y volver a congelar no se hace",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "02 · Mantecación · D34"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0163",
+   "es": "Frutos secos, pastas y pralinés",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Mantecación · B35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "La grasa del fruto seco se enrancia sin avisar: fecha de apertura en el bote, siempre",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "02 · Mantecación · D35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Variegatos, salsas y toppings abiertos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Mantecación · B36"
+   ],
+   "pistas": [
+    "toppings → toppings; virutas → sprinkles",
+    "variegato / ripple → swirl (ripple); inclusiones → mix-ins / inclusions"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "El plazo cuenta desde la APERTURA: anótala en el envase el mismo día",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "02 · Mantecación · D36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "▸ Checklist para la gestión diaria, semanal y mensual de la heladería.",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "03 · Instrucciones · B5"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0175",
+   "es": "▸ Cubre producción, ventas, equipo, compras y control financiero.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0176",
+   "es": "▸ El encargado debe revisar estas tareas cada día/semana/mes.",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "▸ Ajusta frecuencias y responsabilidades según tu estructura.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "▸ Las celdas verdes son editables para personalizar.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0179",
+   "es": "▸ Usa las notas para registrar KPIs y observaciones.",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Registro de jornada:",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Instrucciones · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "▸ El registro horario diario es obligatorio para toda la plantilla desde el RD-ley 8/2019, temporeros incluidos: se cierra y se firma cada día y se archiva cada mes.",
+   "grupo": "G1",
+   "palabras": 30,
+   "donde": [
+    "03 · Instrucciones · B15"
+   ],
+   "adaptar": "Registro de jornada US: la FLSA obliga a registrar con exactitud las horas trabajadas del personal por horas (non-exempt), temporada incluida (29 CFR 516.2); sin RD-ley 8/2019",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0182",
+   "es": "▸ Los registros se conservan 4 años y tienen que estar a disposición de la Inspección de Trabajo y de los representantes de los trabajadores.",
+   "grupo": "G1",
+   "palabras": 24,
+   "donde": [
+    "03 · Instrucciones · B16"
+   ],
+   "adaptar": "Conservación US: fichajes 2 años y nóminas 3 (29 CFR 516.5-516.6; algunos estados piden más, p. ej. NY 6), a disposición del Department of Labor; sin «Inspección de Trabajo» ni «representantes de los trabajadores»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Tareas Diarias del Manager",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Tareas Diarias · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0184",
+   "es": "Planificación y producción",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Tareas Diarias · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Revisar plan de producción del día (sabores y cantidades)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Tareas Diarias · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "Verificar stock de materias primas clave (leche, nata, azúcar, fruta)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Tareas Diarias · B7"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "Revisar registros de temperatura APPCC del turno anterior",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Tareas Diarias · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → food safety (HACCP solo si lo exige la licencia)"
+   ],
+   "adaptar": "Registros de temperatura APPCC → los registros de temperatura del turno anterior (temperature logs, en °F)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Comprobar mezclas en maduración listas para mantecar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Diarias · B9"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)",
+    "degustación → samples / tasting"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "Ventas y operaciones",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Tareas Diarias · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "Revisar ventas del día anterior por sabor (identificar top sellers)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Tareas Diarias · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Asignar equipo a posiciones: obrador, mostrador, terraza",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Diarias · B14"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "obrador → production room (o kitchen)",
+    "terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0194",
+   "es": "Verificar pedidos de proveedores pendientes de recepción",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Diarias · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0195",
+   "es": "Gestionar incidencias del turno anterior (libro de novedades)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Tareas Diarias · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0196",
+   "es": "Cerrar y validar el registro diario de jornada del equipo (entradas, salidas y descansos) y que cada persona lo firme el mismo día: es obligatorio desde el RD-ley 8/2019, también para el refuerzo de temporada",
+   "grupo": "G1",
+   "palabras": 37,
+   "donde": [
+    "03 · Tareas Diarias · B17"
+   ],
+   "adaptar": "US: revisar y aprobar los fichajes del equipo (time-clock punches: entradas, salidas y pausas) en el POS o en la app de fichaje; temporada y menores incluidos; sin RD-ley 8/2019",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0197",
+   "es": "Servicio y calidad",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Tareas Diarias · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0198",
+   "es": "Supervisar presentación de vitrina (atractivo visual, orden)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Diarias · B21"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Verificar rotación de sabores en vitrina (FIFO)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Diarias · B22"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "Probar sabor del día / nueva receta si procede",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Tareas Diarias · B23"
+   ],
+   "pistas": [
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Probar con una cuchara limpia cada vez, nunca la misma dos veces (FDA Food Code 3-301.12)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Atender reseñas online y responder comentarios",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Tareas Diarias · B24"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile"
+   ],
+   "adaptar": "Plataformas US: Google Business Profile y Yelp",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Tareas Semanales del Manager",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Tareas Semanales · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Análisis y control",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Tareas Semanales · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0204",
+   "es": "Analizar ventas por sabor de la semana (ranking, tendencias)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Tareas Semanales · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0205",
+   "es": "Calcular food cost semanal: objetivo <28-32%",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Semanales · B7"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0206",
+   "es": "Revisar cumplimiento de checklists de apertura/cierre",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Semanales · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0207",
+   "es": "Reunión rápida con equipo: feedback, mejoras, planning",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Semanales · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0208",
+   "es": "Compras y carta",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Tareas Semanales · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0209",
+   "es": "Realizar pedido semanal de materias primas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Tareas Semanales · B13"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0210",
+   "es": "Planificar sabores de la semana siguiente (rotación, estacionalidad)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Tareas Semanales · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Actualizar carta/pizarra con sabores disponibles",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Tareas Semanales · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0212",
+   "es": "Revisar stock de envases, cucuruchos, tarrinas y complementos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Tareas Semanales · B16"
+   ],
+   "pistas": [
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer",
+    "tarrina → cup; tarrina para llevar → pint / quart"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0213",
+   "es": "Mantenimiento",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Tareas Semanales · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Verificar estado de maquinaria: mantecadora, pasteurizador, vitrinas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Semanales · B20"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0215",
+   "es": "Supervisar limpieza profunda semanal de equipos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Tareas Semanales · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Revisar caducidades en almacén y cámaras (FIFO)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Semanales · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0217",
+   "es": "Tareas Mensuales del Manager",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Tareas Mensuales · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0218",
+   "es": "Control financiero",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Tareas Mensuales · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0219",
+   "es": "Elaborar P&L mensual: ventas, costes MP, personal, fijos",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Tareas Mensuales · B6"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Realizar inventario completo valorado (MP, envases, producto)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Mensuales · B7"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Revisar food cost mensual por familia de sabores",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Tareas Mensuales · B8"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0222",
+   "es": "Evaluar rentabilidad por sabor (margen unitario)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Tareas Mensuales · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0223",
+   "es": "Equipo y formación",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Tareas Mensuales · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "Evaluación de rendimiento del equipo",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Tareas Mensuales · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "Planificar turnos y vacaciones del mes siguiente",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Mensuales · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0227",
+   "es": "Sesión de formación: nuevas recetas, técnicas, atención al cliente",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Tareas Mensuales · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0228",
+   "es": "Producto y mantenimiento",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Tareas Mensuales · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0229",
+   "es": "Mantenimiento preventivo de maquinaria (revisar juntas, filtros)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Mensuales · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0230",
+   "es": "Planificar carta estacional del mes siguiente",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Tareas Mensuales · B21",
+    "05 · Tareas Mensuales · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0231",
+   "es": "Actualizar fichas técnicas de sabores si hay cambios",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Tareas Mensuales · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "Revisar y responder reseñas online del mes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Mensuales · B23"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile"
+   ],
+   "adaptar": "Plataformas US: Google Business Profile y Yelp",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0233",
+   "es": "Evaluar proveedores: calidad, precio, cumplimiento",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Tareas Mensuales · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "Revisar documentación APPCC y registros del mes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Tareas Mensuales · B25"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → food safety (HACCP solo si lo exige la licencia)"
+   ],
+   "adaptar": "APPCC → seguridad alimentaria (food safety): los registros de temperatura, limpieza y lotes; un plan HACCP solo si tu licencia estatal o una varianza lo exige",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "▸ Tres hojas con las tareas específicas de cada perfil.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "▸ Heladero/Obrador: producción, mantecación, limpieza de maquinaria.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)",
+    "dependiente → scooper (counter staff); heladero/obrador → ice cream maker"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "▸ Dependiente/Mostrador: atención al cliente, vitrina, caja.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "dependiente → scooper (counter staff); heladero/obrador → ice cream maker"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "▸ Encargado de turno: supervisión, flujos, incidencias.",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Instrucciones · B8"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "▸ Adapta según el tamaño de tu equipo y estructura.",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0245",
+   "es": "▸ Entrega a cada perfil su hoja correspondiente.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Tareas del Heladero / Obrador",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Heladero-Obrador · A1"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)",
+    "dependiente → scooper (counter staff); heladero/obrador → ice cream maker"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0247",
+   "es": "Inicio de turno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Heladero-Obrador · A4",
+    "04 · Dependiente-Mostrador · A4",
+    "04 · Encargado Turno · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Revisar mezclas en maduración listas para mantecar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Heladero-Obrador · B6"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Verificar estado y limpieza de pasteurizador y mantecadora",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Heladero-Obrador · B7"
+   ],
+   "pistas": [
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0250",
+   "es": "Pesar ingredientes según fichas técnicas del plan de producción",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Heladero-Obrador · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0251",
+   "es": "Preparar cubetas limpias y pre-enfriadas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Heladero-Obrador · B9"
+   ],
+   "pistas": [
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0252",
+   "es": "Producción",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Heladero-Obrador · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Preparar y pasteurizar mezclas según plan del día",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Heladero-Obrador · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0254",
+   "es": "Mantecar sabores según orden de prioridad (agotados primero)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Heladero-Obrador · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Añadir variegatos e inclusiones según ficha del sabor",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Heladero-Obrador · B15"
+   ],
+   "pistas": [
+    "variegato / ripple → swirl (ripple); inclusiones → mix-ins / inclusions"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Rellenar vitrina con cubetas frescas (aspecto visual cuidado)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Heladero-Obrador · B16"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Registrar lotes de producción: sabor, kg, fecha, caducidad",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Heladero-Obrador · B17"
+   ],
+   "pistas": [
+    "kg → lb; tarrinas de 0,5 L y 1 L → pints y quarts"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0258",
+   "es": "Cierre de turno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Heladero-Obrador · A19",
+    "04 · Dependiente-Mostrador · A20",
+    "04 · Encargado Turno · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Limpiar y desinfectar mantecadora (desmontar cuchillas y junta)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Heladero-Obrador · B21"
+   ],
+   "pistas": [
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "adaptar": "Mantecadora: desmontar, limpiar y sanitizar (cuchillas y junta) como diga su fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Limpiar pasteurizador si se ha utilizado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Heladero-Obrador · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Limpiar obrador: superficies, balanzas, utensilios",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Heladero-Obrador · B23"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)"
+   ],
+   "adaptar": "Superficies, balanzas y utensilios: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Dejar preparadas mezclas en maduración para el día siguiente",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Heladero-Obrador · B24"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Comunicar incidencias y stock al encargado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Heladero-Obrador · B25"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Tareas del Dependiente / Mostrador",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Dependiente-Mostrador · A1"
+   ],
+   "pistas": [
+    "dependiente → scooper (counter staff); heladero/obrador → ice cream maker"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0265",
+   "es": "Verificar presentación de la vitrina (orden, limpieza, atractivo)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Dependiente-Mostrador · B6"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0266",
+   "es": "Montar toppings, salsas, cucuruchos y tarrinas en mostrador",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Dependiente-Mostrador · B7"
+   ],
+   "pistas": [
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer",
+    "tarrina → cup; tarrina para llevar → pint / quart",
+    "toppings → toppings; virutas → sprinkles"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0267",
+   "es": "Verificar operatividad de caja/TPV y datáfono",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente-Mostrador · B8"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0268",
+   "es": "Revisar carta de sabores del día y alérgenos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Dependiente-Mostrador · B9"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0269",
+   "es": "Durante el servicio",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Dependiente-Mostrador · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Atender clientes: informar sabores, alérgenos, recomendar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Dependiente-Mostrador · B13"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Añade: las muestras (samples), con cucharilla de un solo uso (tasting spoon) que nunca vuelve a la cubeta (criterio del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0272",
+   "es": "Servir helado con presentación cuidada (bola uniforme, topping)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Dependiente-Mostrador · B14"
+   ],
+   "pistas": [
+    "toppings → toppings; virutas → sprinkles"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0273",
+   "es": "Cobrar correctamente y ofrecer tarjeta de fidelización",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente-Mostrador · B15"
+   ],
+   "pistas": [
+    "tarjeta de fidelización → loyalty card / punch card"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0274",
+   "es": "Mantener limpio mostrador, cristales de vitrina y zona de servicio",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "04 · Dependiente-Mostrador · B16"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "Avisar al obrador cuando un sabor esté agotado o bajo mínimo",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "04 · Dependiente-Mostrador · B17"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0276",
+   "es": "Gestionar colas y flujo de clientes en hora punta",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Dependiente-Mostrador · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0277",
+   "es": "Cuadre de caja: efectivo, tarjeta y otros medios",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Dependiente-Mostrador · B22"
+   ],
+   "pistas": [
+    "cuadre de caja → cash count / reconcile"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0278",
+   "es": "Recoger toppings, salsas y guardar en refrigeración",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Dependiente-Mostrador · B23"
+   ],
+   "pistas": [
+    "toppings → toppings; virutas → sprinkles"
+   ],
+   "adaptar": "Lo perecedero, tapado y a 41 °F o menos (FDA Food Code 3-501.16); lo seco, en recipiente cerrado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Limpiar zona de mostrador y equipos de servicio",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Dependiente-Mostrador · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "Comunicar al encargado incidencias y sabores más vendidos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Dependiente-Mostrador · B25"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "Tareas del Encargado de Turno",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado Turno · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado → shift lead"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "Supervisar apertura completa según checklist",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado Turno · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "Verificar equipo presente y asignar posiciones",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado Turno · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "Revisar libro de novedades del turno anterior",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado Turno · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "Verificar temperaturas de vitrinas y cámaras (registro APPCC)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Encargado Turno · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "APPCC → food safety (HACCP solo si lo exige la licencia)"
+   ],
+   "adaptar": "Temperaturas de vitrinas (6–10 °F) y congeladores (0 °F o menos) en el registro (temperature log)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "Durante el turno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Encargado Turno · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "Supervisar flujo de clientes y reforzar posiciones si necesario",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Encargado Turno · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "Gestionar reclamaciones y atención especial a clientes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado Turno · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "Monitorizar temperaturas de vitrina durante el servicio",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado Turno · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "adaptar": "Vitrinas a 6–10 °F durante el servicio (fabricante)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "Gestionar breaks del equipo sin afectar servicio",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado Turno · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Autorizar descuentos, cortesías o cambios de precio",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado Turno · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Supervisar cierre completo según checklist",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Encargado Turno · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Registrar incidencias del turno en libro de novedades",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Encargado Turno · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "Verificar cuadre de caja y firmar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Encargado Turno · B23"
+   ],
+   "pistas": [
+    "cuadre de caja → cash count / reconcile"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0295",
+   "es": "Comunicar novedades relevantes al siguiente turno / manager",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Encargado Turno · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0301",
+   "es": "▸ Limpieza profunda semanal, mantenimiento de equipos y control mensual.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "▸ Imprescindible para mantener calidad de producto y cumplir APPCC.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → food safety (HACCP solo si lo exige la licencia)"
+   ],
+   "adaptar": "APPCC → seguridad alimentaria (food safety)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "▸ Asigna un día fijo de la semana para limpieza profunda.",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "▸ Adapta frecuencias según volumen de producción y equipamiento.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "▸ Las tareas mensuales se pueden distribuir a lo largo del mes.",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0306",
+   "es": "Lo que no es semanal ni mensual:",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Instrucciones · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "▸ La hoja «Trimestral y Anual» recoge lo que se contrata fuera y lo que pide una inspección: DDD, conductos de extracción, gases fluorados, calibración de sondas, extintores, gas, legionela, registro sanitario, formación en alérgenos, póliza y facturación.",
+   "grupo": "G2",
+   "palabras": 37,
+   "donde": [
+    "05 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "Describe la lista US de la hoja «Quarterly & Annual»: control de plagas, campana y conductos (si se cocina con grasa, NFPA 96), frío (EPA 608), calibración de termómetros, extintores (OSHA), gas, backflow, health permit y licencia estatal de frozen dessert si fabricas, food handler cards y alérgenos, seguros (con la pérdida de género por avería del frío) y POS / sales tax. Sin DDD, BIE, gases fluorados, legionela ni facturación española",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "▸ En esa hoja la columna «Cadencia» sustituye a «Hora», y el número de parte del mantenedor se anota en «Notas»: sin el parte firmado, la tarea no está hecha a efectos de inspección.",
+   "grupo": "G2",
+   "palabras": 33,
+   "donde": [
+    "05 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "«Cadencia» → \"Frequency\"; el nº de parte → el número del informe de servicio (service report #), en \"Notes\": sin el informe firmado, la tarea no está hecha a efectos de inspección",
+   "cita_rotulos": [
+    {
+     "es": "Cadencia",
+     "en": "Frequency"
+    },
+    {
+     "es": "Hora",
+     "en": "Time"
+    },
+    {
+     "es": "Notas",
+     "en": "Notes"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "▸ La cobertura de pérdida de mercancía por avería del frío no es un extra en una heladería: es la que responde cuando una cámara se para en agosto.",
+   "grupo": "G2",
+   "palabras": 28,
+   "donde": [
+    "05 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "adaptar": "Seguro US: equipment breakdown con cobertura de género estropeado (food spoilage): la que responde cuando un congelador se para en julio",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Vitrinas y zona de servicio",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · A4"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Desmontar y limpiar rejillas interiores de vitrinas de exposición",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Limpieza Semanal · B6"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Limpiar interior completo de vitrinas (paredes, base, cristales)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Limpieza Semanal · B7"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Limpiar y desinfectar dispensadores de salsas y toppings",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Limpieza Semanal · B8"
+   ],
+   "pistas": [
+    "toppings → toppings; virutas → sprinkles"
+   ],
+   "adaptar": "Dispensadores de salsas y toppings: desmontar, lavar, aclarar y sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Desinfectar bandejas de cucuruchos, tarrinas y complementos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B9"
+   ],
+   "pistas": [
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer",
+    "tarrina → cup; tarrina para llevar → pint / quart"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Obrador y maquinaria",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · A11"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Desmontar y limpiar piezas de mantecadora (cuchillas, junta, cilindro)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Limpieza Semanal · B13"
+   ],
+   "pistas": [
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "Limpiar filtros de condensadores de equipos de frío",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Limpieza Semanal · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Limpiar paredes y estantes de obrador",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B15"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)",
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0320",
+   "es": "Desinfectar contenedores de maduración",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Limpieza Semanal · B16"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0321",
+   "es": "Limpiar máquina de hielo si procede",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B17"
+   ],
+   "adaptar": "Máquina de hielo: limpieza y desinfección como diga su fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Cámaras y almacén",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · A19"
+   ],
+   "pistas": [
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0323",
+   "es": "Limpiar interior de cámaras de conservación",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0324",
+   "es": "Revisar caducidades FIFO en cámaras y almacén",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Limpiar estantes y suelo de almacén",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Gestión y Mantenimiento Semanal",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Gestión Semanal · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0327",
+   "es": "Mantenimiento preventivo",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Gestión Semanal · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "Test de mantecadora en vacío: verificar temperatura y ciclo",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Gestión Semanal · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0329",
+   "es": "Verificar niveles de refrigerante en equipos de frío",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Gestión Semanal · B7"
+   ],
+   "adaptar": "Errata ES: el personal no toca el refrigerante (solo un técnico certificado EPA 608, hoja «Quarterly & Annual»): el equipo comprueba que cada equipo de frío mantiene su temperatura, sin escarcha ni ruidos raros, y si no, avisa al técnico",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0330",
+   "es": "Calibrar balanzas de obrador (pesos patrón)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Gestión Semanal · B8"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)"
+   ],
+   "adaptar": "Báscula: comprobación con pesas patrón; si vendes al peso, la báscula tiene que ser legal para el comercio (legal-for-trade, NTEP) y la revisa la oficina de pesas y medidas de tu estado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0331",
+   "es": "Revisar estado de utensilios: espátulas, porcionadores, moldes",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Gestión Semanal · B9"
+   ],
+   "pistas": [
+    "porcionador / pala → scoop (dipper); espátula → spade"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0332",
+   "es": "Si sirves café o bebidas calientes: backflush del grupo con detergente, cambio de junta si toca y ciclo de limpieza del lavavajillas (filtros y brazos de lavado)",
+   "grupo": "G2",
+   "palabras": 27,
+   "donde": [
+    "05 · Gestión Semanal · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0333",
+   "es": "Inventario y rotación",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Gestión Semanal · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0334",
+   "es": "Inventario rápido de materias primas clave",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Gestión Semanal · B14"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "Verificar rotación de sabores en vitrina (retirar poco demandados)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Gestión Semanal · B15"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0336",
+   "es": "Comprobar stock de envases y material de servicio",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Gestión Semanal · B16"
+   ],
+   "pistas": [
+    "degustación → samples / tasting"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0337",
+   "es": "Calibración y mantenimiento",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Mensuales · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0338",
+   "es": "Calibrar termómetros y sondas de temperatura",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Mensuales · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Termómetros de sonda: comprobación en agua con hielo (32 °F); los de vitrinas y congeladores, contra uno de referencia",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0339",
+   "es": "Mantenimiento preventivo del pasteurizador (juntas, resistencias)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Mensuales · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0340",
+   "es": "Revisar juntas de puertas de cámaras frigoríficas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Mensuales · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0341",
+   "es": "Verificar estado de aislamiento de cámaras y vitrinas",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Mensuales · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0342",
+   "es": "Inventario y control",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Mensuales · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0343",
+   "es": "Inventario completo valorado: MP, envases, producto terminado",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Mensuales · B13"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0344",
+   "es": "Calcular food cost mensual real vs objetivo (<28-32%)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Tareas Mensuales · B14"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "Revisar mermas acumuladas del mes por sabor",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Mensuales · B15"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "Documentación y calidad",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Mensuales · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0347",
+   "es": "Revisar y archivar documentación APPCC del mes",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Mensuales · B20"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → food safety (HACCP solo si lo exige la licencia)"
+   ],
+   "adaptar": "APPCC → seguridad alimentaria (food safety): los registros de temperatura, limpieza y lotes; un plan HACCP solo si tu licencia estatal o una varianza lo exige",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0348",
+   "es": "Test de alérgenos: verificar etiquetado y trazabilidad",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Mensuales · B21"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos: etiquetas de los pints preenvasados (FDA Food Code 3-602.11) y la carta de alérgenos al día con las recetas (los 9 de EE. UU.)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0349",
+   "es": "Limpieza profunda general del local (suelos, paredes, techos)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Mensuales · B22"
+   ],
+   "pistas": [
+    "RRSS → social media",
+    "el local → the shop"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "Actualizar fichas técnicas si hay cambios de receta",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Mensuales · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "Mantenimiento Trimestral y Anual — Heladería Artesanal",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Trimestral y Anual · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "▸ Planificación estacional para heladería artesanal.",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Instrucciones · B5"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0377",
+   "es": "▸ Temporada alta (primavera-verano): máxima producción y carta ampliada.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Instrucciones · B6"
+   ],
+   "adaptar": "Temporada alta US: de Memorial Day (último lunes de mayo) a Labor Day (primer lunes de septiembre); la primavera es la pretemporada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "▸ Temporada baja (otoño-invierno): carta reducida, productos complementarios.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "▸ Catering y eventos: logística y servicio externo.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "▸ Ajusta fechas y sabores según tu zona geográfica.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "▸ Usa como base para la planificación trimestral.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "Antes de aceptar un evento:",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Instrucciones · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "▸ La primera sección de «Catering Eventos» es lo que se pacta ANTES de producir: alérgenos por escrito, nº de comensales, precio, señal y condiciones de cancelación.",
+   "grupo": "G2",
+   "palabras": 26,
+   "donde": [
+    "06 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: señal / anticipo → deposit",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "señal → deposit"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Catering Eventos",
+     "en": "Ice Cream Catering"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "▸ Pide siempre señal: el helado de un evento se produce a medida y, si el evento se cae, no se revende.",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "06 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "señal → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Temporada Alta — Primavera / Verano",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Alta · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Preparación pre-temporada (marzo-abril)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Alta · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0387",
+   "es": "Ampliar carta a 18-24 sabores: incorporar frutales de temporada",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Temporada Alta · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Reforzar equipo: contratar personal 2 semanas antes de temporada",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Temporada Alta · B7"
+   ],
+   "adaptar": "Reforzar el equipo: contratar 2 semanas antes; añade: en verano muchos son menores: con 14-15 años, horario limitado por la FLSA (29 CFR 570.35: fuera del horario escolar, hasta las 7 PM y hasta las 9 PM del 1 de junio al Labor Day, con máximos por día y por semana) y solo los equipos que permite 29 CFR 570.34; el permiso de trabajo (work permit), según el estado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "Aumentar stock de materias primas +40-50% respecto a invierno",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Temporada Alta · B8"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0390",
+   "es": "Verificar capacidad de producción (mantecadora, pasteurizador, cámaras)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Temporada Alta · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "mantecadora → batch freezer; mantecar → batch-freeze / churn"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0391",
+   "es": "Planificar horario ampliado de apertura",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Alta · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0392",
+   "es": "Operaciones temporada alta (mayo-septiembre)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Temporada Alta · A12"
+   ],
+   "adaptar": "Mayo-septiembre → «Memorial Day–Labor Day»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Producir diariamente según demanda (2-3 tandas de mantecación)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Temporada Alta · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Montar y gestionar servicio de terraza/exterior",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Temporada Alta · B15"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "terraza → patio"
+   ],
+   "adaptar": "Terraza → patio, con el permiso de la ciudad si lo pide (outdoor seating / patio permit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "Reforzar mostrador en horas punta (2 dependientes mínimo)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Temporada Alta · B16"
+   ],
+   "pistas": [
+    "dependiente → scooper (counter staff); heladero/obrador → ice cream maker"
+   ],
+   "adaptar": "2 dependientes → 2 scoopers como mínimo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Campaña en RRSS: fotos de sabores, stories, reels de producción",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Temporada Alta · B17"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Preparar envases para llevar: tarrinas 0.5L, 1L, helado por kg",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Temporada Alta · B18"
+   ],
+   "pistas": [
+    "tarrina → cup; tarrina para llevar → pint / quart",
+    "kg → lb; tarrinas de 0,5 L y 1 L → pints y quarts"
+   ],
+   "adaptar": "Envases para llevar US: pints y quarts (al peso, solo con una báscula legal para el comercio, legal-for-trade, que revisa la oficina estatal de pesas y medidas); los pints que se envasan antes para el congelador de autoservicio llevan etiqueta con nombre, ingredientes y alérgenos principales (FDA Food Code 3-602.11); los que se llenan al momento para el cliente, no",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0399",
+   "es": "Control diario de stock: fruta fresca, lácteos, azúcares",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Temporada Alta · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0400",
+   "es": "Temporada Baja — Otoño / Invierno",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Baja · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0401",
+   "es": "Ajuste de carta y operaciones (octubre-febrero)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Temporada Baja · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0402",
+   "es": "Reducir carta a 10-14 sabores: chocolate, turrón, canela, especias",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Temporada Baja · B6"
+   ],
+   "adaptar": "Carta de invierno US: 10-14 sabores (chocolate, peppermint, eggnog sin alcohol, canela, pumpkin); sin turrón",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0403",
+   "es": "Incorporar productos complementarios: chocolate caliente, gofres, crêpes",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Temporada Baja · B7"
+   ],
+   "adaptar": "Complementos: chocolate caliente, gofres (waffles), crepes y tartas heladas (ice cream cakes) para cumpleaños y fiestas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0404",
+   "es": "Ajustar horarios y turnos de personal a demanda reducida",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Temporada Baja · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0405",
+   "es": "Reducir frecuencia de producción (1 tanda cada 2-3 días)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Temporada Baja · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0406",
+   "es": "Mantenimiento y desarrollo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Temporada Baja · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0407",
+   "es": "Mantenimiento profundo de toda la maquinaria",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Baja · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "Testear y desarrollar nuevas recetas para la próxima temporada",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Temporada Baja · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Formación del equipo: técnicas, atención al cliente, alérgenos",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Temporada Baja · B15"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0410",
+   "es": "Renovar decoración y cartelería del local si necesario",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Temporada Baja · B16"
+   ],
+   "pistas": [
+    "el local → the shop"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0411",
+   "es": "Revisar y renegociar contratos con proveedores",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Temporada Baja · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0412",
+   "es": "Catering y Eventos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Catering Eventos · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "Al confirmar el pedido o el evento",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Catering Eventos · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Recoger POR ESCRITO los alérgenos e intolerancias de los comensales y confirmar qué sabores puedes servir: una carta de heladería concentra LECHE, FRUTOS SECOS, HUEVO, GLUTEN (barquillo y galleta), SOJA y SULFITOS",
+   "grupo": "G2",
+   "palabras": 32,
+   "donde": [
+    "06 · Catering Eventos · B6"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)",
+    "cucurucho → cone (waffle cone, sugar cone); barquillo → wafer"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act): leche, huevo, frutos de cáscara (pistacho, avellana, almendra), cacahuete, trigo (cucuruchos, barquillos y galletas), soja y sésamo, además de pescado y crustáceos; los sulfitos no son uno de los 9 (si los usas, déjalos en tu carta); en UK, los 14. El gluten se dice «wheat» (el trigo es el alérgeno)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0415",
+   "es": "Confirmar por escrito nº de comensales, formatos, hora y lugar del servicio, y quién recibe el material en el sitio",
+   "grupo": "G2",
+   "palabras": 20,
+   "donde": [
+    "06 · Catering Eventos · B7"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "adaptar": "Añade: en un evento público, el permiso temporal del condado (temporary food establishment permit) si lo pide, y agua para lavarse las manos en el puesto (norma local)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0416",
+   "es": "Fijar el precio por comensal (o por kg) y cobrar SEÑAL antes de producir: el helado se hace a medida y no se revende",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "06 · Catering Eventos · B8"
+   ],
+   "pistas": [
+    "kg → lb; tarrinas de 0,5 L y 1 L → pints y quarts"
+   ],
+   "adaptar": "Señal → deposit; precio por persona (o por pint / galón)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0417",
+   "es": "Acordar por escrito las condiciones de cancelación y hasta cuándo se puede cambiar el número de comensales",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "06 · Catering Eventos · B9"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Comprobar que hay hueco en cámara a −18 °C para todo el pedido ANTES de aceptarlo",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "06 · Catering Eventos · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Hueco en el congelador a 0 °F o menos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0420",
+   "es": "Preparación del evento",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Catering Eventos · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Diseñar carta catering: formatos (bola, vasito, tarrina mini, tarta helada)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Catering Eventos · B14"
+   ],
+   "pistas": [
+    "tarrina → cup; tarrina para llevar → pint / quart",
+    "tarta helada → ice cream cake; semifrío → semifreddo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0422",
+   "es": "Calcular producción: 2-3 bolas/persona, mínimo 4 sabores",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Catering Eventos · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Producir con 24-48h de antelación y almacenar a −18 °C",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Catering Eventos · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Producir 24-48 h antes y guardar a 0 °F o menos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Preparar kit de servicio externo: cubetas, espátulas, guantes, servilletas",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Catering Eventos · B17"
+   ],
+   "pistas": [
+    "porcionador / pala → scoop (dipper); espátula → spade",
+    "cubeta → pan (tub / tray de la vitrina)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "Logística y transporte",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Catering Eventos · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "Verificar cadena de frío para transporte (cajas isotérmicas, hielo seco)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Catering Eventos · B21"
+   ],
+   "adaptar": "Cadena de frío: cajas isotérmicas (insulated carriers) y hielo seco (dry ice: con guantes, sin tocar el helado y con el vehículo ventilado; criterio del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0427",
+   "es": "Cargar vehículo con producto y material de servicio",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Catering Eventos · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "Verificar la temperatura del producto a la llegada (≤ −12 °C) — anota la lectura: ____ °C. Por encima, no lo sirvas: valóralo antes",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "06 · Catering Eventos · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "A la llegada, 10 °F o menos (ES −12 °C); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Servicio y cierre",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Catering Eventos · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0430",
+   "es": "Montar mesa de servicio en el evento según briefing del cliente",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Catering Eventos · B27"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0431",
+   "es": "Servir helado manteniendo presentación y rotación de sabores",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Catering Eventos · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0432",
+   "es": "Recoger material, limpiar zona y transportar de vuelta",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Catering Eventos · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Emitir factura y enviar encuesta de satisfacción al cliente",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Catering Eventos · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "▸ Tres plantillas en blanco para crear tus propios checklists.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "▸ Por zona: organiza tareas según zona de la heladería.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0441",
+   "es": "▸ Por turno: divide tareas según turno de mañana/tarde.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0442",
+   "es": "▸ Por perfil: asigna tareas según rol del empleado.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0443",
+   "es": "▸ Completa las tareas según las necesidades de tu negocio.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0444",
+   "es": "▸ Puedes duplicar hojas para crear más plantillas.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0445",
+   "es": "▸ Imprime en A4 y plastifica para uso diario.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Instrucciones · B13"
+   ],
+   "pistas": [
+    "D17: US Letter"
+   ],
+   "adaptar": "A4 → US Letter",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0446",
+   "es": "Plantilla Personalizable — Por Zona",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "07 · Por Zona · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0447",
+   "es": "Plantilla Personalizable — Por Turno",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "07 · Por Turno · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Plantilla Personalizable — Por Perfil",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "07 · Por Perfil · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0454",
+   "es": "▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "08 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: cafe",
+   "base_en": "▸ This is the checklist for the WHOLE SHOP: what gets opened and closed for the entire cafe, not for each area. Use it as the backbone of the day.",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0462",
+   "es": "▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.",
+   "grupo": "G2",
+   "palabras": 35,
+   "donde": [
+    "08 · Instrucciones · B20",
+    "09 · Instrucciones · B31"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "el local → the shop"
+   ],
+   "motivo": "contexto: cafe",
+   "base_en": "▸ \"N/A\" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). \"—\" = not done: it still counts as pending and lowers the percentage, which is the point.",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0473",
+   "es": "▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.",
+   "grupo": "G2",
+   "palabras": 45,
+   "donde": [
+    "08 · Instrucciones · B37",
+    "09 · Instrucciones · B48"
+   ],
+   "pistas": [
+    "el local → the shop"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0474",
+   "es": "▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 09-apertura-cierre-caja.xlsx.",
+   "grupo": "G2",
+   "palabras": 29,
+   "donde": [
+    "08 · Instrucciones · B38"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "el local → the shop"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-ice-cream-parlor-opening-closing-checklist.xlsx"
+    },
+    {
+     "es": "09-apertura-cierre-caja.xlsx",
+     "en": "09-cash-drawer-opening-closing.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0477",
+   "es": "Apertura del Negocio — Heladería Artesanal",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Apertura del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "contexto: Cafe",
+   "base_en": "Cafe Opening Checklist",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0492",
+   "es": "Encender sistema de reservas / tablet de pedidos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Apertura del Negocio · B11"
+   ],
+   "adaptar": "Una heladería no reserva: «Turn on the online-order tablet (pickup and delivery apps), if you use one»",
+   "motivo": "adaptar",
+   "base_en": "Turn on the reservation system / order tablet",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0494",
+   "es": "Revisar reservas del día y eventos especiales",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Apertura del Negocio · B13"
+   ],
+   "adaptar": "Reservas → los encargos del día (tartas heladas, pints por encargo, catering) y los eventos especiales",
+   "motivo": "adaptar",
+   "base_en": "Review today's reservations and special events",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0502",
+   "es": "Montar terraza si aplica (mesas, sillas, sombrillas/estufas)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Apertura del Negocio · B17"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "terraza → patio"
+   ],
+   "adaptar": "Terraza → patio (mesas, sillas, sombrillas o estufas de exterior / patio heaters)",
+   "motivo": "adaptar",
+   "base_en": "Set up the patio if applicable (tables, chairs, umbrellas/heaters)",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0503",
+   "es": "Comprobar que las cartas/menús están en orden",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Apertura del Negocio · B18"
+   ],
+   "pistas": [
+    "degustación → samples / tasting"
+   ],
+   "adaptar": "Cartas → menu boards y lista de sabores",
+   "motivo": "adaptar",
+   "base_en": "Check that menus are in order",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0508",
+   "es": "Montar señalización de sabores",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B22"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0510",
+   "es": "Cierre del Negocio — Heladería Artesanal",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Cierre del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "contexto: Cafe",
+   "base_en": "Cafe Closing Checklist",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0544",
+   "es": "▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 08-apertura-cierre-negocio.xlsx.",
+   "grupo": "G2",
+   "palabras": 33,
+   "donde": [
+    "09 · Instrucciones · B49"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "TPV / datáfono → POS / card terminal",
+    "cuadre de caja → cash count / reconcile"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "09-apertura-cierre-caja.xlsx",
+     "en": "09-cash-drawer-opening-closing.xlsx"
+    },
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-ice-cream-parlor-opening-closing-checklist.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0626",
+   "es": "▸ Reunión rápida de inicio de turno (5-10 minutos).",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B01 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0627",
+   "es": "▸ Producción: sabores a producir, mezclas listas, agotados.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0628",
+   "es": "▸ Equipo: asignación de posiciones, eventos especiales.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0629",
+   "es": "▸ Objetivos: ventas del día, sabor estrella, mejora continua.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0630",
+   "es": "▸ Imprime cada día y completa antes del briefing.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0631",
+   "es": "▸ Cuelga en obrador y mostrador para referencia durante el turno.",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "obrador → production room (o kitchen)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0632",
+   "es": "Briefing Diario de Heladería",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Diario · A1"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0633",
+   "es": "Producción del día",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Diario · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0634",
+   "es": "Revisar sabores a producir hoy (plan de producción)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0635",
+   "es": "Verificar mezclas listas en maduración para mantecar",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing Diario · B7"
+   ],
+   "pistas": [
+    "maduración de la mezcla → aging (age the mix)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0636",
+   "es": "Identificar sabores agotados o bajo mínimo en vitrina",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B8"
+   ],
+   "pistas": [
+    "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0637",
+   "es": "Confirmar recepción de materias primas pendientes",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Diario · B9"
+   ],
+   "pistas": [
+    "materias primas (MP) → ingredients (raw materials); food cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0638",
+   "es": "Comunicar si hay nueva receta o prueba de sabor",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B01 · Briefing Diario · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0639",
+   "es": "Equipo y servicio",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Diario · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0640",
+   "es": "Confirmar personal presente y asignación de posiciones",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing Diario · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0641",
+   "es": "Informar de eventos, pedidos especiales o catering del día",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B01 · Briefing Diario · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0642",
+   "es": "Comunicar promociones, sabor nuevo o degustación del día",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B16"
+   ],
+   "pistas": [
+    "degustación → samples / tasting"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0643",
+   "es": "Revisar incidencias del turno anterior que requieran acción",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0644",
+   "es": "Objetivos del turno",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Diario · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0645",
+   "es": "Comunicar objetivo de ventas del día",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Diario · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0646",
+   "es": "Definir sabor estrella a recomendar a los clientes",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0647",
+   "es": "Asignar tarea de mejora del día (limpieza extra, reposición, etc.)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Briefing Diario · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0648",
+   "es": "Recordar foco en atención al cliente y alérgenos",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B24"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0652",
+   "es": "▸ Planificación anual con fechas clave y sabores temáticos.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B02 · Instrucciones · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0653",
+   "es": "▸ Organiza producción estacional, campañas y eventos.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0654",
+   "es": "▸ Marca ✓ las acciones completadas cada mes.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0655",
+   "es": "▸ Ajusta sabores y fechas según tu zona geográfica.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B02 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0656",
+   "es": "▸ Añade eventos locales y fiestas de tu ciudad.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B02 · Instrucciones · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0657",
+   "es": "▸ Planifica con 1 mes de antelación mínimo.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0658",
+   "es": "Fechas del calendario:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Instrucciones · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0659",
+   "es": "▸ Las fechas nacionales están puestas para España: Día del Padre (19 de marzo), comuniones (abril-junio), Día de la Madre (primer domingo de mayo), San Juan, 15 de agosto, 1 de noviembre y el puente del 6-8 de diciembre.",
+   "grupo": "G2",
+   "palabras": 40,
+   "donde": [
+    "B02 · Instrucciones · B15"
+   ],
+   "adaptar": "Fechas US del calendario: Valentine's Day, St. Patrick's Day, Easter, Mother's Day (2.º domingo de mayo), Memorial Day–Labor Day, Father's Day (3.er domingo de junio), 4 de julio, National Ice Cream Month (julio) y National Ice Cream Day (3.er domingo de julio), Halloween, Thanksgiving (4.º jueves de noviembre) y las fiestas de diciembre. Sin fechas españolas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0660",
+   "es": "▸ Cambia las que no apliquen en tu comunidad y añade las fiestas patronales de tu ciudad: son las que mueven una heladería de barrio.",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "B02 · Instrucciones · B16"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "adaptar": "Fiestas patronales → las fiestas de tu ciudad (county fair, festivales de verano, partidos del instituto); añade la nota UK: Mothering Sunday (marzo), bank holidays y Boxing Day",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0661",
+   "es": "Calendario Anual de Heladería Artesanal",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0663",
+   "es": "Acciones clave / Fechas señaladas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · B4"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0664",
+   "es": "Sabores destacados",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · C4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0667",
+   "es": "Reyes: roscón helado edición limitada. Inicio temporada baja, reducir carta.",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · B5"
+   ],
+   "adaptar": "Mes EN: «January». Sustituye a Reyes y al roscón. Temporada baja: carta reducida; tartas heladas y pints para cumpleaños; mantenimiento y recetas nuevas; si tu heladería es de temporada y está cerrada, es el mes de reformas, proveedores y presupuesto",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0671",
+   "es": "San Valentín: edición limitada (corazón, rosa, frutos rojos). Desarrollar recetas primavera.",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · B6"
+   ],
+   "adaptar": "Mes EN: «February». Valentine's Day (14 de febrero): edición limitada (fresa, frambuesa, red velvet), tartas heladas en forma de corazón por encargo, con señal (deposit); desarrollar las recetas de primavera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0674",
+   "es": "Semana Santa: sabores temáticos (torrija, mona). 19 de marzo, Día del Padre: tartas heladas por encargo. Preparar temporada alta: stock, equipo.",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "B02 · Calendario Anual · B7"
+   ],
+   "adaptar": "Mes EN: «March». Sustituye a Semana Santa y al Día del Padre (en EE. UU. va en junio, fila 10). St. Patrick's Day (17 de marzo): menta (mint chip) y verde; muchas heladerías de temporada reabren: anuncia el día de apertura (Opening Day); preparar la temporada: stock, contratación y equipo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0678",
+   "es": "Inicio primavera: ampliar carta con frutales. Arranca la campaña de COMUNIONES (abril-junio): tartas heladas y catering, con señal y encargos cerrados 2 semanas antes. Reforzar equipo, formación.",
+   "grupo": "G2",
+   "palabras": 28,
+   "donde": [
+    "B02 · Calendario Anual · B8"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "señal → deposit"
+   ],
+   "adaptar": "Mes EN: «April». Sustituye a las comuniones. Easter (fecha variable): sabores de primavera y tartas heladas por encargo; ampliar la carta con frutales; contratar y formar al equipo de verano (muchos son menores: horarios de la FLSA, hoja «Peak Season» del 06) y preparar el patio y su permiso",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0681",
+   "es": "Inicio temporada alta. Carta completa 18-24 sabores. Abrir terraza. Día de la Madre (primer domingo de mayo) y comuniones: tartas heladas por encargo.",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "B02 · Calendario Anual · B9"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "terraza → patio"
+   ],
+   "adaptar": "Mes EN: «May». Mother's Day (2.º domingo de mayo): tartas heladas por encargo, con señal y encargos cerrados 2 weeks out; graduaciones (mayo-junio): pedidos de grupo y catering; Memorial Day (último lunes): EMPIEZA la temporada alta: carta completa de 18-24 sabores, patio abierto y horario ampliado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0685",
+   "es": "Inicio verano: máxima producción. Fin de curso y San Juan (23-24): pedidos de grupo y noche larga de terraza. Campaña RRSS.",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "B02 · Calendario Anual · B10"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "RRSS → social media",
+    "terraza → patio"
+   ],
+   "adaptar": "Mes EN: «June». Sustituye a San Juan. Fin de curso y graduaciones; Father's Day (3.er domingo de junio): tartas heladas por encargo; Juneteenth (19 de junio, festivo federal): decide el horario; máxima producción y campaña en redes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0688",
+   "es": "Máxima producción y ventas. Horario ampliado. Refuerzo personal.",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B02 · Calendario Anual · B11"
+   ],
+   "adaptar": "Mes EN: «July». National Ice Cream Month (todo julio) y National Ice Cream Day (3.er domingo de julio): sabor o promoción del día, colas y refuerzo de personal; 4 de julio: horario del festivo y pedidos de grupo (sabores red, white & blue); máxima producción y horario ampliado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0691",
+   "es": "Pico de temporada. Stock +50%. 15 de agosto (Asunción), festivo nacional y día grande de muchas fiestas patronales. Catering eventos de verano.",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "B02 · Calendario Anual · B12"
+   ],
+   "adaptar": "Mes EN: «August». Sustituye a la Asunción (el 15 de agosto no es festivo en EE. UU.). Pico de temporada: stock +50 %; ferias y festivales de verano (county fairs) y catering de eventos; la vuelta al cole (mediados-finales de agosto) se lleva a parte del equipo joven: cierra los turnos de septiembre",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0694",
+   "es": "Transición: reducir gradualmente carta. Vuelta al cole: promociones familia.",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Calendario Anual · B13"
+   ],
+   "adaptar": "Mes EN: «September». Labor Day (1.er lunes de septiembre): último gran fin de semana del verano; después, transición: reducir la carta poco a poco y promociones para familias (back to school); muchas heladerías de temporada cierran tras Labor Day o en octubre",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0697",
+   "es": "Halloween: sabores temáticos (calabaza, mora). Reducir carta a 10-14.",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · B14"
+   ],
+   "adaptar": "Mes EN: «October». Halloween (31 de octubre): sabores temáticos (pumpkin, caramel apple) y toppings de temporada; reducir la carta a 10-14 sabores; si cierras por temporada: fecha de cierre, aviso a clientes y equipo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0700",
+   "es": "Temporada baja. 1 de noviembre (Todos los Santos), festivo: con buen tiempo sigue siendo día de terraza. Productos complementarios: chocolate caliente, gofres. Mantenimiento.",
+   "grupo": "G2",
+   "palabras": 23,
+   "donde": [
+    "B02 · Calendario Anual · B15"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "terraza → patio"
+   ],
+   "adaptar": "Mes EN: «November». Sustituye a Todos los Santos. Thanksgiving (4.º jueves de noviembre): helado para acompañar las tartas (pie à la mode), pints y quarts por encargo; decidir el horario (muchos cierran); Black Friday y Small Business Saturday: tarjetas regalo (gift cards); mantenimiento",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0703",
+   "es": "Puente del 6-8 de diciembre: primer pico de la campaña. Navidad: turrón, polvorón, edición limitada. Catering empresas fin de año. Tartas heladas.",
+   "grupo": "G2",
+   "palabras": 23,
+   "donde": [
+    "B02 · Calendario Anual · B16"
+   ],
+   "adaptar": "Mes EN: «December». Sustituye al puente de la Constitución. Fiestas (holidays): peppermint, eggnog (sin alcohol) y gingerbread; tartas heladas y pints de regalo, tarjetas regalo y catering de empresas; Navidad (25) y Nochevieja (31): decidir el horario. Sin turrón, polvorón, mazapán ni alcohol",
+   "motivo": "nueva"
+  }
+ ]
+}
