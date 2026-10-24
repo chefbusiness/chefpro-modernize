@@ -84,7 +84,9 @@ delante (mismo molde ligero).
 Para la F2: `aplicar_en`/`gates_en` ya traen los ganchos del molde ligero (`CF_POR_CELDA`, `LIBROS_SIN_MARCA`,
 `HOJA_HORAS`, `HOJA_VERDE`) y del 09 propio (`CASOS_G5`, `CELDA_CACHE_MAL`); no se ha tocado código común. A4 → Letter
 en las 37 hojas. `gate_f1.py` es solo del kit base (sin `--kit`): su comprobación 7 se hizo a mano (POR_CELDA → regenerar,
-ADAPTAR → G1/G2, glosario → mapa-glosario: 0 fallos).
+ADAPTAR → G1/G2, glosario → mapa-glosario: 0 fallos). **Prueba de humo de la F1 (VPS):** `aplicar_en --dry-run
+--parcial` monta los 11 xlsx (idempotente a la F2) y `gates_en --parcial` sale **VERDE 8/0** (G5 con los 2 `CASOS_G5`, 9
+comprobaciones; G1 37 hojas, 139 fórmulas, 15 por celda, 17 CF por celda) y el autotest **19/19 CAZADOS**.
 
 **Dudas para el traductor:** «fichero 09» / «hito en 08/09» del 01 (B8, B9, B30) → «file 09» con la pestaña EN citada;
 «Montaje de servicio» (heredado «Service setup»); las familias del 02 (B39-B48: rocas → clusters, garrapiñados → candied
