@@ -198,3 +198,66 @@ JSON generados que ya están en git salen idénticos) y borrar los ficheros gene
 7. Cifras de mercado solo de research «leída» (check_textos lo comprueba); D19: 2 de 14 filas son «Kit estimate» (62
    marketplace y 68 leña / personal).
 8. Si se rehace la extracción, los ids de `textos_es.json` pueden moverse y las salidas de los redactores dejan de casar.
+
+## 8. Cierre de la F2 (24-oct, sesión Claude Code): xlsx + docx EN, gates
+
+Tandas del paso 2 en `5091f31b` / `04ca3786` (`check_textos --todas` OK; `GRC-plan.revision.json` con 6 correcciones).
+Paso 3 en el VPS sobre `04ca3786` + el alta de G9 (`bbq-catering-business-plan` en `PRODUCTOS_LETTER` de
+`censo-entregables.py` y en `EXCLUIDOS` de `postprocess-transversal.py`, cada uno en línea propia):
+- `aplicar_en --idempotencia`: préstamo **$101,000** en 1 vuelta, textos 535 + 318, faltan 0, **0 diferencias** entre dos
+  construcciones, inject_cache 722 / 12 fórmulas y **0 fallos de pycel**, D15 sin fallos.
+- `ensamblar_docx --plan bbq`: G8 VERDE.
+- Coherencia texto ↔ libro (notas de los redactores): (a) docx [56], la mezcla escrita (55 / 45 / 22 / 20 / 8 eventos =
+  {{eventos_a1}} = 150; bodas 13 % de los eventos y 32 % de las ventas: 135,200 de 427,770) casa con el libro final (B4 =
+  150, sin calibrar); picos de mayo, junio y octubre y mínimos de enero y febrero = la estacionalidad con Month 1 = marzo.
+  (b) `pesimista_caja` = **−$8,085**: el «the cash runs out» de [58] y [99] es cierto. (c) Depósito del 50 %
+  nonrefundable: docx [48], [73], [98], [112] = libro (`0. Assumptions!C58`, `12-Month Cash Flow!O5`) = calculadora (50 %
+  por defecto) = checklist; **un arreglo de texto**: `P1!E13` (`c0704` de `GBQ-check.json`) decía «a nonrefundable
+  deposit» → «a 50% nonrefundable deposit»; el saldo «3 to 14 days before» del checklist (P6 fila 11) = las 72 horas /
+  14 días del docx. Ningún gate saltó por texto; ninguna cifra ni fórmula tocada.
+
+**Caso final** (`cifras_caso.json`, 118 tokens, **ninguna cifra distinta del dry-run** del paso 1; sha256 `c5e5759c…`):
+- 150 eventos × 75 invitados × $38.00 sin sales tax, con personal y service charge ($41.04 con el impuesto) → ventas
+  **$427,500** / $478,800 / $517,104 ($2,850 por evento, 11,250 invitados).
+- CAPEX **$83,300** + fondo de maniobra $52,371 = **$135,671** · fondos propios $35,000 (26 %) + préstamo **$101,000** al
+  10 % a 7 años (cuota $20,746; SBA 7(a): supera el tope de $50,000 del Microloan).
+- Margen bruto 60.8 % · mercancía 28.8 % · personal 32.7 % · commissary y parking 5.1 % · EBITDA $60,367 (14.1 %) · neto
+  **$29,816 (7.0 %)** / $50,242 / $64,826.
+- Equilibrio **128 eventos/año** (127.04 contable · 127.12 de caja), holgura **18 %** (caída absorbible 15 %) · **DSCR mín
+  2.43×** · saldo mínimo $41,591 (mes 2) · payback 2.2 años (1.5 sobre el CAPEX) · 9 personas = 2.85 FTE, cobertura 112 %
+  · seguros $6,000.
+- Pesimista (113 · $34.20 · 68) $262,793, −$60,321 y caja **−$8,085: se agota** · optimista (188 · $41.80 · 83)
+  $652,247 y +$176,312. Los 5 umbrales del P&L en verde los 3 años.
+
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp6.py gates_en` (G1-G9 sobre `dl/bbq-catering-business-plan/`) | **TODO VERDE** (G2 incluye `RX_BBQ_NO` y cifras prohibidas; G9 = censo-entregables + no latinos) |
+| `bp6.py gates_en --autotest` · `ensamblar_docx --autotest` · `calculadora --autotest` | **20/20** · **8/8** · VERDE (581 comprobaciones) |
+| `barrido_bbq.py` (celdas, literales de fórmula, DV, docProps, párrafos y tablas) | 1,989 piezas · **0** `RX_BBQ_NO` / cifras prohibidas · 0 español · 0 no latinos (`entregables_bbq.json`) |
+| `censo-entregables --fail --letter --only bbq-catering-business-plan` · `gate-no-latinos --only` | 4 ficheros, 1,156 fórmulas, **0 defectos** · 0 caracteres |
+| Regresión §2 (FT/CAF, REST/PAN, BAR, CAT, MBAR) | TODO VERDE · 20/20 · 18/18 · 16/16 · 8/8 · 8/8 · `check_textos` 7 / 8 / 6 / 6 / 6 OK · calculadoras CAT (136) y MBAR (778) VERDE |
+
+| Entregable (`astro-site/public/dl/bbq-catering-business-plan/`) | Contenido | sha256 (Mac = VPS) |
+|---|---|---|
+| `bbq-catering-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 8,067 palabras, Letter | `0c73a5393f14a5705a30139c927264ec2b349106a63c76fbf15d148ba35949d7` |
+| `bbq-catering-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US sin calibrar | `7e08ff9360cc0adfba62db1b3d16d8a50e82889cc92844e3b56ffaac32217e65` |
+| `bbq-catering-pricing-calculator.xlsx` | 5 hojas, 422 fórmulas (sin cambios desde el paso 1) | `c07c582b937a60127dd65dadf0bf5e6b6bc2f96ac4f6421211b429e3d496ca63` |
+| `bbq-catering-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `be0062bd92437424c35cb266128d4b7cdc6c85c1d8b7f4f8f4ad10e510514bbd` |
+
+**Cifras exactas para la landing** (bloque `CASO` de la ficha EN de la F3, rama `feat/bbq-catering-business-plan-en-f3`):
+
+| Clave | F3 (provisional) | **Final** |
+|---|---|---|
+| eventos · invitados · precio · ventas | 150 · 75 · $38.00 · $427,500 | **igual** |
+| inversion · circulante · necesidad | $83,300 · $49,800 · $133,100 | **$83,300 · $52,371 · $135,671** |
+| propios · prestamo | $35,000 · $98,000 | **$35,000 · $101,000** |
+| neto · netoPct | $30,700 · 7.2% | **$29,816 · 7.0%** |
+| equilibrio · dscr | 126 · 3.0× | **128 · 2.43×** |
+| marketing · seguros | $10,000 · $6,000 | **igual** |
+| pesEventos · pesPrecio · pesInvitados | 113 · $34.20 · 68 | **igual** (ventas $262,793; caja −$8,085) |
+| ejDropoff · ejGraduacion · ejBoda | $22 · $35 · $52 | **$22.50 · $34.50 · $54.00** (la boda: $49.00 por invitado + el live pit de $650 repartido; «with the pit on site at about $54») |
+| livePit · cortes · menuStyles · formulas | $650 · 13 · 10 · 700 | **igual** (libro 722 → «more than 700»; calculadora 422; 1,156 en los 3 xlsx) |
+
+Aviso para la F3 (fuera de este paso): la FAQ del coste de la ficha dice «Your own truck tows the trailer»; el gate del
+producto veta «truck» (di «pickup» o «tow vehicle»), y su comentario de la contingencia dice «filas 7-12» cuando la
+fórmula es 10 % × filas 7, 8, 11, 12 y 15.

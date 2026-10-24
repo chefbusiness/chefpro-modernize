@@ -1,0 +1,45 @@
+{
+ "carpeta": "astro-site/public/dl/bbq-catering-business-plan",
+ "piezas": 1989,
+ "fallos": 0,
+ "ficheros": {
+  "bbq-catering-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 8067,
+   "piezas": 116,
+   "sha256": "0c73a5393f14a5705a30139c927264ec2b349106a63c76fbf15d148ba35949d7",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "bbq-catering-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 722,
+   "piezas": 818,
+   "sha256": "7e08ff9360cc0adfba62db1b3d16d8a50e82889cc92844e3b56ffaac32217e65",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "bbq-catering-pricing-calculator.xlsx": {
+   "hojas": 5,
+   "formulas": 422,
+   "piezas": 620,
+   "sha256": "c07c582b937a60127dd65dadf0bf5e6b6bc2f96ac4f6421211b429e3d496ca63",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "bbq-catering-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 435,
+   "sha256": "be0062bd92437424c35cb266128d4b7cdc6c85c1d8b7f4f8f4ad10e510514bbd",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}
