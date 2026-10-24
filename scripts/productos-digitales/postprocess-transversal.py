@@ -98,6 +98,8 @@ SCRATCH = os.environ.get(
 #: (SPEC business-plans-en-5 D83, D89-D90).
 #: bbq-catering-business-plan: BBQ Catering Business Plan Kit (EN), ídem + la calculadora de `calculadora_bbq.py`
 #: (SPEC business-plans-en-6 D98, D105-D106).
+#: paella-catering-business-plan: Paella Catering Business Plan Kit (EN), ídem + la calculadora de
+#: `calculadora_pael.py` (SPEC business-plans-en-7 D116, D123-D124).
 #: food-cost-menu-engineering-guide: Food Cost + Menu Engineering Guide (EN), traducción por celda de los 8 xlsx de la
 #: guía ES (SPEC guia-food-cost-en D12: Letter, metadatos EN, «Instructions»); no lleva el vocabulario ES de la casilla.
 #: how-to-open-a-pastry-shop: How to Open a Pastry Shop (EN), traducción por celda de los 8 xlsx de la guía ES
@@ -119,6 +121,7 @@ EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-business-plan', 'bakery-business-plan', 'bar-business-plan', 'catering-business-plan',
              'mobile-bar-business-plan', 'food-cost-menu-engineering-guide', 'how-to-open-a-pastry-shop',
              'bbq-catering-business-plan',
+             'paella-catering-business-plan',
              'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates',
              'catering-checklist-templates', 'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
              'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',
