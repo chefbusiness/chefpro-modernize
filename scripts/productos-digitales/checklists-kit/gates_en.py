@@ -85,7 +85,7 @@ CON_HOJA_EXTRA = getattr(mapas, 'FORMULAS_CON_HOJA_EXTRA', {})
 SIN_MARCA = frozenset(getattr(mapas, 'LIBROS_SIN_MARCA', ()))   # libros cuyo ES no trae la línea de marca D19
 
 SIGNOS_ES = set('¿¡«»€ºª')
-RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio|local)[^\]]*\]|\bSPEC\b|\((?:D|I)\d{1,2}\)|'
+RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio|local|kit criterion)[^\]]*\]|\bSPEC\b|\((?:D|I)\d{1,2}\)|'
                            r'\bD\d{1,2}\b(?=[:,)])|\bTEC-\d+\b|\bkit-tareas\b')
 RX_CITA_ANIDADA = re.compile(r'\(\(|\)\)\)')
 LIMITE_DV = {'promptTitle': 32, 'errorTitle': 32, 'prompt': 255, 'error': 255}     # Excel
@@ -95,7 +95,8 @@ LISTA_BLANCA_TILDE = {'entrée', 'entrées', 'sauté', 'sautéed', 'sautéing', 
                       'jalapeño', 'jalapeños', 'piña', 'crème', 'brûlée', 'résumé', 'naïve', 'flambé', 'frappé',
                       'rosé', 'canapé', 'canapés', 'soufflé', 'consommé', 'crêpe', 'crêpes', 'déjà', 'à'}
 FRASES_OK = ('Cinco de Mayo', 'al dente', 'pico de gallo', 'chili con carne', 'à la carte', 'a la carte',
-             'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide', 'dulce de leche')   # heladería: el término US
+             'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide', 'dulce de leche',   # heladería: el término US
+             'rosca de Reyes', 'Rosca de Reyes', 'pan de muerto', 'Pan de muerto')   # pastelería: nombres US (D14)
 FUNCIONALES_ES = {
     'de', 'del', 'las', 'el', 'los', 'y', 'que', 'con', 'para', 'por', 'una', 'unos', 'unas', 'es', 'al', 'se',
     'su', 'sus', 'como', 'pero', 'muy', 'cuando', 'donde', 'porque', 'este', 'esta', 'esto', 'estos', 'desde',
@@ -1223,7 +1224,13 @@ def _set(ws, coord, v):
 def _bloquear_verde(wb):
     from openpyxl.styles import Protection
     ws = wb[H_VERDE]
-    c = next(c for c in ws._cells.values() if es_verde(c) and c.protection.locked is False)
+    c = next((c for c in ws._cells.values() if es_verde(c) and c.protection.locked is False), None)
+    if c is None:
+        # kit sin protección (pastelería: 0 hojas protegidas y 0 celdas desbloqueadas en el ES): la mutación inversa,
+        # desbloquear una verde (o la primera celda real), la caza el mismo control de G1 («desbloqueadas distintas»)
+        c = next((c for c in celdas_reales(ws) if es_verde(c)), None) or next(celdas_reales(ws))
+        c.protection = Protection(locked=False)
+        return
     c.protection = Protection(locked=True)
 
 
