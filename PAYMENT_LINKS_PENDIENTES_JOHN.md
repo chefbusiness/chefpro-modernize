@@ -4,8 +4,9 @@
 > esté de vuelta en el ordenador, hacemos la configuración en Stripe para crear los payment links. De momento apárcalos
 > como tareas para mí y continúa tú con los siguientes productos».
 >
-> Cada producto de esta lista está **terminado y en un PR en borrador**: solo le falta su Payment Link. Los PR van
-> **apilados** (cada rama sale de la anterior), así que se fusionan en orden, de arriba abajo.
+> ✅ **LOS 5 ESTÁN LISTOS (24-oct, noche).** Cada uno está terminado y en un PR en borrador; solo le falta su Payment Link.
+> Los PR van **apilados** (156 → 157 → 158 → 159: cada rama sale de la anterior), así que se fusionan en orden, de arriba abajo
+> (o el #159 con merge commit, que incluye los cuatro de abajo). Preview con los 5: https://deploy-preview-159--aichefpro.netlify.app/en/digital-products
 
 ## Cómo crear cada link (igual para todos)
 
@@ -24,7 +25,7 @@
 | 2 | Chocolate Shop Checklists Kit Pro | $19 | #157 | ✅ listo |
 | 3 | Pastry Shop Checklists Kit Pro | $19 | #157 | ✅ listo |
 | 4 | BBQ Catering Business Plan Kit | $39 | #158 | ✅ listo |
-| 5 | Paella Catering Business Plan Kit | $39 | — | 🔨 F2 (entregables) |
+| 5 | Paella Catering Business Plan Kit | $39 | #159 | ✅ listo |
 
 ### 1. Ice Cream Shop Checklists Kit Pro — $19.00 USD (PR #156)
 
@@ -55,3 +56,15 @@
 - Redirección: `https://aichef.pro/en/digital-products/bbq-catering-business-plan/access?session_id={CHECKOUT_SESSION_ID}`
 - Descripción: Business plan kit for an off-site BBQ catering company: a 10-section Word business plan, 3-year Excel financial projections, a per-guest pricing calculator with meat yields and shopping lists by guest count, and a 68-task startup checklist. One-time payment, lifetime access.
 - Env que crearé: `VITE_STRIPE_PAYMENT_LINK_BBQ_CATERING_BUSINESS_PLAN`
+
+### 5. Paella Catering Business Plan Kit — $39.00 USD (PR #159)
+
+- Nombre en Stripe: **Paella Catering Business Plan Kit**
+- Redirección: `https://aichef.pro/en/digital-products/paella-catering-business-plan/access?session_id={CHECKOUT_SESSION_ID}`
+- Descripción: Business plan kit for a live paella and Spanish catering company: a 10-section Word business plan, 3-year Excel financial projections, a per-guest pricing calculator with paella pan sizing and shopping lists by guest count, and a 68-task startup checklist. One-time payment, lifetime access.
+- Env que crearé: `VITE_STRIPE_PAYMENT_LINK_PAELLA_CATERING_BUSINESS_PLAN`
+
+## Después de los links (Claude)
+
+Correos EN de lanzamiento, ya escritos, en la cola de 5 días a las 14:00Z: 24-ene Ice Cream · 29-ene Chocolate · 3-feb Pastry ·
+8-feb BBQ · 13-feb Paella (borrador en Resend + routine 30 días antes de cada uno). Detalle del cierre: `SESSION_HANDOFF_2026-10-24-bbq-paella-catering-plans-en.md` §1 (rama del #159).
