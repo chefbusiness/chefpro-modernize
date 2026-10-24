@@ -35,6 +35,7 @@ Corre en el VPS (openpyxl + pycel). Sesión Claude Code, 24-oct-2026 (F2, paso 1
     python3 bp6.py calculadora --autotest   # solo el autotest sobre el fichero ya generado
 """
 import argparse
+import datetime
 import math
 import os
 import re
@@ -726,9 +727,6 @@ def hoja_yield(wb):
     return ws
 
 
-C_FILAS = None                                                         # se rellena en hoja_compra (fila de cada clave)
-
-
 def hoja_compra(wb):
     ws = wb.create_sheet(H3)
     for col, w in (('A', 50), ('B', 16), ('C', 14), ('D', 14), ('E', 14), ('F', 14), ('G', 56)):
@@ -998,6 +996,8 @@ def generar(destino):
 # pit y los precios de carne tecleados probados en la hoja principal; mezcla = 100 %; ejemplos a ±10 %
 # --------------------------------------------------------------------------
 def _cmp(err, etiqueta, got, esperado, tol=0.005):
+    if isinstance(got, datetime.time):                              # openpyxl lee como hora las celdas con formato h:mm
+        got = (got.hour * 3600 + got.minute * 60 + got.second + got.microsecond / 1e6) / 86400.0
     if isinstance(esperado, str):
         if got != esperado:
             err.append('%s: %r ≠ esperado %r' % (etiqueta, got, esperado))
