@@ -350,7 +350,7 @@ TOKENS_PROPIOS = OrderedDict([
     ('marketplace_comision', ('pct0', ('fila', _S, 'Comisión de la plataforma de delivery', 'B'),
                               'marketplace commission on those sales')),
     ('cobro_dias', ('int', ('fila', _S, 'Días medios de cobro', 'B'), 'average days to collect from clients')),
-    ('pago_dias', ('int', ('fila', _S, 'Días medios de pago', 'B'), 'average days to pay suppliers')),
+    ('pago_dias', ('int', ('fila', _S, 'Días medios de pago a proveedor', 'B'), 'average days to pay suppliers')),
     ('horas_evento', ('dec1', ('fila', _R, 'Horas de servicio al día que hay que cubrir', 'B'),
                       'hours per person per event (portioning, overnight cook, loading, travel, setup, service, breakdown)')),
     ('personas_evento', ('dec1', ('fila', _R, 'Personas necesarias a la vez en cada franja', 'B'),
