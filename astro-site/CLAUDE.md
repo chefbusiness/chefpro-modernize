@@ -188,3 +188,7 @@ y `data/integraciones.ts`.
 - ⚠️ **Revisar SIEMPRE las cifras de plan que invente el modelo.** El borrador del
   post decía «incluido el plan gratuito» y **en la web ya no hay plan gratuito**
   (el Miembro son 10 €/mes). Habría salido publicado.
+
+### Gotcha de `faq.astro` (movido del CLAUDE.md raíz el 2026-10-24 con /doctor)
+
+- Gotcha de `faq.astro`: el campo `a` se pinta como TEXTO PLANO y alimenta el FAQPage; el HTML con enlaces va en `aHtml` (plantilla con backticks). Meter markup en `a` lo escupe literal en la página.

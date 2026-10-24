@@ -109,3 +109,24 @@ licencias, unidades…). Todo vive en `scripts/productos-digitales/equivalencias
 4. Si el producto usa un término de España que no está en `terminos.json` y cambia en América, añádelo con sus variantes en los 21 países (`SPEC-GLOSARIO.md`).
 
 Las fichas caducan: revisión anual en enero (salarios mínimos, tipos, reformas laborales en curso en MX, CL, CO y BR).
+
+### 🔴 `bridge.py` NO se usa para PRODUCTOS DIGITALES: método (John, 2026-09-04; movido del CLAUDE.md raíz el 2026-10-24 con /doctor)
+
+«No usemos el bridge para desarrollo de productos a partir de ahora, y lo dejamos para tema SEO y
+contenidos web… tú con tus subagentes nativos Anthropic: opus, sonnet, haiku». Aplica a guías, bonus,
+planes, manuales y ejercicios: el texto lo escriben **subagentes Anthropic** (sonnet por defecto) a partir
+del guion `guion_<pid>.py`, con el patrón `guias-v2_0/dump_prompts.py` (vuelca los prompts exactos que
+construye `documentos.py`) → un agente por bloque que escribe en la caché `txt/` y verifica con
+`guias-v2_0/check_bloque.py` → `documentos.py` solo ensambla y pasa los gates. Motivo medido en el
+lanzamiento de la Guía Food Cost: bridge en serie a 40 s/bloque, DeepSeek flash devolviendo vacío en los
+bloques con cifras, y un falso positivo que paró el pipeline 40 minutos; con 44 agentes en paralelo los
+bloques salen en minutos. **El blog y las landings de captación siguen con bridge.py.**
+
+### 🔴 Otros idiomas = DUPLICAR: detalle (John, 24-sep y 3-oct-2026; movido del CLAUDE.md raíz el 2026-10-24 con /doctor)
+
+La regla (duplicar el ES y adaptar, nunca reconstruir; preguntar solo si cambia la estructura del diseño) sigue en el
+CLAUDE.md raíz. Origen: el hub `/en/digital-products` se hizo con una
+plantilla nueva (`TiendaHubPage.astro`) y hubo que tirarlo. **Lo que exige la norma del mercado DENTRO de un entregable
+(una columna, un desplegable, una celda de parámetro: FDA Food Code + notas UK) ya está decidido** desde el piloto
+(`TIENDA-INTERNACIONAL.md` §1): se aplica, se declara en la SPEC y no se pregunta (John, 3-oct-2026, «ojo con eso»).
+**Definición de «nativo» (John, 24-sep-2026):** que el producto esté **traducido al idioma en el que queremos que esté disponible**, con naturalidad. NO significa construir componentes, hooks ni páginas nuevas, ni reinventar la rueda.

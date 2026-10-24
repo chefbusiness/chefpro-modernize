@@ -18,24 +18,18 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 
 ### 🔴 Matiz del 2026-09-04 (John): `bridge.py` NO se usa para PRODUCTOS DIGITALES
 
-«No usemos el bridge para desarrollo de productos a partir de ahora, y lo dejamos para tema SEO y
-contenidos web… tú con tus subagentes nativos Anthropic: opus, sonnet, haiku». Aplica a guías, bonus,
-planes, manuales y ejercicios: el texto lo escriben **subagentes Anthropic** (sonnet por defecto) a partir
-del guion `guion_<pid>.py`, con el patrón `guias-v2_0/dump_prompts.py` (vuelca los prompts exactos que
-construye `documentos.py`) → un agente por bloque que escribe en la caché `txt/` y verifica con
-`guias-v2_0/check_bloque.py` → `documentos.py` solo ensambla y pasa los gates. Motivo medido en el
-lanzamiento de la Guía Food Cost: bridge en serie a 40 s/bloque, DeepSeek flash devolviendo vacío en los
-bloques con cifras, y un falso positivo que paró el pipeline 40 minutos; con 44 agentes en paralelo los
-bloques salen en minutos. **El blog y las landings de captación siguen con bridge.py.**
+Guías, bonus, planes, manuales y ejercicios: el texto lo escriben **subagentes Anthropic** (sonnet por defecto) a
+partir del guion; el método (`dump_prompts.py` → un agente por bloque → `check_bloque.py`) y el motivo están en la
+skill **`productos-digitales-aichef`**. **El blog y las landings de captación siguen con bridge.py.**
 
 ## Stack y notas operativas
 
 > ⚠️ Actualizado 2026-07-28. **Desde el cutover de Fase 7 (2026-07-19) producción sirve ASTRO**, no la SPA. Lo que se construye y despliega es `astro-site/`; la SPA de la raíz sobrevive sólo como fuente de los islands React de la zona app (decisión D5) y **ya no se construye**. Doc canónico: `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` (§8 = log por sesión).
 
-- **Stack real**: Astro 5 en `astro-site/` (build `cd astro-site && npm install && npm run build`, publish `astro-site/dist`) + Tailwind + Netlify con auto-deploy desde `main`. La SPA React 18 + Vite de la raíz aporta los componentes cross-root que los islands importan.
+- **Stack real**: Astro 5 en `astro-site/` (build y publish en `netlify.toml`) + Tailwind + Netlify con auto-deploy desde `main`. La SPA React 18 + Vite de la raíz aporta los componentes cross-root que los islands importan.
 - **i18n**: 7 idiomas (es, en, fr, de, it, pt, nl). **El séptimo es NEERLANDÉS, no catalán** (error recurrente en contenidos).
-- **Live**: https://aichef.pro · blog ES en https://aichef.pro/blog (322 posts; `blog.aichef.pro` 301-ea desde el cutover 8B.5) · **blog EN en https://aichef.pro/en/blog** (**65 posts**: los 39 de la Fase 8B.6 más 26 de las tandas 8C del 2026-08-01; contados en el sitemap de producción el 2026-08-08). El mapa 301 de `enblog.aichef.pro` ya está en `_redirects` pero **no se ejecuta hasta que el subdominio sea alias del site en Netlify + DNS**; mientras tanto ese WordPress sigue vivo. **Tarea pendiente de John, con la trampa de las A records de Hostinger y la batería de verificación: `CUTOVER_ENBLOG_PENDIENTE.md` (recordárselo).**
-- **SEO**: meta/hreflang/JSON-LD **nativos server-side** en `BaseLayout.astro` + `SEOHead` de la SPA para los islands. La edge function `netlify/edge-functions/og-meta.ts` está **MUERTA** (no declarada desde Fase 7) y `public/sitemap.xml` ya **no** es la fuente: el sitemap lo genera Astro (`sitemap-index.xml`, 1.091 URLs) con lastmod real por post desde `astro-site/src/lib/blog-lastmod.json`. GSC: `sc-domain:aichef.pro`.
+- **Live**: https://aichef.pro · blog ES en https://aichef.pro/blog (`blog.aichef.pro` 301-ea desde el cutover 8B.5) · **blog EN en https://aichef.pro/en/blog**. El mapa 301 de `enblog.aichef.pro` ya está en `_redirects` pero **no se ejecuta hasta que el subdominio sea alias del site en Netlify + DNS**; mientras tanto ese WordPress sigue vivo. **Tarea pendiente de John, con la trampa de las A records de Hostinger y la batería de verificación: `CUTOVER_ENBLOG_PENDIENTE.md` (recordárselo).**
+- **SEO**: meta/hreflang/JSON-LD **nativos server-side** en `BaseLayout.astro` + `SEOHead` de la SPA para los islands. La edge function `netlify/edge-functions/og-meta.ts` está **MUERTA** (no declarada desde Fase 7) y `public/sitemap.xml` ya **no** es la fuente: el sitemap lo genera Astro (`sitemap-index.xml`) con lastmod real por post desde `astro-site/src/lib/blog-lastmod.json`. GSC: `sc-domain:aichef.pro`.
 - **Verificación**: gates en `scripts/astro-migration/` (`fase8b-gate.py` blog, `fase6-gate.py <url>` marketing —sin argumento corre modo staging obsoleto—, `fase5-gate-s1-s2.py` zona app) + `fase7-vigilancia.py` (salud de producción post-cutover).
 - **Entorno**: el repo se trabaja desde el Mac **y** desde un VPS Linux. En el VPS no aplican las restricciones térmicas del Mac: se pueden hacer builds locales y usar Playwright. Ojo con las rutas absolutas de `~/` que hay en documentos antiguos.
 
@@ -64,7 +58,6 @@ Para no cargar ~14k tokens en cada sesión, el detalle de tres áreas vive ahora
 - **Toda mención con nombre de John enlaza a `https://johnguerrero.es`** con `target="_blank" rel="noopener noreferrer author"`. En JSON-LD, el `Person` lleva `url` = su marca personal y `sameAs` con marca + canal. Los `alt` de imagen no se enlazan.
 - **Correos (John, 2026-09-21): NUNCA saludar «Hola, chef».** La lista es transversal (dueños, managers, panaderos, pasteleros, chocolateros, bartenders, consultores): saludo abierto «Hola, colegas / amigos / comunidad» y su equivalente en cada idioma (EN «Hi everyone,» · FR «Bonjour à tous,» · DE «Hallo zusammen,» · IT «Ciao a tutti,» · PT «Olá a todos,» · NL «Hallo allemaal,»). Los moldes de `scripts/productos-digitales/emails/` ya van corregidos; detalle en la skill local `resend-aichef`.
 - Las páginas de agente (8C) incrustarán **vídeos demo de Loom** cuando estén; no bloquean el arranque.
-- Gotcha de `faq.astro`: el campo `a` se pinta como TEXTO PLANO y alimenta el FAQPage; el HTML con enlaces va en `aHtml` (plantilla con backticks). Meter markup en `a` lo escupe literal en la página.
 
 ### 🔴 Otros idiomas = DUPLICAR lo español y adaptar, NUNCA reconstruir (John, 24-sep-2026)
 
@@ -73,11 +66,8 @@ para cada idioma futuro se **duplican** su landing, su dashboard y sus ficheros 
 se **traducen**, adaptando las variables del mercado nativo (terminología, moneda, impuestos, unidades, normativa o
 anexos, benchmarks, ejemplos). **Diseño, estructura, maquetación y componentes son los mismos**: `cp` del componente
 ES y traducir encima; ninguna plantilla ni página nueva. Si una adaptación obliga a cambiar la estructura **del diseño**
-(landing, dashboard, componentes, maquetación), preguntar antes. Origen: el hub `/en/digital-products` se hizo con una
-plantilla nueva (`TiendaHubPage.astro`) y hubo que tirarlo. **Lo que exige la norma del mercado DENTRO de un entregable
-(una columna, un desplegable, una celda de parámetro: FDA Food Code + notas UK) ya está decidido** desde el piloto
-(`TIENDA-INTERNACIONAL.md` §1): se aplica, se declara en la SPEC y no se pregunta (John, 3-oct-2026, «ojo con eso»).
-**Definición de «nativo» (John, 24-sep-2026):** que el producto esté **traducido al idioma en el que queremos que esté disponible**, con naturalidad. NO significa construir componentes, hooks ni páginas nuevas, ni reinventar la rueda.
+(landing, dashboard, componentes, maquetación), preguntar antes. Origen, lo que ya está decidido DENTRO de un
+entregable y qué significa «nativo» → skill **`productos-digitales-aichef`**.
 
 ### 🔴🔴 PROPORCIONALIDAD: el recurso escaso es el TIEMPO de John (3-oct-2026) — manda sobre todo lo de abajo
 
