@@ -393,7 +393,7 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # Ídem, Chocolate Shop Checklists Kit Pro (24-oct): testimonios del Kit de Tareas: Chocolatería traducidos tal
            # cual, y el nombre de esa edición española en su subtítulo.
            'Miguel Ángel Roca', 'Chocolatería Roca', 'Bombonería La Trufa Dorada', 'Javier Solís',
-           'Chocolates Artesanos Solís', 'Andrés Beltrán', 'Chocolatería Origen',
+           'Chocolates Artesanos Solís', 'Andrés Beltrán', 'Obrador Beltrán', 'Chocolatería Origen',
            'Kit de Tareas Recurrentes: Chocolatería / Obrador de Chocolate',
            # Ídem, Pastry Shop Checklists Kit Pro (24-oct): testimonios del Kit de Tareas: Pastelería traducidos tal cual
            # («Laura Fernández», «Ana Belén Torres», «Isabel García» y «Fernando López» ya van arriba), y el nombre de esa
