@@ -1,0 +1,2669 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/chocolate-shop-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-chocolate-shop-opening-closing-checklists.xlsx
+# docProps: title='Chocolate Shop Opening & Closing Checklists: Kitchen, Display Case & Counter' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Chocolate Shop Opening & Closing Checklists: Kitchen, Display Case & Counter
+B4     : How to use this template:
+B5     : ▸ Complete checklist for the daily opening and closing of your chocolate shop or kitchen.
+B6     : ▸ Covers tempering equipment start-up, display cases, shop setup and closing.
+B7     : ▸ Mark ✓ on each completed task. Adjust the times to your shop.
+B9     : Customization:
+B10    : ▸ Green cells are editable: assigned to, time, notes.
+B11    : ▸ Adjust temperatures to your equipment and local rules.
+B12    : ▸ Print on US Letter and keep it in the kitchen and at the counter.
+B14    : Hygiene and temperatures:
+B15    : ▸ The first section of "Opening" is personal hygiene and a safe start: exhaust fan first, gas check next (if you have gas equipment), and only then the tempering machine, display cases and climate control.
+B16    : ▸ The cool room and fridges are not "turned on": check that they ran all night and log the reading. Targets for this trade: kitchen 64–68 °F, cool room 59–64 °F at 50–60% humidity, fillings and ganaches 41 °F or below, bonbon display case 60–64 °F.
+B17    : ▸ Above 68 °F cocoa butter starts to melt: the bonbon sweats, loses its shine and within two days fat bloom shows up. That is why the display case gets its own check.
+B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B20    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Opening» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Chocolate Shop Opening
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Personal hygiene and safe kitchen start-up
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Clean uniform and work shoes, fresh apron, hair tied back under a cap or hairnet
+C6     : Kitchen
+A7     : 2
+B7     : No rings (a plain band is OK), bracelets, watch or dangling earrings; nails short and clean, no polish or false nails
+C7     : Kitchen
+A8     : 3
+B8     : Wash hands at the handwashing sink (water at least 100 °F, soap, single-use paper towel) and again at every change of task; no bare-hand contact with bonbons, truffles or samples: gloves, tongs or tissue (FDA 3-301.11)
+C8     : Kitchen
+A9     : 4
+B9     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C9     : Kitchen
+A10    : 5
+B10    : Anyone with vomiting, diarrhea, jaundice, sore throat with fever or an infected wound does NOT handle food: tell the shift lead and reassign the task (FDA 2-201.11)
+C10    : Kitchen
+A11    : 6
+B11    : Turn on the kitchen exhaust fan BEFORE any other equipment
+C11    : Kitchen
+A12    : 7
+B12    : If the kitchen has gas equipment: check there is no gas smell, then light it (the main valve stays open; know where it is). If you smell gas: switch nothing on or off, get out and call the gas company or 911 from outside
+C12    : Kitchen
+A13    : Equipment startup and checks
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Turn on the tempering machine and preheat to 113 °F
+C15    : Tempering
+A16    : 2
+B16    : Check the cool room ran all night (no outages or alarms) and log the temperature: target 59–64 °F and 50–60% humidity — log reading: ____ °F
+C16    : Cool room
+A17    : 3
+B17    : Check the fillings and ganache fridge ran all night and log the temperature: target 41 °F or below — log reading: ____ °F
+C17    : Fridge
+A18    : 4
+B18    : Turn on display case lighting and shop floor lights
+C18    : Display case
+A19    : 5
+B19    : Check the bonbon display case holds 60–64 °F and is not fogging up before setting out product (above 68 °F cocoa butter melts and bonbons lose their shine) — log reading: ____ °F
+C19    : Display case
+A20    : 6
+B20    : Turn on the A/C — keep the shop at 68–72 °F
+C20    : Shop
+A21    : 7
+B21    : Log kitchen, cool room and fridge temperatures: in the temperature log of the HACCP Food Safety Kit Pro if you have it; if not, right here in "Notes"
+C21    : Office
+A23    : Service setup
+A24    : #
+B24    : Task
+C24    : Area
+D24    : Assigned to
+E24    : ✓
+F24    : Time
+G24    : Notes
+A25    : 1
+B25    : Set up the display case: bonbons, bars, molded figures, truffles
+C25    : Display case
+A26    : 2
+B26    : Check the sign on every display tray: product name, price (and price per lb if sold by weight) and a written allergen notice for unwrapped items (the 9 majors: milk, egg, wheat, soy, peanuts, tree nuts, sesame, fish, shellfish; UK: 14) plus any "may contain" statements; FDA Food Code 2022 3-602.12(C), where adopted
+C26    : Display case
+A27    : 3
+B27    : Restock bags, gift boxes, tissue paper, ribbons
+C27    : Packaging
+A28    : 4
+B28    : Check stock of assorted bonbon gift boxes
+C28    : Packaging
+A29    : 5
+B29    : Set up the sample station with the day's samples: tongs, toothpicks or single-use cups, never bare hands (FDA 3-301.11)
+C29    : Counter
+A30    : 6
+B30    : Check the POS is active and the starting bank was already counted and logged before you unlock the door: no recount here, it is done on the "Cash Drawer Opening" tab of file 09 (milestone in files 08/09)
+C30    : Register
+A31    : 7
+B31    : Put out the chalkboard with new items and featured products
+C31    : Shop
+A33    : Final checks
+A34    : #
+B34    : Task
+C34    : Area
+D34    : Assigned to
+E34    : ✓
+F34    : Time
+G34    : Notes
+A35    : 1
+B35    : Check the background music works
+C35    : Shop
+A36    : 2
+B36    : Check the display case glass is clean
+C36    : Display case
+A37    : 3
+B37    : Confirm online orders waiting to be prepared
+C37    : Office
+A38    : 4
+B38    : Review the calendar: special orders, events, pre-orders
+C38    : Office
+B39    : Tasks done:
+C39    = =COUNTIFS(B6:B38,"?*",E6:E38,"✓")-COUNTIFS(B6:B38,"Task",E6:E38,"✓")   → caché 0.0
+D39    : of
+E39    = =COUNTIF(B6:B38,"?*")-COUNTIF(B6:B38,"Task")-COUNTIF(E6:E38,"N/A")   → caché 25.0
+A40    : Signed off by: _________________  Date: ___/___/______
+A41    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E15 E16 E17 E18 E19 E20 E21 E25 E26 E27 E28 E29 E30 E31 E35 E36 E37 E38 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G38 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Closing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Chocolate Shop Closing
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Shop closing
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Take product out of the display case and store it in the cool room
+C6     : Display case
+A7     : 2
+B7     : Cover any bonbons left out with plastic wrap
+C7     : Display case
+A8     : 3
+B8     : Check the day's cash count is closed and signed and sales are recorded: the reconcile is not repeated here, it is done on the "Cash Drawer Closing" tab of file 09 (milestone in files 08/09)
+C8     : Register
+A9     : 4
+B9     : Check the POS and card terminal are closed AFTER the cash count, never before: the terminal batch is sent on the "Shop Closing" tab of file 08 (milestone in files 08/09)
+C9     : Register
+A10    : 5
+B10    : Clean, then sanitize the counter (approved sanitizer at label strength, test strip; FDA 4-501.114); glass cleaner on the display case glass
+C10    : Counter
+A12    : Kitchen closing
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Clean and dry the tempering machine
+C14    : Tempering
+A15    : 2
+B15    : Wash used molds and leave them to dry
+C15    : Molding
+A16    : 3
+B16    : Store open couverture in airtight containers
+C16    : Dry storage
+A17    : 4
+B17    : Check and log temperatures before closing: cool room 59–64 °F and fillings fridge 41 °F or below — log readings: ____ °F / ____ °F
+C17    : Cool room
+A18    : 5
+B18    : Clean, then sanitize the kitchen's marble/granite surfaces (approved sanitizer at label strength, test strip; FDA 4-501.114) and dry them well: water must never touch the chocolate
+C18    : Kitchen
+A19    : 6
+B19    : Log the day's waste: product, quantity and reason (breakage, bad temper, bloom, expiry, samples or test batch)
+C19    : Office
+A20    : 7
+B20    : Sweep and mop the kitchen floor
+C20    : Cleaning
+A22    : Security and lock-up
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Turn off equipment except the cool room and fridges
+C24    : General
+A25    : 2
+B25    : Make sure gas burners are off (the main valve is for emergencies only) and that water and lights are off
+C25    : General
+A26    : 3
+B26    : Take out the trash and recycle cardboard/plastic
+C26    : Cleaning
+A27    : 4
+B27    : Set the alarm and lock up
+C27    : General
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 02-chocolate-tempering-molding-checklists.xlsx
+# docProps: title='Chocolate Tempering & Molding Checklists: Dark, Milk & White, Bonbons & Bars' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Chocolate Tempering & Molding Checklists: Dark, Milk & White, Bonbons & Bars
+B4     : How to use this template:
+B5     : ▸ Control of craft production: tempering, molding, bonbons, bars.
+B6     : ▸ Log batches, temperatures and times for each process.
+B7     : ▸ Adapt the base recipes to your own formulas.
+B9     : Customization:
+B10    : ▸ Green cells are editable: assigned to, time, notes.
+B11    : ▸ Set temper temps by couverture, per the manufacturer's curve.
+B12    : ▸ Print and keep in the kitchen next to the tempering machine.
+B14    : Tempering and storage:
+B15    : ▸ Before tempering, check the kitchen AIR: 64–68 °F and 50–60% humidity. The three couverture curves on this sheet only work inside that window.
+B16    : ▸ At the bottom of "Molding & Bars" is an editable shelf life table by product type: adjust it to your formula. It sits outside the counter because it is a reference, not a task.
+B17    : ▸ Finished chocolate is NEVER frozen: it condenses on thawing, the water dissolves surface sugar and leaves sugar bloom. Only bulk ganache can be frozen, at 0 °F or below.
+B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B20    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Tempering» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Tempering Control
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Couverture prep
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check dark couverture stock (55–70% cocoa)
+C6     : Dry storage
+A7     : 2
+B7     : Check milk couverture stock (35–40% cocoa)
+C7     : Dry storage
+A8     : 3
+B8     : Check white couverture stock (28–33% cocoa)
+C8     : Dry storage
+A9     : 4
+B9     : Check kitchen temperature and humidity BEFORE tempering: target 64–68 °F and 50–60% humidity (warmer than that, the cocoa butter will not crystallize and bloom appears) — log reading: ____ °F
+C9     : Kitchen
+A10    : 5
+B10    : Weigh couverture per the day's production order
+C10    : Kitchen
+A11    : 6
+B11    : Chop the couverture and load it into the tempering machine
+C11    : Tempering
+A13    : Tempering Process — Dark Chocolate
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Melt to 122–131 °F — log temperature
+C15    : Tempering
+A16    : 2
+B16    : Cool to 81–82 °F on the marble slab or by seeding
+C16    : Tempering
+A17    : 3
+B17    : Rewarm to 88–90 °F — working temperature
+C17    : Tempering
+A18    : 4
+B18    : Tempering test on a spatula tip: it should set in 3–5 min at 68 °F, with shine, a clean snap and shrinkage in the mold. If not, remelt and retemper — never mold "and hope for the best"
+C18    : Tempering
+A19    : 5
+B19    : Log batch, time and final temperature
+C19    : Office
+A21    : Tempering Process — Milk Chocolate
+A22    : #
+B22    : Task
+C22    : Area
+D22    : Assigned to
+E22    : ✓
+F22    : Time
+G22    : Notes
+A23    : 1
+B23    : Melt to 113–122 °F — log temperature
+C23    : Tempering
+A24    : 2
+B24    : Cool to 79–81 °F on the marble slab or by seeding
+C24    : Tempering
+A25    : 3
+B25    : Rewarm to 84–86 °F — working temperature
+C25    : Tempering
+A26    : 4
+B26    : Tempering test, thin layer on paper: at 64–68 °F it should set in 3–5 min, with even shine and no streaks, starting from the working temperature of 84–86 °F. If not, remelt and retemper — never mold "and hope for the best". Log the batch, time and final temperature
+C26    : Office
+A28    : Tempering Process — White Chocolate
+A29    : #
+B29    : Task
+C29    : Area
+D29    : Assigned to
+E29    : ✓
+F29    : Time
+G29    : Notes
+A30    : 1
+B30    : Melt to 104–113 °F — log temperature
+C30    : Tempering
+A31    : 2
+B31    : Cool to 77–79 °F on the marble slab or by seeding
+C31    : Tempering
+A32    : 3
+B32    : Rewarm to 82–84 °F — working temperature
+C32    : Tempering
+A33    : 4
+B33    : Tempering test, thin layer on paper: at 64–68 °F it should set in 3–5 min, with even shine and no streaks, starting from the working temperature of 82–84 °F. If not, remelt and retemper — never mold "and hope for the best". Log the batch, time and final temperature
+C33    : Office
+B34    : Tasks done:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Task",E6:E33,"✓")   → caché 0.0
+D34    : of
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Task")-COUNTIF(E6:E33,"N/A")   → caché 19.0
+A35    : Signed off by: _________________  Date: ___/___/______
+A36    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E23 E24 E25 E26 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G33 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Molding & Bars» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Production: Molding & Bonbons
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Molding bonbons
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Prep clean molds at room temperature (68–72 °F)
+C6     : Molding
+A7     : 2
+B7     : Pour tempered chocolate into the molds — tap to remove air bubbles
+C7     : Molding
+A8     : 3
+B8     : Pour out the excess — leave an even shell of 1/16–1/8 in
+C8     : Molding
+A9     : 4
+B9     : Invert molds over a rack and let drain
+C9     : Molding
+A10    : 5
+B10    : Chill at 54–57 °F for 10–15 min
+C10    : Cool room
+A11    : 6
+B11    : Prepare the day's fillings/ganaches per recipe
+C11    : Kitchen
+A12    : 7
+B12    : Fill bonbons to 80%, leaving room for the cap
+C12    : Molding
+A13    : 8
+B13    : Cap with tempered chocolate — smooth with a spatula
+C13    : Molding
+A14    : 9
+B14    : Chill 15–20 min until the chocolate contracts
+C14    : Cool room
+A15    : 10
+B15    : Unmold, check shine and store on trays
+C15    : Molding
+A17    : Bar production
+A18    : #
+B18    : Task
+C18    : Area
+D18    : Assigned to
+E18    : ✓
+F18    : Time
+G18    : Notes
+A19    : 1
+B19    : Prep clean bar molds at room temperature
+C19    : Molding
+A20    : 2
+B20    : Pour tempered chocolate and tap/vibrate
+C20    : Molding
+A21    : 3
+B21    : Add inclusions if needed: nuts, dried fruit, salt
+C21    : Molding
+A22    : 4
+B22    : Smooth the surface with a spatula
+C22    : Molding
+A23    : 5
+B23    : Chill at 54–57 °F for 20–30 min
+C23    : Cool room
+A24    : 6
+B24    : Unmold, check the finish and weigh each bar
+C24    : Molding
+A25    : 7
+B25    : Wrap in paper/foil and label: product name, ingredients, net weight (oz and g), allergens, business name and address (FDA 3-602.11), plus lot and best-by
+C25    : Wrapping
+A27    : Quality control and records
+A28    : #
+B28    : Task
+C28    : Area
+D28    : Assigned to
+E28    : ✓
+F28    : Time
+G28    : Notes
+A29    : 1
+B29    : Check shine, texture and snap of products
+C29    : Kitchen
+A30    : 2
+B30    : Log production batches: product, quantity, date
+C30    : Office
+A31    : 3
+B31    : Label each batch with its production date and best-by date by product type (table at the bottom of the sheet); fresh-cream ganache and high water-activity fillings (TCS): 7-day date mark at 41 °F or below, production day = day 1 (FDA 3-501.17)
+C31    : Office
+A32    : 4
+B32    : Log the day's waste: product, quantity and reason (breakage, bad temper, bloom, test). Plain chocolate that is uncontaminated can be remelted; anything with ganache or fruit goes in the trash
+C32    : Office
+A33    : 5
+B33    : Store finished product at 59–64 °F and 50–60% humidity, in the dark and away from strong odors (cocoa absorbs them) — log reading: ____ °F
+C33    : Cool room
+B34    : Tasks done:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Task",E6:E33,"✓")   → caché 0.0
+D34    : of
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Task")-COUNTIF(E6:E33,"N/A")   → caché 22.0
+A35    : Signed off by: _________________  Date: ___/___/______
+A37    : TYPICAL SHELF LIFE AT 59–64 °F AND 50–60% HUMIDITY — adjust it to your recipes and your kitchen
+B38    : Product type
+C38    : Shelf life
+D38    : Notes
+B39    : Bars and unfilled chocolate
+C39    : 12–18 months
+D39    : The enemy is not time: it is moisture, light and odors. Keep sealed and in the dark
+B40    : Hollow figures and solid pieces
+C40    : 6–12 months
+D40    : Same as the bar, but a hollow piece cracks with sudden temperature changes
+B41    : Fresh-cream ganache bonbons
+C41    : 7 days at 41 °F
+D41    : Treat it as TCS: 41 °F or below, 7 days max (FDA date marking). Let the box warm up CLOSED before opening, or it sweats. Longer only with a lab water-activity test
+B42    : Bonbons with UHT cream, sorbate or alcohol
+C42    : 4–8 weeks
+D42    : Preservative and alcohol lower water activity; without them you will not reach even half of this. Only with a lab-tested water activity (not TCS); otherwise, treat it as fresh-cream ganache
+B43    : Praline, gianduja and nut bonbons
+C43    : 2–4 months
+D43    : Nut fat goes rancid and refrigeration does not prevent it: go by the date, not the look
+B44    : Truffles and coated clusters
+C44    : 3–4 weeks
+D44    : If they contain cream or butter, count them as fresh ganache
+B45    : Liqueur and sugar-crystallized bonbons
+C45    : 3–6 months
+D45    : Watch for sugar crystallization in the shell: it cracks and leaks. Alcohol-filled candy: check your state rules
+B46    : Candied nuts and chocolate-dipped candied fruit
+C46    : 1–3 months
+D46    : They clump with moisture; airtight packaging with a desiccant if your kitchen is humid
+B47    : Chocolate-dipped wafers and crisps
+C47    : 3–4 weeks
+D47    : They lose their crunch long before they become unsafe: pull them for quality
+B48    : Finished chocolate: do NOT freeze
+C48    : Never
+D48    : On thawing it condenses, the water dissolves surface sugar and leaves sugar bloom. Only bulk ganache can be frozen, at 0 °F or below for 1–2 months, thawed 24 h in the fridge and unopened
+A49    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E19 E20 E21 E22 E23 E24 E25 E29 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G33 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 03-chocolate-shop-manager-checklist.xlsx
+# docProps: title='Chocolate Shop Manager Checklist: Daily, Weekly & Monthly' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Chocolate Shop Manager Checklist: Daily, Weekly & Monthly
+B4     : How to use this template:
+B5     : ▸ Daily, weekly and monthly tasks for the manager / shift lead.
+B6     : ▸ Includes food cost control, waste and production KPIs.
+B7     : ▸ Customize to the size of your operation.
+B9     : Customization:
+B10    : ▸ Green cells are editable: assigned to, time, notes.
+B11    : ▸ Adapt the KPIs to your monthly goals.
+B13    : Manager duties:
+B14    : ▸ Time-clock punches are closed and validated EVERY DAY (kitchen and shop) and filed each month: under the FLSA you must keep these records 2 years (29 CFR 516).
+B15    : ▸ The weekend block on the "Weekly Tasks" tab exists because in a chocolate shop with a retail counter Saturday and Sunday are the sales peak, and Monday's planning runs on what gets logged there.
+B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B18    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Daily Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Daily Tasks
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : First hour (opening)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review the calendar: special orders, pre-orders, deliveries
+C6     : Management
+A7     : 2
+B7     : Check planned production vs. current stock
+C7     : Management
+A8     : 3
+B8     : Pre-shift meeting with the team: day's priorities, special orders
+C8     : Team
+A9     : 4
+B9     : Check kitchen, cool room, fridge and shop temperatures
+C9     : Office
+A10    : 5
+B10    : Review online orders received overnight
+C10    : Office
+A12    : During the day
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Supervise production quality: tempering, finish, weight
+C14    : Production
+A15    : 2
+B15    : Track waste and discarded chocolate
+C15    : Management
+A16    : 3
+B16    : Handle customer service and special requests
+C16    : Shop
+A17    : 4
+B17    : Follow up on pending supplier orders
+C17    : Office
+A18    : 5
+B18    : Post on social media: product of the day, behind the scenes
+C18    : Social media
+A20    : End of day
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Review the day's sales vs. goal
+C22    : Management
+A23    : 2
+B23    : Check stock for tomorrow's production
+C23    : Dry storage
+A24    : 3
+B24    : Log issues and notes for the next day
+C24    : Office
+A25    : 4
+B25    : Close out and approve the whole team's time-clock punches, kitchen and shop: the FLSA requires keeping these records 2 years
+C25    : Office
+A26    : 5
+B26    : Confirm tomorrow's team and schedule
+C26    : Team
+B27    : Tasks done:
+C27    = =COUNTIFS(B6:B26,"?*",E6:E26,"✓")-COUNTIFS(B6:B26,"Task",E6:E26,"✓")   → caché 0.0
+D27    : of
+E27    = =COUNTIF(B6:B26,"?*")-COUNTIF(B6:B26,"Task")-COUNTIF(E6:E26,"N/A")   → caché 15.0
+A28    : Signed off by: _________________  Date: ___/___/______
+A29    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G26 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Weekly Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Weekly Tasks
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Monday — Planning
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Plan the week's production based on demand
+C6     : Management
+A7     : 2
+B7     : Check stock of couverture, fillings and packaging
+C7     : Dry storage
+A8     : 3
+B8     : Place supplier orders for the week
+C8     : Logistics
+A9     : 4
+B9     : Review the week's special orders and pre-orders
+C9     : Office
+A11    : Tuesday — Quality
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Audit last week's logged temperatures
+C13    : Office
+A14    : 2
+B14    : Check date marks on fillings and ganaches: TCS ones (fresh cream, high water activity) last 7 days max at 41 °F or below, production day = day 1 (FDA 3-501.17)
+C14    : Cool room
+A15    : 3
+B15    : Review accumulated waste and its causes
+C15    : Management
+A17    : Wednesday — Team
+A18    : #
+B18    : Task
+C18    : Area
+D18    : Assigned to
+E18    : ✓
+F18    : Time
+G18    : Notes
+A19    : 1
+B19    : Review individual performance: productivity, quality
+C19    : Team
+A20    : 2
+B20    : Quick training: new technique or product
+C20    : Team
+A21    : 3
+B21    : Adjust shifts if demand peaks are expected
+C21    : Team
+A23    : Thursday — Sales
+A24    : #
+B24    : Task
+C24    : Area
+D24    : Assigned to
+E24    : ✓
+F24    : Time
+G24    : Notes
+A25    : 1
+B25    : Review sales by product: bars, bonbons, molded figures
+C25    : Management
+A26    : 2
+B26    : Update prices if ingredient costs change
+C26    : Office
+A27    : 3
+B27    : Plan weekend deals or promotions
+C27    : Social media
+A29    : Friday — Food Cost
+A30    : #
+B30    : Task
+C30    : Area
+D30    : Assigned to
+E30    : ✓
+F30    : Time
+G30    : Notes
+A31    : 1
+B31    : Calculate weekly food cost: ingredient cost / sales
+C31    : Management
+A32    : 2
+B32    : Compare actual food cost vs. target (30–35%)
+C32    : Management
+A33    : 3
+B33    : Adjust recipes or portions if off target
+C33    : Production
+A34    : 4
+B34    : Prepare the weekly summary for management
+C34    : Office
+A36    : Saturday & Sunday — Shop at Full Speed
+A37    : #
+B37    : Task
+C37    : Area
+D37    : Assigned to
+E37    : ✓
+F37    : Time
+G37    : Notes
+A38    : 1
+B38    : Restock the display case before each peak: mid-morning and mid-afternoon, without waiting for it to empty
+C38    : Display case
+A39    : 2
+B39    : Check gift packaging stock: boxes, ribbons and bags run out on Saturday and the supplier does not deliver until Monday
+C39    : Packaging
+A40    : 3
+B40    : Log stockouts and what went unsold, for Monday's planning
+C40    : Management
+B41    : Tasks done:
+C41    = =COUNTIFS(B6:B40,"?*",E6:E40,"✓")-COUNTIFS(B6:B40,"Task",E6:E40,"✓")   → caché 0.0
+D41    : of
+E41    = =COUNTIF(B6:B40,"?*")-COUNTIF(B6:B40,"Task")-COUNTIF(E6:E40,"N/A")   → caché 20.0
+A42    : Signed off by: _________________  Date: ___/___/______
+A43    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E19 E20 E21 E25 E26 E27 E31 E32 E33 E34 E38 E39 E40 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G40 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Monthly Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Monthly Tasks
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Inventory and finance
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Full inventory: couverture, nuts, liqueurs, packaging
+C6     : Dry storage
+A7     : 2
+B7     : Calculate monthly food cost and compare to target
+C7     : Management
+A8     : 3
+B8     : Review supplier invoices and negotiate if needed
+C8     : Office
+A9     : 4
+B9     : Sales analysis by category: bonbons, bars, molded figures, gifts
+C9     : Management
+A11    : Team and training
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Team review: individual feedback
+C13    : Team
+A14    : 2
+B14    : Plan next month's training
+C14    : Team
+A15    : 3
+B15    : Review and update operating procedures
+C15    : Office
+A16    : 4
+B16    : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C16    : Office
+A18    : Product and marketing
+A19    : #
+B19    : Task
+C19    : Area
+D19    : Assigned to
+E19    : ✓
+F19    : Time
+G19    : Notes
+A20    : 1
+B20    : Launch a new product or flavor of the month
+C20    : Production
+A21    : 2
+B21    : Update the product list and labels if anything changes
+C21    : Shop
+A22    : 3
+B22    : Plan next month's social media content
+C22    : Social media
+A23    : 4
+B23    : Review Google Business Profile and Yelp reviews and answer pending ones
+C23    : Social media
+B24    : Tasks done:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Task",E6:E23,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Task")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Signed off by: _________________  Date: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 04-chocolate-shop-duties-by-role.xlsx
+# docProps: title='Chocolate Shop Duties by Role: Chocolatier, Sales Associate & Shift Lead' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Chocolate Shop Duties by Role: Chocolatier, Sales Associate & Shift Lead
+B4     : How to use this template:
+B5     : ▸ Checklists specific to each job.
+B6     : ▸ Each role has its tasks clearly defined.
+B7     : ▸ Great for onboarding new hires.
+B9     : Roles included:
+B10    : ▸ Chocolatier / Kitchen
+B11    : ▸ Sales Associate
+B12    : ▸ Shift Lead
+B14    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B15    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Chocolatier» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Chocolatier / Kitchen
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Daily production
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review the day's production order
+C6     : Kitchen
+A7     : 2
+B7     : Prep and weigh ingredients per recipe cards
+C7     : Kitchen
+A8     : 3
+B8     : Temper couverture by type (dark/milk/white)
+C8     : Tempering
+A9     : 4
+B9     : Make bonbons per the day's recipes
+C9     : Molding
+A10    : 5
+B10    : Make bars and molded figures per the plan
+C10    : Molding
+A11    : 6
+B11    : Prepare ganaches and fillings per recipe card
+C11    : Kitchen
+A12    : 7
+B12    : Wrap and label finished product: product name, ingredients, net weight (oz and g), allergens, business name and address (FDA 3-602.11), plus lot and best-by
+C12    : Wrapping
+A13    : 8
+B13    : Log production batches and quantities
+C13    : Office
+A15    : Quality and control
+A16    : #
+B16    : Task
+C16    : Area
+D16    : Assigned to
+E16    : ✓
+F16    : Time
+G16    : Notes
+A17    : 1
+B17    : Check the temper: shine, snap, contraction
+C17    : Tempering
+A18    : 2
+B18    : Check weights of bonbons and bars
+C18    : Kitchen
+A19    : 3
+B19    : Log process temperatures
+C19    : Office
+A20    : 4
+B20    : Log waste and discards
+C20    : Office
+A22    : Kitchen cleaning
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Clean the tempering machine after every use
+C24    : Tempering
+A25    : 2
+B25    : Clean molds and dry them properly
+C25    : Molding
+A26    : 3
+B26    : Clean the work marble slab
+C26    : Kitchen
+A27    : 4
+B27    : Leave the kitchen tidy for the next shift
+C27    : Kitchen
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Sales Associate» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Sales Associate
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Shop opening
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Set up the display case with the day's products
+C6     : Display case
+A7     : 2
+B7     : Check the sign on every display tray: price, price per lb if sold by weight, and the written allergen notice for unwrapped items (the 9 majors: milk, egg, wheat, soy, peanuts, tree nuts, sesame, fish, shellfish; UK: 14) plus any "may contain" statements (FDA 3-602.12(C), where adopted)
+C7     : Display case
+A8     : 3
+B8     : Set up the sample area: tongs, toothpicks or single-use cups, never bare hands (FDA 3-301.11)
+C8     : Counter
+A9     : 4
+B9     : Turn on the POS and check the starting bank
+C9     : Register
+A10    : 5
+B10    : Restock packaging: bags, boxes, tissue paper
+C10    : Packaging
+A12    : Customer service
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Serve customers: advise on products and pairings
+C14    : Shop
+A15    : 2
+B15    : Build custom bonbon gift boxes with gloves or tongs, never bare hands (FDA 3-301.11)
+C15    : Packaging
+A16    : 3
+B16    : Handle pre-orders and advance orders: when you CONFIRM the order, write down allergens and intolerances, quantities, pickup date and time, price, deposit collected and cancellation terms
+C16    : Office
+A17    : 4
+B17    : Offer a sample of the day's featured product
+C17    : Counter
+A18    : 5
+B18    : Take payment and issue the receipt
+C18    : Register
+A20    : Shop upkeep
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Restock the display case as items sell
+C22    : Display case
+A23    : 2
+B23    : Keep the counter clean and sanitized (approved sanitizer at label strength, test strip; FDA 4-501.114); glass cleaner on the display glass
+C23    : Cleaning
+A24    : 3
+B24    : Watch shop temperature (68–72 °F) and display case temperature (60–64 °F): any warmer and bonbons sweat and lose their shine — log reading: ____ °F
+C24    : Shop
+A26    : Shop closing
+A27    : #
+B27    : Task
+C27    : Area
+D27    : Assigned to
+E27    : ✓
+F27    : Time
+G27    : Notes
+A28    : 1
+B28    : Balance the register and log sales
+C28    : Register
+A29    : 2
+B29    : Move products from the display case to the cool room
+C29    : Display case
+A30    : 3
+B30    : Clean counters, display glass and shop floor
+C30    : Cleaning
+B31    : Tasks done:
+C31    = =COUNTIFS(B6:B30,"?*",E6:E30,"✓")-COUNTIFS(B6:B30,"Task",E6:E30,"✓")   → caché 0.0
+D31    : of
+E31    = =COUNTIF(B6:B30,"?*")-COUNTIF(B6:B30,"Task")-COUNTIF(E6:E30,"N/A")   → caché 16.0
+A32    : Signed off by: _________________  Date: ___/___/______
+A33    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E28 E29 E30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G30 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Shift Lead» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Shift Lead
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : General oversight
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check that opening was done right (kitchen + shop)
+C6     : General
+A7     : 2
+B7     : Assign tasks to the team by priority
+C7     : Team
+A8     : 3
+B8     : Supervise production quality
+C8     : Production
+A9     : 4
+B9     : Handle urgent supplier orders
+C9     : Logistics
+A10    : 5
+B10    : Resolve customer issues
+C10    : Shop
+A12    : Operations control
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Check minimum stock of couverture and packaging
+C14    : Dry storage
+A15    : 2
+B15    : Monitor cool room, fridge and kitchen temperatures
+C15    : Office
+A16    : 3
+B16    : Track the shift's waste and discards
+C16    : Management
+A17    : 4
+B17    : Verify food safety compliance (HACCP Food Safety Kit Pro if you have it; if not, note it next to the task)
+C17    : Office
+A19    : End of shift
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Review completed vs. planned production
+C21    : Management
+A22    : 2
+B22    : Leave notes for the next shift
+C22    : Office
+A23    : 3
+B23    : Supervise a proper close of the kitchen and shop
+C23    : General
+B24    : Tasks done:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Task",E6:E23,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Task")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Signed off by: _________________  Date: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 05-chocolate-shop-cleaning-checklist-maintenance.xlsx
+# docProps: title='Chocolate Shop Cleaning Checklist, Inventory & Maintenance Schedule' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Chocolate Shop Cleaning Checklist, Inventory & Maintenance Schedule
+B4     : How to use this template:
+B5     : ▸ Deep clean, equipment maintenance, periodic inventories.
+B6     : ▸ Schedule these tasks on the weekly/monthly calendar.
+B7     : ▸ Mark ✓ when each task is done.
+B9     : Customization:
+B10    : ▸ Adjust frequencies to your production volume.
+B11    : ▸ Add tasks specific to your kitchen.
+B13    : Beyond the month:
+B14    : ▸ The "Quarterly & Annual" tab covers what you hire out and what an inspection asks for in writing: pest control, hood exhaust (NFPA 96, only if you cook with grease), water-activity (aw) tests, food handler cards and CFPM, tempering and panning machine service, refrigeration (EPA 608), probe and scale calibration, extinguishers (OSHA), gas, insurance and POS / sales tax.
+B15    : ▸ Write the report number of each inspection and the date of the next one in "Notes"; the "Frequency" column already shows the legal or recommended interval for each.
+B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B18    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Weekly Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Tasks
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Deep Clean — Kitchen
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Deep clean the tempering machine: take apart and clean
+C6     : Tempering
+A7     : 2
+B7     : Clean, then sanitize the marble slab (approved sanitizer at label strength, test strip; FDA 4-501.114) and dry it well: water must never touch the chocolate
+C7     : Kitchen
+A8     : 3
+B8     : Clean all molds: check for residue
+C8     : Molding
+A9     : 4
+B9     : Clean, then sanitize the wrapping surfaces (approved sanitizer at label strength, test strip; FDA 4-501.114)
+C9     : Wrapping
+A10    : 5
+B10    : Clean and organize kitchen shelving
+C10    : Kitchen
+A11    : 6
+B11    : Scrub floors with a food-safe degreaser
+C11    : Cleaning
+A13    : Deep Clean — Shop
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Clean display case glass, inside and out
+C15    : Display case
+A16    : 2
+B16    : Clean shop shelves and displays
+C16    : Shop
+A17    : 3
+B17    : Clean the store window
+C17    : Shop
+A18    : 4
+B18    : Clean, then sanitize the sample area (approved sanitizer at label strength, test strip; FDA 4-501.114)
+C18    : Counter
+A20    : Weekly inventory
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Count couverture stock: dark, milk, white
+C22    : Dry storage
+A23    : 2
+B23    : Count nuts and dried fruit stock
+C23    : Dry storage
+A24    : 3
+B24    : Count stock of prepared fillings and ganaches
+C24    : Fridge
+A25    : 4
+B25    : Count packaging stock: boxes, bags, ribbons, paper
+C25    : Packaging
+A26    : 5
+B26    : Count consumables stock: gloves, plastic wrap, labels
+C26    : Dry storage
+A27    : 6
+B27    : Log stockouts and place the order
+C27    : Office
+A29    : Equipment maintenance
+A30    : #
+B30    : Task
+C30    : Area
+D30    : Assigned to
+E30    : ✓
+F30    : Time
+G30    : Notes
+A31    : 1
+B31    : Check the tempering machine works
+C31    : Tempering
+A32    : 2
+B32    : Check and log cold equipment temperatures: cool room 59–64 °F and fillings fridge 41 °F or below — log readings: ____ °F / ____ °F
+C32    : Cool room
+A33    : 3
+B33    : Check mold condition (scratched, warped)
+C33    : Molding
+A34    : 4
+B34    : Check the precision scale with a test weight; the retail scale must be legal-for-trade (NTEP), inspected and sealed by your state weights and measures office
+C34    : Kitchen
+B35    : Tasks done:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Task",E6:E34,"✓")   → caché 0.0
+D35    : of
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Task")-COUNTIF(E6:E34,"N/A")   → caché 20.0
+A36    : Signed off by: _________________  Date: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G34 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Monthly Tasks» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Tasks
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Deep maintenance
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Professional tempering machine service if needed
+C6     : Tempering
+A7     : 2
+B7     : Clean A/C filters
+C7     : General
+A8     : 3
+B8     : Inspect electrical wiring and outlets
+C8     : General
+A9     : 4
+B9     : Calibrate thermometers and probes in ice water (32 °F)
+C9     : Kitchen
+A10    : 5
+B10    : Check fire extinguishers (monthly visual, OSHA 1910.157(e)(2)): gauge in the green, pin and seal in place, clear access, tag signed
+C10    : General
+A12    : Full monthly inventory
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Full inventory: couverture by type and supplier
+C14    : Dry storage
+A15    : 2
+B15    : Inventory: nuts, pralines, liqueurs, extracts
+C15    : Dry storage
+A16    : 3
+B16    : Inventory: molds, tools, utensils
+C16    : Kitchen
+A17    : 4
+B17    : Inventory: all packaging (boxes, bags, ribbons)
+C17    : Packaging
+A18    : 5
+B18    : Compare actual vs. theoretical inventory: spot gaps
+C18    : Management
+A20    : Food safety
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Review the month's food safety records: temperatures, cleaning (in the HACCP Food Safety Kit Pro if you have it; if not, note it next to the task)
+C22    : Office
+A23    : 2
+B23    : Check the pest control plan with your licensed pest control operator
+C23    : General
+A24    : 3
+B24    : Update recipe cards if there are new products
+C24    : Office
+A25    : 4
+B25    : Check labeling: ingredients, allergens (the 9 US majors) and lot codes; packaged-item labels (FDA 3-602.11) and the display case allergen notice (3-602.12(C))
+C25    : Office
+B26    : Tasks done:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Task",E6:E25,"✓")   → caché 0.0
+D26    : of
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Task")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Signed off by: _________________  Date: ___/___/______
+A28    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G25 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Pest control, hygiene & lab tests — contracted
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Frequency
+G5     : Notes
+A6     : 1
+B6     : Pest control by a licensed operator: service visit and signed service report on file (write the report # in the Notes column)
+C6     : Office
+F6     : Monthly
+A7     : 2
+B7     : Exhaust and ventilation: filters and fans cleaned as the manufacturer says; if you cook with grease under a hood (NFPA 96), hood and duct cleaning by a certified contractor at its frequency for your volume
+C7     : General
+F7     : Annual
+A8     : 3
+B8     : Lab tests by an outside lab: water activity (aw) of new ganaches and fillings, to set their shelf life and confirm which ones are TCS (FDA Food Code 1-201.10); water testing only if you are on a private well
+C8     : Office
+F8     : Semiannual
+A9     : 4
+B9     : Food handler cards for all staff (renewals as your state or county requires) and a certified food protection manager on the team (FDA Food Code 2-102.12)
+C9     : Team
+F9     : Annual
+A10    : 5
+B10    : Review the food safety plan and product recipe cards: additions, removals and supplier changes this year
+C10    : Office
+F10    : Annual
+A12    : Equipment, facilities and safety
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Frequency
+G13    : Notes
+A14    : 1
+B14    : Technician service on the tempering machine and panning machine: probes, heating elements, gaskets and auger wear
+C14    : Tempering
+F14    : Annual
+A15    : 2
+B15    : Refrigeration service by an EPA 608-certified tech: cool room, fridges and display cases — coils, gaskets, refrigerant leak check and defrost cycle
+C15    : Cool room
+F15    : Semiannual
+A16    : 3
+B16    : Calibrate thermometers and probes (ice point, 32 °F, or against a reference) and the precision scale with a test weight, and note the deviation; the retail scale stays legal-for-trade (NTEP)
+C16    : Kitchen
+F16    : Quarterly
+A17    : 4
+B17    : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hydrostatic tests as the label says (OSHA 1910.157(f))
+C17    : General
+F17    : Annual
+A18    : 5
+B18    : Gas lines and appliance connections checked by a licensed pro, if you have gas, as often as your local code or gas utility requires
+C18    : General
+F18    : Per local code
+A20    : Paperwork, Insurance & Invoicing
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Frequency
+G21    : Notes
+A22    : 1
+B22    : Renew insurance and review coverage: general and product liability, property, workers' comp, business interruption and equipment breakdown with spoilage (a cool room down in July can melt the stock)
+C22    : Office
+F22    : Annual
+A23    : 2
+B23    : Check that your health permit (and, if your state requires one to make candy or to sell wholesale or by mail, your food manufacturing license) is current and matches what you really do: kitchen, shop, shipping
+C23    : Office
+F23    : Annual
+A24    : 3
+B24    : POS check before year-end: software updates, sales tax rates and settings (many states tax candy even where groceries are exempt), user permissions
+C24    : Office
+F24    : Annual
+A25    : 4
+B25    : File the quarter's time-clock records and note in "Notes" each inspection's report number and the date of the next one
+C25    : Office
+F25    : Quarterly
+B26    : Tasks done:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Task",E6:E25,"✓")   → caché 0.0
+D26    : of
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Task")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Signed off by: _________________  Date: ___/___/______
+A28    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A6:G25 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 06-chocolate-shop-seasonal-checklists.xlsx
+# docProps: title="Chocolate Shop Seasonal Checklists: Holiday Season, Valentine's Day & Easter" · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Chocolate Shop Seasonal Checklists: Holiday Season, Valentine's Day & Easter
+B4     : How to use this template:
+B5     : ▸ Planning for seasonal campaigns and special events.
+B6     : ▸ Holiday Season, Valentine's Day, Easter, Mother's Day and more.
+B7     : ▸ Each campaign has production, packaging and marketing.
+B9     : Customization:
+B10    : ▸ Adjust dates and products to your catalog.
+B11    : ▸ Add local fairs and events in your area.
+B13    : Before closing a campaign:
+B14    : ▸ Every pre-order — retail or corporate — is confirmed IN WRITING with allergens and intolerances, quantities, delivery date and time, price, deposit and cancellation terms.
+B15    : ▸ Publish each campaign's pre-order deadline, and your carrier's shipping cutoff, before opening pre-sales: what breaks the last week is not production, it is the order that comes in on December 22.
+B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B18    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Holiday Season» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Holiday Season Campaign (Nov–Dec)
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Prep (October)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Design the holiday catalog: bark, toffee, bonbons, molded figures and Hanukkah gelt
+C6     : Management
+A7     : 2
+B7     : Order extra couverture and ingredients
+C7     : Logistics
+A8     : 3
+B8     : Design and order holiday packaging: boxes, ribbons, cards
+C8     : Packaging
+A9     : 4
+B9     : Plan extra production: shifts, seasonal staff
+C9     : Team
+A10    : 5
+B10    : Launch pre-sales on the web and social media
+C10    : Social media
+A11    : 6
+B11    : Set and publish the Holiday Season pre-order DEADLINE, your carrier's shipping cutoff and the pickup hours for Christmas Eve and New Year's Eve (in the shop, on the website and on social media)
+C11    : Office
+A13    : Holiday production (Nov–Dec)
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Make artisan bark and toffee: praline, nut brittle, truffle
+C15    : Production
+A16    : 2
+B16    : Make chocolate figures: Santas, trees, ornaments
+C16    : Molding
+A17    : 3
+B17    : Make special holiday bonbons
+C17    : Molding
+A18    : 4
+B18    : Make gift baskets and corporate gift sets
+C18    : Wrapping
+A19    : 5
+B19    : Extra quality control: check every batch
+C19    : Office
+A21    : Shop and marketing
+A22    : #
+B22    : Task
+C22    : Area
+D22    : Assigned to
+E22    : ✓
+F22    : Time
+G22    : Notes
+A23    : 1
+B23    : Decorate the shop and store window for the holidays
+C23    : Shop
+A24    : 2
+B24    : Set up a special corporate gifting display
+C24    : Display case
+A25    : 3
+B25    : Post the holiday catalog on social media and the web
+C25    : Social media
+A26    : 4
+B26    : Manage corporate orders: when you CONFIRM each order, write down allergens and intolerances, quantities, delivery date and place, unit price, deposit and cancellation terms
+C26    : Office
+B27    : Tasks done:
+C27    = =COUNTIFS(B6:B26,"?*",E6:E26,"✓")-COUNTIFS(B6:B26,"Task",E6:E26,"✓")   → caché 0.0
+D27    : of
+E27    = =COUNTIF(B6:B26,"?*")-COUNTIF(B6:B26,"Task")-COUNTIF(E6:E26,"N/A")   → caché 15.0
+A28    : Signed off by: _________________  Date: ___/___/______
+A29    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E23 E24 E25 E26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G26 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Valentine's Day» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Valentine's Day Campaign (Feb)
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Prep (January)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Design the Valentine's collection: hearts, premium bonbons
+C6     : Management
+A7     : 2
+B7     : Order special molds if needed
+C7     : Logistics
+A8     : 3
+B8     : Design romantic packaging: heart boxes, red ribbons
+C8     : Packaging
+A9     : 4
+B9     : Plan social media promotion: countdown, giveaways
+C9     : Social media
+A11    : Production (Feb 1–14)
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Make heart-shaped bonbons
+C13    : Molding
+A14    : 2
+B14    : Make bars with an engraved message
+C14    : Molding
+A15    : 3
+B15    : Make premium truffles and limited-edition bonbons
+C15    : Production
+A16    : 4
+B16    : Prepare assorted bonbon gift boxes
+C16    : Wrapping
+A18    : Sales and marketing
+A19    : #
+B19    : Task
+C19    : Area
+D19    : Assigned to
+E19    : ✓
+F19    : Time
+G19    : Notes
+A20    : 1
+B20    : Decorate the shop and display case for Valentine's Day
+C20    : Shop
+A21    : 2
+B21    : Offer a personalization service: message on a bar
+C21    : Counter
+A22    : 3
+B22    : Post daily on social media: countdown
+C22    : Social media
+A23    : 4
+B23    : Handle special orders and home deliveries: confirm in writing allergens, address, delivery window and who receives; on your own deliveries, product travels below 64 °F and never in a trunk in the sun; shipped orders go in an insulated mailer with cold packs when it is warm at the destination
+C23    : Logistics
+B24    : Tasks done:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Task",E6:E23,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Task")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Signed off by: _________________  Date: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Easter» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Easter Campaign (Mar–Apr)
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Prep (February)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Design the Easter collection: eggs, figures, baskets
+C6     : Management
+A7     : 2
+B7     : Order egg and figure molds
+C7     : Logistics
+A8     : 3
+B8     : Design spring packaging
+C8     : Packaging
+A9     : 4
+B9     : Plan chocolate Easter basket production if applicable
+C9     : Production
+A11    : Easter production
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Make chocolate eggs: small, medium, large
+C13    : Molding
+A14    : 2
+B14    : Make Easter figures: bunnies, chicks
+C14    : Molding
+A15    : 3
+B15    : Make decorated chocolate Easter baskets
+C15    : Production
+A16    : 4
+B16    : Make spring bonbons
+C16    : Molding
+A17    : 5
+B17    : Wrap and label the Easter collection: product name, ingredients, net weight (oz and g), allergens, business name and address (FDA 3-602.11), plus lot and best-by
+C17    : Wrapping
+A19    : Shop and marketing
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Decorate the shop for spring/Easter
+C21    : Shop
+A22    : 2
+B22    : Set up the store window with eggs and figures
+C22    : Display case
+A23    : 3
+B23    : Post the collection on social media with quality photos
+C23    : Social media
+A24    : 4
+B24    : Run an egg-decorating workshop if applicable
+C24    : Shop
+B25    : Tasks done:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Task",E6:E24,"✓")   → caché 0.0
+D25    : of
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Task")-COUNTIF(E6:E24,"N/A")   → caché 13.0
+A26    : Signed off by: _________________  Date: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G24 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 07-blank-chocolate-shop-checklist-template.xlsx
+# docProps: title='Blank Chocolate Shop Checklist Template (Editable)' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Blank Chocolate Shop Checklist Template (Editable)
+B4     : How to use this template:
+B5     : ▸ 3 blank templates to build your own task lists.
+B6     : ▸ By area, by shift and by role.
+B7     : ▸ Ideal for your shop's specific tasks.
+B9     : Customization:
+B10    : ▸ Write your tasks in the empty rows.
+B11    : ▸ Use the same area codes as in the other templates.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «By Area» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template — By Area
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «By Shift» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template — By Shift
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «By Role» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template — By Role
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+####################################################################################################
+# 08-chocolate-store-opening-closing-checklist.xlsx
+# docProps: title='Chocolate Store Opening & Closing Checklist (Whole Shop)' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$45 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Chocolate Store Opening & Closing Checklist (Whole Shop)
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE SHOP: what gets opened and closed for the entire business, not for each area. Use it as the backbone of the day.
+B8     : How to use
+B10    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift lead assigns tasks and each person initials theirs.
+B11    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B13    : Editable cells
+B15    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 08-chocolate-store-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B36    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B37    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B38    : ▸ You are in 08-chocolate-store-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the shop; the MONEY is in 09-cash-drawer-opening-closing.xlsx.
+B40    : — Chocolate Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B43    : Contact: info@aichef.pro
+B45    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Shop Opening» · protegida=True · área='Shop Opening'!$A$1:$H$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Chocolate Store Opening Checklist
+A2     : Date: ____/____/________
+E2     : Shift lead: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm
+C5     : Entrance
+D5     : Shift lead
+E5     : 9:00 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Shift lead
+E6     : 9:00 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Shift lead
+E7     : 9:00 AM
+A8     : 4
+B8     : Raise security gate and open front door
+C8     : Entrance
+D8     : Shift lead
+E8     : 9:00 AM
+A9     : 5
+B9     : Put out the outdoor signage and the pre-order sign, and make sure the store window gets no direct sun: displayed chocolate melts and loses its shine
+C9     : Outside
+D9     : Shift lead
+E9     : 9:00 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Shift lead
+E10    : 9:00 AM
+A11    : 7
+B11    : Turn on the climate-controlled display cases for bonbons and bars as soon as you arrive: they take time to come down and product is not set out until they are in range
+C11    : Display case
+D11    : Shift lead
+E11    : 9:15 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Shift lead
+E12    : 9:15 AM
+A13    : 9
+B13    : Review pre-orders due today: quantities, pickup time and who prepares them, and have the gift boxes and ribbons ready for the ones picked up in the morning
+C13    : Counter
+D13    : Shift lead
+E13    : 9:15 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Shift lead
+E14    : 9:15 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Shift lead
+E15    : 9:15 AM
+A16    : 12
+B16    : Check the shop fixtures: counter, shelves and store window free of damage, no burnt-out bulbs and no scratched glass
+C16    : Shop floor
+D16    : Shift lead
+E16    : 9:15 AM
+A17    : 13
+B17    : Set up the patio if applicable, with the city permit if required (tables, chairs, umbrellas/patio heaters)
+C17    : Patio
+D17    : Shift lead
+E17    : 9:30 AM
+A18    : 14
+B18    : Before opening, check that every display tray has its price tag (and its price per lb, if sold by weight) and its allergens posted, and that there is backup stock in the cool room to restock during the day
+C18    : Display case
+D18    : Shift lead
+E18    : 9:30 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Shift lead
+E19    : 9:30 AM
+A20    : 16
+B20    : Check the climate-controlled display cases have reached 60–64 °F and under 55% humidity before setting out product — log reading: ____ °F
+C20    : Display case
+D20    : Shift lead
+E20    : 9:30 AM
+A21    : 17
+B21    : Check kitchen temperature and humidity: target 64–68 °F and 50–60% — log reading: ____ °F
+C21    : Kitchen
+D21    : Shift lead
+E21    : 9:30 AM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 17.0
+A29    : Manager signature: _________________________     Completion time: ________
+A30    : — Chocolate Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shop Closing» · protegida=True · área='Shop Closing'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Chocolate Store Closing Checklist
+A2     : Date: ____/____/________
+E2     : Shift lead: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Check no customers are left in the shop
+C5     : Shop floor
+D5     : Shift lead
+E5     : Close
+A6     : 2
+B6     : Turn off background music
+C6     : General
+D6     : Shift lead
+E6     : Close
+A7     : 3
+B7     : Clean up and bring in the patio, if you have one
+C7     : Patio
+D7     : Shift lead
+E7     : Close
+A8     : 4
+B8     : Bring in the outdoor signage and sidewalk sign
+C8     : Outside
+D8     : Shift lead
+E8     : Close
+A9     : 5
+B9     : Turn off the chocolate display cases once all the product is back in the cool room
+C9     : Display case
+D9     : Shift lead
+E9     : Close
+A10    : 6
+B10    : Log the closing temp of the kitchen (target 64–68 °F) — log reading: ____ °F
+C10    : Kitchen
+D10    : Shift lead
+E10    : Close
+A11    : 7
+B11    : Turn off the POS / card terminal (or leave on standby)
+C11    : Register
+D11    : Shift lead
+E11    : Close
+A12    : 8
+B12    : Empty trash cans in common areas and restrooms
+C12    : Restrooms
+D12    : Shift lead
+E12    : Close
+A13    : 9
+B13    : Final safety check: gas appliances off (if you have gas), water off, small appliances unplugged — never the cool room or the fridges
+C13    : General
+D13    : Shift lead
+E13    : Close
+A14    : 10
+B14    : Check that windows are closed
+C14    : General
+D14    : Shift lead
+E14    : Close
+A15    : 11
+B15    : Turn off HVAC or set it to night mode: keep the shop below 68 °F if any chocolate stays out of the cool room
+C15    : General
+D15    : Shift lead
+E15    : Close
+A16    : 12
+B16    : Turn off lights (leave security lighting on)
+C16    : General
+D16    : Shift lead
+E16    : Close
+A17    : 13
+B17    : Set the alarm
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A18    : 14
+B18    : Close security gate and doors
+C18    : Entrance
+D18    : Last one out
+E18    : Close
+A19    : 15
+B19    : Lock up and verify it is locked
+C19    : Entrance
+D19    : Last one out
+E19    : Close
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Manager signature: _________________________     Completion time: ________
+A28    : — Chocolate Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$56 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 08-chocolate-store-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B47    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B48    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B49    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the REGISTER — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-chocolate-store-opening-closing-checklist.xlsx.
+B51    : — Chocolate Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B53    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B54    : Contact: info@aichef.pro
+B56    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / shift lead
+D5     : 9:15 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / shift lead
+D6     : 9:15 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / shift lead
+D7     : 9:15 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / shift lead
+D8     : 9:15 AM
+A9     : 5
+B9     : Turn on the counter scale (legal-for-trade), check the tare of trays and boxes and verify it with a test weight (sales by weight)
+C9     : Cashier / shift lead
+D9     : 9:15 AM
+A10    : 6
+B10    : Check that the price per lb of each bulk item matches the POS and the display case sign
+C10    : Cashier / shift lead
+D10    : 9:30 AM
+A11    : 7
+B11    : Check that the POS is on and open the register shift
+C11    : Cashier / shift lead
+D11    : 9:30 AM
+A12    : 8
+B12    : Print the opening X report (start-of-day report)
+C12    : Cashier / shift lead
+D12    : 9:30 AM
+A13    : 9
+B13    : Check the receipt paper roll
+C13    : Cashier / shift lead
+D13    : 9:30 AM
+A14    : 10
+B14    : Check the card terminal works
+C14    : Cashier / shift lead
+D14    : 9:45 AM
+A15    : 11
+B15    : Check the payment gateway connection
+C15    : Cashier / shift lead
+D15    : 9:45 AM
+A16    : 12
+B16    : Note issues from the previous shift
+C16    : Cashier / shift lead
+D16    : 9:45 AM
+A17    : 13
+B17    : Opening manager sign-off
+C17    : Cashier / shift lead
+D17    : 9:45 AM
+A24    : Tasks done:
+C24    = =COUNTIFS(B5:B22,"?*",E5:E22,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B5:B22,"?*")-COUNTIF(E5:E22,"N/A")   → caché 13.0
+B25    : Starting bank (opening float)
+C25    : 0
+D25    : Deducted from cash on the "Cash Drawer Closing" sheet
+A27    : Manager signature: _________________________     Time: ________
+A28    : — Chocolate Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$59 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / shift lead
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / shift lead
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / shift lead
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / shift lead
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / shift lead
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / shift lead
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / shift lead
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / shift lead
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / shift lead
+D13    : Close
+A14    : 10
+B14    : Balance the sales by weight: lb rung up on the POS vs. what came off the day's trays, and note the difference
+C14    : Cashier / shift lead
+D14    : Close
+A15    : 11
+B15    : Log the deposits collected on pre-orders and the list of pre-orders awaiting pickup (not the day's sales)
+C15    : Cashier / shift lead
+D15    : Close
+A16    : 12
+B16    : Set aside tomorrow's starting bank
+C16    : Cashier / shift lead
+D16    : Close
+A17    : 13
+B17    : Prepare the bank deposit / put it in the safe
+C17    : Cashier / shift lead
+D17    : Close
+A18    : 14
+B18    : Closing manager sign-off
+C18    : Cashier / shift lead
+D18    : Close
+A25    : Tasks done:
+C25    = =COUNTIFS(B5:B23,"?*",E5:E23,"✓")   → caché 0.0
+D25    : of
+E25    = =COUNTIF(B5:B23,"?*")-COUNTIF(E5:E23,"N/A")   → caché 14.0
+A26    : 💰 Cash Count by Denomination
+A27    : Denomination
+B27    : Quantity
+C27    : Subtotal
+A28    : BILLS
+A29    : $100
+B29    : 0
+C29    = =B29*100   → caché 0.0
+A30    : $50
+B30    : 0
+C30    = =B30*50   → caché 0.0
+A31    : $20
+B31    : 0
+C31    = =B31*20   → caché 0.0
+A32    : $10
+B32    : 0
+C32    = =B32*10   → caché 0.0
+A33    : $5
+B33    : 0
+C33    = =B33*5   → caché 0.0
+A34    : $2
+B34    : 0
+C34    = =B34*2   → caché 0.0
+A35    : $1
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : COINS
+A37    : $1 coin
+B37    : 0
+C37    = =B37*1   → caché 0.0
+A38    : 50¢
+B38    : 0
+C38    = =B38*0.5   → caché 0.0
+A39    : 25¢
+B39    : 0
+C39    = =B39*0.25   → caché 0.0
+A40    : 10¢
+B40    : 0
+C40    = =B40*0.1   → caché 0.0
+A41    : 5¢
+B41    : 0
+C41    = =B41*0.05   → caché 0.0
+A42    : 1¢
+B42    : 0
+C42    = =B42*0.01   → caché 0.0
+A43    : 25¢ roll
+B43    : 0
+C43    = =B43*10   → caché 0.0
+A44    : 10¢ roll
+B44    : 0
+C44    = =B44*5   → caché 0.0
+A45    : TOTAL CASH
+C45    = =SUM(C29:C44)   → caché 0.0
+A47    : 📊 Closing Summary
+A48    : Item
+C48    : Amount
+A49    : Total cash (count)
+C49    = =C45   → caché 0.0
+A50    : Starting bank (−)
+C50    = =IFERROR('Cash Drawer Opening'!C25,0)   → caché 0.0
+A51    : Net cash (counted − starting bank)
+C51    = =IFERROR(C49-C50,0)   → caché 0.0
+A52    : Card sales, excl. tips
+C52    : 0
+A53    : Other tenders + card tips paid in cash
+C53    : 0
+A54    : TOTAL COLLECTED
+C54    = =C51+C52+C53   → caché 0.0
+A55    : POS Z report: sales + tax, excl. tips
+C55    : 0
+A56    : OVER / SHORT
+C56    = =IFERROR(C54-C55,0)   → caché 0.0
+A58    : Manager signature: _________________________     Time: ________
+A59    : — Chocolate Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B29 B30 B31 B32 B33 B34 B35 B37 B38 B39 B40 B41 B42 B43 B44 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C56 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : Manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Chocolate Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-chocolate-shop-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Chocolate Shop Pre-Shift Meeting Template (Huddle Notes)' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Chocolate Shop Pre-Shift Meeting Template (Huddle Notes)
+B4     : How to use this template:
+B5     : ▸ A 5-minute meeting at the start of the shift.
+B6     : ▸ Day's production, special orders, team, promotions.
+B7     : ▸ Print and fill out every morning with the team.
+B9     : Customization:
+B10    : ▸ Green cells are editable.
+B11    : ▸ Adapt the sections to your operation.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Meeting» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Pre-Shift Meeting — Chocolate Shop
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Today's production
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Products to make today: ___________________________
+C6     : Production
+A7     : 2
+B7     : Planned bonbon quantity: _______ units
+C7     : Production
+A8     : 3
+B8     : Planned bar quantity: _______ units
+C8     : Production
+A9     : 4
+B9     : Special figures/pieces: ___________________________
+C9     : Production
+A10    : 5
+B10    : Couverture needed: dark ___ lb / milk ___ lb / white ___ lb
+C10    : Dry storage
+A11    : 6
+B11    : Kitchen temperature and humidity at start-up: ____ °F / ____ % (target 64–68 °F and 50–60%)
+C11    : Production
+A13    : Special orders
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Order 1: _____________ — Delivery: ___/___
+C15    : Office
+A16    : 2
+B16    : Order 2: _____________ — Delivery: ___/___
+C16    : Office
+A17    : 3
+B17    : Order 3: _____________ — Delivery: ___/___
+C17    : Office
+A18    : 4
+B18    : Online orders pending: ___________________________
+C18    : Office
+A20    : Shift team
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Kitchen: ___________________________
+C22    : Team
+A23    : 2
+B23    : Shop: ___________________________
+C23    : Team
+A24    : 3
+B24    : Shift lead: ___________________________
+C24    : Team
+A25    : 4
+B25    : Absences / changes: ___________________________
+C25    : Team
+A27    : Notes and promotions
+A28    : #
+B28    : Task
+C28    : Area
+D28    : Assigned to
+E28    : ✓
+F28    : Time
+G28    : Notes
+A29    : 1
+B29    : Featured product of the day: ___________________________
+C29    : Shop
+A30    : 2
+B30    : Active promotion: ___________________________
+C30    : Social media
+A31    : 3
+B31    : Events / special visits: ___________________________
+C31    : Office
+A32    : 4
+B32    : Issues from the previous shift: ___________________________
+C32    : Office
+B33    : Tasks done:
+C33    = =COUNTIFS(B6:B32,"?*",E6:E32,"✓")-COUNTIFS(B6:B32,"Task",E6:E32,"✓")   → caché 0.0
+D33    : of
+E33    = =COUNTIF(B6:B32,"?*")-COUNTIF(B6:B32,"Task")-COUNTIF(E6:E32,"N/A")   → caché 18.0
+A34    : Signed off by: _________________  Date: ___/___/______
+A35    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E22 E23 E24 E25 E29 E30 E31 E32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G32 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# BONUS-02-chocolate-shop-holiday-calendar.xlsx
+# docProps: title='BONUS: Chocolate Shop Holiday Calendar & Product Planner (US)' · subject='Chocolate Shop Checklists Kit Pro · v2.1' · keywords='chocolate shop checklist, chocolate shop opening checklist, chocolatier, chocolate tempering, bonbons, chocolate truffles, chocolate molds, chocolate store, AI Chef Pro' · description='aichef.pro/en/digital-products/chocolate-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Chocolate Shop Holiday Calendar & Product Planner (US)
+B4     : How to use this template:
+B5     : ▸ One month per row with the 12 campaigns and key dates of the US chocolate year.
+B6     : ▸ Plan production, packaging and marketing ahead of time.
+B7     : ▸ Adjust the dates to your area and market. UK: Mothering Sunday (March), bank holidays and Boxing Day.
+B9     : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B10    : Version 2.1 · October 2026 · aichef.pro/en/digital-products/chocolate-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Holiday Calendar» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Holiday Calendar — Chocolate Shop
+A2     : AI Chef Pro · aichef.pro — Chocolate Shop Checklists Kit Pro
+A4     : Month
+B4     : Key actions & dates
+C4     : Featured products
+D4     : Season
+E4     : ✓
+F4     : Notes
+A5     : January
+B5     : Clear out leftover holiday product and gift boxes · post-holiday sales · launch the winter collection · plan Valentine's Day
+C5     : Truffles, Spiced Bonbons, Hot Chocolate
+D5     : Low
+A6     : February
+B6     : Valentine's Day (14): hearts and limited editions · pre-order deadline on the 10th · express deliveries on the 13th and 14th · carrier shipping cutoff
+C6     : Hearts, Premium Bonbons, Personalized Bars
+D6     : Peak
+A7     : March
+B7     : St. Patrick's Day (17) · Easter prep (date varies) · kids' spring break workshops
+C7     : Eggs, Bunnies, Mint Bonbons
+D7     : High
+A8     : April
+B8     : Easter (date varies): eggs, bunnies and baskets · graduation season starts (Apr–Jun): custom boxes and figures
+C8     : Eggs, Bunnies, Floral Bonbons
+D8     : High
+A9     : May
+B9     : Mother's Day (2nd Sunday): premium gift boxes, pre-orders closed 2 weeks out · Teacher Appreciation Week · graduation peak
+C9     : Premium Bonbons, Gift Boxes, Engraved Bars
+D9     : High
+A10    : June
+B10    : Father's Day (3rd Sunday) · weddings: favors and custom boxes · summer: adapt the catalog (less fresh ganache, more bars and shelf-stable items)
+C10    : Fruit Bars, Wedding Favors, Father's Day Boxes
+D10    : Medium
+A11    : July
+B11    : Fourth of July · tourist season: souvenir packs and local collaborations · check shop and display case temperature daily · ship with cold packs
+C11    : Souvenir Bars, Local-Flavor Bonbons
+D11    : Low
+A12    : August
+B12    : Peak heat: ship with cold packs and insulated mailers · deep maintenance · staggered vacations · close the holiday couverture order
+C12    : Reduced Production, Q4 Planning
+D12    : Low
+A13    : September
+B13    : Labor Day (1st Monday) · back to routine · fall collection · local food fairs · open the holiday corporate gifting order book
+C13    : Nut Bonbons, Praline, Spiced Bonbons
+D13    : Medium
+A14    : October
+B14    : Halloween (31): seasonal figures and bonbons · Sweetest Day · National Chocolate Day (28) · holiday production ramps up · publish the holiday catalog
+C14    : Halloween Figures, Pumpkin Spice Bonbons, Dark Bars
+D14    : Medium
+A15    : November
+B15    : Thanksgiving (4th Thursday): host gifts and chocolate turkeys · Black Friday and Small Business Saturday · holiday pre-orders · bark, toffee and gift baskets
+C15    : Chocolate Turkeys, Host Gifts, Corporate Gift Boxes
+D15    : High
+A16    : December
+B16    : CHRISTMAS, peak production · Hanukkah (gelt) · shipping cutoff · pre-order deadline and special hours on Dec 24 and 31
+C16    : Peppermint Bark, Holiday Figures, Gelt, Gift Boxes
+D16    : Peak
+A18    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None

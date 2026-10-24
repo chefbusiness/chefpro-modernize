@@ -1,0 +1,2669 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/kit-tareas-chocolateria (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-apertura-cierre.xlsx
+# docProps: title='01 · Apertura y Cierre de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.1' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 01 · Apertura y Cierre de Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Checklist completo para la apertura y cierre diario de tu chocolatería u obrador.
+B6     : ▸ Incluye encendido de equipos de templado, vitrinas, montaje de servicio y cierre.
+B7     : ▸ Marca ✓ cada tarea completada. Adapta horarios a tu negocio.
+B9     : Personalización:
+B10    : ▸ Las celdas verdes son editables: responsable, hora, notas.
+B11    : ▸ Ajusta temperaturas según tu equipamiento y normativa local.
+B12    : ▸ Imprime en A4 y deja en obrador y mostrador.
+B14    : Higiene y temperaturas:
+B15    : ▸ La primera sección de «Apertura» es de higiene personal y de arranque seguro: extracción primero, comprobación del gas después (si lo tienes) y sólo entonces temperadora, vitrinas y climatización.
+B16    : ▸ Las cámaras no se «encienden»: se comprueba que han funcionado toda la noche y se anota la lectura. Objetivos de este oficio: obrador 18-20 °C, conservación 15-18 °C con 50-60 % de humedad, rellenos y ganaches 0-4 °C, vitrina de bombonería 16-18 °C.
+B17    : ▸ Por encima de 20 °C la manteca de cacao empieza a fundir: el bombón suda, pierde brillo y en dos días aparece el fat bloom. Es la razón de que la vitrina lleve su propio control.
+B19    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B20    : Versión 2.1 · octubre 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Apertura» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura de Chocolatería
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Higiene personal y arranque seguro del obrador
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Uniforme y calzado de trabajo limpios, delantal cambiado y pelo recogido bajo gorro o redecilla
+C6     : Obrador
+A7     : 2
+B7     : Sin anillos, pulseras, reloj ni pendientes colgantes; uñas cortas, limpias y sin esmalte ni postizos
+C7     : Obrador
+A8     : 3
+B8     : Lavado de manos con jabón y secado con papel de un solo uso, y otra vez en cada cambio de tarea (el chocolate acabado ya no lleva ningún paso que destruya patógenos)
+C8     : Obrador
+A9     : 4
+B9     : Heridas y cortes cubiertos con apósito impermeable de color visible y guante encima
+C9     : Obrador
+A10    : 5
+B10    : Quien tenga vómitos, diarrea, fiebre o lesiones cutáneas infectadas NO manipula producto: comunicarlo al encargado y reasignar tarea
+C10    : Obrador
+A11    : 6
+B11    : Encender la extracción del obrador ANTES que ningún otro equipo
+C11    : Obrador
+A12    : 7
+B12    : Si el obrador tiene instalación de gas (fogón, marmita o quemador): comprobar que no hay olor, abrir la llave general y sólo después encender los equipos
+C12    : Obrador
+A13    : Encendido y verificación de equipos
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Encender temperadora de chocolate y precalentar a 45 °C
+C15    : Templado
+A16    : 2
+B16    : Comprobar que la cámara de conservación ha funcionado toda la noche (sin cortes ni alarmas) y registrar la temperatura: objetivo 15-18 °C y 50-60 % de humedad — anota la lectura: ____ °C
+C16    : Conservación
+A17    : 3
+B17    : Comprobar que la nevera de rellenos y ganaches ha funcionado toda la noche y registrar la temperatura: objetivo 0-4 °C — anota la lectura: ____ °C
+C17    : Cámara
+A18    : 4
+B18    : Encender iluminación de vitrina y sala de tienda
+C18    : Vitrina
+A19    : 5
+B19    : Comprobar que la vitrina de bombonería mantiene 16-18 °C y no condensa antes de montar el género (por encima de 20 °C la manteca de cacao funde y el bombón pierde brillo) — anota la lectura: ____ °C
+C19    : Vitrina
+A20    : 6
+B20    : Encender aire acondicionado — mantener sala 20-22 °C
+C20    : Tienda
+A21    : 7
+B21    : Registrar las temperaturas de obrador, cámara y nevera: si tienes el Pack APPCC, en su hoja de temperaturas; si no, aquí mismo en «Notas»
+C21    : Admin
+A23    : Montaje de servicio
+A24    : #
+B24    : Tarea
+C24    : Zona
+D24    : Responsable
+E24    : ✓
+F24    : Hora
+G24    : Notas
+A25    : 1
+B25    : Montar vitrina: bombones, tabletas, figuras, trufas
+C25    : Vitrina
+A26    : 2
+B26    : Verificar el etiquetado de cada producto expuesto: denominación, precio (y precio por kilo si se vende al peso) y los alérgenos declarados —leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos— más las trazas
+C26    : Vitrina
+A27    : 3
+B27    : Reponer bolsas, cajas regalo, papel de seda, cintas
+C27    : Packaging
+A28    : 4
+B28    : Verificar stock de cajas de bombones surtidos
+C28    : Packaging
+A29    : 5
+B29    : Preparar zona de degustación con muestras del día
+C29    : Mostrador
+A30    : 6
+B30    : Comprobar que el TPV está activo y que el fondo de caja ya se ha contado y anotado antes de abrir la puerta: el recuento no se repite aquí, se hace en «Apertura de Caja» del fichero 09 (hito en 08/09)
+C30    : Caja
+A31    : 7
+B31    : Colocar pizarra con novedades y productos destacados
+C31    : Tienda
+A33    : Verificaciones finales
+A34    : #
+B34    : Tarea
+C34    : Zona
+D34    : Responsable
+E34    : ✓
+F34    : Hora
+G34    : Notas
+A35    : 1
+B35    : Comprobar que música ambiental funciona
+C35    : Tienda
+A36    : 2
+B36    : Verificar limpieza de cristales de vitrina
+C36    : Vitrina
+A37    : 3
+B37    : Confirmar pedidos online pendientes de preparar
+C37    : Admin
+A38    : 4
+B38    : Revisar agenda: pedidos especiales, eventos, encargos
+C38    : Admin
+B39    : Tareas completadas:
+C39    = =COUNTIFS(B6:B38,"?*",E6:E38,"✓")-COUNTIFS(B6:B38,"Tarea",E6:E38,"✓")   → caché 0.0
+D39    : de
+E39    = =COUNTIF(B6:B38,"?*")-COUNTIF(B6:B38,"Tarea")-COUNTIF(E6:E38,"N/A")   → caché 25.0
+A40    : Firma responsable: _________________  Fecha: ___/___/______
+A41    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E15 E16 E17 E18 E19 E20 E21 E25 E26 E27 E28 E29 E30 E31 E35 E36 E37 E38 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G38 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Cierre» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre de Chocolatería
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Cierre de tienda
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Retirar productos de vitrina y guardar en conservación
+C6     : Vitrina
+A7     : 2
+B7     : Cubrir bombones que queden expuestos con film
+C7     : Vitrina
+A8     : 3
+B8     : Comprobar que el arqueo del día ha quedado cerrado y firmado y las ventas registradas: el cuadre no se repite aquí, se hace en «Cierre de Caja» del fichero 09 (hito en 08/09)
+C8     : Caja
+A9     : 4
+B9     : Comprobar que el TPV y el terminal de pago quedan cerrados DESPUÉS del arqueo, nunca antes: el cierre de terminal se manda en «Cierre del Negocio» del fichero 08 (hito en 08/09)
+C9     : Caja
+A10    : 5
+B10    : Limpiar mostradores y cristales de vitrina
+C10    : Mostrador
+A12    : Cierre de obrador
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Limpiar y secar temperadora de chocolate
+C14    : Templado
+A15    : 2
+B15    : Limpiar moldes usados y dejar secando
+C15    : Moldeado
+A16    : 3
+B16    : Guardar coberturas abiertas en recipientes herméticos
+C16    : Almacén
+A17    : 4
+B17    : Comprobar y registrar las temperaturas antes de cerrar: cámara de conservación 15-18 °C y nevera de rellenos 0-4 °C — anota las lecturas: ____ °C / ____ °C
+C17    : Conservación
+A18    : 5
+B18    : Limpiar superficies de mármol/granito de obrador
+C18    : Obrador
+A19    : 6
+B19    : Anotar las mermas del día: producto, cantidad y motivo (rotura, mal templado, bloom, caducidad, degustación o prueba)
+C19    : Admin
+A20    : 7
+B20    : Barrer y fregar suelo de obrador
+C20    : Limpieza
+A22    : Seguridad y cierre
+A23    : #
+B23    : Tarea
+C23    : Zona
+D23    : Responsable
+E23    : ✓
+F23    : Hora
+G23    : Notas
+A24    : 1
+B24    : Apagar equipos excepto cámaras y neveras
+C24    : General
+A25    : 2
+B25    : Cerrar la llave general de gas si el obrador la tiene y verificar que agua y luces quedan apagadas
+C25    : General
+A26    : 3
+B26    : Sacar basura y reciclar cartón/plástico
+C26    : Limpieza
+A27    : 4
+B27    : Activar alarma y cerrar con llave
+C27    : General
+B28    : Tareas completadas:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Tarea",E6:E27,"✓")   → caché 0.0
+D28    : de
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Tarea")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Firma responsable: _________________  Fecha: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G27 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 02-partidas-produccion.xlsx
+# docProps: title='02 · Partidas de Producción de Chocolate · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.1' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 02 · Partidas de Producción de Chocolate
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Control de producción artesanal: templado, moldeado, bombones, tabletas.
+B6     : ▸ Registra lotes, temperaturas y tiempos de cada proceso.
+B7     : ▸ Adapta las recetas base a tus fórmulas propias.
+B9     : Personalización:
+B10    : ▸ Las celdas verdes son editables: responsable, hora, notas.
+B11    : ▸ Ajusta temperaturas de templado según tipo de cobertura.
+B12    : ▸ Imprime y deja en obrador junto a la temperadora.
+B14    : Templado y conservación:
+B15    : ▸ Antes de templar se comprueba el AIRE del obrador: 18-20 °C y 50-60 % de humedad. Las tres curvas de cobertura de esta hoja sólo funcionan dentro de esa ventana.
+B16    : ▸ Al pie de «Moldeado» tienes una tabla editable de vida útil por familia: ajústala a tu fórmula. Está fuera del contador porque es una referencia, no una tarea.
+B17    : ▸ El chocolate acabado NO se congela: al descongelar condensa, el agua disuelve el azúcar de la superficie y deja sugar bloom. Sólo el granel de ganache admite congelación.
+B19    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B20    : Versión 2.1 · octubre 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Templado» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Control de Templado
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Preparación de coberturas
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Verificar stock de cobertura negra (55-70% cacao)
+C6     : Almacén
+A7     : 2
+B7     : Verificar stock de cobertura con leche (35-40% cacao)
+C7     : Almacén
+A8     : 3
+B8     : Verificar stock de cobertura blanca (28-33% cacao)
+C8     : Almacén
+A9     : 4
+B9     : Comprobar la temperatura y la humedad del obrador ANTES de templar: objetivo 18-20 °C y 50-60 % de humedad (por encima, la manteca no cristaliza y aparece bloom) — anota la lectura: ____ °C
+C9     : Obrador
+A10    : 5
+B10    : Pesar cobertura según orden de producción del día
+C10    : Obrador
+A11    : 6
+B11    : Trocear cobertura y colocar en temperadora
+C11    : Templado
+A13    : Proceso de templado — Chocolate negro
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Fundir a 50-55 °C — registrar temperatura
+C15    : Templado
+A16    : 2
+B16    : Enfriar a 27-28 °C sobre mármol o por siembra
+C16    : Templado
+A17    : 3
+B17    : Recalentar a 31-32 °C — punto de trabajo
+C17    : Templado
+A18    : 4
+B18    : Test de templado en punta de espátula: debe secar en 3-5 min a 20 °C, con brillo, snap seco y contracción en el molde. Si no, volver a fundir y templar — no se moldea «a ver si sale»
+C18    : Templado
+A19    : 5
+B19    : Registrar lote, hora y temperatura final
+C19    : Admin
+A21    : Proceso de templado — Chocolate con leche
+A22    : #
+B22    : Tarea
+C22    : Zona
+D22    : Responsable
+E22    : ✓
+F22    : Hora
+G22    : Notas
+A23    : 1
+B23    : Fundir a 45-50 °C — registrar temperatura
+C23    : Templado
+A24    : 2
+B24    : Enfriar a 26-27 °C sobre mármol o por siembra
+C24    : Templado
+A25    : 3
+B25    : Recalentar a 29-30 °C — punto de trabajo
+C25    : Templado
+A26    : 4
+B26    : Test de templado en capa fina sobre papel: a 18-20 °C debe cristalizar en 3-5 min, con brillo uniforme y sin vetas, partiendo del punto de trabajo de 29-30 °C. Si no, volver a fundir y retemplar — no se moldea «a ver si sale». Registrar el lote, la hora y la temperatura final
+C26    : Admin
+A28    : Proceso de templado — Chocolate blanco
+A29    : #
+B29    : Tarea
+C29    : Zona
+D29    : Responsable
+E29    : ✓
+F29    : Hora
+G29    : Notas
+A30    : 1
+B30    : Fundir a 40-45 °C — registrar temperatura
+C30    : Templado
+A31    : 2
+B31    : Enfriar a 25-26 °C sobre mármol o por siembra
+C31    : Templado
+A32    : 3
+B32    : Recalentar a 28-29 °C — punto de trabajo
+C32    : Templado
+A33    : 4
+B33    : Test de templado en capa fina sobre papel: a 18-20 °C debe cristalizar en 3-5 min, con brillo uniforme y sin vetas, partiendo del punto de trabajo de 28-29 °C. Si no, volver a fundir y retemplar — no se moldea «a ver si sale». Registrar el lote, la hora y la temperatura final
+C33    : Admin
+B34    : Tareas completadas:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Tarea",E6:E33,"✓")   → caché 0.0
+D34    : de
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Tarea")-COUNTIF(E6:E33,"N/A")   → caché 19.0
+A35    : Firma responsable: _________________  Fecha: ___/___/______
+A36    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E23 E24 E25 E26 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G33 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Moldeado» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Producción: Moldeado y Bombones
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Moldeado de bombones
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Preparar moldes limpios y a temperatura ambiente (20-22 °C)
+C6     : Moldeado
+A7     : 2
+B7     : Verter chocolate templado en moldes — golpear para eliminar burbujas
+C7     : Moldeado
+A8     : 3
+B8     : Vaciar exceso — dejar cáscara uniforme de 2-3mm
+C8     : Moldeado
+A9     : 4
+B9     : Invertir moldes sobre rejilla y dejar escurrir
+C9     : Moldeado
+A10    : 5
+B10    : Enfriar en cámara a 12-14 °C durante 10-15 min
+C10    : Conservación
+A11    : 6
+B11    : Preparar rellenos/ganaches según receta del día
+C11    : Obrador
+A12    : 7
+B12    : Rellenar bombones al 80% dejando margen para tapa
+C12    : Moldeado
+A13    : 8
+B13    : Sellar con chocolate templado — alisar con espátula
+C13    : Moldeado
+A14    : 9
+B14    : Enfriar en cámara 15-20 min hasta contracción
+C14    : Conservación
+A15    : 10
+B15    : Desmoldar, verificar brillo y almacenar en bandejas
+C15    : Moldeado
+A17    : Producción de tabletas
+A18    : #
+B18    : Tarea
+C18    : Zona
+D18    : Responsable
+E18    : ✓
+F18    : Hora
+G18    : Notas
+A19    : 1
+B19    : Preparar moldes de tableta limpios y atemperados
+C19    : Moldeado
+A20    : 2
+B20    : Verter chocolate templado y golpear/vibrar
+C20    : Moldeado
+A21    : 3
+B21    : Añadir inclusiones si aplica: frutos secos, frutas, sal
+C21    : Moldeado
+A22    : 4
+B22    : Alisar superficie con espátula
+C22    : Moldeado
+A23    : 5
+B23    : Enfriar en cámara a 12-14 °C durante 20-30 min
+C23    : Conservación
+A24    : 6
+B24    : Desmoldar, verificar acabado y pesar cada tableta
+C24    : Moldeado
+A25    : 7
+B25    : Envolver en papel/aluminio y etiquetar con lote y fecha
+C25    : Envasado
+A27    : Control de calidad y registro
+A28    : #
+B28    : Tarea
+C28    : Zona
+D28    : Responsable
+E28    : ✓
+F28    : Hora
+G28    : Notas
+A29    : 1
+B29    : Verificar brillo, textura y snap de productos
+C29    : Obrador
+A30    : 2
+B30    : Registrar lotes de producción: producto, cantidad, fecha
+C30    : Admin
+A31    : 3
+B31    : Etiquetar cada lote con fecha de producción y consumo preferente según su familia (tabla al pie de la hoja)
+C31    : Admin
+A32    : 4
+B32    : Anotar las mermas del día: producto, cantidad y motivo (rotura, mal templado, bloom, prueba). El chocolate sin relleno y sin contaminar se puede refundir; el que lleva ganache o fruta, a residuo
+C32    : Admin
+A33    : 5
+B33    : Almacenar el producto terminado a 15-18 °C y 50-60 % de humedad, en oscuridad y lejos de olores fuertes (el cacao los absorbe) — anota la lectura: ____ °C
+C33    : Conservación
+B34    : Tareas completadas:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Tarea",E6:E33,"✓")   → caché 0.0
+D34    : de
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Tarea")-COUNTIF(E6:E33,"N/A")   → caché 22.0
+A35    : Firma responsable: _________________  Fecha: ___/___/______
+A37    : VIDA ÚTIL Y CONSERVACIÓN ORIENTATIVAS A 15-18 °C Y 50-60 % DE HUMEDAD — ajústala a tu fórmula y a tu obrador
+B38    : Familia
+C38    : Vida útil
+D38    : Notas
+B39    : Tabletas y chocolate sin relleno
+C39    : 12-18 meses
+D39    : El enemigo no es el tiempo: es la humedad, la luz y los olores. Sellado y en oscuridad
+B40    : Figuras huecas y piezas macizas
+C40    : 6-12 meses
+D40    : Igual que la tableta, pero la pieza hueca se raja con los cambios bruscos de temperatura
+B41    : Bombones de ganache con nata fresca
+C41    : 10-15 días
+D41    : Actividad de agua alta: en refrigeración a 0-4 °C y atemperar CERRADOS antes de abrir, o condensan
+B42    : Bombones de ganache con nata UHT, sorbato o alcohol
+C42    : 4-8 semanas
+D42    : El conservante y el alcohol bajan la actividad de agua; sin ellos no se llega ni a la mitad
+B43    : Bombones de praliné, gianduja y frutos secos
+C43    : 2-4 meses
+D43    : La grasa del fruto seco se enrancia y el frío no lo evita: manda la fecha, no el aspecto
+B44    : Trufas y rocas recubiertas
+C44    : 3-4 semanas
+D44    : Si llevan nata o mantequilla, se cuentan como ganache fresca
+B45    : Bombones de licor y cristalizados
+C45    : 3-6 meses
+D45    : Vigilar la cristalización del azúcar en la cáscara: revienta y gotea
+B46    : Frutos secos garrapiñados y frutas confitadas bañadas
+C46    : 1-3 meses
+D46    : Se apelmazan con la humedad; envasado hermético con desecante si tu obrador es húmedo
+B47    : Barquillos y crujientes bañados
+C47    : 3-4 semanas
+D47    : Pierden el crujiente mucho antes que la seguridad: se retiran por calidad
+B48    : Chocolate acabado: NO congelar
+C48    : Nunca
+D48    : Al descongelar condensa, el agua disuelve el azúcar de la superficie y deja sugar bloom. Sólo el granel de ganache admite ≤ −18 °C 1-2 meses, descongelado 24 h en cámara y sin abrir
+A49    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E19 E20 E21 E22 E23 E24 E25 E29 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G33 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 03-tareas-manager.xlsx
+# docProps: title='03 · Tareas del Manager de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 03 · Tareas del Manager de Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Tareas diarias, semanales y mensuales del encargado/director.
+B6     : ▸ Incluye control de food cost, mermas y KPIs de producción.
+B7     : ▸ Personaliza según el tamaño de tu operación.
+B9     : Personalización:
+B10    : ▸ Las celdas verdes son editables: responsable, hora, notas.
+B11    : ▸ Adapta los KPIs a tus objetivos mensuales.
+B13    : Obligaciones del encargado:
+B14    : ▸ El registro de jornada se cierra y se valida CADA DÍA (obrador y tienda) y se archiva cada mes: es obligatorio desde el RD-ley 8/2019 y hay que conservarlo 4 años.
+B15    : ▸ El bloque de fin de semana del «Semanal» existe porque en una chocolatería con tienda el sábado y el domingo son el pico de venta, y la planificación del lunes se hace con lo que allí se anota.
+B17    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B18    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Diario» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias del Manager
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Primera hora (apertura)
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Revisar agenda: pedidos especiales, encargos, entregas
+C6     : Gestión
+A7     : 2
+B7     : Comprobar producción planificada vs stock actual
+C7     : Gestión
+A8     : 3
+B8     : Briefing con equipo: prioridades del día, encargos especiales
+C8     : Equipo
+A9     : 4
+B9     : Verificar temperaturas de obrador, cámaras y tienda
+C9     : Admin
+A10    : 5
+B10    : Revisar pedidos online recibidos overnight
+C10    : Admin
+A12    : Durante el día
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Supervisar calidad de producción: templado, acabados, peso
+C14    : Producción
+A15    : 2
+B15    : Control de mermas y chocolate descartado
+C15    : Gestión
+A16    : 3
+B16    : Gestionar atención al cliente y consultas especiales
+C16    : Tienda
+A17    : 4
+B17    : Seguimiento de pedidos a proveedores pendientes
+C17    : Admin
+A18    : 5
+B18    : Publicar contenido en RRSS: producto del día, proceso
+C18    : RRSS
+A20    : Cierre del día
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Hora
+G21    : Notas
+A22    : 1
+B22    : Revisar ventas del día vs objetivo
+C22    : Gestión
+A23    : 2
+B23    : Verificar stock para producción de mañana
+C23    : Almacén
+A24    : 3
+B24    : Anotar incidencias y notas para el día siguiente
+C24    : Admin
+A25    : 4
+B25    : Cerrar y validar el registro diario de jornada de todo el equipo, obrador y tienda: es obligatorio (RD-ley 8/2019) y hay que conservarlo 4 años
+C25    : Admin
+A26    : 5
+B26    : Confirmar equipo y horarios de mañana
+C26    : Equipo
+B27    : Tareas completadas:
+C27    = =COUNTIFS(B6:B26,"?*",E6:E26,"✓")-COUNTIFS(B6:B26,"Tarea",E6:E26,"✓")   → caché 0.0
+D27    : de
+E27    = =COUNTIF(B6:B26,"?*")-COUNTIF(B6:B26,"Tarea")-COUNTIF(E6:E26,"N/A")   → caché 15.0
+A28    : Firma responsable: _________________  Fecha: ___/___/______
+A29    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G26 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Semanal» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Semanales del Manager
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Lunes — Planificación
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Planificar producción de la semana según demanda
+C6     : Gestión
+A7     : 2
+B7     : Revisar stock de coberturas, rellenos y packaging
+C7     : Almacén
+A8     : 3
+B8     : Lanzar pedidos a proveedores para la semana
+C8     : Logística
+A9     : 4
+B9     : Revisar pedidos especiales y encargos de la semana
+C9     : Admin
+A11    : Martes — Calidad
+A12    : #
+B12    : Tarea
+C12    : Zona
+D12    : Responsable
+E12    : ✓
+F12    : Hora
+G12    : Notas
+A13    : 1
+B13    : Auditar temperaturas registradas de la semana anterior
+C13    : Admin
+A14    : 2
+B14    : Verificar fechas de caducidad de rellenos y ganaches
+C14    : Conservación
+A15    : 3
+B15    : Revisar mermas acumuladas y causas
+C15    : Gestión
+A17    : Miércoles — Equipo
+A18    : #
+B18    : Tarea
+C18    : Zona
+D18    : Responsable
+E18    : ✓
+F18    : Hora
+G18    : Notas
+A19    : 1
+B19    : Revisar rendimiento individual: productividad, calidad
+C19    : Equipo
+A20    : 2
+B20    : Formación puntual: nueva técnica o producto
+C20    : Equipo
+A21    : 3
+B21    : Ajustar turnos si hay picos de demanda previstos
+C21    : Equipo
+A23    : Jueves — Comercial
+A24    : #
+B24    : Tarea
+C24    : Zona
+D24    : Responsable
+E24    : ✓
+F24    : Hora
+G24    : Notas
+A25    : 1
+B25    : Revisar ventas por producto: tabletas, bombones, figuras
+C25    : Gestión
+A26    : 2
+B26    : Actualizar precios si hay cambios en materia prima
+C26    : Admin
+A27    : 3
+B27    : Planificar ofertas o promociones del fin de semana
+C27    : RRSS
+A29    : Viernes — Food Cost
+A30    : #
+B30    : Tarea
+C30    : Zona
+D30    : Responsable
+E30    : ✓
+F30    : Hora
+G30    : Notas
+A31    : 1
+B31    : Calcular food cost semanal: materia prima / ventas
+C31    : Gestión
+A32    : 2
+B32    : Comparar food cost real vs objetivo (30-35%)
+C32    : Gestión
+A33    : 3
+B33    : Ajustar recetas o porciones si hay desviación
+C33    : Producción
+A34    : 4
+B34    : Preparar resumen semanal para dirección
+C34    : Admin
+A36    : Sábado y domingo — Tienda a pleno
+A37    : #
+B37    : Tarea
+C37    : Zona
+D37    : Responsable
+E37    : ✓
+F37    : Hora
+G37    : Notas
+A38    : 1
+B38    : Reponer la vitrina antes de cada pico: media mañana y media tarde, sin esperar a que se vacíe
+C38    : Vitrina
+A39    : 2
+B39    : Revisar el stock de packaging de regalo: cajas, lazos y bolsas se agotan el sábado y no hay proveedor hasta el lunes
+C39    : Packaging
+A40    : 3
+B40    : Anotar las roturas de stock y qué se dejó de vender, para la planificación del lunes
+C40    : Gestión
+B41    : Tareas completadas:
+C41    = =COUNTIFS(B6:B40,"?*",E6:E40,"✓")-COUNTIFS(B6:B40,"Tarea",E6:E40,"✓")   → caché 0.0
+D41    : de
+E41    = =COUNTIF(B6:B40,"?*")-COUNTIF(B6:B40,"Tarea")-COUNTIF(E6:E40,"N/A")   → caché 20.0
+A42    : Firma responsable: _________________  Fecha: ___/___/______
+A43    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E19 E20 E21 E25 E26 E27 E31 E32 E33 E34 E38 E39 E40 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G40 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Mensual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Mensuales del Manager
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Inventario y finanzas
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Inventario completo: coberturas, frutos secos, licores, packaging
+C6     : Almacén
+A7     : 2
+B7     : Calcular food cost mensual y comparar con objetivo
+C7     : Gestión
+A8     : 3
+B8     : Revisar facturas de proveedores y negociar si aplica
+C8     : Admin
+A9     : 4
+B9     : Análisis de ventas por categoría: bombones, tabletas, figuras, regalos
+C9     : Gestión
+A11    : Equipo y formación
+A12    : #
+B12    : Tarea
+C12    : Zona
+D12    : Responsable
+E12    : ✓
+F12    : Hora
+G12    : Notas
+A13    : 1
+B13    : Evaluación de equipo: feedback individual
+C13    : Equipo
+A14    : 2
+B14    : Planificar formación del mes siguiente
+C14    : Equipo
+A15    : 3
+B15    : Revisar y actualizar procedimientos operativos
+C15    : Admin
+A16    : 4
+B16    : Archivar los registros de jornada del mes firmados y guardarlos a disposición de la Inspección de Trabajo (4 años)
+C16    : Admin
+A18    : Producto y marketing
+A19    : #
+B19    : Tarea
+C19    : Zona
+D19    : Responsable
+E19    : ✓
+F19    : Hora
+G19    : Notas
+A20    : 1
+B20    : Lanzar nuevo producto o sabor del mes
+C20    : Producción
+A21    : 2
+B21    : Actualizar carta y etiquetado si hay cambios
+C21    : Tienda
+A22    : 3
+B22    : Planificar contenido RRSS del mes siguiente
+C22    : RRSS
+A23    : 4
+B23    : Revisar Google Reviews y responder pendientes
+C23    : RRSS
+B24    : Tareas completadas:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Tarea",E6:E23,"✓")   → caché 0.0
+D24    : de
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Tarea")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Firma responsable: _________________  Fecha: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G23 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 04-tareas-perfiles.xlsx
+# docProps: title='04 · Tareas por Perfil — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.1' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 04 · Tareas por Perfil — Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Checklists específicos por puesto de trabajo.
+B6     : ▸ Cada perfil tiene sus tareas claramente definidas.
+B7     : ▸ Ideal para onboarding de nuevos empleados.
+B9     : Perfiles incluidos:
+B10    : ▸ Maestro chocolatero / Obrador
+B11    : ▸ Dependiente de tienda
+B12    : ▸ Encargado de turno
+B14    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B15    : Versión 2.1 · octubre 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Chocolatero» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Maestro Chocolatero / Obrador
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Producción diaria
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Revisar orden de producción del día
+C6     : Obrador
+A7     : 2
+B7     : Preparar y pesar ingredientes según fichas técnicas
+C7     : Obrador
+A8     : 3
+B8     : Templar coberturas según tipo (negro/leche/blanco)
+C8     : Templado
+A9     : 4
+B9     : Producir bombones según recetas del día
+C9     : Moldeado
+A10    : 5
+B10    : Producir tabletas y figuras según planificación
+C10    : Moldeado
+A11    : 6
+B11    : Preparar ganaches y rellenos según ficha
+C11    : Obrador
+A12    : 7
+B12    : Envasar y etiquetar producto terminado
+C12    : Envasado
+A13    : 8
+B13    : Registrar lotes de producción y cantidades
+C13    : Admin
+A15    : Calidad y control
+A16    : #
+B16    : Tarea
+C16    : Zona
+D16    : Responsable
+E16    : ✓
+F16    : Hora
+G16    : Notas
+A17    : 1
+B17    : Verificar templado: brillo, snap, contracción
+C17    : Templado
+A18    : 2
+B18    : Controlar pesos de bombones y tabletas
+C18    : Obrador
+A19    : 3
+B19    : Registrar temperaturas de proceso
+C19    : Admin
+A20    : 4
+B20    : Registrar mermas y desperdicio
+C20    : Admin
+A22    : Limpieza de obrador
+A23    : #
+B23    : Tarea
+C23    : Zona
+D23    : Responsable
+E23    : ✓
+F23    : Hora
+G23    : Notas
+A24    : 1
+B24    : Limpiar temperadora al finalizar cada uso
+C24    : Templado
+A25    : 2
+B25    : Limpiar moldes y secar correctamente
+C25    : Moldeado
+A26    : 3
+B26    : Limpiar mármol de trabajo
+C26    : Obrador
+A27    : 4
+B27    : Dejar obrador ordenado para el turno siguiente
+C27    : Obrador
+B28    : Tareas completadas:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Tarea",E6:E27,"✓")   → caché 0.0
+D28    : de
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Tarea")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Firma responsable: _________________  Fecha: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G27 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Dependiente» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Dependiente de Tienda
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Apertura de tienda
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Montar vitrina con productos del día
+C6     : Vitrina
+A7     : 2
+B7     : Verificar el etiquetado de cada referencia: precio, precio por kilo si se vende al peso, y los alérgenos declarados (leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos) más las trazas
+C7     : Vitrina
+A8     : 3
+B8     : Preparar zona de degustación
+C8     : Mostrador
+A9     : 4
+B9     : Activar TPV y comprobar fondo de caja
+C9     : Caja
+A10    : 5
+B10    : Reponer packaging: bolsas, cajas, papel de seda
+C10    : Packaging
+A12    : Atención al cliente
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Atender clientes: asesorar sobre productos y maridajes
+C14    : Tienda
+A15    : 2
+B15    : Preparar cajas de bombones personalizadas
+C15    : Packaging
+A16    : 3
+B16    : Gestionar encargos y pedidos por adelantado: al CONFIRMAR el encargo, dejar por escrito alérgenos e intolerancias, unidades, fecha y hora de recogida, precio, señal cobrada y condiciones de cancelación
+C16    : Admin
+A17    : 4
+B17    : Ofrecer degustación del producto destacado del día
+C17    : Mostrador
+A18    : 5
+B18    : Cobrar y emitir ticket/factura
+C18    : Caja
+A20    : Mantenimiento de tienda
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Hora
+G21    : Notas
+A22    : 1
+B22    : Reponer vitrina conforme se venden productos
+C22    : Vitrina
+A23    : 2
+B23    : Mantener limpieza de mostradores y cristales
+C23    : Limpieza
+A24    : 3
+B24    : Vigilar la temperatura de la tienda (20-22 °C) y la de la vitrina (16-18 °C): por encima el bombón suda y pierde brillo — anota la lectura: ____ °C
+C24    : Tienda
+A26    : Cierre de tienda
+A27    : #
+B27    : Tarea
+C27    : Zona
+D27    : Responsable
+E27    : ✓
+F27    : Hora
+G27    : Notas
+A28    : 1
+B28    : Cuadrar caja y registrar ventas
+C28    : Caja
+A29    : 2
+B29    : Retirar productos de vitrina para conservación
+C29    : Vitrina
+A30    : 3
+B30    : Limpiar mostradores, cristales y suelo de tienda
+C30    : Limpieza
+B31    : Tareas completadas:
+C31    = =COUNTIFS(B6:B30,"?*",E6:E30,"✓")-COUNTIFS(B6:B30,"Tarea",E6:E30,"✓")   → caché 0.0
+D31    : de
+E31    = =COUNTIF(B6:B30,"?*")-COUNTIF(B6:B30,"Tarea")-COUNTIF(E6:E30,"N/A")   → caché 16.0
+A32    : Firma responsable: _________________  Fecha: ___/___/______
+A33    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E28 E29 E30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G30 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Encargado» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Encargado de Turno
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Supervisión general
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Verificar apertura correcta (obrador + tienda)
+C6     : General
+A7     : 2
+B7     : Asignar tareas al equipo según prioridades
+C7     : Equipo
+A8     : 3
+B8     : Supervisar calidad de producción
+C8     : Producción
+A9     : 4
+B9     : Gestionar pedidos urgentes de proveedores
+C9     : Logística
+A10    : 5
+B10    : Resolver incidencias con clientes
+C10    : Tienda
+A12    : Control operativo
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Verificar stock mínimo de coberturas y packaging
+C14    : Almacén
+A15    : 2
+B15    : Supervisar temperaturas de cámaras y obrador
+C15    : Admin
+A16    : 3
+B16    : Control de mermas y desperdicio del turno
+C16    : Gestión
+A17    : 4
+B17    : Verificar cumplimiento de APPCC (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)
+C17    : Admin
+A19    : Cierre de turno
+A20    : #
+B20    : Tarea
+C20    : Zona
+D20    : Responsable
+E20    : ✓
+F20    : Hora
+G20    : Notas
+A21    : 1
+B21    : Revisar producción completada vs planificada
+C21    : Gestión
+A22    : 2
+B22    : Dejar notas para el turno siguiente
+C22    : Admin
+A23    : 3
+B23    : Supervisar cierre correcto de obrador y tienda
+C23    : General
+B24    : Tareas completadas:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Tarea",E6:E23,"✓")   → caché 0.0
+D24    : de
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Tarea")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Firma responsable: _________________  Fecha: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G23 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 05-tareas-semanales-mensuales.xlsx
+# docProps: title='05 · Tareas Semanales y Mensuales — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 05 · Tareas Semanales y Mensuales — Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Deep clean, mantenimiento de equipos, inventarios periódicos.
+B6     : ▸ Programa estas tareas en el calendario semanal/mensual.
+B7     : ▸ Marca ✓ cuando se complete cada tarea.
+B9     : Personalización:
+B10    : ▸ Ajusta frecuencias según volumen de producción.
+B11    : ▸ Añade tareas específicas de tu obrador.
+B13    : Más allá del mes:
+B14    : ▸ La hoja «Trimestral y Anual» recoge lo que se CONTRATA y se pide por escrito en una inspección: DDD, conductos de extracción, analíticas, carnés de manipulador, SAT de temperadora y cámaras, calibración de sondas y báscula, extintores, instalación de gas, RGSEAA, póliza y facturación.
+B15    : ▸ Anota en «Notas» el número de parte de cada revisión y la fecha de la siguiente; la columna «Cadencia» ya viene con la periodicidad legal o recomendada de cada una.
+B17    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B18    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Semanal» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Semanales
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Deep clean — Obrador
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Limpieza profunda de temperadora: desmontar y limpiar
+C6     : Templado
+A7     : 2
+B7     : Limpiar y desinfectar mármol de trabajo con producto alimentario
+C7     : Obrador
+A8     : 3
+B8     : Limpiar todos los moldes: verificar que no tengan restos
+C8     : Moldeado
+A9     : 4
+B9     : Desinfectar superficies de envasado
+C9     : Envasado
+A10    : 5
+B10    : Limpiar y organizar estanterías de obrador
+C10    : Obrador
+A11    : 6
+B11    : Fregar suelo a fondo con desengrasante alimentario
+C11    : Limpieza
+A13    : Deep clean — Tienda
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Limpiar cristales de vitrina interior y exterior
+C15    : Vitrina
+A16    : 2
+B16    : Limpiar estanterías y expositores de tienda
+C16    : Tienda
+A17    : 3
+B17    : Limpiar escaparate
+C17    : Tienda
+A18    : 4
+B18    : Desinfectar zona de degustación
+C18    : Mostrador
+A20    : Inventario semanal
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Hora
+G21    : Notas
+A22    : 1
+B22    : Contar stock de coberturas: negra, leche, blanca
+C22    : Almacén
+A23    : 2
+B23    : Contar stock de frutos secos y frutas deshidratadas
+C23    : Almacén
+A24    : 3
+B24    : Contar stock de rellenos y ganaches preparados
+C24    : Cámara
+A25    : 4
+B25    : Contar stock de packaging: cajas, bolsas, cintas, papel
+C25    : Packaging
+A26    : 5
+B26    : Contar stock de consumibles: guantes, film, etiquetas
+C26    : Almacén
+A27    : 6
+B27    : Anotar roturas de stock y generar pedido
+C27    : Admin
+A29    : Mantenimiento de equipos
+A30    : #
+B30    : Tarea
+C30    : Zona
+D30    : Responsable
+E30    : ✓
+F30    : Hora
+G30    : Notas
+A31    : 1
+B31    : Verificar funcionamiento de temperadora
+C31    : Templado
+A32    : 2
+B32    : Verificar y registrar las temperaturas de los equipos de frío: cámara de conservación 15-18 °C y nevera de rellenos 0-4 °C — anota las lecturas: ____ °C / ____ °C
+C32    : Conservación
+A33    : 3
+B33    : Comprobar estado de moldes (rayados, deformados)
+C33    : Moldeado
+A34    : 4
+B34    : Verificar báscula de precisión con peso patrón
+C34    : Obrador
+B35    : Tareas completadas:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Tarea",E6:E34,"✓")   → caché 0.0
+D35    : de
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Tarea")-COUNTIF(E6:E34,"N/A")   → caché 20.0
+A36    : Firma responsable: _________________  Fecha: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G34 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Mensual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Mensuales
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Mantenimiento profundo
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Mantenimiento profesional de temperadora si aplica
+C6     : Templado
+A7     : 2
+B7     : Limpieza de filtros de aire acondicionado
+C7     : General
+A8     : 3
+B8     : Revisión de instalación eléctrica y enchufes
+C8     : General
+A9     : 4
+B9     : Calibración de termómetros y sondas
+C9     : Obrador
+A10    : 5
+B10    : Verificar estado de extintores
+C10    : General
+A12    : Inventario mensual completo
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Inventario completo: coberturas por tipo y proveedor
+C14    : Almacén
+A15    : 2
+B15    : Inventario: frutos secos, pralinés, licores, extractos
+C15    : Almacén
+A16    : 3
+B16    : Inventario: moldes, utillaje, herramientas
+C16    : Obrador
+A17    : 4
+B17    : Inventario: packaging completo (cajas, bolsas, lazos)
+C17    : Packaging
+A18    : 5
+B18    : Comparar inventario real vs teórico: detectar desfases
+C18    : Gestión
+A20    : APPCC y seguridad
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Hora
+G21    : Notas
+A22    : 1
+B22    : Revisar registros APPCC del mes: temperaturas, limpieza (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)
+C22    : Admin
+A23    : 2
+B23    : Verificar plan de control de plagas
+C23    : General
+A24    : 3
+B24    : Actualizar fichas técnicas si hay nuevos productos
+C24    : Admin
+A25    : 4
+B25    : Revisar etiquetado: ingredientes, alérgenos, lotes
+C25    : Admin
+B26    : Tareas completadas:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Tarea",E6:E25,"✓")   → caché 0.0
+D26    : de
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Tarea")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Firma responsable: _________________  Fecha: ___/___/______
+A28    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G25 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Trimestral y Anual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Mantenimiento Trimestral y Anual — Revisiones Contratadas
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Higiene, plagas y analíticas — empresa autorizada
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Cadencia
+G5     : Notas
+A6     : 1
+B6     : Control de plagas (DDD) por empresa autorizada: visita, parte firmado y certificado en vigor
+C6     : Admin
+F6     : Trimestral
+A7     : 2
+B7     : Limpieza de los conductos de extracción del obrador por empresa homologada, con certificado
+C7     : General
+F7     : Anual
+A8     : 3
+B8     : Analítica de superficies, de producto y del agua de la red interior en laboratorio externo (legionela sólo si tienes torre de refrigeración o acumulador de agua caliente)
+C8     : Admin
+F8     : Semestral
+A9     : 4
+B9     : Renovar los carnés de manipulador de alimentos del equipo y archivar los certificados
+C9     : Equipo
+F9     : Anual
+A10    : 5
+B10    : Revisar el plan de autocontrol de higiene y las fichas técnicas de producto: altas, bajas y cambios de proveedor del año
+C10    : Admin
+F10    : Anual
+A12    : Equipos, instalaciones y seguridad
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Cadencia
+G13    : Notas
+A14    : 1
+B14    : Revisión de la temperadora y del bombo por el SAT: sondas, resistencias, juntas y desgaste del tornillo
+C14    : Templado
+F14    : Anual
+A15    : 2
+B15    : Revisión de cámaras y neveras por frigorista: gas, estanqueidad, juntas y ciclo de desescarche
+C15    : Conservación
+F15    : Semestral
+A16    : 3
+B16    : Calibrar termómetros, sondas y báscula de precisión contra un patrón conocido y anotar la desviación
+C16    : Obrador
+F16    : Trimestral
+A17    : 4
+B17    : Revisión de extintores y BIE por empresa mantenedora (etiqueta y acta)
+C17    : General
+F17    : Anual
+A18    : 5
+B18    : Revisión de la instalación de gas por empresa habilitada, si el obrador la tiene
+C18    : General
+F18    : Cada 5 años
+A20    : Documentación, seguros y facturación
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Cadencia
+G21    : Notas
+A22    : 1
+B22    : Revisar la póliza de responsabilidad civil y de continuidad de negocio: sumas aseguradas y actividades excluidas
+C22    : Admin
+F22    : Anual
+A23    : 2
+B23    : Comprobar que el registro sanitario (RGSEAA) recoge la actividad y las instalaciones reales, obrador incluido
+C23    : Admin
+F23    : Anual
+A24    : 3
+B24    : Revisión del TPV y del software de facturación (requisitos antifraude / Verifactu)
+C24    : Admin
+F24    : Anual
+A25    : 4
+B25    : Archivar los registros de jornada del trimestre y anotar en «Notas» el nº de parte de cada revisión y la fecha de la siguiente
+C25    : Admin
+F25    : Trimestral
+B26    : Tareas completadas:
+C26    = =COUNTIFS(B6:B25,"?*",E6:E25,"✓")-COUNTIFS(B6:B25,"Tarea",E6:E25,"✓")   → caché 0.0
+D26    : de
+E26    = =COUNTIF(B6:B25,"?*")-COUNTIF(B6:B25,"Tarea")-COUNTIF(E6:E25,"N/A")   → caché 14.0
+A27    : Firma responsable: _________________  Fecha: ___/___/______
+A28    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A6:G25 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 06-eventos-temporada.xlsx
+# docProps: title='06 · Eventos y Temporada — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.1' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 06 · Eventos y Temporada — Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Planificación de campañas estacionales y eventos especiales.
+B6     : ▸ Navidad, San Valentín, Pascua, Día de la Madre y más.
+B7     : ▸ Cada campaña tiene producción, packaging y marketing.
+B9     : Personalización:
+B10    : ▸ Ajusta fechas y productos a tu catálogo.
+B11    : ▸ Añade ferias locales y eventos de tu zona.
+B13    : Antes de cerrar una campaña:
+B14    : ▸ Todo encargo —de particular o de empresa— se confirma POR ESCRITO con alérgenos e intolerancias, unidades, fecha y hora de entrega, precio, señal y condiciones de cancelación.
+B15    : ▸ Publica la fecha límite de encargos de cada campaña antes de abrir la preventa: lo que revienta la última semana no es la producción, es el pedido que entra el día 22.
+B17    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B18    : Versión 2.1 · octubre 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Navidad» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Campaña de Navidad (Nov-Dic)
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Preparación (Octubre)
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Diseñar catálogo navideño: turrones, bombones, figuras
+C6     : Gestión
+A7     : 2
+B7     : Pedir coberturas y materias primas extra
+C7     : Logística
+A8     : 3
+B8     : Diseñar y pedir packaging navideño: cajas, lazos, tarjetas
+C8     : Packaging
+A9     : 4
+B9     : Planificar producción extra: turnos, personal temporal
+C9     : Equipo
+A10    : 5
+B10    : Lanzar preventa en web y RRSS
+C10    : RRSS
+A11    : 6
+B11    : Fijar y publicar la FECHA LÍMITE de encargos de Navidad y los horarios de recogida del 24 y el 31 (en tienda, en la web y en RRSS)
+C11    : Admin
+A13    : Producción navideña (Nov-Dic)
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Producir turrones artesanales: praliné, guirlache, trufa
+C15    : Producción
+A16    : 2
+B16    : Producir figuras de chocolate: Papá Noel, árboles, bolas
+C16    : Moldeado
+A17    : 3
+B17    : Producir bombones especiales navideños
+C17    : Moldeado
+A18    : 4
+B18    : Producir cestas y lotes corporativos
+C18    : Envasado
+A19    : 5
+B19    : Control de calidad extra: cada lote verificado
+C19    : Admin
+A21    : Tienda y marketing
+A22    : #
+B22    : Tarea
+C22    : Zona
+D22    : Responsable
+E22    : ✓
+F22    : Hora
+G22    : Notas
+A23    : 1
+B23    : Decorar tienda y escaparate con temática navideña
+C23    : Tienda
+A24    : 2
+B24    : Montar expositor especial de regalos corporativos
+C24    : Vitrina
+A25    : 3
+B25    : Publicar catálogo navideño en RRSS y web
+C25    : RRSS
+A26    : 4
+B26    : Gestionar los pedidos corporativos: al CONFIRMAR cada pedido, dejar por escrito alérgenos e intolerancias, unidades, fecha y lugar de entrega, precio unitario, señal y condiciones de cancelación
+C26    : Admin
+B27    : Tareas completadas:
+C27    = =COUNTIFS(B6:B26,"?*",E6:E26,"✓")-COUNTIFS(B6:B26,"Tarea",E6:E26,"✓")   → caché 0.0
+D27    : de
+E27    = =COUNTIF(B6:B26,"?*")-COUNTIF(B6:B26,"Tarea")-COUNTIF(E6:E26,"N/A")   → caché 15.0
+A28    : Firma responsable: _________________  Fecha: ___/___/______
+A29    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E23 E24 E25 E26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G26 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «San Valentín» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Campaña de San Valentín (Feb)
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Preparación (Enero)
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Diseñar colección San Valentín: corazones, bombones premium
+C6     : Gestión
+A7     : 2
+B7     : Pedir moldes especiales si se necesitan
+C7     : Logística
+A8     : 3
+B8     : Diseñar packaging romántico: cajas corazón, cintas rojas
+C8     : Packaging
+A9     : 4
+B9     : Planificar promoción en RRSS: countdown, sorteos
+C9     : RRSS
+A11    : Producción (1-14 Feb)
+A12    : #
+B12    : Tarea
+C12    : Zona
+D12    : Responsable
+E12    : ✓
+F12    : Hora
+G12    : Notas
+A13    : 1
+B13    : Producir bombones en forma de corazón
+C13    : Moldeado
+A14    : 2
+B14    : Producir tabletas con mensaje grabado
+C14    : Moldeado
+A15    : 3
+B15    : Producir trufas y bombones premium edición limitada
+C15    : Producción
+A16    : 4
+B16    : Preparar cajas surtidas de bombones para regalo
+C16    : Envasado
+A18    : Ventas y marketing
+A19    : #
+B19    : Tarea
+C19    : Zona
+D19    : Responsable
+E19    : ✓
+F19    : Hora
+G19    : Notas
+A20    : 1
+B20    : Decorar tienda y vitrina con temática San Valentín
+C20    : Tienda
+A21    : 2
+B21    : Ofrecer servicio de personalización: mensaje en tableta
+C21    : Mostrador
+A22    : 3
+B22    : Publicar contenido diario en RRSS: countdown
+C22    : RRSS
+A23    : 4
+B23    : Gestionar los pedidos especiales y las entregas a domicilio: confirmar por escrito alérgenos, dirección, franja de entrega y quién recibe; en reparto propio, el producto viaja por debajo de 18 °C y nunca en el maletero al sol
+C23    : Logística
+B24    : Tareas completadas:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Tarea",E6:E23,"✓")   → caché 0.0
+D24    : de
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Tarea")-COUNTIF(E6:E23,"N/A")   → caché 12.0
+A25    : Firma responsable: _________________  Fecha: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G23 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Pascua» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Campaña de Pascua (Mar-Abr)
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Preparación (Febrero)
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Diseñar colección Pascua: huevos, figuras, monas
+C6     : Gestión
+A7     : 2
+B7     : Pedir moldes de huevos y figuras
+C7     : Logística
+A8     : 3
+B8     : Diseñar packaging primaveral
+C8     : Packaging
+A9     : 4
+B9     : Planificar producción de monas de chocolate si aplica
+C9     : Producción
+A11    : Producción de Pascua
+A12    : #
+B12    : Tarea
+C12    : Zona
+D12    : Responsable
+E12    : ✓
+F12    : Hora
+G12    : Notas
+A13    : 1
+B13    : Producir huevos de chocolate: pequeños, medianos, grandes
+C13    : Moldeado
+A14    : 2
+B14    : Producir figuras de Pascua: conejos, pollitos
+C14    : Moldeado
+A15    : 3
+B15    : Producir monas de chocolate decoradas
+C15    : Producción
+A16    : 4
+B16    : Producir bombones primaverales
+C16    : Moldeado
+A17    : 5
+B17    : Envasar y etiquetar la colección de Pascua: denominación, peso neto, lote, consumo preferente y alérgenos declarados (leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos)
+C17    : Envasado
+A19    : Tienda y marketing
+A20    : #
+B20    : Tarea
+C20    : Zona
+D20    : Responsable
+E20    : ✓
+F20    : Hora
+G20    : Notas
+A21    : 1
+B21    : Decorar tienda con temática primaveral/Pascua
+C21    : Tienda
+A22    : 2
+B22    : Montar escaparate con huevos y figuras
+C22    : Vitrina
+A23    : 3
+B23    : Publicar colección en RRSS con fotos de calidad
+C23    : RRSS
+A24    : 4
+B24    : Organizar taller de decoración de huevos si aplica
+C24    : Tienda
+B25    : Tareas completadas:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Tarea",E6:E24,"✓")   → caché 0.0
+D25    : de
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Tarea")-COUNTIF(E6:E24,"N/A")   → caché 13.0
+A26    : Firma responsable: _________________  Fecha: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G24 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 07-plantilla-personalizable.xlsx
+# docProps: title='07 · Plantilla Personalizable — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 07 · Plantilla Personalizable — Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ 3 plantillas en blanco para crear tus propias listas de tareas.
+B6     : ▸ Por zona, por turno y por perfil.
+B7     : ▸ Ideal para tareas específicas de tu negocio.
+B9     : Personalización:
+B10    : ▸ Escribe tus tareas en las filas vacías.
+B11    : ▸ Usa los mismos códigos de zona que en las otras plantillas.
+B13    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B14    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Por Zona» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla Personalizable — Por Zona
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : ✓
+F4     : Hora
+G4     : Notas
+B30    : Tareas completadas:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Tarea",E5:E29,"✓")   → caché 0.0
+D30    : de
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Tarea")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Por Turno» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla Personalizable — Por Turno
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : ✓
+F4     : Hora
+G4     : Notas
+B30    : Tareas completadas:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Tarea",E5:E29,"✓")   → caché 0.0
+D30    : de
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Tarea")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Por Perfil» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla Personalizable — Por Perfil
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : ✓
+F4     : Hora
+G4     : Notas
+B30    : Tareas completadas:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Tarea",E5:E29,"✓")   → caché 0.0
+D30    : de
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Tarea")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+####################################################################################################
+# 08-apertura-cierre-negocio.xlsx
+# docProps: title='Apertura y Cierre del Negocio — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$45 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre del Negocio — Chocolatería
+B4     : Qué resuelve
+B6     : ▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.
+B8     : Cómo usar
+B10    : ▸ Imprime la hoja del turno (apertura o cierre) o úsala en tablet; el responsable reparte y cada persona firma su tarea.
+B11    : ▸ Cada tarea trae Responsable y Hora Límite precargados con el criterio del kit: ajústalos a tu horario real, son celdas verdes.
+B13    : Celdas editables
+B15    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma y Notas.
+B17    : Cómo cuenta el contador
+B19    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B20    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B21    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B23    : Filas libres
+B25    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B26    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B28    : Protección de la hoja
+B30    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B31    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B33    : Se conecta con
+B35    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B36    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B37    : ▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.
+B38    : ▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 09-apertura-cierre-caja.xlsx.
+B40    : — Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro
+B42    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B43    : Contacto: info@aichef.pro
+B45    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Apertura del Negocio» · protegida=True · área='Apertura del Negocio'!$A$1:$H$30 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura del Negocio — Chocolatería / Bombonería
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Desactivar alarma del local
+C5     : Acceso
+D5     : Encargado
+E5     : 07:00
+A6     : 2
+B6     : Encender luces generales (interior y exterior)
+C6     : General
+D6     : Encargado
+E6     : 07:00
+A7     : 3
+B7     : Encender climatización (HVAC) / calefacción según temporada
+C7     : General
+D7     : Encargado
+E7     : 07:00
+A8     : 4
+B8     : Abrir persianas / puerta principal
+C8     : Acceso
+D8     : Encargado
+E8     : 07:00
+A9     : 5
+B9     : Montar la señalización exterior y el cartel de encargos por adelantado, y comprobar que al escaparate no le da el sol directo: el chocolate expuesto se funde y pierde el brillo
+C9     : Exterior
+D9     : Encargado
+E9     : 07:00
+A10    : 6
+B10    : Encender TPV / POS / datáfono
+C10    : Caja
+D10    : Encargado
+E10    : 07:00
+A11    : 7
+B11    : Encender las vitrinas temperadas de bombones y tabletas nada más entrar: tardan en bajar y el género no se monta hasta que estén en rango
+C11    : Vitrina
+D11    : Encargado
+E11    : 07:15
+A12    : 8
+B12    : Poner música ambiente al volumen adecuado
+C12    : General
+D12    : Encargado
+E12    : 07:15
+A13    : 9
+B13    : Revisar los encargos comprometidos para hoy: unidades, hora de recogida y quién los prepara, y dejar preparadas las cajas de regalo y las cintas de los que se recojan por la mañana
+C13    : Mostrador
+D13    : Encargado
+E13    : 07:15
+A14    : 10
+B14    : Comprobar baños: papel, jabón, limpieza, ambientador
+C14    : Baños
+D14    : Encargado
+E14    : 07:15
+A15    : 11
+B15    : Verificar limpieza de zonas comunes (entrada, pasillos)
+C15    : Zonas comunes
+D15    : Encargado
+E15    : 07:15
+A16    : 12
+B16    : Revisar el estado del mobiliario de tienda: mostrador, estanterías y escaparate sin desperfectos, sin bombillas fundidas y sin cristales rayados
+C16    : Sala
+D16    : Encargado
+E16    : 07:15
+A17    : 13
+B17    : Montar terraza si aplica (mesas, sillas, sombrillas/estufas)
+C17    : Terraza
+D17    : Encargado
+E17    : 07:30
+A18    : 14
+B18    : Comprobar antes de abrir que ninguna bandeja de la vitrina se queda sin su etiqueta de precio (y sin el precio por kilo, si se vende al peso) ni sin sus alérgenos a la vista, y que hay repuesto en cámara para reponer durante el día
+C18    : Vitrina
+D18    : Encargado
+E18    : 07:30
+A19    : 15
+B19    : Encender displays / pantallas informativas si las hay
+C19    : General
+D19    : Encargado
+E19    : 07:30
+A20    : 16
+B20    : Comprobar que las vitrinas temperadas han alcanzado 16-18 °C y menos del 55 % de humedad antes de montar el género — anota la lectura: ____ °C
+C20    : Vitrina
+D20    : Encargado
+E20    : 07:30
+A21    : 17
+B21    : Verificar la temperatura y la humedad del obrador: objetivo 18-20 °C y 50-60 % — anota la lectura: ____ °C
+C21    : Obrador
+D21    : Encargado
+E21    : 07:30
+A28    : Tareas completadas:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : de
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 17.0
+A29    : Firma del responsable: _________________________     Hora de finalización: ________
+A30    : — Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre del Negocio» · protegida=True · área='Cierre del Negocio'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre del Negocio — Chocolatería / Bombonería
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Apagar música ambiente
+C5     : General
+D5     : Encargado
+E5     : Cierre
+A6     : 2
+B6     : Verificar que no quedan clientes en el local
+C6     : Sala
+D6     : Encargado
+E6     : Cierre
+A7     : 3
+B7     : Limpiar y recoger terraza si aplica
+C7     : Terraza
+D7     : Encargado
+E7     : Cierre
+A8     : 4
+B8     : Apagar TPV / POS / datáfono (o dejar en standby)
+C8     : Caja
+D8     : Encargado
+E8     : Cierre
+A9     : 5
+B9     : Cerrar persianas y puertas
+C9     : Acceso
+D9     : Encargado
+E9     : Cierre
+A10    : 6
+B10    : Apagar luces (dejar mínimas de seguridad)
+C10    : General
+D10    : Encargado
+E10    : Cierre
+A11    : 7
+B11    : Apagar climatización
+C11    : General
+D11    : Encargado
+E11    : Cierre
+A12    : 8
+B12    : Recoger señalización exterior
+C12    : Exterior
+D12    : Encargado
+E12    : Cierre
+A13    : 9
+B13    : Comprobar que ventanas están cerradas
+C13    : General
+D13    : Encargado
+E13    : Cierre
+A14    : 10
+B14    : Vaciar papeleras de zonas comunes y baños
+C14    : Baños
+D14    : Encargado
+E14    : Cierre
+A15    : 11
+B15    : Revisión final de seguridad (gas, agua, enchufes)
+C15    : General
+D15    : Encargado
+E15    : Cierre
+A16    : 12
+B16    : Activar alarma
+C16    : Acceso
+D16    : Encargado
+E16    : Cierre
+A17    : 13
+B17    : Cerrar con llave y verificar cierre
+C17    : Acceso
+D17    : Último en salir
+E17    : Cierre
+A18    : 14
+B18    : Apagar las vitrinas temperadas una vez retirado el género a la cámara de conservación
+C18    : Vitrina
+D18    : Último en salir
+E18    : Cierre
+A19    : 15
+B19    : Registrar la temperatura de cierre del obrador: objetivo 18-20 °C — anota la lectura: ____ °C
+C19    : Obrador
+D19    : Último en salir
+E19    : Cierre
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Firma del responsable: _________________________     Hora de finalización: ________
+A28    : — Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-apertura-cierre-caja.xlsx
+# docProps: title='Apertura y Cierre de Caja — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$56 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre de Caja — Chocolatería
+B4     : Qué resuelve
+B6     : ▸ El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre — y el registro mensual para ver de un vistazo qué días no cuadraron.
+B8     : Cómo usar — Apertura de Caja
+B10    : ▸ Cuenta el fondo y escribe el importe en la celda VERDE «Fondo de caja inicial (€)». De ahí lo lee el cierre: no hay que volver a teclearlo.
+B12    : Cómo usar — Cierre de Caja
+B14    : ▸ En «Recuento de Efectivo por Denominación» rellena SOLO la columna «Cantidad» (número de billetes o monedas, entero): el subtotal y el TOTAL EFECTIVO se calculan solos.
+B15    : ▸ En el «Resumen de Cierre» sólo escribes tres cifras: Total Tarjetas, Total Otros y la Z del TPV. Lo demás es fórmula.
+B16    : ▸ El fondo se descuenta solo: TOTAL FACTURADO = (efectivo contado − fondo) + tarjetas + otros.
+B17    : ▸ DESCUADRE = TOTAL FACTURADO − Z del TPV. Si la casilla se pone ÁMBAR, la caja no cuadra: revísalo ANTES de firmar.
+B19    : Registro Mensual
+B21    : ▸ Una fila por día: escribe fondo, ventas por medio de pago, Z del TPV y depósito; el Total Facturado y el Descuadre se calculan solos y el descuadre se pone ámbar.
+B22    : ▸ El fondo de caja es un saldo, no una venta: la fila TOTALES muestra el fondo MEDIO de los días anotados, no su suma.
+B24    : Celdas editables
+B26    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma, Notas, las cantidades del recuento y los importes del resumen.
+B28    : Cómo cuenta el contador
+B30    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B31    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B32    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B34    : Filas libres
+B36    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B37    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B39    : Protección de la hoja
+B41    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B42    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B44    : Se conecta con
+B46    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B47    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B48    : ▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.
+B49    : ▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 08-apertura-cierre-negocio.xlsx.
+B51    : — Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro
+B53    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B54    : Contacto: info@aichef.pro
+B56    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Apertura de Caja» · protegida=True · área='Apertura de Caja'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura de Caja — Chocolatería / Bombonería
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Hora Límite
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Verificar fondo de caja del día anterior
+C5     : Responsable de caja
+D5     : 07:15
+A6     : 2
+B6     : Contar fondo de caja inicial
+C6     : Responsable de caja
+D6     : 07:15
+A7     : 3
+B7     : Anotar el fondo de caja en la celda verde de abajo
+C7     : Responsable de caja
+D7     : 07:15
+A8     : 4
+B8     : Verificar cambio suficiente (monedas, billetes pequeños)
+C8     : Responsable de caja
+D8     : 07:15
+A9     : 5
+B9     : Encender la báscula de mostrador, comprobar la tara de bandejas y estuches y verificarla con un peso patrón (venta al peso)
+C9     : Responsable de caja
+D9     : 07:15
+A10    : 6
+B10    : Comprobar que el precio por kilo de cada referencia a granel coincide con el del TPV y con el cartel de la vitrina
+C10    : Responsable de caja
+D10    : 07:30
+A11    : 7
+B11    : Comprobar que el TPV está encendido y abrir turno de caja
+C11    : Responsable de caja
+D11    : 07:30
+A12    : 8
+B12    : Imprimir X de apertura (informe de inicio)
+C12    : Responsable de caja
+D12    : 07:30
+A13    : 9
+B13    : Comprobar rollo de papel de ticket
+C13    : Responsable de caja
+D13    : 07:30
+A14    : 10
+B14    : Verificar datáfono operativo
+C14    : Responsable de caja
+D14    : 07:45
+A15    : 11
+B15    : Verificar conexión de pasarela de pago
+C15    : Responsable de caja
+D15    : 07:45
+A16    : 12
+B16    : Anotar incidencias del turno anterior
+C16    : Responsable de caja
+D16    : 07:45
+A17    : 13
+B17    : Firma del responsable de apertura
+C17    : Responsable de caja
+D17    : 07:45
+A24    : Tareas completadas:
+C24    = =COUNTIFS(B5:B22,"?*",E5:E22,"✓")   → caché 0.0
+D24    : de
+E24    = =COUNTIF(B5:B22,"?*")-COUNTIF(E5:E22,"N/A")   → caché 13.0
+B25    : Fondo de caja inicial (€)
+C25    : 0
+D25    : Se descuenta del efectivo en el Cierre de Caja
+A27    : Firma del responsable: _________________________     Hora: ________
+A28    : — Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cierre de Caja» · protegida=True · área='Cierre de Caja'!$A$1:$G$59 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre de Caja — Chocolatería / Bombonería
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Cuándo
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Imprimir Z de cierre (informe final del día)
+C5     : Responsable de caja
+D5     : Cierre
+A6     : 2
+B6     : Recuento de efectivo por denominación (ver tabla inferior)
+C6     : Responsable de caja
+D6     : Cierre
+A7     : 3
+B7     : Calcular total efectivo
+C7     : Responsable de caja
+D7     : Cierre
+A8     : 4
+B8     : Anotar total tarjetas (Visa/Mastercard)
+C8     : Responsable de caja
+D8     : Cierre
+A9     : 5
+B9     : Anotar otros medios (Bizum, vales, invitaciones)
+C9     : Responsable de caja
+D9     : Cierre
+A10    : 6
+B10    : Total facturado = efectivo contado − fondo + tarjetas + otros
+C10    : Responsable de caja
+D10    : Cierre
+A11    : 7
+B11    : Comparar con Z del TPV → calcular diferencia/descuadre
+C11    : Responsable de caja
+D11    : Cierre
+A12    : 8
+B12    : Registrar devoluciones del día
+C12    : Responsable de caja
+D12    : Cierre
+A13    : 9
+B13    : Registrar anulaciones del día
+C13    : Responsable de caja
+D13    : Cierre
+A14    : 10
+B14    : Cuadrar la venta al peso: kilos registrados en el TPV frente a lo descontado de las bandejas del día, y anotar la diferencia
+C14    : Responsable de caja
+D14    : Cierre
+A15    : 11
+B15    : Registrar las señales cobradas por encargos y la lista de encargos pendientes de recoger (no son venta del día)
+C15    : Responsable de caja
+D15    : Cierre
+A16    : 12
+B16    : Separar fondo de caja para mañana
+C16    : Responsable de caja
+D16    : Cierre
+A17    : 13
+B17    : Preparar depósito bancario / guardar en caja fuerte
+C17    : Responsable de caja
+D17    : Cierre
+A18    : 14
+B18    : Firma del responsable de cierre
+C18    : Responsable de caja
+D18    : Cierre
+A25    : Tareas completadas:
+C25    = =COUNTIFS(B5:B23,"?*",E5:E23,"✓")   → caché 0.0
+D25    : de
+E25    = =COUNTIF(B5:B23,"?*")-COUNTIF(E5:E23,"N/A")   → caché 14.0
+A26    : 💰 Recuento de Efectivo por Denominación
+A27    : Denominación
+B27    : Cantidad
+C27    : Subtotal (€)
+A28    : BILLETES
+A29    : 500 €
+B29    : 0
+C29    = =B29*500   → caché 0.0
+A30    : 200 €
+B30    : 0
+C30    = =B30*200   → caché 0.0
+A31    : 100 €
+B31    : 0
+C31    = =B31*100   → caché 0.0
+A32    : 50 €
+B32    : 0
+C32    = =B32*50   → caché 0.0
+A33    : 20 €
+B33    : 0
+C33    = =B33*20   → caché 0.0
+A34    : 10 €
+B34    : 0
+C34    = =B34*10   → caché 0.0
+A35    : 5 €
+B35    : 0
+C35    = =B35*5   → caché 0.0
+A36    : MONEDAS
+A37    : 2 €
+B37    : 0
+C37    = =B37*2   → caché 0.0
+A38    : 1 €
+B38    : 0
+C38    = =B38*1   → caché 0.0
+A39    : 0,50 €
+B39    : 0
+C39    = =B39*0.5   → caché 0.0
+A40    : 0,20 €
+B40    : 0
+C40    = =B40*0.2   → caché 0.0
+A41    : 0,10 €
+B41    : 0
+C41    = =B41*0.1   → caché 0.0
+A42    : 0,05 €
+B42    : 0
+C42    = =B42*0.05   → caché 0.0
+A43    : 0,02 €
+B43    : 0
+C43    = =B43*0.02   → caché 0.0
+A44    : 0,01 €
+B44    : 0
+C44    = =B44*0.01   → caché 0.0
+A45    : TOTAL EFECTIVO
+C45    = =SUM(C29:C44)   → caché 0.0
+A47    : 📊 Resumen de Cierre
+A48    : Concepto
+C48    : Importe (€)
+A49    : Total Efectivo (recuento)
+C49    = =C45   → caché 0.0
+A50    : Fondo de caja inicial (−)
+C50    = =IFERROR('Apertura de Caja'!C25,0)   → caché 0.0
+A51    : Ventas en efectivo (contado − fondo)
+C51    = =IFERROR(C49-C50,0)   → caché 0.0
+A52    : Total Tarjetas (Visa/MC)
+C52    : 0
+A53    : Total Otros (Bizum, Vales)
+C53    : 0
+A54    : TOTAL FACTURADO
+C54    = =C51+C52+C53   → caché 0.0
+A55    : Z del TPV
+C55    : 0
+A56    : DESCUADRE
+C56    = =IFERROR(C54-C55,0)   → caché 0.0
+A58    : Firma del responsable: _________________________     Hora: ________
+A59    : — Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+DV B29 B30 B31 B32 B33 B34 B35 B37 B38 B39 B40 B41 B42 B43 B44 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Cantidad no válida · error=Escribe el número de billetes o monedas: un número entero y positivo, sin decimales. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C56 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Registro Mensual» · protegida=True · área='Registro Mensual'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Registro Mensual de Caja — Chocolatería / Bombonería
+A2     : Mes: ________________     Año: ________
+F2     : Responsable general: _________________________
+A4     : Fecha
+B4     : Fondo Apertura
+C4     : Efectivo Contado
+D4     : Ventas Tarjeta
+E4     : Ventas Otros
+F4     : Total Facturado
+G4     : Z del TPV
+H4     : Descuadre
+I4     : Depósito
+J4     : Responsable
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALES
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : «Efectivo Contado» es el recuento del cajón TAL CUAL, con el fondo dentro: el Total Facturado ya lo descuenta. En TOTALES, «Fondo Apertura» es el fondo MEDIO de los días anotados (un saldo no se suma) y «Descuadre» es el descuadre ACUMULADO en valor absoluto: un +50 y un −50 son 100 € de descuadre, no 0.
+A38    : — Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-briefing-servicio.xlsx
+# docProps: title='BONUS 01 · Briefing Diario de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.1' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS 01 · Briefing Diario de Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Reunión de 5 minutos al inicio del turno.
+B6     : ▸ Producción del día, pedidos especiales, equipo, promociones.
+B7     : ▸ Imprime y rellena cada mañana con el equipo.
+B9     : Personalización:
+B10    : ▸ Las celdas verdes son editables.
+B11    : ▸ Adapta las secciones a tu operación.
+B13    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B14    : Versión 2.1 · octubre 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Briefing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Briefing Diario de Chocolatería
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Producción del día
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Productos a producir hoy: ___________________________
+C6     : Producción
+A7     : 2
+B7     : Cantidad de bombones planificada: _______ unidades
+C7     : Producción
+A8     : 3
+B8     : Cantidad de tabletas planificada: _______ unidades
+C8     : Producción
+A9     : 4
+B9     : Figuras/piezas especiales: ___________________________
+C9     : Producción
+A10    : 5
+B10    : Coberturas necesarias: negra ___ kg / leche ___ kg / blanca ___ kg
+C10    : Almacén
+A11    : 6
+B11    : Temperatura y humedad del obrador al arrancar: ____ °C / ____ % (objetivo 18-20 °C y 50-60 %)
+C11    : Producción
+A13    : Pedidos especiales
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Pedido 1: _____________ — Entrega: ___/___
+C15    : Admin
+A16    : 2
+B16    : Pedido 2: _____________ — Entrega: ___/___
+C16    : Admin
+A17    : 3
+B17    : Pedido 3: _____________ — Entrega: ___/___
+C17    : Admin
+A18    : 4
+B18    : Pedidos online pendientes: ___________________________
+C18    : Admin
+A20    : Equipo del turno
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Hora
+G21    : Notas
+A22    : 1
+B22    : Obrador: ___________________________
+C22    : Equipo
+A23    : 2
+B23    : Tienda: ___________________________
+C23    : Equipo
+A24    : 3
+B24    : Encargado: ___________________________
+C24    : Equipo
+A25    : 4
+B25    : Ausencias / cambios: ___________________________
+C25    : Equipo
+A27    : Notas y promociones
+A28    : #
+B28    : Tarea
+C28    : Zona
+D28    : Responsable
+E28    : ✓
+F28    : Hora
+G28    : Notas
+A29    : 1
+B29    : Producto destacado del día: ___________________________
+C29    : Tienda
+A30    : 2
+B30    : Promoción activa: ___________________________
+C30    : RRSS
+A31    : 3
+B31    : Eventos / visitas especiales: ___________________________
+C31    : Admin
+A32    : 4
+B32    : Incidencias del turno anterior: ___________________________
+C32    : Admin
+B33    : Tareas completadas:
+C33    = =COUNTIFS(B6:B32,"?*",E6:E32,"✓")-COUNTIFS(B6:B32,"Tarea",E6:E32,"✓")   → caché 0.0
+D33    : de
+E33    = =COUNTIF(B6:B32,"?*")-COUNTIF(B6:B32,"Tarea")-COUNTIF(E6:E32,"N/A")   → caché 18.0
+A34    : Firma responsable: _________________  Fecha: ___/___/______
+A35    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E22 E23 E24 E25 E29 E30 E31 E32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G32 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# BONUS-02-calendario-anual-tareas.xlsx
+# docProps: title='BONUS 02 · Calendario Anual de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0' · keywords='kit tareas chocolateria, AI Chef Pro' · description='aichef.pro/kit-tareas-chocolateria' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS 02 · Calendario Anual de Chocolatería
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Un mes por fila con las 12 campañas y fechas señaladas del año chocolatero español.
+B6     : ▸ Planifica producción, packaging y marketing con antelación.
+B7     : ▸ Adapta las fechas a tu zona y mercado.
+B9     : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B10    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-chocolateria · info@aichef.pro
+
+=== Hoja «Calendario» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Calendario Anual — Chocolatería
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Chocolatería / Obrador de Chocolate
+A4     : Mes
+B4     : Acciones clave / Fechas señaladas
+C4     : Productos destacados
+D4     : Temporada
+E4     : ✓
+F4     : Notas
+A5     : Enero
+B5     : Reyes (6): liquidar turrón y figuras de Navidad · rebajas post-Navidad · lanzar la colección de invierno · planificar San Valentín
+C5     : Trufas, bombones especiados, chocolate caliente
+D5     : Media
+A6     : Febrero
+B6     : San Valentín (14): corazones y edición limitada · fecha límite de encargos el día 10 · entregas exprés los días 13 y 14
+C6     : Corazones, bombones premium, tabletas personalizadas
+D6     : Alta
+A7     : Marzo
+B7     : Día del Padre (19) · preparación de Pascua (fecha móvil) · talleres infantiles de Semana Santa
+C7     : Figuras, huevos, monas de chocolate
+D7     : Alta
+A8     : Abril
+B8     : Semana Santa y Pascua: monas y huevos · arrancan las COMUNIONES (abril-junio): detalles de mesa, figuras y cajas personalizadas
+C8     : Huevos, conejos, bombones florales
+D8     : Alta
+A9     : Mayo
+B9     : Día de la Madre (1.er domingo) · pico de COMUNIONES · edición regalo premium
+C9     : Bombones premium, cestas regalo, tabletas grabadas
+D9     : Alta
+A10    : Junio
+B10    : Últimas comuniones · inicio del verano: adaptar catálogo (menos ganache fresca, más tableta y producto estable)
+C10    : Tabletas con fruta, bombones en cámara
+D10    : Media
+A11    : Julio
+B11    : Temporada turística: packs souvenir y colaboraciones locales · vigilar a diario la temperatura de tienda y vitrina
+C11    : Tabletas souvenir, bombones regionales
+D11    : Media
+A12    : Agosto
+B12    : Asunción (15): festivo nacional, la tienda abre para el turista aunque el obrador pare · mantenimiento profundo · vacaciones escalonadas · cerrar el pedido de coberturas de Navidad
+C12    : Producción reducida, planificación Q4
+D12    : Baja
+A13    : Septiembre
+B13    : Vuelta a la rutina · colección de otoño · ferias gastronómicas · abrir la agenda de pedidos corporativos de Navidad
+C13    : Bombones de frutos secos, praliné, especiados
+D13    : Media
+A14    : Octubre
+B14    : Halloween (31): figuras y bombones de temporada · producción navideña a pleno · publicar el catálogo de Navidad
+C14    : Figuras Halloween, bombones calabaza, tabletas oscuras
+D14    : Alta
+A15    : Noviembre
+B15    : Todos los Santos (1): panellets y huesos de santo bañados · Black Friday (último viernes) · preventa de Navidad · turrones y cestas
+C15    : Panellets y huesos de santo bañados, turrones, cestas corporativas, figuras navideñas
+D15    : Alta
+A16    : Diciembre
+B16    : NAVIDAD, máxima producción · puente de la Constitución y la Inmaculada (6-8): fin de semana largo de máxima venta en tienda · fecha límite de encargos y horarios especiales del 24 y el 31
+C16    : Turrones, figuras, bombones navideños, cestas
+D16    : Alta
+A18    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
