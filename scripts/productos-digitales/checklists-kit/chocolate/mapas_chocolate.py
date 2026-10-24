@@ -72,7 +72,11 @@ RX_CONTEXTO_PENDIENTE = (r'(?i)\b(?:dining rooms?|dine-in|FOH|host stands?|hoste
                          r'scoopers?|dipping cabinets?|batch freezers?|dipper wells?|pints?|toppings?|cones?|sundaes?|'
                          r'pasteuri[sz]\w*|restaurants?(?! consultant| supply))\b')
 # heredar.py: cadenas idénticas a una fuente cuyo EN no vale en la chocolatería (→ pendientes → G1.json, con base_en)
-NO_HEREDAR = {}
+NO_HEREDAR = {
+    '▸ Imprime en A4 y deja en obrador y mostrador.': 'obrador → kitchen (la zona «Kitchen» del kit), no «production '
+                                                      'room» como en la heladería',
+    'Resolver incidencias con clientes': 'una tienda dice «customers», no «guests» (EN de la cafetería)',
+}
 # gates_en.py G2: términos de otros kits que NINGUNA celda EN de la chocolatería puede llevar. «patio», «kitchen»,
 # «liqueur» (bombones de licor), «hot chocolate», «coffee» (sabor), «restaurant supply» y la firma «restaurant
 # consultant» quedan permitidos.
