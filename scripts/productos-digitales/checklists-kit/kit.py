@@ -5,7 +5,8 @@ Sesión Claude Code, 18-oct-2026 (Bar Checklists Kit Pro, el primer hermano; SPE
 alta: VERTICALES (bar = Bar Checklists Kit Pro · cafe = Coffee Shop Checklists Kit Pro · catering = Catering
 Checklists Kit Pro, con el 09 como libro propio: cobros por evento, no caja · pizza = Pizza Shop Checklists Kit Pro ·
 burger = Burger Joint Checklists Kit Pro · ghost = Ghost Kitchen Checklists Kit Pro · icecream = Ice Cream Shop
-Checklists Kit Pro, molde híbrido: el 01-07 y los bonus en el molde ligero del catering, el 08 y el 09 en el del base).
+Checklists Kit Pro, molde híbrido: el 01-07 y los bonus en el molde ligero del catering, el 08 y el 09 en el del base ·
+chocolate = Chocolate Shop Checklists Kit Pro · pastry = Pastry Shop Checklists Kit Pro, con 4 libros propios del 10 al 13).
 
     python3 extraer_textos.py --kit bar          # o CHECKLISTS_KIT=bar python3 extraer_textos.py
     python3 extraer_textos.py --kit cafe
@@ -14,6 +15,8 @@ Checklists Kit Pro, molde híbrido: el 01-07 y los bonus en el molde ligero del 
     python3 extraer_textos.py --kit burger
     python3 extraer_textos.py --kit ghost
     python3 extraer_textos.py --kit icecream
+    python3 extraer_textos.py --kit chocolate
+    python3 extraer_textos.py --kit pastry
 
 Sin --kit (ni la variable) todo es el kit base de siempre, byte a byte: `mapas.py`, origen `dl/kit-tareas` y los
 datos junto a los scripts (censo_es.json, textos_es.json, textos_en/). Con --kit <v>:
@@ -45,7 +48,7 @@ def _de_argv(argv):
     return None
 
 
-VERTICALES = ('bar', 'cafe', 'catering', 'pizza', 'burger', 'ghost', 'icecream')     # <v>/mapas_<v>.py, SPEC en <v>/SPEC.md
+VERTICALES = ('bar', 'cafe', 'catering', 'pizza', 'burger', 'ghost', 'icecream', 'chocolate', 'pastry')     # <v>/mapas_<v>.py, SPEC en <v>/SPEC.md
 NOMBRE = _de_argv(sys.argv) or os.environ.get('CHECKLISTS_KIT') or 'base'
 os.environ['CHECKLISTS_KIT'] = NOMBRE
 BASE = NOMBRE == 'base'
