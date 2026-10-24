@@ -74,7 +74,7 @@
   "c0116": "Add liquids (milk, cream) to the pasteurizer",
   "c0118": "Add the dry blend to the liquids with the mixer / high-shear blender",
   "c0119": "Pasteurizing and cooling",
-  "c0120": "Pasteurize at 185 °F for 15 seconds (high-temp); your pasteurizer's validated program and your state license minimum rule — log reading: ____ °F",
+  "c0120": "Pasteurize at 185 °F for 15 seconds (high-temp); your pasteurizer's validated program and your state license minimums take precedence — log reading: ____ °F",
   "c0121": "Add fats and emulsifiers when the mix cools to 104–122 °F — log reading: ____ °F",
   "c0122": "Cool the mix fast to 41 °F or below: 135 → 70 °F within 2 h, then to 41 °F within 4 h (pasteurizer cooling cycle or blast freezer) — log reading: ____ °F",
   "c0123": "Verify the final mix temperature (41 °F or below, ideally 36–39 °F) — log reading: ____ °F",
