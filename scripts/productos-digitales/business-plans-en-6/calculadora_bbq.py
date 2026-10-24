@@ -1010,6 +1010,8 @@ def _escenario(destino, cambios, err, nombre):
     """Hoja principal con valores cambiados vía pycel (compilador nuevo: sin estado de otros escenarios)."""
     from pycel import ExcelCompiler
     xl = ExcelCompiler(filename=destino)
+    for k in S:                                                     # pycel: la celda tiene que estar en el grafo
+        xl.evaluate("'%s'!B%d" % (H1, S[k]))
     e = OrderedDict(_DEF)
     for k, v in cambios.items():
         xl.set_value("'%s'!B%d" % (H1, K[k]), v)
