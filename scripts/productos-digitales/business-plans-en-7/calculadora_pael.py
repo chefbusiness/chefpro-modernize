@@ -75,13 +75,15 @@ FULL = 'Full-service live paella (paella chef & staff; weddings & corporate)'
 # paquete → (invitados por server o buffet attendant (0 = ninguno), nota). Servers: «roughly one team member per 25
 # guests» (miamigrillcatering.com, leída) en full-service; el resto, Kit estimate
 PAQUETES = OrderedDict([
-    (DROP, (0, 'Cooked at the commissary in the paella pans and delivered hot in insulated carriers, no servers on site. '
+    (DROP, (0, 'Cooked at the commissary, portioned into foil or hotel pans and delivered hot in insulated carriers, no '
+               'servers on site. '
                'Keep it at 135 °F (57 °C) or above, or label the time it left hot holding and discard it 4 hours later '
                '(time as a public health control, only if your county accepts it).')),
     (PARTY, (0, 'Cooked live on site by the paella chef, with salad and bread. Guests serve themselves or the paella chef '
                 'serves from the pan: no servers by default.')),
-    (FULL, (25, 'Paella chef, helper and servers for weddings and corporate events: about one team member per 25 guests '
-                '(miamigrillcatering.com).')),
+    (FULL, (25, 'Paella chefs and a helper as suggested, plus about one server per 25 guests for weddings and corporate '
+                'events with a staffed buffet (Kit estimate; miamigrillcatering.com counts about one team member per 25 '
+                'guests in total, the lean end).')),
 ])
 NOMBRES_PAQ = list(PAQUETES)
 
@@ -98,7 +100,8 @@ TAMANOS = [
     ('28 in (70 cm)', 70, 21, 2, 1.8, ''),
     ('32 in (80 cm)', 80, 30, 3, 2.4, 'Research figure (Kit estimate): about 30 guests.'),
     ('36 in (90 cm)', 90, 40, 3, 3.0, 'Research figure (Kit estimate): about 40 guests; a retailer says 40 to 50.'),
-    ('40 in (100 cm)', 100, 50, 3, 3.7, 'Needs an XL 3-ring burner and wind guards; check that your burner fits it.'),
+    ('40 in (100 cm)', 100, 50, 3, 3.7, 'Needs a burner rated for 40 in (100 cm) pans, larger than the XL 3-ring for pans '
+                                         'up to 36 in, plus wind guards.'),
 ]
 NOMBRES_TAM = [t[0] for t in TAMANOS]
 Y_STOCK = 5                                                   # fila del parámetro «qt de caldo por lb de arroz»
@@ -252,8 +255,10 @@ SALIDAS = [
     ('stock_gal', 'Stock (gallons)', DEC1, 'caldo', 'Uncooked rice × the stock ratio on the "%s" tab (1 gallon = 3.8 '
                                                    'liters).' % H2),
     ('propane_lb', 'Propane for the cook (lb)', DEC1, 'propano', 'Pans × propane per cook for this size.'),
-    ('cylinders', '20-lb propane cylinders to bring (plus one spare)', ENTERO, 'roundup({propane_lb}/20)+1',
-     'Never run a pan on a nearly empty cylinder.'),
+    ('cylinders', '20-lb propane cylinders to bring (one per burner, plus one spare)', ENTERO,
+     'max({pans},roundup({propane_lb}/20))+1',
+     'One cylinder per burner that runs at the same time: a 20-lb cylinder cannot feed several 3-ring burners at full '
+     'flame. Never start a pan on a nearly empty cylinder.'),
     ('missing', 'Ingredients of this style with no price', ENTERO, 'est:O', 'From the "%s" tab.' % H2),
     ('food_status', 'Ingredient prices', '@', 'estado',
      'While any price is missing, the food cost uses the style estimate. Type your prices on the "%s" tab.' % H2),
@@ -289,7 +294,10 @@ SALIDAS = [
     ('chefs_sug', 'Suggested paella chefs (Kit estimate: one per 3 pans)', ENTERO, 'roundup({pans}/3)', ''),
     ('helper_sug', 'Suggested helper (Kit estimate: from 4 pans or 80 guests)', ENTERO,
      'if(or({pans}>=4,{guests}>=80),1,0)', ''),
-    ('srv_sug', 'Suggested servers and attendants for this package', ENTERO, 'paq:2', 'From the package table below.'),
+    ('srv_sug', 'Suggested servers and attendants for this package', ENTERO, 'paq:2',
+     'Paella chefs and helper as suggested above, plus about one server per 25 guests on top of them for a buffet with '
+     'attendants. Miami Grill Catering\'s rule of thumb, one team member per 25 guests in total, is the lean end '
+     '(miamigrillcatering.com).'),
     ('tiers_check', 'Cancellation tiers check', '@', 'tramos', 'Tier days must go down: tier 1 > tier 2 > tier 3.'),
     ('ret1', 'Cancellation in tier 1: amount you keep', MONEDA, '{total}*{r1}', ''),
     ('ret2', 'Cancellation in tier 2: amount you keep', MONEDA, '{total}*{r2}', ''),
@@ -326,16 +334,17 @@ EJEMPLOS = OrderedDict([
         event_hours=7.0, prep_hours=6.0, disposables=0.0, rentals=600.0, miles=60, margin=0.42, sc=0.10)),
 ])
 EJ_NOTAS = OrderedDict([
-    ('Corporate drop-off, 30 guests', 'Chicken & seafood paella for an office, cooked at the commissary and delivered hot '
-                                      'in its pan (20-guest minimum). It lands within 10% of the $22 drop-off line of the '
+    ('Corporate drop-off, 30 guests', 'Chicken & seafood paella for an office, cooked at the commissary, portioned into '
+                                      'foil or hotel pans and delivered hot in insulated carriers (20-guest minimum). It lands within 10% of the $22 drop-off line of the '
                                       'example mix in the Word plan (section 3).'),
     ('Backyard paella party, 45 guests', 'Seafood paella cooked live in two 36-in pans in a backyard, with salad and bread '
                                          '(20-guest minimum). Within 10% of the $34 backyard party line of the example mix '
                                          'in the Word plan, inside the $12-31 per person of live paella plus the paella '
                                          'chef that other operators charge separately (cafesevilla.com).'),
-    ('Wedding, 110 guests, tapas hour + full staff', 'Wedding with a tapas hour, two paella chefs, a helper and five '
-                                                     'servers, dishes and flatware rented and passed through, and a 10% '
-                                                     'service charge; 50-guest minimum. The price per guest lands within '
+    ('Wedding, 110 guests, tapas hour + full staff', 'Wedding with a tapas hour, two paella chefs (one runs the tapas '
+                                                     'hour while the other starts the pans), a helper and five servers, '
+                                                     'dishes and flatware rented (your cost, with your margin on top) and '
+                                                     'a 10% service charge; 50-guest minimum. The price per guest lands within '
                                                      '10% of the $52 wedding line of the example mix in the Word plan, '
                                                      'inside the $44-65 of a full Spanish menu with staff '
                                                      '(miamigrillcatering.com, zola.com).'),
@@ -403,7 +412,7 @@ def calcular(e, precios=None, rice_price=None):
     r['rice_lb'] = e['guests'] * e['rice_oz'] / 16.0
     r['stock_gal'] = r['rice_lb'] * 1.2 / 4.0
     r['propane_lb'] = r['pans'] * tam[4]
-    r['cylinders'] = _ceil(r['propane_lb'] / 20.0) + 1
+    r['cylinders'] = max(r['pans'], _ceil(r['propane_lb'] / 20.0)) + 1
     x = est[e['style']]
     r['missing'] = x['faltan']
     r['food_status'] = ('Complete: food cost uses your prices' if r['missing'] == 0 else
@@ -460,7 +469,7 @@ def calcular_compra(e, c=None, ref=REF_INVITADOS):
         r['salad'] = g * c['salad_oz'] / 16.0
         r['aioli'] = g * c['aioli_oz'] / 32.0
         r['propane'] = r['pans'] * tam[4]
-        r['cyl'] = _ceil(r['propane'] / 20.0) + 1
+        r['cyl'] = max(r['pans'], _ceil(r['propane'] / 20.0)) + 1
         r['plates'] = _ceil(g * c['plates'])
         r['ice'] = mar * c['ice_ratio']
         r['coolers'] = _ceil((mar + r['ice']) / c['cooler_lb']) if c['cooler_lb'] > 0 else 0
@@ -654,8 +663,9 @@ def hoja_yield(wb):
     _f(ws, 'A4', 'SIZING INPUT', b=True, fill=GRIS)
     _f(ws, 'A%d' % Y_STOCK, 'Stock per lb of uncooked rice (quarts)')
     _f(ws, 'B%d' % Y_STOCK, 1.2, fmt=DEC2, fill=VERDE, locked=False)
-    _f(ws, 'C%d' % Y_STOCK, 'Kit estimate: 1.2 quarts per lb (2.5 liters per kg); bomba rice absorbs up to 3 times its '
-                            'volume. The uncooked rice per guest comes from the "%s" tab.' % H1)
+    _f(ws, 'C%d' % Y_STOCK, 'Kit estimate: 1.2 quarts per lb (2.5 liters per kg) for most paella rice; bomba absorbs '
+                            'more, so plan up to 1.45 quarts per lb (3 liters per kg), a little more when you cook outdoors '
+                            'in the wind. The uncooked rice per guest comes from the "%s" tab.' % H1)
     cab = ('Pan size (in, cm)', 'Diameter (cm)', 'Guests per pan (Kit estimate)', 'Burner rings', 'Uncooked rice per pan '
            '(lb)', '(kg)', 'Stock per pan (gallons)', '(liters)', 'Propane per cook (lb)', '(kg)', 'Notes')
     fila = Y_A0 - 1
@@ -835,8 +845,9 @@ def hoja_compra(wb):
     linea('salad', 'Salad greens (lb)', lambda c: '=%s*%s/16' % (gr(c), R['salad_oz']), DEC1, '')
     linea('aioli', 'Garlic aioli (quarts)', lambda c: '=%s*%s/32' % (gr(c), R['aioli_oz']), DEC1, 'Egg allergen (1 quart = 0.95 liters).')
     linea('propane', 'Propane (lb)', lambda c: '=%s$%d*%s' % (c, filas['pans'], prop_pan), DEC1, '')
-    linea('cyl', '20-lb propane cylinders (plus one spare)', lambda c: '=ROUNDUP(%s$%d/20,0)+1' % (c, filas['propane']),
-          ENTERO, 'They travel upright and secured in the van.')
+    linea('cyl', '20-lb propane cylinders (one per burner, plus one spare)',
+          lambda c: '=MAX(%s$%d,ROUNDUP(%s$%d/20,0))+1' % (c, filas['pans'], c, filas['propane']), ENTERO,
+          'One per burner that runs at the same time, plus a spare. They travel upright and secured in the van.')
     linea('plates', 'Plates and forks', lambda c: '=ROUNDUP(%s*%s,0)' % (gr(c), R['plates']), ENTERO, '')
     linea('ice', 'Ice for the raw seafood (lb)', lambda c: '=%s$%d*%s' % (c, filas['seafood'], R['ice_ratio']), DEC1, '')
     linea('coolers', 'Coolers for the raw seafood', lambda c: '=IF(%s>0,ROUNDUP((%s$%d+%s$%d)/%s,0),0)' % (

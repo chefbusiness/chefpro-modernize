@@ -10,6 +10,7 @@ de cada celda es el del BBQ cerrado (y, si no hay, el del Catering publicado): m
 `../business-plans-en-6/datos_bbq.py` (D119). Sesión Claude Code, 24-oct-2026 (F2, paso 1).
 """
 import json
+import math
 import os
 import sys
 from collections import OrderedDict
@@ -359,8 +360,10 @@ _FUERA = ('ventas_dia', 'inv_vehiculo', 'inv_adaptacion', 'inv_equipo_cocina', '
 TOKENS_PROPIOS = OrderedDict([
     # alias legibles del motor (las mismas celdas que los tokens heredados)
     ('eventos_a1', ('int', ('fila', _S, 'Clientes/día (media del año 1)', 'B'), 'events per year, year 1')),
-    ('eventos_a2', ('int', ('fila', _P, 'Clientes/día (media)', 'C'), 'events per year, year 2')),
-    ('eventos_a3', ('int', ('fila', _P, 'Clientes/día (media)', 'D'), 'events per year, year 3')),
+    # M3 de REVISION-FINAL: redondeo al entero más cercano, como el libro (148.5 → 149); el «int» común usa el redondeo
+    # del banquero de Python y escribía 148
+    ('eventos_a2', ('int', ('deriv', lambda c: math.floor(c['clientes_a2'] + 0.5)), 'events per year, year 2 (rounded)')),
+    ('eventos_a3', ('int', ('deriv', lambda c: math.floor(c['clientes_a3'] + 0.5)), 'events per year, year 3 (rounded)')),
     ('precio_invitado', ('usd2', ('fila', _S, 'Ticket medio SIN IVA (€)', 'B'),
                          'average price per guest of the event mix, excl. sales tax, paella chef, staff and service '
                          'included')),
