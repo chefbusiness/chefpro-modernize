@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-24T07:27:37Z",
+  "generado": "2026-10-24T08:20:20Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-heladeria",
-  "commit": "41fdfb9f",
+  "commit": "02e998d1",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -13,7 +13,7 @@
    "02": {
     "es": "02-partidas-produccion.xlsx",
     "en": "02-ice-cream-production-checklists.xlsx",
-    "sha256": "c31c010ba850ab5116505e36d752e996aab83a884936f2da75e33ba7a54a2f7c"
+    "sha256": "a506354f756ae68ef87038a69c39c7ca5356baaec7fa2f98ac9e157964a3337f"
    },
    "03": {
     "es": "03-tareas-manager.xlsx",
@@ -28,7 +28,7 @@
    "05": {
     "es": "05-tareas-semanales-mensuales.xlsx",
     "en": "05-ice-cream-shop-cleaning-checklist-maintenance.xlsx",
-    "sha256": "7f88e54700f668ed21cbb82122607b4f8bd3d32ccde79139dc4e81d5421ebabe"
+    "sha256": "bd5aee868e12925ec44f75b4f65c2deb70113118157d3d2cffa2658c437be2f9"
    },
    "06": {
     "es": "06-eventos-temporada.xlsx",
@@ -64,7 +64,7 @@
   "n_cadenas": 705,
   "n_traducir": 490,
   "n_adaptar": 103,
-  "n_palabras_subagentes": 4753,
+  "n_palabras_subagentes": 4778,
   "n_apariciones": 1670,
   "grupos": [
    {
@@ -78,7 +78,7 @@
     ],
     "n_cadenas": 238,
     "n_adaptar": 50,
-    "n_palabras": 2215
+    "n_palabras": 2223
    },
    {
     "id": "G2",
@@ -94,7 +94,7 @@
     ],
     "n_cadenas": 252,
     "n_adaptar": 53,
-    "n_palabras": 2538
+    "n_palabras": 2555
    },
    {
     "id": "GM",
@@ -481,7 +481,7 @@
    "n_apariciones": 1,
    "palabras": 41,
    "con_cifra": true,
-   "adaptar": "Temperaturas US del kit: conservación a 0 °F o menos (ES −18 °C); servicio en la vitrina (dipping cabinet) a 6–10 °F (ES −14 a −12 °C; fabricante); maduración de la mezcla (aging) a 36–39 °F y nunca por encima de 41 °F (ES 2-4 °C; FDA Food Code 3-501.16). Las vitrinas NO se apagan por la noche: pasan a conservación",
+   "adaptar": "Temperaturas US del kit: conservación a 0 °F o menos (ES −18 °C); servicio en la vitrina (dipping cabinet) a 6–10 °F (ES −14 a −12 °C; fabricante); maduración de la mezcla (aging) a 36–39 °F y nunca por encima de 41 °F (ES 2-4 °C; FDA Food Code 3-501.16). Las vitrinas NO se apagan por la noche: se quedan encendidas, en su modo nocturno o de conservación solo si el modelo lo trae (fabricante)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "D2: la EN no lleva el sufijo «— Heladería Artesanal»; heladería → ice cream shop (o scoop shop / ice cream parlor; gelato shop solo si el texto habla de gelato)",
@@ -852,7 +852,7 @@
    "n_apariciones": 1,
    "palabras": 32,
    "con_cifra": true,
-   "adaptar": "Vitrinas → dipping cabinets: de modo conservación (0 °F) a modo servicio (6–10 °F; fabricante); coletilla «— log reading: ____ °F»",
+   "adaptar": "Vitrinas → dipping cabinets: lo PRIMERO al llegar; si el modelo tiene modo nocturno o de conservación, volver a modo servicio (6–10 °F; fabricante); coletilla «— log reading: ____ °F»",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
@@ -904,7 +904,7 @@
    "n_apariciones": 1,
    "palabras": 28,
    "con_cifra": true,
-   "adaptar": "Cámara de maduración → aging cooler (o tanque de maduración) a 36–39 °F; por encima de 41 °F la mezcla pasteurizada deja de estar segura (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+   "adaptar": "Cámara de maduración → aging cooler (o tanque de maduración) a 36–39 °F; por encima de 41 °F el responsable valora la mezcla (cuánto y cuánto tiempo) antes de usarla (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: cámara → walk-in cooler / walk-in freezer",
@@ -2119,7 +2119,7 @@
    "n_apariciones": 1,
    "palabras": 26,
    "con_cifra": true,
-   "adaptar": "Modo conservación a 0 °F (ES −18 °C): con producto dentro no se apagan",
+   "adaptar": "Las vitrinas se quedan ENCENDIDAS (con producto dentro no se apagan); modo nocturno o de conservación solo si el modelo lo trae, según el fabricante",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
@@ -2538,7 +2538,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
-   "adaptar": "Añade al final una nota corta del kit: pasteurizar la mezcla propia suele exigir una licencia ESTATAL de fabricante de frozen dessert o de lácteos (Vermont, Georgia, Arizona…) y algunos estados la piden incluso para mantecar una mezcla ya pasteurizada o tener una máquina de soft serve (Vermont, Massachusetts); con mezcla comprada ya pasteurizada suele bastar el health permit: compruébalo con el departamento de agricultura de tu estado",
+   "adaptar": "Añade al final una nota corta del kit: pasteurizar la mezcla propia suele exigir una licencia ESTATAL de fabricante de frozen dessert o de lácteos (Vermont, Georgia; Arizona exime la venta en el propio local con un plan aprobado) y algunos estados la piden incluso para mantecar una mezcla ya pasteurizada o tener una máquina de soft serve (Vermont, Massachusetts); con mezcla comprada ya pasteurizada suele bastar el health permit: compruébalo con el departamento de agricultura o de salud de tu estado",
    "pistas": [
     "maduración de la mezcla → aging (age the mix)"
    ],
@@ -2857,18 +2857,18 @@
   },
   {
    "id": "c0120",
-   "es": "Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)",
+   "es": "Añadir grasas y emulsionantes al alcanzar 40-50 °C en ascenso",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 9,
+   "palabras": 11,
    "con_cifra": true,
-   "adaptar": "Cifra del kit en °F: 185 °F durante 15 s (ES 85 °C 15 s, alta pasteurización); añade, breve, que mandan el programa validado de tu pasteurizador y el mínimo de tu licencia estatal (la nota de la licencia va en «Instructions» B6)",
+   "adaptar": "40-50 °C en ascenso → 104–122 °F mientras la mezcla SE CALIENTA, antes de la pasteurización (nata, mantequilla, yemas y estabilizante): lo que entra después, entra crudo",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "sha1": "de0f990b5575",
+   "sha1": "7a80c92db8a9",
    "donde": [
     {
      "f": "02",
@@ -2881,18 +2881,18 @@
   },
   {
    "id": "c0121",
-   "es": "Añadir grasas y emulsionantes al alcanzar 40-50 °C en descenso",
+   "es": "Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 11,
+   "palabras": 9,
    "con_cifra": true,
-   "adaptar": "40-50 °C → 104–122 °F",
+   "adaptar": "Cifra del kit en °F: 185 °F durante 15 s (ES 85 °C 15 s, alta pasteurización), como objetivo del kit; añade los mínimos estatales habituales (batch 155 °F 30 min o HTST 175 °F 25 s), que mandan las normas de tu estado y el programa validado de tu pasteurizador, y el registro gráfico si la licencia lo pide (la nota de la licencia va en «Instructions» B6)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "sha1": "d30a4cea2967",
+   "sha1": "de0f990b5575",
    "donde": [
     {
      "f": "02",
@@ -2912,7 +2912,7 @@
    "n_apariciones": 1,
    "palabras": 11,
    "con_cifra": true,
-   "adaptar": "La mezcla pasteurizada es TCS: enfriarla de 135 °F a 70 °F en 2 h y a 41 °F o menos en 4 h más (FDA Food Code 3-501.14); el ciclo de enfriamiento del pasteurizador suele hacerlo mucho antes (fabricante)",
+   "adaptar": "La mezcla pasteurizada es TCS: enfriarla de 135 °F a 70 °F en 2 h y a 41 °F o menos en 4 h más (FDA Food Code 3-501.14); el ciclo de enfriamiento del pasteurizador suele hacerlo mucho antes (fabricante). Abatidor → blast chiller o baño de hielo (la mezcla líquida no va al blast freezer); más rápido si tu licencia lo pide",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "abatidor → blast freezer / hardening cabinet; abatir → harden"
@@ -3438,18 +3438,18 @@
   },
   {
    "id": "c0146",
-   "es": "Limpiar mantecadora: desmontar cuchillas, junta, cilindro",
+   "es": "Limpiar mantecadora: desmontar cuchillas, batidor y junta; el cilindro se limpia en su sitio",
    "grupo": "G1",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 6,
+   "palabras": 14,
    "con_cifra": false,
-   "adaptar": "Desmontar y limpiar la mantecadora como diga su fabricante (cuchillas / dasher, junta y cilindro) y luego sanitizarla",
+   "adaptar": "Desmontar y limpiar la mantecadora como diga su fabricante (dasher, cuchillas rascadoras y junta de la puerta; el cilindro es fijo: se limpia en su sitio) y luego sanitizarla",
    "pistas": [
     "mantecadora → batch freezer; mantecar → batch-freeze / churn"
    ],
-   "sha1": "ca6e7575a1e5",
+   "sha1": "1b44ee25bc71",
    "donde": [
     {
      "f": "02",
@@ -6645,17 +6645,17 @@
   },
   {
    "id": "c0317",
-   "es": "Desmontar y limpiar piezas de mantecadora (cuchillas, junta, cilindro)",
+   "es": "Desmontar y limpiar piezas de mantecadora (cuchillas, batidor y junta; el cilindro, en su sitio)",
    "grupo": "G2",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 9,
+   "palabras": 15,
    "con_cifra": false,
    "pistas": [
     "mantecadora → batch freezer; mantecar → batch-freeze / churn"
    ],
-   "sha1": "5f8f4900c1da",
+   "sha1": "57ba5cd463f0",
    "donde": [
     {
      "f": "05",
@@ -6887,18 +6887,18 @@
   },
   {
    "id": "c0328",
-   "es": "Test de mantecadora en vacío: verificar temperatura y ciclo",
+   "es": "Revisar la mantecadora según el fabricante: cuchillas, batidor y junta; temperatura de extracción en la primera tanda (nunca en vacío)",
    "grupo": "G2",
    "tratamiento": "traducir",
    "n_ficheros": 1,
    "n_apariciones": 1,
-   "palabras": 9,
+   "palabras": 20,
    "con_cifra": false,
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "mantecadora → batch freezer; mantecar → batch-freeze / churn"
    ],
-   "sha1": "d04a899cf0f7",
+   "sha1": "a0b8b848bbe3",
    "donde": [
     {
      "f": "05",
@@ -7694,7 +7694,7 @@
    "n_apariciones": 1,
    "palabras": 9,
    "con_cifra": true,
-   "adaptar": "Reforzar el equipo: contratar 2 semanas antes; añade: en verano muchos son menores: con 14-15 años, horario limitado por la FLSA (29 CFR 570.35: fuera del horario escolar, hasta las 7 PM y hasta las 9 PM del 1 de junio al Labor Day, con máximos por día y por semana) y solo los equipos que permite 29 CFR 570.34; el permiso de trabajo (work permit), según el estado",
+   "adaptar": "Reforzar el equipo: contratar 2 semanas antes; añade: en verano muchos son menores: con 14-15 años, horario limitado por la FLSA (29 CFR 570.35: fuera del horario escolar, hasta las 7 PM y hasta las 9 PM del 1 de junio al Labor Day, con máximos por día y por semana) y solo los equipos que permite 29 CFR 570.34; nada de trabajar dentro de los congeladores (solo entrar un momento a coger algo) ni de manejar o limpiar la mantecadora, el pasteurizador u otras máquinas eléctricas (29 CFR 570.33); el permiso de trabajo (work permit), según el estado",
    "sha1": "784c37c6c0dd",
    "donde": [
     {
@@ -7896,7 +7896,7 @@
    "n_apariciones": 1,
    "palabras": 11,
    "con_cifra": true,
-   "adaptar": "Envases para llevar US: pints y quarts (al peso, solo con una báscula legal para el comercio, legal-for-trade, que revisa la oficina estatal de pesas y medidas); los pints que se envasan antes para el congelador de autoservicio llevan etiqueta con nombre, ingredientes y alérgenos principales (FDA Food Code 3-602.11); los que se llenan al momento para el cliente, no",
+   "adaptar": "Envases para llevar US: pints y quarts (al peso, solo con una báscula legal para el comercio, legal-for-trade, que revisa la oficina estatal de pesas y medidas); los pints que se envasan antes para el congelador de autoservicio llevan etiqueta con nombre, ingredientes, alérgenos principales, contenido neto y nombre y lugar del negocio (FDA Food Code 3-602.11); los que se llenan al momento para el cliente, no",
    "pistas": [
     "tarrina → cup; tarrina para llevar → pint / quart",
     "kg → lb; tarrinas de 0,5 L y 1 L → pints y quarts"
@@ -16302,6 +16302,10 @@
    "es": "Abatidor",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Hardening",
    "n_ficheros": 2,
    "n_apariciones": 3,
@@ -16322,8 +16326,8 @@
      "h": "Pasteurización",
      "c": "C15",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "02",
@@ -19100,7 +19104,7 @@
    "es": "Trimestral — control por empresa externa",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Contracted services — quarterly & semiannual",
+   "en_por_celda": "Contracted services — monthly to annual",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -19230,7 +19234,7 @@
    "es": "Limpieza de la campana y de los conductos de extracción del obrador por empresa autorizada, con certificado",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Exhaust hood and ducts: if you cook with grease (waffle irons, crepes) under a hood, cleaning by a certified contractor per NFPA 96; a steam-only hood over the pasteurizer, as its manufacturer says",
+   "en_por_celda": "Exhaust hood and ducts: if you cook with grease (waffle irons, crepes) under a hood, cleaning by a certified contractor at the NFPA 96 frequency for your cooking volume (low volume, e.g. waffle cones or a seasonal shop: annually); a steam-only hood over the pasteurizer, as its manufacturer says",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 17,
@@ -19462,7 +19466,7 @@
    "es": "Prevención de legionela si tienes agua caliente sanitaria de riesgo o nebulizadores de terraza: plan, tratamiento y registro",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Backflow preventers tested by a certified tester where your water utility requires it (most do, yearly): dipper wells, ice machine and espresso machine all hook up to the water supply",
+   "en_por_celda": "Backflow preventers tested by a certified tester where your water utility requires it (most do, yearly): dipper wells, the ice machine and any espresso machine hook up to the water supply",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 18,
@@ -19506,7 +19510,7 @@
    "es": "Comprobar que el registro sanitario del establecimiento sigue vigente y que los datos que constan son los actuales",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Check your health permit is current and posted — and, if you make your own ice cream or pasteurize your own mix, your state frozen dessert / dairy license too",
+   "en_por_celda": "Check your health permit is current and posted — and, if you pasteurize your own mix (or your state also licenses batch-freezing or soft serve), your state frozen dessert / dairy license too",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 18,
@@ -20652,7 +20656,7 @@
    "es": "Vitrinas de helado en modo servicio y mantecadoras encendidas (con género dentro no se apagan por la noche; detalle en 01-apertura-cierre)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Dipping cabinets switched to service mode — they stay on overnight with product inside (details in file 01, Opening tab)",
+   "en_por_celda": "Dipping cabinets back in service mode — done FIRST THING on arrival (file 01, Opening tab), so the pans soften to scooping temp before the door opens; they stay on overnight with product inside",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 23,
@@ -20872,7 +20876,7 @@
    "es": "Cerrar persianas y puertas",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Put the night covers on the dipping cabinets: they stay ON, in storage mode",
+   "en_por_celda": "Put the night covers or lids on the dipping cabinets: they stay ON (night/storage setting only if your model has one, per the manufacturer)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 4,
@@ -20894,7 +20898,7 @@
    "es": "Apagar luces (dejar mínimas de seguridad)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Log the closing temps: dipping cabinets already in storage mode (0 °F) and freezers (0 °F or below) — log reading: ____ °F",
+   "en_por_celda": "Log the closing temps: dipping cabinets (6–10 °F, or their night setting) and freezers (0 °F or below) — log reading: ____ °F",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 6,
@@ -20960,7 +20964,7 @@
    "es": "Comprobar que ventanas están cerradas",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Final safety check: gas off, water off, small appliances unplugged — never the freezers or dipping cabinets",
+   "en_por_celda": "Final safety check: gas appliances off (waffle irons, griddles) if any, dipper well tap off, small appliances unplugged — never the freezers or dipping cabinets",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,

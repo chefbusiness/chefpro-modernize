@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-24T07:27:37Z",
+  "generado": "2026-10-24T08:20:20Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-heladeria",
-  "commit": "41fdfb9f",
+  "commit": "02e998d1",
   "nota": "Censo del Kit de Tareas Recurrentes v2.0 PUBLICADO (11 xlsx). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. patrones_formula = fórmulas con las filas normalizadas a {r} (mapas.patron); «cifras» = el patrón compara con un número. tareas = filas con número en A y texto en B. dependencias = lo que depende de España (F1-inventario §1)."
  },
  "libros": {
@@ -850,7 +850,7 @@
   },
   "02-partidas-produccion.xlsx": {
    "corto": "02",
-   "sha256": "c31c010ba850ab5116505e36d752e996aab83a884936f2da75e33ba7a54a2f7c",
+   "sha256": "a506354f756ae68ef87038a69c39c7ca5356baaec7fa2f98ac9e157964a3337f",
    "nombre_en": "02-ice-cream-production-checklists.xlsx",
    "titulo_en": "Ice Cream & Gelato Production Checklists: Pasteurizing, Aging & Batch Freezing",
    "hojas": [
@@ -1200,9 +1200,9 @@
       "E12": "✓",
       "F12": "Hora",
       "G12": "Notas",
-      "B13": "Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)",
+      "B13": "Añadir grasas y emulsionantes al alcanzar 40-50 °C en ascenso",
       "C13": "Pasteurizador",
-      "B14": "Añadir grasas y emulsionantes al alcanzar 40-50 °C en descenso",
+      "B14": "Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)",
       "C14": "Pasteurizador",
       "B15": "Enfriar rápidamente a 4 °C en abatidor o ciclo de enfriamiento",
       "C15": "Abatidor",
@@ -1522,7 +1522,7 @@
       "C22": "Cámara",
       "B23": "Registrar producción del día: sabor, kg, lote, destino",
       "C23": "Admin",
-      "B24": "Limpiar mantecadora: desmontar cuchillas, junta, cilindro",
+      "B24": "Limpiar mantecadora: desmontar cuchillas, batidor y junta; el cilindro se limpia en su sitio",
       "C24": "Limpieza",
       "B25": "Desinfectar superficies de obrador y utensilios utilizados",
       "C25": "Limpieza",
@@ -3575,7 +3575,7 @@
   },
   "05-tareas-semanales-mensuales.xlsx": {
    "corto": "05",
-   "sha256": "7f88e54700f668ed21cbb82122607b4f8bd3d32ccde79139dc4e81d5421ebabe",
+   "sha256": "bd5aee868e12925ec44f75b4f65c2deb70113118157d3d2cffa2658c437be2f9",
    "nombre_en": "05-ice-cream-shop-cleaning-checklist-maintenance.xlsx",
    "titulo_en": "Ice Cream Shop Cleaning Checklist & Maintenance Schedule",
    "hojas": [
@@ -3916,7 +3916,7 @@
       "E12": "✓",
       "F12": "Hora",
       "G12": "Notas",
-      "B13": "Desmontar y limpiar piezas de mantecadora (cuchillas, junta, cilindro)",
+      "B13": "Desmontar y limpiar piezas de mantecadora (cuchillas, batidor y junta; el cilindro, en su sitio)",
       "C13": "Obrador",
       "B14": "Limpiar filtros de condensadores de equipos de frío",
       "C14": "Obrador",
@@ -4147,7 +4147,7 @@
       "E5": "✓",
       "F5": "Hora",
       "G5": "Notas",
-      "B6": "Test de mantecadora en vacío: verificar temperatura y ciclo",
+      "B6": "Revisar la mantecadora según el fabricante: cuchillas, batidor y junta; temperatura de extracción en la primera tanda (nunca en vacío)",
       "C6": "Obrador",
       "B7": "Verificar niveles de refrigerante en equipos de frío",
       "C7": "Obrador",
@@ -11264,7 +11264,7 @@
     "01:Apertura!B18",
     "01:Cierre!B7",
     "02:Instrucciones!B16",
-    "02:Pasteurización!B13",
+    "02:Pasteurización!B14",
     "02:Pasteurización!B22",
     "02:Mantecación!B8",
     "02:Mantecación!B9",
@@ -11297,8 +11297,8 @@
     "02:Pasteurización!C8",
     "02:Pasteurización!C9",
     "02:Pasteurización!A11",
-    "02:Pasteurización!B13",
     "02:Pasteurización!C13",
+    "02:Pasteurización!B14",
     "02:Pasteurización!C14",
     "02:Pasteurización!B23",
     "02:Mantecación!B32",

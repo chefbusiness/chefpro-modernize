@@ -285,10 +285,10 @@ E12    : ✓
 F12    : Hora
 G12    : Notas
 A13    : 1
-B13    : Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)
+B13    : Añadir grasas y emulsionantes al alcanzar 40-50 °C en ascenso
 C13    : Pasteurizador
 A14    : 2
-B14    : Añadir grasas y emulsionantes al alcanzar 40-50 °C en descenso
+B14    : Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)
 C14    : Pasteurizador
 A15    : 3
 B15    : Enfriar rápidamente a 4 °C en abatidor o ciclo de enfriamiento
@@ -393,7 +393,7 @@ A23    : 3
 B23    : Registrar producción del día: sabor, kg, lote, destino
 C23    : Admin
 A24    : 4
-B24    : Limpiar mantecadora: desmontar cuchillas, junta, cilindro
+B24    : Limpiar mantecadora: desmontar cuchillas, batidor y junta; el cilindro se limpia en su sitio
 C24    : Limpieza
 A25    : 5
 B25    : Desinfectar superficies de obrador y utensilios utilizados
@@ -978,7 +978,7 @@ E12    : ✓
 F12    : Hora
 G12    : Notas
 A13    : 1
-B13    : Desmontar y limpiar piezas de mantecadora (cuchillas, junta, cilindro)
+B13    : Desmontar y limpiar piezas de mantecadora (cuchillas, batidor y junta; el cilindro, en su sitio)
 C13    : Obrador
 A14    : 2
 B14    : Limpiar filtros de condensadores de equipos de frío
@@ -1031,7 +1031,7 @@ E5     : ✓
 F5     : Hora
 G5     : Notas
 A6     : 1
-B6     : Test de mantecadora en vacío: verificar temperatura y ciclo
+B6     : Revisar la mantecadora según el fabricante: cuchillas, batidor y junta; temperatura de extracción en la primera tanda (nunca en vacío)
 C6     : Obrador
 A7     : 2
 B7     : Verificar niveles de refrigerante en equipos de frío

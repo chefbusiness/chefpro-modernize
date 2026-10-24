@@ -3,7 +3,7 @@
   "kit": "icecream",
   "producto": "Ice Cream Shop Checklists Kit Pro",
   "n_pendientes": 403,
-  "n_palabras": 3862,
+  "n_palabras": 3887,
   "motivos": {
    "nueva": 395,
    "contexto": 4,
@@ -144,7 +144,7 @@
     "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
     "maduración de la mezcla → aging (age the mix)"
    ],
-   "adaptar": "Temperaturas US del kit: conservación a 0 °F o menos (ES −18 °C); servicio en la vitrina (dipping cabinet) a 6–10 °F (ES −14 a −12 °C; fabricante); maduración de la mezcla (aging) a 36–39 °F y nunca por encima de 41 °F (ES 2-4 °C; FDA Food Code 3-501.16). Las vitrinas NO se apagan por la noche: pasan a conservación",
+   "adaptar": "Temperaturas US del kit: conservación a 0 °F o menos (ES −18 °C); servicio en la vitrina (dipping cabinet) a 6–10 °F (ES −14 a −12 °C; fabricante); maduración de la mezcla (aging) a 36–39 °F y nunca por encima de 41 °F (ES 2-4 °C; FDA Food Code 3-501.16). Las vitrinas NO se apagan por la noche: se quedan encendidas, en su modo nocturno o de conservación solo si el modelo lo trae (fabricante)",
    "motivo": "nueva"
   },
   {
@@ -279,7 +279,7 @@
     "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass",
     "degustación → samples / tasting"
    ],
-   "adaptar": "Vitrinas → dipping cabinets: de modo conservación (0 °F) a modo servicio (6–10 °F; fabricante); coletilla «— log reading: ____ °F»",
+   "adaptar": "Vitrinas → dipping cabinets: lo PRIMERO al llegar; si el modelo tiene modo nocturno o de conservación, volver a modo servicio (6–10 °F; fabricante); coletilla «— log reading: ____ °F»",
    "motivo": "nueva"
   },
   {
@@ -312,7 +312,7 @@
     "maduración de la mezcla → aging (age the mix)",
     "degustación → samples / tasting"
    ],
-   "adaptar": "Cámara de maduración → aging cooler (o tanque de maduración) a 36–39 °F; por encima de 41 °F la mezcla pasteurizada deja de estar segura (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+   "adaptar": "Cámara de maduración → aging cooler (o tanque de maduración) a 36–39 °F; por encima de 41 °F el responsable valora la mezcla (cuánto y cuánto tiempo) antes de usarla (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
    "motivo": "nueva"
   },
   {
@@ -617,7 +617,7 @@
     "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
     "vitrina de helado → dipping cabinet (gelato case si es de gelato); cristales → glass"
    ],
-   "adaptar": "Modo conservación a 0 °F (ES −18 °C): con producto dentro no se apagan",
+   "adaptar": "Las vitrinas se quedan ENCENDIDAS (con producto dentro no se apagan); modo nocturno o de conservación solo si el modelo lo trae, según el fabricante",
    "motivo": "nueva"
   },
   {
@@ -844,7 +844,7 @@
    "pistas": [
     "maduración de la mezcla → aging (age the mix)"
    ],
-   "adaptar": "Añade al final una nota corta del kit: pasteurizar la mezcla propia suele exigir una licencia ESTATAL de fabricante de frozen dessert o de lácteos (Vermont, Georgia, Arizona…) y algunos estados la piden incluso para mantecar una mezcla ya pasteurizada o tener una máquina de soft serve (Vermont, Massachusetts); con mezcla comprada ya pasteurizada suele bastar el health permit: compruébalo con el departamento de agricultura de tu estado",
+   "adaptar": "Añade al final una nota corta del kit: pasteurizar la mezcla propia suele exigir una licencia ESTATAL de fabricante de frozen dessert o de lácteos (Vermont, Georgia; Arizona exime la venta en el propio local con un plan aprobado) y algunos estados la piden incluso para mantecar una mezcla ya pasteurizada o tener una máquina de soft serve (Vermont, Massachusetts); con mezcla comprada ya pasteurizada suele bastar el health permit: compruébalo con el departamento de agricultura o de salud de tu estado",
    "motivo": "nueva"
   },
   {
@@ -1011,30 +1011,30 @@
   },
   {
    "id": "c0120",
-   "es": "Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)",
+   "es": "Añadir grasas y emulsionantes al alcanzar 40-50 °C en ascenso",
    "grupo": "G1",
-   "palabras": 9,
+   "palabras": 11,
    "donde": [
     "02 · Pasteurización · B13"
    ],
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "Cifra del kit en °F: 185 °F durante 15 s (ES 85 °C 15 s, alta pasteurización); añade, breve, que mandan el programa validado de tu pasteurizador y el mínimo de tu licencia estatal (la nota de la licencia va en «Instructions» B6)",
+   "adaptar": "40-50 °C en ascenso → 104–122 °F mientras la mezcla SE CALIENTA, antes de la pasteurización (nata, mantequilla, yemas y estabilizante): lo que entra después, entra crudo",
    "motivo": "nueva"
   },
   {
    "id": "c0121",
-   "es": "Añadir grasas y emulsionantes al alcanzar 40-50 °C en descenso",
+   "es": "Pasteurizar a 85 °C durante 15 segundos (alta pasteurización)",
    "grupo": "G1",
-   "palabras": 11,
+   "palabras": 9,
    "donde": [
     "02 · Pasteurización · B14"
    ],
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "40-50 °C → 104–122 °F",
+   "adaptar": "Cifra del kit en °F: 185 °F durante 15 s (ES 85 °C 15 s, alta pasteurización), como objetivo del kit; añade los mínimos estatales habituales (batch 155 °F 30 min o HTST 175 °F 25 s), que mandan las normas de tu estado y el programa validado de tu pasteurizador, y el registro gráfico si la licencia lo pide (la nota de la licencia va en «Instructions» B6)",
    "motivo": "nueva"
   },
   {
@@ -1049,7 +1049,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "abatidor → blast freezer / hardening cabinet; abatir → harden"
    ],
-   "adaptar": "La mezcla pasteurizada es TCS: enfriarla de 135 °F a 70 °F en 2 h y a 41 °F o menos en 4 h más (FDA Food Code 3-501.14); el ciclo de enfriamiento del pasteurizador suele hacerlo mucho antes (fabricante)",
+   "adaptar": "La mezcla pasteurizada es TCS: enfriarla de 135 °F a 70 °F en 2 h y a 41 °F o menos en 4 h más (FDA Food Code 3-501.14); el ciclo de enfriamiento del pasteurizador suele hacerlo mucho antes (fabricante). Abatidor → blast chiller o baño de hielo (la mezcla líquida no va al blast freezer); más rápido si tu licencia lo pide",
    "motivo": "nueva"
   },
   {
@@ -1342,16 +1342,16 @@
   },
   {
    "id": "c0146",
-   "es": "Limpiar mantecadora: desmontar cuchillas, junta, cilindro",
+   "es": "Limpiar mantecadora: desmontar cuchillas, batidor y junta; el cilindro se limpia en su sitio",
    "grupo": "G1",
-   "palabras": 6,
+   "palabras": 14,
    "donde": [
     "02 · Mantecación · B24"
    ],
    "pistas": [
     "mantecadora → batch freezer; mantecar → batch-freeze / churn"
    ],
-   "adaptar": "Desmontar y limpiar la mantecadora como diga su fabricante (cuchillas / dasher, junta y cilindro) y luego sanitizarla",
+   "adaptar": "Desmontar y limpiar la mantecadora como diga su fabricante (dasher, cuchillas rascadoras y junta de la puerta; el cilindro es fijo: se limpia en su sitio) y luego sanitizarla",
    "motivo": "nueva"
   },
   {
@@ -3069,9 +3069,9 @@
   },
   {
    "id": "c0317",
-   "es": "Desmontar y limpiar piezas de mantecadora (cuchillas, junta, cilindro)",
+   "es": "Desmontar y limpiar piezas de mantecadora (cuchillas, batidor y junta; el cilindro, en su sitio)",
    "grupo": "G2",
-   "palabras": 9,
+   "palabras": 15,
    "donde": [
     "05 · Limpieza Semanal · B13"
    ],
@@ -3201,9 +3201,9 @@
   },
   {
    "id": "c0328",
-   "es": "Test de mantecadora en vacío: verificar temperatura y ciclo",
+   "es": "Revisar la mantecadora según el fabricante: cuchillas, batidor y junta; temperatura de extracción en la primera tanda (nunca en vacío)",
    "grupo": "G2",
-   "palabras": 9,
+   "palabras": 20,
    "donde": [
     "05 · Gestión Semanal · B6"
    ],
@@ -3647,7 +3647,7 @@
    "donde": [
     "06 · Temporada Alta · B7"
    ],
-   "adaptar": "Reforzar el equipo: contratar 2 semanas antes; añade: en verano muchos son menores: con 14-15 años, horario limitado por la FLSA (29 CFR 570.35: fuera del horario escolar, hasta las 7 PM y hasta las 9 PM del 1 de junio al Labor Day, con máximos por día y por semana) y solo los equipos que permite 29 CFR 570.34; el permiso de trabajo (work permit), según el estado",
+   "adaptar": "Reforzar el equipo: contratar 2 semanas antes; añade: en verano muchos son menores: con 14-15 años, horario limitado por la FLSA (29 CFR 570.35: fuera del horario escolar, hasta las 7 PM y hasta las 9 PM del 1 de junio al Labor Day, con máximos por día y por semana) y solo los equipos que permite 29 CFR 570.34; nada de trabajar dentro de los congeladores (solo entrar un momento a coger algo) ni de manejar o limpiar la mantecadora, el pasteurizador u otras máquinas eléctricas (29 CFR 570.33); el permiso de trabajo (work permit), según el estado",
    "motivo": "nueva"
   },
   {
@@ -3763,7 +3763,7 @@
     "tarrina → cup; tarrina para llevar → pint / quart",
     "kg → lb; tarrinas de 0,5 L y 1 L → pints y quarts"
    ],
-   "adaptar": "Envases para llevar US: pints y quarts (al peso, solo con una báscula legal para el comercio, legal-for-trade, que revisa la oficina estatal de pesas y medidas); los pints que se envasan antes para el congelador de autoservicio llevan etiqueta con nombre, ingredientes y alérgenos principales (FDA Food Code 3-602.11); los que se llenan al momento para el cliente, no",
+   "adaptar": "Envases para llevar US: pints y quarts (al peso, solo con una báscula legal para el comercio, legal-for-trade, que revisa la oficina estatal de pesas y medidas); los pints que se envasan antes para el congelador de autoservicio llevan etiqueta con nombre, ingredientes, alérgenos principales, contenido neto y nombre y lugar del negocio (FDA Food Code 3-602.11); los que se llenan al momento para el cliente, no",
    "motivo": "nueva"
   },
   {

@@ -8,7 +8,7 @@ Volcado de 11 xlsx de ../../../astro-site/public/dl/ice-cream-shop-checklist-tem
 B2     : 01 · Ice Cream Shop Opening & Closing Checklists: Dipping Cabinets, Toppings & Counter
 B4     : How to use this template:
 B5     : ▸ Complete checklist for the daily opening and closing of your ice cream shop.
-B6     : ▸ Includes switching the dipping cabinets to service mode, walk-in checks, setup and closing.
+B6     : ▸ Includes the dipping cabinet and walk-in checks, setup and closing.
 B7     : ▸ Mark ✓ on each completed task. Adjust the times to your shop.
 B9     : Customization:
 B10    : ▸ Green cells are editable: assigned to, time, notes.
@@ -16,8 +16,8 @@ B11    : ▸ Adjust temperatures to your equipment and local rules.
 B12    : ▸ Print on US Letter and keep it in the production room and at the counter.
 B14    : Hygiene, allergens and temperatures:
 B15    : ▸ The first section of "Opening" covers personal hygiene and a safe start: exhaust fan first and, if you have gas for waffles or crepes, a gas-smell check before turning anything on.
-B16    : ▸ A shop runs three different temperatures; never mix them up: storage 0 °F or below, dipping cabinet service 6–10 °F (per the manufacturer) and mix aging 36–39 °F, never above 41 °F. Dipping cabinets are NOT turned off at night: they go to storage mode.
-B17    : ▸ Allergens travel on the scoop: use the dipper well or one scoop per flavor. Water does not remove allergens: for an allergy order, wash hands, wear fresh gloves and use a clean, sanitized scoop. Cones, wafers and cookies contain wheat; pistachio, hazelnut and almond are tree nuts (US: 9 major allergens; UK: 14).
+B16    : ▸ A shop runs three different temperatures; never mix them up: storage 0 °F or below, dipping cabinet service 6–10 °F (per the manufacturer) and mix aging 36–39 °F, never above 41 °F. Dipping cabinets are NOT turned off at night: they stay on — on their night/storage setting if your model has one, per the manufacturer.
+B17    : ▸ Allergens travel on the scoop: use the dipper well or one scoop per flavor. Water does not remove allergens: for an allergy order, wash hands, wear fresh gloves and use a clean, sanitized scoop. Cones, wafers and cookies contain wheat; pistachio, hazelnut and almond are tree nuts, and peanut butter flavors and toppings carry peanuts (US: 9 major allergens; UK: 14).
 B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B20    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
 
@@ -52,7 +52,7 @@ A11    : 6
 B11    : Turn on the production room exhaust and ventilate before starting the pasteurizer and batch freezer
 C11    : Production
 A12    : 7
-B12    : If the production room or waffle/crepe area has GAS: open the main valve and check there is NO gas smell BEFORE turning anything on. If you smell gas, touch nothing, get everyone out and call the gas company or 911 from outside
+B12    : If the production room or waffle/crepe area has GAS: check there is NO gas smell BEFORE lighting anything. If you smell gas, touch nothing, get everyone out and call the gas company or 911 from outside
 C12    : Production
 A14    : Equipment startup and checks
 A15    : #
@@ -63,13 +63,13 @@ E15    : ✓
 F15    : Time
 G15    : Notes
 A16    : 1
-B16    : Switch the dipping cabinets from overnight storage (0 °F) to service mode (6–10 °F, per the manufacturer) and confirm they held temperature all night — log reading: ____ °F
+B16    : First thing: if your dipping cabinets have a night/storage setting, switch them back to service mode (6–10 °F, per the manufacturer), and confirm they held temperature all night — log reading: ____ °F
 C16    : Dipping cabinet
 A17    : 2
 B17    : Check the walk-in and reach-in freezers ran all night and log the temperature (0 °F or below) — log reading: ____ °F. If out of range, hold the product until assessed
 C17    : Freezer
 A18    : 3
-B18    : Check the aging cooler (36–39 °F) — log reading: ____ °F: above 41 °F the pasteurized mix is no longer safe
+B18    : Check the aging cooler (36–39 °F) — log reading: ____ °F: above 41 °F, the person in charge assesses the mix (how warm, for how long) before it is used
 C18    : Aging
 A19    : 4
 B19    : Check that the blast freezer / hardening cabinet is working
@@ -92,13 +92,13 @@ A25    : 1
 B25    : Set up fresh toppings: wash raw FRUIT under running potable water (food-safe produce wash only, at label dose, then RINSE); nuts and sprinkles in a closed container
 C25    : Counter
 A26    : 2
-B26    : Use the dipper well (running water) or one scoop per flavor: tree nuts (pistachio, hazelnut, almond) travel from pan to pan on the scoop
+B26    : Use the dipper well (running water) or one scoop per flavor: tree nuts and peanuts (pistachio, hazelnut, peanut butter) travel from pan to pan on the scoop
 C26    : Counter
 A27    : 3
 B27    : Keep the ALLERGEN chart by flavor in view and check it matches today's pans in the dipping cabinet (milk, egg, tree nuts, peanuts, wheat in cones, wafers and cookies, soy, sesame)
 C27    : Counter
 A28    : 4
-B28    : Prepare sauces: chocolate, caramel, berry, milk caramel (dairy and cut fruit covered at 41 °F or below; hot fudge in its warmer per the manufacturer)
+B28    : Prepare sauces: chocolate, caramel, berry, dulce de leche (dairy and cut fruit covered at 41 °F or below; hot fudge in its warmer per the manufacturer)
 C28    : Counter
 A29    : 5
 B29    : Restock cones, cups, spoons and napkins
@@ -160,7 +160,7 @@ A6     : 1
 B6     : Cover all pans with plastic wrap or an airtight lid
 C6     : Dipping cabinet
 A7     : 2
-B7     : Switch the dipping cabinets to storage mode (0 °F): never turn them off — with product inside, an overnight shutdown can ruin the whole batch
+B7     : Leave the dipping cabinets ON (never turn them off with product inside: an overnight shutdown can ruin the whole batch); use the night/storage setting only if your model has one, per the manufacturer
 C7     : Dipping cabinet
 A8     : 3
 B8     : Log the day's waste (flavor, lb and reason: ran out, discarded, icy or thawed): it corrects food cost and tomorrow's production plan
@@ -240,7 +240,7 @@ CF A6:G28 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=Non
 B2     : 02 · Ice Cream & Gelato Production Checklists: Pasteurizing, Aging & Batch Freezing
 B4     : How to use this template:
 B5     : ▸ Checklist for the two key production phases of artisan ice cream.
-B6     : ▸ Pasteurizing: mix, heat treatment, cooling and aging. Note: pasteurizing your own mix usually requires a STATE frozen dessert or dairy manufacturer license (Vermont, Georgia, Arizona…), and some states also require one to batch-freeze pasteurized mix or run a soft serve machine (Vermont, Massachusetts); with bought pasteurized mix a health permit is usually enough. Check with your state department of agriculture.
+B6     : ▸ Pasteurizing: mix, heat treatment, cooling and aging. Note: pasteurizing your own mix usually requires a STATE frozen dessert or dairy manufacturer license (e.g. Vermont, Georgia; Arizona exempts on-premises sales with an approved plan), and some states also require one to batch-freeze pasteurized mix or run a soft serve machine (Vermont, Massachusetts); with bought pasteurized mix a health permit is usually enough. Check with your state department of agriculture or health.
 B7     : ▸ Batch freezing: texturizing, draw, hardening and storage.
 B9     : Customization:
 B10    : ▸ Adjust temperatures and times to your equipment and recipes.
@@ -285,14 +285,14 @@ E12    : ✓
 F12    : Time
 G12    : Notes
 A13    : 1
-B13    : Pasteurize at 185 °F for 15 seconds (high-temp); your pasteurizer's validated program and your state license minimums take precedence — log reading: ____ °F
+B13    : Add fats and emulsifiers (cream, butter, egg yolks, stabilizer blend) while the mix HEATS through 104–122 °F, before the pasteurizing hold: anything added after pasteurizing goes in raw — log reading: ____ °F
 C13    : Pasteurizer
 A14    : 2
-B14    : Add fats and emulsifiers when the mix cools to 104–122 °F — log reading: ____ °F
+B14    : Pasteurize at 185 °F for 15 seconds (the kit's high-temp target); typical state minimums: batch 155 °F for 30 min or HTST 175 °F for 25 s — check your state rules and your pasteurizer's validated program, and keep the recording chart if your license requires one — log reading: ____ °F
 C14    : Pasteurizer
 A15    : 3
-B15    : Cool the mix fast to 41 °F or below: 135 → 70 °F within 2 h, then to 41 °F within 4 h (pasteurizer cooling cycle or blast freezer) — log reading: ____ °F
-C15    : Hardening
+B15    : Cool the mix fast to 41 °F or below: 135 → 70 °F within 2 h, then to 41 °F within 4 h (pasteurizer cooling cycle, a blast chiller or an ice bath; faster if your license says so) — log reading: ____ °F
+C15    : Pasteurizer
 A16    : 4
 B16    : Verify the final mix temperature (41 °F or below, ideally 36–39 °F) — log reading: ____ °F
 C16    : Production
@@ -393,7 +393,7 @@ A23    : 3
 B23    : Log the day's production: flavor, lb, batch, destination
 C23    : Office
 A24    : 4
-B24    : Clean the batch freezer per the manufacturer: remove dasher, gasket and cylinder, then sanitize
+B24    : Clean the batch freezer per the manufacturer: remove the dasher, scraper blades and door gasket, clean the cylinder in place, then sanitize
 C24    : Cleaning
 A25    : 5
 B25    : Clean, then sanitize production surfaces and utensils used (test strip)
@@ -541,7 +541,7 @@ A6     : 1
 B6     : Analyze the week's sales by flavor (ranking, trends)
 C6     : Office
 A7     : 2
-B7     : Calculate weekly food cost: target <28–32%
+B7     : Calculate weekly food cost: target 28–32% or lower
 C7     : Office
 A8     : 3
 B8     : Review compliance with the opening/closing checklists
@@ -584,7 +584,7 @@ A21    : 2
 B21    : Supervise the weekly deep clean of equipment
 C21    : Cleaning
 A22    : 3
-B22    : Check expiry dates in storage and freezers (FIFO) — log reading: ____ °F
+B22    : Check expiry dates in storage and freezers (FIFO)
 C22    : Storage
 B23    : Tasks done:
 C23    = =COUNTIFS(B6:B22,"?*",E6:E22,"✓")-COUNTIFS(B6:B22,"Task",E6:E22,"✓")   → caché 0.0
@@ -733,7 +733,7 @@ A15    : 3
 B15    : Add swirls and mix-ins per the flavor recipe card
 C15    : Batch freezer
 A16    : 4
-B16    : Refill the dipping cabinet with fresh pans (neat visual finish)
+B16    : Refill the dipping cabinet with tempered pans (moved up from the storage freezer ahead of time so they're scoopable; neat visual finish)
 C16    : Dipping cabinet
 A17    : 5
 B17    : Log production batches: flavor, lb, date, use-by
@@ -978,7 +978,7 @@ E12    : ✓
 F12    : Time
 G12    : Notes
 A13    : 1
-B13    : Take apart and clean the batch freezer parts (dasher, gasket, cylinder)
+B13    : Take apart and clean the batch freezer parts (dasher, scraper blades, door gasket); clean the cylinder in place
 C13    : Production
 A14    : 2
 B14    : Clean the condenser filters on refrigeration units
@@ -1001,7 +1001,7 @@ E20    : ✓
 F20    : Time
 G20    : Notes
 A21    : 1
-B21    : Clean the inside of the storage freezers
+B21    : Clean the inside of the storage freezers (not a task for 14–15-year-olds: FLSA)
 C21    : Freezer
 A22    : 2
 B22    : Check expiry dates (FIFO) in the walk-ins and storage
@@ -1031,7 +1031,7 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Run the batch freezer empty: check temperature and cycle — log reading: ____ °F
+B6     : Batch freezer check per the manufacturer: scraper blades, dasher and door gasket for wear, and the draw temperature on the day's first batch — never run a freezing cycle with the cylinder empty — log reading: ____ °F
 C6     : Production
 A7     : 2
 B7     : Check that each refrigeration unit holds temperature, with no frost or odd noises; call the certified technician if not (staff never handle refrigerant)
@@ -1043,7 +1043,7 @@ A9     : 4
 B9     : Check the condition of utensils: spades, scoops, molds
 C9     : Production
 A10    : 5
-B10    : If you serve coffee or hot drinks: backflush the group head with detergent, replace the gasket if due and run the dishwasher cleaning cycle (filters and wash arms)
+B10    : If you serve coffee: backflush the group head with detergent and replace the gasket if due. If you have a dishwasher: run its cleaning cycle (filters and wash arms)
 C10    : Production
 A12    : Inventory and rotation
 A13    : #
@@ -1107,7 +1107,7 @@ A13    : 1
 B13    : Full valued inventory: ingredients, packaging, finished product
 C13    : Storage
 A14    : 2
-B14    : Calculate actual monthly food cost vs target (<28–32%)
+B14    : Calculate actual monthly food cost vs target (28–32% or lower)
 C14    : Office
 A15    : 3
 B15    : Review the month's accumulated waste by flavor
@@ -1127,7 +1127,7 @@ A20    : 2
 B20    : Review and file the month's food safety records (temperature, cleaning and batch logs)
 C20    : Office
 A21    : 3
-B21    : Allergen check: verify labeling of pre-packed pints (FDA Food Code 3-602.11), traceability and an allergen chart matching the recipes
+B21    : Labeling check: pre-packed pints show name, ingredients, allergens, net weight and shop name and address (FDA Food Code 3-602.11); traceability and an allergen chart matching the recipes
 C21    : Office
 A22    : 4
 B22    : Deep clean the whole shop (floors, walls, ceilings)
@@ -1148,7 +1148,7 @@ CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=Non
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Quarterly & Annual Maintenance
 A2     : AI Chef Pro · aichef.pro — Ice Cream Shop Checklists Kit Pro
-A4     : Contracted services — quarterly & semiannual
+A4     : Contracted services — monthly to annual
 A5     : #
 B5     : Task
 C5     : Area
@@ -1161,9 +1161,9 @@ B6     : Pest control by a licensed operator: service visit and signed service r
 C6     : Cleaning
 F6     : Monthly
 A7     : 2
-B7     : Exhaust hood and ducts: if you cook with grease (waffle irons, crepes) under a hood, cleaning by a certified contractor per NFPA 96; a steam-only hood over the pasteurizer, as its manufacturer says
+B7     : Exhaust hood and ducts: if you cook with grease (waffle irons, crepes) under a hood, cleaning by a certified contractor at the NFPA 96 frequency for your cooking volume (low volume, e.g. waffle cones or a seasonal shop: annually); a steam-only hood over the pasteurizer, as its manufacturer says
 C7     : Cleaning
-F7     : Semiannual
+F7     : Annual
 A8     : 3
 B8     : Refrigeration service by an EPA 608-certified tech: walk-in and reach-in freezers, dipping cabinets, batch freezer and blast freezer — coils, gaskets and refrigerant leak check
 C8     : Freezer
@@ -1189,7 +1189,7 @@ B14    : Gas lines and appliance connections (waffle iron, crepe griddle, water 
 C14    : Office
 F14    : Annual
 A15    : 3
-B15    : Backflow preventers tested by a certified tester where your water utility requires it (most do, yearly): dipper wells, ice machine and espresso machine all hook up to the water supply
+B15    : Backflow preventers tested by a certified tester where your water utility requires it (most do, yearly): dipper wells, the ice machine and any espresso machine hook up to the water supply
 C15    : Office
 F15    : Annual
 A17    : Annual — permits, training, insurance & systems
@@ -1201,7 +1201,7 @@ E18    : ✓
 F18    : Frequency
 G18    : Notes
 A19    : 1
-B19    : Check your health permit is current and posted — and, if you make your own ice cream or pasteurize your own mix, your state frozen dessert / dairy license too
+B19    : Check your health permit is current and posted — and, if you pasteurize your own mix (or your state also licenses batch-freezing or soft serve), your state frozen dessert / dairy license too
 C19    : Office
 F19    : Annual
 A20    : 2
@@ -1265,7 +1265,7 @@ A6     : 1
 B6     : Expand the menu to 18–24 flavors: add seasonal fruit flavors
 C6     : Production
 A7     : 2
-B7     : Reinforce the team: hire 2 weeks before the season (minors 14–15: FLSA hour and equipment limits; check state work permits)
+B7     : Reinforce the team: hire in March–April so the summer team is trained by Memorial Day. Minors 14–15: FLSA hours, no work inside freezers beyond stepping in to grab an item, and no operating or cleaning the batch freezer, pasteurizer or other power-driven machines (29 CFR 570.33); check state work permits
 C7     : Team
 A8     : 3
 B8     : Increase ingredient stock 40–50% over winter
@@ -1297,7 +1297,7 @@ A17    : 4
 B17    : Social media campaign: flavor photos, stories, production reels
 C17    : Social media
 A18    : 5
-B18    : Prepare to-go packaging: pints and quarts (pre-packed pints get an allergen label; selling by weight needs a legal-for-trade scale)
+B18    : Prepare to-go packaging: pints and quarts. Pints packed ahead for the freezer case carry a label: flavor name, ingredients, allergens, net weight and your shop's name and city (FDA Food Code 3-602.11); hand-packed to order they are not "packaged". Selling by weight needs a legal-for-trade scale
 C18    : Counter
 A19    : 6
 B19    : Daily stock check: fresh fruit, dairy, sugars
@@ -1380,7 +1380,7 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Get guests' allergies and intolerances IN WRITING and confirm which flavors you can serve: an ice cream menu concentrates MILK, TREE NUTS, EGG, WHEAT (cones, wafers, cookies), SOY and SESAME (9 major allergens; UK: 14)
+B6     : Get guests' allergies and intolerances IN WRITING and confirm which flavors you can serve: an ice cream menu concentrates MILK, TREE NUTS, PEANUTS, EGG, WHEAT (cones, wafers, cookies), SOY and SESAME (US: 9 major allergens; UK: 14)
 C6     : Office
 A7     : 2
 B7     : Confirm in writing guest count, formats, time and place of service and who receives the gear on site (public event: check the county temporary food permit and handwashing water)
@@ -1412,7 +1412,7 @@ A16    : 3
 B16    : Produce 24–48 h ahead and store at 0 °F or below
 C16    : Production
 A17    : 4
-B17    : Pack the off-site service kit: pans, spades, gloves, napkins
+B17    : Pack the off-site service kit: pans, one scoop per flavor (no running-water dipper well on site), spades, gloves, napkins and a probe thermometer
 C17    : Logistics
 A19    : Logistics and transport
 A20    : #
@@ -1423,7 +1423,7 @@ E20    : ✓
 F20    : Time
 G20    : Notes
 A21    : 1
-B21    : Check the cold chain for transport (insulated carriers; dry ice with gloves, never touching the ice cream, vehicle ventilated)
+B21    : Check the cold chain for transport (insulated carriers; dry ice with gloves, never touching the ice cream, vehicle ventilated). Dry ice over-hardens the ice cream: let the pans temper before scooping
 C21    : Logistics
 A22    : 2
 B22    : Load the vehicle with product and service gear
@@ -1443,7 +1443,7 @@ A27    : 1
 B27    : Set up the serving table at the event per the client's brief
 C27    : Service
 A28    : 2
-B28    : Serve ice cream keeping the presentation and flavor rotation
+B28    : Serve from a dipping cart or a dry-ice cooler, scoops kept in their pan with the handle up (FDA Food Code 3-304.12(A)); check temps during service and throw out any ice cream that melts — never refreeze it — log reading: ____ °F
 C28    : Service
 A29    : 3
 B29    : Collect gear, clean the area and haul it back
@@ -1657,7 +1657,7 @@ C19    : General
 D19    : Shift lead
 E19    : 10:30 AM
 A20    : 16
-B20    : Dipping cabinets switched to service mode — they stay on overnight with product inside (details in file 01, Opening tab)
+B20    : Dipping cabinets back in service mode — done FIRST THING on arrival (file 01, Opening tab), so the pans soften to scooping temp before the door opens; they stay on overnight with product inside
 C20    : Shop
 D20    : Shift lead
 E20    : 10:30 AM
@@ -1714,12 +1714,12 @@ C8     : Outside
 D8     : Shift lead
 E8     : Close
 A9     : 5
-B9     : Put the night covers on the dipping cabinets: they stay ON, in storage mode
+B9     : Put the night covers or lids on the dipping cabinets: they stay ON (night/storage setting only if your model has one, per the manufacturer)
 C9     : Shop
 D9     : Shift lead
 E9     : Close
 A10    : 6
-B10    : Log the closing temps: dipping cabinets already in storage mode (0 °F) and freezers (0 °F or below) — log reading: ____ °F
+B10    : Log the closing temps: dipping cabinets (6–10 °F, or their night setting) and freezers (0 °F or below) — log reading: ____ °F
 C10    : Shop
 D10    : Shift lead
 E10    : Close
@@ -1734,7 +1734,7 @@ C12    : Restrooms
 D12    : Shift lead
 E12    : Close
 A13    : 9
-B13    : Final safety check: gas off, water off, small appliances unplugged — never the freezers or dipping cabinets
+B13    : Final safety check: gas appliances off (waffle irons, griddles) if any, dipper well tap off, small appliances unplugged — never the freezers or dipping cabinets
 C13    : General
 D13    : Shift lead
 E13    : Close
@@ -2444,7 +2444,7 @@ B11    : ▸ Add local events and festivals in your town.
 B12    : ▸ Plan at least 1 month ahead.
 B14    : Calendar dates:
 B15    : ▸ The dates are US ones: Valentine's Day, St. Patrick's Day, Easter, Mother's Day (2nd Sunday of May), Memorial Day–Labor Day, Father's Day (3rd Sunday of June), July 4th, National Ice Cream Month (July) and National Ice Cream Day (3rd Sunday of July), Halloween, Thanksgiving (4th Thursday of November) and the December holidays.
-B16    : ▸ Change any that don't apply where you are and add your town's events (county fairs, summer festivals, high school games): they are what moves a neighborhood scoop shop. UK: Mothering Sunday (March), bank holidays and Boxing Day.
+B16    : ▸ Change any that don't apply where you are and add your town's events (county fairs, summer festivals, high school games): they are what moves a neighborhood scoop shop. UK: Mothering Sunday (3 weeks before Easter: March or early April), bank holidays and Boxing Day.
 B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-checklist-templates · info@aichef.pro
 
@@ -2471,7 +2471,7 @@ B7     : St. Patrick's Day (Mar 17): mint chip and green flavors. Many seasonal 
 C7     : Mint Chocolate Chip, Coffee, Vanilla, Lemon
 D7     : Shoulder
 A8     : April
-B8     : Easter (date varies): spring flavors and ice cream cakes to order. Expand the menu with fruit flavors. Hire and train the summer team (many are minors: FLSA hours, see the "Peak Season" sheet). Prep the patio and its permit.
+B8     : Easter (date varies): spring flavors and ice cream cakes to order. Expand the menu with fruit flavors. Hire and train the summer team (many are minors: FLSA hours and job limits, see the "Peak Season" sheet). Prep the patio and its permit.
 C8     : Strawberry, Lemon, Mango, Vanilla Bean
 D8     : Shoulder
 A9     : May

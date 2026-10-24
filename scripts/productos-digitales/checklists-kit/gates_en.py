@@ -95,7 +95,7 @@ LISTA_BLANCA_TILDE = {'entrée', 'entrées', 'sauté', 'sautéed', 'sautéing', 
                       'jalapeño', 'jalapeños', 'piña', 'crème', 'brûlée', 'résumé', 'naïve', 'flambé', 'frappé',
                       'rosé', 'canapé', 'canapés', 'soufflé', 'consommé', 'crêpe', 'crêpes', 'déjà', 'à'}
 FRASES_OK = ('Cinco de Mayo', 'al dente', 'pico de gallo', 'chili con carne', 'à la carte', 'a la carte',
-             'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide')
+             'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide', 'dulce de leche')   # heladería: el término US
 FUNCIONALES_ES = {
     'de', 'del', 'las', 'el', 'los', 'y', 'que', 'con', 'para', 'por', 'una', 'unos', 'unas', 'es', 'al', 'se',
     'su', 'sus', 'como', 'pero', 'muy', 'cuando', 'donde', 'porque', 'este', 'esta', 'esto', 'estos', 'desde',
