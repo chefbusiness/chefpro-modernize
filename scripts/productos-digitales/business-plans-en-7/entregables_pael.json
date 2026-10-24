@@ -1,0 +1,45 @@
+{
+ "carpeta": "astro-site/public/dl/paella-catering-business-plan",
+ "piezas": 1889,
+ "fallos": 0,
+ "ficheros": {
+  "paella-catering-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 8499,
+   "piezas": 116,
+   "sha256": "d7eccbf09e08f3b0192e3cd75127f1ac995a69c7f9877bd8c288682ba04fba9e",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "paella-catering-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 722,
+   "piezas": 818,
+   "sha256": "765e496038990ff0c0fbb9c1ca711827ea24f8a5eadede4b5dc9c385acbcfe10",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "paella-catering-pricing-calculator.xlsx": {
+   "hojas": 5,
+   "formulas": 362,
+   "piezas": 520,
+   "sha256": "7550983c3ce50c51a30f8a2be2869d0a2c580d2bbdb42bf7bda6420c30e5932d",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "paella-catering-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 435,
+   "sha256": "aa32db167cb0224ece1bf53e3619b64a7817481036e12978f49e1cb7efefd8c6",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}
