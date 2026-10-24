@@ -278,13 +278,14 @@ POR_CELDA.update([
     (('02', 'Mantecación', 'C36'), "Per the manufacturer's label"),
     # 05 · Trimestral y Anual: servicios contratados y papeles de una heladería US (sin DDD, BIE, gases fluorados,
     # legionela ni facturación verificable)
-    (_T + ('A4',), 'Contracted services — quarterly & semiannual'),
+    (_T + ('A4',), 'Contracted services — monthly to annual'),
     (_T + ('B6',), 'Pest control by a licensed operator: service visit and signed service report on file (write the '
                    'report # in the Notes column)'),
     (_T + ('F6',), 'Monthly'),
     (_T + ('B7',), 'Exhaust hood and ducts: if you cook with grease (waffle irons, crepes) under a hood, cleaning by a '
-                   'certified contractor per NFPA 96; a steam-only hood over the pasteurizer, as its manufacturer says'),
-    (_T + ('F7',), 'Semiannual'),
+                   'certified contractor at the NFPA 96 frequency for your cooking volume (low volume, e.g. waffle cones '
+                   'or a seasonal shop: annually); a steam-only hood over the pasteurizer, as its manufacturer says'),
+    (_T + ('F7',), 'Annual'),
     (_T + ('B8',), 'Refrigeration service by an EPA 608-certified tech: walk-in and reach-in freezers, dipping cabinets, '
                    'batch freezer and blast freezer — coils, gaskets and refrigerant leak check'),
     (_T + ('B9',), 'Calibration check of the dipping cabinet, freezer and pasteurizer thermometers against a reference '
@@ -296,10 +297,10 @@ POR_CELDA.update([
     (_T + ('B14',), 'Gas lines and appliance connections (waffle iron, crepe griddle, water heater) checked by a '
                     'licensed pro if you have gas, and the electrical system, as often as your local code requires'),
     (_T + ('B15',), 'Backflow preventers tested by a certified tester where your water utility requires it (most do, '
-                    'yearly): dipper wells, ice machine and espresso machine all hook up to the water supply'),
+                    'yearly): dipper wells, the ice machine and any espresso machine hook up to the water supply'),
     (_T + ('A17',), 'Annual — permits, training, insurance & systems'),
-    (_T + ('B19',), 'Check your health permit is current and posted — and, if you make your own ice cream or '
-                    'pasteurize your own mix, your state frozen dessert / dairy license too'),
+    (_T + ('B19',), 'Check your health permit is current and posted — and, if you pasteurize your own mix (or your '
+                    'state also licenses batch-freezing or soft serve), your state frozen dessert / dairy license too'),
     (_T + ('B20',), 'Review food handler cards and allergen training for ALL staff, summer hires included, and that a '
                     'certified food protection manager is on the team (FDA Food Code 2-102.12)'),
     (_T + ('B21',), "Renew insurance and review coverage: general liability, property, workers' comp and equipment "
@@ -318,13 +319,14 @@ _CIERRE_08 = [  # fila ES de origen, EN, zona EN, responsable EN
     (5, 'Turn off background music', 'General', 'Shift lead'),
     (7, 'Clean up and bring in the patio, if you have one', 'Patio', 'Shift lead'),
     (12, 'Bring in the outdoor signage and sidewalk sign', 'Outside', 'Shift lead'),
-    (18, 'Put the night covers on the dipping cabinets: they stay ON, in storage mode', 'Shop', 'Shift lead'),
-    (19, 'Log the closing temps: dipping cabinets already in storage mode (0 °F) and freezers (0 °F or below) — log '
+    (18, 'Put the night covers or lids on the dipping cabinets: they stay ON (night/storage setting only if your model '
+         'has one, per the manufacturer)', 'Shop', 'Shift lead'),
+    (19, 'Log the closing temps: dipping cabinets (6–10 °F, or their night setting) and freezers (0 °F or below) — log '
          'reading: ____ °F', 'Shop', 'Shift lead'),
     (8, 'Turn off the POS / card terminal (or leave on standby)', 'Register', 'Shift lead'),
     (14, 'Empty trash cans in common areas and restrooms', 'Restrooms', 'Shift lead'),
-    (15, 'Final safety check: gas off, water off, small appliances unplugged — never the freezers or dipping cabinets',
-     'General', 'Shift lead'),
+    (15, 'Final safety check: gas appliances off (waffle irons, griddles) if any, dipper well tap off, small appliances '
+         'unplugged — never the freezers or dipping cabinets', 'General', 'Shift lead'),
     (13, 'Check that windows are closed', 'General', 'Shift lead'),
     (11, 'Turn off HVAC', 'General', 'Shift lead'),
     (10, 'Turn off lights (leave security lighting on)', 'General', 'Shift lead'),
@@ -359,8 +361,12 @@ for _k, _h in HORAS_ES.items():
     POR_CELDA[_k] = _mas(_h)
 # 08 · Apertura B20-B21 (errata ES: las mantecadoras no se encienden al abrir, solo para mantecar: hoja «Batch
 # Freezing» del 02) y la cita del 01, que el ES escribe sin «.xlsx»: fijadas aquí con la cita corta «file 01»
-POR_CELDA[_AN + ('B20',)] = ('Dipping cabinets switched to service mode — they stay on overnight with product inside '
-                             '(details in file 01, Opening tab)')
+POR_CELDA[_AN + ('B20',)] = ('Dipping cabinets back in service mode — done FIRST THING on arrival (file 01, Opening '
+                             'tab), so the pans soften to scooping temp before the door opens; they stay on overnight '
+                             'with product inside')
+# ronda 1 m1: en el 02 «Pasteurización» la mezcla líquida se enfría en el pasteurizador (o blast chiller / baño de
+# hielo), no en la hardening cabinet: la zona de C15 deja el glosario «Abatidor → Hardening»
+POR_CELDA[('02', 'Pasteurización', 'C15')] = 'Pasteurizer'
 POR_CELDA[_AN + ('B21',)] = 'Dipping cabinets at serving temp (6–10 °F; reading logged in file 01, Opening tab)'
 for _fila, (_mes, _sabores, _temp, _dir) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'A%d' % _fila)] = _mes
@@ -392,23 +398,27 @@ _SALSAS = ('Salsas y toppings como diga su etiqueta (fabricante); lo lácteo abi
            'fabricante')
 _ENFRIAR_MEZCLA = ('La mezcla pasteurizada es TCS: enfriarla de 135 °F a 70 °F en 2 h y a 41 °F o menos en 4 h más '
                    '(FDA Food Code 3-501.14); el ciclo de enfriamiento del pasteurizador suele hacerlo mucho antes '
-                   '(fabricante)')
+                   '(fabricante). Abatidor → blast chiller o baño de hielo (la mezcla líquida no va al blast freezer); '
+                   'más rápido si tu licencia lo pide')
 _LICENCIA = ('pasteurizar la mezcla propia suele exigir una licencia ESTATAL de fabricante de frozen dessert o de lácteos '
-             '(Vermont, Georgia, Arizona…) y algunos estados la piden incluso para mantecar una mezcla ya pasteurizada o '
+             '(Vermont, Georgia; Arizona exime la venta en el propio local con un plan aprobado) y algunos estados la piden incluso para mantecar una mezcla ya pasteurizada o '
              'tener una máquina de soft serve (Vermont, Massachusetts); con mezcla comprada ya pasteurizada suele '
-             'bastar el health permit: compruébalo con el departamento de agricultura de tu estado')
-_PASTEURIZAR = ('Cifra del kit en °F: 185 °F durante 15 s (ES 85 °C 15 s, alta pasteurización); añade, breve, que '
-                'mandan el programa validado de tu pasteurizador y el mínimo de tu licencia estatal (la nota de la '
-                'licencia va en «Instructions» B6)')
+             'bastar el health permit: compruébalo con el departamento de agricultura o de salud de tu estado')
+_PASTEURIZAR = ('Cifra del kit en °F: 185 °F durante 15 s (ES 85 °C 15 s, alta pasteurización), como objetivo del kit; '
+                'añade los mínimos estatales habituales (batch 155 °F 30 min o HTST 175 °F 25 s), que mandan las normas '
+                'de tu estado y el programa validado de tu pasteurizador, y el registro gráfico si la licencia lo pide '
+                '(la nota de la licencia va en «Instructions» B6)')
 _NORMA = ('el helado («ice cream») tiene que pesar al menos 4,5 lb por galón (21 CFR 135.110): un overrun demasiado '
           'alto lo deja fuera de la norma; el gelato no tiene norma federal')
 _EMPAQUE = ('Envases para llevar US: pints y quarts (al peso, solo con una báscula legal para el comercio, '
             'legal-for-trade, que revisa la oficina estatal de pesas y medidas); los pints que se envasan antes para el '
-            'congelador de autoservicio llevan etiqueta con nombre, ingredientes y alérgenos principales (FDA Food Code '
-            '3-602.11); los que se llenan al momento para el cliente, no')
+            'congelador de autoservicio llevan etiqueta con nombre, ingredientes, alérgenos principales, contenido neto '
+            'y nombre y lugar del negocio (FDA Food Code 3-602.11); los que se llenan al momento para el cliente, no')
 _MENORES = ('añade: en verano muchos son menores: con 14-15 años, horario limitado por la FLSA (29 CFR 570.35: fuera del '
             'horario escolar, hasta las 7 PM y hasta las 9 PM del 1 de junio al Labor Day, con máximos por día y por '
-            'semana) y solo los equipos que permite 29 CFR 570.34; el permiso de trabajo (work permit), según el estado')
+            'semana) y solo los equipos que permite 29 CFR 570.34; nada de trabajar dentro de los congeladores (solo '
+            'entrar un momento a coger algo) ni de manejar o limpiar la mantecadora, el pasteurizador u otras máquinas '
+            'eléctricas (29 CFR 570.33); el permiso de trabajo (work permit), según el estado')
 _PROBAR = 'Probar con una cuchara limpia cada vez, nunca la misma dos veces (FDA Food Code 3-301.12)'
 _RESENAS = 'Plataformas US: Google Business Profile y Yelp'
 _SEGURIDAD = ('APPCC → seguridad alimentaria (food safety): los registros de temperatura, limpieza y lotes; un plan '
@@ -416,7 +426,8 @@ _SEGURIDAD = ('APPCC → seguridad alimentaria (food safety): los registros de t
 ADAPTAR = OrderedDict([
     # 01 · Instrucciones
     (('01', 'Instrucciones', 'B12'), 'A4 → US Letter'),
-    (('01', 'Instrucciones', 'B16'), _TEMPS + '. Las vitrinas NO se apagan por la noche: pasan a conservación'),
+    (('01', 'Instrucciones', 'B16'), _TEMPS + '. Las vitrinas NO se apagan por la noche: se quedan encendidas, en su '
+     'modo nocturno o de conservación solo si el modelo lo trae (fabricante)'),
     (('01', 'Instrucciones', 'B17'), 'Scoop (porcionador) y dipper well: ' + _SCOOP + '. ' + _ALERGENOS + '. Sin «de '
      'declaración obligatoria»: en EE. UU. la etiqueta es para lo envasado (FDA Food Code 3-602.11)'),
     # 01 · Apertura
@@ -426,11 +437,11 @@ ADAPTAR = OrderedDict([
     (('01', 'Apertura', 'B9'), _A[('01', 'Apertura Cocina', 'B9')]),
     (('01', 'Apertura', 'B10'), _A[('01', 'Apertura Cocina', 'B10')]),
     (('01', 'Apertura', 'B12'), _A[('01', 'Apertura Cocina', 'B14')]),
-    (('01', 'Apertura', 'B16'), 'Vitrinas → dipping cabinets: de modo conservación (0 °F) a modo servicio (6–10 °F; '
-     'fabricante); ' + _LOG),
+    (('01', 'Apertura', 'B16'), 'Vitrinas → dipping cabinets: lo PRIMERO al llegar; si el modelo tiene modo nocturno o '
+     'de conservación, volver a modo servicio (6–10 °F; fabricante); ' + _LOG),
     (('01', 'Apertura', 'B17'), 'Cámaras de conservación → walk-in / reach-in freezers a 0 °F o menos; ' + _LOG),
     (('01', 'Apertura', 'B18'), 'Cámara de maduración → aging cooler (o tanque de maduración) a 36–39 °F; por encima de '
-     '41 °F la mezcla pasteurizada deja de estar segura (FDA Food Code 3-501.16); ' + _LOG),
+     '41 °F el responsable valora la mezcla (cuánto y cuánto tiempo) antes de usarla (FDA Food Code 3-501.16); ' + _LOG),
     (('01', 'Apertura', 'B19'), 'Abatidor de temperatura → blast freezer / hardening cabinet'),
     (('01', 'Apertura', 'B21'), _HACCP_KIT + '; lectura en °F'),
     (('01', 'Apertura', 'B25'), _LAVADO + '; frutos secos y virutas (sprinkles), en recipiente cerrado'),
@@ -438,7 +449,8 @@ ADAPTAR = OrderedDict([
     (('01', 'Apertura', 'B27'), _ALERGENOS + '; «carta de alérgenos» → allergen chart'),
     (('01', 'Apertura', 'B28'), _SALSAS),
     # 01 · Cierre
-    (('01', 'Cierre', 'B7'), 'Modo conservación a 0 °F (ES −18 °C): con producto dentro no se apagan'),
+    (('01', 'Cierre', 'B7'), 'Las vitrinas se quedan ENCENDIDAS (con producto dentro no se apagan); modo nocturno o de '
+     'conservación solo si el modelo lo trae, según el fabricante'),
     (('01', 'Cierre', 'B8'), 'Mermas → waste log: sabor, cantidad (lb o cubetas) y motivo'),
     (('01', 'Cierre', 'B14'), 'Limpiar y luego sanitizar con ' + _TIRA),
     (('01', 'Cierre', 'B16'), 'Scoops y espátulas: lavar, aclarar y sanitizar con ' + _TIRA + '; añade: vaciar, '
@@ -449,8 +461,9 @@ ADAPTAR = OrderedDict([
      'de 41 °F) y se manteca en 3-5 días (criterio del kit, dentro de los 7 del date marking de la FDA, 3-501.17); lo '
      'que se congela es el helado terminado, a 0 °F o menos'),
     (('02', 'Instrucciones', 'B6'), 'Añade al final una nota corta del kit: ' + _LICENCIA),
-    (('02', 'Pasteurización', 'B13'), _PASTEURIZAR),
-    (('02', 'Pasteurización', 'B14'), '40-50 °C → 104–122 °F'),
+    (('02', 'Pasteurización', 'B13'), '40-50 °C en ascenso → 104–122 °F mientras la mezcla SE CALIENTA, antes de la '
+     'pasteurización (nata, mantequilla, yemas y estabilizante): lo que entra después, entra crudo'),
+    (('02', 'Pasteurización', 'B14'), _PASTEURIZAR),
     (('02', 'Pasteurización', 'B15'), _ENFRIAR_MEZCLA),
     (('02', 'Pasteurización', 'B16'), 'Temperatura final de la mezcla: 41 °F o menos (lo ideal, 36–39 °F)'),
     (('02', 'Pasteurización', 'B22'), 'Maduración (aging): mínimo 4 h, lo óptimo 8-12 h, a 36–39 °F (criterio del kit)'),
@@ -463,8 +476,8 @@ ADAPTAR = OrderedDict([
     (('02', 'Mantecación', 'B21'), 'Endurecer (harden) la cubeta a 0 °F o menos en el abatidor (blast freezer / '
      'hardening cabinet)'),
     (('02', 'Mantecación', 'B22'), 'Al congelador de conservación, de 0 °F a −4 °F (ES −18/−20 °C)'),
-    (('02', 'Mantecación', 'B24'), 'Desmontar y limpiar la mantecadora como diga su fabricante (cuchillas / dasher, '
-     'junta y cilindro) y luego sanitizarla'),
+    (('02', 'Mantecación', 'B24'), 'Desmontar y limpiar la mantecadora como diga su fabricante (dasher, cuchillas '
+     'rascadoras y junta de la puerta; el cilindro es fijo: se limpia en su sitio) y luego sanitizarla'),
     (('02', 'Mantecación', 'B25'), 'Superficies del obrador y utensilios: limpiar y luego sanitizar con ' + _TIRA),
     # 03
     (('03', 'Instrucciones', 'B15'), 'Registro de jornada US: la FLSA obliga a registrar con exactitud las horas '
@@ -571,7 +584,10 @@ AJUSTE_MAQUETA_ES = True
 ALTOS_FILA = {('02', 'Mantecación', 35): 45.0}
 # Celdas ES con °C cuya EN NO lleva cifra: solo la fila 19 del cierre del 08 (sus temperaturas suben a la fila 10 con el
 # reorden; en la 19 EN queda la llave). G7 la declara; el resto de °C del ES lleva su °F en la EN
-CELSIUS_SIN_F = frozenset({('08', 'Cierre del Negocio', 'B19')})
+CELSIUS_SIN_F = frozenset({('08', 'Cierre del Negocio', 'B19'),
+                           # ronda 1 M1: el «modo conservación (−18 °C)» del ES no existe en las dipping cabinets US
+                           # de un solo termostato: la EN dice «se quedan encendidas», sin cifra
+                           ('01', 'Cierre', 'B7')})
 
 # ==========================================================================
 # REGLAS_US: las del base + las de la heladería (fuente única de las cifras y normas que el kit puede afirmar)
@@ -586,8 +602,12 @@ REGLAS_US.update([
                       '16–19 °F / sorbete 10–14 °F; cubetas a −4 °F; llegada del catering ≤ 10 °F',
                       '[fabricante] dipping cabinet y batch freezer; [criterio del kit]; FDA Food Code 2022 §3-501.11 y '
                       '§3-501.16(A)(2)')),
-    ('pasteurizacion', ('185 °F durante 15 s (cifra del kit, ES 85 °C); mínimos y registro, los de la licencia estatal '
-                        'y el pasteurizador', '[criterio del kit]; [estatal] licencia de frozen dessert / dairy')),
+    ('pasteurizacion', ('185 °F durante 15 s (cifra del kit, ES 85 °C); mínimos estatales habituales: batch 155 °F '
+                        '30 min · HTST 175 °F 25 s; mínimos y registro, los de la licencia estatal y el pasteurizador; '
+                        'grasas, yemas y polvos se añaden mientras la mezcla se calienta, antes de la pasteurización',
+                        '[criterio del kit]; [estatal] licencia de frozen dessert / dairy; N.J.A.C. 8:21-7.27; Ohio Adm. '
+                        'Code 901:11-3-05; 77 Ill. Adm. Code 785; MCL 288.735; PMO (Grade «A» Pasteurized Milk '
+                        'Ordinance)')),
     ('licencia_helado', ('fabricar o pasteurizar la mezcla propia: licencia estatal; con mezcla pasteurizada comprada '
                          'suele bastar el health permit; algunos estados licencian la mantecación y el soft serve',
                          '[estatal] Vermont Agency of Agriculture (Frozen Dessert / Milk Handlers License); '
@@ -595,27 +615,37 @@ REGLAS_US.update([
                          'exención de 2019); Ga. Comp. R. & Regs. 40-2-8-.01')),
     ('enfriar_mezcla', ('mezcla pasteurizada: 135 → 70 °F en 2 h y → 41 °F en 4 h más', 'FDA Food Code 2022 §3-501.14')),
     ('dipper_well', ('utensilios en pausa: en agua corriente que arrastre las partículas (dipper well, helado) o en agua '
-                     'a 135 °F o más', 'FDA Food Code 2022 §3-304.12(D) y (F)')),
+                     'a 135 °F o más; o en el propio alimento con el mango fuera (catering sin dipper well)',
+                     'FDA Food Code 2022 §3-304.12(A), (D) y (F)')),
     ('mano_desnuda', ('sin contacto de la mano desnuda con lo listo para consumir', 'FDA Food Code 2022 §3-301.11')),
     ('catar', ('cuchara limpia cada vez que se prueba', 'FDA Food Code 2022 §3-301.12')),
-    ('etiqueta_envasado', ('lo envasado en el local lleva nombre, ingredientes y alérgenos; lo servido a petición del '
-                           'cliente no es «packaged»', 'FDA Food Code 2022 §3-602.11; §1-201.10 (Packaged)')),
+    ('etiqueta_envasado', ('lo envasado en el local lleva nombre, ingredientes, contenido neto, nombre y lugar del '
+                           'negocio y alérgenos; lo servido a petición del cliente no es «packaged»',
+                           'FDA Food Code 2022 §3-602.11(B); §1-201.10 (Packaged)')),
     ('norma_helado', ('ice cream: al menos 4,5 lb por galón y 10 % de grasa láctea', '21 CFR 135.110')),
     ('menores', ('14-15 años: fuera del horario escolar, 7 AM - 7 PM (9 PM del 1 de junio al Labor Day), máximos por '
-                 'día y semana; equipos permitidos', '29 CFR 570.35 y 570.34; [estatal] work permits')),
+                 'día y semana; equipos permitidos; sin trabajo dentro de los congeladores (salvo entrar un momento) '
+                 'ni maquinaria eléctrica (mantecadora, pasteurizador)',
+                 '29 CFR 570.35, 570.34 y 570.33(e) y (i); [estatal] work permits')),
     ('bascula', ('venta al peso con báscula legal para el comercio', '[estatal] pesas y medidas; NIST Handbook 44 (NTEP)')),
     ('cfpm', ('un certified food protection manager en el equipo; food handler cards según el estado',
               'FDA Food Code 2022 §2-102.12; [estatal]')),
     ('seguro_frio', ('equipment breakdown con food spoilage', '[criterio del kit] seguros US')),
     ('temporada', ('alta de Memorial Day a Labor Day; National Ice Cream Month (julio) y National Ice Cream Day (3.er '
                    'domingo de julio); Juneteenth (19 de junio)', 'Proclamation 5219 (1984); 5 U.S.C. 6103')),
-    ('hielo_seco', ('guantes, sin contacto con el helado, vehículo ventilado', '[criterio del kit]')),
+    ('hielo_seco', ('guantes, sin contacto con el helado, vehículo ventilado; temperar las cubetas antes de servir',
+                    '[criterio del kit]')),
+    ('catering_servicio', ('en el evento: carrito o nevera con hielo seco, un scoop por sabor, temperatura durante el '
+                           'servicio y lo derretido se tira (no se recongela)', '[criterio del kit]; FoodSafety.gov')),
+    ('campana', (_base.REGLAS_US['campana'][0] + '; una heladería de temporada o con gofres es bajo volumen: anual',
+                 _base.REGLAS_US['campana'][1])),
     ('plazos_kit', ('mezcla 3-5 días; maduración 4-12 h; vida útil de la tabla del 02; 18-24 sabores en verano y 10-14 '
                     'en invierno; food cost < 28-32 %', '[criterio del kit]')),
 ])
-# °F que el kit puede afirmar (G7): helado (−4, 0, 6, 10, 14, 16, 19), mezcla (36, 39, 41, 70, 104, 122, 135, 185),
+# °F que el kit puede afirmar (G7): helado (−4, 0, 6, 10, 14, 16, 19), mezcla (36, 39, 41, 70, 104, 122, 135, 185;
+# ronda 1 m2: los mínimos estatales habituales 155 y 175),
 # calibración (32) y lavamanos (100)
-GRADOS_F_SPEC = {-4, 0, 6, 10, 14, 16, 19, 32, 36, 39, 41, 70, 100, 104, 122, 135, 185}
+GRADOS_F_SPEC = {-4, 0, 6, 10, 14, 16, 19, 32, 36, 39, 41, 70, 100, 104, 122, 135, 155, 175, 185}
 
 # ==========================================================================
 # Pistas y dependencias de la heladería (extraer_textos.py)
