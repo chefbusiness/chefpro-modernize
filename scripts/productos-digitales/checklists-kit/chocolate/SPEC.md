@@ -100,6 +100,19 @@ ADAPTAR); 03 «Semanal» B32 food cost 30–35 % se queda.
   (B14); B15 «enchufes» sin excluir cámaras y neveras.
 - Versión mezclada: 01, 02, 04, 06 y B01 dicen «2.1 · octubre 2026» y 03, 05, 07, 08, 09 y B02, «2.0 · agosto 2026»
   (la EN sale 2.1 en los 11).
+- **RESUELTAS en el ES LIVE (ronda 1 de la F2, 24-oct, parche en el XML de las celdas, sin cambio de versión; mismos
+  textos en `scripts/generate-tareas-chocolateria.py` y `kit-tareas-v2_0/contenido_kit_tareas_chocolateria.py`):**
+  - ERRATA 1 (seguridad): la ganache de nata fresca y las trufas de nata iban a la vitrina de 16-18 °C y a conservación
+    a 15-18 °C. Ahora van en frío a 0-4 °C: 01 «Apertura» B25, 01 «Cierre» B6, 04 «Dependiente» B29 y 02 «Moldeado» B33.
+    En 02 B31, «fecha de caducidad» para la ganache de nata fresca (Reglamento UE 1169/2011, art. 24).
+  - ERRATA 2 (alérgenos): 02 «Moldeado» B25 etiquetaba solo con lote y fecha. Ahora: denominación, ingredientes con los
+    alérgenos destacados, peso neto, lote y consumo preferente.
+  - ERRATA 3 (higiene): 01 «Apertura» B10 «reasignar tarea» a quien tiene diarrea o vómitos. Ahora: no entra en obrador
+    ni mostrador (Reglamento CE 852/2004, anexo II, cap. VIII).
+- Pendientes para la v2.x, sin ser de seguridad (REVISION-F2 m2, m3, m5 y la ERRATA 2 en el 04): cobertura con leche
+  «35-40 %» (la más usada tiene 33,6 %); moldes a 20-22 °C con el obrador a 18-20 °C; enfriar a 12-14 °C «en cámara de
+  conservación», que está a 15-18 °C; tapar los bombones sin dejar cristalizar el relleno; el 04 «Chocolatero» B12,
+  «Envasar y etiquetar», sin alérgenos.
 - Sin más erratas de fondo: lo demás que cambia es mercado (gas a diario, 10-15 días de la ganache fresca, Reyes, monas,
   comuniones, panellets).
 
