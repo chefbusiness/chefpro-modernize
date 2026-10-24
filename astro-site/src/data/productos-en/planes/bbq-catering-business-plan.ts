@@ -44,37 +44,37 @@
 // var el CTA cae a '#comprar' hasta que John cree el Payment Link).
 import type { PlanNegocioData, PlanNegocioFaq } from '../../productos/planes/types';
 
-// ── Cifras del caso US — a confirmar con F2-NOTAS (business-plans-en-6/F2-NOTAS.md §8 y cifras_caso.json) ────────────
+// ── Cifras del caso US — confirmado con F2-NOTAS §8 (24-oct) (business-plans-en-6/F2-NOTAS.md §8 y cifras_caso.json) ────────────
 // La F2 no había cerrado el caso al escribir esta ficha (24-oct): son los valores de research §8 / SPEC D100 (B4 150 ·
 // B6 75 · B5 $38, CAPEX ≈ $83,300 con la contingencia de D102, préstamo semilla $98,000 sin calibrar). Se sustituyen
 // AQUÍ, en un solo sitio, por los de cifras_caso.json; si la calibración D15 sube B4, cambian eventos, ventas, neto,
 // equilibrio, necesidad y préstamo. Los ejemplos salen de «3 Example Quotes» de la calculadora (±10 % de $22/$35/$52).
 const CASO = {
-  eventos: '150', // B4 — a confirmar con F2-NOTAS
-  invitados: '75', // B6 — a confirmar con F2-NOTAS
-  precio: '$38.00', // B5 — a confirmar con F2-NOTAS
-  ventas: '$427,500', // ventas_a1 = B4 × B5 × B6 — a confirmar con F2-NOTAS
-  inversion: '$83,300', // total de Startup Costs (contingencia 10 % × filas 7-12 = $4,500) — a confirmar con F2-NOTAS
-  circulante: '$49,800', // necesidad − inversión — a confirmar con F2-NOTAS
-  necesidad: '$133,100', // total cash needed — a confirmar con F2-NOTAS
-  propios: '$35,000', // B30 — a confirmar con F2-NOTAS
-  prestamo: '$98,000', // B31 (CALIBRAR, regla D85) — a confirmar con F2-NOTAS
-  neto: '$30,700', // beneficio neto año 1 — a confirmar con F2-NOTAS
-  netoPct: '7.2%', // — a confirmar con F2-NOTAS
-  equilibrio: '126', // eventos/año de equilibrio — a confirmar con F2-NOTAS
-  dscr: '3.0×', // DSCR mínimo — a confirmar con F2-NOTAS
-  marketing: '$10,000', // fijo de marketing (research §8) — a confirmar con F2-NOTAS
-  seguros: '$6,000', // B27 — a confirmar con F2-NOTAS
-  pesEventos: '113', // Scenarios pesimista — a confirmar con F2-NOTAS
-  pesPrecio: '$34.20', // — a confirmar con F2-NOTAS
-  pesInvitados: '68', // — a confirmar con F2-NOTAS
-  ejDropoff: '$22', // «3 Example Quotes»: corporate drop-off 40 inv. — a confirmar con F2-NOTAS
-  ejGraduacion: '$35', // graduation party staffed buffet 70 inv. — a confirmar con F2-NOTAS
-  ejBoda: '$52', // wedding 130 inv. full-service + live pit on site — a confirmar con F2-NOTAS
-  livePit: '$650', // fee por defecto del live pit on site (D105) — a confirmar con F2-NOTAS
-  cortes: '13', // cortes de «Meat Yield & Smoke Schedule» (D106) — a confirmar con F2-NOTAS
-  menuStyles: '10', // menu styles del docx §2 (D99) — a confirmar con F2-NOTAS
-  formulas: '700', // «more than N» fórmulas del libro (el del catering pasa de 700) — a confirmar con F2-NOTAS
+  eventos: '150', // B4 — confirmado con F2-NOTAS §8 (24-oct)
+  invitados: '75', // B6 — confirmado con F2-NOTAS §8 (24-oct)
+  precio: '$38.00', // B5 — confirmado con F2-NOTAS §8 (24-oct)
+  ventas: '$427,500', // ventas_a1 = B4 × B5 × B6 — confirmado con F2-NOTAS §8 (24-oct)
+  inversion: '$83,300', // total de Startup Costs (contingencia 10 % × filas 7, 8, 11, 12 y 15 = $4,500) — confirmado con F2-NOTAS §8 (24-oct)
+  circulante: '$52,371', // necesidad − inversión — confirmado con F2-NOTAS §8 (24-oct)
+  necesidad: '$135,671', // total cash needed — confirmado con F2-NOTAS §8 (24-oct)
+  propios: '$35,000', // B30 — confirmado con F2-NOTAS §8 (24-oct)
+  prestamo: '$101,000', // B31 (CALIBRAR, regla D85) — confirmado con F2-NOTAS §8 (24-oct)
+  neto: '$29,816', // beneficio neto año 1 — confirmado con F2-NOTAS §8 (24-oct)
+  netoPct: '7.0%', // — confirmado con F2-NOTAS §8 (24-oct)
+  equilibrio: '128', // eventos/año de equilibrio — confirmado con F2-NOTAS §8 (24-oct)
+  dscr: '2.43×', // DSCR mínimo — confirmado con F2-NOTAS §8 (24-oct)
+  marketing: '$10,000', // fijo de marketing (research §8) — confirmado con F2-NOTAS §8 (24-oct)
+  seguros: '$6,000', // B27 — confirmado con F2-NOTAS §8 (24-oct)
+  pesEventos: '113', // Scenarios pesimista — confirmado con F2-NOTAS §8 (24-oct)
+  pesPrecio: '$34.20', // — confirmado con F2-NOTAS §8 (24-oct)
+  pesInvitados: '68', // — confirmado con F2-NOTAS §8 (24-oct)
+  ejDropoff: '$22.50', // «3 Example Quotes»: corporate drop-off 40 inv. — confirmado con F2-NOTAS §8 (24-oct)
+  ejGraduacion: '$34.50', // graduation party staffed buffet 70 inv. — confirmado con F2-NOTAS §8 (24-oct)
+  ejBoda: '$54.00', // wedding 130 inv. full-service + live pit on site — confirmado con F2-NOTAS §8 (24-oct)
+  livePit: '$650', // fee por defecto del live pit on site (D105) — confirmado con F2-NOTAS §8 (24-oct)
+  cortes: '13', // cortes de «Meat Yield & Smoke Schedule» (D106) — confirmado con F2-NOTAS §8 (24-oct)
+  menuStyles: '10', // menu styles del docx §2 (D99) — confirmado con F2-NOTAS §8 (24-oct)
+  formulas: '700', // «more than N» fórmulas del libro (el del catering pasa de 700) — confirmado con F2-NOTAS §8 (24-oct)
 };
 
 // FAQ on-page Y FAQPage (un solo array: lo que ve el visitante es lo que declara el schema).
@@ -89,7 +89,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'How much does it cost to start a BBQ catering business?',
-    a: `It depends mostly on the smoker and the van. A lean start — a used smoker, holding gear and drop-off only — can come in around $25,000 to $35,000 (a kit estimate). The kit's example buys new: ${CASO.inversion} in startup costs plus ${CASO.circulante} of working capital, for ${CASO.necesidad} in total cash needed. The Startup Costs sheet lists every line — a new 500-gallon-class smoker trailer ($20,000) and its upfit, a live-fire rig, commissary storage, a used cargo van ($18,000) and its upfit, LLC and legal, first-year permits and certifications, plan review or trailer inspection, catering software, smallwares and pit tools, opening inventory, website, launch and a first bridal show, and holding and service equipment — plus the commissary deposit, rent before opening and a contingency. Your own truck tows the trailer; if you need one, a used pickup rated to tow at least 3,000 lb (1,360 kg) is a kit estimate of $25,000 to $40,000. Replace each line with your own quotes.`,
+    a: `It depends mostly on the smoker and the van. A lean start — a used smoker, holding gear and drop-off only — can come in around $25,000 to $35,000 (a kit estimate). The kit's example buys new: ${CASO.inversion} in startup costs plus ${CASO.circulante} of working capital, for ${CASO.necesidad} in total cash needed. The Startup Costs sheet lists every line — a new 500-gallon-class smoker trailer ($20,000) and its upfit, a live-fire rig, commissary storage, a used cargo van ($18,000) and its upfit, LLC and legal, first-year permits and certifications, plan review or trailer inspection, catering software, smallwares and pit tools, opening inventory, website, launch and a first bridal show, and holding and service equipment — plus the commissary deposit, rent before opening and a contingency. Your own pickup tows the trailer; if you need one, a used pickup rated to tow at least 3,000 lb (1,360 kg) is a kit estimate of $25,000 to $40,000. Replace each line with your own quotes.`,
   },
   {
     q: 'How profitable is a BBQ business?',
@@ -241,7 +241,7 @@ const data: PlanNegocioData = {
       { icon: 'FileSpreadsheet', title: 'BBQ Catering Financial Projections (Excel, 9 Sheets)', desc: `Is a BBQ business profitable? Assumptions, startup costs, 3-year P&L, break-even, scenarios, staffing, 12-month cash flow, financing and instructions. More than ${CASO.formulas} linked formulas: change events per year, price per guest or guests per event and the whole workbook recalculates.` },
       { icon: 'Calculator', title: 'BBQ Catering Pricing Calculator (Pounds of Meat per Guest to Quote)', desc: 'BBQ catering prices from your own costs. Three packages — drop-off, full-service BBQ buffet with a carving station and live-fire premium — plus a live pit on site switch with its flat fee; guests and guest minimum, ounces of cooked meat per guest, your meat mix, the raw price per pound you pay (you type it), sides, bread and sauces, disposables, wood or charcoal, pitmasters and servers with wages and payroll taxes, rentals, mileage, event fee, target margin, service charge, sales tax, a 50% nonrefundable deposit and cancellation tiers. Out come raw and cooked pounds per cut, the price per guest and its equivalent per pound of cooked meat, the total, the deposit, the balance and the margin it really leaves. Three example quotes: a corporate drop-off, a graduation party buffet and a wedding with the pit on site.' },
       { icon: 'Thermometer', title: 'Meat Yield & Smoke Schedule + Shopping List by Guest Count', desc: `Your BBQ catering menu in pounds: ${CASO.cortes} cuts, from packer brisket and pork butt to ribs, chicken, sausage, tri-tip, picanha and whole hog, each with raw weight per piece, pit temperature in °F (°C), the quality target and the FDA Food Code minimum in separate columns, cook, rest and hold times, yield (brisket and pork butt about 50%) and a "start the pit by" time worked back from serving time. The shopping list scales your guest count — and 40, 80, 150 and 300 guests — into raw pounds per cut, packers, butts and racks, pans of sides, rolls, sauce, wood or charcoal, butcher paper and foil, hotel pans, hot boxes, pitmasters and servers.` },
-      { icon: 'Coins', title: 'BBQ Catering Startup Costs, Line by Line', desc: 'How much does it cost to start a BBQ catering business? A new 500-gallon-class smoker trailer and its upfit (warming cabinet, storage boxes, and a hand sink and water tanks if your county requires them), a live-fire rig (Santa Maria grill, Argentine parrilla, asado crosses), commissary storage, a used cargo van and its upfit, LLC and legal, first-year permits and certifications, plan review or trailer inspection, catering software, smallwares and pit tools, opening inventory, website, launch and your first bridal show, and holding and service equipment — insulated carriers, hot boxes, chafing dishes and a carving board — each with a reference price you replace with your quotes, plus the commissary deposit, rent before opening, a contingency and working capital. Your own truck tows the trailer.' },
+      { icon: 'Coins', title: 'BBQ Catering Startup Costs, Line by Line', desc: 'How much does it cost to start a BBQ catering business? A new 500-gallon-class smoker trailer and its upfit (warming cabinet, storage boxes, and a hand sink and water tanks if your county requires them), a live-fire rig (Santa Maria grill, Argentine parrilla, asado crosses), commissary storage, a used cargo van and its upfit, LLC and legal, first-year permits and certifications, plan review or trailer inspection, catering software, smallwares and pit tools, opening inventory, website, launch and your first bridal show, and holding and service equipment — insulated carriers, hot boxes, chafing dishes and a carving board — each with a reference price you replace with your quotes, plus the commissary deposit, rent before opening, a contingency and working capital. Your own pickup tows the trailer.' },
       { icon: 'TrendingUp', title: 'Break-Even in Events per Year + 3 Scenarios', desc: 'How many events a year you need at your price per guest (excl. sales tax) and guest count to cover every cost, and the cash break-even with loan payments in and depreciation out, with a sensitivity table and a plain-English reading of the result. Plus pessimistic, base and optimistic scenarios side by side, each with its own estimated cash balance — honest about what a slow first year does to your cash.' },
       { icon: 'Users', title: 'Staffing & Event Labor (4 Roles)', desc: 'Owner / Pitmaster & Sales, a pit cook who watches the overnight cook, hourly W-2 event staff (servers, buffet attendants, carvers) and a part-time prep cook who drives the van, with gross pay, employer payroll taxes and the real cost of each role. The sheet checks the event hours you need (hours per event × people per event × events) against the hours you hire, and flags any pay below the minimum wage for the hours worked.' },
       { icon: 'ShieldCheck', title: 'Startup Checklist (68 Tasks, 6 Phases)', desc: "Business setup (LLC, EIN, seller's permit, business license, your catering contract with a 50% deposit and cancellation tiers, a HACCP-based food safety plan), pits, fire and permits (a written commissary agreement, your county on whether smoking at the event makes the trailer a mobile food unit, the fire marshal, the trailer at the DMV, commercial auto and inland marine), equipment, staff (W-2, never 1099; ServSafe Manager and food handler cards), marketing (The Knot, WeddingWire, Zola, ezCater, Thumbtack, Google Business Profile, bridal shows and a launch tasting) and your first 90 days." },
