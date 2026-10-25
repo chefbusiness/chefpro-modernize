@@ -1,8 +1,8 @@
 # SESSION HANDOFF — 25-oct-2026 · Plan de Negocio: Heladería Artesanal (ES, 35 €) + normativa derogada (sesión Claude Code, Mac + VPS)
 
 ## 0. Estado en una línea
-**Producto nº 52 LISTO a falta del Payment Link de John** (PR #161, draft, rama `feat/plan-negocio-heladeria`, preview en verde).
-**PR #160 (normativa derogada en 7 entregables vendidos) LISTO y verificado: falta el merge**, porque el modo automático lo bloqueó («Merge Without Review») y lo tiene que aprobar John.
+✅ **CERRADO: producto nº 52 LIVE el 25-oct a las 15:52 (Madrid)** — PR #161 → merge `cbdcccd6`. **PR #160 fusionado** (`daf6f28a`).
+Los dos merges los aprobó John por escrito («apruebo el merge que necesites»). Lo que queda abierto está en §5 y en la nota al carril Cursor.
 
 ## 1. Lo que pidió John y lo que se decidió
 - John (25-oct): «revisa cómo estamos en ambos frentes» → revisión hecha → «adelante con tu plan».
@@ -35,7 +35,18 @@
 - Gates contra el preview: `gate-flujo-postpago --only` solo falla por el Payment Link (#comprar, env, `payment-links.ts`). Cripto, descargas, acceso y dashboard, OK.
 - Consumo: ≈ 2,2 M de tokens de subagentes (techo M: 5 M). Mac a 38-57 °C toda la sesión.
 
-## 3. Para cerrar la Heladería (cuando John cree el link)
+## 3. Cierre de la Heladería — HECHO el 25-oct (sesión Claude Code)
+- Link de John `https://buy.stripe.com/5kQ28k94w78i2QT8Zn6oo21` (`plink_1UUSdP4CcdRGidmEm3lXcQyH`), comprobado con la CLI: 3500 EUR,
+  pago único, *exclusive*, impuesto automático, factura, redirección a `/access`. Env creada (builds, all), `payment-links.ts` → `54cfb41a`.
+- Preview: el link en los 4 botones y `gate-flujo-postpago --only` 0 fallos → ready → merge.
+- Gates LIVE: postpago 1 producto / 4 entregables / 0 fallos / 0 avisos · `tienda-gate --base https://aichef.pro` verde (slug ya en
+  `PLANES_ES`) · `robots-gate --live` verde · Miselup 104/104 · `fase6-gate.py https://aichef.pro` 3/2283, que son los 3 conteos
+  congelados de siempre. Sitemap reenviado a GSC (14:59Z).
+- Correo: prueba a John (`01a17393…`) · borrador `3297bad5-26c1-4420-8137-cdfaf11b4067` → routine `trig_0196bsymHKgB8728KxtTmBdk`
+  (29-oct 15:07Z) lo programa para el **28-nov 08:00Z**. Siguiente hueco ES: 3-dic.
+- Pendiente para el carril Cursor (no se toca desde aquí): `plan-heladeria/NOTA-CARRIL-CURSOR.md`.
+
+Pasos que se siguieron (referencia para el próximo):
 1. Ficha de Stripe: `PAYMENT_LINKS_PENDIENTES_JOHN.md` (en la rama). EUR 35, *exclusive*, impuesto automático, factura, redirección a `/plan-negocio-heladeria-access?session_id={CHECKOUT_SESSION_ID}`.
 2. Comprobar el link con la CLI: `stripe get /v1/payment_links/<plink> --live` y sus `line_items`.
 3. Env `VITE_STRIPE_PAYMENT_LINK_PLAN_HELADERIA` (scope builds) → `sync-payment-links.py` → commit.
@@ -45,12 +56,12 @@
    - `tienda-gate.py --base https://aichef.pro` (añadir el slug a `PLANES_ES` tras el LIVE)
    - `robots-gate.py --live`
    - `miselup-gate.py`
-   - `fase6-gate.py https://aichef.pro/plan-negocio-heladeria`
+   - `fase6-gate.py https://aichef.pro` (recibe la URL BASE: con la de la landing da 185 falsos fallos)
 6. Reenviar el sitemap en GSC.
 7. Correo ES en el hueco **28-nov 08:00Z**: borrador con `resend-broadcast.py` (las guardas piden la landing en 200, o sea, tras el LIVE) + prueba a John + routine que lo programe el 29-oct o después (Resend no programa a más de 30 días).
 8. Avisar al carril Cursor: `plan-heladeria/NOTA-CARRIL-CURSOR.md` (páginas `/usos/` de heladería, 3 posts ES y la FAQ de `heladero-consultor` que promete un 12-22 % de neto).
 
-## 4. PR #160 — normativa derogada (listo, falta el merge)
+## 4. PR #160 — normativa derogada (fusionado el 25-oct, `daf6f28a`)
 - 7 entregables vendidos citaban como vigentes el RD 1420/2006 (anisakis) o el RD 3484/2000. Los dos los derogó el RD 1021/2022.
   - Kits de tareas sushi-bar 03 y marisquería 03: «−20 °C 7 días» → «−20 °C ≥ 24 h o −35 °C ≥ 15 h».
   - Kit de inventario 04.
