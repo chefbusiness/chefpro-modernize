@@ -421,6 +421,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-25): gemelo de plan-negocio-pizzeria, producto independiente con su propio acceso
+  // (mismo patrón que paella-catering-business-plan).
+  'pizza-shop-business-plan': {
+    accessPath: '/en/digital-products/pizza-shop-business-plan/access',
+    emailSubject: 'Your access to Pizza Shop Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Pizza Shop Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pizza dough and food cost calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
   // (mismo patrón que mobile-bar-business-plan).
   'food-cost-menu-engineering-guide': {

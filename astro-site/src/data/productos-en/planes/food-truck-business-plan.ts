@@ -325,6 +325,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/mobile-bar-business-plan', label: 'Mobile Bar Business Plan Kit' },
     { href: '/en/digital-products/bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit' },
     { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },
+    { href: '/en/digital-products/pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     // Post pilar del blog EN (18-oct-2026): captación para «how to start a food truck business».
     { href: '/en/blog/how-to-start-a-food-truck-business', label: 'How to Start a Food Truck Business' },

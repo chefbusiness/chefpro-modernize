@@ -40,6 +40,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'mobile-bar-business-plan': { accessPath: '/en/digital-products/mobile-bar-business-plan/access', label: 'Mobile Bar Business Plan Kit', lang: 'en' },
   'bbq-catering-business-plan': { accessPath: '/en/digital-products/bbq-catering-business-plan/access', label: 'BBQ Catering Business Plan Kit', lang: 'en' },
   'paella-catering-business-plan': { accessPath: '/en/digital-products/paella-catering-business-plan/access', label: 'Paella Catering Business Plan Kit', lang: 'en' },
+  'pizza-shop-business-plan': { accessPath: '/en/digital-products/pizza-shop-business-plan/access', label: 'Pizza Shop Business Plan Kit', lang: 'en' },
   'food-cost-menu-engineering-guide': { accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access', label: 'Food Cost + Menu Engineering Guide', lang: 'en' },
   'how-to-open-a-pastry-shop': { accessPath: '/en/digital-products/how-to-open-a-pastry-shop/access', label: 'How to Open a Pastry Shop', lang: 'en' },
   'restaurant-checklist-templates': { accessPath: '/en/digital-products/restaurant-checklist-templates/access', label: 'Restaurant Checklists Kit Pro', lang: 'en' },

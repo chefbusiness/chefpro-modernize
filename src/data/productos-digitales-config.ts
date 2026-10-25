@@ -1318,6 +1318,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-25): twin of plan-negocio-pizzeria, independent product.
+  'pizza-shop-business-plan': {
+    id: 'pizza-shop-business-plan',
+    name: 'Pizza Shop Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/pizza-shop-business-plan/access',
+    emailSubject: 'Your access to Pizza Shop Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Pizza Shop Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pizza dough and food cost calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Pizza Shop Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pizza dough and food cost calculator and the 80-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/pizza-shop-business-plan/pizza-shop-business-plan.docx',
+      'plan-financiero': '/dl/pizza-shop-business-plan/pizza-shop-financial-projections.xlsx',
+      'checklist-apertura': '/dl/pizza-shop-business-plan/pizza-shop-startup-checklist.xlsx',
+      'calculadora-masa': '/dl/pizza-shop-business-plan/pizza-dough-food-cost-calculator.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
   'food-cost-menu-engineering-guide': {
     id: 'food-cost-menu-engineering-guide',

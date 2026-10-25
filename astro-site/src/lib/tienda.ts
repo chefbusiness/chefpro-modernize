@@ -197,6 +197,15 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (25-oct-2026): Pizza Shop Business Plan Kit (SPEC business-plans-en-8 D133/D152). vivo: true en la rama, que
+    // se fusiona cuando existe el Payment Link (mismo criterio que el Paella, el BBQ y el Mobile Bar Business Plan Kit).
+    familia: 'plan-negocio-pizzeria',
+    productos: {
+      es: { slug: 'plan-negocio-pizzeria', vivo: true },
+      en: { slug: 'pizza-shop-business-plan', vivo: true },
+    },
+  },
+  {
     // Tienda EN (15-oct-2026): Food Cost + Menu Engineering Guide, primera guía de la tienda EN
     // (SPEC guia-food-cost-en D1). vivo: true en la rama, que se fusiona cuando existe el Payment Link.
     familia: 'guia-food-cost-ingenieria-menu',

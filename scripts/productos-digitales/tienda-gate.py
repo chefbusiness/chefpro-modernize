@@ -75,8 +75,9 @@ KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gesti
 # PlanNegocioLandingPage recibe `lang` desde el 4-oct-2026 (planes de negocio EN): sus 10 landings ES
 # tienen que seguir byte a byte iguales, igual que las de KitExcel. Las que estrenan gemelo EN cambian SOLO en el <head>
 # (hreflang es + en + x-default) y van en --esperadas en el PR que lo estrena: las últimas,
-# /plan-negocio-parrillero-asador-eventos (gemelo EN: BBQ Catering Business Plan Kit, 24-oct-2026) y
-# /plan-negocio-paellero-eventos (gemelo EN: Paella Catering Business Plan Kit, 24-oct-2026).
+# /plan-negocio-parrillero-asador-eventos (gemelo EN: BBQ Catering Business Plan Kit, 24-oct-2026),
+# /plan-negocio-paellero-eventos (gemelo EN: Paella Catering Business Plan Kit, 24-oct-2026) y
+# /plan-negocio-pizzeria (gemelo EN: Pizza Shop Business Plan Kit, 25-oct-2026).
 PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
              '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
              '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',

@@ -520,11 +520,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-pizzeria',
     url: '/plan-negocio-pizzeria',
     price: '€35',
-    name: { es: 'Plan de Negocio: Pizzería Napolitana', en: 'Neapolitan Pizzeria Business Plan (Spain)' },
+    name: { es: 'Plan de Negocio: Pizzería Napolitana', en: 'Pizza Shop Business Plan Kit' },
     description: {
       es: 'Pizzería con horno de leña: plan financiero Excel, plan en Word, checklist de apertura y calculadora de masa y escandallo.',
-      en: 'Word business plan, Excel financial projections, opening checklist and dough and costing calculator for a wood-fired pizzeria.',
+      en: 'Word business plan, Excel financial projections, pizza dough and food cost calculator and startup checklist.',
     },
+    // Tienda EN (25-oct-2026): producto propio, `pizza-shop-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/pizza-shop-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',

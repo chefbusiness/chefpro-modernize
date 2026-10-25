@@ -382,6 +382,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-25): gemelo de plan-negocio-pizzeria (ver verify-purchase.ts).
+  'pizza-shop-business-plan': {
+    accessPath: '/en/digital-products/pizza-shop-business-plan/access',
+    emailSubject: 'Your access to Pizza Shop Business Plan Kit',
+    emailTitle: 'Access your Pizza Shop Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pizza dough and food cost calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu (ver verify-purchase.ts).
   'food-cost-menu-engineering-guide': {
     accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',
