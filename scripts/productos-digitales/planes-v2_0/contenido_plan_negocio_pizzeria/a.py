@@ -19,9 +19,9 @@ Ventas a régimen = 66 × 19,50 × 300 = 386.100 €. La estacionalidad va ROTAD
 
 IVA (SPEC D6): la comida al 10 % (sala, llevar y domicilio, sin partir); la bebida con la LÍNEA PARTIDA del motor
 (`grupo_a.py:2291-2314`): su columna H («Bebida para llevar o a domicilio al 21 %») declara la parte que sale del local
-al tipo general (alcohol y refrescos con azúcares añadidos), H = 7 %; el resto, al 10 %. Con la línea partida,
+al tipo general (alcohol y refrescos con azúcares o edulcorantes añadidos), H = 7 %; el resto, al 10 %. Con la línea partida,
 `iva_bebida` (B63) no tiene efecto y `pct_bebida_alc` (B62) sólo mueve el IVA SOPORTADO de la compra de bebida: por eso
-lleva rótulo propio y vale el 80 % de la compra (cerveza, vino y refrescos con azúcar al 21 %; agua y café al 10 %).
+lleva rótulo propio y vale el 80 % de la compra (cerveza, vino y refrescos con azúcares o edulcorantes añadidos al 21 %; agua y café al 10 %).
 `IVA_COMPRAS` es la compra de COMIDA (6,4 %); con la bebida al 18,8 %, la compra entera sale al 8,9 % del research.
 
 ORIGEN DE CADA CIFRA (sexto campo de cada tupla, no se imprime): «research §n» = `F1-research-pizzeria.md` §n (casi
@@ -54,13 +54,17 @@ VOCABULARIO = {
     'El libro manda al general sólo el alcohol: si compras refrescos o zumos con azúcares añadidos, su factura '
     'también va al 21':
         'En las compras, el libro manda al general la parte de la bebida que declara la celda «Bebida que compras al '
-        '21 %» de esta hoja: la cerveza, el vino y los refrescos con azúcares añadidos, cuya factura va al 21',
+        '21 %» de esta hoja: la cerveza, el vino y los refrescos con azúcares o edulcorantes añadidos, cuya factura va al '
+        '21',
     'el alcohol que sale por delivery, al general; el pan común y las harinas panificables, al superreducido (art. '
     '91.Dos.1.1.º':
         'la parte de la bebida que sale para llevar o a domicilio y declara la columna H de su línea (alcohol y '
-        'refrescos con azúcares añadidos), al general (art. 91.Uno.1.1.º',
+        'refrescos con azúcares o edulcorantes añadidos), al general (art. 91.Uno.1.1.º',
     'los alimentos —bollería y pastelería incluidas—, que son':
         'los alimentos —las pizzas incluidas—, que son',
+    # Instrucciones!A8 (frase del motor; LIVA art. 91.Uno.1.1.º b): «azúcares o edulcorantes añadidos»
+    'el alcohol y los refrescos o zumos con azúcares añadidos para llevar':
+        'el alcohol y los refrescos o zumos con azúcares o edulcorantes añadidos para llevar',
     # resto del molde en Tesorería!D31 (barrido_es.py: «versión 1.1»; = heladería)
     'El documento Word del pack sigue en la versión 1.1 y no lee esta celda: las cifras válidas son las de este libro':
         'El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro',
@@ -89,7 +93,7 @@ SUPUESTOS = {
     'ticket_medio': (
         None, None, 19.50, None,
         'SIN IVA, por comensal: medio entrante, una pizza, 1,3 bebidas y algún postre o café, unos 22 € con IVA en sala. '
-        'La Margherita de la carta del caso cuesta 10 € con IVA, en la parte baja de la mediana de 10,90 € de 14 '
+        'La Margherita de la carta del caso cuesta 10 € con IVA, algo por debajo de la mediana de 10,90 € de 14 '
         'pizzerías de Madrid, Barcelona, Valencia, Marbella y Tenerife (octubre de 2026). El precio con IVA está en la '
         'fila «PVP equivalente con IVA» de abajo',
         'research §2-§3 (carta del caso) [estimado]'),
@@ -215,9 +219,9 @@ SUPUESTOS = {
         'research §3 dice «= heladería»: 10 años, el valor publicado de la heladería (cumple el coeficiente del '
         'mobiliario)'),
     'pct_bebida_alc': (
-        None, 'Bebida que compras al 21 % (alcohol y refrescos con azúcar) sobre el total de bebida', 0.80, None,
-        'Sólo mueve el IVA que SOPORTAS al comprar la bebida: la cerveza, el vino y los refrescos con azúcares '
-        'añadidos te los facturan al 21 % y el agua y el café, al 10 %; con un 80 % sale un 18,8 %. El IVA que '
+        None, 'Bebida que compras al 21 % (alcohol y refrescos azucarados o edulcorados) sobre el total de bebida', 0.80, None,
+        'Sólo mueve el IVA que SOPORTAS al comprar la bebida: la cerveza, el vino y los refrescos con azúcares o '
+        'edulcorantes añadidos te los facturan al 21 % y el agua y el café, al 10 %; con un 80 % sale un 18,8 %. El IVA que '
         'REPERCUTES lo fija la línea de bebida del P&L (columna H)',
         'research §1 (IVA de compras) · LIVA art. 91 (BOE)'),
     'aforo': (
@@ -275,7 +279,8 @@ SUPUESTOS = {
     'iva_bebida': (
         None, None, 0.10, None,
         'SIN EFECTO en este libro: el IVA que repercute la bebida lo fija su línea del P&L. En sala, todo al 10 % (art. '
-        '91.Uno.2.2.º de la Ley 37/1992); para llevar o a domicilio, el alcohol y los refrescos con azúcares añadidos, '
+        '91.Uno.2.2.º de la Ley 37/1992); para llevar o a domicilio, el alcohol y los refrescos con azúcares o edulcorantes '
+        'añadidos, '
         'al 21 %, en la columna H de esa línea',
         'SPEC D6 · Ley 37/1992 art. 91.Uno.1.1.º y 2.2.º'),
 }
@@ -294,7 +299,8 @@ LINEAS_INGRESO = (
       'pct': 0.07,
       'tipo': 0.21,
       'nota': 'La columna H es la parte de la bebida que sale del local y va al 21 % (alcohol y refrescos con '
-              'azúcares añadidos: art. 91.Uno.1.1.º de la Ley 37/1992); el agua, el café y los zumos sin azúcar, y '
+              'azúcares o edulcorantes añadidos: art. 91.Uno.1.1.º de la Ley 37/1992); el agua, el café y los zumos sin '
+              'azúcares ni edulcorantes añadidos, y '
               'toda la bebida en sala, al 10 %. Un 7 % = un 1,3 % de las ventas'}),
 )
 
@@ -451,8 +457,11 @@ INSTRUCCIONES = {
         '7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización '
         'del préstamo. Si la diferencia sale en rojo, el plan no está financiado.',
         '8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel '
-        'manda. La calculadora de masa y escandallo del pack va aparte: el coste de cada pizza que te dé es el que '
-        'tienes que llevar a la celda de coste de la comida de la hoja de Supuestos.',
+        'manda. La calculadora de masa y escandallo del pack va aparte y sirve para ESCANDALLAR cada pizza: no copies el '
+        'food cost de una pizza en la hoja de Supuestos. La celda «Coste de mercancía sobre las ventas de COMIDA» es la '
+        'media ponderada de TODA la carta (pizzas, entrantes y postres, cada uno por lo que vende) más la merma, y por '
+        'eso sale bastante más alta que el food cost de la Margherita. Con los escandallos de tu carta, comprueba que esa '
+        'media cuadra.',
     ],
     'referencias': [
         ('Mes 1 del plan', 'Septiembre', 'Decisión del plan',
@@ -460,7 +469,8 @@ INSTRUCCIONES = {
          'intacto. La fila de estacionalidad de la Tesorería ya va girada'),
         ('Coste de la Margherita', 'Un 15 % de su precio sin IVA',
          'Estimación del kit con los gramajes del pliego de la ETG (Reglamento (UE) 97/2010)',
-         'Harina, fior di latte, tomate y aceite: unos 1,36 € con merma sobre 9,09 € sin IVA. Con búfala, burrata o '
+         'Masa, tomate, fior di latte, aceite y albahaca: unos 1,32 € con merma sobre 9,09 € sin IVA, según la calculadora '
+         'del pack. Con búfala, burrata o '
          'embutido italiano, un 20-28 %'),
         ('Margherita en carta', '10,90 € con IVA (mediana)',
          'Cartas de 14 pizzerías de Madrid, Barcelona, Valencia, Marbella y Tenerife, octubre de 2026',
@@ -479,7 +489,8 @@ INSTRUCCIONES = {
          'Guías del sector, 2025-2026: compruébalo en tu contrato',
          'El plan básico de Uber Eats ronda el 30 %. La recogida en el local no paga comisión'),
         ('IVA de la pizza', '10 %', 'Ley 37/1992, art. 91.Uno.1.1.º y 2.2.º',
-         'En sala, para llevar y a domicilio. El alcohol y los refrescos con azúcares añadidos que salen del local, '
+         'En sala, para llevar y a domicilio. El alcohol y los refrescos con azúcares o edulcorantes añadidos que salen '
+         'del local, '
          'al 21 %'),
         ('Salario mínimo interprofesional 2026', '1.221 € al mes en 14 pagas', 'Real Decreto 126/2026',
          'A prorrata en jornada parcial'),

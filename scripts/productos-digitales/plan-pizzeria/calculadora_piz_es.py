@@ -68,8 +68,8 @@ ENT_MASA = [
     ('merma', 'Merma de amasado y boleado (%)', PCT, 0.03, None,
      'Estimación del kit: masa que se queda en la amasadora, el banco y las manos. Se suma a la masa necesaria.'),
     ('h_l', 'Harina por litro de agua (g)', GR, 1800, (1600, 1800),
-     'Pliego: hasta 1.800 g de harina por litro de agua («punto de amasado»). El mínimo de 1.600 g es el que da una absorción '
-     'del 62 % (cálculo del kit sobre el rango de 55-62 % del pliego).'),
+     'El pliego solo fija el máximo: hasta 1.800 g de harina por litro de agua («punto de amasado»). El mínimo de 1.600 g '
+     '(62,5 % de hidratación) es un cálculo del kit sobre la absorción de 55-62 % que el pliego pide a la harina.'),
     ('s_l', 'Sal por litro de agua (g)', GR, 52.5, (50, 55), 'Pliego: 50 a 55 g de sal por litro de agua.'),
     ('l_l', 'Levadura de cerveza fresca por litro de agua (g)', GR, 3, (3, 3), 'Pliego: 3 g por litro de agua.'),
     ('agua_l', 'Agua por litro (g)', GR, 1000, None, 'Constante: un litro de agua pesa 1.000 g. No se edita.'),
@@ -130,7 +130,7 @@ PIZZAS = OrderedDict([
 ])
 NP, NI = len(PIZZAS), len(ING)
 PCOL = [openpyxl.utils.get_column_letter(5 + j) for j in range(NP)]               # E..L
-ESC_IN = [('iva', 'IVA de la pizza (%)', PCT, 0.10, 'Comida preparada, en sala, para llevar y a domicilio: 10 % (Ley 37/1992, art. 91.Uno.2.2.º).'),
+ESC_IN = [('iva', 'IVA de la pizza (%)', PCT, 0.10, 'Comida preparada, en sala, para llevar y a domicilio: 10 % (Ley 37/1992, art. 91.Uno.1.1.º y 2.2.º).'),
           ('obj', 'Food cost objetivo (% sobre el precio sin IVA)', PCT, 0.25, 'Referencia habitual de pizzería: 22-30 %. Pon el que te marque tu plan financiero.'),
           ('tol', 'Margen de vigilancia sobre el objetivo (puntos)', PCT, 0.05, 'Hasta este margen por encima del objetivo, el semáforo dice «Vigila el coste»; más allá, «Por encima».'),
           ('caja', 'Coste de la caja para llevar (€, sin IVA)', EUR, 1.00, 'Research: caja de pizza de 33 cm aprox. 1 € la unidad. Pon el de tu proveedor.')]
@@ -554,8 +554,9 @@ INSTRUCCIONES = [
      'de pizzería, fior di latte y tomate pelado de catálogos de mayoristas, aceite de oferta, caja de 33 cm); el resto son estimaciones '
      'del kit. Cámbialos por los de tu proveedor antes de decidir precios. El precio de carta de ejemplo (9,50 a 15,50 €, Margherita a 10 €) '
      'es el del caso del plan de negocio.', False),
-    ('El IVA de la comida preparada para consumir en el local, para llevar o a domicilio es el 10 % (Ley 37/1992, art. 91.Uno.2.2.º). Las '
-     'bebidas alcohólicas y los refrescos con azúcar que salen del local llevan el 21 % y no están en este escandallo.', False),
+    ('El IVA de la comida preparada para consumir en el local, para llevar o a domicilio es el 10 % (Ley 37/1992, art. 91.Uno.1.1.º y '
+     '2.2.º). Las bebidas alcohólicas y los refrescos con azúcares o edulcorantes añadidos que salen del local llevan el 21 % y no '
+     'están en este escandallo.', False),
     ('Fuentes: pliego de condiciones de la ETG «Pizza Napoletana» (Reglamento (UE) n.º 97/2010, anexo II); Reglamento de Ejecución (UE) '
      '2022/2313; Reglamento (UE) 2024/1143, arts. 68 a 73; Ley 37/1992 del IVA, art. 91; research del producto (octubre 2026).', False),
 ]

@@ -4,7 +4,7 @@ se le pasen buscando los prohibidos de la SPEC (España 2026, validado, freelanc
 CNAE, RGSEAA para el minorista, licencia de apertura, RD 895/2013, RD 393/2007, neto «15-25 %», versión anterior…),
 los restos de los moldes (Food Truck, Tapas Bar —la semilla—, Heladería —el formato—) y las frases del motor sin
 traducir («alcohol que sale por delivery», «pan común»): la lista es `tandas_docx.PROHIBIDOS` (F1-camino §3), más
-«Campaña» por «campana» (`RX_CAMPANA`). SIN los
+«Campaña» por «campana» (`RX_CAMPANA`) y «pública» por el verbo «publica» (`RX_PUBLICA`). SIN los
 restos de panadería del gemelo: harina, masa, levadura y amasado son el oficio. Lista celda/párrafo y texto; en las
 fórmulas sólo mira los literales entre comillas. Corre en el VPS. Uso: barrido_es.py <fichero>… · exit 1 si hay
 coincidencias. Sesión Claude Code, 25-oct-2026."""
@@ -22,7 +22,11 @@ import tandas_docx as T                                                         
 #: además dejó la partida FUERA de la amortización). En este libro nunca hay «campaña» legítima salvo la de apertura,
 #: lanzamiento, marketing, publicidad o Navidad: excepción explícita (aviso del orquestador, 25-oct).
 RX_CAMPANA = r'[Cc]ampa[ñÑ]a(?! de (apertura|lanzamiento|marketing|publicidad|Navidad))'
-RX = re.compile('|'.join(T.PROHIBIDOS + [RX_CAMPANA]), re.I)
+#: «pública» por «publica» (la misma trampa de motor.TILDES con el verbo: «Nadie pública precio», Inversión!D9, revisión
+#: final m1, 25-oct): con tilde tras un sujeto o un pronombre átono, o delante de «precio» / «tarifa», es el verbo mal
+#: acentuado. Sin «lo» ni «la» («lo público», «la pública» son legítimos).
+RX_PUBLICA = r'\b(nadie|se|le|les|te|nos|quien) públic[ao]n?\b|\bpúblic[ao] (precios?|tarifas?)\b'
+RX = re.compile('|'.join(T.PROHIBIDOS + [RX_CAMPANA, RX_PUBLICA]), re.I)
 n = 0
 for p in [x for x in sys.argv[1:] if not x.startswith('--')]:
     if p.endswith('.xlsx'):

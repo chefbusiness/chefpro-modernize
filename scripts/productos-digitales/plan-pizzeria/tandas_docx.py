@@ -59,7 +59,7 @@ PLIEGO = ('por 1 litro de agua: 1.800 g de harina de trigo tierno (W 220-380, pr
           'siguientes, todo en ciclo continuo (sin frío, ni biga ni poolish); disco de 35 cm como máximo, centro de '
           '0,4 cm y cornisa («cornicione») de 1-2 cm, sin rodillo ni prensa; solera a unos 485 °C y bóveda a unos '
           '430 °C, 60-90 segundos, exclusivamente horno de leña. 1 kg de harina da unos 1.586 g de masa: 6 bolas de '
-          '250 g (8 de 200 g)')
+          '250 g (casi 8 de 200 g)')
 
 #: Lo que tiene que contar cada sección (español de España, para el mercado español; research §0-§6). Cifras del
 #: Excel y de la calculadora = tokens.
@@ -194,8 +194,8 @@ PISTAS = {
        'CRECIMIENTO tal cual lo hace el Excel: suben los comensales un {CREC_A2} y un {CREC_A3} (de {COMENSALES_DIA} a '
        '{COMENSALES_DIA_A2} y {COMENSALES_DIA_A3} al día) con el mismo ticket, y la plantilla crece con personas '
        '({INCORPORACIONES_A2} al año), no con un porcentaje. IVA: la comida al 10 % (en sala, para llevar y a '
-       'domicilio); de la bebida, la parte que sale del local con alcohol o con azúcares añadidos ({BEBIDA_21_PCT} de '
-       'la bebida, la columna H de su línea) va al 21 % y el resto al 10 %: el IVA medio de la bebida es '
+       'domicilio); de la bebida, la parte que sale del local con alcohol o con azúcares o edulcorantes añadidos ({BEBIDA_21_PCT} '
+       'de la bebida, la columna H de su línea) va al 21 % y el resto al 10 %: el IVA medio de la bebida es '
        '{IVA_BEBIDA_LINEA}. Equilibrio contable {BE_COMENSALES_DIA} comensales al día (ingresos {BE_INGRESOS}; holgura '
        '{HOLGURA_CONTABLE}); equilibrio de caja {BE_COMENSALES_DIA_CAJA} comensales al día y holgura {HOLGURA_CAJA}, que '
        'es la del PRIMER año (sólo intereses por la carencia); desde el segundo, con la devolución del principal, la '
@@ -207,8 +207,8 @@ PISTAS = {
        'el saldo mínimo es {SALDO_MINIMO} en el mes {MES_SALDO_MINIMO} ({MES_SALDO_MINIMO_NOMBRE}) y el año acaba '
        '(agosto) con {SALDO_MES12}; enero y febrero (Meses 5 y 6) son los más flojos y llegan con el fondo intacto; las '
        'pagas extra salen en diciembre (Mes 4) y julio (Mes 11); el IVA se liquida por trimestres naturales (octubre, '
-       'enero, abril y julio), no por los del plan. Payback del proyecto: {PAYBACK} (el token ya es texto: no le añadas '
-       '«años»). Escenarios: pesimista ({ESC_PES_COMENSALES} comensales a {ESC_PES_TICKET} y {ESC_PES_DIAS} días: '
+       'enero, abril y julio), no por los del plan. Payback del proyecto: {PAYBACK} (puede ser texto, «Más de 3 años», o una cifra sin unidad: cítalo entre '
+       'comillas como lo marca el Excel, «Payback del proyecto (años), antes de la deuda», sin añadirle «años»). Escenarios: pesimista ({ESC_PES_COMENSALES} comensales a {ESC_PES_TICKET} y {ESC_PES_DIAS} días: '
        'ventas {ESC_PES_VENTAS}, neto {ESC_PES_NETO}) y optimista ({ESC_OPT_COMENSALES} comensales a {ESC_OPT_TICKET} y '
        '{ESC_OPT_DIAS} días: ventas {ESC_OPT_VENTAS}, neto {ESC_OPT_NETO}). El Excel manda: si cambias una celda verde, '
        'el documento se queda atrás.',
@@ -239,7 +239,8 @@ PISTAS = {
        'mejor en la carta; el plan de prevención y los convenios de donación no obligan a las microempresas (art. 6). '
        'Ley 7/2022, art. 55: el envase de plástico de un solo uso para llevar se cobra aparte en el tique; la caja de '
        'cartón no es plástico (si lleva película plástica, consúltalo con el proveedor). IVA (Ley 37/1992, art. 91): la '
-       'comida al 10 % en sala, para llevar y a domicilio; la cerveza, el vino y los refrescos con azúcares añadidos que '
+       'comida al 10 % en sala, para llevar y a domicilio; la cerveza, el vino y los refrescos con azúcares o edulcorantes '
+       'añadidos que '
        'salen del local, al 21 %; en sala, todo al 10 %. Personal: convenio provincial de hostelería (ALEH VI, art. 4), '
        'SMI de 2026 (RD 126/2026), Estatuto de los Trabajadores (arts. 1.1, 6, 34.9 y disposición adicional 23.ª). '
        'Facturación con software Veri*factu (consulta con tu gestoría la fecha que te aplica). El nombre de la carta: '
@@ -295,7 +296,7 @@ PERMITIDAS = set('''0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 2
 55,6 2,9 0,17 0,4 0,35 0,22 1,33 10,90 10,50-12,90 8-9 9,50 15,50 12,50 3,50 3,90 1,80 0,30 16,4 11-12,5 220-380 50-55
 180-250 4-6 60-90 1-2 60-75 24-72 150-200 30-40 120-130 2.750 5.505 13:30 16:00 20:00 23:30 150.000-300.000 25-35 8-12
 22-30 60.000-70.000 25-28 22-28 20-28 12/15/14/13/13/13 82.1 91.Uno.1.1 91.Uno.2.2 1.1 6.4 34.9 4.1 4.2 4.3 5.3 72-73 23.ª
-150.000 300.000 1,5 20 25'''.split())
+150.000 300.000 1,5 20 25 1,25'''.split())
 RX_NUM = re.compile(r'(?<![\w{])[−+]?\d[\d.,/:−-]*\d|(?<![\w{])\d')
 #: Caracteres admitidos además del latín básico/extendido: tipografía española y los signos de temperatura (−, ≤, ≥, ≈).
 RX_RARO = re.compile(r'[^\x00-ɏ‐-‧€°→ ‑«»¿¡ºª·…–—“”‘’−≤≥≈²]')

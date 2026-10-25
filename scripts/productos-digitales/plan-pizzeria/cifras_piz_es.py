@@ -18,6 +18,7 @@ Sesión Claude Code, 25-oct-2026.
 import argparse
 import json
 import math
+from decimal import ROUND_HALF_UP, Decimal
 import os
 import re
 import sys
@@ -213,19 +214,27 @@ def fmt(v, f):
     return _fmt(v, f).replace('-', '−', 1) if v < 0 else _fmt(v, f)   # signo menos tipográfico
 
 
+def _r(v, nd=0):
+    """Redondeo comercial (mitad hacia arriba, como Excel) y no el bancario de `round()` ni el de `'{:.2f}'` sobre el
+    float: 4,975 → 4,98 y 27.940,5 → 27.941 (revisión final m2, 25-oct). `round(v, 9)` quita el ruido binario del float
+    (4,97499999… → 4,975) antes de pasar a Decimal, igual que Excel trabaja con 15 cifras."""
+    q = Decimal(1).scaleb(-nd)
+    return Decimal(str(round(v, 9))).quantize(q, rounding=ROUND_HALF_UP)
+
+
 def _fmt(v, f):
     if f in ('int', 'int_up'):
-        n = math.ceil(v - 1e-9) if f == 'int_up' else round(v)
+        n = math.ceil(v - 1e-9) if f == 'int_up' else _r(v)
         return '{:,}'.format(int(n)).replace(',', '.')
     if f == 'eur':
-        return '{:,}'.format(int(round(v))).replace(',', '.') + ' €'
+        return '{:,}'.format(int(_r(v))).replace(',', '.') + ' €'
     if f == 'eur2':
-        return '{:,.2f}'.format(v).replace(',', 'X').replace('.', ',').replace('X', '.') + ' €'
+        return '{:,.2f}'.format(_r(v, 2)).replace(',', 'X').replace('.', ',').replace('X', '.') + ' €'
     if f in ('pct', 'pct0'):
-        txt = ('{:.1f}' if f == 'pct' else '{:.0f}').format(v * 100).replace('.', ',')
+        txt = '{:f}'.format(_r(v * 100, 1 if f == 'pct' else 0)).replace('.', ',')
         return txt + ' %'
     if f in ('dec1', 'dec2'):
-        return ('{:.1f}' if f == 'dec1' else '{:.2f}').format(v).replace('.', ',')
+        return '{:f}'.format(_r(v, 1 if f == 'dec1' else 2)).replace('.', ',')
     raise ValueError(f)
 
 

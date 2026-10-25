@@ -30,14 +30,14 @@ const TEMPLATES = [
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Checklist de Apertura (80 tareas)',
-    desc: '80 tareas por fases para abrir tu pizzería: constitución y fiscalidad, local y licencias, obra y horno, equipo, marca y apertura.',
+    desc: '80 tareas en 6 fases para abrir tu pizzería: constitución y fiscalidad; local, salida de humos, licencia y terraza; cocina, horno y registro sanitario; personal, formación y prevención; carta, marca, delivery y captación, y apertura y primeros 90 días.',
   },
   {
     key: 'calculadora-masa',
     icon: Calculator,
     type: '.xlsx',
     title: 'Calculadora de Masa y Escandallo',
-    desc: 'Calcula la masa por bolas según la hidratación y las horas de fermentación, y el escandallo y el margen de cada pizza de tu carta.',
+    desc: 'Calcula la masa por bolas con los gramajes del pliego o por porcentaje panadero (hidratación, sal y levadura), el coste de cada bola y el escandallo, el food cost y el margen de 8 pizzas editables.',
   },
   {
     key: 'guia-equivalencias',
