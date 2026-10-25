@@ -31,7 +31,7 @@ const data: GuiaData = {
     subtitleLine: 'De la Idea a la Primera Entrega en 90 Días',
     description: 'Guía completa con 12 capítulos, 3 checklists Excel, calculadora de viabilidad e infografías. Todo lo que necesitas para abrir tu dark kitchen sin cometer los errores que cuestan miles de euros.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (12 capítulos, +40 páginas)',
+      'Guía completa PDF + DOCX editable (12 capítulos, +27 páginas)',
       'Checklist de apertura legal: 35 trámites paso a paso',
       'Checklist de equipamiento y obra con presupuesto real',
       'Calculadora de viabilidad financiera con 3 escenarios',
@@ -146,7 +146,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Dark Kitchen a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta una consulta.',
     items: [
-      'Guía completa PDF (12 capítulos, +40 páginas)',
+      'Guía completa PDF (12 capítulos, +27 páginas)',
       'Versión DOCX editable para personalizar',
       'Checklist de apertura legal (35 trámites)',
       'Checklist de equipamiento y obra (40 ítems con costes)',

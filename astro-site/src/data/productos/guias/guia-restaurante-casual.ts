@@ -12,7 +12,7 @@ const data: GuiaData = {
 
   seo: {
     title: 'Cómo Montar un Restaurante Casual 80 Plazas — Guía Completa España | AI Chef Pro',
-    description: 'Guía premium para montar un restaurante casual en España: 20 capítulos, 60+ páginas, plan financiero, diseño de cocina y sala, delivery, terraza, menú del día. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
+    description: 'Guía premium para montar un restaurante casual en España: 20 capítulos, 21 páginas, plan financiero, diseño de cocina y sala, delivery, terraza, menú del día. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
     keywords: 'como montar restaurante casual, abrir restaurante casual dining, plan financiero restaurante, equipamiento cocina restaurante, delivery restaurante, terraza restaurante licencia, menu del dia restaurante, AI Chef Pro',
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-casual-hero.jpg',
   },
@@ -24,9 +24,9 @@ const data: GuiaData = {
     titlePre: 'Cómo Montar un ',
     titleGold: 'Restaurante Casual',
     subtitleLine: '80 Plazas · Guía Completa España',
-    description: 'Guía completa con 20 capítulos, 60+ páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu restaurante casual dining.',
+    description: 'Guía completa con 20 capítulos, 21 páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu restaurante casual dining.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX editable (20 capítulos, 21 páginas)',
       '8 plantillas Excel con fórmulas: plan financiero, escandallos, menú engineering',
       '6 checklists de apertura: legal, equipamiento, APPCC, sala, contratación, marketing',
       'Business Plan modelo para presentar a bancos e inversores',
@@ -152,7 +152,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Restaurante a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta una cena para dos.',
     items: [
-      'Guía completa PDF + DOCX (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX (20 capítulos, 21 páginas)',
       '8 plantillas Excel con fórmulas',
       '6 checklists de apertura completos',
       'Business Plan modelo para bancos',

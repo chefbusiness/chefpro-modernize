@@ -94,9 +94,18 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-panaderia-obrador': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía completa en PDF',
+        changes: [
+          'La «Guía PDF» del panel es ahora la guía completa, con sus 20 capítulos e idéntica al Word. Si la descargaste antes, vuelve a descargarla.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -238,9 +247,18 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-restaurante-casual': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía completa en PDF',
+        changes: [
+          'La «Guía PDF» del panel es ahora la guía completa, con sus 20 capítulos e idéntica al Word. Si la descargaste antes, vuelve a descargarla.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -255,9 +273,18 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-restaurante-gastronomico': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía en PDF igual que el Word',
+        changes: [
+          'La «Guía PDF» del panel se genera ahora desde el Word: los mismos 22 capítulos, con cada capítulo en página nueva.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -271,9 +298,19 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-restaurante-japones': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía completa en PDF',
+        changes: [
+          'La «Guía PDF» del panel es ahora la guía completa, con sus 20 capítulos e idéntica al Word. Si la descargaste antes, vuelve a descargarla.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+          'Normativa de anisakis actualizada al Real Decreto 1021/2022: congelación a −20 °C durante al menos 24 horas o a −35 °C durante al menos 15 horas, en la guía y en el manual de operaciones.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -288,9 +325,18 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-restaurante-mexicano': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía completa en PDF',
+        changes: [
+          'La «Guía PDF» del panel es ahora la guía completa, con sus 20 capítulos e idéntica al Word. Si la descargaste antes, vuelve a descargarla.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -305,9 +351,19 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-restaurante-nikkei': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía completa en PDF',
+        changes: [
+          'La «Guía PDF» del panel es ahora la guía completa, con sus 20 capítulos e idéntica al Word. Si la descargaste antes, vuelve a descargarla.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+          'Normativa de anisakis actualizada al Real Decreto 1021/2022: congelación a −20 °C durante al menos 24 horas o a −35 °C durante al menos 15 horas, en la guía y en el manual de operaciones.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
@@ -322,9 +378,18 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-restaurante-peruano': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía completa en PDF',
+        changes: [
+          'La «Guía PDF» del panel es ahora la guía completa, con sus 20 capítulos e idéntica al Word. Si la descargaste antes, vuelve a descargarla.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',

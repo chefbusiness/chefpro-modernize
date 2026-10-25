@@ -72,7 +72,7 @@ Pasos que se siguieron (referencia para el próximo):
 - Revisado por el orquestador cadena a cadena; preview servido = rama (md5).
 
 ## 5. Hallazgos para la cola (no tocados)
-- 🔴 **6 guías ES entregan como «guía PDF» una portada de 1 página (~1,8 KB)**: panadería-obrador, casual, japonés, mexicano, nikkei y peruano. Además la landing promete «60+ páginas» (japonés: 4 veces) con un Word de ~3.000-6.300 palabras.
+- ✅ **HECHO el 25-oct por la tarde (PR #162 + #163, ver CALENDARIO):** ~~6 guías ES entregan como «guía PDF» una portada de 1 página (~1,8 KB)~~: panadería-obrador, casual, japonés, mexicano, nikkei y peruano. Además la landing promete «60+ páginas» (japonés: 4 veces) con un Word de ~3.000-6.300 palabras.
   - Dos salidas: rápida (PDF real desde el docx en el VPS + cifras de páginas medidas en la landing) o la subida a v2 de cada guía (L), que además desbloquea «How to Open a Restaurant» EN (880/mes).
   - **Decisión de John.**
 - Cola de correos EN: llega al 13-feb (22 productos esperando, uno cada 5 días). Proponer a John agrupar kits en un mismo correo.
