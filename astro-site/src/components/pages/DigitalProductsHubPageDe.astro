@@ -61,6 +61,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Businessplan: Handwerkliche Eisdiele',
+    slug: '/plan-negocio-heladeria',
+    description: 'Vollständiger Businessplan für die Eröffnung einer handwerklichen Eisdiele: Businessplan in Word mit 10 Abschnitten, Excel-Finanzplan mit lebendigen Formeln und eine Eröffnungs-Checkliste in Phasen, dazu der Äquivalenzleitfaden für Lateinamerika.',
+    features: [
+      'Businessplan in Word mit 10 Abschnitten',
+      'Excel-Finanzplan mit der Saisonalität des Speiseeises',
+      'Eröffnungs-Checkliste: 80 Aufgaben in 6 Phasen',
+      'Bonus: Äquivalenzleitfaden für Lateinamerika',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg',
+    badge: '✨ Neu',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'ice-cream', 'production-kitchen', 'business-plan'],
+  },
+  {
     name: 'So eröffnen Sie einen Churros- und Heißschokoladenladen',
     slug: '/guia-churreria-chocolateria',
     description: 'Räumlichkeiten, Produktionsküche, Fritteuse und Zahlen: das komplette Eröffnungsdossier für einen Churros- und Heißschokoladenladen, mit den Excel-Dateien, die Ihnen die Rechenarbeit abnehmen.',
@@ -136,8 +152,8 @@ const products = [
     ],
     iconName: 'ChefHat',
     image: '/lovable-uploads/ai-gallery/manual-chef-hero.jpg',
-    badge: '✨ Neu',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Neu',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'food-safety', 'restaurant', 'hotel', 'catering'],
   },
   {
@@ -885,7 +901,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'IceCream', name: 'Businessplan: Handwerkliche Eisdiele', desc: 'Excel-Finanzplan, Gründungsinvestition, Saisonalität und eine Eröffnungs-Checkliste für Ihre Eisdiele.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'Q4 2026' },
   { iconName: 'BarChart3', name: 'Betriebs-Dashboard-Kit', desc: 'Umsätze nach Zeitfenster und Gastraum, durchschnittlicher Bon, Tischumschlag und Produktivität pro Stunde – in einem einzigen Dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
   { iconName: 'Sandwich', name: 'Businessplan: Smash-Burger-Laden', desc: 'Vom Smash-Konzept bis zur Gewinnschwelle: Investition, Speisekarte, Kosten und eine Monatsprognose.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },
   { iconName: 'PartyPopper', name: 'Businessplan: Event- und Hochzeitslocation', desc: 'Kapazität, Menüpakete, Hochzeitssaisonalität und Personal pro Event: der komplette Plan.', tags: ['business-plan', 'catering', 'excel'], phase: 'Q1 2027' },

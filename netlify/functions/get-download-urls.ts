@@ -1232,6 +1232,12 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/plan-negocio-panaderia/checklist-apertura-panaderia.xlsx',
     'guia-equivalencias': '/dl/plan-negocio-panaderia/guia-equivalencias-plan-negocio-panaderia.docx',
   },
+  'plan-negocio-heladeria': {
+    'plan-financiero': '/dl/plan-negocio-heladeria/plan-financiero-heladeria.xlsx',
+    'plan-negocio': '/dl/plan-negocio-heladeria/plan-de-negocio-heladeria.docx',
+    'checklist-apertura': '/dl/plan-negocio-heladeria/checklist-apertura-heladeria.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-heladeria/guia-equivalencias-plan-negocio-heladeria.docx',
+  },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',

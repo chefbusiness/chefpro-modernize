@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""build_guia_es.py — «Guía de Equivalencias para tu país»: un docx por cada uno de los 51 productos ES.
+"""build_guia_es.py — «Guía de Equivalencias para tu país»: un docx por cada uno de los 52 productos ES.
 
     python3 scripts/productos-digitales/equivalencias-es/build_guia_es.py [--only a,b] [--out-root DIR] [--check]
 
@@ -593,8 +593,8 @@ def main():
     a = ap.parse_args()
     D = Data()
     slugs = list(D.registro.keys())
-    if len(slugs) != 51:
-        print('ERROR: %d productos ES (esperados 51)' % len(slugs))
+    if len(slugs) != 52:
+        print('ERROR: %d productos ES (esperados 52)' % len(slugs))
         return 1
     if a.only:
         sel = [s.strip() for s in a.only.split(',') if s.strip()]

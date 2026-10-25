@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Heladería Artesanal',
+    slug: '/plan-negocio-heladeria',
+    price: '€35',
+    description: 'Plan de negocio completo para abrir una heladería artesanal: plan en Word de 10 secciones, plan financiero en Excel con fórmulas vivas y checklist de apertura por fases, más la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel con la estacionalidad del helado',
+      'Checklist de apertura: 80 tareas en 6 fases',
+      'Bonus: Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: IceCream,
+    image: '/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'heladeria', 'obrador', 'plan-negocio'],
+  },
+  {
     name: 'Cómo Montar una Churrería-Chocolatería',
     slug: '/guia-churreria-chocolateria',
     price: '€65',
@@ -130,8 +147,8 @@ const products = [
     ],
     icon: ChefHat,
     image: '/lovable-uploads/ai-gallery/manual-chef-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'plantillas', 'manuales', 'gestion', 'seguridad', 'restaurante', 'hotel', 'catering'],
   },
   {
@@ -1012,7 +1029,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: IceCream, name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
   { icon: BarChart3, name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
   { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
   { icon: PartyPopper, name: 'Plan de Negocio: Finca de Eventos y Bodas', desc: 'Aforo, packs de menú cerrado, estacionalidad de bodas y personal por servicio: el plan completo.', tags: ['plan-negocio', 'catering', 'excel'], phase: 'Q1 2027' },

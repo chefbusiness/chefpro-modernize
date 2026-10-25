@@ -62,6 +62,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Business plan : gelateria artisanale',
+    slug: '/plan-negocio-heladeria',
+    description: 'Business plan complet pour ouvrir une gelateria artisanale : plan en Word de 10 sections, plan financier Excel à formules vivantes et checklist d\'ouverture par phases, avec le guide d\'équivalences pour l\'Amérique latine.',
+    features: [
+      'Business plan Word en 10 sections',
+      'Plan financier Excel avec la saisonnalité des glaces',
+      'Checklist d\'ouverture : 80 tâches en 6 phases',
+      'Bonus : guide d\'équivalences pour l\'Amérique latine',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'ice-cream', 'production-kitchen', 'business-plan'],
+  },
+  {
     name: 'Comment ouvrir une boutique de churros et chocolat chaud',
     slug: '/guia-churreria-chocolateria',
     description: 'Locaux, laboratoire de production, friteuse et chiffres : le dossier d\'ouverture complet d\'une boutique de churros et chocolat chaud, avec les fichiers Excel qui font vos calculs.',
@@ -137,8 +153,8 @@ const products = [
     ],
     iconName: 'ChefHat',
     image: '/lovable-uploads/ai-gallery/manual-chef-hero.jpg',
-    badge: '✨ Nouveau',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'food-safety', 'restaurant', 'hotel', 'catering'],
   },
   {
@@ -886,7 +902,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'IceCream', name: 'Plan d\'affaires : Gelateria artisanale', desc: 'Plan financier Excel, investissement de départ, saisonnalité et liste de contrôle pour l\'ouverture de votre gelateria.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'T4 2026' },
   { iconName: 'BarChart3', name: 'Kit de tableau de bord des opérations', desc: 'Ventes par créneau horaire et par zone de salle, ticket moyen, rotation des tables et productivité horaire, dans un seul tableau de bord.', tags: ['excel', 'management', 'templates'], phase: 'T4 2026' },
   { iconName: 'Sandwich', name: 'Plan d\'affaires : Restaurant de smash burgers', desc: 'Du concept smash au seuil de rentabilité : investissement, carte, coûts et prévision mois par mois.', tags: ['business-plan', 'burger', 'excel'], phase: 'T4 2026' },
   { iconName: 'PartyPopper', name: 'Plan d\'affaires : Lieu de réception pour événements et mariages', desc: 'Capacité d\'accueil, formules avec menu imposé, saisonnalité des mariages et effectifs par événement : le plan complet.', tags: ['business-plan', 'catering', 'excel'], phase: 'T1 2027' },

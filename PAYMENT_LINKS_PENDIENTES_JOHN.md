@@ -2,6 +2,24 @@
 
 > Sesión Claude Code (Mac). **No hay ninguno pendiente.**
 
+## ✅ Plan de Negocio: Heladería Artesanal (ES) — PR #161, link creado el 25-oct-2026
+
+Link de John: https://buy.stripe.com/5kQ28k94w78i2QT8Zn6oo21 (`plink_1UUSdP4CcdRGidmEm3lXcQyH`). Comprobado con la CLI de
+Stripe: 3500 EUR, pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-negocio-heladeria-access`.
+Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
+
+Mismo patrón que el de la panadería (`plink_1TVHkk4CcdRGidmE0rdXrGbn`, comprobado con la CLI el 25-oct):
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Heladería Artesanal - AI Chef Pro |
+| Precio | **35,00 EUR**, pago único, impuesto automático con precio *exclusive* (como la panadería) |
+| Factura | activada (como la panadería) |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-heladeria-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | Plan de negocio completo para abrir una heladería artesanal con obrador propio: plan en Word de 10 secciones, plan financiero en Excel con fórmulas vivas y tesorería mes a mes, checklist de apertura con 80 tareas y guía de equivalencias para Latinoamérica |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_HELADERIA` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg` |
+
 ## ✅ Lote EN de 5 — cerrado y LIVE el 25-oct-2026
 
 John (24-oct): «cuando tengas cinco productos terminados y yo esté de vuelta en el ordenador, hacemos la configuración en

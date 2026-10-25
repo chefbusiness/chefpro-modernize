@@ -361,6 +361,7 @@ const data: KitTareasData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/kit-tareas-bar', label: 'Kit Tareas Bar' },
+    { href: '/plan-negocio-heladeria', label: 'Plan de Negocio Heladería' },
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },

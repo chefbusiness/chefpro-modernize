@@ -298,6 +298,7 @@ const data: PlanNegocioData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/plan-negocio-bar-restaurante', label: 'Plan Bar-Restaurante' },
     { href: '/kit-tareas-panaderia', label: 'Kit Tareas Panadería' },
+    { href: '/plan-negocio-heladeria', label: 'Plan de Negocio Heladería' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],

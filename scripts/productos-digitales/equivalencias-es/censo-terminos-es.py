@@ -99,6 +99,10 @@ def load_all():
         for p in paths:
             fp = PUBLIC + p
             ext = os.path.splitext(p)[1].lower()
+            # La guía de equivalencias es la SALIDA de este censo, no texto del producto: leerla
+            # (existe desde el 13-oct) metía sus 200 términos en la cuenta de cada producto (25-oct).
+            if os.path.basename(p).startswith('guia-equivalencias'):
+                continue
             if ext not in ('.docx', '.xlsx'):
                 if p not in filetext:
                     stats['saltados'] += 1
@@ -183,8 +187,8 @@ def main():
     t0 = time.time()
     es, en, prodtext, prodfiles, stats = load_all()
     print('Productos ES: %d (EN excluidos: %d)' % (len(es), len(en)))
-    if len(es) != 51:
-        print('ERROR: se esperaban 51 productos ES. Lista:')
+    if len(es) != 52:
+        print('ERROR: se esperaban 52 productos ES. Lista:')
         for s in es:
             print(' ', s, len(es[s]))
         sys.exit(1)
