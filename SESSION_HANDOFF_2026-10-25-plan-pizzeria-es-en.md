@@ -55,3 +55,12 @@ meses)** y «pizzeria napolitana» 4.400/mes en ES. La Hamburguesería Smash (Q4
   (7 idiomas); el plan medido da 8,5-10 %.
 - `productIds` de las `/usos/` de pizzería → añadir `plan-negocio-pizzeria`; enlaces desde los posts ES de pizzería
   (`ia-para-pizzerias.md` y los que enlazan el Kit de Tareas Pizzería) y al EN desde los posts EN de pizza.
+
+## 6. Cierre de sesión (25-oct, noche)
+- John: «excelente trabajo, cerramos sesión por hoy». Los dos productos LIVE y a la venta; correos programados vía routines.
+- Consumo: ≈ 5,5 M tokens de subagentes para los dos (ES ≈ 3,2 M · EN ≈ 2,3 M), ≈ 5 h de reloj. CPU del Mac < 61 °C toda la sesión;
+  todo lo pesado en el VPS (worktrees `/root/wt-pizzeria` y `/root/wt-pizza-en` ya borrados, árbol limpio). `photoanalysisd` y
+  `mediaanalysisd` siguen congelados en el Mac (`pkill -CONT photoanalysisd mediaanalysisd` para reanudarlos).
+- **Siguiente sesión**: producto nuevo ES → candidato **Hamburguesería Smash (35 €)** (prometida para el Q4 en el hub; mismo camino:
+  semilla de un plan LIVE de línea A + calculadora propia) y, si hay demanda medida, su gemelo EN en la misma sesión con este método.
+  Pendientes de John: purgar los pedidos cripto QA y pasar la nota del carril Cursor (§5).
