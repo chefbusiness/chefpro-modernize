@@ -58,7 +58,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
-    a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio: Pizzería Napolitana» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, la «mozzarella» es «muzzarella» en Argentina, el «camarero» es «mesero» en México y Colombia, el «pedido para llevar» es «pizza a domicilio» o «para llevar» según el país, y ojo con la «pizza napolitana», que en Argentina es otra pizza (con rodajas de tomate y ajo). Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio: Pizzería Napolitana» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, la «mozzarella» es «muzzarella» en Argentina, el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina, el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú, y ojo con la «pizza napolitana», que en Argentina es otra pizza (con rodajas de tomate y ajo). Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
   },
 ];
 
