@@ -52,3 +52,18 @@ exclusivo, 150 párrafos) · guía de equivalencias docx (58 términos). 7 imág
 - Motor común: `PyG!G14` (10 % fijo) y `Personal!C11` (suma sin ponderar) — afectan a todos los planes; arreglar en el motor.
 - La guía de equivalencias sale en Letter en los 53 productos (generador común).
 - Gemelo EN («Wedding & Event Venue Business Plan»): demanda real 300-800/mes en EE. UU.; se decide después.
+
+## 6. Cierre de sesión (25-oct, noche)
+- **Decisiones de John:**
+  - Las notas de carril (heladería y finca) se las pasa él a Cursor/Grokbot.
+  - **No se envía correo** a los compradores de las 7 guías cuyo PDF se arregló: «la gente se dará cuenta cuando entre». Basta
+    el aviso del changelog 1.1.1 en su panel.
+- Pedidos cripto de prueba sin pagar por purgar (necesitan `ADMIN_PASSWORD`, shell de John): `qa-heladeria@aichef.pro` y
+  `qa-finca@aichef.pro`.
+- Cola de correos ES: 28-nov heladería · 3-dic finca (routines del 29-oct y 3-nov). **Siguiente hueco ES: 8-dic 08:00Z.**
+- **Siguiente sesión (John): otro producto nuevo hoy, en sesión fresca.** Candidatos de «Próximos» (CALENDARIO §3):
+  - **Plan de Negocio: Pizzería Napolitana (35 €)**: gemelo EN con demanda medida («pizza shop business plan» 320/mes en
+    EE. UU.) y motor de planes de la heladería reutilizable.
+  - **Plan de Negocio: Hamburguesería Smash (35 €)**: prometido para el Q4 en el hub.
+  - Kits baratos (Cuadro de Mando 19 €, Tareas Pollería o Arepería 12 €) si se quiere algo de 1-2 h.
+

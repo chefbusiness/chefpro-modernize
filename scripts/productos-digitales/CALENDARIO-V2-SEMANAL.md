@@ -752,7 +752,7 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   `paginas-gate` cazó dos más con el mismo defecto: gastronómico (anunciaba 119; PDF = Word, 24 págs.) y dark kitchen (40 → 27).
   **`paginas-gate` en todo el catálogo: 0 fallos** (estaba en rojo desde el 10-sep). Changelog 1.1.1 en las 7. Scripts:
   `scripts/productos-digitales/guias-v1-pdf/`. LibreOffice + Carlito instalados en el VPS.
-  Pendiente que decide John: avisar por correo a quienes compraron estas guías de que vuelvan a descargar el PDF.
+  John (25-oct): **no se envía correo** a los compradores por este arreglo; basta el aviso del changelog en su panel.
 
 ### ▶️ 2026-10-25, tarde (Claude Code en el Mac + VPS) — **Plan de Negocio: Finca de Eventos y Bodas (ES, 45 €, producto nuevo nº 53)** — ✅ LIVE 25-oct (merge `769a0e26`)
 
