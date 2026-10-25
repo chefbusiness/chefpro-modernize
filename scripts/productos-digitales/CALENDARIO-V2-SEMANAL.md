@@ -730,3 +730,15 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Correos EN (borradores, segmento EN, `hello@news.aichef.pro`): Ice Cream **24-ene** `46c47e9f` · Chocolate **29-ene** `0735f547` ·
   Pastry **3-feb** `a71df3dc` · BBQ **8-feb** `72b926e7` · Paella **13-feb** `d7cc1366` → routine `trig_011hh6jpM66sktLqw3dDhY8H`
   (16-ene-2027 15:00Z). Todos a las 14:00Z. **Siguiente hueco EN: 18-feb 14:00Z.**
+
+### ▶️ 2026-10-25 (Claude Code en el Mac + VPS) — **Plan de Negocio: Heladería Artesanal (ES, 35 €, producto nuevo nº 52)** — listo a falta del Payment Link
+
+- Elegido por su gemelo EN (ice cream shop business plan 320/mes US) y por ser el primero de «Próximos» (Q4). Siguiente producto
+  nuevo propuesto: **Finca de Eventos y Bodas** (wedding venue business plan 1.000 + event venue 720/mes US, al alza).
+- F1 (research + camino + SPEC) → F2 (Excel calibrado en 1 vuelta, Word por 2 redactores Sonnet, checklist 80) → F3 (capa técnica,
+  ficha, correo, guía de equivalencias, 7 imágenes) → revisión opus final (0 B / 7 M / 17 m, aplicados). ≈ 2,2 M (techo M 5 M).
+  PR #161 draft. Detalle y pasos de cierre: `SESSION_HANDOFF_2026-10-25-plan-heladeria.md`.
+- **Correo ES: hueco 28-nov 08:00Z** (borrador tras el LIVE; routine desde el 29-oct). Siguiente hueco ES: 3-dic.
+- Mismo día: **PR #160**, normativa derogada (RD 1420/2006 y RD 3484/2000 → RD 1021/2022) en 7 entregables vendidos, listo y
+  verificado; merge pendiente de John (el modo automático lo bloqueó). Arreglo en `censo-terminos-es.py` (leía las propias guías
+  de equivalencias). Hallazgo para decidir: 6 guías ES con PDF de portada de 1 página y «60+ páginas» en la landing (handoff §5).
