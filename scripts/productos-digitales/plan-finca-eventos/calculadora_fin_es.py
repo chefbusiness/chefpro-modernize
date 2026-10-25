@@ -96,7 +96,7 @@ CANAL_TAB = OrderedDict([
     ('cn2', ('Cancelación tramo 2: lo que retienes (% del total)', (0.25, 0.15), 'Sube con la cercanía del evento.')),
     ('cn3', ('Cancelación tramo 3: lo que retienes (% del total)', (0.50, 0.35), 'Cada tramo repone menos opciones de volver a vender la fecha.')),
     ('cn4', ('Cancelación tramo 4: lo que retienes (% del total)', (0.75, 0.60), 'Últimos meses.')),
-    ('cn5', ('Cancelación tramo 5: lo que retienes (% del total)', (1.0, 1.0), 'Último mes o no presentación: el 100 %.')),
+    ('cn5', ('Cancelación tramo 5: lo que retienes (% del total)', (1.0, 1.0), 'Último mes o no presentación: el 100 %. Con particulares, el contrato descuenta los costes que la finca se ahorra por no celebrarlo.')),
 ])
 #: tramos de cancelación: meses de antelación a partir de los cuales aplica cada uno (de más lejano a más cercano, sin huecos)
 TRAMOS = [12, 6, 3, 1, 0]
@@ -182,7 +182,7 @@ SALIDAS = [
     ('can2', 'Importe retenido si cancela: tramo 2', EUR, '{total}*{t_cn2}', ''),
     ('can3', 'Importe retenido si cancela: tramo 3', EUR, '{total}*{t_cn3}', ''),
     ('can4', 'Importe retenido si cancela: tramo 4', EUR, '{total}*{t_cn4}', ''),
-    ('can5', 'Importe retenido si cancela: tramo 5', EUR, '{total}*{t_cn5}', 'Último tramo, hasta el día del evento.'),
+    ('can5', 'Importe retenido si cancela: tramo 5', EUR, '{total}*{t_cn5}', 'Último tramo, hasta el día del evento. Con particulares, el contrato descuenta de este importe los costes que la finca se ahorra por no celebrarlo.'),
 ]
 S = OrderedDict((k, F_CALC + 1 + i) for i, (k, *_r) in enumerate(SALIDAS))
 

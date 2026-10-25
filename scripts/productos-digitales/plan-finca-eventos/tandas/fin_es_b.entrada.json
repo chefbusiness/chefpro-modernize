@@ -17,11 +17,11 @@
   },
   "8": {
    "titulo": "8. Plan Financiero",
-   "pista": "Plan financiero, TODO por token: inversión total {INVERSION_TOTAL} = compras {CAPEX} (acondicionamiento {INVERSION_PARTIDAS} incluidos {IMPREVISTOS} de imprevistos, más la fianza {FIANZA} de {FIANZA_MESES} meses y {RENTA_PREVIA} de renta anterior a la apertura) + fondo de maniobra {FONDO_MANIOBRA} ({MESES_FONDO} meses); IVA de la inversión {IVA_INVERSION}; necesidad de caja {NECESIDAD_CAJA}; financiación {RECURSOS_PROPIOS} propios + préstamo {PRESTAMO} al {TIPO_PRESTAMO}, {PLAZO_PRESTAMO} años con {CARENCIA} año de carencia, cuota {CUOTA_ANUAL}. Cuenta de resultados de 3 años: ventas {VENTAS_A1}/{VENTAS_A2}/{VENTAS_A3}; margen bruto {MARGEN_BRUTO_PCT_A1}; personal {PERSONAL_A1}; renta {RENTA_ANO} ({RENTA_PCT_A1}); neto {NETO_A1}/{NETO_A2}/{NETO_A3}. EL AÑO 1 CUENTA {EVENTOS_ANO} EVENTOS COMPLETOS: el texto tiene que explicar que eso solo es posible si las fechas de la primera temporada se venden durante los meses de licencia y obra, y remitir al escenario pesimista del Excel ({ESC_PES_EVENTOS} eventos de {ESC_PES_INVITADOS} invitados a {ESC_PES_PRECIO}: ventas {ESC_PES_VENTAS}, neto {ESC_PES_NETO}) si no se consigue; NO decir que el año 1 da pérdidas, porque el Excel no lo dice (el fondo de maniobra aguanta la caja del primer año). Escenario optimista ({ESC_OPT_EVENTOS} eventos de {ESC_OPT_INVITADOS} invitados a {ESC_OPT_PRECIO}: neto {ESC_OPT_NETO}). CRECIMIENTO: se cuenta en eventos equivalentes, {EVENTOS_EQUIVALENTES_A2} en el año 2 (+{CREC_A2}) y {EVENTOS_EQUIVALENTES_A3} en el año 3 (+{CREC_A3}), con el mismo precio por invitado; en el libro crece el tamaño medio del evento ({INVITADOS_EVENTO_A2} y {INVITADOS_EVENTO_A3} invitados). EQUILIBRIO: contable {BE_EVENTOS_ANO} eventos al año ({BE_INVITADOS_EVENTO} invitados por evento; ingresos {BE_INGRESOS}; holgura {HOLGURA_CONTABLE}); de caja {BE_EVENTOS_ANO_CAJA} eventos en el año 1 (holgura {HOLGURA_CAJA}, de carencia), {BE_EVENTOS_CAJA_A2} en el 2 ({HOLGURA_CAJA_A2}) y {BE_EVENTOS_CAJA_A3} en el 3 ({HOLGURA_CAJA_A3}). DSCR mínimo {DSCR_MIN}. TESORERÍA: el Mes 1 es marzo, la rampa arranca al {RAMPA_MES1} y llega al ritmo de crucero en {MESES_RAMPA} meses (las bodas se reservan con 12-18 meses); saldo mínimo {SALDO_MINIMO} en el mes {MES_SALDO_MINIMO} ({MES_SALDO_MINIMO_NOMBRE}); el año acaba (febrero) con {SALDO_MES12}. Cada punto de canon vale unos {CANON_PUNTO}: negócialo. IVA: las dos líneas al 21 % ({IVA_REPERCUTIDO_A1} de IVA repercutido en el año 1). Payback: {PAYBACK} (el token ya es texto: no le añadas «años»). Alternativas SIN Excel, razonadas: catering propio y solo alquiler, con su cifra de la pista del §2. El Excel manda: si cambias una celda verde, el documento se queda atrás."
+   "pista": "Plan financiero, TODO por token: inversión total {INVERSION_TOTAL} = compras {CAPEX} (acondicionamiento {INVERSION_PARTIDAS} incluidos {IMPREVISTOS} de imprevistos, más la fianza {FIANZA} de {FIANZA_MESES} meses y {RENTA_PREVIA} de renta anterior a la apertura) + fondo de maniobra {FONDO_MANIOBRA} ({MESES_FONDO} meses); IVA de la inversión {IVA_INVERSION}; necesidad de caja {NECESIDAD_CAJA}; financiación {RECURSOS_PROPIOS} propios + préstamo {PRESTAMO} al {TIPO_PRESTAMO}, {PLAZO_PRESTAMO} años con {CARENCIA} año de carencia, cuota {CUOTA_ANUAL}. Cuenta de resultados de 3 años: ventas {VENTAS_A1}/{VENTAS_A2}/{VENTAS_A3}; margen bruto {MARGEN_BRUTO_PCT_A1}; personal {PERSONAL_A1}; renta {RENTA_ANO} ({RENTA_PCT_A1}); neto {NETO_A1}/{NETO_A2}/{NETO_A3}. EL AÑO 1 CUENTA {EVENTOS_ANO} EVENTOS COMPLETOS: el texto tiene que explicar que eso solo es posible si la primera temporada se vende con reservas condicionadas a la licencia durante la tramitación y la obra, que pasan a firmes al obtenerla, y remitir al escenario pesimista del Excel ({ESC_PES_EVENTOS} eventos de {ESC_PES_INVITADOS} invitados a {ESC_PES_PRECIO}: ventas {ESC_PES_VENTAS}, neto {ESC_PES_NETO}) si no se consigue; NO decir que el año 1 da pérdidas, porque el Excel no lo dice (el fondo de maniobra aguanta la primavera de arranque y la temporada, el primer invierno). Escenario optimista ({ESC_OPT_EVENTOS} eventos de {ESC_OPT_INVITADOS} invitados a {ESC_OPT_PRECIO}: neto {ESC_OPT_NETO}). CRECIMIENTO: se cuenta en eventos equivalentes, {EVENTOS_EQUIVALENTES_A2} en el año 2 (+{CREC_A2}) y {EVENTOS_EQUIVALENTES_A3} en el año 3 (+{CREC_A3}), con el mismo precio por invitado; en el libro crece el tamaño medio del evento ({INVITADOS_EVENTO_A2} y {INVITADOS_EVENTO_A3} invitados). EQUILIBRIO: contable {BE_EVENTOS_ANO} eventos al año ({BE_INVITADOS_EVENTO} invitados por evento; ingresos {BE_INGRESOS}; holgura {HOLGURA_CONTABLE}); de caja {BE_EVENTOS_ANO_CAJA} eventos en el año 1 (holgura {HOLGURA_CAJA}, de carencia), {BE_EVENTOS_CAJA_A2} en el 2 ({HOLGURA_CAJA_A2}) y {BE_EVENTOS_CAJA_A3} en el 3 ({HOLGURA_CAJA_A3}). DSCR mínimo {DSCR_MIN}. TESORERÍA: el Mes 1 es marzo, la rampa arranca al {RAMPA_MES1} y llega al ritmo de crucero en {MESES_RAMPA} meses (las bodas se reservan con 12-18 meses); saldo mínimo {SALDO_MINIMO} en el mes {MES_SALDO_MINIMO} ({MES_SALDO_MINIMO_NOMBRE}); el año acaba (febrero) con {SALDO_MES12}. Cada punto de canon vale unos {CANON_PUNTO}: negócialo. IVA: las dos líneas al 21 % ({IVA_REPERCUTIDO_A1} de IVA repercutido en el año 1). Payback: {PAYBACK} (el token ya es texto: no le añadas «años»). Alternativas SIN Excel, razonadas: catering propio y solo alquiler, con su cifra de la pista del §2. El Excel manda: si cambias una celda verde, el documento se queda atrás."
   },
   "9": {
    "titulo": "9. Aspectos Legales y Licencias",
-   "pista": "Marco legal con su cita (solo esto, dicho así). URBANISMO EN SUELO RÚSTICO, que decide el negocio; en suelo urbano basta el uso compatible del plan municipal y la licencia de actividad. Madrid: Ley 8/2012 art. 9 (actos sociales y eventos familiares en edificaciones existentes) + calificación urbanística del art. 148 de la Ley 9/2001 (informe en 1 mes, resolución en 3, silencio negativo). Andalucía: LISTA art. 22 (actuación extraordinaria, autorización previa, silencio desestimatorio y prestación compensatoria del 10 % del presupuesto de las obras). Cataluña: TRLU art. 47.3 bis, solo masías y casas rurales catalogadas. Comunitat Valenciana: TRLOTUP, declaración de interés comunitario (arts. 216 y 221, canon del 2 %) o la excepción del art. 219 por reutilizar arquitectura tradicional. Lo común: edificios existentes, informe previo y 6-12 meses o más antes de la licencia. NO VENDER FECHAS SIN LICENCIA y condición suspensiva en el arrendamiento. Resto de comunidades: «pregunta en urbanismo qué figura usa tu comunidad». ESPECTÁCULOS: la boda es privada, pero la finca que la alquila a terceros es un establecimiento público (en la C. Valenciana, «salón de banquetes»): ley autonómica de espectáculos públicos y actividades recreativas, y su seguro obligatorio de responsabilidad civil (Madrid añade incendio); cifras solo de Andalucía, y como orientativo (aforo de 101 a 300 personas: 526.000 €); en las demás, «compruébalo». AUTOPROTECCIÓN: Directriz Básica de Autoprotección, Orden INT/1068/2026 (BOE de 10-10-2026), plan obligatorio desde 1.000 personas en edificio o carpa y 5.000 al aire libre en recinto delimitado; con {AFORO} personas queda fuera de la norma estatal, salvo que tu comunidad sea más exigente o la Administración te lo pida por estar en un entorno de riesgo (como el forestal). RUIDO: RD 1367/2007. AGUA: RD 3/2023. COMIDA TESTIGO: RD 1086/2020, art. 30. IVA: espacio al 21 % ({IVA_LINEA_ESPACIO}), canon al 21 % ({IVA_LINEA_CANON}), menú del catering al 10 %; un precio único con todo al 10 % es arriesgado: precio propio o consulta vinculante a la DGT (LIVA art. 91). IAE: epígrafe del espacio criterio de tu asesoría; exento de cuota con menos de 1 M€ de cifra de negocio. ARRENDAMIENTO: uso distinto de vivienda, LAU arts. 3 y 4, pacto libre; la fianza ({FIANZA_MESES} meses) lo habitual, compruébalo con tu abogado. CONSUMO: señal y penalizaciones proporcionales y recíprocas (TRLGDCU arts. 85.6, 87.2, 90.2 y 103.l). Personal: ET arts. 16 y 34.9. Todo lo demás: «compruébalo en tu ayuntamiento, tu comunidad o tu asesoría». Lo que no esté aquí no se afirma."
+   "pista": "Marco legal con su cita (solo esto, dicho así). URBANISMO EN SUELO RÚSTICO, que decide el negocio; en suelo urbano basta el uso compatible del plan municipal y la licencia de actividad. Madrid: Ley 8/2012 art. 9 (actos sociales y eventos familiares en edificaciones existentes) + calificación urbanística del art. 148 de la Ley 9/2001 (informe en 1 mes, resolución en 3, silencio negativo). Andalucía: LISTA art. 22 (actuación extraordinaria, autorización previa, silencio desestimatorio y prestación compensatoria del 10 % del presupuesto de las obras). Cataluña: TRLU art. 47.3 bis, solo masías y casas rurales catalogadas. Comunitat Valenciana: TRLOTUP, declaración de interés comunitario (arts. 216 y 221, canon del 2 %) o la excepción del art. 219 por reutilizar arquitectura tradicional. Lo común: edificios existentes, informe previo y 6-12 meses o más antes de la licencia. NO CONFIRMAR FECHAS EN FIRME SIN LICENCIA (antes, solo reservas condicionadas con devolución íntegra) y condición suspensiva en el arrendamiento. Resto de comunidades: «pregunta en urbanismo qué figura usa tu comunidad». ESPECTÁCULOS: la boda es privada, pero la finca que la alquila a terceros es un establecimiento público (en la C. Valenciana, «salón de banquetes»): ley autonómica de espectáculos públicos y actividades recreativas, y su seguro obligatorio de responsabilidad civil (Madrid añade incendio); cifras solo de Andalucía, y como orientativo (aforo de 101 a 300 personas: 526.000 €); en las demás, «compruébalo». AUTOPROTECCIÓN: Directriz Básica de Autoprotección, Orden INT/1068/2026 (BOE de 10-10-2026), plan obligatorio desde 1.000 personas en edificio o carpa y 5.000 al aire libre en recinto delimitado; con {AFORO} personas queda fuera de la norma estatal, salvo que tu comunidad sea más exigente o la Administración te lo pida por estar en un entorno de riesgo (como el forestal). RUIDO: RD 1367/2007. AGUA: RD 3/2023. COMIDA TESTIGO: RD 1086/2020, art. 30. IVA: espacio al 21 % ({IVA_LINEA_ESPACIO}), canon al 21 % ({IVA_LINEA_CANON}), menú del catering al 10 %; un precio único con todo al 10 % es arriesgado: precio propio o consulta vinculante a la DGT (LIVA art. 91). IAE: epígrafe del espacio criterio de tu asesoría; exento de cuota con menos de 1 M€ de cifra de negocio. ARRENDAMIENTO: uso distinto de vivienda, LAU arts. 3 y 4, pacto libre; la fianza ({FIANZA_MESES} meses) lo habitual, compruébalo con tu abogado. CONSUMO: señal y penalizaciones proporcionales y recíprocas (TRLGDCU arts. 85.6, 87.2, 90.2 y 103.l). Personal: ET arts. 16 y 34.9. Todo lo demás: «compruébalo en tu ayuntamiento, tu comunidad o tu asesoría». Lo que no esté aquí no se afirma."
   },
   "10": {
    "titulo": "10. Conclusiones y Plan de Acción",
@@ -70,8 +70,8 @@
   "CREC_A3": "5 %",
   "CUOTA_ANUAL": "47.953 €",
   "DIAS_COBRO": "10",
-  "DIFERENCIA_FONDOS": "397 €",
-  "DIFERENCIA_FONDOS_PCT": "0,1 %",
+  "DIFERENCIA_FONDOS": "2.497 €",
+  "DIFERENCIA_FONDOS_PCT": "0,7 %",
   "DSCR_A2": "1,68",
   "DSCR_A3": "1,71",
   "DSCR_MIN": "1,68",
@@ -89,7 +89,7 @@
   "EVENTOS_ANO": "120",
   "EVENTOS_EQUIVALENTES_A2": "130",
   "EVENTOS_EQUIVALENTES_A3": "136",
-  "EXCESO_FINANCIACION": "397 €",
+  "EXCESO_FINANCIACION": "2.497 €",
   "FERIAS_ANO": "6.000 €",
   "FIANZA": "7.000 €",
   "FIANZA_MESES": "2",
@@ -116,7 +116,7 @@
   "IS_A1": "5.665 €",
   "IS_GENERAL": "25 %",
   "IS_NUEVA": "15 %",
-  "IVA_INVERSION": "51.194 €",
+  "IVA_INVERSION": "49.094 €",
   "IVA_LINEA_CANON": "21 %",
   "IVA_LINEA_ESPACIO": "21 %",
   "IVA_REPERCUTIDO_A1": "76.457 €",
@@ -134,7 +134,7 @@
   "MES_SALDO_MINIMO": "2",
   "MES_SALDO_MINIMO_NOMBRE": "abril",
   "MOBILIARIO": "18.000 €",
-  "NECESIDAD_CAJA": "362.603 €",
+  "NECESIDAD_CAJA": "360.503 €",
   "NETO_A1": "32.101 €",
   "NETO_A2": "46.928 €",
   "NETO_A3": "50.279 €",
@@ -144,8 +144,8 @@
   "OFFICE": "16.000 €",
   "ORIGEN_FONDOS": "363.000 €",
   "PAGO_303_A1": "0 €",
-  "PAYBACK": "Más de 3 años",
-  "PAYBACK_CAPEX": "Más de 3 años",
+  "PAYBACK": "más de 3 años",
+  "PAYBACK_CAPEX": "más de 3 años",
   "PCI": "7.000 €",
   "PCT_CANON": "22 %",
   "PCT_ESPACIO": "78 %",

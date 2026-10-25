@@ -123,9 +123,9 @@ VOCABULARIO = {
         'El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro',
     # Tesorería (injertos de la heladería): Mes 1 girado, personal en doce meses y trimestres del 303
     'Perfil de tu zona: agosto flojo en ciudad y fuerte en costa':
-        'Mes 1 = MARZO: la obra y la licencia se hacen en otoño e invierno y se abre con las comuniones y la empresa '
-        'de primavera. Los picos son junio (Mes 4) y septiembre (Mes 7); el valle, enero (Mes 11). Si abres en otro '
-        'mes, gira la fila',
+        'Mes 1 = MARZO: la licencia (de 6 a 12 meses o más) y la obra se cierran durante el invierno anterior, y se '
+        'abre con las comuniones y la empresa de primavera. Los picos son junio (Mes 4) y septiembre (Mes 7); el valle, '
+        'enero (Mes 11). Si abres en otro mes, gira la fila',
     'La suma del año es la misma que la del P&L':
         'La suma del año es la misma que la del P&L. El personal se reparte en doce meses, pero la coordinación y los '
         'auxiliares fijos discontinuos sólo trabajan de marzo a noviembre: aquí la temporada sale más barata y el '
@@ -136,7 +136,26 @@ VOCABULARIO = {
         'los naturales: con el Mes 1 en marzo, el modelo 303 se presenta en abril (por marzo), julio, octubre y enero '
         '(por octubre-diciembre, ya en el Mes 11). En el caso todos los trimestres salen a compensar y la finca no '
         'paga IVA en su primer año: el de la obra se descuenta de lo que repercutes, y tras el tercer trimestre del '
-        'plan aún quedan unos 18.760 € por compensar',
+        'plan aún quedan unos 16.660 € por compensar',
+    # Revisión final M7 (25-oct): las notas del IVA del motor hablaban de un bar (alcohol servido «al reducido», alcohol
+    # por intermediarios al general). La finca no vende comida ni bebida (SPEC D4). Claves que empiezan y acaban en
+    # carácter de palabra (el `\b` del vocabulario); el «)» final de la frase del motor se queda.
+    'Tipo reducido de hostelería':
+        'No se usa en este plan: la finca no vende comida ni bebida. Es el tipo del menú del catering',
+    'En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el '
+    'que repercutes por el alcohol que sale por delivery (es una entrega de bienes). El alcohol servido en sala va al '
+    'reducido: su tipo está en el bloque de desglose del IVA. Suministros, equipamiento y servicios tienen su tipo en la '
+    'celda de abajo. El libro manda al general sólo el alcohol: si compras refrescos o zumos con azúcares añadidos, su '
+    'factura también va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992':
+        'En este plan es el de todo lo que factura la finca (espacio, servicios y canon) y el de casi todo lo que '
+        'compra; suministros, equipamiento y servicios tienen su tipo en la celda de abajo. La finca no vende comida '
+        'ni bebida: el menú y la barra los factura el catering, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992',
+    'Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en sala, alcohol incluido, el reducido (art. '
+    '91.Uno.2.2.º de la Ley 37/1992 del IVA); el alcohol que sale por delivery, al general; el pan común y las harinas '
+    'panificables, al superreducido (art. 91.Dos.1.1.º':
+        'Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: el espacio, los servicios y el canon de la '
+        'finca, al general (21 %). La finca no vende comida ni bebida: el menú y la barra los factura el catering, al '
+        '10 % (art. 91.Uno.2.2.º de la Ley 37/1992',
 }
 
 #: clave → (fila, rótulo, valor, formato, nota, fuente). Fila, rótulo y formato a None: los pone el motor. La semilla
@@ -258,13 +277,14 @@ SUPUESTOS = {
         'research §3 (con 6 años el DSCR cae a ≈ 1,25) [estimado]'),
     'carencia_prestamo': (
         None, None, 1, None,
-        'El primer año sólo intereses: la primera temporada se vendió antes de tener la licencia y llega corta. '
-        'Desde el segundo año se devuelve el principal: mira la holgura de caja de ese año en el Punto de Equilibrio',
+        'El primer año, sólo intereses: es el año de arranque y la caja va más justa. Desde el segundo año se devuelve '
+        'el principal: mira la holgura de caja de ese año en el Punto de Equilibrio',
         'research §3 [estimado]'),
     'meses_fondo': (
         None, None, 3, None,
-        'Tres meses de costes fijos: son el colchón del primer invierno. En un año normal, de noviembre a febrero '
-        'entra alrededor del 23 % de la venta con la renta y la plantilla planas',
+        'Tres meses de costes fijos: son el colchón de los primeros meses, recién pagada la inversión y antes de las '
+        'bodas de mayo y junio. En un año normal, de noviembre a febrero entra alrededor del 23 % de la venta con la '
+        'renta y la plantilla planas: ese invierno se pasa con la caja de la temporada',
         'molde (mínimo de la familia) · research §3 · SPEC D7'),
     'vida_obra': (
         None, None, 15, None,
@@ -298,8 +318,8 @@ SUPUESTOS = {
     'rampa_mes1': (
         None, None, 0.45, None,
         'Una finca que acaba de abrir no factura el primer mes lo que factura al año: las bodas se reservan con 12-18 '
-        'meses de antelación y la primera temporada sólo trae lo que se vendió desde la licencia. Con 100 % se '
-        'elimina la rampa',
+        'meses de antelación y la primera temporada sólo trae lo que se reservó, condicionado a la licencia, durante '
+        'la tramitación y la obra. Con 100 % se elimina la rampa',
         'research §0 y §3 (Bodas.net, fuente secundaria) · SPEC D8'),
     'meses_rampa': (
         None, None, 12, None,
@@ -368,8 +388,9 @@ PLANTILLA = (
      'research §3 [estimado]', 1.0),
     ('Coordinación de bodas y celebraciones (fijo discontinuo, marzo-noviembre)', 1, 1240,
      'Contrato fijo discontinuo (art. 16 del Estatuto de los Trabajadores) a jornada completa de marzo a noviembre: '
-     'equivale al 75 % en cómputo anual. Prepara cada evento con los novios y el catering y lo dirige el día. Bruto a '
-     'jornada completa: unos 1.650 €',
+     'equivale al 75 % en cómputo anual. Prepara cada evento con los novios y el catering y lo dirige el día. De '
+     'diciembre a febrero (comidas de Navidad y eventos de invierno) coordina el titular. Bruto a jornada completa: '
+     'unos 1.650 €',
      'research §3 [estimado] · ET art. 16', 0.75),
     ('Mantenimiento y jardinería', 1, 1120,
      'Jardines, riego, caminos, pequeñas reparaciones, grupo electrógeno y puesta a punto del salón y de la carpa. '
@@ -495,26 +516,29 @@ INSTRUCCIONES = {
         'caja real será algo mejor.',
         '7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización '
         'del préstamo. Si la diferencia sale en rojo, el plan no está financiado.',
-        '8. El documento Word de este pack, la calculadora de presupuestos y los modelos de contrato usan las cifras '
-        'de este Excel: si cambias una celda verde, el Excel manda.',
+        '8. El documento Word de este pack usa las cifras de este Excel; la calculadora de presupuestos y los modelos '
+        'de contrato usan los mismos porcentajes de cobro y de cancelación. Si cambias una celda verde, el Excel '
+        'manda.',
     ],
     'referencias': [
         ('Mes 1 del plan', 'Marzo', 'Decisión del plan',
-         'La obra y la licencia se hacen en otoño e invierno y se abre con las comuniones y la empresa de primavera. '
+         'La licencia (de 6 a 12 meses o más) y la obra se cierran durante el invierno anterior, y se abre con las '
+         'comuniones y la empresa de primavera. '
          'La fila de estacionalidad de la Tesorería ya va girada'),
         ('Mezcla de eventos del plan', '120 eventos: 30 bodas, 35 de empresa, 40 celebraciones privadas y 15 pequeños',
          'Estimación del kit',
          'Bodas (30 × 120 invitados × 47 €), empresa (35 × 80 × 34 €), celebraciones privadas (40 × 70 × 29 €) y '
          'pequeños (15 × 40 × 30 €), sin IVA, de espacio, servicios y canon. Media: 82 invitados a 37 €'),
         ('Techo de fechas', 'Unos 26 sábados de mayo a octubre', 'Estimación del kit',
-         'Las 30 bodas son unas 21 en sábados de temporada (el 80 %) y el resto en viernes, domingos o fuera de '
+         'Las 30 bodas son unas 24 en sábados de temporada (el 80 %) y el resto en viernes, domingos o fuera de '
          'temporada. El libro no comprueba este techo: compruébalo tú en tu calendario'),
         ('Bodas en España en 2024', '175.364, el 83,6 % civiles', 'INE, Movimiento Natural de la Población 2024',
          'De mayo a octubre se celebra el 63,7 %; septiembre (13,1 %) y junio (12,8 %) son los picos y enero se queda '
          'en el 3,8 %'),
         ('Antelación de la reserva de una boda', '12-18 meses (13 de media)',
          'Bodas.net, Informe del Sector Nupcial 2026',
-         'Por eso la primera temporada se vende antes de abrir y la rampa del plan dura 12 meses'),
+         'Por eso la primera temporada se reserva antes de abrir, condicionada a la licencia, y la rampa del plan dura '
+         '12 meses'),
         ('Coste directo por evento', '650 € boda · 350 € empresa · 300 € celebración · 150 € pequeño',
          'Estimación del kit',
          'Limpieza tras el evento, reposición de aseos y consumibles, gasoil del grupo electrógeno, vigilancia y '
@@ -524,13 +548,14 @@ INSTRUCCIONES = {
          'Unos 13 € por invitado en una boda. Negócialo y pon el tuyo: en este plan, cada punto de canon son unos '
          '6.700 € de ventas al año'),
         ('Personal de la finca en un evento', 'Coordinación y 1 auxiliar (2 en las bodas)', 'Estimación del kit',
-         'Boda: 2 auxiliares × 12 h · empresa 1 × 9 h · celebración 1 × 8 h · pequeño 1 × 5 h. Camareros y cocina '
+         'Boda: 2 auxiliares × 13 h · empresa 1 × 9 h · celebración 1 × 8 h · pequeño 1 × 5 h. Camareros y cocina '
          'los pone el catering'),
         ('IVA de lo que factura la finca', '21 %', 'Ley 37/1992 del IVA',
          'El espacio y los servicios con precio propio y el canon que cobras al catering, al tipo general. El menú lo '
          'factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º). Meter el espacio al 10 % dentro de un pack es '
          'arriesgado: confírmalo con tu asesoría o pide una consulta vinculante'),
-        ('Plan de autoprotección', 'Desde 1.000 personas en edificio cerrado o carpa · 5.000 al aire libre',
+        ('Plan de autoprotección',
+         'Desde 1.000 personas en edificio cerrado o carpa · 5.000 al aire libre en recinto delimitado',
          'Orden INT/1068/2026, Directriz Básica de Autoprotección (BOE del 10-10-2026)',
          'Una finca de 300 invitados queda por debajo de la norma estatal; tu comunidad o tu ayuntamiento pueden '
          'pedir más, por ejemplo en un entorno forestal'),

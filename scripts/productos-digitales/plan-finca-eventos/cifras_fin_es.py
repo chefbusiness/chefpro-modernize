@@ -120,7 +120,7 @@ MAPA = {
     'RENTA_PREVIA': (INV, r'^renta de la finca durante la obra', 2, 'eur'),
     'IMPREVISTOS': (INV, r'^imprevistos de obra', 2, 'eur'),
     'PROYECTO': (INV, r'^proyecto t[eé]cnico', 2, 'eur'),
-    'LICENCIAS': (INV, r'^calificaci[oó]n urban[ií]stica', 2, 'eur'),
+    'LICENCIAS': (INV, r'^licencias, tasas', 2, 'eur'),          # revisión final M8: el rótulo empieza por «Licencias»
     'SALON': (INV, r'^adecuaci[oó]n del sal[oó]n', 2, 'eur'),
     'ACUSTICA': (INV, r'^ac[uú]stica', 2, 'eur'),
     'CARPA': (INV, r'^carpa', 2, 'eur'),
@@ -226,7 +226,8 @@ def leer(wb):
         r = _fila(ws, rx)
         v = ws.cell(r, col).value if r else None
         if isinstance(v, str) and tok.startswith('PAYBACK') and v.strip():   # «Más de 3 años»: texto del libro
-            textos[tok] = v.strip()
+            t = v.strip()
+            textos[tok] = t[:1].lower() + t[1:]   # revisión final m1: va en mitad de frase («se recupera en más de 3 años»)
             continue
         if not isinstance(v, (int, float)):
             falta.append('%s (%s · %s): %r' % (tok, hoja, rx, v))

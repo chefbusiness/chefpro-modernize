@@ -54,10 +54,15 @@ INVERSION = [
     ('Proyecto técnico y dirección de obra', 7000,
      'Proyecto de adecuación y de la actividad, dirección de obra y certificado final. Es la base de la calificación '
      'o autorización urbanística y de la licencia', 'Sí'),
-    ('Calificación urbanística, licencia, tasas y prestación compensatoria o canon', 10000,
+    # Revisión final M8: el rótulo EMPIEZA por «Licencias» para que el motor (grupo_a.RX_SIN_IVA, anclado con ^) la
+    # marque «No» en la columna de IVA: tasas, licencia, prestación compensatoria y canon no llevan IVA. El cuarto
+    # campo no lo lee el motor (reescribe la columna E con `_lleva_iva(rótulo)`).
+    ('Licencias, tasas, calificación urbanística y prestación compensatoria o canon', 10000,
      'Lo que cobra la administración en suelo rústico, distinto en cada comunidad: en Andalucía, prestación '
      'compensatoria del 10 % de las obras sin maquinaria (LISTA, art. 22.5); en la C. Valenciana, canon del 2 % '
-     '(TRLOTUP, art. 221). Ajusta esta partida a la tuya: compruébalo en tu ayuntamiento y en tu comunidad', 'No'),
+     '(TRLOTUP, art. 221). En Andalucía, sólo la prestación serían unos 13.000 € con la obra del caso: súbela si es '
+     'tu comunidad. No lleva IVA. Ajusta esta partida a la tuya: compruébalo en tu ayuntamiento y en tu comunidad',
+     'No'),
     ('Adecuación del salón: suelos, cerramientos, carpintería y pintura', 30000,
      'Sobre edificaciones EXISTENTES: en suelo rústico es lo que exigen Madrid y Cataluña y la vía rápida de la C. '
      'Valenciana. Pide dos presupuestos sobre el proyecto', 'Sí'),
@@ -69,7 +74,9 @@ INVERSION = [
      'autoprotección estatal tiene el mismo umbral que un edificio cerrado, 1.000 personas (Orden INT/1068/2026)',
      'Sí'),
     ('Aseos: dos bloques y uno adaptado', 22000,
-     'Con un aseo adaptado e itinerario accesible: compruébalo con tu técnico sobre el Código Técnico', 'Sí'),
+     'Con un aseo adaptado e itinerario accesible: compruébalo con tu técnico sobre el Código Técnico. Incluye la '
+     'conexión al saneamiento (fosa séptica o depuradora); si hay que hacerla nueva o ampliarla para el aforo, súbela',
+     'Sí'),
     ('Instalación eléctrica: cuadro, alumbrado exterior y de emergencia', 15000,
      'Potencia para el salón, la carpa, el office y el exterior, con su boletín. Pregunta la potencia disponible '
      'ANTES de firmar: una acometida nueva en el campo tarda', 'Sí'),
@@ -81,7 +88,7 @@ INVERSION = [
      'El espacio donde el catering emplata y friega. La cocina de producción la pone él: por eso el plan no lleva '
      'cocina. Lo inscribe en el registro sanitario quien lo usa; compruébalo en tu comunidad', 'Sí'),
     ('Mobiliario de ceremonia y banquete: mesas, sillas y mantelería base', 18000,
-     'Mesas redondas e imperiales, 250 sillas y mantelería base. La decoración especial la contratan los novios',
+     'Mesas redondas e imperiales, 300 sillas y mantelería base. La decoración especial la contratan los novios',
      'Sí'),
     ('Zona chill-out y decoración base', 4000, 'Sofás, iluminación ambiental y elementos fijos de decoración', 'Sí'),
     ('Sonido, limitador-registrador y proyector', 6000,

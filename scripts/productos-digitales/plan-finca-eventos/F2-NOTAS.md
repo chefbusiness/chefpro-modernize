@@ -99,3 +99,71 @@ Después sólo se tocaron textos (vocabulario y notas): las cifras no se moviero
 - El año 1 NO sale en pérdidas (§2.7). El riesgo es de ocupación: con menos de ≈ 98 eventos del tamaño medio no hay caja.
 - El canon del 12 % es un supuesto («negócialo»), nunca un dato. Todo lo que factura la finca va al 21 %.
 - Escribir «quince años», no «15 años» (§2.8).
+
+## 8. Revisión final aplicada (ronda única, 25-oct-2026, sesión Claude Code)
+
+Fuente: `REVISION-FINAL.md` (0 B · 9 M · 26 m). Cambios en el Mac (solo ficheros); regeneración y gates en el VPS
+(`/root/wt-finca`), ficheros llevados con `scp` uno a uno. Sin commits.
+
+### M (9/9; M7 sin `G14`)
+
+| # | Estado | Qué se hizo |
+|---|---|---|
+| M1 | ✅ | Word P96: «{BE_EVENTOS_ANO} eventos al año del tamaño medio ({INVITADOS_EVENTO} invitados), o {BE_INVITADOS_EVENTO} invitados por evento si mantienes los {EVENTOS_ANO} eventos, con unos ingresos de {BE_INGRESOS}» |
+| M2 | ✅ | P59, P96 y P113: el umbral de caja del año 1 ({BE_EVENTOS_ANO_CAJA}) y el de los años 2 y 3 ({BE_EVENTOS_CAJA_A2}/{BE_EVENTOS_CAJA_A3}) |
+| M3 | ✅ | Regla única «ninguna fecha en firme sin licencia; antes, solo reservas condicionadas a la licencia con devolución íntegra si no llega»: Word P43, P65, P66, P70, P76, P95, P97, P99, P103 y P113; contrato (tercera idea guía, Segunda con el inciso y cláusula nueva **«Segunda bis · Reserva condicionada a la licencia»**: condición suspensiva con fecha límite ≥ 6 meses antes del evento, solo se cobra la reserva, firme al comunicar la licencia, devolución íntegra en [14] días si no llega); checklist F2 («No confirmar fechas en firme sin licencia», remite a la Segunda bis); `Supuestos!C34` y `C52`; `Instrucciones` (antelación de la reserva); landing (`why.reasons[0]`, FAQ 1, tarjeta de Tesorería); correo (dos viñetas); pistas de `tandas_docx.py`. Año 1: la primera temporada se vende con reservas condicionadas durante la tramitación, que pasan a firmes con la licencia; si no se llega, escenario pesimista |
+| M4 | ✅ | P57 y P97 (con tokens): el saldo mínimo ({SALDO_MINIMO}, {MES_SALDO_MINIMO_NOMBRE}) lo sostiene el fondo en la primavera de arranque; el primer invierno se pasa con la caja de la temporada ({SALDO_MES12} en el mes 12). `Supuestos!C35` igual. Comprobado contra `Tesorería!B22:M22` regenerada |
+| M5 | ✅ | P109: 85.6 proporcionalidad, 87.2 reciprocidad, 90.2 solo fuero, 103.l solo desistimiento a distancia |
+| M6 | ✅ | Contrato, Sexta: «La reserva como señal a cuenta del precio»; se rige exclusivamente por la tabla de la séptima y su reciprocidad de la octava, que sustituyen a cualquier régimen general de señal o arras. Fuera «arras penitenciales» y la cita del art. 1454 (con efectos pactados distintos, el nombre ya no era coherente) |
+| M7 | ✅ / ⏸ | `Supuestos!C39`, `C40` y `Tesorería!O16` reescritas con el VOCABULARIO del contenido (claves = frases del motor; cero código común). **`PyG!G14` no**: es la fórmula común `iva_bebida_compra` (sale 10 %) y `IVA_COMPRAS` solo admite «comida»; sin efecto en cifras (coste del canon = 0). Deuda del motor: que `IVA_COMPRAS` acepte «bebida» |
+| M8 | ✅ | El motor ignora la columna E de la semilla y la reescribe con `grupo_a._lleva_iva(rótulo)` (`RX_SIN_IVA`, anclada con `^`): la partida pasa a llamarse **«Licencias, tasas, calificación urbanística y prestación compensatoria o canon»** y sale «No». `cifras_fin_es.py` lee `LICENCIAS` por el rótulo nuevo. Préstamo sin tocar (263.000 €) |
+| M9 | ✅ | Landing FAQ 9 y `equivalencias-es/datos/integracion.json` («ejemplos»): fianza = depósito en garantía (MX, CO), aseos = baños, catering = banquetería (CL, AR), barra libre = open bar. Las cuatro comprobadas en el texto de la guía generada |
+
+### m (24 aplicados · 2 no aplicados)
+
+- **Word**: m1 (`PAYBACK` en minúscula desde `cifras_fin_es.py`, y P112 «el payback, de …»), m2 (el/del/al con los porcentajes en P40, P43, P62, P72, P87, P95, P96, P112 y P113), m3, m4, m5, m6, m7, m8 (saneamiento: fosa o depuradora dentro de aseos e imprevistos, confederación hidrográfica; la nota de la partida de aseos lo dice ahora), m9, m10, m11 (también `Instrucciones!B44` y checklist F2) y m12: ✅.
+- **Plan financiero**: m14 (unas 24, el 80 %), m15 (13 h), m16, m17 (300 sillas, también checklist F3), m18 (Andalucía ≈ 13.000 €), m19 (`Tesorería!O5` e `Instrucciones!D35`: «la licencia (de 6 a 12 meses o más) y la obra se cierran durante el invierno anterior»), m20 (de diciembre a febrero coordina el titular: `Personal!J6` y checklist F4; sin cambiar la jornada del 75 %): ✅. **m13 no**: `Personal!C11 = SUM(C5:C10)` es fórmula de `grupo_a` (molde común); el Word ya usa las 3,75 jornadas ponderadas (`JORNADAS_EQUIVALENTES`). Deuda del motor: `SUMPRODUCT(B5:B10,C5:C10)` y `Escenarios!B24:D24`.
+- **Contrato**: m21 (tramos «de 6 meses a menos de 12…», también en el anexo de empresa), m22 (mínimo garantizado sin precio por invitado del espacio; los invitados de más, opcional entre corchetes; la liquidación igual), m23 (desistimiento solo a distancia o fuera de la finca, 103.l; también checklist F6, sin citar el art. 102), m24, m25 (último tramo «descontados los costes que la Finca se ahorra»; la calculadora lo avisa en las notas de `cn5` y `can5`, regenerada con autotest): ✅.
+- **Correo**: m26 «allí lo contamos entero» ✅. **Guía de equivalencias en Letter: no aplicado** (deuda transversal del generador común `equivalencias-es/build_guia_es.py`, afecta a las 53 guías; fuera de este PR).
+- De paso: la nota de trimestres de la Tesorería (VOCABULARIO) decía «unos 18.760 € por compensar»; con M8 son 16.658 € → «unos 16.660 €».
+
+### Cifras del caso que cambian (M8)
+
+| Token | Antes | Después |
+|---|---|---|
+| `IVA_INVERSION` | 51.194 € | **49.094 €** |
+| `NECESIDAD_CAJA` | 362.603 € | **360.503 €** |
+| `PRESTAMO` | 263.000 € | 263.000 € (sin cambio) |
+| `DIFERENCIA_FONDOS` (sobrante) | 397 € (0,1 %) | **2.497 € (0,7 %)** |
+| `DSCR_MIN` | 1,68 | 1,68 (sin cambio) |
+| `SALDO_MINIMO` | 51.025 € (abril, Mes 2) | 51.025 € (sin cambio: la Tesorería no mueve caja por el IVA de la inversión, se compensa en el 303) |
+| `PAYBACK` | «Más de 3 años» | «más de 3 años» (m1) |
+
+Lo demás (ventas, neto, equilibrios, holguras, cobertura, escenarios) no se mueve.
+
+### Gates (VPS)
+
+- `ciclo.sh` (dos vueltas: la segunda tras corregir la nota de trimestres) → `main.py exit 0`, **TODO VERDE**: §9 13/13,
+  idempotencia, caché (734 fórmulas, 0 fallos pycel; 693 con valor, 52 «""»), blancos 0, checklist C2 84 ítems, censo 0,
+  moldes 30/30, 16/16 protegidas, demos.
+- `cifras_fin_es.py` → **D9 VERDE** (8/8 OK; D4 sobre el xlsx calculado: G10/G11 = 21 %, Σ repercutido = 21 % × 364.080 €,
+  303 del Mes 4/7/10 = libro, pago del 303 en el año 1 = 0 €). `cifras_caso_es.json` 155 tokens.
+- `tandas_docx.py check` (Mac): `fin_es_a` OK (0 errores, 4 avisos de cifras escritas ya existentes) · `fin_es_b` OK (0
+  errores, 4 avisos). `preparar` rehecho con las cifras nuevas y las pistas alineadas con M3.
+- `docx_fin_es.py` → **VERDE** (131 párrafos, 10 Heading 1, 6.906 palabras, A4, 0 tokens) · `contrato_fin_es.py` → **VERDE**
+  (150 párrafos, 4.752 palabras, A4) · `calculadora_fin_es.py` → autotest **VERDE** (588 comprobaciones; 172 fórmulas con
+  caché).
+- `barrido_es.py` sobre los 5: 3 coincidencias, las aceptadas del contrato (2 × «obrador» del cliente y «espacio cubierto»).
+- `catering-es-2_0/gate_restos_ft.py` sobre los 5 (sin la guía, que es Letter) con `--rx-extra` de restos de panadería,
+  heladería y parrillero: **VERDE** · `censo-entregables.py --only plan-negocio-finca-eventos-bodas --fail`: **0 defectos**
+  (6 ficheros, 918 fórmulas, 0 sin caché, 0 noA4).
+- sha256 Mac = VPS en los 5 entregables regenerados y en `cifras_caso_es.json`. La guía de equivalencias no se regenera.
+- Grep de comprobación sobre los textos regenerados: 0 «Más de», 0 «Comunitat», 0 «arras penitenciales» / «1454», 0
+  «vend… fechas sin licencia», «primer invierno» solo con la caja de la temporada.
+
+### Pendiente fuera de este PR
+
+- Si el borrador de Resend del correo de lanzamiento (3-dic) ya se creó con el HTML anterior, hay que actualizarlo con el
+  nuevo (`broadcast-…-lanzamiento-es.html`: regla de la licencia, «primera temporada se reserva…» y «lo contamos»).
+- Deudas del motor/generador: `IVA_COMPRAS` con «bebida» (`PyG!G14`), `Personal!C11` ponderado (m13) y guía de
+  equivalencias en A4 (m26, las 53 guías).

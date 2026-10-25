@@ -90,16 +90,18 @@ FASES = [
          'Cataluña: masía del catálogo con informe de la comisión territorial de urbanismo (TRLU, art. 50). C. '
          'Valenciana: DIC previa a la licencia, con canon del 2 % (TRLOTUP, arts. 216 y 221), o la reutilización de '
          'arquitectura tradicional (art. 219). En otra comunidad, pregunta en urbanismo qué figura usa'),
-        ('No vender fechas sin licencia', 'Titular', 'Hasta tener la licencia',
-         'Si la calificación se deniega o se retrasa, hay que devolver señales. Antes de la licencia, sólo reservas '
-         'con devolución íntegra pactada por escrito'),
+        ('No confirmar fechas en firme sin licencia', 'Titular', 'Hasta tener la licencia',
+         'Si la calificación se deniega o se retrasa, hay que devolver lo cobrado. Antes de la licencia, sólo reservas '
+         'condicionadas a la licencia, con devolución íntegra si no llega, pactada por escrito (cláusula segunda bis '
+         'del modelo de contrato). Al obtenerla, se convierten en firmes'),
         ('Licencia municipal de actividad', 'Técnico', 'Meses 8-14',
          'La boda es un acto privado, pero la finca que la alquila a terceros es un establecimiento público: la C. '
          'Valenciana la cataloga como «salón de banquetes» (Ley 14/2010). Compruébalo en la ley de espectáculos de '
          'tu comunidad'),
         ('Aforo, evacuación y medidas de emergencia', 'Técnico', 'Con el proyecto',
          'El aforo legal lo fija la licencia. Con 300 invitados no hay plan de autoprotección estatal: empieza en '
-         '1.000 personas en edificio cerrado o carpa y en 5.000 al aire libre (Orden INT/1068/2026). Tu comunidad o '
+         '1.000 personas en edificio cerrado o carpa y en 5.000 al aire libre en recinto delimitado (Orden '
+         'INT/1068/2026). Tu comunidad o '
          'tu ayuntamiento pueden pedir más'),
         ('Ruido: estudio acústico y limitador-registrador', 'Técnico', 'Con el proyecto',
          'Límite al exterior en zona residencial: 55 dBA de día y de tarde y 45 de noche (RD 1367/2007, anexo III). '
@@ -137,7 +139,7 @@ FASES = [
         ('Carpa o pérgola para ceremonia y cóctel', 'Proveedor', 'Antes de la temporada',
          'Es el plan B de lluvia. Pide el certificado de montaje y de resistencia al viento del fabricante'),
         ('Mobiliario, mantelería base y zona chill-out', 'Titular', 'Mes 3 de obra',
-         'Mesas, 250 sillas y mantelería base; la decoración especial la contratan los novios'),
+         'Mesas, 300 sillas y mantelería base; la decoración especial la contratan los novios'),
         ('Sonido, limitador-registrador y proyector', 'Instalador', 'Mes 3 de obra',
          'El limitador, precintado y con registro, es tu prueba ante una denuncia por ruido'),
         ('Aparcamiento, caminos y señalización', 'Constructora', 'Meses 2-3 de obra',
@@ -151,7 +153,7 @@ FASES = [
     ('F4 - Personal y catering', 'FASE 4: PERSONAL Y CATERING EXCLUSIVO (6-2 meses antes)', [
         ('Contratar la coordinación como fija discontinua', 'Gestoría', '3 meses antes',
          'Contrato fijo discontinuo (art. 16 del Estatuto de los Trabajadores) de marzo a noviembre, con '
-         'llamamiento por escrito'),
+         'llamamiento por escrito. De diciembre a febrero coordina el titular'),
         ('Auxiliares de montaje y acceso como fijos discontinuos', 'Gestoría', '2 meses antes',
          'Nunca como autónomos que te facturan: con tu horario y tu dirección es falso autónomo (art. 1.1 ET). Para '
          'los picos, una ETT'),
@@ -227,8 +229,9 @@ FASES = [
         ('Contrato firmado, señal y factura de la señal', 'Titular', 'Al reservar la fecha',
          'Cada cobro, también la señal, lleva su factura con el IVA del 21 %'),
         ('Sin derecho de desistimiento: avísalo por escrito', 'Titular', 'Al reservar la fecha',
-         'Un servicio de ocio con fecha concreta no tiene derecho de desistimiento (TRLGDCU, art. 103.l). Dilo en el '
-         'contrato para evitar discusiones'),
+         'Si contratas a distancia o fuera de la finca (web, correo o teléfono), un servicio de esparcimiento con fecha '
+         'concreta queda fuera del derecho de desistimiento (TRLGDCU, art. 103.l). Dilo en el contrato para evitar '
+         'discusiones'),
         ('Fuero del consumidor en el contrato', 'Abogado', 'En el contrato',
          'Con particulares es abusiva la cláusula que les lleve a un juzgado distinto del de su domicilio o del lugar '
          'donde se presta el servicio (TRLGDCU, art. 90.2)'),
