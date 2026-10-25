@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-25T19:22:11Z",
+  "generado": "2026-10-25T19:48:01Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
-   "/root/tmp-pizen/fuente-es/plan-negocio-pizzeria"
+   "astro-site/public/dl/plan-negocio-pizzeria"
   ],
-  "commit": "8beee70e",
+  "commit": "25bd7e02",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -13,7 +13,7 @@
    "corto": "PIZP",
    "plan": "piz",
    "tipo": "plan",
-   "sha256": "aad4cabe36b0b241a586d0f89139eecc55a0fdc94d4bf37468ed4c24456f22c9",
+   "sha256": "afa03288a49e74ed115fabbb9774063ecb2a6609023aa275480a3f83814e2217",
    "nombre_en": "pizza-shop-financial-projections.xlsx",
    "titulo_en": "Pizza Shop Financial Projections: 3-Year P&L, Cash Flow & Financing",
    "hojas": [
@@ -212,7 +212,7 @@
       "59": "Días medios de pago a proveedor",
       "60": "Mes de la paga extra de verano",
       "61": "Mes de la paga extra de Navidad",
-      "62": "Bebida que compras al 21 % (alcohol y refrescos con azúcar) sobre el total de bebida",
+      "62": "Bebida que compras al 21 % (alcohol y refrescos azucarados o edulcorados) sobre el total de bebida",
       "63": "IVA de la bebida ALCOHÓLICA servida en sala",
       "64": "UMBRALES Y SUELOS DE CONTROL",
       "65": "DSCR mínimo aceptable",
@@ -6327,11 +6327,11 @@
       "5": "1. «0. Supuestos» es la hoja de mando: comensales, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
       "6": "2. Las partidas de la inversión, los costes fijos y la plantilla se teclean en su propia hoja, también en verde. Ningún número se escribe dos veces.",
       "7": "3. En «Punto Equilibrio» sólo se teclea el techo de rotaciones que da tu local; todo lo demás se deriva de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
-      "8": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —las pizzas incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica a la parte de la bebida que declara la columna H de su línea en el P&L. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+      "8": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —las pizzas incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares o edulcorantes añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica a la parte de la bebida que declara la columna H de su línea en el P&L. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
       "9": "5. Si cambias la plantilla, el P&L la lee sola: el coste de personal sale de la hoja «Personal», no de una estimación aparte.",
       "10": "6. La hoja «Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. Su Mes 1 es SEPTIEMBRE: el plan abre después del verano para llegar a la Navidad con clientela y a enero y febrero con el fondo intacto. El saldo mínimo del año nunca puede salir en rojo.",
       "11": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
-      "12": "8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel manda. La calculadora de masa y escandallo del pack va aparte: el coste de cada pizza que te dé es el que tienes que llevar a la celda de coste de la comida de la hoja de Supuestos.",
+      "12": "8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel manda. La calculadora de masa y escandallo del pack va aparte y sirve para ESCANDALLAR cada pizza: no copies el food cost de una pizza en la hoja de Supuestos. La celda «Coste de mercancía sobre las ventas de COMIDA» es la media ponderada de TODA la carta (pizzas, entrantes y postres, cada uno por lo que vende) más la merma, y por eso sale bastante más alta que el food cost de la Margherita. Con los escandallos de tu carta, comprueba que esa media cuadra.",
       "14": "RATIOS QUE AUDITA EL LIBRO",
       "15": "Los umbrales viven en la columna «Umbral» del bloque RATIOS CLAVE del P&L: cámbialos ahí y el semáforo cambia con ellos.",
       "17": "Ratio",
@@ -10240,7 +10240,7 @@
    "corto": "PIZC",
    "plan": "piz",
    "tipo": "check",
-   "sha256": "56a304c0e54119636234666a0f47878ca3ec9b855f2283e34c6131838a88bad9",
+   "sha256": "306e3fc3c261ebed2eda6bb48186c10abbdda29bdce13356c4ba9cec3fa5752b",
    "nombre_en": "pizza-shop-startup-checklist.xlsx",
    "titulo_en": "Pizza Shop Startup Checklist (80 Tasks)",
    "hojas": [
@@ -11381,7 +11381,7 @@
      "formulas_texto": {},
      "etiquetas": {
       "1": "INSTRUCCIONES DE USO",
-      "3": "Este fichero forma parte del producto «plan-negocio-pizzeria» de AI Chef Pro.",
+      "3": "Este fichero forma parte del «Plan de Negocio: Pizzería Napolitana» de AI Chef Pro.",
       "4": "Las celdas VERDES son las editables: cambia esas y el resto del libro se recalcula solo.",
       "5": "Columna OK: elige ✓ (hecho), ☐ (pendiente) o N/A (no aplica). Las N/A no cuentan en el total.",
       "6": "El contador de cada pestaña cuenta sólo las ✓; las N/A salen del total.",

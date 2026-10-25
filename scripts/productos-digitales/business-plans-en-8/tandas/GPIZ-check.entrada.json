@@ -2,8 +2,8 @@
  "tanda": "GPIZ-check",
  "salida": "scripts/productos-digitales/business-plans-en-8/textos_en/GPIZ-check.json",
  "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
- "n_cadenas": 219,
- "n_palabras": 3037,
+ "n_cadenas": 220,
+ "n_palabras": 3051,
  "pistas": {
   "P01": "D146/research §6.2: NFPA 96 ch. 14 (dedicated exhaust, spark arrestor, UL 2162-listed oven, ash out daily, fuel away from the oven) + «ask the fire marshal in writing: hood? suppression? UL 2162 file number?»",
   "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
@@ -2643,6 +2643,16 @@
     "P06",
     "P08",
     "P15"
+   ]
+  },
+  {
+   "id": "c0863",
+   "es": "Este fichero forma parte del «Plan de Negocio: Pizzería Napolitana» de AI Chef Pro.",
+   "donde": [
+    "PIZC · Instrucciones!A3"
+   ],
+   "pistas": [
+    "P06"
    ]
   }
  ]

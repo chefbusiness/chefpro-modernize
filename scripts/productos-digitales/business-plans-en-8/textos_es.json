@@ -1,24 +1,24 @@
 {
  "meta": {
-  "generado": "2026-10-25T19:22:11Z",
+  "generado": "2026-10-25T19:48:01Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "8beee70e",
+  "commit": "25bd7e02",
   "libros": {
    "PIZP": {
     "es": "plan-financiero-pizzeria.xlsx",
     "en": "pizza-shop-financial-projections.xlsx",
-    "sha256": "aad4cabe36b0b241a586d0f89139eecc55a0fdc94d4bf37468ed4c24456f22c9"
+    "sha256": "afa03288a49e74ed115fabbb9774063ecb2a6609023aa275480a3f83814e2217"
    },
    "PIZC": {
     "es": "checklist-apertura-pizzeria.xlsx",
     "en": "pizza-shop-startup-checklist.xlsx",
-    "sha256": "56a304c0e54119636234666a0f47878ca3ec9b855f2283e34c6131838a88bad9"
+    "sha256": "306e3fc3c261ebed2eda6bb48186c10abbdda29bdce13356c4ba9cec3fa5752b"
    }
   },
   "n_cadenas": 867,
-  "n_traducir": 694,
+  "n_traducir": 695,
   "n_localizar": 52,
-  "n_palabras_subagentes": 10594,
+  "n_palabras_subagentes": 10670,
   "n_apariciones": 1127,
   "grupos": [
    {
@@ -45,7 +45,7 @@
     "id": "GPIZ-plan",
     "descripcion": "Nuevas del plan financiero (PIZP) + las del Bar con vocabulario o caso de bar (con propuesta) + las 13 filas D19 de Instrucciones (una cadena por celda, sin propuesta: D142)",
     "n_cadenas": 139,
-    "n_palabras": 3560,
+    "n_palabras": 3622,
     "n_plan": 139,
     "n_check": 1,
     "n_localizar": 52,
@@ -54,26 +54,26 @@
    {
     "id": "GPIZ-check",
     "descripcion": "Nuevas del checklist (PIZC): las 80 tareas y sus cabeceras (con propuesta cuando el Bar tiene el mismo ES)",
-    "n_cadenas": 219,
-    "n_palabras": 3092,
+    "n_cadenas": 220,
+    "n_palabras": 3106,
     "n_plan": 0,
-    "n_check": 219,
+    "n_check": 220,
     "n_localizar": 0,
     "n_max_len": 0
    },
    {
     "id": "GX",
     "descripcion": "NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps",
-    "n_cadenas": 121,
-    "n_palabras": 1141,
+    "n_cadenas": 120,
+    "n_palabras": 1138,
     "n_plan": 111,
-    "n_check": 20,
+    "n_check": 19,
     "n_localizar": 0,
     "n_max_len": 0,
     "por_tratamiento": {
      "mapa-clave": 2,
      "mapa-hoja": 15,
-     "regenerar": 104
+     "regenerar": 103
     }
    }
   ],
@@ -14712,14 +14712,14 @@
   },
   {
    "id": "c0008",
-   "es": "SIN IVA, por comensal: medio entrante, una pizza, 1,3 bebidas y algún postre o café, unos 22 € con IVA en sala. La Margherita de la carta del caso cuesta 10 € con IVA, en la parte baja de la mediana de 10,90 € de 14 pizzerías de Madrid, Barcelona, Valencia, Marbella y Tenerife (octubre de 2026). El precio con IVA está en la fila «PVP equivalente con IVA» de abajo",
+   "es": "SIN IVA, por comensal: medio entrante, una pizza, 1,3 bebidas y algún postre o café, unos 22 € con IVA en sala. La Margherita de la carta del caso cuesta 10 € con IVA, algo por debajo de la mediana de 10,90 € de 14 pizzerías de Madrid, Barcelona, Valencia, Marbella y Tenerife (octubre de 2026). El precio con IVA está en la fila «PVP equivalente con IVA» de abajo",
    "grupo": "GPIZ-plan",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 70,
+   "palabras": 69,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
@@ -14731,7 +14731,7 @@
     "D55/§0: el libro dice «covers» y «seat turns»; nunca «customers» para el volumen diario",
     "D137: caso US = 62 covers/día (≈ 47 en sala, 50 plazas + patio de 24 abr-oct, + ≈ 15 equivalentes de take-out y delivery) × $35 (sin sales tax ni propina) × 300 días; beer & wine; sin cifras del ES ni historia de versiones; check de $35 = ½ starter ($5) + pizza (~$20: Margherita $18, especialidades $20-24) + 1.2 bebidas ($6.60) + postre/café (~$3); Margherita $18 = mediana de Bufalina (Austin), Antico (Atlanta) y via Marina (Des Moines), research §5.1; el precio con impuesto lo calcula la fila \"Menu price incl. sales tax\""
    ],
-   "sha1": "538b99adcce0",
+   "sha1": "cbac0f4c872d",
    "donde": [
     {
      "f": "PIZP",
@@ -15228,20 +15228,21 @@
   },
   {
    "id": "c0072",
-   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por la bebida que sale para llevar o a domicilio (es una entrega de bienes). El alcohol servido en sala va al reducido, como fija la línea de bebida del P&L. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. En las compras, el libro manda al general la parte de la bebida que declara la celda «Bebida que compras al 21 %» de esta hoja: la cerveza, el vino y los refrescos con azúcares añadidos, cuya factura va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
+   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por la bebida que sale para llevar o a domicilio (es una entrega de bienes). El alcohol servido en sala va al reducido, como fija la línea de bebida del P&L. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. En las compras, el libro manda al general la parte de la bebida que declara la celda «Bebida que compras al 21 %» de esta hoja: la cerveza, el vino y los refrescos con azúcares o edulcorantes añadidos, cuya factura va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
    "grupo": "GPIZ-plan",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 122,
+   "palabras": 124,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
     "D146: «beer & wine license» (state ABC + local; a menudo 3-12 meses: contingencia en el lease) · liquor liability"
    ],
-   "sha1": "82f36faf831c",
+   "sha1": "11bed09f2544",
    "donde": [
     {
      "f": "PIZP",
@@ -15634,20 +15635,20 @@
   },
   {
    "id": "c0150",
-   "es": "Conducto exclusivo hasta la cubierta y, con leña, filtro de partículas: Madrid pide superar en 1 m lo que haya en 15 m (Ordenanza 4/2021). Nadie pública precio por metro: pide oferta con tu proyecto",
+   "es": "Conducto exclusivo hasta la cubierta y, con leña, filtro de partículas: Madrid pide superar en 1 m lo que haya en 15 m (Ordenanza 4/2021). Ningún fabricante da precio por metro: pide oferta con tu proyecto",
    "grupo": "GPIZ-plan",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 36,
+   "palabras": 37,
    "pistas": [
     "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
     "D146/research §6.2: NFPA 96 ch. 14 (dedicated exhaust, spark arrestor, UL 2162-listed oven, ash out daily, fuel away from the oven) + «ask the fire marshal in writing: hood? suppression? UL 2162 file number?»",
     "D139: NFPA 96 cap. 14 (escape dedicado, arrestachispas, solera aislada); pide el presupuesto al instalador del horno"
    ],
-   "sha1": "56da9d1ae96e",
+   "sha1": "633a23f62a6e",
    "donde": [
     {
      "f": "PIZP",
@@ -16777,25 +16778,26 @@
   },
   {
    "id": "c0411",
-   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —las pizzas incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica a la parte de la bebida que declara la columna H de su línea en el P&L. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —las pizzas incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares o edulcorantes añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica a la parte de la bebida que declara la columna H de su línea en el P&L. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
    "grupo": "GPIZ-plan",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 187,
+   "palabras": 189,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
     "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
     "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
     "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
     "D146: «beer & wine license» (state ABC + local; a menudo 3-12 meses: contingencia en el lease) · liquor liability",
     "SPEC §4.1 línea 4 (Bar): sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; un solo tipo en el ejemplo (B39 = B40 = 8 %)"
    ],
-   "sha1": "b897fdd5fb1a",
+   "sha1": "752f96a02054",
    "donde": [
     {
      "f": "PIZP",
@@ -16841,19 +16843,21 @@
   },
   {
    "id": "c0415",
-   "es": "8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel manda. La calculadora de masa y escandallo del pack va aparte: el coste de cada pizza que te dé es el que tienes que llevar a la celda de coste de la comida de la hoja de Supuestos.",
+   "es": "8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel manda. La calculadora de masa y escandallo del pack va aparte y sirve para ESCANDALLAR cada pizza: no copies el food cost de una pizza en la hoja de Supuestos. La celda «Coste de mercancía sobre las ventas de COMIDA» es la media ponderada de TODA la carta (pizzas, entrantes y postres, cada uno por lo que vende) más la merma, y por eso sale bastante más alta que el food cost de la Margherita. Con los escandallos de tu carta, comprueba que esa media cuadra.",
    "grupo": "GPIZ-plan",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 61,
+   "palabras": 109,
    "pistas": [
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
     "Glosario research §9: pizzaiolo · dough ball(s) · peel · cornicione · leopard spotting",
     "El Word cita las cifras de este Excel (si cambias el libro, manda el Excel); la calculadora de masa y food cost del kit va aparte y su coste por pizza es el que llevas al food cost de \"0. Assumptions\""
    ],
-   "sha1": "31f294da9ec1",
+   "sha1": "e20beb614261",
    "donde": [
     {
      "f": "PIZP",
@@ -17059,24 +17063,25 @@
   },
   {
    "id": "c0440",
-   "es": "Harina, fior di latte, tomate y aceite: unos 1,36 € con merma sobre 9,09 € sin IVA. Con búfala, burrata o embutido italiano, un 20-28 %",
+   "es": "Masa, tomate, fior di latte, aceite y albahaca: unos 1,32 € con merma sobre 9,09 € sin IVA, según la calculadora del pack. Con búfala, burrata o embutido italiano, un 20-28 %",
    "grupo": "GPIZ-plan",
    "tratamiento": "localizar",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 26,
+   "palabras": 32,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
     "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
     "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "Glosario research §9: pizzaiolo · dough ball(s) · peel · cornicione · leopard spotting",
     "D142 fila → «Margherita food cost» · el % que da la calculadora del kit para la Margherita (si no, «about 20% of its price excl. sales tax») · «Kit estimate (Pizza Dough & Food Cost Calculator)» · nota: 00 flour, fior di latte, San Marzano y aceite con merma; sustituye por el precio de tu distribuidor"
    ],
    "por_celda": true,
-   "sha1": "951b64183d00",
+   "sha1": "ee24c491af37",
    "donde": [
     {
      "f": "PIZP",
@@ -17743,21 +17748,22 @@
   },
   {
    "id": "c0464",
-   "es": "En sala, para llevar y a domicilio. El alcohol y los refrescos con azúcares añadidos que salen del local, al 21 %",
+   "es": "En sala, para llevar y a domicilio. El alcohol y los refrescos con azúcares o edulcorantes añadidos que salen del local, al 21 %",
    "grupo": "GPIZ-plan",
    "tratamiento": "localizar",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 21,
+   "palabras": 23,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
     "D146: «beer & wine license» (state ABC + local; a menudo 3-12 meses: contingencia en el lease) · liquor liability",
     "D142 fila (sustituye «IVA de la pizza») → «Sales tax» · «8% (example: state + local)» · «Kit example: look up your state and city rate» · nota: un solo tipo en el libro; algunos estados gravan distinto la comida para llevar"
    ],
    "por_celda": true,
-   "sha1": "51c3a1a8a784",
+   "sha1": "827eb49108e7",
    "donde": [
     {
      "f": "PIZP",
@@ -18323,19 +18329,20 @@
   },
   {
    "id": "c0523",
-   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en sala, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); la parte de la bebida que sale para llevar o a domicilio y declara la columna H de su línea (alcohol y refrescos con azúcares añadidos), al general (art. 91.Uno.1.1.º)",
+   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en sala, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); la parte de la bebida que sale para llevar o a domicilio y declara la columna H de su línea (alcohol y refrescos con azúcares o edulcorantes añadidos), al general (art. 91.Uno.1.1.º)",
    "grupo": "GPIZ-plan",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 69,
+   "palabras": 71,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
     "D146: «beer & wine license» (state ABC + local; a menudo 3-12 meses: contingencia en el lease) · liquor liability"
    ],
-   "sha1": "93930a9ca7ae",
+   "sha1": "c0b5013fccf9",
    "donde": [
     {
      "f": "PIZP",
@@ -23643,6 +23650,30 @@
    ]
   },
   {
+   "id": "c0863",
+   "es": "Este fichero forma parte del «Plan de Negocio: Pizzería Napolitana» de AI Chef Pro.",
+   "grupo": "GPIZ-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "piz"
+   ],
+   "n_apariciones": 1,
+   "palabras": 14,
+   "pistas": [
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+   ],
+   "sha1": "c5e49597e4d1",
+   "donde": [
+    {
+     "f": "PIZC",
+     "h": "Instrucciones",
+     "c": "A3",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ]
+  },
+  {
    "id": "c0001",
    "es": "0. Supuestos",
    "grupo": "GX",
@@ -23942,15 +23973,15 @@
   },
   {
    "id": "c0106",
-   "es": "Bebida que compras al 21 % (alcohol y refrescos con azúcar) sobre el total de bebida",
+   "es": "Bebida que compras al 21 % (alcohol y refrescos azucarados o edulcorados) sobre el total de bebida",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 15,
-   "sha1": "bd1d7bf3a3e5",
+   "palabras": 16,
+   "sha1": "8aadc8377c67",
    "donde": [
     {
      "f": "PIZP",
@@ -23964,15 +23995,15 @@
   },
   {
    "id": "c0107",
-   "es": "Sólo mueve el IVA que SOPORTAS al comprar la bebida: la cerveza, el vino y los refrescos con azúcares añadidos te los facturan al 21 % y el agua y el café, al 10 %; con un 80 % sale un 18,8 %. El IVA que REPERCUTES lo fija la línea de bebida del P&L (columna H)",
+   "es": "Sólo mueve el IVA que SOPORTAS al comprar la bebida: la cerveza, el vino y los refrescos con azúcares o edulcorantes añadidos te los facturan al 21 % y el agua y el café, al 10 %; con un 80 % sale un 18,8 %. El IVA que REPERCUTES lo fija la línea de bebida del P&L (columna H)",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 55,
-   "sha1": "9ba0eb042054",
+   "palabras": 57,
+   "sha1": "5ac6a9189627",
    "donde": [
     {
      "f": "PIZP",
@@ -24009,15 +24040,15 @@
   },
   {
    "id": "c0109",
-   "es": "SIN EFECTO en este libro: el IVA que repercute la bebida lo fija su línea del P&L. En sala, todo al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992); para llevar o a domicilio, el alcohol y los refrescos con azúcares añadidos, al 21 %, en la columna H de esa línea",
+   "es": "SIN EFECTO en este libro: el IVA que repercute la bebida lo fija su línea del P&L. En sala, todo al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992); para llevar o a domicilio, el alcohol y los refrescos con azúcares o edulcorantes añadidos, al 21 %, en la columna H de esa línea",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 56,
-   "sha1": "f0b98a2cead2",
+   "palabras": 58,
+   "sha1": "fdd342f3c501",
    "donde": [
     {
      "f": "PIZP",
@@ -25090,15 +25121,15 @@
   },
   {
    "id": "c0217",
-   "es": "Bebida de sala y la que sale con los pedidos · La columna H es la parte de la bebida que sale del local y va al 21 % (alcohol y refrescos con azúcares añadidos: art. 91.Uno.1.1.º de la Ley 37/1992); el agua, el café y los zumos sin azúcar, y toda la bebida en sala, al 10 %. Un 7 % = un 1,3 % de las ventas",
+   "es": "Bebida de sala y la que sale con los pedidos · La columna H es la parte de la bebida que sale del local y va al 21 % (alcohol y refrescos con azúcares o edulcorantes añadidos: art. 91.Uno.1.1.º de la Ley 37/1992); el agua, el café y los zumos sin azúcares ni edulcorantes añadidos, y toda la bebida en sala, al 10 %. Un 7 % = un 1,3 % de las ventas",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 69,
-   "sha1": "774b73095764",
+   "palabras": 74,
+   "sha1": "811c447d0c8e",
    "donde": [
     {
      "f": "PIZP",
@@ -26760,29 +26791,6 @@
      "t": "hoja",
      "tr": "mapa-hoja",
      "det": "nombre de pestaña"
-    }
-   ]
-  },
-  {
-   "id": "c0863",
-   "es": "Este fichero forma parte del producto «plan-negocio-pizzeria» de AI Chef Pro.",
-   "grupo": "GX",
-   "tratamiento": "regenerar",
-   "en_mapa": "This file is part of the Pizza Shop Business Plan Kit by AI Chef Pro.",
-   "planes": [
-    "piz"
-   ],
-   "n_apariciones": 1,
-   "palabras": 13,
-   "sha1": "5c4b4c241af8",
-   "donde": [
-    {
-     "f": "PIZC",
-     "h": "Instrucciones",
-     "c": "A3",
-     "t": "celda",
-     "tr": "regenerar",
-     "det": "decisión de la SPEC (mapas.FIJOS)"
     }
    ]
   },
