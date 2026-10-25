@@ -25,9 +25,9 @@ const data: GuiaData = {
     titlePre: 'Cómo Montar un ',
     titleGold: 'Restaurante Nikkei',
     subtitleLine: '60 Plazas · Guía Completa España',
-    description: 'Guía completa con 20 capítulos, 60+ páginas, 9 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu barra de tiraditos, cevichería nikkei, robata nikkei u omakase peruano-japonés en España. Referentes: Nobu, Maido, Osaka, Pakta.',
+    description: 'Guía completa con 20 capítulos, 24 páginas, 9 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu barra de tiraditos, cevichería nikkei, robata nikkei u omakase peruano-japonés en España. Referentes: Nobu, Maido, Osaka, Pakta.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX editable (20 capítulos, 24 páginas)',
       '9 plantillas Excel con fórmulas: plan financiero, escandallos nikkei, menú engineering',
       '6 checklists: legal, equipamiento cocina nikkei, APPCC anisakis + leche de tigre, sala, contratación, marketing',
       'Business Plan modelo para presentar a bancos e inversores',
@@ -153,7 +153,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Restaurante a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta un omakase para dos.',
     items: [
-      'Guía completa PDF + DOCX (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX (20 capítulos, 24 páginas)',
       '9 plantillas Excel con fórmulas',
       '6 checklists de apertura completos',
       'Business Plan modelo para bancos',

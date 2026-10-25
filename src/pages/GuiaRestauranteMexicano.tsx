@@ -23,12 +23,12 @@ export default function GuiaRestauranteMexicano() {
     <>
       <Helmet>
         <title>Cómo Montar un Restaurante Mexicano 80 Plazas — Guía Completa España | AI Chef Pro</title>
-        <meta name="description" content="Guía premium para montar un restaurante mexicano en España: 20 capítulos, 60+ páginas, proveedores de productos mexicanos, barra de tequilas, tacos, escandallos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
+        <meta name="description" content="Guía premium para montar un restaurante mexicano en España: 20 capítulos, 22 páginas, proveedores de productos mexicanos, barra de tequilas, tacos, escandallos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="como montar restaurante mexicano españa, abrir taqueria, restaurante mexicano autentico, proveedores productos mexicanos españa, barra tequilas mezcal, tacos al pastor, plan financiero restaurante mexicano, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-restaurante-mexicano" />
         <meta property="og:title" content="Cómo Montar un Restaurante Mexicano 80 Plazas — Guía Completa España" />
-        <meta property="og:description" content="Guía premium 60+ págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
+        <meta property="og:description" content="Guía premium 22 págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-restaurante-mexicano" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />

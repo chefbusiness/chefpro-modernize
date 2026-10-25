@@ -12,7 +12,7 @@ const data: GuiaData = {
 
   seo: {
     title: 'Cómo Montar un Restaurante Japonés 60 Plazas — Guía Completa España | AI Chef Pro',
-    description: 'Guía premium para montar un restaurante japonés en España: 20 capítulos, 60+ páginas, sushi-ya, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi-grade. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
+    description: 'Guía premium para montar un restaurante japonés en España: 20 capítulos, 23 páginas, sushi-ya, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi-grade. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
     keywords: 'como montar restaurante japones españa, abrir sushi bar, restaurante japones autentico, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi grade, anisakis, sake, whisky japones, plan financiero restaurante japones, AI Chef Pro',
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg',
   },
@@ -24,9 +24,9 @@ const data: GuiaData = {
     titlePre: 'Cómo Montar un ',
     titleGold: 'Restaurante Japonés',
     subtitleLine: '60 Plazas · Guía Completa España',
-    description: 'Guía completa con 20 capítulos, 60+ páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu sushi-ya, ramen-ya, izakaya, omakase o robatayaki en España.',
+    description: 'Guía completa con 20 capítulos, 23 páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu sushi-ya, ramen-ya, izakaya, omakase o robatayaki en España.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX editable (20 capítulos, 23 páginas)',
       '8 plantillas Excel con fórmulas: plan financiero, escandallos, menú engineering',
       '6 checklists de apertura: legal, equipamiento, APPCC anisakis, sala, contratación, marketing',
       'Business Plan modelo para presentar a bancos e inversores',
@@ -153,7 +153,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Restaurante a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta un omakase para dos.',
     items: [
-      'Guía completa PDF + DOCX (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX (20 capítulos, 23 páginas)',
       '8 plantillas Excel con fórmulas',
       '6 checklists de apertura completos',
       'Business Plan modelo para bancos',

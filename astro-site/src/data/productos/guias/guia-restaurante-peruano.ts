@@ -13,7 +13,7 @@ const data: GuiaData = {
 
   seo: {
     title: 'Cómo Montar un Restaurante Peruano 80 Plazas — Guía Completa España | AI Chef Pro',
-    description: 'Guía premium para montar un restaurante peruano en España: 20 capítulos, 60+ páginas, cevichería, Nikkei, barra de piscos, proveedores peruanos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
+    description: 'Guía premium para montar un restaurante peruano en España: 20 capítulos, 22 páginas, cevichería, Nikkei, barra de piscos, proveedores peruanos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
     keywords: 'como montar restaurante peruano españa, abrir cevicheria, restaurante peruano autentico, cocina nikkei, proveedores productos peruanos españa, barra piscos, ceviche, lomo saltado, plan financiero restaurante peruano, AI Chef Pro',
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-peruano-hero.jpg',
   },
@@ -25,9 +25,9 @@ const data: GuiaData = {
     titlePre: 'Cómo Montar un ',
     titleGold: 'Restaurante Peruano',
     subtitleLine: '80 Plazas · Guía Completa España',
-    description: 'Guía completa con 20 capítulos, 60+ páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu restaurante de cocina peruana y cevichería.',
+    description: 'Guía completa con 20 capítulos, 22 páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu restaurante de cocina peruana y cevichería.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX editable (20 capítulos, 22 páginas)',
       '8 plantillas Excel con fórmulas: plan financiero, escandallos, menú engineering',
       '6 checklists de apertura: legal, equipamiento, APPCC, sala, contratación, marketing',
       'Business Plan modelo para presentar a bancos e inversores',
@@ -153,7 +153,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Restaurante a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta un ceviche para cuatro.',
     items: [
-      'Guía completa PDF + DOCX (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX (20 capítulos, 22 páginas)',
       '8 plantillas Excel con fórmulas',
       '6 checklists de apertura completos',
       'Business Plan modelo para bancos',

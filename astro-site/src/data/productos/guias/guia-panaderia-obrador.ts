@@ -17,7 +17,7 @@ const data: GuiaData = {
 
   seo: {
     title: 'Cómo Montar una Panadería con Obrador — Guía Completa España 2026 | AI Chef Pro',
-    description: 'Guía premium para montar una panadería con obrador en España 2026: 20 capítulos, 70+ páginas, plan financiero, recetario masa madre, salida de humos, APPCC obrador, alérgenos. 9 plantillas Excel + 6 checklists + business plan + manual del obrador. 65 EUR.',
+    description: 'Guía premium para montar una panadería con obrador en España 2026: 20 capítulos, 14 páginas, plan financiero, recetario masa madre, salida de humos, APPCC obrador, alérgenos. 9 plantillas Excel + 6 checklists + business plan + manual del obrador. 65 EUR.',
     keywords: 'como montar panaderia, abrir panaderia con obrador, panaderia masa madre España, plan financiero panaderia, salida de humos panaderia, licencia clasificada panaderia, APPCC obrador panaderia, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-guia-panaderia-obrador.jpg',
   },
@@ -29,9 +29,9 @@ const data: GuiaData = {
     titlePre: 'Cómo Montar una ',
     titleGold: 'Panadería con Obrador',
     subtitleLine: 'Modelo Artesanal con Masa Madre · Guía España 2026',
-    description: 'Guía completa con 20 capítulos, 70+ páginas, 9 plantillas Excel, 6 checklists, business plan modelo y manual del obrador. Todo para abrir tu panadería boutique con masa madre.',
+    description: 'Guía completa con 20 capítulos, 14 páginas, 9 plantillas Excel, 6 checklists, business plan modelo y manual del obrador. Todo para abrir tu panadería boutique con masa madre.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (20 capítulos, 70+ páginas)',
+      'Guía completa PDF + DOCX editable (20 capítulos, 14 páginas)',
       '9 plantillas Excel con fórmulas: plan financiero, CAPEX, escandallos por harina, plan fermentación',
       '6 checklists de apertura: legal, APPCC obrador, equipamiento, salida de humos, contratación, marketing',
       'Business Plan modelo para bancos con números reales del sector panadería 2026',
@@ -159,7 +159,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Panadería a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta un saco de harina premium ecológica.',
     items: [
-      'Guía completa PDF + DOCX (20 capítulos, 70+ páginas)',
+      'Guía completa PDF + DOCX (20 capítulos, 14 páginas)',
       '9 plantillas Excel con fórmulas (CAPEX, escandallos, fermentación, turnos…)',
       '6 checklists de apertura completos',
       'Business Plan modelo para bancos',

@@ -23,12 +23,12 @@ export default function GuiaRestaurantePeruano() {
     <>
       <Helmet>
         <title>Cómo Montar un Restaurante Peruano 80 Plazas — Guía Completa España | AI Chef Pro</title>
-        <meta name="description" content="Guía premium para montar un restaurante peruano en España: 20 capítulos, 60+ páginas, cevichería, Nikkei, barra de piscos, proveedores peruanos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
+        <meta name="description" content="Guía premium para montar un restaurante peruano en España: 20 capítulos, 22 páginas, cevichería, Nikkei, barra de piscos, proveedores peruanos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="como montar restaurante peruano españa, abrir cevicheria, restaurante peruano autentico, cocina nikkei, proveedores productos peruanos españa, barra piscos, ceviche, lomo saltado, plan financiero restaurante peruano, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-restaurante-peruano" />
         <meta property="og:title" content="Cómo Montar un Restaurante Peruano 80 Plazas — Guía Completa España" />
-        <meta property="og:description" content="Guía premium 60+ págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
+        <meta property="og:description" content="Guía premium 22 págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-restaurante-peruano" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
