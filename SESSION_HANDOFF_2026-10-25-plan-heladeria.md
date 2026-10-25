@@ -42,6 +42,8 @@ Los dos merges los aprobó John por escrito («apruebo el merge que necesites»)
 - Gates LIVE: postpago 1 producto / 4 entregables / 0 fallos / 0 avisos · `tienda-gate --base https://aichef.pro` verde (slug ya en
   `PLANES_ES`) · `robots-gate --live` verde · Miselup 104/104 · `fase6-gate.py https://aichef.pro` 3/2283, que son los 3 conteos
   congelados de siempre. Sitemap reenviado a GSC (14:59Z).
+- Cripto LIVE: `crypto-checkout` → 200 con factura real de prueba (`qa-heladeria@aichef.pro`, pedido `0898e071…`, estado `created`).
+  Purgarla con `crypto-report?purge_unpaid_before=` cuando haya `ADMIN_PASSWORD` (shell de John), como la de la Churrería.
 - Correo: prueba a John (`01a17393…`) · borrador `3297bad5-26c1-4420-8137-cdfaf11b4067` → routine `trig_0196bsymHKgB8728KxtTmBdk`
   (29-oct 15:07Z) lo programa para el **28-nov 08:00Z**. Siguiente hueco ES: 3-dic.
 - Pendiente para el carril Cursor (no se toca desde aquí): `plan-heladeria/NOTA-CARRIL-CURSOR.md`.
