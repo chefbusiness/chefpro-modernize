@@ -1,6 +1,21 @@
 # Payment Links pendientes — tareas de John (Stripe)
 
-> Sesión Claude Code (Mac). **No hay ninguno pendiente.**
+> Sesión Claude Code (Mac). **1 pendiente (25-oct-2026): Plan de Negocio: Finca de Eventos y Bodas (ES).**
+
+## ⏳ Plan de Negocio: Finca de Eventos y Bodas (ES) — PR #164
+
+Mismo patrón que el de la heladería (`plink_1UUSdP4CcdRGidmEm3lXcQyH`) y los planes de eventos a 45 €:
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Finca de Eventos y Bodas - AI Chef Pro |
+| Precio | **45,00 EUR**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-finca-eventos-bodas-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | Plan de negocio completo para montar una finca de eventos y bodas arrendada, con catering exclusivo concesionado: plan en Word de 10 secciones, plan financiero en Excel de 9 hojas con tesorería mes a mes, checklist de apertura de 84 tareas, calculadora de presupuesto del espacio, modelos de contrato y guía de equivalencias para Latinoamérica |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_FINCA_EVENTOS` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-finca-hero.jpg` |
+
 
 ## ✅ Plan de Negocio: Heladería Artesanal (ES) — PR #161, link creado el 25-oct-2026
 
