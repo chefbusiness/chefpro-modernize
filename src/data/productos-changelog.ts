@@ -273,9 +273,18 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'guia-restaurante-gastronomico': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.1.1',
+    updated: '2026-10-25',
     entries: [
+      {
+        version: '1.1.1',
+        date: '2026-10-25',
+        title: 'Guía en PDF igual que el Word',
+        changes: [
+          'La «Guía PDF» del panel se genera ahora desde el Word: los mismos 22 capítulos, con cada capítulo en página nueva.',
+          'Word en tamaño A4, con cada capítulo empezando en página nueva y las listas numeradas empezando siempre en 1.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',

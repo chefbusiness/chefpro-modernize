@@ -25,7 +25,10 @@ import os, re, shutil, subprocess, sys, tempfile, zipfile
 ROOT = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
 os.chdir(ROOT)
 GUIAS = ['panaderia-obrador', 'restaurante-casual', 'restaurante-japones',
-         'restaurante-mexicano', 'restaurante-nikkei', 'restaurante-peruano']
+         'restaurante-mexicano', 'restaurante-nikkei', 'restaurante-peruano',
+         # Su PDF era real pero maquetado aparte (reportlab, 10 págs.) y la landing anunciaba 119: PDF = Word
+         # como las otras 6 (25-oct-2026, PR aparte).
+         'restaurante-gastronomico']
 LETTER = '<w:pgSz w:w="12240" w:h="15840"/>'
 A4 = '<w:pgSz w:w="11906" w:h="16838"/>'
 SALTO = '<w:p><w:r><w:br w:type="page"/></w:r></w:p><w:p><w:pPr><w:pStyle w:val="Heading1"/></w:pPr>'
