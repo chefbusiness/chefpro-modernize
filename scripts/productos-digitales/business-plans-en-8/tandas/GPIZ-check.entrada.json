@@ -1,0 +1,2649 @@
+{
+ "tanda": "GPIZ-check",
+ "salida": "scripts/productos-digitales/business-plans-en-8/textos_en/GPIZ-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 219,
+ "n_palabras": 3037,
+ "pistas": {
+  "P01": "D146/research §6.2: NFPA 96 ch. 14 (dedicated exhaust, spark arrestor, UL 2162-listed oven, ash out daily, fuel away from the oven) + «ask the fire marshal in writing: hood? suppression? UL 2162 file number?»",
+  "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P03": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P04": "D146: patio (permiso de patio/sidewalk café de la ciudad)",
+  "P05": "D146: licensed gas contractor",
+  "P06": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P07": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P08": "D149/research §6.9: «Neapolitan-style» se puede escribir; «VPN-certified» solo con certificado AVPN; el pliego/ETG es derecho UE (no aplica en EE. UU.)",
+  "P09": "D146: «LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P10": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P11": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P12": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P13": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P14": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P15": "D146: plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan",
+  "P16": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P17": "D146: DoorDash / Uber Eats / Grubhub con sus tiers (research §5.3)",
+  "P18": "D146: «POS that reports sales tax» (sin Veri*factu)",
+  "P19": "D146: offer letters, I-9, W-4, state minimum wage (sin convenio)",
+  "P20": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P21": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P22": "Glosario research §9: pizzaiolo · dough ball(s) · peel · cornicione · leopard spotting",
+  "P23": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P24": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P25": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P26": "D146: pizza boxes; local packaging ordinances",
+  "P27": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P28": "D146: 9 major allergens incl. sesame (UK 14)",
+  "P29": "D146: «beer & wine license» (state ABC + local; a menudo 3-12 meses: contingencia en el lease) · liquor liability",
+  "P30": "D146/research §6.7: NO prometer «gluten-free» (21 CFR 101.91, < 20 ppm; harina en el aire): «gluten-friendly / ask» con aviso",
+  "P31": "D146: Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P32": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P33": "D146: sin equivalente US: TPHC written procedure (Food Code 3-501.19) y cold holding ≤ 41 °F",
+  "P34": "D146: own drivers = W-2 + hired & non-owned auto insurance (check your state)",
+  "P35": "D146: OSHA basics",
+  "P36": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P37": "D140: «Music licensing (ASCAP/BMI/SESAC)»",
+  "P38": "D55/§0: el libro dice «covers» y «seat turns»; nunca «customers» para el volumen diario"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state/local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "pizzaiolo": "pizzaiolo (head pizzaiolo; «pizza chef» en menús)",
+  "bola de masa": "dough ball / dough balls",
+  "cornicione": "cornicione (crust rim, edge)",
+  "manchas de leopardo": "leopard spotting (char blistering)",
+  "harina «00» · tipo 1": "00 flour (Caputo-type) · \"1\" flour",
+  "fior di latte · búfala": "fior di latte (fresh cow's milk mozzarella) · mozzarella di bufala (DOP)",
+  "tomate San Marzano DOP": "San Marzano tomatoes (DOP)",
+  "prefermento": "biga · poolish · preferment",
+  "pala": "peel (wood/aluminum; turning peel)",
+  "horno de cúpula · solera": "dome oven · deck («deck» ≠ «dome»)",
+  "pizza napolitana vs americana": "Neapolitan-style · New York-style · Detroit-style",
+  "pizzería": "pizza shop (nombre, H1, ficheros) · pizzeria (prosa)",
+  "cocina / sala": "BOH / FOH",
+  "agotado": "86'd",
+  "cubierto / comensal": "covers",
+  "para llevar": "take-out · to-go · pickup · delivery",
+  "plataforma": "third-party delivery marketplace (DoorDash, Uber Eats, Grubhub)",
+  "escandallo": "plate costing / recipe costing / food cost per pizza",
+  "manipulador de alimentos": "food handler card · Certified Food Protection Manager (CFPM)",
+  "nombre protegido": "«Neapolitan-style» (libre) vs «VPN-certified» (solo con certificado)",
+  "campana / chimenea": "Type I hood · flue / chimney · spark arrestor · UL 2162-listed",
+  "control por tiempo": "time as a public health control (TPHC)",
+  "hidratación · reposo": "hydration · cold ferment / proof",
+  "fianza · IVA": "deposit · sales tax",
+  "napolitana (carta)": "Neapolitan-style",
+  "ETG / pliego": "no aplica en EE. UU. (solo nota)",
+  "ordenanza de humos": "NFPA 96 + local fire/mechanical code",
+  "licencia de apertura": "business license + certificate of occupancy",
+  "autónomo / SL": "LLC"
+ },
+ "pestanas_es_en": {
+  "PIZP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "PIZC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local, humos y licencia": "Phase 2 - Site, Hood & Permits",
+   "F3 - Cocina, horno y sanidad": "Phase 3 - Kitchen, Oven, Health",
+   "F4 - Personal y prevención": "Phase 4 - Staff & Safety",
+   "F5 - Carta, marca y delivery": "Phase 5 - Menu, Brand, Delivery",
+   "F6 - Apertura y 90 días": "Phase 6 - Opening & 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US PIZZA SHOP BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-pizzeria» de AI Chef Pro.": "This file is part of the Pizza Shop Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — PIZZERÍA NAPOLITANA": "PIZZA SHOP STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Pizzería Napolitana": "HOW TO USE THIS WORKBOOK — Pizza Shop Financial Projections",
+  "PLAN DE NEGOCIO: PIZZERÍA NAPOLITANA": "PIZZA SHOP BUSINESS PLAN: NEAPOLITAN-STYLE PIZZERIA",
+  "Inversión inicial estimada — pizzería con horno de leña, 50 plazas y terraza": "Estimated Startup Costs — Neapolitan-style pizza shop, wood-fired oven, 50 seats + patio",
+  "Ajusta las cifras a tu proyecto: son las de un caso tipo en una ciudad media, sin traspaso. Pon tus presupuestos reales en las celdas de importe.": "US kit example (2026) — replace with your own quotes.",
+  "FASE 2: LOCAL, SALIDA DE HUMOS, LICENCIA Y TERRAZA (semanas 3-14)": "PHASE 2: SITE, HOOD, FLUE, PERMITS & PATIO (weeks 3-14)",
+  "Proyecto técnico de actividad y de salida de humos, y dirección de obra": "Architect, MEP, hood & flue drawings, plan review & permit fees (incl. beer & wine license, non-quota state)",
+  "Obra y acondicionamiento del local, rótulo y fachada": "Build-out (second-generation space), signage & facade",
+  "Chimenea de doble pared hasta cubierta, filtro de partículas y bancada del horno": "Flue/chimney, spark arrestor & insulated hearth pad",
+  "Instalación eléctrica trifásica, cuadro y boletín": "Electrical service & panel",
+  "Fontanería, separador de grasas, climatización y extracción": "Plumbing, grease interceptor, HVAC & makeup air",
+  "Horno de leña de cúpula baja de 120-130 cm de diámetro": "Neapolitan wood-fired dome oven (47-51 in, UL 2162-listed)",
+  "Amasadora de espiral profesional": "Spiral mixer (60 qt)",
+  "Mesa fría de pizza con encimera de granito y vitrina": "Pizza prep table (67-71 in)",
+  "Armarios refrigerados para las cajas de bolas y arcón congelador": "Walk-in (6×8), reach-ins, dough-ball cabinets & freezer",
+  "Campana extractora con motor, freidora y fogón de apoyo": "Type I hood & support line (fryer, range)",
+  "Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías": "3-comp sink, dish machine, hand sinks & stainless",
+  "Utillaje y menaje: palas, cajas de bolas, básculas, vajilla y uniformes": "Peels, dough boxes, scales & smallwares",
+  "Barra: cafetera y molino, botellero frío y equipo de cerveza": "Beer & wine bar (taps, back bar, espresso)",
+  "Mobiliario de sala y terraza": "Furniture (50 seats) & patio",
+  "TPV con Veri*factu, datáfonos, impresora de comandas y tablet": "POS, online ordering & delivery tablets",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal & food safety plan",
+  "Marca, web, fotos, formación de pizzaiolo y lanzamiento": "Branding, website, training & launch",
+  "Stock inicial de harina, tomate, quesos, bebida, leña y cajas": "Opening inventory",
+  "Escenario realista — pizzería con horno de leña, 50 plazas y terraza": "Base case — Neapolitan-style pizza shop, 50 seats + patio",
+  "Ventas de pizzería y cocina (sala, para llevar y a domicilio)": "Food sales (pizza, starters & desserts: dine-in, take-out & delivery)",
+  "Ventas de bebida (cerveza, vino, refrescos, agua y café)": "Beverage sales (beer, wine, soft drinks & coffee)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento del horno, la campana extractora y el frío": "Maintenance (oven, hood & flue cleaning, refrigeration)",
+  "Software, TPV, teléfono e internet": "Software, POS & online ordering",
+  "Limpieza, lavandería, EPI, DDD y análisis de autocontrol": "Cleaning, linens, uniforms & pest control",
+  "Leña para el horno": "Firewood",
+  "Tasa de terraza y gestión de residuos (pon las de tu ayuntamiento)": "Waste, grease & ash hauling",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Food safety & staff training (CFPM, allergens, OSHA)",
+  "Titular — pizzaiolo jefe, masa, compras y gestión": "Owner / head pizzaiolo & GM",
+  "Pizzaiolo/a de horno y estirado": "Pizzaiolo (stretching & oven)",
+  "Ayudante de cocina y masa": "Prep & dough cook",
+  "Camarero/a encargado/a de sala y barra": "FOH lead / bar",
+  "Camarero/a de cenas y fines de semana": "Servers (dinner & weekends, part-time W-2)",
+  "Refuerzo de viernes a domingo: sala, terraza y recogida": "Weekend runner / counter & pickup",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations + days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0617",
+   "es": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (semanas 1-4)",
+   "donde": [
+    "PIZC · F1 - Constitución!A2"
+   ]
+  },
+  {
+   "id": "c0622",
+   "es": "Consulta urbanística previa: salida de humos a cubierta",
+   "donde": [
+    "PIZC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0623",
+   "es": "Titular / Técnico",
+   "donde": [
+    "PIZC · F1 - Constitución!C5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0624",
+   "es": "Antes de firmar el alquiler",
+   "donde": [
+    "PIZC · F1 - Constitución!D5",
+    "PIZC · F1 - Constitución!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0625",
+   "es": "Pregunta al ayuntamiento si el uso permite un restaurante con horno de leña, si el local admite una salida de humos exclusiva hasta la cubierta (en Madrid, que supere en 1 m lo que haya en 15 m: Ordenanza 4/2021, art. 12 y anexo I), qué potencia y qué aforo tiene y si la calle admite terraza. Sin chimenea a cubierta no hay horno de leña",
+   "donde": [
+    "PIZC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0626",
+   "es": "Decidir horno de leña, de gas o eléctrico ANTES de firmar el local",
+   "donde": [
+    "PIZC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0628",
+   "es": "La leña pide chimenea a cubierta y, en Madrid, filtro de partículas (Ordenanza 4/2021, art. 23); el gas, empresa instaladora habilitada (RD 919/2006); el eléctrico (unos 16,4 kW en trifásica el de seis pizzas) también necesita campana extractora y conducto para los vahos. Sólo la leña cumple el pliego de la ETG «Pizza Napoletana»",
+   "donde": [
+    "PIZC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P06",
+    "P07",
+    "P08",
+    "P01",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0629",
+   "es": "Elegir forma jurídica: SL unipersonal o autónomo",
+   "donde": [
+    "PIZC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0632",
+   "es": "El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF: compara las dos opciones con tu gestoría con las cifras del plan",
+   "donde": [
+    "PIZC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P10",
+    "P11",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0633",
+   "es": "Constituir la SL o darte de alta como autónomo",
+   "donde": [
+    "PIZC · F1 - Constitución!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0634",
+   "es": "Notaría / Gestoría",
+   "donde": [
+    "PIZC · F1 - Constitución!C8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0635",
+   "es": "Semanas 1-2",
+   "donde": [
+    "PIZC · F1 - Constitución!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0636",
+   "es": "La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)",
+   "donde": [
+    "PIZC · F1 - Constitución!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P12",
+    "P06",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0637",
+   "es": "Alta censal (modelo 036) en el grupo 671 y el epígrafe 677.9 del IAE",
+   "donde": [
+    "PIZC · F1 - Constitución!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0638",
+   "es": "Semana 2",
+   "donde": [
+    "PIZC · F1 - Constitución!D9",
+    "PIZC · F1 - Constitución!D10",
+    "PIZC · F1 - Constitución!D12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0639",
+   "es": "El 671 («servicios en restaurantes», por categoría, de uno a cinco tenedores) cubre la sala; el 677.9 («otros servicios de alimentación propios de la restauración») cubre la venta para llevar y a domicilio (RDLeg 1175/1990). Sin comedor separado, el grupo 673. Exento de cuota con una cifra de negocio inferior a 1 millón de euros (art. 82.1.c de la Ley de Haciendas Locales; confírmalo con tu gestoría)",
+   "donde": [
+    "PIZC · F1 - Constitución!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P12",
+    "P11",
+    "P13",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0640",
+   "es": "Alta en la Seguridad Social (administrador o autónomo)",
+   "donde": [
+    "PIZC · F1 - Constitución!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0641",
+   "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+   "donde": [
+    "PIZC · F1 - Constitución!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0643",
+   "es": "Imprescindible para Hacienda, la Seguridad Social, el ayuntamiento y el registro sanitario",
+   "donde": [
+    "PIZC · F1 - Constitución!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P09",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0644",
+   "es": "Cuenta bancaria y tarjeta del negocio",
+   "donde": [
+    "PIZC · F1 - Constitución!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0645",
+   "es": "Separadas de las personales: por ellas pasan las liquidaciones del datáfono y de las plataformas y los pagos a proveedores",
+   "donde": [
+    "PIZC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0646",
+   "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+   "donde": [
+    "PIZC · F1 - Constitución!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0647",
+   "es": "Semanas 2-4",
+   "donde": [
+    "PIZC · F1 - Constitución!D13",
+    "PIZC · F1 - Constitución!D14",
+    "PIZC · F1 - Constitución!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0648",
+   "es": "Nóminas y contratos de la plantilla. El software de facturación del TPV tiene que cumplir Veri*factu: consulta con tu gestoría la fecha que te aplica antes de comprar el TPV",
+   "donde": [
+    "PIZC · F1 - Constitución!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11",
+    "P16",
+    "P13",
+    "P18",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0649",
+   "es": "Presentar el plan al banco y pedir dos ofertas de préstamo",
+   "donde": [
+    "PIZC · F1 - Constitución!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0650",
+   "es": "Lleva el plan financiero completo, con la tesorería mes a mes. Pide también oferta de leasing o renting del horno y del frío y de una línea ICO",
+   "donde": [
+    "PIZC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0651",
+   "es": "Seguro de responsabilidad civil y multirriesgo con incendio",
+   "donde": [
+    "PIZC · F1 - Constitución!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0652",
+   "es": "Corredor de seguros",
+   "donde": [
+    "PIZC · F1 - Constitución!C15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0653",
+   "es": "Antes de la obra",
+   "donde": [
+    "PIZC · F1 - Constitución!D15",
+    "PIZC · F2 - Local, humos y licencia!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0654",
+   "es": "RC de al menos 300.000 € y multirriesgo con incendio y avería del frío. Dile a la aseguradora que el horno es de leña",
+   "donde": [
+    "PIZC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0655",
+   "es": "Registro de la marca en la OEPM",
+   "donde": [
+    "PIZC · F1 - Constitución!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0656",
+   "es": "Comprueba antes que el nombre no está registrado en tu clase (servicios de restauración). No metas «napolitana» ni «napoletana» en la marca sin consultarlo: el nombre de la ETG está protegido frente a la evocación (Reglamento (UE) 2024/1143, art. 68.1)",
+   "donde": [
+    "PIZC · F1 - Constitución!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P13",
+    "P06",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0662",
+   "es": "Elegir el local: 120-140 m² con salida de humos a cubierta posible",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0663",
+   "es": "Semanas 3-6",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0664",
+   "es": "Sala de unos 70 m² para 50 plazas, obrador de unos 30 m² con el horno a la vista, almacén de leña seco, aseos y vestuario. Calle de barrio con paso de gente por la noche y el fin de semana",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0665",
+   "es": "Comprobar la potencia: unos 25 kW en trifásica",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0666",
+   "es": "Técnico / Distribuidora",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0667",
+   "es": "Antes de firmar",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D6",
+    "PIZC · F2 - Local, humos y licencia!D7",
+    "PIZC · F2 - Local, humos y licencia!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0668",
+   "es": "Frío, amasadora, lavavajillas, extracción, climatización y cafetera; con horno eléctrico, unos 16 kW más. Un local monofásico obliga a una acometida nueva: pregunta plazo y coste a la distribuidora",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0669",
+   "es": "Comprobar con el técnico el recorrido de la chimenea hasta cubierta",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0671",
+   "es": "Conducto exclusivo, continuo y estanco hasta la cubierta, por patio o fachada, con el permiso de la comunidad de propietarios si cruza zonas comunes",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0672",
+   "es": "Negociar el alquiler: carencia de obra y fianza",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "El plan cuenta tres meses de renta antes de abrir y tres de fianza. Pide carencia mientras duran la obra y la chimenea",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P23",
+    "P13",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0674",
+   "es": "Contrato de arrendamiento con el uso de pizzería con horno de leña",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0675",
+   "es": "Titular / Abogado",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0676",
+   "es": "Semana 6",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0677",
+   "es": "Que diga «restaurante-pizzería con horno de leña» y que autorice la obra de la chimenea y la salida de humos",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0678",
+   "es": "Encargar el proyecto técnico de la actividad y de la salida de humos",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "Arquitecto/a o ingeniero/a",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0680",
+   "es": "Semanas 6-8",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D10",
+    "PIZC · F3 - Cocina, horno y sanidad!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0681",
+   "es": "Distribución del obrador, potencia, aforo, ventilación, accesibilidad y la chimenea con su filtro de partículas si es de leña (Madrid, Ordenanza 4/2021, art. 23). Fuera de Madrid, pide la ordenanza de humos y de calidad del aire de tu ayuntamiento",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0682",
+   "es": "Licencia o declaración responsable de la actividad",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0683",
+   "es": "Técnico / Ayuntamiento",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C11",
+    "PIZC · F2 - Local, humos y licencia!C12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0684",
+   "es": "Los restaurantes (grupo 671 y epígrafe 677.9) no están en el anexo de la Ley 12/2012: van por el régimen de tu ayuntamiento, licencia o declaración responsable según su ordenanza. Pregunta cuál te toca en la consulta previa",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0685",
+   "es": "Licencia, declaración o comunicación previa de la obra",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0686",
+   "es": "Semanas 6-8, antes de empezar la obra",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0687",
+   "es": "La obra y la chimenea van por su propio trámite municipal: pregunta en la consulta previa qué título piden",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0688",
+   "es": "Solicitar la autorización de la terraza",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0689",
+   "es": "Titular / Ayuntamiento",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0690",
+   "es": "Con la licencia de la actividad",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0691",
+   "es": "Es ocupación de la vía pública y siempre se pide aparte (Ley 12/2012, art. 2.2). Pregunta la tasa y el horario de tu ayuntamiento",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "Si hay gas: empresa instaladora habilitada y certificado",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0693",
+   "es": "Instalador de gas habilitado",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0694",
+   "es": "Durante la obra",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0695",
+   "es": "Certificado de la instalación, puesta en marcha certificada del aparato e inspección o revisión cada 5 años (RD 919/2006, ITC-ICG 07 e ITC-ICG 08)",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0696",
+   "es": "Obra del obrador y de la sala: superficies lavables",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0698",
+   "es": "Semanas 8-12",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D15",
+    "PIZC · F2 - Local, humos y licencia!D16",
+    "PIZC · F2 - Local, humos y licencia!D17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0699",
+   "es": "Paredes alicatadas, suelo antideslizante, falsos techos lavables, lavamanos de accionamiento no manual, aseos (uno adaptado) y aislamiento acústico si hay vecinos",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0700",
+   "es": "Chimenea, filtro de partículas y bancada del horno",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Instalador / Técnico",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0702",
+   "es": "Conducto de doble pared hasta cubierta y una bancada que aguante el peso del horno: pide el dato al fabricante antes de la obra",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0704",
+   "es": "Montaje del horno y curado del refractario",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0705",
+   "es": "Fabricante / Instalador",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0706",
+   "es": "Semanas 11-13",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0707",
+   "es": "El refractario nuevo se cura con fuegos crecientes, según las instrucciones del fabricante: no lo lleves a la temperatura de servicio el primer día",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0708",
+   "es": "Aumento de potencia, boletín eléctrico y certificado final de obra",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!B19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0709",
+   "es": "Instalador autorizado / Técnico",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!C19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0710",
+   "es": "Durante la obra y al acabarla",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!D19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0711",
+   "es": "El boletín (certificado de la instalación) para el nuevo contrato de luz en trifásica y el certificado final del técnico. Guárdalos: te los pedirá el ayuntamiento",
+   "donde": [
+    "PIZC · F2 - Local, humos y licencia!E19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0713",
+   "es": "FASE 3: COCINA, HORNO Y REGISTRO SANITARIO (semanas 6-14)",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!A2"
+   ]
+  },
+  {
+   "id": "c0714",
+   "es": "Comprar el horno, la amasadora y la mesa fría de pizza",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0715",
+   "es": "Horno de leña de 120-130 cm de diámetro (unas seis pizzas a la vez), amasadora de espiral para 30-40 kg de masa y mesa fría con granito. Pide ficha técnica, potencia, plazo de entrega y montaje",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P25",
+    "P01",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0716",
+   "es": "Comprar los armarios para las cajas de bolas y el frío de ingredientes",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0717",
+   "es": "Semanas 8-10",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0718",
+   "es": "Armarios ventilados para las cajas de bolas y los quesos, un arcón y las cajas con cierre para las bolas",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "Almacén de leña seca y sin tratar, separado del horno",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Encina, roble, haya u olivo, seca; nunca madera pintada, barnizada ni aglomerado. Almacén seco, ventilado y separado de la boca del horno, y un proveedor con entrega regular",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0722",
+   "es": "Declaración responsable al registro sanitario autonómico",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0723",
+   "es": "Titular / Gestoría",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!C8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "Antes de la primera prueba de carta",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0725",
+   "es": "Va al registro sanitario de tu comunidad autónoma (RD 1021/2022). El registro estatal (RGSEAA) sólo aplica si sirves a otros negocios por encima de lo que permite el art. 3 del mismo real decreto",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0726",
+   "es": "Plan APPCC con la masa: tiempos y temperaturas de las bolas",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P15",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0727",
+   "es": "Consultor / Titular",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!C9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0728",
+   "es": "Masa del día: primera fermentación, boleado, segunda fermentación a temperatura ambiente y uso en las horas que fije tu APPCC (el pliego de la ETG pide 2 h + 4-6 h y usar la bola en las 6 h siguientes). Masa en frío: la temperatura y el tiempo que valide tu APPCC, con el registro de cada amasada",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P08",
+    "P15",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "APPCC: quesos y embutidos a la temperatura de su etiqueta",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "Ninguna norma estatal fija la temperatura del fior di latte, la búfala o los embutidos: manda la etiqueta del fabricante (RD 1021/2022, art. 4.2). Lo que congeles, envasado y con la fecha de elaboración y la de congelación (art. 5.3)",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Trazabilidad y registros: amasadas, temperaturas y proveedores",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "Desde la primera amasada",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!D11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0733",
+   "es": "Lote y fecha de la harina y de los quesos, hora de cada amasada, temperaturas del frío y proveedor de cada materia prima",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0734",
+   "es": "Fichas técnicas por pizza con sus alérgenos",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0735",
+   "es": "Pizzaiolo jefe",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!C12",
+    "PIZC · F5 - Carta, marca y delivery!C9",
+    "PIZC · F6 - Apertura y 90 días!C6",
+    "PIZC · F6 - Apertura y 90 días!C11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0736",
+   "es": "Gluten (todas), leche (quesos), frutos de cáscara (pesto, pistacho), pescado (anchoa), mostaza y sulfitos (embutidos, vino), y sésamo y huevo si los usas. Con la calculadora del pack, el coste de cada una",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Información de alérgenos en la carta y en la sala",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27",
+    "P31",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Por escrito en la carta, o de palabra si está registrada por escrito y un cartel dice dónde pedirla (RD 126/2015)",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0739",
+   "es": "Alérgenos en la venta por plataforma o por tu web",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P28",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0740",
+   "es": "Antes de darte de alta",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0741",
+   "es": "En la venta a distancia, la información de alérgenos tiene que estar disponible antes de que el cliente compre (Reglamento (UE) 1169/2011, art. 14). Revisa la ficha de cada pizza en cada plataforma",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P32",
+    "P13",
+    "P27",
+    "P31",
+    "P28",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "No prometer «sin gluten» sin protocolo y analítica",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "Antes de imprimir la carta",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!D15",
+    "PIZC · F5 - Carta, marca y delivery!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0744",
+   "es": "«Sin gluten» sólo con 20 mg/kg o menos tal como se vende (Reglamento de Ejecución (UE) 828/2014). Con harina en el aire del obrador no lo pongas, salvo masa comprada sin gluten, zona y horno separados y analítica",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P25",
+    "P06",
+    "P30",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "Aceite en la mesa en envase irrellenable",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "Envase etiquetado, con un cierre que no se pueda reutilizar (RD 760/2021, art. 7). Las garrafas grandes, sólo en la cocina",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0747",
+   "es": "Temperatura de los pedidos que salen del local",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0748",
+   "es": "Antes del primer pedido",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!D17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0749",
+   "es": "Cajas y bolsas que mantengan la temperatura durante el transporte (RD 1021/2022, art. 4.3), también en el reparto de la plataforma",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P34",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0750",
+   "es": "Proveedores de harina, tomate, quesos y cajas",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0751",
+   "es": "Semanas 10-14",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!D18",
+    "PIZC · F5 - Carta, marca y delivery!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0752",
+   "es": "Dos proveedores por materia prima clave (harina, fior di latte, tomate) y cajas de cartón para llevar. El cartón no es plástico de un solo uso; si la caja lleva película plástica, pregúntalo al proveedor",
+   "donde": [
+    "PIZC · F3 - Cocina, horno y sanidad!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "FASE 4: PERSONAL, FORMACIÓN Y PREVENCIÓN (semanas 10-14)",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!A2"
+   ]
+  },
+  {
+   "id": "c0755",
+   "es": "Copiar la tabla salarial del convenio provincial de hostelería",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0756",
+   "es": "Semana 10",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0757",
+   "es": "Las pizzerías están en el convenio provincial de hostelería (VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4). Pon su salario más bajo en la hoja de Supuestos del plan",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0758",
+   "es": "Contratos por escrito a jornada completa y parcial",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Con su horario y su grupo del convenio. Una factura de «autónomo» con tu horario y tu dirección es falso autónomo (art. 1.1 del Estatuto de los Trabajadores)",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P06",
+    "P09",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0760",
+   "es": "Contratar al segundo pizzaiolo antes de abrir",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0761",
+   "es": "Semanas 10-12",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!D7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0762",
+   "es": "Que aprenda la masa y el horno contigo antes de abrir: si sólo tú los sabes, una baja cierra la pizzería",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0763",
+   "es": "Registro de jornada",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0765",
+   "es": "Obligatorio para toda la plantilla (art. 34.9 ET), también a tiempo parcial",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0766",
+   "es": "Cuadrante de los dos servicios y del sábado por la noche",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0767",
+   "es": "Semana 12",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0768",
+   "es": "Comidas y cenas de martes a domingo, con el lunes de cierre; el sábado por la noche hacen falta unas cinco personas",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0769",
+   "es": "Reparto propio: sólo con contrato laboral",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0770",
+   "es": "Si repartes tú",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!D10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34"
+   ]
+  },
+  {
+   "id": "c0771",
+   "es": "El repartidor propio es hostelería (ALEH VI, art. 4) y trabaja por cuenta ajena; en el reparto organizado por una plataforma digital, la ley presume la relación laboral (ET, disposición adicional 23.ª). Nunca con «autónomos»",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P06",
+    "P09",
+    "P34",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0772",
+   "es": "Menores de 18 años: sin noche ni horas extra",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0773",
+   "es": "Si contratas a menores",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0774",
+   "es": "No pueden trabajar de noche ni hacer horas extraordinarias (art. 6 ET): confírmalo con tu gestoría si las cenas acaban a medianoche",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0775",
+   "es": "Formación de manipuladores de alimentos",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0776",
+   "es": "La da y la acredita la empresa (no hay un documento oficial que sacar): higiene, temperaturas de la masa y de los quesos, alérgenos y contacto cruzado",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27",
+    "P28",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0777",
+   "es": "Formación de pizzaiolo y del horno de leña",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P31",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0778",
+   "es": "Masa, fermentación, estirado a mano, manejo del fuego y de la pala: es inversión, no gasto",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "Plan de prevención de riesgos laborales",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35"
+   ]
+  },
+  {
+   "id": "c0780",
+   "es": "Servicio de prevención",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!C14",
+    "PIZC · F4 - Personal y prevención!C15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0781",
+   "es": "Obligatorio (Ley 31/1995): quemaduras del horno, cortes, cargas de leña y de sacos de harina, humo y calor",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "Vigilancia de la salud de la plantilla",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0783",
+   "es": "Al contratar",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0784",
+   "es": "Reconocimientos médicos ofrecidos a cada persona que entra",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0786",
+   "es": "Empresa del ROESB",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!C16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "Contrato con una empresa inscrita en el ROESB: forma parte de los prerrequisitos del APPCC",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P15",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "Plan de limpieza del obrador, la sala y el horno",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!B17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0789",
+   "es": "Mesa fría, amasadora, cajas de bolas, palas y la boca del horno; las cenizas, en un recipiente metálico; con su registro",
+   "donde": [
+    "PIZC · F4 - Personal y prevención!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "FASE 5: CARTA, MARCA, DELIVERY Y CAPTACIÓN (semanas 8-16)",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!A2"
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "Decidir el tipo de pizzería y su carta",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0793",
+   "es": "Semana 8",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0794",
+   "es": "Con sala y horno de leña (este plan), al corte, sólo de reparto o franquicia: cada una con otra inversión, otro local y otro margen",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Carta sin «pizza napolitana» salvo verificación de la ETG",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "«Pizza Napoletana» es una especialidad tradicional garantizada con reserva de nombre desde el 18-12-2022 (Reglamento de Ejecución (UE) 2022/2313), protegida también traducida (Reglamento (UE) 2024/1143, art. 68.1). Sin el pliego y la verificación, usa el nombre de la receta: «Margherita», «Marinara», «Diavola». «Estilo napolitano» en el rótulo: consúltalo antes. La certificación de la AVPN es privada y no la sustituye",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P13",
+    "P06",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Aviso en la carta: el cliente puede llevarse lo que no consuma",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P32"
+   ]
+  },
+  {
+   "id": "c0798",
+   "es": "Sin coste, salvo el del envase de plástico de un solo uso si lo hay, y avisado de forma visible, mejor en la carta (Ley 1/2025, art. 8). Ten envases para ello",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P33",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Cobro aparte del envase de plástico de un solo uso",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "Los envases de plástico de un solo uso para llevar se cobran aparte en el tique (Ley 7/2022, art. 55). La caja de cartón no es plástico",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0801",
+   "es": "Carta de 14-16 pizzas, entrantes y postres con su escandallo",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Escandalla cada pizza, no sólo la Margherita: con búfala, burrata o embutido italiano y la comisión de la plataforma, la que más se vende puede irse al 25-35 %. Usa la calculadora de masa y escandallo del pack",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0803",
+   "es": "Contrato y alta en las plataformas de reparto",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P19",
+    "P34",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0804",
+   "es": "Lee la comisión (del 25 al 35 % más IVA con su reparto, según la zona), cada cuánto liquidan, quién paga las promociones y el coste de la tablet. Fija un techo: en este plan, el 10 % de las ventas",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Precios para la plataforma y para la recogida en el local",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0806",
+   "es": "Calcula el margen de cada pizza en la plataforma con su comisión y la caja; la recogida en el local no paga comisión: empújala",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "Identidad, fotos y web con la carta",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Diseñador/a",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!C12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0809",
+   "es": "Semanas 8-14",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!D12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0810",
+   "es": "Fotos reales del horno y de las pizzas; web con la carta, los alérgenos, el horario y los pedidos para recoger",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Ficha de Google Business y reseñas",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0812",
+   "es": "Horario de comidas y cenas, fotos del horno y respuesta a cada reseña",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0813",
+   "es": "Redes sociales: la obra, el horno y la masa",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "Desde la obra",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0815",
+   "es": "El montaje del horno, el primer fuego, la masa y la pizza de la semana",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0816",
+   "es": "Fiesta de apertura para el barrio",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0817",
+   "es": "Semana de apertura",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0818",
+   "es": "Degustación para vecinos, comercios y colegios: el horno a la vista es tu escaparate",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0819",
+   "es": "Música ambiental: licencias de SGAE y AGEDI-AIE",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P36",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0820",
+   "es": "Son dos licencias de propiedad intelectual, distintas de la municipal: pide las dos si pones música",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0821",
+   "es": "Cláusula informativa de protección de datos",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!B17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0822",
+   "es": "En la web, en las reservas y en los pedidos: cada canal necesita su información previa",
+   "donde": [
+    "PIZC · F5 - Carta, marca y delivery!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0824",
+   "es": "FASE 6: APERTURA Y PRIMEROS 90 DÍAS",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!A2"
+   ]
+  },
+  {
+   "id": "c0825",
+   "es": "Abrir en septiembre",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0827",
+   "es": "El plan abre después del verano: la rampa cae en meses medios y altos, llegas a la Navidad con clientela y a enero y febrero, los meses más flojos, con el fondo intacto",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P32"
+   ]
+  },
+  {
+   "id": "c0828",
+   "es": "Pruebas de masa y de horno con la carta completa",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Semana previa",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0830",
+   "es": "Varias amasadas y servicios de prueba para ajustar la masa, el fuego y los tiempos del pase antes de abrir",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0831",
+   "es": "Comprobar temperaturas y registros del primer día",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0832",
+   "es": "Día 1",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!D7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0833",
+   "es": "Frío de las bolas y de los quesos, hora de cada amasada y la hoja de limpieza; corrige cualquier desviación antes de servir",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0834",
+   "es": "Inspección sanitaria: APPCC y registros a mano",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0835",
+   "es": "Desde el día 1",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0836",
+   "es": "Fichas de alérgenos, trazabilidad, registros de temperatura y de limpieza, formación y DDD",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P27",
+    "P31",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Calendario de deshollinado, campana extractora y refractario",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "Titular / Empresa de mantenimiento",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!C9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0839",
+   "es": "Desde el mes 1",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0840",
+   "es": "Limpieza de la campana extractora y de los conductos al menos una vez al año (Madrid, Ordenanza 4/2021, art. 23), deshollinado y filtro de partículas del horno según su uso, y revisión del refractario en el cierre de enero",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0841",
+   "es": "Cuadrante de diciembre y del sábado por la noche",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0842",
+   "es": "Noviembre",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0843",
+   "es": "Cenas de empresa y de grupo: diciembre es el pico del año (el Mes 4 del plan)",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0844",
+   "es": "Controlar las bolas: producción por día de la semana",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Bolas pasadas un sábado flojo y faltas uno lleno: ajusta la amasada a las reservas y anota la merma",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0847",
+   "es": "Medir el coste de cada pizza cada mes",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0849",
+   "es": "El precio de la harina, del queso y del tomate frente al escandallo; revísalo cuando cambie un proveedor",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0850",
+   "es": "Revisar la cuenta de la plataforma cada mes",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0851",
+   "es": "Ventas, comisión, promociones y cajas: si la plataforma pasa del 10 % de las ventas o su margen no cubre la comisión, recorta o sube precio. Reparto propio, sólo con contrato laboral y cuando el volumen lo pague",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P34",
+    "P17",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0852",
+   "es": "Comparar ventas y costes reales con el plan cada mes",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0853",
+   "es": "Comensales al día, ticket, mercancía y personal frente a la cuenta de resultados del Excel",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38"
+   ]
+  },
+  {
+   "id": "c0854",
+   "es": "Seguir la tesorería mes a mes y el saldo mínimo",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0855",
+   "es": "Enero y febrero son los meses más flojos: mira cuánta caja te llega de diciembre",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0856",
+   "es": "Cierre de dos semanas en enero: mantenimiento y vacaciones",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P14"
+   ]
+  },
+  {
+   "id": "c0857",
+   "es": "Enero",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0858",
+   "es": "Revisión del horno, de la campana extractora y del frío con el local cerrado, y vacaciones de la plantilla",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P14",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0859",
+   "es": "Si quieres la ETG: comunicación, autocontrol y verificación previa",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0860",
+   "es": "Cuando la masa y el horno cumplan el pliego",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!D17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0861",
+   "es": "Para poner «Pizza Napoletana ETG» en la carta: informa a la autoridad competente, documenta el autocontrol y pasa una verificación del pliego antes de vender (Reglamento (UE) 2024/1143, arts. 72-73); los costes pueden ser tuyos. Pregunta en tu comunidad autónoma quién la hace y cuánto cuesta",
+   "donde": [
+    "PIZC · F6 - Apertura y 90 días!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P13",
+    "P06",
+    "P08",
+    "P15"
+   ]
+  }
+ ]
+}
