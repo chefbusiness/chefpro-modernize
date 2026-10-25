@@ -636,7 +636,7 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     accessPath: '/plan-negocio-pizzeria-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Pizzería Napolitana',
     emailTitle: '¡Gracias por tu compra!',
-    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Pizzería Napolitana</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, el plan financiero en Excel de 9 hojas, el checklist de apertura de __N_TAREAS__ tareas, la calculadora de masa y escandallo por pizza y la guía de equivalencias para Hispanoamérica:',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Pizzería Napolitana</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, el plan financiero en Excel de 9 hojas, el checklist de apertura de 80 tareas, la calculadora de masa y escandallo por pizza y la guía de equivalencias para Hispanoamérica:',
     emailCta: 'Acceder a mi Plan de Negocio',
     emailTitleResend: 'Accede a tu Plan de Negocio: Pizzería Napolitana',
     emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word, el plan financiero en Excel, el checklist de apertura, la calculadora de masa y escandallo y la Guía de Equivalencias:',

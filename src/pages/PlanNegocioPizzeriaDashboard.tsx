@@ -29,8 +29,8 @@ const TEMPLATES = [
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
-    title: 'Checklist de Apertura (__N_TAREAS__ tareas)',
-    desc: '__N_TAREAS__ tareas por fases para abrir tu pizzería: constitución y fiscalidad, local y licencias, obra y horno, equipo, marca y apertura.',
+    title: 'Checklist de Apertura (80 tareas)',
+    desc: '80 tareas por fases para abrir tu pizzería: constitución y fiscalidad, local y licencias, obra y horno, equipo, marca y apertura.',
   },
   {
     key: 'calculadora-masa',
@@ -83,7 +83,7 @@ export default function PlanNegocioPizzeriaDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-pizzeria" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel de 9 hojas con tesorería mes a mes, plan de negocio Word de 10 secciones, checklist de apertura de __N_TAREAS__ tareas y calculadora de masa y escandallo por pizza.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel de 9 hojas con tesorería mes a mes, plan de negocio Word de 10 secciones, checklist de apertura de 80 tareas y calculadora de masa y escandallo por pizza.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
