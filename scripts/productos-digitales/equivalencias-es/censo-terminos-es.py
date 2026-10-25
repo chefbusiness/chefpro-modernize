@@ -99,6 +99,10 @@ def load_all():
         for p in paths:
             fp = PUBLIC + p
             ext = os.path.splitext(p)[1].lower()
+            # La guía de equivalencias es la SALIDA de este censo, no texto del producto: leerla
+            # (existe desde el 13-oct) metía sus 200 términos en la cuenta de cada producto (25-oct).
+            if os.path.basename(p).startswith('guia-equivalencias'):
+                continue
             if ext not in ('.docx', '.xlsx'):
                 if p not in filetext:
                     stats['saltados'] += 1
