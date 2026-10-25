@@ -1246,6 +1246,13 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'modelos-contrato': '/dl/plan-negocio-finca-eventos-bodas/modelo-contrato-reserva-finca-eventos.docx',
     'guia-equivalencias': '/dl/plan-negocio-finca-eventos-bodas/guia-equivalencias-plan-negocio-finca-eventos-bodas.docx',
   },
+  'plan-negocio-pizzeria': {
+    'plan-financiero': '/dl/plan-negocio-pizzeria/plan-financiero-pizzeria.xlsx',
+    'plan-negocio': '/dl/plan-negocio-pizzeria/plan-de-negocio-pizzeria.docx',
+    'checklist-apertura': '/dl/plan-negocio-pizzeria/checklist-apertura-pizzeria.xlsx',
+    'calculadora-masa': '/dl/plan-negocio-pizzeria/calculadora-masa-escandallo-pizzeria.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-pizzeria/guia-equivalencias-plan-negocio-pizzeria.docx',
+  },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',

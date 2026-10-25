@@ -608,6 +608,7 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'checklist-apertura': '/dl/plan-negocio-heladeria/checklist-apertura-heladeria.xlsx',
       'guia-equivalencias': '/dl/plan-negocio-heladeria/guia-equivalencias-plan-negocio-heladeria.docx',
     },
+  },
   'plan-negocio-finca-eventos-bodas': {
     id: 'plan-negocio-finca-eventos-bodas',
     name: 'Plan de Negocio Finca de Eventos y Bodas',
@@ -628,6 +629,24 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'guia-equivalencias': '/dl/plan-negocio-finca-eventos-bodas/guia-equivalencias-plan-negocio-finca-eventos-bodas.docx',
     },
   },
+  'plan-negocio-pizzeria': {
+    id: 'plan-negocio-pizzeria',
+    name: 'Plan de Negocio Pizzería Napolitana',
+    priceLabel: '€35',
+    accessPath: '/plan-negocio-pizzeria-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Pizzería Napolitana',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Pizzería Napolitana</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, el plan financiero en Excel de 9 hojas, el checklist de apertura de __N_TAREAS__ tareas, la calculadora de masa y escandallo por pizza y la guía de equivalencias para Hispanoamérica:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+    emailTitleResend: 'Accede a tu Plan de Negocio: Pizzería Napolitana',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word, el plan financiero en Excel, el checklist de apertura, la calculadora de masa y escandallo y la Guía de Equivalencias:',
+    files: {
+      'plan-financiero': '/dl/plan-negocio-pizzeria/plan-financiero-pizzeria.xlsx',
+      'plan-negocio': '/dl/plan-negocio-pizzeria/plan-de-negocio-pizzeria.docx',
+      'checklist-apertura': '/dl/plan-negocio-pizzeria/checklist-apertura-pizzeria.xlsx',
+      'calculadora-masa': '/dl/plan-negocio-pizzeria/calculadora-masa-escandallo-pizzeria.xlsx',
+      'guia-equivalencias': '/dl/plan-negocio-pizzeria/guia-equivalencias-plan-negocio-pizzeria.docx',
+    },
   },
   'plan-negocio-cafeteria': {
     id: 'plan-negocio-cafeteria',

@@ -300,6 +300,7 @@ const data: PlanNegocioData = {
     { href: '/kit-plan-financiero', label: 'Kit Plan Financiero' },
     { href: '/guia-restaurante-casual', label: 'Guía Restaurante Casual' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
+    { href: '/plan-negocio-pizzeria', label: 'Plan Pizzería Napolitana' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 2.2 · septiembre 2026',
