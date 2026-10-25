@@ -1,8 +1,12 @@
 # Payment Links pendientes — tareas de John (Stripe)
 
-> Sesión Claude Code (Mac). **1 pendiente (25-oct-2026): Plan de Negocio: Heladería Artesanal (ES).**
+> Sesión Claude Code (Mac). **No hay ninguno pendiente.**
 
-## ⏳ Plan de Negocio: Heladería Artesanal (ES) — PR #161
+## ✅ Plan de Negocio: Heladería Artesanal (ES) — PR #161, link creado el 25-oct-2026
+
+Link de John: https://buy.stripe.com/5kQ28k94w78i2QT8Zn6oo21 (`plink_1UUSdP4CcdRGidmEm3lXcQyH`). Comprobado con la CLI de
+Stripe: 3500 EUR, pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-negocio-heladeria-access`.
+Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
 
 Mismo patrón que el de la panadería (`plink_1TVHkk4CcdRGidmE0rdXrGbn`, comprobado con la CLI el 25-oct):
 
