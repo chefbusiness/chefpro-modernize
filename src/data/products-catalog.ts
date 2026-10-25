@@ -505,6 +505,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
       es: 'Obrador y vitrina: plan financiero Excel, plan en Word y checklist de apertura.',
       en: 'Word business plan, Excel financial projections and opening checklist for a gelato shop with its own kitchen.',
     },
+  },
   'plan-negocio-finca-eventos-bodas': {
     id: 'plan-negocio-finca-eventos-bodas',
     url: '/plan-negocio-finca-eventos-bodas',
@@ -515,6 +516,15 @@ const RAW: Record<string, ProductCatalogRaw> = {
       en: 'Word business plan, Excel financial projections, opening checklist, pricing calculator and contract templates for a leased wedding and event venue.',
     },
   },
+  'plan-negocio-pizzeria': {
+    id: 'plan-negocio-pizzeria',
+    url: '/plan-negocio-pizzeria',
+    price: '€35',
+    name: { es: 'Plan de Negocio: Pizzería Napolitana', en: 'Neapolitan Pizzeria Business Plan (Spain)' },
+    description: {
+      es: 'Pizzería con horno de leña: plan financiero Excel, plan en Word, checklist de apertura y calculadora de masa y escandallo.',
+      en: 'Word business plan, Excel financial projections, opening checklist and dough and costing calculator for a wood-fired pizzeria.',
+    },
   },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',

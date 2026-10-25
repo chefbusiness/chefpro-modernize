@@ -62,6 +62,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Plan d\'affaires : Pizzeria napolitaine',
+    slug: '/plan-negocio-pizzeria',
+    description: 'Business plan complet pour ouvrir une pizzeria avec un four à bois : plan financier Excel sur 3 ans de 9 feuilles, plan en Word de 10 sections, checklist d\'ouverture, calculateur de pâte et de coût de revient par pizza et guide d\'équivalences pour l\'Amérique latine.',
+    features: [
+      'Business plan Word en 10 sections',
+      'Plan financier Excel de 9 feuilles avec la trésorerie mois par mois',
+      'Checklist d\'ouverture pour une pizzeria avec four à bois',
+      'Calculateur de pâte et de coût de revient par pizza et guide d\'équivalences pour l\'Amérique latine',
+    ],
+    iconName: 'Pizza',
+    image: '/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'pizzeria', 'business-plan'],
+  },
+  {
     name: 'Business plan : lieu de réception pour événements et mariages',
     slug: '/plan-negocio-finca-eventos-bodas',
     description: 'Business plan complet pour monter un lieu de réception pour événements et mariages sur un domaine loué, avec un traiteur exclusif en concession qui vous verse une redevance : plan en Word de 10 sections, plan financier Excel de 9 feuilles avec la saison des mariages, checklist d\'ouverture de 84 tâches (dont l\'autorisation en zone rurale), calculateur de devis, modèles de contrat et guide d\'équivalences pour l\'Amérique latine.',
@@ -137,8 +153,8 @@ const products = [
     ],
     iconName: 'Cookie',
     image: '/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg',
-    badge: '✨ Nouveau',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
   },
   {
@@ -922,7 +938,6 @@ const comingSoon = [
   { iconName: 'Sandwich', name: 'Plan d\'affaires : Restaurant de smash burgers', desc: 'Du concept smash au seuil de rentabilité : investissement, carte, coûts et prévision mois par mois.', tags: ['business-plan', 'burger', 'excel'], phase: 'T4 2026' },
   { iconName: 'Flame', name: 'Tâches récurrentes : Rôtisserie de poulets', desc: 'Broches, temps de cuisson, perte de rendement et service de pointe, avec les routines de chaque service.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
   { iconName: 'Utensils', name: 'Tâches récurrentes : Areperia', desc: 'Pâte, garnitures, plancha et fermeture : la routine quotidienne d\'une areperia écrite noir sur blanc, service par service.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
-  { iconName: 'Pizza', name: 'Plan d\'affaires : Pizzeria napolitaine', desc: 'Levain, four et rotation des tables : le plan complet pour ouvrir une pizzeria napolitaine.', tags: ['business-plan', 'pizzeria', 'excel'], phase: 'T1 2027' },
   { iconName: 'Beef', name: 'Plan d\'affaires : Steakhouse', desc: 'Un local fixe avec une armoire de maturation à sec et un grill au charbon de bois : investissement, carte, coût matière des recettes et prévisionnel.', tags: ['business-plan', 'restaurant', 'excel'], phase: 'T1 2027' },
   { iconName: 'ShoppingCart', name: 'Calculateur de commission des plateformes de livraison', desc: 'Saisissez votre commission et votre carte pour voir le prix à partir duquel chaque plateforme de livraison cesse d\'être rentable.', tags: ['excel', 'costs', 'dark-kitchen'], phase: 'T1 2027' },
   { iconName: 'Leaf', name: 'Tâches récurrentes : Poke bowl / Bowl healthy', desc: 'Préparation des bases et des toppings, chaîne du froid, services et fermeture pour un restaurant de bowls.', tags: ['templates', 'excel', 'restaurant'], phase: 'Bientôt disponible' },

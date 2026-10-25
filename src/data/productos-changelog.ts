@@ -2062,6 +2062,20 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'plan-negocio-pizzeria': {
+    version: '1.0',
+    updated: '2026-10-25',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-25',
+        title: 'Primera edición',
+        changes: [
+          'Primera edición del Plan de Negocio: Pizzería Napolitana, con sus cinco ficheros: plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 80 tareas, calculadora de masa y escandallo por pizza y la guía de equivalencias para Hispanoamérica.',
+        ],
+      },
+    ],
+  },
   'plan-negocio-parrillero-asador-eventos': {
     version: '2.2',
     updated: '2026-10-12',

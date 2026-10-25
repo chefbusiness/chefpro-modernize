@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Pizzería Napolitana',
+    slug: '/plan-negocio-pizzeria',
+    price: '€35',
+    description: 'Plan de negocio completo para abrir una pizzería con horno de leña: plan financiero a 3 años en Excel de 9 hojas, plan en Word de 10 secciones, checklist de apertura, calculadora de masa y escandallo por pizza y la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel de 9 hojas con tesorería mes a mes',
+      'Checklist de apertura para pizzería con horno de leña',
+      'Calculadora de masa y escandallo por pizza y Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: Pizza,
+    image: '/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'pizzeria', 'plan-negocio'],
+  },
+  {
     name: 'Plan de Negocio: Finca de Eventos y Bodas',
     slug: '/plan-negocio-finca-eventos-bodas',
     price: '€45',
@@ -130,8 +147,8 @@ const products = [
     ],
     icon: Cookie,
     image: '/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'chocolateria'],
   },
   {
@@ -1050,7 +1067,6 @@ const comingSoon = [
   { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
   { icon: Flame, name: 'Tareas Recurrentes: Pollería y Pollo a la Brasa', desc: 'Espetones, tiempos de asado, mermas y despacho en hora punta, con las rutinas de cada turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
   { icon: Utensils, name: 'Tareas Recurrentes: Arepería', desc: 'Masa, rellenos, plancha y cierre: el día a día de una arepería puesto por escrito, turno a turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
-  { icon: Pizza, name: 'Plan de Negocio: Pizzería Napolitana', desc: 'Masa madre, horno y rotación de mesas: el plan completo para abrir una napolitana.', tags: ['plan-negocio', 'pizzeria', 'excel'], phase: 'Q1 2027' },
   { icon: Beef, name: 'Plan de Negocio: Steakhouse / Restaurante de Carnes', desc: 'Local fijo con cámara de maduración y brasa: inversión, carta, escandallo y previsión.', tags: ['plan-negocio', 'restaurante', 'excel'], phase: 'Q1 2027' },
   { icon: ShoppingCart, name: 'Calculadora de Comisiones de Delivery', desc: 'Mete tu comisión y tu carta y descubre a qué precio deja de salirte a cuenta cada plataforma.', tags: ['excel', 'costes', 'dark-kitchen'], phase: 'Q1 2027' },
   { icon: Leaf, name: 'Tareas Recurrentes: Poke Bowl / Healthy Bowl', desc: 'Mise en place de bases y toppings, cadena de frío, turnos y cierre para un local de bowls.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Próximamente' },

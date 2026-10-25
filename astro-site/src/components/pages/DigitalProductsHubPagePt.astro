@@ -61,6 +61,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Plano de Negócios: Pizzaria Napolitana',
+    slug: '/plan-negocio-pizzeria',
+    description: 'Plano de negócios completo para abrir uma pizzaria com forno a lenha: plano financeiro em Excel a 3 anos com 9 folhas, plano em Word com 10 secções, checklist de abertura, calculadora de massa e custo por pizza e o Guia de Equivalências para a América Latina.',
+    features: [
+      'Plano de negócios em Word com 10 secções',
+      'Plano financeiro em Excel com 9 folhas e tesouraria mês a mês',
+      'Checklist de abertura para uma pizzaria com forno a lenha',
+      'Calculadora de massa e custo por pizza e Guia de Equivalências para a América Latina',
+    ],
+    iconName: 'Pizza',
+    image: '/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg',
+    badge: '✨ Novo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'pizzeria', 'business-plan'],
+  },
+  {
     name: 'Plano de Negócios: Espaço para Eventos e Casamentos',
     slug: '/plan-negocio-finca-eventos-bodas',
     description: 'Plano de negócios completo para montar um espaço para eventos e casamentos numa propriedade arrendada, com catering exclusivo em regime de concessão que paga uma renda ao espaço: plano em Word com 10 secções, plano financeiro em Excel com 9 folhas e a época de casamentos, checklist de abertura com 84 tarefas (incluindo o licenciamento em solo rústico), calculadora de orçamentos, modelos de contrato e o Guia de Equivalências para a América Latina.',
@@ -136,8 +152,8 @@ const products = [
     ],
     iconName: 'Cookie',
     image: '/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg',
-    badge: '✨ Novo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Novo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
   },
   {
@@ -921,7 +937,6 @@ const comingSoon = [
   { iconName: 'Sandwich', name: 'Plano de Negócios: Smash Burger Joint', desc: 'Do conceito smash ao ponto de equilíbrio: investimento, ementa, custos e previsão mês a mês.', tags: ['business-plan', 'burger', 'excel'], phase: 'T4 2026' },
   { iconName: 'Flame', name: 'Tarefas Recorrentes: Loja de Frango Assado', desc: 'Espetos, tempos de assadura, perda de rendimento e serviço nas horas de ponta, com as rotinas de cada turno.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
   { iconName: 'Utensils', name: 'Tarefas Recorrentes: Loja de Arepas', desc: 'Massa, recheios, chapa e encerramento: a rotina diária de uma loja de arepas documentada, turno a turno.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
-  { iconName: 'Pizza', name: 'Plano de Negócios: Pizzaria Napolitana', desc: 'Massa mãe, forno e rotação de mesas: o plano completo para abrir uma pizzaria napolitana.', tags: ['business-plan', 'pizzeria', 'excel'], phase: 'T1 2027' },
   { iconName: 'Beef', name: 'Plano de Negócios: Steakhouse', desc: 'Um espaço fixo com câmara de maturação a seco e grelhador a carvão: investimento, ementa, custeio de receitas e previsão.', tags: ['business-plan', 'restaurant', 'excel'], phase: 'T1 2027' },
   { iconName: 'ShoppingCart', name: 'Calculadora de Comissões de Entrega', desc: 'Introduza a sua comissão e a sua ementa para ver o preço a partir do qual cada plataforma de entrega deixa de compensar.', tags: ['excel', 'costs', 'dark-kitchen'], phase: 'T1 2027' },
   { iconName: 'Leaf', name: 'Tarefas Recorrentes: Poke Bowl / Bowl Saudável', desc: 'Preparação de bases e toppings, cadeia de frio, turnos e encerramento para um restaurante de bowls.', tags: ['templates', 'excel', 'restaurant'], phase: 'Brevemente' },

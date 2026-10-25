@@ -396,6 +396,7 @@ const data: KitTareasData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
+    { href: '/plan-negocio-pizzeria', label: 'Plan de Negocio: Pizzería Napolitana' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/kit-tareas-cafeteria', label: 'Kit Tareas Cafetería' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },

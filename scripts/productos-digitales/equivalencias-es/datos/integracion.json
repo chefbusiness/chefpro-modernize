@@ -210,5 +210,9 @@
  "plan-negocio-finca-eventos-bodas": {
   "producto": "Plan de Negocio Finca de Eventos y Bodas",
   "ejemplos": "la «fianza» del arrendamiento es el «depósito en garantía» en México o Colombia (allí la «fianza» es una póliza); los «aseos» son «baños»; el «catering» es «banquetería» en Chile o Argentina, y la «barra libre» es «open bar» en casi todas partes"
+ },
+ "plan-negocio-pizzeria": {
+  "producto": "Plan de Negocio Pizzería Napolitana",
+  "ejemplos": "la «mozzarella» es «muzzarella» en Argentina; el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina; el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú, y la «pizza napolitana» es en Argentina otra pizza (con rodajas de tomate y ajo)"
  }
 }
