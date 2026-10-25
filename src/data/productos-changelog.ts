@@ -1969,6 +1969,20 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'plan-negocio-heladeria': {
+    version: '1.0',
+    updated: '2026-10-25',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-25',
+        title: 'Primera edición',
+        changes: [
+          'Primera edición del Plan de Negocio: Heladería Artesanal, con sus cuatro ficheros: plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 80 tareas en 6 fases y la Guía de Equivalencias para Latinoamérica.',
+        ],
+      },
+    ],
+  },
   'plan-negocio-parrillero-asador-eventos': {
     version: '2.2',
     updated: '2026-10-12',

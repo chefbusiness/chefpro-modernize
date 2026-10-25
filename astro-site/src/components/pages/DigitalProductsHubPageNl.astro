@@ -59,6 +59,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Businessplan: ambachtelijke gelateria',
+    slug: '/plan-negocio-heladeria',
+    description: 'Volledig businessplan voor het openen van een ambachtelijke gelateria: businessplan in Word met 10 secties, financieel plan in Excel met levende formules en een openingschecklist in fasen, plus de Equivalentiegids voor Latijns-Amerika.',
+    features: [
+      'Businessplan in Word met 10 secties',
+      'Financieel plan in Excel met de seizoensinvloeden van ijs',
+      'Openingschecklist: 80 taken in 6 fasen',
+      'Bonus: Equivalentiegids voor Latijns-Amerika',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'ice-cream', 'production-kitchen', 'business-plan'],
+  },
+  {
     name: 'Het openen van een churros- en warme chocolademelkzaak',
     slug: '/guia-churreria-chocolateria',
     description: 'Pand, productiekeuken, friteuse en cijfers: het complete openingsdossier voor een churros- en warme chocolademelkzaak, met de Excel-bestanden die uw berekeningen voor u doen.',
@@ -134,8 +150,8 @@ const products = [
     ],
     iconName: 'ChefHat',
     image: '/lovable-uploads/ai-gallery/manual-chef-hero.jpg',
-    badge: '✨ Nieuw',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'food-safety', 'restaurant', 'hotel', 'catering'],
   },
   {
@@ -883,7 +899,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'IceCream', name: 'Businessplan: ambachtelijke gelateria', desc: 'Financieel plan in Excel, startinvestering, seizoensinvloeden en een openingschecklist voor uw gelateria.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'Q4 2026' },
   { iconName: 'BarChart3', name: 'Operationeel dashboardpakket', desc: 'Omzet per tijdvak en eetgedeelte, gemiddelde besteding, tafelomloopsnelheid en productiviteit per uur, in één dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
   { iconName: 'Sandwich', name: 'Businessplan: smashburgerzaak', desc: 'Van het smashconcept tot break-even: investering, menukaart, kosten en een prognose per maand.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },
   { iconName: 'PartyPopper', name: 'Businessplan: evenementen- en trouwlocatie', desc: 'Capaciteit, vast menu-arrangementen, seizoensinvloeden voor bruiloften en personeelsinzet per evenement: het complete plan.', tags: ['business-plan', 'catering', 'excel'], phase: 'Q1 2027' },

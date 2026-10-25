@@ -625,6 +625,13 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Plan de Negocio: Panadería / Obrador</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel con estacionalidad navideña, el plan de negocio Word y el checklist de apertura con 60+ trámites RGSEAA obrador:',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
+  'plan-negocio-heladeria': {
+    accessPath: '/plan-negocio-heladeria-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Heladería Artesanal',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Heladería Artesanal</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word (10 secciones), el plan financiero en Excel (9 hojas con fórmulas vivas), el checklist de apertura (80 tareas en 6 fases) y la Guía de Equivalencias para Latinoamérica:<br /><br />Para el día a día del obrador y el mostrador, el <a href="https://aichef.pro/kit-tareas-heladeria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Heladería</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada jornada.',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
   'plan-negocio-food-truck': {
     accessPath: '/plan-negocio-food-truck-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Food Truck',

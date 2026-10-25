@@ -496,6 +496,15 @@ const RAW: Record<string, ProductCatalogRaw> = {
     urlByLang: { en: '/en/digital-products/bakery-business-plan' },
     priceByLang: { en: '$39' },
   },
+  'plan-negocio-heladeria': {
+    id: 'plan-negocio-heladeria',
+    url: '/plan-negocio-heladeria',
+    price: '€35',
+    name: { es: 'Plan de Negocio: Heladería Artesanal' },
+    description: {
+      es: 'Obrador y vitrina: plan financiero Excel, plan en Word y checklist de apertura.',
+    },
+  },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',
     url: '/plan-negocio-tapas-bar',
