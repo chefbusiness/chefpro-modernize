@@ -250,3 +250,5 @@ los 5 umbrales D142 en verde los 3 años.
 | `pizza-shop-startup-checklist.xlsx` | 7 hojas, 80 tareas (12/15/14/13/13/13), 12 fórmulas, DV `✓,☐,N/A` | `59a7aa9d2df6d83bc434838029cd15d39aee2d473d406f6ed88e08edef247179` |
 | `pizza-dough-food-cost-calculator.xlsx` | 3 hojas, 147 fórmulas, Version 2.2 (regenerada) | `435361dcf57a9625625788ec10b236b3b330951b97dd6d4250496412e5ef537f` |
 | `business-plans-en-8/cifras_caso.json` · `entregables_piz.json` | 110 tokens · barrido | `ff31bf7c…` · `e002ba5c…` |
+
+> Superado por la ronda de arreglos de la revisión final: sha256 vigentes en `REVISION-FINAL.md` §5.

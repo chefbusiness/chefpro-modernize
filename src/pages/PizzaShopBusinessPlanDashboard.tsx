@@ -46,7 +46,7 @@ const TEMPLATES = [
     icon: Calculator,
     type: '.xlsx',
     title: 'Pizza Dough & Food Cost Calculator (Neapolitan-Style Dough + Food Cost for 8 Pizzas)',
-    desc: "Dough by the batch from your hydration, salt, yeast and fermentation hours, in grams and baker's percentages for the dough ball, plus the food cost, margin and menu price of 8 example pizzas. Replace the example ingredient prices with your distributor's.",
+    desc: "Dough by the batch from the number and weight of your dough balls, per liter of water (traditional Neapolitan ratios) or in baker's percentages, in grams with ounces and pounds beside them, with the dough cost per ball, plus the food cost, margin and menu price of 8 example pizzas. Replace the example ingredient prices with your distributor's.",
   },
   {
     key: 'equivalents-guide',

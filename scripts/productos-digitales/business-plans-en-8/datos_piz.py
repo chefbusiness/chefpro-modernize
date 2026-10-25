@@ -212,6 +212,9 @@ def _frases_es():
         (r'\b9[.,]3\s?%', 'margen neto ES (9,3 %)'),
         (r'(?i)(?:delivery|marketplace|platform)s? (?:share|sales)[^.;]{0,30}\b10\s?%|\b10\s?% of (?:total )?sales '
          r'(?:through|via|on|from) (?:the )?(?:delivery|marketplace|platform)', 'plataforma ES (10 % de ventas)'),
+        # REVISION-FINAL B4: «in this plan, 10% of sales» se colaba (el caso US es el 12 % de B16). Ningún uso legítimo
+        # del conjunto dice «10% of sales» (renta «≤ 10%», cargas del 10 % e interés del 10 % no casan)
+        (r'(?i)\b10 ?% of sales\b', 'plataforma ES (10 % de ventas: el caso US es el 12 %)'),
         (r'\bv1\.[01]\b|\b[Vv]ersion 1\.[01]\b', 'historia de versiones (la EN nace en 2.2)'),
     ]
 
