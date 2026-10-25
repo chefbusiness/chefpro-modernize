@@ -1,0 +1,380 @@
+{
+ "tanda": "hel_es_b",
+ "producto": "Plan de Negocio: Heladería Artesanal ES 1.0 (aichef.pro, 35 €)",
+ "salida": "scripts/productos-digitales/plan-heladeria/textos/hel_es_b.json",
+ "formato_salida": "{\"<i>\": \"<párrafo en español>\", …} con TODOS los \"i\" de \"parrafos\" y nada más",
+ "brief": "scripts/productos-digitales/plan-heladeria/BRIEF-REDACTORES.md (léelo entero antes)",
+ "research": "scripts/productos-digitales/plan-heladeria/F1-research-heladeria.md (§1 normativa, §3 caso, §4 SERP, §6 errores y riesgos: material de apoyo; la pista de la sección manda)",
+ "orden_del_proceso (SPEC D11, literal en el fondo)": "secos con el azúcar; después los líquidos; las grasas (nata, mantequilla), las yemas y los emulsionantes entran al subir la temperatura, a 40-50 °C, ANTES de pasteurizar; pasteurización a 85 °C; enfriado rápido a 4 °C o menos; maduración a 2-4 °C (de 4 a 12 horas; con huevo, se manteca dentro de las 24 horas); mantecación; abatimiento a −18 °C en el corazón; conservación a −18 °C o menos. DESPUÉS de pasteurizar sólo entra lo que no necesita tratamiento térmico (pastas puras, variegatos, fruta lavada en los sorbetes): nunca yema ni nata cruda",
+ "secciones": {
+  "6": {
+   "titulo": "6. Plan de Operaciones",
+   "pista": "Operaciones del obrador y del mostrador. El proceso en ESTE orden, tal cual: secos con el azúcar; después los líquidos; las grasas (nata, mantequilla), las yemas y los emulsionantes entran al subir la temperatura, a 40-50 °C, ANTES de pasteurizar; pasteurización a 85 °C; enfriado rápido a 4 °C o menos; maduración a 2-4 °C (de 4 a 12 horas; con huevo, se manteca dentro de las 24 horas); mantecación; abatimiento a −18 °C en el corazón; conservación a −18 °C o menos. DESPUÉS de pasteurizar sólo entra lo que no necesita tratamiento térmico (pastas puras, variegatos, fruta lavada en los sorbetes): nunca yema ni nata cruda. El equipo, con precio y fuente: pasteurizador de 30 litros {PASTEURIZADOR} (14.601,75 € sin IVA en la tarifa de un distribuidor, octubre de 2026), mantecadora horizontal de 6-12 litros por ciclo {MANTECADORA} (las marcas profesionales no publican tarifa; una vertical de entrada de 26-30 l/h cuesta unos 4.200 € sin IVA), abatidor {ABATIDOR}, armarios de conservación y maduración {ARMARIOS} y vitrina ventilada de 18 cubetas {VITRINA} (dos módulos de 10 cubetas a unos 5.090 € cada uno en la tarifa del fabricante). La capacidad: unos 7.150 kg de helado al año (unos 10.500 litros); en julio, unos 38 kg al día, unas 11 cubetas de 5 litros, con un ciclo diario del pasteurizador y 6-7 ciclos de mantecadora: la vitrina de 18 cubetas deja holgura para tartas y restaurantes. Densidad: 430 g por litro como mínimo legal (RD 618/1998); el artesano suele ir a 0,6-0,75 kg por litro. Vitrina a la temperatura que fije tu APPCC (ninguna norma estatal la fija; −11/−14 °C es lo habitual); conservación a −18 °C o menos y sin recongelar. Contacto cruzado: una espátula por cubeta y lavaporcionador con agua corriente. Horario: temporada alta (de mediados de abril a septiembre) de 12:00 a 24:00 todos los días; marzo, primera quincena de abril y octubre, 8 horas y seis días; de noviembre a febrero, 6 horas entre semana y más el fin de semana, cerrada los lunes y tres semanas de cierre de mediados de enero a primeros de febrero. Potencia: unos 30 kW en trifásica (cada módulo de vitrina gasta unos 23 kWh al día); suministros {SUMINISTROS_MES} al mes de media. Merma del 5-8 % de la producción; mantenimiento con frigorista certificado ({MANTENIMIENTO_FRIO} al año); envases sin poliestireno expandido y cucharillas de madera o compostables."
+  },
+  "7": {
+   "titulo": "7. Estructura Organizativa y RRHH",
+   "pista": "Equipo: el titular maestro heladero a jornada completa; un dependiente/a y encargado/a de turno todo el año; un dependiente/a de temporada fijo discontinuo de abril a septiembre a jornada completa; uno de verano fijo discontinuo de junio a septiembre de 30 horas; un ayudante de obrador fijo discontinuo de mayo a septiembre a media jornada; y suplencias de vacaciones y descansos: {PLANTILLA_PERSONAS} personas y {JORNADAS} jornadas completas equivalentes, coste {PERSONAL_A1} ({PERSONAL_PCT_A1} de las ventas), cobertura de horas {COBERTURA_HORAS} ({HORAS_CONTRATADAS} horas contratadas frente a {HORAS_NECESARIAS} necesarias); en julio y agosto el cuadrante va justo: el titular hace horas de más o entra un extra de fin de semana. Contrato fijo discontinuo por escrito con llamamiento por escrito (art. 16 del Estatuto de los Trabajadores), nunca autónomos que te facturan (falso autónomo, art. 1.1), registro de jornada (art. 34.9), convenio provincial de hostelería (VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4, que nombra las heladerías). Si contratas a menores de 18 años, sin trabajo nocturno ni horas extraordinarias (art. 6 ET): confírmalo con tu gestoría. Formación de manipuladores acreditada por la empresa (el antiguo carné de manipulador ya no existe) con temperaturas, alérgenos y el orden de la pasteurización; formación técnica de balanceo de mezclas; prevención de riesgos (frío, cargas, cortes)."
+  },
+  "8": {
+   "titulo": "8. Plan Financiero",
+   "pista": "Plan financiero, TODO por token: inversión {INVERSION_TOTAL} = compras {CAPEX} (obra y equipo {INVERSION_PARTIDAS}, más la fianza {FIANZA} y {RENTA_PREVIA} de renta antes de abrir) + fondo de maniobra {FONDO_MANIOBRA}; IVA de la inversión {IVA_INVERSION}; necesidad de caja {NECESIDAD_CAJA}; financiación {RECURSOS_PROPIOS} propios + préstamo {PRESTAMO} al {TIPO_PRESTAMO}, {PLAZO_PRESTAMO} años con {CARENCIA} de carencia, cuota {CUOTA_ANUAL}. Cuenta de resultados de 3 años: ventas {VENTAS_A1}/{VENTAS_A2}/{VENTAS_A3}; margen bruto {MARGEN_BRUTO_PCT_A1}; mercancía {MERCANCIA_PCT_A1}; personal {PERSONAL_A1}; alquiler {ALQUILER_ANO} ({ALQUILER_PCT_A1}); neto {NETO_A1}/{NETO_A2}/{NETO_A3} (el año 3 tributa ya al tipo general del Impuesto de Sociedades). CRECIMIENTO tal cual lo hace el Excel: suben los clientes un {CREC_A2} y un {CREC_A3} (de {CLIENTES_DIA} a {CLIENTES_DIA_A2} y {CLIENTES_DIA_A3} al día) con el mismo ticket, y la plantilla crece con personas, no con un porcentaje. Equilibrio contable {BE_CLIENTES_DIA} clientes al día (ingresos {BE_INGRESOS}; holgura {HOLGURA_CONTABLE}); equilibrio de caja {BE_CLIENTES_DIA_CAJA} clientes al día y holgura {HOLGURA_CAJA}, que es la del PRIMER año (sólo intereses por la carencia); desde el segundo, con la devolución del principal, la holgura baja a {HOLGURA_CAJA_A2} ({BE_CLIENTES_DIA_CAJA_A2} clientes al día de equilibrio) y en el tercero queda en {HOLGURA_CAJA_A3}: esos años son los que hay que vigilar. DSCR mínimo {DSCR_MIN}. TESORERÍA: el Mes 1 es marzo; la rampa arranca al {RAMPA_MES1} y llega al ritmo de crucero en {MESES_RAMPA} meses; el saldo mínimo es {SALDO_MINIMO} en el mes {MES_SALDO_MINIMO} ({MES_SALDO_MINIMO_NOMBRE}) y el año acaba (febrero) con {SALDO_MES12}; de noviembre a febrero entra alrededor del 15 % de la venta del año con los fijos planos: el verano paga el invierno, y por eso el plan no abre en otoño. El personal se reparte en doce meses en la tesorería aunque los fijos discontinuos sólo cobran en temporada: el invierno sale más caro que en la realidad (lado prudente). Payback del proyecto: {PAYBACK} (el token ya es texto: no le añadas «años»). Escenarios: pesimista, un verano frío y lluvioso ({ESC_PES_CLIENTES} clientes a {ESC_PES_TICKET} y {ESC_PES_DIAS} días: ventas {ESC_PES_VENTAS}, neto {ESC_PES_NETO}) y optimista ({ESC_OPT_CLIENTES} clientes a {ESC_OPT_TICKET} y {ESC_OPT_DIAS} días: neto {ESC_OPT_NETO}). Dos alternativas SIN Excel, razonadas: la variante de ahorro (pasteurizadora-mantecadora combinada o maquinaria de ocasión revisada, que según las guías publicadas cuesta un 40-60 % menos: la inversión bajaría a unos 90.000 €) y el cierre de noviembre a febrero (se ahorran meses de personal de mostrador y suministros con el llamamiento de los fijos discontinuos, pero se pierden la Navidad, los encargos y la clientela de invierno, y se sigue pagando el alquiler y la cuota del préstamo). El Excel manda: si cambias una celda verde, el documento se queda atrás."
+  },
+  "9": {
+   "titulo": "9. Aspectos Legales y Licencias",
+   "pista": "Marco legal con su cita (sólo esto, dicho así): SL unipersonal (capital desde 1 €) o autónomo; IAE (RDLeg 1175/1990): epígrafe 644.4 «comercio al por menor de helados», que te permite fabricar helado y tartas heladas en el propio local para venderlos allí, y grupo 676 para el consumo en el local; el 414.4 sólo si fabricas para otros a escala industrial; exento de cuota con menos de 1 millón de cifra de negocio. Apertura: el 644.4 está en el anexo de la Ley 12/2012: declaración responsable, sin licencia previa, hasta 750 m² (arts. 2-4); la parte de hostelería (mesas, 676) va por el régimen de tu ayuntamiento (licencia o declaración responsable según la ordenanza); la terraza es ocupación de la vía pública y nunca entra en la Ley 12/2012 (art. 2.2): autorización municipal aparte. Sanidad: declaración responsable al registro sanitario de tu comunidad autónoma (RD 1021/2022); el RGSEAA sólo aplica si sirves a otros negocios fuera del art. 3 del RD 1021/2022, que permite el suministro marginal (el 25 % del volumen anual o 500 kg a la semana como máximo), localizado y restringido, con declaración responsable y registro de destinatarios, cantidades y fechas; APPCC (Reglamento (CE) 852/2004 y la flexibilidad del art. 20 del RD 1021/2022); huevo: la mezcla a 70 °C durante 2 segundos o más (85 °C en la práctica) u ovoproducto (art. 9), y la mezcla con huevo, mantecada en las 24 horas siguientes (art. 9.3; cómo aplica al helado ya congelado, pregúntalo al inspector); conservación a −18 °C o menos y sin recongelar (arts. 4.1 y 5.9); la temperatura de la vitrina no la fija ninguna norma estatal, la fija tu APPCC. Denominaciones (RD 618/1998, vivo sólo en eso, arts. 2, 3 y 17.1): «helado crema», «helado de leche», «sorbete», «mantecado» con un 4 % de yema o más, «granizado», y 430 g por litro como mínimo; «artesano» sólo con el documento de calificación artesanal de tu comunidad (art. 2.9); «ELABORACIÓN PROPIA» es la mención segura, sólo en el local donde se elabora o en sus sucursales (RD 1021/2022, art. 11). Alérgenos a granel por escrito o de palabra con registro escrito y cartel (RD 126/2015, arts. 4 y 6) y etiqueta completa en las tarrinas preenvasadas (art. 5). IVA: 10 % todo el helado, en el local o para llevar (Ley 37/1992, art. 91.Uno.1.1.º y 2.2.º); los refrescos con azúcares añadidos para llevar, al 21 %. Personal: ET arts. 1.1, 16 y 34.9 y el convenio provincial de hostelería (ALEH VI, art. 4). Facturación con software Veri*factu (consulta la fecha que te aplica con tu gestoría). La carga de gases refrigerantes, sólo por un técnico certificado. Lo que no esté aquí no se afirma: «compruébalo con tu gestor o con el inspector»."
+  },
+  "10": {
+   "titulo": "10. Conclusiones y Plan de Acción",
+   "pista": "Conclusiones con tokens (viabilidad, holgura del año 1 y de los años 2 y 3, DSCR mínimo, saldo mínimo, payback), los riesgos de una heladería y cómo se mitigan: abrir en otoño; la caja del invierno sin plan de invierno; el local equivocado (monofásico, sin ventilación para los condensadores ni desagüe, sin salida de humos para las crepes); una vitrina sobredimensionada (24 cubetas son merma y consumo); mermas y averías del frío en agosto (seguro con deterioro de mercancía y contrato con frigorista); el clima (un verano frío y lluvioso es el escenario pesimista); materias primas que se disparan (pistacho, cacao, vainilla: escandallo y precio revisados cada temporada); «artesano» sin papeles y «elaboración propia» con helado comprado; contratar el verano con eventuales o «autónomos» en vez de fijos discontinuos; alérgenos en el lavaporcionador; recetas sin balancear. El plan de acción en 6 fases del checklist (80 tareas: 12/15/15/12/13/13). Cierra con el siguiente paso: completar el Excel con tus cifras."
+  }
+ },
+ "n_parrafos": 32,
+ "n_palabras_objetivo": 3765,
+ "tokens": {
+  "ABATIDOR": "5.500 €",
+  "AFORO": "20",
+  "ALQUILER_ANO": "20.400 €",
+  "ALQUILER_MES": "1.700 €",
+  "ALQUILER_PCT_A1": "9,4 %",
+  "AMORTIZACION_A1": "10.665 €",
+  "ARMARIOS": "5.800 €",
+  "BASE_MAQUINARIA": "70.900 €",
+  "BASE_OBRA": "35.750 €",
+  "BEBIDA_COST": "25 %",
+  "BE_CLIENTES_DIA": "130",
+  "BE_CLIENTES_DIA_CAJA": "120",
+  "BE_CLIENTES_DIA_CAJA_A2": "143",
+  "BE_CLIENTES_DIA_CAJA_A3": "148",
+  "BE_INGRESOS": "196.605 €",
+  "BE_INGRESOS_CAJA": "181.751 €",
+  "BE_INGRESOS_CAJA_A2": "215.865 €",
+  "BE_INGRESOS_CAJA_A3": "224.222 €",
+  "CAPEX": "125.650 €",
+  "CARENCIA": "1",
+  "CLIENTES_DIA": "143",
+  "CLIENTES_DIA_A2": "154",
+  "CLIENTES_DIA_A3": "162",
+  "COBERTURA_HORAS": "101 %",
+  "COMISION_DELIVERY": "30 %",
+  "CONSUMIBLES_PCT": "4 %",
+  "COSTES_VARIABLES_A1": "61.255 €",
+  "COSTE_VAR_CLIENTE": "1,38 €",
+  "CREC_A2": "8 %",
+  "CREC_A3": "5 %",
+  "CUOTA_ANUAL": "26.234 €",
+  "DELIVERY_PCT": "3 %",
+  "DIAS_APERTURA": "310",
+  "DIAS_COBRO": "2",
+  "DIFERENCIA_FONDOS": "830 €",
+  "DIFERENCIA_FONDOS_PCT": "0,5 %",
+  "DSCR_A2": "1,39",
+  "DSCR_A3": "1,37",
+  "DSCR_MIN": "1,37",
+  "ESC_OPT_CLIENTES": "165",
+  "ESC_OPT_DIAS": "320",
+  "ESC_OPT_NETO": "47.576 €",
+  "ESC_OPT_TICKET": "5,20 €",
+  "ESC_OPT_VENTAS": "274.560 €",
+  "ESC_PES_CLIENTES": "120",
+  "ESC_PES_DIAS": "300",
+  "ESC_PES_NETO": "-22.261 €",
+  "ESC_PES_TICKET": "4,60 €",
+  "ESC_PES_VENTAS": "165.600 €",
+  "EXCESO_FINANCIACION": "830 €",
+  "FIANZA": "5.100 €",
+  "FIJOS_A1": "141.162 €",
+  "FONDO_MANIOBRA": "32.624 €",
+  "FOOD_COST": "20 %",
+  "FORMACION": "2.000 €",
+  "HOLGURA_CAJA": "19,5 %",
+  "HOLGURA_CAJA_A2": "8,7 %",
+  "HOLGURA_CAJA_A3": "9,9 %",
+  "HOLGURA_CONTABLE": "10,5 %",
+  "HORAS_CONTRATADAS": "5.612",
+  "HORAS_DIA": "9,5",
+  "HORAS_NECESARIAS": "5.564",
+  "HORAS_PRODUCCION": "2,75",
+  "IMPREVISTOS": "3.250 €",
+  "INSTALACION_ELECTRICA": "5.000 €",
+  "INTERESES_A1": "7.740 €",
+  "INVERSION_PARTIDAS": "117.150 €",
+  "INVERSION_TOTAL": "158.274 €",
+  "IVA_INVERSION": "24.896 €",
+  "JORNADAS": "3,05",
+  "MANTECADORA": "14.000 €",
+  "MANTENIMIENTO_FRIO": "1.500 €",
+  "MARGEN_BRUTO_A1": "155.962 €",
+  "MARGEN_BRUTO_PCT_A1": "71,8 %",
+  "MARGEN_CLIENTE": "3,52 €",
+  "MARKETING_ANO": "2.500 €",
+  "MERCANCIA_PCT_A1": "20,5 %",
+  "MESES_RAMPA": "4",
+  "MES_SALDO_MINIMO": "1",
+  "MES_SALDO_MINIMO_NOMBRE": "marzo",
+  "MOBILIARIO": "5.000 €",
+  "NECESIDAD_CAJA": "183.170 €",
+  "NETO_A1": "12.580 €",
+  "NETO_A2": "18.085 €",
+  "NETO_A3": "18.606 €",
+  "NETO_PCT_A1": "5,8 %",
+  "NETO_PCT_A2": "7,7 %",
+  "NETO_PCT_A3": "7,6 %",
+  "OBRA": "18.500 €",
+  "ORIGEN_FONDOS": "184.000 €",
+  "PASTEURIZADOR": "14.600 €",
+  "PAYBACK": "Más de 3 años",
+  "PAYBACK_CAPEX": "Más de 3 años",
+  "PCT_COMIDA": "90 %",
+  "PERSONAL_A1": "82.207 €",
+  "PERSONAL_A2": "88.207 €",
+  "PERSONAL_A3": "94.207 €",
+  "PERSONAL_PCT_A1": "37,8 %",
+  "PLANTILLA_PERSONAS": "6",
+  "PLAZO_PRESTAMO": "7",
+  "PRESTAMO": "129.000 €",
+  "RAI_A1": "14.800 €",
+  "RAI_A2": "21.276 €",
+  "RAI_A3": "24.808 €",
+  "RAMPA_MES1": "70 %",
+  "RECURSOS_PROPIOS": "55.000 €",
+  "RENTA_PREVIA": "3.400 €",
+  "SALDO_MES12": "66.345 €",
+  "SALDO_MINIMO": "30.175 €",
+  "SEGUROS_ANO": "1.500 €",
+  "SUMINISTROS_MES": "700 €",
+  "TASA_TERRAZA": "1.200 €",
+  "TICKET": "4,90 €",
+  "TICKET_IVA": "5,39 €",
+  "TIPO_PRESTAMO": "6 %",
+  "VENTAS_A1": "217.217 €",
+  "VENTAS_A2": "234.594 €",
+  "VENTAS_A3": "246.324 €",
+  "VITRINA": "10.500 €"
+ },
+ "parrafos": [
+  {
+   "i": 78,
+   "seccion": 6,
+   "palabras_objetivo": 214,
+   "molde_ft_es": "La selección del vehículo constituye la primera decisión crítica y determinantepara la viabilidad operativa del proyecto. En el mercado español actual, la elección se concentra entre dos opciones principales: la furgoneta adaptada o el remolque profesional. La furgoneta, típicamente modelos de entre 2.800 y 3.500 kg de MMA, ofrece la ventaja de la autonomía total al integrar zona de trabajo y almacenamiento en una sola unidad, eliminando la necesidad de un vehículo tractor adicional. Sin embargo, el remolque de food truck profesional presenta mejores prestaciones para eventos de mayor duración y volumen de servicio, además de requerir menor inversión inicial en el conjunto. Para un food truck urbano de tamaño medio, un remolque de entre 4 y 6 metros lineales con ejes reforzados y suspensión de calidad representa una inversión de 12.000 a 25.000 euros en mercado de segunda mano en buen estado, frente a los 18.000 a 35.000 euros que requiere una furgoneta homologada con equipamiento incluido. La decisión entre nuevo y ocasión debe equilibrar la garantía mecánica del primero con la depreciación ya absorbida del segundo, siendo mi recomendación para proyectos con inversión inicial moderada adquirir un remolque de segunda mano con menos de cinco años de antigüedad y realizar una reforma integral de la cocina según las especificaciones propias del concepto.",
+   "gemela_formato_parrillero_es": "Todos los eventos siguen las mismas fases, de la reserva al cobro. Con el presupuesto firmado y la señal del 30 % la fecha queda reservada, a veces meses antes. A D-30 cierras el briefing con el cliente: formato, invitados, horarios y alergias. A D-21 haces la visita técnica: dónde irá el punto de fuego, hacia dónde sopla el viento y adónde irá el humo, que las carpas queden a 3 m o más de la parrilla, dónde hay agua, cómo es el terreno y, si hay monte cerca, cuál es su franja forestal. A D-7 cierras por escrito el menú y las alergias. Entre cinco y siete días antes pides la carne y, al recibirla, la mides con sonda: 7 °C o menos la carne, 3 °C los despojos, 4 °C las aves y los preparados y 2 °C la picada (Reglamento (CE) 853/2004, que adoptas como estándar de tu APPCC). Los marinados, las salmueras y el porcionado se hacen en la cocina de apoyo, a {CUOTA_COCINA_MES} al mes en el caso del kit, y nunca en casa. El día del evento cargas, montas y enciendes: la brasa tarda entre 45 y 60 minutos en estar lista. Al terminar apagas brasas y cenizas con agua en un contenedor metálico, recoges y facturas."
+  },
+  {
+   "i": 79,
+   "seccion": 6,
+   "palabras_objetivo": 147,
+   "molde_ft_es": "El equipamiento de cocina móvil debe dimensionarse con precisión para evitar cuellos de botella durante las horas punta de servicio. Una instalación estándar para street food gourmet requiere una plancha de superficie profesional de al menos 90 centímetros, una freidora de capacidad mínima de ocho litros con termostato de precisión, un mostrador refrigerado con función de exposición, un lavamanos con depósito de aguas grises homologado, y un sistema de extracción forzada que cumpla la normativa vigente en cada municipio. El generador eléctrico representa un elemento crítico que frecuentemente se subestima: para una operación con los equipos mencionados se requiere un grupo electrógeno silenciado de al menos 5.000 vatios de potencia nominal, con autonomía mínima de ocho horas de funcionamiento continuo. La inversión en equipamiento completo oscila entre 8.000 y 15.000 euros dependiendo de la calidad de los componentes y si se opta por equipamiento nuevo o reacondicionado.",
+   "gemela_formato_parrillero_es": "Es tuyo lo que viaja contigo; lo que usas un día al año, lo alquilas. Compras el remolque-parrilla con su cruz ({REMOLQUE}), la furgoneta frigorífica con ATP ({FURGONETA}), las parrillas ({PARRILLAS}) y el equipo del plan B de gas ({PLAN_B_GAS}). El manual escala el servicio con una regla sencilla: de 350 a 450 g de carne cruda por invitado si hay entrantes y de 500 a 600 g si no los hay; una parrilla de 120 cm y un parrillero por cada 60-80 invitados, o por cada 40-50 si cortas en mesa; y de 0,7 a 1 kg de carbón por kilo de carne. Un cordero de 10-12 kg da entre 15 y 20 raciones. El gas es solo el plan B: una botella de menos de 15 kg por aparato, que conectas tú con regulador y tubo flexible. Si el montaje pide botellas de 35 kg o varias en batería, la monta una empresa instaladora autorizada."
+  },
+  {
+   "i": 80,
+   "seccion": 6,
+   "palabras_objetivo": 130,
+   "molde_ft_es": "La logística diaria de un food truck requiere una organización meticulosa que determine directamente la rentabilidad de cada servicio. El protocolo operativo estándar establece las siguientes fases: carga de géneros perecederos en origen con verificación de temperaturas de cadena de frío, desplazamiento al punto de servicio con tiempos estimados según tráfico urbano, montaje de instalación consetup completo en treinta minutos incluyendo conexión a red eléctrica exterior cuando esté disponible, período de servicio que oscila entre cuatro y seis horas según evento, desmontaje y limpieza en destino, y retorno a base con lavado completo de equipos. Esta secuencia consume entre diez y doce horas de jornada laboral efectiva, por lo que la planificación de rutas semanales debe priorizar puntos de servicio que minimicen desplazamientos superiores a cuarenta minutos entre ubicaciones consecutivas.",
+   "gemela_formato_parrillero_es": "La cocción se controla con sonda, no a ojo. La carne llega a 70 °C en el centro y las aves a 74 °C, una recomendación de AESAN que conviene tratar como norma de la casa. El «poco hecho» solo se ofrece en piezas enteras de vacuno o de cordero y siempre a petición del invitado; nunca en picada ni en aves. Lo que ya está cocinado y espera en la mesa o en el calientaplatos se mantiene a 63 °C o más (RD 1086/2020, art. 30). El fuego es parte del espectáculo, pero la brasa se gobierna con cabeza: se avisa al cliente del lugar exacto donde se trabaja, se deja libre el perímetro y se mantiene el extintor a mano en todo momento. Anota las temperaturas de cada servicio en la hoja del evento; ese registro es tu mejor defensa si alguien reclama."
+  },
+  {
+   "i": 81,
+   "seccion": 6,
+   "palabras_objetivo": 117,
+   "molde_ft_es": "La gestión de inventarios perecederos constituye un aspecto operativo que diferencia claramente al profesional del emprendedor novato. El modelo de compra diaria, aunque genera mayor trabajo administrativo, reduce drásticamente las pérdidas por caducidad y optimiza la tesorería del negocio. Para un food truck con ticket medio de doce euros y volumen medio de ciento veinte servicios por jornada, la inversión en género fresco debe situarse entre el veinticinco y el treinta por ciento de la facturación esperada, lo que implica una salida de caja diaria de aproximadamente trescientos sesenta euros en productos. La relación con proveedores debe establecerse con al menos dos opciones por categoría principal de producto para garantizar continuidad de servicio ante incidencias de suministro.",
+   "gemela_formato_parrillero_es": "Como los eventos son tu actividad principal, guardas una comida testigo de cada preparación en todos los eventos, no solo en los de más de 40 personas (RD 1086/2020, art. 30.8): 100 g, identificada y fechada, a 4 °C o menos o congelada, durante 7 días. El chuletón con vértebra solo se sirve si procede de vacuno de origen de riesgo insignificante (España) o de menos de 30 meses, y nunca lo deshuesas tú (RD 1086/2020, art. 26.2). Una alerta de incendios puede prohibir la brasa e incluso el gas, así que el contrato recoge una cláusula de fuerza mayor y el plan B: cambiar de fecha o cocinar en un lugar sin riesgo, con la parrilla de gas según las normas de cada comunidad (consulta el anexo). Decídelo con el cliente antes de la fecha, no el mismo día con los invitados esperando."
+  },
+  {
+   "i": 82,
+   "seccion": 6,
+   "palabras_objetivo": 107,
+   "molde_ft_es": "El mantenimiento preventivo del vehículo y equipamiento debe documentarse en un calendario estructurado que incluya revisión mecánica trimestral del motor y sistemas de frenado, limpieza mensual de filtros de extracción y campanas, revisión semestral de instalación eléctrica y gas, y sustitución anual de elementos de desgaste como juntas, correas y elementos de estanqueidad. El coste anual de mantenimiento programado para un food truck bien mantenido oscila entre 1.500 y 2.500 euros, cifra que debe contemplarse como inversión de obligado cumplimiento y nunca como gasto opcional, dado que una avería en plena jornada de servicio puede generar pérdidas directas superiores a mil euros además del daño reputacional asociado.",
+   "gemela_formato_parrillero_es": "Los contratos del kit fijan el cobro. Los particulares pagan el 30 % de señal al firmar, el 40 % siete días antes y el 30 % en las 48 horas siguientes; en efectivo solo por debajo de 1.000 €, y con factura de cada pago. Si cancela el cliente, con 60 días o más se retiene la señal; de 30 a 59 días, el 50 % del total; de 7 a 29, el 75 %; con menos de 7, el 100 %. Si cancelas tú, devuelves todo más un 10 %. Las empresas abonan el 30 % al confirmar y el 70 % a 30 días de la factura; cancelar cuesta el 20, el 50, el 75 o el 100 % (30 días o más, 15-29, 7-14 y menos de 7). Los ayuntamientos no adelantan nada."
+  },
+  {
+   "i": 85,
+   "seccion": 7,
+   "palabras_objetivo": 100,
+   "molde_ft_es": "El modelo de estructura organizativa en un food truck debe equilibrar la capacidad de producción con la sostenibilidad económica del proyecto. Dado que la inversión inicial se sitúa entre 45.000 y 85.000 euros y el ticket medio oscila entre 10 y 15 euros, la dimensión del equipo resulta determinante para la viabilidad del negocio. La operativa de un food truck urbano requiere cubrir simultáneamente funciones de cocina, atención al cliente, gestión administrativa y conducción del vehículo, lo que exige una definición precisa de roles y una política de recursos humanos que minimice la dependencia del propietario sin comprometer la rentabilidad.",
+   "gemela_formato_parrillero_es": "El equipo es pequeño y cada puesto tiene una función clara. Tú eres el parrillero titular, a jornada completa: vendes, compras, preparas y llevas el fuego en los eventos que importan. Un segundo parrillero, fijo discontinuo con una jornada del 30 %, te cubre los eventos grandes. Dos auxiliares, también fijos discontinuos al 32 %, montan, atienden la parrilla, sirven y emplatan: uno se ocupa de la parrilla y el montaje y el otro del servicio y el emplatado. No hay oficina, ni local, ni encargado de sala: la estructura se paga con los eventos."
+  },
+  {
+   "i": 86,
+   "seccion": 7,
+   "palabras_objetivo": 131,
+   "molde_ft_es": "El equipo mínimo viable para un food truck de street food de calidad está compuesto por dos o tres personas. El propietario asume el rol de chef y gestor, siendo responsable de la elaboración de los productos, la supervisión de la calidad, la gestión económica y administrativa, y la conducción del vehículo hasta el punto de venta. Esta concentración de funciones en una sola persona reduce los costes de personal pero genera una dependencia crítica: si el propietario enferma o no puede operar, el negocio deja de generar ingresos inmediatamente. La experiencia de más de dos décadas en consultoría de hostelería demuestra que esta configuración es habitual en las fases iniciales, pero debe planificarse la incorporación de un segundo recurso fijo antes de que el volumen de operaciones lo haga imprescindible.",
+   "gemela_formato_parrillero_es": "El personal cuesta {PERSONAL_A1} en el primer año, lo que equivale a un {PERSONAL_PCT_A1} de las ventas. Esa cifra reúne a las {PLANTILLA_PERSONAS} personas de la plantilla, tú incluido o incluida, con las horas que el Excel programa para el volumen del primer año. Es la partida más grande después de la mercancía y la que más se mueve con el calendario, porque en un mes de bodas y fiestas trabajan todos y en febrero casi nadie. Por eso el segundo parrillero y los auxiliares son fijos discontinuos que se llaman cuando hay evento. Si cierras menos eventos de los previstos, programas menos horas y el coste baja. Si cierras más, lo asumes con las mismas personas hasta donde alcance la cobertura y después incorporas a alguien más, nunca a quien te factura por días."
+  },
+  {
+   "i": 87,
+   "seccion": 7,
+   "palabras_objetivo": 101,
+   "molde_ft_es": "El ayudante de cocina complementa la operativa diaria, ocupándose de la preparación de ingredientes, el montaje de los platos, el servicio al cliente y las tareas de limpieza durante el turno. En eventos de gran affluencia, como festivales o mercados con alta demanda, resulta necesario incorporar un tercer recurso eventual que permita mantener la velocidad de servicio sin comprometer la calidad. La contratación de este personal adicional puede realizarse mediante contratos temporales por circunstancias de la producción o mediante acuerdos con empresas de trabajo temporal especializadas en hostelería, lo que aporta flexibilidad para ajustar la plantilla a la estacionalidad del negocio.",
+   "gemela_formato_parrillero_es": "Cada evento exige horas de producción, carga, montaje, brasa, servicio y recogida, y varias personas por servicio. El Excel compara las horas programadas con las necesarias y da una cobertura del {COBERTURA_HORAS}. Léela con cuidado: compara todas las horas contratadas, incluidas las del titular a jornada completa, con solo las de evento, y por eso sale alta. Las horas de ventas, compras y marinados no están entre las necesarias. Una cobertura alta no significa que sobre gente, sino que la plantilla del caso aguanta los {EVENTOS_ANO} eventos de la temporada, con margen para una semana de dos bodas."
+  },
+  {
+   "i": 88,
+   "seccion": 7,
+   "palabras_objetivo": 117,
+   "molde_ft_es": "El coste laboral en España para 2026 se calcula aplicando el tipo de cotización a la Seguridad Social del 33,4% sobre la base de cotización correspondiente. Para un salario base de 1.300 euros mensuales en 14 pagas, el coste empresarial mensual por trabajador asciende a aproximadamente 1.734 euros, mientras que el coste anual supera los 24.000 euros por empleado. A este coste hay que añadir los gastos de uniforme, manutención durante la jornada y, en su caso, el desplazamiento al punto de venta. En un modelo con propietario y un ayudante fijo, el coste de personal representa el mayor gasto operativo del negocio, por lo que su control resulta esencial para alcanzar los márgenes de rentabilidad objetivo.",
+   "gemela_formato_parrillero_es": "El segundo parrillero y los auxiliares son personal fijo discontinuo (art. 16 del Estatuto de los Trabajadores): tienen contrato indefinido y los llamas en los días y las temporadas en que hay trabajo, de primavera a otoño y en las fiestas. Es la fórmula natural para un servicio con muchas bodas y celebraciones en temporada y pocas fuera. No lo sustituyas por autónomos que te facturan por evento: si trabajan con tus medios, a tu horario y bajo tus órdenes, es un falso autónomo (art. 1.1) y el riesgo de sanción y de reclamación es tuyo. Cada llamamiento se comunica con antelación y se registra. Es un contrato que da seguridad a las dos partes y te permite contar con gente que ya conoce tu forma de trabajar."
+  },
+  {
+   "i": 89,
+   "seccion": 7,
+   "palabras_objetivo": 133,
+   "molde_ft_es": "La formación del equipo debe contemplar varios ámbitos fundamentales. En primer lugar, la velocidad de servicio resulta crítica en un food truck, donde el cliente espera recibir su pedido en pocos minutos; la organización del espacio de trabajo y la coordinación entre cocina y servicio determinan la capacidad de atención. En segundo lugar, la normativa APPCC para unidades móviles de restauración exige la implementación de un sistema de análisis de peligros y puntos críticos de control, así como la formación específica en manipulación de alimentos y gestión de alérgenos. Finalmente, el personal debe dominar las operaciones de montaje y desmontaje del equipo en el punto de venta, incluyendo la conexión eléctrica, la instalación de estructuras auxiliares y la gestión de residuos, tareas que pueden representar hasta una hora diaria de trabajo no productivo.",
+   "gemela_formato_parrillero_es": "La formación forma parte del plan, no es un extra. Todo el que manipula alimentos recibe formación en higiene a cargo de la empresa; el antiguo carné de manipulador ya no existe. Esa formación incluye la carne cruda, las temperaturas y los alérgenos, porque la comida no envasada debe informar de ellos. A eso se suma la prevención de riesgos laborales propia del oficio: quemaduras, humo, calor y levantamiento de cargas. Antes del primer evento del año, el equipo ensaya el guion del show de fuego: cuándo se enciende, cómo se corta a la vista y cómo se explica cada pieza al invitado. Los flambeados se hacen solo con el extintor a mano y nunca en una alerta de incendios. El ensayo cuesta una mañana y evita improvisar delante de cien personas."
+  },
+  {
+   "i": 90,
+   "seccion": 7,
+   "palabras_objetivo": 107,
+   "molde_ft_es": "La gestión de los recursos humanos en un food truck presenta particularidades que requieren un enfoque práctico. La rotación de personal en hostelería es elevada, por lo que es recomendable establecer procesos de selección que prioricen la polyvalencia y la capacidad de adaptación. Además, la planificación de vacaciones y sustituciones debe realizarse con suficiente antelación, dado que la operativa no admite improvizaciones: un food truck que no abre en un evento contratado genera pérdida de reputación y facturación. La incorporación progresiva de personal adicional conforme crece la demanda, manteniendo siempre la estructura de costes bajo control, constituye la estrategia más prudente para un proyecto de estas características.",
+   "gemela_formato_parrillero_es": "Antes de fijar sueldos, mira el convenio provincial de hostelería que te corresponda (ALEH V, art. 4): las tablas salariales y las jornadas que mandan son las de tu provincia. Por eso el Excel deja la casilla del salario de convenio para que copies tu tabla, en lugar de imponerte una cifra que cambia de un territorio a otro. Cada persona debe tener su jornada registrada, también en un evento largo que acaba de madrugada (art. 34.9), y un calendario de llamamientos que puedas enseñar. En los eventos grandes entra el segundo parrillero según la tabla de escalado. Cuando el volumen suba, conviene ampliar la bolsa de fijos discontinuos formados antes que alargar las jornadas de las mismas personas."
+  },
+  {
+   "i": 93,
+   "seccion": 8,
+   "palabras_objetivo": 88,
+   "molde_ft_es": "La viabilidad económica de un food truck en el mercado español responde a una ecuación de inversión contenida y rotación elevada que lo posiciona como una de las opciones más atractivas dentro del sector de la hostelería. Frente a un restaurante tradicional, donde las barreras de entrada superan los 150.000 euros y los plazos de retorno se extienden entre 36 y 60 meses, el modelo de food truck permite reducir la inversión inicial en más de un cincuenta por ciento y acelerar significativamente la recuperación del capital invertido.",
+   "gemela_formato_parrillero_es": "En conjunto, el caso del kit describe un negocio pequeño y viable sobre el papel. Las ventas del primer año alcanzan {VENTAS_A1}, con un margen bruto del {MARGEN_BRUTO_PCT_A1} y un resultado neto de {NETO_A1}. Son cifras de planificación del Excel, no una previsión: se sostienen mientras cierres los eventos del plan al precio medio de la mezcla. Esa media, de {PRECIO_INVITADO} por invitado, incluye las fiestas, que se cobran más bajo, así que no es el precio de una boda. Las secciones siguientes desglosan de dónde sale cada cifra."
+  },
+  {
+   "i": 94,
+   "seccion": 8,
+   "palabras_objetivo": 186,
+   "molde_ft_es": "La inversión total necesaria para poner en marcha este proyecto se sitúa en torno a los 73.000 euros, distribuidos en seis partidas principales que cubren desde la adquisición del vehículo hasta la disposición de capital de trabajo para los primeros meses de operación. El vehículo constituye la partida más relevante, con un desembolso de 25.000 euros destinados a la compra de una furgoneta o remolque en condiciones adecuadas para su adaptación posterior. La transformación del vehículo, incluyendo instalación eléctrica, fontanería, campana extractora y acabados de cocina profesional, requiere una inversión adicional de 8.000 euros. El equipamiento de cocina, entendiendo freidoras, planchas, hornos, neveras y utillaje, representa otros 10.000 euros, mientras que el grupo electrógeno para eventos sin conexión a red suma 3.000 euros. Los permisos administrativos, licencias de apertura, seguro de responsabilidad civil y tasas municipales ascienden a 2.000 euros, mientras que la campaña inicial de lanzamiento, incluyendo branding del vehículo, cartelería digital y material publicitario, requiere otros 2.000 euros. Finalmente, el fondo de maniobra de 6.000 euros cubre stock inicial de materias primas, imprevistos y gastos de los primeros sixty días hasta alcanzar la rentabilidad.",
+   "gemela_formato_parrillero_es": "La inversión se construye con partidas que puedes presupuestar hoy. Las compras suman {CAPEX}, con la furgoneta frigorífica ({FURGONETA}) como la mayor, seguida del remolque-parrilla ({REMOLQUE}), la marca, la web y el lanzamiento (4.500 €), las parrillas ({PARRILLAS}) y el plan B de gas ({PLAN_B_GAS}), además de utillaje, cuchillería, indumentaria y la constitución de la sociedad. A eso se suma un fondo de maniobra de {FONDO_MANIOBRA}, que cubre los primeros meses mientras entran los cobros. La inversión total es de {INVERSION_TOTAL}. Sobre ella el IVA soportado es de {IVA_INVERSION}, que adelantas y recuperas después, de modo que la necesidad de caja real es de {NECESIDAD_CAJA}. Se financia con {RECURSOS_PROPIOS} de recursos propios y un préstamo de {PRESTAMO} al {TIPO_PRESTAMO} a {PLAZO_PRESTAMO} años, con {CARENCIA} año de carencia en el que solo pagas intereses. La cuota anual, ya con amortización, es de {CUOTA_ANUAL}. Es una orientación, no una oferta: tu banco fijará las condiciones, y conviene pedir presupuesto de la furgoneta y del remolque antes de dar nada por cerrado."
+  },
+  {
+   "i": 95,
+   "seccion": 8,
+   "palabras_objetivo": 120,
+   "molde_ft_es": "Las proyecciones de facturación para los tres primeros ejercicios reflejan una curva de crecimiento sostenido basada en la consolidación de la clientela y la expansión hacia nuevos puntos de venta. El primer año se estima una facturación de 135.000 euros, equivalente a una media de 450 euros diarios considerando 300 días de operación, cifra conservadora para un food truck que opera en mercados, zonas de oficinas y eventos. El segundo año, con la consolidación de rutas fijas y presencia en festivales de mayor magnitud, la facturación alcanzaría los 175.000 euros, representando un incremento del treinta por ciento respecto al ejercicio inicial. El tercer año, con una plantilla optimizada y posibles expansiones de servicio, la facturación se situaría en 215.000 euros.",
+   "gemela_formato_parrillero_es": "Los ingresos crecen con el volumen, no con el precio: el Excel sube un {CREC_A2} y un {CREC_A3} los invitados por evento (de {INVITADOS_EVENTO} a {INVITADOS_EVENTO_A2} y {INVITADOS_EVENTO_A3}) con los mismos {EVENTOS_ANO} eventos y el mismo precio. En la práctica es lo que pasa cuando una boda de cien invitados pasa a ciento diez, o cuando un cliente fiel te trae a más gente. El caso pasa así de {VENTAS_A1} en el primer año a {VENTAS_A2} en el segundo y {VENTAS_A3} en el tercero. El resultado neto es de {NETO_A1}, {NETO_A2} y {NETO_A3}: baja en el tercer año aunque las ventas suban, porque el impuesto de sociedades deja el tipo reducido de las empresas de nueva creación y pasa al tipo general."
+  },
+  {
+   "i": 96,
+   "seccion": 8,
+   "palabras_objetivo": 102,
+   "molde_ft_es": "La estructura de costes directos del negocio presenta un food cost del treinta por ciento sobre ventas, alineado con los estándares del sector de restauración rápida de calidad. El packaging representa un cuatro por ciento adicional, lo que deja un margen bruto del sesenta y cinco por ciento, suficiente para cubrir gastos de personal, alquiler de espacios, combustible del vehículo, mantenimiento y amortizaciones. Los costes de personal, con un equipo de dos a tres personas incluyendo el propietario, representan la partida más significativa después de la materia prima, y deben gestionarse con flexibilidad mediante combinaciones de salario fijo y incentivos por productividad.",
+   "gemela_formato_parrillero_es": "Los costes se contrastan con rangos de referencia. La mercancía de comida pesa un {FOOD_COST} y la de bebida, un {BEBIDA_COST}; en conjunto la mercancía es un {MERCANCIA_PCT_A1} de las ventas, y el margen bruto, tras todos los costes variables, queda en un {MARGEN_BRUTO_PCT_A1}. El personal supone un {PERSONAL_PCT_A1} y la cocina de apoyo, {COCINA_ANO} al año. El marketing suma {MARKETING_ANO} y los seguros, {SEGUROS_ANO}. Los intereses del primer año son {INTERESES_A1}."
+  },
+  {
+   "i": 97,
+   "seccion": 8,
+   "palabras_objetivo": 76,
+   "molde_ft_es": "El punto de equilibrio se alcanza con 27 clientes diarios a un ticket medio de 12 euros, cifra perfectamente alcanzable en ubicaciones con alto tráfico de peatones o durante eventos específicos. Este umbral de rentabilidad resulta especialmente relevante porque permite al food truck operar con beneficio desde el primer mes en condiciones normales de demanda, evitando la situación de pérdidas acumuladas que caracteriza a muchos restaurantes tradicionales durante sus primeros doce a dieciocho meses de actividad.",
+   "gemela_formato_parrillero_es": "El equilibrio se mide en invitados y en eventos. Contablemente, cubres costes con {BE_INVITADOS_EVENTO} invitados por evento si cierras los {EVENTOS_ANO} eventos del plan, o con {BE_EVENTOS_ANO} eventos al año con el evento medio de {TICKET_EVENTO} ({BE_INGRESOS} de ingresos). En caja el umbral es de {BE_EVENTOS_ANO_CAJA} eventos, con una holgura del {HOLGURA_CAJA}, la del primer año, de carencia y solo intereses. Desde el segundo devuelves principal: el equilibrio de caja sube a {BE_INGRESOS_CAJA_A2}, la holgura baja al {HOLGURA_CAJA_A2} (sin crecer, unos {BE_EVENTOS_CAJA_A2} eventos) y en el tercero al {HOLGURA_CAJA_A3} (unos {BE_EVENTOS_CAJA_A3}, más que los {EVENTOS_ANO} del plan: sin el crecimiento de invitados por evento, el tercer año no cubre la cuota). Esos dos años son los que hay que vigilar."
+  },
+  {
+   "i": 98,
+   "seccion": 8,
+   "palabras_objetivo": 65,
+   "molde_ft_es": "El período de retorno de la inversión se estima entre doce y veinticuatro meses, dependiendo de la estacionalidad, la consistencia de las ubicaciones y la capacidad del equipo para maximizar la productividad durante los picos de demanda. Esta horquilla de recuperación situaría al food truck entre las inversiones más rentables del sector hostelero español, donde el retorno medio en restaurantes convencionales supera los tres años.",
+   "gemela_formato_parrillero_es": "Puedes fallar por la caja aunque el beneficio sea bueno. El Excel supone que a los proveedores les pagas a {DIAS_COBRO} días y que las nóminas salen cada mes. El saldo mínimo de tesorería es de {SALDO_MINIMO}, en el mes {MES_SALDO_MINIMO}; el DSCR mínimo es de {DSCR_MIN} y el payback del proyecto es «{PAYBACK}», con {PAYBACK_CAPEX} años sobre las compras. Las señales de los particulares no se modelan: la caja real será algo mejor que la de la hoja de Tesorería."
+  },
+  {
+   "i": 99,
+   "seccion": 8,
+   "palabras_objetivo": 80,
+   "molde_ft_es": "No obstante, el análisis debe considerar factores de riesgo que podrían afectar a estas proyecciones. La dependencia de permisos municipales para operar en determinadas ubicaciones, la competencia creciente en el segmento de street food gourmet y la volatilidad del coste de materias primas constituyen variables que requieren seguimiento continuo y estrategias de mitigación. Recomiendo establecer acuerdos marco con proveedores, diversificar las ubicaciones de operación y desarrollar una base de clientes corporativos que genere ingresos recurrentes mediante servicios de catering empresarial.",
+   "gemela_formato_parrillero_es": "Dos escenarios muestran lo rápido que se mueven los números. El pesimista supone {ESC_PES_EVENTOS} eventos y da ventas de {ESC_PES_VENTAS} y un neto de {ESC_PES_NETO}: pérdidas. El optimista llega a {ESC_OPT_VENTAS} con {ESC_OPT_EVENTOS} eventos y un neto de {ESC_OPT_NETO}. Si la holgura de los años 2 y 3 se queda corta, tienes cuatro palancas: cerrar más eventos de empresa, ajustar el precio, sumar más invitados por evento y negociar una carencia más larga con el banco. El Excel manda: si cambias una celda verde, este documento se queda atrás."
+  },
+  {
+   "i": 102,
+   "seccion": 9,
+   "palabras_objetivo": 88,
+   "molde_ft_es": "La apertura de un food truck en España implica navegar un entorno regulatorio complejo caracterizado por la ausencia de una ley nacional unificada que regule específicamente esta modalidad de negocio. La legislación aplicable varía significativamente según la comunidad autónoma y el municipio donde se pretenda operar, lo que constituye uno de los principales desafíos administrativos a los que se enfrenta cualquier emprendedor del sector. Esta fragmentación normativa exige un conocimiento detallado de las ordenanzas locales y una planificación rigurosa de las ubicaciones donde se desarrollará la actividad comercial.",
+   "gemela_formato_parrillero_es": "Puedes constituirte como sociedad limitada unipersonal, con un capital desde 1 euro, o empezar como autónomo; el plan está calculado con sociedad. La actividad es empresarial, epígrafe 677.9 del IAE, y tus facturas no llevan retención de IRPF (Reglamento del IRPF, art. 95.6). El servicio de comidas en el evento tributa al 10 % de IVA, alcohol incluido (Ley 37/1992, art. 91.Uno.2.2.º), y al 21 % el alcohol del asado para llevar y lo facturado aparte; cada pago, también la señal, lleva factura (art. 75.Dos). En personal, cumples el Estatuto de los Trabajadores: fijos discontinuos (art. 16), ningún falso autónomo (art. 1.1) y registro de jornada (art. 34.9). Confirma todo con tu asesoría fiscal."
+  },
+  {
+   "i": 103,
+   "seccion": 9,
+   "palabras_objetivo": 109,
+   "molde_ft_es": "El permiso de venta ambulante constituye el primer requisito fundamental y se obtiene en el ayuntamiento correspondiente al municipio donde se desea operar. Este permiso tiene carácter municipal y intransferible, lo que significa que obtener la autorización en una ciudad no habilita para operar en otra distinta sin solicitar una nueva licencia. LosAyuntamientos suelen exigir la presentación de documentación relativa al vehículo, seguro de responsabilidad civil, certificaciones sanitarias y, en muchos casos, un proyecto de actividad compatible con las ordenanzas urbanísticas locales. Los plazos de resolución pueden extenderse entre tres y seis meses, por lo que resulta imprescindible iniciar estos trámites con suficiente antelación al planned lanzamiento del negocio.",
+   "gemela_formato_parrillero_es": "La actividad se registra ante la comunidad autónoma mediante una declaración responsable (RD 1021/2022, que reescribe el art. 2 del RD 191/2011). El RGSEAA solo aplica si suministras a otros establecimientos, algo que este plan no contempla. Está prohibido preparar en casa para eventos (RD 1021/2022, art. 13.5.b), por eso necesitas una cocina de apoyo autorizada. Con tus clientes, el contrato manda: un servicio de comida con fecha determinada no tiene derecho de desistimiento (TRLGDCU, art. 103.l), y por eso el kit incluye una señal y un calendario de cancelación que el cliente firma. Con particulares, el efectivo solo vale por debajo de 1.000 € (Ley 7/2012, art. 7). Los datos de tus clientes, alergias incluidas, se tratan según el RGPD y la LOPDGDD, y tu web cumple la LSSI."
+  },
+  {
+   "i": 104,
+   "seccion": 9,
+   "palabras_objetivo": 91,
+   "molde_ft_es": "La autorización sanitaria del vehículo representa otro pilar esencial del cumplimiento normativo. La autoridad sanitaria de la comunidad autónoma debe otorgar la autorización que certifica que el vehículo cumple con los requisitos técnicos y de higiene alimentaria establecidos en la normativa vigente. Este proceso incluye la inspección de las instalaciones de conservación, preparación y venta de alimentos, así como la verificación de que el personal manipulador dispone de los cursos de manipulación de alimentos exigidos. La documentación debe renovarse periódicamente y cualquier modificación sustancial en el equipamiento requeriría una nueva autorización.",
+   "gemela_formato_parrillero_es": "Dentro de la cocina y en el transporte rige el autocontrol. Debes tener un sistema de APPCC y formación (Reglamento (CE) 852/2004), respetar las temperaturas de recepción de la carne (Reglamento (CE) 853/2004, como estándar) y mantener lo caliente a 63 °C o más (RD 1086/2020, art. 30). Registra las temperaturas y guarda los registros: son tu defensa si alguien enferma tras un evento. Guarda además la comida testigo (RD 1086/2020, art. 30) y conserva la trazabilidad de cada pieza (Reglamento (CE) 178/2002, art. 18). Los alérgenos de los platos, también los de la comida sin envasar, se informan por escrito (Reglamento (UE) 1169/2011 y RD 126/2015)."
+  },
+  {
+   "i": 105,
+   "seccion": 9,
+   "palabras_objetivo": 105,
+   "molde_ft_es": "El Registro General Sanitario de Empresas Alimentarias y Alimentos, conocido como RGSEAA, es obligatorio para todas las empresas del sector alimentario, incluyendo los food trucks. Este registro se gestiona ante la autoridad competente de la comunidad autónoma y requiere demostrar el cumplimiento de las normas de seguridad alimentaria, desde la trazabilidad de los productos hasta las condiciones de almacenamiento y manipulación. Adicionalmente, si el food truck utiliza gas para la cocción de alimentos, es obligatorio contar con la correspondiente certificación de instalación de gas, que debe realizarse por un instalador autorizado y cumplir con la normativa de seguridad aplicable a instalaciones de gas en vehículos.",
+   "gemela_formato_parrillero_es": "El gas es el plan B de la actividad y la parte más delicada. Una botella de menos de 15 kg conectada a un solo aparato no se considera instalación, y la conecta el propio usuario con regulador y tubo flexible (RD 919/2006, art. 2.1.h; ITC-ICG 08). Las botellas de 35 kg, o varias en batería, las monta una empresa instaladora autorizada (ITC-ICG 06). Calcula los aparatos y las botellas antes de la visita técnica y pregunta a tu proveedor cómo lo aplica tu comunidad a montajes de un solo día. Haz que revisen mangueras y reguladores cada temporada y cámbialos cuando caduquen, porque una fuga mal atendida es el accidente que más te puede costar."
+  },
+  {
+   "i": 106,
+   "seccion": 9,
+   "palabras_objetivo": 75,
+   "molde_ft_es": "El seguro de responsabilidad civil es requisito indispensable para la obtención de cualquier autorización municipal. La cobertura mínima recomendada debe ser suficiente para proteger el negocio frente a reclamaciones por daños a terceros derivados de la actividad de venta ambulante. Asimismo, si el vehículo ha sido modificado estructuralmente para adaptarlo a la actividad de restauración, es necesario pasar la ITV correspondiente que certifique que las modificaciones cumplen con la normativa de circulación y seguridad vial.",
+   "gemela_formato_parrillero_es": "El fuego lo regula cada comunidad autónoma en montes y zonas colindantes (Ley 43/2003, art. 44.3), con una franja y una época de peligro, y la licencia de la finca no levanta esa restricción. Una alerta puede prohibir también el gas, así que tus contratos llevan una cláusula de fuerza mayor y un plan B. En suelo urbano, manda la ordenanza de humos de cada ayuntamiento. En el anexo por comunidades tienes las normas por territorio."
+  },
+  {
+   "i": 107,
+   "seccion": 9,
+   "palabras_objetivo": 80,
+   "molde_ft_es": "El carnet de conducir adecuado es un requisito frecuentemente pasado por alto. Los vehículos de categoría N1, que son los utilizados habitualmente como base para food trucks, requieren el carnet B para vehículos de hasta 3.500 kilogramos. Si se utiliza un remolque, puede ser necesario el carnet BE o C1E en función de la MMA combinada. La verificación de que el titular del negocio o los conductores previstos disponen de los permisos correctos evitará problemas posteriores durante la operativa diaria.",
+   "gemela_formato_parrillero_es": "En las fiestas tu cliente es una administración. El ayuntamiento contrata por contrato menor (Ley 9/2017, art. 118), paga a 30 días (art. 198.4) y, si eres SL, la factura se presenta en electrónico por FACe (Ley 25/2013, art. 4), salvo que exima las de hasta 5.000 €. Si te adjudican la barra o un puesto con canon y vendes tú al público, es venta no sedentaria y exige autorización municipal (Ley 7/1996, arts. 53-54). Cada ayuntamiento pone sus condiciones, así que pregunta antes de comprometer la fecha."
+  },
+  {
+   "i": 108,
+   "seccion": 9,
+   "palabras_objetivo": 91,
+   "molde_ft_es": "La planificación de un food truck que opere en múltiples ubicaciones debe contemplar que cada municipio puede exigir permisos temporales específicos para eventos concretos, mercados o zonas de concentración. Algunos ayuntamientos establecen restricciones de zonificación que delimitan las áreas donde está permitido el comercio ambulante, y en zonas de especial protección urbanística puede existir prohibición absoluta. La recomendación estratégica es establecer alianzas con organizadores de eventos y gestores de mercados que ya cuenten con las autorizaciones necesarias, simplificando así el proceso administrativo y reduciendo el riesgo de sanciones por incumplimiento normativo.",
+   "gemela_formato_parrillero_es": "El último eslabón es el transporte. La furgoneta frigorífica debe ser conforme al ATP (RD 237/2000). Las botellas de gas y el carbón viajan sujetos, con las botellas en pie y las válvulas cerradas; hasta 333 kg de gas por vehículo entras en la exención del ADR (1.1.3.6), con extintor a bordo, y el carbón se transporta con su ficha de datos de seguridad. Asegura la furgoneta, el remolque y el equipo, y contrata una responsabilidad civil que cubra incendio e intoxicación alimentaria por al menos 600.000 €. El caso presupuesta {SEGUROS_ANO} al año; pide presupuesto a un corredor que conozca los eventos con fuego."
+  },
+  {
+   "i": 111,
+   "seccion": 10,
+   "palabras_objetivo": 126,
+   "molde_ft_es": "El food truck representa una oportunidad de entrada al sector de hostelería con un perfil de riesgo controlado y un potencial de escalabilidad significativo. En comparación con un restaurante tradicional, la inversión inicial se reduce entre un 70 y un 85 por ciento, la curva de aprendizaje del mercado es más corta y la movilidad permite testar múltiples ubicaciones antes de comprometer recursos en un punto fijo. Los datos del sector en España reflejan un crecimiento sostenido del mercado de street food, impulsado por cambios en los hábitos de consumo y la demanda de experiencias gastronómicas accesibles y de calidad. Para un empresario con experiencia en hostelería, este modelo permite testar concepto, generar caja y validar hipótesis de rentabilidad antes de escalar hacia estructuras más complejas.",
+   "gemela_formato_parrillero_es": "El plan se sostiene por cómo está construido. No hay local que alquilar ni reformar: solo una cocina de apoyo compartida y autorizada, una furgoneta frigorífica y un remolque-parrilla. Cuatro clientes se reparten la demanda: las bodas dan el precio, las empresas llenan la semana, las celebraciones privadas cubren los huecos y las fiestas dan volumen. El caso es viable: ventas de {VENTAS_A1}, neto de {NETO_A1}, DSCR mínimo de {DSCR_MIN} y payback de «{PAYBACK}». La holgura de caja es del {HOLGURA_CAJA} en el primer año, de carencia, y baja al {HOLGURA_CAJA_A2} en el segundo y al {HOLGURA_CAJA_A3} en el tercero, con el préstamo ya en devolución: son estrechas, y por eso conviene vigilarlas. Si el volumen se estanca, tienes las palancas: más eventos de empresa, el precio, los invitados por evento y la carencia."
+  },
+  {
+   "i": 112,
+   "seccion": 10,
+   "palabras_objetivo": 149,
+   "molde_ft_es": "Los riesgos principales de este modelo de negocio son tres: la dependencia de factores meteorológicos que pueden afectar directamente a la facturación en días de lluvia o frío intenso, la complejidad administrativa de los permisos municipales que varían significativamente entre localidades y que en ciudades como Madrid o Barcelona implican plazos de entre dos y seis meses, y la dependencia del propietario del vehículo o del local donde se engancha la corriente eléctrica. La experiencia demuestra que un food truck bien gestionado debe generar al menos el 60 por ciento de su facturación en condiciones de clima adverso mediante eventos cubiertos, catering corporativo y alianzas con espacios interiores. Respecto a los permisos, es fundamental iniciar los trámites con un mínimo de tres meses de margen antes de la fecha de lanzamiento prevista, trabajando directamente con el ayuntamiento correspondiente y contando con un asesor legal especializado en licencias de-activity alimentaria.",
+   "gemela_formato_parrillero_es": "Conoce los riesgos antes de firmar nada. Una alerta de incendios puede prohibir la brasa y hasta el gas: cláusula de fuerza mayor, plan B de gas o cambio de fecha. La lluvia y el viento se resuelven con carpa, cortavientos y un plan documentado. La intoxicación, por rotura de frío o por carne poco hecha fuera de las piezas enteras, se previene con APPCC, sondas, registros y el seguro de responsabilidad civil. Las quemaduras y el fuego en carpas, con distancia, extintor y personal formado. El humo en suelo urbano, con la ordenanza revisada antes. La subida del vacuno, con precios revisados cada temporada. La avería de la furgoneta o del remolque, con revisión, seguro y un repuesto previsto. El impago o el retraso de un ayuntamiento, con el contrato menor firmado y el pago a 30 días vigilado. La dependencia de pocos planners, con captación directa. Y la falta de personal en temporada alta, con una bolsa de fijos discontinuos formados y llamamientos anticipados."
+  },
+  {
+   "i": 113,
+   "seccion": 10,
+   "palabras_objetivo": 128,
+   "molde_ft_es": "Las fortalezas competitivas de este modelo son la flexibilidad operativa, que permite estar presente en eventos, mercados y zonas con alta rotación de público sin compromisos de alquiler a largo plazo, y el bajo coste fijo, que en una fase inicial puede limitarse al renting del vehículo si no se dispone de capital para la compra, más el salario del equipo y los costes logísticos. La presencia en redes sociales constituye una ventaja competitiva crítica: un food truck con una estrategia de contenido coherente puede generar una comunidad de seguidores locales que se traduzca en demanda recurrente. La clave está en documentar el proceso de preparación, mostrar los ingredientes y crear una identidad visual reconocible que diferencie el producto de la competencia existente en cada zona de actuación.",
+   "gemela_formato_parrillero_es": "Las fortalezas vienen del fuego y del corte en directo. Vendes pocas cosas y las haces delante del invitado, con un parrillero que explica lo que hace. Una carta de 12 cortes y las 10 experiencias del kit te dejan adaptar el servicio a una boda, una empresa o una fiesta sin reinventar el negocio, desde el asado argentino al cordero a la cruz o el BBQ texano. Los alérgenos están resueltos por escrito. Mantienes bajos los costes fijos gracias a una cocina de apoyo compartida y una sola furgoneta, de modo que un mes flojo duele menos. Y tu mejor argumento comercial no es el precio, sino el recuerdo que deja una brasa cocinada a la vista."
+  },
+  {
+   "i": 114,
+   "seccion": 10,
+   "palabras_objetivo": 159,
+   "molde_ft_es": "La hoja de ruta de implementación se estructura en cinco fases claramente definidas. Durante el primer mes se procederá a la constitución de la sociedad limitada, la inscripción en el registro sanitario y la apertura de las cuentas bancarias necesarias para la gestión empresarial. Los meses segundo y tercero se dedicarán a la adquisición o renting del vehículo, la adaptación del mismo según la normativa vigente en materia de seguridad alimentaria y la tramitación de licencias municipales, que incluyen el permiso de actividad, la autorización de vertidos y el contrato de suministro eléctrico. El cuarto mes se destinará a la formación del equipo en protocolos de servicio, seguridad alimentaria y gestión de redes sociales, junto con una campaña de marketing de lanzamiento que incluya tasting sessions con influencers locales del sector gastronómico. El quinto mes marca el inicio de operaciones con presencia en un máximo de tres ubicaciones distintas para identificar cuál genera mayor rendimiento por hora de operación.",
+   "gemela_formato_parrillero_es": "La hoja de ruta sigue las seis fases del checklist que acompaña al kit, con sus 83 tareas repartidas en 12, 16, 14, 10, 16 y 15. La «Fase 1: Constitución y fiscalidad» cubre la forma jurídica, el alta y la cuenta. La «Fase 2: Cocina de apoyo, sanidad, fuego, brasa y permisos» incluye el contrato de la cocina, la declaración responsable, el APPCC, el gas y los seguros. La «Fase 3: Equipamiento y proveedores» cubre la furgoneta, el remolque y la red de compras. La «Fase 4: Personal» prepara los contratos fijos discontinuos y la formación. La «Fase 5: Marca y captación» monta la web, los directorios y las primeras degustaciones. La «Fase 6: Primer evento y 90 días» ejecuta los primeros servicios y revisa cada uno. No pases a la fase siguiente mientras queden abiertos los permisos de la actual."
+  },
+  {
+   "i": 115,
+   "seccion": 10,
+   "palabras_objetivo": 155,
+   "molde_ft_es": "Los indicadores clave de rendimiento deben medirse semanalmente durante los primeros seis meses de operación. El número de clientes por servicio permite evaluar la capacidad de atracción de cada ubicación y su correspondencia con los costes logísticos de desplazamiento. El ticket medio por transacción indica si el posicionamiento de precio y la oferta de productos son coherentes con el target definido. La rentabilidad por hora de operación mide la eficiencia real del negocio al relacionar ingresos generados con tiempo de exposición en cada punto de venta. La tasa de clientes recurrentes, medida mediante programas de fidelización con tarjeta de cliente o aplicaciones móviles sencillas, determina el grado de vinculación emocional con la marca y el potencial de ingresos predecibles. El objetivo para el primer año es alcanzar un ticket medio de 12 euros con un mínimo de 50 clientes por servicio en jornadas de cuatro horas y una tasa de repetición del 25 por ciento.",
+   "gemela_formato_parrillero_es": "Mide pocas cosas cada semana y no esperes al asesor. Registra los eventos cerrados al mes y la tasa de conversión de presupuestos en contratos firmados. Compara el precio medio por invitado, sin IVA, con los {PRECIO_INVITADO} del plan, que es una media de la mezcla y baja por las fiestas, el food cost con el {FOOD_COST} previsto y las horas de personal con lo programado en el Excel. Anota las cancelaciones, los eventos en que la brasa o el gas no se pudieron usar y cuánto tardan en pagarte los ayuntamientos. Cada mes mira el saldo de caja y compáralo con el saldo mínimo de {SALDO_MINIMO} del Excel. Si tres semanas seguidas no cierras eventos, no esperes a fin de trimestre: revisa precio, captación y calendario."
+  },
+  {
+   "i": 116,
+   "seccion": 10,
+   "palabras_objetivo": 154,
+   "molde_ft_es": "La visión a medio plazo de este proyecto contempla tres horizontes de crecimiento. En el primer año se establece como meta alcanzar el punto de equilibrio financiero y consolidar un mínimo de cinco ubicaciones recurrentes con contratos de ocupación temporal. El segundo año contempla la incorporación de un segundo vehículo adaptado a un concepto complementario que permita diversificar la oferta y aumentar la capacidad de captación de eventos corporativos y celebraciones privadas. El tercer año abre la posibilidad de evaluar la apertura de un local fijo de formato reducido que funcione como flagship store y centro de operaciones, o bien el desarrollo de un modelo de franquicia para terceros que permita replicar el concepto en otras ciudades con inversión moderada. Cada fase requiere una evaluación rigurosa de la capacidad de financiación, la disponibilidad de equipo humano cualificado y la madurez del mercado local para absorber la expansión sin diluir la propuesta de valor original.",
+   "gemela_formato_parrillero_es": "A tres años vista, el plan es hacer crecer la base de clientes que repiten, bodas por recomendación, empresas recurrentes y ayuntamientos fieles, que alisa el calendario y abarata el coste comercial de cada evento, mientras el volumen por evento sube un {CREC_A2} en el segundo año y un {CREC_A3} en el tercero. Con ello las ventas llegan a {VENTAS_A3} y el neto a {NETO_A3}, que son un {NETO_PCT_A3} de las ventas. Un segundo remolque o un segundo equipo solo tienen sentido cuando el calendario de temporada alta esté lleno y ya no puedas atender las peticiones, no antes. Como extras, a su tiempo, podrás ofrecer el show cooking por jornada en un restaurante y quedarte con alguna concesión de barra en fiestas; para crecer con un vehículo propio de venta, consulta la guía «roadmap food truck». Mientras tanto, el crecimiento sale de llenar mejor los eventos que ya tienes."
+  },
+  {
+   "i": 117,
+   "seccion": 10,
+   "palabras_objetivo": 134,
+   "molde_ft_es": "La conclusión final es que el food truck constituye una puerta de entrada sólida al sector de hostelería para empresarios con experiencia en gestión operativa, siempre que se aborde con una planificación rigurosa de la inversión, una estrategia clara de diferenciación y un compromiso firme con la calidad del producto y la experiencia del cliente. La inversión propuesta de entre 45.000 y 85.000 euros es asumible con financiación propia o mediante préstamos específicos para emprendedores del sector que actualmente ofrecen entidades bancarias con condiciones favorables para proyectos de economía real. El mercado español de street food continúa en fase de crecimiento y ofrece espacio para propuestas bien ejecutadas que respondan a la demanda de consumidor urbano de entre 20 y 45 años con poder adquisitivo medio-alto y disposición a pagar por experiencias gastronómicas memorables.",
+   "gemela_formato_parrillero_es": "Los siguientes pasos son sencillos y van en orden. Abre el Excel y sustituye las cifras del ejemplo por las tuyas, en las celdas verdes: eventos al año, precio por invitado e invitados por evento. Recuerda que, si cambias una de ellas, este documento se queda atrás: manda el Excel. Usa la calculadora para convertir tus cifras en presupuestos que puedas enviar, y el checklist para no saltarte ningún permiso. Este plan es una herramienta de planificación, no asesoría legal ni fiscal: confirma con tu asesoría y con la administración de tu comunidad lo que afecte a tu caso. Y recuerda que, con el préstamo en devolución, la caja del segundo y del tercer año (holguras del {HOLGURA_CAJA_A2} y del {HOLGURA_CAJA_A3}) es la que más hay que vigilar."
+  }
+ ]
+}
