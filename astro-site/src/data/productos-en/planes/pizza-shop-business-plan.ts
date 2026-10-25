@@ -62,7 +62,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: `How much do pizza shop owners make?`,
-    a: `Less than the SERP suggests. In the kit's example the owner is on payroll as head pizzaiolo and general manager at $4,500 a month, below the BLS median for food service managers ($33.36 an hour in May 2025), and the shop also leaves a net profit of ${CASO.netoPct1} of sales in year 1 and ${CASO.netoPct3} by year 3. Whether the owner earns more depends on your sales, your oven schedule and what you pay yourself, which is why the plan separates the owner's salary from the net result. Replace the example with your own numbers before you decide.`,
+    a: `Less than the SERP suggests. In the kit's example the owner is on payroll as head pizzaiolo and general manager at $4,500 a month, below the national median wage for food service managers, and the shop also leaves a net profit of ${CASO.netoPct1} of sales in year 1 and ${CASO.netoPct3} by year 3. Whether the owner earns more depends on your sales, your oven schedule and what you pay yourself, which is why the plan separates the owner's salary from the net result. Replace the example with your own numbers before you decide.`,
   },
   {
     q: `Is a pizza shop profitable? What is a realistic profit margin?`,
@@ -331,7 +331,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
-  updateNote: 'New product · Version 1.0 · October 2026',
+  updateNote: 'New product · Version 2.2 · October 2026',
 
   alreadyBought: {
     product: 'pizza-shop-business-plan',

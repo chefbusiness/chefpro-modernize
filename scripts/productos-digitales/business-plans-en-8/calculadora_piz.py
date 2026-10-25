@@ -52,7 +52,7 @@ FICHERO = 'pizza-dough-food-cost-calculator.xlsx'
 TITULO = 'Pizza Dough & Food Cost Calculator (Neapolitan-Style Dough + Food Cost for 8 Pizzas)'
 KEYWORDS = ('pizza shop business plan, pizzeria business plan, how to open a pizza shop, pizza shop startup costs, '
             'wood fired pizza oven cost, AI Chef Pro')
-VERSION, MES = '1.0', 'October 2026'
+VERSION, MES = M.VERSION, M.MES_VERSION                                          # 2.2 · October 2026, como el libro y el Word (D18)
 VERSION_LINEA = 'Version %s · %s · %s · info@aichef.pro' % (VERSION, MES, URL)
 FOOTER = M.FOOTER_EN                                                               # 'AI Chef Pro · aichef.pro · Page &P of &N'
 HM, HE, HI = 'Dough', 'Food Cost', 'Instructions'

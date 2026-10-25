@@ -789,13 +789,13 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
   },
   // Tienda EN (2026-10-25): Pizza Shop Business Plan Kit, edición inglesa del plan-negocio-pizzeria (SPEC business-plans-en-8
   // D133-D153: pizza shop de estilo napolitano con horno de leña, 50 asientos + patio, caso US D137). Textos en inglés: los
-  // pinta <ProductChangelog lang="en"/>. Primera versión del producto: '1.0'.
+  // pinta <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN, como la Paella).
   'pizza-shop-business-plan': {
-    version: '1.0',
+    version: '2.2',
     updated: '2026-10-25',
     entries: [
       {
-        version: '1.0',
+        version: '2.2',
         date: '2026-10-25',
         title: 'First release',
         changes: [

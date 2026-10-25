@@ -165,3 +165,88 @@ $PY bp8.py calculadora --autotest                                     # (la del 
 $PY bp8.py gates_en && $PY bp8.py gates_en --autotest && $PY bp8.py ensamblar_docx --autotest --dir /tmp/piz-docx-at
 $PY bp8.py barrido && $PY resumen_entregables.py && /tmp/regresion-piz.sh
 ```
+
+## 7. Pasos 2-4 de la F2-EN (25-oct, sesión Claude Code): textos aplicados, Word ensamblado, gates
+
+Tandas del paso 2 en `28278ff8` (`check_textos` 0 errores). Implementador único (opus), **sin commits** (los hace el
+orquestador desde el Mac). JSON en el Mac; todo lo que abre xlsx/docx, en el VPS (`/root/wt-pizza-en`, misma rama).
+
+**Arreglos de texto antes de aplicar** (por id; `check_textos --todas` después: las 6 tandas OK, 0 errores; avisos de
+longitud 6 GM · 1 GR · 1 GPIZ-plan · 1 GPIZ-check):
+
+| Id | Celda / párrafo | Antes → después |
+|---|---|---|
+| c0438 | `Instructions!B36` (D19 «Margherita food cost») | «About 20%…» → **«About 16% of its price excl. sales tax»** (la calculadora EN da 16.2 %) |
+| c0022 | `0. Assumptions!C13` | «pizzas… average about 21%… (the Margherita runs lower…» → «are budgeted at about 21%… on the prudent side (the Margherita, about 16% in the calculator; …» |
+| c0008 | `0. Assumptions!C5` | «about $35» → **«about $36»** (B5 = $36 tras la calibración D15 de §3; el texto venía del research) |
+| c0363 | `Staffing!J5` | fuera «($33.36 an hour, May 2025)» → «below the national median wage for food service managers» |
+| docx 85 | §7 Management | fuera «($33.36 an hour)» y el «well below» |
+| docx 107 | §9 Legal | fuera «the US trademark for the Vera Pizza Napoletana figurative mark was cancelled in 2020» (research §6.9: «resumen: verificar en USPTO») |
+| landing | `pizza-shop-business-plan.ts:65` (FAQ «How much do pizza shop owners make?») | fuera «($33.36 an hour in May 2025)» |
+
+La cifra OEWS figuraba como [leída] (API del BLS) en research §5.2, pero se quita igual por instrucción del orquestador: el
+dato no cambia nada del caso. `GR.revision.json` (c0642 «IRS and state tax portal online accounts») aplicado con
+`preparar_tandas` (Mac; las entradas de las tandas salen idénticas).
+
+**Dos arreglos de código fuera de la SPEC** (los dos en ficheros del conjunto `piz`, nada en código común):
+1. **G4 ROJO ×80 → VERDE** (`mapas_piz.instalar`): el checklist ES LIVE (#165) sigue con la DV `"✓,—,N/A"` y las 80 celdas OK
+   en `☐`, y sus Instrucciones dicen «✓ (hecho), ☐ (pendiente) o N/A» (§5.1). En el EN, `CLAVES['—'] = '☐'` y
+   `necesita_clave` acepta `—` solo en este conjunto → DV `"✓,☐,N/A"` (la del Bar EN), coherente con `Instructions!A5`. `—`
+   no es literal de ninguna fórmula ni CF del ES (solo de esas 6 DV): `extraer_textos` re-corrido da `textos_es.json` y
+   `censo_es.json` iguales salvo fecha y commit. **Sigue pendiente el ES** (pizzería, heladería, finca, paellero, parrillero).
+2. **`calculadora_piz.py`**: `VERSION, MES = M.VERSION, M.MES_VERSION` (antes `'1.0'`): el barrido daba 2 fallos
+   («Version 1.0» en `Instructions!A27` y «v1.0» en el `subject`; la EN nace en 2.2 como el libro, el Word y la
+   calculadora de la Paella). Regenerada: mismas cifras (Margherita 16.2 %, $0.40 por bola, 8 pizzas «On target»).
+
+Alta de G9 (D148): `pizza-shop-business-plan` en `PRODUCTOS_LETTER` de `censo-entregables.py` y en `EXCLUIDOS` de
+`postprocess-transversal.py` (cada uno en línea propia, con su comentario).
+
+```bash
+# Mac (JSON)
+B=scripts/productos-digitales/business-plans-en-8
+python3 $B/bp8.py preparar_tandas && python3 $B/bp8.py check_textos --todas
+# → scp al VPS de los JSON, mapas_piz.py, calculadora_piz.py y los 2 .py de G9 (sha256 Mac = VPS)
+# VPS
+cd /root/wt-pizza-en/scripts/productos-digitales/business-plans-en-8 && PY=/root/venv-guias/bin/python
+D=/root/wt-pizza-en/astro-site/public/dl/pizza-shop-business-plan
+$PY bp8.py mapas > /tmp/piz-mapas.txt
+$PY bp8.py aplicar_en --idempotencia --json /tmp/piz-real.json > /tmp/piz-aplicar.txt
+$PY bp8.py calibracion /tmp/piz-real.json && $PY bp8.py ensamblar_docx --plan piz
+$PY bp8.py calculadora --salida $D && $PY bp8.py calculadora --salida $D --autotest    # --salida es obligatorio
+$PY bp8.py gates_en && $PY bp8.py gates_en --autotest && $PY bp8.py ensamblar_docx --autotest --dir /tmp/piz-docx-at
+$PY bp8.py barrido && $PY bp8.py verificar && $PY resumen_entregables.py
+cd /root/wt-pizza-en && $PY scripts/productos-digitales/censo-entregables.py --fail --letter --only pizza-shop-business-plan
+$PY scripts/productos-digitales/gate-no-latinos.py --only pizza-shop-business-plan && /tmp/regresion-piz.sh
+# 2.ª pasada: copia de dl/ + cifras_caso.json en /root/tmp-pizen/pass1, aplicar_en + ensamblar_docx + calculadora otra vez,
+# /tmp/canon_piz.py fichero a fichero; vuelta al Mac por scp (sha256 iguales); VPS limpio (checkout + borrar generados)
+```
+
+**Caso final** (`cifras_caso.json`, 110 tokens): **ninguna cifra distinta del dry-run de §3** (solo cambia `generado`).
+Préstamo **$200,000** en 1 vuelta · ventas **$669,600** / $709,776 / $738,167 (62 covers × $36.00 × 300) · CAPEX $242,550 +
+fondo de maniobra = **$329,274** · neto **$39,275 (5.9 %)** / 7.8 % / **9.0 %** · equilibrio **55** covers/día · holgura
+**18 %** · **DSCR mín 2.62×** · saldo mín $92,610 · cobertura 99.1 % · pesimista: caja **$66,149** (no se agota) · D15 VERDE ·
+los 5 umbrales D142 en verde los 3 años.
+
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp8.py mapas` (+ `verificar`) | 0 errores · 16 pestañas, 9 claves, 94 fijos, 17 fórmulas EN, 110 valores, 110 tokens · 9 sha256 del Bar OK · 7 avisos (6 FIJOS sin uso, 1 pista GM) |
+| `aplicar_en --idempotencia` | préstamo $200,000 en 1 vuelta · textos 546 + 366, **faltan 0** · **0 diferencias** entre dos construcciones · inject_cache 741 + 12 fórmulas, **0 fallos de pycel** |
+| `bp8.py calibracion` | **VERDE** (holgura 18.3 %, DSCR 2.62, saldo $92,610, cobertura 99.1 %, neto año 3 9.0 %) |
+| `ensamblar_docx --plan piz` | G8 VERDE (131 párrafos, 110 con texto, 10 Heading 1, 7,336 palabras, Letter 8.5 × 11 in) |
+| `gates_en` (G1-G9, sin `--parcial`) | **TODO VERDE**: G1 741 fórmulas + 80 tareas [12, 15, 14, 13, 13, 13] · G2 1,304 piezas (incl. `RX_PIZ_NO` y cifras prohibidas) · G3 16 hojas Letter · **G4 235 valores bajo DV** · G5 8 rangos CF · G6 0 diferencias · G7 110 valores, 3 calibraciones · G8 · G9 (censo 0 defectos + no latinos 0) |
+| `gates_en --autotest` · `ensamblar_docx --autotest` · `calculadora --autotest` | **20/20** · **8/8** · VERDE (434 comprobaciones) |
+| `bp8.py barrido` (los 4 entregables) | 1,644 piezas · **0** `RX_PIZ_NO` / cifras ES / Bar / FT / REST · 0 español · 0 no latinos (`entregables_piz.json`) |
+| `resumen_entregables.py` | 3,385 piezas · prohibidas 0 · español 0 · no latinos 0 |
+| `censo-entregables --fail --letter --only pizza-shop-business-plan` · `gate-no-latinos --only` | 4 ficheros (3 xlsx + 1 docx), **900 fórmulas**, **0 defectos** · 0 caracteres |
+| `bp8.py verificar` | OK (0 errores, 7 avisos) |
+| Regresión §2 (`/tmp/regresion-piz.sh`: FT/CAF, REST/PAN, BAR, CAT, MBAR, BBQ, PAEL) | `mapas` 0 errores en los 7 · **27/27 ficheros IGUAL** (sha256 canónico frente a `dl/`) · rc 0 |
+| 2.ª pasada (aplicar + docx + calculadora) | sha256 canónico **IGUAL** en los 4 · `cifras_caso.json` igual salvo `generado` |
+| Nombres D135 = `get-download-urls.ts:878-884` = `productos-digitales-config.ts:1333-1338` | OK (4 + `en-shared/hospitality-equivalents-us-uk-canada-australia.docx`, que existe) |
+
+| Entregable (`astro-site/public/dl/pizza-shop-business-plan/`) | Contenido | sha256 (Mac = VPS) |
+|---|---|---|
+| `pizza-shop-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 7,336 palabras, Letter | `ad47671c222cbad37c7240b1bfc5cbc203358a4dd03023332cf6961f6cac361b` |
+| `pizza-shop-financial-projections.xlsx` | 9 hojas, 741 fórmulas, caso US calibrado (B5 $36) | `decd20dc9b1959395562b6991a63c412cedbd400940178d486536e9535e6411b` |
+| `pizza-shop-startup-checklist.xlsx` | 7 hojas, 80 tareas (12/15/14/13/13/13), 12 fórmulas, DV `✓,☐,N/A` | `59a7aa9d2df6d83bc434838029cd15d39aee2d473d406f6ed88e08edef247179` |
+| `pizza-dough-food-cost-calculator.xlsx` | 3 hojas, 147 fórmulas, Version 2.2 (regenerada) | `435361dcf57a9625625788ec10b236b3b330951b97dd6d4250496412e5ef537f` |
+| `business-plans-en-8/cifras_caso.json` · `entregables_piz.json` | 110 tokens · barrido | `ff31bf7c…` · `e002ba5c…` |

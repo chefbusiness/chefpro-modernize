@@ -376,4 +376,11 @@ def instalar(M):
                         os.path.join(BAR, 'F1-research-us-delta.md'), os.path.join(BAR, 'SPEC-delta.md'),
                         os.path.join(AQUI, 'F1-research-us-delta.md'), os.path.join(AQUI, 'SPEC-delta.md')]
     M.NOTAS_F2 = os.path.join(AQUI, 'F2-NOTAS.md')
+    # D148 · G4 (F2-NOTAS §5.1 y §7): el checklist ES LIVE trae la DV "✓,—,N/A" con las 80 celdas OK en «☐» y sus
+    # Instrucciones dicen «✓ (hecho), ☐ (pendiente) o N/A». En el EN la lista pasa a "✓,☐,N/A" (la del Bar EN). «—» no
+    # tiene letras y `necesita_clave` lo dejaba fuera de CLAVES: solo en este conjunto se le da clave. «—» no es literal de
+    # ninguna fórmula ni CF del ES (solo de esas 6 DV); si el ES se arregla, esto no cambia nada.
+    M.CLAVES['—'] = '☐'
+    _nc = M.necesita_clave
+    M.necesita_clave = lambda lit, _nc=_nc: lit == '—' or _nc(lit)
     completar(M)
