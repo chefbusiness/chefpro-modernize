@@ -38,8 +38,8 @@ SECCIONES = {
 }
 
 #: Orden del proceso (SPEC D11, seguridad, no negociable): igual en el Word, el checklist y este brief.
-ORDEN_PROCESO = ('secos con el azúcar; después los líquidos; las grasas (nata, mantequilla), las yemas y los '
-                 'emulsionantes entran al subir la temperatura, a 40-50 °C, ANTES de pasteurizar; pasteurización a '
+ORDEN_PROCESO = ('primero los líquidos; después los secos, premezclados con el azúcar, con el agitador en marcha; '
+                 'las grasas (nata, mantequilla), las yemas y los emulsionantes entran al subir la temperatura, a 40-50 °C, ANTES de pasteurizar; pasteurización a '
                  '85 °C; enfriado rápido a 4 °C o menos; maduración a 2-4 °C (de 4 a 12 horas; con huevo, se manteca '
                  'dentro de las 24 horas); mantecación; abatimiento a −18 °C en el corazón; conservación a −18 °C o '
                  'menos. DESPUÉS de pasteurizar sólo entra lo que no necesita tratamiento térmico (pastas puras, '
@@ -160,10 +160,11 @@ PISTAS = {
        '{ESC_PES_TICKET} y {ESC_PES_DIAS} días: ventas {ESC_PES_VENTAS}, neto {ESC_PES_NETO}) y optimista '
        '({ESC_OPT_CLIENTES} clientes a {ESC_OPT_TICKET} y {ESC_OPT_DIAS} días: neto {ESC_OPT_NETO}). Dos alternativas '
        'SIN Excel, razonadas: la variante de ahorro (pasteurizadora-mantecadora combinada o maquinaria de ocasión '
-       'revisada, que según las guías publicadas cuesta un 40-60 % menos: la inversión bajaría a unos 90.000 €) y el '
-       'cierre de noviembre a febrero (se ahorran meses de personal de mostrador y suministros con el llamamiento de '
-       'los fijos discontinuos, pero se pierden la Navidad, los encargos y la clientela de invierno, y se sigue '
-       'pagando el alquiler y la cuota del préstamo). El Excel manda: si cambias una celda verde, el documento se '
+       'revisada, que según las guías publicadas cuesta un 40-60 % menos: las partidas '
+       'bajarían de {INVERSION_PARTIDAS} a unos 92.000 € y la inversión total a unos 133.000 €; revisión final M4) y '
+       'el cierre de noviembre a febrero (los fijos discontinuos ya no trabajan entonces: sólo se ahorra el invierno '
+       'del dependiente si pasa a fijo discontinuo, unos 8.000 €, y parte de la luz; se pierden unos 23.000 € de '
+       'margen, la Navidad, los encargos y la clientela de invierno, y se sigue pagando el alquiler y la cuota del préstamo). El Excel manda: si cambias una celda verde, el documento se '
        'queda atrás.',
     9: 'Marco legal con su cita (sólo esto, dicho así): SL unipersonal (capital desde 1 €) o autónomo; IAE (RDLeg '
        '1175/1990): epígrafe 644.4 «comercio al por menor de helados», que te permite fabricar helado y tartas '
@@ -174,7 +175,8 @@ PISTAS = {
        'responsable según la ordenanza); la terraza es ocupación de la vía pública y nunca entra en la Ley 12/2012 '
        '(art. 2.2): autorización municipal aparte. Sanidad: declaración responsable al registro sanitario de tu '
        'comunidad autónoma (RD 1021/2022); el RGSEAA sólo aplica si sirves a otros negocios fuera del art. 3 del RD '
-       '1021/2022, que permite el suministro marginal (el 25 % del volumen anual o 500 kg a la semana como máximo), '
+       '1021/2022, que permite el suministro marginal (lo servido a otros negocios, hasta el 25 % del volumen anual, o la venta '
+       'TOTAL, público incluido, hasta 500 kg a la semana: revisión final M2), '
        'localizado y restringido, con declaración responsable y registro de destinatarios, cantidades y fechas; APPCC '
        '(Reglamento (CE) 852/2004 y la flexibilidad del art. 20 del RD 1021/2022); huevo: la mezcla a 70 °C durante 2 '
        'segundos o más (85 °C en la práctica) u ovoproducto (art. 9), y la mezcla con huevo, mantecada en las 24 '

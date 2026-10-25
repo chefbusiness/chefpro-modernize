@@ -65,8 +65,9 @@ INVERSION = [
      'Pasteurizador de 15/30 l por ciclo, 4 kW: 14.601,75 € sin IVA en la tarifa de un distribuidor (Diamond '
      'SPS/30A, octubre de 2026). Pasteuriza la mezcla a 85 °C y la enfría a 4 °C', 'Sí'),
     ('Mantecadora horizontal de 6-12 litros por ciclo', 14000,
-     'Las marcas profesionales no publican tarifa: estimación del kit. Una vertical de entrada de 26-30 l/h cuesta '
-     'unos 4.200 € sin IVA, si empiezas con poco', 'Sí'),
+     'Estimación del kit en la parte baja de lo publicado (12.000-35.000 €), porque las marcas profesionales no '
+     'publican tarifa: pide al menos dos presupuestos antes de cerrar el préstamo. Una vertical de entrada de 26-30 '
+     'l/h cuesta unos 4.200 € sin IVA, si empiezas con poco', 'Sí'),
     ('Abatidor de temperatura para cubetas', 5500,
      'Lleva el helado recién mantecado a −18 °C en el corazón antes de pasarlo a la vitrina o al armario', 'Sí'),
     ('Armarios de conservación y de maduración', 5800,
@@ -76,8 +77,9 @@ INVERSION = [
      'Mesas y estanterías inox, fregadero, lavamanos, turbo, básculas, refractómetro, sondas de temperatura, 60 '
      'cubetas de 5 l (44 € cada una) y 10 carapinas', 'Sí'),
     ('Vitrina ventilada de 18 cubetas', 10500,
-     'Dos módulos ventilados de −20/−9 °C con gas R290 (unos 5.090 € cada uno en la tarifa del fabricante). Con 18 '
-     'cubetas en verano y 10-12 en invierno basta en una ciudad media', 'Sí'),
+     'Dos módulos ventilados de 10 cubetas, de −20/−9 °C y con gas R290 (unos 5.090 € cada uno en la tarifa del '
+     'fabricante): 18 sabores y dos huecos para el sabor del día o la reserva. Con 18 sabores en verano y 10-12 en '
+     'invierno basta en una ciudad media', 'Sí'),
     ('Mostrador, lavaporcionador, cafetera, crepera, gofrera y chocolatera', 6000,
      'Mostrador de venta, lavaporcionador con agua corriente, cafetera y molino, y el equipo del invierno. La '
      'crepera y la gofrera dependen de la salida de humos que permita tu ordenanza', 'Sí'),

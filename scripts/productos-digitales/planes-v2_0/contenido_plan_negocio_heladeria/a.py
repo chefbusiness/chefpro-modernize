@@ -52,10 +52,19 @@ VOCABULARIO = {
     'Perfil de tu zona: agosto flojo en ciudad y fuerte en costa':
         'Mes 1 = MARZO: el plan abre en temporada para llegar al primer invierno con la caja del verano. El pico es '
         'julio (Mes 5) y el valle, enero (Mes 11), con tres semanas de cierre. Si abres en otro mes, gira la fila',
+    # m4 (revisión final): no es sólo «prudente»: el verano sale más barato y la caja de junio a enero, inflada
     'La suma del año es la misma que la del P&L':
         'La suma del año es la misma que la del P&L. El personal se reparte en doce meses, pero los fijos '
-        'discontinuos de temporada sólo cobran de abril a septiembre: el invierno sale aquí más caro que en la '
-        'realidad, que es el lado prudente',
+        'discontinuos de temporada sólo cobran de abril a septiembre: aquí el invierno sale más caro y el verano más '
+        'barato que en la realidad. El saldo de marzo y el de febrero apenas cambian, pero de junio a enero tu caja '
+        'real será menor que la de esta hoja (en el caso, hasta unos 10.000 € menos en septiembre)',
+    # M7 (revisión final): nota de Tesorería!A34, resto del molde con el Mes 1 en enero
+    'El IVA del cuarto trimestre se liquida en enero del año siguiente, así que no aparece en este cuadro':
+        'Los trimestres de esta hoja son de tres meses del plan (marzo-mayo, junio-agosto y septiembre-noviembre), '
+        'no los naturales: con el Mes 1 en marzo, el modelo 303 se presenta en abril (por marzo), julio, octubre y '
+        'enero (por octubre-diciembre, ya en el Mes 11). En el caso todos los trimestres salen a compensar y no '
+        'mueven la caja; a 31 de diciembre quedan unos 17.750 € por compensar, que puedes pedir como devolución en '
+        'el 303 de enero',
 }
 
 #: clave → (fila, rótulo, valor, formato, nota, fuente). Fila, rótulo y formato a None: los pone el motor. La semilla
@@ -81,8 +90,9 @@ SUPUESTOS = {
         'research §3 [estimado]'),
     'crec_a2': (
         None, None, 0.08, None,
-        'Más clientela el segundo verano, las tartas heladas por encargo y el canal de restaurantes ya rodados. El '
-        'libro lo aplica a los clientes y también al coste de personal',
+        'Más clientela el segundo verano, las tartas heladas por encargo y el canal de restaurantes ya rodados. Se '
+        'aplica a los clientes; el personal NO sube con este porcentaje: crece con las incorporaciones que declares '
+        'en la hoja Personal (6.000 € el año 2 y otros 6.000 € el año 3)',
         'research §3 [estimado]'),
     'crec_a3': (
         None, None, 0.05, None,
@@ -215,8 +225,10 @@ SUPUESTOS = {
     'meses_renta_previa': (
         None, None, 2, None,
         'Dos meses de renta antes de abrir: la obra del obrador, el aumento de potencia a trifásica y la '
-        'declaración responsable',
-        'research §3 [estimado]'),
+        'declaración responsable. Si el banco te da el préstamo al empezar la obra, súmale los intereses de esos '
+        'meses (en el caso, unos 1.290 €), que este libro no cuenta, y ten en cuenta que la carencia corre desde la '
+        'firma',
+        'research §3 [estimado] · revisión final m17 (2 × 645 € de intereses al mes)'),
     'pct_imprevistos': (
         None, None, 0.10, None,
         'Colchón sobre la obra y las instalaciones del local, que es donde aparecen las sorpresas (acometida '
@@ -267,7 +279,9 @@ LINEAS_INGRESO = (
 PLANTILLA = (
     ('Titular — maestro heladero, compras y gestión', 1, 1750,
      'Balancea las mezclas, pasteuriza, manteca y abate, compra y lleva la gestión. Como administrador de la SL '
-     'cotiza en el régimen de autónomos: confirma con tu gestoría la cuota y si te aplica la reducida de inicio',
+     'cotiza en el régimen de autónomos: el libro le imputa el 33 % de Seguridad Social sobre 14 pagas como si '
+     'fuera nómina (con este bruto, unos 8.085 € al año), que es el lado prudente. Confirma con tu gestoría la '
+     'cuota real y si te aplica la reducida de inicio',
      'research §3 [estimado]', 1.0),
     ('Dependiente/a y encargado/a de turno (todo el año)', 1, 1300,
      'Mostrador, caja, vitrina y cierre; abre y cierra cuando el titular está en el obrador',

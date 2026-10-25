@@ -29,10 +29,11 @@ FASES = [
          'compara las dos opciones con tu gestoría con las cifras del plan'),
         ('Constituir la SL o darte de alta como autónomo', 'Notaría / Gestoría', 'Semanas 1-2',
          'La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)'),
-        ('Alta censal (modelo 036/037) en los epígrafes 644.4 y 676 del IAE', 'Gestoría', 'Semana 2',
+        ('Alta censal (modelo 036) en los epígrafes 644.4 y 676 del IAE', 'Gestoría', 'Semana 2',
          'El 644.4 («comercio al por menor de helados») te permite fabricar helado y tartas heladas en el propio '
          'local para venderlos allí; el 676 cubre el consumo en mesas y terraza (RDLeg 1175/1990). Exento de cuota '
-         'con una cifra de negocio inferior a 1 millón de euros'),
+         'con una cifra de negocio inferior a 1 millón de euros (art. 82.1.c de la Ley de Haciendas Locales; '
+         'confírmalo con tu gestoría)'),
         ('Valorar el epígrafe 414.4 sólo si vas a fabricar para otros a escala', 'Gestoría', 'Semana 2',
          'El 414.4 es la elaboración industrial de helados. Vender algo a restaurantes de tu zona cabe en el 644.4 '
          'si es marginal (fase 3), pero confírmalo con tu gestoría si el canal crece'),
@@ -71,10 +72,14 @@ FASES = [
          'Que el contrato diga «heladería con obrador y consumo en el local» y quién paga la acometida eléctrica'),
         ('Encargar el proyecto técnico y la memoria de la actividad', 'Arquitecto/a o ingeniero/a', 'Semanas 6-8',
          'Distribución del obrador con circuito de sucio a limpio, potencia, ventilación y la terraza'),
+        ('Licencia, declaración o comunicación previa de la obra', 'Técnico / Ayuntamiento',
+         'Semanas 6-8, antes de empezar la obra',
+         'Pregunta en la consulta urbanística qué título pide tu obra. Sin proyecto, el art. 3.3 de la Ley 12/2012 la '
+         'libera de licencia, pero no de la declaración responsable o la comunicación previa al ayuntamiento (art. 4)'),
         ('Declaración responsable de la actividad comercial (644.4)', 'Técnico / Ayuntamiento', 'Antes de la obra',
          'La venta y fabricación de helado en el propio local, hasta 750 m², va por declaración responsable, sin '
-         'licencia previa (Ley 12/2012, arts. 2-4 y anexo). Si la obra no necesita proyecto, tampoco necesita '
-         'licencia (art. 3.3)'),
+         'licencia previa (Ley 12/2012, arts. 2-4 y anexo). La obra va por su propio trámite, en la tarea '
+         'anterior'),
         ('Licencia o declaración municipal de la parte de hostelería (676)', 'Técnico / Ayuntamiento',
          'Antes de la obra',
          'Las mesas y el consumo en el local no están en el anexo de la Ley 12/2012: van por el régimen de tu '
@@ -82,8 +87,6 @@ FASES = [
         ('Solicitar la autorización de la terraza', 'Titular / Ayuntamiento', 'Con la declaración responsable',
          'Es ocupación de la vía pública y siempre se pide aparte (Ley 12/2012, art. 2.2). Pregunta la tasa de tu '
          'ayuntamiento: la del plan es una cifra de ejemplo'),
-        ('Aumento de potencia a trifásica y boletín eléctrico', 'Instalador autorizado', 'Durante la obra',
-         'Certificado de la instalación (boletín) para el nuevo contrato de luz'),
         ('Obra del obrador: superficies lavables y suelo antideslizante', 'Constructor', 'Semanas 8-12',
          'Paredes alicatadas, suelo antideslizante, falsos techos lavables, lavamanos de accionamiento no manual y '
          'aseo con vestuario'),
@@ -93,8 +96,10 @@ FASES = [
          'Prueba en marcha con el técnico: temperaturas de la vitrina, del abatidor y de los armarios'),
         ('Rótulo, escaparate y cartel de horario', 'Rotulista', 'Semanas 10-12',
          'El rótulo puede necesitar su propia autorización municipal. «Artesano» sólo con la calificación (fase 5)'),
-        ('Licencia o comunicación de la obra y certificado final', 'Técnico', 'Fin de la obra',
-         'Guarda el certificado final y el boletín: te los pedirá la declaración responsable de inicio'),
+        ('Aumento de potencia, boletín eléctrico y certificado final de obra', 'Instalador autorizado / Técnico',
+         'Durante la obra y al acabarla',
+         'El boletín (certificado de la instalación) para el nuevo contrato de luz en trifásica y el certificado final '
+         'del técnico. Guárdalos: te los pedirá la declaración responsable de inicio'),
     ]),
     ('F3 - Obrador y sanidad', 'FASE 3: OBRADOR, EQUIPO Y REGISTRO SANITARIO (semanas 8-14)', [
         ('Comprar el pasteurizador, la mantecadora y el abatidor', 'Titular', 'Semanas 8-10',
@@ -106,17 +111,19 @@ FASES = [
         ('Contrato de mantenimiento con un frigorista certificado', 'Titular', 'Antes de abrir',
          'Revisión antes del verano y en el cierre de enero. La carga de gases refrigerantes la hace sólo un técnico '
          'certificado: el personal no la toca'),
-        ('Declaración responsable de inicio de la actividad alimentaria', 'Titular / Gestoría', 'Antes de abrir',
+        ('Declaración responsable de inicio de la actividad alimentaria', 'Titular / Gestoría',
+         'Antes de la primera tanda (también las de prueba)',
          'Va al registro sanitario de tu comunidad autónoma (RD 1021/2022). El RGSEAA sólo aplica si sirves a otros '
          'negocios por encima de lo que permite el art. 3 (tarea siguiente)'),
         ('Declaración del art. 3 del RD 1021/2022 antes del primer pedido a un restaurante', 'Titular',
          'Antes de vender a otro negocio',
-         'Vender helado a restaurantes o cafeterías de otra titularidad exige que sea marginal (el 25 % del volumen '
-         'del año o 500 kg a la semana como máximo), de tu zona y a nadie inscrito en el RGSEAA, con una declaración '
+         'Vender helado a restaurantes o cafeterías de otra titularidad exige que sea marginal (lo que sirves a otros '
+         'negocios, hasta el 25 % del volumen del año, o tu venta total, público incluido, hasta 500 kg a la semana), '
+         'de tu zona y a nadie inscrito en el RGSEAA, con una declaración '
          'responsable y el registro de destinatarios, cantidades y fechas'),
         ('Plan APPCC con el punto crítico de la pasteurización', 'Consultor / Titular', 'Antes de abrir',
-         'Orden de la mezcla: secos con el azúcar, líquidos, y grasas (nata, mantequilla), yemas y emulsionantes al '
-         'subir, a 40-50 °C, ANTES de pasteurizar; después 85 °C, enfriado rápido a 4 °C o menos y maduración a 2-4 '
+         'Orden de la mezcla: líquidos; secos premezclados con el azúcar, con el agitador en marcha; grasas (nata, '
+         'mantequilla), yemas y emulsionantes al subir, a 40-50 °C, ANTES de pasteurizar; después 85 °C, enfriado rápido a 4 °C o menos y maduración a 2-4 '
          '°C. Tras pasteurizar sólo entra lo que no necesita tratamiento (pastas puras, variegatos, fruta lavada '
          'de los sorbetes): nunca yema ni nata cruda'),
         ('APPCC: maduración, mantecación, abatimiento y conservación', 'Titular', 'Antes de abrir',
@@ -186,7 +193,9 @@ FASES = [
          'La condición de empresa artesana se acredita con el documento de calificación artesanal (RD 618/1998, art. '
          '2.9), que da cada comunidad. Si no lo tienes, «ELABORACIÓN PROPIA» (RD 1021/2022, art. 11)'),
         ('Carta de 18 sabores en verano y 10-12 en invierno', 'Maestro heladero', 'Semanas 10-14',
-         'Clásicos, de temporada y uno o dos de autor; sorbetes sin lácteos para alérgicos y veganos'),
+         'Clásicos, de temporada y uno o dos de autor; sorbetes sin lácteos en la receta para veganos y para quien '
+         'no toma leche. A un cliente con alergia a la leche sírveselos sólo si los mantecas antes que los de leche, '
+         'con la máquina recién limpia, y lo anotas en la ficha de alérgenos del sabor'),
         ('Escandallo de cada sabor y precio de carta', 'Titular', 'Semanas 12-14',
          'Calcula el coste de la bola, de la tarrina de medio litro y de la tarta helada; revísalo cada temporada '
          '(el pistacho, el cacao y la vainilla se mueven)'),
@@ -236,8 +245,9 @@ FASES = [
          'Mira cuánta caja del verano llega a noviembre: es la que paga el invierno'),
         ('Plan de invierno: carta reducida y horario', 'Titular', 'Septiembre',
          'Menos sabores, horario de invierno y la carta de crepes, chocolate y tartas por encargo'),
-        ('Fin de los llamamientos y vacaciones de enero', 'Gestoría', 'Octubre y enero',
-         'Fin de la temporada de cada fijo discontinuo por escrito y tres semanas de cierre en enero'),
+        ('Fin de los llamamientos y vacaciones de enero', 'Gestoría', 'Septiembre y enero',
+         'Fin de la temporada de cada fijo discontinuo por escrito al acabar septiembre, y tres semanas de cierre en '
+         'enero'),
         ('Mantenimiento del frío en las semanas de cierre', 'Frigorista', 'Enero',
          'Revisión de vitrinas, armarios y mantecadora con el local cerrado, antes de la siguiente temporada'),
     ]),

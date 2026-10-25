@@ -67,7 +67,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: '¿Puedo vender helado a restaurantes?',
-    a: 'Sí, con límites. El art. 3 del RD 1021/2022 permite suministrar a otros negocios si el suministro es marginal (hasta el 25 % del volumen anual o 500 kg a la semana), localizado (tu zona de salud o hasta 50 km entre comunidades) y restringido, con una declaración responsable y un registro de destinatarios, cantidades y fechas. El plan lo incluye como línea de venta y el checklist recoge el trámite. Si tu volumen se acerca a esos umbrales, habla antes con tu autoridad sanitaria.',
+    a: 'Sí, con límites. El art. 3 del RD 1021/2022 permite suministrar a otros negocios si el suministro es marginal (lo que sirves a otros negocios no pasa del 25 % de lo que vendes en el año, o todo lo que vendes, al público incluido, no pasa de 500 kg a la semana), localizado (tu zona de salud o hasta 50 km entre comunidades) y restringido, con una declaración responsable y un registro de destinatarios, cantidades y fechas. El plan lo incluye como línea de venta y el checklist recoge el trámite. Si tu volumen se acerca a esos umbrales, habla antes con tu autoridad sanitaria.',
   },
   {
     q: '¿Qué IVA lleva el helado y qué convenio aplica?',

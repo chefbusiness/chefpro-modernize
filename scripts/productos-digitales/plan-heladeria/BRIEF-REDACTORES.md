@@ -27,10 +27,10 @@ profesional, **tuteo**, español de España, frases claras, sin relleno ni super
    carta del caso con IVA de la pista §2 y la mezcla de ventas (58/17/10/5 y 10 de bebidas); los precios de equipo con
    fuente de la pista §6; las temperaturas y tiempos del proceso (40-50 °C, 85 °C, 4 °C, 2-4 °C, 4-12 horas, 24 horas,
    −18 °C, −11/−14 °C) y del huevo (70 °C durante 2 segundos); las denominaciones del RD 618/1998 (4 % de yema, 15 % de
-   fruta, 430 g por litro); los límites del art. 3 del RD 1021/2022 (25 % o 500 kg a la semana); los 750 m² de la Ley
+   fruta, 430 g por litro); los límites del art. 3 del RD 1021/2022 (lo servido a otros negocios ≤ 25 % del volumen anual, o la venta total, público incluido, ≤ 500 kg a la semana); los 750 m² de la Ley
    12/2012; la estructura del local (85 m², 20-25 m², 18 cubetas, 10-12 en invierno, 20 plazas, 5 mesas, 30 kW,
    23 kWh); la capacidad de la pista §6 (7.150 kg, 10.500 litros, 38 kg, 11 cubetas); el horario de la pista §6; la
-   merma del 5-8 %; las 80 tareas del checklist (12/15/15/12/13/13); la variante de ahorro (40-60 %, unos 90.000 €).
+   merma del 5-8 %; las 80 tareas del checklist (12/15/15/12/13/13); la variante de ahorro (40-60 %; partidas a unos 92.000 €, inversión total a unos 133.000 €).
    Cualquier otra cifra, o es token o no va. El check avisa de cada cifra escrita que no está en su lista: revísalas.
 4. **Prohibido** (el check lo caza): «freelance», «validado/a», «España 2026», «solopreneur», «tarifa plana», «CNAE»,
    «licencia de apertura», «carné de manipulador» (salvo para decir que ya no existe), RGSEAA salvo para decir que

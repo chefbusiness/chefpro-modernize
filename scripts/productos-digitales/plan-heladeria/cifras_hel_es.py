@@ -55,6 +55,8 @@ MAPA = {
     'AFORO': (SUP, r'^aforo del local', 2, 'int'),
     'RAMPA_MES1': (SUP, r'^actividad del mes 1', 2, 'pct0'),
     'MESES_RAMPA': (SUP, r'^meses hasta alcanzar', 2, 'int'),
+    'IS_GENERAL': (SUP, r'^impuesto de sociedades, tipo general', 2, 'pct0'),         # revisión final m3
+    'HOLGURA_MINIMA': (SUP, r'^holgura m[ií]nima sobre el punto de equilibrio', 2, 'pct0'),  # revisión final M1
     'VENTAS_A1': (PYG, r'^ingresos totales', 2, 'eur'),
     'VENTAS_A2': (PYG, r'^ingresos totales', 3, 'eur'),
     'VENTAS_A3': (PYG, r'^ingresos totales', 4, 'eur'),
@@ -132,6 +134,7 @@ MAPA = {
     'HOLGURA_CAJA_A3': (PE, r'^holgura sobre el equilibrio de caja', 4, 'pct'),
     'COBERTURA_HORAS': (PER, r'^cobertura \(contratadas', 2, 'pct0'),
     'PLANTILLA_PERSONAS': (PER, r'^total plantilla', 2, 'int'),
+    'SUELDO_TITULAR': (PER, r'^titular', 4, 'eur'),                                    # revisión final m2 (bruto mes)
     'JORNADAS': (PER, r'^total plantilla', 3, 'dec2'),
     'HORAS_DIA': (PER, r'^horas de servicio al d[ií]a', 2, 'dec1'),
     'HORAS_PRODUCCION': (PER, r'^horas de producci[oó]n', 2, 'dec2'),
@@ -151,6 +154,10 @@ MAPA = {
 
 
 def fmt(v, f):
+    return _fmt(v, f).replace('-', '\u2212', 1) if v < 0 else _fmt(v, f)   # revisión final m12: signo menos tipográfico
+
+
+def _fmt(v, f):
     if f in ('int', 'int_up'):
         n = math.ceil(v - 1e-9) if f == 'int_up' else round(v)
         return '{:,}'.format(int(n)).replace(',', '.')
