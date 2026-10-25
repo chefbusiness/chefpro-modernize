@@ -2,9 +2,13 @@
 
 > Sesión Claude Code (Mac). **No hay ninguno pendiente.**
 
-## ⏳ PENDIENTES (25-oct-2026, noche): los DOS de la pizzería, ES y EN — John: «dejar la versión en los dos idiomas en producción»
+## ✅ HECHOS (25-oct-2026, noche): los DOS de la pizzería, ES y EN — John: «dejar la versión en los dos idiomas en producción»
 
-### 1. Plan de Negocio: Pizzería Napolitana (ES) — PR #165
+### 1. ✅ Plan de Negocio: Pizzería Napolitana (ES) — PR #165, link creado el 25-oct-2026
+
+Link de John: https://buy.stripe.com/3cI6oA6Wo1NYezBejH6oo23 (`plink_1UUXG84CcdRGidmEsDF3iCG4`). Comprobado con la CLI de
+Stripe: 3500 EUR, pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-negocio-pizzeria-access`.
+Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
 
 Mismo patrón que la heladería (`plink_1UUSdP4CcdRGidmEm3lXcQyH`, 35 EUR):
 
@@ -18,7 +22,11 @@ Mismo patrón que la heladería (`plink_1UUSdP4CcdRGidmEm3lXcQyH`, 35 EUR):
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_PIZZERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg` |
 
-### 2. Pizza Shop Business Plan Kit (EN) — rama `feat/pizza-shop-business-plan-en` (PR apilado, se fusiona después del ES)
+### 2. ✅ Pizza Shop Business Plan Kit (EN) — PR #166, link creado el 25-oct-2026
+
+Link de John: https://buy.stripe.com/3cI28k4Og9gq0IL4J76oo24 (`plink_1UUXZ54CcdRGidmEovs56WB3`; nombre en Stripe «Neapolitan-style
+Pizza Shop Business Plan Kit - AI Chef Pro»). Comprobado con la CLI: 3900 USD, pago único, *exclusive*, impuesto automático, factura y
+redirección a `/en/digital-products/pizza-shop-business-plan/access`. Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
