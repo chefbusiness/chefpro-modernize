@@ -248,9 +248,11 @@ TEMPERATURAS = [
      'Reg. (CE) 853/2004; la tolerancia breve de -15 °C en transporte es la '
      'que se aplica AL RECIBIR. Mantener a -18 °C una vez almacenado.'),
     ('Comidas preparadas refrigeradas (más de 24 h)', '0 a 4 °C', 0, 4,
-     'RD 3484/2000, art. 6'),
+     'Criterio habitual del plan APPCC (el RD 3484/2000, que lo fijaba, '
+     'fue derogado por el RD 1021/2022)'),
     ('Comidas preparadas refrigeradas (menos de 24 h)', '0 a 8 °C', 0, 8,
-     'RD 3484/2000, art. 6'),
+     'Criterio habitual del plan APPCC (el RD 3484/2000, que lo fijaba, '
+     'fue derogado por el RD 1021/2022)'),
     ('Lácteos y otros refrigerados', '0 a 8 °C o lo que diga la etiqueta',
      0, 8, 'Reg. (CE) 853/2004 y etiquetado del fabricante'),
     ('Frutas y verduras', '4 a 12 °C', 0, 12,
@@ -1375,9 +1377,11 @@ def _instrucciones_04(wb, informe):
         'autoridad sanitaria te indica otra cosa; está protegida sin '
         'contraseña para que no se borre de un clic, porque de ella depende '
         'el veredicto de todas las líneas.',
-        'Umbrales tomados del Reglamento (CE) 853/2004 (Anexo III), el RD '
-        '3484/2000 y el Reglamento (CE) 589/2008. Documentan tus registros; '
-        'no sustituyen a tu plan APPCC ni a un asesor.',
+        'Umbrales tomados del Reglamento (CE) 853/2004 (Anexo III), del '
+        'Reglamento (CE) 589/2008 y del criterio habitual de los planes APPCC '
+        'para comidas preparadas (el RD 3484/2000, que los fijaba, fue '
+        'derogado por el RD 1021/2022). Documentan tus registros; no '
+        'sustituyen a tu plan APPCC ni a un asesor.',
     ])
     informe.append('04:Instrucciones: la línea del rojo automático pasa a ser '
                    'CIERTA (COM-04); ancla de versión en A{}'.format(ancla))
