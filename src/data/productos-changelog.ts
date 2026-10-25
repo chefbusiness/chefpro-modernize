@@ -1981,6 +1981,8 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Primera edición del Plan de Negocio: Heladería Artesanal, con sus cuatro ficheros: plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 80 tareas en 6 fases y la Guía de Equivalencias para Latinoamérica.',
         ],
       },
+    ],
+  },
   'plan-negocio-finca-eventos-bodas': {
     version: '1.0',
     updated: '2026-10-25',
@@ -1993,8 +1995,6 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Primera edición del Plan de Negocio: Finca de Eventos y Bodas, con sus seis ficheros: plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 84 tareas en 6 fases, calculadora de presupuesto del espacio, modelos de contrato y la Guía de Equivalencias para Latinoamérica.',
         ],
       },
-    ],
-  },
     ],
   },
   'plan-negocio-parrillero-asador-eventos': {
