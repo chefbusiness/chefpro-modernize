@@ -1,0 +1,2553 @@
+{
+ "tanda": "GPIZ-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-8/textos_en/GPIZ-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 139,
+ "n_palabras": 3581,
+ "pistas": {
+  "P01": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P02": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P03": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P04": "D55/§0: el libro dice «covers» y «seat turns»; nunca «customers» para el volumen diario",
+  "P05": "D146: patio (permiso de patio/sidewalk café de la ciudad)",
+  "P06": "D137: caso US = 62 covers/día (≈ 47 en sala, 50 plazas + patio de 24 abr-oct, + ≈ 15 equivalentes de take-out y delivery) × $35 (sin sales tax ni propina) × 300 días; beer & wine; sin cifras del ES ni historia de versiones; take-out/delivery ≈ 10 pedidos/día de ≈ $52 (2 pizzas + starter + bebida) ÷ el check; un sábado ≈ 110, un martes ≈ 45 (Kit estimate); compáralo con el paso de gente de tu calle",
+  "P07": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P08": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P09": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P10": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P11": "D137: caso US = 62 covers/día (≈ 47 en sala, 50 plazas + patio de 24 abr-oct, + ≈ 15 equivalentes de take-out y delivery) × $35 (sin sales tax ni propina) × 300 días; beer & wine; sin cifras del ES ni historia de versiones; check de $35 = ½ starter ($5) + pizza (~$20: Margherita $18, especialidades $20-24) + 1.2 bebidas ($6.60) + postre/café (~$3); Margherita $18 = mediana de Bufalina (Austin), Antico (Atlanta) y via Marina (Des Moines), research §5.1; el precio con impuesto lo calcula la fila \"Menu price incl. sales tax\"",
+  "P12": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P13": "D137: caso US = 62 covers/día (≈ 47 en sala, 50 plazas + patio de 24 abr-oct, + ≈ 15 equivalentes de take-out y delivery) × $35 (sin sales tax ni propina) × 300 días; beer & wine; sin cifras del ES ni historia de versiones; 300 días = cierra los lunes (52) + Thanksgiving, Christmas, New Year, July 4 + una semana de enero (mantenimiento del horno y vacaciones)",
+  "P14": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P15": "Glosario research §9: pizzaiolo · dough ball(s) · peel · cornicione · leopard spotting",
+  "P16": "D137: food cost 26 % (pizza ≈ 21 % de su precio, starters 28 %, postres 25 %, merma 1.5 puntos); la calculadora del kit da el coste de cada pizza",
+  "P17": "D146: «beer & wine license» (state ABC + local; a menudo 3-12 meses: contingencia en el lease) · liquor liability",
+  "P18": "D137: beverage cost 26 % (beer & wine, refrescos y café)",
+  "P19": "D146: sin equivalente US: TPHC written procedure (Food Code 3-501.19) y cold holding ≤ 41 °F",
+  "P20": "D146: pizza boxes; local packaging ordinances",
+  "P21": "D137: disposables 3.5 % (pizza boxes, papel, envases de take-out)",
+  "P22": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P23": "D146: own drivers = W-2 + hired & non-owned auto insurance (check your state)",
+  "P24": "D146: DoorDash / Uber Eats / Grubhub con sus tiers (research §5.3)",
+  "P25": "D137: 12 % de las ventas por marketplaces (DoorDash, Uber Eats, Grubhub; research §5.3); el pickup directo por teléfono o web no paga comisión",
+  "P26": "D146: offer letters, I-9, W-4, state minimum wage (sin convenio)",
+  "P27": "D137: 25 % = plan Plus de DoorDash / Uber Eats (Basic 15 % con poca visibilidad, Premier 30 %; + 6-10 % en pickup por la app); compruébalo en tu contrato",
+  "P28": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P29": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P30": "D146/research §6.2: NFPA 96 ch. 14 (dedicated exhaust, spark arrestor, UL 2162-listed oven, ash out daily, fuel away from the oven) + «ask the fire marshal in writing: hood? suppression? UL 2162 file number?»",
+  "P31": "D137: $4,000/mes = 1,500 sq ft × ~$32/sq ft/año (Kit estimate); un local con salida de humos a cubierta cuesta más encontrarlo",
+  "P32": "D146: licensed gas contractor",
+  "P33": "D137: $1,800/mes (≈ 25 kW, agua y el gas de la línea de apoyo); con horno de gas o eléctrico, la leña pasa aquí",
+  "P34": "D137: $7,500/año = general liability + liquor liability (beer & wine) + property con llama abierta + workers' comp (research §6.8)",
+  "P35": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P36": "D137: SBA 7(a) al 10 % a 10 años, sin interest-only; el préstamo lo calcula \"Financing\"",
+  "P37": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P38": "D146: «POS that reports sales tax» (sin Veri*factu)",
+  "P39": "Glosario: barra → «bar (beer & wine)»",
+  "P40": "D136: 50 plazas en sala; el patio de 24 (abril-octubre) no cuenta en el aforo",
+  "P41": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P42": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P43": "D146: grease interceptor",
+  "P44": "D139: incluye la beer & wine license de un estado sin cupo (≈ $3,000; con cupo, mucho más: pregunta a tu ABC) y el plan review",
+  "P45": "D139: nota de la partida del ejemplo US (rótulo fijado de la col. A en \"fijos_en\"); sin marcas ni normas españolas: solo rangos con fuente de research §4 o ninguno",
+  "P46": "D139: NFPA 96 cap. 14 (escape dedicado, arrestachispas, solera aislada); pide el presupuesto al instalador del horno",
+  "P47": "D149/research §6.9: «Neapolitan-style» se puede escribir; «VPN-certified» solo con certificado AVPN; el pliego/ETG es derecho UE (no aplica en EE. UU.)",
+  "P48": "D139: horno de cúpula de leña listado UL 2162 (Forno Bravo Modena120 $12,950; Marra Forni, Acunto, Ferrara: sin precio publicado; rango $12,950-$25,000+); gas/eléctrico = variante",
+  "P49": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P50": "D139: el Type I hood es para la línea de apoyo (freidora, fogón); el horno listado con su chimenea puede no necesitarlo si lo acepta tu AHJ: pregunta al fire marshal por escrito",
+  "P51": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P52": "D146: required public notices (health permit, beer & wine license, labor law posters)",
+  "P53": "D146: 9 major allergens incl. sesame (UK 14)",
+  "P54": "D146: «LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P55": "D146: plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan",
+  "P56": "D139: harina 00, tomate, quesos, bebida, leña y pizza boxes",
+  "P57": "D140: pizza, starters y postres: ≈ 76 % en mesa, ≈ 12 % pickup propio y 12 % por marketplaces (research §8); un solo sales tax en el ejemplo",
+  "P58": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P59": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P60": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P61": "D140: «Music licensing (ASCAP/BMI/SESAC)»",
+  "P62": "SPEC §4.1 línea 4 (Bar): sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; un solo tipo en el ejemplo (B39 = B40 = 8 %)",
+  "P63": "D144: Mes 1 = SEPTIEMBRE (abre tras el verano, llega a las fiestas con clientela y a enero-febrero con el fondo intacto)",
+  "P64": "El Word cita las cifras de este Excel (si cambias el libro, manda el Excel); la calculadora de masa y food cost del kit va aparte y su coste por pizza es el que llevas al food cost de \"0. Assumptions\"",
+  "P65": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P66": "D142 fila → «Month 1 of the plan» · «September» · «Plan decision» · nota: abre tras el verano; llega a las fiestas con clientela y a enero-febrero con el fondo intacto",
+  "P67": "D142 fila → «Margherita food cost» · el % que da la calculadora del kit para la Margherita (si no, «about 20% of its price excl. sales tax») · «Kit estimate (Pizza Dough & Food Cost Calculator)» · nota: 00 flour, fior di latte, San Marzano y aceite con merma; sustituye por el precio de tu distribuidor",
+  "P68": "D142 fila → «Margherita on the menu» · «$18 (median)» · «Bufalina (Austin), Antico Pizza Napoletana (Atlanta), via Marina (Des Moines): menus read Oct 2026» · nota: rango $15-24; especialidades $20-24",
+  "P69": "D142 fila → «Traditional Neapolitan dough ratios» · los gramajes del pliego en unidades US con la métrica entre paréntesis (1 quart (1 liter) of water per ~4 lb (1.8 kg) of flour, 50-55 g of salt, 3 g of fresh yeast; ≈ 56 % hydration; dough balls 6.3-8.8 oz (180-250 g)) · «EU TSG \"Pizza Napoletana\" spec (Reg. (EU) 97/2010), also used by the AVPN» · nota: «a reference, not a US rule»",
+  "P70": "D142 fila → «Bake» · «60-90 seconds at about 900 °F (480 °C)» · «Kit estimate (EU TSG spec and AVPN)» · nota: wood-fired dome oven; gas or electric is a variant and does not qualify for VPN",
+  "P71": "D142 fila → «\"Neapolitan-style\" vs \"VPN-certified\"» · «\"Neapolitan-style\": no US rule; \"VPN-certified\": only after AVPN certification» · «AVPN Americas (americas.pizzanapoletana.org)» · nota: $2,500 certification + $300 inspection + $400 a year (USA/Canada); needs an open location and a wood-fired dome oven",
+  "P72": "D142 fila → «Delivery marketplace commission» · «DoorDash 15 / 25 / 30% + 6% pickup; Uber Eats 15-30%» · «merchants.ubereats.com; DoorDash tiers via duck-hub.com (Oct 2026)» · nota: este plan, 25 % sobre el 12 % de las ventas; el pickup directo no paga comisión",
+  "P73": "D142 fila (sustituye «IVA de la pizza») → «Sales tax» · «8% (example: state + local)» · «Kit example: look up your state and city rate» · nota: un solo tipo en el libro; algunos estados gravan distinto la comida para llevar",
+  "P74": "D142 fila (sustituye «SMI») → «Minimum wage» · «federal $7.25/h + your state» · «U.S. Department of Labor (dol.gov)» · nota: este plan presupuesta ≥ $15/h; teclea el suelo de tu estado en \"0. Assumptions\"",
+  "P75": "D142 fila → «Labor cost / sales» · «25-35%» · «UpMenu (upmenu.com)» · nota: el dueño en nómina y el servicio en mesa lo llevan a la parte alta",
+  "P76": "D142 fila → «Rent / sales» · «≤ 10%» · «Kit estimate» · nota: el umbral del semáforo del P&L; un local con salida de humos a cubierta cuesta más encontrarlo",
+  "P77": "D142 fila → «Firewood» · «about $5,500 a year» · «Kit estimate» · nota: ~18 US tons (16.5 t) a year; pide el precio entregado a tu proveedor; con gas o eléctrico, va a utilities",
+  "P78": "D142 fila (sustituye «convenio») → «Prime cost (food + labor)» · «≤ 60% of sales» · «Restaurant365 (restaurant365.com)» · nota: los buenos operadores rondan el 55 %",
+  "P79": "D13: DSCR límite 1.15× y objetivo 1.25×; NUNCA «SBA minimum»"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state/local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "pizzaiolo": "pizzaiolo (head pizzaiolo; «pizza chef» en menús)",
+  "bola de masa": "dough ball / dough balls",
+  "cornicione": "cornicione (crust rim, edge)",
+  "manchas de leopardo": "leopard spotting (char blistering)",
+  "harina «00» · tipo 1": "00 flour (Caputo-type) · \"1\" flour",
+  "fior di latte · búfala": "fior di latte (fresh cow's milk mozzarella) · mozzarella di bufala (DOP)",
+  "tomate San Marzano DOP": "San Marzano tomatoes (DOP)",
+  "prefermento": "biga · poolish · preferment",
+  "pala": "peel (wood/aluminum; turning peel)",
+  "horno de cúpula · solera": "dome oven · deck («deck» ≠ «dome»)",
+  "pizza napolitana vs americana": "Neapolitan-style · New York-style · Detroit-style",
+  "pizzería": "pizza shop (nombre, H1, ficheros) · pizzeria (prosa)",
+  "cocina / sala": "BOH / FOH",
+  "agotado": "86'd",
+  "cubierto / comensal": "covers",
+  "para llevar": "take-out · to-go · pickup · delivery",
+  "plataforma": "third-party delivery marketplace (DoorDash, Uber Eats, Grubhub)",
+  "escandallo": "plate costing / recipe costing / food cost per pizza",
+  "manipulador de alimentos": "food handler card · Certified Food Protection Manager (CFPM)",
+  "nombre protegido": "«Neapolitan-style» (libre) vs «VPN-certified» (solo con certificado)",
+  "campana / chimenea": "Type I hood · flue / chimney · spark arrestor · UL 2162-listed",
+  "control por tiempo": "time as a public health control (TPHC)",
+  "hidratación · reposo": "hydration · cold ferment / proof",
+  "fianza · IVA": "deposit · sales tax",
+  "napolitana (carta)": "Neapolitan-style",
+  "ETG / pliego": "no aplica en EE. UU. (solo nota)",
+  "ordenanza de humos": "NFPA 96 + local fire/mechanical code",
+  "licencia de apertura": "business license + certificate of occupancy",
+  "autónomo / SL": "LLC"
+ },
+ "pestanas_es_en": {
+  "PIZP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "PIZC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local, humos y licencia": "Phase 2 - Site, Hood & Permits",
+   "F3 - Cocina, horno y sanidad": "Phase 3 - Kitchen, Oven, Health",
+   "F4 - Personal y prevención": "Phase 4 - Staff & Safety",
+   "F5 - Carta, marca y delivery": "Phase 5 - Menu, Brand, Delivery",
+   "F6 - Apertura y 90 días": "Phase 6 - Opening & 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US PIZZA SHOP BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-pizzeria» de AI Chef Pro.": "This file is part of the Pizza Shop Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — PIZZERÍA NAPOLITANA": "PIZZA SHOP STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Pizzería Napolitana": "HOW TO USE THIS WORKBOOK — Pizza Shop Financial Projections",
+  "PLAN DE NEGOCIO: PIZZERÍA NAPOLITANA": "PIZZA SHOP BUSINESS PLAN: NEAPOLITAN-STYLE PIZZERIA",
+  "Inversión inicial estimada — pizzería con horno de leña, 50 plazas y terraza": "Estimated Startup Costs — Neapolitan-style pizza shop, wood-fired oven, 50 seats + patio",
+  "Ajusta las cifras a tu proyecto: son las de un caso tipo en una ciudad media, sin traspaso. Pon tus presupuestos reales en las celdas de importe.": "US kit example (2026) — replace with your own quotes.",
+  "FASE 2: LOCAL, SALIDA DE HUMOS, LICENCIA Y TERRAZA (semanas 3-14)": "PHASE 2: SITE, HOOD, FLUE, PERMITS & PATIO (weeks 3-14)",
+  "Proyecto técnico de actividad y de salida de humos, y dirección de obra": "Architect, MEP, hood & flue drawings, plan review & permit fees (incl. beer & wine license, non-quota state)",
+  "Obra y acondicionamiento del local, rótulo y fachada": "Build-out (second-generation space), signage & facade",
+  "Chimenea de doble pared hasta cubierta, filtro de partículas y bancada del horno": "Flue/chimney, spark arrestor & insulated hearth pad",
+  "Instalación eléctrica trifásica, cuadro y boletín": "Electrical service & panel",
+  "Fontanería, separador de grasas, climatización y extracción": "Plumbing, grease interceptor, HVAC & makeup air",
+  "Horno de leña de cúpula baja de 120-130 cm de diámetro": "Neapolitan wood-fired dome oven (47-51 in, UL 2162-listed)",
+  "Amasadora de espiral profesional": "Spiral mixer (60 qt)",
+  "Mesa fría de pizza con encimera de granito y vitrina": "Pizza prep table (67-71 in)",
+  "Armarios refrigerados para las cajas de bolas y arcón congelador": "Walk-in (6×8), reach-ins, dough-ball cabinets & freezer",
+  "Campana extractora con motor, freidora y fogón de apoyo": "Type I hood & support line (fryer, range)",
+  "Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías": "3-comp sink, dish machine, hand sinks & stainless",
+  "Utillaje y menaje: palas, cajas de bolas, básculas, vajilla y uniformes": "Peels, dough boxes, scales & smallwares",
+  "Barra: cafetera y molino, botellero frío y equipo de cerveza": "Beer & wine bar (taps, back bar, espresso)",
+  "Mobiliario de sala y terraza": "Furniture (50 seats) & patio",
+  "TPV con Veri*factu, datáfonos, impresora de comandas y tablet": "POS, online ordering & delivery tablets",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal & food safety plan",
+  "Marca, web, fotos, formación de pizzaiolo y lanzamiento": "Branding, website, training & launch",
+  "Stock inicial de harina, tomate, quesos, bebida, leña y cajas": "Opening inventory",
+  "Escenario realista — pizzería con horno de leña, 50 plazas y terraza": "Base case — Neapolitan-style pizza shop, 50 seats + patio",
+  "Ventas de pizzería y cocina (sala, para llevar y a domicilio)": "Food sales (pizza, starters & desserts: dine-in, take-out & delivery)",
+  "Ventas de bebida (cerveza, vino, refrescos, agua y café)": "Beverage sales (beer, wine, soft drinks & coffee)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento del horno, la campana extractora y el frío": "Maintenance (oven, hood & flue cleaning, refrigeration)",
+  "Software, TPV, teléfono e internet": "Software, POS & online ordering",
+  "Limpieza, lavandería, EPI, DDD y análisis de autocontrol": "Cleaning, linens, uniforms & pest control",
+  "Leña para el horno": "Firewood",
+  "Tasa de terraza y gestión de residuos (pon las de tu ayuntamiento)": "Waste, grease & ash hauling",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Food safety & staff training (CFPM, allergens, OSHA)",
+  "Titular — pizzaiolo jefe, masa, compras y gestión": "Owner / head pizzaiolo & GM",
+  "Pizzaiolo/a de horno y estirado": "Pizzaiolo (stretching & oven)",
+  "Ayudante de cocina y masa": "Prep & dough cook",
+  "Camarero/a encargado/a de sala y barra": "FOH lead / bar",
+  "Camarero/a de cenas y fines de semana": "Servers (dinner & weekends, part-time W-2)",
+  "Refuerzo de viernes a domingo: sala, terraza y recogida": "Weekend runner / counter & pickup",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations + days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Comensales equivalentes al día, media del año: unos 51 en sala (la terraza incluida de abril a octubre) y unos 15 de para llevar y domicilio, que son los pedidos (unos 13 al día de unos 23 € sin IVA) divididos por el ticket. Un sábado, unos 110; un martes, unos 45. Contrástalo con el paso de gente de tu calle un viernes por la noche y un martes a mediodía",
+   "donde": [
+    "PIZP · 0. Supuestos!C4"
+   ],
+   "fila": "Comensales/día (media del año 1)",
+   "valor_us": 62,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA, por comensal: medio entrante, una pizza, 1,3 bebidas y algún postre o café, unos 22 € con IVA en sala. La Margherita de la carta del caso cuesta 10 € con IVA, algo por debajo de la mediana de 10,90 € de 14 pizzerías de Madrid, Barcelona, Valencia, Marbella y Tenerife (octubre de 2026). El precio con IVA está en la fila «PVP equivalente con IVA» de abajo",
+   "donde": [
+    "PIZP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 35,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P04",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "365 días menos los 52 lunes de cierre, dos semanas de cierre en enero (mantenimiento del horno y vacaciones) y el 25 de diciembre. Es el MISMO dato para la cuenta de resultados, el punto de equilibrio, los escenarios y las horas de personal",
+   "donde": [
+    "PIZP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 300,
+   "pistas": [
+    "P12",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "Clientela de barrio que repite y más recogida en el local el segundo año. Se aplica a los comensales con el mismo ticket; el personal NO sube con este porcentaje: sale de la hoja Personal",
+   "donde": [
+    "PIZP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.06,
+   "pistas": [
+    "P07",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "Sobre el año 2. Conservador: es un mercado maduro y el techo lo ponen el horno y las 50 plazas los viernes y los sábados por la noche",
+   "donde": [
+    "PIZP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "valor_us": 0.04
+  },
+  {
+   "id": "c0022",
+   "es": "Materia prima de la comida sobre sus ventas: las pizzas (el 70 % de la comida) salen a un 20 % de media (la Margherita, a un 15 %; con búfala, burrata o embutido italiano, al 22-28 %), los entrantes al 28 % y los postres al 25 %, y el plan suma 1,5 puntos de merma (bolas pasadas, masa sobrante y pruebas). Escandalla cada pizza con la calculadora del pack",
+   "donde": [
+    "PIZP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.26,
+   "pistas": [
+    "P14",
+    "P10",
+    "P15",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "Cerveza al 30 %, vino al 35 %, refrescos al 35 % y agua y café al 20 % de su precio de venta. Si la cervecera te cede el equipo de tiraje, pide el precio del barril por escrito",
+   "donde": [
+    "PIZP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.26,
+   "pistas": [
+    "P17",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Cajas de cartón para las pizzas que salen del local (unas 8.000 al año a 1 € cada una, el 2,1 % de las ventas), papel, servilletas y los envases para que el cliente se lleve lo que no consuma (Ley 1/2025, art. 8). El envase de plástico de un solo uso se cobra aparte en el tique (Ley 7/2022, art. 55)",
+   "donde": [
+    "PIZP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.035,
+   "pistas": [
+    "P01",
+    "P02",
+    "P07",
+    "P10",
+    "P19",
+    "P20",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "Ventas por PLATAFORMA con su reparto (Glovo, Just Eat, Uber Eats) sobre el total. La recogida en el local y el reparto propio NO pagan comisión y no van aquí. La pizza de masa blanda llega peor que otros platos: no subas de aquí sin probarlo",
+   "donde": [
+    "PIZP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0.12,
+   "pistas": [
+    "P22",
+    "P23",
+    "P24",
+    "P15",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0030",
+   "es": "Comisión de la plataforma con su reparto sobre lo que vende ese canal: el plan básico de Uber Eats ronda el 30 % más IVA y Glovo y Just Eat, del 25 al 35 % según la zona. Compruébala en tu contrato. Si repartes tú, pon 0 y suma el repartidor, con contrato laboral, a la hoja Personal",
+   "donde": [
+    "PIZP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25,
+   "pistas": [
+    "P01",
+    "P22",
+    "P26",
+    "P23",
+    "P24",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0032",
+   "es": "Tarjeta y bizum sobre el total facturado",
+   "donde": [
+    "PIZP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.03,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "Local de 130 m² con salida de humos a cubierta posible (es el filtro del local): sala de 70 m² con 50 plazas, obrador de 30 m² con el horno a la vista, almacén de leña, aseos y vestuario, en una calle de barrio con paso de una ciudad media, sin traspaso: unos 16 € el m². El peso sobre las ventas lo calcula el propio libro en la fila «Alquiler / Ventas» del P&L",
+   "donde": [
+    "PIZP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 4000,
+   "pistas": [
+    "P02",
+    "P29",
+    "P09",
+    "P30",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0044",
+   "es": "Tres meses de renta, lo habitual en un contrato de local de negocio: compruébalo con tu abogado",
+   "donde": [
+    "PIZP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del alquiler (meses)",
+   "valor_us": 2,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Luz de unos 25 kW en trifásica (frío, amasadora, lavavajillas, extracción, climatización y cafetera), agua y el gas de la cocina de apoyo. La leña del horno NO va aquí: es un coste fijo del P&L. Pide el histórico del local",
+   "donde": [
+    "PIZP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 1800,
+   "pistas": [
+    "P30",
+    "P32",
+    "P15",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil de al menos 300.000 € y multirriesgo con incendio y avería del frío. Dile a la aseguradora que el horno es de leña: cambia la prima y las condiciones",
+   "donde": [
+    "PIZP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 7500,
+   "pistas": [
+    "P02",
+    "P30",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Colchón de gasto corriente no presupuestado (pequeñas reparaciones, utillaje que se rompe, pruebas de carta)",
+   "donde": [
+    "PIZP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "valor_us": 0.01
+  },
+  {
+   "id": "c0053",
+   "es": "Aportación de los socios. Un banco pide entre el 25 y el 30 % de la necesidad de caja con dinero propio",
+   "donde": [
+    "PIZP · 0. Supuestos!C30"
+   ],
+   "fila": "Recursos propios aportados (€)",
+   "valor_us": 130000,
+   "pistas": [
+    "P35",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0055",
+   "es": "Principal solicitado. La hoja de Financiación compara lo que aportas con la necesidad de caja de la hoja de inversión y te dice si sobra o falta: ajústalo con ese dato",
+   "donde": [
+    "PIZP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR",
+   "pistas": [
+    "P20",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual. Pide oferta a dos entidades y a una línea ICO antes de fijarlo; el horno, el frío y la cafetera se pueden pagar con leasing o renting: compáralo",
+   "donde": [
+    "PIZP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P01",
+    "P35",
+    "P14",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0061",
+   "es": "El primer año sólo intereses: obra, chimenea y horno antes de facturar. Desde el segundo año se devuelve el principal: mira la holgura de caja de ese año en el Punto de Equilibrio",
+   "donde": [
+    "PIZP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0,
+   "pistas": [
+    "P14",
+    "P30",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0063",
+   "es": "Tres meses de costes fijos: el colchón para la rampa del arranque y para enero y febrero, los meses más flojos (los Meses 5 y 6 del plan)",
+   "donde": [
+    "PIZP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)",
+   "valor_us": 3
+  },
+  {
+   "id": "c0072",
+   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por la bebida que sale para llevar o a domicilio (es una entrega de bienes). El alcohol servido en sala va al reducido, como fija la línea de bebida del P&L. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. En las compras, el libro manda al general la parte de la bebida que declara la celda «Bebida que compras al 21 %» de esta hoja: la cerveza, el vino y los refrescos con azúcares o edulcorantes añadidos, cuya factura va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
+   "donde": [
+    "PIZP · 0. Supuestos!C40"
+   ],
+   "fila": "IVA repercutido/soportado general",
+   "valor_us": 0.08,
+   "pistas": [
+    "P01",
+    "P14",
+    "P09",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Obra, chimenea hasta cubierta, instalación eléctrica trifásica, fontanería, climatización y rótulo. Coeficientes de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades: confírmalo con tu asesor",
+   "donde": [
+    "PIZP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P01",
+    "P37",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Horno, amasadora, mesa fría, armarios, campana extractora, lavavajillas, barra, mobiliario y TPV: un 10 % anual, dentro del coeficiente máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades para la maquinaria (12 %) y para el mobiliario (10 %). Confírmalo con tu asesor",
+   "donde": [
+    "PIZP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P01",
+    "P37",
+    "P28",
+    "P38",
+    "P30",
+    "P39",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "Aforo del local (plazas sentadas, sin la terraza)",
+   "donde": [
+    "PIZP · 0. Supuestos!A51"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0088",
+   "es": "Plazas de la sala. La terraza suma 24 plazas de abril a octubre, con su autorización municipal aparte, y quien se lleva la pizza o la recibe en casa no ocupa mesa: por eso la rotación de la fila de arriba es más alta que la real de tu sala",
+   "donde": [
+    "PIZP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas, sin la terraza)",
+   "valor_us": 50,
+   "pistas": [
+    "P01",
+    "P04",
+    "P05",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0090",
+   "es": "Una pizzería que abre trae curiosos el primer mes, pero la clientela fija tarda un trimestre: el Mes 1 (septiembre) factura un 75 % de lo que facturará a los cuatro meses. Con 100 % se elimina la rampa",
+   "donde": [
+    "PIZP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "valor_us": 0.75,
+   "pistas": [
+    "P41",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0092",
+   "es": "Cuatro meses hasta el ritmo de crucero: de septiembre a diciembre, para llegar a la Navidad con clientela",
+   "donde": [
+    "PIZP · 0. Supuestos!C53"
+   ],
+   "fila": "Meses hasta alcanzar el régimen de crucero",
+   "valor_us": 4,
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0094",
+   "es": "Tres meses de renta antes de abrir: la obra, la chimenea hasta cubierta y la licencia tardan más que en un local sin humos. Si el banco te da el préstamo al empezar la obra, súmale los intereses de esos meses, que este libro no cuenta, y ten en cuenta que la carencia corre desde la firma",
+   "donde": [
+    "PIZP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler ANTES de abrir (obra y licencias)",
+   "valor_us": 2,
+   "pistas": [
+    "P01",
+    "P35",
+    "P42",
+    "P14",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0096",
+   "es": "Colchón sobre la obra y las instalaciones del local, que es donde aparecen las sorpresas (la chimenea hasta cubierta, la acometida trifásica, el separador de grasas). Un banco no financia una reforma sin él",
+   "donde": [
+    "PIZP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "valor_us": 0.1,
+   "pistas": [
+    "P35",
+    "P30",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0099",
+   "es": "Media ponderada: la sala y la recogida cobran al momento y la plataforma liquida cada 7-15 días lo que vende por ella (un 10 % de las ventas)",
+   "donde": [
+    "PIZP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 2,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0101",
+   "es": "Plazo de pago a los proveedores de harina, tomate, quesos y bebida: lo que te financian. Es lo primero que se pierde si te retrasas en un pago",
+   "donde": [
+    "PIZP · 0. Supuestos!C59"
+   ],
+   "fila": "Días medios de pago a proveedor",
+   "valor_us": 14
+  },
+  {
+   "id": "c0103",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de verano: julio es el Mes 11, porque el Mes 1 del plan es septiembre",
+   "donde": [
+    "PIZP · 0. Supuestos!C60"
+   ],
+   "fila": "Mes de la paga extra de verano",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0105",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de Navidad: diciembre es el Mes 4, porque el Mes 1 del plan es septiembre",
+   "donde": [
+    "PIZP · 0. Supuestos!C61"
+   ],
+   "fila": "Mes de la paga extra de Navidad",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0118",
+   "es": "Las pizzerías están en el convenio PROVINCIAL de hostelería (el art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería las nombra, y también el reparto propio): copia aquí el salario base del grupo más bajo de la tabla de TU provincia. Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "PIZP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P01",
+    "P12",
+    "P26",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0145",
+   "es": "Proyecto de la actividad y de la chimenea, memoria para la licencia o la declaración responsable y certificado final de obra",
+   "donde": [
+    "PIZP · Inversión Inicial!D7"
+   ],
+   "fila": "Proyecto técnico de actividad y de salida de humos, y dirección de obra",
+   "valor_us": 14000,
+   "pistas": [
+    "P30",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0148",
+   "es": "Obrador alicatado, suelo antideslizante, aseos (uno adaptado), falsos techos y aislamiento acústico, más el rótulo y la fachada (unos 2.500 €). Estimación del kit: pide dos presupuestos",
+   "donde": [
+    "PIZP · Inversión Inicial!D8"
+   ],
+   "fila": "Obra y acondicionamiento del local, rótulo y fachada",
+   "valor_us": 46500,
+   "pistas": [
+    "P02",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0150",
+   "es": "Conducto exclusivo hasta la cubierta y, con leña, filtro de partículas: Madrid pide superar en 1 m lo que haya en 15 m (Ordenanza 4/2021). Ningún fabricante da precio por metro: pide oferta con tu proyecto",
+   "donde": [
+    "PIZP · Inversión Inicial!D9"
+   ],
+   "fila": "Chimenea de doble pared hasta cubierta, filtro de partículas y bancada del horno",
+   "valor_us": 12000,
+   "pistas": [
+    "P08",
+    "P30",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0152",
+   "es": "Unos 25 kW en trifásica para el frío, la amasadora, el lavavajillas, la extracción y la climatización. Pregunta la potencia disponible ANTES de firmar: una acometida nueva tarda",
+   "donde": [
+    "PIZP · Inversión Inicial!D10"
+   ],
+   "fila": "Instalación eléctrica trifásica, cuadro y boletín",
+   "valor_us": 8000,
+   "pistas": [
+    "P30",
+    "P15",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0154",
+   "es": "Agua fría y caliente en el obrador, desagües con separador de grasas, climatización de la sala y extracción de la cocina de apoyo",
+   "donde": [
+    "PIZP · Inversión Inicial!D11",
+    "PIZC · F2 - Local, humos y licencia!E17"
+   ],
+   "fila": "Fontanería, separador de grasas, climatización y extracción",
+   "valor_us": 12000,
+   "pistas": [
+    "P30",
+    "P43",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0156",
+   "es": "Para unas seis pizzas a la vez. Los prefabricados profesionales con precio publicado van de 2.750 a 5.505 € (octubre de 2026); los artesanos napolitanos no publican tarifa: pide oferta con el montaje",
+   "donde": [
+    "PIZP · Inversión Inicial!D12"
+   ],
+   "fila": "Horno de leña de cúpula baja de 120-130 cm de diámetro",
+   "valor_us": 22000,
+   "pistas": [
+    "P02",
+    "P47",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0158",
+   "es": "Para 30-40 kg de masa: el sábado se cubre en dos amasadas. Las de entrada empiezan en unos 860 € sin IVA; una de gama profesional cuesta bastante más",
+   "donde": [
+    "PIZP · Inversión Inicial!D13"
+   ],
+   "fila": "Amasadora de espiral profesional",
+   "valor_us": 8000,
+   "pistas": [
+    "P01",
+    "P02",
+    "P49",
+    "P03",
+    "P15",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0160",
+   "es": "Mesa refrigerada de dos o tres puertas con vitrina de ingredientes: unos 1.950 € sin IVA en la tarifa de un distribuidor (octubre de 2026)",
+   "donde": [
+    "PIZP · Inversión Inicial!D14"
+   ],
+   "fila": "Mesa fría de pizza con encimera de granito y vitrina",
+   "valor_us": 6500,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0162",
+   "es": "Armarios ventilados para las cajas de bolas y los ingredientes (unos 900 € sin IVA el de 400 l) y un arcón",
+   "donde": [
+    "PIZP · Inversión Inicial!D15"
+   ],
+   "fila": "Armarios refrigerados para las cajas de bolas y arcón congelador",
+   "valor_us": 19800,
+   "pistas": [
+    "P01",
+    "P02",
+    "P49",
+    "P03",
+    "P20",
+    "P15",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0164",
+   "es": "Campana extractora de 1,5-2 m con motor (unos 815 € sin IVA) para la cocina de entrantes, frituras y salsas",
+   "donde": [
+    "PIZP · Inversión Inicial!D16"
+   ],
+   "fila": "Campana extractora con motor, freidora y fogón de apoyo",
+   "valor_us": 9000,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P14",
+    "P10",
+    "P30",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0166",
+   "es": "Lavavajillas, fregaderos, lavamanos de accionamiento no manual, mesas de acero inoxidable y estanterías",
+   "donde": [
+    "PIZP · Inversión Inicial!D17"
+   ],
+   "fila": "Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías",
+   "valor_us": 12000,
+   "pistas": [
+    "P45"
+   ]
+  },
+  {
+   "id": "c0168",
+   "es": "Palas de entrada y de giro (unos 70-80 € cada una), cajas de bolas con cierre, básculas, termómetro de infrarrojos, vajilla, uniformes y la cartelería de alérgenos",
+   "donde": [
+    "PIZP · Inversión Inicial!D18"
+   ],
+   "fila": "Utillaje y menaje: palas, cajas de bolas, básculas, vajilla y uniformes",
+   "valor_us": 5500,
+   "pistas": [
+    "P02",
+    "P51",
+    "P52",
+    "P53",
+    "P20",
+    "P15",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0170",
+   "es": "Si la cervecera cede el equipo de tiraje, esta partida baja",
+   "donde": [
+    "PIZP · Inversión Inicial!D19"
+   ],
+   "fila": "Barra: cafetera y molino, botellero frío y equipo de cerveza",
+   "valor_us": 7000,
+   "pistas": [
+    "P45"
+   ]
+  },
+  {
+   "id": "c0172",
+   "es": "Mesas y sillas para 50 plazas en sala y 24 en la terraza de temporada",
+   "donde": [
+    "PIZP · Inversión Inicial!D20"
+   ],
+   "fila": "Mobiliario de sala y terraza",
+   "valor_us": 16000,
+   "pistas": [
+    "P05",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0174",
+   "es": "Software de facturación conforme a Veri*factu, datáfonos, impresora de cocina y la tablet de las plataformas",
+   "donde": [
+    "PIZP · Inversión Inicial!D21"
+   ],
+   "fila": "TPV con Veri*factu, datáfonos, impresora de comandas y tablet",
+   "valor_us": 4500,
+   "pistas": [
+    "P01",
+    "P28",
+    "P38",
+    "P24",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0176",
+   "es": "SL unipersonal, licencia o declaración responsable, tasas municipales, registro sanitario autonómico y redacción del plan APPCC. Las tasas no llevan IVA; los honorarios sí: cambia la columna de al lado si tu presupuesto es sobre todo de honorarios",
+   "donde": [
+    "PIZP · Inversión Inicial!D22"
+   ],
+   "fila": "Constitución de la SL, licencia, tasas, registro sanitario y APPCC",
+   "valor_us": 2500,
+   "pistas": [
+    "P01",
+    "P54",
+    "P55",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0179",
+   "es": "Identidad, web con la carta, sesión de fotos, curso de pizzaiolo para el segundo pizzaiolo y campaña de apertura",
+   "donde": [
+    "PIZP · Inversión Inicial!D23"
+   ],
+   "fila": "Marca, web, fotos, formación de pizzaiolo y lanzamiento",
+   "valor_us": 6500,
+   "pistas": [
+    "P35",
+    "P15",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0181",
+   "es": "Harina, tomate, quesos y embutidos, la bodega y la cerveza, la primera leña seca y las cajas de cartón",
+   "donde": [
+    "PIZP · Inversión Inicial!D24"
+   ],
+   "fila": "Stock inicial de harina, tomate, quesos, bebida, leña y cajas",
+   "valor_us": 5500,
+   "pistas": [
+    "P17",
+    "P30",
+    "P20",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0215",
+   "es": "Pizzas, entrantes y postres: en sala unos 77 % de las ventas, para llevar unos 13 % y por plataforma un 10 %. Todo al 10 % de IVA, se coma en la mesa o salga del local (art. 91.Uno.1.1.º y 2.2.º de la Ley 37/1992)",
+   "donde": [
+    "PIZP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de pizzería y cocina (sala, para llevar y a domicilio)",
+   "pistas": [
+    "P01",
+    "P14",
+    "P24",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0231",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Los tres meses de renta previos a la apertura están en la hoja de Inversión y NO se cuentan dos veces",
+   "donde": [
+    "PIZP · PyG 3 Años!F22"
+   ],
+   "fila": "Alquiler del local"
+  },
+  {
+   "id": "c0239",
+   "es": "Contabilidad, impuestos de la SL, nóminas y contratos de la plantilla",
+   "donde": [
+    "PIZP · PyG 3 Años!F26"
+   ],
+   "fila": "Gestoría laboral, fiscal y contable",
+   "valor_us": 4200,
+   "pistas": [
+    "P01",
+    "P54",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0241",
+   "es": "Deshollinado y filtro de partículas del horno, revisión del refractario, limpieza de la campana extractora y de los conductos al menos una vez al año (Madrid lo exige en su Ordenanza 4/2021, art. 23; mira la de tu ayuntamiento) y el frigorista",
+   "donde": [
+    "PIZP · PyG 3 Años!F27"
+   ],
+   "fila": "Mantenimiento del horno, la campana extractora y el frío",
+   "valor_us": 3600,
+   "pistas": [
+    "P01",
+    "P08",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Ficha de Google Business, redes sociales, fotos de temporada y promociones; la campaña de apertura va en la inversión",
+   "donde": [
+    "PIZP · PyG 3 Años!F28"
+   ],
+   "fila": "Marketing y publicidad",
+   "valor_us": 6000
+  },
+  {
+   "id": "c0245",
+   "es": "Cuota del TPV con Veri*factu, reservas, la tablet de las plataformas, teléfono e internet",
+   "donde": [
+    "PIZP · PyG 3 Años!F29"
+   ],
+   "fila": "Software, TPV, teléfono e internet",
+   "valor_us": 3600,
+   "pistas": [
+    "P01",
+    "P28",
+    "P38",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0247",
+   "es": "Productos de limpieza, lavado de uniformes y paños, guantes de horno, la empresa de DDD (inscrita en el ROESB) y los análisis de autocontrol que fije tu APPCC",
+   "donde": [
+    "PIZP · PyG 3 Años!F30"
+   ],
+   "fila": "Limpieza, lavandería, EPI, DDD y análisis de autocontrol",
+   "valor_us": 3300,
+   "pistas": [
+    "P01",
+    "P14",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0249",
+   "es": "Encina, roble, haya u olivo, seca y sin tratar: unos 5 kg por hora de fuego, 11 horas al día y 300 días, a unos 0,22 € el kg. Es FIJO porque el horno quema por hora encendido, no por pizza. Con horno eléctrico, pasa a suministros",
+   "donde": [
+    "PIZP · PyG 3 Años!F31"
+   ],
+   "fila": "Leña para el horno",
+   "valor_us": 5500,
+   "pistas": [
+    "P02",
+    "P49",
+    "P10"
+   ]
+  },
+  {
+   "id": "c0251",
+   "es": "La ocupación de la vía pública con 6 mesas de abril a octubre (unos 1.200 € de ejemplo: cada ayuntamiento tiene su ordenanza fiscal y este plan no ha leído ninguna) y la tasa de basuras, el cartón, el aceite usado y las cenizas del horno con gestor autorizado (unos 600 €). Pon las de tu ayuntamiento",
+   "donde": [
+    "PIZP · PyG 3 Años!F32"
+   ],
+   "fila": "Tasa de terraza y gestión de residuos (pon las de tu ayuntamiento)",
+   "valor_us": 2400,
+   "pistas": [
+    "P01",
+    "P02",
+    "P58",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0253",
+   "es": "SGAE y AGEDI-AIE son dos licencias distintas; el importe depende de los metros y del aforo de tu sala",
+   "donde": [
+    "PIZP · PyG 3 Años!F33"
+   ],
+   "fila": "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)",
+   "valor_us": 1000,
+   "pistas": [
+    "P01",
+    "P60",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0255",
+   "es": "El plan de prevención es obligatorio (Ley 31/1995): quemaduras del horno, cortes, cargas de leña y humo, y los reconocimientos médicos de la plantilla",
+   "donde": [
+    "PIZP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 800,
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0279",
+   "es": "Suelo del margen tras TODOS los costes variables (mercancía, cajas y envases, plataforma, medios de pago y varios). Sólo con la mercancía, una pizzería con horno de leña deja en torno a un 76 %. Estimación del kit",
+   "donde": [
+    "PIZP · PyG 3 Años!F50"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.62,
+   "pistas": [
+    "P30",
+    "P24",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0282",
+   "es": "Techo de la materia prima sobre ventas: la Margherita sale a un 15 % y la búfala, la burrata y los embutidos italianos la suben. Estimación del kit",
+   "donde": [
+    "PIZP · PyG 3 Años!F52"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.28
+  },
+  {
+   "id": "c0284",
+   "es": "Techo del personal sobre ventas con dos pizzaiolos y una sala de dos servicios. Estimación del kit",
+   "donde": [
+    "PIZP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.36,
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0286",
+   "es": "Techo del alquiler sobre ventas para un local con salida de humos a cubierta: estimación del kit",
+   "donde": [
+    "PIZP · PyG 3 Años!F54"
+   ],
+   "fila": "Alquiler / Ventas",
+   "valor_us": 0.1,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c0288",
+   "es": "Suelo de resultado neto a régimen para que el plan se sostenga. Una pizzería de barrio bien llevada deja en torno a un 9 %. Estimación del kit",
+   "donde": [
+    "PIZP · PyG 3 Años!F55"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05
+  },
+  {
+   "id": "c0294",
+   "es": "Punto de equilibrio mensual y diario — pizzería con horno de leña",
+   "donde": [
+    "PIZP · Punto Equilibrio!A2"
+   ],
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c0322",
+   "es": "Servicios completos por plaza y día que puedes hacer con comidas, cenas y un segundo turno de cena el sábado. Es el techo físico del local, no un objetivo",
+   "donde": [
+    "PIZP · Punto Equilibrio!E25"
+   ],
+   "fila": "Rotaciones al día que da el local como máximo"
+  },
+  {
+   "id": "c0363",
+   "es": "Hace la masa, lleva el horno en el turno fuerte, compra y gestiona. Como administrador de la SL cotiza en el régimen de autónomos: el libro le imputa el 33 % de Seguridad Social sobre 14 pagas como si fuera nómina, que es el lado prudente. Confirma con tu gestoría la cuota real y si te aplica la reducida de inicio",
+   "donde": [
+    "PIZP · Personal!J5"
+   ],
+   "fila": "Titular — pizzaiolo jefe, masa, compras y gestión",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 4500
+   },
+   "pistas": [
+    "P01",
+    "P12",
+    "P59",
+    "P54",
+    "P26",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0365",
+   "es": "Estira y hornea; sabe hacer la masa con el titular. Es inversión, no gasto: si sólo el titular sabe la masa y el horno, una baja cierra la pizzería",
+   "donde": [
+    "PIZP · Personal!J6"
+   ],
+   "fila": "Pizzaiolo/a de horno y estirado",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 3900
+   },
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0367",
+   "es": "Entrantes, postres, mise en place, boleado y friegue, 30 horas a la semana",
+   "donde": [
+    "PIZP · Personal!J7"
+   ],
+   "fila": "Ayudante de cocina y masa",
+   "valor_us": {
+    "B": 1,
+    "C": 0.75,
+    "D": 2340
+   },
+   "pistas": [
+    "P14"
+   ]
+  },
+  {
+   "id": "c0369",
+   "es": "Todo el año: sala, barra, caja y reservas",
+   "donde": [
+    "PIZP · Personal!J8"
+   ],
+   "fila": "Camarero/a encargado/a de sala y barra",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 3293
+   },
+   "pistas": [
+    "P20",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0371",
+   "es": "25 horas a la semana: las cenas y el fin de semana, cuando la sala se llena",
+   "donde": [
+    "PIZP · Personal!J9"
+   ],
+   "fila": "Camarero/a de cenas y fines de semana",
+   "valor_us": {
+    "B": 2,
+    "C": 0.25,
+    "D": 1343
+   }
+  },
+  {
+   "id": "c0373",
+   "es": "Sala y terraza en temporada, el mostrador de recogida y la tablet de las plataformas. Este plan NO tiene reparto propio: si lo pones, el repartidor va con contrato laboral del convenio de hostelería, nunca como autónomo",
+   "donde": [
+    "PIZP · Personal!J10"
+   ],
+   "fila": "Refuerzo de viernes a domingo: sala, terraza y recogida",
+   "valor_us": {
+    "B": 1,
+    "C": 0.375,
+    "D": 975
+   },
+   "pistas": [
+    "P01",
+    "P12",
+    "P54",
+    "P05",
+    "P26",
+    "P23",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0375",
+   "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal del equipo de todo el año",
+   "donde": [
+    "PIZP · Personal!J11"
+   ],
+   "fila": "Suplencias de vacaciones y descansos",
+   "valor_us": {
+    "B": 1,
+    "C": 0.1,
+    "D": 270
+   },
+   "pistas": [
+    "P01",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0389",
+   "es": "Horas con el local abierto al público, sumando las comidas (13:30-16:00) y las cenas (20:00-23:30) y la preparación de cada servicio. La tarde de cierre entre los dos no se cuenta",
+   "donde": [
+    "PIZP · Personal!J21"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir"
+  },
+  {
+   "id": "c0391",
+   "es": "Presencia media a la vez entre el horno, el estirado o el ayudante y la sala. El sábado por la noche hacen falta cinco: entran el refuerzo y el camarero de cenas",
+   "donde": [
+    "PIZP · Personal!J22"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja"
+  },
+  {
+   "id": "c0393",
+   "es": "Masa, salsa y mise en place antes de abrir, y el encendido del horno, que tarda una hora y media o dos en llegar a temperatura",
+   "donde": [
+    "PIZP · Personal!J23"
+   ],
+   "fila": "Horas de producción al día ANTES de abrir",
+   "pistas": [
+    "P14",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0395",
+   "es": "El titular con el ayudante. El cierre, la limpieza y las compras quedan fuera de este cuadrante: son el margen entre las horas contratadas y las necesarias",
+   "donde": [
+    "PIZP · Personal!J24"
+   ],
+   "fila": "Personas en el turno de producción"
+  },
+  {
+   "id": "c0411",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —las pizzas incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares o edulcorantes añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica a la parte de la bebida que declara la columna H de su línea en el P&L. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "PIZP · Instrucciones!A8"
+   ],
+   "pistas": [
+    "P01",
+    "P03",
+    "P41",
+    "P07",
+    "P14",
+    "P09",
+    "P10",
+    "P17",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0413",
+   "es": "6. La hoja «Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. Su Mes 1 es SEPTIEMBRE: el plan abre después del verano para llegar a la Navidad con clientela y a enero y febrero con el fondo intacto. El saldo mínimo del año nunca puede salir en rojo.",
+   "donde": [
+    "PIZP · Instrucciones!A10"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "pistas": [
+    "P07",
+    "P09",
+    "P20",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0415",
+   "es": "8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel manda. La calculadora de masa y escandallo del pack va aparte y sirve para ESCANDALLAR cada pizza: no copies el food cost de una pizza en la hoja de Supuestos. La celda «Coste de mercancía sobre las ventas de COMIDA» es la media ponderada de TODA la carta (pizzas, entrantes y postres, cada uno por lo que vende) más la merma, y por eso sale bastante más alta que el food cost de la Margherita. Con los escandallos de tu carta, comprueba que esa media cuadra.",
+   "donde": [
+    "PIZP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P14",
+    "P09",
+    "P15",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0433",
+   "es": "Mes 1 del plan",
+   "donde": [
+    "PIZP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0434",
+   "es": "Septiembre",
+   "donde": [
+    "PIZP · Instrucciones!B35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Decisión del plan",
+   "donde": [
+    "PIZP · Instrucciones!C35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "La rampa cae en meses medios y altos, la Navidad llega con clientela y enero y febrero, con el fondo intacto. La fila de estacionalidad de la Tesorería ya va girada",
+   "donde": [
+    "PIZP · Instrucciones!D35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P07",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "Coste de la Margherita",
+   "donde": [
+    "PIZP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "Un 15 % de su precio sin IVA",
+   "donde": [
+    "PIZP · Instrucciones!B36"
+   ],
+   "fila": "Coste de la Margherita",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P03",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0439",
+   "es": "Estimación del kit con los gramajes del pliego de la ETG (Reglamento (UE) 97/2010)",
+   "donde": [
+    "PIZP · Instrucciones!C36"
+   ],
+   "fila": "Coste de la Margherita",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P47",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0440",
+   "es": "Masa, tomate, fior di latte, aceite y albahaca: unos 1,32 € con merma sobre 9,09 € sin IVA, según la calculadora del pack. Con búfala, burrata o embutido italiano, un 20-28 %",
+   "donde": [
+    "PIZP · Instrucciones!D36"
+   ],
+   "fila": "Coste de la Margherita",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P02",
+    "P03",
+    "P10",
+    "P15",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "Margherita en carta",
+   "donde": [
+    "PIZP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "10,90 € con IVA (mediana)",
+   "donde": [
+    "PIZP · Instrucciones!B37"
+   ],
+   "fila": "Margherita en carta",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P02",
+    "P03",
+    "P10",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0443",
+   "es": "Cartas de 14 pizzerías de Madrid, Barcelona, Valencia, Marbella y Tenerife, octubre de 2026",
+   "donde": [
+    "PIZP · Instrucciones!C37"
+   ],
+   "fila": "Margherita en carta",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P08",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0444",
+   "es": "10,50-12,90 € en Madrid y Barcelona; 8-9 € en Canarias",
+   "donde": [
+    "PIZP · Instrucciones!D37"
+   ],
+   "fila": "Margherita en carta",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P02",
+    "P08",
+    "P10",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0445",
+   "es": "Masa del pliego de la ETG «Pizza Napoletana»",
+   "donde": [
+    "PIZP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P09",
+    "P47",
+    "P15",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0446",
+   "es": "1 l de agua, 1.800 g de harina, 50-55 g de sal, 3 g de levadura",
+   "donde": [
+    "PIZP · Instrucciones!B38"
+   ],
+   "fila": "Masa del pliego de la ETG «Pizza Napoletana»",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P49",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "Reglamento (UE) 97/2010, anexo II, apartado 3",
+   "donde": [
+    "PIZP · Instrucciones!C38"
+   ],
+   "fila": "Masa del pliego de la ETG «Pizza Napoletana»",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P47",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0448",
+   "es": "Un 55,6 % de hidratación; bolas de 180-250 g; 2 h de primera fermentación y 4-6 h de segunda a temperatura ambiente",
+   "donde": [
+    "PIZP · Instrucciones!D38"
+   ],
+   "fila": "Masa del pliego de la ETG «Pizza Napoletana»",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P10",
+    "P15",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0449",
+   "es": "Cocción del pliego",
+   "donde": [
+    "PIZP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P47",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0450",
+   "es": "Solera a unos 485 °C y bóveda a unos 430 °C, 60-90 s",
+   "donde": [
+    "PIZP · Instrucciones!B39"
+   ],
+   "fila": "Cocción del pliego",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0451",
+   "es": "Reglamento (UE) 97/2010, anexo II",
+   "donde": [
+    "PIZP · Instrucciones!C39"
+   ],
+   "fila": "Cocción del pliego",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P47",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0452",
+   "es": "Exclusivamente en horno de leña",
+   "donde": [
+    "PIZP · Instrucciones!D39"
+   ],
+   "fila": "Cocción del pliego",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P30",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "Nombre «pizza napoletana» (también traducido)",
+   "donde": [
+    "PIZP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P09",
+    "P47",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "Reservado desde el 18-12-2022",
+   "donde": [
+    "PIZP · Instrucciones!B40"
+   ],
+   "fila": "Nombre «pizza napoletana» (también traducido)",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "Reglamento de Ejecución (UE) 2022/2313 y Reglamento (UE) 2024/1143, art. 68.1",
+   "donde": [
+    "PIZP · Instrucciones!C40"
+   ],
+   "fila": "Nombre «pizza napoletana» (también traducido)",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P47",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "Sólo para la pizza que cumple el pliego y pasó la verificación oficial. La carta del caso usa «Margherita», «Marinara»…",
+   "donde": [
+    "PIZP · Instrucciones!D40"
+   ],
+   "fila": "Nombre «pizza napoletana» (también traducido)",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P09",
+    "P47",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "Comisión de la plataforma con su reparto",
+   "donde": [
+    "PIZP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P23",
+    "P24",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "25-35 % más IVA",
+   "donde": [
+    "PIZP · Instrucciones!B41"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "Guías del sector, 2025-2026: compruébalo en tu contrato",
+   "donde": [
+    "PIZP · Instrucciones!C41"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P26",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "El plan básico de Uber Eats ronda el 30 %. La recogida en el local no paga comisión",
+   "donde": [
+    "PIZP · Instrucciones!D41"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P22",
+    "P24",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "IVA de la pizza",
+   "donde": [
+    "PIZP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "10 %",
+   "donde": [
+    "PIZP · Instrucciones!B42"
+   ],
+   "fila": "IVA de la pizza",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "Ley 37/1992, art. 91.Uno.1.1.º y 2.2.º",
+   "donde": [
+    "PIZP · Instrucciones!C42"
+   ],
+   "fila": "IVA de la pizza",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "En sala, para llevar y a domicilio. El alcohol y los refrescos con azúcares o edulcorantes añadidos que salen del local, al 21 %",
+   "donde": [
+    "PIZP · Instrucciones!D42"
+   ],
+   "fila": "IVA de la pizza",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P14",
+    "P17",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "Salario mínimo interprofesional 2026",
+   "donde": [
+    "PIZP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "1.221 € al mes en 14 pagas",
+   "donde": [
+    "PIZP · Instrucciones!B43"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P02",
+    "P12",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "Real Decreto 126/2026",
+   "donde": [
+    "PIZP · Instrucciones!C43"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "A prorrata en jornada parcial",
+   "donde": [
+    "PIZP · Instrucciones!D43"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "Coste de personal sobre ventas",
+   "donde": [
+    "PIZP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "34-38 %",
+   "donde": [
+    "PIZP · Instrucciones!B44"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0471",
+   "es": "Estimación del kit",
+   "donde": [
+    "PIZP · Instrucciones!C44"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "Con el titular de pizzaiolo y un segundo pizzaiolo: el pizzaiolo único es un riesgo, no un ahorro",
+   "donde": [
+    "PIZP · Instrucciones!D44"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P15",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "Alquiler sobre ventas",
+   "donde": [
+    "PIZP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0474",
+   "es": "6-10 %",
+   "donde": [
+    "PIZP · Instrucciones!B45"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0475",
+   "es": "Estimación del kit",
+   "donde": [
+    "PIZP · Instrucciones!C45"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Un local con salida de humos a cubierta cuesta más encontrarlo que pagarlo",
+   "donde": [
+    "PIZP · Instrucciones!D45"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P30",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "Leña del horno",
+   "donde": [
+    "PIZP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P30",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "Unos 3.600 € al año",
+   "donde": [
+    "PIZP · Instrucciones!B46"
+   ],
+   "fila": "Leña del horno",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P02",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "Estimación del kit",
+   "donde": [
+    "PIZP · Instrucciones!C46"
+   ],
+   "fila": "Leña del horno",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Unos 5 kg por hora de fuego, 11 horas al día y 300 días. Va como coste FIJO: se quema por hora, no por pizza",
+   "donde": [
+    "PIZP · Instrucciones!D46"
+   ],
+   "fila": "Leña del horno",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P49",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0481",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "PIZP · Instrucciones!A47"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P12",
+    "P26",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0482",
+   "es": "Provincial de hostelería",
+   "donde": [
+    "PIZP · Instrucciones!B47"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0483",
+   "es": "VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4",
+   "donde": [
+    "PIZP · Instrucciones!C47"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P01",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0484",
+   "es": "Nombra las pizzerías y el reparto propio. Copia tu tabla salarial en la celda de Supuestos",
+   "donde": [
+    "PIZP · Instrucciones!D47"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P65",
+    "P23",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0523",
+   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en sala, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); la parte de la bebida que sale para llevar o a domicilio y declara la columna H de su línea (alcohol y refrescos con azúcares o edulcorantes añadidos), al general (art. 91.Uno.1.1.º)",
+   "donde": [
+    "PIZP · Tesorería 12 meses!O16"
+   ],
+   "fila": "IVA repercutido del mes (memoria)",
+   "pistas": [
+    "P01",
+    "P14",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0548",
+   "es": "Mide cuánto tarda el negocio en devolver la inversión con lo que genera ANTES de pagar al banco, con la MISMA base de flujo en los tres años; si puedes pagar la cuota lo dice el DSCR de la hoja de Financiación. El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro",
+   "donde": [
+    "PIZP · Tesorería 12 meses!D31"
+   ],
+   "fila": "Payback del proyecto (años), antes de la deuda",
+   "pistas": [
+    "P35",
+    "P79"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GR": {
+   "salida": "scripts/productos-digitales/business-plans-en-8/textos_en/GR.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 27,
+   "cadenas": [
+    {
+     "id": "c0005",
+     "es": "Comensales/día (media del año 1)",
+     "en_actual": "Covers per day (year-1 average)",
+     "de": "GR c0005 (BARP 0. Supuestos!A4)",
+     "donde": [
+      "PIZP · 0. Supuestos!A4"
+     ]
+    },
+    {
+     "id": "c0209",
+     "es": "Comensales/día (media)",
+     "en_actual": "Covers per day (average)",
+     "de": "GR c0208 (BARP PyG 3 Años!A6)",
+     "donde": [
+      "PIZP · PyG 3 Años!A6"
+     ]
+    },
+    {
+     "id": "c0300",
+     "es": "Coste variable por comensal",
+     "en_actual": "Variable cost per cover",
+     "de": "GR c0294 (BARP Punto Equilibrio!A9)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A9"
+     ]
+    },
+    {
+     "id": "c0302",
+     "es": "Margen de contribución por comensal",
+     "en_actual": "Contribution margin per cover",
+     "de": "GR c0296 (BARP Punto Equilibrio!A10)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A10"
+     ]
+    },
+    {
+     "id": "c0308",
+     "es": "Comensales necesarios al año",
+     "en_actual": "Covers needed per year",
+     "de": "GR c0302 (BARP Punto Equilibrio!A14)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A14"
+     ]
+    },
+    {
+     "id": "c0309",
+     "es": "Comensales necesarios al día",
+     "en_actual": "Covers needed per day",
+     "de": "GR c0303 (BARP Punto Equilibrio!A15)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A15"
+     ]
+    },
+    {
+     "id": "c0314",
+     "es": "Comensales necesarios al año (caja)",
+     "en_actual": "Covers needed per year (cash)",
+     "de": "GR c0308 (BARP Punto Equilibrio!A19)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A19"
+     ]
+    },
+    {
+     "id": "c0315",
+     "es": "Comensales necesarios al día (caja)",
+     "en_actual": "Covers needed per day (cash)",
+     "de": "GR c0309 (BARP Punto Equilibrio!A20)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A20"
+     ]
+    },
+    {
+     "id": "c0318",
+     "es": "Comensales/día previstos en el plan",
+     "en_actual": "Covers per day forecast in the plan",
+     "de": "GR c0312 (BARP Punto Equilibrio!A23)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A23"
+     ]
+    },
+    {
+     "id": "c0324",
+     "es": "Comensales de equilibrio entre las plazas que declara la hoja de Supuestos. Por encima del techo de arriba, el punto de equilibrio está fuera del alcance del local",
+     "en_actual": "Break-even covers spread across the seats declared on the \"0. Assumptions\" tab. If it is above the ceiling in the row above, the break-even is out of reach for the space",
+     "de": "GR c0318 (BARP Punto Equilibrio!E26)",
+     "donde": [
+      "PIZP · Punto Equilibrio!E26"
+     ]
+    },
+    {
+     "id": "c0327",
+     "es": "Comensales/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por comensal (filas). En verde, los que están por debajo de los comensales que prevé el plan.",
+     "en_actual": "Covers per day needed to cover costs for each average check (columns) and each variable cost per cover (rows). Green cells are below the covers per day the plan forecasts.",
+     "de": "GR c0321 (BARP Punto Equilibrio!A31)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A31"
+     ]
+    },
+    {
+     "id": "c0328",
+     "es": "Comensales/día necesarios: ticket medio sin IVA (columnas) × coste variable por comensal (filas)",
+     "en_actual": "Covers per day needed: average check excl. sales tax (columns) × variable cost per cover (rows)",
+     "de": "GR c0322 (BARP Punto Equilibrio!A33)",
+     "donde": [
+      "PIZP · Punto Equilibrio!A33"
+     ]
+    },
+    {
+     "id": "c0336",
+     "es": "Comensales/día",
+     "en_actual": "Covers per day",
+     "de": "GR c0330 (BARP Escenarios!A5)",
+     "donde": [
+      "PIZP · Escenarios!A5"
+     ]
+    },
+    {
+     "id": "c0341",
+     "es": "Comensales/día para el equilibrio",
+     "en_actual": "Covers per day to break even",
+     "de": "GR c0335 (BARP Escenarios!A21)",
+     "donde": [
+      "PIZP · Escenarios!A21"
+     ]
+    },
+    {
+     "id": "c0344",
+     "es": "Comensales al año por jornada equivalente",
+     "en_actual": "Covers per year per full-time equivalent",
+     "de": "GR c0338 (BARP Escenarios!A24)",
+     "donde": [
+      "PIZP · Escenarios!A24"
+     ]
+    },
+    {
+     "id": "c0345",
+     "es": "Comensales que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+     "en_actual": "Covers each full-time employee in the \"Staffing\" tab would have to serve. In the optimistic scenario it tells you whether you need to hire",
+     "de": "GR c0339 (BARP Escenarios!E24)",
+     "donde": [
+      "PIZP · Escenarios!E24"
+     ]
+    },
+    {
+     "id": "c0350",
+     "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los comensales, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+     "en_actual": "The \"Base\" column reads its three inputs from the \"0. Assumptions\" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: the only things that change are covers, average check and days. FIXED COSTS are the same in all three: miscellaneous and contingency, which is a percentage of sales, sits at the top with the variable costs and each scenario carries its own.",
+     "de": "GR c0344 (BARP Escenarios!A28)",
+     "donde": [
+      "PIZP · Escenarios!A28"
+     ]
+    },
+    {
+     "id": "c0408",
+     "es": "1. «0. Supuestos» es la hoja de mando: comensales, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+     "en_actual": "1. \"0. Assumptions\" is the control sheet: covers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, rent, financing and taxes.",
+     "de": "GR c0402 (BARP Instrucciones!A5)",
+     "donde": [
+      "PIZP · Instrucciones!A5"
+     ]
+    },
+    {
+     "id": "c0414",
+     "es": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
+     "en_actual": "7. The \"Financing\" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.",
+     "de": "GM c0385 (FTP Instrucciones!A11 / CAFP Instrucciones!A11)",
+     "donde": [
+      "PIZP · Instrucciones!A11"
+     ]
+    },
+    {
+     "id": "c0426",
+     "es": "Comensales/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+     "en_actual": "Covers per day for the ACCOUNTING break-even (depreciation included)",
+     "de": "GR c0420 (BARP Instrucciones!A30)",
+     "donde": [
+      "PIZP · Instrucciones!A30"
+     ]
+    },
+    {
+     "id": "c0630",
+     "es": "Gestoría",
+     "en_actual": "Accountant",
+     "de": "GN c0680 (RESTC Checklist Apertura!C5 / RESTC Checklist Apertura!C6)",
+     "donde": [
+      "PIZC · F1 - Constitución!C7",
+      "PIZC · F1 - Constitución!C9",
+      "PIZC · F1 - Constitución!C10",
+      "PIZC · F4 - Personal y prevención!C5"
+     ]
+    },
+    {
+     "id": "c0642",
+     "es": "Certificado digital",
+     "en_actual": "City or county business license",
+     "de": "GPAN c1146 (PANC F1!B9)",
+     "donde": [
+      "PIZC · F1 - Constitución!B11"
+     ]
+    },
+    {
+     "id": "c0659",
+     "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+     "en_actual": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+     "de": "GREST c0856 (RESTC Checklist Apertura!E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E16 E17 E18 E19 E20 E21 E22 E23 E25 E26 E27 E28 E29 E30 E31 E32 E34 E35 E36 E37 E38 E39 E40 E42 E43 E44 E45 E46 E47 E48 E49 E51 E52 E53 E54 E55 E56 E57 E58 E59 E60 E61 E62 E63 E64 E65 E67 E68 E69 E70 E71 E72 E73 E74)",
+     "donde": [
+      "PIZC · F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
+      "PIZC · F2 - Local, humos y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19",
+      "PIZC · F3 - Cocina, horno y sanidad!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18",
+      "PIZC · F4 - Personal y prevención!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17"
+     ]
+    },
+    {
+     "id": "c0670",
+     "es": "Técnico",
+     "en_actual": "Architect / engineer",
+     "de": "GR c0761 (BARC F2 - Local!C13)",
+     "donde": [
+      "PIZC · F2 - Local, humos y licencia!C7"
+     ]
+    },
+    {
+     "id": "c0697",
+     "es": "Constructor",
+     "en_actual": "Contractor",
+     "de": "GR c0780 (BARC F3 - Equipamiento!C6)",
+     "donde": [
+      "PIZC · F2 - Local, humos y licencia!C15"
+     ]
+    },
+    {
+     "id": "c0785",
+     "es": "Desinsectación, desratización y desinfección (DDD)",
+     "en_actual": "Pest control",
+     "de": "GM c0236 (FTP PyG 3 Años!A33 / CAFP PyG 3 Años!A32)",
+     "donde": [
+      "PIZC · F4 - Personal y prevención!B16"
+     ]
+    },
+    {
+     "id": "c0848",
+     "es": "Mensual",
+     "en_actual": "Monthly",
+     "de": "GREST c0843 (RESTC Checklist Apertura!D68 / RESTC Checklist Apertura!D70)",
+     "donde": [
+      "PIZC · F6 - Apertura y 90 días!D12",
+      "PIZC · F6 - Apertura y 90 días!D13",
+      "PIZC · F6 - Apertura y 90 días!D14",
+      "PIZC · F6 - Apertura y 90 días!D15"
+     ]
+    }
+   ]
+  }
+ }
+}

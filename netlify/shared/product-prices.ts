@@ -64,6 +64,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'pack-appcc': { eur: 14 },
   'paella-catering-business-plan': { usd: 39 },
   'pastry-shop-checklist-templates': { usd: 19 },
+  'pizza-shop-business-plan': { usd: 39 },
   'pizza-shop-checklist-templates': { usd: 19 },
   'plan-catering-tematico-eventos': { eur: 45 },
   'plan-chef-privado-showcooking-eventos': { eur: 45 },

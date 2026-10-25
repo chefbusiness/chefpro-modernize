@@ -1237,8 +1237,16 @@ elif CONJUNTO == 'pael':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-7'))
     import mapas_pael as _pael                                                     # noqa: E402
     _pael.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'piz':
+    # Pizza Shop Business Plan Kit (F2 de business-plans-en-8, 25-oct-2026): libro gemelo del tapas bar ES (molde del
+    # BAR, D138), diccionario = EN del Bar en esa celda y luego BP/BP2, docx de 131 ranuras (config de PAEL); fuente ES
+    # en mapas_piz.FUENTE_ES (variable PIZ_FUENTE_ES), datos en business-plans-en-8/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-8'))
+    import mapas_piz as _piz                                                       # noqa: E402
+    _piz.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
-    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael)' % CONJUNTO)
+    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael | piz)' % CONJUNTO)
 
 
 if __name__ == '__main__':

@@ -63,6 +63,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'pack-appcc': 'https://buy.stripe.com/3cI28kbcE9gqezB0sR6oo02',
   'paella-catering-business-plan': 'https://buy.stripe.com/14AdR294wgISajl5Nb6oo20',
   'pastry-shop-checklist-templates': 'https://buy.stripe.com/00w4gs5Sk64eajlgrP6oo1Y',
+  'pizza-shop-business-plan': 'https://buy.stripe.com/3cI28k4Og9gq0IL4J76oo24',
   'pizza-shop-checklist-templates': 'https://buy.stripe.com/00w28kbcE8cm8bd6Rf6oo1T',
   'plan-catering-tematico-eventos': 'https://buy.stripe.com/dRm9AMa8A78i6352AZ6oo1d',
   'plan-chef-privado-showcooking-eventos': 'https://buy.stripe.com/aFadR24OgcsCezBa3r6oo1c',

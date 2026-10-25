@@ -157,6 +157,7 @@ PRODUCTOS_LETTER = frozenset({'food-cost-templates', 'restaurant-inventory-templ
                               'catering-business-plan', 'mobile-bar-business-plan',
                               'bbq-catering-business-plan',
                               'paella-catering-business-plan',
+                              'pizza-shop-business-plan',
                               'food-cost-menu-engineering-guide', 'how-to-open-a-pastry-shop',
                               'restaurant-checklist-templates', 'bar-checklist-templates',
                               'chocolate-shop-checklist-templates',

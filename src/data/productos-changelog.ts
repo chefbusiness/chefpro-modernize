@@ -787,6 +787,30 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-25): Pizza Shop Business Plan Kit, edición inglesa del plan-negocio-pizzeria (SPEC business-plans-en-8
+  // D133-D153: pizza shop de estilo napolitano con horno de leña, 50 asientos + patio, caso US D137). Textos en inglés: los
+  // pinta <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN, como la Paella).
+  'pizza-shop-business-plan': {
+    version: '2.2',
+    updated: '2026-10-25',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-25',
+        title: 'First release',
+        changes: [
+          'First release of the Pizza Shop Business Plan Kit for a Neapolitan-style pizza shop with a wood-fired oven, about 50 seats plus a patio, dine-in, take-out and delivery: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pizza dough and food cost calculator and an 80-task startup checklist, set up for the US with notes for the UK, Canada and Australia.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example is a first-year result with a modest net margin, not the 15-25% that sales pages promise.',
+          'The model runs on covers per day, average ticket per cover and days open per year, with the break-even measured in covers per day and checked against the cash you actually need. Sales tax is collected on the whole check and remitted separately.',
+          'Payroll for eight people across seven roles, with employer payroll taxes and a federal and a state or local minimum wage floor, plus startup costs that include the wood-fired oven and the hood.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and the DSCR checked against a 1.25× target.',
+          'New Pizza Dough & Food Cost Calculator: dough by the batch in grams and baker\'s percentages, traditional Neapolitan ratios as a reference (not a US rule, and following them does not make a pizza VPN-certified), and the food cost, margin and menu price of 8 example pizzas.',
+          '80-task startup checklist in 6 phases: business setup, site, hood and permits (zoning, building permit, fire marshal, health permit, beer and wine license), kitchen, oven and health, staff and safety, menu, brand and delivery, and opening day plus your first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
   // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
   // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.

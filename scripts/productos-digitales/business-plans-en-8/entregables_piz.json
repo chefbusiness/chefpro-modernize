@@ -1,0 +1,46 @@
+{
+ "carpeta": "/root/wt-pizza-en/astro-site/public/dl/pizza-shop-business-plan",
+ "parcial": false,
+ "piezas": 1644,
+ "fallos": 0,
+ "ficheros": {
+  "pizza-dough-food-cost-calculator.xlsx": {
+   "hojas": 3,
+   "formulas": 147,
+   "piezas": 256,
+   "sha256": "435361dcf57a9625625788ec10b236b3b330951b97dd6d4250496412e5ef537f",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "pizza-shop-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 7470,
+   "piezas": 116,
+   "sha256": "6eef3b58667319968236fa317305c1ba81ba64b062eff7c7dc224ec214c21206",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "pizza-shop-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 741,
+   "piezas": 777,
+   "sha256": "d5dd1400badd6975f7a3ec26227af879326d9e6416aa7a1b38e39ee706d256c7",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "pizza-shop-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 495,
+   "sha256": "7a25b1e23bce687b6061e8f53194bd189aca267f7eaeb98efeed676b21914728",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}
