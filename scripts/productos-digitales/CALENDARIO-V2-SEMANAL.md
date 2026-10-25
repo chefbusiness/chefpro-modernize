@@ -546,7 +546,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | ~~Tareas Recurrentes: Taquería Mexicana~~ **✅ LIVE 20-sep-2026** (producto 50, 14 €, PR #85 → `4f214a0`; correo el 29-oct) | Kits de tareas | 14 € | — |
 | Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |
 | Plan de Negocio: Hamburguesería Smash | Planes de negocio | 35 € | Q4 2026 |
-| Plan de Negocio: Finca de Eventos y Bodas | Planes de negocio | 45 € | Q1 2027 |
+| ~~Plan de Negocio: Finca de Eventos y Bodas~~ **✅ hecho el 25-oct-2026** (producto 53, PR #164; falta el Payment Link) | Planes de negocio | 45 € | — |
 | Tareas Recurrentes: Pollería y Pollo a la Brasa | Kits de tareas | 12 € | Q1 2027 |
 | Tareas Recurrentes: Arepería | Kits de tareas | 12 € | Q1 2027 |
 | Plan de Negocio: Pizzería Napolitana | Planes de negocio | 35 € | Q1 2027 |
@@ -745,3 +745,11 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Mismo día: **PR #160**, normativa derogada (RD 1420/2006 y RD 3484/2000 → RD 1021/2022) en 7 entregables vendidos, listo y
   verificado; fusionado con el visto bueno de John (merge `daf6f28a`). Arreglo en `censo-terminos-es.py` (leía las propias guías
   de equivalencias). Hallazgo para decidir: 6 guías ES con PDF de portada de 1 página y «60+ páginas» en la landing (handoff §5).
+
+### ▶️ 2026-10-25, tarde (Claude Code en el Mac + VPS) — **Plan de Negocio: Finca de Eventos y Bodas (ES, 45 €, producto nuevo nº 53)** — listo a falta del Payment Link
+
+- John: «Finca de Eventos y Bodas como siguiente producto nuevo. Adelante». F1 (research + camino + SPEC) → F2 (motor, calculadora,
+  contrato, Word, guía de equivalencias) → F3 (capa de producto, hubs ×7 + SPA) → una revisión opus (0 B · 9 M · 26 m) y una ronda de
+  arreglos. ≈ 4 h y ≈ 3,1 M tokens. PR #164 draft. Detalle: `SESSION_HANDOFF_2026-10-25-plan-finca-eventos.md`.
+- Modelo: finca arrendada + catering exclusivo concesionado con canon. Caso 120 eventos × 82 invitados × 37 €; neto 8,8 / 11,9 / 12,2 %.
+- **Correo ES: hueco 3-dic 08:00Z** (borrador tras el LIVE; routine desde el 3-nov). Siguiente hueco ES después: 8-dic.
