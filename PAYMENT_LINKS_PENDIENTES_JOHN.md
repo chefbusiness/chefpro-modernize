@@ -1,8 +1,12 @@
 # Payment Links pendientes — tareas de John (Stripe)
 
-> Sesión Claude Code (Mac). **1 pendiente (25-oct-2026): Plan de Negocio: Finca de Eventos y Bodas (ES).**
+> Sesión Claude Code (Mac). **No hay ninguno pendiente.**
 
-## ⏳ Plan de Negocio: Finca de Eventos y Bodas (ES) — PR #164
+## ✅ Plan de Negocio: Finca de Eventos y Bodas (ES) — PR #164, link creado el 25-oct-2026
+
+Link de John: https://buy.stripe.com/14A7sE4Og9gqajla3r6oo22 (`plink_1UUVHD4CcdRGidmEy72mv0Yh`). Comprobado con la CLI de
+Stripe: 4500 EUR, pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-negocio-finca-eventos-bodas-access`.
+Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
 
 Mismo patrón que el de la heladería (`plink_1UUSdP4CcdRGidmEm3lXcQyH`) y los planes de eventos a 45 €:
 

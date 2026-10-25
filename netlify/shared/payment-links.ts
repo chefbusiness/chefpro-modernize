@@ -69,6 +69,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'plan-negocio-bar-restaurante': 'https://buy.stripe.com/6oU4gs2G80JU9fh1wV6oo14',
   'plan-negocio-cafeteria': 'https://buy.stripe.com/8x27sE1C450a1MPejH6oo16',
   'plan-negocio-cocteleria-eventos': 'https://buy.stripe.com/cNi6oA80seAK8bdfnL6oo19',
+  'plan-negocio-finca-eventos-bodas': 'https://buy.stripe.com/14A7sE4Og9gqajla3r6oo22',
   'plan-negocio-food-truck': 'https://buy.stripe.com/28EfZadkMfEOajl8Zn6oo18',
   'plan-negocio-heladeria': 'https://buy.stripe.com/5kQ28k94w78i2QT8Zn6oo21',
   'plan-negocio-paellero-eventos': 'https://buy.stripe.com/4gMdR2dkMeAKajlfnL6oo1b',
