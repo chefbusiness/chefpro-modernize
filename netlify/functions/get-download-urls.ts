@@ -1238,6 +1238,14 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/plan-negocio-heladeria/checklist-apertura-heladeria.xlsx',
     'guia-equivalencias': '/dl/plan-negocio-heladeria/guia-equivalencias-plan-negocio-heladeria.docx',
   },
+  'plan-negocio-finca-eventos-bodas': {
+    'plan-financiero': '/dl/plan-negocio-finca-eventos-bodas/plan-financiero-finca-eventos-bodas.xlsx',
+    'plan-negocio': '/dl/plan-negocio-finca-eventos-bodas/plan-de-negocio-finca-eventos-bodas.docx',
+    'checklist-apertura': '/dl/plan-negocio-finca-eventos-bodas/checklist-apertura-finca-eventos-bodas.xlsx',
+    'calculadora-pricing': '/dl/plan-negocio-finca-eventos-bodas/calculadora-presupuesto-boda-evento-finca.xlsx',
+    'modelos-contrato': '/dl/plan-negocio-finca-eventos-bodas/modelo-contrato-reserva-finca-eventos.docx',
+    'guia-equivalencias': '/dl/plan-negocio-finca-eventos-bodas/guia-equivalencias-plan-negocio-finca-eventos-bodas.docx',
+  },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',

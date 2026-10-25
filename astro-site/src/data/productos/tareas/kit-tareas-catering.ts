@@ -387,6 +387,7 @@ const data: KitTareasData = {
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/kit-tareas-bar', label: 'Kit Tareas Bar' },
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
+    { href: '/plan-negocio-finca-eventos-bodas', label: 'Plan Finca de Eventos y Bodas' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],

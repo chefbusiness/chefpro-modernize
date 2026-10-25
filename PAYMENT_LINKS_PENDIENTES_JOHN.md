@@ -2,6 +2,25 @@
 
 > Sesión Claude Code (Mac). **No hay ninguno pendiente.**
 
+## ✅ Plan de Negocio: Finca de Eventos y Bodas (ES) — PR #164, link creado el 25-oct-2026
+
+Link de John: https://buy.stripe.com/14A7sE4Og9gqajla3r6oo22 (`plink_1UUVHD4CcdRGidmEy72mv0Yh`). Comprobado con la CLI de
+Stripe: 4500 EUR, pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-negocio-finca-eventos-bodas-access`.
+Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
+
+Mismo patrón que el de la heladería (`plink_1UUSdP4CcdRGidmEm3lXcQyH`) y los planes de eventos a 45 €:
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Finca de Eventos y Bodas - AI Chef Pro |
+| Precio | **45,00 EUR**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-finca-eventos-bodas-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | Plan de negocio completo para montar una finca de eventos y bodas arrendada, con catering exclusivo concesionado: plan en Word de 10 secciones, plan financiero en Excel de 9 hojas con tesorería mes a mes, checklist de apertura de 84 tareas, calculadora de presupuesto del espacio, modelos de contrato y guía de equivalencias para Latinoamérica |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_FINCA_EVENTOS` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-finca-hero.jpg` |
+
+
 ## ✅ Plan de Negocio: Heladería Artesanal (ES) — PR #161, link creado el 25-oct-2026
 
 Link de John: https://buy.stripe.com/5kQ28k94w78i2QT8Zn6oo21 (`plink_1UUSdP4CcdRGidmEm3lXcQyH`). Comprobado con la CLI de

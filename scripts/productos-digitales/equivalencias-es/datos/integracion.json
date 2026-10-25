@@ -206,5 +206,9 @@
  "plan-negocio-heladeria": {
   "producto": "Plan de Negocio Heladería Artesanal",
   "ejemplos": "«nata» es «crema de leche» o «crema para batir» en buena parte de América; «fresa» es «frutilla» en el Cono Sur; «obrador» se dice «taller» o «laboratorio» en Argentina, Uruguay y Chile, y «tesorería» es «flujo de caja»"
+ },
+ "plan-negocio-finca-eventos-bodas": {
+  "producto": "Plan de Negocio Finca de Eventos y Bodas",
+  "ejemplos": "la «fianza» del arrendamiento es el «depósito en garantía» en México o Colombia (allí la «fianza» es una póliza); los «aseos» son «baños»; el «catering» es «banquetería» en Chile o Argentina, y la «barra libre» es «open bar» en casi todas partes"
  }
 }

@@ -318,6 +318,7 @@ const data: PlanNegocioData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/plan-chef-privado-showcooking-eventos', label: 'Plan Chef Privado / Showcooking' },
     { href: '/plan-negocio-paellero-eventos', label: 'Plan Paellero Eventos' },
+    { href: '/plan-negocio-finca-eventos-bodas', label: 'Plan Finca de Eventos y Bodas' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 2.2 · octubre 2026',

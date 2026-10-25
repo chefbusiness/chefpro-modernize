@@ -62,6 +62,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Business plan : lieu de réception pour événements et mariages',
+    slug: '/plan-negocio-finca-eventos-bodas',
+    description: 'Business plan complet pour monter un lieu de réception pour événements et mariages sur un domaine loué, avec un traiteur exclusif en concession qui vous verse une redevance : plan en Word de 10 sections, plan financier Excel de 9 feuilles avec la saison des mariages, checklist d\'ouverture de 84 tâches (dont l\'autorisation en zone rurale), calculateur de devis, modèles de contrat et guide d\'équivalences pour l\'Amérique latine.',
+    features: [
+      'Business plan Word en 10 sections',
+      'Plan financier Excel avec la saison des mariages',
+      'Checklist d\'ouverture : 84 tâches, dont l\'autorisation en zone rurale',
+      'Calculateur de devis, modèles de contrat et guide d\'équivalences pour l\'Amérique latine',
+    ],
+    iconName: 'PartyPopper',
+    image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'catering', 'events', 'business-plan'],
+  },
+  {
     name: 'Business plan : gelateria artisanale',
     slug: '/plan-negocio-heladeria',
     description: 'Business plan complet pour ouvrir une gelateria artisanale : plan en Word de 10 sections, plan financier Excel à formules vivantes et checklist d\'ouverture par phases, avec le guide d\'équivalences pour l\'Amérique latine.',
@@ -137,8 +153,8 @@ const products = [
     ],
     iconName: 'CakeSlice',
     image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
-    badge: '✨ Nouveau',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'pastry', 'bakery'],
   },
   {
@@ -904,7 +920,6 @@ const products = [
 const comingSoon = [
   { iconName: 'BarChart3', name: 'Kit de tableau de bord des opérations', desc: 'Ventes par créneau horaire et par zone de salle, ticket moyen, rotation des tables et productivité horaire, dans un seul tableau de bord.', tags: ['excel', 'management', 'templates'], phase: 'T4 2026' },
   { iconName: 'Sandwich', name: 'Plan d\'affaires : Restaurant de smash burgers', desc: 'Du concept smash au seuil de rentabilité : investissement, carte, coûts et prévision mois par mois.', tags: ['business-plan', 'burger', 'excel'], phase: 'T4 2026' },
-  { iconName: 'PartyPopper', name: 'Plan d\'affaires : Lieu de réception pour événements et mariages', desc: 'Capacité d\'accueil, formules avec menu imposé, saisonnalité des mariages et effectifs par événement : le plan complet.', tags: ['business-plan', 'catering', 'excel'], phase: 'T1 2027' },
   { iconName: 'Flame', name: 'Tâches récurrentes : Rôtisserie de poulets', desc: 'Broches, temps de cuisson, perte de rendement et service de pointe, avec les routines de chaque service.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
   { iconName: 'Utensils', name: 'Tâches récurrentes : Areperia', desc: 'Pâte, garnitures, plancha et fermeture : la routine quotidienne d\'une areperia écrite noir sur blanc, service par service.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
   { iconName: 'Pizza', name: 'Plan d\'affaires : Pizzeria napolitaine', desc: 'Levain, four et rotation des tables : le plan complet pour ouvrir une pizzeria napolitaine.', tags: ['business-plan', 'pizzeria', 'excel'], phase: 'T1 2027' },

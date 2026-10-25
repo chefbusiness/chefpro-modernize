@@ -505,6 +505,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
       es: 'Obrador y vitrina: plan financiero Excel, plan en Word y checklist de apertura.',
       en: 'Word business plan, Excel financial projections and opening checklist for a gelato shop with its own kitchen.',
     },
+  'plan-negocio-finca-eventos-bodas': {
+    id: 'plan-negocio-finca-eventos-bodas',
+    url: '/plan-negocio-finca-eventos-bodas',
+    price: '€45',
+    name: { es: 'Plan de Negocio: Finca de Eventos y Bodas', en: 'Wedding & Event Venue Business Plan (Spain)' },
+    description: {
+      es: 'Finca arrendada con catering exclusivo: plan financiero Excel, plan en Word, checklist de apertura, calculadora y contratos.',
+      en: 'Word business plan, Excel financial projections, opening checklist, pricing calculator and contract templates for a leased wedding and event venue.',
+    },
+  },
   },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',
