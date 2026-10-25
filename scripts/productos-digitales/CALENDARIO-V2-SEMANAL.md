@@ -549,7 +549,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | ~~Plan de Negocio: Finca de Eventos y Bodas~~ **✅ LIVE 25-oct-2026** (producto 53, PR #164 → `769a0e26`) | Planes de negocio | 45 € | — |
 | Tareas Recurrentes: Pollería y Pollo a la Brasa | Kits de tareas | 12 € | Q1 2027 |
 | Tareas Recurrentes: Arepería | Kits de tareas | 12 € | Q1 2027 |
-| Plan de Negocio: Pizzería Napolitana | Planes de negocio | 35 € | Q1 2027 |
+| ~~Plan de Negocio: Pizzería Napolitana~~ **✅ LIVE 25-oct-2026** (producto 54, PR #165 → `2e7a3af5`; gemelo EN Pizza Shop Business Plan Kit $39, PR #166 → `64ace831`) | Planes de negocio | 35 € | — |
 | Plan de Negocio: Steakhouse / Restaurante de Carnes | Planes de negocio | 35 € | Q1 2027 |
 | Calculadora de Comisiones de Delivery | Kits de gestión | 9 € | Q1 2027 |
 | Tareas Recurrentes: Poke Bowl / Healthy Bowl | Kits de tareas | 12 € | Próximamente |
@@ -762,3 +762,14 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Modelo: finca arrendada + catering exclusivo concesionado con canon. Caso 120 eventos × 82 invitados × 37 €; neto 8,8 / 11,9 / 12,2 %.
 - **Correo ES: 3-dic 08:00Z**, borrador `c41977a6` (prueba a John enviada) → routine `trig_01QkpkZGN18qx4WPpWQBp8FT` (3-nov 15:07Z).
   **Siguiente hueco ES: 8-dic 08:00Z.**
+
+### ▶️ 2026-10-25, noche (Claude Code en el Mac + VPS) — **Plan de Negocio: Pizzería Napolitana (ES, 35 €, nº 54) + Pizza Shop Business Plan Kit (EN, $39)** — ✅ LOS DOS LIVE
+
+- John: «luz verde, decide tú» → Pizzería Napolitana (EN «pizza shop business plan» 320/mes US); luego «dejar la versión en los dos
+  idiomas en producción». ES: PR #165 → `2e7a3af5` (link `plink_1UUXG84CcdRGidmEsDF3iCG4`). EN: PR #166 (apilado) → `64ace831` (link
+  `plink_1UUXZ54CcdRGidmEovs56WB3`). Detalle: `SESSION_HANDOFF_2026-10-25-plan-pizzeria-es-en.md`.
+- Gates LIVE: postpago 0/0 en los dos · tienda verde · robots · Miselup 108/108 · hub PASS · fase 6 = sus 3 congelados · cripto 200 ×2 ·
+  sitemap reenviado. Tienda EN: 28 productos.
+- **Correo ES: 8-dic 08:00Z**, borrador `92c8a19f` → routine `trig_011hWcNXXF55pgXjW7iGCMjF` (8-nov 15:07Z). **Siguiente hueco ES: 13-dic 08:00Z.**
+- **Correo EN: 18-feb-2027 14:00Z**, borrador `c6290aee` → routine `trig_01Htsk9cNWagXEsLcdM4B6hZ` (19-ene 15:07Z). **Siguiente hueco EN: 23-feb 14:00Z.**
+
