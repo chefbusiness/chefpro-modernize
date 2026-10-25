@@ -202,5 +202,9 @@
  "pro-prompts-ebook": {
   "producto": "Pro Prompts Library",
   "ejemplos": "«escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina"
+ },
+ "plan-negocio-heladeria": {
+  "producto": "Plan de Negocio Heladería Artesanal",
+  "ejemplos": "«nata» es «crema de leche» o «crema para batir» en buena parte de América; «fresa» es «frutilla» en el Cono Sur; «obrador» se dice «taller» o «laboratorio» en Argentina, Uruguay y Chile, y «tesorería» es «flujo de caja»"
  }
 }
