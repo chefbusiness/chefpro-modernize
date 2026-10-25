@@ -23,12 +23,12 @@ export default function GuiaRestauranteGastronomico() {
     <>
       <Helmet>
         <title>Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol) | AI Chef Pro</title>
-        <meta name="description" content="Guía premium para montar un restaurante gastronómico en España: 22 capítulos, 80+ páginas, plan financiero, diseño de cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR." />
+        <meta name="description" content="Guía premium para montar un restaurante gastronómico en España: 22 capítulos, 24 páginas, plan financiero, diseño de cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="como montar restaurante gastronomico, abrir restaurante fine dining, estrella michelin requisitos, sol repsol restaurante, plan financiero restaurante, equipamiento cocina profesional, brigada cocina, restaurante 65 plazas, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-restaurante-gastronomico" />
         <meta property="og:title" content="Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol)" />
-        <meta property="og:description" content="Guía premium 80+ págs + 10 plantillas Excel + 8 checklists + business plan + manual de sala. 85 EUR." />
+        <meta property="og:description" content="Guía premium 24 págs + 10 plantillas Excel + 8 checklists + business plan + manual de sala. 85 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-restaurante-gastronomico" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />

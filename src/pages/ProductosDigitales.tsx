@@ -267,9 +267,9 @@ const products = [
     price: '€85',
     originalPrice: '€220',
     discount: '-61%',
-    description: 'Guía premium 80+ páginas: 22 capítulos, plan financiero, diseño cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan + manual de sala.',
+    description: 'Guía premium de 24 páginas: 22 capítulos, plan financiero, diseño cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan + manual de sala.',
     features: [
-      'PDF + DOCX: 22 capítulos, 80+ páginas',
+      'PDF + DOCX: 22 capítulos, 24 páginas',
       '10 plantillas Excel con fórmulas',
       '8 checklists de apertura completos',
       'Business plan modelo para bancos',

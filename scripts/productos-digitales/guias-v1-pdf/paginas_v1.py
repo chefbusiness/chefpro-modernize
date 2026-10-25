@@ -15,6 +15,9 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 REALES = {  # páginas del PDF A4 de LibreOffice (pdf_guias_v1.py, 25-oct-2026)
     'guia-panaderia-obrador': 14, 'guia-restaurante-casual': 21, 'guia-restaurante-japones': 23,
     'guia-restaurante-mexicano': 22, 'guia-restaurante-nikkei': 24, 'guia-restaurante-peruano': 22,
+    # Mismo defecto, cazado por paginas-gate al cerrar el PR #162: gastronómico anunciaba 119/80+ (PDF = Word,
+    # 24 págs.) y dark kitchen 40 (su PDF real tiene 27).
+    'guia-restaurante-gastronomico': 24, 'guia-dark-kitchen': 27,
 }
 # Toda mención de páginas, en los 7 idiomas: prefijo opcional («mais de», «plus de»…), número, «+», unidad.
 CLAIM = re.compile(r"(?P<pre>(?:mais de|plus de|más de|über|oltre|meer dan|more than|over)\s+)?"
