@@ -251,7 +251,7 @@ def gen_guide_docx():
     add_num("Licencia de música / SGAE")
     add_num("Libro de reclamaciones")
     doc.add_heading("Normativa ANISAKIS (OBLIGATORIA — crítica para sushi y sashimi)", level=2)
-    add_bullet("El Real Decreto 1420/2006 OBLIGA a congelar preventivamente todo pescado destinado a ser consumido crudo, marinado o poco hecho a -20°C durante al menos 24 horas (o -35°C durante 15 h).")
+    add_bullet("El Real Decreto 1021/2022 (art. 8.1, que derogó el Real Decreto 1420/2006) y el Reglamento (CE) 853/2004 OBLIGAN a congelar preventivamente todo pescado destinado a ser consumido crudo, marinado o poco hecho a -20°C durante al menos 24 horas en todas las partes del producto (o -35°C durante al menos 15 horas).")
     add_bullet("Aplica a: sashimi, sushi, nigiri, tataki, marinados en cítricos o vinagre.")
     add_bullet("El congelador debe ser específico y alcanzar la temperatura certificada. Conservar registros de congelación por lote.")
     add_bullet("Excepciones: pescado de acuicultura alimentado en condiciones controladas SIN riesgo de anisakis puede venderse fresco (requiere certificado del proveedor).")
@@ -1642,7 +1642,7 @@ def gen_manual_operaciones():
             "Cerrar puertas, alarma, luces.",
         ]),
         ("8. Protocolo Anisakis (PCC Crítico)", [
-            "La normativa RD 1420/2006 obliga a congelar preventivamente TODO pescado destinado a consumo crudo.",
+            "La normativa vigente (RD 1021/2022, art. 8.1, que derogó el RD 1420/2006) obliga a congelar preventivamente TODO pescado destinado a consumo crudo.",
             "Temperatura: -20°C durante mínimo 24 horas (o -35°C durante 15 horas).",
             "Equipamiento: congelador certificado que alcance y mantenga -20°C real (no un congelador doméstico).",
             "Registro OBLIGATORIO por lote: especie, proveedor, fecha entrada congelador, fecha salida, temperatura.",
