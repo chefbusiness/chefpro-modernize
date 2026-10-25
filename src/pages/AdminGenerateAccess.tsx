@@ -74,7 +74,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'plan-negocio-panaderia', label: 'Plan de Negocio Panadería / Obrador (€35)' },
   { id: 'plan-negocio-heladeria', label: 'Plan de Negocio Heladería Artesanal (€35)' },
   { id: 'plan-negocio-finca-eventos-bodas', label: 'Plan de Negocio Finca de Eventos y Bodas (€45)' },
-  { id: 'plan-negocio-pizzeria', label: 'Plan de Negocio Pizzería Napolitana (€35)' },
+  { id: 'plan-negocio-pizzeria', label: 'Plan de Negocio: Pizzería Napolitana (€35)' },
   { id: 'plan-negocio-food-truck', label: 'Plan de Negocio Food Truck (€29)' },
   { id: 'plan-negocio-cocteleria-eventos', label: 'Plan de Negocio Coctelería de Eventos (€55)' },
   { id: 'plan-negocio-parrillero-asador-eventos', label: 'Plan de Negocio Parrillero / Asador Eventos (€45)' },

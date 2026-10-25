@@ -65,14 +65,14 @@ export default function PlanNegocioPizzeriaDashboard() {
   return (
     <>
       <Helmet>
-        <title>Plan de Negocio Pizzería Napolitana — Dashboard | AI Chef Pro</title>
+        <title>Plan de Negocio: Pizzería Napolitana — Dashboard | AI Chef Pro</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
         <header className="sticky top-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-white/10">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-            <a href="/plan-negocio-pizzeria" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"><ArrowLeft className="w-4 h-4" />Plan de Negocio Pizzería Napolitana</a>
+            <a href="/plan-negocio-pizzeria" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"><ArrowLeft className="w-4 h-4" />Plan de Negocio: Pizzería Napolitana</a>
             <div className="flex items-center gap-2"><FileSpreadsheet className="w-5 h-5 text-[#FFD700]" /><span className="text-white font-bold text-sm">Tu Dashboard</span></div>
             <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] text-sm transition-colors">aichef.pro</a>
           </div>
@@ -128,7 +128,7 @@ export default function PlanNegocioPizzeriaDashboard() {
         </section>
         <footer className="py-8 px-4 border-t border-white/10">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Plan de Negocio Pizzería Napolitana · Todos los derechos reservados</p>
+            <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Plan de Negocio: Pizzería Napolitana · Todos los derechos reservados</p>
             <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
               <span className="text-gray-700 hidden md:inline">·</span>

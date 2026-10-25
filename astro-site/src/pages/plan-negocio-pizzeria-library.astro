@@ -1,5 +1,5 @@
 ---
-// Fase 5 — dashboard post-pago de Plan de Negocio Pizzería Napolitana (GENERADO por scripts/astro-migration/
+// Fase 5 — dashboard post-pago de Plan de Negocio: Pizzería Napolitana (GENERADO por scripts/astro-migration/
 // fase5-generate-zona-app.py — editar el generador, no este fichero).
 // Island client:only="react": ProtectedRoute lee localStorage en render
 // síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
@@ -12,7 +12,7 @@ import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
 import PlanNegocioPizzeriaLibraryIsland from '../islands/library/PlanNegocioPizzeriaLibraryIsland';
 ---
 
-<BaseLayout title="Plan de Negocio Pizzería Napolitana — Dashboard | AI Chef Pro" noindex whatsapp={false}>
+<BaseLayout title="Plan de Negocio: Pizzería Napolitana — Dashboard | AI Chef Pro" noindex whatsapp={false}>
   <FunctionsOriginPatch />
   <PlanNegocioPizzeriaLibraryIsland client:only="react" />
 </BaseLayout>

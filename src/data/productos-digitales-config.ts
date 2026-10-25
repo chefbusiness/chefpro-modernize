@@ -631,7 +631,7 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
   },
   'plan-negocio-pizzeria': {
     id: 'plan-negocio-pizzeria',
-    name: 'Plan de Negocio Pizzería Napolitana',
+    name: 'Plan de Negocio: Pizzería Napolitana',
     priceLabel: '€35',
     accessPath: '/plan-negocio-pizzeria-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Pizzería Napolitana',
