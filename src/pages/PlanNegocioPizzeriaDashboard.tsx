@@ -29,8 +29,8 @@ const TEMPLATES = [
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
-    title: 'Checklist de Apertura (__N_TAREAS__ tareas)',
-    desc: '__N_TAREAS__ tareas por fases para abrir tu pizzería: constitución y fiscalidad, local y licencias, obra y horno, equipo, marca y apertura.',
+    title: 'Checklist de Apertura (80 tareas)',
+    desc: '80 tareas por fases para abrir tu pizzería: constitución y fiscalidad, local y licencias, obra y horno, equipo, marca y apertura.',
   },
   {
     key: 'calculadora-masa',
@@ -65,14 +65,14 @@ export default function PlanNegocioPizzeriaDashboard() {
   return (
     <>
       <Helmet>
-        <title>Plan de Negocio Pizzería Napolitana — Dashboard | AI Chef Pro</title>
+        <title>Plan de Negocio: Pizzería Napolitana — Dashboard | AI Chef Pro</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
         <header className="sticky top-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-white/10">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-            <a href="/plan-negocio-pizzeria" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"><ArrowLeft className="w-4 h-4" />Plan de Negocio Pizzería Napolitana</a>
+            <a href="/plan-negocio-pizzeria" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"><ArrowLeft className="w-4 h-4" />Plan de Negocio: Pizzería Napolitana</a>
             <div className="flex items-center gap-2"><FileSpreadsheet className="w-5 h-5 text-[#FFD700]" /><span className="text-white font-bold text-sm">Tu Dashboard</span></div>
             <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] text-sm transition-colors">aichef.pro</a>
           </div>
@@ -83,7 +83,7 @@ export default function PlanNegocioPizzeriaDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-pizzeria" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel de 9 hojas con tesorería mes a mes, plan de negocio Word de 10 secciones, checklist de apertura de __N_TAREAS__ tareas y calculadora de masa y escandallo por pizza.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: plan financiero Excel de 9 hojas con tesorería mes a mes, plan de negocio Word de 10 secciones, checklist de apertura de 80 tareas y calculadora de masa y escandallo por pizza.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
@@ -128,7 +128,7 @@ export default function PlanNegocioPizzeriaDashboard() {
         </section>
         <footer className="py-8 px-4 border-t border-white/10">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Plan de Negocio Pizzería Napolitana · Todos los derechos reservados</p>
+            <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Plan de Negocio: Pizzería Napolitana · Todos los derechos reservados</p>
             <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
               <span className="text-gray-700 hidden md:inline">·</span>

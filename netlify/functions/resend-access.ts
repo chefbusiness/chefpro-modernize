@@ -601,7 +601,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/plan-negocio-pizzeria-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Pizzería Napolitana',
     emailTitle: 'Accede a tu Plan de Negocio: Pizzería Napolitana',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de __N_TAREAS__ tareas, calculadora de masa y escandallo por pizza y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día del horno y el servicio, el <a href="https://aichef.pro/kit-tareas-pizzeria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Pizzería</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas, calculadora de masa y escandallo por pizza y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día del horno y el servicio, el <a href="https://aichef.pro/kit-tareas-pizzeria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Pizzería</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
   'plan-negocio-food-truck': {

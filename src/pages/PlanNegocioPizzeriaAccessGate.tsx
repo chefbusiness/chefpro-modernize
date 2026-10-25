@@ -7,7 +7,7 @@ export default function PlanNegocioPizzeriaAccessGate() {
       storageKey="plan-negocio-pizzeria-jwt"
       dashboardPath="/plan-negocio-pizzeria-library"
       landingPath="/plan-negocio-pizzeria"
-      productLabel="Plan de Negocio Pizzería Napolitana"
+      productLabel="Plan de Negocio: Pizzería Napolitana"
     />
   );
 }

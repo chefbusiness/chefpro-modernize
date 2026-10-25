@@ -2,6 +2,34 @@
 
 > Sesión Claude Code (Mac). **No hay ninguno pendiente.**
 
+## ⏳ PENDIENTES (25-oct-2026, noche): los DOS de la pizzería, ES y EN — John: «dejar la versión en los dos idiomas en producción»
+
+### 1. Plan de Negocio: Pizzería Napolitana (ES) — PR #165
+
+Mismo patrón que la heladería (`plink_1UUSdP4CcdRGidmEm3lXcQyH`, 35 EUR):
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Pizzería Napolitana - AI Chef Pro |
+| Precio | **35,00 EUR**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-pizzeria-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | Plan de negocio completo para abrir una pizzería con horno de leña y sala: plan en Word de 10 secciones, plan financiero en Excel de 9 hojas con tesorería mes a mes, checklist de apertura de 80 tareas, calculadora de masa y escandallo por pizza y guía de equivalencias para Latinoamérica |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_PIZZERIA` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg` |
+
+### 2. Pizza Shop Business Plan Kit (EN) — rama `feat/pizza-shop-business-plan-en` (PR apilado, se fusiona después del ES)
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Pizza Shop Business Plan Kit - AI Chef Pro |
+| Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* (como el BBQ y la Paella) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/pizza-shop-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | Complete business plan kit to open a Neapolitan-style pizza shop with a wood-fired oven: a 10-section Word business plan, 3-year Excel financial projections with monthly cash flow, an opening checklist, a pizza dough and food cost calculator, and a hospitality equivalents guide for the US, UK, Canada and Australia |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PIZZA_SHOP_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg` |
+
 ## ✅ Plan de Negocio: Finca de Eventos y Bodas (ES) — PR #164, link creado el 25-oct-2026
 
 Link de John: https://buy.stripe.com/14A7sE4Og9gqajla3r6oo22 (`plink_1UUVHD4CcdRGidmEy72mv0Yh`). Comprobado con la CLI de
