@@ -745,3 +745,11 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Mismo día: **PR #160**, normativa derogada (RD 1420/2006 y RD 3484/2000 → RD 1021/2022) en 7 entregables vendidos, listo y
   verificado; fusionado con el visto bueno de John (merge `daf6f28a`). Arreglo en `censo-terminos-es.py` (leía las propias guías
   de equivalencias). Hallazgo para decidir: 6 guías ES con PDF de portada de 1 página y «60+ páginas» en la landing (handoff §5).
+- **Mismo día, por la tarde (John: «adelante con el arreglo rápido de las 6 guías»): PR #162 + #163 LIVE.** Las 6 guías ES v1
+  (panadería-obrador, casual, japonés, mexicano, nikkei, peruano) entregan ya el PDF real exportado del Word con LibreOffice en
+  el VPS (14 · 21 · 23 · 22 · 24 · 22 págs. A4), con el Word en A4, sin la página en blanco del nikkei y con las listas
+  numeradas reiniciando en 1. 137 menciones de páginas cambiadas por las reales (fichas, hubs ×7, SPA). Al cerrarlo,
+  `paginas-gate` cazó dos más con el mismo defecto: gastronómico (anunciaba 119; PDF = Word, 24 págs.) y dark kitchen (40 → 27).
+  **`paginas-gate` en todo el catálogo: 0 fallos** (estaba en rojo desde el 10-sep). Changelog 1.1.1 en las 7. Scripts:
+  `scripts/productos-digitales/guias-v1-pdf/`. LibreOffice + Carlito instalados en el VPS.
+  Pendiente que decide John: avisar por correo a quienes compraron estas guías de que vuelvan a descargar el PDF.
