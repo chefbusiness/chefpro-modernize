@@ -60,7 +60,7 @@ INVERSION = [
      'rótulo y la fachada (unos 2.500 €). Estimación del kit: pide dos presupuestos', 'Sí'),
     ('Chimenea de doble pared hasta cubierta, filtro de partículas y bancada del horno', 9000,
      'Conducto exclusivo hasta la cubierta y, con leña, filtro de partículas: Madrid pide superar en 1 m lo que haya '
-     'en 15 m (Ordenanza 4/2021). Nadie publica precio por metro: pide oferta con tu proyecto', 'Sí'),
+     'en 15 m (Ordenanza 4/2021). Ningún fabricante da precio por metro: pide oferta con tu proyecto', 'Sí'),
     ('Instalación eléctrica trifásica, cuadro y boletín', 6000,
      'Unos 25 kW en trifásica para el frío, la amasadora, el lavavajillas, la extracción y la climatización. Pregunta '
      'la potencia disponible ANTES de firmar: una acometida nueva tarda', 'Sí'),
@@ -232,7 +232,7 @@ def checklist(salida):
     # `motor.asegurar_instrucciones` no reescribe la hoja si ya existe: la del tapas bar nombraba su producto
     ins = wb['Instrucciones']
     assert 'plan-negocio-tapas-bar' in str(ins['A3'].value), ins['A3'].value
-    ins['A3'] = 'Este fichero forma parte del producto «%s» de AI Chef Pro.' % PID
+    ins['A3'] = 'Este fichero forma parte del «Plan de Negocio: Pizzería Napolitana» de AI Chef Pro.'   # m13: el nombre, no el slug
     _docprops(wb)
     wb.save(destino)
     return destino

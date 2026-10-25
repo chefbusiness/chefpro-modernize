@@ -6,7 +6,7 @@
  "brief": "scripts/productos-digitales/plan-pizzeria/BRIEF-REDACTORES.md (léelo entero antes)",
  "research": "scripts/productos-digitales/plan-pizzeria/F1-research-pizzeria.md (§0 hallazgos, §1 normativa, §2 precios, §3 caso, §4 SERP, §6 errores y riesgos: material de apoyo; la pista de la sección manda)",
  "nombre_de_la_carta (SPEC D11, literal en el fondo)": "«Pizza Napoletana» es una especialidad tradicional garantizada (ETG) CON reserva de nombre desde el 18-12-2022 (Reglamento de Ejecución (UE) 2022/2313), y el Reglamento (UE) 2024/1143 la protege contra todo uso indebido, imitación o evocación «aunque el nombre protegido esté traducido» (art. 68.1). Sólo puede llamarse «pizza napolitana» (o «napoletana») la pizza que cumple el pliego (Reglamento (UE) 97/2010: horno de leña, masa del día a temperatura ambiente, estirado a mano, mozzarella de búfala campana DOP o «Mozzarella» ETG) Y ha pasado la verificación oficial previa (arts. 72-73: comunicación a la autoridad, autocontrol y verificación por la autoridad o un organismo delegado acreditado). La AVPN es una asociación privada: su certificación no sustituye la verificación oficial. El caso NO usa el nombre: su carta dice «Margherita», «Marinara», «Diavola», «masa de fermentación larga» y «horno de leña»; la ETG es una opción que se explica (sin Excel). «Estilo napolitano» o «napolitana» en el rótulo es zona gris (posible evocación): «consúltalo antes». Nunca «certificada», «ETG» o «verace» como sello del lector ni del producto. El título del producto («Pizzería Napolitana») nombra el tipo de negocio, no etiqueta un alimento",
- "pliego_de_la_masa (Reglamento (UE) 97/2010)": "por 1 litro de agua: 1.800 g de harina de trigo tierno (W 220-380, proteína 11-12,5 %), 50-55 g de sal y 3 g de levadura de cerveza (un 55,6 % de hidratación, ≈ 2,9 % de sal y 0,17 % de levadura sobre la harina); 10 minutos de incorporación y 20 de amasado lento; 2 horas de primera fermentación en bloque; bolas a mano de 180-250 g; 4-6 horas de segunda fermentación a temperatura ambiente (unos 25 °C) y uso en las 6 horas siguientes, todo en ciclo continuo (sin frío, ni biga ni poolish); disco de 35 cm como máximo, centro de 0,4 cm y cornisa («cornicione») de 1-2 cm, sin rodillo ni prensa; solera a unos 485 °C y bóveda a unos 430 °C, 60-90 segundos, exclusivamente horno de leña. 1 kg de harina da unos 1.586 g de masa: 6 bolas de 250 g (8 de 200 g)",
+ "pliego_de_la_masa (Reglamento (UE) 97/2010)": "por 1 litro de agua: 1.800 g de harina de trigo tierno (W 220-380, proteína 11-12,5 %), 50-55 g de sal y 3 g de levadura de cerveza (un 55,6 % de hidratación, ≈ 2,9 % de sal y 0,17 % de levadura sobre la harina); 10 minutos de incorporación y 20 de amasado lento; 2 horas de primera fermentación en bloque; bolas a mano de 180-250 g; 4-6 horas de segunda fermentación a temperatura ambiente (unos 25 °C) y uso en las 6 horas siguientes, todo en ciclo continuo (sin frío, ni biga ni poolish); disco de 35 cm como máximo, centro de 0,4 cm y cornisa («cornicione») de 1-2 cm, sin rodillo ni prensa; solera a unos 485 °C y bóveda a unos 430 °C, 60-90 segundos, exclusivamente horno de leña. 1 kg de harina da unos 1.586 g de masa: 6 bolas de 250 g (casi 8 de 200 g)",
  "secciones": {
   "1": {
    "titulo": "1. Resumen Ejecutivo",
@@ -135,8 +135,8 @@
   "IS_GENERAL": "25 %",
   "IS_NUEVA": "15 %",
   "IVA_BEBIDA_LINEA": "10,8 %",
-  "IVA_INVERSION": "27.940 €",
-  "JORNADAS": "4,97",
+  "IVA_INVERSION": "27.941 €",
+  "JORNADAS": "4,98",
   "LAVAVAJILLAS": "6.000 €",
   "LENA_ANO": "3.600 €",
   "MANTENIMIENTO_HORNO": "2.400 €",
