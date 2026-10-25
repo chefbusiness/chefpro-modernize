@@ -61,6 +61,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Businessplan: Event- und Hochzeitslocation',
+    slug: '/plan-negocio-finca-eventos-bodas',
+    description: 'Vollständiger Businessplan für den Aufbau einer Event- und Hochzeitslocation auf einem gepachteten Anwesen, mit einem exklusiven Caterer in Konzession, der Ihnen eine Gebühr zahlt: Businessplan in Word mit 10 Abschnitten, Excel-Finanzplan mit 9 Blättern und der Hochzeitssaison, Eröffnungs-Checkliste mit 84 Aufgaben (einschließlich Genehmigung im Außenbereich), Preiskalkulator, Vertragsmuster und der Äquivalenzleitfaden für Lateinamerika.',
+    features: [
+      'Businessplan in Word mit 10 Abschnitten',
+      'Excel-Finanzplan mit der Hochzeitssaison',
+      'Eröffnungs-Checkliste: 84 Aufgaben, inklusive Genehmigung im Außenbereich',
+      'Preiskalkulator, Vertragsmuster und Äquivalenzleitfaden für Lateinamerika',
+    ],
+    iconName: 'PartyPopper',
+    image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
+    badge: '✨ Neu',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'catering', 'events', 'business-plan'],
+  },
+  {
     name: 'Businessplan: Handwerkliche Eisdiele',
     slug: '/plan-negocio-heladeria',
     description: 'Vollständiger Businessplan für die Eröffnung einer handwerklichen Eisdiele: Businessplan in Word mit 10 Abschnitten, Excel-Finanzplan mit lebendigen Formeln und eine Eröffnungs-Checkliste in Phasen, dazu der Äquivalenzleitfaden für Lateinamerika.',
@@ -136,8 +152,8 @@ const products = [
     ],
     iconName: 'CakeSlice',
     image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
-    badge: '✨ Neu',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Neu',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'pastry', 'bakery'],
   },
   {
@@ -903,7 +919,6 @@ const products = [
 const comingSoon = [
   { iconName: 'BarChart3', name: 'Betriebs-Dashboard-Kit', desc: 'Umsätze nach Zeitfenster und Gastraum, durchschnittlicher Bon, Tischumschlag und Produktivität pro Stunde – in einem einzigen Dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
   { iconName: 'Sandwich', name: 'Businessplan: Smash-Burger-Laden', desc: 'Vom Smash-Konzept bis zur Gewinnschwelle: Investition, Speisekarte, Kosten und eine Monatsprognose.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },
-  { iconName: 'PartyPopper', name: 'Businessplan: Event- und Hochzeitslocation', desc: 'Kapazität, Menüpakete, Hochzeitssaisonalität und Personal pro Event: der komplette Plan.', tags: ['business-plan', 'catering', 'excel'], phase: 'Q1 2027' },
   { iconName: 'Flame', name: 'Wiederkehrende Aufgaben: Hähnchenbraterei', desc: 'Spieße, Garzeiten, Gewichtsverlust und Service in der Stoßzeit, mit den Abläufen für jede Schicht.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
   { iconName: 'Utensils', name: 'Wiederkehrende Aufgaben: Arepa-Laden', desc: 'Teig, Füllungen, Plancha und Abschluss: der Tagesablauf eines Arepa-Ladens, Schicht für Schicht dokumentiert.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
   { iconName: 'Pizza', name: 'Businessplan: Neapolitanische Pizzeria', desc: 'Sauerteig, Ofen und Tischumschlag: der komplette Plan zur Eröffnung einer neapolitanischen Pizzeria.', tags: ['business-plan', 'pizzeria', 'excel'], phase: 'Q1 2027' },

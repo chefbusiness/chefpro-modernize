@@ -581,6 +581,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word (10 secciones), el plan financiero en Excel (9 hojas con fórmulas vivas), el checklist de apertura (80 tareas en 6 fases) y la Guía de Equivalencias para Latinoamérica:<br /><br />Para el día a día del obrador y el mostrador, el <a href="https://aichef.pro/kit-tareas-heladeria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Heladería</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada jornada.',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
+  'plan-negocio-finca-eventos-bodas': {
+    accessPath: '/plan-negocio-finca-eventos-bodas-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Finca de Eventos y Bodas',
+    emailTitle: 'Accede a tu Plan de Negocio: Finca de Eventos y Bodas',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word (10 secciones), el plan financiero en Excel (9 hojas con fórmulas vivas), el checklist de apertura (84 tareas en 6 fases), la calculadora de presupuesto del espacio, los modelos de contrato y la Guía de Equivalencias para Latinoamérica:<br /><br />Para el día a día del servicio de tu catering, el <a href="https://aichef.pro/kit-tareas-catering?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Catering</a> es su hermano: el plan te dice cómo abrir la finca, el kit cómo operar cada evento.',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
   'plan-negocio-food-truck': {
     accessPath: '/plan-negocio-food-truck-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Food Truck',

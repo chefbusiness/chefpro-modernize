@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Finca de Eventos y Bodas',
+    slug: '/plan-negocio-finca-eventos-bodas',
+    price: '€45',
+    description: 'Plan de negocio completo para montar una finca de eventos y bodas en régimen de arrendamiento, con catering exclusivo concesionado que paga un canon: plan en Word de 10 secciones, plan financiero en Excel de 9 hojas con la temporada de bodas, checklist de apertura de 84 tareas (con la licencia en suelo rústico), calculadora de presupuesto, modelos de contrato y la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel con la temporada de bodas',
+      'Checklist de apertura: 84 tareas, con la licencia en suelo rústico',
+      'Calculadora de presupuesto, modelos de contrato y Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: PartyPopper,
+    image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'catering', 'eventos', 'plan-negocio'],
+  },
+  {
     name: 'Plan de Negocio: Heladería Artesanal',
     slug: '/plan-negocio-heladeria',
     price: '€35',
@@ -130,8 +147,8 @@ const products = [
     ],
     icon: CakeSlice,
     image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'pasteleria', 'panaderia'],
   },
   {
@@ -1031,7 +1048,6 @@ const products = [
 const comingSoon = [
   { icon: BarChart3, name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
   { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
-  { icon: PartyPopper, name: 'Plan de Negocio: Finca de Eventos y Bodas', desc: 'Aforo, packs de menú cerrado, estacionalidad de bodas y personal por servicio: el plan completo.', tags: ['plan-negocio', 'catering', 'excel'], phase: 'Q1 2027' },
   { icon: Flame, name: 'Tareas Recurrentes: Pollería y Pollo a la Brasa', desc: 'Espetones, tiempos de asado, mermas y despacho en hora punta, con las rutinas de cada turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
   { icon: Utensils, name: 'Tareas Recurrentes: Arepería', desc: 'Masa, rellenos, plancha y cierre: el día a día de una arepería puesto por escrito, turno a turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
   { icon: Pizza, name: 'Plan de Negocio: Pizzería Napolitana', desc: 'Masa madre, horno y rotación de mesas: el plan completo para abrir una napolitana.', tags: ['plan-negocio', 'pizzeria', 'excel'], phase: 'Q1 2027' },

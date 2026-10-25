@@ -61,6 +61,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Plano de Negócios: Espaço para Eventos e Casamentos',
+    slug: '/plan-negocio-finca-eventos-bodas',
+    description: 'Plano de negócios completo para montar um espaço para eventos e casamentos numa propriedade arrendada, com catering exclusivo em regime de concessão que paga uma renda ao espaço: plano em Word com 10 secções, plano financeiro em Excel com 9 folhas e a época de casamentos, checklist de abertura com 84 tarefas (incluindo o licenciamento em solo rústico), calculadora de orçamentos, modelos de contrato e o Guia de Equivalências para a América Latina.',
+    features: [
+      'Plano de negócios em Word com 10 secções',
+      'Plano financeiro em Excel com a época de casamentos',
+      'Checklist de abertura: 84 tarefas, incluindo o licenciamento em solo rústico',
+      'Calculadora de orçamentos, modelos de contrato e Guia de Equivalências para a América Latina',
+    ],
+    iconName: 'PartyPopper',
+    image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
+    badge: '✨ Novo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'catering', 'events', 'business-plan'],
+  },
+  {
     name: 'Plano de Negócios: Gelataria Artesanal',
     slug: '/plan-negocio-heladeria',
     description: 'Plano de negócios completo para abrir uma gelataria artesanal: plano em Word com 10 secções, plano financeiro em Excel com fórmulas vivas e checklist de abertura por fases, mais o Guia de Equivalências para a América Latina.',
@@ -136,8 +152,8 @@ const products = [
     ],
     iconName: 'CakeSlice',
     image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
-    badge: '✨ Novo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Novo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'pastry', 'bakery'],
   },
   {
@@ -903,7 +919,6 @@ const products = [
 const comingSoon = [
   { iconName: 'BarChart3', name: 'Kit de Dashboard de Operações', desc: 'Vendas por intervalo de tempo e área de refeições, ticket médio, rotação de mesas e produtividade por hora, num único dashboard.', tags: ['excel', 'management', 'templates'], phase: 'T4 2026' },
   { iconName: 'Sandwich', name: 'Plano de Negócios: Smash Burger Joint', desc: 'Do conceito smash ao ponto de equilíbrio: investimento, ementa, custos e previsão mês a mês.', tags: ['business-plan', 'burger', 'excel'], phase: 'T4 2026' },
-  { iconName: 'PartyPopper', name: 'Plano de Negócios: Espaço para Eventos e Casamentos', desc: 'Capacidade, pacotes de ementa fechada, sazonalidade de casamentos e equipa por evento: o plano completo.', tags: ['business-plan', 'catering', 'excel'], phase: 'T1 2027' },
   { iconName: 'Flame', name: 'Tarefas Recorrentes: Loja de Frango Assado', desc: 'Espetos, tempos de assadura, perda de rendimento e serviço nas horas de ponta, com as rotinas de cada turno.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
   { iconName: 'Utensils', name: 'Tarefas Recorrentes: Loja de Arepas', desc: 'Massa, recheios, chapa e encerramento: a rotina diária de uma loja de arepas documentada, turno a turno.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
   { iconName: 'Pizza', name: 'Plano de Negócios: Pizzaria Napolitana', desc: 'Massa mãe, forno e rotação de mesas: o plano completo para abrir uma pizzaria napolitana.', tags: ['business-plan', 'pizzeria', 'excel'], phase: 'T1 2027' },
