@@ -28,7 +28,7 @@ export default function GuiaRestauranteNikkei() {
         <meta name="keywords" content="como montar restaurante nikkei españa, cocina nikkei fusion peruano japonesa, tiraditos, ceviche nikkei, omakase nikkei, leche de tigre, aji amarillo, barra pisco sake, proveedores pescado sashimi grade españa, anisakis, plan financiero restaurante nikkei, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-restaurante-nikkei" />
         <meta property="og:title" content="Cómo Montar un Restaurante Nikkei 60 Plazas — Guía Completa España" />
-        <meta property="og:description" content="Guía premium 60+ págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
+        <meta property="og:description" content="Guía premium 24 págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-restaurante-nikkei" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />

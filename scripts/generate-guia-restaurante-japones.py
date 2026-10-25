@@ -1678,7 +1678,12 @@ def gen_manual_operaciones():
 # 5. PDF placeholder
 # ═══════════════════════════════════════════════════════════
 def gen_guide_pdf():
-    """Generate a minimal placeholder PDF using the DOCX content."""
+    """Generate a minimal placeholder PDF using the DOCX content.
+
+    OJO (25-oct-2026): esta portada de 1 página llegó a venderse como «guía PDF». El PDF publicado es el
+    real, exportado con LibreOffice por scripts/productos-digitales/guias-v1-pdf/pdf_guias_v1.py (que además
+    pasa el docx a A4 y arregla saltos y listas). Si se regenera la guía, correr ese script después.
+    """
     try:
         from reportlab.lib.pagesizes import A4
         from reportlab.pdfgen import canvas

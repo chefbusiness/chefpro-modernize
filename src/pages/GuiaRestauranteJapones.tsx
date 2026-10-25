@@ -23,12 +23,12 @@ export default function GuiaRestauranteJapones() {
     <>
       <Helmet>
         <title>Cómo Montar un Restaurante Japonés 60 Plazas — Guía Completa España | AI Chef Pro</title>
-        <meta name="description" content="Guía premium para montar un restaurante japonés en España: 20 capítulos, 60+ páginas, sushi-ya, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi-grade. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
+        <meta name="description" content="Guía premium para montar un restaurante japonés en España: 20 capítulos, 23 páginas, sushi-ya, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi-grade. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="como montar restaurante japones españa, abrir sushi bar, restaurante japones autentico, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi grade, anisakis, sake, whisky japones, plan financiero restaurante japones, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-restaurante-japones" />
         <meta property="og:title" content="Cómo Montar un Restaurante Japonés 60 Plazas — Guía Completa España" />
-        <meta property="og:description" content="Guía premium 60+ págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
+        <meta property="og:description" content="Guía premium 23 págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-restaurante-japones" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />

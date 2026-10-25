@@ -13,7 +13,7 @@ const data: GuiaData = {
 
   seo: {
     title: 'Cómo Montar un Restaurante Mexicano 80 Plazas — Guía Completa España | AI Chef Pro',
-    description: 'Guía premium para montar un restaurante mexicano en España: 20 capítulos, 60+ páginas, proveedores de productos mexicanos, barra de tequilas, tacos, escandallos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
+    description: 'Guía premium para montar un restaurante mexicano en España: 20 capítulos, 22 páginas, proveedores de productos mexicanos, barra de tequilas, tacos, escandallos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
     keywords: 'como montar restaurante mexicano españa, abrir taqueria, restaurante mexicano autentico, proveedores productos mexicanos españa, barra tequilas mezcal, tacos al pastor, plan financiero restaurante mexicano, AI Chef Pro',
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-mexicano-hero.jpg',
   },
@@ -25,9 +25,9 @@ const data: GuiaData = {
     titlePre: 'Cómo Montar un ',
     titleGold: 'Restaurante Mexicano',
     subtitleLine: '80 Plazas · Guía Completa España',
-    description: 'Guía completa con 20 capítulos, 60+ páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu restaurante de cocina mexicana.',
+    description: 'Guía completa con 20 capítulos, 22 páginas, 8 plantillas Excel, 6 checklists, business plan modelo y manual de operaciones. Todo para abrir tu restaurante de cocina mexicana.',
     checkItems: [
-      'Guía completa PDF + DOCX editable (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX editable (20 capítulos, 22 páginas)',
       '8 plantillas Excel con fórmulas: plan financiero, escandallos, menú engineering',
       '6 checklists de apertura: legal, equipamiento, APPCC, sala, contratación, marketing',
       'Business Plan modelo para presentar a bancos e inversores',
@@ -153,7 +153,7 @@ const data: GuiaData = {
     heading: 'No Abras Tu Restaurante a Ciegas',
     subtitle: 'Todo lo que necesitas por menos de lo que cuesta una cena para cuatro.',
     items: [
-      'Guía completa PDF + DOCX (20 capítulos, 60+ páginas)',
+      'Guía completa PDF + DOCX (20 capítulos, 22 páginas)',
       '8 plantillas Excel con fórmulas',
       '6 checklists de apertura completos',
       'Business Plan modelo para bancos',

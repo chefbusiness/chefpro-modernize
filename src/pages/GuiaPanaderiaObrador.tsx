@@ -23,12 +23,12 @@ export default function GuiaPanaderiaObrador() {
     <>
       <Helmet>
         <title>Cómo Montar una Panadería con Obrador — Guía Completa España 2026 | AI Chef Pro</title>
-        <meta name="description" content="Guía premium para montar una panadería con obrador en España 2026: 20 capítulos, 70+ páginas, plan financiero, recetario masa madre, salida de humos, APPCC obrador, alérgenos. 9 plantillas Excel + 6 checklists + business plan + manual del obrador. 65 EUR." />
+        <meta name="description" content="Guía premium para montar una panadería con obrador en España 2026: 20 capítulos, 14 páginas, plan financiero, recetario masa madre, salida de humos, APPCC obrador, alérgenos. 9 plantillas Excel + 6 checklists + business plan + manual del obrador. 65 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="como montar panaderia, abrir panaderia con obrador, panaderia masa madre España, plan financiero panaderia, salida de humos panaderia, licencia clasificada panaderia, APPCC obrador panaderia, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-panaderia-obrador" />
         <meta property="og:title" content="Cómo Montar una Panadería con Obrador — Guía Completa España 2026" />
-        <meta property="og:description" content="Guía premium 70+ págs + 9 plantillas Excel + 6 checklists + business plan + manual del obrador con recetario masa madre. 65 EUR." />
+        <meta property="og:description" content="Guía premium 14 págs + 9 plantillas Excel + 6 checklists + business plan + manual del obrador con recetario masa madre. 65 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-panaderia-obrador" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -39,7 +39,7 @@ export default function GuiaPanaderiaObrador() {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cómo Montar una Panadería con Obrador — Guía España 2026" />
-        <meta name="twitter:description" content="Guía premium 70+ págs + 9 plantillas Excel + 6 checklists + business plan + manual del obrador. 65 EUR." />
+        <meta name="twitter:description" content="Guía premium 14 págs + 9 plantillas Excel + 6 checklists + business plan + manual del obrador. 65 EUR." />
         <meta name="twitter:image" content="https://aichef.pro/og-guia-panaderia-obrador.jpg" />
 
         <script type="application/ld+json">{JSON.stringify({

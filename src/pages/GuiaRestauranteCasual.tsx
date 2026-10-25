@@ -23,12 +23,12 @@ export default function GuiaRestauranteCasual() {
     <>
       <Helmet>
         <title>Cómo Montar un Restaurante Casual 80 Plazas — Guía Completa España | AI Chef Pro</title>
-        <meta name="description" content="Guía premium para montar un restaurante casual en España: 20 capítulos, 60+ páginas, plan financiero, diseño de cocina y sala, delivery, terraza, menú del día. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
+        <meta name="description" content="Guía premium para montar un restaurante casual en España: 20 capítulos, 21 páginas, plan financiero, diseño de cocina y sala, delivery, terraza, menú del día. 8 plantillas Excel + 6 checklists + business plan. 65 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="como montar restaurante casual, abrir restaurante casual dining, plan financiero restaurante, equipamiento cocina restaurante, delivery restaurante, terraza restaurante licencia, menu del dia restaurante, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-restaurante-casual" />
         <meta property="og:title" content="Cómo Montar un Restaurante Casual 80 Plazas — Guía Completa España" />
-        <meta property="og:description" content="Guía premium 60+ págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
+        <meta property="og:description" content="Guía premium 21 págs + 8 plantillas Excel + 6 checklists + business plan + manual de operaciones. 65 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-restaurante-casual" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
