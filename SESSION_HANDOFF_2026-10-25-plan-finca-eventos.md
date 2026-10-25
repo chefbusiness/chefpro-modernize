@@ -1,7 +1,12 @@
 # SESSION HANDOFF — 25-oct-2026 · Plan de Negocio: Finca de Eventos y Bodas (ES, 45 €) (sesión Claude Code, Mac + VPS)
 
 ## 0. Estado en una línea
-**Producto nº 53 LISTO a falta del Payment Link de John** (PR #164, draft, rama `feat/plan-negocio-finca-eventos`).
+✅ **CERRADO: producto nº 53 LIVE el 25-oct por la tarde** — PR #164 → merge `769a0e26`. Link de John
+`plink_1UUVHD4CcdRGidmEy72mv0Yh` comprobado con la CLI; env `VITE_STRIPE_PAYMENT_LINK_PLAN_FINCA_EVENTOS`. Gates LIVE: postpago 1/6/0,
+tienda, robots, Miselup 106/106, fase 6 con sus 3 congelados; checkout cripto 200 (pedido QA `qa-finca@aichef.pro`, purgar con
+`ADMIN_PASSWORD`); sitemap reenviado. Correo: prueba a John + borrador `c41977a6` → routine `trig_01QkpkZGN18qx4WPpWQBp8FT`
+(3-nov 15:07Z) lo programa para el **3-dic 08:00Z**. Antes del merge se fusionó `main` en la rama (conflictos de cola en
+`sitemap-lastmod.json` y el calendario).
 John (25-oct): «Finca de Eventos y Bodas como siguiente producto nuevo. Adelante». Hecho el mismo día, en ≈ 4 h y ≈ 3,1 M tokens
 de subagentes (techo M: 5 M).
 
