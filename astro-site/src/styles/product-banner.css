@@ -1,0 +1,116 @@
+/* Banner de producto digital dentro del cuerpo del blog y el glosario.
+   Marca: amarillo #FFDE59, negro #0D131A, blanco. El logo es el wordmark
+   blanco (el SVG de la marca es negro y desaparece sobre la tarjeta). */
+
+aside.dp-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1.75rem 0;
+  overflow: hidden;
+  background: #0d131a;
+  color: #fff;
+  border: 2px solid #ffde59;
+  border-radius: 14px;
+}
+
+aside.dp-banner .dp-banner__photo {
+  display: block;
+  width: 100%;
+  height: 180px;
+  margin: 0;
+  flex: none;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+aside.dp-banner .dp-banner__body {
+  flex: 1;
+  min-width: 0;
+  padding: 16px 20px 18px;
+  color: #fff;
+}
+
+aside.dp-banner .dp-banner__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+aside.dp-banner .dp-banner__tag {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffde59;
+}
+
+aside.dp-banner .dp-banner__logo {
+  display: block;
+  width: auto;
+  height: 18px;
+  max-width: 140px;
+  margin: 0;
+  flex: none;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+aside.dp-banner .dp-banner__title {
+  margin: 6px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+
+aside.dp-banner .dp-banner__price {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+aside.dp-banner .dp-banner__cta {
+  display: inline-block;
+  padding: 9px 16px;
+  background: #ffde59;
+  color: #0d131a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+aside.dp-banner .dp-banner__cta:hover {
+  background: #ffe56d;
+  color: #0d131a;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  aside.dp-banner {
+    flex-direction: row;
+  }
+
+  aside.dp-banner .dp-banner__photo {
+    width: 200px;
+    height: auto;
+    align-self: stretch;
+    min-height: 160px;
+  }
+}
+
+/* Por encima de prose (márgenes de p, color de enlaces, radio de img). */
+.blog-prose aside.dp-banner,
+.blog-prose aside.dp-banner p,
+.blog-prose aside.dp-banner a,
+.blog-prose aside.dp-banner img {
+  max-width: 100%;
+}

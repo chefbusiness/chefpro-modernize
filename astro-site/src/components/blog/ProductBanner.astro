@@ -1,0 +1,17 @@
+---
+import { renderProductBanner } from '../../lib/product-banners.mjs';
+import '../../styles/product-banner.css';
+
+interface Props {
+  id: string;
+  title: string;
+  price: string;
+  image: string;
+  href: string;
+  catalogue?: 'es' | 'en';
+}
+
+const html = renderProductBanner(Astro.props);
+---
+<!-- Clases que Tailwind tiene que generar: not-prose dp-banner -->
+<Fragment set:html={html} />
