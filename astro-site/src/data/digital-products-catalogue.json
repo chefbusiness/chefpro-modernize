@@ -1,0 +1,580 @@
+{
+ "es": [
+  {
+   "url": "https://aichef.pro/plan-negocio-pizzeria",
+   "tags": "excel plantillas costes pizzeria plan-negocio",
+   "title": "Plan de Negocio: Pizzería Napolitana",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg",
+   "price": "€35"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-finca-eventos-bodas",
+   "tags": "excel plantillas costes catering eventos plan-negocio",
+   "title": "Plan de Negocio: Finca de Eventos y Bodas",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-finca-hero.jpg",
+   "price": "€45"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-heladeria",
+   "tags": "excel plantillas costes heladeria obrador plan-negocio",
+   "title": "Plan de Negocio: Heladería Artesanal",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg",
+   "price": "€35"
+  },
+  {
+   "url": "https://aichef.pro/guia-churreria-chocolateria",
+   "tags": "pdf excel guias plantillas gestion chocolateria",
+   "title": "Cómo Montar una Churrería-Chocolatería",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-churreria-hero.jpg",
+   "price": "€65"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-taqueria",
+   "tags": "excel plantillas gestion taqueria mexicano restaurante",
+   "title": "Tareas Recurrentes: Taquería Mexicana",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg",
+   "price": "€14 / €69"
+  },
+  {
+   "url": "https://aichef.pro/guia-chocolateria-obrador",
+   "tags": "pdf excel guias plantillas gestion chocolateria",
+   "title": "Cómo Montar una Chocolatería Boutique & Atelier",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg",
+   "price": "€65"
+  },
+  {
+   "url": "https://aichef.pro/guia-pasteleria-obrador",
+   "tags": "pdf excel guias plantillas gestion pasteleria panaderia",
+   "title": "Cómo Montar una Pastelería",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg",
+   "price": "€65"
+  },
+  {
+   "url": "https://aichef.pro/manual-chef-ejecutivo",
+   "tags": "pdf excel plantillas manuales gestion seguridad restaurante hotel catering",
+   "title": "Manual del Chef Ejecutivo",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/manual-chef-hero.jpg",
+   "price": "€65"
+  },
+  {
+   "url": "https://aichef.pro/manual-manager-restaurante",
+   "tags": "pdf excel plantillas manuales gestion restaurante bar cafeteria hotel catering",
+   "title": "Manual del Manager de Restaurante",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/manual-manager-hero.jpg",
+   "price": "€55"
+  },
+  {
+   "url": "https://aichef.pro/guia-food-cost-ingenieria-menu",
+   "tags": "pdf excel plantillas guias costes gestion restaurante bar pasteleria dark-kitchen hotel catering",
+   "title": "Guía Food Cost + Ingeniería de Menú",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg",
+   "price": "€55"
+  },
+  {
+   "url": "https://aichef.pro/kit-escandallos",
+   "tags": "excel plantillas costes restaurante cafeteria pizzeria hamburgueseria dark-kitchen pasteleria bar catering hotel heladeria chocolateria",
+   "title": "Kit de Escandallos Pro",
+   "image": "https://aichef.pro/kit-escandallos-hero.jpg",
+   "price": "€12 / €49"
+  },
+  {
+   "url": "https://aichef.pro/pro-prompts-ebook",
+   "tags": "pdf ia",
+   "title": "Gastro Pro Prompts eBook",
+   "image": "https://aichef.pro/ebook-mockup-bundle.webp",
+   "price": "€9 / €50"
+  },
+  {
+   "url": "https://aichef.pro/pack-appcc",
+   "tags": "excel plantillas seguridad restaurante cafeteria pizzeria hamburgueseria dark-kitchen pasteleria bar catering hotel heladeria chocolateria",
+   "title": "Pack Plantillas APPCC",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg",
+   "price": "€14 / €29"
+  },
+  {
+   "url": "https://aichef.pro/kit-inventario",
+   "tags": "excel plantillas gestion restaurante cafeteria pizzeria hamburgueseria dark-kitchen pasteleria bar catering hotel heladeria chocolateria",
+   "title": "Kit Control de Inventario y Compras",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/inventario-hero.jpg",
+   "price": "€14 / €49"
+  },
+  {
+   "url": "https://aichef.pro/guia-restaurante-gastronomico",
+   "tags": "pdf guias restaurante",
+   "title": "Cómo Montar un Restaurante Gastronómico",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-dk-cocina.jpg",
+   "price": "€85 / €220"
+  },
+  {
+   "url": "https://aichef.pro/guia-restaurante-casual",
+   "tags": "pdf guias restaurante",
+   "title": "Cómo Montar un Restaurante Casual",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-casual-hero.jpg",
+   "price": "€65 / €180"
+  },
+  {
+   "url": "https://aichef.pro/guia-panaderia-obrador",
+   "tags": "pdf guias pasteleria panaderia obrador",
+   "title": "Cómo Montar una Panadería con Obrador",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-panaderia-hero.jpg",
+   "price": "€65 / €180"
+  },
+  {
+   "url": "https://aichef.pro/guia-restaurante-mexicano",
+   "tags": "pdf guias restaurante",
+   "title": "Cómo Montar un Restaurante Mexicano",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-mexicano-hero.jpg",
+   "price": "€65 / €180"
+  },
+  {
+   "url": "https://aichef.pro/guia-restaurante-peruano",
+   "tags": "pdf guias restaurante",
+   "title": "Cómo Montar un Restaurante Peruano",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-peruano-hero.jpg",
+   "price": "€65 / €180"
+  },
+  {
+   "url": "https://aichef.pro/guia-restaurante-japones",
+   "tags": "pdf guias restaurante",
+   "title": "Cómo Montar un Restaurante Japonés",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg",
+   "price": "€65 / €180"
+  },
+  {
+   "url": "https://aichef.pro/guia-restaurante-nikkei",
+   "tags": "pdf guias restaurante",
+   "title": "Cómo Montar un Restaurante Nikkei",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-restaurante-nikkei-hero.jpg",
+   "price": "€65 / €180"
+  },
+  {
+   "url": "https://aichef.pro/guia-dark-kitchen",
+   "tags": "pdf guias dark-kitchen",
+   "title": "Cómo Montar una Dark Kitchen",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-dk-hero.jpg",
+   "price": "€24 / €90"
+  },
+  {
+   "url": "https://aichef.pro/kit-gestion-personal",
+   "tags": "excel plantillas gestion restaurante cafeteria pizzeria hamburgueseria dark-kitchen pasteleria bar catering hotel heladeria chocolateria",
+   "title": "Kit Gestión de Personal y Turnos",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg",
+   "price": "€14 / €49"
+  },
+  {
+   "url": "https://aichef.pro/kit-plan-financiero",
+   "tags": "excel plantillas costes restaurante cafeteria pizzeria hamburgueseria dark-kitchen pasteleria bar catering hotel heladeria chocolateria",
+   "title": "Kit Plan Financiero para Restaurantes",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-financiero-hero.jpg",
+   "price": "€39 / €190"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-bar-restaurante",
+   "tags": "excel plantillas costes restaurante bar plan-negocio",
+   "title": "Plan de Negocio: Bar-Restaurante",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-bar-restaurante-hero.jpg",
+   "price": "€35 / €120"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-tapas-bar",
+   "tags": "excel plantillas costes bar tapas gastrobar plan-negocio",
+   "title": "Plan de Negocio: Tapas Bar / Gastrobar",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-tapas-bar-hero.jpg",
+   "price": "€35 / €120"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-cafeteria",
+   "tags": "excel plantillas costes cafeteria brunch plan-negocio",
+   "title": "Plan de Negocio: Cafetería / Brunch",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-cafeteria-hero.jpg",
+   "price": "€9,50 / €29 / €99"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-panaderia",
+   "tags": "excel plantillas costes panaderia obrador plan-negocio",
+   "title": "Plan de Negocio: Panadería / Obrador",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-panaderia-hero.jpg",
+   "price": "€4,50 / €35 / €120"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-food-truck",
+   "tags": "excel plantillas costes food-truck street-food plan-negocio gastro-movil",
+   "title": "Plan de Negocio: Food Truck",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-food-truck-hero.jpg",
+   "price": "€29 / €99"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-cocteleria-eventos",
+   "tags": "plan-negocio cocteleria eventos gastro-movil",
+   "title": "Plan de Negocio: Coctelería de Eventos / Barra Móvil",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg",
+   "price": "€55 / €165"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-parrillero-asador-eventos",
+   "tags": "plan-negocio parrillero asador eventos gastro-movil",
+   "title": "Plan de Negocio: Parrillero / Asador para Eventos",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-hero.jpg",
+   "price": "€45 / €165"
+  },
+  {
+   "url": "https://aichef.pro/plan-negocio-paellero-eventos",
+   "tags": "plan-negocio paellero paella arroceria eventos gastro-movil",
+   "title": "Plan de Negocio: Paellero / Paella para Eventos",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-paellero-eventos-hero.jpg",
+   "price": "€45 / €165"
+  },
+  {
+   "url": "https://aichef.pro/plan-catering-tematico-eventos",
+   "tags": "plan-negocio catering eventos gastro-movil multi-concepto",
+   "title": "Plan de Negocio: Catering & Kit Temático para Eventos",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-catering-tematico-eventos-hero.jpg",
+   "price": "€45 / €165"
+  },
+  {
+   "url": "https://aichef.pro/plan-chef-privado-showcooking-eventos",
+   "tags": "plan-negocio chef-privado showcooking personal-chef eventos gastro-movil",
+   "title": "Plan de Negocio: Chef Privado / Showcooking a Domicilio",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-chef-privado-showcooking-hero.jpg",
+   "price": "€45 / €165"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas",
+   "tags": "excel plantillas gestion restaurante",
+   "title": "Tareas Recurrentes: Restaurante Casual",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg",
+   "price": "€14 / €49"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-cafeteria",
+   "tags": "excel plantillas gestion cafeteria",
+   "title": "Tareas Recurrentes: Cafetería / Brunch",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-pizzeria",
+   "tags": "excel plantillas gestion pizzeria",
+   "title": "Tareas Recurrentes: Pizzería",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-hamburgueseria",
+   "tags": "excel plantillas gestion hamburgueseria",
+   "title": "Tareas Recurrentes: Hamburguesería",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-burger-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-dark-kitchen",
+   "tags": "excel plantillas gestion dark-kitchen",
+   "title": "Tareas Recurrentes: Dark Kitchen",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-dk-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-pasteleria",
+   "tags": "excel plantillas gestion pasteleria",
+   "title": "Tareas Recurrentes: Pastelería / Obrador",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-bar",
+   "tags": "excel plantillas gestion bar",
+   "title": "Tareas Recurrentes: Bar / Cocktails",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-bar-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-catering",
+   "tags": "excel plantillas gestion catering gastro-movil",
+   "title": "Tareas Recurrentes: Catering / Eventos",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-catering-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-hotel",
+   "tags": "excel plantillas gestion hotel",
+   "title": "Tareas Recurrentes: Hotel Completo",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg",
+   "price": "€18,50 / €95"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-heladeria",
+   "tags": "excel plantillas gestion heladeria",
+   "title": "Tareas Recurrentes: Heladería Artesanal",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-chocolateria",
+   "tags": "excel plantillas gestion chocolateria",
+   "title": "Tareas Recurrentes: Chocolatería / Obrador",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-restaurante-creativo",
+   "tags": "excel plantillas gestion restaurante",
+   "title": "Tareas Recurrentes: Restaurante Creativo / De Autor",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-chef-privado",
+   "tags": "excel plantillas gestion chef-privado",
+   "title": "Tareas Recurrentes: Chef Privado / Personal Chef",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg",
+   "price": "€18 / €85"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-sushi-bar",
+   "tags": "excel plantillas gestion sushi-bar japones",
+   "title": "Tareas Recurrentes: Sushi Bar",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-sushi-bar-hero.jpg",
+   "price": "€14 / €69"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-asador",
+   "tags": "excel plantillas gestion asador parrilla josper",
+   "title": "Tareas Recurrentes: Asador / Parrilla y Josper",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-asador-hero.jpg",
+   "price": "€14 / €69"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-marisqueria",
+   "tags": "excel plantillas gestion marisqueria pescado marisco",
+   "title": "Tareas Recurrentes: Marisquería con Vivero y APPCC",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg",
+   "price": "€14 / €69"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-tapas-bar",
+   "tags": "excel plantillas gestion tapas gastrobar bar",
+   "title": "Tareas Recurrentes: Tapas Bar / Gastrobar",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-bar-hero.jpg",
+   "price": "€14 / €69"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-food-truck",
+   "tags": "excel plantillas gestion food-truck street-food eventos gastro-movil",
+   "title": "Tareas Recurrentes: Food Truck",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/kit-tareas-panaderia",
+   "tags": "excel plantillas gestion panaderia obrador masas-madre",
+   "title": "Tareas Recurrentes: Panadería / Obrador",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg",
+   "price": "€12 / €39"
+  },
+  {
+   "url": "https://aichef.pro/mega-pack-tareas",
+   "tags": "excel plantillas bundle restaurante cafeteria pizzeria hamburgueseria dark-kitchen pasteleria bar catering hotel heladeria chocolateria chef-privado",
+   "title": "Mega Pack Tareas Recurrentes — 13 Kits",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg",
+   "price": "€89 / €180"
+  }
+ ],
+ "en": [
+  {
+   "url": "https://aichef.pro/en/digital-products/pizza-shop-business-plan",
+   "tags": "excel templates costs pizzeria business-plan",
+   "title": "Pizza Shop Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/paella-catering-business-plan",
+   "tags": "excel templates costs catering events mobile-catering business-plan",
+   "title": "Paella Catering Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-paellero-eventos-hero.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/bbq-catering-business-plan",
+   "tags": "excel templates costs catering events mobile-catering business-plan",
+   "title": "BBQ Catering Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-2.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/pastry-shop-checklist-templates",
+   "tags": "excel templates management pastry",
+   "title": "Pastry Shop Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/chocolate-shop-checklist-templates",
+   "tags": "excel templates management chocolate",
+   "title": "Chocolate Shop Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/use-case-chocolatero-bombones.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/ice-cream-shop-checklist-templates",
+   "tags": "excel templates management ice-cream",
+   "title": "Ice Cream Shop Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/use-case-heladeria-conos.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/ghost-kitchen-checklist-templates",
+   "tags": "excel templates management dark-kitchen",
+   "title": "Ghost Kitchen Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-dk-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/burger-joint-checklist-templates",
+   "tags": "excel templates management burger",
+   "title": "Burger Joint Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-burger-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/pizza-shop-checklist-templates",
+   "tags": "excel templates management pizzeria",
+   "title": "Pizza Shop Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/catering-checklist-templates",
+   "tags": "excel templates management catering mobile-catering",
+   "title": "Catering Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-catering-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/coffee-shop-checklist-templates",
+   "tags": "excel templates management cafe",
+   "title": "Coffee Shop Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/use-case-coffee-shop-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/bar-checklist-templates",
+   "tags": "excel templates management bar",
+   "title": "Bar Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-bar-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/restaurant-checklist-templates",
+   "tags": "excel templates management restaurant",
+   "title": "Restaurant Checklists Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/how-to-open-a-pastry-shop",
+   "tags": "pdf excel guides templates management pastry bakery",
+   "title": "How to Open a Pastry Shop",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg",
+   "price": "$69"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide",
+   "tags": "pdf excel templates guides costs management restaurant bar pastry dark-kitchen hotel catering",
+   "title": "Food Cost + Menu Engineering Guide",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg",
+   "price": "$59"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/mobile-bar-business-plan",
+   "tags": "excel templates costs bar events mobile-catering business-plan",
+   "title": "Mobile Bar Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/catering-business-plan",
+   "tags": "excel templates costs catering events mobile-catering business-plan",
+   "title": "Catering Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-catering-transporte.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/bar-business-plan",
+   "tags": "excel templates costs bar tapas gastropub business-plan",
+   "title": "Bar Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/tareas-bar-cristaleria.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/restaurant-business-plan",
+   "tags": "excel templates costs restaurant bar business-plan",
+   "title": "Restaurant Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/rbp-en-hero.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/bakery-business-plan",
+   "tags": "excel templates costs bakery production-kitchen business-plan",
+   "title": "Bakery Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/bbp-en-hero.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/food-truck-business-plan",
+   "tags": "excel templates costs food-truck street-food business-plan mobile-catering",
+   "title": "Food Truck Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/ftbp-en-hero.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/coffee-shop-business-plan",
+   "tags": "excel templates costs cafe brunch business-plan",
+   "title": "Coffee Shop Business Plan Kit",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/csbp-en-hero.jpg",
+   "price": "$39"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/restaurant-financial-plan-templates",
+   "tags": "excel templates costs restaurant cafe pizzeria burger dark-kitchen pastry bar catering hotel ice-cream chocolate",
+   "title": "Restaurant Financial Plan Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/fin-en-hero.jpg",
+   "price": "$49"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/restaurant-schedule-templates",
+   "tags": "excel templates management restaurant cafe pizzeria burger dark-kitchen pastry bar catering hotel ice-cream chocolate",
+   "title": "Restaurant Staff Scheduling Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/staff-en-schedule-board.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/haccp-templates",
+   "tags": "excel templates food-safety restaurant cafe pizzeria burger dark-kitchen pastry bar catering hotel ice-cream chocolate",
+   "title": "HACCP Food Safety Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/use-case-task-appcc-fridge.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/ai-prompts-for-restaurants",
+   "tags": "pdf ai",
+   "title": "Gastro Pro Prompts eBook",
+   "image": "https://aichef.pro/tienda-en/ai-prompts-for-restaurants/ebook-mockup-bundle-en.webp",
+   "price": "$14"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/restaurant-inventory-templates",
+   "tags": "excel templates management restaurant cafe pizzeria burger dark-kitchen pastry bar catering hotel ice-cream chocolate",
+   "title": "Restaurant Inventory Kit Pro",
+   "image": "https://aichef.pro/lovable-uploads/ai-gallery/inventario-hero.jpg",
+   "price": "$19"
+  },
+  {
+   "url": "https://aichef.pro/en/digital-products/food-cost-templates",
+   "tags": "excel templates costs restaurant cafe pizzeria burger dark-kitchen pastry bar catering hotel ice-cream chocolate",
+   "title": "Food Cost Kit Pro",
+   "image": "https://aichef.pro/kit-escandallos-hero.jpg",
+   "price": "$19"
+  }
+ ]
+}

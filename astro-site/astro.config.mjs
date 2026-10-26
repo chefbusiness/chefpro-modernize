@@ -4,6 +4,7 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import { remarkProductBanners } from './src/lib/product-banners.mjs';
 
 // Fase 6 — sitemap nativo con paridad EXACTA vs el sitemap.xml de la SPA:
 // lastmod por URL (snapshot de prod vía scripts/astro-migration/fase6-lastmod-map.py)
@@ -41,6 +42,12 @@ export default defineConfig({
   // format 'file': en/index.astro → /en.html → Netlify sirve /en con 200 SIN barra final,
   // igual que la SPA y el sitemap (D6). Con el default 'directory', /en devolvía 301 → /en/.
   build: { format: 'file' },
+  // Banners de productos digitales en el cuerpo del blog y el glosario.
+  // gfm y smartypants se quedan en su default (true): este plugin solo
+  // inserta nodos HTML y no reescribe el texto.
+  markdown: {
+    remarkPlugins: [remarkProductBanners],
+  },
   integrations: [
     react(),
     tailwind({ applyBaseStyles: false }),
