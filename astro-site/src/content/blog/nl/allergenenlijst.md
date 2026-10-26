@@ -73,4 +73,6 @@ howto:
 
 <h2>Wat je hierna in de zaak doet</h2>
 
+<p>Waar elk van die 14 in een saus, een bouillon of een paneermix verstopt zit, staat in <a href="/nl/blog/14-allergenen">de genummerde lijst van de 14 allergenen</a>. Dit artikel blijft de werkwijze voor het blad.</p>
+
 <p>De vijf stappen staan direct onder dit stuk: receptuur, etiketten, koppeling aan de 14, hetzelfde blad op de pass en in de zaal, en bijwerken bij een wissel. De <a href="/nl/allergenen-detector-restaurant">allergenendetector</a> op deze site helpt een recept na te lopen. Hij vervangt het blad niet en hij vervangt de NVWA niet. Prijzen van de suite staan op <a href="/nl/prijzen">de prijspagina</a>. De Nederlandse werkruimte is nog in opbouw; na het inloggen zie je welke agenten er nu in zitten.</p>

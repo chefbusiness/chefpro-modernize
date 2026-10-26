@@ -30,6 +30,7 @@ Sale con 1 si hay algún 301 que muere en un 404.
 """
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -85,7 +86,9 @@ def resolver(path, rs):
             base = pat[:-2]
             if p == base or p.startswith(base + '/'):
                 return dest.replace(':splat', p[len(base):].lstrip('/')), pat
-        elif ':' in pat:
+        # Solo placeholders de verdad (:slug, :splat, :year). Un «:-» dentro
+        # de un slug de GTranslate es un dos puntos literal, no un comodín.
+        elif re.search(r':[A-Za-z]', pat):
             segs = [s for s in p.strip('/').split('/') if s]
             if len(segs) == len([s for s in pat.strip('/').split('/') if s]) and segs:
                 return dest.replace(':slug', segs[0]), pat

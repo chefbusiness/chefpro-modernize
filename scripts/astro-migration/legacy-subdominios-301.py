@@ -69,6 +69,49 @@ DESCUBIERTAS = [
     'https://blog.aichef.pro/pt/ai-chef-pro-revolucionando-a-culinária-além-dos-métodos-tradicionais/',
 ]
 
+# Slugs traducidos de GTranslate (y el slug español de la misma comparativa)
+# con equivalente claro. El fuzzy match no los ve: el título traducido no
+# solapa con el slug español. La edge function busca el path YA normalizado,
+# así que una sola clave cubre acentos, espacio, apóstrofo y «:».
+# _redirects repite la forma literal y la percent-encoded ANTES de los
+# comodines /{lang}/*, por si la función no corre.
+# No entra /fr/ia-pour-faire-des-images-de-nourriture: no hay pieza FR
+# equivalente; el comodín la deja en /fr/blog.
+CURADOS = [
+    ("/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025 :-un-comparatif-complet",
+     'https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026'),
+    ("/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet",
+     'https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026'),
+    ('/it/Le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025:-un-confronto-completo',
+     'https://aichef.pro/it/blog/migliori-app-ia-ricette-2026'),
+    ('/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culinárias-em-2025:-uma-comparação-completa',
+     'https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026'),
+    ('/nl/De-7-beste-AI-apps-voor-het-maken-van-kookrecepten-in-2025:-een-complete-vergelijking',
+     'https://aichef.pro/nl/blog/beste-ai-apps-recepten-2026'),
+    ('/en/The-7-best-AI-apps-for-creating-cooking-recipes-in-2025:-a-complete-comparison',
+     'https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026'),
+    ('/de/KI-zum-Kochen',
+     'https://aichef.pro/de/blog/beste-ki-apps-rezepte-2026'),
+    ('/fr/ia-pour-des-recettes-de-cuisine-gratuites',
+     'https://aichef.pro/fr/recettes-ia-restaurants'),
+    ('/it/ia-per-ricette-di-cucina-gratuite',
+     'https://aichef.pro/it/ricette-ia-ristoranti'),
+    ('/en/best-AI-for-cooking-in-2025',
+     'https://aichef.pro/en/blog/ai-cooking-assistant-professional-chefs'),
+    ('/en/15-AI-tools-every-chef-should-know',
+     'https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026'),
+    ('/fr/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026'),
+    ('/de/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/de/blog/beste-ki-apps-rezepte-2026'),
+    ('/it/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/it/blog/migliori-app-ia-ricette-2026'),
+    ('/pt/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026'),
+    ('/nl/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/nl/blog/beste-ai-apps-recepten-2026'),
+]
+
 # Primera regla que case gana. Los destinos tienen que existir como .md.
 # Un idioma ausente significa «no hay equivalente»: índice, no un post a la fuerza.
 REGLAS = [
@@ -372,6 +415,35 @@ def solape_es(slug_norm, corpus_es):
     return mejor[1]
 
 
+def aplicar_curados(filas, exactos, huerfanos):
+    """Fuerza los equivalentes claros de CURADOS por encima del índice."""
+    pendientes = {}
+    for raw, destino in CURADOS:
+        origen = 'https://blog.aichef.pro' + (raw if raw.startswith('/') else '/' + raw)
+        origen = origen.rstrip('/')
+        clave = normalizar(urllib.parse.urlparse(origen).path)
+        exactos[clave] = destino
+        pendientes[origen] = destino
+    for row in filas:
+        origen = row['origen'].split('?')[0].rstrip('/')
+        if origen in pendientes:
+            row['destino'] = pendientes.pop(origen)
+            row['tipo'] = 'parecido'
+            row['motivo'] = 'slug curado 2026-10-26'
+            row['capa'] = 'edge'
+            row['nota'] = 'también en _redirects, antes de los comodines'
+    for origen, destino in pendientes.items():
+        filas.append(fila(
+            origen, destino, 'parecido', 'slug curado 2026-10-26', 'edge',
+            'también en _redirects, antes de los comodines',
+        ))
+    normas = {normalizar(raw) for raw, _destino in CURADOS}
+    huerfanos[:] = [
+        h for h in huerfanos
+        if normalizar(urllib.parse.urlparse(h['url_antigua']).path) not in normas
+    ]
+
+
 def fila(origen, destino, tipo, motivo, capa, nota=''):
     return {
         'origen': origen,
@@ -460,6 +532,11 @@ def main():
                           'edge' if tipo_l != 'indice' else 'indice', 'descubierta en el índice, slug traducido'))
         if tipo_l != 'indice':
             exactos[clave] = destino
+
+    for _raw, destino in CURADOS:
+        if not destino_existe(destino, corpus, estaticas):
+            sys.exit('Curado apunta a un destino que no existe: %s' % destino)
+    aplicar_curados(filas, exactos, huerfanos)
 
     # enblog: censo vivo + reglas ya escritas
     try:
