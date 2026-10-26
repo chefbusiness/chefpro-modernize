@@ -27,7 +27,7 @@ El blog `/nl/blog` abre con el post 1 del roadmap. Keyword y intención por piez
 | Orden | Keyword nativa | Intención | Estado |
 |---|---|---|---|
 | 1 | allergenenlijst | El operador quiere el listado de 14 para imprimir en cocina y sala, no una guía de paciente ni una oferta de empleo de la NVWA | Publicado: `/nl/blog/allergenenlijst` |
-| 2 | 14 allergenen | Quiere la lista numerada y qué producto de cocina la esconde | Pendiente |
+| 2 | 14 allergenen | Quiere la lista numerada y qué producto de cocina la esconde | Borrador pendiente de OK (PR #167) |
 | 3 | kruisbesmetting | Cómo separar alérgenos en el pase, no un artículo clínico | Pendiente |
 | 4 | hygiënecode (también hygienecode, serie distinta por el diacrítico) | Qué obliga el código de higiene neerlandés en la hostelería. No aplica en Flandes | Pendiente. No se adelanta dentro del post de la allergenenlijst |
 | 5 | haccp betekenis / haccp horeca | Definición operativa, no un curso genérico | Pendiente |

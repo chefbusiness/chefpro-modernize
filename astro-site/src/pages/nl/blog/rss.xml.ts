@@ -29,7 +29,7 @@ export async function GET() {
     <title>Blog AI Chef Pro</title>
     <link>${SITE}${blogBase('nl')}</link>
     <atom:link href="${SITE}${blogBase('nl')}/rss.xml" rel="self" type="application/rss+xml" />
-    <description>AI voor restaurants en horeca: allergenenlijst, voedselveiligheid en keukentechniek.</description>
+    <description>AI voor restaurants en horeca: de 14 allergenen, de allergenenlijst, voedselveiligheid en keukentechniek.</description>
     <language>nl</language>
 ${items}
   </channel>

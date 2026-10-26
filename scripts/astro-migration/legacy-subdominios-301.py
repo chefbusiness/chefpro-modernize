@@ -21,6 +21,8 @@ Salidas
   scripts/astro-migration/hostinger/enblog.htaccess
   scripts/astro-migration/hostinger/enblog-redirection.csv
   astro-site/netlify/edge-functions/legacy-blog-lang-map.ts
+  astro-site/public/_redirects
+    (solo el bloque de CURADOS: acento percent-encoded, antes de /{lang}/*)
 
 No toca la red salvo el censo de enblog (REST de WordPress). Si ese GET falla,
 el script para: no reescribe el mapa inglés a ciegas.
@@ -67,6 +69,52 @@ DESCUBIERTAS = [
     'https://blog.aichef.pro/pt/definição-do-conceito-de-goma-xantana/',
     'https://blog.aichef.pro/pt/receita-de-iskender-kebab-turca-bursa/',
     'https://blog.aichef.pro/pt/ai-chef-pro-revolucionando-a-culinária-além-dos-métodos-tradicionais/',
+]
+
+# Slugs traducidos de GTranslate (y el slug español de la misma comparativa)
+# con equivalente claro. El fuzzy match no los ve: el título traducido no
+# solapa con el slug español. La edge function busca el path YA normalizado,
+# así que una sola clave cubre acentos, espacio, apóstrofo y «:».
+# _redirects, por si la función no corre, repite ANTES de los comodines
+# /{lang}/* solo la variante con el acento percent-encoded en UTF-8.
+# La forma con acento literal y «:» o «%3A» es una regla inválida
+# (check «Redirect rules» de Netlify). Lo escribe
+# sincronizar_redirects_curados().
+# No entra /fr/ia-pour-faire-des-images-de-nourriture: no hay pieza FR
+# equivalente; el comodín la deja en /fr/blog.
+CURADOS = [
+    ("/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025 :-un-comparatif-complet",
+     'https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026'),
+    ("/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet",
+     'https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026'),
+    ('/it/Le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025:-un-confronto-completo',
+     'https://aichef.pro/it/blog/migliori-app-ia-ricette-2026'),
+    ('/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culinárias-em-2025:-uma-comparação-completa',
+     'https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026'),
+    ('/nl/De-7-beste-AI-apps-voor-het-maken-van-kookrecepten-in-2025:-een-complete-vergelijking',
+     'https://aichef.pro/nl/blog/beste-ai-apps-recepten-2026'),
+    ('/en/The-7-best-AI-apps-for-creating-cooking-recipes-in-2025:-a-complete-comparison',
+     'https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026'),
+    ('/de/KI-zum-Kochen',
+     'https://aichef.pro/de/blog/beste-ki-apps-rezepte-2026'),
+    ('/fr/ia-pour-des-recettes-de-cuisine-gratuites',
+     'https://aichef.pro/fr/recettes-ia-restaurants'),
+    ('/it/ia-per-ricette-di-cucina-gratuite',
+     'https://aichef.pro/it/ricette-ia-ristoranti'),
+    ('/en/best-AI-for-cooking-in-2025',
+     'https://aichef.pro/en/blog/ai-cooking-assistant-professional-chefs'),
+    ('/en/15-AI-tools-every-chef-should-know',
+     'https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026'),
+    ('/fr/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026'),
+    ('/de/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/de/blog/beste-ki-apps-rezepte-2026'),
+    ('/it/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/it/blog/migliori-app-ia-ricette-2026'),
+    ('/pt/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026'),
+    ('/nl/las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa',
+     'https://aichef.pro/nl/blog/beste-ai-apps-recepten-2026'),
 ]
 
 # Primera regla que case gana. Los destinos tienen que existir como .md.
@@ -372,6 +420,170 @@ def solape_es(slug_norm, corpus_es):
     return mejor[1]
 
 
+def aplicar_curados(filas, exactos, huerfanos):
+    """Fuerza los equivalentes claros de CURADOS por encima del índice."""
+    pendientes = {}
+    for raw, destino in CURADOS:
+        origen = 'https://blog.aichef.pro' + (raw if raw.startswith('/') else '/' + raw)
+        origen = origen.rstrip('/')
+        clave = normalizar(urllib.parse.urlparse(origen).path)
+        exactos[clave] = destino
+        pendientes[origen] = destino
+    for row in filas:
+        origen = row['origen'].split('?')[0].rstrip('/')
+        if origen in pendientes:
+            row['destino'] = pendientes.pop(origen)
+            row['tipo'] = 'parecido'
+            row['motivo'] = 'slug curado 2026-10-26'
+            row['capa'] = 'edge'
+            row['nota'] = 'también en _redirects, antes de los comodines'
+    for origen, destino in pendientes.items():
+        filas.append(fila(
+            origen, destino, 'parecido', 'slug curado 2026-10-26', 'edge',
+            'también en _redirects, antes de los comodines',
+        ))
+    normas = {normalizar(raw) for raw, _destino in CURADOS}
+    huerfanos[:] = [
+        h for h in huerfanos
+        if normalizar(urllib.parse.urlparse(h['url_antigua']).path) not in normas
+    ]
+
+
+def percent_acentos(texto):
+    """No-ASCII → percent-encoding UTF-8. El ASCII se queda igual."""
+    return ''.join(
+        urllib.parse.quote(ch, safe='') if ord(ch) > 127 else ch
+        for ch in texto
+    )
+
+
+def clave_variante(path):
+    """Une literal, %3A, %20 y mayúsculas de un mismo slug curado."""
+    path = urllib.parse.unquote(path)
+    path = path.replace('\u00a0', ' ').replace('\u202f', ' ')
+    return path.lower().rstrip('/')
+
+
+def variantes_redirect(path):
+    """Formas de un slug curado para una línea de _redirects.
+
+    El fichero parte por espacios, así que el espacio va como %20.
+    Apóstrofo y dos puntos van literales y percent-encoded (%27, %3A).
+    El acento va solo percent-encoded en UTF-8: Netlify rechaza la regla
+    si el acento literal va junto a «:» o «%3A».
+    Mayúsculas originales y minúsculas, con y sin barra final.
+    """
+    if not path.startswith('/'):
+        path = '/' + path
+    formas = []
+    for base in (path, path.lower()):
+        base = percent_acentos(base.replace(' ', '%20'))
+        grupo = [base]
+        if "'" in base:
+            grupo.append(base.replace("'", '%27'))
+        con_colon = []
+        for forma in grupo:
+            con_colon.append(forma)
+            if ':' in forma:
+                con_colon.append(forma.replace(':', '%3A'))
+        formas.extend(con_colon)
+    salida = []
+    vistos = set()
+    for forma in formas:
+        for candidato in (forma, forma if forma.endswith('/') else forma + '/'):
+            if candidato in vistos:
+                continue
+            if any(ord(c) > 127 for c in candidato):
+                sys.exit('variante con acento literal: %s' % candidato)
+            if ' ' in candidato:
+                sys.exit('variante con espacio literal: %s' % candidato)
+            vistos.add(candidato)
+            salida.append(candidato)
+    return salida
+
+
+def reglas_curadas_redirects():
+    """Líneas from→to que _redirects debe tener para CURADOS."""
+    lineas = []
+    for raw, destino in CURADOS:
+        for origen in variantes_redirect(raw):
+            lineas.append('https://blog.aichef.pro%s %s 301!' % (origen, destino))
+    return lineas
+
+
+def sincronizar_redirects_curados():
+    """Deja en _redirects solo las variantes curadas con acento codificado.
+
+    Quita las que Netlify no procesa (acento literal con «:» o «%3A») y
+    añade las que falten, junto a las de la misma clave y antes de los
+    comodines blog.aichef.pro/{lang}/*. No reordena las que ya valen.
+    """
+    texto = REDIRECTS.read_text(encoding='utf-8')
+    lineas = texto.splitlines()
+    claves = {clave_variante(raw) for raw, _destino in CURADOS}
+    deseadas = reglas_curadas_redirects()
+    deseadas_set = set(deseadas)
+
+    def path_de(linea):
+        partes = linea.split()
+        if not partes:
+            return ''
+        return urllib.parse.urlparse(partes[0]).path
+
+    def es_propia(linea):
+        s = linea.strip()
+        if not s.startswith('http'):
+            return False
+        return clave_variante(path_de(s)) in claves
+
+    out = []
+    existentes = set()
+    for linea in lineas:
+        if es_propia(linea) and linea.strip() not in deseadas_set:
+            continue
+        if es_propia(linea):
+            existentes.add(linea.strip())
+        out.append(linea)
+
+    faltan = {}
+    for regla in deseadas:
+        if regla in existentes:
+            continue
+        clave = clave_variante(urllib.parse.urlparse(regla.split()[0]).path)
+        faltan.setdefault(clave, []).append(regla)
+
+    if faltan:
+        ultimo = {}
+        for i, linea in enumerate(out):
+            if es_propia(linea):
+                ultimo[clave_variante(path_de(linea))] = i
+        ancla = next(
+            (i for i, linea in enumerate(out) if linea.startswith('# GTranslate de los 6 idiomas')),
+            None,
+        )
+        for clave, reglas in sorted(
+            faltan.items(),
+            key=lambda kv: -(ultimo.get(kv[0], ancla if ancla is not None else 10**9)),
+        ):
+            idx = ultimo.get(clave)
+            if idx is None:
+                if ancla is None:
+                    sys.exit('No encuentro el comodín de idioma en _redirects')
+                idx = ancla - 1
+            out[idx + 1:idx + 1] = reglas
+            for otra, pos in list(ultimo.items()):
+                if pos > idx:
+                    ultimo[otra] = pos + len(reglas)
+            ultimo[clave] = idx + len(reglas)
+            if ancla is not None and ancla > idx:
+                ancla += len(reglas)
+
+    nuevo = '\n'.join(out) + ('\n' if texto.endswith('\n') else '')
+    if nuevo != texto:
+        REDIRECTS.write_text(nuevo, encoding='utf-8')
+    return len(deseadas)
+
+
 def fila(origen, destino, tipo, motivo, capa, nota=''):
     return {
         'origen': origen,
@@ -460,6 +672,13 @@ def main():
                           'edge' if tipo_l != 'indice' else 'indice', 'descubierta en el índice, slug traducido'))
         if tipo_l != 'indice':
             exactos[clave] = destino
+
+    for _raw, destino in CURADOS:
+        if not destino_existe(destino, corpus, estaticas):
+            sys.exit('Curado apunta a un destino que no existe: %s' % destino)
+    n_curadas = sincronizar_redirects_curados()
+    print('Reglas curadas en _redirects: %d' % n_curadas)
+    aplicar_curados(filas, exactos, huerfanos)
 
     # enblog: censo vivo + reglas ya escritas
     try:
