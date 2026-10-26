@@ -107,8 +107,10 @@ https://blog.aichef.pro/xmlrpc.php https://aichef.pro/blog 301!
 # blog.aichef.pro y usa el path normalizado (legacy-blog-lang-map.ts).
 # Si la función no corre, estas líneas son las que conservan el post.
 # El espacio de «2025 :-un» no cabe literal: _redirects parte por espacios,
-# así que esa forma va con %20. Dos puntos, apóstrofo y acentos van
-# literales y percent-encoded (%3A, %27, UTF-8), con y sin barra final.
+# así que esa forma va con %20. Dos puntos y apóstrofo van literales y
+# percent-encoded (%3A, %27), con y sin barra final. El acento va SOLO
+# percent-encoded en UTF-8 (cr%C3%A9er, culin%C3%A1rias, compara%C3%A7%C3%A3o):
+# Netlify invalida la regla si el acento literal va junto a «:» o «%3A».
 # Un «:-» NO es un placeholder (:slug exige letra después de los dos puntos).
 # Sin equivalente, a propósito, y por eso sigue en el comodín:
 #   /fr/ia-pour-faire-des-images-de-nourriture → /fr/blog
@@ -118,14 +120,6 @@ https://blog.aichef.pro/xmlrpc.php https://aichef.pro/blog 301!
 # (la misma pieza que el slug español mejor-ia-para-cocinar).
 # /de/KI-zum-Kochen va a /de/blog/beste-ki-apps-rezepte-2026 (la pieza
 # DE de la misma intención: KI para recetas, no un título idéntico).
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
@@ -134,34 +128,30 @@ https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-créer-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-créer-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%20:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d%27IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/Les-7-meilleures-applications-d'IA-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
-https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-créer-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d'ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025%3A-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
+https://blog.aichef.pro/fr/les-7-meilleures-applications-d%27ia-pour-cr%C3%A9er-des-recettes-de-cuisine-en-2025:-un-comparatif-complet/ https://aichef.pro/fr/blog/meilleures-applications-ia-recettes-2026 301!
 https://blog.aichef.pro/it/Le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025:-un-confronto-completo https://aichef.pro/it/blog/migliori-app-ia-ricette-2026 301!
 https://blog.aichef.pro/it/Le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025:-un-confronto-completo/ https://aichef.pro/it/blog/migliori-app-ia-ricette-2026 301!
 https://blog.aichef.pro/it/Le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025%3A-un-confronto-completo https://aichef.pro/it/blog/migliori-app-ia-ricette-2026 301!
@@ -170,20 +160,14 @@ https://blog.aichef.pro/it/le-7-migliori-app-di-intelligenza-artificiale-per-cre
 https://blog.aichef.pro/it/le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025:-un-confronto-completo/ https://aichef.pro/it/blog/migliori-app-ia-ricette-2026 301!
 https://blog.aichef.pro/it/le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025%3A-un-confronto-completo https://aichef.pro/it/blog/migliori-app-ia-ricette-2026 301!
 https://blog.aichef.pro/it/le-7-migliori-app-di-intelligenza-artificiale-per-creare-ricette-di-cucina-nel-2025%3A-un-confronto-completo/ https://aichef.pro/it/blog/migliori-app-ia-ricette-2026 301!
-https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culinárias-em-2025:-uma-comparação-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
-https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culinárias-em-2025:-uma-comparação-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
-https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culinárias-em-2025%3A-uma-comparação-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
-https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culinárias-em-2025%3A-uma-comparação-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
 https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culin%C3%A1rias-em-2025%3A-uma-compara%C3%A7%C3%A3o-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
 https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culin%C3%A1rias-em-2025%3A-uma-compara%C3%A7%C3%A3o-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
 https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culin%C3%A1rias-em-2025:-uma-compara%C3%A7%C3%A3o-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
 https://blog.aichef.pro/pt/Os-7-melhores-aplicativos-de-IA-para-criar-receitas-culin%C3%A1rias-em-2025:-uma-compara%C3%A7%C3%A3o-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
-https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culinárias-em-2025:-uma-comparação-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
-https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culinárias-em-2025:-uma-comparação-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
-https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culinárias-em-2025%3A-uma-comparação-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
-https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culinárias-em-2025%3A-uma-comparação-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
 https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culin%C3%A1rias-em-2025%3A-uma-compara%C3%A7%C3%A3o-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
 https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culin%C3%A1rias-em-2025%3A-uma-compara%C3%A7%C3%A3o-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
+https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culin%C3%A1rias-em-2025:-uma-compara%C3%A7%C3%A3o-completa https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
+https://blog.aichef.pro/pt/os-7-melhores-aplicativos-de-ia-para-criar-receitas-culin%C3%A1rias-em-2025:-uma-compara%C3%A7%C3%A3o-completa/ https://aichef.pro/pt/blog/melhores-aplicacoes-ia-receitas-2026 301!
 https://blog.aichef.pro/nl/De-7-beste-AI-apps-voor-het-maken-van-kookrecepten-in-2025:-een-complete-vergelijking https://aichef.pro/nl/blog/beste-ai-apps-recepten-2026 301!
 https://blog.aichef.pro/nl/De-7-beste-AI-apps-voor-het-maken-van-kookrecepten-in-2025:-een-complete-vergelijking/ https://aichef.pro/nl/blog/beste-ai-apps-recepten-2026 301!
 https://blog.aichef.pro/nl/De-7-beste-AI-apps-voor-het-maken-van-kookrecepten-in-2025%3A-een-complete-vergelijking https://aichef.pro/nl/blog/beste-ai-apps-recepten-2026 301!

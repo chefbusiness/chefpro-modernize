@@ -16,16 +16,16 @@ faq:
   - q: "Is pinda hetzelfde als noten?"
     a: "Nee. Aardnoten (pinda's) zijn regel 5 van bijlage II. Noten zijn regel 8, en dat zijn amandel, hazelnoot, walnoot, cashew, pecan, paranoot, pistache en macadamia. Een satésaus en een pesto met walnoot vallen daardoor op twee verschillende regels."
   - q: "Mag de bediening allergenen alleen mondeling doorgeven?"
-    a: "Bij onverpakte levensmiddelen mag dat in Nederland, onder voorwaarden die de NVWA op haar pagina over onverpakte producten zet. Het personeel moet het antwoord vóór de aankoop kunnen geven, de informatie moet schriftelijk of elektronisch beschikbaar zijn voor het personeel en voor inspecteurs, en op de plek van verkoop moet zichtbaar staan dat gasten het personeel ernaar kunnen vragen. Dit antwoord is geen juridisch advies."
+    a: "Bij onverpakte levensmiddelen mag dat in Nederland, onder voorwaarden die de NVWA op haar pagina over onverpakte producten zet. Het personeel moet het antwoord vóór de aankoop kunnen geven, de informatie moet schriftelijk of elektronisch beschikbaar zijn voor het personeel en voor inspecteurs, en op de plek van verkoop moet zichtbaar staan dat gasten het personeel ernaar kunnen vragen."
   - q: "Moet ik zeggen om welk graan of welke noot het gaat?"
     a: "Ja. De NVWA schrijft dat u bij glutenbevattende granen en bij noten noemt om welke soort het gaat. «Gluten» of «noten» alleen is dan niet genoeg. Tarwe is iets anders dan rogge, en amandel is iets anders dan cashew."
   - q: "Tellen pijnboompitten mee als noten?"
-    a: "Niet in bijlage II. Die noemt acht noten, en pijnboompit staat er niet bij. Een pesto met alleen pijnboompitten is daardoor geen noten in de zin van die bijlage. Zit er ook walnoot, amandel of cashew in, dan wel. De bijlage voegt zelf geen negende noot toe, en dit artikel ook niet."
+    a: "Niet in bijlage II. Die noemt acht noten, en pijnboompit staat er niet bij. Een pesto met alleen pijnboompitten valt daardoor buiten die notenregel. Zit er ook walnoot, amandel of cashew in, dan telt die noot wel mee."
 ---
 
 <p>De 14 allergenen zijn de stoffen uit bijlage II van Verordening (EU) nr. 1169/2011 waarover u in de horeca informatie geeft. De volgorde staat vast, van glutenbevattende granen tot weekdieren. In de keuken zitten ze ook in sauzen, bouillon, paneermeel en mixen, niet alleen in het hoofdingrediënt.</p>
 
-<p>Dit artikel is die genummerde lijst, plus de plek waar elk allergeen in een bereiding verstopt zit. Het is geen medisch advies en geen juridisch advies. De NVWA houdt in Nederland toezicht. De genummerde lijst staat op <a href="https://www.nvwa.nl/onderwerpen/voedselveiligheid/allergenen/over-welke-allergenen-moet-ik-informatie-geven">nvwa.nl, over welke allergenen u informatie geeft</a>. De wettekst, met de uitzonderingen, staat in <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32011R1169">de Nederlandse versie op EUR-Lex</a>. Die uitzonderingen, onder meer bepaalde glucosestropen, somt dit artikel niet opnieuw op.</p>
+<p>Dit artikel is die genummerde lijst, plus de plek waar elk allergeen in een bereiding verstopt zit. Het is geen medisch advies. De NVWA houdt in Nederland toezicht. De genummerde lijst staat op <a href="https://www.nvwa.nl/onderwerpen/voedselveiligheid/allergenen/over-welke-allergenen-moet-ik-informatie-geven">nvwa.nl, over welke allergenen u informatie geeft</a>. De wettekst, met de uitzonderingen, staat in <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32011R1169">de Nederlandse versie op EUR-Lex</a>. Die uitzonderingen, onder meer bepaalde glucosestropen, somt dit artikel niet opnieuw op.</p>
 
 <h2>De 14 allergenen, in de volgorde van bijlage II</h2>
 
