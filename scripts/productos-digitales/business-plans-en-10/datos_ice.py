@@ -625,7 +625,6 @@ DOCX_NOTAS = OrderedDict([('ice', _notas_docx())])
 _CASO = ('D191: caso US = 165 customers/día (cada persona que compra: mostrador, patio y para llevar) × $7.50 por persona '
          '(sin sales tax) × 310 días; Mes 1 = marzo; sin alcohol; sin cifras del ES ni historia de versiones')
 CELDA_PISTAS = OrderedDict([
-    (('HELP', _S, 'A2'), 'D8: añade una vez que los importes van «in your currency» (sin símbolo)'),
     (('HELP', _S, 'C4'), _CASO + '; media del año con la apertura incluida (la Tesorería reparte la estacionalidad): un '
                                  'sábado de julio puede pasar de 400 y un martes de enero quedarse en 40 (Kit '
                                  'estimate); compáralo con el paso de gente de tu calle'),
@@ -653,7 +652,6 @@ CELDA_PISTAS = OrderedDict([
                           'verano dispara la luz'),
     (('HELP', _S, 'C27'), 'D191: $4,500/año = general liability + property + equipment breakdown con food spoilage + '
                           'workers\' comp'),
-    (('HELP', _S, 'C31'), 'D191: SBA 7(a) al 10 % a 10 años, sin interest-only; el préstamo lo calcula "Financing"'),
     (('HELP', _S, 'C51'), 'D189: 20 plazas dentro; el patio de 5 mesas (en temporada) no cuenta en el aforo'),
     (('HELP', _N, 'A8'), 'SPEC §4.1 línea 4 (Bar/PIZ): sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales '
                          'tax rate»; P&L excl. sales tax, cash flow incl.; un solo tipo en el ejemplo (B39 = B40 = 8 %); '

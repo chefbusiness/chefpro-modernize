@@ -21,8 +21,10 @@ cabecera, docx de 131 ranuras) y el DICCIONARIO va en cadena, sin normalizar (in
 FUENTE ES: `FUENTE_ES` = `$ICE_FUENTE_ES` o, sin la variable, `astro-site/public/dl/plan-negocio-heladeria` (el ES
 FINAL y LIVE: aquí no hay paso 1c, el ES ya está cerrado). Grupos:
   GM          motor común: mismo ES que una cadena GM (Pizza EN, Bar EN o BP) con un EN limpio (RX_REESCRIBIR).
-  GR          EN de GPIZ-plan / GPIZ-check / GR de la pizza, de la Bakery, del Bar o de REST/CAF/FT: preparar_tandas lo
-              escribe y la tanda GICE-plan lo revisa (textos_en/GR.revision.json).
+  GR · GRC    EN de GPIZ-plan / GPIZ-check / GR de la pizza, de la Bakery, del Bar o de REST/CAF/FT: preparar_tandas lo
+              escribe; GR (plan) lo revisa la tanda GICE-plan (textos_en/GR.revision.json) y GRC (solo del checklist:
+              plazos, responsables, cabeceras y tareas de la Pizza EN) la tanda GICE-check (textos_en/GRC.revision.json).
+              Desdoble frente a la pizza: aquí 73 de las 87 reutilizadas con revisión son del checklist (F2-NOTAS §1).
   GICE-plan   nuevas del plan (y las de reuso con vocabulario o caso de otro negocio, con propuesta) + las 13 filas
               D19 (una cadena por celda, sin propuesta: D196).
   GICE-check  nuevas del checklist (80 tareas, casi todo texto nuevo) + los mensajes de la DV con «—» (D199: ☐).
@@ -145,15 +147,17 @@ AUTOTEST = OrderedDict([
 # ==========================================================================
 # 5. Grupos (D192)
 # ==========================================================================
-GRUPOS = ('GM', 'GR', 'GICE-plan', 'GICE-check')
+GRUPOS = ('GM', 'GR', 'GRC', 'GICE-plan', 'GICE-check')
 GRUPOS_TRADUCTORES = ('GICE-plan', 'GICE-check')
 GRUPOS_OVERRIDES = ('GICE-plan', 'GICE-check')
-REVISAR_EN_TANDA = OrderedDict([('GICE-plan', ('GR',))])
+REVISAR_EN_TANDA = OrderedDict([('GICE-plan', ('GR',)), ('GICE-check', ('GRC',))])
 GRUPOS_DESC = OrderedDict([
     ('GM', 'REUTILIZADAS: motor común (mismo ES que una cadena GM de la Pizza EN, del Bar EN o de BP) con un EN sin '
            'vocabulario ni caso de otro negocio. preparar_tandas escribe su EN. No van a los traductores'),
-    ('GR', 'REUTILIZADAS con revisión: EN de GPIZ-plan / GPIZ-check / GR de la Pizza EN, de la Bakery EN, del Bar EN o '
-           'de REST/CAF/FT. preparar_tandas escribe su EN; la tanda GICE-plan las revisa en textos_en/GR.revision.json'),
+    ('GR', 'REUTILIZADAS con revisión (plan): EN de GPIZ-plan / GPIZ-check / GR de la Pizza EN, de la Bakery EN, del Bar '
+           'EN o de REST/CAF/FT. preparar_tandas escribe su EN; la tanda GICE-plan las revisa en textos_en/GR.revision.json'),
+    ('GRC', 'REUTILIZADAS con revisión (solo del checklist): EN de la Pizza EN (plazos, responsables, cabeceras, tareas). '
+            'preparar_tandas escribe su EN; la tanda GICE-check las revisa en textos_en/GRC.revision.json'),
     ('GICE-plan', 'Nuevas del plan financiero (HELP) + las de reuso con vocabulario o caso de otro negocio (con '
                   'propuesta) + las 13 filas D19 de Instrucciones (una cadena por celda, sin propuesta: D196)'),
     ('GICE-check', 'Nuevas del checklist (HELC): las 80 tareas, sus cabeceras y los mensajes de la DV (con propuesta '
@@ -358,7 +362,7 @@ def grupo_de(planes, texto=None, tratamiento=None, donde=None):
         return destino
     if (prop.get('conjunto'), prop['grupo']) in _GM_ORIGEN:
         return 'GM'
-    return 'GR'
+    return 'GRC' if libros == {'HELC'} else 'GR'
 
 
 def reuso_de(e):

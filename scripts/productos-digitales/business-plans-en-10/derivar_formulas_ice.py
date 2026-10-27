@@ -159,7 +159,8 @@ def main():
     err, avi = [], []
     hojas_es = {h for d in B.HOJAS_POR_LIBRO.values() for h in d}
     hojas_en = {e for d in B.HOJAS_POR_LIBRO.values() for e in d.values()}
-    rx_no = re.compile(r'(?i)\bpizz|(?<!cookie )\bdough\b|\bovens?\b|\bcovers?\b|\bbread\b|\bbakery\b|\bbeer\b')
+    rx_no = re.compile(r'(?i)\bpizz|(?<!cookie )\bdough\b|\bovens?\b|\bcovers?(?:/day| per day| a day| needed)|'
+                       r'\d+ covers\b|equivalent covers|\bbread\b|\bbakery\b|\bbeer\b')
     for k, d in out.items():
         for t, v in trozos(d['en']):
             if t == 'ref' and v[0] and v[0] in hojas_es and v[0] not in hojas_en:
