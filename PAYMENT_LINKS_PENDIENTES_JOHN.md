@@ -1,14 +1,17 @@
 # Payment Links pendientes — tareas de John (Stripe)
 
-> Sesión Claude Code (Mac). **TRES pendientes (27-oct-2026): tienda EN — Hotel, Ice Cream Shop y Wedding Venue.**
+> Sesión Claude Code (Mac). **No hay ninguno pendiente.**
 
-## ⏳ PENDIENTES (27-oct-2026): tres productos EN listos a falta del link — John: «escoge los tres que siguen… completos me dices y creamos los enlaces de pago en Stripe»
+## ✅ HECHOS (27-oct-2026): tres productos EN — John: «escoge los tres que siguen… completos me dices y creamos los enlaces de pago en Stripe»
 
 Los tres van en USD, con pago único, impuesto automático con precio *exclusive* (como el resto de la tienda EN), factura
 activada y redirección a su `/access`. Orden de fusión: **#170 → #171 → #172** (van apilados). La env de Netlify la pone Claude
 (scope builds, all) y regenera `payment-links.ts` con `sync-payment-links.py`.
 
-### 1. ⏳ Hotel Checklists Kit Pro (EN) — PR #170
+### 1. ✅ Hotel Checklists Kit Pro (EN) — PR #170, link creado el 27-oct-2026
+
+Link de John: https://buy.stripe.com/eVqfZa94w0JU2QT6Rf6oo25 (`plink_1UV6mM4CcdRGidmEPIg3fmmj`). Comprobado con la CLI: 2900 USD, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/access`. Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
@@ -16,11 +19,14 @@ activada y redirección a su `/access`. Orden de fusión: **#170 → #171 → #1
 | Precio | **29,00 USD**, pago único, impuesto automático con precio *exclusive* |
 | Factura | activada |
 | Después del pago | redirigir a `https://aichef.pro/en/digital-products/hotel-checklist-templates/access?session_id={CHECKOUT_SESSION_ID}` |
-| Descripción (prosa) | 19 ready-to-use Excel workbooks with 636 pre-written tasks for a full-service hotel: breakfast, buffet, restaurant, bar and banquet F&B, front desk and night audit, guest services, housekeeping, public areas, pool, patio, preventive maintenance, back office, spa and the cash drawer, plus an annual task calendar and a daily F&B briefing template. Adapted to US standards (FDA Food Code 2022 in °F, MAHC pool and spa guidance, OSHA) and printable on US Letter, with a US, UK, Canada and Australia hospitality equivalents guide. Instant download, lifetime access and free updates. |
+| Descripción (prosa, ≤ 260) | 19 Excel workbooks with 636 ready-to-use hotel tasks: F&B, front desk, housekeeping, pool, spa, maintenance and cash drawer. US standards (FDA Food Code, OSHA), US Letter. Works in Excel, Google Sheets and Numbers. Instant download, lifetime access. |
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_HOTEL_CHECKLISTS_KIT` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg` |
 
-### 2. ⏳ Ice Cream Shop Business Plan Kit (EN) — PR #171
+### 2. ✅ Ice Cream Shop Business Plan Kit (EN) — PR #171, link creado el 27-oct-2026
+
+Link de John: https://buy.stripe.com/aFadR2bcEdwGdvx5Nb6oo26 (`plink_1UV6rK4CcdRGidmE9nLDNQrU`). Comprobado con la CLI: 3900 USD, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/access`. Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
@@ -28,11 +34,14 @@ activada y redirección a su `/access`. Orden de fusión: **#170 → #171 → #1
 | Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* |
 | Factura | activada |
 | Después del pago | redirigir a `https://aichef.pro/en/digital-products/ice-cream-shop-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
-| Descripción (prosa) | Complete business plan kit to open a neighborhood ice cream shop that makes its ice cream on site: a 10-section Word business plan, 3-year Excel financial projections with monthly cash flow, seasonality and SBA loan sizing, and an 80-task startup checklist, all built on a worked US case you can edit with your own numbers. Includes a US, UK, Canada and Australia hospitality equivalents guide. Instant download, lifetime access and free updates. |
+| Descripción (prosa, ≤ 260) | Business plan kit to open an ice cream shop: 10-section Word plan, 3-year Excel financial projections with monthly cash flow and SBA loan, and an 80-task startup checklist, built on a worked US example. Works in Excel and Google Sheets. Instant download. |
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_ICE_CREAM_SHOP_BUSINESS_PLAN` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg` |
 
-### 3. ⏳ Wedding Venue Business Plan Kit (EN) — PR #172
+### 3. ✅ Wedding Venue Business Plan Kit (EN) — PR #172, link creado el 27-oct-2026
+
+Link de John: https://buy.stripe.com/9B69AM4Og0JUgHJ5Nb6oo27 (`plink_1UV6uO4CcdRGidmEotbwEDkd`). Comprobado con la CLI: 4900 USD, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/access`. Env de Netlify creada (builds, all) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
@@ -40,7 +49,7 @@ activada y redirección a su `/access`. Orden de fusión: **#170 → #171 → #1
 | Precio | **49,00 USD**, pago único, impuesto automático con precio *exclusive* (5 ficheros, como el ES a 45 €) |
 | Factura | activada |
 | Después del pago | redirigir a `https://aichef.pro/en/digital-products/wedding-venue-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
-| Descripción (prosa) | Complete business plan kit to open a barn or estate wedding and event venue with an exclusive caterer: a 10-section Word business plan, 3-year Excel financial projections with monthly cash flow and SBA loan sizing, an 84-task startup checklist, a wedding and event pricing calculator and an editable venue rental agreement template (a template, not legal advice: have a local attorney review it), all built on a worked US case you can adapt to your own venue. Includes a US, UK, Canada and Australia hospitality equivalents guide. Instant download, lifetime access and free updates. |
+| Descripción (prosa, ≤ 260) | Business plan kit to open a wedding and event venue: 10-section Word plan, 3-year Excel projections with SBA loan, 84-task startup checklist, pricing calculator and venue rental agreement template. Works in Excel and Google Sheets. Instant download. |
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_WEDDING_VENUE_BUSINESS_PLAN` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-finca-hero.jpg` |
 

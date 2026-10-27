@@ -30,7 +30,9 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'guia-restaurante-nikkei': 'https://buy.stripe.com/aFa4gs1C464e0ILfnL6oo10',
   'guia-restaurante-peruano': 'https://buy.stripe.com/6oUbIU2G80JU0ILa3r6oo0P',
   'haccp-templates': 'https://buy.stripe.com/4gM3cobcEboyajla3r6oo1C',
+  'hotel-checklist-templates': 'https://buy.stripe.com/eVqfZa94w0JU2QT6Rf6oo25',
   'how-to-open-a-pastry-shop': 'https://buy.stripe.com/4gMbIU0y0eAK9fh6Rf6oo1O',
+  'ice-cream-shop-business-plan': 'https://buy.stripe.com/aFadR2bcEdwGdvx5Nb6oo26',
   'ice-cream-shop-checklist-templates': 'https://buy.stripe.com/28E3co5Sk64eezB3F36oo1W',
   'kit-escandallos': 'https://buy.stripe.com/cNi3cogwY64e9fhfnL6oo01',
   'kit-gestion-personal': 'https://buy.stripe.com/00weV64Og0JUezB2AZ6oo0H',
@@ -84,6 +86,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'restaurant-financial-plan-templates': 'https://buy.stripe.com/8x23cogwYdwGezBdfD6oo1E',
   'restaurant-inventory-templates': 'https://buy.stripe.com/28EfZacgIdwGbnp8Zn6oo1z',
   'restaurant-schedule-templates': 'https://buy.stripe.com/9B6dR294w0JUbnpa3r6oo1D',
+  'wedding-venue-business-plan': 'https://buy.stripe.com/9B69AM4Og0JUgHJ5Nb6oo27',
 };
 
 /** URL → productId (para el webhook: la sesión trae payment_link, no el producto). */
