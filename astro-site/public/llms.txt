@@ -47,6 +47,9 @@ Downloadable professional resources for hospitality: Excel template kits (recipe
 - [Gastro Pro Prompts eBook (9 EUR)](https://aichef.pro/pro-prompts-ebook): 300+ AI prompts for hospitality professionals.
 - [Mega Pack Tareas Recurrentes (89 EUR)](https://aichef.pro/mega-pack-tareas): bundle of 13 recurring-task checklist kits.
 - [Food Cost Kit Pro (19 USD, EN)](https://aichef.pro/en/digital-products/food-cost-templates): 13 food cost templates for Excel.
+- [Restaurant Inventory Kit Pro (19 USD, EN)](https://aichef.pro/en/digital-products/restaurant-inventory-templates): 9 inventory templates (par sheet, purchase orders, receiving, waste, FIFO).
+- [Restaurant Staff Scheduling Kit Pro (19 USD, EN)](https://aichef.pro/en/digital-products/restaurant-schedule-templates): 9 scheduling templates (schedules, FLSA overtime tracker, labor cost).
+- [Restaurant Financial Plan Kit Pro (49 USD, EN)](https://aichef.pro/en/digital-products/restaurant-financial-plan-templates): 10 Excel templates (P&L, projections, break-even, cash flow, lender summary).
 - [Food Cost + Menu Engineering Guide (59 USD, EN)](https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide): 20-chapter guide (PDF + DOCX) to recipe costing, menu pricing and menu engineering, with 8 Excel tools and 12 solved exercises; sales tax, VAT and GST by channel for the US, UK, Canada and Australia.
 - [How to Open a Pastry Shop (69 USD, EN)](https://aichef.pro/en/digital-products/how-to-open-a-pastry-shop): 20-chapter, 113-page guide (PDF + DOCX) to opening a bakery with its own production kitchen in the US: permits by state and cottage food, startup costs, equipment, staff, seasonal peaks and a 3-year plan, with 8 Excel tools, a filled-in sample business plan and 12 opening decisions, solved.
 - [HACCP Food Safety Kit Pro (19 USD, EN)](https://aichef.pro/en/digital-products/haccp-templates): HACCP plan and food safety logs for Excel.
