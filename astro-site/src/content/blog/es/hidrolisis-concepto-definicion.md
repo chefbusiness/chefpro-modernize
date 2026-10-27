@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glosario
 tags: ["hidrólisis", "colágeno", "gelatina"]
 lang: es
-image: /blog-assets/2026/03/hidrolisis-featured.jpg
-imageAlt: "Vaso de laboratorio con agua y un esquema de una cadena de proteína que una enzima parte en aminoácidos"
+image: /blog-assets/2026/10/hidrolisis-rabo-gelatina.webp
+imageAlt: "Rabo de toro guisado que se deshace en un plato hondo y una bandeja de acero con el mismo fondo cuajado en gelatina"
 wpId: 3249
 translations:
   es: "hidrolisis-concepto-definicion"

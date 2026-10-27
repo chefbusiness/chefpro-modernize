@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glossary
 tags: ["maceration", "marinade", "pastry", "cocktail"]
 lang: en
-image: /blog-assets/2026/03/maceracion-featured.jpg
-imageAlt: "Clamp-lid jars of fruit, citrus, and herbs in alcohol on a wooden counter, with a mortar and a copper pot"
+image: /blog-assets/2026/10/maceracion-fresas-azucar.webp
+imageAlt: "A glass bowl of cut strawberries releasing juice in sugar and a jar of citrus peel and vanilla in spirit on a wooden bench"
 translations:
   es: "maceracion-concepto-definicion"
   en: "maceration-in-cooking"

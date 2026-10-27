@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glosario
 tags: ["homogeneización", "homogenización", "leche", "emulsión", "helado"]
 lang: es
-image: /blog-assets/2026/03/homogeneizacion-featured.jpg
-imageAlt: "Sala de una industria láctea, con depósitos de acero y leche saliendo de un equipo de proceso"
+image: /blog-assets/2026/10/homogeneizacion-leche-salsa.webp
+imageAlt: "Dos vasos de leche entera, uno con la nata separada arriba y otro uniforme, junto a una batidora de mano y una salsa amarilla lisa"
 wpId: 3244
 translations:
   es: "homogeneizacion-concepto-definicion"

@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glosario
 tags: ["abocar", "abocado", "vino", "fondos"]
 lang: es
-image: /blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado.jpeg
-imageAlt: "Plato de pescado a la brasa con verduras, una copa de vino blanco y una botella al fondo, frente al mar"
+image: /blog-assets/2026/10/abocar-caldo-sedimento.webp
+imageAlt: "Una olla de acero inclinada vierte caldo dorado y limpio en otra, con el sedimento oscuro quedándose en el fondo de la primera"
 wpId: 713
 translations:
   es: "que-significa-abocar-en-cocina"

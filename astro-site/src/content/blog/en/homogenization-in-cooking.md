@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glossary
 tags: ["homogenization", "milk", "emulsion", "ice cream"]
 lang: en
-image: /blog-assets/2026/03/homogeneizacion-featured.jpg
-imageAlt: "A dairy plant with steel tanks and milk moving through processing equipment"
+image: /blog-assets/2026/10/homogeneizacion-leche-salsa.webp
+imageAlt: "Two glasses of whole milk, one with a cream layer on top and one uniform, beside a hand blender and a smooth yellow sauce"
 translations:
   es: "homogeneizacion-concepto-definicion"
   en: "homogenization-in-cooking"

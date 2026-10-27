@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glossary
 tags: ["abocar", "abocado", "wine", "stock"]
 lang: en
-image: /blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado.jpeg
-imageAlt: "A grilled fish plate with vegetables, a glass of white wine, and a bottle, set against the sea"
+image: /blog-assets/2026/10/abocar-caldo-sedimento.webp
+imageAlt: "A tilted steel pot pouring clear golden stock into a second pot while the dark sediment stays at the bottom of the first"
 translations:
   es: "que-significa-abocar-en-cocina"
   en: "what-does-abocar-mean-in-cooking"

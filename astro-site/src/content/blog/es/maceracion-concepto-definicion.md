@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glosario
 tags: ["maceración", "marinado", "cóctel", "pastelería"]
 lang: es
-image: /blog-assets/2026/03/maceracion-featured.jpg
-imageAlt: "Tarros de cristal con frutas, cítricos y hierbas en alcohol, sobre una mesa de madera con un mortero y una olla de cobre"
+image: /blog-assets/2026/10/maceracion-fresas-azucar.webp
+imageAlt: "Bol de cristal con fresas cortadas soltando su jugo con azúcar y un tarro de pieles de cítrico y vainilla en alcohol, sobre madera"
 wpId: 3258
 translations:
   es: "maceracion-concepto-definicion"

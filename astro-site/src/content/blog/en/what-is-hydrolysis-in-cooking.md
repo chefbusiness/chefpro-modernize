@@ -6,8 +6,8 @@ modDate: 2026-10-27
 category: glossary
 tags: ["hydrolysis", "collagen", "gelatin"]
 lang: en
-image: /blog-assets/2026/03/hidrolisis-featured.jpg
-imageAlt: "A glass beaker of water with a diagram of a protein chain being split into amino acids by an enzyme"
+image: /blog-assets/2026/10/hidrolisis-rabo-gelatina.webp
+imageAlt: "Braised oxtail falling apart in a deep dish next to a steel tray of the same stock set into gelatin"
 translations:
   es: "hidrolisis-concepto-definicion"
   en: "what-is-hydrolysis-in-cooking"
