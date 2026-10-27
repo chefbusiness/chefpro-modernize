@@ -312,8 +312,8 @@ CALENDARIO = OrderedDict([
           'Lo de «Vuelta congresos» del ES: Labor Day (1.er lunes de septiembre) cierra el verano; kick-offs y '
           'convenciones: paquetes de banquetes')),
     (16, ('October — Fall menus', 'Special menu', '4 weeks',
-          'Sustituye a la temporada de caza: carta y buffet de otoño (calabaza, manzana, setas, caza solo si tu '
-          'proveedor la vende inspeccionada, USDA o estatal)')),
+          'Sustituye a la temporada de caza: carta y buffet de otoño (calabaza, manzana, setas y caza solo de un '
+          'proveedor aprobado)')),
     (17, ('Oct 31 — Halloween', 'Themed event', '4 weeks', None)),
     (18, ('Nov — Thanksgiving (4th Thursday)', 'High occupancy', '6 weeks',
           'Sustituye al puente de Todos los Santos: buffet o menú prix fixe de Thanksgiving (pavo), turnos cerrados '
@@ -367,8 +367,8 @@ _SERVICIOS_13 = OrderedDict([
     (9, ('Review your food safety plan (HACCP if your health department or a variance requires one) and supplier '
          'approvals: the menu and buffet changes of the year', None)),
     (10, ('Renew food handler cards and allergen training for all F&B staff, banquet extras included, and check a '
-          'certified food protection manager covers every shift (FDA Food Code 2-102.12; card rules vary by state)',
-          None)),
+          'certified food protection manager is on the F&B management team (FDA Food Code 2-102.12; card rules vary '
+          'by state)', None)),
     (11, ('Calibrate the thermometers and probes of walk-ins, buffet and in-room dining in ice water (32 °F) and log '
           'any offset', None)),
     (14, ('Cooling towers and domestic hot water: cleaning and disinfection under your Legionella water management '
@@ -391,8 +391,8 @@ _SERVICIOS_13 = OrderedDict([
           'utility requires', 'Annual')),
     (24, ('Electrical maintenance program (NFPA 70B): infrared scan of main panels and switchgear by a qualified '
           'electrician', 'Annual')),
-    (25, ('Elevator and dumbwaiter inspection by the state or city elevator inspector (certificate posted in each '
-          'car), on top of the monthly maintenance contract', 'Annual')),
+    (25, ('Elevator and dumbwaiter inspection by a licensed elevator inspector, as your state or city requires '
+          '(certificate posted in each car), on top of the monthly maintenance contract', 'Annual')),
     (26, ('Boilers and water heaters: inspection for the state boiler certificate where your state requires one; '
           'chiller and HVAC plant service with its report', None)),
     (27, ('Evacuation drill with every shift, as often as your local fire code requires, and review of the emergency '
@@ -639,7 +639,7 @@ ADAPTAR = OrderedDict([
     (('13', 'Semanal', 'B12'), 'Alumbrado de emergencia: prueba funcional de 30 s cada mes y de 90 min al año, con '
      'registro (NFPA 101 §7.9.3)'),
     (('13', 'Mensual', 'B10'), 'Puertas cortafuegos (fire doors): cierre automático, retenedores magnéticos y '
-     'señalización; inspección anual de las puertas por un profesional (NFPA 80)'),
+     'señalización; la inspección periódica de las puertas, por un profesional (NFPA 80)'),
     (('13', 'Mensual', 'B11'), 'Prueba mensual del grupo electrógeno (emergency generator) bajo carga, como digan el '
      'fabricante y tu código de incendios; sin «obligatorio» genérico'),
     (('13', 'HVAC', 'B7'), 'El personal no toca el refrigerante: solo un técnico certificado EPA 608 (40 CFR Part 82); '

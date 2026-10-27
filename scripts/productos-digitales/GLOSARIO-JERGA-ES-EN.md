@@ -151,6 +151,28 @@ requisitos de la sala → **venue requirements** · temporada alta de bodas → 
 | carta de alérgenos · cartel de alérgenos · contaminación cruzada | allergen letter | **allergen chart** (320/mes) · **allergen sign** (aviso escrito, 3-602.12(C)) · **cross-contact** | firme (guía EN §3.1) |
 | roscón de Reyes · torrijas · huesos de santo · panellets · polvorones · turrón | | **rosca de Reyes / Three Kings bread** + **King cake** (6-ene → Mardi Gras) · **hot cross buns** (perfil de alérgenos) · **amaretti** · **pignoli cookies** · **polvorones / Mexican wedding cookies** · **torrone** | criterio del kit (mismo perfil de alérgenos; guía EN §7) |
 
+## Hotel (Hotel Checklists Kit Pro, F1 27-oct-2026; detalle y fuentes en `checklists-kit/hotel/SPEC.md` §R y §3)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| camarera de pisos · gobernanta | chambermaid · floor maid · governess | **room attendant** (housekeeper) · **executive housekeeper**; quien revisa = **housekeeping supervisor / inspector** | por verificar (uso del sector) |
+| limpieza de salida · de estancia | exit cleaning · stay cleaning | **checkout (departure) room clean** · **stayover** service | firme (research 27-oct) |
+| servicio de cobertura | covering service | **turndown service** (4.400/mes) | firme (medido) |
+| No molestar · habitación fuera de servicio | — | **DND** (welfare check según la marca) · **OOO** (out of order: sale del inventario) / **OOS** (out of service: corto plazo; el uso varía) | firme (DND); OOO/OOS: fuentes que se contradicen |
+| par stock de lencería · albarán de lavandería | — | **linen par** (par 3: habitación, lavandería, office) · **linen count sheet** | por verificar; par 3 = [criterio del kit] |
+| recepción · recepcionista · jefe de recepción | reception · receptionist | **front desk** · **front desk agent** (guest service agent) · **front office manager** | por verificar |
+| auditoría nocturna · logbook | nocturnal audit | **night audit** · **night auditor** (20/mes) · **shift log** (pass-on log) | firme (medido) |
+| botones · overbooking sin habitación | bell boy | **bell staff** (bellperson) · **walk the guest** | por verificar |
+| room service | — | **in-room dining (IRD)** (880/mes) | firme (medido) |
+| reserva del evento · maître de banquetes | event sheet | **BEO** (banquet event order, 9.900/mes) · **banquet captain** | firme (BEO medido) |
+| mantenimiento · jefe · parte de averías · preventivo | maintenance chief | **engineering** · **chief engineer** · **work order** · **PM** (preventive maintenance) | por verificar |
+| encargado de guardia | shift responsible | **manager on duty (MOD)** | por verificar |
+| socorrista · tumbonas · vaso · playa · retrolavado | — | **lifeguard** · **loungers** · **pool shell** · **pool deck** · **backwash** | por verificar |
+| cloro y pH en el libro obligatorio · operador | — | **free chlorine (FC, ppm)** y pH en el **pool log** (3 años) · **qualified operator** (p. ej. **CPO**) | firme (MAHC 2024, primaria) |
+| jacuzzi · baño de vapor · cabina · camilla | jacuzzi (marca) | **hot tub / whirlpool spa** (≤ 104 °F) · **steam room** · **treatment room** · **treatment table** | firme (MAHC 2024: 104 °F) |
+| categoría 4* / 5* | 4-star hotel (oficial) | **upscale / luxury** (en EE. UU. no hay estrellas oficiales) | por verificar |
+| paridad en OTAs · régimen · cargo a habitación | — | **rate parity** (Expedia, Booking.com; resort fee en el precio total, 16 CFR Part 464) · **rate plan / meal plan** · **room charge** | firme (eCFR) |
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en
