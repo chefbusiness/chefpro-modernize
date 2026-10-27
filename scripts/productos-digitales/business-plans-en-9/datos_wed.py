@@ -43,10 +43,6 @@ FIJOS_NUEVOS = OrderedDict([
      'This file is part of the Wedding Venue Business Plan Kit by AI Chef Pro.'),
     # títulos (D169 A1, D162 A1-A3)
     ('CHECKLIST DE APERTURA — FINCA DE EVENTOS Y BODAS', 'WEDDING VENUE STARTUP CHECKLIST'),
-    # DV de la columna OK: el EN pasa la lista a «✓,☐,N/A» (CLAVES['—'] = '☐', mapas_wed.instalar); el aviso de error
-    # tiene que decir lo mismo (la Pizza EN publicada conserva «—» en este aviso: F2-NOTAS §5)
-    ('Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.',
-     'Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.'),
     ('INSTRUCCIONES DE USO — Plan financiero Finca de Eventos y Bodas',
      'HOW TO USE THIS WORKBOOK — Wedding Venue Financial Projections'),
     ('PLAN DE NEGOCIO: FINCA DE EVENTOS Y BODAS', 'WEDDING VENUE BUSINESS PLAN: BARN & EVENT VENUE'),
@@ -872,6 +868,8 @@ for _k in [('WEDC', 'F3 - Obra y equipamiento', 'B%d' % _f_) for _f_ in (8, 11, 
 
 # Pistas por TEXTO propias de la finca (se suman a las de extraer_textos.PISTAS): glosario research §9
 PISTAS_EXTRA = [
+    (r'desplegable', 'DV de la columna OK: en el EN la lista es «✓, ☐, N/A» (CLAVES[\'—\'] = \'☐\'): escribe «☐ = pending», '
+                     'NUNCA «—» (la Pizza EN publicada lo dejó con «—»: F2-NOTAS §5)'),
     (r'[Ii]nvitad', 'Glosario §9: guests · guest count · final headcount (nunca covers ni customers)'),
     (r'[Ee]ventos', 'Glosario §9: events per year · events of the average size'),
     (r'[Cc]anon', 'Glosario §9: caterer commission (% of the caterer\'s F&B sales), nunca «canon» ni «royalty»'),

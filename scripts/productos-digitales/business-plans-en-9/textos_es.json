@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:22:22Z",
+  "generado": "2026-10-27T07:25:07Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "b66015a5",
+  "commit": "28cc2369",
   "libros": {
    "WEDP": {
     "es": "plan-financiero-finca-eventos-bodas.xlsx",
@@ -34,12 +34,12 @@
    {
     "id": "GR",
     "descripcion": "REUTILIZADAS con revisión: EN de una cadena no GM de la Pizza, de BP/BP2, BBQ o PAEL, o casado solo tras normalizar el vocabulario de la finca. preparar_tandas escribe su EN; la tanda GWED-plan las revisa en textos_en/GR.revision.json",
-    "n_cadenas": 30,
-    "n_palabras": 339,
+    "n_cadenas": 11,
+    "n_palabras": 256,
     "n_plan": 11,
-    "n_check": 19,
+    "n_check": 0,
     "n_localizar": 0,
-    "n_max_len": 1
+    "n_max_len": 0
    },
    {
     "id": "GWED-plan",
@@ -54,12 +54,12 @@
    {
     "id": "GWED-check",
     "descripcion": "Nuevas del checklist (WEDC): las 84 tareas y sus cabeceras (con propuesta si existe)",
-    "n_cadenas": 222,
-    "n_palabras": 2661,
+    "n_cadenas": 241,
+    "n_palabras": 2744,
     "n_plan": 0,
-    "n_check": 222,
+    "n_check": 241,
     "n_localizar": 0,
-    "n_max_len": 0
+    "n_max_len": 1
    },
    {
     "id": "GX",
@@ -279,9 +279,6 @@
    ],
    "n_apariciones": 1,
    "palabras": 28,
-   "pistas": [
-    "D8: añade una vez que los importes van «in your currency» (sin símbolo)"
-   ],
    "sha1": "fdbceb4865ac",
    "donde": [
     {
@@ -508,8 +505,7 @@
    "palabras": 13,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-    "D160: employer payroll taxes ≈ 10 % (FICA 7.65 % + FUTA/SUTA + workers' comp aparte en seguros): «check with your payroll provider»"
+    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas"
    ],
    "sha1": "c9d84fd79f4f",
    "donde": [
@@ -544,8 +540,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "pistas": [
-    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-    "D160: 12 pay periods al año en el libro (sin pagas extra en EE. UU.)"
+    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas"
    ],
    "sha1": "d7033532e4b3",
    "donde": [
@@ -583,8 +578,7 @@
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
     "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-    "A3: el EN no afirma «verified» en 50 estados: «a starting point; requirements vary by state, county and city»",
-    "D160: federal $7.25/h × 2,080 h = $15,080; el suelo de tu estado va en «Suelo salarial» (B68)"
+    "A3: el EN no afirma «verified» en 50 estados: «a starting point; requirements vary by state, county and city»"
    ],
    "sha1": "545695b22412",
    "donde": [
@@ -11798,877 +11792,6 @@
    }
   },
   {
-   "id": "c0616",
-   "es": "TRÁMITE",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 6,
-   "palabras": 1,
-   "sha1": "136cb458bdcd",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "B4",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "B4",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "B4",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "B4",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F5 - Marca y reservas",
-     "c": "B4",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F6 - Temporada y eventos",
-     "c": "B4",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPAN",
-    "id": "c1132",
-    "en": "TASK",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-2 (Bakery/Restaurant EN)",
-    "origen": "texto",
-    "donde": [
-     "PANC F1!B4",
-     "PANC F2!B4"
-    ]
-   }
-  },
-  {
-   "id": "c0620",
-   "es": "Elegir forma jurídica: SL unipersonal o autónomo",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 7,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "Glosario §9 (e): LLC",
-    "D169 tarea US: LLC vs S corp: elige la forma con tu CPA (el plan tributa como sociedad: income tax en \"0. Assumptions\")"
-   ],
-   "sha1": "700bd29fead2",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "B5",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0629",
-    "en": "Choose your legal structure: LLC vs S corp",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!B7"
-    ]
-   }
-  },
-  {
-   "id": "c0621",
-   "es": "Gestoría",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 9,
-   "palabras": 1,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
-    "Glosario §9 (e): CPA / bookkeeper"
-   ],
-   "sha1": "0d702c361957",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "C5",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "C7",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "C8",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "C12",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "C13",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "C5",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "C6",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "C7",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "C8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GR",
-    "id": "c0630",
-    "en": "Accountant",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!C7",
-     "PIZC F1 - Constitución!C9"
-    ]
-   }
-  },
-  {
-   "id": "c0625",
-   "es": "Notaría / Gestoría",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 2,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
-    "Glosario §9 (e): CPA / bookkeeper"
-   ],
-   "sha1": "223fd1548420",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "C6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0634",
-    "en": "Attorney / CPA",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!C8"
-    ]
-   }
-  },
-  {
-   "id": "c0632",
-   "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 18,
-   "pistas": [
-    "D169 tarea US: State payroll / unemployment (UI) accounts y cómo cobra el dueño (draw vs salary) según la elección fiscal: CPA"
-   ],
-   "sha1": "fc3122840456",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "E8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0641",
-    "en": "Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!E10"
-    ]
-   }
-  },
-  {
-   "id": "c0638",
-   "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 10,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
-    "Glosario §9 (e): CPA / bookkeeper",
-    "D169 tarea US: Bookkeeping + venue management software que siga retainers, pagos programados y la comisión del caterer"
-   ],
-   "sha1": "4cdf527a0616",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "B11",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0646",
-    "en": "Accountant / bookkeeper and a POS that reports sales tax",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!B13"
-    ]
-   }
-  },
-  {
-   "id": "c0649",
-   "es": "Registro de la marca en la OEPM",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 7,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D169 tarea US: USPTO trademark search del nombre del venue"
-   ],
-   "sha1": "fecd055e3b77",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "B15",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0655",
-    "en": "Trademark search and registration (USPTO)",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!B16"
-    ]
-   }
-  },
-  {
-   "id": "c0656",
-   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 6,
-   "palabras": 12,
-   "max_len": 255,
-   "sha1": "99fc84bf8389",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F1 - Constitución",
-     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
-     "t": "dv-error",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A20",
-     "t": "dv-error",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19",
-     "t": "dv-error",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17",
-     "t": "dv-error",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F5 - Marca y reservas",
-     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18",
-     "t": "dv-error",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F6 - Temporada y eventos",
-     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18",
-     "t": "dv-error",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GR",
-    "id": "c0659",
-    "en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
-     "PIZC F2 - Local, humos y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19"
-    ]
-   }
-  },
-  {
-   "id": "c0660",
-   "es": "Titular / Técnico",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 3,
-   "palabras": 2,
-   "sha1": "59509aa14b0d",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C5",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C7",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "C5",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0623",
-    "en": "Owner / Code consultant",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!C5"
-    ]
-   }
-  },
-  {
-   "id": "c0667",
-   "es": "Antes de firmar",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 3,
-   "sha1": "b9464e471fa4",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "D7",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0667",
-    "en": "Before signing",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F2 - Local, humos y licencia!D6",
-     "PIZC F2 - Local, humos y licencia!D7"
-    ]
-   }
-  },
-  {
-   "id": "c0670",
-   "es": "Titular / Abogado",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 3,
-   "palabras": 2,
-   "sha1": "58dde7aa09e2",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C8",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "C12",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F5 - Marca y reservas",
-     "c": "C17",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0675",
-    "en": "Owner / Attorney",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F2 - Local, humos y licencia!C9"
-    ]
-   }
-  },
-  {
-   "id": "c0674",
-   "es": "Abogado",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 3,
-   "palabras": 1,
-   "sha1": "4a8f2a8eeb9a",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C9",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C10",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F6 - Temporada y eventos",
-     "c": "C8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPAN",
-    "id": "c1167",
-    "en": "Attorney",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-2 (Bakery/Restaurant EN)",
-    "origen": "texto",
-    "donde": [
-     "PANC F2!C6"
-    ]
-   }
-  },
-  {
-   "id": "c0680",
-   "es": "Técnico",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 7,
-   "palabras": 1,
-   "sha1": "8b99bcc0cb97",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C11",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C12",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C13",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C15",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C16",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C17",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "C6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GR",
-    "id": "c0670",
-    "en": "Architect / engineer",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F2 - Local, humos y licencia!C7"
-    ]
-   }
-  },
-  {
-   "id": "c0702",
-   "es": "Corredor de seguros",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 3,
-   "sha1": "8b6402056c9f",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F2 - Finca y licencia",
-     "c": "C19",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0652",
-    "en": "Insurance broker",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!C15"
-    ]
-   }
-  },
-  {
-   "id": "c0712",
-   "es": "Antes de la obra",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 4,
-   "sha1": "504a23e598f8",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "D5",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0653",
-    "en": "Before construction",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F1 - Constitución!D15",
-     "PIZC F2 - Local, humos y licencia!D11"
-    ]
-   }
-  },
-  {
-   "id": "c0725",
-   "es": "Instalador autorizado",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 3,
-   "palabras": 2,
-   "sha1": "458a57eb8935",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "C10",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "C11",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "WEDC",
-     "h": "F3 - Obra y equipamiento",
-     "c": "C12",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GFT",
-    "id": "c0715",
-    "en": "Installer / fire marshal",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en (FT/CAF EN)",
-    "origen": "texto",
-    "donde": [
-     "FTC F2 - Vehículo!C7"
-    ]
-   }
-  },
-  {
-   "id": "c0764",
-   "es": "Registro de jornada",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 3,
-   "pistas": [
-    "D169 tarea US: Time records y overtime (FLSA)"
-   ],
-   "sha1": "6411c922d192",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "B9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0763",
-    "en": "Time clock and overtime records",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F4 - Personal y prevención!B8"
-    ]
-   }
-  },
-  {
-   "id": "c0768",
-   "es": "Servicio de prevención",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 3,
-   "sha1": "1a400d9d5f8c",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F4 - Personal y catering",
-     "c": "C10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GPIZ-check",
-    "id": "c0780",
-    "en": "Insurance carrier / Consultant",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F4 - Personal y prevención!C14",
-     "PIZC F4 - Personal y prevención!C15"
-    ]
-   }
-  },
-  {
-   "id": "c0867",
-   "es": "Mensual",
-   "grupo": "GR",
-   "tratamiento": "traducir",
-   "planes": [
-    "wed"
-   ],
-   "n_apariciones": 1,
-   "palabras": 1,
-   "sha1": "f1a87869f9cd",
-   "donde": [
-    {
-     "f": "WEDC",
-     "h": "F6 - Temporada y eventos",
-     "c": "D16",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GR",
-    "id": "c0848",
-    "en": "Monthly",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZC F6 - Apertura y 90 días!D12",
-     "PIZC F6 - Apertura y 90 días!D13"
-    ]
-   }
-  },
-  {
    "id": "c0005",
    "es": "Invitados por evento (media del año 1)",
    "grupo": "GWED-plan",
@@ -16736,7 +15859,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: retainer (aplicado al precio) · booking; «non-refundable» solo con la tabla de cancelación",
-    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
+    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
    ],
    "por_celda": true,
    "sha1": "85fd5b89affe",
@@ -16763,7 +15886,7 @@
    "palabras": 6,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
+    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
    ],
    "por_celda": true,
    "sha1": "a2c67b0d5c44",
@@ -16790,7 +15913,7 @@
    "palabras": 7,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
+    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
    ],
    "por_celda": true,
    "sha1": "b8e0d7ef612f",
@@ -16821,7 +15944,7 @@
     "Glosario §9: retainer (aplicado al precio) · booking; «non-refundable» solo con la tabla de cancelación",
     "Glosario §9: zoning approval: conditional (special) use permit + certificate of occupancy (Group A-2)",
     "Glosario §9: peak / shoulder / off-peak (off-season)",
-    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
+    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
    ],
    "por_celda": true,
    "sha1": "15e3e6fd01a3",
@@ -16848,7 +15971,7 @@
    "palabras": 4,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
+    "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer"
    ],
    "por_celda": true,
    "sha1": "350675f82756",
@@ -16876,7 +15999,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
-    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
+    "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer"
    ],
    "por_celda": true,
    "sha1": "41baa909f999",
@@ -16903,7 +16026,7 @@
    "palabras": 3,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
+    "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer"
    ],
    "por_celda": true,
    "sha1": "9103de9ca10e",
@@ -16936,7 +16059,7 @@
     "Glosario §9 (e): ASCAP/BMI/SESAC",
     "Glosario §9: ADA-compliant restrooms",
     "Glosario §9: standby generator",
-    "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses"
+    "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer"
    ],
    "por_celda": true,
    "sha1": "672ae910eb4a",
@@ -16965,7 +16088,7 @@
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: venue (el negocio) / property (el inmueble); nunca «finca», «estate» ni «farm» como nombre",
     "Glosario §9: exclusive caterer · preferred vendor list · in-house catering",
-    "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer"
+    "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría"
    ],
    "por_celda": true,
    "sha1": "04005c79fae6",
@@ -16992,7 +16115,7 @@
    "palabras": 6,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer"
+    "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría"
    ],
    "por_celda": true,
    "sha1": "9a8dc2158725",
@@ -17022,7 +16145,7 @@
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
     "Glosario §9: guests · guest count · final headcount (nunca covers ni customers)",
     "Glosario §9: caterer commission (% of the caterer's F&B sales), nunca «canon» ni «royalty»",
-    "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer"
+    "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría"
    ],
    "por_celda": true,
    "sha1": "09d2126532b9",
@@ -17050,7 +16173,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: venue (el negocio) / property (el inmueble); nunca «finca», «estate» ni «farm» como nombre",
-    "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría"
+    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
    ],
    "por_celda": true,
    "sha1": "1a0dbda88abe",
@@ -17078,7 +16201,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: venue coordinator (del venue) ≠ day-of coordinator (de la pareja)",
-    "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría"
+    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
    ],
    "por_celda": true,
    "sha1": "7bd8a2fe7296",
@@ -17105,7 +16228,7 @@
    "palabras": 3,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría"
+    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
    ],
    "por_celda": true,
    "sha1": "9103de9ca10e",
@@ -17133,7 +16256,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: exclusive caterer · preferred vendor list · in-house catering",
-    "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría"
+    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
    ],
    "por_celda": true,
    "sha1": "c1897f03d7b6",
@@ -17163,7 +16286,7 @@
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "Glosario §9: venue (el negocio) / property (el inmueble); nunca «finca», «estate» ni «farm» como nombre",
     "Glosario §9 (e): sales tax (el venue: site fee al tipo de ejemplo; la comisión, 0 %)",
-    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
+    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
    ],
    "por_celda": true,
    "sha1": "db152aa6a449",
@@ -17190,7 +16313,7 @@
    "palabras": 1,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
+    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
    ],
    "por_celda": true,
    "sha1": "6fbf5c8e6f7f",
@@ -17219,7 +16342,7 @@
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "Glosario §9 (e): sales tax (el venue: site fee al tipo de ejemplo; la comisión, 0 %)",
-    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
+    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
    ],
    "por_celda": true,
    "sha1": "8822b10165d1",
@@ -17249,7 +16372,7 @@
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "Glosario §9: caterer commission (% of the caterer's F&B sales), nunca «canon» ni «royalty»",
     "Glosario §9: exclusive caterer · preferred vendor list · in-house catering",
-    "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer"
+    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
    ],
    "por_celda": true,
    "sha1": "d39f0de53a56",
@@ -17277,7 +16400,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: maximum occupancy / occupant load (fire marshal) · sprinklers · egress",
-    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
+    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
    ],
    "por_celda": true,
    "sha1": "628ce315c47c",
@@ -17305,7 +16428,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: tent / pergola / ceremony site",
-    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
+    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
    ],
    "por_celda": true,
    "sha1": "bafe894d007a",
@@ -17334,7 +16457,7 @@
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "Glosario §9: maximum occupancy / occupant load (fire marshal) · sprinklers · egress",
-    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
+    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
    ],
    "por_celda": true,
    "sha1": "b2a7409a311b",
@@ -17364,7 +16487,7 @@
     "Glosario §9: guests · guest count · final headcount (nunca covers ni customers)",
     "Glosario §9: venue (el negocio) / property (el inmueble); nunca «finca», «estate» ni «farm» como nombre",
     "Glosario §9 (e): county / state",
-    "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas"
+    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
    ],
    "por_celda": true,
    "sha1": "628ba31cd5d9",
@@ -17392,7 +16515,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: decibel limit / sound meter, music curfew (county ordinance + CUP)",
-    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
+    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
    ],
    "por_celda": true,
    "sha1": "9b2205d1b1ec",
@@ -17419,7 +16542,7 @@
    "palabras": 11,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
+    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
    ],
    "por_celda": true,
    "sha1": "2017224046b3",
@@ -17447,7 +16570,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
+    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
    ],
    "por_celda": true,
    "sha1": "563744d88bb1",
@@ -17477,7 +16600,7 @@
     "Research §5: ASCAP / BMI / SESAC si se pone música",
     "Glosario §9: decibel limit / sound meter, music curfew (county ordinance + CUP)",
     "Glosario §9 (e): county / state",
-    "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)"
+    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
    ],
    "por_celda": true,
    "sha1": "bf36b0191927",
@@ -17505,7 +16628,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D169: NO cruza (no es norma US): elimínala o sustitúyela por el food safety plan del caterer",
-    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
+    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
    ],
    "por_celda": true,
    "sha1": "cdfbc39e4574",
@@ -17532,7 +16655,7 @@
    "palabras": 19,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
+    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
    ],
    "por_celda": true,
    "sha1": "c2f474e58385",
@@ -17560,7 +16683,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
+    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
    ],
    "por_celda": true,
    "sha1": "9e1fd15c44b7",
@@ -17588,7 +16711,7 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "Glosario §9: exclusive caterer · preferred vendor list · in-house catering",
-    "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos"
+    "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)"
    ],
    "por_celda": true,
    "sha1": "7f5f8be74058",
@@ -17851,6 +16974,205 @@
    ]
   },
   {
+   "id": "c0616",
+   "es": "TRÁMITE",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 6,
+   "palabras": 1,
+   "sha1": "136cb458bdcd",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "B4",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "B4",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "B4",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "B4",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F5 - Marca y reservas",
+     "c": "B4",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F6 - Temporada y eventos",
+     "c": "B4",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPAN",
+    "id": "c1132",
+    "en": "TASK",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-2 (Bakery/Restaurant EN)",
+    "origen": "texto",
+    "donde": [
+     "PANC F1!B4",
+     "PANC F2!B4"
+    ]
+   }
+  },
+  {
+   "id": "c0620",
+   "es": "Elegir forma jurídica: SL unipersonal o autónomo",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 7,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "Glosario §9 (e): LLC",
+    "D169 tarea US: LLC vs S corp: elige la forma con tu CPA (el plan tributa como sociedad: income tax en \"0. Assumptions\")"
+   ],
+   "sha1": "700bd29fead2",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "B5",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0629",
+    "en": "Choose your legal structure: LLC vs S corp",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!B7"
+    ]
+   }
+  },
+  {
+   "id": "c0621",
+   "es": "Gestoría",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 9,
+   "palabras": 1,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+    "Glosario §9 (e): CPA / bookkeeper"
+   ],
+   "sha1": "0d702c361957",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "C5",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "C7",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "C8",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "C12",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "C13",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "C5",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "C6",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "C7",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "C8",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GR",
+    "id": "c0630",
+    "en": "Accountant",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!C7",
+     "PIZC F1 - Constitución!C9"
+    ]
+   }
+  },
+  {
    "id": "c0623",
    "es": "El plan financiero está hecho para una SL (Impuesto de Sociedades), que además es la que firma el arrendamiento de la finca. Como autónomo tributas por IRPF: compáralo con tu gestoría con las cifras del plan",
    "grupo": "GWED-check",
@@ -17905,6 +17227,43 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0625",
+   "es": "Notaría / Gestoría",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 2,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+    "Glosario §9 (e): CPA / bookkeeper"
+   ],
+   "sha1": "223fd1548420",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "C6",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0634",
+    "en": "Attorney / CPA",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!C8"
+    ]
+   }
   },
   {
    "id": "c0626",
@@ -18037,6 +17396,41 @@
    ]
   },
   {
+   "id": "c0632",
+   "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 18,
+   "pistas": [
+    "D169 tarea US: State payroll / unemployment (UI) accounts y cómo cobra el dueño (draw vs salary) según la elección fiscal: CPA"
+   ],
+   "sha1": "fc3122840456",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "E8",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0641",
+    "en": "Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!E10"
+    ]
+   }
+  },
+  {
    "id": "c0633",
    "es": "Certificado digital de la SL",
    "grupo": "GWED-check",
@@ -18139,6 +17533,44 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0638",
+   "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 10,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+    "Glosario §9 (e): CPA / bookkeeper",
+    "D169 tarea US: Bookkeeping + venue management software que siga retainers, pagos programados y la comisión del caterer"
+   ],
+   "sha1": "4cdf527a0616",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "B11",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0646",
+    "en": "Accountant / bookkeeper and a POS that reports sales tax",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!B13"
+    ]
+   }
   },
   {
    "id": "c0639",
@@ -18416,6 +17848,42 @@
    ]
   },
   {
+   "id": "c0649",
+   "es": "Registro de la marca en la OEPM",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 7,
+   "pistas": [
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D169 tarea US: USPTO trademark search del nombre del venue"
+   ],
+   "sha1": "fecd055e3b77",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "B15",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0655",
+    "en": "Trademark search and registration (USPTO)",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!B16"
+    ]
+   }
+  },
+  {
    "id": "c0650",
    "es": "Comprueba antes que el nombre de la finca no está registrado en tu clase (organización de eventos y alquiler de espacios)",
    "grupo": "GWED-check",
@@ -18513,6 +17981,75 @@
    ]
   },
   {
+   "id": "c0656",
+   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 6,
+   "palabras": 12,
+   "max_len": 255,
+   "sha1": "99fc84bf8389",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F1 - Constitución",
+     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
+     "t": "dv-error",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A20",
+     "t": "dv-error",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19",
+     "t": "dv-error",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17",
+     "t": "dv-error",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F5 - Marca y reservas",
+     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18",
+     "t": "dv-error",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F6 - Temporada y eventos",
+     "c": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18",
+     "t": "dv-error",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GR",
+    "id": "c0659",
+    "en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
+     "PIZC F2 - Local, humos y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19"
+    ]
+   }
+  },
+  {
    "id": "c0658",
    "es": "FASE 2: FINCA, ARRENDAMIENTO Y LICENCIA (18-6 meses antes)",
    "grupo": "GWED-check",
@@ -18561,6 +18098,52 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0660",
+   "es": "Titular / Técnico",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 3,
+   "palabras": 2,
+   "sha1": "59509aa14b0d",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C5",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C7",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "C5",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0623",
+    "en": "Owner / Code consultant",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!C5"
+    ]
+   }
   },
   {
    "id": "c0661",
@@ -18715,6 +18298,39 @@
    ]
   },
   {
+   "id": "c0667",
+   "es": "Antes de firmar",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 3,
+   "sha1": "b9464e471fa4",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "D7",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0667",
+    "en": "Before signing",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F2 - Local, humos y licencia!D6",
+     "PIZC F2 - Local, humos y licencia!D7"
+    ]
+   }
+  },
+  {
    "id": "c0668",
    "es": "Potencia eléctrica disponible, agua de red o pozo y fosa séptica o red de saneamiento. Una fosa para más de 150 invitados o un vertido nuevo pueden necesitar autorización de la confederación hidrográfica: compruébalo",
    "grupo": "GWED-check",
@@ -18763,6 +18379,52 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0670",
+   "es": "Titular / Abogado",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 3,
+   "palabras": 2,
+   "sha1": "58dde7aa09e2",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C8",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "C12",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F5 - Marca y reservas",
+     "c": "C17",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0675",
+    "en": "Owner / Attorney",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F2 - Local, humos y licencia!C9"
+    ]
+   }
   },
   {
    "id": "c0671",
@@ -18835,6 +18497,52 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0674",
+   "es": "Abogado",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 3,
+   "palabras": 1,
+   "sha1": "4a8f2a8eeb9a",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C9",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C10",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F6 - Temporada y eventos",
+     "c": "C8",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPAN",
+    "id": "c1167",
+    "en": "Attorney",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-2 (Bakery/Restaurant EN)",
+    "origen": "texto",
+    "donde": [
+     "PANC F2!C6"
+    ]
+   }
   },
   {
    "id": "c0675",
@@ -18965,6 +18673,80 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0680",
+   "es": "Técnico",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 7,
+   "palabras": 1,
+   "sha1": "8b99bcc0cb97",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C11",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C12",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C13",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C15",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C16",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C17",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "C6",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GR",
+    "id": "c0670",
+    "en": "Architect / engineer",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F2 - Local, humos y licencia!C7"
+    ]
+   }
   },
   {
    "id": "c0681",
@@ -19518,6 +19300,38 @@
    ]
   },
   {
+   "id": "c0702",
+   "es": "Corredor de seguros",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 3,
+   "sha1": "8b6402056c9f",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F2 - Finca y licencia",
+     "c": "C19",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0652",
+    "en": "Insurance broker",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!C15"
+    ]
+   }
+  },
+  {
    "id": "c0704",
    "es": "El capital mínimo depende del aforo y de la comunidad: en Andalucía, 526.000 € para 101-300 personas (Decreto 109/2005). Añade daños a las mejoras y pérdida de beneficio",
    "grupo": "GWED-check",
@@ -19691,6 +19505,39 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0712",
+   "es": "Antes de la obra",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 4,
+   "sha1": "504a23e598f8",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "D5",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0653",
+    "en": "Before construction",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F1 - Constitución!D15",
+     "PIZC F2 - Local, humos y licencia!D11"
+    ]
+   }
   },
   {
    "id": "c0713",
@@ -20010,6 +19857,52 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0725",
+   "es": "Instalador autorizado",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 3,
+   "palabras": 2,
+   "sha1": "458a57eb8935",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "C10",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "C11",
+     "t": "celda",
+     "tr": "traducir"
+    },
+    {
+     "f": "WEDC",
+     "h": "F3 - Obra y equipamiento",
+     "c": "C12",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GFT",
+    "id": "c0715",
+    "en": "Installer / fire marshal",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en (FT/CAF EN)",
+    "origen": "texto",
+    "donde": [
+     "FTC F2 - Vehículo!C7"
+    ]
+   }
   },
   {
    "id": "c0726",
@@ -20924,6 +20817,41 @@
    ]
   },
   {
+   "id": "c0764",
+   "es": "Registro de jornada",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 3,
+   "pistas": [
+    "D169 tarea US: Time records y overtime (FLSA)"
+   ],
+   "sha1": "6411c922d192",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "B9",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0763",
+    "en": "Time clock and overtime records",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F4 - Personal y prevención!B8"
+    ]
+   }
+  },
+  {
    "id": "c0765",
    "es": "Desde el primer día",
    "grupo": "GWED-check",
@@ -20992,6 +20920,39 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0768",
+   "es": "Servicio de prevención",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 3,
+   "sha1": "1a400d9d5f8c",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F4 - Personal y catering",
+     "c": "C10",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GPIZ-check",
+    "id": "c0780",
+    "en": "Insurance carrier / Consultant",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F4 - Personal y prevención!C14",
+     "PIZC F4 - Personal y prevención!C15"
+    ]
+   }
   },
   {
    "id": "c0769",
@@ -23392,6 +23353,39 @@
      "tr": "traducir"
     }
    ]
+  },
+  {
+   "id": "c0867",
+   "es": "Mensual",
+   "grupo": "GWED-check",
+   "tratamiento": "traducir",
+   "planes": [
+    "wed"
+   ],
+   "n_apariciones": 1,
+   "palabras": 1,
+   "sha1": "f1a87869f9cd",
+   "donde": [
+    {
+     "f": "WEDC",
+     "h": "F6 - Temporada y eventos",
+     "c": "D16",
+     "t": "celda",
+     "tr": "traducir"
+    }
+   ],
+   "reuso": {
+    "grupo": "GR",
+    "id": "c0848",
+    "en": "Monthly",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-8 (Pizza EN)",
+    "origen": "texto",
+    "donde": [
+     "PIZC F6 - Apertura y 90 días!D12",
+     "PIZC F6 - Apertura y 90 días!D13"
+    ]
+   }
   },
   {
    "id": "c0868",
