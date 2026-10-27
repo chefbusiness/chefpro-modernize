@@ -77,12 +77,14 @@ KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gesti
 # (hreflang es + en + x-default) y van en --esperadas en el PR que lo estrena: las últimas,
 # /plan-negocio-parrillero-asador-eventos (gemelo EN: BBQ Catering Business Plan Kit, 24-oct-2026),
 # /plan-negocio-paellero-eventos (gemelo EN: Paella Catering Business Plan Kit, 24-oct-2026) y
-# /plan-negocio-pizzeria (gemelo EN: Pizza Shop Business Plan Kit, 25-oct-2026).
+# /plan-negocio-pizzeria (gemelo EN: Pizza Shop Business Plan Kit, 25-oct-2026) y
+# /plan-negocio-heladeria (gemelo EN: Ice Cream Shop Business Plan Kit, 27-oct-2026).
 PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
              '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
              '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',
              '/plan-chef-privado-showcooking-eventos', '/plan-catering-tematico-eventos',
-             '/plan-negocio-heladeria', '/plan-negocio-finca-eventos-bodas',  # nacen el 25-oct-2026, solo ES
+             '/plan-negocio-heladeria',  # nace el 25-oct-2026; gemelo EN: Ice Cream Shop Business Plan Kit (27-oct-2026)
+             '/plan-negocio-finca-eventos-bodas',  # nace el 25-oct-2026, solo ES
              '/plan-negocio-pizzeria']  # nace el 25-oct-2026 (noche); gemelo EN: Pizza Shop Business Plan Kit
 # GuiaLandingPage recibe `lang` desde el 15-oct-2026 (Food Cost + Menu Engineering Guide EN): sus 14
 # landings ES (12 guías + 2 manuales) tienen que seguir byte a byte iguales, igual que las de arriba.

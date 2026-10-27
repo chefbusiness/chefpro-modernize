@@ -348,6 +348,10 @@ const data: KitTareasData = {
       a: "Yes. One purchase covers one business with all of its shops, which makes it a good fit for ice cream shop chains. If you are a consultant, you can use the checklists with your clients, but you can't hand them copies: each business buys its own.",
     },
     {
+      q: 'Is there a business plan for an ice cream shop?',
+      a: "Yes, and it is a different kit. This one is for running the shop once it is open: daily, weekly and monthly routines. The Ice Cream Shop Business Plan Kit ($39) is for deciding, financing and opening it: a 10-section Word plan, Excel financial projections with summer seasonality and a 12-month cash flow, and an 80-task startup checklist, including the choice between buying a pasteurized base and making your own mix. Many owners use the plan before opening and the checklists after.",
+    },
+    {
       q: 'Does it work in the UK, Canada or Australia?',
       a: "Yes, with a few edits, all in cells you can change (the protected sheets have no password). The kit is set up for the US: temperatures in °F under the FDA Food Code (0 °F frozen storage, 41 °F cold holding), the 9 major allergens and a cash count in US bills and coins. In the UK, ice cream is stored frozen at −18 °C or below, chilled food such as the aging mix is kept at 8 °C or below, and allergen information covers 14 allergens (the kit's allergen tasks already note the UK's 14). In Canada and Australia, check your provincial or state food safety rules, frozen dessert licensing and allergen list, and type them into the tasks. For pounds, Canadian or Australian dollars, unprotect the cash count sheet and change the label and value of each bill and coin. The seasonal calendar has a UK note (Mothering Sunday, bank holidays and Boxing Day) and room for your own dates. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
     },
@@ -457,6 +461,7 @@ const data: KitTareasData = {
   footerLinks: [
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products', label: 'Digital Products' },
+    { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
     { href: '/en/digital-products/restaurant-checklist-templates', label: 'Restaurant Checklists Kit Pro' },
     { href: '/en/digital-products/bar-checklist-templates', label: 'Bar Checklists Kit Pro' },
     { href: '/en/digital-products/coffee-shop-checklist-templates', label: 'Coffee Shop Checklists Kit Pro' },

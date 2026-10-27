@@ -328,6 +328,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
+    { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],

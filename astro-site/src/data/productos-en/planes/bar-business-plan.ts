@@ -324,6 +324,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit' },
     { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },
     { href: '/en/digital-products/pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit' },
+    { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
