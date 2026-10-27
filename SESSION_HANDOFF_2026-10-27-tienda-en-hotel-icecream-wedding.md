@@ -2,7 +2,7 @@
 
 ## 0. Estado en una línea
 John (27-oct): «vamos a trabajar en traducción al inglés de 3 de ellos… escoge los tres que siguen y dale luz verde continua…
-completos me dices y creamos los enlaces de pago en Stripe». **Los tres están LISTOS a falta del Payment Link**, en PR apilados:
+completos me dices y creamos los enlaces de pago en Stripe». **✅ Los tres están LIVE (merge `ae531f6b`, 27-oct, ~12:00 Madrid)**; ver §8, en PR apilados:
 **#170 Hotel → #171 Ice Cream → #172 Wedding** (abiertos contra `main` para tener preview; el diff de cada uno incluye los de abajo
 hasta que se fusionen). Fichas de Stripe: `PAYMENT_LINKS_PENDIENTES_JOHN.md`. ≈ 2 h 30 de reloj (07:30 → 09:55 CET), ≈ 5,4 M tokens
 de subagentes para los tres. CPU del Mac 42-57 °C toda la sesión (centinela a 63 °C sin una alerta); todo lo pesado en el VPS.
@@ -68,3 +68,17 @@ traductores sonnet **reanudados con SendMessage** para mantener terminología �
 reanudado) → UNA revisión opus nueva y escéptica (cazó B reales en los tres) → F3 sonnet → PR draft → gates contra preview con un
 sonnet reanudado. Tope de 3 agentes a la vez; ramas apiladas con conflictos triviales (glosario, `mapas.py`, listas de gates) resueltos
 quedándose con los dos lados + regresión de los 10 conjuntos (37/37).
+
+## 8. Cierre (27-oct, mediodía) — LIVE
+- John dio los 3 links «uno por uno»; cada uno comprobado con la CLI de Stripe (usd, unit_amount, one_time, *exclusive*, factura,
+  redirección): Hotel `plink_1UV6mM4CcdRGidmEPIg3fmmj` · Ice Cream `plink_1UV6rK4CcdRGidmE9nLDNQrU` · Wedding `plink_1UV6uO4CcdRGidmEotbwEDkd`.
+  **Lección: la descripción de Stripe ≤ 260 caracteres** (John lo corrigió: la primera del hotel era larga).
+- Env de Netlify (builds, all) ×3 → `payment-links.ts` (85) → preview #172 con los 3 links en los 4 botones → merge de la pila por el
+  #172 (merge commit; el modo automático lo bloqueó como despliegue a producción: John lo aprobó en modo manual).
+- Gates LIVE: `gate-flujo-postpago` completo 85 · 1102 · 0; `--only` ×3 verdes; tienda, robots `--live`, hub verdes; Miselup 108/108;
+  cripto 200 ×3. **Pedidos cripto QA por purgar (John, `ADMIN_PASSWORD`)**: `qa-hotel-en`, `qa-icecream-en`, `qa-wedding-en` y
+  `qa-ctrl@aichef.pro` (pizza, iid 6284039837), además de los de la pizza/heladería/finca del 25-oct.
+- Correos: borradores `ca9d54a1` (Wedding 23-feb) · `4692539a` (Ice Cream 28-feb) · `f191af0f` (Hotel 5-mar), pruebas a John enviadas;
+  routine `trig_015MWHYv3BP4FYUCeQPQee9K` (3-feb-2027 15:07Z) los programa (mirar su `list_runs` después). Siguiente hueco EN: 10-mar.
+- GEO: sitemap reenviado en GSC; `llms.txt` enlazaba 28 de los 31 EN (faltaban Inventory, Scheduling y Financial Plan, omisión antigua)
+  → PR #173. Worktrees y ramas borrados en Mac, VPS y remoto.
