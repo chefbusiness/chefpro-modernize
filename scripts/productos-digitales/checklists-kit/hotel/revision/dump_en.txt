@@ -1,0 +1,4391 @@
+Volcado de 19 xlsx de ../../../astro-site/public/dl/hotel-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-hotel-breakfast-buffet-checklists.xlsx
+# docProps: title='Hotel Breakfast Buffet Checklists: Setup, Service & Closing' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Hotel Breakfast Buffet Checklists: Setup, Service & Closing
+B4     : How to use this template:
+B5     : ▸ Complete checklist for setting up and breaking down the breakfast buffet.
+B6     : ▸ Covers everything from kitchen prep to buffet removal.
+B7     : ▸ Mark ✓ on each completed task. Adapt to your hotel.
+B9     : Customization:
+B10    : ▸ Green cells are editable: assigned to, time, notes.
+B11    : ▸ Adjust the stations to your hotel's category (economy, midscale, upscale or luxury).
+B12    : ▸ Print on US Letter and leave in the kitchen and the breakfast room.
+B14    : Food safety and start-up:
+B15    : ▸ The first section of "Breakfast Opening" covers personal hygiene and a safe start-up: coolers first (did they hold overnight?), then the hood, the gas check, and only then ovens, flat-tops and steam tables.
+B16    : ▸ Cold-smoked or marinated salmon and any fish served raw need parasite destruction first (FDA Food Code 3-402.11): frozen at −4 °F or below for 7 days, or at −31 °F until solid plus 15 h, or at −31 °F until solid plus 24 h at −4 °F. Get the supplier's letter, keep it 90 days and log the lot.
+B17    : ▸ At the bottom of "Breakfast Closing" there is an editable freezer shelf-life table by product family: adjust it to your product and your supplier. It sits outside the counter because it is a reference, not a task.
+B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B20    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Breakfast Opening» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Breakfast Buffet Opening
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Personal Hygiene & Safe Kitchen Start-Up
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)
+C6     : Kitchen
+A7     : 2
+B7     : No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics
+C7     : Kitchen
+A8     : 3
+B8     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C8     : Kitchen
+A9     : 4
+B9     : Wash hands at the handwashing sink on arrival and at every change of task: soap, hot water (at least 100 °F, FDA Food Code 5-202.12) and single-use paper towels
+C9     : Kitchen
+A10    : 5
+B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
+C10    : Kitchen
+A11    : 6
+B11    : Check that the walk-in coolers and kitchen refrigerators ran all night and log the temperature (cooler 41 °F or below / freezer 0 °F or below) — log reading: ____ °F. If out of range, do not take product out until it is assessed
+C11    : Kitchen
+A12    : 7
+B12    : Turn on the exhaust hood and ventilate the kitchen BEFORE lighting anything else
+C12    : Kitchen
+A13    : 8
+B13    : If the kitchen has gas: open the main valve and check there is NO gas smell; if there is, light nothing, don't touch switches, get out, call the gas company or 911 from outside and notify engineering
+C13    : Kitchen
+A14    : Kitchen — Prep (5:30–6:30 AM)
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Turn on ovens, flat-tops, steam tables and equipment only after the hood and the gas check
+C16    : Kitchen
+A17    : 2
+B17    : Prepare scrambled eggs, omelets, eggs fried on the flat-top
+C17    : Kitchen
+A18    : 3
+B18    : Prepare bacon, sausages, grilled tomato, mushrooms
+C18    : Kitchen
+A19    : 4
+B19    : Set up the cold cuts platter: ham, turkey, chorizo, salami
+C19    : Kitchen
+A20    : 5
+B20    : Prepare a cheese selection: cheddar, Swiss, brie, gouda
+C20    : Kitchen
+A21    : 6
+B21    : Cut fresh seasonal fruit: melon, watermelon, pineapple, kiwi, strawberries
+C21    : Kitchen
+A22    : 7
+B22    : Prepare yogurts, granola, nuts and honey
+C22    : Kitchen
+A23    : 8
+B23    : Prepare pastries: croissants, muffins, pain au chocolat
+C23    : Kitchen
+A24    : 9
+B24    : Prepare breads: baguette, whole wheat, rye, toast, sandwich loaf
+C24    : Kitchen
+A25    : 10
+B25    : Prepare fresh juices: orange, grapefruit, mixed fruit
+C25    : Kitchen
+A26    : 11
+B26    : Check hot product (135 °F or above) and cold product (41 °F or below) temperatures — log reading: ____ °F
+C26    : Kitchen
+A28    : Dining Room — Buffet Setup (6:00–6:45 AM)
+A29    : #
+B29    : Task
+C29    : Area
+D29    : Assigned to
+E29    : ✓
+F29    : Time
+G29    : Notes
+A30    : 1
+B30    : Check that tables, buffet and dining room floors are clean
+C30    : Dining room
+A31    : 2
+B31    : Set up the hot station: chafing dishes, pans, serving spoons
+C31    : Buffet
+A32    : 3
+B32    : Set up the cold station: cold cuts, cheeses, salmon, salads
+C32    : Buffet
+A33    : 4
+B33    : Cold-smoked or marinated salmon and any fish served raw — PARASITE prevention: use only product with documented parasite destruction (−4 °F or below for 7 days, or −31 °F until solid plus 15 h; FDA 3-402.11); if you cure it in-house, freeze it first yourself and log the lot
+C33    : Buffet
+A34    : 5
+B34    : Set up the fruit and yogurt station with decorative ice
+C34    : Buffet
+A35    : 6
+B35    : Set up the pastry and bread station with a toaster
+C35    : Buffet
+A36    : 7
+B36    : Set up the cereal, milk, muesli and toppings station
+C36    : Buffet
+A37    : 8
+B37    : Check the beverage station: coffee, tea, milk, juices, water
+C37    : Buffet
+A38    : 9
+B38    : Place signs with each dish name and its allergens
+C38    : Buffet
+A39    : 10
+B39    : Check table mise en place: tablecloths, napkins, silverware
+C39    : Dining room
+A40    : 11
+B40    : Place jams, butter and honey on each table
+C40    : Dining room
+A41    : 12
+B41    : Check dining room temperature (68–72 °F)
+C41    : Admin
+A42    : 13
+B42    : Open the buffet at the exact time per hotel standard
+C42    : Admin
+A44    : During breakfast service
+A45    : #
+B45    : Task
+C45    : Area
+D45    : Assigned to
+E45    : ✓
+F45    : Time
+G45    : Notes
+A46    : 1
+B46    : Replenish hot dishes every 20–30 min (never let them run empty)
+C46    : Buffet
+A47    : 2
+B47    : Restock fruit, pastries and breads as consumed
+C47    : Buffet
+A48    : 3
+B48    : Keep the buffet clean at all times: wipe up spills immediately
+C48    : Cleaning
+A49    : 4
+B49    : Restock juices, coffee and water at the beverage station
+C49    : Buffet
+A50    : 5
+B50    : Clear dirty plates from tables continuously
+C50    : Dining room
+A51    : 6
+B51    : Manage allergens: handle special requests (gluten-free, vegan, the 9 major allergens)
+C51    : Kitchen
+A52    : 7
+B52    : Log guest counts by time slot
+C52    : Admin
+A54    : Buffet closing
+A55    : #
+B55    : Task
+C55    : Area
+D55    : Assigned to
+E55    : ✓
+F55    : Time
+G55    : Notes
+A56    : 1
+B56    : Remove signs 10 min before closing
+C56    : Buffet
+A57    : 2
+B57    : Remove stations gradually per hotel policy
+C57    : Buffet
+A58    : 3
+B58    : Log leftovers and waste to adjust future production
+C58    : Kitchen
+A59    : 4
+B59    : Break down chafing dishes, clean and store
+C59    : Cleaning
+A60    : 5
+B60    : Clean, then sanitize all buffet surfaces (approved sanitizer at label concentration, checked with a test strip)
+C60    : Cleaning
+A61    : 6
+B61    : Clean the breakfast room: tables, floors, glass
+C61    : Cleaning
+A62    : 7
+B62    : Prep next-day mise en place (orders, prep)
+C62    : Kitchen
+B63    : Tasks done:
+C63    = =COUNTIFS(B6:B62,"?*",E6:E62,"✓")-COUNTIFS(B6:B62,"Task",E6:E62,"✓")   → caché 0.0
+D63    : of
+E63    = =COUNTIF(B6:B62,"?*")-COUNTIF(B6:B62,"Task")-COUNTIF(E6:E62,"N/A")   → caché 46.0
+A64    : Signed off by: _________________  Date: ___/___/______
+A65    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E30 E31 E32 E33 E34 E35 E36 E37 E38 E39 E40 E41 E42 E46 E47 E48 E49 E50 E51 E52 E56 E57 E58 E59 E60 E61 E62 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G62 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Breakfast Closing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Detailed Breakfast Buffet Closing
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Leftover removal and logging
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Log leftovers by station: hot, cold, pastry, fruit
+C6     : Kitchen
+A7     : 2
+B7     : Separate reusable product from waste: anything EXPOSED on the buffet line (within guest reach or out of temperature) is never reused [kit policy]; only product that never left the kitchen and held its hot or cold chain goes back, hot product cooled from 135 °F to 70 °F within 2 h and to 41 °F within 4 more h (FDA 3-501.14)
+C7     : Kitchen
+A8     : 3
+B8     : Label reusable product with name, date and time and store it covered at 41 °F or below; date marking: 7 days counting the prep day (FDA 3-501.17). Shelf life by family is in the table at the bottom of this sheet
+C8     : Kitchen
+A9     : 4
+B9     : Log waste on the daily control sheet (weight and type)
+C9     : Kitchen
+A10    : 5
+B10    : Adjust tomorrow's production forecast
+C10    : Kitchen
+A11    : 6
+B11    : Photograph the buffet before breakdown (presentation check)
+C11    : Admin
+A13    : Equipment breakdown and cleaning
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Empty and clean chafing dishes (drain water, dry)
+C15    : Cleaning
+A16    : 2
+B16    : Clean pans, trays and serving utensils
+C16    : Cleaning
+A17    : 3
+B17    : Clean, then sanitize buffet line surfaces (approved sanitizer at label concentration, checked with a test strip)
+C17    : Cleaning
+A18    : 4
+B18    : Clean and sanitize the juice and coffee station: run the espresso machine cleaning cycle (detergent tablet or group-head backflush, per model), flush the circuit and the milk pitcher, and take apart and wash the juicer
+C18    : Cleaning
+A19    : 5
+B19    : Check that toasters, coffee machines and equipment are off
+C19    : Cleaning
+A20    : 6
+B20    : Store clean service ware in its correct location
+C20    : Cleaning
+A22    : Dining Room — Cleaning & Prep
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Remove dirty tablecloths and send to laundry
+C24    : Dining room
+A25    : 2
+B25    : Clean and sanitize all guest tables
+C25    : Cleaning
+A26    : 3
+B26    : Sweep and mop the breakfast room floor
+C26    : Cleaning
+A27    : 4
+B27    : Clean glass and mirrors in the buffet area
+C27    : Cleaning
+A28    : 5
+B28    : Check chairs: clean, aligned and in good condition
+C28    : Dining room
+A29    : 6
+B29    : Report any breakage or damage to engineering
+C29    : Admin
+B30    : Tasks done:
+C30    = =COUNTIFS(B6:B29,"?*",E6:E29,"✓")-COUNTIFS(B6:B29,"Task",E6:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B6:B29,"?*")-COUNTIF(B6:B29,"Task")-COUNTIF(E6:E29,"N/A")   → caché 18.0
+A31    : Signed off by: _________________  Date: ___/___/______
+A33    : APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier
+B34    : Food group
+C34    : Freezer time
+D34    : Notes
+B35    : Raw red meat and poultry, whole cuts
+C35    : 6–12 months
+D35    : Portion BEFORE freezing: never thaw and refreeze
+B36    : Ground meat and meat preparations
+C36    : 3 months
+D36    : More exposed surface: it goes rancid and oxidizes much sooner than a whole cut
+B37    : Raw white fish and shellfish
+C37    : 3–6 months
+D37    : Parasite destruction (FDA Food Code 3-402.11: −4 °F for 7 days, or −31 °F) does not replace this shelf life: they are counted separately
+B38    : Oily fish (salmon, tuna, anchovy)
+C38    : 2–3 months
+D38    : Fat goes rancid even when frozen: it spoils first
+B39    : House-made stocks, sauces and creams
+C39    : 3 months
+D39    : Label with the production date AND the freezing date: shelf life counts from the freezing date
+B40    : Raw dough, tart shells and puff pastry
+C40    : 1–2 months
+D40    : Yeast loses strength: the dough rises poorly afterwards even if it is still safe
+B41    : Already-baked pastry and bread
+C41    : 1–3 months
+D41    : It loses texture before it loses safety; refresh it in the oven, never in the microwave
+B42    : Blanched vegetables, purees and sides
+C42    : 8–12 months
+D42    : Blanch before freezing: unblanched, it loses color and texture within a few weeks
+B43    : Product that has already gone out on the buffet line
+C43    : Do not freeze
+D43    : Anything exposed in the dining room or served by the guest does not go back in the freezer: discard it
+A44    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G29 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 02-hotel-lunch-dinner-buffet-checklists.xlsx
+# docProps: title='Hotel Lunch & Dinner Buffet Checklists' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Hotel Lunch & Dinner Buffet Checklists
+B4     : How to use this template:
+B5     : ▸ Checklist for setting up, restocking and breaking down the lunch and dinner buffet.
+B6     : ▸ Includes quality control, temperatures and presentation.
+B7     : ▸ Adapt to your hotel type: resort, urban (full-service or select-service), all-inclusive.
+B9     : Customization:
+B10    : ▸ Adjust the stations to your food offering.
+B11    : ▸ For all-inclusive, duplicate the stations you need.
+B13    : Raw fish and vegetables:
+B14    : ▸ Tartare, ceviche, carpaccio, cold-smoked or cured salmon: only with documented parasite destruction (FDA 3-402.11: −4 °F or below for 7 days, or −31 °F until solid plus 15 h; supplier letter kept 90 days). On a self-service buffet the risk multiplies with the number of guests.
+B15    : ▸ Vegetables served raw are washed under running potable water (FDA 3-302.15); if you use a produce wash or chlorine, only one approved for fruits and vegetables, at the label dose, and RINSE well. Blanched ones don't need it.
+B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B18    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Lunch Buffet» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Lunch Buffet — Setup & Service
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Pre-service setup
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check that the buffet line and side tables are clean
+C6     : Cleaning
+A7     : 2
+B7     : Set up the salad and cold station: lettuce, tomato, quinoa, cold pasta. Vegetables served RAW: wash under running potable water; any produce wash or chlorine must be food-safe, used at the label dose, and the vegetables RINSED well with plenty of potable water
+C7     : Buffet
+A8     : 3
+B8     : Set up the cold appetizer station: gazpacho, carpaccio, salmon
+C8     : Buffet
+A9     : 4
+B9     : Carpaccio, salmon and any fish served raw or marinated — PARASITE prevention: require the supplier's parasite-destruction letter (−4 °F or below for 7 days, or −31 °F until solid plus 15 h; FDA 3-402.11) or freeze it yourself, and log the lot
+C9     : Buffet
+A10    : 5
+B10    : Set up the hot station: rice, pasta, meats, fish
+C10    : Buffet
+A11    : 6
+B11    : Set up the sides station: potatoes, vegetables, legumes
+C11    : Buffet
+A12    : 7
+B12    : Set up the show cooking / action station (flat-top, wok, pasta)
+C12    : Buffet
+A13    : 8
+B13    : Set up the dessert station: cakes, fruit, ice cream, dairy
+C13    : Buffet
+A14    : 9
+B14    : Check signs with dish name and allergens (the 9 major allergens)
+C14    : Buffet
+A15    : 10
+B15    : Place clean serving utensils in every pan
+C15    : Buffet
+A16    : 11
+B16    : Check temperatures before opening: hot 135 °F or above, cold 41 °F or below — log reading: ____ °F (if you have the HACCP Food Safety Kit Pro, log it on its temperature sheet; otherwise in the "Notes" column)
+C16    : Buffet
+A18    : Restocking during service
+A19    : #
+B19    : Task
+C19    : Area
+D19    : Assigned to
+E19    : ✓
+F19    : Time
+G19    : Notes
+A20    : 1
+B20    : Restock round every 15–20 min (never leave pans empty)
+C20    : Buffet
+A21    : 2
+B21    : Swap out whole pans (don't top off over existing food)
+C21    : Buffet
+A22    : 3
+B22    : Keep show cooking active with the chef visible and fresh product
+C22    : Buffet
+A23    : 4
+B23    : Restock beverages: water, juices, soft drinks, house wine
+C23    : Buffet
+A24    : 5
+B24    : Wipe up spills immediately and keep the line presentable
+C24    : Cleaning
+A25    : 6
+B25    : Log restocks to adjust production (what runs out first)
+C25    : Kitchen
+A27    : Buffet closing
+A28    : #
+B28    : Task
+C28    : Area
+D28    : Assigned to
+E28    : ✓
+F28    : Time
+G28    : Notes
+A29    : 1
+B29    : Remove stations gradually (signs first)
+C29    : Buffet
+A30    : 2
+B30    : Log leftovers by station for waste control
+C30    : Kitchen
+A31    : 3
+B31    : Break down chafing dishes, clean and store
+C31    : Cleaning
+A32    : 4
+B32    : Clean the buffet line, floors and side tables
+C32    : Cleaning
+B33    : Tasks done:
+C33    = =COUNTIFS(B6:B32,"?*",E6:E32,"✓")-COUNTIFS(B6:B32,"Task",E6:E32,"✓")   → caché 0.0
+D33    : of
+E33    = =COUNTIF(B6:B32,"?*")-COUNTIF(B6:B32,"Task")-COUNTIF(E6:E32,"N/A")   → caché 21.0
+A34    : Signed off by: _________________  Date: ___/___/______
+A35    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E20 E21 E22 E23 E24 E25 E29 E30 E31 E32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G32 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Dinner Buffet» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Dinner Buffet — Setup & Service
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Setup and differences vs. lunch
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Adjust dining room lighting to a dinner mood (warmer)
+C6     : Dining room
+A7     : 2
+B7     : Set up the premium appetizer station: foie gras, tartare, ceviche
+C7     : Buffet
+A8     : 3
+B8     : Tartare, ceviche and raw fish at the premium station — PARASITE prevention: only fish with documented parasite destruction (−4 °F or below for 7 days, or −31 °F until solid plus 15 h; FDA 3-402.11); log the lot and don't set it out until service time
+C8     : Buffet
+A9     : 4
+B9     : Set up the hot station: dinner dishes (more elaborate than lunch)
+C9     : Buffet
+A10    : 5
+B10    : Set up the special dinner show cooking: grill, robata, flambe
+C10    : Buffet
+A11    : 6
+B11    : Set up the cheese station with a wine selection
+C11    : Buffet
+A12    : 7
+B12    : Set up the elaborate dessert station and petit fours
+C12    : Buffet
+A13    : 8
+B13    : Check the wine list is available in the dining room (tableside service)
+C13    : Dining room
+A14    : 9
+B14    : Place candles or decorative lighting per standard
+C14    : Dining room
+A16    : Service and close
+A17    : #
+B17    : Task
+C17    : Area
+D17    : Assigned to
+E17    : ✓
+F17    : Time
+G17    : Notes
+A18    : 1
+B18    : Restock as at lunch: every 15–20 min, whole pans
+C18    : Buffet
+A19    : 2
+B19    : Coordinate with the hotel bar for pre-dinner cocktail service
+C19    : Dining room
+A20    : 3
+B20    : Offer coffee, tea and after-dinner drinks at the end
+C20    : Dining room
+A21    : 4
+B21    : Close and break down following the same protocol as lunch
+C21    : Buffet
+A22    : 5
+B22    : Prep next breakfast's mise en place if shifts overlap
+C22    : Kitchen
+B23    : Tasks done:
+C23    = =COUNTIFS(B6:B22,"?*",E6:E22,"✓")-COUNTIFS(B6:B22,"Task",E6:E22,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B6:B22,"?*")-COUNTIF(B6:B22,"Task")-COUNTIF(E6:E22,"N/A")   → caché 14.0
+A24    : Signed off by: _________________  Date: ___/___/______
+A25    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E18 E19 E20 E21 E22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G22 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 03-hotel-restaurant-opening-closing-checklists.xlsx
+# docProps: title='Hotel Restaurant Opening & Closing Checklists (À la Carte)' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Hotel Restaurant Opening & Closing Checklists (À la Carte)
+B4     : How to use this template:
+B5     : ▸ Checklist for opening and closing the hotel's à la carte restaurant.
+B6     : ▸ Covers reservations, dining room setup, service and closing.
+B7     : ▸ Ideal for a signature restaurant, steakhouse or grill, or themed concept.
+B9     : Customization:
+B10    : ▸ Adjust the tasks to your restaurant style.
+B11    : ▸ Print and leave in the dining room service pantry.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Restaurant Opening» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : À la Carte Restaurant Opening
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Dining room prep (4:00–6:00 PM)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review today's reservations: party sizes, times, allergies, VIPs
+C6     : Restaurant
+A7     : 2
+B7     : Review the allergy list and special requests (celiac, vegan; the 9 major allergens) and pass them IN WRITING to the kitchen and to the server for each table before opening
+C7     : Restaurant
+A8     : 3
+B8     : Set tables per the reservation map and dining room layout
+C8     : Restaurant
+A9     : 4
+B9     : Check wine-by-the-glass stock and update the menu if any are sold out
+C9     : Restaurant
+A10    : 5
+B10    : Prep servers' mise en place: silverware, glassware, napkins
+C10    : Restaurant
+A11    : 6
+B11    : Polish glassware and silverware at every table
+C11    : Restaurant
+A12    : 7
+B12    : Adjust lighting and background music to standard
+C12    : Restaurant
+A13    : 8
+B13    : Team pre-shift meeting: daily menu, VIPs, suggestions, wines, protocol
+C13    : Restaurant
+A15    : Pre-opening check
+A16    : #
+B16    : Task
+C16    : Area
+D16    : Assigned to
+E16    : ✓
+F16    : Time
+G16    : Notes
+A17    : 1
+B17    : Check the POS and room-charge system are working
+C17    : Admin
+A18    : 2
+B18    : Check dining room temperature (68–72 °F) and ventilation
+C18    : Admin
+A19    : 3
+B19    : Confirm with the kitchen that the walk-ins and the restaurant service pantry ran all night and log the temperature (cooler 41 °F or below / freezer 0 °F or below) — log reading: ____ °F. If out of range, don't set up service until it is assessed
+C19    : Kitchen
+A20    : 4
+B20    : Check guest restrooms for cleanliness
+C20    : Cleaning
+A21    : 5
+B21    : Confirm with the kitchen: mise en place ready, 86'd items, timing
+C21    : Kitchen
+A22    : 6
+B22    : Check the bread, butter and olive oil station
+C22    : Restaurant
+A23    : 7
+B23    : Open the restaurant on time per posted hours
+C23    : Admin
+B24    : Tasks done:
+C24    = =COUNTIFS(B6:B23,"?*",E6:E23,"✓")-COUNTIFS(B6:B23,"Task",E6:E23,"✓")   → caché 0.0
+D24    : of
+E24    = =COUNTIF(B6:B23,"?*")-COUNTIF(B6:B23,"Task")-COUNTIF(E6:E23,"N/A")   → caché 15.0
+A25    : Signed off by: _________________  Date: ___/___/______
+A26    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G23 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Restaurant Closing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : À la Carte Restaurant Closing
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Service close
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Balance the register and POS: cash, cards, room charges
+C6     : Admin
+A7     : 2
+B7     : Reset tables: collect linens, glassware, silverware
+C7     : Restaurant
+A8     : 3
+B8     : Restock the service pantry: napkins, silverware, condiments
+C8     : Restaurant
+A9     : 4
+B9     : Clean the bar top and collect glassware
+C9     : Cleaning
+A10    : 5
+B10    : Turn off coffee machines, wine coolers and dining room equipment
+C10    : Restaurant
+A11    : 6
+B11    : Close open bottles, log wine/beverage waste
+C11    : Restaurant
+A12    : 7
+B12    : Debrief with the kitchen: best sellers, incidents, timing
+C12    : Kitchen
+A14    : Cleaning and next-day prep
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Clean and sanitize all tables and chairs
+C16    : Cleaning
+A17    : 2
+B17    : Sweep and mop dining room and entrance floors
+C17    : Cleaning
+A18    : 3
+B18    : Check guest restrooms: final cleaning
+C18    : Cleaning
+A19    : 4
+B19    : Review tomorrow's reservations and prepare the floor plan
+C19    : Admin
+A20    : 5
+B20    : Turn off lights, music and HVAC when leaving
+C20    : Admin
+A21    : 6
+B21    : Lock doors and arm the alarm per protocol
+C21    : Security
+B22    : Tasks done:
+C22    = =COUNTIFS(B6:B21,"?*",E6:E21,"✓")-COUNTIFS(B6:B21,"Task",E6:E21,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B6:B21,"?*")-COUNTIF(B6:B21,"Task")-COUNTIF(E6:E21,"N/A")   → caché 13.0
+A23    : Signed off by: _________________  Date: ___/___/______
+A24    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G21 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 04-hotel-bar-grab-and-go-checklists.xlsx
+# docProps: title='Hotel Bar & Outlet Checklists: Pool Bar, Lobby Bar & Grab-and-Go' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Hotel Bar & Outlet Checklists: Pool Bar, Lobby Bar & Grab-and-Go
+B4     : How to use this template:
+B5     : ▸ Checklists for the 3 most common satellite outlets in hotels.
+B6     : ▸ Pool Bar, Lobby Bar / Lounge and Snack Bar / Grab-and-Go.
+B7     : ▸ Adapt to your hotel's outlets.
+B9     : Customization:
+B10    : ▸ Use only the tabs for the outlets your hotel has.
+B11    : ▸ Adjust hours and offering to your category (upscale, luxury or resort).
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Pool Bar» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pool Bar — Opening, Service & Closing
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Pool Bar Opening
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Set up the bar: clean surfaces, place equipment, ice
+C6     : Pool bar
+A7     : 2
+B7     : Check stock of beer, soft drinks and base spirits for cocktails
+C7     : Pool bar
+A8     : 3
+B8     : Prepare enough ice for the shift (large bin + backup)
+C8     : Pool bar
+A9     : 4
+B9     : Place drink and snack menus/boards with prices visible
+C9     : Pool bar
+A10    : 5
+B10    : Check the portable POS and room-charge system are working
+C10    : Pool bar
+A11    : 6
+B11    : Check capacity per the pool permit and the wristband / towel system (all-inclusive or pool access) if applicable
+C11    : Pool bar
+A13    : Active service
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Take orders at the bar and serve the loungers
+C15    : Pool bar
+A16    : 2
+B16    : Keep ice stocked, restock cold drinks as consumed
+C16    : Pool bar
+A17    : 3
+B17    : Prepare cocktails and specialty drinks per menu
+C17    : Pool bar
+A18    : 4
+B18    : Collect empty cups and plates from the lounger area; NO glass on the pool deck: shatterproof cups and plates only (MAHC)
+C18    : Pool bar
+A19    : 5
+B19    : Track guest consumption (wristband / room charge)
+C19    : Pool bar
+A20    : 6
+B20    : Keep the bar and service area clean at all times
+C20    : Cleaning
+A22    : Pool Bar Closing
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Cash out and log pending room charges
+C24    : Admin
+A25    : 2
+B25    : Collect cups and service ware from the entire pool area (no glass on the pool deck, MAHC)
+C25    : Pool bar
+A26    : 3
+B26    : Deep-clean the bar, equipment and surfaces
+C26    : Cleaning
+A27    : 4
+B27    : Store perishables in the walk-in (41 °F or below), covered, labeled and dated; liquor goes to locked dry storage
+C27    : Pool bar
+A28    : 5
+B28    : Cover equipment and close off access per protocol
+C28    : Pool bar
+B29    : Tasks done:
+C29    = =COUNTIFS(B6:B28,"?*",E6:E28,"✓")-COUNTIFS(B6:B28,"Task",E6:E28,"✓")   → caché 0.0
+D29    : of
+E29    = =COUNTIF(B6:B28,"?*")-COUNTIF(B6:B28,"Task")-COUNTIF(E6:E28,"N/A")   → caché 17.0
+A30    : Signed off by: _________________  Date: ___/___/______
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G28 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Lobby Bar & Lounge» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Lobby Bar / Lounge — Daily Service
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Opening and continuous service
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Set up the continuous coffee and tea station (24 h or per operating hours)
+C6     : Lobby bar
+A7     : 2
+B7     : Set out premium snacks: nuts, olives, chips
+C7     : Lobby bar
+A8     : 3
+B8     : Check the cocktail menu is current and ingredients are in stock
+C8     : Lobby bar
+A9     : 4
+B9     : Set the playlist / background music for the time of day
+C9     : Lobby bar
+A10    : 5
+B10    : Keep the area spotless: continuous cleaning of tables and bar
+C10    : Cleaning
+A11    : 6
+B11    : Offer discreet, attentive service to lobby guests
+C11    : Lobby bar
+A13    : Lobby Bar Closing
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Cash out the shift and review room charges
+C15    : Admin
+A16    : 2
+B16    : Collect glassware and clean all tables
+C16    : Cleaning
+A17    : 3
+B17    : Daily espresso machine cleaning: backflush the group head with dedicated detergent (blind basket), purge and clean the steam wand and milk circuit; then the rest of the bar equipment
+C17    : Cleaning
+A18    : 4
+B18    : Store perishables and close open bottles
+C18    : Lobby bar
+A19    : 5
+B19    : Leave the area presentable for the night/morning shift
+C19    : Lobby bar
+B20    : Tasks done:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Task",E6:E19,"✓")   → caché 0.0
+D20    : of
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Task")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Signed off by: _________________  Date: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G19 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Snack Bar & Grab-and-Go» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Snack Bar / Grab-and-Go — Daily Operations
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Setup and restocking
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Restock the case with fresh sandwiches, salads and wraps
+C6     : Snack bar
+A7     : 2
+B7     : Check refrigerated case temperature (41 °F or below) — log reading: ____ °F
+C7     : Snack bar
+A8     : 3
+B8     : Restock beverages: water, juices, soft drinks, smoothies
+C8     : Snack bar
+A9     : 4
+B9     : Check the self-serve coffee station is working
+C9     : Snack bar
+A10    : 5
+B10    : Apply FIFO: rotate stock and pull expired items (date marking: 7 days counting the prep day); anything packaged in-house for self-service needs a label with ingredients and allergens
+C10    : Snack bar
+A11    : 6
+B11    : Update prices and signage if they change
+C11    : Snack bar
+A13    : Control and closing
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Log waste and items pulled for expiration
+C15    : Admin
+A16    : 2
+B16    : Clean cases, surfaces and the self-service area
+C16    : Cleaning
+A17    : 3
+B17    : Cash out and log the day's sales
+C17    : Admin
+A18    : 4
+B18    : Prepare tomorrow's fresh product order
+C18    : Snack bar
+A19    : 5
+B19    : Check closing temperatures — log reading: ____ °F (if you have the HACCP Food Safety Kit Pro, log it on its temperature sheet; otherwise in the "Notes" column)
+C19    : Snack bar
+B20    : Tasks done:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Task",E6:E19,"✓")   → caché 0.0
+D20    : of
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Task")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Signed off by: _________________  Date: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G19 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 05-in-room-dining-minibar-checklists.xlsx
+# docProps: title='In-Room Dining (Room Service) & Minibar Checklists' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · In-Room Dining (Room Service) & Minibar Checklists
+B4     : How to use this template:
+B5     : ▸ Checklist for in-room dining and minibar operations.
+B6     : ▸ In-room dining: prep, service, pickup.
+B7     : ▸ Minibar: restocking, control, billing.
+B9     : Customization:
+B10    : ▸ Adjust the menu and hours to your operation.
+B11    : ▸ Add VIP protocols if your hotel requires them.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «In-Room Dining» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : In-Room Dining — Full Operation
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Shift prep
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check the in-room dining menu is current (printed and digital)
+C6     : In-room dining
+A7     : 2
+B7     : Check minibar restock inventory: water, soft drinks, snacks
+C7     : In-room dining
+A8     : 3
+B8     : Check trays, cloches, silver flatware, napkins
+C8     : In-room dining
+A9     : 4
+B9     : Check amenities: flowers, chef's card, welcome chocolate
+C9     : In-room dining
+A10    : 5
+B10    : Check the service cart: tablecloth, candle, silverware, condiments
+C10    : In-room dining
+A11    : 6
+B11    : Check the order phone and the PMS/POS system are working
+C11    : In-room dining
+A12    : 7
+B12    : Review pending orders and the day's pre-orders (wake-up calls, door-hanger breakfasts, etc.)
+C12    : In-room dining
+A14    : Order intake and preparation
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Take the full order: room, number of guests, allergies (the 9 major allergens) and time; alcohol only to guests 21+ (check ID at delivery)
+C16    : In-room dining
+A17    : 2
+B17    : Confirm the estimated delivery time with the guest (max. 30–45 min)
+C17    : In-room dining
+A18    : 3
+B18    : Send the ticket to the kitchen with priority and special notes
+C18    : Kitchen
+A19    : 4
+B19    : Prepare the tray/cart to standard: tablecloth, silverware, condiments
+C19    : In-room dining
+A20    : 5
+B20    : Check plate presentation before it leaves the kitchen
+C20    : In-room dining
+A21    : 6
+B21    : Control temperature: hot dishes under a cloche, cold with ice
+C21    : In-room dining
+A22    : 7
+B22    : Include salt, pepper and sauces as the dish requires
+C22    : In-room dining
+A24    : In-room service
+A25    : #
+B25    : Task
+C25    : Area
+D25    : Assigned to
+E25    : ✓
+F25    : Time
+G25    : Notes
+A26    : 1
+B26    : Knock per protocol: 3 knocks + 'In-room dining'
+C26    : In-room dining
+A27    : 2
+B27    : Present the order and offer to set up at the table or desk
+C27    : In-room dining
+A28    : 3
+B28    : Open wine/sparkling bottles if applicable (offer the guest a taste)
+C28    : In-room dining
+A29    : 4
+B29    : Confirm everything is correct and offer anything else
+C29    : In-room dining
+A30    : 5
+B30    : Leave a card with the pickup number on the tray
+C30    : In-room dining
+A31    : 6
+B31    : Log delivery time and room in the system
+C31    : In-room dining
+A33    : Pickup and closing
+A34    : #
+B34    : Task
+C34    : Area
+D34    : Assigned to
+E34    : ✓
+F34    : Time
+G34    : Notes
+A35    : 1
+B35    : Collect trays in the corridors every 60–90 min
+C35    : In-room dining
+A36    : 2
+B36    : Check collected trays: count silverware and glassware
+C36    : In-room dining
+A37    : 3
+B37    : Clean and sanitize carts and trays
+C37    : Cleaning
+A38    : 4
+B38    : Take a silverware inventory at the end of the shift
+C38    : In-room dining
+A39    : 5
+B39    : Log incidents, complaints or special requests
+C39    : Admin
+A40    : 6
+B40    : Prepare the shift in-room dining report: orders, times, incidents
+C40    : Admin
+B41    : Tasks done:
+C41    = =COUNTIFS(B6:B40,"?*",E6:E40,"✓")-COUNTIFS(B6:B40,"Task",E6:E40,"✓")   → caché 0.0
+D41    : of
+E41    = =COUNTIF(B6:B40,"?*")-COUNTIF(B6:B40,"Task")-COUNTIF(E6:E40,"N/A")   → caché 26.0
+A42    : Signed off by: _________________  Date: ___/___/______
+A43    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E21 E22 E26 E27 E28 E29 E30 E31 E35 E36 E37 E38 E39 E40 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G40 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Minibar» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Minibar — Restocking & Control
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Restocking round
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Get today's checkout and check-in room lists
+C6     : Minibar
+A7     : 2
+B7     : Prepare the restock cart to full par
+C7     : Minibar
+A8     : 3
+B8     : Restock checkout rooms: full inventory + cleaning
+C8     : Minibar
+A9     : 4
+B9     : Restock occupied rooms based on logged consumption
+C9     : Minibar
+A10    : 5
+B10    : Check minibar product expiration dates
+C10    : Minibar
+A11    : 6
+B11    : Log consumption in the PMS for billing
+C11    : Minibar
+A12    : 7
+B12    : Place the updated minibar price list
+C12    : Minibar
+A14    : Control and reporting
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Weekly minibar stock inventory in the storeroom
+C16    : Minibar
+A17    : 2
+B17    : Check in-room minibar temperature (spot check)
+C17    : Minibar
+A18    : 3
+B18    : Report minibar breakdowns to engineering
+C18    : Admin
+A19    : 4
+B19    : Analyze consumption by product type (trends, turnover)
+C19    : Admin
+A20    : 5
+B20    : Place restock orders with the central storeroom
+C20    : Admin
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 06-hotel-banquet-event-checklist.xlsx
+# docProps: title='Hotel Banquet & Event Checklist: From BEO to Breakdown' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Hotel Banquet & Event Checklist: From BEO to Breakdown
+B4     : How to use this template:
+B5     : ▸ Checklists for the main types of hotel events.
+B6     : ▸ Weddings, conventions, gala dinners, coffee breaks.
+B7     : ▸ Use the tab for your next upcoming event.
+B9     : Customization:
+B10    : ▸ Combine them with the general checklists (01-05) for full coverage.
+B11    : ▸ Adjust to your hotel's category and ballrooms.
+B13    : Before you sign the event:
+B14    : ▸ The first section is completed WHEN THE EVENT IS CONFIRMED, not on banquet day, and everything goes on the BEO (banquet event order): allergies and intolerances in writing with name and table, guaranteed count, price per person and what it includes, cancellation terms and room capacity (fire marshal).
+B15    : ▸ On event day you only REVIEW them against the floor plan. Every special-menu seat has an assigned server and the plate leaves the kitchen labeled.
+B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B18    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Banquets & Events» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Banquets & Events — Complete Checklist
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : When the event booking is confirmed
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Collect IN WRITING allergies, intolerances and special diets (religious, vegan, children's) with each guest's name and table, on the BEO (the 9 major allergens)
+C6     : Admin
+A7     : 2
+B7     : Lock in the guaranteed guest count with the client and the deadline to change it
+C7     : Admin
+A8     : 3
+B8     : Settle in writing the price per person and WHAT it includes: open bar, late-night snack, corkage, setup, extra staff and extra hours
+C8     : Admin
+A9     : 4
+B9     : Settle cancellation terms, deposit and payment schedule, and file them signed with the BEO
+C9     : Admin
+A10    : 5
+B10    : Confirm in writing the alternate menus and who serves them: the special plate leaves the kitchen labeled
+C10    : Kitchen
+A11    : 6
+B11    : Check room capacity, emergency exits and liability insurance for the contracted format
+C11    : Admin
+A12    : Pre-event coordination
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Confirm the BEO (Banquet Event Order) with the client/wedding planner
+C14    : Banquets
+A15    : 2
+B15    : Check room setup against the approved floor plan (theater, long banquet table, cocktail)
+C15    : Banquets
+A16    : 3
+B16    : Coordinate with departments: front desk, housekeeping, AV, security
+C16    : Admin
+A17    : 4
+B17    : Confirm the final menu and table layout with the kitchen, and review the allergies collected at booking against the floor plan
+C17    : Kitchen
+A18    : 5
+B18    : Check AV equipment: projector, mic, screen, interpretation
+C18    : Admin
+A19    : 6
+B19    : Coordinate timing with DJ, photographer, florist and other vendors
+C19    : Admin
+A20    : 7
+B20    : Prepare special rooms with amenities if applicable (newlyweds, VIP)
+C20    : Admin
+A22    : Wedding / Gala Dinner Setup
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Set a long banquet table or round tables per the BEO, with linens
+C24    : Banquets
+A25    : 2
+B25    : Set full flatware for every course of the menu
+C25    : Banquets
+A26    : 3
+B26    : Place centerpieces, place cards and printed menu
+C26    : Banquets
+A27    : 4
+B27    : Mark special-menu or allergen seats on the floor plan and assign who serves each one: the alternate plate leaves the kitchen labeled and is not mixed with the rest on the pass
+C27    : Banquets
+A28    : 5
+B28    : Prepare the welcome cocktail: canapes, sparkling wine, patio/garden area
+C28    : Banquets
+A29    : 6
+B29    : Synchronized table service: all plates at the same time
+C29    : Banquets
+A30    : 7
+B30    : Coordinate the cake cutting/speeches with the photographer and DJ
+C30    : Banquets
+A31    : 8
+B31    : Open bar for the agreed hours (21+ only; watch the closing time)
+C31    : Banquets
+A32    : 9
+B32    : Late-night snack service if applicable
+C32    : Banquets
+A34    : Convention / Conference
+A35    : #
+B35    : Task
+C35    : Area
+D35    : Assigned to
+E35    : ✓
+F35    : Time
+G35    : Notes
+A36    : 1
+B36    : Check general-session room setup per the BEO format
+C36    : Banquets
+A37    : 2
+B37    : Set up the morning coffee break: coffee, juices, pastries, fruit, mini sandwiches
+C37    : Banquets
+A38    : 3
+B38    : Serve lunch per the format: buffet, box lunch or plated
+C38    : Banquets
+A39    : 4
+B39    : Afternoon coffee break (vary from morning): snacks, smoothies, fruit
+C39    : Banquets
+A40    : 5
+B40    : Keep a water and coffee station available all day
+C40    : Banquets
+A41    : 6
+B41    : Closing networking reception: canapes, cocktail bar
+C41    : Banquets
+A43    : Breakdown and closing
+A44    : #
+B44    : Task
+C44    : Area
+D44    : Assigned to
+E44    : ✓
+F44    : Time
+G44    : Notes
+A45    : 1
+B45    : Break down the room per protocol: tables, chairs, decor, AV
+C45    : Banquets
+A46    : 2
+B46    : Inventory silverware, glassware and service ware (report breakage)
+C46    : Banquets
+A47    : 3
+B47    : Deep-clean the room: floor, carpet, walls, restrooms
+C47    : Cleaning
+A48    : 4
+B48    : Close out the banquet bank and reconcile with the event invoice
+C48    : Admin
+A49    : 5
+B49    : Log client feedback and send a satisfaction survey
+C49    : Admin
+A50    : 6
+B50    : Coordinate late check-out with the front desk if needed
+C50    : Admin
+B51    : Tasks done:
+C51    = =COUNTIFS(B6:B50,"?*",E6:E50,"✓")-COUNTIFS(B6:B50,"Task",E6:E50,"✓")   → caché 0.0
+D51    : of
+E51    = =COUNTIF(B6:B50,"?*")-COUNTIF(B6:B50,"Task")-COUNTIF(E6:E50,"N/A")   → caché 34.0
+A52    : Signed off by: _________________  Date: ___/___/______
+A53    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E14 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 E29 E30 E31 E32 E36 E37 E38 E39 E40 E41 E45 E46 E47 E48 E49 E50 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G50 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 07-hotel-front-desk-checklists-night-audit.xlsx
+# docProps: title='Hotel Front Desk Checklists: AM, PM & Night Audit Shifts, Check-In & Check-Out' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Hotel Front Desk Checklists: AM, PM & Night Audit Shifts, Check-In & Check-Out
+B4     : How to use this template:
+B5     : ▸ 4 checklists for the 3 front desk shifts + check-in/check-out protocol.
+B6     : ▸ Covers everything from the night audit to VIP management.
+B7     : ▸ Print the right shift and leave it at the front desk.
+B9     : Customization:
+B10    : ▸ Adjust to your PMS (Oracle OPERA Cloud, Mews, Cloudbeds, etc.).
+B11    : ▸ Add the brand standards of your chain or franchise.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «AM Shift» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Front Desk — AM Shift (7:00 AM–3:00 PM)
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Start of shift
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Read the night shift log: incidents, requests, notes
+C6     : Front desk
+A7     : 2
+B7     : Review today's checkout list and open folios
+C7     : Front desk
+A8     : 3
+B8     : Review the arrivals list and room pre-assignments
+C8     : Front desk
+A9     : 4
+B9     : Check room status in the PMS with housekeeping
+C9     : Front desk
+A10    : 5
+B10    : Verify the shift bank: starting bank, change, card terminal working
+C10    : Front desk
+A12    : Shift operations
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Process checkouts: folio, minibar, feedback, transportation
+C14    : Front desk
+A15    : 2
+B15    : Handle guest inquiries: information, reservations, complaints
+C15    : Front desk
+A16    : 3
+B16    : Coordinate with bell staff for departure and arrival luggage
+C16    : Front desk
+A17    : 4
+B17    : Update room status per confirmed departures
+C17    : Front desk
+A18    : 5
+B18    : Coordinate cleaning priorities with housekeeping
+C18    : Front desk
+A19    : 6
+B19    : Handle early check-ins if rooms are available
+C19    : Front desk
+A20    : 7
+B20    : Log all incidents in the shift log for the PM shift
+C20    : Front desk
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «PM Shift» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Front Desk — PM Shift (3:00–11:00 PM)
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Start of shift
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Read the AM shift log: checkouts, incidents, notes
+C6     : Front desk
+A7     : 2
+B7     : Review pending arrivals and assigned rooms
+C7     : Front desk
+A8     : 3
+B8     : Verify today's VIPs and that welcome amenities are ready
+C8     : Front desk
+A9     : 4
+B9     : Verify the shift bank and card terminal status
+C9     : Front desk
+A11    : Shift operations
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Process check-ins: registration, keys, information on services/Wi-Fi/parking
+C13    : Front desk
+A14    : 2
+B14    : Offer room-category upsells when appropriate
+C14    : Front desk
+A15    : 3
+B15    : Handle walk-ins and overbooking per protocol: if there is no room, walk the guest per policy (paid nearby hotel, transportation and a call)
+C15    : Front desk
+A16    : 4
+B16    : Handle complaints and room changes
+C16    : Front desk
+A17    : 5
+B17    : Handle late check-outs per availability and policy
+C17    : Front desk
+A18    : 6
+B18    : Confirm tomorrow's reservations and prepare paperwork
+C18    : Front desk
+A19    : 7
+B19    : Prepare paperwork for the night audit
+C19    : Front desk
+A20    : 8
+B20    : Log incidents in the shift log for the night shift
+C20    : Front desk
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Night Audit Shift» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Front Desk — Night Shift / Night Audit (11:00 PM–7:00 AM)
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Night Audit
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Run the night audit in the PMS: close the accounting day
+C6     : Front desk
+A7     : 2
+B7     : Verify restaurant, spa and minibar charges posted correctly
+C7     : Front desk
+A8     : 3
+B8     : Generate reports: occupancy, ADR, RevPAR, revenue by department
+C8     : Front desk
+A9     : 4
+B9     : Process no-shows: apply charges per policy
+C9     : Front desk
+A10    : 5
+B10    : Prepare tomorrow's departure and arrival lists
+C10    : Front desk
+A12    : Overnight operations
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Staff the night front desk: late arrivals, requests, emergencies
+C14    : Front desk
+A15    : 2
+B15    : Do a visual security round of the lobby and public areas
+C15    : Security
+A16    : 3
+B16    : Check access doors and security cameras
+C16    : Security
+A17    : 4
+B17    : Prepare the complete shift log for the AM shift
+C17    : Front desk
+A18    : 5
+B18    : Verify room pre-assignments for today's arrivals
+C18    : Front desk
+A19    : 6
+B19    : Coordinate early breakfast for early departures with F&B if applicable
+C19    : Front desk
+B20    : Tasks done:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Task",E6:E19,"✓")   → caché 0.0
+D20    : of
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Task")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Signed off by: _________________  Date: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G19 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Check-In & Check-Out» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Check-In & Check-Out Protocol
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Check-In Protocol
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Greet the guest by name (check the reservation)
+C6     : Front desk
+A7     : 2
+B7     : Request photo ID and a credit card for incidentals
+C7     : Front desk
+A8     : 3
+B8     : Confirm reservation details: dates, room type, rate plan / meal plan
+C8     : Front desk
+A9     : 4
+B9     : Inform of hotel services: restaurant, spa, Wi-Fi, parking, hours
+C9     : Front desk
+A10    : 5
+B10    : Offer a room upgrade/upsell if available
+C10    : Front desk
+A11    : 6
+B11    : Hand over keys, hotel map and welcome card
+C11    : Front desk
+A12    : 7
+B12    : Offer a bell staff escort to the room
+C12    : Front desk
+A14    : Check-Out Protocol
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Ask whether they used the minibar and verify if needed
+C16    : Front desk
+A17    : 2
+B17    : Present an itemized folio and verify all charges
+C17    : Front desk
+A18    : 3
+B18    : Ask about the stay and request feedback
+C18    : Front desk
+A19    : 4
+B19    : Offer help with luggage and transportation to the airport/station
+C19    : Front desk
+A20    : 5
+B20    : Invite them to leave an online review (Google, TripAdvisor, Expedia)
+C20    : Front desk
+A21    : 6
+B21    : Say a warm goodbye and invite them back
+C21    : Front desk
+B22    : Tasks done:
+C22    = =COUNTIFS(B6:B21,"?*",E6:E21,"✓")-COUNTIFS(B6:B21,"Task",E6:E21,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B6:B21,"?*")-COUNTIF(B6:B21,"Task")-COUNTIF(E6:E21,"N/A")   → caché 13.0
+A23    : Signed off by: _________________  Date: ___/___/______
+A24    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G21 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 08-concierge-guest-experience-checklists.xlsx
+# docProps: title='Concierge & Guest Experience Checklists' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Concierge & Guest Experience Checklists
+B4     : How to use this template:
+B5     : ▸ Checklist for concierge and guest experience management.
+B6     : ▸ Outside reservations, transfers, special requests, loyalty.
+B7     : ▸ Ideal for upscale and luxury hotels with personalized service.
+B9     : Customization:
+B10    : ▸ Adjust the services to what your destination offers.
+B11    : ▸ Add trusted local vendors.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Concierge» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Concierge — Guest Services
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Request management
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Book outside restaurant reservations (confirm and send details)
+C6     : Concierge
+A7     : 2
+B7     : Coordinate airport/station transfers with the transportation company
+C7     : Concierge
+A8     : 3
+B8     : Arrange excursions, tours and activities for guests
+C8     : Concierge
+A9     : 4
+B9     : Handle special requests: flowers, Champagne, birthday cakes
+C9     : Concierge
+A10    : 5
+B10    : Keep an updated directory of trusted local vendors
+C10    : Concierge
+A11    : 6
+B11    : Coordinate luggage service with bell staff (arrivals and departures)
+C11    : Concierge
+A12    : 7
+B12    : Manage guest laundry and dry-cleaning service
+C12    : Concierge
+A14    : Communication and follow-up
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Confirm all bookings and services arranged with the guest
+C16    : Concierge
+A17    : 2
+B17    : Follow up on open requests: status and resolution
+C17    : Concierge
+A18    : 3
+B18    : Log all actions in the guest's PMS/CRM
+C18    : Admin
+A19    : 4
+B19    : Prepare personalized information: maps, hours, recommendations
+C19    : Concierge
+A20    : 5
+B20    : Coordinate with the front desk on VIP welcome amenities
+C20    : Concierge
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Guest Experience» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Guest Experience / Loyalty
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Proactive management
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review the list of repeat guests and today's VIPs
+C6     : Guest exp.
+A7     : 2
+B7     : Prepare personalized welcome amenities per CRM profile
+C7     : Guest exp.
+A8     : 3
+B8     : Follow up on open incidents: verify resolution and satisfaction
+C8     : Guest exp.
+A9     : 4
+B9     : Monitor online reviews: Google, TripAdvisor, Expedia (respond to all)
+C9     : Guest exp.
+A10    : 5
+B10    : Send a post-stay survey to yesterday's guests
+C10    : Guest exp.
+A11    : 6
+B11    : Update CRM preferences: room, pillow, minibar, diet
+C11    : Guest exp.
+A13    : Loyalty programs
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Identify guests eligible for the loyalty program
+C15    : Guest exp.
+A16    : 2
+B16    : Prepare special touches: birthdays, anniversaries, honeymoons
+C16    : Guest exp.
+A17    : 3
+B17    : Coordinate with F&B on food amenities: chocolate, fruit, wine
+C17    : Guest exp.
+A18    : 4
+B18    : Generate the monthly satisfaction report: NPS, average score
+C18    : Admin
+A19    : 5
+B19    : Propose improvements based on recurring guest feedback
+C19    : Admin
+B20    : Tasks done:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Task",E6:E19,"✓")   → caché 0.0
+D20    : of
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Task")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Signed off by: _________________  Date: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G19 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 09-hotel-housekeeping-checklists.xlsx
+# docProps: title='Hotel Housekeeping Checklists: Checkout & Stayover Room Cleaning, Turndown, Deep Cleaning & Linen' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Hotel Housekeeping Checklists: Checkout & Stayover Room Cleaning, Turndown, Deep Cleaning & Linen
+B4     : How to use this template:
+B5     : ▸ 5 checklists: Checkout, Stayover, Turndown, Deep Cleaning, Linen.
+B6     : ▸ Step-by-step protocol for each type of room cleaning.
+B7     : ▸ Print and hand to each room attendant.
+B9     : Customization:
+B10    : ▸ Adjust to your hotel's category (midscale, upscale or luxury).
+B11    : ▸ Add brand/chain standards if applicable.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Checkout Room Cleaning» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Room Cleaning — Checkout
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Prep and strip
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Knock and announce yourself ('Housekeeping!') before entering; carry the panic button if your city or state requires it (Chicago, Seattle, New Jersey…) and keep the door open while you clean
+C6     : Housekeeping
+A7     : 2
+B7     : Strip all bed linen: sheets, pillowcases, pillows; check mattress seams and box spring for bed bugs and tell your supervisor if you see anything
+C7     : Housekeeping
+A8     : 3
+B8     : Check for left-behind items (under the bed, closet, safe, bathroom)
+C8     : Housekeeping
+A9     : 4
+B9     : Empty all wastebaskets and bags; needles, blood or fluids only with gloves and the bloodborne pathogens kit; needles go in the sharps container, never by hand (OSHA 29 CFR 1910.1030)
+C9     : Housekeeping
+A10    : 5
+B10    : Remove used bathroom amenities and dirty towels
+C10    : Housekeeping
+A12    : Full cleaning
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Clean, then disinfect the full bathroom (toilet, shower, fixtures, mirror) with an EPA-registered product, following its label contact time and SDS (OSHA HazCom)
+C14    : Housekeeping
+A15    : 2
+B15    : Clean furniture: desk, nightstands, closet interior, minibar exterior
+C15    : Housekeeping
+A16    : 3
+B16    : Place new amenities: body wash, shampoo, soap, shower cap, dental kit
+C16    : Housekeeping
+A17    : 4
+B17    : Make the bed completely: sheets, duvet cover, pillows, bedspread
+C17    : Housekeeping
+A18    : 5
+B18    : Vacuum/mop the entire floor, including under furniture
+C18    : Housekeeping
+A20    : Final check
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Check everything works: lights, A/C-heat, TV, phone
+C22    : Housekeeping
+A23    : 2
+B23    : Check the minibar: fully restocked to par
+C23    : Housekeeping
+A24    : 3
+B24    : Check hangers, bathrobe, slippers, services directory
+C24    : Housekeeping
+A25    : 4
+B25    : Check room odor and ventilation
+C25    : Housekeeping
+A26    : 5
+B26    : Report the room as clean in the PMS/app
+C26    : Housekeeping
+A27    : 6
+B27    : Report any damage or breakdown to engineering
+C27    : Housekeeping
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Stayover Room Cleaning» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Room Cleaning — Stayover (Occupied)
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Entry protocol
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Knock and wait for a response before entering
+C6     : Housekeeping
+A7     : 2
+B7     : Respect the Do Not Disturb (DND) sign and notify the supervisor for the welfare check set by hotel or brand policy
+C7     : Housekeeping
+A8     : 3
+B8     : Don't move the guest's personal belongings
+C8     : Housekeeping
+A10    : Stayover cleaning
+A11    : #
+B11    : Task
+C11    : Area
+D11    : Assigned to
+E11    : ✓
+F11    : Time
+G11    : Notes
+A12    : 1
+B12    : Make the bed without changing sheets (except green program/guest request)
+C12    : Housekeeping
+A13    : 2
+B13    : Empty wastebaskets and remove trash
+C13    : Housekeeping
+A14    : 3
+B14    : Clean the bathroom: replace used towels and amenities, clean fixtures
+C14    : Housekeeping
+A15    : 4
+B15    : Vacuum the floor and tidy without moving personal belongings
+C15    : Housekeeping
+A16    : 5
+B16    : Restock used amenities: coffee, tea, sugar, complimentary water
+C16    : Housekeeping
+A17    : 6
+B17    : Report any damage or maintenance need
+C17    : Housekeeping
+B18    : Tasks done:
+C18    = =COUNTIFS(B6:B17,"?*",E6:E17,"✓")-COUNTIFS(B6:B17,"Task",E6:E17,"✓")   → caché 0.0
+D18    : of
+E18    = =COUNTIF(B6:B17,"?*")-COUNTIF(B6:B17,"Task")-COUNTIF(E6:E17,"N/A")   → caché 9.0
+A19    : Signed off by: _________________  Date: ___/___/______
+A20    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E12 E13 E14 E15 E16 E17 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G17 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Turndown Service» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Turndown Service
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Preparing the room for the night
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Remove the bedspread and decorative pillows, fold and store
+C6     : Housekeeping
+A7     : 2
+B7     : Turn down the bed at an angle (45°) and place slippers/bathrobe
+C7     : Housekeeping
+A8     : 3
+B8     : Place a chocolate on the pillow
+C8     : Housekeeping
+A9     : 4
+B9     : Close curtains and blinds
+C9     : Housekeeping
+A10    : 5
+B10    : Turn on the bedside lamp and turn off the overhead lights
+C10    : Housekeeping
+A11    : 6
+B11    : Empty wastebaskets if full
+C11    : Housekeeping
+A12    : 7
+B12    : Replace used bath towels and place the bath mat
+C12    : Housekeeping
+A13    : 8
+B13    : Set the A/C to the standard night temperature (68–72 °F)
+C13    : Housekeeping
+B14    : Tasks done:
+C14    = =COUNTIFS(B6:B13,"?*",E6:E13,"✓")-COUNTIFS(B6:B13,"Task",E6:E13,"✓")   → caché 0.0
+D14    : of
+E14    = =COUNTIF(B6:B13,"?*")-COUNTIF(B6:B13,"Task")-COUNTIF(E6:E13,"N/A")   → caché 8.0
+A15    : Signed off by: _________________  Date: ___/___/______
+A16    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G13 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Deep Cleaning» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Deep Cleaning — Periodic Deep Clean
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Deep clean (quarterly or per rotation)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Move all furniture and clean behind and underneath
+C6     : Housekeeping
+A7     : 2
+B7     : Clean A/C vents, exhaust fans and accessible ducts
+C7     : Housekeeping
+A8     : 3
+B8     : Take down and clean curtains (send to laundry)
+C8     : Housekeeping
+A9     : 4
+B9     : Steam-sanitize the mattress and check its condition
+C9     : Housekeeping
+A10    : 5
+B10    : Clean windows inside and out
+C10    : Housekeeping
+A11    : 6
+B11    : Descale fixtures, shower and bathroom drains
+C11    : Housekeeping
+A12    : 7
+B12    : Clean the minibar inside: defrost, disinfect, dry
+C12    : Housekeeping
+A13    : 8
+B13    : Polish floors (hardwood, marble, carpet per material)
+C13    : Housekeeping
+B14    : Tasks done:
+C14    = =COUNTIFS(B6:B13,"?*",E6:E13,"✓")-COUNTIFS(B6:B13,"Task",E6:E13,"✓")   → caché 0.0
+D14    : of
+E14    = =COUNTIF(B6:B13,"?*")-COUNTIF(B6:B13,"Task")-COUNTIF(E6:E13,"N/A")   → caché 8.0
+A15    : Signed off by: _________________  Date: ___/___/______
+A16    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G13 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Linen Control» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Linen & Laundry Control
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily linen management
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Count soiled linen by type: sheets, pillowcases, towels, bathrobes
+C6     : Linen room
+A7     : 2
+B7     : Separate stained or damaged pieces for special treatment
+C7     : Linen room
+A8     : 3
+B8     : Send to the outside laundry with a linen count sheet
+C8     : Linen room
+A9     : 4
+B9     : Receive clean linen and check the count against the linen count sheet
+C9     : Linen room
+A10    : 5
+B10    : Store by type and size, keeping linen par per floor
+C10    : Linen room
+A11    : 6
+B11    : Report worn pieces for replacement and inventory write-off
+C11    : Linen room
+A13    : Weekly control
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Full weekly inventory by item type
+C15    : Linen room
+A16    : 2
+B16    : Check minimum linen par (3 sets per bed: one in the room, one in the laundry, one in the floor linen closet)
+C16    : Linen room
+A17    : 3
+B17    : Check wash quality: stains, odor, softness
+C17    : Linen room
+A18    : 4
+B18    : Update the write-off log and purchasing needs
+C18    : Admin
+A19    : 5
+B19    : Coordinate a restock order with purchasing if needed
+C19    : Admin
+B20    : Tasks done:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Task",E6:E19,"✓")   → caché 0.0
+D20    : of
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Task")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Signed off by: _________________  Date: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G19 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 10-hotel-public-area-cleaning-checklists.xlsx
+# docProps: title='Hotel Public Area Cleaning Checklists: Lobby, Corridors & Elevators, Restrooms & Parking' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 10 · Hotel Public Area Cleaning Checklists: Lobby, Corridors & Elevators, Restrooms & Parking
+B4     : How to use this template:
+B5     : ▸ 4 checklists for cleaning and maintenance of public areas.
+B6     : ▸ Lobby, corridors/elevators, public restrooms and parking.
+B7     : ▸ Ideal for housekeeping and public area supervisors.
+B9     : Customization:
+B10    : ▸ Adjust the frequency to your hotel's category and occupancy.
+B11    : ▸ Add specific areas of your hotel (garden, patio, pool).
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Lobby» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Lobby — Cleaning & Maintenance
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily cleaning (at least twice a day)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Vacuum/mop the entire lobby floor (marble, carpet)
+C6     : Lobby
+A7     : 2
+B7     : Clean entrance door glass and display windows
+C7     : Lobby
+A8     : 3
+B8     : Clean the front desk and concierge counters
+C8     : Lobby
+A9     : 4
+B9     : Clean and tidy the waiting area furniture
+C9     : Lobby
+A10    : 5
+B10    : Check fresh flowers and replace if wilted
+C10    : Lobby
+A11    : 6
+B11    : Check the air freshener/scent diffuser is working
+C11    : Lobby
+A12    : 7
+B12    : Empty wastebaskets and outdoor ashtrays at the entrance, ashtrays only where your city or state allows smoking (a set distance from the door is usually required)
+C12    : Lobby
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Corridors & Elevators» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Corridors & Elevators — All Floors
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily cleaning
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Vacuum corridor carpet on all floors
+C6     : Corridors
+A7     : 2
+B7     : Clean door frames, baseboards and guest room door handles
+C7     : Corridors
+A8     : 3
+B8     : Check room signage and numbering (visible and clean)
+C8     : Corridors
+A9     : 4
+B9     : Clean elevator mirrors, doors and button panel
+C9     : Corridors
+A10    : 5
+B10    : Check lighting: replace burned-out bulbs
+C10    : Corridors
+A11    : 6
+B11    : Remove abandoned in-room dining trays from corridors
+C11    : Corridors
+A12    : 7
+B12    : Report damage to walls, carpet or furniture to engineering
+C12    : Corridors
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Public Restrooms» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Public Restrooms — Cleaning & Restocking
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Periodic cleaning (every 2–3 hours)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Disinfect fixtures: toilets, urinals, sinks
+C6     : Restrooms
+A7     : 2
+B7     : Restock soap, toilet paper and air freshener
+C7     : Restrooms
+A8     : 3
+B8     : Polish mirrors and fixtures to a shine
+C8     : Restrooms
+A9     : 4
+B9     : Mop the floor with disinfectant
+C9     : Restrooms
+A10    : 5
+B10    : Empty wastebaskets and sanitary napkin receptacles; needles, blood or fluids only with gloves and the bloodborne pathogens kit; needles go in the sharps container, never by hand (OSHA 29 CFR 1910.1030)
+C10    : Restrooms
+A11    : 6
+B11    : Check hand dryers and dispensers work
+C11    : Restrooms
+A12    : 7
+B12    : Sign the (visible) restroom cleaning time log
+C12    : Restrooms
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Parking» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Parking — Maintenance & Security
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily control
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Sweep/blow leaves and debris from the parking spaces
+C6     : Parking
+A7     : 2
+B7     : Check lighting in all parking areas
+C7     : Parking
+A8     : 3
+B8     : Check pavement markings (lines) and signs
+C8     : Parking
+A9     : 4
+B9     : Check the gate/automatic access and card readers
+C9     : Parking
+A10    : 5
+B10    : Check fire extinguishers (monthly visual inspection, OSHA 1910.157(e)(2)) and lit exit signs
+C10    : Parking
+A11    : 6
+B11    : Clean oil or liquid stains from the floor
+C11    : Parking
+A12    : 7
+B12    : Identify and report abandoned or unauthorized vehicles
+C12    : Parking
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 11-hotel-pool-checklists.xlsx
+# docProps: title='Hotel Pool Checklists: Daily Opening & Closing, Weekly Maintenance & Towel Service' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 11 · Hotel Pool Checklists: Daily Opening & Closing, Weekly Maintenance & Towel Service
+B4     : How to use this template:
+B5     : ▸ 4 checklists: opening, closing, weekly maintenance and towel service.
+B6     : ▸ Includes chemical control, safety and code compliance (MAHC 2024 and your state or county pool code).
+B7     : ▸ MAHC 2024 (CDC model code; your state or local code governs): free chlorine at least 1.0 ppm (2.0 ppm with cyanuric acid / stabilizer) and pH 7.0–7.8; test before opening and every 2 h with manual dosing or every 4 h with automatic; keep the pool log 3 years, available to the inspector.
+B9     : Customization:
+B10    : ▸ Adjust to your state or county pool code: the MAHC is a model code; many states require a qualified operator (e.g., Texas accepts the CPO course).
+B11    : ▸ Add specific protocols if you have a heated indoor pool.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Pool Opening» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pool Opening — Daily Checklist
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Water and safety control
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Measure free chlorine and pH and record them in the pool log: free chlorine at least 1.0 ppm (2.0 with CYA), pH 7.0–7.8, before opening and every 2 h (manual) or 4 h (automatic); keep records 3 years (MAHC 2024; your state or local code governs)
+C6     : Pool
+A7     : 2
+B7     : Run the automatic or manual pool cleaner and skim leaves with a net
+C7     : Pool
+A8     : 3
+B8     : Check the water level and top off if needed
+C8     : Pool
+A9     : 4
+B9     : Clean the pool edges, deck and shower area
+C9     : Pool
+A11    : Area setup
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Set out loungers and umbrellas per the established layout
+C13    : Pool
+A14    : 2
+B14    : Place depth markers and rules signs where visible; if no lifeguard is on duty, post "No Lifeguard on Duty" and that children under 14 need direct supervision by an adult 18 or older, with hours (MAHC 2024 §6.4.2.2.3.4)
+C14    : Pool
+A15    : 3
+B15    : Check the ring buoy with rope, reaching pole, first aid kit and emergency phone are in place and working
+C15    : Pool
+A16    : 4
+B16    : Clean showers and foot rinses and check they work
+C16    : Pool
+B17    : Tasks done:
+C17    = =COUNTIFS(B6:B16,"?*",E6:E16,"✓")-COUNTIFS(B6:B16,"Task",E6:E16,"✓")   → caché 0.0
+D17    : of
+E17    = =COUNTIF(B6:B16,"?*")-COUNTIF(B6:B16,"Task")-COUNTIF(E6:E16,"N/A")   → caché 8.0
+A18    : Signed off by: _________________  Date: ___/___/______
+A19    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G16 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Pool Closing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pool Closing — Daily Checklist
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Pickup and closing
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Collect all abandoned towels and send to laundry
+C6     : Pool
+A7     : 2
+B7     : Stack loungers and cover with tarps if applicable
+C7     : Pool
+A8     : 3
+B8     : Second free chlorine and pH reading, in the pool log (every 2 or 4 h by dosing type, MAHC 2024 §5.7.5)
+C8     : Pool
+A9     : 4
+B9     : Check the pool is empty of swimmers
+C9     : Pool
+A10    : 5
+B10    : Turn off pool area lighting
+C10    : Pool
+A11    : 6
+B11    : Collect pool toys/floats and store
+C11    : Pool
+A12    : 7
+B12    : Close pool access: self-closing, self-latching gate per your state code
+C12    : Pool
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Weekly Pool Maintenance» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Pool Maintenance
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Technical maintenance
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Backwash the filtration system
+C6     : Pool
+A7     : 2
+B7     : Check circulation pumps and automatic dosing
+C7     : Pool
+A8     : 3
+B8     : Check chemical stock in storage: stored separately, labeled, with SDS and PPE at hand (OSHA HazCom 29 CFR 1910.1200); weekly total alkalinity (MAHC 2024 §5.7.5)
+C8     : Pool
+A9     : 4
+B9     : Clean skimmers, overflow grates and drains; check drain covers are intact, bolted down and within their service life (Virginia Graeme Baker Act, 15 U.S.C. 8003)
+C9     : Pool
+A10    : 5
+B10    : Check ladders, handrails and pool shell joints
+C10    : Pool
+A11    : 6
+B11    : Check underwater and exterior lighting
+C11    : Pool
+A12    : 7
+B12    : Update the pool log with all actions (kept 3 years, MAHC 2024 §6.4.1.2.1)
+C12    : Pool
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Towel Service» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pool Towel Service
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Towel operations
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Set up the towel station with enough stock
+C6     : Pool
+A7     : 2
+B7     : Distribution system: by room, wristband or towel card
+C7     : Pool
+A8     : 3
+B8     : Restock at midday (second delivery from laundry)
+C8     : Pool
+A9     : 4
+B9     : Collect abandoned towels from loungers every hour
+C9     : Pool
+A10    : 5
+B10    : Final towel count and send to laundry with a linen count sheet
+C10    : Pool
+A11    : 6
+B11    : Log losses and shrinkage (room charge if applicable)
+C11    : Admin
+B12    : Tasks done:
+C12    = =COUNTIFS(B6:B11,"?*",E6:E11,"✓")-COUNTIFS(B6:B11,"Task",E6:E11,"✓")   → caché 0.0
+D12    : of
+E12    = =COUNTIF(B6:B11,"?*")-COUNTIF(B6:B11,"Task")-COUNTIF(E6:E11,"N/A")   → caché 6.0
+A13    : Signed off by: _________________  Date: ___/___/______
+A14    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G11 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 12-hotel-patio-terrace-checklists.xlsx
+# docProps: title='Hotel Patio & Terrace Checklists: Seasonal Setup & Daily Service' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 12 · Hotel Patio & Terrace Checklists: Seasonal Setup & Daily Service
+B4     : How to use this template:
+B5     : ▸ 2 checklists: seasonal setup and daily patio service.
+B6     : ▸ Ideal for hotels with a patio restaurant, rooftop or garden.
+B7     : ▸ Includes F&B coordination for the patio menu.
+B9     : Customization:
+B10    : ▸ Adjust to your hotel's type of patio.
+B11    : ▸ Add bad-weather protocols.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Seasonal Setup» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Patio Setup — Start of Season
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Seasonal prep
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Bring furniture out of storage: clean tables, chairs, benches
+C6     : Patio
+A7     : 2
+B7     : Check cushions, fabrics and umbrellas (replace damaged ones)
+C7     : Patio
+A8     : 3
+B8     : Set up the patio per the approved layout and, if your city requires it, the outdoor dining / sidewalk cafe permit
+C8     : Patio
+A9     : 4
+B9     : Install and check exterior lighting (string lights, floodlights, candles)
+C9     : Patio
+A10    : 5
+B10    : Check power outlets for equipment (POS, music, heaters)
+C10    : Patio
+A11    : 6
+B11    : Place planters, plants and decor
+C11    : Patio
+A12    : 7
+B12    : Coordinate with F&B: patio menu, stock, service staff
+C12    : Patio
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Daily Service» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Patio — Daily Service
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily opening and upkeep
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Clean tables and chairs first thing in the morning
+C6     : Patio
+A7     : 2
+B7     : Open umbrellas and anchor per the wind forecast
+C7     : Patio
+A8     : 3
+B8     : Place ashtrays only if your city or state allows smoking on the patio (many ban it)
+C8     : Patio
+A9     : 4
+B9     : Place menus, condiments and napkin holders on each table
+C9     : Patio
+A10    : 5
+B10    : Sweep and hose down the patio floor
+C10    : Patio
+A12    : During service
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Keep tables clean: bus plates and wipe immediately
+C14    : Patio
+A15    : 2
+B15    : Watch the weather forecast: bring in cushions if it rains
+C15    : Patio
+A16    : 3
+B16    : Restock condiments, napkins and menus as needed
+C16    : Patio
+A17    : 4
+B17    : Check exterior lighting works at dusk
+C17    : Patio
+A18    : 5
+B18    : Clear the entire patio at closing: cushions, menus, decor
+C18    : Patio
+B19    : Tasks done:
+C19    = =COUNTIFS(B6:B18,"?*",E6:E18,"✓")-COUNTIFS(B6:B18,"Task",E6:E18,"✓")   → caché 0.0
+D19    : of
+E19    = =COUNTIF(B6:B18,"?*")-COUNTIF(B6:B18,"Task")-COUNTIF(E6:E18,"N/A")   → caché 10.0
+A20    : Signed off by: _________________  Date: ___/___/______
+A21    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G18 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 13-hotel-preventive-maintenance-checklists.xlsx
+# docProps: title='Hotel Preventive Maintenance Checklists: Daily Rounds to Annual, HVAC, Plumbing & Electrical' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 13 · Hotel Preventive Maintenance Checklists: Daily Rounds to Annual, HVAC, Plumbing & Electrical
+B4     : How to use this template:
+B5     : ▸ 7 checklists: daily round, weekly, monthly, quarterly & annual, HVAC, plumbing, electrical.
+B6     : ▸ Covers preventive and corrective maintenance for the hotel.
+B7     : ▸ Essential for code compliance and energy efficiency.
+B9     : Customization:
+B10    : ▸ Adjust to the age and equipment of your hotel.
+B11    : ▸ Add any specific equipment in your facility.
+B13    : Beyond the month:
+B14    : ▸ The "Quarterly & Annual" tab lists what is CONTRACTED and what an inspector asks for in writing: pest control, hoods (NFPA 96), food safety plan and training, calibration, Legionella (ASHRAE 188) and cooling towers, pool and spa water, sprinklers and fire alarm (NFPA 25 and 72), extinguishers (OSHA), gas, electrical (NFPA 70B), elevators and boilers (state or municipal inspector), evacuation drill, waste, insurance, I-9 and time records, PMS / POS and permits.
+B15    : ▸ The "Frequency" column already gives the legal or recommended frequency of each check; note the part number and the date of the next one in "Notes".
+B16    : ▸ Descaling coffee machines and hot water dispensers is monthly and goes on the "Monthly PM" tab; daily cleaning of the coffee group head is done by whoever uses the machine, in 01 (buffet) and 04 (lobby bar).
+B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Daily Rounds» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Engineering — Daily Round
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily technical round (7:00–8:00 AM)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check boilers and domestic hot water production (140 °F or above in the storage tank, CDC)
+C6     : Engineering
+A7     : 2
+B7     : Check the main electrical panels: no alarms or tripped breakers
+C7     : Engineering
+A8     : 3
+B8     : Check the emergency generator: fuel level and standby status
+C8     : Engineering
+A9     : 4
+B9     : Check HVAC temperatures in public areas and test rooms
+C9     : Engineering
+A10    : 5
+B10    : Check water pumps (pressure, noise)
+C10    : Engineering
+A11    : 6
+B11    : Visual round of public areas: lobby, corridors, facade
+C11    : Engineering
+A12    : 7
+B12    : Review the work order list and prioritize today's repairs
+C12    : Engineering
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Weekly PM» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Engineering — Weekly Tasks
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Weekly checks
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Clean A/C filters in public areas (restaurant, lobby, ballrooms)
+C6     : Engineering
+A7     : 2
+B7     : Check fire extinguishers (visual inspection, at least monthly, OSHA 1910.157(e)(2)) and standpipe hose cabinets: seals, gauge in the green and clear access
+C7     : Engineering
+A8     : 3
+B8     : Test smoke detectors (rotating sample per floor)
+C8     : Engineering
+A9     : 4
+B9     : Check elevators: doors, buttons, lighting
+C9     : Engineering
+A10    : 5
+B10    : Lubricate emergency door hinges and check they close
+C10    : Engineering
+A11    : 6
+B11    : Check pool and spa pumps: pressure, noise, leaks
+C11    : Engineering
+A12    : 7
+B12    : Check emergency lighting (functional test): 30 seconds monthly and 90 minutes yearly, logged (NFPA 101 §7.9.3)
+C12    : Engineering
+A13    : 8
+B13    : Read meters: water, gas, electricity (record consumption)
+C13    : Engineering
+B14    : Tasks done:
+C14    = =COUNTIFS(B6:B13,"?*",E6:E13,"✓")-COUNTIFS(B6:B13,"Task",E6:E13,"✓")   → caché 0.0
+D14    : of
+E14    = =COUNTIF(B6:B13,"?*")-COUNTIF(B6:B13,"Task")-COUNTIF(E6:E13,"N/A")   → caché 8.0
+A15    : Signed off by: _________________  Date: ___/___/______
+A16    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G13 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Monthly PM» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Engineering — Monthly Tasks
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Monthly checks
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check commercial kitchen equipment and exhaust hoods
+C6     : Engineering
+A7     : 2
+B7     : Descale the coffee machines and hot water dispensers at all outlets (buffet, lobby bar, à la carte, in-room dining) or contract the service call, and replace the water softener filters on the supply line — record the date and part number
+C7     : Engineering
+A8     : 3
+B8     : Inspect roofs, gutters and downspouts
+C8     : Engineering
+A9     : 4
+B9     : Check the condition of exterior and interior paint (high-use areas)
+C9     : Engineering
+A10    : 5
+B10    : Check fire doors: self-closing, magnetic hold-opens and signage; periodic inspection by a professional (NFPA 80)
+C10    : Engineering
+A11    : 6
+B11    : Test the emergency generator under load monthly, as the manufacturer and your fire code specify
+C11    : Engineering
+A12    : 7
+B12    : Check plumbing: drains, traps, possible leaks
+C12    : Engineering
+A13    : 8
+B13    : Inspect guest room furniture: drawers, hinges, pulls
+C13    : Engineering
+A14    : 9
+B14    : Update the maintenance log and plan next month
+C14    : Admin
+B15    : Tasks done:
+C15    = =COUNTIFS(B6:B14,"?*",E6:E14,"✓")-COUNTIFS(B6:B14,"Task",E6:E14,"✓")   → caché 0.0
+D15    : of
+E15    = =COUNTIF(B6:B14,"?*")-COUNTIF(B6:B14,"Task")-COUNTIF(E6:E14,"N/A")   → caché 9.0
+A16    : Signed off by: _________________  Date: ___/___/______
+A17    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G14 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Food safety and pest control
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Frequency
+G5     : Notes
+A6     : 1
+B6     : Pest control by a licensed pest management company: kitchens, storerooms, public areas and a rotating sample of guest rooms for bed bugs — service visit and signed service report on file
+C6     : Engineering
+F6     : Monthly
+A7     : 2
+B7     : Kitchen hood and duct cleaning by a certified contractor at the NFPA 96 frequency for your cooking volume (quarterly if high volume, semiannual if moderate): service report on file
+C7     : Engineering
+F7     : Semiannual
+A8     : 3
+B8     : Optional third-party food safety audit or ATP swab testing to verify your cleaning (many brands require an annual audit)
+C8     : Engineering
+F8     : Semiannual
+A9     : 4
+B9     : Review your food safety plan (HACCP if your health department or a variance requires one) and supplier approvals: the menu and buffet changes of the year
+C9     : Admin
+F9     : Annual
+A10    : 5
+B10    : Renew food handler cards and allergen training for all F&B staff, banquet extras included, and check a certified food protection manager is on the F&B management team (FDA Food Code 2-102.12; card rules vary by state)
+C10    : Admin
+F10    : Annual
+A11    : 6
+B11    : Calibrate the thermometers and probes of walk-ins, buffet and in-room dining in ice water (32 °F) and log any offset
+C11    : Engineering
+F11    : Quarterly
+A12    : Water, Legionella, pool and spa
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Frequency
+G13    : Notes
+A14    : 1
+B14    : Cooling towers and domestic hot water: cleaning and disinfection under your Legionella water management program (ASHRAE 188); cooling towers registered, inspected and tested where your state or city requires it (New York State and New York City do)
+C14    : Engineering
+F14    : Semiannual
+A15    : 2
+B15    : Legionella sampling by an accredited lab at the frequency your water management program sets; results logged and corrective actions recorded
+C15    : Engineering
+F15    : Quarterly
+A16    : 3
+B16    : Hot water temperature at outlets: stored at 140 °F or above and circulating at 120 °F or above (CDC); thermostatic mixing valves keep the guest outlets scald-safe; flush the outlets of rooms out of order or out of service for a week or more
+C16    : Engineering
+F16    : Quarterly
+A17    : 4
+B17    : Pool and spa water: lab or health-department testing where your state code requires it, on top of the free chlorine and pH log (MAHC 2024: before opening and every 2 or 4 hours)
+C17    : Engineering
+F17    : Quarterly
+A18    : 5
+B18    : Drain, deep-clean and inspect pool and spa shells, filters and showers; check every drain cover is VGB-compliant and within its service life (15 U.S.C. 8003)
+C18    : Engineering
+F18    : Annual
+A19    : Facilities, fire and safety
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Frequency
+G20    : Notes
+A21    : 1
+B21    : Fire sprinkler, standpipe and fire alarm inspections by a licensed fire protection company at the NFPA 25 and NFPA 72 intervals (quarterly and annual items): tags and reports on file
+C21    : Engineering
+F21    : Quarterly
+A22    : 2
+B22    : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157(e)(3)); hydrostatic tests as each extinguisher label says
+C22    : Engineering
+F22    : Annual
+A23    : 3
+B23    : Gas lines and kitchen appliance connections checked by a licensed pro, as often as your local code or gas utility requires
+C23    : Engineering
+F23    : Annual
+A24    : 4
+B24    : Electrical maintenance program (NFPA 70B): infrared scan of main panels and switchgear by a qualified electrician
+C24    : Engineering
+F24    : Annual
+A25    : 5
+B25    : Elevator and dumbwaiter inspection by a licensed elevator inspector, as your state or city requires (certificate posted in each car), on top of the monthly maintenance contract
+C25    : Engineering
+F25    : Annual
+A26    : 6
+B26    : Boilers and water heaters: inspection for the state boiler certificate where your state requires one; chiller and HVAC plant service with its report
+C26    : Engineering
+F26    : Annual
+A27    : 7
+B27    : Evacuation drill with every shift, as often as your local fire code requires, and review of the emergency action plan
+C27    : Admin
+F27    : Annual
+A28    : 8
+B28    : Used cooking oil pickup by a licensed recycler and hazardous waste (lamps, batteries, chemicals) by a licensed hauler: keep receipts and manifests
+C28    : Engineering
+F28    : Quarterly
+A29    : Documentation, insurance and staff
+A30    : #
+B30    : Task
+C30    : Area
+D30    : Assigned to
+E30    : ✓
+F30    : Frequency
+G30    : Notes
+A31    : 1
+B31    : Review insurance: general liability, property, liquor liability, workers' comp and pool and spa coverage — insured values, capacities and covered activities
+C31    : Admin
+F31    : Annual
+A32    : 2
+B32    : File the quarter's time records (FLSA: time cards 2 years, payroll 3) and check every new hire has a Form I-9, seasonal and banquet extras included
+C32    : Admin
+F32    : Quarterly
+A33    : 3
+B33    : PMS and POS review: software updates, user permissions, sales and occupancy tax rates, and PCI DSS for card data
+C33    : Admin
+F33    : Annual
+A34    : 4
+B34    : Renew permits and licenses: business license, health permit for each food outlet, liquor license, pool and spa operating permit and, if you have one, outdoor dining permit
+C34    : Admin
+F34    : Annual
+A35    : 5
+B35    : Update recipe costing, menu prices and banquet rates with actual supplier prices
+C35    : Admin
+F35    : Quarterly
+A36    : 6
+B36    : Write the report number of each inspection and the date of the next one in "Notes"
+C36    : Admin
+F36    : Quarterly
+B37    : Tasks done:
+C37    = =COUNTIFS(B6:B36,"?*",E6:E36,"✓")-COUNTIFS(B6:B36,"Task",E6:E36,"✓")   → caché 0.0
+D37    : of
+E37    = =COUNTIF(B6:B36,"?*")-COUNTIF(B6:B36,"Task")-COUNTIF(E6:E36,"N/A")   → caché 25.0
+A38    : Signed off by: _________________  Date: ___/___/______
+A39    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E14 E15 E16 E17 E18 E21 E22 E23 E24 E25 E26 E27 E28 E31 E32 E33 E34 E35 E36 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A6:G36 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «HVAC» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : HVAC — Heating, Cooling & Ventilation
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Climate control
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check temperature setpoints by zone (rooms, lobby, ballrooms)
+C6     : HVAC
+A7     : 2
+B7     : Monitor refrigerant pressures and alarms on the production units; staff never handle refrigerant: only an EPA 608 certified technician (40 CFR Part 82)
+C7     : HVAC
+A8     : 3
+B8     : Clean fan coil filters quarterly (rotate by floors)
+C8     : HVAC
+A9     : 4
+B9     : Check thermostats: room issues, calibration
+C9     : HVAC
+A10    : 5
+B10    : Check ventilation and air exchange in interior areas
+C10    : HVAC
+A11    : 6
+B11    : Record energy consumption and compare with the previous period
+C11    : HVAC
+B12    : Tasks done:
+C12    = =COUNTIFS(B6:B11,"?*",E6:E11,"✓")-COUNTIFS(B6:B11,"Task",E6:E11,"✓")   → caché 0.0
+D12    : of
+E12    = =COUNTIF(B6:B11,"?*")-COUNTIF(B6:B11,"Task")-COUNTIF(E6:E11,"N/A")   → caché 6.0
+A13    : Signed off by: _________________  Date: ___/___/______
+A14    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G11 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Plumbing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Plumbing — Control & Prevention
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Plumbing checks
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check water pressure at the highest points of the building
+C6     : Plumbing
+A7     : 2
+B7     : Legionella control: water management program per ASHRAE 188 and CDC guidance; hot water stored at 140 °F or above and circulating at 120 °F or above (CDC); thermostatic mixing valves at points of use against scalding
+C7     : Plumbing
+A8     : 3
+B8     : Inspect mechanical rooms: leaks, moisture, corrosion
+C8     : Plumbing
+A9     : 4
+B9     : Do preventive drain clearing in high-use areas
+C9     : Plumbing
+A10    : 5
+B10    : Check toilet tanks: running water, mechanism, float
+C10    : Plumbing
+A11    : 6
+B11    : Check room fixtures: drips, scale, operation; flush fixtures in unused rooms weekly (Legionella, CDC)
+C11    : Plumbing
+A12    : 7
+B12    : Check radiators/heating: bleeding, leaks, thermostats
+C12    : Plumbing
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Electrical» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Electrical — Control & Safety
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Electrical checks
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check secondary panels per floor: no tripped breakers or alarms
+C6     : Electrical
+A7     : 2
+B7     : Check emergency lighting and evacuation signs
+C7     : Electrical
+A8     : 3
+B8     : Check LED fixtures: replace burned-out ones, check dimmers
+C8     : Electrical
+A9     : 4
+B9     : Check outlets in rooms and public areas
+C9     : Electrical
+A10    : 5
+B10    : Check electronic locks: batteries, programming, backup
+C10    : Electrical
+A11    : 6
+B11    : Check the PA and background music system
+C11    : Electrical
+A12    : 7
+B12    : Check EV chargers if any
+C12    : Electrical
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 14-hotel-back-office-checklists.xlsx
+# docProps: title='Hotel Back-Office Checklists: Revenue Management, Reservations, Accounting & HR' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 14 · Hotel Back-Office Checklists: Revenue Management, Reservations, Accounting & HR
+B4     : How to use this template:
+B5     : ▸ 4 checklists for the hotel's daily administration.
+B6     : ▸ Revenue management, reservations, accounting and HR operations.
+B7     : ▸ Ideal for general managers, revenue managers and back office.
+B9     : Customization:
+B10    : ▸ Adjust KPIs and processes to your hotel type.
+B11    : ▸ Add the specific reports from your PMS/channel manager.
+B13    : Time records:
+B14    : ▸ US: the FLSA requires recording hours worked for hourly (non-exempt) staff; keep time-clock punches 2 years and payroll 3 (29 CFR 516.5-516.6; some states require more, e.g. NY 6), plus an I-9 for every hire. In "HR Operations" they are approved daily and filed when the month closes.
+B15    : ▸ The quarterly review of contracts and time-record files is on the "Quarterly & Annual" tab of file 13.
+B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B18    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Revenue Management» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Revenue Management — Daily Control
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily analysis
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review occupancy and pickup vs. budget (today, week, month)
+C6     : Revenue
+A7     : 2
+B7     : Check rate parity across OTAs (Expedia, Booking.com) and the direct channel; the advertised price includes mandatory fees (resort fee) from the first screen: FTC fee rule (16 CFR Part 464, since May 12, 2025)
+C7     : Revenue
+A8     : 3
+B8     : Adjust dynamic pricing to demand and competition
+C8     : Revenue
+A9     : 4
+B9     : Manage restrictions: minimum length of stay (MLOS), CTA and CTD by occupancy
+C9     : Revenue
+A10    : 5
+B10    : Review yesterday's cancellations and no-shows
+C10    : Revenue
+A11    : 6
+B11    : Review the status of confirmed/tentative groups and events
+C11    : Revenue
+A12    : 7
+B12    : Prepare the weekly forecast: occupancy, ADR, projected RevPAR
+C12    : Revenue
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Reservations» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Reservations Department — Daily Operations
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Reservations management
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Process new reservations: direct, OTA, agencies, corporate
+C6     : Reservations
+A7     : 2
+B7     : Confirm reservation guarantees (credit card, prepayment)
+C7     : Reservations
+A8     : 3
+B8     : Handle today's modifications and cancellations
+C8     : Reservations
+A9     : 4
+B9     : Room assignment: pre-assign rooms by preference and type
+C9     : Reservations
+A10    : 5
+B10    : Pass special requests to departments (crib, rollaway bed, diet)
+C10    : Reservations
+A11    : 6
+B11    : Manage overbooking situations and available solutions
+C11    : Reservations
+A12    : 7
+B12    : Send pre-arrival confirmations with hotel information
+C12    : Reservations
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Accounting» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Accounting — Daily Control
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Daily close
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Balance the front desk, restaurant and spa drawers
+C6     : Accounting
+A7     : 2
+B7     : Verify room charges are posted correctly
+C7     : Accounting
+A8     : 3
+B8     : Process corporate invoices and credit accounts
+C8     : Accounting
+A9     : 4
+B9     : Reconcile payments with the card processor batch (Visa, Mastercard, Amex)
+C9     : Accounting
+A10    : 5
+B10    : Generate the revenue by department report (daily P&L)
+C10    : Accounting
+A11    : 6
+B11    : Manage vendor invoice approval
+C11    : Accounting
+A12    : 7
+B12    : Prepare bank deposits and verify transactions
+C12    : Accounting
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «HR Operations» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : HR Operations — Daily Management
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Staff control
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check the shift schedule and manage absences/sick leave
+C6     : HR
+A7     : 2
+B7     : Review and approve the team's time-clock punches (in, out and breaks) in the POS or time-clock app, banquet extras and night shifts included
+C7     : HR
+A8     : 3
+B8     : Handle vacation and time-off requests
+C8     : HR
+A9     : 4
+B9     : Coordinate the month's scheduled trainings
+C9     : HR
+A10    : 5
+B10    : Check staff uniforms on duty
+C10    : HR
+A11    : 6
+B11    : Handle payroll issues: overtime (FLSA, above 40 hours a week), tips and bonuses
+C11    : HR
+A12    : 7
+B12    : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C12    : HR
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 15-hotel-spa-checklists.xlsx
+# docProps: title='Hotel Spa & Wellness Checklists: Opening, Closing, Treatment Rooms & Locker Rooms' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 15 · Hotel Spa & Wellness Checklists: Opening, Closing, Treatment Rooms & Locker Rooms
+B4     : How to use this template:
+B5     : ▸ 4 checklists: opening, closing, between treatments and locker rooms.
+B6     : ▸ Covers the hot tub (whirlpool spa), sauna, steam room and the indoor heated pool.
+B7     : ▸ Ideal for spa managers and therapists.
+B9     : Customization:
+B10    : ▸ Adjust to your spa's facilities.
+B11    : ▸ Add your brand's specific hygiene protocols.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Spa Opening» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Spa Opening — Daily Checklist
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Facility start-up
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check hot tub / pool temperature (target 95–100 °F, never above 104 °F, MAHC 2024) and adjust; post the hot tub sign (104 °F, no children under 5, no alcohol, pregnancy and heart conditions); hot tub free chlorine at least 3.0 ppm
+C6     : Spa
+A7     : 2
+B7     : Turn on the sauna and steam room (preheat 30–45 min)
+C7     : Spa
+A8     : 3
+B8     : Prepare treatment rooms: clean sheets, oils, candles, ambient music
+C8     : Spa
+A9     : 4
+B9     : Check stock of treatment products (creams, oils, scrubs)
+C9     : Spa
+A10    : 5
+B10    : Review today's schedule and confirm assigned therapists
+C10    : Spa
+A12    : Area prep
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Clean and prepare locker rooms: showers, lockers, amenities
+C14    : Locker rooms
+A15    : 2
+B15    : Set dim lighting and the ambient sound system
+C15    : Spa
+A16    : 3
+B16    : Prepare the relaxation area: water, herbal teas, fresh fruit
+C16    : Spa
+B17    : Tasks done:
+C17    = =COUNTIFS(B6:B16,"?*",E6:E16,"✓")-COUNTIFS(B6:B16,"Task",E6:E16,"✓")   → caché 0.0
+D17    : of
+E17    = =COUNTIF(B6:B16,"?*")-COUNTIF(B6:B16,"Task")-COUNTIF(E6:E16,"N/A")   → caché 8.0
+A18    : Signed off by: _________________  Date: ___/___/______
+A19    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G16 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Spa Closing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Spa Closing — Daily Checklist
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Check and shutdown
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check that all areas are empty of guests
+C6     : Spa
+A7     : 2
+B7     : Turn off saunas, steam room and hot tub
+C7     : Spa
+A8     : 3
+B8     : Send all used towels to laundry with a linen count sheet
+C8     : Spa
+A9     : 4
+B9     : Clean, then disinfect all treatment rooms with an EPA-registered product, following its contact time
+C9     : Spa
+A10    : 5
+B10    : Deep-clean locker rooms: floor, showers, lockers
+C10    : Locker rooms
+A12    : Administrative close
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Cash out: treatments performed, room charges, retail sales
+C14    : Admin
+A15    : 2
+B15    : Log the day's incidents and low product stock
+C15    : Admin
+A16    : 3
+B16    : Review tomorrow's schedule and confirm availability
+C16    : Spa
+B17    : Tasks done:
+C17    = =COUNTIFS(B6:B16,"?*",E6:E16,"✓")-COUNTIFS(B6:B16,"Task",E6:E16,"✓")   → caché 0.0
+D17    : of
+E17    = =COUNTIF(B6:B16,"?*")-COUNTIF(B6:B16,"Task")-COUNTIF(E6:E16,"N/A")   → caché 8.0
+A18    : Signed off by: _________________  Date: ___/___/______
+A19    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G16 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Treatment Rooms» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Treatment Rooms — Between-Treatment Protocol
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Room reset (10–15 min between guests)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Fully change the sheets and towels on the treatment table
+C6     : Spa
+A7     : 2
+B7     : Disinfect all surfaces (table, stool, shelves) with an EPA-registered product, following its label contact time
+C7     : Spa
+A8     : 3
+B8     : Restock products needed for the next treatment
+C8     : Spa
+A9     : 4
+B9     : Ventilate the room for at least 5 minutes
+C9     : Spa
+A10    : 5
+B10    : Set the treatment room temperature to 75–79 °F
+C10    : Spa
+A11    : 6
+B11    : Prepare the specific setup for the next treatment (oils, stones, etc.)
+C11    : Spa
+B12    : Tasks done:
+C12    = =COUNTIFS(B6:B11,"?*",E6:E11,"✓")-COUNTIFS(B6:B11,"Task",E6:E11,"✓")   → caché 0.0
+D12    : of
+E12    = =COUNTIF(B6:B11,"?*")-COUNTIF(B6:B11,"Task")-COUNTIF(E6:E11,"N/A")   → caché 6.0
+A13    : Signed off by: _________________  Date: ___/___/______
+A14    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G11 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Locker Rooms» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Spa Locker Rooms — Ongoing Maintenance
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Cleaning and checks (every 2–3 hours)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Mop the non-slip floor with disinfectant
+C6     : Locker rooms
+A7     : 2
+B7     : Disinfect benches, lockers and door handles
+C7     : Locker rooms
+A8     : 3
+B8     : Restock amenities: body wash, shampoo, body lotion, hair dryers
+C8     : Locker rooms
+A9     : 4
+B9     : Check lockers work properly (keys/codes)
+C9     : Locker rooms
+A10    : 5
+B10    : Empty wastebaskets and pick up used towels from the floor
+C10    : Locker rooms
+A11    : 6
+B11    : Check ventilation: no odors, exhaust working
+C11    : Locker rooms
+B12    : Tasks done:
+C12    = =COUNTIFS(B6:B11,"?*",E6:E11,"✓")-COUNTIFS(B6:B11,"Task",E6:E11,"✓")   → caché 0.0
+D12    : of
+E12    = =COUNTIF(B6:B11,"?*")-COUNTIF(B6:B11,"Task")-COUNTIF(E6:E11,"N/A")   → caché 6.0
+A13    : Signed off by: _________________  Date: ___/___/______
+A14    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G11 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 18-hotel-daily-opening-closing-rounds.xlsx
+# docProps: title='Hotel Daily Opening & Closing Rounds: F&B Outlets & Public Areas' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$45 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 18 · Hotel Daily Opening & Closing Rounds: F&B Outlets & Public Areas
+B4     : What it solves
+B6     : ▸ This is the checklist for the hotel's F&B OUTLETS and PUBLIC AREAS that open and close every day (the hotel itself never closes: the front desk runs 24 h). Use it as the backbone of the day.
+B8     : How to use
+B10    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the manager on duty assigns tasks and each person initials theirs.
+B11    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B13    : Editable cells
+B15    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your property: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 18-hotel-daily-opening-closing-rounds.xlsx — checklist for the F&B outlets and public areas: it is the BACKBONE of the day.
+B36    : ▸ 19-cash-drawer-opening-closing.xlsx — the CASH DRAWER: starting bank, count by denomination, POS Z report and over/short.
+B37    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B38    : ▸ You are in 18-hotel-daily-opening-closing-rounds.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the outlets; the MONEY is in 19-cash-drawer-opening-closing.xlsx.
+B40    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
+B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B43    : Contact: info@aichef.pro
+B45    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Opening Rounds» · protegida=True · área='Opening Rounds'!$A$1:$H$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Rounds — Full Hotel
+A2     : Date: ____/____/________
+E2     : Manager on duty: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the outlet alarm (restaurant or bar) if it has one: the hotel stays open
+C5     : Entrance
+D5     : Manager on duty
+E5     : 5:30 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Manager on duty
+E6     : 5:30 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Manager on duty
+E7     : 5:30 AM
+A8     : 4
+B8     : Raise the outlet's security gate / shutters and open the front door
+C8     : Entrance
+D8     : Manager on duty
+E8     : 5:30 AM
+A9     : 5
+B9     : Set up outdoor signage / menu board
+C9     : Outside
+D9     : Manager on duty
+E9     : 5:30 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Manager on duty
+E10    : 5:30 AM
+A11    : 7
+B11    : Turn on the restaurant reservation system (OpenTable, Resy…) and order tablet
+C11    : Front desk
+D11    : Manager on duty
+E11    : 5:45 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Manager on duty
+E12    : 5:45 AM
+A13    : 9
+B13    : Review today's reservations and special events (today's BEOs)
+C13    : Front desk
+D13    : Manager on duty
+E13    : 5:45 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Manager on duty
+E14    : 5:45 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Public areas
+D15    : Manager on duty
+E15    : 5:45 AM
+A16    : 12
+B16    : Check furniture condition (chairs, tables, lighting)
+C16    : Dining room
+D16    : Manager on duty
+E16    : 5:45 AM
+A17    : 13
+B17    : Set up the patio if applicable (tables, chairs, umbrellas or patio heaters)
+C17    : Patio
+D17    : Manager on duty
+E17    : 6:00 AM
+A18    : 14
+B18    : Check that menus are in order
+C18    : Dining room
+D18    : Manager on duty
+E18    : 6:00 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Manager on duty
+E19    : 6:00 AM
+A20    : 16
+B20    : Check today's check-ins
+C20    : Front desk
+D20    : Manager on duty
+E20    : 6:00 AM
+A21    : 17
+B21    : Check the condition of the lobby and front desk
+C21    : Front desk
+D21    : Manager on duty
+E21    : 6:00 AM
+A22    : 18
+B22    : Turn on lighting in the main public areas
+C22    : Public areas
+D22    : Manager on duty
+E22    : 6:00 AM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 18.0
+A30    : Manager signature: _________________________     Completion time: ________
+A31    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Closing Rounds» · protegida=True · área='Closing Rounds'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Closing Rounds — Full Hotel
+A2     : Date: ____/____/________
+E2     : Manager on duty: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Turn off background music in the outlet
+C5     : General
+D5     : Manager on duty
+E5     : Close
+A6     : 2
+B6     : Check no guests are left in the outlet
+C6     : Dining room
+D6     : Manager on duty
+E6     : Close
+A7     : 3
+B7     : Clean up and bring in the patio, if you have one
+C7     : Patio
+D7     : Manager on duty
+E7     : Close
+A8     : 4
+B8     : Bring in the outdoor signage and menu boards
+C8     : Outside
+D8     : Manager on duty
+E8     : Close
+A9     : 5
+B9     : Turn off the outlet POS / card terminal (or leave on standby)
+C9     : Register
+D9     : Manager on duty
+E9     : Close
+A10    : 6
+B10    : Empty trash cans in public areas and restrooms
+C10    : Restrooms
+D10    : Manager on duty
+E10    : Close
+A11    : 7
+B11    : Review pending check-outs and tomorrow's departures with the night auditor
+C11    : Front desk
+D11    : Manager on duty
+E11    : Close
+A12    : 8
+B12    : Lobby and public-area lighting to night mode (exit signs and egress lighting always stay on)
+C12    : Public areas
+D12    : Manager on duty
+E12    : Close
+A13    : 9
+B13    : Check that the outlet windows are closed
+C13    : General
+D13    : Manager on duty
+E13    : Close
+A14    : 10
+B14    : Turn off HVAC in the closed outlets (guest floors and lobby stay on)
+C14    : General
+D14    : Manager on duty
+E14    : Close
+A15    : 11
+B15    : Turn off the outlet lights (leave security lighting on)
+C15    : General
+D15    : Manager on duty
+E15    : Close
+A16    : 12
+B16    : Final safety check of the outlets: gas, water, small appliances unplugged
+C16    : General
+D16    : Manager on duty
+E16    : Close
+A17    : 13
+B17    : Close the outlet's security gate and doors
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A18    : 14
+B18    : Arm the outlet alarm, if it has one
+C18    : Entrance
+D18    : Last one out
+E18    : Close
+A19    : 15
+B19    : Lock up and verify it is locked
+C19    : Entrance
+D19    : Last one out
+E19    : Close
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Manager signature: _________________________     Completion time: ________
+A28    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 19-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$56 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 19 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your property: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 18-hotel-daily-opening-closing-rounds.xlsx — checklist for the F&B outlets and public areas: it is the BACKBONE of the day.
+B47    : ▸ 19-cash-drawer-opening-closing.xlsx — the CASH DRAWER: starting bank, count by denomination, POS Z report and over/short.
+B48    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B49    : ▸ You are in 19-cash-drawer-opening-closing.xlsx: this is the CASH DRAWER — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 18-hotel-daily-opening-closing-rounds.xlsx.
+B51    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
+B53    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B54    : Contact: info@aichef.pro
+B56    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / MOD
+D5     : 5:45 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / MOD
+D6     : 5:45 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / MOD
+D7     : 5:45 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / MOD
+D8     : 5:45 AM
+A9     : 5
+B9     : Check that the POS is on and open the register shift
+C9     : Cashier / MOD
+D9     : 6:00 AM
+A10    : 6
+B10    : Print the opening X report (start-of-day report)
+C10    : Cashier / MOD
+D10    : 6:00 AM
+A11    : 7
+B11    : Check the receipt paper roll
+C11    : Cashier / MOD
+D11    : 6:00 AM
+A12    : 8
+B12    : Check the card terminal works
+C12    : Cashier / MOD
+D12    : 6:00 AM
+A13    : 9
+B13    : Check the payment gateway connection
+C13    : Cashier / MOD
+D13    : 6:15 AM
+A14    : 10
+B14    : Note issues from the previous shift
+C14    : Cashier / MOD
+D14    : 6:15 AM
+A15    : 11
+B15    : Opening manager sign-off
+C15    : Cashier / MOD
+D15    : 6:15 AM
+A22    : Tasks done:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Starting bank (opening float)
+C23    : 0
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
+A25    : Manager signature: _________________________     Time: ________
+A26    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / MOD
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / MOD
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / MOD
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / MOD
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / MOD
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / MOD
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / MOD
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / MOD
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / MOD
+D13    : Close
+A14    : 10
+B14    : Set aside tomorrow's starting bank
+C14    : Cashier / MOD
+D14    : Close
+A15    : 11
+B15    : Prepare the bank deposit / put it in the safe
+C15    : Cashier / MOD
+D15    : Close
+A16    : 12
+B16    : Closing manager sign-off
+C16    : Cashier / MOD
+D16    : Close
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Cash Count by Denomination
+A25    : Denomination
+B25    : Quantity
+C25    : Subtotal
+A26    : BILLS
+A27    : $100
+B27    : 0
+C27    = =B27*100   → caché 0.0
+A28    : $50
+B28    : 0
+C28    = =B28*50   → caché 0.0
+A29    : $20
+B29    : 0
+C29    = =B29*20   → caché 0.0
+A30    : $10
+B30    : 0
+C30    = =B30*10   → caché 0.0
+A31    : $5
+B31    : 0
+C31    = =B31*5   → caché 0.0
+A32    : $2
+B32    : 0
+C32    = =B32*2   → caché 0.0
+A33    : $1
+B33    : 0
+C33    = =B33*1   → caché 0.0
+A34    : COINS
+A35    : $1 coin
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : 50¢
+B36    : 0
+C36    = =B36*0.5   → caché 0.0
+A37    : 25¢
+B37    : 0
+C37    = =B37*0.25   → caché 0.0
+A38    : 10¢
+B38    : 0
+C38    = =B38*0.1   → caché 0.0
+A39    : 5¢
+B39    : 0
+C39    = =B39*0.05   → caché 0.0
+A40    : 1¢
+B40    : 0
+C40    = =B40*0.01   → caché 0.0
+A41    : 25¢ roll
+B41    : 0
+C41    = =B41*10   → caché 0.0
+A42    : 10¢ roll
+B42    : 0
+C42    = =B42*5   → caché 0.0
+A43    : TOTAL CASH
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Closing Summary
+A46    : Item
+C46    : Amount
+A47    : Total cash (count)
+C47    = =C43   → caché 0.0
+A48    : Starting bank (−)
+C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
+A49    : Net cash (counted − starting bank)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Card sales, excl. tips
+C50    : 0
+A51    : Other tenders + card tips paid in cash
+C51    : 0
+A52    : TOTAL COLLECTED
+C52    = =C49+C50+C51   → caché 0.0
+A53    : POS Z report: sales + tax, excl. tips
+C53    : 0
+A54    : OVER / SHORT
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Manager signature: _________________________     Time: ________
+A57    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : General manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-hotel-daily-fb-briefing-template.xlsx
+# docProps: title='BONUS: Hotel Daily F&B Briefing Template (Stand-Up Notes)' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Hotel Daily F&B Briefing Template (Stand-Up Notes)
+B4     : How to use this template:
+B5     : ▸ Template for the F&B department's daily meeting.
+B6     : ▸ Includes occupancy, VIPs, today's events, menu and team.
+B7     : ▸ Fill in every morning and distribute to department heads (F&B, front desk, housekeeping, engineering).
+B9     : Customization:
+B10    : ▸ Adapt the outlets to those your hotel has.
+B11    : ▸ Print a copy for each department head.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «Daily F&B Briefing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily F&B Briefing
+A2     : AI Chef Pro · aichef.pro — Hotel Checklists Kit Pro
+A4     : Today's data
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Date: ___/___/___  Day: ___  Occupancy: ___% (___ rooms of ___)
+C6     : Admin
+A7     : 2
+B7     : Check-ins today: ___  Check-outs today: ___  Groups: ___
+C7     : Admin
+A8     : 3
+B8     : Expected covers, breakfast: ___  Lunch: ___  Dinner: ___
+C8     : Admin
+A9     : 4
+B9     : In-room dining orders expected: ___  Minibar restocks: ___
+C9     : Admin
+A10    : 5
+B10    : Events/banquets today: _______________ Room: ___  Guests: ___
+C10    : Admin
+A12    : VIPs and special attention
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : VIP 1: Room ___ Name:_______________ Attention:_______________
+C14    : Admin
+A15    : 2
+B15    : VIP 2: Room ___ Name:_______________ Attention:_______________
+C15    : Admin
+A16    : 3
+B16    : Critical allergies (the 9 major allergens): Room ___ Type:_______________ Protocol:___
+C16    : Admin
+A17    : 4
+B17    : Special diets (vegan, kosher, halal): _______________
+C17    : Admin
+A18    : 5
+B18    : Celebrations: birthday/anniversary — Room ___ Details:___
+C18    : Admin
+A20    : Menu and product of the day
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Chef's lunch special: _______________
+C22    : Kitchen
+A23    : 2
+B23    : Chef's dinner special: _______________
+C23    : Kitchen
+A24    : 3
+B24    : 86'd or unavailable items: _______________
+C24    : Kitchen
+A25    : 4
+B25    : Show cooking of the day: _______________
+C25    : Kitchen
+A26    : 5
+B26    : Recommended wine: _______________
+C26    : Dining room
+A28    : Team of the day
+A29    : #
+B29    : Task
+C29    : Area
+D29    : Assigned to
+E29    : ✓
+F29    : Time
+G29    : Notes
+A30    : 1
+B30    : Head chef on duty: _______________
+C30    : Admin
+A31    : 2
+B31    : Maître d' on duty: _______________
+C31    : Admin
+A32    : 3
+B32    : In-room dining lead: _______________
+C32    : Admin
+A33    : 4
+B33    : Banquets lead: _______________
+C33    : Admin
+A34    : 5
+B34    : Extra/temporary staff: ___ people
+C34    : Admin
+A35    : 6
+B35    : Open issues from the previous day: _______________
+C35    : Admin
+B36    : Tasks done:
+C36    = =COUNTIFS(B6:B35,"?*",E6:E35,"✓")-COUNTIFS(B6:B35,"Task",E6:E35,"✓")   → caché 0.0
+D36    : of
+E36    = =COUNTIF(B6:B35,"?*")-COUNTIF(B6:B35,"Task")-COUNTIF(E6:E35,"N/A")   → caché 21.0
+A37    : Signed off by: _________________  Date: ___/___/______
+A38    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 E30 E31 E32 E33 E34 E35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G35 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# BONUS-02-hotel-fb-calendar.xlsx
+# docProps: title='BONUS: Hotel F&B Calendar: 24 Key Dates & Seasons (US)' · subject='Hotel Checklists Kit Pro · v2.0' · keywords='hotel housekeeping checklist, hotel room cleaning checklist, hotel maintenance checklist, hotel front desk checklist, night audit checklist, hotel checklist template, AI Chef Pro' · description='aichef.pro/en/digital-products/hotel-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Hotel F&B Calendar: 24 Key Dates & Seasons (US)
+B4     : How to use this template:
+B5     : ▸ The 24 key dates and seasons for hotel F&B.
+B6     : ▸ Includes high/low seasons, holidays and special events.
+B7     : ▸ Plan special menus, extra staff and advance purchasing.
+B9     : Customization:
+B10    : ▸ Add local dates (festivals, fairs, conferences).
+B11    : ▸ Mark the dates that affect your hotel, depending on its type.
+B13    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B14    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
+
+=== Hoja «F&B Calendar» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Annual F&B Calendar — Hotel
+A2     : AI Chef Pro · aichef.pro — 24 key dates for hotel F&B
+A4     : #
+B4     : Date / Period
+C4     : Impact
+D4     : F&B Prep
+E4     : Lead time
+F4     : Notes
+A5     : 1
+B5     : Jan 1 — New Year's Day
+C5     : Brunch & late checkout
+D5     : Expanded New Year's brunch buffet and extended breakfast hours for late checkouts after New Year's Eve
+E5     : 3 weeks
+A6     : 2
+B6     : Feb 14 — Valentine's Day
+C6     : Themed dinner
+D6     : Tasting menu for couples, special decor; dinner + stay packages and a romantic in-room amenity
+E6     : 4 weeks
+A7     : 3
+B7     : Mar 17 — St. Patrick's Day
+C7     : Bar event
+D7     : Lobby bar and pool bar event: green and beer specials; check ID (21+) for every alcohol order
+E7     : 3 weeks
+A8     : 4
+B8     : Mar–Apr — Spring break & Easter (varies)
+C8     : High occupancy
+D8     : Easter brunch and family lunch; cakes to order and stay package; extra staff and expanded buffet
+E8     : 6 weeks
+A9     : 5
+B9     : April — Shoulder season
+C9     : Groups & conferences
+D9     : Prepare coffee break and working lunch packages for groups and conferences (MICE)
+E9     : 2 months
+A10    : 6
+B10    : Apr–Jun — Proms, graduations & showers
+C10    : Banquet peak
+D10    : Closed adult and kids menus, room and photo booth; no alcohol for minors (21+); book 3–6 months ahead
+E10    : 3 months
+A11    : 7
+B11    : 2nd Sunday of May — Mother's Day
+C11    : Brunch peak
+D11    : Biggest brunch day of the year: special brunch, expanded reservations and a gift for the moms
+E11    : 6 weeks
+A12    : 8
+B12    : May–Oct — Wedding season
+C12    : Banquet peak
+D12    : Reserve extra banquet staff and confirm wedding vendors; weddings are booked 6–12 months ahead
+E12    : 6–12 months
+A13    : 9
+B13    : Memorial Day (last Monday of May) — Summer starts
+C13    : Max occupancy
+D13    : Extended buffet hours, more show cooking and the pool bar in full swing
+E13    : 3 months
+A14    : 10
+B14    : Jun–Aug — Summer peak (incl. Jul 4)
+C14    : Resort & pool season
+D14    : Fresh summer menu, ice cream, BBQ and pool bar; Father's Day (3rd Sunday of June) and July 4 (fireworks, BBQ and group orders)
+E14    : 3 months
+A15    : 11
+B15    : September — Labor Day & conference season
+C15    : Corporate peak
+D15    : Labor Day (1st Monday of September) closes the summer; kick-offs and conventions: prepare banquet packages
+E15    : 2 months
+A16    : 12
+B16    : October — Fall menus
+C16    : Special menu
+D16    : Fall-themed buffet and menu (pumpkin, apple, mushrooms; game only from an approved supplier), special cocktails, decor
+E16    : 4 weeks
+A17    : 13
+B17    : Oct 31 — Halloween
+C17    : Themed event
+D17    : Halloween weekend: costume-themed dinners and family events; fall menu and special cocktails (21+ for alcohol)
+E17    : 4 weeks
+A18    : 14
+B18    : Nov — Thanksgiving (4th Thursday)
+C18    : High occupancy
+D18    : Thanksgiving buffet or prix fixe menu (turkey), seatings closed early and long-weekend packages
+E18    : 6 weeks
+A19    : 15
+B19    : Nov — Black Friday & Cyber Monday
+C19    : Promotion
+D19    : Dinner + stay packages, Sunday brunch and gift cards
+E19    : 4 weeks
+A20    : 16
+B20    : Dec 1–20 — Holiday parties
+C20    : Banquet peak
+D20    : Biggest corporate banquet demand of the year (holiday parties); extra staff booked BEFORE the rush
+E20    : 3 months
+A21    : 17
+B21    : Dec 24 — Christmas Eve
+C21    : Special dinner
+D21    : Premium Christmas Eve menu. Reservations well in advance
+E21    : 2 months
+A22    : 18
+B22    : Dec 25 — Christmas Day
+C22    : Family brunch
+D22    : Expanded Christmas buffet or brunch (prime rib, glazed ham, seasonal desserts)
+E22    : 2 months
+A23    : 19
+B23    : Dec 31 — New Year's Eve
+C23    : Gala night
+D23    : Gala dinner, party favors (hats, noisemakers), open bar with 21+ ID check and Champagne toast at midnight. Maximum staff
+E23    : 3 months
+A24    : 20
+B24    : Year-round — Sunday brunch
+C24    : Fixed outlet
+D24    : Premium brunch with Champagne and mimosas, eggs Benedict, show cooking
+E24    : Weekly
+A25    : 21
+B25    : Year-round — VIP amenities
+C25    : In-room dining
+D25    : Welcome drinks, fruit baskets, chocolate turndown; alcohol only for guests 21+
+E25    : Monthly stock
+A26    : 22
+B26    : Year-round — Groups & conferences (MICE)
+C26    : Banquets
+D26    : Coffee breaks, working lunches, gala dinners — each with its BEO
+E26    : 1–3 months
+A27    : 23
+B27    : Local events & holidays
+C27    : Varies
+D27    : Special menu for local events: festivals, games, convention center events, fairs. Check the local calendar (UK: bank holidays, Mothering Sunday, Boxing Day)
+E27    : 4–6 weeks
+A28    : 24
+B28    : Health inspection
+C28    : Unannounced
+D28    : Prepare all records: temperature logs, food handler cards, certified food protection manager and, if your state requires it, the HACCP plan; the health department inspection can come unannounced
+E28    : Always
