@@ -2,22 +2,23 @@
  "meta": {
   "kit": "hotel",
   "producto": "Hotel Checklists Kit Pro",
-  "n_pendientes": 831,
-  "n_palabras": 7217,
+  "n_pendientes": 832,
+  "n_palabras": 7262,
   "motivos": {
    "nueva": 818,
    "adaptar": 8,
-   "contexto": 5
+   "contexto": 5,
+   "corregida": 1
   },
-  "n_heredadas": 107,
+  "n_heredadas": 106,
   "heredadas_por_via": {
-   "exacta": 104,
+   "exacta": 103,
    "sufijo": 3
   },
   "heredadas_por_fuente": {
    "catering": 20,
    "base": 81,
-   "icecream": 5,
+   "icecream": 4,
    "chocolate": 1
   },
   "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
@@ -8657,6 +8658,19 @@
     }
    ],
    "motivo": "nueva"
+  },
+  {
+   "id": "c0965",
+   "es": "▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.",
+   "grupo": "G2",
+   "palabras": 45,
+   "donde": [
+    "18 · Instrucciones · B37",
+    "19 · Instrucciones · B48"
+   ],
+   "motivo": "corregida: shop → register (molde de otro kit): en el hotel, rounds → cash drawer",
+   "base_en": "▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.",
+   "base_fuente": "icecream"
   },
   {
    "id": "c0966",

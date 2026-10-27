@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:06:10Z",
+  "generado": "2026-10-27T07:29:44Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-hotel",
-  "commit": "d135c93d",
+  "commit": "67073cfb",
   "libros": {
    "01": {
     "es": "01-fb-buffet-desayuno.xlsx",
@@ -32609,16 +32609,16 @@
      "h": "Apertura del Negocio",
      "c": "C11",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "18",
      "h": "Apertura del Negocio",
      "c": "C13",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "18",
@@ -35447,8 +35447,8 @@
      "h": "Trimestral y Anual",
      "c": "F27",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "13",
@@ -35481,7 +35481,7 @@
    "es": "Analítica de superficies, manipuladores y producto en laboratorio externo (verificación del plan de higiene)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Optional third-party food safety audit or ATP swab testing to verify your cleaning (many brands require an annual audit)",
+   "en_por_celda": "Optional third-party food safety audit or ATP swab testing to verify your cleaning (many brands require one or two a year)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 14,
@@ -35555,7 +35555,7 @@
    "es": "Renovar la formación en manipulación de alimentos y en alérgenos de todo el personal de F&B, extras incluidos",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Renew food handler cards and allergen training for all F&B staff, banquet extras included, and check a certified food protection manager is on the F&B management team (FDA Food Code 2-102.12; card rules vary by state)",
+   "en_por_celda": "Check food handler cards are current for all F&B staff, banquet extras included (renew them when your state requires), refresh allergen training, and check a certified food protection manager is on the F&B management team (FDA Food Code 2-102.12; card rules vary by state)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 19,
@@ -35687,7 +35687,7 @@
    "es": "Vaciado, limpieza a fondo y revisión del vaso, la depuradora y las duchas de piscina y spa",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Drain, deep-clean and inspect pool and spa shells, filters and showers; check every drain cover is VGB-compliant and within its service life (15 U.S.C. 8003)",
+   "en_por_celda": "Drain, deep-clean and inspect pool and spa shells, filters and showers; check every drain cover is VGB-compliant and within its service life (15 U.S.C. 8003); the hot tub itself is drained, scrubbed and refilled far more often (MAHC 2024 §5.12.1.2)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 17,
@@ -35901,7 +35901,7 @@
    "es": "Simulacro de evacuación y repaso del plan de autoprotección con todos los turnos",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Evacuation drill with every shift, as often as your local fire code requires, and review of the emergency action plan",
+   "en_por_celda": "Evacuation drill on every shift, with the emergency action plan reviewed: model fire codes require hotels to drill staff quarterly on each shift (IFC Table 405.2, Group R-1); your local fire code governs",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 13,

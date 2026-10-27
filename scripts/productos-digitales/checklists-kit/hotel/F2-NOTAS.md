@@ -30,3 +30,9 @@ tocados: los gates salieron verdes a la primera (las comillas de «N/A», «—�
 | Copia al Mac | `scp` de los 19 xlsx y de los 2 volcados; hash agregado sha256 idéntico VPS ↔ Mac |
 | Volcados | `revision/dump_en.txt` y `dump_es.txt`, 4.391 líneas cada uno |
 | Tamaño | 19 xlsx = 296 KB en disco (258.900 bytes) |
+
+## Revisión final (27-oct · sesión Claude Code)
+
+1 B · 3 M · 15 m: textos en `textos_en/G1.json` y `mapas_hotel.py` (`POR_CELDA`, `NO_HEREDAR`, 2 `REGLAS_US`); código
+común intacto. Remontado y gates VERDE 8/0, autotest 19/19, idempotencia 0. Detalle: `REVISION-FINAL.md`; erratas del ES:
+`ERRATAS-ES.md`.

@@ -110,7 +110,7 @@ A30    : 1
 B30    : Check that tables, buffet and dining room floors are clean
 C30    : Dining room
 A31    : 2
-B31    : Set up the hot station: chafing dishes, pans, serving spoons
+B31    : Set up the hot station: chafing dishes, pans and serving spoons, behind the sneeze guard (FDA 3-306.11)
 C31    : Buffet
 A32    : 3
 B32    : Set up the cold station: cold cuts, cheeses, salmon, salads
@@ -160,7 +160,7 @@ A47    : 2
 B47    : Restock fruit, pastries and breads as consumed
 C47    : Buffet
 A48    : 3
-B48    : Keep the buffet clean at all times: wipe up spills immediately
+B48    : Keep the buffet watched by trained staff and clean at all times (FDA 3-306.13): wipe up spills immediately
 C48    : Cleaning
 A49    : 4
 B49    : Restock juices, coffee and water at the beverage station
@@ -393,7 +393,7 @@ A14    : 9
 B14    : Check signs with dish name and allergens (the 9 major allergens)
 C14    : Buffet
 A15    : 10
-B15    : Place clean serving utensils in every pan
+B15    : Place clean serving utensils in every pan; sneeze guards in place and a sign asking guests to take a clean plate on every trip (FDA 3-306.11, 3-304.16)
 C15    : Buffet
 A16    : 11
 B16    : Check temperatures before opening: hot 135 °F or above, cold 41 °F or below — log reading: ____ °F (if you have the HACCP Food Safety Kit Pro, log it on its temperature sheet; otherwise in the "Notes" column)
@@ -1739,7 +1739,7 @@ A6     : 1
 B6     : Knock and announce yourself ('Housekeeping!') before entering; carry the panic button if your city or state requires it (Chicago, Seattle, New Jersey…) and keep the door open while you clean
 C6     : Housekeeping
 A7     : 2
-B7     : Strip all bed linen: sheets, pillowcases, pillows; check mattress seams and box spring for bed bugs and tell your supervisor if you see anything
+B7     : Strip all bed linen: sheets, pillowcases and pillow protectors; check mattress seams and box spring for bed bugs and tell your supervisor if you see anything
 C7     : Housekeeping
 A8     : 3
 B8     : Check for left-behind items (under the bed, closet, safe, bathroom)
@@ -1943,7 +1943,7 @@ A12    : 7
 B12    : Clean the minibar inside: defrost, disinfect, dry
 C12    : Housekeeping
 A13    : 8
-B13    : Polish floors (hardwood, marble, carpet per material)
+B13    : Polish hard floors (hardwood, marble) and shampoo or hot-water-extract carpet, per material
 C13    : Housekeeping
 B14    : Tasks done:
 C14    = =COUNTIFS(B6:B13,"?*",E6:E13,"✓")-COUNTIFS(B6:B13,"Task",E6:E13,"✓")   → caché 0.0
@@ -2229,7 +2229,7 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Measure free chlorine and pH and record them in the pool log: free chlorine at least 1.0 ppm (2.0 with CYA), pH 7.0–7.8, before opening and every 2 h (manual) or 4 h (automatic); keep records 3 years (MAHC 2024; your state or local code governs)
+B6     : Measure free chlorine and pH and record them in the pool log: free chlorine at least 1.0 ppm (2.0 with CYA), pH 7.0–7.8, before opening and every 2 h (manual) or 4 h (automatic); if a reading is out of range, keep the pool closed until it is corrected; keep records 3 years (MAHC 2024; your state or local code governs)
 C6     : Pool
 A7     : 2
 B7     : Run the automatic or manual pool cleaner and skim leaves with a net
@@ -2524,7 +2524,7 @@ B10    : ▸ Adjust to the age and equipment of your hotel.
 B11    : ▸ Add any specific equipment in your facility.
 B13    : Beyond the month:
 B14    : ▸ The "Quarterly & Annual" tab lists what is CONTRACTED and what an inspector asks for in writing: pest control, hoods (NFPA 96), food safety plan and training, calibration, Legionella (ASHRAE 188) and cooling towers, pool and spa water, sprinklers and fire alarm (NFPA 25 and 72), extinguishers (OSHA), gas, electrical (NFPA 70B), elevators and boilers (state or municipal inspector), evacuation drill, waste, insurance, I-9 and time records, PMS / POS and permits.
-B15    : ▸ The "Frequency" column already gives the legal or recommended frequency of each check; note the part number and the date of the next one in "Notes".
+B15    : ▸ The "Frequency" column already gives the legal or recommended frequency of each check; note the report number and the date of the next one in "Notes".
 B16    : ▸ Descaling coffee machines and hot water dispensers is monthly and goes on the "Monthly PM" tab; daily cleaning of the coffee group head is done by whoever uses the machine, in 01 (buffet) and 04 (lobby bar).
 B18    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B19    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-checklist-templates · info@aichef.pro
@@ -2685,7 +2685,7 @@ B7     : Kitchen hood and duct cleaning by a certified contractor at the NFPA 96
 C7     : Engineering
 F7     : Semiannual
 A8     : 3
-B8     : Optional third-party food safety audit or ATP swab testing to verify your cleaning (many brands require an annual audit)
+B8     : Optional third-party food safety audit or ATP swab testing to verify your cleaning (many brands require one or two a year)
 C8     : Engineering
 F8     : Semiannual
 A9     : 4
@@ -2693,7 +2693,7 @@ B9     : Review your food safety plan (HACCP if your health department or a vari
 C9     : Admin
 F9     : Annual
 A10    : 5
-B10    : Renew food handler cards and allergen training for all F&B staff, banquet extras included, and check a certified food protection manager is on the F&B management team (FDA Food Code 2-102.12; card rules vary by state)
+B10    : Check food handler cards are current for all F&B staff, banquet extras included (renew them when your state requires), refresh allergen training, and check a certified food protection manager is on the F&B management team (FDA Food Code 2-102.12; card rules vary by state)
 C10    : Admin
 F10    : Annual
 A11    : 6
@@ -2725,7 +2725,7 @@ B17    : Pool and spa water: lab or health-department testing where your state c
 C17    : Engineering
 F17    : Quarterly
 A18    : 5
-B18    : Drain, deep-clean and inspect pool and spa shells, filters and showers; check every drain cover is VGB-compliant and within its service life (15 U.S.C. 8003)
+B18    : Drain, deep-clean and inspect pool and spa shells, filters and showers; check every drain cover is VGB-compliant and within its service life (15 U.S.C. 8003); the hot tub itself is drained, scrubbed and refilled far more often (MAHC 2024 §5.12.1.2)
 C18    : Engineering
 F18    : Annual
 A19    : Facilities, fire and safety
@@ -2761,9 +2761,9 @@ B26    : Boilers and water heaters: inspection for the state boiler certificate 
 C26    : Engineering
 F26    : Annual
 A27    : 7
-B27    : Evacuation drill with every shift, as often as your local fire code requires, and review of the emergency action plan
+B27    : Evacuation drill on every shift, with the emergency action plan reviewed: model fire codes require hotels to drill staff quarterly on each shift (IFC Table 405.2, Group R-1); your local fire code governs
 C27    : Admin
-F27    : Annual
+F27    : Quarterly
 A28    : 8
 B28    : Used cooking oil pickup by a licensed recycler and hazardous waste (lamps, batteries, chemicals) by a licensed hauler: keep receipts and manifests
 C28    : Engineering
@@ -3127,7 +3127,7 @@ CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
 B2     : 15 · Hotel Spa & Wellness Checklists: Opening, Closing, Treatment Rooms & Locker Rooms
 B4     : How to use this template:
 B5     : ▸ 4 checklists: opening, closing, between treatments and locker rooms.
-B6     : ▸ Covers the hot tub (whirlpool spa), sauna, steam room and the indoor heated pool.
+B6     : ▸ Covers the hot tub (whirlpool spa), sauna, steam room and treatment rooms; an indoor heated pool uses the pool checklists in file 11.
 B7     : ▸ Ideal for spa managers and therapists.
 B9     : Customization:
 B10    : ▸ Adjust to your spa's facilities.
@@ -3148,7 +3148,7 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Check hot tub / pool temperature (target 95–100 °F, never above 104 °F, MAHC 2024) and adjust; post the hot tub sign (104 °F, no children under 5, no alcohol, pregnancy and heart conditions); hot tub free chlorine at least 3.0 ppm
+B6     : Check hot tub (whirlpool spa) temperature (target 95–100 °F, never above 104 °F, MAHC 2024) and adjust; post the hot tub sign (104 °F, no children under 5, no alcohol, pregnancy and heart conditions); hot tub free chlorine at least 3.0 ppm
 C6     : Spa
 A7     : 2
 B7     : Turn on the sauna and steam room (preheat 30–45 min)
@@ -3204,7 +3204,7 @@ A6     : 1
 B6     : Check that all areas are empty of guests
 C6     : Spa
 A7     : 2
-B7     : Turn off saunas, steam room and hot tub
+B7     : Turn off saunas and steam room; on the hot tub switch off only the jets and air blower: filtration, circulation and disinfection keep running 24 hours a day (MAHC 2024 §5.12.1.1)
 C7     : Spa
 A8     : 3
 B8     : Send all used towels to laundry with a linen count sheet
@@ -3345,7 +3345,7 @@ B31    : ▸ You can insert and delete rows with protection on. To change the st
 B33    : Works with
 B35    : ▸ 18-hotel-daily-opening-closing-rounds.xlsx — checklist for the F&B outlets and public areas: it is the BACKBONE of the day.
 B36    : ▸ 19-cash-drawer-opening-closing.xlsx — the CASH DRAWER: starting bank, count by denomination, POS Z report and over/short.
-B37    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B37    : ▸ Order of use: rounds → cash drawer. Each file covers one level: the rounds file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
 B38    : ▸ You are in 18-hotel-daily-opening-closing-rounds.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the outlets; the MONEY is in 19-cash-drawer-opening-closing.xlsx.
 B40    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
 B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
@@ -3354,7 +3354,7 @@ B45    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/hotel-che
 
 === Hoja «Opening Rounds» · protegida=True · área='Opening Rounds'!$A$1:$H$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
     pie: AI Chef Pro · aichef.pro · Page &P of &N
-A1     : Opening Rounds — Full Hotel
+A1     : Opening Rounds — F&B Outlets & Public Areas
 A2     : Date: ____/____/________
 E2     : Manager on duty: _________________________
 A4     : #
@@ -3397,7 +3397,7 @@ D10    : Manager on duty
 E10    : 5:30 AM
 A11    : 7
 B11    : Turn on the restaurant reservation system (OpenTable, Resy…) and order tablet
-C11    : Front desk
+C11    : Host stand
 D11    : Manager on duty
 E11    : 5:45 AM
 A12    : 8
@@ -3407,7 +3407,7 @@ D12    : Manager on duty
 E12    : 5:45 AM
 A13    : 9
 B13    : Review today's reservations and special events (today's BEOs)
-C13    : Front desk
+C13    : Host stand
 D13    : Manager on duty
 E13    : 5:45 AM
 A14    : 10
@@ -3466,7 +3466,7 @@ CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
 
 === Hoja «Closing Rounds» · protegida=True · área='Closing Rounds'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
     pie: AI Chef Pro · aichef.pro · Page &P of &N
-A1     : Closing Rounds — Full Hotel
+A1     : Closing Rounds — F&B Outlets & Public Areas
 A2     : Date: ____/____/________
 E2     : Manager on duty: _________________________
 A4     : #
@@ -3594,7 +3594,7 @@ B42    : ▸ You can insert and delete rows with protection on. To change the st
 B44    : Works with
 B46    : ▸ 18-hotel-daily-opening-closing-rounds.xlsx — checklist for the F&B outlets and public areas: it is the BACKBONE of the day.
 B47    : ▸ 19-cash-drawer-opening-closing.xlsx — the CASH DRAWER: starting bank, count by denomination, POS Z report and over/short.
-B48    : ▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B48    : ▸ Order of use: rounds → cash drawer. Each file covers one level: the rounds file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
 B49    : ▸ You are in 19-cash-drawer-opening-closing.xlsx: this is the CASH DRAWER — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 18-hotel-daily-opening-closing-rounds.xlsx.
 B51    : — Hotel Checklists Kit Pro · AI Chef Pro · aichef.pro
 B53    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
@@ -4297,7 +4297,7 @@ E9     : 2 months
 A10    : 6
 B10    : Apr–Jun — Proms, graduations & showers
 C10    : Banquet peak
-D10    : Closed adult and kids menus, room and photo booth; no alcohol for minors (21+); book 3–6 months ahead
+D10    : Set adult and kids' menus, private room and photo booth; no alcohol for minors (21+); book 3–6 months ahead
 E10    : 3 months
 A11    : 7
 B11    : 2nd Sunday of May — Mother's Day
@@ -4337,7 +4337,7 @@ E17    : 4 weeks
 A18    : 14
 B18    : Nov — Thanksgiving (4th Thursday)
 C18    : High occupancy
-D18    : Thanksgiving buffet or prix fixe menu (turkey), seatings closed early and long-weekend packages
+D18    : Thanksgiving buffet or prix fixe menu (turkey), reservations by seating, booked well ahead, and long-weekend packages
 E18    : 6 weeks
 A19    : 15
 B19    : Nov — Black Friday & Cyber Monday

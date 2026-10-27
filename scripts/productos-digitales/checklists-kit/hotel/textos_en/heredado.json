@@ -274,12 +274,6 @@
   "origen": "c0028",
   "via": "exacta"
  },
- "c0965": {
-  "en": "▸ Order of use: shop → register. Each file covers one level: the shop file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.",
-  "origen": "c0473",
-  "via": "exacta",
-  "fuente": "icecream"
- },
  "c0968": {
   "en": "Contact: info@aichef.pro",
   "origen": "c0036",
