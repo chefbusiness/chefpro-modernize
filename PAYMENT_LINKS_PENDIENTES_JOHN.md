@@ -1,6 +1,48 @@
 # Payment Links pendientes — tareas de John (Stripe)
 
-> Sesión Claude Code (Mac). **No hay ninguno pendiente.**
+> Sesión Claude Code (Mac). **TRES pendientes (27-oct-2026): tienda EN — Hotel, Ice Cream Shop y Wedding Venue.**
+
+## ⏳ PENDIENTES (27-oct-2026): tres productos EN listos a falta del link — John: «escoge los tres que siguen… completos me dices y creamos los enlaces de pago en Stripe»
+
+Los tres van en USD, con pago único, impuesto automático con precio *exclusive* (como el resto de la tienda EN), factura
+activada y redirección a su `/access`. Orden de fusión: **#170 → #171 → #172** (van apilados). La env de Netlify la pone Claude
+(scope builds, all) y regenera `payment-links.ts` con `sync-payment-links.py`.
+
+### 1. ⏳ Hotel Checklists Kit Pro (EN) — PR #170
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Hotel Checklists Kit Pro - AI Chef Pro |
+| Precio | **29,00 USD**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/hotel-checklist-templates/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | 19 ready-to-use Excel workbooks with 636 pre-written tasks for a full-service hotel: breakfast, buffet, restaurant, bar and banquet F&B, front desk and night audit, guest services, housekeeping, public areas, pool, patio, preventive maintenance, back office, spa and the cash drawer, plus an annual task calendar and a daily F&B briefing template. Adapted to US standards (FDA Food Code 2022 in °F, MAHC pool and spa guidance, OSHA) and printable on US Letter, with a US, UK, Canada and Australia hospitality equivalents guide. Instant download, lifetime access and free updates. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_HOTEL_CHECKLISTS_KIT` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg` |
+
+### 2. ⏳ Ice Cream Shop Business Plan Kit (EN) — PR #171
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Ice Cream Shop Business Plan Kit - AI Chef Pro |
+| Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/ice-cream-shop-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | Complete business plan kit to open a neighborhood ice cream shop that makes its ice cream on site: a 10-section Word business plan, 3-year Excel financial projections with monthly cash flow, seasonality and SBA loan sizing, and an 80-task startup checklist, all built on a worked US case you can edit with your own numbers. Includes a US, UK, Canada and Australia hospitality equivalents guide. Instant download, lifetime access and free updates. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_ICE_CREAM_SHOP_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg` |
+
+### 3. ⏳ Wedding Venue Business Plan Kit (EN) — PR #172
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Wedding Venue Business Plan Kit - AI Chef Pro |
+| Precio | **49,00 USD**, pago único, impuesto automático con precio *exclusive* (5 ficheros, como el ES a 45 €) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/wedding-venue-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa) | Complete business plan kit to open a barn or estate wedding and event venue with an exclusive caterer: a 10-section Word business plan, 3-year Excel financial projections with monthly cash flow and SBA loan sizing, an 84-task startup checklist, a wedding and event pricing calculator and an editable venue rental agreement template (a template, not legal advice: have a local attorney review it), all built on a worked US case you can adapt to your own venue. Includes a US, UK, Canada and Australia hospitality equivalents guide. Instant download, lifetime access and free updates. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_WEDDING_VENUE_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-finca-hero.jpg` |
 
 ## ✅ HECHOS (25-oct-2026, noche): los DOS de la pizzería, ES y EN — John: «dejar la versión en los dos idiomas en producción»
 

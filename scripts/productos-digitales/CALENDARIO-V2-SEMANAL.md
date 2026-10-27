@@ -773,3 +773,17 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - **Correo ES: 8-dic 08:00Z**, borrador `92c8a19f` → routine `trig_011hWcNXXF55pgXjW7iGCMjF` (8-nov 15:07Z). **Siguiente hueco ES: 13-dic 08:00Z.**
 - **Correo EN: 18-feb-2027 14:00Z**, borrador `c6290aee` → routine `trig_01Htsk9cNWagXEsLcdM4B6hZ` (19-ene 15:07Z). **Siguiente hueco EN: 23-feb 14:00Z.**
 
+
+### ▶️ 2026-10-27 (Claude Code en el Mac + VPS) — **Tienda EN: Hotel Checklists Kit Pro ($29) + Ice Cream Shop Business Plan Kit ($39) + Wedding Venue Business Plan Kit ($49)** — ⏳ LISTOS a falta del Payment Link
+
+- John: «escoge los tres que siguen y dale luz verde continua… completos me dices y creamos los enlaces de pago en Stripe». Elegidos
+  con DataForSEO US del 27-oct: wedding venue business plan 1.000/mes (260 → 1.000 en 6 meses) + event venue 720 · ice cream shop
+  business plan 320 + how to open 170 · hotel housekeeping/room cleaning checklist 260 (una serie) + maintenance 70 + otros ≈ 450.
+  Descartados: guía Dark Kitchen (ES v1), «housekeeping checklist template» 1.900 (doméstica), el resto < 50/mes.
+- PR apilados **#170 (Hotel) → #171 (Ice Cream) → #172 (Wedding)**, fusionar en ese orden. Fichas de Stripe: `PAYMENT_LINKS_PENDIENTES_JOHN.md`.
+  Detalle: `SESSION_HANDOFF_2026-10-27-tienda-en-hotel-icecream-wedding.md`.
+- Parche de seguridad del **ES LIVE `kit-tareas-hotel`** en el #170 (sin cambio de versión, sin correo): cierre del spa sin apagar la
+  filtración del jacuzzi, 35-38 °C solo del jacuzzi, moqueta.
+- **Correos EN (14:00Z, segmento EN):** **Wedding 23-feb-2027** · **Ice Cream 28-feb-2027** · **Hotel 5-mar-2027**. Plantillas en
+  `emails/broadcast-{wedding-venue-business-plan,ice-cream-shop-business-plan,hotel-checklists}-lanzamiento-en.*`, sin programar:
+  borrador + prueba + routine (Resend no programa a > 30 días) cuando estén LIVE. **Siguiente hueco EN: 10-mar-2027 14:00Z.**
