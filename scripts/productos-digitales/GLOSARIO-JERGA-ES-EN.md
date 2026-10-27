@@ -110,6 +110,12 @@ requisitos de la sala → **venue requirements** · temporada alta de bodas → 
 | licencia de obrador de helados | ice cream workshop license | **frozen dessert (manufacturer) license** / **dairy (milk handlers) license**, estatal; al público, el **health permit** local | firme: Vermont, Massachusetts, Arizona, Georgia (SPEC §3) |
 | seguro de pérdida de género por avería del frío | merchandise loss insurance | **equipment breakdown** coverage con **food spoilage** | por verificar |
 | Día del Helado | Ice Cream Day | **National Ice Cream Day** (3.er domingo de julio; 27.100/mes, pico de 246.000) · **National Ice Cream Month** (julio) | firme: Proclamation 5219 (1984) |
+| mezcla base (comprada o propia) | base preparation · mixture | **ice cream base** (2.400/mes) / **ice cream mix** (3.600) · «a 14 % base» · grasa láctea = **butterfat** | firme (DataForSEO 27-oct; Upstate Farms «14 % Super Premium Ice Cream Mix», resumen) — Ice Cream Shop Business Plan Kit, `business-plans-en-10/` research §9 |
+| comprar la base pasteurizada vs pasteurizar en el local | buy pasteurized mixture | **buy a pasteurized base from a licensed dairy** · **make your own mix** (= licencia de dairy / frozen dessert manufacturer en muchos estados); tras la pasteurización de la central, solo **flavorings and mix-ins** | firme: Vermont Agency of Agriculture y GAC 40-2-8-.01(3) Georgia [leídas 27-oct] |
+| mantecado (≥ 4 % de yema) | mantecado · egg ice cream | **frozen custard** (33.100/mes; 1.4 % egg yolk solids, 21 CFR 135.110) | firme (CFR leído 27-oct) |
+| heladería que fabrica (nombre comercial) | ice cream factory | **creamery** (40.500/mes; «X Creamery») · **scoop shop** (la que solo sirve) | firme (DataForSEO 27-oct) |
+| dependiente fijo discontinuo de temporada | discontinuous permanent clerk | **seasonal part-time** (W-2), recontratado cada primavera; menores de 14-15 años solo en horario FLSA (29 CFR 570.35) | firme (CFR; ✅ ICK) |
+| ≥ 430 g por litro · −18 °C | 430 g/l · −18 °C | **≥ 4.5 lb per gallon** (21 CFR 135.110) · **0 °F or colder** (almacén); vitrina 6-10 °F | firme (CFR; Food Code) |
 
 ## Chocolatería (Chocolate Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/chocolate/SPEC.md` §R)
 
