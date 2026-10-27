@@ -71,6 +71,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Burger Joint Checklists Kit Pro': '/en/digital-products/burger-joint-checklist-templates',
   'Ghost Kitchen Checklists Kit Pro': '/en/digital-products/ghost-kitchen-checklist-templates',
   'Ice Cream Shop Checklists Kit Pro': '/en/digital-products/ice-cream-shop-checklist-templates',
+  'Hotel Checklists Kit Pro': '/en/digital-products/hotel-checklist-templates',
   'Chocolate Shop Checklists Kit Pro': '/en/digital-products/chocolate-shop-checklist-templates',
   'Pastry Shop Checklists Kit Pro': '/en/digital-products/pastry-shop-checklist-templates',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',

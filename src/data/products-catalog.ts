@@ -244,11 +244,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-hotel',
     url: '/kit-tareas-hotel',
     price: '€18,50',
-    name: { es: 'Tareas: Hotel Completo', en: 'Tasks: Full Hotel' },
+    name: { es: 'Tareas: Hotel Completo', en: 'Hotel Checklists Kit Pro' },
     description: {
       es: 'F&B, housekeeping, multi-punto de venta.',
-      en: 'F&B, housekeeping, and multi-outlet operations.',
+      en: 'Hotel checklists for F&B, front desk and night audit, housekeeping, the pool, maintenance, back office and the spa, plus the cash drawer: 636 tasks already written in 19 Excel files.',
     },
+    // Tienda EN (27-oct-2026): producto propio, `hotel-checklist-templates`, $29 USD.
+    urlByLang: { en: '/en/digital-products/hotel-checklist-templates' },
+    priceByLang: { en: '$29' },
   },
   'kit-tareas-heladeria': {
     id: 'kit-tareas-heladeria',

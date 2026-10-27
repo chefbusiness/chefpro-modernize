@@ -309,6 +309,16 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (27-oct-2026): Hotel Checklists Kit Pro, décimo hermano vertical del Restaurant Checklists Kit Pro (SPEC
+    // checklists-kit/hotel D1-D4). Gemelo del Kit de Tareas Hotel Completo (/kit-tareas-hotel). vivo: true en la rama,
+    // que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-hotel',
+    productos: {
+      es: { slug: 'kit-tareas-hotel', vivo: true },
+      en: { slug: 'hotel-checklist-templates', vivo: true },
+    },
+  },
+  {
     // Tienda EN (24-oct-2026): Chocolate Shop Checklists Kit Pro, octavo hermano vertical del Restaurant Checklists Kit
     // Pro (SPEC checklists-kit/chocolate D1-D4). Gemelo del Kit de Tareas Chocolatería. vivo: true en la rama, que se
     // fusiona cuando existe el Payment Link (mismo criterio que los siete hermanos anteriores).

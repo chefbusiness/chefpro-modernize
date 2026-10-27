@@ -1093,6 +1093,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'hotel-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-27',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-27',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 17 checklist templates plus 2 bonuses (19 Excel files, 74 sheets) with 636 hotel tasks already written, adapted to the US with notes for the UK.',
+          'Every department of a hotel in one kit: breakfast, lunch and dinner buffets, the restaurant, bars and grab-and-go, in-room dining and minibar, banquets and events (BEO), the front desk (AM, PM and night audit shifts, check-in and check-out), concierge and guest experience, housekeeping, public areas, the pool, the patio, preventive maintenance, back office and the spa.',
+          'A ✓, — or N/A drop-down on every task, and the counter on each checklist leaves out the tasks marked N/A. Assigned to, due-by and notes are green cells you can edit; every sheet is set up to print on US Letter paper.',
+          'Housekeeping for a US hotel: checkout and stayover room cleaning, turndown service, deep cleaning and linen control, with do-not-disturb welfare checks, bed bug inspection when stripping the bed, blood and needle handling under OSHA 1910.1030 and an EPA-registered disinfectant with its contact time.',
+          'Food safety under the FDA Food Code in °F (41 °F cold, 135 °F hot), buffet sneeze guards, a clean plate on every trip and buffet supervision, the 9 major allergens (the UK\'s 14 noted) and no glass in the pool area.',
+          'Pool and spa logs built on the CDC Model Aquatic Health Code: free chlorine, pH, readings before opening and during the day, records kept 3 years, and your state code first. The spa closing keeps the hot tub filtration and disinfection running 24 hours a day.',
+          'A Quarterly & Annual maintenance sheet for a US hotel: pest control, kitchen hood cleaning under NFPA 96, thermometer calibration, water management for Legionella (ASHRAE 188), hot water temperatures, pool and spa water, sprinklers and fire alarm, extinguishers, gas, electrical, elevators and boilers, evacuation drills on every shift and permits.',
+          'Daily opening and closing rounds for the F&B outlets and public areas in a safe order, a cash drawer count in US bills and coins with the starting bank and over/short against the POS Z report, time records under the FLSA in the back office, and a 24-date F&B calendar with US dates and a UK note, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'ghost-kitchen-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',

@@ -481,6 +481,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-27): gemelo de kit-tareas-hotel (ver verify-purchase.ts).
+  'hotel-checklist-templates': {
+    accessPath: '/en/digital-products/hotel-checklist-templates/access',
+    emailSubject: 'Your access to Hotel Checklists Kit Pro',
+    emailTitle: 'Access your Hotel Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 17 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-24): gemelo de kit-tareas-chocolateria (ver verify-purchase.ts).
   'chocolate-shop-checklist-templates': {
     accessPath: '/en/digital-products/chocolate-shop-checklist-templates/access',

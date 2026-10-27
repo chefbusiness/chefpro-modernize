@@ -1061,6 +1061,31 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/ice-cream-shop-checklist-templates/BONUS-02-ice-cream-shop-seasonal-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-27): Hotel Checklists Kit Pro. MISMAS claves que kit-tareas-hotel (las de TEMPLATES de
+  // src/pages/HotelChecklistsKitDashboard.tsx) → los 19 xlsx EN de /dl/hotel-checklist-templates/ (SPEC checklists-kit/hotel §2), y el
+  // bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'hotel-checklist-templates': {
+    'fb-buffet-desayuno': '/dl/hotel-checklist-templates/01-hotel-breakfast-buffet-checklists.xlsx',
+    'fb-buffet-comida-cena': '/dl/hotel-checklist-templates/02-hotel-lunch-dinner-buffet-checklists.xlsx',
+    'fb-restaurante-carte': '/dl/hotel-checklist-templates/03-hotel-restaurant-opening-closing-checklists.xlsx',
+    'fb-outlets': '/dl/hotel-checklist-templates/04-hotel-bar-grab-and-go-checklists.xlsx',
+    'fb-room-service-minibar': '/dl/hotel-checklist-templates/05-in-room-dining-minibar-checklists.xlsx',
+    'fb-banquetes-eventos': '/dl/hotel-checklist-templates/06-hotel-banquet-event-checklist.xlsx',
+    'recepcion-turnos': '/dl/hotel-checklist-templates/07-hotel-front-desk-checklists-night-audit.xlsx',
+    'guest-services': '/dl/hotel-checklist-templates/08-concierge-guest-experience-checklists.xlsx',
+    'housekeeping': '/dl/hotel-checklist-templates/09-hotel-housekeeping-checklists.xlsx',
+    'areas-publicas': '/dl/hotel-checklist-templates/10-hotel-public-area-cleaning-checklists.xlsx',
+    'piscina': '/dl/hotel-checklist-templates/11-hotel-pool-checklists.xlsx',
+    'terraza': '/dl/hotel-checklist-templates/12-hotel-patio-terrace-checklists.xlsx',
+    'mantenimiento': '/dl/hotel-checklist-templates/13-hotel-preventive-maintenance-checklists.xlsx',
+    'administracion': '/dl/hotel-checklist-templates/14-hotel-back-office-checklists.xlsx',
+    'spa-wellness': '/dl/hotel-checklist-templates/15-hotel-spa-checklists.xlsx',
+    'apertura-negocio': '/dl/hotel-checklist-templates/18-hotel-daily-opening-closing-rounds.xlsx',
+    'apertura-caja': '/dl/hotel-checklist-templates/19-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/hotel-checklist-templates/BONUS-01-hotel-daily-fb-briefing-template.xlsx',
+    'bonus-calendario': '/dl/hotel-checklist-templates/BONUS-02-hotel-fb-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-24): Chocolate Shop Checklists Kit Pro. MISMAS claves que kit-tareas-chocolateria (las de TEMPLATES de
   // src/pages/ChocolateShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx EN de /dl/chocolate-shop-checklist-templates/
   // (SPEC checklists-kit/chocolate §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
