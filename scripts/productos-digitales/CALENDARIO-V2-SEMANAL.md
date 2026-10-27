@@ -774,7 +774,7 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - **Correo EN: 18-feb-2027 14:00Z**, borrador `c6290aee` → routine `trig_01Htsk9cNWagXEsLcdM4B6hZ` (19-ene 15:07Z). **Siguiente hueco EN: 23-feb 14:00Z.**
 
 
-### ▶️ 2026-10-27 (Claude Code en el Mac + VPS) — **Tienda EN: Hotel Checklists Kit Pro ($29) + Ice Cream Shop Business Plan Kit ($39) + Wedding Venue Business Plan Kit ($49)** — ⏳ LISTOS a falta del Payment Link
+### ▶️ 2026-10-27 (Claude Code en el Mac + VPS) — **Tienda EN: Hotel Checklists Kit Pro ($29) + Ice Cream Shop Business Plan Kit ($39) + Wedding Venue Business Plan Kit ($49)** — ✅ LOS TRES LIVE (27-oct, merge `ae531f6b`)
 
 - John: «escoge los tres que siguen y dale luz verde continua… completos me dices y creamos los enlaces de pago en Stripe». Elegidos
   con DataForSEO US del 27-oct: wedding venue business plan 1.000/mes (260 → 1.000 en 6 meses) + event venue 720 · ice cream shop
@@ -786,4 +786,9 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   filtración del jacuzzi, 35-38 °C solo del jacuzzi, moqueta.
 - **Correos EN (14:00Z, segmento EN):** **Wedding 23-feb-2027** · **Ice Cream 28-feb-2027** · **Hotel 5-mar-2027**. Plantillas en
   `emails/broadcast-{wedding-venue-business-plan,ice-cream-shop-business-plan,hotel-checklists}-lanzamiento-en.*`, sin programar:
-  borrador + prueba + routine (Resend no programa a > 30 días) cuando estén LIVE. **Siguiente hueco EN: 10-mar-2027 14:00Z.**
+  borradores `ca9d54a1` (Wedding) · `4692539a` (Ice Cream) · `f191af0f` (Hotel), prueba a John enviada → UNA routine
+  `trig_015MWHYv3BP4FYUCeQPQee9K` (3-feb-2027 15:07Z) los programa a los tres. **Siguiente hueco EN: 10-mar-2027 14:00Z.**
+- **LIVE 27-oct** (merge `ae531f6b` de la pila por el #172; #170 y #171 quedan «merged»). Links: Hotel `plink_1UV6mM4CcdRGidmEPIg3fmmj` ($29) ·
+  Ice Cream `plink_1UV6rK4CcdRGidmE9nLDNQrU` ($39) · Wedding `plink_1UV6uO4CcdRGidmEotbwEDkd` ($49), comprobados con la CLI. Gate completo
+  LIVE 85 productos · 1102 entregables · 0 fallos; tienda, robots, hub verdes; Miselup 108/108; cripto 200 ×3 (pedidos QA `qa-hotel-en`,
+  `qa-icecream-en`, `qa-wedding-en` y `qa-ctrl`, por purgar); parche ES del spa comprobado en producción; sitemap reenviado. Tienda EN: 31.
