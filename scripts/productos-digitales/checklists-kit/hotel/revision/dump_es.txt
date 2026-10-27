@@ -1943,7 +1943,7 @@ A12    : 7
 B12    : Limpiar minibar por dentro: descongelar, desinfectar, secar
 C12    : Housekeeping
 A13    : 8
-B13    : Pulir suelos (parqué, mármol, moqueta según material)
+B13    : Pulir suelos duros (parqué, mármol) y lavar la moqueta con inyección-extracción, según material
 C13    : Housekeeping
 B14    : Tareas completadas:
 C14    = =COUNTIFS(B6:B13,"?*",E6:E13,"✓")-COUNTIFS(B6:B13,"Tarea",E6:E13,"✓")   → caché 0.0
@@ -3148,7 +3148,7 @@ E5     : ✓
 F5     : Hora
 G5     : Notas
 A6     : 1
-B6     : Verificar temperatura de piscina/jacuzzi (35-38 °C) y ajustar
+B6     : Verificar temperatura del jacuzzi (35-38 °C) y ajustar
 C6     : Spa
 A7     : 2
 B7     : Encender sauna y baño de vapor (precalentar 30-45 min)
@@ -3204,7 +3204,7 @@ A6     : 1
 B6     : Verificar que todas las zonas están vacías de clientes
 C6     : Spa
 A7     : 2
-B7     : Apagar saunas, baño de vapor y jacuzzi
+B7     : Apagar saunas y baño de vapor; en el jacuzzi apagar solo chorros y soplante: la filtración, la recirculación y la desinfección siguen en marcha toda la noche
 C7     : Spa
 A8     : 3
 B8     : Enviar todas las toallas usadas a lavandería con albarán

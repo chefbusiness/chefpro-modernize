@@ -114,8 +114,15 @@ chocolatería; 1.103 palabras) y **831 pendientes** (818 nuevas, 8 con otro ADAP
 - Frío incoherente: «< 5 °C» (01 «Apertura Desayuno» B26, 02 «Buffet Almuerzo» B16, 04 «Snack Bar» B7) frente a «0-4 °C»
   en el resto del kit. La EN: 41 °F en todos.
 - 15 «Apertura Spa» B6: «piscina/jacuzzi (35-38 °C)»: 35-38 °C es del jacuzzi, no de una piscina. La EN: hot tub.
+  **RESUELTA en el ES LIVE (27-oct-2026):** B6 → «Verificar temperatura del jacuzzi (35-38 °C) y ajustar».
 - 18 «Apertura del Negocio» es la plantilla de restaurante (alarma, persianas, carta a las 05:30) con 3 tareas de hotel:
   en un hotel 24 h solo vale para los outlets; la EN lo dice (D10).
+
+- **RESUELTAS en el ES LIVE (27-oct-2026, parche en el XML de las celdas, sin cambio de versión ni correo; mismo texto en
+  `scripts/generate-tareas-hotel.py`; las 3 de `ERRATAS-ES.md`):** 15 «Cierre Spa» B7 (seguridad: «Apagar saunas y baño
+  de vapor; en el jacuzzi apagar solo chorros y soplante: la filtración, la recirculación y la desinfección siguen en
+  marcha toda la noche»), 15 «Apertura Spa» B6 (jacuzzi 35-38 °C) y 09 «Deep Cleaning» B13 (suelos duros pulidos,
+  moqueta lavada por inyección-extracción).
 
 ## 6. Landing EN (F3) — réplica de `astro-site/src/data/productos/tareas/kit-tareas-hotel.ts`
 

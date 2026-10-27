@@ -869,7 +869,7 @@ def gen_09():
             ("Limpiar cristales interiores y exteriores de ventanas", "Housekeeping"),
             ("Descalcificar grifería, ducha y desagües del baño", "Housekeeping"),
             ("Limpiar minibar por dentro: descongelar, desinfectar, secar", "Housekeeping"),
-            ("Pulir suelos (parqué, mármol, moqueta según material)", "Housekeeping"),
+            ("Pulir suelos duros (parqué, mármol) y lavar la moqueta con inyección-extracción, según material", "Housekeeping"),
         ]),
     ])
     create_task_sheet(wb, "Control Lencería", HOUSEKEEPING_COLOR,
@@ -1248,7 +1248,7 @@ def gen_15():
     create_task_sheet(wb, "Apertura Spa", SPA_COLOR,
                       "Apertura del Spa — Checklist Diario", [
         ("Puesta en marcha de instalaciones", [
-            ("Verificar temperatura de piscina/jacuzzi (35-38°C) y ajustar", "Spa"),
+            ("Verificar temperatura del jacuzzi (35-38°C) y ajustar", "Spa"),
             ("Encender sauna y baño de vapor (precalentar 30-45 min)", "Spa"),
             ("Preparar cabinas: sábanas limpias, aceites, velas, música ambiental", "Spa"),
             ("Verificar stock de productos de tratamiento (cremas, aceites, exfoliantes)", "Spa"),
@@ -1264,7 +1264,7 @@ def gen_15():
                       "Cierre del Spa — Checklist Diario", [
         ("Verificación y apagado", [
             ("Verificar que todas las zonas están vacías de clientes", "Spa"),
-            ("Apagar saunas, baño de vapor y jacuzzi", "Spa"),
+            ("Apagar saunas y baño de vapor; en el jacuzzi apagar solo chorros y soplante: la filtración, la recirculación y la desinfección siguen en marcha toda la noche", "Spa"),
             ("Enviar todas las toallas usadas a lavandería con albarán", "Spa"),
             ("Limpiar y desinfectar todas las cabinas de tratamiento", "Spa"),
             ("Limpieza a fondo de vestuarios: suelo, duchas, taquillas", "Vestuarios"),
