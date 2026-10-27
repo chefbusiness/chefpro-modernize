@@ -10,7 +10,7 @@
 
 | # | Punto | Fichero | Estado |
 |---|---|---|---|
-| 1 | Ficha EN (D204): $39 sin `priceOld`/`discountBadge`/`value`/`aggregateRating`/`review`/testimonios; SEO, H1, meta y keywords de research §9; 20 FAQ (las 8 de research §3 + teen scoopers, «ice cream» y «homemade», Checklists Kit Pro, Restaurant/Bakery, lender, Excel, UK/CA/AU, moneda, suscripción, clientes, garantía) | `astro-site/src/data/productos-en/planes/ice-cream-shop-business-plan.ts` | ✅ |
+| 1 | Ficha EN (D204): $39 sin `priceOld`/`discountBadge`/`value`/`aggregateRating`/`review`/testimonios; SEO, H1, meta y keywords de research §9; 21 FAQ (las 8 de research §3 + teen scoopers, «ice cream» y «homemade», Checklists Kit Pro, Restaurant/Bakery, lender, Excel, UK/CA/AU, moneda, suscripción, clientes, garantía) | `astro-site/src/data/productos-en/planes/ice-cream-shop-business-plan.ts` | ✅ |
 | 2 | Landing, `omitGlobalApp`, `miselup={false}`, env `VITE_STRIPE_PAYMENT_LINK_ICE_CREAM_SHOP_BUSINESS_PLAN` → `#comprar` sin link | `pages/en/digital-products/ice-cream-shop-business-plan.astro` | ✅ |
 | 3 | Gate `/access` y `/library` + island | `…/ice-cream-shop-business-plan/{access,library}.astro`, `islands/library/IceCreamShopBusinessPlanLibraryIsland.tsx` | ✅ |
 | 4 | Dashboard: claves `plan-negocio`, `plan-financiero`, `checklist-apertura`, `equivalents-guide` (4 tarjetas, sin calculadora) | `src/pages/IceCreamShopBusinessPlanDashboard.tsx` | ✅ |
