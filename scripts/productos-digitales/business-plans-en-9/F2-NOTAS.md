@@ -185,3 +185,11 @@ claims; **abrir 16 CFR 429.0** y lo que se pueda de 40 CFR 141.2, NY A20-51S y M
 España o pizza; que el Word no prometa lo que el Excel no hace) → tras los arreglos, en el VPS: `aplicar_en --idempotencia`,
 `ensamblar_docx --plan wed`, `calculadora --salida dl/…`, `contrato --salida dl/… --pdf`, `gates_en`, `barrido`,
 `/tmp/wed-regresion.sh` y 2.ª pasada → F3.
+
+## 9. Revisión D174 hecha (27-oct, sesión Claude Code): `REVISION-FINAL.md` · `ERRATAS-ES.md`
+
+2 B · 5 M · 21 m; B, M y 14 m arreglados por texto (`GM.json` c0529, `GWED-plan`, `GWED-check`, `docx_en_wed_a/b`,
+`contrato_en_1/2`, `POR_CELDA` A9/A39/A40/O20 y `VALORES_EN` `Staffing!B20/B21` = 9.7 / 2.35). Remontado en el VPS: D15
+VERDE (cobertura 115.8 %), G1-G9 VERDE (G7 125 valores), barrido 0, censo 0, regresión 30/30, 2.ª pasada IGUAL en los 5,
+Word 25 páginas. Ojo si se vuelve a correr `preparar_tandas`: reescribe `GM.json` desde la Pizza EN y devolvería el O20
+con los meses de la pizza (re-aplicar c0529 o re-extraer para que mande `POR_CELDA`). Siguiente: F3.

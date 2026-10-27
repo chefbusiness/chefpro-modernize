@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:58:03Z",
+  "generado": "2026-10-27T08:17:57Z",
   "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
   "fuentes": {
    "wed": "wedding-venue-financial-projections.xlsx"
@@ -429,9 +429,9 @@
    "celda": "C11"
   },
   "cobertura_horas": {
-   "valor": 1.1910426871938418,
+   "valor": 1.1579215919721064,
    "fmt": "pct0",
-   "texto": "119%",
+   "texto": "116%",
    "hoja_es": "Personal",
    "celda": "B26"
   },
@@ -814,16 +814,16 @@
    "celda": "D56"
   },
   "horas_evento": {
-   "valor": 9.2,
+   "valor": 9.7,
    "fmt": "dec1",
-   "texto": "9.2",
+   "texto": "9.7",
    "hoja_es": "Personal",
    "celda": "B20"
   },
   "personas_evento": {
-   "valor": 2.3,
+   "valor": 2.35,
    "fmt": "dec1",
-   "texto": "2.3",
+   "texto": "2.4",
    "hoja_es": "Personal",
    "celda": "B21"
   },

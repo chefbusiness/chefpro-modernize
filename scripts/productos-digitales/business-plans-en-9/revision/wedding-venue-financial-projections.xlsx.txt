@@ -20,7 +20,7 @@ C7: More activity in year 2: weddings that come by referral, corporate clients w
 A8: Volume growth in year 3
 B8: 0.05
 C8: On top of year 2 (about 113 equivalent events). Conservative: the ceiling is set by peak-season Saturdays and the maximum occupancy of the venue
-A9: Menu price incl. sales tax (calculated)
+A9: Revenue per guest incl. sales tax (calculated)
 B9 = 72.7872
 C9 = Revenue per guest excl. sales tax plus the weighted sales tax of your two sales lines (7%), rounded. It is what the venue bills per guest (venue rental & services plus the caterer commission), not what the couple pays for the whole wedding: the caterer bills the menu and the bar, with its own sales tax, and they are not in this workbook. In the UK, prices to private clients include VAT.
 A10: SALES MIX AND DIRECT EVENT COSTS
@@ -100,12 +100,12 @@ C37: Example: 21% federal rate for a C corporation plus state tax, rounded to 25
 A38: Effective income tax rate (from year 3)
 B38: 0.25
 C38: From the third year with positive taxable income. Same example rate (21% federal C corporation + state). Confirm the rate that applies to you with your accountant and change it here
-A39: Sales tax rate on sales
+A39: Sales tax rate on food sales (not used: the venue sells no food)
 B39: 0.08
 C39: Not used in this plan: the venue sells no food or beverage. It is the rate on the caterer's menu. Varies by state and city: look up yours
-A40: Sales tax rate on alcohol to go
+A40: General sales tax rate (reference only: the rates used are on the P&L)
 B40: 0.08
-C40: General example rate, 8%. In this plan it applies to everything the venue bills as rental and services; the caterer commission is taxed at 0% in the model, and the venue's purchases carry no recoverable credit. The venue does not sell food or beverage: the caterer bills the menu and the bar. Some states do not tax venue fees at all: confirm yours with your state department of revenue
+C40: REFERENCE ONLY: no formula reads this cell. The sales tax the venue collects is typed in the "Sales tax rate on the line (%)" column of the "3-Year P&L": 8% on venue rental & services (G10) and 0% on the caterer commission (G11) in the example. The venue does not sell food or beverage: the caterer bills the menu and the bar. Some states do not tax venue fees at all: confirm yours with your state department of revenue
 A41: Recoverable input tax on purchases and capex
 B41: 0
 C41: In the US, the sales tax you pay on purchases is a cost, not a credit: leave this at 0%. UK: 20% if you are VAT-registered
@@ -211,7 +211,7 @@ E9: Yes
 A10: Fire sprinkler system (city water; a tank and fire pump cost more)
 B10: 70000
 C10 = 0.1045
-D10: Sprinklers need city water; a tank and fire pump, a new septic system or a strict county can double this line. Whether you need them depends on the fire code your county has adopted: ask the building official and the fire marshal in writing, and get local quotes
+D10: Sprinklers need enough water flow: without city water, a tank and fire pump, a new septic system or a strict county can double this line. Whether you need them depends on the fire code your county has adopted: ask the building official and the fire marshal in writing, and get local quotes
 E10: Yes
 A11: Ceremony site: pergola, tent platform & ceremony seating
 B11: 25000
@@ -963,10 +963,10 @@ A19: Weeks worked per year per person
 B19: 46
 J19: 46 weeks: 52 minus about six weeks for vacation, holidays, the January closure and average absences. There is no federal vacation requirement in the US: adjust it to your own policy
 A20: Work hours per event to cover
-B20: 9.2
+B20: 9.7
 J20: Average event day, from setup to load-out: wedding 13 hours, corporate 9, private celebration 8 and micro wedding 5 (9.7 hours on average with the plan's mix)
 A21: People needed at the same time at each event
-B21: 2.3
+B21: 2.35
 J21: Venue staff on site at the same time during the event: the venue coordinator and two event attendants at weddings, the coordinator and one attendant at the rest (about 2.4 on average with the plan's mix). Servers and bartenders belong to the caterer
 A22: Overhead hours per event, outside the event day
 B22: 12
@@ -975,11 +975,11 @@ A23: Overhead staff per event
 B23: 3
 J23: Manager, maintenance and support (sales or housekeeping) at the same time
 A24: Service hours to cover per year
-B24 = 5716
+B24 = 5879.5
 A25: Hours hired per year
 B25 = 6808
 A26: Coverage (hired / needed)
-B26 = 1.191
+B26 = 1.1579
 J26: Below 100% the staff cannot cover the hours the plan declares: either hire more or cut the hours
 A28: The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the row: for a position with two people they include both. "FTE" is the share of a full-time week and is used to compare pay with the legal floor pro rata. The payroll tax rate and the number of pay periods are in the "0. Assumptions" tab.
 A29: The wage floor is the HIGHER of the federal minimum wage and the state or local floor you type in "0. Assumptions"; part-time positions carry it pro rata. Seasonal staff are W-2 employees: never pay as 1099 contractors the people whose schedule and work the venue directs. Event servers and bartenders belong to the caterer, not to this payroll.
@@ -1052,7 +1052,7 @@ D35: Permitting and the build-out close during the winter before; the peaks are 
 A36: Event mix of the plan
 B36: 100 events: 35 weddings, 25 corporate, 30 private celebrations, 10 micro weddings
 C36: Kit estimate
-D36: Weddings 130 guests × ($9,000 site fee + 10% of $110 F&B per guest), corporate 70 × ($3,500 + 10% of $50), private 80 × ($4,000 + 10% of $55), micro 30 × ($2,000 + 10% of $80), excl. sales tax
+D36: Per event, excl. sales tax: wedding (130 guests) $9,000 site fee + 10% of $110 F&B per guest; corporate (70) $3,500 + 10% of $50; private (80) $4,000 + 10% of $55; micro wedding (30) $2,000 + 10% of $80
 A37: Saturday ceiling
 B37: About 30-35 prime Saturdays a year
 C37: Kit estimate
@@ -1094,9 +1094,9 @@ B46: Roughly $3,500-$10,000 in published rate cards
 C46: Kit estimate from published venue rate cards (2026): get local quotes
 D46: Friday and Sunday about 15% lower, weekdays about 30% lower, off-peak about 20% lower (the kit's pricing calculator)
 A47: Well water
-B47: A well that serves your guests may count as a public water system
-C47: Ask your state drinking water program
-D47: Testing and a permit before the first event
+B47: A public water system if it regularly serves an average of 25 or more people a day at least 60 days a year
+C47: 40 CFR 141.2 (EPA); your state drinking water program applies it
+D47: Ask your state program about testing and a permit before the first event
 A48: Minimum wage
 B48: Federal $7.25/h + your state
 C48: U.S. Department of Labor (dol.gov)
@@ -1303,7 +1303,7 @@ E20 = -7180.8
 H20 = -11190.4611
 K20 = -16648.479
 N20 = -35019.7401
-O20: Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: December, March and June with Month 1 in September; the fourth quarter is remitted in Month 13): if your state requires monthly filing, expect smaller payments every month instead
+O20: Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: June, September and December with Month 1 in March; the fourth quarter is remitted in Month 13): if your state requires monthly filing, expect smaller payments every month instead
 A21: MONTHLY NET CASH FLOW
 B21 = -23342.3753
 C21 = -9769.7486

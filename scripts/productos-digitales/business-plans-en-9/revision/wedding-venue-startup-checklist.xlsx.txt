@@ -102,7 +102,7 @@ A8: ☐
 B8: Negotiate the lease: long term, counting renewal options
 C8: Owner / Attorney
 D8: Months 3-5
-E8: The build-out goes on land you don't own, so the term, counting renewal options, should be at least as long as your loan: SBA lenders typically require this; confirm with your lender. Aim for a term long enough to recover your investment.
+E8: The build-out goes on land you don't own, so the term, counting renewal options that only you can exercise, should be at least as long as your loan: SBA lenders typically require this; confirm with your lender. Aim for a term long enough to recover your investment.
 A9: ☐
 B9: Lease contingent on CUP approval (and the certificate of occupancy)
 C9: Attorney
@@ -389,7 +389,7 @@ A13: ☐
 B13: Wedding planners and event agencies
 C13: Owner
 D13: Months 3-6
-E13: A guided tour, the brochure and a referral commission agreed in writing. The plan assumes one in five sales comes through them. Venue marketplaces such as Peerspace can add corporate and private events.
+E13: A guided tour, the brochure and a referral commission agreed in writing. The plan assumes one in ten sales comes through planners and venue marketplaces, at a 15% commission. Marketplaces such as Peerspace can add corporate and private events.
 A14: ☐
 B14: Corporate events and private celebrations
 C14: Owner

@@ -8,9 +8,9 @@
    "parrafos": 131,
    "con_texto": 110,
    "heading1": 10,
-   "palabras": 7592,
+   "palabras": 7646,
    "piezas": 116,
-   "sha256": "0160b92f9193b15c039b7eb093a72d95ff24009b63357a0f0cfba6d56c90e296",
+   "sha256": "8349e0e95a1dc42a1f1000144aaf059ce7d2bf40123d84308c2c8d9791c0fde2",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -19,7 +19,7 @@
    "hojas": 9,
    "formulas": 734,
    "piezas": 770,
-   "sha256": "73e912aff236af125786f0738321085c23d0d58badc94226070d964a43e3c6f3",
+   "sha256": "69dca2b50c30b72d0d472f57c40ca1996d55ceea0b9c86b977487611afaa4a51",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -28,7 +28,7 @@
    "hojas": 3,
    "formulas": 168,
    "piezas": 359,
-   "sha256": "d3a49288a848428937a88276e35339c24c02e780a62a6e135577f3bb5bcfc8ba",
+   "sha256": "88617f0225667639b2fca966889084e330a47f8e31cb2214cba20bae34494cd7",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -37,9 +37,9 @@
    "parrafos": 161,
    "con_texto": 161,
    "heading1": 0,
-   "palabras": 5002,
+   "palabras": 5003,
    "piezas": 167,
-   "sha256": "c6770b0b2b963c1c9c5f4c067081b769f874b9456c367f832f70ef99d6411822",
+   "sha256": "2dc1d61c3138b6403cba154d487cb63da284efafabfe6ea333de97cd565fb3a6",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -48,7 +48,7 @@
    "hojas": 7,
    "formulas": 12,
    "piezas": 515,
-   "sha256": "73fd221f7fb11308e8aab9f20461b1aa1443681ad3d62c0a1cd72b1d14ed1f65",
+   "sha256": "dfabfbd574bcda3351fd3fd6a5729b58df5394610e6723c0d58120bb44065e8f",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
