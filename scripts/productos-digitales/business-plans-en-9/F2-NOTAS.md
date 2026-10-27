@@ -109,17 +109,44 @@ Ficheros de prueba (solo en el VPS): `/tmp/wed-dry/wedding-venue-business-plan/w
    — = pending» mientras la lista es «✓,☐,N/A» (c0659 de `business-plans-en-8`). En el wed va con «☐» (pista por texto).
 7. **ES**: el Word ES es A4 (el de la pizza era Letter), sin efecto en el EN; los demás defectos ES, los de inv. §8.
 
-## 6. Siguiente (orquestador)
+## 6. Pasos 1b + 3 (27-oct, sesión Claude Code): tanda 1 aplicada, libro real, calculadora y contrato
 
-**Tanda 1** (2 sonnet en paralelo, `BRIEF-TRADUCTORES.md` §2-§3): A = GWED-plan + revisión de GR + contrato parte 2 ‖ B =
-GWED-check + contrato parte 1, cada uno con su comando de §5. Después (Mac): `bp9.py preparar_tandas && bp9.py check_textos
---todas && bp9.py check_contrato --todas`; ‖ 1b `calculadora_wed.py` (D168). Luego VPS:
+Tanda 1 de los traductores (commits `17b09110`, `2165a09f`): `GWED-plan` 187, `GR.revision.json` 2 (c0094 «property
+block», c0508 «venue»), `GWED-check` 241, `contrato_en_1` 109 párrafos, `contrato_en_2` 52. Arreglo antes de aplicar:
+**c0648** (`Phase 1!E14`, nota del lender package, 373 → 255 caracteres: fuera la frase del equity, que ya está en
+`0. Assumptions!C30`). `preparar_tandas` (revisión de GR aplicada) + `check_textos --todas` → GM, GR, GWED-plan y
+GWED-check **OK (0 errores)**; `check_contrato --todas` → parte 1 **OK** (109 párrafos, 3,501 palabras), parte 2 **OK**
+(52, 1,492).
 
-```bash
-cd /root/wt-wedding/scripts/productos-digitales/business-plans-en-9 && PY=/root/venv-guias/bin/python
-$PY bp9.py mapas > /tmp/wed-mapas.txt && $PY bp9.py aplicar_en --idempotencia --json /tmp/wed-real.json > /tmp/wed-aplicar.txt
-$PY bp9.py calibracion /tmp/wed-real.json        # 2 xlsx en dl/wedding-venue-business-plan/ + cifras_caso.json
-```
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp9.py mapas` | 0 errores · verificar OK (7 avisos: FIJOS del motor sin uso) |
+| `aplicar_en --idempotencia --json /tmp/wed-real.json` | 2 xlsx en `dl/wedding-venue-business-plan/` + `cifras_caso.json` (135 tokens) · préstamo $470,000 · **0 diferencias** · 699 + 12 fórmulas, 0 fallos de pycel · **cifras = las del dry-run de §3** |
+| `bp9.py calibracion /tmp/wed-real.json` | **VERDE** (holgura 19.8 %, DSCR 1.86, saldo $66,103, cobertura 119.1 %, neto A3 14.2 %, exceso 0.04 %, D165 verde) |
+| `gates_en --solo G1,G2,G3,G4,G5,G6,G7` | **TODO VERDE** (G2 ya sin `--parcial`: 0 español, 0 prohibidas). G8 espera al Word (tanda 2) y G9 a las altas de D172 |
+| `bp9.py calculadora --salida dl/…` (`calculadora_wed.py`, D168) | 3 hojas, **168 fórmulas**, inject_cache 0 fallos · **autotest VERDE: 574 comprobaciones** (pycel + caché en los 3 ejemplos y la hoja principal; pycel en 3 casos propios) sobre 353 textos (0 español, 0 no latinos, 0 `cifras_prohibidas`/`RX_WED_NO`, Letter, pie, docProps D20, Cooling-Off solo como «ask your attorney whether…») · ejemplos: sábado peak 130 inv. → venue fee $9,200, base $11,750, total $12,690, retainer $3,172.50, comisión $1,430, margen 82.3 % · viernes shoulder 100 → $6,800 / $7,950 / $8,586 · weekday corporate 50 (< 75) → $2,450 / $2,950 / $3,186 |
+| `bp9.py contrato --salida dl/… --pdf` (`contrato_wed.py`, D171) | `wedding-venue-rental-agreement-templates.docx`: 161 párrafos, 5,002 palabras, estilos del molde ES (`Normal`, `List Bullet`), **US Letter**, cabecera legal literal, **12 páginas** (PDF de LibreOffice, 612 × 792 pt) · **VERDE** |
+| `bp9.py barrido` (los 4 ficheros de `dl/`) | 1,811 piezas · **0 fallos** (`entregables_wed.json`) |
+| 2.ª pasada de la calculadora y el contrato (`/tmp/wed-p2`) | sha256 canónico **IGUAL** en los dos |
 
-→ **tanda 2** `wed_a` ‖ `wed_b` → `ensamblar_docx --plan wed`, `contrato_wed.py`, `calculadora --autotest`, gates D172 (alta
-en `PRODUCTOS_LETTER` y `EXCLUIDOS` antes de G9), barrido, `/tmp/wed-regresion.sh`, 2.ª pasada, revisión D174.
+| Entregable (`astro-site/public/dl/wedding-venue-business-plan/`) | sha256 (Mac = VPS) |
+|---|---|
+| `wedding-venue-financial-projections.xlsx` (9 hojas, 734 fórmulas) | `4d02f4e3b97f2211…` |
+| `wedding-venue-startup-checklist.xlsx` (7 hojas, 84 tareas, DV `✓,☐,N/A`) | `83b4c23bdef295b0…` |
+| `wedding-venue-pricing-calculator.xlsx` (3 hojas, 168 fórmulas) | `8b3d7a9a87b76e62…` |
+| `wedding-venue-rental-agreement-templates.docx` (161 párrafos, 12 páginas) | `17ca14512ddfc01b…` |
+
+**Tanda 2 regenerada** con las cifras finales: `bp9.py preparar_tandas && bp9.py tanda2` (`tanda2_wed.py` añade a
+`wed_a`/`wed_b` el valor final de los 135 tokens —solo para entender el caso: en el texto va el token—, lo que dicen la
+calculadora, los contratos y el checklist, las reglas de las decisiones de orquestador y su comando de verificación).
+`tandas/wed_a.entrada.json` (§1-5: 29 párrafos, 3,071 palabras) ‖ `tandas/wed_b.entrada.json` (§6-10: 32 párrafos, 3,551
+palabras) → `docx_en_wed_a.json` / `docx_en_wed_b.json`; verificación: `python3 scripts/productos-digitales/business-plans-en-9/
+bp9.py check_textos --tanda wed_a` (o `wed_b`).
+
+## 7. Siguiente (orquestador)
+
+Tanda 2 (2 sonnet en paralelo) → VPS: `bp9.py ensamblar_docx --plan wed` (G8) → altas de D172 (`wedding-venue-business-plan`
+en `PRODUCTOS_LETTER` de `censo-entregables.py` y en `EXCLUIDOS` de `postprocess-transversal.py`) → `gates_en` completo +
+`--autotest`, `ensamblar_docx --autotest`, `calculadora --autotest`, `contrato --pdf`, `barrido`, `censo-entregables --fail
+--letter --only wedding-venue-business-plan`, `gate-no-latinos`, `verificar`, `/tmp/wed-regresion.sh`, 2.ª pasada → revisión
+D174 (foco en el contrato y en abrir 16 CFR 429.0).

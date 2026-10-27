@@ -1,0 +1,46 @@
+{
+ "carpeta": "/root/wt-wedding/astro-site/public/dl/wedding-venue-business-plan",
+ "parcial": false,
+ "piezas": 1811,
+ "fallos": 0,
+ "ficheros": {
+  "wedding-venue-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 734,
+   "piezas": 770,
+   "sha256": "4d02f4e3b97f22111d9499050201e342b94af041e9410de13e62b019e7032d92",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "wedding-venue-pricing-calculator.xlsx": {
+   "hojas": 3,
+   "formulas": 168,
+   "piezas": 359,
+   "sha256": "8b3d7a9a87b76e622df107932ab8fc98ae12dff3f1f7994d976b22b5eb89a846",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "wedding-venue-rental-agreement-templates.docx": {
+   "parrafos": 161,
+   "con_texto": 161,
+   "heading1": 0,
+   "palabras": 5002,
+   "piezas": 167,
+   "sha256": "17ca14512ddfc01b2369b47d48d2457c3e0a9d8fd2a20c0d922ea8b9c1bc75f1",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "wedding-venue-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 515,
+   "sha256": "83b4c23bdef295b0837fc7730f9cae1bc91b49855c0cf03c15919edda69039a3",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}

@@ -15,6 +15,7 @@ FUENTE ES: `WED_FUENTE_ES=/ruta/a/plan-negocio-finca-eventos-bodas` o nada (ES L
     python3 bp9.py preparar_tandas                # tandas/*.entrada.json + textos_en/GM.json y GR.json (reutilizadas)
     python3 bp9.py check_textos --tanda GWED-plan # validador de una tanda (o --todas)
     python3 bp9.py check_contrato --parte 1       # validador de una mitad del contrato (textos_en/contrato_en_<n>.json)
+    python3 bp9.py tanda2                         # completa wed_a / wed_b con los valores finales (tras preparar_tandas)
   VPS (openpyxl / python-docx / pycel):
     python3 bp9.py extraer_textos                 # censo_es.json + textos_es.json
     python3 bp9.py extraer_docx                   # docx_es_wed.json (Word ES de la finca)
@@ -24,6 +25,8 @@ FUENTE ES: `WED_FUENTE_ES=/ruta/a/plan-negocio-finca-eventos-bodas` o nada (ES L
     python3 bp9.py ensamblar_docx --plan wed      # docx EN (tras la tanda 2)
     python3 bp9.py gates_en [--dir …] [--parcial --solo G1,G3,…] · gates_en --autotest
     python3 bp9.py barrido [--dir … --parcial]    # barrido independiente de los entregables → entregables_wed.json
+    python3 bp9.py calculadora --salida <dir> [--autotest]   # wedding-venue-pricing-calculator.xlsx (D168)
+    python3 bp9.py contrato --salida <dir> [--pdf]           # wedding-venue-rental-agreement-templates.docx (D171)
 """
 import json
 import os
@@ -34,10 +37,11 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.join(os.path.dirname(AQUI), 'business-plans-en')
 SCRIPTS = ('mapas', 'extraer_textos', 'extraer_docx', 'preparar_tandas', 'check_textos', 'aplicar_en', 'gates_en',
            'ensamblar_docx')
-PROPIOS = ('derivar_formulas', 'verificar', 'barrido', 'calibracion', 'check_contrato', 'calculadora', 'contrato')
+PROPIOS = ('derivar_formulas', 'verificar', 'barrido', 'calibracion', 'check_contrato', 'calculadora', 'contrato',
+           'tanda2')
 FICHERO_PROPIO = {'derivar_formulas': 'derivar_formulas_wed.py', 'barrido': 'barrido_wed.py',
                   'calibracion': 'calibracion_wed.py', 'check_contrato': 'check_contrato.py',
-                  'calculadora': 'calculadora_wed.py', 'contrato': 'contrato_wed.py'}
+                  'calculadora': 'calculadora_wed.py', 'contrato': 'contrato_wed.py', 'tanda2': 'tanda2_wed.py'}
 
 
 def verificar():
