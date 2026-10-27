@@ -215,7 +215,7 @@
  "c0523": "Each item at its own rate, read from the tax column of the P&L: insurance and card processing fees carry none",
  "c0525": "Sales tax paid on STARTUP COSTS enters here: it is offset against the tax collected in later quarters until used up. With 0% recoverable input tax (the US default) this line stays at zero",
  "c0527": "Sales tax collected minus recoverable input tax for the quarter, minus what was carried forward. If negative, nothing is paid: it is offset in the next quarter. With 0% recoverable input tax (the US default) it equals the sales tax collected in the quarter",
- "c0529": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: December, March and June with Month 1 in September; the fourth quarter is remitted in Month 13): if your state requires monthly filing, expect smaller payments every month instead",
+ "c0529": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: June, September and December with Month 1 in March; the fourth quarter is remitted in Month 13): if your state requires monthly filing, expect smaller payments every month instead",
  "c0530": "MONTHLY NET CASH FLOW",
  "c0531": "CUMULATIVE CASH BALANCE",
  "c0532": "Minimum balance of the year",

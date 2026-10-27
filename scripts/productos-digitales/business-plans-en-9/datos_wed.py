@@ -157,7 +157,8 @@ POR_CELDA = OrderedDict([
     (('WEDP', _S, 'C63'), 'NO EFFECT in this plan: the venue sells no alcohol (the caterer does, under its own license) and '
                           'the commission line carries its own rate in column G of the P&L'),
     # Revisión D174 (27-oct): rótulos de la Pizza EN que no describen el venue (A9 «Menu price», A40 «alcohol to go»:
-    # ninguna fórmula lee B39/B40; los tipos que se cobran están en PyG G10/G11) y O20 con los meses de la pizza
+    # ninguna fórmula lee B39/B40; los tipos que se cobran están en PyG G10/G11) y O20 con los meses de la pizza (O20 es
+    # GM «traducir»: hoy lo escribe textos_en/GM.json c0529, ya corregido; esta entrada solo manda si se re-extrae)
     (('WEDP', _S, 'A9'), 'Revenue per guest incl. sales tax (calculated)'),
     (('WEDP', _S, 'A39'), 'Sales tax rate on food sales (not used: the venue sells no food)'),
     (('WEDP', _S, 'A40'), 'General sales tax rate (reference only: the rates used are on the P&L)'),
