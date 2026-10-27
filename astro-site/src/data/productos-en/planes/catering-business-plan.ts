@@ -98,6 +98,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Yes. If paella cooked live in front of the guests is your product, our Paella Catering Business Plan Kit is written for that: a paella chef with paella pans and 3-ring propane burners, sofrito, stock and seafood prepped at a commissary, what your county and your fire marshal say about cooking at the event, cooked rice as a TCS food, and a pricing calculator that turns your guest count into pans, rice and a price per guest, with a pan sizing table and a shopping list by guest count.",
   },
   {
+    q: 'Is there a business plan for a wedding venue?',
+    a: "Yes, but for the business that owns the space, not for the caterer. Our Wedding Venue Business Plan Kit covers a wedding and event venue on a leased barn or estate that earns a venue rental fee plus a commission from its exclusive caterer: a 10-section Word plan, Excel projections with a break-even in events and a 12-month cash flow, a pricing and quote calculator by season and day, venue rental agreement templates, and an 84-task startup checklist with the zoning and permit steps to check with your county. If you want to be that exclusive caterer, or to cater anywhere, this kit is the one for you."
+  },
+  {
     q: 'How much does a catering business make? Is catering profitable?',
     a: "It can be, but margins are thin: ItsaCheckmate reports an average net margin of 7-8% for caterers, and Galley Solutions puts food cost at 28-35% of the menu price. In the kit's example — 180 events a year with 60 guests at $60.00 per guest (excl. sales tax, service included) — year-1 sales are $648,000 and net income is $48,466, a 7.5% net margin, after paying the owner a salary as executive chef. That's an example, not a promise: the 3-year P&L recalculates from your numbers, checks five ratios against editable kit benchmarks, and the pessimistic scenario shows what a weak year does to your cash.",
   },
@@ -350,6 +354,8 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit' },
     { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },
     { href: '/en/digital-products/pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit' },
+    { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
+    { href: '/en/digital-products/wedding-venue-business-plan', label: 'Wedding Venue Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],

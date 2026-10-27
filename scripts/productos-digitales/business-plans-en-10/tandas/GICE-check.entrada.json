@@ -1,0 +1,2786 @@
+{
+ "tanda": "GICE-check",
+ "salida": "scripts/productos-digitales/business-plans-en-10/textos_en/GICE-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 157,
+ "n_palabras": 2414,
+ "pistas": {
+  "P01": "Glosario: tarta helada → ice cream cake",
+  "P02": "D200: sin crepes ni salida de humos (no cruzan); waffle cone irons; el invierno = ice cream cakes, holiday pies y pints, hot chocolate y catering",
+  "P03": "research §9 (e): turrón helado → holiday pies and cakes · comuniones → birthdays and graduations",
+  "P04": "D199: patio / sidewalk café permit (la tasa la pone tu ciudad)",
+  "P05": "D199: «ask the utility about 3-phase service and amps before signing»",
+  "P06": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P07": "D199: «LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P08": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P09": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P10": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P11": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P12": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P13": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P14": "D199: «POS that reports sales tax» (sin Veri*factu)",
+  "P15": "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)",
+  "P16": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P17": "D194: refrigeration service contract con un técnico EPA 608 (el personal nunca recarga refrigerante)",
+  "P18": "D199: la lista de la DV EN es «✓,☐,N/A»: ☐ = pendiente; el texto EN nunca dice «—»",
+  "P19": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P20": "Unidades: sq ft con los m² entre paréntesis («1,000 sq ft (93 sq m)»)",
+  "P21": "D190: el caso COMPRA la base pasteurizada a una central con licencia: tras su pasteurización solo se añaden aromas e inclusiones (no raw eggs, no raw milk or cream; custard flavors need a custard base); pasteurizar tu mezcla = VARIANTE con licencia estatal (sin Excel)",
+  "P22": "research §6.2: nombres de 21 CFR 135.110 («ice cream» ≥ 10 % milkfat y ≥ 4.5 lb/gal; «frozen custard» 1.4 % egg yolk solids); nada de RD 618",
+  "P23": "Glosario: abatidor → hardening cabinet / blast freezer · abatir → harden",
+  "P24": "Glosario: vitrina → dipping cabinet · cubeta → tub (3 gal)",
+  "P25": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P26": "D199: «zoning check before signing» · «building permit + certificate of occupancy» · business license + sales tax permit",
+  "P27": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P28": "Unidades: 0 °F (−18 °C) o menos en almacén; dipping cabinet 6-10 °F; frío ≤ 41 °F (5 °C): °F principal y °C entre paréntesis",
+  "P29": "research §6.2: «made here in small batches»; «homemade» / «house-made» solo si es verdad (sin norma federal leída)",
+  "P30": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P31": "D199: plan review (Food Code 8-201.11) con el layout del equipo + health permit + inspection; la decisión de licencia de D190 es una tarea propia («ask your state department of agriculture in writing»)",
+  "P32": "Glosario: mantecadora → batch freezer · mantecar → batch-freeze / churn · extracción → draw",
+  "P33": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P34": "D199: 9 major allergens incl. sesame (UK 14); ninguna promesa «allergen-free» (scoops y dipper wells compartidos)",
+  "P35": "Glosario: cone (waffle cone, sugar cone, cake cone) · waffle cone iron",
+  "P36": "D199: Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P37": "Glosario: tarrina para llevar → pint / quart (hand-packed) · envasar → pack-out",
+  "P38": "Glosario: dipper well (agua corriente, Food Code 3-304.12) · scoop · spade",
+  "P39": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P40": "D191/§0: el volumen es «customers» (cada persona que compra); nunca «covers» ni «transactions»",
+  "P41": "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day",
+  "P42": "D191: DoorDash / Uber Eats para pints y quarts"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "heladería artesanal": "ice cream shop (nombre, H1, ficheros) · ice cream parlor · scoop shop · creamery (prosa)",
+  "mantecadora · mantecar": "batch freezer · batch-freeze / churn; extracción = draw (16-19 °F)",
+  "mezcla base": "ice cream base / mix · butterfat · «14% base»",
+  "pasteurizador (variante)": "batch pasteurizer · vat pasteurization (155 °F 30 min) · HTST",
+  "maduración": "aging the mix (36-39 °F)",
+  "abatidor · abatir": "hardening cabinet / blast freezer · harden",
+  "vitrina de cubetas · cubeta": "dipping cabinet (gelato: gelato case) · tub (3 gal) / pan (gelato)",
+  "lavaporcionador": "dipper well (running water, Food Code 3-304.12(D))",
+  "porcionador · espátula": "scoop (dipper) · spade",
+  "rendimiento de aire": "overrun",
+  "tarrina para llevar": "pint · quart · hand-packed · pack-out",
+  "cucurucho · barquillo": "cone (waffle cone, sugar cone, cake cone) · waffle cone iron / maker",
+  "copa": "sundae · cup",
+  "inclusiones · variegato · virutas": "mix-ins · swirl / ripple · sprinkles",
+  "mantecado (≥ 4 % yema)": "frozen custard (1.4% egg yolk solids, 21 CFR 135.110)",
+  "tarta helada": "ice cream cake",
+  "sabor de prueba": "sample (tasting spoon)",
+  "dependiente/a": "scooper / counter staff · shift lead",
+  "maestro heladero": "ice cream maker (owner/operator)",
+  "fijo discontinuo de temporada": "seasonal part-time (W-2)",
+  "temporada alta · reapertura": "peak season (Memorial Day → Labor Day) · Opening Day · off-season",
+  "licencia de obrador": "frozen dessert license / dairy plant or milk handler license (state) + health permit (local)",
+  "elaboración propia / artesano": "made here in small batches · homemade / house-made (only if true)",
+  "seguro de mercancía por avería": "equipment breakdown with food spoilage",
+  "IVA · terraza": "sales tax · patio / sidewalk café",
+  "helado crema / mantecado / sorbete (RD 618)": "ice cream, frozen custard (21 CFR 135); sorbet sin estándar leído",
+  "644.4/676, declaración responsable": "business license + zoning + building permit / CO",
+  "registro sanitario autonómico / RGSEAA": "health permit + plan review / state frozen dessert license",
+  "fijo discontinuo, convenio, SMI": "seasonal W-2, state / local minimum wage",
+  "−18 °C": "0 °F",
+  "430 g/l": "4.5 lb per gallon",
+  "autónomo / SL": "LLC",
+  "manipulador": "food handler card + CFPM",
+  "crepera / gofrera con salida de humos": "waffle cone irons (sin humos; las crepes no cruzan)",
+  "turrón helado de Navidad": "holiday pies and cakes",
+  "comuniones": "birthdays and graduations",
+  "cliente (volumen)": "customer (cada persona que compra)"
+ },
+ "pestanas_es_en": {
+  "HELP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "HELC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local y licencia": "Phase 2 - Site & Permits",
+   "F3 - Obrador y sanidad": "Phase 3 - Production & Health",
+   "F4 - Personal y APPCC": "Phase 4 - Staff & Food Safety",
+   "F5 - Marca y carta": "Phase 5 - Brand & Menu",
+   "F6 - Apertura y temporada": "Phase 6 - Opening & Season",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US ICE CREAM SHOP BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-heladeria» de AI Chef Pro.": "This file is part of the Ice Cream Shop Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — HELADERÍA ARTESANAL": "ICE CREAM SHOP STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Heladería Artesanal": "HOW TO USE THIS WORKBOOK — Ice Cream Shop Financial Projections",
+  "PLAN DE NEGOCIO: HELADERÍA ARTESANAL": "ICE CREAM SHOP BUSINESS PLAN",
+  "Inversión inicial estimada — heladería artesanal con obrador propio": "Startup costs — ice cream shop with on-site production",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — replace with your own quotes.",
+  "Punto de equilibrio — heladería artesanal": "Break-even — ice cream shop with on-site production",
+  "IVA de la bebida ALCOHÓLICA servida en el local": "Sales tax rate on alcohol served on site",
+  "Proyecto técnico y dirección de obra": "Architect, MEP drawings, plan review & permit fees",
+  "Obra y acondicionamiento del obrador y la tienda": "Build-out of production room & shop (second-generation retail, ~1,000 sq ft)",
+  "Instalación eléctrica trifásica, cuadro y boletín": "Electrical service & panel (about 30 kW)",
+  "Fontanería, desagües, climatización y ventilación": "Plumbing, floor sinks, hand sinks, HVAC & condenser ventilation",
+  "Rótulo y escaparate": "Signage & storefront",
+  "Pasteurizador de 30 litros": "Base refrigerator & flavor prep (41 °F or colder, stick blender, scales)",
+  "Mantecadora horizontal de 6-12 litros por ciclo": "Batch freezer (20 qt, horizontal)",
+  "Abatidor de temperatura para cubetas": "Hardening cabinet / blast freezer",
+  "Armarios de conservación y de maduración": "Storage freezers (0 °F or colder)",
+  "Mesas inox, fregadero, básculas, refractómetro, sondas, cubetas y carapinas": "Prep tables, 3-compartment sink, hand sinks, scales, pans & smallwares",
+  "Vitrina ventilada de 18 cubetas": "Dipping cabinets (18 flavors)",
+  "Mostrador, lavaporcionador, cafetera, crepera, gofrera y chocolatera": "Front counter, dipper wells, espresso, waffle cone irons & hot fudge warmers",
+  "Mobiliario del local y de la terraza": "Furniture (20 seats) & patio",
+  "TPV con Veri*factu, datáfono y báscula": "POS, card terminal & online ordering",
+  "Menaje, uniformes y cartelería de alérgenos": "Scoops, spades, cups, uniforms & allergen signage",
+  "Formación técnica de heladería": "Ice cream training course",
+  "Marca, web, fotos y lanzamiento": "Branding, website, photos & launch",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal, permits & food safety plan",
+  "Stock inicial de materias primas y envases": "Opening inventory (base, flavorings, cones, cups, pint containers)",
+  "Escenario realista — heladería artesanal": "Base case — ice cream shop with on-site production",
+  "Ventas de helado y obrador (mostrador, para llevar, tartas, invierno y restaurantes)": "Ice cream sales (scoops, sundaes, pints & quarts to go, ice cream cakes, catering)",
+  "Ventas de cafetería y bebidas (sin alcohol)": "Coffee & beverages (espresso, hot chocolate, sodas, water)",
+  "Seguros (RC + multirriesgo)": "Insurance (general liability, property, equipment breakdown + food spoilage)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento del frío (contrato con frigorista certificado)": "Refrigeration service contract (EPA 608-certified tech)",
+  "Marketing y publicidad de temporada": "Seasonal marketing",
+  "Software, teléfono e internet": "Software, POS & phone",
+  "Limpieza, lavandería, EPI y análisis de autocontrol": "Cleaning supplies, uniforms & laundry",
+  "Tasa de terraza (pon la de tu ayuntamiento)": "Sidewalk café / patio permit (your city's fee)",
+  "Gestión de residuos": "Waste & recycling",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Food safety & OSHA training (CFPM, food handler cards, allergens)",
+  "Titular — maestro heladero, compras y gestión": "Owner / ice cream maker & GM",
+  "Dependiente/a y encargado/a de turno (todo el año)": "Shift lead / counter (year-round)",
+  "Dependiente/a de temporada (fijo discontinuo, abril-septiembre)": "Seasonal scooper (part-time, April-September)",
+  "Dependiente/a de verano (fijo discontinuo, junio-septiembre)": "Summer scooper (part-time, June-August)",
+  "Ayudante de obrador (fijo discontinuo, mayo-septiembre)": "Production assistant (part-time, May-September)",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations and days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0617",
+   "es": "Consulta urbanística previa del local",
+   "donde": [
+    "HELC · F1 - Constitución!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0620",
+   "es": "Pregunta al ayuntamiento cuatro cosas: si el uso permite elaborar y vender helado con consumo en el local, qué potencia eléctrica tiene el local, si admite salida de humos (crepes y gofres) y si la calle admite terraza. Sin humos, el invierno va de chocolate, tartas y turrón helado",
+   "donde": [
+    "HELC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0629",
+   "es": "Alta censal (modelo 036) en los epígrafes 644.4 y 676 del IAE",
+   "donde": [
+    "HELC · F1 - Constitución!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0631",
+   "es": "El 644.4 («comercio al por menor de helados») te permite fabricar helado y tartas heladas en el propio local para venderlos allí; el 676 cubre el consumo en mesas y terraza (RDLeg 1175/1990). Exento de cuota con una cifra de negocio inferior a 1 millón de euros (art. 82.1.c de la Ley de Haciendas Locales; confírmalo con tu gestoría)",
+   "donde": [
+    "HELC · F1 - Constitución!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P08",
+    "P09",
+    "P10",
+    "P01",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0632",
+   "es": "Valorar el epígrafe 414.4 sólo si vas a fabricar para otros a escala",
+   "donde": [
+    "HELC · F1 - Constitución!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0633",
+   "es": "El 414.4 es la elaboración industrial de helados. Vender algo a restaurantes de tu zona cabe en el 644.4 si es marginal (fase 3), pero confírmalo con tu gestoría si el canal crece",
+   "donde": [
+    "HELC · F1 - Constitución!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P09",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0638",
+   "es": "Imprescindible para Hacienda, la Seguridad Social y las declaraciones responsables",
+   "donde": [
+    "HELC · F1 - Constitución!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P12",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0640",
+   "es": "Separadas de las personales: por ellas pasan las liquidaciones del datáfono, los pagos a proveedores y los cobros de los restaurantes",
+   "donde": [
+    "HELC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0643",
+   "es": "Nóminas de los fijos discontinuos con sus llamamientos. El software de facturación del TPV tiene que cumplir Veri*factu: consulta con tu gestoría la fecha que te aplica antes de comprar el TPV",
+   "donde": [
+    "HELC · F1 - Constitución!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P09",
+    "P13",
+    "P11",
+    "P14",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0645",
+   "es": "Lleva el plan financiero completo, con la tesorería mes a mes. Pide también oferta de leasing o renting de la maquinaria de frío y de una línea ICO",
+   "donde": [
+    "HELC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P16",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0646",
+   "es": "Seguro de responsabilidad civil y multirriesgo",
+   "donde": [
+    "HELC · F1 - Constitución!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0649",
+   "es": "RC de al menos 300.000 € y multirriesgo con avería de maquinaria y deterioro de mercancía en frío",
+   "donde": [
+    "HELC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0651",
+   "es": "Comprueba antes que el nombre no está registrado en tu clase (productos de heladería y servicios de hostelería)",
+   "donde": [
+    "HELC · F1 - Constitución!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0654",
+   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "donde": [
+    "HELC · F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error)",
+    "HELC · F2 - Local y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 (dv-error)",
+    "HELC · F3 - Obrador y sanidad!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 (dv-error)",
+    "HELC · F4 - Personal y APPCC!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error)",
+    "HELC · F5 - Marca y carta!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)",
+    "HELC · F6 - Apertura y temporada!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)"
+   ],
+   "max_len": 255,
+   "propuesta_en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+   "propuesta_de": "GR c0659 (PIZC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 / PIZC F2 - Local, humos y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19)",
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0656",
+   "es": "FASE 2: LOCAL, OBRA, LICENCIA Y TERRAZA (semanas 3-12)",
+   "donde": [
+    "HELC · F2 - Local y licencia!A2"
+   ]
+  },
+  {
+   "id": "c0657",
+   "es": "Elegir el local: 80-90 m² con obrador de 20-25 m²",
+   "donde": [
+    "HELC · F2 - Local y licencia!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0659",
+   "es": "Calle comercial de barrio o paseo cerca de un parque o colegios, con paso de gente en las tardes de verano y de fin de semana en invierno",
+   "donde": [
+    "HELC · F2 - Local y licencia!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0660",
+   "es": "Comprobar la potencia: unos 30 kW en trifásica",
+   "donde": [
+    "HELC · F2 - Local y licencia!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0663",
+   "es": "Vitrinas encendidas las 24 horas, pasteurizador, mantecadora, abatidor, crepera y climatización. Un local monofásico obliga a una acometida nueva: pregunta plazo y coste a la distribuidora",
+   "donde": [
+    "HELC · F2 - Local y licencia!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P22",
+    "P23",
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0664",
+   "es": "Comprobar desagües, ventilación y salida de humos",
+   "donde": [
+    "HELC · F2 - Local y licencia!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0666",
+   "es": "Desagüe en el obrador, salida de aire para los condensadores de las máquinas y, si quieres crepes y gofres, la salida de humos que pida la ordenanza",
+   "donde": [
+    "HELC · F2 - Local y licencia!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0668",
+   "es": "El plan cuenta dos meses de renta antes de abrir y tres de fianza. Pide carencia mientras dura la obra",
+   "donde": [
+    "HELC · F2 - Local y licencia!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P25",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0669",
+   "es": "Contrato de arrendamiento con el uso de heladería",
+   "donde": [
+    "HELC · F2 - Local y licencia!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0672",
+   "es": "Que el contrato diga «heladería con obrador y consumo en el local» y quién paga la acometida eléctrica",
+   "donde": [
+    "HELC · F2 - Local y licencia!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "Encargar el proyecto técnico y la memoria de la actividad",
+   "donde": [
+    "HELC · F2 - Local y licencia!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0676",
+   "es": "Distribución del obrador con circuito de sucio a limpio, potencia, ventilación y la terraza",
+   "donde": [
+    "HELC · F2 - Local y licencia!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0677",
+   "es": "Licencia, declaración o comunicación previa de la obra",
+   "donde": [
+    "HELC · F2 - Local y licencia!B11"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Building permit for the build-out and the flue",
+   "propuesta_de": "GPIZ-check c0685 (PIZC F2 - Local, humos y licencia!B12)"
+  },
+  {
+   "id": "c0680",
+   "es": "Pregunta en la consulta urbanística qué título pide tu obra. Sin proyecto, el art. 3.3 de la Ley 12/2012 la libera de licencia, pero no de la declaración responsable o la comunicación previa al ayuntamiento (art. 4)",
+   "donde": [
+    "HELC · F2 - Local y licencia!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0681",
+   "es": "Declaración responsable de la actividad comercial (644.4)",
+   "donde": [
+    "HELC · F2 - Local y licencia!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0682",
+   "es": "La venta y fabricación de helado en el propio local, hasta 750 m², va por declaración responsable, sin licencia previa (Ley 12/2012, arts. 2-4 y anexo). La obra va por su propio trámite, en la tarea anterior",
+   "donde": [
+    "HELC · F2 - Local y licencia!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P19",
+    "P26",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0683",
+   "es": "Licencia o declaración municipal de la parte de hostelería (676)",
+   "donde": [
+    "HELC · F2 - Local y licencia!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0684",
+   "es": "Las mesas y el consumo en el local no están en el anexo de la Ley 12/2012: van por el régimen de tu ayuntamiento (licencia o declaración responsable, según la ordenanza)",
+   "donde": [
+    "HELC · F2 - Local y licencia!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0687",
+   "es": "Con la declaración responsable",
+   "donde": [
+    "HELC · F2 - Local y licencia!D14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0688",
+   "es": "Es ocupación de la vía pública y siempre se pide aparte (Ley 12/2012, art. 2.2). Pregunta la tasa de tu ayuntamiento: la del plan es una cifra de ejemplo",
+   "donde": [
+    "HELC · F2 - Local y licencia!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0689",
+   "es": "Obra del obrador: superficies lavables y suelo antideslizante",
+   "donde": [
+    "HELC · F2 - Local y licencia!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0692",
+   "es": "Paredes alicatadas, suelo antideslizante, falsos techos lavables, lavamanos de accionamiento no manual y aseo con vestuario",
+   "donde": [
+    "HELC · F2 - Local y licencia!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0693",
+   "es": "Fontanería, desagües y climatización",
+   "donde": [
+    "HELC · F2 - Local y licencia!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0695",
+   "es": "Agua caliente y fría en el obrador, desagües sifónicos y climatización de la tienda",
+   "donde": [
+    "HELC · F2 - Local y licencia!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0696",
+   "es": "Instalación de la maquinaria de frío y del pasteurizador",
+   "donde": [
+    "HELC · F2 - Local y licencia!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0699",
+   "es": "Prueba en marcha con el técnico: temperaturas de la vitrina, del abatidor y de los armarios",
+   "donde": [
+    "HELC · F2 - Local y licencia!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P23",
+    "P24",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Rótulo, escaparate y cartel de horario",
+   "donde": [
+    "HELC · F2 - Local y licencia!B18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0702",
+   "es": "El rótulo puede necesitar su propia autorización municipal. «Artesano» sólo con la calificación (fase 5)",
+   "donde": [
+    "HELC · F2 - Local y licencia!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P10",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0706",
+   "es": "El boletín (certificado de la instalación) para el nuevo contrato de luz en trifásica y el certificado final del técnico. Guárdalos: te los pedirá la declaración responsable de inicio",
+   "donde": [
+    "HELC · F2 - Local y licencia!E19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P15",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0708",
+   "es": "FASE 3: OBRADOR, EQUIPO Y REGISTRO SANITARIO (semanas 8-14)",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!A2"
+   ]
+  },
+  {
+   "id": "c0709",
+   "es": "Comprar el pasteurizador, la mantecadora y el abatidor",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P22",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0711",
+   "es": "Pasteurizador de 30 l, mantecadora horizontal de 6-12 l por ciclo y abatidor para cubetas. Pide ficha técnica, potencia y garantía; la maquinaria de ocasión revisada cuesta bastante menos",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P30",
+    "P21",
+    "P22",
+    "P23",
+    "P24",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0712",
+   "es": "Comprar los armarios de conservación y la vitrina de 18 cubetas",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0713",
+   "es": "Dos armarios a -20/-25 °C, uno a +2/+4 °C para madurar y una vitrina de 18 cubetas: en una ciudad media, 24 son merma y consumo",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0714",
+   "es": "Contrato de mantenimiento con un frigorista certificado",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0716",
+   "es": "Revisión antes del verano y en el cierre de enero. La carga de gases refrigerantes la hace sólo un técnico certificado: el personal no la toca",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0717",
+   "es": "Declaración responsable de inicio de la actividad alimentaria",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "Antes de la primera tanda (también las de prueba)",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0720",
+   "es": "Va al registro sanitario de tu comunidad autónoma (RD 1021/2022). El RGSEAA sólo aplica si sirves a otros negocios por encima de lo que permite el art. 3 (tarea siguiente)",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Declaración del art. 3 del RD 1021/2022 antes del primer pedido a un restaurante",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "Antes de vender a otro negocio",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0723",
+   "es": "Vender helado a restaurantes o cafeterías de otra titularidad exige que sea marginal (lo que sirves a otros negocios, hasta el 25 % del volumen del año, o tu venta total, público incluido, hasta 500 kg a la semana), de tu zona y a nadie inscrito en el RGSEAA, con una declaración responsable y el registro de destinatarios, cantidades y fechas",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P30",
+    "P11",
+    "P26",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "Plan APPCC con el punto crítico de la pasteurización",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P21",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0726",
+   "es": "Orden de la mezcla: líquidos; secos premezclados con el azúcar, con el agitador en marcha; grasas (nata, mantequilla), yemas y emulsionantes al subir, a 40-50 °C, ANTES de pasteurizar; después 85 °C, enfriado rápido a 4 °C o menos y maduración a 2-4 °C. Tras pasteurizar sólo entra lo que no necesita tratamiento (pastas puras, variegatos, fruta lavada de los sorbetes): nunca yema ni nata cruda",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P21",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0727",
+   "es": "APPCC: maduración, mantecación, abatimiento y conservación",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P21",
+    "P32",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0728",
+   "es": "La mezcla con huevo se manteca en las 24 horas siguientes (RD 1021/2022, art. 9.3); abatimiento a -18 °C en el corazón; conservación a -18 °C o menos y sin recongelar (arts. 4.1 y 5.9). La temperatura de la vitrina la fija tu APPCC, no una norma estatal",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P21",
+    "P32",
+    "P24",
+    "P31",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "Huevo: pasteurizado en la mezcla u ovoproducto",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "El huevo crudo vale si la mezcla alcanza 70 °C durante 2 segundos (la pasteurización a 85 °C lo cumple); si no, ovoproducto de un establecimiento autorizado (RD 1021/2022, art. 9)",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Trazabilidad por lote y registros de temperatura",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "Desde la primera tanda",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0733",
+   "es": "Lote y fecha de cada tanda, temperaturas de pasteurización y de los armarios, y proveedores de cada materia prima",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0734",
+   "es": "Fichas técnicas por sabor con sus alérgenos",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0735",
+   "es": "Maestro heladero",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!C14",
+    "HELC · F3 - Obrador y sanidad!C17",
+    "HELC · F5 - Marca y carta!C7",
+    "HELC · F5 - Marca y carta!C9",
+    "HELC · F6 - Apertura y temporada!C6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0736",
+   "es": "Receta balanceada, rendimiento y alérgenos de cada sabor: frutos de cáscara, cacahuete, leche, huevo, gluten (galleta, barquillo), soja y sulfitos",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P21",
+    "P35",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Cartel e información de alérgenos en el mostrador",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P36",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Por escrito en cartel o carta, o de palabra si está registrado por escrito y un cartel dice dónde pedirlo (RD 126/2015, arts. 4 y 6)",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0739",
+   "es": "Etiqueta completa de las tarrinas preenvasadas",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P37"
+   ]
+  },
+  {
+   "id": "c0740",
+   "es": "Antes de vender tarrinas de autoservicio",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!D16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P37"
+   ]
+  },
+  {
+   "id": "c0741",
+   "es": "Las tarrinas que dejas envasadas en el congelador llevan la etiqueta de los arts. 9 y 10 del Reglamento (UE) 1169/2011, menos la nutricional (RD 126/2015, art. 5)",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "Carta con las denominaciones del RD 618/1998",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P22",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "«Helado crema», «mantecado» (4 % de yema o más), «sorbete» (15 % de fruta o más) o «granizado» sólo si la receta cumple el art. 3; si no, «helado de…» o «sabor a…». El helado tiene que pesar 430 g por litro o más",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P10",
+    "P21",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0744",
+   "es": "Protocolo de espátulas y lavaporcionador contra el contacto cruzado",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "Una espátula por cubeta y lavaporcionador con agua corriente; para un cliente alérgico, espátula limpia y cubeta sin empezar",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P39",
+    "P40",
+    "P24",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "Proveedores de leche, nata, fruta, pastas y envases",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!B19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0748",
+   "es": "Dos proveedores por materia prima clave (pistacho, cacao, vainilla) y envases sin poliestireno expandido; cucharillas de madera o compostables",
+   "donde": [
+    "HELC · F3 - Obrador y sanidad!E19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0750",
+   "es": "FASE 4: PERSONAL, APPCC Y FORMACIÓN (semanas 10-14)",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!A2"
+   ],
+   "pistas": [
+    "P06",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "Las heladerías están en el convenio provincial de hostelería (VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4). Pon su salario más bajo en la hoja de Supuestos del plan",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P12",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "Contratos fijos discontinuos para la temporada",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0755",
+   "es": "Antes de la temporada",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!D6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41"
+   ]
+  },
+  {
+   "id": "c0756",
+   "es": "Por escrito, con la orden y la forma de llamamiento (art. 16 del Estatuto de los Trabajadores). El eventual es para lo imprevisible, y una factura de «autónomo» con tu horario es falso autónomo (art. 1.1)",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P12",
+    "P10",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "Contrato del dependiente/a y encargado/a de todo el año",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Abre y cierra cuando el titular está en el obrador: define sus funciones y su grupo del convenio",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P12",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0760",
+   "es": "Calendario de llamamientos de abril a septiembre",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0761",
+   "es": "Febrero",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0762",
+   "es": "Quién entra en abril, quién en mayo y quién en junio, y cuándo se para cada uno en otoño",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0765",
+   "es": "Obligatorio para toda la plantilla (art. 34.9 ET), también para los fijos discontinuos",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0766",
+   "es": "Menores de 18 años: horario sin noche ni horas extra",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0768",
+   "es": "No pueden trabajar de noche ni hacer horas extraordinarias (art. 6 ET): confírmalo con tu gestoría si el horario de verano llega a medianoche",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0770",
+   "es": "La da y la acredita la empresa (no hay un documento oficial que sacar): higiene, temperaturas, alérgenos y el orden de la pasteurización",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P21",
+    "P34",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0771",
+   "es": "Formación técnica del maestro heladero",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P36"
+   ]
+  },
+  {
+   "id": "c0772",
+   "es": "Balanceo de mezclas (azúcares, sólidos y grasas), maduración y rendimiento: es inversión, no gasto",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0775",
+   "es": "Obligatorio (Ley 31/1995): trabajo en frío, cargas, cortes y quemaduras de la crepera; guantes para -20 °C",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P11",
+    "P21",
+    "P02",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0781",
+   "es": "Plan de limpieza del obrador y de la vitrina",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "Pasteurizador y mantecadora tras cada uso, cubetas, carapinas y lavaporcionador; con su registro",
+   "donde": [
+    "HELC · F4 - Personal y APPCC!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P22",
+    "P24",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "FASE 5: MARCA, CARTA Y CAPTACIÓN (semanas 8-16)",
+   "donde": [
+    "HELC · F5 - Marca y carta!A2"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Decidir el tipo de heladería y su carta",
+   "donde": [
+    "HELC · F5 - Marca y carta!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0787",
+   "es": "Con obrador propio (este plan), vitrina sin obrador, quiosco o franquicia: cada uno tiene otra inversión y otra licencia",
+   "donde": [
+    "HELC · F5 - Marca y carta!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "«Artesano» en el rótulo sólo con la calificación de tu comunidad",
+   "donde": [
+    "HELC · F5 - Marca y carta!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "Antes del rótulo",
+   "donde": [
+    "HELC · F5 - Marca y carta!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0790",
+   "es": "La condición de empresa artesana se acredita con el documento de calificación artesanal (RD 618/1998, art. 2.9), que da cada comunidad. Si no lo tienes, «ELABORACIÓN PROPIA» (RD 1021/2022, art. 11)",
+   "donde": [
+    "HELC · F5 - Marca y carta!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P10",
+    "P22",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "Carta de 18 sabores en verano y 10-12 en invierno",
+   "donde": [
+    "HELC · F5 - Marca y carta!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0792",
+   "es": "Clásicos, de temporada y uno o dos de autor; sorbetes sin lácteos en la receta para veganos y para quien no toma leche. A un cliente con alergia a la leche sírveselos sólo si los mantecas antes que los de leche, con la máquina recién limpia, y lo anotas en la ficha de alérgenos del sabor",
+   "donde": [
+    "HELC · F5 - Marca y carta!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P39",
+    "P11",
+    "P33",
+    "P40",
+    "P32",
+    "P22",
+    "P41",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Escandallo de cada sabor y precio de carta",
+   "donde": [
+    "HELC · F5 - Marca y carta!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0794",
+   "es": "Semanas 12-14",
+   "donde": [
+    "HELC · F5 - Marca y carta!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0795",
+   "es": "Calcula el coste de la bola, de la tarrina de medio litro y de la tarta helada; revísalo cada temporada (el pistacho, el cacao y la vainilla se mueven)",
+   "donde": [
+    "HELC · F5 - Marca y carta!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P37",
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "Carta de invierno: crepes, gofres, chocolate y tartas por encargo",
+   "donde": [
+    "HELC · F5 - Marca y carta!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Octubre",
+   "donde": [
+    "HELC · F5 - Marca y carta!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0798",
+   "es": "Crepes y gofres sólo si la ordenanza permite la salida de humos; si no, chocolate a la taza, tartas heladas y turrón helado de Navidad",
+   "donde": [
+    "HELC · F5 - Marca y carta!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Identidad, fotos y web con la carta de sabores",
+   "donde": [
+    "HELC · F5 - Marca y carta!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Fotos reales del obrador y del helado; la web con los sabores del día y los encargos de tartas",
+   "donde": [
+    "HELC · F5 - Marca y carta!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0804",
+   "es": "Horario de temporada y de invierno, fotos y respuesta a cada reseña",
+   "donde": [
+    "HELC · F5 - Marca y carta!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Redes sociales con el sabor del día",
+   "donde": [
+    "HELC · F5 - Marca y carta!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0807",
+   "es": "La obra, la primera tanda, el sabor nuevo de cada semana y la vuelta de la temporada",
+   "donde": [
+    "HELC · F5 - Marca y carta!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41"
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Canal de encargos de tartas heladas y para eventos",
+   "donde": [
+    "HELC · F5 - Marca y carta!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0809",
+   "es": "Antes de mayo",
+   "donde": [
+    "HELC · F5 - Marca y carta!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0810",
+   "es": "Comuniones, cumpleaños y Navidad: formulario, plazo de encargo y señal",
+   "donde": [
+    "HELC · F5 - Marca y carta!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Ofrecer helado a restaurantes de la zona (art. 3)",
+   "donde": [
+    "HELC · F5 - Marca y carta!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0812",
+   "es": "Tras la apertura",
+   "donde": [
+    "HELC · F5 - Marca y carta!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0813",
+   "es": "Sólo después de la declaración del art. 3 del RD 1021/2022 y dentro de sus límites (fase 3). Cobro a 30 días",
+   "donde": [
+    "HELC · F5 - Marca y carta!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "Alta en una plataforma de reparto para las tarrinas",
+   "donde": [
+    "HELC · F5 - Marca y carta!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P37",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0815",
+   "es": "Junio",
+   "donde": [
+    "HELC · F5 - Marca y carta!D15",
+    "HELC · F6 - Apertura y temporada!D9",
+    "HELC · F6 - Apertura y temporada!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0816",
+   "es": "Sólo tarrinas de medio litro y de litro en envase isotérmico; la comisión ronda el 30 %",
+   "donde": [
+    "HELC · F5 - Marca y carta!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P37"
+   ]
+  },
+  {
+   "id": "c0817",
+   "es": "Fiesta de apertura con degustación",
+   "donde": [
+    "HELC · F5 - Marca y carta!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0819",
+   "es": "Catas de sabores para el barrio, colegios y comercios vecinos",
+   "donde": [
+    "HELC · F5 - Marca y carta!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0821",
+   "es": "En la web, en la lista de correo y en los encargos: cada canal necesita su información previa",
+   "donde": [
+    "HELC · F5 - Marca y carta!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P36"
+   ]
+  },
+  {
+   "id": "c0823",
+   "es": "FASE 6: APERTURA, TEMPORADA Y PRIMEROS 90 DÍAS",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!A2"
+   ]
+  },
+  {
+   "id": "c0824",
+   "es": "Abrir en marzo, no en otoño",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0826",
+   "es": "El plan abre en marzo para llegar al primer invierno con la caja del verano: abriendo en octubre, el fondo se gasta antes del primer julio",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0827",
+   "es": "Pruebas de producción y cata interna",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0829",
+   "es": "Dos o tres tandas por sabor para ajustar textura, dulzor y rendimiento antes de abrir",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0832",
+   "es": "Vitrina, armarios, abatidor y la hoja del pasteurizador; corrige cualquier desviación antes de servir",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P21",
+    "P23",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "Inspección sanitaria: tener el APPCC y los registros a mano",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0835",
+   "es": "Fichas de alérgenos, trazabilidad por lote, registros de temperatura y de limpieza, formación y DDD",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P33",
+    "P36",
+    "P34",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "Revisar el seguro de mercancía y de avería antes de julio",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Comprueba que cubre la mercancía de la vitrina y de los armarios si falla el frío en pleno verano",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "Revisión del frío antes del pico de verano",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0839",
+   "es": "Frigorista",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!C10",
+    "HELC · F6 - Apertura y temporada!C17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0840",
+   "es": "Mayo",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0841",
+   "es": "Limpieza de condensadores y prueba de temperaturas: una avería en agosto es una cubeta perdida por sabor",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0842",
+   "es": "Cuadrante de julio y agosto",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0843",
+   "es": "En el pico el cuadrante va justo: prevé horas de más del titular o un extra de fin de semana",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0844",
+   "es": "Medir la merma cada semana",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0846",
+   "es": "Helado derretido, devuelto o caducado: no se recongela. Si pasa del 5-8 % de la producción, recorta cubetas",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0849",
+   "es": "Clientes al día, ticket, mercancía y personal frente a la cuenta de resultados del Excel",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P39",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0851",
+   "es": "Mira cuánta caja del verano llega a noviembre: es la que paga el invierno",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0852",
+   "es": "Plan de invierno: carta reducida y horario",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0853",
+   "es": "Septiembre",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0854",
+   "es": "Menos sabores, horario de invierno y la carta de crepes, chocolate y tartas por encargo",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0855",
+   "es": "Fin de los llamamientos y vacaciones de enero",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0856",
+   "es": "Septiembre y enero",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0857",
+   "es": "Fin de la temporada de cada fijo discontinuo por escrito al acabar septiembre, y tres semanas de cierre en enero",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41"
+   ]
+  },
+  {
+   "id": "c0858",
+   "es": "Mantenimiento del frío en las semanas de cierre",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0860",
+   "es": "Revisión de vitrinas, armarios y mantecadora con el local cerrado, antes de la siguiente temporada",
+   "donde": [
+    "HELC · F6 - Apertura y temporada!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P22",
+    "P24",
+    "P41"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GRC": {
+   "salida": "scripts/productos-digitales/business-plans-en-10/textos_en/GRC.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 73,
+   "cadenas": [
+    {
+     "id": "c0612",
+     "es": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (semanas 1-4)",
+     "en_actual": "PHASE 1: BUSINESS SETUP & TAXES (weeks 1-4)",
+     "de": "GPIZ-check c0617 (PIZC F1 - Constitución!A2)",
+     "donde": [
+      "HELC · F1 - Constitución!A2"
+     ]
+    },
+    {
+     "id": "c0613",
+     "es": "TRÁMITE",
+     "en_actual": "TASK",
+     "de": "GPAN c1132 (PANC F1!B4 / PANC F2!B4)",
+     "donde": [
+      "HELC · F1 - Constitución!B4",
+      "HELC · F2 - Local y licencia!B4",
+      "HELC · F3 - Obrador y sanidad!B4",
+      "HELC · F4 - Personal y APPCC!B4"
+     ]
+    },
+    {
+     "id": "c0618",
+     "es": "Titular / Técnico",
+     "en_actual": "Owner / Code consultant",
+     "de": "GPIZ-check c0623 (PIZC F1 - Constitución!C5)",
+     "donde": [
+      "HELC · F1 - Constitución!C5"
+     ]
+    },
+    {
+     "id": "c0619",
+     "es": "Antes de firmar el alquiler",
+     "en_actual": "Before signing the lease",
+     "de": "GPIZ-check c0624 (PIZC F1 - Constitución!D5)",
+     "donde": [
+      "HELC · F1 - Constitución!D5"
+     ]
+    },
+    {
+     "id": "c0621",
+     "es": "Elegir forma jurídica: SL unipersonal o autónomo",
+     "en_actual": "Choose your legal structure: LLC vs S corp",
+     "de": "GPIZ-check c0629 (PIZC F1 - Constitución!B7)",
+     "donde": [
+      "HELC · F1 - Constitución!B6"
+     ]
+    },
+    {
+     "id": "c0622",
+     "es": "Gestoría",
+     "en_actual": "Accountant",
+     "de": "GR c0630 (PIZC F1 - Constitución!C7 / PIZC F1 - Constitución!C9)",
+     "donde": [
+      "HELC · F1 - Constitución!C6",
+      "HELC · F1 - Constitución!C8",
+      "HELC · F1 - Constitución!C9",
+      "HELC · F1 - Constitución!C10"
+     ]
+    },
+    {
+     "id": "c0624",
+     "es": "El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF: compara las dos opciones con tu gestoría con las cifras del plan",
+     "en_actual": "The financial plan assumes an effective income tax rate of 25% (21% federal plus state), as for a C corporation. An LLC taxed as a pass-through pays through your personal return instead, and early losses carry forward as net operating losses. Compare an LLC vs S corp election with your CPA, using the plan's numbers.",
+     "de": "GPIZ-check c0632 (PIZC F1 - Constitución!E7)",
+     "donde": [
+      "HELC · F1 - Constitución!E6"
+     ]
+    },
+    {
+     "id": "c0625",
+     "es": "Constituir la SL o darte de alta como autónomo",
+     "en_actual": "Form the LLC (or corporation) with your state",
+     "de": "GPIZ-check c0633 (PIZC F1 - Constitución!B8)",
+     "donde": [
+      "HELC · F1 - Constitución!B7"
+     ]
+    },
+    {
+     "id": "c0626",
+     "es": "Notaría / Gestoría",
+     "en_actual": "Attorney / CPA",
+     "de": "GPIZ-check c0634 (PIZC F1 - Constitución!C8)",
+     "donde": [
+      "HELC · F1 - Constitución!C7"
+     ]
+    },
+    {
+     "id": "c0627",
+     "es": "Semanas 1-2",
+     "en_actual": "Weeks 1-2",
+     "de": "GPIZ-check c0635 (PIZC F1 - Constitución!D8)",
+     "donde": [
+      "HELC · F1 - Constitución!D7"
+     ]
+    },
+    {
+     "id": "c0628",
+     "es": "La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)",
+     "en_actual": "Filing fees, annual reports and franchise taxes vary by state. Check your Secretary of State's website before you file.",
+     "de": "GPIZ-check c0636 (PIZC F1 - Constitución!E8)",
+     "donde": [
+      "HELC · F1 - Constitución!E7"
+     ]
+    },
+    {
+     "id": "c0630",
+     "es": "Semana 2",
+     "en_actual": "Week 2",
+     "de": "GPIZ-check c0638 (PIZC F1 - Constitución!D9 / PIZC F1 - Constitución!D10)",
+     "donde": [
+      "HELC · F1 - Constitución!D8",
+      "HELC · F1 - Constitución!D9",
+      "HELC · F1 - Constitución!D10",
+      "HELC · F1 - Constitución!D12"
+     ]
+    },
+    {
+     "id": "c0634",
+     "es": "Alta en la Seguridad Social (administrador o autónomo)",
+     "en_actual": "Workers' compensation insurance and payroll account",
+     "de": "GPIZ-check c0640 (PIZC F1 - Constitución!B10)",
+     "donde": [
+      "HELC · F1 - Constitución!B10"
+     ]
+    },
+    {
+     "id": "c0635",
+     "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+     "en_actual": "Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.",
+     "de": "GPIZ-check c0641 (PIZC F1 - Constitución!E10)",
+     "donde": [
+      "HELC · F1 - Constitución!E10"
+     ]
+    },
+    {
+     "id": "c0636",
+     "es": "Certificado digital",
+     "en_actual": "IRS and state tax portal online accounts",
+     "de": "GR c0642 (PIZC F1 - Constitución!B11)",
+     "donde": [
+      "HELC · F1 - Constitución!B11"
+     ]
+    },
+    {
+     "id": "c0639",
+     "es": "Cuenta bancaria y tarjeta del negocio",
+     "en_actual": "Business bank account and business card",
+     "de": "GPIZ-check c0644 (PIZC F1 - Constitución!B12)",
+     "donde": [
+      "HELC · F1 - Constitución!B12"
+     ]
+    },
+    {
+     "id": "c0641",
+     "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+     "en_actual": "Accountant / bookkeeper and a POS that reports sales tax",
+     "de": "GPIZ-check c0646 (PIZC F1 - Constitución!B13)",
+     "donde": [
+      "HELC · F1 - Constitución!B13"
+     ]
+    },
+    {
+     "id": "c0642",
+     "es": "Semanas 2-4",
+     "en_actual": "Weeks 2-4",
+     "de": "GPIZ-check c0647 (PIZC F1 - Constitución!D13 / PIZC F1 - Constitución!D14)",
+     "donde": [
+      "HELC · F1 - Constitución!D13",
+      "HELC · F1 - Constitución!D14",
+      "HELC · F1 - Constitución!D16"
+     ]
+    },
+    {
+     "id": "c0644",
+     "es": "Presentar el plan al banco y pedir dos ofertas de préstamo",
+     "en_actual": "Take the plan to two lenders and compare loan offers",
+     "de": "GPIZ-check c0649 (PIZC F1 - Constitución!B14)",
+     "donde": [
+      "HELC · F1 - Constitución!B14"
+     ]
+    },
+    {
+     "id": "c0647",
+     "es": "Corredor de seguros",
+     "en_actual": "Insurance broker",
+     "de": "GPIZ-check c0652 (PIZC F1 - Constitución!C15)",
+     "donde": [
+      "HELC · F1 - Constitución!C15",
+      "HELC · F6 - Apertura y temporada!C9"
+     ]
+    },
+    {
+     "id": "c0648",
+     "es": "Antes de la obra",
+     "en_actual": "Before construction",
+     "de": "GPIZ-check c0653 (PIZC F1 - Constitución!D15 / PIZC F2 - Local, humos y licencia!D11)",
+     "donde": [
+      "HELC · F1 - Constitución!D15",
+      "HELC · F2 - Local y licencia!D12",
+      "HELC · F2 - Local y licencia!D13"
+     ]
+    },
+    {
+     "id": "c0650",
+     "es": "Registro de la marca en la OEPM",
+     "en_actual": "Trademark search and registration (USPTO)",
+     "de": "GPIZ-check c0655 (PIZC F1 - Constitución!B16)",
+     "donde": [
+      "HELC · F1 - Constitución!B16"
+     ]
+    },
+    {
+     "id": "c0658",
+     "es": "Semanas 3-6",
+     "en_actual": "Weeks 3-6",
+     "de": "GPIZ-check c0663 (PIZC F2 - Local, humos y licencia!D5)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D5"
+     ]
+    },
+    {
+     "id": "c0661",
+     "es": "Técnico / Distribuidora",
+     "en_actual": "Electrician / Utility",
+     "de": "GPIZ-check c0666 (PIZC F2 - Local, humos y licencia!C6)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C6"
+     ]
+    },
+    {
+     "id": "c0662",
+     "es": "Antes de firmar",
+     "en_actual": "Before signing",
+     "de": "GPIZ-check c0667 (PIZC F2 - Local, humos y licencia!D6 / PIZC F2 - Local, humos y licencia!D7)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D6",
+      "HELC · F2 - Local y licencia!D7",
+      "HELC · F2 - Local y licencia!D8"
+     ]
+    },
+    {
+     "id": "c0665",
+     "es": "Técnico",
+     "en_actual": "Architect / engineer",
+     "de": "GR c0670 (PIZC F2 - Local, humos y licencia!C7)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C7"
+     ]
+    },
+    {
+     "id": "c0667",
+     "es": "Negociar el alquiler: carencia de obra y fianza",
+     "en_actual": "Negotiate the lease: free-rent period during build-out and security deposit",
+     "de": "GPIZ-check c0672 (PIZC F2 - Local, humos y licencia!B8)",
+     "donde": [
+      "HELC · F2 - Local y licencia!B8"
+     ]
+    },
+    {
+     "id": "c0670",
+     "es": "Titular / Abogado",
+     "en_actual": "Owner / Attorney",
+     "de": "GPIZ-check c0675 (PIZC F2 - Local, humos y licencia!C9)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C9"
+     ]
+    },
+    {
+     "id": "c0671",
+     "es": "Semana 6",
+     "en_actual": "Week 6",
+     "de": "GPIZ-check c0676 (PIZC F2 - Local, humos y licencia!D9)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D9"
+     ]
+    },
+    {
+     "id": "c0674",
+     "es": "Arquitecto/a o ingeniero/a",
+     "en_actual": "Architect / Engineer",
+     "de": "GPIZ-check c0679 (PIZC F2 - Local, humos y licencia!C10)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C10"
+     ]
+    },
+    {
+     "id": "c0675",
+     "es": "Semanas 6-8",
+     "en_actual": "Weeks 6-8",
+     "de": "GPIZ-check c0680 (PIZC F2 - Local, humos y licencia!D10)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D10"
+     ]
+    },
+    {
+     "id": "c0678",
+     "es": "Técnico / Ayuntamiento",
+     "en_actual": "Owner / City planning office",
+     "de": "GPIZ-check c0683 (PIZC F2 - Local, humos y licencia!C11 / PIZC F2 - Local, humos y licencia!C12)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C11",
+      "HELC · F2 - Local y licencia!C12",
+      "HELC · F2 - Local y licencia!C13"
+     ]
+    },
+    {
+     "id": "c0679",
+     "es": "Semanas 6-8, antes de empezar la obra",
+     "en_actual": "Weeks 6-8, before construction starts",
+     "de": "GPIZ-check c0686 (PIZC F2 - Local, humos y licencia!D12)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D11"
+     ]
+    },
+    {
+     "id": "c0685",
+     "es": "Solicitar la autorización de la terraza",
+     "en_actual": "Apply for the patio permit",
+     "de": "GPIZ-check c0688 (PIZC F2 - Local, humos y licencia!B13)",
+     "donde": [
+      "HELC · F2 - Local y licencia!B14"
+     ]
+    },
+    {
+     "id": "c0686",
+     "es": "Titular / Ayuntamiento",
+     "en_actual": "Owner / City",
+     "de": "GPIZ-check c0689 (PIZC F2 - Local, humos y licencia!C13)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C14"
+     ]
+    },
+    {
+     "id": "c0690",
+     "es": "Constructor",
+     "en_actual": "Contractor",
+     "de": "GR c0697 (PIZC F2 - Local, humos y licencia!C15)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C15"
+     ]
+    },
+    {
+     "id": "c0691",
+     "es": "Semanas 8-12",
+     "en_actual": "Weeks 8-12",
+     "de": "GPIZ-check c0698 (PIZC F2 - Local, humos y licencia!D15 / PIZC F2 - Local, humos y licencia!D16)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D15",
+      "HELC · F2 - Local y licencia!D16"
+     ]
+    },
+    {
+     "id": "c0698",
+     "es": "Semanas 10-12",
+     "en_actual": "Weeks 10-12",
+     "de": "GPIZ-check c0761 (PIZC F4 - Personal y prevención!D7)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D17",
+      "HELC · F2 - Local y licencia!D18"
+     ]
+    },
+    {
+     "id": "c0703",
+     "es": "Aumento de potencia, boletín eléctrico y certificado final de obra",
+     "en_actual": "Electrical upgrade, final inspections and certificate of occupancy",
+     "de": "GPIZ-check c0708 (PIZC F2 - Local, humos y licencia!B19)",
+     "donde": [
+      "HELC · F2 - Local y licencia!B19"
+     ]
+    },
+    {
+     "id": "c0704",
+     "es": "Instalador autorizado / Técnico",
+     "en_actual": "Licensed electrician / Inspector",
+     "de": "GPIZ-check c0709 (PIZC F2 - Local, humos y licencia!C19)",
+     "donde": [
+      "HELC · F2 - Local y licencia!C19"
+     ]
+    },
+    {
+     "id": "c0705",
+     "es": "Durante la obra y al acabarla",
+     "en_actual": "During and after construction",
+     "de": "GPIZ-check c0710 (PIZC F2 - Local, humos y licencia!D19)",
+     "donde": [
+      "HELC · F2 - Local y licencia!D19"
+     ]
+    },
+    {
+     "id": "c0710",
+     "es": "Semanas 8-10",
+     "en_actual": "Weeks 8-10",
+     "de": "GPIZ-check c0717 (PIZC F3 - Cocina, horno y sanidad!D6)",
+     "donde": [
+      "HELC · F3 - Obrador y sanidad!D5",
+      "HELC · F3 - Obrador y sanidad!D6"
+     ]
+    },
+    {
+     "id": "c0718",
+     "es": "Titular / Gestoría",
+     "en_actual": "Owner / Health department",
+     "de": "GPIZ-check c0723 (PIZC F3 - Cocina, horno y sanidad!C8)",
+     "donde": [
+      "HELC · F3 - Obrador y sanidad!C8"
+     ]
+    },
+    {
+     "id": "c0725",
+     "es": "Consultor / Titular",
+     "en_actual": "Consultant / Owner",
+     "de": "GPIZ-check c0727 (PIZC F3 - Cocina, horno y sanidad!C9)",
+     "donde": [
+      "HELC · F3 - Obrador y sanidad!C10"
+     ]
+    },
+    {
+     "id": "c0747",
+     "es": "Semanas 10-14",
+     "en_actual": "Weeks 10-14",
+     "de": "GPIZ-check c0751 (PIZC F3 - Cocina, horno y sanidad!D18 / PIZC F5 - Carta, marca y delivery!D9)",
+     "donde": [
+      "HELC · F3 - Obrador y sanidad!D19",
+      "HELC · F5 - Marca y carta!D7"
+     ]
+    },
+    {
+     "id": "c0751",
+     "es": "Copiar la tabla salarial del convenio provincial de hostelería",
+     "en_actual": "Set pay rates against the state and local minimum wage",
+     "de": "GPIZ-check c0755 (PIZC F4 - Personal y prevención!B5)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!B5"
+     ]
+    },
+    {
+     "id": "c0752",
+     "es": "Semana 10",
+     "en_actual": "Week 10",
+     "de": "GPIZ-check c0756 (PIZC F4 - Personal y prevención!D5)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!D5"
+     ]
+    },
+    {
+     "id": "c0758",
+     "es": "Semana 12",
+     "en_actual": "Week 12",
+     "de": "GPIZ-check c0767 (PIZC F4 - Personal y prevención!D9)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!D7"
+     ]
+    },
+    {
+     "id": "c0763",
+     "es": "Registro de jornada",
+     "en_actual": "Time clock and overtime records",
+     "de": "GPIZ-check c0763 (PIZC F4 - Personal y prevención!B8)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!B9"
+     ]
+    },
+    {
+     "id": "c0767",
+     "es": "Si contratas a menores",
+     "en_actual": "If you hire minors",
+     "de": "GPIZ-check c0773 (PIZC F4 - Personal y prevención!D11)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!D10"
+     ]
+    },
+    {
+     "id": "c0769",
+     "es": "Formación de manipuladores de alimentos",
+     "en_actual": "Food handler cards and a Certified Food Protection Manager (CFPM)",
+     "de": "GPIZ-check c0775 (PIZC F4 - Personal y prevención!B12)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!B11"
+     ]
+    },
+    {
+     "id": "c0773",
+     "es": "Plan de prevención de riesgos laborales",
+     "en_actual": "OSHA basics: safety plan and training",
+     "de": "GPIZ-check c0779 (PIZC F4 - Personal y prevención!B14)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!B13"
+     ]
+    },
+    {
+     "id": "c0774",
+     "es": "Servicio de prevención",
+     "en_actual": "Insurance carrier / Consultant",
+     "de": "GPIZ-check c0780 (PIZC F4 - Personal y prevención!C14 / PIZC F4 - Personal y prevención!C15)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!C13",
+      "HELC · F4 - Personal y APPCC!C14"
+     ]
+    },
+    {
+     "id": "c0776",
+     "es": "Vigilancia de la salud de la plantilla",
+     "en_actual": "Employee health policy and first aid",
+     "de": "GPIZ-check c0782 (PIZC F4 - Personal y prevención!B15)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!B14"
+     ]
+    },
+    {
+     "id": "c0777",
+     "es": "Al contratar",
+     "en_actual": "At hire",
+     "de": "GPIZ-check c0783 (PIZC F4 - Personal y prevención!D15)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!D14"
+     ]
+    },
+    {
+     "id": "c0778",
+     "es": "Reconocimientos médicos ofrecidos a cada persona que entra",
+     "en_actual": "Have every new hire sign an employee health agreement (report illness symptoms; Food Code 2-201) and stock a first aid kit.",
+     "de": "GPIZ-check c0784 (PIZC F4 - Personal y prevención!E15)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!E14"
+     ]
+    },
+    {
+     "id": "c0779",
+     "es": "Empresa del ROESB",
+     "en_actual": "Licensed pest control operator",
+     "de": "GPIZ-check c0786 (PIZC F4 - Personal y prevención!C16)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!C15"
+     ]
+    },
+    {
+     "id": "c0780",
+     "es": "Contrato con una empresa inscrita en el ROESB: forma parte de los prerrequisitos del APPCC",
+     "en_actual": "Contract with a licensed pest control operator: it is part of the prerequisites of your written food safety plan.",
+     "de": "GPIZ-check c0787 (PIZC F4 - Personal y prevención!E16)",
+     "donde": [
+      "HELC · F4 - Personal y APPCC!E15"
+     ]
+    },
+    {
+     "id": "c0786",
+     "es": "Semana 8",
+     "en_actual": "Week 8",
+     "de": "GPIZ-check c0793 (PIZC F5 - Carta, marca y delivery!D5)",
+     "donde": [
+      "HELC · F5 - Marca y carta!D5"
+     ]
+    },
+    {
+     "id": "c0800",
+     "es": "Diseñador/a",
+     "en_actual": "Designer",
+     "de": "GPIZ-check c0808 (PIZC F5 - Carta, marca y delivery!C12)",
+     "donde": [
+      "HELC · F5 - Marca y carta!C10"
+     ]
+    },
+    {
+     "id": "c0801",
+     "es": "Semanas 8-14",
+     "en_actual": "Weeks 8-14",
+     "de": "GPIZ-check c0809 (PIZC F5 - Carta, marca y delivery!D12)",
+     "donde": [
+      "HELC · F5 - Marca y carta!D10"
+     ]
+    },
+    {
+     "id": "c0803",
+     "es": "Ficha de Google Business y reseñas",
+     "en_actual": "Google Business Profile and reviews",
+     "de": "GPIZ-check c0811 (PIZC F5 - Carta, marca y delivery!B13)",
+     "donde": [
+      "HELC · F5 - Marca y carta!B11"
+     ]
+    },
+    {
+     "id": "c0806",
+     "es": "Desde la obra",
+     "en_actual": "From construction",
+     "de": "GPIZ-check c0814 (PIZC F5 - Carta, marca y delivery!D14)",
+     "donde": [
+      "HELC · F5 - Marca y carta!D12"
+     ]
+    },
+    {
+     "id": "c0818",
+     "es": "Semana de apertura",
+     "en_actual": "Opening week",
+     "de": "GPIZ-check c0817 (PIZC F5 - Carta, marca y delivery!D15)",
+     "donde": [
+      "HELC · F5 - Marca y carta!D16"
+     ]
+    },
+    {
+     "id": "c0820",
+     "es": "Cláusula informativa de protección de datos",
+     "en_actual": "Privacy policy and consent for your website and ordering",
+     "de": "GPIZ-check c0821 (PIZC F5 - Carta, marca y delivery!B17)",
+     "donde": [
+      "HELC · F5 - Marca y carta!B17"
+     ]
+    },
+    {
+     "id": "c0828",
+     "es": "Semana previa",
+     "en_actual": "Week before opening",
+     "de": "GPIZ-check c0829 (PIZC F6 - Apertura y 90 días!D6)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!D6"
+     ]
+    },
+    {
+     "id": "c0830",
+     "es": "Comprobar temperaturas y registros del primer día",
+     "en_actual": "Check temperatures and records on day one",
+     "de": "GPIZ-check c0831 (PIZC F6 - Apertura y 90 días!B7)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!B7"
+     ]
+    },
+    {
+     "id": "c0831",
+     "es": "Día 1",
+     "en_actual": "Day 1",
+     "de": "GPIZ-check c0832 (PIZC F6 - Apertura y 90 días!D7)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!D7"
+     ]
+    },
+    {
+     "id": "c0834",
+     "es": "Desde el día 1",
+     "en_actual": "From day 1",
+     "de": "GPIZ-check c0835 (PIZC F6 - Apertura y 90 días!D8)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!D8"
+     ]
+    },
+    {
+     "id": "c0847",
+     "es": "Comparar ventas y costes reales con el plan cada mes",
+     "en_actual": "Compare actual sales and costs with the plan each month",
+     "de": "GPIZ-check c0852 (PIZC F6 - Apertura y 90 días!B14)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!B13"
+     ]
+    },
+    {
+     "id": "c0848",
+     "es": "Mensual",
+     "en_actual": "Monthly",
+     "de": "GR c0848 (PIZC F6 - Apertura y 90 días!D13 / PIZC F6 - Apertura y 90 días!D14)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!D13",
+      "HELC · F6 - Apertura y temporada!D14"
+     ]
+    },
+    {
+     "id": "c0850",
+     "es": "Seguir la tesorería mes a mes y el saldo mínimo",
+     "en_actual": "Track cash flow month by month and the minimum balance",
+     "de": "GPIZ-check c0854 (PIZC F6 - Apertura y 90 días!B15)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!B14"
+     ]
+    },
+    {
+     "id": "c0859",
+     "es": "Enero",
+     "en_actual": "January",
+     "de": "GPIZ-check c0857 (PIZC F6 - Apertura y 90 días!D16)",
+     "donde": [
+      "HELC · F6 - Apertura y temporada!D17"
+     ]
+    }
+   ]
+  }
+ }
+}

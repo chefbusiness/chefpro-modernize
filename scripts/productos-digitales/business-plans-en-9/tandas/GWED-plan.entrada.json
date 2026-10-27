@@ -1,0 +1,3019 @@
+{
+ "tanda": "GWED-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-9/textos_en/GWED-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 187,
+ "n_palabras": 3967,
+ "pistas": {
+  "P01": "Glosario §9: guests · guest count · final headcount (nunca covers ni customers)",
+  "P02": "Glosario §9: events per year · events of the average size",
+  "P03": "Glosario §9: venue (el negocio) / property (el inmueble); nunca «finca», «estate» ni «farm» como nombre",
+  "P04": "Glosario §9: maximum occupancy / occupant load (fire marshal) · sprinklers · egress",
+  "P05": "D160: caso US = 90 invitados por evento (media del año 1) × $68 por invitado (lo que factura el VENUE, sin sales tax: venue rental & services + caterer commission) × 100 eventos (35 weddings, 25 corporate, 30 private celebrations, 10 micro weddings / elopements); el venue no vende comida ni alcohol; sin cifras del ES ni historia de versiones; mezcla (research §8, Kit): weddings 130 guests, corporate 70, private 80, micro 30 → 9,000 guests / 100 events = 90; la capacidad (200) está más abajo",
+  "P06": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P07": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P08": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P09": "Glosario §9 (e): sales tax (el venue: site fee al tipo de ejemplo; la comisión, 0 %)",
+  "P10": "Glosario: aparcamiento y base del vehículo → «commissary & truck parking»",
+  "P11": "Glosario §9: caterer commission (% of the caterer's F&B sales), nunca «canon» ni «royalty»",
+  "P12": "Glosario §9: exclusive caterer · preferred vendor list · in-house catering",
+  "P13": "Glosario §9: venue coordinator (del venue) ≠ day-of coordinator (de la pareja)",
+  "P14": "Glosario §9: setup / teardown (breakdown) · load-in / load-out",
+  "P15": "D160: caso US = 90 invitados por evento (media del año 1) × $68 por invitado (lo que factura el VENUE, sin sales tax: venue rental & services + caterer commission) × 100 eventos (35 weddings, 25 corporate, 30 private celebrations, 10 micro weddings / elopements); el venue no vende comida ni alcohol; sin cifras del ES ni historia de versiones; por mezcla (Kit): wedding $9,000 site fee + 10% × $110 F&B × 130 guests; corporate $3,500 + 10% × $50 × 70; private $4,000 + 10% × $55 × 80; micro $2,000 + 10% × $80 × 30 → ≈ $68 por invitado; NO es lo que paga la pareja por la boda entera",
+  "P16": "Glosario §9: rehearsal · micro wedding / elopement · rehearsal dinner",
+  "P17": "D160: caso US = 90 invitados por evento (media del año 1) × $68 por invitado (lo que factura el VENUE, sin sales tax: venue rental & services + caterer commission) × 100 eventos (35 weddings, 25 corporate, 30 private celebrations, 10 micro weddings / elopements); el venue no vende comida ni alcohol; sin cifras del ES ni historia de versiones; el techo lo ponen los sábados de temporada (≈ 30-35 al año, Kit); es el MISMO dato del P&L, el equilibrio, los escenarios y las horas de personal",
+  "P18": "D160: +8 % en el año 2 (referrals, empresas que repiten, planners); se aplica a los invitados por evento con los mismos eventos = eventos en dólares; el personal crece con las incorporaciones de Staffing, no con este %",
+  "P19": "Glosario §9: peak / shoulder / off-peak (off-season)",
+  "P20": "D160: +5 % sobre el año 2; el techo lo ponen los sábados de temporada y la capacidad",
+  "P21": "D160: 88 % de las ventas del venue = venue rental & event services; el resto (12 %) = caterer commission (10 % de la venta de F&B del caterer). Es un INPUT",
+  "P22": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P23": "Glosario §9 (e): ASCAP/BMI/SESAC",
+  "P24": "Glosario §9: ADA-compliant restrooms",
+  "P25": "Glosario §9: standby generator",
+  "P26": "D160: 12 % de venue rental & services = coste directo del evento (limpieza, restrooms, generator fuel, parking attendants y security, consumibles de montaje); ≈ $1,000 una boda, $500 corporate o private, $300 micro (Kit, = calculadora)",
+  "P27": "D160: la comisión del caterer no tiene coste para el venue (0 %)",
+  "P28": "D160: 1.5 % (consumibles de montaje: candles, tape, restroom supplies…)",
+  "P29": "Glosario §9: planners and venue marketplaces (Peerspace); The Knot / WeddingWire son storefronts (coste fijo)",
+  "P30": "D160: 10 % de las ventas llega por planners y venue marketplaces (Peerspace y similares); las storefronts de The Knot / WeddingWire son coste fijo de marketing, no comisión",
+  "P31": "Glosario §9: retainer (aplicado al precio) · booking; «non-refundable» solo con la tabla de cancelación",
+  "P32": "D160: 15 % de comisión sobre esas reservas (Kit estimate: marketplaces publican 15-20 %; compruébalo en tu contrato)",
+  "P33": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P34": "D160: 2 % card processing (los retainers se cobran por ACH o tarjeta)",
+  "P35": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P36": "Glosario §9 (e): LLC",
+  "P37": "Glosario §9: caterer's prep & warming kitchen",
+  "P38": "D160: $5,000/mes por una propiedad con un granero sin convertir (Kit estimate, sin fuente de mercado: «get local quotes»); pacta la renta durante el permiso (meses de renta previa abajo)",
+  "P39": "Glosario §9: security deposit / damage deposit (refundable, itemized) — en la inversión: lease security deposit",
+  "P40": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P41": "Glosario §9: well (¿public water system?: ask your state drinking water program)",
+  "P42": "D160: $2,000/mes (power, propane, water/well, internet, trash; Kit estimate)",
+  "P43": "Glosario §9 (e): county / state",
+  "P44": "D160: $12,000/año = general liability, property, umbrella, host liquor liability y workers' comp (Kit estimate, sin tarifa leída: «get quotes from an agent who insures venues»)",
+  "P45": "Glosario §9: open house · bridal show",
+  "P46": "D160: SBA 7(a) al 10 % a 10 años, sin interest-only; el préstamo lo calcula \"Financing\". Decisión de orquestador 1: el arrendamiento, CONTANDO LAS PRÓRROGAS, debe durar al menos lo que el préstamo («SBA lenders typically require…; confirm with your lender»)",
+  "P47": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P48": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P49": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P50": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P51": "Glosario §9: tent / pergola / ceremony site",
+  "P52": "Glosario §9: zoning approval: conditional (special) use permit + certificate of occupancy (Group A-2)",
+  "P53": "D160: 200 invitados sentados; la occupant load la fija y la rotula el fire marshal",
+  "P54": "D160: 4 meses de renta antes de abrir (CUP y obra); mejor: lease contingent on CUP approval y renta reducida durante el permiso",
+  "P55": "D162: 10 % de las partidas de OBRA (por fórmula); sprinklers con depósito y bomba, una fosa séptica nueva o un condado exigente pueden doblar partidas: «get local quotes»",
+  "P56": "D160: 10 días medios de cobro (retainers y pagos por calendario: 25 % al firmar, 35 % a 180 días, 40 % a 30 días del evento)",
+  "P57": "D160: 14 días medios de pago a proveedores",
+  "P58": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P59": "D162: drawings para el change of occupancy a assembly (A-2) y el building permit",
+  "P60": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P61": "D162: CUP / SUP del condado (audiencia, estudios de tráfico y de la fosa séptica, tasas); sin cifras de condados concretos",
+  "P62": "D162: la obra cosmética es la parte pequeña: sprinklers, fosa séptica, aseos y accesibilidad mandan (research §4)",
+  "P63": "D162: «sprinklers need city water; a tank and fire pump, a new septic system or a strict county can double this line» (research §4, sin cifras de anécdotas)",
+  "P64": "Glosario §9: rain plan / inclement-weather plan",
+  "P65": "D162: nota de la partida del ejemplo US (rótulo fijado de la col. A en \"fijos_en\"); sin marcas ni normas españolas: solo rangos con fuente leída o «get local quotes»",
+  "P66": "D162: aseos ADA; la ampliación de la fosa séptica se presupuesta aparte (ingeniero)",
+  "P67": "D162: cocina de apoyo (prep & warming), no de producción: el caterer cocina en su commissary; health plan review si tu condado lo exige",
+  "P68": "Glosario §9: decibel limit / sound meter, music curfew (county ordinance + CUP)",
+  "P69": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P70": "D162: grava, iluminación y plazas accesibles (ADA)",
+  "P71": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P72": "Glosario §9 (e): CPA / bookkeeper",
+  "P73": "D162: LLC + abogado para el arrendamiento (prórrogas, opción de compra, consentimiento a la obra y garantía: decisión de orquestador 1) y los contratos",
+  "P74": "Glosario §9: The Knot / WeddingWire storefront (listing)",
+  "P75": "Glosario §9: seasonal employee (W-2)",
+  "P76": "D163: el dueño cobra $4,500/mes en nómina, por debajo de la mediana nacional de los event planners (BLS, sin cifra): «draw the rest from profit»; el tratamiento fiscal del sueldo de un socio de LLC depende de la elección fiscal: «ask your CPA»",
+  "P77": "Instrucciones: la hoja de mando lista guests per event, revenue per guest excl. sales tax, events per year, mezcla venue rental & services / caterer commission, direct event cost, rent",
+  "P78": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P79": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P80": "SPEC §4.1 línea 4: sin divisores 1,21 → «to turn a price that includes sales tax into the pre-tax price, divide by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; el venue factura venue rental & services (8 % de ejemplo) y la comisión del caterer (0 %); el menú y la barra los factura el caterer",
+  "P81": "D167: Mes 1 = MARZO (el permiso y la obra se cierran en el invierno anterior); picos octubre, septiembre y junio",
+  "P82": "El Word cita las cifras de este Excel (si cambias el libro, manda el Excel); la calculadora de precios y los contratos del kit usan los mismos porcentajes de cobro y cancelación",
+  "P83": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P84": "D165 fila → «Month 1 of the plan» · «March» · «Plan decision» · nota: el permiso y la obra se cierran en el invierno anterior; picos octubre, septiembre y junio; valle enero",
+  "P85": "D165 fila → «Event mix of the plan» · «100 events: 35 weddings, 25 corporate, 30 private celebrations, 10 micro weddings» · «Kit estimate» · nota: weddings 130 guests × ($9,000 site fee + 10% of $110 F&B per guest), corporate 70 × ($3,500 + 10% of $50), private 80 × ($4,000 + 10% of $55), micro 30 × ($2,000 + 10% of $80), excl. sales tax",
+  "P86": "D165 fila → «Saturday ceiling» · «about 30-35 prime Saturdays a year» · «Kit estimate» · nota: las 35 bodas no caben todas en sábados de temporada: viernes, domingos y fuera de temporada a menor tarifa; el libro no comprueba este techo",
+  "P87": "D165 fila (sustituye «Bodas en España») → «Guests per wedding» · «about 100-150 at a barn venue» · «Kit estimate; national wedding studies publish yearly averages: check the latest» · nota: el caso usa 130 por boda y 90 de media con los demás eventos (decisión de orquestador 4: sin cifras de The Knot)",
+  "P88": "D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura 12 meses",
+  "P89": "D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del caterer",
+  "P90": "D165 fila → «Caterer commission» · «about 10% of the caterer's food & beverage sales at the venue» · «Kit assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; liquidación mensual con derecho de auditoría",
+  "P91": "D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, el resto 1; servers y bartenders los pone el caterer",
+  "P92": "D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & services; 0% on the caterer commission)» · «Your state's department of revenue» · nota: algunos estados gravan el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas",
+  "P93": "D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral hasta la revisión D174)",
+  "P94": "D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, altavoces de espaldas a los vecinos",
+  "P95": "D169: NO cruza (no es norma US): elimínala o sustitúyela por el food safety plan del caterer",
+  "P96": "D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)",
+  "P97": "D165 fila (sustituye «agua de pozo RD 3/2023») → «Well water» · «a well that serves your guests may count as a public water system» · «Ask your state drinking water program» · nota: análisis y permiso antes del primer evento (sin citar 40 CFR 141.2 hasta la revisión D174)",
+  "P98": "D165 fila (sustituye «convenio») → «Minimum wage» · «federal $7.25/h + your state» · «U.S. Department of Labor (dol.gov)» · nota: el plan presupuesta ≥ $17/h para los attendants; teclea el suelo de tu estado en \"0. Assumptions\""
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "finca de eventos": "wedding venue / event venue (tipos: barn venue, estate venue, farm venue, banquet hall)",
+  "alquiler del espacio": "venue rental fee / site fee (+ «venue fee» si es % de F&B)",
+  "catering exclusivo · homologados": "exclusive caterer · preferred vendor list · in-house catering",
+  "canon del catering": "caterer commission (% of F&B) / exclusivity fee (nunca «canon» ni «royalty»)",
+  "invitados · recuento final": "guests · guest count · final headcount (due X days before)",
+  "mínimo garantizado": "guaranteed guest count · food & beverage minimum (del caterer)",
+  "señal / reserva": "retainer (aplicado al precio) · booking deposit; «non-refundable» solo con la tabla de cancelación",
+  "fianza por daños": "security deposit / damage deposit (refundable, itemized)",
+  "barra libre · resopón": "open bar / hosted bar (del caterer) · late-night snack",
+  "coordinación del día": "venue coordinator (del venue) ≠ day-of coordinator (de la pareja)",
+  "montaje y recogida": "setup / teardown (breakdown) · load-in / load-out",
+  "plan B de lluvia": "rain plan / inclement-weather plan (tent backup)",
+  "aforo": "maximum occupancy / occupant load (lo fija el fire marshal)",
+  "calificación urbanística / licencia de actividad": "zoning approval: conditional (special) use permit · certificate of occupancy (assembly, Group A-2)",
+  "prueba de menú": "tasting",
+  "visitas · jornada de puertas abiertas": "venue tours / site visits · open house",
+  "temporada alta / media / baja": "peak / shoulder / off-peak (off-season)",
+  "preboda · boda íntima · cena de la víspera": "rehearsal · micro wedding / elopement · rehearsal dinner",
+  "suite de novios": "bridal suite · groom's lounge",
+  "proveedores externos": "outside vendors · outside catering fee · cake-cutting fee · corkage fee",
+  "portales de bodas": "The Knot / WeddingWire storefront (listing) · venue marketplaces (Peerspace)",
+  "seguro RC · certificado": "general liability · host liquor liability · event insurance · COI / additional insured",
+  "fijo discontinuo": "seasonal employee (W-2)",
+  "grupo electrógeno · limitador": "standby generator · decibel limit / sound meter, music curfew",
+  "aseos adaptados · saneamiento · pozo": "ADA-compliant restrooms · septic system · well (public water system)",
+  "software de reservas": "venue management software (Tripleseat, Perfect Venue, HoneyBook)",
+  "invitado / ticket / días": "guests · revenue per guest · events per year (nunca «covers» ni «average check»)",
+  "dossier": "wedding brochure / pricing guide",
+  "(e) finca": "venue (o «property» para el inmueble)",
+  "(e) canon": "caterer commission",
+  "(e) IVA": "sales tax",
+  "(e) calificación urbanística/licencia": "CUP + certificate of occupancy",
+  "(e) autoprotección": "fire code, occupant load, sprinklers",
+  "(e) comida testigo": "no aplica (eliminar)",
+  "(e) 14 alérgenos": "9 major allergens (caterer)",
+  "(e) fijos discontinuos": "seasonal W-2",
+  "(e) TRLGDCU / fuero del consumidor": "state consumer law; governing law & venue clause",
+  "(e) arras / señal": "retainer",
+  "(e) SL / autónomo": "LLC",
+  "(e) gestoría": "CPA / bookkeeper",
+  "(e) ayuntamiento / comunidad": "county / state",
+  "(e) SGAE": "ASCAP/BMI/SESAC",
+  "(e) ceremonia civil (Ley 15/2015)": "el venue acoge; licencia (county clerk) y officiant según el estado"
+ },
+ "pestanas_es_en": {
+  "WEDP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "WEDC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Finca y licencia": "Phase 2 - Zoning & Permits",
+   "F3 - Obra y equipamiento": "Phase 3 - Build-Out & Equipment",
+   "F4 - Personal y catering": "Phase 4 - Staff & Caterer",
+   "F5 - Marca y reservas": "Phase 5 - Brand & Bookings",
+   "F6 - Temporada y eventos": "Phase 6 - Season & Events",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US WEDDING VENUE BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-finca-eventos-bodas» de AI Chef Pro.": "This file is part of the Wedding Venue Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — FINCA DE EVENTOS Y BODAS": "WEDDING VENUE STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Finca de Eventos y Bodas": "HOW TO USE THIS WORKBOOK — Wedding Venue Financial Projections",
+  "PLAN DE NEGOCIO: FINCA DE EVENTOS Y BODAS": "WEDDING VENUE BUSINESS PLAN: BARN & EVENT VENUE",
+  "Inversión inicial estimada — finca arrendada con edificaciones existentes y catering exclusivo concesionado": "Estimated Startup Costs — barn conversion on a leased property, 200 guests, exclusive caterer",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — barn conversion on a leased property; replace with your own quotes.",
+  "Proyecto técnico y dirección de obra": "Architect, engineer & code consultant (change of occupancy)",
+  "Licencias, tasas, calificación urbanística y prestación compensatoria o canon": "Conditional use permit, zoning hearing, traffic & septic studies, permit fees",
+  "Adecuación del salón: suelos, cerramientos, carpintería y pintura": "Barn renovation: floor, doors, insulation, fixtures & paint",
+  "Acústica y aislamiento del salón": "Fire sprinkler system (city water; a tank and fire pump cost more)",
+  "Carpa estructural o pérgola para ceremonia y cóctel": "Ceremony site: pergola, tent platform & ceremony seating",
+  "Aseos: dos bloques y uno adaptado": "ADA-compliant restrooms (septic upgrade quoted apart)",
+  "Instalación eléctrica: cuadro, alumbrado exterior y de emergencia": "Electrical service, exterior, exit & emergency lighting",
+  "Grupo electrógeno": "Standby generator",
+  "Climatización del salón": "HVAC for the hall",
+  "Office del catering: cámara, fregaderos, mesas inox, agua y desagüe": "Caterer's prep & warming kitchen: sinks, prep tables, ice machine, water & drain",
+  "Mobiliario de ceremonia y banquete: mesas, sillas y mantelería base": "Tables, chairs for 200 & base linens",
+  "Zona chill-out y decoración base": "Bridal suite & groom's lounge furnishings and decor",
+  "Sonido, limitador-registrador y proyector": "Sound system, decibel meter & lighting",
+  "Aparcamiento y caminos: zahorra, señalización e iluminación": "Parking lot, driveway, signage & lighting",
+  "Jardinería, paisajismo y riego inicial": "Landscaping, lawn & irrigation",
+  "Protección contra incendios, señalización de evacuación y accesibilidad": "Fire alarm, extinguishers, exit signs & ADA accessible routes",
+  "Web, fotos, vídeo y marca": "Website, photography, video & brand",
+  "Constitución de la SL": "LLC formation & attorney (lease and contracts)",
+  "Lanzamiento: feria nupcial, puertas abiertas y escaparate premium": "Launch: bridal shows, open house & listing storefronts",
+  "Fianza del arrendamiento": "Lease security deposit",
+  "Renta de la finca durante la obra": "Rent during permitting and build-out",
+  "Imprevistos de obra y acondicionamiento": "Build-out contingency",
+  "Escenario realista — finca de eventos y bodas": "Base case — barn wedding & event venue, 200 guests, exclusive caterer",
+  "Ventas de alquiler del espacio y servicios del evento": "Venue rental & event services",
+  "Canon del catering exclusivo": "Caterer commission (exclusive caterer)",
+  "Coste directo del evento": "Direct event costs",
+  "Coste del canon (no tiene)": "Cost of the commission (none)",
+  "Consumibles de los montajes": "Event consumables",
+  "Comisiones de wedding planners y agencias": "Commissions to planners and venue marketplaces",
+  "Renta de la finca": "Rent (leased property)",
+  "Renta de la finca / Ventas": "Rent / Sales",
+  "Suministros (luz, agua, gasoil y teléfono)": "Utilities (power, propane, water, internet & trash)",
+  "Seguros (RC + multirriesgo)": "Insurance (general liability, host liquor liability & property)",
+  "Marketing: portales de bodas, Google Ads y redes": "Marketing (The Knot/WeddingWire, Google Ads, social)",
+  "Ferias nupciales y jornadas de puertas abiertas": "Bridal shows & open houses",
+  "Jardinería y mantenimiento externo (poda, césped y riego)": "Grounds & landscaping contractors",
+  "Reparaciones, pintura y reposición de mobiliario": "Repairs, paint & furniture replacement",
+  "Gestoría laboral, fiscal y contable": "Accounting, payroll & legal",
+  "Software de reservas, CRM, web y teléfono": "Venue management software, CRM, website & phone",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Safety training & compliance",
+  "Tasas municipales e IBI repercutido": "Property taxes passed through & local fees",
+  "Revisiones de baja tensión, protección contra incendios y grupo electrógeno": "Sprinkler, alarm, extinguisher & generator inspections",
+  "Limpieza general, desinsectación y desratización (DDD)": "Cleaning supplies, pest control & septic pumping",
+  "Titular — gerencia, ventas y visitas": "Owner — GM, sales & tours",
+  "Coordinación de bodas y celebraciones (fijo discontinuo, marzo-noviembre)": "Venue coordinator (seasonal, Mar-Nov)",
+  "Mantenimiento y jardinería": "Facilities & grounds",
+  "Auxiliares de montaje, acceso y aseos (fijos discontinuos)": "Event attendants: setup, parking & restrooms (seasonal, part-time W-2)",
+  "Comercial de bodas a tiempo parcial": "Weekend sales & tours (part-time)",
+  "Limpieza y puesta a punto a tiempo parcial": "Housekeeping & turnover (part-time)"
+ },
+ "cadenas": [
+  {
+   "id": "c0005",
+   "es": "Invitados por evento (media del año 1)",
+   "donde": [
+    "WEDP · 0. Supuestos!A4"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0006",
+   "es": "Invitados de media por evento en el año 1. Sale de la mezcla de la tabla de referencias de la hoja de Instrucciones: bodas de 120, eventos de empresa de 80, celebraciones privadas de 70 y eventos pequeños de 40. Es una media: el aforo de la finca está más abajo",
+   "donde": [
+    "WEDP · 0. Supuestos!C4"
+   ],
+   "fila": "Invitados por evento (media del año 1)",
+   "valor_us": 90,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0007",
+   "es": "Precio medio por invitado SIN IVA (€)",
+   "donde": [
+    "WEDP · 0. Supuestos!A5"
+   ],
+   "pistas": [
+    "P06",
+    "P07",
+    "P08",
+    "P01",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA, por invitado: lo que factura la FINCA, no lo que pagan los novios por la boda entera. Suma el espacio y los servicios (ceremonia, montaje, coordinación, limpieza y aparcamiento) y el canon que te paga el catering por cada invitado. Media de la mezcla: 47 € la boda, 34 € el evento de empresa, 29 € la celebración privada y 30 € el evento pequeño. El precio con IVA (21 %) está en la fila de abajo",
+   "donde": [
+    "WEDP · 0. Supuestos!C5"
+   ],
+   "fila": "Precio medio por invitado SIN IVA (€)",
+   "valor_us": 68,
+   "pistas": [
+    "P06",
+    "P07",
+    "P08",
+    "P10",
+    "P01",
+    "P11",
+    "P12",
+    "P09",
+    "P13",
+    "P14",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0009",
+   "es": "Eventos al año",
+   "donde": [
+    "WEDP · 0. Supuestos!A6",
+    "WEDP · PyG 3 Años!A8",
+    "WEDP · Punto Equilibrio!A11",
+    "WEDP · Escenarios!A7"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "Eventos celebrados en el año: 30 bodas, 35 de empresa (jornadas, comidas, Navidad), 40 celebraciones privadas (comuniones, bautizos, cumpleaños) y 15 pequeños (preboda, brunch, bodas íntimas). Es el MISMO dato para la cuenta de resultados, el punto de equilibrio, los escenarios y las horas de personal",
+   "donde": [
+    "WEDP · 0. Supuestos!C6"
+   ],
+   "fila": "Eventos al año",
+   "valor_us": 100,
+   "pistas": [
+    "P02",
+    "P16",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "Más actividad el segundo año: bodas que llegan por recomendación, empresas que repiten y planners que ya te conocen. El libro lo aplica a los invitados por evento con los mismos eventos; en euros es lo mismo que un 8 % más de eventos del mismo tamaño (unos 130). El personal no sube con este porcentaje: crece con las incorporaciones de la hoja Personal",
+   "donde": [
+    "WEDP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.08,
+   "pistas": [
+    "P07",
+    "P01",
+    "P02",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "Sobre el año 2 (unos 136 eventos equivalentes). Conservador: el techo lo ponen los sábados de temporada y el aforo de la finca",
+   "donde": [
+    "WEDP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "valor_us": 0.05,
+   "pistas": [
+    "P02",
+    "P03",
+    "P04",
+    "P19",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0016",
+   "es": "MEZCLA DE VENTAS Y COSTE DIRECTO",
+   "donde": [
+    "WEDP · 0. Supuestos!A10"
+   ],
+   "propuesta_en": "SALES MIX AND COST OF GOODS SOLD",
+   "propuesta_de": "GM c0016 (PIZP 0. Supuestos!A10)"
+  },
+  {
+   "id": "c0017",
+   "es": "Ventas de ESPACIO Y SERVICIOS sobre el total",
+   "donde": [
+    "WEDP · 0. Supuestos!A11"
+   ],
+   "propuesta_en": "FOOD share of total sales",
+   "propuesta_de": "GM c0017 (PIZP 0. Supuestos!A11)"
+  },
+  {
+   "id": "c0018",
+   "es": "Peso del ESPACIO Y LOS SERVICIOS sobre el total de ventas. Es un INPUT: cámbialo aquí y el P&L, la tesorería y el IVA repercutido se recalculan solos",
+   "donde": [
+    "WEDP · 0. Supuestos!C11"
+   ],
+   "fila": "Ventas de ESPACIO Y SERVICIOS sobre el total",
+   "valor_us": 0.88,
+   "propuesta_en": "Share of FOOD in total sales. It is an INPUT: change it here and the P&L, the cash flow and the sales tax collected recalculate on their own",
+   "propuesta_de": "GM c0018 (PIZP 0. Supuestos!C11)",
+   "pistas": [
+    "P06",
+    "P09",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0019",
+   "es": "Ventas del CANON DEL CATERING sobre el total",
+   "donde": [
+    "WEDP · 0. Supuestos!A12"
+   ],
+   "propuesta_en": "BEVERAGE share of total sales",
+   "propuesta_de": "GM c0019 (PIZP 0. Supuestos!A12)"
+  },
+  {
+   "id": "c0020",
+   "es": "Se calcula como el resto: espacio y servicios + canon = 100 %",
+   "donde": [
+    "WEDP · 0. Supuestos!C12"
+   ],
+   "fila": "Ventas del CANON DEL CATERING sobre el total",
+   "propuesta_en": "Calculated as the remainder: food + beverage = 100%",
+   "propuesta_de": "GM c0020 (PIZP 0. Supuestos!C12)",
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0021",
+   "es": "Coste directo del evento sobre las ventas de ESPACIO Y SERVICIOS",
+   "donde": [
+    "WEDP · 0. Supuestos!A13"
+   ],
+   "propuesta_en": "Cost of goods sold on FOOD sales",
+   "propuesta_de": "GM c0021 (PIZP 0. Supuestos!A13)"
+  },
+  {
+   "id": "c0022",
+   "es": "Coste directo del evento sobre las ventas de espacio y servicios: limpieza tras el evento, reposición de aseos y consumibles, gasoil del grupo electrógeno, vigilancia y aparcamiento, y la tarifa de SGAE y AGEDI-AIE de cada evento. Unos 650 € por boda, 350 € por evento de empresa, 300 € por celebración privada y 150 € por evento pequeño: 46.000 € al año",
+   "donde": [
+    "WEDP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste directo del evento sobre las ventas de ESPACIO Y SERVICIOS",
+   "valor_us": 0.12,
+   "pistas": [
+    "P06",
+    "P07",
+    "P10",
+    "P22",
+    "P23",
+    "P24",
+    "P25",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0023",
+   "es": "Coste del canon sobre las ventas del CANON",
+   "donde": [
+    "WEDP · 0. Supuestos!A14"
+   ],
+   "propuesta_en": "Cost of goods sold on BEVERAGE sales",
+   "propuesta_de": "GM c0023 (PIZP 0. Supuestos!A14)",
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "A CERO: el canon no tiene coste para la finca. La comida y la bebida las compra el catering, que es quien las vende a los novios",
+   "donde": [
+    "WEDP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste del canon sobre las ventas del CANON",
+   "valor_us": 0,
+   "pistas": [
+    "P11",
+    "P03",
+    "P12",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Velas, flores base, papel y productos de los aseos, y los pequeños consumibles de cada montaje",
+   "donde": [
+    "WEDP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.015,
+   "pistas": [
+    "P24",
+    "P14",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0027",
+   "es": "Ventas que llegan por wedding planners y agencias sobre el total",
+   "donde": [
+    "WEDP · 0. Supuestos!A16"
+   ],
+   "pistas": [
+    "P29"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "Parte de las ventas que llega por un wedding planner o una agencia de eventos, que cobra una comisión. No cambia el IVA: todo lo que factura la finca va al 21 %",
+   "donde": [
+    "WEDP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas que llegan por wedding planners y agencias sobre el total",
+   "valor_us": 0.1,
+   "pistas": [
+    "P06",
+    "P02",
+    "P03",
+    "P29",
+    "P09",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0029",
+   "es": "Comisión de los wedding planners y agencias",
+   "donde": [
+    "WEDP · 0. Supuestos!A17"
+   ],
+   "pistas": [
+    "P29"
+   ]
+  },
+  {
+   "id": "c0030",
+   "es": "Comisión media sobre lo que vende ese canal: el punto medio de un 10-15 %. Si todas las reservas te llegan directas, pon 0",
+   "donde": [
+    "WEDP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de los wedding planners y agencias",
+   "valor_us": 0.15,
+   "pistas": [
+    "P31",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0032",
+   "es": "Casi todo se cobra por transferencia (señales, pagos de los novios y facturas de empresa); el datáfono queda para los extras del día",
+   "donde": [
+    "WEDP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.02,
+   "pistas": [
+    "P33",
+    "P31",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0040",
+   "es": "FINCA Y FIJOS",
+   "donde": [
+    "WEDP · 0. Supuestos!A23"
+   ]
+  },
+  {
+   "id": "c0041",
+   "es": "Renta mensual de la finca (€)",
+   "donde": [
+    "WEDP · 0. Supuestos!A24"
+   ],
+   "pistas": [
+    "P07",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "Renta de mercado de una finca con edificaciones existentes (salón, aseos y office) arrendada a una SL, con contrato de quince años o más. Lleva IVA al 21 %. Si la finca es de tu familia, la renta tiene que ser la de mercado igual. El peso sobre las ventas lo calcula el libro en la fila «Renta de la finca / Ventas» del P&L",
+   "donde": [
+    "WEDP · 0. Supuestos!C24"
+   ],
+   "fila": "Renta mensual de la finca (€)",
+   "valor_us": 5000,
+   "pistas": [
+    "P06",
+    "P35",
+    "P03",
+    "P36",
+    "P09",
+    "P24",
+    "P37",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0043",
+   "es": "Fianza del arrendamiento (meses)",
+   "donde": [
+    "WEDP · 0. Supuestos!A25"
+   ],
+   "pistas": [
+    "P06",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0044",
+   "es": "Dos meses de renta como fianza, lo habitual en un arrendamiento de uso distinto del de vivienda; los avales o garantías adicionales se negocian aparte. Compruébalo con tu abogado antes de firmar",
+   "donde": [
+    "WEDP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del arrendamiento (meses)",
+   "valor_us": 2,
+   "pistas": [
+    "P06",
+    "P40",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0045",
+   "es": "Suministros mensuales (luz, agua, gasoil y teléfono) (€)",
+   "donde": [
+    "WEDP · 0. Supuestos!A26"
+   ],
+   "pistas": [
+    "P07",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Luz con potencia para el salón y el exterior, agua de riego, gasoil del grupo electrógeno fuera de los eventos y teléfono. Pide al propietario el histórico de consumos",
+   "donde": [
+    "WEDP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales (luz, agua, gasoil y teléfono) (€)",
+   "valor_us": 2000,
+   "pistas": [
+    "P02",
+    "P41",
+    "P25",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil de la actividad con el capital que fije tu comunidad por aforo (en Andalucía, 526.000 € para 101-300 personas), daños a las mejoras de la finca, pérdida de beneficio y accidentes. Exige además al catering su propio seguro de responsabilidad civil e intoxicación",
+   "donde": [
+    "WEDP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 12000,
+   "pistas": [
+    "P07",
+    "P03",
+    "P12",
+    "P04",
+    "P43",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Roturas, imprevistos de cada montaje y desplazamientos comerciales (ferias y visitas a planners)",
+   "donde": [
+    "WEDP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "valor_us": 0.01,
+   "pistas": [
+    "P45",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0055",
+   "es": "Principal solicitado. La hoja de Financiación compara lo que aportas con la necesidad de caja de la hoja de inversión y te dice si sobra o falta: ajústalo con ese dato. La finca no es tuya, así que no hay garantía inmobiliaria: pregunta por avales y por líneas públicas",
+   "donde": [
+    "WEDP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR",
+   "pistas": [
+    "P03",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual de un préstamo de empresa sin garantía inmobiliaria. Pide oferta a dos entidades y a una línea ICO antes de fijarlo",
+   "donde": [
+    "WEDP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P06",
+    "P47",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0059",
+   "es": "Años totales, carencia incluida. Con seis años la cuota no cabe en un negocio con tanta estructura fija",
+   "donde": [
+    "WEDP · 0. Supuestos!C33"
+   ],
+   "fila": "Plazo del préstamo (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P06",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0061",
+   "es": "El primer año, sólo intereses: es el año de arranque y la caja va más justa. Desde el segundo año se devuelve el principal: mira la holgura de caja de ese año en el Punto de Equilibrio",
+   "donde": [
+    "WEDP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0
+  },
+  {
+   "id": "c0063",
+   "es": "Tres meses de costes fijos: son el colchón de los primeros meses, recién pagada la inversión y antes de las bodas de mayo y junio. En un año normal, de noviembre a febrero entra alrededor del 23 % de la venta con la renta y la plantilla planas: ese invierno se pasa con la caja de la temporada",
+   "donde": [
+    "WEDP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)",
+   "valor_us": 3,
+   "pistas": [
+    "P40",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0070",
+   "es": "No se usa en este plan: la finca no vende comida ni bebida. Es el tipo del menú del catering",
+   "donde": [
+    "WEDP · 0. Supuestos!C39"
+   ],
+   "fila": "IVA repercutido de restauración",
+   "valor_us": 0.08,
+   "propuesta_en": "Example rate: state + local sales tax combined. It varies widely by state and city: look up yours. UK: 20% VAT on hot food and dine-in",
+   "propuesta_de": "GM c0070 (PIZP 0. Supuestos!C39)",
+   "pistas": [
+    "P03",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0072",
+   "es": "Tipo general. En este plan es el de todo lo que factura la finca (espacio, servicios y canon) y el de casi todo lo que compra; suministros, equipamiento y servicios tienen su tipo en la celda de abajo. La finca no vende comida ni bebida: el menú y la barra los factura el catering, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992)",
+   "donde": [
+    "WEDP · 0. Supuestos!C40"
+   ],
+   "fila": "IVA repercutido/soportado general",
+   "valor_us": 0.08,
+   "pistas": [
+    "P06",
+    "P11",
+    "P03",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Obra en una finca ARRENDADA: se amortiza en el plazo del contrato si es menor que la vida útil del bien. Por eso el plan pide un arrendamiento de quince años o más; con un contrato más corto, la amortización anual sube. Confírmalo con tu asesoría",
+   "donde": [
+    "WEDP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 15,
+   "pistas": [
+    "P49",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Carpa, grupo electrógeno, mobiliario y sonido: un 10 % anual, dentro del coeficiente máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades para el mobiliario. Confírmalo con tu asesoría",
+   "donde": [
+    "WEDP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P06",
+    "P50",
+    "P51",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0086",
+   "es": "Aforo de la finca (invitados sentados en el salón y la carpa)",
+   "donde": [
+    "WEDP · 0. Supuestos!A51"
+   ],
+   "pistas": [
+    "P01",
+    "P03",
+    "P04",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "DATO INFORMATIVO: no entra en ningún cálculo. Es el banquete más grande que caben sentado entre el salón y la carpa; el aforo legal lo fija tu licencia. Con 300 invitados la finca queda por debajo del plan de autoprotección estatal (Orden INT/1068/2026: 1.000 personas en edificio cerrado o carpa)",
+   "donde": [
+    "WEDP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo de la finca (invitados sentados en el salón y la carpa)",
+   "valor_us": 200,
+   "pistas": [
+    "P01",
+    "P03",
+    "P52",
+    "P04",
+    "P51",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0089",
+   "es": "Una finca que acaba de abrir no factura el primer mes lo que factura al año: las bodas se reservan con 12-18 meses de antelación y la primera temporada sólo trae lo que se reservó, condicionado a la licencia, durante la tramitación y la obra. Con 100 % se elimina la rampa",
+   "donde": [
+    "WEDP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "valor_us": 0.45,
+   "pistas": [
+    "P03",
+    "P31",
+    "P52",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0091",
+   "es": "Doce meses hasta el ritmo de crucero: la primera temporada entera",
+   "donde": [
+    "WEDP · 0. Supuestos!C53"
+   ],
+   "fila": "Meses hasta alcanzar el régimen de crucero",
+   "valor_us": 12,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0092",
+   "es": "Meses de renta ANTES de abrir (obra y licencias)",
+   "donde": [
+    "WEDP · 0. Supuestos!A54"
+   ],
+   "pistas": [
+    "P52"
+   ]
+  },
+  {
+   "id": "c0093",
+   "es": "Un mes de renta antes de abrir. La carencia de renta durante la obra y la licencia se negocia aparte en el arrendamiento: sin ella, súmale los meses que dure la tramitación (de 6 a 12 o más en suelo rústico)",
+   "donde": [
+    "WEDP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de renta ANTES de abrir (obra y licencias)",
+   "valor_us": 4,
+   "pistas": [
+    "P06",
+    "P48",
+    "P40",
+    "P52",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0095",
+   "es": "Colchón sobre la obra y las instalaciones de unas edificaciones que no son nuevas, que es donde aparecen las sorpresas (tejados, acometida eléctrica, saneamiento y agua). Un banco no financia una reforma sin él",
+   "donde": [
+    "WEDP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de OBRA del bloque de la finca (%)",
+   "valor_us": 0.1,
+   "pistas": [
+    "P47",
+    "P41",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0098",
+   "es": "Media ponderada: los novios pagan la señal y el resto antes de la boda, y las empresas a 30-45 días de la factura. El libro no admite días negativos, así que las señales no se modelan: tu caja real será algo MEJOR que la de la hoja de Tesorería",
+   "donde": [
+    "WEDP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 10,
+   "pistas": [
+    "P40",
+    "P31",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0100",
+   "es": "Plazo de pago a proveedores de limpieza, mantenimiento y consumibles: lo que te financian. Es lo primero que se pierde si te retrasas en un pago",
+   "donde": [
+    "WEDP · 0. Supuestos!C59"
+   ],
+   "fila": "Días medios de pago a proveedor",
+   "valor_us": 14,
+   "pistas": [
+    "P57"
+   ]
+  },
+  {
+   "id": "c0102",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de verano: julio es el Mes 5, porque el Mes 1 del plan es marzo",
+   "donde": [
+    "WEDP · 0. Supuestos!C60"
+   ],
+   "fila": "Mes de la paga extra de verano",
+   "pistas": [
+    "P58"
+   ]
+  },
+  {
+   "id": "c0104",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de Navidad: diciembre es el Mes 10, porque el Mes 1 del plan es marzo",
+   "donde": [
+    "WEDP · 0. Supuestos!C61"
+   ],
+   "fila": "Mes de la paga extra de Navidad",
+   "pistas": [
+    "P58"
+   ]
+  },
+  {
+   "id": "c0117",
+   "es": "El VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería (art. 4) nombra el catering, pero no el alquiler de espacios, y su lista no es exhaustiva: usa el convenio provincial de hostelería como referencia prudente y confírmalo con tu asesoría. Copia aquí el salario base del grupo más bajo de tu provincia. Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "WEDP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P06",
+    "P58",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0144",
+   "es": "Proyecto de adecuación y de la actividad, dirección de obra y certificado final. Es la base de la calificación o autorización urbanística y de la licencia",
+   "donde": [
+    "WEDP · Inversión Inicial!D7"
+   ],
+   "fila": "Proyecto técnico y dirección de obra",
+   "valor_us": 25000,
+   "pistas": [
+    "P52",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0147",
+   "es": "Lo que cobra la administración en suelo rústico, distinto en cada comunidad: en Andalucía, prestación compensatoria del 10 % de las obras sin maquinaria (LISTA, art. 22.5); en la C. Valenciana, canon del 2 % (TRLOTUP, art. 221). En Andalucía, sólo la prestación serían unos 13.000 € con la obra del caso: súbela si es tu comunidad. No lleva IVA. Ajusta esta partida a la tuya: compruébalo en tu ayuntamiento y en tu comunidad",
+   "donde": [
+    "WEDP · Inversión Inicial!D8"
+   ],
+   "fila": "Licencias, tasas, calificación urbanística y prestación compensatoria o canon",
+   "valor_us": 15000,
+   "pistas": [
+    "P06",
+    "P07",
+    "P60",
+    "P11",
+    "P43",
+    "P09",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0150",
+   "es": "Sobre edificaciones EXISTENTES: en suelo rústico es lo que exigen Madrid y Cataluña y la vía rápida de la C. Valenciana. Pide dos presupuestos sobre el proyecto",
+   "donde": [
+    "WEDP · Inversión Inicial!D9"
+   ],
+   "fila": "Adecuación del salón: suelos, cerramientos, carpintería y pintura",
+   "valor_us": 80000,
+   "pistas": [
+    "P60",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0152",
+   "es": "Para que el baile final pueda ir dentro y cumplir los 45 dBA de noche al exterior en zona residencial (RD 1367/2007, anexo III)",
+   "donde": [
+    "WEDP · Inversión Inicial!D10"
+   ],
+   "fila": "Acústica y aislamiento del salón",
+   "valor_us": 70000,
+   "pistas": [
+    "P06",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0154",
+   "es": "Es el plan B de lluvia: inversión, no extra. Una carpa es una instalación desmontable: para el plan de autoprotección estatal tiene el mismo umbral que un edificio cerrado, 1.000 personas (Orden INT/1068/2026)",
+   "donde": [
+    "WEDP · Inversión Inicial!D11"
+   ],
+   "fila": "Carpa estructural o pérgola para ceremonia y cóctel",
+   "valor_us": 25000,
+   "pistas": [
+    "P04",
+    "P51",
+    "P64",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0156",
+   "es": "Con un aseo adaptado e itinerario accesible: compruébalo con tu técnico sobre el Código Técnico. Incluye la conexión al saneamiento (fosa séptica o depuradora); si hay que hacerla nueva o ampliarla para el aforo, súbela",
+   "donde": [
+    "WEDP · Inversión Inicial!D12"
+   ],
+   "fila": "Aseos: dos bloques y uno adaptado",
+   "valor_us": 45000,
+   "pistas": [
+    "P04",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0158",
+   "es": "Potencia para el salón, la carpa, el office y el exterior, con su boletín. Pregunta la potencia disponible ANTES de firmar: una acometida nueva en el campo tarda",
+   "donde": [
+    "WEDP · Inversión Inicial!D13"
+   ],
+   "fila": "Instalación eléctrica: cuadro, alumbrado exterior y de emergencia",
+   "valor_us": 30000,
+   "pistas": [
+    "P51",
+    "P37",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0160",
+   "es": "Respaldo si la red falla o no llega la potencia: un corte de luz en mitad de una boda no tiene arreglo",
+   "donde": [
+    "WEDP · Inversión Inicial!D14"
+   ],
+   "fila": "Grupo electrógeno",
+   "valor_us": 15000,
+   "pistas": [
+    "P65"
+   ]
+  },
+  {
+   "id": "c0162",
+   "es": "Frío y calor para usar el salón todo el año, también en las bodas de agosto",
+   "donde": [
+    "WEDP · Inversión Inicial!D15"
+   ],
+   "fila": "Climatización del salón",
+   "valor_us": 30000,
+   "pistas": [
+    "P65"
+   ]
+  },
+  {
+   "id": "c0164",
+   "es": "El espacio donde el catering emplata y friega. La cocina de producción la pone él: por eso el plan no lleva cocina. Lo inscribe en el registro sanitario quien lo usa; compruébalo en tu comunidad",
+   "donde": [
+    "WEDP · Inversión Inicial!D16"
+   ],
+   "fila": "Office del catering: cámara, fregaderos, mesas inox, agua y desagüe",
+   "valor_us": 25000,
+   "pistas": [
+    "P06",
+    "P12",
+    "P43",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0166",
+   "es": "Mesas redondas e imperiales, 300 sillas y mantelería base. La decoración especial la contratan los novios",
+   "donde": [
+    "WEDP · Inversión Inicial!D17"
+   ],
+   "fila": "Mobiliario de ceremonia y banquete: mesas, sillas y mantelería base",
+   "valor_us": 30000,
+   "pistas": [
+    "P65"
+   ]
+  },
+  {
+   "id": "c0168",
+   "es": "Sofás, iluminación ambiental y elementos fijos de decoración",
+   "donde": [
+    "WEDP · Inversión Inicial!D18"
+   ],
+   "fila": "Zona chill-out y decoración base",
+   "valor_us": 15000,
+   "pistas": [
+    "P65"
+   ]
+  },
+  {
+   "id": "c0170",
+   "es": "El limitador-registrador es tu seguro frente a las denuncias por ruido: muchas ordenanzas lo exigen. Compruébalo en la tuya",
+   "donde": [
+    "WEDP · Inversión Inicial!D19"
+   ],
+   "fila": "Sonido, limitador-registrador y proyector",
+   "valor_us": 12000,
+   "pistas": [
+    "P68",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0172",
+   "es": "Calcula una plaza por cada 2,5-3 invitados (estimación del kit) y un acceso que aguante la lluvia",
+   "donde": [
+    "WEDP · Inversión Inicial!D20"
+   ],
+   "fila": "Aparcamiento y caminos: zahorra, señalización e iluminación",
+   "valor_us": 35000,
+   "pistas": [
+    "P69",
+    "P01",
+    "P41",
+    "P64",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0174",
+   "es": "Zona de ceremonia, cóctel y fotos. El mantenimiento anual va en los costes fijos",
+   "donde": [
+    "WEDP · Inversión Inicial!D21"
+   ],
+   "fila": "Jardinería, paisajismo y riego inicial",
+   "valor_us": 15000,
+   "pistas": [
+    "P65"
+   ]
+  },
+  {
+   "id": "c0176",
+   "es": "Extintores, alumbrado y señales de evacuación y los ajustes de accesibilidad que pida la licencia",
+   "donde": [
+    "WEDP · Inversión Inicial!D22"
+   ],
+   "fila": "Protección contra incendios, señalización de evacuación y accesibilidad",
+   "valor_us": 15000,
+   "pistas": [
+    "P31",
+    "P52",
+    "P04",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0178",
+   "es": "Identidad, web con calendario de fechas, sesión de fotos y vídeo de la finca montada",
+   "donde": [
+    "WEDP · Inversión Inicial!D23"
+   ],
+   "fila": "Web, fotos, vídeo y marca",
+   "valor_us": 8000,
+   "pistas": [
+    "P47",
+    "P03",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0180",
+   "es": "Notaría, registro mercantil y gestoría",
+   "donde": [
+    "WEDP · Inversión Inicial!D24"
+   ],
+   "fila": "Constitución de la SL",
+   "valor_us": 3500,
+   "pistas": [
+    "P06",
+    "P71",
+    "P72",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0182",
+   "es": "La primera feria de novios, la jornada de puertas abiertas con el catering y el escaparate de pago en un portal de bodas durante el primer año",
+   "donde": [
+    "WEDP · Inversión Inicial!D25"
+   ],
+   "fila": "Lanzamiento: feria nupcial, puertas abiertas y escaparate premium",
+   "valor_us": 10000,
+   "pistas": [
+    "P12",
+    "P45",
+    "P74",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0193",
+   "es": "Es la cifra que tiene que cubrir la hoja de Financiación",
+   "donde": [
+    "WEDP · Inversión Inicial!D34"
+   ],
+   "fila": "NECESIDAD TOTAL DE CAJA AL ARRANQUE",
+   "propuesta_en": "This is the figure the Financing tab has to cover",
+   "propuesta_de": "GM c0192 (PIZP Inversión Inicial!D33)"
+  },
+  {
+   "id": "c0209",
+   "es": "Invitados por evento (media)",
+   "donde": [
+    "WEDP · PyG 3 Años!A6"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0211",
+   "es": "Precio medio por invitado sin IVA",
+   "donde": [
+    "WEDP · PyG 3 Años!A7",
+    "WEDP · Punto Equilibrio!A8",
+    "WEDP · Escenarios!A6"
+   ],
+   "pistas": [
+    "P06",
+    "P08",
+    "P01",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0223",
+   "es": "Sobre las ventas DEL CANAL. Con 0 % de intermediarios en Supuestos, esta línea vale cero",
+   "donde": [
+    "WEDP · PyG 3 Años!F16"
+   ],
+   "fila": "Comisiones de wedding planners y agencias",
+   "propuesta_en": "Applied to the sales of THAT CHANNEL. With 0% delivery in Assumptions, this line is zero",
+   "propuesta_de": "GM c0223 (PIZP PyG 3 Años!F16)"
+  },
+  {
+   "id": "c0231",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Lleva IVA al 21 %. El mes de renta previo a la apertura está en la hoja de Inversión y NO se cuenta dos veces",
+   "donde": [
+    "WEDP · PyG 3 Años!F22"
+   ],
+   "fila": "Renta de la finca",
+   "pistas": [
+    "P06",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0239",
+   "es": "Escaparate en los portales de bodas, Google Ads y redes sociales. Mide el coste por contacto de cada canal antes de renovar el escaparate premium",
+   "donde": [
+    "WEDP · PyG 3 Años!F26"
+   ],
+   "fila": "Marketing: portales de bodas, Google Ads y redes",
+   "valor_us": 18000,
+   "pistas": [
+    "P40",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0241",
+   "es": "Dos ferias de novios al año y las jornadas de puertas abiertas de la finca, con el catering",
+   "donde": [
+    "WEDP · PyG 3 Años!F27"
+   ],
+   "fila": "Ferias nupciales y jornadas de puertas abiertas",
+   "valor_us": 5000,
+   "pistas": [
+    "P03",
+    "P12",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Los trabajos grandes que no hace el personal propio: poda, césped, riego y tratamientos",
+   "donde": [
+    "WEDP · PyG 3 Años!F28"
+   ],
+   "fila": "Jardinería y mantenimiento externo (poda, césped y riego)",
+   "valor_us": 10000
+  },
+  {
+   "id": "c0245",
+   "es": "Pintura, pequeñas obras entre temporadas y reposición de sillas, mesas y mantelería",
+   "donde": [
+    "WEDP · PyG 3 Años!F29"
+   ],
+   "fila": "Reparaciones, pintura y reposición de mobiliario",
+   "valor_us": 7000,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0247",
+   "es": "Contabilidad, impuestos de la SL y nóminas de los fijos discontinuos, con sus llamamientos de cada temporada",
+   "donde": [
+    "WEDP · PyG 3 Años!F30"
+   ],
+   "fila": "Gestoría laboral, fiscal y contable",
+   "valor_us": 5000,
+   "pistas": [
+    "P06",
+    "P75",
+    "P36",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0249",
+   "es": "Calendario de fechas, presupuestos, CRM de novios y empresas, alojamiento de la web y teléfono",
+   "donde": [
+    "WEDP · PyG 3 Años!F31"
+   ],
+   "fila": "Software de reservas, CRM, web y teléfono",
+   "valor_us": 3600
+  },
+  {
+   "id": "c0251",
+   "es": "El plan de prevención es obligatorio (Ley 31/1995): montaje, cargas, trabajo en altura y jardinería, y reconocimientos médicos de la plantilla",
+   "donde": [
+    "WEDP · PyG 3 Años!F32"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 600,
+   "pistas": [
+    "P06",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0253",
+   "es": "Basuras y otras tasas municipales y el IBI que el propietario te repercuta según el contrato. Pon las de tu ayuntamiento",
+   "donde": [
+    "WEDP · PyG 3 Años!F33"
+   ],
+   "fila": "Tasas municipales e IBI repercutido",
+   "valor_us": 6000,
+   "pistas": [
+    "P06",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0255",
+   "es": "Inspecciones periódicas de la instalación eléctrica, mantenimiento de extintores y del sistema contra incendios por una empresa mantenedora y revisión del grupo electrógeno",
+   "donde": [
+    "WEDP · PyG 3 Años!F34"
+   ],
+   "fila": "Revisiones de baja tensión, protección contra incendios y grupo electrógeno",
+   "valor_us": 2800,
+   "pistas": [
+    "P04",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0257",
+   "es": "Limpieza a fondo de temporada, productos y control de plagas por una empresa inscrita",
+   "donde": [
+    "WEDP · PyG 3 Años!F35"
+   ],
+   "fila": "Limpieza general, desinsectación y desratización (DDD)",
+   "valor_us": 4000,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0281",
+   "es": "Suelo del margen tras TODOS los costes variables (coste directo del evento, consumibles, comisiones, medios de pago y varios): sin mercancía que comprar, una finca deja más del 75 %. Estimación del kit",
+   "donde": [
+    "WEDP · PyG 3 Años!F51"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.85,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0282",
+   "es": "Coste directo del evento (el canon no tiene coste)",
+   "donde": [
+    "WEDP · PyG 3 Años!A52"
+   ],
+   "propuesta_en": "Cost of goods sold (food + beverage)",
+   "propuesta_de": "GM c0280 (PIZP PyG 3 Años!A51)",
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0283",
+   "es": "Coste directo del evento / Ventas",
+   "donde": [
+    "WEDP · PyG 3 Años!A53",
+    "WEDP · Instrucciones!A18"
+   ]
+  },
+  {
+   "id": "c0284",
+   "es": "Limpieza, aseos, gasoil, vigilancia y SGAE de cada evento sobre las ventas. Por encima del 14 %, algo se escapa en cada montaje. Estimación del kit",
+   "donde": [
+    "WEDP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste directo del evento / Ventas",
+   "valor_us": 0.15,
+   "pistas": [
+    "P06",
+    "P22",
+    "P23",
+    "P24",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0286",
+   "es": "Techo del personal propio sobre ventas, sin camareros ni cocina (los pone el catering). Estimación del kit",
+   "donde": [
+    "WEDP · PyG 3 Años!F54"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.35,
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0288",
+   "es": "Techo de la renta de la finca sobre las ventas: por encima, la ocupación tiene que ser altísima para pagarla. Estimación del kit",
+   "donde": [
+    "WEDP · PyG 3 Años!F55"
+   ],
+   "fila": "Renta de la finca / Ventas",
+   "valor_us": 0.12,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0290",
+   "es": "Suelo de resultado neto a régimen para que el plan se sostenga: estimación del kit",
+   "donde": [
+    "WEDP · PyG 3 Años!F56"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05
+  },
+  {
+   "id": "c0296",
+   "es": "Punto de equilibrio — finca de eventos y bodas",
+   "donde": [
+    "WEDP · Punto Equilibrio!A2"
+   ],
+   "pistas": [
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0302",
+   "es": "Coste variable por invitado",
+   "donde": [
+    "WEDP · Punto Equilibrio!A9"
+   ],
+   "propuesta_en": "Variable cost per cover",
+   "propuesta_de": "GREST c0326 (RESTP 3. Punto Equilibrio!A10)",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0304",
+   "es": "Margen de contribución por invitado",
+   "donde": [
+    "WEDP · Punto Equilibrio!A10"
+   ],
+   "propuesta_en": "Contribution margin per cover",
+   "propuesta_de": "GREST c0328 (RESTP 3. Punto Equilibrio!A11)",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0305",
+   "es": "Precio por invitado menos coste variable unitario",
+   "donde": [
+    "WEDP · Punto Equilibrio!E10"
+   ],
+   "fila": "Margen de contribución por invitado",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0310",
+   "es": "Invitados necesarios al año",
+   "donde": [
+    "WEDP · Punto Equilibrio!A14"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0311",
+   "es": "Invitados necesarios por evento",
+   "donde": [
+    "WEDP · Punto Equilibrio!A15"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0316",
+   "es": "Invitados necesarios al año (caja)",
+   "donde": [
+    "WEDP · Punto Equilibrio!A19"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0317",
+   "es": "Invitados necesarios por evento (caja)",
+   "donde": [
+    "WEDP · Punto Equilibrio!A20"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0320",
+   "es": "Invitados por evento previstos en el plan",
+   "donde": [
+    "WEDP · Punto Equilibrio!A23"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0325",
+   "es": "Invitados por evento necesarios para cubrir costes según el precio medio por invitado (columnas) y el coste variable por invitado (filas). En verde, los que están por debajo de los invitados que prevé el plan.",
+   "donde": [
+    "WEDP · Punto Equilibrio!A29"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0326",
+   "es": "Invitados por evento necesarios: precio medio por invitado sin IVA (columnas) × coste variable por invitado (filas)",
+   "donde": [
+    "WEDP · Punto Equilibrio!A31"
+   ],
+   "pistas": [
+    "P06",
+    "P08",
+    "P01",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0333",
+   "es": "Invitados por evento",
+   "donde": [
+    "WEDP · Escenarios!A5"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0338",
+   "es": "Invitados por evento para el equilibrio",
+   "donde": [
+    "WEDP · Escenarios!A21"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0341",
+   "es": "Invitados al año por jornada equivalente",
+   "donde": [
+    "WEDP · Escenarios!A24"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0342",
+   "es": "Invitados que tendría que recibir cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+   "donde": [
+    "WEDP · Escenarios!E24"
+   ],
+   "fila": "Invitados al año por jornada equivalente",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0347",
+   "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los invitados, el precio por invitado y los eventos. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+   "donde": [
+    "WEDP · Escenarios!A28"
+   ],
+   "propuesta_en": "The \"Base\" column reads its three inputs from the \"0. Assumptions\" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: the only things that change are covers, average check and days. FIXED COSTS are the same in all three: miscellaneous and contingency, which is a percentage of sales, sits at the top with the variable costs and each scenario carries its own.",
+   "propuesta_de": "GREST c0375 (RESTP 4. Escenarios!A29)",
+   "pistas": [
+    "P35",
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0360",
+   "es": "Vende, enseña la finca, firma los contratos, lleva el calendario y coordina al catering. Como administrador de la SL cotiza en el régimen de autónomos: el libro le imputa el 33 % de Seguridad Social sobre 14 pagas como si fuera nómina, que es el lado prudente. Confirma con tu gestoría la cuota real",
+   "donde": [
+    "WEDP · Personal!J5"
+   ],
+   "fila": "Titular — gerencia, ventas y visitas",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 4500
+   },
+   "pistas": [
+    "P06",
+    "P58",
+    "P71",
+    "P03",
+    "P12",
+    "P36",
+    "P72",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0362",
+   "es": "Contrato fijo discontinuo (art. 16 del Estatuto de los Trabajadores) a jornada completa de marzo a noviembre: equivale al 75 % en cómputo anual. Prepara cada evento con los novios y el catering y lo dirige el día. De diciembre a febrero (comidas de Navidad y eventos de invierno) coordina el titular. Bruto a jornada completa: unos 1.650 €",
+   "donde": [
+    "WEDP · Personal!J6"
+   ],
+   "fila": "Coordinación de bodas y celebraciones (fijo discontinuo, marzo-noviembre)",
+   "valor_us": {
+    "B": 1,
+    "C": 0.75,
+    "D": 3380
+   },
+   "pistas": [
+    "P06",
+    "P07",
+    "P58",
+    "P02",
+    "P12",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0364",
+   "es": "Jardines, riego, caminos, pequeñas reparaciones, grupo electrógeno y puesta a punto del salón y de la carpa. Al 80 % de jornada; lo grande (poda, pintura) va en los costes fijos. Bruto a jornada completa: 1.400 €",
+   "donde": [
+    "WEDP · Personal!J7"
+   ],
+   "fila": "Mantenimiento y jardinería",
+   "valor_us": {
+    "B": 1,
+    "C": 0.8,
+    "D": 3050
+   },
+   "pistas": [
+    "P07",
+    "P51",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0366",
+   "es": "Dos personas al 40 % de jornada en cómputo anual: montaje, control de acceso y aparcamiento, reposición de aseos y recogida. Dos en cada boda y una en el resto. Nunca como autónomos que te facturan: con tu horario y tu dirección es falso autónomo (art. 1.1 ET). Bruto a jornada completa: 1.350 €",
+   "donde": [
+    "WEDP · Personal!J8"
+   ],
+   "fila": "Auxiliares de montaje, acceso y aseos (fijos discontinuos)",
+   "valor_us": {
+    "B": 2,
+    "C": 0.35,
+    "D": 2062
+   },
+   "pistas": [
+    "P06",
+    "P07",
+    "P10",
+    "P36",
+    "P24",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0368",
+   "es": "Al 20 % de jornada: visitas de los sábados por la mañana, ferias nupciales y seguimiento de las peticiones de los portales. Bruto a jornada completa: 1.500 €",
+   "donde": [
+    "WEDP · Personal!J9"
+   ],
+   "fila": "Comercial de bodas a tiempo parcial",
+   "valor_us": {
+    "B": 1,
+    "C": 0.2,
+    "D": 763
+   },
+   "pistas": [
+    "P07",
+    "P45",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0370",
+   "es": "Al 20 % de jornada: limpieza entre eventos del salón, los aseos y el office. La limpieza a fondo tras cada boda va en el coste directo del evento. Bruto a jornada completa: 1.300 €",
+   "donde": [
+    "WEDP · Personal!J10"
+   ],
+   "fila": "Limpieza y puesta a punto a tiempo parcial",
+   "valor_us": {
+    "B": 1,
+    "C": 0.25,
+    "D": 780
+   },
+   "pistas": [
+    "P07",
+    "P02",
+    "P24",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0380",
+   "es": "Art. 34.1 del Estatuto de los Trabajadores; tu convenio provincial puede fijar menos",
+   "donde": [
+    "WEDP · Personal!J18"
+   ],
+   "fila": "Jornada completa del convenio (horas/semana)",
+   "propuesta_en": "40 hours a week is the FLSA overtime threshold for non-exempt employees; some states add daily overtime rules. Change it if your own full-time week is different",
+   "propuesta_de": "GM c0385 (PIZP Personal!J19)",
+   "pistas": [
+    "P06",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0383",
+   "es": "Horas de trabajo por evento que hay que cubrir",
+   "donde": [
+    "WEDP · Personal!A20"
+   ]
+  },
+  {
+   "id": "c0384",
+   "es": "Media del día del evento, de montaje a recogida: boda 13 h, empresa 9 h, celebración privada 8 h y evento pequeño 5 h (9,2 h de media con la mezcla del plan)",
+   "donde": [
+    "WEDP · Personal!J20"
+   ],
+   "fila": "Horas de trabajo por evento que hay que cubrir",
+   "pistas": [
+    "P69",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0385",
+   "es": "Personas necesarias a la vez en cada evento",
+   "donde": [
+    "WEDP · Personal!A21"
+   ],
+   "propuesta_en": "People needed at the same time in each shift",
+   "propuesta_de": "GM c0390 (PIZP Personal!A22)"
+  },
+  {
+   "id": "c0386",
+   "es": "Personal de la finca a la vez en el evento: coordinación y dos auxiliares en las bodas, y coordinación y un auxiliar en el resto (2,3 de media). Camareros y cocina los pone el catering",
+   "donde": [
+    "WEDP · Personal!J21"
+   ],
+   "fila": "Personas necesarias a la vez en cada evento",
+   "pistas": [
+    "P69",
+    "P03",
+    "P12",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0387",
+   "es": "Horas de estructura por evento, fuera del día del evento",
+   "donde": [
+    "WEDP · Personal!A22"
+   ],
+   "propuesta_en": "Production hours per day BEFORE opening",
+   "propuesta_de": "GM c0392 (PIZP Personal!A23)"
+  },
+  {
+   "id": "c0388",
+   "es": "Horas por evento fuera del día del evento: visitas y reuniones con los novios, preparación con el catering, mantenimiento, jardín, limpieza y gestión. Es la parte de la plantilla que trabaja todo el año, repartida entre los eventos",
+   "donde": [
+    "WEDP · Personal!J22"
+   ],
+   "fila": "Horas de estructura por evento, fuera del día del evento",
+   "pistas": [
+    "P02",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0389",
+   "es": "Personas de estructura por evento",
+   "donde": [
+    "WEDP · Personal!A23"
+   ],
+   "propuesta_en": "People on the production shift",
+   "propuesta_de": "GM c0394 (PIZP Personal!A24)"
+  },
+  {
+   "id": "c0390",
+   "es": "Gerencia, mantenimiento y apoyo (comercial o limpieza) a la vez",
+   "donde": [
+    "WEDP · Personal!J23"
+   ],
+   "fila": "Personas de estructura por evento"
+  },
+  {
+   "id": "c0391",
+   "es": "Horas de servicio a cubrir al año",
+   "donde": [
+    "WEDP · Personal!A24"
+   ],
+   "propuesta_en": "Service hours to cover per year",
+   "propuesta_de": "GM c0396 (PIZP Personal!A25)"
+  },
+  {
+   "id": "c0394",
+   "es": "Por debajo del 100 % la plantilla no llega a cubrir el horario que declara el plan: o se contrata más o se recorta el horario",
+   "donde": [
+    "WEDP · Personal!J26"
+   ],
+   "fila": "Cobertura (contratadas / necesarias)",
+   "propuesta_en": "Below 100% the staff cannot cover the hours the plan declares: either hire more or cut the hours",
+   "propuesta_de": "GM c0399 (PIZP Personal!J27)"
+  },
+  {
+   "id": "c0403",
+   "es": "1. «0. Supuestos» es la hoja de mando: invitados, precio por invitado sin IVA, eventos, mezcla de espacio y canon, coste directo del evento, renta de la finca, financiación e impuestos.",
+   "donde": [
+    "WEDP · Instrucciones!A5"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "propuesta_en": "1. \"0. Assumptions\" is the control sheet: covers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, rent, financing and taxes.",
+   "propuesta_de": "GREST c0430 (RESTP Instrucciones!A5)",
+   "pistas": [
+    "P06",
+    "P08",
+    "P35",
+    "P01",
+    "P02",
+    "P11",
+    "P03",
+    "P09",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0406",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide entre 1,21: todo lo que factura la finca —espacio, servicios y canon— va al tipo general. El menú y la barra los factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), y no entran en este libro. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "WEDP · Instrucciones!A8"
+   ],
+   "pistas": [
+    "P06",
+    "P08",
+    "P78",
+    "P79",
+    "P35",
+    "P69",
+    "P11",
+    "P03",
+    "P12",
+    "P09",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0408",
+   "es": "6. La hoja «Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. Su Mes 1 es MARZO: la finca abre en primavera y llega al primer invierno con la caja de la temporada. El saldo mínimo del año nunca puede salir en rojo. Las señales de los novios no se modelan: tu caja real será algo mejor.",
+   "donde": [
+    "WEDP · Instrucciones!A10"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "pistas": [
+    "P35",
+    "P03",
+    "P31",
+    "P19",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0410",
+   "es": "8. El documento Word de este pack usa las cifras de este Excel; la calculadora de presupuestos y los modelos de contrato usan los mismos porcentajes de cobro y de cancelación. Si cambias una celda verde, el Excel manda.",
+   "donde": [
+    "WEDP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P82"
+   ]
+  },
+  {
+   "id": "c0421",
+   "es": "Invitados por evento para el punto de equilibrio CONTABLE (con la amortización dentro)",
+   "donde": [
+    "WEDP · Instrucciones!A30"
+   ],
+   "pistas": [
+    "P49",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0428",
+   "es": "Mes 1 del plan",
+   "donde": [
+    "WEDP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0429",
+   "es": "Marzo",
+   "donde": [
+    "WEDP · Instrucciones!B35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0430",
+   "es": "Decisión del plan",
+   "donde": [
+    "WEDP · Instrucciones!C35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0431",
+   "es": "La licencia (de 6 a 12 meses o más) y la obra se cierran durante el invierno anterior, y se abre con las comuniones y la empresa de primavera. La fila de estacionalidad de la Tesorería ya va girada",
+   "donde": [
+    "WEDP · Instrucciones!D35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P52",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0432",
+   "es": "Mezcla de eventos del plan",
+   "donde": [
+    "WEDP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P02",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0433",
+   "es": "120 eventos: 30 bodas, 35 de empresa, 40 celebraciones privadas y 15 pequeños",
+   "donde": [
+    "WEDP · Instrucciones!B36"
+   ],
+   "fila": "Mezcla de eventos del plan",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P02",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0434",
+   "es": "Estimación del kit",
+   "donde": [
+    "WEDP · Instrucciones!C36"
+   ],
+   "fila": "Mezcla de eventos del plan",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Bodas (30 × 120 invitados × 47 €), empresa (35 × 80 × 34 €), celebraciones privadas (40 × 70 × 29 €) y pequeños (15 × 40 × 30 €), sin IVA, de espacio, servicios y canon. Media: 82 invitados a 37 €",
+   "donde": [
+    "WEDP · Instrucciones!D36"
+   ],
+   "fila": "Mezcla de eventos del plan",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P07",
+    "P08",
+    "P01",
+    "P11",
+    "P09",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "Techo de fechas",
+   "donde": [
+    "WEDP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "Unos 26 sábados de mayo a octubre",
+   "donde": [
+    "WEDP · Instrucciones!B37"
+   ],
+   "fila": "Techo de fechas",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "Estimación del kit",
+   "donde": [
+    "WEDP · Instrucciones!C37"
+   ],
+   "fila": "Techo de fechas",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0439",
+   "es": "Las 30 bodas son unas 24 en sábados de temporada (el 80 %) y el resto en viernes, domingos o fuera de temporada. El libro no comprueba este techo: compruébalo tú en tu calendario",
+   "donde": [
+    "WEDP · Instrucciones!D37"
+   ],
+   "fila": "Techo de fechas",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P19",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0440",
+   "es": "Bodas en España en 2024",
+   "donde": [
+    "WEDP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P60",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "175.364, el 83,6 % civiles",
+   "donde": [
+    "WEDP · Instrucciones!B38"
+   ],
+   "fila": "Bodas en España en 2024",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P69",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "INE, Movimiento Natural de la Población 2024",
+   "donde": [
+    "WEDP · Instrucciones!C38"
+   ],
+   "fila": "Bodas en España en 2024",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0443",
+   "es": "De mayo a octubre se celebra el 63,7 %; septiembre (13,1 %) y junio (12,8 %) son los picos y enero se queda en el 3,8 %",
+   "donde": [
+    "WEDP · Instrucciones!D38"
+   ],
+   "fila": "Bodas en España en 2024",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P69",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0444",
+   "es": "Antelación de la reserva de una boda",
+   "donde": [
+    "WEDP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P31",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0445",
+   "es": "12-18 meses (13 de media)",
+   "donde": [
+    "WEDP · Instrucciones!B39"
+   ],
+   "fila": "Antelación de la reserva de una boda",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0446",
+   "es": "Bodas.net, Informe del Sector Nupcial 2026",
+   "donde": [
+    "WEDP · Instrucciones!C39"
+   ],
+   "fila": "Antelación de la reserva de una boda",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "Por eso la primera temporada se reserva antes de abrir, condicionada a la licencia, y la rampa del plan dura 12 meses",
+   "donde": [
+    "WEDP · Instrucciones!D39"
+   ],
+   "fila": "Antelación de la reserva de una boda",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P40",
+    "P31",
+    "P52",
+    "P19",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0448",
+   "es": "Coste directo por evento",
+   "donde": [
+    "WEDP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0449",
+   "es": "650 € boda · 350 € empresa · 300 € celebración · 150 € pequeño",
+   "donde": [
+    "WEDP · Instrucciones!B40"
+   ],
+   "fila": "Coste directo por evento",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P07",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0450",
+   "es": "Estimación del kit",
+   "donde": [
+    "WEDP · Instrucciones!C40"
+   ],
+   "fila": "Coste directo por evento",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0451",
+   "es": "Limpieza tras el evento, reposición de aseos y consumibles, gasoil del grupo electrógeno, vigilancia y aparcamiento, y la tarifa de SGAE y AGEDI-AIE de cada evento",
+   "donde": [
+    "WEDP · Instrucciones!D40"
+   ],
+   "fila": "Coste directo por evento",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P10",
+    "P22",
+    "P23",
+    "P24",
+    "P25",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0452",
+   "es": "12 % de lo que factura el catering en la finca",
+   "donde": [
+    "WEDP · Instrucciones!B41"
+   ],
+   "fila": "Canon del catering exclusivo",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P03",
+    "P12",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "Supuesto del kit, sin fuente pública",
+   "donde": [
+    "WEDP · Instrucciones!C41"
+   ],
+   "fila": "Canon del catering exclusivo",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "Unos 13 € por invitado en una boda. Negócialo y pon el tuyo: en este plan, cada punto de canon son unos 6.700 € de ventas al año",
+   "donde": [
+    "WEDP · Instrucciones!D41"
+   ],
+   "fila": "Canon del catering exclusivo",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P07",
+    "P01",
+    "P11",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "Personal de la finca en un evento",
+   "donde": [
+    "WEDP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P03",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "Coordinación y 1 auxiliar (2 en las bodas)",
+   "donde": [
+    "WEDP · Instrucciones!B42"
+   ],
+   "fila": "Personal de la finca en un evento",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P13",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "Estimación del kit",
+   "donde": [
+    "WEDP · Instrucciones!C42"
+   ],
+   "fila": "Personal de la finca en un evento",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "Boda: 2 auxiliares × 13 h · empresa 1 × 9 h · celebración 1 × 8 h · pequeño 1 × 5 h. Camareros y cocina los pone el catering",
+   "donde": [
+    "WEDP · Instrucciones!D42"
+   ],
+   "fila": "Personal de la finca en un evento",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P12",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "IVA de lo que factura la finca",
+   "donde": [
+    "WEDP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P03",
+    "P09",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "21 %",
+   "donde": [
+    "WEDP · Instrucciones!B43"
+   ],
+   "fila": "IVA de lo que factura la finca",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "Ley 37/1992 del IVA",
+   "donde": [
+    "WEDP · Instrucciones!C43"
+   ],
+   "fila": "IVA de lo que factura la finca",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P09",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "El espacio y los servicios con precio propio y el canon que cobras al catering, al tipo general. El menú lo factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º). Meter el espacio al 10 % dentro de un pack es arriesgado: confírmalo con tu asesoría o pide una consulta vinculante",
+   "donde": [
+    "WEDP · Instrucciones!D43"
+   ],
+   "fila": "IVA de lo que factura la finca",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P11",
+    "P12",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "Plan de autoprotección",
+   "donde": [
+    "WEDP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P04",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "Desde 1.000 personas en edificio cerrado o carpa · 5.000 al aire libre en recinto delimitado",
+   "donde": [
+    "WEDP · Instrucciones!B44"
+   ],
+   "fila": "Plan de autoprotección",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P51",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "Orden INT/1068/2026, Directriz Básica de Autoprotección (BOE del 10-10-2026)",
+   "donde": [
+    "WEDP · Instrucciones!C44"
+   ],
+   "fila": "Plan de autoprotección",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P04",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "Una finca de 300 invitados queda por debajo de la norma estatal; tu comunidad o tu ayuntamiento pueden pedir más, por ejemplo en un entorno forestal",
+   "donde": [
+    "WEDP · Instrucciones!D44"
+   ],
+   "fila": "Plan de autoprotección",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P01",
+    "P03",
+    "P43",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "Ruido al exterior en zona residencial",
+   "donde": [
+    "WEDP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P68",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "55 dBA de día y de tarde · 45 dBA de noche",
+   "donde": [
+    "WEDP · Instrucciones!B45"
+   ],
+   "fila": "Ruido al exterior en zona residencial",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "RD 1367/2007, art. 24 y anexo III",
+   "donde": [
+    "WEDP · Instrucciones!C45"
+   ],
+   "fila": "Ruido al exterior en zona residencial",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "Limitador-registrador, baile final dentro y altavoces de espaldas a las viviendas. El horario de la música lo fijan tu comunidad y la ordenanza de tu ayuntamiento: compruébalo",
+   "donde": [
+    "WEDP · Instrucciones!D45"
+   ],
+   "fila": "Ruido al exterior en zona residencial",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P22",
+    "P68",
+    "P43",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0471",
+   "es": "Comida testigo",
+   "donde": [
+    "WEDP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P95",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "Una ración de 100 g o más durante 7 días, a 4 °C o menos (o a −18 °C)",
+   "donde": [
+    "WEDP · Instrucciones!B46"
+   ],
+   "fila": "Comida testigo",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "RD 1086/2020, art. 30",
+   "donde": [
+    "WEDP · Instrucciones!C46"
+   ],
+   "fila": "Comida testigo",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0474",
+   "es": "En bodas y encargos de más de 40 personas. La guarda quien sirve, el catering: exígelo en su contrato",
+   "donde": [
+    "WEDP · Instrucciones!D46"
+   ],
+   "fila": "Comida testigo",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P12",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0475",
+   "es": "Agua de pozo propio",
+   "donde": [
+    "WEDP · Instrucciones!A47"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P41",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Zona de abastecimiento de tipo 1",
+   "donde": [
+    "WEDP · Instrucciones!B47"
+   ],
+   "fila": "Agua de pozo propio",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "RD 3/2023, arts. 2 y 4.3",
+   "donde": [
+    "WEDP · Instrucciones!C47"
+   ],
+   "fila": "Agua de pozo propio",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "Con actividad comercial, el titular responde de la calidad del agua hasta el grifo: analíticas y protocolo",
+   "donde": [
+    "WEDP · Instrucciones!D47"
+   ],
+   "fila": "Agua de pozo propio",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P41",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "Convenio colectivo de referencia",
+   "donde": [
+    "WEDP · Instrucciones!A48"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P58",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Provincial de hostelería",
+   "donde": [
+    "WEDP · Instrucciones!B48"
+   ],
+   "fila": "Convenio colectivo de referencia",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0481",
+   "es": "VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4",
+   "donde": [
+    "WEDP · Instrucciones!C48"
+   ],
+   "fila": "Convenio colectivo de referencia",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P06",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0482",
+   "es": "Su lista nombra el catering, no el alquiler de espacios, y no es exhaustiva: es la referencia salarial prudente. Confírmalo con tu asesoría",
+   "donde": [
+    "WEDP · Instrucciones!D48"
+   ],
+   "fila": "Convenio colectivo de referencia",
+   "por_celda": true,
+   "pistas": [
+    "P83",
+    "P12",
+    "P98"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GR": {
+   "salida": "scripts/productos-digitales/business-plans-en-9/textos_en/GR.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 11,
+   "cadenas": [
+    {
+     "id": "c0053",
+     "es": "Aportación de los socios. Un banco pide entre el 25 y el 30 % de la necesidad de caja con dinero propio",
+     "en_actual": "Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need",
+     "de": "GPIZ-plan c0053 (PIZP 0. Supuestos!C30)",
+     "donde": [
+      "WEDP · 0. Supuestos!C30"
+     ]
+    },
+    {
+     "id": "c0094",
+     "es": "Imprevistos sobre las partidas de OBRA del bloque de la finca (%)",
+     "en_actual": "Contingency on the BUILD-OUT lines of the space block (%)",
+     "de": "GM c0095 (PIZP 0. Supuestos!A55)",
+     "donde": [
+      "WEDP · 0. Supuestos!A55"
+     ]
+    },
+    {
+     "id": "c0201",
+     "es": "CUENTA DE RESULTADOS — 3 AÑOS",
+     "en_actual": "PROFIT AND LOSS STATEMENT — 3 YEARS",
+     "de": "GPAN c0936 (PANP PyG 3 Años!A1)",
+     "donde": [
+      "WEDP · PyG 3 Años!A1"
+     ]
+    },
+    {
+     "id": "c0235",
+     "es": "Luz y gas van al 21 %; la factura del agua, al 10 %. El libro aplica a toda esta partida el tipo de la columna de al lado (21 %): si el agua pesa mucho en tu finca, sepárala en su línea",
+     "en_actual": "Enter the monthly bills excl. sales tax. The workbook applies a single tax treatment to this whole line, the one in the column next to it; if one utility is taxed differently in your area, give it its own line",
+     "de": "GM c0235 (PIZP PyG 3 Años!F24)",
+     "donde": [
+      "WEDP · PyG 3 Años!F24"
+     ]
+    },
+    {
+     "id": "c0295",
+     "es": "PUNTO DE EQUILIBRIO",
+     "en_actual": "BREAK-EVEN",
+     "de": "GPAN c0959 (PANP Punto Equilibrio!A1)",
+     "donde": [
+      "WEDP · Punto Equilibrio!A1"
+     ]
+    },
+    {
+     "id": "c0328",
+     "es": "ESCENARIOS",
+     "en_actual": "SCENARIOS",
+     "de": "GPAN c0970 (PANP Escenarios!A1)",
+     "donde": [
+      "WEDP · Escenarios!A1"
+     ]
+    },
+    {
+     "id": "c0349",
+     "es": "PERSONAL Y COSTES",
+     "en_actual": "STAFFING AND LABOR COSTS",
+     "de": "GPAN c0977 (PANP Personal!A1)",
+     "donde": [
+      "WEDP · Personal!A1"
+     ]
+    },
+    {
+     "id": "c0405",
+     "es": "3. Sólo «Punto Equilibrio» se deriva entera de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+     "en_actual": "3. Only \"Break-Even\" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in \"Scenarios\", seasonality and the launch ramp-up in \"12-Month Cash Flow\", and the other funding sources in \"Financing\" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+     "de": "GPAN c0996 (PANP Instrucciones!A7)",
+     "donde": [
+      "WEDP · Instrucciones!A7"
+     ]
+    },
+    {
+     "id": "c0409",
+     "es": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
+     "en_actual": "7. The \"Financing\" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.",
+     "de": "GR c0414 (PIZP Instrucciones!A11)",
+     "donde": [
+      "WEDP · Instrucciones!A11"
+     ]
+    },
+    {
+     "id": "c0508",
+     "es": "Estacionalidad × rampa, normalizado a 100 %: el AÑO factura lo que dice el P&L, pero repartido como lo reparte una finca que acaba de abrir",
+     "en_actual": "Seasonality × ramp-up, normalized to 100%: the YEAR brings in what the P&L says, but split the way a business that has just opened would split it",
+     "de": "GM c0510 (PIZP Tesorería 12 meses!O7)",
+     "donde": [
+      "WEDP · Tesorería 12 meses!O7"
+     ]
+    },
+    {
+     "id": "c0546",
+     "es": "Mide cuánto tarda el negocio en devolver la inversión con lo que genera ANTES de pagar al banco, con la MISMA base de flujo en los tres años; si puedes pagar la cuota lo dice el DSCR de la hoja de Financiación. El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro",
+     "en_actual": "Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the \"Financing\" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules",
+     "de": "GPIZ-plan c0548 (PIZP Tesorería 12 meses!D31)",
+     "donde": [
+      "WEDP · Tesorería 12 meses!D31"
+     ]
+    }
+   ]
+  }
+ }
+}

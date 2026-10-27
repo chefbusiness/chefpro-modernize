@@ -244,11 +244,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-hotel',
     url: '/kit-tareas-hotel',
     price: '€18,50',
-    name: { es: 'Tareas: Hotel Completo', en: 'Tasks: Full Hotel' },
+    name: { es: 'Tareas: Hotel Completo', en: 'Hotel Checklists Kit Pro' },
     description: {
       es: 'F&B, housekeeping, multi-punto de venta.',
-      en: 'F&B, housekeeping, and multi-outlet operations.',
+      en: 'Hotel checklists for F&B, front desk and night audit, housekeeping, the pool, maintenance, back office and the spa, plus the cash drawer: 636 tasks already written in 19 Excel files.',
     },
+    // Tienda EN (27-oct-2026): producto propio, `hotel-checklist-templates`, $29 USD.
+    urlByLang: { en: '/en/digital-products/hotel-checklist-templates' },
+    priceByLang: { en: '$29' },
   },
   'kit-tareas-heladeria': {
     id: 'kit-tareas-heladeria',
@@ -500,21 +503,27 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-heladeria',
     url: '/plan-negocio-heladeria',
     price: '€35',
-    name: { es: 'Plan de Negocio: Heladería Artesanal', en: 'Artisan Ice Cream Shop Business Plan (Spain)' },
+    name: { es: 'Plan de Negocio: Heladería Artesanal', en: 'Ice Cream Shop Business Plan Kit' },
     description: {
       es: 'Obrador y vitrina: plan financiero Excel, plan en Word y checklist de apertura.',
-      en: 'Word business plan, Excel financial projections and opening checklist for a gelato shop with its own kitchen.',
+      en: 'Word business plan, Excel financial projections and startup checklist for an ice cream shop that makes its own ice cream.',
     },
+    // Tienda EN (27-oct-2026): producto propio, `ice-cream-shop-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/ice-cream-shop-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-finca-eventos-bodas': {
     id: 'plan-negocio-finca-eventos-bodas',
     url: '/plan-negocio-finca-eventos-bodas',
     price: '€45',
-    name: { es: 'Plan de Negocio: Finca de Eventos y Bodas', en: 'Wedding & Event Venue Business Plan (Spain)' },
+    name: { es: 'Plan de Negocio: Finca de Eventos y Bodas', en: 'Wedding Venue Business Plan Kit' },
     description: {
       es: 'Finca arrendada con catering exclusivo: plan financiero Excel, plan en Word, checklist de apertura, calculadora y contratos.',
-      en: 'Word business plan, Excel financial projections, opening checklist, pricing calculator and contract templates for a leased wedding and event venue.',
+      en: 'Word business plan, Excel financial projections, pricing calculator, venue rental agreement templates and startup checklist for a leased wedding and event venue with an exclusive caterer.',
     },
+    // Tienda EN (27-oct-2026): producto propio, `wedding-venue-business-plan`, $49 USD.
+    urlByLang: { en: '/en/digital-products/wedding-venue-business-plan' },
+    priceByLang: { en: '$49' },
   },
   'plan-negocio-pizzeria': {
     id: 'plan-negocio-pizzeria',

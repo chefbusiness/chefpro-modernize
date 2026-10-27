@@ -102,6 +102,10 @@ SCRATCH = os.environ.get(
 #: `calculadora_pael.py` (SPEC business-plans-en-7 D116, D123-D124).
 #: pizza-shop-business-plan: Pizza Shop Business Plan Kit (EN), ídem + la calculadora de
 #: `calculadora_piz.py` (SPEC business-plans-en-8 D135, D145, D148).
+#: ice-cream-shop-business-plan: Ice Cream Shop Business Plan Kit (EN), ídem sin calculadora (SPEC business-plans-en-10
+#: D188, D201).
+#: wedding-venue-business-plan: Wedding Venue Business Plan Kit (EN), ídem + la calculadora de `calculadora_wed.py` y los
+#: contratos de `contrato_wed.py` (SPEC business-plans-en-9 D158, D168, D171-D172).
 #: food-cost-menu-engineering-guide: Food Cost + Menu Engineering Guide (EN), traducción por celda de los 8 xlsx de la
 #: guía ES (SPEC guia-food-cost-en D12: Letter, metadatos EN, «Instructions»); no lleva el vocabulario ES de la casilla.
 #: how-to-open-a-pastry-shop: How to Open a Pastry Shop (EN), traducción por celda de los 8 xlsx de la guía ES
@@ -117,6 +121,7 @@ SCRATCH = os.environ.get(
 #: ice-cream-shop-checklist-templates: Ice Cream Shop Checklists Kit Pro (EN), `--kit icecream` (checklists-kit/icecream/SPEC.md).
 #: chocolate-shop-checklist-templates: Chocolate Shop Checklists Kit Pro (EN), `--kit chocolate` (checklists-kit/chocolate/SPEC.md).
 #: pastry-shop-checklist-templates: Pastry Shop Checklists Kit Pro (EN), `--kit pastry` (checklists-kit/pastry/SPEC.md).
+#: hotel-checklist-templates: Hotel Checklists Kit Pro (EN), `--kit hotel` (checklists-kit/hotel/SPEC.md).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
              'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan',
@@ -125,10 +130,13 @@ EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'bbq-catering-business-plan',
              'paella-catering-business-plan',
              'pizza-shop-business-plan',
+             'ice-cream-shop-business-plan',
+             'wedding-venue-business-plan',
              'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates',
              'catering-checklist-templates', 'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
              'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',
-             'chocolate-shop-checklist-templates', 'pastry-shop-checklist-templates'}
+             'chocolate-shop-checklist-templates', 'pastry-shop-checklist-templates',
+             'hotel-checklist-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'

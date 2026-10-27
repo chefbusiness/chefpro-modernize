@@ -1,0 +1,37 @@
+{
+ "carpeta": "/root/wt-icecream/astro-site/public/dl/ice-cream-shop-business-plan",
+ "parcial": false,
+ "piezas": 1383,
+ "fallos": 0,
+ "ficheros": {
+  "ice-cream-shop-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 7074,
+   "piezas": 116,
+   "sha256": "79e36bc75ef528ac981ab9e620033a2adf74c36af44b871172441a58461d22c2",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "ice-cream-shop-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 736,
+   "piezas": 772,
+   "sha256": "7614f552ad6acf4061fbc16816b2ab33c87557b2cc176148f6d98166ad0ffb08",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "ice-cream-shop-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 495,
+   "sha256": "4378abf69e0a927b92f703a54841a8fb8d415eb7884cb325a1040ad09026384b",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}

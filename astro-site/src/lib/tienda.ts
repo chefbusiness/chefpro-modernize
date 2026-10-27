@@ -206,6 +206,24 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (27-oct-2026): Ice Cream Shop Business Plan Kit (SPEC business-plans-en-10 D186/D205). vivo: true en la rama,
+    // que se fusiona cuando existe el Payment Link (mismo criterio que el Pizza Shop, el Paella y el BBQ Business Plan Kit).
+    familia: 'plan-negocio-heladeria',
+    productos: {
+      es: { slug: 'plan-negocio-heladeria', vivo: true },
+      en: { slug: 'ice-cream-shop-business-plan', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (27-oct-2026): Wedding Venue Business Plan Kit (SPEC business-plans-en-9 D156/D176). vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Pizza Shop, el Ice Cream Shop y el BBQ Business Plan Kit).
+    familia: 'plan-negocio-finca-eventos-bodas',
+    productos: {
+      es: { slug: 'plan-negocio-finca-eventos-bodas', vivo: true },
+      en: { slug: 'wedding-venue-business-plan', vivo: true },
+    },
+  },
+  {
     // Tienda EN (15-oct-2026): Food Cost + Menu Engineering Guide, primera guía de la tienda EN
     // (SPEC guia-food-cost-en D1). vivo: true en la rama, que se fusiona cuando existe el Payment Link.
     familia: 'guia-food-cost-ingenieria-menu',
@@ -306,6 +324,16 @@ export const FAMILIAS: FamiliaProducto[] = [
     productos: {
       es: { slug: 'kit-tareas-heladeria', vivo: true },
       en: { slug: 'ice-cream-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (27-oct-2026): Hotel Checklists Kit Pro, décimo hermano vertical del Restaurant Checklists Kit Pro (SPEC
+    // checklists-kit/hotel D1-D4). Gemelo del Kit de Tareas Hotel Completo (/kit-tareas-hotel). vivo: true en la rama,
+    // que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-hotel',
+    productos: {
+      es: { slug: 'kit-tareas-hotel', vivo: true },
+      en: { slug: 'hotel-checklist-templates', vivo: true },
     },
   },
   {

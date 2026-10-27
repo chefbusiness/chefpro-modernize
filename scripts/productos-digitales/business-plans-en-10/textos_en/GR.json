@@ -1,0 +1,16 @@
+{
+ "c0032": "Card and mobile wallet (contactless) processing fees on total sales. Ask your POS provider for its rate",
+ "c0053": "Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need",
+ "c0055": "Principal requested. The \"Financing\" tab compares what you put in with the cash need on \"Startup Costs\" and tells you whether you have a surplus or a shortfall: adjust the loan with that figure. The example is an SBA 7(a) loan, which you apply for through your lender (SBA Microloans go up to $50,000)",
+ "c0086": "Seating capacity of the space (indoor seats, patio not included)",
+ "c0201": "PROFIT AND LOSS STATEMENT — 3 YEARS",
+ "c0253": "Licensed pest control company; part of your HACCP-based food safety plan",
+ "c0255": "ASCAP, BMI and SESAC are separate licensing organizations; the fee depends on the size and capacity of your shop. Only needed if you play music",
+ "c0295": "BREAK-EVEN",
+ "c0328": "SCENARIOS",
+ "c0349": "STAFFING AND LABOR COSTS",
+ "c0370": "Coverage for vacations and the team's days off through the year. Paid sick leave is required by some states and cities: check yours",
+ "c0405": "3. Only \"Break-Even\" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in \"Scenarios\", seasonality and the launch ramp-up in \"12-Month Cash Flow\", and the other funding sources in \"Financing\" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+ "c0409": "7. The \"Financing\" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.",
+ "c0543": "Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the \"Financing\" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules"
+}

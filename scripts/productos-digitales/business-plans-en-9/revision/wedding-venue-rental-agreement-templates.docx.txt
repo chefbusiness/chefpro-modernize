@@ -1,0 +1,163 @@
+# wedding-venue-rental-agreement-templates.docx
+core: title='Venue Rental Agreement Templates: Couples, Corporate Clients & Exclusive Caterer · Wedding Venue Business Plan Kit' · author='AI Chef Pro' · página 8.5 × 11.0 in
+[0] (Normal) AI CHEF PRO · WEDDING VENUE BUSINESS PLAN KIT
+[1] (Normal) Venue Rental Agreement Templates
+[2] (Normal) Couples & private events, corporate clients and exclusive caterer. Three editable documents.
+[3] (Normal) Template, not legal advice. Consumer, deposit, alcohol and tax rules vary by state. Have a licensed attorney in your state review and adapt it before you use it.
+[4] (Normal) How to use these templates. They are a starting point so you don't begin with a blank page. Adapt them with your attorney and your CPA, and to the rules of your state, county and city, before you sign your first contract. The percentages, deadlines and tiers you see are the defaults of the kit's pricing calculator and are examples: adjust them to your case and to what the market in your area accepts. Anything in square brackets, such as [name] or $[amount], you fill in for each contract.
+[5] (Normal) Three ideas guide the wording. First: the venue sells the space and its services, and the exclusive caterer sells the menu and the bar, each with its own invoice. Second: what is charged and what is refunded is reasonable and mutual, so the clauses hold up if a client disputes them. Third: no date is confirmed as firm at a venue that does not yet hold the permits to host events; until then, you sign only bookings contingent on the permits (clause 2A), with a full refund if they do not arrive.
+[6] (Normal) ·  ·  ·
+[7] (Normal) Model 1 · Venue Rental Agreement (Couples & Private Events)
+[8] (Normal) FOR INDIVIDUALS: WEDDINGS, REHEARSAL DINNERS, SHOWERS, BIRTHDAYS AND OTHER PRIVATE CELEBRATIONS
+[9] (Normal) Dated [mm/dd/yyyy], in [city, State].
+[10] (Normal) Parties
+[11] (Normal) This agreement is between [legal name of the venue business], a [State] [LLC], with its address at [full address], which operates the event venue known as [venue name], located at [property address, county, State] (the "Venue").
+[12] (Normal) And [full name of the client], residing at [full address], who contracts in their own name for a private celebration (the "Client"). If there are two contracting parties, for example a couple, both are named here with their details and each is responsible for the whole agreement: [second party and address].
+[13] (Normal) Both parties confirm that they have the capacity to contract and agree to the following terms.
+[14] (Normal) 1. Rental and included services
+[15] (Normal) The Venue grants the Client the use of the spaces listed below, with the services listed below, for [type of celebration] on [mm/dd/yyyy], during the hours set in the setup, event and load-out hours clause.
+[16] (List Bullet) Spaces included: [ceremony site, hall or tent, cocktail area, restrooms, dance floor, bridal suite, groom's lounge, parking].
+[17] (List Bullet) Venue services included: [setup and teardown of tables and chairs, base linens, lighting, venue coordinator on the day, event attendants, cleaning, parking attendants, rain plan].
+[18] (List Bullet) Not included: the food, bar and beverages, which the Client books with the Venue's exclusive caterer, and the Client's own vendors (photographer, music, decor, flowers).
+[19] (Normal) The Venue's exclusive caterer is [caterer's legal name] (the "Caterer"). The Caterer invoices the Client directly and separately for the menu and the bar, under its own proposal and terms, and serves alcohol under its own license or permit. The Venue does not sell or serve food or alcohol, does not invoice or collect those amounts and is not responsible for them, except as they affect the space and its facilities.
+[20] (Normal) 2. Permits
+[21] (Normal) The Venue represents that it holds the zoning approval (conditional or special use permit, as required by [County]) and the certificate of occupancy needed to host events at the property, for the maximum occupancy and the uses booked [or, if it does not hold them yet, that it has applied for them and that this agreement is a contingent booking under clause 2A], and agrees to keep them in force through the event date. The Venue will give the Client a copy of the permits on written request.
+[22] (Normal) If, for any reason, the Venue loses or cannot use those permits before the event, it will tell the Client immediately and the clause on cancellation by the Venue will apply.
+[23] (Normal) 2A. Contingent booking before permits [use only if the Venue does not yet hold its permits]
+[24] (Normal) This agreement is a contingent booking: it is subject to the condition that the Venue obtains the conditional use permit and the certificate of occupancy needed to host the event by [date, at least six months before the event], and until then the date is not confirmed as firm. While the condition is pending, the Venue collects only the retainer described in the payment schedule. As soon as the Venue obtains the permits, it will tell the Client in writing, and from that moment the booking is firm and the whole agreement applies.
+[25] (Normal) If the condition is not met by that date, this agreement ends and the Venue will refund everything collected within [14] days, with no deduction and no penalty to the Client [and will pay the Client $[amount] in compensation].
+[26] (Normal) 3. Guest count, guaranteed minimum and final headcount
+[27] (List Bullet) Expected guests: [number].
+[28] (List Bullet) Guaranteed guest count: [number] guests, which the Client commits to with the Caterer and on which the menu and the logistics of the day are based, even if fewer people finally attend.
+[29] (List Bullet) Final headcount: the Client gives the final number of guests in writing, with any allergies and intolerances the Client knows of, no later than [14] days before the event. After that date the number can only go up, within the maximum occupancy and if the Venue and the Caterer can accommodate it; it cannot go below the guaranteed guest count.
+[30] (List Bullet) [If the Venue charges per guest: guests above the guaranteed count are billed at $[amount] per person plus applicable sales tax on the final invoice.]
+[31] (Normal) 4. Fees and sales tax
+[32] (Normal) The venue rental fee and the Venue's services are $[base amount] plus applicable sales tax as required by [State] law, which comes to $[tax amount], for a total of $[total amount]. That amount does not include the menu or the bar, which are paid to the Caterer.
+[33] (Normal) 5. Payment schedule and receipts
+[34] (Normal) The Client will pay the total in three payments, by [bank transfer, card or the method the Venue states in writing]:
+[35] (List Bullet) Retainer: [25]% ($[amount]), when this agreement is signed.
+[36] (List Bullet) Second payment: [35]% ($[amount]), [180] days before the event, that is, on [mm/dd/yyyy].
+[37] (List Bullet) Final payment: [40]% ($[amount]), [30] days before the event, that is, on [mm/dd/yyyy], together with any difference for the final headcount if the Venue charges per guest.
+[38] (Normal) The Venue will issue a receipt or invoice for each payment, the retainer included, at the moment it receives it. If the Client is more than [10] days late on a payment, the Venue may demand it in writing and, if it is still unpaid after that notice, treat the agreement as cancelled by the Client under the clause on cancellation by the Client.
+[39] (Normal) 6. Retainer
+[40] (Normal) The retainer is a booking payment that is applied to the total price if the event takes place. If a party cancels, the retainer and any other amount paid are governed only by the cancellation table in the clause on cancellation by the Client and by the clause on cancellation by the Venue, which replace any other term of this agreement about deposits: if the Client cancels, the Venue keeps what the cancellation table sets; if the Venue cancels, it refunds everything collected and pays the Client what the clause on cancellation by the Venue sets. Any deposit rule is applied to the extent permitted by applicable law.
+[41] (Normal) 7. Cancellation by the Client
+[42] (Normal) If the Client cancels the event, the Venue keeps a percentage of the total price, based on how long before the event date the Client gives written notice of cancellation:
+[43] (List Bullet) [12] months or more before the event: [10]% of the price.
+[44] (List Bullet) From [6] months to less than [12]: [25]% of the price.
+[45] (List Bullet) From [3] months to less than [6]: [50]% of the price.
+[46] (List Bullet) From [1] month to less than [3]: [75]% of the price.
+[47] (List Bullet) Less than [1] month: [100]% of the price, minus the costs the Venue saves by not hosting the event (cleaning, supplies, extra staff and extra services not provided).
+[48] (Normal) If what has already been paid is more than the percentage the Venue keeps, the Venue refunds the difference within [14] days. If it is less, the Client pays the difference up to that percentage. The parties agree these amounts are a reasonable estimate of the Venue's loss, not a penalty: the Venue cannot offer the date to other clients and it turns away other bookings. If applicable law limits these amounts, they apply only to the extent that law allows.
+[49] (Normal) Rebooking credit. If the Venue rebooks the date at an equal or higher fee, it refunds what it retained, minus its documented costs (such as marketing, administrative time and any services already paid for).
+[50] (Normal) 8. Cancellation by the Venue
+[51] (Normal) If the Venue cancels, or cannot provide the space, for a reason other than force majeure, it refunds everything collected within [14] days and also pays the Client $[agreed amount] [or: an amount equal to what the Venue would have kept at that point in the cancellation table]. This clause is mutual: the Venue applies to itself the same logic it applies to the Client.
+[52] (Normal) The Venue will also make reasonable efforts to help the Client find an alternative date or a comparable venue, but the Client is not obliged to accept either.
+[53] (Normal) 9. Date change
+[54] (Normal) The Client may ask in writing to change the event date. The Venue will accept if it has availability and the new date falls within [12] months after the original date. The change is free only if requested [6] months or more before the original date; otherwise a change fee of $[amount] applies and the price is updated to the Venue's rate for the new date. If the Venue cannot accept the change, this agreement continues on its terms.
+[55] (Normal) 10. Signing away from the Venue [optional]
+[56] (Normal) [Optional clause. If this agreement is signed at a bridal show, off-site or remotely, the Venue gives the Client a cancellation window of [3] business days after signing: the Client may cancel in writing in that time and the Venue refunds every amount paid within [14] days. After the window, the cancellation table applies.]
+[57] (Normal) [Drafting note: if you sign couples at bridal shows or off-site, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway. Delete this clause if you do not sign away from the Venue.]
+[58] (Normal) 11. Setup, event and load-out hours
+[59] (List Bullet) Access for the Client's vendors to set up: from [time] on the day of the event (or [date and time] if agreed for the day before).
+[60] (List Bullet) Event: from [time] to [time]. Outdoor music ends at the curfew set by the conditions of the Venue's conditional use permit and the county noise ordinance, which the Venue will give the Client in writing; after that, music and dancing continue indoors until [time].
+[61] (List Bullet) Load-out and departure of guests and vendors: before [time]. The Client's belongings left after that time are kept for [7] days and the Venue is not responsible for their loss.
+[62] (Normal) If the Client runs past the agreed hours without prior agreement, the Venue may charge $[amount] for each hour or part of an hour, and may turn off the music or end the event when an authority or the safety of people requires it.
+[63] (Normal) 12. Noise and music
+[64] (Normal) The Venue is in an area with neighbors and wildlife, and the Client agrees to respect the noise limits. The Venue has [a decibel limit and a sound meter] set up on the sound system, which the Client and the Client's vendors may not tamper with. Outdoor speakers face the direction the Venue indicates, away from homes. The last dance is held indoors with doors and windows closed.
+[65] (Normal) The Venue is responsible for ASCAP, BMI and SESAC music licensing for the property [and it is included in the price / and it is passed on to the Client for $[amount], shown on the final invoice]. Music played by the Client's DJ or band is the responsibility of the Client or the Client's vendor. The Client will tell the DJ or band about this clause.
+[66] (Normal) 13. Maximum occupancy
+[67] (Normal) The maximum occupancy for the event is [number] people, counting guests, vendor staff and children, as posted by the fire marshal. The Client may not exceed it, even with the agreement of the Client's vendors, and the Venue may deny entry or ask people to leave if the limit is exceeded.
+[68] (Normal) 14. Outside vendors
+[69] (Normal) The Client may bring a photographer, videographer, music, decor and flowers. For each one, the Client will give the Venue their details at least [20] days before the event. Outside vendors:
+[70] (List Bullet) follow the Venue's rules, access hours and safety instructions, and may not use open flame, confetti, rice, sparklers, fireworks or helium balloons outdoors, or nail, tape or tie anything to the facilities or trees, without the permission of the Venue and, where required, the fire marshal;
+[71] (List Bullet) must carry their own general liability insurance and give the Venue a certificate of insurance (COI) naming the Venue as additional insured, and the Venue may ask for it in advance;
+[72] (List Bullet) may not serve food or alcohol except as set in the Caterer's terms (for example, a cake from the Client's baker, subject to the Caterer's cake-cutting fee), and only licensed bartenders may serve alcohol, in all cases as agreed in writing.
+[73] (Normal) The Client is responsible for the damage caused by, and the breaches of, the Client's vendors as if they were the Client's own.
+[74] (Normal) 15. Damage and security deposit
+[75] (Normal) The Client is responsible for damage caused by the Client, the guests and the Client's vendors to the Venue's facilities, furniture, grounds and equipment, other than normal wear and tear. [To cover it, the Client pays a refundable security deposit of $[amount] with the second payment. The Venue returns it within [14] days after the event, once the property has been inspected, minus the cost of any damage and of extraordinary cleaning, itemized in writing with supporting documents. If the damage is more than the deposit, the Client pays the difference.] [If there is no security deposit, this clause is limited to the first sentence.]
+[76] (Normal) 16. Rain plan
+[77] (Normal) Rain is not force majeure and does not give a right to cancel without consequences, because it can be foreseen and the Venue has addressed it. The Venue guarantees a covered space, [tent, pergola or hall], with room for all the guests in the guaranteed guest count, and sets it up at no extra cost to the Client. The Client and the Venue decide on the outdoor plan or the rain plan no later than [10:00 a.m. on the day of the event] or earlier if the setup of the ceremony requires it. In case of doubt, the Venue decides for safety reasons.
+[78] (Normal) 17. Force majeure
+[79] (Normal) Neither party is responsible for failing to perform if the cause is an event beyond its reasonable control, such as an order of a public authority that prevents the event, a fire, a flood, or an official severe-weather warning that prohibits gatherings. In that case the parties will first try to move the event to a new date without a fee within the next [12] months. If that is not possible, the Client may choose a refund or a new date, and the Venue refunds everything collected, minus only the expenses already incurred and documented at the Client's request. Neither party owes the other further compensation.
+[80] (Normal) 18. Insurance
+[81] (Normal) The Venue carries general liability insurance for its operations that covers injury to attendees and third parties during the event, and will give the Client a certificate on request. That insurance does not cover guests' personal property or the property of the Client's vendors. The Client agrees to carry, at the Client's own cost, event liability insurance [and host liquor liability insurance if alcohol is served], and may also buy event cancellation insurance.
+[82] (Normal) 19. Food, alcohol and allergens
+[83] (Normal) Food safety, allergen information for the 9 major food allergens and the service of alcohol are the responsibility of the Caterer, who books the menu directly with the Client (clause 1). Alcohol is served only by the Caterer or by a licensed bartender, with ID checks, and never to minors or to visibly intoxicated people. The Client will give the Caterer the guests' allergies and intolerances with the final headcount. The Venue provides the prep & warming kitchen the Caterer uses, but does not prepare or serve food.
+[84] (Normal) 20. Photos and privacy
+[85] (Normal) The Venue will use the Client's personal data to manage this agreement, issue invoices and meet its legal obligations, and will keep it for as long as the relationship lasts or the law requires. The Client can ask for access, correction or deletion of their data at [email]. Privacy contact: [Venue details].
+[86] (Normal) If the Venue wants to use photos or videos of the event on its website or social media, the Client decides separately, in a distinct written consent that does not affect this agreement: [ ] I authorize   [ ] I do not authorize. Even if the Client authorizes, the Client may withdraw consent in writing at any time.
+[87] (Normal) 21. Mutual responsibility
+[88] (Normal) Each party is responsible for its own negligence and for the acts of its own employees and vendors. Neither party gives the other a one-sided indemnity. Neither party is liable for indirect or consequential damages, to the extent permitted by applicable law.
+[89] (Normal) 22. Governing law and disputes
+[90] (Normal) This agreement is governed by the law of [State]. The parties agree that any dispute will be heard in the courts of [County], [State], to the extent permitted by applicable law. Have a licensed attorney in your state review this clause: consumer protection rules differ by state.
+[91] (Normal) 23. Entire agreement and e-signatures
+[92] (Normal) This agreement is the entire agreement between the parties about the rental, and replaces any earlier proposal or conversation. Changes must be in writing and signed by both parties. The parties may sign electronically and in counterparts, and an electronic signature has the same effect as a handwritten one.
+[93] (Normal) In witness of this, the parties sign this agreement on the date at the top.
+[94] (Normal) Venue: __________________________        Client: __________________________
+[95] (Normal) Name: ______________        Title: ______________        Date: ______________
+[96] (Normal) ·  ·  ·
+[97] (Normal) Corporate & Organization Addendum
+[98] (Normal) FOR CORPORATE EVENTS, AGENCIES, ASSOCIATIONS AND OTHER BUSINESS CLIENTS
+[99] (Normal) This addendum replaces or completes the model above when the party booking is a company, an agency, a sole proprietor or an organization acting in the course of its business. In that case consumer protection rules usually do not apply and the parties agree freely on the following. The rest of the agreement (rental, permits, guaranteed guest count, hours, noise, maximum occupancy, vendors, damage, rain plan, insurance, allergens) stays the same.
+[100] (List Bullet) Parties and tax details. The Client gives its legal name, address, signer, title and authority to sign, and the email for invoices. The Venue sends its W-9 on request and invoices each payment with those details and, if there is a purchase order (PO), with its number. If the organization is exempt from sales tax, it gives the Venue a sales tax exemption certificate before the first invoice.
+[101] (List Bullet) Payment schedule. Retainer: [30]% at signing. Second payment: [30]% [60] days before the event. Final payment: [40]% [15] days before the event, on net [30] terms for the invoice balance if agreed. One invoice per payment, with applicable sales tax shown separately on the Venue's fee. Late amounts bear interest at [1.5]% per month, or the highest rate the law allows if that is lower.
+[102] (List Bullet) Cancellation. The Venue keeps, of the total price: [12] months or more before the event, [5]%; from [6] months to less than [12], [15]%; from [3] months to less than [6], [35]%; from [1] month to less than [3], [60]%; less than [1] month, [100]%. If what has been paid is more than the percentage kept, the Venue refunds the difference; if it is less, the Client pays it. The rebooking credit applies in the same way as for individuals.
+[103] (List Bullet) Cancellation by the Venue. The Venue refunds everything collected. Any additional compensation is the one agreed in this addendum: [the same amount it would have kept at that point / a fixed amount of $[amount]].
+[104] (List Bullet) Date changes, force majeure, headcount and guaranteed guest count. The same rules as for individuals apply, with the final headcount [10] days before the event. Date changes within the next [12] months have no fee if requested [3] months or more before the event.
+[105] (List Bullet) Company terms. The Client's general terms (purchase orders, vendor codes, internal policies) apply only if the Venue accepts them in writing. The parties keep the content of the events and the business information they exchange confidential.
+[106] (List Bullet) Governing law and venue. The agreement is governed by the law of [State], and the parties agree to the courts of [County], [State], waiving any other forum they may have.
+[107] (Normal) Venue: __________________________        Company: __________________________
+[108] (Normal) Name: ______________        Title: ______________        Date: ______________
+[109] (Normal) ·  ·  ·
+[110] (Normal) Model 2 · Exclusive Caterer Agreement
+[111] (Normal) BETWEEN THE VENUE AND THE CATERER THAT WORKS IT EXCLUSIVELY
+[112] (Normal) [Drafting note: this is a template, not legal advice. Have an attorney licensed in your state review it before you sign.]
+[113] (Normal) Made on [mm/dd/yyyy] in [City], [State].
+[114] (Normal) Parties
+[115] (Normal) [Venue legal name], a [State] [LLC], with its address at [address], represented by [name and title] (the "Venue").
+[116] (Normal) [Caterer legal name], a [State] [entity type], with its address at [address], represented by [name and title] (the "Caterer").
+[117] (Normal) 1. Purpose and exclusivity
+[118] (Normal) During the term of this Agreement, the Venue grants the Caterer the exclusive right to provide food and beverage service at every event held at [venue name and address]. The Venue will not allow another caterer on the property, and will not book an event that uses a food or beverage provider other than the Caterer, except as stated below.
+[119] (Normal) Agreed exceptions: [a wedding cake or desserts from a licensed bakery chosen by the client, as long as the bakery provides its license and a certificate of insurance (COI) naming the Venue as additional insured; alcohol supplied by the client only if the Venue approves it in writing and the Caterer’s liquor license allows it; other: [specify]]. For each exception, the Caterer only serves and is not responsible for the product the client supplies.
+[120] (Normal) 2. Direct contracting and billing
+[121] (Normal) The Caterer contracts directly with the client for the menu and the bar and bills the client directly for them, adding the sales tax, service charge and gratuity that apply under [State] law. The Caterer explains in writing to each client what is a service charge and what is a gratuity, and who receives each. The Venue does not set, collect or guarantee those charges. The Venue bills the client separately for its venue rental fee and services, with the sales tax that applies, if any.
+[122] (Normal) The Venue tells the Caterer about each new booking within [3] business days and shares the client’s contact details. The Caterer sends its proposal within [5] business days. If a client does not book the Caterer, the Venue may not confirm the event without catering unless both parties agree in writing.
+[123] (Normal) 3. Caterer commission
+[124] (Normal) In exchange for exclusivity and the use of the Venue’s facilities, the Caterer pays the Venue a commission of [10]% of the food and beverage sales it bills for events held at the Venue, calculated on the amount net of sales tax, service charge and gratuities. The [10]% is a starting point only: negotiate it based on the value of the space, each party’s investment and the expected number of events.
+[125] (List Bullet) Monthly statement. By the [10]th day of each month, the Caterer sends the Venue a statement of the previous month’s food and beverage sales for each event, with the event date, client, net amount and invoice number.
+[126] (List Bullet) Commission invoice. The Venue invoices the commission to the Caterer, and the Caterer pays it within [15] days of receiving the invoice.
+[127] (List Bullet) Audit right. With [15] days’ written notice, and no more than once per quarter, the Venue may review the Caterer’s invoices and payment records for events held at the Venue. If the review shows an underpayment of more than [3]%, the Caterer pays the missing commission, interest at [rate]% and the cost of the review.
+[128] (List Bullet) Annual minimum (optional). [The commission will not be less than $[amount] per year; if it falls short, the Caterer pays the difference at the end of the contract year.]
+[129] (Normal) 4. Use of the Venue’s prep and warming kitchen
+[130] (Normal) The Venue makes [the prep and warming kitchen, refrigeration, wash area and storage] available to the Caterer on the days and hours of each event. The Caterer:
+[131] (List Bullet) keeps its own health permit and any other permit or license required by [State] and [County] for its operation, including at this location, and gives the Venue a copy before its first event;
+[132] (List Bullet) is responsible for its own food safety plan, keeps it current and applies it at every event;
+[133] (List Bullet) uses the facilities with care, does not modify them or install equipment without the Venue’s written permission, and pays to repair anything it damages, beyond normal wear and tear.
+[134] (Normal) The Venue keeps responsibility for general maintenance of the facilities, water, power and propane or gas service, and structural cleaning.
+[135] (Normal) 5. Food allergens
+[136] (Normal) Before each event, the Caterer gives the client, in writing, the allergen information for each dish, covering the major food allergens as defined by federal law and by [State] or local rules. The Caterer also keeps this information available at the service for any guest who asks. The Caterer records the allergies and dietary restrictions reported with the final headcount and adapts dishes when possible. The Caterer is responsible for the accuracy of this information.
+[137] (Normal) 6. Staff
+[138] (Normal) The Caterer’s kitchen, service and bar staff are hired, directed and paid by the Caterer as its own W-2 employees, in compliance with the Fair Labor Standards Act, Form I-9 requirements and applicable state wage laws, including workers’ compensation. They are trained in food safety and, where required, alcohol service. There is no employment relationship between that staff and the Venue. The Caterer keeps enough staff for the service and for cleaning up after itself, and is responsible for their actions.
+[139] (Normal) 7. Liquor license and alcohol service
+[140] (Normal) The Caterer holds, at its own cost, the liquor license or catering permit that [State] and [County] require to serve alcohol at events at the Venue, and gives the Venue a copy before its first event. The Venue does not sell or serve food or alcohol. The Caterer serves alcohol under its own license and follows the law on checking IDs, not serving visibly intoxicated guests, and last call. If the Caterer’s license is suspended or lost, it tells the Venue the same business day.
+[141] (Normal) 8. Insurance
+[142] (Normal) The Caterer keeps in force, at its own cost, the following coverage for its work at the Venue, with the Venue named as additional insured where the policy allows: general liability, liquor liability of at least $[1,000,000] per occurrence, workers’ compensation as required by [State] law, and commercial auto liability if it drives to the property. The Caterer gives the Venue a COI at signing and at each renewal. If the Caterer lets coverage lapse, the Venue may suspend its activity at the Venue until it is restored.
+[143] (Normal) 9. Schedule, cleanup, waste and grease
+[144] (List Bullet) Schedule: the Caterer may access the kitchen from [time] and finishes load-out before [time] on the day after the event, following the event schedule the Venue sets with the client.
+[145] (List Bullet) Cleanup: after each event, the Caterer leaves the kitchen and bar area clean and sanitized, and removes its dishes, glassware and equipment.
+[146] (List Bullet) Waste and grease: the Caterer removes its own food waste and packaging at every event and disposes of used cooking oil and grease (FOG) through a licensed hauler, with a receipt available to the Venue. No grease goes down the drains or into the septic system.
+[147] (Normal) 10. Minimum menus, quality and tasting
+[148] (Normal) The Caterer offers at least [three] menus with a minimum price of $[amount] per guest before sales tax, service charge and gratuity, at a quality consistent with the Venue’s brand. The Caterer offers a tasting to couples who ask for one [at no charge for the wedding menu, with a minimum of [number] guests]. If the Venue receives repeated client complaints about quality or service, it may request changes, and the Caterer makes them within [30] days.
+[149] (Normal) 11. Term, renewal and termination
+[150] (Normal) This Agreement lasts [3] years from [mm/dd/yyyy] and renews for successive periods of [1] year unless either party gives the other [90] days’ written notice that it will not renew.
+[151] (Normal) Either party may terminate this Agreement if the other fails to meet an essential obligation (for example, unpaid commission, loss of the Caterer’s health permit or liquor license, lapsed insurance, a serious food safety violation, or loss of the Venue’s permits) and does not fix it within [30] days after written notice. Events already booked before termination are served through to the end, unless the reason for termination prevents it.
+[152] (Normal) 12. Return of the kitchen
+[153] (Normal) When this Agreement ends, the Caterer returns the kitchen and facilities in good condition, apart from normal wear and tear, removes its equipment and stock within [15] days and pays any commission still due. The Venue returns any security deposit it received from the Caterer, less any amount owed.
+[154] (Normal) 13. Governing law and venue
+[155] (Normal) This Agreement is governed by [State] law. The parties submit to the courts of [County], [State], for any dispute arising out of it. [Optional: before going to court, the parties will first try to resolve the dispute through good-faith negotiation or mediation.]
+[156] (Normal) Each party has read this Agreement and signs it in two copies, on the date shown at the top. Electronic signatures are valid for both parties.
+[157] (Normal) The Venue: __________________________        The Caterer: __________________________
+[158] (Normal) Name: ______________        Name: ______________
+[159] (Normal) Title: ______________        Title: ______________
+[160] (Normal) Date: ______________        Date: ______________

@@ -811,6 +811,57 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-27): Ice Cream Shop Business Plan Kit, edición inglesa del plan-negocio-heladeria (SPEC business-plans-en-10
+  // D186-D208: ice cream shop de barrio que hace su helado con base pasteurizada comprada, 20 asientos + patio, caso US D191).
+  // Textos en inglés: los pinta <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN y
+  // versión que llevan los docProps de los tres ficheros).
+  'ice-cream-shop-business-plan': {
+    version: '2.2',
+    updated: '2026-10-27',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-27',
+        title: 'First release',
+        changes: [
+          'First release of the Ice Cream Shop Business Plan Kit for a neighborhood shop that makes its own ice cream, about 1,000 sq ft with 20 seats plus a patio, scoops, hand-packed pints and ice cream cakes: a 10-section business plan in Word, an Excel financial model with 9 sheets and an 80-task startup checklist, set up for the US with notes for the UK, Canada and Australia.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example nets about 6% in year 1, not the 10-25% that many articles quote.',
+          'The model runs on customers per day, average check per person and days open per year, with the break-even measured in customers per day and checked against the cash you actually need. The 12-month cash flow starts in March so that the summer peak and the winter dip are both in the numbers.',
+          'Payroll for six roles with employer payroll taxes and a federal and a state or local minimum wage floor, including seasonal part-time scoopers who are rehired every spring, plus startup costs that include the batch freezer, the hardening cabinet and the dipping cabinets.',
+          'The example buys a pasteurized base from a licensed dairy; making your own mix is described as a variant. The plan never says that no license is needed: it points you to your state department of agriculture and your health department, and the checklist turns the license decision into a task.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and the DSCR checked against a 1.25× target.',
+          '80-task startup checklist in 6 phases: business setup, site and permits, production and health, staff and food safety, brand and menu, and opening and the season (Opening Day, your first 90 days and the winter plan).',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
+  // Tienda EN (2026-10-27): Wedding Venue Business Plan Kit, edición inglesa del plan-negocio-finca-eventos-bodas (SPEC business-plans-en-9
+  // D156-D177: wedding & event venue de granero o finca ARRENDADA con exclusive caterer, caso US D160). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN y versión que llevan los
+  // docProps de los cinco ficheros).
+  'wedding-venue-business-plan': {
+    version: '2.2',
+    updated: '2026-10-27',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-27',
+        title: 'First release',
+        changes: [
+          'First release of the Wedding Venue Business Plan Kit for a barn or estate wedding and event venue on a leased property with an exclusive caterer, a hall for 200 seated guests and an outdoor ceremony site: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing and quote calculator, venue rental agreement templates and an 84-task startup checklist, set up for the US with notes for the UK, Canada and Australia.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story: 100 events a year averaging 90 guests, $612,000 in year-1 sales, a net of 8.9% in year 1 rising to 14.2% by year 3 and a loan payment covered 1.86 times in the toughest year.',
+          'The model runs on events per year, guests per event and revenue per guest, with the venue earning a venue rental fee plus a commission from its exclusive caterer and selling no food or alcohol. The break-even is measured in events and checked against the cash you actually need, and the 12-month cash flow starts in March so that the June and September-October peaks and the winter trough are in the numbers.',
+          'Startup costs for a barn conversion on a leased property (architect and code consultant drawings, the conditional use permit, sprinklers, ADA restrooms, the caterer\'s prep kitchen), with notes on what can double a line. The plan asks for a lease whose term with extension options matches the loan term, an option to buy or a right of first refusal, the landlord\'s consent and a lease contingent on the permit.',
+          'Pricing and quote calculator by client, event type, season and day of the week, with a guest minimum, extras, sales tax, payment schedule, estimated caterer commission and a cancellation schedule, plus three worked examples.',
+          'Three editable agreement templates (couples and private events, corporate clients, exclusive caterer) with a retainer, a cancellation schedule with a rebooking credit and a booking contingent on permits: templates, not legal advice, to be reviewed by a local attorney.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and the DSCR checked against a 1.25× target.',
+          '84-task startup checklist in 6 phases: business setup, zoning and permits, build-out and equipment, staff and caterer, brand and bookings, and the season and events.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
   // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
   // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
@@ -1089,6 +1140,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'A Quarterly & Annual sheet for a US ice cream shop: pest control by a licensed operator, hood and duct cleaning under NFPA 96 only if you cook with grease (waffles, crepes), refrigeration by an EPA 608 technician, thermometer calibration, fire extinguishers (OSHA) with their hydrostatic test, gas and electrical, backflow testing (dipper wells and the ice machine), the health permit and the state frozen dessert license, food handler cards and a certified food protection manager, insurance with equipment breakdown and food spoilage coverage, and the POS and sales tax.',
           "US seasons: peak season from Memorial Day to Labor Day with summer staff (federal hour and equipment limits for 14- and 15-year-olds, work permits by state), pints and quarts to go (sold by weight only on a legal-for-trade scale), the off-season, ice cream catering at 0 °F with product at 10 °F or below on arrival, and a 12-month calendar with US dates, from Valentine's Day and National Ice Cream Day (the third Sunday of July) to Thanksgiving and the holidays, featured flavors by month and a UK note.",
           'Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; time records under the FLSA in the manager checklist; every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
+  'hotel-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-27',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-27',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 17 checklist templates plus 2 bonuses (19 Excel files, 74 sheets) with 636 hotel tasks already written, adapted to the US with notes for the UK.',
+          'Every department of a hotel in one kit: breakfast, lunch and dinner buffets, the restaurant, bars and grab-and-go, in-room dining and minibar, banquets and events (BEO), the front desk (AM, PM and night audit shifts, check-in and check-out), concierge and guest experience, housekeeping, public areas, the pool, the patio, preventive maintenance, back office and the spa.',
+          'A ✓, — or N/A drop-down on every task, and the counter on each checklist leaves out the tasks marked N/A. Assigned to, due-by and notes are green cells you can edit; every sheet is set up to print on US Letter paper.',
+          'Housekeeping for a US hotel: checkout and stayover room cleaning, turndown service, deep cleaning and linen control, with do-not-disturb welfare checks, bed bug inspection when stripping the bed, blood and needle handling under OSHA 1910.1030 and an EPA-registered disinfectant with its contact time.',
+          'Food safety under the FDA Food Code in °F (41 °F cold, 135 °F hot), buffet sneeze guards, a clean plate on every trip and buffet supervision, the 9 major allergens (the UK\'s 14 noted) and no glass in the pool area.',
+          'Pool and spa logs built on the CDC Model Aquatic Health Code: free chlorine, pH, readings before opening and during the day, records kept 3 years, and your state code first. The spa closing keeps the hot tub filtration and disinfection running 24 hours a day.',
+          'A Quarterly & Annual maintenance sheet for a US hotel: pest control, kitchen hood cleaning under NFPA 96, thermometer calibration, water management for Legionella (ASHRAE 188), hot water temperatures, pool and spa water, sprinklers and fire alarm, extinguishers, gas, electrical, elevators and boilers, evacuation drills on every shift and permits.',
+          'Daily opening and closing rounds for the F&B outlets and public areas in a safe order, a cash drawer count in US bills and coins with the starting bank and over/short against the POS Z report, time records under the FLSA in the back office, and a 24-date F&B calendar with US dates and a UK note, plus the US · UK · Canada · Australia Equivalents Guide.',
         ],
       },
     ],

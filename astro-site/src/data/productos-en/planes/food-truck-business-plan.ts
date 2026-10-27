@@ -86,6 +86,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Yes, if you'll cook paella live at catered events instead of selling from a window. Our Paella Catering Business Plan Kit covers a paella caterer working from a commissary: paella pans and 3-ring propane burners at the event, what your county and your fire marshal say about cooking on site, cooked rice as a TCS food, a break-even in events per year and a pricing calculator that turns your guest count into pans, rice and a price per guest. For a paella food truck that sells to walk-up customers, this kit fits better.",
   },
   {
+    q: 'Is there a business plan for an ice cream shop?',
+    a: "Yes, for a shop with a counter, not for a truck. Our Ice Cream Shop Business Plan Kit covers a neighborhood ice cream shop that makes its own ice cream: a 10-section Word plan, Excel projections with a break-even in customers per day and a 12-month cash flow that starts in March so summer and winter are both in the numbers, an 80-task startup checklist, and the question of buying a pasteurized base versus making your own mix, with the state license to ask about. For an ice cream truck that sells from a window, this kit fits better: the truck, the commissary, the permits and the events are what it plans.",
+  },
+  {
     q: 'Can I present this plan to a lender or investors?',
     a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%). It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
@@ -326,6 +330,8 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit' },
     { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },
     { href: '/en/digital-products/pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit' },
+    { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
+    { href: '/en/digital-products/wedding-venue-business-plan', label: 'Wedding Venue Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     // Post pilar del blog EN (18-oct-2026): captación para «how to start a food truck business».
     { href: '/en/blog/how-to-start-a-food-truck-business', label: 'How to Start a Food Truck Business' },

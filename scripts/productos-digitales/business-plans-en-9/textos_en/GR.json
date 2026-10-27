@@ -1,0 +1,13 @@
+{
+ "c0053": "Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need",
+ "c0094": "Contingency on the BUILD-OUT lines of the property block (%)",
+ "c0201": "PROFIT AND LOSS STATEMENT — 3 YEARS",
+ "c0235": "Enter the monthly bills excl. sales tax. The workbook applies a single tax treatment to this whole line, the one in the column next to it; if one utility is taxed differently in your area, give it its own line",
+ "c0295": "BREAK-EVEN",
+ "c0328": "SCENARIOS",
+ "c0349": "STAFFING AND LABOR COSTS",
+ "c0405": "3. Only \"Break-Even\" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in \"Scenarios\", seasonality and the launch ramp-up in \"12-Month Cash Flow\", and the other funding sources in \"Financing\" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+ "c0409": "7. The \"Financing\" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.",
+ "c0508": "Seasonality × ramp-up, normalized to 100%: the YEAR brings in what the P&L says, but split the way a venue that has just opened would split it",
+ "c0546": "Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the \"Financing\" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules"
+}

@@ -1,0 +1,609 @@
+# wedding-venue-pricing-calculator.xlsx
+docProps: title='Wedding Venue Pricing & Quote Calculator (Season, Day, Retainer & Cancellation Schedule) · Wedding Venue Business Plan Kit' · subject='Wedding Venue Business Plan Kit · v2.2' · creator='AI Chef Pro'
+
+## Calculator
+A1: WEDDING VENUE PRICING & QUOTE CALCULATOR
+A2: Type only in the GREEN cells: everything else is calculated. Amounts exclude sales tax unless the row says otherwise. The default values are Kit estimates: replace them with your own venue's.
+A4: EVENT DETAILS
+B4: Value
+C4: Notes
+A5: Client
+B5: Couple
+C5: Couple or Corporate: they change the payment schedule and the cancellation tiers (table at the end). A corporate client gets the quote "plus sales tax"; a couple, with sales tax included.
+A6: Event type
+B6: Wedding
+C6: Wedding, corporate event (meeting, dinner, holiday party), private celebration (shower, milestone birthday, rehearsal dinner) or micro wedding / elopement. It sets the venue rate, the caterer's food & beverage per guest and the direct cost from the tables at the end.
+A7: Event date
+B7: 10/09/2027
+C7: Type the full date (mm/dd/yyyy). It sets the season and the type of day from the month and weekday tables.
+A8: Expected guests
+B8: 130
+C8: Whole number of guests. The quote uses the higher of this number and the season minimum.
+A9: Ceremonies on site (no.)
+B9: 1
+C9: At the price in the extra services table.
+A10: Additional hours of venue use (no.)
+B10: 2
+C10: Hours beyond the base rental window in your agreement.
+A11: Premium decor & lighting packages (no.)
+B11: 1
+C11: Decor, furniture and lighting beyond the standard setup.
+A12: Rehearsals the day before (no.)
+B12: 0
+C12: 0 if the couple does not book a rehearsal at the venue.
+A13: Venue staff hours on the event (coordinator and attendants)
+B13: 16
+C13: Kit estimate: type your team's real hours (servers, bartenders and kitchen staff belong to the caterer).
+A14: Hourly wage of venue staff
+B14: 18
+C14: Kit estimate. At least your state or local minimum wage.
+A15: Employer payroll taxes (% of wages)
+B15: 0.1
+C15: FICA 7.65% plus federal and state unemployment taxes, about 10% (Kit estimate): check with your payroll provider.
+A16: Direct cost of extra services (% of their price)
+B16: 0.4
+C16: Kit estimate: what it costs you to deliver the ceremony, the decor package, the extra hours and the rehearsal.
+A17: Rounding of the venue rental fee (multiple, in dollars)
+B17: 50
+C17: The venue rental fee is rounded to the nearest multiple of this amount.
+A18: Caterer commission (% of the caterer's food & beverage sales)
+B18: 0.1
+C18: An editable ASSUMPTION, not a market figure: negotiate it with your caterer. For reference only: the caterer pays it to the venue, not the client.
+A19: Sales tax on venue charges (example)
+B19: 0.08
+C19: Example rate (state + local). Whether a venue rental fee is taxable depends on the state: ask your state's department of revenue.
+A20: Sales tax on the caterer's food & beverage (reference only)
+B20: 0.08
+C20: The caterer bills the menu and the bar with its own sales tax, service charge and gratuity; they are not venue revenue.
+A22: CALCULATION
+B22: Value
+C22: Notes
+A23: Season of the date (from the month table)
+B23 = Peak
+C23: Looks up the month of the date in the table at the end.
+A24: Type of day (from the weekday table)
+B24 = Saturday
+C24: Looks up the weekday of the date in the table at the end.
+A25: Season adjustment (premium + / discount −)
+B25 = 0.15
+C25: From the season table.
+A26: Day adjustment (premium + / discount −)
+B26 = 0
+C26: From the day table.
+A27: Venue rate for the event type (Saturday, shoulder season)
+B27 = 8000
+C27: From the event type table.
+A28: VENUE RENTAL FEE EXCL. SALES TAX
+B28 = 9200
+C28: Rate × (1 + season adjustment) × (1 + day adjustment), rounded to the chosen multiple.
+A29: Season minimum (guests)
+B29 = 100
+C29: From the season table.
+A30: Guaranteed guest count
+B30 = 130
+C30: The higher of the expected guests and the season minimum.
+A31: Minimum check
+B31 = Meets the minimum
+A32: Ceremonies
+B32 = 750
+C32: No. × price from the extra services table.
+A33: Additional hours
+B33 = 1000
+A34: Premium decor & lighting
+B34 = 800
+A35: Rehearsals
+B35 = 0
+A36: Extra services excl. sales tax
+B36 = 2550
+A37: Taxable amount (venue rental + services)
+B37 = 11750
+A38: Sales tax on venue charges
+B38 = 940
+A39: VENUE TOTAL (incl. sales tax)
+B39 = 12690
+C39: It does not include food or the bar: the exclusive caterer bills them separately.
+A40: Amount you quote (Couple: incl. sales tax · Corporate: plus sales tax)
+B40 = 12690
+C40: A corporate client gets the quote excl. sales tax ("plus sales tax"; if it is tax-exempt, ask for its exemption certificate); a couple, with sales tax included.
+A41: Venue rental & services per guaranteed guest (excl. sales tax)
+B41 = 90.3846
+C41: To compare with other venues.
+A42: Payment 1: retainer
+B42 = 3172.5
+C42: At signing.
+A43: Payment 2: second installment
+B43 = 4441.5
+A44: Second installment due by
+B44 = 04/12/2027
+C44: Event date minus the days in the table.
+A45: Payment 3: final balance
+B45 = 5076
+A46: Final balance due by
+B46 = 09/09/2027
+C46: Event date minus the days in the table.
+A47: Caterer's food & beverage excl. sales tax (estimate, guaranteed guests)
+B47 = 14300
+C47: FOR REFERENCE. Food & beverage per guest from the event type table × guaranteed guests. It is not venue revenue.
+A48: ESTIMATED CATERER COMMISSION (for reference)
+B48 = 1430
+C48: The exclusive caterer pays it to the venue, not the client. It is an assumption: negotiate it.
+A49: Caterer's food & beverage incl. sales tax (reference, billed by the caterer)
+B49 = 15444
+C49: So the client sees the full cost; the caterer's service charge and gratuity come on top.
+A50: Full reference budget for the client (venue incl. sales tax + food & beverage)
+B50 = 28134
+C50: What the client pays the venue plus what it pays the caterer.
+A51: Direct event cost: cleaning, restrooms, generator fuel, parking and security
+B51 = 1000
+C51: From the event type table (Kit estimate).
+A52: Venue staff cost (wages + payroll taxes)
+B52 = 316.8
+A53: Direct cost of the extra services
+B53 = 1020
+A54: Total direct cost of the event
+B54 = 2336.8
+A55: Venue revenue from the event (excl. sales tax, commission included)
+B55 = 13180
+C55: Venue rental + services + estimated commission.
+A56: Event contribution for the venue ($)
+B56 = 10843.2
+C56: Before rent, salaried staff, utilities, insurance and the overhead in the financial plan.
+A57: Event contribution margin (calculated)
+B57 = 0.8227
+C57: It comes from the costs; it is never typed in.
+A58: Event contribution without the commission ($)
+B58 = 9413.2
+C58: What the event would leave if the caterer paid no commission.
+A59: Amount kept if the client cancels: tier 1
+B59 = 1269
+C59: Furthest from the event (see the tier table). If the venue cancels: it refunds everything it collected.
+A60: Amount kept if the client cancels: tier 2
+B60 = 3172.5
+A61: Amount kept if the client cancels: tier 3
+B61 = 6345
+A62: Amount kept if the client cancels: tier 4
+B62 = 9517.5
+A63: Amount kept if the client cancels: tier 5
+B63 = 12690
+C63: Last tier, up to the event day. The agreement credits back what you recover by rebooking the date and the costs you save by not holding the event.
+A65: EVENT TYPE → VENUE RATE, CATERER'S FOOD & BEVERAGE AND DIRECT COST (excl. sales tax)
+B65: Venue rate (Saturday, shoulder season)
+C65: Caterer's food & beverage per guest
+D65: Direct event cost
+A66: Wedding
+B66: 8000
+C66: 110
+D66: 1000
+E66: Kit estimates (published barn venue rate cards range roughly $3,500-$10,000 for a peak Saturday: get local quotes). Direct cost: cleaning, restrooms, generator fuel, parking attendants and security.
+A67: Corporate event
+B67: 3500
+C67: 50
+D67: 500
+A68: Private celebration
+B68: 4000
+C68: 55
+D68: 500
+A69: Micro wedding / elopement
+B69: 2000
+C69: 80
+D69: 300
+A71: SEASON → RATE ADJUSTMENT AND GUEST MINIMUM
+B71: Adjustment (+ premium / − discount)
+C71: Guest minimum
+A72: Peak
+B72: 0.15
+C72: 100
+D72: Kit example. Peak season carries a premium and off-peak a discount; the event type rates are for a Saturday in shoulder season.
+A73: Shoulder
+B73: 0
+C73: 75
+A74: Off-peak
+B74: -0.2
+C74: 50
+A76: TYPE OF DAY → RATE ADJUSTMENT
+B76: Adjustment (+ premium / − discount)
+A77: Saturday
+B77: 0
+C77: Kit example: venue rate cards usually discount Fridays, Sundays and weekdays. The season and day adjustments multiply.
+A78: Friday or Sunday
+B78: -0.15
+A79: Weekday
+B79: -0.3
+A81: MONTH → SEASON
+B81: Season
+A82: January
+B82: Off-peak
+C82: Fall is the busiest wedding season in the US, with October, September and June as the peaks (Kit pattern). Adjust the months to your area.
+A83: February
+B83: Off-peak
+A84: March
+B84: Off-peak
+A85: April
+B85: Shoulder
+A86: May
+B86: Peak
+A87: June
+B87: Peak
+A88: July
+B88: Shoulder
+A89: August
+B89: Shoulder
+A90: September
+B90: Peak
+A91: October
+B91: Peak
+A92: November
+B92: Shoulder
+A93: December
+B93: Off-peak
+A95: WEEKDAY → TYPE OF DAY
+B95: Type of day
+A96: Sunday
+B96: Friday or Sunday
+A97: Monday
+B97: Weekday
+A98: Tuesday
+B98: Weekday
+A99: Wednesday
+B99: Weekday
+A100: Thursday
+B100: Weekday
+A101: Friday
+B101: Friday or Sunday
+A102: Saturday
+B102: Saturday
+A104: VENUE EXTRA SERVICES (price excl. sales tax)
+B104: Price
+A105: Ceremony on site (per ceremony)
+B105: 750
+C105: Kit example prices: type your own.
+A106: Additional hour of venue use (per hour)
+B106: 500
+A107: Premium decor & lighting package (per event)
+B107: 800
+A108: Rehearsal the day before (per rehearsal)
+B108: 400
+A110: POLICY BY CLIENT
+B110: Couple
+C110: Corporate
+A111: Payment 1: retainer to book the date (% of the total)
+B111: 0.25
+C111: 0.3
+D111: At signing. The retainer is applied to the price; what you keep if the client cancels is set only by the cancellation schedule below.
+A112: Payment 2: second installment (% of the total)
+B112: 0.35
+C112: 0.3
+D112: Due on the date in the next row.
+A113: Payment 3: final balance before the event (% of the total)
+B113: 0.4
+C113: 0.4
+D113: The rest, before the event. Issue a receipt for every payment, the retainer included.
+A114: Second installment: days before the event
+B114: 180
+C114: 60
+D114: Couples, about six months before; corporate clients, two months. If they book later, both are due together.
+A115: Final balance: days before the event
+B115: 30
+C115: 15
+D115: Couples, 30 days before; corporate clients, 15.
+A116: Cancellation tier 1: what you keep (% of the total)
+B116: 0.1
+C116: 0.05
+D116: Furthest from the event. Never more than the retainer you collected.
+A117: Cancellation tier 2: what you keep (% of the total)
+B117: 0.25
+C117: 0.15
+D117: Rises as the event gets closer.
+A118: Cancellation tier 3: what you keep (% of the total)
+B118: 0.5
+C118: 0.35
+D118: Each tier leaves less time to rebook the date.
+A119: Cancellation tier 4: what you keep (% of the total)
+B119: 0.75
+C119: 0.6
+D119: The last months.
+A120: Cancellation tier 5: what you keep (% of the total)
+B120: 1
+C120: 1
+D120: Last month or no-show: 100%. The agreement credits back what you recover by rebooking the date and the costs you save by not holding the event.
+A122: CANCELLATION TIERS (months before the event)
+B122: From (months, inclusive)
+C122: Up to (months, exclusive)
+A123: Tier 1
+B123: 12
+C123: no limit
+A124: Tier 2
+B124: 6
+C124 = 12
+A125: Tier 3
+B125: 3
+C125 = 6
+A126: Tier 4
+B126: 1
+C126 = 3
+A127: Tier 5
+B127: 0
+C127 = 1
+A128: No gaps: each tier starts where the previous one ends and the last one runs to the event day. The amounts kept rise as the date gets closer and are meant as a reasonable estimate of the venue's loss, not a penalty: the agreement credits back what you recover by rebooking the date. If the venue cancels, it refunds everything it collected. The percentages and tiers are Kit examples: set them to your real cost of losing the date and have an attorney in your state review them.
+DV B5: list "Couple,Corporate" · Choose Couple or Corporate.
+DV B6: list =$A$66:$A$69 · Choose an event type from the list.
+DV B7: date 46023 · Type a full date from 2026 on (mm/dd/yyyy).
+DV B8: whole 1 · Type a whole number of 1 or more.
+DV B9 B10 B11 B12 B114 B115 B123 B124 B125 B126 B127 C72 C73 C74 C114 C115: whole 0 · Type a whole number of 0 or more.
+DV B13 B14 B66 B67 B68 B69 B105 B106 B107 B108 C66 C67 C68 C69 D66 D67 D68 D69: decimal 0 · Type a number greater than or equal to 0.
+DV B15 B16 B18 B19 B20 B111 B112 B113 B116 B117 B118 B119 B120 C111 C112 C113 C116 C117 C118 C119 C120: decimal 0 · Type a percentage between 0 and 1 (0.08 = 8%).
+DV B72 B73 B74 B77 B78 B79: decimal -0.9 · Type an adjustment between −90% and +200% (−0.20 = −20%).
+DV B82 B83 B84 B85 B86 B87 B88 B89 B90 B91 B92 B93: list "Peak,Shoulder,Off-peak" · Choose Peak, Shoulder or Off-peak.
+DV B96 B97 B98 B99 B100 B101 B102: list "Saturday,Friday or Sunday,Weekday" · Choose Saturday, Friday or Sunday, or Weekday.
+DV B17: whole 1 · Type a multiple of $1 or more (the fee is divided by it).
+
+## Examples
+A1: 3 EXAMPLE QUOTES — with the same formulas as the "Calculator" tab
+A2: Kit estimates to show the calculation, not market prices: change the inputs in "Calculator" to quote your own events. The tables (rates, seasons, days, extras, payments and cancellation) are at the end of that tab and also drive these examples.
+A4: EVENT DETAILS
+B4: Saturday wedding in peak season
+C4: Friday wedding in shoulder season
+D4: Weekday corporate event
+A5: Client
+B5: Couple
+C5: Couple
+D5: Corporate
+A6: Event type
+B6: Wedding
+C6: Wedding
+D6: Corporate event
+A7: Event date
+B7: 10/09/2027
+C7: 07/16/2027
+D7: 04/21/2027
+A8: Expected guests
+B8: 130
+C8: 100
+D8: 50
+A9: Ceremonies on site (no.)
+B9: 1
+C9: 1
+D9: 0
+A10: Additional hours of venue use (no.)
+B10: 2
+C10: 0
+D10: 1
+A11: Premium decor & lighting packages (no.)
+B11: 1
+C11: 0
+D11: 0
+A12: Rehearsals the day before (no.)
+B12: 0
+C12: 1
+D12: 0
+A13: Venue staff hours on the event (coordinator and attendants)
+B13: 16
+C13: 14
+D13: 10
+A14: Hourly wage of venue staff
+B14: 18
+C14: 18
+D14: 18
+A15: Employer payroll taxes (% of wages)
+B15: 0.1
+C15: 0.1
+D15: 0.1
+A16: Direct cost of extra services (% of their price)
+B16: 0.4
+C16: 0.4
+D16: 0.4
+A17: Rounding of the venue rental fee (multiple, in dollars)
+B17: 50
+C17: 50
+D17: 50
+A18: Caterer commission (% of the caterer's food & beverage sales)
+B18: 0.1
+C18: 0.1
+D18: 0.1
+A19: Sales tax on venue charges (example)
+B19: 0.08
+C19: 0.08
+D19: 0.08
+A20: Sales tax on the caterer's food & beverage (reference only)
+B20: 0.08
+C20: 0.08
+D20: 0.08
+A22: RESULT
+B22: Saturday wedding in peak season
+C22: Friday wedding in shoulder season
+D22: Weekday corporate event
+A23: Season of the date (from the month table)
+B23 = Peak
+C23 = Shoulder
+D23 = Shoulder
+A24: Type of day (from the weekday table)
+B24 = Saturday
+C24 = Friday or Sunday
+D24 = Weekday
+A25: Season adjustment (premium + / discount −)
+B25 = 0.15
+C25 = 0
+D25 = 0
+A26: Day adjustment (premium + / discount −)
+B26 = 0
+C26 = -0.15
+D26 = -0.3
+A27: Venue rate for the event type (Saturday, shoulder season)
+B27 = 8000
+C27 = 8000
+D27 = 3500
+A28: VENUE RENTAL FEE EXCL. SALES TAX
+B28 = 9200
+C28 = 6800
+D28 = 2450
+A29: Season minimum (guests)
+B29 = 100
+C29 = 75
+D29 = 75
+A30: Guaranteed guest count
+B30 = 130
+C30 = 100
+D30 = 75
+A31: Minimum check
+B31 = Meets the minimum
+C31 = Meets the minimum
+D31 = Below the minimum: the quote uses the season minimum
+A32: Ceremonies
+B32 = 750
+C32 = 750
+D32 = 0
+A33: Additional hours
+B33 = 1000
+C33 = 0
+D33 = 500
+A34: Premium decor & lighting
+B34 = 800
+C34 = 0
+D34 = 0
+A35: Rehearsals
+B35 = 0
+C35 = 400
+D35 = 0
+A36: Extra services excl. sales tax
+B36 = 2550
+C36 = 1150
+D36 = 500
+A37: Taxable amount (venue rental + services)
+B37 = 11750
+C37 = 7950
+D37 = 2950
+A38: Sales tax on venue charges
+B38 = 940
+C38 = 636
+D38 = 236
+A39: VENUE TOTAL (incl. sales tax)
+B39 = 12690
+C39 = 8586
+D39 = 3186
+A40: Amount you quote (Couple: incl. sales tax · Corporate: plus sales tax)
+B40 = 12690
+C40 = 8586
+D40 = 2950
+A41: Venue rental & services per guaranteed guest (excl. sales tax)
+B41 = 90.3846
+C41 = 79.5
+D41 = 39.3333
+A42: Payment 1: retainer
+B42 = 3172.5
+C42 = 2146.5
+D42 = 955.8
+A43: Payment 2: second installment
+B43 = 4441.5
+C43 = 3005.1
+D43 = 955.8
+A44: Second installment due by
+B44 = 04/12/2027
+C44 = 01/17/2027
+D44 = 02/20/2027
+A45: Payment 3: final balance
+B45 = 5076
+C45 = 3434.4
+D45 = 1274.4
+A46: Final balance due by
+B46 = 09/09/2027
+C46 = 06/16/2027
+D46 = 04/06/2027
+A47: Caterer's food & beverage excl. sales tax (estimate, guaranteed guests)
+B47 = 14300
+C47 = 11000
+D47 = 3750
+A48: ESTIMATED CATERER COMMISSION (for reference)
+B48 = 1430
+C48 = 1100
+D48 = 375
+A49: Caterer's food & beverage incl. sales tax (reference, billed by the caterer)
+B49 = 15444
+C49 = 11880
+D49 = 4050
+A50: Full reference budget for the client (venue incl. sales tax + food & beverage)
+B50 = 28134
+C50 = 20466
+D50 = 7236
+A51: Direct event cost: cleaning, restrooms, generator fuel, parking and security
+B51 = 1000
+C51 = 1000
+D51 = 500
+A52: Venue staff cost (wages + payroll taxes)
+B52 = 316.8
+C52 = 277.2
+D52 = 198
+A53: Direct cost of the extra services
+B53 = 1020
+C53 = 460
+D53 = 200
+A54: Total direct cost of the event
+B54 = 2336.8
+C54 = 1737.2
+D54 = 898
+A55: Venue revenue from the event (excl. sales tax, commission included)
+B55 = 13180
+C55 = 9050
+D55 = 3325
+A56: Event contribution for the venue ($)
+B56 = 10843.2
+C56 = 7312.8
+D56 = 2427
+A57: Event contribution margin (calculated)
+B57 = 0.8227
+C57 = 0.808
+D57 = 0.7299
+A58: Event contribution without the commission ($)
+B58 = 9413.2
+C58 = 6212.8
+D58 = 2052
+A59: Amount kept if the client cancels: tier 1
+B59 = 1269
+C59 = 858.6
+D59 = 159.3
+A60: Amount kept if the client cancels: tier 2
+B60 = 3172.5
+C60 = 2146.5
+D60 = 477.9
+A61: Amount kept if the client cancels: tier 3
+B61 = 6345
+C61 = 4293
+D61 = 1115.1
+A62: Amount kept if the client cancels: tier 4
+B62 = 9517.5
+C62 = 6439.5
+D62 = 1911.6
+A63: Amount kept if the client cancels: tier 5
+B63 = 12690
+C63 = 8586
+D63 = 3186
+A65: WHAT EACH EXAMPLE SHOWS
+A66: Saturday wedding in peak season
+B66: Couple, 130 guests, a Saturday in October: peak season (+15%) and the reference day (Saturday, no adjustment). Ceremony on site, two additional hours and the premium decor package. The couple sees the price with sales tax included. The commission is what the exclusive caterer would pay the venue at 10% (an assumption): the couple does not pay it. Three payments: retainer, second installment six months before and final balance 30 days before.
+A67: Friday wedding in shoulder season
+B67: Couple, 100 guests, a Friday in July: shoulder season (no adjustment) and Friday (−15%). Ceremony on site and a rehearsal the day before. Same payment schedule and cancellation tiers as the first example: only the venue rate changes.
+A68: Weekday corporate event
+B68: Corporate client, 50 guests, a Wednesday in April: shoulder season and a weekday (−30%). The 50 guests are below the season minimum (75): the quote uses 75 and the commission is estimated on them. Quoted "plus sales tax" and paid on another schedule (30% to book, 30% two months before and 40% 15 days before) with other cancellation tiers.
+
+## Instructions
+A1: HOW TO USE — Wedding Venue Pricing & Quote Calculator
+A2: It turns your rate card into a full quote for a specific event: the season and type of day of the date, the guest minimum, extra services, sales tax, total, payment schedule, the estimated caterer commission, the event contribution and what you keep if the client cancels. Type only in the GREEN cells; the margin is calculated.
+A3: 1. Choose the client (Couple or Corporate), the event type, the full date and the expected guests.
+A4: 2. The date sets the season (month table) and the type of day (weekday table). Each one carries a premium or a discount in its own visible table; both multiply the event type rate.
+A5: 3. Each season has a guest minimum: the quote uses the higher of the expected guests and the minimum, and the commission is estimated on that guaranteed guest count.
+A6: 4. Type how many extra services the event takes (ceremony on site, additional hours, premium decor package, rehearsal the day before). Their prices are in the "Venue extra services" table and are Kit examples: type your own.
+A7: 5. Type the venue staff hours, the hourly wage, the payroll tax rate and the direct cost of the extras. The direct event cost (cleaning, restrooms, generator fuel, parking and security) is in the event type table.
+A8: SALES TAX, COMMISSION AND THE CATERER'S MENU
+A10: The venue bills its rental fee and services at the sales tax rate you type (8% in the example). Whether a venue rental fee is taxable depends on the state (taxable in some, exempt in others, sometimes only when it is billed with catering): ask your state's department of revenue. The exclusive caterer bills food and the bar with its own sales tax, service charge and gratuity; they are not venue revenue, and the calculator shows them only as a reference for the client.
+A11: The caterer commission is what the exclusive caterer pays the venue for the exclusivity. Here it is an editable assumption (10% of the caterer's food & beverage sales, net of sales tax, service charge and gratuities): it is not a market figure, negotiate it. The caterer pays it, not the client; the plan treats it as a fee between businesses (0% sales tax in the example): confirm it with your CPA.
+A12: The event contribution does not deduct rent, salaried staff, utilities, insurance or overhead. Those are in the financial plan.
+A13: PAYMENTS AND CANCELLATION
+A15: Three payments: the retainer at signing, a second installment and the final balance before the event, each with its due date. The retainer is applied to the price. Issue a receipt for every payment. Couple: 25%, 35% six months before and 40% 30 days before. Corporate: 30%, 30% two months before and 40% 15 days before. These are Kit examples.
+A16: Cancellation is written in tiers by months, with no gaps: the first starts at 12 months or more and the last runs to the event day. The amounts kept rise as the date gets closer and should be a reasonable estimate of the venue's loss, not a penalty: the agreement credits back what you recover by rebooking the date. Never write "non-refundable" without the schedule. If the venue cancels, it refunds everything it collected. Have an attorney in your state review the schedule (the kit's Venue Rental Agreement Templates use the same tiers).
+A17: If you sign couples at bridal shows or off-site, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway.
+A18: KIT ESTIMATES
+A20: The default values and the three examples are estimates to show the calculation, not market prices. Replace them with your rates, extras, costs and tiers before you quote.
+A22: To edit a cell that is not green: Review → Unprotect Sheet (no password).
+A23: More templates and kits in the catalog at aichef.pro/en/digital-products
+A24: Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es
+A25: Version 2.2 · October 2026 · aichef.pro/en/digital-products/wedding-venue-business-plan · info@aichef.pro
+A26: Planning tool, not financial, tax or legal advice. Requirements vary by state, county and city — check with your accountant and local authorities.

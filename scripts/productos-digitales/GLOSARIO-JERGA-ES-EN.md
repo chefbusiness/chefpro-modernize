@@ -110,6 +110,12 @@ requisitos de la sala → **venue requirements** · temporada alta de bodas → 
 | licencia de obrador de helados | ice cream workshop license | **frozen dessert (manufacturer) license** / **dairy (milk handlers) license**, estatal; al público, el **health permit** local | firme: Vermont, Massachusetts, Arizona, Georgia (SPEC §3) |
 | seguro de pérdida de género por avería del frío | merchandise loss insurance | **equipment breakdown** coverage con **food spoilage** | por verificar |
 | Día del Helado | Ice Cream Day | **National Ice Cream Day** (3.er domingo de julio; 27.100/mes, pico de 246.000) · **National Ice Cream Month** (julio) | firme: Proclamation 5219 (1984) |
+| mezcla base (comprada o propia) | base preparation · mixture | **ice cream base** (2.400/mes) / **ice cream mix** (3.600) · «a 14 % base» · grasa láctea = **butterfat** | firme (DataForSEO 27-oct; Upstate Farms «14 % Super Premium Ice Cream Mix», resumen) — Ice Cream Shop Business Plan Kit, `business-plans-en-10/` research §9 |
+| comprar la base pasteurizada vs pasteurizar en el local | buy pasteurized mixture | **buy a pasteurized base from a licensed dairy** · **make your own mix** (= licencia de dairy / frozen dessert manufacturer en muchos estados); tras la pasteurización de la central, solo **flavorings and mix-ins** | firme: Vermont Agency of Agriculture y GAC 40-2-8-.01(3) Georgia [leídas 27-oct] |
+| mantecado (≥ 4 % de yema) | mantecado · egg ice cream | **frozen custard** (33.100/mes; 1.4 % egg yolk solids, 21 CFR 135.110) | firme (CFR leído 27-oct) |
+| heladería que fabrica (nombre comercial) | ice cream factory | **creamery** (40.500/mes; «X Creamery») · **scoop shop** (la que solo sirve) | firme (DataForSEO 27-oct) |
+| dependiente fijo discontinuo de temporada | discontinuous permanent clerk | **seasonal part-time** (W-2), recontratado cada primavera; menores de 14-15 años solo en horario FLSA (29 CFR 570.35) | firme (CFR; ✅ ICK) |
+| ≥ 430 g por litro · −18 °C | 430 g/l · −18 °C | **≥ 4.5 lb per gallon** (21 CFR 135.110) · **0 °F or colder** (almacén); vitrina 6-10 °F | firme (CFR; Food Code) |
 
 ## Chocolatería (Chocolate Shop Checklists Kit Pro, F1 24-oct-2026; detalle y fuentes en `checklists-kit/chocolate/SPEC.md` §R)
 
@@ -150,6 +156,47 @@ requisitos de la sala → **venue requirements** · temporada alta de bodas → 
 | registro de temperaturas · recepción de mercancía · etiqueta de elaborado | | **temperature log** (320/mes «food temperature log») · **receiving log** (140) · **prep label** (date marking, 3-501.17) | firme (medido + Food Code) |
 | carta de alérgenos · cartel de alérgenos · contaminación cruzada | allergen letter | **allergen chart** (320/mes) · **allergen sign** (aviso escrito, 3-602.12(C)) · **cross-contact** | firme (guía EN §3.1) |
 | roscón de Reyes · torrijas · huesos de santo · panellets · polvorones · turrón | | **rosca de Reyes / Three Kings bread** + **King cake** (6-ene → Mardi Gras) · **hot cross buns** (perfil de alérgenos) · **amaretti** · **pignoli cookies** · **polvorones / Mexican wedding cookies** · **torrone** | criterio del kit (mismo perfil de alérgenos; guía EN §7) |
+
+## Hotel (Hotel Checklists Kit Pro, F1 27-oct-2026; detalle y fuentes en `checklists-kit/hotel/SPEC.md` §R y §3)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| camarera de pisos · gobernanta | chambermaid · floor maid · governess | **room attendant** (housekeeper) · **executive housekeeper**; quien revisa = **housekeeping supervisor / inspector** | por verificar (uso del sector) |
+| limpieza de salida · de estancia | exit cleaning · stay cleaning | **checkout (departure) room clean** · **stayover** service | firme (research 27-oct) |
+| servicio de cobertura | covering service | **turndown service** (4.400/mes) | firme (medido) |
+| No molestar · habitación fuera de servicio | — | **DND** (welfare check según la marca) · **OOO** (out of order: sale del inventario) / **OOS** (out of service: corto plazo; el uso varía) | firme (DND); OOO/OOS: fuentes que se contradicen |
+| par stock de lencería · albarán de lavandería | — | **linen par** (par 3: habitación, lavandería, office) · **linen count sheet** | por verificar; par 3 = [criterio del kit] |
+| recepción · recepcionista · jefe de recepción | reception · receptionist | **front desk** · **front desk agent** (guest service agent) · **front office manager** | por verificar |
+| auditoría nocturna · logbook | nocturnal audit | **night audit** · **night auditor** (20/mes) · **shift log** (pass-on log) | firme (medido) |
+| botones · overbooking sin habitación | bell boy | **bell staff** (bellperson) · **walk the guest** | por verificar |
+| room service | — | **in-room dining (IRD)** (880/mes) | firme (medido) |
+| reserva del evento · maître de banquetes | event sheet | **BEO** (banquet event order, 9.900/mes) · **banquet captain** | firme (BEO medido) |
+| mantenimiento · jefe · parte de averías · preventivo | maintenance chief | **engineering** · **chief engineer** · **work order** · **PM** (preventive maintenance) | por verificar |
+| encargado de guardia | shift responsible | **manager on duty (MOD)** | por verificar |
+| socorrista · tumbonas · vaso · playa · retrolavado | — | **lifeguard** · **loungers** · **pool shell** · **pool deck** · **backwash** | por verificar |
+| cloro y pH en el libro obligatorio · operador | — | **free chlorine (FC, ppm)** y pH en el **pool log** (3 años) · **qualified operator** (p. ej. **CPO**) | firme (MAHC 2024, primaria) |
+| jacuzzi · baño de vapor · cabina · camilla | jacuzzi (marca) | **hot tub / whirlpool spa** (≤ 104 °F) · **steam room** · **treatment room** · **treatment table** | firme (MAHC 2024: 104 °F) |
+| categoría 4* / 5* | 4-star hotel (oficial) | **upscale / luxury** (en EE. UU. no hay estrellas oficiales) | por verificar |
+| paridad en OTAs · régimen · cargo a habitación | — | **rate parity** (Expedia, Booking.com; resort fee en el precio total, 16 CFR Part 464) · **rate plan / meal plan** · **room charge** | firme (eCFR) |
+
+## Fincas de eventos y bodas (Wedding Venue Business Plan Kit, F1 27-oct-2026; detalle y fuentes en `business-plans-en-9/F1-research-us-delta.md` §9)
+
+Estado: **medido** (DataForSEO US, 27-oct) y **propuesto** hasta que la F2 lo aplique.
+finca de eventos → **wedding venue / event venue** (1,000 / 720 búsquedas «… business plan»; tipos: **barn venue**, estate venue,
+banquet hall; nunca «estate» ni «farm» como nombre del negocio) · alquiler del espacio → **venue rental fee / site fee** · catering
+exclusivo / homologados / propio → **exclusive caterer / preferred vendor list / in-house catering** · canon del catering →
+**caterer commission** (% of F&B; nunca «canon» ni «royalty») · señal → **retainer** (aplicado al precio; «non-refundable» solo con la
+tabla de cancelación) · fianza por daños → **security deposit** · mínimo garantizado / recuento final → **guaranteed guest count /
+final headcount** (el **food & beverage minimum** es del caterer) · invitados / precio por invitado / eventos al año → **guests /
+revenue per guest / events per year** (nunca «covers» en un venue) · coordinación del día → **venue coordinator** (del venue) ≠
+**day-of coordinator** (de la pareja) · montaje y recogida → **setup / teardown, load-in / load-out** · plan B de lluvia → **rain plan** ·
+aforo → **maximum occupancy / occupant load** · calificación urbanística + licencia → **conditional (special) use permit + certificate of
+occupancy** (assembly, Group A-2) · temporada alta/media/baja → **peak / shoulder / off-peak** · preboda, boda íntima, cena de la víspera →
+**rehearsal, micro wedding / elopement, rehearsal dinner** · suite de novios → **bridal suite / groom's lounge** · proveedores externos →
+**outside vendors** (+ outside catering fee, cake-cutting fee, corkage fee) · portales de bodas → **The Knot / WeddingWire storefronts** ·
+fijo discontinuo → **seasonal employee (W-2)** · grupo electrógeno / limitador → **standby generator / decibel limit, music curfew** ·
+aseos adaptados, saneamiento, pozo → **ADA-compliant restrooms, septic system, well (public water system)** · software de reservas →
+**venue management software** · dossier → **wedding brochure / pricing guide** · comida testigo → *no aplica en EE. UU.*
 
 ## Equivalencias por país (US · UK · CA · AU)
 

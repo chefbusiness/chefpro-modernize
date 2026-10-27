@@ -77,12 +77,15 @@ KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gesti
 # (hreflang es + en + x-default) y van en --esperadas en el PR que lo estrena: las últimas,
 # /plan-negocio-parrillero-asador-eventos (gemelo EN: BBQ Catering Business Plan Kit, 24-oct-2026),
 # /plan-negocio-paellero-eventos (gemelo EN: Paella Catering Business Plan Kit, 24-oct-2026) y
-# /plan-negocio-pizzeria (gemelo EN: Pizza Shop Business Plan Kit, 25-oct-2026).
+# /plan-negocio-pizzeria (gemelo EN: Pizza Shop Business Plan Kit, 25-oct-2026) y
+# /plan-negocio-heladeria (gemelo EN: Ice Cream Shop Business Plan Kit, 27-oct-2026) y
+# /plan-negocio-finca-eventos-bodas (gemelo EN: Wedding Venue Business Plan Kit, 27-oct-2026).
 PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
              '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
              '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',
              '/plan-chef-privado-showcooking-eventos', '/plan-catering-tematico-eventos',
-             '/plan-negocio-heladeria', '/plan-negocio-finca-eventos-bodas',  # nacen el 25-oct-2026, solo ES
+             '/plan-negocio-heladeria',  # nace el 25-oct-2026; gemelo EN: Ice Cream Shop Business Plan Kit (27-oct-2026)
+             '/plan-negocio-finca-eventos-bodas',  # nace el 25-oct-2026; gemelo EN: Wedding Venue Business Plan Kit (27-oct-2026)
              '/plan-negocio-pizzeria']  # nace el 25-oct-2026 (noche); gemelo EN: Pizza Shop Business Plan Kit
 # GuiaLandingPage recibe `lang` desde el 15-oct-2026 (Food Cost + Menu Engineering Guide EN): sus 14
 # landings ES (12 guías + 2 manuales) tienen que seguir byte a byte iguales, igual que las de arriba.
@@ -100,7 +103,8 @@ GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia
 # Burger Joint Checklists Kit Pro, 18-oct-2026), /kit-tareas-dark-kitchen (gemelo EN: Ghost Kitchen Checklists Kit
 # Pro, 18-oct-2026), /kit-tareas-heladeria (gemelo EN: Ice Cream Shop Checklists Kit Pro, 24-oct-2026),
 # /kit-tareas-chocolateria (gemelo EN: Chocolate Shop Checklists Kit Pro, 24-oct-2026) y /kit-tareas-pasteleria
-# (gemelo EN: Pastry Shop Checklists Kit Pro, 24-oct-2026).
+# (gemelo EN: Pastry Shop Checklists Kit Pro, 24-oct-2026) y /kit-tareas-hotel (gemelo EN: Hotel Checklists Kit Pro,
+# 27-oct-2026).
 TAREAS_ES = ['/kit-tareas', '/kit-tareas-asador', '/kit-tareas-bar', '/kit-tareas-cafeteria', '/kit-tareas-catering',
              '/kit-tareas-chef-privado', '/kit-tareas-chocolateria', '/kit-tareas-dark-kitchen',
              '/kit-tareas-food-truck', '/kit-tareas-hamburgueseria', '/kit-tareas-heladeria', '/kit-tareas-hotel',
@@ -412,7 +416,11 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            'Costa del Sol',
            # Ídem, Paella Catering Business Plan Kit (24-oct): testimonios del Plan de Negocio Paellero para Eventos
            # traducidos (los otros seis nombres no llevan tilde) y el topónimo «Castellón».
-           'Joan Beltrán', 'Laura Martín', 'Castellón']
+           'Joan Beltrán', 'Laura Martín', 'Castellón',
+           # Ídem, Hotel Checklists Kit Pro (27-oct): testimonios del Kit de Tareas Recurrentes: Hotel Completo traducidos
+           # tal cual («Ana Belén Ruiz» y «Costa del Sol» ya van arriba; los otros seis nombres no llevan tilde) y el
+           # nombre de esa edición española en su subtítulo.
+           'Daniela Hernández', 'Javier Martín', 'Isabel Fernández', 'Kit de Tareas Recurrentes: Hotel Completo']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.

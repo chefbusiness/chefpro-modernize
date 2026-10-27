@@ -876,7 +876,7 @@ def caso_caja(carpeta):
     out = OrderedDict()
     tmp = tempfile.mkdtemp(prefix='checklists-caja-')
     try:
-        src = fichero_en(carpeta, '09')
+        src = fichero_en(carpeta, HOJA_CAJA[0])
         # caso 1: una unidad de cada fila
         p = os.path.join(tmp, '1-' + os.path.basename(src))
         shutil.copy2(src, p)
@@ -929,7 +929,7 @@ def casos_g5(carpeta):
     out = []
     tmp = tempfile.mkdtemp(prefix='checklists-g5-')
     try:
-        src = fichero_en(carpeta, '09')
+        src = fichero_en(carpeta, HOJA_CAJA[0])
         for i, caso in enumerate(CASOS_G5):
             p = os.path.join(tmp, '%d-%s' % (i, os.path.basename(src)))
             shutil.copy2(src, p)
@@ -952,14 +952,15 @@ def casos_g5(carpeta):
 def gateG5(R, carpeta, datos):
     R.gate('G5 caja')
     hc = mapas.HOJAS[HOJA_CAJA[1]]
-    ws = cargar(fichero_en(carpeta, '09'))[hc]
+    ws = cargar(fichero_en(carpeta, HOJA_CAJA[0]))[hc]
     total = 0
     for f, es, xes, en, xen in mapas.DENOMINACIONES:
         k = (HOJA_CAJA[0], HOJA_CAJA[1], 'C%d' % f)
         if ws['A%d' % f].value != en:
-            R.fallo('09 %s!A%d = %r ≠ %r (DENOMINACIONES)' % (hc, f, ws['A%d' % f].value, en))
+            R.fallo('%s %s!A%d = %r ≠ %r (DENOMINACIONES)' % (HOJA_CAJA[0], hc, f, ws['A%d' % f].value, en))
         if ws['C%d' % f].value != mapas.FORMULAS_POR_CELDA[k][1]:
-            R.fallo('09 %s!C%d = %r ≠ %r (caja D12)' % (hc, f, ws['C%d' % f].value, mapas.FORMULAS_POR_CELDA[k][1]))
+            R.fallo('%s %s!C%d = %r ≠ %r (caja D12)' % (HOJA_CAJA[0], hc, f, ws['C%d' % f].value,
+                                                         mapas.FORMULAS_POR_CELDA[k][1]))
         total += xen
     R.dato('denominaciones', len(mapas.DENOMINACIONES))
     if abs(total - CAJA_SPEC['total_1_de_cada']) > 1e-6:
@@ -1198,7 +1199,7 @@ def _libro(corto):
 
 
 F01, F02, F03, F06 = (_libro(c) for c in ('01', '02', '03', '06'))
-F09 = _libro('09')                                         # catering: 09-cobros-…
+F09 = _libro(HOJA_CAJA[0])                                 # catering: 09-cobros-… · hotel: 19-…
 H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][1]]      # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
 H_CC = mapas.HOJAS[HOJA_CAJA[1]]                           # base: «Cash Drawer Closing» · catering: «Event Settlement»
 _HH = getattr(mapas, 'HOJA_HORAS', None)                   # catering: las horas de celda están en el 08
@@ -1209,7 +1210,8 @@ _HV = getattr(mapas, 'HOJA_VERDE', None)                   # catering: el 01 no 
 F_VERDE = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_HV[0] + '-'))] if _HV else F01
 H_VERDE = mapas.HOJAS[_HV[1]] if _HV else H_KO
 F_CAJA0 = mapas.DENOMINACIONES[0][0]                       # base: 27 · catering: 30
-H_AREA = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['06'][2]]    # base: «Valentine's Day»
+# base: «Valentine's Day» · hotel: su 06 tiene una sola checklist (mapas.HOJA_AREA_AUTOTEST)
+H_AREA = mapas.HOJAS[getattr(mapas, 'HOJA_AREA_AUTOTEST', None) or mapas.HOJAS_ES_POR_LIBRO['06'][2]]
 H_DIARIO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['03'][1]]  # «Manager Daily»
 RX_HORA_US = re.compile(r'^\d{1,2}:\d{2} [AP]M$')
 

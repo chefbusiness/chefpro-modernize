@@ -1,0 +1,3341 @@
+{
+ "tanda": "GWED-check",
+ "salida": "scripts/productos-digitales/business-plans-en-9/textos_en/GWED-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 241,
+ "n_palabras": 2720,
+ "pistas": {
+  "P01": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P03": "Glosario §9 (e): LLC",
+  "P04": "D169 tarea US: LLC vs S corp: elige la forma con tu CPA (el plan tributa como sociedad: income tax en \"0. Assumptions\")",
+  "P05": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P06": "Glosario §9 (e): CPA / bookkeeper",
+  "P07": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P08": "Glosario §9: venue (el negocio) / property (el inmueble); nunca «finca», «estate» ni «farm» como nombre",
+  "P09": "D169 tarea US: Form the LLC ANTES de firmar el lease: el lease, la solicitud del CUP y los permisos van a su nombre",
+  "P10": "Glosario §9: zoning approval: conditional (special) use permit + certificate of occupancy (Group A-2)",
+  "P11": "D169 tarea US: EIN (IRS) y registro estatal de la LLC",
+  "P12": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P13": "Glosario §9: exclusive caterer · preferred vendor list · in-house catering",
+  "P14": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P15": "D169 tarea US: State payroll / unemployment (UI) accounts y cómo cobra el dueño (draw vs salary) según la elección fiscal: CPA",
+  "P16": "D169 tarea US: Business license y sales tax permit: pregunta si tu venue rental fee tributa en tu estado",
+  "P17": "D169 tarea US: Business bank account: retainers, caterer commission y rent separados de lo personal",
+  "P18": "Glosario §9: caterer commission (% of the caterer's F&B sales), nunca «canon» ni «royalty»",
+  "P19": "Glosario §9: retainer (aplicado al precio) · booking; «non-refundable» solo con la tabla de cancelación",
+  "P20": "D169 tarea US: Bookkeeping + venue management software que siga retainers, pagos programados y la comisión del caterer",
+  "P21": "Glosario §9: seasonal employee (W-2)",
+  "P22": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P23": "Glosario §9 (e): sales tax (el venue: site fee al tipo de ejemplo; la comisión, 0 %)",
+  "P24": "D169 tarea US: Calendario de sales tax de tu estado (mensual / trimestral / anual) y tratamiento del site fee y de la comisión",
+  "P25": "D169 tarea US: Estimated taxes y plan del owner's draw con tu CPA",
+  "P26": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P27": "D169 tarea US: Lender package: plan + 2 cotizaciones SBA 7(a); el lease, CONTANDO LAS PRÓRROGAS, debe durar al menos lo que el préstamo («SBA lenders typically require…; confirm with your lender»)",
+  "P28": "D169 tarea US: USPTO trademark search del nombre del venue",
+  "P29": "Glosario §9: events per year · events of the average size",
+  "P30": "D169 tarea US: Website privacy policy & terms (y consentimiento para fotos de eventos)",
+  "P31": "DV de la columna OK: en el EN la lista es «✓, ☐, N/A» (CLAVES['—'] = '☐'): escribe «☐ = pending», NUNCA «—» (la Pizza EN publicada lo dejó con «—»: F2-NOTAS §5)",
+  "P32": "D169 tarea US: ZONING CHECK BEFORE SIGNING: pregunta POR ESCRITO al planning office del condado si un wedding / event venue se permite en esa parcela y con qué permiso (CUP / SUP)",
+  "P33": "Glosario §9 (e): county / state",
+  "P34": "D169 tarea US: Elegir una propiedad con un granero o edificio existente, a 30-60 min de la ciudad",
+  "P35": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P36": "Glosario §9: decibel limit / sound meter, music curfew (county ordinance + CUP)",
+  "P37": "Glosario §9: ADA-compliant restrooms",
+  "P38": "Glosario §9: caterer's prep & warming kitchen",
+  "P39": "Glosario §9: well (¿public water system?: ask your state drinking water program)",
+  "P40": "D169 tarea US: Agua, electricidad y fosa séptica: un ingeniero comprueba la capacidad de la septic y el pozo (¿public water system?) antes de firmar",
+  "P41": "Glosario §9: guests · guest count · final headcount (nunca covers ni customers)",
+  "P42": "D169 tarea US: Negociar el lease: duración CONTANDO LAS PRÓRROGAS ≥ plazo del préstamo («SBA lenders typically require…; confirm with your lender»)",
+  "P43": "D169 tarea US: Lease contingent on CUP approval (y certificate of occupancy): si no llega, sales sin penalización",
+  "P44": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P45": "D169 tarea US: Purchase option o right of first refusal, consentimiento del propietario a la obra y a usar el lease como garantía del préstamo, y negociar una TI allowance",
+  "P46": "D169 tarea US: Solicitar el conditional / special use permit: audiencia pública; condiciones (tope de eventos, horario, tráfico, ruido)",
+  "P47": "D169 tarea US: Change of occupancy a assembly (Group A-2): building permit → certificate of occupancy",
+  "P48": "D169 tarea US: Pregunta POR ESCRITO al building official y al fire marshal: occupant load, sprinklers, salidas, aseos y carpas",
+  "P49": "D169 tarea US: Ninguna fecha firme sin CUP y certificate of occupancy: solo holds contingentes con devolución íntegra",
+  "P50": "D169 tarea US: ADA Title III: rutas accesibles, aseos y parking en los planos (2010 ADA Standards)",
+  "P51": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P52": "Glosario §9: maximum occupancy / occupant load (fire marshal) · sprinklers · egress",
+  "P53": "D169 tarea US: Occupant load rotulada, salidas, emergency lighting y plan de evacuación",
+  "P54": "Glosario §9: tent / pergola / ceremony site",
+  "P55": "D169 tarea US: Ruido: ordenanza del condado, decibel limit y sound meter",
+  "P56": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P57": "D169 tarea US: Música exterior y curfew según las condiciones del CUP",
+  "P58": "D169 tarea US: Seguros: general liability, host liquor liability, property y umbrella (cotizaciones de un agente de venues)",
+  "P59": "D169 tarea US: Pozo: si sirve a tus invitados, pregunta a tu state drinking water program (análisis y permiso)",
+  "P60": "D169 tarea US: Tres presupuestos sobre los planos del architect / code consultant",
+  "P61": "D169 tarea US: Building permit antes de empezar la obra",
+  "P62": "D169 tarea US: Barn renovation: suelo, puertas, aislamiento, acabados",
+  "P63": "D169 tarea US: Fire sprinkler y alarm system con la aprobación del fire marshal",
+  "P64": "D169 tarea US: ADA-compliant restrooms (y la ampliación de la septic si hace falta)",
+  "P65": "D169 tarea US: Electrical service, exit y emergency lighting, con inspección",
+  "P66": "Glosario §9: peak / shoulder / off-peak (off-season)",
+  "P67": "D169 tarea US: Standby generator",
+  "P68": "D169 tarea US: HVAC del salón",
+  "P69": "D169 tarea US: Prep & warming kitchen del caterer con agua y desagüe (health plan review si tu condado lo exige)",
+  "P70": "D169 tarea US: Pérgola y tent platform (permiso de carpas según el fire code local)",
+  "P71": "Glosario §9: setup / teardown (breakdown) · load-in / load-out",
+  "P72": "Glosario §9: rain plan / inclement-weather plan",
+  "P73": "D169 tarea US: 200 sillas, mesas, mantelería base y bridal suite",
+  "P74": "D169 tarea US: Sound system y decibel meter",
+  "P75": "Glosario: aparcamiento y base del vehículo → «commissary & truck parking»",
+  "P76": "D169 tarea US: Parking de grava, driveway, señalización e iluminación (plazas ADA)",
+  "P77": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P78": "D169 tarea US: Landscaping, ceremony site y riego",
+  "P79": "D169 tarea US: Inspecciones finales y certificate of occupancy",
+  "P80": "Glosario §9: venue coordinator (del venue) ≠ day-of coordinator (de la pareja)",
+  "P81": "D169 tarea US: Contratar al venue coordinator como seasonal W-2 (offer letter, I-9, W-4)",
+  "P82": "D169 tarea US: Event attendants como seasonal part-time W-2 (nunca 1099 si el venue dirige su trabajo)",
+  "P83": "D169 tarea US: Facilities & grounds, weekend sales y housekeeping: salario mínimo estatal y workers' comp",
+  "P84": "D169 tarea US: Workers' comp y new-hire reporting del estado antes de cada temporada",
+  "P85": "D169 tarea US: Time records y overtime (FLSA)",
+  "P86": "D169 tarea US: Seguridad básica: OSHA, primeros auxilios, escaleras y cargas",
+  "P87": "D169 tarea US: Shortlist de 1-2 caterers + tasting",
+  "P88": "Glosario §9: tasting",
+  "P89": "D169 tarea US: Exclusive caterer agreement (comisión, derecho de auditoría, mínimo anual opcional)",
+  "P90": "D169 tarea US: Commission statement mensual y derecho de auditoría",
+  "P91": "D169: NO cruza (no es norma US): elimínala o sustitúyela por el food safety plan del caterer",
+  "P92": "D169 tarea US: (La «comida testigo» NO cruza) → Caterer's food safety plan y contacto para incidencias",
+  "P93": "Glosario §9: 9 major allergens (los gestiona el caterer)",
+  "P94": "D169 tarea US: Alérgenos: el caterer gestiona por escrito los 9 major allergens de cada menú",
+  "P95": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P96": "D169 tarea US: Licencia y health permit del caterer, su liquor license / permit y su COI con el venue como additional insured",
+  "P97": "D169 tarea US: Preferred vendor list con los COI de cada proveedor",
+  "P98": "D169 tarea US: Nombre, logo e identidad del venue",
+  "P99": "Glosario §9: The Knot / WeddingWire storefront (listing)",
+  "P100": "D169 tarea US: Web con disponibilidad, galería y reserva de venue tours",
+  "P101": "D169 tarea US: Styled shoot: fotos y vídeo profesionales del venue montado",
+  "P102": "D169 tarea US: Google Business Profile y primeras reseñas",
+  "P103": "D169 tarea US: The Knot / WeddingWire storefronts: mide el cost per lead",
+  "P104": "D169 tarea US: Redes sociales con bodas y eventos reales",
+  "P105": "Glosario §9: open house · bridal show",
+  "P106": "D169 tarea US: Bridal shows",
+  "P107": "D169 tarea US: Open house con el caterer",
+  "P108": "Glosario §9: planners and venue marketplaces (Peerspace); The Knot / WeddingWire son storefronts (coste fijo)",
+  "P109": "D169 tarea US: Wedding planners y agencias de eventos",
+  "P110": "D169 tarea US: Empresas y celebraciones privadas (showers, quinceañeras, cumpleaños, rehearsal dinners)",
+  "P111": "D169 tarea US: Tarifas por temporada (peak / shoulder / off-peak) y día con la calculadora del kit",
+  "P112": "D169 tarea US: Pricing guide / wedding brochure y dossier de empresa",
+  "P113": "D169 tarea US: Venue rental agreement con retainer y tabla de cancelación revisado por un abogado de tu estado",
+  "P114": "D169 tarea US: Venue management software y calendario de fechas",
+  "P115": "D169 tarea US: Venue tour y presupuesto por escrito",
+  "P116": "D169 tarea US: Contrato firmado, retainer y recibo",
+  "P117": "Decisión de orquestador 2: «ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies…» (NO afirmar que aplica); governing law clause revisada por un abogado",
+  "P118": "D169 tarea US: Firmas en una bridal show o fuera del venue: «ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway» (decisión de orquestador 2: NO afirmar que aplica)",
+  "P119": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P120": "D169 tarea US: Governing law clause revisada por tu abogado",
+  "P121": "D169 tarea US: Tasting con el caterer",
+  "P122": "D169 tarea US: Final headcount y alergias",
+  "P123": "D169 tarea US: Rain plan (calor y alertas de incendio)",
+  "P124": "D169 tarea US: Setup y control de la occupancy",
+  "P125": "D169 tarea US: Curfew y decibel limit",
+  "P126": "A3: el EN no afirma «verified» en 50 estados: «a starting point; requirements vary by state, county and city»",
+  "P127": "D169 tarea US: (La «comida testigo» NO cruza) → Walkthrough antes de que lleguen los invitados: salidas despejadas, restrooms, COIs de los vendors del día",
+  "P128": "D169 tarea US: Load-out, limpieza y revisión de daños (security deposit, deducciones detalladas)",
+  "P129": "Glosario §9: security deposit / damage deposit (refundable, itemized) — en la inversión: lease security deposit",
+  "P130": "D169 tarea US: Commission statement mensual del caterer",
+  "P131": "D169 tarea US: Reseña, fotos y agradecimiento",
+  "P132": "D169 tarea US: Cierre trimestral: ocupación, comisión y caja"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "finca de eventos": "wedding venue / event venue (tipos: barn venue, estate venue, farm venue, banquet hall)",
+  "alquiler del espacio": "venue rental fee / site fee (+ «venue fee» si es % de F&B)",
+  "catering exclusivo · homologados": "exclusive caterer · preferred vendor list · in-house catering",
+  "canon del catering": "caterer commission (% of F&B) / exclusivity fee (nunca «canon» ni «royalty»)",
+  "invitados · recuento final": "guests · guest count · final headcount (due X days before)",
+  "mínimo garantizado": "guaranteed guest count · food & beverage minimum (del caterer)",
+  "señal / reserva": "retainer (aplicado al precio) · booking deposit; «non-refundable» solo con la tabla de cancelación",
+  "fianza por daños": "security deposit / damage deposit (refundable, itemized)",
+  "barra libre · resopón": "open bar / hosted bar (del caterer) · late-night snack",
+  "coordinación del día": "venue coordinator (del venue) ≠ day-of coordinator (de la pareja)",
+  "montaje y recogida": "setup / teardown (breakdown) · load-in / load-out",
+  "plan B de lluvia": "rain plan / inclement-weather plan (tent backup)",
+  "aforo": "maximum occupancy / occupant load (lo fija el fire marshal)",
+  "calificación urbanística / licencia de actividad": "zoning approval: conditional (special) use permit · certificate of occupancy (assembly, Group A-2)",
+  "prueba de menú": "tasting",
+  "visitas · jornada de puertas abiertas": "venue tours / site visits · open house",
+  "temporada alta / media / baja": "peak / shoulder / off-peak (off-season)",
+  "preboda · boda íntima · cena de la víspera": "rehearsal · micro wedding / elopement · rehearsal dinner",
+  "suite de novios": "bridal suite · groom's lounge",
+  "proveedores externos": "outside vendors · outside catering fee · cake-cutting fee · corkage fee",
+  "portales de bodas": "The Knot / WeddingWire storefront (listing) · venue marketplaces (Peerspace)",
+  "seguro RC · certificado": "general liability · host liquor liability · event insurance · COI / additional insured",
+  "fijo discontinuo": "seasonal employee (W-2)",
+  "grupo electrógeno · limitador": "standby generator · decibel limit / sound meter, music curfew",
+  "aseos adaptados · saneamiento · pozo": "ADA-compliant restrooms · septic system · well (public water system)",
+  "software de reservas": "venue management software (Tripleseat, Perfect Venue, HoneyBook)",
+  "invitado / ticket / días": "guests · revenue per guest · events per year (nunca «covers» ni «average check»)",
+  "dossier": "wedding brochure / pricing guide",
+  "(e) finca": "venue (o «property» para el inmueble)",
+  "(e) canon": "caterer commission",
+  "(e) IVA": "sales tax",
+  "(e) calificación urbanística/licencia": "CUP + certificate of occupancy",
+  "(e) autoprotección": "fire code, occupant load, sprinklers",
+  "(e) comida testigo": "no aplica (eliminar)",
+  "(e) 14 alérgenos": "9 major allergens (caterer)",
+  "(e) fijos discontinuos": "seasonal W-2",
+  "(e) TRLGDCU / fuero del consumidor": "state consumer law; governing law & venue clause",
+  "(e) arras / señal": "retainer",
+  "(e) SL / autónomo": "LLC",
+  "(e) gestoría": "CPA / bookkeeper",
+  "(e) ayuntamiento / comunidad": "county / state",
+  "(e) SGAE": "ASCAP/BMI/SESAC",
+  "(e) ceremonia civil (Ley 15/2015)": "el venue acoge; licencia (county clerk) y officiant según el estado"
+ },
+ "pestanas_es_en": {
+  "WEDP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "WEDC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Finca y licencia": "Phase 2 - Zoning & Permits",
+   "F3 - Obra y equipamiento": "Phase 3 - Build-Out & Equipment",
+   "F4 - Personal y catering": "Phase 4 - Staff & Caterer",
+   "F5 - Marca y reservas": "Phase 5 - Brand & Bookings",
+   "F6 - Temporada y eventos": "Phase 6 - Season & Events",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US WEDDING VENUE BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-finca-eventos-bodas» de AI Chef Pro.": "This file is part of the Wedding Venue Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — FINCA DE EVENTOS Y BODAS": "WEDDING VENUE STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Finca de Eventos y Bodas": "HOW TO USE THIS WORKBOOK — Wedding Venue Financial Projections",
+  "PLAN DE NEGOCIO: FINCA DE EVENTOS Y BODAS": "WEDDING VENUE BUSINESS PLAN: BARN & EVENT VENUE",
+  "Inversión inicial estimada — finca arrendada con edificaciones existentes y catering exclusivo concesionado": "Estimated Startup Costs — barn conversion on a leased property, 200 guests, exclusive caterer",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — barn conversion on a leased property; replace with your own quotes.",
+  "Proyecto técnico y dirección de obra": "Architect, engineer & code consultant (change of occupancy)",
+  "Licencias, tasas, calificación urbanística y prestación compensatoria o canon": "Conditional use permit, zoning hearing, traffic & septic studies, permit fees",
+  "Adecuación del salón: suelos, cerramientos, carpintería y pintura": "Barn renovation: floor, doors, insulation, fixtures & paint",
+  "Acústica y aislamiento del salón": "Fire sprinkler system (city water; a tank and fire pump cost more)",
+  "Carpa estructural o pérgola para ceremonia y cóctel": "Ceremony site: pergola, tent platform & ceremony seating",
+  "Aseos: dos bloques y uno adaptado": "ADA-compliant restrooms (septic upgrade quoted apart)",
+  "Instalación eléctrica: cuadro, alumbrado exterior y de emergencia": "Electrical service, exterior, exit & emergency lighting",
+  "Grupo electrógeno": "Standby generator",
+  "Climatización del salón": "HVAC for the hall",
+  "Office del catering: cámara, fregaderos, mesas inox, agua y desagüe": "Caterer's prep & warming kitchen: sinks, prep tables, ice machine, water & drain",
+  "Mobiliario de ceremonia y banquete: mesas, sillas y mantelería base": "Tables, chairs for 200 & base linens",
+  "Zona chill-out y decoración base": "Bridal suite & groom's lounge furnishings and decor",
+  "Sonido, limitador-registrador y proyector": "Sound system, decibel meter & lighting",
+  "Aparcamiento y caminos: zahorra, señalización e iluminación": "Parking lot, driveway, signage & lighting",
+  "Jardinería, paisajismo y riego inicial": "Landscaping, lawn & irrigation",
+  "Protección contra incendios, señalización de evacuación y accesibilidad": "Fire alarm, extinguishers, exit signs & ADA accessible routes",
+  "Web, fotos, vídeo y marca": "Website, photography, video & brand",
+  "Constitución de la SL": "LLC formation & attorney (lease and contracts)",
+  "Lanzamiento: feria nupcial, puertas abiertas y escaparate premium": "Launch: bridal shows, open house & listing storefronts",
+  "Fianza del arrendamiento": "Lease security deposit",
+  "Renta de la finca durante la obra": "Rent during permitting and build-out",
+  "Imprevistos de obra y acondicionamiento": "Build-out contingency",
+  "Escenario realista — finca de eventos y bodas": "Base case — barn wedding & event venue, 200 guests, exclusive caterer",
+  "Ventas de alquiler del espacio y servicios del evento": "Venue rental & event services",
+  "Canon del catering exclusivo": "Caterer commission (exclusive caterer)",
+  "Coste directo del evento": "Direct event costs",
+  "Coste del canon (no tiene)": "Cost of the commission (none)",
+  "Consumibles de los montajes": "Event consumables",
+  "Comisiones de wedding planners y agencias": "Commissions to planners and venue marketplaces",
+  "Renta de la finca": "Rent (leased property)",
+  "Renta de la finca / Ventas": "Rent / Sales",
+  "Suministros (luz, agua, gasoil y teléfono)": "Utilities (power, propane, water, internet & trash)",
+  "Seguros (RC + multirriesgo)": "Insurance (general liability, host liquor liability & property)",
+  "Marketing: portales de bodas, Google Ads y redes": "Marketing (The Knot/WeddingWire, Google Ads, social)",
+  "Ferias nupciales y jornadas de puertas abiertas": "Bridal shows & open houses",
+  "Jardinería y mantenimiento externo (poda, césped y riego)": "Grounds & landscaping contractors",
+  "Reparaciones, pintura y reposición de mobiliario": "Repairs, paint & furniture replacement",
+  "Gestoría laboral, fiscal y contable": "Accounting, payroll & legal",
+  "Software de reservas, CRM, web y teléfono": "Venue management software, CRM, website & phone",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Safety training & compliance",
+  "Tasas municipales e IBI repercutido": "Property taxes passed through & local fees",
+  "Revisiones de baja tensión, protección contra incendios y grupo electrógeno": "Sprinkler, alarm, extinguisher & generator inspections",
+  "Limpieza general, desinsectación y desratización (DDD)": "Cleaning supplies, pest control & septic pumping",
+  "Titular — gerencia, ventas y visitas": "Owner — GM, sales & tours",
+  "Coordinación de bodas y celebraciones (fijo discontinuo, marzo-noviembre)": "Venue coordinator (seasonal, Mar-Nov)",
+  "Mantenimiento y jardinería": "Facilities & grounds",
+  "Auxiliares de montaje, acceso y aseos (fijos discontinuos)": "Event attendants: setup, parking & restrooms (seasonal, part-time W-2)",
+  "Comercial de bodas a tiempo parcial": "Weekend sales & tours (part-time)",
+  "Limpieza y puesta a punto a tiempo parcial": "Housekeeping & turnover (part-time)"
+ },
+ "cadenas": [
+  {
+   "id": "c0615",
+   "es": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (18-12 meses antes de abrir)",
+   "donde": [
+    "WEDC · F1 - Constitución!A2"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0616",
+   "es": "TRÁMITE",
+   "donde": [
+    "WEDC · F1 - Constitución!B4",
+    "WEDC · F2 - Finca y licencia!B4",
+    "WEDC · F3 - Obra y equipamiento!B4",
+    "WEDC · F4 - Personal y catering!B4",
+    "WEDC · F5 - Marca y reservas!B4",
+    "WEDC · F6 - Temporada y eventos!B4"
+   ],
+   "fila": "OK",
+   "propuesta_en": "TASK",
+   "propuesta_de": "GPAN c1132 (PANC F1!B4 / PANC F2!B4)"
+  },
+  {
+   "id": "c0620",
+   "es": "Elegir forma jurídica: SL unipersonal o autónomo",
+   "donde": [
+    "WEDC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Choose your legal structure: LLC vs S corp",
+   "propuesta_de": "GPIZ-check c0629 (PIZC F1 - Constitución!B7)",
+   "pistas": [
+    "P02",
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0621",
+   "es": "Gestoría",
+   "donde": [
+    "WEDC · F1 - Constitución!C5",
+    "WEDC · F1 - Constitución!C7",
+    "WEDC · F1 - Constitución!C8",
+    "WEDC · F1 - Constitución!C12",
+    "WEDC · F1 - Constitución!C13",
+    "WEDC · F4 - Personal y catering!C5",
+    "… y 3 apariciones más"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GR c0630 (PIZC F1 - Constitución!C7 / PIZC F1 - Constitución!C9)",
+   "pistas": [
+    "P02",
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0623",
+   "es": "El plan financiero está hecho para una SL (Impuesto de Sociedades), que además es la que firma el arrendamiento de la finca. Como autónomo tributas por IRPF: compáralo con tu gestoría con las cifras del plan",
+   "donde": [
+    "WEDC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P07",
+    "P05",
+    "P08",
+    "P03",
+    "P06",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0624",
+   "es": "Constituir la SL",
+   "donde": [
+    "WEDC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0625",
+   "es": "Notaría / Gestoría",
+   "donde": [
+    "WEDC · F1 - Constitución!C6"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Attorney / CPA",
+   "propuesta_de": "GPIZ-check c0634 (PIZC F1 - Constitución!C8)",
+   "pistas": [
+    "P02",
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0626",
+   "es": "Meses 1-2",
+   "donde": [
+    "WEDC · F1 - Constitución!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0627",
+   "es": "Antes de firmar el arrendamiento: el contrato, la calificación urbanística y las licencias van a su nombre. El capital, el que te recomiende tu gestoría",
+   "donde": [
+    "WEDC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P05",
+    "P10",
+    "P06",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0628",
+   "es": "Alta censal (modelo 036) y epígrafe del IAE",
+   "donde": [
+    "WEDC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0630",
+   "es": "Pregunta a tu gestoría si el alquiler del espacio va en el 861.2 (inmuebles urbanos) o en el grupo 862 (rústicos). El catering se da de alta en el suyo. Exento de cuota con una cifra de negocio inferior a 1 millón de euros: confírmalo",
+   "donde": [
+    "WEDC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P12",
+    "P05",
+    "P13",
+    "P10",
+    "P06",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0631",
+   "es": "Alta en la Seguridad Social del administrador",
+   "donde": [
+    "WEDC · F1 - Constitución!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0632",
+   "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+   "donde": [
+    "WEDC · F1 - Constitución!E8"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.",
+   "propuesta_de": "GPIZ-check c0641 (PIZC F1 - Constitución!E10)",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0633",
+   "es": "Certificado digital de la SL",
+   "donde": [
+    "WEDC · F1 - Constitución!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0635",
+   "es": "Imprescindible para Hacienda, la Seguridad Social y los trámites urbanísticos en sede electrónica",
+   "donde": [
+    "WEDC · F1 - Constitución!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P10",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0636",
+   "es": "Cuenta bancaria del negocio",
+   "donde": [
+    "WEDC · F1 - Constitución!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0637",
+   "es": "Separada de la personal: por ella pasan las señales de los novios, el canon del catering y la renta",
+   "donde": [
+    "WEDC · F1 - Constitución!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P13",
+    "P19",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0638",
+   "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+   "donde": [
+    "WEDC · F1 - Constitución!B11"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Accountant / bookkeeper and a POS that reports sales tax",
+   "propuesta_de": "GPIZ-check c0646 (PIZC F1 - Constitución!B13)",
+   "pistas": [
+    "P02",
+    "P05",
+    "P06",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0639",
+   "es": "Meses 2-4",
+   "donde": [
+    "WEDC · F1 - Constitución!D11",
+    "WEDC · F1 - Constitución!D14",
+    "WEDC · F1 - Constitución!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0640",
+   "es": "Nóminas de los fijos discontinuos con sus llamamientos. Una factura por cada cobro, también por cada señal. Consulta con tu gestoría la fecha de Veri*factu que te aplica",
+   "donde": [
+    "WEDC · F1 - Constitución!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P05",
+    "P19",
+    "P21",
+    "P06",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0641",
+   "es": "IVA trimestral (modelo 303) al 21 %",
+   "donde": [
+    "WEDC · F1 - Constitución!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P22",
+    "P23",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0642",
+   "es": "Cada trimestre",
+   "donde": [
+    "WEDC · F1 - Constitución!D12",
+    "WEDC · F6 - Temporada y eventos!D18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0643",
+   "es": "Todo lo que factura la finca —espacio, servicios y canon— va al 21 %. El menú lo factura el catering a los novios, al 10 %. El IVA de la obra se recupera en los primeros 303",
+   "donde": [
+    "WEDC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P22",
+    "P18",
+    "P08",
+    "P13",
+    "P23",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0644",
+   "es": "Retención del arrendamiento (modelo 115)",
+   "donde": [
+    "WEDC · F1 - Constitución!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0645",
+   "es": "Antes de pagar la primera renta",
+   "donde": [
+    "WEDC · F1 - Constitución!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0646",
+   "es": "Si la finca es un inmueble urbano, la renta puede llevar retención; si es rústica, en principio no. Compruébalo con tu asesoría antes de la primera factura del propietario",
+   "donde": [
+    "WEDC · F1 - Constitución!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P08",
+    "P10",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0647",
+   "es": "Plan al banco y dos ofertas de préstamo",
+   "donde": [
+    "WEDC · F1 - Constitución!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0648",
+   "es": "Lleva el plan financiero completo, con la tesorería mes a mes. La finca no es tuya: pregunta por avales y por líneas públicas, porque no hay garantía inmobiliaria",
+   "donde": [
+    "WEDC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0649",
+   "es": "Registro de la marca en la OEPM",
+   "donde": [
+    "WEDC · F1 - Constitución!B15"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Trademark search and registration (USPTO)",
+   "propuesta_de": "GPIZ-check c0655 (PIZC F1 - Constitución!B16)",
+   "pistas": [
+    "P02",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0650",
+   "es": "Comprueba antes que el nombre de la finca no está registrado en tu clase (organización de eventos y alquiler de espacios)",
+   "donde": [
+    "WEDC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P29",
+    "P08",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0651",
+   "es": "Protección de datos y web legal (RGPD y LSSI)",
+   "donde": [
+    "WEDC · F1 - Constitución!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0652",
+   "es": "Antes de publicar la web",
+   "donde": [
+    "WEDC · F1 - Constitución!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0653",
+   "es": "Registro de actividades de tratamiento, cláusulas en presupuestos y contratos, aviso legal, privacidad y cookies. Pide permiso por escrito para usar fotos de los novios",
+   "donde": [
+    "WEDC · F1 - Constitución!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c0656",
+   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "donde": [
+    "WEDC · F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error)",
+    "WEDC · F2 - Finca y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A20 (dv-error)",
+    "WEDC · F3 - Obra y equipamiento!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 (dv-error)",
+    "WEDC · F4 - Personal y catering!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)",
+    "WEDC · F5 - Marca y reservas!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 (dv-error)",
+    "WEDC · F6 - Temporada y eventos!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 (dv-error)"
+   ],
+   "max_len": 255,
+   "propuesta_en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+   "propuesta_de": "GR c0659 (PIZC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 / PIZC F2 - Local, humos y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0658",
+   "es": "FASE 2: FINCA, ARRENDAMIENTO Y LICENCIA (18-6 meses antes)",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!A2"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0659",
+   "es": "Consulta urbanística previa de la finca",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P10",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0660",
+   "es": "Titular / Técnico",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!C5",
+    "WEDC · F2 - Finca y licencia!C7",
+    "WEDC · F3 - Obra y equipamiento!C5"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Owner / Code consultant",
+   "propuesta_de": "GPIZ-check c0623 (PIZC F1 - Constitución!C5)"
+  },
+  {
+   "id": "c0661",
+   "es": "Antes de firmar nada",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0662",
+   "es": "Pregunta en urbanismo de tu ayuntamiento si la finca es suelo urbano o rústico, qué figura usa tu comunidad para los eventos en suelo rústico y si el plan municipal lo prohíbe. En suelo urbano basta con el uso compatible y la licencia de actividad",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P29",
+    "P08",
+    "P10",
+    "P33",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0663",
+   "es": "Elegir una finca con edificaciones existentes",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0664",
+   "es": "Meses 1-4",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0665",
+   "es": "En suelo rústico, Madrid sólo admite los eventos en edificaciones existentes (Ley 8/2012, art. 9) y Cataluña sólo en masías del catálogo (TRLU, arts. 47.3 bis y 50). Salón, aseos y office ya construidos ahorran obra y tramitación",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P35",
+    "P29",
+    "P36",
+    "P37",
+    "P38",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0666",
+   "es": "Comprobar el agua, la luz y el saneamiento de la finca",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P39",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0667",
+   "es": "Antes de firmar",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D7"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Before signing",
+   "propuesta_de": "GPIZ-check c0667 (PIZC F2 - Local, humos y licencia!D6 / PIZC F2 - Local, humos y licencia!D7)"
+  },
+  {
+   "id": "c0668",
+   "es": "Potencia eléctrica disponible, agua de red o pozo y fosa séptica o red de saneamiento. Una fosa para más de 150 invitados o un vertido nuevo pueden necesitar autorización de la confederación hidrográfica: compruébalo",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P39",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0669",
+   "es": "Negociar el arrendamiento: plazo de quince años o más",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P42"
+   ]
+  },
+  {
+   "id": "c0670",
+   "es": "Titular / Abogado",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!C8",
+    "WEDC · F4 - Personal y catering!C12",
+    "WEDC · F5 - Marca y reservas!C17"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Owner / Attorney",
+   "propuesta_de": "GPIZ-check c0675 (PIZC F2 - Local, humos y licencia!C9)"
+  },
+  {
+   "id": "c0671",
+   "es": "Meses 3-5",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0672",
+   "es": "Con edificaciones es un arrendamiento de uso distinto del de vivienda (art. 3 de la Ley de Arrendamientos Urbanos) y se pacta libremente (art. 4.3). Plazo largo, porque la obra se amortiza en el plazo del contrato",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P10",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "Condición suspensiva de licencias en el contrato",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0674",
+   "es": "Abogado",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!C9",
+    "WEDC · F2 - Finca y licencia!C10",
+    "WEDC · F6 - Temporada y eventos!C8"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Attorney",
+   "propuesta_de": "GPAN c1167 (PANC F2!C6)"
+  },
+  {
+   "id": "c0675",
+   "es": "Al firmar",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D9",
+    "WEDC · F2 - Finca y licencia!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0676",
+   "es": "Que el arrendamiento no obligue si se deniega la calificación o la licencia, con carencia de renta durante la obra y la tramitación",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P44",
+    "P10",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0677",
+   "es": "Reversión de mejoras, opción de compra y renta de mercado",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P45"
+   ]
+  },
+  {
+   "id": "c0678",
+   "es": "Qué pasa con la obra al acabar el contrato y si puedes comprar la finca. Si es de tu familia, la renta tiene que ser la de mercado igual: compruébalo con tu asesoría",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "Madrid: calificación urbanística",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35",
+    "P10",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0680",
+   "es": "Técnico",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!C11",
+    "WEDC · F2 - Finca y licencia!C12",
+    "WEDC · F2 - Finca y licencia!C13",
+    "WEDC · F2 - Finca y licencia!C15",
+    "WEDC · F2 - Finca y licencia!C16",
+    "WEDC · F2 - Finca y licencia!C17",
+    "… y 1 apariciones más"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Architect / engineer",
+   "propuesta_de": "GR c0670 (PIZC F2 - Local, humos y licencia!C7)"
+  },
+  {
+   "id": "c0681",
+   "es": "Meses 5-12",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D11",
+    "WEDC · F2 - Finca y licencia!D12",
+    "WEDC · F2 - Finca y licencia!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0682",
+   "es": "Para actos sociales y eventos familiares en edificaciones existentes. La otorga el ayuntamiento; resolución en 3 meses y silencio NEGATIVO; caduca al año si no pides la licencia (Ley 9/2001, art. 148)",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P29",
+    "P10",
+    "P33",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0683",
+   "es": "Andalucía: autorización previa de actuación extraordinaria",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P47"
+   ]
+  },
+  {
+   "id": "c0684",
+   "es": "Información pública de al menos un mes, 6 meses para resolver y silencio desestimatorio. Con la licencia se paga la prestación compensatoria del 10 % de las obras sin maquinaria (LISTA, art. 22)",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P10",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0685",
+   "es": "Cataluña y C. Valenciana: informe territorial o declaración de interés comunitario",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0686",
+   "es": "Cataluña: masía del catálogo con informe de la comisión territorial de urbanismo (TRLU, art. 50). C. Valenciana: DIC previa a la licencia, con canon del 2 % (TRLOTUP, arts. 216 y 221), o la reutilización de arquitectura tradicional (art. 219). En otra comunidad, pregunta en urbanismo qué figura usa",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P35",
+    "P18",
+    "P10",
+    "P33",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0687",
+   "es": "No confirmar fechas en firme sin licencia",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0688",
+   "es": "Hasta tener la licencia",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0689",
+   "es": "Si la calificación se deniega o se retrasa, hay que devolver lo cobrado. Antes de la licencia, sólo reservas condicionadas a la licencia, con devolución íntegra si no llega, pactada por escrito (cláusula segunda bis del modelo de contrato). Al obtenerla, se convierten en firmes",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P10",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0690",
+   "es": "Licencia municipal de actividad",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P10",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0691",
+   "es": "Meses 8-14",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0692",
+   "es": "La boda es un acto privado, pero la finca que la alquila a terceros es un establecimiento público: la C. Valenciana la cataloga como «salón de banquetes» (Ley 14/2010). Compruébalo en la ley de espectáculos de tu comunidad",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P35",
+    "P51",
+    "P08",
+    "P33",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0693",
+   "es": "Aforo, evacuación y medidas de emergencia",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P52",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0694",
+   "es": "Con el proyecto",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D16",
+    "WEDC · F2 - Finca y licencia!D17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0695",
+   "es": "El aforo legal lo fija la licencia. Con 300 invitados no hay plan de autoprotección estatal: empieza en 1.000 personas en edificio cerrado o carpa y en 5.000 al aire libre en recinto delimitado (Orden INT/1068/2026). Tu comunidad o tu ayuntamiento pueden pedir más",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P10",
+    "P52",
+    "P33",
+    "P54",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0696",
+   "es": "Ruido: estudio acústico y limitador-registrador",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P36",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0697",
+   "es": "Límite al exterior en zona residencial: 55 dBA de día y de tarde y 45 de noche (RD 1367/2007, anexo III). El limitador lo exigen muchas ordenanzas: compruébalo en la tuya",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P36",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0698",
+   "es": "Horario de cierre y música exterior",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P56",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0699",
+   "es": "Con la licencia",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Lo fijan una orden de tu comunidad y la ordenanza de ruido de tu ayuntamiento. Pregúntalo y escríbelo en el contrato con los novios",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P36",
+    "P33",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Seguro de responsabilidad civil con el capital de tu comunidad",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0702",
+   "es": "Corredor de seguros",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!C19"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Insurance broker",
+   "propuesta_de": "GPIZ-check c0652 (PIZC F1 - Constitución!C15)"
+  },
+  {
+   "id": "c0704",
+   "es": "El capital mínimo depende del aforo y de la comunidad: en Andalucía, 526.000 € para 101-300 personas (Decreto 109/2005). Añade daños a las mejoras y pérdida de beneficio",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12",
+    "P52",
+    "P33",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0705",
+   "es": "Agua de pozo propio: analíticas y protocolo",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!B20"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P39",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0706",
+   "es": "Titular / Laboratorio",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!C20"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0707",
+   "es": "Antes del primer evento",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!D20",
+    "WEDC · F4 - Personal y catering!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0708",
+   "es": "Con actividad comercial, un pozo propio es una zona de abastecimiento de tipo 1 y el titular responde de la calidad del agua hasta el grifo (RD 3/2023, arts. 2 y 4.3)",
+   "donde": [
+    "WEDC · F2 - Finca y licencia!E20"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P39",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0710",
+   "es": "FASE 3: OBRA Y EQUIPAMIENTO (12-3 meses antes)",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!A2"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0711",
+   "es": "Tres presupuestos sobre el proyecto técnico",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P60"
+   ]
+  },
+  {
+   "id": "c0712",
+   "es": "Antes de la obra",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!D5"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Before construction",
+   "propuesta_de": "GPIZ-check c0653 (PIZC F1 - Constitución!D15 / PIZC F2 - Local, humos y licencia!D11)"
+  },
+  {
+   "id": "c0713",
+   "es": "Compáralos partida a partida con la hoja de Inversión del plan financiero",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P60"
+   ]
+  },
+  {
+   "id": "c0714",
+   "es": "Licencia o comunicación de la obra",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0715",
+   "es": "Antes de empezar",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0716",
+   "es": "Pregunta en tu ayuntamiento qué título necesita la obra y no empieces sin él",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0717",
+   "es": "Adecuación del salón",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P62"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "Constructora",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!C7",
+    "WEDC · F3 - Obra y equipamiento!C8",
+    "WEDC · F3 - Obra y equipamiento!C9",
+    "WEDC · F3 - Obra y equipamiento!C17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0719",
+   "es": "Meses 1-3 de obra",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!D7",
+    "WEDC · F3 - Obra y equipamiento!D8",
+    "WEDC · F3 - Obra y equipamiento!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0720",
+   "es": "Suelos, cerramientos, carpintería y pintura sobre la edificación existente",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P62"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Para que el baile final pueda ir dentro sin superar el límite de noche al exterior",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P63"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "Aseos, con uno adaptado",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P37",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0723",
+   "es": "Itinerario accesible hasta el salón, la carpa y los aseos: compruébalo con tu técnico",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P54",
+    "P37",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "Instalación eléctrica y boletín",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P65"
+   ]
+  },
+  {
+   "id": "c0725",
+   "es": "Instalador autorizado",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!C10",
+    "WEDC · F3 - Obra y equipamiento!C11",
+    "WEDC · F3 - Obra y equipamiento!C12"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Installer / fire marshal",
+   "propuesta_de": "GFT c0715 (FTC F2 - Vehículo!C7)"
+  },
+  {
+   "id": "c0726",
+   "es": "Mes 3 de obra",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!D10",
+    "WEDC · F3 - Obra y equipamiento!D11",
+    "WEDC · F3 - Obra y equipamiento!D12",
+    "WEDC · F3 - Obra y equipamiento!D13",
+    "WEDC · F3 - Obra y equipamiento!D15",
+    "WEDC · F3 - Obra y equipamiento!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0727",
+   "es": "Cuadro, alumbrado exterior y de emergencia, y potencia para salón, carpa y office",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P54",
+    "P38",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0728",
+   "es": "Dimensionado para el salón y el office. Revisión antes de cada temporada",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P38",
+    "P66",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "Frío y calor: el salón se usa todo el año, también en agosto",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P68"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "Office del catering con agua y desagüe",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P39",
+    "P38",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Constructora / Catering",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!C13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "Diséñalo con el catering que vayas a homologar: cámara, fregaderos, mesas inox y zona de emplatado. La cocina de producción es suya",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0733",
+   "es": "Carpa o pérgola para ceremonia y cóctel",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P54",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0735",
+   "es": "Antes de la temporada",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!D14",
+    "WEDC · F3 - Obra y equipamiento!D18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P66"
+   ]
+  },
+  {
+   "id": "c0736",
+   "es": "Es el plan B de lluvia. Pide el certificado de montaje y de resistencia al viento del fabricante",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P71",
+    "P72",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Mobiliario, mantelería base y zona chill-out",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P73"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Mesas, 300 sillas y mantelería base; la decoración especial la contratan los novios",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P73"
+   ]
+  },
+  {
+   "id": "c0740",
+   "es": "El limitador, precintado y con registro, es tu prueba ante una denuncia por ruido",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P36",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0741",
+   "es": "Aparcamiento, caminos y señalización",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P75",
+    "P19",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "Meses 2-3 de obra",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!D17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0743",
+   "es": "Una plaza por cada 2,5-3 invitados (estimación del kit), acceso que aguante la lluvia e iluminación",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P77",
+    "P41",
+    "P39",
+    "P72",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0744",
+   "es": "Jardinería, zona de ceremonia y riego",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P78"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "Jardinero",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!C18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0746",
+   "es": "Planta con tiempo: el jardín de las fotos tarda una temporada en estar bonito",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P66",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0747",
+   "es": "Protección contra incendios y certificado final de obra",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!B19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P52",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0748",
+   "es": "Técnico / Empresa mantenedora",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!C19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0749",
+   "es": "Al acabar la obra",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!D19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0750",
+   "es": "Extintores, alumbrado y señales de evacuación y el certificado final que pide la licencia de actividad",
+   "donde": [
+    "WEDC · F3 - Obra y equipamiento!E19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P10",
+    "P52",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0752",
+   "es": "FASE 4: PERSONAL Y CATERING EXCLUSIVO (6-2 meses antes)",
+   "donde": [
+    "WEDC · F4 - Personal y catering!A2"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "Contratar la coordinación como fija discontinua",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P80",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "3 meses antes",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D5",
+    "WEDC · F4 - Personal y catering!D7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0755",
+   "es": "Contrato fijo discontinuo (art. 16 del Estatuto de los Trabajadores) de marzo a noviembre, con llamamiento por escrito. De diciembre a febrero coordina el titular",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P21",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0756",
+   "es": "Auxiliares de montaje y acceso como fijos discontinuos",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21",
+    "P71",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "2 meses antes",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0758",
+   "es": "Nunca como autónomos que te facturan: con tu horario y tu dirección es falso autónomo (art. 1.1 ET). Para los picos, una ETT",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Mantenimiento, comercial y limpieza",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P83"
+   ]
+  },
+  {
+   "id": "c0760",
+   "es": "Contratos a tiempo parcial con las horas del plan. Usa el convenio provincial de hostelería como referencia salarial prudente (ALEH VI, art. 4) y confírmalo con tu asesoría",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0761",
+   "es": "Alta en la Seguridad Social antes de cada llamamiento",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0762",
+   "es": "Antes de cada temporada",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P66"
+   ]
+  },
+  {
+   "id": "c0763",
+   "es": "Y la baja al terminar el periodo de actividad",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P84"
+   ]
+  },
+  {
+   "id": "c0764",
+   "es": "Registro de jornada",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B9"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Time clock and overtime records",
+   "propuesta_de": "GPIZ-check c0763 (PIZC F4 - Personal y prevención!B8)",
+   "pistas": [
+    "P85"
+   ]
+  },
+  {
+   "id": "c0765",
+   "es": "Desde el primer día",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0766",
+   "es": "Obligatorio para toda la plantilla, también en los eventos que acaban tarde",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0767",
+   "es": "Prevención de riesgos laborales",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P86"
+   ]
+  },
+  {
+   "id": "c0768",
+   "es": "Servicio de prevención",
+   "donde": [
+    "WEDC · F4 - Personal y catering!C10"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Insurance carrier / Consultant",
+   "propuesta_de": "GPIZ-check c0780 (PIZC F4 - Personal y prevención!C14 / PIZC F4 - Personal y prevención!C15)"
+  },
+  {
+   "id": "c0769",
+   "es": "Antes de la primera contratación",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0770",
+   "es": "Plan de prevención (Ley 31/1995): montaje, cargas, trabajo en altura, jardinería y conducción en la finca",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P08",
+    "P71",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0771",
+   "es": "Elegir uno o dos caterings para homologar",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0772",
+   "es": "6 meses antes",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0773",
+   "es": "Prueba de menú con cada uno, referencias de otras fincas, inscripción sanitaria de su cocina y su seguro. El catering exclusivo es la mitad de la reputación de tu finca",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P13",
+    "P88",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0774",
+   "es": "Contrato de concesión del catering exclusivo",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0775",
+   "es": "5 meses antes",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0776",
+   "es": "Exclusividad y plazo, horarios, limpieza del office, salida y penalizaciones. Con el modelo de contrato de este pack",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0777",
+   "es": "Canon pactado y auditable",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0778",
+   "es": "En el contrato",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D13",
+    "WEDC · F4 - Personal y catering!D14",
+    "WEDC · F4 - Personal y catering!D15",
+    "WEDC · F6 - Temporada y eventos!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0779",
+   "es": "El plan supone un canon del 12 % de lo que factura el catering en la finca: es un supuesto, negócialo. Que el recuento de invitados de cada evento sea comprobable",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P18",
+    "P08",
+    "P13",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0780",
+   "es": "Comida testigo en cada boda y encargo de más de 40 personas",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P91",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0781",
+   "es": "Catering",
+   "donde": [
+    "WEDC · F4 - Personal y catering!C14",
+    "WEDC · F4 - Personal y catering!C15",
+    "WEDC · F4 - Personal y catering!C16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "Una ración de al menos 100 g de cada plato, a 4 °C o menos (o a -18 °C) durante 7 días. La guarda quien sirve, en el momento del servicio (RD 1086/2020, art. 30)",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0783",
+   "es": "Alérgenos de cada menú por escrito",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P93",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "El catering informa de los alérgenos de cada plato y recoge las alergias de los invitados con el recuento final. Pídelo por escrito en cada evento",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P95",
+    "P41",
+    "P13",
+    "P93",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Inscripción sanitaria del office y seguros del catering",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P38",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0786",
+   "es": "El office que usa el catering lo inscribe él en el registro de tu comunidad (compruébalo allí). Pide su póliza de responsabilidad civil con intoxicación alimentaria",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P33",
+    "P38",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "Lista de proveedores de la finca",
+   "donde": [
+    "WEDC · F4 - Personal y catering!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "4 meses antes",
+   "donde": [
+    "WEDC · F4 - Personal y catering!D17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "Fotógrafos, música, flores y decoración que conocen la finca. Decide si cobras por los proveedores externos que traigan los novios y escríbelo en el contrato",
+   "donde": [
+    "WEDC · F4 - Personal y catering!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P56",
+    "P08",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "FASE 5: MARCA, TARIFAS Y RESERVAS (12-3 meses antes)",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!A2"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "Nombre, logo e identidad de la finca",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P08",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Antes de la web y de los portales: es lo que verán las parejas al comparar",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P99",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "Web con calendario, galería y formulario de visita",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P100"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Fotos reales de la finca montada, aforo, tipos de evento y cómo pedir una visita",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P52",
+    "P100"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "Fotos y vídeo profesionales de la finca montada",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0798",
+   "es": "En cuanto haya obra acabada",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!D7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0799",
+   "es": "Monta una mesa de boda real con el catering para las fotos. Sin fotos no hay reservas",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P19",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "Ficha de empresa en Google y primeras reseñas",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P102"
+   ]
+  },
+  {
+   "id": "c0801",
+   "es": "Con fotos, horario de visitas y respuesta a cada reseña",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P102"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Portales de bodas: medir el coste por contacto",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P99",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0804",
+   "es": "Empieza con la ficha básica y pasa al escaparate de pago si las cuentas salen. Anota de dónde viene cada pareja que reserva",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P99",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Redes sociales con bodas y eventos reales",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0806",
+   "es": "Desde el mes 3",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0807",
+   "es": "Instagram y Pinterest con montajes reales y permiso por escrito de los novios",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P71",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Ferias nupciales",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P105",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0809",
+   "es": "Según el calendario de tu zona",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0810",
+   "es": "Una o dos al año, con el catering. Lleva el dossier y una forma de reservar visita en el momento",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P19",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Jornada de puertas abiertas con el catering",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P105",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0812",
+   "es": "Titular / Catering",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!C12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0813",
+   "es": "Antes de la primera temporada",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!D12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P66"
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "La finca montada, el catering sirviendo una degustación y los proveedores de la lista",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P13",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0815",
+   "es": "Wedding planners y agencias de eventos",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P108",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0816",
+   "es": "Meses 3-6",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!D13",
+    "WEDC · F5 - Marca y reservas!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0817",
+   "es": "Visita guiada, dossier y comisión pactada por escrito. El plan supone que una de cada cinco ventas llega por ellos",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P109"
+   ]
+  },
+  {
+   "id": "c0818",
+   "es": "Empresas, comuniones y celebraciones",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P110"
+   ]
+  },
+  {
+   "id": "c0819",
+   "es": "Son los eventos que llenan el invierno y los días de diario: jornadas de empresa, comidas de Navidad, comuniones y cumpleaños",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0820",
+   "es": "Tarifas por temporada y día",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P66",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0821",
+   "es": "Antes de la primera visita",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0822",
+   "es": "Con la calculadora de presupuestos de este pack: temporada alta, media y baja, sábado frente a viernes, domingo y diario, mínimo de invitados y extras",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P66",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0823",
+   "es": "Dossier de bodas y de empresa",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P112"
+   ]
+  },
+  {
+   "id": "c0824",
+   "es": "Qué incluye el espacio, qué pone el catering, tarifas orientativas, calendario de pagos y condiciones",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0825",
+   "es": "Contrato de reserva con los novios",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0826",
+   "es": "Antes de la primera señal",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!D17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0827",
+   "es": "Con el modelo de este pack: señal y penalizaciones proporcionadas (art. 85.6 del TRLGDCU) y recíprocas: si retienes lo pagado cuando cancelan, pacta lo mismo si cancelas tú (art. 87.2)",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P19",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0828",
+   "es": "Calendario de fechas y CRM",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P114"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Una sola agenda para las visitas, las fechas bloqueadas, las señales y los pagos pendientes",
+   "donde": [
+    "WEDC · F5 - Marca y reservas!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P114"
+   ]
+  },
+  {
+   "id": "c0831",
+   "es": "FASE 6: TEMPORADA Y CADA EVENTO",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!A2"
+   ]
+  },
+  {
+   "id": "c0832",
+   "es": "Visita y presupuesto por escrito",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P115"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "Titular / Comercial",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!C5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0834",
+   "es": "Al recibir la petición",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0835",
+   "es": "Presupuesto con la calculadora, válido por un plazo, con lo que incluye y lo que no",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P115"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "Contrato firmado, señal y factura de la señal",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P116"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Al reservar la fecha",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D6",
+    "WEDC · F6 - Temporada y eventos!D7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "Cada cobro, también la señal, lleva su factura con el IVA del 21 %",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P19",
+    "P23",
+    "P116"
+   ]
+  },
+  {
+   "id": "c0839",
+   "es": "Sin derecho de desistimiento: avísalo por escrito",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P117",
+    "P118"
+   ]
+  },
+  {
+   "id": "c0840",
+   "es": "Si contratas a distancia o fuera de la finca (web, correo o teléfono), un servicio de esparcimiento con fecha concreta queda fuera del derecho de desistimiento (TRLGDCU, art. 103.l). Dilo en el contrato para evitar discusiones",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P119",
+    "P08",
+    "P117",
+    "P118"
+   ]
+  },
+  {
+   "id": "c0841",
+   "es": "Fuero del consumidor en el contrato",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P117",
+    "P120"
+   ]
+  },
+  {
+   "id": "c0842",
+   "es": "Con particulares es abusiva la cláusula que les lleve a un juzgado distinto del de su domicilio o del lugar donde se presta el servicio (TRLGDCU, art. 90.2)",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P120"
+   ]
+  },
+  {
+   "id": "c0843",
+   "es": "Prueba de menú con el catering",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P88",
+    "P121"
+   ]
+  },
+  {
+   "id": "c0844",
+   "es": "Catering / Titular",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!C9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0845",
+   "es": "4-6 meses antes",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Sin ella no se cierra el menú. El catering cobra o descuenta la prueba según su contrato",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P121"
+   ]
+  },
+  {
+   "id": "c0847",
+   "es": "Recuento final de invitados y alergias",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P122"
+   ]
+  },
+  {
+   "id": "c0848",
+   "es": "Coordinación",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!C10",
+    "WEDC · F6 - Temporada y eventos!C11",
+    "WEDC · F6 - Temporada y eventos!C13",
+    "WEDC · F6 - Temporada y eventos!C14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P80"
+   ]
+  },
+  {
+   "id": "c0849",
+   "es": "15 días antes",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0850",
+   "es": "Por escrito, con las alergias e intolerancias de cada mesa. Es la base del canon y del personal del día",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P122"
+   ]
+  },
+  {
+   "id": "c0851",
+   "es": "Plan B de lluvia, calor y alerta de incendios",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P52",
+    "P72",
+    "P123"
+   ]
+  },
+  {
+   "id": "c0852",
+   "es": "7 días antes",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0853",
+   "es": "Carpa preparada y avisos a los novios. Bengalas, fuegos artificiales y barbacoas, prohibidos en época de peligro de incendios: compruébalo con tu comunidad",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P52",
+    "P33",
+    "P54",
+    "P123"
+   ]
+  },
+  {
+   "id": "c0854",
+   "es": "Montaje y control del aforo",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P52",
+    "P71",
+    "P124"
+   ]
+  },
+  {
+   "id": "c0855",
+   "es": "Coordinación / Auxiliares",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!C12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P80"
+   ]
+  },
+  {
+   "id": "c0856",
+   "es": "Día del evento",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D12",
+    "WEDC · F6 - Temporada y eventos!D13",
+    "WEDC · F6 - Temporada y eventos!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0857",
+   "es": "Nunca más invitados de los que permite la licencia. Señalización y salidas despejadas",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P19",
+    "P10",
+    "P124"
+   ]
+  },
+  {
+   "id": "c0858",
+   "es": "Limitador y música exterior hasta la hora de la ordenanza",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P56",
+    "P36",
+    "P125"
+   ]
+  },
+  {
+   "id": "c0859",
+   "es": "El baile final, dentro y con el limitador. Altavoces de espaldas a las viviendas",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P36",
+    "P125"
+   ]
+  },
+  {
+   "id": "c0860",
+   "es": "Comida testigo verificada",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P126",
+    "P91",
+    "P127"
+   ]
+  },
+  {
+   "id": "c0861",
+   "es": "Comprueba que el catering guarda las raciones testigo de cada plato (RD 1086/2020, art. 30)",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P13",
+    "P127"
+   ]
+  },
+  {
+   "id": "c0862",
+   "es": "Recogida, limpieza y revisión de daños",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P71",
+    "P128"
+   ]
+  },
+  {
+   "id": "c0863",
+   "es": "Auxiliares / Limpieza",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!C15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0864",
+   "es": "Final del evento y día siguiente",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0865",
+   "es": "Fotos del estado de la finca al acabar: si hay daños, se descuentan de la fianza según el contrato",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P08",
+    "P129",
+    "P128"
+   ]
+  },
+  {
+   "id": "c0866",
+   "es": "Liquidación del canon con el catering",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P13",
+    "P130"
+   ]
+  },
+  {
+   "id": "c0867",
+   "es": "Mensual",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D16"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Monthly",
+   "propuesta_de": "GR c0848 (PIZC F6 - Apertura y 90 días!D12 / PIZC F6 - Apertura y 90 días!D13)"
+  },
+  {
+   "id": "c0868",
+   "es": "Con el recuento firmado de cada evento. Factura del canon al 21 %",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P130"
+   ]
+  },
+  {
+   "id": "c0869",
+   "es": "Reseña, fotos y agradecimiento",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P131"
+   ]
+  },
+  {
+   "id": "c0870",
+   "es": "Semana siguiente",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!D17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0871",
+   "es": "Pide la reseña a los novios y las fotos al fotógrafo, con permiso para publicarlas",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P131"
+   ]
+  },
+  {
+   "id": "c0872",
+   "es": "Cierre trimestral: ocupación, canon y caja",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22",
+    "P18",
+    "P132"
+   ]
+  },
+  {
+   "id": "c0873",
+   "es": "Eventos celebrados frente al plan, precio medio por invitado, canon cobrado y saldo de caja frente a la hoja de Tesorería",
+   "donde": [
+    "WEDC · F6 - Temporada y eventos!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P29",
+    "P18",
+    "P132"
+   ]
+  }
+ ]
+}

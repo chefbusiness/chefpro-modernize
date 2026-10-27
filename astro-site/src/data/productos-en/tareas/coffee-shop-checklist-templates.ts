@@ -455,6 +455,7 @@ const data: KitTareasData = {
     { href: '/en/digital-products/ice-cream-shop-checklist-templates', label: 'Ice Cream Shop Checklists Kit Pro' },
     { href: '/en/digital-products/chocolate-shop-checklist-templates', label: 'Chocolate Shop Checklists Kit Pro' },
     { href: '/en/digital-products/pastry-shop-checklist-templates', label: 'Pastry Shop Checklists Kit Pro' },
+    { href: '/en/digital-products/hotel-checklist-templates', label: 'Hotel Checklists Kit Pro' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
     { href: '/en/digital-products/how-to-open-a-pastry-shop', label: 'How to Open a Pastry Shop' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },

@@ -1,0 +1,498 @@
+# ice-cream-shop-startup-checklist.xlsx
+docProps · title: Ice Cream Shop Startup Checklist (80 Tasks) · Ice Cream Shop Business Plan Kit · subject: Ice Cream Shop Business Plan Kit · v2.2 · keywords: ice cream shop business plan, ice cream parlor business plan, how to open an ice cream shop, ice cream shop startup costs, batch freezer, AI Chef Pro · description: aichef.pro/en/digital-products/ice-cream-shop-business-plan
+
+## Phase 1 - Business Setup  (papel 1, orientación portrait, protegida True)
+A1	ICE CREAM SHOP STARTUP CHECKLIST
+A2	PHASE 1: BUSINESS SETUP & TAXES (weeks 1-4)
+A4	OK
+B4	TASK
+C4	RESPONSIBLE
+D4	TIMING
+E4	NOTES
+A5	☐
+B5	Zoning check before signing (retail food with on-site production)
+C5	Owner / Zoning consultant
+D5	Before signing the lease
+E5	Ask the city four things: whether the zoning allows making and selling ice cream with seating on site, how much electrical service the space has (ask the utility about 3-phase service and amps before signing), what ventilation the condenser units need (and whether the waffle cone irons need a hood: usually not) and whether the street allows patio seating
+A6	☐
+B6	Choose your legal structure: LLC vs S corp
+C6	Accountant
+D6	Week 1
+E6	The financial plan assumes an effective income tax rate of 25% (21% federal plus state), as for a C corporation. An LLC taxed as a pass-through pays through your personal return instead, and early losses carry forward as net operating losses. Compare an LLC vs S corp election with your CPA, using the plan's numbers.
+A7	☐
+B7	Form the LLC (or corporation) with your state
+C7	Attorney / CPA
+D7	Weeks 1-2
+E7	Filing fees, annual reports and franchise taxes vary by state. Check your Secretary of State's website before you file.
+A8	☐
+B8	Business license and sales tax permit (state and city)
+C8	Accountant
+D8	Week 2
+E8	Register the business with your city or county and get your state sales tax permit before the first sale. Fees and forms vary: ask your city clerk and your state department of revenue. Your CPA can confirm the filing frequency
+A9	☐
+B9	License decision: buy pasteurized base from a licensed dairy or make your own mix
+C9	Accountant
+D9	Week 2
+E9	Ask your state department of agriculture in writing. Buying pasteurized base from a licensed dairy (the case in this plan) needs your retail food permit and, in some states (Vermont, for example), a frozen dessert license too. Making your own mix (the variant) means a state dairy plant or frozen dessert manufacturer license, 3-A equipment and inspections. Decide before you buy equipment, and ask your local health department what it expects
+A10	☐
+B10	Workers' compensation insurance and payroll account
+C10	Accountant
+D10	Week 2
+E10	Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.
+A11	☐
+B11	IRS and state tax portal online accounts
+C11	Owner
+D11	Week 1
+E11	Needed for the IRS, your state payroll and unemployment accounts and your sales tax permit
+A12	☐
+B12	Business bank account and business card
+C12	Owner
+D12	Week 2
+E12	Separate from your personal accounts: card terminal deposits, supplier payments and catering receipts go through them
+A13	☐
+B13	Accountant / bookkeeper and a POS that reports sales tax
+C13	Owner
+D13	Weeks 2-4
+E13	Payroll for the seasonal part-time hires, rehired each spring. Choose a POS that reports sales tax before you buy it, and ask your CPA how often you file
+A14	☐
+B14	Take the plan to two lenders and compare loan offers
+C14	Owner
+D14	Weeks 2-4
+E14	Bring the full financial plan with the month-by-month cash flow, lender-ready. Also ask each lender about an SBA 7(a) loan and about leasing for the refrigeration equipment, and compare the rates (the example uses 10%, not APR)
+A15	☐
+B15	General liability, property and equipment breakdown + food spoilage
+C15	Insurance broker
+D15	Before construction
+E15	General liability (ask your broker for the limit) and property insurance with equipment breakdown and food spoilage
+A16	☐
+B16	Trademark search and registration (USPTO)
+C16	Owner
+D16	Weeks 2-4
+E16	Check first that the name is not registered in your class (ice cream and restaurant services)
+B18	Tasks completed:
+C18	= 0.0 ‖ =COUNTIF(A5:A16,"✓")
+D18	of
+E18	= 12.0 ‖ =COUNTIF(B5:B16,"?*")-COUNTIF(A5:A16,"N/A")
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16	list · "✓,☐,N/A" · error: Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total. · ayuda: None
+
+## Phase 2 - Site & Permits  (papel 1, orientación portrait, protegida True)
+A1	ICE CREAM SHOP STARTUP CHECKLIST
+A2	PHASE 2: SITE & PERMITS (weeks 3-12)
+A4	OK
+B4	TASK
+C4	RESPONSIBLE
+D4	TIMING
+E4	NOTES
+A5	☐
+B5	Choose the space: 1,000 sq ft (93 sq m) with a production room of about 250 sq ft (23 sq m)
+C5	Owner
+D5	Weeks 3-6
+E5	Neighborhood main street or a spot near a park or schools, with foot traffic on summer evenings and weekends in winter
+A6	☐
+B6	Check the electrical service: about 30 kW in 3-phase
+C6	Electrician / Utility
+D6	Before signing
+E6	Dipping cabinets running 24 hours a day, batch freezer, hardening cabinet and air conditioning. A single-phase space needs a new service: ask the utility for the timeline and the cost
+A7	☐
+B7	Check floor drains, ventilation and condenser air outlets
+C7	Architect / engineer
+D7	Before signing
+E7	Floor sink in the production room and an air outlet for the machines' condenser units. Waffle cone irons usually need no exhaust hood: confirm it with the plan reviewer
+A8	☐
+B8	Negotiate the lease: free-rent period during build-out and security deposit
+C8	Owner
+D8	Before signing
+E8	The plan counts two months of rent before opening and a two-month deposit. Ask for a free-rent period while you build out
+A9	☐
+B9	Lease that names the use: ice cream shop with on-site production
+C9	Owner / Attorney
+D9	Week 6
+E9	The lease should say "ice cream shop with on-site production and seating" and who pays for the electrical service connection
+A10	☐
+B10	Commission the plans and the equipment layout
+C10	Architect / Engineer
+D10	Weeks 6-8
+E10	Layout of the production room with a dirty-to-clean flow, power, ventilation and the patio, ready for plan review
+A11	☐
+B11	Building permit for the build-out
+C11	Owner / City planning office
+D11	Weeks 6-8, before construction starts
+E11	Ask in your zoning check which permit your work needs. The building department decides whether plans stamped by an architect or engineer are required
+A12	☐
+B12	Plan review (Food Code 8-201.11) with the equipment layout
+C12	Owner / City planning office
+D12	Before construction
+E12	Submit the plans, the equipment list and the layout to your local health department before you build; it approves them or asks for changes. Requirements vary by county: ask your local health department
+A13	☐
+B13	Seating and restrooms: confirm what your seat count requires
+C13	Owner / City planning office
+D13	Before construction
+E13	Your seat count drives restroom, occupancy and parking requirements: confirm them with the building and health departments
+A14	☐
+B14	Apply for the patio permit
+C14	Owner / City
+D14	Together with the permit applications
+E14	Sidewalk space is public right-of-way and always needs its own permit. Ask your city for the fee: the plan's figure is an example
+A15	☐
+B15	Production room build-out: washable surfaces and non-slip floor
+C15	Contractor
+D15	Weeks 8-12
+E15	Washable walls, non-slip floor, washable ceilings, hand sinks and a restroom
+A16	☐
+B16	Plumbing, floor drains and air conditioning
+C16	Installer
+D16	Weeks 8-12
+E16	Hot and cold water in the production room, floor drains and air conditioning for the shop
+A17	☐
+B17	Install the batch freezer, hardening cabinet and base refrigerator
+C17	Supplier
+D17	Weeks 10-12
+E17	Test run with the technician: temperatures of the dipping cabinets, the hardening cabinet and the freezers
+A18	☐
+B18	Signs, storefront and hours sign
+C18	Sign maker
+D18	Weeks 10-12
+E18	The sign may need its own signage permit. Say "made here in small batches" only if it is true (phase 5)
+A19	☐
+B19	Electrical upgrade, final inspections and certificate of occupancy
+C19	Licensed electrician / Inspector
+D19	During and after construction
+E19	Keep the electrical inspection sign-off for the new 3-phase service and the technician's final certificate: the building and health departments will ask for them at the final inspection
+B21	Tasks completed:
+C21	= 0.0 ‖ =COUNTIF(A5:A19,"✓")
+D21	of
+E21	= 15.0 ‖ =COUNTIF(B5:B19,"?*")-COUNTIF(A5:A19,"N/A")
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19	list · "✓,☐,N/A" · error: Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total. · ayuda: None
+
+## Phase 3 - Production & Health  (papel 1, orientación portrait, protegida True)
+A1	ICE CREAM SHOP STARTUP CHECKLIST
+A2	PHASE 3: PRODUCTION & HEALTH (weeks 8-14)
+A4	OK
+B4	TASK
+C4	RESPONSIBLE
+D4	TIMING
+E4	NOTES
+A5	☐
+B5	Buy the batch freezer, the hardening cabinet and the base refrigerator
+C5	Owner
+D5	Weeks 8-10
+E5	A 20-qt horizontal batch freezer, a hardening cabinet for tubs and a base refrigerator at 41 °F (5 °C) or colder. Ask for the data sheet, amps and warranty; check the 3-phase service first. Reconditioned equipment costs much less
+A6	☐
+B6	Buy the storage freezers and the 18-flavor dipping cabinets
+C6	Owner
+D6	Weeks 8-10
+E6	Two storage freezers at 0 °F (−18 °C) or colder and dipping cabinets for 18 flavors: in a mid-size city, more than that only adds waste and power
+A7	☐
+B7	Refrigeration service contract with an EPA 608-certified technician
+C7	Owner
+D7	Before opening
+E7	Service before summer and during the January closing. Refrigerant is handled only by a certified technician: your staff never tops it up
+A8	☐
+B8	Health permit application and pre-opening inspection
+C8	Owner / Health department
+D8	Before the first batch (test batches too)
+E8	Apply to your local health department; plan review and a pre-opening inspection come first. Requirements vary by county: ask your local health department
+A9	☐
+B9	Before selling to restaurants or cafés, ask your state: it may require a manufacturer license
+C9	Owner
+D9	Before selling to another business
+E9	Selling ice cream to restaurants or cafés makes you a wholesale supplier in many states. Ask your state department of agriculture in writing what license, labeling and inspections apply, and keep a record of buyers, quantities and dates
+A10	☐
+B10	Written food safety plan (receiving ≤ 41 °F, lot codes, date marking)
+C10	Consultant / Owner
+D10	Before opening
+E10	Receive the base at 41 °F (5 °C) or colder with lot codes and date marking. After the dairy's pasteurization you add only flavorings and mix-ins: no raw eggs, no raw milk or cream. If you pasteurize your own mix (the variant), fats, egg yolks and emulsifiers go in BEFORE pasteurization (in Ohio, for example, 155 °F for 30 minutes or 175 °F for 25 seconds; your state sets its own), never after
+A11	☐
+B11	Batch freezing, hardening ≤ 0 °F, dipping cabinet 6-10 °F
+C11	Owner
+D11	Before opening
+E11	Batch-freeze (draw at 16-19 °F), harden to 0 °F (−18 °C) or colder at the core, and hold the dipping cabinet at 6-10 °F or the manufacturer's range. Store at 0 °F or colder and never refreeze melted ice cream. Your food safety plan sets the cabinet temperature
+A12	☐
+B12	Custard flavors from a custard base, no raw eggs
+C12	Owner
+D12	Before opening
+E12	Custard flavors need a custard base from your dairy: never add raw eggs, raw milk or cream after the base has been pasteurized
+A13	☐
+B13	Lot traceability, date marking and temperature logs
+C13	Owner
+D13	From the first batch
+E13	Lot and date of each batch, delivery temperature of the base, freezer and cabinet temperatures, and the supplier of each ingredient
+A14	☐
+B14	Recipe cards for each flavor with its allergens
+C14	Ice cream maker
+D14	Before opening
+E14	Recipe, yield and allergens of every flavor: milk, eggs, tree nuts, peanuts, wheat (cookies, cones), soy and sesame
+A15	☐
+B15	Allergen sign and information at the counter
+C15	Owner
+D15	Before opening
+E15	The 9 major allergens include sesame (UK: 14). Post a sign or menu board and train staff to answer. Never promise "allergen-free": scoops, tubs and dipper wells are shared
+A16	☐
+B16	Complete label on packaged pints
+C16	Owner
+D16	Before selling packaged pints
+E16	Pints you leave packaged in the freezer need a label (Food Code 3-602.11): name of the food, ingredients, allergens, net quantity and your name and address
+A17	☐
+B17	Menu names that meet 21 CFR 135.110 ("ice cream", "frozen custard")
+C17	Ice cream maker
+D17	Before opening
+E17	Use "ice cream" only if the recipe has at least 10% milkfat and weighs 4.5 lb per gallon or more, and "frozen custard" only with 1.4% egg yolk solids. Otherwise name it by flavor or use another description. If you call it ice cream, the federal standard applies, gelato included
+A18	☐
+B18	Scoop and dipper well protocol against cross-contact
+C18	Owner
+D18	Before opening
+E18	One scoop per tub and a dipper well with running water (Food Code 3-304.12). For a guest with an allergy, use a clean scoop and an unopened tub
+A19	☐
+B19	Base supplier agreement and ingredient suppliers (delivery ≤ 41 °F, lot codes)
+C19	Owner
+D19	Weeks 10-14
+E19	Written agreement with the base supplier: delivery at 41 °F (5 °C) or colder, a lot code on every case and a copy of the dairy's license. Two suppliers for each key ingredient (pistachio, cocoa, vanilla), packaging without expanded polystyrene, and paper or compostable spoons
+B21	Tasks completed:
+C21	= 0.0 ‖ =COUNTIF(A5:A19,"✓")
+D21	of
+E21	= 15.0 ‖ =COUNTIF(B5:B19,"?*")-COUNTIF(A5:A19,"N/A")
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19	list · "✓,☐,N/A" · error: Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total. · ayuda: None
+
+## Phase 4 - Staff & Food Safety  (papel 1, orientación portrait, protegida True)
+A1	ICE CREAM SHOP STARTUP CHECKLIST
+A2	PHASE 4: STAFF & FOOD SAFETY (weeks 10-14)
+A4	OK
+B4	TASK
+C4	RESPONSIBLE
+D4	TIMING
+E4	NOTES
+A5	☐
+B5	Set pay rates against the state and local minimum wage
+C5	Accountant
+D5	Week 10
+E5	Use the higher of the federal $7.25 per hour and your state or local minimum wage. Enter the floor on the "0. Assumptions" tab of the plan
+A6	☐
+B6	Seasonal part-time W-2 hires
+C6	Accountant
+D6	Before the season
+E6	Offer letter in writing with the start and expected end of the season, plus I-9, W-4 and state new-hire reporting. A person who works your schedule is never a 1099 contractor: that is misclassification
+A7	☐
+B7	Offer letter for the year-round shift lead
+C7	Accountant
+D7	Week 12
+E7	Opens and closes when the owner is in the production room: define duties, pay and schedule in the offer letter
+A8	☐
+B8	Seasonal hiring calendar (rehire each spring)
+C8	Owner
+D8	February
+E8	Who starts in April, who in May and who in June, and when each one ends in the fall
+A9	☐
+B9	Time clock and overtime records
+C9	Owner
+D9	From the first hire
+E9	Keep time records for all staff and track overtime over 40 hours a week (FLSA). Post the minimum wage poster
+A10	☐
+B10	Teen scoopers (14-15): FLSA hours and state work permits
+C10	Accountant
+D10	If you hire minors
+E10	Ages 14-15 are limited to non-school hours: 3 hours on a school day and 18 in a school week (29 CFR 570.35). Some states add work permits: ask your state labor department
+A11	☐
+B11	Food handler cards and a Certified Food Protection Manager (CFPM)
+C11	Owner
+D11	Before opening
+E11	Certified Food Protection Manager (Food Code 2-102.12) and food handler cards where your state requires them; the owner trains the team in hygiene, temperatures, allergens and the order of the batch process
+A12	☐
+B12	Training for the ice cream maker
+C12	Owner
+D12	Before opening
+E12	Mix balancing (sugars, solids and fat), batch freezing and overrun: it is an investment, not an expense
+A13	☐
+B13	OSHA basics: safety plan and training
+C13	Insurance carrier / Consultant
+D13	Before opening
+E13	OSHA basics: working in the cold, lifting, cuts and burns from the waffle cone irons; insulated gloves for 0 °F (−18 °C)
+A14	☐
+B14	Employee health policy and first aid
+C14	Insurance carrier / Consultant
+D14	At hire
+E14	Have every new hire sign an employee health agreement (report illness symptoms; Food Code 2-201) and stock a first aid kit.
+A15	☐
+B15	Pest control
+C15	Licensed pest control operator
+D15	Before opening
+E15	Contract with a licensed pest control operator: it is part of the prerequisites of your written food safety plan.
+A16	☐
+B16	Cleaning plan for the production room and the dipping cabinets
+C16	Owner
+D16	Before opening
+E16	Batch freezer after every use, tubs, strainers and dipper wells, with a log
+B18	Tasks completed:
+C18	= 0.0 ‖ =COUNTIF(A5:A16,"✓")
+D18	of
+E18	= 12.0 ‖ =COUNTIF(B5:B16,"?*")-COUNTIF(A5:A16,"N/A")
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16	list · "✓,☐,N/A" · error: Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total. · ayuda: None
+
+## Phase 5 - Brand & Menu  (papel 1, orientación portrait, protegida True)
+A1	ICE CREAM SHOP STARTUP CHECKLIST
+A2	PHASE 5: BRAND & MENU (weeks 8-16)
+A4	OK
+B4	TASK
+C4	RESPONSIBLE
+D4	TIMING
+E4	NOTES
+A5	☐
+B5	Decide your ice cream shop model and menu
+C5	Owner
+D5	Week 8
+E5	On-site production (this plan), cabinets without production, a kiosk or a franchise: each has a different investment and different licenses
+A6	☐
+B6	Honest claims on the sign: made here, small batches, homemade only if true
+C6	Owner
+D6	Before the sign
+E6	Say "made here in small batches" only if you make it here. Use "homemade" or "house-made" only if it is true, and check your state's rules on words like "artisan"
+A7	☐
+B7	Menu of 18 flavors in summer and 10-12 in winter
+C7	Ice cream maker
+D7	Weeks 10-14
+E7	Classics, seasonal flavors and one or two signature ones, plus dairy-free sorbets for vegans and guests who avoid milk. Because the batch freezer and tubs are shared, never promise "allergen-free": for a guest with a milk allergy, batch-freeze the dairy-free flavor first on a freshly cleaned machine and note it on that flavor's allergen sheet
+A8	☐
+B8	Cost out every flavor and set menu prices
+C8	Owner
+D8	Weeks 12-14
+E8	Work out the cost of a scoop, a pint and an ice cream cake; review it every season (pistachio, cocoa and vanilla move)
+A9	☐
+B9	Winter menu: cakes, holiday pies and pints, hot chocolate
+C9	Ice cream maker
+D9	October
+E9	Winter runs on ice cream cakes, holiday pies and pints, hot chocolate and catering. Take cake pre-orders for birthdays, graduations and the holidays
+A10	☐
+B10	Brand, photos and a website with the flavor menu
+C10	Designer
+D10	Weeks 8-14
+E10	Real photos of the production room and the ice cream; a website with the flavors of the day and the ice cream cake orders
+A11	☐
+B11	Google Business Profile and reviews
+C11	Owner
+D11	Before opening
+E11	Seasonal and winter hours, photos and a reply to every review
+A12	☐
+B12	Social media with the flavor of the day
+C12	Owner
+D12	From construction
+E12	The build-out, the first batch, the new flavor each week and the return of the season
+A13	☐
+B13	Cake pre-orders and event orders
+C13	Owner
+D13	Before May
+E13	Birthdays, graduations and the holidays: order form, lead time and deposit. Plan a promotion for National Ice Cream Day (3rd Sunday of July)
+A14	☐
+B14	Offer catering and events
+C14	Owner
+D14	After opening
+E14	Once your license decision is settled and your state's rules for selling to other businesses are clear (phase 3). Set payment terms in advance
+A15	☐
+B15	Sign up for DoorDash / Uber Eats for pints
+C15	Owner
+D15	June
+E15	Only hand-packed pints and quarts in insulated bags; the commission is around 25% (Basic 15%, Premier 30%)
+A16	☐
+B16	Soft opening and Opening Day with tastings
+C16	Owner
+D16	Opening week
+E16	Flavor tastings for the neighborhood, schools and nearby shops
+A17	☐
+B17	Privacy policy and consent for your website and ordering
+C17	Owner
+D17	Before opening
+E17	On your website, mailing list and order form: each channel needs its notice
+B19	Tasks completed:
+C19	= 0.0 ‖ =COUNTIF(A5:A17,"✓")
+D19	of
+E19	= 13.0 ‖ =COUNTIF(B5:B17,"?*")-COUNTIF(A5:A17,"N/A")
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17	list · "✓,☐,N/A" · error: Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total. · ayuda: None
+
+## Phase 6 - Opening & Season  (papel 1, orientación portrait, protegida True)
+A1	ICE CREAM SHOP STARTUP CHECKLIST
+A2	PHASE 6: OPENING & SEASON (first 90 days)
+A4	OK
+B4	TASK
+C4	RESPONSIBLE
+D4	TIMING
+E4	NOTES
+A5	☐
+B5	Open in March, not in the fall
+C5	Owner
+D5	Month 1
+E5	The plan opens in March so that the summer cash reaches the first winter: if you open in October, the working capital is spent before the first July
+A6	☐
+B6	Test batches and internal tasting
+C6	Ice cream maker
+D6	Week before opening
+E6	Two or three batches per flavor to adjust texture, sweetness and overrun before opening
+A7	☐
+B7	Check temperatures and records on day one
+C7	Owner
+D7	Day 1
+E7	Dipping cabinets, freezers, hardening cabinet and the base refrigerator log; correct any deviation before you serve
+A8	☐
+B8	Health inspection: keep the food safety plan and records at hand
+C8	Owner
+D8	From day 1
+E8	Allergen sheets, lot traceability, temperature and cleaning logs, training and pest control
+A9	☐
+B9	Review the equipment breakdown and food spoilage insurance before July
+C9	Insurance broker
+D9	June
+E9	Check that it covers the stock in the cabinets and freezers if the refrigeration fails in the middle of summer
+A10	☐
+B10	Refrigeration service before the summer peak
+C10	Refrigeration technician (EPA 608)
+D10	May
+E10	Clean the condensers and test temperatures: a failure in August is a tub lost for every flavor
+A11	☐
+B11	Peak-season schedule for July and August
+C11	Owner
+D11	June
+E11	At the peak the schedule is tight: plan extra hours for the owner or a weekend extra
+A12	☐
+B12	Measure waste every week
+C12	Owner
+D12	Weekly
+E12	Melted, returned or expired ice cream is never refrozen. If waste goes above 5-8% of production, cut back on tubs
+A13	☐
+B13	Compare actual sales and costs with the plan each month
+C13	Owner
+D13	Monthly
+E13	Customers per day, average check, cost of goods sold and labor against the P&L in the Excel
+A14	☐
+B14	Track cash flow month by month and the minimum balance
+C14	Owner
+D14	Monthly
+E14	See how much summer cash reaches November: it pays for the winter
+A15	☐
+B15	Winter plan: shorter menu and hours
+C15	Owner
+D15	September
+E15	Fewer flavors, winter hours, and cakes, holiday pies and pints, hot chocolate and catering (or close from November to February)
+A16	☐
+B16	End of the seasonal hires and the January closing
+C16	Accountant
+D16	September and January
+E16	Written end-of-season notice to each seasonal part-time employee at the end of September, and three weeks closed in January
+A17	☐
+B17	Refrigeration maintenance during the closing weeks
+C17	Refrigeration technician (EPA 608)
+D17	January
+E17	Service the dipping cabinets, freezers and batch freezer with the shop closed, before the next season
+B19	Tasks completed:
+C19	= 0.0 ‖ =COUNTIF(A5:A17,"✓")
+D19	of
+E19	= 13.0 ‖ =COUNTIF(B5:B17,"?*")-COUNTIF(A5:A17,"N/A")
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17	list · "✓,☐,N/A" · error: Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total. · ayuda: None
+
+## Instructions  (papel 1, orientación None, protegida True)
+A1	INSTRUCTIONS FOR USE
+A3	This file is part of the Ice Cream Shop Business Plan Kit by AI Chef Pro.
+A4	The GREEN cells are the editable ones: change those and the rest of the workbook recalculates on its own.
+A5	OK column: choose ✓ (done), ☐ (pending) or N/A (not applicable). N/A items do not count toward the total.
+A6	Each tab's counter counts only the ✓; N/A items come out of the total.
+A8	To edit a cell that is not green: Review → Unprotect Sheet (there is no password).
+A9	More templates and kits in the catalog at aichef.pro/en/digital-products
+A10	Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es
+A11	Version 2.2 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-business-plan · info@aichef.pro
+A12	Planning tool, not financial, tax or legal advice. Requirements vary by state, county and city — check with your accountant and local authorities. This checklist is a starting point, not an exhaustive list.

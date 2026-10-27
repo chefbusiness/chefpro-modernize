@@ -1,0 +1,786 @@
+{
+ "meta": {
+  "generado": "2026-10-27T08:04:47Z",
+  "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
+  "fuentes": {
+   "ice": "ice-cream-shop-financial-projections.xlsx"
+  },
+  "nota": "Cifras del caso de ejemplo US leídas de la caché de los xlsx EN calibrados (D15, D22). Las lee ensamblar_docx.py; las fichas de landing EN citan las mismas."
+ },
+ "ice": {
+  "clientes_dia": {
+   "valor": 165,
+   "fmt": "int",
+   "texto": "165",
+   "hoja_es": "0. Supuestos",
+   "celda": "B4"
+  },
+  "clientes_a2": {
+   "valor": 178.20000000000002,
+   "fmt": "int",
+   "texto": "178",
+   "hoja_es": "PyG 3 Años",
+   "celda": "C6"
+  },
+  "clientes_a3": {
+   "valor": 187.11,
+   "fmt": "int",
+   "texto": "187",
+   "hoja_es": "PyG 3 Años",
+   "celda": "D6"
+  },
+  "ticket": {
+   "valor": 7.5,
+   "fmt": "usd2",
+   "texto": "$7.50",
+   "hoja_es": "0. Supuestos",
+   "celda": "B5"
+  },
+  "precio_menu": {
+   "valor": 8.100000000000001,
+   "fmt": "usd2",
+   "texto": "$8.10",
+   "hoja_es": "0. Supuestos",
+   "celda": "B9"
+  },
+  "dias": {
+   "valor": 310,
+   "fmt": "int",
+   "texto": "310",
+   "hoja_es": "0. Supuestos",
+   "celda": "B6"
+  },
+  "crecimiento_a2": {
+   "valor": 0.08,
+   "fmt": "pct0",
+   "texto": "8%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B7"
+  },
+  "crecimiento_a3": {
+   "valor": 0.05,
+   "fmt": "pct0",
+   "texto": "5%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B8"
+  },
+  "sales_tax": {
+   "valor": 0.08,
+   "fmt": "pct0",
+   "texto": "8%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B39"
+  },
+  "impuesto_beneficios": {
+   "valor": 0.25,
+   "fmt": "pct0",
+   "texto": "25%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B38"
+  },
+  "food_cost_comida": {
+   "valor": 0.22,
+   "fmt": "pct0",
+   "texto": "22%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B13"
+  },
+  "food_cost_bebida": {
+   "valor": 0.25,
+   "fmt": "pct0",
+   "texto": "25%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B14"
+  },
+  "consumibles_pct": {
+   "valor": 0.045,
+   "fmt": "pct1",
+   "texto": "4.5%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B15"
+  },
+  "tarjeta_pct": {
+   "valor": 0.03,
+   "fmt": "pct1",
+   "texto": "3.0%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B18"
+  },
+  "cargas_pct": {
+   "valor": 0.1,
+   "fmt": "pct0",
+   "texto": "10%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B20"
+  },
+  "salario_minimo_federal": {
+   "valor": 15080,
+   "fmt": "usd",
+   "texto": "$15,080",
+   "hoja_es": "0. Supuestos",
+   "celda": "B22"
+  },
+  "alquiler_mes": {
+   "valor": 2500,
+   "fmt": "usd",
+   "texto": "$2,500",
+   "hoja_es": "0. Supuestos",
+   "celda": "B24"
+  },
+  "suministros_mes": {
+   "valor": 1300,
+   "fmt": "usd",
+   "texto": "$1,300",
+   "hoja_es": "0. Supuestos",
+   "celda": "B26"
+  },
+  "seguros_anual": {
+   "valor": 4500,
+   "fmt": "usd",
+   "texto": "$4,500",
+   "hoja_es": "0. Supuestos",
+   "celda": "B27"
+  },
+  "vida_obra": {
+   "valor": 10,
+   "fmt": "int",
+   "texto": "10",
+   "hoja_es": "0. Supuestos",
+   "celda": "B44"
+  },
+  "vida_equipo": {
+   "valor": 7,
+   "fmt": "int",
+   "texto": "7",
+   "hoja_es": "0. Supuestos",
+   "celda": "B45"
+  },
+  "ventas_a1": {
+   "valor": 383625.0,
+   "fmt": "usd",
+   "texto": "$383,625",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B9"
+  },
+  "ventas_a2": {
+   "valor": 414315.00000000006,
+   "fmt": "usd",
+   "texto": "$414,315",
+   "hoja_es": "PyG 3 Años",
+   "celda": "C9"
+  },
+  "ventas_a3": {
+   "valor": 435030.75,
+   "fmt": "usd",
+   "texto": "$435,031",
+   "hoja_es": "PyG 3 Años",
+   "celda": "D9"
+  },
+  "cogs_pct": {
+   "valor": 0.223,
+   "fmt": "pct1",
+   "texto": "22.3%",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B53"
+  },
+  "margen_bruto_pct": {
+   "valor": 0.682,
+   "fmt": "pct1",
+   "texto": "68.2%",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B51"
+  },
+  "personal_a1": {
+   "valor": 128185.2,
+   "fmt": "usd",
+   "texto": "$128,185",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B23"
+  },
+  "personal_pct": {
+   "valor": 0.33414193548387094,
+   "fmt": "pct1",
+   "texto": "33.4%",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B54"
+  },
+  "ocupacion_anual": {
+   "valor": 30000.0,
+   "fmt": "usd",
+   "texto": "$30,000",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B22"
+  },
+  "ocupacion_pct": {
+   "valor": 0.07820136852394917,
+   "fmt": "pct1",
+   "texto": "7.8%",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B55"
+  },
+  "marketing_anual": {
+   "valor": 4500,
+   "fmt": "usd",
+   "texto": "$4,500",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B28"
+  },
+  "costes_fijos_a1": {
+   "valor": 232852.34285714285,
+   "fmt": "usd",
+   "texto": "$232,852",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B38"
+  },
+  "amortizacion_anual": {
+   "valor": 21767.142857142855,
+   "fmt": "usd",
+   "texto": "$21,767",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B36"
+  },
+  "intereses_a1": {
+   "valor": 16200.0,
+   "fmt": "usd",
+   "texto": "$16,200",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B37"
+  },
+  "resultado_antes_impuestos_a1": {
+   "valor": 28779.907142857148,
+   "fmt": "usd",
+   "texto": "$28,780",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B41"
+  },
+  "resultado_neto_a1": {
+   "valor": 21584.93035714286,
+   "fmt": "usd",
+   "texto": "$21,585",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B48"
+  },
+  "resultado_neto_a2": {
+   "valor": 32045.22190496543,
+   "fmt": "usd",
+   "texto": "$32,045",
+   "hoja_es": "PyG 3 Años",
+   "celda": "C48"
+  },
+  "resultado_neto_a3": {
+   "valor": 37479.920232570126,
+   "fmt": "usd",
+   "texto": "$37,480",
+   "hoja_es": "PyG 3 Años",
+   "celda": "D48"
+  },
+  "margen_neto_a1": {
+   "valor": 0.056265703114090224,
+   "fmt": "pct1",
+   "texto": "5.6%",
+   "hoja_es": "PyG 3 Años",
+   "celda": "B56"
+  },
+  "inversion_total": {
+   "valor": 256871.30000000002,
+   "fmt": "usd",
+   "texto": "$256,871",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B31"
+  },
+  "capex": {
+   "valor": 204100.0,
+   "fmt": "usd",
+   "texto": "$204,100",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B32"
+  },
+  "fondo_maniobra": {
+   "valor": 52771.30000000001,
+   "fmt": "usd",
+   "texto": "$52,771",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B30"
+  },
+  "necesidad_caja": {
+   "valor": 256871.30000000002,
+   "fmt": "usd",
+   "texto": "$256,871",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B34"
+  },
+  "fondos_propios": {
+   "valor": 95000.0,
+   "fmt": "usd",
+   "texto": "$95,000",
+   "hoja_es": "Financiación",
+   "celda": "B6"
+  },
+  "prestamo": {
+   "valor": 162000.0,
+   "fmt": "usd",
+   "texto": "$162,000",
+   "hoja_es": "Financiación",
+   "celda": "B20"
+  },
+  "tipo_prestamo": {
+   "valor": 0.1,
+   "fmt": "pct1",
+   "texto": "10.0%",
+   "hoja_es": "Financiación",
+   "celda": "B21"
+  },
+  "plazo_prestamo": {
+   "valor": 10.0,
+   "fmt": "int",
+   "texto": "10",
+   "hoja_es": "Financiación",
+   "celda": "B22"
+  },
+  "cuota_anual": {
+   "valor": 26364.753970966867,
+   "fmt": "usd",
+   "texto": "$26,365",
+   "hoja_es": "Financiación",
+   "celda": "B24"
+  },
+  "dscr_a1": {
+   "valor": 2.25877598857418,
+   "fmt": "x2",
+   "texto": "2.26×",
+   "hoja_es": "Financiación",
+   "celda": "B51"
+  },
+  "dscr_min": {
+   "valor": 2.25877598857418,
+   "fmt": "x2",
+   "texto": "2.26×",
+   "hoja_es": "Financiación",
+   "celda": "B54"
+  },
+  "dscr_limite": {
+   "valor": 1.15,
+   "fmt": "x2",
+   "texto": "1.15×",
+   "hoja_es": "0. Supuestos",
+   "celda": "B65"
+  },
+  "dscr_objetivo": {
+   "valor": 1.25,
+   "fmt": "x2",
+   "texto": "1.25×",
+   "hoja_es": "0. Supuestos",
+   "celda": "B66"
+  },
+  "equilibrio_clientes_dia": {
+   "valor": 146.84977318900314,
+   "fmt": "ceil",
+   "texto": "147",
+   "hoja_es": "Punto Equilibrio",
+   "celda": "B15"
+  },
+  "equilibrio_ventas": {
+   "valor": 341425.72266443237,
+   "fmt": "usd",
+   "texto": "$341,426",
+   "hoja_es": "Punto Equilibrio",
+   "celda": "B16"
+  },
+  "equilibrio_caja_clientes_dia": {
+   "valor": 139.5326547289546,
+   "fmt": "ceil",
+   "texto": "140",
+   "hoja_es": "Punto Equilibrio",
+   "celda": "B20"
+  },
+  "equilibrio_caja_ventas": {
+   "valor": 324413.42224481946,
+   "fmt": "usd",
+   "texto": "$324,413",
+   "hoja_es": "Punto Equilibrio",
+   "celda": "B21"
+  },
+  "holgura_caja_pct": {
+   "valor": 0.1825188900800052,
+   "fmt": "pct0",
+   "texto": "18%",
+   "hoja_es": "Punto Equilibrio",
+   "celda": "B24"
+  },
+  "saldo_minimo": {
+   "valor": 46059.94133575277,
+   "fmt": "usd",
+   "texto": "$46,060",
+   "hoja_es": "Tesorería 12 meses",
+   "celda": "B23"
+  },
+  "mes_saldo_minimo": {
+   "valor": 1.0,
+   "fmt": "int",
+   "texto": "1",
+   "hoja_es": "Tesorería 12 meses",
+   "celda": "B24"
+  },
+  "payback": {
+   "valor": "Over 3 years",
+   "fmt": "anos1",
+   "texto": "more than 3 years",
+   "hoja_es": "Tesorería 12 meses",
+   "celda": "B31"
+  },
+  "payback_capex": {
+   "valor": "Over 3 years",
+   "fmt": "anos1",
+   "texto": "more than 3 years",
+   "hoja_es": "Tesorería 12 meses",
+   "celda": "B32"
+  },
+  "plantilla_puestos": {
+   "valor": 6.0,
+   "fmt": "int",
+   "texto": "6",
+   "hoja_es": "Personal",
+   "celda": "B11"
+  },
+  "plantilla_jornadas": {
+   "valor": 3.05,
+   "fmt": "dec2",
+   "texto": "3.05",
+   "hoja_es": "Personal",
+   "celda": "C11"
+  },
+  "cobertura_horas": {
+   "valor": 1.0525131282820706,
+   "fmt": "pct0",
+   "texto": "105%",
+   "hoja_es": "Personal",
+   "celda": "B26"
+  },
+  "horas_semana": {
+   "valor": 40,
+   "fmt": "int",
+   "texto": "40",
+   "hoja_es": "Personal",
+   "celda": "B18"
+  },
+  "pesimista_clientes": {
+   "valor": 140,
+   "fmt": "int",
+   "texto": "140",
+   "hoja_es": "Escenarios",
+   "celda": "B5"
+  },
+  "optimista_clientes": {
+   "valor": 190,
+   "fmt": "int",
+   "texto": "190",
+   "hoja_es": "Escenarios",
+   "celda": "D5"
+  },
+  "pesimista_ventas": {
+   "valor": 294000.0,
+   "fmt": "usd",
+   "texto": "$294,000",
+   "hoja_es": "Escenarios",
+   "celda": "B8"
+  },
+  "optimista_ventas": {
+   "valor": 486400.0,
+   "fmt": "usd",
+   "texto": "$486,400",
+   "hoja_es": "Escenarios",
+   "celda": "D8"
+  },
+  "pesimista_resultado": {
+   "valor": -32344.342857142852,
+   "fmt": "usd",
+   "texto": "-$32,344",
+   "hoja_es": "Escenarios",
+   "celda": "B18"
+  },
+  "optimista_resultado": {
+   "valor": 98872.4571428572,
+   "fmt": "usd",
+   "texto": "$98,872",
+   "hoja_es": "Escenarios",
+   "celda": "D18"
+  },
+  "pesimista_ticket": {
+   "valor": 7,
+   "fmt": "usd2",
+   "texto": "$7.00",
+   "hoja_es": "Escenarios",
+   "celda": "B6"
+  },
+  "optimista_ticket": {
+   "valor": 8,
+   "fmt": "usd2",
+   "texto": "$8.00",
+   "hoja_es": "Escenarios",
+   "celda": "D6"
+  },
+  "pesimista_dias": {
+   "valor": 300,
+   "fmt": "int",
+   "texto": "300",
+   "hoja_es": "Escenarios",
+   "celda": "B7"
+  },
+  "optimista_dias": {
+   "valor": 320,
+   "fmt": "int",
+   "texto": "320",
+   "hoja_es": "Escenarios",
+   "celda": "D7"
+  },
+  "pesimista_caja": {
+   "valor": 32029.346029033146,
+   "fmt": "usd",
+   "texto": "$32,029",
+   "hoja_es": "Escenarios",
+   "celda": "B25"
+  },
+  "inv_proyecto": {
+   "valor": 9000,
+   "fmt": "usd",
+   "texto": "$9,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B7"
+  },
+  "inv_obra": {
+   "valor": 48000,
+   "fmt": "usd",
+   "texto": "$48,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B8"
+  },
+  "inv_electrica": {
+   "valor": 9000,
+   "fmt": "usd",
+   "texto": "$9,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B9"
+  },
+  "inv_fontaneria": {
+   "valor": 10000,
+   "fmt": "usd",
+   "texto": "$10,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B10"
+  },
+  "inv_rotulo": {
+   "valor": 5000,
+   "fmt": "usd",
+   "texto": "$5,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B11"
+  },
+  "inv_base_frio": {
+   "valor": 4500,
+   "fmt": "usd",
+   "texto": "$4,500",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B12"
+  },
+  "inv_batch_freezer": {
+   "valor": 30000,
+   "fmt": "usd",
+   "texto": "$30,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B13"
+  },
+  "inv_hardening": {
+   "valor": 9000,
+   "fmt": "usd",
+   "texto": "$9,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B14"
+  },
+  "inv_congeladores": {
+   "valor": 7000,
+   "fmt": "usd",
+   "texto": "$7,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B15"
+  },
+  "inv_utillaje": {
+   "valor": 8500,
+   "fmt": "usd",
+   "texto": "$8,500",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B16"
+  },
+  "inv_dipping": {
+   "valor": 11000,
+   "fmt": "usd",
+   "texto": "$11,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B17"
+  },
+  "inv_mostrador": {
+   "valor": 9000,
+   "fmt": "usd",
+   "texto": "$9,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B18"
+  },
+  "inv_mobiliario": {
+   "valor": 7000,
+   "fmt": "usd",
+   "texto": "$7,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B19"
+  },
+  "inv_tpv": {
+   "valor": 2500,
+   "fmt": "usd",
+   "texto": "$2,500",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B20"
+  },
+  "inv_menaje": {
+   "valor": 1500,
+   "fmt": "usd",
+   "texto": "$1,500",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B21"
+  },
+  "inv_formacion": {
+   "valor": 2500,
+   "fmt": "usd",
+   "texto": "$2,500",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B22"
+  },
+  "inv_lanzamiento": {
+   "valor": 5000,
+   "fmt": "usd",
+   "texto": "$5,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B23"
+  },
+  "inv_constitucion": {
+   "valor": 2500,
+   "fmt": "usd",
+   "texto": "$2,500",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B24"
+  },
+  "inv_stock": {
+   "valor": 5000,
+   "fmt": "usd",
+   "texto": "$5,000",
+   "hoja_es": "Inversión Inicial",
+   "celda": "B25"
+  },
+  "aforo": {
+   "valor": 20,
+   "fmt": "int",
+   "texto": "20",
+   "hoja_es": "0. Supuestos",
+   "celda": "B51"
+  },
+  "comida_pct": {
+   "valor": 0.9,
+   "fmt": "pct0",
+   "texto": "90%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B11"
+  },
+  "bebida_pct": {
+   "valor": 0.09999999999999998,
+   "fmt": "pct0",
+   "texto": "10%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B12"
+  },
+  "delivery_pct": {
+   "valor": 0.04,
+   "fmt": "pct0",
+   "texto": "4%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B16"
+  },
+  "comision_pct": {
+   "valor": 0.25,
+   "fmt": "pct0",
+   "texto": "25%",
+   "hoja_es": "0. Supuestos",
+   "celda": "B17"
+  },
+  "produccion_horas": {
+   "valor": 2,
+   "fmt": "dec1",
+   "texto": "2.0",
+   "hoja_es": "Personal",
+   "celda": "B22"
+  },
+  "meses_alquiler_previo": {
+   "valor": 2,
+   "fmt": "int",
+   "texto": "2",
+   "hoja_es": "0. Supuestos",
+   "celda": "B54"
+  },
+  "ventas_dia": {
+   "valor": 1237.5,
+   "fmt": "usd",
+   "texto": "$1,238",
+   "deriv": true
+  },
+  "ebitda_a1": {
+   "valor": 66747.05,
+   "fmt": "usd",
+   "texto": "$66,747",
+   "deriv": true
+  },
+  "ebitda_pct_a1": {
+   "valor": 0.17399035516454872,
+   "fmt": "pct1",
+   "texto": "17.4%",
+   "deriv": true
+  },
+  "aportacion_pct": {
+   "valor": 0.36983501076219877,
+   "fmt": "pct0",
+   "texto": "37%",
+   "deriv": true
+  },
+  "sabores": {
+   "valor": 18,
+   "fmt": "int",
+   "texto": "18",
+   "deriv": true
+  },
+  "fijos_anual": {
+   "valor": 16600.0,
+   "fmt": "usd",
+   "texto": "$16,600",
+   "deriv": true
+  },
+  "prime_cost_pct": {
+   "valor": 0.5571419354838709,
+   "fmt": "pct1",
+   "texto": "55.7%",
+   "deriv": true
+  },
+  "costes_variables_pct": {
+   "valor": 0.31799999999999995,
+   "fmt": "pct1",
+   "texto": "31.8%",
+   "deriv": true
+  },
+  "otros_variables_pct": {
+   "valor": 0.09499999999999995,
+   "fmt": "pct1",
+   "texto": "9.5%",
+   "deriv": true
+  },
+  "pesimista_perdida": {
+   "valor": 32344.342857142852,
+   "fmt": "usd",
+   "texto": "$32,344",
+   "deriv": true
+  }
+ }
+}

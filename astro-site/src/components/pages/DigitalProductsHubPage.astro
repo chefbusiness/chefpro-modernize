@@ -69,6 +69,68 @@ const products = [
   // Kit pasa a la 2 y el resto de vivos bajan un puesto. Sustituye a la tarjeta vieja «Business Plan: Neapolitan Pizzeria»,
   // que describía el kit español (guía de equivalencias para Latinoamérica, plan en España). Imagen: el hero ES de la
   // pizzería (sin texto). «Mobile Wood-Fired Pizza» sigue en «coming soon».
+  // Hotel Checklists Kit Pro (27-oct-2026, décimo hermano vertical del Restaurant Checklists Kit Pro): el más nuevo → 1;
+  // el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English» («Recurring Tasks:
+  // Full Hotel», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía «46 operational
+  // checklists across 15 templates for 11 departments»; la EN trae 19 ficheros, 74 hojas y 636 tareas). Imagen: el hero de
+  // la landing EN (sin texto en español).
+  // Wedding Venue Business Plan Kit (27-oct-2026, novena tanda de planes EN): el más nuevo → 1; el Ice Cream Shop Business Plan Kit
+  // y el resto de vivos bajan un puesto. Sustituye a la tarjeta vieja «Business Plan: Event & Wedding Venue» (que apuntaba al ES y
+  // describía el kit español: catering exclusivo en concesión, suelo rústico, guía de equivalencias para Latinoamérica); una sola
+  // tarjeta por producto. Imagen: el hero ES de la finca (mesa imperial bajo olivos, sin texto).
+  {
+    name: 'Wedding Venue Business Plan Kit',
+    slug: '/plan-negocio-finca-eventos-bodas',
+    description: 'Wedding and event venue business plan template for a leased barn or estate with an exclusive caterer: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in events and a 12-month cash flow, a pricing calculator, venue rental agreement templates and an 84-task startup checklist.',
+    features: [
+      '10-section business plan in Word',
+      '9-sheet Excel financial projections with a 12-month cash flow starting in March',
+      'Pricing & quote calculator by season and day, plus rental agreement templates',
+      '84 tasks: zoning, permits, build-out, caterer, bookings and your first season',
+    ],
+    iconName: 'PartyPopper',
+    image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'catering', 'events', 'business-plan'],
+  },
+  // Ice Cream Shop Business Plan Kit (27-oct-2026, décima tanda de planes EN): el más nuevo → 1; el Hotel Checklists Kit Pro y el
+  // resto de vivos bajan un puesto. Sustituye a la tarjeta vieja «Business Plan: Artisan Gelato Shop» (que apuntaba al ES y
+  // describía el kit español: gelato, guía de equivalencias para Latinoamérica); una sola tarjeta por producto. Imagen: el hero
+  // ES de la heladería (scooper y dipping cabinet, sin texto).
+  {
+    name: 'Ice Cream Shop Business Plan Kit',
+    slug: '/plan-negocio-heladeria',
+    description: 'Ice cream shop business plan template for a neighborhood shop that makes its own ice cream: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in customers per day and a 12-month cash flow with summer seasonality, and an 80-task startup checklist.',
+    features: [
+      '10-section business plan in Word',
+      '9-sheet Excel financial projections with a 12-month cash flow starting in March',
+      'Buy a base or make your own mix: the dairy license question, task by task',
+      '80 tasks: permits, production and health, staff, Opening Day and the winter plan',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'ice-cream', 'production-kitchen', 'business-plan'],
+  },
+  {
+    name: 'Hotel Checklists Kit Pro',
+    slug: '/kit-tareas-hotel',
+    description: '17 templates + 2 bonuses (19 Excel files) with 636 hotel tasks already written: F&B outlets, front desk and night audit, housekeeping, pool, maintenance, back office, spa, opening and closing rounds and cash drawer count. Print it, delegate it, sign it off.',
+    features: [
+      'F&B: buffets, restaurant, bars, in-room dining and banquets',
+      'Front desk, night audit and concierge',
+      'Housekeeping: checkout, stayover, turndown, deep cleaning, linen',
+      'Pool, patio, maintenance, back office and spa',
+      'Daily opening and closing rounds and cash drawer count',
+    ],
+    iconName: 'Building',
+    image: '/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'hotel'],
+  },
   {
     name: 'Pizza Shop Business Plan Kit',
     slug: '/plan-negocio-pizzeria',
@@ -624,38 +686,6 @@ const products = [
     tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
   {
-    name: 'Business Plan: Event & Wedding Venue',
-    slug: '/plan-negocio-finca-eventos-bodas',
-    description: 'Complete business plan to launch a wedding and event venue on a leased estate, with an exclusive caterer on concession who pays you a fee: a 10-section Word plan, a 9-sheet Excel financial plan built around the wedding season, an 84-task opening checklist (including rural-land licensing), an event pricing calculator, contract templates and the Equivalents Guide for Latin America.',
-    features: [
-      '10-section business plan in Word',
-      'Excel financial plan built around the wedding season',
-      'Opening checklist: 84 tasks, including rural-land licensing',
-      'Pricing calculator, contract templates and Equivalents Guide for Latin America',
-    ],
-    iconName: 'PartyPopper',
-    image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
-    tags: ['excel', 'templates', 'costs', 'catering', 'events', 'business-plan'],
-  },
-  {
-    name: 'Business Plan: Artisan Gelato Shop',
-    slug: '/plan-negocio-heladeria',
-    description: 'Complete business plan to open an artisan gelato shop: a 10-section Word plan, Excel financial projections with live formulas and a phased opening checklist, plus the Equivalents Guide for Latin America.',
-    features: [
-      '10-section business plan in Word',
-      'Excel financial plan with gelato seasonality',
-      'Opening checklist: 80 tasks in 6 phases',
-      'Bonus: Equivalents Guide for Latin America',
-    ],
-    iconName: 'IceCream',
-    image: '/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
-    tags: ['excel', 'templates', 'costs', 'ice-cream', 'production-kitchen', 'business-plan'],
-  },
-  {
     name: 'How to Open a Churro & Hot Chocolate Shop',
     slug: '/guia-churreria-chocolateria',
     description: 'Premises, production kitchen, fryer and numbers: the complete opening dossier for a churro and hot chocolate shop, with the Excel files that do your math.',
@@ -880,22 +910,6 @@ const products = [
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
   },
 
-  {
-    name: 'Recurring Tasks: Full Hotel',
-    slug: '/kit-tareas-hotel',
-    description: '46 operational checklists across 15 templates for 11 departments: F&B, front desk, housekeeping, pool, terrace, maintenance, administration, and spa.',
-    features: [
-      'F&B: 6 complete outlets',
-      'Front desk, housekeeping, spa',
-      'Pool, terrace, maintenance',
-      'Administration and revenue management',
-    ],
-    iconName: 'Building',
-    image: '/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'hotel'],
-  },
   {
     name: 'Recurring Tasks: Creative / Chef-Driven Restaurant',
     slug: '/kit-tareas-restaurante-creativo',

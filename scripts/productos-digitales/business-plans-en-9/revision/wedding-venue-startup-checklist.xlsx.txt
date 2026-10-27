@@ -1,0 +1,518 @@
+# wedding-venue-startup-checklist.xlsx
+docProps: title='Wedding Venue Startup Checklist (84 Tasks) · Wedding Venue Business Plan Kit' · subject='Wedding Venue Business Plan Kit · v2.2' · creator='AI Chef Pro'
+
+## Phase 1 - Business Setup
+A1: WEDDING VENUE STARTUP CHECKLIST
+A2: PHASE 1: BUSINESS SETUP & TAXES (18-12 months before opening)
+A4: OK
+B4: TASK
+C4: RESPONSIBLE
+D4: TIMING
+E4: NOTES
+A5: ☐
+B5: Choose your legal structure: LLC vs S corp
+C5: CPA / bookkeeper
+D5: Month 1
+E5: The financial plan assumes an effective income tax rate of 25% (21% federal as a C corporation plus state). An LLC taxed as a pass-through pays through your personal return instead, and early losses carry forward as net operating losses. Compare the options with your CPA using the plan's numbers.
+A6: ☐
+B6: Form the LLC before you sign the lease
+C6: Attorney / CPA
+D6: Months 1-2
+E6: The lease, the zoning application and the permits all go in the LLC's name, so form it first. Ask your CPA how much capital to put in.
+A7: ☐
+B7: Get your EIN (IRS) and register the LLC with your state
+C7: CPA / bookkeeper
+D7: Month 2
+E7: The EIN is free from the IRS. The venue and your exclusive caterer are separate businesses, each with its own EIN. Register the LLC with your Secretary of State and keep the annual report date on your calendar.
+A8: ☐
+B8: State payroll and unemployment (UI) accounts
+C8: CPA / bookkeeper
+D8: Month 2
+E8: Open your state withholding and unemployment insurance accounts before your first hire. Decide with your CPA how you will pay yourself (owner's draw vs salary), based on your tax election.
+A9: ☐
+B9: Business license and sales tax permit
+C9: Owner
+D9: Month 1
+E9: Ask your state whether your venue rental fee is taxable and, if it is, register for a sales tax permit. Check the city and county business license too.
+A10: ☐
+B10: Business bank account
+C10: Owner
+D10: Month 2
+E10: Keep it separate from your personal accounts: couples' retainers, the caterer commission and the rent all run through it.
+A11: ☐
+B11: Bookkeeping and venue management software
+C11: Owner
+D11: Months 2-4
+E11: Set up payroll for your seasonal W-2 staff. Give a receipt or invoice for every payment, retainers included. Choose venue management software (Tripleseat, Perfect Venue, HoneyBook) that tracks retainers, scheduled payments and the caterer commission.
+A12: ☐
+B12: Sales tax returns (quarterly filer in the plan)
+C12: CPA / bookkeeper
+D12: Every quarter
+E12: The plan uses one example sales tax rate on the venue rental fee and services, and 0% on the caterer commission. The caterer bills the menu and the bar to the couple and handles its own tax. Ask your state about your filing calendar (monthly, quarterly or annual) and whether the site fee is taxable.
+A13: ☐
+B13: Estimated taxes and owner's draw plan
+C13: CPA / bookkeeper
+D13: Before the first quarterly payment
+E13: Set up quarterly estimated tax payments with your CPA and agree how you will pay yourself (draw vs salary), depending on whether the LLC is taxed as a pass-through or as a corporation.
+A14: ☐
+B14: Lender package: the plan plus two SBA 7(a) quotes
+C14: Owner
+D14: Months 2-4
+E14: Bring the full plan with the month-by-month cash flow. The lease, counting renewal options, should run at least as long as the loan: SBA lenders typically require this; confirm with your lender. You don't own the property: ask what collateral they accept.
+A15: ☐
+B15: USPTO trademark search for the venue name
+C15: Owner
+D15: Months 2-4
+E15: Search the name before you print anything: check the federal database for event venue and wedding services, your state's business name records and the domain name.
+A16: ☐
+B16: Website privacy policy and terms
+C16: Owner
+D16: Before launching the website
+E16: Privacy policy, terms of service and the consent language for your quote forms. Get written permission to use photos of couples and events.
+B18: Tasks completed:
+C18 = 0
+D18: of
+E18 = 12
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16: list "✓,☐,N/A" · Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.
+
+## Phase 2 - Zoning & Permits
+A1: WEDDING VENUE STARTUP CHECKLIST
+A2: PHASE 2: ZONING & PERMITS (18-6 months before opening)
+A4: OK
+B4: TASK
+C4: RESPONSIBLE
+D4: TIMING
+E4: NOTES
+A5: ☐
+B5: Zoning check in writing before signing anything
+C5: Owner / Code consultant
+D5: Before signing anything
+E5: Ask the county planning office IN WRITING whether a wedding or event venue is allowed on that parcel and under which permit (conditional use permit or special use permit). A verbal answer is not a permit. Ask about the zoning district, any overlays and whether agritourism rules apply.
+A6: ☐
+B6: Choose a property with an existing barn or building, 30-60 minutes from the city
+C6: Owner
+D6: Months 1-4
+E6: A hall, restrooms and a kitchen area that already exist save build-out cost and permitting time. The plan targets a property 30-60 minutes from a mid-size or larger city. Confirm what the zoning allows before falling in love with a barn.
+A7: ☐
+B7: Check water, electricity and septic
+C7: Owner / Code consultant
+D7: Before signing
+E7: Have an engineer check the available electrical capacity, whether the water comes from a public system or a well (if a well will serve your guests, ask your state drinking water program), and whether the septic system can handle your guest count.
+A8: ☐
+B8: Negotiate the lease: long term, counting renewal options
+C8: Owner / Attorney
+D8: Months 3-5
+E8: The build-out goes on land you don't own, so the term, counting renewal options that only you can exercise, should be at least as long as your loan: SBA lenders typically require this; confirm with your lender. Aim for a term long enough to recover your investment.
+A9: ☐
+B9: Lease contingent on CUP approval (and the certificate of occupancy)
+C9: Attorney
+D9: At signing
+E9: The lease should not bind you if the conditional use permit or the certificate of occupancy is denied. Negotiate a rent-free or reduced-rent period while you build and get permits.
+A10: ☐
+B10: Purchase option or right of first refusal, landlord consent and TI allowance
+C10: Attorney
+D10: At signing
+E10: Ask for a purchase option or a right of first refusal if the landlord sells. Get the landlord's written consent to the build-out and to using the lease as collateral for your loan, and negotiate a tenant improvement (TI) allowance. If the property is family-owned, the rent should still be at market: check with your CPA.
+A11: ☐
+B11: Apply for the conditional / special use permit (CUP / SUP)
+C11: Architect / Attorney
+D11: Months 5-12
+E11: Expect a public hearing. The county may attach conditions such as a cap on events, hours, traffic and noise. Timelines vary by county: ask the planning office. Your lease should depend on the outcome.
+A12: ☐
+B12: Change of occupancy to assembly (Group A-2): building permit to certificate of occupancy
+C12: Architect / Attorney
+D12: Months 5-12
+E12: Turning a barn into a place of assembly usually means a building permit and a certificate of occupancy for assembly use (Group A-2). Ask the building official what the change requires for your building, and don't assume an older building is exempt.
+A13: ☐
+B13: Ask the building official and the fire marshal in writing
+C13: Architect / Attorney
+D13: Months 5-12
+E13: Ask about occupant load, sprinklers, exits, restrooms and tents, and keep the answers. They set the maximum guest count you can book and drive the cost of the build-out. Rules differ by state, county and city.
+A14: ☐
+B14: No firm dates without the CUP and the certificate of occupancy
+C14: Owner
+D14: Until you hold the permits
+E14: If the permit is denied or delayed, you will have to refund what you collected. Before the permits arrive, accept only contingent holds with a full refund if they don't, agreed in writing (clause 2A of the contract template, Contingent booking before permits). Once you hold the permits, they become firm bookings.
+A15: ☐
+B15: ADA Title III: accessible routes, restrooms and parking
+C15: Architect / Attorney
+D15: Months 8-14
+E15: A venue you rent to the public is a place of public accommodation. Put accessible routes, restrooms and parking on the plans from the first drawing (2010 ADA Standards) and confirm the details with your architect.
+A16: ☐
+B16: Occupant load, exits and emergency plan
+C16: Architect / Attorney
+D16: With the plans
+E16: The fire marshal sets the maximum occupancy. Post the occupant load, keep exits clear and marked, install emergency lighting and write an evacuation plan. Tents have their own fire-code rules, so ask the fire marshal. Never book more guests than your certificate of occupancy allows. Your county or city may ask for more.
+A17: ☐
+B17: Noise: county ordinance, decibel limit and sound meter
+C17: Architect / Attorney
+D17: With the plans
+E17: Many county ordinances limit amplified sound, usually with a lower limit at night. Ask the county for the limit that applies to your property. A sound meter with a log is your proof if a neighbor complains.
+A18: ☐
+B18: Outdoor music and curfew under the CUP
+C18: Owner
+D18: With the permit
+E18: The CUP conditions and the county ordinance set the curfew. Ask, and write it into your contract with the couple. If you allow music, make sure ASCAP, BMI and SESAC licensing is covered.
+A19: ☐
+B19: Insurance: general liability, host liquor liability, property and umbrella
+C19: Insurance agent
+D19: Before opening
+E19: Get quotes from an agent who insures venues. Lenders, landlords and your caterer will ask for certificates of insurance (COI). Add coverage for damage to improvements and for loss of income. Costs vary by state and guest count: get local quotes.
+A20: ☐
+B20: Well water: testing and permit
+C20: Owner / Certified lab
+D20: Before the first event
+E20: If a well serves your guests, it may count as a public water system. Ask your state drinking water program about testing and permitting before the first event, and don't assume private-well rules apply.
+B22: Tasks completed:
+C22 = 0
+D22: of
+E22 = 16
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A20: list "✓,☐,N/A" · Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.
+
+## Phase 3 - Build-Out & Equipment
+A1: WEDDING VENUE STARTUP CHECKLIST
+A2: PHASE 3: BUILD-OUT & EQUIPMENT (12-3 months before opening)
+A4: OK
+B4: TASK
+C4: RESPONSIBLE
+D4: TIMING
+E4: NOTES
+A5: ☐
+B5: Three bids based on the architect's plans
+C5: Owner / Code consultant
+D5: Before construction
+E5: Compare them line by line with the "Startup Costs" sheet of the financial plan.
+A6: ☐
+B6: Building permit before the work starts
+C6: Architect / Attorney
+D6: Before starting
+E6: Ask your county or city building department which permits the work needs, and don't start without them.
+A7: ☐
+B7: Barn renovation: floors, doors, insulation, finishes
+C7: General contractor
+D7: Months 1-3 of construction
+E7: Floors, doors and windows, insulation and finishes on the existing building.
+A8: ☐
+B8: Fire sprinkler system (city water; a tank and fire pump cost more)
+C8: General contractor
+D8: Months 1-3 of construction
+E8: Ask the fire marshal in writing whether you need sprinklers and an alarm. Cost depends on your water supply and local code: get local quotes.
+A9: ☐
+B9: ADA-compliant restrooms (and septic expansion if needed)
+C9: General contractor
+D9: Months 1-3 of construction
+E9: Accessible route to the hall, the tent and the restrooms: check it with your architect. Include any septic expansion here.
+A10: ☐
+B10: Electrical service, exit and emergency lighting, with inspection
+C10: Licensed contractor
+D10: Month 3 of construction
+E10: Panel, exterior and emergency lighting, and power for the hall, the tent and the caterer's kitchen.
+A11: ☐
+B11: Standby generator
+C11: Licensed contractor
+D11: Month 3 of construction
+E11: Size it for the hall and the prep & warming kitchen. Service it before each season.
+A12: ☐
+B12: HVAC for the hall
+C12: Licensed contractor
+D12: Month 3 of construction
+E12: Heating and cooling: the hall is used all year, including August.
+A13: ☐
+B13: Caterer's prep & warming kitchen with water and drain
+C13: General contractor / Caterer
+D13: Month 3 of construction
+E13: Design it with the exclusive caterer you plan to sign: walk-in cooler, sinks, stainless steel tables and a plating area. This is a support kitchen, not a production kitchen. Ask your county whether it needs a health plan review.
+A14: ☐
+B14: Pergola and tent platform
+C14: Supplier
+D14: Before the season
+E14: This is your rain plan. Check the local fire code for tent permits and ask the manufacturer for the installation and wind-load documentation.
+A15: ☐
+B15: 200 chairs, tables, base linens and bridal suite
+C15: Owner
+D15: Month 3 of construction
+E15: Tables, 200 chairs and base linens. The couples hire any special decor. Furnish the bridal suite and the groom's lounge.
+A16: ☐
+B16: Sound system, decibel meter & lighting
+C16: Installer
+D16: Month 3 of construction
+E16: A meter that logs its readings is your evidence if a neighbor files a noise complaint.
+A17: ☐
+B17: Gravel parking, driveway, signage and lighting (ADA spaces)
+C17: General contractor
+D17: Months 2-3 of construction
+E17: Plan about one parking space for every 2.5-3 guests (Kit estimate), a driveway that holds up in the rain, lighting and accessible spaces.
+A18: ☐
+B18: Landscaping, ceremony site and irrigation
+C18: Landscaper
+D18: Before the season
+E18: Plant early: the garden in your photos takes a season to look good.
+A19: ☐
+B19: Final inspections and certificate of occupancy
+C19: Architect / Licensed contractor
+D19: When construction ends
+E19: Fire marshal and building inspections, extinguishers, exit signs and emergency lighting, and the certificate of occupancy that lets you open.
+B21: Tasks completed:
+C21 = 0
+D21: of
+E21 = 15
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19: list "✓,☐,N/A" · Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.
+
+## Phase 4 - Staff & Caterer
+A1: WEDDING VENUE STARTUP CHECKLIST
+A2: PHASE 4: STAFF & EXCLUSIVE CATERER (6-2 months before opening)
+A4: OK
+B4: TASK
+C4: RESPONSIBLE
+D4: TIMING
+E4: NOTES
+A5: ☐
+B5: Hire the venue coordinator as a seasonal W-2 employee
+C5: CPA / bookkeeper
+D5: 3 months before
+E5: Offer letter, I-9 and W-4, with the season (March to November) in writing. From December to February the owner coordinates.
+A6: ☐
+B6: Event attendants as seasonal part-time W-2 staff
+C6: CPA / bookkeeper
+D6: 2 months before
+E6: Never as 1099 contractors who invoice you: if you direct their schedule and their work, they would be misclassified. For peaks, use a staffing agency.
+A7: ☐
+B7: Facilities & grounds, weekend sales and housekeeping
+C7: CPA / bookkeeper
+D7: 3 months before
+E7: Part-time positions with the hours in the plan. Pay at least the higher of the federal and state minimum wage (check your local one too), and confirm with your CPA.
+A8: ☐
+B8: Workers' comp and state new-hire reporting before each season
+C8: CPA / bookkeeper
+D8: Before each season
+E8: Confirm your state's rules for ending seasonal employment when the season closes.
+A9: ☐
+B9: Time records and overtime (FLSA)
+C9: Owner
+D9: From day one
+E9: Required for all staff, including events that run late. Overtime applies above 40 hours a week (FLSA).
+A10: ☐
+B10: Basic safety: OSHA, first aid, ladders and loads
+C10: Insurance carrier / Consultant
+D10: Before the first hire
+E10: A safety plan for setup, lifting, working at height, grounds work and driving on the property.
+A11: ☐
+B11: Shortlist one or two exclusive caterers and hold a tasting
+C11: Owner
+D11: 6 months before
+E11: A tasting with each, references from other venues, the health permit for their kitchen and their insurance. The exclusive caterer is half your venue's reputation.
+A12: ☐
+B12: Exclusive caterer agreement
+C12: Owner / Attorney
+D12: 5 months before
+E12: Exclusivity and term, hours, cleaning of the prep & warming kitchen, exit and penalties. Use the Exclusive Caterer Agreement template in this pack.
+A13: ☐
+B13: Monthly commission statement and audit right
+C13: Owner
+D13: In the agreement
+E13: The plan assumes a caterer commission of 10% of the F&B sales the caterer makes at your venue. It is an assumption, so negotiate it. Make each event's guest count verifiable.
+A14: ☐
+B14: Caterer's food safety plan and incident contact
+C14: Caterer
+D14: In the agreement
+E14: Ask for the caterer's food safety plan: temperature control, a Certified Food Protection Manager on site and food handler cards for staff. Get a contact for incidents and keep a copy on file.
+A15: ☐
+B15: Allergens for each menu in writing
+C15: Caterer
+D15: In the agreement
+E15: The caterer handles the 9 major food allergens: ask for the allergen information for each dish in writing and collect the guests' allergies with the final headcount, for every event.
+A16: ☐
+B16: Caterer's health permit, liquor license and COI
+C16: Caterer
+D16: Before the first event
+E16: The caterer holds the health permit for the kitchen it uses and its own liquor license or permit. The venue holds neither. Ask for a COI naming the venue as additional insured, including liquor liability.
+A17: ☐
+B17: Preferred vendor list
+C17: Owner
+D17: 4 months before
+E17: Photographers, music, florists and decor that know the venue, each with a COI. Decide whether to charge an outside vendors fee when couples bring their own, and put it in the contract.
+B19: Tasks completed:
+C19 = 0
+D19: of
+E19 = 13
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17: list "✓,☐,N/A" · Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.
+
+## Phase 5 - Brand & Bookings
+A1: WEDDING VENUE STARTUP CHECKLIST
+A2: PHASE 5: BRAND, PRICING & BOOKINGS (12-3 months before opening)
+A4: OK
+B4: TASK
+C4: RESPONSIBLE
+D4: TIMING
+E4: NOTES
+A5: ☐
+B5: Venue name, logo and brand identity
+C5: Owner
+D5: Month 1
+E5: Do it before the website and the wedding marketplaces: it's what couples will see when they compare.
+A6: ☐
+B6: Website with availability, gallery and venue tour booking
+C6: Owner
+D6: Month 2
+E6: Real photos of the venue set up, guest capacity, event types and how to book a tour.
+A7: ☐
+B7: Styled shoot: professional photos and video of the venue set up
+C7: Photographer
+D7: As soon as the build-out is done
+E7: Set a real wedding table with the caterer for the photos. Without photos there are no bookings.
+A8: ☐
+B8: Google Business Profile and first reviews
+C8: Owner
+D8: Month 2
+E8: With photos, tour hours and a reply to every review.
+A9: ☐
+B9: The Knot / WeddingWire storefronts: measure the cost per lead
+C9: Owner
+D9: Month 3
+E9: Start with the basic listing and move to a paid storefront if the numbers work. Note where every booked couple came from.
+A10: ☐
+B10: Social media with real weddings and events
+C10: Owner
+D10: From month 3
+E10: Instagram and Pinterest with real setups and written permission from the couples.
+A11: ☐
+B11: Bridal shows
+C11: Owner
+D11: Per your area's calendar
+E11: One or two a year, with the caterer. Bring the brochure and a way to book a venue tour on the spot.
+A12: ☐
+B12: Open house with the caterer
+C12: Owner / Caterer
+D12: Before the first season
+E12: The venue set up, the caterer serving a tasting and the vendors from your preferred vendor list.
+A13: ☐
+B13: Wedding planners and event agencies
+C13: Owner
+D13: Months 3-6
+E13: A guided tour, the brochure and a referral commission agreed in writing. The plan assumes one in ten sales comes through planners and venue marketplaces, at a 15% commission. Marketplaces such as Peerspace can add corporate and private events.
+A14: ☐
+B14: Corporate events and private celebrations
+C14: Owner
+D14: Months 3-6
+E14: These events fill the winter and the weekdays: corporate retreats, holiday parties, showers, milestone birthdays and rehearsal dinners.
+A15: ☐
+B15: Rates by season and day
+C15: Owner
+D15: Before the first tour
+E15: Use the pricing calculator in this pack: peak, shoulder and off-peak seasons, Saturday vs Friday, Sunday and weekdays, guest minimums and add-ons.
+A16: ☐
+B16: Pricing guide / wedding brochure and corporate deck
+C16: Owner
+D16: Month 3
+E16: What the venue rental includes, what the caterer provides, indicative rates, payment schedule and terms.
+A17: ☐
+B17: Venue rental agreement with a retainer and cancellation table, reviewed by an attorney
+C17: Owner / Attorney
+D17: Before the first retainer
+E17: Start from the template in this pack and have an attorney in your state review it. Keep the retainer and the cancellation table reasonable and mutual: if you keep what the couple paid when they cancel, agree the same terms for when you cancel.
+A18: ☐
+B18: Venue management software and date calendar
+C18: Owner
+D18: Month 2
+E18: One calendar for tours, blocked dates, retainers and pending payments.
+B20: Tasks completed:
+C20 = 0
+D20: of
+E20 = 14
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18: list "✓,☐,N/A" · Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.
+
+## Phase 6 - Season & Events
+A1: WEDDING VENUE STARTUP CHECKLIST
+A2: PHASE 6: SEASON & EVERY EVENT
+A4: OK
+B4: TASK
+C4: RESPONSIBLE
+D4: TIMING
+E4: NOTES
+A5: ☐
+B5: Venue tour and written quote
+C5: Owner / Venue coordinator
+D5: When the inquiry arrives
+E5: A quote from the calculator, valid for a set period, with what is included and what is not.
+A6: ☐
+B6: Signed contract, retainer and receipt
+C6: Owner
+D6: When the date is booked
+E6: Every payment, retainer included, gets a receipt or invoice, with sales tax if your state taxes the venue rental fee.
+A7: ☐
+B7: Signing at bridal shows or off-site
+C7: Owner
+D7: When the date is booked
+E7: If you sign couples at bridal shows or off-site, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway.
+A8: ☐
+B8: Governing law clause reviewed by your attorney
+C8: Attorney
+D8: In the agreement
+E8: The contract should say which state's law governs and where disputes are heard. Consumer rules differ by state, so have your attorney review the clause.
+A9: ☐
+B9: Tasting with the caterer
+C9: Caterer / Owner
+D9: 4-6 months before
+E9: The menu isn't final without it. The caterer charges for the tasting or credits it, according to its own contract.
+A10: ☐
+B10: Final headcount and allergies
+C10: Venue coordinator
+D10: 2 weeks before
+E10: In writing, with the allergies and intolerances of each table. It's the basis for the caterer commission and for the day-of staffing.
+A11: ☐
+B11: Rain plan (heat and fire alerts)
+C11: Venue coordinator
+D11: 7 days before
+E11: Tent ready and couples informed. Sparklers, fireworks and open flames can be banned during fire danger periods: check with your county and fire marshal.
+A12: ☐
+B12: Setup and occupancy control
+C12: Venue coordinator / Event attendants
+D12: Event day
+E12: Never more guests than your certificate of occupancy allows. Keep signage in place and exits clear.
+A13: ☐
+B13: Curfew and decibel limit
+C13: Venue coordinator
+D13: Event day
+E13: Outdoor music until the curfew in your permit. Move the last dance inside and watch the sound meter. Point the speakers away from neighbors.
+A14: ☐
+B14: Walkthrough before guests arrive: clear exits, restrooms and the COIs of the day's vendors
+C14: Venue coordinator
+D14: Event day
+E14: Check that exits are clear, restrooms are ready and every vendor working today has sent a COI.
+A15: ☐
+B15: Load-out, cleanup and damage check
+C15: Event attendants / Cleaning crew
+D15: End of the event and next day
+E15: Photograph the condition of the venue afterward. Any damage is deducted from the security deposit as the contract says, itemized, and the refundable balance is returned.
+A16: ☐
+B16: Monthly commission statement with the caterer
+C16: Owner
+D16: Monthly
+E16: Reconcile the signed headcount of each event with the caterer's statement, then invoice the commission.
+A17: ☐
+B17: Review, photos and thank-you
+C17: Owner
+D17: The following week
+E17: Ask the couple for a review and the photographer for photos, with permission to publish them.
+A18: ☐
+B18: Quarterly review: occupancy, commission and cash
+C18: Owner
+D18: Every quarter
+E18: Events held vs the plan, revenue per guest, commission collected and cash balance vs the "12-Month Cash Flow" sheet.
+B20: Tasks completed:
+C20 = 0
+D20: of
+E20 = 14
+DV A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18: list "✓,☐,N/A" · Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.
+
+## Instructions
+A1: INSTRUCTIONS FOR USE
+A3: This file is part of the Wedding Venue Business Plan Kit by AI Chef Pro.
+A4: The GREEN cells are the editable ones: change those and the rest of the workbook recalculates on its own.
+A5: OK column: choose ✓ (done), ☐ (pending) or N/A (not applicable). N/A items do not count toward the total.
+A6: Each tab's counter counts only the ✓; N/A items come out of the total.
+A8: To edit a cell that is not green: Review → Unprotect Sheet (there is no password).
+A9: More templates and kits in the catalog at aichef.pro/en/digital-products
+A10: Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es
+A11: Version 2.2 · October 2026 · aichef.pro/en/digital-products/wedding-venue-business-plan · info@aichef.pro
+A12: Planning tool, not financial, tax or legal advice. Requirements vary by state, county and city — check with your accountant and local authorities. This checklist is a starting point, not an exhaustive list.

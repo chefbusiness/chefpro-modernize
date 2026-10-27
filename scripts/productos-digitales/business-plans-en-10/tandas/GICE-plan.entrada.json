@@ -1,0 +1,2417 @@
+{
+ "tanda": "GICE-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-10/textos_en/GICE-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 131,
+ "n_palabras": 3057,
+ "pistas": {
+  "P01": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P02": "D191/§0: el volumen es «customers» (cada persona que compra); nunca «covers» ni «transactions»",
+  "P03": "D191: caso US = 165 customers/día (cada persona que compra: mostrador, patio y para llevar) × $7.50 por persona (sin sales tax) × 310 días; Mes 1 = marzo; sin alcohol; sin cifras del ES ni historia de versiones; media del año con la apertura incluida (la Tesorería reparte la estacionalidad): un sábado de julio puede pasar de 400 y un martes de enero quedarse en 40 (Kit estimate); compáralo con el paso de gente de tu calle",
+  "P04": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P05": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P06": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P07": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P08": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P09": "Glosario: tarrina para llevar → pint / quart (hand-packed) · envasar → pack-out",
+  "P10": "Glosario: tarta helada → ice cream cake",
+  "P11": "D200: sin crepes ni salida de humos (no cruzan); waffle cone irons; el invierno = ice cream cakes, holiday pies y pints, hot chocolate y catering",
+  "P12": "D191: caso US = 165 customers/día (cada persona que compra: mostrador, patio y para llevar) × $7.50 por persona (sin sales tax) × 310 días; Mes 1 = marzo; sin alcohol; sin cifras del ES ni historia de versiones; $7.50 por persona = 70 % doble en cup/cone ($7.00-8.25) + 15 % single/kid ($4.25-5.25) + 10 % pint/quart repartido entre 2 personas + 5 % sundae/café (carta Kit estimate research §5.1); es por PERSONA, no por tique de caja; el precio con impuesto lo calcula la fila de abajo",
+  "P13": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P14": "D194: refrigeration service contract con un técnico EPA 608 (el personal nunca recarga refrigerante)",
+  "P15": "D191: caso US = 165 customers/día (cada persona que compra: mostrador, patio y para llevar) × $7.50 por persona (sin sales tax) × 310 días; Mes 1 = marzo; sin alcohol; sin cifras del ES ni historia de versiones; 310 días = cierra 3 semanas en enero (mantenimiento y vacaciones), Thanksgiving, Christmas y los lunes de noviembre a febrero",
+  "P16": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P17": "D191: +8 % el año 2 (clientela que repite el segundo verano, más ice cream cakes por encargo y catering); sin cifras del ES",
+  "P18": "Glosario: vitrina → dipping cabinet · cubeta → tub (3 gal)",
+  "P19": "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day",
+  "P20": "D191: food cost 22 % de las ventas de helado = base comprada + aromas e inclusiones, conos, samples (tasting spoons) y merma (research §8); escandalla cada sabor cada temporada; sin impuestos de compra (en EE. UU. no hay crédito)",
+  "P21": "research §6.2: nombres de 21 CFR 135.110 («ice cream» ≥ 10 % milkfat y ≥ 4.5 lb/gal; «frozen custard» 1.4 % egg yolk solids); nada de RD 618",
+  "P22": "D191: beverage cost 25 % (espresso, hot chocolate, shakes, sodas, agua); sin alcohol",
+  "P23": "Glosario: cone (waffle cone, sugar cone, cake cone) · waffle cone iron",
+  "P24": "D191: disposables 4.5 % (cups, spoons, napkins, pint/quart containers, cake boxes)",
+  "P25": "D191: DoorDash / Uber Eats para pints y quarts",
+  "P26": "D191: 4 % de las ventas por DoorDash / Uber Eats: pints y quarts hand-packed en noches de verano (el pint viaja bien; el scoop no); el pickup directo no paga comisión",
+  "P27": "D191: 25 % = plan medio de DoorDash / Uber Eats (Basic 15 %, Premier 30 %, research PIZ §5.3); si repartes tú, pon 0; compruébalo en tu contrato",
+  "P28": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P29": "Unidades: sq ft con los m² entre paréntesis («1,000 sq ft (93 sq m)»)",
+  "P30": "D191: $2,500/mes = ~1,000 sq ft × ~$30/sq ft/año (Kit estimate; media US pedida $24.69 + NNN, TenantBase, resumen); calle comercial de barrio o junto a un parque o colegios, segunda generación de retail; el peso sobre ventas lo calcula el P&L",
+  "P31": "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)",
+  "P32": "D191: 2 meses de fianza (forma: Pizza EN C25, «commercial leases commonly ask for one to three… check it with your attorney»)",
+  "P33": "D199: «ask the utility about 3-phase service and amps before signing»",
+  "P34": "D191: $1,300/mes (cabinets 24 h, batch freezer, hardening, AC: unos 30 kW contratados); el verano dispara la luz",
+  "P35": "D191: sin el «300.000 €» del ES: general liability (límite habitual por siniestro, «ask your broker») + equipment breakdown con food spoilage, que es el riesgo de una heladería",
+  "P36": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P37": "D191: SBA 7(a) al 10 % a 10 años (Prime + margen según tramo: «ask two lenders»); sin ICO",
+  "P38": "D191: B34 = 0 (SBA 7(a) amortiza desde el inicio; forma: Pizza EN C34); el ES pone un año de carencia: aquí no",
+  "P39": "D191: 3 meses de costes fijos de caja: el colchón del primer invierno (noviembre-febrero)",
+  "P40": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P41": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P42": "D190: el caso COMPRA la base pasteurizada a una central con licencia: tras su pasteurización solo se añaden aromas e inclusiones (no raw eggs, no raw milk or cream; custard flavors need a custard base); pasteurizar tu mezcla = VARIANTE con licencia estatal (sin Excel)",
+  "P43": "Glosario: abatidor → hardening cabinet / blast freezer · abatir → harden",
+  "P44": "D199: «POS that reports sales tax» (sin Veri*factu)",
+  "P45": "D199: patio / sidewalk café permit (la tasa la pone tu ciudad)",
+  "P46": "D189: 20 plazas dentro; el patio de 5 mesas (en temporada) no cuenta en el aforo",
+  "P47": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P48": "D199: «zoning check before signing» · «building permit + certificate of occupancy» · business license + sales tax permit",
+  "P49": "D191: 2 días = media ponderada: el mostrador cobra al momento (tarjeta) y el catering a unos días; sin «restaurantes»",
+  "P50": "D198: con 12 pagas no hay extras: solo cuenta si tecleas más de 12; «July is Month 5, because Month 1 of the plan is March» (forma: Pizza EN C60)",
+  "P51": "research §9 (e): turrón helado → holiday pies and cakes · comuniones → birthdays and graduations",
+  "P52": "D198: con 12 pagas no hay extras: solo cuenta si tecleas más de 12; «December is Month 10, because Month 1 of the plan is March» (forma: Pizza EN C61)",
+  "P53": "D191: B68 vacío = state / local minimum wage anual (hourly × 2,080) si supera el federal $7.25; sin convenio (forma: Pizza EN C68)",
+  "P54": "D193: architect, MEP drawings, plan review (Food Code 8-201.11) y permit fees",
+  "P55": "D193: build-out de un local de segunda generación de retail, ~1,000 sq ft con sala de producción ~250 sq ft",
+  "P56": "D193: unos 30 kW; «ask the utility about 3-phase service and amps before signing»",
+  "P57": "D193: floor sinks, hand sinks, HVAC y ventilación para los condensadores",
+  "P58": "research §6.2: «made here in small batches»; «homemade» / «house-made» solo si es verdad (sin norma federal leída)",
+  "P59": "D193: nota de la partida del ejemplo US (rótulo fijado de la col. A en \"fijos_en\"); sin marcas ni normas españolas: solo rangos con fuente de research §4 o ninguno",
+  "P60": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P61": "D193: «a 20-qt Carpigiani lists at about $40,800; get two quotes; reconditioned units cost less» (WebstaurantStore, resumen); Emery Thompson / Taylor: solo presupuesto",
+  "P62": "Unidades: 0 °F (−18 °C) o menos en almacén; dipping cabinet 6-10 °F; frío ≤ 41 °F (5 °C): °F principal y °C entre paréntesis",
+  "P63": "D193: hardening cabinet / blast freezer ($10,000-30,000 según research §4, fuente débil: «Kit estimate»)",
+  "P64": "D193: storage freezers a 0 °F o menos",
+  "P65": "D193: dipping cabinets: 12 sabores desde ≈ $1,700-2,500 (económicos) hasta ≈ $12,300 gama alta (research §4, resumen); 18 sabores en verano, 10-12 en invierno; 6-10 °F según el fabricante",
+  "P66": "Glosario: dipper well (agua corriente, Food Code 3-304.12) · scoop · spade",
+  "P67": "D193: dipper wells de agua corriente (3-304.12), espresso, waffle cone irons y hot fudge warmers; SIN crepera ni salida de humos",
+  "P68": "D193: POS que reporta el sales tax (sin Veri*factu)",
+  "P69": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P70": "Glosario: copa → sundae · cup",
+  "P71": "D199: Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P72": "D199: 9 major allergens incl. sesame (UK 14); ninguna promesa «allergen-free» (scoops y dipper wells compartidos)",
+  "P73": "D193: curso de ice cream making (p. ej. un short course universitario): «Kit estimate»",
+  "P74": "D199: «LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P75": "D199: plan review (Food Code 8-201.11) con el layout del equipo + health permit + inspection; la decisión de licencia de D190 es una tarea propia («ask your state department of agriculture in writing»)",
+  "P76": "D193: LLC, legal, permits y food safety plan; no se amortiza (E = «No»)",
+  "P77": "D193: base, aromas, conos, cups y pint containers",
+  "P78": "D194: reparto del helado (Kit): scoops, cups/cones y sundaes en el local ≈ 65 %, pints y quarts to go ≈ 15 %, ice cream cakes y holiday pies ≈ 10 %, catering ≈ 5 %, delivery marketplaces 4 % (ver B16); un solo sales tax en el ejemplo; el pint envasado puede ir exento en algunos estados",
+  "P79": "D194: espresso, hot chocolate, shakes, sodas y agua; sin alcohol",
+  "P80": "D194: accounting & bookkeeping, sales tax returns y payroll (incl. los seasonal W-2)",
+  "P81": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P82": "D194: sidewalk café / patio permit de 5 mesas en temporada; la tasa la pone tu ciudad",
+  "P83": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P84": "D194: CFPM, food handler cards, alérgenos y OSHA basics (frío, resbalones, cortes); sin Ley 31/1995",
+  "P85": "D196: techo del food cost sobre ventas (25 %); la base comprada lo sube frente a hacer tu mezcla; Kit estimate",
+  "P86": "D196: techo del personal (35 %): la temporada obliga a reforzar el mostrador; Kit estimate",
+  "P87": "Glosario: mantecadora → batch freezer · mantecar → batch-freeze / churn · extracción → draw",
+  "P88": "D194: owner / ice cream maker & GM: recetas, sabores, batch freezing, compras y gestión; NO pasteuriza (base comprada); cobra por debajo de un gerente: «draw in addition from net profit»; sin «administrador / autónomo»",
+  "P89": "D194: shift lead todo el año (≈ $17/h): mostrador, caja, dipping cabinets y cierre",
+  "P90": "D194: seasonal part-time W-2 (≈ 40 h/semana de abril a septiembre = 0.5 FTE en el año), recontratado cada primavera; scoopers de 14-15 años solo con el horario FLSA (29 CFR 570.35)",
+  "P91": "D194: seasonal part-time W-2 de junio a agosto (tardes y noches del pico); nunca 1099 si pones tú el horario (misclassification)",
+  "P92": "D194: production assistant de mayo a septiembre (batch freezing, pack-out, limpieza del batch freezer y de los tubs); sin pasteurizador",
+  "P93": "D194: horas de la tienda por temporada (más en peak season, Memorial Day → Labor Day; menos de noviembre a febrero); 9.5 h de media",
+  "P94": "D194: 2.0 h al día antes de abrir: aromatizar, batch-freeze y endurecer (SIN pasteurizar ni madurar: la base viene pasteurizada); más en julio, menos en invierno",
+  "P95": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P96": "D199: la lista de la DV EN es «✓,☐,N/A»: ☐ = pendiente; el texto EN nunca dice «—»",
+  "P97": "SPEC §4.1 línea 4 (Bar/PIZ): sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; un solo tipo en el ejemplo (B39 = B40 = 8 %); el pint envasado y la tarta entera pueden ir exentos en algunos estados (D195)",
+  "P98": "D195: Mes 1 = MARZO (abre en temporada para que el primer verano pague el primer invierno)",
+  "P99": "El Word del kit usa las cifras de este Excel: si cambias una celda verde, manda el Excel",
+  "P100": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P101": "D196 fila → «Month 1 of the plan» · «March» · «Plan decision» · nota: abre en temporada; el primer verano paga el primer invierno",
+  "P102": "D196 fila (sustituye el consumo MAPA) → «Peak season» · «Memorial Day → Labor Day; July = National Ice Cream Month» · «Presidential Proclamation 5219 (1984); IDFA» · nota: julio es el mes de más producción; National Ice Cream Day = 3rd Sunday of July",
+  "P103": "D196 fila → «Ice cream cost (food cost)» · «about 22% of ice cream sales» · «Kit estimate» · nota: base comprada + aromas e inclusiones + conos + samples + merma; sustituye por las facturas de tu central y tu distribuidor",
+  "P104": "D196 fila → «Menu prices» · «single $5.25 · double $7.00 · pint $11 · quart $18 · 8-in cake $45» · «Kit estimate (Oct 2026), excl. sales tax» · nota: no hay una media US fiable del precio de la bola: usa los de tu zona",
+  "P105": "D196 fila (sustituye 430 g/l) → «\"Ice cream\" standard» · «≥ 10% milkfat and ≥ 4.5 lb per gallon; frozen custard: 1.4% egg yolk solids» · «21 CFR 135.110 (eCFR)» · nota: si lo llamas ice cream, aplica el estándar",
+  "P106": "D196 fila (sustituye −18 °C) → «Storage and serving temperature» · «0 °F (−18 °C) or colder in storage and hardening; dipping cabinet 6-10 °F» · «FDA Food Code + equipment manufacturer» · nota: cold holding de la base ≤ 41 °F",
+  "P107": "D196 fila (sustituye «huevo en la mezcla») → «Buy a base or make your own mix» · «buying pasteurized base: retail license in most states; own mix: state dairy / frozen dessert manufacturer license» · «Vermont Agency of Agriculture; Georgia Rules 40-2-8» · nota: «depends on your state: ask your state department of agriculture»; nunca «no license needed»",
+  "P108": "D196 fila → «Labor cost / sales» · «28-35%» · «Kit estimate» · nota: el dueño en nómina y la temporada lo llevan a la parte alta",
+  "P109": "D196 fila → «Rent / sales» · «≤ 10%» · «Kit estimate» · nota: el umbral del semáforo del P&L",
+  "P110": "D196 fila → «Production waste» · «5-8%» · «Kit estimate» · nota: sabores que no rotan, tubs abiertos, pruebas",
+  "P111": "D196 fila → «Electrical service» · «about 30 kW» · «Kit estimate» · nota: «ask the utility about 3-phase service and amps before signing»",
+  "P112": "D196 fila (sustituye «IVA del helado») → «Sales tax» · «scoops taxed as prepared food; packaged pints and whole cakes may be exempt as groceries» · «Texas Comptroller (example)» · nota: «check your state»; el libro usa un solo tipo de ejemplo (8 %)",
+  "P113": "D196 fila (sustituye «convenio») → «Minimum wage» · «federal $7.25/h + your state; teens 14-15: limited hours» · «U.S. Department of Labor (29 CFR 570.35)» · nota: este plan presupuesta ≥ $15/h; teclea el suelo de tu estado en \"0. Assumptions\"",
+  "P114": "D194: 12 pagas (sin extras); el personal se reparte en 12 meses pero los seasonal solo cobran en temporada: invierno más caro que la realidad (prudente)"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "heladería artesanal": "ice cream shop (nombre, H1, ficheros) · ice cream parlor · scoop shop · creamery (prosa)",
+  "mantecadora · mantecar": "batch freezer · batch-freeze / churn; extracción = draw (16-19 °F)",
+  "mezcla base": "ice cream base / mix · butterfat · «14% base»",
+  "pasteurizador (variante)": "batch pasteurizer · vat pasteurization (155 °F 30 min) · HTST",
+  "maduración": "aging the mix (36-39 °F)",
+  "abatidor · abatir": "hardening cabinet / blast freezer · harden",
+  "vitrina de cubetas · cubeta": "dipping cabinet (gelato: gelato case) · tub (3 gal) / pan (gelato)",
+  "lavaporcionador": "dipper well (running water, Food Code 3-304.12(D))",
+  "porcionador · espátula": "scoop (dipper) · spade",
+  "rendimiento de aire": "overrun",
+  "tarrina para llevar": "pint · quart · hand-packed · pack-out",
+  "cucurucho · barquillo": "cone (waffle cone, sugar cone, cake cone) · waffle cone iron / maker",
+  "copa": "sundae · cup",
+  "inclusiones · variegato · virutas": "mix-ins · swirl / ripple · sprinkles",
+  "mantecado (≥ 4 % yema)": "frozen custard (1.4% egg yolk solids, 21 CFR 135.110)",
+  "tarta helada": "ice cream cake",
+  "sabor de prueba": "sample (tasting spoon)",
+  "dependiente/a": "scooper / counter staff · shift lead",
+  "maestro heladero": "ice cream maker (owner/operator)",
+  "fijo discontinuo de temporada": "seasonal part-time (W-2)",
+  "temporada alta · reapertura": "peak season (Memorial Day → Labor Day) · Opening Day · off-season",
+  "licencia de obrador": "frozen dessert license / dairy plant or milk handler license (state) + health permit (local)",
+  "elaboración propia / artesano": "made here in small batches · homemade / house-made (only if true)",
+  "seguro de mercancía por avería": "equipment breakdown with food spoilage",
+  "IVA · terraza": "sales tax · patio / sidewalk café",
+  "helado crema / mantecado / sorbete (RD 618)": "ice cream, frozen custard (21 CFR 135); sorbet sin estándar leído",
+  "644.4/676, declaración responsable": "business license + zoning + building permit / CO",
+  "registro sanitario autonómico / RGSEAA": "health permit + plan review / state frozen dessert license",
+  "fijo discontinuo, convenio, SMI": "seasonal W-2, state / local minimum wage",
+  "−18 °C": "0 °F",
+  "430 g/l": "4.5 lb per gallon",
+  "autónomo / SL": "LLC",
+  "manipulador": "food handler card + CFPM",
+  "crepera / gofrera con salida de humos": "waffle cone irons (sin humos; las crepes no cruzan)",
+  "turrón helado de Navidad": "holiday pies and cakes",
+  "comuniones": "birthdays and graduations",
+  "cliente (volumen)": "customer (cada persona que compra)"
+ },
+ "pestanas_es_en": {
+  "HELP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "HELC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local y licencia": "Phase 2 - Site & Permits",
+   "F3 - Obrador y sanidad": "Phase 3 - Production & Health",
+   "F4 - Personal y APPCC": "Phase 4 - Staff & Food Safety",
+   "F5 - Marca y carta": "Phase 5 - Brand & Menu",
+   "F6 - Apertura y temporada": "Phase 6 - Opening & Season",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US ICE CREAM SHOP BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-heladeria» de AI Chef Pro.": "This file is part of the Ice Cream Shop Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — HELADERÍA ARTESANAL": "ICE CREAM SHOP STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Heladería Artesanal": "HOW TO USE THIS WORKBOOK — Ice Cream Shop Financial Projections",
+  "PLAN DE NEGOCIO: HELADERÍA ARTESANAL": "ICE CREAM SHOP BUSINESS PLAN",
+  "Inversión inicial estimada — heladería artesanal con obrador propio": "Startup costs — ice cream shop with on-site production",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — replace with your own quotes.",
+  "Punto de equilibrio — heladería artesanal": "Break-even — ice cream shop with on-site production",
+  "IVA de la bebida ALCOHÓLICA servida en el local": "Sales tax rate on alcohol served on site",
+  "Proyecto técnico y dirección de obra": "Architect, MEP drawings, plan review & permit fees",
+  "Obra y acondicionamiento del obrador y la tienda": "Build-out of production room & shop (second-generation retail, ~1,000 sq ft)",
+  "Instalación eléctrica trifásica, cuadro y boletín": "Electrical service & panel (about 30 kW)",
+  "Fontanería, desagües, climatización y ventilación": "Plumbing, floor sinks, hand sinks, HVAC & condenser ventilation",
+  "Rótulo y escaparate": "Signage & storefront",
+  "Pasteurizador de 30 litros": "Base refrigerator & flavor prep (41 °F or colder, stick blender, scales)",
+  "Mantecadora horizontal de 6-12 litros por ciclo": "Batch freezer (20 qt, horizontal)",
+  "Abatidor de temperatura para cubetas": "Hardening cabinet / blast freezer",
+  "Armarios de conservación y de maduración": "Storage freezers (0 °F or colder)",
+  "Mesas inox, fregadero, básculas, refractómetro, sondas, cubetas y carapinas": "Prep tables, 3-compartment sink, hand sinks, scales, pans & smallwares",
+  "Vitrina ventilada de 18 cubetas": "Dipping cabinets (18 flavors)",
+  "Mostrador, lavaporcionador, cafetera, crepera, gofrera y chocolatera": "Front counter, dipper wells, espresso, waffle cone irons & hot fudge warmers",
+  "Mobiliario del local y de la terraza": "Furniture (20 seats) & patio",
+  "TPV con Veri*factu, datáfono y báscula": "POS, card terminal & online ordering",
+  "Menaje, uniformes y cartelería de alérgenos": "Scoops, spades, cups, uniforms & allergen signage",
+  "Formación técnica de heladería": "Ice cream training course",
+  "Marca, web, fotos y lanzamiento": "Branding, website, photos & launch",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal, permits & food safety plan",
+  "Stock inicial de materias primas y envases": "Opening inventory (base, flavorings, cones, cups, pint containers)",
+  "Escenario realista — heladería artesanal": "Base case — ice cream shop with on-site production",
+  "Ventas de helado y obrador (mostrador, para llevar, tartas, invierno y restaurantes)": "Ice cream sales (scoops, sundaes, pints & quarts to go, ice cream cakes, catering)",
+  "Ventas de cafetería y bebidas (sin alcohol)": "Coffee & beverages (espresso, hot chocolate, sodas, water)",
+  "Seguros (RC + multirriesgo)": "Insurance (general liability, property, equipment breakdown + food spoilage)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento del frío (contrato con frigorista certificado)": "Refrigeration service contract (EPA 608-certified tech)",
+  "Marketing y publicidad de temporada": "Seasonal marketing",
+  "Software, teléfono e internet": "Software, POS & phone",
+  "Limpieza, lavandería, EPI y análisis de autocontrol": "Cleaning supplies, uniforms & laundry",
+  "Tasa de terraza (pon la de tu ayuntamiento)": "Sidewalk café / patio permit (your city's fee)",
+  "Gestión de residuos": "Waste & recycling",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Food safety & OSHA training (CFPM, food handler cards, allergens)",
+  "Titular — maestro heladero, compras y gestión": "Owner / ice cream maker & GM",
+  "Dependiente/a y encargado/a de turno (todo el año)": "Shift lead / counter (year-round)",
+  "Dependiente/a de temporada (fijo discontinuo, abril-septiembre)": "Seasonal scooper (part-time, April-September)",
+  "Dependiente/a de verano (fijo discontinuo, junio-septiembre)": "Summer scooper (part-time, June-August)",
+  "Ayudante de obrador (fijo discontinuo, mayo-septiembre)": "Production assistant (part-time, May-September)",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations and days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Clientes servidos al día de media del año 1, en mostrador, para llevar y en mesa: unos 236 en julio y unos 70 en enero. Sale de dividir la venta prevista entre el ticket y los días de apertura; contrástalo con el paso de gente de tu calle en una tarde de verano y en una de febrero",
+   "donde": [
+    "HELP · 0. Supuestos!C4"
+   ],
+   "fila": "Clientes/día (media del año 1)",
+   "valor_us": 165,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA, por persona que compra: dos bolas, más las tarrinas de medio litro, las tartas por encargo y las crepes del invierno. Equivale a un tique de caja de unos 7 € sin IVA, porque cada tique es de 1,45 personas de media. El precio con IVA está en la fila «PVP equivalente con IVA» de abajo",
+   "donde": [
+    "HELP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 7.5,
+   "pistas": [
+    "P04",
+    "P05",
+    "P06",
+    "P01",
+    "P07",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "365 días menos tres semanas de cierre en enero (vacaciones y mantenimiento del frío), los lunes de octubre a marzo y algún festivo. Es el MISMO dato para la cuenta de resultados, el punto de equilibrio, los escenarios y las horas de personal",
+   "donde": [
+    "HELP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 310,
+   "pistas": [
+    "P13",
+    "P14",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "Más clientela el segundo verano, las tartas heladas por encargo y el canal de restaurantes ya rodados. Se aplica a los clientes; el personal NO sube con este porcentaje: crece con las incorporaciones que declares en la hoja Personal (6.000 € el año 2 y otros 6.000 € el año 3)",
+   "donde": [
+    "HELP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.08,
+   "pistas": [
+    "P05",
+    "P01",
+    "P16",
+    "P02",
+    "P10",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "Sobre el año 2. Conservador: el techo lo ponen la vitrina de 18 cubetas y las tardes de julio y agosto",
+   "donde": [
+    "HELP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "valor_us": 0.05,
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Materia prima del helado y del obrador sobre sus ventas: el helado de mostrador sale al 16 %, el de llevar al 18 %, las crepes y los gofres al 28 % y lo que vendes a restaurantes al 32 % (18,6 % de media), y el plan suma 1,4 puntos por lo que se mueven el pistacho, el cacao y la vainilla. Escandalla cada sabor cada temporada",
+   "donde": [
+    "HELP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.22,
+   "pistas": [
+    "P16",
+    "P08",
+    "P19",
+    "P11",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "Café, chocolate a la taza, batidos, granizado y horchata propios, agua y refrescos sobre sus ventas: el granizado propio sale al 15 % y los refrescos, al 35-40 %",
+   "donde": [
+    "HELP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.25,
+   "pistas": [
+    "P21",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Barquillos y cucuruchos, tarrinas, cucharillas de madera, envases isotérmicos de cartón para llevar y servilletas: unos 0,28 € por tique de caja. Sin poliestireno expandido para el consumo inmediato",
+   "donde": [
+    "HELP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.045,
+   "pistas": [
+    "P05",
+    "P08",
+    "P09",
+    "P23",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "Tarrinas de medio litro y de litro en envase isotérmico por plataforma, las noches de verano: la tarrina viaja bien, la bola no. Es entrega de bienes: el helado va al 10 %",
+   "donde": [
+    "HELP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0.04,
+   "pistas": [
+    "P09",
+    "P25",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0030",
+   "es": "Comisión media de la plataforma sobre lo que vende ese canal. Si repartes tú, pon 0",
+   "donde": [
+    "HELP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25,
+   "pistas": [
+    "P25",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "Local de 85 m² (obrador de 20-25 m², tienda con vitrina de 18 cubetas y 20 plazas, almacén y aseo) en una calle comercial de barrio o un paseo de una ciudad media, sin traspaso: unos 20 € el m². El peso sobre las ventas lo calcula el propio libro en la fila «Alquiler / Ventas» del P&L",
+   "donde": [
+    "HELP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 2500,
+   "pistas": [
+    "P05",
+    "P28",
+    "P07",
+    "P18",
+    "P29",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0044",
+   "es": "Tres meses de renta, lo habitual en un contrato de local de negocio",
+   "donde": [
+    "HELP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del alquiler (meses)",
+   "valor_us": 2,
+   "pistas": [
+    "P31",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Sobre todo luz: unos 30 kW en trifásica y las vitrinas encendidas las 24 horas (cada módulo de 10 cubetas gasta unos 23 kWh al día). Unos 800-850 € en verano y 450-500 € en invierno; pide el histórico del local",
+   "donde": [
+    "HELP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 1300,
+   "pistas": [
+    "P05",
+    "P18",
+    "P14",
+    "P33",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil de al menos 300.000 € y multirriesgo CON avería de maquinaria y deterioro de mercancía en frío: una vitrina parada en agosto es una cubeta perdida por sabor",
+   "donde": [
+    "HELP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 4500,
+   "pistas": [
+    "P05",
+    "P18",
+    "P14",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Colchón de gasto corriente no presupuestado (pequeñas reparaciones, catas y degustaciones)",
+   "donde": [
+    "HELP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "valor_us": 0.01,
+   "pistas": [
+    "P14"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual. Pide oferta a dos entidades y a una línea ICO antes de fijarlo; la maquinaria de frío es objeto habitual de leasing o renting: compáralo",
+   "donde": [
+    "HELP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P04",
+    "P36",
+    "P16",
+    "P14",
+    "P31",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0061",
+   "es": "El primer año sólo intereses: obra y maquinaria antes de facturar y un primer invierno por delante. Desde el segundo año se devuelve el principal: mira la holgura de caja de ese año en el Punto de Equilibrio",
+   "donde": [
+    "HELP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0,
+   "pistas": [
+    "P16",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0063",
+   "es": "Tres meses de costes fijos: son el colchón del primer invierno, cuando de noviembre a febrero entra alrededor del 15 % de la venta del año con los fijos planos",
+   "donde": [
+    "HELP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)",
+   "valor_us": 3,
+   "pistas": [
+    "P39"
+   ]
+  },
+  {
+   "id": "c0072",
+   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por el alcohol que sale por delivery (es una entrega de bienes). El alcohol servido en el local va al reducido: su tipo está en el bloque de desglose del IVA. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. El libro manda al general sólo el alcohol: si compras refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos, su factura también va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
+   "donde": [
+    "HELP · 0. Supuestos!C40"
+   ],
+   "fila": "IVA repercutido/soportado general",
+   "valor_us": 0.08,
+   "pistas": [
+    "P04",
+    "P16",
+    "P14",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Obra del obrador, instalación eléctrica trifásica, fontanería, desagües, climatización y rótulo. Coeficientes de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades: confírmalo con tu asesor",
+   "donde": [
+    "HELP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P04",
+    "P40",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Pasteurizador, mantecadora, abatidor, armarios, vitrina, cafetera, mobiliario y TPV: un 10 % anual, dentro del coeficiente máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades para la maquinaria (12 %) y para el mobiliario (10 %). Confírmalo con tu asesor",
+   "donde": [
+    "HELP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P04",
+    "P40",
+    "P41",
+    "P42",
+    "P21",
+    "P43",
+    "P18",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "DATO INFORMATIVO: la mayoría de la venta es de mostrador y para llevar. La terraza suma otras 20 plazas en temporada (5 mesas), con su autorización municipal aparte",
+   "donde": [
+    "HELP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas, sin la terraza)",
+   "valor_us": 20,
+   "pistas": [
+    "P04",
+    "P19",
+    "P45",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0089",
+   "es": "Una heladería que abre en marzo no factura el primer mes lo que factura a los cuatro: la compra es de impulso y el barrio tarda en descubrirte, aunque la curva de temporada ya hace lenta la primavera. Con 100 % se elimina la rampa",
+   "donde": [
+    "HELP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "valor_us": 0.7,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0091",
+   "es": "Cuatro meses hasta el ritmo de crucero: de marzo a junio, justo antes del pico del verano",
+   "donde": [
+    "HELP · 0. Supuestos!C53"
+   ],
+   "fila": "Meses hasta alcanzar el régimen de crucero",
+   "valor_us": 4,
+   "pistas": [
+    "P16"
+   ]
+  },
+  {
+   "id": "c0093",
+   "es": "Dos meses de renta antes de abrir: la obra del obrador, el aumento de potencia a trifásica y la declaración responsable. Si el banco te da el préstamo al empezar la obra, súmale los intereses de esos meses (en el caso, unos 1.290 €), que este libro no cuenta, y ten en cuenta que la carencia corre desde la firma",
+   "donde": [
+    "HELP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler ANTES de abrir (obra y licencias)",
+   "valor_us": 2,
+   "pistas": [
+    "P04",
+    "P05",
+    "P36",
+    "P47",
+    "P16",
+    "P48",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0095",
+   "es": "Colchón sobre la obra y las instalaciones del local, que es donde aparecen las sorpresas (acometida eléctrica, desagües, salida de aire de los condensadores). Un banco no financia una reforma sin él",
+   "donde": [
+    "HELP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "valor_us": 0.1,
+   "pistas": [
+    "P36"
+   ]
+  },
+  {
+   "id": "c0098",
+   "es": "Media ponderada: el mostrador cobra al contado y los restaurantes a los que vendes helado (un 5 % de las ventas) pagan a 30 días",
+   "donde": [
+    "HELP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 2,
+   "pistas": [
+    "P16",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0100",
+   "es": "Plazo de pago a proveedores de leche, nata, fruta, pastas y envases: lo que te financian. Es lo primero que se pierde si te retrasas en un pago",
+   "donde": [
+    "HELP · 0. Supuestos!C59"
+   ],
+   "fila": "Días medios de pago a proveedor",
+   "valor_us": 14
+  },
+  {
+   "id": "c0102",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de verano: julio es el Mes 5, porque el Mes 1 del plan es marzo",
+   "donde": [
+    "HELP · 0. Supuestos!C60"
+   ],
+   "fila": "Mes de la paga extra de verano",
+   "pistas": [
+    "P13",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0104",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de Navidad: diciembre es el Mes 10, porque el Mes 1 del plan es marzo",
+   "donde": [
+    "HELP · 0. Supuestos!C61"
+   ],
+   "fila": "Mes de la paga extra de Navidad",
+   "pistas": [
+    "P13",
+    "P51",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0117",
+   "es": "Las heladerías están en el convenio PROVINCIAL de hostelería (art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería): copia aquí el salario base del grupo más bajo de la tabla de TU provincia. Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "HELP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P04",
+    "P13",
+    "P31",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0144",
+   "es": "Proyecto del obrador y de la tienda, memoria de la actividad y certificado final",
+   "donde": [
+    "HELP · Inversión Inicial!D7"
+   ],
+   "fila": "Proyecto técnico y dirección de obra",
+   "valor_us": 9000,
+   "pistas": [
+    "P54"
+   ]
+  },
+  {
+   "id": "c0147",
+   "es": "Obrador alicatado, suelo antideslizante, aseo y falsos techos. Estimación del kit (reforma de 15.000-50.000 € en las guías publicadas)",
+   "donde": [
+    "HELP · Inversión Inicial!D8"
+   ],
+   "fila": "Obra y acondicionamiento del obrador y la tienda",
+   "valor_us": 48000,
+   "pistas": [
+    "P05",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0149",
+   "es": "Unos 30 kW en trifásica para vitrinas, pasteurizador, mantecadora, abatidor y climatización. Pregunta la potencia disponible ANTES de firmar: una acometida nueva tarda",
+   "donde": [
+    "HELP · Inversión Inicial!D9"
+   ],
+   "fila": "Instalación eléctrica trifásica, cuadro y boletín",
+   "valor_us": 9000,
+   "pistas": [
+    "P42",
+    "P21",
+    "P43",
+    "P18",
+    "P33",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0151",
+   "es": "Desagües del obrador, lavamanos de accionamiento no manual y salida de aire para los condensadores de las máquinas",
+   "donde": [
+    "HELP · Inversión Inicial!D10"
+   ],
+   "fila": "Fontanería, desagües, climatización y ventilación",
+   "valor_us": 10000,
+   "pistas": [
+    "P57"
+   ]
+  },
+  {
+   "id": "c0153",
+   "es": "«Artesano» en el rótulo sólo con la calificación artesanal de tu comunidad; si no, «ELABORACIÓN PROPIA»",
+   "donde": [
+    "HELP · Inversión Inicial!D11"
+   ],
+   "fila": "Rótulo y escaparate",
+   "valor_us": 5000,
+   "pistas": [
+    "P07",
+    "P58",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0157",
+   "es": "Estimación del kit en la parte baja de lo publicado (12.000-35.000 €), porque las marcas profesionales no publican tarifa: pide al menos dos presupuestos antes de cerrar el préstamo. Una vertical de entrada de 26-30 l/h cuesta unos 4.200 € sin IVA, si empiezas con poco",
+   "donde": [
+    "HELP · Inversión Inicial!D13"
+   ],
+   "fila": "Mantecadora horizontal de 6-12 litros por ciclo",
+   "valor_us": 30000,
+   "pistas": [
+    "P04",
+    "P05",
+    "P60",
+    "P06",
+    "P36",
+    "P16",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0159",
+   "es": "Lleva el helado recién mantecado a -18 °C en el corazón antes de pasarlo a la vitrina o al armario",
+   "donde": [
+    "HELP · Inversión Inicial!D14"
+   ],
+   "fila": "Abatidor de temperatura para cubetas",
+   "valor_us": 9000,
+   "pistas": [
+    "P16",
+    "P21",
+    "P18",
+    "P62",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0161",
+   "es": "Dos armarios a -20/-25 °C para el helado y uno a +2/+4 °C para madurar la mezcla y guardar la materia prima",
+   "donde": [
+    "HELP · Inversión Inicial!D15"
+   ],
+   "fila": "Armarios de conservación y de maduración",
+   "valor_us": 7000,
+   "pistas": [
+    "P42",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0163",
+   "es": "Mesas y estanterías inox, fregadero, lavamanos, turbo, básculas, refractómetro, sondas de temperatura, 60 cubetas de 5 l (44 € cada una) y 10 carapinas",
+   "donde": [
+    "HELP · Inversión Inicial!D16"
+   ],
+   "fila": "Mesas inox, fregadero, básculas, refractómetro, sondas, cubetas y carapinas",
+   "valor_us": 8500,
+   "pistas": [
+    "P05",
+    "P60",
+    "P18",
+    "P62",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0165",
+   "es": "Dos módulos ventilados de 10 cubetas, de -20/-9 °C y con gas R290 (unos 5.090 € cada uno en la tarifa del fabricante): 18 sabores y dos huecos para el sabor del día o la reserva. Con 18 sabores en verano y 10-12 en invierno basta en una ciudad media",
+   "donde": [
+    "HELP · Inversión Inicial!D17"
+   ],
+   "fila": "Vitrina ventilada de 18 cubetas",
+   "valor_us": 11000,
+   "pistas": [
+    "P05",
+    "P18",
+    "P14",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0167",
+   "es": "Mostrador de venta, lavaporcionador con agua corriente, cafetera y molino, y el equipo del invierno. La crepera y la gofrera dependen de la salida de humos que permita tu ordenanza",
+   "donde": [
+    "HELP · Inversión Inicial!D18"
+   ],
+   "fila": "Mostrador, lavaporcionador, cafetera, crepera, gofrera y chocolatera",
+   "valor_us": 9000,
+   "pistas": [
+    "P66",
+    "P11",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0169",
+   "es": "Mesas y sillas para 20 plazas dentro y 5 mesas de terraza en temporada",
+   "donde": [
+    "HELP · Inversión Inicial!D19"
+   ],
+   "fila": "Mobiliario del local y de la terraza",
+   "valor_us": 7000,
+   "pistas": [
+    "P19",
+    "P45",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0171",
+   "es": "Software de facturación conforme a Veri*factu, datáfono y báscula para el helado al peso",
+   "donde": [
+    "HELP · Inversión Inicial!D20"
+   ],
+   "fila": "TPV con Veri*factu, datáfono y báscula",
+   "valor_us": 2500,
+   "pistas": [
+    "P04",
+    "P41",
+    "P44",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0173",
+   "es": "Copas, cucharas y espátulas (una por cubeta), uniformes y el cartel que dice dónde pedir la información de alérgenos (RD 126/2015)",
+   "donde": [
+    "HELP · Inversión Inicial!D21"
+   ],
+   "fila": "Menaje, uniformes y cartelería de alérgenos",
+   "valor_us": 1500,
+   "pistas": [
+    "P04",
+    "P69",
+    "P18",
+    "P66",
+    "P70",
+    "P71",
+    "P72",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0175",
+   "es": "Curso de balanceo de mezclas: la diferencia entre un helado cremoso y uno arenoso o duro en la vitrina",
+   "donde": [
+    "HELP · Inversión Inicial!D22"
+   ],
+   "fila": "Formación técnica de heladería",
+   "valor_us": 2500,
+   "pistas": [
+    "P42",
+    "P18",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0177",
+   "es": "Identidad, web con la carta de sabores, sesión de fotos y campaña de apertura",
+   "donde": [
+    "HELP · Inversión Inicial!D23"
+   ],
+   "fila": "Marca, web, fotos y lanzamiento",
+   "valor_us": 5000,
+   "pistas": [
+    "P36",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0179",
+   "es": "SL unipersonal, declaración responsable, tasas municipales, registro sanitario autonómico y redacción del plan APPCC. Las tasas no llevan IVA; los honorarios sí: cambia la columna de al lado si tu presupuesto es sobre todo de honorarios",
+   "donde": [
+    "HELP · Inversión Inicial!D24"
+   ],
+   "fila": "Constitución de la SL, licencia, tasas, registro sanitario y APPCC",
+   "valor_us": 2500,
+   "pistas": [
+    "P04",
+    "P74",
+    "P48",
+    "P75",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0182",
+   "es": "Leche, nata, azúcares, pastas, fruta, barquillos, tarrinas y envases para llevar",
+   "donde": [
+    "HELP · Inversión Inicial!D25"
+   ],
+   "fila": "Stock inicial de materias primas y envases",
+   "valor_us": 5000,
+   "pistas": [
+    "P09",
+    "P23",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0215",
+   "es": "Del total de ventas: helado de mostrador (bola, copa y cucurucho) 58 %, para llevar y tartas heladas 17 %, invierno (crepes y gofres, tartas y turrón helado de Navidad por encargo) 10 % y restaurantes y eventos 5 %. Todo al 10 % de IVA, se tome en el local o se lleve",
+   "donde": [
+    "HELP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de helado y obrador (mostrador, para llevar, tartas, invierno y restaurantes)",
+   "pistas": [
+    "P04",
+    "P16",
+    "P23",
+    "P70",
+    "P10",
+    "P11",
+    "P51",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0217",
+   "es": "Café, chocolate a la taza, batidos, granizados, horchata, agua y refrescos",
+   "donde": [
+    "HELP · PyG 3 Años!F11"
+   ],
+   "fila": "Ventas de cafetería y bebidas (sin alcohol)",
+   "pistas": [
+    "P21",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0231",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Los dos meses de renta previos a la apertura están en la hoja de Inversión y NO se cuentan dos veces",
+   "donde": [
+    "HELP · PyG 3 Años!F22"
+   ],
+   "fila": "Alquiler del local"
+  },
+  {
+   "id": "c0239",
+   "es": "Contabilidad, impuestos de la SL y nóminas de los fijos discontinuos, con sus llamamientos de cada temporada",
+   "donde": [
+    "HELP · PyG 3 Años!F26"
+   ],
+   "fila": "Gestoría laboral, fiscal y contable",
+   "valor_us": 3000,
+   "pistas": [
+    "P04",
+    "P19",
+    "P74",
+    "P31",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0241",
+   "es": "Revisión de vitrinas, abatidor, mantecadora y armarios antes del verano y en las semanas de cierre de enero. La carga de gases refrigerantes la hace sólo un técnico certificado: el personal no la toca",
+   "donde": [
+    "HELP · PyG 3 Años!F27"
+   ],
+   "fila": "Mantenimiento del frío (contrato con frigorista certificado)",
+   "valor_us": 2400,
+   "pistas": [
+    "P16",
+    "P21",
+    "P43",
+    "P18",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Redes sociales, ficha de Google Business, cartelería y la campaña de apertura de cada temporada, más la de tartas y turrón helado de Navidad",
+   "donde": [
+    "HELP · PyG 3 Años!F28"
+   ],
+   "fila": "Marketing y publicidad de temporada",
+   "valor_us": 4500,
+   "pistas": [
+    "P10",
+    "P19",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0245",
+   "es": "Cuota del TPV con Veri*factu, teléfono e internet",
+   "donde": [
+    "HELP · PyG 3 Años!F29"
+   ],
+   "fila": "Software, teléfono e internet",
+   "valor_us": 1800,
+   "pistas": [
+    "P04",
+    "P41",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0247",
+   "es": "Productos de limpieza y desinfección, lavado de uniformes, guantes para trabajar a −20 °C y los análisis de autocontrol que fije tu APPCC",
+   "donde": [
+    "HELP · PyG 3 Años!F30"
+   ],
+   "fila": "Limpieza, lavandería, EPI y análisis de autocontrol",
+   "valor_us": 1500,
+   "pistas": [
+    "P04",
+    "P16",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0249",
+   "es": "Ocupación de la vía pública con 5 mesas en temporada. Cada ayuntamiento tiene su ordenanza fiscal y este plan no ha leído ninguna: sustituye esta cifra por la de tu ayuntamiento",
+   "donde": [
+    "HELP · PyG 3 Años!F31"
+   ],
+   "fila": "Tasa de terraza (pon la de tu ayuntamiento)",
+   "valor_us": 500,
+   "pistas": [
+    "P81",
+    "P19",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0251",
+   "es": "Cartón, envases y orgánico del obrador con gestor autorizado o por el servicio municipal",
+   "donde": [
+    "HELP · PyG 3 Años!F32"
+   ],
+   "fila": "Gestión de residuos",
+   "valor_us": 1200,
+   "pistas": [
+    "P04",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0257",
+   "es": "El plan de prevención es obligatorio (Ley 31/1995): trabajo en frío, cargas y cortes, y reconocimientos médicos de la plantilla",
+   "donde": [
+    "HELP · PyG 3 Años!F35"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 500,
+   "pistas": [
+    "P04",
+    "P14",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0281",
+   "es": "Suelo del margen tras TODOS los costes variables (mercancía, envases, plataforma, medios de pago y varios): un helado artesano con obrador propio deja por encima del 70 %. Estimación del kit",
+   "donde": [
+    "HELP · PyG 3 Años!F51"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.65,
+   "pistas": [
+    "P58",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0284",
+   "es": "Techo de la materia prima sobre ventas: el helado de mostrador sale al 14-16 % y el pistacho, el cacao y la vainilla lo mueven. Estimación del kit",
+   "donde": [
+    "HELP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.25,
+   "pistas": [
+    "P85"
+   ]
+  },
+  {
+   "id": "c0286",
+   "es": "Techo del personal sobre ventas, más alto que en una cafetería: la temporada obliga a doblar mostrador de junio a septiembre. Estimación del kit",
+   "donde": [
+    "HELP · PyG 3 Años!F54"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.35,
+   "pistas": [
+    "P19",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0288",
+   "es": "Techo del alquiler sobre ventas para un local con obrador: estimación del kit",
+   "donde": [
+    "HELP · PyG 3 Años!F55"
+   ],
+   "fila": "Alquiler / Ventas",
+   "valor_us": 0.1
+  },
+  {
+   "id": "c0290",
+   "es": "Suelo de resultado neto a régimen para que el plan se sostenga: estimación del kit",
+   "donde": [
+    "HELP · PyG 3 Años!F56"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05
+  },
+  {
+   "id": "c0360",
+   "es": "Balancea las mezclas, pasteuriza, manteca y abate, compra y lleva la gestión. Como administrador de la SL cotiza en el régimen de autónomos: el libro le imputa el 33 % de Seguridad Social sobre 14 pagas como si fuera nómina (con este bruto, unos 8.085 € al año), que es el lado prudente. Confirma con tu gestoría la cuota real y si te aplica la reducida de inicio",
+   "donde": [
+    "HELP · Personal!J5"
+   ],
+   "fila": "Titular — maestro heladero, compras y gestión",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 4000
+   },
+   "pistas": [
+    "P04",
+    "P05",
+    "P13",
+    "P83",
+    "P42",
+    "P87",
+    "P74",
+    "P14",
+    "P31",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0362",
+   "es": "Mostrador, caja, vitrina y cierre; abre y cierra cuando el titular está en el obrador",
+   "donde": [
+    "HELP · Personal!J6"
+   ],
+   "fila": "Dependiente/a y encargado/a de turno (todo el año)",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 2946
+   },
+   "pistas": [
+    "P18",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0364",
+   "es": "Contrato fijo discontinuo (art. 16 del Estatuto de los Trabajadores) a jornada completa de abril a septiembre: equivale a media jornada en cómputo anual. Llamamiento por escrito",
+   "donde": [
+    "HELP · Personal!J7"
+   ],
+   "fila": "Dependiente/a de temporada (fijo discontinuo, abril-septiembre)",
+   "valor_us": {
+    "B": 1,
+    "C": 0.5,
+    "D": 1300
+   },
+   "pistas": [
+    "P04",
+    "P13",
+    "P19",
+    "P31",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0366",
+   "es": "Fijo discontinuo de 30 horas a la semana de junio a septiembre: las tardes y noches del pico. Nunca como autónomo que te factura: con tu horario y tu dirección es falso autónomo (art. 1.1 ET)",
+   "donde": [
+    "HELP · Personal!J8"
+   ],
+   "fila": "Dependiente/a de verano (fijo discontinuo, junio-septiembre)",
+   "valor_us": {
+    "B": 1,
+    "C": 0.25,
+    "D": 650
+   },
+   "pistas": [
+    "P04",
+    "P19",
+    "P74",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0368",
+   "es": "Media jornada de mayo a septiembre: pesaje, limpieza del pasteurizador y de la mantecadora, cubetas y apoyo en las tandas del verano",
+   "donde": [
+    "HELP · Personal!J9"
+   ],
+   "fila": "Ayudante de obrador (fijo discontinuo, mayo-septiembre)",
+   "valor_us": {
+    "B": 1,
+    "C": 0.2,
+    "D": 555
+   },
+   "pistas": [
+    "P42",
+    "P21",
+    "P18",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0384",
+   "es": "Media del año de la apertura de la TIENDA: 12 h en temporada alta (de mediados de abril a septiembre), 8 h en marzo y octubre y 6 h entre semana en invierno. El obrador va en la fila de abajo",
+   "donde": [
+    "HELP · Personal!J20"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "pistas": [
+    "P19",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0386",
+   "es": "Presencia media a la vez en el mostrador: 1,8-2 personas en verano, 1,3 en primavera y otoño y 1 en invierno. En julio y agosto el cuadrante va justo: el titular hace horas o entra un extra de fin de semana",
+   "donde": [
+    "HELP · Personal!J21"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0388",
+   "es": "Tandas del obrador antes de abrir: pasteurizar, enfriar, madurar, mantecar y abatir. Unas 4 h en julio y 1,5 h en invierno",
+   "donde": [
+    "HELP · Personal!J22"
+   ],
+   "fila": "Horas de producción al día ANTES de abrir",
+   "valor_us": 2.0,
+   "pistas": [
+    "P16",
+    "P08",
+    "P42",
+    "P87",
+    "P43",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0390",
+   "es": "El maestro heladero; en verano le ayuda el ayudante de obrador",
+   "donde": [
+    "HELP · Personal!J23"
+   ],
+   "fila": "Personas en el turno de producción"
+  },
+  {
+   "id": "c0406",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en el local (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —helado y tartas heladas incluidos—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica al alcohol del canal de delivery. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "HELP · Instrucciones!A8"
+   ],
+   "pistas": [
+    "P04",
+    "P06",
+    "P95",
+    "P01",
+    "P16",
+    "P07",
+    "P08",
+    "P10",
+    "P14",
+    "P25",
+    "P96",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0408",
+   "es": "6. La hoja «Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. Su Mes 1 es MARZO: el plan abre en temporada para llegar al primer invierno con la caja del verano. El saldo mínimo del año nunca puede salir en rojo.",
+   "donde": [
+    "HELP · Instrucciones!A10"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "pistas": [
+    "P07",
+    "P19",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0410",
+   "es": "8. El documento Word de este pack usa las cifras de este Excel: si cambias una celda verde, el Excel manda.",
+   "donde": [
+    "HELP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P99"
+   ]
+  },
+  {
+   "id": "c0428",
+   "es": "Mes 1 del plan",
+   "donde": [
+    "HELP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0429",
+   "es": "Marzo",
+   "donde": [
+    "HELP · Instrucciones!B35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0430",
+   "es": "Decisión del plan",
+   "donde": [
+    "HELP · Instrucciones!C35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0431",
+   "es": "Abrir en otoño gasta el fondo de maniobra antes del primer verano. La fila de estacionalidad de la Tesorería ya va girada",
+   "donde": [
+    "HELP · Instrucciones!D35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P16",
+    "P14",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0432",
+   "es": "Consumo de helado en los hogares de abril a septiembre",
+   "donde": [
+    "HELP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0433",
+   "es": "81,6 % del volumen del año",
+   "donde": [
+    "HELP · Instrucciones!B36"
+   ],
+   "fila": "Consumo de helado en los hogares de abril a septiembre",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P08",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0434",
+   "es": "MAPA, nota de prensa del 12 de agosto de 2026",
+   "donde": [
+    "HELP · Instrucciones!C36"
+   ],
+   "fila": "Consumo de helado en los hogares de abril a septiembre",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Julio el 20 %, junio el 17,8 % y agosto el 17,1 %. Este plan pone el 73 % de abril a septiembre porque en invierno vende crepes, chocolate y tartas de Navidad",
+   "donde": [
+    "HELP · Instrucciones!D36"
+   ],
+   "fila": "Consumo de helado en los hogares de abril a septiembre",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P08",
+    "P10",
+    "P11",
+    "P51",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "Coste del helado de mostrador",
+   "donde": [
+    "HELP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "14-16 % de su venta",
+   "donde": [
+    "HELP · Instrucciones!B37"
+   ],
+   "fila": "Coste del helado de mostrador",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "Estimación del kit",
+   "donde": [
+    "HELP · Instrucciones!C37"
+   ],
+   "fila": "Coste del helado de mostrador",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0439",
+   "es": "Dos bolas con mezcla a unos 3,2 € el kg, con merma, toppings y catas. Las crepes y lo que vendes a restaurantes cuestan más",
+   "donde": [
+    "HELP · Instrucciones!D37"
+   ],
+   "fila": "Coste del helado de mostrador",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P05",
+    "P60",
+    "P16",
+    "P08",
+    "P42",
+    "P11",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0440",
+   "es": "Precio de la bola",
+   "donde": [
+    "HELP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "2-4 €, hasta 6 € en las gourmet",
+   "donde": [
+    "HELP · Instrucciones!B38"
+   ],
+   "fila": "Precio de la bola",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P05",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "Prensa local, mayo de 2026",
+   "donde": [
+    "HELP · Instrucciones!C38"
+   ],
+   "fila": "Precio de la bola",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0443",
+   "es": "Con IVA. El ticket SIN IVA de este plan está en la hoja 0. Supuestos",
+   "donde": [
+    "HELP · Instrucciones!D38"
+   ],
+   "fila": "Precio de la bola",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P06",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0444",
+   "es": "Densidad mínima del helado",
+   "donde": [
+    "HELP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P105"
+   ]
+  },
+  {
+   "id": "c0445",
+   "es": "430 g por litro",
+   "donde": [
+    "HELP · Instrucciones!B39"
+   ],
+   "fila": "Densidad mínima del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P21",
+    "P105"
+   ]
+  },
+  {
+   "id": "c0446",
+   "es": "RD 618/1998, art. 3",
+   "donde": [
+    "HELP · Instrucciones!C39"
+   ],
+   "fila": "Densidad mínima del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P21",
+    "P105"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "Entre 375 y 430 g/l se llama «espuma», «mousse» o «montado». El mismo artículo fija las denominaciones: «helado crema», «mantecado» (4 % de yema o más) y «sorbete» (15 % de fruta o más)",
+   "donde": [
+    "HELP · Instrucciones!D39"
+   ],
+   "fila": "Densidad mínima del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P60",
+    "P07",
+    "P42",
+    "P21",
+    "P31",
+    "P105"
+   ]
+  },
+  {
+   "id": "c0448",
+   "es": "Conservación del helado",
+   "donde": [
+    "HELP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0449",
+   "es": "−18 °C o menos, sin recongelar",
+   "donde": [
+    "HELP · Instrucciones!B40"
+   ],
+   "fila": "Conservación del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P62",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0450",
+   "es": "RD 1021/2022, arts. 4.1 y 5.9",
+   "donde": [
+    "HELP · Instrucciones!C40"
+   ],
+   "fila": "Conservación del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0451",
+   "es": "La temperatura de la vitrina no la fija ninguna norma estatal: la fija tu APPCC",
+   "donde": [
+    "HELP · Instrucciones!D40"
+   ],
+   "fila": "Conservación del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P18",
+    "P75",
+    "P62",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0452",
+   "es": "Huevo en la mezcla",
+   "donde": [
+    "HELP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P42",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "70 °C durante 2 s, u ovoproducto",
+   "donde": [
+    "HELP · Instrucciones!B41"
+   ],
+   "fila": "Huevo en la mezcla",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "RD 1021/2022, art. 9",
+   "donde": [
+    "HELP · Instrucciones!C41"
+   ],
+   "fila": "Huevo en la mezcla",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "Pasteurizar a 85 °C lo cumple. Yemas, nata y grasas van ANTES de pasteurizar, nunca después; con huevo, se manteca en las 24 horas siguientes",
+   "donde": [
+    "HELP · Instrucciones!D41"
+   ],
+   "fila": "Huevo en la mezcla",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P42",
+    "P87",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "Coste de personal sobre ventas",
+   "donde": [
+    "HELP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "34-40 %",
+   "donde": [
+    "HELP · Instrucciones!B42"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "Estimación del kit",
+   "donde": [
+    "HELP · Instrucciones!C42"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "La temporada dobla el mostrador de junio a septiembre con fijos discontinuos",
+   "donde": [
+    "HELP · Instrucciones!D42"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P19",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "Alquiler sobre ventas",
+   "donde": [
+    "HELP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "8-12 %",
+   "donde": [
+    "HELP · Instrucciones!B43"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "Estimación del kit",
+   "donde": [
+    "HELP · Instrucciones!C43"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "Un local con obrador necesita más metros que un quiosco o una vitrina sin obrador",
+   "donde": [
+    "HELP · Instrucciones!D43"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P18",
+    "P29",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "Merma de la producción",
+   "donde": [
+    "HELP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "5-8 %",
+   "donde": [
+    "HELP · Instrucciones!B44"
+   ],
+   "fila": "Merma de la producción",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "Estimación del kit — mídela tú cada semana",
+   "donde": [
+    "HELP · Instrucciones!C44"
+   ],
+   "fila": "Merma de la producción",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P96",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "El helado derretido o devuelto no se recongela",
+   "donde": [
+    "HELP · Instrucciones!D44"
+   ],
+   "fila": "Merma de la producción",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "Potencia eléctrica del local",
+   "donde": [
+    "HELP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P33",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "Unos 30 kW en trifásica",
+   "donde": [
+    "HELP · Instrucciones!B45"
+   ],
+   "fila": "Potencia eléctrica del local",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P33",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "Estimación del kit",
+   "donde": [
+    "HELP · Instrucciones!C45"
+   ],
+   "fila": "Potencia eléctrica del local",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0471",
+   "es": "Vitrinas las 24 horas, pasteurizador, mantecadora, abatidor, crepera y climatización. Compruébalo antes de firmar el alquiler",
+   "donde": [
+    "HELP · Instrucciones!D45"
+   ],
+   "fila": "Potencia eléctrica del local",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P16",
+    "P42",
+    "P21",
+    "P43",
+    "P18",
+    "P11",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "IVA del helado",
+   "donde": [
+    "HELP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "10 %",
+   "donde": [
+    "HELP · Instrucciones!B46"
+   ],
+   "fila": "IVA del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0474",
+   "es": "Ley 37/1992, art. 91.Uno.1.1.º y 2.2.º",
+   "donde": [
+    "HELP · Instrucciones!C46"
+   ],
+   "fila": "IVA del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0475",
+   "es": "En el mostrador, en la mesa y para llevar. Los refrescos con azúcares añadidos para llevar, al 21 %",
+   "donde": [
+    "HELP · Instrucciones!D46"
+   ],
+   "fila": "IVA del helado",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "HELP · Instrucciones!A47"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P13",
+    "P31",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "Provincial de hostelería",
+   "donde": [
+    "HELP · Instrucciones!B47"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4",
+   "donde": [
+    "HELP · Instrucciones!C47"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P04",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "Nombra las heladerías. Copia tu tabla salarial en la celda de Supuestos",
+   "donde": [
+    "HELP · Instrucciones!D47"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P100",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0514",
+   "es": "Doce mensualidades más las pagas extra en los meses que digas en Supuestos. La suma del año es la misma que la del P&L. El personal se reparte en doce meses, pero los fijos discontinuos de temporada sólo cobran de abril a septiembre: aquí el invierno sale más caro y el verano más barato que en la realidad. El saldo de marzo y el de febrero apenas cambian, pero de junio a enero tu caja real será menor que la de esta hoja (en el caso, hasta unos 10.000 € menos en septiembre)",
+   "donde": [
+    "HELP · Tesorería 12 meses!O13"
+   ],
+   "fila": "Nóminas y Seguridad Social",
+   "pistas": [
+    "P05",
+    "P13",
+    "P19",
+    "P14",
+    "P114"
+   ]
+  },
+  {
+   "id": "c0518",
+   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en el local, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); el alcohol que sale por delivery, al general; el helado y la comida para llevar, al reducido (art. 91.Uno.1.1.º)",
+   "donde": [
+    "HELP · Tesorería 12 meses!O16"
+   ],
+   "fila": "IVA repercutido del mes (memoria)",
+   "pistas": [
+    "P04",
+    "P25"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GR": {
+   "salida": "scripts/productos-digitales/business-plans-en-10/textos_en/GR.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 14,
+   "cadenas": [
+    {
+     "id": "c0032",
+     "es": "Tarjeta y bizum sobre el total facturado",
+     "en_actual": "Card and mobile wallet (contactless) processing fees on total sales. Ask your POS provider for its rate",
+     "de": "GPIZ-plan c0032 (PIZP 0. Supuestos!C18)",
+     "donde": [
+      "HELP · 0. Supuestos!C18"
+     ]
+    },
+    {
+     "id": "c0053",
+     "es": "Aportación de los socios. Un banco pide entre el 25 y el 30 % de la necesidad de caja con dinero propio",
+     "en_actual": "Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need",
+     "de": "GPIZ-plan c0053 (PIZP 0. Supuestos!C30)",
+     "donde": [
+      "HELP · 0. Supuestos!C30"
+     ]
+    },
+    {
+     "id": "c0055",
+     "es": "Principal solicitado. La hoja de Financiación compara lo que aportas con la necesidad de caja de la hoja de inversión y te dice si sobra o falta: ajústalo con ese dato",
+     "en_actual": "Principal requested. The \"Financing\" tab compares what you put in with the cash need on \"Startup Costs\" and tells you whether you have a surplus or a shortfall: adjust the loan with that figure. The example is an SBA 7(a) loan, which you apply for through your lender (SBA Microloans go up to $50,000)",
+     "de": "GPIZ-plan c0055 (PIZP 0. Supuestos!C31)",
+     "donde": [
+      "HELP · 0. Supuestos!C31"
+     ]
+    },
+    {
+     "id": "c0086",
+     "es": "Aforo del local (plazas sentadas, sin la terraza)",
+     "en_actual": "Seating capacity of the space (dining room seats, patio not included)",
+     "de": "GPIZ-plan c0087 (PIZP 0. Supuestos!A51)",
+     "donde": [
+      "HELP · 0. Supuestos!A51"
+     ]
+    },
+    {
+     "id": "c0201",
+     "es": "CUENTA DE RESULTADOS — 3 AÑOS",
+     "en_actual": "PROFIT AND LOSS STATEMENT — 3 YEARS",
+     "de": "GPAN c0936 (PANP PyG 3 Años!A1)",
+     "donde": [
+      "HELP · PyG 3 Años!A1"
+     ]
+    },
+    {
+     "id": "c0253",
+     "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC",
+     "en_actual": "Licensed pest control company; part of your HACCP-based food safety plan",
+     "de": "GREST c0274 (RESTP 2. P&L 3 Años!F33)",
+     "donde": [
+      "HELP · PyG 3 Años!F33"
+     ]
+    },
+    {
+     "id": "c0255",
+     "es": "SGAE y AGEDI-AIE son dos licencias distintas; el importe depende de los metros y del aforo de tu tienda",
+     "en_actual": "ASCAP, BMI and SESAC are separate licensing organizations; the fee depends on the size and capacity of your shop. Only needed if you play music",
+     "de": "GPAN c0951 (PANP PyG 3 Años!F34)",
+     "donde": [
+      "HELP · PyG 3 Años!F34"
+     ]
+    },
+    {
+     "id": "c0295",
+     "es": "PUNTO DE EQUILIBRIO",
+     "en_actual": "BREAK-EVEN",
+     "de": "GPAN c0959 (PANP Punto Equilibrio!A1)",
+     "donde": [
+      "HELP · Punto Equilibrio!A1"
+     ]
+    },
+    {
+     "id": "c0328",
+     "es": "ESCENARIOS",
+     "en_actual": "SCENARIOS",
+     "de": "GPAN c0970 (PANP Escenarios!A1)",
+     "donde": [
+      "HELP · Escenarios!A1"
+     ]
+    },
+    {
+     "id": "c0349",
+     "es": "PERSONAL Y COSTES",
+     "en_actual": "STAFFING AND LABOR COSTS",
+     "de": "GPAN c0977 (PANP Personal!A1)",
+     "donde": [
+      "HELP · Personal!A1"
+     ]
+    },
+    {
+     "id": "c0370",
+     "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal del equipo de todo el año",
+     "en_actual": "Coverage for vacations and the team's days off through the year. Paid sick leave is required by some states and cities: check yours",
+     "de": "GPIZ-plan c0375 (PIZP Personal!J11)",
+     "donde": [
+      "HELP · Personal!J10"
+     ]
+    },
+    {
+     "id": "c0405",
+     "es": "3. Sólo «Punto Equilibrio» se deriva entera de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+     "en_actual": "3. Only \"Break-Even\" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in \"Scenarios\", seasonality and the launch ramp-up in \"12-Month Cash Flow\", and the other funding sources in \"Financing\" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+     "de": "GPAN c0996 (PANP Instrucciones!A7)",
+     "donde": [
+      "HELP · Instrucciones!A7"
+     ]
+    },
+    {
+     "id": "c0409",
+     "es": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
+     "en_actual": "7. The \"Financing\" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.",
+     "de": "GR c0414 (PIZP Instrucciones!A11)",
+     "donde": [
+      "HELP · Instrucciones!A11"
+     ]
+    },
+    {
+     "id": "c0543",
+     "es": "Mide cuánto tarda el negocio en devolver la inversión con lo que genera ANTES de pagar al banco, con la MISMA base de flujo en los tres años; si puedes pagar la cuota lo dice el DSCR de la hoja de Financiación. El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro",
+     "en_actual": "Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the \"Financing\" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules",
+     "de": "GPIZ-plan c0548 (PIZP Tesorería 12 meses!D31)",
+     "donde": [
+      "HELP · Tesorería 12 meses!D31"
+     ]
+    }
+   ]
+  }
+ }
+}

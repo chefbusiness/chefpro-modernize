@@ -31,7 +31,9 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'guia-restaurante-nikkei': { eur: 65 },
   'guia-restaurante-peruano': { eur: 65 },
   'haccp-templates': { usd: 19 },
+  'hotel-checklist-templates': { usd: 29 },
   'how-to-open-a-pastry-shop': { usd: 69 },
+  'ice-cream-shop-business-plan': { usd: 39 },
   'ice-cream-shop-checklist-templates': { usd: 19 },
   'kit-escandallos': { eur: 12 },
   'kit-gestion-personal': { eur: 14 },
@@ -85,4 +87,5 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'restaurant-financial-plan-templates': { usd: 49 },
   'restaurant-inventory-templates': { usd: 19 },
   'restaurant-schedule-templates': { usd: 19 },
+  'wedding-venue-business-plan': { usd: 49 },
 };
