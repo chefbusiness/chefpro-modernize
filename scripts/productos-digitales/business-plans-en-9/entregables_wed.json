@@ -1,14 +1,25 @@
 {
  "carpeta": "/root/wt-wedding/astro-site/public/dl/wedding-venue-business-plan",
  "parcial": false,
- "piezas": 1811,
+ "piezas": 1927,
  "fallos": 0,
  "ficheros": {
+  "wedding-venue-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 7592,
+   "piezas": 116,
+   "sha256": "0160b92f9193b15c039b7eb093a72d95ff24009b63357a0f0cfba6d56c90e296",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
   "wedding-venue-financial-projections.xlsx": {
    "hojas": 9,
    "formulas": 734,
    "piezas": 770,
-   "sha256": "4d02f4e3b97f22111d9499050201e342b94af041e9410de13e62b019e7032d92",
+   "sha256": "73e912aff236af125786f0738321085c23d0d58badc94226070d964a43e3c6f3",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -17,7 +28,7 @@
    "hojas": 3,
    "formulas": 168,
    "piezas": 359,
-   "sha256": "8b3d7a9a87b76e622df107932ab8fc98ae12dff3f1f7994d976b22b5eb89a846",
+   "sha256": "d3a49288a848428937a88276e35339c24c02e780a62a6e135577f3bb5bcfc8ba",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -28,7 +39,7 @@
    "heading1": 0,
    "palabras": 5002,
    "piezas": 167,
-   "sha256": "17ca14512ddfc01b2369b47d48d2457c3e0a9d8fd2a20c0d922ea8b9c1bc75f1",
+   "sha256": "c6770b0b2b963c1c9c5f4c067081b769f874b9456c367f832f70ef99d6411822",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -37,7 +48,7 @@
    "hojas": 7,
    "formulas": 12,
    "piezas": 515,
-   "sha256": "83b4c23bdef295b0837fc7730f9cae1bc91b49855c0cf03c15919edda69039a3",
+   "sha256": "73fd221f7fb11308e8aab9f20461b1aa1443681ad3d62c0a1cd72b1d14ed1f65",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0

@@ -1,0 +1,1579 @@
+# wedding-venue-financial-projections.xlsx
+docProps: title='Wedding Venue Financial Projections: 3-Year P&L, Cash Flow & Financing · Wedding Venue Business Plan Kit' · subject='Wedding Venue Business Plan Kit · v2.2' · creator='AI Chef Pro'
+
+## 0. Assumptions
+A1: ASSUMPTIONS — the RATES and DRIVERS of the model are typed here
+A2: Change the GREEN cells: the rest of the workbook recalculates on its own. Expense items are typed on their own tab (also in green) and are not repeated here. Amounts are in your currency.
+A3: BUSINESS ACTIVITY
+A4: Guests per event (year 1 average)
+B4: 90
+C4: Average guests per event in year 1. It comes from the mix in the benchmarks table on the "Instructions" tab: weddings of 130 guests, corporate events of 70, private celebrations of 80 and micro weddings of 30. It is an average: the maximum occupancy of the venue is further down
+A5: Average revenue per guest excl. sales tax
+B5: 68
+C5: Excl. sales tax, per guest: what the VENUE bills, not what the couple pays for the whole wedding. It adds the venue rental fee and services (ceremony site, setup, venue coordination, cleanup and parking) plus the commission the exclusive caterer pays you on each guest's food and beverage. The example works out to about $68 per guest from the event mix: each event type has its own site fee plus a 10% commission on the caterer's per-guest F&B. The price incl. sales tax is in the row below
+A6: Events per year
+B6: 100
+C6: Events held in the year: 35 weddings, 25 corporate events, 30 private celebrations (anniversaries, birthdays, showers, reunions) and 10 micro weddings and elopements. It is the SAME figure for the P&L, the break-even, the scenarios and the staff hours
+A7: Volume growth in year 2
+B7: 0.08
+C7: More activity in year 2: weddings that come by referral, corporate clients who come back and planners who already know you. The workbook applies it to guests per event with the same number of events; in dollars it equals about 8% more events of the same size (about 108). Staff does not rise with this percentage: it grows with the hires on the "Staffing" tab
+A8: Volume growth in year 3
+B8: 0.05
+C8: On top of year 2 (about 113 equivalent events). Conservative: the ceiling is set by peak-season Saturdays and the maximum occupancy of the venue
+A9: Menu price incl. sales tax (calculated)
+B9 = 72.7872
+C9 = Revenue per guest excl. sales tax plus the weighted sales tax of your two sales lines (7%), rounded. It is what the venue bills per guest (venue rental & services plus the caterer commission), not what the couple pays for the whole wedding: the caterer bills the menu and the bar, with its own sales tax, and they are not in this workbook. In the UK, prices to private clients include VAT.
+A10: SALES MIX AND DIRECT EVENT COSTS
+A11: Venue rental & services share of total sales
+B11: 0.88
+C11: Share of VENUE RENTAL & SERVICES in total sales. It is an INPUT: change it here and the P&L, the cash flow and the sales tax collected recalculate on their own
+A12: Caterer commission share of total sales
+B12 = 0.12
+C12: Calculated as the remainder: venue rental & services + caterer commission = 100%
+A13: Direct event cost on venue rental & services sales
+B13: 0.12
+C13: Direct cost of each event as a share of venue rental & services sales: post-event cleaning, restroom supplies, standby generator fuel, parking attendants and security, and setup consumables. Roughly $1,000 for a wedding, $500 for a corporate or private event and $300 for a micro wedding (Kit estimate; the pricing calculator uses the same figures). If you play recorded music at events, add the ASCAP/BMI/SESAC license fees to this line or to fixed costs
+A14: Cost of the commission on caterer commission sales
+B14: 0
+C14: ZERO: the commission costs the venue nothing. The caterer buys the food and beverages and sells them to the couple
+A15: Disposables and packaging as % of sales
+B15: 0.015
+C15: Candles, base florals, paper and restroom supplies, and the small consumables of each setup
+A16: Sales that come through planners and venue marketplaces, as a share of total
+B16: 0.1
+C16: Share of sales that arrives through a wedding planner or a venue marketplace (such as Peerspace) that charges a commission. The Knot / WeddingWire storefronts are a fixed marketing cost, not a commission. It does not change the sales tax: the example rate applies to everything the venue bills as rental and services
+A17: Commission to planners and venue marketplaces
+B17: 0.15
+C17: Average commission on what that channel sells: 15% in the example (Kit estimate; marketplaces publish 15-20%, so check your contract). If every booking comes direct, enter 0
+A18: Card processing fee
+B18: 0.02
+C18: Most payments (retainers, couple installments and corporate invoices) arrive by ACH, check or card, and the card terminal or mobile wallet covers the extras on the day. The example uses 2% card processing
+A19: LABOR
+A20: Employer payroll taxes
+B20: 0.1
+C20: FICA (Social Security 6.2% + Medicare 1.45%) + federal and state unemployment taxes (FUTA / SUTA) + workers' comp. About 10% in total: adjust it to your state and your insurance carrier
+A21: Monthly pay periods per year (keep 12)
+B21: 12
+C21: Annual gross pay = monthly gross pay × this number. Keep 12 in the US: it counts the monthly salaries the model pays in a year, not how often you run payroll (weekly or biweekly payroll pays the same annual amount)
+A22: Federal minimum wage, annual full-time
+B22: 15080
+C22: US federal minimum wage: 7.25 per hour × 2,080 hours = 15,080 per year for a full-time job. Your state or city may set a higher floor: enter it in the state / local minimum wage cell below. Check the current rates at dol.gov
+A23: VENUE AND FIXED COSTS
+A24: Monthly rent of the property
+B24: 5000
+C24: Rent for a leased property with an unconverted barn or hall: $5,000 a month in the example (Kit estimate, no market source: get local quotes). Negotiate reduced rent during permitting and the build-out. Get a long lease: SBA lenders typically require a term, counting extension options, at least as long as the loan; confirm with your lender. Ask your attorney for a purchase option or right of first refusal, the owner's consent to the build-out and to using the lease as collateral, and a tenant improvement (TI) allowance. If the property belongs to a relative, charge market rent anyway. The "Rent / Sales" row of the "3-Year P&L" calculates the weight on sales
+A25: Lease security deposit (months)
+B25: 2
+C25: Two months of rent as a security deposit; extra guarantees are negotiated separately. Confirm the terms with your attorney before you sign
+A26: Monthly utilities (power, propane, water, internet & trash)
+B26: 2000
+C26: Power for the hall and the grounds, propane, water or well, internet and trash outside event days. The example is $2,000 a month (Kit estimate). Ask the owner for past bills. If a well serves your guests, ask your state drinking water program whether it counts as a public water system
+A27: Insurance (per year)
+B27: 12000
+C27: General liability, property, umbrella, host liquor liability and workers' comp. The example is $12,000 a year (Kit estimate, no rate read: get quotes from an agent who insures venues). Also require the exclusive caterer to carry its own liability and liquor liability with you as additional insured, and a COI from every outside vendor
+A28: Miscellaneous and contingency as % of sales
+B28: 0.01
+C28: Breakage, setup surprises and sales travel (bridal shows and planner visits)
+A29: FINANCING
+A30: Owner's equity contributed
+B30: 200000
+C30: Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need
+A31: Loan requested
+B31: 470000
+C31: Principal requested. The "Financing" tab compares what you put in with the cash need on "Startup Costs" and tells you whether you have a surplus or a shortfall: adjust the loan with that figure. The example is an SBA 7(a) loan, which you apply for through your lender. You do not own the property, so there is no real-estate collateral: ask your lender about other collateral and about the lease, since SBA lenders typically require a lease term, counting extension options, at least as long as the loan; confirm with your lender
+A32: Nominal annual interest rate (not APR)
+B32: 0.1
+C32: Nominal annual rate, not APR. The example uses 10%. Get a quote from two lenders before you set it, and compare an SBA 7(a) loan with conventional financing
+A33: Loan term (years)
+B33: 10
+C33: Total years of the loan. The example is 10 years. With a six-year term the payment does not fit a business with this much fixed structure
+A34: Interest-only period (years)
+B34: 0
+C34: Years you pay interest only before principal repayment starts. The example uses 0, because SBA 7(a) loans amortize from the start. A year of interest only could ease the build-out and the first season: ask your lender, and check the cash slack of the first repayment year on the "Break-Even" tab
+A35: Working capital (months of fixed costs)
+B35: 3
+C35: Three months of fixed costs: the cushion for the first months, right after the build-out is paid and before the busy season. In a normal year the winter months bring in only a small part of annual sales while rent and staff stay flat: that winter is carried by the cash of the season
+A36: TAXES
+A37: Effective income tax rate (years 1-2)
+B37: 0.25
+C37: Example: 21% federal rate for a C corporation plus state tax, rounded to 25%. If you operate as a sole proprietorship, LLC taxed as a pass-through or S corporation, the business itself pays 0% here and you pay tax on the profit personally: set this to 0 and budget for your personal tax separately. The model applies this rate to the first two years with positive taxable income
+A38: Effective income tax rate (from year 3)
+B38: 0.25
+C38: From the third year with positive taxable income. Same example rate (21% federal C corporation + state). Confirm the rate that applies to you with your accountant and change it here
+A39: Sales tax rate on sales
+B39: 0.08
+C39: Not used in this plan: the venue sells no food or beverage. It is the rate on the caterer's menu. Varies by state and city: look up yours
+A40: Sales tax rate on alcohol to go
+B40: 0.08
+C40: General example rate, 8%. In this plan it applies to everything the venue bills as rental and services; the caterer commission is taxed at 0% in the model, and the venue's purchases carry no recoverable credit. The venue does not sell food or beverage: the caterer bills the menu and the bar. Some states do not tax venue fees at all: confirm yours with your state department of revenue
+A41: Recoverable input tax on purchases and capex
+B41: 0
+C41: In the US, the sales tax you pay on purchases is a cost, not a credit: leave this at 0%. UK: 20% if you are VAT-registered
+A42: Net operating losses carried forward
+B42: 0
+C42: Net operating losses from earlier years still to be offset at the start. Federal rules let you offset up to 80% of taxable income in a year; the model offsets 100% as a simplification
+A43: DEPRECIATION
+A44: Useful life of build-out and fixtures (years)
+B44: 15
+C44: Build-out on a LEASED property is depreciated over the lease term if that is shorter than the useful life of the asset. That is why the plan asks for a long lease, extension options included; with a shorter contract, the yearly depreciation goes up. Confirm it with your CPA
+A45: Useful life of machinery, furniture and equipment (years)
+B45: 7
+C45: Tent platform, standby generator, furniture and sound: 7 years, straight-line depreciation. Your CPA may use MACRS or Section 179 for the tax return; confirm it with your CPA
+A47: GROWTH AND COST INFLATION
+A48: Annual increase in fixed costs
+B48: 0
+C48: SET TO ZERO: all three columns are in year-1 prices (real terms). Raise it if you want to project in nominal terms
+A49: RAMP-UP AND CAPACITY
+A51: Maximum occupancy of the venue (seated guests in the hall and under the tent)
+B51: 200
+C51: INFORMATIONAL: it does not enter any calculation. It is the largest seated banquet that fits between the hall and the tent. The legal occupant load is set and posted by your fire marshal and comes with the certificate of occupancy (assembly, Group A-2); check egress, sprinklers and tent permits with the building official
+A52: Month-1 activity as a % of steady-state activity
+B52: 0.45
+C52: A venue that has just opened does not bill in month 1 what it bills in a full year: weddings are booked 12-18 months ahead, and the first season only brings what was booked, contingent on the CUP and the certificate of occupancy, during permitting and build-out. With 100% the ramp-up disappears
+A53: Months to reach steady state
+B53: 12
+C53: Twelve months to reach full pace: the first whole season
+A54: Months of rent BEFORE opening (permitting & build-out)
+B54: 4
+C54: Four months of rent before opening, for the CUP and the build-out. Better: sign a lease contingent on CUP approval, with reduced or abated rent while you wait for the permit. Without it, add the months permitting takes in your county (it can run from 6 to 12 months or more)
+A55: Contingency on the BUILD-OUT lines of the property block (%)
+B55: 0.1
+C55: Cushion on the build-out and installations of buildings that are not new, which is where the surprises appear (roof, electrical service, plumbing, septic and water). A lender will usually want one before it finances a renovation
+A57: RECEIPTS, PAYMENTS AND SALES TAX BREAKDOWN
+A58: Average collection days
+B58: 10
+C58: Weighted average: couples pay a retainer and the rest on a schedule before the wedding (25% at signing, 35% 180 days out, 40% 30 days before the event), and companies pay 30-45 days after the invoice. The example is 10 days. The workbook does not take negative days, so retainers received early are not modeled: your actual cash will be somewhat BETTER than the "12-Month Cash Flow" tab shows
+A59: Average days to pay suppliers
+B59: 14
+C59: Payment terms with your cleaning, maintenance and consumables suppliers: what they finance for you. The example is 14 days. It is the first thing you lose if you pay late
+A60: Month of extra pay period 1 (only if pay periods > 12)
+B60: 5
+C60: Month of the 12-Month Cash Flow in which a summer extra payment falls. It only matters if you enter more than 12 pay periods; with 12 there are no extra payments. If you use it, July is Month 5, because Month 1 of the plan is March
+A61: Month of extra pay period 2 (only if pay periods > 12)
+B61: 10
+C61: Month of the 12-Month Cash Flow in which a holiday extra payment falls. It only matters if you enter more than 12 pay periods; with 12 there are no extra payments. If you use it, December is Month 10, because Month 1 of the plan is March
+A62: Alcohol share of the venue's own sales (the venue sells none: keep it at zero)
+B62: 0
+C62: ZERO: the venue sells no alcohol. The bar belongs to the exclusive caterer (or a licensed bartending service), which serves under its own liquor license or catering permit and bills it to the client; the second sales line of the P&L is the commission the caterer pays you
+A63: Sales tax on alcohol (the venue sells none)
+B63: 0.08
+C63: NO EFFECT in this plan: the venue sells no alcohol (the caterer does, under its own license) and the commission line carries its own rate in column G of the P&L
+A64: CONTROL THRESHOLDS AND FLOORS
+A65: DSCR limit (minimum acceptable)
+B65: 1.15
+C65: Below 1.0 the business does not generate enough to repay the loan. Lenders often write a minimum DSCR into the loan covenants: ask yours. Kit default: 1.15×
+A66: DSCR target (green)
+B66: 1.25
+C66: What lenders commonly look for before approving a loan comfortably. Kit default: 1.25× (editable estimate)
+A67: Minimum cushion above break-even
+B67: 0.15
+C67: How far you can fall below plan before you start losing money
+A68: State / local minimum wage, annual full-time
+C68: Your state or local minimum wage as an annual full-time figure (hourly rate × 2,080 hours), if it is higher than the federal $7.25 an hour. With 0, the traffic light compares only against the federal floor
+DV B4 B5 B22 B24 B26 B27 B30 B31 B42 B65 B66 B68: decimal 0 · Enter a number greater than or equal to 0.
+DV B7 B8 B11 B13 B14 B15 B16 B17 B18 B20 B28 B32 B37 B38 B39 B40 B41 B48 B52 B55 B62 B63 B67: decimal 0 · Enter a percentage between 0 and 1 (0.35 = 35%).
+DV B58 B59: whole 1 · Days range from 1 to 365.
+DV B34: whole 0 · Whole years of interest-only period, from 0 to 15. If it equals or exceeds the loan term, the sheet ignores it.
+DV B53: whole 0 · Whole number of months (0 to 24).
+DV B60 B61: whole 1 · Month of the year, from 1 to 12.
+DV B33: whole 1 · Loan term in whole years: the amortization schedule in this workbook runs up to 15 years.
+DV B44 B45: whole 1 · Useful life in WHOLE YEARS (1 to 50). Depreciation here is straight-line book depreciation; tax rules such as MACRS or Section 179 are separate.
+DV B6 B25 B35 B51 B54: whole 1 · Enter a WHOLE number of 1 or more: this cell is a count and several formulas divide by it.
+DV B21: whole 12 · Monthly pay periods per year, from 12 to 16. Keep 12 in the US: it is not your payroll frequency. Extra pay periods apply only if you enter more than 12.
+
+## Startup Costs
+A1: WEDDING VENUE BUSINESS PLAN: BARN & EVENT VENUE
+A2: Estimated Startup Costs — barn conversion on a leased property, 200 guests, exclusive caterer
+A3: US kit example (2026) — barn conversion on a leased property; replace with your own quotes.
+A5: Item
+B5: Amount
+C5: % of startup costs
+D5: Notes
+E5: Taxable / recoverable tax?
+A6: STARTUP COSTS
+B6 = 570500
+C6 = 0.8519
+A7: Architect, engineer & code consultant (change of occupancy)
+B7: 25000
+C7 = 0.0373
+D7: Architect, engineer and code consultant drawings for the change of occupancy to assembly use (A-2) and the building permit. They are the base for the zoning approval and the certificate of occupancy
+E7: Yes
+A8: Conditional use permit, zoning hearing, traffic & septic studies, permit fees
+B8: 15000
+C8 = 0.0224
+D8: Conditional (special) use permit from the county: hearing, traffic and septic studies, and permit fees. No sales tax. Fees and timelines vary widely by county: get local quotes and ask your county planning office
+E8: No
+A9: Barn renovation: floor, doors, insulation, fixtures & paint
+B9: 80000
+C9 = 0.1195
+D9: On EXISTING buildings. The cosmetic work is the small part: sprinklers, septic, restrooms and accessibility drive the budget. Get two quotes on the architect's drawings
+E9: Yes
+A10: Fire sprinkler system (city water; a tank and fire pump cost more)
+B10: 70000
+C10 = 0.1045
+D10: Sprinklers need city water; a tank and fire pump, a new septic system or a strict county can double this line. Whether you need them depends on the fire code your county has adopted: ask the building official and the fire marshal in writing, and get local quotes
+E10: Yes
+A11: Ceremony site: pergola, tent platform & ceremony seating
+B11: 25000
+C11 = 0.0373
+D11: This is the rain plan: an investment, not an extra. A tent platform and a pergola let the ceremony go ahead in bad weather; ask your fire marshal about tent permits and egress
+E11: Yes
+A12: ADA-compliant restrooms (septic upgrade quoted apart)
+B12: 45000
+C12 = 0.0672
+D12: With ADA-compliant restrooms and an accessible route: check it with your architect against the ADA standards. The septic upgrade (a new or expanded system for your occupant load) is budgeted apart: get an engineer's quote
+E12: Yes
+A13: Electrical service, exterior, exit & emergency lighting
+B13: 30000
+C13 = 0.0448
+D13: Power for the hall, the tent, the caterer's kitchen and the grounds, plus exit and emergency lighting. Ask the utility about the available capacity BEFORE you sign: a new service in the country takes time
+E13: Yes
+A14: Standby generator
+B14: 15000
+C14 = 0.0224
+D14: Backup if the grid fails or the power does not reach the property: a blackout in the middle of a wedding has no fix
+E14: Yes
+A15: HVAC for the hall
+B15: 30000
+C15 = 0.0448
+D15: Heating and cooling to use the hall all year, including August weddings
+E15: Yes
+A16: Caterer's prep & warming kitchen: sinks, prep tables, ice machine, water & drain
+B16: 25000
+C16 = 0.0373
+D16: The space where the caterer plates and washes: a prep & warming kitchen, not a production kitchen. The caterer cooks in its own commissary, which is why the plan has no full kitchen. The caterer holds the health permit; ask your county whether it requires a plan review of the space
+E16: Yes
+A17: Tables, chairs for 200 & base linens
+B17: 30000
+C17 = 0.0448
+D17: Round and banquet tables, chairs for 200 and base linens. Special decor is hired by the couple
+E17: Yes
+A18: Bridal suite & groom's lounge furnishings and decor
+B18: 15000
+C18 = 0.0224
+D18: Sofas, mood lighting, mirrors and fixed decor for the bridal suite and the groom's lounge
+E18: Yes
+A19: Sound system, decibel meter & lighting
+B19: 12000
+C19 = 0.0179
+D19: The decibel meter is your insurance against noise complaints: many county ordinances and CUPs require one. Check yours
+E19: Yes
+A20: Parking lot, driveway, signage & lighting
+B20: 35000
+C20 = 0.0523
+D20: Plan about one space for every 2.5-3 guests (Kit estimate), a driveway that holds up in the rain, gravel, lighting and ADA-accessible spaces
+E20: Yes
+A21: Landscaping, lawn & irrigation
+B21: 15000
+C21 = 0.0224
+D21: Ceremony, cocktail and photo areas. The yearly upkeep goes in fixed costs
+E21: Yes
+A22: Fire alarm, extinguishers, exit signs & ADA accessible routes
+B22: 15000
+C22 = 0.0224
+D22: Fire alarm, extinguishers, exit signs and lighting, and the accessibility upgrades your certificate of occupancy requires
+E22: Yes
+A23: Website, photography, video & brand
+B23: 8000
+C23 = 0.0119
+D23: Brand identity, a website with an availability calendar, a photo shoot and a video of the venue set up
+E23: Yes
+A24: LLC formation & attorney (lease and contracts)
+B24: 3500
+C24 = 0.0052
+D24: LLC formation and an attorney for the lease (extensions, purchase option, the owner's consent to the build-out and to using the lease as collateral) and your contracts, plus the setup with your CPA / bookkeeper. SBA lenders typically require a lease term at least as long as the loan; confirm with your lender
+E24: No
+A25: Launch: bridal shows, open house & listing storefronts
+B25: 10000
+C25 = 0.0149
+D25: The first bridal show, an open house with the caterer and a paid storefront listing on The Knot / WeddingWire for the first year
+E25: Yes
+A26: Lease security deposit
+B26 = 10000
+C26 = 0.0149
+D26 = 2 months of rent, from "0. Assumptions". Refundable when the lease ends: it is not depreciated and carries no tax
+E26: No
+A27: Rent during permitting and build-out
+B27 = 20000
+C27 = 0.0299
+D27 = Rent for the 4 months of build-out and permits before opening. It does not overlap the P&L, which starts on opening day: its twelve months are twelve trading months
+E27: Yes
+A28: Build-out contingency
+B28 = 37000
+C28 = 0.0552
+D28 = At 10% of the BUILD-OUT items of this block (architect, engineer & code consultant; barn renovation; fire sprinkler system; ADA-compliant restrooms; electrical service & lighting; HVAC; caterer's prep & warming kitchen; parking lot & driveway; landscaping; fire alarm, exit signs & accessible routes), not of the whole block: the other items are left out. Sprinklers on a tank and fire pump, a new septic system or a strict county can push these lines far above the example. No lender funds a build-out without a cushion: the percentage is in "0. Assumptions"
+E28: Yes
+A29: WORKING CAPITAL
+B29 = 99215.5
+C29 = 0.1481
+A30: Operating cushion until break-even
+B30 = 99215.5
+C30 = 0.1481
+D30 = Covers 3 months of year-1 CASH fixed costs (the P&L fixed costs minus depreciation, which is not paid out), the minimum the Instructions of this workbook ask for
+E30: No
+A31: TOTAL STARTUP COSTS (sum of the blocks)
+B31 = 669715.5
+D31 = The percentages in column C are read on this figure, which includes the working capital (15% of the total). To compare the breakdown with another plan, use the CAPEX row below.
+A32: CAPEX (startup costs excluding working capital)
+B32 = 570500
+D32: What you buy: build-out, equipment, launch and formation costs. The cash cushion is not an investment: it is working capital
+A33: Recoverable input tax on capex
+B33 = 0
+D33 = At 0% on the items marked "Yes" in the tax column. US: the sales tax you pay on equipment is part of its cost and is not recovered, so this rate is 0. UK (VAT-registered): 20%, reclaimed on your VAT return, but you pay it first, so the loan has to cover it
+A34: TOTAL CASH NEEDED AT LAUNCH
+B34 = 669715.5
+D34: This is the figure the "Financing" tab has to cover
+A35: DEPRECIATION BASES (not added to startup costs)
+A36: Build-out, fixtures and setup
+B36 = 407000
+D36 = Depreciated over 15 years
+A37: Machinery, furniture and equipment
+B37 = 97000
+D37 = Depreciated over 7 years
+A38: Annual depreciation of fixed assets
+B38 = 40990.4762
+D38 = Not depreciated, because they are not fixed assets: conditional use permit, studies and permit fees; website, photography, video & brand; LLC formation & attorney; launch; lease security deposit; rent during permitting and build-out, and the working capital reserve. They add up to 165716 of the 669716 total investment.
+DV E7:E25: list "Yes,No" · Enter "Yes" or "No": the recoverable input tax on startup costs comes from this column.
+DV B7 B8 B9 B10 B11 B12 B13 B14 B15 B16 B17 B18 B19 B20 B21 B22 B23 B24 B25: decimal 0 · Enter a number greater than or equal to 0.
+
+## 3-Year P&L
+A1: PROFIT AND LOSS STATEMENT — 3 YEARS
+A2: Base case — barn wedding & event venue, 200 guests, exclusive caterer
+A4: Item
+B4: Year 1
+C4: Year 2
+D4: Year 3
+E4: % of sales (year 1)
+F4: Notes
+G4: Sales tax rate on the line (%)
+A5: REVENUE
+A6: Guests per event (average)
+B6 = 90
+C6 = 97.2
+D6 = 102.06
+F6: Growth for years 2 and 3 is set in "0. Assumptions"
+A7: Average revenue per guest excl. sales tax
+B7 = 68
+C7 = 68
+D7 = 68
+F7: Held constant at year-1 prices: a price increase is a separate decision
+A8: Events per year
+B8 = 100
+C8 = 100
+D8 = 100
+A9: TOTAL REVENUE (excl. sales tax)
+B9 = 612000
+C9 = 660960
+D9 = 694008
+E9 = 1
+A10: Venue rental & event services
+B10 = 538560
+C10 = 581644.8
+D10 = 610727.04
+E10 = 0.88
+F10: What couples and companies pay the venue: the site fee, the ceremony, setup, venue coordination on the day, cleaning and parking · The sales tax this line COLLECTS is an input (green cell to the right), 8% in the example. Whether a venue rental fee is taxable depends on the state (taxable in some, exempt in others, sometimes only when it is billed together with catering): ask your state's department of revenue.
+G10: 0.08
+A11: Caterer commission (exclusive caterer)
+B11 = 73440
+C11 = 79315.2
+D11 = 83280.96
+E11 = 0.12
+F11: What your exclusive caterer pays you for working at the venue. The plan assumes 10% of its food & beverage sales at the venue, net of sales tax, service charge and gratuities: it is an assumption, negotiate it · Sales tax: 0% in the example (green cell to the right), treated as a fee your caterer pays you, not a retail sale to the couple. Confirm the treatment in your state with your CPA.
+G11: 0
+A12: VARIABLE COSTS
+A13: Direct event costs
+B13 = 64627.2
+C13 = 69797.376
+D13 = 73287.2448
+E13 = 0.1056
+F13 = At 12% of VENUE RENTAL & SERVICES sales, not of total sales: the caterer commission has its own line · Cleaning and turnover, restroom restocking, generator fuel, parking attendants and security for each event: check it against your invoices and the Pricing & Quote Calculator
+G13: 0
+A14: Cost of the commission (none)
+B14 = 0
+C14 = 0
+D14 = 0
+E14 = 0
+F14 = At 0% of CATERER COMMISSION sales: the commission has no cost for the venue
+G14 = 0
+A15: Event consumables
+B15 = 9180
+C15 = 9914.4
+D15 = 10410.12
+E15 = 0.015
+G15 = 0
+A16: Commissions to planners and venue marketplaces
+B16 = 9180
+C16 = 9914.4
+D16 = 10410.12
+E16 = 0.015
+F16: Applied to the sales of THAT CHANNEL. With 0% of sales through planners and marketplaces in "0. Assumptions", this line is zero
+G16 = 0
+A17: Card processing fees
+B17 = 12240
+C17 = 13219.2
+D17 = 13880.16
+E17 = 0.02
+F17: Card processing fees are not subject to sales tax: no tax is recovered or deducted for them
+G17: 0
+A18: Miscellaneous and contingency
+B18 = 6120
+C18 = 6609.6
+D18 = 6940.08
+E18 = 0.01
+F18 = At 1% of sales. It is a VARIABLE cost: it moves with revenue, so it cannot sit in fixed costs
+G18 = 0
+A19: TOTAL VARIABLE COSTS
+B19 = 101347.2
+C19 = 109454.976
+D19 = 114927.7248
+E19 = 0.1656
+A20: GROSS MARGIN
+B20 = 510652.8
+C20 = 551505.024
+D20 = 579080.2752
+E20 = 0.8344
+A21: FIXED COSTS
+A22: Rent (leased property)
+B22 = 60000
+C22 = 60000
+D22 = 60000
+E22 = 0.098
+F22: The monthly amount is on the "0. Assumptions" tab; here it is multiplied by twelve. The months of rent before opening are on "Startup Costs" and are NOT counted twice
+G22 = 0
+A23: Labor (wages + employer payroll taxes)
+B23 = 191862
+C23 = 199862
+D23 = 207862
+E23 = 0.3135
+F23: Comes from the Staffing tab: it is the SAME number, not a separate estimate. Years 2 and 3 add the new hires declared on that tab, not a percentage of volume
+G23: 0
+A24: Utilities (power, propane, water, internet & trash)
+B24 = 24000
+C24 = 24000
+D24 = 24000
+E24 = 0.0392
+F24: Enter the monthly bills excl. sales tax. The workbook applies a single tax treatment to this whole line, the one in the column next to it; if one utility is taxed differently in your area, give it its own line
+G24 = 0
+A25: Insurance (general liability, host liquor liability & property)
+B25 = 12000
+C25 = 12000
+D25 = 12000
+E25 = 0.0196
+F25: Insurance premiums are not subject to sales tax: there is no recoverable tax on them
+G25: 0
+A26: Marketing (The Knot/WeddingWire, Google Ads, social)
+B26: 18000
+C26 = 18000
+D26 = 18000
+E26 = 0.0294
+F26: The Knot / WeddingWire storefront, Google Ads and social media. Measure the cost per lead of each channel before you renew the premium storefront
+G26 = 0
+A27: Bridal shows & open houses
+B27: 5000
+C27 = 5000
+D27 = 5000
+E27 = 0.0082
+F27: Two bridal shows a year and the venue's open houses, with the caterer
+G27 = 0
+A28: Grounds & landscaping contractors
+B28: 10000
+C28 = 10000
+D28 = 10000
+E28 = 0.0163
+F28: The big jobs your own staff does not do: tree trimming, mowing, irrigation and treatments
+G28 = 0
+A29: Repairs, paint & furniture replacement
+B29: 7000
+C29 = 7000
+D29 = 7000
+E29 = 0.0114
+F29: Paint, small projects between seasons and replacement of chairs, tables and linens
+G29 = 0
+A30: Accounting, payroll & legal
+B30: 5000
+C30 = 5000
+D30 = 5000
+E30 = 0.0082
+F30: Accounting, taxes for the LLC and payroll for the seasonal W-2 employees, including their rehire each season
+G30 = 0
+A31: Venue management software, CRM, website & phone
+B31: 3600
+C31 = 3600
+D31 = 3600
+E31 = 0.0059
+F31: Venue management software (Tripleseat, Perfect Venue or HoneyBook), booking calendar, proposals, a CRM for couples and companies, website hosting and phone
+G31 = 0
+A32: Safety training & compliance
+B32: 600
+C32 = 600
+D32 = 600
+E32 = 0.001
+F32: Safety training for setup, lifting, work at height and grounds work, and the safety programs your state asks of workers' comp policies. Check the requirements with your insurance agent
+G32 = 0
+A33: Property taxes passed through & local fees
+B33: 6000
+C33 = 6000
+D33 = 6000
+E33 = 0.0098
+F33: Property taxes and other local fees that the owner passes through to you under the lease. Enter those of your county
+G33 = 0
+A34: Sprinkler, alarm, extinguisher & generator inspections
+B34: 2800
+C34 = 2800
+D34 = 2800
+E34 = 0.0046
+F34: Periodic inspections of the electrical system, extinguishers, sprinkler and alarm system by a licensed contractor, and servicing of the standby generator
+G34 = 0
+A35: Cleaning supplies, pest control & septic pumping
+B35: 4000
+C35 = 4000
+D35 = 4000
+E35 = 0.0065
+F35: Deep seasonal cleaning, supplies, pest control by a licensed company and septic pumping
+G35 = 0
+A36: Depreciation of fixed assets
+B36 = 40990.4762
+C36 = 40990.4762
+D36 = 40990.4762
+E36 = 0.067
+F36: Comes from the depreciation bases on the Startup Costs tab: real fixed assets only. It does NOT rise with inflation: it is a charge on the HISTORICAL cost of the assets
+G36: 0
+A37: Interest expense (loan interest)
+B37 = 47000
+C37 = 44050.9664
+D37 = 40807.0295
+E37 = 0.0768
+F37: Only INTEREST is an expense. Principal repaid appears on the cash flow tab
+G37: 0
+A38: TOTAL FIXED COSTS
+B38 = 437852.4762
+C38 = 442903.4426
+D38 = 447659.5057
+E38 = 0.7154
+A39: Recoverable input tax on variable costs
+B39 = 0
+C39 = 0
+D39 = 0
+F39: Each line at ITS OWN rate, read from the column next to it. It is what the cash flow tab overpays to suppliers and later deducts (zero wherever no tax is recoverable)
+A40: Recoverable input tax on fixed costs
+B40 = 0
+C40 = 0
+D40 = 0
+A41: PRE-TAX INCOME (EBT)
+B41 = 72800.3238
+C41 = 108601.5814
+D41 = 131420.7695
+E41 = 0.119
+A42: Net operating losses carried forward (opening)
+B42 = 0
+C42 = 0
+D42 = 0
+F42: Federal rules let a year's losses offset the profits of later years (the federal limit is 80% of taxable income; this model offsets 100% as a simplification)
+A43: Taxable income (after loss offset)
+B43 = 72800.3238
+C43 = 108601.5814
+D43 = 131420.7695
+A44: Years with positive taxable income (cumulative)
+B44 = 1
+C44 = 2
+D44 = 3
+A45: Effective income tax rate applied
+B45 = 0.25
+C45 = 0.25
+D45 = 0.25
+F45: The "years 1-2" rate applies to the first two years with positive taxable income, not to the first two calendar years of the business. The model approximates this by counting the first two profitable years
+A46: Income tax
+B46 = 18200.081
+C46 = 27150.3953
+D46 = 32855.1924
+A47: Net operating losses carried forward (closing)
+B47 = 0
+C47 = 0
+D47 = 0
+A48: NET INCOME
+B48 = 54600.2429
+C48 = 81451.186
+D48 = 98565.5771
+E48 = 0.0892
+A49: KEY RATIOS
+A50: Ratio
+B50: Year 1
+C50: Year 2
+D50: Year 3
+E50: Threshold
+F50: Comment
+A51: Gross margin / Sales
+B51 = 0.8344
+C51 = 0.8344
+D51 = 0.8344
+E51: 0.8
+F51: Floor for the margin after ALL variable costs (direct event cost, consumables, commissions, card fees and miscellaneous): with no goods to buy, a venue keeps most of its sales. Kit estimate
+A52: Direct event costs (the commission has no cost)
+B52 = 64627.2
+C52 = 69797.376
+D52 = 73287.2448
+A53: Direct event cost / Sales
+B53 = 0.1056
+C53 = 0.1056
+D53 = 0.1056
+E53: 0.15
+F53: Cleaning, restrooms, generator fuel, security and parking attendants of each event over sales. Above this ceiling, something leaks at every setup. Kit estimate
+A54: Labor cost / Sales
+B54 = 0.3135
+C54 = 0.3024
+D54 = 0.2995
+E54: 0.35
+F54: Ceiling for the venue's own labor over sales, with no servers or cooks (the caterer provides them). Kit estimate
+A55: Rent / Sales
+B55 = 0.098
+C55 = 0.0908
+D55 = 0.0865
+E55: 0.12
+F55: Ceiling for rent over sales: above it, occupancy has to be very high to pay it. Kit estimate
+A56: Net income / Sales
+B56 = 0.0892
+C56 = 0.1232
+D56 = 0.142
+E56: 0.05
+F56: Floor for net income at full pace for the plan to hold up: Kit estimate
+A57: Break-even reached
+B57 = Yes
+C57 = Yes
+D57 = Yes
+F57: Compares each year's sales with that same year's threshold, which the Break-Even tab calculates with that year's fixed costs
+A59: All figures are EXCL. SALES TAX. Years 2 and 3 are in year-1 prices unless you raise cost inflation in the "0. Assumptions" tab. The "Sales tax rate on the line (%)" column shows, on SALES lines, the rate collected on each one and, on COST lines, the rate paid on that item. The cash flow tab reads it: insurance and card fees carry no sales tax, and wages, depreciation and interest carry none either.
+DV B26 B27 B28 B29 B30 B31 B32 B33 B34 B35: decimal 0 · Enter a number greater than or equal to 0.
+DV E51 E53 E54 E55 E56 G10 G11 G13: decimal 0 · Enter a percentage between 0 and 1 (0.35 = 35%).
+
+## Break-Even
+A1: BREAK-EVEN
+A2: Break-even — wedding & event venue
+A4: Variable
+B4: Year 1
+C4: Year 2
+D4: Year 3
+E4: Notes
+A5: BASE DATA BY YEAR
+A6: Annual fixed costs
+B6 = 437852.4762
+C6 = 442903.4426
+D6 = 447659.5057
+E6: The SAME fixed costs as the P&L. Each year has its own, which is why the threshold cannot be a single one for all three years
+A7: Monthly fixed costs
+B7 = 36487.7063
+C7 = 36908.6202
+D7 = 37304.9588
+A8: Average revenue per guest excl. sales tax
+B8 = 68
+C8 = 68
+D8 = 68
+A9: Variable cost per guest
+B9 = 11.2608
+C9 = 11.2608
+D9 = 11.2608
+E9: Comes from the P&L total variable costs, not from a separate estimate. It includes miscellaneous and contingency, which is a percentage of sales
+A10: Contribution margin per guest
+B10 = 56.7392
+C10 = 56.7392
+D10 = 56.7392
+E10: Price per guest minus unit variable cost
+A11: Events per year
+B11 = 100
+C11 = 100
+D11 = 100
+E11: The same calendar as the P&L and the scenarios
+A12: Principal repaid in the year
+B12 = 29490.3356
+C12 = 32439.3692
+D12 = 35683.3061
+E12: Principal is NOT a P&L expense, but it leaves the cash account. Without it, the published break-even threshold would sit below the real one
+A13: ACCOUNTING BREAK-EVEN (includes depreciation)
+A14: Guests needed per year
+B14 = 7716.9307
+C14 = 7805.9515
+D14 = 7889.7747
+A15: Guests needed per event
+B15 = 77.1693
+C15 = 78.0595
+D15 = 78.8977
+A16: Revenue needed per year
+B16 = 524751.2898
+C16 = 530804.7011
+D16 = 536504.6809
+A17: CASH BREAK-EVEN (loan payments in, depreciation out)
+A18: Cash fixed costs + principal repaid for the year
+B18 = 426352.3356
+C18 = 434352.3356
+D18 = 442352.3356
+E18: The P&L fixed costs without depreciation (which is not paid in cash) and WITH principal repaid (which is). This is the threshold that decides whether cash holds up
+A19: Guests needed per year (cash)
+B19 = 7514.2465
+C19 = 7655.2425
+D19 = 7796.2385
+A20: Guests needed per event (cash)
+B20 = 75.1425
+C20 = 76.5524
+D20 = 77.9624
+A21: Revenue needed per year (cash)
+B21 = 510968.7627
+C21 = 520556.4904
+D21 = 530144.2181
+A22: COMPARISON WITH THE PLAN
+A23: Guests per event forecast in the plan
+B23 = 90
+C23 = 97.2
+D23 = 102.06
+A24: Cushion above CASH break-even (%)
+B24 = 0.1977
+C24 = 0.2697
+D24 = 0.3091
+E24: How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the "0. Assumptions" tab
+A25: INTERPRETATION
+A26 = With the revenue per guest excl. sales tax above, you need 78 guests per event over your 100 events a year to avoid losing money (accounting break-even, depreciation included), and 76 for cash to hold (cash break-even: depreciation out, because it is not paid, and the year's loan payment in). The "Revenue needed per year" rows show the same figures in your currency.
+A28: BREAK-EVEN SENSITIVITY
+A29: Guests per event needed to cover costs given the average revenue per guest (columns) and the variable cost per guest (rows). Green cells are below the guests per event the plan forecasts.
+A31: Guests per event needed: average revenue per guest excl. sales tax (columns) × variable cost per guest (rows)
+B31 = 66
+C31 = 68
+D31 = 70
+E31 = 72
+A32 = 9.5717
+B32 = 77.5945
+C32 = 74.9384
+D32 = 72.4582
+E32 = 70.1368
+A33 = 10.4162
+B33 = 78.7735
+C33 = 76.0375
+D33 = 73.4852
+E33 = 71.0987
+A34 = 11.2608
+B34 = 79.9888
+C34 = 77.1693
+D34 = 74.5418
+E34 = 72.0873
+A35 = 12.1054
+B35 = 81.2423
+C35 = 78.3353
+D35 = 75.6292
+E35 = 73.1038
+A36 = 12.9499
+B36 = 82.5357
+C36 = 79.5371
+D36 = 76.7488
+E36 = 74.1493
+
+## Scenarios
+A1: SCENARIOS
+A4: Metric
+B4: Pessimistic
+C4: Base
+D4: Optimistic
+E4: Notes
+A5: Guests per event
+B5: 85
+C5 = 90
+D5: 95
+A6: Average revenue per guest excl. sales tax
+B6: 60
+C6 = 68
+D6: 72
+A7: Events per year
+B7: 85
+C7 = 100
+D7: 115
+A8: ANNUAL REVENUE (excl. sales tax)
+B8 = 433500
+C8 = 612000
+D8 = 786600
+A9: Direct event costs
+B9 = 45777.6
+C9 = 64627.2
+D9 = 83064.96
+A10: Cost of the commission (none)
+B10 = 0
+C10 = 0
+D10 = 0
+A11: Event consumables
+B11 = 6502.5
+C11 = 9180
+D11 = 11799
+A12: Commissions to planners and venue marketplaces
+B12 = 6502.5
+C12 = 9180
+D12 = 11799
+A13: Card processing fees
+B13 = 8670
+C13 = 12240
+D13 = 15732
+A14: Miscellaneous and contingency
+B14 = 4335
+C14 = 6120
+D14 = 7866
+A15: TOTAL VARIABLE COSTS
+B15 = 71787.6
+C15 = 101347.2
+D15 = 130260.96
+A16: GROSS MARGIN
+B16 = 361712.4
+C16 = 510652.8
+D16 = 656339.04
+A17: FIXED COSTS (the P&L's)
+B17 = 437852.4762
+C17 = 437852.4762
+D17 = 437852.4762
+E17: Fixed costs do not change with the scenario: that is why they are fixed
+A18: PRE-TAX INCOME (EBT)
+B18 = -76140.0762
+C18 = 72800.3238
+D18 = 218486.5638
+A19: Income tax
+B19 = 0
+C19 = 18200.081
+D19 = 54621.641
+E19: At the "years 1-2" effective income tax rate, offsetting prior net operating losses
+A20: NET INCOME
+B20 = -76140.0762
+C20 = 54600.2429
+D20 = 163864.9229
+A21: Guests per event for break-even
+B21 = 102.8924
+C21 = 77.1693
+D21 = 63.3758
+A22: WHAT EACH SCENARIO DEMANDS
+A23: Labor cost / Sales
+B23 = 0.4426
+C23 = 0.3135
+D23 = 0.2439
+E23: The SAME staffing in all three scenarios. If labor cost blows up in the pessimistic case, adjust it in the Staffing tab, not here
+A24: Guests per year per full-time equivalent
+B24 = 1952.7027
+C24 = 2432.4324
+D24 = 2952.7027
+E24: Guests each full-time position on the "Staffing" tab would have to host per year. In the optimistic scenario it tells you whether you need to hire
+A25: Year-1 closing cash balance (estimate, same method in all three scenarios)
+B25 = 34575.5644
+C25 = 165315.8835
+D25 = 274580.5635
+E25: ESTIMATED balance: working capital plus the year's result, adding back depreciation (which is not paid) and subtracting loan principal. It does not include the timing gap between receipts and payments or the sales tax settlement, so the three columns can be compared with each other. In red, the scenario runs out of cash
+A26: Actual month-12 balance from the 12-Month Cash Flow tab (Base case only)
+C26 = 180685.0854
+E26: The ACTUAL base-case balance, with its timing of receipts and payments and its sales tax settlement. It exists only for the Base scenario, the only one with its own monthly cash flow: that is why it is not in the row above, where it would be compared against two estimates
+A28: The "Base case" column reads its three inputs from the "0. Assumptions" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: the only things that change are guests per event, revenue per guest and events. FIXED COSTS are the same in all three: miscellaneous and contingency, which is a percentage of sales, sits at the top with the variable costs and each scenario carries its own.
+DV B5 B6 D5 D6: decimal 0 · Enter a number greater than or equal to 0.
+DV B7 D7: whole 1 · Enter a WHOLE number of 1 or more: this cell is a count and several formulas divide by it.
+
+## Staffing
+A1: STAFFING AND LABOR COSTS
+A2 = Payroll — 12 pay periods + employer taxes 10%
+A4: Position
+B4: People
+C4: FTE
+D4: Gross pay per month (total for the position)
+E4: Employer payroll taxes (total for the position)
+F4: Cost per month (total for the position)
+G4: Cost per year
+H4: Hours per week per person
+I4: Hours per year for the position
+J4: Notes
+A5: Owner — GM, sales & tours
+B5: 1
+C5: 1
+D5: 4500
+E5 = 450
+F5 = 4950
+G5 = 59400
+H5 = 40
+I5 = 1840
+J5: Sells, gives tours, signs contracts, runs the calendar and coordinates the caterer. The workbook imputes a monthly salary as if on payroll, which is the prudent side. The example pays the owner $4,500 a month, below the national median pay for event planners (BLS): draw the rest from profit. How the owner of an LLC is paid depends on the tax election: ask your CPA
+A6: Venue coordinator (seasonal, Mar-Nov)
+B6: 1
+C6: 0.75
+D6: 3380
+E6 = 338
+F6 = 3718
+G6 = 44616
+H6 = 30
+I6 = 1380
+J6: Seasonal W-2 employee, full time from March to November, which equals about 75% over the year. Prepares each event with the couple and the caterer and runs it on the day. From December to February (holiday parties and winter events) the owner coordinates. The example budgets about $3,380 a month for this position
+A7: Facilities & grounds
+B7: 1
+C7: 0.8
+D7: 3050
+E7 = 305
+F7 = 3355
+G7 = 40260
+H7 = 32
+I7 = 1472
+J7: Grounds, irrigation, driveways, small repairs, the standby generator and getting the hall and the tent ready. At 80% of a full-time schedule; the big jobs (tree trimming, painting) go in fixed costs. The example budgets about $3,050 a month for this position
+A8: Event attendants: setup, parking & restrooms (seasonal, part-time W-2)
+B8: 2
+C8: 0.35
+D8: 2062
+E8 = 206.2
+F8 = 2268.2
+G8 = 27218.4
+H8 = 14
+I8 = 1288
+J8: Two seasonal part-time W-2 attendants at about 35% of a full-time schedule each: setup, guest access and parking, restroom restocking and load-out. Two at each wedding and one at the rest. Never as 1099 contractors who invoice you: with your schedule and your direction they are employees. The plan budgets at least $17/h
+A9: Weekend sales & tours (part-time)
+B9: 1
+C9: 0.2
+D9: 763
+E9 = 76.3
+F9 = 839.3
+G9 = 10071.6
+H9 = 8
+I9 = 368
+J9: At 20% of a full-time schedule: Saturday morning tours, bridal shows and follow-up of the leads from your storefront listings. The example budgets about $763 a month for this position
+A10: Housekeeping & turnover (part-time)
+B10: 1
+C10: 0.25
+D10: 780
+E10 = 78
+F10 = 858
+G10 = 10296
+H10 = 10
+I10 = 460
+J10: At 25% of a full-time schedule: turnover cleaning of the hall, restrooms and caterer's kitchen between events. The deep clean after each wedding is in the direct event cost. The example budgets about $780 a month for this position
+A11: TOTAL STAFF
+B11 = 7
+C11 = 3.7
+D11 = 14535
+E11 = 1453.5
+F11 = 15988.5
+G11 = 191862
+I11 = 6808
+A12: STAFF GROWTH (stepped cost)
+A13: Annual cost of year-2 hires
+B13: 8000
+J13: FULL ANNUAL cost (gross pay + employer payroll taxes, over all pay periods) of whoever you hire that year. The P&L adds it to the previous year's cost: staffing grows by people, not by a percentage
+A14: Annual cost of year-3 hires
+B14: 8000
+J14: FULL ANNUAL cost (gross pay + employer payroll taxes, over all pay periods) of whoever you hire that year. The P&L adds it to the previous year's cost: staffing grows by people, not by a percentage
+A15: Labor cost, year 2
+B15 = 199862
+A16: Labor cost, year 3
+B16 = 207862
+A17: COVERAGE OF SERVICE HOURS
+A18: Full-time week (hours per week)
+B18: 40
+J18: 40 hours a week is the FLSA overtime threshold for non-exempt employees; some states add daily overtime rules. Change it if your own full-time week is different
+A19: Weeks worked per year per person
+B19: 46
+J19: 46 weeks: 52 minus about six weeks for vacation, holidays, the January closure and average absences. There is no federal vacation requirement in the US: adjust it to your own policy
+A20: Work hours per event to cover
+B20: 9.2
+J20: Average event day, from setup to load-out: wedding 13 hours, corporate 9, private celebration 8 and micro wedding 5 (9.7 hours on average with the plan's mix)
+A21: People needed at the same time at each event
+B21: 2.3
+J21: Venue staff on site at the same time during the event: the venue coordinator and two event attendants at weddings, the coordinator and one attendant at the rest (about 2.4 on average with the plan's mix). Servers and bartenders belong to the caterer
+A22: Overhead hours per event, outside the event day
+B22: 12
+J22: Hours per event outside the event day: tours and meetings with couples, planning with the caterer, maintenance, grounds, cleaning and admin. This is the part of the team that works all year, spread across the events
+A23: Overhead staff per event
+B23: 3
+J23: Manager, maintenance and support (sales or housekeeping) at the same time
+A24: Service hours to cover per year
+B24 = 5716
+A25: Hours hired per year
+B25 = 6808
+A26: Coverage (hired / needed)
+B26 = 1.191
+J26: Below 100% the staff cannot cover the hours the plan declares: either hire more or cut the hours
+A28: The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the row: for a position with two people they include both. "FTE" is the share of a full-time week and is used to compare pay with the legal floor pro rata. The payroll tax rate and the number of pay periods are in the "0. Assumptions" tab.
+A29: The wage floor is the HIGHER of the federal minimum wage and the state or local floor you type in "0. Assumptions"; part-time positions carry it pro rata. Seasonal staff are W-2 employees: never pay as 1099 contractors the people whose schedule and work the venue directs. Event servers and bartenders belong to the caterer, not to this payroll.
+DV B5 B6 B7 B8 B9 B10 B13 B14 B18 B19 B20 B22 D5 D6 D7 D8 D9 D10: decimal 0 · Enter a number greater than or equal to 0.
+DV B21 B23: decimal 0 · Enter a number greater than or equal to 0; this cell accepts decimals (1.7 people is an average presence, not a person and a half).
+DV C5 C6 C7 C8 C9 C10: decimal 0 · Enter a percentage between 0 and 1 (0.35 = 35%).
+
+## Instructions
+A1: HOW TO USE THIS WORKBOOK — Wedding Venue Financial Projections
+A3: HOW TO USE THIS WORKBOOK
+A4: This financial plan is a MODEL: you type only in the GREEN cells and everything else recalculates on its own.
+A5: 1. "0. Assumptions" is the control sheet: guests per event, revenue per guest excl. sales tax, events per year, the mix of venue rental & services and caterer commission, direct event cost, rent, financing and taxes.
+A6: 2. Startup cost items, fixed costs and staffing are typed in their own tab, also in green. No number is typed twice.
+A7: 3. Only "Break-Even" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in "Scenarios", seasonality and the launch ramp-up in "12-Month Cash Flow", and the other funding sources in "Financing" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in "Loan requested" on "0. Assumptions"). Everything else is calculated.
+A8: 4. All figures are EXCL. SALES TAX. To turn a price that includes sales tax into the pre-tax price, divide by 1 + your sales tax rate. The venue bills venue rental & services (8% example rate) and the caterer commission (0%); the caterer bills the menu and the bar to the couple, and they do not enter this workbook. The rate of each sales line is in the sales tax column of the P&L, and from it come the collections and the sales tax collected. The workbook assumes you file and remit quarterly; if your state asks for monthly returns, adjust the timing.
+A9: 5. If you change the staffing, the P&L reads it on its own: labor cost comes from the "Staffing" tab, not from a separate estimate.
+A10: 6. The "12-Month Cash Flow" tab answers the question that decides a bank deal: in which month the cash runs out. Its Month 1 is MARCH: the venue opens in spring and reaches its first winter with the cash of the season. The minimum balance of the year can never show in red. Retainers received early are not modeled: your actual cash will be somewhat better.
+A11: 7. The "Financing" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.
+A12: 8. The Word business plan in this kit uses the figures of this Excel; the pricing calculator and the contract templates use the same collection and cancellation percentages. If you change a green cell, this workbook rules.
+A14: RATIOS AUDITED BY THIS WORKBOOK
+A15: Thresholds live in the "Threshold" column of the KEY RATIOS block of the P&L: change them there and the traffic light changes with them.
+A17: Ratio
+B17: Year 1 value
+C17: Threshold
+D17: Status
+A18: Direct event cost / Sales
+B18 = 0.1056
+C18 = 0.15
+D18 = OK
+A19: Labor cost / Sales
+B19 = 0.3135
+C19 = 0.35
+D19 = OK
+A20: Rent / Sales
+B20 = 0.098
+C20 = 0.12
+D20 = OK
+A21: Net income / Sales
+B21 = 0.0892
+C21 = 0.05
+D21 = OK
+A22: Gross margin / Sales
+B22 = 0.8344
+C22 = 0.8
+D22 = OK
+A24: THIS PLAN'S KEY FIGURES
+A25: Total startup costs (sum of the blocks)
+B25 = 669715.5
+A26: Total cash needed at launch
+B26 = 669715.5
+A27: Working capital funded
+B27 = 99215.5
+A28: Forecast year-1 revenue
+B28 = 612000
+A29: Year-1 net income
+B29 = 54600.2429
+A30: Guests per event for ACCOUNTING break-even (depreciation included)
+B30 = 77.1693
+A31: Project payback (years), before debt
+B31 = Over 3 years
+A33: US WEDDING VENUE BENCHMARKS (sourced) AND KIT ESTIMATES
+A34: Benchmark
+B34: Value
+C34: Source
+D34: Note
+A35: Month 1 of the plan
+B35: March
+C35: Plan decision
+D35: Permitting and the build-out close during the winter before; the peaks are October, September and June, and January is the trough. The seasonality row of the cash flow is already rotated
+A36: Event mix of the plan
+B36: 100 events: 35 weddings, 25 corporate, 30 private celebrations, 10 micro weddings
+C36: Kit estimate
+D36: Weddings 130 guests × ($9,000 site fee + 10% of $110 F&B per guest), corporate 70 × ($3,500 + 10% of $50), private 80 × ($4,000 + 10% of $55), micro 30 × ($2,000 + 10% of $80), excl. sales tax
+A37: Saturday ceiling
+B37: About 30-35 prime Saturdays a year
+C37: Kit estimate
+D37: The 35 weddings do not all fit on peak Saturdays: the rest go on Fridays, Sundays and the off-season at a lower rate. The workbook does not check this ceiling: check it against your calendar
+A38: Guests per wedding
+B38: About 100-150 at a barn venue
+C38: Kit estimate; national wedding studies publish yearly averages: check the latest
+D38: The example uses 130 per wedding and 90 on average with the other events
+A39: Booking lead time
+B39: 12-18 months for weddings
+C39: Kit estimate
+D39: The first season is booked before opening, only with holds contingent on the CUP and the certificate of occupancy; the plan's ramp-up lasts 12 months
+A40: Direct cost per event
+B40: $1,000 wedding · $500 corporate · $500 private · $300 micro
+C40: Kit estimate
+D40: Cleaning, restrooms, generator fuel, parking attendants and security; servers and cooks belong to the caterer
+A41: Caterer commission (exclusive caterer)
+B41: About 10% of the caterer's food & beverage sales at the venue
+C41: Kit assumption (no public benchmark)
+D41: Net of sales tax, service charge and gratuities. Negotiate yours; monthly statement with an audit right
+A42: Venue staff per event
+B42: Coordinator + 1-2 attendants
+C42: Kit estimate
+D42: Wedding: 2 attendants, the rest 1; servers and bartenders are the caterer's
+A43: Sales tax on venue charges
+B43: Varies by state (8% example on venue rental & services; 0% on the caterer commission)
+C43: Your state's department of revenue
+D43: Some states tax the site fee and others do not, sometimes only when it comes with catering: confirm it before you set your rates
+A44: Fire sprinklers in an assembly (A-2) venue
+B44: Required above an occupant-load or fire-area threshold
+C44: IBC 903.2.1.2, as adopted by your state or county
+D44: Editions and local amendments vary: ask the building official and the fire marshal in writing
+A45: Noise and music curfew
+B45: Set by your county ordinance and the conditions of your CUP
+C45: Your county zoning office
+D45: Decibel limit, sound meter, last dance indoors and speakers facing away from the neighbors
+A46: Venue rental fee (peak Saturday)
+B46: Roughly $3,500-$10,000 in published rate cards
+C46: Kit estimate from published venue rate cards (2026): get local quotes
+D46: Friday and Sunday about 15% lower, weekdays about 30% lower, off-peak about 20% lower (the kit's pricing calculator)
+A47: Well water
+B47: A well that serves your guests may count as a public water system
+C47: Ask your state drinking water program
+D47: Testing and a permit before the first event
+A48: Minimum wage
+B48: Federal $7.25/h + your state
+C48: U.S. Department of Labor (dol.gov)
+D48: The plan budgets at least $17/h for attendants; enter the floor of your state in "0. Assumptions"
+A50: To edit a cell that is not green: Review → Unprotect Sheet (there is no password).
+A51: More templates and kits in the catalog at aichef.pro/en/digital-products
+A52: Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es
+A53: Version 2.2 · October 2026 · aichef.pro/en/digital-products/wedding-venue-business-plan · info@aichef.pro
+A54: Planning tool, not financial, tax or legal advice. Requirements vary by state, county and city — check with your accountant and local authorities.
+
+## 12-Month Cash Flow
+A1: CASH FLOW FORECAST — YEAR 1
+A2: The P&L tells you whether the business makes money; this tab tells you whether you have cash left to get to the end of the month. It is the first one a lender looks at.
+A4: Item
+B4: Month 1
+C4: Month 2
+D4: Month 3
+E4: Month 4
+F4: Month 5
+G4: Month 6
+H4: Month 7
+I4: Month 8
+J4: Month 9
+K4: Month 10
+L4: Month 11
+M4: Month 12
+N4: Year
+A5: Monthly seasonality (adds up to 100%)
+B5: 0.05
+C5: 0.075
+D5: 0.105
+E5: 0.12
+F5: 0.08
+G5: 0.085
+H5: 0.13
+I5: 0.145
+J5: 0.07
+K5: 0.06
+L5: 0.035
+M5: 0.045
+N5 = 1
+O5: Month 1 = MARCH: the permit and the build-out close over the winter before, and the venue opens for the spring season. Peaks in October (Month 8), September (Month 7) and June (Month 4); the low is January (Month 11). Kit weights for a US wedding venue: replace them with your own booking pattern; if you open in another month, rotate the row. It must add up to 100%
+A6: Launch ramp-up (% of steady-state activity)
+B6 = 0.45
+C6 = 0.5
+D6 = 0.55
+E6 = 0.6
+F6 = 0.65
+G6 = 0.7
+H6 = 0.75
+I6 = 0.8
+J6 = 0.85
+K6 = 0.9
+L6 = 0.95
+M6 = 1
+O6: Rises in a straight line from the month-1 percentage to 100% over the number of months you set in Assumptions. With month 1 at 100%, the ramp disappears
+A7: Split of activity by month (calculated)
+B7 = 0.0318
+C7 = 0.0531
+D7 = 0.0817
+E7 = 0.1019
+F7 = 0.0736
+G7 = 0.0842
+H7 = 0.138
+I7 = 0.1642
+J7 = 0.0842
+K7 = 0.0764
+L7 = 0.0471
+M7 = 0.0637
+N7 = 1
+O7: Seasonality × ramp-up, normalized to 100%: the YEAR brings in what the P&L says, but split the way a venue that has just opened would split it
+A8: CASH IN
+A9: Sales collected (incl. sales tax collected)
+B9 = 13908.3822
+C9 = 30134.828
+D9 = 47288.4994
+E9 = 62355.9134
+F9 = 54397.228
+G9 = 52851.8522
+H9 = 78659.628
+I9 = 101840.265
+J9 = 72632.6624
+K9 = 51770.0892
+L9 = 37243.5567
+M9 = 38093.5134
+N9 = 641176.4178
+O9: The month's sales plus the sales tax collected, adjusted by the average collection days from the Assumptions tab
+A10: CASH OUT
+A11: Purchases and variable costs (incl. sales tax)
+B11 = -1721.3962
+C11 = -4375.2153
+D11 = -6928.6196
+E11 = -9374.4367
+F11 = -8798.2471
+G11 = -8033.1822
+H11 = -11442.5029
+I11 = -15401.7141
+J11 = -12317.546
+K11 = -8114.4703
+L11 = -6158.773
+M11 = -5668.6532
+N11 = -98334.7567
+O11 = Direct event costs, consumables, commissions and contingencies, each at ITS tax rate (column G of the P&L; 0 in the US, where the sales tax you pay is part of the cost) and with the supplier payment days from "0. Assumptions". With 14 payment days, the last purchases of the year are paid next year: the "Year" column of this row holds 11 months of purchases, not the year's cost.
+A12: Operating fixed costs (incl. sales tax)
+B12 = -13166.6667
+C12 = -13166.6667
+D12 = -13166.6667
+E12 = -13166.6667
+F12 = -13166.6667
+G12 = -13166.6667
+H12 = -13166.6667
+I12 = -13166.6667
+J12 = -13166.6667
+K12 = -13166.6667
+L12 = -13166.6667
+M12 = -13166.6667
+N12 = -158000
+O12: The fixed costs that leave cash, each with its own tax rate: insurance carries none
+A13: Payroll and employer payroll taxes
+B13 = -15988.5
+C13 = -15988.5
+D13 = -15988.5
+E13 = -15988.5
+F13 = -15988.5
+G13 = -15988.5
+H13 = -15988.5
+I13 = -15988.5
+J13 = -15988.5
+K13 = -15988.5
+L13 = -15988.5
+M13 = -15988.5
+N13 = -191862
+O13: Twelve monthly payrolls (US: 12 pay periods, no extra pay months). The year adds up to the same figure as the P&L. Payroll is spread over twelve months, but the seasonal venue coordinator and event attendants only work March-November: this sheet makes the season look cheaper and the winter dearer than reality. Expect your real cash at the end of November to be lower than shown here; it evens out by February
+A14: Loan interest
+B14 = -3916.6667
+C14 = -3916.6667
+D14 = -3916.6667
+E14 = -3916.6667
+F14 = -3916.6667
+G14 = -3916.6667
+H14 = -3916.6667
+I14 = -3916.6667
+J14 = -3916.6667
+K14 = -3916.6667
+L14 = -3916.6667
+M14 = -3916.6667
+N14 = -47000
+A15: Loan principal repaid
+B15 = -2457.528
+C15 = -2457.528
+D15 = -2457.528
+E15 = -2457.528
+F15 = -2457.528
+G15 = -2457.528
+H15 = -2457.528
+I15 = -2457.528
+J15 = -2457.528
+K15 = -2457.528
+L15 = -2457.528
+M15 = -2457.528
+N15 = -29490.3356
+A16: Sales tax collected (memo)
+B16 = 1372.1274
+C16 = 2286.879
+D16 = 3521.7936
+E16 = 4390.8076
+F16 = 3171.1389
+G16 = 3628.5146
+H16 = 5945.8854
+I16 = 7074.079
+J16 = 3628.5146
+K16 = 3293.1057
+L16 = 2027.6994
+M16 = 2744.2548
+N16 = 43084.8
+O16: Each sales line at ITS rate, read from the sales tax column of the P&L: venue rental & event services at the rate in G10 (8% in the example) and the caterer commission at the rate in G11 (0% in the example: a fee your caterer pays you, not a retail sale). The venue sells no food or drink: the caterer bills the menu and the bar to the client and collects that sales tax
+A17: Recoverable input tax (memo)
+B17 = 0
+C17 = 0
+D17 = 0
+E17 = 0
+F17 = 0
+G17 = 0
+H17 = 0
+I17 = 0
+J17 = 0
+K17 = 0
+L17 = 0
+M17 = 0
+N17 = 0
+O17: Each item at its own rate, read from the tax column of the P&L: insurance and card processing fees carry none
+A18: Carried forward (capex input tax included)
+E18 = 0
+H18 = 0
+K18 = 0
+O18: Sales tax paid on STARTUP COSTS enters here: it is offset against the tax collected in later quarters until used up. With 0% recoverable input tax (the US default) this line stays at zero
+A19: Quarterly sales tax return
+E19 = 7180.8
+H19 = 11190.4611
+K19 = 16648.479
+O19: Sales tax collected minus recoverable input tax for the quarter, minus what was carried forward. If negative, nothing is paid: it is offset in the next quarter. With 0% recoverable input tax (the US default) it equals the sales tax collected in the quarter
+A20: Sales tax remitted (quarterly filer)
+E20 = -7180.8
+H20 = -11190.4611
+K20 = -16648.479
+N20 = -35019.7401
+O20: Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: December, March and June with Month 1 in September; the fourth quarter is remitted in Month 13): if your state requires monthly filing, expect smaller payments every month instead
+A21: MONTHLY NET CASH FLOW
+B21 = -23342.3753
+C21 = -9769.7486
+D21 = 4830.5184
+E21 = 10271.3154
+F21 = 10069.6196
+G21 = 9289.3088
+H21 = 20497.3026
+I21 = 50909.1895
+J21 = 24785.7551
+K21 = -8522.2214
+L21 = -4444.5776
+M21 = -3104.5012
+N21 = 81469.5854
+A22: CUMULATIVE CASH BALANCE
+B22 = 75873.1247
+C22 = 66103.3761
+D22 = 70933.8946
+E22 = 81205.21
+F22 = 91274.8296
+G22 = 100564.1383
+H22 = 121061.441
+I22 = 171970.6305
+J22 = 196756.3856
+K22 = 188234.1642
+L22 = 183789.5866
+M22 = 180685.0854
+A23: Minimum balance of the year
+B23 = 66103.3761
+D23: If negative, raise working capital or the loan: you run out of cash
+A24: Month when cash bottoms out
+B24 = 2
+D24: It answers the question that decides a bank deal: in which month the cash runs out
+A25: RETURN ON INVESTMENT
+A26: Free cash flow before debt, year 1
+B26 = 142590.719
+D26: Net income plus depreciation (which is not paid) plus that year's interest: principal is not subtracted because this flow is BEFORE debt. The SAME basis as years 2 and 3, so the payback compares like with like
+A27: Free cash flow before debt, year 2
+B27 = 166492.6287
+D27: Net income plus depreciation (which is not paid) plus that year's interest: principal is not subtracted because this flow is BEFORE debt. Without a monthly table, it is an estimate
+A28: Free cash flow before debt, year 3
+B28 = 180363.0828
+D28: Net income plus depreciation (which is not paid) plus that year's interest: principal is not subtracted because this flow is BEFORE debt. Without a monthly table, it is an estimate
+A29: For reference: ACTUAL year-1 cash flow (monthly table, before debt)
+B29 = 157959.921
+D29: The sum of the twelve monthly net cash flows above, adding back the interest and principal paid that year. It is NOT the one the payback uses: it includes sales tax not yet settled and supplier credit, two things that have to be paid back and that years 2 and 3 do not have
+A30: Investment to recover (net of recoverable input tax)
+B30 = 669715.5
+D30: CAPEX plus working capital: the total cash needed MINUS the recoverable input tax on startup costs, which is not lost (it is recovered through the quarterly return, and this tab offsets it quarter by quarter; it is zero in the US default). Working capital is recovered when you close, but until then it is tied up
+A31: Project payback (years), before debt
+B31 = Over 3 years
+D31: Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the "Financing" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules
+A32: Payback on CAPEX, excluding working capital (years)
+B32 = Over 3 years
+D32: The same calculation on what you BUY (build-out, equipment, launch and formation costs), without working capital: that money is not spent, it is tied up and comes back when the business closes. For reference only: the payback that matters is the one above
+A34: The quarters in this sheet are plan quarters, not calendar quarters (March-May, June-August, September-November and December-February): with Month 1 in March, the workbook remits the sales tax of each plan quarter in the month after it. Your state sets the real filing calendar (monthly, quarterly or annual): check it. Income tax for year 1 is paid in year 2. The loan payment is split into twelve equal parts following the ANNUAL schedule in "Financing", and payroll into twelve monthly installments
+DV B5 C5 D5 E5 F5 G5 H5 I5 J5 K5 L5 M5: decimal 0 · Enter a percentage between 0 and 1 (0.35 = 35%).
+
+## Financing
+A1: FINANCING PLAN
+A2: What you need, where it comes from and what it costs to repay. It is the sheet your lender asks for along with the P&L.
+A4: Item
+B4: Amount
+C4: Notes
+A5: SOURCES OF FUNDS
+A6: Owner's equity (your own money)
+B6 = 200000
+A7: Loan requested — bank or SBA 7(a) (amortized below)
+B7 = 470000
+A8: Other loan (not in the schedule or the DSCR — enter your loan in row 7)
+B8: 0
+C8: A source of funds only: NOT amortized, so it is not in the schedule, the P&L interest or the DSCR. Enter your bank or SBA 7(a) loan in row 7 ("Loan requested" in "0. Assumptions"); use this row only for a second loan
+A9: SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)
+B9: 0
+C9: SBA Microloans go up to $50,000 through nonprofit intermediaries. Like row 8, a source of funds only: not in the schedule or the DSCR. If it is your only loan, enter it in row 7 instead
+A10: Investors / partners (equity: dilutes, not repaid)
+B10: 0
+C10: Equity: it dilutes your ownership and is not repaid
+A11: Local grants (usually paid after you spend)
+B11: 0
+C11: Usually paid AFTER you document the spending
+A12: TOTAL SOURCES OF FUNDS
+B12 = 670000
+A13: USES OF FUNDS
+A14: Total cash needed at launch
+B14 = 669715.5
+C14: Startup costs plus any recoverable tax you have to advance (zero by default in the US)
+A15: Difference (sources - uses)
+B15 = 284.5
+C15: In red (negative), the plan is NOT funded. Far above zero is not free either: you pay interest on money you do not use
+A16: Difference as a % of uses
+B16 = 0.0004
+C16: Amber above the margin you set: it is debt you pay for without needing it
+A17: Acceptable over-funding (%)
+B17: 0.05
+C17: A small cushion over the need is healthy; 20% extra is interest thrown away
+A18: Loan that would match sources to needs
+B18 = 469715.5
+C18: Copy it into "Loan requested" in the "0. Assumptions" tab and the difference goes to zero. Rows 8-11 lower this figure, but only the row-7 loan is amortized and counted in the DSCR
+A19: LOAN TERMS
+A20: Principal amount
+B20 = 470000
+A21: Nominal annual interest rate (not APR)
+B21 = 0.1
+A22: Total term (years)
+B22 = 10
+A23: Interest-only period applied (years)
+B23 = 0
+C23: An interest-only period equal to or longer than the term does not exist: the sheet cancels it at the source
+A24: Annual payment during repayment
+B24 = 76490.3356
+C24: Standard amortizing loan with a level annual payment. At a 0% rate it is the principal divided by the repayment years: without that branch the schedule would shut down entirely
+A25: AMORTIZATION SCHEDULE
+A26: Year
+B26: Opening balance
+C26: Interest
+D26: Principal repaid
+E26: Total payment
+F26: Closing balance
+G26: Cash flow available for debt service (after tax; from year 4 on, year 3 held flat)
+H26: DSCR for the year
+A27: 1
+B27 = 470000
+C27 = 47000
+D27 = 29490.3356
+E27 = 76490.3356
+F27 = 440509.6644
+G27 = 142590.719
+H27 = 1.8642
+A28: 2
+B28 = 440509.6644
+C28 = 44050.9664
+D28 = 32439.3692
+E28 = 76490.3356
+F28 = 408070.2953
+G28 = 166492.6287
+H28 = 2.1766
+A29: 3
+B29 = 408070.2953
+C29 = 40807.0295
+D29 = 35683.3061
+E29 = 76490.3356
+F29 = 372386.9892
+G29 = 180363.0828
+H29 = 2.358
+A30: 4
+B30 = 372386.9892
+C30 = 37238.6989
+D30 = 39251.6367
+E30 = 76490.3356
+F30 = 333135.3525
+G30 = 180363.0828
+H30 = 2.358
+A31: 5
+B31 = 333135.3525
+C31 = 33313.5353
+D31 = 43176.8003
+E31 = 76490.3356
+F31 = 289958.5522
+G31 = 180363.0828
+H31 = 2.358
+A32: 6
+B32 = 289958.5522
+C32 = 28995.8552
+D32 = 47494.4804
+E32 = 76490.3356
+F32 = 242464.0718
+G32 = 180363.0828
+H32 = 2.358
+A33: 7
+B33 = 242464.0718
+C33 = 24246.4072
+D33 = 52243.9284
+E33 = 76490.3356
+F33 = 190220.1434
+G33 = 180363.0828
+H33 = 2.358
+A34: 8
+B34 = 190220.1434
+C34 = 19022.0143
+D34 = 57468.3213
+E34 = 76490.3356
+F34 = 132751.8221
+G34 = 180363.0828
+H34 = 2.358
+A35: 9
+B35 = 132751.8221
+C35 = 13275.1822
+D35 = 63215.1534
+E35 = 76490.3356
+F35 = 69536.6687
+G35 = 180363.0828
+H35 = 2.358
+A36: 10
+B36 = 69536.6687
+C36 = 6953.6669
+D36 = 69536.6687
+E36 = 76490.3356
+F36 = 0
+G36 = 180363.0828
+H36 = 2.358
+A37: 11
+B37 = None
+C37 = None
+D37 = None
+E37 = None
+F37 = None
+G37 = None
+H37 = None
+A38: 12
+B38 = None
+C38 = None
+D38 = None
+E38 = None
+F38 = None
+G38 = None
+H38 = None
+A39: 13
+B39 = None
+C39 = None
+D39 = None
+E39 = None
+F39 = None
+G39 = None
+H39 = None
+A40: 14
+B40 = None
+C40 = None
+D40 = None
+E40 = None
+F40 = None
+G40 = None
+H40 = None
+A41: 15
+B41 = None
+C41 = None
+D41 = None
+E41 = None
+F41 = None
+G41 = None
+H41 = None
+A42: Schedule closing tolerance
+B42: 0.01
+C42: Rounding margin. Above it, the schedule does not close and there is principal left unpaid
+A43: Balance outstanding at maturity
+B43 = 0
+C43: Must be zero: the principal repaid in the schedule has to equal the amount borrowed. If it is positive, the term falls short
+A44: Year-1 interest
+B44 = 47000
+A45: Year-1 principal repaid
+B45 = 29490.3356
+A46: Year-2 interest
+B46 = 44050.9664
+A47: Year-2 principal repaid
+B47 = 32439.3692
+A48: Year-3 interest
+B48 = 40807.0295
+A49: Year-3 principal repaid
+B49 = 35683.3061
+A50: DEBT SERVICE COVERAGE RATIO (DSCR)
+A51: Year-1 DSCR
+B51 = 1.8642
+C51: An INTEREST-ONLY year, if there is one: with only interest in the denominator the ratio shoots up and does not measure the business
+A52: Year-2 DSCR
+B52 = 2.1766
+A53: Year-3 DSCR
+B53 = 2.358
+A54: Minimum DSCR across the whole schedule
+B54 = 1.8642
+C54: The worst year of the life of the loan, not the best of the three the P&L projects. It is the number that decides a loan. Mind the scope: years 1 to 3 come from the P&L, and from year 4 on the schedule HOLDS year 3's cash flow, so the minimum over those years is a sustained projection, not a calculated year. The cash flow is after tax
+A56: DSCR is calculated BEFORE debt and AFTER tax: income tax is subtracted from pre-tax income, depreciation and interest are added back, and the result is divided by what has to be paid that year. Below the minimum in the "0. Assumptions" tab, the business does not generate enough to repay the loan. In the schedule, the available cash flow from year 4 on is held at year 3's: the P&L projects only three years, and no growth is invented here that has not been calculated.
+DV B8 B9 B10 B11 B42: decimal 0 · Enter a number greater than or equal to 0.
+DV B17: decimal 0 · Enter a percentage between 0 and 1 (0.35 = 35%).

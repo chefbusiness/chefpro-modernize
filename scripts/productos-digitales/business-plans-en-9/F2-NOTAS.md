@@ -143,10 +143,45 @@ calculadora, los contratos y el checklist, las reglas de las decisiones de orque
 palabras) → `docx_en_wed_a.json` / `docx_en_wed_b.json`; verificación: `python3 scripts/productos-digitales/business-plans-en-9/
 bp9.py check_textos --tanda wed_a` (o `wed_b`).
 
-## 7. Siguiente (orquestador)
+## 7. Paso 4 (27-oct, sesión Claude Code): Word ensamblado y todos los gates (sin la revisión D174)
 
-Tanda 2 (2 sonnet en paralelo) → VPS: `bp9.py ensamblar_docx --plan wed` (G8) → altas de D172 (`wedding-venue-business-plan`
-en `PRODUCTOS_LETTER` de `censo-entregables.py` y en `EXCLUIDOS` de `postprocess-transversal.py`) → `gates_en` completo +
-`--autotest`, `ensamblar_docx --autotest`, `calculadora --autotest`, `contrato --pdf`, `barrido`, `censo-entregables --fail
---letter --only wedding-venue-business-plan`, `gate-no-latinos`, `verificar`, `/tmp/wed-regresion.sh`, 2.ª pasada → revisión
-D174 (foco en el contrato y en abrir 16 CFR 429.0).
+Tanda 2 de los traductores (`abd1b44e`): `docx_en_wed_a.json` 29 párrafos (80 tokens) y `docx_en_wed_b.json` 32 (118
+tokens; avisos de longitud en 102 y 107 por densidad legal). Arreglo antes de ensamblar: **párrafo 39** decía «caterer
+commission worth {{comision_caterer_pct}} of your sales» (= «commission worth 12%»: el barrido lo cazó como el canon ES del
+12 %); ahora «a caterer commission (10% of its food and beverage sales at the venue, an assumption you negotiate) that
+makes up {{comision_caterer_pct}} of your sales». Altas de G9 (D172): `wedding-venue-business-plan` en `PRODUCTOS_LETTER`
+de `censo-entregables.py` y en `EXCLUIDOS` de `postprocess-transversal.py` (cada uno en su línea, tras la pizza: las ramas
+Ice Cream y Hotel añaden las suyas en el mismo sitio, el merge lo resuelve).
+
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp9.py ensamblar_docx --plan wed` | **G8 VERDE**: 131 párrafos (110 con texto), 10 Heading 1, **7,576 palabras**, US Letter, **25 páginas** (PDF de LibreOffice) |
+| `bp9.py gates_en` (G1-G9, sin `--parcial`) | **TODO VERDE**: G1 734 fórmulas + 84 tareas · G2 1,317 piezas · G3 16 hojas Letter · G4 239 valores bajo DV · G5 8 rangos CF · G6 0 diferencias · G7 123 valores, 1 calibración · G8 docx · G9 censo 0 defectos + no latinos 0 |
+| `gates_en --autotest` · `ensamblar_docx --autotest` · `calculadora --autotest` | **20/20** · **8/8** · VERDE (574 comprobaciones) |
+| `bp9.py contrato --pdf` | VERDE: 161 párrafos, **5,002 palabras**, Letter, **12 páginas** |
+| `bp9.py barrido` (los 5 ficheros) | 1,927 piezas · **0** `RX_WED_NO` / cifras prohibidas / español / no latinos (`entregables_wed.json`) |
+| `censo-entregables --fail --letter --only wedding-venue-business-plan` · `gate-no-latinos --only` | 5 ficheros (3 xlsx + 2 docx), **0 defectos** · 0 caracteres |
+| `bp9.py verificar` | OK (0 errores, 7 avisos: FIJOS del motor sin uso) |
+| Regresión de los 8 conjuntos (`/tmp/wed-regresion.sh`) | `mapas` 0 errores en los 8 · **30/30 IGUAL** · rc 0 |
+| 2.ª pasada (aplicar_en + ensamblar_docx + calculadora + contrato) | sha256 canónico **IGUAL** en los 5 · `cifras_caso.json` igual salvo `generado` |
+
+| Entregable D158 (`astro-site/public/dl/wedding-venue-business-plan/`) | sha256 (Mac = VPS) |
+|---|---|
+| `wedding-venue-business-plan.docx` (131 párrafos, 7,576 palabras, 25 páginas) | `0160b92f9193b15c…` |
+| `wedding-venue-financial-projections.xlsx` (9 hojas, 734 fórmulas) | `73e912aff236af12…` |
+| `wedding-venue-pricing-calculator.xlsx` (3 hojas, 168 fórmulas) | `d3a49288a8484289…` |
+| `wedding-venue-rental-agreement-templates.docx` (161 párrafos, 5,002 palabras, 12 páginas) | `c6770b0b2b963c1c…` |
+| `wedding-venue-startup-checklist.xlsx` (7 hojas, 84 tareas) | `73fd221f7fb11308…` |
+| bonus común `equivalents-guide` | `/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx` (como los hermanos; no se copia) |
+
+**Volcados para la revisión D174** (`volcar_revision.py`, VPS): `business-plans-en-9/revision/` con un `.txt` por
+fichero (xlsx celda a celda con el valor en caché y las fórmulas marcadas con «=»; docx párrafo a párrafo con su estilo):
+Word 7,846 palabras · plan 13,192 · calculadora 4,203 · contratos 5,391 · checklist 4,455.
+
+## 8. Siguiente (orquestador)
+
+Revisión D174 (1 opus, tope 2 rondas, arreglos por texto: recalcular ventas, CAPEX, equilibrio, holgura y DSCR; jerga;
+claims; **abrir 16 CFR 429.0** y lo que se pueda de 40 CFR 141.2, NY A20-51S y Missouri; contrato; cero rastro de finca,
+España o pizza; que el Word no prometa lo que el Excel no hace) → tras los arreglos, en el VPS: `aplicar_en --idempotencia`,
+`ensamblar_docx --plan wed`, `calculadora --salida dl/…`, `contrato --salida dl/… --pdf`, `gates_en`, `barrido`,
+`/tmp/wed-regresion.sh` y 2.ª pasada → F3.
