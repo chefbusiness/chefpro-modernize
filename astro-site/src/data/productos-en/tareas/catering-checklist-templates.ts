@@ -448,6 +448,7 @@ const data: KitTareasData = {
     { href: '/en/digital-products/ice-cream-shop-checklist-templates', label: 'Ice Cream Shop Checklists Kit Pro' },
     { href: '/en/digital-products/chocolate-shop-checklist-templates', label: 'Chocolate Shop Checklists Kit Pro' },
     { href: '/en/digital-products/pastry-shop-checklist-templates', label: 'Pastry Shop Checklists Kit Pro' },
+    { href: '/en/digital-products/hotel-checklist-templates', label: 'Hotel Checklists Kit Pro' },
     { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: '/en/digital-products/bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit' },
     { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },
