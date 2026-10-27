@@ -1,0 +1,2293 @@
+{
+ "meta": {
+  "generado": "2026-10-27T07:25:18+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "ice",
+  "fichero_es": "astro-site/public/dl/plan-negocio-heladeria/plan-de-negocio-heladeria.docx",
+  "sha256": "04739dfec3f0dbef3b1bf9b221adbd2fecf9c6f3fadcfdfde0bc8881b02ee74b",
+  "fichero_en": "astro-site/public/dl/ice-cream-shop-business-plan/ice-cream-shop-business-plan.docx",
+  "titulo_en": "Ice Cream Shop Business Plan (10 Sections)",
+  "n_parrafos": 131,
+  "n_con_texto": 110,
+  "n_sin_runs": 17,
+  "n_un_run": 114,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 121,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 61,
+   "vacio": 21,
+   "fijo": 18,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 61,
+  "palabras_traducir": 6819,
+  "tandas": {
+   "ice_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     46,
+     47,
+     48,
+     49,
+     50,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "palabras": 3039
+   },
+   "ice_b": {
+    "parrafos": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117
+    ],
+    "palabras": 3780
+   }
+  },
+  "pagina_emu": [
+   7560310,
+   10692130
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average customers per day, year 1 (each person who buys: counter, patio and to-go)",
+   "clientes_a2": "average customers per day, year 2",
+   "clientes_a3": "average customers per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "disposables (cups, spoons, pint and quart containers, cake boxes), % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (base rent of the premises)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out, years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "rent per year (occupancy)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "seasonal marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even customers per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even customers per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: customers per day",
+   "optimista_clientes": "optimistic scenario: customers per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "pesimista_ticket": "pessimistic scenario: average check excl. sales tax",
+   "optimista_ticket": "optimistic scenario: average check excl. sales tax",
+   "pesimista_dias": "pessimistic scenario: operating days",
+   "optimista_dias": "optimistic scenario: operating days",
+   "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
+   "inv_proyecto": "architect, MEP drawings, plan review and permit fees",
+   "inv_obra": "build-out of the production room and shop (second-generation retail, ~1,000 sq ft)",
+   "inv_electrica": "electrical service and panel (about 30 kW)",
+   "inv_fontaneria": "plumbing, floor sinks, hand sinks, HVAC and condenser ventilation",
+   "inv_rotulo": "signage and storefront",
+   "inv_base_frio": "base refrigerator and flavor prep (41 °F or colder, stick blender, scales): the case buys pasteurized base, so there is NO pasteurizer in the budget",
+   "inv_batch_freezer": "batch freezer (20 qt, horizontal)",
+   "inv_hardening": "hardening cabinet / blast freezer",
+   "inv_congeladores": "storage freezers (0 °F or colder)",
+   "inv_utillaje": "prep tables, 3-compartment sink, hand sinks, scales, pans and smallwares",
+   "inv_dipping": "dipping cabinets (18 flavors)",
+   "inv_mostrador": "front counter, dipper wells, espresso, waffle cone irons and hot fudge warmers",
+   "inv_mobiliario": "furniture (20 seats) and patio",
+   "inv_tpv": "POS, card terminal and online ordering",
+   "inv_menaje": "scoops, spades, cups, uniforms and allergen signage",
+   "inv_formacion": "ice cream training course",
+   "inv_lanzamiento": "branding, website, photos and launch",
+   "inv_constitucion": "LLC, legal, permits and food safety plan",
+   "inv_stock": "opening inventory (base, flavorings, cones, cups, pint containers)",
+   "aforo": "indoor seats (patio not included)",
+   "comida_pct": "ice cream share of sales (scoops, sundaes, pints, cakes, catering)",
+   "bebida_pct": "coffee & beverage share of sales",
+   "delivery_pct": "share of sales through third-party delivery marketplaces (pints and quarts)",
+   "comision_pct": "marketplace commission on those orders",
+   "produccion_horas": "production hours a day before opening (batch freezing and hardening; no pasteurizing)",
+   "sabores": "flavors in the dipping cabinets in season (10-12 in winter): fixed by the dipping cabinet line",
+   "fijos_anual": "other fixed costs per year, year 1 (accounting, refrigeration service, marketing, software, cleaning, patio permit, waste, pest control, music licensing, training)",
+   "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales)",
+   "meses_alquiler_previo": "months of rent paid before opening (build-out and permits)",
+   "costes_variables_pct": "all variable costs year 1 (cost of goods + disposables + marketplace + card fees + contingency), % of sales",
+   "otros_variables_pct": "disposables + marketplace + card fees + contingency, % of sales",
+   "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount (only if it is a loss)"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Heladería Artesanal",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Ice Cream Shop"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, análisis de mercado,\nestrategia operativa y checklist de apertura\npara montar una heladería artesanal con obrador propio",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and startup checklist\nto open an ice cream shop that makes its own ice cream in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Versión 1.0 · noviembre 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoría Gastronómica con fines informativos y orientativos. Las cifras salen del Excel del plan financiero que lo acompaña, con un caso de ejemplo que debes sustituir por el tuyo; las fuentes de los datos de mercado y de las normas se citan en el texto. Los resultados reales pueden variar. No constituye asesoramiento financiero, legal ni fiscal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "ÍNDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist de Apertura Excel + Guía de Equivalencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Ice Cream Shop Financial Projections (Excel) + Ice Cream Shop Startup Checklist (Excel) + Equivalents Guide"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "Este plan describe una heladería artesanal con obrador propio en una ciudad media española, de entre 150.000 y 300.000 habitantes, en una calle comercial de barrio o en un paseo junto a un parque o a colegios. El local tiene 85 m², con un obrador de 20-25 m², una vitrina de 18 cubetas, 20 plazas dentro y una terraza de cinco mesas en temporada, y se alquila sin traspaso. Lo explota una SL unipersonal: tú como maestro heladero, un dependiente o dependienta todo el año y fijos discontinuos de temporada. Abre en marzo, para llegar al primer invierno con la caja del verano, y en invierno sigue abierta con crepes y gofres, chocolate, tartas y turrón helado por encargo y helado para restaurantes. Cierra tres semanas en enero.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 128,
+   "nota": "§1 1/5: Resumen ejecutivo: concepto (D189), la oportunidad (research §2: «ice cream shop business plan» 320/mes; el hueco de la SERP: plan Word + Excel con estacionalidad + checklist), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{fondos_propios}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}: {{clientes_dia}} customers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}}, holgura {{holgura_caja_pct}} y DSCR {{dscr_min}}; el equipo (dueño ice cream maker + shift lead + seasonal scoopers) ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "Las cifras clave del caso son estas. Una media de 143 clientes al día, a 4,90 € por persona sin IVA, durante 310 días de apertura, que dan unas ventas de 217.217 € en el primer año y un resultado neto de 12.580 €. Los 143 clientes son la media del primer año con la apertura incluida: el Excel reparte el año con la estacionalidad y con una rampa de arranque, pero el año factura lo que dice la cuenta de resultados. El equilibrio contable está en 130 clientes al día, y el de caja, que además cubre las cuotas del préstamo, en 120 durante el primer año, el de carencia. No es una rentabilidad garantizada: es un punto de partida para que cambies las hipótesis y pongas tus propios números.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 131,
+   "nota": "§1 2/5: Resumen ejecutivo: concepto (D189), la oportunidad (research §2: «ice cream shop business plan» 320/mes; el hueco de la SERP: plan Word + Excel con estacionalidad + checklist), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{fondos_propios}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}: {{clientes_dia}} customers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}}, holgura {{holgura_caja_pct}} y DSCR {{dscr_min}}; el equipo (dueño ice cream maker + shift lead + seasonal scoopers) ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total es de 158.274 €: 117.150 € de obra, equipo y arranque (formación, marca, trámites y stock inicial incluidos), 5.100 € de fianza y 3.400 € de renta previa, que suman 125.650 € de inversión sin el fondo, y 32.624 € de fondo de maniobra. A eso se suma el IVA de la inversión, 24.896 €, que se adelanta y se recupera poco a poco con las declaraciones de IVA, por lo que la necesidad de caja llega a 183.170 €. Se financia con 55.000 € de recursos propios y un préstamo de 129.000 € a 7 años, con 1 año de carencia de principal y un tipo del 6 %. Los fondos suman 184.000 € y la diferencia con la necesidad es de solo 830 €. La cuota anual, ya sin carencia, es de 26.234 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 139,
+   "nota": "§1 3/5: Resumen ejecutivo: concepto (D189), la oportunidad (research §2: «ice cream shop business plan» 320/mes; el hueco de la SERP: plan Word + Excel con estacionalidad + checklist), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{fondos_propios}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}: {{clientes_dia}} customers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}}, holgura {{holgura_caja_pct}} y DSCR {{dscr_min}}; el equipo (dueño ice cream maker + shift lead + seasonal scoopers) ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "El primer año factura 217.217 € y deja un resultado neto de 12.580 €, un 5,8 % de las ventas. Los clientes crecen un 8 % en el segundo año y un 5 % en el tercero, siempre con el mismo ticket: las ventas pasan a 234.594 € y 246.324 €, y el neto, a 18.085 € y 18.606 €. La holgura de caja sobre el equilibrio es de 19,5 % el primer año, pero porque hay carencia. En el segundo baja a 8,7 %, porque empieza a devolverse el principal, y en el tercero es de 9,9 %. Son los años que hay que vigilar. La inversión se recupera en más de tres años (unos 4,5 si el tercer año se repite).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 123,
+   "nota": "§1 4/5: Resumen ejecutivo: concepto (D189), la oportunidad (research §2: «ice cream shop business plan» 320/mes; el hueco de la SERP: plan Word + Excel con estacionalidad + checklist), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{fondos_propios}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}: {{clientes_dia}} customers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}}, holgura {{holgura_caja_pct}} y DSCR {{dscr_min}}; el equipo (dueño ice cream maker + shift lead + seasonal scoopers) ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "El equipo es corto y se apoya en ti. Eres el maestro heladero y haces el helado cada día en el obrador. Te acompañan un dependiente o dependienta todo el año y fijos discontinuos que se incorporan con la temporada, en una plantilla de 6 puestos (suplencias incluidas) que suman 3,05 jornadas completas. El kit incluye este plan de negocio de diez secciones, el Excel del plan financiero de nueve hojas, el checklist de apertura de 80 tareas en seis fases y la guía de equivalencias para Latinoamérica.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 88,
+   "nota": "§1 5/5: Resumen ejecutivo: concepto (D189), la oportunidad (research §2: «ice cream shop business plan» 320/mes; el hueco de la SERP: plan Word + Excel con estacionalidad + checklist), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{fondos_propios}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}: {{clientes_dia}} customers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}}, holgura {{holgura_caja_pct}} y DSCR {{dscr_min}}; el equipo (dueño ice cream maker + shift lead + seasonal scoopers) ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "44": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "45": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "No todas las heladerías son el mismo negocio, y conviene elegir antes de firmar nada. La heladería con obrador propio, que es la de este plan, elabora a diario y controla el producto, pero exige la mayor inversión y más trámites sanitarios. La vitrina sin obrador compra el helado ya hecho: arranca con menos dinero, pero deja el margen y la diferencia en manos del proveedor. El quiosco de temporada cuesta poco y vive de un buen sitio y de unos pocos meses. La franquicia aporta marca y método a cambio de cánones y de poca libertad con la carta. Cada modelo tiene su inversión, sus permisos y su margen, y este plan se queda con el primero porque es el que construye un producto propio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 126,
+   "nota": "§2 1/5: Concepto y propuesta: los tipos de negocio (scoop shop que hace su helado vs franquicia, soft serve, quiosco) y por qué este; base comprada y batch freezer a la vista (D190); {{sabores}} sabores en verano y 10-12 en invierno, sorbets sin lácteos; carta de ejemplo research §5.1 (single $5.25, double $7.00, kid's $4.25, waffle cone +$1.25, sundae $9.00, pint $11, quart $18, ice cream cake 8 in $45, espresso $3.50, hot chocolate $4.50: «Kit estimate (Oct 2026), excl. sales tax»); ticket por persona {{ticket}} (precio con impuesto {{precio_menu}}); invierno SIN crepes: ice cream cakes, holiday pies y pints, hot chocolate y catering ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor es helado elaborado cada día en el obrador, que el cliente ve desde el mostrador. Hay 18 sabores en verano y 10-12 en invierno: los clásicos, los de temporada, algún sabor de autor y sorbetes sin lácteos para quien no toma leche. Para la base viertes los líquidos en el pasteurizador y añades los secos, premezclados con el azúcar, con el agitador en marcha; a 40-50 °C entran las grasas, las yemas y los emulsionantes, y solo entonces se pasteuriza a 85 °C, se enfría rápido a 4 °C o menos y se deja madurar de 4 a 12 horas a 2-4 °C. Las denominaciones son honestas: «helado crema», «mantecado» o «sorbete» solo si la receta cumple el artículo 3 del RD 618/1998. Y escribes «ELABORACIÓN PROPIA» en lugar de «artesano» si no tienes la calificación artesanal de tu comunidad. Los alérgenos van resueltos en la vitrina y en la carta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 155,
+   "nota": "§2 2/5 (D190, D200): la propuesta con BASE COMPRADA: helado mantecado cada día en el local con la base de una central láctea con licencia, a la vista desde el mostrador; tras la pasteurización de la central solo se añaden aromas e inclusiones (no raw eggs, no raw milk or cream; los sabores custard piden una custard base); «frozen custard» solo si la receta cumple 21 CFR 135.110 (1.4 % egg yolk solids). Nada de «pasteurizar a 85 °C» ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "La carta del caso, con IVA, es sencilla: una bola, 3,20 €; dos, 4,80 €; tres, 6,00 €; medio litro para llevar, 10 €; un litro, 18 €; tarta helada de ocho raciones, 30 €; crepe o gofre, 4,50-5,50 €; chocolate a la taza, 3 €, y batido o granizado, 4 €. La venta se reparte así: el mostrador, con bola, copa y cucurucho, un 58 % del total; para llevar y tartas heladas, un 17 %; invierno, un 10 %; restaurantes y eventos, un 5 %, y cafetería y bebidas, un 10 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 94,
+   "nota": "§2 3/5: Concepto y propuesta: los tipos de negocio (scoop shop que hace su helado vs franquicia, soft serve, quiosco) y por qué este; base comprada y batch freezer a la vista (D190); {{sabores}} sabores en verano y 10-12 en invierno, sorbets sin lácteos; carta de ejemplo research §5.1 (single $5.25, double $7.00, kid's $4.25, waffle cone +$1.25, sundae $9.00, pint $11, quart $18, ice cream cake 8 in $45, espresso $3.50, hot chocolate $4.50: «Kit estimate (Oct 2026), excl. sales tax»); ticket por persona {{ticket}} (precio con impuesto {{precio_menu}}); invierno SIN crepes: ice cream cakes, holiday pies y pints, hot chocolate y catering ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El ticket del caso es de 4,90 € por persona y sin IVA, es decir, 5,39 € con IVA. Es por persona, no por tique de caja: un tique de unos 7 € sin IVA corresponde a 1,45 personas de media. Con ese ticket, cada cliente deja un margen de 3,52 € una vez descontado el coste variable de 1,38 €, y la mercancía pesa un 20 % sobre la venta de producto. Importa mirar el cliente y no el tique, porque el Excel hace crecer los clientes con el mismo ticket, en lugar de subir precios. Un gesto que sí mueve el ticket es ofrecer la tarrina de medio litro, la copa o el topping en el momento de pagar.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 121,
+   "nota": "§2 4/5: Concepto y propuesta: los tipos de negocio (scoop shop que hace su helado vs franquicia, soft serve, quiosco) y por qué este; base comprada y batch freezer a la vista (D190); {{sabores}} sabores en verano y 10-12 en invierno, sorbets sin lácteos; carta de ejemplo research §5.1 (single $5.25, double $7.00, kid's $4.25, waffle cone +$1.25, sundae $9.00, pint $11, quart $18, ice cream cake 8 in $45, espresso $3.50, hot chocolate $4.50: «Kit estimate (Oct 2026), excl. sales tax»); ticket por persona {{ticket}} (precio con impuesto {{precio_menu}}); invierno SIN crepes: ice cream cakes, holiday pies y pints, hot chocolate y catering ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "El invierno es parte del concepto, no un paréntesis. Se abre con crepes y gofres, siempre que la ordenanza de tu ayuntamiento permita la salida de humos; si no, el invierno se sostiene con chocolate a la taza, tartas y turrón helado de Navidad por encargo. Se suman el helado para restaurantes de la zona y el catering de helado. Se cierran tres semanas en enero. Con esa carta la sala sigue viva, la plantilla fija tiene trabajo y la caja del verano no se gasta del todo antes de la primavera.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 92,
+   "nota": "§2 5/5 (D200): el invierno SIN crepes ni salida de humos (no cruzan): ice cream cakes por encargo, holiday pies y pints de fiestas, hot chocolate, catering; cierre de 3 semanas en enero y lunes de noviembre a febrero ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "51": {
+   "estilo": "Heading 1",
+   "texto": "3. Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "La demanda de helado en España es grande y creciente. Según el Ministerio de Agricultura, Pesca y Alimentación (nota de prensa del 12 de agosto de 2026, con datos de junio de 2025 a mayo de 2026), los hogares compraron 151,97 millones de litros de helado, un 11,7 % más, por 762,68 millones de euros, un 16,3 % más. Eso es un precio medio de 5,02 € el litro: 4,77 € en el supermercado y 7,72 € en la tienda tradicional. Cada persona compró 3,23 litros y gastó 16,20 €. El supermercado se lleva el 87,6 % del volumen, así que tu mercado no es el helado de casa, sino el que la gente prefiere comprar fresco, en el obrador.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 120,
+   "nota": "§3 1/6 (D200): demanda US: IDFA (julio = mes de más producción) y National Ice Cream Month / Day (Proclamation 5219, 1984); sin cifras de consumo de hogares (MAPA no cruza y no hay dato US leído equivalente) ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "Fuera del hogar, el consumo fue de 31,24 millones de litros (o kilos), un 5,2 % más, a razón de 0,87 litros por persona y año en unas siete ocasiones, sobre todo en el segundo y el tercer trimestre. La estacionalidad es muy marcada: el 81,6 % del volumen de los hogares se consume de abril a septiembre, con julio en el 20 %, junio en el 17,8 % y agosto en el 17,1 %. La bola en la calle cuesta de 2 a 4 €, y hasta 6 € en las heladerías gourmet, según la prensa local de mayo de 2026. El precio de 3,20 € de la carta del caso se mueve en esa horquilla.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 117,
+   "nota": "§3 2/6 (D200): estacionalidad US: verano hasta +40 % e invierno ≈ −30 % (7shifts, resumen: dilo como «industry estimates»); peak season Memorial Day → Labor Day; sin cifras de consumo fuera del hogar ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "Las búsquedas muestran un mercado donde el cliente final manda. Según DataForSEO, en octubre de 2026 «heladería artesanal» tiene 2.400 búsquedas al mes en Google España, con picos de 5.400 en el verano; «helado artesanal», 590; «mantecadora», 210, y «franquicia heladería», 170. En cambio, apenas se buscan «cómo montar una heladería», con 20 al mes, y «plan de negocio heladería», con 10. Es una señal útil: quien va a abrir busca poco, así que lo poco que encuentra tiene que servirle con sus propios números. Por eso este plan lleva un Excel que puedes recalcular con tu ciudad y tu alquiler en lugar de promesas genéricas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 106,
+   "nota": "§3 3/6 (D200): búsquedas US (DataForSEO US, oct 2026, research §2): «ice cream shop business plan» 320/mes, «opening an ice cream shop» 320, «homemade ice cream shop» 2,400 con pico en verano, «ice cream shop equipment» 1,000; el comprador busca plan, coste y licencia ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "Con el Mes 1 en marzo, el plan reparte la venta con la estacionalidad: de abril a septiembre se concentra el 73 % de la venta, menos que el 81,6 % de los hogares porque el invierno vende crepes, chocolate y Navidad, con el pico en julio y el valle en enero. El arranque lleva una rampa de 4 meses, que empieza en el 70 % de la actividad. El saldo de caja más bajo, 30.175 €, llega en marzo, el mes 1, recién pagada la inversión; después el verano lo sube. Por eso se abre en marzo: abriendo en otoño, el fondo se gastaría antes del primer julio, que en el plan es el mes 5.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 117,
+   "nota": "§3 4/6 (D200): el reparto del plan con Mes 1 = marzo y el pico en julio (la Tesorería del Excel); sin el «81,6 %» del MAPA; describe el método y remite a la hoja «12-Month Cash Flow» ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "El hueco es claro: en los primeros resultados de Google no aparece ningún plan de negocio español de heladería con Excel vivo. Lo que existe son guías de blog o planes latinoamericanos en PDF, con otros impuestos, otra normativa y otras unidades. Este documento se apoya en datos del Ministerio y en normas españolas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 54,
+   "nota": "§3 5/6: Mercado: demanda US (IDFA: julio = mes de más producción; National Ice Cream Month / Day, Presidential Proclamation 5219, 1984; DataForSEO US de research §2: «ice cream shop business plan» 320/mes, «homemade ice cream shop» 2,400/mes con pico en verano); estacionalidad del plan (Mes 1 = marzo, pico en julio); riesgos (verano frío y lluvioso, guerra de precios, helado del súper); sin datos sin fuente: las cifras MAPA y DataForSEO España NO cruzan ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "La demanda tiene riesgos que el plan nombra. La temporada es corta: una primavera lluviosa o un verano fresco se notan en la caja. La guerra de precios de la bola y el helado del supermercado en casa presionan el ticket. Y las ordenanzas locales, de terraza y de humos, condicionan lo que puedes vender fuera de temporada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 58,
+   "nota": "§3 6/6: Mercado: demanda US (IDFA: julio = mes de más producción; National Ice Cream Month / Day, Presidential Proclamation 5219, 1984; DataForSEO US de research §2: «ice cream shop business plan» 320/mes, «homemade ice cream shop» 2,400/mes con pico en verano); estacionalidad del plan (Mes 1 = marzo, pico en julio); riesgos (verano frío y lluvioso, guerra de precios, helado del súper); sin datos sin fuente: las cifras MAPA y DataForSEO España NO cruzan ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "59": {
+   "estilo": "Heading 1",
+   "texto": "4. Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "Antes de fijar ningún precio, dibuja el mapa de quién compite contigo en tu barrio y en tu ciudad. En heladería la competencia llega de siete lados distintos: el helado industrial, las franquicias, otras heladerías artesanas, las de estilo italiano, las cafeterías y pastelerías que sirven helado comprado, los quioscos de temporada y el reparto a domicilio. Cada uno te quita clientes por un motivo diferente, y por eso conviene analizarlos por separado, como se hace a continuación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 78,
+   "nota": "§4 1/6: Competencia: el mapa (helado del súper, franquicias como Häagen-Dazs o Bruster's solo como «franchise» sin cifras salvo research §1, otros scoop shops, gelato como estilo, soft serve / froyo, cafés); Porter; barreras = licencia (D190, «depends on your state») + caja; DAFO con margen bruto {{margen_bruto_pct}}; las barreras ES (IAE 644.4, Ley 12/2012, 750 m²) NO cruzan ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "Las cinco fuerzas de Porter se ven así en una heladería con obrador. El poder de los proveedores es moderado: la leche, la nata, el azúcar y la fruta se compran en varios sitios, pero las pastas, los variegatos y la maquinaria dependen de pocas marcas. El poder de los clientes es alto, porque cambian de heladería en una tarde y comparan la bola entre calles. La amenaza de nuevos entrantes es media: abrir una heladería es fácil si compras el helado hecho, pero con obrador propio la inversión, los trámites sanitarios y el oficio frenan. La amenaza de sustitutos es alta: helado industrial, pastelería, cafetería, granizados, fruta o un postre cualquiera. La rivalidad es fuerte en verano y casi inexistente en invierno, cuando muchas heladerías cierran. Por eso la ventaja está en el producto, en el servicio y en saber qué haces cuando baja la temperatura.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 147,
+   "nota": "§4 2/6: Competencia: el mapa (helado del súper, franquicias como Häagen-Dazs o Bruster's solo como «franchise» sin cifras salvo research §1, otros scoop shops, gelato como estilo, soft serve / froyo, cafés); Porter; barreras = licencia (D190, «depends on your state») + caja; DAFO con margen bruto {{margen_bruto_pct}}; las barreras ES (IAE 644.4, Ley 12/2012, 750 m²) NO cruzan ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "Los competidores directos son otras heladerías artesanas, del barrio y del centro, y las de estilo italiano que venden «gelato». Detrás vienen las franquicias de helado, con marca y escaparate. En el lado de los sustitutos están el helado industrial del supermercado, que se lleva el 87,6 % del volumen de los hogares a 4,77 € el litro frente a los 7,72 € de la tienda tradicional, según el Ministerio, las cafeterías y las pastelerías que sirven helado comprado, los quioscos de temporada y las plataformas de reparto con marcas de helado. Tu respuesta no es bajar el precio: es enseñar el obrador, servir el helado del día y justificar la diferencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 112,
+   "nota": "§4 3/6: Competencia: el mapa (helado del súper, franquicias como Häagen-Dazs o Bruster's solo como «franchise» sin cifras salvo research §1, otros scoop shops, gelato como estilo, soft serve / froyo, cafés); Porter; barreras = licencia (D190, «depends on your state») + caja; DAFO con margen bruto {{margen_bruto_pct}}; las barreras ES (IAE 644.4, Ley 12/2012, 750 m²) NO cruzan ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Las barreras de entrada son de cumplimiento y de caja. La venta y la fabricación en el propio local, el epígrafe 644.4 del IAE, se abre por declaración responsable, sin licencia previa, hasta 750 m²; las mesas siguen el régimen municipal de hostelería, y la terraza se autoriza siempre aparte. Además, el obrador va al registro sanitario autonómico. El RGSEAA solo entra si sirves a otros negocios fuera de los límites del artículo 3 del RD 1021/2022. Y la caja pesa: la maquinaria, el mobiliario y los equipos del caso suman 70.900 €. Confirma con tu ayuntamiento y tu gestoría cada paso.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 102,
+   "nota": "§4 4/6 (D200): barreras de entrada US: la decisión de licencia (D190: base comprada = retail food establishment en la mayoría de estados; mezcla propia = licencia estatal de dairy / frozen dessert manufacturer + equipo 3-A) y la caja; NO cruzan IAE 644.4/676, Ley 12/2012, declaración responsable ni 750 m² ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Cuatro factores deciden si funciona. El primero es el producto: un helado distinto a diario, con denominaciones honestas y sabores de temporada. El segundo es el sitio: una calle con paso y un local que se vea. El tercero es el control del coste: la mercancía del caso es un 20,5 % de las ventas del primer año y el equilibrio de caja está en 120 clientes al día el primer año, y en 143 y 148 el segundo y el tercero, cuando ya devuelves el préstamo, así que cada bola que se regala o se tira se nota. El cuarto es la caja del invierno: conservarla desde el primer verano y no gastarla en el primer capricho.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 118,
+   "nota": "§4 5/6: Competencia: el mapa (helado del súper, franquicias como Häagen-Dazs o Bruster's solo como «franchise» sin cifras salvo research §1, otros scoop shops, gelato como estilo, soft serve / froyo, cafés); Porter; barreras = licencia (D190, «depends on your state») + caja; DAFO con margen bruto {{margen_bruto_pct}}; las barreras ES (IAE 644.4, Ley 12/2012, 750 m²) NO cruzan ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El DAFO de este concepto es claro. Fortalezas: obrador a la vista, helado del día, denominaciones honestas y un margen bruto del 71,8 % en el primer año. Debilidades: una inversión alta y una caja muy sensible a la estación. Oportunidades: encargos de tartas y de turrón helado, helado para restaurantes, catering y venta de tarrinas para llevar. Amenazas: la guerra de precios de la bola, el supermercado en casa, los veranos fríos y las ordenanzas de humos y de terraza. La defensa está en el producto, en la experiencia, en la tarrina para llevar y en los encargos, que se pagan por adelantado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 104,
+   "nota": "§4 6/6: Competencia: el mapa (helado del súper, franquicias como Häagen-Dazs o Bruster's solo como «franchise» sin cifras salvo research §1, otros scoop shops, gelato como estilo, soft serve / froyo, cafés); Porter; barreras = licencia (D190, «depends on your state») + caja; DAFO con margen bruto {{margen_bruto_pct}}; las barreras ES (IAE 644.4, Ley 12/2012, 750 m²) NO cruzan ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "67": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "69": {
+   "estilo": "Normal",
+   "texto": "La estrategia de marketing sigue las estaciones, porque el negocio también las sigue. En marzo se abre con una degustación para el barrio, los colegios y los comercios de la zona. De abril a septiembre mandan el sabor del día, la terraza y los encargos de comuniones, que en mayo concentran las tartas heladas. En septiembre se prepara el invierno, con la carta de crepes, gofres y chocolate, y el turrón helado de Navidad por encargo. Cada mes tiene una acción concreta, y ninguna depende de un presupuesto de grandes marcas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 91,
+   "nota": "§5 1/7: Marketing: por estaciones (Opening Day en marzo, peak season Memorial Day → Labor Day, National Ice Cream Day = 3rd Sunday of July), sabor del día en redes, Google Business Profile, samples con tasting spoons, colegios y vecindario; pints por DoorDash / Uber Eats ({{delivery_pct}} de las ventas a una comisión de {{comision_pct}}); presupuesto {{marketing_anual}} al año; reclamos honestos («made here in small batches»; «homemade» solo si es verdad) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "Las redes sociales son el escaparate del helado del día. Publica el sabor del día cada mañana, el obrador en directo mientras mantecas, las tartas terminadas y las novedades de temporada. Funcionan mejor las fotos y los vídeos cortos hechos en el local que las imágenes de catálogo, y la constancia importa más que la perfección. Una web sencilla con la carta, los alérgenos, el horario y un formulario de encargos completa el escaparate, porque el cliente la mira antes de venir. Enlaza ambas con el perfil de Google, para que quien busque «heladería artesanal» en tu ciudad te encuentre y te vea elaborar.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 104,
+   "nota": "§5 2/7: Marketing: por estaciones (Opening Day en marzo, peak season Memorial Day → Labor Day, National Ice Cream Day = 3rd Sunday of July), sabor del día en redes, Google Business Profile, samples con tasting spoons, colegios y vecindario; pints por DoorDash / Uber Eats ({{delivery_pct}} de las ventas a una comisión de {{comision_pct}}); presupuesto {{marketing_anual}} al año; reclamos honestos («made here in small batches»; «homemade» solo si es verdad) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "La ficha de Google Business es tu mejor anuncio gratuito, porque casi todo el que busca una heladería cerca la consulta. Complétala con fotos del local, del obrador y de la vitrina, y actualiza el horario de cada temporada: el de verano, el de invierno y el cierre de tres semanas de enero. Contesta todas las reseñas, también las malas, con amabilidad y sin discutir. Pide al cliente satisfecho que deje su opinión cuando se lleve la tarrina, no más tarde. Con el tiempo, la ficha es lo que decide quién entra.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 92,
+   "nota": "§5 3/7: Marketing: por estaciones (Opening Day en marzo, peak season Memorial Day → Labor Day, National Ice Cream Day = 3rd Sunday of July), sabor del día en redes, Google Business Profile, samples con tasting spoons, colegios y vecindario; pints por DoorDash / Uber Eats ({{delivery_pct}} de las ventas a una comisión de {{comision_pct}}); presupuesto {{marketing_anual}} al año; reclamos honestos («made here in small batches»; «homemade» solo si es verdad) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La captación local empieza en la puerta. Haz una degustación de apertura para el vecindario, y lleva muestras a colegios, guarderías, comercios y oficinas de la zona. En los restaurantes de la ciudad, el helado propio es un postre que no tienen: ofréceles una prueba, un precio claro y un servicio regular, siempre dentro de los límites de volumen y de destinatarios que marca el artículo 3 del RD 1021/2022. Es un canal pequeño, de un 5 % de la venta del caso, pero estable y previsible, que sostiene el invierno.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 91,
+   "nota": "§5 4/7: Marketing: por estaciones (Opening Day en marzo, peak season Memorial Day → Labor Day, National Ice Cream Day = 3rd Sunday of July), sabor del día en redes, Google Business Profile, samples con tasting spoons, colegios y vecindario; pints por DoorDash / Uber Eats ({{delivery_pct}} de las ventas a una comisión de {{comision_pct}}); presupuesto {{marketing_anual}} al año; reclamos honestos («made here in small batches»; «homemade» solo si es verdad) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "Los encargos son la venta que se sabe de antemano. Las tartas heladas de las comuniones en mayo, las de cumpleaños durante todo el año y el turrón helado de Navidad se reservan con anticipación y con señal. En las noches de verano, las tarrinas de medio litro y de litro se pueden vender por plataformas de reparto; en el caso, el reparto es un 3 % de las ventas, con una comisión del 30 %, así que conviene que el pedido mínimo sea alto y que el precio recoja esa comisión. El reparto completa la venta; no la sustituye.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 100,
+   "nota": "§5 5/7 (D200): encargos: ice cream cakes de cumpleaños todo el año, graduations en mayo-junio, Fourth of July, holiday pies y cakes en noviembre-diciembre (con señal / depósito); nada de comuniones ni turrón ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "La fidelización puede ser sencilla. Una tarjeta de sellos en papel o un club de sabores por WhatsApp para avisar del sabor nuevo bastan para que el cliente vuelva. No se estiman cifras de conversión, porque dependen de tu barrio y de cómo lo trabajes: compruébalas tú durante el primer verano. El mejor marketing es el helado del día, el trato cercano y que el cliente recuerde tu nombre y el suyo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 72,
+   "nota": "§5 6/7: Marketing: por estaciones (Opening Day en marzo, peak season Memorial Day → Labor Day, National Ice Cream Day = 3rd Sunday of July), sabor del día en redes, Google Business Profile, samples con tasting spoons, colegios y vecindario; pints por DoorDash / Uber Eats ({{delivery_pct}} de las ventas a una comisión de {{comision_pct}}); presupuesto {{marketing_anual}} al año; reclamos honestos («made here in small batches»; «homemade» solo si es verdad) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "El presupuesto de marketing del caso es de 2.500 € al año, sobre todo para fotografía, anuncios locales y material de la degustación. La marca, la web, las fotos y el lanzamiento van aparte, dentro de la inversión inicial. El primer invierno se trabaja desde septiembre, con la carta de invierno ya anunciada y los encargos de Navidad abiertos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ice_a",
+   "palabras": 59,
+   "nota": "§5 7/7: Marketing: por estaciones (Opening Day en marzo, peak season Memorial Day → Labor Day, National Ice Cream Day = 3rd Sunday of July), sabor del día en redes, Google Business Profile, samples con tasting spoons, colegios y vecindario; pints por DoorDash / Uber Eats ({{delivery_pct}} de las ventas a una comisión de {{comision_pct}}); presupuesto {{marketing_anual}} al año; reclamos honestos («made here in small batches»; «homemade» solo si es verdad) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "76": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "Un día de obrador sigue siempre el mismo orden, y ese orden es una cuestión de seguridad alimentaria, no de gusto. Viertes los líquidos en el pasteurizador y añades los secos, premezclados con el azúcar para que el estabilizante no haga grumos, con el agitador en marcha. Las grasas (la nata, la mantequilla), las yemas y los emulsionantes entran cuando la mezcla empieza a subir de temperatura, a 40-50 °C, siempre antes de pasteurizar. Luego viene la pasteurización a 85 °C, que además cumple con holgura los 70 °C durante 2 segundos que exige el huevo (art. 9 del RD 1021/2022). A continuación, enfriado rápido a 4 °C o menos y maduración a 2-4 °C entre 4 y 12 horas; si la mezcla lleva huevo, la mantecas dentro de las 24 horas. Tras la mantecación, el helado pasa al abatidor hasta los −18 °C en el corazón y se conserva a −18 °C o menos. Una vez pasteurizada la mezcla, solo entra lo que no necesita tratamiento térmico: pastas puras, variegatos y la fruta lavada de los sorbetes. Ni la yema ni la nata crudas tienen sitio en ese punto del proceso. Apunta cada lote con su fecha y sus temperaturas: es la base de tu APPCC.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 207,
+   "nota": "§6 1/5 (D190, D200): el día de producción con BASE COMPRADA, por orden de seguridad: recibir la base a 41 °F o menos y anotar el lot code → aromatizar e incluir (solo aromas e inclusiones tras la pasteurización de la central) → batch-freeze → endurecer a 0 °F o menos → dipping cabinet a 6-10 °F; date marking (3-501.17). Nada de pasteurizar, madurar a 4 °C ni «85 °C» ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "El corazón del obrador son cinco equipos. El pasteurizador de 30 litros cuesta 14.600 € (14.601,75 € sin IVA en la tarifa de un distribuidor, en octubre de 2026). La mantecadora horizontal, de 6-12 litros por ciclo, 14.000 €: es una estimación del kit en la parte baja de lo publicado (12.000-35.000 €), porque las marcas profesionales no publican tarifa, así que pide al menos dos presupuestos antes de cerrar el préstamo. Una vertical de entrada de 26-30 l/h cuesta unos 4.200 € sin IVA. El abatidor, 5.500 €. Los armarios de conservación y maduración, 5.800 €. Y la vitrina ventilada de 18 cubetas, 10.500 €: se monta con dos módulos de 10 cubetas, a unos 5.090 € cada uno en la tarifa del fabricante, y los dos huecos que sobran sirven para el sabor del día o la reserva. Pide siempre presupuesto con instalación y plazo de entrega, porque el precio cambia según la marca. Si el capital aprieta, más adelante tienes la variante de maquinaria combinada o de ocasión revisada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 172,
+   "nota": "§6 2/5 (D200): el equipo con los importes del caso SOLO por token: batch freezer {{inv_batch_freezer}} (un Carpigiani de 20 qt ronda $40,800 de lista: pide dos presupuestos; reacondicionados, menos), hardening cabinet {{inv_hardening}}, storage freezers {{inv_congeladores}}, dipping cabinets {{inv_dipping}}, nevera de base y preparación {{inv_base_frio}}, mostrador con dipper wells y waffle cone irons {{inv_mostrador}} ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "Con este equipo el obrador produce unos 7.150 kg de helado al año, unos 10.500 litros. En julio, el mes de más venta, son unos 38 kg al día, unas 11 cubetas de 5 litros, que salen con un ciclo diario del pasteurizador y 6-7 ciclos de mantecadora. Las 11 cubetas del pico caben en una vitrina de 18, y el obrador y los armarios dejan holgura para las tartas y los pedidos de restaurantes. Un dato de calidad: la ley fija un mínimo de 430 g por litro (RD 618/1998), pero el helado artesano suele ir de 0,6 a 0,75 kg por litro, con menos aire y más sabor. En invierno la vitrina baja a 10-12 cubetas, lo que reduce la merma y el consumo eléctrico.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 127,
+   "nota": "§6 3/5 (D200): capacidad SIN cifra de producción (no hay token de galones: la frase va sin cifra): el batch freezer de 20 qt cubre el verano con {{produccion_horas}} h al día antes de abrir y algún turno extra en julio; el pico lo marca la Tesorería ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "El horario sigue a la estación. De mediados de abril a septiembre abres de 12:00 a 24:00 todos los días. En marzo, la primera quincena de abril y octubre abres 8 horas al día y seis días a la semana. De noviembre a febrero, 6 horas entre semana y más el fin de semana, con cierre los lunes y tres semanas de vacaciones de mediados de enero a primeros de febrero. La instalación pide unos 30 kW en trifásica (pasteurizador, mantecadora, abatidor, crepera, climatización y vitrinas), y cada módulo de vitrina consume unos 23 kWh al día: comprueba la potencia del local antes de firmar. Los suministros salen a 700 € al mes de media.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 115,
+   "nota": "§6 4/5: Operaciones (D190, proceso con BASE COMPRADA): recibir la base a 41 °F o menos (lot codes) → aromatizar e incluir mix-ins → batch-freeze (draw a 16-19 °F) → endurecer a 0 °F o menos → dipping cabinet a 6-10 °F; dipper well de agua corriente (Food Code 3-304.12); {{produccion_horas}} h de producción al día antes de abrir; equipo con tokens ({{inv_batch_freezer}}, {{inv_hardening}}, {{inv_dipping}}, {{inv_congeladores}}, {{inv_base_frio}}); horario por temporada; sin pasteurizador en el caso ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "Evita el contacto cruzado con una espátula por cubeta y con un lavaporcionador de agua corriente. La vitrina trabaja a la temperatura que fije tu APPCC, porque ninguna norma estatal la fija (−11/−14 °C es lo habitual); la conservación es a −18 °C o menos y el helado derretido no se recongela. Cuenta con una merma del 5-8 % de la producción. El frío se mantiene con un frigorista certificado, 1.500 € al año. Los envases, sin poliestireno expandido, y las cucharillas, de madera o compostables.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 86,
+   "nota": "§6 5/5: contacto cruzado (una spade por tub, dipper well de agua corriente 3-304.12(D)); dipping cabinet a 6-10 °F según el fabricante; almacén a 0 °F o menos; frío ≤ 41 °F; ninguna promesa «allergen-free» ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "83": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El equipo del caso es corto y se reparte por estaciones. Tú eres el maestro heladero, a jornada completa: recetas, balanceo, producción y control del obrador. A tu lado hay un dependiente o dependienta que hace también de encargado de turno todo el año. Para la temporada entran un dependiente fijo discontinuo de abril a septiembre a jornada completa, otro de verano de junio a septiembre con 30 horas y un ayudante de obrador de mayo a septiembre a media jornada. Las suplencias de vacaciones y descansos completan el cuadro: 6 personas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 92,
+   "nota": "§7 1/6: Organización y personal: Owner / ice cream maker & GM, shift lead / counter todo el año, seasonal scooper (abril-septiembre), summer scooper (junio-agosto), production assistant (mayo-septiembre), relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, sin propinas modeladas; employer payroll taxes {{cargas_pct}}; coste {{personal_a1}} ({{personal_pct}}); seasonal part-time W-2 recontratados cada primavera; scoopers de 14-15 años solo con el horario FLSA (29 CFR 570.35); el dueño cobra por debajo de un gerente: «draw in addition from net profit»; CFPM + food handler cards ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "Esa plantilla equivale a 3,05 jornadas completas y cuesta 82.207 € el primer año, el 37,8 % de las ventas. Es el mayor gasto del negocio, por encima del alquiler, así que conviene medirlo bien. El cuadrante contrata 5.612 horas frente a las 5.564 que hacen falta, una cobertura del 101 %. Dicho en claro: cubres lo justo, sin sobrante. En el segundo y el tercer año la plantilla crece con personas, no con un porcentaje, y el coste pasa a 88.207 € y 94.207 €. Mira ese porcentaje con calma: en una heladería el personal es la palanca que más pesa en el resultado, y cada hora de mostrador que no vende se paga igual. Por eso los fijos discontinuos entran solo cuando la temporada los necesita, y el titular cubre con su propio trabajo en el obrador buena parte de las horas más técnicas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 146,
+   "nota": "§7 2/6: Organización y personal: Owner / ice cream maker & GM, shift lead / counter todo el año, seasonal scooper (abril-septiembre), summer scooper (junio-agosto), production assistant (mayo-septiembre), relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, sin propinas modeladas; employer payroll taxes {{cargas_pct}}; coste {{personal_a1}} ({{personal_pct}}); seasonal part-time W-2 recontratados cada primavera; scoopers de 14-15 años solo con el horario FLSA (29 CFR 570.35); el dueño cobra por debajo de un gerente: «draw in addition from net profit»; CFPM + food handler cards ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "La plantilla de temporada va con contrato fijo discontinuo, por escrito y con llamamiento por escrito cada temporada (art. 16 del Estatuto de los Trabajadores). Es un contrato indefinido: la persona no desaparece en octubre, vuelve cuando la llamas, y eso te ayuda a conservar el oficio que has formado. Piénsalo como una inversión: quien ya sabe servir sin contaminar sabores y manejar la vitrina te ahorra errores y mermas en julio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 72,
+   "nota": "§7 3/6 (D200): la temporada = seasonal part-time W-2 recontratados cada primavera (sin figura de «fijo discontinuo»); unemployment insurance estatal; nada de art. 16 ET ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "El convenio aplicable es el provincial de hostelería, y el VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería (art. 4) nombra a las heladerías de forma expresa. Lleva el registro de jornada que exige el art. 34.9 del Estatuto. Y una advertencia: nunca sustituyas plantilla por autónomos que te facturan. Con horario y órdenes tuyas, eso es falso autónomo (art. 1.1 del Estatuto) y una sanción esperando. Tu gestoría te confirma qué convenio provincial aplica en tu caso. Si tienes dudas sobre el encuadre de alguien concreto, por ejemplo un ayudante de obrador a media jornada, resuélvelas antes de que empiece, no después de la primera inspección.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 110,
+   "nota": "§7 4/6 (D200): salario mínimo federal $7.25/h + el de tu estado o ciudad (el caso presupuesta ≥ $15/h); jóvenes de 14-15 años con horario FLSA (29 CFR 570.35: hasta las 9 pm del 1 de junio al Labor Day); registro de horas; nada de convenio ni ALEH ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "En julio y agosto el cuadrante va justo: el titular hace horas de más o entra un extra de fin de semana. Prevé desde el principio quién cubre esas semanas, porque improvisar en pleno verano acaba en cansancio, en errores en el obrador y en colas largas. Si contratas a menores de 18 años, recuerda que no pueden hacer trabajo nocturno ni horas extraordinarias (art. 6 del Estatuto): confírmalo con tu gestoría antes de firmar, sobre todo con un horario que llega hasta las 24:00. Y deja un margen de descanso para ti: el maestro heladero agotado en agosto es el que cambia una receta sin pesar o se salta una temperatura.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 112,
+   "nota": "§7 5/6: Organización y personal: Owner / ice cream maker & GM, shift lead / counter todo el año, seasonal scooper (abril-septiembre), summer scooper (junio-agosto), production assistant (mayo-septiembre), relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, sin propinas modeladas; employer payroll taxes {{cargas_pct}}; coste {{personal_a1}} ({{personal_pct}}); seasonal part-time W-2 recontratados cada primavera; scoopers de 14-15 años solo con el horario FLSA (29 CFR 570.35); el dueño cobra por debajo de un gerente: «draw in addition from net profit»; CFPM + food handler cards ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "Forma al equipo antes de abrir. La formación de manipuladores la acredita la empresa (el antiguo carné de manipulador ya no existe) y debe cubrir temperaturas, alérgenos y el orden de la pasteurización. Aparte, el maestro heladero necesita formación técnica de balanceo de mezclas, porque una receta mal balanceada da un helado arenoso o duro. Y cuenta con la prevención de riesgos laborales: frío, cargas y cortes son los accidentes típicos de un obrador. Programa un repaso corto al inicio de cada temporada, cuando vuelven los fijos discontinuos, porque lo que no se repite se olvida; así cada persona que llega en abril ya conoce el orden del obrador y los alérgenos de cada sabor.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 115,
+   "nota": "§7 6/6: Organización y personal: Owner / ice cream maker & GM, shift lead / counter todo el año, seasonal scooper (abril-septiembre), summer scooper (junio-agosto), production assistant (mayo-septiembre), relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, sin propinas modeladas; employer payroll taxes {{cargas_pct}}; coste {{personal_a1}} ({{personal_pct}}); seasonal part-time W-2 recontratados cada primavera; scoopers de 14-15 años solo con el horario FLSA (29 CFR 570.35); el dueño cobra por debajo de un gerente: «draw in addition from net profit»; CFPM + food handler cards ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "91": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "Para abrir necesitas 158.274 €. Son 117.150 € de obra, equipo y arranque (formación, marca, trámites y stock inicial incluidos), 5.100 € de fianza y 3.400 € de renta antes de abrir, que suman 125.650 € de inversión sin el fondo, más 32.624 € de fondo de maniobra. El IVA de la inversión, 24.896 €, lo adelantas, así que la necesidad de caja llega a 183.170 €. Ese IVA lo recuperas compensándolo en tus declaraciones o pidiendo la devolución en la del cuarto trimestre, que se presenta en enero: hasta diciembre solo se compensan unos 7.000 €, así que en esa declaración puedes pedir que te devuelvan el resto, unos 17.750 €. Se financia con 55.000 € propios y un préstamo de 129.000 € al 6 %, a 7 años con 1 año de carencia y una cuota anual de 26.234 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 142,
+   "nota": "§8 1/7: Plan financiero: TODO con tokens (inversión, ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} customers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Mes {{mes_saldo_minimo}}, escenarios); Mes 1 = marzo; el neto real ≈ 5-6 % frente al «10-25 %» de la SERP: el Word dice la verdad ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "La cuenta de resultados a tres años proyecta unas ventas de 217.217 €, 234.594 € y 246.324 €. Los 143 clientes al día son la media del primer año con la apertura incluida: el Excel reparte el año con la estacionalidad y una rampa de arranque, pero el año factura lo que dice la cuenta. Sube la clientela, no el precio: un 8 % más en el segundo año y un 5 % en el tercero, de 143 a 154 y 162 clientes al día con el mismo ticket de 4,90 € por persona, sin IVA. En el primer año el margen bruto es del 71,8 %, con la mercancía en el 20,5 % de las ventas; el personal suma 82.207 € y el alquiler 20.400 €, un 9,4 %. El resultado neto es de 12.580 €, 18.085 € y 18.606 €, es decir, un 5,8 %, un 7,7 % y un 7,6 % de las ventas. El libro aplica en el tercer año el tipo general del Impuesto de Sociedades (25 %); con esta facturación tu SL podría pagar menos por los tipos de microempresa, así que confírmalo con tu asesor. Es el lado prudente. Son márgenes de heladería: ajustados, y dependientes de llenar el verano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 207,
+   "nota": "§8 2/7: Plan financiero: TODO con tokens (inversión, ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} customers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Mes {{mes_saldo_minimo}}, escenarios); Mes 1 = marzo; el neto real ≈ 5-6 % frente al «10-25 %» de la SERP: el Word dice la verdad ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "El equilibrio contable está en 130 clientes al día, con unos ingresos de 196.605 €, y deja una holgura del 10,5 % sobre el caso. El de caja está en 120 clientes al día, con una holgura del 19,5 %, pero esa cifra es la del primer año, el de carencia, en el que solo pagas intereses. Desde el segundo empiezas a devolver el principal del préstamo y la holgura baja al 8,7 %: el equilibrio de caja sube a 143 clientes al día. En el tercero queda en el 9,9 %, con 148 de equilibrio. Esos son los años que hay que vigilar: ahí no cabe un verano malo sin tocar la caja.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 114,
+   "nota": "§8 3/7: Plan financiero: TODO con tokens (inversión, ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} customers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Mes {{mes_saldo_minimo}}, escenarios); Mes 1 = marzo; el neto real ≈ 5-6 % frente al «10-25 %» de la SERP: el Word dice la verdad ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "La tesorería numera los meses del 1 al 12, y el Mes 1 es marzo. La rampa arranca al 70 % y llega al ritmo de crucero en 4 meses. El saldo mínimo del año, 30.175 €, es el del mes 1, marzo, recién pagada la inversión. Después suma el verano y resta el invierno: de noviembre a febrero entra alrededor del 15 % de la venta del año con los costes fijos planos, pero la caja pierde mes a mes sin bajar del mínimo de marzo, y el año acaba en febrero con 66.345 €. El verano paga el invierno, y por eso el plan no abre en otoño. El modelo reparte el personal en doce meses aunque los fijos discontinuos solo cobran en temporada: el invierno sale más caro y el verano más barato que en la realidad. El saldo de marzo y el de febrero apenas cambian, pero de junio a enero tendrás menos caja de la que marca la hoja: hasta unos 10.000 € menos en septiembre, que se recuperan poco a poco hasta febrero.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 179,
+   "nota": "§8 4/7: Plan financiero: TODO con tokens (inversión, ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} customers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Mes {{mes_saldo_minimo}}, escenarios); Mes 1 = marzo; el neto real ≈ 5-6 % frente al «10-25 %» de la SERP: el Word dice la verdad ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "El DSCR mínimo es de 1,37, con 1,39 en el segundo año y 1,37 en el tercero: el negocio cubre la deuda, pero sin mucho colchón, y por eso el banco querrá ver tu plan de invierno. El payback del proyecto es de más de tres años, así que esta no es una inversión de recuperación rápida. Plantéala como un negocio de oficio que te paga un sueldo de 1.750 € brutos al mes en 14 pagas y devuelve el capital con paciencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 83,
+   "nota": "§8 5/7: Plan financiero: TODO con tokens (inversión, ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} customers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Mes {{mes_saldo_minimo}}, escenarios); Mes 1 = marzo; el neto real ≈ 5-6 % frente al «10-25 %» de la SERP: el Word dice la verdad ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "El escenario pesimista es un verano frío y lluvioso: 120 clientes al día a 4,60 € durante 300 días dan unas ventas de 165.600 € y un neto de −22.261 €, es decir, pérdidas. En el optimista, 165 clientes a 5,20 € durante 320 días dejan un neto de 47.576 €. La distancia entre uno y otro es lo que separa un buen verano de un mal verano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 68,
+   "nota": "§8 6/7: Plan financiero: TODO con tokens (inversión, ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} customers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Mes {{mes_saldo_minimo}}, escenarios); Mes 1 = marzo; el neto real ≈ 5-6 % frente al «10-25 %» de la SERP: el Word dice la verdad ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "Hay dos alternativas razonadas, sin Excel. La variante de ahorro usa una pasteurizadora-mantecadora combinada o maquinaria de ocasión revisada, que según las guías publicadas cuesta un 40-60 % menos: las partidas de obra, equipo y arranque bajarían de 117.150 € a unos 92.000 €, y la inversión total, de 158.274 € a unos 133.000 €. Es una estimación: pon en la hoja de Inversión los precios reales de lo que compres. La otra es cerrar de noviembre a febrero: los fijos discontinuos ya no trabajan entonces, así que solo ahorras el invierno del dependiente si su contrato pasa a fijo discontinuo (unos 8.000 €) y parte de la luz. A cambio pierdes unos 23.000 € de margen, la Navidad, los encargos y la clientela de invierno, y sigues pagando el alquiler y la cuota del préstamo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 136,
+   "nota": "§8 7/7 (D200): DOS alternativas razonadas sin Excel: (1) la VARIANTE «make your own mix» (batch pasteurizer ≈ $25,000-45,000, «get quotes», licencia estatal de dairy plant / frozen dessert manufacturer, equipo 3-A, inspecciones; en la variante, grasas, yemas y emulsionantes ANTES de pasteurizar, 155 °F 30 min / 175 °F 25 s Ohio 901:11-3-05); (2) cerrar de noviembre a febrero (menos personal y suministros, pero el alquiler sigue) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "100": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Puedes abrir como SL unipersonal (con un capital desde 1 €) o como autónomo. En el IAE (Real Decreto Legislativo 1175/1990), el epígrafe 644.4, «comercio al por menor de helados», te permite fabricar helado y tartas heladas en tu local para venderlos allí. El grupo 676 cubre el consumo en el local. El 414.4 solo te hace falta si fabricas para otros a escala industrial. Con una cifra de negocio inferior a 1 millón de euros estás exento de cuota (art. 82.1.c de la Ley de Haciendas Locales; confírmalo con tu gestoría).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 92,
+   "nota": "§9 1/7 (D200): el marco US por niveles (federal, estatal, condado, ciudad); LLC (o S corp con tu CPA) + EIN; business license; sales tax permit ({{sales_tax}} de ejemplo, un solo tipo); registro estatal de payroll y unemployment ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "El 644.4 figura en el anexo de la Ley 12/2012: se abre con declaración responsable, sin licencia previa, hasta 750 m² (arts. 2-4). La parte de hostelería (las mesas, el 676) va por el régimen de tu ayuntamiento, que según la ordenanza será licencia o declaración responsable. La terraza es ocupación de la vía pública y nunca entra en la Ley 12/2012 (art. 2.2): necesita una autorización municipal aparte, y la tasa del Excel es un dato que debes sustituir por la de tu ayuntamiento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 85,
+   "nota": "§9 2/7 (D200): zoning check ANTES de firmar (retail food con producción en el local); plan review (Food Code 8-201.11) con el layout del equipo + building permit → certificate of occupancy; sidewalk café / patio permit; signage permit; electrical inspection ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "104": {
+   "estilo": "Normal",
+   "texto": "En sanidad, presentas una declaración responsable ante el registro sanitario de tu comunidad autónoma (RD 1021/2022). El RGSEAA solo aplica si sirves a otros negocios fuera de lo que permite el art. 3 de ese real decreto: el suministro marginal, localizado y restringido, con declaración responsable y registro de destinatarios, cantidades y fechas. Marginal significa que lo que sirves a otros negocios no pasa del 25 % de lo que vendes en el año, o que todo lo que vendes, al público incluido, no pasa de 500 kg a la semana. Si vas a vender a restaurantes, confírmalo con tu inspector.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 101,
+   "nota": "§9 3/7 (D190, D200): health permit + inspección; LA DECISIÓN DE LICENCIA: comprar la base pasteurizada a una central con licencia te mantiene como retail food establishment en la mayoría de estados; hacer tu mezcla suele añadir licencia estatal de dairy / frozen dessert manufacturer, equipo 3-A e inspecciones. Ejemplos LEÍDOS: Vermont (Agency of Agriculture: base pasteurizada → solo Frozen Dessert License, y tras la pasteurización solo aromas; mezclar tú → Milk Handler License) y Georgia (GAC 40-2-8-.01(3): el minorista que congela mezcla de una central con licencia no necesita Dairy Manufacturer's License); Arizona, Massachusetts y Pennsylvania lo tratan distinto («check»). «Ask your state department of agriculture in writing before you sign the lease». NUNCA «no license needed» ni una tarifa ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "Tu APPCC se apoya en el Reglamento (CE) 852/2004 y en la flexibilidad del art. 20 del RD 1021/2022. Con huevo, la mezcla debe alcanzar 70 °C durante 2 segundos o más (en la práctica, 85 °C) o usar ovoproducto (art. 9), y se manteca dentro de las 24 horas siguientes (art. 9.3); cómo se aplica eso al helado ya congelado, pregúntaselo al inspector. El helado se conserva a −18 °C o menos y no se recongela (arts. 4.1 y 5.9). La temperatura de la vitrina no la fija ninguna norma estatal: la fija tu APPCC.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 96,
+   "nota": "§9 4/7 (D200): Food Code: CFPM (2-102.12) + food handler cards según estado; dipper well de agua corriente (3-304.12); frío ≤ 41 °F, almacén a 0 °F, date marking (3-501.17), etiqueta de lo envasado en el local (3-602.11); sin huevo crudo en el caso (base comprada); nada de APPCC ni 70 °C ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "Las denominaciones siguen el RD 618/1998, vivo solo en eso (arts. 2, 3 y 17.1): «helado crema», «helado de leche», «sorbete», «mantecado» (con un 4 % de yema o más) y «granizado», con 430 g por litro como mínimo. «Artesano» solo con el documento de calificación artesanal de tu comunidad (art. 2.9). Si no lo tienes, usa «ELABORACIÓN PROPIA», que es la mención segura y solo vale en el local donde elaboras o en sus sucursales (RD 1021/2022, art. 11).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 80,
+   "nota": "§9 5/7 (D200): nombres: «ice cream» = ≥ 10 % milkfat y ≥ 4.5 lb per gallon; «frozen custard» = 1.4 % egg yolk solids (21 CFR 135.110); «gelato» no aparece en 135.110: si lo llamas ice cream, aplica el estándar federal (no afirmes que no hay estándar); reclamos honestos: «made here in small batches», «homemade» / «house-made» solo si es verdad; nada de RD 618 ni «artesano» ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "Los alérgenos a granel se informan por escrito o de palabra con registro escrito y cartel (RD 126/2015, arts. 4 y 6), y las tarrinas preenvasadas llevan la etiqueta completa (art. 5). El IVA es del 10 % en todo el helado, en el local o para llevar (Ley 37/1992, art. 91.Uno.1.1.º y 2.2.º). Los refrescos con azúcares añadidos para llevar tributan al 21 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 65,
+   "nota": "§9 6/7 (D200): alérgenos: 9 mayores US con el sésamo (FASTER Act, 2023); scoops y dipper wells compartidos: ninguna promesa «allergen-free»; sales tax: el scoop para tomar es prepared food; el pint envasado y la tarta entera pueden ir como alimento exento en algunos estados (Texas Comptroller, ejemplo): «use your blended rate, check your state» ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "En personal aplican los arts. 1.1, 16 y 34.9 del Estatuto de los Trabajadores y el convenio provincial de hostelería (ALEH VI, art. 4). La facturación se hace con software Veri*factu: consulta con tu gestoría la fecha que te corresponde. La carga de gases refrigerantes la hace solo un técnico certificado. Esta sección recoge lo que podemos afirmar; para todo lo demás, compruébalo con tu gestor o con el inspector antes de decidir.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 73,
+   "nota": "§9 7/7 (D200): personal y riesgos: FLSA y jóvenes de 14-15 años (29 CFR 570.35), seasonal W-2, salario mínimo estatal; seguro con equipment breakdown + food spoilage; ASCAP/BMI/SESAC; refrigerante solo por un técnico EPA 608; y, como ÚLTIMA frase o frases, la NOTA UK: registro del food business en el council 28 días antes, FHRS 0-5 (FHIS en Escocia), VAT 20 % en lo que se toma en el local y en lo caliente (el helado para llevar suele ir a tipo cero: «check HMRC»), 14 alérgenos ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "109": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "La conclusión es que una heladería artesanal de este tamaño es viable, pero exigente. Con 143 clientes al día a 4,90 € por persona, el primer año deja un neto de 12.580 € y una holgura de caja del 19,5 %. Pero esa holgura baja al 8,7 % en el segundo año y al 9,9 % en el tercero, cuando ya devuelves el principal. El DSCR mínimo es de 1,37, el saldo mínimo de caja es de 30.175 € en marzo, y el payback, de más de tres años. No es un negocio para ir con el capital justo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 99,
+   "nota": "§10 1/7: Conclusiones y hoja de ruta: viable pero exigente; riesgos (abrir en otoño, la caja del invierno, el local equivocado: 30 kW / 3-phase, ventilación de condensadores, desagües; el clima: escenario pesimista; la licencia: decidir base comprada o mezcla propia ANTES de firmar); errores (reclamos, contratar tarde la temporada, no escandallar); el orden del checklist (80 tareas en 6 fases: business setup, site & permits, production & health, staff & food safety, brand & menu, opening & season); cierre con el Excel y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "El primer riesgo es abrir en otoño. El plan abre en marzo para llegar al primer invierno con la caja del verano; si abres en octubre, gastas el fondo durante cinco o seis meses antes del primer verano. El segundo es la caja del invierno: de noviembre a febrero entra alrededor del 15 % de la venta del año con los fijos planos, y sin un plan de invierno la cuenta no sale. Mitígalo con crepes y gofres (solo si la ordenanza permite la salida de humos; si no, chocolate, tartas y turrón helado), con encargos de Navidad y con helado para restaurantes dentro de los límites del art. 3 del RD 1021/2022. El cierre de noviembre a febrero es una alternativa, no una receta mágica.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 126,
+   "nota": "§10 2/7: Conclusiones y hoja de ruta: viable pero exigente; riesgos (abrir en otoño, la caja del invierno, el local equivocado: 30 kW / 3-phase, ventilación de condensadores, desagües; el clima: escenario pesimista; la licencia: decidir base comprada o mezcla propia ANTES de firmar); errores (reclamos, contratar tarde la temporada, no escandallar); el orden del checklist (80 tareas en 6 fases: business setup, site & permits, production & health, staff & food safety, brand & menu, opening & season); cierre con el Excel y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "El tercero es el local equivocado. Un local monofásico cuando necesitas unos 30 kW trifásicos, sin ventilación para los condensadores ni desagüe, o sin salida de humos para las crepes, te cuesta acometida, plazo y dinero. Comprueba todo eso antes de firmar el alquiler. El cuarto, una vitrina sobredimensionada: 24 cubetas en una ciudad media son merma y consumo; el plan va con 18 en verano y 10-12 en invierno. El quinto, las mermas y las averías del frío: una avería en agosto es una cubeta perdida por sabor. Contrata un seguro con deterioro de mercancía y un contrato de mantenimiento con frigorista.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 103,
+   "nota": "§10 3/7 (D200): el local equivocado: sin 3-phase / unos 30 kW («ask the utility about 3-phase service and amps before signing»), sin ventilación para los condensadores ni floor sinks; nada de salida de humos ni crepes ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "El sexto riesgo es el clima: un verano frío y lluvioso es el escenario pesimista, con pérdidas. No se evita: en un año así la venta baja de 217.217 € a 165.600 € (un 24 % menos), mucho más de lo que aguanta la holgura de caja de los años 2 y 3 (8,7 % y 9,9 %, por debajo del 15 % que pide el propio Excel). En el segundo año te costaría unos 36.000 € de caja, que solo se pagan con la caja que deja el primero (66.345 € en febrero). Un mal verano se aguanta; dos seguidos no se aguantan sin renegociar la cuota del préstamo. El séptimo es el de las materias primas que se disparan, como el pistacho, el cacao y la vainilla. Calcula el escandallo de cada sabor, revisa el precio de carta cada temporada y no dejes que un sabor estrella se coma tu margen. Cuando un ingrediente se dispara, tienes tres salidas: subir el precio de ese sabor, rotarlo como sabor de temporada o sustituirlo por otro que te dé el mismo atractivo. Lo que no puedes hacer es seguir vendiéndolo al mismo precio sin mirar el escandallo. Un seguro de interrupción no cubre un mal verano, así que la protección real es un plan con colchón de caja y un fondo de maniobra que no se toca para otra cosa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 230,
+   "nota": "§10 4/7: Conclusiones y hoja de ruta: viable pero exigente; riesgos (abrir en otoño, la caja del invierno, el local equivocado: 30 kW / 3-phase, ventilación de condensadores, desagües; el clima: escenario pesimista; la licencia: decidir base comprada o mezcla propia ANTES de firmar); errores (reclamos, contratar tarde la temporada, no escandallar); el orden del checklist (80 tareas en 6 fases: business setup, site & permits, production & health, staff & food safety, brand & menu, opening & season); cierre con el Excel y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "Hay cuatro errores frecuentes que se evitan con un poco de método. Poner «artesano» sin la calificación autonómica, o «elaboración propia» con helado comprado, es publicidad engañosa: usa solo lo que puedes demostrar. Contratar el verano con eventuales o con «autónomos» en vez de con fijos discontinuos te complica la plantilla y te expone a una sanción. Los alérgenos del lavaporcionador, con el pistacho de una espátula en la cubeta de vainilla, se resuelven con una espátula por cubeta. Y las recetas sin balancear dan texturas arenosas o duras: la formación técnica es inversión, no gasto. Revisa estos cuatro puntos con tu equipo antes de abrir y vuelve a ellos al inicio de cada temporada: son los que más se olvidan cuando el trabajo se acumula.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 126,
+   "nota": "§10 5/7: errores frecuentes: «homemade» o «small-batch» sin hacerlo en el local; «ice cream» o «frozen custard» sin cumplir 21 CFR 135.110; contratar tarde la temporada; firmar el local antes de decidir la licencia (D190) ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "El plan de acción tiene seis fases y 80 tareas en el checklist que acompaña al kit. La fase 1 es Constitución y fiscalidad, con 12 tareas. La fase 2, Local, obra, licencia y terraza, con 15. La fase 3, Obrador, equipo y registro sanitario, con 15. La fase 4, Personal, APPCC y formación, con 12. La fase 5, Marca, carta y captación, con 13. Y la fase 6, Apertura, temporada y primeros 90 días, con otras 13. Sigue el orden: el local y la potencia eléctrica van antes que cualquier compra de maquinaria, y el registro sanitario antes de la primera mantecación. Marca cada tarea al cerrarla, y si una se retrasa, mira qué otras dependen de ella antes de mover la fecha de apertura.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 126,
+   "nota": "§10 6/7: Conclusiones y hoja de ruta: viable pero exigente; riesgos (abrir en otoño, la caja del invierno, el local equivocado: 30 kW / 3-phase, ventilación de condensadores, desagües; el clima: escenario pesimista; la licencia: decidir base comprada o mezcla propia ANTES de firmar); errores (reclamos, contratar tarde la temporada, no escandallar); el orden del checklist (80 tareas en 6 fases: business setup, site & permits, production & health, staff & food safety, brand & menu, opening & season); cierre con el Excel y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "El siguiente paso es completar el Excel con tus cifras: tu alquiler real, tu ticket, tu préstamo, tu plantilla y tu calendario de apertura. Cambia solo las celdas verdes; este documento recoge los números del caso, y los tuyos los marca tu hoja de cálculo. Con tus datos delante, vuelve a esta sección y comprueba qué te queda de caja si el segundo verano es el pesimista. Si la caja aguanta, tienes un plan sólido para llevar al banco; si no, ajusta la inversión, el calendario o la variante de ahorro antes de firmar nada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ice_b",
+   "palabras": 95,
+   "nota": "§10 7/7: Conclusiones y hoja de ruta: viable pero exigente; riesgos (abrir en otoño, la caja del invierno, el local equivocado: 30 kW / 3-phase, ventilación de condensadores, desagües; el clima: escenario pesimista; la licencia: decidir base comprada o mezcla propia ANTES de firmar); errores (reclamos, contratar tarde la temporada, no escandallar); el orden del checklist (80 tareas en 6 fases: business setup, site & permits, production & health, staff & food safety, brand & menu, opening & season); cierre con el Excel y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizzería (pizza, oven, dough, covers, beer & wine, Neapolitan…) y sus cifras NO valen"
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "aichef.pro\ninfo@aichef.pro"
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Tareas Recurrentes: Heladería Artesanal",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Ice Cream Shop Checklists Kit Pro"
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost Kit Pro"
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "→ Pack Plantillas APPCC",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ HACCP Food Safety Kit Pro"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}
