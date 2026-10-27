@@ -4,8 +4,8 @@
  "ficheros": {
   "ice-cream-shop-financial-projections.xlsx": {
    "titulo": "Ice Cream Shop Financial Projections: 3-Year P&L, Cash Flow & Financing",
-   "sha256": "cbb6c10cce9a74d884056e8c57215bf50509c55fb36b0c53e6d2d73ebd8c32dc",
-   "bytes": 67128,
+   "sha256": "7614f552ad6acf4061fbc16816b2ab33c87557b2cc176148f6d98166ad0ffb08",
+   "bytes": 67202,
    "hojas": [
     "0. Assumptions",
     "Startup Costs",
@@ -22,8 +22,8 @@
   },
   "ice-cream-shop-startup-checklist.xlsx": {
    "titulo": "Ice Cream Shop Startup Checklist (80 Tasks)",
-   "sha256": "776ea70a6a1b005a00d205529e76c5774ca74d905e837ca48398bab0e65b66d4",
-   "bytes": 25380,
+   "sha256": "4378abf69e0a927b92f703a54841a8fb8d415eb7884cb325a1040ad09026384b",
+   "bytes": 25448,
    "hojas": [
     "Phase 1 - Business Setup",
     "Phase 2 - Site & Permits",
@@ -47,11 +47,11 @@
   },
   "ice-cream-shop-business-plan.docx": {
    "titulo": "Ice Cream Shop Business Plan (10 Sections)",
-   "sha256": "505acd8fbb1670e560cf2a39190b40a19dc11963875a3ae20e8157c9e4d3528c",
-   "bytes": 52109,
+   "sha256": "79e36bc75ef528ac981ab9e620033a2adf74c36af44b871172441a58461d22c2",
+   "bytes": 52284,
    "parrafos": 131,
    "con_texto": 110,
-   "palabras": 6986,
+   "palabras": 7074,
    "encabezados": [
     "1. Executive Summary",
     "2. Concept & Value Proposition",

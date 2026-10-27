@@ -67,7 +67,7 @@ B25	2
 C25	Two months of rent: commercial leases commonly ask for one to three, so check it with your attorney
 A26	Monthly utilities (electricity, water, gas)
 B26	1300
-C26	Mostly electricity: about 30 kW of service, with the dipping cabinets running 24 hours a day, the batch freezer, the hardening cabinet and the air conditioning. Summer sends the bill up; ask the landlord or the utility for the local's history
+C26	Mostly electricity: about 30 kW of service, with the dipping cabinets running 24 hours a day, the batch freezer, the hardening cabinet and the air conditioning. Summer sends the bill up; ask the landlord or the utility for the space's billing history
 A27	Insurance (per year)
 B27	4500
 C27	General liability (ask your broker for the per-occurrence limit) plus property insurance WITH equipment breakdown and food spoilage: a cabinet that fails in August is a tub lost for every flavor
@@ -102,7 +102,7 @@ B38	0.25
 C38	From the third year with positive taxable income. Same example rate (21% federal C corporation + state). Confirm the rate that applies to you with your accountant and change it here
 A39	Sales tax rate on sales
 B39	0.08
-C39	Example rate: state + local sales tax combined. It varies widely by state and city: look up yours. UK: 20% VAT on hot food and dine-in
+C39	Example rate: state + local sales tax combined. It varies widely by state and city: look up yours. UK: ice cream is standard-rated at 20% VAT, to take away too
 A40	Sales tax rate on alcohol to go
 B40	0.08
 C40	One sales tax rate for the example (8%). Check your state and city: the same rate is used for the sales tax collected and for the menu price incl. sales tax. Recoverable input tax on purchases is 0: there is no credit for sales tax paid on purchases, so the book does not credit anything
@@ -251,7 +251,7 @@ E17	Yes
 A18	Front counter, dipper wells, espresso, waffle cone irons & hot fudge warmers
 B18	9000
 C18	= 0.035037 ‖ =IFERROR(B18/$B$31,"")
-D18	Front counter, dipper wells with running water (Food Code 3-304.12), espresso machine and grinder, waffle cone irons and hot fudge warmers. No exhaust hood needed: waffle cone irons produce no smoke
+D18	Front counter, dipper wells with running water (Food Code 3-304.12), espresso machine and grinder, waffle cone irons and hot fudge warmers. Waffle cone irons usually need no exhaust hood: confirm it with your plan reviewer
 E18	Yes
 A19	Furniture (20 seats) & patio
 B19	7000
@@ -371,7 +371,7 @@ B10	= 345262.5 ‖ =IFERROR(IF(B9="","",B9*$E$10),"")
 C10	= 372883.5 ‖ =IFERROR(IF(C9="","",C9*$E$10),"")
 D10	= 391527.675 ‖ =IFERROR(IF(D9="","",D9*$E$10),"")
 E10	= 0.9 ‖ =IFERROR(IF('0. Assumptions'!$B$11="","",'0. Assumptions'!$B$11),"")
-F10	Share of total sales. Scoops, cups, cones and sundaes in the shop about 65%, hand-packed pints and quarts to go about 15%, ice cream cakes and holiday pies about 10%, catering about 5% and delivery marketplaces 4% (see "Delivery share of sales"). One sales tax rate in the example; in some states a packaged pint or a whole cake may be taxed as a grocery, so check your state
+F10	Share of total sales. Within this line, roughly: scoops, cups, cones and sundaes in the shop 65%, hand-packed pints and quarts to go 15%, ice cream cakes and holiday pies 10%, catering 5% and pints through delivery marketplaces the rest (see "Delivery share of total sales"). One sales tax rate in the example; in some states a packaged pint or a whole cake may be taxed as a grocery, so check your state
 G10	= 0.08 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$39),"")
 A11	Coffee & beverages (espresso, hot chocolate, sodas, water)
 B11	= 38362.5 ‖ =IFERROR(IF(B9="","",B9*$E$11),"")
@@ -906,7 +906,7 @@ F7	= 1430.0 ‖ =IFERROR(IF(D7="","",D7+E7),"")
 G7	= 17160.0 ‖ =IFERROR(IF(D7="","",F7*MAX(12,'0. Assumptions'!$B$21)),"")
 H7	= 20.0 ‖ =IFERROR(IF(D7="","",C7*$B$18),"")
 I7	= 920.0 ‖ =IFERROR(IF(D7="","",H7*B7*$B$19),"")
-J7	Seasonal part-time W-2 employee, about 40 hours a week from April to September, which equals half a full-time position over the year. Rehire each spring. Scoopers aged 14-15 only within the FLSA hours (29 CFR 570.35)
+J7	Seasonal W-2 employee: about 40 hours a week from April to September, which equals half a full-time position over the year (part-time on a yearly basis). Rehire each spring. Scoopers aged 14-15 only within the FLSA hours (29 CFR 570.35)
 A8	Summer scooper (part-time, June-August)
 B8	1
 C8	0.25
@@ -995,7 +995,7 @@ A4	This financial plan is a MODEL: you type only in the GREEN cells and everythi
 A5	1. "0. Assumptions" is the control sheet: customers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, rent, financing and taxes.
 A6	2. Startup cost items, fixed costs and staffing are typed in their own tab, also in green. No number is typed twice.
 A7	3. Only "Break-Even" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in "Scenarios", seasonality and the launch ramp-up in "12-Month Cash Flow", and the other funding sources in "Financing" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in "Loan requested" on "0. Assumptions"). Everything else is calculated.
-A8	4. All figures are shown EXCL. SALES TAX. To turn a menu price into a price without tax, divide it by 1 + your sales tax rate (8% in the example, so divide by 1.08). The scoop is taxed as prepared food; in some states packaged pints and whole cakes may be taxed as groceries, so check your state. The P&L is excl. sales tax and the cash flow uses what is collected, tax included. Input tax on purchases is not recoverable in this book.
+A8	4. All figures are shown EXCL. SALES TAX. To turn a menu price into a price without tax, divide it by 1 + your sales tax rate (8% in the example, so divide by 1.08). A scoop is generally taxed as prepared food; in some states packaged pints and whole cakes may be taxed as groceries, so check your state. The P&L is excl. sales tax and the cash flow uses what is collected, tax included. Input tax on purchases is not recoverable in this book.
 A9	5. If you change the staffing, the P&L reads it on its own: labor cost comes from the "Staffing" tab, not from a separate estimate.
 A10	6. The "12-Month Cash Flow" tab answers the question that decides a loan: in which month does the cash run out? Its Month 1 is MARCH: the plan opens in season so that the summer cash reaches the first winter. The minimum balance of the year can never be red.
 A11	7. The "Financing" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.
@@ -1071,7 +1071,7 @@ B40	0 °F (−18 °C) or colder in storage and hardening; dipping cabinet 6-10 �
 C40	FDA Food Code + equipment manufacturer
 D40	Cold holding of the purchased base at 41 °F (5 °C) or colder. The cabinet temperature depends on the manufacturer's specification and your food safety plan
 A41	Buy a base or make your own mix
-B41	Buying pasteurized base: retail license in most states; own mix: state dairy / frozen dessert manufacturer license
+B41	Buying pasteurized base: retail permit, plus a frozen dessert license in some states (Vermont); own mix: state dairy / frozen dessert manufacturer license
 C41	Vermont Agency of Agriculture; Georgia Rules 40-2-8
 D41	Depends on your state: ask your state department of agriculture. If you pasteurize your own mix (the variant), fats, egg yolks and emulsifiers go in BEFORE pasteurization, never after, and you need licensed equipment and inspections. The case buys the base from a licensed dairy
 A42	Labor cost / sales
@@ -1226,7 +1226,7 @@ K13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(1
 L13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(11='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(11='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
 M13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(12='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(12='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
 N13	= -128185.2 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B13:M13)),"")
-O13	Twelve monthly payments, with no extra pay months unless you enter more than 12 pay periods on "0. Assumptions". The yearly total matches the P&L. Payroll is spread over twelve months, but seasonal staff only get paid in season, so winter shows up more expensive and summer cheaper than reality: that is the prudent side. March and February barely change, but from June to January your real cash will be lower than on this tab (in the case, by about $10,000 in September)
+O13	Twelve monthly payments, with no extra pay months unless you enter more than 12 pay periods on "0. Assumptions". The yearly total matches the P&L. Payroll is spread over twelve months, but seasonal staff only get paid in season, so winter shows up more expensive and summer cheaper than reality: that is the prudent side. March and February barely change, but from June to January your real cash will be lower than on this tab (in the case, by about $13,800 at the end of September)
 A14	Loan interest
 B14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
 C14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")

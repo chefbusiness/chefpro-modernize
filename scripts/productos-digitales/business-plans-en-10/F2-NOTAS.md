@@ -204,3 +204,9 @@ equivalencias va en `dl/en-shared/hospitality-equivalents-us-uk-canada-australia
 **Volcados para la revisión D203** (`volcar_en.py`, VPS → Mac): `revision/ice-cream-shop-business-plan.txt` (párrafo a
 párrafo con índice y estilo), `revision/ice-cream-shop-financial-projections.txt` y
 `revision/ice-cream-shop-startup-checklist.txt` (celda a celda; fórmulas «= caché ‖ fórmula»; DV y docProps).
+
+## 9. Revisión D203 (27-oct, sesión Claude Code)
+
+0 B · 5 M · 12 m, todo por texto (detalle en `REVISION-FINAL.md`). Remontado y gates de D201 en verde en el VPS (G1-G9,
+autotests 20/20 y 8/8, barrido 0, regresión 31/31, 2.ª pasada igual, 24 págs. Letter). Nuevos sha256: docx `79e36bc7…`,
+libro `7614f552…`, checklist `4378abf6…` (sustituyen a los de §7-§8). Primer `textos_en/GM.revision.json` del conjunto (c0070).
