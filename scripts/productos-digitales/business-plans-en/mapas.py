@@ -1253,8 +1253,16 @@ elif CONJUNTO == 'ice':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-10'))
     import mapas_ice as _ice                                                       # noqa: E402
     _ice.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'wed':
+    # Wedding Venue Business Plan Kit (F2 de business-plans-en-9, 27-oct-2026): libro gemelo de la panadería ES (estructura
+    # del Bakery EN), código de la pizza, diccionario por TEXTO (Pizza EN → BP/BP2 → BBQ/PAEL), docx de 131 ranuras
+    # (config de PAEL/PIZ); fuente ES en mapas_wed.FUENTE_ES (variable WED_FUENTE_ES), datos en business-plans-en-9/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-9'))
+    import mapas_wed as _wed                                                       # noqa: E402
+    _wed.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
-    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael | piz | ice)'
+    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael | piz | ice | wed)'
                      % CONJUNTO)
 
 
