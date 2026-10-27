@@ -156,6 +156,16 @@ POR_CELDA = OrderedDict([
     (('WEDP', _S, 'A63'), 'Sales tax on alcohol (the venue sells none)'),
     (('WEDP', _S, 'C63'), 'NO EFFECT in this plan: the venue sells no alcohol (the caterer does, under its own license) and '
                           'the commission line carries its own rate in column G of the P&L'),
+    # Revisión D174 (27-oct): rótulos de la Pizza EN que no describen el venue (A9 «Menu price», A40 «alcohol to go»:
+    # ninguna fórmula lee B39/B40; los tipos que se cobran están en PyG G10/G11) y O20 con los meses de la pizza
+    (('WEDP', _S, 'A9'), 'Revenue per guest incl. sales tax (calculated)'),
+    (('WEDP', _S, 'A39'), 'Sales tax rate on food sales (not used: the venue sells no food)'),
+    (('WEDP', _S, 'A40'), 'General sales tax rate (reference only: the rates used are on the P&L)'),
+    (('WEDP', _T, 'O20'), "Cash only leaves when the quarter's result is positive. Months without a settlement are left "
+                          'blank, not zero. The cell turns RED when the payment takes more cash than is left that month. '
+                          'The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: June, '
+                          'September and December with Month 1 in March; the fourth quarter is remitted in Month 13): if '
+                          'your state requires monthly filing, expect smaller payments every month instead'),
     # D163: notas de Staffing (sin convenio, sin SMI, 12 pagas, W-2)
     (('WEDP', _R, 'A28'), 'The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the '
                           'row: for a position with two people they include both. "FTE" is the share of a full-time week '
@@ -1008,6 +1018,9 @@ def valores_wed(M):
         for col, val in zip('BCD', (b, c, d)):
             v[('WEDP', _R, '%s%d' % (col, f))] = (val, None)
     v.update([(('WEDP', _R, 'B13'), (8000, 'Coste anual')), (('WEDP', _R, 'B14'), (8000, 'Coste anual'))])
+    # Revisión D174: horas y personas por evento con la mezcla US (J20/J21: boda 13 h, empresa 9, privada 8, micro 5 →
+    # 9.7 h; 3 personas en bodas y 2 en el resto → 2.35); el 9.2 / 2.3 del ES era su mezcla de 120 eventos
+    v.update([(('WEDP', _R, 'B20'), (9.7, None)), (('WEDP', _R, 'B21'), (2.35, None))])
     # Escenarios (D160): pesimista 85 · $60 · 85 / optimista 95 · $72 · 115
     v.update([
         (('WEDP', _ES, 'B5'), (85, 'Invitados por evento')), (('WEDP', _ES, 'D5'), (95, 'Invitados por evento')),

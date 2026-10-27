@@ -129,7 +129,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "The venue rental fee and the Venue's services are $[base amount] plus applicable sales tax as your state requires, which comes to $[tax amount], for a total of $[total amount]. That amount does not include the menu or the bar, which are paid to the Caterer."
+  "texto": "The venue rental fee and the Venue's services are $[base amount] plus applicable sales tax as required by [State] law, which comes to $[tax amount], for a total of $[total amount]. That amount does not include the menu or the bar, which are paid to the Caterer."
  },
  {
   "estilo": "H2",
@@ -161,7 +161,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "The retainer is a booking payment that is applied to the total price if the event takes place. If a party cancels, the retainer and any other amount paid are governed only by the cancellation table in the clause on cancellation by the Client and by the clause on cancellation by the Venue, which replace any other rule about deposits: if the Client cancels, the Venue keeps what the cancellation table sets; if the Venue cancels, it refunds everything collected and pays the Client what the clause on cancellation by the Venue sets. Any deposit rule is applied to the extent permitted by applicable law."
+  "texto": "The retainer is a booking payment that is applied to the total price if the event takes place. If a party cancels, the retainer and any other amount paid are governed only by the cancellation table in the clause on cancellation by the Client and by the clause on cancellation by the Venue, which replace any other term of this agreement about deposits: if the Client cancels, the Venue keeps what the cancellation table sets; if the Venue cancels, it refunds everything collected and pays the Client what the clause on cancellation by the Venue sets. Any deposit rule is applied to the extent permitted by applicable law."
  },
  {
   "estilo": "H2",
@@ -193,7 +193,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "If what has already been paid is more than the percentage the Venue keeps, the Venue refunds the difference within [14] days. If it is less, the Client pays the difference up to that percentage. The parties agree these amounts are a reasonable estimate of the Venue's loss, not a penalty: the Venue cannot offer the date to other clients and it turns away other bookings. To the extent permitted by applicable law, they are applied in proportion to that loss."
+  "texto": "If what has already been paid is more than the percentage the Venue keeps, the Venue refunds the difference within [14] days. If it is less, the Client pays the difference up to that percentage. The parties agree these amounts are a reasonable estimate of the Venue's loss, not a penalty: the Venue cannot offer the date to other clients and it turns away other bookings. If applicable law limits these amounts, they apply only to the extent that law allows."
  },
  {
   "estilo": "Normal",
@@ -341,7 +341,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "The Venue will use the Client's personal data to manage this agreement, issue invoices and meet its legal obligations, and will keep it for as long as the relationship lasts or the law requires. The Client can ask for access, correction or deletion of their data at [email]. Data controller: [Venue details]."
+  "texto": "The Venue will use the Client's personal data to manage this agreement, issue invoices and meet its legal obligations, and will keep it for as long as the relationship lasts or the law requires. The Client can ask for access, correction or deletion of their data at [email]. Privacy contact: [Venue details]."
  },
  {
   "estilo": "Normal",
@@ -405,7 +405,7 @@
  },
  {
   "estilo": "List Bullet",
-  "texto": "**Payment schedule.** Retainer: **[30]%** at signing. Second payment: **[30]%** [60] days before the event. Final payment: **[40]%** [15] days before the event, on net [30] terms for the invoice balance if agreed. One invoice per payment, with applicable sales tax shown separately on the Venue's fee. Late amounts bear interest at the rate in the invoice or the rate the law allows between businesses, without a prior demand."
+  "texto": "**Payment schedule.** Retainer: **[30]%** at signing. Second payment: **[30]%** [60] days before the event. Final payment: **[40]%** [15] days before the event, on net [30] terms for the invoice balance if agreed. One invoice per payment, with applicable sales tax shown separately on the Venue's fee. Late amounts bear interest at [1.5]% per month, or the highest rate the law allows if that is lower."
  },
  {
   "estilo": "List Bullet",
