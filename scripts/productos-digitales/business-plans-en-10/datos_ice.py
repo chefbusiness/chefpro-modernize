@@ -293,8 +293,8 @@ def _importes_research():
     for f in ('F1-research-us-delta.md', 'SPEC-delta.md'):
         p = os.path.join(AQUI, f)
         t = open(p, encoding='utf-8').read() if os.path.exists(p) else ''
-        out |= {int(x.replace(',', '')) for x in re.findall(r'\$\s?(\d{1,3}(?:,\d{3})+)', t)
-                if int(x.replace(',', '')) >= 10000}
+        for m in re.finditer(r'\$\s?(\d{1,3}(?:,\d{3})+)(?:\s?[-–]\s?\$?(\d{1,3}(?:,\d{3})+))?', t):  # «$25,000-45,000»
+            out |= {int(x.replace(',', '')) for x in m.groups() if x and int(x.replace(',', '')) >= 10000}
         out |= {int(x) * 1000 for x in re.findall(r'\$\s?(\d{2,3})K\b', t)}
     return out
 
@@ -652,7 +652,23 @@ CELDA_PISTAS = OrderedDict([
                           'verano dispara la luz'),
     (('HELP', _S, 'C27'), 'D191: $4,500/año = general liability + property + equipment breakdown con food spoilage + '
                           'workers\' comp'),
+    (('HELP', _S, 'C25'), 'D191: 2 meses de fianza (forma: Pizza EN C25, «commercial leases commonly ask for one to '
+                          'three… check it with your attorney»)'),
+    (('HELP', _S, 'C27'), 'D191: sin el «300.000 €» del ES: general liability (límite habitual por siniestro, «ask '
+                          'your broker») + equipment breakdown con food spoilage, que es el riesgo de una heladería'),
+    (('HELP', _S, 'C32'), 'D191: SBA 7(a) al 10 % a 10 años (Prime + margen según tramo: «ask two lenders»); sin ICO'),
+    (('HELP', _S, 'C34'), 'D191: B34 = 0 (SBA 7(a) amortiza desde el inicio; forma: Pizza EN C34); el ES pone un año '
+                          'de carencia: aquí no'),
+    (('HELP', _S, 'C35'), 'D191: 3 meses de costes fijos de caja: el colchón del primer invierno (noviembre-febrero)'),
     (('HELP', _S, 'C51'), 'D189: 20 plazas dentro; el patio de 5 mesas (en temporada) no cuenta en el aforo'),
+    (('HELP', _S, 'C58'), 'D191: 2 días = media ponderada: el mostrador cobra al momento (tarjeta) y el catering a '
+                          'unos días; sin «restaurantes»'),
+    (('HELP', _S, 'C60'), 'D198: con 12 pagas no hay extras: solo cuenta si tecleas más de 12; «July is Month 5, because '
+                          'Month 1 of the plan is March» (forma: Pizza EN C60)'),
+    (('HELP', _S, 'C61'), 'D198: con 12 pagas no hay extras: solo cuenta si tecleas más de 12; «December is Month 10, '
+                          'because Month 1 of the plan is March» (forma: Pizza EN C61)'),
+    (('HELP', _S, 'C68'), 'D191: B68 vacío = state / local minimum wage anual (hourly × 2,080) si supera el federal '
+                          '$7.25; sin convenio (forma: Pizza EN C68)'),
     (('HELP', _N, 'A8'), 'SPEC §4.1 línea 4 (Bar/PIZ): sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales '
                          'tax rate»; P&L excl. sales tax, cash flow incl.; un solo tipo en el ejemplo (B39 = B40 = 8 %); '
                          'el pint envasado y la tarta entera pueden ir exentos en algunos estados (D195)'),
@@ -663,11 +679,25 @@ CELDA_PISTAS = OrderedDict([
                           'marketplaces 4 % (ver B16); un solo sales tax en el ejemplo; el pint envasado puede ir exento '
                           'en algunos estados'),
     (('HELP', _P, 'F11'), 'D194: espresso, hot chocolate, shakes, sodas y agua; sin alcohol'),
+    (('HELP', _P, 'F26'), 'D194: accounting & bookkeeping, sales tax returns y payroll (incl. los seasonal W-2)'),
+    (('HELP', _P, 'F31'), 'D194: sidewalk café / patio permit de 5 mesas en temporada; la tasa la pone tu ciudad'),
+    (('HELP', _P, 'F35'), 'D194: CFPM, food handler cards, alérgenos y OSHA basics (frío, resbalones, cortes); sin Ley '
+                          '31/1995'),
+    (('HELP', _P, 'F53'), 'D196: techo del food cost sobre ventas (25 %); la base comprada lo sube frente a hacer tu '
+                          'mezcla; Kit estimate'),
+    (('HELP', _P, 'F54'), 'D196: techo del personal (35 %): la temporada obliga a reforzar el mostrador; Kit estimate'),
+    (('HELP', _R, 'J5'), 'D194: owner / ice cream maker & GM: recetas, sabores, batch freezing, compras y gestión; NO '
+                         'pasteuriza (base comprada); cobra por debajo de un gerente: «draw in addition from net '
+                         'profit»; sin «administrador / autónomo»'),
+    (('HELP', _R, 'J6'), 'D194: shift lead todo el año (≈ $17/h): mostrador, caja, dipping cabinets y cierre'),
     (('HELP', _R, 'J7'), 'D194: seasonal part-time W-2 (≈ 40 h/semana de abril a septiembre = 0.5 FTE en el año), '
                          'recontratado cada primavera; scoopers de 14-15 años solo con el horario FLSA (29 CFR 570.35)'),
     (('HELP', _R, 'J8'), 'D194: seasonal part-time W-2 de junio a agosto (tardes y noches del pico); nunca 1099 si '
                          'pones tú el horario (misclassification)'),
-    (('HELP', _R, 'J9'), 'D194: production assistant de mayo a septiembre (batch freezing, pack-out, limpieza)'),
+    (('HELP', _R, 'J9'), 'D194: production assistant de mayo a septiembre (batch freezing, pack-out, limpieza del '
+                         'batch freezer y de los tubs); sin pasteurizador'),
+    (('HELP', _R, 'J20'), 'D194: horas de la tienda por temporada (más en peak season, Memorial Day → Labor Day; menos '
+                          'de noviembre a febrero); 9.5 h de media'),
     (('HELP', _R, 'J22'), 'D194: 2.0 h al día antes de abrir: aromatizar, batch-freeze y endurecer (SIN pasteurizar ni '
                           'madurar: la base viene pasteurizada); más en julio, menos en invierno'),
     (('HELP', _T, 'O13'), 'D194: 12 pagas (sin extras); el personal se reparte en 12 meses pero los seasonal solo cobran '
