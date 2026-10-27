@@ -171,3 +171,36 @@ terminología fijada por la tanda 1) y comando de cada uno en §5:
 Siguiente (paso 4, VPS): `bp10.py ensamblar_docx --plan ice` → `gates_en` completo (G8) + `--autotest` +
 `ensamblar_docx --autotest` → `barrido` (3 entregables) → `resumen_entregables.py` → `regresion_ice.sh` → 2.ª pasada →
 revisión D203.
+
+## 8. Paso 4 de D207 (27-oct, sesión Claude Code): Word ensamblado y TODOS los gates de D201 (sin la revisión D203)
+
+Tanda 2 de dos traductores sonnet (commits `ec422b4e`, `dbda363a`): `docx_en_ice_a.json` (29 párrafos, 52 tokens) ‖
+`docx_en_ice_b.json` (32, 86 tokens); `check_textos --todas` (Mac): **las 7 tandas OK** (0 errores; 6 avisos de
+longitud en GM). Sustituyeron MAPA / IAE por IDFA, Proclamation 5219 y 7shifts ([57]-[58] reescritos), la nota UK del
+[108] con «check with HMRC» y el reparto de ventas del [48] con `{{comida_pct}}` / `{{bebida_pct}}`.
+
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp10.py ensamblar_docx --plan ice` | **G8 VERDE**: 131 párrafos (110 con texto), 10 Heading 1, **6,986 palabras**, **Letter 8.5 × 11 in**, **24 páginas** (PDF de LibreOffice, `pdfinfo`) |
+| `gates_en` (G1-G9, sin `--parcial`) | **TODO VERDE**: G1 736 fórmulas + 80 tareas [12, 15, 15, 12, 13, 13] · G2 1,299 piezas (incl. RX_ICE_NO y cifras prohibidas) · G3 16 hojas Letter · G4 233 valores bajo DV · G5 8 rangos CF · G6 0 diferencias (D15 2.26 / $46,060 / 105.3 % / 18.3 %) · G7 110 valores, 0 calibraciones · G8 docx · G9 censo 0 defectos + no latinos 0 (3 ficheros) |
+| `gates_en --autotest` · `ensamblar_docx --autotest` | **20/20** · **8/8** |
+| `bp10.py barrido` (los 3 entregables) | 1,383 piezas · **0** RX_ICE_NO / cifras ES / Pizza / Bakery / Bar / FT / REST · 0 español · 0 no latinos (`barrido_ice.json`) |
+| `resumen_entregables.py` | 3,363 piezas · prohibidas 0 · español 0 · no latinos 0 (`entregables_ice.json`) |
+| `censo-entregables --fail --letter --only ice-cream-shop-business-plan` · `gate-no-latinos --only` | **0 defectos** · 3 ficheros, 0 caracteres |
+| `bp10.py verificar` | OK (0 errores, 6 avisos: FIJOS del motor sin uso) |
+| Regresión (`regresion_ice.sh`, 8 conjuntos) | `mapas` 0 errores en los 8 · **31/31 ficheros IGUAL** (sha256 canónico frente a `dl/`) |
+| 2.ª pasada (`aplicar_en` + `ensamblar_docx` otra vez sobre una copia en `/root/tmp-icen/pass1`) | sha256 canónico **IGUAL** en los 3; `cifras_caso.json` igual salvo `generado`. Se conservan los ficheros de la 1.ª pasada (los de los gates) |
+
+| Entregable (`astro-site/public/dl/ice-cream-shop-business-plan/`, nombres D188) | sha256 (Mac = VPS) |
+|---|---|
+| `ice-cream-shop-business-plan.docx` (131 párrafos, 10 H1, 6,986 palabras, 24 págs. Letter) | `505acd8fbb1670e560cf2a39190b40a19dc11963875a3ae20e8157c9e4d3528c` |
+| `ice-cream-shop-financial-projections.xlsx` (9 hojas, 736 fórmulas) | `cbb6c10c…` (paso 3) |
+| `ice-cream-shop-startup-checklist.xlsx` (7 hojas, 80 tareas) | `776ea70a…` (paso 3) |
+
+**Bonus común**: como en los hermanos (Pizza, BBQ, Paella…), la carpeta del producto lleva solo sus ficheros; la guía de
+equivalencias va en `dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx` (existe) y la sirve
+`get-download-urls.ts` con la clave `equivalents-guide` (F3, D205).
+
+**Volcados para la revisión D203** (`volcar_en.py`, VPS → Mac): `revision/ice-cream-shop-business-plan.txt` (párrafo a
+párrafo con índice y estilo), `revision/ice-cream-shop-financial-projections.txt` y
+`revision/ice-cream-shop-startup-checklist.txt` (celda a celda; fórmulas «= caché ‖ fórmula»; DV y docProps).

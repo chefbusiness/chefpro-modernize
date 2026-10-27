@@ -1,0 +1,1576 @@
+# ice-cream-shop-financial-projections.xlsx
+docProps · title: Ice Cream Shop Financial Projections: 3-Year P&L, Cash Flow & Financing · Ice Cream Shop Business Plan Kit · subject: Ice Cream Shop Business Plan Kit · v2.2 · keywords: ice cream shop business plan, ice cream parlor business plan, how to open an ice cream shop, ice cream shop startup costs, batch freezer, AI Chef Pro · description: aichef.pro/en/digital-products/ice-cream-shop-business-plan
+
+## 0. Assumptions  (papel 1, orientación None, protegida True)
+A1	ASSUMPTIONS — the RATES and DRIVERS of the model are typed here
+A2	Change the GREEN cells: the rest of the workbook recalculates on its own. Expense items are typed on their own tab (also in green) and are not repeated here. Amounts are in your currency.
+A3	BUSINESS ACTIVITY
+A4	Customers per day (year-1 average)
+B4	165
+C4	Customers served per day, averaged over year 1, at the counter, to go and at the patio: about 400 on a busy July Saturday and about 40 on a January Tuesday (Kit estimate). It comes from dividing projected sales by the average check and the days you are open; compare it with the foot traffic on your own street on a summer afternoon and on a February one
+A5	Average check (excl. sales tax)
+B5	7.5
+C5	Excl. sales tax, per person who buys: a double scoop, plus hand-packed pints, ice cream cakes to order and the winter hot chocolate. It is per person, not per register ticket: some people buy for two. The case mixes about 70% doubles in a cup or cone, 15% singles and kids' scoops, 10% pints and quarts and 5% sundaes and coffee (Kit estimate). The menu price incl. sales tax is in the row "Menu price incl. sales tax (calculated)" below
+A6	Operating days per year
+B6	310
+C6	365 days minus three weeks closed in January (vacation and refrigeration maintenance), Thanksgiving, Christmas and the Mondays from November to February. It is the SAME figure for the P&L, the break-even, the scenarios and the staffing hours
+A7	Volume growth in year 2
+B7	0.08
+C7	More repeat customers in the second summer, plus more ice cream cakes to order and catering. It applies to customers; payroll does NOT rise with this percentage: it grows with the hires you declare on the "Staffing" tab
+A8	Volume growth in year 3
+B8	0.05
+C8	On top of year 2. Conservative: the ceiling is set by the 18-flavor dipping cabinets and the July and August evenings
+A9	Menu price incl. sales tax (calculated)
+B9	= 8.1 ‖ =IFERROR(IF($B$5="","",$B$5*(1+SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))),"")
+C9	= Average check excl. sales tax plus the weighted sales tax of your sales lines (8%), rounded. In the US, menu prices usually exclude sales tax and it is added at the register. The example uses one rate for scoops, pints, cakes and drinks; some states tax packaged pints and whole cakes as groceries: then use your blended rate. In the UK, menu prices include VAT. ‖ =IFERROR("Average check excl. sales tax plus the weighted sales tax of your sales lines ("&TEXT(SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)*100,"0")&"%), rounded. In the US, menu prices usually exclude sales tax and it is added at the register. "&"The example uses one rate for scoops, pints, cakes and drinks; some states tax packaged pints and whole cakes as groceries: then use your blended rate. In the UK, menu prices include VAT.","")
+A10	SALES MIX AND COST OF GOODS SOLD
+A11	FOOD share of total sales
+B11	0.9
+C11	Share of FOOD in total sales. It is an INPUT: change it here and the P&L, the cash flow and the sales tax collected recalculate on their own
+A12	BEVERAGE share of total sales
+B12	= 0.1 ‖ =IFERROR(IF(COUNT(B11)=0,"",1-B11),"")
+C12	Calculated as the remainder: food + beverage = 100%
+A13	Cost of goods sold on FOOD sales
+B13	0.22
+C13	Cost of the ice cream base, flavorings and mix-ins, cones, tasting spoons and shrink as a share of ice cream sales. The case buys a pasteurized base from a licensed dairy, which costs more than making your own mix. Cost out every flavor every season: pistachio, cocoa and vanilla swing with the market
+A14	Cost of goods sold on BEVERAGE sales
+B14	0.25
+C14	Espresso, hot chocolate, shakes, sodas and water as a share of their sales: soft drinks run higher than espresso. No alcohol
+A15	Disposables and packaging as % of sales
+B15	0.045
+C15	Cups, cones, spoons, pint and quart containers, cake boxes and napkins. Use paper or other compostable cups for dine-in where your city requires it
+A16	Delivery share of total sales
+B16	0.04
+C16	Hand-packed pints and quarts through DoorDash or Uber Eats on summer evenings: a pint travels well, a scoop does not. Pickup orders placed directly with you pay no commission
+A17	Delivery platform fee
+B17	0.25
+C17	Average marketplace plan (Basic 15%, Premier 30%): check your contract. If you deliver yourself, enter 0
+A18	Card processing fee
+B18	0.03
+C18	Card and mobile wallet (contactless) processing fees on total sales. Ask your POS provider for its rate
+A19	LABOR
+A20	Employer payroll taxes
+B20	0.1
+C20	FICA (Social Security 6.2% + Medicare 1.45%) + federal and state unemployment taxes (FUTA / SUTA) + workers' comp. About 10% in total: adjust it to your state and your insurance carrier
+A21	Monthly pay periods per year (keep 12)
+B21	12
+C21	Annual gross pay = monthly gross pay × this number. Keep 12 in the US: it counts the monthly salaries the model pays in a year, not how often you run payroll (weekly or biweekly payroll pays the same annual amount)
+A22	Federal minimum wage, annual full-time
+B22	15080
+C22	US federal minimum wage: 7.25 per hour × 2,080 hours = 15,080 per year for a full-time job. Your state or city may set a higher floor: enter it in the state / local minimum wage cell below. Check the current rates at dol.gov
+A23	RENT AND FIXED COSTS
+A24	Monthly rent
+B24	2500
+C24	About 1,000 sq ft (93 sq m): a production room of about 250 sq ft (23 sq m), a shop with 18-flavor dipping cabinets and 20 seats, storage and a restroom. Second-generation retail on a neighborhood main street or next to a park or school, at about $30 per sq ft per year (Kit estimate; asking rents average about $24.69 plus NNN). The book itself calculates the weight on sales in the "Rent / Sales" row of the P&L
+A25	Security deposit (months of rent)
+B25	2
+C25	Two months of rent: commercial leases commonly ask for one to three, so check it with your attorney
+A26	Monthly utilities (electricity, water, gas)
+B26	1300
+C26	Mostly electricity: about 30 kW of service, with the dipping cabinets running 24 hours a day, the batch freezer, the hardening cabinet and the air conditioning. Summer sends the bill up; ask the landlord or the utility for the local's history
+A27	Insurance (per year)
+B27	4500
+C27	General liability (ask your broker for the per-occurrence limit) plus property insurance WITH equipment breakdown and food spoilage: a cabinet that fails in August is a tub lost for every flavor
+A28	Miscellaneous and contingency as % of sales
+B28	0.01
+C28	Cushion for unbudgeted running costs (small repairs, tastings and samples)
+A29	FINANCING
+A30	Owner's equity contributed
+B30	95000
+C30	Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need
+A31	Loan requested
+B31	162000
+C31	Principal requested. The "Financing" tab compares what you put in with the cash need on "Startup Costs" and tells you whether you have a surplus or a shortfall: adjust the loan with that figure. The example is an SBA 7(a) loan, which you apply for through your lender (SBA Microloans go up to $50,000)
+A32	Nominal annual interest rate (not APR)
+B32	0.1
+C32	Annual nominal rate, not APR. The example is an SBA 7(a) loan through your lender at 10% (Prime plus a margin that depends on the loan size): ask two lenders for a quote before you set it. Refrigeration equipment is often leased: compare that too
+A33	Loan term (years)
+B33	10
+C33	Total years, interest-only period included
+A34	Interest-only period (years)
+B34	0
+C34	0 by default: an SBA 7(a) loan is repaid from the start, so the example has no interest-only period. If your lender grants one, enter the years here and check the cash cushion for that year on the "Break-Even" tab
+A35	Working capital (months of fixed costs)
+B35	3
+C35	Three months of fixed costs: the cushion for the first winter, when only about 15% of the year's sales come in from November to February while fixed costs stay flat
+A36	TAXES
+A37	Effective income tax rate (years 1-2)
+B37	0.25
+C37	Example: 21% federal rate for a C corporation plus state tax, rounded to 25%. If you operate as a sole proprietorship, LLC taxed as a pass-through or S corporation, the business itself pays 0% here and you pay tax on the profit personally: set this to 0 and budget for your personal tax separately. The model applies this rate to the first two years with positive taxable income
+A38	Effective income tax rate (from year 3)
+B38	0.25
+C38	From the third year with positive taxable income. Same example rate (21% federal C corporation + state). Confirm the rate that applies to you with your accountant and change it here
+A39	Sales tax rate on sales
+B39	0.08
+C39	Example rate: state + local sales tax combined. It varies widely by state and city: look up yours. UK: 20% VAT on hot food and dine-in
+A40	Sales tax rate on alcohol to go
+B40	0.08
+C40	One sales tax rate for the example (8%). Check your state and city: the same rate is used for the sales tax collected and for the menu price incl. sales tax. Recoverable input tax on purchases is 0: there is no credit for sales tax paid on purchases, so the book does not credit anything
+A41	Recoverable input tax on purchases and capex
+B41	0
+C41	In the US, the sales tax you pay on purchases is a cost, not a credit: leave this at 0%. UK: 20% if you are VAT-registered
+A42	Net operating losses carried forward
+B42	0
+C42	Net operating losses from earlier years still to be offset at the start. Federal rules let you offset up to 80% of taxable income in a year; the model offsets 100% as a simplification
+A43	DEPRECIATION
+A44	Useful life of build-out and fixtures (years)
+B44	10
+C44	Build-out of the production room and shop, electrical service, plumbing, floor drains, HVAC and signage. Depreciation follows the IRS recovery periods for your assets: confirm the life with your CPA
+A45	Useful life of machinery, furniture and equipment (years)
+B45	7
+C45	Batch freezer, hardening cabinet, freezers, dipping cabinets, espresso machine, furniture and POS. Straight-line depreciation over the useful life; confirm the recovery period and any Section 179 election with your CPA
+A47	GROWTH AND COST INFLATION
+A48	Annual increase in fixed costs
+B48	0
+C48	SET TO ZERO: all three columns are in year-1 prices (real terms). Raise it if you want to project in nominal terms
+A49	RAMP-UP AND CAPACITY
+A51	Seating capacity of the space (indoor seats, patio not included)
+B51	20
+C51	FOR INFORMATION: most sales happen at the counter and to go. The patio adds 5 more tables in season, with its own sidewalk café permit from the city and not counted here
+A52	Month-1 activity as a % of steady-state activity
+B52	0.7
+C52	A shop that opens in March does not sell in month 1 what it sells in month 4: ice cream is an impulse purchase and the neighborhood takes time to find you, and spring is still slow. At 100% the ramp-up disappears
+A53	Months to reach steady state
+B53	4
+C53	Four months to reach cruising pace: March to June, just before the summer peak
+A54	Months of rent BEFORE opening (build-out and permits)
+B54	2
+C54	Two months of rent before opening: the production room build-out, the electrical upgrade (ask the utility about 3-phase service and amps before signing) and the permits. If your lender funds the loan when construction starts, add the interest for those months, which this book does not count
+A55	Contingency on the BUILD-OUT lines of the space block (%)
+B55	0.1
+C55	Cushion on the build-out and the shop installations, where surprises show up (electrical service, floor drains, ventilation for the condenser units). A lender will not fund a renovation without one
+A57	RECEIPTS, PAYMENTS AND SALES TAX BREAKDOWN
+A58	Average collection days
+B58	2
+C58	Weighted average: the counter collects on the spot (card) and catering customers pay a few days later
+A59	Average days to pay suppliers
+B59	14
+C59	Payment terms from your dairy, flavoring, cone and packaging suppliers: what they finance for you. It is the first thing you lose if you pay late
+A60	Month of extra pay period 1 (only if pay periods > 12)
+B60	5
+C60	Not used with 12 pay periods: this only counts if you enter more than 12. Month of the CASH FLOW in which the extra payment goes out: July is Month 5, because Month 1 of the plan is March
+A61	Month of extra pay period 2 (only if pay periods > 12)
+B61	10
+C61	Not used with 12 pay periods: this only counts if you enter more than 12. Month of the CASH FLOW in which the extra payment goes out: December is Month 10, because Month 1 of the plan is March
+A62	ALCOHOLIC beverages as a share of total beverage sales
+B62	0
+C62	Set to ZERO: the beverage menu of this plan is coffee, hot chocolate, shakes, sodas and water, with no alcohol. If you add alcohol, type its share of beverage sales here: it needs a state liquor license, and its sales tax uses the cell below (on site) and B40 (to go)
+A63	Sales tax rate on alcohol served on site
+B63	0.08
+C63	NO EFFECT in this plan (the cell above is at 0). If you serve alcohol, type the sales tax rate your state applies to alcohol served on site. With the example, everything pays the same 8% (state + local)
+A64	CONTROL THRESHOLDS AND FLOORS
+A65	DSCR limit (minimum acceptable)
+B65	1.15
+C65	Below 1.0 the business does not generate enough to repay the loan. Lenders often write a minimum DSCR into the loan covenants: ask yours. Kit default: 1.15×
+A66	DSCR target (green)
+B66	1.25
+C66	What lenders commonly look for before approving a loan comfortably. Kit default: 1.25× (editable estimate)
+A67	Minimum cushion above break-even
+B67	0.15
+C67	How far you can fall below plan before you start losing money
+A68	State / local minimum wage, annual full-time
+C68	Leave empty to use your state or local minimum wage (hourly rate x 2,080 hours) whenever it is above the federal $7.25 per hour. Type your own annual figure if your city sets a higher floor. With 0 the traffic light compares only against the federal minimum
+DV B5 B22 B24 B26 B27 B30 B31 B42 B65 B66 B68	decimal · 0 · error: Enter a number greater than or equal to 0. · ayuda: None
+DV B7 B8 B11 B13 B14 B15 B16 B17 B18 B20 B28 B32 B37 B38 B39 B40 B41 B48 B52 B55 B62 B63 B67	decimal · 0 · error: Enter a percentage between 0 and 1 (0.35 = 35%). · ayuda: None
+DV B6 B58 B59	whole · 1 · error: Days range from 1 to 365. · ayuda: None
+DV B34	whole · 0 · error: Whole years of interest-only period, from 0 to 15. If it equals or exceeds the loan term, the sheet ignores it. · ayuda: None
+DV B53 B54	whole · 0 · error: Whole number of months (0 to 24). · ayuda: None
+DV B60 B61	whole · 1 · error: Month of the year, from 1 to 12. · ayuda: None
+DV B33	whole · 1 · error: Loan term in whole years: the amortization schedule in this workbook runs up to 15 years. · ayuda: None
+DV B44 B45	whole · 1 · error: Useful life in WHOLE YEARS (1 to 50). Depreciation here is straight-line book depreciation; tax rules such as MACRS or Section 179 are separate. · ayuda: None
+DV B4 B25 B35 B51	whole · 1 · error: Enter a WHOLE number of 1 or more: this cell is a count and several formulas divide by it. · ayuda: None
+DV B21	whole · 12 · error: Monthly pay periods per year, from 12 to 16. Keep 12 in the US: it is not your payroll frequency. Extra pay periods apply only if you enter more than 12. · ayuda: None
+
+## Startup Costs  (papel 1, orientación portrait, protegida True)
+A1	ICE CREAM SHOP BUSINESS PLAN
+A2	Startup costs — ice cream shop with on-site production
+A3	US kit example (2026) — replace with your own quotes.
+A5	Item
+B5	Amount
+C5	% of startup costs
+D5	Notes
+E5	Taxable / recoverable tax?
+A6	STARTUP COSTS
+B6	= 204100.0 ‖ =IFERROR(IF(COUNT(B7:B28)=0,"",SUM(B7:B28)),"")
+C6	= 0.794561 ‖ =IFERROR(B6/$B$31,"")
+A7	Architect, MEP drawings, plan review & permit fees
+B7	9000
+C7	= 0.035037 ‖ =IFERROR(B7/$B$31,"")
+D7	Architect, MEP drawings, plan review with the health department (Food Code 8-201.11) and permit fees
+E7	Yes
+A8	Build-out of production room & shop (second-generation retail, ~1,000 sq ft)
+B8	48000
+C8	= 0.186864 ‖ =IFERROR(B8/$B$31,"")
+D8	Build-out of a second-generation retail space of about 1,000 sq ft (93 sq m) with a production room of about 250 sq ft (23 sq m): tile or washable walls, non-slip floor, restroom and ceilings. Kit estimate: replace it with contractor quotes
+E8	Yes
+A9	Electrical service & panel (about 30 kW)
+B9	9000
+C9	= 0.035037 ‖ =IFERROR(B9/$B$31,"")
+D9	About 30 kW for the dipping cabinets, batch freezer, hardening cabinet and air conditioning. Ask the utility about 3-phase service and amps before signing: a new service connection can take weeks
+E9	Yes
+A10	Plumbing, floor sinks, hand sinks, HVAC & condenser ventilation
+B10	10000
+C10	= 0.03893 ‖ =IFERROR(B10/$B$31,"")
+D10	Floor sinks and drains in the production room, hand sinks and ventilation for the condenser units
+E10	Yes
+A11	Signage & storefront
+B11	5000
+C11	= 0.019465 ‖ =IFERROR(B11/$B$31,"")
+D11	Say "made here in small batches" on the sign only if you really make it here; "homemade" or "house-made" only if it is true
+E11	Yes
+A12	Base refrigerator & flavor prep (41 °F or colder, stick blender, scales)
+B12	4500
+C12	= 0.017519 ‖ =IFERROR(B12/$B$31,"")
+D12	Base case: you buy pasteurized base from a licensed dairy, keep it at 41 °F (5 °C) or colder and add only flavorings and mix-ins. Making your own mix adds a batch pasteurizer (about $25,000-45,000: get quotes) and, in many states, a dairy or frozen dessert manufacturer license: ask your state department of agriculture
+E12	Yes
+A13	Batch freezer (20 qt, horizontal)
+B13	30000
+C13	= 0.11679 ‖ =IFERROR(B13/$B$31,"")
+D13	A 20-qt Carpigiani lists at about $40,800; get two quotes before you close the loan, and reconditioned units cost less. Kit estimate on the low side of what is published, because professional brands rarely publish a price. A smaller 3-gallon (11-liter) countertop unit costs less if you start small
+E13	Yes
+A14	Hardening cabinet / blast freezer
+B14	9000
+C14	= 0.035037 ‖ =IFERROR(B14/$B$31,"")
+D14	Takes the freshly batch-frozen ice cream to 0 °F (−18 °C) or colder in the core before it goes to the dipping cabinet or the freezer. Kit estimate: the sources on price are weak, so get quotes
+E14	Yes
+A15	Storage freezers (0 °F or colder)
+B15	7000
+C15	= 0.027251 ‖ =IFERROR(B15/$B$31,"")
+D15	Storage freezers at 0 °F (−18 °C) or colder for the finished ice cream and the stock. There is no aging cabinet: the base arrives already aged and pasteurized from the dairy
+E15	Yes
+A16	Prep tables, 3-compartment sink, hand sinks, scales, pans & smallwares
+B16	8500
+C16	= 0.033091 ‖ =IFERROR(B16/$B$31,"")
+D16	Stainless prep tables and shelves, a 3-compartment sink, hand sinks, scales, probe thermometers, 3-gallon (11-liter) tubs and pans, and strainers
+E16	Yes
+A17	Dipping cabinets (18 flavors)
+B17	11000
+C17	= 0.042823 ‖ =IFERROR(B17/$B$31,"")
+D17	Two dipping cabinets with room for 18 flavors, plus two spots for the flavor of the day or a reserve. Cabinets for 12 flavors start at about $1,700-2,500 for budget models and reach about $12,300 for premium ones. Run 6-10 °F (−14 to −12 °C) depending on the manufacturer; 18 flavors in summer and 10-12 in winter is enough in a mid-size city
+E17	Yes
+A18	Front counter, dipper wells, espresso, waffle cone irons & hot fudge warmers
+B18	9000
+C18	= 0.035037 ‖ =IFERROR(B18/$B$31,"")
+D18	Front counter, dipper wells with running water (Food Code 3-304.12), espresso machine and grinder, waffle cone irons and hot fudge warmers. No exhaust hood needed: waffle cone irons produce no smoke
+E18	Yes
+A19	Furniture (20 seats) & patio
+B19	7000
+C19	= 0.027251 ‖ =IFERROR(B19/$B$31,"")
+D19	Tables and chairs for 20 seats inside and 5 patio tables in season
+E19	Yes
+A20	POS, card terminal & online ordering
+B20	2500
+C20	= 0.009733 ‖ =IFERROR(B20/$B$31,"")
+D20	POS that reports sales tax, card terminal and online ordering
+E20	Yes
+A21	Scoops, spades, cups, uniforms & allergen signage
+B21	1500
+C21	= 0.00584 ‖ =IFERROR(B21/$B$31,"")
+D21	Scoops, spades and sundae cups (one scoop per flavor), uniforms and the sign that tells guests where to ask about the 9 major allergens, including sesame. Never promise "allergen-free": scoops and dipper wells are shared
+E21	Yes
+A22	Ice cream training course
+B22	2500
+C22	= 0.009733 ‖ =IFERROR(B22/$B$31,"")
+D22	An ice cream making short course on balancing mixes: the difference between creamy ice cream and icy or hard ice cream in the cabinet. Kit estimate
+E22	Yes
+A23	Branding, website, photos & launch
+B23	5000
+C23	= 0.019465 ‖ =IFERROR(B23/$B$31,"")
+D23	Brand identity, a website with the flavor menu, photos and the opening campaign
+E23	Yes
+A24	LLC, legal, permits & food safety plan
+B24	2500
+C24	= 0.009733 ‖ =IFERROR(B24/$B$31,"")
+D24	LLC formation and legal fees, business license and permits, health permit, plan review and a written food safety plan. Fees are set by your state and city; decide with your CPA between an LLC and an S corp. Enter more here if your budget is mostly professional fees
+E24	No
+A25	Opening inventory (base, flavorings, cones, cups, pint containers)
+B25	5000
+C25	= 0.019465 ‖ =IFERROR(B25/$B$31,"")
+D25	Ice cream base, flavorings, cones, cups and pint containers
+E25	Yes
+A26	Security deposit
+B26	= 5000.0 ‖ =IFERROR(IF('0. Assumptions'!$B$24="","",'0. Assumptions'!$B$24*'0. Assumptions'!$B$25),"")
+C26	= 0.019465 ‖ =IFERROR(B26/$B$31,"")
+D26	= 2 months of rent, from "0. Assumptions". Refundable when the lease ends: it is not depreciated and carries no tax ‖ =IFERROR(""&TEXT('0. Assumptions'!$B$25,"0")&IF('0. Assumptions'!$B$25=1," month"," months")&" of rent, from ""0. Assumptions"". Refundable when the lease ends: it is not depreciated and carries no tax","")
+E26	No
+A27	Rent paid before opening
+B27	= 5000.0 ‖ =IFERROR(IF('0. Assumptions'!$B$24="","",'0. Assumptions'!$B$24*'0. Assumptions'!$B$54),"")
+C27	= 0.019465 ‖ =IFERROR(B27/$B$31,"")
+D27	= Rent for the 2 months of build-out and permits before opening. It does not overlap the P&L, which starts on opening day: its twelve months are twelve trading months ‖ =IFERROR("Rent "&IF('0. Assumptions'!$B$54=1,"for the month","for the "&TEXT('0. Assumptions'!$B$54,"0")&" months")&" of build-out and permits before opening. It does not overlap the P&L, which starts on opening day: its twelve months are twelve trading months","")
+E27	Yes
+A28	Build-out and setup contingency
+B28	= 8100.0 ‖ =IFERROR(IF(COUNT(B7,B8,B9,B10,B11)=0,"",ROUND((B7+B8+B9+B10+B11)*'0. Assumptions'!$B$55,0)),"")
+C28	= 0.031533 ‖ =IFERROR(B28/$B$31,"")
+D28	= At 10% of the BUILD-OUT items of this block (architect, MEP drawings, plan review & permit fees; build-out of production room & shop; electrical service & panel; plumbing, floor sinks, hand sinks, HVAC & condenser ventilation; signage & storefront), not of the whole block: the equipment and the other items are left out. No lender funds a build-out without a cushion: the percentage is in "0. Assumptions" ‖ =IFERROR("At "&TEXT('0. Assumptions'!$B$55,"0%")&" of the BUILD-OUT items of this block (architect, MEP drawings, plan review & permit fees; build-out of production room & shop; electrical service & panel; plumbing, floor sinks, hand sinks, HVAC & condenser ventilation; "&"signage & storefront), not of the whole block: the equipment and the other items are left out. No lender funds a build-out without a cushion: the percentage is in ""0. Assumptions""","")
+E28	Yes
+A29	WORKING CAPITAL
+B29	= 52771.3 ‖ =IFERROR(IF(B30="","",B30),"")
+C29	= 0.205439 ‖ =IFERROR(B29/$B$31,"")
+A30	Operating cushion until break-even
+B30	= 52771.3 ‖ =IFERROR(IF('0. Assumptions'!$B$35*('3-Year P&L'!$B$38-'3-Year P&L'!$B$36)=0,"",'0. Assumptions'!$B$35*('3-Year P&L'!$B$38-'3-Year P&L'!$B$36)/12),"")
+C30	= 0.205439 ‖ =IFERROR(B30/$B$31,"")
+D30	= Covers 3 months of year-1 CASH fixed costs (the P&L fixed costs minus depreciation, which is not paid out), the minimum the Instructions of this workbook ask for ‖ =IFERROR("Covers "&TEXT('0. Assumptions'!$B$35,"0")&IF('0. Assumptions'!$B$35=1," month"," months")&" of year-1 CASH fixed costs (the P&L fixed costs minus depreciation, which is not paid out), the minimum the Instructions of this workbook ask for","")
+E30	No
+A31	TOTAL STARTUP COSTS (sum of the blocks)
+B31	= 256871.3 ‖ =IFERROR(B6+B29,"")
+D31	= The percentages in column C are read on this figure, which includes the working capital (21% of the total). To compare the breakdown with another plan, use the CAPEX row below. ‖ =IFERROR("The percentages in column C are read on this figure, which includes the working capital ("&TEXT(C29,"0%")&" of the total). To compare the breakdown with another plan, use the CAPEX row below.","")
+A32	CAPEX (startup costs excluding working capital)
+B32	= 204100.0 ‖ =IFERROR(B31-B29,"")
+D32	What you buy: build-out, equipment, launch and formation costs. The cash cushion is not an investment: it is working capital
+A33	Recoverable input tax on capex
+B33	= 0.0 ‖ =IFERROR(IF(B31="","",SUMIF($E$7:$E$28,"Yes",$B$7:$B$28)*'0. Assumptions'!$B$41),"")
+D33	= At 0% on the items marked "Yes" in the tax column. US: the sales tax you pay on equipment is part of its cost and is not recovered, so this rate is 0. UK (VAT-registered): 20%, reclaimed on your VAT return, but you pay it first, so the loan has to cover it ‖ =IFERROR("At "&TEXT('0. Assumptions'!$B$41,"0%")&" on the items marked ""Yes"" in the tax column. US: the sales tax you pay on equipment is part of its cost and is not recovered, so this rate is 0. UK (VAT-registered): 20%, reclaimed on your VAT return, but you pay it first, so the loan has to cover it","")
+A34	TOTAL CASH NEEDED AT LAUNCH
+B34	= 256871.3 ‖ =IFERROR(B31+B33,"")
+D34	This is the figure the Financing tab has to cover
+A35	DEPRECIATION BASES (not added to startup costs)
+A36	Build-out, fixtures and setup
+B36	= 89100.0 ‖ =IFERROR(IF(B7="","",B7+B8+B9+B10+B11+B28),"")
+D36	= Depreciated over 10 years ‖ =IFERROR("Depreciated over "&TEXT('0. Assumptions'!$B$44,"0")&" years","")
+A37	Machinery, furniture and equipment
+B37	= 90000.0 ‖ =IFERROR(IF(B12="","",B12+B13+B14+B15+B16+B17+B18+B19+B20+B21),"")
+D37	= Depreciated over 7 years ‖ =IFERROR("Depreciated over "&TEXT('0. Assumptions'!$B$45,"0")&" years","")
+A38	Annual depreciation of fixed assets
+B38	= 21767.142857 ‖ =IFERROR(B36/MAX(1,'0. Assumptions'!$B$44)+B37/MAX(1,'0. Assumptions'!$B$45),"")
+D38	= Not depreciated, because they are not fixed assets: ice cream training course; branding, website, photos & launch; LLC, legal, permits & food safety plan; opening inventory; security deposit; pre-opening rent and the working capital reserve. They add up to 77771 of the 256871 total investment. ‖ =IFERROR("Not depreciated, because they are not fixed assets: ice cream training course; branding, website, photos & launch; LLC, legal, permits & food safety plan; opening inventory; "&"security deposit; pre-opening rent and the working capital reserve. They add up to "&TEXT(B31-B36-B37,"#,##0")&" of the "&TEXT(B31,"#,##0")&" total investment.","")
+DV E7:E25	list · "Yes,No" · error: Enter "Yes" or "No": the recoverable input tax on startup costs comes from this column. · ayuda: None
+DV B7 B8 B9 B10 B11 B12 B13 B14 B15 B16 B17 B18 B19 B20 B21 B22 B23 B24 B25	decimal · 0 · error: Enter a number greater than or equal to 0. · ayuda: None
+
+## 3-Year P&L  (papel 1, orientación portrait, protegida True)
+A1	PROFIT AND LOSS STATEMENT — 3 YEARS
+A2	Base case — ice cream shop with on-site production
+A4	Item
+B4	Year 1
+C4	Year 2
+D4	Year 3
+E4	% of sales (year 1)
+F4	Notes
+G4	Sales tax rate on the line (%)
+A5	REVENUE
+A6	Customers per day (average)
+B6	= 165.0 ‖ =IFERROR(IF('0. Assumptions'!$B$4="","",'0. Assumptions'!$B$4),"")
+C6	= 178.2 ‖ =IFERROR(B6*(1+'0. Assumptions'!$B$7),"")
+D6	= 187.11 ‖ =IFERROR(C6*(1+'0. Assumptions'!$B$8),"")
+F6	Growth for years 2 and 3 is set in "0. Assumptions"
+A7	Average check (excl. sales tax)
+B7	= 7.5 ‖ =IFERROR(IF('0. Assumptions'!$B$5="","",'0. Assumptions'!$B$5),"")
+C7	= 7.5 ‖ =IFERROR(IF(B7="","",B7),"")
+D7	= 7.5 ‖ =IFERROR(IF(C7="","",C7),"")
+F7	Held constant at year-1 prices: a price increase is a separate decision
+A8	Operating days per year
+B8	= 310.0 ‖ =IFERROR(IF('0. Assumptions'!$B$6="","",'0. Assumptions'!$B$6),"")
+C8	= 310.0 ‖ =IFERROR(IF(B8="","",B8),"")
+D8	= 310.0 ‖ =IFERROR(IF(C8="","",C8),"")
+A9	TOTAL REVENUE (excl. sales tax)
+B9	= 383625.0 ‖ =IFERROR(IF(B6*B7*B8=0,"",B6*B7*B8),"")
+C9	= 414315.0 ‖ =IFERROR(IF(C6*C7*C8=0,"",C6*C7*C8),"")
+D9	= 435030.75 ‖ =IFERROR(IF(D6*D7*D8=0,"",D6*D7*D8),"")
+E9	= 1.0 ‖ =IFERROR(IF(B9="","",1),"")
+A10	Ice cream sales (scoops, sundaes, pints & quarts to go, ice cream cakes, catering)
+B10	= 345262.5 ‖ =IFERROR(IF(B9="","",B9*$E$10),"")
+C10	= 372883.5 ‖ =IFERROR(IF(C9="","",C9*$E$10),"")
+D10	= 391527.675 ‖ =IFERROR(IF(D9="","",D9*$E$10),"")
+E10	= 0.9 ‖ =IFERROR(IF('0. Assumptions'!$B$11="","",'0. Assumptions'!$B$11),"")
+F10	Share of total sales. Scoops, cups, cones and sundaes in the shop about 65%, hand-packed pints and quarts to go about 15%, ice cream cakes and holiday pies about 10%, catering about 5% and delivery marketplaces 4% (see "Delivery share of sales"). One sales tax rate in the example; in some states a packaged pint or a whole cake may be taxed as a grocery, so check your state
+G10	= 0.08 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$39),"")
+A11	Coffee & beverages (espresso, hot chocolate, sodas, water)
+B11	= 38362.5 ‖ =IFERROR(IF(B9="","",B9*$E$11),"")
+C11	= 41431.5 ‖ =IFERROR(IF(C9="","",C9*$E$11),"")
+D11	= 43503.075 ‖ =IFERROR(IF(D9="","",D9*$E$11),"")
+E11	= 0.1 ‖ =IFERROR(IF('0. Assumptions'!$B$12="","",'0. Assumptions'!$B$12),"")
+F11	Espresso, hot chocolate, shakes, sodas and water. No alcohol
+G11	= 0.08 ‖ =IFERROR(IF(B9="","",('0. Assumptions'!$B$62*((1-'0. Assumptions'!$B$16)*'0. Assumptions'!$B$63+'0. Assumptions'!$B$16*'0. Assumptions'!$B$40)+(1-'0. Assumptions'!$B$62)*'0. Assumptions'!$B$39)),"")
+A12	VARIABLE COSTS
+A13	Cost of goods sold — food
+B13	= 75957.75 ‖ =IFERROR(IF(B9="","",B9*'0. Assumptions'!$B$11*'0. Assumptions'!$B$13),"")
+C13	= 82034.37 ‖ =IFERROR(IF(C9="","",C9*'0. Assumptions'!$B$11*'0. Assumptions'!$B$13),"")
+D13	= 86136.0885 ‖ =IFERROR(IF(D9="","",D9*'0. Assumptions'!$B$11*'0. Assumptions'!$B$13),"")
+E13	= 0.198 ‖ =IFERROR(B13/$B$9,"")
+F13	= At 22% of FOOD sales (the ice cream line), not of total sales: beverages have their own line · purchased base, flavorings, mix-ins and toppings, cones, tasting samples and production waste: check it against your dairy and distributor invoices ‖ =IFERROR("At "&TEXT('0. Assumptions'!$B$13,"0%")&" of FOOD sales (the ice cream line), not of total sales: beverages have their own line · purchased base, flavorings, mix-ins and toppings, cones, "&"tasting samples and production waste: check it against your dairy and distributor invoices","")
+G13	0
+A14	Cost of goods sold — beverage
+B14	= 9590.625 ‖ =IFERROR(IF(B9="","",B9*'0. Assumptions'!$B$12*'0. Assumptions'!$B$14),"")
+C14	= 10357.875 ‖ =IFERROR(IF(C9="","",C9*'0. Assumptions'!$B$12*'0. Assumptions'!$B$14),"")
+D14	= 10875.76875 ‖ =IFERROR(IF(D9="","",D9*'0. Assumptions'!$B$12*'0. Assumptions'!$B$14),"")
+E14	= 0.025 ‖ =IFERROR(B14/$B$9,"")
+F14	= At 25% of BEVERAGE sales ‖ =IFERROR("At "&TEXT('0. Assumptions'!$B$14,"0%")&" of BEVERAGE sales","")
+G14	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A15	Disposables and packaging
+B15	= 17263.125 ‖ =IFERROR(IF(B9="","",B9*'0. Assumptions'!$B$15),"")
+C15	= 18644.175 ‖ =IFERROR(IF(C9="","",C9*'0. Assumptions'!$B$15),"")
+D15	= 19576.38375 ‖ =IFERROR(IF(D9="","",D9*'0. Assumptions'!$B$15),"")
+E15	= 0.045 ‖ =IFERROR(B15/$B$9,"")
+G15	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A16	Delivery platform fees
+B16	= 3836.25 ‖ =IFERROR(IF(B9="","",B9*'0. Assumptions'!$B$16*'0. Assumptions'!$B$17),"")
+C16	= 4143.15 ‖ =IFERROR(IF(C9="","",C9*'0. Assumptions'!$B$16*'0. Assumptions'!$B$17),"")
+D16	= 4350.3075 ‖ =IFERROR(IF(D9="","",D9*'0. Assumptions'!$B$16*'0. Assumptions'!$B$17),"")
+E16	= 0.01 ‖ =IFERROR(B16/$B$9,"")
+F16	Applied to the sales of THAT CHANNEL. With 0% delivery in Assumptions, this line is zero
+G16	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A17	Card processing fees
+B17	= 11508.75 ‖ =IFERROR(IF(B9="","",B9*'0. Assumptions'!$B$18),"")
+C17	= 12429.45 ‖ =IFERROR(IF(C9="","",C9*'0. Assumptions'!$B$18),"")
+D17	= 13050.9225 ‖ =IFERROR(IF(D9="","",D9*'0. Assumptions'!$B$18),"")
+E17	= 0.03 ‖ =IFERROR(B17/$B$9,"")
+F17	Card processing fees are not subject to sales tax: no tax is recovered or deducted for them
+G17	0
+A18	Miscellaneous and contingency
+B18	= 3836.25 ‖ =IFERROR(IF(B9="","",B9*'0. Assumptions'!$B$28),"")
+C18	= 4143.15 ‖ =IFERROR(IF(C9="","",C9*'0. Assumptions'!$B$28),"")
+D18	= 4350.3075 ‖ =IFERROR(IF(D9="","",D9*'0. Assumptions'!$B$28),"")
+E18	= 0.01 ‖ =IFERROR(B18/$B$9,"")
+F18	= At 1% of sales. It is a VARIABLE cost: it moves with revenue, so it cannot sit in fixed costs ‖ =IFERROR("At "&TEXT('0. Assumptions'!$B$28,"0%")&" of sales. It is a VARIABLE cost: it moves with revenue, so it cannot sit in fixed costs","")
+G18	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A19	TOTAL VARIABLE COSTS
+B19	= 121992.75 ‖ =IFERROR(IF(B9="","",SUM(B13:B18)),"")
+C19	= 131752.17 ‖ =IFERROR(IF(C9="","",SUM(C13:C18)),"")
+D19	= 138339.7785 ‖ =IFERROR(IF(D9="","",SUM(D13:D18)),"")
+E19	= 0.318 ‖ =IFERROR(B19/$B$9,"")
+A20	GROSS MARGIN
+B20	= 261632.25 ‖ =IFERROR(IF(B9="","",B9-B19),"")
+C20	= 282562.83 ‖ =IFERROR(IF(C9="","",C9-C19),"")
+D20	= 296690.9715 ‖ =IFERROR(IF(D9="","",D9-D19),"")
+E20	= 0.682 ‖ =IFERROR(B20/$B$9,"")
+A21	FIXED COSTS
+A22	Rent
+B22	= 30000.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$24*12),"")
+C22	= 30000.0 ‖ =IFERROR(IF(C9="","",B22*(1+'0. Assumptions'!$B$48)),"")
+D22	= 30000.0 ‖ =IFERROR(IF(D9="","",C22*(1+'0. Assumptions'!$B$48)),"")
+E22	= 0.078201 ‖ =IFERROR(B22/$B$9,"")
+F22	The monthly amount is on the "0. Assumptions" tab; here it is multiplied by twelve. The two months of rent before opening are on the "Startup Costs" tab and are NOT counted twice
+G22	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A23	Labor (wages + employer payroll taxes)
+B23	= 128185.2 ‖ =IFERROR(IF(B9="","",Staffing!$G$11),"")
+C23	= 136185.2 ‖ =IFERROR(IF(C9="","",Staffing!$B$15),"")
+D23	= 144185.2 ‖ =IFERROR(IF(D9="","",Staffing!$B$16),"")
+E23	= 0.334142 ‖ =IFERROR(B23/$B$9,"")
+F23	Comes from the Staffing tab: it is the SAME number, not a separate estimate. Years 2 and 3 add the new hires declared on that tab, not a percentage of volume
+G23	0
+A24	Utilities (electricity, water, gas)
+B24	= 15600.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$26*12),"")
+C24	= 15600.0 ‖ =IFERROR(IF(C9="","",B24*(1+'0. Assumptions'!$B$48)),"")
+D24	= 15600.0 ‖ =IFERROR(IF(D9="","",C24*(1+'0. Assumptions'!$B$48)),"")
+E24	= 0.040665 ‖ =IFERROR(B24/$B$9,"")
+F24	Enter the monthly bills excl. sales tax. The workbook applies a single tax treatment to this whole line, the one in the column next to it; if one utility is taxed differently in your area, give it its own line
+G24	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A25	Insurance (general liability, property, equipment breakdown + food spoilage)
+B25	= 4500.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$27),"")
+C25	= 4500.0 ‖ =IFERROR(IF(C9="","",B25*(1+'0. Assumptions'!$B$48)),"")
+D25	= 4500.0 ‖ =IFERROR(IF(D9="","",C25*(1+'0. Assumptions'!$B$48)),"")
+E25	= 0.01173 ‖ =IFERROR(B25/$B$9,"")
+F25	Insurance premiums are not subject to sales tax: there is no recoverable tax on them
+G25	0
+A26	Accounting & bookkeeping
+B26	3000
+C26	= 3000.0 ‖ =IFERROR(IF(C9="","",B26*(1+'0. Assumptions'!$B$48)),"")
+D26	= 3000.0 ‖ =IFERROR(IF(D9="","",C26*(1+'0. Assumptions'!$B$48)),"")
+E26	= 0.00782 ‖ =IFERROR(B26/$B$9,"")
+F26	Bookkeeping, income and sales tax returns, and payroll for your seasonal W-2 staff
+G26	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A27	Refrigeration service contract (EPA 608-certified tech)
+B27	2400
+C27	= 2400.0 ‖ =IFERROR(IF(C9="","",B27*(1+'0. Assumptions'!$B$48)),"")
+D27	= 2400.0 ‖ =IFERROR(IF(D9="","",C27*(1+'0. Assumptions'!$B$48)),"")
+E27	= 0.006256 ‖ =IFERROR(B27/$B$9,"")
+F27	Service on the dipping cabinets, hardening cabinet, batch freezer and freezers before summer and during the January closing. Refrigerant is handled only by an EPA 608-certified technician: your staff never tops it up
+G27	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A28	Seasonal marketing
+B28	4500
+C28	= 4500.0 ‖ =IFERROR(IF(C9="","",B28*(1+'0. Assumptions'!$B$48)),"")
+D28	= 4500.0 ‖ =IFERROR(IF(D9="","",C28*(1+'0. Assumptions'!$B$48)),"")
+E28	= 0.01173 ‖ =IFERROR(B28/$B$9,"")
+F28	Social media, Google Business Profile, signage and the opening campaign each season, plus the ice cream cake and holiday pie campaign
+G28	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A29	Software, POS & phone
+B29	1800
+C29	= 1800.0 ‖ =IFERROR(IF(C9="","",B29*(1+'0. Assumptions'!$B$48)),"")
+D29	= 1800.0 ‖ =IFERROR(IF(D9="","",C29*(1+'0. Assumptions'!$B$48)),"")
+E29	= 0.004692 ‖ =IFERROR(B29/$B$9,"")
+F29	POS subscription that reports sales tax, phone and internet
+G29	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A30	Cleaning supplies, uniforms & laundry
+B30	1500
+C30	= 1500.0 ‖ =IFERROR(IF(C9="","",B30*(1+'0. Assumptions'!$B$48)),"")
+D30	= 1500.0 ‖ =IFERROR(IF(D9="","",C30*(1+'0. Assumptions'!$B$48)),"")
+E30	= 0.00391 ‖ =IFERROR(B30/$B$9,"")
+F30	Cleaning and sanitizing supplies, uniform laundry, gloves for working at 0 °F (−18 °C) and any lab tests your food safety plan sets
+G30	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A31	Sidewalk café / patio permit (your city's fee)
+B31	500
+C31	= 500.0 ‖ =IFERROR(IF(C9="","",B31*(1+'0. Assumptions'!$B$48)),"")
+D31	= 500.0 ‖ =IFERROR(IF(D9="","",C31*(1+'0. Assumptions'!$B$48)),"")
+E31	= 0.001303 ‖ =IFERROR(B31/$B$9,"")
+F31	Sidewalk space for 5 tables in season. Every city sets its own fee and this plan has not read any: replace this figure with your city's
+G31	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A32	Waste & recycling
+B32	1200
+C32	= 1200.0 ‖ =IFERROR(IF(C9="","",B32*(1+'0. Assumptions'!$B$48)),"")
+D32	= 1200.0 ‖ =IFERROR(IF(D9="","",C32*(1+'0. Assumptions'!$B$48)),"")
+E32	= 0.003128 ‖ =IFERROR(B32/$B$9,"")
+F32	Cardboard, packaging and organic waste from the production room, through a licensed hauler or the city service
+G32	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A33	Pest control
+B33	600
+C33	= 600.0 ‖ =IFERROR(IF(C9="","",B33*(1+'0. Assumptions'!$B$48)),"")
+D33	= 600.0 ‖ =IFERROR(IF(D9="","",C33*(1+'0. Assumptions'!$B$48)),"")
+E33	= 0.001564 ‖ =IFERROR(B33/$B$9,"")
+F33	Licensed pest control company; part of your HACCP-based food safety plan
+G33	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A34	Music licensing (ASCAP/BMI/SESAC)
+B34	600
+C34	= 600.0 ‖ =IFERROR(IF(C9="","",B34*(1+'0. Assumptions'!$B$48)),"")
+D34	= 600.0 ‖ =IFERROR(IF(D9="","",C34*(1+'0. Assumptions'!$B$48)),"")
+E34	= 0.001564 ‖ =IFERROR(B34/$B$9,"")
+F34	ASCAP, BMI and SESAC are separate licensing organizations; the fee depends on the size and capacity of your shop. Only needed if you play music
+G34	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A35	Food safety & OSHA training (CFPM, food handler cards, allergens)
+B35	500
+C35	= 500.0 ‖ =IFERROR(IF(C9="","",B35*(1+'0. Assumptions'!$B$48)),"")
+D35	= 500.0 ‖ =IFERROR(IF(D9="","",C35*(1+'0. Assumptions'!$B$48)),"")
+E35	= 0.001303 ‖ =IFERROR(B35/$B$9,"")
+F35	Certified Food Protection Manager and food handler cards, allergen training and OSHA basics (cold, slips, cuts)
+G35	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$41),"")
+A36	Depreciation of fixed assets
+B36	= 21767.142857 ‖ =IFERROR(IF(B9="","",'Startup Costs'!$B$38),"")
+C36	= 21767.142857 ‖ =IFERROR(IF(C9="","",B36),"")
+D36	= 21767.142857 ‖ =IFERROR(IF(D9="","",B36),"")
+E36	= 0.056741 ‖ =IFERROR(B36/$B$9,"")
+F36	Comes from the depreciation bases on the Startup Costs tab: real fixed assets only. It does NOT rise with inflation: it is a charge on the HISTORICAL cost of the assets
+G36	0
+A37	Interest expense (loan interest)
+B37	= 16200.0 ‖ =IFERROR(IF(B9="","",Financing!$B$44),"")
+C37	= 15183.524603 ‖ =IFERROR(IF(C9="","",Financing!$B$46),"")
+D37	= 14065.401666 ‖ =IFERROR(IF(D9="","",Financing!$B$48),"")
+E37	= 0.042229 ‖ =IFERROR(B37/$B$9,"")
+F37	Only INTEREST is an expense. Principal repaid appears on the cash flow tab
+G37	0
+A38	TOTAL FIXED COSTS
+B38	= 232852.342857 ‖ =IFERROR(IF(B9="","",SUM(B22:B37)),"")
+C38	= 239835.86746 ‖ =IFERROR(IF(C9="","",SUM(C22:C37)),"")
+D38	= 246717.744523 ‖ =IFERROR(IF(D9="","",SUM(D22:D37)),"")
+E38	= 0.606979 ‖ =IFERROR(B38/$B$9,"")
+A39	Recoverable input tax on variable costs
+B39	= 0.0 ‖ =IFERROR(IF(B9="","",SUMPRODUCT(B13:B18,G13:G18)),"")
+C39	= 0.0 ‖ =IFERROR(IF(C9="","",SUMPRODUCT(C13:C18,G13:G18)),"")
+D39	= 0.0 ‖ =IFERROR(IF(D9="","",SUMPRODUCT(D13:D18,G13:G18)),"")
+F39	Each line at ITS OWN rate, read from the column next to it. It is what the cash flow tab overpays to suppliers and later deducts (zero wherever no tax is recoverable)
+A40	Recoverable input tax on fixed costs
+B40	= 0.0 ‖ =IFERROR(IF(B9="","",SUMPRODUCT(B22:B37,G22:G37)),"")
+C40	= 0.0 ‖ =IFERROR(IF(C9="","",SUMPRODUCT(C22:C37,G22:G37)),"")
+D40	= 0.0 ‖ =IFERROR(IF(D9="","",SUMPRODUCT(D22:D37,G22:G37)),"")
+A41	PRE-TAX INCOME (EBT)
+B41	= 28779.907143 ‖ =IFERROR(IF(B9="","",B20-B38),"")
+C41	= 42726.96254 ‖ =IFERROR(IF(C9="","",C20-C38),"")
+D41	= 49973.226977 ‖ =IFERROR(IF(D9="","",D20-D38),"")
+E41	= 0.075021 ‖ =IFERROR(B41/$B$9,"")
+A42	Net operating losses carried forward (opening)
+B42	= 0.0 ‖ =IFERROR(IF(B9="","",'0. Assumptions'!$B$42),"")
+C42	= 0.0 ‖ =IFERROR(IF(C9="","",B47),"")
+D42	= 0.0 ‖ =IFERROR(IF(D9="","",C47),"")
+F42	Federal rules let a year's losses offset the profits of later years (the federal limit is 80% of taxable income; this model offsets 100% as a simplification)
+A43	Taxable income (after loss offset)
+B43	= 28779.907143 ‖ =IFERROR(IF(B9="","",MAX(0,B41-B42)),"")
+C43	= 42726.96254 ‖ =IFERROR(IF(C9="","",MAX(0,C41-C42)),"")
+D43	= 49973.226977 ‖ =IFERROR(IF(D9="","",MAX(0,D41-D42)),"")
+A44	Years with positive taxable income (cumulative)
+B44	= 1.0 ‖ =IFERROR(IF(B9="","",IF(B43>0,1,0)),"")
+C44	= 2.0 ‖ =IFERROR(IF(C9="","",B44+IF(C43>0,1,0)),"")
+D44	= 3.0 ‖ =IFERROR(IF(D9="","",C44+IF(D43>0,1,0)),"")
+A45	Effective income tax rate applied
+B45	= 0.25 ‖ =IFERROR(IF(B9="","",IF(B43<=0,"",IF(B44<=2,'0. Assumptions'!$B$37,'0. Assumptions'!$B$38))),"")
+C45	= 0.25 ‖ =IFERROR(IF(C9="","",IF(C43<=0,"",IF(C44<=2,'0. Assumptions'!$B$37,'0. Assumptions'!$B$38))),"")
+D45	= 0.25 ‖ =IFERROR(IF(D9="","",IF(D43<=0,"",IF(D44<=2,'0. Assumptions'!$B$37,'0. Assumptions'!$B$38))),"")
+F45	The "years 1-2" rate applies to the first two years with positive taxable income, not to the first two calendar years of the business. The model approximates this by counting the first two profitable years
+A46	Income tax
+B46	= 7194.976786 ‖ =IFERROR(IF(B9="","",IF(B45="",0,B43*B45)),"")
+C46	= 10681.740635 ‖ =IFERROR(IF(C9="","",IF(C45="",0,C43*C45)),"")
+D46	= 12493.306744 ‖ =IFERROR(IF(D9="","",IF(D45="",0,D43*D45)),"")
+A47	Net operating losses carried forward (closing)
+B47	= 0.0 ‖ =IFERROR(IF(B9="","",MAX(0,B42-B41)),"")
+C47	= 0.0 ‖ =IFERROR(IF(C9="","",MAX(0,C42-C41)),"")
+D47	= 0.0 ‖ =IFERROR(IF(D9="","",MAX(0,D42-D41)),"")
+A48	NET INCOME
+B48	= 21584.930357 ‖ =IFERROR(IF(B9="","",B41-B46),"")
+C48	= 32045.221905 ‖ =IFERROR(IF(C9="","",C41-C46),"")
+D48	= 37479.920233 ‖ =IFERROR(IF(D9="","",D41-D46),"")
+E48	= 0.056266 ‖ =IFERROR(B48/$B$9,"")
+A49	KEY RATIOS
+A50	Ratio
+B50	Year 1
+C50	Year 2
+D50	Year 3
+E50	Threshold
+F50	Comment
+A51	Gross margin / Sales
+B51	= 0.682 ‖ =IFERROR(IF(B9="","",B20/B9),"")
+C51	= 0.682 ‖ =IFERROR(IF(C9="","",C20/C9),"")
+D51	= 0.682 ‖ =IFERROR(IF(D9="","",D20/D9),"")
+E51	0.65
+F51	Floor for the margin after ALL variable costs (cost of goods sold, packaging, marketplace, card fees and miscellaneous). An ice cream shop that makes its own ice cream usually clears this floor. Kit estimate
+A52	Cost of goods sold (food + beverage)
+B52	= 85548.375 ‖ =IFERROR(IF(B9="","",B13+B14),"")
+C52	= 92392.245 ‖ =IFERROR(IF(C9="","",C13+C14),"")
+D52	= 97011.85725 ‖ =IFERROR(IF(D9="","",D13+D14),"")
+A53	Cost of goods sold / Sales
+B53	= 0.223 ‖ =IFERROR(IF(B9="","",B52/B9),"")
+C53	= 0.223 ‖ =IFERROR(IF(C9="","",C52/C9),"")
+D53	= 0.223 ‖ =IFERROR(IF(D9="","",D52/D9),"")
+E53	0.25
+F53	Ceiling for cost of goods sold over sales; buying the base raises it compared with making your own mix. Pistachio, cocoa and vanilla move it. Kit estimate
+A54	Labor cost / Sales
+B54	= 0.334142 ‖ =IFERROR(IF(B9="","",B23/B9),"")
+C54	= 0.3287 ‖ =IFERROR(IF(C9="","",C23/C9),"")
+D54	= 0.331437 ‖ =IFERROR(IF(D9="","",D23/D9),"")
+E54	0.35
+F54	Ceiling for labor over sales, higher than at a coffee shop: the season forces you to reinforce the counter from June to September. Kit estimate
+A55	Rent / Sales
+B55	= 0.078201 ‖ =IFERROR(IF(B9="","",B22/B9),"")
+C55	= 0.072409 ‖ =IFERROR(IF(C9="","",C22/C9),"")
+D55	= 0.068961 ‖ =IFERROR(IF(D9="","",D22/D9),"")
+E55	0.1
+F55	Ceiling for rent over sales for a space with a production room. Kit estimate
+A56	Net income / Sales
+B56	= 0.056266 ‖ =IFERROR(IF(B9="","",B48/B9),"")
+C56	= 0.077345 ‖ =IFERROR(IF(C9="","",C48/C9),"")
+D56	= 0.086155 ‖ =IFERROR(IF(D9="","",D48/D9),"")
+E56	0.05
+F56	Floor for net profit at cruising pace for the plan to hold up. Kit estimate
+A57	Break-even reached
+B57	= Yes ‖ =IFERROR(IF(B9="","",IF(B9>='Break-Even'!$B$16,"Yes","No")),"")
+C57	= Yes ‖ =IFERROR(IF(C9="","",IF(C9>='Break-Even'!$C$16,"Yes","No")),"")
+D57	= Yes ‖ =IFERROR(IF(D9="","",IF(D9>='Break-Even'!$D$16,"Yes","No")),"")
+F57	Compares each year's sales with that same year's threshold, which the Break-Even tab calculates with that year's fixed costs
+A59	All figures are EXCL. SALES TAX. Years 2 and 3 are in year-1 prices unless you raise cost inflation in the "0. Assumptions" tab. The "Sales tax rate on the line (%)" column shows, on SALES lines, the rate collected on each one and, on COST lines, the rate paid on that item. The cash flow tab reads it: insurance and card fees carry no sales tax, and wages, depreciation and interest carry none either.
+DV B26 B27 B28 B29 B30 B31 B32 B33 B34 B35	decimal · 0 · error: Enter a number greater than or equal to 0. · ayuda: None
+DV E51 E53 E54 E55 E56 G13	decimal · 0 · error: Enter a percentage between 0 and 1 (0.35 = 35%). · ayuda: None
+
+## Break-Even  (papel 1, orientación portrait, protegida True)
+A1	BREAK-EVEN
+A2	Break-even — ice cream shop with on-site production
+A4	Variable
+B4	Year 1
+C4	Year 2
+D4	Year 3
+E4	Notes
+A5	BASE DATA BY YEAR
+A6	Annual fixed costs
+B6	= 232852.342857 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$38),"")
+C6	= 239835.86746 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",'3-Year P&L'!$C$38),"")
+D6	= 246717.744523 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",'3-Year P&L'!$D$38),"")
+E6	The SAME fixed costs as the P&L. Each year has its own, which is why the threshold cannot be a single one for all three years
+A7	Monthly fixed costs
+B7	= 19404.361905 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B6/12),"")
+C7	= 19986.322288 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C6/12),"")
+D7	= 20559.812044 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D6/12),"")
+A8	Average check (excl. sales tax)
+B8	= 7.5 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$7),"")
+C8	= 7.5 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",'3-Year P&L'!$C$7),"")
+D8	= 7.5 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",'3-Year P&L'!$D$7),"")
+A9	Variable cost per customer
+B9	= 2.385 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$19/('3-Year P&L'!$B$6*'3-Year P&L'!$B$8)),"")
+C9	= 2.385 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",'3-Year P&L'!$C$19/('3-Year P&L'!$C$6*'3-Year P&L'!$C$8)),"")
+D9	= 2.385 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",'3-Year P&L'!$D$19/('3-Year P&L'!$D$6*'3-Year P&L'!$D$8)),"")
+E9	Comes from the P&L total variable costs, not from a separate estimate. It includes miscellaneous and contingency, which is a percentage of sales
+A10	Contribution margin per customer
+B10	= 5.115 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B8-B9),"")
+C10	= 5.115 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C8-C9),"")
+D10	= 5.115 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D8-D9),"")
+E10	Average check minus unit variable cost
+A11	Operating days per year
+B11	= 310.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$8),"")
+C11	= 310.0 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",'3-Year P&L'!$C$8),"")
+D11	= 310.0 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",'3-Year P&L'!$D$8),"")
+E11	The same calendar as the P&L and the scenarios
+A12	Principal repaid in the year
+B12	= 10164.753971 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",Financing!$B$45),"")
+C12	= 11181.229368 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",Financing!$B$47),"")
+D12	= 12299.352305 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",Financing!$B$49),"")
+E12	Principal is NOT a P&L expense, but it leaves the cash account. Without it, the published break-even threshold would sit below the real one
+A13	ACCOUNTING BREAK-EVEN (includes depreciation)
+A14	Customers needed per year
+B14	= 45523.429689 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(B10<=0,"",B6/B10)),"")
+C14	= 46888.732641 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",IF(C10<=0,"",C6/C10)),"")
+D14	= 48234.163152 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",IF(D10<=0,"",D6/D10)),"")
+A15	Customers needed per day
+B15	= 146.849773 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B14/B11),"")
+C15	= 151.253976 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C14/C11),"")
+D15	= 155.594075 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D14/D11),"")
+A16	Revenue needed per year
+B16	= 341425.722664 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B14*B8),"")
+C16	= 351665.494809 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C14*C8),"")
+D16	= 361756.223641 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D14*D8),"")
+A17	CASH BREAK-EVEN (loan payments in, depreciation out)
+A18	Cash fixed costs + principal repaid for the year
+B18	= 221249.953971 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B6-'3-Year P&L'!$B$36+B12),"")
+C18	= 229249.953971 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C6-'3-Year P&L'!$C$36+C12),"")
+D18	= 237249.953971 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D6-'3-Year P&L'!$D$36+D12),"")
+E18	The P&L fixed costs without depreciation (which is not paid in cash) and WITH principal repaid (which is). This is the threshold that decides whether cash holds up
+A19	Customers needed per year (cash)
+B19	= 43255.122966 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(B10<=0,"",B18/B10)),"")
+C19	= 44819.150336 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",IF(C10<=0,"",C18/C10)),"")
+D19	= 46383.177707 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",IF(D10<=0,"",D18/D10)),"")
+A20	Customers needed per day (cash)
+B20	= 139.532655 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B19/B11),"")
+C20	= 144.577904 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C19/C11),"")
+D20	= 149.623154 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D19/D11),"")
+A21	Revenue needed per year (cash)
+B21	= 324413.422245 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B19*B8),"")
+C21	= 336143.627523 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C19*C8),"")
+D21	= 347873.832802 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D19*D8),"")
+A22	COMPARISON WITH THE PLAN
+A23	Customers per day forecast in the plan
+B23	= 165.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$6),"")
+C23	= 178.2 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",'3-Year P&L'!$C$6),"")
+D23	= 187.11 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",'3-Year P&L'!$D$6),"")
+A24	Cushion above CASH break-even (%)
+B24	= 0.182519 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B23/B20-1),"")
+C24	= 0.232553 ‖ =IFERROR(IF('3-Year P&L'!$C$9="","",C23/C20-1),"")
+D24	= 0.250542 ‖ =IFERROR(IF('3-Year P&L'!$D$9="","",D23/D20-1),"")
+E24	How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the "0. Assumptions" tab
+A25	INTERPRETATION
+A26	= With the average check excl. sales tax above, you need 147 customers a day over your 310 opening days to avoid losing money (accounting break-even, depreciation included), and 140 for cash to hold (cash break-even: depreciation out, because it is not paid, and the year's loan payment in). The "Revenue needed per year" rows show the same figures in your currency. ‖ =IFERROR("With the average check excl. sales tax above, you need "&TEXT(ROUNDUP(B15,0),"0")&" customers a day over your "&TEXT(B11,"0")&" opening days to avoid losing money (accounting break-even, depreciation included), and "&TEXT(ROUNDUP(B20,0),"0")&" for cash to hold (cash break-even: depreciation out, because it is not paid, and the year's loan payment in"&IF(B12=0,"; no principal is repaid this year (interest-only period or no loan)","")&"). The ""Revenue needed per year"" rows show the same figures in your currency.","")
+A28	BREAK-EVEN SENSITIVITY
+A29	Customers per day needed to cover costs for each average check (columns) and each variable cost per customer (rows). Green cells are below the customers per day the plan forecasts.
+A31	Customers per day needed: average check excl. sales tax (columns) × variable cost per customer (rows)
+B31	= 5.5 ‖ =IFERROR($B$8-2,"")
+C31	= 7.5 ‖ =IFERROR(IF($B$8="","",$B$8),"")
+D31	= 9.5 ‖ =IFERROR($B$8+2,"")
+E31	= 11.5 ‖ =IFERROR($B$8+4,"")
+A32	= 2.02725 ‖ =IFERROR($B$9*0.85,"")
+B32	= 216.294461 ‖ =IFERROR(IF($B$31-$A32<=0,"",$B$6/($B$31-$A32)/$B$11),"")
+C32	= 137.250302 ‖ =IFERROR(IF($C$31-$A32<=0,"",$B$6/($C$31-$A32)/$B$11),"")
+D32	= 100.516756 ‖ =IFERROR(IF($D$31-$A32<=0,"",$B$6/($D$31-$A32)/$B$11),"")
+E32	= 79.294459 ‖ =IFERROR(IF($E$31-$A32<=0,"",$B$6/($E$31-$A32)/$B$11),"")
+A33	= 2.206125 ‖ =IFERROR($B$9*0.925,"")
+B33	= 228.040405 ‖ =IFERROR(IF($B$31-$A33<=0,"",$B$6/($B$31-$A33)/$B$11),"")
+C33	= 141.887859 ‖ =IFERROR(IF($C$31-$A33<=0,"",$B$6/($C$31-$A33)/$B$11),"")
+D33	= 102.981829 ‖ =IFERROR(IF($D$31-$A33<=0,"",$B$6/($D$31-$A33)/$B$11),"")
+E33	= 80.820604 ‖ =IFERROR(IF($E$31-$A33<=0,"",$B$6/($E$31-$A33)/$B$11),"")
+A34	= 2.385 ‖ =IFERROR($B$9*1.0,"")
+B34	= 241.135342 ‖ =IFERROR(IF($B$31-$A34<=0,"",$B$6/($B$31-$A34)/$B$11),"")
+C34	= 146.849773 ‖ =IFERROR(IF($C$31-$A34<=0,"",$B$6/($C$31-$A34)/$B$11),"")
+D34	= 105.570849 ‖ =IFERROR(IF($D$31-$A34<=0,"",$B$6/($D$31-$A34)/$B$11),"")
+E34	= 82.406647 ‖ =IFERROR(IF($E$31-$A34<=0,"",$B$6/($E$31-$A34)/$B$11),"")
+A35	= 2.563875 ‖ =IFERROR($B$9*1.075,"")
+B35	= 255.825821 ‖ =IFERROR(IF($B$31-$A35<=0,"",$B$6/($B$31-$A35)/$B$11),"")
+C35	= 152.171306 ‖ =IFERROR(IF($C$31-$A35<=0,"",$B$6/($C$31-$A35)/$B$11),"")
+D35	= 108.293404 ‖ =IFERROR(IF($D$31-$A35<=0,"",$B$6/($D$31-$A35)/$B$11),"")
+E35	= 84.056187 ‖ =IFERROR(IF($E$31-$A35<=0,"",$B$6/($E$31-$A35)/$B$11),"")
+A36	= 2.74275 ‖ =IFERROR($B$9*1.15,"")
+B36	= 272.422374 ‖ =IFERROR(IF($B$31-$A36<=0,"",$B$6/($B$31-$A36)/$B$11),"")
+C36	= 157.893024 ‖ =IFERROR(IF($C$31-$A36<=0,"",$B$6/($C$31-$A36)/$B$11),"")
+D36	= 111.160101 ‖ =IFERROR(IF($D$31-$A36<=0,"",$B$6/($D$31-$A36)/$B$11),"")
+E36	= 85.773113 ‖ =IFERROR(IF($E$31-$A36<=0,"",$B$6/($E$31-$A36)/$B$11),"")
+
+## Scenarios  (papel 1, orientación portrait, protegida True)
+A1	SCENARIOS
+A4	Metric
+B4	Pessimistic
+C4	Base
+D4	Optimistic
+E4	Notes
+A5	Customers per day
+B5	140
+C5	= 165.0 ‖ =IFERROR(IF('3-Year P&L'!$B$6="","",'3-Year P&L'!$B$6),"")
+D5	190
+A6	Average check (excl. sales tax)
+B6	7
+C6	= 7.5 ‖ =IFERROR(IF('3-Year P&L'!$B$7="","",'3-Year P&L'!$B$7),"")
+D6	8
+A7	Operating days per year
+B7	300
+C7	= 310.0 ‖ =IFERROR(IF('3-Year P&L'!$B$8="","",'3-Year P&L'!$B$8),"")
+D7	320
+A8	ANNUAL REVENUE (excl. sales tax)
+B8	= 294000.0 ‖ =IFERROR(IF(B5*B6*B7=0,"",B5*B6*B7),"")
+C8	= 383625.0 ‖ =IFERROR(IF(C5*C6*C7=0,"",C5*C6*C7),"")
+D8	= 486400.0 ‖ =IFERROR(IF(D5*D6*D7=0,"",D5*D6*D7),"")
+A9	Cost of goods sold — food
+B9	= 58212.0 ‖ =IFERROR(IF(B8="","",B8*'0. Assumptions'!$B$11*'0. Assumptions'!$B$13),"")
+C9	= 75957.75 ‖ =IFERROR(IF(C8="","",C8*'0. Assumptions'!$B$11*'0. Assumptions'!$B$13),"")
+D9	= 96307.2 ‖ =IFERROR(IF(D8="","",D8*'0. Assumptions'!$B$11*'0. Assumptions'!$B$13),"")
+A10	Cost of goods sold — beverage
+B10	= 7350.0 ‖ =IFERROR(IF(B8="","",B8*'0. Assumptions'!$B$12*'0. Assumptions'!$B$14),"")
+C10	= 9590.625 ‖ =IFERROR(IF(C8="","",C8*'0. Assumptions'!$B$12*'0. Assumptions'!$B$14),"")
+D10	= 12160.0 ‖ =IFERROR(IF(D8="","",D8*'0. Assumptions'!$B$12*'0. Assumptions'!$B$14),"")
+A11	Disposables and packaging
+B11	= 13230.0 ‖ =IFERROR(IF(B8="","",B8*'0. Assumptions'!$B$15),"")
+C11	= 17263.125 ‖ =IFERROR(IF(C8="","",C8*'0. Assumptions'!$B$15),"")
+D11	= 21888.0 ‖ =IFERROR(IF(D8="","",D8*'0. Assumptions'!$B$15),"")
+A12	Delivery platform fees
+B12	= 2940.0 ‖ =IFERROR(IF(B8="","",B8*'0. Assumptions'!$B$16*'0. Assumptions'!$B$17),"")
+C12	= 3836.25 ‖ =IFERROR(IF(C8="","",C8*'0. Assumptions'!$B$16*'0. Assumptions'!$B$17),"")
+D12	= 4864.0 ‖ =IFERROR(IF(D8="","",D8*'0. Assumptions'!$B$16*'0. Assumptions'!$B$17),"")
+A13	Card processing fees
+B13	= 8820.0 ‖ =IFERROR(IF(B8="","",B8*'0. Assumptions'!$B$18),"")
+C13	= 11508.75 ‖ =IFERROR(IF(C8="","",C8*'0. Assumptions'!$B$18),"")
+D13	= 14592.0 ‖ =IFERROR(IF(D8="","",D8*'0. Assumptions'!$B$18),"")
+A14	Miscellaneous and contingency
+B14	= 2940.0 ‖ =IFERROR(IF(B8="","",B8*'0. Assumptions'!$B$28),"")
+C14	= 3836.25 ‖ =IFERROR(IF(C8="","",C8*'0. Assumptions'!$B$28),"")
+D14	= 4864.0 ‖ =IFERROR(IF(D8="","",D8*'0. Assumptions'!$B$28),"")
+A15	TOTAL VARIABLE COSTS
+B15	= 93492.0 ‖ =IFERROR(IF(B8="","",SUM(B9:B14)),"")
+C15	= 121992.75 ‖ =IFERROR(IF(C8="","",SUM(C9:C14)),"")
+D15	= 154675.2 ‖ =IFERROR(IF(D8="","",SUM(D9:D14)),"")
+A16	GROSS MARGIN
+B16	= 200508.0 ‖ =IFERROR(IF(B8="","",B8-B15),"")
+C16	= 261632.25 ‖ =IFERROR(IF(C8="","",C8-C15),"")
+D16	= 331724.8 ‖ =IFERROR(IF(D8="","",D8-D15),"")
+A17	FIXED COSTS (the P&L's)
+B17	= 232852.342857 ‖ =IFERROR(IF(B8="","",'3-Year P&L'!$B$38),"")
+C17	= 232852.342857 ‖ =IFERROR(IF(C8="","",'3-Year P&L'!$B$38),"")
+D17	= 232852.342857 ‖ =IFERROR(IF(D8="","",'3-Year P&L'!$B$38),"")
+E17	Fixed costs do not change with the scenario: that is why they are fixed
+A18	PRE-TAX INCOME (EBT)
+B18	= -32344.342857 ‖ =IFERROR(IF(B8="","",B16-B17),"")
+C18	= 28779.907143 ‖ =IFERROR(IF(C8="","",C16-C17),"")
+D18	= 98872.457143 ‖ =IFERROR(IF(D8="","",D16-D17),"")
+A19	Income tax
+B19	= 0.0 ‖ =IFERROR(IF(B8="","",MAX(0,B18-'0. Assumptions'!$B$42)*'0. Assumptions'!$B$37),"")
+C19	= 7194.976786 ‖ =IFERROR(IF(C8="","",MAX(0,C18-'0. Assumptions'!$B$42)*'0. Assumptions'!$B$37),"")
+D19	= 24718.114286 ‖ =IFERROR(IF(D8="","",MAX(0,D18-'0. Assumptions'!$B$42)*'0. Assumptions'!$B$37),"")
+E19	At the "years 1-2" effective income tax rate, offsetting prior net operating losses
+A20	NET INCOME
+B20	= -32344.342857 ‖ =IFERROR(IF(B8="","",B18-B19),"")
+C20	= 21584.930357 ‖ =IFERROR(IF(C8="","",C18-C19),"")
+D20	= 74154.342857 ‖ =IFERROR(IF(D8="","",D18-D19),"")
+A21	Customers per day to break even
+B21	= 162.583677 ‖ =IFERROR(IF(B8="","",IF(B6-B15/(B5*B7)<=0,"",B17/(B6-B15/(B5*B7))/B7)),"")
+C21	= 146.849773 ‖ =IFERROR(IF(C8="","",IF(C6-C15/(C5*C7)<=0,"",C17/(C6-C15/(C5*C7))/C7)),"")
+D21	= 133.369423 ‖ =IFERROR(IF(D8="","",IF(D6-D15/(D5*D7)<=0,"",D17/(D6-D15/(D5*D7))/D7)),"")
+A22	WHAT EACH SCENARIO DEMANDS
+A23	Labor cost / Sales
+B23	= 0.436004 ‖ =IFERROR(IF(B8="","",'3-Year P&L'!$B$23/B8),"")
+C23	= 0.334142 ‖ =IFERROR(IF(C8="","",'3-Year P&L'!$B$23/C8),"")
+D23	= 0.263539 ‖ =IFERROR(IF(D8="","",'3-Year P&L'!$B$23/D8),"")
+E23	The SAME staffing in all three scenarios. If labor cost blows up in the pessimistic case, adjust it in the Staffing tab, not here
+A24	Customers per year per full-time equivalent
+B24	= 13770.491803 ‖ =IFERROR(IF(B8="","",B5*B7/Staffing!$C$11),"")
+C24	= 16770.491803 ‖ =IFERROR(IF(C8="","",C5*C7/Staffing!$C$11),"")
+D24	= 19934.42623 ‖ =IFERROR(IF(D8="","",D5*D7/Staffing!$C$11),"")
+E24	Customers each full-time employee in the Staffing table would have to serve. In the optimistic scenario it tells you whether you need to hire
+A25	Year-1 closing cash balance (estimate, same method in all three scenarios)
+B25	= 32029.346029 ‖ =IFERROR(IF(B8="","",'Startup Costs'!$B$30+B20+'3-Year P&L'!$B$36-Financing!$B$45),"")
+C25	= 85958.619243 ‖ =IFERROR(IF(C8="","",'Startup Costs'!$B$30+C20+'3-Year P&L'!$B$36-Financing!$B$45),"")
+D25	= 138528.031743 ‖ =IFERROR(IF(D8="","",'Startup Costs'!$B$30+D20+'3-Year P&L'!$B$36-Financing!$B$45),"")
+E25	ESTIMATED balance: working capital plus the year's result, adding back depreciation (which is not paid) and subtracting loan principal. It does not include the timing gap between receipts and payments or the sales tax settlement, so the three columns can be compared with each other. In red, the scenario runs out of cash
+A26	Actual month-12 balance from the 12-Month Cash Flow tab (Base case only)
+C26	= 97745.906967 ‖ =IFERROR(IF(C8="","",'12-Month Cash Flow'!$M$22),"")
+E26	The ACTUAL base-case balance, with its timing of receipts and payments and its sales tax settlement. It exists only for the Base scenario, the only one with its own monthly cash flow: that is why it is not in the row above, where it would be compared against two estimates
+A28	The "Base" column reads its three inputs from the "0. Assumptions" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: only customers, average check and days change. FIXED COSTS are the same in all three: miscellaneous and contingency, a percentage of sales, sit above with the variable costs and each scenario carries its own.
+DV B6 D6	decimal · 0 · error: Enter a number greater than or equal to 0. · ayuda: None
+DV B7 D7	whole · 1 · error: Days range from 1 to 365. · ayuda: None
+DV B5 D5	whole · 1 · error: Enter a WHOLE number of 1 or more: this cell is a count and several formulas divide by it. · ayuda: None
+
+## Staffing  (papel 1, orientación landscape, protegida True)
+A1	STAFFING AND LABOR COSTS
+A2	= Payroll — 12 pay periods + employer taxes 10% ‖ =IFERROR("Payroll — "&TEXT('0. Assumptions'!$B$21,"0")&" pay periods + employer taxes "&TEXT('0. Assumptions'!$B$20*100,"0")&"%","")
+A4	Position
+B4	People
+C4	FTE
+D4	Gross pay per month (total for the position)
+E4	Employer payroll taxes (total for the position)
+F4	Cost per month (total for the position)
+G4	Cost per year
+H4	Hours per week per person
+I4	Hours per year for the position
+J4	Notes
+A5	Owner / ice cream maker & GM
+B5	1
+C5	1
+D5	4000
+E5	= 400.0 ‖ =IFERROR(IF(D5="","",D5*'0. Assumptions'!$B$20),"")
+F5	= 4400.0 ‖ =IFERROR(IF(D5="","",D5+E5),"")
+G5	= 52800.0 ‖ =IFERROR(IF(D5="","",F5*MAX(12,'0. Assumptions'!$B$21)),"")
+H5	= 40.0 ‖ =IFERROR(IF(D5="","",C5*$B$18),"")
+I5	= 1840.0 ‖ =IFERROR(IF(D5="","",H5*B5*$B$19),"")
+J5	Balances recipes, flavors and mix-ins, runs the batch freezer, buys and runs the business. Works as the ice cream maker and GM but does NOT pasteurize: the base is bought from a licensed dairy. Paid below what a hired manager would earn: plan to draw in addition from net profit. The book loads employer payroll taxes on this salary as if it were payroll, which is the prudent side
+A6	Shift lead / counter (year-round)
+B6	1
+C6	1
+D6	2946
+E6	= 294.6 ‖ =IFERROR(IF(D6="","",D6*'0. Assumptions'!$B$20),"")
+F6	= 3240.6 ‖ =IFERROR(IF(D6="","",D6+E6),"")
+G6	= 38887.2 ‖ =IFERROR(IF(D6="","",F6*MAX(12,'0. Assumptions'!$B$21)),"")
+H6	= 40.0 ‖ =IFERROR(IF(D6="","",C6*$B$18),"")
+I6	= 1840.0 ‖ =IFERROR(IF(D6="","",H6*B6*$B$19),"")
+J6	Counter, register, dipping cabinets and closing; opens and closes when the owner is in the production room. About $17 per hour
+A7	Seasonal scooper (part-time, April-September)
+B7	1
+C7	0.5
+D7	1300
+E7	= 130.0 ‖ =IFERROR(IF(D7="","",D7*'0. Assumptions'!$B$20),"")
+F7	= 1430.0 ‖ =IFERROR(IF(D7="","",D7+E7),"")
+G7	= 17160.0 ‖ =IFERROR(IF(D7="","",F7*MAX(12,'0. Assumptions'!$B$21)),"")
+H7	= 20.0 ‖ =IFERROR(IF(D7="","",C7*$B$18),"")
+I7	= 920.0 ‖ =IFERROR(IF(D7="","",H7*B7*$B$19),"")
+J7	Seasonal part-time W-2 employee, about 40 hours a week from April to September, which equals half a full-time position over the year. Rehire each spring. Scoopers aged 14-15 only within the FLSA hours (29 CFR 570.35)
+A8	Summer scooper (part-time, June-August)
+B8	1
+C8	0.25
+D8	650
+E8	= 65.0 ‖ =IFERROR(IF(D8="","",D8*'0. Assumptions'!$B$20),"")
+F8	= 715.0 ‖ =IFERROR(IF(D8="","",D8+E8),"")
+G8	= 8580.0 ‖ =IFERROR(IF(D8="","",F8*MAX(12,'0. Assumptions'!$B$21)),"")
+H8	= 10.0 ‖ =IFERROR(IF(D8="","",C8*$B$18),"")
+I8	= 460.0 ‖ =IFERROR(IF(D8="","",H8*B8*$B$19),"")
+J8	Seasonal part-time W-2 employee from June to August, on the evenings of the peak. Never a 1099 contractor if you set the schedule and give the direction: that is misclassification
+A9	Production assistant (part-time, May-September)
+B9	1
+C9	0.2
+D9	555
+E9	= 55.5 ‖ =IFERROR(IF(D9="","",D9*'0. Assumptions'!$B$20),"")
+F9	= 610.5 ‖ =IFERROR(IF(D9="","",D9+E9),"")
+G9	= 7326.0 ‖ =IFERROR(IF(D9="","",F9*MAX(12,'0. Assumptions'!$B$21)),"")
+H9	= 8.0 ‖ =IFERROR(IF(D9="","",C9*$B$18),"")
+I9	= 368.0 ‖ =IFERROR(IF(D9="","",H9*B9*$B$19),"")
+J9	Production assistant from May to September: batch freezing, pack-out, cleaning the batch freezer and the tubs, and support on the summer batches
+A10	Relief cover (vacations and days off)
+B10	1
+C10	0.1
+D10	260
+E10	= 26.0 ‖ =IFERROR(IF(D10="","",D10*'0. Assumptions'!$B$20),"")
+F10	= 286.0 ‖ =IFERROR(IF(D10="","",D10+E10),"")
+G10	= 3432.0 ‖ =IFERROR(IF(D10="","",F10*MAX(12,'0. Assumptions'!$B$21)),"")
+H10	= 4.0 ‖ =IFERROR(IF(D10="","",C10*$B$18),"")
+I10	= 184.0 ‖ =IFERROR(IF(D10="","",H10*B10*$B$19),"")
+J10	Coverage for vacations and the team's days off through the year. Paid sick leave is required by some states and cities: check yours
+A11	TOTAL STAFF
+B11	= 6.0 ‖ =IFERROR(IF(COUNT(D5:D10)=0,"",SUM(B5:B10)),"")
+C11	= 3.05 ‖ =IFERROR(IF(COUNT(D5:D10)=0,"",SUM(C5:C10)),"")
+D11	= 9711.0 ‖ =IFERROR(IF(COUNT(D5:D10)=0,"",SUM(D5:D10)),"")
+E11	= 971.1 ‖ =IFERROR(IF(COUNT(D5:D10)=0,"",SUM(E5:E10)),"")
+F11	= 10682.1 ‖ =IFERROR(IF(COUNT(D5:D10)=0,"",SUM(F5:F10)),"")
+G11	= 128185.2 ‖ =IFERROR(IF(COUNT(D5:D10)=0,"",SUM(G5:G10)),"")
+I11	= 5612.0 ‖ =IFERROR(IF(COUNT(D5:D10)=0,"",SUM(I5:I10)),"")
+A12	STAFF GROWTH (stepped cost)
+A13	Annual cost of year-2 hires
+B13	8000
+J13	FULL ANNUAL cost (gross pay + employer payroll taxes, over all pay periods) of whoever you hire that year. The P&L adds it to the previous year's cost: staffing grows by people, not by a percentage
+A14	Annual cost of year-3 hires
+B14	8000
+J14	FULL ANNUAL cost (gross pay + employer payroll taxes, over all pay periods) of whoever you hire that year. The P&L adds it to the previous year's cost: staffing grows by people, not by a percentage
+A15	Labor cost, year 2
+B15	= 136185.2 ‖ =IFERROR(IF(G11="","",G11*(1+'0. Assumptions'!$B$48)+B13),"")
+A16	Labor cost, year 3
+B16	= 144185.2 ‖ =IFERROR(IF(B15="","",B15*(1+'0. Assumptions'!$B$48)+B14),"")
+A17	COVERAGE OF SERVICE HOURS
+A18	Full-time week (hours per week)
+B18	40
+J18	40 hours a week is the FLSA overtime threshold for non-exempt employees; some states add daily overtime rules. Change it if your own full-time week is different
+A19	Weeks worked per year per person
+B19	46
+J19	46 weeks: 52 minus about six weeks for vacation, holidays, the January closure and average absences. There is no federal vacation requirement in the US: adjust it to your own policy
+A20	Service hours per day to cover
+B20	9.5
+J20	Average shop hours over the year: more in peak season (Memorial Day to Labor Day), fewer from November to February. The production room goes in the row below
+A21	People needed at the same time in each shift
+B21	1.6
+J21	Average staff on the floor at once at the counter: 1.8-2 people in summer, 1.3 in spring and fall and 1 in winter. In July and August the schedule is tight: the owner works shifts or a weekend extra comes in
+A22	Production hours per day BEFORE opening
+B22	2
+J22	Production runs before opening: flavoring, batch-freezing and hardening, with no processing of raw mix and no aging: the base arrives pasteurized and aged from a licensed dairy. More in July, less in winter
+A23	People on the production shift
+B23	1
+J23	The ice cream maker; in summer the production assistant helps
+A24	Service hours to cover per year
+B24	= 5332.0 ‖ =IFERROR(IF(OR(B20="",B21="",'0. Assumptions'!$B$6=""),"",B20*B21*'0. Assumptions'!$B$6+B22*B23*'0. Assumptions'!$B$6),"")
+A25	Hours hired per year
+B25	= 5612.0 ‖ =IFERROR(IF(I11="","",I11),"")
+A26	Coverage (hired / needed)
+B26	= 1.052513 ‖ =IFERROR(B25/B24,"")
+J26	Below 100% the staff cannot cover the hours the plan declares: either hire more or cut the hours
+A28	The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the row: for a position with two people they include both. "FTE" is the share of a full-time week and is used to compare pay with the legal floor pro rata. The payroll tax rate and the number of pay periods are in the "0. Assumptions" tab. Tips are not modeled: the shift lead and the scoopers are budgeted at a base wage of at least $15/h
+A29	The pay floor is the HIGHER of the federal minimum wage and your state / local minimum wage, both in the "0. Assumptions" tab; part-time positions get it in proportion. There is no single national table above the federal floor: the state / local cell is delivered empty so you can enter the rate for your state and city.
+DV B5 B6 B7 B8 B9 B10 B13 B14 B18 B19 B20 B22 D5 D6 D7 D8 D9 D10	decimal · 0 · error: Enter a number greater than or equal to 0. · ayuda: None
+DV B21 B23	decimal · 0 · error: Enter a number greater than or equal to 0; this cell accepts decimals (1.7 people is an average presence, not a person and a half). · ayuda: None
+DV C5 C6 C7 C8 C9 C10	decimal · 0 · error: Enter a percentage between 0 and 1 (0.35 = 35%). · ayuda: None
+
+## Instructions  (papel 1, orientación portrait, protegida True)
+A1	HOW TO USE THIS WORKBOOK — Ice Cream Shop Financial Projections
+A3	HOW TO USE THIS WORKBOOK
+A4	This financial plan is a MODEL: you type only in the GREEN cells and everything else recalculates on its own.
+A5	1. "0. Assumptions" is the control sheet: customers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, rent, financing and taxes.
+A6	2. Startup cost items, fixed costs and staffing are typed in their own tab, also in green. No number is typed twice.
+A7	3. Only "Break-Even" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in "Scenarios", seasonality and the launch ramp-up in "12-Month Cash Flow", and the other funding sources in "Financing" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in "Loan requested" on "0. Assumptions"). Everything else is calculated.
+A8	4. All figures are shown EXCL. SALES TAX. To turn a menu price into a price without tax, divide it by 1 + your sales tax rate (8% in the example, so divide by 1.08). The scoop is taxed as prepared food; in some states packaged pints and whole cakes may be taxed as groceries, so check your state. The P&L is excl. sales tax and the cash flow uses what is collected, tax included. Input tax on purchases is not recoverable in this book.
+A9	5. If you change the staffing, the P&L reads it on its own: labor cost comes from the "Staffing" tab, not from a separate estimate.
+A10	6. The "12-Month Cash Flow" tab answers the question that decides a loan: in which month does the cash run out? Its Month 1 is MARCH: the plan opens in season so that the summer cash reaches the first winter. The minimum balance of the year can never be red.
+A11	7. The "Financing" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.
+A12	8. The Word document in this pack uses the figures from this Excel: if you change a green cell, the Excel rules.
+A14	RATIOS AUDITED BY THIS WORKBOOK
+A15	Thresholds live in the "Threshold" column of the KEY RATIOS block of the P&L: change them there and the traffic light changes with them.
+A17	Ratio
+B17	Year 1 value
+C17	Threshold
+D17	Status
+A18	Cost of goods sold / Sales
+B18	= 0.223 ‖ =IFERROR(IF('3-Year P&L'!$B$53="","",'3-Year P&L'!$B$53),"")
+C18	= 0.25 ‖ =IFERROR(IF('3-Year P&L'!$E$53="","",'3-Year P&L'!$E$53),"")
+D18	= OK ‖ =IFERROR(IF(OR(B18="",C18=""),"",IF(B18<=C18,"OK","REVIEW")),"")
+A19	Labor cost / Sales
+B19	= 0.334142 ‖ =IFERROR(IF('3-Year P&L'!$B$54="","",'3-Year P&L'!$B$54),"")
+C19	= 0.35 ‖ =IFERROR(IF('3-Year P&L'!$E$54="","",'3-Year P&L'!$E$54),"")
+D19	= OK ‖ =IFERROR(IF(OR(B19="",C19=""),"",IF(B19<=C19,"OK","REVIEW")),"")
+A20	Rent / Sales
+B20	= 0.078201 ‖ =IFERROR(IF('3-Year P&L'!$B$55="","",'3-Year P&L'!$B$55),"")
+C20	= 0.1 ‖ =IFERROR(IF('3-Year P&L'!$E$55="","",'3-Year P&L'!$E$55),"")
+D20	= OK ‖ =IFERROR(IF(OR(B20="",C20=""),"",IF(B20<=C20,"OK","REVIEW")),"")
+A21	Net income / Sales
+B21	= 0.056266 ‖ =IFERROR(IF('3-Year P&L'!$B$56="","",'3-Year P&L'!$B$56),"")
+C21	= 0.05 ‖ =IFERROR(IF('3-Year P&L'!$E$56="","",'3-Year P&L'!$E$56),"")
+D21	= OK ‖ =IFERROR(IF(OR(B21="",C21=""),"",IF(B21>=C21,"OK","REVIEW")),"")
+A22	Gross margin / Sales
+B22	= 0.682 ‖ =IFERROR(IF('3-Year P&L'!$B$51="","",'3-Year P&L'!$B$51),"")
+C22	= 0.65 ‖ =IFERROR(IF('3-Year P&L'!$E$51="","",'3-Year P&L'!$E$51),"")
+D22	= OK ‖ =IFERROR(IF(OR(B22="",C22=""),"",IF(B22>=C22,"OK","REVIEW")),"")
+A24	THIS PLAN'S KEY FIGURES
+A25	Total startup costs (sum of the blocks)
+B25	= 256871.3 ‖ =IFERROR(IF('Startup Costs'!$B$31="","",'Startup Costs'!$B$31),"")
+A26	Total cash needed at launch
+B26	= 256871.3 ‖ =IFERROR(IF('Startup Costs'!$B$34="","",'Startup Costs'!$B$34),"")
+A27	Working capital funded
+B27	= 52771.3 ‖ =IFERROR(IF('Startup Costs'!$B$30="","",'Startup Costs'!$B$30),"")
+A28	Forecast year-1 revenue
+B28	= 383625.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9),"")
+A29	Year-1 net income
+B29	= 21584.930357 ‖ =IFERROR(IF('3-Year P&L'!$B$48="","",'3-Year P&L'!$B$48),"")
+A30	Customers per day for the ACCOUNTING break-even (depreciation included)
+B30	= 146.849773 ‖ =IFERROR(IF('Break-Even'!$B$15="","",'Break-Even'!$B$15),"")
+A31	Project payback (years), before debt
+B31	= Over 3 years ‖ =IFERROR(IF('12-Month Cash Flow'!$B$31="","",'12-Month Cash Flow'!$B$31),"")
+A33	US ICE CREAM SHOP BENCHMARKS (sourced) AND KIT ESTIMATES
+A34	Benchmark
+B34	Value
+C34	Source
+D34	Note
+A35	Month 1 of the plan
+B35	March
+C35	Plan decision
+D35	Open in season: the first summer pays for the first winter. Opening in fall burns the working capital before the first summer. The seasonality row on the cash flow tab is already shifted to start in March
+A36	Peak season
+B36	Memorial Day to Labor Day; July is National Ice Cream Month
+C36	Presidential Proclamation 5219 (1984); IDFA
+D36	July is the month with the most production; National Ice Cream Day is the 3rd Sunday of July. Winter sells ice cream cakes, holiday pies and pints, and hot chocolate
+A37	Ice cream cost (food cost)
+B37	About 22% of ice cream sales
+C37	Kit estimate
+D37	Purchased base, flavorings and mix-ins, cones, samples and shrink. Replace it with the invoices from your dairy and your distributor
+A38	Menu prices
+B38	Single $5.25 · double $7.00 · pint $11 · quart $18 · 8-in cake $45
+C38	Kit estimate (Oct 2026), excl. sales tax
+D38	There is no reliable U.S. average for the price of a scoop: use the prices in your area. The average check excl. sales tax for this plan is on the "0. Assumptions" tab
+A39	"Ice cream" standard
+B39	At least 10% milkfat and 4.5 lb per gallon; frozen custard: 1.4% egg yolk solids
+C39	21 CFR 135.110 (eCFR)
+D39	If you call it ice cream, the federal standard applies. Weight is measured in lb per gallon (1 gallon is about 3.8 liters). Check the labeling rules for anything below the standard
+A40	Storage and serving temperature
+B40	0 °F (−18 °C) or colder in storage and hardening; dipping cabinet 6-10 °F
+C40	FDA Food Code + equipment manufacturer
+D40	Cold holding of the purchased base at 41 °F (5 °C) or colder. The cabinet temperature depends on the manufacturer's specification and your food safety plan
+A41	Buy a base or make your own mix
+B41	Buying pasteurized base: retail license in most states; own mix: state dairy / frozen dessert manufacturer license
+C41	Vermont Agency of Agriculture; Georgia Rules 40-2-8
+D41	Depends on your state: ask your state department of agriculture. If you pasteurize your own mix (the variant), fats, egg yolks and emulsifiers go in BEFORE pasteurization, never after, and you need licensed equipment and inspections. The case buys the base from a licensed dairy
+A42	Labor cost / sales
+B42	28-35%
+C42	Kit estimate
+D42	Putting the owner on payroll and the season push it to the high end
+A43	Rent / sales
+B43	10% or less
+C43	Kit estimate
+D43	The threshold of the traffic light on the P&L
+A44	Production waste
+B44	5-8%
+C44	Kit estimate
+D44	Flavors that do not turn over, open tubs and samples. Melted or returned ice cream is never refrozen
+A45	Electrical service
+B45	About 30 kW
+C45	Kit estimate
+D45	Ask the utility about 3-phase service and amps before signing. Dipping cabinets run 24 hours a day, plus the batch freezer, the hardening cabinet and air conditioning
+A46	Sales tax
+B46	Scoops taxed as prepared food; packaged pints and whole cakes may be exempt as groceries
+C46	Texas Comptroller (example)
+D46	Check your state. The book uses one example rate (8%)
+A47	Minimum wage
+B47	Federal $7.25 per hour + your state; teens 14-15: limited hours
+C47	U.S. Department of Labor (29 CFR 570.35)
+D47	This plan budgets $15 per hour or more. Type your state's floor on "0. Assumptions"
+A49	To edit a cell that is not green: Review → Unprotect Sheet (there is no password).
+A50	More templates and kits in the catalog at aichef.pro/en/digital-products
+A51	Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es
+A52	Version 2.2 · October 2026 · aichef.pro/en/digital-products/ice-cream-shop-business-plan · info@aichef.pro
+A53	Planning tool, not financial, tax or legal advice. Requirements vary by state, county and city — check with your accountant and local authorities.
+
+## 12-Month Cash Flow  (papel 1, orientación landscape, protegida True)
+A1	CASH FLOW FORECAST — YEAR 1
+A2	The P&L tells you whether the business makes money; this tab tells you whether you have cash left to get to the end of the month. It is the first one a lender looks at.
+A4	Item
+B4	Month 1
+C4	Month 2
+D4	Month 3
+E4	Month 4
+F4	Month 5
+G4	Month 6
+H4	Month 7
+I4	Month 8
+J4	Month 9
+K4	Month 10
+L4	Month 11
+M4	Month 12
+N4	Year
+A5	Monthly seasonality (adds up to 100%)
+B5	0.05
+C5	0.075
+D5	0.1
+E5	0.135
+F5	0.165
+G5	0.15
+H5	0.11
+I5	0.065
+J5	0.035
+K5	0.06
+L5	0.025
+M5	0.03
+N5	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B5:M5)),"")
+O5	Month 1 = MARCH: open in season so the first winter is paid by the first summer. July (Month 5, National Ice Cream Month) is the peak; January (Month 11) the low point, with a three-week closure. Kit weights for a mid-size US city: replace the weights with your area's pattern (colder states: more weight June-August; Sun Belt: flatter). If you open in another month, rotate the row. It must add up to 100%
+A6	Launch ramp-up (% of steady-state activity)
+B6	= 0.7 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*0/MAX(1,'0. Assumptions'!$B$53-1))),"")
+C6	= 0.8 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*1/MAX(1,'0. Assumptions'!$B$53-1))),"")
+D6	= 0.9 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*2/MAX(1,'0. Assumptions'!$B$53-1))),"")
+E6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*3/MAX(1,'0. Assumptions'!$B$53-1))),"")
+F6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*4/MAX(1,'0. Assumptions'!$B$53-1))),"")
+G6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*5/MAX(1,'0. Assumptions'!$B$53-1))),"")
+H6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*6/MAX(1,'0. Assumptions'!$B$53-1))),"")
+I6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*7/MAX(1,'0. Assumptions'!$B$53-1))),"")
+J6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*8/MAX(1,'0. Assumptions'!$B$53-1))),"")
+K6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*9/MAX(1,'0. Assumptions'!$B$53-1))),"")
+L6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*10/MAX(1,'0. Assumptions'!$B$53-1))),"")
+M6	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MIN(1,'0. Assumptions'!$B$52+(1-'0. Assumptions'!$B$52)*11/MAX(1,'0. Assumptions'!$B$53-1))),"")
+O6	Rises in a straight line from the month-1 percentage to 100% over the number of months you set in Assumptions. With month 1 at 100%, the ramp disappears
+A7	Split of activity by month (calculated)
+B7	= 0.036458 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B5*B6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+C7	= 0.0625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",C5*C6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+D7	= 0.09375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",D5*D6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+E7	= 0.140625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",E5*E6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+F7	= 0.171875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",F5*F6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+G7	= 0.15625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",G5*G6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+H7	= 0.114583 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",H5*H6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+I7	= 0.067708 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",I5*I6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+J7	= 0.036458 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",J5*J6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+K7	= 0.0625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",K5*K6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+L7	= 0.026042 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",L5*L6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+M7	= 0.03125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",M5*M6/SUMPRODUCT($B$5:$M$5,$B$6:$M$6)),"")
+N7	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B7:M7)),"")
+O7	Seasonality × ramp-up, normalized to 100%: the YEAR brings in what the P&L says, but split the way a business that has just opened would split it
+A8	CASH IN
+A9	Sales collected (incl. sales tax collected)
+B9	= 14098.21875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*B7*(1-MIN(30,'0. Assumptions'!$B$58)/30)),"")
+C9	= 25175.390625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(C7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+B7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+D9	= 37978.875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(D7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+C7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+E9	= 56968.3125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(E7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+D7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+F9	= 70347.234375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(F7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+E7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+G9	= 65168.296875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(G7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+F7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+H9	= 48624.46875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(H7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+G7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+I9	= 29347.3125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(I7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+H7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+J9	= 15968.390625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(J7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+I7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+K9	= 25175.390625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(K7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+J7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+L9	= 11796.46875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(L7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+K7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+M9	= 12803.484375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",('3-Year P&L'!$B$9+'3-Year P&L'!$B$9*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11))*(M7*(1-MIN(30,'0. Assumptions'!$B$58)/30)+L7*MIN(30,'0. Assumptions'!$B$58)/30)),"")
+N9	= 413451.84375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B9:M9)),"")
+O9	The month's sales plus the sales tax collected, adjusted by the average collection days from the Assumptions tab
+A10	CASH OUT
+A11	Purchases and variable costs (incl. sales tax)
+B11	= -2372.08125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*B7*(1-MIN(30,'0. Assumptions'!$B$59)/30)),"")
+C11	= -6141.996094 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(C7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+B7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+D11	= -9657.759375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(D7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+C7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+E11	= -14486.639062 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(E7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+D7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+F11	= -19188.442969 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(F7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+E7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+G11	= -19950.897656 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(G7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+F7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+H11	= -16350.417187 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(H7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+G7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+I11	= -10928.517187 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(I7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+H7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+J11	= -6226.713281 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(J7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+I7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+K11	= -6141.996094 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(K7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+J7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+L11	= -5252.465625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(L7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+K7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+M11	= -3515.763281 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$13*(1+'3-Year P&L'!$G$13)+'3-Year P&L'!$B$14*(1+'3-Year P&L'!$G$14)+'3-Year P&L'!$B$15*(1+'3-Year P&L'!$G$15)+'3-Year P&L'!$B$16*(1+'3-Year P&L'!$G$16)+'3-Year P&L'!$B$17*(1+'3-Year P&L'!$G$17)+'3-Year P&L'!$B$18*(1+'3-Year P&L'!$G$18))*(M7*(1-MIN(30,'0. Assumptions'!$B$59)/30)+L7*MIN(30,'0. Assumptions'!$B$59)/30)),"")
+N11	= -120213.689062 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B11:M11)),"")
+O11	= Food and beverage purchases, consumables, fees and contingencies, each at ITS tax rate (column G of the P&L; 0 in the US, where the sales tax you pay is part of the cost) and with the supplier payment days from "0. Assumptions". With 14 payment days, the last purchases of the year are paid next year: the "Year" column of this row holds 11 months of purchases, not the year's cost. ‖ =IFERROR("Food and beverage purchases, consumables, fees and contingencies, each at ITS tax rate (column G of the P&L; 0 in the US, where the sales tax you pay is part of the cost) and with the supplier payment days from ""0. Assumptions""."&IF('0. Assumptions'!$B$59=0,""," With "&TEXT('0. Assumptions'!$B$59,"0")&" payment days, the last purchases of the year are paid next year: the ""Year"" column of this row holds "&TEXT(MAX(0,12-ROUNDUP('0. Assumptions'!$B$59/30,0)),"0")&" months of purchases, not the year's cost."),"")
+A12	Operating fixed costs (incl. sales tax)
+B12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+C12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+D12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+E12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+F12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+G12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+H12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+I12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+J12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+K12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+L12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+M12	= -5558.333333 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-('3-Year P&L'!$B$38-'3-Year P&L'!$B$23-'3-Year P&L'!$B$36-'3-Year P&L'!$B$37+'3-Year P&L'!$B$40)/12),"")
+N12	= -66700.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B12:M12)),"")
+O12	The fixed costs that leave cash, each with its own tax rate: insurance carries none
+A13	Payroll and employer payroll taxes
+B13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(1='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(1='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+C13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(2='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(2='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+D13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(3='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(3='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+E13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(4='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(4='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+F13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(5='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(5='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+G13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(6='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(6='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+H13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(7='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(7='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+I13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(8='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(8='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+J13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(9='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(9='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+K13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(10='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(10='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+L13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(11='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(11='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+M13	= -10682.1 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-'3-Year P&L'!$B$23/MAX(12,'0. Assumptions'!$B$21)*(1+IF(12='0. Assumptions'!$B$60,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0)+IF(12='0. Assumptions'!$B$61,(MAX(12,'0. Assumptions'!$B$21)-12)/2,0))),"")
+N13	= -128185.2 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B13:M13)),"")
+O13	Twelve monthly payments, with no extra pay months unless you enter more than 12 pay periods on "0. Assumptions". The yearly total matches the P&L. Payroll is spread over twelve months, but seasonal staff only get paid in season, so winter shows up more expensive and summer cheaper than reality: that is the prudent side. March and February barely change, but from June to January your real cash will be lower than on this tab (in the case, by about $10,000 in September)
+A14	Loan interest
+B14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+C14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+D14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+E14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+F14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+G14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+H14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+I14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+J14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+K14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+L14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+M14	= -1350.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$44/12),"")
+N14	= -16200.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B14:M14)),"")
+A15	Loan principal repaid
+B15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+C15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+D15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+E15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+F15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+G15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+H15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+I15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+J15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+K15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+L15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+M15	= -847.062831 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",-Financing!$B$45/12),"")
+N15	= -10164.753971 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B15:M15)),"")
+A16	Sales tax collected (memo)
+B16	= 1118.90625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*B7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+C16	= 1918.125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*C7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+D16	= 2877.1875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*D7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+E16	= 4315.78125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*E7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+F16	= 5274.84375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*F7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+G16	= 4795.3125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*G7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+H16	= 3516.5625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*H7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+I16	= 2077.96875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*I7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+J16	= 1118.90625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*J7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+K16	= 1918.125 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*K7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+L16	= 799.21875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*L7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+M16	= 959.0625 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$9*M7*SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)),"")
+N16	= 30690.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B16:M16)),"")
+O16	Each sales line at ITS rate, read from the sales tax column of the P&L: one example rate for the whole book. Prepared food is taxed at the counter, on the patio and to go; packaged pints and whole cakes may be exempt as groceries in some states, so check yours
+A17	Recoverable input tax (memo)
+B17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*B7+'3-Year P&L'!$B$40/12),"")
+C17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*C7+'3-Year P&L'!$B$40/12),"")
+D17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*D7+'3-Year P&L'!$B$40/12),"")
+E17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*E7+'3-Year P&L'!$B$40/12),"")
+F17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*F7+'3-Year P&L'!$B$40/12),"")
+G17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*G7+'3-Year P&L'!$B$40/12),"")
+H17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*H7+'3-Year P&L'!$B$40/12),"")
+I17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*I7+'3-Year P&L'!$B$40/12),"")
+J17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*J7+'3-Year P&L'!$B$40/12),"")
+K17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*K7+'3-Year P&L'!$B$40/12),"")
+L17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*L7+'3-Year P&L'!$B$40/12),"")
+M17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$39*M7+'3-Year P&L'!$B$40/12),"")
+N17	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B17:M17)),"")
+O17	Each item at its own rate, read from the tax column of the P&L: insurance and card processing fees carry none
+A18	Carried forward (capex input tax included)
+E18	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'Startup Costs'!$B$33),"")
+H18	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MAX(0,-E19)),"")
+K18	= 0.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",MAX(0,-H19)),"")
+O18	Sales tax paid on STARTUP COSTS enters here: it is offset against the tax collected in later quarters until used up. With 0% recoverable input tax (the US default) this line stays at zero
+A19	Quarterly sales tax return
+E19	= 5914.21875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B16:D16)-SUM(B17:D17)-E18),"")
+H19	= 14385.9375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(E16:G16)-SUM(E17:G17)-H18),"")
+K19	= 6713.4375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(H16:J16)-SUM(H17:J17)-K18),"")
+O19	Sales tax collected minus recoverable input tax for the quarter, minus what was carried forward. If negative, nothing is paid: it is offset in the next quarter. With 0% recoverable input tax (the US default) it equals the sales tax collected in the quarter
+A20	Sales tax remitted (quarterly filer)
+E20	= -5914.21875 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(E19<=0,"",-E19)),"")
+H20	= -14385.9375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(H19<=0,"",-H19)),"")
+K20	= -6713.4375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(K19<=0,"",-K19)),"")
+N20	= -27013.59375 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B20:M20)),"")
+O20	Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: June, September and December with Month 1 in March; the fourth quarter is remitted in Month 13): if your state requires monthly filing, expect smaller payments every month instead
+A21	MONTHLY NET CASH FLOW
+B21	= -6711.358664 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B9:B15)+IF(B20="",0,B20)),"")
+C21	= 595.898367 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(C9:C15)+IF(C20="",0,C20)),"")
+D21	= 9883.619461 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(D9:D15)+IF(D20="",0,D20)),"")
+E21	= 18129.958523 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(E9:E15)+IF(E20="",0,E20)),"")
+F21	= 32721.295242 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(F9:F15)+IF(F20="",0,F20)),"")
+G21	= 26779.903055 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(G9:G15)+IF(G20="",0,G20)),"")
+H21	= -549.382102 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(H9:H15)+IF(H20="",0,H20)),"")
+I21	= -18.700852 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(I9:I15)+IF(I20="",0,I20)),"")
+J21	= -8695.81882 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(J9:J15)+IF(J20="",0,J20)),"")
+K21	= -6117.539133 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(K9:K15)+IF(K20="",0,K20)),"")
+L21	= -11893.493039 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(L9:L15)+IF(L20="",0,L20)),"")
+M21	= -9149.77507 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(M9:M15)+IF(M20="",0,M20)),"")
+N21	= 44974.606967 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",SUM(B21:M21)),"")
+A22	CUMULATIVE CASH BALANCE
+B22	= 46059.941336 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'Startup Costs'!$B$30+B21),"")
+C22	= 46655.839703 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",B22+C21),"")
+D22	= 56539.459164 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",C22+D21),"")
+E22	= 74669.417687 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",D22+E21),"")
+F22	= 107390.712929 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",E22+F21),"")
+G22	= 134170.615983 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",F22+G21),"")
+H22	= 133621.233882 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",G22+H21),"")
+I22	= 133602.53303 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",H22+I21),"")
+J22	= 124906.714209 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",I22+J21),"")
+K22	= 118789.175076 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",J22+K21),"")
+L22	= 106895.682037 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",K22+L21),"")
+M22	= 97745.906967 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",L22+M21),"")
+A23	Minimum balance of the year
+B23	= 46059.941336 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(COUNT(B22:M22)=0,"",MIN(B22:M22))),"")
+D23	If negative, raise working capital or the loan: you run out of cash
+A24	Month when cash bottoms out
+B24	= 1.0 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(COUNT(B22:M22)=0,"",MATCH(MIN(B22:M22),B22:M22,0))),"")
+D24	It answers the question that decides a bank deal: in which month the cash runs out
+A25	RETURN ON INVESTMENT
+A26	Free cash flow before debt, year 1
+B26	= 59552.073214 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$B$48+'3-Year P&L'!$B$36+Financing!$B$44),"")
+D26	Net income plus depreciation (which is not paid) plus that year's interest: principal is not subtracted because this flow is BEFORE debt. The SAME basis as years 2 and 3, so the payback compares like with like
+A27	Free cash flow before debt, year 2
+B27	= 68995.889365 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$C$48+'3-Year P&L'!$C$36+Financing!$B$46),"")
+D27	Net income plus depreciation (which is not paid) plus that year's interest: principal is not subtracted because this flow is BEFORE debt. Without a monthly table, it is an estimate
+A28	Free cash flow before debt, year 3
+B28	= 73312.464756 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'3-Year P&L'!$D$48+'3-Year P&L'!$D$36+Financing!$B$48),"")
+D28	Net income plus depreciation (which is not paid) plus that year's interest: principal is not subtracted because this flow is BEFORE debt. Without a monthly table, it is an estimate
+A29	For reference: ACTUAL year-1 cash flow (monthly table, before debt)
+B29	= 71339.360937 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",N21+Financing!$B$44+Financing!$B$45),"")
+D29	The sum of the twelve monthly net cash flows above, adding back the interest and principal paid that year. It is NOT the one the payback uses: it includes sales tax not yet settled and supplier credit, two things that have to be paid back and that years 2 and 3 do not have
+A30	Investment to recover (net of recoverable input tax)
+B30	= 256871.3 ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",'Startup Costs'!$B$34-'Startup Costs'!$B$33),"")
+D30	CAPEX plus working capital: the total cash needed MINUS the recoverable input tax on startup costs, which is not lost (it is recovered through the quarterly return, and this tab offsets it quarter by quarter; it is zero in the US default). Working capital is recovered when you close, but until then it is tied up
+A31	Project payback (years), before debt
+B31	= Over 3 years ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(B26>=B30,ROUND(B30/B26,1),IF(B26+B27>=B30,ROUND(1+(B30-B26)/B27,1),IF(B26+B27+B28>=B30,ROUND(2+(B30-B26-B27)/B28,1),"Over 3 years")))),"")
+D31	Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the "Financing" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules
+A32	Payback on CAPEX, excluding working capital (years)
+B32	= Over 3 years ‖ =IFERROR(IF('3-Year P&L'!$B$9="","",IF(B26>='Startup Costs'!$B$32,ROUND('Startup Costs'!$B$32/B26,1),IF(B26+B27>='Startup Costs'!$B$32,ROUND(1+('Startup Costs'!$B$32-B26)/B27,1),IF(B26+B27+B28>='Startup Costs'!$B$32,ROUND(2+('Startup Costs'!$B$32-B26-B27)/B28,1),"Over 3 years")))),"")
+D32	The same calculation on what you BUY (build-out, equipment, launch and formation costs), without working capital: that money is not spent, it is tied up and comes back when the business closes. For reference only: the payback that matters is the one above
+A34	The quarters in this sheet are plan quarters, not calendar quarters (March-May, June-August, September-November and December-February): with Month 1 in March, the workbook remits the sales tax of each plan quarter in the month after it. Your state sets the real filing calendar (monthly, quarterly or annual): check it. Income tax for year 1 is paid in year 2. The loan payment is split into twelve equal parts following the ANNUAL schedule in "Financing", and payroll into twelve monthly installments
+DV B5 C5 D5 E5 F5 G5 H5 I5 J5 K5 L5 M5	decimal · 0 · error: Enter a percentage between 0 and 1 (0.35 = 35%). · ayuda: None
+
+## Financing  (papel 1, orientación None, protegida True)
+A1	FINANCING PLAN
+A2	What you need, where it comes from and what it costs to repay. It is the sheet your lender asks for along with the P&L.
+A4	Item
+B4	Amount
+C4	Notes
+A5	SOURCES OF FUNDS
+A6	Owner's equity (your own money)
+B6	= 95000.0 ‖ =IFERROR(IF('0. Assumptions'!$B$30="","",'0. Assumptions'!$B$30),"")
+A7	Loan requested — bank or SBA 7(a) (amortized below)
+B7	= 162000.0 ‖ =IFERROR(IF('0. Assumptions'!$B$31="","",'0. Assumptions'!$B$31),"")
+A8	Other loan (not in the schedule or the DSCR — enter your loan in row 7)
+B8	0
+C8	A source of funds only: NOT amortized, so it is not in the schedule, the P&L interest or the DSCR. Enter your bank or SBA 7(a) loan in row 7 ("Loan requested" in "0. Assumptions"); use this row only for a second loan
+A9	SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)
+B9	0
+C9	SBA Microloans go up to $50,000 through nonprofit intermediaries. Like row 8, a source of funds only: not in the schedule or the DSCR. If it is your only loan, enter it in row 7 instead
+A10	Investors / partners (equity: dilutes, not repaid)
+B10	0
+C10	Equity: it dilutes your ownership and is not repaid
+A11	Local grants (usually paid after you spend)
+B11	0
+C11	Usually paid AFTER you document the spending
+A12	TOTAL SOURCES OF FUNDS
+B12	= 257000.0 ‖ =IFERROR(IF(COUNT(B6:B11)=0,"",SUM(B6:B11)),"")
+A13	USES OF FUNDS
+A14	Total cash needed at launch
+B14	= 256871.3 ‖ =IFERROR(IF('Startup Costs'!$B$34="","",'Startup Costs'!$B$34),"")
+C14	Startup costs plus any recoverable tax you have to advance (zero by default in the US)
+A15	Difference (sources - uses)
+B15	= 128.7 ‖ =IFERROR(B12-B14,"")
+C15	In red (negative), the plan is NOT funded. Far above zero is not free either: you pay interest on money you do not use
+A16	Difference as a % of uses
+B16	= 0.000501 ‖ =IFERROR(B15/B14,"")
+C16	Amber above the margin you set: it is debt you pay for without needing it
+A17	Acceptable over-funding (%)
+B17	0.05
+C17	A small cushion over the need is healthy; 20% extra is interest thrown away
+A18	Loan that would match sources to needs
+B18	= 161871.3 ‖ =IFERROR(MAX(0,B14-B12+B7),"")
+C18	Copy it into "Loan requested" in the "0. Assumptions" tab and the difference goes to zero. Rows 8-11 lower this figure, but only the row-7 loan is amortized and counted in the DSCR
+A19	LOAN TERMS
+A20	Principal amount
+B20	= 162000.0 ‖ =IFERROR(IF('0. Assumptions'!$B$31=0,"",'0. Assumptions'!$B$31),"")
+A21	Nominal annual interest rate (not APR)
+B21	= 0.1 ‖ =IFERROR(IF('0. Assumptions'!$B$32="","",'0. Assumptions'!$B$32),"")
+A22	Total term (years)
+B22	= 10.0 ‖ =IFERROR(IF('0. Assumptions'!$B$33="","",'0. Assumptions'!$B$33),"")
+A23	Interest-only period applied (years)
+B23	= 0.0 ‖ =IFERROR(IF(OR('0. Assumptions'!$B$34="",'0. Assumptions'!$B$33=""),"",IF('0. Assumptions'!$B$34>='0. Assumptions'!$B$33,0,'0. Assumptions'!$B$34)),"")
+C23	An interest-only period equal to or longer than the term does not exist: the sheet cancels it at the source
+A24	Annual payment during repayment
+B24	= 26364.753971 ‖ =IFERROR(IF(B22-B23<=0,"",IF(B21=0,B20/(B22-B23),B20*B21/(1-(1+B21)^-(B22-B23)))),"")
+C24	Standard amortizing loan with a level annual payment. At a 0% rate it is the principal divided by the repayment years: without that branch the schedule would shut down entirely
+A25	AMORTIZATION SCHEDULE
+A26	Year
+B26	Opening balance
+C26	Interest
+D26	Principal repaid
+E26	Total payment
+F26	Closing balance
+G26	Cash flow available for debt service (after tax; from year 4 on, year 3 held flat)
+H26	DSCR for the year
+A27	1
+B27	= 162000.0 ‖ =IFERROR(IF(B20="","",B20),"")
+C27	= 16200.0 ‖ =IFERROR(IF(OR(1>B22,B27=""),"",B27*B21),"")
+D27	= 10164.753971 ‖ =IFERROR(IF(OR(1>B22,B27=""),"",IF(1<=B23,0,MIN(B27,B24-C27))),"")
+E27	= 26364.753971 ‖ =IFERROR(IF(C27="","",C27+D27),"")
+F27	= 151835.246029 ‖ =IFERROR(IF(D27="","",B27-D27),"")
+G27	= 59552.073214 ‖ =IFERROR(IF(E27="","",'3-Year P&L'!$B$41-'3-Year P&L'!$B$46+'3-Year P&L'!$B$36+'3-Year P&L'!$B$37),"")
+H27	= 2.258776 ‖ =IFERROR(IF(OR(E27="",E27=0),"",G27/E27),"")
+A28	2
+B28	= 151835.246029 ‖ =IFERROR(IF(OR(2>B22,F27=""),"",F27),"")
+C28	= 15183.524603 ‖ =IFERROR(IF(OR(2>B22,B28=""),"",B28*B21),"")
+D28	= 11181.229368 ‖ =IFERROR(IF(OR(2>B22,B28=""),"",IF(2<=B23,0,MIN(B28,B24-C28))),"")
+E28	= 26364.753971 ‖ =IFERROR(IF(C28="","",C28+D28),"")
+F28	= 140654.016661 ‖ =IFERROR(IF(D28="","",B28-D28),"")
+G28	= 68995.889365 ‖ =IFERROR(IF(E28="","",'3-Year P&L'!$C$41-'3-Year P&L'!$C$46+'3-Year P&L'!$C$36+'3-Year P&L'!$C$37),"")
+H28	= 2.616975 ‖ =IFERROR(IF(OR(E28="",E28=0),"",G28/E28),"")
+A29	3
+B29	= 140654.016661 ‖ =IFERROR(IF(OR(3>B22,F28=""),"",F28),"")
+C29	= 14065.401666 ‖ =IFERROR(IF(OR(3>B22,B29=""),"",B29*B21),"")
+D29	= 12299.352305 ‖ =IFERROR(IF(OR(3>B22,B29=""),"",IF(3<=B23,0,MIN(B29,B24-C29))),"")
+E29	= 26364.753971 ‖ =IFERROR(IF(C29="","",C29+D29),"")
+F29	= 128354.664356 ‖ =IFERROR(IF(D29="","",B29-D29),"")
+G29	= 73312.464756 ‖ =IFERROR(IF(E29="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H29	= 2.7807 ‖ =IFERROR(IF(OR(E29="",E29=0),"",G29/E29),"")
+A30	4
+B30	= 128354.664356 ‖ =IFERROR(IF(OR(4>B22,F29=""),"",F29),"")
+C30	= 12835.466436 ‖ =IFERROR(IF(OR(4>B22,B30=""),"",B30*B21),"")
+D30	= 13529.287535 ‖ =IFERROR(IF(OR(4>B22,B30=""),"",IF(4<=B23,0,MIN(B30,B24-C30))),"")
+E30	= 26364.753971 ‖ =IFERROR(IF(C30="","",C30+D30),"")
+F30	= 114825.376821 ‖ =IFERROR(IF(D30="","",B30-D30),"")
+G30	= 73312.464756 ‖ =IFERROR(IF(E30="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H30	= 2.7807 ‖ =IFERROR(IF(OR(E30="",E30=0),"",G30/E30),"")
+A31	5
+B31	= 114825.376821 ‖ =IFERROR(IF(OR(5>B22,F30=""),"",F30),"")
+C31	= 11482.537682 ‖ =IFERROR(IF(OR(5>B22,B31=""),"",B31*B21),"")
+D31	= 14882.216289 ‖ =IFERROR(IF(OR(5>B22,B31=""),"",IF(5<=B23,0,MIN(B31,B24-C31))),"")
+E31	= 26364.753971 ‖ =IFERROR(IF(C31="","",C31+D31),"")
+F31	= 99943.160532 ‖ =IFERROR(IF(D31="","",B31-D31),"")
+G31	= 73312.464756 ‖ =IFERROR(IF(E31="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H31	= 2.7807 ‖ =IFERROR(IF(OR(E31="",E31=0),"",G31/E31),"")
+A32	6
+B32	= 99943.160532 ‖ =IFERROR(IF(OR(6>B22,F31=""),"",F31),"")
+C32	= 9994.316053 ‖ =IFERROR(IF(OR(6>B22,B32=""),"",B32*B21),"")
+D32	= 16370.437918 ‖ =IFERROR(IF(OR(6>B22,B32=""),"",IF(6<=B23,0,MIN(B32,B24-C32))),"")
+E32	= 26364.753971 ‖ =IFERROR(IF(C32="","",C32+D32),"")
+F32	= 83572.722614 ‖ =IFERROR(IF(D32="","",B32-D32),"")
+G32	= 73312.464756 ‖ =IFERROR(IF(E32="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H32	= 2.7807 ‖ =IFERROR(IF(OR(E32="",E32=0),"",G32/E32),"")
+A33	7
+B33	= 83572.722614 ‖ =IFERROR(IF(OR(7>B22,F32=""),"",F32),"")
+C33	= 8357.272261 ‖ =IFERROR(IF(OR(7>B22,B33=""),"",B33*B21),"")
+D33	= 18007.48171 ‖ =IFERROR(IF(OR(7>B22,B33=""),"",IF(7<=B23,0,MIN(B33,B24-C33))),"")
+E33	= 26364.753971 ‖ =IFERROR(IF(C33="","",C33+D33),"")
+F33	= 65565.240905 ‖ =IFERROR(IF(D33="","",B33-D33),"")
+G33	= 73312.464756 ‖ =IFERROR(IF(E33="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H33	= 2.7807 ‖ =IFERROR(IF(OR(E33="",E33=0),"",G33/E33),"")
+A34	8
+B34	= 65565.240905 ‖ =IFERROR(IF(OR(8>B22,F33=""),"",F33),"")
+C34	= 6556.52409 ‖ =IFERROR(IF(OR(8>B22,B34=""),"",B34*B21),"")
+D34	= 19808.229881 ‖ =IFERROR(IF(OR(8>B22,B34=""),"",IF(8<=B23,0,MIN(B34,B24-C34))),"")
+E34	= 26364.753971 ‖ =IFERROR(IF(C34="","",C34+D34),"")
+F34	= 45757.011024 ‖ =IFERROR(IF(D34="","",B34-D34),"")
+G34	= 73312.464756 ‖ =IFERROR(IF(E34="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H34	= 2.7807 ‖ =IFERROR(IF(OR(E34="",E34=0),"",G34/E34),"")
+A35	9
+B35	= 45757.011024 ‖ =IFERROR(IF(OR(9>B22,F34=""),"",F34),"")
+C35	= 4575.701102 ‖ =IFERROR(IF(OR(9>B22,B35=""),"",B35*B21),"")
+D35	= 21789.052869 ‖ =IFERROR(IF(OR(9>B22,B35=""),"",IF(9<=B23,0,MIN(B35,B24-C35))),"")
+E35	= 26364.753971 ‖ =IFERROR(IF(C35="","",C35+D35),"")
+F35	= 23967.958155 ‖ =IFERROR(IF(D35="","",B35-D35),"")
+G35	= 73312.464756 ‖ =IFERROR(IF(E35="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H35	= 2.7807 ‖ =IFERROR(IF(OR(E35="",E35=0),"",G35/E35),"")
+A36	10
+B36	= 23967.958155 ‖ =IFERROR(IF(OR(10>B22,F35=""),"",F35),"")
+C36	= 2396.795816 ‖ =IFERROR(IF(OR(10>B22,B36=""),"",B36*B21),"")
+D36	= 23967.958155 ‖ =IFERROR(IF(OR(10>B22,B36=""),"",IF(10<=B23,0,MIN(B36,B24-C36))),"")
+E36	= 26364.753971 ‖ =IFERROR(IF(C36="","",C36+D36),"")
+F36	= 0.0 ‖ =IFERROR(IF(D36="","",B36-D36),"")
+G36	= 73312.464756 ‖ =IFERROR(IF(E36="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H36	= 2.7807 ‖ =IFERROR(IF(OR(E36="",E36=0),"",G36/E36),"")
+A37	11
+B37	= None ‖ =IFERROR(IF(OR(11>B22,F36=""),"",F36),"")
+C37	= None ‖ =IFERROR(IF(OR(11>B22,B37=""),"",B37*B21),"")
+D37	= None ‖ =IFERROR(IF(OR(11>B22,B37=""),"",IF(11<=B23,0,MIN(B37,B24-C37))),"")
+E37	= None ‖ =IFERROR(IF(C37="","",C37+D37),"")
+F37	= None ‖ =IFERROR(IF(D37="","",B37-D37),"")
+G37	= None ‖ =IFERROR(IF(E37="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H37	= None ‖ =IFERROR(IF(OR(E37="",E37=0),"",G37/E37),"")
+A38	12
+B38	= None ‖ =IFERROR(IF(OR(12>B22,F37=""),"",F37),"")
+C38	= None ‖ =IFERROR(IF(OR(12>B22,B38=""),"",B38*B21),"")
+D38	= None ‖ =IFERROR(IF(OR(12>B22,B38=""),"",IF(12<=B23,0,MIN(B38,B24-C38))),"")
+E38	= None ‖ =IFERROR(IF(C38="","",C38+D38),"")
+F38	= None ‖ =IFERROR(IF(D38="","",B38-D38),"")
+G38	= None ‖ =IFERROR(IF(E38="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H38	= None ‖ =IFERROR(IF(OR(E38="",E38=0),"",G38/E38),"")
+A39	13
+B39	= None ‖ =IFERROR(IF(OR(13>B22,F38=""),"",F38),"")
+C39	= None ‖ =IFERROR(IF(OR(13>B22,B39=""),"",B39*B21),"")
+D39	= None ‖ =IFERROR(IF(OR(13>B22,B39=""),"",IF(13<=B23,0,MIN(B39,B24-C39))),"")
+E39	= None ‖ =IFERROR(IF(C39="","",C39+D39),"")
+F39	= None ‖ =IFERROR(IF(D39="","",B39-D39),"")
+G39	= None ‖ =IFERROR(IF(E39="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H39	= None ‖ =IFERROR(IF(OR(E39="",E39=0),"",G39/E39),"")
+A40	14
+B40	= None ‖ =IFERROR(IF(OR(14>B22,F39=""),"",F39),"")
+C40	= None ‖ =IFERROR(IF(OR(14>B22,B40=""),"",B40*B21),"")
+D40	= None ‖ =IFERROR(IF(OR(14>B22,B40=""),"",IF(14<=B23,0,MIN(B40,B24-C40))),"")
+E40	= None ‖ =IFERROR(IF(C40="","",C40+D40),"")
+F40	= None ‖ =IFERROR(IF(D40="","",B40-D40),"")
+G40	= None ‖ =IFERROR(IF(E40="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H40	= None ‖ =IFERROR(IF(OR(E40="",E40=0),"",G40/E40),"")
+A41	15
+B41	= None ‖ =IFERROR(IF(OR(15>B22,F40=""),"",F40),"")
+C41	= None ‖ =IFERROR(IF(OR(15>B22,B41=""),"",B41*B21),"")
+D41	= None ‖ =IFERROR(IF(OR(15>B22,B41=""),"",IF(15<=B23,0,MIN(B41,B24-C41))),"")
+E41	= None ‖ =IFERROR(IF(C41="","",C41+D41),"")
+F41	= None ‖ =IFERROR(IF(D41="","",B41-D41),"")
+G41	= None ‖ =IFERROR(IF(E41="","",'3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+'3-Year P&L'!$D$37),"")
+H41	= None ‖ =IFERROR(IF(OR(E41="",E41=0),"",G41/E41),"")
+A42	Schedule closing tolerance
+B42	0.01
+C42	Rounding margin. Above it, the schedule does not close and there is principal left unpaid
+A43	Balance outstanding at maturity
+B43	= 0.0 ‖ =IFERROR(IF(B20="","",ROUND(B20-SUM(D27:D41),2)),"")
+C43	Must be zero: the principal repaid in the schedule has to equal the amount borrowed. If it is positive, the term falls short
+A44	Year-1 interest
+B44	= 16200.0 ‖ =IFERROR(IF(B20="","",IF(C27="",0,C27)),"")
+A45	Year-1 principal repaid
+B45	= 10164.753971 ‖ =IFERROR(IF(B20="","",IF(D27="",0,D27)),"")
+A46	Year-2 interest
+B46	= 15183.524603 ‖ =IFERROR(IF(B20="","",IF(C28="",0,C28)),"")
+A47	Year-2 principal repaid
+B47	= 11181.229368 ‖ =IFERROR(IF(B20="","",IF(D28="",0,D28)),"")
+A48	Year-3 interest
+B48	= 14065.401666 ‖ =IFERROR(IF(B20="","",IF(C29="",0,C29)),"")
+A49	Year-3 principal repaid
+B49	= 12299.352305 ‖ =IFERROR(IF(B20="","",IF(D29="",0,D29)),"")
+A50	DEBT SERVICE COVERAGE RATIO (DSCR)
+A51	Year-1 DSCR
+B51	= 2.258776 ‖ =IFERROR(('3-Year P&L'!$B$41-'3-Year P&L'!$B$46+'3-Year P&L'!$B$36+B44)/(B44+B45),"")
+C51	An INTEREST-ONLY year, if there is one: with only interest in the denominator the ratio shoots up and does not measure the business
+A52	Year-2 DSCR
+B52	= 2.616975 ‖ =IFERROR(('3-Year P&L'!$C$41-'3-Year P&L'!$C$46+'3-Year P&L'!$C$36+B46)/(B46+B47),"")
+A53	Year-3 DSCR
+B53	= 2.7807 ‖ =IFERROR(('3-Year P&L'!$D$41-'3-Year P&L'!$D$46+'3-Year P&L'!$D$36+B48)/(B48+B49),"")
+A54	Minimum DSCR across the whole schedule
+B54	= 2.258776 ‖ =IFERROR(IF(COUNT(H27:H41)=0,"",MIN(H27:H41)),"")
+C54	The worst year of the life of the loan, not the best of the three the P&L projects. It is the number that decides a loan. Mind the scope: years 1 to 3 come from the P&L, and from year 4 on the schedule HOLDS year 3's cash flow, so the minimum over those years is a sustained projection, not a calculated year. The cash flow is after tax
+A56	DSCR is calculated BEFORE debt and AFTER tax: income tax is subtracted from pre-tax income, depreciation and interest are added back, and the result is divided by what has to be paid that year. Below the minimum in the "0. Assumptions" tab, the business does not generate enough to repay the loan. In the schedule, the available cash flow from year 4 on is held at year 3's: the P&L projects only three years, and no growth is invented here that has not been calculated.
+DV B8 B9 B10 B11 B42	decimal · 0 · error: Enter a number greater than or equal to 0. · ayuda: None
+DV B17	decimal · 0 · error: Enter a percentage between 0 and 1 (0.35 = 35%). · ayuda: None
