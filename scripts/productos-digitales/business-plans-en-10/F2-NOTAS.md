@@ -85,13 +85,17 @@ sobre el equilibrio de caja (`Break-Even!B24` = clientes previstos / clientes de
 | `extraer_docx` | 131 párrafos (110 con texto, 61 traducibles: ice_a 29 / 3,039 palabras · ice_b 32 / 3,780), 10 Heading 1, 0 multi-run · único ERROR = **página A4** del Word ES (igual que la pizza: el ensamblador la pasa a Letter) |
 | `aplicar_en --dry-run --parcial --idempotencia` | préstamo $162,000 en 1 vuelta · idempotencia **0 diferencias** · inject_cache 736 + 12 fórmulas, **0 fallos de pycel** · faltan 131 + 169 textos (GICE pendientes: parcial) |
 | `bp10.py calibracion` | **VERDE** (holgura 18.3 %, DSCR 2.26, saldo $46,060, cobertura 105.3 %, neto año 3 8.6 %, D196 verde) |
-| `gates_en --parcial --solo G1,G3,G4,G5,G6,G7` | G1 VERDE (736 fórmulas · 80 tareas [12, 15, 15, 12, 13, 13]) · G3 VERDE (16 hojas Letter) · **G4 VERDE (233 valores bajo DV**, la DV `✓,☐,N/A` del arreglo heredado) · G5 VERDE (8 rangos CF) · G6 VERDE (0 diferencias) · G7: ver §4.1 |
-| `bp10.py barrido --parcial` | ver §4.1 |
+| `gates_en --parcial --solo G1,G3,G4,G5,G6,G7` | G1 VERDE (736 fórmulas · 80 tareas [12, 15, 15, 12, 13, 13]) · G3 VERDE (16 hojas Letter) · **G4 VERDE (233 valores bajo DV**, la DV `✓,☐,N/A` del arreglo heredado) · G5 VERDE (8 rangos CF) · G6 VERDE (caché = ES recalculado, 0 diferencias; D15 2.26 / $46,060 / 105.3 % / 18.3 %) · **G7 VERDE** (110 valores; 0 calibraciones que citar) → **TODO VERDE** |
+| `bp10.py barrido --dir /root/tmp-icen/dry/ice-cream-shop-business-plan --parcial` | 1,267 piezas · **0 fallos** (RX_ICE_NO, cifras ES / Pizza / Bakery / Bar / FT / REST, español, no latinos); 131 + 169 piezas aún en ES = pendientes de la tanda 1 |
 | `check_textos --tanda GM / GR / GRC` (Mac) | OK los 3 (0 errores; 6 avisos de longitud en GM) · `check_revision.py GR / GRC` OK |
 
 ### 4.1 Cierre del paso 1a
 
-(se completa abajo con G7, el barrido y la 2.ª pasada)
+- **G7 rojo en la primera corrida** (FileNotFoundError): faltaba este `F2-NOTAS.md` (`mapas.NOTAS_F2`); verde al escribirlo.
+- **Barrido, 1 fallo en la primera corrida**: `Startup Costs!D12` («$25,000-45,000») daba «45,000» como cifra del caso FT EN. `_importes_research()` leía solo el primer extremo de un rango en dólares; ahora lee los dos (research §4 y SPEC D190/D193 citan el rango) → 0 fallos.
+- **2.ª pasada** (`aplicar_en --dry-run --parcial` en `/root/tmp-icen/dry2`): sha256 canónico **IGUAL** en los 2 xlsx (`fbf3488d…`, `77f633c7…`); `cifras_caso.json` igual salvo `generado`.
+- Ficheros de prueba (solo en el VPS): `/root/tmp-icen/dry/ice-cream-shop-business-plan/ice-cream-shop-financial-projections.xlsx` (`18bc2c79…`), `…/ice-cream-shop-startup-checklist.xlsx` (`e9575961…`), `/root/tmp-icen/dry/cifras_caso.json` (`80b56e06…`), informe `/root/tmp-icen/dry.json`. sha256 Mac = VPS: `textos_es.json` `31e644d2…`, `censo_es.json` `f4f05622…`, `formulas_ice.json` `7edf5e1a…`, `textos_en/GM.json` `9f4492e0…`, `GR.json` `7f12edbd…`, `GRC.json` `ad2e73e9…`, `docx_es_ice.json` `d259192f…`.
+- **Tandas de la tanda 1 listas** (`tandas/`): `GICE-plan.entrada.json` (131 cadenas, 3,057 palabras en la entrada, 114 pistas, + 14 GR a revisar) ‖ `GICE-check.entrada.json` (157 cadenas, 2,414 palabras, 42 pistas, + 73 GRC a revisar). Validación de cada traductor: `bp10.py check_textos --tanda <G>` + `check_revision.py GR|GRC` (BRIEF §5). `ice_a`/`ice_b` ya generadas (29 / 32 párrafos) para el paso 3, que las regenera.
 
 ## 5. Defectos y deudas detectados (no bloquean)
 
