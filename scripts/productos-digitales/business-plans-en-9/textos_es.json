@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:25:07Z",
+  "generado": "2026-10-27T07:26:06Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "28cc2369",
+  "commit": "16b01f7a",
   "libros": {
    "WEDP": {
     "es": "plan-financiero-finca-eventos-bodas.xlsx",
@@ -17991,6 +17991,9 @@
    "n_apariciones": 6,
    "palabras": 12,
    "max_len": 255,
+   "pistas": [
+    "DV de la columna OK: en el EN la lista es «✓, ☐, N/A» (CLAVES['—'] = '☐'): escribe «☐ = pending», NUNCA «—» (la Pizza EN publicada lo dejó con «—»: F2-NOTAS §5)"
+   ],
    "sha1": "99fc84bf8389",
    "donde": [
     {

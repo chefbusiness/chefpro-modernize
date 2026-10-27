@@ -1,0 +1,624 @@
+{
+ "tanda": "contrato_1",
+ "salida": "scripts/productos-digitales/business-plans-en-9/textos_en/contrato_en_1.json",
+ "formato_salida": "[{\"estilo\": \"<uno de Kicker, Title, Subtitle, H1, H2, Normal, List Bullet, Separador, Firma>\", \"texto\": \"<EN>\"}, …] en el orden del documento; puedes añadir, quitar o reordenar párrafos dentro de tu parte",
+ "parte": "portada + Modelo 1 + Anexo de empresas",
+ "n_parrafos_es": 102,
+ "n_palabras_es": 3324,
+ "cabecera_fija (solo parte 1, literal)": "**Template, not legal advice.** Consumer, deposit, alcohol and tax rules vary by state. Have a licensed attorney in your state review and adapt it before you use it.",
+ "reglas": [
+  "Inglés de EE. UU., registro de contrato claro (plain English), segunda persona NO: «the Venue», «the Client», «the Caterer». Corchetes [ ] para TODO lo editable (nombres, fechas, importes, plazos, porcentajes por defecto, estado, condado): «[State]», «[14] days», «[25]%», «$[amount]». CERO cifras del caso del kit (ventas, invitados, precios por invitado) y cero cifras del ES.",
+  "Mismos estilos que el ES (Kicker, Title, Subtitle, H1, H2, Normal, List Bullet, Separador, Firma); «**negrita**» dentro del texto como en el ES. Puedes añadir, quitar o reordenar párrafos dentro de tu parte: NO es una traducción 1:1 (SPEC D171).",
+  "Nada de derecho español: ni TRLGDCU, LAU, Código Civil, IVA, «señal/arras», «fuero del consumidor», SGAE, comida testigo, Ley 15/2015, «finca», «canon», NIF/CIF/DNI (las firmas: «Name», «Title», «Date», «Signature»).",
+  "Jerga (research §9, glosario adjunto): venue rental fee / site fee · retainer (aplicado al precio) · security deposit (refundable, itemized) · guaranteed guest count · final headcount · venue coordinator · setup / load-out · rain plan · maximum occupancy (posted by the fire marshal) · outside vendors · COI / additional insured · host liquor liability · exclusive caterer · caterer commission · service charge vs. gratuity · 9 major food allergens.",
+  "NUNCA «non-refundable» / «nonrefundable» solo: el retainer se aplica al precio y lo que se retiene al cancelar lo fija SOLO la tabla de cancelación; si lo mencionas, en el mismo párrafo remite a esa tabla (el check lo exige).",
+  "FTC Cooling-Off Rule (decisión de orquestador 2): la regla excluye los arrendamientos de inmuebles, así que NO se afirma que aplique a un contrato de venue. Forma permitida, como nota de redacción entre corchetes: «[Drafting note: if you sign couples at bridal shows or off-site, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway.]» y, si quieres, una cláusula OPCIONAL entre corchetes con esa ventana de cancelación. Nada de «16 CFR 429 applies» ni «you have a legal right under federal law».",
+  "Lo marcado «(resumen)» en research (California Civ. Code §1671, NY A20-51S, Missouri, Wisconsin, 40 CFR 141.2) NO se cita (decisión de orquestador 4): «a reasonable estimate of the Venue's loss, not a penalty» sin citar el código; reglas de alcohol y de sales tax «under [State] law» / «as your state requires».",
+  "Unidades y formatos US: $1,000.00, mm/dd/yyyy, «business days». Sin emojis, sin caracteres no latinos, sin español."
+ ],
+ "decisiones_D171": [
+  "PORTADA: Kicker «AI CHEF PRO · WEDDING VENUE BUSINESS PLAN KIT», Title «Venue Rental Agreement Templates», Subtitle «Couples & private events, corporate clients and exclusive caterer». Justo después, un Normal con la CABECERA FIJA, literal: «**Template, not legal advice.** Consumer, deposit, alcohol and tax rules vary by state. Have a licensed attorney in your state review and adapt it before you use it.» (el check la exige tal cual). Luego el «cómo usarlo» del ES adaptado.",
+  "MODELO 1 → H1 «Model 1 · Venue Rental Agreement (Couples & Private Events)». CRUZAN (adaptadas): Reunidos → «Parties»; 1.ª Objeto → «Rental and included services»; 3.ª → «Guest count, guaranteed minimum and final headcount»; 9.ª → «Date change»; 11.ª → «Setup, event and load-out hours» (curfew de las condiciones del CUP del condado); 13.ª → «Maximum occupancy» (la que fija y rotula el fire marshal); 16.ª → «Rain plan» (la lluvia no es fuerza mayor); 20.ª → «Photos and privacy» (autorización escrita aparte para usar fotos).",
+  "CAMBIAN: 2.ª Licencias → «Permits» (el Venue declara que tiene el zoning approval —conditional use permit— y el certificate of occupancy); 2.ª bis → «2A. Contingent booking before permits»: solo un hold con devolución ÍNTEGRA en [14] días si el CUP o el certificate of occupancy no llegan antes de [fecha, al menos 6 meses antes del evento]; 4.ª → «Fees and sales tax» («plus applicable sales tax»); 5.ª → «Payment schedule and receipts» ([25]% al firmar, [35]% [180] días antes, [40]% [30] días antes); 6.ª → «Retainer»: se aplica al precio; lo que se retiene si el Client cancela lo fija SOLO la tabla de la cláusula de cancelación.",
+  "7.ª → «Cancellation by the Client»: tabla de tramos (ES: [10]/[25]/[50]/[75]/[100]% del precio según se cancele con más de [12] meses, [12-6], [6-3], [3-1] meses o menos de [1] mes) + «rebooking credit» («if the Venue rebooks the date at an equal or higher fee, it refunds what it retained minus its documented costs») + «the parties agree these amounts are a reasonable estimate of the Venue's loss, not a penalty». 8.ª → «Cancellation by the Venue»: devolución íntegra en [14] días + [importe pactado] y ayuda para recolocar la fecha.",
+  "SE QUITAN las citas españolas: 10.ª (sin desistimiento, art. 103.l) → «Signing away from the Venue» como cláusula OPCIONAL entre corchetes con la nota de redacción de la FTC Cooling-Off Rule (regla común 6: NO afirmar que aplica); 21.ª (fuero del consumidor) → «Governing law and disputes»: «[State] law; courts of [County], [State]» + «have a licensed attorney in your state review this clause»; 17.ª (art. 1105 CC) → «Force majeure» genérica con reembolso o nueva fecha a elección del Client.",
+  "12.ª → «Noise and music» (decibel limit, curfew, licencias de música ASCAP/BMI/SESAC del Venue; la música del DJ o de la banda, del Client o su proveedor); 14.ª → «Outside vendors» (COI con el Venue como additional insured, bartenders con licencia solamente, nada de llama abierta, sparklers ni fuegos sin permiso del fire marshal); 15.ª → «Damage and security deposit» (reembolsable, deducciones detalladas por escrito en [14] días); 18.ª → «Insurance» (GL del Venue; el Client, event liability + host liquor liability si hay alcohol); 19.ª → «Food, alcohol and allergens» (del caterer; alcohol solo por el caterer o un bartender con licencia, ID, nada a menores ni a personas visiblemente ebrias).",
+  "NUEVAS: «Mutual responsibility» (cada parte responde de su propia negligencia; sin indemnidad unilateral) y «Entire agreement and e-signatures». Firmas: «Venue: ____ Client: ____» · «Name / Title / Date».",
+  "ANEXO → H1 «Corporate & Organization Addendum»: W-9 del Venue, orden de compra (PO) y contacto de facturación, certificado de exención de sales tax si la entidad está exenta, net terms ([30] días), tramos de cancelación [5]/[15]/[35]/[60]/[100]% y foro pactado; firma «Company: ____ Title: ____»."
+ ],
+ "glosario": {
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "carencia": "interest-only period",
+  "fondo de maniobra": "working capital",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable input tax",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "finca de eventos": "wedding venue / event venue (tipos: barn venue, estate venue, farm venue, banquet hall)",
+  "alquiler del espacio": "venue rental fee / site fee (+ «venue fee» si es % de F&B)",
+  "catering exclusivo · homologados": "exclusive caterer · preferred vendor list · in-house catering",
+  "canon del catering": "caterer commission (% of F&B) / exclusivity fee (nunca «canon» ni «royalty»)",
+  "invitados · recuento final": "guests · guest count · final headcount (due X days before)",
+  "mínimo garantizado": "guaranteed guest count · food & beverage minimum (del caterer)",
+  "señal / reserva": "retainer (aplicado al precio) · booking deposit; «non-refundable» solo con la tabla de cancelación",
+  "fianza por daños": "security deposit / damage deposit (refundable, itemized)",
+  "barra libre · resopón": "open bar / hosted bar (del caterer) · late-night snack",
+  "coordinación del día": "venue coordinator (del venue) ≠ day-of coordinator (de la pareja)",
+  "montaje y recogida": "setup / teardown (breakdown) · load-in / load-out",
+  "plan B de lluvia": "rain plan / inclement-weather plan (tent backup)",
+  "aforo": "maximum occupancy / occupant load (lo fija el fire marshal)",
+  "calificación urbanística / licencia de actividad": "zoning approval: conditional (special) use permit · certificate of occupancy (assembly, Group A-2)",
+  "prueba de menú": "tasting",
+  "visitas · jornada de puertas abiertas": "venue tours / site visits · open house",
+  "temporada alta / media / baja": "peak / shoulder / off-peak (off-season)",
+  "preboda · boda íntima · cena de la víspera": "rehearsal · micro wedding / elopement · rehearsal dinner",
+  "suite de novios": "bridal suite · groom's lounge",
+  "proveedores externos": "outside vendors · outside catering fee · cake-cutting fee · corkage fee",
+  "portales de bodas": "The Knot / WeddingWire storefront (listing) · venue marketplaces (Peerspace)",
+  "seguro RC · certificado": "general liability · host liquor liability · event insurance · COI / additional insured",
+  "fijo discontinuo": "seasonal employee (W-2)",
+  "grupo electrógeno · limitador": "standby generator · decibel limit / sound meter, music curfew",
+  "aseos adaptados · saneamiento · pozo": "ADA-compliant restrooms · septic system · well (public water system)",
+  "software de reservas": "venue management software (Tripleseat, Perfect Venue, HoneyBook)",
+  "invitado / ticket / días": "guests · revenue per guest · events per year (nunca «covers» ni «average check»)",
+  "dossier": "wedding brochure / pricing guide",
+  "(e) finca": "venue (o «property» para el inmueble)",
+  "(e) canon": "caterer commission",
+  "(e) IVA": "sales tax",
+  "(e) calificación urbanística/licencia": "CUP + certificate of occupancy",
+  "(e) autoprotección": "fire code, occupant load, sprinklers",
+  "(e) comida testigo": "no aplica (eliminar)",
+  "(e) 14 alérgenos": "9 major allergens (caterer)",
+  "(e) fijos discontinuos": "seasonal W-2",
+  "(e) TRLGDCU / fuero del consumidor": "state consumer law; governing law & venue clause",
+  "(e) arras / señal": "retainer",
+  "(e) SL / autónomo": "LLC",
+  "(e) gestoría": "CPA / bookkeeper",
+  "(e) ayuntamiento / comunidad": "county / state",
+  "(e) SGAE": "ASCAP/BMI/SESAC",
+  "(e) ceremonia civil (Ley 15/2015)": "el venue acoge; licencia (county clerk) y officiant según el estado"
+ },
+ "verificacion": "python3 scripts/productos-digitales/business-plans-en-9/bp9.py check_contrato --parte 1",
+ "es": [
+  {
+   "i": 0,
+   "estilo": "Kicker",
+   "texto": "AI CHEF PRO · PLAN DE NEGOCIO: FINCA DE EVENTOS Y BODAS"
+  },
+  {
+   "i": 1,
+   "estilo": "Title",
+   "texto": "Modelos de contrato"
+  },
+  {
+   "i": 2,
+   "estilo": "Subtitle",
+   "texto": "Reserva de la finca para particulares, condiciones para empresas y condiciones del catering exclusivo de la finca. Tres documentos editables."
+  },
+  {
+   "i": 3,
+   "estilo": "Normal",
+   "texto": "**Cómo usar estos modelos.** Son documentos orientativos, un punto de partida para que no empieces con la página en blanco. Adáptalos con tu asesoría o con un abogado, y a la normativa de tu comunidad autónoma y de tu ayuntamiento, antes de firmar tu primer contrato. Los porcentajes, plazos y tramos que ves son los de la calculadora del kit y son ejemplos: ajústalos a tu caso y a lo que el mercado de tu zona acepte. Lo que va entre corchetes, como [nombre] o [importe] €, lo rellenas tú en cada contrato."
+  },
+  {
+   "i": 4,
+   "estilo": "Normal",
+   "texto": "Tres ideas guían los textos. Primera: la finca vende el espacio y sus servicios, y el catering exclusivo vende el menú y la barra, cada uno con su factura. Segunda: lo que se cobra y lo que se devuelve es proporcional y recíproco, para que las cláusulas aguanten una reclamación de un consumidor. Tercera: no se confirma en firme ninguna fecha de una finca que todavía no tenga las licencias para celebrar eventos; mientras tanto, solo se firman reservas condicionadas a la licencia (cláusula segunda bis), con devolución íntegra si no llega."
+  },
+  {
+   "i": 5,
+   "estilo": "Separador",
+   "texto": ""
+  },
+  {
+   "i": 6,
+   "estilo": "H1",
+   "texto": "Modelo 1 · Contrato de reserva de la finca para una celebración"
+  },
+  {
+   "i": 7,
+   "estilo": "Kicker",
+   "texto": "PARA PARTICULARES: BODAS, BAUTIZOS, COMUNIONES, CUMPLEAÑOS Y OTRAS CELEBRACIONES"
+  },
+  {
+   "i": 8,
+   "estilo": "Normal",
+   "texto": "En [ciudad], a [fecha]."
+  },
+  {
+   "i": 9,
+   "estilo": "H2",
+   "texto": "Reunidos"
+  },
+  {
+   "i": 10,
+   "estilo": "Normal",
+   "texto": "De una parte, [nombre o razón social de la finca], con NIF/CIF [número], domicilio en [dirección completa] y titular de la actividad de celebración de eventos en la finca [nombre de la finca], situada en [dirección o paraje, municipio, provincia] (en adelante, la «Finca»)."
+  },
+  {
+   "i": 11,
+   "estilo": "Normal",
+   "texto": "De otra parte, D./Dña. [nombre y apellidos], con DNI/NIE [número] y domicilio en [dirección completa], que contrata en su propio nombre como consumidor para una celebración privada (en adelante, el «Cliente»). En caso de dos contratantes, por ejemplo los novios, ambos constan aquí con sus datos y responden solidariamente: [segundo contratante, DNI/NIE y domicilio]."
+  },
+  {
+   "i": 12,
+   "estilo": "Normal",
+   "texto": "Ambas partes se reconocen capacidad suficiente para contratar y acuerdan las siguientes cláusulas."
+  },
+  {
+   "i": 13,
+   "estilo": "H2",
+   "texto": "Primera · Objeto"
+  },
+  {
+   "i": 14,
+   "estilo": "Normal",
+   "texto": "La Finca cede al Cliente el uso de los espacios que se detallan a continuación, con los servicios que se enumeran, para la celebración de [tipo de celebración] el día [fecha], en el horario que fija la cláusula de horarios."
+  },
+  {
+   "i": 15,
+   "estilo": "List Bullet",
+   "texto": "Espacios incluidos: [jardín de ceremonia, salón o carpa, zona de cóctel, aseos, zona de baile, estancias para novios o invitados]."
+  },
+  {
+   "i": 16,
+   "estilo": "List Bullet",
+   "texto": "Servicios de la Finca incluidos: [montaje y desmontaje de mesas y sillas, mantelería, iluminación, coordinación del día, personal de la finca, limpieza, aparcamiento, plan B de lluvia]."
+  },
+  {
+   "i": 17,
+   "estilo": "List Bullet",
+   "texto": "Servicios no incluidos: el menú, la barra y las bebidas, que el Cliente contrata con el catering exclusivo de la Finca, y los proveedores propios del Cliente (fotógrafo, música, decoración, flores)."
+  },
+  {
+   "i": 18,
+   "estilo": "Normal",
+   "texto": "El catering exclusivo de la Finca es [razón social del catering] (en adelante, el «Catering»). El Catering factura aparte, directamente al Cliente, el menú y la barra, conforme a su propio presupuesto y a sus condiciones. La Finca no factura ni cobra esos conceptos y no responde de ellos, salvo en lo que afecte al espacio y a sus instalaciones."
+  },
+  {
+   "i": 19,
+   "estilo": "H2",
+   "texto": "Segunda · Licencias y autorizaciones"
+  },
+  {
+   "i": 20,
+   "estilo": "Normal",
+   "texto": "La Finca declara que dispone de las licencias y autorizaciones necesarias para celebrar eventos en la finca y para el aforo y los usos que se contratan [o, si todavía no las tiene, que las ha solicitado y que este contrato es una reserva condicionada a la licencia según la cláusula segunda bis], y se compromete a mantenerlas vigentes hasta la fecha del evento. Entregará copia de la licencia de actividad al Cliente si este se lo pide por escrito."
+  },
+  {
+   "i": 21,
+   "estilo": "Normal",
+   "texto": "Si, por cualquier causa, la Finca perdiera o no pudiera ejercer esas licencias antes del evento, lo comunicará al Cliente de inmediato y se aplicará lo previsto en la cláusula de cancelación por parte de la Finca."
+  },
+  {
+   "i": 22,
+   "estilo": "H2",
+   "texto": "Segunda bis · Reserva condicionada a la licencia [solo si la Finca aún no la tiene]"
+  },
+  {
+   "i": 23,
+   "estilo": "Normal",
+   "texto": "Este contrato es una reserva condicionada a la licencia: queda sujeto a la condición suspensiva de que la Finca obtenga las licencias y autorizaciones necesarias para celebrar el evento antes del [fecha límite, al menos seis meses antes del evento], y hasta entonces la fecha no queda confirmada en firme. Mientras la condición no se cumpla, la Finca solo cobra la reserva de la cláusula quinta. En cuanto obtenga las licencias, la Finca lo comunica por escrito al Cliente y, desde ese momento, la reserva es firme y se aplica todo el contrato."
+  },
+  {
+   "i": 24,
+   "estilo": "Normal",
+   "texto": "Si la condición no se cumple en esa fecha, el contrato queda sin efecto y la Finca devuelve al Cliente todo lo cobrado en un plazo de [14] días, sin retención ni penalización para el Cliente [y con una compensación de [importe] €]."
+  },
+  {
+   "i": 25,
+   "estilo": "H2",
+   "texto": "Tercera · Invitados, mínimo garantizado y recuento final"
+  },
+  {
+   "i": 26,
+   "estilo": "List Bullet",
+   "texto": "Invitados previstos: [número]."
+  },
+  {
+   "i": 27,
+   "estilo": "List Bullet",
+   "texto": "Mínimo garantizado: [número] invitados, que el Cliente contrata con el Catering y sobre el que se calculan el menú y la logística del día, aunque finalmente asistan menos personas."
+  },
+  {
+   "i": 28,
+   "estilo": "List Bullet",
+   "texto": "Recuento final: el Cliente comunica por escrito el número definitivo de invitados, con las alergias e intolerancias que conozca, como máximo [15] días antes del evento. A partir de esa fecha el número solo puede subir, dentro del aforo máximo y si la Finca y el Catering pueden atenderlo; no puede bajar del mínimo garantizado."
+  },
+  {
+   "i": 29,
+   "estilo": "List Bullet",
+   "texto": "[Si la Finca cobra por invitado: los que excedan del mínimo se facturan a [importe] € más IVA por persona, en la factura de liquidación.]"
+  },
+  {
+   "i": 30,
+   "estilo": "H2",
+   "texto": "Cuarta · Precio e IVA"
+  },
+  {
+   "i": 31,
+   "estilo": "Normal",
+   "texto": "El precio del espacio y de los servicios de la Finca es de [importe base] € más el IVA del 21 %, que asciende a [importe del IVA] €, lo que suma un total de [importe total] € con IVA incluido. Ese importe no incluye el menú ni la barra, que se pagan al Catering."
+  },
+  {
+   "i": 32,
+   "estilo": "H2",
+   "texto": "Quinta · Calendario de pagos y facturas"
+  },
+  {
+   "i": 33,
+   "estilo": "Normal",
+   "texto": "El Cliente abonará el precio total con IVA de la cláusula anterior en tres pagos, por transferencia a la cuenta [IBAN] o por el medio que la Finca indique por escrito:"
+  },
+  {
+   "i": 34,
+   "estilo": "List Bullet",
+   "texto": "**Reserva: 25 %** ([importe] € con IVA), a la firma de este contrato."
+  },
+  {
+   "i": 35,
+   "estilo": "List Bullet",
+   "texto": "**Segundo pago: 35 %** ([importe] € con IVA), a 180 días del evento, es decir, el [fecha]."
+  },
+  {
+   "i": 36,
+   "estilo": "List Bullet",
+   "texto": "**Liquidación: 40 %** ([importe] € con IVA), a 30 días del evento, es decir, el [fecha], junto con la diferencia por el recuento final de invitados si la Finca cobra por invitado y la hay."
+  },
+  {
+   "i": 37,
+   "estilo": "Normal",
+   "texto": "La Finca emitirá una factura por cada cobro, también por la reserva, y la enviará al Cliente en el mismo momento en que reciba el pago. Si el Cliente se retrasa más de [10] días en un pago, la Finca podrá reclamarlo y, pasado ese plazo sin pagar y tras requerirlo por escrito, dar el contrato por resuelto aplicando la cláusula de cancelación por parte del Cliente."
+  },
+  {
+   "i": 38,
+   "estilo": "H2",
+   "texto": "Sexta · La reserva como señal a cuenta del precio"
+  },
+  {
+   "i": 39,
+   "estilo": "Normal",
+   "texto": "La cantidad entregada como reserva es una señal a cuenta del precio, que se descuenta de él si el contrato se cumple. Si una de las partes cancela, la señal se rige exclusivamente por la tabla de cancelación pactada en la cláusula séptima y por su reciprocidad de la cláusula octava, que sustituyen a cualquier otro régimen general sobre la señal o las arras: si cancela el Cliente, la Finca retiene lo que fija la cláusula séptima; si cancela la Finca, devuelve todo lo cobrado e indemniza al Cliente con lo que fija la cláusula octava."
+  },
+  {
+   "i": 40,
+   "estilo": "H2",
+   "texto": "Séptima · Cancelación por parte del Cliente"
+  },
+  {
+   "i": 41,
+   "estilo": "Normal",
+   "texto": "Si el Cliente cancela el evento, la Finca retiene un porcentaje del precio total con IVA según la antelación con que se comunique la cancelación por escrito respecto de la fecha del evento:"
+  },
+  {
+   "i": 42,
+   "estilo": "List Bullet",
+   "texto": "Con 12 meses o más de antelación: **10 %** del precio."
+  },
+  {
+   "i": 43,
+   "estilo": "List Bullet",
+   "texto": "De 6 meses a menos de 12: **25 %** del precio."
+  },
+  {
+   "i": 44,
+   "estilo": "List Bullet",
+   "texto": "De 3 meses a menos de 6: **50 %** del precio."
+  },
+  {
+   "i": 45,
+   "estilo": "List Bullet",
+   "texto": "De 1 mes a menos de 3: **75 %** del precio."
+  },
+  {
+   "i": 46,
+   "estilo": "List Bullet",
+   "texto": "Con menos de 1 mes: **100 %** del precio, descontados los costes que la Finca se ahorra por no celebrarlo (limpieza, consumibles, personal de refuerzo y servicios extra no prestados)."
+  },
+  {
+   "i": 47,
+   "estilo": "Normal",
+   "texto": "Si lo ya cobrado supera el porcentaje que se retiene, la Finca devuelve la diferencia en un plazo de [14] días. Si lo cobrado es menos, el Cliente abona la diferencia hasta alcanzar ese porcentaje. Estos importes responden a los gastos de reserva de la fecha, que la Finca no puede ofrecer a otros clientes, y se aplican de forma proporcional al perjuicio que esa pérdida le causa."
+  },
+  {
+   "i": 48,
+   "estilo": "H2",
+   "texto": "Octava · Cancelación por parte de la Finca y reciprocidad"
+  },
+  {
+   "i": 49,
+   "estilo": "Normal",
+   "texto": "Si es la Finca quien cancela o no puede prestar el servicio por una causa que no sea fuerza mayor, devuelve al Cliente todo lo cobrado en un plazo de [14] días y, además, le indemniza con una cantidad equivalente a la que la Finca habría retenido en ese tramo de antelación, según la tabla de la cláusula anterior. Esta cláusula se pacta de forma recíproca, en atención a la proporcionalidad y la reciprocidad que exigen los artículos 85.6 y 87.2 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios."
+  },
+  {
+   "i": 50,
+   "estilo": "Normal",
+   "texto": "La Finca se esforzará además en ofrecer al Cliente una fecha alternativa o una finca equivalente, pero el Cliente no está obligado a aceptarla."
+  },
+  {
+   "i": 51,
+   "estilo": "H2",
+   "texto": "Novena · Cambio de fecha"
+  },
+  {
+   "i": 52,
+   "estilo": "Normal",
+   "texto": "El Cliente puede pedir por escrito un cambio de fecha. La Finca lo aceptará si tiene disponibilidad y si la nueva fecha cae dentro de los [12] meses siguientes a la original. El cambio solo es gratuito si se pide con 6 meses o más de antelación sobre la fecha original; en otro caso se cobra un recargo de [importe] € y se actualiza el precio a la tarifa vigente de la nueva fecha. Si la Finca no acepta el cambio, el contrato sigue en sus términos."
+  },
+  {
+   "i": 53,
+   "estilo": "H2",
+   "texto": "Décima · Sin derecho de desistimiento"
+  },
+  {
+   "i": 54,
+   "estilo": "Normal",
+   "texto": "Si este contrato se celebra a distancia o fuera de las instalaciones de la Finca, el Cliente no tiene derecho de desistimiento, porque es un servicio de esparcimiento con una fecha de ejecución determinada (artículo 103.l del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios). Lo que sí puede hacer es cancelar con las consecuencias económicas de la cláusula séptima. El Cliente declara haber sido informado de ello antes de firmar."
+  },
+  {
+   "i": 55,
+   "estilo": "H2",
+   "texto": "Undécima · Horarios de montaje, celebración y recogida"
+  },
+  {
+   "i": 56,
+   "estilo": "List Bullet",
+   "texto": "Acceso para montaje de proveedores del Cliente: desde las [hora] del día del evento (o [fecha y hora] si se pacta el día anterior)."
+  },
+  {
+   "i": 57,
+   "estilo": "List Bullet",
+   "texto": "Celebración: de las [hora] a las [hora]. La música exterior termina a la hora que fije la ordenanza municipal vigente, que la Finca informará al Cliente por escrito, y a partir de entonces la música y el baile continúan en el espacio interior hasta las [hora]."
+  },
+  {
+   "i": 58,
+   "estilo": "List Bullet",
+   "texto": "Recogida y salida de invitados y proveedores: antes de las [hora]. Los objetos del Cliente que queden después de esa hora se guardan [7] días y la Finca no responde de su pérdida."
+  },
+  {
+   "i": 59,
+   "estilo": "Normal",
+   "texto": "Si el Cliente supera el horario sin acuerdo previo, la Finca puede cobrar [importe] € por cada hora o fracción, y puede apagar la música o dar por terminada la fiesta cuando lo exija la autoridad o la seguridad de las personas."
+  },
+  {
+   "i": 60,
+   "estilo": "H2",
+   "texto": "Duodécima · Ruido y música"
+  },
+  {
+   "i": 61,
+   "estilo": "Normal",
+   "texto": "La finca está en un entorno donde viven vecinos y hay fauna, y el Cliente se compromete a respetar los límites de ruido. La Finca dispone de [un limitador-registrador de sonido] que se instala en el equipo de sonido y que no puede ser manipulado por el Cliente ni por sus proveedores. Los altavoces exteriores se orientan a la zona que indique la Finca, lejos de las viviendas. El baile final se hace en el interior, con puertas y ventanas cerradas."
+  },
+  {
+   "i": 62,
+   "estilo": "Normal",
+   "texto": "Los derechos de autor por la música que se emite en el evento los gestiona la Finca [y están incluidos en el precio / se repercuten al Cliente por un importe de [importe] €, que consta en la factura de liquidación]. El Cliente informará a su DJ u orquesta de esta cláusula."
+  },
+  {
+   "i": 63,
+   "estilo": "H2",
+   "texto": "Decimotercera · Aforo máximo"
+  },
+  {
+   "i": 64,
+   "estilo": "Normal",
+   "texto": "El aforo máximo del evento es de [número] personas contando invitados, personal de proveedores y niños. El Cliente no puede superarlo ni siquiera con el acuerdo de sus proveedores, y la Finca puede impedir la entrada o pedir que salgan quienes lo excedan."
+  },
+  {
+   "i": 65,
+   "estilo": "H2",
+   "texto": "Decimocuarta · Proveedores externos"
+  },
+  {
+   "i": 66,
+   "estilo": "Normal",
+   "texto": "El Cliente puede traer fotógrafo, vídeo, música, decoración y flores propios. Para cada uno comunicará a la Finca sus datos, [20] días antes del evento como mínimo. Los proveedores externos:"
+  },
+  {
+   "i": 67,
+   "estilo": "List Bullet",
+   "texto": "cumplen las normas de la Finca, su horario de acceso y sus indicaciones de seguridad, y no pueden usar llama abierta, confeti, arroz, pirotecnia ni globos de helio al aire libre, ni clavar, pegar o atar nada a las instalaciones y árboles sin permiso;"
+  },
+  {
+   "i": 68,
+   "estilo": "List Bullet",
+   "texto": "deben tener su propio seguro de responsabilidad civil y estar al corriente de sus obligaciones laborales y fiscales, y la Finca puede pedirles el justificante;"
+  },
+  {
+   "i": 69,
+   "estilo": "List Bullet",
+   "texto": "no pueden servir comida ni bebida, salvo lo previsto en las condiciones del Catering (por ejemplo, una tarta de un obrador del Cliente) y sin coste adicional si se acuerda por escrito."
+  },
+  {
+   "i": 70,
+   "estilo": "Normal",
+   "texto": "El Cliente responde de los daños y de los incumplimientos de sus proveedores como si fueran propios."
+  },
+  {
+   "i": 71,
+   "estilo": "H2",
+   "texto": "Decimoquinta · Daños y fianza"
+  },
+  {
+   "i": 72,
+   "estilo": "Normal",
+   "texto": "El Cliente responde de los daños que causen él, sus invitados y sus proveedores en las instalaciones, el mobiliario, los jardines y los equipos de la Finca, salvo el desgaste normal por el uso. [Para cubrirlos, el Cliente entrega una fianza de [importe] € junto con el segundo pago. La Finca la devuelve en un plazo de [7] días tras el evento, una vez revisadas las instalaciones, descontando, con justificación y presupuesto, el coste de los daños y de la limpieza extraordinaria. Si los daños superan la fianza, el Cliente abona la diferencia.] [Si no hay fianza, esta cláusula queda limitada al primer párrafo.]"
+  },
+  {
+   "i": 73,
+   "estilo": "H2",
+   "texto": "Decimosexta · Plan B por lluvia"
+  },
+  {
+   "i": 74,
+   "estilo": "Normal",
+   "texto": "La lluvia no es causa de fuerza mayor ni da derecho a cancelar sin consecuencias, porque se puede prever y la Finca tiene resuelto el problema. La Finca garantiza un espacio cubierto, [carpa, pérgola o salón], con capacidad para todos los invitados del mínimo garantizado, y lo prepara sin coste adicional para el Cliente. El Cliente y la Finca deciden el plan A o el plan B a más tardar [a las 10:00 h del día del evento] o con la antelación que exija el montaje de la ceremonia al aire libre. En caso de duda, decide la Finca por razones de seguridad."
+  },
+  {
+   "i": 75,
+   "estilo": "H2",
+   "texto": "Decimoséptima · Fuerza mayor"
+  },
+  {
+   "i": 76,
+   "estilo": "Normal",
+   "texto": "Ninguna de las partes responde del incumplimiento si se debe a un suceso imprevisible o inevitable en los términos del artículo 1105 del Código Civil, como una prohibición de la autoridad que impida celebrar el evento, un incendio, una inundación o una alerta meteorológica oficial de riesgo que prohíba reunirse. En ese caso las partes intentarán primero un cambio de fecha sin recargo dentro de los [12] meses siguientes. Si no se logra, la Finca devuelve todo lo cobrado, descontando únicamente los gastos ya soportados y justificados por encargo del Cliente, y ninguna de las partes debe indemnización a la otra."
+  },
+  {
+   "i": 77,
+   "estilo": "H2",
+   "texto": "Decimoctava · Seguros"
+  },
+  {
+   "i": 78,
+   "estilo": "Normal",
+   "texto": "La Finca declara que tiene contratado un seguro de responsabilidad civil de la actividad que cubre los daños a los asistentes y a terceros durante el evento, y facilitará la póliza al Cliente si se lo pide. Ese seguro no cubre los objetos personales de los invitados ni los bienes de los proveedores del Cliente. El Cliente puede contratar, si lo desea, un seguro de anulación del evento por su cuenta."
+  },
+  {
+   "i": 79,
+   "estilo": "H2",
+   "texto": "Decimonovena · Alérgenos y seguridad alimentaria"
+  },
+  {
+   "i": 80,
+   "estilo": "Normal",
+   "texto": "La seguridad alimentaria, la información de alérgenos y la comida testigo de lo que se sirve corresponden al Catering, que contrata el menú directamente con el Cliente (cláusula primera). El Cliente comunicará al Catering las alergias e intolerancias de sus invitados en el recuento final. La Finca facilita la cocina o el office que el Catering utiliza, pero no elabora ni sirve alimentos."
+  },
+  {
+   "i": 81,
+   "estilo": "H2",
+   "texto": "Vigésima · Datos personales e imagen"
+  },
+  {
+   "i": 82,
+   "estilo": "Normal",
+   "texto": "La Finca tratará los datos personales del Cliente para gestionar este contrato, emitir las facturas y cumplir sus obligaciones legales, y los conservará mientras exista una relación o una obligación de conservarlos. El Cliente puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad en [correo electrónico]. Responsable: [datos de la Finca]."
+  },
+  {
+   "i": 83,
+   "estilo": "Normal",
+   "texto": "Si la Finca quiere usar fotografías o vídeos del evento en su web o en redes sociales, el Cliente decide aparte, en un consentimiento separado, que puede dar o no sin que afecte a este contrato: [ ] Sí autorizo   [ ] No autorizo. Aun si autoriza, puede retirar el consentimiento por escrito cuando quiera."
+  },
+  {
+   "i": 84,
+   "estilo": "H2",
+   "texto": "Vigesimoprimera · Jurisdicción"
+  },
+  {
+   "i": 85,
+   "estilo": "Normal",
+   "texto": "Para cualquier controversia derivada de este contrato, las partes se someten a los juzgados y tribunales del domicilio del consumidor, conforme al artículo 90.2 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios."
+  },
+  {
+   "i": 86,
+   "estilo": "Normal",
+   "texto": "Y en prueba de conformidad, firman este contrato por duplicado y a un solo efecto, en el lugar y la fecha del encabezamiento."
+  },
+  {
+   "i": 87,
+   "estilo": "Firma",
+   "texto": "La Finca: __________________________        El Cliente: __________________________"
+  },
+  {
+   "i": 88,
+   "estilo": "Firma",
+   "texto": "NIF/CIF: ______________        DNI/NIE: ______________"
+  },
+  {
+   "i": 89,
+   "estilo": "Separador",
+   "texto": ""
+  },
+  {
+   "i": 90,
+   "estilo": "H1",
+   "texto": "Anexo · Condiciones para empresas"
+  },
+  {
+   "i": 91,
+   "estilo": "Kicker",
+   "texto": "PARA EVENTOS CORPORATIVOS, AGENCIAS, ASOCIACIONES Y OTROS CLIENTES PROFESIONALES"
+  },
+  {
+   "i": 92,
+   "estilo": "Normal",
+   "texto": "Este anexo sustituye o completa el modelo anterior cuando quien contrata es una empresa, una agencia, un autónomo o una entidad que actúa en el ámbito de su actividad. En ese caso no hay protección de consumidores, y las partes pactan libremente lo que sigue. El resto del contrato (objeto, licencias, mínimo garantizado, horarios, ruido, aforo, proveedores, daños, plan B, seguros, alérgenos) se mantiene igual."
+  },
+  {
+   "i": 93,
+   "estilo": "List Bullet",
+   "texto": "**Partes y datos fiscales.** El Cliente identifica su razón social, CIF, domicilio fiscal, la persona que firma, su cargo y su poder de representación, y el correo para facturas. La Finca factura cada cobro con esos datos fiscales y, si hay orden de compra, con su número."
+  },
+  {
+   "i": 94,
+   "estilo": "List Bullet",
+   "texto": "**Calendario de pagos.** Reserva: **30 %** a la firma. Segundo pago: **30 %** a 60 días del evento. Liquidación: **40 %** a 15 días del evento. Una factura por cada cobro, con el IVA del 21 % desglosado sobre el precio de la Finca. Los retrasos devengan los intereses de demora que la ley permite en operaciones entre empresas, sin necesidad de reclamación previa."
+  },
+  {
+   "i": 95,
+   "estilo": "List Bullet",
+   "texto": "**Cancelación.** La Finca retiene sobre el precio total con IVA: con 12 meses o más de antelación, **5 %**; de 6 meses a menos de 12, **15 %**; de 3 meses a menos de 6, **35 %**; de 1 mes a menos de 3, **60 %**; con menos de 1 mes, **100 %**. Si lo cobrado supera el porcentaje retenido, la Finca devuelve la diferencia; si es menos, el Cliente la abona."
+  },
+  {
+   "i": 96,
+   "estilo": "List Bullet",
+   "texto": "**Cancelación por la Finca.** Devuelve todo lo cobrado. La indemnización adicional es la pactada en este anexo: [la misma cantidad que habría retenido en ese tramo / un importe fijo de [importe] €]."
+  },
+  {
+   "i": 97,
+   "estilo": "List Bullet",
+   "texto": "**Cambios de fecha, fuerza mayor, recuento y mínimo garantizado.** Se aplican las mismas reglas que a los particulares, con el recuento final [10] días antes del evento. Los cambios de fecha dentro de los [12] meses siguientes no tienen recargo si se piden con 3 meses o más de antelación."
+  },
+  {
+   "i": 98,
+   "estilo": "List Bullet",
+   "texto": "**Condiciones de la empresa.** Las condiciones generales del Cliente (órdenes de compra, códigos de proveedor, políticas internas) solo valen si la Finca las acepta por escrito. Las partes mantienen la confidencialidad sobre el contenido de los eventos y la información comercial que se intercambien."
+  },
+  {
+   "i": 99,
+   "estilo": "List Bullet",
+   "texto": "**Jurisdicción.** Las partes se someten a los juzgados y tribunales de [ciudad] con renuncia a cualquier otro fuero que les pudiera corresponder."
+  },
+  {
+   "i": 100,
+   "estilo": "Firma",
+   "texto": "La Finca: __________________________        La empresa: __________________________"
+  },
+  {
+   "i": 101,
+   "estilo": "Firma",
+   "texto": "NIF/CIF: ______________        CIF: ______________        Cargo: ______________"
+  }
+ ]
+}

@@ -1,0 +1,350 @@
+{
+ "tanda": "contrato_2",
+ "salida": "scripts/productos-digitales/business-plans-en-9/textos_en/contrato_en_2.json",
+ "formato_salida": "[{\"estilo\": \"<uno de Kicker, Title, Subtitle, H1, H2, Normal, List Bullet, Separador, Firma>\", \"texto\": \"<EN>\"}, …] en el orden del documento; puedes añadir, quitar o reordenar párrafos dentro de tu parte",
+ "parte": "Modelo 2 · catering exclusivo",
+ "n_parrafos_es": 48,
+ "n_palabras_es": 1419,
+ "cabecera_fija (solo parte 1, literal)": null,
+ "reglas": [
+  "Inglés de EE. UU., registro de contrato claro (plain English), segunda persona NO: «the Venue», «the Client», «the Caterer». Corchetes [ ] para TODO lo editable (nombres, fechas, importes, plazos, porcentajes por defecto, estado, condado): «[State]», «[14] days», «[25]%», «$[amount]». CERO cifras del caso del kit (ventas, invitados, precios por invitado) y cero cifras del ES.",
+  "Mismos estilos que el ES (Kicker, Title, Subtitle, H1, H2, Normal, List Bullet, Separador, Firma); «**negrita**» dentro del texto como en el ES. Puedes añadir, quitar o reordenar párrafos dentro de tu parte: NO es una traducción 1:1 (SPEC D171).",
+  "Nada de derecho español: ni TRLGDCU, LAU, Código Civil, IVA, «señal/arras», «fuero del consumidor», SGAE, comida testigo, Ley 15/2015, «finca», «canon», NIF/CIF/DNI (las firmas: «Name», «Title», «Date», «Signature»).",
+  "Jerga (research §9, glosario adjunto): venue rental fee / site fee · retainer (aplicado al precio) · security deposit (refundable, itemized) · guaranteed guest count · final headcount · venue coordinator · setup / load-out · rain plan · maximum occupancy (posted by the fire marshal) · outside vendors · COI / additional insured · host liquor liability · exclusive caterer · caterer commission · service charge vs. gratuity · 9 major food allergens.",
+  "NUNCA «non-refundable» / «nonrefundable» solo: el retainer se aplica al precio y lo que se retiene al cancelar lo fija SOLO la tabla de cancelación; si lo mencionas, en el mismo párrafo remite a esa tabla (el check lo exige).",
+  "FTC Cooling-Off Rule (decisión de orquestador 2): la regla excluye los arrendamientos de inmuebles, así que NO se afirma que aplique a un contrato de venue. Forma permitida, como nota de redacción entre corchetes: «[Drafting note: if you sign couples at bridal shows or off-site, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway.]» y, si quieres, una cláusula OPCIONAL entre corchetes con esa ventana de cancelación. Nada de «16 CFR 429 applies» ni «you have a legal right under federal law».",
+  "Lo marcado «(resumen)» en research (California Civ. Code §1671, NY A20-51S, Missouri, Wisconsin, 40 CFR 141.2) NO se cita (decisión de orquestador 4): «a reasonable estimate of the Venue's loss, not a penalty» sin citar el código; reglas de alcohol y de sales tax «under [State] law» / «as your state requires».",
+  "Unidades y formatos US: $1,000.00, mm/dd/yyyy, «business days». Sin emojis, sin caracteres no latinos, sin español."
+ ],
+ "decisiones_D171": [
+  "MODELO 2 → H1 «Model 2 · Exclusive Caterer Agreement» + Kicker «BETWEEN THE VENUE AND THE CATERER THAT WORKS IT EXCLUSIVELY». Es B2B: «the Venue» y «the Caterer».",
+  "Objeto y exclusividad (excepción: la tarta de una bakery con licencia, con su COI) · contratación y facturación DIRECTA del Caterer a la pareja con su sales tax; service charge vs. gratuity a cargo del Caterer (qué es cada uno, dicho al cliente por escrito) · «Caterer commission»: [10]% of food & beverage sales at the Venue, net of sales tax, service charge and gratuities; statement mensual en [10] días, derecho de auditoría con [15] días de aviso, mínimo anual opcional $[amount] (nunca «canon» ni «royalty»).",
+  "Uso de la prep & warming kitchen del Venue: el Caterer mantiene su health permit y su plan de seguridad alimentaria y deja la cocina como la encontró · la «comida testigo» del ES SE QUITA (no es norma US) · alérgenos: «the major food allergens as defined by federal law and your state or local rules», por escrito en cada menú · personal W-2 del Caterer (FLSA, I-9), sin relación laboral con el Venue.",
+  "Seguros: liquor license / catering permit del Caterer + liquor liability $[1,000,000] + general liability + workers' comp + commercial auto, con el Venue como additional insured · horarios, limpieza, residuos y grasa (FOG) · menús mínimos y tasting · plazo y renovación, resolución por incumplimiento con aviso de [30] días · entrega de la cocina al terminar · governing law (B2B): «[State] law; courts of [County]». Firmas «Venue: ____ Caterer: ____»."
+ ],
+ "glosario": {
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "carencia": "interest-only period",
+  "fondo de maniobra": "working capital",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable input tax",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "finca de eventos": "wedding venue / event venue (tipos: barn venue, estate venue, farm venue, banquet hall)",
+  "alquiler del espacio": "venue rental fee / site fee (+ «venue fee» si es % de F&B)",
+  "catering exclusivo · homologados": "exclusive caterer · preferred vendor list · in-house catering",
+  "canon del catering": "caterer commission (% of F&B) / exclusivity fee (nunca «canon» ni «royalty»)",
+  "invitados · recuento final": "guests · guest count · final headcount (due X days before)",
+  "mínimo garantizado": "guaranteed guest count · food & beverage minimum (del caterer)",
+  "señal / reserva": "retainer (aplicado al precio) · booking deposit; «non-refundable» solo con la tabla de cancelación",
+  "fianza por daños": "security deposit / damage deposit (refundable, itemized)",
+  "barra libre · resopón": "open bar / hosted bar (del caterer) · late-night snack",
+  "coordinación del día": "venue coordinator (del venue) ≠ day-of coordinator (de la pareja)",
+  "montaje y recogida": "setup / teardown (breakdown) · load-in / load-out",
+  "plan B de lluvia": "rain plan / inclement-weather plan (tent backup)",
+  "aforo": "maximum occupancy / occupant load (lo fija el fire marshal)",
+  "calificación urbanística / licencia de actividad": "zoning approval: conditional (special) use permit · certificate of occupancy (assembly, Group A-2)",
+  "prueba de menú": "tasting",
+  "visitas · jornada de puertas abiertas": "venue tours / site visits · open house",
+  "temporada alta / media / baja": "peak / shoulder / off-peak (off-season)",
+  "preboda · boda íntima · cena de la víspera": "rehearsal · micro wedding / elopement · rehearsal dinner",
+  "suite de novios": "bridal suite · groom's lounge",
+  "proveedores externos": "outside vendors · outside catering fee · cake-cutting fee · corkage fee",
+  "portales de bodas": "The Knot / WeddingWire storefront (listing) · venue marketplaces (Peerspace)",
+  "seguro RC · certificado": "general liability · host liquor liability · event insurance · COI / additional insured",
+  "fijo discontinuo": "seasonal employee (W-2)",
+  "grupo electrógeno · limitador": "standby generator · decibel limit / sound meter, music curfew",
+  "aseos adaptados · saneamiento · pozo": "ADA-compliant restrooms · septic system · well (public water system)",
+  "software de reservas": "venue management software (Tripleseat, Perfect Venue, HoneyBook)",
+  "invitado / ticket / días": "guests · revenue per guest · events per year (nunca «covers» ni «average check»)",
+  "dossier": "wedding brochure / pricing guide",
+  "(e) finca": "venue (o «property» para el inmueble)",
+  "(e) canon": "caterer commission",
+  "(e) IVA": "sales tax",
+  "(e) calificación urbanística/licencia": "CUP + certificate of occupancy",
+  "(e) autoprotección": "fire code, occupant load, sprinklers",
+  "(e) comida testigo": "no aplica (eliminar)",
+  "(e) 14 alérgenos": "9 major allergens (caterer)",
+  "(e) fijos discontinuos": "seasonal W-2",
+  "(e) TRLGDCU / fuero del consumidor": "state consumer law; governing law & venue clause",
+  "(e) arras / señal": "retainer",
+  "(e) SL / autónomo": "LLC",
+  "(e) gestoría": "CPA / bookkeeper",
+  "(e) ayuntamiento / comunidad": "county / state",
+  "(e) SGAE": "ASCAP/BMI/SESAC",
+  "(e) ceremonia civil (Ley 15/2015)": "el venue acoge; licencia (county clerk) y officiant según el estado"
+ },
+ "verificacion": "python3 scripts/productos-digitales/business-plans-en-9/bp9.py check_contrato --parte 2",
+ "es": [
+  {
+   "i": 102,
+   "estilo": "Separador",
+   "texto": ""
+  },
+  {
+   "i": 103,
+   "estilo": "H1",
+   "texto": "Modelo 2 · Condiciones del catering exclusivo de la finca (concesión)"
+  },
+  {
+   "i": 104,
+   "estilo": "Kicker",
+   "texto": "CONTRATO ENTRE LA FINCA Y EL CATERING QUE TRABAJA EN ELLA EN EXCLUSIVA"
+  },
+  {
+   "i": 105,
+   "estilo": "Normal",
+   "texto": "En [ciudad], a [fecha]."
+  },
+  {
+   "i": 106,
+   "estilo": "H2",
+   "texto": "Reunidos"
+  },
+  {
+   "i": 107,
+   "estilo": "Normal",
+   "texto": "De una parte, [razón social de la finca], con NIF/CIF [número] y domicilio en [dirección], representada por [nombre y cargo] (en adelante, la «Finca»)."
+  },
+  {
+   "i": 108,
+   "estilo": "Normal",
+   "texto": "De otra parte, [razón social del catering], con NIF/CIF [número] y domicilio en [dirección], representada por [nombre y cargo] (en adelante, el «Catering»)."
+  },
+  {
+   "i": 109,
+   "estilo": "H2",
+   "texto": "Primera · Objeto y exclusividad"
+  },
+  {
+   "i": 110,
+   "estilo": "Normal",
+   "texto": "La Finca concede al Catering, durante la vigencia de este contrato, el derecho exclusivo de servir el menú y la barra en todos los eventos que se celebren en la finca [nombre y dirección]. La Finca no permitirá otro catering en sus instalaciones, ni aceptará eventos con servicio de comida o bebida que no sea el del Catering."
+  },
+  {
+   "i": 111,
+   "estilo": "Normal",
+   "texto": "Excepciones pactadas: [la tarta nupcial o los dulces de un obrador elegido por el Cliente, siempre que presente su registro sanitario y su trazabilidad y que el Cliente asuma su responsabilidad; las bebidas que el Cliente aporte y la Finca autorice por escrito; otras, [especificar]]. En cada excepción, el Catering se limita a servir y no responde del producto aportado por el Cliente."
+  },
+  {
+   "i": 112,
+   "estilo": "H2",
+   "texto": "Segunda · Contratación y facturación directa"
+  },
+  {
+   "i": 113,
+   "estilo": "Normal",
+   "texto": "El Catering contrata con el Cliente el menú y la barra, y le factura directamente su importe, con el IVA que corresponda ([10] % en la restauración y los servicios de catering, salvo que la normativa disponga otro tipo; el Catering lo confirma con su asesoría). La Finca no interviene en ese precio ni en su cobro, y no responde de él. La Finca factura al Cliente su espacio y sus servicios, con el IVA del 21 %."
+  },
+  {
+   "i": 114,
+   "estilo": "Normal",
+   "texto": "La Finca informa al Catering de cada reserva en un plazo de [3] días y le facilita los datos de contacto del Cliente. El Catering envía su presupuesto en [5] días. Si el Cliente no contrata con el Catering, la Finca no puede cerrar el evento sin el menú, salvo pacto expreso."
+  },
+  {
+   "i": 115,
+   "estilo": "H2",
+   "texto": "Tercera · Canon a favor de la Finca"
+  },
+  {
+   "i": 116,
+   "estilo": "Normal",
+   "texto": "A cambio de la exclusividad y del uso de las instalaciones, el Catering paga a la Finca un canon del [12] % sobre el importe sin IVA que facture a los clientes de los eventos celebrados en la finca. El 12 % es un supuesto del kit: negócialo según el valor del espacio, la inversión de cada parte y el volumen de eventos."
+  },
+  {
+   "i": 117,
+   "estilo": "List Bullet",
+   "texto": "**Liquidación mensual.** Antes del día [10] de cada mes, el Catering envía a la Finca un resumen de lo facturado el mes anterior por evento, con fecha, cliente, base imponible y número de factura."
+  },
+  {
+   "i": 118,
+   "estilo": "List Bullet",
+   "texto": "**Factura del canon.** La Finca emite la factura del canon al Catering, con el IVA del 21 % desglosado, y el Catering la paga en [15] días."
+  },
+  {
+   "i": 119,
+   "estilo": "List Bullet",
+   "texto": "**Derecho de auditoría.** La Finca puede comprobar la facturación del Catering con aviso previo de [7] días, revisando las facturas de los eventos celebrados en la finca y sus cobros, una vez al trimestre como máximo. Si aparecen diferencias a favor de la Finca superiores al [3] %, el Catering paga el canon que falte, con los intereses de demora, y el coste de la auditoría."
+  },
+  {
+   "i": 120,
+   "estilo": "List Bullet",
+   "texto": "**Mínimo anual (opcional).** [El canon no puede ser inferior a [importe] € al año; si se queda por debajo, el Catering abona la diferencia al cerrar el año.]"
+  },
+  {
+   "i": 121,
+   "estilo": "H2",
+   "texto": "Cuarta · Uso del office o de la cocina de la Finca"
+  },
+  {
+   "i": 122,
+   "estilo": "Normal",
+   "texto": "La Finca pone a disposición del Catering [el office, la cocina, las cámaras de frío, la zona de lavado y el almacén] en los días y horas de cada evento. El Catering:"
+  },
+  {
+   "i": 123,
+   "estilo": "List Bullet",
+   "texto": "inscribe su actividad en el registro sanitario que corresponda en su comunidad autónoma, también para esta instalación, y entrega a la Finca copia de la inscripción antes de su primer evento;"
+  },
+  {
+   "i": 124,
+   "estilo": "List Bullet",
+   "texto": "responde de su sistema de APPCC (análisis de peligros y puntos de control crítico), lo mantiene al día y lo aplica en todos los eventos;"
+  },
+  {
+   "i": 125,
+   "estilo": "List Bullet",
+   "texto": "usa las instalaciones con diligencia, no las modifica ni instala equipos sin permiso, y asume el coste de reparar lo que dañe."
+  },
+  {
+   "i": 126,
+   "estilo": "Normal",
+   "texto": "La Finca conserva el mantenimiento general de las instalaciones, los suministros de agua, luz y gas, y su limpieza estructural."
+  },
+  {
+   "i": 127,
+   "estilo": "H2",
+   "texto": "Quinta · Comida testigo"
+  },
+  {
+   "i": 128,
+   "estilo": "Normal",
+   "texto": "En cada evento el Catering guarda una comida testigo de acuerdo con el artículo 30 del Real Decreto 1086/2020: una ración de cada comida servida, de al menos 100 gramos, conservada a 4 °C o menos, o a −18 °C o menos, durante 7 días, y etiquetada con la fecha y el evento. La guarda quien sirve la comida, es decir, el Catering, y la pone a disposición de la autoridad sanitaria y de la Finca si lo piden."
+  },
+  {
+   "i": 129,
+   "estilo": "H2",
+   "texto": "Sexta · Alérgenos"
+  },
+  {
+   "i": 130,
+   "estilo": "Normal",
+   "texto": "El Catering entrega al Cliente, por escrito y antes del evento, la información sobre los 14 alérgenos de declaración obligatoria presentes en cada plato, de acuerdo con el Reglamento (UE) 1169/2011 y el Real Decreto 126/2015. También la tiene disponible en el servicio para los invitados que la pidan. Recoge las alergias e intolerancias comunicadas en el recuento final y adapta los platos cuando es posible. El Catering responde de esta información y de su veracidad."
+  },
+  {
+   "i": 131,
+   "estilo": "H2",
+   "texto": "Séptima · Personal"
+  },
+  {
+   "i": 132,
+   "estilo": "Normal",
+   "texto": "El personal del Catering (cocina, sala y barra) es contratado, dirigido y pagado por el Catering, con el convenio colectivo que le corresponda, su alta en la Seguridad Social y su formación en seguridad alimentaria. No existe relación laboral entre ese personal y la Finca. El Catering mantiene la plantilla suficiente para el servicio y para la limpieza de lo que ensucie, y se hace responsable de sus actuaciones."
+  },
+  {
+   "i": 133,
+   "estilo": "H2",
+   "texto": "Octava · Seguros"
+  },
+  {
+   "i": 134,
+   "estilo": "Normal",
+   "texto": "El Catering mantiene vigente un seguro de responsabilidad civil y de intoxicación alimentaria que cubre su actividad en la finca, en el que la Finca consta como asegurada adicional. Entrega copia de la póliza y del último recibo al firmar este contrato y cada vez que se renueve. Si el Catering no mantiene el seguro, la Finca puede suspender su actividad hasta que lo recupere."
+  },
+  {
+   "i": 135,
+   "estilo": "H2",
+   "texto": "Novena · Horarios, limpieza y residuos"
+  },
+  {
+   "i": 136,
+   "estilo": "List Bullet",
+   "texto": "Horarios: el Catering accede al office desde las [hora] y termina la recogida antes de las [hora] del día siguiente, ajustándose al horario del evento que fija la Finca."
+  },
+  {
+   "i": 137,
+   "estilo": "List Bullet",
+   "texto": "Limpieza: tras cada evento el Catering deja el office, la cocina y la zona de barra limpios y desinfectados, y la vajilla, la cristalería y los equipos recogidos."
+  },
+  {
+   "i": 138,
+   "estilo": "List Bullet",
+   "texto": "Residuos: el Catering retira sus residuos orgánicos y envases en cada evento, y gestiona el aceite usado con un gestor autorizado, con justificante a disposición de la Finca. No se vierte aceite por los desagües ni a la fosa."
+  },
+  {
+   "i": 139,
+   "estilo": "H2",
+   "texto": "Décima · Precios mínimos de menú, calidad y prueba de menú"
+  },
+  {
+   "i": 140,
+   "estilo": "Normal",
+   "texto": "El Catering ofrece al menos [tres] menús con un precio mínimo de [importe] € por persona sin IVA, con una calidad coherente con la imagen de la Finca. Ofrece una prueba de menú a los clientes que lo piden, [gratuita para el menú de boda con un mínimo de [número] invitados]. La Finca puede pedir cambios si recibe quejas repetidas de clientes sobre calidad o servicio, y el Catering los hace en un plazo de [30] días."
+  },
+  {
+   "i": 141,
+   "estilo": "H2",
+   "texto": "Undécima · Duración, prórrogas y resolución"
+  },
+  {
+   "i": 142,
+   "estilo": "Normal",
+   "texto": "Este contrato dura [3] años desde el [fecha] y se prorroga por periodos de [1] año si ninguna parte avisa a la otra con [3] meses de antelación. Cualquiera de las partes puede resolverlo si la otra incumple una obligación esencial (impago del canon, pérdida de la inscripción sanitaria, falta de seguro, grave incumplimiento de seguridad alimentaria, pérdida de las licencias de la Finca) y no lo corrige en [15] días tras un requerimiento por escrito. Los eventos ya contratados antes de la resolución se atienden hasta su fin, salvo que lo impida la causa de resolución."
+  },
+  {
+   "i": 143,
+   "estilo": "H2",
+   "texto": "Duodécima · Entrega del office al terminar"
+  },
+  {
+   "i": 144,
+   "estilo": "Normal",
+   "texto": "Al terminar el contrato, el Catering entrega el office, la cocina y las instalaciones en buen estado, salvo el desgaste normal, retira sus equipos y su stock en un plazo de [15] días y liquida los cánones pendientes. La Finca devuelve la fianza que, en su caso, hubiera recibido, descontando lo que se deba."
+  },
+  {
+   "i": 145,
+   "estilo": "H2",
+   "texto": "Decimotercera · Jurisdicción"
+  },
+  {
+   "i": 146,
+   "estilo": "Normal",
+   "texto": "Las partes se someten a los juzgados y tribunales de [ciudad], con renuncia a cualquier otro fuero que les pudiera corresponder."
+  },
+  {
+   "i": 147,
+   "estilo": "Normal",
+   "texto": "Y en prueba de conformidad, firman este contrato por duplicado y a un solo efecto, en el lugar y la fecha del encabezamiento."
+  },
+  {
+   "i": 148,
+   "estilo": "Firma",
+   "texto": "La Finca: __________________________        El Catering: __________________________"
+  },
+  {
+   "i": 149,
+   "estilo": "Firma",
+   "texto": "NIF/CIF: ______________        NIF/CIF: ______________"
+  }
+ ]
+}

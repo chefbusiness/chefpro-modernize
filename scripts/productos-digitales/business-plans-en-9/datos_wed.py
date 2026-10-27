@@ -1022,8 +1022,14 @@ def valores_wed(M):
     return v
 
 
-# Calibración D15 (D160: palancas en su orden; máx. 3 vueltas). Cada celda, citada en F2-NOTAS.md (G7)
-CALIBRACION_D15 = OrderedDict()
+# Calibración D15 (D160: palancas en su orden; máx. 3 vueltas). Cada celda, citada en F2-NOTAS.md (G7). Vuelta 0 (research
+# §8 tal cual): préstamo $470,000, holgura 19.8 %, DSCR mín 1.86, saldo mín $66,103, cobertura 119 %, neto 8.9 % / 14.2 %,
+# exceso de fondos 0.04 % → todo VERDE salvo el semáforo del margen bruto: el caso da 83.4 % (variables 16.6 %, las de
+# research §8) frente al umbral de D165 (85 %, Kit sin fuente). Vuelta 1 (única): el umbral, no el caso
+CALIBRACION_D15 = OrderedDict([
+    (('WEDP', _P, 'E51'), (0.80, 'D165: margen bruto del caso 83.4 % (variables 16.6 % de research §8) < 85 % → umbral 80 % '
+                               '(el del ES; Kit estimate, sin fuente)')),
+])
 
 
 def formulas_wed():

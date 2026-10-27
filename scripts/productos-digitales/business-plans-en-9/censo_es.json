@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:25:07Z",
+  "generado": "2026-10-27T07:26:06Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-finca-eventos-bodas"
   ],
-  "commit": "28cc2369",
+  "commit": "16b01f7a",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
