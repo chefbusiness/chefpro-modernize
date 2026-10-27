@@ -1,0 +1,2316 @@
+{
+ "meta": {
+  "generado": "2026-10-27T07:22:23+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "wed",
+  "fichero_es": "astro-site/public/dl/plan-negocio-finca-eventos-bodas/plan-de-negocio-finca-eventos-bodas.docx",
+  "sha256": "986b8b238838fa20528a30426663f62bbadb846812a34f00511256149da57ab5",
+  "fichero_en": "astro-site/public/dl/wedding-venue-business-plan/wedding-venue-business-plan.docx",
+  "titulo_en": "Wedding Venue Business Plan (10 Sections)",
+  "n_parrafos": 131,
+  "n_con_texto": 110,
+  "n_sin_runs": 17,
+  "n_un_run": 114,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 121,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 61,
+   "vacio": 21,
+   "fijo": 18,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 61,
+  "palabras_traducir": 6622,
+  "tandas": {
+   "wed_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     46,
+     47,
+     48,
+     49,
+     50,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "palabras": 3071
+   },
+   "wed_b": {
+    "parrafos": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117
+    ],
+    "palabras": 3551
+   }
+  },
+  "pagina_emu": [
+   7560310,
+   10692130
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average guests per event, year 1 (mix of weddings, corporate events, private celebrations and micro weddings)",
+   "clientes_a2": "average guests per event, year 2 (growth is modeled on guests per event = events in dollars)",
+   "clientes_a3": "average guests per event, year 3",
+   "ticket": "average revenue per guest to the VENUE, excl. sales tax (venue rental & services + caterer commission; NOT what the couple pays for the whole wedding)",
+   "precio_menu": "average revenue per guest to the venue, incl. sales tax",
+   "dias": "events per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate on venue rental & services",
+   "impuesto_beneficios": "effective income tax rate",
+   "consumibles_pct": "event consumables, % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time ($7.25/h)",
+   "alquiler_mes": "rent per month (leased property with an existing barn)",
+   "suministros_mes": "utilities per month (power, propane, water, internet & trash)",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of leasehold improvements (the barn conversion), years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "rent per year",
+   "ocupacion_pct": "rent, % of sales",
+   "marketing_anual": "marketing per year (The Knot/WeddingWire storefronts, Google Ads, social)",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even guests per event at the planned number of events (accounting, depreciation in)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even guests per event (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: guests per event",
+   "optimista_clientes": "optimistic scenario: guests per event",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "pesimista_ticket": "pessimistic scenario: revenue per guest excl. sales tax",
+   "optimista_ticket": "optimistic scenario: revenue per guest excl. sales tax",
+   "pesimista_dias": "pessimistic scenario: events per year",
+   "optimista_dias": "optimistic scenario: events per year",
+   "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
+   "inv_proyecto": "architect, engineer and code consultant (change of occupancy drawings)",
+   "inv_cup": "conditional use permit, zoning hearing, traffic and septic studies, permit fees",
+   "inv_reforma": "barn renovation: floor, doors, insulation, fixtures and paint",
+   "inv_sprinklers": "fire sprinkler system (city water; a tank and fire pump cost more)",
+   "inv_ceremonia": "ceremony site: pergola, tent platform and ceremony seating",
+   "inv_aseos": "ADA-compliant restrooms (septic upgrade quoted apart)",
+   "inv_electrica": "electrical service, exterior, exit and emergency lighting",
+   "inv_generador": "standby generator",
+   "inv_hvac": "HVAC for the hall",
+   "inv_office": "caterer's prep and warming kitchen",
+   "inv_mobiliario": "tables, chairs for 200 and base linens",
+   "inv_suite": "bridal suite and groom's lounge furnishings and decor",
+   "inv_sonido": "sound system, decibel meter and lighting",
+   "inv_parking": "parking lot, driveway, signage and lighting",
+   "inv_jardin": "landscaping, lawn and irrigation",
+   "inv_pci": "fire alarm, extinguishers, exit signs and ADA accessible routes",
+   "inv_marca": "website, photography, video and brand",
+   "inv_llc": "LLC formation and attorney (lease and contracts)",
+   "inv_lanzamiento": "launch: bridal shows, open house and listing storefronts",
+   "inv_fianza": "lease security deposit",
+   "inv_renta_previa": "rent paid during permitting and build-out",
+   "inv_imprevistos": "build-out contingency (a % of the build-out items, by formula)",
+   "base_obra": "depreciable leasehold improvements (build-out items + contingency)",
+   "base_equipo": "depreciable furniture and equipment",
+   "aforo": "seated capacity of the hall (the occupant load is set by the fire marshal)",
+   "espacio_pct": "venue rental & event services, % of sales",
+   "comision_caterer_pct": "caterer commission, % of the venue's sales",
+   "coste_directo_pct": "direct event cost, % of venue rental & services",
+   "intermediarios_pct": "share of sales booked through planners and venue marketplaces",
+   "comision_intermediarios_pct": "commission paid to planners and venue marketplaces on those bookings",
+   "varios_pct": "miscellaneous and contingency, % of sales",
+   "meses_alquiler_previo": "months of rent paid before opening (permits and build-out)",
+   "imprevistos_obra_pct": "build-out contingency, % of the build-out items",
+   "ventas_espacio_a1": "venue rental & event services revenue, year 1",
+   "comision_caterer_a1": "caterer commission revenue, year 1",
+   "comision_caterer_a3": "caterer commission revenue, year 3",
+   "coste_directo_a1": "direct event costs, year 1",
+   "comisiones_intermediarios_a1": "commissions to planners and venue marketplaces, year 1",
+   "ferias_anual": "bridal shows and open houses per year",
+   "coste_directo_ventas_pct": "direct event costs, % of total sales, year 1",
+   "margen_neto_a2": "net margin year 2",
+   "margen_neto_a3": "net margin year 3",
+   "horas_evento": "hours of event-day work to cover per event",
+   "personas_evento": "venue staff needed at the same time on an event day",
+   "horas_estructura": "hours of off-day work per event (tours, setup, turnover)",
+   "sueldo_titular": "owner's gross pay per month",
+   "holgura_caja_a2": "margin of safety over cash break-even, year 2",
+   "holgura_caja_a3": "margin of safety over cash break-even, year 3",
+   "dscr_a2": "DSCR year 2",
+   "dscr_a3": "DSCR year 3",
+   "exceso_fondos_pct": "funding surplus over the cash needed (sources − uses), %",
+   "ingreso_evento": "average venue revenue per event, year 1 (excl. sales tax)",
+   "invitados_ano": "guests per year, year 1",
+   "equilibrio_eventos": "break-even in events of the average size (accounting)",
+   "equilibrio_caja_eventos": "cash break-even in events of the average size",
+   "eventos_equivalentes_a2": "year-2 revenue expressed in events of the year-1 average size",
+   "eventos_equivalentes_a3": "year-3 revenue expressed in events of the year-1 average size",
+   "costes_variables_pct": "all variable costs year 1 (direct event cost + consumables + commissions + card fees + contingency), % of sales",
+   "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount (only if it is a loss)"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Finca de Eventos y Bodas",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Wedding & Event Venue"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, análisis de mercado,\nestrategia operativa y checklist de apertura\npara montar una finca de eventos y bodas con catering exclusivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and startup checklist\nto open a wedding and event venue in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Versión 1.0 · noviembre 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoría Gastronómica con fines informativos y orientativos. Las cifras salen del Excel del plan financiero que lo acompaña, con un caso de ejemplo que debes sustituir por el tuyo; la normativa urbanística y de espectáculos varía de una comunidad a otra y debes confirmarla en tu ayuntamiento y tu comunidad; las fuentes de los datos de mercado y de las normas se citan en el texto. Los resultados reales pueden variar. No constituye asesoramiento financiero, legal ni fiscal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "ÍNDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist de Apertura Excel + Calculadora de Presupuesto del Espacio + Modelos de Contrato + Guía de Equivalencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Excel Financial Plan + Startup Checklist + Pricing Calculator + Rental Agreement Templates + Equivalents Guide"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "Este plan describe una finca de eventos y bodas en una finca arrendada con edificaciones existentes: una casa o masía, un jardín, un salón y, si el clima lo pide, una carpa como plan B, con aforo para 300 personas. La finca no se compra, se arrienda, y la comida la sirve un catering exclusivo concesionado que paga un canon. Tú vendes el espacio y los servicios del evento, con IVA del 21 %, que suponen el 78 % de las ventas (283.982 €). El catering factura el menú y la barra directamente al cliente, con IVA del 10 %, y te paga un canon: el 22 % de las ventas, 80.098 € el primer año. Un aviso desde ya: la licencia en suelo rústico es lo que decide si hay negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 132,
+   "nota": "§1 1/5: Resumen ejecutivo: concepto (D159), la oportunidad (research §2: «wedding venue business plan» 1,000/mes y «event venue business plan» 720/mes, creciendo), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años, {{fondos_propios}}), ventas ({{ventas_a1}} = {{clientes_dia}} guests × {{ticket}} × {{dias}} events), neto {{margen_neto_a1}}, DSCR {{dscr_min}}; el venue vive del site fee + caterer commission ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "Las cifras clave del caso son estas. Se celebran 120 eventos al año entre bodas, eventos de empresa, celebraciones privadas y eventos pequeños, con 82 invitados de media y 37,00 € por invitado sin IVA (44,77 € con IVA). Eso da unas ventas de 364.080 € en el primer año y un resultado neto de 32.101 €. El equilibrio contable está en 105 eventos al año, y el de caja, que además cubre las cuotas del préstamo, en 98 durante el primer año, el de carencia. No es una rentabilidad garantizada: es un punto de partida para que cambies las hipótesis y pongas tus propios números, los de tu finca, tu comarca y tu catering.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 115,
+   "nota": "§1 2/5: Resumen ejecutivo: concepto (D159), la oportunidad (research §2: «wedding venue business plan» 1,000/mes y «event venue business plan» 720/mes, creciendo), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años, {{fondos_propios}}), ventas ({{ventas_a1}} = {{clientes_dia}} guests × {{ticket}} × {{dias}} events), neto {{margen_neto_a1}}, DSCR {{dscr_min}}; el venue vive del site fee + caterer commission ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total es de 311.409 €: 241.280 € de acondicionamiento de la finca (obra, aseos, salón, carpa, jardín, sonido, licencias y arranque), 7.000 € de fianza y 3.500 € de renta previa, que suman 251.780 € de inversión sin el fondo, y 59.629 € de fondo de maniobra. A eso se suma el IVA de la inversión, 49.094 €, que se adelanta y se recupera poco a poco con las declaraciones de IVA, por lo que la necesidad de caja llega a 360.503 €. Se financia con 100.000 € de recursos propios y un préstamo de 263.000 € a 8 años, con 1 año de carencia de principal y un tipo del 6,5 %. Los fondos suman 363.000 € y la diferencia con la necesidad es de solo 2.497 €. La cuota anual, ya sin carencia, es de 47.953 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 141,
+   "nota": "§1 3/5: Resumen ejecutivo: concepto (D159), la oportunidad (research §2: «wedding venue business plan» 1,000/mes y «event venue business plan» 720/mes, creciendo), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años, {{fondos_propios}}), ventas ({{ventas_a1}} = {{clientes_dia}} guests × {{ticket}} × {{dias}} events), neto {{margen_neto_a1}}, DSCR {{dscr_min}}; el venue vive del site fee + caterer commission ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "El primer año cuenta los 120 eventos completos, algo que solo es posible si la primera temporada se vende durante la tramitación con reservas condicionadas a la licencia, que pasan a firmes al obtenerla; si no, mira el escenario pesimista del Excel. Factura 364.080 € y deja un neto de 32.101 €, el 8,8 % de las ventas. El crecimiento de los años 2 y 3 se cuenta en eventos equivalentes, con el mismo precio por invitado: 130 y 136. Las ventas pasan a 393.206 € y 412.867 €, y el neto, a 46.928 € y 50.279 €. La holgura de caja es del 22,9 % el primer año, gracias a la carencia; baja al 14,9 % en el segundo y es del 18,1 % en el tercero, los años que hay que vigilar. La inversión se recupera en más de 3 años.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 143,
+   "nota": "§1 4/5: Resumen ejecutivo: concepto (D159), la oportunidad (research §2: «wedding venue business plan» 1,000/mes y «event venue business plan» 720/mes, creciendo), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años, {{fondos_propios}}), ventas ({{ventas_a1}} = {{clientes_dia}} guests × {{ticket}} × {{dias}} events), neto {{margen_neto_a1}}, DSCR {{dscr_min}}; el venue vive del site fee + caterer commission ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "El equipo es corto y se apoya en ti. Diriges la finca, vendes las fechas, enseñas el espacio y coordinas cada evento, y te acompaña un equipo pequeño (7 personas contigo incluido, con la coordinación y los auxiliares como fijos discontinuos) que se ocupa del montaje, la limpieza y el aparcamiento. No hay camareros ni cocina propios: los pone el catering exclusivo, que también responde de la seguridad alimentaria del menú. El kit incluye este plan de negocio de diez secciones, el Excel del plan financiero de nueve hojas, el checklist de apertura de 84 tareas en seis fases, la calculadora de presupuesto del espacio, los modelos de contrato (la reserva con los novios y las condiciones del catering exclusivo) y la guía de equivalencias para Latinoamérica.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 127,
+   "nota": "§1 5/5: Resumen ejecutivo: concepto (D159), la oportunidad (research §2: «wedding venue business plan» 1,000/mes y «event venue business plan» 720/mes, creciendo), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años, {{fondos_propios}}), ventas ({{ventas_a1}} = {{clientes_dia}} guests × {{ticket}} × {{dias}} events), neto {{margen_neto_a1}}, DSCR {{dscr_min}}; el venue vive del site fee + caterer commission ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "44": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "45": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "En España conviven tres maneras de explotar una finca, y conviene elegir antes de firmar nada. En la primera, la finca tiene catering propio: cocina y sirve el banquete, y eso es otro negocio, con ventas de 0,8-1 M€, mercancía de un 30 % y personal de un 35-38 % de las ventas, pensado para hosteleros; si es tu caso, mira el Plan de Negocio de Catering Temático para Eventos. En la segunda, un catering exclusivo concesionado sirve el menú y paga un canon, que es la de este plan. En la tercera, solo alquiler, el cliente trae su catering y tú cobras un pago fijo; hay fincas que lo anuncian en 2.500 € con un menú mínimo de 130 €. Cada modelo tiene su inversión, sus permisos y su margen.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 131,
+   "nota": "§2 1/5: Concepto y propuesta: barn venue de 200 invitados, ceremonia exterior, bridal suite, exclusive caterer (por qué exclusivo frente a preferred vendor list o in-house catering: alternativas razonadas); el arrendamiento y sus condiciones (ARRENDAMIENTO (decisión de orquestador 1): la obra (≈ {{capex}} de CAPEX) se hace sobre una propiedad ARRENDADA: exige un arrendamiento largo cuya duración CONTANDO LAS PRÓRROGAS sea al menos la del préstamo («SBA lenders typically require…; confirm with your lender», sin citar una regla concreta), opción de compra o derecho de tanteo (right of first refusal), consentimiento del propietario a la obra y a usar el arrendamiento como garantía, y negociar una TI allowance; lease contingent on CUP approval. Comprar la propiedad (SBA 504) = variante razonada SIN Excel); buy vs lease razonado ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "El plan elige el concesionado por tres razones. No necesitas cocina de producción, que costaría entre 80.000 y 120.000 € más, ni brigada. La seguridad alimentaria del menú es del catering, no tuya. Y el solo alquiler no llega: sin canon, las ventas bajan a unos 284.000 € frente a los 296.343 € que hacen falta para el equilibrio de caja. La finca tampoco se compra, porque comprarla cuesta entre 1 y 3 M€ (una de 21.000 m² se anunciaba en 980.000 €). Se arrienda con edificaciones existentes, algo que exigen Madrid, Cataluña y la vía rápida valenciana, o se cede la familiar con renta de mercado: 3.500 € al mes, el 11,5 % de las ventas. El contrato es de quince años o más, con condición suspensiva de licencias, carencia durante las obras y reversión de mejoras.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 138,
+   "nota": "§2 2/5: Concepto y propuesta: barn venue de 200 invitados, ceremonia exterior, bridal suite, exclusive caterer (por qué exclusivo frente a preferred vendor list o in-house catering: alternativas razonadas); el arrendamiento y sus condiciones (ARRENDAMIENTO (decisión de orquestador 1): la obra (≈ {{capex}} de CAPEX) se hace sobre una propiedad ARRENDADA: exige un arrendamiento largo cuya duración CONTANDO LAS PRÓRROGAS sea al menos la del préstamo («SBA lenders typically require…; confirm with your lender», sin citar una regla concreta), opción de compra o derecho de tanteo (right of first refusal), consentimiento del propietario a la obra y a usar el arrendamiento como garantía, y negociar una TI allowance; lease contingent on CUP approval. Comprar la propiedad (SBA 504) = variante razonada SIN Excel); buy vs lease razonado ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "Lo que vende la finca es el espacio, la ceremonia, el montaje, la coordinación del día y la tranquilidad de tener un solo catering responsable de la comida. El cliente paga a la finca el espacio y los servicios del evento, con IVA del 21 %, y al catering el menú y la barra, con IVA del 10 %. Para ti es un solo interlocutor con el catering y, para ellos, un día sin cabos sueltos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 76,
+   "nota": "§2 3/5: Concepto y propuesta: barn venue de 200 invitados, ceremonia exterior, bridal suite, exclusive caterer (por qué exclusivo frente a preferred vendor list o in-house catering: alternativas razonadas); el arrendamiento y sus condiciones (ARRENDAMIENTO (decisión de orquestador 1): la obra (≈ {{capex}} de CAPEX) se hace sobre una propiedad ARRENDADA: exige un arrendamiento largo cuya duración CONTANDO LAS PRÓRROGAS sea al menos la del préstamo («SBA lenders typically require…; confirm with your lender», sin citar una regla concreta), opción de compra o derecho de tanteo (right of first refusal), consentimiento del propietario a la obra y a usar el arrendamiento como garantía, y negociar una TI allowance; lease contingent on CUP approval. Comprar la propiedad (SBA 504) = variante razonada SIN Excel); buy vs lease razonado ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El día a día de un evento medio se mide con números sencillos. El equipo de la finca dedica 9,2 horas a cada evento, entre montaje, coordinación, limpieza y aparcamiento. El ingreso de la finca por evento medio es de 3.034 €, con 82 invitados y 37,00 € por invitado sin IVA. Después de descontar el coste variable de 7,22 € por invitado, cada uno deja un margen de 29,78 €. Importa mirar el evento completo y no solo el precio: el crecimiento de los años 2 y 3 sale de más actividad con el mismo precio por invitado, no de subir tarifas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 103,
+   "nota": "§2 4/5: Concepto y propuesta: barn venue de 200 invitados, ceremonia exterior, bridal suite, exclusive caterer (por qué exclusivo frente a preferred vendor list o in-house catering: alternativas razonadas); el arrendamiento y sus condiciones (ARRENDAMIENTO (decisión de orquestador 1): la obra (≈ {{capex}} de CAPEX) se hace sobre una propiedad ARRENDADA: exige un arrendamiento largo cuya duración CONTANDO LAS PRÓRROGAS sea al menos la del préstamo («SBA lenders typically require…; confirm with your lender», sin citar una regla concreta), opción de compra o derecho de tanteo (right of first refusal), consentimiento del propietario a la obra y a usar el arrendamiento como garantía, y negociar una TI allowance; lease contingent on CUP approval. Comprar la propiedad (SBA 504) = variante razonada SIN Excel); buy vs lease razonado ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "El concepto no se acaba en la boda grande. La mezcla del caso tiene 30 bodas de 120 invitados a 47 €, 35 eventos de empresa de 80 invitados a 34 €, 40 celebraciones privadas de 70 a 29 € y 15 eventos pequeños de 40 a 30 €, siempre por invitado y sin IVA. Las bodas dan el precio más alto, pero las empresas, las comuniones y los cumpleaños llenan el calendario que las bodas dejan vacío, sobre todo entre semana y fuera de temporada. Con esa mezcla la finca trabaja casi todo el año y la plantilla fija tiene trabajo más allá del verano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 106,
+   "nota": "§2 5/5: Concepto y propuesta: barn venue de 200 invitados, ceremonia exterior, bridal suite, exclusive caterer (por qué exclusivo frente a preferred vendor list o in-house catering: alternativas razonadas); el arrendamiento y sus condiciones (ARRENDAMIENTO (decisión de orquestador 1): la obra (≈ {{capex}} de CAPEX) se hace sobre una propiedad ARRENDADA: exige un arrendamiento largo cuya duración CONTANDO LAS PRÓRROGAS sea al menos la del préstamo («SBA lenders typically require…; confirm with your lender», sin citar una regla concreta), opción de compra o derecho de tanteo (right of first refusal), consentimiento del propietario a la obra y a usar el arrendamiento como garantía, y negociar una TI allowance; lease contingent on CUP approval. Comprar la propiedad (SBA 504) = variante razonada SIN Excel); buy vs lease razonado ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "51": {
+   "estilo": "Heading 1",
+   "texto": "3. Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "El mercado de las bodas en España tiene datos oficiales. Según el INE, en 2024 hubo 175.364 matrimonios, un 1,7 % más que el año anterior, y el 83,6 % fueron civiles. De mayo a octubre se concentra el 63,7 % de todos, con los picos en septiembre (13,1 %) y junio (12,8 %); enero se queda en el 3,8 %. Según el Informe del Sector Nupcial 2026 de Bodas.net, que es una encuesta a sus usuarios y sobrerrepresenta la boda grande, el 28 % de las parejas celebra en una finca. Es el espacio preferido, y eso explica por qué compites con tantas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 104,
+   "nota": "§3 1/6: Mercado y competencia: demanda de bodas y eventos en EE. UU. SIN cifras rotundas sin fuente leída (The Knot solo como «national wedding studies publish yearly averages: check the latest»); temporada: otoño, septiembre-octubre y junio como picos (pesos del libro, Kit); rate cards publicadas como «typical range, get local quotes»; competencia: otros barn venues, banquet halls, hoteles, venues municipales ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "Según Bodas.net, la boda se prepara con 12-18 meses de antelación (13 de media), las parejas piden información a 6 espacios y visitan 3, y el 64 % busca en webs especializadas. Eso marca tu calendario: las fechas se venden mucho antes de que el evento exista. En Google España hay unas 4.000 búsquedas al mes de fincas para bodas y eventos, según DataForSEO en octubre de 2026, así que la demanda existe y es de clientes, no de emprendedores. Los precios de escaparate varían mucho: 95-200 € por invitado en Castilla-La Mancha, 140-145 € más IVA todo incluido en Barcelona, y entre 2.500 € y 14.000 € por el espacio según finca y temporada. Tómalos con cautela, porque son precios anunciados, no cobrados.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 124,
+   "nota": "§3 2/6: Mercado y competencia: demanda de bodas y eventos en EE. UU. SIN cifras rotundas sin fuente leída (The Knot solo como «national wedding studies publish yearly averages: check the latest»); temporada: otoño, septiembre-octubre y junio como picos (pesos del libro, Kit); rate cards publicadas como «typical range, get local quotes»; competencia: otros barn venues, banquet halls, hoteles, venues municipales ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "Las bodas son solo una parte del negocio. Las empresas buscan jornadas, convenciones, comidas de Navidad y team building; las familias, comuniones, bautizos y cumpleaños; y hay eventos pequeños que nadie quiere hacer en un salón enorme. Todos llenan lo que las bodas no cubren, entre semana y fuera de temporada. Por eso el caso reparte los 120 eventos en cuatro tipos y no depende solo del sábado de junio. Al hacer números, no des por hecho un tamaño de mercado que nadie publica: lo que cuenta es cuántas fechas puedes vender en tu comarca, y eso lo compruebas con visitas y reservas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 103,
+   "nota": "§3 3/6: Mercado y competencia: demanda de bodas y eventos en EE. UU. SIN cifras rotundas sin fuente leída (The Knot solo como «national wedding studies publish yearly averages: check the latest»); temporada: otoño, septiembre-octubre y junio como picos (pesos del libro, Kit); rate cards publicadas como «typical range, get local quotes»; competencia: otros barn venues, banquet halls, hoteles, venues municipales ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "Con el Mes 1 en marzo, el plan reparte la venta con la estacionalidad: el pico llega con el verano y el comienzo del otoño, y el valle, con el invierno. El arranque lleva una rampa de 12 meses que empieza en el 45 % de la actividad, porque las bodas se reservan con 12-18 meses de antelación. El saldo de caja más bajo, 51.025 €, llega en abril, el mes 2, recién pagada la inversión y antes de que entre el grueso de la temporada: esa primavera de arranque se sostiene con el fondo de maniobra de 59.629 €. Después la temporada sube la caja hasta 149.910 € en el mes 12, y con ella se atraviesa el primer invierno.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 121,
+   "nota": "§3 4/6: Mercado y competencia: demanda de bodas y eventos en EE. UU. SIN cifras rotundas sin fuente leída (The Knot solo como «national wedding studies publish yearly averages: check the latest»); temporada: otoño, septiembre-octubre y junio como picos (pesos del libro, Kit); rate cards publicadas como «typical range, get local quotes»; competencia: otros barn venues, banquet halls, hoteles, venues municipales ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "El hueco es claro: en los primeros resultados de Google no aparece ninguna guía española del negocio de una finca de eventos con Excel vivo. Lo que existe son plantillas en inglés y guías para organizar tu propia boda. Este documento se apoya en datos del INE y de Bodas.net y en normas españolas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 54,
+   "nota": "§3 5/6: Mercado y competencia: demanda de bodas y eventos en EE. UU. SIN cifras rotundas sin fuente leída (The Knot solo como «national wedding studies publish yearly averages: check the latest»); temporada: otoño, septiembre-octubre y junio como picos (pesos del libro, Kit); rate cards publicadas como «typical range, get local quotes»; competencia: otros barn venues, banquet halls, hoteles, venues municipales ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "La demanda tiene riesgos que el plan nombra. La guerra de precios de las fechas de sábado presiona la tarifa, el cliente puede querer traer su propio catering, y una primavera de lluvias exige tener el plan B de salón y carpa a punto. El mayor riesgo es de ocupación: por debajo de 98 eventos del tamaño medio no hay caja el primer año, y desde el segundo, cuando ya devuelves el préstamo, el listón sube a 113 y 116.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 80,
+   "nota": "§3 6/6: Mercado y competencia: demanda de bodas y eventos en EE. UU. SIN cifras rotundas sin fuente leída (The Knot solo como «national wedding studies publish yearly averages: check the latest»); temporada: otoño, septiembre-octubre y junio como picos (pesos del libro, Kit); rate cards publicadas como «typical range, get local quotes»; competencia: otros barn venues, banquet halls, hoteles, venues municipales ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "59": {
+   "estilo": "Heading 1",
+   "texto": "4. Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "Antes de fijar ningún precio, dibuja el mapa de quién compite contigo y a quién vendes. Tus clientes son las parejas, con la boda grande o la íntima, las empresas, las familias que celebran comuniones y cumpleaños y los intermediarios que traen clientes: wedding planners y agencias de eventos, que aportan el 20 % de las ventas con una comisión del 12,5 %. Cada uno decide por algo distinto, así que conviene analizarlos por separado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 75,
+   "nota": "§4 1/6: Cliente y posicionamiento: parejas (bodas, micro weddings / elopements), empresas, celebraciones privadas (showers, quinceañeras, cumpleaños, rehearsal dinners); el precio por invitado del venue ({{ticket}}) no es lo que paga la pareja por la boda entera; peak / shoulder / off-peak y sábado / viernes-domingo / entre semana (calculadora del kit) ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "Qué decide cada cliente es lo primero que debes entender. La pareja mira la fecha, el aforo, el entorno, el catering, el precio, el alojamiento y el plan B si llueve. La empresa mira el acceso, el aparcamiento, la conexión y que el día no se le complique. La familia mira el precio y que todo esté resuelto por una sola persona. El wedding planner mira que el calendario sea claro, que la comisión se pague a tiempo y que el espacio se pueda montar sin sorpresas. Una finca gana si responde a todo eso con una visita bien preparada y un presupuesto que se entiende a la primera. Pierde si hace sentir al cliente que cada cosa extra es una negociación nueva, o si el catering exclusivo lo percibe como una imposición en lugar de una ventaja.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 138,
+   "nota": "§4 2/6: Cliente y posicionamiento: parejas (bodas, micro weddings / elopements), empresas, celebraciones privadas (showers, quinceañeras, cumpleaños, rehearsal dinners); el precio por invitado del venue ({{ticket}}) no es lo que paga la pareja por la boda entera; peak / shoulder / off-peak y sábado / viernes-domingo / entre semana (calculadora del kit) ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "La competencia llega de varios lados, y no hace falta nombrar marcas para verla. Están las otras fincas con catering propio, las fincas con catering exclusivo, las de solo alquiler con pago fijo, los hoteles y restaurantes con salón, las masías y haciendas con encanto, los salones de banquetes urbanos y los espacios singulares, como bodegas, palacetes y jardines. Tu respuesta no es bajar el precio: es un calendario claro con fechas bien vendidas, un solo interlocutor para la comida, un precio del espacio visible, un plan B de lluvia con salón y carpa, y venta entre semana para empresas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 100,
+   "nota": "§4 3/6: Cliente y posicionamiento: parejas (bodas, micro weddings / elopements), empresas, celebraciones privadas (showers, quinceañeras, cumpleaños, rehearsal dinners); el precio por invitado del venue ({{ticket}}) no es lo que paga la pareja por la boda entera; peak / shoulder / off-peak y sábado / viernes-domingo / entre semana (calculadora del kit) ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Las barreras de entrada son de cumplimiento y de caja. La licencia es lo que decide si hay negocio: en suelo rústico celebrar bodas no es un uso ordinario y la autorización depende de tu comunidad, así que pregunta en urbanismo qué figura usa la tuya y compruébalo en tu ayuntamiento, tu comunidad o tu asesoría. No confirmes fechas en firme sin licencia (antes de tenerla, solo reservas condicionadas a ella, con devolución íntegra si no llega), y pon en el arrendamiento una condición suspensiva de licencias. Además, la caja pesa: la obra base del caso es de 152.280 €, y la maquinaria, el mobiliario y los equipos suman 66.000 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 111,
+   "nota": "§4 4/6: Cliente y posicionamiento: parejas (bodas, micro weddings / elopements), empresas, celebraciones privadas (showers, quinceañeras, cumpleaños, rehearsal dinners); el precio por invitado del venue ({{ticket}}) no es lo que paga la pareja por la boda entera; peak / shoulder / off-peak y sábado / viernes-domingo / entre semana (calculadora del kit) ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Cuatro factores deciden si funciona. El primero es el calendario: cuántas fechas de la primera temporada reservas, condicionadas a la licencia, mientras la tramitas y haces la obra. El segundo es el espacio: un entorno que se vea bien en fotos, con salón y carpa para el plan B y aparcamiento suficiente. El tercero es el catering exclusivo: un socio cumplidor, con canon negociado y fácil de auditar. El cuarto es el control de la caja: el equilibrio está en 98 eventos el primer año y sube a 113 y 116 el segundo y el tercero, cuando ya devuelves el préstamo, así que cada fecha sin vender se nota.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 109,
+   "nota": "§4 5/6: Cliente y posicionamiento: parejas (bodas, micro weddings / elopements), empresas, celebraciones privadas (showers, quinceañeras, cumpleaños, rehearsal dinners); el precio por invitado del venue ({{ticket}}) no es lo que paga la pareja por la boda entera; peak / shoulder / off-peak y sábado / viernes-domingo / entre semana (calculadora del kit) ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El DAFO de este concepto es claro. Fortalezas: un modelo sin cocina ni brigada propias, un solo interlocutor para la comida y un margen bruto del 80,5 % en el primer año. Debilidades: una inversión alta, una licencia incierta y una dependencia fuerte del catering. Oportunidades: empresas, comuniones y cumpleaños entre semana, y la venta a wedding planners y agencias. Amenazas: la guerra de precios de las fechas de sábado, el cliente que quiere traer su catering y la lluvia. La defensa está en el calendario, el plan B, el contrato con el catering y las fechas que se venden con tiempo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 102,
+   "nota": "§4 6/6: Cliente y posicionamiento: parejas (bodas, micro weddings / elopements), empresas, celebraciones privadas (showers, quinceañeras, cumpleaños, rehearsal dinners); el precio por invitado del venue ({{ticket}}) no es lo que paga la pareja por la boda entera; peak / shoulder / off-peak y sábado / viernes-domingo / entre semana (calculadora del kit) ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "67": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "69": {
+   "estilo": "Normal",
+   "texto": "La captación empieza con 12-18 meses de antelación, porque así se planea una boda. Estar en escaparates de bodas, con fichas completas en portales especializados, es el primer paso; el segundo, ferias nupciales y jornadas de puertas abiertas con el catering exclusivo y una cata del menú. En el caso, ferias y puertas abiertas cuestan 6.000 € al año. Lo más importante de la primera temporada es esto: las fechas se reservan durante los meses de licencia y obra, antes de abrir, como reservas condicionadas a la licencia y con devolución íntegra pactada por escrito si no llega a tiempo; al obtenerla, se convierten en firmes. Nunca confirmes una fecha en firme sin licencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 114,
+   "nota": "§5 1/7: Marketing y ventas: venue tours, open house con el caterer, bridal shows ({{ferias_anual}}), The Knot / WeddingWire storefronts midiendo el coste por lead, Google Business Profile, planners y venue marketplaces ({{intermediarios_pct}} de las ventas al {{comision_intermediarios_pct}}), pricing guide, venue management software; retainer y calendario de cobros (calculadora y contrato del kit) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "La visita a la finca es donde se cierra la venta. Como la pareja pide información a 6 espacios y visita 3, prepárala como una pequeña función: confirma la fecha deseada, enséñales el recorrido de la ceremonia al banquete, ten listo el plan B de lluvia con salón y carpa y presenta el menú con el catering exclusivo en la misma visita. Sal con un presupuesto claro, una fecha en espera con plazo y un modelo de reserva. El cliente que se va sin saber cuánto cuesta rara vez vuelve.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 90,
+   "nota": "§5 2/7: Marketing y ventas: venue tours, open house con el caterer, bridal shows ({{ferias_anual}}), The Knot / WeddingWire storefronts midiendo el coste por lead, Google Business Profile, planners y venue marketplaces ({{intermediarios_pct}} de las ventas al {{comision_intermediarios_pct}}), pricing guide, venue management software; retainer y calendario de cobros (calculadora y contrato del kit) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "Los wedding planners y las agencias de eventos son un canal decisivo: el 20 % de las ventas entra por ellos, con una comisión del 12,5 %. Trátalos como a socios. Enséñales la finca antes que a nadie, dales un calendario con fechas disponibles al día, un precio del espacio por escrito y respuestas rápidas. La comisión es un coste de captación, no un descuento, y el Excel la recoge (9.102 € el primer año). Cuanto más claro sea el trato, más fechas te traerán.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 85,
+   "nota": "§5 3/7: Marketing y ventas: venue tours, open house con el caterer, bridal shows ({{ferias_anual}}), The Knot / WeddingWire storefronts midiendo el coste por lead, Google Business Profile, planners y venue marketplaces ({{intermediarios_pct}} de las ventas al {{comision_intermediarios_pct}}), pricing guide, venue management software; retainer y calendario de cobros (calculadora y contrato del kit) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La web es tu escaparate permanente. Con un calendario de disponibilidad al día, la descripción de los espacios, fotografía y vídeo de las cuatro estaciones, los tipos de evento y un formulario de contacto, cumple su función antes de la visita. Completa tu ficha de Google y las de los portales, pide reseñas tras cada evento y contesta todas, también las malas, con amabilidad. Las redes sociales enseñan la finca en acción: montajes, ceremonias, jardín, plan B y detalles del día.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 81,
+   "nota": "§5 4/7: Marketing y ventas: venue tours, open house con el caterer, bridal shows ({{ferias_anual}}), The Knot / WeddingWire storefronts midiendo el coste por lead, Google Business Profile, planners y venue marketplaces ({{intermediarios_pct}} de las ventas al {{comision_intermediarios_pct}}), pricing guide, venue management software; retainer y calendario de cobros (calculadora y contrato del kit) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "Las empresas y las celebraciones privadas llenan los huecos. Ofrece jornadas, convenciones, comidas de Navidad y team building entre semana, y comuniones y bautizos fuera de la temporada de bodas. Para llenar los meses flojos y los días de menos demanda, publica precios de temporada alta, media y baja, con descuentos visibles para viernes, domingos y de noviembre a marzo. Un precio claro y un calendario honesto convencen más que una oferta de última hora, y protegen el valor del sábado de verano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 83,
+   "nota": "§5 5/7: Marketing y ventas: venue tours, open house con el caterer, bridal shows ({{ferias_anual}}), The Knot / WeddingWire storefronts midiendo el coste por lead, Google Business Profile, planners y venue marketplaces ({{intermediarios_pct}} de las ventas al {{comision_intermediarios_pct}}), pricing guide, venue management software; retainer y calendario de cobros (calculadora y contrato del kit) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "La fidelización es sencilla. Un cliente satisfecho recomienda, una empresa repite cada año, una familia vuelve para el siguiente bautizo. Una finca vive de la confianza, y esa confianza se construye después de que se apaguen las luces. Mantén el contacto con un correo tras el evento, una petición de reseña y un aviso con fechas disponibles de la temporada siguiente. No se estiman cifras de conversión, porque dependen de tu comarca y de cómo lo trabajes: compruébalas tú durante la primera temporada. El mejor marketing es un evento bien resuelto, un trato cercano y que el cliente sienta que su día importó.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 103,
+   "nota": "§5 6/7: Marketing y ventas: venue tours, open house con el caterer, bridal shows ({{ferias_anual}}), The Knot / WeddingWire storefronts midiendo el coste por lead, Google Business Profile, planners y venue marketplaces ({{intermediarios_pct}} de las ventas al {{comision_intermediarios_pct}}), pricing guide, venue management software; retainer y calendario de cobros (calculadora y contrato del kit) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "El presupuesto de marketing del caso es de 12.000 € al año, más 6.000 € de ferias y puertas abiertas y 6.000 € de lanzamiento dentro de la inversión inicial. El primer año se trabaja desde el principio, con la web y las fichas listas, y las fechas de la primera temporada en reserva, condicionadas a la licencia, antes de abrir. Si una acción no trae visitas, se corrige o se cambia, y el dinero pasa a la que sí las trae.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "wed_a",
+   "palabras": 82,
+   "nota": "§5 7/7: Marketing y ventas: venue tours, open house con el caterer, bridal shows ({{ferias_anual}}), The Knot / WeddingWire storefronts midiendo el coste por lead, Google Business Profile, planners y venue marketplaces ({{intermediarios_pct}} de las ventas al {{comision_intermediarios_pct}}), pricing guide, venue management software; retainer y calendario de cobros (calculadora y contrato del kit) ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "76": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "Un sábado de boda sigue siempre el mismo guion, y conviene tenerlo escrito antes de vender la primera fecha. Las horas son orientativas y cambian con la estación y con el tipo de evento. Por la mañana, tu equipo termina el montaje del espacio: mobiliario, ceremonia en el jardín, aseos, luz y aparcamiento. Después llega el catering, que descarga en el office y prepara su zona, y se hace la prueba de sonido con el limitador activado. Por la tarde llegan los invitados y se celebra la ceremonia; sigue el cóctel en el jardín, el banquete en el salón o la carpa y, al final, el baile. La recogida empieza cuando se va el último invitado: el catering retira su material y deja el office limpio, y tu equipo desmonta, limpia y cierra el aparcamiento. El reparto es claro. La finca pone la coordinación, el montaje del espacio, la limpieza, el aparcamiento y el mantenimiento. El catering pone el menú, la barra, los camareros y su propia cocina. Esa frontera es la que te libra de tener brigada de cocina y de responder por la seguridad alimentaria del menú.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 189,
+   "nota": "§6 1/5: Operaciones: el día del evento (setup, ceremony, reception, load-out, curfew), rain plan, occupant load (fire marshal), decibel limit, la cocina de apoyo del caterer ({{inv_office}}), sprinklers ({{inv_sprinklers}}), restrooms ADA ({{inv_aseos}}), generador ({{inv_generador}}), parking ({{inv_parking}}); coste directo por evento (limpieza, restrooms, generator fuel, parking attendants, security) = {{coste_directo_pct}} del espacio y servicios ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "La infraestructura es lo que separa una finca bonita de una finca que funciona. El caso se dimensiona para un aforo de 300 personas. Los aseos cuestan 22.000 €, e incluyen uno adaptado. El aparcamiento, 10.000 €: calcula una plaza por cada 2,5-3 invitados. El grupo electrógeno (10.000 €) te cubre un corte de luz en pleno banquete, y la potencia eléctrica (15.000 €) tiene que aguantar la cocina del catering, el sonido y la climatización (17.000 €). La acústica (9.000 €) y el sonido (6.000 €) se piensan desde el principio, para que la música se quede dentro del salón. Añade el office (16.000 €), donde el catering prepara y emplata, y el saneamiento: una fosa séptica o una depuradora dimensionada para el aforo, porque en el campo no suele haber alcantarillado. En el caso va dentro de los aseos y de los imprevistos de obra, y un vertido nuevo puede pedir autorización de la confederación hidrográfica: compruébalo. Son partidas del acondicionamiento, no extras: si tu presupuesto no las recoge, falta algo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 173,
+   "nota": "§6 2/5: Operaciones: el día del evento (setup, ceremony, reception, load-out, curfew), rain plan, occupant load (fire marshal), decibel limit, la cocina de apoyo del caterer ({{inv_office}}), sprinklers ({{inv_sprinklers}}), restrooms ADA ({{inv_aseos}}), generador ({{inv_generador}}), parking ({{inv_parking}}); coste directo por evento (limpieza, restrooms, generator fuel, parking attendants, security) = {{coste_directo_pct}} del espacio y servicios ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "La lluvia no cancela una boda, pero sí la cambia, y por eso el plan B forma parte de la finca desde el primer día. Con el salón (30.000 €) y la carpa (28.000 €) puedes llevar ceremonia, cóctel o banquete bajo techo sin devolver nada. Fija el criterio por escrito, por ejemplo con el pronóstico de dos días antes, y cuéntaselo a los novios en el contrato para que nadie se enfade el sábado. Un jardín cuidado es parte de lo que vendes: la jardinería cuesta 8.000 € al año, los suministros 1.600 € al mes y los seguros 5.500 € al año. Y una regla sin excepciones: en época de peligro de incendios, nada de fuego, bengalas ni barbacoas, aunque los novios lo pidan.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 126,
+   "nota": "§6 3/5: Operaciones: el día del evento (setup, ceremony, reception, load-out, curfew), rain plan, occupant load (fire marshal), decibel limit, la cocina de apoyo del caterer ({{inv_office}}), sprinklers ({{inv_sprinklers}}), restrooms ADA ({{inv_aseos}}), generador ({{inv_generador}}), parking ({{inv_parking}}); coste directo por evento (limpieza, restrooms, generator fuel, parking attendants, security) = {{coste_directo_pct}} del espacio y servicios ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "El ruido es lo que más licencias pone en riesgo. El RD 1367/2007 fija los límites de inmisión al exterior y, de noche, en zona residencial, manda el más bajo: 45 dBA. Por eso conviene instalar un limitador-registrador, hacer el baile final en interior y orientar los altavoces de espaldas a las viviendas. Hay otro asunto que no sale en los folletos: si la finca se abastece de un pozo propio, el RD 3/2023 la convierte, en cuanto tiene actividad comercial, en una zona de abastecimiento, y tú como titular respondes de la calidad del agua hasta el grifo. Haz analíticas y ten un protocolo escrito. Lo que añadan tu ayuntamiento o tu comunidad, compruébalo allí.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 116,
+   "nota": "§6 4/5: Operaciones: el día del evento (setup, ceremony, reception, load-out, curfew), rain plan, occupant load (fire marshal), decibel limit, la cocina de apoyo del caterer ({{inv_office}}), sprinklers ({{inv_sprinklers}}), restrooms ADA ({{inv_aseos}}), generador ({{inv_generador}}), parking ({{inv_parking}}); coste directo por evento (limpieza, restrooms, generator fuel, parking attendants, security) = {{coste_directo_pct}} del espacio y servicios ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "La relación con el catering se escribe en el contrato y se practica en cada evento. Pacta la prueba de menú con los novios, la gestión de alérgenos y los horarios. Exige que la cocina que use esté inscrita en el registro sanitario, y que tenga seguro de intoxicación. En toda boda o encargo de más de 40 personas hay que guardar comida testigo (RD 1086/2020, art. 30): una ración de al menos 100 g, a 4 °C o menos o a −18 °C o menos, durante 7 días, y la guarda quien sirve, o sea, el catering. Reserva también el derecho a revisar el número de invitados servidos, para que el canon sea auditable.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 115,
+   "nota": "§6 5/5: Operaciones: el día del evento (setup, ceremony, reception, load-out, curfew), rain plan, occupant load (fire marshal), decibel limit, la cocina de apoyo del caterer ({{inv_office}}), sprinklers ({{inv_sprinklers}}), restrooms ADA ({{inv_aseos}}), generador ({{inv_generador}}), parking ({{inv_parking}}); coste directo por evento (limpieza, restrooms, generator fuel, parking attendants, security) = {{coste_directo_pct}} del espacio y servicios ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "83": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El equipo propio es corto, porque no hay camareros ni cocina: los pone el catering. Tú eres el gerente, con un sueldo de 2.000 € al mes. A tu lado hay una persona de coordinación de eventos, con contrato fijo discontinuo, que lleva visitas, plazos y el día del evento. Hay también mantenimiento y jardinería, auxiliares de evento (fijos discontinuos) para el montaje, el aparcamiento y la recogida, un comercial de bodas a tiempo parcial que vende las fechas y atiende a los wedding planners, y una persona de limpieza a tiempo parcial. En total son 7 personas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 98,
+   "nota": "§7 1/6: Organización y personal: Owner — GM, sales & tours ({{sueldo_titular}} al mes: «draw the rest from profit»), venue coordinator seasonal W-2 (Mar-Nov), facilities & grounds, event attendants seasonal part-time W-2, weekend sales & tours, housekeeping ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE; cobertura {{cobertura_horas}}); employer payroll taxes {{cargas_pct}}; nunca 1099 para quien el venue dirige; camareros y bartenders son del caterer ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "Esa plantilla equivale a 3,75 jornadas completas y cuesta 111.720 € el primer año, el 30,7 % de las ventas. Es el mayor gasto del negocio, por encima de la renta de la finca (42.000 €), así que conviene medirlo bien. La cobertura de horas es del 101 %: 6.900 horas contratadas frente a 6.859 necesarias, con una media de 2,3 personas de la finca por evento, sin contar al catering. Si la cobertura se queda corta, lo notarás un sábado de montaje largo; si sobra mucho, pagas horas vacías. Revísala cada vez que cambies el número de eventos o su tamaño.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 102,
+   "nota": "§7 2/6: Organización y personal: Owner — GM, sales & tours ({{sueldo_titular}} al mes: «draw the rest from profit»), venue coordinator seasonal W-2 (Mar-Nov), facilities & grounds, event attendants seasonal part-time W-2, weekend sales & tours, housekeeping ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE; cobertura {{cobertura_horas}}); employer payroll taxes {{cargas_pct}}; nunca 1099 para quien el venue dirige; camareros y bartenders son del caterer ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "La coordinación y los auxiliares de evento van con contrato fijo discontinuo, por escrito y con llamamiento por escrito en cada temporada (art. 16 del Estatuto de los Trabajadores). Es un contrato indefinido: la persona no desaparece en invierno, vuelve cuando la llamas y su antigüedad sigue corriendo. Nunca montes el equipo de montaje con autónomos que te facturan: es un falso autónomo, y una sanción casi segura si te inspeccionan. Los eventos se concentran de mayo a octubre; ajusta los llamamientos al calendario de fechas vendidas y no al revés.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 91,
+   "nota": "§7 3/6: Organización y personal: Owner — GM, sales & tours ({{sueldo_titular}} al mes: «draw the rest from profit»), venue coordinator seasonal W-2 (Mar-Nov), facilities & grounds, event attendants seasonal part-time W-2, weekend sales & tours, housekeeping ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE; cobertura {{cobertura_horas}}); employer payroll taxes {{cargas_pct}}; nunca 1099 para quien el venue dirige; camareros y bartenders son del caterer ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "Como referencia salarial usa el convenio provincial de hostelería, que es la opción prudente. Ojo con el encaje: el VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería incluye a quien presta servicio de comida y bebida, y la finca que solo alquila el espacio no figura en su lista, que no es exhaustiva. Confírmalo con tu asesoría laboral antes de firmar el primer contrato. Lleva también el registro de jornada que exige el art. 34.9 del Estatuto de los Trabajadores, con la hora de entrada y de salida de cada persona, cada día, y sobre todo los sábados largos de montaje y recogida.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 106,
+   "nota": "§7 4/6: Organización y personal: Owner — GM, sales & tours ({{sueldo_titular}} al mes: «draw the rest from profit»), venue coordinator seasonal W-2 (Mar-Nov), facilities & grounds, event attendants seasonal part-time W-2, weekend sales & tours, housekeeping ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE; cobertura {{cobertura_horas}}); employer payroll taxes {{cargas_pct}}; nunca 1099 para quien el venue dirige; camareros y bartenders son del caterer ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "El día del evento mandan dos equipos en la misma casa, y hay que decidir quién da las órdenes. La regla es sencilla: tu coordinador es el único interlocutor de los novios y del catering, y el jefe de sala del catering lo es de sus camareros. Antes de cada evento, una reunión corta con el guion hora a hora, el plan B de lluvia y el reparto de la limpieza evita casi todos los malentendidos. En los fines de semana de más carga, hacia junio y septiembre, prevé desde el principio quién cubre los refuerzos, sea un auxiliar extra o apoyo del catering. Improvisar el mismo sábado acaba en prisas, en errores de montaje y en un equipo agotado a mitad de temporada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 124,
+   "nota": "§7 5/6: Organización y personal: Owner — GM, sales & tours ({{sueldo_titular}} al mes: «draw the rest from profit»), venue coordinator seasonal W-2 (Mar-Nov), facilities & grounds, event attendants seasonal part-time W-2, weekend sales & tours, housekeeping ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE; cobertura {{cobertura_horas}}); employer payroll taxes {{cargas_pct}}; nunca 1099 para quien el venue dirige; camareros y bartenders son del caterer ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "Forma al equipo antes de la primera temporada: prevención de riesgos laborales, primeros auxilios y evacuación. En una finca con jardín, carpa y niños corriendo, saber qué hacer ante una caída, un golpe de calor o una alarma es parte del servicio. Practica una evacuación con el plano de salidas y el punto de reunión, aunque con 300 personas no te obligue la norma estatal. El catering forma a su propio personal en alérgenos, temperaturas y manipulación de alimentos, y te lo acredita por escrito: pídeselo en el contrato.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 89,
+   "nota": "§7 6/6: Organización y personal: Owner — GM, sales & tours ({{sueldo_titular}} al mes: «draw the rest from profit»), venue coordinator seasonal W-2 (Mar-Nov), facilities & grounds, event attendants seasonal part-time W-2, weekend sales & tours, housekeeping ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE; cobertura {{cobertura_horas}}); employer payroll taxes {{cargas_pct}}; nunca 1099 para quien el venue dirige; camareros y bartenders son del caterer ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "91": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "Para abrir necesitas 311.409 €: 251.780 € de compras (acondicionamiento, fianza de 2 meses y renta anterior a la apertura) más 59.629 € de fondo de maniobra, que cubre 3 meses. El acondicionamiento (241.280 €) incluye 11.280 € de imprevistos. Con el IVA de la inversión (49.094 €), que adelantas y recuperas, la necesidad de caja llega a 360.503 €. La financiación son 100.000 € propios y un préstamo de 263.000 € al 6,5 %, a 8 años con 1 año de carencia y una cuota anual de 47.953 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 90,
+   "nota": "§8 1/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{espacio_pct}} espacio y servicios / {{comision_caterer_pct}} comisión, costes variables {{costes_variables_pct}}, personal {{personal_pct}}, renta {{ocupacion_pct}}, EBITDA {{ebitda_pct_a1}}, neto {{margen_neto_a1}} / {{margen_neto_a3}}, equilibrio {{equilibrio_eventos}} / {{equilibrio_caja_eventos}} eventos del tamaño medio, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Month {{mes_saldo_minimo}}, escenarios); el Word dice la verdad: el año 1 cuenta solo {{dias}} eventos ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "La cuenta de resultados a tres años proyecta unas ventas de 364.080 €, 393.206 € y 412.867 €. El primer año cuenta 120 eventos completos, y conviene leerlo bien: solo es posible si la primera temporada se vende durante la tramitación y la obra con reservas condicionadas a la licencia, que se convierten en firmes al obtenerla, porque las bodas se reservan con 12-18 meses de antelación. Con ese supuesto, el margen bruto es del 80,5 %, el personal cuesta 111.720 € y la renta 42.000 € (el 11,5 % de las ventas). El neto sale en 32.101 €, 46.928 € y 50.279 €. El crecimiento de los años 2 y 3 se cuenta en eventos equivalentes: 130 en el segundo año (+8 %) y 136 en el tercero (+5 %), con el mismo precio por invitado. En el libro de Excel lo que crece es el tamaño medio del evento, de 82 a 88,6 y 93,0 invitados.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 158,
+   "nota": "§8 2/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{espacio_pct}} espacio y servicios / {{comision_caterer_pct}} comisión, costes variables {{costes_variables_pct}}, personal {{personal_pct}}, renta {{ocupacion_pct}}, EBITDA {{ebitda_pct_a1}}, neto {{margen_neto_a1}} / {{margen_neto_a3}}, equilibrio {{equilibrio_eventos}} / {{equilibrio_caja_eventos}} eventos del tamaño medio, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Month {{mes_saldo_minimo}}, escenarios); el Word dice la verdad: el año 1 cuenta solo {{dias}} eventos ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "El equilibrio contable está en 105 eventos al año del tamaño medio (82 invitados), o en 72 invitados por evento si mantienes los 120 eventos, con unos ingresos de 317.157 €: deja una holgura del 14,8 % sobre el caso. El de caja está en 98 eventos en el primer año, con una holgura del 22,9 %, porque ese año tienes carencia y no devuelves capital. En el segundo sube a 113 eventos (holgura del 14,9 %) y en el tercero a 116 (18,1 %). Los años que hay que vigilar son esos dos, cuando ya pagas la cuota entera. El riesgo real es de ocupación: por debajo de 98 eventos del tamaño medio el primer año, y de 113 y 116 el segundo y el tercero, no hay caja.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 130,
+   "nota": "§8 3/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{espacio_pct}} espacio y servicios / {{comision_caterer_pct}} comisión, costes variables {{costes_variables_pct}}, personal {{personal_pct}}, renta {{ocupacion_pct}}, EBITDA {{ebitda_pct_a1}}, neto {{margen_neto_a1}} / {{margen_neto_a3}}, equilibrio {{equilibrio_eventos}} / {{equilibrio_caja_eventos}} eventos del tamaño medio, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Month {{mes_saldo_minimo}}, escenarios); el Word dice la verdad: el año 1 cuenta solo {{dias}} eventos ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "La tesorería numera los meses del 1 al 12, y el Mes 1 es marzo. La rampa arranca al 45 % y llega al ritmo de crucero en 12 meses, porque las bodas se reservan con 12-18 meses y la primera temporada se reserva antes de abrir, condicionada a la licencia. La rampa no quita ventas al año: solo las reparte hacia el final, como llegan las reservas de una finca nueva. El saldo mínimo del año, 51.025 €, es el del mes 2, abril, y el año acaba en febrero con 149.910 €. La primavera de arranque se sostiene con el fondo de maniobra, y el primer invierno, con la caja que deja la temporada; por eso la preventa de fechas es la tarea más rentable de los primeros meses.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 131,
+   "nota": "§8 4/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{espacio_pct}} espacio y servicios / {{comision_caterer_pct}} comisión, costes variables {{costes_variables_pct}}, personal {{personal_pct}}, renta {{ocupacion_pct}}, EBITDA {{ebitda_pct_a1}}, neto {{margen_neto_a1}} / {{margen_neto_a3}}, equilibrio {{equilibrio_eventos}} / {{equilibrio_caja_eventos}} eventos del tamaño medio, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Month {{mes_saldo_minimo}}, escenarios); el Word dice la verdad: el año 1 cuenta solo {{dias}} eventos ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "El DSCR mínimo es de 1,68, con 1,68 en el segundo año y 1,71 en el tercero: el negocio cubre la deuda, pero sin mucho colchón, y el banco querrá ver tu preventa de fechas. Sobre el payback: más de 3 años; eso explica por qué el arrendamiento tiene que ser largo, de quince años. Las dos líneas de ingresos van al 21 % de IVA, y en el primer año repercutes 76.457 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 74,
+   "nota": "§8 5/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{espacio_pct}} espacio y servicios / {{comision_caterer_pct}} comisión, costes variables {{costes_variables_pct}}, personal {{personal_pct}}, renta {{ocupacion_pct}}, EBITDA {{ebitda_pct_a1}}, neto {{margen_neto_a1}} / {{margen_neto_a3}}, equilibrio {{equilibrio_eventos}} / {{equilibrio_caja_eventos}} eventos del tamaño medio, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Month {{mes_saldo_minimo}}, escenarios); el Word dice la verdad: el año 1 cuenta solo {{dias}} eventos ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "El escenario pesimista del Excel es una primera temporada que no se vende: 100 eventos de 78 invitados a 34,00 € dan unas ventas de 265.200 € y un neto de −41.818 €. Si no consigues reservar fechas, condicionadas a la licencia, durante la tramitación y la obra, compara tu caso con este. En el optimista, 135 eventos de 85 invitados a 39,00 € dejan un neto de 89.189 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 70,
+   "nota": "§8 6/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{espacio_pct}} espacio y servicios / {{comision_caterer_pct}} comisión, costes variables {{costes_variables_pct}}, personal {{personal_pct}}, renta {{ocupacion_pct}}, EBITDA {{ebitda_pct_a1}}, neto {{margen_neto_a1}} / {{margen_neto_a3}}, equilibrio {{equilibrio_eventos}} / {{equilibrio_caja_eventos}} eventos del tamaño medio, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Month {{mes_saldo_minimo}}, escenarios); el Word dice la verdad: el año 1 cuenta solo {{dias}} eventos ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "Hay dos alternativas razonadas, sin Excel. Con catering propio la finca factura también el menú y la barra: las ventas se multiplican, pero también la inversión, la brigada y la responsabilidad sanitaria. Es un camino para hosteleros, y lo desarrolla el Plan de Negocio de Catering Temático para Eventos. En el solo alquiler, sin canon, la finca vendería unos 283.982 €, por debajo del equilibrio de caja, de unos 296.343 €: no cubre los fijos. Por eso el caso lleva el canon.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 82,
+   "nota": "§8 7/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{espacio_pct}} espacio y servicios / {{comision_caterer_pct}} comisión, costes variables {{costes_variables_pct}}, personal {{personal_pct}}, renta {{ocupacion_pct}}, EBITDA {{ebitda_pct_a1}}, neto {{margen_neto_a1}} / {{margen_neto_a3}}, equilibrio {{equilibrio_eventos}} / {{equilibrio_caja_eventos}} eventos del tamaño medio, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}} en el Month {{mes_saldo_minimo}}, escenarios); el Word dice la verdad: el año 1 cuenta solo {{dias}} eventos ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "100": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Lo primero que decide este negocio no es el mercado, sino el suelo. En suelo urbano basta con que el plan municipal admita el uso y con obtener la licencia de actividad. En suelo rústico, que es donde está la mayoría de las fincas, necesitas antes una autorización urbanística de tu comunidad. Y una regla sin excepciones: no confirmes fechas en firme sin licencia; antes de tenerla, solo reservas condicionadas a la licencia, con devolución íntegra si no llega. Incluye en el arrendamiento una condición suspensiva, para que el contrato solo se active si te conceden la calificación o la autorización y la licencia. Compruébalo con tu abogado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 108,
+   "nota": "§9 1/7: el marco US por niveles (federal, estatal, condado); LLC + EIN; business license y sales tax permit; ZONING ANTES DE FIRMAR: conditional / special use permit del condado (audiencia pública, condiciones: tope de eventos, horario, tráfico, ruido); lease contingent on CUP approval; ARRENDAMIENTO (decisión de orquestador 1): la obra (≈ {{capex}} de CAPEX) se hace sobre una propiedad ARRENDADA: exige un arrendamiento largo cuya duración CONTANDO LAS PRÓRROGAS sea al menos la del préstamo («SBA lenders typically require…; confirm with your lender», sin citar una regla concreta), opción de compra o derecho de tanteo (right of first refusal), consentimiento del propietario a la obra y a usar el arrendamiento como garantía, y negociar una TI allowance; lease contingent on CUP approval. Comprar la propiedad (SBA 504) = variante razonada SIN Excel ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "Empieza por tu comunidad, porque cada una usa una figura distinta. En Madrid, la Ley 8/2012 (art. 9) admite los actos sociales y eventos familiares en edificaciones existentes, y hace falta además la calificación urbanística del art. 148 de la Ley 9/2001: el informe llega en 1 mes, la resolución en 3 y, si nadie contesta, el silencio es negativo. En Andalucía, el art. 22 de la LISTA trata el uso como actuación extraordinaria: exige autorización previa, el silencio es desestimatorio y se paga una prestación compensatoria del 10 % del presupuesto de las obras. Cuéntalo todo en tu calendario, porque son meses de espera.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 105,
+   "nota": "§9 2/7: building / fire code: convertir un granero en salón = change of occupancy a assembly (Group A-2) → building permit y certificate of occupancy; sprinklers según IBC 903.2.1.2 «as adopted» (umbrales de ocupación o de superficie: «editions and local amendments vary», sin cifras rotundas); occupant load fijado y rotulado por el fire marshal; carpas con su propio permiso; «ask the building official and the fire marshal in writing»; los sprinklers con depósito y bomba, o una fosa séptica nueva, pueden doblar la partida ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "104": {
+   "estilo": "Normal",
+   "texto": "En Cataluña, el art. 47.3 bis del TRLU lo limita a masías y casas rurales catalogadas. En la Comunidad Valenciana, el TRLOTUP exige la declaración de interés comunitario (arts. 216 y 221, con un canon del 2 %), salvo la excepción del art. 219 por reutilizar arquitectura tradicional. Lo común: edificios existentes, informe previo y 6-12 meses o más antes de la licencia. En el resto de comunidades, pregunta en urbanismo qué figura usa la tuya.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 76,
+   "nota": "§9 3/7: ADA Title III (public accommodation: rutas accesibles, aseos, parking; «old buildings are grandfathered» es un mito, sin cita de cifras); agua y saneamiento: septic comercial dimensionado por invitados (pídele al ingeniero el cálculo); pozo: «ask your state drinking water program whether your well counts as a public water system» (sin citar 40 CFR 141.2 hasta la revisión D174) ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "La boda es un acto privado, pero la finca que la alquila a terceros es un establecimiento público (en la Comunidad Valenciana, un «salón de banquetes»): aplica la ley autonómica de espectáculos públicos y actividades recreativas, con su seguro obligatorio de responsabilidad civil (Madrid añade incendio). Solo damos la cifra de Andalucía, y como orientativa: 526.000 € para un aforo de 101 a 300 personas; en las demás comunidades, compruébalo. En autoprotección, la Directriz Básica (Orden INT/1068/2026, BOE de 10-10-2026) exige plan desde 1.000 personas en edificio o carpa y 5.000 al aire libre en recinto delimitado: con 300 quedas fuera, salvo que tu comunidad sea más exigente o te lo pidan por un entorno de riesgo, como el forestal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 120,
+   "nota": "§9 4/7: alcohol: el venue NO vende; lo sirve el exclusive caterer (o un bartending service licenciado) con su licencia o permiso de catering y su liquor liability, con el venue como additional insured; BYOB solo con bartender licenciado y host liquor liability del cliente; algunos estados regulan los venues que acogen alcohol: «ask your state ABC» (sin citar leyes estatales concretas hasta D174); ID y nada a menores ni a personas ebrias ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "El ruido se rige por el RD 1367/2007, el agua de pozo por el RD 3/2023 y la comida testigo por el RD 1086/2020 (art. 30), como has visto en el plan de operaciones. Los horarios de cierre y la música exterior dependen de tu comunidad y de la ordenanza de tu ayuntamiento: compruébalo allí antes de prometer una hora de fin de fiesta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 64,
+   "nota": "§9 5/7: sales tax del venue: el site fee tributa en unos estados y no en otros (a veces solo si se factura con catering); la comisión del caterer suele ser una fee entre empresas: el libro pone {{sales_tax}} en el espacio y 0 % en la comisión como EJEMPLO: «ask your state's department of revenue / your CPA» (sin nombrar estados hasta D174); música: licencias ASCAP/BMI/SESAC del venue; ruido: ordenanza del condado y condiciones del CUP (curfew, decibel limit) ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "El espacio y los servicios del evento llevan el 21 % de IVA, y el canon, también; el menú del catering va al 10 %. Un precio único con todo al 10 % es arriesgado: pon precio propio al espacio o presenta una consulta vinculante a la DGT (LIVA, art. 91). En el IAE, el epígrafe del espacio es criterio de tu asesoría, y no pagas cuota con menos de un millón de euros de cifra de negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 78,
+   "nota": "§9 6/7: seguros y contratos: general liability, property, umbrella, host liquor liability, workers' comp ({{seguros_anual}} al año: Kit estimate, pide cotizaciones); COI de cada vendor con el venue como additional insured; event insurance de la pareja; contrato: retainer aplicado al precio, tramos de cancelación como estimación razonable del daño (no penalty) con rebooking credit y revisión de un abogado del estado («non-refundable» NUNCA sin ese matiz); si se firma en una bridal show o fuera del venue: «ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway» (decisión de orquestador 2: NO afirmar que aplica); seasonal W-2, I-9, salario mínimo estatal (federal $7.25/h, DOL), FLSA ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "El arrendamiento es de uso distinto de vivienda (LAU, arts. 3 y 4) y de pacto libre; lo habitual es una fianza de 2 meses, compruébalo con tu abogado. En el contrato con los novios, la señal y las penalizaciones deben ser proporcionales (TRLGDCU, art. 85.6) y recíprocas (art. 87.2); la cláusula de jurisdicción no puede llevar al consumidor a un juzgado distinto del de su domicilio (art. 90.2), y si contratas a distancia, el servicio con fecha fija queda fuera del derecho de desistimiento (art. 103.l). En personal aplican los arts. 16 y 34.9 del Estatuto de los Trabajadores. Todo lo demás, compruébalo en tu ayuntamiento, tu comunidad o tu asesoría: lo que no está aquí no lo afirmamos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 120,
+   "nota": "§9 7/7: la ceremonia: la licencia de matrimonio la da el county clerk y el officiant lo regula cada estado; el venue solo acoge; y, como ÚLTIMA frase o frases, la NOTA UK: planning permission (change of use) del council, approved premises para ceremonias civiles («check with your council»), VAT en el alquiler («ask your accountant»), premises licence + personal licence para el alcohol, fire risk assessment (Regulatory Reform (Fire Safety) Order 2005) ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "109": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "La conclusión es que una finca de eventos y bodas de este tamaño es viable, pero exige método y vender las fechas a tiempo. Con 120 eventos, el primer año deja un neto de 32.101 € y una holgura de caja del 22,9 %; en los años 2 y 3 la holgura baja al 14,9 % y al 18,1 %, y son los que hay que vigilar. El DSCR mínimo es de 1,68, el saldo mínimo de 51.025 € llega en abril y el payback, de más de 3 años. Es un negocio de patrimonio y paciencia, no de beneficio rápido. Si lo comparas con otros planes, fíjate en que aquí el mayor riesgo no es el coste, sino la ocupación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 121,
+   "nota": "§10 1/7: Hoja de ruta: el orden del checklist (84 tareas en 6 fases: business setup, zoning & permits, build-out & equipment, staff & caterer, brand & bookings, season & events); ninguna fecha firme antes del CUP y del certificate of occupancy; alternativas razonadas (comprar con SBA 504, in-house catering, preferred vendors); cierre con el Excel, la calculadora de precios, los contratos y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "El primer riesgo es la licencia. Con silencio negativo y plazos de 6-12 meses o más, una finca sin autorización no puede celebrar nada. Se mitiga con la consulta urbanística antes de firmar, la condición suspensiva en el arrendamiento y la regla de no confirmar fechas sin licencia (antes de tenerla, solo reservas condicionadas con devolución íntegra). El segundo es la ocupación: por debajo de unos 98 eventos el primer año, y de unos 113-116 desde el segundo, no hay caja. Se mitiga con la preventa de fechas, condicionada a la licencia, durante la tramitación y la obra, con acuerdos con wedding planners y agencias, que traen el 20 % de las ventas con una comisión del 12,5 %, y con una agenda que no dependa solo de las bodas: empresa, celebraciones privadas y eventos pequeños.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 136,
+   "nota": "§10 2/7: Hoja de ruta: el orden del checklist (84 tareas en 6 fases: business setup, zoning & permits, build-out & equipment, staff & caterer, brand & bookings, season & events); ninguna fecha firme antes del CUP y del certificate of occupancy; alternativas razonadas (comprar con SBA 504, in-house catering, preferred vendors); cierre con el Excel, la calculadora de precios, los contratos y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "El tercero es depender del catering. Si es uno solo y se va, te quedas sin menú. Homologa a dos, firma un contrato con plazo, canon auditable y condiciones de salida, y recuerda que el canon es un supuesto: negócialo, porque cada punto vale unos 6.675 €. El cuarto es la lluvia, que se resuelve con el salón y la carpa. El quinto es el ruido y los vecinos: limitador-registrador, baile final en interior y altavoces de espaldas a las casas. Una sola denuncia seria puede costarte la licencia, así que habla con tus vecinos antes del primer evento, no después.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 101,
+   "nota": "§10 3/7: Hoja de ruta: el orden del checklist (84 tareas en 6 fases: business setup, zoning & permits, build-out & equipment, staff & caterer, brand & bookings, season & events); ninguna fecha firme antes del CUP y del certificate of occupancy; alternativas razonadas (comprar con SBA 504, in-house catering, preferred vendors); cierre con el Excel, la calculadora de precios, los contratos y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "El sexto riesgo es comprar la finca: es una inversión de millones de euros que este plan no necesita. Arrienda una finca con las edificaciones ya construidas. El séptimo es arrendarla poco tiempo: amortizar la obra en cinco años hunde la cuenta, y por eso el contrato es de quince años, con carencia durante las obras y reversión de las mejoras. El octavo es vivir solo de los sábados de mayo a octubre, con la renta y la plantilla planas todo el año: el INE cuenta que de mayo a octubre se celebra el 63,7 % de los matrimonios, y el invierno se come la caja de la temporada si no hay eventos de empresa y celebraciones privadas que lo llenen.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 121,
+   "nota": "§10 4/7: Hoja de ruta: el orden del checklist (84 tareas en 6 fases: business setup, zoning & permits, build-out & equipment, staff & caterer, brand & bookings, season & events); ninguna fecha firme antes del CUP y del certificate of occupancy; alternativas razonadas (comprar con SBA 504, in-house catering, preferred vendors); cierre con el Excel, la calculadora de precios, los contratos y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "El noveno es un seguro corto: pide responsabilidad civil con el capital que exija tu comunidad, intoxicación en el contrato del catering, daños a la carpa y pérdida de beneficio, y compruébalo con tu asesoría. El décimo son los falsos autónomos para el montaje y el aparcamiento: fijos discontinuos, siempre. Y hay un plan B si el modelo no te convence: las alternativas razonadas del §2, el catering propio, para quien ya es hostelero, y el solo alquiler, que sin canon no llega al equilibrio de caja. Ninguna sustituye a la regla de oro de este plan: ni un euro de obra antes de tener el permiso en la mano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 110,
+   "nota": "§10 5/7: Hoja de ruta: el orden del checklist (84 tareas en 6 fases: business setup, zoning & permits, build-out & equipment, staff & caterer, brand & bookings, season & events); ninguna fecha firme antes del CUP y del certificate of occupancy; alternativas razonadas (comprar con SBA 504, in-house catering, preferred vendors); cierre con el Excel, la calculadora de precios, los contratos y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "El plan de acción de los primeros 90 días tiene tres tramos. En las semanas 1-4 constituyes la sociedad, cierras el arrendamiento con condición suspensiva y haces la consulta urbanística. En las semanas 5-8 encargas el proyecto técnico, solicitas la calificación o la autorización y eliges el catering exclusivo. En las semanas 9-13 firmas el contrato del catering y trabajas la marca, la web, la fotografía, las primeras visitas y la preventa de fechas, siempre condicionada a la licencia. El checklist que acompaña al plan tiene 84 tareas en seis fases: 12 de constitución y fiscalidad, 16 de finca y licencia, 15 de obra y equipamiento, 13 de personal y catering, 14 de marca y reservas y 14 de temporada y de cada evento. Marca cada tarea al cerrarla.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 129,
+   "nota": "§10 6/7: Hoja de ruta: el orden del checklist (84 tareas en 6 fases: business setup, zoning & permits, build-out & equipment, staff & caterer, brand & bookings, season & events); ninguna fecha firme antes del CUP y del certificate of occupancy; alternativas razonadas (comprar con SBA 504, in-house catering, preferred vendors); cierre con el Excel, la calculadora de precios, los contratos y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "El siguiente paso es completar el Excel con tus cifras: tu renta real, tu canon negociado, tu mezcla de eventos, tu préstamo y tu calendario de obra. Cambia solo las celdas verdes; este documento recoge los números del caso, y los tuyos los calcula el libro. Antes de gastar un euro, consulta a tu ayuntamiento y a tu comunidad qué figura urbanística necesita tu finca, y no firmes el arrendamiento sin la condición suspensiva. Si después de eso las cuentas siguen saliendo, tendrás un negocio con base. Si no salen, habrás perdido una tarde y no una fortuna.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "wed_b",
+   "palabras": 98,
+   "nota": "§10 7/7: Hoja de ruta: el orden del checklist (84 tareas en 6 fases: business setup, zoning & permits, build-out & equipment, staff & caterer, brand & bookings, season & events); ninguna fecha firme antes del CUP y del certificate of occupancy; alternativas razonadas (comprar con SBA 504, in-house catering, preferred vendors); cierre con el Excel, la calculadora de precios, los contratos y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario (pizza, covers, dine-in, oven…) y sus cifras NO valen. CONTENIDO: el párrafo ES de la finca (campo «es») adaptado a EE. UU."
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for hospitality businesses"
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "aichef.pro\ninfo@aichef.pro"
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "→ Plan de Negocio: Catering & Kit Temático para Eventos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Catering Business Plan Kit"
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "→ Kit Gestión de Personal y Turnos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Mobile Bar Business Plan Kit"
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "→ Kit Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Catering Checklists Kit Pro"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}

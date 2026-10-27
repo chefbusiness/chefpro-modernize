@@ -18,11 +18,12 @@ GN; GM, GCAF, GFT de BP) → BBQ (GM, GRC-plan, GBQ-*) → PAEL (GM, GRB-plan, G
 el ES NORMALIZADO con el VOCABULARIO de la finca invertido (invitado → cubierto, evento → día, finca → local, espacio y
 servicios → comida, canon → bebida…: `normalizadores()`, copia de `inventario_delta.py`). Grupos:
   GM          ES exacto de una cadena GM (motor común) de la pizza o de BP/BP2, con EN limpio (sin RX_REESCRIBIR).
-  GR          EN reutilizado de una cadena NO GM, de otro conjunto o casado solo tras normalizar, con EN limpio:
-              preparar_tandas lo escribe y la tanda GWED-plan lo revisa (textos_en/GR.revision.json).
+  GR          EN reutilizado de una cadena NO GM, de otro conjunto o casado solo tras normalizar, con EN limpio (solo
+              del plan): preparar_tandas lo escribe y la tanda GWED-plan lo revisa (textos_en/GR.revision.json).
   GWED-plan   nuevas del plan + las reutilizables con vocabulario o caso de restaurante (RX_REESCRIBIR, con propuesta)
               + las 14 filas D19 (sin propuesta: D165 las cambia todas).
-  GWED-check  nuevas del checklist (84 tareas: casi todo texto nuevo).
+  GWED-check  nuevas del checklist (84 tareas: casi todo texto nuevo) + las reutilizables no GM del checklist, con
+              propuesta (cada fila lleva la tarea US de D169 como pista: la propuesta de otro kit no basta).
 
     python3 bp9.py mapas            # autotest + cruce con censo_es.json + verificar (incluye los sha256 de las fuentes)
 """
@@ -321,6 +322,8 @@ def grupo_de(planes, texto=None, tratamiento=None, donde=None):
         return destino
     if origen == 'texto' and prop['motor']:
         return 'GM'
+    if destino == 'GWED-check':
+        return 'GWED-check'                                  # checklist: con propuesta y la tarea US de D169 (pista)
     return 'GR'
 
 

@@ -43,6 +43,10 @@ FIJOS_NUEVOS = OrderedDict([
      'This file is part of the Wedding Venue Business Plan Kit by AI Chef Pro.'),
     # títulos (D169 A1, D162 A1-A3)
     ('CHECKLIST DE APERTURA — FINCA DE EVENTOS Y BODAS', 'WEDDING VENUE STARTUP CHECKLIST'),
+    # DV de la columna OK: el EN pasa la lista a «✓,☐,N/A» (CLAVES['—'] = '☐', mapas_wed.instalar); el aviso de error
+    # tiene que decir lo mismo (la Pizza EN publicada conserva «—» en este aviso: F2-NOTAS §5)
+    ('Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.',
+     'Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.'),
     ('INSTRUCCIONES DE USO — Plan financiero Finca de Eventos y Bodas',
      'HOW TO USE THIS WORKBOOK — Wedding Venue Financial Projections'),
     ('PLAN DE NEGOCIO: FINCA DE EVENTOS Y BODAS', 'WEDDING VENUE BUSINESS PLAN: BARN & EVENT VENUE'),
@@ -700,7 +704,9 @@ for _f_ in range(7, 26):
                                                        'en "fijos_en"); sin marcas ni normas españolas: solo rangos con '
                                                        'fuente leída o «get local quotes»')
 # Tabla D19 (Instrucciones 35-48): «US WEDDING VENUE BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source |
-# Note). D165 + decisión de orquestador 4: solo lo «leída» lleva fuente; lo «(resumen)» = «Kit estimate» o «ask…»
+# Note). D165 + decisión de orquestador 4: solo lo «leída» lleva fuente; lo «(resumen)» = «Kit estimate» o «ask…». Filas
+# alineadas con el tema ES (A41 «Canon del catering exclusivo» es FIJO: «Caterer commission (exclusive caterer)»); la de
+# «comida testigo» (46) pasa a «Venue rental fee»
 _D19 = OrderedDict([
     (35, 'D165 fila → «Month 1 of the plan» · «March» · «Plan decision» · nota: el permiso y la obra se cierran en el '
          'invierno anterior; picos octubre, septiembre y junio; valle enero'),
@@ -713,30 +719,30 @@ _D19 = OrderedDict([
     (38, 'D165 fila (sustituye «Bodas en España») → «Guests per wedding» · «about 100-150 at a barn venue» · «Kit '
          'estimate; national wedding studies publish yearly averages: check the latest» · nota: el caso usa 130 por boda '
          'y 90 de media con los demás eventos (decisión de orquestador 4: sin cifras de The Knot)'),
-    (39, 'D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit '
-         'estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre '
-         'semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)'),
-    (40, 'D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se '
+    (39, 'D165 fila → «Booking lead time» · «12-18 months for weddings» · «Kit estimate» · nota: la primera temporada se '
          'reserva antes de abrir, solo con holds contingentes al CUP y al certificate of occupancy; la rampa del plan dura '
          '12 meses'),
-    (41, 'D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit '
+    (40, 'D165 fila → «Direct cost per event» · «$1,000 wedding · $500 corporate · $500 private · $300 micro» · «Kit '
          'estimate» · nota: limpieza, restrooms, generator fuel, parking attendants y security; camareros y cocina son del '
          'caterer'),
-    (42, 'D165 fila → «Caterer commission» · «about 10% of the caterer\'s food & beverage sales at the venue» · «Kit '
+    (41, 'D165 fila → «Caterer commission» · «about 10% of the caterer\'s food & beverage sales at the venue» · «Kit '
          'assumption (no public benchmark)» · nota: neta de sales tax, service charge y gratuities; negocia el tuyo; '
          'liquidación mensual con derecho de auditoría'),
-    (43, 'D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, '
+    (42, 'D165 fila → «Venue staff per event» · «coordinator + 1-2 attendants» · «Kit estimate» · nota: boda 2 attendants, '
          'el resto 1; servers y bartenders los pone el caterer'),
-    (44, 'D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & '
+    (43, 'D165 fila (sustituye «IVA») → «Sales tax on venue charges» · «varies by state (8% example on venue rental & '
          'services; 0% on the caterer commission)» · «Your state\'s department of revenue» · nota: algunos estados gravan '
          'el site fee y otros no, a veces solo si va con catering: confírmalo antes de fijar tarifas'),
-    (45, 'D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an '
+    (44, 'D165 fila (sustituye «autoprotección») → «Fire sprinklers in an assembly (A-2) venue» · «required above an '
          'occupant-load or fire-area threshold» · «IBC 903.2.1.2, as adopted by your state or county» · nota: «editions '
          'and local amendments vary: ask the building official and the fire marshal in writing» (sin cifras de umbral '
          'hasta la revisión D174)'),
-    (46, 'D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the '
+    (45, 'D165 fila (sustituye «ruido RD 1367/2007») → «Noise and music curfew» · «set by your county ordinance and the '
          'conditions of your CUP» · «Your county zoning office» · nota: decibel limit, sound meter, baile final dentro, '
          'altavoces de espaldas a los vecinos'),
+    (46, 'D165 fila → «Venue rental fee (peak Saturday)» · «roughly $3,500-$10,000 in published rate cards» · «Kit '
+         'estimate from published venue rate cards (2026): get local quotes» · nota: viernes/domingo ≈ −15 %, entre '
+         'semana ≈ −30 %, off-peak ≈ −20 % (calculadora del kit)'),
     (47, 'D165 fila (sustituye «agua de pozo RD 3/2023») → «Well water» · «a well that serves your guests may count as a '
          'public water system» · «Ask your state drinking water program» · nota: análisis y permiso antes del primer '
          'evento (sin citar 40 CFR 141.2 hasta la revisión D174)'),
@@ -859,6 +865,10 @@ for _h, _tareas in _CHK.items():
     for _k, _t in enumerate(_tareas):
         for _col in 'BE':
             CELDA_PISTAS[('WEDC', _h, '%s%d' % (_col, 5 + _k))] = 'D169 tarea US: ' + _t
+# tareas cuyo ES es un rótulo de la inversión (FIJO: el EN ya es la tarea US) y notas de Supuestos que son GM (motor)
+for _k in [('WEDC', 'F3 - Obra y equipamiento', 'B%d' % _f_) for _f_ in (8, 11, 12, 16)] + \
+        [('WEDP', _S, _c) for _c in ('A2', 'C20', 'C21', 'C22')] + [('WEDP', _N, 'A41')]:
+    CELDA_PISTAS.pop(_k, None)
 
 # Pistas por TEXTO propias de la finca (se suman a las de extraer_textos.PISTAS): glosario research §9
 PISTAS_EXTRA = [
