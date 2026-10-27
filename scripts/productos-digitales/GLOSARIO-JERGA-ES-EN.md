@@ -179,6 +179,25 @@ requisitos de la sala → **venue requirements** · temporada alta de bodas → 
 | categoría 4* / 5* | 4-star hotel (oficial) | **upscale / luxury** (en EE. UU. no hay estrellas oficiales) | por verificar |
 | paridad en OTAs · régimen · cargo a habitación | — | **rate parity** (Expedia, Booking.com; resort fee en el precio total, 16 CFR Part 464) · **rate plan / meal plan** · **room charge** | firme (eCFR) |
 
+## Fincas de eventos y bodas (Wedding Venue Business Plan Kit, F1 27-oct-2026; detalle y fuentes en `business-plans-en-9/F1-research-us-delta.md` §9)
+
+Estado: **medido** (DataForSEO US, 27-oct) y **propuesto** hasta que la F2 lo aplique.
+finca de eventos → **wedding venue / event venue** (1,000 / 720 búsquedas «… business plan»; tipos: **barn venue**, estate venue,
+banquet hall; nunca «estate» ni «farm» como nombre del negocio) · alquiler del espacio → **venue rental fee / site fee** · catering
+exclusivo / homologados / propio → **exclusive caterer / preferred vendor list / in-house catering** · canon del catering →
+**caterer commission** (% of F&B; nunca «canon» ni «royalty») · señal → **retainer** (aplicado al precio; «non-refundable» solo con la
+tabla de cancelación) · fianza por daños → **security deposit** · mínimo garantizado / recuento final → **guaranteed guest count /
+final headcount** (el **food & beverage minimum** es del caterer) · invitados / precio por invitado / eventos al año → **guests /
+revenue per guest / events per year** (nunca «covers» en un venue) · coordinación del día → **venue coordinator** (del venue) ≠
+**day-of coordinator** (de la pareja) · montaje y recogida → **setup / teardown, load-in / load-out** · plan B de lluvia → **rain plan** ·
+aforo → **maximum occupancy / occupant load** · calificación urbanística + licencia → **conditional (special) use permit + certificate of
+occupancy** (assembly, Group A-2) · temporada alta/media/baja → **peak / shoulder / off-peak** · preboda, boda íntima, cena de la víspera →
+**rehearsal, micro wedding / elopement, rehearsal dinner** · suite de novios → **bridal suite / groom's lounge** · proveedores externos →
+**outside vendors** (+ outside catering fee, cake-cutting fee, corkage fee) · portales de bodas → **The Knot / WeddingWire storefronts** ·
+fijo discontinuo → **seasonal employee (W-2)** · grupo electrógeno / limitador → **standby generator / decibel limit, music curfew** ·
+aseos adaptados, saneamiento, pozo → **ADA-compliant restrooms, septic system, well (public water system)** · software de reservas →
+**venue management software** · dossier → **wedding brochure / pricing guide** · comida testigo → *no aplica en EE. UU.*
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en
