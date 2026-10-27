@@ -331,18 +331,21 @@ export function bannerHref(productUrl, medium, slug) {
 
 export function renderProductBanner(product) {
   const chrome = CHROME[product.catalogue] || CHROME.en;
-  const href = product.href || product.url;
+  const href = esc(product.href || product.url);
+  const link = `href="${href}" target="_blank" rel="noopener"`;
   return (
     `<aside class="dp-banner not-prose" data-product="${esc(product.id)}">` +
+    `<a class="dp-banner__photo-link" ${link}>` +
     `<img class="dp-banner__photo" src="${esc(product.image)}" alt="${esc(product.title)}" loading="lazy" decoding="async" />` +
+    `</a>` +
     `<div class="dp-banner__body">` +
     `<div class="dp-banner__top">` +
     `<p class="dp-banner__tag">${esc(chrome.tag)}</p>` +
     `<img class="dp-banner__logo" src="${LOGO}" alt="AI Chef Pro" />` +
     `</div>` +
-    `<p class="dp-banner__title">${esc(product.title)}</p>` +
+    `<p class="dp-banner__title"><a class="dp-banner__title-link" ${link}>${esc(product.title)}</a></p>` +
     `<p class="dp-banner__price">${esc(product.price)}</p>` +
-    `<a class="dp-banner__cta" href="${esc(href)}">${esc(chrome.cta)}</a>` +
+    `<a class="dp-banner__cta" ${link}>${esc(chrome.cta)}</a>` +
     `</div></aside>`
   );
 }
