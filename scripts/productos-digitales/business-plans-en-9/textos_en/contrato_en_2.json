@@ -1,0 +1,210 @@
+[
+ {
+  "estilo": "Separador",
+  "texto": ""
+ },
+ {
+  "estilo": "H1",
+  "texto": "Model 2 · Exclusive Caterer Agreement"
+ },
+ {
+  "estilo": "Kicker",
+  "texto": "BETWEEN THE VENUE AND THE CATERER THAT WORKS IT EXCLUSIVELY"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "[Drafting note: this is a template, not legal advice. Have an attorney licensed in your state review it before you sign.]"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Made on [mm/dd/yyyy] in [City], [State]."
+ },
+ {
+  "estilo": "H2",
+  "texto": "Parties"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "[Venue legal name], a [State] [LLC], with its address at [address], represented by [name and title] (the \"Venue\")."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "[Caterer legal name], a [State] [entity type], with its address at [address], represented by [name and title] (the \"Caterer\")."
+ },
+ {
+  "estilo": "H2",
+  "texto": "1. Purpose and exclusivity"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "During the term of this Agreement, the Venue grants the Caterer the exclusive right to provide food and beverage service at every event held at [venue name and address]. The Venue will not allow another caterer on the property, and will not book an event that uses a food or beverage provider other than the Caterer, except as stated below."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Agreed exceptions: [a wedding cake or desserts from a licensed bakery chosen by the client, as long as the bakery provides its license and a certificate of insurance (COI) naming the Venue as additional insured; alcohol supplied by the client only if the Venue approves it in writing and the Caterer’s liquor license allows it; other: [specify]]. For each exception, the Caterer only serves and is not responsible for the product the client supplies."
+ },
+ {
+  "estilo": "H2",
+  "texto": "2. Direct contracting and billing"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Caterer contracts directly with the client for the menu and the bar and bills the client directly for them, adding the sales tax, service charge and gratuity that apply under [State] law. The Caterer explains in writing to each client what is a service charge and what is a gratuity, and who receives each. The Venue does not set, collect or guarantee those charges. The Venue bills the client separately for its venue rental fee and services, with the sales tax that applies, if any."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Venue tells the Caterer about each new booking within [3] business days and shares the client’s contact details. The Caterer sends its proposal within [5] business days. If a client does not book the Caterer, the Venue may not confirm the event without catering unless both parties agree in writing."
+ },
+ {
+  "estilo": "H2",
+  "texto": "3. Caterer commission"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "In exchange for exclusivity and the use of the Venue’s facilities, the Caterer pays the Venue a commission of [10]% of the food and beverage sales it bills for events held at the Venue, calculated on the amount net of sales tax, service charge and gratuities. The [10]% is a starting point only: negotiate it based on the value of the space, each party’s investment and the expected number of events."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Monthly statement.** By the [10]th day of each month, the Caterer sends the Venue a statement of the previous month’s food and beverage sales for each event, with the event date, client, net amount and invoice number."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Commission invoice.** The Venue invoices the commission to the Caterer, and the Caterer pays it within [15] days of receiving the invoice."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Audit right.** With [15] days’ written notice, and no more than once per quarter, the Venue may review the Caterer’s invoices and payment records for events held at the Venue. If the review shows an underpayment of more than [3]%, the Caterer pays the missing commission, interest at [rate]% and the cost of the review."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Annual minimum (optional).** [The commission will not be less than $[amount] per year; if it falls short, the Caterer pays the difference at the end of the contract year.]"
+ },
+ {
+  "estilo": "H2",
+  "texto": "4. Use of the Venue’s prep and warming kitchen"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Venue makes [the prep and warming kitchen, refrigeration, wash area and storage] available to the Caterer on the days and hours of each event. The Caterer:"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "keeps its own health permit and any other permit or license required by [State] and [County] for its operation, including at this location, and gives the Venue a copy before its first event;"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "is responsible for its own food safety plan, keeps it current and applies it at every event;"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "uses the facilities with care, does not modify them or install equipment without the Venue’s written permission, and pays to repair anything it damages, beyond normal wear and tear."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Venue keeps responsibility for general maintenance of the facilities, water, power and propane or gas service, and structural cleaning."
+ },
+ {
+  "estilo": "H2",
+  "texto": "5. Food allergens"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Before each event, the Caterer gives the client, in writing, the allergen information for each dish, covering the major food allergens as defined by federal law and your state or local rules. The Caterer also keeps this information available at the service for any guest who asks. The Caterer records the allergies and dietary restrictions reported with the final headcount and adapts dishes when possible. The Caterer is responsible for the accuracy of this information."
+ },
+ {
+  "estilo": "H2",
+  "texto": "6. Staff"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Caterer’s kitchen, service and bar staff are hired, directed and paid by the Caterer as its own W-2 employees, in compliance with the Fair Labor Standards Act, Form I-9 requirements and applicable state wage laws, including workers’ compensation. They are trained in food safety and, where required, alcohol service. There is no employment relationship between that staff and the Venue. The Caterer keeps enough staff for the service and for cleaning up after itself, and is responsible for their actions."
+ },
+ {
+  "estilo": "H2",
+  "texto": "7. Liquor license and alcohol service"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Caterer holds, at its own cost, the liquor license or catering permit that [State] and [County] require to serve alcohol at events at the Venue, and gives the Venue a copy before its first event. The Venue does not sell or serve food or alcohol. The Caterer serves alcohol under its own license and follows the law on checking IDs, not serving visibly intoxicated guests, and last call. If the Caterer’s license is suspended or lost, it tells the Venue the same business day."
+ },
+ {
+  "estilo": "H2",
+  "texto": "8. Insurance"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Caterer keeps in force, at its own cost, the following coverage for its work at the Venue, with the Venue named as additional insured where the policy allows: general liability, liquor liability of at least $[1,000,000] per occurrence, workers’ compensation as required by [State] law, and commercial auto liability if it drives to the property. The Caterer gives the Venue a COI at signing and at each renewal. If the Caterer lets coverage lapse, the Venue may suspend its activity at the Venue until it is restored."
+ },
+ {
+  "estilo": "H2",
+  "texto": "9. Schedule, cleanup, waste and grease"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Schedule: the Caterer may access the kitchen from [time] and finishes load-out before [time] on the day after the event, following the event schedule the Venue sets with the client."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Cleanup: after each event, the Caterer leaves the kitchen and bar area clean and sanitized, and removes its dishes, glassware and equipment."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Waste and grease: the Caterer removes its own food waste and packaging at every event and disposes of used cooking oil and grease (FOG) through a licensed hauler, with a receipt available to the Venue. No grease goes down the drains or into the septic system."
+ },
+ {
+  "estilo": "H2",
+  "texto": "10. Minimum menus, quality and tasting"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Caterer offers at least [three] menus with a minimum price of $[amount] per guest before sales tax, service charge and gratuity, at a quality consistent with the Venue’s brand. The Caterer offers a tasting to couples who ask for one [at no charge for the wedding menu, with a minimum of [number] guests]. If the Venue receives repeated client complaints about quality or service, it may request changes, and the Caterer makes them within [30] days."
+ },
+ {
+  "estilo": "H2",
+  "texto": "11. Term, renewal and termination"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "This Agreement lasts [3] years from [mm/dd/yyyy] and renews for successive periods of [1] year unless either party gives the other [90] days’ written notice that it will not renew."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Either party may terminate this Agreement if the other fails to meet an essential obligation (for example, unpaid commission, loss of the Caterer’s health permit or liquor license, lapsed insurance, a serious food safety violation, or loss of the Venue’s permits) and does not fix it within [30] days after written notice. Events already booked before termination are served through to the end, unless the reason for termination prevents it."
+ },
+ {
+  "estilo": "H2",
+  "texto": "12. Return of the kitchen"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "When this Agreement ends, the Caterer returns the kitchen and facilities in good condition, apart from normal wear and tear, removes its equipment and stock within [15] days and pays any commission still due. The Venue returns any security deposit it received from the Caterer, less any amount owed."
+ },
+ {
+  "estilo": "H2",
+  "texto": "13. Governing law and venue"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "This Agreement is governed by [State] law. The parties submit to the courts of [County], [State], for any dispute arising out of it. [Optional: before going to court, the parties will first try to resolve the dispute through good-faith negotiation or mediation.]"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Each party has read this Agreement and signs it in two copies, on the date shown at the top. Electronic signatures are valid for both parties."
+ },
+ {
+  "estilo": "Firma",
+  "texto": "The Venue: __________________________        The Caterer: __________________________"
+ },
+ {
+  "estilo": "Firma",
+  "texto": "Name: ______________        Name: ______________"
+ },
+ {
+  "estilo": "Firma",
+  "texto": "Title: ______________        Title: ______________"
+ },
+ {
+  "estilo": "Firma",
+  "texto": "Date: ______________        Date: ______________"
+ }
+]
