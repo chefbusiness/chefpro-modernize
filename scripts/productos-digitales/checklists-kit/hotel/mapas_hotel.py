@@ -68,7 +68,11 @@ RX_CONTEXTO_PENDIENTE = (r'(?i)\b(?:restaurants?(?! consultant| supply)|FOH|host
                          r'pizzas?|pizzerias?|burgers?|ghost kitchens?|packers?|app managers?|commissar(?:y|ies)|'
                          r'coffee shops?|cafes?|ice cream shops?|scoop shops?|dipping cabinets?|batch freezers?|'
                          r'scoopers?|pastry shops?|bakery cases?|chocolate shops?|food trucks?)\b')
-NO_HEREDAR = {}
+# revisión final (27-oct): el EN heredado del base dice «shop → register» (molde de cafetería / heladería); en el hotel
+# son las rondas y la caja → traducción propia en textos_en/G1.json
+NO_HEREDAR = {'▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, '
+              'cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y '
+              'la otra el detalle.': 'shop → register (molde de otro kit): en el hotel, rounds → cash drawer'}
 # gates_en.py G2: términos de otros kits que NINGUNA celda EN del hotel puede llevar. «restaurant», «bartender»,
 # «server», «host stand», «banquet», «BEO», «line cook» y «coffee machine» son de hotel y quedan permitidos.
 TERMINOS_PROHIBIDOS = (r'(?i:\b(?:pizzas?|pizzerias?|burgers?|ghost kitchens?|packers?|app managers?|commissar(?:y|ies)|'
@@ -362,13 +366,13 @@ _SERVICIOS_13 = OrderedDict([
          'of guest rooms for bed bugs — service visit and signed service report on file', 'Monthly')),
     (7, ('Kitchen hood and duct cleaning by a certified contractor at the NFPA 96 frequency for your cooking volume '
          '(quarterly if high volume, semiannual if moderate): service report on file', 'Semiannual')),
-    (8, ('Optional third-party food safety audit or ATP swab testing to verify your cleaning (many brands require an '
-         'annual audit)', None)),
+    (8, ('Optional third-party food safety audit or ATP swab testing to verify your cleaning (many brands require one '
+         'or two a year)', None)),
     (9, ('Review your food safety plan (HACCP if your health department or a variance requires one) and supplier '
          'approvals: the menu and buffet changes of the year', None)),
-    (10, ('Renew food handler cards and allergen training for all F&B staff, banquet extras included, and check a '
-          'certified food protection manager is on the F&B management team (FDA Food Code 2-102.12; card rules vary '
-          'by state)', None)),
+    (10, ('Check food handler cards are current for all F&B staff, banquet extras included (renew them when your state '
+          'requires), refresh allergen training, and check a certified food protection manager is on the F&B '
+          'management team (FDA Food Code 2-102.12; card rules vary by state)', None)),
     (11, ('Calibrate the thermometers and probes of walk-ins, buffet and in-room dining in ice water (32 °F) and log '
           'any offset', None)),
     (14, ('Cooling towers and domestic hot water: cleaning and disinfection under your Legionella water management '
@@ -382,7 +386,8 @@ _SERVICIOS_13 = OrderedDict([
     (17, ('Pool and spa water: lab or health-department testing where your state code requires it, on top of the '
           'free chlorine and pH log (MAHC 2024: before opening and every 2 or 4 hours)', None)),
     (18, ('Drain, deep-clean and inspect pool and spa shells, filters and showers; check every drain cover is '
-          'VGB-compliant and within its service life (15 U.S.C. 8003)', None)),
+          'VGB-compliant and within its service life (15 U.S.C. 8003); the hot tub itself is drained, scrubbed and '
+          'refilled far more often (MAHC 2024 §5.12.1.2)', None)),
     (21, ('Fire sprinkler, standpipe and fire alarm inspections by a licensed fire protection company at the NFPA 25 '
           'and NFPA 72 intervals (quarterly and annual items): tags and reports on file', None)),
     (22, ('Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA '
@@ -395,8 +400,11 @@ _SERVICIOS_13 = OrderedDict([
           '(certificate posted in each car), on top of the monthly maintenance contract', 'Annual')),
     (26, ('Boilers and water heaters: inspection for the state boiler certificate where your state requires one; '
           'chiller and HVAC plant service with its report', None)),
-    (27, ('Evacuation drill with every shift, as often as your local fire code requires, and review of the emergency '
-          'action plan', None)),
+    # revisión final (27-oct): el ES dice «anual» (España); el IFC (Table 405.2, Group R-1) pide en hoteles un simulacro
+    # trimestral en cada turno para el personal → «Quarterly» y el código local manda
+    (27, ('Evacuation drill on every shift, with the emergency action plan reviewed: model fire codes require hotels to '
+          'drill staff quarterly on each shift (IFC Table 405.2, Group R-1); your local fire code governs',
+          'Quarterly')),
     (28, ('Used cooking oil pickup by a licensed recycler and hazardous waste (lamps, batteries, chemicals) by a '
           'licensed hauler: keep receipts and manifests', None)),
     (31, ("Review insurance: general liability, property, liquor liability, workers' comp and pool and spa coverage — "
@@ -443,6 +451,10 @@ _RESPONSABLE_CAMBIA = frozenset({18, 19, 9, 16})
 for _fila, (_o, _b, _c, _d) in enumerate(_CIERRE_18, 5):
     for _col, _v in (('B', _b), ('C', _c), ('D', _d)):
         POR_CELDA[_CN + ('%s%d' % (_col, _fila),)] = _v
+# 18 apertura (revisión final, 27-oct): la «Recepción» del molde de restaurante, en las dos tareas de reservas del
+# outlet, es el atril del restaurante, no la recepción del hotel (C20 y C21, check-ins y lobby, siguen «Front desk»)
+for _celda in ('C11', 'C13'):
+    POR_CELDA[('18', 'Apertura del Negocio', _celda)] = 'Host stand'
 
 for _fila, (_fecha, _impacto, _antel, _dir) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'B%d' % _fila)] = _fecha
@@ -725,6 +737,13 @@ REGLAS_US.update([
     ('hazcom', ('productos químicos con etiqueta, SDS y formación', '29 CFR 1910.1200')),
     ('spa_temp', ('hot tub ≤ 104 °F; cartel del spa; objetivo del kit 95–100 °F (ES 35-38 °C)',
                   'MAHC 2024 §5.7.4.7.2 y §6.4.2.2.3.7; [criterio del kit]')),
+    # revisión final (27-oct): el ES «Apagar … jacuzzi» al cierre; parar la filtración / desinfección es peligro
+    # inminente (cierre) en el MAHC
+    ('spa_continuo', ('filtración, recirculación y desinfección de piscina y spa 24 h al día (salvo vaciado, llenado y '
+                      'mantenimiento); el spa se vacía, friega y rellena a su intervalo (volumen en galones ÷ 3 ÷ '
+                      'usuarios al día, o cada 1–2 semanas)', 'MAHC 2024 §5.7.1.1.1, §5.12.1.1, §5.12.1.2, §6.6.3.1')),
+    ('simulacro', ('simulacro de evacuación del personal trimestral en cada turno (hotel = Group R-1)',
+                   'IFC Table 405.2 [local] código de incendios')),
     ('legionela', ('programa de gestión del agua; agua caliente almacenada ≥ 140 °F y en circulación ≥ 120 °F; purgar '
                    'las salidas sin uso; torres de refrigeración registradas donde se exija',
                    'ASHRAE 188; CDC Legionella toolkit (potable water module); NYC Local Law 77 (2015); 10 NYCRR '
