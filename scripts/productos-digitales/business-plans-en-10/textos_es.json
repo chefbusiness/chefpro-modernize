@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:25:17Z",
+  "generado": "2026-10-27T07:30:45Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "483b8383",
+  "commit": "bc11d67f",
   "libros": {
    "HELP": {
     "es": "plan-financiero-heladeria.xlsx",
@@ -17306,7 +17306,8 @@
    "n_apariciones": 1,
    "palabras": 13,
    "pistas": [
-    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)"
+    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)",
+    "D191: 2 meses de fianza (forma: Pizza EN C25, «commercial leases commonly ask for one to three… check it with your attorney»)"
    ],
    "sha1": "f241db5cfc1d",
    "donde": [
@@ -17361,7 +17362,7 @@
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
     "Glosario: vitrina → dipping cabinet · cubeta → tub (3 gal)",
     "D194: refrigeration service contract con un técnico EPA 608 (el personal nunca recarga refrigerante)",
-    "D191: $4,500/año = general liability + property + equipment breakdown con food spoilage + workers' comp"
+    "D191: sin el «300.000 €» del ES: general liability (límite habitual por siniestro, «ask your broker») + equipment breakdown con food spoilage, que es el riesgo de una heladería"
    ],
    "sha1": "d46ff38b8dac",
    "donde": [
@@ -17413,7 +17414,8 @@
     "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
     "D194: refrigeration service contract con un técnico EPA 608 (el personal nunca recarga refrigerante)",
-    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)"
+    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)",
+    "D191: SBA 7(a) al 10 % a 10 años (Prime + margen según tramo: «ask two lenders»); sin ICO"
    ],
    "sha1": "34ba9e6f613f",
    "donde": [
@@ -17437,7 +17439,8 @@
    "n_apariciones": 1,
    "palabras": 38,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D191: B34 = 0 (SBA 7(a) amortiza desde el inicio; forma: Pizza EN C34); el ES pone un año de carencia: aquí no"
    ],
    "sha1": "a3a0bb70dd05",
    "donde": [
@@ -17460,6 +17463,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 29,
+   "pistas": [
+    "D191: 3 meses de costes fijos de caja: el colchón del primer invierno (noviembre-febrero)"
+   ],
    "sha1": "3b47b3d6ef4a",
    "donde": [
     {
@@ -17695,7 +17701,8 @@
    "n_apariciones": 1,
    "palabras": 24,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D191: 2 días = media ponderada: el mostrador cobra al momento (tarjeta) y el catering a unos días; sin «restaurantes»"
    ],
    "sha1": "ee2ff5977f46",
    "donde": [
@@ -17740,7 +17747,8 @@
    "n_apariciones": 1,
    "palabras": 26,
    "pistas": [
-    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas"
+    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+    "D198: con 12 pagas no hay extras: solo cuenta si tecleas más de 12; «July is Month 5, because Month 1 of the plan is March» (forma: Pizza EN C60)"
    ],
    "sha1": "6164258a4856",
    "donde": [
@@ -17765,7 +17773,8 @@
    "palabras": 26,
    "pistas": [
     "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-    "research §9 (e): turrón helado → holiday pies and cakes · comuniones → birthdays and graduations"
+    "research §9 (e): turrón helado → holiday pies and cakes · comuniones → birthdays and graduations",
+    "D198: con 12 pagas no hay extras: solo cuenta si tecleas más de 12; «December is Month 10, because Month 1 of the plan is March» (forma: Pizza EN C61)"
    ],
    "sha1": "238c42af7df1",
    "donde": [
@@ -17791,7 +17800,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)"
+    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)",
+    "D191: B68 vacío = state / local minimum wage anual (hourly × 2,080) si supera el federal $7.25; sin convenio (forma: Pizza EN C68)"
    ],
    "sha1": "5d4c69ab3786",
    "donde": [
@@ -18376,7 +18386,8 @@
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day",
     "D199: «LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
-    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)"
+    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)",
+    "D194: accounting & bookkeeping, sales tax returns y payroll (incl. los seasonal W-2)"
    ],
    "sha1": "f163901d6242",
    "donde": [
@@ -18507,7 +18518,8 @@
    "palabras": 31,
    "pistas": [
     "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
-    "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day"
+    "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day",
+    "D194: sidewalk café / patio permit de 5 mesas en temporada; la tasa la pone tu ciudad"
    ],
    "sha1": "e326ed1dea29",
    "donde": [
@@ -18557,7 +18569,8 @@
    "palabras": 21,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D194: refrigeration service contract con un técnico EPA 608 (el personal nunca recarga refrigerante)"
+    "D194: refrigeration service contract con un técnico EPA 608 (el personal nunca recarga refrigerante)",
+    "D194: CFPM, food handler cards, alérgenos y OSHA basics (frío, resbalones, cortes); sin Ley 31/1995"
    ],
    "sha1": "917d06784f39",
    "donde": [
@@ -18605,6 +18618,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 28,
+   "pistas": [
+    "D196: techo del food cost sobre ventas (25 %); la base comprada lo sube frente a hacer tu mezcla; Kit estimate"
+   ],
    "sha1": "353494d691f1",
    "donde": [
     {
@@ -18627,7 +18643,8 @@
    "n_apariciones": 1,
    "palabras": 24,
    "pistas": [
-    "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day"
+    "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day",
+    "D196: techo del personal (35 %): la temporada obliga a reforzar el mostrador; Kit estimate"
    ],
    "sha1": "d90888bbc275",
    "donde": [
@@ -18701,7 +18718,8 @@
     "Glosario: mantecadora → batch freezer · mantecar → batch-freeze / churn · extracción → draw",
     "D199: «LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
     "D194: refrigeration service contract con un técnico EPA 608 (el personal nunca recarga refrigerante)",
-    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)"
+    "D199: offer letters, I-9, W-4, state new-hire reporting, minimum wage posters (sin convenio)",
+    "D194: owner / ice cream maker & GM: recetas, sabores, batch freezing, compras y gestión; NO pasteuriza (base comprada); cobra por debajo de un gerente: «draw in addition from net profit»; sin «administrador / autónomo»"
    ],
    "sha1": "b2f44769f3d3",
    "donde": [
@@ -18725,7 +18743,8 @@
    "n_apariciones": 1,
    "palabras": 15,
    "pistas": [
-    "Glosario: vitrina → dipping cabinet · cubeta → tub (3 gal)"
+    "Glosario: vitrina → dipping cabinet · cubeta → tub (3 gal)",
+    "D194: shift lead todo el año (≈ $17/h): mostrador, caja, dipping cabinets y cierre"
    ],
    "sha1": "593cfd7e6dca",
    "donde": [
@@ -18807,7 +18826,7 @@
     "D190: el caso COMPRA la base pasteurizada a una central con licencia: tras su pasteurización solo se añaden aromas e inclusiones (no raw eggs, no raw milk or cream; custard flavors need a custard base); pasteurizar tu mezcla = VARIANTE con licencia estatal (sin Excel)",
     "research §6.2: nombres de 21 CFR 135.110 («ice cream» ≥ 10 % milkfat y ≥ 4.5 lb/gal; «frozen custard» 1.4 % egg yolk solids); nada de RD 618",
     "Glosario: vitrina → dipping cabinet · cubeta → tub (3 gal)",
-    "D194: production assistant de mayo a septiembre (batch freezing, pack-out, limpieza)"
+    "D194: production assistant de mayo a septiembre (batch freezing, pack-out, limpieza del batch freezer y de los tubs); sin pasteurizador"
    ],
    "sha1": "764638016fb2",
    "donde": [
@@ -18831,7 +18850,8 @@
    "n_apariciones": 1,
    "palabras": 41,
    "pistas": [
-    "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day"
+    "D194: seasonal part-time W-2 recontratado cada primavera; scoopers de 14-15 años solo con horario FLSA (29 CFR 570.35); peak season Memorial Day → Labor Day",
+    "D194: horas de la tienda por temporada (más en peak season, Memorial Day → Labor Day; menos de noviembre a febrero); 9.5 h de media"
    ],
    "sha1": "9facb83d5d3c",
    "donde": [
