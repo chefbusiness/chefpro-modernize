@@ -117,6 +117,7 @@ SCRATCH = os.environ.get(
 #: ice-cream-shop-checklist-templates: Ice Cream Shop Checklists Kit Pro (EN), `--kit icecream` (checklists-kit/icecream/SPEC.md).
 #: chocolate-shop-checklist-templates: Chocolate Shop Checklists Kit Pro (EN), `--kit chocolate` (checklists-kit/chocolate/SPEC.md).
 #: pastry-shop-checklist-templates: Pastry Shop Checklists Kit Pro (EN), `--kit pastry` (checklists-kit/pastry/SPEC.md).
+#: hotel-checklist-templates: Hotel Checklists Kit Pro (EN), `--kit hotel` (checklists-kit/hotel/SPEC.md).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
              'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan',
@@ -128,7 +129,8 @@ EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates',
              'catering-checklist-templates', 'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
              'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',
-             'chocolate-shop-checklist-templates', 'pastry-shop-checklist-templates'}
+             'chocolate-shop-checklist-templates', 'pastry-shop-checklist-templates',
+             'hotel-checklist-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'
