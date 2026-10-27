@@ -882,6 +882,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-masa': '/dl/pizza-shop-business-plan/pizza-dough-food-cost-calculator.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-27): Ice Cream Shop Business Plan Kit. Claves de D188 (las del ES plan-negocio-heladeria salvo el bonus,
+  // que aquí es el común `equivalents-guide` como en toda la familia EN; = TEMPLATES de
+  // src/pages/IceCreamShopBusinessPlanDashboard.tsx) → los 3 ficheros EN de /dl/ice-cream-shop-business-plan/ (SPEC
+  // business-plans-en-10 D188; sin calculadora) y el bonus común de equivalencias EN.
+  'ice-cream-shop-business-plan': {
+    'plan-negocio': '/dl/ice-cream-shop-business-plan/ice-cream-shop-business-plan.docx',
+    'plan-financiero': '/dl/ice-cream-shop-business-plan/ice-cream-shop-financial-projections.xlsx',
+    'checklist-apertura': '/dl/ice-cream-shop-business-plan/ice-cream-shop-startup-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

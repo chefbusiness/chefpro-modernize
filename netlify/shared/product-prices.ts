@@ -33,6 +33,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'haccp-templates': { usd: 19 },
   'hotel-checklist-templates': { usd: 29 },
   'how-to-open-a-pastry-shop': { usd: 69 },
+  'ice-cream-shop-business-plan': { usd: 39 },
   'ice-cream-shop-checklist-templates': { usd: 19 },
   'kit-escandallos': { eur: 12 },
   'kit-gestion-personal': { eur: 14 },

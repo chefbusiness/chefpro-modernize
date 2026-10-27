@@ -503,11 +503,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-heladeria',
     url: '/plan-negocio-heladeria',
     price: '€35',
-    name: { es: 'Plan de Negocio: Heladería Artesanal', en: 'Artisan Ice Cream Shop Business Plan (Spain)' },
+    name: { es: 'Plan de Negocio: Heladería Artesanal', en: 'Ice Cream Shop Business Plan Kit' },
     description: {
       es: 'Obrador y vitrina: plan financiero Excel, plan en Word y checklist de apertura.',
-      en: 'Word business plan, Excel financial projections and opening checklist for a gelato shop with its own kitchen.',
+      en: 'Word business plan, Excel financial projections and startup checklist for an ice cream shop that makes its own ice cream.',
     },
+    // Tienda EN (27-oct-2026): producto propio, `ice-cream-shop-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/ice-cream-shop-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-finca-eventos-bodas': {
     id: 'plan-negocio-finca-eventos-bodas',

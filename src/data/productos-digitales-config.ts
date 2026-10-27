@@ -1338,6 +1338,25 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-27): twin of plan-negocio-heladeria, independent product.
+  'ice-cream-shop-business-plan': {
+    id: 'ice-cream-shop-business-plan',
+    name: 'Ice Cream Shop Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/ice-cream-shop-business-plan/access',
+    emailSubject: 'Your access to Ice Cream Shop Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Ice Cream Shop Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Ice Cream Shop Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 80-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/ice-cream-shop-business-plan/ice-cream-shop-business-plan.docx',
+      'plan-financiero': '/dl/ice-cream-shop-business-plan/ice-cream-shop-financial-projections.xlsx',
+      'checklist-apertura': '/dl/ice-cream-shop-business-plan/ice-cream-shop-startup-checklist.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
   'food-cost-menu-engineering-guide': {
     id: 'food-cost-menu-engineering-guide',

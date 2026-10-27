@@ -391,6 +391,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-27): gemelo de plan-negocio-heladeria (ver verify-purchase.ts).
+  'ice-cream-shop-business-plan': {
+    accessPath: '/en/digital-products/ice-cream-shop-business-plan/access',
+    emailSubject: 'Your access to Ice Cream Shop Business Plan Kit',
+    emailTitle: 'Access your Ice Cream Shop Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu (ver verify-purchase.ts).
   'food-cost-menu-engineering-guide': {
     accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',

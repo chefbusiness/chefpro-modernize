@@ -811,6 +811,31 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-27): Ice Cream Shop Business Plan Kit, edición inglesa del plan-negocio-heladeria (SPEC business-plans-en-10
+  // D186-D208: ice cream shop de barrio que hace su helado con base pasteurizada comprada, 20 asientos + patio, caso US D191).
+  // Textos en inglés: los pinta <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN y
+  // versión que llevan los docProps de los tres ficheros).
+  'ice-cream-shop-business-plan': {
+    version: '2.2',
+    updated: '2026-10-27',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-27',
+        title: 'First release',
+        changes: [
+          'First release of the Ice Cream Shop Business Plan Kit for a neighborhood shop that makes its own ice cream, about 1,000 sq ft with 20 seats plus a patio, scoops, hand-packed pints and ice cream cakes: a 10-section business plan in Word, an Excel financial model with 9 sheets and an 80-task startup checklist, set up for the US with notes for the UK, Canada and Australia.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example nets about 6% in year 1, not the 10-25% that many articles quote.',
+          'The model runs on customers per day, average check per person and days open per year, with the break-even measured in customers per day and checked against the cash you actually need. The 12-month cash flow starts in March so that the summer peak and the winter dip are both in the numbers.',
+          'Payroll for six roles with employer payroll taxes and a federal and a state or local minimum wage floor, including seasonal part-time scoopers who are rehired every spring, plus startup costs that include the batch freezer, the hardening cabinet and the dipping cabinets.',
+          'The example buys a pasteurized base from a licensed dairy; making your own mix is described as a variant. The plan never says that no license is needed: it points you to your state department of agriculture and your health department, and the checklist turns the license decision into a task.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and the DSCR checked against a 1.25× target.',
+          '80-task startup checklist in 6 phases: business setup, site and permits, production and health, staff and food safety, brand and menu, and opening and the season (Opening Day, your first 90 days and the winter plan).',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
   // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
   // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
