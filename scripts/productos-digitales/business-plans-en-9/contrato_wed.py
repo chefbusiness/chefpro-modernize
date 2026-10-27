@@ -148,7 +148,7 @@ def generar(salida, pdf=False):
             info = subprocess.run(['pdfinfo', pp], stdout=subprocess.PIPE, universal_newlines=True).stdout
             m = re.search(r'Pages:\s+(\d+)', info)
             paginas = int(m.group(1)) if m else None
-            if 'Page size:      612 x 792' not in info:
+            if not re.search(r'Page size:\s+612 x 792', info):
                 err.append('el PDF no sale en Letter (%s)' % re.search(r'Page size:.*', info).group(0))
         else:
             err.append('LibreOffice no generó el PDF')

@@ -4,7 +4,7 @@ calculadora_wed.py — Wedding Venue Business Plan Kit (EN), SPEC D168: `wedding
 Venue Pricing & Quote Calculator (Season, Day, Retainer & Cancellation Schedule)». Es `../plan-finca-eventos/
 calculadora_fin_es.py` traducida y adaptada a EE. UU.: mismas hojas (`Calculator` · `Examples` · `Instructions`), mismas
 filas, helpers, `inject_cache` y autotest (pycel + caché = `calcular()`, 3 ejemplos + 3 casos propios). Cambios D168:
-  1. canal Couple / Corporate (al corporativo se le presupuesta «plus sales tax»; a la pareja, con el impuesto incluido);
+  1. canal Couple / Corporate (al corporativo se le presupuesta "plus sales tax"; a la pareja, con el impuesto incluido);
   2. tipologías Wedding $8,000 · Corporate event $3,500 · Private celebration $4,000 · Micro wedding / elopement $2,000
      (tarifa de un sábado de shoulder season), F&B del caterer por invitado $110 · $50 · $55 · $80 y coste directo $1,000 ·
      $500 · $500 · $300 (research §5.1 y §8: Kit estimate);
@@ -122,7 +122,7 @@ TRAMOS = [12, 6, 3, 1, 0]
 ENTRADAS = [
     ('canal', 'Client', '@', 'Couple',
      'Couple or Corporate: they change the payment schedule and the cancellation tiers (table at the end). A corporate '
-     'client gets the quote «plus sales tax»; a couple, with sales tax included.'),
+     'client gets the quote "plus sales tax"; a couple, with sales tax included.'),
     ('tipo', 'Event type', '@', 'Wedding',
      'Wedding, corporate event (meeting, dinner, holiday party), private celebration (shower, milestone birthday, rehearsal '
      'dinner) or micro wedding / elopement. It sets the venue rate, the caterer\'s food & beverage per guest and the direct '
@@ -184,7 +184,7 @@ SALIDAS = [
      'It does not include food or the bar: the exclusive caterer bills them separately.'),
     ('quoted', 'Amount you quote (Couple: incl. sales tax · Corporate: plus sales tax)', USD,
      'IF({canal}="Couple",{total},{base})',
-     'A corporate client gets the quote excl. sales tax («plus sales tax»; if it is tax-exempt, ask for its exemption '
+     'A corporate client gets the quote excl. sales tax ("plus sales tax"; if it is tax-exempt, ask for its exemption '
      'certificate); a couple, with sales tax included.'),
     ('eur_inv', 'Venue rental & services per guaranteed guest (excl. sales tax)', USD, '{base}/{garant}',
      'To compare with other venues.'),
@@ -261,7 +261,7 @@ EJ_NOTAS = OrderedDict([
      'first example: only the venue rate changes.'),
     ('Weekday corporate event', 'Corporate client, 50 guests, a Wednesday in April: shoulder season and a weekday (−30%). '
      'The 50 guests are below the season minimum (75): the quote uses 75 and the commission is estimated on them. Quoted '
-     '«plus sales tax» and paid on another schedule (30% to book, 30% two months before and 40% 15 days before) with other '
+     '"plus sales tax" and paid on another schedule (30% to book, 30% two months before and 40% 15 days before) with other '
      'cancellation tiers.'),
 ])
 
