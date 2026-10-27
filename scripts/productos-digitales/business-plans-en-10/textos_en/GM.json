@@ -37,7 +37,7 @@
  "c0064": "TAXES",
  "c0066": "Example: 21% federal rate for a C corporation plus state tax, rounded to 25%. If you operate as a sole proprietorship, LLC taxed as a pass-through or S corporation, the business itself pays 0% here and you pay tax on the profit personally: set this to 0 and budget for your personal tax separately. The model applies this rate to the first two years with positive taxable income",
  "c0068": "From the third year with positive taxable income. Same example rate (21% federal C corporation + state). Confirm the rate that applies to you with your accountant and change it here",
- "c0070": "Example rate: state + local sales tax combined. It varies widely by state and city: look up yours. UK: 20% VAT on hot food and dine-in",
+ "c0070": "Example rate: state + local sales tax combined. It varies widely by state and city: look up yours. UK: ice cream is standard-rated at 20% VAT, to take away too",
  "c0074": "In the US, the sales tax you pay on purchases is a cost, not a credit: leave this at 0%. UK: 20% if you are VAT-registered",
  "c0076": "Net operating losses from earlier years still to be offset at the start. Federal rules let you offset up to 80% of taxable income in a year; the model offsets 100% as a simplification",
  "c0077": "DEPRECIATION",
