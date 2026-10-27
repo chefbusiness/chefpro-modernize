@@ -118,5 +118,5 @@ la deuda conocida de los `VALORES_EN` del 05 «Daily Inventory» (`icecream/F2-N
 ## 5. Prueba de humo F1 del hotel (VPS)
 
 `aplicar_en.py --kit hotel --dry-run --parcial --textos <vacía> --mes October`: 19 libros en 11 s, `inject_cache` sin
-fallos (197 fórmulas con valor), 0 desbordes, 938 cadenas con la marca de relleno. `gates_en.py --kit hotel --parcial`:
+fallos (197 fórmulas con valor), 0 desbordes, 938 cadenas con la marca de relleno, `--idempotencia` 0 diferencias. `gates_en.py --kit hotel --parcial`:
 **VERDE 8/0**. `--autotest`: **19/19 CAZADOS**. `mapas_hotel.py`: autotest + `cruzar_censo` + `cruzar_base` con 0 errores.
