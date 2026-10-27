@@ -174,3 +174,17 @@ foco de la revisión opus; si la F2 pasa de 2,5 h, el Modelo 2 (exclusive catere
 línea del `elif` de `mapas.py` (conflicto trivial: se apilan las dos ramas) y puede pedir el mismo hueco de correo del 23-feb (lo
 asigna el orquestador). **D180 NO se hace**: testimonios, anclas, ratings, anexo por estado, permutar el motor, comprar el inmueble o
 in-house catering en el Excel, cambiar filas/hojas/DV, research nueva, posts del blog, compra de prueba, `robots.txt`.
+
+## 11. Decisiones de orquestador, 27-oct (F2 paso 1a; mandan sobre §0-§10 en lo que choquen)
+
+| # | Tema | Decisión de orquestador, 27-oct |
+|---|---|---|
+| O1 | Obra de ≈ $540-570K sobre una propiedad ARRENDADA (D159/D162) | Se mantiene (el ES también arrienda), pero el Word y el checklist exigen: arrendamiento largo cuya duración **contando las prórrogas** sea al menos la del préstamo («SBA lenders typically require…; confirm with your lender», sin citar una regla que no se haya abierto), **opción de compra o derecho de tanteo** (right of first refusal), **consentimiento del propietario a la obra y a usar el arrendamiento como garantía**, negociar una **TI allowance** y lease contingent on CUP approval. Comprar (SBA 504) = variante en el Word, sin Excel. En el checklist, sin mover filas: fase 1 fila 14 y fase 2 filas 8-10 (pistas de `datos_wed._CHK`) |
+| O2 | FTC Cooling-Off Rule (16 CFR Part 429) (D169 fase 6, D171 cláusula 10.ª) | La regla excluye las transacciones relativas al alquiler de inmuebles: **no se afirma que aplique** a un contrato de venue. Forma única: «If you sign couples at bridal shows or off-site, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies; many venues give a short cancellation window for show-floor signings anyway.» En el contrato, como nota de redacción y cláusula OPCIONAL entre corchetes. La revisión D174 lo comprueba abriendo el texto de 16 CFR 429.0 |
+| O3 | Correo EN de lanzamiento | **23-feb-2027 14:00Z** (Ice Cream va al 28-feb y el kit Hotel al 5-mar): D177 ya lo dice |
+| O4 | Lo «(resumen)» o sin verificar de research (The Knot, NY A20-51S, Missouri, CA Civ. Code §1671, 40 CFR 141.2, Wisconsin, rentas, seguros, sprinklers, fosa séptica) | Fuera de las cifras rotundas: «typical range, get local quotes», «Kit estimate» o «ask your [agency / county / attorney / CPA]» hasta que la revisión D174 lo abra. Afecta a D164 (notas de sales tax sin MO/NY), D165 (D19 sin The Knot, sin 40 CFR 141.2 ni umbral de sprinklers con cifra), D170 (§9) y D171 (sin §1671) |
+
+Decisiones del paso 1a (implementador, 27-oct; detalle en `F2-NOTAS.md` §3 y §5): umbral `E51` 85 % → **80 %** (calibración
+D15: el caso de research §8 da 83.4 %) · tabla D19 con las filas del ES (`A41` es FIJO; «Venue rental fee» en la 46) ·
+checklist reutilizable no GM → GWED-check · **contrato en la tanda 1** (parte 1 → traductor B, parte 2 → traductor A) y
+calculadora como código (paso 1b), en vez de 1c ‖ 1b separados de D178.
