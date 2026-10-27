@@ -82,3 +82,15 @@ quedándose con los dos lados + regresión de los 10 conjuntos (37/37).
   routine `trig_015MWHYv3BP4FYUCeQPQee9K` (3-feb-2027 15:07Z) los programa (mirar su `list_runs` después). Siguiente hueco EN: 10-mar.
 - GEO: sitemap reenviado en GSC; `llms.txt` enlazaba 28 de los 31 EN (faltaban Inventory, Scheduling y Financial Plan, omisión antigua)
   → PR #173. Worktrees y ramas borrados en Mac, VPS y remoto.
+
+## 9. Cierre de sesión (27-oct, ~12:15 Madrid)
+- John: «cerramos sesión por hoy». Los tres productos LIVE y a la venta; #173 (`llms.txt` con los 31 EN + docs) fusionado como
+  `d193b9c0` y comprobado en producción. Repo en `main` limpio; sin ramas ni worktrees de la sesión en Mac, VPS ni remoto.
+- Consumo: ≈ 5,5 M tokens de subagentes para los tres (F1 1,3 · F2 ≈ 2,6 · revisiones 0,9 · F3 0,9 · gates 0,1); ≈ 4 h 45 de reloj
+  (07:30 → 12:15), de las que ≈ 2 h 30 hasta «listos» y el resto links, fusión y cierre. CPU del Mac 40-57 °C toda la sesión
+  (centinela a 63 °C sin alertas; `photoanalysisd` y `mediaanalysisd` siguen congelados: `pkill -CONT photoanalysisd mediaanalysisd`).
+- **Pendiente de John**: purgar los pedidos cripto QA sin pagar (`qa-hotel-en`, `qa-icecream-en`, `qa-wedding-en`, `qa-ctrl` + los
+  del 25-oct). **Para Cursor**: banners/enlaces desde los posts del blog EN a los tres productos nuevos.
+- **Siguiente sesión** (carril Mac): producto nuevo ES (Hamburguesería Smash, del handoff del 25-oct) o seguir la tienda EN; candidatos
+  EN con demanda: guía Dark Kitchen (antes subir el ES a v2), «how to open a restaurant» (antes la guía Casual ES a v2). Mirar el
+  `list_runs` de las routines de correo pendientes (`CALENDARIO-V2-SEMANAL.md`).
