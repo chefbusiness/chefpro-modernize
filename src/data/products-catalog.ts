@@ -516,11 +516,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-finca-eventos-bodas',
     url: '/plan-negocio-finca-eventos-bodas',
     price: '€45',
-    name: { es: 'Plan de Negocio: Finca de Eventos y Bodas', en: 'Wedding & Event Venue Business Plan (Spain)' },
+    name: { es: 'Plan de Negocio: Finca de Eventos y Bodas', en: 'Wedding Venue Business Plan Kit' },
     description: {
       es: 'Finca arrendada con catering exclusivo: plan financiero Excel, plan en Word, checklist de apertura, calculadora y contratos.',
-      en: 'Word business plan, Excel financial projections, opening checklist, pricing calculator and contract templates for a leased wedding and event venue.',
+      en: 'Word business plan, Excel financial projections, pricing calculator, venue rental agreement templates and startup checklist for a leased wedding and event venue with an exclusive caterer.',
     },
+    // Tienda EN (27-oct-2026): producto propio, `wedding-venue-business-plan`, $49 USD.
+    urlByLang: { en: '/en/digital-products/wedding-venue-business-plan' },
+    priceByLang: { en: '$49' },
   },
   'plan-negocio-pizzeria': {
     id: 'plan-negocio-pizzeria',

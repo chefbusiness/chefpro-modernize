@@ -892,6 +892,18 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/ice-cream-shop-business-plan/ice-cream-shop-startup-checklist.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-27): Wedding Venue Business Plan Kit. Claves de D158 (las del ES plan-negocio-finca-eventos-bodas salvo el
+  // bonus, que aquí es el común `equivalents-guide` como en toda la familia EN; = TEMPLATES de
+  // src/pages/WeddingVenueBusinessPlanDashboard.tsx) → los 5 ficheros EN de /dl/wedding-venue-business-plan/ (SPEC
+  // business-plans-en-9 D158) y el bonus común de equivalencias EN.
+  'wedding-venue-business-plan': {
+    'plan-negocio': '/dl/wedding-venue-business-plan/wedding-venue-business-plan.docx',
+    'plan-financiero': '/dl/wedding-venue-business-plan/wedding-venue-financial-projections.xlsx',
+    'checklist-apertura': '/dl/wedding-venue-business-plan/wedding-venue-startup-checklist.xlsx',
+    'calculadora-pricing': '/dl/wedding-venue-business-plan/wedding-venue-pricing-calculator.xlsx',
+    'modelos-contrato': '/dl/wedding-venue-business-plan/wedding-venue-rental-agreement-templates.docx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

@@ -1357,6 +1357,27 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-27): twin of plan-negocio-finca-eventos-bodas, independent product.
+  'wedding-venue-business-plan': {
+    id: 'wedding-venue-business-plan',
+    name: 'Wedding Venue Business Plan Kit',
+    priceLabel: '$49',
+    accessPath: '/en/digital-products/wedding-venue-business-plan/access',
+    emailSubject: 'Your access to Wedding Venue Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Wedding Venue Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing and quote calculator, the venue rental agreement templates and the 84-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Wedding Venue Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing and quote calculator, the venue rental agreement templates and the 84-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/wedding-venue-business-plan/wedding-venue-business-plan.docx',
+      'plan-financiero': '/dl/wedding-venue-business-plan/wedding-venue-financial-projections.xlsx',
+      'checklist-apertura': '/dl/wedding-venue-business-plan/wedding-venue-startup-checklist.xlsx',
+      'calculadora-pricing': '/dl/wedding-venue-business-plan/wedding-venue-pricing-calculator.xlsx',
+      'modelos-contrato': '/dl/wedding-venue-business-plan/wedding-venue-rental-agreement-templates.docx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
   'food-cost-menu-engineering-guide': {
     id: 'food-cost-menu-engineering-guide',

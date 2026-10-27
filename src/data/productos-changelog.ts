@@ -836,6 +836,32 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-27): Wedding Venue Business Plan Kit, edición inglesa del plan-negocio-finca-eventos-bodas (SPEC business-plans-en-9
+  // D156-D177: wedding & event venue de granero o finca ARRENDADA con exclusive caterer, caso US D160). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN y versión que llevan los
+  // docProps de los cinco ficheros).
+  'wedding-venue-business-plan': {
+    version: '2.2',
+    updated: '2026-10-27',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-27',
+        title: 'First release',
+        changes: [
+          'First release of the Wedding Venue Business Plan Kit for a barn or estate wedding and event venue on a leased property with an exclusive caterer, a hall for 200 seated guests and an outdoor ceremony site: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing and quote calculator, venue rental agreement templates and an 84-task startup checklist, set up for the US with notes for the UK, Canada and Australia.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story: 100 events a year averaging 90 guests, $612,000 in year-1 sales, a net of 8.9% in year 1 rising to 14.2% by year 3 and a loan payment covered 1.86 times in the toughest year.',
+          'The model runs on events per year, guests per event and revenue per guest, with the venue earning a venue rental fee plus a commission from its exclusive caterer and selling no food or alcohol. The break-even is measured in events and checked against the cash you actually need, and the 12-month cash flow starts in March so that the June and September-October peaks and the winter trough are in the numbers.',
+          'Startup costs for a barn conversion on a leased property (architect and code consultant drawings, the conditional use permit, sprinklers, ADA restrooms, the caterer\'s prep kitchen), with notes on what can double a line. The plan asks for a lease whose term with extension options matches the loan term, an option to buy or a right of first refusal, the landlord\'s consent and a lease contingent on the permit.',
+          'Pricing and quote calculator by client, event type, season and day of the week, with a guest minimum, extras, sales tax, payment schedule, estimated caterer commission and a cancellation schedule, plus three worked examples.',
+          'Three editable agreement templates (couples and private events, corporate clients, exclusive caterer) with a retainer, a cancellation schedule with a rebooking credit and a booking contingent on permits: templates, not legal advice, to be reviewed by a local attorney.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and the DSCR checked against a 1.25× target.',
+          '84-task startup checklist in 6 phases: business setup, zoning and permits, build-out and equipment, staff and caterer, brand and bookings, and the season and events.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
   // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
   // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.

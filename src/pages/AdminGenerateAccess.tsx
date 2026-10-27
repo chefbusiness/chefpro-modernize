@@ -39,6 +39,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'paella-catering-business-plan', label: 'Paella Catering Business Plan Kit (EN, $39)' },
   { id: 'pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit (EN, $39)' },
   { id: 'ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit (EN, $39)' },
+  { id: 'wedding-venue-business-plan', label: 'Wedding Venue Business Plan Kit (EN, $49)' },
   { id: 'food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide (EN, $59)' },
   { id: 'how-to-open-a-pastry-shop', label: 'How to Open a Pastry Shop (EN, $69)' },
   { id: 'restaurant-checklist-templates', label: 'Restaurant Checklists Kit Pro (EN, $19)' },

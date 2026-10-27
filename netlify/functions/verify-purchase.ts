@@ -441,6 +441,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-27): gemelo de plan-negocio-finca-eventos-bodas, producto independiente con su propio acceso
+  // (mismo patrón que pizza-shop-business-plan).
+  'wedding-venue-business-plan': {
+    accessPath: '/en/digital-products/wedding-venue-business-plan/access',
+    emailSubject: 'Your access to Wedding Venue Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Wedding Venue Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing and quote calculator, the venue rental agreement templates and the 84-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
   // (mismo patrón que mobile-bar-business-plan).
   'food-cost-menu-engineering-guide': {

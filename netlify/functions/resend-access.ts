@@ -400,6 +400,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-27): gemelo de plan-negocio-finca-eventos-bodas (ver verify-purchase.ts).
+  'wedding-venue-business-plan': {
+    accessPath: '/en/digital-products/wedding-venue-business-plan/access',
+    emailSubject: 'Your access to Wedding Venue Business Plan Kit',
+    emailTitle: 'Access your Wedding Venue Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing and quote calculator, the venue rental agreement templates and the 84-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu (ver verify-purchase.ts).
   'food-cost-menu-engineering-guide': {
     accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',
