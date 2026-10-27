@@ -1,120 +1,136 @@
 ---
-title: "Abocar y abocado: qué significan en cocina y en el vino"
-description: "Abocar es verter un líquido boca a boca y dejar el poso. Abocado es un vino de dulzor moderado, o estar destinado a algo. Con b, no avocar."
+title: "Qué significa abocar en cocina"
+description: "Abocar es verter un líquido acercando las bocas de dos recipientes y dejar el poso. Qué significan abocado, abocada y abocados, y qué es un vino abocado."
 pubDate: 2024-12-11
-modDate: 2026-10-22
+modDate: 2026-10-27
 category: glosario
-image: /blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado.jpeg
-imageAlt: "Abocado"
+tags: ["abocar", "abocado", "vino", "fondos"]
 lang: es
+image: /blog-assets/2026/10/abocar-caldo-sedimento.webp
+imageAlt: "Una olla de acero inclinada vierte caldo dorado y limpio en otra, con el sedimento oscuro quedándose en el fondo de la primera"
 wpId: 713
-faq:
-  - q: "¿Qué significa abocar en cocina?"
-    a: "Abocar en cocina es verter un líquido de un recipiente a otro aproximando las bocas de ambos, con el fin de trasvasarlo limpiamente y dejar el poso o las impurezas en el fondo del primer recipiente. Es un gesto de trasiego preciso, habitual en fondos clarificados, maceraciones coladas y aceites aromatizados."
-  - q: "¿Es lo mismo abocar que decantar?"
-    a: "No. Abocar es un trasiego genérico que busca dejar el poso, a menudo sin oxigenar el líquido. Decantar se refiere específicamente a separar el líquido del sedimento en vinos de guarda, vertiendo con extremo cuidado para no agitar los posos y oxidando lo mínimo. En cocina, abocar es más amplio; decantar es una técnica concreta de sumillería."
-  - q: "¿Qué es un vino abocado?"
-    a: "Un vino abocado es aquel que presenta un dulzor moderado, con azúcares residuales que suelen oscilar entre 12 y 45 gramos por litro. Se sitúa entre el vino semiseco y el semidulce, y se percibe como suave y ligeramente dulce en boca. No debe confundirse con el verbo 'abocar', que describe un gesto de trasiego."
-  - q: "¿Abocar o avocar, cuál es la correcta?"
-    a: "En cocina se escribe 'abocar' (con b), derivado de 'boca'. 'Avocar' (con v) es un término jurídico que significa que una autoridad superior asume la resolución de un asunto. Usar 'avocar' para referirse al trasvase de líquidos es una falta de ortografía. La forma correcta en gastronomía es siempre 'abocar'."
-  - q: "¿Qué significa estar abocado a algo?"
-    a: "Es una expresión figurada que indica estar destinado o encaminado inevitablemente a una situación concreta. Por ejemplo, 'un cocinero sin mise en place está abocado al desastre'. Mantiene la idea de verterse hacia un desenlace, pero no tiene relación directa con la técnica culinaria de abocar líquidos."
-  - q: "¿Cuál es la diferencia entre abocar y trasvasar?"
-    a: "Abocar se centra en verter con cuidado para dejar el poso, aproximando las bocas de los recipientes y sin oxigenar. Trasvasar es simplemente pasar un líquido de un envase a otro, a menudo con cierta altura o agitación, buscando oxigenar (como en vinos jóvenes). Abocar es un trasiego delicado; trasvasar puede ser más enérgico."
+translations:
+  es: "que-significa-abocar-en-cocina"
+  en: "what-does-abocar-mean-in-cooking"
 definedTerm:
   name: "Abocar"
-  description: "Abocar es verter un líquido acercando la boca de un recipiente a la del otro, para pasarlo limpio y dejar el poso. No es decantar un vino de guarda ni colar con un chino. Abocado, con o, es otra cosa: un vino de dulzor moderado, o quien está destinado a un desenlace. La grafía de cocina lleva b."
+  description: "Abocar es verter de un recipiente a otro, acercando las bocas. En la cocina se hace con un líquido que ya ha reposado, para pasarlo limpio y dejar el poso. Abocado, abocada y abocados son el participio de ese verbo. Con el mismo adjetivo se llama también a un vino que no está seco del todo."
+faq:
+  - q: "¿Qué significa abocar en cocina?"
+    a: "Significa verter un líquido de un recipiente a otro juntando las bocas de los dos. Se hace después de un reposo, despacio, y se corta el chorro en cuanto empieza a salir turbio, para no arrastrar el poso. No es una cocción."
+  - q: "¿Qué significan abocado, abocada y abocados?"
+    a: "Son el participio de abocar, y concuerdan en género y número. El fondo abocado ya se ha vertido. La salsa abocada al biberón, también. Los caldos abocados son varios. Abocadas vale para un femenino plural. Aparte, abocado es el adjetivo de un vino que no está seco ni llega a dulce, y de quien está encaminado a un resultado: estar abocado a repetir el fondo."
+  - q: "¿Qué es un vino abocado?"
+    a: "Es un vino con un punto de dulzor, sin ser un vino de postre. La RAE lo define, sobre todo para un estilo de jerez, como mezcla de vino seco y vino dulce. No es una de las cuatro menciones legales de la etiqueta europea, que son seco, semiseco, semidulce y dulce. El verbo abocar, verter, es otra palabra."
+  - q: "¿Abocar y decantar son lo mismo?"
+    a: "Se parecen en que los dos dejan el poso atrás, y no son el mismo trabajo. Abocar junta las bocas de dos recipientes de cocina: un fondo, una maceración, una salsa. Decantar, en sala, es pasar un vino de guarda a un decantador, muy despacio, para separarlo del sedimento. Trasvasar es cualquier cambio de recipiente, a menudo desde más altura."
+  - q: "¿Se escribe abocar o avocar?"
+    a: "En cocina, y en la frase estar abocado a algo, se escribe con b, porque sale de boca. Avocar, con v, es un verbo jurídico: una autoridad superior atrae un asunto que correspondía a otra. Para un caldo o un vino, la forma correcta es abocar."
+  - q: "¿Qué significa estar abocado a algo?"
+    a: "Significa estar encaminado a ese resultado, a menudo sin mucha salida. Una salsa que hierve está abocada a cortarse. No describe el vertido ni el dulzor de un vino: es el mismo verbo en sentido figurado, y se escribe igual, con b."
+faqInBody: true
 ---
-<p data-glosario-lead="1">Abocar es verter un líquido acercando la boca de un recipiente a la del otro, para pasarlo limpio y dejar el poso. No es decantar un vino de guarda ni colar con un chino. Abocado, con o, es otra cosa: un vino de dulzor moderado, o quien está destinado a un desenlace. La grafía de cocina lleva b.</p>
+
+Abocar es verter de un recipiente a otro, acercando las bocas. En la cocina se hace con un líquido que ya ha reposado, para pasarlo limpio y dejar el poso. Abocado, abocada y abocados son el participio de ese verbo. Con el mismo adjetivo se llama también a un vino que no está seco del todo.
+
 <aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-significa-abocar-en-cocina">Ver la ficha de chef jefe de cocina</a></p></aside>
-Abocar en cocina es el acto de verter o trasvasar el contenido de un recipiente a otro aproximando las bocas de ambos, de ahí su nombre. En un sentido más técnico, significa verter con cuidado un líquido que ha reposado para no arrastrar el poso ni las impurezas del fondo. Es un gesto de trasiego preciso, no una cocción.
 
-## Etimología: de la propia palabra «boca»
+## Qué es abocar
 
-El verbo *abocar* se forma con el prefijo *a‑* (aproximación), el sustantivo *boca* y la terminación *‑ar*. La imagen es clara: para trasvasar hay que inclinar el primer recipiente hasta que su boca «aboque» —se asome— justo sobre la boca del segundo. Por eso es un verbo tan físico y gestual; describe un movimiento que cualquier cocinero reconoce al instante.
+El diccionario lo define así: verter el contenido de un recipiente en otro, y aclara que se dice propiamente cuando se acercan las bocas de los dos. La palabra sale de boca, con b. No tiene nada que ver con avocar, que es un término de derecho.
 
+En una cocina, ese vertido se usa cuando el líquido ya se ha aclarado solo. Proteínas, hierbas, pulpa o poso se han ido al fondo. Si acercas el borde de la olla al borde del recipiente que recibe, ves el chorro de cerca, casi no lo aireas y puedes parar en el momento en que cambia de claro a turbio. Eso es abocar. Echar desde arriba, a chorro, es trasvasar: mueves el líquido, y de paso levantas lo que querías dejar quieto.
 
+No es una técnica de cocción y no cambia el sabor por sí sola. Solo decide qué parte del líquido pasa y qué parte se queda.
 
-<figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="819" height="1024" data-attachment-id="756" data-orig-file="/blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado-3.jpeg" data-orig-size="1080,1350" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="AI Chef Pro Stories Insta (1080 x 1350 px) &amp;#8211; Abocado (3)" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado-3.jpeg" src="/blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado-3.jpeg" alt="Abocar" class="wp-image-756" /></figure>
+## Para qué se aboca un líquido
 
+Después de un reposo, un fondo o un consomé se aboca a otro recipiente y el sedimento de proteínas se queda en el primero. Es el primer paso, no el acabado. Si lo quieres cristalino, después se cuela. Un [fumet de pescado](https://aichef.pro/blog/fumet-de-pescado) se trata igual: en cuanto se retira del fuego y reposa un momento, se aboca o se cuela sin apretar el poso, porque ese poso es lo que enturbia y lo que amarga si se exprime.
 
+Una [maceración](https://aichef.pro/blog/maceracion-concepto-definicion) de frutas, cítricos o vainilla se aboca a la botella cuando el líquido ya sabe a lo que tenía dentro. Los sólidos se quedan en el tarro. Juntar las bocas evita salpicar y evita airear un alcohol o un vinagre que no quieres oxidar.
 
-## Abocar en la cocina profesional: usos en la partida
+Una [reducción](https://aichef.pro/blog/reduccion-concepto-definicion) o una salsa templada se aboca a un biberón de cocina para dosificarla. Con los bordes juntos no escurre por fuera y entra menos aire, así que tarda más en hacer piel. Aquí ya no hay poso: hay el mismo cuidado de verter sin perder salsa por el camino.
 
-En el día a día de un restaurante, *abocar* es una acción mucho más habitual de lo que parece. No se limita a un simple «echar»; implica control, limpieza y respeto por el producto.
+La grasa de un fondo se puede retirar en frío, en bloque, o en caliente, abocando el líquido de debajo y parando antes de que la grasa caiga. En caliente se ve peor. Si dudas, enfría.
 
-- **Fondos y caldos clarificados.** Después de un hervor suave y un reposo, el fondo se aboca con suavidad a otra olla o a un recipiente alto, dejando el sedimento de proteínas y restos de verduras en el fondo del primer cazo. Así se obtiene un consomé cristalino sin necesidad de colar con estameña en ese primer paso.
-- **Infusiones y maceraciones coladas.** Tras una [maceración](https://aichef.pro/blog/maceracion-concepto-definicion) de hierbas, especias o frutas, se aboca el líquido aromatizado a una botella o jarra, reteniendo los sólidos. El gesto de aproximar bocas evita salpicaduras y minimiza la oxidación de aceites o vinagres delicados.
-- **Aceites y vinagres aromatizados.** Cuando un aceite ha infusionado con ajos, guindillas o romero, se aboca directamente a la botella de servicio, parando antes de que caigan los restos vegetales. Así se mantiene la transparencia y se alarga la vida útil del aliño.
-- **Reducciones y salsas templadas.** Una reducción de carne o un caramelo ligero se aboca a un biberón de cocina para dosificar con precisión. El contacto boca con boca entre el cazo y el biberón evita goteos y permite envasar la salsa sin aire, lo que previene la formación de piel.
-- **Trasiego de elaboraciones largas.** En fermentaciones, escabeches o curados, abocar el líquido de un recipiente a otro es parte del mantenimiento diario; se hace con mimo para no enturbiar el preparado.
+## Cómo se hace
 
-El abocado se distingue de *colar* porque este último siempre emplea un chino, estameña o colador de malla. En la práctica, muchas veces se combinan: primero se aboca para retirar el grueso del poso y después se cuela el resto para un acabado impecable.
+1. Deja reposar el líquido, sin remover. Si acabas de hervirlo, unos minutos en la olla ya separan lo grueso. Para un vino con sedimento o un fondo muy cargado, hace falta más calma.
+2. Acerca la boca del recipiente de origen a la del que recibe. Bajo, no en alto. Tienes que ver el color del chorro.
+3. Vierte despacio, de un solo lado, con una luz delante si el líquido es oscuro. En sala, con un vino viejo, esa luz es la vela o la linterna del decantado. En cocina basta una lámpara sobre el pase.
+4. Para en cuanto el chorro se nuble o veas que el poso empieza a caminar. Lo que queda en el primer recipiente no se «aprovecha» apurando: o se cuela aparte, o se tira.
+5. Si todavía lo quieres más limpio, cuela solo lo que ya abocaste, con un chino o un paño. No viertas el poso sobre el colador y lo aprietes: volverías a meter en la salsa lo que acabas de quitar.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Coctelería de Eventos</h3><p class="mt-2 text-muted-foreground">Barra móvil y coctelería para eventos, con 9 entregables.</p><a href="/plan-negocio-cocteleria-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-significa-abocar-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Coctelería de Eventos por €55</a></aside>
+| Término | Qué se hace | Para qué | Dónde |
+| --- | --- | --- | --- |
+| Abocar | Verter con las bocas juntas y parar antes del poso | Pasar el líquido limpio | Fondos, maceraciones, salsas, el paso previo a un colado |
+| Trasvasar | Pasar el líquido a otro recipiente, a menudo desde más altura | Cambiar de envase, y a veces airear | Volúmenes grandes, un vino joven que se quiere abrir |
+| Decantar | Verter muy despacio un líquido con sedimento | Dejar el poso en la botella, oxigenando lo justo | Vinos de guarda; también un fondo al que se le separa la grasa |
+| Colar | Pasar por chino, estameña o paño | Retener sólidos | Cuando abocar no basta |
+| Escanciar | Servir en la copa o el vaso, a veces desde cierta altura | Servir, y en la sidra romper el carbónico | Sala, no la partida |
 
-## Abocar vs. trasvasar vs. decantar vs. escanciar: el núcleo diferencial
+<figure><img src="/blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado-3.jpeg" alt="Botella de vino blanco sirviéndose en una copa, junto a un plato de cigalas y verduras" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
 
-Aunque en el lenguaje coloquial se mezclan, cada término tiene un objetivo y un gesto distinto. Esta tabla resume lo que todo cocinero y sumiller debe tener claro.
+## Errores y cómo corregirlos
 
-| Término | Qué hace | Objetivo principal | Cuándo se usa en cocina/sala |
-| :--- | :--- | :--- | :--- |
-| **Abocar** | Verter aproximando las bocas de dos recipientes, con cuidado de no arrastrar el poso. | Trasegar limpio, dejando impurezas en el fondo. | Fondos clarificados, maceraciones coladas, aceites aromatizados, paso previo a un colado fino. |
-| **Trasvasar** | Pasar un líquido de un recipiente a otro, a menudo con cierta altura o agitación. | Oxigenar y airear (en vinos jóvenes o taninosos) o simplemente cambiar de envase. | Vinos que necesitan abrirse, traslado de grandes volúmenes de caldo, cambio de barrica a depósito. |
-| **Decantar** | Separar el líquido del sedimento vertiéndolo suavemente en otro recipiente, sin agitar. | Dejar el poso en la botella original, oxigenando lo mínimo. | Vinos de guarda o viejos con sedimentos; también para separar grasas de un fondo que se enfría. |
-| **Escanciar** | Servir la bebida (vino, sidra) directamente en la copa o vaso, a menudo desde cierta altura. | Servir y, en el caso de la sidra, romper el carbónico para potenciar aromas. | Servicio en sala; escanciado de sidra natural; nunca es un trasiego entre recipientes de trabajo. |
+**Remover antes de verter.** El poso ya está en suspensión y abocar no tiene nada que separar. Para, espera a que vuelva a bajar y empieza de nuevo. Si no hay tiempo, cuela.
 
+**Verter desde arriba.** Aireas, salpicas y pierdes de vista el momento en que sale turbio. Baja el recipiente hasta que los bordes casi se toquen.
 
+**Apurar por no tirar.** Los últimos cien mililitros suelen llevar lo peor. Es más barato perderlos que servir un consomé opaco o una maceración con polvo al fondo de la copa.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Peruano</h3><p class="mt-2 text-muted-foreground">80 plazas: 20 capítulos, 8 plantillas Excel y manual de operaciones.</p><a href="/guia-restaurante-peruano?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-significa-abocar-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Peruano por €65</a></aside>
+**Escribir avocar.** Con v no es un verbo de cocina. Fundéu lo recuerda cada vez que sale en una noticia: estar abocado a algo lleva b, y el vertido también.
 
-## Vino «abocado»: la confusión clásica
+**Llamar abocado a cualquier vino con azúcar.** Abajo va la diferencia. Un dulce de postre no se describe así, y un seco tampoco.
 
-Uno de los errores más frecuentes al buscar «qué significa abocar en cocina» es topar con la acepción enológica del adjetivo *abocado*. No es lo mismo el verbo (acción de trasvasar) que el adjetivo que describe un vino de dulzor suave. Un vino abocado es aquel que conserva cierta cantidad de azúcares naturales sin fermentar, situándose entre el seco y el dulce. Esta escala orientativa lo aclara:
+## Abocado, abocada y abocados
 
-| Tipo de vino | Azúcar residual aproximado (g/l) | Sensación en boca |
-| :--- | :--- | :--- |
-| Seco | < 4 | Sin dulzor perceptible, acidez marcada. |
-| Semiseco | 4 – 12 | Ligero punto de dulzor que redondea la acidez. |
-| **Abocado** | 12 – 45 | Dulzor evidente pero sin empalagar, buena untuosidad. |
-| Semidulce | 45 – 80 | Dulzor franco, cuerpo denso. |
-| Dulce | > 80 | Dulzor intenso, vinos de postre o generosos. |
+Estas tres formas, y también abocadas, son primero el participio del verbo. Concuerdan con lo que se ha vertido:
 
-El vino abocado marida de maravilla con platos especiados, foie gras, quesos azules o postres de fruta. Si quieres explorar combinaciones precisas, el [food pairing](https://aichef.pro/blog/que-es-el-food-pairing) te ayuda a encontrar el equilibrio entre dulzor, acidez y grasa. Recuerda: en la cocina, *abocar* es un gesto; en la copa, *abocado* es un sabor.
+- **Abocado**, masculino singular: el fondo abocado a otra olla, el caldo abocado al biberón.
+- **Abocada**, femenino singular: la reducción abocada, la maceración abocada a la botella.
+- **Abocados**, masculino plural: los fondos abocados por la mañana, los vinos abocados de la carta.
+- **Abocadas**, femenino plural: las salsas abocadas antes del pase.
 
+La misma palabra, en masculino y en plural, es un adjetivo del vino. Y, con la preposición a, es una frase hecha que no habla de cocina: estar abocado, abocada o abocados a un resultado. Un servicio sin mise en place está abocado al retraso. Se escribe con b en todos estos casos.
 
+### El vino abocado no es el verbo
 
-## Abocar vs. avocar y «estar abocado a»
+Aquí está la confusión que llena el buscador. Abocar es verter. Un vino abocado es un vino que en boca no está seco del todo y tampoco es un dulce de postre. La RAE lo define como un vino, sobre todo un estilo de jerez, que contiene mezcla de vino seco y vino dulce. Algunos glosarios de cata orientan ese punto de azúcar alrededor de 5 a 15 g por litro. Es una orientación de sabor, no una categoría de etiqueta.
 
-La confusión ortográfica es tan común como la semántica. Conviene aclarar los homófonos:
+En la Unión Europea, la etiqueta de un vino tranquilo no dice «abocado». Dice una de estas cuatro menciones, según el azúcar residual (glucosa más fructosa), en el anexo III del Reglamento (UE) 2019/33:
 
-- **Avocar** (con *v*) es un término jurídico‑administrativo. Significa que una autoridad superior atrae hacia sí la resolución de un asunto que correspondía a un órgano inferior. No tiene nada que ver con la cocina. Escribir «avocar» queriendo decir «abocar» es un error frecuente.
-- **Estar abocado a algo** es una locución figurada que indica estar destinado o encaminado inevitablemente a una situación. Por ejemplo: «Un servicio sin *mise en place* está abocado al caos». Aquí la palabra conserva la idea de verterse hacia un desenlace.
-- **Regionalismo (Murcia y zonas limítrofes):** en el habla coloquial, «abocar» o «aboca» se usa como sinónimo de «verter» o «volcar» cualquier cosa, e incluso con el sentido de «hablar sin tapujos». Fuera de ese contexto, en cocina profesional se emplea con el significado técnico que hemos descrito.
+| Mención en la etiqueta | Azúcar residual |
+| --- | --- |
+| Seco | Hasta 4 g/l, o hasta 9 g/l si la acidez total, en ácido tartárico, no queda más de 2 g/l por debajo del azúcar |
+| Semiseco | Por encima de ese máximo y hasta 12 g/l, o hasta 18 g/l si la acidez no queda más de 10 g/l por debajo del azúcar |
+| Semidulce | Por encima del semiseco y hasta 45 g/l |
+| Dulce | 45 g/l o más |
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=que-significa-abocar-en-cocina" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside>
+Un vino que en la carta lees como abocado cae, por sabor, cerca del semiseco o de la parte menos dulce del semidulce. En la botella verás una de las cuatro palabras legales, no una quinta. Los espumosos usan otra escala (brut nature, brut, seco, semiseco, dulce) y tampoco se etiquetan como abocados.
 
-## Cómo abocar bien: checklist de partida
+Por eso «abocado significado» tiene dos respuestas, y las dos son ciertas si dices de cuál hablas. Si hablas de un caldo, es el participio de verter. Si hablas de una copa, es ese dulzor moderado, en especial en el jerez.
 
-<figure class="wp-block-image size-large">
-<img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/07/abocar-tecnica-trasvase-cocina-profesional.jpg" alt="Chef abocando un fondo dorado de un cazo a una cubeta gastronorm, boca a boca, en cocina profesional"/><figcaption>El gesto exacto de abocar: las bocas de los dos recipientes casi en contacto para un trasvase limpio y sin turbulencias</figcaption></figure>
+## Dónde se usa
 
-Un abocado limpio no es fruto de la improvisación. Sigue estos pasos y convierte el gesto en un hábito de precisión:
+Se usa cada vez que un líquido ha reposado y lo quieres en otro recipiente sin la mugre del fondo: fondos, consomés, [maceraciones](https://aichef.pro/blog/maceracion-concepto-definicion), aceites o vinagres aromatizados, y la salsa que pasa de la olla al biberón. Se usa en sala cuando un vino de guarda tiene sedimento, aunque ahí el nombre que oye el comensal es decantar. Y se usa, como adjetivo, en una carta de vinos que ofrece un jerez o un blanco con un punto de azúcar y no quiere llamarlo dulce.
 
-1. **Deja reposar el líquido.** Un mínimo de 15–20 minutos para que los sólidos se depositen en el fondo.
-2. **No muevas el recipiente origen.** Cualquier vibración levanta el poso y arruina el trabajo.
-3. **Aproxima las bocas.** Inclina el primer recipiente hasta que su boca quede justo dentro de la del segundo; el contacto suave evita salpicaduras y turbulencias.
-4. **Vierte despacio y sin interrupciones.** Un chorro constante y fino minimiza la mezcla con el sedimento.
-5. **Para antes de que asome el poso.** En cuanto veas que el sedimento empieza a deslizarse hacia la boca, detén el vertido. Es mejor perder unas gotas que enturbiar todo el líquido.
-6. **Usa un embudo o un colador de malla fina si la receta lo exige.** No es obligatorio, pero en líquidos muy delicados (aceites de hierbas, reducciones claras) un colador de malla fina sobre el recipiente de destino da un plus de seguridad.
-7. **Reserva el poso.** A menudo concentra sabor; se puede aprovechar para un fondo de trabajo o para dar cuerpo a una salsa. Si no sirve, descártalo con responsabilidad.
+## Preguntas frecuentes
 
-Dominar el abocado no solo mejora la presentación de fondos y aliños, sino que demuestra oficio y respeto por la materia prima. Si te surgen dudas sobre esta u otras técnicas, los agentes de IA culinarios de [AI Chef Pro](https://app.aichef.pro/invitado?utm_source=web&utm_medium=glosario&utm_content=que-significa-abocar-en-cocina) te ayudan a resolverlas al instante. Con los agentes de IA en 7 idiomas y español nativo, puedes consultar términos, ajustar recetas o planificar partidas. El plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, suficiente para despejar las dudas del día a día.
+**¿Qué significa abocar en cocina?**
+Significa verter un líquido de un recipiente a otro juntando las bocas de los dos. Se hace después de un reposo, despacio, y se corta el chorro en cuanto empieza a salir turbio, para no arrastrar el poso. No es una cocción.
 
-<h2 data-glosario-busca="1">Cómo se escribe y cómo se busca</h2>
-<p>Las búsquedas mezclan abocar, abocado, abocada y la falta avocar. En cocina el verbo es abocar, con b, de boca. Avocar es un término jurídico y aquí no significa nada. Abocado, con o, nombra un vino con dulzor moderado y también la expresión estar abocado a un desenlace. No son el gesto de trasiego.</p>
-<ul>
-<li><a href="https://aichef.pro/blog/maceracion-concepto-definicion">Qué es la maceración</a></li>
-<li><a href="https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion">El fondo oscuro</a></li>
-</ul>
-<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://app.aichef.pro/invitado?utm_source=web&amp;utm_medium=glosario&amp;utm_content=que-significa-abocar-en-cocina">Entrar como invitado</a></p></aside>
+**¿Qué significan abocado, abocada y abocados?**
+Son el participio de abocar, y concuerdan en género y número. El fondo abocado ya se ha vertido. La salsa abocada al biberón, también. Los caldos abocados son varios. Abocadas vale para un femenino plural. Aparte, abocado es el adjetivo de un vino que no está seco ni llega a dulce, y de quien está encaminado a un resultado: estar abocado a repetir el fondo.
+
+**¿Qué es un vino abocado?**
+Es un vino con un punto de dulzor, sin ser un vino de postre. La RAE lo define, sobre todo para un estilo de jerez, como mezcla de vino seco y vino dulce. No es una de las cuatro menciones legales de la etiqueta europea, que son seco, semiseco, semidulce y dulce. El verbo abocar, verter, es otra palabra.
+
+**¿Abocar y decantar son lo mismo?**
+Se parecen en que los dos dejan el poso atrás, y no son el mismo trabajo. Abocar junta las bocas de dos recipientes de cocina: un fondo, una maceración, una salsa. Decantar, en sala, es pasar un vino de guarda a un decantador, muy despacio, para separarlo del sedimento. Trasvasar es cualquier cambio de recipiente, a menudo desde más altura.
+
+**¿Se escribe abocar o avocar?**
+En cocina, y en la frase estar abocado a algo, se escribe con b, porque sale de boca. Avocar, con v, es un verbo jurídico: una autoridad superior atrae un asunto que correspondía a otra. Para un caldo o un vino, la forma correcta es abocar.
+
+**¿Qué significa estar abocado a algo?**
+Significa estar encaminado a ese resultado, a menudo sin mucha salida. Una salsa que hierve está abocada a cortarse. No describe el vertido ni el dulzor de un vino: es el mismo verbo en sentido figurado, y se escribe igual, con b.
