@@ -15,7 +15,7 @@
 
 **Cómo usar este brief**: el orquestador pega al subagente la sección **0 de `BP/BRIEF-TRADUCTORES.md`** (reglas comunes:
 idioma, cero español, moneda, formato US, marca, cifras, pestañas citadas, glosario) + las secciones **0, 1 y 5** de este
-fichero (la 1 es el glosario de research §9 completo, OBLIGATORIO; la 5, la validación) + la de su tanda (§2 o §3). Lo
+fichero (la 1 es el glosario de research §9 completo, OBLIGATORIO; la 5, la validación) + la de su tanda (§2, §3 o §4). Lo
 que aquí choque con el brief común **manda aquí** (en particular: el comando de validación es el de §5, con `bp10.py`, no
 `check_textos.py` a pelo). El subagente no hace commit, **no corre `preparar_tandas`** y no toca nada más que sus salidas.
 
@@ -246,14 +246,36 @@ Health» · «Phase 4 - Staff & Food Safety» · «Phase 5 - Brand & Menu» · �
   de la Pizza EN: confirma que valen para una heladería y corrige solo lo que no case (p. ej. «Owner / Code consultant»,
   algo de pizza, de humos o de horno; la cabecera de la fase 1 «PHASE 1: BUSINESS SETUP & TAXES (weeks 1-4)» vale).
 
-## 4. Tandas (c) ice_a (§1-5) ‖ (d) ice_b (§6-10) — paso 3, NO ahora
+## 4. Tandas (c) ice_a (§1-5) ‖ (d) ice_b (§6-10) — paso 3: LISTAS (27-oct, tras la tanda 1)
 
-`BP10/docx_es_ice.json` ya trae las 131 ranuras del Word ES final (61 traducibles: **ice_a 29 párrafos ≈ 3,0 K
-palabras · ice_b 32 ≈ 3,8 K**, la estructura de PIZ) y cada párrafo su nota (`datos_ice.DOCX_NOTAS`: la sección + la FORMA
-de la Pizza EN; las de [47], [50], [53]-[56], [64], [73], [78]-[80], [82], [87]-[88], [99], [113], [115] y las 7 de §9 =
-102-108 con sus temas de D200; la 108 cierra con la nota UK). Tokens del caso: los de `tandas/ice_a.entrada.json` →
-`tokens` (112, con los 19 `inv_*`, `delivery_pct`, `comision_pct`, `produccion_horas`, `sabores`, `prime_cost_pct`,
-`fijos_anual`). El orquestador regenera estas entradas con `preparar_tandas` antes de lanzarlas.
+Lo que se pega a cada subagente: sección 0 de `BP/BRIEF-TRADUCTORES.md` + su bloque «Docx — reglas comunes de las tandas
+(d)-(g)» + las secciones **0, 1, 4 y 5** de este fichero. Cada uno lee su entrada y, como FORMA, la misma sección de la
+Pizza EN (`BP8/docx_en_piz_a.json` o `docx_en_piz_b.json`); NO toca nada más que su salida y no corre `preparar_tandas`.
+
+| Tanda | Entrada | Párrafos · palabras ES | Salida |
+|---|---|---|---|
+| (c) ice_a | `BP10/tandas/ice_a.entrada.json` | 29 · 3,039 (§1 Executive Summary · §2 Concept · §3 Market · §4 Competition · §5 Marketing) | `BP10/docx_en_ice_a.json` |
+| (d) ice_b | `BP10/tandas/ice_b.entrada.json` | 32 · 3,780 (§6 Operations · §7 Staffing · §8 Financial Plan · §9 Legal · §10 Conclusions) | `BP10/docx_en_ice_b.json` |
+
+- Formato de salida: `{"<i>": "<párrafo EN>", …}` con TODOS los «i» de `parrafos` y nada más; un párrafo por clave, sin
+  saltos de línea nuevos; los subtítulos (una línea sin punto final) siguen siendo una línea sin punto final.
+- Cada párrafo trae su `nota` (`datos_ice.DOCX_NOTAS`): la sección + la FORMA de la Pizza EN; las de [47], [50],
+  [53]-[56], [64], [73], [78]-[80], [82], [87]-[88], [99], [113], [115] SUSTITUYEN el bloque ES que no cruza (D200) y las
+  7 de §9 (102-108) fijan el tema de cada párrafo; **la 108 cierra con la nota UK** (el check la exige).
+- **Cifras**: las del plan, SOLO como tokens `{{…}}` de `tokens` (112). La entrada trae además `cifras_del_caso` (el valor
+  final de cada token, leído del Excel EN calibrado: ventas $383,625, neto 5.6 %, pesimista −$32,344…) SOLO para que
+  entiendas el caso: **en el texto va el token, nunca la cifra** (p. ej. una pérdida se escribe «a pre-tax loss of
+  {{pesimista_perdida}}», no «{{pesimista_resultado}}», que lleva el signo menos). Importes «$» fuera de tokens solo los de
+  research/SPEC con su fuente (carta de ejemplo research §5.1, batch freezer de 20 qt ≈ $40,800, pasteurizador de la
+  variante $25,000-45,000…).
+- **Terminología fijada por la tanda 1** (manda): «customers» (nunca covers / transactions) · «pasteurized base» de un
+  «licensed dairy»; «pasteurize your own mix» = la variante · licencias: «ask your state department of agriculture» (y el
+  local health department para el health permit), sin tarifas ni «no license needed» · «seasonal part-time W-2» ·
+  «scooper» / «shift lead» · jóvenes de 14-15 años solo con horario FLSA (29 CFR 570.35) · «waffle cone irons» · «dipper
+  wells» con agua corriente · °F con °C entre paréntesis · Month 1 = March · ☐ = pending (checklist).
+- Coherencia con el Excel y el checklist EN: los rótulos que cites (partidas, puestos, pestañas) con las palabras de
+  `fijos_en` / `pestanas_es_en` de las entradas de la tanda 1; el Word dice lo mismo que el libro sobre el modelo de base
+  comprada (§2, §6, §8 [99] y §9 [104]) y no promete nada que el Excel no haga.
 
 ## 5. Validación (Mac, solo JSON) — el comando EXACTO de cada tanda
 
@@ -274,5 +296,17 @@ python3 scripts/productos-digitales/business-plans-en-10/check_revision.py GRC
 Responde solo con: ficheros escritos, nº de claves (y de correcciones de la revisión), resultado de los dos checks y 3-5
 decisiones de traducción que deban conocer la otra tanda y las del Word.
 
-**Después (orquestador)**: `bp10.py preparar_tandas` (aplica GR/GRC.revision) → `bp10.py check_textos --todas` → paso 3
-(VPS: `aplicar_en` real + D15 → `cifras_caso.json`; tanda 2 ice_a ‖ ice_b; `ensamblar_docx --plan ice`).
+```bash
+# tanda (c) — Word §1-5
+python3 scripts/productos-digitales/business-plans-en-10/bp10.py check_textos --tanda ice_a
+# tanda (d) — Word §6-10
+python3 scripts/productos-digitales/business-plans-en-10/bp10.py check_textos --tanda ice_b
+```
+
+En la tanda 2, un solo comando por traductor (no hay revisión de reutilizadas); misma respuesta: fichero, nº de claves,
+resultado del check y 3-5 decisiones.
+
+**Después (orquestador)**: tanda 1 → `bp10.py preparar_tandas` (aplica GR/GRC.revision) → `bp10.py check_textos --todas`
+→ paso 3 (VPS: `aplicar_en` real + D15 → `cifras_caso.json`; `preparar_tandas` + `anotar_tandas_docx.py` en el Mac) →
+tanda 2 ice_a ‖ ice_b → `bp10.py check_textos --todas` → paso 4 (VPS: `ensamblar_docx --plan ice`, G1-G9, barrido,
+regresión; F2-NOTAS §8).

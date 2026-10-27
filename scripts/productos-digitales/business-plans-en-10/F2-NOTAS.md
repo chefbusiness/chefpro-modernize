@@ -129,3 +129,45 @@ bash regresion_ice.sh /root/wt-icecream
 
 Antes de G9: alta de `ice-cream-shop-business-plan` en `PRODUCTOS_LETTER` de `censo-entregables.py` y en `EXCLUIDOS` de
 `postprocess-transversal.py` (D201).
+
+## 7. Paso 3 de D207 (27-oct, sesión Claude Code): textos del libro aplicados, D15 real y entradas de la tanda 2
+
+Tanda 1 de dos traductores sonnet (commits `768e5ec5`, `253d558c`, `556fe5da`): `GICE-plan.json` (131) + `GR.revision.json`
+(1: c0086 «indoor seats») ‖ `GICE-check.json` (157) + `GRC.revision.json` (1: c0618 «Owner / Zoning consultant»).
+Repaso del orquestador del paso 3 sobre lo sensible (pasteuriz-, custard, gelato, homemade, allergen-free, °C): coherente
+con D190 (base comprada; mezcla propia = variante; licencias «ask your state department of agriculture», sin tarifas).
+
+| Comprobación | Resultado |
+|---|---|
+| `preparar_tandas` (Mac) | GR.revision y GRC.revision aplicadas (1 + 1); GM/GR/GRC = 369 / 14 / 73 |
+| `check_textos --todas` (Mac) | GM OK (6 avisos de longitud) · GR, GRC, GICE-plan, GICE-check OK (0 errores, 0 avisos); ice_a / ice_b pendientes (tanda 2) |
+| Alta de G9 (D201) | `ice-cream-shop-business-plan` en `PRODUCTOS_LETTER` de `censo-entregables.py` y en `EXCLUIDOS` de `postprocess-transversal.py` (línea propia + comentario) |
+| `bp10.py mapas` (VPS) | 0 errores · verificar OK (6 avisos de FIJOS del motor sin uso) |
+| `aplicar_en --idempotencia --json /tmp/ice-real.json` (VPS) | préstamo **$162,000** en 1 vuelta · textos 540 + 366, **faltan 0** · **0 diferencias** entre dos construcciones · inject_cache 736 + 12, **0 fallos de pycel** · 2 xlsx en `dl/ice-cream-shop-business-plan/` + `cifras_caso.json` (112 tokens) |
+| `bp10.py calibracion /tmp/ice-real.json` | **VERDE** (= dry-run de §3: holgura 18.3 %, DSCR 2.26, saldo $46,060, cobertura 105.3 %, neto año 3 8.6 %, D196 verde); `CALIBRACION_D15` sigue vacía |
+| `gates_en --solo G1,G2,G3,G4,G5,G6,G7,G9` | **TODO VERDE**: G1 736 fórmulas + 80 tareas [12, 15, 15, 12, 13, 13] · **G2 1,299 piezas** (incl. RX_ICE_NO y cifras prohibidas) · G3 16 hojas Letter · G4 233 valores bajo DV · G5 8 rangos CF · G6 0 diferencias · G7 110 valores, 0 calibraciones · **G9** censo 0 defectos + no latinos 0 (2 ficheros). G8 espera al Word (paso 4) |
+| `bp10.py barrido` (los 2 xlsx) | 1,267 piezas · **0 fallos** (RX_ICE_NO, cifras ES / Pizza / Bakery / Bar / FT / REST, español, no latinos) → `barrido_ice.json` |
+
+**Caso final** (`cifras_caso.json`, 112 tokens; ninguna cifra distinta del dry-run de §3): ventas **$383,625** / $414,315 /
+$435,031 (165 × $7.50 × 310; $8.10 con sales tax) · CAPEX **$204,100** + fondo $52,771 = **$256,871** · propios $95,000
+(37 %) + préstamo **$162,000** (cuota $26,365) · margen tras variables 68.2 % · COGS 22.3 % · personal $128,185 (33.4 %) ·
+prime cost 55.7 % · fijos $16,600 · EBITDA $66,747 (17.4 %) · neto **$21,585 (5.6 %)** / 7.7 % / **8.6 %** · equilibrio
+**147** / **140** customers/día · holgura **18 %** · DSCR mín **2.26×** · saldo mín **$46,060** (Mes 1) · pesimista $294,000 y
+−$32,344 (caja $32,029, no se agota) · optimista $486,400 y +$98,872.
+
+| Entregable (`astro-site/public/dl/ice-cream-shop-business-plan/`) | sha256 (Mac = VPS) |
+|---|---|
+| `ice-cream-shop-financial-projections.xlsx` (9 hojas, 736 fórmulas) | `cbb6c10c…` |
+| `ice-cream-shop-startup-checklist.xlsx` (7 hojas, 80 tareas, DV `✓,☐,N/A`) | `776ea70a…` |
+| `business-plans-en-10/cifras_caso.json` | `6cbbdb40…` |
+
+**Tanda 2 preparada** (Mac): `bp10.py preparar_tandas` + **`anotar_tandas_docx.py`** (nuevo, solo del conjunto: añade a
+cada entrada `cifras_del_caso` = el texto final de los 112 tokens leído de `cifras_caso.json`, para entender el caso; en el
+Word siguen yendo SOLO tokens). `tandas/ice_a.entrada.json` (29 párrafos, 3,039 palabras, §1-5) ‖
+`tandas/ice_b.entrada.json` (32, 3,780, §6-10); salidas `docx_en_ice_a.json` / `docx_en_ice_b.json`; brief §4 (con la
+terminología fijada por la tanda 1) y comando de cada uno en §5:
+`python3 scripts/productos-digitales/business-plans-en-10/bp10.py check_textos --tanda ice_a` (o `ice_b`).
+
+Siguiente (paso 4, VPS): `bp10.py ensamblar_docx --plan ice` → `gates_en` completo (G8) + `--autotest` +
+`ensamblar_docx --autotest` → `barrido` (3 entregables) → `resumen_entregables.py` → `regresion_ice.sh` → 2.ª pasada →
+revisión D203.
