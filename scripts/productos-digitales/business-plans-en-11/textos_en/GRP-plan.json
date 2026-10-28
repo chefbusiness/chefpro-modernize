@@ -1,6 +1,6 @@
 {
  "c0061": "ZERO by default: repayment starts in year 1, so the year-1 DSCR already measures the full loan payment. If you negotiate an interest-only first year, enter it here and read the year-1 DSCR with care.",
- "c0063": "The minimum this workbook asks for (see \"Instructions\"): a cushion below 3 months does not cover a slow stretch, such as the off-season for weddings or a corporate client who pays late.",
+ "c0063": "The minimum this workbook asks for (see \"Instructions\"): a cushion below 3 months does not cover a slow stretch, such as the summer dip in July and August or a corporate client who pays late.",
  "c0117": "Enter the minimum wage of your state or city, annualized for a full-time job (hourly rate × 2,080 hours). The pay floor in the \"Staffing\" tab is the HIGHER of this cell and the federal minimum. With 0 or blank, the traffic light compares only against the federal floor. Check current rates at dol.gov.",
  "c0123": "Value out of range",
  "c0124": "Enter a whole number from 1 to 365: guests per event or days.",
@@ -31,7 +31,7 @@
  "c0423": "Working capital",
  "c0424": "A round number labeled \"3 months\" that does not match the fixed costs",
  "c0425": "Three months of cash fixed costs, calculated by formula",
- "c0426": "A round number often covers far less than the label says. This cushion is what keeps you open through a slow month between wedding seasons.",
+ "c0426": "A round number often covers far less than the label says. This cushion is what keeps you open through the summer dip, when July and August bookings fall well below the rest of the year.",
  "c0443": "Income tax",
  "c0444": "A flat rate every year, with no offset for losses",
  "c0445": "One effective rate for years 1-2 and another from year 3, offsetting net operating losses carried forward",

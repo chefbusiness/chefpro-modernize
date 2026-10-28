@@ -1,19 +1,19 @@
 {
  "meta": {
-  "generado": "2026-10-28T18:04:21+00:00",
+  "generado": "2026-10-28T18:59:10+00:00",
   "script": "scripts/productos-digitales/business-plans-en-11/fuente_cof.py",
-  "origen_es": "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil",
-  "dl_es": "/root/tmp-caf-f2",
+  "origen_es": "/root/wt-coffeecart/scripts/productos-digitales/plan-cafeteria-movil",
+  "dl_es": "/root/wt-coffeecart/astro-site/public/dl/plan-negocio-cafeteria-movil-eventos",
   "uso": "CONTENIDO de coffee catering para los redactores (D221, D228, D229). NO se traduce tal cual: se condensa y se adapta a EE. UU. con research (F1-research-us-delta.md §1-§9, glosario §9 obligatorio). Las CIFRAS del ES NO se usan (D231: 107.055 €, 130 eventos, 135 invitados, 6,10 €…): las del caso salen del libro EN (tokens). Fuera: IVA, autónomo, fijo discontinuo, convenio, SMI, RD / Ley / Reglamento, registro sanitario autonómico, comida testigo, ITV, Piaggio / Ape, furgoneta (aquí: remolque cerrado), «feria» (aquí: festival / farmers market), Bizum, «cafetería» (falso amigo: coffee cart / mobile espresso bar), litros, kg y °C como unidad principal, «ChefBusiness»",
   "fuentes": {
-   "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil/datos_checklist.py": "6d30f334b640dd85d9cce277925b72ff01cda4aec52ab9f746b1b098e45d65de",
-   "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil/textos/contrato_es.json": "c07cdcc0d1adad3cd6a5894bd7492b478dd08d249d157454ec2841631b38e078",
-   "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil/datos_escalado.py": "9108c488c6c4044262a89157822d0f767f4130cd374712b82c18cacad8f77f46",
-   "/root/tmp-caf-f2/calc_pub/calculadora-escandallo-presupuesto-cafe-eventos.xlsx": "0b97373b076fc0885fe3193b6c9bdb34960b3424fec68d4f30298dbedf9e2253"
+   "scripts/productos-digitales/plan-cafeteria-movil/datos_checklist.py": "3a891d9d75fd301c2353c259779a19e8844de844f5d29a5f6c78116f35a565e2",
+   "scripts/productos-digitales/plan-cafeteria-movil/textos/caf_es_a.json": "93b077557d9b2d674ba30bd5732138a022b73d6571d031e88c5b3033be22c76e",
+   "scripts/productos-digitales/plan-cafeteria-movil/textos/caf_es_b.json": "2eda4012715b217fc5b40a4fbe8e4dcbb97cc6e0757deb4c595ccd272c1398ef",
+   "scripts/productos-digitales/plan-cafeteria-movil/textos/contrato_es.json": "633be8fcebcb71d00cb5e8b1dfb31b124122b4294648cc47c0c77615e801db8b",
+   "scripts/productos-digitales/plan-cafeteria-movil/datos_escalado.py": "96f7d1ab2e6658921a8c18e49a4c0e20351c2aad9150fe330dc3c8b3ec90c20e",
+   "astro-site/public/dl/plan-negocio-cafeteria-movil-eventos/calculadora-escandallo-presupuesto-cafe-eventos.xlsx": "799dd0994df7ae4bdab23719cb271b081999e746f11a2891a6d9b81ea70952cd"
   },
-  "pendientes": [
-   "docx ES por ranura: 0/61 (textos/caf_es_{a,b}.json)"
-  ]
+  "pendientes": []
  },
  "checklist_es": {
   "titulo": "CHECKLIST DE APERTURA — CAFETERÍA MÓVIL PARA EVENTOS",
@@ -117,7 +117,7 @@
       "tarea": "Elegir el soporte: barra-carro con furgoneta, Piaggio Ape o remolque",
       "responsable": "Titular",
       "plazo": "Semana 3",
-      "nota": "El caso del plan es furgoneta + barra-carro: entra en salones y pabellones. El Ape 50 es un ciclomotor (45 km/h como máximo, sin vías rápidas): para ir lejos, en remolque o furgoneta. Compara las tres configuraciones del plan de negocio (sección 6)"
+      "nota": "El caso del plan es furgoneta + barra-carro: entra en salones y pabellones. El Ape 50 es un ciclomotor (45 km/h como máximo, sin vías rápidas): para ir lejos, en remolque o furgoneta. Compara las tres configuraciones del plan de negocio (sección 2)"
      },
      {
       "n": 2,
@@ -128,7 +128,7 @@
      },
      {
       "n": 3,
-      "tarea": "Remolque: hasta 750 kg sin matrícula, con tarjeta ITV propia",
+      "tarea": "Remolque: hasta 750 kg sin matrícula propia, con tarjeta ITV",
       "responsable": "Titular",
       "plazo": "Al comprarlo, si lo usas",
       "nota": "Hasta 750 kg no lleva matrícula propia y sí tarjeta ITV (Reglamento General de Vehículos, arts. 25 y 26); por encima, matrícula, ITV y seguro, y el carné B o el B96 según el peso del conjunto. Desconfía de los remolques de importación sin homologación europea"
@@ -138,7 +138,7 @@
       "tarea": "Almacén base con fregadero y punto de agua",
       "responsable": "Titular",
       "plazo": "Semanas 3-6",
-      "nota": "Una nave o un garaje con fregadero para lavar loza, jarras y depósitos, almacén seco y frío, y plaza para la furgoneta. Nada se prepara en casa ni en un trastero sin agua (RD 1021/2022, art. 13.5.b)"
+      "nota": "Una nave o un garaje con fregadero para lavar loza, jarras y depósitos, almacén seco y frío, y plaza para la furgoneta. No se prepara nada en casa para un evento (RD 1021/2022, art. 13.5.b), y un trastero sin agua no sirve para lavar loza ni depósitos"
      },
      {
       "n": 5,
@@ -540,7 +540,7 @@
       "tarea": "Contrato firmado con cancelación, plan B de lluvia y fuerza mayor",
       "responsable": "Titular",
       "plazo": "Al reservar la fecha",
-      "nota": "Modelo del kit: cancelación en cuatro tramos sin huecos (se retiene el 10, 30, 60 o 100 % menos los costes que te ahorras, y es recíproca), plan B de lluvia (no es fuerza mayor), toma eléctrica y acceso exigidos por escrito al recinto"
+      "nota": "Modelo del kit: cancelación en cuatro tramos sin huecos (se retiene el 10, 30 o 60 %, y en el último el 100 % menos los costes que te ahorras, y es recíproca), plan B de lluvia (no es fuerza mayor), toma eléctrica y acceso exigidos por escrito al recinto"
      },
      {
       "n": 5,
@@ -566,7 +566,7 @@
      {
       "n": 8,
       "tarea": "Carga con la lista: cafetera, molinos, depósitos llenos, loza y fichas de alérgenos",
-      "responsable": "Ayudante",
+      "responsable": "Camarero/a",
       "plazo": "Día del evento",
       "nota": "Agua cargada en red pública y registrada, leche en neveras con acumuladores, generador con combustible"
      },
@@ -587,7 +587,7 @@
      {
       "n": 11,
       "tarea": "Desmontaje, limpieza y agua gris",
-      "responsable": "Ayudante",
+      "responsable": "Camarero/a",
       "plazo": "Final del evento",
       "nota": "Grupos y lanza limpios, posos y envases recogidos, el agua gris a un punto autorizado; fotos del espacio antes y después"
      },
@@ -616,7 +616,69 @@
    }
   }
  },
- "docx_es_por_ranura": {},
+ "docx_es_por_ranura": {
+  "39": "Este plan describe una barra de café de especialidad para eventos que viaja en furgoneta, con su barra-carro, una cafetera de dos grupos, molinos y energía propia. Trabaja por encargo para bodas, empresas, congresos y celebraciones privadas, y suma unas pocas jornadas de venta directa en mercados y festivales, donde el organizador cobra un canon. No es venta diaria en la calle: ese es otro negocio. La monta una SL unipersonal, con el titular de barista y un camarero o camarera fijo discontinuo, y tiene su base en una nave o un garaje con fregadero. Arranca en marzo, que es el Mes 1 del Excel. El kit incluye este plan de 10 secciones, el Excel de 9 hojas, el checklist de 80 tareas, la calculadora, el modelo de contrato y la guía de equivalencias para Hispanoamérica.",
+  "40": "Las cifras clave del caso son estas. Se hacen {EVENTOS_ANO} eventos al año, de {INVITADOS_EVENTO} invitados de media, a {PRECIO_INVITADO} por invitado sin IVA, lo que deja una factura media de {VENTA_EVENTO_MEDIO} por evento. Las ventas del primer año son de {VENTAS_A1} y el resultado neto, de {NETO_A1} (un {NETO_PCT_A1} de las ventas). El hallazgo que distingue a este negocio cabe en una frase: es mano de obra y kilómetros, no mercancía. La mercancía es la partida pequeña, con el {MERCANCIA_PCT_A1} de las ventas, y el personal es la grande, con el {PERSONAL_PCT_A1}. Por eso este plan se juega en la agenda, en cuántas fechas llenas y a qué precio, y no en lo que cuesta el kilo de café.",
+  "41": "La inversión total es de {INVERSION_TOTAL}. De ahí, {INVERSION_14_PARTIDAS} son el equipo y la puesta en marcha: furgoneta usada con rotulación, barra-carro con carpa, cafetera, molinos, energía, agua, frío, menaje y loza, además de la marca, la web y el lanzamiento. El resto es la fianza de la base, el mes previo de cuota, los imprevistos de la furgoneta y un fondo de maniobra de {FONDO_MANIOBRA}, que cubre {MESES_FONDO} meses. El IVA de la inversión va aparte y entra en la necesidad de caja de {NECESIDAD_CAJA}. Se financia con {RECURSOS_PROPIOS} propios y un préstamo de {PRESTAMO} al {TIPO_PRESTAMO}, a {PLAZO_PRESTAMO} años y con {CARENCIA} año de carencia.",
+  "42": "El primer año arranca con una rampa: las ventas del Mes 1 son el {RAMPA_MES1} del ritmo de crucero, que llega en {MESES_RAMPA} meses. El equilibrio de caja está en {BE_EVENTOS_ANO_CAJA} eventos del tamaño medio, frente a los {EVENTOS_ANO} del caso, con una holgura de caja del {HOLGURA_CAJA} en este primer año, el de la carencia. El plazo de recuperación de la inversión es de {PAYBACK_TEXTO}: no es un negocio de enriquecerse rápido, sino uno que se sostiene si llenas la agenda. Desde el segundo año hay que devolver también el principal del préstamo y la holgura baja; lo verás en la sección 8.",
+  "43": "El equipo es corto y se apoya en ti. Como titular y barista, vendes, compras, conduces y sirves en cada evento. Te acompaña un camarero o camarera fijo discontinuo, que hace de segundo barista en bodas, congresos y ferias, y una pequeña bolsa de suplencias y refuerzo para la temporada y los eventos grandes. Son {PLANTILLA_PERSONAS} filas en la hoja de personal, con un coste de {PERSONAL_A1} el primer año. «Barista» no es una categoría del convenio, así que se contrata como camarero o camarera de hostelería. La plantilla crece con personas, no con porcentajes: {INCORPORACIONES_A2} de incorporaciones en el año 2 y otro tanto en el 3.",
+  "46": "Una cafetería móvil puede montarse sobre tres soportes, y conviene elegir antes de comprar nada. La barra-carro con furgoneta es la del caso: un coffee cart, o carrito de café con ruedas, que viaja dentro de una furgoneta y entra en salones, hoteles y pabellones. El Piaggio Ape vende la foto en las bodas, pero es un ciclomotor de 45 km/h como máximo: para ir lejos hay que llevarlo en remolque o furgoneta, y no entra en un pabellón. El remolque cafetería homologado, de hasta 750 kg, no lleva matrícula propia y sí su tarjeta ITV. A la furgoneta equipada se la llama a veces coffee truck. Este plan elige la furgoneta porque vende un servicio que debe entrar en recintos muy distintos.",
+  "47": "Hay tres maneras de montarlo, según cuánto quieras arriesgar. La mínima lleva barra-carro, cafetera de dos grupos o reacondicionada, un molino, depósitos y menaje, con vehículo propio y sin generador: unos 12.000-15.000 €. Sirve para probar con empresas y fincas que tengan una toma de 16 A; sin enchufe no hay servicio, y la imagen es más sencilla. La del caso suma furgoneta, barra-carro y generador, y cuesta {INVERSION_14_PARTIDAS}: es la que permite bodas, empresas, congresos y venta directa. La de imagen usa un Ape o un remolque homologado más el vehículo de traslado, unos 55.000-65.000 €, para bodas premium y activaciones de marca; tiene el límite de la velocidad y de los pabellones. Si dudas, prueba primero con la mínima.",
+  "48": "La propuesta de valor se resume en cuatro cosas. Café de especialidad de verdad: solo lo llamas así con la ficha del tostador en la mano, con 80 puntos SCA o más, y sin torrefacto. Leches vegetales, cada una con su jarra, para que el invitado alérgico no dependa de la suerte. Loza en bodas y empresa, que se ve mejor y evita el vaso de un solo uso. Y un precio claro por invitado, con su logística incluida, en lugar de un paquete cerrado que nadie sabe comparar.",
+  "49": "El Excel recoge dos líneas de ingreso: bebidas de café y sin café, con el {PCT_BEBIDAS} de las ventas, y dulces y bollería de obrador, con el {PCT_DULCES}. La bollería se compra a un obrador y se sirve tal cual. Todo va al 10 % de IVA, tanto en la barra del evento como en la feria. La venta directa en mercados y festivales pesa el {CUOTA_FERIAS} de las ventas y paga un canon al organizador, del {CANON_FERIAS} en el caso. La carta no lleva alcohol: la barra de cócteles es otro plan, con otras cuentas y otros permisos.",
+  "50": "La mezcla del caso tiene su lógica: 30 bodas (120 invitados a 9,00 € sin IVA, {TICKET_BODAS} por boda), 40 eventos de empresa (80 a 8,00 €, {TICKET_EMPRESA}), 22 jornadas de congreso o feria con stand de marca (300 asistentes a 4,50 €, {TICKET_CONGRESOS}), 25 celebraciones privadas y rodajes (50 a 9,50 €, {TICKET_PRIVADOS}) y 12 jornadas de venta directa (unas 250 tazas a 3,00 €, {TICKET_VENTA_DIRECTA} brutos). Suman {MEZCLA_SERVICIOS} servicios y {MEZCLA_VENTAS}, que el Excel redondea a {EVENTOS_ANO} eventos de {INVITADOS_EVENTO} invitados a {PRECIO_INVITADO} ({PRECIO_INVITADO_IVA} con IVA).",
+  "53": "Empecemos por lo que se busca. En Google España, según DataForSEO el 28 de octubre de 2026, «coffee truck», «coffee cart» y «food truck cafetería» tienen 90 búsquedas mensuales cada una; «café para eventos» y «carrito de café», 40; «cafetería móvil» y «barra de café», 30; y «barista para eventos», 20. «Montar una cafetería móvil» no tiene dato. En México se busca bastante más: «cafetería móvil», 590, y «barra de café para eventos» y «carrito de café», 480 cada una. La lectura es clara: quien quiere montar una barra busca poco y decide con datos, y por eso este plan trae las cuentas hechas.",
+  "54": "El cliente no es quien busca cómo montar una barra. Los novios, las empresas y las agencias llegan por los portales de bodas, por los wedding planners (organizadores de bodas) y por la recomendación. El café se contrata después que la finca y el catering, desde una semana hasta seis meses antes según el proveedor, así que te interesa estar en la cabeza de quien decide antes que tú. La intención de «café para eventos» mezcla dos productos: el coffee break del catering, la pausa con termos o cápsulas y sin barista, y la barra de barista. El hueco está en la barra.",
+  "55": "Los precios publicados en Bodas.net (consulta del 28 de octubre de 2026) sirven para situarte, no como precios cerrados: son precios «desde» de escaparate y sin desglose. Hay barras desde 295 € (2 horas ilimitadas, Osuna), 300 € (un Piaggio Ape, Málaga), 450 € (de 20 a 100 invitados, Málaga), 650 € (3 horas, hasta 250 invitados, Barcelona) y 700 € (de 50 a 800 invitados, Barcelona), y desde 1.300 € con IVA en Madrid. La señal va del 30 al 50 %, la hora extra, de 37 a 50 €, y el desplazamiento, por kilómetro (0,45 € en una ficha) o con un recargo fijo. Nadie publica un precio por invitado y hora: la calculadora del kit lo hace.",
+  "56": "Con el Mes 1 en marzo, el plan reparte las ventas según el calendario: los picos son mayo y junio, con bodas, comuniones y congresos, y septiembre y octubre; los valles, agosto y enero. Se arranca en marzo porque el café se contrata tarde, con semanas o meses de antelación, y la primavera abre con empresas y comuniones. Así, enero y febrero, los meses más flojos, llegan con la caja que dejó la temporada. Por eso el Excel numera la tesorería de Mes 1 a Mes 12 desde marzo: el Mes 6 es agosto, y el saldo mínimo cae en el Mes {MES_SALDO_MINIMO}, {MES_SALDO_MINIMO_NOMBRE}.",
+  "57": "En Google, esta búsqueda se reparte entre tableros de Pinterest, vendedores de vehículos y la guía de un vendedor de vasos. Nadie explica el precio por invitado, la electricidad, la comida testigo, el vaso «compostable» ante la Ley 7/2022 ni la diferencia entre un evento contratado y la venta ambulante. Ese es el hueco que cubre este plan.",
+  "58": "La demanda tiene riesgos, y el plan los nombra. El primero es la agenda: por debajo de unos {BE_EVENTOS_ANO_CAJA} servicios del tamaño medio el primer año, y de unos {BE_EVENTOS_CAJA_A2} y {BE_EVENTOS_CAJA_A3} del mismo tamaño el segundo y el tercero, cuando se devuelve el préstamo, no hay caja (el plan hace el equivalente a {EVENTOS_EQUIVALENTES_A2} y {EVENTOS_EQUIVALENTES_A3}). El segundo, los kilómetros, que se comen la jornada si no los cobras aparte. El tercero, que el cliente se conforme con un coffee break de catering, más barato y sin barista. Se defienden con planners y fincas fijas, empresas que repiten y congresos con calendario, y con un contrato que cierra la fecha.",
+  "61": "Antes de fijar un precio, dibuja el mapa. Tus clientes son novios, empresas, agencias de eventos, organizadores de congresos y familias que celebran. Tu competencia no es solo otra barra de café: está en los tostadores que salen a la calle con su propia barra, en las barras urbanas de bodas, en el coffee break del catering y en quien alquila cafeteras. Con eso claro, sabrás qué precio puedes pedir y dónde ganar.",
+  "62": "Qué decide cada cliente es lo primero que debes entender. La pareja mira la foto, la hora a la que llega la barra, el precio por invitado y si hay leche vegetal para quien la necesita; no quiere sorpresas el día de la boda. La empresa y la agencia piden puntualidad, una factura limpia y un servicio que no moleste a la jornada. El organizador de un congreso mira cuántas bebidas por hora sacas y si hay baristas de sobra en el pico de las pausas. La familia que celebra una comunión busca algo sencillo y con precio cerrado. Y todos, sin saberlo, comparan lo que nadie publica: cuánto cuesta cada invitado por hora, con su mínimo y sus kilómetros. Ahí tienes tu oportunidad: ponerlo por escrito antes de que te lo pidan.",
+  "63": "La competencia llega de seis lados, y no hace falta nombrar marcas para verla. Los tostadores que montan su propia barra móvil son el rival más fuerte en ferias y congresos. Los coffee carts y coffee trucks de las grandes ciudades han fijado el estándar urbano: un pack de 3 horas con mínimo. Los Ape de un solo barista ofrecen precio bajo, pero tienen poco radio y poca capacidad. El coffee break del catering usa cafeteras de cápsula o termos, sin barista. El alquiler de cafeteras no incluye a nadie que las maneje. Y las barras para ferias sin acometida de agua pelean por el mismo cliente de congresos.",
+  "64": "Las barreras de entrada son de cumplimiento y de caja. Hace falta la declaración responsable en el registro sanitario de tu comunidad autónoma, una base con fregadero (nada se prepara en casa), agua de depósito de la que respondes hasta el punto de uso y, si añades salado, la comida testigo. La caja pesa más que los papeles: la cafetera, la energía y el vehículo se pagan antes de la primera señal. Y hay una barrera comercial: sin fotos, reseñas y planners que te conozcan, la agenda no se llena.",
+  "65": "Cuatro factores deciden si funciona. El primero es la agenda: pasar cuanto antes de los {BE_EVENTOS_ANO_CAJA} servicios del equilibrio de caja, con las fechas de mayo, junio, septiembre y octubre bien vendidas. El segundo es la energía: una cafetera de dos grupos consume de 2,4 a 4,5 kW y un enchufe de 16 A da unos {TE_KW_ENCHUFE} kW, así que la del caso es de 3,5 kW como máximo o se pide una toma dedicada, y se confirma por escrito antes de firmar. El tercero son los kilómetros, que se cobran aparte. El cuarto es el café constante, con la ficha del tostador a mano.",
+  "66": "El DAFO de este concepto es claro. Fortalezas: una inversión contenida, una mercancía pequeña y un margen bruto del {MARGEN_BRUTO_PCT_A1} en el primer año. Debilidades: una factura media baja, de {VENTA_EVENTO_MEDIO} por evento, y un personal que pesa el {PERSONAL_PCT_A1} de las ventas. Oportunidades: el hueco de información, porque nadie publica el precio por invitado ni resuelve la electricidad antes de firmar, y los congresos con calendario. Amenazas: los tostadores con barra propia, el coffee break del catering y una agenda que no se llene, con el equilibrio de caja en {BE_EVENTOS_ANO_CAJA} eventos del tamaño medio.",
+  "69": "El café se contrata después que la finca y el catering, así que la captación va a quien decide antes que tú. Empieza por los wedding planners y las fincas de tu zona: un correo personal y una cata con la barra montada valen más que cualquier anuncio. Que prueben tu café, vean tu carta de leches vegetales y comprueben cómo montas y recoges. Después, haz que te recomienden entre ellos: un planner contento te trae varias bodas, y una finca que te conoce te propone a sus parejas.",
+  "70": "Los portales de bodas son tu escaparate: ficha completa, fotos de verdad y un precio «desde» que diga con claridad qué incluye, cuántas horas, cuántos invitados y qué mínimo y qué kilómetros cubre. Responde siempre con un presupuesto cerrado hecho con la calculadora del kit. Suma una feria nupcial al año, donde conocerás a planners, fincas y parejas. En redes, Instagram y TikTok funcionan mejor con servicios reales, con el café saliendo de la máquina, que con fotos de catálogo. Abre un perfil de empresa en Google y pide una reseña después de cada evento, y atiende por WhatsApp Business: contestar rápido cierra fechas.",
+  "71": "Las agencias de eventos y los organizadores de congresos son la tipología que sostiene el equilibrio: sus pausas de café y sus stands de marca llenan jornadas enteras. Ofréceles un dossier con la capacidad por hora, los baristas por pico y la electricidad resuelta. Con las empresas, empieza por un pop-up en su oficina, una presentación o la fiesta de Navidad, y trabaja LinkedIn con quien organiza los eventos. Una empresa que repite te da estabilidad, y la estabilidad es lo que necesita una agenda.",
+  "72": "La venta directa es la línea pequeña, el {CUOTA_FERIAS} de las ventas, y se elige con cuidado. Escoge mercados y festivales por su público y por su canon; si te piden una cuota fija, conviértela a porcentaje para compararla con el {CANON_FERIAS} del caso. Haz las cuentas antes de apuntarte: el canon se come parte del margen. Es un buen escaparate para que te vean, pero no te lleves la barra a la calle a diario: eso es otro negocio, con autorización municipal. En el Excel entra con {TICKET_VENTA_DIRECTA} brutos por jornada.",
+  "73": "La calculadora del kit presupuesta por invitado y por horas; el desplazamiento se cobra aparte, por kilómetro y sin margen. Su boda de ejemplo, con 120 invitados y una barra de 3 horas tras la cena, en loza, sale a un precio mínimo de {EJ_BODA_PRECIO} por invitado sin IVA para llegar al margen objetivo del 55 % ({EJ_BODA_TOTAL} con IVA y desplazamiento); la boda media del plan, a 9,00 €, deja más margen. El congreso de ejemplo, con 300 asistentes y una jornada con dos pausas, sale a {EJ_CONGRESO_PRECIO} por asistente. El contrato cierra el resto: sin desistimiento de 14 días en un servicio de ocio con fecha cerrado a distancia (art. 103.l del TRLGDCU), plan B de lluvia que no es fuerza mayor y el fuero del domicilio del consumidor (art. 90.2).",
+  "74": "El particular paga una señal del 30 % a cuenta del precio al firmar y el 70 % siete días antes; la empresa o el congreso, el 30 % al confirmar y el 70 % a 30 días de la factura; en ferias y mercados, en el acto. Cada pago se factura, también la señal (art. 75.Dos de la Ley 37/1992). La cancelación va en cuatro tramos «de X a menos de Y»: cortes a 60, 30 y 7 días el particular y a 30, 15 y 7 la empresa. Se retiene el 10, el 30 o el 60 % del precio, y en el último tramo el 100 % menos los costes que la cafetería se ahorra, y es recíproca: si cancela ella, devuelve lo cobrado y paga lo del mismo tramo.",
+  "75": "El presupuesto de marketing del caso es de {MARKETING_ANO} al año, para escaparates de bodas, Google Ads local, redes y una feria nupcial. La marca, la web, las fotos y el dossier ({MARCA_WEB}) y el lanzamiento ({LANZAMIENTO}) van dentro de la inversión inicial. La fidelización cuesta poco: pide la reseña tras cada evento, vuelve a escribir a la empresa antes de su Navidad y pide a cada planner que te recomiende. Revisa cada trimestre qué canal te trajo qué fechas.",
+  "78": "Todos los eventos siguen el mismo guion, y conviene escribirlo antes de vender la primera fecha. Con el presupuesto aceptado y la señal cobrada, cierras el briefing con el cliente: invitados, horas de barra, carta, alergias, toma eléctrica, agua y acceso del vehículo. Después haces la visita técnica al recinto, o pides fotos si está lejos, y calculas el servicio con la calculadora del kit. Unos días antes pides el café, la leche y la bollería. El día anterior cargas con una lista: depósitos llenos de agua de red, leche en neveras con acumuladores, loza, vasos de reserva y la cafetera. Sales con margen para llegar una hora antes del servicio, montas la barra y calibras el molino. Durante el servicio usas una jarra por cada leche y purgas la lanza de vapor entre leches. Al terminar toca desmontar, limpiar, vaciar el agua gris en un punto autorizado y volver a la base. Por eso un servicio «de 2 horas» no es una tarde corta: es una jornada de 7 a 9 horas, y así debes presupuestarlo.",
+  "79": "La tabla de escalado de la calculadora te dice qué llevar según el tamaño del encargo. Es una estimación del kit con ratios de EE. UU., para una barra de {TE_HORAS} horas con {TE_BEBIDAS_INVITADO} bebidas por invitado. Con 50 invitados salen {TE50_BEBIDAS} bebidas: {TE50_BARISTAS} barista, {TE50_CAFETERAS} cafetera, {TE50_KG_CAFE} kg de café, {TE50_L_LECHE} l de leche y {TE50_KW} kW. Con 100 invitados, {TE100_BEBIDAS} bebidas, {TE100_BARISTAS} baristas, {TE100_CAFETERAS} cafetera, {TE100_KG_CAFE} kg y {TE100_L_LECHE} l. Con 200, {TE200_BEBIDAS} bebidas, {TE200_BARISTAS} baristas, {TE200_CAFETERAS} cafeteras, {TE200_KG_CAFE} kg y {TE200_L_LECHE} l. Con 300, {TE300_BEBIDAS} bebidas, {TE300_BARISTAS} baristas y {TE300_CAFETERAS} cafeteras. Las bebidas por invitado cambian con la duración: 1,0 hasta 2 horas, 1,3-1,5 entre 2 y 4 horas, 1,5-1,8 entre 4 y 6 horas y 2,0-2,5 en jornada completa. Por la mañana, cuenta un 20-30 % más, y en una boda de noche, un 10 % menos. Un barista con dos grupos saca unas 50-60 bebidas por hora.",
+  "80": "La electricidad es lo primero que conviene preguntar y lo último que se suele comprobar. Una cafetera de dos grupos consume de 2,4 a 4,5 kW, y un enchufe de 16 A a 230 V da unos {TE_KW_ENCHUFE} kW. Por eso la cafetera del caso es de 3,5 kW como máximo; si la tuya pide más, necesitas una toma dedicada. Con 200 o 300 invitados la tabla sube a {TE200_KW} kW con dos cafeteras, y la toma pasa a ser {TE200_TOMA}. Si el recinto no ofrece lo que necesitas, la salida es un generador inverter de 5 kVA o más, o baterías de litio, más silenciosas para las bodas pero más caras (6.000-10.000 € un sistema completo, por encima de la partida de energía del caso). El contrato del kit pide la toma por escrito. Sin ese compromiso, no firmes la fecha.",
+  "81": "El coste de las bebidas sale de la calculadora. Un espresso cuesta {COSTE_ESPRESSO} de producto, un latte {COSTE_LATTE} y la mezcla del caso, {COSTE_MEDIO_BEBIDA} de media; cuando el vaso no es de loza, suma {COSTE_MEDIO_ENVASE} de vaso y tapa. El coste de mercancía del Excel ({COSTE_BEBIDAS} de las bebidas) es la media del año con la merma incluida, no la receta de una bebida concreta, así que no lo compares con el de un latte suelto. En cuanto a los vasos, en bodas y empresa va loza. En la venta directa, vaso de un solo uso con su precio aparte en el tique. Y en ferias y festivales, el sistema de vaso reutilizable del organizador.",
+  "82": "El equipo del caso es este: una furgoneta usada con rotulación ({FURGONETA}), la barra-carro con carpa e iluminación ({BARRA}), la cafetera ({CAFETERA}), los molinos ({MOLINOS}), con uno de descafeinado porque el invitado español lo pide de máquina, la energía propia ({ENERGIA}), el agua y la higiene ({AGUA}), el frío ({FRIO}) y el menaje y la loza para 150 invitados ({MENAJE}). Todo vive en un almacén base con fregadero, por {CUOTA_BASE_MES} al mes. El mantenimiento de la cafetera y los molinos cuesta {MANTENIMIENTO_CAFETERA} al año: ponlo en el calendario, porque una avería en pleno servicio no se arregla con una disculpa.",
+  "85": "El equipo propio es corto, porque el negocio es pequeño y hay que pagarlo con ventas. Tú eres el titular y el barista: vendes, compras, conduces y sirves en cada evento, con un sueldo de {SUELDO_TITULAR} brutos al mes en 14 pagas. Como administrador de la SL cotizas en el régimen de autónomos; confírmalo con tu gestoría. A tu lado hay un camarero o camarera de barra fijo discontinuo al 36 % de jornada, unas 650 horas al año, que hace de segundo barista en bodas, congresos, ferias y la mitad de los eventos de empresa, con {BRUTO_CAMARERO} brutos al mes. Completan la bolsa dos filas pequeñas: suplencias y refuerzo de temporada, y un tercer barista para los eventos grandes.",
+  "86": "Son {PLANTILLA_PERSONAS} filas en la hoja Personal y {JORNADAS} jornadas completas equivalentes. El personal cuesta {PERSONAL_A1} el primer año, un {PERSONAL_PCT_A1} de las ventas, y es la partida más grande del negocio, por encima de la mercancía ({MERCANCIA_PCT_A1} de las ventas). Esa es la idea que conviene tener clara: una cafetería móvil vende mano de obra y kilómetros, no producto. Las horas cuadran con holgura: contratas {HORAS_CONTRATADAS} horas y los eventos piden {HORAS_NECESARIAS}, una cobertura del {COBERTURA_HORAS}. Cada evento lleva {HORAS_EVENTO} horas de trabajo con {PERSONAS_EVENTO} personas de media, y el resto del tiempo es oficina, compras y limpieza de la base.",
+  "87": "Tu camarero o camarera de barra y la bolsa de refuerzo van con contrato fijo discontinuo (art. 16 del Estatuto de los Trabajadores). Es un contrato indefinido: la persona no desaparece al acabar la temporada, sino que la llamas por escrito cuando hay trabajo, y debe estar dada de alta en la Seguridad Social antes de cada llamamiento. Para ti tiene una ventaja clara: cuentas con gente que ya conoce tu barra en los meses fuertes sin pagar horas en los flojos. Para ella, estabilidad y derecho al llamamiento. Para cubrir una baja concreta, el contrato es de sustitución (art. 15.3). Lleva además el registro de jornada (art. 34.9), también el de las horas de oficina y de limpieza.",
+  "88": "«Barista» no es una categoría del convenio. Se contrata como camarero o camarera del convenio provincial de hostelería, porque el art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería incluye las «instalaciones fijas o móviles». Respeta siempre el salario mínimo: el SMI de 2026 es de {SMI_ANUAL} al año, y en un contrato a tiempo parcial se aplica en proporción a la jornada. Ojo con una tentación habitual: contratar baristas como autónomos que te facturan con tu horario y tu barra. Eso es falso autónomo (art. 1.1 del Estatuto de los Trabajadores), y el riesgo es tuyo.",
+  "89": "Antes de la primera temporada, el equipo necesita tres formaciones. La primera es de higiene, acreditada por la empresa: el antiguo título de manipulador ya no se exige, pero tú respondes de que tu gente sepa tratar la leche, el agua y los alérgenos. La segunda es de barista: la receta de la casa, el calibrado del molino y el texturizado de la leche, para que la última taza del servicio sepa igual que la primera. La tercera es de prevención de riesgos: vapor, cargas y conducción. Haz un ensayo completo en la base, con la barra montada y un cronómetro, antes de tu primer encargo: es la forma más barata de descubrir qué falta en la carga.",
+  "90": "La plantilla crece con personas, no con un porcentaje. El Excel suma {INCORPORACIONES_A2} de incorporaciones el segundo año y otro tanto el tercero, para cubrir más suplencias y más refuerzo en los eventos grandes. Mientras tanto, el reparto del día del evento es sencillo: en cada servicio hay un responsable, el titular o quien él designe, que es el único interlocutor del cliente y del recinto, y al resto del equipo se le dice cada cosa una vez, por escrito y antes de salir de la base. Revisa cada trimestre las horas contratadas frente a las trabajadas y habla con tu equipo después de cada evento grande: lo que sale mal en el desmontaje se arregla en la siguiente carga.",
+  "93": "Para arrancar necesitas {INVERSION_TOTAL}: {CAPEX} de inversión (la furgoneta, el equipo y la puesta en marcha, {INVERSION_PARTIDAS} con los imprevistos de la furgoneta, más la fianza de {FIANZA} y {RENTA_PREVIA} de cuota antes del primer evento) y {FONDO_MANIOBRA} de fondo de maniobra. El IVA de la inversión, {IVA_INVERSION}, también hay que adelantarlo, así que la necesidad de caja sube a {NECESIDAD_CAJA}. Se financia con {RECURSOS_PROPIOS} propios y un préstamo de {PRESTAMO} al {TIPO_PRESTAMO} a {PLAZO_PRESTAMO} años, con {CARENCIA} año de carencia y una cuota de {CUOTA_ANUAL} al año.",
+  "94": "La cuenta de resultados a tres años proyecta unas ventas de {VENTAS_A1}, {VENTAS_A2} y {VENTAS_A3}. El primer año cuenta {EVENTOS_ANO} eventos de {INVITADOS_EVENTO} invitados de media, a {PRECIO_INVITADO} por invitado sin IVA; de esas ventas, {VENTAS_FERIAS_A1} ({CUOTA_FERIAS}) son venta directa en ferias y mercados. El margen bruto es de {MARGEN_BRUTO_A1} ({MARGEN_BRUTO_PCT_A1}), después de todos los costes variables: la mercancía ({MERCANCIA_PCT_A1} de las ventas), los consumibles, el canon de las ferias ({CANON_FERIAS_A1}), los medios de pago y los varios. De ahí salen el personal ({PERSONAL_A1}), la cuota del almacén base ({CUOTA_BASE_ANO}) y el resto de gastos fijos ({OTROS_FIJOS_A1}: suministros, seguros, asesoría, marketing, mantenimiento y tasas), y queda un resultado de explotación antes de amortizaciones e intereses de {EBITDA_A1} ({EBITDA_PCT_A1}). Después de amortizar, pagar intereses e impuestos, el neto es de {NETO_A1}, {NETO_A2} y {NETO_A3} ({NETO_PCT_A1}, {NETO_PCT_A2} y {NETO_PCT_A3} de las ventas). Los dos primeros ejercicios con base positiva aplican el {IS_NUEVA} de empresa de nueva creación y el tercero, el tipo general del {IS_GENERAL}; si tu cifra de negocios queda por debajo de 1 millón o de 10 millones de euros, desde 2025 hay tipos más bajos que se implantan de forma gradual: confírmalo con tu asesor.",
+  "95": "El crecimiento tiene truco, y conviene entenderlo. El Excel no añade eventos: suben los invitados por evento un {CREC_A2} el segundo año y un {CREC_A3} el tercero, de {INVITADOS_EVENTO} a {INVITADOS_EVENTO_A2} y a {INVITADOS_EVENTO_A3}, con los mismos {EVENTOS_ANO} eventos. En euros, eso equivale a hacer unos {EVENTOS_EQUIVALENTES_A2} y unos {EVENTOS_EQUIVALENTES_A3} eventos del tamaño del año 1. Es un supuesto razonable si hay reseñas y clientes de empresa que repiten, pero es un supuesto: si no llegan, no se cumple. La plantilla crece con personas ({INCORPORACIONES_A2} al año), no con un porcentaje. Y todo lo que se sirve va al {IVA_REDUCIDO} de IVA, en la barra y en la feria.",
+  "96": "El equilibrio contable se puede leer de dos formas, y no se mezclan. Una lectura: {BE_INVITADOS_EVENTO} invitados por evento con los eventos del caso. La otra: {BE_EVENTOS_ANO} eventos del tamaño medio. En las dos, los ingresos de equilibrio son {BE_INGRESOS} y la holgura, del {HOLGURA_CONTABLE}. El equilibrio de caja, que ya cuenta la deuda, está en {BE_EVENTOS_ANO_CAJA} eventos del tamaño medio, con una holgura del {HOLGURA_CAJA}; pero esa es la del primer año, con carencia y solo intereses. Desde el segundo, con la devolución del principal, la holgura baja al {HOLGURA_CAJA_A2} ({BE_EVENTOS_CAJA_A2} eventos del tamaño del año 1) y en el tercero queda en el {HOLGURA_CAJA_A3} ({BE_EVENTOS_CAJA_A3}): esos son los años que hay que vigilar.",
+  "97": "La tesorería numera los meses del 1 al 12, y el Mes 1 es marzo. Se hace así porque el café se reserva con una semana a seis meses de antelación, la mayoría con uno o más meses, se arranca en primavera con las empresas y las comuniones, y enero y febrero, los meses más flojos, llegan con la caja de la temporada. La rampa empieza al {RAMPA_MES1} y llega al ritmo de crucero en {MESES_RAMPA} meses. El saldo mínimo es de {SALDO_MINIMO}, en el Mes {MES_SALDO_MINIMO} ({MES_SALDO_MINIMO_NOMBRE}), y el año acaba en febrero con {SALDO_MES12}. Las pagas extra salen en julio y en diciembre.",
+  "98": "El DSCR mínimo es de {DSCR_MIN} ({DSCR_A2} el segundo año y {DSCR_A3} el tercero): el negocio cubre la deuda con margen sobre el {DSCR_OBJETIVO} que suele pedir un banco, aunque no sobrado. Sobre el payback, el Excel marca «{PAYBACK}» en la fila «Payback del proyecto (años), antes de la deuda»; sobre el CAPEX sin el fondo de maniobra serían {PAYBACK_CAPEX} años. No prometas plazos al banco: enséñale las fechas ya reservadas.",
+  "99": "El Excel trae dos escenarios. En el pesimista, {ESC_PES_EVENTOS} eventos de {ESC_PES_INVITADOS} invitados a {ESC_PES_PRECIO} dan unas ventas de {ESC_PES_VENTAS} y un neto de {ESC_PES_NETO}: el negocio pierde dinero. En el optimista, {ESC_OPT_EVENTOS} eventos de {ESC_OPT_INVITADOS} invitados a {ESC_OPT_PRECIO} dan {ESC_OPT_VENTAS} de ventas y un neto de {ESC_OPT_NETO}. La diferencia la marcan la agenda y el precio por invitado, no el café. Si cambias una celda verde, el documento se queda atrás: el Excel manda.",
+  "102": "Puedes montar la cafetería como SL unipersonal (el capital mínimo es de 1 €, Ley 18/2022) o como autónomo. En el IAE (RDLeg 1175/1990), el epígrafe es el 677.9 para los eventos contratados y, si vendes en mercados o en la vía pública, también el 675: es criterio de asesoría, así que confírmalo con tu gestoría. Con menos de 1 millón de euros de cifra de negocio estás exento de cuota. Tus facturas a empresas no llevan retención de IRPF (art. 95.6 del Reglamento del IRPF).",
+  "103": "En sanidad, presentas una declaración responsable en el registro sanitario de la comunidad autónoma donde tienes la base (RD 1021/2022). El vehículo y la barra forman parte del establecimiento, y la base necesita fregadero; lo que sirves en eventos no se puede preparar en casa (art. 13.5.b del RD 1021/2022). El RGSEAA solo te afecta si vendes a otros negocios. La comida testigo (RD 1086/2020, arts. 2.h, 30.8.d y 30.10) es obligatoria cuando sirves salado, como sándwiches, tostas o quiches: una ración de 100 g o más de cada uno, a 4 °C o menos (o congelada), durante 7 días y en cada evento. Las bebidas y la bollería servida tal cual quedan fuera según nuestra lectura, sin criterio oficial: confírmalo con tu autoridad sanitaria.",
+  "104": "El agua de los depósitos es agua de consumo, y respondes de ella hasta el punto de uso (RD 3/2023, arts. 2.a, 65.3 y 66.b): llénalos con agua de red y mantenlos limpios. En alérgenos (RD 126/2015) tienes que informar de la leche, también la sin lactosa, de la soja, de los frutos de cáscara y de la avena, que es cereal con gluten salvo que esté certificada. Por eso usas una jarra por cada leche y purgas la lanza entre una y otra. La información puede ir en un cartel o darse de forma oral, y en ese caso queda registrada por escrito.",
+  "105": "El vaso de papel con forro de PE o PLA también es plástico (Ley 7/2022, art. 2.aa), así que el «compostable» no te saca de la norma. Se cobra aparte en el tique (art. 55.2), y las pajitas y los agitadores de plástico están prohibidos (art. 56). Además, los promotores de eventos festivos tienen que ofrecer alternativas al vaso de un solo uso (RD 1055/2022, art. 7.6). No está claro que una boda o un evento de empresa cuenten como evento festivo, así que el plan usa loza por defecto en bodas y empresa, y vaso de un solo uso solo en la venta directa, con su precio visible. En ferias y festivales, usa el sistema de vaso reutilizable del organizador.",
+  "106": "La venta en mercados y en la vía pública es venta no sedentaria y necesita autorización municipal (RD 199/2010); el evento contratado en un recinto privado, en cambio, es un servicio. Un remolque de hasta 750 kg no lleva matrícula propia y sí tarjeta ITV (Reglamento General de Vehículos, arts. 25-26). Si equipas una furgoneta con mueble, fregadero o depósitos fijos, es una reforma: compruébalo con tu estación de ITV. El Ape 50 es un ciclomotor de 45 km/h.",
+  "107": "Todo lo que se sirve va al 10 % de IVA (Ley 37/1992, art. 91); los extras con precio propio, al 21 %. Cada pago se factura, también la señal (art. 75.Dos de la Ley 37/1992). Factura con software Veri*factu y consulta con tu gestoría la fecha que te corresponde. Si usas generador, el ruido tiene sus ordenanzas: pregunta en tu ayuntamiento y en el recinto. Lo que aquí no está escrito no se afirma: compruébalo con tu gestor, tu ayuntamiento o tu autoridad sanitaria.",
+  "108": "El particular paga el 30 % al firmar, a cuenta del precio, y el 70 % siete días antes; la empresa, el 30 % al confirmar y el 70 % a 30 días de la factura; en ferias y mercados, en el acto. La cancelación tiene cuatro tramos «de X a menos de Y», con cortes en 60, 30 y 7 días para el particular y en 30, 15 y 7 para la empresa: se retiene el 10 %, el 30 % o el 60 % del precio, y en el último tramo el 100 % menos los costes que te ahorras, y es recíproca. Cerrado a distancia, no hay desistimiento de 14 días (art. 103.l del TRLGDCU) y el fuero es el del consumidor (art. 90.2).",
+  "111": "La conclusión es que una cafetería móvil para eventos como la del caso es viable, pero exige método y una agenda vendida con antelación. Con {EVENTOS_ANO} eventos, el primer año deja un neto de {NETO_A1} y una holgura de caja del {HOLGURA_CAJA}, la del año de carencia. Cuando empieza a devolverse el principal, la holgura baja al {HOLGURA_CAJA_A2} el segundo año y al {HOLGURA_CAJA_A3} el tercero, y el DSCR mínimo es de {DSCR_MIN}: se cubre la deuda con margen sobre el {DSCR_OBJETIVO} que suele pedir un banco, aunque no sobrado. El saldo mínimo de tesorería es de {SALDO_MINIMO}, en el Mes {MES_SALDO_MINIMO} ({MES_SALDO_MINIMO_NOMBRE}). En la fila «Payback del proyecto (años), antes de la deuda» el Excel marca «{PAYBACK}»: la inversión no se recupera deprisa, y por eso el banco querrá ver fechas ya vendidas.",
+  "112": "Los riesgos de una cafetería móvil son concretos, y cada uno tiene su defensa. El primero es la agenda: por debajo de unos {BE_EVENTOS_ANO_CAJA} servicios del tamaño medio el primer año, y de unos {BE_EVENTOS_CAJA_A2} y {BE_EVENTOS_CAJA_A3} del mismo tamaño el segundo y el tercero, cuando se devuelve el préstamo, no hay caja. Se mitiga con congresos que tienen calendario, wedding planners (organizadores de bodas) que te recomiendan y empresas que repiten. El segundo es presupuestar un servicio de 2 horas como si fueran 2 horas: en realidad es una jornada de 7 a 9 horas, con carga, trayecto, montaje, desmontaje, limpieza y vuelta, y la calculadora lo cuenta así. El tercero es firmar sin saber la potencia eléctrica del recinto. Se resuelve con la toma por escrito en el contrato, con una cafetera de 3,5 kW como máximo si solo hay un enchufe de 16 A, o con un generador inverter o baterías de litio.",
+  "113": "El cuarto riesgo es creer que el vaso «compostable» no es plástico. Si lleva forro de PE o PLA, lo es (Ley 7/2022, art. 2.aa), así que usa loza en bodas y empresa y cobra aparte el de un solo uso. El quinto es anunciar «café de especialidad» sin la ficha del tostador: solo puedes decirlo si el café tiene 80 puntos SCA o más, y nunca con torrefacto. Pídele la ficha a tu tostador y guárdala. El sexto es usar una sola jarra para todas las leches: la leche, también la sin lactosa, la soja, los frutos de cáscara y la avena son alérgenos, y una jarra por cada leche, con purga entre una y otra, es la forma sencilla de no mezclarlos.",
+  "114": "El séptimo riesgo es vender en la calle como si fuera un evento: la venta en mercados y en la vía pública necesita autorización municipal (RD 199/2010), mientras que el evento en un recinto privado es otro tipo de servicio. Pide el permiso o elige solo mercados y festivales con organizador. El octavo son los kilómetros sin cobrar: el combustible, el tiempo al volante y el desgaste de la furgoneta salen de tu margen si no los pones aparte, así que cobra el desplazamiento por kilómetro, como hace la calculadora. El noveno es contratar al barista como autónomo que te factura con tu horario: es falso autónomo (art. 1.1 del Estatuto de los Trabajadores). Contrátalo como fijo discontinuo, con alta antes de cada llamamiento y registro de jornada. El Excel carga el combustible en «varios», pero ni el permiso, ni el cobro de los kilómetros, ni el tipo de contrato se ven en sus cifras: por eso conviene escribirlos en tu contrato y en tu rutina semanal.",
+  "115": "El checklist del kit ordena la apertura en 6 fases y 80 tareas: 12, 16, 14, 10, 14 y 14. No es un calendario rígido, sino un orden de trabajo, y cada fase acaba con cosas cerradas antes de pasar a la siguiente. Conviene no saltarse ninguna, porque en este negocio los errores caros se cometen al principio: firmar una fecha sin saber la potencia eléctrica, comprar un equipo sin haber hecho números o anunciar «café de especialidad» sin la ficha del tostador. Marca las tareas según las vayas cerrando, anota en NOTAS la fecha y quién las cerró, y vuelve a mirar la lista cada mes: así sabrás en qué punto estás, cuánto te queda por hacer y qué te falta para tu primer encargo.",
+  "116": "Los primeros 90 días tienen un objetivo: tener agenda. Haz tres catas con wedding planners y fincas de tu zona, con la barra montada y café de verdad. Date de alta en los portales de bodas con fotos reales y un precio «desde» que diga qué incluye. Escribe a dos agencias de congresos y a las empresas de tu zona que organicen jornadas, presentaciones o comidas de Navidad. Haz tu primer evento, aunque sea pequeño, y al terminarlo revisa los costes reales frente a la calculadora: el café, la leche, las horas y los kilómetros. Si la diferencia es grande, corrige el precio por invitado antes del siguiente. Y pide una reseña en Google al cliente satisfecho, mientras todavía se acuerda del café.",
+  "117": "El siguiente paso es completar el Excel con tus cifras: tu cuota de base, tu mezcla de eventos, tu préstamo y tu calendario. Cambia solo las celdas verdes; este documento recoge los números del caso y los tuyos serán distintos. Después abre la calculadora y presupuesta tu primer evento, con el contrato del kit en la mano: señal, cancelación por tramos, y la toma eléctrica y el agua exigidas al recinto. Para el día a día de la barra te acompañan el Kit de Tareas Recurrentes: Cafetería, el Kit de Escandallos Pro y el Pack Plantillas APPCC. Este plan lo ha preparado ChefBusiness Consultoría Gastronómica, con 29 años en alta hostelería y quince en consultoría."
+ },
  "contrato_es": [
   {
    "estilo": "Kicker",
@@ -696,7 +758,7 @@
   },
   {
    "estilo": "Normal",
-   "texto": "**Horas extra.** Si el Cliente quiere prolongar el servicio, lo pide a la Cafetería en el propio evento y esta lo acepta solo si su personal y su material lo permiten. Cada hora o fracción adicional se factura a [importe] € más IVA, en la factura de liquidación."
+   "texto": "**Horas extra.** Si el Cliente quiere prolongar el servicio, lo pide a la Cafetería en el propio evento y esta lo acepta solo si su personal y su material lo permiten. Cada hora o fracción adicional se factura a [importe] € IVA incluido, en la factura de liquidación."
   },
   {
    "estilo": "H2",
@@ -708,15 +770,15 @@
   },
   {
    "estilo": "List Bullet",
-   "texto": "[ ] **Por invitado.** [importe] € más IVA por invitado, con un mínimo garantizado de [número] invitados. El Cliente comunica por escrito el recuento final, con las alergias e intolerancias que conozca, como máximo [7] días antes del evento. Después solo puede subir, si la Cafetería puede atenderlo; no puede bajar del mínimo garantizado, aunque luego asistan menos personas."
+   "texto": "[ ] **Por invitado.** [importe] € IVA incluido por invitado, con un mínimo garantizado de [número] invitados. El Cliente comunica por escrito el recuento final, con las alergias e intolerancias que conozca, como máximo [7] días antes del evento. Después solo puede subir, si la Cafetería puede atenderlo; no puede bajar del mínimo garantizado, aunque luego asistan menos personas."
   },
   {
    "estilo": "List Bullet",
-   "texto": "[ ] **Por hora.** [importe] € más IVA por hora de barra abierta y por barista, durante las horas de la cláusula primera, con un mínimo de [número] horas."
+   "texto": "[ ] **Por hora.** [importe] € IVA incluido por hora de barra abierta y por barista, durante las horas de la cláusula primera, con un mínimo de [número] horas."
   },
   {
    "estilo": "List Bullet",
-   "texto": "[ ] **Por consumición, con mínimo.** [importe] € más IVA por bebida servida, con una facturación mínima garantizada de [importe] € más IVA. Si las consumiciones no alcanzan el mínimo, la Cafetería factura la diferencia."
+   "texto": "[ ] **Por consumición, con mínimo.** [importe] € IVA incluido por bebida servida, con una facturación mínima garantizada de [importe] € IVA incluido. Si las consumiciones no alcanzan el mínimo, la Cafetería factura la diferencia."
   },
   {
    "estilo": "H2",
@@ -728,7 +790,7 @@
   },
   {
    "estilo": "Normal",
-   "texto": "**Alérgenos.** La Cafetería informa por escrito de los alérgenos de cada bebida y de la bollería: leche (también la sin lactosa), soja, frutos de cáscara (almendra, avellana) y gluten. La bebida de avena se considera cereal con gluten, salvo que sea de una marca certificada sin gluten, y la bollería puede llevar además huevo y sésamo. La barra lleva un cartel con esa información y un aviso de que los invitados pueden preguntar. Usa una jarra distinta para cada tipo de leche, pero no garantiza la ausencia total de trazas: el Cliente avisa de cualquier alergia grave antes del evento y la Cafetería se lo confirma por escrito."
+   "texto": "**Alérgenos.** La Cafetería informa por escrito de los alérgenos de cada bebida y de la bollería: leche (también la sin lactosa), soja, frutos de cáscara (almendra, avellana) y gluten. La bebida de avena lleva un cereal con gluten, salvo que sea de una marca certificada sin gluten, y la bollería puede llevar además huevo y sésamo. La barra lleva un cartel con esa información y un aviso de que los invitados pueden preguntar. La Cafetería usa una jarra distinta para cada tipo de leche, pero no garantiza la ausencia total de trazas: el Cliente avisa de cualquier alergia grave antes del evento y la Cafetería se lo confirma por escrito."
   },
   {
    "estilo": "Normal",
@@ -744,7 +806,7 @@
   },
   {
    "estilo": "List Bullet",
-   "texto": "**Electricidad.** Una cafetera profesional de dos grupos consume entre 2,4 y 4,5 kW, y un enchufe de 16 A da unos 3,7 kW. El Cliente facilita una toma eléctrica dedicada, de [número] kW y a menos de [10] metros de la barra, que no comparta con música, iluminación ni cocina. Si no puede, la Cafetería lleva un generador inverter o baterías con un suplemento de [importe] € más IVA, colocado donde indique el recinto y lejos de los invitados."
+   "texto": "**Electricidad.** Una cafetera profesional de dos grupos consume entre 2,4 y 4,5 kW, y un enchufe de 16 A da unos 3,7 kW. El Cliente facilita una toma eléctrica dedicada, de [número] kW y a menos de [10] metros de la barra, que no comparta con música, iluminación ni cocina. Si no puede, la Cafetería lleva un generador inverter o baterías con un suplemento de [importe] € IVA incluido, colocado donde indique el recinto y lejos de los invitados."
   },
   {
    "estilo": "List Bullet",
@@ -756,7 +818,7 @@
   },
   {
    "estilo": "List Bullet",
-   "texto": "**Agua.** Hay un punto de agua potable a menos de [30] metros, con un grifo accesible. Si no lo hay, la Cafetería lo lleva en depósitos de uso alimentario con un suplemento de [importe] € más IVA. El agua gris se recoge y se retira en depósito propio; nunca se vierte en el terreno."
+   "texto": "**Agua.** Hay un punto de agua potable a menos de [30] metros, con un grifo accesible. Si no lo hay, la Cafetería lo lleva en depósitos de uso alimentario con un suplemento de [importe] € IVA incluido. El agua gris se recoge y se retira en depósito propio; nunca se vierte en el terreno."
   },
   {
    "estilo": "Normal",
@@ -780,7 +842,7 @@
   },
   {
    "estilo": "Normal",
-   "texto": "Si la carta incluye productos salados, la Cafetería conserva una muestra de cada uno (ración mínima de 100 g, siete días, refrigerada o congelada) en cada evento. En las bebidas y la bollería que se sirven tal cual, la Cafetería aplica su criterio, que es una interpretación sin criterio oficial, y lo confirma con su autoridad sanitaria."
+   "texto": "Si la carta incluye productos salados, la Cafetería conserva una muestra de cada uno (ración mínima de 100 g, siete días, refrigerada o congelada) en cada evento. En las bebidas y la bollería que se sirven tal cual, la Cafetería sigue el criterio que le indique su autoridad sanitaria."
   },
   {
    "estilo": "H2",
@@ -788,7 +850,7 @@
   },
   {
    "estilo": "Normal",
-   "texto": "El precio es el que resulte de la modalidad de la cláusula segunda, estimado en [importe base] € más el IVA del 10 % para todo lo que se sirve para consumir en el acto, que asciende a [importe del IVA] €, lo que suma [importe total] € con IVA incluido. Los extras con precio propio, el suplemento de generador, las horas extra y los vasos de un solo uso llevan el IVA del 21 %, desglosado. Si el precio final depende del recuento, de las horas o de las consumiciones, se ajusta en la factura de liquidación."
+   "texto": "El precio total que paga el Cliente es de [importe total] € con el IVA incluido, que se desglosa así: [importe base] € de base y [importe del IVA] € de IVA del 10 %, tipo que se aplica a todo lo que se sirve para consumir en el acto, incluidas las horas extra de barra, que son el mismo servicio. Los extras con precio propio que no forman parte de la barra (personalización de bebidas, tazas con el nombre de los novios, talleres de latte art) llevan el IVA del 21 %, desglosado. Para el suplemento de generador y los vasos de un solo uso, se aplica el IVA que corresponda; confírmalo con tu asesoría. Si el precio final depende del recuento, de las horas o de las consumiciones, se ajusta en la factura de liquidación."
   },
   {
    "estilo": "H2",
@@ -856,7 +918,7 @@
   },
   {
    "estilo": "Normal",
-   "texto": "El Cliente puede pedir por escrito un cambio de fecha, que la Cafetería acepta si tiene disponibilidad y la nueva fecha cae en los [6] meses siguientes. Es gratuito con 60 días o más de antelación; en otro caso se cobra un recargo de [importe] € más IVA y se actualiza el precio a la tarifa vigente."
+   "texto": "El Cliente puede pedir por escrito un cambio de fecha, que la Cafetería acepta si tiene disponibilidad y la nueva fecha cae en los [6] meses siguientes. Es gratuito con 60 días o más de antelación; en otro caso se cobra un recargo de [importe] € IVA incluido y se actualiza el precio a la tarifa vigente."
   },
   {
    "estilo": "H2",
@@ -960,7 +1022,7 @@
   },
   {
    "estilo": "List Bullet",
-   "texto": "**Ferias y mercados: la Cafetería.** Vende por su cuenta y emite sus tickets, con las normas sanitarias de la cláusula quinta. El canon o la tasa del organizador es de [importe] € o del [15] % de la venta, y se detalla en la factura del organizador. No hay exclusividad, salvo pacto expreso por escrito."
+   "texto": "**Ferias y mercados: la Cafetería.** Vende por su cuenta y emite sus tiques, con las normas sanitarias de la cláusula quinta. El canon o la tasa del organizador es de [importe] € o del [15] % de la venta, y se detalla en la factura del organizador. No hay exclusividad, salvo pacto expreso por escrito."
   },
   {
    "estilo": "List Bullet",
@@ -981,6 +1043,10 @@
   {
    "estilo": "Firma",
    "texto": "NIF/CIF: ______________        CIF: ______________        Cargo: ______________"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Versión 1.0 · octubre 2026 · aichef.pro/plan-negocio-cafeteria-movil-eventos"
   }
  ],
  "escalado_es": {
@@ -1215,7 +1281,7 @@
     "Bebidas por hora que saca un barista con una cafetera de dos grupos",
     "ent",
     55,
-    "Research: 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120 (ratios de EE. UU.). Se toma 55."
+    "Ratios de EE. UU. (grindkit y beanandbrewtech): 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120. Se toma 55."
    ],
    [
     "pico",
@@ -1229,7 +1295,7 @@
     "Baristas que trabajan en una misma cafetera",
     "ent",
     2,
-    "Research: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso."
+    "Ratios de EE. UU.: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso."
    ],
    [
     "grupos_maq",
@@ -1243,14 +1309,14 @@
     "Molinos de reserva (descafeinado o filtro) además de uno por estación",
     "ent",
     1,
-    "Research §4: molinos de espresso bajo demanda más uno de descafeinado o filtro."
+    "Estimación del kit: un molino de espresso por estación más uno de descafeinado o filtro."
    ],
    [
     "purga",
     "Café de purga y calibrado por evento (kg)",
     "dec",
     0.15,
-    "Research: 100-200 g por evento. Se toma 150 g."
+    "Estimación del kit: 100-200 g por evento. Se toma 150 g."
    ],
    [
     "reserva",
@@ -1264,7 +1330,7 @@
     "Tazas de loza por invitado (con reposición durante el lavado)",
     "dec",
     1.25,
-    "Del caso: loza para 150 en una boda de 120 invitados (research §4)."
+    "Del caso: loza para 150 en una boda de 120 invitados (plan financiero)."
    ],
    [
     "agua_beb",
@@ -1292,14 +1358,14 @@
     "Intensidad de un enchufe doméstico o de finca (A)",
     "ent",
     16,
-    "Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW): SPEC D11."
+    "Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW)."
    ],
    [
     "factor_kva",
     "Factor para dimensionar el generador (kVA por kW de cafetera)",
     "dec",
     1.4,
-    "Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (research §0)."
+    "Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (fichas de distribuidor)."
    ]
   ],
   "TAM_REF": [
@@ -1379,7 +1445,7 @@
     ],
     [
      "E8",
-     "Research §3.b: un doble de especialidad lleva 16-18 g. Mueve los gramos de la fila del café de todas las bebidas."
+     "Estimación del kit: un doble de especialidad lleva 16-18 g. Mueve los gramos de la fila del café de todas las bebidas."
     ],
     [
      "A10",
@@ -1631,7 +1697,7 @@
     ],
     [
      "O14",
-     "Research §3.b: 18-28 €/kg, caso 22 €/kg [estimado]; 10 % de merma por purga y calibrado."
+     "Estimación del kit: 18-28 €/kg en hostelería, se toma 22 €/kg; 10 % de merma por purga y calibrado."
     ],
     [
      "A15",
@@ -1691,7 +1757,7 @@
     ],
     [
      "O15",
-     "Research §3.b: ≈ 1,05 €/l [estimado]."
+     "Estimación del kit: ≈ 1,05 €/l."
     ],
     [
      "A16",
@@ -1811,7 +1877,7 @@
     ],
     [
      "O17",
-     "Research §3.b: ≈ 2,50 €/l [estimado]."
+     "Estimación del kit: ≈ 2,50 €/l."
     ],
     [
      "A18",
@@ -2231,7 +2297,7 @@
     ],
     [
      "O24",
-     "Research §3.b: vaso, tapa, servilleta y removedor ≈ 0,13 € por bebida [cálculo]."
+     "Estimación del kit: vaso, tapa, servilleta y removedor suman ≈ 0,13 € por bebida."
     ],
     [
      "A25",
@@ -3083,7 +3149,7 @@
     ],
     [
      "A51",
-     "Ticket medio sin IVA de tu carta (€)"
+     "Precio medio por taza sin IVA de tu carta (€)"
     ],
     [
      "B51",
@@ -3099,7 +3165,7 @@
     ],
     [
      "A54",
-     "El coste con envase es el de la bebida servida en vaso de un solo uso; en loza solo cuenta el coste de producto. Los vasos de papel con forro de PE o PLA (\"compostables\") son plástico a efectos de la Ley 7/2022: se cobran aparte en el ticket. El food cost del plan financiero es otra cosa: la media de la mezcla con la merma."
+     "El coste con envase es el de la bebida servida en vaso de un solo uso; en loza solo cuenta el coste de producto. Los vasos de papel con forro de PE o PLA (\"compostables\") son plástico a efectos de la Ley 7/2022: se cobran aparte en el tique. El food cost del plan financiero es otra cosa: la media de la mezcla con la merma."
     ]
    ]
   },
@@ -3172,7 +3238,7 @@
     ],
     [
      "C8",
-     "Mañana +25 %, boda de noche −10 % (research §1). Ajusta las bebidas por invitado. En Feria no se usa."
+     "Mañana +25 %, boda de noche −10 % (estimación del kit con ratios de EE. UU.). Ajusta las bebidas por invitado. En Feria no se usa."
     ],
     [
      "A9",
@@ -3184,7 +3250,7 @@
     ],
     [
      "C9",
-     "Loza: sin coste de vaso ni tapa. Vaso de un solo uso: suma el envase y, en el ticket, el precio aparte del vaso de plástico (Ley 7/2022, art. 55). El compostable con forro de PE o PLA también es plástico."
+     "Loza: sin coste de vaso ni tapa. Vaso de un solo uso: suma el envase y, en el tique, el precio aparte del vaso de plástico (Ley 7/2022, art. 55). El compostable con forro de PE o PLA también es plástico."
     ],
     [
      "A10",
@@ -3208,7 +3274,7 @@
     ],
     [
      "C11",
-     "Estimación del kit: un servicio de dos horas es una jornada de siete a nueve (research §1). Pon las reales."
+     "Estimación del kit: un servicio de dos horas es una jornada de siete a nueve. Pon las reales."
     ],
     [
      "A12",
@@ -3280,7 +3346,7 @@
     ],
     [
      "C17",
-     "Estimación del kit: del titular (14,2 €/h) y del camarero fijo discontinuo (11,0 €/h) con 14 pagas y 1.780 horas. Copia tu convenio."
+     "Estimación del kit: del titular (13,7 €/h) y del camarero fijo discontinuo (10,7 €/h) con 14 pagas y 1.840 horas (40 h × 46 semanas, como el plan). Copia tu convenio."
     ],
     [
      "A18",
@@ -3332,7 +3398,7 @@
     ],
     [
      "A22",
-     "Feria: ticket medio por taza que cobrarás (sin IVA)"
+     "Feria: precio medio por taza que cobrarás (sin IVA)"
     ],
     [
      "B22",
@@ -3340,7 +3406,7 @@
     ],
     [
      "C22",
-     "Research §4: ≈ 3,00 € sin IVA por taza. Mira el ticket medio de tu carta en la hoja «Escandallo». Solo cuenta si el cliente es Feria."
+     "Estimación del kit: ≈ 3,00 € sin IVA por taza. Mira el precio medio por taza de tu carta en la hoja «Escandallo». Solo cuenta si el cliente es Feria."
     ],
     [
      "A23",
@@ -3556,7 +3622,7 @@
     ],
     [
      "C43",
-     "SPEC D11: un enchufe de 16 A a 230 V da unos 3,7 kW (3,68). Los molinos, la nevera y la iluminación van aparte: déjales margen."
+     "Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68). Los molinos, la nevera y la iluminación van aparte: déjales margen."
     ],
     [
      "A44",
@@ -3704,7 +3770,7 @@
     ],
     [
      "C59",
-     "Coste ÷ (1 − margen − canon) ÷ invitados, redondeado a los 0,50 € de arriba. Es el precio de las empresas («+ IVA»). En Feria es el ticket mínimo por taza que cubre coste, canon y margen: compáralo con el tuyo."
+     "Coste ÷ (1 − margen − canon) ÷ invitados, redondeado a los 0,50 € de arriba. Es el precio de las empresas («+ IVA»). En Feria es el precio mínimo por taza que cubre coste, canon y margen: compáralo con el tuyo."
     ],
     [
      "A60",
@@ -3896,7 +3962,7 @@
     ],
     [
      "A79",
-     "Importe que retienes si cancela ese día"
+     "Importe que retienes si cancela ese día (en el último tramo, antes de descontar los costes que te ahorras)"
     ],
     [
      "B79",
@@ -3952,7 +4018,7 @@
     ],
     [
      "A86",
-     "Venta prevista (tazas × ticket, sin IVA)"
+     "Venta prevista (tazas × precio medio, sin IVA)"
     ],
     [
      "B86",
@@ -3992,7 +4058,7 @@
     ],
     [
      "A91",
-     "REGLAS DE ESCALADO (fuente única: «datos_escalado»; misma tabla que las Instrucciones del plan y el Word)"
+     "REGLAS DE ESCALADO (la misma tabla que las Instrucciones del plan financiero y el plan de negocio)"
     ],
     [
      "B91",
@@ -4008,7 +4074,7 @@
     ],
     [
      "C92",
-     "Research: 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120 (ratios de EE. UU.). Se toma 55."
+     "Ratios de EE. UU. (grindkit y beanandbrewtech): 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120. Se toma 55."
     ],
     [
      "A93",
@@ -4032,7 +4098,7 @@
     ],
     [
      "C94",
-     "Research: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso."
+     "Ratios de EE. UU.: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso."
     ],
     [
      "A95",
@@ -4056,7 +4122,7 @@
     ],
     [
      "C96",
-     "Research §4: molinos de espresso bajo demanda más uno de descafeinado o filtro."
+     "Estimación del kit: un molino de espresso por estación más uno de descafeinado o filtro."
     ],
     [
      "A97",
@@ -4068,7 +4134,7 @@
     ],
     [
      "C97",
-     "Research: 100-200 g por evento. Se toma 150 g."
+     "Estimación del kit: 100-200 g por evento. Se toma 150 g."
     ],
     [
      "A98",
@@ -4092,7 +4158,7 @@
     ],
     [
      "C99",
-     "Del caso: loza para 150 en una boda de 120 invitados (research §4)."
+     "Del caso: loza para 150 en una boda de 120 invitados (plan financiero)."
     ],
     [
      "A100",
@@ -4140,7 +4206,7 @@
     ],
     [
      "C103",
-     "Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW): SPEC D11."
+     "Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW)."
     ],
     [
      "A104",
@@ -4152,7 +4218,7 @@
     ],
     [
      "C104",
-     "Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (research §0)."
+     "Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (fichas de distribuidor)."
     ],
     [
      "A106",
@@ -4172,7 +4238,7 @@
     ],
     [
      "C107",
-     "Rango del research: 1,0"
+     "Rango de referencia: 1,0"
     ],
     [
      "D107",
@@ -4188,7 +4254,7 @@
     ],
     [
      "C108",
-     "Rango del research: 1,3-1,5"
+     "Rango de referencia: 1,3-1,5"
     ],
     [
      "A109",
@@ -4200,7 +4266,7 @@
     ],
     [
      "C109",
-     "Rango del research: 1,5-1,8"
+     "Rango de referencia: 1,5-1,8"
     ],
     [
      "A110",
@@ -4212,7 +4278,7 @@
     ],
     [
      "C110",
-     "Rango del research: 2,0-2,5"
+     "Rango de referencia: 2,0-2,5"
     ],
     [
      "A111",
@@ -4224,7 +4290,7 @@
     ],
     [
      "C111",
-     "Rango del research: mezcla del caso"
+     "Rango de referencia: mezcla del caso"
     ],
     [
      "A113",
@@ -4340,7 +4406,7 @@
     ],
     [
      "E129",
-     "Solo ferias, mercados y festivales (research §3.a: porcentaje de la venta o cuota fija). El canon fijo se escribe aparte."
+     "Solo ferias, mercados y festivales (porcentaje de la venta o cuota fija, según el organizador). El canon fijo se escribe aparte."
     ],
     [
      "A130",
@@ -5181,7 +5247,7 @@
     ],
     [
      "A22",
-     "Feria: ticket medio por taza que cobrarás (sin IVA)"
+     "Feria: precio medio por taza que cobrarás (sin IVA)"
     ],
     [
      "B22",
@@ -6005,7 +6071,7 @@
     ],
     [
      "A79",
-     "Importe que retienes si cancela ese día"
+     "Importe que retienes si cancela ese día (en el último tramo, antes de descontar los costes que te ahorras)"
     ],
     [
      "B79",
@@ -6105,7 +6171,7 @@
     ],
     [
      "A86",
-     "Venta prevista (tazas × ticket, sin IVA)"
+     "Venta prevista (tazas × precio medio, sin IVA)"
     ],
     [
      "B86",
@@ -6193,7 +6259,7 @@
     ],
     [
      "B94",
-     "Feria: 250 tazas en una jornada de 10 horas, vaso de un solo uso (con su precio aparte en el ticket), generador y canon del 15 % del organizador. El «precio por invitado» es el ticket mínimo por taza; con el ticket de 3,00 € la jornada deja unos 128 € antes de costes fijos, y por debajo de 181 tazas pierdes."
+     "Feria: 250 tazas en una jornada de 10 horas, vaso de un solo uso (con su precio aparte en el tique), generador y canon del 15 % del organizador. El «precio por invitado» es el precio mínimo por taza; con un precio medio de 3,00 € la jornada deja unos 128 € antes de costes fijos, y por debajo de 181 tazas pierdes."
     ]
    ]
   },
@@ -6262,7 +6328,7 @@
     ],
     [
      "A20",
-     "La bebida para consumir en el acto o para llevar va al 10 % de IVA (Ley 37/1992, art. 91). Los extras con precio propio (personalización de máquina o stand, vasos con logo, talleres) van al 21 %. En loza no hay vaso de plástico; el vaso de papel con forro de PE o PLA («compostable») es plástico a efectos de la Ley 7/2022 (arts. 2 y 55) y se cobra aparte en el ticket. Pajitas y agitadores de plástico, prohibidos. En ferias y festivales, el organizador puede imponer su sistema de vaso reutilizable (RD 1055/2022, art. 7)."
+     "La bebida para consumir en el acto o para llevar va al 10 % de IVA (Ley 37/1992, art. 91). Los extras con precio propio (personalización de máquina o stand, vasos con logo, talleres) van al 21 %. En loza no hay vaso de plástico; el vaso de papel con forro de PE o PLA («compostable») es plástico a efectos de la Ley 7/2022 (arts. 2 y 55) y se cobra aparte en el tique. Pajitas y agitadores de plástico, prohibidos. En ferias y festivales, el organizador puede imponer su sistema de vaso reutilizable (RD 1055/2022, art. 7)."
     ],
     [
      "A21",
@@ -6286,7 +6352,7 @@
     ],
     [
      "A28",
-     "La venta directa en mercados y ferias depende de la autorización municipal y del canon del organizador. La hoja calcula la venta (tazas × ticket), el canon (porcentaje más cuota fija), el resultado de la jornada y las tazas que necesitas para cubrir los costes. El «precio por invitado» de esa columna es el ticket mínimo por taza que cubre coste, canon y margen."
+     "La venta directa en mercados y ferias depende de la autorización municipal y del canon del organizador. La hoja calcula la venta (tazas × precio medio), el canon (porcentaje más cuota fija), el resultado de la jornada y las tazas que necesitas para cubrir los costes. El «precio por invitado» de esa columna es el precio mínimo por taza que cubre coste, canon y margen."
     ],
     [
      "A29",
@@ -6298,7 +6364,7 @@
     ],
     [
      "A32",
-     "Fuentes: research del producto (octubre 2026); Ley 37/1992 del IVA, art. 91; Ley 7/2022, arts. 2, 55 y 56; RD 1055/2022, art. 7; TRLGDCU, arts. 85, 87 y 103."
+     "Fuentes: investigación de AI Chef Pro (octubre 2026); Ley 37/1992 del IVA, art. 91; Ley 7/2022, arts. 2, 55 y 56; RD 1055/2022, art. 7; TRLGDCU, arts. 85, 87 y 103."
     ],
     [
      "A34",

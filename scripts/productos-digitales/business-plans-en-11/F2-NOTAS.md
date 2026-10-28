@@ -110,3 +110,47 @@ cada `git pull`.
 - **Cifras ES finales** para `CIFRAS_ES` (hoy, el borrador del implementador ES: 108,810 € de ventas, 44,416 € de CAPEX,
   44,500 € de préstamo, 130 × 135 × 6,20 €) y frases («130 events», «135 guests», «6,20 €»).
 - **Calculadora** (D227, paso 1b) y, si cambia, el **contrato** ES (la tanda se preparó con el de `d8984ffd`, 92 párrafos).
+
+## 7. Paso 1b + tanda del contrato re-preparada (28-oct, tarde; sesión Claude Code)
+
+Sobre `57362d63` (ES final: calculadora `d3174a8d`, contrato `9273efd3`, `plan-cafeteria-movil/REVISION-FINAL.md`).
+
+- **Tanda (e)** `tandas/contrato.entrada.json` rehecha con el contrato ES FINAL (92 párrafos, 3.074 palabras; sha256 `977badd3…`).
+  `check_contrato.py`: cobro y cancelación = los de la calculadora EN (privado: retainer 30 % + 70 % 14 días antes, cortes 60 / 30 /
+  14 → 10 / 30 / 60 / 100 %, el último menos lo ahorrado; empresa: 30 % + 70 % net 30, cortes 30 / 15 / 7; festival: en el acto +
+  minimum sales guarantee liquidada en 7 días) y traslado de la revisión ES (B1 horas extra = mismo servicio; M6 «IVA incluido» NO
+  se copia: «plus applicable sales tax»; m27 → `contrato_cof.py` añade la línea de versión EN al final).
+- **`calculadora_cof.py` + `escalado_cof.py`** (fuente única EN de la tabla de escalado): las 4 hojas de la ES («Cost per Drink» ·
+  «Pricing Calculator» · «3 Example Quotes» · «Instructions»), misma lógica y mismo autotest. Adaptación US (decisiones de este
+  paso, dentro de D227): café y cacao en g con precio por lb, leches y chai en fl oz con precio por galón, sirope por botella (columna
+  D «recipe units per price unit», verde); precio de carta sin sales tax (celda para quien lo incluye); carta US (cold brew en lugar
+  del café con leche; vasos de 8 / 12 / 16 oz con tapa y funda; avena 25 % de la leche); salida estándar 120 V × 20 A = 2.4 kW frente a
+  la máquina de 220 V / 3.4 kW (NEMA 6-20) → aviso, amperios a 220 V y generador en kW (5.5 kW = el del caso); margen objetivo
+  **65 / 60 / 20 %** (Flashquotes: precio 2-3 × coste; el ES usa 55 / 50 / 20); **dos entradas nuevas, norma US**: radio gratis del
+  travel fee (20 millas) y **minimum sales guarantee** del organizador (la venta del festival es la mayor de las dos); sin referencias
+  internas (lección M3 del ES: el autotest veta «research», «SPEC», «§» y el nombre del módulo) y rótulo del tramo 4 de m23.
+- **Medido (VPS)**: 425 fórmulas, 0 fallos de pycel · **autotest 1.122 comprobaciones VERDE** (pycel + caché en las 4 hojas, 3 casos
+  propios con `set_value`, tabla de escalado, selector de cliente, radio gratis, garantía, aviso eléctrico, tramos sin huecos día a
+  día, Letter + pie + protección, 0 verdes bloqueadas, 0 números tecleados, 0 español / no latinos / cifras prohibidas / anclas) ·
+  `censo-entregables --only coffee-cart-business-plan --letter --fail` 0 defectos · `gate-no-latinos` 0 · `barrido_cof --dir` 0 ·
+  2.ª generación con sha canónico IGUAL. Mezcla: $1.034 de ingredientes + $0.252 de vaso = **$1.286 por bebida**, carta media $5.88,
+  COGS 21.9 %. Ejemplos: boda 130 inv. **$15.00** (= línea de la mezcla) · empresa 90 **$13.00** (+8 % de $12) · farmers market 150
+  bebidas: precio mínimo $5.00 frente a $6.50, resultado $384, equilibrio 60 bebidas. Escalado (2 h, tarde): 50 / 100 / 200 / 300
+  invitados → 1 / 2 / 3 / 4 baristas, 1 / 1 / 2 / 2 máquinas, 2.2 / 4.1 / 7.8 / 11.6 lb de café, 2 / 4 / 8 / 12 gal de leche.
+  `dl/coffee-cart-business-plan/coffee-cart-pricing-calculator.xlsx` sha256 `fa31f453…` (Mac = VPS).
+- «cortado» sale del veto de `RX_COF_NO` (es bebida de la carta US) y del brief.
+
+## 8. Paso 1c (28-oct, tarde; sesión Claude Code) — sobre `7d3bf444` (Word ES final `1b43d5fb`, 7.235 palabras)
+
+- `fuente_es_cof.json` rehecho sin variables (todo desde el repo): checklist 80 tareas · **Word ES 61/61 ranuras** · contrato 92 ·
+  escalado · calculadora ES final · pendientes: ninguno. `extraer_docx` (VERDE) → las notas de **cof_a (19 de 29) y cof_b (21 de
+  32)** llevan el párrafo ES 1.0 FINAL de su ranura (las 21 «casi literales» no lo llevan, como en la paella), con el aviso de que
+  si la ranura ES trata otro subtema manda la pista: el **§9 EN conserva su mapa** (commissary [102], permisos [103], electricidad
+  y bomberos [104]…), que es lo que promete la landing («Section 9»). `preparar_tandas`: GCF-plan y GCF-check **sin cambios**; cof_a
+  / cof_b solo cambian en las notas; `GRP-plan.json` incorpora las 2 correcciones de `GRP-plan.revision.json` (mecanismo normal).
+- **Cifras vetadas = ES final** (`plan-cafeteria-movil/cifras_caso_es.json`, el del repo; ya no hace falta `COF_CIFRAS_ES`): 46
+  importes ≥ 10.000 € (108.810, 44.416, 60.061, 44.500…; fuera los del propio caso EN, los de la research y los redondos ≤ 50.000)
+  + «130 events», «135 guests», «6,20 €». Comprobado: «$25,000», «$50,000», «$13,400», «128 events» y «Cortado» pasan.
+- `bp11.py mapas` 0 errores (18 sha256 OK) · calculadora `--autotest` VERDE sobre el fichero de HEAD (`fa31f453…`) · Mac = VPS.
+- **§6 queda resuelto**: Word ES, cifras finales, calculadora (§7) y contrato (§7) ya están; las tandas (c) cof_a ‖ (d) cof_b
+  pueden arrancar.

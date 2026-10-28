@@ -10,8 +10,8 @@
 > mantener la terminología: **tanda 1 = (a) GCF-plan + revisión de GRP-plan ‖ (b) GCF-check + (e) contrato** → **tanda 2 =
 > (c) cof_a ‖ (d) cof_b**. **No se escriben** GM (310), GRP-plan (59: se **revisa** en (a)) ni GLP-check (186 celdas del
 > checklist cuya propuesta de la paella vale tal cual, con «Paella chef» → «Lead barista» en la columna C): los escribe
-> `bp11.py preparar_tandas`. **Las entradas llevan SOLO lo que cambia.** Antes de lanzar (c)-(d), el orquestador corre el
-> paso 1c (el párrafo ES 1.0 de cada ranura entra en su nota).
+> `bp11.py preparar_tandas`. **Las entradas llevan SOLO lo que cambia.** Paso 1c hecho (28-oct): cada nota de (c)-(d)
+> lleva el párrafo ES 1.0 FINAL de su ranura (`1b43d5fb`) y las cifras vetadas son las del ES final.
 
 **Cómo usar este brief**: el orquestador pega al subagente la sección **0 de `BP/BRIEF-TRADUCTORES.md`** (reglas comunes:
 idioma, cero español, moneda, formato US, marca, cifras, pestañas citadas, glosario) + las secciones **0 y 1** de este fichero
@@ -27,7 +27,7 @@ del docx trae en su `nota` la PROPUESTA EN DE LA PAELLA de la misma ranura. Reut
 tokens y las fuentes comunes (commissary, W-2, Insureon, thefoodcorridor, sales tax, service charge, SBA 7(a), COI).
 **Reescribe** todo lo que hable de paella, paelleras, quemadores, propano, marisco, arroz, la van o el caso de la paella. El
 `es` es la ranura del FOOD TRUCK ES (solo papel y longitud); el contenido de café sale de la pista, de `BP11/fuente_es_cof.json`
-(checklist ES de 80 tareas, tabla de escalado, calculadora ES, contrato ES; el Word ES por ranura llega en el paso 1c) y de
+(checklist ES de 80 tareas, Word ES final por ranura, tabla de escalado, calculadora ES, contrato ES) y de
 research. **Ninguna cifra del ES** (D231).
 
 **Concepto (D219): COFFEE CATERING COMPANY con DOS estaciones.** Un **espresso cart** (NSF, lavamanos, depósitos de agua

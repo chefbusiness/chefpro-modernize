@@ -482,9 +482,10 @@ DOCX_NOTAS_PLAN = OrderedDict([
             'vasos compostables; tres motores: empresa entre semana (el volumen), bodas (el ticket) y fiestas privadas; '
             'festivales y farmers markets guest-pay como complemento; base en una commissary; (3) la PROPUESTA EN DE LA '
             'PAELLA de esa misma ranura (../business-plans-en-7/docx_en_pael_a.json / _b.json, sha256 fijados): da la '
-            'FORMA (estructura, tono, longitud, tokens, fuentes comunes); (4) en las ranuras «adaptar» y «nueva», cuando '
-            'exista, el párrafo ES 1.0 DE LA CAFETERÍA MÓVIL de la misma ranura (contenido de referencia: sus cifras, sus '
-            '{TOKENS} en mayúsculas y todo lo español NO se usan). LA PISTA MANDA; CERO VOCABULARIO DE PAELLA (paella, '
+            'FORMA (estructura, tono, longitud, tokens, fuentes comunes); (4) en las ranuras «adaptar» y «nueva», el '
+            'párrafo ES 1.0 FINAL DE LA CAFETERÍA MÓVIL de la misma ranura (contenido de referencia: sus cifras, sus '
+            '{TOKENS} en mayúsculas y todo lo español NO se usan; el §9 EN mantiene su mapa: commissary [102] y permisos '
+            '[103] van en la sección 9, como promete la landing). LA PISTA MANDA; CERO VOCABULARIO DE PAELLA (paella, '
             'paella chef, pans, burners, propane cylinders, socarrat, saffron, seafood, shellstock, tapas, sangria, '
             'cargo van, cooking station, TPHC) y cero «chef» suelto. El «es» de cada párrafo es la RANURA del plan de '
             'FOOD TRUCK: solo da el papel y la longitud (±30 %). Fuentes: research §1-§9 (glosario OBLIGATORIO, regla '
@@ -768,8 +769,9 @@ def _notas_docx():
         if i in pael:
             n += ' ‖ PROPUESTA EN DE LA PAELLA EN ESTA RANURA (la forma; cero vocabulario de paella): «%s»' % pael[i]
         if i in es and nivel != 'L':
-            n += (' ‖ ES 1.0 DE LA CAFETERÍA MÓVIL EN ESTA RANURA (referencia de contenido; sus cifras, sus {TOKENS} en '
-                  'mayúsculas y todo lo español NO se usan): «%s»' % es[i])
+            n += (' ‖ ES 1.0 FINAL DE LA CAFETERÍA MÓVIL EN ESTA RANURA (referencia de contenido de la MISMA sección; si '
+                  'trata otro subtema que la pista, manda la pista; sus cifras, sus {TOKENS} en mayúsculas y todo lo español '
+                  '—normas, IVA, autónomo, comunidades, Bizum, furgoneta, «feria»— NO se usan): «%s»' % es[i])
         out[i] = n
     return out
 
