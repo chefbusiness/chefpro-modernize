@@ -45,7 +45,7 @@ const TEMPLATES = [
     icon: Calculator,
     type: '.xlsx',
     title: 'Coffee Cart Pricing Calculator (Cost per Drink to Quote per Guest)',
-    desc: "Cost per drink for your whole menu, then a quote for any private, corporate or farmers market event: guests, service format, hours, power (110V, 220V or generator), barista pay, travel, sales tax, drinks per hour, baristas and stations, price per guest, per service hour and per drink, retainer and cancellation tiers. Three example quotes; every rate is an example you replace with yours.",
+    desc: "Cost per drink for your whole menu, then a quote for any private, corporate or festival event: guests, service format, hours, power (110V, 220V or generator), barista pay, travel, sales tax, drinks per hour, baristas and stations, price per guest, per service hour and per drink, retainer and cancellation tiers. Three example quotes; every rate is an example you replace with yours.",
   },
   {
     key: 'modelos-contrato',
