@@ -100,8 +100,8 @@ def generar(salida, texto=TEXTO, molde=MOLDE):
                 p.paragraph_format.keep_with_next = True
     sec = doc.sections[0]
     pr = doc.core_properties
-    pr.title, pr.subject, pr.author, pr.last_modified_by = TITULO, '', 'AI Chef Pro', 'AI Chef Pro'
-    pr.comments, pr.keywords = 'aichef.pro/%s' % PID, ''
+    pr.title, pr.subject, pr.author, pr.last_modified_by = TITULO, 'Plan de Negocio: Cafetería Móvil para Eventos', 'AI Chef Pro', 'AI Chef Pro'
+    pr.comments, pr.keywords = 'aichef.pro/%s' % PID, 'plan de negocio, cafetería móvil, eventos, barra de café, contrato'
     pr.created = pr.modified = FECHA
     os.makedirs(salida, exist_ok=True)
     destino = os.path.join(salida, FICHERO)
