@@ -1,6 +1,32 @@
 # Payment Links pendientes — tareas de John (Stripe)
 
-> Sesión Claude Code (Mac). **No hay ninguno pendiente.**
+> Sesión Claude Code (Mac).
+
+## ⏳ PENDIENTES (28-oct-2026): los DOS de la cafetería móvil, ES y EN — John: «un producto nuevo en español y su versión en inglés en producción, las dos tareas de hoy»
+
+### 1. Plan de Negocio: Cafetería Móvil para Eventos (ES) — PR #177
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Cafetería Móvil para Eventos - AI Chef Pro |
+| Precio | **45,00 EUR**, pago único, impuesto automático con precio *exclusive* (como pizzería y finca) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-cafeteria-movil-eventos-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 257 caracteres) | Plan de negocio para montar una barra de café de especialidad para bodas, empresas y ferias: plan en Word de 10 secciones, plan financiero en Excel, checklist de 80 tareas, calculadora de presupuesto por evento, modelo de contrato y guía para Latinoamérica. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_CAFETERIA_MOVIL` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg` |
+
+### 2. Coffee Cart Business Plan Kit (EN) — rama `feat/coffee-cart-business-plan` (PR apilado, se fusiona después del ES)
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Coffee Cart Business Plan Kit - AI Chef Pro |
+| Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/coffee-cart-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 247 caracteres) | Business plan kit to start a coffee cart and espresso catering company: 10-section Word plan, 3-year Excel financial projections with monthly cash flow and SBA loan, startup checklist, per-guest pricing calculator and a service agreement template. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_COFFEE_CART_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg` |
 
 ## ✅ HECHOS (27-oct-2026): tres productos EN — John: «escoge los tres que siguen… completos me dices y creamos los enlaces de pago en Stripe»
 

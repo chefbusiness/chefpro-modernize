@@ -26,6 +26,7 @@ import shutil
 import sys
 
 import openpyxl
+from openpyxl.worksheet.datavalidation import DataValidation
 
 import datos_checklist as DC
 
@@ -53,7 +54,8 @@ INVERSION = [
      'Furgoneta de ocasión tipo Kangoo L2 o Trafic (12.000-16.000 € en el mercado; el caso, 14.000 €) con la '
      'rotulación de la marca, estanterías y anclajes para llevar la barra, la cafetera y los depósitos sujetos. Si '
      'fijas en ella fregadero, depósitos o mueble, es una reforma de vehículo: informe de conformidad e ITV. '
-     'Estimación del kit', 'Sí'),
+     'Estimación del kit. Si la compras a un particular no hay IVA, sino el impuesto de transmisiones; en un '
+     'concesionario, en REBU, el IVA no se deduce: pon «No» en la columna de al lado', 'Sí'),
     ('Barra-carro a medida con ruedas y depósitos ocultos, carpa e iluminación', 4400,
      'Barra móvil fabricada a medida, con los depósitos de agua escondidos y ruedas para entrar en salones y '
      'pabellones, más una carpa de 3 × 3 m y la iluminación para los servicios de noche. Una mesa de barista básica '
@@ -98,7 +100,8 @@ INVERSION = [
 assert len(INVERSION) == 14 and sum(x[1] for x in INVERSION) == 42000
 
 #: Filas 26-35 de 'PyG 3 Años' (costes fijos propios). SPEC D8: los 9 del research §4 + «Licencias y tasas de venta en
-#: ferias y mercados» (300 €, sin IVA: el rótulo empieza por «Licencias», `grupo_a.RX_SIN_IVA`) = 7.700 €/año, una por
+#: ferias y mercados» (300 €; `grupo_a.RX_SIN_IVA` sólo actúa en la columna E de Inversión: en el P&L todas las filas
+#: propias van al tipo general, grupo_a.py:2544-2547, revisión final M5 y F2-NOTAS §9) = 7.700 €/año, una por
 #: fila del molde (no se suprimen filas: desplazaría el P&L). Sin «eventos», «clientes» ni «días» en el rótulo
 #: (motor.RX_RECUENTO). Las claves de `contenido….FIJOS` son estos rótulos normalizados.
 FIJOS = {
@@ -196,6 +199,12 @@ def checklist(salida):
             ws.row_dimensions[r].height = None
         ws.data_validations.dataValidation = []
         ws.conditional_formatting = type(ws.conditional_formatting)()
+        # revisión final m24: sin desplegable previo, el motor crea «✓,—,N/A» (motor.VOCAB_MARCA) mientras su leyenda
+        # de Instrucciones y las casillas dicen «☐»; con este, el motor lo REUTILIZA (`_dv_marca_existente`) y el
+        # desplegable, la leyenda y las casillas hablan el mismo idioma («✓,☐,N/A», el de la familia: motor.py:162)
+        dv = DataValidation(type='list', formula1='"✓,☐,N/A"', allow_blank=True)
+        dv.add('A5:A%d' % (4 + len(tareas)))
+        ws.add_data_validation(dv)
         for i, (tarea, resp, plazo, nota) in enumerate(tareas):
             r = 5 + i
             for c, v in enumerate(('☐', tarea, resp, plazo, nota), start=1):

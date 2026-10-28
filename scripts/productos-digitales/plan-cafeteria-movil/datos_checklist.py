@@ -5,7 +5,7 @@ lo legal común de los eventos ya verificado: constitución, IAE 677.9, IRPF art
 16 y 34.9, formación acreditada por la empresa, TRLGDCU art. 103.l, LIVA art. 75.Dos, Ley 7/2012 art. 7) y el delta del
 research (`F1-research-cafeteria-movil.md` §0-§2) y de la SPEC D10-D11, sólo con lo que el producto afirma:
   · RD 1021/2022 (registro autonómico previa declaración responsable; RGSEAA sólo si se vende a otros negocios;
-    art. 13.5.b: nada se prepara en casa, la base tiene fregadero);
+    art. 13.5.b: nada de lo que se sirve en eventos se prepara en casa; la base tiene fregadero);
   · RD 1086/2020, arts. 2.h, 30.8.d y 30.10 (comida testigo: con salado, sí; bebidas y bollería servida tal cual,
     fuera según nuestra lectura, sin criterio oficial);
   · RD 3/2023, arts. 2.a, 65.3 y 66.b (agua en depósitos móviles); RD 126/2015 (alérgenos; avena = gluten salvo
@@ -69,18 +69,19 @@ FASES = [
         ('Elegir el soporte: barra-carro con furgoneta, Piaggio Ape o remolque', 'Titular', 'Semana 3',
          'El caso del plan es furgoneta + barra-carro: entra en salones y pabellones. El Ape 50 es un ciclomotor (45 '
          'km/h como máximo, sin vías rápidas): para ir lejos, en remolque o furgoneta. Compara las tres '
-         'configuraciones del plan de negocio (sección 6)'),
+         'configuraciones del plan de negocio (sección 2)'),
         ('Furgoneta: si fijas mueble, fregadero o depósitos, informe de reforma e ITV', 'Titular / Taller',
          'Antes de equiparla',
          'Fijar mobiliario, fregadero o depósitos es una reforma de vehículo: informe de conformidad e ITV de la '
          'reforma. Una barra-carro que se carga y se descarga no la necesita. Compruébalo con tu estación de ITV'),
-        ('Remolque: hasta 750 kg sin matrícula, con tarjeta ITV propia', 'Titular', 'Al comprarlo, si lo usas',
+        ('Remolque: hasta 750 kg sin matrícula propia, con tarjeta ITV', 'Titular', 'Al comprarlo, si lo usas',
          'Hasta 750 kg no lleva matrícula propia y sí tarjeta ITV (Reglamento General de Vehículos, arts. 25 y 26); '
          'por encima, matrícula, ITV y seguro, y el carné B o el B96 según el peso del conjunto. Desconfía de los '
          'remolques de importación sin homologación europea'),
         ('Almacén base con fregadero y punto de agua', 'Titular', 'Semanas 3-6',
          'Una nave o un garaje con fregadero para lavar loza, jarras y depósitos, almacén seco y frío, y plaza para la '
-         'furgoneta. Nada se prepara en casa ni en un trastero sin agua (RD 1021/2022, art. 13.5.b)'),
+         'furgoneta. No se prepara nada en casa para un evento (RD 1021/2022, art. 13.5.b), y un trastero sin agua no '
+         'sirve para lavar loza ni depósitos'),
         ('Declaración responsable e inscripción en el registro sanitario autonómico', 'Titular',
          'Antes del primer evento',
          'En el registro de la comunidad donde tiene su base; el vehículo y la barra forman parte del establecimiento '
@@ -240,7 +241,7 @@ FASES = [
          'empresas: 30 % al confirmar y 70 % a 30 días de la factura. Factura cada pago, también la señal (art. '
          '75.Dos de la Ley 37/1992). En efectivo, sólo pagos por debajo de 1.000 € (Ley 7/2012, art. 7)'),
         ('Contrato firmado con cancelación, plan B de lluvia y fuerza mayor', 'Titular', 'Al reservar la fecha',
-         'Modelo del kit: cancelación en cuatro tramos sin huecos (se retiene el 10, 30, 60 o 100 % menos los costes '
+         'Modelo del kit: cancelación en cuatro tramos sin huecos (se retiene el 10, 30 o 60 %, y en el último el 100 % menos los costes '
          'que te ahorras, y es recíproca), plan B de lluvia (no es fuerza mayor), toma eléctrica y acceso exigidos '
          'por escrito al recinto'),
         ('Carta y alérgenos confirmados por escrito', 'Titular', '7 días antes',
@@ -250,14 +251,14 @@ FASES = [
          'y tus horas'),
         ('Pedido de café, leche y bollería', 'Titular', '5-7 días antes',
          'Confirma la entrega 48-72 horas antes; la bollería, el día anterior o el mismo día'),
-        ('Carga con la lista: cafetera, molinos, depósitos llenos, loza y fichas de alérgenos', 'Ayudante',
+        ('Carga con la lista: cafetera, molinos, depósitos llenos, loza y fichas de alérgenos', 'Camarero/a',
          'Día del evento',
          'Agua cargada en red pública y registrada, leche en neveras con acumuladores, generador con combustible'),
         ('Salida con margen y montaje una hora antes', 'Titular', 'Día del evento',
          'Una hora de margen sobre el trayecto, montaje y calibrado del molino con la primera tanda de café'),
         ('Servicio, cola y reposición', 'Titular', 'Día del evento',
          'Jarra por leche, purga entre leches, cartel de alérgenos visible y recuento de bebidas servidas'),
-        ('Desmontaje, limpieza y agua gris', 'Ayudante', 'Final del evento',
+        ('Desmontaje, limpieza y agua gris', 'Camarero/a', 'Final del evento',
          'Grupos y lanza limpios, posos y envases recogidos, el agua gris a un punto autorizado; fotos del espacio '
          'antes y después'),
         ('Facturas y vencimientos del evento', 'Titular', 'D+1 / D+2',

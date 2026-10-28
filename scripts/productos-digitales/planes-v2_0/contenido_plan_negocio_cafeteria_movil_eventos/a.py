@@ -84,7 +84,11 @@ VOCABULARIO = {
     'refrescos o zumos con azúcares añadidos': 'refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos',
     'imprevistos de obra y acondicionamiento': 'imprevistos de la compra y preparación de la furgoneta',
     'partidas de obra y acondicionamiento': 'partidas de la furgoneta',
-    'de obra y licencias': 'de puesta en marcha (pruebas de carta, catas y primeras reservas)',
+    'de obra y licencias': 'de puesta en marcha (montaje del almacén, calibrado de la cafetera, catas y primeras '
+                           'reservas)',
+    # revisión final m20: Inversión!D21-D22 hablaban de «renta» (vocabulario del molde)
+    'meses de renta': 'cuotas del almacén base',
+    'renta': 'cuota',
     'un banco no financia una reforma sin colchón': 'un banco no financia una compra así sin colchón',
     'El documento Word del pack sigue en la versión 1.1 y no lee esta celda: las cifras válidas son las de este libro':
         'El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro',
@@ -99,8 +103,11 @@ VOCABULARIO = {
     # Supuestos!C9 (nota del PVP con IVA)
     'En sala todo va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992, alcohol incluido); el alcohol que sale por '
     'delivery y el pan común, si los tienes, mueven la media':
-        'Todo lo que sirve la cafetería móvil va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), en la barra del '
-        'evento y en la venta directa de ferias y mercados: el precio con IVA es el de sin IVA por 1,10',
+        'Todo lo que sirve la cafetería, en la barra o en la venta directa, va al 10 % (art. 91.Uno.2.2.º de la Ley '
+        '37/1992)',   # literal de fórmula: el total de Supuestos!C9 tiene que quedar por debajo de 255 caracteres
+    # revisión final m19: el libro no trae un rango de precio por invitado (Instrucciones!A44 es por evento)
+    'Compáralo con el rango del sector, que va con IVA':
+        'Compáralo con el precio por invitado de las barras de tu zona, que suele ir con IVA',
     # Supuestos!C40 (nota del tipo general)
     'En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el '
     'que repercutes por el alcohol que sale por delivery (es una entrega de bienes). El alcohol servido en sala va al '
@@ -132,7 +139,7 @@ VOCABULARIO = {
         'evento y en la venta directa de ferias y mercados, al reducido del 10 % (art. 91.Uno.2.2.º de la Ley 37/1992',
     # Tesorería (injerto de la finca, SPEC D7): Mes 1 girado, personal en doce meses y trimestres del 303
     'Perfil de tu zona: agosto flojo en ciudad y fuerte en costa':
-        'Mes 1 = MARZO: el café se reserva con uno a seis meses de antelación y se arranca en primavera, con la '
+        'Mes 1 = MARZO: el café se reserva de una semana a seis meses antes y se arranca en primavera, con la '
         'empresa y las comuniones. Los picos son mayo y junio (Meses 3 y 4) y septiembre y octubre (Meses 7 y 8); el '
         'valle, agosto (Mes 6) y enero (Mes 11). Si arrancas en otro mes, gira la fila',
     'La suma del año es la misma que la del P&L':
@@ -230,8 +237,8 @@ SUPUESTOS = {
         None, None, 400, None,
         'Cuota del almacén base: una nave o un garaje con fregadero y punto de agua donde se lavan la loza, las jarras '
         'y los depósitos, se guardan el café, la leche y los vasos, y duerme la furgoneta. No hay cocina ni se elabora '
-        'comida; la casa o un trastero sin agua no sirven (RD 1021/2022, art. 13.5.b). Pide dos presupuestos en tu '
-        'zona',
+        'comida: no se prepara nada en casa para un evento (RD 1021/2022, art. 13.5.b), y un trastero sin agua no '
+        'sirve para lavar loza ni depósitos. Pide dos presupuestos en tu zona',
         'research §2 y §4 [estimado] · RD 1021/2022 art. 13.5.b (BOE, vía catering)'),
     'fianza_meses': (
         None, 'Fianza del almacén base (meses)', 2, None,
@@ -324,7 +331,7 @@ SUPUESTOS = {
     'dias_cobro': (
         None, None, 20, None,
         'Media ponderada: los particulares (bodas y celebraciones) pagan el 30 % de señal al firmar y el 70 % siete '
-        'días antes del evento, y la venta directa se cobra en el momento; las empresas, agencias y congresos, el 52 % '
+        'días antes del evento, y la venta directa se cobra en el momento; las empresas, agencias y congresos, la mitad '
         'de las ventas, pagan el 30 % al confirmar y el 70 % a 30 días de la factura (contrato y calculadora del kit). '
         'El libro no admite días negativos, así que las señales no se modelan: tu caja real será algo MEJOR que la de '
         'la hoja de Tesorería',
@@ -337,7 +344,7 @@ SUPUESTOS = {
     'rampa_mes1': (
         None, None, 0.45, None,
         'Una cafetería móvil que arranca factura poco el primer mes: el café se contrata después que la finca y el '
-        'catering, con uno a seis meses de antelación, y las empresas tardan en repetir. Con 100 % se elimina la rampa',
+        'catering, de una semana a seis meses antes, y las empresas tardan en repetir. Con 100 % se elimina la rampa',
         'research §1 y §4 · SPEC D7'),
     'meses_rampa': (
         None, None, 9, None,
@@ -389,10 +396,10 @@ PLANTILLA = (
      '«Barista» no es categoría del convenio: se contrata como camarero/a. Bruto a jornada completa: 1.400 € en 14 '
      'pagas',
      'research §4 [estimado] · ET art. 16 y ALEH VI (BOE)', 0.36),
-    ('Suplencias de vacaciones y bajas (fijo discontinuo)', 1, 56,
-     'Bolsa para cubrir las vacaciones y las bajas del camarero/a en temporada: unas 75 horas al año, mismo contrato '
-     'y misma categoría. Nunca como autónomo que te factura: con tu horario y tu dirección es falso autónomo '
-     '(art. 1.1 del Estatuto de los Trabajadores)',
+    ('Suplencias y refuerzo de temporada (fijo discontinuo)', 1, 56,
+     'Bolsa para cubrir las vacaciones del camarero/a y los picos de temporada: unas 75 horas al año, mismo contrato '
+     'y misma categoría. Para cubrir una baja concreta, el contrato es de sustitución (art. 15.3 del Estatuto de los '
+     'Trabajadores). Nunca como autónomo que te factura: con tu horario y tu dirección es falso autónomo (art. 1.1)',
      'SPEC D8 (fila que exige el molde) · ET arts. 1.1 y 16 (BOE)', 0.04),
     ('Refuerzo para eventos grandes (fijo discontinuo)', 1, 56,
      'Tercer barista para los congresos y las bodas de más de 200 invitados que pidan una segunda estación (tabla '
@@ -464,7 +471,9 @@ FIJOS = {
         None, 'Café, leche y horas de las catas para novios, agencias y planners que no se cobran'),
     'licencias y tasas de venta en ferias y mercados': (
         None, 'Autorizaciones municipales de venta no sedentaria y tasas de ocupación de las jornadas de venta '
-              'directa (RD 199/2010). Las tasas no llevan IVA. Pon las de tu ayuntamiento'),
+              'directa (RD 199/2010). Pon las de tu ayuntamiento. Las tasas municipales no llevan IVA, pero el libro '
+              'aplica a todos los costes fijos el tipo general de la columna de al lado: aquí suma unos 63 € al año de '
+              'IVA que pagas y te deduces en el mismo trimestre, sin efecto en el resultado'),
 }
 FIJOS_EXTRA = ()
 
@@ -553,7 +562,7 @@ INSTRUCCIONES = {
     ],
     'referencias': [
         ('Mes 1 del plan', 'Marzo', 'Decisión del plan',
-         'El café se reserva con uno a seis meses de antelación: se arranca en primavera, con la empresa y las '
+         'El café se reserva de una semana a seis meses antes: se arranca en primavera, con la empresa y las '
          'comuniones, y enero y febrero (los meses más flojos) llegan con la caja de la temporada. La fila de '
          'estacionalidad de la Tesorería ya va girada'),
         ('Mezcla de eventos del plan',
@@ -578,9 +587,9 @@ INSTRUCCIONES = {
         ('Cobro y cancelación del kit',
          'Particular: 30 % al firmar y 70 % siete días antes · Empresa: 30 % y 70 % a 30 días de la factura',
          'Contrato y calculadora del kit',
-         'Cancelación en cuatro tramos (particular: 60, 30 y 7 días; empresa: 30, 15 y 7): se retiene el 10, el 30, el '
-         '60 o el 100 % del precio, menos los costes que te ahorras; recíproca si cancelas tú. En la feria se cobra en '
-         'el acto'),
+         'Cancelación en cuatro tramos (particular: 60, 30 y 7 días; empresa: 30, 15 y 7): se retiene el 10, el 30 o el '
+         '60 % del precio, y en el último tramo el 100 % menos los costes que te ahorras; recíproca si cancelas tú. En '
+         'la feria se cobra en el acto'),
         ('Canon de venta en ferias y mercados', '15 % de lo vendido en el caso', 'Supuesto del kit',
          'Hay organizadores que cobran un porcentaje y otros una cuota fija por jornada o emplazamiento: conviértela '
          'a porcentaje con tu previsión de ventas de la jornada'),
@@ -591,7 +600,8 @@ INSTRUCCIONES = {
          'El vaso de papel con forro de PE o PLA también es plástico. Las pajitas y los agitadores de plástico están '
          'prohibidos. En bodas y eventos de empresa, loza'),
         ('Comida testigo', 'Sólo si sirves salado', 'RD 1086/2020, arts. 2.h y 30.8-30.10',
-         'Una ración de 100 g o más durante 7 días, en cada evento. Según nuestra lectura, las bebidas y la bollería '
+         'Una ración de 100 g o más, a 4 °C o menos (o congelada), durante 7 días, en cada evento. Según nuestra '
+         'lectura, las bebidas y la bollería '
          'servida tal cual quedan fuera, sin criterio oficial: confírmalo con tu autoridad sanitaria'),
         ('Convenio colectivo aplicable', 'Provincial de hostelería',
          'VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4',
