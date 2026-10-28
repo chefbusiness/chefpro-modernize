@@ -56,3 +56,21 @@ Enlazar desde el blog a los dos productos nuevos: posts ES de cafetería, café 
 
 Plan maestro actualizado: `/Users/johnguerrero/productos-digitales/Catalogo_…RoadmapExpansion.xlsx` (columna «Estado 28-oct-2026» en
 hojas 4 y 6, hoja 8 nueva con LIVE ES 55 · LIVE EN 32 · cola de 76; copia `….BACKUP-2026-10-28.xlsx`).
+
+## 6. Añadido al cierre (29-oct, madrugada · sesión Claude Code)
+
+- **Taquería F1 research cerrada** en la rama `feat/plan-negocio-taqueria` (worktree `scratchpad/wt-taqueria`, efímero: recrearlo desde
+  la rama): ES `scripts/productos-digitales/plan-taqueria/F1-research-taqueria.md` (`4d921f83`) y US
+  `scripts/productos-digitales/business-plans-en-12/F1-research-us-delta.md` (`a7945201`). Casos: ES 80 m², 32 plazas + 16 de terraza,
+  77 cubiertos/día, ticket 15,50 €, inversión 100.350 €, neto 9,9 %, DSCR 2,2 · US 1,200 sq ft, 30 + 12, 115 covers/día, $17.50,
+  $184,800, neto 6,9 %, DSCR 2,9. Precios 35 € / $39 confirmados (competidor US $59).
+  **Puntos débiles a calibrar en la F2:** food cost 27 % sobre precios estimados (con el 28-33 % de la guía mexicana el neto baja al 6-8 %),
+  precios profesionales de carne/aguacate/tortilla sin leer, merma del trompo sin fuente (la calculadora la pide), releer LIVA art. 91 en
+  la F3 (versión con vigencia 1-12-2026 en la API del BOE). Propuesta pendiente de decidir en la F3: quitar solo «abrir taqueria» de
+  `seo.keywords` de la Guía Restaurante Mexicano (`guia-restaurante-mexicano.ts:17`) y enlazar las dos fichas.
+  **Retomar:** `F1-camino.md` (clon del Plan Pizzería: dry-run de la línea A en el VPS, semilla, carpeta, calculadora del trompo) → F2 en el VPS.
+- **Pollería / Asador de Pollos pasa a prioridad 2** (John, 29-oct). Mapa de palabras clave ES (7 países) + EN (US, UK, AU):
+  `scripts/productos-digitales/plan-polleria/F0-mapa-keywords-es-en.md`. Excel del plan maestro, hoja 8: pollo en 2a/2b, Taco Shop
+  Checklists en 3.
+- Térmica: el Mac pasó dos veces de 65 °C (22:33Z y 23:5xZ) con agentes en paralelo; se paró el investigador y se reanudó en frío.
+  Con esta máquina, **un agente a la vez** de noche.
