@@ -1,0 +1,56 @@
+{
+ "carpeta": "astro-site/public/dl/coffee-cart-business-plan",
+ "piezas": 2092,
+ "fallos": 0,
+ "ficheros": {
+  "coffee-cart-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 8025,
+   "piezas": 116,
+   "sha256": "ba647bbe117f0ec7eb4c85fb211d8ead1abcc87b1328dce92300fa3d2062993f",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "coffee-cart-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 722,
+   "piezas": 818,
+   "sha256": "92e1b56afb0669fa475bc009e20cc7c033e3aa83011710f2ed4c8dff423d259a",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "coffee-cart-pricing-calculator.xlsx": {
+   "hojas": 4,
+   "formulas": 425,
+   "piezas": 617,
+   "sha256": "fa31f453551662b5f92afad7743c3fc46b0e98827eac7900c105c1ab2a835e0b",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "coffee-cart-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 435,
+   "sha256": "b7235f5105eb782c03628aa12e2678fbb2a41d4064dd19b135454ca29146dd71",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "coffee-catering-service-agreement-template.docx": {
+   "parrafos": 100,
+   "con_texto": 100,
+   "heading1": 0,
+   "palabras": 3227,
+   "piezas": 106,
+   "sha256": "d821fe8a7dc0d26cfd845d0875cc319d4a44c4400d780b3bdb86fb45fae6b024",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}

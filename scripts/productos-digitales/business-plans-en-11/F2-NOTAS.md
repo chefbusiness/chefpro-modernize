@@ -154,3 +154,57 @@ Sobre `57362d63` (ES final: calculadora `d3174a8d`, contrato `9273efd3`, `plan-c
 - `bp11.py mapas` 0 errores (18 sha256 OK) · calculadora `--autotest` VERDE sobre el fichero de HEAD (`fa31f453…`) · Mac = VPS.
 - **§6 queda resuelto**: Word ES, cifras finales, calculadora (§7) y contrato (§7) ya están; las tandas (c) cof_a ‖ (d) cof_b
   pueden arrancar.
+
+## 9. Paso 3 — montaje y gates de los 5 entregables (28-oct, noche; sesión Claude Code) — sobre `f5f244e1`
+
+Todos los textos EN en git (GCF-plan, GRP-plan con su revisión, GCF-check, `contrato_en.json`, `docx_en_cof_{a,b}.json`). VPS
+`/root/wt-coffeecart` llevado a la cabeza de la rama (limpio). Alta de `coffee-cart-business-plan` en `PRODUCTOS_LETTER`
+(`censo-entregables.py`) y `EXCLUIDOS` (`postprocess-transversal.py`) para G9 (una línea en cada uno; ningún otro código común).
+
+```bash
+cd /root/wt-coffeecart/scripts/productos-digitales/business-plans-en-11 && PY=/root/venv-guias/bin/python
+D=/root/wt-coffeecart/astro-site/public/dl/coffee-cart-business-plan
+$PY bp11.py check_textos --todas && $PY bp11.py check_contrato --todas && $PY bp11.py verificar     # JSON
+$PY bp11.py aplicar_en --idempotencia --json /root/tmp-cof/real.json && $PY bp11.py calibracion /root/tmp-cof/real.json
+$PY bp11.py ensamblar_docx --plan cof && $PY bp11.py contrato --salida $D --pdf && $PY bp11.py calculadora
+$PY bp11.py gates_en && $PY bp11.py gates_en --autotest && $PY bp11.py ensamblar_docx --autotest --dir /root/tmp-cof/docx-at
+$PY bp11.py barrido                                       # → entregables_cof.json
+cd .. && $PY censo-entregables.py --only coffee-cart-business-plan --fail && $PY gate-no-latinos.py --only coffee-cart-business-plan
+cd /root/wt-coffeecart && bash scripts/productos-digitales/business-plans-en-11/regresion_cof.sh /root/wt-coffeecart
+# 2.ª pasada: aplicar_en --dry-run --salida /root/tmp-cof/p2 + ensamblar_docx/calculadora/contrato --salida p2/… y canon.py
+```
+
+| Gate | Resultado |
+|---|---|
+| `check_textos --todas` · `check_contrato --todas` · `verificar` | GM, GRP-plan (2 correcciones), GLP-check, GCF-plan (148), GCF-check (89), cof_a (29 · 39 tokens), cof_b (32 · 96 tokens) **OK** · contrato 99 párrafos, 3.212 palabras **OK** · 18 sha256 OK |
+| `aplicar_en --idempotencia` | 2.ª construcción 0 diferencias · inject_cache 722 (666) + 12 · 0 fallos de pycel |
+| `calibracion` (D15) | **VERDE**: préstamo $71,000 · ventas $203,490 · DSCR 2.58 · saldo mín $17,705 (mes 7) · cobertura 162 % · holgura 24.1 % · neto 9.9 / 13.4 / 15.1 % · exceso 0.7 % · umbrales D225 verdes |
+| `ensamblar_docx` · `contrato --pdf` · `calculadora` | Word **G8 VERDE** (131 párrafos, 10 H1, 8.025 palabras) · contrato **VERDE** (100 párrafos con la línea de versión EN al final, 3.227 palabras, Letter, **8 páginas**) · calculadora autotest **1.122 VERDE** |
+| `gates_en` | **G1-G9 TODO VERDE** (722 fórmulas · 68 tareas 11/13/12/10/12/10 · 1.285 piezas de texto · 16 hojas Letter · 202 valores bajo DV · 0 diferencias de caché · 113 valores del caso · docx validado · censo 0 · no latinos 0) · `--autotest` **20/20** · docx `--autotest` **8/8** |
+| `barrido_cof` | 5 ficheros · 2.092 piezas · **0 fallos** (RX_COF_NO, cifras prohibidas, español, no latinos) |
+| `censo-entregables --only … --fail` · `gate-no-latinos --only …` | 5 ficheros (3 xlsx, 2 docx): **0 defectos** · 0 no latinos |
+| `paginas-gate.py --only coffee-cart-business-plan` | no aplica: solo lee las fichas ES (`src/data/productos`); la ficha EN no promete páginas (solo «10 sections», «68 tasks») |
+| Regresión de los 10 conjuntos | **39/39 IGUAL**, 0 DISTINTO · `bp11.py mapas` 0 errores |
+| 2.ª pasada (sha canónico) | **IGUAL** en los 5 |
+
+**Entregables** (`astro-site/public/dl/coffee-cart-business-plan/`, nombres de D218, Mac = VPS):
+
+| Fichero | sha256 |
+|---|---|
+| `coffee-cart-business-plan.docx` | `ba647bbe117f0ec7…` |
+| `coffee-cart-financial-projections.xlsx` | `92e1b56afb0669fa…` |
+| `coffee-cart-pricing-calculator.xlsx` | `fa31f453551662b5…` (= el de git: la regeneración da sha canónico igual y se dejó el versionado) |
+| `coffee-cart-startup-checklist.xlsx` | `b7235f5105eb782c…` |
+| `coffee-catering-service-agreement-template.docx` | `d821fe8a7dc0d26c…` |
+
+`cifras_caso.json` solo cambia el sello `generado`; `entregables_cof.json` nuevo (barrido). VPS: el resto, sin cambios en git.
+
+**Dudas de los redactores para la revisión D232 (no se han tocado):**
+1. **cof_a [41]**: cifras de cart-king frente a la tabla de benchmarks (D19 fila 61: «$5,000-25,000» como Kit estimate, «$24,000»
+   típico y «$49,000» premium de cart-king.com): comprobar que el Word y la tabla digan lo mismo.
+2. **cof_b [104]**: los ejemplos del fire code (NFPA 96 «≥ 12 ft», New Jersey) vienen de resúmenes: confirmar que van como ejemplo
+   con «ask your fire marshal».
+3. **cof_b [102]**: la salvedad de California (Health & Safety Code §114295, leída solo en resumen): ¿basta el «usually yes … ask your
+   county in writing»?
+4. **cof_b [98]**: «September, with Month 1 as March» va escrito a mano junto a `{{mes_saldo_minimo}}`: si alguien cambia la
+   estacionalidad o el Mes 1, el mes deja de ser septiembre (el token sí cambiaría).
