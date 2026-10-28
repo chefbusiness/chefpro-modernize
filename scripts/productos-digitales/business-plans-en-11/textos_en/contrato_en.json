@@ -1,0 +1,398 @@
+[
+ {
+  "estilo": "Kicker",
+  "texto": "AI CHEF PRO · COFFEE CART BUSINESS PLAN KIT"
+ },
+ {
+  "estilo": "Title",
+  "texto": "Coffee Catering Service Agreement"
+ },
+ {
+  "estilo": "Subtitle",
+  "texto": "For private events and weddings, with an addendum for corporate clients and festival organizers"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "**Template, not legal advice.** Consumer, deposit, food safety and tax rules vary by state. Have a licensed attorney in your state review and adapt it before you use it."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "**How to use this template.** It is a starting point, so you do not begin with a blank page. Everything in [brackets], such as [name] or $[amount], is yours to fill in for each booking, and the percentages, deadlines and tiers are examples from the kit: adjust them to your business. Attach your drink menu and the quote from the kit's pricing calculator to every agreement. Delete the options you do not use."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Three ideas guide the text: every payment gets a receipt; what the Coffee Caterer keeps on a cancellation is proportionate and works both ways; and every permit and every site requirement has a named owner, even when the venue or the organizer does not sign."
+ },
+ {
+  "estilo": "Separador",
+  "texto": ""
+ },
+ {
+  "estilo": "H1",
+  "texto": "Coffee Catering Service Agreement"
+ },
+ {
+  "estilo": "Kicker",
+  "texto": "FOR PRIVATE EVENTS: WEDDINGS, BIRTHDAYS, SHOWERS AND OTHER CELEBRATIONS"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Dated [mm/dd/yyyy], in [city], [State]."
+ },
+ {
+  "estilo": "H2",
+  "texto": "Parties"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "This agreement is between [business name], located at [full address], holder of mobile food unit permit no. [number] issued by [county or state health department] (the \"Coffee Caterer\"), and"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "[full name], located at [full address], who is booking in their own name for a private event (the \"Client\"). If two people book together, such as a couple, both are listed here and are jointly responsible: [second Client's name and address]."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Each party confirms it has the legal capacity to sign and agrees to the following terms."
+ },
+ {
+  "estilo": "H2",
+  "texto": "1. Service, location and service hours"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Coffee Caterer will provide a mobile espresso bar and coffee catering service, with its espresso cart or portable espresso bar, baristas and supplies, at the following event:"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Event: [type of event] on [mm/dd/yyyy]."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Venue: [venue name and address], owned or managed by [venue owner]."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Service window: from [time] to [time], which is [number] hours of open bar. Setup begins about [60] minutes before and breakdown ends about [45] minutes after, at no extra charge."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Staffing: [number] baristas, according to the Coffee Caterer's staffing guide for the number of guests."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "**Additional hours.** If the Client wants to extend the service, the Client asks the Coffee Caterer at the event, and the Coffee Caterer accepts only if its team and equipment allow it. Each additional hour or part of an hour is billed at $[amount] plus applicable sales tax, on the final invoice. Extra time is the same service and is taxed like the rest of the booking."
+ },
+ {
+  "estilo": "H2",
+  "texto": "2. Pricing model"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The parties choose one of the following pricing models. Check the one that applies and delete the others."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "[ ] **Per guest.** $[amount] per guest plus applicable sales tax, with a guaranteed minimum of [number] guests. The Client gives the final guest count, with any allergies the Client knows about, in writing at least [10] days before the event. After that the count can only go up, if the Coffee Caterer can serve the extra guests; it cannot go below the guaranteed minimum, even if fewer people attend."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "[ ] **Base fee plus hourly rate.** A base fee of $[amount] plus $[amount] per service hour, plus applicable sales tax, for the hours in Section 1, with a minimum of [number] hours."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "[ ] **Guest-pay with a minimum sales guarantee.** Guests pay for their own drinks at $[amount] per drink or at the posted menu prices. The Client guarantees drink sales of at least $[minimum] during the service window. If sales fall short, the Coffee Caterer invoices the difference, plus applicable sales tax."
+ },
+ {
+  "estilo": "H2",
+  "texto": "3. Drink menu, allergens and cups"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The menu is the one attached to this agreement or any other menu the parties agree on in writing: espresso drinks, tea, cold drinks and non-coffee drinks, with [whole milk, oat milk, soy milk and almond milk]. Extras with their own price, such as branded cups, latte printing or pastries from a licensed bakery, are listed separately in the quote."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "**Allergens.** The Coffee Caterer provides a written list of the allergens in each drink and pastry. Of the nine major US food allergens, the ones that matter at an espresso bar are milk, soy and tree nuts and, in pastries, wheat and egg. Oat milk is called gluten-free only if the brand is certified gluten-free. The bar displays a sign with this information and a note inviting guests to ask. The Coffee Caterer uses a separate pitcher for each milk but cannot guarantee that no traces remain: the Client tells the Coffee Caterer about any serious allergy before the event, and the Coffee Caterer confirms in writing how it will handle it."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "**Cups.** Drinks are served in compostable cups, lids and sleeves, included in the price. If the venue requires reusable cups, or the Client prefers them, the parties agree in writing who provides, washes and returns them, and any extra charge is listed on a separate line of the invoice."
+ },
+ {
+  "estilo": "H2",
+  "texto": "4. Site requirements and power"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Client confirms that the venue meets the following requirements and checks them with the venue owner before signing. The Coffee Caterer may visit the venue in advance and, if anything is missing, will tell the Client in writing at least [7] days before the event."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Power.** A professional two-group espresso machine can need a dedicated circuit. The Client provides, in writing, a dedicated circuit of [110V or 220V], [20] amps, within [50] ft of the bar, not shared with music, lighting or a kitchen. If that is not possible, the Coffee Caterer brings an inverter generator for a generator fee of $[amount] plus applicable sales tax, placed where the venue or the fire marshal allows and away from guests."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Access and parking.** The cart can be rolled in by ramp or elevator to within [distance] ft of the bar spot. The Client arranges any access permission and trailer parking during setup, service and breakdown, and reports any limits on hours, weight or height."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Surface and cover.** The bar needs a level, firm surface of at least [10 × 10] ft. For an outdoor event there must be cover (a tent, pergola or porch) that protects the bar and the equipment from rain and direct sun; without it the Coffee Caterer cannot set up the machines."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Water.** A potable water tap is available within [100] ft of the bar. If not, the Coffee Caterer brings water in food-grade tanks for a fee of $[amount] plus applicable sales tax. Gray water is collected in the Coffee Caterer's own tank and taken away; it is never poured on the ground or into a storm drain."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Client is responsible to the Coffee Caterer for these requirements even when they depend on the venue and the venue owner does not sign this agreement. If the venue does not meet them and the Coffee Caterer cannot perform for that reason, it is treated as a cancellation by the Client and the table in Section 8 applies, based on how many days remain before the event."
+ },
+ {
+  "estilo": "H2",
+  "texto": "5. Permits: who handles each one"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**The Coffee Caterer** holds the health permit for its mobile food unit, food handler cards for its team (and a Certified Food Protection Manager where required), a business license, and general liability insurance of $[1,000,000] per occurrence and $[2,000,000] aggregate. It provides a certificate of insurance (COI) on request, naming the venue as additional insured."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**The Client** obtains and gives the Coffee Caterer, by [mm/dd/yyyy], the venue's permission to hold the event and set up the bar, and the venue's rules and approvals for access and parking. If the event is in a public space, the Client obtains the city or park permit."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**The Organizer**, where an event organizer is involved, obtains the event permit and coordinates any temporary food event permits (see the addendum)."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "In places where a mobile food unit needs approval to operate at a private event, the Coffee Caterer confirms with its county health department and tells the Client in advance if anything is needed from the venue."
+ },
+ {
+  "estilo": "H2",
+  "texto": "6. Fees and sales tax"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "All prices in this agreement and the quote are stated plus applicable sales tax. The invoice shows the subtotal, the sales tax and the total. In many states a hosted catering service is taxed on the whole invoice, including staff, travel and extras; the Coffee Caterer applies the rule of the state where the event takes place. Additional hours, the generator fee and water fees are taxed the same way as the service itself."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "A **service charge** of [%] is a mandatory fee kept by the Coffee Caterer and is not a tip; the part paid out to staff is treated as wages. A **gratuity** is voluntary and goes to the team. They appear on separate lines of the invoice. The Coffee Caterer may place a tip jar at the bar only if the Client agrees."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "If the final price depends on the final guest count, the hours or the drinks served, it is adjusted on the final invoice."
+ },
+ {
+  "estilo": "H2",
+  "texto": "7. Payments, retainer and receipts"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Client pays the total price in two payments, by [ACH, card or check] or by any method the Coffee Caterer confirms in writing:"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Retainer: [30]%** of the total price ($[amount]), due when this agreement is signed, to hold the date. The retainer is applied to the price."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Balance due: [70]%** ($[amount]), due [14] days before the event, on [mm/dd/yyyy]. The final invoice adjusts, up or down, for the final guest count, additional hours and extras. The final guest count is due [10] days before the event."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The retainer is a payment toward the price and is credited to it if the event takes place. If a party cancels, what happens to the retainer is governed only by the cancellation table in Section 8 and the reciprocal terms in Section 9."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Coffee Caterer sends a receipt or invoice for every payment, including the retainer, when the payment is received. If the Client is more than [10] days late on a payment after a written reminder, the Coffee Caterer may end the agreement and treat it as a cancellation by the Client under Section 8."
+ },
+ {
+  "estilo": "H2",
+  "texto": "8. Cancellation by the Client"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "If the Client cancels the event, the Coffee Caterer keeps a percentage of the total price, according to how far ahead it receives the written cancellation before the event date:"
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "[60] days or more before the event: **[10]%** of the price."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "From [30] to less than [60] days: **[30]%** of the price."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "From [14] to less than [30] days: **[60]%** of the price."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "Less than [14] days before the event, or a no-show: **[100]%** of the price, minus the costs the Coffee Caterer saves by not performing (coffee, milk and cups not used, staff and travel)."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "If what the Client has already paid is more than the amount kept, the Coffee Caterer refunds the difference within [14] days; if it is less, the Client pays the difference. The parties agree these amounts are a reasonable estimate of the Coffee Caterer's loss, not a penalty: the date and the equipment cannot be offered to other clients. If the Client moves the date under Section 10 or the Coffee Caterer rebooks the same date with another client, the Coffee Caterer credits the amount it received for that booking against what the Client owes."
+ },
+ {
+  "estilo": "H2",
+  "texto": "9. Cancellation by the Coffee Caterer"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "If the Coffee Caterer cancels or cannot perform for a reason other than force majeure, it refunds everything paid within [14] days and also pays the Client the amount it would have kept in the same tier of the table in Section 8. The Coffee Caterer will also help find a substitute espresso bar, but the Client does not have to accept it. These terms work both ways so that neither party is in a better position than the other."
+ },
+ {
+  "estilo": "H2",
+  "texto": "10. Date change"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Client may ask in writing to change the date. The Coffee Caterer agrees if it is available and the new date falls within [6] months. A change is free if requested [60] days or more before the event; otherwise a change fee of $[amount] applies and the price is updated to the rates in effect on the new date."
+ },
+ {
+  "estilo": "H2",
+  "texto": "11. Rain plan"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Rain is not force majeure and does not allow cancellation without consequences, because it can be foreseen and is solved with the cover in Section 4. The parties decide on plan A or plan B no later than [10:00 a.m. on the day of the event]; if in doubt, the Coffee Caterer decides for electrical and food safety reasons. If the Client provides no cover and rain prevents the service, Section 8 applies."
+ },
+ {
+  "estilo": "H2",
+  "texto": "12. Force majeure"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Neither party is liable for failing to perform if the cause is an unforeseeable event outside its control, such as a government order, a fire, a flood, an official severe weather warning or a general power outage that the generator cannot solve. The parties first try to move the event to a new date within [6] months at no charge. If that is not possible, the Client may choose a refund of everything paid, less documented costs the Coffee Caterer has already incurred for the Client, and neither party owes the other any further compensation."
+ },
+ {
+  "estilo": "H2",
+  "texto": "13. Cancellation period for sales away from the business [optional]"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "[Optional clause: The Client may cancel this agreement without charge by written notice within [3] business days after signing it.]"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "[Drafting note: if you sign clients at a bridal show or anywhere away from your place of business, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies.]"
+ },
+ {
+  "estilo": "H2",
+  "texto": "14. Damage, insurance and responsibility"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Coffee Caterer is responsible for damage caused by its team and for the drinks it serves, and carries general liability insurance of $[1,000,000] per occurrence and $[2,000,000] aggregate, with a COI naming the venue as additional insured. The Client is responsible for damage to the Coffee Caterer's equipment caused by the Client, its guests and its vendors, other than normal wear and tear."
+ },
+ {
+  "estilo": "H2",
+  "texto": "15. Mutual responsibility"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "Each party is responsible for its own negligence and for the acts of its own employees and contractors. Neither party gives the other a one-sided indemnity. Nothing in this agreement makes either party responsible for the other's insurance deductible."
+ },
+ {
+  "estilo": "H2",
+  "texto": "16. Photos and privacy"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "The Coffee Caterer uses the Client's personal information to manage this agreement, send invoices and meet its legal obligations, and keeps it as long as the relationship lasts or the law requires. The Client can ask to see or delete their information at [email]. Controller: [Coffee Caterer details]."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "If the Coffee Caterer wants to use photos or videos of the event on its website or social media, the Client decides separately, in a written consent that does not affect this agreement: [ ] I authorize   [ ] I do not authorize. Even if the Client authorizes, the consent can be withdrawn in writing at any time."
+ },
+ {
+  "estilo": "H2",
+  "texto": "17. Governing law and disputes"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "This agreement is governed by the law of [State]. The parties agree that the courts of [County], [State] will hear any dispute that cannot be resolved by talking it through. Have a licensed attorney in your state review this clause and tell you whether mediation or arbitration fits your business."
+ },
+ {
+  "estilo": "H2",
+  "texto": "18. Entire agreement and e-signatures"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "This agreement, with its attached menu, quote and addendum, is the whole agreement between the parties and replaces any earlier discussion. Changes must be in writing and signed by both parties. The parties may sign electronically, and electronic signatures have the same effect as handwritten ones."
+ },
+ {
+  "estilo": "Normal",
+  "texto": "To confirm their agreement, the parties sign below on the date at the top."
+ },
+ {
+  "estilo": "Firma",
+  "texto": "Coffee Caterer: __________________________        Client: __________________________"
+ },
+ {
+  "estilo": "Firma",
+  "texto": "Name: ______________        Title: ______________        Date: ______________"
+ },
+ {
+  "estilo": "Separador",
+  "texto": ""
+ },
+ {
+  "estilo": "H1",
+  "texto": "Corporate & Festival Organizer Addendum"
+ },
+ {
+  "estilo": "Kicker",
+  "texto": "FOR CORPORATE EVENTS, AGENCIES, CONFERENCES, FESTIVALS AND FARMERS MARKETS"
+ },
+ {
+  "estilo": "Normal",
+  "texto": "This addendum completes the agreement above when the Client is a company, agency, association, other entity or the organizer of a festival or farmers market acting in the course of its business. These are business-to-business terms, and the rest of the agreement stays the same."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Parties and billing details.** The company gives its legal name, billing address, the name and title of the person signing, a billing contact email and, if there is one, its purchase order (PO) number. The Coffee Caterer provides its W-9. If the entity is exempt from sales tax, it gives the Coffee Caterer an exemption certificate before the event; without one, sales tax is added."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Payments.** Retainer of [30]% when the agreement is signed, to hold the date and applied to the price. Balance of [70]% on net [30] terms, from the invoice, which is issued the day after the event. Late amounts bear interest at [1.5]% per month, or the highest rate the law allows if that is lower."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Cancellation by the company.** The Coffee Caterer keeps a percentage of the total price: [30] days or more before the event, **[10]%**; from [15] to less than [30] days, **[30]%**; from [7] to less than [15] days, **[60]%**; less than [7] days, **[100]%**, minus the costs it saves. The difference from what was paid is refunded or paid. The parties agree these amounts are a reasonable estimate of the Coffee Caterer's loss, not a penalty."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Cancellation by the Coffee Caterer.** It refunds everything paid. Any additional compensation is the one agreed here: [the amount it would have kept in that tier / a fixed amount of $[amount]]."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Festivals and farmers markets: the Organizer.** The Organizer provides the Coffee Caterer a pitch of [number] sq ft from [mm/dd/yyyy] to [mm/dd/yyyy], and obtains and delivers by [mm/dd/yyyy] the event permit and coordinates the temporary food event permits for vendors. The Organizer supplies the dedicated circuit described in Section 4, potable water and trash removal, and sets the setup hours. If the Organizer cancels or postpones the event, it refunds the Coffee Caterer's payments, the vendor fee paid and documented costs already incurred."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Festivals and farmers markets: the Coffee Caterer.** The Coffee Caterer sells on its own account and issues its own receipts, following the health rules in Section 5. The vendor or booth fee is $[amount] or [15]% of sales and is itemized on the Organizer's invoice. If the Organizer promises a **minimum sales guarantee** of $[minimum] in drink sales, the Organizer pays the difference between actual sales and that amount, plus applicable sales tax, within [7] days after the event. There is no exclusivity unless agreed in writing."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Conference days.** Coffee breaks are agreed with their schedule and expected attendance; the final guest count is given [5] days before. The Coffee Caterer is not responsible for program delays that shorten the service time, but bills the planned hours."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**The company's terms.** The company's own terms (purchase order terms, vendor codes, internal policies) apply only if the Coffee Caterer accepts them in writing. Both parties keep the content of events and the commercial information they exchange confidential."
+ },
+ {
+  "estilo": "List Bullet",
+  "texto": "**Governing law.** The agreement is governed by the law of [State], and the courts of [County], [State] hear any dispute."
+ },
+ {
+  "estilo": "Firma",
+  "texto": "Coffee Caterer: __________________________        Company / Organizer: __________________________"
+ },
+ {
+  "estilo": "Firma",
+  "texto": "Name: ______________        Title: ______________        Date: ______________"
+ }
+]
