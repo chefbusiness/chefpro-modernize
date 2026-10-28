@@ -117,5 +117,5 @@ imageAlt: "Entrepreneur reviewing virtual kitchen business plan with commercial 
 <li><a href="https://aichef.pro/en/blog/ghost-kitchen-technology-stack">Ghost Kitchen Technology Stack</a></li>
 <li><a href="https://aichef.pro/en/blog/dark-kitchen-vs-ghost-kitchen-vs-cloud-kitchen">Dark Kitchen vs Ghost Kitchen vs Cloud Kitchen</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-menu-pricing-strategy">AI Menu Pricing Strategy</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs 2026</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 </ul>

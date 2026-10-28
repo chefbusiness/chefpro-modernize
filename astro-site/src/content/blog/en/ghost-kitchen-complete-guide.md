@@ -412,5 +412,5 @@ imageAlt: "Busy ghost kitchen with multiple cooking stations and delivery order 
 <li><a href="https://aichef.pro/en/blog/ai-cooking-assistant-professional-chefs">AI Cooking Assistant for Professional Chefs</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">AI Food Cost Calculator: Reduce Costs Instantly</a></li>
 <li><a href="https://aichef.pro/en/blog/restaurant-profit-margin-calculator">Restaurant Profit Margin Calculator</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs in 2026</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 </ul>

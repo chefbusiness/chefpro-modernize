@@ -513,5 +513,5 @@ imageAlt: "Modern cloud kitchen facility with multiple cooking stations for diff
 <li><a href="https://aichef.pro/en/blog/ai-menu-pricing-strategy">AI Menu Pricing Strategy</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">AI Food Cost Calculator</a></li>
 <li><a href="https://aichef.pro/en/blog/restaurant-profit-margin-calculator">Restaurant Profit Margin Calculator</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs 2026</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 </ul>

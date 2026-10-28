@@ -359,5 +359,5 @@ imageAlt: "Professional chef using AI tablet assistant in modern commercial kitc
 <li><a href="https://aichef.pro/en/blog/smart-kitchen-technology-commercial">Smart Kitchen Technology for Commercial Kitchens: 2026 Guide</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-menu-engineering-software">AI Menu Engineering Software: The Complete Guide</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">AI Food Cost Calculator: Reduce Costs Instantly</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs in 2026</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 </ul>

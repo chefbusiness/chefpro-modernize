@@ -45,11 +45,11 @@ No hay pilar de food cost en neerlandés: la demanda medida era demasiado fina. 
 
 Ya publicados, entre otros: haccp, alergenios, contaminação cruzada, higiene, controlo de temperaturas, food cost, cortes (mirepoix), mise en place, más dos posts de plataforma. Lo que falta de la medición anterior, en este orden:
 
-| Orden | Keyword nativa | Intención |
-|---|---|---|
-| 1 | ficha técnica de pratos | La ficha que usa el operador (dosis, coste, alérgenos), no un trabajo escolar |
-| 2 | massa mãe | Producción de obrador. La Portaria 254/2003 es el marco portugués. No es una receta de pan casero |
-| 3 | garum | Pieza de autoridad histórica y de uso profesional, no una receta de fin de semana |
+| Orden | Keyword nativa | Intención | Estado |
+|---|---|---|---|
+| 1 | ficha técnica de pratos | La ficha que usa el operador (dosis, coste, alérgenos), no un trabajo escolar | Borrador pendiente de OK (PR #N) |
+| 2 | massa mãe | Producción de obrador. La Portaria 254/2003 es el marco portugués. No es una receta de pan casero | Pendiente |
+| 3 | garum | Pieza de autoridad histórica y de uso profesional, no una receta de fin de semana | Pendiente |
 
 Cocina molecular, cócteles y food truck se midieron con head terms contaminados. No se escriben hasta tener una variante profesional medida. APPCC y «alérgenos» son notas de Brasil en el roadmap, no la lengua de la página: aquí se dice alergénios y HACCP.
 
@@ -62,6 +62,8 @@ La segunda ola no se rellena con posts de ciudad españoles ni con el glosario. 
 ## Inglés
 
 Hay unos 70 posts. La siguiente ola, después de un pase de SERP, son intenciones de operador de Estados Unidos y Reino Unido: los 9 alérgenos mayores de la FDA (sésamo desde 2023) frente a los 14 europeos, food cost percentage, permisos sanitarios. No se traduce el glosario español. El corte de enblog lo hace John y no entra aquí.
+
+`/en/blog/best-ai-tools-for-chefs-2026` se reposiciona a agentes de IA (mismo slug): qué es un agente y cómo lo usa un chef en escandallo, carta, alérgenos, producción y compras. Estado: Borrador pendiente de OK (PR #N). No se toca enblog.
 
 ## Formación y contacto — hechos que no se negocian al localizar
 
