@@ -59,6 +59,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Businessplan: mobiele koffiebar voor evenementen',
+    slug: '/plan-negocio-cafeteria-movil-eventos',
+    description: 'Volledig businessplan voor het starten van een mobiele koffiebar voor bruiloften, zakelijke evenementen en beurzen: businessplan in Word met 10 secties, financieel plan in Excel met 9 bladen, openingschecklist met 80 taken in 6 fasen, kostprijs- en offertecalculator per evenement, modelcontract voor dienstverlening en de Equivalentiegids voor Latijns-Amerika.',
+    features: [
+      'Businessplan in Word met 10 secties',
+      'Financieel plan in Excel met 9 bladen en liquiditeit maand per maand',
+      'Openingschecklist: 80 taken in 6 fasen',
+      'Kostprijs- en offertecalculator, modelcontract en Equivalentiegids voor Latijns-Amerika',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'cafe', 'mobile-catering', 'business-plan'],
+  },
+  {
     name: 'Businessplan: Napolitaanse pizzeria',
     slug: '/plan-negocio-pizzeria',
     description: 'Volledig businessplan voor het openen van een pizzeria met houtoven: financieel plan in Excel over 3 jaar met 9 bladen, businessplan in Word met 10 secties, openingschecklist, deeg- en kostprijscalculator per pizza en de Equivalentiegids voor Latijns-Amerika.',
@@ -134,8 +150,8 @@ const products = [
     ],
     iconName: 'UtensilsCrossed',
     image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
-    badge: '✨ Nieuw',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'management', 'taqueria', 'mexican', 'restaurant'],
   },
   {
@@ -940,7 +956,6 @@ const comingSoon = [
   { iconName: 'Leaf', name: 'Terugkerende taken: poké bowl / gezonde bowl', desc: 'Bereiding van bases en toppings, koelketen, diensten en sluiting voor een bowlrestaurant.', tags: ['templates', 'excel', 'restaurant'], phase: 'Binnenkort' },
   { iconName: 'Sprout', name: 'Terugkerende taken: vegetarisch / plantaardig restaurant', desc: 'Plantaardige basisproductie, allergenen, diensten en sluiting voor een plantaardig restaurant.', tags: ['templates', 'excel', 'restaurant'], phase: 'Binnenkort' },
   { iconName: 'ConciergeBell', name: 'Businessplan: ham-carving service voor evenementen', desc: 'Zet uw ham-carving service op voor bruiloften en beurzen: tarieven, apparatuur en porties per evenement.', tags: ['business-plan', 'catering', 'mobile-catering'], phase: 'Binnenkort' },
-  { iconName: 'Coffee', name: 'Businessplan: mobiele koffiebar voor evenementen', desc: 'Specialty koffie op zakelijke evenementen, bruiloften en beurzen: minimale investering, tarieven en logistiek.', tags: ['business-plan', 'cafe', 'mobile-catering'], phase: 'Binnenkort' },
   { iconName: 'Truck', name: 'Businessplan: mobiele houtovenpizza', desc: 'Een houtoven op een aanhanger voor bruiloften en beurzen: apparatuur, deeg, tarieven en logistiek.', tags: ['business-plan', 'pizzeria', 'mobile-catering'], phase: 'Binnenkort' },
   { iconName: 'Star', name: 'AI Review Analyse Kit', desc: 'Een sjabloon en prompts voor uw agents: exporteer of plak uw reviews, sorteer ze op onderwerp en zie wat steeds terugkomt.', tags: ['excel', 'ai', 'management'], phase: 'Binnenkort' },
   { iconName: 'Users', name: 'Personeelshandboek voor de horeca', desc: 'Onboardinghandboek, huisregels, hygiëne, training per functie en voorbeelddocumenten die u kunt aanpassen aan uw cao.', tags: ['manuals', 'management', 'pdf'], phase: 'Binnenkort' },

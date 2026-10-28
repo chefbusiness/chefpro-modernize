@@ -84,6 +84,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'plan-negocio-panaderia': { accessPath: '/plan-negocio-panaderia-access', label: 'Plan de Negocio Panadería / Obrador' },
   'plan-negocio-heladeria': { accessPath: '/plan-negocio-heladeria-access', label: 'Plan de Negocio Heladería Artesanal' },
   'plan-negocio-finca-eventos-bodas': { accessPath: '/plan-negocio-finca-eventos-bodas-access', label: 'Plan de Negocio Finca de Eventos y Bodas' },
+  'plan-negocio-cafeteria-movil-eventos': { accessPath: '/plan-negocio-cafeteria-movil-eventos-access', label: 'Plan de Negocio Cafetería Móvil para Eventos' },
   'plan-negocio-pizzeria': { accessPath: '/plan-negocio-pizzeria-access', label: 'Plan de Negocio Pizzería Napolitana' },
   'plan-negocio-food-truck': { accessPath: '/plan-negocio-food-truck-access', label: 'Plan de Negocio Food Truck' },
   'plan-negocio-cocteleria-eventos': { accessPath: '/plan-negocio-cocteleria-eventos-access', label: 'Plan de Negocio Coctelería de Eventos' },

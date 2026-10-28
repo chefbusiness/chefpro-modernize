@@ -62,6 +62,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Plan d\'affaires : Bar à café mobile pour événements',
+    slug: '/plan-negocio-cafeteria-movil-eventos',
+    description: 'Business plan complet pour lancer un bar à café mobile pour mariages, événements d\'entreprise et foires : plan en Word de 10 sections, plan financier Excel de 9 feuilles, checklist d\'ouverture de 80 tâches en 6 phases, calculateur de coût de revient et de devis par événement, modèle de contrat de prestation et guide d\'équivalences pour l\'Amérique latine.',
+    features: [
+      'Business plan en Word de 10 sections',
+      'Plan financier Excel de 9 feuilles avec trésorerie mois par mois',
+      'Checklist d\'ouverture : 80 tâches en 6 phases',
+      'Calculateur de coût et de devis, modèle de contrat et guide d\'équivalences pour l\'Amérique latine',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'cafe', 'mobile-catering', 'business-plan'],
+  },
+  {
     name: 'Plan d\'affaires : Pizzeria napolitaine',
     slug: '/plan-negocio-pizzeria',
     description: 'Business plan complet pour ouvrir une pizzeria avec un four à bois : plan financier Excel sur 3 ans de 9 feuilles, plan en Word de 10 sections, checklist d\'ouverture, calculateur de pâte et de coût de revient par pizza et guide d\'équivalences pour l\'Amérique latine.',
@@ -137,8 +153,8 @@ const products = [
     ],
     iconName: 'UtensilsCrossed',
     image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
-    badge: '✨ Nouveau',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'management', 'taqueria', 'mexican', 'restaurant'],
   },
   {
@@ -943,7 +959,6 @@ const comingSoon = [
   { iconName: 'Leaf', name: 'Tâches récurrentes : Poke bowl / Bowl healthy', desc: 'Préparation des bases et des toppings, chaîne du froid, services et fermeture pour un restaurant de bowls.', tags: ['templates', 'excel', 'restaurant'], phase: 'Bientôt disponible' },
   { iconName: 'Sprout', name: 'Tâches récurrentes : Restaurant végétarien / végétal', desc: 'Production des bases végétales, allergènes, services et fermeture pour un restaurant végétal.', tags: ['templates', 'excel', 'restaurant'], phase: 'Bientôt disponible' },
   { iconName: 'ConciergeBell', name: 'Plan d\'affaires : Service de découpe de jambon pour événements', desc: 'Mettez en place votre service de découpe de jambon pour mariages et foires : tarifs, équipement et portions par événement.', tags: ['business-plan', 'catering', 'mobile-catering'], phase: 'Bientôt disponible' },
-  { iconName: 'Coffee', name: 'Plan d\'affaires : Bar à café mobile pour événements', desc: 'Café de spécialité pour événements d\'entreprise, mariages et foires : investissement minimal, tarifs et logistique.', tags: ['business-plan', 'cafe', 'mobile-catering'], phase: 'Bientôt disponible' },
   { iconName: 'Truck', name: 'Plan d\'affaires : Pizzeria mobile au feu de bois', desc: 'Un four à bois sur remorque pour mariages et foires : équipement, pâtes, tarifs et logistique.', tags: ['business-plan', 'pizzeria', 'mobile-catering'], phase: 'Bientôt disponible' },
   { iconName: 'Star', name: 'Kit d\'analyse des avis par IA', desc: 'Un modèle et des prompts pour vos agents : exportez ou collez vos avis, triez-les par thème et voyez ce qui revient le plus souvent.', tags: ['excel', 'ai', 'management'], phase: 'Bientôt disponible' },
   { iconName: 'Users', name: 'Manuel de l\'employé en hôtellerie-restauration', desc: 'Manuel d\'intégration, règles internes, hygiène, formation par poste et documents types à adapter à votre convention collective.', tags: ['manuals', 'management', 'pdf'], phase: 'Bientôt disponible' },

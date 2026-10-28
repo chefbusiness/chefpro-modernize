@@ -301,6 +301,7 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-bar-restaurante', label: 'Plan Bar-Restaurante' },
     { href: '/plan-negocio-food-truck', label: 'Plan Food Truck' },
     { href: '/plan-negocio-finca-eventos-bodas', label: 'Plan Finca de Eventos y Bodas' },
+    { href: '/plan-negocio-cafeteria-movil-eventos', label: 'Plan Cafetería Móvil para Eventos' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',

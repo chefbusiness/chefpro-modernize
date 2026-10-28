@@ -62,6 +62,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Business Plan: Bar Mobile da Caffetteria per Eventi',
+    slug: '/plan-negocio-cafeteria-movil-eventos',
+    description: 'Business plan completo per avviare un bar mobile da caffetteria per matrimoni, eventi aziendali e fiere: piano in Word di 10 sezioni, piano finanziario in Excel di 9 fogli, checklist di apertura di 80 attività in 6 fasi, calcolatore di costi e preventivi per evento, modello di contratto di servizio e Guida alle Equivalenze per l\'America Latina.',
+    features: [
+      'Business plan in Word di 10 sezioni',
+      'Piano finanziario Excel di 9 fogli con liquidità mese per mese',
+      'Checklist di apertura: 80 attività in 6 fasi',
+      'Calcolatore di costi e preventivi, modello di contratto e Guida alle Equivalenze per l\'America Latina',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg',
+    badge: '✨ Novità',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'cafe', 'mobile-catering', 'business-plan'],
+  },
+  {
     name: 'Business Plan: Pizzeria Napoletana',
     slug: '/plan-negocio-pizzeria',
     description: 'Business plan completo per aprire una pizzeria con forno a legna: piano finanziario in Excel a 3 anni di 9 fogli, piano in Word di 10 sezioni, checklist di apertura, calcolatore di impasto e costo per pizza e Guida alle Equivalenze per l\'America Latina.',
@@ -137,8 +153,8 @@ const products = [
     ],
     iconName: 'UtensilsCrossed',
     image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
-    badge: '✨ Novità',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Novità',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'management', 'taqueria', 'mexican', 'restaurant'],
   },
   {
@@ -943,7 +959,6 @@ const comingSoon = [
   { iconName: 'Leaf', name: 'Attività Ricorrenti: Poke Bowl / Healthy Bowl', desc: 'Preparazione di basi e topping, catena del freddo, turni e chiusura per un bowl restaurant.', tags: ['templates', 'excel', 'restaurant'], phase: 'Prossimamente' },
   { iconName: 'Sprout', name: 'Attività Ricorrenti: Ristorante Vegetariano / Plant-Based', desc: 'Produzione di basi plant-based, allergeni, turni e chiusura per un ristorante vegetale.', tags: ['templates', 'excel', 'restaurant'], phase: 'Prossimamente' },
   { iconName: 'ConciergeBell', name: 'Business Plan: Servizio di Taglio del Prosciutto per Eventi', desc: 'Organizza il tuo servizio di taglio del prosciutto per matrimoni e fiere: tariffe, attrezzatura e porzioni per evento.', tags: ['business-plan', 'catering', 'mobile-catering'], phase: 'Prossimamente' },
-  { iconName: 'Coffee', name: 'Business Plan: Bar Mobile da Caffetteria per Eventi', desc: 'Specialty coffee per eventi aziendali, matrimoni e fiere: investimento minimo, tariffe e logistica.', tags: ['business-plan', 'cafe', 'mobile-catering'], phase: 'Prossimamente' },
   { iconName: 'Truck', name: 'Business Plan: Pizza al Forno a Legna su Ruote', desc: 'Un forno a legna su rimorchio per matrimoni e fiere: attrezzatura, impasti, tariffe e logistica.', tags: ['business-plan', 'pizzeria', 'mobile-catering'], phase: 'Prossimamente' },
   { iconName: 'Star', name: 'Kit di Analisi Recensioni con IA', desc: 'Un template e prompt per i tuoi agenti: esporta o incolla le tue recensioni, classificale per argomento e scopri cosa si ripete.', tags: ['excel', 'ai', 'management'], phase: 'Prossimamente' },
   { iconName: 'Users', name: 'Manuale del Personale per la Ristorazione e l\'Ospitalità', desc: 'Manuale di onboarding, regolamento interno, igiene, formazione per ruolo e documenti tipo adattabili al tuo contratto collettivo.', tags: ['manuals', 'management', 'pdf'], phase: 'Prossimamente' },

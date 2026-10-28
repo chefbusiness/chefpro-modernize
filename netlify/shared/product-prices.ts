@@ -72,6 +72,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'plan-chef-privado-showcooking-eventos': { eur: 45 },
   'plan-negocio-bar-restaurante': { eur: 35 },
   'plan-negocio-cafeteria': { eur: 29 },
+  'plan-negocio-cafeteria-movil-eventos': { eur: 45 },
   'plan-negocio-cocteleria-eventos': { eur: 55 },
   'plan-negocio-finca-eventos-bodas': { eur: 45 },
   'plan-negocio-food-truck': { eur: 29 },
