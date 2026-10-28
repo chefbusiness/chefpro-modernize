@@ -1304,6 +1304,14 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'modelos-contrato': '/dl/plan-negocio-finca-eventos-bodas/modelo-contrato-reserva-finca-eventos.docx',
     'guia-equivalencias': '/dl/plan-negocio-finca-eventos-bodas/guia-equivalencias-plan-negocio-finca-eventos-bodas.docx',
   },
+  'plan-negocio-cafeteria-movil-eventos': {
+    'plan-financiero': '/dl/plan-negocio-cafeteria-movil-eventos/plan-financiero-cafeteria-movil-eventos.xlsx',
+    'plan-negocio': '/dl/plan-negocio-cafeteria-movil-eventos/plan-de-negocio-cafeteria-movil-eventos.docx',
+    'checklist-apertura': '/dl/plan-negocio-cafeteria-movil-eventos/checklist-apertura-cafeteria-movil-eventos.xlsx',
+    'calculadora-pricing': '/dl/plan-negocio-cafeteria-movil-eventos/calculadora-escandallo-presupuesto-cafe-eventos.xlsx',
+    'modelos-contrato': '/dl/plan-negocio-cafeteria-movil-eventos/modelo-contrato-servicio-cafe-eventos.docx',
+    'guia-equivalencias': '/dl/plan-negocio-cafeteria-movil-eventos/guia-equivalencias-plan-negocio-cafeteria-movil-eventos.docx',
+  },
   'plan-negocio-pizzeria': {
     'plan-financiero': '/dl/plan-negocio-pizzeria/plan-financiero-pizzeria.xlsx',
     'plan-negocio': '/dl/plan-negocio-pizzeria/plan-de-negocio-pizzeria.docx',

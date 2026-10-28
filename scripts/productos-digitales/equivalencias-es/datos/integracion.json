@@ -214,5 +214,9 @@
  "plan-negocio-pizzeria": {
   "producto": "Plan de Negocio Pizzería Napolitana",
   "ejemplos": "la «mozzarella» es «muzzarella» en Argentina; el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina; el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú, y la «pizza napolitana» es en Argentina otra pizza (con rodajas de tomate y ajo)"
+ },
+ "plan-negocio-cafeteria-movil-eventos": {
+  "producto": "Plan de Negocio Cafetería Móvil para Eventos",
+  "ejemplos": "la «bollería» son «facturas» en Argentina y «pan dulce» en México; el «camarero» que contratas como barista es «mesero» en México y Colombia y «mozo» en Argentina, y el «fregadero» de tu base es la «tarja» en México y la «pileta» en Argentina"
  }
 }
