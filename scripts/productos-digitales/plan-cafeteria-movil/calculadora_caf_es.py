@@ -11,7 +11,7 @@ Calculadora, Ejemplos, Instrucciones) con el bloque Escandallo de `plan-pizzeria
     l de leche, vasos o tazas, potencia, toma eléctrica o generador y agua;
   · precio por invitado sin IVA (redondeo 0,50 € hacia arriba) y con IVA del 10 %, equivalente por hora y por bebida;
     desplazamiento en línea aparte SIN margen; cobro (señal + resto); cancelación por tramos «de X a menos de Y» sin huecos;
-  · Feria: venta directa (tazas × ticket − canon − coste) y tazas para cubrir los costes;
+  · Feria: venta directa (tazas × precio medio − canon − coste) y tazas para cubrir los costes;
   · aviso de electricidad (SPEC D11: un enchufe de 16 A da ≈ 3,7 kW);
   · 3 ejemplos (boda, congreso con pausas, jornada de feria) por las mismas fórmulas; autotest pycel ± 0,01 €.
 Hojas `Escandallo` · `Calculadora` · `Ejemplos` · `Instrucciones` (firma `calc-beta` de `motor.detectar`). A4, protegida sin
@@ -156,7 +156,7 @@ E_M0 = E_R + 1 + len(RES) + 1
 MZ = [('suma', 'Suma de la mezcla de ventas', PCT), ('chk', 'Comprobación de la mezcla', 'General'),
       ('m_prod', 'Coste medio por bebida sin envase (€)', EUR3), ('m_env', 'Coste medio de envase y mesa por bebida (€)', EUR3),
       ('m_tot', 'Coste medio por bebida con envase (€)', EUR3), ('m_cafe', 'Café medio por bebida (g)', DEC),
-      ('m_leche', 'Leche media por bebida (ml)', DEC), ('m_ticket', 'Ticket medio sin IVA de tu carta (€)', EUR),
+      ('m_leche', 'Leche media por bebida (ml)', DEC), ('m_ticket', 'Precio medio por taza sin IVA de tu carta (€)', EUR),
       ('m_fc', 'Food cost de la mezcla (con envase)', '0.0%')]
 MR = OrderedDict((k, E_M0 + 1 + i) for i, (k, *_r) in enumerate(MZ))
 E_FIN = E_M0 + 1 + len(MZ) + 1
@@ -208,7 +208,7 @@ ENTRADAS = [
     ('horario', 'Horario', '@', 'Noche (después de la cena)',
      'Mañana +25 %, boda de noche −10 % (research §1). Ajusta las bebidas por invitado. En Feria no se usa.'),
     ('serv', 'Servicio en', '@', 'Loza (tazas reutilizables)',
-     'Loza: sin coste de vaso ni tapa. Vaso de un solo uso: suma el envase y, en el ticket, el precio aparte del vaso de plástico '
+     'Loza: sin coste de vaso ni tapa. Vaso de un solo uso: suma el envase y, en el tique, el precio aparte del vaso de plástico '
      '(Ley 7/2022, art. 55). El compostable con forro de PE o PLA también es plástico.'),
     ('hours', 'Horas de servicio con la barra abierta', DEC, 3, 'Se usan para el ritmo de bebidas por hora y para el personal.'),
     ('h_extra', 'Horas por persona fuera del servicio (carga, viaje, montaje y limpieza)', DEC, 5,
@@ -232,8 +232,8 @@ ENTRADAS = [
     ('per_km', 'Tarifa por kilómetro de desplazamiento', EUR, 0.45,
      'Referencia de escaparate de 2026: 0,45 €/km (La Galería del Café, en Bodas.net). Pon la tuya.'),
     ('iva', 'IVA del servicio', PCT, 0.10, 'Ley 37/1992, art. 91: bebida para consumir en el acto, 10 %. Lo que facturas aparte con precio propio, 21 %.'),
-    ('tkt', 'Feria: ticket medio por taza que cobrarás (sin IVA)', EUR, 3.00,
-     'Research §4: ≈ 3,00 € sin IVA por taza. Mira el ticket medio de tu carta en la hoja «%s». Solo cuenta si el cliente es Feria.' % HE),
+    ('tkt', 'Feria: precio medio por taza que cobrarás (sin IVA)', EUR, 3.00,
+     'Research §4: ≈ 3,00 € sin IVA por taza. Mira el precio medio por taza de tu carta en la hoja «%s». Solo cuenta si el cliente es Feria.' % HE),
     ('canon_fijo', 'Feria: canon fijo del organizador (€)', EUR, 0.0, 'Cuota fija por emplazamiento, si el organizador la cobra. Solo cuenta en Feria.'),
     ('dias', 'Días que faltan para el evento si el cliente cancela', ENT, 45,
      'Elige los días y la hoja te dice el tramo y lo que retienes.'),
@@ -292,7 +292,7 @@ SALIDAS = [
     ('canon', 'Canon del organizador (cliente elegido)', PCT, '{t_canon}', 'De la tabla por cliente del final. Solo Feria.'),
     ('price', 'PRECIO POR INVITADO SIN IVA', EUR, 'ROUNDUP({c_total}/(1-{margen}-{canon})/{guests}*2,0)/2',
      'Coste ÷ (1 − margen − canon) ÷ invitados, redondeado a los 0,50 € de arriba. Es el precio de las empresas («+ IVA»). '
-     'En Feria es el ticket mínimo por taza que cubre coste, canon y margen: compáralo con el tuyo.'),
+     'En Feria es el precio mínimo por taza que cubre coste, canon y margen: compáralo con el tuyo.'),
     ('price_iva', 'PRECIO POR INVITADO CON IVA', EUR, '{price}*(1+{iva})',
      'Es el que ve un particular: en una oferta a consumidores el precio va con impuestos incluidos.'),
     ('subtotal', 'Subtotal de bebidas sin IVA', EUR, '{price}*{guests}', 'Precio por invitado × invitados.'),
@@ -323,7 +323,7 @@ SALIDAS = [
     ('can4', 'Importe retenido: tramo 4 (el más cercano o no presentación)', EUR, '{total}*{t_cn4}', ''),
     ('h_fer', 'FERIA: PREVISIÓN DE LA JORNADA (solo si el cliente es Feria)', None, None, ''),
     ('c_var', 'Coste variable por taza (bebida + dulce)', EUR, '({c_beb}+{c_dulces})/{guests}', ''),
-    ('f_venta', 'Venta prevista (tazas × ticket, sin IVA)', EUR, 'IF({is_feria},{guests}*{tkt},0)', ''),
+    ('f_venta', 'Venta prevista (tazas × precio medio, sin IVA)', EUR, 'IF({is_feria},{guests}*{tkt},0)', ''),
     ('f_canon', 'Canon del organizador (% de la venta + cuota fija)', EUR, 'IF({is_feria},{f_venta}*{canon}+{canon_fijo},0)', ''),
     ('f_result', 'Resultado de la jornada (venta − canon − coste)', EUR, 'IF({is_feria},{f_venta}-{f_canon}-{c_total},0)',
      'Antes de impuestos y de los costes fijos del negocio (vehículo, seguros, base).'),
@@ -376,11 +376,11 @@ EJ_NOTAS = OrderedDict([
      'del caso), loza y toma dedicada. El precio se presupuesta «+ IVA»; cobro del 30 % al firmar y el 70 % a 30 días de la factura. '
      'Con 20 días de margen el tramo es el segundo y retienes el 30 %.'),
     ('Jornada de feria con venta directa', 'Feria: 250 tazas en una jornada de 10 horas, vaso de un solo uso (con su precio aparte en '
-     'el ticket), generador y canon del 15 % del organizador. El «precio por invitado» es el ticket mínimo por taza; con el ticket de '
+     'el tique), generador y canon del 15 % del organizador. El «precio por invitado» es el precio mínimo por taza; con un precio medio de '
      '3,00 € la jornada deja unos {res} € antes de costes fijos, y por debajo de {eq} tazas pierdes.'),
 ])
 
-# Escandallo: precio de carta por bebida y su ticket (Calculadora lo lee como `tkt`)
+# Escandallo: precio de carta por bebida y su precio medio (Calculadora lo lee como `tkt`)
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -703,7 +703,7 @@ def hoja_escandallo(wb):
     f = E_FIN
     _f(ws, 'A%d' % f, 'El coste con envase es el de la bebida servida en vaso de un solo uso; en loza solo cuenta el coste de producto. '
                       'Los vasos de papel con forro de PE o PLA ("compostables") son plástico a efectos de la Ley 7/2022: se cobran '
-                      'aparte en el ticket. El food cost del plan financiero es otra cosa: la media de la mezcla con la merma.',
+                      'aparte en el tique. El food cost del plan financiero es otra cosa: la media de la mezcla con la merma.',
        i=True, wrap=True)
     ws.merge_cells('A%d:%s%d' % (f, OCOL, f))
     ws.row_dimensions[f].height = 34
@@ -970,7 +970,7 @@ INSTRUCCIONES = [
     ('IVA, VASOS Y COBROS', True),
     ('La bebida para consumir en el acto o para llevar va al 10 % de IVA (Ley 37/1992, art. 91). Los extras con precio propio (personalización '
      'de máquina o stand, vasos con logo, talleres) van al 21 %. En loza no hay vaso de plástico; el vaso de papel con forro de PE o PLA '
-     '(«compostable») es plástico a efectos de la Ley 7/2022 (arts. 2 y 55) y se cobra aparte en el ticket. Pajitas y agitadores de plástico, '
+     '(«compostable») es plástico a efectos de la Ley 7/2022 (arts. 2 y 55) y se cobra aparte en el tique. Pajitas y agitadores de plástico, '
      'prohibidos. En ferias y festivales, el organizador puede imponer su sistema de vaso reutilizable (RD 1055/2022, art. 7).', False),
     ('La propina voluntaria es del equipo: no entra en el precio, en la base imponible ni en el total. Los pagos en efectivo con particulares '
      'solo valen por debajo de 1.000 €: la ley prohíbe pagar en efectivo 1.000 € o más (art. 7 de la Ley 7/2012).', False),
@@ -984,8 +984,8 @@ INSTRUCCIONES = [
      'por eso la política tiene que estar firmada.', False),
     ('FERIA', True),
     ('La venta directa en mercados y ferias depende de la autorización municipal y del canon del organizador. La hoja calcula la venta '
-     '(tazas × ticket), el canon (porcentaje más cuota fija), el resultado de la jornada y las tazas que necesitas para cubrir los costes. '
-     'El «precio por invitado» de esa columna es el ticket mínimo por taza que cubre coste, canon y margen.', False),
+     '(tazas × precio medio), el canon (porcentaje más cuota fija), el resultado de la jornada y las tazas que necesitas para cubrir los costes. '
+     'El «precio por invitado» de esa columna es el precio mínimo por taza que cubre coste, canon y margen.', False),
     ('ESTIMACIONES DEL KIT', True),
     ('Los valores por defecto y los tres ejemplos son estimaciones del kit para ilustrar el cálculo, no precios de mercado. El consumo de '
      'bebidas por invitado, la capacidad por barista y el agua usan ratios de EE. UU. y no tienen fuente española: sustitúyelos por tus '
