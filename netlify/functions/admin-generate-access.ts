@@ -43,6 +43,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'pizza-shop-business-plan': { accessPath: '/en/digital-products/pizza-shop-business-plan/access', label: 'Pizza Shop Business Plan Kit', lang: 'en' },
   'ice-cream-shop-business-plan': { accessPath: '/en/digital-products/ice-cream-shop-business-plan/access', label: 'Ice Cream Shop Business Plan Kit', lang: 'en' },
   'wedding-venue-business-plan': { accessPath: '/en/digital-products/wedding-venue-business-plan/access', label: 'Wedding Venue Business Plan Kit', lang: 'en' },
+  'coffee-cart-business-plan': { accessPath: '/en/digital-products/coffee-cart-business-plan/access', label: 'Coffee Cart Business Plan Kit', lang: 'en' },
   'food-cost-menu-engineering-guide': { accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access', label: 'Food Cost + Menu Engineering Guide', lang: 'en' },
   'how-to-open-a-pastry-shop': { accessPath: '/en/digital-products/how-to-open-a-pastry-shop/access', label: 'How to Open a Pastry Shop', lang: 'en' },
   'restaurant-checklist-templates': { accessPath: '/en/digital-products/restaurant-checklist-templates/access', label: 'Restaurant Checklists Kit Pro', lang: 'en' },

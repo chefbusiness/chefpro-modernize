@@ -1398,6 +1398,27 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-28): twin of plan-negocio-cafeteria-movil-eventos, independent product.
+  'coffee-cart-business-plan': {
+    id: 'coffee-cart-business-plan',
+    name: 'Coffee Cart Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/coffee-cart-business-plan/access',
+    emailSubject: 'Your access to Coffee Cart Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Coffee Cart Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator, the coffee catering service agreement template and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Coffee Cart Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator, the coffee catering service agreement template and the 68-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/coffee-cart-business-plan/coffee-cart-business-plan.docx',
+      'plan-financiero': '/dl/coffee-cart-business-plan/coffee-cart-financial-projections.xlsx',
+      'checklist-apertura': '/dl/coffee-cart-business-plan/coffee-cart-startup-checklist.xlsx',
+      'calculadora-pricing': '/dl/coffee-cart-business-plan/coffee-cart-pricing-calculator.xlsx',
+      'modelos-contrato': '/dl/coffee-cart-business-plan/coffee-catering-service-agreement-template.docx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
   'food-cost-menu-engineering-guide': {
     id: 'food-cost-menu-engineering-guide',

@@ -98,6 +98,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Free templates give you headings to fill in. This kit gives you a plan already written for a food truck, an Excel model with more than 700 linked formulas (change one assumption and the P&L, the cash flow and the financing recalculate), payroll with employer taxes and a minimum wage alert, a calculated break-even and a 68-task startup checklist. The figures in the Word plan are the ones in the Excel model, so the two documents tell the same story.",
   },
   {
+    q: 'Is there a business plan for a coffee cart or mobile espresso bar?',
+    a: "Yes, if the coffee business works events instead of a daily street route. Our Coffee Cart Business Plan Kit is a coffee catering plan for an espresso cart, a trailer or a truck that books weddings, corporate events, private parties and markets, with a pricing calculator from cost per drink to a quote per guest. If you plan to park a food truck on a daily route and sell to walk-up customers, this kit is the one to use.",
+  },
+  {
     q: "Does it work in the UK, Canada or Australia?",
     a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT on hot food (most cold takeaway food is zero-rated), Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on equipment, and your own minimum wage and employer costs. The UK notes cover council registration 28 days before trading and a street trading licence or consent from each council where you sell. In Canada and Australia, mobile vending permits also come from each city or council, and Australia asks for a certified Food Safety Supervisor. The CDL note is US-only: check licence classes locally. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
@@ -332,6 +336,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit' },
     { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
     { href: '/en/digital-products/wedding-venue-business-plan', label: 'Wedding Venue Business Plan Kit' },
+    { href: '/en/digital-products/coffee-cart-business-plan', label: 'Coffee Cart Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     // Post pilar del blog EN (18-oct-2026): captación para «how to start a food truck business».
     { href: '/en/blog/how-to-start-a-food-truck-business', label: 'How to Start a Food Truck Business' },

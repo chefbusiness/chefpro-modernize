@@ -97,6 +97,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "It's built for a dry hire mobile bar with no storefront and no alcohol inventory. If you're opening a bar with its own premises and liquor license, our Bar Business Plan Kit fits better; if you'll serve food at events, start from the Catering Business Plan Kit; and if you'll sell food and drinks to walk-up customers, the Food Truck Business Plan Kit. The Excel workbook takes any numbers you type, but the written plan describes a mobile bartending company, so you'd rewrite more of the text.",
   },
   {
+    q: 'Is there a business plan for a coffee cart or mobile espresso bar?',
+    a: "Yes. If your mobile bar serves coffee instead of cocktails, our Coffee Cart Business Plan Kit is written for it: an espresso cart and a portable espresso bar, baristas on W-2 payroll, a commissary, a pricing calculator from cost per drink to a quote per guest and a service agreement template. It has no alcohol: for an espresso martini bar the usual route is to partner with a licensed mobile bar, which is what this kit is for.",
+  },
+  {
     q: 'Is there a business plan for a wedding venue?',
     a: "Yes, but it is a different business. A mobile bar goes to the event; a wedding venue owns the space and earns a venue rental fee plus a commission from its exclusive caterer. Our Wedding Venue Business Plan Kit covers the venue: a 10-section Word plan, Excel projections with a break-even in events, a pricing and quote calculator by season and day, venue rental agreement templates and an 84-task startup checklist. If you run the bar that works those events, this kit is the one for you."
   },
@@ -337,6 +341,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit' },
     { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
     { href: '/en/digital-products/wedding-venue-business-plan', label: 'Wedding Venue Business Plan Kit' },
+    { href: '/en/digital-products/coffee-cart-business-plan', label: 'Coffee Cart Business Plan Kit' },
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
     { href: '/en/digital-products/restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro' },
