@@ -348,6 +348,6 @@ imageAlt: "Modern commercial kitchen with digital screens and tablets at multipl
 <li><a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">AI Food Cost Calculator: Reduce Restaurant Food Costs by 20%</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-menu-engineering-software">AI Menu Engineering Software: Optimize Your Menu for Profit</a></li>
 <li><a href="https://aichef.pro/en/blog/restaurant-menu-pricing-strategy-ai">Restaurant Menu Pricing Strategy with AI</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs in 2026: Complete Comparison</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 <li><a href="https://aichef.pro/en/blog/break-even-analysis-restaurants-ai">Break-Even Analysis for Restaurants with AI</a></li>
 </ul>

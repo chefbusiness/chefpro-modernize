@@ -356,6 +356,54 @@ function score(postTopics, product) {
   return n;
 }
 
+/**
+ * Huecos que la rotación rellena con el producto menos usado, aunque no
+ * hable de la pieza. Solo se sustituyen los banners que el plan AÑADE
+ * (los que ya están en el Markdown se quedan) y solo en la página nombrada.
+ *
+ * best-ai-tools-for-chefs-2026 ya lleva Food Cost Kit Pro y HACCP. El
+ * tercer hueco caía en Ice Cream Shop Checklists. La guía de menú es el
+ * otro trabajo del artículo (la carta), y no es ninguno de esos dos kits.
+ */
+const PAGE_ADD_OVERRIDES = {
+  'en/best-ai-tools-for-chefs-2026': ['food-cost-menu-engineering-guide'],
+};
+
+function applyPageOverrides(posts, products, counts, chosen) {
+  const byId = new Map(products.map((p) => [p.id, p]));
+  for (const post of posts) {
+    const forced = PAGE_ADD_OVERRIDES[post.key];
+    if (!forced?.length) continue;
+    const prev = chosen.get(post.key) || [];
+    for (const product of prev) {
+      if (counts[product.id] != null) counts[product.id] -= 1;
+    }
+    const used = new Set(post.existingIds);
+    const next = [];
+    for (const id of forced) {
+      const product = byId.get(id);
+      if (!product) {
+        throw new Error(`Banner override: «${id}» no está en el catálogo de ${post.key}`);
+      }
+      if (used.has(id)) continue;
+      next.push(product);
+      used.add(id);
+      counts[id] += 1;
+    }
+    for (const product of prev) {
+      if (next.length >= prev.length) break;
+      if (used.has(product.id)) continue;
+      next.push(product);
+      used.add(product.id);
+      counts[product.id] += 1;
+    }
+    if (!next.length) {
+      throw new Error(`Banner override: ${post.key} se queda sin banner nuevo`);
+    }
+    chosen.set(post.key, next);
+  }
+}
+
 function assignCatalogue(posts, products) {
   const counts = Object.fromEntries(products.map((p) => [p.id, 0]));
   for (const post of posts) {
@@ -422,6 +470,7 @@ function assignCatalogue(posts, products) {
     }
   }
 
+  applyPageOverrides(posts, products, counts, chosen);
   return { counts, chosen };
 }
 

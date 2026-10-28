@@ -336,5 +336,5 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <li><a href="https://aichef.pro/en/blog/restaurant-menu-pricing-strategy-ai">Restaurant Menu Pricing Strategy with AI</a></li>
 <li><a href="https://aichef.pro/en/blog/restaurant-profit-margin-calculator">Restaurant Profit Margin Calculator: Maximize Your ROI with AI</a></li>
 <li><a href="https://aichef.pro/en/blog/break-even-analysis-restaurants-ai">Break-Even Analysis for Restaurants with AI</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs in 2026: Complete Comparison</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 </ul>

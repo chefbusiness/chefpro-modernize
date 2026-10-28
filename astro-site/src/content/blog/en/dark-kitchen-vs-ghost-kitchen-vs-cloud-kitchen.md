@@ -291,5 +291,5 @@ faq:
 <li><a href="https://aichef.pro/en/blog/smart-kitchen-technology-commercial">Smart Kitchen Technology for Commercial Kitchens</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-menu-pricing-strategy">AI Menu Pricing Strategy</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-cooking-assistant-professional-chefs">AI Cooking Assistant for Professional Chefs</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs 2026</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 </ul>

@@ -273,7 +273,7 @@ faq:
 <li><a href="https://aichef.pro/en/blog/restaurant-profit-margin-calculator">Restaurant Profit Margin Calculator: Know Your Numbers</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">AI Food Cost Calculator: Reduce Costs Instantly</a></li>
 <li><a href="https://aichef.pro/en/blog/break-even-analysis-restaurants-ai">Break-Even Analysis for Restaurants with AI</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">Best AI Tools for Chefs in 2026</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 <li><a href="https://aichef.pro/en/blog/ai-recipe-scaling-guide">AI Recipe Scaling: Scale Any Recipe Perfectly</a></li>
 </ul>
 <div style="background:#f8f6f0;border-left:4px solid #f0c040;padding:24px;margin:32px 0;">

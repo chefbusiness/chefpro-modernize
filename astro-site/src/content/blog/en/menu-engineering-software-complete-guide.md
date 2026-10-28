@@ -257,7 +257,7 @@ faq:
 <li><a href="https://aichef.pro/en/blog/restaurant-menu-pricing-strategy-ai">Restaurant Menu Pricing Strategy: AI-Driven Frameworks</a></li>
 <li><a href="https://aichef.pro/en/blog/restaurant-profit-margins-explained-benchmarks">Restaurant Profit Margins Explained: Benchmarks by Type, Size, and Location</a></li>
 <li><a href="https://aichef.pro/en/blog/recipe-cost-calculator-pricing-guide">Recipe Cost Calculator: How to Price Every Dish for Maximum Profit</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">17 Best AI Tools for Chefs in 2026: Paid, Tested</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">AI agents for chefs: how to use AI in a working kitchen</a></li>
 </ul>
 <div style="background:#f8f6f0;border-left:4px solid #f0c040;padding:24px;margin:32px 0;">
 <p style="font-size:18px;font-weight:700;margin:0 0 8px 0;color:#1a1a2e;">Related Local Guides</p>
