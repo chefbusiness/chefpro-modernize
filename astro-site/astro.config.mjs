@@ -1,10 +1,15 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import { remarkProductBanners } from './src/lib/product-banners.mjs';
+import {
+  applyDatePlaceholdersToHtml,
+  findUnresolvedSeoPlaceholders,
+} from './src/lib/date-placeholders.mjs';
 
 // Fase 6 — sitemap nativo con paridad EXACTA vs el sitemap.xml de la SPA:
 // lastmod por URL (snapshot de prod vía scripts/astro-migration/fase6-lastmod-map.py)
@@ -34,6 +39,43 @@ const SITEMAP_EXCLUDE = new Set(
 // posteriores se añaden páginas nuevas, actualizar esta constante o el mapa.
 const NEW_URLS_LASTMOD = '2026-07-19';
 
+function walkHtml(dir, acc = []) {
+  for (const name of readdirSync(dir)) {
+    const full = join(dir, name);
+    if (statSync(full).isDirectory()) walkHtml(full, acc);
+    else if (name.endsWith('.html')) acc.push(full);
+  }
+  return acc;
+}
+
+// Pase final del build: {year} y {month} en title, meta description, og:title,
+// twitter:title, h1 y headline. Una sola fecha para todo el dist. Si el
+// literal sigue en alguno de esos campos, el build falla.
+function datePlaceholdersIntegration() {
+  return {
+    name: 'date-placeholders',
+    hooks: {
+      'astro:build:done': ({ dir }) => {
+        const root = fileURLToPath(dir);
+        const now = new Date();
+        const pending = [];
+        for (const file of walkHtml(root)) {
+          const html = readFileSync(file, 'utf8');
+          const next = applyDatePlaceholdersToHtml(html, now);
+          if (next !== html) writeFileSync(file, next);
+          const left = findUnresolvedSeoPlaceholders(next);
+          if (left.length) pending.push(`${file}: ${left.join(', ')}`);
+        }
+        if (pending.length) {
+          throw new Error(
+            `Placeholders {year}/{month} sin resolver en el HTML de build:\n${pending.join('\n')}`,
+          );
+        }
+      },
+    },
+  };
+}
+
 // PLAN_MAESTRO_MIGRACION_ASTRO_2026.md — D6: paridad de URLs 1:1 con la SPA actual.
 // Esquema de rutas idéntico: es sin prefijo, resto de idiomas con prefijo.
 export default defineConfig({
@@ -49,6 +91,7 @@ export default defineConfig({
     remarkPlugins: [remarkProductBanners],
   },
   integrations: [
+    datePlaceholdersIntegration(),
     react(),
     tailwind({ applyBaseStyles: false }),
     sitemap({

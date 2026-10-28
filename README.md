@@ -71,3 +71,9 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Fechas evergreen (`{year}` y `{month}`)
+
+El sitio público se construye con Astro (`astro-site/`). En title, meta description, H1, `og:title`, `twitter:title` y el `headline` de JSON-LD, el contenido evergreen usa `{year}` y `{month}`. El build los sustituye con la fecha de Europe/Madrid; el mes va en el idioma de la página. No se reescriben años que son un dato (una norma, una fecha, un precio, un hito).
+
+Convención completa: `AGENTS.md`. Tests: `cd astro-site && npm test`. Auditoría (no cambia ficheros): `node scripts/astro-migration/auditar-anos-fijos.mjs`.
