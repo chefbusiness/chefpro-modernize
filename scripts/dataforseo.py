@@ -89,11 +89,14 @@ def volumen(kws, loc, lang):
     tarea = post('keywords_data/google_ads/search_volume/live',
                  [{'keywords': kws, 'location_code': loc,
                    'language_code': lang, 'sort_by': 'search_volume'}])
-    print('%-52s %9s %8s  %s' % ('KEYWORD', 'VOL/MES', 'COMP', 'ÚLTIMOS 6 MESES'))
+    # La API devuelve monthly_searches del más reciente al más antiguo: se invierte y se etiqueta
+    # cada mes para no leer una caída estacional como crecimiento (pasó con 3 productos en oct-2026).
+    print('%-52s %9s %8s  %s' % ('KEYWORD', 'VOL/MES', 'COMP', 'ÚLTIMOS 6 MESES (antiguo → reciente)'))
     print('-' * 100)
     for it in tarea.get('result') or []:
         meses = it.get('monthly_searches') or []
-        serie = ', '.join(str(m['search_volume']) for m in meses[:6])
+        serie = ', '.join('%d-%02d:%s' % (m['year'], m['month'], m['search_volume'])
+                          for m in reversed(meses[:6]))
         print('%-52s %9s %8s  %s' % (it['keyword'], it.get('search_volume'),
                                      it.get('competition') or '-', serie))
     print('\n⚠️  El volumen no dice la INTENCIÓN. Confírmala con `serp` antes de escribir.')
