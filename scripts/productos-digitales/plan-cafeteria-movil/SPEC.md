@@ -54,6 +54,13 @@
   §4 (mínima 12-15 k · caso 42 k · imagen 55-65 k) en §5-§7; venta cruzada → Kit de Tareas Recurrentes: Cafetería · Kit de Escandallos
   Pro · Pack Plantillas APPCC. Bio: 29 años en alta hostelería, quince en consultoría.
 
+- **D16 Cobro y cancelación (fuente única; iguales en calculadora, contrato, Word y ficha)** — fijado el 28-oct tras ver que calculadora
+  y contrato divergían: **Particular** señal 30 % a la firma + 70 % siete días antes · **Empresa** 30 % + 70 % a 30 días de la factura ·
+  **Feria** en el acto, canon 15 %. **Cancelación en 4 tramos «de X a menos de Y»**: Particular con cortes 60 / 30 / 7 días y Empresa con
+  30 / 15 / 7 → se retiene **10 % · 30 % · 60 % · 100 % menos los costes que la cafetería se ahorra** (consumibles, café y leche sin gastar,
+  refuerzo y desplazamiento); recíproca (si cancela la cafetería, devuelve lo cobrado y paga lo del mismo tramo). Margen objetivo de la
+  calculadora: Particular 55 %, Empresa 50 %, Feria 20 %.
+
 ## 5. Orden y presupuesto
 F2 y F3 = `F1-camino.md` §7-§8 (≈ 2,1 M, ≈ 3 h). Mac ≤ 3 agentes con `istats` < 60 °C; todo lo que gasta CPU, en el VPS
 (`/root/wt-cafemovil`, rama `feat/plan-negocio-cafeteria-movil`). Una revisión opus final + una ronda de arreglos. Correo ES: 13-dic 08:00Z.
