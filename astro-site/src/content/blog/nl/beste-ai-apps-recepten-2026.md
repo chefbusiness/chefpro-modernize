@@ -1,6 +1,6 @@
 ---
-title: "De 7 beste AI-apps voor recepten in 2026"
-description: "De 7 beste AI-apps voor recepten in 2026, gelezen als AI-agents voor de horeca. Geen verzonnen scores: welke tool welke taak echt doet."
+title: "De 7 beste AI-apps voor recepten in {year}"
+description: "De 7 beste AI-apps voor recepten in {year}, gelezen als AI-agents voor de horeca. Geen verzonnen scores: welke tool welke taak echt doet."
 pubDate: 2026-10-22
 modDate: 2026-10-22
 category: ai-chef-pro

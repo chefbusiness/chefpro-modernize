@@ -1,5 +1,5 @@
 ---
-title: "IA Alimentaria: Revolución Tecnológica en la Industria de Alimentos 2025"
+title: "IA Alimentaria: Revolución Tecnológica en la Industria de Alimentos {year}"
 description: "La industria alimentaria está experimentando la mayor transformación tecnológica de su historia. Con un valor de mercado de la IA alimentaria proyectado a…"
 pubDate: 2025-09-03
 modDate: 2026-08-31

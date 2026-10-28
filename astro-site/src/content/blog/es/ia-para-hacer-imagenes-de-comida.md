@@ -1,5 +1,5 @@
 ---
-title: "IA para Hacer Imágenes de Comida: Guía y Prompts 2026"
+title: "IA para Hacer Imágenes de Comida: Guía y Prompts {year}"
 description: "Genera imágenes de comida con IA: herramientas 2026, prompts listos para copiar y el límite legal: son referencia, no la foto del plato que sirves."
 pubDate: 2025-09-03
 modDate: 2026-08-31

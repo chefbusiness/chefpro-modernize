@@ -1,6 +1,6 @@
 ---
-title: "IA para Restaurantes Veganos y Plant-Based: Guía Completa 2026"
-description: "Por Qué los Restaurantes Veganos Necesitan IA en 2026 El sector de la restauración vegana y plant-based en España y Latinoamérica está experimentando una…"
+title: "IA para Restaurantes Veganos y Plant-Based: Guía Completa {year}"
+description: "Por Qué los Restaurantes Veganos Necesitan IA en {year} El sector de la restauración vegana y plant-based en España y Latinoamérica está experimentando una…"
 pubDate: 2026-04-06
 modDate: 2026-08-31
 category: tutoriales

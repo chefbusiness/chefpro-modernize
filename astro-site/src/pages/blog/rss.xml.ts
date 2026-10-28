@@ -1,6 +1,7 @@
 // Fase 8B — Feed RSS del blog (ES): /blog/rss.xml. Sin dependencias externas.
 import { SITE } from '../../i18n/config';
 import { getPublishedPosts, postSlug } from '../../lib/blog';
+import { resolveDatePlaceholders } from '../../lib/date-placeholders.mjs';
 
 const esc = (s: string): string =>
   s
@@ -15,10 +16,10 @@ export async function GET() {
     .map((p) => {
       const url = `${SITE}/blog/${postSlug(p)}`;
       return `    <item>
-      <title>${esc(p.data.title)}</title>
+      <title>${esc(resolveDatePlaceholders(p.data.title, undefined, 'es'))}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <description>${esc(p.data.description)}</description>
+      <description>${esc(resolveDatePlaceholders(p.data.description, undefined, 'es'))}</description>
       <pubDate>${p.data.pubDate.toUTCString()}</pubDate>
     </item>`;
     })

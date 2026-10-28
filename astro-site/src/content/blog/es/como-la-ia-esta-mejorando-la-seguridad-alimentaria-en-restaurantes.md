@@ -1,5 +1,5 @@
 ---
-title: "Seguridad Alimentaria en Restaurantes: APPCC e IA 2026"
+title: "Seguridad Alimentaria en Restaurantes: APPCC e IA {year}"
 description: "Guía práctica de seguridad alimentaria en restaurantes: riesgos, cadena de frío, temperaturas críticas verificadas, trazabilidad y registros APPCC con IA."
 pubDate: 2025-02-24
 modDate: 2026-08-31

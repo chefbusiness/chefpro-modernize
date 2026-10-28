@@ -1,5 +1,5 @@
 ---
-title: "Fotografía Gastronómica para Instagram con IA (Guía 2026)"
+title: "Fotografía Gastronómica para Instagram con IA (Guía {year})"
 description: "Fotografía gastronómica para Instagram: luz, composición y ángulos para fotos de platos reales, más edición con IA, tabla de errores y checklist de sesión."
 pubDate: 2026-04-04
 modDate: 2026-08-31

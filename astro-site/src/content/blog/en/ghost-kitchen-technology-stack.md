@@ -1,5 +1,5 @@
 ---
-title: "Ghost Kitchen Technology Stack: Essential Tools and Platforms for 2026"
+title: "Ghost Kitchen Technology Stack: Essential Tools and Platforms for {year}"
 description: "In the rapidly evolving landscape of the foodservice industry, ghost kitchen technology has emerged as the critical differentiator between profitable…"
 pubDate: 2026-03-23
 modDate: 2026-08-31

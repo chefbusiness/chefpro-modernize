@@ -1,6 +1,6 @@
 ---
-title: "Le 7 migliori app di IA per creare ricette nel 2026"
-description: "Le 7 migliori app di IA per ricette nel 2026, rilette come agenti IA. A chi serve ognuna, senza voti inventati, e cosa controlla un ristorante."
+title: "Le 7 migliori app di IA per creare ricette nel {year}"
+description: "Le 7 migliori app di IA per ricette nel {year}, rilette come agenti IA. A chi serve ognuna, senza voti inventati, e cosa controlla un ristorante."
 pubDate: 2026-10-22
 modDate: 2026-10-22
 category: ia-in-gastronomia

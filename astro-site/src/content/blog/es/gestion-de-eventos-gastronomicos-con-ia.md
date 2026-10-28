@@ -1,5 +1,5 @@
 ---
-title: "Gestión de Eventos Gastronómicos con IA: Guía Completa 2026"
+title: "Gestión de Eventos Gastronómicos con IA: Guía Completa {year}"
 description: "La industria de los eventos gastronómicos atraviesa una transformación sin precedentes. Según datos de 2025, más del 80% de las agencias de eventos en España…"
 pubDate: 2025-12-21
 modDate: 2026-09-05

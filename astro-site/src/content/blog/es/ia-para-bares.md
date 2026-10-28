@@ -1,5 +1,5 @@
 ---
-title: "IA para Bares: Escandallo de Tapas y Carta Rentable 2026"
+title: "IA para Bares: Escandallo de Tapas y Carta Rentable {year}"
 description: "IA para bares: escandallo de tapas y raciones, carta rentable, turnos y RRSS local. Guía chef-a-chef con agentes de IA en español, sin tecnicismos."
 pubDate: 2026-01-19
 modDate: 2026-09-05

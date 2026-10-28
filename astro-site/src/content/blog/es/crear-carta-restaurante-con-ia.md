@@ -1,6 +1,6 @@
 ---
 title: "Crear la Carta de tu Restaurante con IA: Guía en 6 Pasos"
-description: "Crea la carta de tu restaurante con IA paso a paso: estructura, número de platos, descripciones que venden, precios, diseño y QR. Guía práctica 2026."
+description: "Crea la carta de tu restaurante con IA paso a paso: estructura, número de platos, descripciones que venden, precios, diseño y QR. Guía práctica {year}."
 pubDate: 2026-01-09
 modDate: 2026-09-05
 category: ia-en-gastronomia

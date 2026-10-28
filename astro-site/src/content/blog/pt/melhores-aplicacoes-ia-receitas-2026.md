@@ -1,6 +1,6 @@
 ---
-title: "As 7 melhores aplicações de IA para criar receitas em 2026"
-description: "As 7 melhores aplicações de IA para receitas em 2026, em português de Portugal. Agentes de IA, sem notas inventadas, e o que um restaurante deve confirmar."
+title: "As 7 melhores aplicações de IA para criar receitas em {year}"
+description: "As 7 melhores aplicações de IA para receitas em {year}, em português de Portugal. Agentes de IA, sem notas inventadas, e o que um restaurante deve confirmar."
 pubDate: 2026-10-22
 modDate: 2026-10-22
 category: ia-na-gastronomia

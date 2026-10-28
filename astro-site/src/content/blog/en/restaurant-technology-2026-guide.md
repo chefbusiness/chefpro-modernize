@@ -1,5 +1,5 @@
 ---
-title: "Restaurant Technology in 2026: The Definitive Guide to Modern Tech Stacks"
+title: "Restaurant Technology in {year}: The Definitive Guide to Modern Tech Stacks"
 description: "The restaurant industry is undergoing a technological transformation at an unprecedented pace. Restaurant technology spending is accelerating across all…"
 pubDate: 2026-04-01
 modDate: 2026-08-31

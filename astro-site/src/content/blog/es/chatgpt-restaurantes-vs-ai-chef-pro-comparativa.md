@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT para Restaurantes: Cuándo Basta y Cuándo No (2026)"
+title: "ChatGPT para Restaurantes: Cuándo Basta y Cuándo No ({year})"
 description: "¿Sirve ChatGPT para restaurantes? Comparativa honesta tarea por tarea: cuándo basta ChatGPT (con prompts) y cuándo necesitas agentes de IA especializados."
 pubDate: 2026-03-17
 modDate: 2026-09-05

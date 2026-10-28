@@ -1,3 +1,4 @@
+import { resolveDatePlaceholders } from '../../../lib/date-placeholders.mjs';
 import { SITE } from '../../../i18n/config';
 import { blogBase, getPublishedPosts, postPath, postSlug } from '../../../lib/blog';
 
@@ -14,10 +15,10 @@ export async function GET() {
     .map((p) => {
       const url = `${SITE}${postPath(postSlug(p), 'nl')}`;
       return `    <item>
-      <title>${esc(p.data.title)}</title>
+      <title>${esc(resolveDatePlaceholders(p.data.title, undefined, 'nl'))}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <description>${esc(p.data.description)}</description>
+      <description>${esc(resolveDatePlaceholders(p.data.description, undefined, 'nl'))}</description>
       <pubDate>${p.data.pubDate.toUTCString()}</pubDate>
     </item>`;
     })

@@ -1,5 +1,5 @@
 ---
-title: "Inteligencia Artificial en Cocina: Guía Definitiva para Profesionales de la Gastronomía [2026]"
+title: "Inteligencia Artificial en Cocina: Guía Definitiva para Profesionales de la Gastronomía [{year}]"
 description: "La inteligencia artificial en cocina ha dejado de ser ciencia ficción para convertirse en una realidad que transforma cada aspecto de la gastronomía…"
 pubDate: 2026-01-10
 modDate: 2026-09-05

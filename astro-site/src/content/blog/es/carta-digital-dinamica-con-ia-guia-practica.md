@@ -1,5 +1,5 @@
 ---
-title: "Carta Digital Restaurante QR: Guía Práctica 2026"
+title: "Carta Digital Restaurante QR: Guía Práctica {year}"
 description: "Cómo hacer bien una carta digital con QR: qué debe tener, errores típicos, normativa de alérgenos 2026 y actualización del menú con IA. Práctica y sin humo."
 pubDate: 2026-01-08
 modDate: 2026-08-31

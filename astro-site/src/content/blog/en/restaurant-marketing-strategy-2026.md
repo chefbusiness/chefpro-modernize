@@ -1,5 +1,5 @@
 ---
-title: "Restaurant Marketing Strategy 2026: 15 Tactics That Actually Drive Covers"
+title: "Restaurant Marketing Strategy {year}: 15 Tactics That Actually Drive Covers"
 description: "The restaurant industry has undergone a massive transformation in how customers discover, choose, and return to dining establishments. 60% of new restaurant…"
 pubDate: 2026-04-09
 modDate: 2026-09-05

@@ -1,5 +1,5 @@
 ---
-title: "IA para Centros de Producción Alimentaria: Eficiencia Industrial 2026"
+title: "IA para Centros de Producción Alimentaria: Eficiencia Industrial {year}"
 description: "La transformación digital ha llegado a los centros de producción alimentaria con una fuerza sin precedentes. En un sector donde la eficiencia operativa, la…"
 pubDate: 2026-04-02
 modDate: 2026-09-05

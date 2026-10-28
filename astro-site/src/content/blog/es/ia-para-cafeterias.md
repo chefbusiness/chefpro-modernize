@@ -1,6 +1,6 @@
 ---
 title: "IA para Cafeterías: Costes, Carta y Redes con Menos Esfuerzo"
-description: "Aplica la IA en tu cafetería y brunch: controla escandallos y food cost, crea carta estacional, mejora tus fotos y redes y fideliza clientes. Guía 2026."
+description: "Aplica la IA en tu cafetería y brunch: controla escandallos y food cost, crea carta estacional, mejora tus fotos y redes y fideliza clientes. Guía {year}."
 pubDate: 2026-01-19
 modDate: 2026-09-05
 category: ia-en-gastronomia
