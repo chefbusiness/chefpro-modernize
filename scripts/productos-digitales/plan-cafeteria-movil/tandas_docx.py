@@ -45,8 +45,8 @@ COBRO = ('COBRO (SPEC D16, literal en el fondo): particular, señal del 30 % a c
          'venta directa en ferias y mercados, en el acto, con el canon del organizador ({CANON_FERIAS} en el caso). Cada '
          'pago se factura, también la señal (art. 75.Dos de la Ley 37/1992). CANCELACIÓN en cuatro tramos «de X a menos '
          'de Y», sin huecos: particular con cortes en 60, 30 y 7 días antes del evento; empresa con cortes en 30, 15 y 7 '
-         'días; en cada tramo se retiene el 10 %, el 30 %, el 60 % o el 100 % del precio, MENOS los costes que la '
-         'cafetería se ahorra (consumibles, café y leche sin gastar, refuerzo y desplazamiento); y es recíproca: si '
+         'días; se retiene el 10 %, el 30 % o el 60 % del precio y, en el último tramo, el 100 % MENOS los costes que '
+         'la cafetería se ahorra (consumibles, café y leche sin gastar, refuerzo y desplazamiento); y es recíproca: si '
          'cancela la cafetería, devuelve lo cobrado y paga lo que corresponde al mismo tramo. Un contrato con un '
          'consumidor cerrado a distancia no tiene desistimiento de 14 días por ser un servicio de ocio con fecha (art. '
          '103.l del TRLGDCU); el plan B de lluvia no es fuerza mayor; el fuero, el del domicilio del consumidor (art. '
@@ -78,8 +78,8 @@ PISTAS = {
        'es la partida pequeña ({MERCANCIA_PCT_A1} de las ventas) y el personal la grande ({PERSONAL_PCT_A1}).',
     2: 'Tipos de barra y por qué esta: barra-carro con furgoneta (la del caso: entra en salones, hoteles y pabellones), '
        'Piaggio Ape (vende la foto en las bodas, pero es un ciclomotor de 45 km/h como máximo: para ir lejos va en '
-       'remolque o furgoneta y no entra en un pabellón) y remolque cafetería homologado (hasta 750 kg sin matrícula, '
-       'con tarjeta ITV propia). LAS TRES CONFIGURACIONES (sin Excel, del research): mínima, con barra-carro, cafetera '
+       'remolque o furgoneta y no entra en un pabellón) y remolque cafetería homologado (hasta 750 kg no lleva matrícula '
+       'propia y sí tarjeta ITV). LAS TRES CONFIGURACIONES (sin Excel, del research): mínima, con barra-carro, cafetera '
        'de dos grupos o reacondicionada, un molino, depósitos y menaje, con vehículo propio y sin generador, unos '
        '12.000-15.000 € (para probar con empresas y fincas con toma de 16 A; sin enchufe no hay servicio); la del caso, '
        'furgoneta + barra-carro + generador, {INVERSION_14_PARTIDAS}; y la de imagen, Ape o remolque homologado más el '
@@ -104,7 +104,7 @@ PISTAS = {
        'octubre de 2026, precios «desde» de escaparate y sin desglose: sirven para situarse, no son precios cerrados): desde 295 € (2 horas '
        'ilimitadas, Osuna), 300 € (Piaggio Ape, Málaga), 450 € (de 20 a 100 invitados, Málaga), 650 € (3 horas, hasta '
        '250 invitados, Barcelona), 700 € (de 50 a 800, Barcelona) y 1.300 € con IVA (Madrid); señal del 30-50 %, horas '
-       'extra de 37 a 50 € y desplazamiento a 0,45 € por kilómetro. Nadie publica precio por invitado y hora: la '
+       'extra de 37 a 50 € y desplazamiento por kilómetro (0,45 € en una ficha) o con un recargo fijo. Nadie publica precio por invitado y hora: la '
        'calculadora del kit lo hace. Estacionalidad del plan con el Mes 1 en marzo: los picos son mayo y junio (bodas, '
        'comuniones y congresos) y septiembre y octubre; los valles, agosto y enero. El hueco de lo que sale en Google '
        '(tableros de Pinterest, vendedores de vehículos y una guía de un vendedor de vasos): nadie explica el precio por '
@@ -118,7 +118,8 @@ PISTAS = {
        'precio por invitado y hora con su mínimo y sus kilómetros (nadie lo publica), bebidas por invitado y baristas '
        'por pico, la electricidad resuelta antes de firmar, la loza frente al vaso con precio aparte, los alérgenos de '
        'las bebidas vegetales y un contrato claro (señal, cancelación por tramos, toma de corriente y agua exigidas al '
-       'recinto). El riesgo: la agenda (por debajo de unos 100 servicios no hay caja) y los kilómetros; cómo se defiende '
+       'recinto). El riesgo: la agenda (por debajo de {BE_EVENTOS_ANO_CAJA} servicios del tamaño medio el primer año, y de '
+       '{BE_EVENTOS_CAJA_A2} y {BE_EVENTOS_CAJA_A3} el segundo y el tercero, no hay caja) y los kilómetros; cómo se defiende '
        '(planners y fincas fijas, empresas que repiten, congresos con calendario).',
     5: 'Marketing y captación: el café se contrata DESPUÉS que la finca y el catering (de una semana a seis meses de '
        'antelación según el proveedor), así que la captación va a quien decide antes: wedding planners y fincas de tu '
@@ -130,8 +131,8 @@ PISTAS = {
        'convertida a porcentaje), sin pisar la calle. Presupuesto de marketing {MARKETING_ANO} al año más la marca, la '
        'web, las fotos y el dossier ({MARCA_WEB}) y el lanzamiento ({LANZAMIENTO}), que van en la inversión. CÓMO SE '
        'PRESUPUESTA (la calculadora del kit): por invitado y por horas, con el desplazamiento aparte por kilómetro y sin '
-       'margen; su boda de ejemplo (120 invitados, barra de 3 horas tras la cena, en loza) sale a {EJ_BODA_PRECIO} por '
-       'invitado sin IVA con el margen objetivo del 55 % ({EJ_BODA_TOTAL} con IVA y desplazamiento); la boda media del '
+       'margen; su boda de ejemplo (120 invitados, barra de 3 horas tras la cena, en loza) sale a un precio MÍNIMO de '
+       '{EJ_BODA_PRECIO} por invitado sin IVA para llegar al margen objetivo del 55 % ({EJ_BODA_TOTAL} con IVA y desplazamiento); la boda media del '
        'plan, a 9,00 €, deja más margen; el congreso de ejemplo (300 asistentes, jornada con dos pausas) sale a '
        '{EJ_CONGRESO_PRECIO} por asistente. ' + COBRO + '.',
     6: 'Operaciones. UN EVENTO TIPO, de principio a fin: briefing (invitados, horas, carta, alergias, toma eléctrica, '
@@ -163,8 +164,8 @@ PISTAS = {
        'confírmalo con tu gestoría; como autónomo sin SL, su sueldo es el beneficio); un camarero/a de barra fijo '
        'discontinuo al 36 % de jornada (unas 650 horas al año: segundo barista en bodas, congresos, ferias y la mitad '
        'de los eventos de empresa; {BRUTO_CAMARERO} brutos al mes de su fila); y dos filas pequeñas de la bolsa de fijos '
-       'discontinuos: suplencias de vacaciones y bajas, y refuerzo para los eventos grandes que piden una segunda '
-       'estación. {PLANTILLA_PERSONAS} filas y {JORNADAS} jornadas completas equivalentes, coste {PERSONAL_A1} '
+       'discontinuos: suplencias y refuerzo de temporada, y un tercer barista para los eventos grandes que piden una '
+       'segunda estación (una baja concreta se cubre con contrato de sustitución, art. 15.3). {PLANTILLA_PERSONAS} filas y {JORNADAS} jornadas completas equivalentes, coste {PERSONAL_A1} '
        '({PERSONAL_PCT_A1} de las ventas), cobertura de horas {COBERTURA_HORAS} ({HORAS_CONTRATADAS} horas contratadas '
        'frente a {HORAS_NECESARIAS} de eventos: {HORAS_EVENTO} horas por evento con {PERSONAS_EVENTO} personas de '
        'media; el resto son la oficina, las compras y la limpieza de la base). La plantilla crece con personas: '
@@ -213,8 +214,9 @@ PISTAS = {
        'gestoría; exento de cuota con menos de 1 millón de cifra de negocio; tus facturas a empresas no llevan '
        'retención de IRPF (art. 95.6 del Reglamento del IRPF). Sanidad: declaración responsable en el registro '
        'sanitario de la comunidad autónoma donde tiene su base (RD 1021/2022); el vehículo y la barra forman parte del '
-       'establecimiento; el RGSEAA sólo si vendes a otros negocios; la base con fregadero (nada se prepara en casa: art. '
-       '13.5.b). Comida testigo (RD 1086/2020, arts. 2.h, 30.8.d y 30.10): con salado (sándwiches, tostas, quiches), '
+       'establecimiento; el RGSEAA sólo si vendes a otros negocios; la base con fregadero (art. '
+       '13.5.b: lo que se sirve en eventos no se prepara en casa). Comida testigo (RD 1086/2020, arts. 2.h, 30.8.d y '
+       '30.10): con salado (sándwiches, tostas, quiches), a 4 °C o menos (o congelada), '
        'una ración de 100 g o más de cada uno durante 7 días, en cada evento; las bebidas y la bollería servida tal '
        'cual quedan fuera según nuestra lectura, sin criterio oficial: confírmalo con tu autoridad sanitaria. Agua de '
        'los depósitos: agua de consumo, de la que respondes hasta el punto de uso (RD 3/2023, arts. 2.a, 65.3 y 66.b). '
@@ -222,9 +224,9 @@ PISTAS = {
        'gluten salvo la certificada; una jarra por cada leche; cartel o información oral registrada por escrito. Vasos: '
        'el de papel con forro de PE o PLA también es plástico (Ley 7/2022, art. 2.aa) y se cobra aparte en el tique '
        '(art. 55.2); pajitas y agitadores de plástico, prohibidos (art. 56); los promotores de eventos festivos tienen '
-       'que ofrecer alternativas al vaso de un solo uso (RD 1055/2022, art. 7.6): por eso, loza por defecto en bodas y '
-       'empresa. Venta en mercados y vía pública: venta no sedentaria con autorización municipal (RD 199/2010); el '
-       'evento contratado en un recinto privado es un servicio. Vehículo: remolque de hasta 750 kg sin matrícula y con '
+       'que ofrecer alternativas al vaso de un solo uso (RD 1055/2022, art. 7.6); no está claro que una boda o un evento '
+       'de empresa cuenten como evento festivo, así que loza por defecto en bodas y empresa. Venta en mercados y vía pública: venta no sedentaria con autorización municipal (RD 199/2010); el '
+       'evento contratado en un recinto privado es un servicio. Vehículo: remolque de hasta 750 kg sin matrícula propia y con '
        'tarjeta ITV (Reglamento General de Vehículos, arts. 25-26); la furgoneta con mueble, fregadero o depósitos '
        'fijos es una reforma: informe e ITV (compruébalo con tu estación de ITV); el Ape 50 es un ciclomotor (45 km/h). '
        'IVA (Ley 37/1992, art. 91): todo lo que se sirve, al 10 %; extras con precio propio, al 21 %. Contratos con '
@@ -236,7 +238,7 @@ PISTAS = {
        'sanitaria».',
     10: 'Conclusiones con tokens (viabilidad, holgura de caja del año 1 y de los años 2 y 3, DSCR mínimo, saldo mínimo, '
         'payback citado como en el §8) y los riesgos de una cafetería móvil y cómo se mitigan (research §0 y §8, uno '
-        'por uno): la agenda (por debajo de unos 100 servicios no hay caja: congresos con calendario, planners y '
+        'por uno): la agenda (por debajo de los equilibrios de caja de cada año no hay caja: congresos con calendario, planners y '
         'empresas que repiten); presupuestar el servicio de 2 horas como si fueran 2 horas (es una jornada de 7 a 9); '
         'firmar sin saber la potencia eléctrica (toma por escrito o generador); el vaso «compostable» como si no fuera '
         'plástico; anunciar «café de especialidad» sin la ficha del tostador; la jarra única para todas las leches '
@@ -286,7 +288,7 @@ PERMITIDAS = set('''0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 2
 2,4 2,4-4,5 4,5 3,5 3,7 0,45 37-50 30-50 50-60 100-120 7-9 20-30 150-200 12.000-15.000 55.000-65.000 4.300-5.350
 6.000-10.000 300.000-600.000 8,50 9,00 8,00 4,50 9,50 3,00 22.200 2.900 8.100 2.a 2.aa 2.h 13.5.b 30.8.d 30.10 55.2 65.3
 66.b 7.6 75.Dos 91.Uno.2.2 91.Uno.1.1 95.6 103.l 90.2 34.9 16 25-26 1.1 18/2022 1175/1990 1021/2022 1086/2020 3/2023
-126/2015 7/2022 1055/2022 199/2010 37/1992 31/1995 1169/2011 852/2004 1007/2023 2822/1998 2026 2025 2024 2023 2022
+126/2015 7/2022 1055/2022 199/2010 37/1992 31/1995 1169/2011 852/2004 1007/2023 2822/1998 15.3 2026 2025 2024 2023 2022
 2010 2015 2020 1992 1990 1998 1995 12/16/14/10/14/14 28 B96'''.split())
 RX_NUM = re.compile(r'(?<![\w{])[−+]?\d[\d.,/:−-]*\d|(?<![\w{])\d')
 #: Caracteres admitidos además del latín básico/extendido: tipografía española y los signos (−, ≤, ≥, ≈, ×).

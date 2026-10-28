@@ -133,3 +133,49 @@ total) · 248 tokens. `docx_caf_es.py --parcial`: 131 párrafos, 10 Heading 1, A
 - El texto de la calculadora (otro agente) dice «ticket» en `Escandallo!A51` y `A54`: el barrido del orquestador lo
   cazará en el gate de los 5 ficheros («tique», o «precio medio»).
 - La guía de equivalencias (censo 54 → 55) y `gate-no-latinos` son de la F3.
+
+## 9. Arreglos de la revisión (`REVISION-FINAL.md`, ronda única, 28-oct)
+
+Me tocaban M1, M2, M4, M5, m1-m21 y m24. B1, M3, M6, m22, m23 y m25-m27 son de los agentes de la calculadora y del
+contrato (no tocados; exclusiones de rsync mantenidas). **No cambia ninguna cifra del caso**: el ensayo de la demo
+§2.11.5 sigue en 116 invitados (RAI1 −448 €, RAI2 +175 €, IS3 36 €), y los 12 gates D9 dan lo mismo que en §4.
+
+| # | Estado | Cómo |
+|---|---|---|
+| M1 | Aplicado | Word [94]: «… y el resto de gastos fijos ({OTROS_FIJOS_A1}: suministros, seguros, asesoría, marketing, mantenimiento y tasas)»; token nuevo `OTROS_FIJOS_A1` = fijos − personal − almacén − amortización − intereses = 9.900 € (77.081 − 44.986 − 4.800 − 9.900 = 17.395 €) |
+| M2 | Aplicado | [58] y [112]: equilibrio de caja por año con `{BE_EVENTOS_ANO_CAJA}`, `{BE_EVENTOS_CAJA_A2}` y `{BE_EVENTOS_CAJA_A3}` (106 · 129 · 139); en [58] además lo que hace el plan (`{EVENTOS_EQUIVALENTES_A2/A3}`: 143 y 154), para que no parezca que el plan está por debajo · [65]: «pasar cuanto antes de los {BE_EVENTOS_ANO_CAJA} servicios del equilibrio de caja» · pistas §4 y §10 de `tandas_docx.py` |
+| M4 | Aplicado | Checklist F2 `E5`: «(sección 2)» |
+| M5 | **Parcial (deuda de código común)** | `G35` no se puede poner a 0 desde el contenido: `grupo_a.py:2544-2547` pone `iva=P('iva_soportado')` a TODAS las filas propias de fijos, y la columna G es fórmula protegida (no se le puede decir al cliente «pon 0»). Nota `F35` reescrita para que no se contradiga: «Las tasas municipales no llevan IVA, pero el libro aplica a todos los costes fijos el tipo general…: aquí suma unos 63 € al año de IVA que pagas y te deduces en el mismo trimestre, sin efecto en el resultado». Corregido también el comentario de `semilla_caf.py` (la creencia de que `RX_SIN_IVA` lo cubría). Arreglo de verdad: una clave de contenido con el IVA por fila de fijos, en el motor (pasada de familia) |
+| m1 | Aplicado | [66] «una factura media baja, de {VENTA_EVENTO_MEDIO} por evento» (fuera el «de de») |
+| m2 | Aplicado | [73] «un precio mínimo de {EJ_BODA_PRECIO} … para llegar al margen objetivo del 55 %» + pista §5 |
+| m3 | Aplicado | [94] salvedad de los tipos de 2025 por cifra de negocios (1 millón / 10 millones de euros) |
+| m4 | Aplicado | [98] y [111] «con margen sobre el {DSCR_OBJETIVO} que suele pedir un banco, aunque no sobrado» (token nuevo `DSCR_OBJETIVO` = `Supuestos!B66`) |
+| m5 | Aplicado | [103], `Supuestos!C24`, checklist F2 `E8`, pista §9 y docstring del checklist: el art. 13.5.b habla de no preparar en casa lo que se sirve en eventos; el trastero sin agua «no sirve para lavar loza ni depósitos» |
+| m6 | Aplicado | [103] «a 4 °C o menos (o congelada)» + la referencia «Comida testigo» de `Instrucciones` + pista §9 |
+| m7 | Aplicado | [46] y [106] «no lleva matrícula propia y sí (su) tarjeta ITV»; [46] «A la furgoneta equipada se la llama a veces coffee truck»; checklist F2 `B7`; pistas §2 y §9 |
+| m8 | Aplicado | [74], [108], `Instrucciones!D45`, checklist F6 `E8` y la constante `COBRO` de las pistas: «el 10, el 30 o el 60 %, y en el último tramo el 100 % menos los costes que…» |
+| m9 | Aplicado | [114] texto propuesto |
+| m10 | Aplicado | [115] «anota en NOTAS la fecha y quién las cerró» |
+| m11 | Aplicado | [39] añade la guía de equivalencias para Hispanoamérica |
+| m12 | Aplicado | [80] baterías «más silenciosas para las bodas pero más caras (6.000-10.000 € …)» |
+| m13 | Aplicado | [93] «{CAPEX} de inversión» |
+| m14 | Aplicado | Unificado a «de una semana a seis meses»: [97] (texto propuesto), `Supuestos!C52`, `Instrucciones!D35`, `Tesorería!O5` |
+| m15 | Aplicado | [55] «por kilómetro (0,45 € en una ficha) o con un recargo fijo» + pista §3 |
+| m16 | Aplicado | [105] «No está claro que una boda o un evento de empresa cuenten como evento festivo, así que…» + pista §9 |
+| m17 | Aplicado | `Personal!A7` «Suplencias y refuerzo de temporada (fijo discontinuo)» con nota del contrato de sustitución (art. 15.3 ET); [87] añade la frase propuesta; [43] y [85] sin «bajas»; pista §7 |
+| m18 | Aplicado | `Supuestos!C58` «la mitad de las ventas» |
+| m19 | Aplicado | `VOCABULARIO`: «Compáralo con el precio por invitado de las barras de tu zona, que suele ir con IVA». Para que el literal de la fórmula de `Supuestos!C9` no pase de 255 caracteres (pasaba a 269), se acorta la frase del IVA que va delante (queda en 225) |
+| m20 | Aplicado | `VOCABULARIO`: «meses de renta» → «cuotas del almacén base», «renta» → «cuota» (sólo aparecía en `Inversión!D21-D22`) y «de puesta en marcha (montaje del almacén, calibrado de la cafetera, catas y primeras reservas)» |
+| m21 | Aplicado | `Inversión!D7`: aviso de ITP y REBU con «pon «No» en la columna de al lado» |
+| m24 | Aplicado **de otra forma** | El motor reutiliza el desplegable que trae la hoja (`motor._dv_marca_existente`) y, si no hay ninguno, crea «✓,—,N/A»; su leyenda (`motor.LEYENDA_OK`) dice «☐» y las casillas vienen con «☐». La semilla dejaba la hoja sin desplegable; ahora le pone «✓,☐,N/A» (el de la familia, `motor.py:162`) y el motor lo reutiliza: desplegable, leyenda y casillas coinciden sin tocar la leyenda común. F6 `C12` y `C15`: «Camarero/a» |
+
+**Gates tras los arreglos (VPS)**: `ciclo.sh` TODO VERDE (con `datos_escalado.py` md5 `a35a2aab…`, ya con el M3 del
+agente de la calculadora) · `cifras_caf_es.py` D9 12/12 (250 tokens) · `tandas_docx.py check` A y B: 0 errores (avisos:
+longitudes de [58], [74], [97] y [108] por encima del objetivo, y cifras con fuente: 295 €, arts. 13.5, 30.8 y 91) ·
+`docx_caf_es.py` VERDE (131 párrafos, 10 H1, 7.235 palabras) · `barrido_es.py` 0 en los 2 xlsx y el docx ·
+`gate_restos_ft.py --rx-extra … --permitir "«food truck cafetería»"` VERDE (3 ficheros; la búsqueda del §3 es
+legítima). sha256 Mac = VPS: plan `1efbd94d…125c`, checklist `17318729…0fca`, Word `32e4037e…10bb`.
+
+**Deuda nueva**: (1) M5, IVA por fila de fijos en el motor; (2) el motor escribe literales de fórmula de más de 255
+caracteres en textos comunes (`Inversión!D28` 313, `D33` 424, en todos los planes de la familia, publicados sin incidencias
+conocidas): conviene partirlos en la próxima pasada del motor.

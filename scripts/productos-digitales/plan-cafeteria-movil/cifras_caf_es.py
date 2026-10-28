@@ -89,6 +89,7 @@ MAPA = {
     'IVA_REDUCIDO': (SUP, r'^iva repercutido de restauraci', 2, 'pct0'),
     'SMI_ANUAL': (SUP, r'^smi anual de referencia', 2, 'eur'),
     'HOLGURA_MINIMA': (SUP, r'^holgura m[ií]nima sobre el punto de equilibrio', 2, 'pct0'),
+    'DSCR_OBJETIVO': (SUP, r'^dscr objetivo', 2, 'dec2'),
     # P&L
     'VENTAS_A1': (PYG, r'^ingresos totales', 2, 'eur'),
     'VENTAS_A2': (PYG, r'^ingresos totales', 3, 'eur'),
@@ -306,6 +307,11 @@ def leer(wb):
         textos['MES_SALDO_MINIMO_NOMBRE'] = MESES[int(round(c['MES_SALDO_MINIMO'])) - 1]
     if all(k in c for k in ('ORIGEN_FONDOS', 'NECESIDAD_CAJA')):
         crudo['EXCESO_FINANCIACION'] = (c['ORIGEN_FONDOS'] - c['NECESIDAD_CAJA'], 'eur')
+    # revisión final M1: los fijos que no son personal, cuota del almacén, amortización ni intereses (suministros,
+    # seguros y los 10 propios), para que la cuenta del Word cierre hasta el EBITDA
+    ks = ('FIJOS_A1', 'PERSONAL_A1', 'CUOTA_BASE_ANO', 'AMORTIZACION_A1', 'INTERESES_A1')
+    if all(k in c for k in ks):
+        crudo['OTROS_FIJOS_A1'] = (c['FIJOS_A1'] - sum(c[k] for k in ks[1:]), 'eur')
     for i in (1, 2, 3):                                                   # el P&L no tiene fila de EBITDA
         ks = ('RAI_A%d' % i, 'AMORTIZACION_A%d' % i, 'INTERESES_A%d' % i)
         if all(k in c for k in ks):
