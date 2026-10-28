@@ -66,6 +66,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "It depends on your state, county and city. The usual list: a business structure (LLC or sole proprietorship), an EIN, a seller's permit and a business license; a zoning check before you sign the lease; building permits for the build-out and a certificate of occupancy; a health department plan review and food establishment permit; a sign permit; a sidewalk cafe permit if you put tables outside; and a liquor license only if you serve alcohol. The opening checklist organizes 75 tasks in 6 phases. Treat it as a starting point and confirm the details with your local authorities.",
   },
   {
+    q: 'Is there a business plan for a coffee cart or mobile espresso bar?',
+    a: "Yes, for a different business. A coffee shop has a storefront, a lease and daily walk-in traffic; a coffee cart or mobile espresso bar goes to the event and is booked by a host, a company or an organizer. Our Coffee Cart Business Plan Kit is written for that: a 10-section Word plan, Excel projections with a break-even in events and a 12-month cash flow, a pricing calculator from cost per drink to a quote per guest and per service hour, a service agreement template and a 68-task startup checklist with the mobile food unit permit and commissary steps to check with your county.",
+  },
+  {
     q: 'Can I present this plan to a lender, a landlord or investors?',
     a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
@@ -306,6 +310,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },
     { href: '/en/digital-products/pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit' },
     { href: '/en/digital-products/ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit' },
+    { href: '/en/digital-products/coffee-cart-business-plan', label: 'Coffee Cart Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],

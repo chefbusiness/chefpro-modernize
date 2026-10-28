@@ -904,6 +904,18 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'modelos-contrato': '/dl/wedding-venue-business-plan/wedding-venue-rental-agreement-templates.docx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-28): Coffee Cart Business Plan Kit. Claves de D218 (las del ES plan-negocio-cafeteria-movil-eventos salvo
+  // el bonus, que aquí es el común `equivalents-guide` como en toda la familia EN; = TEMPLATES de
+  // src/pages/CoffeeCartBusinessPlanDashboard.tsx) → los 5 ficheros EN de /dl/coffee-cart-business-plan/ (SPEC
+  // business-plans-en-11 D218) y el bonus común de equivalencias EN. Los ficheros se generan en la F2 (VPS).
+  'coffee-cart-business-plan': {
+    'plan-negocio': '/dl/coffee-cart-business-plan/coffee-cart-business-plan.docx',
+    'plan-financiero': '/dl/coffee-cart-business-plan/coffee-cart-financial-projections.xlsx',
+    'checklist-apertura': '/dl/coffee-cart-business-plan/coffee-cart-startup-checklist.xlsx',
+    'calculadora-pricing': '/dl/coffee-cart-business-plan/coffee-cart-pricing-calculator.xlsx',
+    'modelos-contrato': '/dl/coffee-cart-business-plan/coffee-catering-service-agreement-template.docx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

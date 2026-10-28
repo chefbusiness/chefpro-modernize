@@ -11,6 +11,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'catering-business-plan': 'https://buy.stripe.com/fZuaEQa8AdwGfDF0sR6oo1K',
   'catering-checklist-templates': 'https://buy.stripe.com/9B6bIUgwY64e2QTfnL6oo1S',
   'chocolate-shop-checklist-templates': 'https://buy.stripe.com/eVqdR2dkM78iajl0sR6oo1X',
+  'coffee-cart-business-plan': 'https://buy.stripe.com/4gMbIU1C42S21MP8Zn6oo29',
   'coffee-shop-business-plan': 'https://buy.stripe.com/eVq00c2G8gIScrtejH6oo1G',
   'coffee-shop-checklist-templates': 'https://buy.stripe.com/dRmdR26Wo2S2779fnL6oo1R',
   'food-cost-menu-engineering-guide': 'https://buy.stripe.com/8x26oA3Kc78ibnpa3r6oo1N',

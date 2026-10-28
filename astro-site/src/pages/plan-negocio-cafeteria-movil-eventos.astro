@@ -2,15 +2,18 @@
 // /plan-negocio-cafeteria-movil-eventos — LÍNEA PLANES (sub-línea A). Thin wrapper: pasa el objeto data al
 // template PlanNegocioLandingPage y el SEO a BaseLayout.
 //
-// hreflang: producto SOLO ES hasta que nazca su gemelo EN (se DUPLICARÁ de este): locales={['es']} y sin alternates, para no
-// emitir hreflang a páginas que no existen. Al nacer el gemelo, registrar la familia en lib/tienda.ts y volver a alternatesFamilia().
+// hreflang: alternatesFamilia('plan-negocio-cafeteria-movil-eventos') (lib/tienda.ts). Con el gemelo EN vivo (Coffee Cart
+// Business Plan Kit, /en/digital-products/coffee-cart-business-plan) emite es + en + x-default recíprocos; si EN volviera a
+// vivo:false, devuelve locales ['es'] sin alternates. Patrón = plan-negocio-pizzeria.astro.
 // Canonical: https://aichef.pro/plan-negocio-cafeteria-movil-eventos. Meta robots se OMITE (desviación
 // cross-cutting; se añade en el cutover). Patrón = plan-negocio-bar-restaurante.astro. Build format 'file'.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PlanNegocioLandingPage from '../components/pages/PlanNegocioLandingPage.astro';
 import data from '../data/productos/planes/plan-negocio-cafeteria-movil-eventos';
+import { alternatesFamilia } from '../lib/tienda';
 
 const lang = 'es';
+const hreflang = alternatesFamilia('plan-negocio-cafeteria-movil-eventos');
 
 // DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback) para que
 // Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
@@ -25,7 +28,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_CAFETERIA_MOVIL
   keywords={data.seo.keywords}
   lang={lang}
   basePath={`/${data.slug}`}
-  locales={['es']}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
   ogImage={data.seo.ogImage}
 >
   <PlanNegocioLandingPage data={data} stripeLink={stripeLink} />

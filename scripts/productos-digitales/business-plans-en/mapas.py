@@ -1261,9 +1261,17 @@ elif CONJUNTO == 'wed':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-9'))
     import mapas_wed as _wed                                                       # noqa: E402
     _wed.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'cof':
+    # Coffee Cart Business Plan Kit (F1/paso 1a de business-plans-en-11, 28-oct-2026): fuente ES = food truck ES, motor
+    # de eventos y código de la PAELLA (D221), diccionario por celda en cadena = EN de la Paella → Catering publicado;
+    # datos en business-plans-en-11/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-11'))
+    import mapas_cof as _cof                                                       # noqa: E402
+    _cof.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
-    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael | piz | ice | wed)'
-                     % CONJUNTO)
+    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael | piz | ice | wed | '
+                     'cof)' % CONJUNTO)
 
 
 if __name__ == '__main__':

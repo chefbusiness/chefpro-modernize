@@ -198,6 +198,29 @@ fijo discontinuo → **seasonal employee (W-2)** · grupo electrógeno / limitad
 aseos adaptados, saneamiento, pozo → **ADA-compliant restrooms, septic system, well (public water system)** · software de reservas →
 **venue management software** · dossier → **wedding brochure / pricing guide** · comida testigo → *no aplica en EE. UU.*
 
+## Cafetería móvil para eventos (Coffee Cart Business Plan Kit, F1 28-oct-2026; detalle y fuentes en `business-plans-en-11/F1-research-us-delta.md` §9)
+
+Estado: **medido** (DataForSEO US y páginas de operadores leídas, 28-oct) y **aplicado** en las pistas del paso 1a (`datos_cof.py`).
+cafetería móvil para eventos → **coffee cart** (nombre, slug, H1) · **coffee catering** y **mobile espresso bar** (subtítulo y cuerpo;
+coffee catering 2,900 búsquedas) · **coffee truck / coffee trailer** solo como FORMATOS · **nunca «mobile cafeteria»** (cafeteria =
+comedor de colegio o empresa) ni «mobile café» · barra con baristas / estación sin barista → **full-service espresso bar / self-serve
+coffee station** (drop-off de cold brew) · carro · barra portátil → **espresso cart · portable espresso bar** · barista jefe / de evento
+→ **lead barista / event barista** (W-2 por horas; nunca «freelance») · bebidas sin límite → «**unlimited made-to-order espresso drinks
+during your booked service window**» · horas de servicio / hora extra / tarifa base → **service hours, service window / additional
+hour / base fee + hourly rate** · paga el anfitrión / pagan los invitados → **hosted / guest-pay (pop-up)** + **minimum sales guarantee**
+· leche vegetal → **alt milk, oat milk** · filtro por lotes / frío → **batch brew / cold brew** · bebida de autor / temporada / siropes
+caseros → **signature / seasonal drinks / house-made syrups** · vasos personalizados → **branded cups, custom cup sleeves, latte
+printing** · activación de marca → **brand activation**, feria comercial → **trade show** · montaje, servicio y desmontaje → **setup,
+service & breakdown / load-in** · enchufe / circuito propio / sin toma de agua → **standard 110V outlet / dedicated circuit /
+self-contained («no plumbing connection is required»)** · ajustar la molienda / sacar un café / doble → **dial in / pull a shot / double
+shot (18 g in, 36 g out)** · capacidad → **drinks per hour** (50-65 por barista) · consumo → **drinks per guest** · escandallo de bebida →
+**cost per drink** («all-in cost per drink», COGS %; nunca «recipe costing») · señal / saldo / recuento final / desplazamiento →
+**retainer / balance due / final guest count / travel fee (free radius)** · tasa de cierre → **booking rate** · cocina base / permiso /
+revisión de planos → **commissary (agreement, log) / mobile food unit permit / plan review** · manipulador → **food handler card** ·
+vasos compostables → **compostable cups** (regla LOCAL, p. ej. Seattle) · feria / mercado → **festival / farmers market** (+ temporary
+event permit, organizer / vendor fee) · bollería → **pastries from a licensed bakery** (la cottage food no se revende) · tostador →
+**roaster** · café de especialidad → **specialty coffee** · coctelería (espresso martini) → fuera: **«partner with a licensed mobile bar»**.
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en

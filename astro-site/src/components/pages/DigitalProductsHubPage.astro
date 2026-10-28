@@ -59,20 +59,24 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Coffee Cart Business Plan Kit (28-oct-2026, undécima tanda de planes EN): el más nuevo → 1; el Wedding Venue Business Plan Kit y
+  // el resto de vivos bajan un puesto. SUSTITUYE a la tarjeta «Business Plan: Mobile Coffee Bar for Events» que metió la F3 del ES
+  // (apuntaba al ES y describía el kit español: 80 tareas, guía de equivalencias para Latinoamérica); una sola tarjeta por producto.
+  // Imagen: el hero ES de la cafetería móvil (sin texto).
   {
-    name: 'Business Plan: Mobile Coffee Bar for Events',
+    name: 'Coffee Cart Business Plan Kit',
     slug: '/plan-negocio-cafeteria-movil-eventos',
-    description: 'Complete business plan to start a mobile coffee business for weddings, corporate events and fairs: a 10-section Word plan, a 9-sheet Excel financial plan, an 80-task opening checklist in 6 phases, a costing and event quote calculator, a service contract template and the Equivalents Guide for Latin America.',
+    description: 'Coffee cart business plan template for a mobile espresso bar and coffee catering company (cart, trailer or truck): a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in events and a 12-month cash flow, a pricing calculator from cost per drink to quote per guest, a service agreement template and a 68-task startup checklist.',
     features: [
       '10-section business plan in Word',
-      '9-sheet Excel financial plan with month-by-month cash flow',
-      'Opening checklist: 80 tasks in 6 phases',
-      'Costing and quote calculator, contract template and Equivalents Guide for Latin America',
+      '9-sheet Excel financial projections with a 12-month cash flow starting in March',
+      'Pricing calculator: cost per drink to quote per guest and per service hour',
+      '68 tasks: permits, commissary, equipment, baristas and your first events',
     ],
     iconName: 'Coffee',
     image: '/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'cafe', 'mobile-catering', 'business-plan'],
   },
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1

@@ -224,6 +224,15 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (28-oct-2026): Coffee Cart Business Plan Kit (SPEC business-plans-en-11 D216). vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Pizza Shop, el Wedding Venue y el Ice Cream Shop Business Plan Kit).
+    familia: 'plan-negocio-cafeteria-movil-eventos',
+    productos: {
+      es: { slug: 'plan-negocio-cafeteria-movil-eventos', vivo: true },
+      en: { slug: 'coffee-cart-business-plan', vivo: true },
+    },
+  },
+  {
     // Tienda EN (15-oct-2026): Food Cost + Menu Engineering Guide, primera guía de la tienda EN
     // (SPEC guia-food-cost-en D1). vivo: true en la rama, que se fusiona cuando existe el Payment Link.
     familia: 'guia-food-cost-ingenieria-menu',

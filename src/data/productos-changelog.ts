@@ -862,6 +862,32 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-28): Coffee Cart Business Plan Kit, edición inglesa del plan-negocio-cafeteria-movil-eventos (SPEC
+  // business-plans-en-11 D216-D235: coffee catering company con espresso cart + portable espresso bar en remolque cerrado, caso US).
+  // Textos en inglés: los pinta <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN y
+  // versión que llevan los docProps de los cinco ficheros). Cifras = cifras_caso.json (medidas en el libro).
+  'coffee-cart-business-plan': {
+    version: '2.2',
+    updated: '2026-10-28',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-28',
+        title: 'First release',
+        changes: [
+          'First release of the Coffee Cart Business Plan Kit for a coffee catering company with an espresso cart and a portable espresso bar towed in an enclosed trailer: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing calculator, a coffee catering service agreement template and a 68-task startup checklist, set up for the US with notes for the UK, Canada and Australia.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story: 170 events a year averaging 95 guests at $12.60 per guest, $203,490 in year-1 sales, a net of 9.9% in year 1 and a loan payment covered 2.58 times in the toughest year.',
+          'The model runs on events per year, guests per event and revenue per guest, with weekday corporate events as the volume, weddings and private parties as the ticket, and festivals and farmers markets paid by the guest as an extra. The break-even is measured in events and checked against the cash you actually need, and the 12-month cash flow starts in March so that the summer dip is in the numbers.',
+          'Startup costs line by line (the cart, the portable bar, two espresso machines, four grinders, the trailer, the mobile food unit plan review and an inverter generator), with a table comparing a cart, a trailer and a truck.',
+          'Pricing calculator from cost per drink to a quote per guest and per service hour, with 110V, 220V or generator, barista pay, travel, sales tax, a retainer, a cancellation schedule and three example quotes.',
+          'Coffee catering service agreement template with a retainer applied to the price, a cancellation schedule with a rebooking credit and an annex for corporate clients and festivals: a template, not legal advice, to be reviewed by a local attorney.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized and checked against a 1.25× DSCR target.',
+          '68-task startup checklist in 6 phases: business setup, permits and commissary, equipment and supplies, hiring baristas, brand and bookings, and your first events.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
   // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
   // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.

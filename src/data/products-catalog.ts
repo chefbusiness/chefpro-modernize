@@ -532,8 +532,11 @@ const RAW: Record<string, ProductCatalogRaw> = {
     name: { es: 'Plan de Negocio: Cafetería Móvil para Eventos', en: 'Coffee Cart Business Plan Kit' },
     description: {
       es: 'Cafetería móvil para bodas, empresas y ferias: plan financiero Excel, plan en Word, checklist de apertura, calculadora de escandallo y presupuesto, contrato y guía de equivalencias.',
-      en: 'Word business plan, Excel financial projections, pricing calculator, service contract template and startup checklist for a mobile coffee business serving events.',
+      en: 'Word business plan, Excel financial projections, pricing calculator, service agreement template and startup checklist for a coffee cart and mobile espresso bar serving events.',
     },
+    // Tienda EN (28-oct-2026): producto propio, `coffee-cart-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/coffee-cart-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-pizzeria': {
     id: 'plan-negocio-pizzeria',

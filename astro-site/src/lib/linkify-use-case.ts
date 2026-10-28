@@ -67,6 +67,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Pizza Shop Business Plan Kit': '/en/digital-products/pizza-shop-business-plan',
   'Ice Cream Shop Business Plan Kit': '/en/digital-products/ice-cream-shop-business-plan',
   'Wedding Venue Business Plan Kit': '/en/digital-products/wedding-venue-business-plan',
+  'Coffee Cart Business Plan Kit': '/en/digital-products/coffee-cart-business-plan',
   'Food Cost + Menu Engineering Guide': '/en/digital-products/food-cost-menu-engineering-guide',
   'How to Open a Pastry Shop': '/en/digital-products/how-to-open-a-pastry-shop',
   'Restaurant Checklists Kit Pro': '/en/digital-products/restaurant-checklist-templates',

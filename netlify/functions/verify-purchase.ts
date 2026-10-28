@@ -451,6 +451,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-28): gemelo de plan-negocio-cafeteria-movil-eventos, producto independiente con su propio acceso
+  // (mismo patrón que wedding-venue-business-plan).
+  'coffee-cart-business-plan': {
+    accessPath: '/en/digital-products/coffee-cart-business-plan/access',
+    emailSubject: 'Your access to Coffee Cart Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Coffee Cart Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator, the coffee catering service agreement template and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
   // (mismo patrón que mobile-bar-business-plan).
   'food-cost-menu-engineering-guide': {
