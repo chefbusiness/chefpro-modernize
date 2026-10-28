@@ -1,0 +1,6322 @@
+{
+ "meta": {
+  "generado": "2026-10-28T18:04:21+00:00",
+  "script": "scripts/productos-digitales/business-plans-en-11/fuente_cof.py",
+  "origen_es": "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil",
+  "dl_es": "/root/tmp-caf-f2",
+  "uso": "CONTENIDO de coffee catering para los redactores (D221, D228, D229). NO se traduce tal cual: se condensa y se adapta a EE. UU. con research (F1-research-us-delta.md §1-§9, glosario §9 obligatorio). Las CIFRAS del ES NO se usan (D231: 107.055 €, 130 eventos, 135 invitados, 6,10 €…): las del caso salen del libro EN (tokens). Fuera: IVA, autónomo, fijo discontinuo, convenio, SMI, RD / Ley / Reglamento, registro sanitario autonómico, comida testigo, ITV, Piaggio / Ape, furgoneta (aquí: remolque cerrado), «feria» (aquí: festival / farmers market), Bizum, «cafetería» (falso amigo: coffee cart / mobile espresso bar), litros, kg y °C como unidad principal, «ChefBusiness»",
+  "fuentes": {
+   "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil/datos_checklist.py": "6d30f334b640dd85d9cce277925b72ff01cda4aec52ab9f746b1b098e45d65de",
+   "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil/textos/contrato_es.json": "c07cdcc0d1adad3cd6a5894bd7492b478dd08d249d157454ec2841631b38e078",
+   "/root/wt-cafemovil/scripts/productos-digitales/plan-cafeteria-movil/datos_escalado.py": "9108c488c6c4044262a89157822d0f767f4130cd374712b82c18cacad8f77f46",
+   "/root/tmp-caf-f2/calc_pub/calculadora-escandallo-presupuesto-cafe-eventos.xlsx": "0b97373b076fc0885fe3193b6c9bdb34960b3424fec68d4f30298dbedf9e2253"
+  },
+  "pendientes": [
+   "docx ES por ranura: 0/61 (textos/caf_es_{a,b}.json)"
+  ]
+ },
+ "checklist_es": {
+  "titulo": "CHECKLIST DE APERTURA — CAFETERÍA MÓVIL PARA EVENTOS",
+  "fases": {
+   "F1 - Constitución": {
+    "titulo": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (semanas 1-4)",
+    "fase_en_sugerida": "P1 Business Setup (constitución → LLC, EIN, sales tax permit, business license, préstamo, contrato con abogado, plan de seguridad alimentaria, CFPM)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Elegir forma jurídica: SL unipersonal o autónomo",
+      "responsable": "Gestoría",
+      "plazo": "Semana 1",
+      "nota": "El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF y tu sueldo es el beneficio: compara las dos opciones con tu gestoría con las cifras del plan"
+     },
+     {
+      "n": 2,
+      "tarea": "Constituir la SL o darte de alta como autónomo",
+      "responsable": "Notaría / Gestoría",
+      "plazo": "Semanas 1-2",
+      "nota": "La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)"
+     },
+     {
+      "n": 3,
+      "tarea": "Alta censal (modelo 036/037) y epígrafes del IAE",
+      "responsable": "Gestoría",
+      "plazo": "Semana 2",
+      "nota": "Para los eventos contratados, el epígrafe 677.9 («otros servicios de alimentación propios de la restauración», RDLeg 1175/1990), como el catering; si vendes al público en mercados o ferias, también el 675. Es criterio de asesoría: confírmalo con tu gestoría. Exento de cuota con una cifra de negocio inferior a 1 millón de euros"
+     },
+     {
+      "n": 4,
+      "tarea": "Alta en la Seguridad Social (administrador o autónomo)",
+      "responsable": "Gestoría",
+      "plazo": "Semana 2",
+      "nota": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad"
+     },
+     {
+      "n": 5,
+      "tarea": "Certificado digital",
+      "responsable": "Titular",
+      "plazo": "Semana 1",
+      "nota": "Imprescindible para Hacienda, la Seguridad Social y la declaración responsable sanitaria"
+     },
+     {
+      "n": 6,
+      "tarea": "Cuenta bancaria y tarjeta del negocio",
+      "responsable": "Titular",
+      "plazo": "Semana 2",
+      "nota": "Separadas de las personales: por ellas pasan las señales, las facturas de empresas y agencias y los pagos al tostador"
+     },
+     {
+      "n": 7,
+      "tarea": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+      "responsable": "Titular",
+      "plazo": "Semanas 2-4",
+      "nota": "Nóminas de los fijos discontinuos cada mes con llamamientos. El software de facturación tiene que cumplir el RD 1007/2023 (Veri*factu): confirma la fecha que te aplica antes de contratarlo"
+     },
+     {
+      "n": 8,
+      "tarea": "IVA trimestral (modelo 303) al 10 %",
+      "responsable": "Gestoría",
+      "plazo": "Cada trimestre",
+      "nota": "Lo que sirves, en la barra del evento o en la venta directa, va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992). Los extras con precio propio (personalización, talleres, alquiler de la cafetera sin barista), al 21 %"
+     },
+     {
+      "n": 9,
+      "tarea": "Pagos fraccionados y retenciones de las nóminas (modelos 202 o 130, y 111)",
+      "responsable": "Gestoría",
+      "plazo": "Cada trimestre",
+      "nota": "SL: modelo 202; autónomo: modelo 130. Tus facturas a empresas NO llevan retención de IRPF: el epígrafe 677.9 es una actividad empresarial (art. 95.6 del Reglamento del IRPF). El 111 recoge las retenciones de las nóminas"
+     },
+     {
+      "n": 10,
+      "tarea": "Declaraciones anuales: 390 y 347",
+      "responsable": "Gestoría",
+      "plazo": "Enero-febrero",
+      "nota": "390: resumen anual del IVA. 347: clientes o proveedores con más de 3.005,06 € en el año (el tostador y las agencias habituales suelen pasarlo)"
+     },
+     {
+      "n": 11,
+      "tarea": "RGPD: registro de actividades de tratamiento y cláusulas en presupuestos y contratos",
+      "responsable": "Titular",
+      "plazo": "Antes del primer presupuesto",
+      "nota": "Art. 30 del RGPD y LOPDGDD. Tratas datos de clientes, de invitados (las alergias son datos de salud) y del personal"
+     },
+     {
+      "n": 12,
+      "tarea": "Web: aviso legal, privacidad, cookies (LSSI) y condiciones de contratación",
+      "responsable": "Titular",
+      "plazo": "Antes de publicar la web",
+      "nota": "Precio final con IVA para particulares. En un servicio con fecha no hay derecho de desistimiento de 14 días si el contrato se cierra a distancia (art. 103.l del TRLGDCU): tu señal, tus pagos y tu cancelación tienen que estar escritos y firmados, como en el contrato del kit"
+     }
+    ]
+   },
+   "F2 - Vehículo y sanidad": {
+    "titulo": "FASE 2: VEHÍCULO, BASE, SANIDAD Y PERMISOS (semanas 3-8)",
+    "fase_en_sugerida": "P2 Permits & Commissary (vehículo y sanidad → commissary + agreement, mobile food unit permit + plan review, temporary event permits, fire marshal y generador, comprar el carro, el remolque en el DMV, GL + COI, alcohol fuera, aguas grises)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Elegir el soporte: barra-carro con furgoneta, Piaggio Ape o remolque",
+      "responsable": "Titular",
+      "plazo": "Semana 3",
+      "nota": "El caso del plan es furgoneta + barra-carro: entra en salones y pabellones. El Ape 50 es un ciclomotor (45 km/h como máximo, sin vías rápidas): para ir lejos, en remolque o furgoneta. Compara las tres configuraciones del plan de negocio (sección 6)"
+     },
+     {
+      "n": 2,
+      "tarea": "Furgoneta: si fijas mueble, fregadero o depósitos, informe de reforma e ITV",
+      "responsable": "Titular / Taller",
+      "plazo": "Antes de equiparla",
+      "nota": "Fijar mobiliario, fregadero o depósitos es una reforma de vehículo: informe de conformidad e ITV de la reforma. Una barra-carro que se carga y se descarga no la necesita. Compruébalo con tu estación de ITV"
+     },
+     {
+      "n": 3,
+      "tarea": "Remolque: hasta 750 kg sin matrícula, con tarjeta ITV propia",
+      "responsable": "Titular",
+      "plazo": "Al comprarlo, si lo usas",
+      "nota": "Hasta 750 kg no lleva matrícula propia y sí tarjeta ITV (Reglamento General de Vehículos, arts. 25 y 26); por encima, matrícula, ITV y seguro, y el carné B o el B96 según el peso del conjunto. Desconfía de los remolques de importación sin homologación europea"
+     },
+     {
+      "n": 4,
+      "tarea": "Almacén base con fregadero y punto de agua",
+      "responsable": "Titular",
+      "plazo": "Semanas 3-6",
+      "nota": "Una nave o un garaje con fregadero para lavar loza, jarras y depósitos, almacén seco y frío, y plaza para la furgoneta. Nada se prepara en casa ni en un trastero sin agua (RD 1021/2022, art. 13.5.b)"
+     },
+     {
+      "n": 5,
+      "tarea": "Declaración responsable e inscripción en el registro sanitario autonómico",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "En el registro de la comunidad donde tiene su base; el vehículo y la barra forman parte del establecimiento (RD 1021/2022). Cada comunidad lo tramita a su manera: compruébalo con tu servicio de salud pública"
+     },
+     {
+      "n": 6,
+      "tarea": "RGSEAA: sólo si vendes a otros negocios",
+      "responsable": "Titular",
+      "plazo": "Solo si aplica",
+      "nota": "El Registro General Sanitario sólo hace falta si suministras a otros negocios (por ejemplo, café en grano con tu marca para tiendas); para servir al cliente final, no"
+     },
+     {
+      "n": 7,
+      "tarea": "Plan APPCC itinerante: agua, leche, limpieza y alérgenos",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Carga del agua, temperaturas de la leche (la de la etiqueta), limpieza de grupos, lanza y jarras, proveedores, alérgenos y formación, con sus registros"
+     },
+     {
+      "n": 8,
+      "tarea": "Agua de los depósitos: carga en red, depósito alimentario y registro",
+      "responsable": "Titular",
+      "plazo": "Desde el primer evento",
+      "nota": "El agua de los depósitos móviles es agua de consumo (RD 3/2023, art. 2.a) y respondes de ella hasta el punto de uso (arts. 65.3 y 66.b): carga en red pública, depósitos de uso alimentario, limpieza y desinfección registradas. El agua gris, a un punto autorizado, nunca al terreno de la finca"
+     },
+     {
+      "n": 9,
+      "tarea": "Comida testigo: sólo si sirves salado",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Si la barra añade sándwiches, tostas o quiches, guarda una ración de 100 g o más de cada uno durante 7 días, a 4 °C o menos, en todos los eventos, porque son tu actividad principal (RD 1086/2020, arts. 30.8.d y 30.10). Según nuestra lectura, las bebidas y la bollería servida tal cual quedan fuera; no hay criterio oficial: confírmalo con tu autoridad sanitaria"
+     },
+     {
+      "n": 10,
+      "tarea": "Fichas de alérgenos de cada bebida y de la bollería",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Leche (también la sin lactosa), soja, frutos de cáscara (almendra, avellana) y avena, que es cereal con gluten salvo la certificada «sin gluten»; siropes, chai y cacao según su etiqueta. Cartel en la barra o información oral registrada por escrito (RD 126/2015)"
+     },
+     {
+      "n": 11,
+      "tarea": "Vasos: loza en bodas y empresa; el de un solo uso, con precio aparte",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "El vaso de papel con forro de PE o PLA también es plástico (Ley 7/2022, art. 2.aa): se cobra aparte en el tique (art. 55.2). Pajitas y agitadores de plástico, prohibidos (art. 56): palillos de madera. En ferias y festivales manda el sistema de vaso reutilizable del organizador (RD 1055/2022, art. 7.6)"
+     },
+     {
+      "n": 12,
+      "tarea": "Seguro de responsabilidad civil de explotación y de producto",
+      "responsable": "Aseguradora",
+      "plazo": "Antes del primer evento",
+      "nota": "Recomendado: de 300.000 a 600.000 €, con daños al recinto y RC de producto. Es lo que suelen pedir fincas, hoteles y recintos feriales: adjunta el certificado a los presupuestos"
+     },
+     {
+      "n": 13,
+      "tarea": "Seguro de la furgoneta y de los equipos",
+      "responsable": "Aseguradora",
+      "plazo": "Al comprarla",
+      "nota": "Declara el uso profesional y la carga (cafetera, generador, depósitos); los equipos que salen a cada evento, asegurados aparte"
+     },
+     {
+      "n": 14,
+      "tarea": "Electricidad: cafetera de 3,5 kW como máximo o toma dedicada",
+      "responsable": "Titular",
+      "plazo": "Antes de comprar la cafetera",
+      "nota": "Una cafetera de dos grupos consume de 2,4 a 4,5 kW y un enchufe de 16 A da unos 3,7 kW: elige una de 3,5 kW como máximo o pide toma dedicada; si no la hay, generador inverter o baterías. En un stand de feria, la instalación la contrata el expositor con el recinto"
+     },
+     {
+      "n": 15,
+      "tarea": "Venta en mercados, ferias y vía pública: autorización municipal",
+      "responsable": "Titular",
+      "plazo": "30-60 días antes",
+      "nota": "Vender al público en la vía pública o en un mercado es venta no sedentaria: autorización municipal por emplazamiento y modalidad, de duración limitada y expuesta al público (RD 199/2010). En un recinto ferial o un festival privado, contrato y canon con el organizador. Pide la ordenanza de tu ayuntamiento"
+     },
+     {
+      "n": 16,
+      "tarea": "Evento contratado en recinto privado: permiso del recinto, por escrito",
+      "responsable": "Titular",
+      "plazo": "Por evento",
+      "nota": "La barra en una finca, un hotel o una oficina es un servicio, no venta ambulante: el permiso es del recinto. Pide por escrito la toma eléctrica, el acceso y el aparcamiento del vehículo, y quién responde de cada permiso (el contrato del kit lo reparte)"
+     }
+    ]
+   },
+   "F3 - Equipo y proveedores": {
+    "titulo": "FASE 3: EQUIPAMIENTO Y PROVEEDORES (semanas 4-8)",
+    "fase_en_sugerida": "P3 Equipment (equipo y proveedores → máquinas y molinos, cadena de frío de la leche, tostador y leches, smallwares, siropes y alt milks, segunda estación, agua, vasos compostables, evento de prueba)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Cafetera de dos grupos de gama media",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "De 3,5 kW como máximo para que quepa en un enchufe de 16 A; con servicio técnico cerca de tu base"
+     },
+     {
+      "n": 2,
+      "tarea": "Molino de espresso bajo demanda y molino de descafeinado o filtro",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "El invitado español pide descafeinado de máquina: un segundo molino evita mezclar y purgar a cada pedido"
+     },
+     {
+      "n": 3,
+      "tarea": "Barra-carro a medida con depósitos ocultos y ruedas",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Que pase por una puerta de salón y suba una rampa; con la carpa de 3 × 3 m y la iluminación para la noche"
+     },
+     {
+      "n": 4,
+      "tarea": "Generador inverter o baterías con inversor, y cuadro con protecciones",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Para las fincas sin toma suficiente. Las baterías son silenciosas para las bodas; el generador, a sotavento y lejos de los invitados"
+     },
+     {
+      "n": 5,
+      "tarea": "Depósitos alimentarios, bomba, filtro descalcificador y lavamanos",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Agua limpia y gris por separado; el filtro protege la cafetera y el sabor del café"
+     },
+     {
+      "n": 6,
+      "tarea": "Nevera bajo barra, neveras portátiles, acumuladores y termómetro",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "La leche, a la temperatura de su etiqueta desde la base hasta la barra; la UHT o la ESL «barista» aguanta mejor el evento"
+     },
+     {
+      "n": 7,
+      "tarea": "Jarras por tipo de leche, tampers y básculas",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Una jarra por cada leche (entera, sin lactosa, avena, soja) y purga de la lanza entre leches: es la medida de alérgenos que más se olvida"
+     },
+     {
+      "n": 8,
+      "tarea": "Loza para 150 invitados y cajas de transporte",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Tazas, platos y cucharillas con reposición durante el lavado (tabla de escalado de la calculadora)"
+     },
+     {
+      "n": 9,
+      "tarea": "Tostador de café de especialidad con ficha de cata",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Pide la ficha del tostador (puntuación SCA de 80 o más) antes de anunciar «café de especialidad»: sin ficha, no lo escribas. Nada de torrefacto. Pacta precio y entrega por trimestre"
+     },
+     {
+      "n": 10,
+      "tarea": "Leche, bebidas vegetales «barista», cacao, chai y siropes",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Con su ficha técnica y de alérgenos; la avena, certificada «sin gluten» si la ofreces a celíacos"
+     },
+     {
+      "n": 11,
+      "tarea": "Obrador de bollería y dulces con ficha de alérgenos",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Se compra hecha y se sirve tal cual: guarda etiquetas y albaranes para la trazabilidad"
+     },
+     {
+      "n": 12,
+      "tarea": "Vasos, tapas, servilletas y palillos de madera",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Para la venta directa; nada de pajitas ni agitadores de plástico"
+     },
+     {
+      "n": 13,
+      "tarea": "TPV, datáfono y software de presupuestos",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Datáfono para la venta directa y software de facturación Veri*factu"
+     },
+     {
+      "n": 14,
+      "tarea": "Uniformes y menaje de limpieza",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Delantales, paños por zonas, detergente de grupos y cepillos"
+     }
+    ]
+   },
+   "F4 - Personal y formación": {
+    "titulo": "FASE 4: PERSONAL Y FORMACIÓN (semanas 6-10)",
+    "fase_en_sugerida": "P4 Staff (personal y formación → baristas por evento, W-2, I-9 / W-4, propinas, food handler cards, seguridad del barista, OSHA, protocolo de servicio y alérgenos)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Camarero/a de barra (barista) como fijo discontinuo",
+      "responsable": "Gestoría",
+      "plazo": "Antes del primer evento",
+      "nota": "«Barista» no es categoría del convenio: se contrata como camarero/a de hostelería (VI Acuerdo Laboral de ámbito Estatal, art. 4: «instalaciones fijas o móviles»), fijo discontinuo con llamamiento (art. 16 del Estatuto de los Trabajadores). Nunca con facturas de autónomo: con tu horario y tu dirección es falso autónomo (art. 1.1)"
+     },
+     {
+      "n": 2,
+      "tarea": "Bolsa de suplencias y de refuerzo para los eventos grandes",
+      "responsable": "Titular",
+      "plazo": "Antes de la temporada",
+      "nota": "Una segunda estación pide un tercer barista: tenlo localizado en tu bolsa de fijos discontinuos (tabla de escalado de la calculadora)"
+     },
+     {
+      "n": 3,
+      "tarea": "Alta en la Seguridad Social antes de cada llamamiento",
+      "responsable": "Gestoría",
+      "plazo": "Antes de cada evento",
+      "nota": "El alta va antes de empezar a trabajar, también para un solo día"
+     },
+     {
+      "n": 4,
+      "tarea": "Formación en higiene alimentaria acreditada por la empresa",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "El antiguo título de manipulador de alimentos ya no se exige: la empresa forma y acredita a su personal (Reglamento (CE) 852/2004, anexo II, cap. XII). Con un módulo de leche, agua y alérgenos"
+     },
+     {
+      "n": 5,
+      "tarea": "Formación de barista: extracción, texturizado y latte art",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Receta de la casa (gramos, tiempo y rendimiento), calibrado del molino y purga del grupo y de la lanza"
+     },
+     {
+      "n": 6,
+      "tarea": "Formación en alérgenos y en el plan APPCC",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Cada persona de la barra sabe qué lleva cada bebida y cada dulce, y cómo evitar el contacto cruzado entre leches"
+     },
+     {
+      "n": 7,
+      "tarea": "Prevención de riesgos laborales: vapor, cargas y conducción",
+      "responsable": "Servicio de prevención",
+      "plazo": "Antes del primer evento",
+      "nota": "Evaluación de riesgos y plan de prevención (Ley 31/1995): quemaduras de vapor, carga de la barra y de los depósitos, conducción y posturas"
+     },
+     {
+      "n": 8,
+      "tarea": "Registro de jornada",
+      "responsable": "Titular",
+      "plazo": "Desde el primer día",
+      "nota": "Obligatorio para todo el personal, también los fijos discontinuos (art. 34.9 del Estatuto de los Trabajadores)"
+     },
+     {
+      "n": 9,
+      "tarea": "Información de protección de datos al trabajador",
+      "responsable": "Gestoría",
+      "plazo": "Al contratar",
+      "nota": "Cláusula informativa en el contrato y en el registro de jornada"
+     },
+     {
+      "n": 10,
+      "tarea": "Fichas de trabajo por formato de evento",
+      "responsable": "Titular",
+      "plazo": "Antes del primer evento",
+      "nota": "Bebidas por invitado, baristas, café, leche y vasos de cada formato (boda, empresa, congreso, feria), sacados de la tabla de escalado de la calculadora"
+     }
+    ]
+   },
+   "F5 - Marca y captación": {
+    "titulo": "FASE 5: MARCA Y CAPTACIÓN (meses 1-3)",
+    "fase_en_sugerida": "P5 Marketing (marca y captación → carta, web, Google, The Knot / Zola, GigSalad / Thumbtack / The Bash, presupuestos con la calculadora, prospección B2B, open house y bridal show)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Nombre, logo e identidad visual",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Comprueba que el nombre está libre en la OEPM y como dominio"
+     },
+     {
+      "n": 2,
+      "tarea": "Web con formulario de presupuesto y SEO técnico",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Galería, formatos, zona de servicio y formulario con invitados, horas y lugar; datos estructurados y Search Console"
+     },
+     {
+      "n": 3,
+      "tarea": "Fotos y vídeo profesionales de la barra y del latte art",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Es lo que miran los novios y los planners antes de pedir presupuesto"
+     },
+     {
+      "n": 4,
+      "tarea": "Perfil de empresa en Google y primeras reseñas",
+      "responsable": "Titular",
+      "plazo": "Mes 1-3",
+      "nota": "La zona que cubres y los servicios; pide la reseña después de cada evento"
+     },
+     {
+      "n": 5,
+      "tarea": "Instagram y TikTok con servicios reales",
+      "responsable": "Titular",
+      "plazo": "Mes 1+",
+      "nota": "La barra montada, el latte art y la cola de invitados funcionan solos en vídeo"
+     },
+     {
+      "n": 6,
+      "tarea": "WhatsApp Business con plantillas",
+      "responsable": "Titular",
+      "plazo": "Mes 1",
+      "nota": "Bienvenida, presupuesto, confirmación y recordatorio de alérgenos y de la toma eléctrica"
+     },
+     {
+      "n": 7,
+      "tarea": "Alta en portales de bodas",
+      "responsable": "Titular",
+      "plazo": "Mes 2",
+      "nota": "Con fotos y precio «desde» con lo que incluye (horas, invitados, desplazamiento)"
+     },
+     {
+      "n": 8,
+      "tarea": "Wedding planners y fincas: lista y primer contacto",
+      "responsable": "Titular",
+      "plazo": "Mes 1-3",
+      "nota": "El café se contrata después que la finca y el catering: llega a los planners y a las fincas de tu zona con un correo personal y el dossier"
+     },
+     {
+      "n": 9,
+      "tarea": "Agencias de eventos y organizadores de congresos",
+      "responsable": "Titular",
+      "plazo": "Mes 2-4",
+      "nota": "Pausas de café, stands de marca y jornadas: es la tipología que sostiene el equilibrio del plan"
+     },
+     {
+      "n": 10,
+      "tarea": "Empresas de la zona: oficinas, presentaciones y Navidad",
+      "responsable": "Titular",
+      "plazo": "Mes 2-4",
+      "nota": "Pop-up de café en la oficina, team building y cenas de Navidad; LinkedIn para llegar a recursos humanos y comunicación"
+     },
+     {
+      "n": 11,
+      "tarea": "Calendario de mercados, ferias y festivales con su canon",
+      "responsable": "Titular",
+      "plazo": "Mes 2-6",
+      "nota": "Elige las jornadas de venta directa por su público y su canon (porcentaje o cuota fija, conviértelo a porcentaje con tu previsión de ventas)"
+     },
+     {
+      "n": 12,
+      "tarea": "Dossier para bodas, empresas y congresos",
+      "responsable": "Titular",
+      "plazo": "Mes 1-2",
+      "nota": "Formatos, carta de bebidas, alérgenos, lo que pides al recinto (toma, acceso, agua) y el precio por invitado de cada tipo de evento"
+     },
+     {
+      "n": 13,
+      "tarea": "Catas para planners, agencias y fincas",
+      "responsable": "Titular",
+      "plazo": "Mes 2-4",
+      "nota": "Una barra montada para los que más eventos mueven: es tu mejor dossier"
+     },
+     {
+      "n": 14,
+      "tarea": "Presencia en una feria nupcial",
+      "responsable": "Titular",
+      "plazo": "Mes 2-6",
+      "nota": "Con la barra montada y café para los visitantes; recoge contactos con permiso para escribirles"
+     }
+    ]
+   },
+   "F6 - Primer evento y 90 días": {
+    "titulo": "FASE 6: PRIMER EVENTO Y 90 DÍAS",
+    "fase_en_sugerida": "P6 First 90 Days (primer evento → llamada final, comprobación de la sala, pedidos, carga, montaje y servicio, recogida, reseña, revisión frente a la calculadora)",
+    "tareas": [
+     {
+      "n": 1,
+      "tarea": "Briefing del cliente",
+      "responsable": "Titular",
+      "plazo": "30 días antes",
+      "nota": "Invitados, horario, formato (barra tras la cena, pausas de congreso, jornada de feria), carta, alergias, lugar, toma eléctrica, agua y acceso para la furgoneta"
+     },
+     {
+      "n": 2,
+      "tarea": "Visita técnica o fotos del recinto",
+      "responsable": "Titular",
+      "plazo": "21 días antes",
+      "nota": "Toma de 16 A dedicada o generador, distancia de la furgoneta a la barra, suelo, sombra o cubierta en exterior, punto de agua y salida del agua gris"
+     },
+     {
+      "n": 3,
+      "tarea": "Presupuesto firmado y señal a cuenta del precio",
+      "responsable": "Titular",
+      "plazo": "Al reservar la fecha",
+      "nota": "Sin señal no se bloquea la fecha. Particulares: 30 % a cuenta del precio al firmar y 70 % siete días antes; empresas: 30 % al confirmar y 70 % a 30 días de la factura. Factura cada pago, también la señal (art. 75.Dos de la Ley 37/1992). En efectivo, sólo pagos por debajo de 1.000 € (Ley 7/2012, art. 7)"
+     },
+     {
+      "n": 4,
+      "tarea": "Contrato firmado con cancelación, plan B de lluvia y fuerza mayor",
+      "responsable": "Titular",
+      "plazo": "Al reservar la fecha",
+      "nota": "Modelo del kit: cancelación en cuatro tramos sin huecos (se retiene el 10, 30, 60 o 100 % menos los costes que te ahorras, y es recíproca), plan B de lluvia (no es fuerza mayor), toma eléctrica y acceso exigidos por escrito al recinto"
+     },
+     {
+      "n": 5,
+      "tarea": "Carta y alérgenos confirmados por escrito",
+      "responsable": "Titular",
+      "plazo": "7 días antes",
+      "nota": "Invitados definitivos, bebidas, leches vegetales y qué invitados tienen alergias o intolerancias"
+     },
+     {
+      "n": 6,
+      "tarea": "Cálculo del evento con la calculadora",
+      "responsable": "Titular",
+      "plazo": "7 días antes",
+      "nota": "Bebidas, baristas, cafeteras, kg de café, litros de leche, vasos o loza, potencia y agua con tus invitados y tus horas"
+     },
+     {
+      "n": 7,
+      "tarea": "Pedido de café, leche y bollería",
+      "responsable": "Titular",
+      "plazo": "5-7 días antes",
+      "nota": "Confirma la entrega 48-72 horas antes; la bollería, el día anterior o el mismo día"
+     },
+     {
+      "n": 8,
+      "tarea": "Carga con la lista: cafetera, molinos, depósitos llenos, loza y fichas de alérgenos",
+      "responsable": "Ayudante",
+      "plazo": "Día del evento",
+      "nota": "Agua cargada en red pública y registrada, leche en neveras con acumuladores, generador con combustible"
+     },
+     {
+      "n": 9,
+      "tarea": "Salida con margen y montaje una hora antes",
+      "responsable": "Titular",
+      "plazo": "Día del evento",
+      "nota": "Una hora de margen sobre el trayecto, montaje y calibrado del molino con la primera tanda de café"
+     },
+     {
+      "n": 10,
+      "tarea": "Servicio, cola y reposición",
+      "responsable": "Titular",
+      "plazo": "Día del evento",
+      "nota": "Jarra por leche, purga entre leches, cartel de alérgenos visible y recuento de bebidas servidas"
+     },
+     {
+      "n": 11,
+      "tarea": "Desmontaje, limpieza y agua gris",
+      "responsable": "Ayudante",
+      "plazo": "Final del evento",
+      "nota": "Grupos y lanza limpios, posos y envases recogidos, el agua gris a un punto autorizado; fotos del espacio antes y después"
+     },
+     {
+      "n": 12,
+      "tarea": "Facturas y vencimientos del evento",
+      "responsable": "Titular",
+      "plazo": "D+1 / D+2",
+      "nota": "Particulares: el 70 % ya se cobró siete días antes. Empresas y agencias: factura del 70 % a 30 días; anota el vencimiento en la previsión de caja"
+     },
+     {
+      "n": 13,
+      "tarea": "Reseña, fotos y agradecimiento al planner",
+      "responsable": "Titular",
+      "plazo": "D+2",
+      "nota": "Pide la reseña y el permiso para publicar las fotos; si vino por un planner o una finca, agradéceselo"
+     },
+     {
+      "n": 14,
+      "tarea": "Costes reales frente al presupuesto y cierre trimestral",
+      "responsable": "Titular",
+      "plazo": "D+7 y cada trimestre",
+      "nota": "Compara las bebidas, el café y las horas reales de cada evento con la calculadora y ajusta precios"
+     }
+    ]
+   }
+  }
+ },
+ "docx_es_por_ranura": {},
+ "contrato_es": [
+  {
+   "estilo": "Kicker",
+   "texto": "AI CHEF PRO · PLAN DE NEGOCIO: CAFETERÍA MÓVIL PARA EVENTOS"
+  },
+  {
+   "estilo": "Title",
+   "texto": "Modelo de contrato de servicio de barra de café"
+  },
+  {
+   "estilo": "Subtitle",
+   "texto": "Contrato para particulares (bodas, comuniones, cumpleaños) y anexo para empresas y organizadores de ferias. Un documento editable."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "**Cómo usar este modelo.** Es un documento orientativo, un punto de partida para que no empieces con la página en blanco. Revísalo con tu asesor o con un abogado, y adáptalo a la normativa de tu comunidad autónoma y de tu ayuntamiento, antes de firmar. Los porcentajes, plazos y tramos son ejemplos del kit: ajústalos a tu caso. Lo que va entre corchetes, como [nombre] o [importe] €, lo rellenas tú en cada contrato."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Tres ideas guían el texto: cada cobro lleva su factura; lo que se retiene y lo que se devuelve es proporcional y recíproco, para que aguante la reclamación de un consumidor; y cada permiso y cada requisito del lugar tiene un responsable escrito, también cuando el recinto o el organizador no firman."
+  },
+  {
+   "estilo": "Separador",
+   "texto": ""
+  },
+  {
+   "estilo": "H1",
+   "texto": "Contrato de servicio de barra de café en un evento"
+  },
+  {
+   "estilo": "Kicker",
+   "texto": "PARA PARTICULARES: BODAS, BAUTIZOS, COMUNIONES, CUMPLEAÑOS Y OTRAS CELEBRACIONES"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "En [ciudad], a [fecha]."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Reunidos"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "De una parte, [nombre o razón social de la cafetería], con NIF/CIF [número], domicilio en [dirección completa], inscrita en el registro sanitario de [comunidad autónoma] con el número [número] (en adelante, la «Cafetería»)."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "De otra parte, D./Dña. [nombre y apellidos], con DNI/NIE [número] y domicilio en [dirección completa], que contrata en su propio nombre como consumidor para una celebración privada (en adelante, el «Cliente»). Si son dos contratantes, por ejemplo los novios, ambos constan aquí con sus datos y responden solidariamente: [segundo contratante, DNI/NIE y domicilio]."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Ambas partes se reconocen capacidad suficiente para contratar y acuerdan las siguientes cláusulas."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Primera · Objeto, lugar y horas de servicio"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "La Cafetería presta al Cliente un servicio de barra de café y bebidas, con su vehículo o equipo móvil, personal y consumibles, en el evento siguiente:"
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "Celebración: [tipo de celebración], el día [fecha]."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "Lugar: [nombre y dirección del recinto], propiedad o gestión de [nombre del titular del recinto]."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "Horas de servicio con la barra abierta: de las [hora] a las [hora], es decir, [número] horas. El montaje empieza [60-90] minutos antes y el desmontaje termina [45-60] minutos después, sin coste añadido."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "Personal: [número] baristas, según la tabla de dimensionado de la Cafetería para el número de invitados."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "**Horas extra.** Si el Cliente quiere prolongar el servicio, lo pide a la Cafetería en el propio evento y esta lo acepta solo si su personal y su material lo permiten. Cada hora o fracción adicional se factura a [importe] € más IVA, en la factura de liquidación."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Segunda · Modalidad de precio"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Las partes eligen una de las tres modalidades siguientes. Marca la que se pacta y borra las otras dos."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "[ ] **Por invitado.** [importe] € más IVA por invitado, con un mínimo garantizado de [número] invitados. El Cliente comunica por escrito el recuento final, con las alergias e intolerancias que conozca, como máximo [7] días antes del evento. Después solo puede subir, si la Cafetería puede atenderlo; no puede bajar del mínimo garantizado, aunque luego asistan menos personas."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "[ ] **Por hora.** [importe] € más IVA por hora de barra abierta y por barista, durante las horas de la cláusula primera, con un mínimo de [número] horas."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "[ ] **Por consumición, con mínimo.** [importe] € más IVA por bebida servida, con una facturación mínima garantizada de [importe] € más IVA. Si las consumiciones no alcanzan el mínimo, la Cafetería factura la diferencia."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Tercera · Carta, alérgenos y vajilla"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "La carta es la del anexo de este contrato o la que las partes pacten por escrito: bebidas de café, té e infusiones, bebidas frías y bebidas sin café, con [leche de vaca, bebida de avena, de soja y de almendra]. Los extras con precio propio (personalización, tazas con el nombre de los novios, talleres de latte art) van con su precio aparte en el presupuesto."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "**Alérgenos.** La Cafetería informa por escrito de los alérgenos de cada bebida y de la bollería: leche (también la sin lactosa), soja, frutos de cáscara (almendra, avellana) y gluten. La bebida de avena se considera cereal con gluten, salvo que sea de una marca certificada sin gluten, y la bollería puede llevar además huevo y sésamo. La barra lleva un cartel con esa información y un aviso de que los invitados pueden preguntar. Usa una jarra distinta para cada tipo de leche, pero no garantiza la ausencia total de trazas: el Cliente avisa de cualquier alergia grave antes del evento y la Cafetería se lo confirma por escrito."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "**Loza por defecto.** El servicio se presta con taza y vaso de loza o vidrio reutilizables, incluidos en el precio. Si el Cliente quiere vasos de un solo uso, se pacta por escrito y se factura aparte a [importe] € por unidad, con línea propia en la factura: la Ley 7/2022 obliga a cobrar por separado los vasos de plástico, y los que llevan forro plástico se tratan igual aunque se anuncien como compostables. No se sirve con pajitas ni agitadores de plástico."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Cuarta · Requisitos del lugar y electricidad"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "El Cliente garantiza que el lugar cumple lo siguiente, y lo comprueba con el titular del recinto antes de firmar. La Cafetería puede visitarlo previamente y, si algo no se cumple, avisa por escrito con [7] días de margen."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Electricidad.** Una cafetera profesional de dos grupos consume entre 2,4 y 4,5 kW, y un enchufe de 16 A da unos 3,7 kW. El Cliente facilita una toma eléctrica dedicada, de [número] kW y a menos de [10] metros de la barra, que no comparta con música, iluminación ni cocina. Si no puede, la Cafetería lleva un generador inverter o baterías con un suplemento de [importe] € más IVA, colocado donde indique el recinto y lejos de los invitados."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Acceso y aparcamiento.** El vehículo cabe y puede llegar hasta [distancia] del punto de la barra. El Cliente consigue la autorización de acceso, la reserva de plaza de aparcamiento durante el montaje, el servicio y el desmontaje, y comunica cualquier limitación de horas, peso o altura."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Superficie y cubierta.** La barra necesita una superficie llana y firme de al menos [número] metros cuadrados. En un lugar exterior hay una cubierta (carpa, pérgola o porche) que proteja la barra y los equipos de la lluvia y del sol directo; sin ella la Cafetería no puede montar la máquina."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Agua.** Hay un punto de agua potable a menos de [30] metros, con un grifo accesible. Si no lo hay, la Cafetería lo lleva en depósitos de uso alimentario con un suplemento de [importe] € más IVA. El agua gris se recoge y se retira en depósito propio; nunca se vierte en el terreno."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "El Cliente responde ante la Cafetería de estos requisitos aunque dependan del recinto y el titular del recinto no firme este contrato. Si el lugar no los cumple y la Cafetería no puede prestar el servicio por ese motivo, se trata como una cancelación del Cliente y se aplica la tabla de la cláusula octava según los días que falten para el evento."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Quinta · Permisos y autorizaciones: quién tramita cada uno"
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**El Cliente** consigue y entrega a la Cafetería, antes del [fecha], el permiso del titular del recinto para celebrar el evento y montar la barra, el acceso y el aparcamiento. Si el evento se celebra en un espacio público, tramita la autorización del ayuntamiento que corresponda."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**El recinto**, cuando existe un titular distinto del Cliente, aporta sus propias licencias de actividad y de aforo. El Cliente se las pide por escrito y se las facilita a la Cafetería si ella las solicita."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**La Cafetería** tiene presentada la declaración responsable en el registro sanitario autonómico, el plan de APPCC de la actividad y un seguro de responsabilidad civil vigente por [importe] €, y entrega copia al Cliente si lo pide. Sus trabajadores tienen la formación en higiene alimentaria al día."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Si la carta incluye productos salados, la Cafetería conserva una muestra de cada uno (ración mínima de 100 g, siete días, refrigerada o congelada) en cada evento. En las bebidas y la bollería que se sirven tal cual, la Cafetería aplica su criterio, que es una interpretación sin criterio oficial, y lo confirma con su autoridad sanitaria."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Sexta · Precio e IVA"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "El precio es el que resulte de la modalidad de la cláusula segunda, estimado en [importe base] € más el IVA del 10 % para todo lo que se sirve para consumir en el acto, que asciende a [importe del IVA] €, lo que suma [importe total] € con IVA incluido. Los extras con precio propio, el suplemento de generador, las horas extra y los vasos de un solo uso llevan el IVA del 21 %, desglosado. Si el precio final depende del recuento, de las horas o de las consumiciones, se ajusta en la factura de liquidación."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Séptima · Pagos, señal y facturas"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "El Cliente abona el precio total con IVA en dos pagos, por transferencia a la cuenta [IBAN] o por el medio que la Cafetería indique por escrito:"
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Señal a cuenta del precio: 30 %** ([importe] € con IVA), a la firma de este contrato."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Liquidación: 70 %** ([importe] € con IVA), [7] días antes del evento, es decir, el [fecha]. En la factura de liquidación se ajustan, al alza o a la baja, el recuento final, las horas extra y los extras."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "La cantidad entregada a la firma es una señal a cuenta del precio, que se descuenta de él si el contrato se cumple. No son arras del artículo 1454 del Código Civil: si una parte cancela, esa señal se rige exclusivamente por la tabla de la cláusula octava y su reciprocidad de la cláusula novena."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "La Cafetería emite una factura por cada cobro, también por la señal, y la envía en el momento en que recibe el pago (artículo 75.Dos de la Ley del IVA: el impuesto se devenga en los pagos anticipados). Si el Cliente se retrasa más de [10] días en un pago, tras requerirlo por escrito, la Cafetería puede dar el contrato por resuelto aplicando la cláusula de cancelación por parte del Cliente."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Octava · Cancelación por parte del Cliente"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Si el Cliente cancela el evento, la Cafetería retiene un porcentaje del precio total con IVA según la antelación con que reciba la cancelación por escrito respecto de la fecha del evento:"
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "Con 60 días o más de antelación: **10 %** del precio."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "De 30 días a menos de 60: **30 %** del precio."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "De 7 días a menos de 30: **60 %** del precio."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "Con menos de 7 días: **100 %** del precio, descontados los costes que la Cafetería se ahorra por no prestar el servicio (consumibles, café y leche sin gastar, personal de refuerzo y desplazamiento)."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Si lo ya cobrado supera lo que se retiene, la Cafetería devuelve la diferencia en [14] días; si es menos, el Cliente abona la diferencia. Estos importes responden a la reserva de la fecha y de los medios, que la Cafetería no puede ofrecer a otros clientes."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Novena · Cancelación por parte de la Cafetería y reciprocidad"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Si es la Cafetería quien cancela o no puede prestar el servicio por una causa que no sea fuerza mayor, devuelve todo lo cobrado en [14] días y le indemniza, además, con la cantidad que habría retenido en ese tramo de antelación, según la tabla anterior. Se pacta de forma recíproca, por la proporcionalidad y la reciprocidad que exigen los artículos 85.6 y 87.2 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios (TRLGDCU). La Cafetería intentará proponer una barra equivalente, pero el Cliente no está obligado a aceptarla."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Décima · Cambio de fecha"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "El Cliente puede pedir por escrito un cambio de fecha, que la Cafetería acepta si tiene disponibilidad y la nueva fecha cae en los [6] meses siguientes. Es gratuito con 60 días o más de antelación; en otro caso se cobra un recargo de [importe] € más IVA y se actualiza el precio a la tarifa vigente."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Undécima · Plan B de lluvia"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "La lluvia no es causa de fuerza mayor ni da derecho a cancelar sin consecuencias, porque se puede prever y se resuelve con la cubierta de la cláusula cuarta. Las partes deciden el plan A o el plan B a más tardar [a las 10:00 h del día del evento]; en caso de duda, decide la Cafetería por razones de seguridad eléctrica y alimentaria. Si el Cliente no ofrece cubierta y la lluvia impide el servicio, se aplica la cláusula octava."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Duodécima · Fuerza mayor"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Ninguna parte responde del incumplimiento si se debe a un suceso imprevisible o inevitable en los términos del artículo 1105 del Código Civil, como una prohibición de la autoridad, un incendio, una inundación, una alerta meteorológica oficial de riesgo o un corte de suministro general que el generador no resuelva. Primero se intenta un cambio de fecha sin recargo dentro de los [6] meses siguientes; si no se logra, la Cafetería devuelve todo lo cobrado, descontando solo los gastos ya soportados y justificados por encargo del Cliente, y ninguna parte debe indemnización a la otra."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Decimotercera · Sin derecho de desistimiento en los contratos a distancia"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Si este contrato se celebra a distancia o fuera del establecimiento de la Cafetería, el Cliente no tiene derecho de desistimiento, porque es un servicio de esparcimiento con fecha de ejecución determinada (artículos 102 y 103.l del TRLGDCU). Puede cancelar con las consecuencias de la cláusula octava, y declara haber sido informado antes de firmar. Si se firma en el establecimiento de la Cafetería, esta cláusula no se aplica."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Decimocuarta · Daños, seguros y responsabilidad"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "La Cafetería responde de los daños que cause su personal y del producto que sirve, con el seguro de la cláusula quinta. El Cliente responde de los daños que causen él, sus invitados y sus proveedores en el equipo de la Cafetería, salvo el desgaste normal."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Decimoquinta · Datos personales e imagen"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "La Cafetería trata los datos personales del Cliente para gestionar este contrato, emitir las facturas y cumplir sus obligaciones legales, y los conserva mientras exista una relación o una obligación de conservarlos. El Cliente puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad en [correo electrónico]. Responsable: [datos de la Cafetería]."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Si la Cafetería quiere usar fotografías o vídeos del evento en su web o en redes sociales, el Cliente decide aparte, en un consentimiento separado que no afecta a este contrato: [ ] Sí autorizo   [ ] No autorizo. Aun si autoriza, puede retirar el consentimiento por escrito cuando quiera."
+  },
+  {
+   "estilo": "H2",
+   "texto": "Decimosexta · Jurisdicción"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Para cualquier controversia derivada de este contrato, las partes se someten a los juzgados y tribunales del domicilio del consumidor, conforme al artículo 90.2 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios."
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Y en prueba de conformidad, firman este contrato por duplicado y a un solo efecto, en el lugar y la fecha del encabezamiento."
+  },
+  {
+   "estilo": "Firma",
+   "texto": "La Cafetería: __________________________        El Cliente: __________________________"
+  },
+  {
+   "estilo": "Firma",
+   "texto": "NIF/CIF: ______________        DNI/NIE: ______________"
+  },
+  {
+   "estilo": "Separador",
+   "texto": ""
+  },
+  {
+   "estilo": "H1",
+   "texto": "Anexo · Condiciones para empresas y organizadores de ferias"
+  },
+  {
+   "estilo": "Kicker",
+   "texto": "PARA EVENTOS CORPORATIVOS, AGENCIAS, CONGRESOS, FERIAS Y MERCADOS"
+  },
+  {
+   "estilo": "Normal",
+   "texto": "Este anexo completa el contrato anterior cuando contrata una empresa, una agencia, un autónomo, una entidad o el organizador de una feria en el ámbito de su actividad. No hay protección de consumidores y las partes pactan libremente lo que sigue; el resto del contrato se mantiene igual."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Partes y datos fiscales.** El cliente identifica su razón social, CIF, domicilio fiscal, la persona que firma, su cargo y su poder de representación, y el correo para facturas. La Cafetería factura cada cobro con esos datos y, si hay orden de compra, con su número."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Pagos.** Señal a cuenta del precio: **30 %** a la firma. Liquidación: **70 %** a 30 días de la factura, que se emite el día siguiente al evento, con el IVA desglosado. Los retrasos devengan los intereses de demora que la ley permite en operaciones entre empresas, sin necesidad de reclamación previa."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Cancelación por el cliente.** La Cafetería retiene sobre el precio total con IVA: con 30 días o más de antelación, **10 %**; de 15 días a menos de 30, **30 %**; de 7 días a menos de 15, **60 %**; con menos de 7 días, **100 %**, descontados los costes que se ahorra. La diferencia con lo cobrado se devuelve o se abona."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Cancelación por la Cafetería.** Devuelve todo lo cobrado. La indemnización adicional es la pactada en este anexo: [la misma cantidad que habría retenido en ese tramo / un importe fijo de [importe] €]."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Ferias y mercados: el organizador.** Cede a la Cafetería el emplazamiento de [número] metros cuadrados, del [fecha] al [fecha], y tramita y entrega, antes del [fecha], la autorización municipal o del recinto para la venta. Facilita la toma eléctrica de la cláusula cuarta, el punto de agua y la retirada de residuos. Si cancela o aplaza la feria, devuelve a la Cafetería lo cobrado, el canon pagado y los gastos justificados ya soportados."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Ferias y mercados: la Cafetería.** Vende por su cuenta y emite sus tickets, con las normas sanitarias de la cláusula quinta. El canon o la tasa del organizador es de [importe] € o del [15] % de la venta, y se detalla en la factura del organizador. No hay exclusividad, salvo pacto expreso por escrito."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Jornadas de congreso.** Las pausas de café se pactan con su horario y su número previsto de asistentes; el recuento final se comunica [5] días antes. La Cafetería no responde de los retrasos del programa que reduzcan el tiempo de servicio, pero cobra las horas previstas."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Condiciones del cliente.** Las condiciones generales del cliente (órdenes de compra, códigos de proveedor, políticas internas) solo valen si la Cafetería las acepta por escrito. Las partes mantienen la confidencialidad sobre el contenido de los eventos y la información comercial que se intercambien."
+  },
+  {
+   "estilo": "List Bullet",
+   "texto": "**Jurisdicción.** Las partes se someten a los juzgados y tribunales de [ciudad], con renuncia a cualquier otro fuero que les pudiera corresponder."
+  },
+  {
+   "estilo": "Firma",
+   "texto": "La Cafetería: __________________________        La empresa u organizador: __________________________"
+  },
+  {
+   "estilo": "Firma",
+   "texto": "NIF/CIF: ______________        CIF: ______________        Cargo: ______________"
+  }
+ ],
+ "escalado_es": {
+  "AJUSTE_HORARIO": [
+   [
+    "Mañana (desayuno y café de media mañana)",
+    0.25
+   ],
+   [
+    "Tarde o jornada mixta",
+    0.0
+   ],
+   [
+    "Noche (después de la cena)",
+    -0.1
+   ]
+  ],
+  "BEBIDAS": [
+   [
+    "Espresso",
+    14,
+    1,
+    0,
+    4,
+    2.2
+   ],
+   [
+    "Americano",
+    14,
+    1,
+    0,
+    8,
+    2.7
+   ],
+   [
+    "Cortado",
+    10,
+    1,
+    80,
+    4,
+    2.4
+   ],
+   [
+    "Café con leche",
+    16,
+    1,
+    180,
+    8,
+    3.3
+   ],
+   [
+    "Flat white",
+    8,
+    1,
+    150,
+    8,
+    3.8
+   ],
+   [
+    "Capuchino",
+    14,
+    1,
+    160,
+    8,
+    3.8
+   ],
+   [
+    "Latte",
+    12,
+    1,
+    240,
+    12,
+    4.2
+   ],
+   [
+    "Mocha",
+    4,
+    1,
+    200,
+    12,
+    4.6
+   ],
+   [
+    "Chai latte",
+    4,
+    0,
+    220,
+    12,
+    4.4
+   ],
+   [
+    "Chocolate a la taza",
+    4,
+    0,
+    200,
+    8,
+    3.8
+   ]
+  ],
+  "BEBIDAS_POR_INVITADO": [
+   [
+    "Hasta 2 horas",
+    2,
+    1.0,
+    "1,0"
+   ],
+   [
+    "Más de 2 y hasta 4 horas",
+    4,
+    1.4,
+    "1,3-1,5"
+   ],
+   [
+    "Más de 4 y hasta 6 horas",
+    6,
+    1.65,
+    "1,5-1,8"
+   ],
+   [
+    "Más de 6 horas (jornada)",
+    null,
+    2.25,
+    "2,0-2,5"
+   ],
+   [
+    "Congreso con pausas de café",
+    null,
+    1.6,
+    "mezcla del caso"
+   ]
+  ],
+  "FILAS_TABLA": [
+   [
+    "bebidas",
+    "Bebidas servidas (ud.)",
+    "ent"
+   ],
+   [
+    "baristas",
+    "Baristas",
+    "ent"
+   ],
+   [
+    "estaciones",
+    "Cafeteras de dos grupos (estaciones)",
+    "ent"
+   ],
+   [
+    "grupos",
+    "Grupos en total",
+    "ent"
+   ],
+   [
+    "molinos",
+    "Molinos",
+    "ent"
+   ],
+   [
+    "kg_cafe",
+    "Café en grano (kg)",
+    "dec"
+   ],
+   [
+    "l_leche",
+    "Leche y bebidas vegetales (l)",
+    "ent"
+   ],
+   [
+    "vasos",
+    "Vasos desechables (ud.)",
+    "ent"
+   ],
+   [
+    "kw",
+    "Potencia de las cafeteras (kW)",
+    "dec"
+   ],
+   [
+    "toma",
+    "Toma eléctrica",
+    "txt"
+   ],
+   [
+    "agua",
+    "Agua limpia (l)",
+    "ent"
+   ]
+  ],
+  "FORMATO_REF": "Más de 2 y hasta 4 horas",
+  "G_POR_DOBLE": 16,
+  "HORARIO_REF": "Tarde o jornada mixta",
+  "HORAS_REF": 3,
+  "KW_ENCHUFE": 3.68,
+  "KW_MAQUINA": 3.5,
+  "LECHES": [
+   [
+    "Leche entera",
+    0.7
+   ],
+   [
+    "Leche sin lactosa",
+    0.1
+   ],
+   [
+    "Bebida de avena barista",
+    0.15
+   ],
+   [
+    "Bebida de soja barista",
+    0.05
+   ]
+  ],
+  "ORIGEN": "estimación del kit (ratios de EE. UU.)",
+  "R": {
+   "cap_barista": 55,
+   "pico": 1.3,
+   "bar_maq": 2,
+   "grupos_maq": 2,
+   "molinos_extra": 1,
+   "purga": 0.15,
+   "reserva": 0.1,
+   "loza_inv": 1.25,
+   "agua_beb": 0.25,
+   "agua_base": 20,
+   "tension": 230,
+   "amp_enchufe": 16,
+   "factor_kva": 1.4
+  },
+  "REGLAS": [
+   [
+    "cap_barista",
+    "Bebidas por hora que saca un barista con una cafetera de dos grupos",
+    "ent",
+    55,
+    "Research: 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120 (ratios de EE. UU.). Se toma 55."
+   ],
+   [
+    "pico",
+    "Factor de pico sobre la media (la cola se concentra tras la cena o en las pausas)",
+    "dec",
+    1.3,
+    "Estimación del kit (ratios de EE. UU.): el pico es un 30 % más alto que la media por hora."
+   ],
+   [
+    "bar_maq",
+    "Baristas que trabajan en una misma cafetera",
+    "ent",
+    2,
+    "Research: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso."
+   ],
+   [
+    "grupos_maq",
+    "Grupos de una cafetera",
+    "ent",
+    2,
+    "La cafetera del caso es de dos grupos (2,4-4,5 kW; la del caso, hasta 3,5 kW)."
+   ],
+   [
+    "molinos_extra",
+    "Molinos de reserva (descafeinado o filtro) además de uno por estación",
+    "ent",
+    1,
+    "Research §4: molinos de espresso bajo demanda más uno de descafeinado o filtro."
+   ],
+   [
+    "purga",
+    "Café de purga y calibrado por evento (kg)",
+    "dec",
+    0.15,
+    "Research: 100-200 g por evento. Se toma 150 g."
+   ],
+   [
+    "reserva",
+    "Reserva de vasos desechables sobre las bebidas",
+    "pct",
+    0.1,
+    "Estimación del kit: derrames, repeticiones y cortesías."
+   ],
+   [
+    "loza_inv",
+    "Tazas de loza por invitado (con reposición durante el lavado)",
+    "dec",
+    1.25,
+    "Del caso: loza para 150 en una boda de 120 invitados (research §4)."
+   ],
+   [
+    "agua_beb",
+    "Agua limpia por bebida (litros: grupo, vapor y aclarado de jarras)",
+    "dec",
+    0.25,
+    "Estimación del kit (ratios de EE. UU.)."
+   ],
+   [
+    "agua_base",
+    "Agua limpia fija por evento (litros: manos, limpieza y reserva)",
+    "ent",
+    20,
+    "Estimación del kit (ratios de EE. UU.)."
+   ],
+   [
+    "tension",
+    "Tensión de la red (V)",
+    "ent",
+    230,
+    "Red monofásica española."
+   ],
+   [
+    "amp_enchufe",
+    "Intensidad de un enchufe doméstico o de finca (A)",
+    "ent",
+    16,
+    "Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW): SPEC D11."
+   ],
+   [
+    "factor_kva",
+    "Factor para dimensionar el generador (kVA por kW de cafetera)",
+    "dec",
+    1.4,
+    "Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (research §0)."
+   ]
+  ],
+  "TAM_REF": [
+   50,
+   100,
+   200,
+   300
+  ]
+ },
+ "calculadora_es": {
+  "Escandallo": {
+   "dim": "A1:O54",
+   "celdas": [
+    [
+     "A1",
+     "ESCANDALLO POR BEBIDA — 16 INSUMOS × 10 BEBIDAS, EN GRAMOS, MILILITROS Y UNIDADES"
+    ],
+    [
+     "A2",
+     "Escribe solo en las celdas VERDES (precios, mermas, cantidades, mezcla y precios de carta). Importes sin IVA salvo el precio de carta. Los precios son estimaciones del kit: pon los de tu proveedor. El coste de una bebida de esta hoja NO es el «coste de bebida» del plan financiero: aquel es la media de la mezcla con la merma, no una receta."
+    ],
+    [
+     "A4",
+     "DATOS GENERALES"
+    ],
+    [
+     "B4",
+     "Valor"
+    ],
+    [
+     "E4",
+     "Notas"
+    ],
+    [
+     "A5",
+     "IVA de la bebida servida (%)"
+    ],
+    [
+     "B5",
+     0.1
+    ],
+    [
+     "E5",
+     "Bebida para consumir en el acto o para llevar: 10 % (Ley 37/1992, art. 91). Los extras con precio propio van al 21 %."
+    ],
+    [
+     "A6",
+     "Food cost objetivo (% sobre el precio sin IVA)"
+    ],
+    [
+     "B6",
+     0.25
+    ],
+    [
+     "E6",
+     "Estimación del kit: referencia de cafetería de 22 a 30 %. Pon el que te marque tu plan financiero."
+    ],
+    [
+     "A7",
+     "Margen de vigilancia sobre el objetivo (puntos)"
+    ],
+    [
+     "B7",
+     0.05
+    ],
+    [
+     "E7",
+     "Hasta este margen por encima del objetivo, el semáforo dice «Vigila el coste»; más allá, «Por encima del objetivo»."
+    ],
+    [
+     "A8",
+     "Gramos de café por doble (g)"
+    ],
+    [
+     "B8",
+     16
+    ],
+    [
+     "E8",
+     "Research §3.b: un doble de especialidad lleva 16-18 g. Mueve los gramos de la fila del café de todas las bebidas."
+    ],
+    [
+     "A10",
+     "INSUMO (cantidad · precio)"
+    ],
+    [
+     "B10",
+     "Precio sin IVA"
+    ],
+    [
+     "C10",
+     "Merma"
+    ],
+    [
+     "D10",
+     "Precio neto"
+    ],
+    [
+     "E10",
+     "Espresso"
+    ],
+    [
+     "F10",
+     "Americano"
+    ],
+    [
+     "G10",
+     "Cortado"
+    ],
+    [
+     "H10",
+     "Café con leche"
+    ],
+    [
+     "I10",
+     "Flat white"
+    ],
+    [
+     "J10",
+     "Capuchino"
+    ],
+    [
+     "K10",
+     "Latte"
+    ],
+    [
+     "L10",
+     "Mocha"
+    ],
+    [
+     "M10",
+     "Chai latte"
+    ],
+    [
+     "N10",
+     "Chocolate a la taza"
+    ],
+    [
+     "O10",
+     "ORIGEN DEL PRECIO DE EJEMPLO"
+    ],
+    [
+     "A11",
+     "Precio de carta con IVA (€)"
+    ],
+    [
+     "E11",
+     2.2
+    ],
+    [
+     "F11",
+     2.7
+    ],
+    [
+     "G11",
+     2.4
+    ],
+    [
+     "H11",
+     3.3
+    ],
+    [
+     "I11",
+     3.8
+    ],
+    [
+     "J11",
+     3.8
+    ],
+    [
+     "K11",
+     4.2
+    ],
+    [
+     "L11",
+     4.6
+    ],
+    [
+     "M11",
+     4.4
+    ],
+    [
+     "N11",
+     3.8
+    ],
+    [
+     "A12",
+     "Mezcla de ventas (% de las bebidas)"
+    ],
+    [
+     "E12",
+     0.14
+    ],
+    [
+     "F12",
+     0.14
+    ],
+    [
+     "G12",
+     0.1
+    ],
+    [
+     "H12",
+     0.16
+    ],
+    [
+     "I12",
+     0.08
+    ],
+    [
+     "J12",
+     0.14
+    ],
+    [
+     "K12",
+     0.12
+    ],
+    [
+     "L12",
+     0.04
+    ],
+    [
+     "M12",
+     0.04
+    ],
+    [
+     "N12",
+     0.04
+    ],
+    [
+     "A13",
+     "Dobles de espresso por bebida"
+    ],
+    [
+     "E13",
+     1
+    ],
+    [
+     "F13",
+     1
+    ],
+    [
+     "G13",
+     1
+    ],
+    [
+     "H13",
+     1
+    ],
+    [
+     "I13",
+     1
+    ],
+    [
+     "J13",
+     1
+    ],
+    [
+     "K13",
+     1
+    ],
+    [
+     "L13",
+     1
+    ],
+    [
+     "M13",
+     0
+    ],
+    [
+     "N13",
+     0
+    ],
+    [
+     "A14",
+     "Café en grano (g · €/kg)"
+    ],
+    [
+     "B14",
+     22
+    ],
+    [
+     "C14",
+     0.1
+    ],
+    [
+     "D14",
+     "=B14/(1-C14)"
+    ],
+    [
+     "E14",
+     "=E$13*$B$8"
+    ],
+    [
+     "F14",
+     "=F$13*$B$8"
+    ],
+    [
+     "G14",
+     "=G$13*$B$8"
+    ],
+    [
+     "H14",
+     "=H$13*$B$8"
+    ],
+    [
+     "I14",
+     "=I$13*$B$8"
+    ],
+    [
+     "J14",
+     "=J$13*$B$8"
+    ],
+    [
+     "K14",
+     "=K$13*$B$8"
+    ],
+    [
+     "L14",
+     "=L$13*$B$8"
+    ],
+    [
+     "M14",
+     "=M$13*$B$8"
+    ],
+    [
+     "N14",
+     "=N$13*$B$8"
+    ],
+    [
+     "O14",
+     "Research §3.b: 18-28 €/kg, caso 22 €/kg [estimado]; 10 % de merma por purga y calibrado."
+    ],
+    [
+     "A15",
+     "Leche entera (ml · €/l)"
+    ],
+    [
+     "B15",
+     1.05
+    ],
+    [
+     "C15",
+     0.1
+    ],
+    [
+     "D15",
+     "=B15/(1-C15)"
+    ],
+    [
+     "E15",
+     0
+    ],
+    [
+     "F15",
+     0
+    ],
+    [
+     "G15",
+     56
+    ],
+    [
+     "H15",
+     126
+    ],
+    [
+     "I15",
+     105
+    ],
+    [
+     "J15",
+     112
+    ],
+    [
+     "K15",
+     168
+    ],
+    [
+     "L15",
+     140
+    ],
+    [
+     "M15",
+     154
+    ],
+    [
+     "N15",
+     140
+    ],
+    [
+     "O15",
+     "Research §3.b: ≈ 1,05 €/l [estimado]."
+    ],
+    [
+     "A16",
+     "Leche sin lactosa (ml · €/l)"
+    ],
+    [
+     "B16",
+     1.35
+    ],
+    [
+     "C16",
+     0.1
+    ],
+    [
+     "D16",
+     "=B16/(1-C16)"
+    ],
+    [
+     "E16",
+     0
+    ],
+    [
+     "F16",
+     0
+    ],
+    [
+     "G16",
+     8
+    ],
+    [
+     "H16",
+     18
+    ],
+    [
+     "I16",
+     15
+    ],
+    [
+     "J16",
+     16
+    ],
+    [
+     "K16",
+     24
+    ],
+    [
+     "L16",
+     20
+    ],
+    [
+     "M16",
+     22
+    ],
+    [
+     "N16",
+     20
+    ],
+    [
+     "O16",
+     "Estimación del kit."
+    ],
+    [
+     "A17",
+     "Bebida de avena barista (ml · €/l)"
+    ],
+    [
+     "B17",
+     2.5
+    ],
+    [
+     "C17",
+     0.1
+    ],
+    [
+     "D17",
+     "=B17/(1-C17)"
+    ],
+    [
+     "E17",
+     0
+    ],
+    [
+     "F17",
+     0
+    ],
+    [
+     "G17",
+     12
+    ],
+    [
+     "H17",
+     27
+    ],
+    [
+     "I17",
+     22
+    ],
+    [
+     "J17",
+     24
+    ],
+    [
+     "K17",
+     36
+    ],
+    [
+     "L17",
+     30
+    ],
+    [
+     "M17",
+     33
+    ],
+    [
+     "N17",
+     30
+    ],
+    [
+     "O17",
+     "Research §3.b: ≈ 2,50 €/l [estimado]."
+    ],
+    [
+     "A18",
+     "Bebida de soja barista (ml · €/l)"
+    ],
+    [
+     "B18",
+     1.9
+    ],
+    [
+     "C18",
+     0.1
+    ],
+    [
+     "D18",
+     "=B18/(1-C18)"
+    ],
+    [
+     "E18",
+     0
+    ],
+    [
+     "F18",
+     0
+    ],
+    [
+     "G18",
+     4
+    ],
+    [
+     "H18",
+     9
+    ],
+    [
+     "I18",
+     8
+    ],
+    [
+     "J18",
+     8
+    ],
+    [
+     "K18",
+     12
+    ],
+    [
+     "L18",
+     10
+    ],
+    [
+     "M18",
+     11
+    ],
+    [
+     "N18",
+     10
+    ],
+    [
+     "O18",
+     "Estimación del kit."
+    ],
+    [
+     "A19",
+     "Cacao en polvo (g · €/kg)"
+    ],
+    [
+     "B19",
+     9
+    ],
+    [
+     "C19",
+     0.05
+    ],
+    [
+     "D19",
+     "=B19/(1-C19)"
+    ],
+    [
+     "E19",
+     0
+    ],
+    [
+     "F19",
+     0
+    ],
+    [
+     "G19",
+     0
+    ],
+    [
+     "H19",
+     0
+    ],
+    [
+     "I19",
+     0
+    ],
+    [
+     "J19",
+     2
+    ],
+    [
+     "K19",
+     0
+    ],
+    [
+     "L19",
+     15
+    ],
+    [
+     "M19",
+     0
+    ],
+    [
+     "N19",
+     25
+    ],
+    [
+     "O19",
+     "Estimación del kit."
+    ],
+    [
+     "A20",
+     "Concentrado de chai (ml · €/l)"
+    ],
+    [
+     "B20",
+     6
+    ],
+    [
+     "C20",
+     0.05
+    ],
+    [
+     "D20",
+     "=B20/(1-C20)"
+    ],
+    [
+     "E20",
+     0
+    ],
+    [
+     "F20",
+     0
+    ],
+    [
+     "G20",
+     0
+    ],
+    [
+     "H20",
+     0
+    ],
+    [
+     "I20",
+     0
+    ],
+    [
+     "J20",
+     0
+    ],
+    [
+     "K20",
+     0
+    ],
+    [
+     "L20",
+     0
+    ],
+    [
+     "M20",
+     60
+    ],
+    [
+     "N20",
+     0
+    ],
+    [
+     "O20",
+     "Estimación del kit."
+    ],
+    [
+     "A21",
+     "Sirope de vainilla o caramelo (ml · €/l)"
+    ],
+    [
+     "B21",
+     6
+    ],
+    [
+     "C21",
+     0.05
+    ],
+    [
+     "D21",
+     "=B21/(1-C21)"
+    ],
+    [
+     "E21",
+     0
+    ],
+    [
+     "F21",
+     0
+    ],
+    [
+     "G21",
+     0
+    ],
+    [
+     "H21",
+     0
+    ],
+    [
+     "I21",
+     0
+    ],
+    [
+     "J21",
+     0
+    ],
+    [
+     "K21",
+     10
+    ],
+    [
+     "L21",
+     0
+    ],
+    [
+     "M21",
+     0
+    ],
+    [
+     "N21",
+     0
+    ],
+    [
+     "O21",
+     "Estimación del kit."
+    ],
+    [
+     "A22",
+     "Té e infusiones (g · €/kg)"
+    ],
+    [
+     "B22",
+     40
+    ],
+    [
+     "C22",
+     0.05
+    ],
+    [
+     "D22",
+     "=B22/(1-C22)"
+    ],
+    [
+     "E22",
+     0
+    ],
+    [
+     "F22",
+     0
+    ],
+    [
+     "G22",
+     0
+    ],
+    [
+     "H22",
+     0
+    ],
+    [
+     "I22",
+     0
+    ],
+    [
+     "J22",
+     0
+    ],
+    [
+     "K22",
+     0
+    ],
+    [
+     "L22",
+     0
+    ],
+    [
+     "M22",
+     0
+    ],
+    [
+     "N22",
+     0
+    ],
+    [
+     "O22",
+     "Hueco para tu carta de infusiones: vacío en el ejemplo."
+    ],
+    [
+     "A23",
+     "Azúcar (g · €/kg)"
+    ],
+    [
+     "B23",
+     1.5
+    ],
+    [
+     "C23",
+     0
+    ],
+    [
+     "D23",
+     "=B23/(1-C23)"
+    ],
+    [
+     "E23",
+     0
+    ],
+    [
+     "F23",
+     0
+    ],
+    [
+     "G23",
+     0
+    ],
+    [
+     "H23",
+     0
+    ],
+    [
+     "I23",
+     0
+    ],
+    [
+     "J23",
+     0
+    ],
+    [
+     "K23",
+     0
+    ],
+    [
+     "L23",
+     8
+    ],
+    [
+     "M23",
+     0
+    ],
+    [
+     "N23",
+     10
+    ],
+    [
+     "O23",
+     "Estimación del kit."
+    ],
+    [
+     "A24",
+     "Vaso de 4 oz (ud. · €/ud.)"
+    ],
+    [
+     "B24",
+     0.05
+    ],
+    [
+     "C24",
+     0.03
+    ],
+    [
+     "D24",
+     "=B24/(1-C24)"
+    ],
+    [
+     "E24",
+     1
+    ],
+    [
+     "F24",
+     0
+    ],
+    [
+     "G24",
+     1
+    ],
+    [
+     "H24",
+     0
+    ],
+    [
+     "I24",
+     0
+    ],
+    [
+     "J24",
+     0
+    ],
+    [
+     "K24",
+     0
+    ],
+    [
+     "L24",
+     0
+    ],
+    [
+     "M24",
+     0
+    ],
+    [
+     "N24",
+     0
+    ],
+    [
+     "O24",
+     "Research §3.b: vaso, tapa, servilleta y removedor ≈ 0,13 € por bebida [cálculo]."
+    ],
+    [
+     "A25",
+     "Vaso de 8 oz (ud. · €/ud.)"
+    ],
+    [
+     "B25",
+     0.07
+    ],
+    [
+     "C25",
+     0.03
+    ],
+    [
+     "D25",
+     "=B25/(1-C25)"
+    ],
+    [
+     "E25",
+     0
+    ],
+    [
+     "F25",
+     1
+    ],
+    [
+     "G25",
+     0
+    ],
+    [
+     "H25",
+     1
+    ],
+    [
+     "I25",
+     1
+    ],
+    [
+     "J25",
+     1
+    ],
+    [
+     "K25",
+     0
+    ],
+    [
+     "L25",
+     0
+    ],
+    [
+     "M25",
+     0
+    ],
+    [
+     "N25",
+     1
+    ],
+    [
+     "O25",
+     "Ídem."
+    ],
+    [
+     "A26",
+     "Vaso de 12 oz (ud. · €/ud.)"
+    ],
+    [
+     "B26",
+     0.09
+    ],
+    [
+     "C26",
+     0.03
+    ],
+    [
+     "D26",
+     "=B26/(1-C26)"
+    ],
+    [
+     "E26",
+     0
+    ],
+    [
+     "F26",
+     0
+    ],
+    [
+     "G26",
+     0
+    ],
+    [
+     "H26",
+     0
+    ],
+    [
+     "I26",
+     0
+    ],
+    [
+     "J26",
+     0
+    ],
+    [
+     "K26",
+     1
+    ],
+    [
+     "L26",
+     1
+    ],
+    [
+     "M26",
+     1
+    ],
+    [
+     "N26",
+     0
+    ],
+    [
+     "O26",
+     "Ídem."
+    ],
+    [
+     "A27",
+     "Tapa (ud. · €/ud.)"
+    ],
+    [
+     "B27",
+     0.03
+    ],
+    [
+     "C27",
+     0.03
+    ],
+    [
+     "D27",
+     "=B27/(1-C27)"
+    ],
+    [
+     "E27",
+     0
+    ],
+    [
+     "F27",
+     1
+    ],
+    [
+     "G27",
+     0
+    ],
+    [
+     "H27",
+     1
+    ],
+    [
+     "I27",
+     1
+    ],
+    [
+     "J27",
+     1
+    ],
+    [
+     "K27",
+     1
+    ],
+    [
+     "L27",
+     1
+    ],
+    [
+     "M27",
+     1
+    ],
+    [
+     "N27",
+     1
+    ],
+    [
+     "O27",
+     "Ídem."
+    ],
+    [
+     "A28",
+     "Removedor de madera (ud. · €/ud.)"
+    ],
+    [
+     "B28",
+     0.01
+    ],
+    [
+     "C28",
+     0.03
+    ],
+    [
+     "D28",
+     "=B28/(1-C28)"
+    ],
+    [
+     "E28",
+     1
+    ],
+    [
+     "F28",
+     1
+    ],
+    [
+     "G28",
+     1
+    ],
+    [
+     "H28",
+     1
+    ],
+    [
+     "I28",
+     1
+    ],
+    [
+     "J28",
+     1
+    ],
+    [
+     "K28",
+     1
+    ],
+    [
+     "L28",
+     1
+    ],
+    [
+     "M28",
+     1
+    ],
+    [
+     "N28",
+     1
+    ],
+    [
+     "O28",
+     "Ídem. Los agitadores de plástico están prohibidos (Ley 7/2022, art. 56)."
+    ],
+    [
+     "A29",
+     "Servilleta (ud. · €/ud.)"
+    ],
+    [
+     "B29",
+     0.01
+    ],
+    [
+     "C29",
+     0.03
+    ],
+    [
+     "D29",
+     "=B29/(1-C29)"
+    ],
+    [
+     "E29",
+     1
+    ],
+    [
+     "F29",
+     1
+    ],
+    [
+     "G29",
+     1
+    ],
+    [
+     "H29",
+     1
+    ],
+    [
+     "I29",
+     1
+    ],
+    [
+     "J29",
+     1
+    ],
+    [
+     "K29",
+     1
+    ],
+    [
+     "L29",
+     1
+    ],
+    [
+     "M29",
+     1
+    ],
+    [
+     "N29",
+     1
+    ],
+    [
+     "O29",
+     "Ídem."
+    ],
+    [
+     "A31",
+     "RESULTADO POR BEBIDA"
+    ],
+    [
+     "E31",
+     "=E10"
+    ],
+    [
+     "F31",
+     "=F10"
+    ],
+    [
+     "G31",
+     "=G10"
+    ],
+    [
+     "H31",
+     "=H10"
+    ],
+    [
+     "I31",
+     "=I10"
+    ],
+    [
+     "J31",
+     "=J10"
+    ],
+    [
+     "K31",
+     "=K10"
+    ],
+    [
+     "L31",
+     "=L10"
+    ],
+    [
+     "M31",
+     "=M10"
+    ],
+    [
+     "N31",
+     "=N10"
+    ],
+    [
+     "A32",
+     "Leche y bebida vegetal en total (ml)"
+    ],
+    [
+     "E32",
+     "=SUM(E15:E18)"
+    ],
+    [
+     "F32",
+     "=SUM(F15:F18)"
+    ],
+    [
+     "G32",
+     "=SUM(G15:G18)"
+    ],
+    [
+     "H32",
+     "=SUM(H15:H18)"
+    ],
+    [
+     "I32",
+     "=SUM(I15:I18)"
+    ],
+    [
+     "J32",
+     "=SUM(J15:J18)"
+    ],
+    [
+     "K32",
+     "=SUM(K15:K18)"
+    ],
+    [
+     "L32",
+     "=SUM(L15:L18)"
+    ],
+    [
+     "M32",
+     "=SUM(M15:M18)"
+    ],
+    [
+     "N32",
+     "=SUM(N15:N18)"
+    ],
+    [
+     "A33",
+     "Coste de producto (€)"
+    ],
+    [
+     "E33",
+     "=SUMPRODUCT(E$14:E$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "F33",
+     "=SUMPRODUCT(F$14:F$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "G33",
+     "=SUMPRODUCT(G$14:G$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "H33",
+     "=SUMPRODUCT(H$14:H$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "I33",
+     "=SUMPRODUCT(I$14:I$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "J33",
+     "=SUMPRODUCT(J$14:J$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "K33",
+     "=SUMPRODUCT(K$14:K$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "L33",
+     "=SUMPRODUCT(L$14:L$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "M33",
+     "=SUMPRODUCT(M$14:M$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "N33",
+     "=SUMPRODUCT(N$14:N$23,$D$14:$D$23)/1000"
+    ],
+    [
+     "A34",
+     "Coste de envase y mesa (€)"
+    ],
+    [
+     "E34",
+     "=SUMPRODUCT(E$24:E$29,$D$24:$D$29)"
+    ],
+    [
+     "F34",
+     "=SUMPRODUCT(F$24:F$29,$D$24:$D$29)"
+    ],
+    [
+     "G34",
+     "=SUMPRODUCT(G$24:G$29,$D$24:$D$29)"
+    ],
+    [
+     "H34",
+     "=SUMPRODUCT(H$24:H$29,$D$24:$D$29)"
+    ],
+    [
+     "I34",
+     "=SUMPRODUCT(I$24:I$29,$D$24:$D$29)"
+    ],
+    [
+     "J34",
+     "=SUMPRODUCT(J$24:J$29,$D$24:$D$29)"
+    ],
+    [
+     "K34",
+     "=SUMPRODUCT(K$24:K$29,$D$24:$D$29)"
+    ],
+    [
+     "L34",
+     "=SUMPRODUCT(L$24:L$29,$D$24:$D$29)"
+    ],
+    [
+     "M34",
+     "=SUMPRODUCT(M$24:M$29,$D$24:$D$29)"
+    ],
+    [
+     "N34",
+     "=SUMPRODUCT(N$24:N$29,$D$24:$D$29)"
+    ],
+    [
+     "A35",
+     "Coste total con envase (€)"
+    ],
+    [
+     "E35",
+     "=E33+E34"
+    ],
+    [
+     "F35",
+     "=F33+F34"
+    ],
+    [
+     "G35",
+     "=G33+G34"
+    ],
+    [
+     "H35",
+     "=H33+H34"
+    ],
+    [
+     "I35",
+     "=I33+I34"
+    ],
+    [
+     "J35",
+     "=J33+J34"
+    ],
+    [
+     "K35",
+     "=K33+K34"
+    ],
+    [
+     "L35",
+     "=L33+L34"
+    ],
+    [
+     "M35",
+     "=M33+M34"
+    ],
+    [
+     "N35",
+     "=N33+N34"
+    ],
+    [
+     "A36",
+     "Precio de carta sin IVA (€)"
+    ],
+    [
+     "E36",
+     "=E11/(1+$B$5)"
+    ],
+    [
+     "F36",
+     "=F11/(1+$B$5)"
+    ],
+    [
+     "G36",
+     "=G11/(1+$B$5)"
+    ],
+    [
+     "H36",
+     "=H11/(1+$B$5)"
+    ],
+    [
+     "I36",
+     "=I11/(1+$B$5)"
+    ],
+    [
+     "J36",
+     "=J11/(1+$B$5)"
+    ],
+    [
+     "K36",
+     "=K11/(1+$B$5)"
+    ],
+    [
+     "L36",
+     "=L11/(1+$B$5)"
+    ],
+    [
+     "M36",
+     "=M11/(1+$B$5)"
+    ],
+    [
+     "N36",
+     "=N11/(1+$B$5)"
+    ],
+    [
+     "A37",
+     "Food cost sin envase"
+    ],
+    [
+     "E37",
+     "=E33/E36"
+    ],
+    [
+     "F37",
+     "=F33/F36"
+    ],
+    [
+     "G37",
+     "=G33/G36"
+    ],
+    [
+     "H37",
+     "=H33/H36"
+    ],
+    [
+     "I37",
+     "=I33/I36"
+    ],
+    [
+     "J37",
+     "=J33/J36"
+    ],
+    [
+     "K37",
+     "=K33/K36"
+    ],
+    [
+     "L37",
+     "=L33/L36"
+    ],
+    [
+     "M37",
+     "=M33/M36"
+    ],
+    [
+     "N37",
+     "=N33/N36"
+    ],
+    [
+     "A38",
+     "Food cost con envase"
+    ],
+    [
+     "E38",
+     "=E35/E36"
+    ],
+    [
+     "F38",
+     "=F35/F36"
+    ],
+    [
+     "G38",
+     "=G35/G36"
+    ],
+    [
+     "H38",
+     "=H35/H36"
+    ],
+    [
+     "I38",
+     "=I35/I36"
+    ],
+    [
+     "J38",
+     "=J35/J36"
+    ],
+    [
+     "K38",
+     "=K35/K36"
+    ],
+    [
+     "L38",
+     "=L35/L36"
+    ],
+    [
+     "M38",
+     "=M35/M36"
+    ],
+    [
+     "N38",
+     "=N35/N36"
+    ],
+    [
+     "A39",
+     "Semáforo del food cost"
+    ],
+    [
+     "E39",
+     "=IF(E38<=$B$6,\"En objetivo\",IF(E38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "F39",
+     "=IF(F38<=$B$6,\"En objetivo\",IF(F38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "G39",
+     "=IF(G38<=$B$6,\"En objetivo\",IF(G38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "H39",
+     "=IF(H38<=$B$6,\"En objetivo\",IF(H38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "I39",
+     "=IF(I38<=$B$6,\"En objetivo\",IF(I38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "J39",
+     "=IF(J38<=$B$6,\"En objetivo\",IF(J38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "K39",
+     "=IF(K38<=$B$6,\"En objetivo\",IF(K38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "L39",
+     "=IF(L38<=$B$6,\"En objetivo\",IF(L38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "M39",
+     "=IF(M38<=$B$6,\"En objetivo\",IF(M38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "N39",
+     "=IF(N38<=$B$6,\"En objetivo\",IF(N38<=$B$6+$B$7,\"Vigila el coste\",\"Por encima del objetivo\"))"
+    ],
+    [
+     "A40",
+     "Margen por bebida (€)"
+    ],
+    [
+     "E40",
+     "=E36-E35"
+    ],
+    [
+     "F40",
+     "=F36-F35"
+    ],
+    [
+     "G40",
+     "=G36-G35"
+    ],
+    [
+     "H40",
+     "=H36-H35"
+    ],
+    [
+     "I40",
+     "=I36-I35"
+    ],
+    [
+     "J40",
+     "=J36-J35"
+    ],
+    [
+     "K40",
+     "=K36-K35"
+    ],
+    [
+     "L40",
+     "=L36-L35"
+    ],
+    [
+     "M40",
+     "=M36-M35"
+    ],
+    [
+     "N40",
+     "=N36-N35"
+    ],
+    [
+     "A41",
+     "Precio de carta con IVA para llegar al objetivo (€)"
+    ],
+    [
+     "E41",
+     "=E35/$B$6*(1+$B$5)"
+    ],
+    [
+     "F41",
+     "=F35/$B$6*(1+$B$5)"
+    ],
+    [
+     "G41",
+     "=G35/$B$6*(1+$B$5)"
+    ],
+    [
+     "H41",
+     "=H35/$B$6*(1+$B$5)"
+    ],
+    [
+     "I41",
+     "=I35/$B$6*(1+$B$5)"
+    ],
+    [
+     "J41",
+     "=J35/$B$6*(1+$B$5)"
+    ],
+    [
+     "K41",
+     "=K35/$B$6*(1+$B$5)"
+    ],
+    [
+     "L41",
+     "=L35/$B$6*(1+$B$5)"
+    ],
+    [
+     "M41",
+     "=M35/$B$6*(1+$B$5)"
+    ],
+    [
+     "N41",
+     "=N35/$B$6*(1+$B$5)"
+    ],
+    [
+     "A43",
+     "COSTE DE LA MEZCLA (lo lee la hoja «Calculadora»)"
+    ],
+    [
+     "B43",
+     "Valor"
+    ],
+    [
+     "A44",
+     "Suma de la mezcla de ventas"
+    ],
+    [
+     "B44",
+     "=SUM($E$12:$N$12)"
+    ],
+    [
+     "A45",
+     "Comprobación de la mezcla"
+    ],
+    [
+     "B45",
+     "=IF(ROUND($B$44,2)=1,\"Correcto: la mezcla suma el cien por cien\",\"Revisa la mezcla: no suma el cien por cien\")"
+    ],
+    [
+     "A46",
+     "Coste medio por bebida sin envase (€)"
+    ],
+    [
+     "B46",
+     "=IF($B$44=0,0,VALUE(SUMPRODUCT($E$12:$N$12,$E$33:$N$33))/$B$44)"
+    ],
+    [
+     "A47",
+     "Coste medio de envase y mesa por bebida (€)"
+    ],
+    [
+     "B47",
+     "=IF($B$44=0,0,VALUE(SUMPRODUCT($E$12:$N$12,$E$34:$N$34))/$B$44)"
+    ],
+    [
+     "A48",
+     "Coste medio por bebida con envase (€)"
+    ],
+    [
+     "B48",
+     "=$B$46+$B$47"
+    ],
+    [
+     "A49",
+     "Café medio por bebida (g)"
+    ],
+    [
+     "B49",
+     "=IF($B$44=0,0,VALUE(SUMPRODUCT($E$12:$N$12,$E$14:$N$14))/$B$44)"
+    ],
+    [
+     "A50",
+     "Leche media por bebida (ml)"
+    ],
+    [
+     "B50",
+     "=IF($B$44=0,0,VALUE(SUMPRODUCT($E$12:$N$12,$E$32:$N$32))/$B$44)"
+    ],
+    [
+     "A51",
+     "Ticket medio sin IVA de tu carta (€)"
+    ],
+    [
+     "B51",
+     "=IF($B$44=0,0,VALUE(SUMPRODUCT($E$12:$N$12,$E$36:$N$36))/$B$44)"
+    ],
+    [
+     "A52",
+     "Food cost de la mezcla (con envase)"
+    ],
+    [
+     "B52",
+     "=IF($B$51=0,0,$B$48/$B$51)"
+    ],
+    [
+     "A54",
+     "El coste con envase es el de la bebida servida en vaso de un solo uso; en loza solo cuenta el coste de producto. Los vasos de papel con forro de PE o PLA (\"compostables\") son plástico a efectos de la Ley 7/2022: se cobran aparte en el ticket. El food cost del plan financiero es otra cosa: la media de la mezcla con la merma."
+    ]
+   ]
+  },
+  "Calculadora": {
+   "dim": "A1:F159",
+   "celdas": [
+    [
+     "A1",
+     "CALCULADORA DE PRECIOS DE CAFETERÍA MÓVIL PARA EVENTOS — DE LA TAZA AL PRESUPUESTO"
+    ],
+    [
+     "A2",
+     "Escribe sólo en las celdas VERDES: todo lo demás se calcula. Importes sin IVA salvo donde la fila diga lo contrario. Los valores por defecto son estimaciones del kit (ratios de EE. UU. en el consumo): cámbialos por los tuyos."
+    ],
+    [
+     "A4",
+     "DATOS DEL EVENTO"
+    ],
+    [
+     "B4",
+     "Valor"
+    ],
+    [
+     "C4",
+     "Notas"
+    ],
+    [
+     "A5",
+     "Cliente"
+    ],
+    [
+     "B5",
+     "Particular"
+    ],
+    [
+     "C5",
+     "Particular, Empresa o Feria: cambian el margen objetivo, el canon, el cobro y los tramos de cancelación (tabla del final). En Feria, «invitados» son las tazas que esperas vender."
+    ],
+    [
+     "A6",
+     "Invitados previstos (en Feria, tazas previstas)"
+    ],
+    [
+     "B6",
+     120
+    ],
+    [
+     "C6",
+     "Número entero de invitados a los que sirves."
+    ],
+    [
+     "A7",
+     "Formato del servicio (fija las bebidas por invitado)"
+    ],
+    [
+     "B7",
+     "Más de 2 y hasta 4 horas"
+    ],
+    [
+     "C7",
+     "Bebidas por invitado según las horas de barra: tabla del final (estimación del kit con ratios de EE. UU.). En Feria no se usa."
+    ],
+    [
+     "A8",
+     "Horario"
+    ],
+    [
+     "B8",
+     "Noche (después de la cena)"
+    ],
+    [
+     "C8",
+     "Mañana +25 %, boda de noche −10 % (research §1). Ajusta las bebidas por invitado. En Feria no se usa."
+    ],
+    [
+     "A9",
+     "Servicio en"
+    ],
+    [
+     "B9",
+     "Loza (tazas reutilizables)"
+    ],
+    [
+     "C9",
+     "Loza: sin coste de vaso ni tapa. Vaso de un solo uso: suma el envase y, en el ticket, el precio aparte del vaso de plástico (Ley 7/2022, art. 55). El compostable con forro de PE o PLA también es plástico."
+    ],
+    [
+     "A10",
+     "Horas de servicio con la barra abierta"
+    ],
+    [
+     "B10",
+     3
+    ],
+    [
+     "C10",
+     "Se usan para el ritmo de bebidas por hora y para el personal."
+    ],
+    [
+     "A11",
+     "Horas por persona fuera del servicio (carga, viaje, montaje y limpieza)"
+    ],
+    [
+     "B11",
+     5
+    ],
+    [
+     "C11",
+     "Estimación del kit: un servicio de dos horas es una jornada de siete a nueve (research §1). Pon las reales."
+    ],
+    [
+     "A12",
+     "Bollería o dulce por invitado (coste, sin IVA)"
+    ],
+    [
+     "B12",
+     0.4
+    ],
+    [
+     "C12",
+     "Lo que te cuesta el dulce que añades al pack. 0 si no ofreces bollería."
+    ],
+    [
+     "A13",
+     "Alquileres repercutidos (carpa, cubierta, mesas, loza extra)"
+    ],
+    [
+     "B13",
+     0
+    ],
+    [
+     "C13",
+     "Lo que te cobra el alquilador para este evento. Si lo facturas aparte sin ser accesorio, ese importe va al 21 % de IVA."
+    ],
+    [
+     "A14",
+     "Electricidad en el lugar"
+    ],
+    [
+     "B14",
+     "Enchufe de 16 A"
+    ],
+    [
+     "C14",
+     "Un enchufe de 16 A a 230 V da unos 3,7 kW. Tu cafetera de dos grupos gasta de 2,4 a 4,5 kW: con una de 3,5 kW o menos cabe; si no, toma dedicada o generador inverter o baterías."
+    ],
+    [
+     "A15",
+     "Generador o baterías: coste por evento (si no hay toma)"
+    ],
+    [
+     "B15",
+     90
+    ],
+    [
+     "C15",
+     "Estimación del kit: combustible o carga y desgaste. Solo se suma si eliges «Sin toma»."
+    ],
+    [
+     "A16",
+     "Potencia de tu cafetera de dos grupos (kW)"
+    ],
+    [
+     "B16",
+     3.5
+    ],
+    [
+     "C16",
+     "La del caso: 3,5 kW o menos para caber en un enchufe de 16 A. Mira la placa de tu máquina."
+    ],
+    [
+     "A17",
+     "Coste bruto por hora de un barista"
+    ],
+    [
+     "B17",
+     13
+    ],
+    [
+     "C17",
+     "Estimación del kit: del titular (14,2 €/h) y del camarero fijo discontinuo (11,0 €/h) con 14 pagas y 1.780 horas. Copia tu convenio."
+    ],
+    [
+     "A18",
+     "Seguridad Social a cargo de la empresa"
+    ],
+    [
+     "B18",
+     0.33
+    ],
+    [
+     "C18",
+     "30,65 % de contingencias, desempleo, FOGASA, formación y MEI, más AT/EP (fijos discontinuos, art. 16 ET)."
+    ],
+    [
+     "A19",
+     "Kilómetros de ida (base → lugar)"
+    ],
+    [
+     "B19",
+     35
+    ],
+    [
+     "C19",
+     "Se cobran ida y vuelta, en una línea aparte y sin margen (en Feria son coste tuyo)."
+    ],
+    [
+     "A20",
+     "Tarifa por kilómetro de desplazamiento"
+    ],
+    [
+     "B20",
+     0.45
+    ],
+    [
+     "C20",
+     "Referencia de escaparate de 2026: 0,45 €/km (La Galería del Café, en Bodas.net). Pon la tuya."
+    ],
+    [
+     "A21",
+     "IVA del servicio"
+    ],
+    [
+     "B21",
+     0.1
+    ],
+    [
+     "C21",
+     "Ley 37/1992, art. 91: bebida para consumir en el acto, 10 %. Lo que facturas aparte con precio propio, 21 %."
+    ],
+    [
+     "A22",
+     "Feria: ticket medio por taza que cobrarás (sin IVA)"
+    ],
+    [
+     "B22",
+     3
+    ],
+    [
+     "C22",
+     "Research §4: ≈ 3,00 € sin IVA por taza. Mira el ticket medio de tu carta en la hoja «Escandallo». Solo cuenta si el cliente es Feria."
+    ],
+    [
+     "A23",
+     "Feria: canon fijo del organizador (€)"
+    ],
+    [
+     "B23",
+     0
+    ],
+    [
+     "C23",
+     "Cuota fija por emplazamiento, si el organizador la cobra. Solo cuenta en Feria."
+    ],
+    [
+     "A24",
+     "Días que faltan para el evento si el cliente cancela"
+    ],
+    [
+     "B24",
+     45
+    ],
+    [
+     "C24",
+     "Elige los días y la hoja te dice el tramo y lo que retienes."
+    ],
+    [
+     "A26",
+     "CÁLCULO"
+    ],
+    [
+     "B26",
+     "Valor"
+    ],
+    [
+     "C26",
+     "Notas"
+    ],
+    [
+     "A27",
+     "LOGÍSTICA (tabla de escalado)"
+    ],
+    [
+     "A28",
+     "Bebidas por invitado del formato"
+    ],
+    [
+     "B28",
+     "=INDEX('Calculadora'!$B$107:$B$111,MATCH($B$7,'Calculadora'!$A$107:$A$111,0))"
+    ],
+    [
+     "C28",
+     "Busca el formato en la tabla del final."
+    ],
+    [
+     "A29",
+     "Ajuste por horario"
+    ],
+    [
+     "B29",
+     "=INDEX('Calculadora'!$B$114:$B$116,MATCH($B$8,'Calculadora'!$A$114:$A$116,0))"
+    ],
+    [
+     "C29",
+     "Busca el horario en la tabla del final."
+    ],
+    [
+     "A30",
+     "Bebidas que se sirven (ud.)"
+    ],
+    [
+     "B30",
+     "=IF($B$5='Calculadora'!$D$127,$B$6,ROUNDUP(ROUND($B$6*$B$28*(1+$B$29),2),0))"
+    ],
+    [
+     "C30",
+     "Invitados × bebidas por invitado × (1 + ajuste), hacia arriba. En Feria, las tazas previstas."
+    ],
+    [
+     "A31",
+     "Bebidas por hora (media)"
+    ],
+    [
+     "B31",
+     "=$B$30/$B$10"
+    ],
+    [
+     "A32",
+     "Baristas necesarios"
+    ],
+    [
+     "B32",
+     "=MAX(1,ROUNDUP(ROUND($B$31*'Calculadora'!$B$93/'Calculadora'!$B$92,2),0))"
+    ],
+    [
+     "C32",
+     "Bebidas por hora × factor de pico ÷ lo que saca un barista, hacia arriba."
+    ],
+    [
+     "A33",
+     "Cafeteras de dos grupos (estaciones)"
+    ],
+    [
+     "B33",
+     "=ROUNDUP($B$32/'Calculadora'!$B$94,0)"
+    ],
+    [
+     "C33",
+     "Dos baristas por cafetera; una segunda estación entra cuando el pico no cabe en una."
+    ],
+    [
+     "A34",
+     "Grupos en total"
+    ],
+    [
+     "B34",
+     "=$B$33*'Calculadora'!$B$95"
+    ],
+    [
+     "A35",
+     "Molinos"
+    ],
+    [
+     "B35",
+     "=$B$33+'Calculadora'!$B$96"
+    ],
+    [
+     "C35",
+     "Uno por estación más uno de reserva (descafeinado o filtro)."
+    ],
+    [
+     "A36",
+     "Café en grano (kg)"
+    ],
+    [
+     "B36",
+     "=ROUNDUP($B$30*'Escandallo'!$B$49/1000+'Calculadora'!$B$97,1)"
+    ],
+    [
+     "C36",
+     "Bebidas × café medio de tu mezcla (hoja «Escandallo») más la purga y el calibrado."
+    ],
+    [
+     "A37",
+     "Leche y bebidas vegetales (l)"
+    ],
+    [
+     "B37",
+     "=ROUNDUP(ROUND($B$30*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "C37",
+     "Bebidas × leche media de tu mezcla."
+    ],
+    [
+     "A38",
+     "Vasos desechables o tazas de loza (ud.)"
+    ],
+    [
+     "B38",
+     "=IF($B$9='Calculadora'!$A$119,ROUNDUP(ROUND($B$6*'Calculadora'!$B$99,2),0),ROUNDUP(ROUND($B$30*(1+'Calculadora'!$B$98),2),0))"
+    ],
+    [
+     "C38",
+     "Loza: tazas por invitado con reposición para el lavado. Vaso de un solo uso: bebidas más la reserva."
+    ],
+    [
+     "A39",
+     "Agua limpia (l)"
+    ],
+    [
+     "B39",
+     "=ROUNDUP(ROUND($B$30*'Calculadora'!$B$100+'Calculadora'!$B$101,2),0)"
+    ],
+    [
+     "C39",
+     "Lleva un depósito de aguas grises al menos igual: no se vierte en el recinto. El agua de los depósitos es tu responsabilidad hasta el punto de uso."
+    ],
+    [
+     "A40",
+     "ELECTRICIDAD (aviso del contrato)"
+    ],
+    [
+     "A41",
+     "Potencia de las cafeteras (kW)"
+    ],
+    [
+     "B41",
+     "=$B$33*$B$16"
+    ],
+    [
+     "C41",
+     "Estaciones × kW de tu cafetera."
+    ],
+    [
+     "A42",
+     "Intensidad (A)"
+    ],
+    [
+     "B42",
+     "=$B$41*1000/'Calculadora'!$B$102"
+    ],
+    [
+     "C42",
+     "kW × 1.000 ÷ tensión."
+    ],
+    [
+     "A43",
+     "Potencia de un enchufe (kW)"
+    ],
+    [
+     "B43",
+     "='Calculadora'!$B$103*'Calculadora'!$B$102/1000"
+    ],
+    [
+     "C43",
+     "SPEC D11: un enchufe de 16 A a 230 V da unos 3,7 kW (3,68). Los molinos, la nevera y la iluminación van aparte: déjales margen."
+    ],
+    [
+     "A44",
+     "Generador inverter mínimo (kVA)"
+    ],
+    [
+     "B44",
+     "=ROUNDUP(ROUND($B$41*'Calculadora'!$B$104,2),0)"
+    ],
+    [
+     "C44",
+     "kW × factor de margen, hacia arriba: una cafetera de 3,5 kW pide 5 kVA. Baterías de litio con inversor: la misma potencia, más silenciosas."
+    ],
+    [
+     "A45",
+     "Toma que hace falta · Con una cafetera de 3,5 kW o menos basta un enchufe de 16 A; con dos estaciones, no."
+    ],
+    [
+     "B45",
+     "=IF($B$41<=$B$43,'Calculadora'!$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "A46",
+     "AVISO de electricidad · El contrato del kit pide la toma por escrito: cantidad de kW, distancia y cuadro."
+    ],
+    [
+     "B46",
+     "=IF($B$14='Calculadora'!$A$125,\"Sin toma: lleva generador o baterías (kVA mínimos en su fila)\",IF(AND($B$41>$B$43,$B$14='Calculadora'!$A$123),\"AVISO: este enchufe no basta para tus cafeteras; pide toma dedicada por escrito o lleva generador\",\"Potencia cubierta: confirma por escrito en el contrato la toma y su potencia\"))"
+    ],
+    [
+     "A47",
+     "COSTE DIRECTO"
+    ],
+    [
+     "A48",
+     "Coste de las bebidas"
+    ],
+    [
+     "B48",
+     "=$B$30*IF($B$9='Calculadora'!$A$119,'Escandallo'!$B$46,'Escandallo'!$B$48)"
+    ],
+    [
+     "C48",
+     "Bebidas × coste medio de la mezcla del Escandallo (con envase si es vaso de un solo uso)."
+    ],
+    [
+     "A49",
+     "Coste de bollería o dulces"
+    ],
+    [
+     "B49",
+     "=$B$12*$B$6"
+    ],
+    [
+     "A50",
+     "Coste de personal (salario + Seguridad Social)"
+    ],
+    [
+     "B50",
+     "=$B$32*($B$10+$B$11)*$B$17*(1+$B$18)"
+    ],
+    [
+     "C50",
+     "Baristas × (horas de servicio + horas fuera del servicio) × coste por hora. Si cobras tú de barista, cuéntate: es tu coste de oportunidad."
+    ],
+    [
+     "A51",
+     "Generador o baterías"
+    ],
+    [
+     "B51",
+     "=IF($B$14='Calculadora'!$A$125,$B$15,0)"
+    ],
+    [
+     "A52",
+     "Alquileres repercutidos"
+    ],
+    [
+     "B52",
+     "=$B$13"
+    ],
+    [
+     "A53",
+     "Desplazamiento a la feria (coste tuyo)"
+    ],
+    [
+     "B53",
+     "=IF($B$5='Calculadora'!$D$127,$B$19*2*$B$20,0)"
+    ],
+    [
+     "C53",
+     "En Feria nadie te paga el viaje: entra en el coste. En los demás clientes va en su línea aparte."
+    ],
+    [
+     "A54",
+     "Coste directo total"
+    ],
+    [
+     "B54",
+     "=$B$48+$B$49+$B$50+$B$51+$B$52+$B$53"
+    ],
+    [
+     "A55",
+     "Coste directo por invitado"
+    ],
+    [
+     "B55",
+     "=$B$54/$B$6"
+    ],
+    [
+     "A56",
+     "PRECIO Y PRESUPUESTO"
+    ],
+    [
+     "A57",
+     "Margen objetivo del cliente elegido"
+    ],
+    [
+     "B57",
+     "=INDEX('Calculadora'!$B$128:$D$128,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C57",
+     "De la tabla por cliente del final."
+    ],
+    [
+     "A58",
+     "Canon del organizador (cliente elegido)"
+    ],
+    [
+     "B58",
+     "=INDEX('Calculadora'!$B$129:$D$129,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C58",
+     "De la tabla por cliente del final. Solo Feria."
+    ],
+    [
+     "A59",
+     "PRECIO POR INVITADO SIN IVA"
+    ],
+    [
+     "B59",
+     "=ROUNDUP($B$54/(1-$B$57-$B$58)/$B$6*2,0)/2"
+    ],
+    [
+     "C59",
+     "Coste ÷ (1 − margen − canon) ÷ invitados, redondeado a los 0,50 € de arriba. Es el precio de las empresas («+ IVA»). En Feria es el ticket mínimo por taza que cubre coste, canon y margen: compáralo con el tuyo."
+    ],
+    [
+     "A60",
+     "PRECIO POR INVITADO CON IVA"
+    ],
+    [
+     "B60",
+     "=$B$59*(1+$B$21)"
+    ],
+    [
+     "C60",
+     "Es el que ve un particular: en una oferta a consumidores el precio va con impuestos incluidos."
+    ],
+    [
+     "A61",
+     "Subtotal de bebidas sin IVA"
+    ],
+    [
+     "B61",
+     "=$B$59*$B$6"
+    ],
+    [
+     "C61",
+     "Precio por invitado × invitados."
+    ],
+    [
+     "A62",
+     "Equivalente por hora de barra (sin IVA)"
+    ],
+    [
+     "B62",
+     "=$B$61/$B$10"
+    ],
+    [
+     "C62",
+     "Subtotal ÷ horas de servicio: para comparar con tarifas por hora."
+    ],
+    [
+     "A63",
+     "Equivalente por bebida (sin IVA)"
+    ],
+    [
+     "B63",
+     "=$B$61/$B$30"
+    ],
+    [
+     "C63",
+     "Subtotal ÷ bebidas: para comparar con tarifas por consumición."
+    ],
+    [
+     "A64",
+     "Desplazamiento aparte (ida y vuelta, sin margen)"
+    ],
+    [
+     "B64",
+     "=IF($B$5='Calculadora'!$D$127,0,$B$19*2*$B$20)"
+    ],
+    [
+     "C64",
+     "Línea aparte del presupuesto."
+    ],
+    [
+     "A65",
+     "Base imponible"
+    ],
+    [
+     "B65",
+     "=$B$61+$B$64"
+    ],
+    [
+     "A66",
+     "IVA"
+    ],
+    [
+     "B66",
+     "=$B$65*$B$21"
+    ],
+    [
+     "A67",
+     "TOTAL DEL PRESUPUESTO (con IVA)"
+    ],
+    [
+     "B67",
+     "=$B$65+$B$66"
+    ],
+    [
+     "A68",
+     "COBRO"
+    ],
+    [
+     "A69",
+     "Importe del cobro 1: señal al reservar"
+    ],
+    [
+     "B69",
+     "=$B$67*INDEX('Calculadora'!$B$130:$D$130,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C69",
+     "A cuenta del precio. Factura de cada pago, también de la señal."
+    ],
+    [
+     "A70",
+     "Importe del cobro 2: resto antes del evento"
+    ],
+    [
+     "B70",
+     "=$B$67*INDEX('Calculadora'!$B$131:$D$131,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C70",
+     "Particular: siete días antes."
+    ],
+    [
+     "A71",
+     "Importe del cobro 3: resto a 30 días de la factura"
+    ],
+    [
+     "B71",
+     "=$B$67*INDEX('Calculadora'!$B$132:$D$132,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C71",
+     "Empresa."
+    ],
+    [
+     "A72",
+     "Importe del cobro 4: en el momento de la venta"
+    ],
+    [
+     "B72",
+     "=$B$67*INDEX('Calculadora'!$B$133:$D$133,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C72",
+     "Feria."
+    ],
+    [
+     "A73",
+     "Canon del organizador sobre el subtotal"
+    ],
+    [
+     "B73",
+     "=$B$61*$B$58"
+    ],
+    [
+     "A74",
+     "Margen bruto en euros"
+    ],
+    [
+     "B74",
+     "=$B$61-$B$54-$B$73"
+    ],
+    [
+     "C74",
+     "Sobre el subtotal, sin el desplazamiento."
+    ],
+    [
+     "A75",
+     "Margen bruto (calculado)"
+    ],
+    [
+     "B75",
+     "=IF($B$61=0,0,$B$74/$B$61)"
+    ],
+    [
+     "C75",
+     "Sale de los costes, nunca se teclea. Queda igual o por encima del objetivo por el redondeo del precio."
+    ],
+    [
+     "A76",
+     "CANCELACIÓN (tramos sin huecos)"
+    ],
+    [
+     "A77",
+     "Tramo que corresponde a los días elegidos · Mira los días de la entrada «Días que faltan»."
+    ],
+    [
+     "B77",
+     "=IF($B$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$141:$D$141,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$142:$D$142,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$143:$D$143,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$144:$D$144,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "A78",
+     "Porcentaje que retienes en ese tramo"
+    ],
+    [
+     "B78",
+     "=IF($B$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$137:$D$137,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$138:$D$138,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$139:$D$139,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$140:$D$140,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "A79",
+     "Importe que retienes si cancela ese día"
+    ],
+    [
+     "B79",
+     "=$B$67*$B$78"
+    ],
+    [
+     "A80",
+     "Importe retenido: tramo 1 (el más lejano)"
+    ],
+    [
+     "B80",
+     "=$B$67*INDEX('Calculadora'!$B$137:$D$137,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C80",
+     "Los cortes de cada cliente están en la tabla del final."
+    ],
+    [
+     "A81",
+     "Importe retenido: tramo 2"
+    ],
+    [
+     "B81",
+     "=$B$67*INDEX('Calculadora'!$B$138:$D$138,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A82",
+     "Importe retenido: tramo 3"
+    ],
+    [
+     "B82",
+     "=$B$67*INDEX('Calculadora'!$B$139:$D$139,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A83",
+     "Importe retenido: tramo 4 (el más cercano o no presentación)"
+    ],
+    [
+     "B83",
+     "=$B$67*INDEX('Calculadora'!$B$140:$D$140,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A84",
+     "FERIA: PREVISIÓN DE LA JORNADA (solo si el cliente es Feria)"
+    ],
+    [
+     "A85",
+     "Coste variable por taza (bebida + dulce)"
+    ],
+    [
+     "B85",
+     "=($B$48+$B$49)/$B$6"
+    ],
+    [
+     "A86",
+     "Venta prevista (tazas × ticket, sin IVA)"
+    ],
+    [
+     "B86",
+     "=IF($B$5='Calculadora'!$D$127,$B$6*$B$22,0)"
+    ],
+    [
+     "A87",
+     "Canon del organizador (% de la venta + cuota fija)"
+    ],
+    [
+     "B87",
+     "=IF($B$5='Calculadora'!$D$127,$B$86*$B$58+$B$23,0)"
+    ],
+    [
+     "A88",
+     "Resultado de la jornada (venta − canon − coste)"
+    ],
+    [
+     "B88",
+     "=IF($B$5='Calculadora'!$D$127,$B$86-$B$87-$B$54,0)"
+    ],
+    [
+     "C88",
+     "Antes de impuestos y de los costes fijos del negocio (vehículo, seguros, base)."
+    ],
+    [
+     "A89",
+     "Tazas para cubrir los costes de la jornada"
+    ],
+    [
+     "B89",
+     "=IF($B$5='Calculadora'!$D$127,IF($B$22*(1-$B$58)-$B$85<=0,0,ROUNDUP(($B$50+$B$51+$B$52+$B$53+$B$23)/($B$22*(1-$B$58)-$B$85),0)),0)"
+    ],
+    [
+     "C89",
+     "Costes de la jornada que no dependen de las tazas ÷ lo que te deja cada taza tras el canon."
+    ],
+    [
+     "A91",
+     "REGLAS DE ESCALADO (fuente única: «datos_escalado»; misma tabla que las Instrucciones del plan y el Word)"
+    ],
+    [
+     "B91",
+     "Valor"
+    ],
+    [
+     "A92",
+     "Bebidas por hora que saca un barista con una cafetera de dos grupos"
+    ],
+    [
+     "B92",
+     55
+    ],
+    [
+     "C92",
+     "Research: 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120 (ratios de EE. UU.). Se toma 55."
+    ],
+    [
+     "A93",
+     "Factor de pico sobre la media (la cola se concentra tras la cena o en las pausas)"
+    ],
+    [
+     "B93",
+     1.3
+    ],
+    [
+     "C93",
+     "Estimación del kit (ratios de EE. UU.): el pico es un 30 % más alto que la media por hora."
+    ],
+    [
+     "A94",
+     "Baristas que trabajan en una misma cafetera"
+    ],
+    [
+     "B94",
+     2
+    ],
+    [
+     "C94",
+     "Research: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso."
+    ],
+    [
+     "A95",
+     "Grupos de una cafetera"
+    ],
+    [
+     "B95",
+     2
+    ],
+    [
+     "C95",
+     "La cafetera del caso es de dos grupos (2,4-4,5 kW; la del caso, hasta 3,5 kW)."
+    ],
+    [
+     "A96",
+     "Molinos de reserva (descafeinado o filtro) además de uno por estación"
+    ],
+    [
+     "B96",
+     1
+    ],
+    [
+     "C96",
+     "Research §4: molinos de espresso bajo demanda más uno de descafeinado o filtro."
+    ],
+    [
+     "A97",
+     "Café de purga y calibrado por evento (kg)"
+    ],
+    [
+     "B97",
+     0.15
+    ],
+    [
+     "C97",
+     "Research: 100-200 g por evento. Se toma 150 g."
+    ],
+    [
+     "A98",
+     "Reserva de vasos desechables sobre las bebidas"
+    ],
+    [
+     "B98",
+     0.1
+    ],
+    [
+     "C98",
+     "Estimación del kit: derrames, repeticiones y cortesías."
+    ],
+    [
+     "A99",
+     "Tazas de loza por invitado (con reposición durante el lavado)"
+    ],
+    [
+     "B99",
+     1.25
+    ],
+    [
+     "C99",
+     "Del caso: loza para 150 en una boda de 120 invitados (research §4)."
+    ],
+    [
+     "A100",
+     "Agua limpia por bebida (litros: grupo, vapor y aclarado de jarras)"
+    ],
+    [
+     "B100",
+     0.25
+    ],
+    [
+     "C100",
+     "Estimación del kit (ratios de EE. UU.)."
+    ],
+    [
+     "A101",
+     "Agua limpia fija por evento (litros: manos, limpieza y reserva)"
+    ],
+    [
+     "B101",
+     20
+    ],
+    [
+     "C101",
+     "Estimación del kit (ratios de EE. UU.)."
+    ],
+    [
+     "A102",
+     "Tensión de la red (V)"
+    ],
+    [
+     "B102",
+     230
+    ],
+    [
+     "C102",
+     "Red monofásica española."
+    ],
+    [
+     "A103",
+     "Intensidad de un enchufe doméstico o de finca (A)"
+    ],
+    [
+     "B103",
+     16
+    ],
+    [
+     "C103",
+     "Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW): SPEC D11."
+    ],
+    [
+     "A104",
+     "Factor para dimensionar el generador (kVA por kW de cafetera)"
+    ],
+    [
+     "B104",
+     1.4
+    ],
+    [
+     "C104",
+     "Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (research §0)."
+    ],
+    [
+     "A106",
+     "FORMATO → BEBIDAS POR INVITADO"
+    ],
+    [
+     "B106",
+     "Bebidas"
+    ],
+    [
+     "A107",
+     "Hasta 2 horas"
+    ],
+    [
+     "B107",
+     1
+    ],
+    [
+     "C107",
+     "Rango del research: 1,0"
+    ],
+    [
+     "D107",
+     "estimación del kit (ratios de EE. UU.)"
+    ],
+    [
+     "A108",
+     "Más de 2 y hasta 4 horas"
+    ],
+    [
+     "B108",
+     1.4
+    ],
+    [
+     "C108",
+     "Rango del research: 1,3-1,5"
+    ],
+    [
+     "A109",
+     "Más de 4 y hasta 6 horas"
+    ],
+    [
+     "B109",
+     1.65
+    ],
+    [
+     "C109",
+     "Rango del research: 1,5-1,8"
+    ],
+    [
+     "A110",
+     "Más de 6 horas (jornada)"
+    ],
+    [
+     "B110",
+     2.25
+    ],
+    [
+     "C110",
+     "Rango del research: 2,0-2,5"
+    ],
+    [
+     "A111",
+     "Congreso con pausas de café"
+    ],
+    [
+     "B111",
+     1.6
+    ],
+    [
+     "C111",
+     "Rango del research: mezcla del caso"
+    ],
+    [
+     "A113",
+     "HORARIO → AJUSTE DE LAS BEBIDAS POR INVITADO"
+    ],
+    [
+     "B113",
+     "Ajuste"
+    ],
+    [
+     "A114",
+     "Mañana (desayuno y café de media mañana)"
+    ],
+    [
+     "B114",
+     0.25
+    ],
+    [
+     "A115",
+     "Tarde o jornada mixta"
+    ],
+    [
+     "B115",
+     0
+    ],
+    [
+     "A116",
+     "Noche (después de la cena)"
+    ],
+    [
+     "B116",
+     -0.1
+    ],
+    [
+     "A118",
+     "OPCIONES DE SERVICIO (lista de la entrada «Servicio en»)"
+    ],
+    [
+     "A119",
+     "Loza (tazas reutilizables)"
+    ],
+    [
+     "A120",
+     "Vaso de un solo uso"
+    ],
+    [
+     "A122",
+     "OPCIONES DE ELECTRICIDAD (lista de la entrada «Electricidad en el lugar»)"
+    ],
+    [
+     "A123",
+     "Enchufe de 16 A"
+    ],
+    [
+     "A124",
+     "Toma dedicada"
+    ],
+    [
+     "A125",
+     "Sin toma (generador o baterías)"
+    ],
+    [
+     "A127",
+     "POLÍTICA POR CLIENTE"
+    ],
+    [
+     "B127",
+     "Particular"
+    ],
+    [
+     "C127",
+     "Empresa"
+    ],
+    [
+     "D127",
+     "Feria"
+    ],
+    [
+     "A128",
+     "Margen bruto objetivo sobre el precio"
+    ],
+    [
+     "B128",
+     0.55
+    ],
+    [
+     "C128",
+     0.5
+    ],
+    [
+     "D128",
+     0.2
+    ],
+    [
+     "E128",
+     "Lo que queda del precio tras bebidas, bollería, personal del evento, generador y canon. Con él pagas vehículo, seguros, base, publicidad y tu beneficio. Estimación del kit: la boda particular lleva más que la empresa; en feria el margen es menor porque vendes volumen."
+    ],
+    [
+     "A129",
+     "Canon del organizador (% de la venta)"
+    ],
+    [
+     "B129",
+     0
+    ],
+    [
+     "C129",
+     0
+    ],
+    [
+     "D129",
+     0.15
+    ],
+    [
+     "E129",
+     "Solo ferias, mercados y festivales (research §3.a: porcentaje de la venta o cuota fija). El canon fijo se escribe aparte."
+    ],
+    [
+     "A130",
+     "Cobro: señal al reservar (% del total)"
+    ],
+    [
+     "B130",
+     0.3
+    ],
+    [
+     "C130",
+     0.3
+    ],
+    [
+     "D130",
+     0
+    ],
+    [
+     "E130",
+     "Particular y Empresa, el 30 % al firmar. La señal es a cuenta del precio. Feria: no hay señal al cliente."
+    ],
+    [
+     "A131",
+     "Cobro: resto antes del evento (% del total)"
+    ],
+    [
+     "B131",
+     0.7
+    ],
+    [
+     "C131",
+     0
+    ],
+    [
+     "D131",
+     0
+    ],
+    [
+     "E131",
+     "Particular: el 70 % restante, siete días antes del evento."
+    ],
+    [
+     "A132",
+     "Cobro: resto a 30 días de la factura (% del total)"
+    ],
+    [
+     "B132",
+     0
+    ],
+    [
+     "C132",
+     0.7
+    ],
+    [
+     "D132",
+     0
+    ],
+    [
+     "E132",
+     "Empresa: el 70 % restante, a 30 días de la factura."
+    ],
+    [
+     "A133",
+     "Cobro: en el momento de la venta (% del total)"
+    ],
+    [
+     "B133",
+     0
+    ],
+    [
+     "C133",
+     0
+    ],
+    [
+     "D133",
+     1
+    ],
+    [
+     "E133",
+     "Feria: venta directa, cobras en el acto (datáfono o efectivo)."
+    ],
+    [
+     "A134",
+     "Cancelación: primer corte (días antes del evento)"
+    ],
+    [
+     "B134",
+     60
+    ],
+    [
+     "C134",
+     30
+    ],
+    [
+     "D134",
+     30
+    ],
+    [
+     "E134",
+     "Desde este número de días o más: tramo 1. Los cortes bajan de uno a otro y no dejan huecos."
+    ],
+    [
+     "A135",
+     "Cancelación: segundo corte (días antes del evento)"
+    ],
+    [
+     "B135",
+     30
+    ],
+    [
+     "C135",
+     15
+    ],
+    [
+     "D135",
+     15
+    ],
+    [
+     "E135",
+     "Desde aquí hasta menos del primer corte: tramo 2."
+    ],
+    [
+     "A136",
+     "Cancelación: tercer corte (días antes del evento)"
+    ],
+    [
+     "B136",
+     7
+    ],
+    [
+     "C136",
+     7
+    ],
+    [
+     "D136",
+     7
+    ],
+    [
+     "E136",
+     "Desde aquí hasta menos del segundo corte: tramo 3. Por debajo de este número de días: tramo 4."
+    ],
+    [
+     "A137",
+     "Cancelación tramo 1 (% del total que retienes)"
+    ],
+    [
+     "B137",
+     0.1
+    ],
+    [
+     "C137",
+     0.1
+    ],
+    [
+     "D137",
+     0
+    ],
+    [
+     "E137",
+     "Particular y Empresa: el 10 % del total. Feria: no se aplica."
+    ],
+    [
+     "A138",
+     "Cancelación tramo 2 (% del total que retienes)"
+    ],
+    [
+     "B138",
+     0.3
+    ],
+    [
+     "C138",
+     0.3
+    ],
+    [
+     "D138",
+     0
+    ],
+    [
+     "E138",
+     "Particular y Empresa: el 30 % del total."
+    ],
+    [
+     "A139",
+     "Cancelación tramo 3 (% del total que retienes)"
+    ],
+    [
+     "B139",
+     0.6
+    ],
+    [
+     "C139",
+     0.6
+    ],
+    [
+     "D139",
+     0
+    ],
+    [
+     "E139",
+     "Particular y Empresa: el 60 % del total."
+    ],
+    [
+     "A140",
+     "Cancelación tramo 4 (% del total que retienes)"
+    ],
+    [
+     "B140",
+     1
+    ],
+    [
+     "C140",
+     1
+    ],
+    [
+     "D140",
+     0
+    ],
+    [
+     "E140",
+     "Menos de siete días o no presentación: el 100 % menos los costes que te ahorras: consumibles, café y leche sin gastar, refuerzo y desplazamiento. En Feria se rige por las bases del organizador."
+    ],
+    [
+     "A141",
+     "Tramo 1 de cancelación (texto, se calcula con los cortes)"
+    ],
+    [
+     "B141",
+     "=B134&\" días o más\""
+    ],
+    [
+     "C141",
+     "=C134&\" días o más\""
+    ],
+    [
+     "D141",
+     "=D134&\" días o más\""
+    ],
+    [
+     "A142",
+     "Tramo 2 de cancelación (texto, se calcula con los cortes)"
+    ],
+    [
+     "B142",
+     "=\"De \"&B135&\" a menos de \"&B134&\" días\""
+    ],
+    [
+     "C142",
+     "=\"De \"&C135&\" a menos de \"&C134&\" días\""
+    ],
+    [
+     "D142",
+     "=\"De \"&D135&\" a menos de \"&D134&\" días\""
+    ],
+    [
+     "A143",
+     "Tramo 3 de cancelación (texto, se calcula con los cortes)"
+    ],
+    [
+     "B143",
+     "=\"De \"&B136&\" a menos de \"&B135&\" días\""
+    ],
+    [
+     "C143",
+     "=\"De \"&C136&\" a menos de \"&C135&\" días\""
+    ],
+    [
+     "D143",
+     "=\"De \"&D136&\" a menos de \"&D135&\" días\""
+    ],
+    [
+     "A144",
+     "Tramo 4 de cancelación (texto, se calcula con los cortes)"
+    ],
+    [
+     "B144",
+     "=\"Menos de \"&B136&\" días\""
+    ],
+    [
+     "C144",
+     "=\"Menos de \"&C136&\" días\""
+    ],
+    [
+     "D144",
+     "=\"Menos de \"&D136&\" días\""
+    ],
+    [
+     "A146",
+     "TABLA DE ESCALADO (evento tipo: barra de dos a cuatro horas, por la tarde, con vaso de un solo uso)"
+    ],
+    [
+     "B146",
+     50
+    ],
+    [
+     "C146",
+     100
+    ],
+    [
+     "D146",
+     200
+    ],
+    [
+     "E146",
+     300
+    ],
+    [
+     "A147",
+     "Horas de barra del evento tipo"
+    ],
+    [
+     "B147",
+     3
+    ],
+    [
+     "A148",
+     "Bebidas servidas (ud.)"
+    ],
+    [
+     "B148",
+     "=ROUNDUP(ROUND(B$146*$B$108*(1+$B$115),2),0)"
+    ],
+    [
+     "C148",
+     "=ROUNDUP(ROUND(C$146*$B$108*(1+$B$115),2),0)"
+    ],
+    [
+     "D148",
+     "=ROUNDUP(ROUND(D$146*$B$108*(1+$B$115),2),0)"
+    ],
+    [
+     "E148",
+     "=ROUNDUP(ROUND(E$146*$B$108*(1+$B$115),2),0)"
+    ],
+    [
+     "A149",
+     "Baristas"
+    ],
+    [
+     "B149",
+     "=MAX(1,ROUNDUP(ROUND(B148/$B$147*$B$93/$B$92,2),0))"
+    ],
+    [
+     "C149",
+     "=MAX(1,ROUNDUP(ROUND(C148/$B$147*$B$93/$B$92,2),0))"
+    ],
+    [
+     "D149",
+     "=MAX(1,ROUNDUP(ROUND(D148/$B$147*$B$93/$B$92,2),0))"
+    ],
+    [
+     "E149",
+     "=MAX(1,ROUNDUP(ROUND(E148/$B$147*$B$93/$B$92,2),0))"
+    ],
+    [
+     "A150",
+     "Cafeteras de dos grupos (estaciones)"
+    ],
+    [
+     "B150",
+     "=ROUNDUP(B149/$B$94,0)"
+    ],
+    [
+     "C150",
+     "=ROUNDUP(C149/$B$94,0)"
+    ],
+    [
+     "D150",
+     "=ROUNDUP(D149/$B$94,0)"
+    ],
+    [
+     "E150",
+     "=ROUNDUP(E149/$B$94,0)"
+    ],
+    [
+     "A151",
+     "Grupos en total"
+    ],
+    [
+     "B151",
+     "=B150*$B$95"
+    ],
+    [
+     "C151",
+     "=C150*$B$95"
+    ],
+    [
+     "D151",
+     "=D150*$B$95"
+    ],
+    [
+     "E151",
+     "=E150*$B$95"
+    ],
+    [
+     "A152",
+     "Molinos"
+    ],
+    [
+     "B152",
+     "=B150+$B$96"
+    ],
+    [
+     "C152",
+     "=C150+$B$96"
+    ],
+    [
+     "D152",
+     "=D150+$B$96"
+    ],
+    [
+     "E152",
+     "=E150+$B$96"
+    ],
+    [
+     "A153",
+     "Café en grano (kg)"
+    ],
+    [
+     "B153",
+     "=ROUNDUP(B148*'Escandallo'!$B$49/1000+$B$97,1)"
+    ],
+    [
+     "C153",
+     "=ROUNDUP(C148*'Escandallo'!$B$49/1000+$B$97,1)"
+    ],
+    [
+     "D153",
+     "=ROUNDUP(D148*'Escandallo'!$B$49/1000+$B$97,1)"
+    ],
+    [
+     "E153",
+     "=ROUNDUP(E148*'Escandallo'!$B$49/1000+$B$97,1)"
+    ],
+    [
+     "A154",
+     "Leche y bebidas vegetales (l)"
+    ],
+    [
+     "B154",
+     "=ROUNDUP(ROUND(B148*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "C154",
+     "=ROUNDUP(ROUND(C148*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "D154",
+     "=ROUNDUP(ROUND(D148*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "E154",
+     "=ROUNDUP(ROUND(E148*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "A155",
+     "Vasos desechables (ud.)"
+    ],
+    [
+     "B155",
+     "=ROUNDUP(ROUND(B148*(1+$B$98),2),0)"
+    ],
+    [
+     "C155",
+     "=ROUNDUP(ROUND(C148*(1+$B$98),2),0)"
+    ],
+    [
+     "D155",
+     "=ROUNDUP(ROUND(D148*(1+$B$98),2),0)"
+    ],
+    [
+     "E155",
+     "=ROUNDUP(ROUND(E148*(1+$B$98),2),0)"
+    ],
+    [
+     "A156",
+     "Potencia de las cafeteras (kW)"
+    ],
+    [
+     "B156",
+     "=B150*$B$16"
+    ],
+    [
+     "C156",
+     "=C150*$B$16"
+    ],
+    [
+     "D156",
+     "=D150*$B$16"
+    ],
+    [
+     "E156",
+     "=E150*$B$16"
+    ],
+    [
+     "A157",
+     "Toma eléctrica"
+    ],
+    [
+     "B157",
+     "=IF(B156<=$B$43,$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "C157",
+     "=IF(C156<=$B$43,$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "D157",
+     "=IF(D156<=$B$43,$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "E157",
+     "=IF(E156<=$B$43,$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "A158",
+     "Agua limpia (l)"
+    ],
+    [
+     "B158",
+     "=ROUNDUP(ROUND(B148*$B$100+$B$101,2),0)"
+    ],
+    [
+     "C158",
+     "=ROUNDUP(ROUND(C148*$B$100+$B$101,2),0)"
+    ],
+    [
+     "D158",
+     "=ROUNDUP(ROUND(D148*$B$100+$B$101,2),0)"
+    ],
+    [
+     "E158",
+     "=ROUNDUP(ROUND(E148*$B$100+$B$101,2),0)"
+    ],
+    [
+     "A159",
+     "Es la misma tabla que las Instrucciones del plan financiero y la sección de logística del plan de negocio. Una cafetera de dos grupos saca unas 55 bebidas por hora con un barista y de 100 a 120 con dos; la segunda estación entra cuando el pico no cabe. Un enchufe de 16 A da unos 3,7 kW: con una cafetera de 3,5 kW o menos cabe; con dos estaciones hace falta toma dedicada o generador. Estimación del kit con ratios de EE. UU."
+    ]
+   ]
+  },
+  "Ejemplos": {
+   "dim": "A1:D94",
+   "celdas": [
+    [
+     "A1",
+     "3 PRESUPUESTOS DE EJEMPLO — con las mismas fórmulas de la hoja «Calculadora»"
+    ],
+    [
+     "A2",
+     "Estimaciones del kit para ilustrar el cálculo, no precios de mercado: cambia los datos en «Calculadora» para presupuestar tus eventos. Las tablas (margen y cobro por cliente, formatos, escalado) están al final de esa hoja y la mezcla de bebidas, en «Escandallo»; también mueven estos ejemplos."
+    ],
+    [
+     "A4",
+     "DATOS DEL EVENTO"
+    ],
+    [
+     "B4",
+     "Boda con barra tras la cena"
+    ],
+    [
+     "C4",
+     "Congreso con dos pausas de café"
+    ],
+    [
+     "D4",
+     "Jornada de feria con venta directa"
+    ],
+    [
+     "A5",
+     "Cliente"
+    ],
+    [
+     "B5",
+     "Particular"
+    ],
+    [
+     "C5",
+     "Empresa"
+    ],
+    [
+     "D5",
+     "Feria"
+    ],
+    [
+     "A6",
+     "Invitados previstos (en Feria, tazas previstas)"
+    ],
+    [
+     "B6",
+     120
+    ],
+    [
+     "C6",
+     300
+    ],
+    [
+     "D6",
+     250
+    ],
+    [
+     "A7",
+     "Formato del servicio (fija las bebidas por invitado)"
+    ],
+    [
+     "B7",
+     "Más de 2 y hasta 4 horas"
+    ],
+    [
+     "C7",
+     "Congreso con pausas de café"
+    ],
+    [
+     "D7",
+     "Más de 2 y hasta 4 horas"
+    ],
+    [
+     "A8",
+     "Horario"
+    ],
+    [
+     "B8",
+     "Noche (después de la cena)"
+    ],
+    [
+     "C8",
+     "Tarde o jornada mixta"
+    ],
+    [
+     "D8",
+     "Tarde o jornada mixta"
+    ],
+    [
+     "A9",
+     "Servicio en"
+    ],
+    [
+     "B9",
+     "Loza (tazas reutilizables)"
+    ],
+    [
+     "C9",
+     "Loza (tazas reutilizables)"
+    ],
+    [
+     "D9",
+     "Vaso de un solo uso"
+    ],
+    [
+     "A10",
+     "Horas de servicio con la barra abierta"
+    ],
+    [
+     "B10",
+     3
+    ],
+    [
+     "C10",
+     8
+    ],
+    [
+     "D10",
+     10
+    ],
+    [
+     "A11",
+     "Horas por persona fuera del servicio (carga, viaje, montaje y limpieza)"
+    ],
+    [
+     "B11",
+     5
+    ],
+    [
+     "C11",
+     2
+    ],
+    [
+     "D11",
+     2
+    ],
+    [
+     "A12",
+     "Bollería o dulce por invitado (coste, sin IVA)"
+    ],
+    [
+     "B12",
+     0.4
+    ],
+    [
+     "C12",
+     0
+    ],
+    [
+     "D12",
+     0
+    ],
+    [
+     "A13",
+     "Alquileres repercutidos (carpa, cubierta, mesas, loza extra)"
+    ],
+    [
+     "B13",
+     0
+    ],
+    [
+     "C13",
+     0
+    ],
+    [
+     "D13",
+     0
+    ],
+    [
+     "A14",
+     "Electricidad en el lugar"
+    ],
+    [
+     "B14",
+     "Enchufe de 16 A"
+    ],
+    [
+     "C14",
+     "Toma dedicada"
+    ],
+    [
+     "D14",
+     "Sin toma (generador o baterías)"
+    ],
+    [
+     "A15",
+     "Generador o baterías: coste por evento (si no hay toma)"
+    ],
+    [
+     "B15",
+     90
+    ],
+    [
+     "C15",
+     90
+    ],
+    [
+     "D15",
+     90
+    ],
+    [
+     "A16",
+     "Potencia de tu cafetera de dos grupos (kW)"
+    ],
+    [
+     "B16",
+     3.5
+    ],
+    [
+     "C16",
+     3.5
+    ],
+    [
+     "D16",
+     3.5
+    ],
+    [
+     "A17",
+     "Coste bruto por hora de un barista"
+    ],
+    [
+     "B17",
+     13
+    ],
+    [
+     "C17",
+     13
+    ],
+    [
+     "D17",
+     13
+    ],
+    [
+     "A18",
+     "Seguridad Social a cargo de la empresa"
+    ],
+    [
+     "B18",
+     0.33
+    ],
+    [
+     "C18",
+     0.33
+    ],
+    [
+     "D18",
+     0.33
+    ],
+    [
+     "A19",
+     "Kilómetros de ida (base → lugar)"
+    ],
+    [
+     "B19",
+     35
+    ],
+    [
+     "C19",
+     25
+    ],
+    [
+     "D19",
+     40
+    ],
+    [
+     "A20",
+     "Tarifa por kilómetro de desplazamiento"
+    ],
+    [
+     "B20",
+     0.45
+    ],
+    [
+     "C20",
+     0.45
+    ],
+    [
+     "D20",
+     0.45
+    ],
+    [
+     "A21",
+     "IVA del servicio"
+    ],
+    [
+     "B21",
+     0.1
+    ],
+    [
+     "C21",
+     0.1
+    ],
+    [
+     "D21",
+     0.1
+    ],
+    [
+     "A22",
+     "Feria: ticket medio por taza que cobrarás (sin IVA)"
+    ],
+    [
+     "B22",
+     3
+    ],
+    [
+     "C22",
+     3
+    ],
+    [
+     "D22",
+     3
+    ],
+    [
+     "A23",
+     "Feria: canon fijo del organizador (€)"
+    ],
+    [
+     "B23",
+     0
+    ],
+    [
+     "C23",
+     0
+    ],
+    [
+     "D23",
+     0
+    ],
+    [
+     "A24",
+     "Días que faltan para el evento si el cliente cancela"
+    ],
+    [
+     "B24",
+     45
+    ],
+    [
+     "C24",
+     20
+    ],
+    [
+     "D24",
+     45
+    ],
+    [
+     "A26",
+     "RESULTADO"
+    ],
+    [
+     "B26",
+     "Boda con barra tras la cena"
+    ],
+    [
+     "C26",
+     "Congreso con dos pausas de café"
+    ],
+    [
+     "D26",
+     "Jornada de feria con venta directa"
+    ],
+    [
+     "A27",
+     "LOGÍSTICA (tabla de escalado)"
+    ],
+    [
+     "A28",
+     "Bebidas por invitado del formato"
+    ],
+    [
+     "B28",
+     "=INDEX('Calculadora'!$B$107:$B$111,MATCH($B$7,'Calculadora'!$A$107:$A$111,0))"
+    ],
+    [
+     "C28",
+     "=INDEX('Calculadora'!$B$107:$B$111,MATCH($C$7,'Calculadora'!$A$107:$A$111,0))"
+    ],
+    [
+     "D28",
+     "=INDEX('Calculadora'!$B$107:$B$111,MATCH($D$7,'Calculadora'!$A$107:$A$111,0))"
+    ],
+    [
+     "A29",
+     "Ajuste por horario"
+    ],
+    [
+     "B29",
+     "=INDEX('Calculadora'!$B$114:$B$116,MATCH($B$8,'Calculadora'!$A$114:$A$116,0))"
+    ],
+    [
+     "C29",
+     "=INDEX('Calculadora'!$B$114:$B$116,MATCH($C$8,'Calculadora'!$A$114:$A$116,0))"
+    ],
+    [
+     "D29",
+     "=INDEX('Calculadora'!$B$114:$B$116,MATCH($D$8,'Calculadora'!$A$114:$A$116,0))"
+    ],
+    [
+     "A30",
+     "Bebidas que se sirven (ud.)"
+    ],
+    [
+     "B30",
+     "=IF($B$5='Calculadora'!$D$127,$B$6,ROUNDUP(ROUND($B$6*$B$28*(1+$B$29),2),0))"
+    ],
+    [
+     "C30",
+     "=IF($C$5='Calculadora'!$D$127,$C$6,ROUNDUP(ROUND($C$6*$C$28*(1+$C$29),2),0))"
+    ],
+    [
+     "D30",
+     "=IF($D$5='Calculadora'!$D$127,$D$6,ROUNDUP(ROUND($D$6*$D$28*(1+$D$29),2),0))"
+    ],
+    [
+     "A31",
+     "Bebidas por hora (media)"
+    ],
+    [
+     "B31",
+     "=$B$30/$B$10"
+    ],
+    [
+     "C31",
+     "=$C$30/$C$10"
+    ],
+    [
+     "D31",
+     "=$D$30/$D$10"
+    ],
+    [
+     "A32",
+     "Baristas necesarios"
+    ],
+    [
+     "B32",
+     "=MAX(1,ROUNDUP(ROUND($B$31*'Calculadora'!$B$93/'Calculadora'!$B$92,2),0))"
+    ],
+    [
+     "C32",
+     "=MAX(1,ROUNDUP(ROUND($C$31*'Calculadora'!$B$93/'Calculadora'!$B$92,2),0))"
+    ],
+    [
+     "D32",
+     "=MAX(1,ROUNDUP(ROUND($D$31*'Calculadora'!$B$93/'Calculadora'!$B$92,2),0))"
+    ],
+    [
+     "A33",
+     "Cafeteras de dos grupos (estaciones)"
+    ],
+    [
+     "B33",
+     "=ROUNDUP($B$32/'Calculadora'!$B$94,0)"
+    ],
+    [
+     "C33",
+     "=ROUNDUP($C$32/'Calculadora'!$B$94,0)"
+    ],
+    [
+     "D33",
+     "=ROUNDUP($D$32/'Calculadora'!$B$94,0)"
+    ],
+    [
+     "A34",
+     "Grupos en total"
+    ],
+    [
+     "B34",
+     "=$B$33*'Calculadora'!$B$95"
+    ],
+    [
+     "C34",
+     "=$C$33*'Calculadora'!$B$95"
+    ],
+    [
+     "D34",
+     "=$D$33*'Calculadora'!$B$95"
+    ],
+    [
+     "A35",
+     "Molinos"
+    ],
+    [
+     "B35",
+     "=$B$33+'Calculadora'!$B$96"
+    ],
+    [
+     "C35",
+     "=$C$33+'Calculadora'!$B$96"
+    ],
+    [
+     "D35",
+     "=$D$33+'Calculadora'!$B$96"
+    ],
+    [
+     "A36",
+     "Café en grano (kg)"
+    ],
+    [
+     "B36",
+     "=ROUNDUP($B$30*'Escandallo'!$B$49/1000+'Calculadora'!$B$97,1)"
+    ],
+    [
+     "C36",
+     "=ROUNDUP($C$30*'Escandallo'!$B$49/1000+'Calculadora'!$B$97,1)"
+    ],
+    [
+     "D36",
+     "=ROUNDUP($D$30*'Escandallo'!$B$49/1000+'Calculadora'!$B$97,1)"
+    ],
+    [
+     "A37",
+     "Leche y bebidas vegetales (l)"
+    ],
+    [
+     "B37",
+     "=ROUNDUP(ROUND($B$30*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "C37",
+     "=ROUNDUP(ROUND($C$30*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "D37",
+     "=ROUNDUP(ROUND($D$30*'Escandallo'!$B$50/1000,2),0)"
+    ],
+    [
+     "A38",
+     "Vasos desechables o tazas de loza (ud.)"
+    ],
+    [
+     "B38",
+     "=IF($B$9='Calculadora'!$A$119,ROUNDUP(ROUND($B$6*'Calculadora'!$B$99,2),0),ROUNDUP(ROUND($B$30*(1+'Calculadora'!$B$98),2),0))"
+    ],
+    [
+     "C38",
+     "=IF($C$9='Calculadora'!$A$119,ROUNDUP(ROUND($C$6*'Calculadora'!$B$99,2),0),ROUNDUP(ROUND($C$30*(1+'Calculadora'!$B$98),2),0))"
+    ],
+    [
+     "D38",
+     "=IF($D$9='Calculadora'!$A$119,ROUNDUP(ROUND($D$6*'Calculadora'!$B$99,2),0),ROUNDUP(ROUND($D$30*(1+'Calculadora'!$B$98),2),0))"
+    ],
+    [
+     "A39",
+     "Agua limpia (l)"
+    ],
+    [
+     "B39",
+     "=ROUNDUP(ROUND($B$30*'Calculadora'!$B$100+'Calculadora'!$B$101,2),0)"
+    ],
+    [
+     "C39",
+     "=ROUNDUP(ROUND($C$30*'Calculadora'!$B$100+'Calculadora'!$B$101,2),0)"
+    ],
+    [
+     "D39",
+     "=ROUNDUP(ROUND($D$30*'Calculadora'!$B$100+'Calculadora'!$B$101,2),0)"
+    ],
+    [
+     "A40",
+     "ELECTRICIDAD (aviso del contrato)"
+    ],
+    [
+     "A41",
+     "Potencia de las cafeteras (kW)"
+    ],
+    [
+     "B41",
+     "=$B$33*$B$16"
+    ],
+    [
+     "C41",
+     "=$C$33*$C$16"
+    ],
+    [
+     "D41",
+     "=$D$33*$D$16"
+    ],
+    [
+     "A42",
+     "Intensidad (A)"
+    ],
+    [
+     "B42",
+     "=$B$41*1000/'Calculadora'!$B$102"
+    ],
+    [
+     "C42",
+     "=$C$41*1000/'Calculadora'!$B$102"
+    ],
+    [
+     "D42",
+     "=$D$41*1000/'Calculadora'!$B$102"
+    ],
+    [
+     "A43",
+     "Potencia de un enchufe (kW)"
+    ],
+    [
+     "B43",
+     "='Calculadora'!$B$103*'Calculadora'!$B$102/1000"
+    ],
+    [
+     "C43",
+     "='Calculadora'!$B$103*'Calculadora'!$B$102/1000"
+    ],
+    [
+     "D43",
+     "='Calculadora'!$B$103*'Calculadora'!$B$102/1000"
+    ],
+    [
+     "A44",
+     "Generador inverter mínimo (kVA)"
+    ],
+    [
+     "B44",
+     "=ROUNDUP(ROUND($B$41*'Calculadora'!$B$104,2),0)"
+    ],
+    [
+     "C44",
+     "=ROUNDUP(ROUND($C$41*'Calculadora'!$B$104,2),0)"
+    ],
+    [
+     "D44",
+     "=ROUNDUP(ROUND($D$41*'Calculadora'!$B$104,2),0)"
+    ],
+    [
+     "A45",
+     "Toma que hace falta"
+    ],
+    [
+     "B45",
+     "=IF($B$41<=$B$43,'Calculadora'!$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "C45",
+     "=IF($C$41<=$C$43,'Calculadora'!$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "D45",
+     "=IF($D$41<=$D$43,'Calculadora'!$A$123,\"Toma dedicada o generador\")"
+    ],
+    [
+     "A46",
+     "AVISO de electricidad"
+    ],
+    [
+     "B46",
+     "=IF($B$14='Calculadora'!$A$125,\"Sin toma: lleva generador o baterías (kVA mínimos en su fila)\",IF(AND($B$41>$B$43,$B$14='Calculadora'!$A$123),\"AVISO: este enchufe no basta para tus cafeteras; pide toma dedicada por escrito o lleva generador\",\"Potencia cubierta: confirma por escrito en el contrato la toma y su potencia\"))"
+    ],
+    [
+     "C46",
+     "=IF($C$14='Calculadora'!$A$125,\"Sin toma: lleva generador o baterías (kVA mínimos en su fila)\",IF(AND($C$41>$C$43,$C$14='Calculadora'!$A$123),\"AVISO: este enchufe no basta para tus cafeteras; pide toma dedicada por escrito o lleva generador\",\"Potencia cubierta: confirma por escrito en el contrato la toma y su potencia\"))"
+    ],
+    [
+     "D46",
+     "=IF($D$14='Calculadora'!$A$125,\"Sin toma: lleva generador o baterías (kVA mínimos en su fila)\",IF(AND($D$41>$D$43,$D$14='Calculadora'!$A$123),\"AVISO: este enchufe no basta para tus cafeteras; pide toma dedicada por escrito o lleva generador\",\"Potencia cubierta: confirma por escrito en el contrato la toma y su potencia\"))"
+    ],
+    [
+     "A47",
+     "COSTE DIRECTO"
+    ],
+    [
+     "A48",
+     "Coste de las bebidas"
+    ],
+    [
+     "B48",
+     "=$B$30*IF($B$9='Calculadora'!$A$119,'Escandallo'!$B$46,'Escandallo'!$B$48)"
+    ],
+    [
+     "C48",
+     "=$C$30*IF($C$9='Calculadora'!$A$119,'Escandallo'!$B$46,'Escandallo'!$B$48)"
+    ],
+    [
+     "D48",
+     "=$D$30*IF($D$9='Calculadora'!$A$119,'Escandallo'!$B$46,'Escandallo'!$B$48)"
+    ],
+    [
+     "A49",
+     "Coste de bollería o dulces"
+    ],
+    [
+     "B49",
+     "=$B$12*$B$6"
+    ],
+    [
+     "C49",
+     "=$C$12*$C$6"
+    ],
+    [
+     "D49",
+     "=$D$12*$D$6"
+    ],
+    [
+     "A50",
+     "Coste de personal (salario + Seguridad Social)"
+    ],
+    [
+     "B50",
+     "=$B$32*($B$10+$B$11)*$B$17*(1+$B$18)"
+    ],
+    [
+     "C50",
+     "=$C$32*($C$10+$C$11)*$C$17*(1+$C$18)"
+    ],
+    [
+     "D50",
+     "=$D$32*($D$10+$D$11)*$D$17*(1+$D$18)"
+    ],
+    [
+     "A51",
+     "Generador o baterías"
+    ],
+    [
+     "B51",
+     "=IF($B$14='Calculadora'!$A$125,$B$15,0)"
+    ],
+    [
+     "C51",
+     "=IF($C$14='Calculadora'!$A$125,$C$15,0)"
+    ],
+    [
+     "D51",
+     "=IF($D$14='Calculadora'!$A$125,$D$15,0)"
+    ],
+    [
+     "A52",
+     "Alquileres repercutidos"
+    ],
+    [
+     "B52",
+     "=$B$13"
+    ],
+    [
+     "C52",
+     "=$C$13"
+    ],
+    [
+     "D52",
+     "=$D$13"
+    ],
+    [
+     "A53",
+     "Desplazamiento a la feria (coste tuyo)"
+    ],
+    [
+     "B53",
+     "=IF($B$5='Calculadora'!$D$127,$B$19*2*$B$20,0)"
+    ],
+    [
+     "C53",
+     "=IF($C$5='Calculadora'!$D$127,$C$19*2*$C$20,0)"
+    ],
+    [
+     "D53",
+     "=IF($D$5='Calculadora'!$D$127,$D$19*2*$D$20,0)"
+    ],
+    [
+     "A54",
+     "Coste directo total"
+    ],
+    [
+     "B54",
+     "=$B$48+$B$49+$B$50+$B$51+$B$52+$B$53"
+    ],
+    [
+     "C54",
+     "=$C$48+$C$49+$C$50+$C$51+$C$52+$C$53"
+    ],
+    [
+     "D54",
+     "=$D$48+$D$49+$D$50+$D$51+$D$52+$D$53"
+    ],
+    [
+     "A55",
+     "Coste directo por invitado"
+    ],
+    [
+     "B55",
+     "=$B$54/$B$6"
+    ],
+    [
+     "C55",
+     "=$C$54/$C$6"
+    ],
+    [
+     "D55",
+     "=$D$54/$D$6"
+    ],
+    [
+     "A56",
+     "PRECIO Y PRESUPUESTO"
+    ],
+    [
+     "A57",
+     "Margen objetivo del cliente elegido"
+    ],
+    [
+     "B57",
+     "=INDEX('Calculadora'!$B$128:$D$128,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C57",
+     "=INDEX('Calculadora'!$B$128:$D$128,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D57",
+     "=INDEX('Calculadora'!$B$128:$D$128,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A58",
+     "Canon del organizador (cliente elegido)"
+    ],
+    [
+     "B58",
+     "=INDEX('Calculadora'!$B$129:$D$129,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C58",
+     "=INDEX('Calculadora'!$B$129:$D$129,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D58",
+     "=INDEX('Calculadora'!$B$129:$D$129,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A59",
+     "PRECIO POR INVITADO SIN IVA"
+    ],
+    [
+     "B59",
+     "=ROUNDUP($B$54/(1-$B$57-$B$58)/$B$6*2,0)/2"
+    ],
+    [
+     "C59",
+     "=ROUNDUP($C$54/(1-$C$57-$C$58)/$C$6*2,0)/2"
+    ],
+    [
+     "D59",
+     "=ROUNDUP($D$54/(1-$D$57-$D$58)/$D$6*2,0)/2"
+    ],
+    [
+     "A60",
+     "PRECIO POR INVITADO CON IVA"
+    ],
+    [
+     "B60",
+     "=$B$59*(1+$B$21)"
+    ],
+    [
+     "C60",
+     "=$C$59*(1+$C$21)"
+    ],
+    [
+     "D60",
+     "=$D$59*(1+$D$21)"
+    ],
+    [
+     "A61",
+     "Subtotal de bebidas sin IVA"
+    ],
+    [
+     "B61",
+     "=$B$59*$B$6"
+    ],
+    [
+     "C61",
+     "=$C$59*$C$6"
+    ],
+    [
+     "D61",
+     "=$D$59*$D$6"
+    ],
+    [
+     "A62",
+     "Equivalente por hora de barra (sin IVA)"
+    ],
+    [
+     "B62",
+     "=$B$61/$B$10"
+    ],
+    [
+     "C62",
+     "=$C$61/$C$10"
+    ],
+    [
+     "D62",
+     "=$D$61/$D$10"
+    ],
+    [
+     "A63",
+     "Equivalente por bebida (sin IVA)"
+    ],
+    [
+     "B63",
+     "=$B$61/$B$30"
+    ],
+    [
+     "C63",
+     "=$C$61/$C$30"
+    ],
+    [
+     "D63",
+     "=$D$61/$D$30"
+    ],
+    [
+     "A64",
+     "Desplazamiento aparte (ida y vuelta, sin margen)"
+    ],
+    [
+     "B64",
+     "=IF($B$5='Calculadora'!$D$127,0,$B$19*2*$B$20)"
+    ],
+    [
+     "C64",
+     "=IF($C$5='Calculadora'!$D$127,0,$C$19*2*$C$20)"
+    ],
+    [
+     "D64",
+     "=IF($D$5='Calculadora'!$D$127,0,$D$19*2*$D$20)"
+    ],
+    [
+     "A65",
+     "Base imponible"
+    ],
+    [
+     "B65",
+     "=$B$61+$B$64"
+    ],
+    [
+     "C65",
+     "=$C$61+$C$64"
+    ],
+    [
+     "D65",
+     "=$D$61+$D$64"
+    ],
+    [
+     "A66",
+     "IVA"
+    ],
+    [
+     "B66",
+     "=$B$65*$B$21"
+    ],
+    [
+     "C66",
+     "=$C$65*$C$21"
+    ],
+    [
+     "D66",
+     "=$D$65*$D$21"
+    ],
+    [
+     "A67",
+     "TOTAL DEL PRESUPUESTO (con IVA)"
+    ],
+    [
+     "B67",
+     "=$B$65+$B$66"
+    ],
+    [
+     "C67",
+     "=$C$65+$C$66"
+    ],
+    [
+     "D67",
+     "=$D$65+$D$66"
+    ],
+    [
+     "A68",
+     "COBRO"
+    ],
+    [
+     "A69",
+     "Importe del cobro 1: señal al reservar"
+    ],
+    [
+     "B69",
+     "=$B$67*INDEX('Calculadora'!$B$130:$D$130,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C69",
+     "=$C$67*INDEX('Calculadora'!$B$130:$D$130,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D69",
+     "=$D$67*INDEX('Calculadora'!$B$130:$D$130,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A70",
+     "Importe del cobro 2: resto antes del evento"
+    ],
+    [
+     "B70",
+     "=$B$67*INDEX('Calculadora'!$B$131:$D$131,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C70",
+     "=$C$67*INDEX('Calculadora'!$B$131:$D$131,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D70",
+     "=$D$67*INDEX('Calculadora'!$B$131:$D$131,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A71",
+     "Importe del cobro 3: resto a 30 días de la factura"
+    ],
+    [
+     "B71",
+     "=$B$67*INDEX('Calculadora'!$B$132:$D$132,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C71",
+     "=$C$67*INDEX('Calculadora'!$B$132:$D$132,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D71",
+     "=$D$67*INDEX('Calculadora'!$B$132:$D$132,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A72",
+     "Importe del cobro 4: en el momento de la venta"
+    ],
+    [
+     "B72",
+     "=$B$67*INDEX('Calculadora'!$B$133:$D$133,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C72",
+     "=$C$67*INDEX('Calculadora'!$B$133:$D$133,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D72",
+     "=$D$67*INDEX('Calculadora'!$B$133:$D$133,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A73",
+     "Canon del organizador sobre el subtotal"
+    ],
+    [
+     "B73",
+     "=$B$61*$B$58"
+    ],
+    [
+     "C73",
+     "=$C$61*$C$58"
+    ],
+    [
+     "D73",
+     "=$D$61*$D$58"
+    ],
+    [
+     "A74",
+     "Margen bruto en euros"
+    ],
+    [
+     "B74",
+     "=$B$61-$B$54-$B$73"
+    ],
+    [
+     "C74",
+     "=$C$61-$C$54-$C$73"
+    ],
+    [
+     "D74",
+     "=$D$61-$D$54-$D$73"
+    ],
+    [
+     "A75",
+     "Margen bruto (calculado)"
+    ],
+    [
+     "B75",
+     "=IF($B$61=0,0,$B$74/$B$61)"
+    ],
+    [
+     "C75",
+     "=IF($C$61=0,0,$C$74/$C$61)"
+    ],
+    [
+     "D75",
+     "=IF($D$61=0,0,$D$74/$D$61)"
+    ],
+    [
+     "A76",
+     "CANCELACIÓN (tramos sin huecos)"
+    ],
+    [
+     "A77",
+     "Tramo que corresponde a los días elegidos"
+    ],
+    [
+     "B77",
+     "=IF($B$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$141:$D$141,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$142:$D$142,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$143:$D$143,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$144:$D$144,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "C77",
+     "=IF($C$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$141:$D$141,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),IF($C$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$142:$D$142,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),IF($C$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$143:$D$143,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$144:$D$144,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "D77",
+     "=IF($D$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$141:$D$141,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),IF($D$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$142:$D$142,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),IF($D$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$143:$D$143,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$144:$D$144,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "A78",
+     "Porcentaje que retienes en ese tramo"
+    ],
+    [
+     "B78",
+     "=IF($B$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$137:$D$137,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$138:$D$138,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),IF($B$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$139:$D$139,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$140:$D$140,MATCH($B$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "C78",
+     "=IF($C$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$137:$D$137,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),IF($C$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$138:$D$138,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),IF($C$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$139:$D$139,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$140:$D$140,MATCH($C$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "D78",
+     "=IF($D$24>=INDEX('Calculadora'!$B$134:$D$134,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$137:$D$137,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),IF($D$24>=INDEX('Calculadora'!$B$135:$D$135,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$138:$D$138,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),IF($D$24>=INDEX('Calculadora'!$B$136:$D$136,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$139:$D$139,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)),INDEX('Calculadora'!$B$140:$D$140,MATCH($D$5,'Calculadora'!$B$127:$D$127,0)))))"
+    ],
+    [
+     "A79",
+     "Importe que retienes si cancela ese día"
+    ],
+    [
+     "B79",
+     "=$B$67*$B$78"
+    ],
+    [
+     "C79",
+     "=$C$67*$C$78"
+    ],
+    [
+     "D79",
+     "=$D$67*$D$78"
+    ],
+    [
+     "A80",
+     "Importe retenido: tramo 1 (el más lejano)"
+    ],
+    [
+     "B80",
+     "=$B$67*INDEX('Calculadora'!$B$137:$D$137,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C80",
+     "=$C$67*INDEX('Calculadora'!$B$137:$D$137,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D80",
+     "=$D$67*INDEX('Calculadora'!$B$137:$D$137,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A81",
+     "Importe retenido: tramo 2"
+    ],
+    [
+     "B81",
+     "=$B$67*INDEX('Calculadora'!$B$138:$D$138,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C81",
+     "=$C$67*INDEX('Calculadora'!$B$138:$D$138,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D81",
+     "=$D$67*INDEX('Calculadora'!$B$138:$D$138,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A82",
+     "Importe retenido: tramo 3"
+    ],
+    [
+     "B82",
+     "=$B$67*INDEX('Calculadora'!$B$139:$D$139,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C82",
+     "=$C$67*INDEX('Calculadora'!$B$139:$D$139,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D82",
+     "=$D$67*INDEX('Calculadora'!$B$139:$D$139,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A83",
+     "Importe retenido: tramo 4 (el más cercano o no presentación)"
+    ],
+    [
+     "B83",
+     "=$B$67*INDEX('Calculadora'!$B$140:$D$140,MATCH($B$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "C83",
+     "=$C$67*INDEX('Calculadora'!$B$140:$D$140,MATCH($C$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "D83",
+     "=$D$67*INDEX('Calculadora'!$B$140:$D$140,MATCH($D$5,'Calculadora'!$B$127:$D$127,0))"
+    ],
+    [
+     "A84",
+     "FERIA: PREVISIÓN DE LA JORNADA (solo si el cliente es Feria)"
+    ],
+    [
+     "A85",
+     "Coste variable por taza (bebida + dulce)"
+    ],
+    [
+     "B85",
+     "=($B$48+$B$49)/$B$6"
+    ],
+    [
+     "C85",
+     "=($C$48+$C$49)/$C$6"
+    ],
+    [
+     "D85",
+     "=($D$48+$D$49)/$D$6"
+    ],
+    [
+     "A86",
+     "Venta prevista (tazas × ticket, sin IVA)"
+    ],
+    [
+     "B86",
+     "=IF($B$5='Calculadora'!$D$127,$B$6*$B$22,0)"
+    ],
+    [
+     "C86",
+     "=IF($C$5='Calculadora'!$D$127,$C$6*$C$22,0)"
+    ],
+    [
+     "D86",
+     "=IF($D$5='Calculadora'!$D$127,$D$6*$D$22,0)"
+    ],
+    [
+     "A87",
+     "Canon del organizador (% de la venta + cuota fija)"
+    ],
+    [
+     "B87",
+     "=IF($B$5='Calculadora'!$D$127,$B$86*$B$58+$B$23,0)"
+    ],
+    [
+     "C87",
+     "=IF($C$5='Calculadora'!$D$127,$C$86*$C$58+$C$23,0)"
+    ],
+    [
+     "D87",
+     "=IF($D$5='Calculadora'!$D$127,$D$86*$D$58+$D$23,0)"
+    ],
+    [
+     "A88",
+     "Resultado de la jornada (venta − canon − coste)"
+    ],
+    [
+     "B88",
+     "=IF($B$5='Calculadora'!$D$127,$B$86-$B$87-$B$54,0)"
+    ],
+    [
+     "C88",
+     "=IF($C$5='Calculadora'!$D$127,$C$86-$C$87-$C$54,0)"
+    ],
+    [
+     "D88",
+     "=IF($D$5='Calculadora'!$D$127,$D$86-$D$87-$D$54,0)"
+    ],
+    [
+     "A89",
+     "Tazas para cubrir los costes de la jornada"
+    ],
+    [
+     "B89",
+     "=IF($B$5='Calculadora'!$D$127,IF($B$22*(1-$B$58)-$B$85<=0,0,ROUNDUP(($B$50+$B$51+$B$52+$B$53+$B$23)/($B$22*(1-$B$58)-$B$85),0)),0)"
+    ],
+    [
+     "C89",
+     "=IF($C$5='Calculadora'!$D$127,IF($C$22*(1-$C$58)-$C$85<=0,0,ROUNDUP(($C$50+$C$51+$C$52+$C$53+$C$23)/($C$22*(1-$C$58)-$C$85),0)),0)"
+    ],
+    [
+     "D89",
+     "=IF($D$5='Calculadora'!$D$127,IF($D$22*(1-$D$58)-$D$85<=0,0,ROUNDUP(($D$50+$D$51+$D$52+$D$53+$D$23)/($D$22*(1-$D$58)-$D$85),0)),0)"
+    ],
+    [
+     "A91",
+     "QUÉ ENSEÑA CADA EJEMPLO"
+    ],
+    [
+     "A92",
+     "Boda con barra tras la cena"
+    ],
+    [
+     "B92",
+     "Particular, 120 invitados (la boda del caso del plan financiero), barra de dos a cuatro horas tras la cena en loza, con un dulce de 0,40 € por invitado. El precio con IVA es el que ve el particular; cobro del 30 % al reservar y el 70 % siete días antes. Con 45 días de margen, si cancela retienes el 30 %. Dos baristas en una cafetera y un enchufe de 16 A: la cafetera de 3,5 kW cabe."
+    ],
+    [
+     "A93",
+     "Congreso con dos pausas de café"
+    ],
+    [
+     "B93",
+     "Empresa, 300 asistentes, jornada de 8 horas con dos pausas (1,6 bebidas por asistente, mezcla del caso), loza y toma dedicada. El precio se presupuesta «+ IVA»; cobro del 30 % al firmar y el 70 % a 30 días de la factura. Con 20 días de margen el tramo es el segundo y retienes el 30 %."
+    ],
+    [
+     "A94",
+     "Jornada de feria con venta directa"
+    ],
+    [
+     "B94",
+     "Feria: 250 tazas en una jornada de 10 horas, vaso de un solo uso (con su precio aparte en el ticket), generador y canon del 15 % del organizador. El «precio por invitado» es el ticket mínimo por taza; con el ticket de 3,00 € la jornada deja unos 128 € antes de costes fijos, y por debajo de 181 tazas pierdes."
+    ]
+   ]
+  },
+  "Instrucciones": {
+   "dim": "A1:A37",
+   "celdas": [
+    [
+     "A1",
+     "INSTRUCCIONES DE USO — Calculadora de escandallo y presupuesto de cafetería móvil para eventos"
+    ],
+    [
+     "A2",
+     "Convierte el coste de tus bebidas en un precio por invitado y en un presupuesto completo: baristas, cafeteras, molinos, kilos de café, litros de leche, vasos, potencia eléctrica y agua, subtotal, IVA, total, cobro por pagos y lo que retienes si el cliente cancela. Sólo se escribe en las celdas VERDES; el margen se calcula."
+    ],
+    [
+     "A3",
+     "HOJA «ESCANDALLO»"
+    ],
+    [
+     "A5",
+     "1. Escribe el precio sin IVA y la merma de cada insumo (café, leches, cacao, chai, sirope, té, azúcar, vasos, tapa, removedor y servilleta) y los gramos, mililitros o unidades de cada bebida. El café se calcula con los dobles por bebida y los gramos por doble."
+    ],
+    [
+     "A6",
+     "2. Para cada bebida ves el coste de producto, el coste con envase, el precio sin IVA, el food cost con semáforo, el margen y el precio de carta que necesitarías para llegar a tu objetivo. La mezcla de ventas tiene que sumar el cien por cien: la hoja lo avisa."
+    ],
+    [
+     "A7",
+     "3. El coste de UNA bebida de esta hoja no es el «coste de bebida» del plan financiero: aquel es la media de la mezcla con la merma (purga, calibrado y leche sobrante), no una receta. No copies uno en el otro."
+    ],
+    [
+     "A8",
+     "HOJA «CALCULADORA»"
+    ],
+    [
+     "A10",
+     "4. Elige el cliente (Particular, Empresa o Feria), los invitados, el formato (bebidas por invitado según las horas), el horario y el servicio en loza o en vaso de un solo uso. En Feria, los invitados son las tazas que esperas vender."
+    ],
+    [
+     "A11",
+     "5. La tabla de escalado del final da baristas, cafeteras de dos grupos, molinos, kilos de café, litros de leche, vasos o tazas, potencia, toma eléctrica y agua. Es la misma que figura en las Instrucciones del plan financiero y en el plan de negocio."
+    ],
+    [
+     "A12",
+     "6. Escribe las horas de servicio y las horas fuera del servicio (carga, viaje, montaje y limpieza), el coste bruto por hora y la Seguridad Social. Si cobras tú de barista, cuéntate a precio de hora: es tu coste de oportunidad."
+    ],
+    [
+     "A13",
+     "7. El precio por invitado es el coste directo dividido entre (1 − margen − canon), redondeado a los 0,50 € de arriba. Verás también su equivalente por hora de barra y por bebida, para comparar con las tarifas por hora o por consumición que te pidan."
+    ],
+    [
+     "A14",
+     "8. A una empresa se le presupuesta el precio SIN IVA («+ IVA»); a un particular, el precio CON IVA, porque en una oferta a consumidores el precio va con los impuestos incluidos. El desplazamiento va en línea aparte, ida y vuelta y sin margen."
+    ],
+    [
+     "A15",
+     "ELECTRICIDAD"
+    ],
+    [
+     "A17",
+     "Una cafetera de dos grupos gasta de 2,4 a 4,5 kW. Un enchufe de 16 A a 230 V da unos 3,7 kW: con una máquina de 3,5 kW o menos cabe; si no, hace falta toma dedicada o un generador inverter (o baterías de litio con inversor). Los molinos, la nevera y la iluminación van aparte: déjales margen. La hoja te avisa cuando el enchufe no basta, y el contrato del kit pide la toma por escrito."
+    ],
+    [
+     "A18",
+     "IVA, VASOS Y COBROS"
+    ],
+    [
+     "A20",
+     "La bebida para consumir en el acto o para llevar va al 10 % de IVA (Ley 37/1992, art. 91). Los extras con precio propio (personalización de máquina o stand, vasos con logo, talleres) van al 21 %. En loza no hay vaso de plástico; el vaso de papel con forro de PE o PLA («compostable») es plástico a efectos de la Ley 7/2022 (arts. 2 y 55) y se cobra aparte en el ticket. Pajitas y agitadores de plástico, prohibidos. En ferias y festivales, el organizador puede imponer su sistema de vaso reutilizable (RD 1055/2022, art. 7)."
+    ],
+    [
+     "A21",
+     "La propina voluntaria es del equipo: no entra en el precio, en la base imponible ni en el total. Los pagos en efectivo con particulares solo valen por debajo de 1.000 €: la ley prohíbe pagar en efectivo 1.000 € o más (art. 7 de la Ley 7/2012)."
+    ],
+    [
+     "A22",
+     "COBRO Y CANCELACIÓN"
+    ],
+    [
+     "A24",
+     "Particular: 30 % de señal al reservar (a cuenta del precio) y 70 % siete días antes del evento. Empresa: 30 % de señal y 70 % a 30 días de la factura. Feria: cobro en el acto. Emite factura de cada pago, también de la señal."
+    ],
+    [
+     "A25",
+     "Cancelación, sobre el total, por tramos «de X a menos de Y» sin huecos. Particular: con 60 días o más retienes el 10 %; de 30 a menos de 60 días, el 30 %; de 7 a menos de 30 días, el 60 %; con menos de 7 días, el 100 % menos los costes que te ahorras (consumibles, café y leche sin gastar, refuerzo y desplazamiento). Empresa: con 30 días o más, el 10 %; de 15 a menos de 30 días, el 30 %; de 7 a menos de 15 días, el 60 %; con menos de 7 días, igual que Particular. Es recíproco: si cancela la cafetería, devuelve lo cobrado y paga lo del mismo tramo. Si cambias un corte en la tabla, los tramos se reescriben solos. En un servicio con fecha no hay derecho de desistimiento en la contratación a distancia (art. 103.l del TRLGDCU): por eso la política tiene que estar firmada."
+    ],
+    [
+     "A26",
+     "FERIA"
+    ],
+    [
+     "A28",
+     "La venta directa en mercados y ferias depende de la autorización municipal y del canon del organizador. La hoja calcula la venta (tazas × ticket), el canon (porcentaje más cuota fija), el resultado de la jornada y las tazas que necesitas para cubrir los costes. El «precio por invitado» de esa columna es el ticket mínimo por taza que cubre coste, canon y margen."
+    ],
+    [
+     "A29",
+     "ESTIMACIONES DEL KIT"
+    ],
+    [
+     "A31",
+     "Los valores por defecto y los tres ejemplos son estimaciones del kit para ilustrar el cálculo, no precios de mercado. El consumo de bebidas por invitado, la capacidad por barista y el agua usan ratios de EE. UU. y no tienen fuente española: sustitúyelos por tus mediciones. Cambia los precios por los de tu tostador y tus proveedores, los salarios por tu convenio y los kilómetros por los tuyos antes de presupuestar."
+    ],
+    [
+     "A32",
+     "Fuentes: research del producto (octubre 2026); Ley 37/1992 del IVA, art. 91; Ley 7/2022, arts. 2, 55 y 56; RD 1055/2022, art. 7; TRLGDCU, arts. 85, 87 y 103."
+    ],
+    [
+     "A34",
+     "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña)."
+    ],
+    [
+     "A35",
+     "Más plantillas y kits del catálogo en aichef.pro/productos-digitales"
+    ],
+    [
+     "A36",
+     "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es"
+    ],
+    [
+     "A37",
+     "Versión 1.0 · octubre 2026 · aichef.pro/plan-negocio-cafeteria-movil-eventos · info@aichef.pro"
+    ]
+   ]
+  }
+ }
+}

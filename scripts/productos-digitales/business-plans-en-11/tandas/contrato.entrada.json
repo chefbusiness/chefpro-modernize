@@ -1,0 +1,568 @@
+{
+ "tanda": "contrato",
+ "salida": "scripts/productos-digitales/business-plans-en-11/textos_en/contrato_en.json",
+ "formato_salida": "[{\"estilo\": \"<uno de Kicker, Title, Subtitle, H1, H2, Normal, List Bullet, Separador, Firma>\", \"texto\": \"<EN>\"}, …] en el orden del documento; puedes añadir, quitar o reordenar párrafos",
+ "fuente_es": "plan-cafeteria-movil/textos/contrato_es.json",
+ "n_parrafos_es": 92,
+ "n_palabras_es": 3047,
+ "cabecera_fija (literal)": "**Template, not legal advice.** Consumer, deposit, food safety and tax rules vary by state. Have a licensed attorney in your state review and adapt it before you use it.",
+ "reglas": [
+  "Inglés de EE. UU., registro de contrato claro (plain English), sin segunda persona: «the Coffee Caterer», «the Client» (y «the Organizer» en el anexo de festivales). Corchetes [ ] para TODO lo editable (nombres, fechas, importes, plazos, porcentajes por defecto, estado, condado, voltaje y amperios): «[State]», «[14] days», «[30]%», «$[amount]», «[110V or 220V], [20] amps, within [50] ft». CERO cifras del caso del kit (ventas, invitados, precio por invitado) y cero cifras del ES.",
+  "Mismos estilos que el ES (Kicker, Title, Subtitle, H1, H2, Normal, List Bullet, Separador, Firma); «**negrita**» dentro del texto como en el ES. Puedes añadir, quitar o reordenar párrafos: NO es una traducción 1:1 (SPEC D230).",
+  "Nada de derecho español: ni TRLGDCU (arts. 85, 87, 90, 102, 103), LIVA art. 75, Código Civil, IVA, «señal / arras», «fuero del consumidor», RGPD, Ley 7/2022, registro sanitario, NIF / CIF / DNI, «feria», «cafetería» (falso amigo: di «coffee caterer», «mobile espresso bar»), Bizum. Firmas: «Name», «Title», «Date», «Signature».",
+  "Jerga (research §9, glosario adjunto): coffee catering · mobile espresso bar · espresso cart · full-service espresso bar · service window · additional hour · base fee + hourly rate · per guest · hosted / guest-pay · minimum sales guarantee · retainer (aplicado al precio) · balance due · final guest count · travel fee (free radius) · alt milk / oat milk · compostable cups · dedicated circuit / standard 110V outlet · COI / additional insured · service charge vs. gratuity · 9 major food allergens.",
+  "NUNCA «non-refundable» / «nonrefundable» solo: el retainer se aplica al precio y lo que se retiene al cancelar lo fija SOLO la tabla de cancelación; si lo mencionas, en el mismo párrafo remite a esa tabla (el check lo exige).",
+  "FTC Cooling-Off Rule: NO se afirma que aplique. Forma permitida, como nota de redacción entre corchetes: «[Drafting note: if you sign clients at a bridal show or anywhere away from your place of business, ask your attorney whether the FTC Cooling-Off Rule or your state's home-solicitation law applies.]» y, si quieres, una cláusula OPCIONAL entre corchetes con una ventana de cancelación de [3] business days. Nada de «16 CFR 429 applies».",
+  "Tramos de cancelación SIN huecos: «[60] days or more before the event», «from [30] to less than [60] days», «from [14] to less than [30] days», «less than [14] days»; «the parties agree these amounts are a reasonable estimate of the Coffee Caterer's loss, not a penalty» + crédito si se recoloca la fecha. Sin citar códigos estatales.",
+  "Unidades y formatos US: $1,000.00, mm/dd/yyyy, «business days», °F (41 °F para la leche), ft. Sin emojis, sin caracteres no latinos, sin español."
+ ],
+ "decisiones_D230": [
+  "PORTADA: Kicker «AI CHEF PRO · COFFEE CART BUSINESS PLAN KIT», Title «Coffee Catering Service Agreement», Subtitle «For private events and weddings, with an addendum for corporate clients and festival organizers». Justo después, un Normal con la CABECERA FIJA, literal: «**Template, not legal advice.** Consumer, deposit, food safety and tax rules vary by state. Have a licensed attorney in your state review and adapt it before you use it.» (el check la exige tal cual). Luego el «cómo usarlo» del ES adaptado (qué rellenar entre corchetes; anexar la carta y el presupuesto de la calculadora del kit).",
+  "CRUZAN (adaptadas): Reunidos → «Parties»; 1.ª → «Service, location and service hours» (service window, montaje ≈ 1 h antes, «additional hour» a $[amount]); 2.ª → «Pricing model» (por invitado, base fee + hourly rate o guest-pay con minimum sales guarantee); 3.ª → «Drink menu, allergens and cups» (carta anexa, leches incluida la de avena, alérgenos: leche, soja, frutos de cáscara, y trigo y huevo en la bollería de un obrador con licencia; vasos compostables o la loza del Client donde la sala lo pida); 10.ª → «Date change»; 11.ª → «Rain plan» (la lluvia NO es fuerza mayor: zona cubierta o interior a cargo del Client); 15.ª → «Photos and privacy» (autorización escrita aparte).",
+  "CAMBIAN: 4.ª → «Site requirements and power»: superficie nivelada de [10 × 10] ft, acceso para el carro (rampa o ascensor), aparcamiento del remolque, y POR ESCRITO un circuito dedicado ([110V or 220V], [20] amps) a ≤ [50] ft; si no lo hay, generator fee $[amount] y su ubicación la decide el venue o el fire marshal; 5.ª → «Permits: who handles each one» (Coffee Caterer: health permit de la unidad móvil, food handler cards, seguro y COI; Client: normas y aprobación de la sala; Organizer: permiso del evento y coordinación de los temporary food event permits); 6.ª → «Fees and sales tax» («plus applicable sales tax»; service charge ≠ gratuity; tip jar solo con permiso del Client); 7.ª → «Payments, retainer and receipts» (retainer del [30-50]% aplicado al precio, saldo [14] días antes, recuento final [10] días antes, recibo de cada pago); 8.ª → «Cancellation by the Client» (tabla sin huecos, regla común 7); 9.ª → «Cancellation by the Coffee Caterer» (devolución íntegra en [14] días y ayuda para encontrar sustituto: reciprocidad); 12.ª → «Force majeure» genérica (reembolso o nueva fecha a elección del Client).",
+  "SE QUITAN las citas españolas: 13.ª (sin desistimiento, art. 103.l) → cláusula OPCIONAL entre corchetes con la nota de redacción de la FTC Cooling-Off Rule (regla común 6); 16.ª (fuero del consumidor, art. 90.2) → «Governing law and disputes»: «[State] law; courts of [County], [State]» + «have a licensed attorney in your state review this clause»; 14.ª → «Damage, insurance and responsibility»: general liability $[1,000,000] / $[2,000,000] del Coffee Caterer con COI que nombre a la sala como additional insured; el Client responde de los daños de sus invitados al equipo.",
+  "NUEVAS: «Mutual responsibility» (cada parte responde de su propia negligencia; sin indemnidad unilateral) y «Entire agreement and e-signatures». Firmas: «Coffee Caterer: ____ Client: ____» · «Name / Title / Date».",
+  "ANEXO → H1 «Corporate & Festival Organizer Addendum» + Kicker «FOR CORPORATE EVENTS, AGENCIES, CONFERENCES, FESTIVALS AND FARMERS MARKETS»: W-9 del Coffee Caterer, orden de compra (PO) y contacto de facturación, certificado de exención de sales tax si la entidad está exenta, net [15 / 30] terms, «Late amounts bear interest at [1.5]% per month, or the highest rate the law allows if that is lower»; para guest-pay: «minimum sales guarantee» (el Organizer paga la diferencia entre las ventas de bebidas y $[minimum]), vendor / booth fee, quién aporta la electricidad y el agua, horario de montaje; tramos de cancelación corporativos; firma «Company / Organizer: ____ Title: ____»."
+ ],
+ "glosario": {
+  "plan de negocio": "business plan",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "carencia": "interest-only period",
+  "fondo de maniobra": "working capital",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable input tax",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cliente/día → (motor)": "events per year",
+  "ticket medio sin IVA → (motor)": "average price per guest (excl. sales tax, baristas included)",
+  "días de apertura → (motor)": "average guests per event",
+  "aparcamiento y base del vehículo": "commissary, cart storage & trailer parking",
+  "cafetería móvil para eventos (nombre)": "coffee cart (nombre, slug, H1, ficheros) · coffee catering y mobile espresso bar (subtítulo y cuerpo) · coffee truck / coffee trailer solo como FORMATO; NUNCA «mobile cafeteria» (cafeteria = comedor) ni «mobile café»",
+  "servicio de café para eventos": "coffee catering · coffee cart catering",
+  "barra con baristas · estación sin barista": "full-service espresso bar · self-serve coffee station / drop-off (cold brew)",
+  "carro · remolque · camión · bici · furgoneta": "espresso cart / coffee cart · coffee trailer · coffee truck · coffee bike · coffee van",
+  "barra portátil · barista jefe · de evento": "portable espresso bar · lead barista · event barista",
+  "bebidas sin límite": "«unlimited made-to-order espresso drinks during your booked service window»",
+  "horas de servicio · hora extra · tarifa base": "service hours / service window · additional hour / extra time · base fee + hourly rate",
+  "precio por invitado · paquete": "per person (pp) / per guest · package («100 Guest Package»)",
+  "paga el anfitrión · pagan los invitados · mínimo": "hosted («host-paid, all-inclusive») · guest-pay / pop-up · minimum sales guarantee",
+  "leche vegetal": "alt milk / plant-based milk · oat milk («additional alternative milk», o incluida)",
+  "filtro por lotes · frío · nitro": "batch brew · drip coffee · cold brew · nitro cold brew",
+  "bebida de autor · temporada · siropes caseros": "signature drinks · seasonal drinks · house-made syrups",
+  "vasos personalizados · activación de marca": "branded cups · custom cup sleeves · latte printing / latte logo printing · brand activation · trade show",
+  "montaje, servicio y desmontaje": "setup, service & breakdown · load-in",
+  "enchufe · circuito propio · sin toma de agua": "standard 110V outlet · dedicated circuit · «No plumbing connection is required» (self-contained)",
+  "ajustar molienda · sacar un café · doble": "dial in · pull a shot · double shot (18 g in / 36 g out)",
+  "capacidad · consumo": "drinks per hour (50-65 por barista) · drinks per guest",
+  "escandallo de bebida": "cost per drink («all-in cost per drink») · COGS % (NUNCA «escandallo» ni «recipe costing»)",
+  "señal · saldo · recuento final · desplazamiento": "retainer (30-50 %) · balance due 14 days before · final guest count · travel fee ($/mile, free radius)",
+  "tasa de cierre": "booking rate (quotes → bookings)",
+  "cocina base · permiso · revisión de planos": "commissary (+ agreement, log) · mobile food unit / facility permit · plan review",
+  "manipulador · seguro y certificado": "food handler card · CFPM · general liability $1M/$2M · COI · additional insured",
+  "vasos compostables": "compostable cups (single-use, onsite)",
+  "cafetería móvil": "coffee cart / mobile espresso bar (nunca «mobile cafeteria»)",
+  "café de especialidad": "specialty coffee",
+  "barra de café": "espresso bar / coffee bar",
+  "carrito": "cart",
+  "tueste / tostador": "roast / roaster",
+  "leche de avena": "oat milk",
+  "feria": "festival / farmers market / fair",
+  "evento de empresa": "corporate event",
+  "barista autónomo / fijo discontinuo / freelance": "W-2 event barista (hourly)",
+  "IVA": "sales tax",
+  "licencia de actividad": "business license",
+  "señal": "retainer / deposit",
+  "manipulador": "food handler",
+  "bollería": "pastries (from a licensed bakery)",
+  "comida testigo": "no aplica en EE. UU.",
+  "canon de feria": "organizer / vendor fee (booth fee)",
+  "medidas (John, 13-oct)": "US customary first, metric in parentheses: lb / oz (g), °F (°C), gallons / quarts (liters), miles, sq ft (sq m); espresso dose in grams with its oz"
+ },
+ "verificacion": "python3 scripts/productos-digitales/business-plans-en-11/bp11.py check_contrato --todas",
+ "es": [
+  {
+   "i": 0,
+   "estilo": "Kicker",
+   "texto": "AI CHEF PRO · PLAN DE NEGOCIO: CAFETERÍA MÓVIL PARA EVENTOS"
+  },
+  {
+   "i": 1,
+   "estilo": "Title",
+   "texto": "Modelo de contrato de servicio de barra de café"
+  },
+  {
+   "i": 2,
+   "estilo": "Subtitle",
+   "texto": "Contrato para particulares (bodas, comuniones, cumpleaños) y anexo para empresas y organizadores de ferias. Un documento editable."
+  },
+  {
+   "i": 3,
+   "estilo": "Normal",
+   "texto": "**Cómo usar este modelo.** Es un documento orientativo, un punto de partida para que no empieces con la página en blanco. Revísalo con tu asesor o con un abogado, y adáptalo a la normativa de tu comunidad autónoma y de tu ayuntamiento, antes de firmar. Los porcentajes, plazos y tramos son ejemplos del kit: ajústalos a tu caso. Lo que va entre corchetes, como [nombre] o [importe] €, lo rellenas tú en cada contrato."
+  },
+  {
+   "i": 4,
+   "estilo": "Normal",
+   "texto": "Tres ideas guían el texto: cada cobro lleva su factura; lo que se retiene y lo que se devuelve es proporcional y recíproco, para que aguante la reclamación de un consumidor; y cada permiso y cada requisito del lugar tiene un responsable escrito, también cuando el recinto o el organizador no firman."
+  },
+  {
+   "i": 5,
+   "estilo": "Separador",
+   "texto": ""
+  },
+  {
+   "i": 6,
+   "estilo": "H1",
+   "texto": "Contrato de servicio de barra de café en un evento"
+  },
+  {
+   "i": 7,
+   "estilo": "Kicker",
+   "texto": "PARA PARTICULARES: BODAS, BAUTIZOS, COMUNIONES, CUMPLEAÑOS Y OTRAS CELEBRACIONES"
+  },
+  {
+   "i": 8,
+   "estilo": "Normal",
+   "texto": "En [ciudad], a [fecha]."
+  },
+  {
+   "i": 9,
+   "estilo": "H2",
+   "texto": "Reunidos"
+  },
+  {
+   "i": 10,
+   "estilo": "Normal",
+   "texto": "De una parte, [nombre o razón social de la cafetería], con NIF/CIF [número], domicilio en [dirección completa], inscrita en el registro sanitario de [comunidad autónoma] con el número [número] (en adelante, la «Cafetería»)."
+  },
+  {
+   "i": 11,
+   "estilo": "Normal",
+   "texto": "De otra parte, D./Dña. [nombre y apellidos], con DNI/NIE [número] y domicilio en [dirección completa], que contrata en su propio nombre como consumidor para una celebración privada (en adelante, el «Cliente»). Si son dos contratantes, por ejemplo los novios, ambos constan aquí con sus datos y responden solidariamente: [segundo contratante, DNI/NIE y domicilio]."
+  },
+  {
+   "i": 12,
+   "estilo": "Normal",
+   "texto": "Ambas partes se reconocen capacidad suficiente para contratar y acuerdan las siguientes cláusulas."
+  },
+  {
+   "i": 13,
+   "estilo": "H2",
+   "texto": "Primera · Objeto, lugar y horas de servicio"
+  },
+  {
+   "i": 14,
+   "estilo": "Normal",
+   "texto": "La Cafetería presta al Cliente un servicio de barra de café y bebidas, con su vehículo o equipo móvil, personal y consumibles, en el evento siguiente:"
+  },
+  {
+   "i": 15,
+   "estilo": "List Bullet",
+   "texto": "Celebración: [tipo de celebración], el día [fecha]."
+  },
+  {
+   "i": 16,
+   "estilo": "List Bullet",
+   "texto": "Lugar: [nombre y dirección del recinto], propiedad o gestión de [nombre del titular del recinto]."
+  },
+  {
+   "i": 17,
+   "estilo": "List Bullet",
+   "texto": "Horas de servicio con la barra abierta: de las [hora] a las [hora], es decir, [número] horas. El montaje empieza [60-90] minutos antes y el desmontaje termina [45-60] minutos después, sin coste añadido."
+  },
+  {
+   "i": 18,
+   "estilo": "List Bullet",
+   "texto": "Personal: [número] baristas, según la tabla de dimensionado de la Cafetería para el número de invitados."
+  },
+  {
+   "i": 19,
+   "estilo": "Normal",
+   "texto": "**Horas extra.** Si el Cliente quiere prolongar el servicio, lo pide a la Cafetería en el propio evento y esta lo acepta solo si su personal y su material lo permiten. Cada hora o fracción adicional se factura a [importe] € más IVA, en la factura de liquidación."
+  },
+  {
+   "i": 20,
+   "estilo": "H2",
+   "texto": "Segunda · Modalidad de precio"
+  },
+  {
+   "i": 21,
+   "estilo": "Normal",
+   "texto": "Las partes eligen una de las tres modalidades siguientes. Marca la que se pacta y borra las otras dos."
+  },
+  {
+   "i": 22,
+   "estilo": "List Bullet",
+   "texto": "[ ] **Por invitado.** [importe] € más IVA por invitado, con un mínimo garantizado de [número] invitados. El Cliente comunica por escrito el recuento final, con las alergias e intolerancias que conozca, como máximo [7] días antes del evento. Después solo puede subir, si la Cafetería puede atenderlo; no puede bajar del mínimo garantizado, aunque luego asistan menos personas."
+  },
+  {
+   "i": 23,
+   "estilo": "List Bullet",
+   "texto": "[ ] **Por hora.** [importe] € más IVA por hora de barra abierta y por barista, durante las horas de la cláusula primera, con un mínimo de [número] horas."
+  },
+  {
+   "i": 24,
+   "estilo": "List Bullet",
+   "texto": "[ ] **Por consumición, con mínimo.** [importe] € más IVA por bebida servida, con una facturación mínima garantizada de [importe] € más IVA. Si las consumiciones no alcanzan el mínimo, la Cafetería factura la diferencia."
+  },
+  {
+   "i": 25,
+   "estilo": "H2",
+   "texto": "Tercera · Carta, alérgenos y vajilla"
+  },
+  {
+   "i": 26,
+   "estilo": "Normal",
+   "texto": "La carta es la del anexo de este contrato o la que las partes pacten por escrito: bebidas de café, té e infusiones, bebidas frías y bebidas sin café, con [leche de vaca, bebida de avena, de soja y de almendra]. Los extras con precio propio (personalización, tazas con el nombre de los novios, talleres de latte art) van con su precio aparte en el presupuesto."
+  },
+  {
+   "i": 27,
+   "estilo": "Normal",
+   "texto": "**Alérgenos.** La Cafetería informa por escrito de los alérgenos de cada bebida y de la bollería: leche (también la sin lactosa), soja, frutos de cáscara (almendra, avellana) y gluten. La bebida de avena se considera cereal con gluten, salvo que sea de una marca certificada sin gluten, y la bollería puede llevar además huevo y sésamo. La barra lleva un cartel con esa información y un aviso de que los invitados pueden preguntar. Usa una jarra distinta para cada tipo de leche, pero no garantiza la ausencia total de trazas: el Cliente avisa de cualquier alergia grave antes del evento y la Cafetería se lo confirma por escrito."
+  },
+  {
+   "i": 28,
+   "estilo": "Normal",
+   "texto": "**Loza por defecto.** El servicio se presta con taza y vaso de loza o vidrio reutilizables, incluidos en el precio. Si el Cliente quiere vasos de un solo uso, se pacta por escrito y se factura aparte a [importe] € por unidad, con línea propia en la factura: la Ley 7/2022 obliga a cobrar por separado los vasos de plástico, y los que llevan forro plástico se tratan igual aunque se anuncien como compostables. No se sirve con pajitas ni agitadores de plástico."
+  },
+  {
+   "i": 29,
+   "estilo": "H2",
+   "texto": "Cuarta · Requisitos del lugar y electricidad"
+  },
+  {
+   "i": 30,
+   "estilo": "Normal",
+   "texto": "El Cliente garantiza que el lugar cumple lo siguiente, y lo comprueba con el titular del recinto antes de firmar. La Cafetería puede visitarlo previamente y, si algo no se cumple, avisa por escrito con [7] días de margen."
+  },
+  {
+   "i": 31,
+   "estilo": "List Bullet",
+   "texto": "**Electricidad.** Una cafetera profesional de dos grupos consume entre 2,4 y 4,5 kW, y un enchufe de 16 A da unos 3,7 kW. El Cliente facilita una toma eléctrica dedicada, de [número] kW y a menos de [10] metros de la barra, que no comparta con música, iluminación ni cocina. Si no puede, la Cafetería lleva un generador inverter o baterías con un suplemento de [importe] € más IVA, colocado donde indique el recinto y lejos de los invitados."
+  },
+  {
+   "i": 32,
+   "estilo": "List Bullet",
+   "texto": "**Acceso y aparcamiento.** El vehículo cabe y puede llegar hasta [distancia] del punto de la barra. El Cliente consigue la autorización de acceso, la reserva de plaza de aparcamiento durante el montaje, el servicio y el desmontaje, y comunica cualquier limitación de horas, peso o altura."
+  },
+  {
+   "i": 33,
+   "estilo": "List Bullet",
+   "texto": "**Superficie y cubierta.** La barra necesita una superficie llana y firme de al menos [número] metros cuadrados. En un lugar exterior hay una cubierta (carpa, pérgola o porche) que proteja la barra y los equipos de la lluvia y del sol directo; sin ella la Cafetería no puede montar la máquina."
+  },
+  {
+   "i": 34,
+   "estilo": "List Bullet",
+   "texto": "**Agua.** Hay un punto de agua potable a menos de [30] metros, con un grifo accesible. Si no lo hay, la Cafetería lo lleva en depósitos de uso alimentario con un suplemento de [importe] € más IVA. El agua gris se recoge y se retira en depósito propio; nunca se vierte en el terreno."
+  },
+  {
+   "i": 35,
+   "estilo": "Normal",
+   "texto": "El Cliente responde ante la Cafetería de estos requisitos aunque dependan del recinto y el titular del recinto no firme este contrato. Si el lugar no los cumple y la Cafetería no puede prestar el servicio por ese motivo, se trata como una cancelación del Cliente y se aplica la tabla de la cláusula octava según los días que falten para el evento."
+  },
+  {
+   "i": 36,
+   "estilo": "H2",
+   "texto": "Quinta · Permisos y autorizaciones: quién tramita cada uno"
+  },
+  {
+   "i": 37,
+   "estilo": "List Bullet",
+   "texto": "**El Cliente** consigue y entrega a la Cafetería, antes del [fecha], el permiso del titular del recinto para celebrar el evento y montar la barra, el acceso y el aparcamiento. Si el evento se celebra en un espacio público, tramita la autorización del ayuntamiento que corresponda."
+  },
+  {
+   "i": 38,
+   "estilo": "List Bullet",
+   "texto": "**El recinto**, cuando existe un titular distinto del Cliente, aporta sus propias licencias de actividad y de aforo. El Cliente se las pide por escrito y se las facilita a la Cafetería si ella las solicita."
+  },
+  {
+   "i": 39,
+   "estilo": "List Bullet",
+   "texto": "**La Cafetería** tiene presentada la declaración responsable en el registro sanitario autonómico, el plan de APPCC de la actividad y un seguro de responsabilidad civil vigente por [importe] €, y entrega copia al Cliente si lo pide. Sus trabajadores tienen la formación en higiene alimentaria al día."
+  },
+  {
+   "i": 40,
+   "estilo": "Normal",
+   "texto": "Si la carta incluye productos salados, la Cafetería conserva una muestra de cada uno (ración mínima de 100 g, siete días, refrigerada o congelada) en cada evento. En las bebidas y la bollería que se sirven tal cual, la Cafetería aplica su criterio, que es una interpretación sin criterio oficial, y lo confirma con su autoridad sanitaria."
+  },
+  {
+   "i": 41,
+   "estilo": "H2",
+   "texto": "Sexta · Precio e IVA"
+  },
+  {
+   "i": 42,
+   "estilo": "Normal",
+   "texto": "El precio es el que resulte de la modalidad de la cláusula segunda, estimado en [importe base] € más el IVA del 10 % para todo lo que se sirve para consumir en el acto, que asciende a [importe del IVA] €, lo que suma [importe total] € con IVA incluido. Los extras con precio propio, el suplemento de generador, las horas extra y los vasos de un solo uso llevan el IVA del 21 %, desglosado. Si el precio final depende del recuento, de las horas o de las consumiciones, se ajusta en la factura de liquidación."
+  },
+  {
+   "i": 43,
+   "estilo": "H2",
+   "texto": "Séptima · Pagos, señal y facturas"
+  },
+  {
+   "i": 44,
+   "estilo": "Normal",
+   "texto": "El Cliente abona el precio total con IVA en dos pagos, por transferencia a la cuenta [IBAN] o por el medio que la Cafetería indique por escrito:"
+  },
+  {
+   "i": 45,
+   "estilo": "List Bullet",
+   "texto": "**Señal a cuenta del precio: 30 %** ([importe] € con IVA), a la firma de este contrato."
+  },
+  {
+   "i": 46,
+   "estilo": "List Bullet",
+   "texto": "**Liquidación: 70 %** ([importe] € con IVA), [7] días antes del evento, es decir, el [fecha]. En la factura de liquidación se ajustan, al alza o a la baja, el recuento final, las horas extra y los extras."
+  },
+  {
+   "i": 47,
+   "estilo": "Normal",
+   "texto": "La cantidad entregada a la firma es una señal a cuenta del precio, que se descuenta de él si el contrato se cumple. No son arras del artículo 1454 del Código Civil: si una parte cancela, esa señal se rige exclusivamente por la tabla de la cláusula octava y su reciprocidad de la cláusula novena."
+  },
+  {
+   "i": 48,
+   "estilo": "Normal",
+   "texto": "La Cafetería emite una factura por cada cobro, también por la señal, y la envía en el momento en que recibe el pago (artículo 75.Dos de la Ley del IVA: el impuesto se devenga en los pagos anticipados). Si el Cliente se retrasa más de [10] días en un pago, tras requerirlo por escrito, la Cafetería puede dar el contrato por resuelto aplicando la cláusula de cancelación por parte del Cliente."
+  },
+  {
+   "i": 49,
+   "estilo": "H2",
+   "texto": "Octava · Cancelación por parte del Cliente"
+  },
+  {
+   "i": 50,
+   "estilo": "Normal",
+   "texto": "Si el Cliente cancela el evento, la Cafetería retiene un porcentaje del precio total con IVA según la antelación con que reciba la cancelación por escrito respecto de la fecha del evento:"
+  },
+  {
+   "i": 51,
+   "estilo": "List Bullet",
+   "texto": "Con 6 meses o más de antelación: **10 %** del precio."
+  },
+  {
+   "i": 52,
+   "estilo": "List Bullet",
+   "texto": "De 3 meses a menos de 6: **25 %** del precio."
+  },
+  {
+   "i": 53,
+   "estilo": "List Bullet",
+   "texto": "De 1 mes a menos de 3: **50 %** del precio."
+  },
+  {
+   "i": 54,
+   "estilo": "List Bullet",
+   "texto": "De 14 días a menos de 1 mes: **75 %** del precio."
+  },
+  {
+   "i": 55,
+   "estilo": "List Bullet",
+   "texto": "Con menos de 14 días: **100 %** del precio, descontados los costes que la Cafetería se ahorra por no prestar el servicio (consumibles, café y leche sin gastar, personal de refuerzo y desplazamiento)."
+  },
+  {
+   "i": 56,
+   "estilo": "Normal",
+   "texto": "Si lo ya cobrado supera lo que se retiene, la Cafetería devuelve la diferencia en [14] días; si es menos, el Cliente abona la diferencia. Estos importes responden a la reserva de la fecha y de los medios, que la Cafetería no puede ofrecer a otros clientes."
+  },
+  {
+   "i": 57,
+   "estilo": "H2",
+   "texto": "Novena · Cancelación por parte de la Cafetería y reciprocidad"
+  },
+  {
+   "i": 58,
+   "estilo": "Normal",
+   "texto": "Si es la Cafetería quien cancela o no puede prestar el servicio por una causa que no sea fuerza mayor, devuelve todo lo cobrado en [14] días y le indemniza, además, con la cantidad que habría retenido en ese tramo de antelación, según la tabla anterior. Se pacta de forma recíproca, por la proporcionalidad y la reciprocidad que exigen los artículos 85.6 y 87.2 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios (TRLGDCU). La Cafetería intentará proponer una barra equivalente, pero el Cliente no está obligado a aceptarla."
+  },
+  {
+   "i": 59,
+   "estilo": "H2",
+   "texto": "Décima · Cambio de fecha"
+  },
+  {
+   "i": 60,
+   "estilo": "Normal",
+   "texto": "El Cliente puede pedir por escrito un cambio de fecha, que la Cafetería acepta si tiene disponibilidad y la nueva fecha cae en los [6] meses siguientes. Es gratuito con 3 meses o más de antelación; en otro caso se cobra un recargo de [importe] € más IVA y se actualiza el precio a la tarifa vigente."
+  },
+  {
+   "i": 61,
+   "estilo": "H2",
+   "texto": "Undécima · Plan B de lluvia"
+  },
+  {
+   "i": 62,
+   "estilo": "Normal",
+   "texto": "La lluvia no es causa de fuerza mayor ni da derecho a cancelar sin consecuencias, porque se puede prever y se resuelve con la cubierta de la cláusula cuarta. Las partes deciden el plan A o el plan B a más tardar [a las 10:00 h del día del evento]; en caso de duda, decide la Cafetería por razones de seguridad eléctrica y alimentaria. Si el Cliente no ofrece cubierta y la lluvia impide el servicio, se aplica la cláusula octava."
+  },
+  {
+   "i": 63,
+   "estilo": "H2",
+   "texto": "Duodécima · Fuerza mayor"
+  },
+  {
+   "i": 64,
+   "estilo": "Normal",
+   "texto": "Ninguna parte responde del incumplimiento si se debe a un suceso imprevisible o inevitable en los términos del artículo 1105 del Código Civil, como una prohibición de la autoridad, un incendio, una inundación, una alerta meteorológica oficial de riesgo o un corte de suministro general que el generador no resuelva. Primero se intenta un cambio de fecha sin recargo dentro de los [6] meses siguientes; si no se logra, la Cafetería devuelve todo lo cobrado, descontando solo los gastos ya soportados y justificados por encargo del Cliente, y ninguna parte debe indemnización a la otra."
+  },
+  {
+   "i": 65,
+   "estilo": "H2",
+   "texto": "Decimotercera · Sin derecho de desistimiento en los contratos a distancia"
+  },
+  {
+   "i": 66,
+   "estilo": "Normal",
+   "texto": "Si este contrato se celebra a distancia o fuera del establecimiento de la Cafetería, el Cliente no tiene derecho de desistimiento, porque es un servicio de esparcimiento con fecha de ejecución determinada (artículos 102 y 103.l del TRLGDCU). Puede cancelar con las consecuencias de la cláusula octava, y declara haber sido informado antes de firmar. Si se firma en el establecimiento de la Cafetería, esta cláusula no se aplica."
+  },
+  {
+   "i": 67,
+   "estilo": "H2",
+   "texto": "Decimocuarta · Daños, seguros y responsabilidad"
+  },
+  {
+   "i": 68,
+   "estilo": "Normal",
+   "texto": "La Cafetería responde de los daños que cause su personal y del producto que sirve, con el seguro de la cláusula quinta. El Cliente responde de los daños que causen él, sus invitados y sus proveedores en el equipo de la Cafetería, salvo el desgaste normal."
+  },
+  {
+   "i": 69,
+   "estilo": "H2",
+   "texto": "Decimoquinta · Datos personales e imagen"
+  },
+  {
+   "i": 70,
+   "estilo": "Normal",
+   "texto": "La Cafetería trata los datos personales del Cliente para gestionar este contrato, emitir las facturas y cumplir sus obligaciones legales, y los conserva mientras exista una relación o una obligación de conservarlos. El Cliente puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad en [correo electrónico]. Responsable: [datos de la Cafetería]."
+  },
+  {
+   "i": 71,
+   "estilo": "Normal",
+   "texto": "Si la Cafetería quiere usar fotografías o vídeos del evento en su web o en redes sociales, el Cliente decide aparte, en un consentimiento separado que no afecta a este contrato: [ ] Sí autorizo   [ ] No autorizo. Aun si autoriza, puede retirar el consentimiento por escrito cuando quiera."
+  },
+  {
+   "i": 72,
+   "estilo": "H2",
+   "texto": "Decimosexta · Jurisdicción"
+  },
+  {
+   "i": 73,
+   "estilo": "Normal",
+   "texto": "Para cualquier controversia derivada de este contrato, las partes se someten a los juzgados y tribunales del domicilio del consumidor, conforme al artículo 90.2 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios."
+  },
+  {
+   "i": 74,
+   "estilo": "Normal",
+   "texto": "Y en prueba de conformidad, firman este contrato por duplicado y a un solo efecto, en el lugar y la fecha del encabezamiento."
+  },
+  {
+   "i": 75,
+   "estilo": "Firma",
+   "texto": "La Cafetería: __________________________        El Cliente: __________________________"
+  },
+  {
+   "i": 76,
+   "estilo": "Firma",
+   "texto": "NIF/CIF: ______________        DNI/NIE: ______________"
+  },
+  {
+   "i": 77,
+   "estilo": "Separador",
+   "texto": ""
+  },
+  {
+   "i": 78,
+   "estilo": "H1",
+   "texto": "Anexo · Condiciones para empresas y organizadores de ferias"
+  },
+  {
+   "i": 79,
+   "estilo": "Kicker",
+   "texto": "PARA EVENTOS CORPORATIVOS, AGENCIAS, CONGRESOS, FERIAS Y MERCADOS"
+  },
+  {
+   "i": 80,
+   "estilo": "Normal",
+   "texto": "Este anexo completa el contrato anterior cuando contrata una empresa, una agencia, un autónomo, una entidad o el organizador de una feria en el ámbito de su actividad. No hay protección de consumidores y las partes pactan libremente lo que sigue; el resto del contrato se mantiene igual."
+  },
+  {
+   "i": 81,
+   "estilo": "List Bullet",
+   "texto": "**Partes y datos fiscales.** El cliente identifica su razón social, CIF, domicilio fiscal, la persona que firma, su cargo y su poder de representación, y el correo para facturas. La Cafetería factura cada cobro con esos datos y, si hay orden de compra, con su número."
+  },
+  {
+   "i": 82,
+   "estilo": "List Bullet",
+   "texto": "**Pagos.** Señal a cuenta del precio: **30 %** a la firma. Liquidación: **70 %** a [15] días de la factura, que se emite el día siguiente al evento, con el IVA desglosado. Los retrasos devengan los intereses de demora que la ley permite en operaciones entre empresas, sin necesidad de reclamación previa."
+  },
+  {
+   "i": 83,
+   "estilo": "List Bullet",
+   "texto": "**Cancelación por el cliente.** La Cafetería retiene sobre el precio total con IVA: con 3 meses o más de antelación, **10 %**; de 1 mes a menos de 3, **30 %**; de 14 días a menos de 1 mes, **60 %**; con menos de 14 días, **100 %**, descontados los costes que se ahorra. La diferencia con lo cobrado se devuelve o se abona."
+  },
+  {
+   "i": 84,
+   "estilo": "List Bullet",
+   "texto": "**Cancelación por la Cafetería.** Devuelve todo lo cobrado. La indemnización adicional es la pactada en este anexo: [la misma cantidad que habría retenido en ese tramo / un importe fijo de [importe] €]."
+  },
+  {
+   "i": 85,
+   "estilo": "List Bullet",
+   "texto": "**Ferias y mercados: el organizador.** Cede a la Cafetería el emplazamiento de [número] metros cuadrados, del [fecha] al [fecha], y tramita y entrega, antes del [fecha], la autorización municipal o del recinto para la venta. Facilita la toma eléctrica de la cláusula cuarta, el punto de agua y la retirada de residuos. Si cancela o aplaza la feria, devuelve a la Cafetería lo cobrado, el canon pagado y los gastos justificados ya soportados."
+  },
+  {
+   "i": 86,
+   "estilo": "List Bullet",
+   "texto": "**Ferias y mercados: la Cafetería.** Vende por su cuenta y emite sus tickets, con las normas sanitarias de la cláusula quinta. El canon o la tasa del organizador es de [importe] € o del [15] % de la venta, y se detalla en la factura del organizador. No hay exclusividad, salvo pacto expreso por escrito."
+  },
+  {
+   "i": 87,
+   "estilo": "List Bullet",
+   "texto": "**Jornadas de congreso.** Las pausas de café se pactan con su horario y su número previsto de asistentes; el recuento final se comunica [5] días antes. La Cafetería no responde de los retrasos del programa que reduzcan el tiempo de servicio, pero cobra las horas previstas."
+  },
+  {
+   "i": 88,
+   "estilo": "List Bullet",
+   "texto": "**Condiciones del cliente.** Las condiciones generales del cliente (órdenes de compra, códigos de proveedor, políticas internas) solo valen si la Cafetería las acepta por escrito. Las partes mantienen la confidencialidad sobre el contenido de los eventos y la información comercial que se intercambien."
+  },
+  {
+   "i": 89,
+   "estilo": "List Bullet",
+   "texto": "**Jurisdicción.** Las partes se someten a los juzgados y tribunales de [ciudad], con renuncia a cualquier otro fuero que les pudiera corresponder."
+  },
+  {
+   "i": 90,
+   "estilo": "Firma",
+   "texto": "La Cafetería: __________________________        La empresa u organizador: __________________________"
+  },
+  {
+   "i": 91,
+   "estilo": "Firma",
+   "texto": "NIF/CIF: ______________        CIF: ______________        Cargo: ______________"
+  }
+ ]
+}
