@@ -59,6 +59,22 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  {
+    name: 'Business Plan: Mobile Coffee Bar for Events',
+    slug: '/plan-negocio-cafeteria-movil-eventos',
+    description: 'Complete business plan to start a mobile coffee business for weddings, corporate events and fairs: a 10-section Word plan, a 9-sheet Excel financial plan, an 80-task opening checklist in 6 phases, a costing and event quote calculator, a service contract template and the Equivalents Guide for Latin America.',
+    features: [
+      '10-section business plan in Word',
+      '9-sheet Excel financial plan with month-by-month cash flow',
+      'Opening checklist: 80 tasks in 6 phases',
+      'Costing and quote calculator, contract template and Equivalents Guide for Latin America',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg',
+    badge: '✨ New',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'cafe', 'mobile-catering', 'business-plan'],
+  },
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
   // Paella Catering Business Plan Kit (24-oct-2026, séptima tanda de planes EN): el más nuevo → 1; el BBQ Catering Business
@@ -1067,7 +1083,6 @@ const comingSoon = [
   { iconName: 'Leaf', name: 'Recurring Tasks: Poke Bowl / Healthy Bowl', desc: 'Prep of bases and toppings, cold chain, shifts and closing for a bowl restaurant.', tags: ['templates', 'excel', 'restaurant'], phase: 'Coming soon' },
   { iconName: 'Sprout', name: 'Recurring Tasks: Vegetarian / Plant-Based Restaurant', desc: 'Plant-based base production, allergens, shifts and closing for a plant-based restaurant.', tags: ['templates', 'excel', 'restaurant'], phase: 'Coming soon' },
   { iconName: 'ConciergeBell', name: 'Business Plan: Ham Carving Service for Events', desc: 'Set up your ham carving service for weddings and fairs: rates, equipment and portions per event.', tags: ['business-plan', 'catering', 'mobile-catering'], phase: 'Coming soon' },
-  { iconName: 'Coffee', name: 'Business Plan: Mobile Coffee Bar for Events', desc: 'Specialty coffee at corporate events, weddings and fairs: minimal investment, rates and logistics.', tags: ['business-plan', 'cafe', 'mobile-catering'], phase: 'Coming soon' },
   { iconName: 'Truck', name: 'Business Plan: Mobile Wood-Fired Pizza', desc: 'A wood-fired oven on a trailer for weddings and fairs: equipment, doughs, rates and logistics.', tags: ['business-plan', 'pizzeria', 'mobile-catering'], phase: 'Coming soon' },
   { iconName: 'Star', name: 'AI Review Analysis Kit', desc: 'A template and prompts for your agents: export or paste your reviews, sort them by topic and see what keeps coming up.', tags: ['excel', 'ai', 'management'], phase: 'Coming soon' },
   { iconName: 'Users', name: 'Hospitality Employee Handbook', desc: 'Onboarding handbook, house rules, hygiene, training by position and sample documents you can adapt to your labor agreement.', tags: ['manuals', 'management', 'pdf'], phase: 'Coming soon' },

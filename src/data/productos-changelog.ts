@@ -2158,6 +2158,20 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'plan-negocio-cafeteria-movil-eventos': {
+    version: '1.0',
+    updated: '2026-10-28',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-28',
+        title: 'Primera edición',
+        changes: [
+          'Primera edición del Plan de Negocio: Cafetería Móvil para Eventos, con sus seis ficheros: plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 80 tareas en 6 fases, calculadora de escandallo y presupuesto por evento, modelo de contrato de servicio (particular y anexo para empresas y ferias) y la guía de equivalencias para 21 países.',
+        ],
+      },
+    ],
+  },
   'plan-negocio-pizzeria': {
     version: '1.0',
     updated: '2026-10-25',

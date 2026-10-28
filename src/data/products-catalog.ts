@@ -525,6 +525,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
     urlByLang: { en: '/en/digital-products/wedding-venue-business-plan' },
     priceByLang: { en: '$49' },
   },
+  'plan-negocio-cafeteria-movil-eventos': {
+    id: 'plan-negocio-cafeteria-movil-eventos',
+    url: '/plan-negocio-cafeteria-movil-eventos',
+    price: '€45',
+    name: { es: 'Plan de Negocio: Cafetería Móvil para Eventos', en: 'Coffee Cart Business Plan Kit' },
+    description: {
+      es: 'Cafetería móvil para bodas, empresas y ferias: plan financiero Excel, plan en Word, checklist de apertura, calculadora de escandallo y presupuesto, contrato y guía de equivalencias.',
+      en: 'Word business plan, Excel financial projections, pricing calculator, service contract template and startup checklist for a mobile coffee business serving events.',
+    },
+  },
   'plan-negocio-pizzeria': {
     id: 'plan-negocio-pizzeria',
     url: '/plan-negocio-pizzeria',

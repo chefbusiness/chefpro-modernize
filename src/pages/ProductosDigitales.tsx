@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Cafetería Móvil para Eventos',
+    slug: '/plan-negocio-cafeteria-movil-eventos',
+    price: '€45',
+    description: 'Plan de negocio completo para montar una cafetería móvil para bodas, eventos de empresa y ferias: plan en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora de escandallo y presupuesto por evento, modelo de contrato de servicio y la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel de 9 hojas con tesorería mes a mes',
+      'Checklist de apertura: 80 tareas en 6 fases',
+      'Calculadora de escandallo y presupuesto, modelo de contrato y Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: Coffee,
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-movil-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'cafeteria', 'gastro-movil', 'plan-negocio'],
+  },
+  {
     name: 'Plan de Negocio: Pizzería Napolitana',
     slug: '/plan-negocio-pizzeria',
     price: '€35',
@@ -130,8 +147,8 @@ const products = [
     ],
     icon: UtensilsCrossed,
     image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'plantillas', 'gestion', 'taqueria', 'mexicano', 'restaurante'],
   },
   {
@@ -1072,7 +1089,6 @@ const comingSoon = [
   { icon: Leaf, name: 'Tareas Recurrentes: Poke Bowl / Healthy Bowl', desc: 'Mise en place de bases y toppings, cadena de frío, turnos y cierre para un local de bowls.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Próximamente' },
   { icon: Sprout, name: 'Tareas Recurrentes: Restaurante Vegetariano / Plant-Based', desc: 'Producción de bases vegetales, alérgenos, turnos y cierre para un restaurante plant-based.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Próximamente' },
   { icon: ConciergeBell, name: 'Plan de Negocio: Cortador de Jamón para Eventos', desc: 'Monta tu servicio de corte en bodas y ferias: tarifas, equipo y cálculo de raciones por evento.', tags: ['plan-negocio', 'catering', 'gastro-movil'], phase: 'Próximamente' },
-  { icon: Coffee, name: 'Plan de Negocio: Cafetería Móvil para Eventos', desc: 'Café de especialidad en eventos de empresa, bodas y ferias: inversión mínima, tarifas y logística.', tags: ['plan-negocio', 'cafeteria', 'gastro-movil'], phase: 'Próximamente' },
   { icon: Truck, name: 'Plan de Negocio: Pizzero Móvil con Horno de Leña', desc: 'Horno de leña sobre remolque para bodas y ferias: equipo, masas, tarifas y logística.', tags: ['plan-negocio', 'pizzeria', 'gastro-movil'], phase: 'Próximamente' },
   { icon: Star, name: 'Kit de Análisis de Reseñas con IA', desc: 'Plantilla y prompts para tus agentes: exporta o pega tus reseñas, clasifícalas por tema y ve qué repiten.', tags: ['excel', 'ia', 'gestion'], phase: 'Próximamente' },
   { icon: Users, name: 'Manual del Empleado de Hostelería', desc: 'Manual de acogida, normas de casa, higiene, formación por puesto y modelos orientativos adaptables a tu convenio.', tags: ['manuales', 'gestion', 'pdf'], phase: 'Próximamente' },
