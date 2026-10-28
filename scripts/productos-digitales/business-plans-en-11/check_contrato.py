@@ -78,8 +78,11 @@ DECISIONES = [
     'each one» (Coffee Caterer: health permit de la unidad móvil, food handler cards, seguro y COI; Client: normas y '
     'aprobación de la sala; Organizer: permiso del evento y coordinación de los temporary food event permits); 6.ª → '
     '«Fees and sales tax» («plus applicable sales tax»; service charge ≠ gratuity; tip jar solo con permiso del Client); '
-    '7.ª → «Payments, retainer and receipts» (retainer del [30-50]% aplicado al precio, saldo [14] días antes, recuento '
-    'final [10] días antes, recibo de cada pago); 8.ª → «Cancellation by the Client» (tabla sin huecos, regla común 7); '
+    '7.ª → «Payments, retainer and receipts» (retainer del [30]% aplicado al precio —los operadores US piden 30-50 %—, saldo '
+    '[70]% [14] días antes, recuento final [10] días antes, recibo de cada pago); 8.ª → «Cancellation by the Client» con la '
+    'MISMA política que la calculadora del kit: [60] días o más → [10]%; de [30] a menos de [60] → [30]%; de [14] a menos de '
+    '[30] → [60]%; menos de [14] días o no presentación → [100]% menos los costes que el Coffee Caterer se ahorra (café, '
+    'leche y vasos sin gastar, personal y desplazamiento) (regla común 7); '
     '9.ª → «Cancellation by the Coffee Caterer» (devolución íntegra en [14] días y ayuda para encontrar sustituto: '
     'reciprocidad); 12.ª → «Force majeure» genérica (reembolso o nueva fecha a elección del Client).',
     'SE QUITAN las citas españolas: 13.ª (sin desistimiento, art. 103.l) → cláusula OPCIONAL entre corchetes con la nota '
@@ -93,8 +96,16 @@ DECISIONES = [
     'FESTIVALS AND FARMERS MARKETS»: W-9 del Coffee Caterer, orden de compra (PO) y contacto de facturación, certificado de '
     'exención de sales tax si la entidad está exenta, net [15 / 30] terms, «Late amounts bear interest at [1.5]% per '
     'month, or the highest rate the law allows if that is lower»; para guest-pay: «minimum sales guarantee» (el Organizer '
-    'paga la diferencia entre las ventas de bebidas y $[minimum]), vendor / booth fee, quién aporta la electricidad y el '
-    'agua, horario de montaje; tramos de cancelación corporativos; firma «Company / Organizer: ____ Title: ____».',
+    'paga la diferencia entre las ventas de bebidas y $[minimum], liquidada en [7] días), vendor / booth fee, quién aporta '
+    'la electricidad y el agua, horario de montaje; empresas: retainer [30]% y saldo [70]% net [30] desde la factura; '
+    'tramos corporativos [30] días o más → [10]%, de [15] a menos de [30] → [30]%, de [7] a menos de [15] → [60]%, menos de '
+    '[7] → [100]% con el mismo descuento de lo ahorrado; firma «Company / Organizer: ____ Title: ____».',
+    'REVISIÓN DEL ES (28-oct, `plan-cafeteria-movil/REVISION-FINAL.md`), cómo se traslada: B1 → las horas extra son el MISMO '
+    'servicio: se facturan como el servicio («plus applicable sales tax», igual que el resto) y nunca con otro tipo; M6 (precio '
+    'IVA incluido a consumidores) NO se copia: en EE. UU. el precio se presupuesta «plus applicable sales tax» y la cláusula de '
+    'precio desglosa subtotal, sales tax y total; m25 (comida testigo) no aplica; m26-m27: sujetos explícitos («the Coffee '
+    'Caterer uses a separate pitcher for each milk»; la avena solo «certified gluten-free» si lo está). La línea de versión la '
+    'añade `contrato_cof.py` al final: no la escribas.',
 ]
 
 

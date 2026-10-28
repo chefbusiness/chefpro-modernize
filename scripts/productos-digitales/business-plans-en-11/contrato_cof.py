@@ -79,6 +79,9 @@ def generar(salida, pdf=False):
     for hijo in list(body):
         if not hijo.tag.endswith('}sectPr'):
             body.remove(hijo)
+    version = M.version_en('cof')                     # m27 de la revisión ES: el contrato lleva su línea de versión
+    if not items or items[-1].get('texto') != version:
+        items = items + [{'estilo': 'Normal', 'texto': version}]
     for it in items:
         est, t = it['estilo'], it['texto']
         if est not in ESTILOS:

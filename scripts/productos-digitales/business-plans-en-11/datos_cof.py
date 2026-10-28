@@ -277,8 +277,9 @@ RX_COF_NO = [
     (r'\bSL\b|\bIAE\b|\bAESAN\b|\bAPPCC\b|\bCCAA\b|\bRGSEAA\b|\bFACe\b|Veri\*?factu|\bITV\b|\bRGV\b',
      'trámite / norma ES', None),
     (r'\bRD \d|Reglamento \(CE\)|Real Decreto|\bLey \d', 'norma ES (RD / Reglamento / Ley)', None),
-    (r'(?i)\bPiaggio\b|\bApe 50\b|\bfurgoneta\b|\bboller[ií]a\b|\bcortado\b|\bcomida testigo\b|\bBizum\b|'
-     r'Bodas\.net|Zankyou', 'ES de la cafetería móvil (Piaggio / furgoneta / bollería / Bizum…)', None),
+    (r'(?i)\bPiaggio\b|\bApe 50\b|\bfurgoneta\b|\bboller[ií]a\b|\bcomida testigo\b|\bBizum\b|'
+     r'Bodas\.net|Zankyou', 'ES de la cafetería móvil (Piaggio / furgoneta / bollería / Bizum…; «cortado» vale: carta US)',
+     None),
     (r'(?i)\bfree-?lance', 'jerga (§0): «freelance» → W-2 event barista', None),
     # regla de jerga §0 (research §9)
     (r'(?i)\brecipe costing\b|\bescandallo\b', 'jerga (§9 #17): «cost per drink» (nunca «recipe costing» ni '

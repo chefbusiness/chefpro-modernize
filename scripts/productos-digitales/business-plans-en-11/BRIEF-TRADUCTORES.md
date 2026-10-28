@@ -73,7 +73,7 @@ y año **solo en su plataforma** (nunca como «eventos esperados»); julio vende
   (solo **«service window»**). **«festival» y «farmers market» SÍ valen** (D224).
 - **ES**: «España», «Spain», «Spanish», «IVA», «VAT» (salvo la nota UK), «EUR» / «€», «autónomo», «fijo discontinuo»,
   «convenio», «SMI», SL, IAE, AESAN, APPCC, CCAA, RGSEAA, FACe, Veri*factu, ITV, RGV, «RD …», «Ley …», «Reglamento (CE)»,
-  Piaggio / Ape 50, «furgoneta», «bollería», «cortado», «comida testigo», Bizum, Bodas.net, Zankyou, «feria»; jerga:
+  Piaggio / Ape 50, «furgoneta», «bollería», «comida testigo» («cortado» SÍ vale: es carta US), Bizum, Bodas.net, Zankyou, «feria»; jerga:
   «freelance», «support kitchen», «Cambro», «recipe costing» / «escandallo» (di **cost per drink**); calcos «D-21 / D-14 /
   D-1»; «growing demand» (la demanda es estacional, research §0); kg / km / °C / litros / ml fuera de paréntesis.
 
