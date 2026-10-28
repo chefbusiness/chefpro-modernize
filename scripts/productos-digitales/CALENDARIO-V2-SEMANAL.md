@@ -813,4 +813,8 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   Pollería y Pollo a la Brasa») · 4) Plan Sushi Bar ES + EN (idea nº 50) · 5) Hamburguesería Smash. El Excel del plan maestro
   (`/Users/johnguerrero/productos-digitales/`, hoja 8 nueva) está al día con esta cola.
 - Handoff: `SESSION_HANDOFF_2026-10-28-cafeteria-movil-coffee-cart.md`.
+- **29-oct (John): el pollo sube a producción justo detrás de la Taquería.** Orden vigente: 1) Taquería ES + Taco Shop EN (F1 en curso) ·
+  2) **Pollería / Asador de Pollos** (plan + guía ES + gemelo EN «Rotisserie Chicken Restaurant Business Plan Kit») y el kit «Tareas
+  Recurrentes: Pollería y Pollo a la Brasa» · 3) Taco Shop Checklist Templates EN · 4) Sushi Bar · 5) Hamburguesería Smash. Mapa de palabras
+  clave por mercado (ES 7 países + US/UK/AU): `scripts/productos-digitales/plan-polleria/F0-mapa-keywords-es-en.md`.
 
