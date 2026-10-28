@@ -406,7 +406,7 @@ const data: KitTareasData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
-    { href: '/plan-negocio-cafeteria-movil-eventos', label: 'Plan Cafetería Móvil para Eventos' },
+    { href: '/plan-negocio-cafeteria-movil-eventos', label: 'Plan de Negocio: Cafetería Móvil para Eventos' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
