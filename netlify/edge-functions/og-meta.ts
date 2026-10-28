@@ -1,5 +1,10 @@
 // Edge Function: Inject correct OG meta tags for social media crawlers
 // Runs BEFORE the SPA serves index.html — crawlers get proper meta tags per route
+//
+// No está declarada en netlify.toml desde el cutover (el HTML de Astro ya lleva
+// las metas). Si se volviera a publicar, {year} y {month} se resuelven al
+// generar este HTML, con la misma función que el build y la fecha de Madrid.
+import { resolveDatePlaceholders } from '../../astro-site/src/lib/date-placeholders.mjs';
 
 const OG_DATA: Record<string, { title: string; description: string; image: string; price?: string }> = {
   '/guia-dark-kitchen': {
@@ -1258,6 +1263,8 @@ export default async (request: Request) => {
     const m = path.match(/^\/(en|fr|de|it|pt|nl)(\/|$)/);
     return m ? m[1] : 'es';
   })();
+  const ogTitle = resolveDatePlaceholders(og.title, undefined, langCode);
+  const ogDescription = resolveDatePlaceholders(og.description, undefined, langCode);
   const ogLocale = ({
     es: 'es_ES',
     en: 'en_US',
@@ -1281,10 +1288,10 @@ export default async (request: Request) => {
 <html lang="${langCode}">
 <head>
   <meta charset="UTF-8" />
-  <title>${og.title}</title>
-  <meta name="description" content="${og.description}" />
-  <meta property="og:title" content="${og.title}" />
-  <meta property="og:description" content="${og.description}" />
+  <title>${ogTitle}</title>
+  <meta name="description" content="${ogDescription}" />
+  <meta property="og:title" content="${ogTitle}" />
+  <meta property="og:description" content="${ogDescription}" />
   <meta property="og:image" content="${og.image}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -1295,14 +1302,14 @@ export default async (request: Request) => {
   ${og.price ? `<meta property="product:price:amount" content="${og.price}" />
   <meta property="product:price:currency" content="EUR" />` : ''}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="${og.title}" />
-  <meta name="twitter:description" content="${og.description}" />
+  <meta name="twitter:title" content="${ogTitle}" />
+  <meta name="twitter:description" content="${ogDescription}" />
   <meta name="twitter:image" content="${og.image}" />
   <link rel="canonical" href="https://aichef.pro${path}" />
 </head>
 <body>
-  <h1>${og.title}</h1>
-  <p>${og.description}</p>
+  <h1>${ogTitle}</h1>
+  <p>${ogDescription}</p>
   <a href="https://aichef.pro${path}">${viewLink}</a>
 </body>
 </html>`;
