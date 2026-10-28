@@ -1,15 +1,15 @@
 {
  "carpeta": "astro-site/public/dl/coffee-cart-business-plan",
- "piezas": 2092,
+ "piezas": 2093,
  "fallos": 0,
  "ficheros": {
   "coffee-cart-business-plan.docx": {
    "parrafos": 131,
    "con_texto": 110,
    "heading1": 10,
-   "palabras": 8025,
+   "palabras": 8115,
    "piezas": 116,
-   "sha256": "ba647bbe117f0ec7eb4c85fb211d8ead1abcc87b1328dce92300fa3d2062993f",
+   "sha256": "a2fd104a4380c80a19ea68c4ceee75e1c9449aaf0d4dde38cf6b52705473296a",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -18,7 +18,7 @@
    "hojas": 9,
    "formulas": 722,
    "piezas": 818,
-   "sha256": "92e1b56afb0669fa475bc009e20cc7c033e3aa83011710f2ed4c8dff423d259a",
+   "sha256": "2afefa6797a3bbabd1986a07d05aa8bc9cca5da46af8e5bd1e26207cf00cfcb8",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -27,7 +27,7 @@
    "hojas": 4,
    "formulas": 425,
    "piezas": 617,
-   "sha256": "fa31f453551662b5f92afad7743c3fc46b0e98827eac7900c105c1ab2a835e0b",
+   "sha256": "22f292cbb4a73c130d686a7878a91a0ed8d3413f643b2925cf932ef6db7f95a7",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
@@ -36,18 +36,18 @@
    "hojas": 7,
    "formulas": 12,
    "piezas": 435,
-   "sha256": "b7235f5105eb782c03628aa12e2678fbb2a41d4064dd19b135454ca29146dd71",
+   "sha256": "23c741da8255bc046e11c041b6dc58126f230081a57d2c5903a2ab06d0e5181e",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0
   },
   "coffee-catering-service-agreement-template.docx": {
-   "parrafos": 100,
-   "con_texto": 100,
+   "parrafos": 101,
+   "con_texto": 101,
    "heading1": 0,
-   "palabras": 3227,
-   "piezas": 106,
-   "sha256": "d821fe8a7dc0d26cfd845d0875cc319d4a44c4400d780b3bdb86fb45fae6b024",
+   "palabras": 3259,
+   "piezas": 107,
+   "sha256": "644fdd2dfdeec0982a5c4a5c9dcdc077d11fa9ce719127602e45124075321150",
    "prohibido": 0,
    "espanol": 0,
    "no_latinos": 0

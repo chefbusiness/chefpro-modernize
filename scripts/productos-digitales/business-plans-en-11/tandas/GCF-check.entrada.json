@@ -295,7 +295,7 @@
   "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
   "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
   "IVA repercutido de restauración": "Sales tax rate on sales",
-  "IVA repercutido/soportado general": "Sales tax rate on alcohol sold (licensed only)",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol (not used: no alcohol in this plan)",
   "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
   "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
   "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",

@@ -37,7 +37,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "Dated [mm/dd/yyyy], in [city], [State]."
+  "texto": "Dated [mm/dd/yyyy]."
  },
  {
   "estilo": "H2",
@@ -49,11 +49,11 @@
  },
  {
   "estilo": "Normal",
-  "texto": "[full name], located at [full address], who is booking in their own name for a private event (the \"Client\"). If two people book together, such as a couple, both are listed here and are jointly responsible: [second Client's name and address]."
+  "texto": "[full name], located at [full address], who is booking in their own name for a private event (the \"Client\"). If two people book together, such as a couple, both are listed here and are jointly and severally liable: [second Client's name and address]."
  },
  {
   "estilo": "Normal",
-  "texto": "Each party confirms it has the legal capacity to sign and agrees to the following terms."
+  "texto": "Each party represents that it has the authority to sign and agrees to the following terms."
  },
  {
   "estilo": "H2",
@@ -104,6 +104,10 @@
   "texto": "[ ] **Guest-pay with a minimum sales guarantee.** Guests pay for their own drinks at $[amount] per drink or at the posted menu prices. The Client guarantees drink sales of at least $[minimum] during the service window. If sales fall short, the Coffee Caterer invoices the difference, plus applicable sales tax."
  },
  {
+  "estilo": "Normal",
+  "texto": "**Travel fee.** A travel fee of $[amount] per mile, round trip, applies beyond [20] miles from [the Coffee Caterer's base] and is shown on its own line of the quote."
+ },
+ {
   "estilo": "H2",
   "texto": "3. Drink menu, allergens and cups"
  },
@@ -113,7 +117,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "**Allergens.** The Coffee Caterer provides a written list of the allergens in each drink and pastry. Of the nine major US food allergens, the ones that matter at an espresso bar are milk, soy and tree nuts and, in pastries, wheat and egg. Oat milk is called gluten-free only if the brand is certified gluten-free. The bar displays a sign with this information and a note inviting guests to ask. The Coffee Caterer uses a separate pitcher for each milk but cannot guarantee that no traces remain: the Client tells the Coffee Caterer about any serious allergy before the event, and the Coffee Caterer confirms in writing how it will handle it."
+  "texto": "**Allergens.** The Coffee Caterer provides a written list of the allergens in each drink and pastry. Of the nine major US food allergens, the ones that matter at an espresso bar are milk, soy and tree nuts and, in pastries, wheat and egg. Oat milk is called gluten-free only if it is labeled gluten-free. The bar displays a sign with this information and a note inviting guests to ask. The Coffee Caterer uses a separate pitcher for each milk but cannot guarantee that no traces remain: the Client tells the Coffee Caterer about any serious allergy before the event, and the Coffee Caterer confirms in writing how it will handle it."
  },
  {
   "estilo": "Normal",
@@ -173,7 +177,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "All prices in this agreement and the quote are stated plus applicable sales tax. The invoice shows the subtotal, the sales tax and the total. In many states a hosted catering service is taxed on the whole invoice, including staff, travel and extras; the Coffee Caterer applies the rule of the state where the event takes place. Additional hours, the generator fee and water fees are taxed the same way as the service itself."
+  "texto": "All prices in this agreement and the quote are stated plus applicable sales tax. The invoice shows the subtotal, the sales tax and the total. In many states a hosted catering service is taxed on the whole invoice, including staff and extras, and in some states travel; the Coffee Caterer applies the rule of the state where the event takes place. Additional hours, the generator fee and water fees are taxed the same way as the service itself."
  },
  {
   "estilo": "Normal",
@@ -301,7 +305,7 @@
  },
  {
   "estilo": "Normal",
-  "texto": "The Coffee Caterer uses the Client's personal information to manage this agreement, send invoices and meet its legal obligations, and keeps it as long as the relationship lasts or the law requires. The Client can ask to see or delete their information at [email]. Controller: [Coffee Caterer details]."
+  "texto": "The Coffee Caterer uses the Client's personal information to manage this agreement, send invoices and meet its legal obligations, and keeps it as long as the relationship lasts or the law requires. The Client can ask to see or delete their information at [email]. Privacy contact: [name and email]."
  },
  {
   "estilo": "Normal",
@@ -369,7 +373,7 @@
  },
  {
   "estilo": "List Bullet",
-  "texto": "**Festivals and farmers markets: the Organizer.** The Organizer provides the Coffee Caterer a pitch of [number] sq ft from [mm/dd/yyyy] to [mm/dd/yyyy], and obtains and delivers by [mm/dd/yyyy] the event permit and coordinates the temporary food event permits for vendors. The Organizer supplies the dedicated circuit described in Section 4, potable water and trash removal, and sets the setup hours. If the Organizer cancels or postpones the event, it refunds the Coffee Caterer's payments, the vendor fee paid and documented costs already incurred."
+  "texto": "**Festivals and farmers markets: the Organizer.** The Organizer provides the Coffee Caterer a pitch of [number] sq ft from [mm/dd/yyyy] to [mm/dd/yyyy], and obtains and delivers by [mm/dd/yyyy] the event permit and coordinates the temporary food event permits for vendors. The Organizer supplies the dedicated circuit described in Section 4, potable water and trash removal, and sets the setup hours. If the Organizer cancels or postpones the event, it refunds the vendor fee and any other payments, and documented costs already incurred."
  },
  {
   "estilo": "List Bullet",

@@ -16,7 +16,7 @@ tramo 4, política D16 de cobro y cancelación) con las mismas 4 hojas, la misma
     con sales tax, por hora y por bebida; travel fee aparte, sin margen, con radio gratis (norma US); cobro y cancelación por
     tramos «from X to less than Y»; festival: venta (bebidas × precio o la minimum sales guarantee si es mayor), cuota del
     organizador (% + booth fee), resultado y bebidas para cubrir costes;
-  · «3 Example Quotes» (boda 130 · empresa 90 · farmers market 150 bebidas) por las mismas fórmulas;
+  · «3 Example Quotes» (boda 130 · empresa 90 · festival comunitario 150 bebidas) por las mismas fórmulas;
   · «Instructions».
 US Letter, protegida sin contraseña, verdes desbloqueadas, sin símbolo de moneda en los formatos (D8), docProps D20. Corre en
 el VPS (openpyxl + pycel). Sesión Claude Code, 28-oct-2026 (paso 1b).
@@ -257,7 +257,7 @@ ENTRADAS = [
     ('per_km', 'Travel rate per mile (charged round trip)', USD, 1.25,
      'flashquotes.com shows $1.25 per mile round trip. Use your own.'),
     ('iva', 'Sales tax rate', PCT, 0.08,
-     'Example rate applied to the whole invoice. Many states tax catering, including the staff and the travel fee; at '
+     'Example rate applied to the whole invoice. Many states tax catering, including the staff and extras (some tax the travel fee too); at '
      'festivals you collect it on each drink. Look up your state and city.'),
     ('tkt', 'Festival: average price per drink you will charge (before sales tax)', USD, 6.50,
      'Kit estimate: about $6.50 per drink. See the average menu price of your mix on the "%s" tab. Only used for '
@@ -400,7 +400,7 @@ EJEMPLOS = OrderedDict([
     ('Corporate morning meeting', dict(
         _BASE, canal=CANALES[1], guests=90, formato='Up to 2 hours', horario='Morning (breakfast and mid-morning coffee)',
         hours=2, h_extra=5, dulces=0.0, km=15, dias=20)),
-    ('Farmers market, guest-pay', dict(
+    ('Community festival, guest-pay', dict(
         _BASE, canal=CANALES[2], guests=150, formato='Up to 2 hours', horario='Morning (breakfast and mid-morning coffee)',
         hours=4, h_extra=3, dulces=0.0, elec=ELEC[2], km=15, f_min=800.0, dias=45)),
 ])
@@ -412,10 +412,10 @@ EJ_NOTAS = OrderedDict([
     ('Corporate morning meeting', 'Corporate, 90 guests (the company event of the example mix), a 2-hour bar in the morning '
      '(+25% drinks), compostable cups and a dedicated circuit. The quote is before sales tax; 30% retainer at signing and '
      'the 70% balance net 30 after the invoice. With 20 days to go, the tier is the second and you keep 30%.'),
-    ('Farmers market, guest-pay', 'Festival or market: 150 drinks over 4 hours in the morning, compostable cups, a generator '
+    ('Community festival, guest-pay', 'Festival or market (a community festival): 150 drinks over 4 hours in the morning, compostable cups, a generator '
      'and a 15% organizer fee, with an $800 minimum sales guarantee. The "price per guest" is the lowest price per drink; at '
-     '$6.50 a drink the day leaves about ${res} before fixed costs, and below {eq} drinks you lose money (the guarantee '
-     'would then cover part of it).'),
+     '$6.50 a drink the day leaves about ${res} before fixed costs, and, without the guarantee, below {eq} drinks you would '
+     'lose money: the $800 guarantee covers that risk.'),
 ])
 OBJETIVO_EJ = OrderedDict([('Wedding coffee bar after dinner', 15.0), ('Corporate morning meeting', 12.0)])
 
@@ -728,7 +728,7 @@ def hoja_escandallo(wb):
     ws.conditional_formatting.add('B%d' % MR['chk'], FormulaRule(formula=['$B$%d="%s"' % (MR['chk'], MZ_NO)], fill=ROJO))
     f = E_FIN
     _f(ws, 'A%d' % f, 'The all-in cost is the drink served in a single-use cup; with reusable cups only the ingredient cost '
-                      'counts. Milk is a TCS food: keep it at 41 °F (5 °C) or below (the FDA Food Code minimum). The cost of '
+                      'counts. Milk is a TCS food: keep it at 41 °F (5 °C) or below (the FDA Food Code cold-holding limit). The cost of '
                       'goods in the financial plan is something else: the average of the mix with waste.', i=True, wrap=True)
     ws.merge_cells('A%d:%s%d' % (f, OCOL, f))
     ws.row_dimensions[f].height = 34
@@ -789,7 +789,7 @@ def hoja_calculadora(wb):
             _nota(ws, fila, nota)
             if len(rot) > 70:
                 ws.row_dimensions[fila].height = max(ws.row_dimensions[fila].height or 16, 32)
-    _f(ws, 'A%d' % F_REGLAS, 'SCALING RULES (the same table as the business plan\'s operations section)', b=True, fill=GRIS)
+    _f(ws, 'A%d' % F_REGLAS, 'SCALING RULES (kit estimates from US ratios)', b=True, fill=GRIS)
     _f(ws, 'B%d' % F_REGLAS, 'Value', b=True, fill=GRIS)
     for k, rot, fm, val, nota in DE.REGLAS:
         fmt = {'ent': ENT, 'dec': '#,##0.00', 'pct': PCT}[fm]
@@ -875,8 +875,7 @@ def hoja_calculadora(wb):
             _f(ws, '%s%d' % (col, F[k]), '=' + ex, fmt={'ent': ENT, 'dec': DEC, 'txt': 'General'}[fm], wrap=(fm == 'txt'))
     ws.row_dimensions[F['toma']].height = 32
     f = F_ULT
-    _f(ws, 'A%d' % f, 'The same table appears in the operations section of the business plan. One barista on a 2-group '
-                      'machine makes 50-65 drinks an hour (flashquotes.com); a second station comes in when the peak does not '
+    _f(ws, 'A%d' % f, 'One barista on a 2-group machine makes 50-65 drinks an hour (flashquotes.com); a second station comes in when the peak does not '
                       'fit. A standard 110V outlet gives about 2.4 kW: a 220V 2-group machine needs a dedicated circuit or a '
                       'generator. Kit estimate from US ratios.', i=True, wrap=True)
     ws.merge_cells('A%d:F%d' % (f, f))
@@ -990,7 +989,8 @@ INSTRUCCIONES = [
      'guest by the hours), the time of day and single-use or reusable cups. At a festival, guests are the drinks you expect '
      'to sell.', False),
     ('5. The scaling table at the bottom gives baristas, 2-group machines, grinders, pounds of coffee, gallons of milk, cups, '
-     'power, the circuit you need and water. It is the same table as the operations section of the business plan.', False),
+     'power, the circuit you need and water. Its rules use the same assumptions as the business plan: drinks per guest by '
+     'service length, 50-65 drinks per barista an hour and 18 g per double shot.', False),
     ('6. Enter the service hours and the hours outside service (loading, travel, setup and cleanup), the hourly wage and '
      'the payroll taxes. If you work the bar yourself, count your hours: it is your opportunity cost.', False),
     ('7. The price per guest is the direct cost divided by (1 − margin − fee), rounded up to the next $0.50: the lowest price '
@@ -1026,7 +1026,7 @@ INSTRUCCIONES = [
      'of sales plus any flat booth fee), the result of the day and the drinks you need to cover your costs. The "price per '
      'guest" in that column is the lowest price per drink that covers cost, fee and margin.', False),
     ('FOOD SAFETY', True),
-    ('Milk is a TCS food: keep it at 41 °F (5 °C) or below in the cart\'s fridge and in coolers (the FDA Food Code minimum). '
+    ('Milk is a TCS food: keep it at 41 °F (5 °C) or below in the cart\'s fridge and in coolers (the FDA Food Code cold-holding limit). '
      'Use a separate pitcher for each milk, wash your hands at the cart\'s hand sink first, and buy pastries only from a '
      'licensed bakery.', False),
     ('KIT ESTIMATES', True),
@@ -1138,10 +1138,10 @@ def autotest(destino):
         r = calcular(EJEMPLOS[nombre])
         if abs(r['price'] / obj - 1) > 0.10 + 1e-9:
             err.append('%s: $%.2f por invitado fuera de ±10 %% de $%.2f' % (nombre, r['price'], obj))
-    rf = calcular(EJEMPLOS['Farmers market, guest-pay'])
-    if not (rf['price'] <= EJEMPLOS['Farmers market, guest-pay']['tkt'] and rf['f_result'] > 0 and rf['f_eq'] > 0):
+    rf = calcular(EJEMPLOS['Community festival, guest-pay'])
+    if not (rf['price'] <= EJEMPLOS['Community festival, guest-pay']['tkt'] and rf['f_result'] > 0 and rf['f_eq'] > 0):
         err.append('festival: precio mínimo %.2f, resultado %.2f, equilibrio %d' % (rf['price'], rf['f_result'], rf['f_eq']))
-    if abs(EJEMPLOS['Farmers market, guest-pay']['tkt'] / 6.50 - 1) > 0.10:
+    if abs(EJEMPLOS['Community festival, guest-pay']['tkt'] / 6.50 - 1) > 0.10:
         err.append('festival: precio por bebida fuera de ±10 % de $6.50')
     # tabla de escalado (la de escalado_cof, la del Word) contra pycel
     F = dict((k, ESC_F0 + i) for i, (k, *_r) in enumerate(DE.FILAS_TABLA))

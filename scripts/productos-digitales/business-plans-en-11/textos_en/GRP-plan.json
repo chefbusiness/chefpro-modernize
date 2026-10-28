@@ -35,7 +35,7 @@
  "c0443": "Income tax",
  "c0444": "A flat rate every year, with no offset for losses",
  "c0445": "One effective rate for years 1-2 and another from year 3, offsetting net operating losses carried forward",
- "c0446": "A loss in one year reduces taxable profit in later years. The model offsets losses fully as a simplification (federal rules cap the offset at 80% of taxable income). If you operate as a pass-through (sole proprietorship or LLC), set the rate to 0 and budget your personal tax separately.",
+ "c0446": "A loss in one year reduces taxable profit in later years. The model offsets losses fully as a simplification (federal rules cap the offset at 80% of taxable income). If you operate as a pass-through (sole proprietorship or LLC), set the rate to 0 and budget your personal tax separately, or keep it as a reserve for that tax, as the Word plan does.",
  "c0447": "Loan payment",
  "c0448": "The full payment deducted in the P&L",
  "c0449": "Only interest in the P&L; principal repaid in the cash flow",

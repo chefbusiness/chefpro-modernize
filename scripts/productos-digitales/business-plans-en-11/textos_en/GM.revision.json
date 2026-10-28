@@ -1,0 +1,5 @@
+{
+ "c0066": "Example: 21% federal rate for a C corporation plus state tax, rounded to 25%. If you operate as a sole proprietorship, LLC taxed as a pass-through or S corporation, the business itself pays 0% here and you pay tax on the profit personally: set this to 0 and budget for your personal tax separately, or keep it as a reserve for your personal tax, as the Word plan does. The model applies this rate to the first two years with positive taxable income",
+ "c0072": "Not used: this plan sells no alcohol (row 62 is 0%). If you ever sell alcohol under a license, enter its rate here and add any state liquor taxes.",
+ "c0570": "Each sales line at ITS OWN rate, read from the sales tax column of the P&L"
+}

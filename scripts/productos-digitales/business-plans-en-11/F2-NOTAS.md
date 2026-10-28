@@ -208,3 +208,44 @@ cd /root/wt-coffeecart && bash scripts/productos-digitales/business-plans-en-11/
    county in writing»?
 4. **cof_b [98]**: «September, with Month 1 as March» va escrito a mano junto a `{{mes_saldo_minimo}}`: si alguien cambia la
    estacionalidad o el Mes 1, el mes deja de ser septiembre (el token sí cambiaría).
+
+## 10. Review fixes (REVISION-FINAL `a46e24b8`, una ronda; 28-oct, noche; sesión Claude Code)
+
+Por texto en las fuentes JSON (+ `datos_cof.py` y `calculadora_cof.py`); las reutilizadas, por `textos_en/{GM,GLP-check,GRP-plan}.revision.json`
+(las aplica `preparar_tandas`). La ficha `.ts` es de otro agente (no tocada).
+
+| # | Aplicado | Dónde |
+|---|---|---|
+| B1 (lado entregable) | ✅ comparación en prosa cart / trailer / truck en Word **[64]** (§4, barreras de entrada): carro completo $16,600-49,000 (cart-king.com), trailer ≈ $15,000 de construcción + $10,000 de equipo y truck de ≈ $20,000 usado a $80,000 custom (greenjoecoffeeschool.com, precios de 2019), los tres son mobile food units (permiso + plan review + commissary; el truck, además, registro y commercial auto), interior / exterior, y por qué el caso elige carro + barra portátil en remolque cerrado. Sin tabla | `docx_en_cof_a.json` «64» (aviso de longitud 1.96 × la ranura ES: solo aviso) |
+| M1 | ✅ fuera los volúmenes de DataForSEO: [39] abre con la demanda y Flashquotes (25,860 reservas, 578 operadores, ≈ 100 invitados, mediana $1,040); [53] «Google Keyword Planner» para medir lo local; [70] sin la cifra | cof_a 39, 53, 70 |
+| M2 | ✅ un solo juego cart-king: **carro solo $4,000-25,000 (básico nuevo a custom premium) · equipo completo de un carro ≈ $16,600-49,000 · típico $24,000**; la máquina ≈ $8,500 sigue como Kit estimate | Word [41] y [64] · `Instructions!B61/C61/D61` |
+| M3 | ✅ conciliado: GrindKit 20-30 % es sobre ingreso de bebida y aquí los paquetes pagan también a los baristas; el 50-70 % de Flashquotes es después del personal del evento y el {{margen_bruto_pct}} del plan, antes («once the event baristas are paid it falls back into that range»). El «≈ 63 %» del revisor no entra: `check_textos` exige token o fuente para un %, y no hay token | cof_b 96 |
+| M4 | ✅ «the sales tax payment due that month (the model settles in June, September and December)» y «(September in the example, which opens in March)» | cof_b 98 |
+| M5 | ✅ ejemplo citado como checklist de Lenexa (Kansas, basada en NFPA 96) y «some states, such as New Jersey, may require…»; checklist E9 igual y **sin «(summary)»**; B9 sin «and any propane» | cof_b 104 · `GCF-check` c0734, c0737 |
+| M6 | ✅ «keep an eye on year 1, when the loan payment is already running and the cushion over cash break-even is thinnest ({{holgura_caja_pct}}, rising in years 2 and 3)» | cof_b 117 |
+| M7 | ✅ «SCALING RULES (kit estimates from US ratios)»; fuera la frase de la tabla del Word en el pie; `Instructions` 5: «Its rules use the same assumptions as the business plan: drinks per guest by service length, 50-65 drinks per barista an hour and 18 g per double shot» | `calculadora_cof.py` |
+| m1 | ✅ «(the FDA Food Code cold-holding limit)» en Word [65] [81] [103] [112], checklist F1 E14 · F3 E6 · E14 y calculadora (pie de «Cost per Drink» e «Instructions») | |
+| m2 | ✅ `0. Assumptions!C37` y `Instructions!D45`: «…or keep it as a reserve for your personal tax, as the Word plan does» | GM / GRP revisión |
+| m3 · m4 · m5 | ✅ [102] sin «As we read it» · «labeled gluten-free» (Word [105], contrato, checklist F3 E10, F4 E14) · «including staff and extras, and in some states travel» (Word [106], contrato, `C9`, `C39`, checklist F1 E10, calculadora) | |
+| m6 | ✅ «a lean … (get quotes)» en Word [107] y nota D67; `B27` sin cambios ($3,800, para no mover el caso) | |
+| m7 · m8 · m9 | ✅ Sweet Carolinas incluye la avena y cobra $50 por otra leche · fuera «which usually means poorly paid labor» · «the cart order and the insurance» | cof_a 63, 49 · cof_b 114 |
+| m10 | ✅ [56] con los invitados de cada tipo (90 / 130 / 45 / 150 bebidas) | cof_a 56 |
+| m11 · m12 | ✅ nota del ejemplo 3: «without the guarantee, below 60 drinks you would lose money: the $800 guarantee covers that risk» · ejemplo renombrado **«Community festival, guest-pay»**; Word [40] y [56]: la garantía, solo en algunos festivales. Contrato [93]: ya era condicional («If the Organizer promises…») | calculadora · cof_a 40, 56 |
+| m13 · m14 · m15 | ✅ «Many health departments» · «retainer(s)» (F1 E5, E9, `C58`) · `O16` sin «alcohol to go», `A40` «Sales tax rate on alcohol (not used: no alcohol in this plan)», `C40` «Not used…» | GLP / GM revisión, `POR_CELDA`/FIJOS |
+| m16 | ❌ no aplicado: la caché de `TEXT(…,"#,##0")` la emula `inject_cache` (código común de toda la familia); Excel lo recalcula al abrir (`fullCalcOnLoad`). Deuda del motor | |
+| m21 · m22 · m23 | ✅ «Privacy contact: [name and email]» · «Dated [mm/dd/yyyy].» · «jointly and severally liable» · «represents that it has the authority to sign» · reembolso del Organizer sin doble cuenta · **cláusula «Travel fee»** nueva en la 2 ($[amount] por milla ida y vuelta más allá de [20] millas) | `contrato_en.json` (101 párrafos con la línea de versión) |
+| m24 | ✅ portada [16] «US edition with UK notes · Version 2.2 · October 2026» | `datos_cof.py` docx_fijos |
+| m17-m20, M8 y el lado ficha de B1 / M2 | — de la ficha (otro agente); cifras para alinear: las de M2 y B1 de esta tabla, ejemplo 3 = «Community festival» | |
+
+**Regenerado y gates (VPS, mismos comandos de §9)**: textos GM, GRP-plan, GLP-check, GCF-plan, GCF-check, cof_a, cof_b **OK** · contrato **OK**
+(101 párrafos, 3,259 palabras, 8 páginas) · `aplicar_en --idempotencia` 0 diferencias · **D15 VERDE** (cifras del caso sin cambios) · Word
+**G8 VERDE** · calculadora **1,122 VERDE** · **G1-G9 TODO VERDE** · `gates_en --autotest` 20/20 · docx 8/8 · barrido 5 ficheros, 2,093 piezas,
+**0** · censo 0 · no latinos 0 · 2.ª pasada **IGUAL** en los 5 · regresión **39/39 IGUAL**.
+
+| Fichero (`dl/coffee-cart-business-plan/`, Mac = VPS) | sha256 |
+|---|---|
+| `coffee-cart-business-plan.docx` | `a2fd104a4380…` |
+| `coffee-cart-financial-projections.xlsx` | `2afefa6797a3…` |
+| `coffee-cart-pricing-calculator.xlsx` | `22f292cbb4a7…` |
+| `coffee-cart-startup-checklist.xlsx` | `23c741da8255…` |
+| `coffee-catering-service-agreement-template.docx` | `644fdd2dfdee…` |

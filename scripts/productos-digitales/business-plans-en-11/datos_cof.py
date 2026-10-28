@@ -79,7 +79,7 @@ FIJOS_NUEVOS = OrderedDict([
     # D224 (decisión SPEC, = ES D5): el canal de «delivery» del FT son los FESTIVALES Y MERCADOS guest-pay (B16/B17)
     ('Comisiones de delivery', 'Festival & market organizer fees'),
     # alcohol solo si algún día vendes con licencia (0 % en el caso)
-    ('IVA repercutido/soportado general', 'Sales tax rate on alcohol sold (licensed only)'),
+    ('IVA repercutido/soportado general', 'Sales tax rate on alcohol (not used: no alcohol in this plan)'),
     # D223: las dos líneas de venta y su coste (los mismos textos ES salen en el P&L y en Escenarios)
     ('Coste de mercancía — comida', 'Cost of goods — coffee bar packages (beans, milks, syrups, cold brew)'),
     ('Coste de mercancía — bebida', 'Cost of goods — add-ons'),
@@ -181,7 +181,7 @@ POR_CELDA = OrderedDict([
                          'on their own tab (also in green) and are not repeated here. Amounts are in US dollars (or your own '
                          'currency).'),
     (('COFP', _S, 'C39'), 'Example rate: state + local sales tax combined, applied to the whole invoice (coffee service, '
-                          'baristas, add-ons and travel). Hosted events are usually taxed as catering; at festivals and '
+                          'baristas and add-ons, and in some states the travel fee). Hosted events are usually taxed as catering; at festivals and '
                           'markets you collect it drink by drink and may need a permit where you sell. Rates and rules vary '
                           'widely by state and city: look up yours. UK: 20% VAT applies to catering for events and '
                           'functions (VAT Notice 709/1).'),
@@ -462,7 +462,7 @@ def docx_fijos(M):
         (6, 'BUSINESS PLAN'), (7, 'Coffee Cart'),
         (9, 'Complete financial plan, market analysis,\noperations strategy and startup checklist\nto launch a coffee cart '
             'and coffee catering company in the United States'),
-        (14, 'AI Chef Pro'), (15, 'aichef.pro'), (16, 'US edition with UK notes · 2026'),
+        (14, 'AI Chef Pro'), (15, 'aichef.pro'), (16, 'US edition with UK notes · Version 2.2 · October 2026'),
         (18, 'LEGAL NOTICE'), (19, M.AVISO_DOCX_EN), (20, '© 2026 AI Chef Pro — aichef.pro'), (22, 'CONTENTS'),
         (35, 'Appendices: Coffee Cart Financial Projections (Excel) + Coffee Cart Pricing Calculator (Excel) + Coffee Cart '
              'Startup Checklist (Excel) + Coffee Catering Service Agreement Template (Word)'),
@@ -1342,8 +1342,8 @@ _PE_COF = ('=IFERROR("With the average price per guest excl. sales tax above, yo
            'same figures in your currency.","")')
 _C9_COF = ('=IFERROR("Price per guest excl. sales tax plus the weighted sales tax of your sales lines ("&TEXT('
            "SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)*100,\"0\")&\"%), rounded. In the US the "
-           'quote adds sales tax on top, and many states tax the whole catering invoice (coffee service, baristas, '
-           'add-ons and travel); in the UK, VAT is included in the price.","")')
+           'quote adds sales tax on top, and many states tax the whole catering invoice (coffee service, baristas and '
+           'add-ons; in some states, travel too); in the UK, VAT is included in the price.","")')
 _F18_COF = ('=IFERROR("At "&TEXT(\'0. Assumptions\'!$B$28,"0%")&" of sales: a cushion for unbudgeted event costs '
             '(extra milk, ice, cables, venue parking). It is a VARIABLE cost: it moves with the number of events, so '
             'it cannot sit in fixed costs (tow vehicle and trailer fuel, maintenance and registration are in row 27; '
