@@ -20,7 +20,7 @@
 
 | D | Decisión |
 |---|---|
-| D5 | Mapeo **B4 = eventos** (como catering y finca): **130 eventos × 135 invitados × 6,10 € sin IVA** = 107.055 € a régimen; crecimiento 8 % / 5 %. Mezcla del research §4 (30 bodas · 40 empresa · 22 jornadas de congreso o feria · 25 privados y rodajes · 12 jornadas de venta directa) en la nota de B4-B6, en el Word §6 y en `Ejemplos` de la calculadora. Líneas **10 / 90** «Dulces y bollería de obrador» / «Bebidas de café y sin café», las dos al 10 %. `coste_comida` 46 % · `coste_bebida` 16 % (nota: es la media de la mezcla con merma, no una receta) · consumibles 4 % · **`pct_delivery` 8,4 % = venta directa en mercados y ferias, `comision_delivery` 15 % = canon del organizador** · TPV 0,6 % · varios 4 % · `aforo` 350 · cobro 20 días / pago 30 |
+| D5 | Mapeo como catering y finca (**B4 = invitados por evento**, B6 = eventos; corregido en F2: al revés se rompe la cobertura): **130 eventos × 135 invitados × 6,10 € sin IVA** = 107.055 € a régimen; crecimiento 8 % / 5 %. Mezcla del research §4 (30 bodas · 40 empresa · 22 jornadas de congreso o feria · 25 privados y rodajes · 12 jornadas de venta directa) en la nota de B4-B6, en el Word §6 y en `Ejemplos` de la calculadora. Líneas **10 / 90** «Dulces y bollería de obrador» / «Bebidas de café y sin café», las dos al 10 %. `coste_comida` 46 % · `coste_bebida` 16 % (nota: es la media de la mezcla con merma, no una receta) · consumibles 4 % · **`pct_delivery` 8,4 % = venta directa en mercados y ferias, `comision_delivery` 15 % = canon del organizador** · TPV 0,6 % · varios 4 % · `aforo` 350 · cobro 20 días / pago 30 |
 | D6 | **IVA**: 10 % todo lo servido (barra y feria); `pct_bebida_alc` = 0 con su nota (la coctelería es otro plan); extras con precio propio al 21 % solo en el Word y el contrato (sin cifra en el P&L). Las 8 celdas del motor que hablan de alcohol (camino §1) se reescriben por `a.py`/`VOCABULARIO`. IVA soportado: leche al 4 % → nota, sin tocar el motor |
 | D7 | **Mes 1 = marzo** (research §4: se abre en primavera con empresa y comuniones; enero-febrero son los meses más flojos) con el injerto de la finca (`ESTACIONALIDAD` girada con `assert` de suma 1,000 + notas de Instrucciones y Tesorería). Pesos del research: 8,1 · 8,9 · 11,4 · 11,6 · 6,8 · 3,9 · 11,0 · 11,3 · 9,0 · 6,9 · 4,3 · 6,8. Rampa 0,45 en 9 meses. **Si el injerto da guerra más de 20 min**: Mes 1 = enero sin girar y nota (no se toca código común) |
 | D8 | **Plantilla**: titular-barista 1 × 1.800 € × 14 a jornada completa + camarero/a **fijo discontinuo** 1 × 1.400 € × 0,36 (convenio de hostelería, ALEH VI «instalaciones fijas o móviles»; «barista» no es categoría); el resto de filas del molde a 0 o como suplencias si el molde lo exige; todos ≥ SMI 2026 a prorrata. **Inversión 42.000 € en las 14 partidas del molde**: las 15 del research con la rotulación fundida en el vehículo («Furgoneta usada con rotulación y anclajes» 15.200 €, vida 8); imprevistos 8 % sobre el vehículo; base 400 €/mes (fianza 2, mes previo 1); suministros 60 €/mes; seguros 1.300 €/año. **10 fijos (7.700 €/año)**: los 9 del research + «Licencias y tasas de venta en ferias» 300 € (sin IVA: el rótulo empieza por «Licencias», `RX_SIN_IVA`) |
@@ -53,6 +53,18 @@
 - **D15 Word**: 2 redactores sonnet (`caf_es_a` §1-5, `caf_es_b` §6-10) con las pistas del camino §4; las 3 configuraciones del research
   §4 (mínima 12-15 k · caso 42 k · imagen 55-65 k) en §5-§7; venta cruzada → Kit de Tareas Recurrentes: Cafetería · Kit de Escandallos
   Pro · Pack Plantillas APPCC. Bio: 29 años en alta hostelería, quince en consultoría.
+
+- **D16 Cobro y cancelación (fuente única; iguales en calculadora, contrato, Word y ficha)** — fijado el 28-oct tras ver que calculadora
+  y contrato divergían: **Particular** señal 30 % a la firma + 70 % siete días antes · **Empresa** 30 % + 70 % a 30 días de la factura ·
+  **Feria** en el acto, canon 15 %. **Cancelación en 4 tramos «de X a menos de Y»**: Particular con cortes 60 / 30 / 7 días y Empresa con
+  30 / 15 / 7 → se retiene **10 % · 30 % · 60 % · 100 % menos los costes que la cafetería se ahorra** (consumibles, café y leche sin gastar,
+  refuerzo y desplazamiento); recíproca (si cancela la cafetería, devuelve lo cobrado y paga lo del mismo tramo). Margen objetivo de la
+  calculadora: Particular 55 %, Empresa 50 %, Feria 20 %.
+
+- **D17 Desvíos validados en F2 (orquestador, 28-oct)**: crecimiento **10 % / 8 %** (con 8/5 la demo §2.11.5 no tiene caso: el motor suma
+  6.000 € de incorporaciones en A2-A3, `grupo_a.py:1484`; el Word lo justifica con reseñas y clientes de empresa que repiten) · líneas
+  **11 / 89** (la demo §2.11.9 exige que la mercancía suba > 0,005) · filas 3-4 de plantilla como suplencias y refuerzo al 4 % · bodas a
+  9 € (palanca 1) → 6,20 € de media. La calculadora da el precio MÍNIMO para el margen objetivo (boda 8,00 €); el plan usa el de mercado.
 
 ## 5. Orden y presupuesto
 F2 y F3 = `F1-camino.md` §7-§8 (≈ 2,1 M, ≈ 3 h). Mac ≤ 3 agentes con `istats` < 60 °C; todo lo que gasta CPU, en el VPS
