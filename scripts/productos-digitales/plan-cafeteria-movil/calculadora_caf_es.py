@@ -71,17 +71,17 @@ TXT_AV_OK = 'Potencia cubierta: confirma por escrito en el contrato la toma y su
 # Escandallo: insumos (nombre, precio, merma, origen, unidad de la receta: 'g' | 'ml' | 'ud'). Sin IVA. F1-research §3.b.
 # ---------------------------------------------------------------------------------------------------------------------
 INSUMOS = [
-    ('Café en grano (g · €/kg)', 22.00, 0.10, 'Research §3.b: 18-28 €/kg, caso 22 €/kg [estimado]; 10 % de merma por purga y calibrado.', 'g'),
-    ('Leche entera (ml · €/l)', 1.05, 0.10, 'Research §3.b: ≈ 1,05 €/l [estimado].', 'ml'),
+    ('Café en grano (g · €/kg)', 22.00, 0.10, 'Estimación del kit: 18-28 €/kg en hostelería, se toma 22 €/kg; 10 % de merma por purga y calibrado.', 'g'),
+    ('Leche entera (ml · €/l)', 1.05, 0.10, 'Estimación del kit: ≈ 1,05 €/l.', 'ml'),
     ('Leche sin lactosa (ml · €/l)', 1.35, 0.10, 'Estimación del kit.', 'ml'),
-    ('Bebida de avena barista (ml · €/l)', 2.50, 0.10, 'Research §3.b: ≈ 2,50 €/l [estimado].', 'ml'),
+    ('Bebida de avena barista (ml · €/l)', 2.50, 0.10, 'Estimación del kit: ≈ 2,50 €/l.', 'ml'),
     ('Bebida de soja barista (ml · €/l)', 1.90, 0.10, 'Estimación del kit.', 'ml'),
     ('Cacao en polvo (g · €/kg)', 9.00, 0.05, 'Estimación del kit.', 'g'),
     ('Concentrado de chai (ml · €/l)', 6.00, 0.05, 'Estimación del kit.', 'ml'),
     ('Sirope de vainilla o caramelo (ml · €/l)', 6.00, 0.05, 'Estimación del kit.', 'ml'),
     ('Té e infusiones (g · €/kg)', 40.00, 0.05, 'Hueco para tu carta de infusiones: vacío en el ejemplo.', 'g'),
     ('Azúcar (g · €/kg)', 1.50, 0.0, 'Estimación del kit.', 'g'),
-    ('Vaso de 4 oz (ud. · €/ud.)', 0.05, 0.03, 'Research §3.b: vaso, tapa, servilleta y removedor ≈ 0,13 € por bebida [cálculo].', 'ud'),
+    ('Vaso de 4 oz (ud. · €/ud.)', 0.05, 0.03, 'Estimación del kit: vaso, tapa, servilleta y removedor suman ≈ 0,13 € por bebida.', 'ud'),
     ('Vaso de 8 oz (ud. · €/ud.)', 0.07, 0.03, 'Ídem.', 'ud'),
     ('Vaso de 12 oz (ud. · €/ud.)', 0.09, 0.03, 'Ídem.', 'ud'),
     ('Tapa (ud. · €/ud.)', 0.03, 0.03, 'Ídem.', 'ud'),
@@ -138,7 +138,7 @@ ESC_IN = [('iva', 'IVA de la bebida servida (%)', PCT, 0.10,
           ('tol', 'Margen de vigilancia sobre el objetivo (puntos)', PCT, 0.05,
            'Hasta este margen por encima del objetivo, el semáforo dice «Vigila el coste»; más allá, «Por encima del objetivo».'),
           ('gdoble', 'Gramos de café por doble (g)', DEC, float(DE.G_POR_DOBLE),
-           'Research §3.b: un doble de especialidad lleva 16-18 g. Mueve los gramos de la fila del café de todas las bebidas.')]
+           'Estimación del kit: un doble de especialidad lleva 16-18 g. Mueve los gramos de la fila del café de todas las bebidas.')]
 E = OrderedDict((k, 5 + i) for i, (k, *_r) in enumerate(ESC_IN))
 E_CAB = 5 + len(ESC_IN) + 1
 E_PVP, E_MIX, E_DOB = E_CAB + 1, E_CAB + 2, E_CAB + 3
@@ -178,7 +178,7 @@ CANAL_TAB = OrderedDict([
                 'base, publicidad y tu beneficio. Estimación del kit: la boda particular lleva más que la empresa; en feria el margen '
                 'es menor porque vendes volumen.')),
     ('canon', ('Canon del organizador (% de la venta)', PCT, (0.0, 0.0, 0.15),
-               'Solo ferias, mercados y festivales (research §3.a: porcentaje de la venta o cuota fija). El canon fijo se escribe aparte.')),
+               'Solo ferias, mercados y festivales (porcentaje de la venta o cuota fija, según el organizador). El canon fijo se escribe aparte.')),
     ('pc_senal', ('Cobro: señal al reservar (% del total)', PCT, (0.30, 0.30, 0.0),
                   'Particular y Empresa, el 30 % al firmar. La señal es a cuenta del precio. Feria: no hay señal al cliente.')),
     ('pc_antes', ('Cobro: resto antes del evento (% del total)', PCT, (0.70, 0.0, 0.0), 'Particular: el 70 % restante, siete días antes del evento.')),
@@ -206,13 +206,13 @@ ENTRADAS = [
     ('formato', 'Formato del servicio (fija las bebidas por invitado)', '@', 'Más de 2 y hasta 4 horas',
      'Bebidas por invitado según las horas de barra: tabla del final (estimación del kit con ratios de EE. UU.). En Feria no se usa.'),
     ('horario', 'Horario', '@', 'Noche (después de la cena)',
-     'Mañana +25 %, boda de noche −10 % (research §1). Ajusta las bebidas por invitado. En Feria no se usa.'),
+     'Mañana +25 %, boda de noche −10 % (estimación del kit con ratios de EE. UU.). Ajusta las bebidas por invitado. En Feria no se usa.'),
     ('serv', 'Servicio en', '@', 'Loza (tazas reutilizables)',
      'Loza: sin coste de vaso ni tapa. Vaso de un solo uso: suma el envase y, en el tique, el precio aparte del vaso de plástico '
      '(Ley 7/2022, art. 55). El compostable con forro de PE o PLA también es plástico.'),
     ('hours', 'Horas de servicio con la barra abierta', DEC, 3, 'Se usan para el ritmo de bebidas por hora y para el personal.'),
     ('h_extra', 'Horas por persona fuera del servicio (carga, viaje, montaje y limpieza)', DEC, 5,
-     'Estimación del kit: un servicio de dos horas es una jornada de siete a nueve (research §1). Pon las reales.'),
+     'Estimación del kit: un servicio de dos horas es una jornada de siete a nueve. Pon las reales.'),
     ('dulces', 'Bollería o dulce por invitado (coste, sin IVA)', EUR, 0.40,
      'Lo que te cuesta el dulce que añades al pack. 0 si no ofreces bollería.'),
     ('rentals', 'Alquileres repercutidos (carpa, cubierta, mesas, loza extra)', EUR, 0.0,
@@ -225,7 +225,7 @@ ENTRADAS = [
     ('kw_maq', 'Potencia de tu cafetera de dos grupos (kW)', DEC, DE.KW_MAQUINA,
      'La del caso: 3,5 kW o menos para caber en un enchufe de 16 A. Mira la placa de tu máquina.'),
     ('wage', 'Coste bruto por hora de un barista', EUR, 13.0,
-     'Estimación del kit: del titular (14,2 €/h) y del camarero fijo discontinuo (11,0 €/h) con 14 pagas y 1.780 horas. Copia tu convenio.'),
+     'Estimación del kit: del titular (13,7 €/h) y del camarero fijo discontinuo (10,7 €/h) con 14 pagas y 1.840 horas (40 h × 46 semanas, como el plan). Copia tu convenio.'),
     ('ss', 'Seguridad Social a cargo de la empresa', PCT, 0.33,
      '30,65 % de contingencias, desempleo, FOGASA, formación y MEI, más AT/EP (fijos discontinuos, art. 16 ET).'),
     ('km', 'Kilómetros de ida (base → lugar)', ENT, 35, 'Se cobran ida y vuelta, en una línea aparte y sin margen (en Feria son coste tuyo).'),
@@ -233,7 +233,7 @@ ENTRADAS = [
      'Referencia de escaparate de 2026: 0,45 €/km (La Galería del Café, en Bodas.net). Pon la tuya.'),
     ('iva', 'IVA del servicio', PCT, 0.10, 'Ley 37/1992, art. 91: bebida para consumir en el acto, 10 %. Lo que facturas aparte con precio propio, 21 %.'),
     ('tkt', 'Feria: precio medio por taza que cobrarás (sin IVA)', EUR, 3.00,
-     'Research §4: ≈ 3,00 € sin IVA por taza. Mira el precio medio por taza de tu carta en la hoja «%s». Solo cuenta si el cliente es Feria.' % HE),
+     'Estimación del kit: ≈ 3,00 € sin IVA por taza. Mira el precio medio por taza de tu carta en la hoja «%s». Solo cuenta si el cliente es Feria.' % HE),
     ('canon_fijo', 'Feria: canon fijo del organizador (€)', EUR, 0.0, 'Cuota fija por emplazamiento, si el organizador la cobra. Solo cuenta en Feria.'),
     ('dias', 'Días que faltan para el evento si el cliente cancela', ENT, 45,
      'Elige los días y la hoja te dice el tramo y lo que retienes.'),
@@ -267,7 +267,7 @@ SALIDAS = [
     ('kw', 'Potencia de las cafeteras (kW)', DEC, '{estaciones}*{kw_maq}', 'Estaciones × kW de tu cafetera.'),
     ('amp', 'Intensidad (A)', DEC, '{kw}*1000/{r_tension}', 'kW × 1.000 ÷ tensión.'),
     ('kw_enchufe', 'Potencia de un enchufe (kW)', '0.00', '{r_amp_enchufe}*{r_tension}/1000',
-     'SPEC D11: un enchufe de 16 A a 230 V da unos 3,7 kW (3,68). Los molinos, la nevera y la iluminación van aparte: déjales margen.'),
+     'Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68). Los molinos, la nevera y la iluminación van aparte: déjales margen.'),
     ('kva', 'Generador inverter mínimo (kVA)', ENT, 'ROUNDUP(ROUND({kw}*{r_factor_kva},2),0)',
      'kW × factor de margen, hacia arriba: una cafetera de 3,5 kW pide 5 kVA. Baterías de litio con inversor: la misma potencia, más silenciosas.'),
     ('toma', 'Toma que hace falta', 'General', 'IF({kw}<={kw_enchufe},$A${e1},"%s")' % TXT_TOMA_NO,
@@ -316,7 +316,7 @@ SALIDAS = [
      'IF({dias}>={t_d1},{t_lab1},IF({dias}>={t_d2},{t_lab2},IF({dias}>={t_d3},{t_lab3},{t_lab4})))', 'Mira los días de la entrada «Días que faltan».'),
     ('ret_pct', 'Porcentaje que retienes en ese tramo', PCT,
      'IF({dias}>={t_d1},{t_cn1},IF({dias}>={t_d2},{t_cn2},IF({dias}>={t_d3},{t_cn3},{t_cn4})))', ''),
-    ('ret', 'Importe que retienes si cancela ese día', EUR, '{total}*{ret_pct}', ''),
+    ('ret', 'Importe que retienes si cancela ese día (en el último tramo, antes de descontar los costes que te ahorras)', EUR, '{total}*{ret_pct}', ''),
     ('can1', 'Importe retenido: tramo 1 (el más lejano)', EUR, '{total}*{t_cn1}', 'Los cortes de cada cliente están en la tabla del final.'),
     ('can2', 'Importe retenido: tramo 2', EUR, '{total}*{t_cn2}', ''),
     ('can3', 'Importe retenido: tramo 3', EUR, '{total}*{t_cn3}', ''),
@@ -762,7 +762,7 @@ def hoja_calculadora(wb):
         else:
             _nota(ws, fila, nota)
     # reglas de escalado
-    _f(ws, 'A%d' % F_REGLAS, 'REGLAS DE ESCALADO (fuente única: «datos_escalado»; misma tabla que las Instrucciones del plan y el Word)',
+    _f(ws, 'A%d' % F_REGLAS, 'REGLAS DE ESCALADO (la misma tabla que las Instrucciones del plan financiero y el plan de negocio)',
        b=True, fill=GRIS)
     _f(ws, 'B%d' % F_REGLAS, 'Valor', b=True, fill=GRIS)
     for k, rot, fm, val, nota in DE.REGLAS:
@@ -776,7 +776,7 @@ def hoja_calculadora(wb):
     for i, (nombre, hasta, v, rango) in enumerate(DE.BEBIDAS_POR_INVITADO, 1):
         _f(ws, 'A%d' % (F_FORM + i), nombre)
         _f(ws, 'B%d' % (F_FORM + i), v, fmt='0.00', fill=VERDE, locked=False)
-        _f(ws, 'C%d' % (F_FORM + i), 'Rango del research: %s' % rango, i=True)
+        _f(ws, 'C%d' % (F_FORM + i), 'Rango de referencia: %s' % rango, i=True)
     _f(ws, 'D%d' % (F_FORM + 1), '%s' % DE.ORIGEN, i=True, wrap=True)
     ws.merge_cells('D%d:F%d' % (F_FORM + 1, F_FORM + 2))
     # horario
@@ -991,7 +991,7 @@ INSTRUCCIONES = [
      'bebidas por invitado, la capacidad por barista y el agua usan ratios de EE. UU. y no tienen fuente española: sustitúyelos por tus '
      'mediciones. Cambia los precios por los de tu tostador y tus proveedores, los salarios por tu convenio y los kilómetros por los tuyos '
      'antes de presupuestar.', False),
-    ('Fuentes: research del producto (octubre 2026); Ley 37/1992 del IVA, art. 91; Ley 7/2022, arts. 2, 55 y 56; RD 1055/2022, art. 7; '
+    ('Fuentes: investigación de AI Chef Pro (octubre 2026); Ley 37/1992 del IVA, art. 91; Ley 7/2022, arts. 2, 55 y 56; RD 1055/2022, art. 7; '
      'TRLGDCU, arts. 85, 87 y 103.', False),
 ]
 

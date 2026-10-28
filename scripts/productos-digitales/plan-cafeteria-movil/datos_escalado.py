@@ -55,25 +55,25 @@ def bebidas_por_invitado(horas):
 #: clave → (rótulo, formato, valor, nota). `formato`: 'ent' | 'dec' | 'pct'
 REGLAS = [
     ('cap_barista', 'Bebidas por hora que saca un barista con una cafetera de dos grupos', 'ent', 55,
-     'Research: 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120 (ratios de EE. UU.). Se toma 55.'),
+     'Ratios de EE. UU. (grindkit y beanandbrewtech): 50-60 bebidas por hora con un barista en dos grupos; con dos baristas, 100-120. Se toma 55.'),
     ('pico', 'Factor de pico sobre la media (la cola se concentra tras la cena o en las pausas)', 'dec', 1.3,
      'Estimación del kit (ratios de EE. UU.): el pico es un 30 % más alto que la media por hora.'),
     ('bar_maq', 'Baristas que trabajan en una misma cafetera', 'ent', 2,
-     'Research: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso.'),
+     'Ratios de EE. UU.: con dos baristas en una cafetera se llega a 100-120 bebidas por hora; una segunda estación entra por encima de eso.'),
     ('grupos_maq', 'Grupos de una cafetera', 'ent', 2, 'La cafetera del caso es de dos grupos (2,4-4,5 kW; la del caso, hasta 3,5 kW).'),
     ('molinos_extra', 'Molinos de reserva (descafeinado o filtro) además de uno por estación', 'ent', 1,
-     'Research §4: molinos de espresso bajo demanda más uno de descafeinado o filtro.'),
-    ('purga', 'Café de purga y calibrado por evento (kg)', 'dec', 0.15, 'Research: 100-200 g por evento. Se toma 150 g.'),
+     'Estimación del kit: un molino de espresso por estación más uno de descafeinado o filtro.'),
+    ('purga', 'Café de purga y calibrado por evento (kg)', 'dec', 0.15, 'Estimación del kit: 100-200 g por evento. Se toma 150 g.'),
     ('reserva', 'Reserva de vasos desechables sobre las bebidas', 'pct', 0.10, 'Estimación del kit: derrames, repeticiones y cortesías.'),
     ('loza_inv', 'Tazas de loza por invitado (con reposición durante el lavado)', 'dec', 1.25,
-     'Del caso: loza para 150 en una boda de 120 invitados (research §4).'),
+     'Del caso: loza para 150 en una boda de 120 invitados (plan financiero).'),
     ('agua_beb', 'Agua limpia por bebida (litros: grupo, vapor y aclarado de jarras)', 'dec', 0.25, 'Estimación del kit (ratios de EE. UU.).'),
     ('agua_base', 'Agua limpia fija por evento (litros: manos, limpieza y reserva)', 'ent', 20, 'Estimación del kit (ratios de EE. UU.).'),
     ('tension', 'Tensión de la red (V)', 'ent', 230, 'Red monofásica española.'),
     ('amp_enchufe', 'Intensidad de un enchufe doméstico o de finca (A)', 'ent', 16,
-     'Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW): SPEC D11.'),
+     'Un enchufe de 16 A a 230 V da unos 3,7 kW (3,68 kW).'),
     ('factor_kva', 'Factor para dimensionar el generador (kVA por kW de cafetera)', 'dec', 1.4,
-     'Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (research §0).'),
+     'Margen de arranque: una cafetera de 3,5 kW pide un generador inverter de 5 kVA (fichas de distribuidor).'),
 ]
 R = dict((k, v) for k, _r, _f, v, _n in REGLAS)
 KW_MAQUINA = 3.5                 # kW de la cafetera de dos grupos del caso (≤ 3,5 kW: cabe en un enchufe de 16 A)
