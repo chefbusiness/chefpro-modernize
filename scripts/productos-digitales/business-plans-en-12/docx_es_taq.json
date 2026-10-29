@@ -1,0 +1,2290 @@
+{
+ "meta": {
+  "generado": "2026-10-29T07:47:28+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "taq",
+  "fichero_es": "astro-site/public/dl/plan-negocio-taqueria/plan-de-negocio-taqueria.docx",
+  "sha256": "c028c2bb753df9b09b9f023e376e633d6f098468300dbb62424e962ed40d63d5",
+  "fichero_en": "astro-site/public/dl/taco-shop-business-plan/taco-shop-business-plan.docx",
+  "titulo_en": "Taco Shop Business Plan (10 Sections)",
+  "n_parrafos": 131,
+  "n_con_texto": 110,
+  "n_sin_runs": 17,
+  "n_un_run": 114,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 121,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 61,
+   "vacio": 21,
+   "fijo": 18,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 61,
+  "palabras_traducir": 7307,
+  "tandas": {
+   "taq_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     46,
+     47,
+     48,
+     49,
+     50,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "palabras": 3295
+   },
+   "taq_b": {
+    "parrafos": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117
+    ],
+    "palabras": 4012
+   }
+  },
+  "pagina_emu": [
+   7560310,
+   10692130
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average covers per day, year 1: dine-in + take-out/pickup and delivery equivalents",
+   "clientes_a2": "average covers per day, year 2",
+   "clientes_a3": "average covers per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "disposables (clamshells, foil, salsa cups, bags), % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (base rent of the premises)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out, years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "rent per year (occupancy)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even covers per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even covers per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: covers per day",
+   "optimista_clientes": "optimistic scenario: covers per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "pesimista_ticket": "pessimistic scenario: average check excl. sales tax",
+   "optimista_ticket": "optimistic scenario: average check excl. sales tax",
+   "pesimista_dias": "pessimistic scenario: operating days",
+   "optimista_dias": "optimistic scenario: operating days",
+   "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
+   "inv_proyecto": "architect, MEP & hood drawings, plan review and permit fees",
+   "inv_obra": "build-out of a second-generation space (1,200 sq ft), signage and facade",
+   "inv_campana": "Type I hood, UL 300 fire suppression and makeup air",
+   "inv_instalaciones": "electrical service, panel and gas lines",
+   "inv_fontaneria": "plumbing, grease interceptor and HVAC",
+   "inv_trompo": "two gas vertical broilers (trompos)",
+   "inv_plancha": "flat-top griddle (36 in) and comal",
+   "inv_freidora": "fryer and stock-pot range (chips, carnitas, guisados)",
+   "inv_mantenedor": "steam table and tortilla warmers",
+   "inv_camara": "walk-in cooler (6×8)",
+   "inv_frio": "refrigerated prep table, salsa bar, beer cooler and freezer",
+   "inv_lavado": "3-compartment sink, dish machine, hand sinks, shelving and stainless",
+   "inv_utillaje": "smallwares and tortilla presses",
+   "inv_mobiliario": "furniture (30 seats) and patio (12)",
+   "inv_tpv": "POS, online ordering, kiosk and delivery tablets",
+   "inv_constitucion": "LLC, legal and food safety plan",
+   "inv_lanzamiento": "branding, website, photos and launch",
+   "inv_stock": "opening inventory",
+   "aforo": "indoor seats (patio not included)",
+   "rotaciones_dia": "implied seat turns per day (take-out and delivery included)",
+   "comida_pct": "food share of sales",
+   "bebida_pct": "beverage share of sales",
+   "plataforma_pct": "share of sales through third-party delivery marketplaces",
+   "comision_pct": "marketplace commission on those orders",
+   "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales)",
+   "meses_alquiler_previo": "months of rent paid before opening (build-out and permits)",
+   "costes_variables_pct": "all variable costs year 1 (cost of goods + disposables + marketplace + card fees + contingency), % of sales",
+   "otros_variables_pct": "disposables + marketplace + card fees + contingency, % of sales",
+   "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount (only if it is a loss)"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Taquería",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Taco Shop"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, análisis de mercado,\nestrategia operativa y checklist de apertura\npara montar una taquería con trompo, barra de salsas y para llevar",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and startup checklist\nto open a counter-service taco shop in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Versión 1.0 · noviembre 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoría Gastronómica con fines informativos y orientativos. Las cifras salen del Excel del plan financiero que lo acompaña, con un caso de ejemplo que debes sustituir por el tuyo; las fuentes de los datos de mercado y de las normas se citan en el texto. Los resultados reales pueden variar. No constituye asesoramiento financiero, legal ni fiscal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "ÍNDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist de Apertura Excel + Calculadora del Trompo y Escandallo Excel + Guía de Equivalencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Taco Shop Financial Projections (Excel) + Taco Cost & Trompo Yield Calculator (Excel) + Taco Shop Startup Checklist (Excel) + Equivalents Guide"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "Este plan describe una taquería con trompo de gas a la vista y barra de salsas en una ciudad media española, de entre 150.000 y 300.000 habitantes. El trompo es el asador vertical donde se asa la carne al pastor, cerdo marinado en adobo de chiles y achiote, y el cliente lo ve girar desde la calle. El local tiene 80 m², con una salida de humos a cubierta que es el filtro del negocio, 32 plazas (24 en mesa y 8 en barra) y una terraza de 16 de abril a octubre, y se alquila sin traspaso, en una calle con paso cerca de una zona universitaria o de ocio. Lo explota una SL unipersonal: tú como taquero jefe, es decir, el que lleva el trompo, y tu equipo. Abre en enero, de martes a domingo, con comidas y cenas, y cierra los lunes y 12 días en enero.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 150,
+   "nota": "§1 1/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «trompo» 27,100/mes y «street tacos» 74,000 de demanda de consumo; las colas de «taco shop business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "Las cifras clave del caso son estas. Una media de 77 comensales al día, entre sala, para llevar y domicilio, a 15,50 € por comensal sin IVA, durante 300 días de apertura, que dan unas ventas de 358.050 € en el primer año y un resultado neto de 32.563 €, un 9,1 % de las ventas. Esa media incluye la rampa de arranque: el Excel reparte el año mes a mes y el Mes 1 es enero, uno de los meses más flojos, así que el arranque cae sobre la parte baja del año. El equilibrio contable está en 64 comensales al día y el de caja, que además cubre la devolución del principal (ninguna el primer año, el de carencia), en 61 ese primer año. No es una rentabilidad garantizada: es un punto de partida para que cambies las hipótesis y pongas tus propios números.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 146,
+   "nota": "§1 2/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «trompo» 27,100/mes y «street tacos» 74,000 de demanda de consumo; las colas de «taco shop business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total es de 151.000 €: 100.350 € de obra, cocina, equipo y puesta en marcha, 2.900 € de fianza y 2.900 € de renta previa, que suman 106.150 € de inversión sin el fondo, y 44.850 € de fondo de maniobra. A eso se suma el IVA de la inversión, 21.053 €, que se adelanta y se recupera con las declaraciones de IVA, así que la necesidad de caja llega a 172.053 €. Se financia con 55.000 € de recursos propios y un préstamo de 118.000 € a 7 años, con 1 año de carencia de principal y un tipo del 6 %. Los fondos suman 173.000 € y sobran 947 €. La cuota anual, ya sin carencia, es de 23.997 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 124,
+   "nota": "§1 3/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «trompo» 27,100/mes y «street tacos» 74,000 de demanda de consumo; las colas de «taco shop business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "A partir de ahí, los comensales crecen un 6 % en el segundo año y un 4 % en el tercero, con el mismo ticket: las ventas pasan a 379.533 € y 394.714 €, y el neto, a 39.022 € y 37.900 €. La holgura de caja sobre el equilibrio es de 26,3 % el primer año, pero porque hay carencia. En el segundo baja a 18,7 %, porque empieza a devolverse el principal, y en el tercero es de 19,9 %. Son los años que hay que vigilar. El payback antes de la deuda, en años, sale en la Tesorería del Excel: «2,9» con el fondo de maniobra dentro y «2,0» sin él.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 114,
+   "nota": "§1 4/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «trompo» 27,100/mes y «street tacos» 74,000 de demanda de consumo; las colas de «taco shop business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "El equipo es corto y se apoya en ti. Eres el taquero jefe y llevas el trompo cada día; te acompañan un segundo taquero, un cocinero de producción y salsas, la sala y un refuerzo de fin de semana, en una plantilla de 7 personas que suman 4,60 jornadas completas. El kit incluye este plan de diez secciones, el Excel de nueve hojas, el checklist de 80 tareas en seis fases, la calculadora del trompo y escandallo y la guía de equivalencias para Latinoamérica. Lo que lo distingue es el rendimiento del trompo con números: 278 tacos de un cono de 15 kg en el ejemplo, una estimación del kit que mides tú.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 113,
+   "nota": "§1 5/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «trompo» 27,100/mes y «street tacos» 74,000 de demanda de consumo; las colas de «taco shop business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "44": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "45": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "No todas las taquerías son el mismo negocio, y conviene elegir antes de firmar nada. La de barrio, de mostrador y barra, con plancha y comal (la plancha de barro o de acero donde se calienta la tortilla) y sin trompo, cabe en unos 60 m² con 22 plazas y un ticket de unos 12,50 € sin IVA: margen justo y sin la seña del trompo. La de trompo y barra de salsas, que es la de este plan, se ve desde la calle. La taquería-mezcalería con tortillería propia, de unos 120 m² y 44 plazas, con un ticket de unos 19,50 €, ya es un restaurante mexicano: la cubre la Guía Restaurante Mexicano de AI Chef Pro. Y en los extremos están la de volumen, con el taco a 1-1,50 € y colas, y la de autor, con el taco a 7-8 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 144,
+   "nota": "§2 1/5: Concepto y propuesta: counter service, trompo a la vista (al pastor con piña), street tacos en doble tortilla de maíz de 6 in «with everything» (onion & cilantro), order of 3 / plate, gringa y quesadilla, birria los fines de semana como opción, salsa bar, aguas frescas (horchata, jamaica), beer & wine; tortilla comprada al abrir y la propia como palanca cuando pase de ~700 al día; sin «authentic» ni «Tex-Mex» ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor es el pastor del trompo a la vista, con tortilla de maíz nixtamalizado (el maíz cocido con cal) y una carta corta de 8 a 10 tacos. Se pide por orden, que es la porción de 3 a 5 tacos del mismo guiso y que en España llamaríamos ración. Junto al pastor hay carnitas, el cerdo confitado, y guisados del día, las cazuelas de relleno. Hay gringa, que es tortilla de harina con pastor y queso, y algún campechano, la mezcla de dos carnes, o un suadero, un corte de res entre el vientre y la pierna que se confita. Pedir «con todo» quiere decir con cebolla y cilantro. La barra de salsas funciona con reglas, las aguas frescas (agua con fruta o con flor de jamaica, endulzada) son de la casa y la orden «para armar», con la tortilla y el relleno aparte, es la forma de llevarte el taco a casa sin que llegue blando.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 161,
+   "nota": "§2 2/5: Concepto y propuesta: counter service, trompo a la vista (al pastor con piña), street tacos en doble tortilla de maíz de 6 in «with everything» (onion & cilantro), order of 3 / plate, gringa y quesadilla, birria los fines de semana como opción, salsa bar, aguas frescas (horchata, jamaica), beer & wine; tortilla comprada al abrir y la propia como palanca cuando pase de ~700 al día; sin «authentic» ni «Tex-Mex» ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "La carta del caso, con IVA, tiene el taco al pastor a 3,00 €, la orden de 3 a 8,50 €, la gringa a 7,50 €, la quesadilla a 6,00 € y el guacamole con totopos, los crujientes de tortilla de maíz, a 6,50 €. Para beber hay aguas frescas a 3,00 €, cerveza mexicana a 3,80 € y mezcal a 7 €. Todo se escandalla taco a taco: el taco al pastor cuesta 0,61 € de mercancía, un 22,5 % de food cost, y por eso puede venderse a precio casual y dejar margen.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 95,
+   "nota": "§2 3/5: Concepto y propuesta: counter service, trompo a la vista (al pastor con piña), street tacos en doble tortilla de maíz de 6 in «with everything» (onion & cilantro), order of 3 / plate, gringa y quesadilla, birria los fines de semana como opción, salsa bar, aguas frescas (horchata, jamaica), beer & wine; tortilla comprada al abrir y la propia como palanca cuando pase de ~700 al día; sin «authentic» ni «Tex-Mex» ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El ticket del caso es de 15,50 € por comensal y sin IVA, es decir, 17,08 € con IVA. En sala se compone de una orden de 3 tacos (8,50 €), medio taco suelto (1,50 €), algo de gringa o quesadilla (2,10 €), algún entrante (1,30 €), 1,1 bebidas (3,63 €) y algún postre (0,40 €), unos 17,43 € con IVA; el caso se queda en 15,50 € sin IVA por los combos de mediodía, que lo bajan un poco. La mezcla de ventas es de 80 % de comida y 20 % de bebida. Por canal, la sala pesa un 74 % de las ventas, el llevar un 14 % y la plataforma, un 12 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 117,
+   "nota": "§2 4/5: Concepto y propuesta: counter service, trompo a la vista (al pastor con piña), street tacos en doble tortilla de maíz de 6 in «with everything» (onion & cilantro), order of 3 / plate, gringa y quesadilla, birria los fines de semana como opción, salsa bar, aguas frescas (horchata, jamaica), beer & wine; tortilla comprada al abrir y la propia como palanca cuando pase de ~700 al día; sin «authentic» ni «Tex-Mex» ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "Un detalle que te ahorra un disgusto es decir bien qué eres. Esta no es una taquería tex-mex ni un sitio de burritos y nachos como plato central: eso pierde al cliente mexicano, que es el que más sabe, y también al que busca una taquería. Los crujientes se llaman totopos, el cítrico verde del taco es la lima y no el limón, y «tortilla» a secas es un lío en España, así que en la carta y en la web conviene decir «tortilla de maíz». Y no prometas «sin gluten» si el comal o la freidora se comparten con la harina.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 102,
+   "nota": "§2 5/5: Concepto y propuesta: counter service, trompo a la vista (al pastor con piña), street tacos en doble tortilla de maíz de 6 in «with everything» (onion & cilantro), order of 3 / plate, gringa y quesadilla, birria los fines de semana como opción, salsa bar, aguas frescas (horchata, jamaica), beer & wine; tortilla comprada al abrir y la propia como palanca cuando pase de ~700 al día; sin «authentic» ni «Tex-Mex» ‖ FORMA: la sección §2 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "51": {
+   "estilo": "Heading 1",
+   "texto": "3. Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "La demanda se mide mejor por lo que se busca que por tamaños de mercado dudosos, y aquí no hay ninguno sin fuente. Según DataForSEO, en la consulta del 28 de octubre de 2026 estas son las búsquedas mensuales en Google España: «cochinita pibil» 18.100, «tacos al pastor» 8.100, «tortillas de maíz» 4.400, «taquería» 4.400, «suadero» 1.900, «salsa macha» 1.600, «comal» 1.300, «aguas frescas» 1.000, «nixtamal» 210, «masa de maíz» 110 y «trompo al pastor» 70. Léelas como interés de la gente por el oficio, no como ventas: dicen que el cliente busca estos platos y que el vocabulario ya no suena raro.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 103,
+   "nota": "§3 1/6: Mercado y competencia: US §2, §5.1 y §7 (precio del street taco $3.00-3.75 en ciudad media y ≈ $5 en gran ciudad = Kit estimate; franquicias como Del Taco no son el comprador); el cliente US entre taco truck, cadena fast casual y taqueria de barrio; sin datos de mercado sin fuente ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "Hay una diferencia curiosa entre quien come y quien abre. El oficio y el consumidor buscan mucho, pero el que va a abrir busca poco: «plan de negocio taquería», «cómo montar una taquería» y «abrir una taquería» tienen apenas 10 búsquedas al mes cada una en Google España. Es un público que decide con datos y que casi no encuentra nada hecho para su caso. Como referencia del tamaño del oficio, en México «taquería» tiene 135.000 búsquedas al mes; es solo un termómetro del interés, porque el marco legal y los precios de este plan son los de España.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 99,
+   "nota": "§3 2/6: Mercado y competencia: US §2, §5.1 y §7 (precio del street taco $3.00-3.75 en ciudad media y ≈ $5 en gran ciudad = Kit estimate; franquicias como Del Taco no son el comprador); el cliente US entre taco truck, cadena fast casual y taqueria de barrio; sin datos de mercado sin fuente ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "Sobre precios, estas son cartas leídas en octubre de 2026, con IVA y sin nombres. En Madrid, una taquería del centro cobra el pastor a 2,50 € (con tacos desde 1,50 €) y otra de barrio, el pastor y las carnitas a 4,50 € y la gringa a 9,90 €. En Valencia, 10,90 € los 4 tacos; en Bilbao, 5,50 € los 2; y en Barcelona, 16 € los 2 de autor. La lectura es que la taquería casual de ciudad cobra 2,50-3,50 € el taco, la de volumen 1-1,50 € y la de autor 7-8 €. El caso se pone en 3,00 €, dentro de la banda casual.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 109,
+   "nota": "§3 3/6: Mercado y competencia: US §2, §5.1 y §7 (precio del street taco $3.00-3.75 en ciudad media y ≈ $5 en gran ciudad = Kit estimate; franquicias como Del Taco no son el comprador); el cliente US entre taco truck, cadena fast casual y taqueria de barrio; sin datos de mercado sin fuente ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "Con el Mes 1 en enero y en el orden del calendario, el plan reparte la venta con la estacionalidad. Enero y agosto son los meses más flojos, un 7 % del año cada uno; diciembre es el pico, con un 9,6 %; septiembre, con la Independencia de México el 15 y el 16, y noviembre, con el Día de Muertos el 1 y el 2, salen algo más fuertes, y la terraza suma de abril a octubre. Entre el mejor mes y el peor hay un 37 % de diferencia: una taquería de ciudad es un negocio bastante plano. El Mes 1 en enero tiene su consecuencia: la rampa del arranque cae sobre enero y febrero, los meses más flojos, y por eso el fondo de maniobra cuenta. Si abres en otro mes, gira la fila de estacionalidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 139,
+   "nota": "§3 4/6: Mercado y competencia: US §2, §5.1 y §7 (precio del street taco $3.00-3.75 en ciudad media y ≈ $5 en gran ciudad = Kit estimate; franquicias como Del Taco no son el comprador); el cliente US entre taco truck, cadena fast casual y taqueria de barrio; sin datos de mercado sin fuente ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "El hueco es claro. Para «plan de negocio taquería», Google España no trae un solo resultado escrito para España ni en euros: hay planes en pesos mexicanos, trabajos de clase y foros. Nadie cuenta el rendimiento del trompo con números, la temperatura del pastor marinado y de la verdura cortada, la macha en el cartel de alérgenos, la tortilla comprada frente al nixtamal ni el importador de chiles como riesgo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 70,
+   "nota": "§3 5/6: Mercado y competencia: US §2, §5.1 y §7 (precio del street taco $3.00-3.75 en ciudad media y ≈ $5 en gran ciudad = Kit estimate; franquicias como Del Taco no son el comprador); el cliente US entre taco truck, cadena fast casual y taqueria de barrio; sin datos de mercado sin fuente ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "La demanda tiene riesgos que el plan nombra. La guerra de precios con las taquerías de volumen presiona el ticket. La plataforma, con su comisión del 30 %, se come el margen si la dejas crecer por encima del techo del plan. Y depender de un solo importador de chiles es un punto débil: si falla, fallan la salsa y el adobo. Por eso la carta es corta, la recogida en el local se empuja con precio y conviene tener un segundo proveedor a mano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 85,
+   "nota": "§3 6/6: Mercado y competencia: US §2, §5.1 y §7 (precio del street taco $3.00-3.75 en ciudad media y ≈ $5 en gran ciudad = Kit estimate; franquicias como Del Taco no son el comprador); el cliente US entre taco truck, cadena fast casual y taqueria de barrio; sin datos de mercado sin fuente ‖ FORMA: la sección §3 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "59": {
+   "estilo": "Heading 1",
+   "texto": "4. Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "Antes de fijar ningún precio, dibuja el mapa de quién compite contigo en tu barrio y en tu ciudad. En taquería la competencia llega de siete lados: las taquerías de volumen, las casuales de ciudad, las de autor, los restaurantes mexicanos de mesa con barra de tequilas, las cadenas de comida «mexicana» de centro comercial, las cocinas que solo venden por plataforma y el kebab, que comparte el asador vertical y el cliente de cena rápida.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 76,
+   "nota": "§4 1/6: Cliente y posicionamiento: comida y cena, take-out/pickup fuerte; el check de {{ticket}} (2.6 tacos + quesadilla o sides + 0.85 bebidas); el pickup directo (0 % de comisión) frente a marketplaces ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "Las cinco fuerzas de Porter se ven así en una taquería. El poder de los proveedores es moderado: la tortilla de maíz, la carne y la verdura se compran en varios sitios, pero los chiles dependen de pocos importadores y un fallo se nota enseguida en la salsa y en el adobo. El poder del cliente es alto, porque cambia de local o de plataforma con un clic y compara precios. La amenaza de nuevos entrantes es media: abrir una taquería parece fácil, pero con trompo la barrera es el local con salida de humos y el oficio de llevarlo bien. La amenaza de sustitutos es alta, porque el cliente puede comer un kebab, una hamburguesa o un burrito de cadena. La rivalidad es intensa, con la guerra de precios de las taquerías de volumen. La defensa es el trompo a la vista, la tortilla de maíz, la barra de salsas y una clientela de barrio que vuelve.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 158,
+   "nota": "§4 2/6: Cliente y posicionamiento: comida y cena, take-out/pickup fuerte; el check de {{ticket}} (2.6 tacos + quesadilla o sides + 0.85 bebidas); el pickup directo (0 % de comisión) frente a marketplaces ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "Los competidores directos son las taquerías de volumen, con el taco a 1-1,50 €, colas y rotación, y las casuales de ciudad, de 2,50 a 3,50 €. Detrás vienen las de autor, con producto ibérico, reservas y el taco a 7-8 €, y los restaurantes mexicanos de mesa con barra de tequilas. Del lado de los sustitutos están las cadenas de comida «mexicana» de centro comercial, las cocinas que solo venden por plataforma y el kebab. Tu ventaja es el trompo a la vista, la tortilla de maíz nixtamalizado, la barra de salsas, un precio casual, con la orden de 3 a 8,50 €, la orden «para armar» para llevar y una carta corta que se escandalla taco a taco.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 120,
+   "nota": "§4 3/6: Cliente y posicionamiento: comida y cena, take-out/pickup fuerte; el check de {{ticket}} (2.6 tacos + quesadilla o sides + 0.85 bebidas); el pickup directo (0 % de comisión) frente a marketplaces ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Las barreras de entrada son de cumplimiento y de caja. La apertura se tramita con licencia o declaración responsable según la ordenanza de tu ayuntamiento, y la salida de humos a cubierta es el filtro del local: con un trompo, si el edificio no la permite, el concepto no cabe. A eso se suman la terraza, con su tasa municipal, y la inversión en obra, cocina y campana extractora. Compruébalo todo en tu ayuntamiento antes de firmar el alquiler.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 79,
+   "nota": "§4 4/6: Cliente y posicionamiento: comida y cena, take-out/pickup fuerte; el check de {{ticket}} (2.6 tacos + quesadilla o sides + 0.85 bebidas); el pickup directo (0 % de comisión) frente a marketplaces ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Cuatro factores deciden si funciona. El primero es el producto: un pastor del trompo bien asado y constante cada día, una tortilla de maíz buena y una carta corta que se ejecuta rápido. El segundo es el sitio: una calle con paso cerca de una zona universitaria o de ocio, un local con salida de humos y una terraza que ayude de abril a octubre. El tercero es el control del coste: el escandallo de cada taco y el rendimiento del trompo, que se mide y no se supone. El cuarto es el equipo: un taquero jefe constante y una sala que cuida al cliente, porque la recomendación del vecino vende más que cualquier anuncio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 115,
+   "nota": "§4 5/6: Cliente y posicionamiento: comida y cena, take-out/pickup fuerte; el check de {{ticket}} (2.6 tacos + quesadilla o sides + 0.85 bebidas); el pickup directo (0 % de comisión) frente a marketplaces ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El DAFO de este concepto es claro. Fortalezas: trompo a la vista, tortilla de maíz, barra de salsas, precio casual y un margen bruto del 63,3 % en el primer año. Debilidades: un local con requisitos de humos, la dependencia de un importador de chiles y una caja más ajustada en los años de devolución del préstamo, con una holgura de 18,7 % en el segundo. Oportunidades: un oficio que se busca mucho, el público universitario y de ocio, la Independencia y el Día de Muertos y la orden «para armar» para llevar. Amenazas: la guerra de precios con las taquerías de volumen y la comisión de la plataforma. La defensa de cada punto débil está en el producto, la sala y la recogida en el local.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 127,
+   "nota": "§4 6/6: Cliente y posicionamiento: comida y cena, take-out/pickup fuerte; el check de {{ticket}} (2.6 tacos + quesadilla o sides + 0.85 bebidas); el pickup directo (0 % de comisión) frente a marketplaces ‖ FORMA: la sección §4 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "67": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "69": {
+   "estilo": "Normal",
+   "texto": "La estrategia de marketing empieza por el barrio y sigue el calendario. Se abre en enero, y conviene tener claro qué esperar: los curiosos llegan el primer mes y la clientela fija se construye en un trimestre. Por eso el plan no cuenta con un lleno desde el primer día, sino con una rampa. Durante esa rampa mandan tres cosas: el trompo a la vista, que se explica solo desde la calle, el taco al pastor a un precio casual y una atención que haga que quien entra vuelva. Todo lo demás, las redes, la ficha de Google, los combos y la tarjeta de sellos, sirve para que esa primera visita se repita.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 113,
+   "nota": "§5 1/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (el trompo vende en vídeo), fechas (Cinco de Mayo, fiesta sobre todo estadounidense; Taco Tuesday); marketplaces DoorDash/Uber Eats/Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; los tacos viajan mal: tortillas aparte, radio corto ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "Las redes sociales son el escaparate del trompo. Publica el montaje del cono, el corte del pastor y el taco de la semana. Funcionan mejor los vídeos cortos, con el trompo girando, la mano que corta y el taco que se arma delante de la cámara, que las fotos de carta. Enseña también la barra de salsas, qué pica cada una y cómo se pide, porque esa es la parte que más duda al que no conoce una taquería. No hace falta publicar todos los días: es mejor una frecuencia que puedas mantener que una ráfaga de apertura que se apaga.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 101,
+   "nota": "§5 2/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (el trompo vende en vídeo), fechas (Cinco de Mayo, fiesta sobre todo estadounidense; Taco Tuesday); marketplaces DoorDash/Uber Eats/Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; los tacos viajan mal: tortillas aparte, radio corto ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "La ficha de Google Business es tu mejor anuncio gratuito, porque casi todo el que busca una taquería cerca la consulta. Complétala con fotos del trompo, de la barra de salsas, de la sala y de la terraza, y mantén al día el horario de comidas y cenas, de martes a domingo, sin olvidar los lunes y los 12 días de enero en que cierras. Responde a cada reseña, también a las malas, con calma y con el nombre de la casa. Una respuesta cuidada se lee como un compromiso, y cuenta para quien aún no ha venido.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 98,
+   "nota": "§5 3/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (el trompo vende en vídeo), fechas (Cinco de Mayo, fiesta sobre todo estadounidense; Taco Tuesday); marketplaces DoorDash/Uber Eats/Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; los tacos viajan mal: tortillas aparte, radio corto ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La captación local empieza en la puerta. La zona universitaria y de ocio es tu cliente natural, y los combos de mediodía son la forma sencilla de ganarte a esa gente y llenar la comida entre semana. A lo largo del año, el calendario mexicano te da dos fechas con las que trabajar: la Independencia, el 15 y el 16 de septiembre, y el Día de Muertos, el 1 y el 2 de noviembre, sin inventarte más. Y para que vuelvan, algo sencillo: una tarjeta de sellos en papel o en el móvil. No hace falta prometer números de conversión que no tienes: empieza con la tarjeta, mide cuántas se completan y ajusta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 113,
+   "nota": "§5 4/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (el trompo vende en vídeo), fechas (Cinco de Mayo, fiesta sobre todo estadounidense; Taco Tuesday); marketplaces DoorDash/Uber Eats/Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; los tacos viajan mal: tortillas aparte, radio corto ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "Plataforma o reparto propio es una decisión de números. El plan vende por plataforma, con su reparto, un 12 % de las ventas (42.966 € al año) y paga una comisión del 30 % (12.890 € al año). Las guías del sector sitúan el plan básico de Uber Eats en torno al 30 % más IVA, Glovo entre el 15 y el 35 % según la zona y Just Eat entre el 25 y el 35 % con su reparto. Un repartidor propio de viernes a domingo (0,35 jornada, unos 8.800 € al año con la Seguridad Social) más moto, seguro y gasolina (unos 2.500 €) cuesta unos 11.300 € para esa venta: un 26 %, poco menos que la comisión, pero sin el escaparate de la plataforma y con riesgo laboral. Solo compensa con pedidos propios o una zona corta y densa, y siempre con contrato.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 147,
+   "nota": "§5 5/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (el trompo vende en vídeo), fechas (Cinco de Mayo, fiesta sobre todo estadounidense; Taco Tuesday); marketplaces DoorDash/Uber Eats/Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; los tacos viajan mal: tortillas aparte, radio corto ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "La recogida en el local no paga comisión, así que empújala con precio. Un descuento pequeño en el pedido que se recoge sale más barato que la comisión de la plataforma y trae al cliente a tu puerta, donde ve el trompo y puede pedir algo más. En el reparto hay además un problema de producto: la tortilla llega peor tras el viaje. La orden «para armar», con la tortilla y el relleno aparte, lo aguanta, y por eso el techo del plan es ese 12 % de las ventas por plataforma. No hay reparto propio en el plan: si algún día lo montas, que sea con los números de arriba delante.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 112,
+   "nota": "§5 6/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (el trompo vende en vídeo), fechas (Cinco de Mayo, fiesta sobre todo estadounidense; Taco Tuesday); marketplaces DoorDash/Uber Eats/Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; los tacos viajan mal: tortillas aparte, radio corto ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "El presupuesto de marketing del caso es de 3.500 € al año, sobre todo para fotografía, anuncios locales y el material de los combos. La marca, la web, las fotos y el lanzamiento van aparte, dentro de la inversión inicial (4.500 €). No lo gastes de golpe: reparte el presupuesto con el calendario y deja una parte para los meses más flojos, enero y agosto.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "taq_a",
+   "palabras": 65,
+   "nota": "§5 7/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (el trompo vende en vídeo), fechas (Cinco de Mayo, fiesta sobre todo estadounidense; Taco Tuesday); marketplaces DoorDash/Uber Eats/Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; los tacos viajan mal: tortillas aparte, radio corto ‖ FORMA: la sección §5 de la Pizza EN (business-plans-en-8/docx_en_piz_a.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "76": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "El trompo manda en esta taquería, y su rendimiento se calcula, no se supone. La calculadora del kit parte de un cono de 15 kg de carne cruda, con un 8 % de adobo, un 35 % de merma de cocción y goteo y un 5 % de recortes. Con eso rinde un 64,8 % y da 278 tacos de 35 g servidos, unos 18,5 por kg crudo; un puesto de Ciudad de México sirve unos 25 por kg. Son estimaciones del kit, porque ninguna fuente publica la merma de cocción del pastor: mídela tú. Pesa el cono crudo y el sobrante al cierre con la hoja de rendimiento del Kit de Tareas Recurrentes: Taquería Mexicana y lleva la media a la calculadora. Mide en el kit, recalcula en el plan. El taco al pastor de la carta cuesta 0,61 € con merma, un 22,5 % de food cost sobre su precio sin IVA (en carta, 3,00 € con IVA). Las carnitas, el suadero y la barbacoa rinden menos, por el confitado y la cocción larga.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 176,
+   "nota": "§6 1/5: Operaciones y equipo: trompos ({{inv_trompo}}), griddle y comal ({{inv_plancha}}), freidora y fogón ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}), salsa bar ({{inv_frio}}); el cono: marinado, montaje, cocción y corte (rendimiento ≈ 65 %, ≈ 6.9 tacos por lb cruda: Kit estimate, mídelo con la calculadora); salsa bar con TPHC y procedimiento escrito; tortilla comprada vs propia (equilibrio ≈ 660 al día); trompo de carbón = variante de combustible sólido (NFPA 96) ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "El equipo se compra con precio y fuente, no a ojo. El trompo de gas del caso cuesta 1.800 €; en catálogo hay modelos de 1.279 a 1.784 € sin IVA. La plancha y el comal suman 3.000 €. La freidora, el fogón de carnitas, el baño maría y el mantenedor de tortillas, 3.700 €. La campana extractora cuesta 1.500 €; el frío, con la mesa refrigerada de salsas, 4.500 €; y el conducto exclusivo a cubierta, 6.000 €. El trompo de gas cabe en una salida de humos normal, con instalación por empresa habilitada y revisión cada 5 años. El de carbón, igual que la parrilla de carne asada, pide además filtro de partículas en el conducto: es una variante sin Excel, con más inversión y con una ordenanza que la admita. Si te tienta por el sabor, compara las dos cuentas con presupuestos reales antes de firmar el local.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 151,
+   "nota": "§6 2/5: Operaciones y equipo: trompos ({{inv_trompo}}), griddle y comal ({{inv_plancha}}), freidora y fogón ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}), salsa bar ({{inv_frio}}); el cono: marinado, montaje, cocción y corte (rendimiento ≈ 65 %, ≈ 6.9 tacos por lb cruda: Kit estimate, mídelo con la calculadora); salsa bar con TPHC y procedimiento escrito; tortilla comprada vs propia (equilibrio ≈ 660 al día); trompo de carbón = variante de combustible sólido (NFPA 96) ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "Dimensiona la producción por el sábado, no por la media. El caso despacha unos 255 tacos al día más unas 25 gringas y quesadillas, y necesita unas 280 tortillas diarias. El pastor es un 45 % de los tacos, unos 115 al día, que son unos 6,2 kg de carne cruda diarios y 10-11 kg el sábado. Un asador de cuatro quemadores y 35 kg cubre el pico con un cono de 15-20 kg, así que el trompo rara vez es el límite. Pide presupuesto con instalación y plazo de entrega, porque el precio cambia según la marca, y piensa en el relevo: que el segundo taquero sepa montar y cortar el cono evita que todo dependa de una sola persona.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 121,
+   "nota": "§6 3/5: Operaciones y equipo: trompos ({{inv_trompo}}), griddle y comal ({{inv_plancha}}), freidora y fogón ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}), salsa bar ({{inv_frio}}); el cono: marinado, montaje, cocción y corte (rendimiento ≈ 65 %, ≈ 6.9 tacos por lb cruda: Kit estimate, mídelo con la calculadora); salsa bar con TPHC y procedimiento escrito; tortilla comprada vs propia (equilibrio ≈ 660 al día); trompo de carbón = variante de combustible sólido (NFPA 96) ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "Hay una alternativa que el plan financiero no modela, pero la hoja «Tortilla» de la calculadora sí: hacer tú la tortilla con nixtamal propio, es decir, maíz cocido con cal. El caso compra unas 280 tortillas al día, unas 84.000 al año, que cuestan unos 12.000 €. Hacerlas ahorra unos 0,10 € por tortilla, pero pide un tortillero de 0,75 jornada (unos 18.900 € al año) y entre 15.000 y 25.000 € de molino, cocedor y tortilladora; una tortilladora automática cuesta 7.808 $ en Estados Unidos y en España no hay precio publicado. El equilibrio sale en unas 697 tortillas al día, muy por encima de las del caso. Por eso el nixtamal es una decisión de producto, no de ahorro. La taquería-mezcalería con tortillería propia es otro negocio, el de la Guía Restaurante Mexicano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 135,
+   "nota": "§6 4/5: Operaciones y equipo: trompos ({{inv_trompo}}), griddle y comal ({{inv_plancha}}), freidora y fogón ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}), salsa bar ({{inv_frio}}); el cono: marinado, montaje, cocción y corte (rendimiento ≈ 65 %, ≈ 6.9 tacos por lb cruda: Kit estimate, mídelo con la calculadora); salsa bar con TPHC y procedimiento escrito; tortilla comprada vs propia (equilibrio ≈ 660 al día); trompo de carbón = variante de combustible sólido (NFPA 96) ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "El horario del caso va de martes a domingo, con comidas de 13:30 a 16:30 y cenas de 20:00 a 23:30; cierra los lunes y 12 días en enero. El pastor marinado, en cámara a 4 °C o menos; sonda al inicio y a mitad del servicio, y la hora límite del cono montado la fija tu APPCC. Salsas crudas, guacamole y verdura cortada, también a 4 °C o menos, y la barra de salsas con reglas: recipiente limpio en cada reposición, hora de puesta y de descarte y un utensilio por salsa. El importador de chiles secos y achiote tarda semanas: stock de seguridad y un segundo proveedor. Los suministros salen a 850 € al mes de media y el mantenimiento a 1.800 € al año, con la campana extractora y el conducto limpios al menos una vez al año.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 141,
+   "nota": "§6 5/5: Operaciones y equipo: trompos ({{inv_trompo}}), griddle y comal ({{inv_plancha}}), freidora y fogón ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}), salsa bar ({{inv_frio}}); el cono: marinado, montaje, cocción y corte (rendimiento ≈ 65 %, ≈ 6.9 tacos por lb cruda: Kit estimate, mídelo con la calculadora); salsa bar con TPHC y procedimiento escrito; tortilla comprada vs propia (equilibrio ≈ 660 al día); trompo de carbón = variante de combustible sólido (NFPA 96) ‖ FORMA: la sección §6 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "83": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El equipo del caso es corto y está pensado para que nadie sea imprescindible. Tú eres el taquero jefe: marinado, trompo, compras (el importador de chiles incluido) y gestión, con 1.900 € brutos al mes en 14 pagas. Como administrador de la SL cotizas en el régimen de autónomos: confírmalo con tu gestoría. A tu lado hay un segundo taquero de trompo, plancha y comal que sabe marinar y cortar, un cocinero de producción y salsas de 30 horas (carnitas, guisados, aguas frescas y mise en place), un encargado o encargada de sala, barra y mostrador todo el año, un camarero o camarera de cenas y fines de semana de 20 horas y un refuerzo de viernes a domingo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 119,
+   "nota": "§7 1/6: Organización y personal: Owner / head taquero & GM, taquero (trompo & griddle), prep cook, counter lead / cashier, counter & expo part-time W-2, dish & prep, relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "Con las suplencias de vacaciones y descansos, el cuadro suma 7 personas, equivalentes a 4,60 jornadas completas, y cuesta 129.521 € el primer año, el 36,2 % de las ventas. Es el mayor gasto del negocio, por encima del alquiler. El cuadrante contrata 8.464 horas frente a las 8.010 necesarias, una cobertura del 106 %: ajustada, sin mucho margen para bajas. El encargado o encargada lleva la caja, los pedidos para llevar, la tablet de las plataformas y la información de alérgenos; el refuerzo cubre barra, terraza y recogidas, sin reparto propio. El sábado por la noche hacen falta cinco personas y el cuadrante anual no lo ve: ponlo en el turno. La plantilla crece con personas, no con un porcentaje: 6.000 € de incorporaciones el segundo año y otro tanto el tercero.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 133,
+   "nota": "§7 2/6: Organización y personal: Owner / head taquero & GM, taquero (trompo & griddle), prep cook, counter lead / cashier, counter & expo part-time W-2, dish & prep, relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "El convenio aplicable es el provincial de hostelería. El art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería no nombra la palabra «taquería», pero incluye los restaurantes y el reparto de comidas preparadas. Todos cobran por encima del SMI de 2026 (1.221 € al mes en 14 pagas, Real Decreto 126/2026), en proporción a su jornada, y con contrato por escrito. Lleva el registro de jornada, que es obligatorio según el art. 34.9 del Estatuto de los Trabajadores. Tu gestoría te confirma qué convenio provincial aplica en tu caso.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 94,
+   "nota": "§7 3/6: Organización y personal: Owner / head taquero & GM, taquero (trompo & griddle), prep cook, counter lead / cashier, counter & expo part-time W-2, dish & prep, relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "Una advertencia: nunca sustituyas plantilla por autónomos que te facturan con tu horario. Eso es falso autónomo (art. 1.1 del Estatuto de los Trabajadores) y una sanción esperando. Y piensa en el taquero único: es un riesgo, no un ahorro. Una baja del único que domina el trompo y el comal cierra la taquería, así que el segundo taquero, que además sabe marinar y cortar, es la mejor cobertura que vas a pagar. Fórmalo desde el principio, no el día en que lo necesites, y reparte el marinado entre los dos para que la receta no viva en una sola cabeza.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 101,
+   "nota": "§7 4/6: Organización y personal: Owner / head taquero & GM, taquero (trompo & griddle), prep cook, counter lead / cashier, counter & expo part-time W-2, dish & prep, relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "Si algún día quieres un repartidor propio, tiene que ir con contrato laboral del convenio de hostelería. En el reparto que organiza una plataforma por algoritmo, la ley presume la relación laboral (disposición adicional 23.ª del Estatuto), y es la plataforma quien la asume. Por eso el caso vende por plataforma, con techo y sin reparto propio. La cuenta del plan de marketing lo deja claro: un repartidor de fin de semana, con moto, seguro y gasolina, se come casi lo mismo que la comisión (30 %), pero con el riesgo laboral a tu cargo y sin el escaparate de la plataforma. Antes de montarlo, calcula con tus pedidos reales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 110,
+   "nota": "§7 5/6: Organización y personal: Owner / head taquero & GM, taquero (trompo & griddle), prep cook, counter lead / cashier, counter & expo part-time W-2, dish & prep, relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "Forma al equipo antes de abrir. La formación de manipuladores la acredita la empresa (el antiguo carné de manipulador ya no existe) y debe cubrir las temperaturas del trompo y de las salsas, los alérgenos y el contacto cruzado. Aparte, necesitas formación del trompo: marinado, montaje del cono, corte y gramaje. Y no olvides la prevención de riesgos laborales: los cortes en el trompo, las quemaduras de la plancha y la freidora, el gas y el calor son los riesgos de esta cocina. Programa un repaso corto cuando entre alguien nuevo, porque lo que no se repite se olvida.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 99,
+   "nota": "§7 6/6: Organización y personal: Owner / head taquero & GM, taquero (trompo & griddle), prep cook, counter lead / cashier, counter & expo part-time W-2, dish & prep, relief cover ({{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "91": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "Para abrir necesitas 151.000 €. Son 100.350 € de obra, conducto, cocina, equipo y puesta en marcha, 2.900 € de fianza y 2.900 € de renta antes de abrir, que suman 106.150 € de compras sin el fondo, más 44.850 € de fondo de maniobra. El IVA de la inversión, 21.053 €, lo adelantas, así que la necesidad de caja llega a 172.053 €; cómo recuperarlo, confírmalo con tu gestoría. Se financia con 55.000 € propios y un préstamo de 118.000 € al 6 %, a 7 años con 1 año de carencia y una cuota anual de 23.997 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 100,
+   "nota": "§8 1/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del caso y su sensibilidad (cada punto de food cost mueve el resultado: dilo sin cifra inventada) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "La cuenta de resultados a tres años proyecta unas ventas de 358.050 €, 379.533 € y 394.714 €. El margen bruto del primer año es del 63,3 %, después de todos los costes variables: mercancía (el 26,8 % de las ventas), envases, plataforma, medios de pago y varios. El personal suma 129.521 €, el alquiler 17.400 € (un 4,9 % de las ventas) y la tasa de terraza y residuos 1.700 €, que es orientativa: pon la de tu ayuntamiento. El resultado de explotación antes de amortizaciones e intereses es de 54.325 €, un 15,2 %. El neto es de 32.563 €, 39.022 € y 37.900 €, un 9,1 %, un 10,3 % y un 9,6 %; el tercer año ya tributa al tipo general del Impuesto de Sociedades (25 %); si tu cifra de negocios no llega a 1 M €, el tuyo será más bajo: confírmalo con tu asesor. Con honestidad: el food cost de la comida es del 27,0 %, la media de toda la carta con su merma, no el del taco al pastor, y queda por debajo del 28-33 % de nuestra Guía Restaurante Mexicano. El plan estima la carne del pastor a 5,50 € el kilo y la tortilla de maíz a 0,14 €. En Makro, la paleta de cerdo Duroc sin hueso estaba a 6,99 € el kilo con IVA en octubre de 2026 y la tortilla, a unos 0,11-0,12 €: pon los precios de tu proveedor. Cada punto de food cost de la comida mueve unos 2.900 € al año, y con la comida al 30 % el neto del año 2 baja a un 8 % (cálculo del kit con este mismo Excel).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 282,
+   "nota": "§8 2/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del caso y su sensibilidad (cada punto de food cost mueve el resultado: dilo sin cifra inventada) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "El crecimiento es el que hace el Excel: suben los comensales un 6 % el segundo año y un 4 % el tercero, de 77 a 82 y 85 al día, con el mismo ticket de 15,50 € sin IVA, y la plantilla crece con personas (6.000 € al año), no con un porcentaje. En el IVA, la comida va al 10 % en sala, para llevar y a domicilio. De la bebida, la parte que sale del local con alcohol o con azúcares o edulcorantes añadidos, aguas frescas azucaradas incluidas, es el 7,5 % de la bebida, un 1,5 % de las ventas, y va al 21 %; el resto va al 10 % y el IVA medio de la bebida queda en 10,8 %. En las compras, el IVA soportado de la comida es 8,5 % y el de la bebida, 18,3 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 145,
+   "nota": "§8 3/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del caso y su sensibilidad (cada punto de food cost mueve el resultado: dilo sin cifra inventada) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "El equilibrio contable está en 64 comensales al día, con unos ingresos de 297.529 €, y deja una holgura del 20,3 %. El de caja está en 61 comensales al día, con una holgura del 26,3 %, pero esa cifra es la del primer año, el de carencia, en el que solo pagas intereses. Desde el segundo devuelves principal: la holgura baja al 18,7 %, con 69 comensales al día de equilibrio, y en el tercero queda en el 19,9 %, con 71. Esos son los años que hay que vigilar. Los 77 comensales equivalentes sobre 32 plazas dan 2,4 rotaciones al día, pero incluyen a quien se lleva los tacos o los recibe en casa y no ocupa mesa; en la sala ronda 1,8.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 125,
+   "nota": "§8 4/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del caso y su sensibilidad (cada punto de food cost mueve el resultado: dilo sin cifra inventada) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "La tesorería numera los meses del 1 al 12 y el Mes 1 es enero, en el orden del calendario. La rampa arranca al 75 % y llega al ritmo de crucero en 4 meses, en abril, así que cae sobre enero y febrero, los meses más flojos, y por eso el fondo de maniobra cuenta. El saldo mínimo, 50.781 €, es el del Mes 1, enero, y el año acaba en diciembre con 115.133 €. Las pagas extra salen en julio y diciembre, y el IVA se liquida por trimestres naturales. Si abres en otro mes, gira la fila de estacionalidad del Excel.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 104,
+   "nota": "§8 5/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del caso y su sensibilidad (cada punto de food cost mueve el resultado: dilo sin cifra inventada) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "El DSCR mínimo es de 2,20, con 2,29 en el segundo año y 2,20 en el tercero: el negocio cubre la deuda con margen, aunque el banco querrá ver tu plan de ventas. El payback antes de la deuda, en años, es «2,9» con el fondo de maniobra dentro y «2,0» sin él. No es una inversión de recuperación rápida, sino un negocio de oficio que te paga 1.900 € brutos al mes y devuelve el capital con paciencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 79,
+   "nota": "§8 6/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del caso y su sensibilidad (cada punto de food cost mueve el resultado: dilo sin cifra inventada) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "El escenario pesimista es un año flojo: 65 comensales al día a 14,75 € durante 295 días dan unas ventas de 282.831 € y un neto de −9.304 €, es decir, pérdidas. En el optimista, 88 comensales a 16,50 € durante 305 días dan unas ventas de 442.860 € y un neto de 78.195 €. La distancia entre uno y otro separa un buen año de uno malo. Y recuerda: el Excel manda, y si cambias una celda verde este documento se queda atrás.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 84,
+   "nota": "§8 7/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del caso y su sensibilidad (cada punto de food cost mueve el resultado: dilo sin cifra inventada) ‖ FORMA: la sección §8 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "100": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Puedes abrir como SL unipersonal, con un capital desde 1 € (Ley 18/2022), o como autónomo. En el IAE (Real Decreto Legislativo 1175/1990), la sala con comedor y servicio de mesa va en el grupo 671, «servicios en restaurantes», por categoría; de barra y mostrador sin comedor separado, el grupo 673 (cafés y bares con comida); y la venta para llevar y a domicilio, en el epígrafe 677.9. Confírmalo con tu gestoría, que también hace el alta censal. Con una cifra de negocio inferior a 1 millón de euros estás exento de cuota (art. 82.1.c de la Ley de Haciendas Locales).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 101,
+   "nota": "§9 1/7: el marco US por niveles (federal, estatal, condado, ciudad); LLC + EIN; sales tax permit; business license; zoning check ANTES de firmar; plan review (Food Code 8-201.11) + building permit → certificate of occupancy; fire marshal; sales tax {{sales_tax}} de ejemplo, un solo tipo («some states tax to-go food differently», sin cifra) ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "Los restaurantes no figuran en el anexo de la Ley 12/2012, así que la apertura va por licencia o declaración responsable, según la ordenanza de tu ayuntamiento, con una consulta urbanística previa sobre uso, salida de humos, potencia y aforo. La terraza es ocupación de la vía pública y va siempre aparte; la tasa del Excel, sustitúyela por la de tu ayuntamiento. Los humos los decide la ordenanza: la cocina de un restaurante no es actividad potencialmente contaminadora de la atmósfera (RD 100/2011, actualizado por el RD 1042/2017). Como ejemplo, la de Madrid (Ordenanza 4/2021) exige un conducto exclusivo a cubierta que supere en 1 m la altura del edificio propio y la de cualquier otro en 15 m de radio (art. 12 y anexo I), limpieza anual y, con carbón, filtrado de partículas (art. 23). En tu ciudad, pide la ordenanza.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 142,
+   "nota": "§9 2/7: campana y fuego: Type I hood + fire suppression (UL 300) sobre griddle, freidora y vertical broilers de gas; makeup air; grease interceptor; trompo o parrilla de carbón = combustible sólido (NFPA 96: escape separado, arrestachispas, ceniza diaria) → variante, no el caso; «ask the fire marshal in writing» ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "104": {
+   "estilo": "Normal",
+   "texto": "El gas del trompo, la plancha y el comal lo instala una empresa habilitada, con puesta en marcha certificada e inspección o revisión cada 5 años (RD 919/2006). En sanidad presentas una declaración responsable ante el registro sanitario de tu comunidad (RD 1021/2022); el RGSEAA solo aplica si suministras a otros negocios por encima de lo que permite el art. 3 del RD 1021/2022, por ejemplo si vendes tortilla a otras taquerías. Tu APPCC se apoya en la flexibilidad del art. 20 del RD 1021/2022. El trompo no tiene norma propia: las guías piden sonda al inicio y a mitad del servicio, y la hora límite del cono la fija tu APPCC.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 112,
+   "nota": "§9 3/7: health permit + inspección previa; Certified Food Protection Manager (2-102.12) + food handler cards según estado; FDA Food Code 2022 (cada estado adopta su edición): frío ≤ 41 °F, caliente ≥ 135 °F (carnitas, birria y guisados en el steam table); TPHC (3-501.19: 4 h / 6 h) con procedimiento escrito para la salsa bar; pico de gallo y salsas con tomate cortado = TCS; guacamole: «treat it as TCS; ask your regulator» ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "Lo que se sirve sin envasar informa de los 14 alérgenos (RD 126/2015), por escrito o de palabra si queda registrado en el establecimiento, y en la venta a distancia, antes de comprar (Reglamento (UE) 1169/2011, art. 14). En la taquería tocan la salsa macha (aceite con chiles secos y semillas: cacahuete o sésamo), la tortilla de harina de la gringa y la cerveza (gluten) y los quesos y la crema (leche). «Sin gluten» solo con 20 mg/kg o menos (Reglamento de Ejecución (UE) 828/2014): con comal, freidora o pinzas compartidos con la tortilla de harina, no lo prometas. Según el art. 8 de la Ley 1/2025, el cliente puede llevarse lo que no consuma sin coste, salvo el envase de plástico de un solo uso, y debes avisarlo de forma visible, mejor en la carta. El art. 55 de la Ley 7/2022 pide cobrar aparte ese envase en el tique; las bandejas de cartón sin recubrimiento de plástico no lo son y, las de aluminio, consúltalo con tu proveedor.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 170,
+   "nota": "§9 4/7: al pastor en el trompo: la temperatura de cocción y el tiempo máximo en el broiler los pone el CONDADO (guías de condado: 145 °F en unas, 155 °F en otras; pollo 165 °F; cortar solo lo que ha llegado a temperatura; sonda de respuesta rápida); el plan NO da una cifra única: «get your health department's vertical broiler rules in writing (cook temp, max time on the broiler, leftover cone)»; reheating a 165 °F ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "El art. 4.1 del RD 1021/2022 fija los preparados de carne (el pastor marinado lo es) a 4 °C o menos, la carne picada a 2 °C o menos y la de ungulados a 7 °C o menos; también las frutas y vegetales cortados listos para consumo (cebolla, cilantro y piña picados, aguacate cortado), a 4 °C o menos. Lo que no está en esa tabla, como quesos o tortilla envasada, va a la temperatura de su etiqueta (art. 4.2), y el transporte, en medios que la mantengan (art. 4.3). El pescado crudo (aguachile, ceviche) exige –20 °C durante 24 horas como mínimo o –35 °C durante 15 horas (art. 8.1), o pescado ya tratado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 115,
+   "nota": "§9 5/7: alérgenos: 9 mayores US incluido el sésamo (FASTER Act); salsa macha = peanuts + sesame; moles = tree nuts, peanuts, sesame; flour tortillas = wheat; queso y crema = milk; cerveza = wheat/barley; etiquetas en la salsa bar; «gluten-free»: 21 CFR 101.91 (< 20 ppm); comal y freidora compartidos con la de harina impiden prometerlo: «corn tortillas are naturally gluten-free; ask about our fryer and griddle» ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "Las comidas preparadas (carnitas, guisados, salsas) siguen el art. 30 del RD 1086/2020, en la redacción del RD 1021/2022. En caliente, a 63 °C o más; refrigeradas, a 4 °C o menos si su vida útil pasa de 24 horas y a 8 °C o menos si es menor. El enfriamiento va de 60 °C a 10 °C en menos de dos horas, y el recalentado, a por lo menos 74 °C durante quince segundos en el centro del alimento, en el término de una hora desde que sale del frigorífico. Anota las lecturas en tu APPCC.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 97,
+   "nota": "§9 6/7: beer & wine license (agencia estatal + aprobación local; coste y plazos muy distintos: «apply early», NO prometer licencia); liquor liability en el seguro ({{seguros_anual}} con general liability, property y workers' comp); personal: W-2 por horas (nada de 1099 para taqueros o cajeros), I-9, W-4, salario mínimo estatal (federal $7.25/h, DOL), propinas del equipo; música ASCAP/BMI/SESAC; packaging ordinances locales ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "En el IVA (Ley 37/1992, art. 91), en sala todo va al 10 %. Para llevar y a domicilio, la comida va al 10 %, pero el alcohol (cerveza, mezcal, tequila) y las aguas frescas y los refrescos con azúcares o edulcorantes añadidos que salen del local van al 21 %. En las compras, los quesos y las frutas, verduras y hortalizas naturales (aguacate, tomate, cebolla, cilantro, lima, piña) van al 4 %. El alcohol para llevar tiene los horarios de tu comunidad autónoma y nunca a menores. En personal aplican el convenio de hostelería, el SMI de 2026 y el Estatuto de los Trabajadores. Factura con software Veri*factu: consulta con tu gestoría la fecha que te aplica. El marco es el español: en México y el resto de Latinoamérica los trámites son otros. Lo demás, compruébalo con tu gestoría, tu ayuntamiento o el inspector.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 145,
+   "nota": "§9 7/7: venta desde casa: las cottage food laws cubren productos de bajo riesgo según estado; la carne y las salsas frescas son TCS: este plan es de local con permiso («check your state»); y, como ÚLTIMA frase o frases, la NOTA UK: registro del food business en el council 28 días antes, FHRS 0-5, VAT 20 % en comida caliente y en sala (los tacos calientes para llevar también), 14 alérgenos (cacahuete y sésamo en la macha; apio y mostaza según receta; sulfitos), premises + personal licence para el alcohol ‖ FORMA: la sección §9 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "109": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "La conclusión es que una taquería de este tamaño es viable, pero exigente. Con 77 comensales al día a 15,50 € por comensal, sin IVA, el primer año deja un neto de 32.563 € y una holgura de caja del 26,3 %. Pero esa holgura baja al 18,7 % en el segundo año y al 19,9 % en el tercero, cuando ya devuelves el principal. El DSCR mínimo es de 2,20, el saldo mínimo de caja es de 50.781 € en enero y el payback antes de la deuda, en años, es «2,9». No es un negocio para ir con el capital justo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 103,
+   "nota": "§10 1/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup, hood/gas/permits, kitchen & health, staff & allergens, menu/brand/delivery, opening & 90 days); la beer & wine license se pide al firmar el local; las reglas del trompo de tu condado por escrito ANTES de comprar; cierre con el Excel, la calculadora de coste por taco y rendimiento del trompo y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "El primer riesgo, y el más caro, es firmar un local sin salida de humos a cubierta. Sin ella no hay trompo, plancha ni comal: consúltalo con el ayuntamiento y con un técnico antes de firmar el alquiler. El segundo es montar el trompo sin protocolo: un cono sin hora de montaje ni hora límite, carne marinada por encima de 4 °C o capas cortadas antes de estar hechas. Escribe el protocolo y mide la temperatura con sonda. El tercero es no medir el rendimiento del trompo: la merma y el sobrante se comen entre 3 y 5 puntos de margen. Pesa el cono crudo y el sobrante cada día, mide en el kit y recalcula en el plan con tus datos reales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 123,
+   "nota": "§10 2/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup, hood/gas/permits, kitchen & health, staff & allergens, menu/brand/delivery, opening & 90 days); la beer & wine license se pide al firmar el local; las reglas del trompo de tu condado por escrito ANTES de comprar; cierre con el Excel, la calculadora de coste por taco y rendimiento del trompo y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "El cuarto es la barra de salsas sin reglas: sin recipiente limpio en cada reposición, sin hora de puesta y de descarte y sin un utensilio por salsa, es el sitio donde más fácil se estropea todo. El quinto, prometer «sin gluten» con el comal y la freidora compartidos con la tortilla de harina: no se promete. El sexto, cobrar al 10 % las aguas frescas azucaradas y la cerveza para llevar, cuando van al 21 %. Es un error de tique que se repite cientos de veces al año, y se arregla con la configuración de la caja. Repasa con tu gestoría qué línea de la carta tributa a cada tipo antes de abrir.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 115,
+   "nota": "§10 3/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup, hood/gas/permits, kitchen & health, staff & allergens, menu/brand/delivery, opening & 90 days); la beer & wine license se pide al firmar el local; las reglas del trompo de tu condado por escrito ANTES de comprar; cierre con el Excel, la calculadora de coste por taco y rendimiento del trompo y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "El séptimo es depender de un solo importador de chiles: tarda semanas, así que ten stock de seguridad y un segundo proveedor. El octavo, hacer nixtamal por ahorrar: por debajo de unas 697 tortillas al día no compensa. El noveno, abrirte a la plataforma sin cuentas: entre la comisión, las promociones y el envase, la caja se come el margen, y por eso el caso pone un techo del 12 % de las ventas. Y hay un riesgo que decide el plan: la caja de los años 2 y 3. Con 18,7 % y 19,9 % de holgura, no sobra margen. Mide los comensales cada mes frente a los 69 comensales al día que necesitas de equilibrio en el segundo año, y ten presente que el escenario pesimista cierra con un neto de −9.304 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 135,
+   "nota": "§10 4/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup, hood/gas/permits, kitchen & health, staff & allergens, menu/brand/delivery, opening & 90 days); la beer & wine license se pide al firmar el local; las reglas del trompo de tu condado por escrito ANTES de comprar; cierre con el Excel, la calculadora de coste por taco y rendimiento del trompo y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "El décimo es el taquero único: una baja cierra la taquería, así que forma pronto a un segundo que sepa marinar, montar el cono y cortar. El undécimo, vender la taquería como tex-mex: no lo es, y con ese cartel atraes a quien busca burritos y nachos cuando tú vendes tacos, totopos y salsas de verdad. Ninguno es caro de evitar si se ve a tiempo y todos salen caros si se descubren después de abrir. Revisa estos puntos con tu gestoría y con tu equipo antes de abrir, y vuelve a ellos a los tres meses, cuando el trabajo diario se acumula y lo importante se queda para luego.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 110,
+   "nota": "§10 5/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup, hood/gas/permits, kitchen & health, staff & allergens, menu/brand/delivery, opening & 90 days); la beer & wine license se pide al firmar el local; las reglas del trompo de tu condado por escrito ANTES de comprar; cierre con el Excel, la calculadora de coste por taco y rendimiento del trompo y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "El plan de acción tiene seis fases y 80 tareas en el checklist que acompaña al kit. La fase 1 es Constitución y fiscalidad, con 12 tareas. La fase 2, Local, salida de humos, gas, licencia y terraza, con 15. La fase 3, Cocina, trompo y registro sanitario, con 14. La fase 4, Personal, formación, prevención y alérgenos, con 13. La fase 5, Carta, marca, delivery y proveedores, con 13. Y la fase 6, Apertura y primeros 90 días, con otras 13. Sigue el orden: la consulta urbanística sobre la salida de humos va antes de firmar el alquiler. Marca cada tarea al cerrarla, y si una se retrasa, mira qué otras dependen de ella antes de mover la fecha de apertura.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 122,
+   "nota": "§10 6/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup, hood/gas/permits, kitchen & health, staff & allergens, menu/brand/delivery, opening & 90 days); la beer & wine license se pide al firmar el local; las reglas del trompo de tu condado por escrito ANTES de comprar; cierre con el Excel, la calculadora de coste por taco y rendimiento del trompo y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "El siguiente paso es completar el Excel con tus cifras: tu alquiler real, tu ticket, tus comensales, tu préstamo, tu plantilla y tu calendario de apertura. Cambia solo las celdas verdes; este documento recoge los números del caso, y los tuyos los marca tu hoja de cálculo. Después mide tu trompo con el Kit de Tareas y escandalla tu carta entera con la calculadora, no solo el taco al pastor. Con tus datos delante, vuelve a esta sección y comprueba qué te queda de caja en los años 2 y 3 si el año es el pesimista. Si la caja aguanta, tienes un plan sólido para llevar al banco; si no, ajusta la inversión, la plantilla o el calendario antes de firmar nada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "taq_b",
+   "palabras": 123,
+   "nota": "§10 7/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup, hood/gas/permits, kitchen & health, staff & allergens, menu/brand/delivery, opening & 90 days); la beer & wine license se pide al firmar el local; las reglas del trompo de tu condado por escrito ANTES de comprar; cierre con el Excel, la calculadora de coste por taco y rendimiento del trompo y el checklist ‖ FORMA: la sección §10 de la Pizza EN (business-plans-en-8/docx_en_piz_b.json) da el registro y la longitud; su vocabulario de pizza (oven, dough, Neapolitan, servers…) y sus cifras NO valen"
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "aichef.pro\ninfo@aichef.pro"
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Tareas Recurrentes: Taquería Mexicana",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost Kit Pro · HACCP Food Safety Kit Pro"
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Restaurant Checklists Kit Pro"
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "→ Pack Plantillas APPCC",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Truck Business Plan Kit (for a taco truck)"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}

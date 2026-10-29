@@ -1,0 +1,2417 @@
+{
+ "tanda": "GTAQ-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-12/textos_en/GTAQ-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 119,
+ "n_palabras": 3522,
+ "pistas": {
+  "P01": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P02": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P03": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P04": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P05": "US §9: el libro dice «covers» y «seat turns»; nunca «customers» para el volumen diario",
+  "P06": "patio (permiso de patio/sidewalk café de la ciudad)",
+  "P07": "US §8: caso US = 115 covers/día (≈ 60 en sala, 30 plazas + patio de 12 abr-oct, + ≈ 38 take-out/pickup + ≈ 17 equivalentes de marketplace) × $17.50 (sin sales tax ni propina) × 308 días; counter service; beer & wine; sin cifras del ES ni historia de versiones; media del año 1 con la rampa de apertura; compáralo con el paso de gente de tu calle y con tus pedidos de prueba",
+  "P08": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P09": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P10": "US §6.2/§9: «trompo» en carta y prosa, «vertical broiler» en equipo; la temperatura de cocción la pone el CONDADO (145 o 155 °F; pollo 165 °F): nunca una cifra única; «get your county's vertical broiler rules in writing»",
+  "P11": "US §9: gringa · campechano · suadero · carnitas · birria · cochinita pibil · order of 3 / plate",
+  "P12": "US §8: caso US = 115 covers/día (≈ 60 en sala, 30 plazas + patio de 12 abr-oct, + ≈ 38 take-out/pickup + ≈ 17 equivalentes de marketplace) × $17.50 (sin sales tax ni propina) × 308 días; counter service; beer & wine; sin cifras del ES ni historia de versiones; check de $17.50 = 2.6 tacos × $4.00 + 0.2 quesadilla/gringa × $11.50 + 0.25 chips & guac/sides × $7.00 + 0.85 bebidas × $3.60 (Kit estimate, US §8); street taco $3.00-3.75 en ciudad media; el precio con impuesto lo calcula la fila \"Menu price incl. sales tax\"",
+  "P13": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P14": "US §8: caso US = 115 covers/día (≈ 60 en sala, 30 plazas + patio de 12 abr-oct, + ≈ 38 take-out/pickup + ≈ 17 equivalentes de marketplace) × $17.50 (sin sales tax ni propina) × 308 días; counter service; beer & wine; sin cifras del ES ni historia de versiones; 308 días = cierra los lunes (52) + Thanksgiving, Christmas, New Year's Day, July 4 y un día de inventario",
+  "P15": "US §6.1: salsa bar; tomate cortado = TCS (pico de gallo, salsas frescas); guacamole «treat it as TCS; ask your regulator»; TPHC con SOP escrito",
+  "P16": "US §8/§9: tortillas de maíz de 6 in compradas (360 por caja); la propia con masa harina se paga a ≈ 660 al día; nixtamal = variante; «masa», nunca «dough»",
+  "P17": "US §5.2: food cost 27 % (taco 25 %, quesadilla 25 %, chips & guac 28 %, birria 30 %, + 1.5 puntos de merma; Kit estimate); la calculadora del kit da el coste de cada taco y el rendimiento del trompo",
+  "P18": "US §6.7: «beer & wine license» (estado + local; «apply early», sin prometerla) · liquor liability · el caso US NO vende mezcal ni tequila",
+  "P19": "US §9: aguas frescas · horchata · jamaica (hibiscus)",
+  "P20": "US §8: beverage cost 22 % (aguas frescas hechas en casa, refrescos, Mexican beer & wine)",
+  "P21": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P22": "sin equivalente US: packaging ordinances locales; TPHC y cold holding ≤ 41 °F",
+  "P23": "clamshells, foil, salsa cups; local packaging ordinances",
+  "P24": "US §8: disposables 4 % (clamshells, foil, salsa cups, bags; packaging ordinances locales)",
+  "P25": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P26": "own drivers = W-2 + hired & non-owned auto insurance (check your state)",
+  "P27": "DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2)",
+  "P28": "US §8: 15 % de las ventas por marketplaces (DoorDash, Uber Eats, Grubhub); el pickup directo por teléfono o web no paga comisión",
+  "P29": "offer letters, I-9, W-4, state minimum wage, W-2 por horas (sin convenio; sin «digital obligatorio»)",
+  "P30": "US §5.2: 25 % = plan Plus de DoorDash / Uber Eats (Basic 15 %, Premier 30 %; + 6-10 % en pickup por la app); compruébalo en tu contrato",
+  "P31": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P32": "US §6.3: Type I hood + fire suppression (UL 300) + makeup air sobre griddle, freidora y vertical broilers; «ask the fire marshal in writing»",
+  "P33": "Glosario: barra de salsas → «salsa bar»; mostrador → «counter»",
+  "P34": "US §8: $2,800/mes = 1,200 sq ft × ~$28/sq ft/año (Kit estimate, editable)",
+  "P35": "licensed gas contractor; gas lines in the build-out",
+  "P36": "US §8: $1,300/mes (gas de los broilers y la plancha, frío y campana)",
+  "P37": "US §8: $6,000/año = general liability + liquor liability (beer & wine) + property + workers' comp (Kit estimate)",
+  "P38": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P39": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P40": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P41": "«POS that reports sales tax» (sin Veri*factu)",
+  "P42": "US §1: 30 plazas en sala; el patio de 12 (abril-octubre) no cuenta en el aforo",
+  "P43": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P44": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P45": "grease interceptor · used cooking oil pickup",
+  "P46": "«zoning check before signing» · «building permit + certificate of occupancy» · business license + sales tax permit",
+  "P47": "US §4: plan review y permit fees; la beer & wine license cambia mucho de un estado a otro (pregunta a tu agencia estatal; sin cifra); sin licencia ni declaración responsable españolas",
+  "P48": "US §8: local de segunda generación (ya fue restaurante) de 1,200 sq ft; incluye signage & facade ($4,000 de las 19 partidas de US §8)",
+  "P49": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P50": "US §6.3: trompo o parrilla de carbón = combustible sólido (NFPA 96: escape separado, arrestachispas, ceniza diaria): variante, no el caso",
+  "P51": "US §4: Type I hood de 10-12 ft + supresión UL 300 + makeup air (rango $5,000-$25,000; el caso, $22,000) sobre griddle, freidora y vertical broilers de gas; NADA de la ordenanza de Madrid",
+  "P52": "US §8: parte de «electrical, HVAC, plumbing, gas lines & grease interceptor» ($20,000 en total); pregunta el servicio eléctrico disponible ANTES de firmar",
+  "P53": "US §4: grease interceptor $3,500-$7,500 (REST §3) + HVAC; la otra parte de los $20,000 de US §8",
+  "P54": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P55": "US §4: dos trompos de gas (pastor + segundo cono o reserva): Avantco VB203 $999, Visvardis DG8A $2,844 (webstaurantstore); conos de unas 30 lb; carbón = variante de combustible sólido",
+  "P56": "US §4: flat-top griddle 36 in mid-range (Vulcan VCRG36-M1 $2,501; Star 636MF $2,129) + comal",
+  "P57": "US §4: freidora para los chips, fogón para carnitas y guisados, steam table de 4 pozos (ServIt EST-4WS ≈ $1,119, resumen) y tortilla warmers",
+  "P58": "OJO: la nota ES habla de la campana, que en el caso US va en la fila 9: aquí escribe la del walk-in cooler 6×8 (Norlake Kold Locker $12,808, webstaurantstore): la carne marinada en volumen",
+  "P59": "US §4: prep table refrigerada + salsa bar + congelador (salsa bar sin precio leído: Kit estimate)",
+  "P60": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P61": "required public notices (health permit, beer & wine license, labor law posters)",
+  "P62": "US §6.5: 9 major allergens incl. sesame (UK 14); salsa macha = peanuts + sesame; flour tortillas = wheat",
+  "P63": "US §4: hotel pans, licuadoras, sondas, básculas + prensas manuales de tortilla (Choice 7½ in $17.49); sin molcajetes como partida",
+  "P64": "OJO: la nota ES habla de tirador de cerveza y cafetera: aquí, beer cooler y dispensadores de aguas frescas (Kit estimate); sin cafetera",
+  "P65": "US §1: 30 plazas en sala y el patio de 12 de temporada (sin plazas de barra)",
+  "P66": "Nota de la partida del ejemplo US (rótulo fijado de la col. A en \"fijos_en\"); sin marcas ni normas españolas: solo rangos con fuente de US §4 o ninguno",
+  "P67": "US §8: carnes, chiles, tortillas, bebida (beer & wine: sin mezcal) y envases para llevar",
+  "P68": "US §8: tacos, quesadillas, plates y sides: ≈ 52 % en sala, ≈ 33 % pickup propio y 15 % por marketplaces; un solo sales tax en el ejemplo",
+  "P69": "US §6.4: plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan",
+  "P70": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P71": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P72": "Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P73": "US: el techo (B25 = 5) incluye a quien se lleva los tacos o los recibe a domicilio, que no ocupa plaza (casi la mitad de los covers del caso): ≈ 3 rotaciones de sala en counter service (comida y cena, estancias de 20-30 min) + ≈ 2 de take-out/delivery por plaza. Es el techo físico del local, no un objetivo",
+  "P74": "«LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P75": "SPEC §4.1 línea 4 (Bar): sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; un solo tipo en el ejemplo (B39 = B40 = 8 %)",
+  "P76": "F1-camino §6: Mes 1 = ENERO, en el orden del calendario (enero-febrero flojos; mayo, el pico, con Cinco de Mayo y el patio)",
+  "P77": "El Word cita las cifras de este Excel (si cambias el libro, manda el Excel); la calculadora de coste por taco y rendimiento del trompo va aparte y su food cost por taco NO se copia en \"0. Assumptions\" (allí va el food cost medio de toda la carta)",
+  "P78": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P79": "fila → «Month 1 of the plan» · «January» · «Plan decision» · nota: orden del calendario; enero-febrero flojos, mayo el pico (Cinco de Mayo y el patio); si abres en otro mes, gira la fila de \"12-Month Cash Flow\"",
+  "P80": "fila → «Street taco on the menu» · «$3.00-3.75 in mid-size cities; about $5 in big cities» · «Kit estimate (menu scan, Oct 2026)» · nota: este plan lo pone a $4.00 (plate de 3 tacos + rice & beans ≈ $14)",
+  "P81": "fila → «Al pastor taco food cost» · el % que da la calculadora del kit para el taco al pastor (si no, «about 25% of its price excl. sales tax») · «Kit estimate (Taco Cost & Trompo Yield Calculator)» · nota: 2 tortillas de 6 in + 1.5 oz servidas + guarnición + salsa + 5 % de merma; carne y tortilla con precios estimados por el kit: pon los de tu distribuidor",
+  "P82": "fila → «Trompo yield» · «about 7 tacos per raw lb (30 lb cone ≈ 208 tacos)» · «Kit estimate (65% yield, 1.5 oz served)» · nota: mide el tuyo con la calculadora del kit (cono crudo, sobrante, servido)",
+  "P83": "fila → (A39 fijado: «Vertical broiler (trompo)») · «$999-$2,844 each» · «webstaurantstore.com (Avantco VB203, Visvardis DG8A), read Oct 2026» · nota: el caso cuenta dos trompos de gas; de carbón = variante de combustible sólido (NFPA 96)",
+  "P84": "fila → «Delivery marketplace commission» · «DoorDash 15 / 25 / 30% + 6% pickup; Uber Eats 15-30%» · «merchants.ubereats.com; DoorDash tiers (Oct 2026)» · nota: este plan, 25 % sobre el 15 % de las ventas; el pickup directo no paga comisión",
+  "P85": "fila (sustituye el IVA de los tacos) → «Sales tax» · «8% (example: state + local)» · «Kit example: look up your state and city rate» · nota: un solo tipo en el libro; algunos estados gravan distinto la comida para llevar",
+  "P86": "fila (sustituye el RD español) → «Hot and cold holding» · «≥ 135 °F hot, ≤ 41 °F cold; reheat to 165 °F within 2 h; TPHC up to 4 h with a written procedure» · «FDA Food Code 2022 (3-501.16, 3-403.11, 3-501.19)» · nota: cada estado adopta su edición; la salsa bar con TPHC necesita el procedimiento escrito",
+  "P87": "US §6.1: frío ≤ 41 °F, caliente ≥ 135 °F, recalentado 165 °F en 2 h; TPHC 4 h / 6 h con procedimiento escrito (la métrica solo entre paréntesis)",
+  "P88": "fila (sustituye el SMI) → «Minimum wage» · «federal $7.25/h + your state» · «U.S. Department of Labor (dol.gov)» · nota: este plan presupuesta ≥ $15/h; teclea el suelo de tu estado en \"0. Assumptions\"",
+  "P89": "fila → «Labor cost / sales» · «25-35%» · «UpMenu (upmenu.com)» · nota: counter service lo deja en la parte baja; dos taqueros (el dueño y un segundo) son seguridad, no un lujo",
+  "P90": "fila → «Rent / sales» · «≤ 10%» · «Kit estimate» · nota: el umbral del semáforo del P&L; un local con Type I hood ya instalado ahorra obra",
+  "P91": "fila (sustituye el convenio) → «Al pastor cook temperature» · «set by your county: 145 °F in some, 155 °F in others (165 °F for chicken)» · «County vertical broiler guidance (summaries)» · nota: pídela por escrito a tu health department con el tiempo máximo en el broiler y qué hacer con el cono sobrante; nunca una cifra única"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state/local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "taquería": "taco shop (nombre, H1, ficheros) · taqueria (sin tilde; prosa y subtítulo)",
+  "trompo / asador vertical": "trompo (carta y prosa) · vertical broiler (equipo) · vertical spit; «cone» o «stack» para la carne",
+  "taco al pastor": "al pastor (tacos al pastor; «pastor» solo en jerga de cocina)",
+  "taquero/a": "taquero (head taquero); en la plantilla «line cook (trompo & griddle)»",
+  "taco de calle, doble tortilla": "street tacos (small corn tortillas, onion & cilantro)",
+  "con todo": "with everything / onion and cilantro",
+  "orden de 3": "order of 3 tacos · plate / combo plate (with rice & beans)",
+  "gringa · quesadilla": "gringa (flour tortilla, al pastor & cheese) · quesadilla",
+  "carnitas · suadero · campechano · cochinita · barbacoa · birria": "carnitas · suadero · campechano · cochinita pibil · barbacoa · birria, quesabirria, consomé",
+  "barra de salsas": "salsa bar",
+  "agua fresca · horchata · jamaica": "aguas frescas · horchata · jamaica (hibiscus) · tamarindo",
+  "salsa macha": "salsa macha (chile oil with peanuts/sesame) — siempre con el alérgeno",
+  "nixtamal · masa · harina de maíz nixtamalizado": "nixtamal / nixtamalization · masa · masa harina",
+  "comal · plancha": "comal · flat-top griddle («plancha» no)",
+  "tortilladora · prensa": "tortilla machine · tortilla press (manual/electric)",
+  "tortillería": "tortilleria (sin tilde)",
+  "totopos": "tortilla chips · chips & guac · chips & salsa",
+  "mostrador / sin servicio de mesa": "counter service · fast casual · QSR",
+  "cubierto / comensal · ticket medio": "covers · average check (excl. sales tax and tip)",
+  "escandallo por taco · rendimiento": "taco costing / food cost per taco · yield (trompo yield, tacos per pound)",
+  "plataforma · para llevar": "third-party delivery marketplace · take-out / to-go / pickup",
+  "manipulador de alimentos": "food handler card · Certified Food Protection Manager (CFPM)",
+  "campana · supresión": "Type I hood · fire suppression system (UL 300)",
+  "control por tiempo": "time as a public health control (TPHC)",
+  "agotado": "86'd",
+  "cerveza mexicana, michelada": "Mexican beer · michelada (solo con beer & wine license)",
+  "preparado de carne ≤ 4 °C · 63 °C · 74 °C": "cold holding ≤ 41 °F · 135 °F · 165 °F",
+  "ordenanza de humos": "Type I hood + local fire/mechanical code",
+  "licencia de apertura": "business license + certificate of occupancy",
+  "IVA · fianza": "sales tax · deposit",
+  "autónomo / SL": "LLC"
+ },
+ "pestanas_es_en": {
+  "TAQP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "TAQC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local, humos y gas": "Phase 2 - Hood, Gas & Permits",
+   "F3 - Cocina, trompo y sanidad": "Phase 3 - Kitchen & Health",
+   "F4 - Personal y alérgenos": "Phase 4 - Staff & Allergens",
+   "F5 - Carta, marca y delivery": "Phase 5 - Menu, Brand, Delivery",
+   "F6 - Apertura y 90 días": "Phase 6 - Opening & 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US TAQUERIA BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del «Plan de Negocio: Taquería» de AI Chef Pro.": "This file is part of the Taco Shop Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — TAQUERÍA": "TACO SHOP STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Taquería": "HOW TO USE THIS WORKBOOK — Taco Shop Financial Projections",
+  "PLAN DE NEGOCIO: TAQUERÍA": "TACO SHOP BUSINESS PLAN: COUNTER-SERVICE TAQUERIA",
+  "Inversión inicial estimada — taquería con trompo, barra de salsas, 32 plazas y terraza": "Estimated Startup Costs — counter-service taco shop with trompo and salsa bar, 30 seats + patio",
+  "Ajusta las cifras a tu proyecto: son las de un caso tipo en una ciudad media, sin traspaso. Pon tus presupuestos reales en las celdas de importe.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — taquería con trompo, barra de salsas y para llevar": "Base case — counter-service taco shop with trompo, salsa bar and take-out",
+  "Punto de equilibrio mensual y diario — taquería con trompo": "Monthly and daily break-even — taco shop with trompo",
+  "FASE 2: LOCAL, SALIDA DE HUMOS, GAS, LICENCIA Y TERRAZA (semanas 3-14)": "PHASE 2: SITE, HOOD, GAS, PERMITS & PATIO (weeks 3-14)",
+  "Proyecto técnico de actividad y de salida de humos, y dirección de obra": "Architect, MEP & hood drawings, plan review & permit fees",
+  "Obra y acondicionamiento del local, rótulo y fachada": "Build-out (second-generation space, 1,200 sq ft), signage & facade",
+  "Conducto de extracción exclusivo hasta cubierta": "Type I hood, UL 300 fire suppression & makeup air",
+  "Instalación eléctrica, cuadro y boletín": "Electrical service, panel & gas lines",
+  "Fontanería, separador de grasas, climatización e instalación de gas": "Plumbing, grease interceptor & HVAC",
+  "Trompo: asador vertical de gas de cuatro quemadores": "Vertical broilers (trompos) × 2",
+  "Plancha de acero a gas y comal": "Flat-top griddle (36 in) & comal",
+  "Freidora, fogón de carnitas, baño maría y mantenedor de tortillas": "Fryer, stock-pot range, steam table & tortilla warmers",
+  "Campana extractora con motor y filtros": "Walk-in cooler (6×8)",
+  "Frío: armarios, congelador y mesa refrigerada de salsas": "Refrigerated prep table, salsa bar & freezer",
+  "Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías": "3-comp sink, dish machine, hand sinks, shelving & stainless",
+  "Utillaje y menaje: licuadora, molcajetes, sondas y prensa de tortillas": "Smallwares & tortilla presses (hotel pans, blenders, probe thermometers, scales)",
+  "Barra: botellero frío, tirador de cerveza y cafetera": "Beverage station (beer cooler, agua fresca dispensers)",
+  "Mobiliario de sala, barra y terraza": "Furniture (30 seats) & patio (12)",
+  "TPV con Veri*factu, datáfonos, impresora de comandas y tablet": "POS, online ordering, kiosk & delivery tablets",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal & food safety plan",
+  "Marca, web, fotos y lanzamiento": "Branding, website, photos & launch",
+  "Stock inicial: carnes, chiles, tortillas, bebida y envases": "Opening inventory",
+  "Ventas de taquería y cocina (sala, para llevar y a domicilio)": "Food sales (tacos, quesadillas, plates & sides: dine-in, take-out & delivery)",
+  "Ventas de bebida (aguas frescas, cerveza, mezcal y tequila, refrescos y agua)": "Beverage sales (aguas frescas, sodas, Mexican beer & wine)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property + workers' comp)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento de la campana extractora, el gas y el frío": "Maintenance (hood cleaning, broilers, refrigeration)",
+  "Software, TPV, teléfono e internet": "Software, POS & online ordering",
+  "Limpieza, lavandería, EPI y análisis de autocontrol": "Cleaning, linens & uniforms",
+  "Tasa de terraza y gestión de residuos (pon las de tu ayuntamiento)": "Waste, grease & used-oil hauling + permit renewals",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales, vigilancia de la salud y formación": "Food safety & staff training (CFPM, allergens, OSHA)",
+  "Titular — taquero/a jefe: marinado, trompo, compras y gestión": "Owner / head taquero & GM",
+  "Taquero/a de trompo, plancha y comal": "Taquero / line cook (trompo & griddle)",
+  "Cocinero/a de producción y salsas": "Prep cook (marinades, carnitas, salsas, aguas frescas)",
+  "Encargado/a de sala, barra y mostrador": "Counter lead / cashier",
+  "Camarero/a de cenas y fines de semana": "Counter & expo (part-time W-2)",
+  "Refuerzo de viernes a domingo: barra, terraza y recogidas": "Dish & prep (part-time W-2)",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations + days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Comensales equivalentes al día, media del año: unos 57 en sala (la terraza incluida de abril a octubre) y unos 20 de para llevar y domicilio, que son los pedidos (unos 15 al día de unos 20,50 € sin IVA) divididos por el ticket. Un sábado, unos 125 con los pedidos; un martes, unos 55. Contrástalo con el paso de gente de tu calle un viernes por la noche y un martes a mediodía",
+   "donde": [
+    "TAQP · 0. Supuestos!C4"
+   ],
+   "fila": "Comensales/día (media del año 1)",
+   "valor_us": 115,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA, por comensal: una orden de 3 tacos (8,50 € con IVA), medio taco suelto, algo de gringa o quesadilla, algún entrante, 1,1 bebidas y algún postre suman unos 17,40 € con IVA en sala; el caso se queda en 15,50 € sin IVA por los combos de mediodía. El taco al pastor del caso cuesta 3,00 € con IVA, dentro de la franja de 2,50-3,50 € de las taquerías casuales de ciudad (cartas leídas en octubre de 2026). El precio con IVA está en la fila «PVP equivalente con IVA» de abajo",
+   "donde": [
+    "TAQP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 17.5,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P08",
+    "P09",
+    "P04",
+    "P05",
+    "P10",
+    "P11",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "365 días menos los 52 lunes de cierre, 12 días de cierre en enero (mantenimiento y vacaciones) y el 25 de diciembre. Es el MISMO dato para la cuenta de resultados, el punto de equilibrio, los escenarios y las horas de personal",
+   "donde": [
+    "TAQP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 308,
+   "pistas": [
+    "P13",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "Clientela que repite y más pedidos para llevar el segundo año. Se aplica a los comensales con el mismo ticket; el personal NO sube con este porcentaje: sale de la hoja Personal",
+   "donde": [
+    "TAQP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.06,
+   "pistas": [
+    "P08",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "Sobre el año 2. Conservador: el techo lo ponen el trompo, la plancha y las 32 plazas los viernes y los sábados por la noche",
+   "donde": [
+    "TAQP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "valor_us": 0.04,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Materia prima de la comida sobre sus ventas: el taco al pastor sale a un 22,5 % (un 24 % en la orden de 3), las carnitas, el suadero y la barbacoa a un 26-30 %, la gringa a un 23 % y el guacamole a un 22-28 % según el aguacate: un 25 % de media, más 1,5 puntos de merma (el sobrante del trompo y las salsas crudas que se tiran) y medio punto de prudencia, porque la carne y la tortilla son precios estimados por el kit. Escandalla cada taco con la calculadora del pack",
+   "donde": [
+    "TAQP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.27,
+   "pistas": [
+    "P04",
+    "P10",
+    "P15",
+    "P16",
+    "P11",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "Aguas frescas al 12 %, cerveza mexicana al 33 %, mezcal y tequila al 28 % y refrescos y agua al 30 % de su precio de venta, en una mezcla de 30/45/10/15. Si la cervecera te cede el equipo de tiraje, pide el precio del barril por escrito",
+   "donde": [
+    "TAQP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.22,
+   "pistas": [
+    "P18",
+    "P19",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Envases para llevar y a domicilio, tarrinas de salsa, papel, servilletas, guantes y los envases para que el cliente se lleve lo que no consuma (Ley 1/2025, art. 8). El envase de plástico de un solo uso se cobra aparte en el tique (Ley 7/2022, art. 55)",
+   "donde": [
+    "TAQP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.04,
+   "pistas": [
+    "P01",
+    "P08",
+    "P21",
+    "P15",
+    "P22",
+    "P23",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "Ventas por PLATAFORMA con su reparto (Glovo, Just Eat, Uber Eats) sobre el total. Lo que se recoge en el local NO paga comisión y no va aquí. La tortilla llega peor tras el viaje: la orden «para armar» lo aguanta, pero no subas de aquí sin probarlo",
+   "donde": [
+    "TAQP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0.15,
+   "pistas": [
+    "P09",
+    "P25",
+    "P26",
+    "P27",
+    "P16",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0030",
+   "es": "Comisión de la plataforma con su reparto sobre lo que vende ese canal: el plan básico de Uber Eats ronda el 30 % más IVA, Glovo va del 15 al 35 % según la zona y Just Eat, del 25 al 35 % con su reparto. Compruébala en tu contrato. Si repartes tú, pon 0 y suma el repartidor, con contrato laboral, a la hoja Personal",
+   "donde": [
+    "TAQP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25,
+   "pistas": [
+    "P01",
+    "P25",
+    "P29",
+    "P26",
+    "P27",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "Local de 80 m² con salida de humos a cubierta posible (es el filtro del local): sala de 45 m² con 24 plazas en mesa y 8 en barra, cocina de 20 m² a la vista con el trompo, la plancha y el comal, aseos (uno adaptado) y almacén, en una calle con paso cerca de una zona universitaria o de ocio de una ciudad media, sin traspaso: unos 18 € el m². El peso sobre las ventas lo calcula el propio libro en la fila «Alquiler / Ventas» del P&L",
+   "donde": [
+    "TAQP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 2800,
+   "pistas": [
+    "P02",
+    "P31",
+    "P09",
+    "P10",
+    "P32",
+    "P33",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0044",
+   "es": "Dos meses de renta, lo habitual en un contrato de local de negocio: compruébalo con tu abogado",
+   "donde": [
+    "TAQP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del alquiler (meses)",
+   "valor_us": 2,
+   "pistas": [
+    "P29"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Luz (frío, extracción, climatización y cafetera), el gas del trompo, la plancha, el comal y los fogones, y el agua. Pide el histórico del local",
+   "donde": [
+    "TAQP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 1300,
+   "pistas": [
+    "P10",
+    "P32",
+    "P35",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil de al menos 300.000 € y multirriesgo con incendio y avería del frío. Dile a la aseguradora que trabajas con trompo, plancha y freidora a gas: cambia la prima y las condiciones",
+   "donde": [
+    "TAQP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 6000,
+   "pistas": [
+    "P02",
+    "P10",
+    "P35",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual. Pide oferta a dos entidades y a una línea ICO antes de fijarlo; el frío y el equipo de cocina se pueden pagar con leasing o renting: compáralo",
+   "donde": [
+    "TAQP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P01",
+    "P38",
+    "P21",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0061",
+   "es": "El primer año sólo intereses: obra, conducto de humos y cocina antes de facturar. Desde el segundo año se devuelve el principal: mira la holgura de caja de ese año en el Punto de Equilibrio",
+   "donde": [
+    "TAQP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0,
+   "pistas": [
+    "P21",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0063",
+   "es": "Tres meses de costes fijos: el colchón para la rampa del arranque, que con el Mes 1 en enero cae sobre los meses más flojos del año (enero y febrero)",
+   "donde": [
+    "TAQP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)",
+   "valor_us": 3
+  },
+  {
+   "id": "c0072",
+   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por la bebida que sale para llevar o a domicilio (es una entrega de bienes). El alcohol servido en sala va al reducido, como fija la línea de bebida del P&L. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. En las compras, el libro manda al general la parte de la bebida que declara la celda «Bebida que compras al 21 %» de esta hoja: la cerveza, el mezcal, el tequila y los refrescos con azúcares o edulcorantes añadidos, cuya factura va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
+   "donde": [
+    "TAQP · 0. Supuestos!C40"
+   ],
+   "fila": "IVA repercutido/soportado general",
+   "valor_us": 0.08,
+   "pistas": [
+    "P01",
+    "P21",
+    "P09",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Obra, conducto de extracción hasta cubierta, instalación eléctrica, fontanería, gas, climatización, rótulo y fachada. Coeficientes de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades: confírmalo con tu asesor",
+   "donde": [
+    "TAQP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P01",
+    "P39",
+    "P32",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Trompo, plancha y comal, freidora, campana extractora, frío, lavavajillas, barra, mobiliario y TPV: un 10 % anual, dentro del coeficiente máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades para la maquinaria (12 %) y para el mobiliario (10 %). Confírmalo con tu asesor",
+   "donde": [
+    "TAQP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P01",
+    "P39",
+    "P40",
+    "P10",
+    "P41",
+    "P32",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0088",
+   "es": "Plazas interiores: 24 en mesa y 8 en barra. La terraza suma 16 plazas de abril a octubre, con su autorización municipal aparte, y quien se lleva los tacos o los recibe en casa no ocupa mesa: por eso la rotación de la fila de arriba es más alta que la real de tu sala",
+   "donde": [
+    "TAQP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas, sin la terraza)",
+   "valor_us": 30,
+   "pistas": [
+    "P01",
+    "P05",
+    "P06",
+    "P33",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0090",
+   "es": "Una taquería que abre trae curiosos el primer mes, pero la clientela fija tarda un trimestre: el Mes 1 (enero) factura un 75 % de lo que facturará a los cuatro meses. Con 100 % se elimina la rampa",
+   "donde": [
+    "TAQP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "valor_us": 0.75,
+   "pistas": [
+    "P43",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0092",
+   "es": "Cuatro meses hasta el ritmo de crucero: de enero a abril, para llegar a la terraza de primavera con clientela",
+   "donde": [
+    "TAQP · 0. Supuestos!C53"
+   ],
+   "fila": "Meses hasta alcanzar el régimen de crucero",
+   "valor_us": 4,
+   "pistas": [
+    "P08",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0094",
+   "es": "Dos meses de renta antes de abrir: la obra, el conducto de humos y la licencia. Si el banco te da el préstamo al empezar la obra, súmale los intereses de esos meses, que este libro no cuenta, y ten en cuenta que la carencia corre desde la firma",
+   "donde": [
+    "TAQP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler ANTES de abrir (obra y licencias)",
+   "valor_us": 2,
+   "pistas": [
+    "P01",
+    "P38",
+    "P44",
+    "P21",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0096",
+   "es": "Colchón sobre la obra y las instalaciones del local, que es donde aparecen las sorpresas (el conducto hasta cubierta, la instalación de gas, el separador de grasas). Un banco no financia una reforma sin él",
+   "donde": [
+    "TAQP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "valor_us": 0.1,
+   "pistas": [
+    "P38",
+    "P32",
+    "P35",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0099",
+   "es": "Media ponderada: la sala y lo que se recoge en el local cobran al momento y la plataforma liquida cada 7-15 días lo que vende por ella (un 12 % de las ventas)",
+   "donde": [
+    "TAQP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 2,
+   "pistas": [
+    "P27"
+   ]
+  },
+  {
+   "id": "c0101",
+   "es": "Plazo de pago a los proveedores de carne, tortilla, verdura y bebida: lo que te financian. Es lo primero que se pierde si te retrasas en un pago",
+   "donde": [
+    "TAQP · 0. Supuestos!C59"
+   ],
+   "fila": "Días medios de pago a proveedor",
+   "valor_us": 14,
+   "pistas": [
+    "P16"
+   ]
+  },
+  {
+   "id": "c0103",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de verano: julio es el Mes 7, porque el Mes 1 del plan es enero",
+   "donde": [
+    "TAQP · 0. Supuestos!C60"
+   ],
+   "fila": "Mes de la paga extra de verano",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0105",
+   "es": "Mes de la TESORERÍA en el que sale la paga extra de Navidad: diciembre es el Mes 12, porque el Mes 1 del plan es enero",
+   "donde": [
+    "TAQP · 0. Supuestos!C61"
+   ],
+   "fila": "Mes de la paga extra de Navidad",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0118",
+   "es": "Las taquerías van al convenio PROVINCIAL de hostelería: el art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería no nombra la palabra «taquería», pero incluye los restaurantes y el reparto de comidas preparadas. Copia aquí el salario base del grupo más bajo de la tabla de TU provincia. Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "TAQP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P01",
+    "P13",
+    "P21",
+    "P09",
+    "P29",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0145",
+   "es": "Proyecto de la actividad y del conducto de humos, memoria para la licencia o la declaración responsable y certificado final de obra",
+   "donde": [
+    "TAQP · Inversión Inicial!D7"
+   ],
+   "fila": "Proyecto técnico de actividad y de salida de humos, y dirección de obra",
+   "valor_us": 12000,
+   "pistas": [
+    "P46",
+    "P32",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0148",
+   "es": "Cocina alicatada, suelo antideslizante, aseos (uno adaptado), falsos techos y aislamiento acústico, más el rótulo y la fachada (unos 2.500 €). Estimación del kit: pide dos presupuestos",
+   "donde": [
+    "TAQP · Inversión Inicial!D8"
+   ],
+   "fila": "Obra y acondicionamiento del local, rótulo y fachada",
+   "valor_us": 42000,
+   "pistas": [
+    "P02",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0150",
+   "es": "Conducto exclusivo hasta la cubierta para el trompo, la plancha, el comal y la freidora: Madrid pide superar en 1 m lo que haya en 15 m (Ordenanza 4/2021). Con trompo o parrilla de carbón, además, filtro de partículas. Ningún fabricante da precio por metro: pide oferta con tu proyecto",
+   "donde": [
+    "TAQP · Inversión Inicial!D9"
+   ],
+   "fila": "Conducto de extracción exclusivo hasta cubierta",
+   "valor_us": 22000,
+   "pistas": [
+    "P49",
+    "P10",
+    "P50",
+    "P32",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0152",
+   "es": "Frío, extracción, climatización, lavavajillas y cafetera. Pregunta la potencia disponible ANTES de firmar: una acometida nueva tarda",
+   "donde": [
+    "TAQP · Inversión Inicial!D10"
+   ],
+   "fila": "Instalación eléctrica, cuadro y boletín",
+   "valor_us": 9000,
+   "pistas": [
+    "P32",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0154",
+   "es": "Agua fría y caliente en la cocina, desagües con separador de grasas, climatización de la sala y la instalación de gas del trompo, la plancha, el comal y los fogones por empresa instaladora habilitada, con su certificado (RD 919/2006)",
+   "donde": [
+    "TAQP · Inversión Inicial!D11"
+   ],
+   "fila": "Fontanería, separador de grasas, climatización e instalación de gas",
+   "valor_us": 11000,
+   "pistas": [
+    "P01",
+    "P10",
+    "P35",
+    "P45",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0156",
+   "es": "Para conos de 30-35 kg, con bandeja, cuchillos de corte y base para la piña. En el catálogo de un distribuidor de hostelería, de 1.279 a 1.784 € sin IVA (octubre de 2026)",
+   "donde": [
+    "TAQP · Inversión Inicial!D12"
+   ],
+   "fila": "Trompo: asador vertical de gas de cuatro quemadores",
+   "valor_us": 4000,
+   "pistas": [
+    "P01",
+    "P02",
+    "P54",
+    "P03",
+    "P10",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0158",
+   "es": "Plancha lisa de acero para las carnes y comal para calentar la tortilla. Una plancha a gas de 40 cm ronda los 1.040 €; la de 80 cm a gas no tiene precio de referencia: estimación del kit, pide oferta",
+   "donde": [
+    "TAQP · Inversión Inicial!D13"
+   ],
+   "fila": "Plancha de acero a gas y comal",
+   "valor_us": 4000,
+   "pistas": [
+    "P02",
+    "P35",
+    "P16",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0160",
+   "es": "Freidora para los totopos y los tacos dorados, fogón para las carnitas y los guisados, baño maría GN y mantenedor de tortillas. Estimación del kit",
+   "donde": [
+    "TAQP · Inversión Inicial!D14"
+   ],
+   "fila": "Freidora, fogón de carnitas, baño maría y mantenedor de tortillas",
+   "valor_us": 6500,
+   "pistas": [
+    "P16",
+    "P11",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0162",
+   "es": "Campana extractora de 2,5 m con motor y filtros de grasa sobre el trompo, la plancha, el comal y la freidora (una de 1,5-2 m ronda los 815 € sin IVA)",
+   "donde": [
+    "TAQP · Inversión Inicial!D15"
+   ],
+   "fila": "Campana extractora con motor y filtros",
+   "valor_us": 12800,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P10",
+    "P32",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0164",
+   "es": "Armarios refrigerados (unos 900 € sin IVA el de 400 l), congelador y mesa refrigerada de granito para la barra de salsas y las guarniciones (de 1.180 a 1.950 € sin IVA)",
+   "donde": [
+    "TAQP · Inversión Inicial!D16"
+   ],
+   "fila": "Frío: armarios, congelador y mesa refrigerada de salsas",
+   "valor_us": 6500,
+   "pistas": [
+    "P01",
+    "P02",
+    "P54",
+    "P03",
+    "P15",
+    "P33",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0168",
+   "es": "Licuadora industrial para las salsas, molcajetes, termómetros sonda, básculas, recipientes GN, vajilla, cestas, vitroleros para las aguas frescas, una prensa de tortillas (unos 48 € con IVA) y la cartelería de alérgenos",
+   "donde": [
+    "TAQP · Inversión Inicial!D18"
+   ],
+   "fila": "Utillaje y menaje: licuadora, molcajetes, sondas y prensa de tortillas",
+   "valor_us": 6500,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P60",
+    "P15",
+    "P61",
+    "P62",
+    "P16",
+    "P19",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0170",
+   "es": "Botellero frío, tirador de cerveza y una cafetera pequeña. Si la cervecera cede el equipo de tiraje, esta partida baja",
+   "donde": [
+    "TAQP · Inversión Inicial!D19"
+   ],
+   "fila": "Barra: botellero frío, tirador de cerveza y cafetera",
+   "valor_us": 2000,
+   "pistas": [
+    "P18",
+    "P64"
+   ]
+  },
+  {
+   "id": "c0172",
+   "es": "Mesas, sillas y taburetes para 24 plazas en mesa y 8 en barra, y 16 en la terraza de temporada",
+   "donde": [
+    "TAQP · Inversión Inicial!D20"
+   ],
+   "fila": "Mobiliario de sala, barra y terraza",
+   "valor_us": 10000,
+   "pistas": [
+    "P06",
+    "P33",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0179",
+   "es": "Identidad, web con la carta, sesión de fotos y campaña de apertura",
+   "donde": [
+    "TAQP · Inversión Inicial!D23"
+   ],
+   "fila": "Marca, web, fotos y lanzamiento",
+   "valor_us": 5500,
+   "pistas": [
+    "P38",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0181",
+   "es": "Carnes, chiles secos y producto mexicano importado (pídelo con su plazo de entrega: tarda semanas), tortillas, bebida, mezcal y envases para llevar",
+   "donde": [
+    "TAQP · Inversión Inicial!D24"
+   ],
+   "fila": "Stock inicial: carnes, chiles, tortillas, bebida y envases",
+   "valor_us": 5000,
+   "pistas": [
+    "P18",
+    "P23",
+    "P16",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0215",
+   "es": "Tacos, gringas y quesadillas, entrantes y postres: en sala unos 74 % de las ventas, para llevar unos 14 % y por plataforma un 12 %. Todo al 10 % de IVA, se coma en la mesa o salga del local (art. 91.Uno.1.1.º y 2.2.º de la Ley 37/1992)",
+   "donde": [
+    "TAQP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de taquería y cocina (sala, para llevar y a domicilio)",
+   "pistas": [
+    "P01",
+    "P21",
+    "P27",
+    "P11",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0231",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Los dos meses de renta previos a la apertura están en la hoja de Inversión y NO se cuentan dos veces",
+   "donde": [
+    "TAQP · PyG 3 Años!F22"
+   ],
+   "fila": "Alquiler del local"
+  },
+  {
+   "id": "c0241",
+   "es": "Limpieza de la campana extractora y del conducto al menos una vez al año (Madrid lo exige en su Ordenanza 4/2021, art. 23; mira la de tu ayuntamiento), revisión del gas y del trompo y el frigorista",
+   "donde": [
+    "TAQP · PyG 3 Años!F27"
+   ],
+   "fila": "Mantenimiento de la campana extractora, el gas y el frío",
+   "valor_us": 3000,
+   "pistas": [
+    "P01",
+    "P49",
+    "P10",
+    "P32",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Ficha de Google Business, redes sociales, fotos y las fechas mexicanas (la Independencia en septiembre, el Día de Muertos en noviembre); la campaña de apertura va en la inversión",
+   "donde": [
+    "TAQP · PyG 3 Años!F28"
+   ],
+   "fila": "Marketing y publicidad",
+   "valor_us": 6000
+  },
+  {
+   "id": "c0245",
+   "es": "Cuota del TPV con Veri*factu, la tablet de las plataformas, teléfono e internet",
+   "donde": [
+    "TAQP · PyG 3 Años!F29"
+   ],
+   "fila": "Software, TPV, teléfono e internet",
+   "valor_us": 3600,
+   "pistas": [
+    "P01",
+    "P40",
+    "P41",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0247",
+   "es": "Productos de limpieza, lavado de uniformes y paños, guantes y los análisis de autocontrol que fije tu APPCC",
+   "donde": [
+    "TAQP · PyG 3 Años!F30"
+   ],
+   "fila": "Limpieza, lavandería, EPI y análisis de autocontrol",
+   "valor_us": 2000,
+   "pistas": [
+    "P01",
+    "P21",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0249",
+   "es": "La ocupación de la vía pública con 4 mesas de abril a octubre (unos 1.200 € de ejemplo: cada ayuntamiento tiene su ordenanza fiscal y este plan no ha leído ninguna) y la tasa de basuras, el cartón y el aceite y la grasa usados con gestor autorizado (unos 500 €). Pon las de tu ayuntamiento",
+   "donde": [
+    "TAQP · PyG 3 Años!F31"
+   ],
+   "fila": "Tasa de terraza y gestión de residuos (pon las de tu ayuntamiento)",
+   "valor_us": 3500,
+   "pistas": [
+    "P01",
+    "P02",
+    "P70",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0255",
+   "es": "El plan de prevención es obligatorio (Ley 31/1995): cortes en el trompo, quemaduras de la plancha y la freidora, gas y calor; los reconocimientos médicos de la plantilla y la formación en higiene y alérgenos",
+   "donde": [
+    "TAQP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales, vigilancia de la salud y formación",
+   "valor_us": 800,
+   "pistas": [
+    "P01",
+    "P60",
+    "P10",
+    "P35",
+    "P72",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0279",
+   "es": "Suelo del margen tras TODOS los costes variables (mercancía, envases, plataforma, medios de pago y varios). Sólo con la mercancía, una taquería deja en torno a un 73 %. Estimación del kit",
+   "donde": [
+    "TAQP · PyG 3 Años!F50"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.6,
+   "pistas": [
+    "P27",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0282",
+   "es": "Techo de la materia prima sobre ventas: el taco al pastor sale a un 22,5 % y las carnitas, el suadero, la barbacoa y el aguacate la suben. Estimación del kit",
+   "donde": [
+    "TAQP · PyG 3 Años!F52"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.3,
+   "pistas": [
+    "P04",
+    "P10",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0284",
+   "es": "Techo del personal sobre ventas con dos taqueros y una sala de dos servicios. Estimación del kit",
+   "donde": [
+    "TAQP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.36
+  },
+  {
+   "id": "c0288",
+   "es": "Suelo de resultado neto a régimen para que el plan se sostenga. Una taquería bien llevada deja en torno a un 9 %. Estimación del kit",
+   "donde": [
+    "TAQP · PyG 3 Años!F55"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05
+  },
+  {
+   "id": "c0322",
+   "es": "Servicios completos por plaza y día que puedes hacer con comidas, cenas y un segundo turno de cena el sábado (estancias de 35-45 minutos). Es el techo físico del local, no un objetivo",
+   "donde": [
+    "TAQP · Punto Equilibrio!E25"
+   ],
+   "fila": "Rotaciones al día que da el local como máximo",
+   "valor_us": 5,
+   "pistas": [
+    "P73"
+   ]
+  },
+  {
+   "id": "c0363",
+   "es": "Marina y monta el trompo, lleva el corte en el turno fuerte, compra (el importador de chiles y producto mexicano incluido) y gestiona. Como administrador de la SL cotiza en el régimen de autónomos: el libro le imputa el 33 % de Seguridad Social sobre 14 pagas como si fuera nómina, que es el lado prudente. Confirma con tu gestoría la cuota real y si te aplica la reducida de inicio",
+   "donde": [
+    "TAQP · Personal!J5"
+   ],
+   "fila": "Titular — taquero/a jefe: marinado, trompo, compras y gestión",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 4500
+   },
+   "pistas": [
+    "P01",
+    "P13",
+    "P71",
+    "P10",
+    "P74",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0365",
+   "es": "Corta el trompo, lleva la plancha y el comal y sabe marinar con el titular. Es inversión, no gasto: si sólo el titular sabe marinar y cortar el trompo, una baja cierra la taquería",
+   "donde": [
+    "TAQP · Personal!J6"
+   ],
+   "fila": "Taquero/a de trompo, plancha y comal",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 3293
+   },
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0367",
+   "es": "Carnitas y guisados, salsas, aguas frescas, mise en place y friegue, 30 horas a la semana",
+   "donde": [
+    "TAQP · Personal!J7"
+   ],
+   "fila": "Cocinero/a de producción y salsas",
+   "valor_us": {
+    "B": 1,
+    "C": 0.75,
+    "D": 2340
+   },
+   "pistas": [
+    "P15",
+    "P19",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0369",
+   "es": "Todo el año: sala, barra, caja, pedidos para llevar, la tablet de las plataformas y la información de alérgenos",
+   "donde": [
+    "TAQP · Personal!J8"
+   ],
+   "fila": "Encargado/a de sala, barra y mostrador",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 2773
+   },
+   "pistas": [
+    "P60",
+    "P72",
+    "P62",
+    "P27",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0371",
+   "es": "20 horas a la semana: las cenas y el fin de semana, cuando la sala se llena",
+   "donde": [
+    "TAQP · Personal!J9"
+   ],
+   "fila": "Camarero/a de cenas y fines de semana",
+   "valor_us": {
+    "B": 2,
+    "C": 0.4,
+    "D": 2080
+   }
+  },
+  {
+   "id": "c0373",
+   "es": "Barra y terraza en temporada y el mostrador de recogidas. Este plan NO tiene reparto propio: si lo pones, el repartidor va con contrato laboral del convenio de hostelería, nunca como autónomo",
+   "donde": [
+    "TAQP · Personal!J10"
+   ],
+   "fila": "Refuerzo de viernes a domingo: barra, terraza y recogidas",
+   "valor_us": {
+    "B": 1,
+    "C": 0.375,
+    "D": 975
+   },
+   "pistas": [
+    "P01",
+    "P13",
+    "P74",
+    "P06",
+    "P29",
+    "P26",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0389",
+   "es": "Horas con el local abierto al público, sumando las comidas (13:30-16:30) y las cenas (20:00-23:30) y la preparación de cada servicio. La tarde de cierre entre los dos no se cuenta",
+   "donde": [
+    "TAQP · Personal!J21"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "valor_us": 10.5
+  },
+  {
+   "id": "c0391",
+   "es": "Presencia media a la vez entre el trompo, la plancha o el comal, la sala y el mostrador. El sábado por la noche hacen falta cinco: entran el refuerzo y el camarero de cenas (el cuadrante anual no lo ve: ponlo en el turno)",
+   "donde": [
+    "TAQP · Personal!J22"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "valor_us": 2.5,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0393",
+   "es": "Marinado del día siguiente, montaje del cono, carnitas y guisados, salsas y mise en place antes de abrir",
+   "donde": [
+    "TAQP · Personal!J23"
+   ],
+   "fila": "Horas de producción al día ANTES de abrir",
+   "valor_us": 2.5,
+   "pistas": [
+    "P21",
+    "P10",
+    "P15",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0395",
+   "es": "El titular con el cocinero de producción. El cierre, la limpieza y las compras quedan fuera de este cuadrante: son el margen entre las horas contratadas y las necesarias",
+   "donde": [
+    "TAQP · Personal!J24"
+   ],
+   "fila": "Personas en el turno de producción",
+   "valor_us": 1.5
+  },
+  {
+   "id": "c0411",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —los tacos incluidos—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y las aguas frescas, los refrescos o los zumos con azúcares o edulcorantes añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica a la parte de la bebida que declara la columna H de su línea en el P&L. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "TAQP · Instrucciones!A8"
+   ],
+   "pistas": [
+    "P01",
+    "P03",
+    "P43",
+    "P08",
+    "P21",
+    "P09",
+    "P04",
+    "P18",
+    "P19",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0413",
+   "es": "6. La hoja «Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. Su Mes 1 es ENERO, en el orden del calendario: la rampa del arranque cae sobre enero y febrero, los meses más flojos, y por eso el fondo de maniobra cuenta. Si abres en otro mes, gira la fila de estacionalidad. El saldo mínimo del año nunca puede salir en rojo.",
+   "donde": [
+    "TAQP · Instrucciones!A10"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "pistas": [
+    "P09",
+    "P11",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0415",
+   "es": "8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel manda. La calculadora del trompo y escandallo del pack va aparte y sirve para medir el rendimiento del cono y ESCANDALLAR cada taco: no copies el food cost de un taco en la hoja de Supuestos. La celda «Coste de mercancía sobre las ventas de COMIDA» es la media ponderada de TODA la carta (tacos, gringas, guisados, guacamole y postres, cada uno por lo que vende) más la merma, y por eso sale más alta que el food cost del taco al pastor. Con los escandallos de tu carta, comprueba que esa media cuadra.",
+   "donde": [
+    "TAQP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P09",
+    "P10",
+    "P15",
+    "P11",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0433",
+   "es": "Mes 1 del plan",
+   "donde": [
+    "TAQP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0434",
+   "es": "Enero",
+   "donde": [
+    "TAQP · Instrucciones!B35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Decisión del plan",
+   "donde": [
+    "TAQP · Instrucciones!C35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "En el orden del calendario: la rampa cae sobre los meses más flojos y el fondo de maniobra lo cubre. Si abres en otro mes, gira la fila de estacionalidad de la Tesorería",
+   "donde": [
+    "TAQP · Instrucciones!D35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P11",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "Taco al pastor en carta",
+   "donde": [
+    "TAQP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P10",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "2,50-3,50 € con IVA",
+   "donde": [
+    "TAQP · Instrucciones!B36"
+   ],
+   "fila": "Taco al pastor en carta",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0439",
+   "es": "Cartas de taquerías casuales de Madrid, Valencia y Bilbao leídas en octubre de 2026",
+   "donde": [
+    "TAQP · Instrucciones!C36"
+   ],
+   "fila": "Taco al pastor en carta",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P49",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0440",
+   "es": "El caso lo pone a 3,00 € (la orden de 3, a 8,50 €). La taquería de volumen baja a 1-1,50 € y la de autor sube a 7-8 €",
+   "donde": [
+    "TAQP · Instrucciones!D36"
+   ],
+   "fila": "Taco al pastor en carta",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P02",
+    "P04",
+    "P11",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "Coste del taco al pastor",
+   "donde": [
+    "TAQP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P10",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "Un 22,5 % de su precio sin IVA (un 24 % en la orden de 3)",
+   "donde": [
+    "TAQP · Instrucciones!B37"
+   ],
+   "fila": "Coste del taco al pastor",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P03",
+    "P04",
+    "P11",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0443",
+   "es": "Estimación del kit con los gramajes de la calculadora del pack (editables)",
+   "donde": [
+    "TAQP · Instrucciones!C37"
+   ],
+   "fila": "Coste del taco al pastor",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0444",
+   "es": "Tortilla, 35 g de carne servida, piña, cebolla, cilantro, lima y salsa, con un 5 % de merma. La carne y la tortilla son precios estimados por el kit: pon los de tu proveedor",
+   "donde": [
+    "TAQP · Instrucciones!D37"
+   ],
+   "fila": "Coste del taco al pastor",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P15",
+    "P16",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0445",
+   "es": "Rendimiento del trompo",
+   "donde": [
+    "TAQP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P10",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0446",
+   "es": "Unos 25 tacos por kg de carne cruda",
+   "donde": [
+    "TAQP · Instrucciones!B38"
+   ],
+   "fila": "Rendimiento del trompo",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P54",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "Puesto de Ciudad de México citado por Milenio (prensa)",
+   "donde": [
+    "TAQP · Instrucciones!C38"
+   ],
+   "fila": "Rendimiento del trompo",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0448",
+   "es": "Con 35 g servidos y un 65 % de rendimiento salen unos 18-19 tacos por kg crudo: mide el tuyo con la calculadora del pack",
+   "donde": [
+    "TAQP · Instrucciones!D38"
+   ],
+   "fila": "Rendimiento del trompo",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P54",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0449",
+   "es": "1.279-1.784 € sin IVA",
+   "donde": [
+    "TAQP · Instrucciones!B39"
+   ],
+   "fila": "Trompo: asador vertical de gas de cuatro quemadores",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P02",
+    "P03",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0450",
+   "es": "Catálogo de asadores verticales de un distribuidor de hostelería, octubre de 2026",
+   "donde": [
+    "TAQP · Instrucciones!C39"
+   ],
+   "fila": "Trompo: asador vertical de gas de cuatro quemadores",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0451",
+   "es": "Para conos de 30-35 kg. El caso cuenta 1.800 € con la bandeja, los cuchillos y la base de la piña",
+   "donde": [
+    "TAQP · Instrucciones!D39"
+   ],
+   "fila": "Trompo: asador vertical de gas de cuatro quemadores",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P02",
+    "P54",
+    "P10",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0452",
+   "es": "Comisión de la plataforma con su reparto",
+   "donde": [
+    "TAQP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P26",
+    "P27",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "15-35 % más IVA",
+   "donde": [
+    "TAQP · Instrucciones!B40"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "Guías del sector, 2025-2026: compruébalo en tu contrato",
+   "donde": [
+    "TAQP · Instrucciones!C40"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P29",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "El plan básico de Uber Eats ronda el 30 %. Lo que se recoge en el local no paga comisión",
+   "donde": [
+    "TAQP · Instrucciones!D40"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P25",
+    "P27",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "IVA de los tacos",
+   "donde": [
+    "TAQP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "10 %",
+   "donde": [
+    "TAQP · Instrucciones!B41"
+   ],
+   "fila": "IVA de los tacos",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "Ley 37/1992, art. 91.Uno.1.1.º y 2.2.º",
+   "donde": [
+    "TAQP · Instrucciones!C41"
+   ],
+   "fila": "IVA de los tacos",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "En sala, para llevar y a domicilio. El alcohol y las aguas frescas y los refrescos con azúcares o edulcorantes añadidos que salen del local, al 21 %",
+   "donde": [
+    "TAQP · Instrucciones!D41"
+   ],
+   "fila": "IVA de los tacos",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P21",
+    "P18",
+    "P19",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "Comidas preparadas en caliente y en frío",
+   "donde": [
+    "TAQP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "≥ 63 °C · 60 → 10 °C en < 2 h · 74 °C 15 s",
+   "donde": [
+    "TAQP · Instrucciones!B42"
+   ],
+   "fila": "Comidas preparadas en caliente y en frío",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P87",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "Real Decreto 1086/2020, art. 30, en la redacción del Real Decreto 1021/2022",
+   "donde": [
+    "TAQP · Instrucciones!C42"
+   ],
+   "fila": "Comidas preparadas en caliente y en frío",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "Caliente a 63 °C o más; enfriado de 60 a 10 °C en menos de 2 h; recalentado a 74 °C durante 15 s en el centro, en la hora siguiente a sacarlo del frío; refrigeradas a 4 °C o menos (8 °C si duran menos de 24 h). El pastor marinado es preparado de carne: 4 °C o menos en cámara (Real Decreto 1021/2022, art. 4.1)",
+   "donde": [
+    "TAQP · Instrucciones!D42"
+   ],
+   "fila": "Comidas preparadas en caliente y en frío",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P10",
+    "P87",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "Salario mínimo interprofesional 2026",
+   "donde": [
+    "TAQP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "1.221 € al mes en 14 pagas",
+   "donde": [
+    "TAQP · Instrucciones!B43"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P02",
+    "P13",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "Real Decreto 126/2026",
+   "donde": [
+    "TAQP · Instrucciones!C43"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "A prorrata en jornada parcial",
+   "donde": [
+    "TAQP · Instrucciones!D43"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "Coste de personal sobre ventas",
+   "donde": [
+    "TAQP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "34-38 %",
+   "donde": [
+    "TAQP · Instrucciones!B44"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "Estimación del kit",
+   "donde": [
+    "TAQP · Instrucciones!C44"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0471",
+   "es": "Con el titular de taquero jefe y un segundo taquero: el taquero único es un riesgo, no un ahorro",
+   "donde": [
+    "TAQP · Instrucciones!D44"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "Alquiler sobre ventas",
+   "donde": [
+    "TAQP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "5-10 %",
+   "donde": [
+    "TAQP · Instrucciones!B45"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0474",
+   "es": "Estimación del kit",
+   "donde": [
+    "TAQP · Instrucciones!C45"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0475",
+   "es": "Un local con salida de humos a cubierta cuesta más encontrarlo que pagarlo",
+   "donde": [
+    "TAQP · Instrucciones!D45"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P32",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "TAQP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P13",
+    "P29",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "Provincial de hostelería",
+   "donde": [
+    "TAQP · Instrucciones!B46"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4",
+   "donde": [
+    "TAQP · Instrucciones!C46"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P01",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "No nombra la «taquería»: entra como restaurante. Copia tu tabla salarial en la celda de Supuestos",
+   "donde": [
+    "TAQP · Instrucciones!D46"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P78",
+    "P09",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0518",
+   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en sala, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); la parte de la bebida que sale para llevar o a domicilio y declara la columna H de su línea (alcohol y aguas frescas o refrescos con azúcares o edulcorantes añadidos), al general (art. 91.Uno.1.1.º)",
+   "donde": [
+    "TAQP · Tesorería 12 meses!O16"
+   ],
+   "fila": "IVA repercutido del mes (memoria)",
+   "pistas": [
+    "P01",
+    "P21",
+    "P18",
+    "P19"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GR": {
+   "salida": "scripts/productos-digitales/business-plans-en-12/textos_en/GR.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 34,
+   "cadenas": [
+    {
+     "id": "c0005",
+     "es": "Comensales/día (media del año 1)",
+     "en_actual": "Covers per day (year-1 average)",
+     "de": "GR c0005 (PIZP 0. Supuestos!A4)",
+     "donde": [
+      "TAQP · 0. Supuestos!A4"
+     ]
+    },
+    {
+     "id": "c0032",
+     "es": "Tarjeta y bizum sobre el total facturado",
+     "en_actual": "Card and mobile wallet (contactless) processing fees on total sales. Ask your POS provider for its rate",
+     "de": "GPIZ-plan c0032 (PIZP 0. Supuestos!C18)",
+     "donde": [
+      "TAQP · 0. Supuestos!C18"
+     ]
+    },
+    {
+     "id": "c0050",
+     "es": "Colchón de gasto corriente no presupuestado (pequeñas reparaciones, utillaje que se rompe, pruebas de carta)",
+     "en_actual": "Cushion for unbudgeted running costs (small repairs, broken smallwares, menu tests)",
+     "de": "GPIZ-plan c0050 (PIZP 0. Supuestos!C28)",
+     "donde": [
+      "TAQP · 0. Supuestos!C28"
+     ]
+    },
+    {
+     "id": "c0053",
+     "es": "Aportación de los socios. Un banco pide entre el 25 y el 30 % de la necesidad de caja con dinero propio",
+     "en_actual": "Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need",
+     "de": "GPIZ-plan c0053 (PIZP 0. Supuestos!C30)",
+     "donde": [
+      "TAQP · 0. Supuestos!C30"
+     ]
+    },
+    {
+     "id": "c0055",
+     "es": "Principal solicitado. La hoja de Financiación compara lo que aportas con la necesidad de caja de la hoja de inversión y te dice si sobra o falta: ajústalo con ese dato",
+     "en_actual": "Principal requested. The \"Financing\" tab compares what you put in with the cash need on \"Startup Costs\" and tells you whether you have a surplus or a shortfall: adjust the loan with that figure. The example is an SBA 7(a) loan, which you apply for through your lender (SBA Microloans go up to $50,000)",
+     "de": "GPIZ-plan c0055 (PIZP 0. Supuestos!C31)",
+     "donde": [
+      "TAQP · 0. Supuestos!C31"
+     ]
+    },
+    {
+     "id": "c0087",
+     "es": "Aforo del local (plazas sentadas, sin la terraza)",
+     "en_actual": "Seating capacity of the space (dining room seats, patio not included)",
+     "de": "GPIZ-plan c0087 (PIZP 0. Supuestos!A51)",
+     "donde": [
+      "TAQP · 0. Supuestos!A51"
+     ]
+    },
+    {
+     "id": "c0166",
+     "es": "Lavavajillas, fregaderos, lavamanos de accionamiento no manual, mesas de acero inoxidable y estanterías",
+     "en_actual": "Three-compartment sink, dish machine, hands-free hand sinks, stainless tables and shelving",
+     "de": "GPIZ-plan c0166 (PIZP Inversión Inicial!D17)",
+     "donde": [
+      "TAQP · Inversión Inicial!D17"
+     ]
+    },
+    {
+     "id": "c0174",
+     "es": "Software de facturación conforme a Veri*factu, datáfonos, impresora de cocina y la tablet de las plataformas",
+     "en_actual": "POS that reports sales tax, card terminals, kitchen printer and the delivery marketplace tablets",
+     "de": "GPIZ-plan c0174 (PIZP Inversión Inicial!D21)",
+     "donde": [
+      "TAQP · Inversión Inicial!D21"
+     ]
+    },
+    {
+     "id": "c0176",
+     "es": "SL unipersonal, licencia o declaración responsable, tasas municipales, registro sanitario autonómico y redacción del plan APPCC. Las tasas no llevan IVA; los honorarios sí: cambia la columna de al lado si tu presupuesto es sobre todo de honorarios",
+     "en_actual": "LLC formation (or an S corp election with your CPA), business license, local fees, health permit and the written food safety plan. Government fees carry no sales tax; professional fees may, depending on your state: change the column next to it if your quote is mostly professional fees",
+     "de": "GPIZ-plan c0176 (PIZP Inversión Inicial!D22)",
+     "donde": [
+      "TAQP · Inversión Inicial!D22"
+     ]
+    },
+    {
+     "id": "c0209",
+     "es": "Comensales/día (media)",
+     "en_actual": "Covers per day (average)",
+     "de": "GR c0209 (PIZP PyG 3 Años!A6)",
+     "donde": [
+      "TAQP · PyG 3 Años!A6"
+     ]
+    },
+    {
+     "id": "c0239",
+     "es": "Contabilidad, impuestos de la SL, nóminas y contratos de la plantilla",
+     "en_actual": "Bookkeeping, income tax and payroll filings for the LLC, payroll processing and the staff paperwork (offer letters, I-9, W-4)",
+     "de": "GPIZ-plan c0239 (PIZP PyG 3 Años!F26)",
+     "donde": [
+      "TAQP · PyG 3 Años!F26"
+     ]
+    },
+    {
+     "id": "c0251",
+     "es": "Contrato con una empresa inscrita en el ROESB: forma parte de los prerrequisitos del APPCC",
+     "en_actual": "Contract with a licensed pest control operator: it is part of the prerequisites of your written food safety plan.",
+     "de": "GPIZ-check c0787 (PIZC F4 - Personal y prevención!E16)",
+     "donde": [
+      "TAQP · PyG 3 Años!F32",
+      "TAQC · F6 - Apertura y 90 días!E6"
+     ]
+    },
+    {
+     "id": "c0253",
+     "es": "SGAE y AGEDI-AIE son dos licencias distintas; el importe depende de los metros y del aforo de tu sala",
+     "en_actual": "ASCAP, BMI and SESAC are separate licenses; the fee depends on the square footage and the seats of your dining room",
+     "de": "GPIZ-plan c0253 (PIZP PyG 3 Años!F33)",
+     "donde": [
+      "TAQP · PyG 3 Años!F33"
+     ]
+    },
+    {
+     "id": "c0286",
+     "es": "Techo del alquiler sobre ventas para un local con salida de humos a cubierta: estimación del kit",
+     "en_actual": "Ceiling for rent on sales for a space with smoke exhaust to the roof: Kit estimate",
+     "de": "GPIZ-plan c0286 (PIZP PyG 3 Años!F54)",
+     "donde": [
+      "TAQP · PyG 3 Años!F54"
+     ]
+    },
+    {
+     "id": "c0300",
+     "es": "Coste variable por comensal",
+     "en_actual": "Variable cost per cover",
+     "de": "GR c0300 (PIZP Punto Equilibrio!A9)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A9"
+     ]
+    },
+    {
+     "id": "c0302",
+     "es": "Margen de contribución por comensal",
+     "en_actual": "Contribution margin per cover",
+     "de": "GR c0302 (PIZP Punto Equilibrio!A10)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A10"
+     ]
+    },
+    {
+     "id": "c0308",
+     "es": "Comensales necesarios al año",
+     "en_actual": "Covers needed per year",
+     "de": "GR c0308 (PIZP Punto Equilibrio!A14)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A14"
+     ]
+    },
+    {
+     "id": "c0309",
+     "es": "Comensales necesarios al día",
+     "en_actual": "Covers needed per day",
+     "de": "GR c0309 (PIZP Punto Equilibrio!A15)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A15"
+     ]
+    },
+    {
+     "id": "c0314",
+     "es": "Comensales necesarios al año (caja)",
+     "en_actual": "Covers needed per year (cash)",
+     "de": "GR c0314 (PIZP Punto Equilibrio!A19)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A19"
+     ]
+    },
+    {
+     "id": "c0315",
+     "es": "Comensales necesarios al día (caja)",
+     "en_actual": "Covers needed per day (cash)",
+     "de": "GR c0315 (PIZP Punto Equilibrio!A20)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A20"
+     ]
+    },
+    {
+     "id": "c0318",
+     "es": "Comensales/día previstos en el plan",
+     "en_actual": "Covers per day forecast in the plan",
+     "de": "GR c0318 (PIZP Punto Equilibrio!A23)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A23"
+     ]
+    },
+    {
+     "id": "c0324",
+     "es": "Comensales de equilibrio entre las plazas que declara la hoja de Supuestos. Por encima del techo de arriba, el punto de equilibrio está fuera del alcance del local",
+     "en_actual": "Break-even covers spread across the seats declared on the \"0. Assumptions\" tab. If it is above the ceiling in the row above, the break-even is out of reach for the space",
+     "de": "GR c0324 (PIZP Punto Equilibrio!E26)",
+     "donde": [
+      "TAQP · Punto Equilibrio!E26"
+     ]
+    },
+    {
+     "id": "c0327",
+     "es": "Comensales/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por comensal (filas). En verde, los que están por debajo de los comensales que prevé el plan.",
+     "en_actual": "Covers per day needed to cover costs for each average check (columns) and each variable cost per cover (rows). Green cells are below the covers per day the plan forecasts.",
+     "de": "GR c0327 (PIZP Punto Equilibrio!A31)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A31"
+     ]
+    },
+    {
+     "id": "c0328",
+     "es": "Comensales/día necesarios: ticket medio sin IVA (columnas) × coste variable por comensal (filas)",
+     "en_actual": "Covers per day needed: average check excl. sales tax (columns) × variable cost per cover (rows)",
+     "de": "GR c0328 (PIZP Punto Equilibrio!A33)",
+     "donde": [
+      "TAQP · Punto Equilibrio!A33"
+     ]
+    },
+    {
+     "id": "c0336",
+     "es": "Comensales/día",
+     "en_actual": "Covers per day",
+     "de": "GR c0336 (PIZP Escenarios!A5)",
+     "donde": [
+      "TAQP · Escenarios!A5"
+     ]
+    },
+    {
+     "id": "c0341",
+     "es": "Comensales/día para el equilibrio",
+     "en_actual": "Covers per day to break even",
+     "de": "GR c0341 (PIZP Escenarios!A21)",
+     "donde": [
+      "TAQP · Escenarios!A21"
+     ]
+    },
+    {
+     "id": "c0344",
+     "es": "Comensales al año por jornada equivalente",
+     "en_actual": "Covers per year per full-time equivalent",
+     "de": "GR c0344 (PIZP Escenarios!A24)",
+     "donde": [
+      "TAQP · Escenarios!A24"
+     ]
+    },
+    {
+     "id": "c0345",
+     "es": "Comensales que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+     "en_actual": "Covers each full-time employee in the \"Staffing\" tab would have to serve. In the optimistic scenario it tells you whether you need to hire",
+     "de": "GR c0345 (PIZP Escenarios!E24)",
+     "donde": [
+      "TAQP · Escenarios!E24"
+     ]
+    },
+    {
+     "id": "c0350",
+     "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los comensales, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+     "en_actual": "The \"Base\" column reads its three inputs from the \"0. Assumptions\" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: the only things that change are covers, average check and days. FIXED COSTS are the same in all three: miscellaneous and contingency, which is a percentage of sales, sits at the top with the variable costs and each scenario carries its own.",
+     "de": "GR c0350 (PIZP Escenarios!A28)",
+     "donde": [
+      "TAQP · Escenarios!A28"
+     ]
+    },
+    {
+     "id": "c0375",
+     "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal del equipo de todo el año",
+     "en_actual": "Coverage for vacations and the team's days off through the year. Paid sick leave is required by some states and cities: check yours",
+     "de": "GPIZ-plan c0375 (PIZP Personal!J11)",
+     "donde": [
+      "TAQP · Personal!J11"
+     ]
+    },
+    {
+     "id": "c0408",
+     "es": "1. «0. Supuestos» es la hoja de mando: comensales, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+     "en_actual": "1. \"0. Assumptions\" is the control sheet: covers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, rent, financing and taxes.",
+     "de": "GR c0408 (PIZP Instrucciones!A5)",
+     "donde": [
+      "TAQP · Instrucciones!A5"
+     ]
+    },
+    {
+     "id": "c0414",
+     "es": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
+     "en_actual": "7. The \"Financing\" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.",
+     "de": "GR c0414 (PIZP Instrucciones!A11)",
+     "donde": [
+      "TAQP · Instrucciones!A11"
+     ]
+    },
+    {
+     "id": "c0426",
+     "es": "Comensales/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+     "en_actual": "Covers per day for the ACCOUNTING break-even (depreciation included)",
+     "de": "GR c0426 (PIZP Instrucciones!A30)",
+     "donde": [
+      "TAQP · Instrucciones!A30"
+     ]
+    },
+    {
+     "id": "c0543",
+     "es": "Mide cuánto tarda el negocio en devolver la inversión con lo que genera ANTES de pagar al banco, con la MISMA base de flujo en los tres años; si puedes pagar la cuota lo dice el DSCR de la hoja de Financiación. El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro",
+     "en_actual": "Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the \"Financing\" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules",
+     "de": "GPIZ-plan c0548 (PIZP Tesorería 12 meses!D31)",
+     "donde": [
+      "TAQP · Tesorería 12 meses!D31"
+     ]
+    }
+   ]
+  }
+ }
+}

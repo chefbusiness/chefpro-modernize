@@ -1,0 +1,2739 @@
+{
+ "tanda": "GTAQ-check",
+ "salida": "scripts/productos-digitales/business-plans-en-12/textos_en/GTAQ-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 124,
+ "n_palabras": 2703,
+ "pistas": {
+  "P01": "patio (permiso de patio/sidewalk café de la ciudad)",
+  "P02": "US §6.3: Type I hood + fire suppression (UL 300) + makeup air sobre griddle, freidora y vertical broilers; «ask the fire marshal in writing»",
+  "P03": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P04": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P05": "US §6.2/§9: «trompo» en carta y prosa, «vertical broiler» en equipo; la temperatura de cocción la pone el CONDADO (145 o 155 °F; pollo 165 °F): nunca una cifra única; «get your county's vertical broiler rules in writing»",
+  "P06": "US §6.3: trompo o parrilla de carbón = combustible sólido (NFPA 96: escape separado, arrestachispas, ceniza diaria): variante, no el caso",
+  "P07": "licensed gas contractor; gas lines in the build-out",
+  "P08": "US §8/§9: tortillas de maíz de 6 in compradas (360 por caja); la propia con masa harina se paga a ≈ 660 al día; nixtamal = variante; «masa», nunca «dough»",
+  "P09": "«LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P10": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P11": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P12": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P13": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P14": "Glosario: barra de salsas → «salsa bar»; mostrador → «counter»",
+  "P15": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P16": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P17": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P18": "offer letters, I-9, W-4, state minimum wage, W-2 por horas (sin convenio; sin «digital obligatorio»)",
+  "P19": "«zoning check before signing» · «building permit + certificate of occupancy» · business license + sales tax permit",
+  "P20": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P21": "grease interceptor · used cooking oil pickup",
+  "P22": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P23": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P24": "US §6.1: salsa bar; tomate cortado = TCS (pico de gallo, salsas frescas); guacamole «treat it as TCS; ask your regulator»; TPHC con SOP escrito",
+  "P25": "US §6.1: frío ≤ 41 °F, caliente ≥ 135 °F, recalentado 165 °F en 2 h; TPHC 4 h / 6 h con procedimiento escrito (la métrica solo entre paréntesis)",
+  "P26": "US §6.4: plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan",
+  "P27": "US §9: gringa · campechano · suadero · carnitas · birria · cochinita pibil · order of 3 / plate",
+  "P28": "US §6.5: 9 major allergens incl. sesame (UK 14); salsa macha = peanuts + sesame; flour tortillas = wheat",
+  "P29": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P30": "US §6.7: «beer & wine license» (estado + local; «apply early», sin prometerla) · liquor liability · el caso US NO vende mezcal ni tequila",
+  "P31": "US §6.5: NO prometer «gluten-free» (21 CFR 101.91; comal y freidora compartidos): «corn tortillas are naturally gluten-free; ask about our fryer and griddle»",
+  "P32": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P33": "Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P34": "DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2)",
+  "P35": "own drivers = W-2 + hired & non-owned auto insurance (check your state)",
+  "P36": "clamshells, foil, salsa cups; local packaging ordinances",
+  "P37": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P38": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P39": "«POS that reports sales tax» (sin Veri*factu)",
+  "P40": "US §9: aguas frescas · horchata · jamaica (hibiscus)",
+  "P41": "sin equivalente US: packaging ordinances locales; TPHC y cold holding ≤ 41 °F",
+  "P42": "US §9: el libro dice «covers» y «seat turns»; nunca «customers» para el volumen diario"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state/local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "taquería": "taco shop (nombre, H1, ficheros) · taqueria (sin tilde; prosa y subtítulo)",
+  "trompo / asador vertical": "trompo (carta y prosa) · vertical broiler (equipo) · vertical spit; «cone» o «stack» para la carne",
+  "taco al pastor": "al pastor (tacos al pastor; «pastor» solo en jerga de cocina)",
+  "taquero/a": "taquero (head taquero); en la plantilla «line cook (trompo & griddle)»",
+  "taco de calle, doble tortilla": "street tacos (small corn tortillas, onion & cilantro)",
+  "con todo": "with everything / onion and cilantro",
+  "orden de 3": "order of 3 tacos · plate / combo plate (with rice & beans)",
+  "gringa · quesadilla": "gringa (flour tortilla, al pastor & cheese) · quesadilla",
+  "carnitas · suadero · campechano · cochinita · barbacoa · birria": "carnitas · suadero · campechano · cochinita pibil · barbacoa · birria, quesabirria, consomé",
+  "barra de salsas": "salsa bar",
+  "agua fresca · horchata · jamaica": "aguas frescas · horchata · jamaica (hibiscus) · tamarindo",
+  "salsa macha": "salsa macha (chile oil with peanuts/sesame) — siempre con el alérgeno",
+  "nixtamal · masa · harina de maíz nixtamalizado": "nixtamal / nixtamalization · masa · masa harina",
+  "comal · plancha": "comal · flat-top griddle («plancha» no)",
+  "tortilladora · prensa": "tortilla machine · tortilla press (manual/electric)",
+  "tortillería": "tortilleria (sin tilde)",
+  "totopos": "tortilla chips · chips & guac · chips & salsa",
+  "mostrador / sin servicio de mesa": "counter service · fast casual · QSR",
+  "cubierto / comensal · ticket medio": "covers · average check (excl. sales tax and tip)",
+  "escandallo por taco · rendimiento": "taco costing / food cost per taco · yield (trompo yield, tacos per pound)",
+  "plataforma · para llevar": "third-party delivery marketplace · take-out / to-go / pickup",
+  "manipulador de alimentos": "food handler card · Certified Food Protection Manager (CFPM)",
+  "campana · supresión": "Type I hood · fire suppression system (UL 300)",
+  "control por tiempo": "time as a public health control (TPHC)",
+  "agotado": "86'd",
+  "cerveza mexicana, michelada": "Mexican beer · michelada (solo con beer & wine license)",
+  "preparado de carne ≤ 4 °C · 63 °C · 74 °C": "cold holding ≤ 41 °F · 135 °F · 165 °F",
+  "ordenanza de humos": "Type I hood + local fire/mechanical code",
+  "licencia de apertura": "business license + certificate of occupancy",
+  "IVA · fianza": "sales tax · deposit",
+  "autónomo / SL": "LLC"
+ },
+ "pestanas_es_en": {
+  "TAQP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "TAQC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local, humos y gas": "Phase 2 - Hood, Gas & Permits",
+   "F3 - Cocina, trompo y sanidad": "Phase 3 - Kitchen & Health",
+   "F4 - Personal y alérgenos": "Phase 4 - Staff & Allergens",
+   "F5 - Carta, marca y delivery": "Phase 5 - Menu, Brand, Delivery",
+   "F6 - Apertura y 90 días": "Phase 6 - Opening & 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US TAQUERIA BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del «Plan de Negocio: Taquería» de AI Chef Pro.": "This file is part of the Taco Shop Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — TAQUERÍA": "TACO SHOP STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Taquería": "HOW TO USE THIS WORKBOOK — Taco Shop Financial Projections",
+  "PLAN DE NEGOCIO: TAQUERÍA": "TACO SHOP BUSINESS PLAN: COUNTER-SERVICE TAQUERIA",
+  "Inversión inicial estimada — taquería con trompo, barra de salsas, 32 plazas y terraza": "Estimated Startup Costs — counter-service taco shop with trompo and salsa bar, 30 seats + patio",
+  "Ajusta las cifras a tu proyecto: son las de un caso tipo en una ciudad media, sin traspaso. Pon tus presupuestos reales en las celdas de importe.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — taquería con trompo, barra de salsas y para llevar": "Base case — counter-service taco shop with trompo, salsa bar and take-out",
+  "Punto de equilibrio mensual y diario — taquería con trompo": "Monthly and daily break-even — taco shop with trompo",
+  "FASE 2: LOCAL, SALIDA DE HUMOS, GAS, LICENCIA Y TERRAZA (semanas 3-14)": "PHASE 2: SITE, HOOD, GAS, PERMITS & PATIO (weeks 3-14)",
+  "Proyecto técnico de actividad y de salida de humos, y dirección de obra": "Architect, MEP & hood drawings, plan review & permit fees",
+  "Obra y acondicionamiento del local, rótulo y fachada": "Build-out (second-generation space, 1,200 sq ft), signage & facade",
+  "Conducto de extracción exclusivo hasta cubierta": "Type I hood, UL 300 fire suppression & makeup air",
+  "Instalación eléctrica, cuadro y boletín": "Electrical service, panel & gas lines",
+  "Fontanería, separador de grasas, climatización e instalación de gas": "Plumbing, grease interceptor & HVAC",
+  "Trompo: asador vertical de gas de cuatro quemadores": "Vertical broilers (trompos) × 2",
+  "Plancha de acero a gas y comal": "Flat-top griddle (36 in) & comal",
+  "Freidora, fogón de carnitas, baño maría y mantenedor de tortillas": "Fryer, stock-pot range, steam table & tortilla warmers",
+  "Campana extractora con motor y filtros": "Walk-in cooler (6×8)",
+  "Frío: armarios, congelador y mesa refrigerada de salsas": "Refrigerated prep table, salsa bar & freezer",
+  "Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías": "3-comp sink, dish machine, hand sinks, shelving & stainless",
+  "Utillaje y menaje: licuadora, molcajetes, sondas y prensa de tortillas": "Smallwares & tortilla presses (hotel pans, blenders, probe thermometers, scales)",
+  "Barra: botellero frío, tirador de cerveza y cafetera": "Beverage station (beer cooler, agua fresca dispensers)",
+  "Mobiliario de sala, barra y terraza": "Furniture (30 seats) & patio (12)",
+  "TPV con Veri*factu, datáfonos, impresora de comandas y tablet": "POS, online ordering, kiosk & delivery tablets",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal & food safety plan",
+  "Marca, web, fotos y lanzamiento": "Branding, website, photos & launch",
+  "Stock inicial: carnes, chiles, tortillas, bebida y envases": "Opening inventory",
+  "Ventas de taquería y cocina (sala, para llevar y a domicilio)": "Food sales (tacos, quesadillas, plates & sides: dine-in, take-out & delivery)",
+  "Ventas de bebida (aguas frescas, cerveza, mezcal y tequila, refrescos y agua)": "Beverage sales (aguas frescas, sodas, Mexican beer & wine)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property + workers' comp)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento de la campana extractora, el gas y el frío": "Maintenance (hood cleaning, broilers, refrigeration)",
+  "Software, TPV, teléfono e internet": "Software, POS & online ordering",
+  "Limpieza, lavandería, EPI y análisis de autocontrol": "Cleaning, linens & uniforms",
+  "Tasa de terraza y gestión de residuos (pon las de tu ayuntamiento)": "Waste, grease & used-oil hauling + permit renewals",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales, vigilancia de la salud y formación": "Food safety & staff training (CFPM, allergens, OSHA)",
+  "Titular — taquero/a jefe: marinado, trompo, compras y gestión": "Owner / head taquero & GM",
+  "Taquero/a de trompo, plancha y comal": "Taquero / line cook (trompo & griddle)",
+  "Cocinero/a de producción y salsas": "Prep cook (marinades, carnitas, salsas, aguas frescas)",
+  "Encargado/a de sala, barra y mostrador": "Counter lead / cashier",
+  "Camarero/a de cenas y fines de semana": "Counter & expo (part-time W-2)",
+  "Refuerzo de viernes a domingo: barra, terraza y recogidas": "Dish & prep (part-time W-2)",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations + days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0617",
+   "es": "Consulta urbanística previa: salida de humos, potencia, aforo y terraza",
+   "donde": [
+    "TAQC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0620",
+   "es": "Pregunta al ayuntamiento si el uso permite un restaurante con cocina de plancha, trompo y freidora, si el local admite un conducto de humos exclusivo hasta la cubierta (en Madrid, que supere en 1 m lo que haya en 15 m: Ordenanza 4/2021, art. 12 y anexo I), qué potencia y qué aforo tiene y si la calle admite terraza. Sin salida de humos a cubierta no hay trompo, plancha ni comal",
+   "donde": [
+    "TAQC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P04",
+    "P05",
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0621",
+   "es": "Decidir trompo de gas o de carbón ANTES de firmar el local",
+   "donde": [
+    "TAQC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0623",
+   "es": "El de gas (el del plan) cabe en una salida de humos normal, con la instalación por empresa habilitada (RD 919/2006). El de carbón, y la parrilla de carne asada, piden además filtro de partículas en el conducto (en Madrid, Ordenanza 4/2021, art. 23): pregunta en la consulta previa si tu local lo admite",
+   "donde": [
+    "TAQC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P04",
+    "P06",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0624",
+   "es": "Decidir tortilla comprada o nixtamal propio ANTES de firmar el local",
+   "donde": [
+    "TAQC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0625",
+   "es": "El plan compra la tortilla. Hacerla en casa pide molino, cocedor y tortilladora, sitio en la cocina y un tortillero: por coste sólo compensa por encima de unas 700 tortillas al día (la calculadora del pack hace la cuenta con tus precios). Si la haces tú, el molino y la tortilladora tienen que caber en el local",
+   "donde": [
+    "TAQC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0634",
+   "es": "Alta censal (modelo 036) en el grupo 671 o 673 y el epígrafe 677.9 del IAE",
+   "donde": [
+    "TAQC · F1 - Constitución!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0636",
+   "es": "Con comedor y servicio de mesa, el grupo 671 («servicios en restaurantes», por categoría); de barra y mostrador sin comedor separado, el 673. El 677.9 cubre la venta para llevar y a domicilio (RDLeg 1175/1990). Confírmalo con tu gestoría. Exento de cuota con una cifra de negocio inferior a 1 millón de euros (art. 82.1.c de la Ley de Haciendas Locales)",
+   "donde": [
+    "TAQC · F1 - Constitución!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0647",
+   "es": "Lleva el plan financiero completo, con la tesorería mes a mes. Pide también oferta de leasing o renting del frío y del equipo de cocina y de una línea ICO",
+   "donde": [
+    "TAQC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0651",
+   "es": "RC de al menos 300.000 € y multirriesgo con incendio y avería del frío. Dile a la aseguradora que trabajas con trompo, plancha y freidora a gas",
+   "donde": [
+    "TAQC · F1 - Constitución!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10",
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0654",
+   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "donde": [
+    "TAQC · F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error)",
+    "TAQC · F2 - Local, humos y gas!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 (dv-error)",
+    "TAQC · F3 - Cocina, trompo y sanidad!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 (dv-error)",
+    "TAQC · F4 - Personal y alérgenos!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)",
+    "TAQC · F5 - Carta, marca y delivery!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)",
+    "TAQC · F6 - Apertura y 90 días!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)"
+   ],
+   "max_len": 255,
+   "propuesta_en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+   "propuesta_de": "GR c0659 (PIZC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 / PIZC F2 - Local, humos y licencia!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19)"
+  },
+  {
+   "id": "c0657",
+   "es": "Elegir el local: 70-90 m² con salida de humos a cubierta posible",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0659",
+   "es": "Sala de unos 45 m² para 24 plazas en mesa y 8 en barra, cocina de unos 20 m² a la vista con el trompo, aseos (uno adaptado) y almacén. Calle con paso de gente por la noche y el fin de semana, cerca de una zona universitaria o de ocio",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16",
+    "P05",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0660",
+   "es": "Comprobar la potencia eléctrica y la acometida de gas",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0663",
+   "es": "Frío, extracción, climatización, lavavajillas y cafetera en la luz; trompo, plancha, comal y fogones en el gas (natural o envasado). Una acometida nueva tarda: pregunta plazo y coste a la distribuidora",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0664",
+   "es": "Comprobar con el técnico el recorrido del conducto hasta cubierta",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0668",
+   "es": "El plan cuenta dos meses de renta antes de abrir y dos de fianza. Pide carencia mientras duran la obra y el conducto",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P17",
+    "P12",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0669",
+   "es": "Contrato de arrendamiento con el uso de restaurante con salida de humos",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0672",
+   "es": "Que diga «restaurante» (o «taquería con cocina») y que autorice la obra del conducto y la salida de humos a cubierta",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "Encargar el proyecto técnico de la actividad y de la salida de humos",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B10"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Commission the plans for the build-out, the hood and the flue",
+   "propuesta_de": "GPIZ-check c0678 (PIZC F2 - Local, humos y licencia!B10)",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0676",
+   "es": "Distribución de la cocina, potencia, aforo, ventilación, accesibilidad, la instalación de gas y el conducto a cubierta. Fuera de Madrid, pide la ordenanza de humos y de calidad del aire de tu ayuntamiento",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "Los restaurantes (grupos 671 y 673 y epígrafe 677.9) no están en el anexo de la Ley 12/2012: van por el régimen de tu ayuntamiento, licencia o declaración responsable según su ordenanza. Pregunta cuál te toca en la consulta previa",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P12",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0680",
+   "es": "Licencia, declaración o comunicación previa de la obra",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B12"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Building permit for the build-out and the flue",
+   "propuesta_de": "GPIZ-check c0685 (PIZC F2 - Local, humos y licencia!B12)"
+  },
+  {
+   "id": "c0682",
+   "es": "La obra y el conducto van por su propio trámite municipal: pregunta en la consulta previa qué título piden",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0686",
+   "es": "Es ocupación de la vía pública y siempre se pide aparte (Ley 12/2012, art. 2.2). Pregunta la tasa y el horario de tu ayuntamiento: el plan cuenta 1.200 € de ejemplo",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P10",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0687",
+   "es": "Gas por empresa instaladora habilitada y certificado de cada aparato",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0690",
+   "es": "Certificado de la instalación, puesta en marcha certificada del trompo, la plancha, el comal y los fogones e inspección (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 07 e ITC-ICG 08)",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0691",
+   "es": "Conducto exclusivo a cubierta y filtro de partículas si hay carbón",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0694",
+   "es": "Ejemplo de Madrid (Ordenanza 4/2021): conducto exclusivo que supere en 1 m lo que haya en 15 m (art. 12 y anexo I) y, con carbón u otro combustible sólido, sistemas específicos de filtrado de partículas (art. 23). Con trompo de gas, el conducto normal",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0695",
+   "es": "Obra de la cocina y de la sala: superficies lavables",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0698",
+   "es": "Fontanería, separador de grasas y climatización",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Agua fría y caliente en la cocina, desagües con separador de grasas (la plancha y la freidora echan mucha) y climatización de la sala",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Campana extractora sobre el trompo, la plancha, el comal y la freidora",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0703",
+   "es": "Campana extractora con motor y filtros de grasa que cubra toda la línea de fuego, conectada al conducto exclusivo. Pide al instalador el caudal y el plan de limpieza de los filtros",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0704",
+   "es": "Boletín eléctrico y certificado final de obra",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!B19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0707",
+   "es": "El boletín (certificado de la instalación) para el contrato de luz y el certificado final del técnico. Guárdalos con el del gas: te los pedirá el ayuntamiento",
+   "donde": [
+    "TAQC · F2 - Local, humos y gas!E19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0709",
+   "es": "FASE 3: COCINA, TROMPO Y REGISTRO SANITARIO (semanas 6-14)",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!A2"
+   ]
+  },
+  {
+   "id": "c0710",
+   "es": "Comprar el trompo, la plancha, el comal y la freidora",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0711",
+   "es": "Asador vertical de gas de cuatro quemadores para conos de 30-35 kg (de 1.279 a 1.784 € sin IVA en catálogo), plancha lisa de acero, comal y freidora. Pide ficha técnica, consumo de gas, plazo de entrega y montaje",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P10",
+    "P22",
+    "P23",
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0712",
+   "es": "Comprar el frío: armarios, congelador y mesa refrigerada de salsas",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0714",
+   "es": "Armarios para la carne marinada y los conos montados, congelador y una mesa refrigerada que mantenga las salsas y las guarniciones de la barra a 4 °C o menos",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P25",
+    "P24",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "Va al registro sanitario de tu comunidad autónoma (RD 1021/2022). El registro estatal (RGSEAA) sólo aplica si sirves a otros negocios por encima de lo que permite el art. 3 del mismo real decreto (por ejemplo, si vendes tortilla o masa a otras taquerías)",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P26",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "APPCC del trompo: el cono en cámara a 4 °C o menos",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P05",
+    "P26",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "La carne marinada para el pastor es un preparado de carne: en cámara a 4 °C o menos (RD 1021/2022, art. 4.1); la carne picada, a 2 °C o menos. Anota la hora de marinado y la de montaje de cada cono",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P05",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0723",
+   "es": "APPCC del trompo en servicio: sonda y hora límite del cono",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P05",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "Taquero/a jefe",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!C9",
+    "TAQC · F3 - Cocina, trompo y sanidad!C16",
+    "TAQC · F5 - Carta, marca y delivery!C6",
+    "TAQC · F6 - Apertura y 90 días!C8",
+    "TAQC · F6 - Apertura y 90 días!C13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0725",
+   "es": "Sonda al inicio y a mitad del servicio y corte sólo de la capa exterior bien hecha (guías de buenas prácticas del asador vertical). Ninguna norma fija cuánto puede estar montado el cono: la hora límite la fija tu APPCC y se anota",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P05",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0726",
+   "es": "Salsas crudas, guacamole y vegetal cortado a 4 °C o menos",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P25",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0727",
+   "es": "Cocinero/a de producción",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!C10",
+    "TAQC · F3 - Cocina, trompo y sanidad!C11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0728",
+   "es": "Cebolla, cilantro y piña picados, aguacate cortado y salsas crudas son vegetal cortado listo para consumo: a 4 °C o menos (RD 1021/2022, art. 4.1). Tandas cortas; la oxidación del aguacate es calidad, no seguridad: lima y film en contacto",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P25",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "Carnitas y guisados: caliente, enfriado y recalentado",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "En caliente, a 63 °C o más; lo que se guarda, enfriado de 60 a 10 °C en menos de 2 horas, y recalentado a 74 °C durante 15 segundos en el centro en la hora siguiente a sacarlo del frío (RD 1086/2020, art. 30, en la redacción del RD 1021/2022)",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Barra de salsas con reglas: recipiente, hora y utensilio",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "Encargado/a de sala",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!C12",
+    "TAQC · F4 - Personal y alérgenos!C16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0733",
+   "es": "Recipiente limpio en cada reposición (nunca rellenar encima), hora de puesta y de descarte anotadas y un utensilio por salsa. La salsa macha, con su cuchara propia por el cacahuete y el sésamo",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0734",
+   "es": "Pescado crudo (aguachile, ceviche): congelación previa",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0735",
+   "es": "Si lo pones en carta",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0736",
+   "es": "A -20 °C durante al menos 24 horas o a -35 °C durante al menos 15 horas, o pescado que ya llegue tratado del proveedor (RD 1021/2022, art. 8.1). Anótalo en el registro",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Quesos, crema y tortilla envasada a la temperatura de su etiqueta",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Lo que no está en la tabla de temperaturas del real decreto va a la que marque la etiqueta del fabricante (RD 1021/2022, art. 4.2)",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0739",
+   "es": "Trazabilidad y registros: lotes, temperaturas y proveedores",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0740",
+   "es": "Desde la primera compra",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0741",
+   "es": "Lote y fecha de la carne, la tortilla y los quesos, hora de marinado y de montaje de cada cono, temperaturas del frío y del caliente y proveedor de cada materia prima",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "Fichas técnicas por taco y por salsa con sus alérgenos",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P24",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "Gluten (tortilla de harina de la gringa, cerveza), leche (quesos, crema), cacahuete y sésamo (salsa macha, moles), frutos de cáscara (moles), mostaza y sulfitos según receta. Con la calculadora del pack, el coste de cada uno",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P30",
+    "P24",
+    "P28",
+    "P31",
+    "P08",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "En la venta a distancia, la información de alérgenos tiene que estar disponible antes de que el cliente compre (Reglamento (UE) 1169/2011, art. 14). Revisa la ficha de cada taco en cada plataforma",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P32",
+    "P12",
+    "P29",
+    "P33",
+    "P28",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0749",
+   "es": "Envases y bolsas que mantengan la temperatura durante el transporte (RD 1021/2022, art. 4.3), también en el reparto de la plataforma; la orden «para armar» (tortilla y relleno aparte) llega mejor",
+   "donde": [
+    "TAQC · F3 - Cocina, trompo y sanidad!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P13",
+    "P35",
+    "P34",
+    "P36",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0751",
+   "es": "FASE 4: PERSONAL, FORMACIÓN, PREVENCIÓN Y ALÉRGENOS (semanas 10-14)",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!A2"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "La taquería va al convenio provincial de hostelería: el art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería no nombra la palabra, pero incluye los restaurantes. Pon su salario más bajo en la hoja de Supuestos del plan",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P37",
+    "P12",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "Contratar al segundo taquero antes de abrir",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0758",
+   "es": "Que aprenda contigo el marinado, el montaje del cono y el corte antes de abrir: si sólo tú sabes llevar el trompo, una baja cierra la taquería",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0761",
+   "es": "Obligatorio para toda la plantilla (art. 34.9 ET), también a tiempo parcial. Acuerda con tu gestoría cómo llevarlo y consérvalo",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0769",
+   "es": "La da y la acredita la empresa (no hay un documento oficial que sacar): higiene, temperaturas del trompo y de las salsas, alérgenos y contacto cruzado",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P05",
+    "P24",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0770",
+   "es": "Formación del trompo: marinado, montaje del cono y corte",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0771",
+   "es": "Adobo, capas, piña, encendido, corte fino de la capa hecha y gramaje por taco: es inversión, no gasto",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0774",
+   "es": "Obligatorio (Ley 31/1995): cortes en el trompo, quemaduras de la plancha y la freidora, gas, calor y cargas",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0778",
+   "es": "Información de alérgenos por escrito o de palabra con registro",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P33",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "Por escrito en la carta o, si la das de palabra, registrada por escrito o en formato electrónico en el local, accesible y con un cartel que diga dónde pedirla (RD 126/2015, arts. 4.1.b y 6.5.a)",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0780",
+   "es": "Cartel de alérgenos en la barra de salsas",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P24",
+    "P28",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0781",
+   "es": "Cada salsa con sus alérgenos a la vista del cliente: la macha lleva cacahuete o sésamo, o los dos, según tu receta. Revísalo cada vez que cambie una receta",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P32",
+    "P29",
+    "P24",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "No prometer «sin gluten» con comal o freidora compartidos",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "«Sin gluten» sólo con 20 mg/kg o menos tal como se vende (Reglamento de Ejecución (UE) 828/2014). La tortilla de maíz no lleva gluten por receta, pero el comal, la freidora o las pinzas compartidos con la tortilla de harina rompen la promesa: informa del alérgeno y de las trazas, no lo prometas",
+   "donde": [
+    "TAQC · F4 - Personal y alérgenos!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22",
+    "P13",
+    "P29",
+    "P28",
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0786",
+   "es": "FASE 5: CARTA, MARCA, DELIVERY Y PROVEEDORES (semanas 8-16)",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!A2"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "Decidir el tipo de taquería y su carta",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0789",
+   "es": "De barrio sin trompo, con trompo y barra de salsas (este plan), con tortillería propia o taquería-cantina con barra de mezcal: cada una con otra inversión, otro local y otro margen. Para un restaurante mexicano de mesa con 60-100 plazas, la Guía Restaurante Mexicano de AI Chef Pro",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P30",
+    "P24",
+    "P14",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0790",
+   "es": "Carta de 8-10 tacos con su escandallo",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0792",
+   "es": "Escandalla cada taco, la orden y la gringa, no sólo el pastor: carnitas, suadero y barbacoa rinden menos y el aguacate sube y baja. Usa la calculadora del trompo y escandallo del pack",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "IVA de la carta para llevar: tacos al 10 %, alcohol y bebidas azucaradas al 21 %",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "Gestoría / Titular",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!C7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "En sala, todo al 10 % (Ley 37/1992, art. 91.Uno.2.2.º). Para llevar y a domicilio, la comida al 10 %, pero el alcohol y las aguas frescas, los refrescos y los zumos con azúcares o edulcorantes añadidos van al 21 % (art. 91.Uno.1.1.º a y b). Configúralo así en el TPV y en cada plataforma",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P38",
+    "P12",
+    "P39",
+    "P30",
+    "P34",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Los recipientes de plástico de un solo uso para llevar se cobran aparte en el tique (Ley 7/2022, art. 55). Las bandejas de cartón sin recubrimiento de plástico no lo son; las de aluminio, pregúntalo a tu proveedor",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "Importador de chiles secos y producto mexicano: plazo y segundo proveedor",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0801",
+   "es": "Los chiles secos, el achiote, la masa y el producto importado tardan semanas en llegar: pide el plazo por escrito, ten stock de seguridad y un segundo proveedor. Es el cuello de botella real del negocio",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Proveedor de tortilla: lote, temperatura de recepción y segundo proveedor",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0803",
+   "es": "Tortilla de maíz nixtamalizado con lote y fecha, recibida a la temperatura que marque su etiqueta y anotada. Pide muestra a dos fabricantes y precio por caja: el plan la estima con un precio de referencia: pon el tuyo",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Lee la comisión (del 15 al 35 % más IVA según la plataforma y la zona), cada cuánto liquidan, quién paga las promociones y el coste de la tablet. Fija un techo: en este plan, el 12 % de las ventas",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "Calcula el margen de la orden y de la gringa en la plataforma con su comisión y el envase; la recogida en el local no paga comisión: empújala",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34",
+    "P36",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0809",
+   "es": "Semanas 2-8",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0810",
+   "es": "Comprueba antes que el nombre no está registrado en tu clase (servicios de restauración)",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Identidad, fotos y web con la carta y los alérgenos",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15",
+    "P29",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "Fotos reales del trompo y de los tacos; web con la carta, los alérgenos, el horario, los pedidos para recoger y la cláusula de protección de datos de cada canal",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P29",
+    "P05",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0815",
+   "es": "Ficha de Google Business, redes y fechas mexicanas",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0816",
+   "es": "Horario de comidas y cenas, fotos del trompo y respuesta a cada reseña. En el calendario, la Independencia de México (15 y 16 de septiembre) y el Día de Muertos (1 y 2 de noviembre)",
+   "donde": [
+    "TAQC · F5 - Carta, marca y delivery!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0821",
+   "es": "Abrir en enero, el Mes 1 del plan",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0823",
+   "es": "El plan arranca en enero y la rampa cae sobre los meses más flojos, enero y febrero: por eso el fondo de maniobra cuenta. Si abres en otro mes, gira la fila de estacionalidad de la Tesorería",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0825",
+   "es": "Plan de limpieza de la cocina, el trompo y la barra de salsas",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P24",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0826",
+   "es": "Trompo y bandeja, plancha, comal, freidora, filtros de la campana extractora, mesa refrigerada y recipientes de salsas, con su registro",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P02",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0827",
+   "es": "Servicios de prueba con la carta completa",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0829",
+   "es": "Varios servicios de prueba para ajustar el marinado, el gramaje por taco y los tiempos del pase antes de abrir",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0832",
+   "es": "Cámara de la carne, mesa de salsas, caliente de los guisados, sonda del trompo y la hoja de limpieza; corrige cualquier desviación antes de servir",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12",
+    "P05",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "Calendario de limpieza de la campana extractora y del conducto",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0839",
+   "es": "Al menos una vez al año (Madrid, Ordenanza 4/2021, art. 23); los filtros de grasa, con la frecuencia que fije tu plan de limpieza",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0840",
+   "es": "Revisión de la instalación de gas cada 5 años",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0841",
+   "es": "Calendario",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!D12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0842",
+   "es": "Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 08). Apunta la fecha",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0843",
+   "es": "Medir el rendimiento del trompo y recalcular",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0844",
+   "es": "Semanas 1-12",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0845",
+   "es": "Pesa el cono crudo y el sobrante al cierre cada día con la hoja del Kit de Tareas Recurrentes: Taquería Mexicana y lleva la media a la calculadora del pack: mide en el kit, recalcula en el plan",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Cuadrante del sábado por la noche y de las fechas fuertes",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0847",
+   "es": "Agosto",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0848",
+   "es": "Diciembre es el pico del año y septiembre y noviembre traen las fechas mexicanas: prepara el cuadrante y el stock con tiempo",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0851",
+   "es": "Ventas, comisión, promociones y envases: si la plataforma pasa del 12 % de las ventas o su margen no cubre la comisión, recorta o sube precio. Reparto propio, sólo con contrato laboral y cuando el volumen lo pague",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P35",
+    "P34",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0853",
+   "es": "Comensales al día, ticket, mercancía y personal frente a la cuenta de resultados del Excel; revisa el escandallo cuando cambie el precio de la carne, la tortilla o el aguacate",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P42",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0855",
+   "es": "Enero y febrero son los meses más flojos y coinciden con el arranque: mira el saldo de cada mes antes de un pago grande",
+   "donde": [
+    "TAQC · F6 - Apertura y 90 días!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GRC": {
+   "salida": "scripts/productos-digitales/business-plans-en-12/textos_en/GRC.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 102,
+   "cadenas": [
+    {
+     "id": "c0612",
+     "es": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (semanas 1-4)",
+     "en_actual": "PHASE 1: BUSINESS SETUP & TAXES (weeks 1-4)",
+     "de": "GPIZ-check c0617 (PIZC F1 - Constitución!A2)",
+     "donde": [
+      "TAQC · F1 - Constitución!A2"
+     ]
+    },
+    {
+     "id": "c0618",
+     "es": "Titular / Técnico",
+     "en_actual": "Owner / Code consultant",
+     "de": "GPIZ-check c0623 (PIZC F1 - Constitución!C5)",
+     "donde": [
+      "TAQC · F1 - Constitución!C5"
+     ]
+    },
+    {
+     "id": "c0619",
+     "es": "Antes de firmar el alquiler",
+     "en_actual": "Before signing the lease",
+     "de": "GPIZ-check c0624 (PIZC F1 - Constitución!D5 / PIZC F1 - Constitución!D6)",
+     "donde": [
+      "TAQC · F1 - Constitución!D5",
+      "TAQC · F1 - Constitución!D6",
+      "TAQC · F1 - Constitución!D7"
+     ]
+    },
+    {
+     "id": "c0626",
+     "es": "Elegir forma jurídica: SL unipersonal o autónomo",
+     "en_actual": "Choose your legal structure: LLC vs S corp",
+     "de": "GPIZ-check c0629 (PIZC F1 - Constitución!B7)",
+     "donde": [
+      "TAQC · F1 - Constitución!B8"
+     ]
+    },
+    {
+     "id": "c0627",
+     "es": "Gestoría",
+     "en_actual": "Accountant",
+     "de": "GR c0630 (PIZC F1 - Constitución!C7 / PIZC F1 - Constitución!C9)",
+     "donde": [
+      "TAQC · F1 - Constitución!C8",
+      "TAQC · F1 - Constitución!C10",
+      "TAQC · F1 - Constitución!C11",
+      "TAQC · F4 - Personal y alérgenos!C5"
+     ]
+    },
+    {
+     "id": "c0629",
+     "es": "El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF: compara las dos opciones con tu gestoría con las cifras del plan",
+     "en_actual": "The financial plan assumes an effective income tax rate of 25% (21% federal plus state), as for a C corporation. An LLC taxed as a pass-through pays through your personal return instead, and early losses carry forward as net operating losses. Compare an LLC vs S corp election with your CPA, using the plan's numbers.",
+     "de": "GPIZ-check c0632 (PIZC F1 - Constitución!E7)",
+     "donde": [
+      "TAQC · F1 - Constitución!E8"
+     ]
+    },
+    {
+     "id": "c0630",
+     "es": "Constituir la SL o darte de alta como autónomo",
+     "en_actual": "Form the LLC (or corporation) with your state",
+     "de": "GPIZ-check c0633 (PIZC F1 - Constitución!B8)",
+     "donde": [
+      "TAQC · F1 - Constitución!B9"
+     ]
+    },
+    {
+     "id": "c0631",
+     "es": "Notaría / Gestoría",
+     "en_actual": "Attorney / CPA",
+     "de": "GPIZ-check c0634 (PIZC F1 - Constitución!C8)",
+     "donde": [
+      "TAQC · F1 - Constitución!C9"
+     ]
+    },
+    {
+     "id": "c0632",
+     "es": "Semanas 1-2",
+     "en_actual": "Weeks 1-2",
+     "de": "GPIZ-check c0635 (PIZC F1 - Constitución!D8)",
+     "donde": [
+      "TAQC · F1 - Constitución!D9"
+     ]
+    },
+    {
+     "id": "c0633",
+     "es": "La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)",
+     "en_actual": "Filing fees, annual reports and franchise taxes vary by state. Check your Secretary of State's website before you file.",
+     "de": "GPIZ-check c0636 (PIZC F1 - Constitución!E8)",
+     "donde": [
+      "TAQC · F1 - Constitución!E9"
+     ]
+    },
+    {
+     "id": "c0635",
+     "es": "Semana 2",
+     "en_actual": "Week 2",
+     "de": "GPIZ-check c0638 (PIZC F1 - Constitución!D9 / PIZC F1 - Constitución!D10)",
+     "donde": [
+      "TAQC · F1 - Constitución!D10",
+      "TAQC · F1 - Constitución!D11",
+      "TAQC · F1 - Constitución!D13"
+     ]
+    },
+    {
+     "id": "c0637",
+     "es": "Alta en la Seguridad Social (administrador o autónomo)",
+     "en_actual": "Workers' compensation insurance and payroll account",
+     "de": "GPIZ-check c0640 (PIZC F1 - Constitución!B10)",
+     "donde": [
+      "TAQC · F1 - Constitución!B11"
+     ]
+    },
+    {
+     "id": "c0638",
+     "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+     "en_actual": "Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.",
+     "de": "GPIZ-check c0641 (PIZC F1 - Constitución!E10)",
+     "donde": [
+      "TAQC · F1 - Constitución!E11"
+     ]
+    },
+    {
+     "id": "c0639",
+     "es": "Certificado digital",
+     "en_actual": "IRS and state tax portal online accounts",
+     "de": "GR c0642 (PIZC F1 - Constitución!B11)",
+     "donde": [
+      "TAQC · F1 - Constitución!B12"
+     ]
+    },
+    {
+     "id": "c0640",
+     "es": "Imprescindible para Hacienda, la Seguridad Social, el ayuntamiento y el registro sanitario",
+     "en_actual": "Your EIN, state registrations and entity documents come up in almost every later step: the bank, the lender, the city, and the health department.",
+     "de": "GPIZ-check c0643 (PIZC F1 - Constitución!E11)",
+     "donde": [
+      "TAQC · F1 - Constitución!E12"
+     ]
+    },
+    {
+     "id": "c0641",
+     "es": "Cuenta bancaria y tarjeta del negocio",
+     "en_actual": "Business bank account and business card",
+     "de": "GPIZ-check c0644 (PIZC F1 - Constitución!B12)",
+     "donde": [
+      "TAQC · F1 - Constitución!B13"
+     ]
+    },
+    {
+     "id": "c0642",
+     "es": "Separadas de las personales: por ellas pasan las liquidaciones del datáfono y de las plataformas y los pagos a proveedores",
+     "en_actual": "Keep them separate from personal accounts: card terminal settlements, delivery marketplace payouts and supplier payments all run through them.",
+     "de": "GPIZ-check c0645 (PIZC F1 - Constitución!E12)",
+     "donde": [
+      "TAQC · F1 - Constitución!E13"
+     ]
+    },
+    {
+     "id": "c0643",
+     "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+     "en_actual": "Accountant / bookkeeper and a POS that reports sales tax",
+     "de": "GPIZ-check c0646 (PIZC F1 - Constitución!B13)",
+     "donde": [
+      "TAQC · F1 - Constitución!B14"
+     ]
+    },
+    {
+     "id": "c0644",
+     "es": "Semanas 2-4",
+     "en_actual": "Weeks 2-4",
+     "de": "GPIZ-check c0647 (PIZC F1 - Constitución!D13 / PIZC F1 - Constitución!D14)",
+     "donde": [
+      "TAQC · F1 - Constitución!D14",
+      "TAQC · F1 - Constitución!D15"
+     ]
+    },
+    {
+     "id": "c0645",
+     "es": "Nóminas y contratos de la plantilla. El software de facturación del TPV tiene que cumplir Veri*factu: consulta con tu gestoría la fecha que te aplica antes de comprar el TPV",
+     "en_actual": "Payroll and onboarding for your team. Pick a POS that calculates and reports sales tax by jurisdiction before you buy it, and ask your CPA how often your state wants sales tax returns.",
+     "de": "GPIZ-check c0648 (PIZC F1 - Constitución!E13)",
+     "donde": [
+      "TAQC · F1 - Constitución!E14"
+     ]
+    },
+    {
+     "id": "c0646",
+     "es": "Presentar el plan al banco y pedir dos ofertas de préstamo",
+     "en_actual": "Take the plan to two lenders and compare loan offers",
+     "de": "GPIZ-check c0649 (PIZC F1 - Constitución!B14)",
+     "donde": [
+      "TAQC · F1 - Constitución!B15"
+     ]
+    },
+    {
+     "id": "c0648",
+     "es": "Seguro de responsabilidad civil y multirriesgo con incendio",
+     "en_actual": "General liability and property insurance with fire coverage",
+     "de": "GPIZ-check c0651 (PIZC F1 - Constitución!B15)",
+     "donde": [
+      "TAQC · F1 - Constitución!B16"
+     ]
+    },
+    {
+     "id": "c0649",
+     "es": "Corredor de seguros",
+     "en_actual": "Insurance broker",
+     "de": "GPIZ-check c0652 (PIZC F1 - Constitución!C15)",
+     "donde": [
+      "TAQC · F1 - Constitución!C16"
+     ]
+    },
+    {
+     "id": "c0650",
+     "es": "Antes de la obra",
+     "en_actual": "Before construction",
+     "de": "GPIZ-check c0653 (PIZC F1 - Constitución!D15 / PIZC F2 - Local, humos y licencia!D11)",
+     "donde": [
+      "TAQC · F1 - Constitución!D16",
+      "TAQC · F2 - Local, humos y gas!D11"
+     ]
+    },
+    {
+     "id": "c0658",
+     "es": "Semanas 3-6",
+     "en_actual": "Weeks 3-6",
+     "de": "GPIZ-check c0663 (PIZC F2 - Local, humos y licencia!D5)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D5"
+     ]
+    },
+    {
+     "id": "c0661",
+     "es": "Técnico / Distribuidora",
+     "en_actual": "Electrician / Utility",
+     "de": "GPIZ-check c0666 (PIZC F2 - Local, humos y licencia!C6)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C6"
+     ]
+    },
+    {
+     "id": "c0662",
+     "es": "Antes de firmar",
+     "en_actual": "Before signing",
+     "de": "GPIZ-check c0667 (PIZC F2 - Local, humos y licencia!D6 / PIZC F2 - Local, humos y licencia!D7)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D6",
+      "TAQC · F2 - Local, humos y gas!D7",
+      "TAQC · F2 - Local, humos y gas!D8"
+     ]
+    },
+    {
+     "id": "c0665",
+     "es": "Técnico",
+     "en_actual": "Architect / engineer",
+     "de": "GR c0670 (PIZC F2 - Local, humos y licencia!C7)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C7"
+     ]
+    },
+    {
+     "id": "c0666",
+     "es": "Conducto exclusivo, continuo y estanco hasta la cubierta, por patio o fachada, con el permiso de la comunidad de propietarios si cruza zonas comunes",
+     "en_actual": "A dedicated, continuous, sealed duct to the roof, through a shaft or up an exterior wall, with the landlord's written approval if it crosses shared areas or the building exterior.",
+     "de": "GPIZ-check c0671 (PIZC F2 - Local, humos y licencia!E7)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!E7"
+     ]
+    },
+    {
+     "id": "c0667",
+     "es": "Negociar el alquiler: carencia de obra y fianza",
+     "en_actual": "Negotiate the lease: free-rent period during build-out and security deposit",
+     "de": "GPIZ-check c0672 (PIZC F2 - Local, humos y licencia!B8)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!B8"
+     ]
+    },
+    {
+     "id": "c0670",
+     "es": "Titular / Abogado",
+     "en_actual": "Owner / Attorney",
+     "de": "GPIZ-check c0675 (PIZC F2 - Local, humos y licencia!C9)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C9"
+     ]
+    },
+    {
+     "id": "c0671",
+     "es": "Semana 6",
+     "en_actual": "Week 6",
+     "de": "GPIZ-check c0676 (PIZC F2 - Local, humos y licencia!D9)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D9"
+     ]
+    },
+    {
+     "id": "c0674",
+     "es": "Arquitecto/a o ingeniero/a",
+     "en_actual": "Architect / Engineer",
+     "de": "GPIZ-check c0679 (PIZC F2 - Local, humos y licencia!C10)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C10"
+     ]
+    },
+    {
+     "id": "c0675",
+     "es": "Semanas 6-8",
+     "en_actual": "Weeks 6-8",
+     "de": "GPIZ-check c0680 (PIZC F2 - Local, humos y licencia!D10 / PIZC F3 - Cocina, horno y sanidad!D5)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D10",
+      "TAQC · F3 - Cocina, trompo y sanidad!D5"
+     ]
+    },
+    {
+     "id": "c0677",
+     "es": "Licencia o declaración responsable de la actividad",
+     "en_actual": "Zoning approval, business license and beer and wine license application",
+     "de": "GPIZ-check c0682 (PIZC F2 - Local, humos y licencia!B11)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!B11"
+     ]
+    },
+    {
+     "id": "c0678",
+     "es": "Técnico / Ayuntamiento",
+     "en_actual": "Owner / City planning office",
+     "de": "GPIZ-check c0683 (PIZC F2 - Local, humos y licencia!C11 / PIZC F2 - Local, humos y licencia!C12)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C11",
+      "TAQC · F2 - Local, humos y gas!C12"
+     ]
+    },
+    {
+     "id": "c0681",
+     "es": "Semanas 6-8, antes de empezar la obra",
+     "en_actual": "Weeks 6-8, before construction starts",
+     "de": "GPIZ-check c0686 (PIZC F2 - Local, humos y licencia!D12)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D12"
+     ]
+    },
+    {
+     "id": "c0683",
+     "es": "Solicitar la autorización de la terraza",
+     "en_actual": "Apply for the patio permit",
+     "de": "GPIZ-check c0688 (PIZC F2 - Local, humos y licencia!B13)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!B13"
+     ]
+    },
+    {
+     "id": "c0684",
+     "es": "Titular / Ayuntamiento",
+     "en_actual": "Owner / City",
+     "de": "GPIZ-check c0689 (PIZC F2 - Local, humos y licencia!C13)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C13"
+     ]
+    },
+    {
+     "id": "c0685",
+     "es": "Con la licencia de la actividad",
+     "en_actual": "Together with the zoning approval",
+     "de": "GPIZ-check c0690 (PIZC F2 - Local, humos y licencia!D13)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D13"
+     ]
+    },
+    {
+     "id": "c0688",
+     "es": "Instalador de gas habilitado",
+     "en_actual": "Licensed gas contractor",
+     "de": "GPIZ-check c0693 (PIZC F2 - Local, humos y licencia!C14)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C14",
+      "TAQC · F6 - Apertura y 90 días!C12"
+     ]
+    },
+    {
+     "id": "c0689",
+     "es": "Durante la obra",
+     "en_actual": "During construction",
+     "de": "GPIZ-check c0694 (PIZC F2 - Local, humos y licencia!D14)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D14"
+     ]
+    },
+    {
+     "id": "c0692",
+     "es": "Instalador / Técnico",
+     "en_actual": "Installer / Engineer",
+     "de": "GPIZ-check c0701 (PIZC F2 - Local, humos y licencia!C16)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C15"
+     ]
+    },
+    {
+     "id": "c0693",
+     "es": "Semanas 8-12",
+     "en_actual": "Weeks 8-12",
+     "de": "GPIZ-check c0698 (PIZC F2 - Local, humos y licencia!D15 / PIZC F2 - Local, humos y licencia!D16)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D15",
+      "TAQC · F2 - Local, humos y gas!D16",
+      "TAQC · F2 - Local, humos y gas!D17",
+      "TAQC · F5 - Carta, marca y delivery!D10"
+     ]
+    },
+    {
+     "id": "c0696",
+     "es": "Constructor",
+     "en_actual": "Contractor",
+     "de": "GR c0697 (PIZC F2 - Local, humos y licencia!C15)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C16"
+     ]
+    },
+    {
+     "id": "c0697",
+     "es": "Paredes alicatadas, suelo antideslizante, falsos techos lavables, lavamanos de accionamiento no manual, aseos (uno adaptado) y aislamiento acústico si hay vecinos",
+     "en_actual": "Smooth, nonabsorbent walls, slip-resistant floors, washable ceilings, a handwashing sink with hands-free controls, restrooms (one ADA-accessible), and sound insulation if you have neighbors.",
+     "de": "GPIZ-check c0699 (PIZC F2 - Local, humos y licencia!E15)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!E16"
+     ]
+    },
+    {
+     "id": "c0702",
+     "es": "Semanas 10-12",
+     "en_actual": "Weeks 10-12",
+     "de": "GPIZ-check c0761 (PIZC F4 - Personal y prevención!D7)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D18",
+      "TAQC · F4 - Personal y alérgenos!D7"
+     ]
+    },
+    {
+     "id": "c0705",
+     "es": "Instalador autorizado / Técnico",
+     "en_actual": "Licensed electrician / Inspector",
+     "de": "GPIZ-check c0709 (PIZC F2 - Local, humos y licencia!C19)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!C19"
+     ]
+    },
+    {
+     "id": "c0706",
+     "es": "Durante la obra y al acabarla",
+     "en_actual": "During and after construction",
+     "de": "GPIZ-check c0710 (PIZC F2 - Local, humos y licencia!D19)",
+     "donde": [
+      "TAQC · F2 - Local, humos y gas!D19"
+     ]
+    },
+    {
+     "id": "c0713",
+     "es": "Semanas 8-10",
+     "en_actual": "Weeks 8-10",
+     "de": "GPIZ-check c0717 (PIZC F3 - Cocina, horno y sanidad!D6)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!D6"
+     ]
+    },
+    {
+     "id": "c0715",
+     "es": "Declaración responsable al registro sanitario autonómico",
+     "en_actual": "Submit your plans for health department plan review and apply for the health permit",
+     "de": "GPIZ-check c0722 (PIZC F3 - Cocina, horno y sanidad!B8)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!B7"
+     ]
+    },
+    {
+     "id": "c0716",
+     "es": "Titular / Gestoría",
+     "en_actual": "Owner / Health department",
+     "de": "GPIZ-check c0723 (PIZC F3 - Cocina, horno y sanidad!C8)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!C7"
+     ]
+    },
+    {
+     "id": "c0717",
+     "es": "Antes de la primera prueba de carta",
+     "en_actual": "Before construction starts",
+     "de": "GPIZ-check c0724 (PIZC F3 - Cocina, horno y sanidad!D8)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!D7"
+     ]
+    },
+    {
+     "id": "c0720",
+     "es": "Consultor / Titular",
+     "en_actual": "Consultant / Owner",
+     "de": "GPIZ-check c0727 (PIZC F3 - Cocina, horno y sanidad!C9)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!C8"
+     ]
+    },
+    {
+     "id": "c0744",
+     "es": "Alérgenos en la venta por plataforma o por tu web",
+     "en_actual": "Allergens on delivery marketplaces and on your website",
+     "de": "GPIZ-check c0739 (PIZC F3 - Cocina, horno y sanidad!B14)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!B17"
+     ]
+    },
+    {
+     "id": "c0745",
+     "es": "Antes de darte de alta",
+     "en_actual": "Before you sign up",
+     "de": "GPIZ-check c0740 (PIZC F3 - Cocina, horno y sanidad!D14)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!D17"
+     ]
+    },
+    {
+     "id": "c0747",
+     "es": "Temperatura de los pedidos que salen del local",
+     "en_actual": "Temperature of orders leaving the shop",
+     "de": "GPIZ-check c0747 (PIZC F3 - Cocina, horno y sanidad!B17)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!B18"
+     ]
+    },
+    {
+     "id": "c0748",
+     "es": "Antes del primer pedido",
+     "en_actual": "Before the first order",
+     "de": "GPIZ-check c0748 (PIZC F3 - Cocina, horno y sanidad!D17)",
+     "donde": [
+      "TAQC · F3 - Cocina, trompo y sanidad!D18"
+     ]
+    },
+    {
+     "id": "c0752",
+     "es": "Copiar la tabla salarial del convenio provincial de hostelería",
+     "en_actual": "Set pay rates against the state and local minimum wage",
+     "de": "GPIZ-check c0755 (PIZC F4 - Personal y prevención!B5)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B5"
+     ]
+    },
+    {
+     "id": "c0753",
+     "es": "Semana 10",
+     "en_actual": "Week 10",
+     "de": "GPIZ-check c0756 (PIZC F4 - Personal y prevención!D5)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!D5"
+     ]
+    },
+    {
+     "id": "c0755",
+     "es": "Contratos por escrito a jornada completa y parcial",
+     "en_actual": "Offer letters for full-time and part-time staff",
+     "de": "GPIZ-check c0758 (PIZC F4 - Personal y prevención!B6)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B6"
+     ]
+    },
+    {
+     "id": "c0756",
+     "es": "Con su horario y su grupo del convenio. Una factura de «autónomo» con tu horario y tu dirección es falso autónomo (art. 1.1 del Estatuto de los Trabajadores)",
+     "en_actual": "With schedule, pay rate and role. Collect a W-4 and an I-9 (with identity documents) from every hire, the I-9 within 3 business days of the start date. Classify people correctly: a 1099 contractor who works your schedule at your address is a misclassification risk.",
+     "de": "GPIZ-check c0759 (PIZC F4 - Personal y prevención!E6)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!E6"
+     ]
+    },
+    {
+     "id": "c0759",
+     "es": "Registro de jornada",
+     "en_actual": "Time clock and overtime records",
+     "de": "GPIZ-check c0763 (PIZC F4 - Personal y prevención!B8)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B8"
+     ]
+    },
+    {
+     "id": "c0762",
+     "es": "Cuadrante de los dos servicios y del sábado por la noche",
+     "en_actual": "Schedule for both services and Saturday night",
+     "de": "GPIZ-check c0766 (PIZC F4 - Personal y prevención!B9)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B9"
+     ]
+    },
+    {
+     "id": "c0763",
+     "es": "Semana 12",
+     "en_actual": "Week 12",
+     "de": "GPIZ-check c0767 (PIZC F4 - Personal y prevención!D9)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!D9"
+     ]
+    },
+    {
+     "id": "c0764",
+     "es": "Comidas y cenas de martes a domingo, con el lunes de cierre; el sábado por la noche hacen falta unas cinco personas",
+     "en_actual": "Lunch and dinner, Tuesday to Sunday, closed Mondays; Saturday night needs about five people.",
+     "de": "GPIZ-check c0768 (PIZC F4 - Personal y prevención!E9)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!E9"
+     ]
+    },
+    {
+     "id": "c0765",
+     "es": "Reparto propio: sólo con contrato laboral",
+     "en_actual": "Own delivery drivers: W-2 employees only",
+     "de": "GPIZ-check c0769 (PIZC F4 - Personal y prevención!B10)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B10"
+     ]
+    },
+    {
+     "id": "c0766",
+     "es": "Si repartes tú",
+     "en_actual": "If you deliver yourself",
+     "de": "GPIZ-check c0770 (PIZC F4 - Personal y prevención!D10)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!D10"
+     ]
+    },
+    {
+     "id": "c0767",
+     "es": "El repartidor propio es hostelería (ALEH VI, art. 4) y trabaja por cuenta ajena; en el reparto organizado por una plataforma digital, la ley presume la relación laboral (ET, disposición adicional 23.ª). Nunca con «autónomos»",
+     "en_actual": "Your own drivers are employees on payroll (W-2), and because they drive their own cars on your behalf you also need hired and non-owned auto insurance (check your state). Do not treat them as independent contractors. Drivers for DoorDash, Uber Eats and Grubhub work for the marketplace, not for you.",
+     "de": "GPIZ-check c0771 (PIZC F4 - Personal y prevención!E10)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!E10"
+     ]
+    },
+    {
+     "id": "c0768",
+     "es": "Formación de manipuladores de alimentos",
+     "en_actual": "Food handler cards and a Certified Food Protection Manager (CFPM)",
+     "de": "GPIZ-check c0775 (PIZC F4 - Personal y prevención!B12)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B11"
+     ]
+    },
+    {
+     "id": "c0772",
+     "es": "Plan de prevención de riesgos laborales",
+     "en_actual": "OSHA basics: safety plan and training",
+     "de": "GPIZ-check c0779 (PIZC F4 - Personal y prevención!B14)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B13"
+     ]
+    },
+    {
+     "id": "c0773",
+     "es": "Servicio de prevención",
+     "en_actual": "Insurance carrier / Consultant",
+     "de": "GPIZ-check c0780 (PIZC F4 - Personal y prevención!C14 / PIZC F4 - Personal y prevención!C15)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!C13",
+      "TAQC · F4 - Personal y alérgenos!C14"
+     ]
+    },
+    {
+     "id": "c0775",
+     "es": "Vigilancia de la salud de la plantilla",
+     "en_actual": "Employee health policy and first aid",
+     "de": "GPIZ-check c0782 (PIZC F4 - Personal y prevención!B15)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!B14"
+     ]
+    },
+    {
+     "id": "c0776",
+     "es": "Al contratar",
+     "en_actual": "At hire",
+     "de": "GPIZ-check c0783 (PIZC F4 - Personal y prevención!D15)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!D14"
+     ]
+    },
+    {
+     "id": "c0777",
+     "es": "Reconocimientos médicos ofrecidos a cada persona que entra",
+     "en_actual": "Have every new hire sign an employee health agreement (report illness symptoms; Food Code 2-201) and stock a first aid kit.",
+     "de": "GPIZ-check c0784 (PIZC F4 - Personal y prevención!E15)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!E14"
+     ]
+    },
+    {
+     "id": "c0783",
+     "es": "Antes de imprimir la carta",
+     "en_actual": "Before printing the menu",
+     "de": "GPIZ-check c0743 (PIZC F3 - Cocina, horno y sanidad!D15 / PIZC F5 - Carta, marca y delivery!D6)",
+     "donde": [
+      "TAQC · F4 - Personal y alérgenos!D17"
+     ]
+    },
+    {
+     "id": "c0788",
+     "es": "Semana 8",
+     "en_actual": "Week 8",
+     "de": "GPIZ-check c0793 (PIZC F5 - Carta, marca y delivery!D5)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!D5"
+     ]
+    },
+    {
+     "id": "c0791",
+     "es": "Semanas 10-14",
+     "en_actual": "Weeks 10-14",
+     "de": "GPIZ-check c0751 (PIZC F3 - Cocina, horno y sanidad!D18 / PIZC F5 - Carta, marca y delivery!D9)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!D6",
+      "TAQC · F5 - Carta, marca y delivery!D11"
+     ]
+    },
+    {
+     "id": "c0796",
+     "es": "Aviso en la carta: el cliente puede llevarse lo que no consuma",
+     "en_actual": "Take-home policy: to-go boxes for leftovers",
+     "de": "GPIZ-check c0797 (PIZC F5 - Carta, marca y delivery!B7)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!B8"
+     ]
+    },
+    {
+     "id": "c0797",
+     "es": "Sin coste, salvo el del envase de plástico de un solo uso si lo hay, y avisado de forma visible, mejor en la carta (Ley 1/2025, art. 8). Ten envases para ello",
+     "en_actual": "If you offer to-go boxes for leftovers, decide whether you charge for them and keep them in stock; check your local packaging rules.",
+     "de": "GPIZ-check c0798 (PIZC F5 - Carta, marca y delivery!E7)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!E8"
+     ]
+    },
+    {
+     "id": "c0798",
+     "es": "Cobro aparte del envase de plástico de un solo uso",
+     "en_actual": "Local packaging ordinances: fees and bans",
+     "de": "GPIZ-check c0799 (PIZC F5 - Carta, marca y delivery!B8)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!B9"
+     ]
+    },
+    {
+     "id": "c0804",
+     "es": "Contrato y alta en las plataformas de reparto",
+     "en_actual": "Sign up with the delivery marketplaces (DoorDash, Uber Eats, Grubhub)",
+     "de": "GPIZ-check c0803 (PIZC F5 - Carta, marca y delivery!B10)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!B12"
+     ]
+    },
+    {
+     "id": "c0806",
+     "es": "Precios para la plataforma y para la recogida en el local",
+     "en_actual": "Prices for the marketplace and for pickup at the shop",
+     "de": "GPIZ-check c0805 (PIZC F5 - Carta, marca y delivery!B11)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!B13"
+     ]
+    },
+    {
+     "id": "c0808",
+     "es": "Registro de la marca en la OEPM",
+     "en_actual": "Trademark search and registration (USPTO)",
+     "de": "GPIZ-check c0655 (PIZC F1 - Constitución!B16)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!B14"
+     ]
+    },
+    {
+     "id": "c0812",
+     "es": "Diseñador/a",
+     "en_actual": "Designer",
+     "de": "GPIZ-check c0808 (PIZC F5 - Carta, marca y delivery!C12)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!C15"
+     ]
+    },
+    {
+     "id": "c0813",
+     "es": "Semanas 8-14",
+     "en_actual": "Weeks 8-14",
+     "de": "GPIZ-check c0809 (PIZC F5 - Carta, marca y delivery!D12)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!D15"
+     ]
+    },
+    {
+     "id": "c0817",
+     "es": "Música ambiental: licencias de SGAE y AGEDI-AIE",
+     "en_actual": "Background music: ASCAP, BMI and SESAC licenses",
+     "de": "GPIZ-check c0819 (PIZC F5 - Carta, marca y delivery!B16)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!B17"
+     ]
+    },
+    {
+     "id": "c0818",
+     "es": "Son dos licencias de propiedad intelectual, distintas de la municipal: pide las dos si pones música",
+     "en_actual": "These are separate music licenses from performing-rights organizations, different from any city permit. Get all of them if you play music, or use a streaming service licensed for business.",
+     "de": "GPIZ-check c0820 (PIZC F5 - Carta, marca y delivery!E16)",
+     "donde": [
+      "TAQC · F5 - Carta, marca y delivery!E17"
+     ]
+    },
+    {
+     "id": "c0820",
+     "es": "FASE 6: APERTURA Y PRIMEROS 90 DÍAS",
+     "en_actual": "PHASE 6: OPENING & FIRST 90 DAYS",
+     "de": "GPIZ-check c0824 (PIZC F6 - Apertura y 90 días!A2)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!A2"
+     ]
+    },
+    {
+     "id": "c0824",
+     "es": "Empresa del ROESB",
+     "en_actual": "Licensed pest control operator",
+     "de": "GPIZ-check c0786 (PIZC F4 - Personal y prevención!C16)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!C6"
+     ]
+    },
+    {
+     "id": "c0828",
+     "es": "Semana previa",
+     "en_actual": "Week before opening",
+     "de": "GPIZ-check c0829 (PIZC F6 - Apertura y 90 días!D6)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!D8"
+     ]
+    },
+    {
+     "id": "c0830",
+     "es": "Comprobar temperaturas y registros del primer día",
+     "en_actual": "Check temperatures and records on day one",
+     "de": "GPIZ-check c0831 (PIZC F6 - Apertura y 90 días!B7)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!B9"
+     ]
+    },
+    {
+     "id": "c0831",
+     "es": "Día 1",
+     "en_actual": "Day 1",
+     "de": "GPIZ-check c0832 (PIZC F6 - Apertura y 90 días!D7)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!D9"
+     ]
+    },
+    {
+     "id": "c0833",
+     "es": "Inspección sanitaria: APPCC y registros a mano",
+     "en_actual": "Health inspection: written food safety plan and records at hand",
+     "de": "GPIZ-check c0834 (PIZC F6 - Apertura y 90 días!B8)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!B10"
+     ]
+    },
+    {
+     "id": "c0834",
+     "es": "Desde el día 1",
+     "en_actual": "From day 1",
+     "de": "GPIZ-check c0835 (PIZC F6 - Apertura y 90 días!D8)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!D10"
+     ]
+    },
+    {
+     "id": "c0835",
+     "es": "Fichas de alérgenos, trazabilidad, registros de temperatura y de limpieza, formación y DDD",
+     "en_actual": "Allergen cards, traceability, temperature and cleaning logs, training certificates (CFPM and food handler cards) and pest control reports.",
+     "de": "GPIZ-check c0836 (PIZC F6 - Apertura y 90 días!E8)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!E10"
+     ]
+    },
+    {
+     "id": "c0837",
+     "es": "Titular / Empresa de mantenimiento",
+     "en_actual": "Owner / Maintenance contractor",
+     "de": "GPIZ-check c0838 (PIZC F6 - Apertura y 90 días!C9)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!C11"
+     ]
+    },
+    {
+     "id": "c0838",
+     "es": "Desde el mes 1",
+     "en_actual": "From month 1",
+     "de": "GPIZ-check c0839 (PIZC F6 - Apertura y 90 días!D9)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!D11"
+     ]
+    },
+    {
+     "id": "c0849",
+     "es": "Revisar la cuenta de la plataforma cada mes",
+     "en_actual": "Review the delivery marketplace statement each month",
+     "de": "GPIZ-check c0850 (PIZC F6 - Apertura y 90 días!B13)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!B15"
+     ]
+    },
+    {
+     "id": "c0850",
+     "es": "Mensual",
+     "en_actual": "Monthly",
+     "de": "GR c0848 (PIZC F6 - Apertura y 90 días!D12 / PIZC F6 - Apertura y 90 días!D13)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!D15",
+      "TAQC · F6 - Apertura y 90 días!D16",
+      "TAQC · F6 - Apertura y 90 días!D17"
+     ]
+    },
+    {
+     "id": "c0852",
+     "es": "Comparar ventas y costes reales con el plan cada mes",
+     "en_actual": "Compare actual sales and costs with the plan each month",
+     "de": "GPIZ-check c0852 (PIZC F6 - Apertura y 90 días!B14)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!B16"
+     ]
+    },
+    {
+     "id": "c0854",
+     "es": "Seguir la tesorería mes a mes y el saldo mínimo",
+     "en_actual": "Track cash flow month by month and the minimum balance",
+     "de": "GPIZ-check c0854 (PIZC F6 - Apertura y 90 días!B15)",
+     "donde": [
+      "TAQC · F6 - Apertura y 90 días!B17"
+     ]
+    }
+   ]
+  }
+ }
+}

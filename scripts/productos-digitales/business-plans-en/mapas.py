@@ -1269,9 +1269,17 @@ elif CONJUNTO == 'cof':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-11'))
     import mapas_cof as _cof                                                       # noqa: E402
     _cof.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'taq':
+    # Taco Shop Business Plan Kit (F2 de business-plans-en-12, 29-oct-2026): libro ES de la taquería = MISMA rejilla que
+    # el de la pizzería (misma semilla), código de la PIZZA (E2/E4/E5) con el circuito de la heladería; diccionario en
+    # cadena = Pizza EN por celda → Pizza EN por texto → Bakery → Bar → BP; datos en business-plans-en-12/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-12'))
+    import mapas_taq as _taq                                                       # noqa: E402
+    _taq.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
     raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael | piz | ice | wed | '
-                     'cof)' % CONJUNTO)
+                     'cof | taq)' % CONJUNTO)
 
 
 if __name__ == '__main__':
