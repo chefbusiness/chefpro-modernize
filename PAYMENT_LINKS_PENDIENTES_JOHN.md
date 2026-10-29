@@ -32,7 +32,10 @@ Link de John: https://buy.stripe.com/fZu28k3KcgISgHJ5Nb6oo2c (`plink_1UVyTF4CcdR
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_POLLERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-polleria-hero.jpg` |
 
-## ⏳ PENDIENTE (29-oct-2026): Rotisserie Chicken Restaurant Business Plan Kit (EN) — rama `feat/rotisserie-chicken-business-plan-en` (PR apilado, se fusiona DESPUÉS de la Pollería ES)
+## ✅ HECHO (29-oct-2026): Rotisserie Chicken Restaurant Business Plan Kit (EN) — PR #184 (apilado, se fusiona DESPUÉS de la Pollería ES)
+
+Link de John: https://buy.stripe.com/4gM14g80s8cm7791wV6oo2d (`plink_1UVycF4CcdRGidmEOnjuRLkO`). Comprobado con la CLI: 3900 USD, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/access`. Env de Netlify creada (builds) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|

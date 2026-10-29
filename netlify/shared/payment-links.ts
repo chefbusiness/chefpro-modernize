@@ -90,6 +90,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'restaurant-financial-plan-templates': 'https://buy.stripe.com/8x23cogwYdwGezBdfD6oo1E',
   'restaurant-inventory-templates': 'https://buy.stripe.com/28EfZacgIdwGbnp8Zn6oo1z',
   'restaurant-schedule-templates': 'https://buy.stripe.com/9B6dR294w0JUbnpa3r6oo1D',
+  'rotisserie-chicken-restaurant-business-plan': 'https://buy.stripe.com/4gM14g80s8cm7791wV6oo2d',
   'taco-shop-business-plan': 'https://buy.stripe.com/dRm7sE5Sk64e0IL0sR6oo2b',
   'wedding-venue-business-plan': 'https://buy.stripe.com/9B69AM4Og0JUgHJ5Nb6oo27',
 };
