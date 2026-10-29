@@ -29,6 +29,18 @@ Link de John: https://buy.stripe.com/fZu5kwbcEcsCcrt1wV6oo2a (`plink_1UVou74CcdR
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_POLLERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-polleria-hero.jpg` |
 
+## ⏳ PENDIENTE (29-oct-2026): Rotisserie Chicken Restaurant Business Plan Kit (EN) — rama `feat/rotisserie-chicken-business-plan-en` (PR apilado, se fusiona DESPUÉS de la Pollería ES)
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Rotisserie Chicken Restaurant Business Plan Kit - AI Chef Pro |
+| Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/rotisserie-chicken-restaurant-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 260 caracteres) | Business plan kit to open a rotisserie chicken restaurant (Peruvian pollo a la brasa, peri-peri or charcoal chicken): 10-section Word plan, 3-year Excel financial projections with SBA loan, 80-task startup checklist, and a chicken yield and costing calculator. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_ROTISSERIE_CHICKEN_RESTAURANT_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-polleria-hero.jpg` |
+
 ## ✅ HECHO (29-oct-2026): Taco Shop Business Plan Kit (EN) — PR #182 (apilado, se fusiona DESPUÉS del ES)
 
 Link de John: https://buy.stripe.com/dRm7sE5Sk64e0IL0sR6oo2b (`plink_1UVoxK4CcdRGidmEeSCIcHgk`). Comprobado con la CLI: 3900 USD, pago único,

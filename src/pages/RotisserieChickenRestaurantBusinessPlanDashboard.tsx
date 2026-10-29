@@ -39,7 +39,7 @@ const TEMPLATES = [
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Rotisserie Chicken Restaurant Startup Checklist (80 Tasks)',
-    desc: "80 tasks in 6 phases: business setup (LLC, EIN, business license, sales tax permit), hood, gas and permits (zoning, building permit, fire marshal, health permit), rotisserie and health, staff and allergens, menu, brand and pre-orders, and opening day plus your first 90 days.",
+    desc: "80 tasks in 6 phases: business setup (LLC, EIN, business license, sales tax permit), hood, gas and permits (zoning, building permit, fire marshal, gas permit), rotisserie and health (plan review, health permit, the heated display), staff and allergens, menu, brand and pre-orders, and opening day plus your first 90 days.",
   },
   {
     key: 'calculadora-pollo',
