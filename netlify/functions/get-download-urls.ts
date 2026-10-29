@@ -926,6 +926,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-trompo': '/dl/taco-shop-business-plan/taco-cost-trompo-yield-calculator.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-29): Rotisserie Chicken Restaurant Business Plan Kit. Claves = las del ES plan-negocio-polleria salvo el bonus, que aquí es el
+  // común `equivalents-guide` como en toda la familia EN (= TEMPLATES de src/pages/RotisserieChickenRestaurantBusinessPlanDashboard.tsx) → los 4
+  // ficheros EN de /dl/rotisserie-chicken-restaurant-business-plan/ (SPEC business-plans-en-13) y el bonus común de equivalencias EN.
+  'rotisserie-chicken-restaurant-business-plan': {
+    'plan-negocio': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-restaurant-business-plan.docx',
+    'plan-financiero': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-restaurant-financial-projections.xlsx',
+    'checklist-apertura': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-restaurant-startup-checklist.xlsx',
+    'calculadora-pollo': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-yield-costing-calculator.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

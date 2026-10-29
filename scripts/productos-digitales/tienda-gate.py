@@ -80,7 +80,8 @@ KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gesti
 # /plan-negocio-pizzeria (gemelo EN: Pizza Shop Business Plan Kit, 25-oct-2026) y
 # /plan-negocio-heladeria (gemelo EN: Ice Cream Shop Business Plan Kit, 27-oct-2026) y
 # /plan-negocio-finca-eventos-bodas (gemelo EN: Wedding Venue Business Plan Kit, 27-oct-2026) y
-# /plan-negocio-taqueria (gemelo EN: Taco Shop Business Plan Kit, 29-oct-2026).
+# /plan-negocio-taqueria (gemelo EN: Taco Shop Business Plan Kit, 29-oct-2026) y
+# /plan-negocio-polleria (gemelo EN: Rotisserie Chicken Restaurant Business Plan Kit, 29-oct-2026).
 PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
              '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
              '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',

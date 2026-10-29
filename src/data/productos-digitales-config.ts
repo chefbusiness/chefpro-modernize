@@ -1475,6 +1475,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'checklist-apertura': '/dl/taco-shop-business-plan/taco-shop-startup-checklist.xlsx',
       'calculadora-trompo': '/dl/taco-shop-business-plan/taco-cost-trompo-yield-calculator.xlsx',
     },
+  // International store (EN, 2026-10-29): twin of plan-negocio-polleria, independent product.
+  'rotisserie-chicken-restaurant-business-plan': {
+    id: 'rotisserie-chicken-restaurant-business-plan',
+    name: 'Rotisserie Chicken Restaurant Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/rotisserie-chicken-restaurant-business-plan/access',
+    emailSubject: 'Your access to Rotisserie Chicken Restaurant Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Rotisserie Chicken Restaurant Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the chicken yield, rotisserie and costing calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Rotisserie Chicken Restaurant Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the chicken yield, rotisserie and costing calculator and the 80-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-restaurant-business-plan.docx',
+      'plan-financiero': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-restaurant-financial-projections.xlsx',
+      'checklist-apertura': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-restaurant-startup-checklist.xlsx',
+      'calculadora-pollo': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-yield-costing-calculator.xlsx',
+    },
+    lang: 'en',
+  },
     lang: 'en',
   },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
