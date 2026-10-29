@@ -818,3 +818,22 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   Recurrentes: Pollería y Pollo a la Brasa» · 3) Taco Shop Checklist Templates EN · 4) Sushi Bar · 5) Hamburguesería Smash. Mapa de palabras
   clave por mercado (ES 7 países + US/UK/AU): `scripts/productos-digitales/plan-polleria/F0-mapa-keywords-es-en.md`.
 
+
+### ✅ 2026-10-29 (Claude Code en el Mac + VPS) — **Plan de Negocio: Taquería (ES, 35 €, nº 56) + Taco Shop Business Plan Kit (EN, $39)** — LOS DOS LIVE
+
+- Retomado de la F1 de la noche anterior. F1-camino (semilla = Pizzería LIVE, **Mes 1 = enero**, línea de bebida partida, calculadora
+  recortada a 4 hojas) → F2 ES (motor D9 verde a la primera: préstamo 118.000 € + 55.000 €, neto 9,1/10,3/9,6 %, DSCR 2,2; Word de 10
+  secciones; checklist 80; calculadora del trompo; revisión Opus 0 B · 5 M arreglados) → F2 EN (conjunto `taq`, `business-plans-en-12/`:
+  D15 verde en la vuelta 0, SBA 7(a) $176,000, neto 6,3/8,1/9,2 %, DSCR 2,68×; regresión 44/44; revisión Opus 0 B · 5 M · 8 m arreglados
+  + landing EN contrastada con los entregables: 8 afirmaciones corregidas).
+- PR **#181 (ES) → `add4451c`** · **#182 (EN, apilado) → `bf18ff72`**. Links: ES `plink_1UVou74CcdRGidmEufF1axkD` (35 EUR) · EN
+  `plink_1UVoxK4CcdRGidmEeSCIcHgk` (39 USD), comprobados con la CLI (one_time, exclusive, impuesto automático, factura, redirección a `/access`).
+- LIVE: postpago `--only` ×2 con 0 fallos (5/5 entregables cada uno); tienda, robots, hub (Taquería primera) y Miselup 112/112 verdes;
+  cripto 200 ×2 (pedidos QA `qa-taqueria` y `qa-tacoshop`, por purgar); las dos URLs en el sitemap y `sitemap-index.xml` reenviado a GSC.
+  `fase6-gate` da los mismos 3 falsos positivos de umbrales viejos.
+- **Correos:** ES **18-dic 08:00Z** (borrador `e125a746`, routine `trig_01TEKYVQu3egcewC5fss64zM` el 18-nov 15:07Z) · EN **15-mar-2027
+  14:00Z** (borrador `fe7baa89`, routine `trig_01RLdVGQKRp4dUy9W8scMmit` el 14-feb-2027). Prueba de los dos a John.
+  **Siguiente hueco: ES 23-dic · EN 20-mar-2027.**
+- Gasto ≈ 4,9 M tokens de subagentes la pareja (F1 incluida), dentro del techo M de 5 M. Siguiente en la cola: **Pollería / Asador de Pollos**
+  (plan + guía ES + EN; mapa de keywords en `plan-polleria/F0-mapa-keywords-es-en.md`).
+- Handoff: `SESSION_HANDOFF_2026-10-29-taqueria-taco-shop.md`.
