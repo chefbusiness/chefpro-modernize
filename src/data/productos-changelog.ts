@@ -2250,6 +2250,20 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'plan-negocio-polleria': {
+    version: '1.0',
+    updated: '2026-10-29',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-29',
+        title: 'Primera edición',
+        changes: [
+          'Primera edición del Plan de Negocio: Pollería y Asador de Pollos, con sus cinco ficheros: plan de negocio en Word de 10 secciones con las cinco corrientes del pollo asado, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 80 tareas en 6 fases, calculadora del pollo, el asador y el escandallo de 4 hojas y la guía de equivalencias para Hispanoamérica.',
+        ],
+      },
+    ],
+  },
   'plan-negocio-parrillero-asador-eventos': {
     version: '2.2',
     updated: '2026-10-12',

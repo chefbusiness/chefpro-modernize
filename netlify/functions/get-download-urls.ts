@@ -1348,6 +1348,13 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-trompo': '/dl/plan-negocio-taqueria/calculadora-trompo-escandallo-taqueria.xlsx',
     'guia-equivalencias': '/dl/plan-negocio-taqueria/guia-equivalencias-plan-negocio-taqueria.docx',
   },
+  'plan-negocio-polleria': {
+    'plan-financiero': '/dl/plan-negocio-polleria/plan-financiero-polleria.xlsx',
+    'plan-negocio': '/dl/plan-negocio-polleria/plan-de-negocio-polleria.docx',
+    'checklist-apertura': '/dl/plan-negocio-polleria/checklist-apertura-polleria.xlsx',
+    'calculadora-pollo': '/dl/plan-negocio-polleria/calculadora-pollo-asador-escandallo-polleria.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-polleria/guia-equivalencias-plan-negocio-polleria.docx',
+  },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',

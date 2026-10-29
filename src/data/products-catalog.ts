@@ -564,6 +564,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
     urlByLang: { en: '/en/digital-products/taco-shop-business-plan' },
     priceByLang: { en: '$39' },
   },
+  'plan-negocio-polleria': {
+    id: 'plan-negocio-polleria',
+    url: '/plan-negocio-polleria',
+    price: '€35',
+    name: { es: 'Plan de Negocio: Pollería y Asador de Pollos', en: 'Rotisserie Chicken Restaurant Business Plan' },
+    description: {
+      es: 'Pollería y asador de pollos: plan financiero Excel, plan en Word, checklist de apertura y calculadora del pollo, el asador y el escandallo.',
+      en: 'Word business plan, Excel financial projections, opening checklist and chicken, rotisserie and per-order costing calculator for a rotisserie chicken restaurant.',
+    },
+  },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',
     url: '/plan-negocio-tapas-bar',
