@@ -32,3 +32,19 @@ posts EN de Mexican restaurant / food truck → `/en/digital-products/taco-shop-
 **Pollería / Asador de Pollos** (prioridad 2 de la cola): UN plan de negocio + guía con todas las corrientes (peruano, venezolano, asador
 español, rôtisserie) ES + EN; mapa de keywords listo en `scripts/productos-digitales/plan-polleria/F0-mapa-keywords-es-en.md`. Después
 Taco Shop Checklist Templates EN ($19), Sushi Bar y Hamburguesería Smash.
+
+## 6. Segunda pareja del día (29-oct, tarde-noche · sesión Claude Code): Pollería ES + Rotisserie Chicken EN, LOS DOS LIVE
+- **Plan de Negocio: Pollería y Asador de Pollos** (ES, 35 €, nº 57) — https://aichef.pro/plan-negocio-polleria · PR #183 → `6fb676c2`.
+  Docs: `scripts/productos-digitales/plan-polleria/` (F0, F1-research, F1-camino, F2-NOTAS, REVISION-FINAL).
+- **Rotisserie Chicken Restaurant Business Plan Kit** (EN, $39) — https://aichef.pro/en/digital-products/rotisserie-chicken-restaurant-business-plan
+  · PR #184 → `26e618f8`. Docs: `scripts/productos-digitales/business-plans-en-13/`.
+- LIVE verde (postpago 0 fallos ×2, tienda, Miselup 114/114, cripto 200 ×2, sitemap + GSC). Correos ES 23-dic (`trig_016kaq4TEPPAhirwMdwYaAKv`)
+  · EN 20-mar-2027 (`trig_01Vjtwyj3hKpar5kL2DRRwSk`).
+- **John**: purgar también los pedidos QA `qa-polleria@aichef.pro` y `qa-rotisserie@aichef.pro`.
+- **Deuda nueva**: checklist de la Taquería LIVE, F6 (`plan-taqueria/datos_checklist.py:289`), cita solo «ITC-ICG 08» en el control del gas
+  cada 5 años (la otra mención dice «ITC-ICG 07 e ITC-ICG 08»): arreglo menor sin correo en una tanda de arreglos.
+- **Lecciones**: (1) la rama EN apilada nace de la ES antes de los arreglos de la F3 ES → fusionar la ES en la EN antes de pasar gates;
+  (2) los nombres traducidos de las tarjetas de los hubs no llevan la palabra española (`tienda-gate --base` la caza como resto);
+  (3) contrastar SIEMPRE la landing EN con los entregables antes de abrir el PR (8 correcciones en el Taco y 8 en el Rotisserie).
+- **Carril Cursor**: enlazar desde el blog (posts de pollo a la brasa, cocina peruana, asador, comida para llevar) → `/plan-negocio-polleria`;
+  posts EN de Peruvian chicken / rotisserie → el kit EN; caso de uso `restaurante-peruano` (`src/data/use-cases-content.es.ts:3690`).

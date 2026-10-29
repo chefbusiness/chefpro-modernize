@@ -837,3 +837,19 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Gasto de subagentes hoy ≈ 3,7 M (ES 1,9 · EN 1,8) + la F1 de la noche anterior: la pareja queda en torno al techo M de 5 M. Siguiente en la cola: **Pollería / Asador de Pollos**
   (plan + guía ES + EN; mapa de keywords en `plan-polleria/F0-mapa-keywords-es-en.md`).
 - Handoff: `SESSION_HANDOFF_2026-10-29-taqueria-taco-shop.md`.
+
+### ✅ 2026-10-29 (tarde-noche, Claude Code en el Mac + VPS) — **Plan de Negocio: Pollería y Asador de Pollos (ES, 35 €, nº 57) + Rotisserie Chicken Restaurant Business Plan Kit (EN, $39)** — LOS DOS LIVE
+
+- Segunda pareja del día, misma cadena que la Taquería: F1 (research ES + US en paralelo, camino con semilla Taquería LIVE, unidad «pedido»,
+  sin rotación, Mes 1 = enero) → F2 ES (D9 verde a la primera: préstamo 112.000 € + 50.000 €, neto 7,0/8,2/7,7 %, DSCR 1,98; Word con las
+  cinco corrientes del pollo asado; revisión 0 B · 2 M) → F2 EN (conjunto `pol`, `business-plans-en-13/`: SBA $216,000, neto 7,1/8,9/10,0 %,
+  DSCR 2,96; regresión 48/48; revisión 0 B · 3 M, TPHC corregido; landing contrastada: 8 correcciones).
+- PR **#183 (ES) → `6fb676c2`** · **#184 (EN, apilado) → `26e618f8`**. Links: ES `plink_1UVyTF4CcdRGidmEg0Uy9RG7` (35 EUR) · EN
+  `plink_1UVycF4CcdRGidmEOnjuRLkO` (39 USD), comprobados con la CLI.
+- LIVE: postpago `--only` ×2 con 0 fallos; tienda y Miselup 114/114 verdes; cripto 200 ×2 (QA `qa-polleria` y `qa-rotisserie`, por purgar);
+  sitemap con las dos URLs y reenviado a GSC; `fase6-gate` con los 3 falsos positivos de siempre.
+- **Correos:** ES **23-dic 08:00Z** (borrador `fa4a6784`, routine `trig_016kaq4TEPPAhirwMdwYaAKv` el 23-nov) · EN **20-mar-2027 14:00Z**
+  (borrador `f047f141`, routine `trig_01Vjtwyj3hKpar5kL2DRRwSk` el 19-feb-2027). Pruebas a John. **Siguiente hueco: ES 28-dic · EN 25-mar-2027.**
+- Siguiente en la cola: Taco Shop Checklist Templates EN ($19) → Sushi Bar ES + EN → Hamburguesería Smash; el kit de tareas de pollería
+  («Tareas Recurrentes: Pollería y Pollo a la Brasa», tarjeta de Próximos) sigue pendiente.
+- Handoff: `SESSION_HANDOFF_2026-10-29-taqueria-taco-shop.md` §6.
