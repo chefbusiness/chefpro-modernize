@@ -2,7 +2,10 @@
 
 > Sesión Claude Code (Mac).
 
-## ⏳ PENDIENTE (29-oct-2026): Plan de Negocio: Taquería (ES) — rama `feat/plan-negocio-taqueria` (el gemelo EN, Taco Shop Business Plan Kit, irá en PR apilado)
+## ✅ HECHO (29-oct-2026): Plan de Negocio: Taquería (ES) — PR #181
+
+Link de John: https://buy.stripe.com/fZu5kwbcEcsCcrt1wV6oo2a (`plink_1UVou74CcdRGidmEufF1axkD`). Comprobado con la CLI: 3500 EUR, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/plan-negocio-taqueria-access`. Env de Netlify creada (builds) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
