@@ -702,6 +702,13 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Plan de Negocio: Pizzería Napolitana</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas, calculadora de masa y escandallo por pizza y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día del horno y el servicio, el <a href="https://aichef.pro/kit-tareas-pizzeria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Pizzería</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
+  'plan-negocio-taqueria': {
+    accessPath: '/plan-negocio-taqueria-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Taquería',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Taquería</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora del trompo y escandallo por taco de 4 hojas y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día del trompo y el servicio, el <a href="https://aichef.pro/kit-tareas-taqueria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Taquería Mexicana</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
   'plan-negocio-food-truck': {
     accessPath: '/plan-negocio-food-truck-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Food Truck',

@@ -83,6 +83,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'plan-negocio-parrillero-asador-eventos': { eur: 45 },
   'plan-negocio-pizzeria': { eur: 35 },
   'plan-negocio-tapas-bar': { eur: 35 },
+  'plan-negocio-taqueria': { eur: 35 },
   'pro-prompts-ebook': { eur: 9 },
   'restaurant-business-plan': { usd: 39 },
   'restaurant-checklist-templates': { usd: 19 },

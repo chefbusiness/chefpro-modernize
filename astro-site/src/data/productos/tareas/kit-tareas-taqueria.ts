@@ -377,6 +377,7 @@ const data: KitTareasData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/guia-restaurante-mexicano', label: 'Guía Restaurante Mexicano' },
+    { href: '/plan-negocio-taqueria', label: 'Plan de Negocio: Taquería' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
