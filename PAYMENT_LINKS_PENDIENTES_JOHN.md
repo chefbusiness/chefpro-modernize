@@ -14,6 +14,18 @@
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_TAQUERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-taqueria-hero.jpg` |
 
+## ⏳ PENDIENTE (29-oct-2026): Taco Shop Business Plan Kit (EN) — rama `feat/taco-shop-business-plan-en` (PR apilado, se fusiona DESPUÉS del ES)
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Taco Shop Business Plan Kit - AI Chef Pro |
+| Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/taco-shop-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 216 caracteres) | Business plan kit to open a taco shop or taqueria: 10-section Word plan, 3-year Excel financial projections with monthly cash flow and SBA loan, 80-task startup checklist, and a trompo yield and taco cost calculator. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_TACO_SHOP_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-taqueria-hero.jpg` |
+
 ## ✅ HECHOS (28-oct-2026): los DOS de la cafetería móvil, ES y EN, LIVE (#177 `176b10d0` · #178 `13734218`) — John: «un producto nuevo en español y su versión en inglés en producción, las dos tareas de hoy»
 
 ### 1. Plan de Negocio: Cafetería Móvil para Eventos (ES) — PR #177

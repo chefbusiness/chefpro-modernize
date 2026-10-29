@@ -38,9 +38,9 @@ const CASO = {
   netoPct1: '6%', // neto A1 ($39,009), redondeado
   netoPct3: '9%', // neto A3 ($62,763), redondeado
   equilibrio: '100', // covers/dia (contable)
-  cogsPct: '26%', // COGS 26.2 %
+  cogsPct: '26%', // COGS 26.3 % (PyG!B52 = 0.2625)
   personalPct: '35%', // personal 34.6 %
-  fte: '5', // 5.02 FTE
+  fte: '5', // 5.03 FTE (Personal!C12 = 5.025)
   formulas: '700', // "more than N": el libro tiene 741 formulas
   tacos: '207', // tacos por cono de 30 lb (calculadora, defecto)
   eqTortilla: '656', // equilibrio de la tortilla propia (tortillas por dia)
@@ -58,7 +58,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: `How much does it cost to open a taco shop?`,
-    a: `It depends on the space, the hood and the build-out, which move the number more than anything else. The kit's example comes in at ${CASO.capex} in startup costs, and ${CASO.necesidad} in total cash once working capital is added. Line by line it covers architect and permit fees, a second-generation build-out ($42,000), a Type I hood with fire suppression and makeup air ($22,000), electrical, plumbing, gas lines and the grease interceptor, two vertical broilers for the trompo, a flat-top griddle and comal, a fryer, a steam table, a walk-in cooler, a refrigerated prep table and salsa bar, dish and sink equipment, furniture for 30 seats and the patio, POS and online ordering, branding and launch, and opening inventory, plus a deposit, rent before opening and a contingency. Published prices for new vertical broilers run from about $1,000 to over $4,000 each and for a 36-inch flat-top griddle from about $600 to over $4,500. Replace each line with your own quotes: they are example prices, not a price list.`,
+    a: `It depends on the space, the hood and the build-out, which move the number more than anything else. The kit's example comes in at ${CASO.capex} in startup costs, and ${CASO.necesidad} in total cash once working capital is added. Line by line it covers architect and permit fees, a second-generation build-out ($42,000), a Type I hood with fire suppression and makeup air ($22,000), electrical, plumbing, gas lines and the grease interceptor, two vertical broilers for the trompo, a flat-top griddle and comal, a fryer, a steam table, a walk-in cooler, a refrigerated prep table and salsa bar, dish and sink equipment, furniture for 30 seats and the patio, POS and online ordering, branding and launch, and opening inventory, plus a deposit, rent before opening and a contingency. In the listings we read, a new gas vertical broiler ran from $999 to $2,844 and a 36-inch flat-top griddle from about $2,100 to $2,500. Replace each line with your own quotes: they are example prices, not a price list.`,
   },
   {
     q: `Is a taco shop profitable? How much do owners make?`,
@@ -70,7 +70,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: `How many tacos come out of a trompo?`,
-    a: `There is no single number: it depends on the weight of the cone, the ounces you serve per taco and, above all, what you lose to cooking, drip and the leftover at close. With the calculator's starting values (kit estimates, editable: a 30 lb cone, 8% marinade, a 35% cooking loss plus 5% in trimmings, and 1.5 oz served per taco) the yield is about 64.8% and a cone gives about ${CASO.tacos} tacos. The Trompo Yield sheet does the math with your own numbers and shows you how to measure your own cone, which is what really protects your margin. Weighing, in pounds and ounces with metric beside them, is the whole trick.`,
+    a: `There is no single number: it depends on the weight of the cone, the ounces you serve per taco and, above all, what you lose to cooking, drip and the leftover at close. With the calculator's starting values (kit estimates, editable: a 30 lb cone, 8% marinade, a 35% cooking loss plus 5% in trimmings, and 1.5 oz served per taco) the yield is about 64.8% and a cone gives about ${CASO.tacos} tacos. The Trompo Yield sheet does the math with your own numbers and shows you how to measure your own cone, which is what really protects your margin. Weighing is the whole trick.`,
   },
   {
     q: `What temperature does al pastor need? What will my health department ask?`,
@@ -78,11 +78,11 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: `Do I need a Type I hood and fire suppression?`,
-    a: `Almost certainly, over the griddle, the fryer and the vertical broilers, and your fire marshal or building department makes the final call. The example budgets a Type I hood with a UL 300 fire suppression system and makeup air at $22,000; published ranges for a hood and suppression run from about $5,000 to about $28,000 depending on size and the duct run to the roof. That is also the filter for the space: if the building can't take a duct to the roof, there is no trompo. A charcoal trompo or grill is a solid fuel operation and falls under NFPA 96 chapter 14 (a separate exhaust, a spark arrestor, ash removed daily), so the example plans for gas and treats charcoal as a variant. The checklist tells you to ask your fire marshal in writing before you sign the lease.`,
+    a: `Almost certainly, over the griddle, the fryer and the vertical broilers, and your fire marshal or building department makes the final call. The example budgets a Type I hood with a UL 300 fire suppression system and makeup air at $22,000; published ranges for a hood and suppression run from about $5,000 to about $25,000 depending on size and the duct run to the roof. That is also the filter for the space: if the building can't take a duct to the roof, there is no trompo. A charcoal trompo or grill is a solid fuel operation and falls under NFPA 96 chapter 14 (a separate exhaust, a spark arrestor, ash removed daily), so the example plans for gas and treats charcoal as a variant. The checklist tells you to ask your fire marshal in writing before you sign the lease.`,
   },
   {
     q: `Should I buy corn tortillas or make my own?`,
-    a: `At the volume of a neighborhood shop, buying usually wins. The example uses a double 6-inch corn tortilla and spends about 650 a day. Bought ones (Mission 6-inch, 360 to a case at about $0.16 each in the listing we read) cost about $32,000 a year at that volume; making your own with masa harina needs a press or a machine ($7,808 for a commercial tortilla machine in the listing we read) and about three-quarters of a full-time employee. With the kit's starting values (kit estimates, editable) the break-even is about ${CASO.eqTortilla} tortillas a day, right at the edge, so the example buys them at opening and treats a fresh tortilla as something to revisit when you pass roughly 700 a day. The Tortillas sheet lets you compare both with your prices and volume. Nixtamal from whole corn is beyond this kit: we found no US prices for corn or a mill to price it honestly.`,
+    a: `At the volume of a neighborhood shop, buying usually wins. The example uses a double 6-inch corn tortilla and spends about 650 a day. Bought ones (Mission 6-inch, 360 to a case at about $0.16 each in the listing we read) cost about $33,000 a year at that volume; making your own with masa harina needs a press or a machine ($7,808 for a commercial tortilla machine in the listing we read) and about three-quarters of a full-time employee. With the kit's starting values (kit estimates, editable) the break-even is about ${CASO.eqTortilla} tortillas a day, right at the edge, so the example buys them at opening and treats a fresh tortilla as a product decision to revisit if your volume grows well past the break-even. The Tortillas sheet lets you compare both with your prices and volume. Nixtamal from whole corn is beyond this kit: we found no US prices for corn or a mill to price it honestly.`,
   },
   {
     q: `How much do DoorDash, Uber Eats and Grubhub charge a taqueria?`,
@@ -102,7 +102,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: `How does the taco cost and trompo yield calculator work?`,
-    a: `Four sheets: Trompo Yield, Tortillas, Taco Costing and Instructions. The trompo sheet works in pounds and ounces, with metric beside them: you type the weight of the cone, the marinade, the cooking loss and the ounces per taco, and it gives you the meat served, the yield, the tacos per cone and the cost of the meat per taco. The tortilla sheet compares buying with making your own from masa harina and finds the break-even in tortillas per day. The costing sheet prices ten items from the ingredient prices you type (the example's are kit estimates for October 2026: replace them with your distributor's) and shows the food cost, margin and menu price of each, with your county's cook temperature as a cell to fill in. In the example, an al pastor taco costs about $1.00 at a 25% food cost on a $4.00 price (editable).`,
+    a: `Four sheets: Trompo Yield, Tortillas, Taco Costing and Instructions. The trompo sheet works in pounds and ounces (16 oz per lb): you type the weight of the cone, the marinade, the cooking loss and the ounces per taco, and it gives you the meat served, the yield, the tacos per cone and the cost of the meat per taco, with a cell for your county's cook temperature. The tortilla sheet compares buying with making your own from masa harina and finds the break-even in tortillas per day. The costing sheet prices ten items from the ingredient prices you type (the example's are kit estimates for October 2026: replace them with your distributor's) and shows the food cost, margin and menu price of each, plus the margin of the order of 3 and the gringa dine-in, on takeout and on a delivery app. In the example, an al pastor taco costs about $1.00 at a 25% food cost on a $4.00 price (editable).`,
   },
   {
     q: `Can I use this for a taco truck?`,
@@ -110,7 +110,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: `Is this a Mexican restaurant business plan? Is it for a franchise?`,
-    a: `It is a taco shop plan, not a full-service Mexican restaurant with table service and a full bar. For that, the Restaurant Business Plan Kit is the general plan, with the same lender-ready format. And it is not for a franchise: a franchise follows its franchisor's system and fee structure (a major taco chain's published initial investment runs well into seven figures), which is a different kind of decision. This kit is for the independent owner who writes the concept, picks the space and sets the menu.`,
+    a: `It is a taco shop plan, not a full-service Mexican restaurant with table service and a full bar. For that, the Restaurant Business Plan Kit is the general plan, with the same lender-ready format. And it is not for a franchise: a franchise follows its franchisor's system and fee structure (a major taco chain's published initial investment can run into seven figures), which is a different kind of decision. This kit is for the independent owner who writes the concept, picks the space and sets the menu.`,
   },
   {
     q: `Should I buy this or the Restaurant Checklists Kit Pro?`,
@@ -122,11 +122,11 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: `Can I change the numbers in the Excel model?`,
-    a: `Yes. The green cells are the ones you type: covers per day, average check, operating days, the split between food and beverage, ingredient costs, delivery share and commission, rent, wages and every startup cost line. More than ${CASO.formulas} linked formulas recalculate the rest. To change a calculated cell, use Review, Unprotect Sheet (there is no password). The workbook, the calculator and the checklist each include an Instructions tab.`,
+    a: `Yes. The green cells are the ones you type: covers per day, average check, operating days, the split between food and beverage, ingredient costs, cost of goods percentages, delivery share and commission, rent, wages and every startup cost line. More than ${CASO.formulas} linked formulas recalculate the rest. To change a calculated cell, use Review, Unprotect Sheet (there is no password). The workbook, the calculator and the checklist each include an Instructions tab.`,
   },
   {
     q: `Does it work in the UK, Canada or Australia?`,
-    a: `Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian prices include tax, so type your menu prices without it. The plan and the checklist give US units with metric beside them (°F with °C, sq ft with sq m, lb with kg), and the calculator works in pounds and ounces with metric beside them. The plan's UK notes cover registering with your council at least 28 days before trading, the food hygiene rating, 20% VAT on hot food and the 14 UK allergens (which, unlike the 9 US ones, include celery, mustard, molluscs and sulphites). In Canada and Australia, check your provincial or state food premises, fire and liquor rules with your local authority. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.`,
+    a: `Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian prices include tax, so type your menu prices without it. The plan and the checklist give US units with metric beside them (°F with °C, sq ft with sq m, lb with kg), and the calculator works in pounds and ounces only. The plan's UK notes cover registering with your council at least 28 days before trading, the food hygiene rating, 20% VAT on hot food and the 14 UK allergens (which, unlike the 9 US ones, include celery, mustard, molluscs and sulphites). In Canada and Australia, check your provincial or state food premises, fire and liquor rules with your local authority. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.`,
   },
   {
     q: `What currency will I pay in?`,
@@ -219,11 +219,11 @@ const data: PlanNegocioData = {
     templates: [
       { icon: 'FileText', title: 'Taco Shop Business Plan (Word, 10 Sections)', desc: `A complete plan already written for a neighborhood counter-service taqueria: executive summary, concept and value proposition, market analysis, competitive analysis, marketing plan, operations plan (trompo, griddle, salsa bar, dine-in, take-out and delivery), management and staffing, financial plan, legal requirements, permits and hood rules, and conclusions with an action plan. Its figures are the ones in the example Excel model.` },
       { icon: 'FileSpreadsheet', title: 'Taco Shop Financial Projections (Excel, 9 Sheets)', desc: `Is a taco shop profitable? Assumptions, startup costs, 3-year P&L, break-even, scenarios, staffing, 12-month cash flow, financing and instructions. More than ${CASO.formulas} linked formulas: change covers per day, average check or operating days and the whole workbook recalculates.` },
-      { icon: 'Calculator', title: 'Taco Cost & Trompo Yield Calculator (Trompo Yield + Tortillas + Taco Costing)', desc: `Food cost per taco from your own prices. The trompo sheet works in pounds and ounces (metric beside them): cone weight, marinade, cooking loss and ounces per taco in, the yield and the tacos per cone out. The tortilla sheet compares buying with making your own from masa harina and finds the break-even per day. The costing sheet prices ten items, from al pastor and carnitas tacos to an order of 3 and a gringa, with the cost, the food cost percentage and the menu price you need, using ingredient prices you replace with your distributor's.` },
+      { icon: 'Calculator', title: 'Taco Cost & Trompo Yield Calculator (Trompo Yield + Tortillas + Taco Costing)', desc: `Food cost per taco from your own prices. The trompo sheet works in pounds and ounces: cone weight, marinade, cooking loss and ounces per taco in, the yield and the tacos per cone out. The tortilla sheet compares buying with making your own from masa harina and finds the break-even per day. The costing sheet prices ten items, from al pastor and carnitas tacos to an order of 3 and a gringa, with the cost, the food cost percentage and the menu price you need, using ingredient prices you replace with your distributor's.` },
       { icon: 'Coins', title: 'Taco Shop Startup Costs, Line by Line', desc: `How much does it cost to open a taco shop? Architect and permit fees, a second-generation build-out, electrical, plumbing, gas lines and the grease interceptor, a Type I hood with fire suppression and makeup air, two vertical broilers for the trompo, a flat-top griddle and comal, a fryer and range, a steam table, a walk-in cooler, a refrigerated prep table and salsa bar, dish and sink equipment, furniture and patio, POS and online ordering, LLC and legal, branding and launch, and opening inventory, each with a reference price you replace with your quotes, plus a deposit, rent before opening, a contingency and working capital.` },
       { icon: 'TrendingUp', title: 'Break-Even in Covers per Day + 3 Scenarios', desc: `How many covers a day you need at your average check (excl. sales tax) to cover every cost, and the cash break-even with loan payments in and depreciation out, with a sensitivity table and a plain-English reading of the result. Plus pessimistic, base and optimistic scenarios side by side, each with its own estimated cash balance: honest about what a slow first year does to your cash.` },
       { icon: 'Users', title: 'Staffing & Shift Labor', desc: `Owner / head taquero and GM, a taquero for the trompo and griddle, a prep cook for marinades, carnitas and salsas, a counter lead and cashier, part-time counter and expo, and dish and prep, with gross pay, employer payroll taxes and the real cost of each role. The sheet checks the hours you hire against the hours you need and flags any pay below the minimum wage.` },
-      { icon: 'BarChart3', title: 'Dine-In, Take-Out & Delivery Mix', desc: `Dine-in versus take-out and delivery, with the share of sales that goes through third-party delivery marketplaces and the commission you pay on it (DoorDash, Uber Eats and Grubhub tiers are in the benchmarks), plus hood cleaning, music licensing, and waste, grease and used-oil hauling as their own cost lines.` },
+      { icon: 'BarChart3', title: 'Dine-In, Take-Out & Delivery Mix', desc: `Dine-in versus take-out and delivery, with the share of sales that goes through third-party delivery marketplaces and the commission you pay on it (the DoorDash and Uber Eats tiers are in the benchmarks table), plus hood cleaning, music licensing, and waste, grease and used-oil hauling as their own cost lines.` },
       { icon: 'ShieldCheck', title: 'Startup Checklist (80 Tasks, 6 Phases)', desc: `Business setup (LLC, EIN, state payroll accounts, business license and sales tax permit, your loan application), site, hood, gas and permits (zoning, plan review, building permit and certificate of occupancy, the fire marshal in writing on the hood and the broilers, a licensed gas contractor, the grease interceptor, the beer and wine license as a lease contingency), kitchen, trompo and health (cones held at 41 °F, the salsa bar with a written time as a public health control procedure, your health department's vertical broiler rules in writing), staff, training, safety and allergens (offer letters, I-9, W-4, CFPM and food handler cards, the 9 allergens including sesame, signs at the salsa bar), menu, brand, delivery and suppliers, and your first 90 days.` },
       { icon: 'Banknote', title: 'Financing Plan', desc: `Owner equity and your loan (bank or SBA 7(a)) with its amortization schedule and the debt service coverage ratio (DSCR) year by year, plus investors or partners and local grants as other sources of funds, and a warning if your sources don't cover the cash you need.` },
     ],
@@ -265,7 +265,7 @@ const data: PlanNegocioData = {
         icon: 'BarChart3',
         title: 'US Taco Shop Benchmarks (Sourced)',
         label: 'BONUS 2',
-        desc: `The reference table inside the workbook: sales tax, minimum wage, labor percentage, prime cost, delivery marketplace tiers, rent, street taco prices and tortilla costs, each with its source or marked "kit estimate" when there isn't one, plus five OK / REVIEW checks on your P&L against editable thresholds.`,
+        desc: `The reference table at the end of the workbook's Instructions tab: street taco prices, the al pastor food cost and trompo yield, vertical broiler prices, delivery marketplace tiers, sales tax, hot and cold holding temperatures, minimum wage, labor and rent as a share of sales, and the al pastor cook temperature set by your county, each with its source or marked as a kit estimate when there isn't one. Plus five color-coded ratios on the P&L (gross margin, cost of goods, labor, rent and net income) against thresholds you can edit.`,
         image: '/lovable-uploads/ai-gallery/plan-taqueria-plan.jpg',
       },
       {
@@ -306,8 +306,8 @@ const data: PlanNegocioData = {
       'Break-even in covers per day, with a sensitivity table',
       'Taco cost & trompo yield calculator: tacos per cone and food cost per taco',
       'Startup checklist: 80 tasks in 6 phases',
-      'BONUS: Taco Shop Hood, Gas & Permits Guide (included in the plan)',
-      'BONUS: US Taco Shop Benchmarks',
+      'BONUS: Taco Shop Hood, Gas & Permits Guide (section 9 of the plan + phase 2 of the checklist)',
+      'BONUS: US Taco Shop Benchmarks (table in the workbook)',
       'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',

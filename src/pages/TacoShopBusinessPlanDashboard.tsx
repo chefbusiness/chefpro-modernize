@@ -46,7 +46,7 @@ const TEMPLATES = [
     icon: Calculator,
     type: '.xlsx',
     title: 'Taco Cost & Trompo Yield Calculator',
-    desc: "Trompo yield (cone weight, marinade, shrink and ounces per taco, in pounds and ounces with metric beside them), corn tortillas bought or made from masa harina with their break-even, the salsa bar, and the food cost, margin and menu price of your tacos and channels. The starting values are kit estimates: replace them with your own.",
+    desc: "Trompo yield (cone weight, marinade, cooking loss and ounces per taco, in pounds and ounces), corn tortillas bought or made from masa harina with their break-even, and the food cost, margin and menu price of your tacos, with the margin by channel. The starting values are kit estimates: replace them with your own.",
   },
   {
     key: 'equivalents-guide',
