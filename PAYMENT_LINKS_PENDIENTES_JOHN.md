@@ -17,7 +17,10 @@ Link de John: https://buy.stripe.com/fZu5kwbcEcsCcrt1wV6oo2a (`plink_1UVou74CcdR
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_TAQUERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-taqueria-hero.jpg` |
 
-## ⏳ PENDIENTE (29-oct-2026): Taco Shop Business Plan Kit (EN) — rama `feat/taco-shop-business-plan-en` (PR apilado, se fusiona DESPUÉS del ES)
+## ✅ HECHO (29-oct-2026): Taco Shop Business Plan Kit (EN) — PR #182 (apilado, se fusiona DESPUÉS del ES)
+
+Link de John: https://buy.stripe.com/dRm7sE5Sk64e0IL0sR6oo2b (`plink_1UVoxK4CcdRGidmEeSCIcHgk`). Comprobado con la CLI: 3900 USD, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/access`. Env de Netlify creada (builds) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
