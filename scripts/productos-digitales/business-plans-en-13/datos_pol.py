@@ -96,7 +96,7 @@ FIJOS_NUEVOS = OrderedDict([
     # control de US §8 y las renovaciones de permisos van con residuos, aceite y grasa (fila 31 ES)
     ('Ventas de pollo asado y cocina (mostrador, encargos, plataforma y sala)',
      'Food sales (rotisserie chicken plates, family meals & sides: counter, pickup, pre-orders, delivery & dine-in)'),
-    ('Ventas de bebida (refrescos, agua, cerveza y vino)', 'Beverage sales (sodas, Inca Kola, chicha morada, beer & wine)'),
+    ('Ventas de bebida (refrescos, agua, cerveza y vino)', 'Beverage sales (sodas, chicha morada, beer & wine)'),
     ('Seguros (RC + multirriesgo)', 'Insurance (general + liquor liability + property + workers\' comp)'),
     ('Gestoría laboral, fiscal y contable', 'Accounting & bookkeeping'),
     ('Mantenimiento de la campana extractora, el gas, el asador y el frío',
@@ -125,7 +125,7 @@ FIJOS_NUEVOS = OrderedDict([
 POR_CELDA = OrderedDict([
     # E5: la columna H de la línea de bebida = parte gravada al tipo del alcohol de B40 (= Pizza EN y Taco EN)
     (('POLP', _P, 'H4'), 'Beverage share taxed at the alcohol rate in B40 (%)'),
-    (('POLP', _P, 'F11'), 'Dine-in beverages and the drinks that go out with orders (sodas, Inca Kola, chicha morada, '
+    (('POLP', _P, 'F11'), 'Dine-in beverages and the drinks that go out with orders (sodas, chicha morada, '
                           'beer & wine) · Column H is the share of beverage sales taxed at the alcohol rate in "0. '
                           'Assumptions" B40. With the example rates (B39 = B40 = 8%: state + local) it changes nothing. '
                           'Some states tax alcohol differently: type your alcohol rate in B40 and the alcohol share of '
@@ -210,11 +210,11 @@ def _frases_es():
 
 # casos EN publicados (frases); «360 days» del Bar EN NO va: el caso de la pollería abre 360 días
 FRASES_OTROS = [(r'(?i)\b62 covers\b', 'caso de la Pizza EN («62 covers»)'),
-                (r'\$36(?:\.00)?\b', 'caso de la Pizza EN («$36»)'),
+                (r'\$36(?:\.00)?\b(?![.,]\d)', 'caso de la Pizza EN («$36»)'),
                 (r'(?i)\b165 customers\b', 'caso de la Ice Cream EN («165 customers»)'),
                 (r'(?i)\b210 transactions\b', 'caso de la Bakery EN («210 transactions»)'),
                 (r'(?i)\b95 covers\b', 'caso del Bar EN («95 covers»)'),
-                (r'\$27(?:\.00)?\b', 'caso del Bar EN («$27»)'),
+                (r'\$27(?:\.00)?\b(?![.,]\d)', 'caso del Bar EN («$27»; no $27,500 ni $27,945: revisión F2)'),
                 (r'(?i)\b115 covers\b', 'caso del Taco EN («115 covers»)'),
                 (r'(?i)\b308 (?:opening )?days\b', 'caso del Taco EN («308 days»)')]
 
@@ -257,6 +257,7 @@ RX_POL_NO = [
      r'(?i)roasters? (?:chickens?|birds?)|(?:larger|bigger|heavier) birds?'),
     (r'(?i)\byucca\b', 'jerga: «yuca fries» (no «yucca»)', None),
     (r'PERi-PERi|PERI-PERI', 'marca: «peri-peri» genérico (US §6.9)', None),
+    (r'(?i)Inca Kola', 'marca: «soda» / «Peruvian golden soda» (genérico, revisión F2)', None),
     (r'(?i)\bbroaster', 'marca: «pressure-fried chicken» (Broaster es marca, US §6.9)', r'(?i)brand|trademark'),
     (r'(?i)chicken shop', '«chicken shop» solo en la nota UK (US §9)', r'\bUK\b|United Kingdom|British'),
     (r'(?i)\bAustralia', 'Australia solo en la FAQ de la landing (F1-camino §6)', None),
@@ -300,6 +301,9 @@ def _importes_research():
 # Datos federales US que coinciden con un importe del caso ES: no se vetan (el límite de los SBA Microloans, $50,000, =
 # los 50.000 € de recursos propios del ES; GM c0552 y GR c0055 lo citan)
 HECHOS_US = {50000}
+# Constantes físicas que coinciden con un importe de otro caso EN: se vetan salvo en su contexto (revisión F2: el
+# «1 therm = 100,000 BTU» de la calculadora casaba con los $100,000 del Taco EN)
+EXCEPCION_CIFRA = {100000: r'(?i)\bBTU\b|\btherms?\b'}
 
 
 def cifras_prohibidas(valores):
@@ -315,7 +319,7 @@ def cifras_prohibidas(valores):
                                (os.path.join(BAR, 'cifras_caso.json'), 'bar', 'del Bar EN'),
                                (os.path.join(BP, 'cifras_caso.json'), 'ft', 'del FT EN'),
                                (os.path.join(BP2, 'cifras_caso.json'), 'rest', 'del Restaurant EN')]:
-        out += [(_num(n), 'cifra del caso %s (no se reutiliza)' % nombre, None)
+        out += [(_num(n), 'cifra del caso %s (no se reutiliza)' % nombre, EXCEPCION_CIFRA.get(n))
                 for n in _cifras_caso(path, plan) if n not in propios]
     out += [(rx, motivo, None) for rx, motivo in FRASES_OTROS]
     out += RX_POL_NO

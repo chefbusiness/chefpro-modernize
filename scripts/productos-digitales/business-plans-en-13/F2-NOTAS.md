@@ -75,4 +75,19 @@ latinos. **Tras generarla**: cruzar Instructions D19 filas 38-39 y el Word ($5.9
   `ensamblar_docx --autotest --dir /tmp/pol-docx-at` → `barrido` → `resumen_entregables.py` → `../censo-entregables.py --fail
   --letter --only rotisserie-chicken-restaurant-business-plan` + `../gate-no-latinos.py --only …` → `bash regresion_pol.sh`
   → `volcar_en.py` → revisión opus + 1 ronda (`<g>.revision.json`, tokens `_xl`) → 2.ª pasada `canon.py` → `scp` de vuelta.
-**Estado**: cerrados clones, caso US, D15, gates parciales, regresión 48/48 y tandas 1-2 preparadas (pol_a/pol_b con cifras finales). Pendiente: 4 tandas, calculadora (§5), paso real §6, revisión; F3.
+**Estado** (cierre F2): tandas 1-2 hechas, calculadora generada, paso real §6 y revisión cerrados (§7). Pendiente: F3 (web).
+## 7. Paso real y revisión final (VPS, 29-oct; detalle en `REVISION-FINAL.md`)
+- **Primer paso real**: todo verde salvo **G8/barrido ROJOS** por falsos positivos del gate: `\$27\b` (Bar EN) casaba con
+  «$27,945» y había empujado a escribir «27,500 to 35,950 US dollars»; «1 therm = 100,000 BTU» casaba con los $100,000 del
+  Taco EN. Arreglo en `datos_pol.py` (solo este conjunto): `(?![.,]\d)` en `$27`/`$36` y `EXCEPCION_CIFRA` (BTU/therm).
+- **Revisión (una ronda)**: 0 B · 3 M · 6 m, todos arreglados en fuente: pestañas inexistentes en el Word/checklist
+  («Bird Cost», «Rotisserie Loads» → `Chicken Yield`, `Rotisserie`); TPHC (a las 4 h se tira, nunca se enfría; el SOP del
+  plan es hot holding ≥ 135 °F con límite propio de 4 h); «Inca Kola» → genérico (vetada en `RX_POL_NO`); 42.5 + 42.5 + 15;
+  dos puestos en ¶43; 22 % del sandwich/bowl; «Sunday lunch peak»; cantidad neta en la etiqueta. Cifras del caso intactas.
+- **Gates finales**: G1-G9 TODO VERDE · D15 VERDE · autotests 20/20 y 8/8 · calculadora VERDE · barrido 1,708 piezas 0
+  fallos · censo `--letter` 0 · no latinos 0 · regresión 48/48 IGUAL · 2.ª pasada `canon.py` 4/4 IGUAL · sha256 Mac = VPS.
+- **Para la landing (nombres exactos)**: `rotisserie-chicken-restaurant-business-plan.docx` ·
+  `rotisserie-chicken-restaurant-financial-projections.xlsx` · `rotisserie-chicken-restaurant-startup-checklist.xlsx` ·
+  `rotisserie-chicken-yield-costing-calculator.xlsx` (pestañas `Chicken Yield` · `Rotisserie` · `Costing` · `Instructions`;
+  nombre visible «Rotisserie Chicken Yield & Costing Calculator»).
+- Lección: ante un falso positivo de un gate se arregla el regex, no el texto (el traductor cambia el formato para esquivarlo).

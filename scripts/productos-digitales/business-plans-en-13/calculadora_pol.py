@@ -11,7 +11,7 @@ patrón de `../business-plans-en-12/calculadora_taq.py`. Cambios EN:
   (3) hoja `Rotisserie`: dos rotisseries de gas (entrada «Rotisseries» = 2) × 8 spits × 6 pollos = 96 por carga; el gas se
       calcula con BTU/h por rotisserie y $/therm (constante gris «BTU per therm» = 100,000);
   (4) hoja `Costing`: whole · half + 2 sides · quarter + 2 sides · family meal · sandwich/bowl · salchipapas · large yuca fries ·
-      maduros · Inca Kola; sales tax en carta = 0 %, comisión del marketplace 25 %; margen dine-in · pickup & pre-orders · marketplace;
+      maduros · soda; sales tax en carta = 0 %, comisión del marketplace 25 %; margen dine-in · pickup & pre-orders · marketplace;
   (5) US Letter, formatos sin símbolo de moneda (los rótulos llevan «($)»), docProps en inglés, versión del libro EN.
 
 Valores que otros scripts leen de la CACHÉ del xlsx (dict `EXPUESTOS`, función `valores_expuestos(ruta)`):
@@ -192,7 +192,7 @@ ING_G = [
     (SS, 4.50, KIT_PRECIO),
 ]
 #: unidades: (ingrediente, $/ud o None si es el coste del pollo de la hoja Chicken Yield, origen)
-UPOL, UPAN, UBEB = 'Rotisserie chicken (fraction of a whole bird)', 'Bread roll (ea)', 'Inca Kola or soda, can or bottle (ea)'
+UPOL, UPAN, UBEB = 'Rotisserie chicken (fraction of a whole bird)', 'Bread roll (ea)', 'Peruvian or other soda, can or bottle (ea)'
 ING_U = [
     (UPOL, None, 'linked from the Chicken Yield sheet (cost per whole bird)'),
     (UPAN, 0.40, KIT_PRECIO),
@@ -208,7 +208,7 @@ RECETAS = OrderedDict([
     ('Salchipapas', (10.50, {FR: 10, SS: 4, AV: 2}, {})),
     ('Large yuca fries (side)', (8.00, {YU: 12, AV: 2}, {})),
     ('Maduros (side)', (4.50, {MA: 5}, {})),
-    ('Inca Kola or soda', (3.25, {}, {UBEB: 1})),
+    ('Peruvian or other soda', (3.25, {}, {UBEB: 1})),
 ])
 NP, NG, NU = len(RECETAS), len(ING_G), len(ING_U)
 PCOL = [get_column_letter(4 + j) for j in range(NP)]                              # D..L
@@ -653,7 +653,7 @@ def _instrucciones():
          'are money lost.', False),
         ('3. Food safety. Probe the thickest part of the thigh: 165 °F is the Food Code cook temperature for poultry. In the heated display, hold '
          'at 135 °F or above, and check your county\'s rules for hot holding and for time as a public health control, which usually need a written '
-         'procedure and a time mark on every load. Leftover you want to reuse is cooled from 135 to 70 °F within 2 hours and to 41 °F within 6 hours '
+         'procedure and a time mark on every load (under that control, birds are thrown out at 4 hours, never cooled). Leftover you want to reuse is cooled from 135 to 70 °F within 2 hours and to 41 °F within 6 hours '
          'in total, and reheated to 165 °F for hot holding. Local rules vary: ask your health department.', False),
         ('SHEET "%s"' % HA, True),
         ('1. Type your rotisseries, the spits of each one and the birds per spit, and the cook minutes. The cook time has no published figure: time a '
