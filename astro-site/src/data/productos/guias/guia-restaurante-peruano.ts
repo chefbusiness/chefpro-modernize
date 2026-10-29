@@ -170,6 +170,7 @@ const data: GuiaData = {
     { label: 'aichef.pro', href: 'https://aichef.pro' },
     { label: 'Guía Restaurante Mexicano', href: '/guia-restaurante-mexicano' },
     { label: 'Guía Restaurante Casual', href: '/guia-restaurante-casual' },
+    { label: 'Plan de Negocio: Pollería y Asador de Pollos', href: '/plan-negocio-polleria' },
     { label: 'Todos los Productos', href: '/productos-digitales' },
     { label: 'Contacto', href: 'mailto:info@aichef.pro' },
   ],

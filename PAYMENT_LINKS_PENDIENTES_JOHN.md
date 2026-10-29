@@ -17,6 +17,21 @@ Link de John: https://buy.stripe.com/fZu5kwbcEcsCcrt1wV6oo2a (`plink_1UVou74CcdR
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_TAQUERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-taqueria-hero.jpg` |
 
+## ✅ HECHO (29-oct-2026): Plan de Negocio: Pollería y Asador de Pollos (ES) — PR #183
+
+Link de John: https://buy.stripe.com/fZu28k3KcgISgHJ5Nb6oo2c (`plink_1UVyTF4CcdRGidmEg0Uy9RG7`). Comprobado con la CLI: 3500 EUR, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/plan-negocio-polleria-access`. Env de Netlify creada (builds) y `payment-links.ts` regenerado.
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Pollería y Asador de Pollos - AI Chef Pro |
+| Precio | **35,00 EUR**, pago único, impuesto automático con precio *exclusive* (como pizzería y taquería) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-polleria-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 267 caracteres) | Plan de negocio para montar una pollería o asador de pollos: plan en Word de 10 secciones con las cinco corrientes del pollo asado, plan financiero en Excel a 3 años, checklist de 80 tareas, calculadora del pollo, el asador y el escandallo, y guía para Latinoamérica. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_POLLERIA` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-polleria-hero.jpg` |
+
 ## ✅ HECHO (29-oct-2026): Taco Shop Business Plan Kit (EN) — PR #182 (apilado, se fusiona DESPUÉS del ES)
 
 Link de John: https://buy.stripe.com/dRm7sE5Sk64e0IL0sR6oo2b (`plink_1UVoxK4CcdRGidmEeSCIcHgk`). Comprobado con la CLI: 3900 USD, pago único,

@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Pollería y Asador de Pollos',
+    slug: '/plan-negocio-polleria',
+    price: '€35',
+    description: 'Plan de negocio completo para abrir una pollería y asador de pollos: plan financiero a 3 años en Excel de 9 hojas, plan en Word de 10 secciones con las cinco corrientes del pollo asado, checklist de apertura de 80 tareas, calculadora del pollo, el asador y el escandallo y la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel de 9 hojas con tesorería mes a mes',
+      'Checklist de apertura: 80 tareas en 6 fases',
+      'Calculadora del pollo, el asador y el escandallo y Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: Flame,
+    image: '/lovable-uploads/ai-gallery/plan-polleria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'polleria', 'pollo-asado', 'plan-negocio'],
+  },
+  {
     name: 'Plan de Negocio: Taquería',
     slug: '/plan-negocio-taqueria',
     price: '€35',
@@ -128,8 +145,8 @@ const products = [
     ],
     icon: IceCream,
     image: '/lovable-uploads/ai-gallery/plan-heladeria-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'plantillas', 'costes', 'heladeria', 'obrador', 'plan-negocio'],
   },
   {

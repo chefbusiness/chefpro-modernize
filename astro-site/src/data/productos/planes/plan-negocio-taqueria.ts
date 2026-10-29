@@ -232,6 +232,7 @@ const data: PlanNegocioData = {
     { href: '/kit-escandallos', label: 'Kit de Escandallos Pro' },
     { href: '/pack-appcc', label: 'Pack Plantillas APPCC' },
     { href: '/guia-restaurante-mexicano', label: 'Guía Restaurante Mexicano' },
+    { href: '/plan-negocio-polleria', label: 'Plan de Negocio: Pollería y Asador de Pollos' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto nuevo · Versión 1.0 · noviembre 2026',
