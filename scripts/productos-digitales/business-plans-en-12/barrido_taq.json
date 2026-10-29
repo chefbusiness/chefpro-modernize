@@ -1,0 +1,46 @@
+{
+ "carpeta": "/root/wt-taco-en/astro-site/public/dl/taco-shop-business-plan",
+ "parcial": false,
+ "piezas": 1733,
+ "fallos": 0,
+ "ficheros": {
+  "taco-cost-trompo-yield-calculator.xlsx": {
+   "hojas": 4,
+   "formulas": 157,
+   "piezas": 347,
+   "sha256": "9c872ebcf6520c3d8679b3234a01ac3afe6ca84689a45116e67e48b39f76938e",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "taco-shop-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 8097,
+   "piezas": 116,
+   "sha256": "7341306a6d58cdfafa96b575ad58c6cca25f40953dce223ebab972e273a23ddb",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "taco-shop-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 741,
+   "piezas": 775,
+   "sha256": "f8229aead4addf1d3d38c411ce627f51b751ae39eca783343432935b2306189c",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "taco-shop-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 495,
+   "sha256": "4c1d7e751e8224a1e5f05b748dd2ec0426e9be1a5df98f79e898a01ca46f62bf",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}

@@ -124,7 +124,7 @@ ENT_T = [
     ('mm', 'Masa you get from 1 lb of masa harina (lb)', '#,##0.00', 1.8, 'Masa harina absorbs water: 1 lb of flour makes about 1.8 lb of masa.' + EST),
     ('cg', 'Water, power and gas for the press ($ per lb of masa harina)', USD, 0.20, 'Everything you spend to mix, press and cook, per pound of masa harina.' + EST),
     ('gn', 'Raw masa per homemade tortilla (oz)', OZF, 1.0, 'Raw masa in each tortilla before pressing.' + EST),
-    ('tw', 'Yearly cost of a tortillera ($, with payroll costs)', USD, 27450.0, 'About 0.75 FTE at $16 an hour with payroll costs.' + EST),
+    ('tw', 'Yearly cost of the tortilla maker ($, with payroll costs)', USD, 27450.0, 'About 0.75 FTE at $16 an hour with payroll costs.' + EST),
     ('ti', 'Tortilla machine investment ($, before tax)', USD, 7808.0, 'A commercial countertop tortilla machine with a 6 in cutter.' + EST),
     ('ty', 'Years of life of the machine', ENT, 7, 'The investment is spread over these years.' + EST),
     ('td', 'Days open per year', ENT, 308, 'The days of the kit\'s business plan case.' + EST),
@@ -492,7 +492,7 @@ def hoja_tortilla(wb):
     ref = dict((k, '$B$%d' % f) for k, f in T.items())
     ref.update((k, '$B$%d' % f) for k, f in S_T.items())
     ref['OZ'] = _oz_ext()
-    sec = {'tp': 'A. BOUGHT TORTILLAS', 'mz': 'B. HOMEMADE (masa harina, tortilla machine and a tortillera)', 'tpd': 'C. YOUR CASE'}
+    sec = {'tp': 'A. BOUGHT TORTILLAS', 'mz': 'B. HOMEMADE (masa harina, tortilla machine and a tortilla maker)', 'tpd': 'C. YOUR CASE'}
     for k, rot, fmt, val, nota in ENT_T:
         f = T[k]
         if k in sec:
@@ -677,7 +677,7 @@ def _instrucciones():
          'and counties differ: ask your county health department IN WRITING, type the answer in the green "Your county\'s al pastor cook '
          'temp (°F)" cell and keep the reply on file. The kit gives no single figure.', False),
         ('"%s" SHEET' % HO.upper(), True),
-        ('1. Type the price of the case, the tortillas per case and the weight of each tortilla, plus the masa harina, machine and tortillera '
+        ('1. Type the price of the case, the tortillas per case and the weight of each tortilla, plus the masa harina, machine and tortilla maker '
          'numbers. The tortillas per lb bought are what you need to order from your supplier.', False),
         ('2. The break-even is the number of tortillas a day above which making them pays, counting the person who makes them and the '
          'machine. If you use fewer, buy. With your own tortillas per day, the sheet tells you which suits you.', False),

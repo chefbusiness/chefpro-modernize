@@ -323,6 +323,12 @@ def _inv(rot, desc):
     return ('usd', ('fila', _I, {'taq': rot}, 'B'), desc)
 
 
+def _como_excel(v, decimales):
+    """Redondeo que se VE en Excel: 15 cifras significativas y luego mitad hacia arriba (no al par como `format`)."""
+    from decimal import Decimal, ROUND_HALF_UP
+    return float(Decimal('%.15g' % v).quantize(Decimal(1).scaleb(-decimales), rounding=ROUND_HALF_UP))
+
+
 TOKENS_PROPIOS = OrderedDict([
     ('inv_proyecto', _inv('Proyecto técnico de actividad y de salida de humos, y dirección de obra',
                           'architect, MEP & hood drawings, plan review and permit fees')),
@@ -375,6 +381,12 @@ TOKENS_PROPIOS = OrderedDict([
                              'disposables + marketplace + card fees + contingency, % of sales')),
     ('pesimista_perdida', ('usd', ('deriv', lambda c: -c['pesimista_resultado']),
                            'pessimistic scenario: pre-tax LOSS as a positive amount (only if it is a loss)')),
+    # Revisión F2 (29-oct): `formatear` redondea al par (0.2625 → «26.2%», 5.025 → «5.02») y Excel/LibreOffice muestran
+    # 26.3% y 5.03 en PyG!B52 y Personal!C12: el Word cita lo que se VE en el libro (redondeo de Excel a 15 cifras)
+    ('cogs_pct_xl', ('pct1', ('deriv', lambda c: _como_excel(c['cogs_pct'], 3)),
+                     'cost of goods, % of sales, rounded as Excel shows it (P&L B52)')),
+    ('plantilla_jornadas_xl', ('dec2', ('deriv', lambda c: _como_excel(c['plantilla_jornadas'], 2)),
+                               'staff in FTE, rounded as Excel shows it (Staffing C12)')),
 ])
 
 

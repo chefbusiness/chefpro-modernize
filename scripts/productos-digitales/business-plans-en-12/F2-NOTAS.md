@@ -74,5 +74,10 @@ harina + prensa + 0.75 FTE $27,450 + máquina $7,808 / 7 años, 308 días, 650 a
   opus + 1 ronda → 2.ª pasada con `canon.py` → `scp` de vuelta.
 ## 7. Estado
 Cerrado: clones, caso US, D15 verde, tandas 1 y 2 preparadas (taq_a/taq_b anotadas con las cifras finales), regresión
-44/44. G7 rojo en la 1.ª corrida solo por faltar este fichero (= heladería §4.1). Pendiente: 4 tandas, calculadora EN (§5),
-paso real (§6), revisión y capa EN (F3).
+44/44. G7 rojo en la 1.ª corrida solo por faltar este fichero (= heladería §4.1).
+**29-oct (cierre F2, sesión Claude Code):** 4 tandas y calculadora hechas; paso real §6 en el VPS TODO VERDE; revisión
+adversarial única (`REVISION-FINAL.md`): 0 B · 5 M · 8 m, los 13 arreglados en una ronda (GM/GRC por `<g>.revision.json`,
+tokens `cogs_pct_xl`/`plantilla_jornadas_xl` con el redondeo que muestra Excel, docx a/b, GTAQ-plan/check, calculadora);
+gates re-pasados verdes, 2.ª pasada `canon.py` 4/4 IGUAL, regresión 44/44, 4 entregables en `dl/` con sha256 Mac = VPS.
+Ojo: `calculadora --salida $D --autotest` SOLO prueba el fichero existente; para regenerarlo, `calculadora --salida $D` (que
+ya corre el autotest). Pendiente: F3 (capa EN: landing, catálogo, Stripe, correo).

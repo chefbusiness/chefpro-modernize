@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-29T07:53:28Z",
+  "generado": "2026-10-29T08:26:47Z",
   "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
   "fuentes": {
    "taq": "taco-shop-financial-projections.xlsx"
@@ -761,6 +761,18 @@
    "valor": 22325.914285714272,
    "fmt": "usd",
    "texto": "$22,326",
+   "deriv": true
+  },
+  "cogs_pct_xl": {
+   "valor": 0.263,
+   "fmt": "pct1",
+   "texto": "26.3%",
+   "deriv": true
+  },
+  "plantilla_jornadas_xl": {
+   "valor": 5.03,
+   "fmt": "dec2",
+   "texto": "5.03",
    "deriv": true
   }
  }

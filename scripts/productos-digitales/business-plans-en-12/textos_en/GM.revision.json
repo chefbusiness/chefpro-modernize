@@ -1,0 +1,4 @@
+{
+ "c0387": "46 weeks: 52 minus about six weeks for vacation, holidays and average absences. There is no federal vacation requirement in the US: adjust it to your own policy",
+ "c0526": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: April, July and October with Month 1 in January; the fourth quarter is remitted in Month 13, January of the next year): if your state requires monthly filing, expect smaller payments every month instead"
+}
