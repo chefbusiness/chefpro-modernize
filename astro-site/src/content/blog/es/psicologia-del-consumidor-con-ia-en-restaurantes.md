@@ -1,5 +1,5 @@
 ---
-title: "Gestión de la Psicología del Consumidor con IA en Restaurantes: Guía Completa 2025"
+title: "Gestión de la Psicología del Consumidor con IA en Restaurantes: Guía Completa {year}"
 description: "El sector de la restauración ha experimentado una transformación sin precedentes en la última década. Mientras que tradicionalmente los restauradores…"
 pubDate: 2026-01-04
 modDate: 2026-09-05

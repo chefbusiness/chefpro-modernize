@@ -1,6 +1,6 @@
 ---
-title: "15 Digital Productivity Tools Every Professional Chef Needs in 2026"
-description: "15 Digital Productivity Tools Every Professional Chef Needs in 2026 The modern professional kitchen runs on more than knives and fire. Digital tools have…"
+title: "15 Digital Productivity Tools Every Professional Chef Needs in {year}"
+description: "15 Digital Productivity Tools Every Professional Chef Needs in {year} The modern professional kitchen runs on more than knives and fire. Digital tools have…"
 pubDate: 2026-03-14
 modDate: 2026-09-05
 category: ai-in-gastronomy

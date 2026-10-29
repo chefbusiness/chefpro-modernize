@@ -3,6 +3,7 @@
 // 8B.6: multi-idioma. El idioma NO se pasa por prop: sale del propio post
 // (post.data.lang), así una tarjeta nunca puede enlazar al árbol equivocado.
 import { formatDate, getCategory, postPath, postSlug, type BlogPost } from '../../lib/blog';
+import { resolveDatePlaceholders } from '../../lib/date-placeholders.mjs';
 
 interface Props {
   post: BlogPost;
@@ -12,6 +13,9 @@ interface Props {
 
 const { post, eager = false } = Astro.props;
 const lang = post.data.lang;
+const title = resolveDatePlaceholders(post.data.title, undefined, lang);
+const description = resolveDatePlaceholders(post.data.description, undefined, lang);
+const imageAlt = resolveDatePlaceholders(post.data.imageAlt ?? title, undefined, lang);
 const slug = postSlug(post);
 const cat = getCategory(post.data.category, lang);
 ---
@@ -22,7 +26,7 @@ const cat = getCategory(post.data.category, lang);
       <div class="aspect-[16/9] overflow-hidden bg-muted">
         <img
           src={post.data.image}
-          alt={post.data.imageAlt ?? post.data.title}
+          alt={imageAlt}
           width="640"
           height="360"
           loading={eager ? 'eager' : 'lazy'}
@@ -36,9 +40,9 @@ const cat = getCategory(post.data.category, lang);
         <span class="text-xs font-semibold uppercase tracking-wide text-primary">{cat.name}</span>
       )}
       <h3 class="text-lg font-bold leading-snug text-foreground group-hover:text-primary">
-        {post.data.title}
+        {title}
       </h3>
-      <p class="line-clamp-3 text-sm text-muted-foreground">{post.data.description}</p>
+      <p class="line-clamp-3 text-sm text-muted-foreground">{description}</p>
       <time
         datetime={post.data.pubDate.toISOString().slice(0, 10)}
         class="mt-auto pt-2 text-xs text-muted-foreground"

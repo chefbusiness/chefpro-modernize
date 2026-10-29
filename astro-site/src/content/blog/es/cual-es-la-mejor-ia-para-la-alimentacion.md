@@ -1,5 +1,5 @@
 ---
-title: "Mejor IA para la Alimentación: Guía por Ámbitos 2026"
+title: "Mejor IA para la Alimentación: Guía por Ámbitos {year}"
 description: "La mejor IA para la alimentación depende del ámbito: cocina profesional, nutrición, industria y agricultura. Guía comparativa y precios de AI Chef Pro."
 pubDate: 2025-09-10
 modDate: 2026-08-31

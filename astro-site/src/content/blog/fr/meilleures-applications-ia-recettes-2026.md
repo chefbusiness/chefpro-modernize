@@ -1,6 +1,6 @@
 ---
-title: "Les 7 meilleures applications d'IA pour créer des recettes en 2026"
-description: "Comparatif 2026 des applications d'IA pour créer des recettes, relu avec les agents IA. Sept outils, le métier de chacun, et ce qu'une cuisine pro doit vérifier."
+title: "Les 7 meilleures applications d'IA pour créer des recettes en {year}"
+description: "Comparatif {year} des applications d'IA pour créer des recettes, relu avec les agents IA. Sept outils, le métier de chacun, et ce qu'une cuisine pro doit vérifier."
 pubDate: 2026-10-22
 modDate: 2026-10-22
 category: ia-en-gastronomie

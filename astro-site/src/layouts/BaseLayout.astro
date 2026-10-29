@@ -31,6 +31,10 @@ import { PRODUCTOS_ZONA_APP } from '../lib/zona-app';
 // deploy (desviación aceptada: en la SPA se calcula en cliente; los deploys
 // frecuentes lo mantienen al día).
 import { useLiveUserCount } from '@/hooks/useLiveUserCount';
+// {year} y {month} se resuelven aquí, en el render del build, con la fecha
+// de Europe/Madrid y el idioma de la página. El pase final del build vuelve
+// a mirar el HTML por si el token llegó por un H1 o un headline fuera de este layout.
+import { resolveDatePlaceholders } from '../lib/date-placeholders.mjs';
 
 interface Props {
   title: string;
@@ -89,6 +93,9 @@ const {
   miselup,
 } = Astro.props;
 
+const pageTitle = resolveDatePlaceholders(title, undefined, lang);
+const pageDescription = resolveDatePlaceholders(description, undefined, lang);
+
 // Ruta actual normalizada para el registro: con `build.format: 'file'` Astro.url.pathname
 // puede llegar como `/kit-escandallos.html`; el registro guarda `/kit-escandallos`.
 const rutaActual = (Astro.url.pathname.replace(/\.html$/, '').replace(/\/+$/, '') || '/');
@@ -110,7 +117,7 @@ const OG_LOCALE: Record<Locale, string> = {
   es: 'es_ES', en: 'en_US', fr: 'fr_FR', de: 'de_DE', it: 'it_IT', pt: 'pt_PT', nl: 'nl_NL',
 };
 const ogLocale = OG_LOCALE[lang];
-const ogImageAlt = `${title} - AI Chef Pro`;
+const ogImageAlt = `${pageTitle} - AI Chef Pro`;
 
 // hreflang + canonical nativos para TODAS las páginas — gate de Fase 0 del plan maestro
 // (la SPA actual sirve 0 etiquetas hreflang; este layout lo corrige de raíz).
@@ -163,7 +170,7 @@ const globalSchemas = noindex
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
         name: 'AI Chef Pro',
-        description,
+        description: pageDescription,
         url: SITE,
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Web',
@@ -243,8 +250,8 @@ const emittedSchemas = omitGlobalApp
     <GoogleTag />
     {/* DataFast va DESPUÉS del tag de Google: lee el consentimiento que éste publica. */}
     <DataFast />
-    <title>{title}</title>
-    {description && <meta name="description" content={description} />}
+    <title>{pageTitle}</title>
+    {pageDescription && <meta name="description" content={pageDescription} />}
     {keywords && <meta name="keywords" content={keywords} />}
     <meta name="author" content="AI Chef Pro" />
     {/* Fase 7 (cutover): meta robots index,follow en páginas indexables — paridad
@@ -263,8 +270,8 @@ const emittedSchemas = omitGlobalApp
     <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
     <link rel="apple-touch-icon" href="/favicon.png" />
-    <meta property="og:title" content={title} />
-    {description && <meta property="og:description" content={description} />}
+    <meta property="og:title" content={pageTitle} />
+    {pageDescription && <meta property="og:description" content={pageDescription} />}
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AI Chef Pro" />
@@ -279,8 +286,8 @@ const emittedSchemas = omitGlobalApp
     {ogImage && <meta property="og:image:height" content="630" />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@aichefpro" />
-    <meta name="twitter:title" content={title} />
-    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:title" content={pageTitle} />
+    {pageDescription && <meta name="twitter:description" content={pageDescription} />}
     {ogImage && <meta name="twitter:image" content={ogImage} />}
     {ogImage && <meta name="twitter:image:alt" content={ogImageAlt} />}
     <meta name="theme-color" content="#f59e0b" />

@@ -1,5 +1,5 @@
 ---
-title: "La Inteligencia Artificial en el Mundo de la Gastronomía: Guía Completa 2026"
+title: "La Inteligencia Artificial en el Mundo de la Gastronomía: Guía Completa {year}"
 description: "La inteligencia artificial en el mundo de la gastronomía ha dejado de ser una promesa futurista para convertirse en una realidad tangible que está…"
 pubDate: 2026-01-06
 modDate: 2026-09-05

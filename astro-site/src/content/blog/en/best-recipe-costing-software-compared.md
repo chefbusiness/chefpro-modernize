@@ -1,5 +1,5 @@
 ---
-title: "Best Recipe Costing Software 2026: 10 Tools Compared (Free & Paid)"
+title: "Best Recipe Costing Software {year}: 10 Tools Compared (Free & Paid)"
 description: "Recipe costing software calculates the cost of each dish from ingredient price, yield and waste. How it differs from a spreadsheet, and how it feeds menu engineering."
 pubDate: 2026-03-30
 modDate: 2026-10-22

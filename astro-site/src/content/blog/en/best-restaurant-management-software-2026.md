@@ -1,5 +1,5 @@
 ---
-title: "10 Best Restaurant Management Software in 2026: Features, Pricing, and Reviews"
+title: "10 Best Restaurant Management Software in {year}: Features, Pricing, and Reviews"
 description: "Restaurant management software has become the backbone of modern hospitality operations. With 82% of restaurants now utilizing some form of digital…"
 pubDate: 2026-04-04
 modDate: 2026-08-31

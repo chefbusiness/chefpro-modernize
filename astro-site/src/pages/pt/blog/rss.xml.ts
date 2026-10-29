@@ -1,6 +1,7 @@
 // Fase 9-PT (2026-08-19) — Feed RSS del blog PT: /pt/blog/rss.xml. Sin
 // dependencias externas (mismo conversor que los feeds ES, EN, IT, FR y DE,
 // con las URLs y el <language> del árbol PT).
+import { resolveDatePlaceholders } from '../../../lib/date-placeholders.mjs';
 import { SITE } from '../../../i18n/config';
 import { blogBase, getPublishedPosts, postPath, postSlug } from '../../../lib/blog';
 
@@ -17,10 +18,10 @@ export async function GET() {
     .map((p) => {
       const url = `${SITE}${postPath(postSlug(p), 'pt')}`;
       return `    <item>
-      <title>${esc(p.data.title)}</title>
+      <title>${esc(resolveDatePlaceholders(p.data.title, undefined, 'pt'))}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <description>${esc(p.data.description)}</description>
+      <description>${esc(resolveDatePlaceholders(p.data.description, undefined, 'pt'))}</description>
       <pubDate>${p.data.pubDate.toUTCString()}</pubDate>
     </item>`;
     })

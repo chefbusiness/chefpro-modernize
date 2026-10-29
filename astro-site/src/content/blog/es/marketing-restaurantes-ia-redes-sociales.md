@@ -1,5 +1,5 @@
 ---
-title: "Marketing para Restaurantes en Redes Sociales: Plan IA 2026"
+title: "Marketing para Restaurantes en Redes Sociales: Plan IA {year}"
 description: "Plan de marketing para restaurantes en redes sociales con IA: calendario mensual por canal (Instagram, TikTok, Google Business, email) y prompts de copys."
 pubDate: 2026-03-16
 modDate: 2026-09-05

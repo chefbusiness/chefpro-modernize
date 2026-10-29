@@ -1,5 +1,5 @@
 ---
-title: "IA para Recetas de Cocina Gratis: 12 Plataformas que Todo Chef Debe Conocer en 2025"
+title: "IA para Recetas de Cocina Gratis: 12 Plataformas que Todo Chef Debe Conocer en {year}"
 description: "En la era digital gastronómica de 2025, más del 73% de los chefs profesionales ya utilizan algún tipo de IA para recetas de cocina, ia para cocinar…"
 pubDate: 2025-09-07
 modDate: 2026-08-31

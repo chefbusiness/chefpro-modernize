@@ -1,6 +1,6 @@
 ---
-title: "APPCC Restaurante: Guía 2026 para Pasar la Inspección"
-description: "Guía práctica de APPCC para restaurantes en 2026: prerrequisitos, PCC, registros e inspecciones, y cómo la IA genera tu plan y automatiza los registros."
+title: "APPCC Restaurante: Guía {year} para Pasar la Inspección"
+description: "Guía práctica de APPCC para restaurantes en {year}: prerrequisitos, PCC, registros e inspecciones, y cómo la IA genera tu plan y automatiza los registros."
 pubDate: 2026-04-03
 modDate: 2026-09-06
 category: ia-en-gastronomia

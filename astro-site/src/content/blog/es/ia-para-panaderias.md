@@ -1,5 +1,5 @@
 ---
-title: "IA para Panaderías: Guía Completa para tu Obrador 2026"
+title: "IA para Panaderías: Guía Completa para tu Obrador {year}"
 description: "IA para panaderías: casos prácticos por proceso —fermentación, escandallo por pieza, mermas y marketing local— para producir mejor y tirar menos pan."
 pubDate: 2026-02-03
 modDate: 2026-09-10

@@ -542,7 +542,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 |---|---|---|---|
 | Cómo Montar una Chocolatería Boutique & Atelier | Guías Cómo Montar | 65 € | Octubre 2026 |
 | Cómo Montar una Churrería-Chocolatería — ✅ F1 · ✅ 8 Excel · ✅ guion · ✅ capa técnica (rama) · ⏸️ **PARADA por John el 3-oct a las 11:20** (proceso desproporcionado: ≈ 10,5 M); falta redacción + landing + PR en modo mínimo (≈ 2 M) | Guías Cómo Montar | 65 € | Q4 2026 |
-| Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
+| ~~Plan de Negocio: Heladería Artesanal~~ **✅ LIVE 25-oct-2026** (producto 52, PR #161 → `cbdcccd6`; gemelo EN Ice Cream Shop Business Plan Kit $39, 27-oct) | Planes de negocio | 35 € | — |
 | ~~Tareas Recurrentes: Taquería Mexicana~~ **✅ LIVE 20-sep-2026** (producto 50, 14 €, PR #85 → `4f214a0`; correo el 29-oct) | Kits de tareas | 14 € | — |
 | Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |
 | Plan de Negocio: Hamburguesería Smash | Planes de negocio | 35 € | Q4 2026 |
@@ -555,7 +555,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | Tareas Recurrentes: Poke Bowl / Healthy Bowl | Kits de tareas | 12 € | Próximamente |
 | Tareas Recurrentes: Restaurante Vegetariano / Plant-Based | Kits de tareas | 12 € | Próximamente |
 | Plan de Negocio: Cortador de Jamón para Eventos | Planes de negocio | 45 € | Próximamente |
-| Plan de Negocio: Cafetería Móvil para Eventos | Planes de negocio | 45 € | Próximamente |
+| ~~Plan de Negocio: Cafetería Móvil para Eventos~~ **✅ LIVE 28-oct-2026** (producto 55, PR #177 → `176b10d0`; gemelo EN Coffee Cart Business Plan Kit $39, PR #178 → `13734218`) | Planes de negocio | 45 € | — |
 | Plan de Negocio: Pizzero Móvil con Horno de Leña | Planes de negocio | 45 € | Próximamente |
 | Kit de Análisis de Reseñas con IA | Kits de gestión | 19 € | Próximamente |
 | Manual del Empleado de Hostelería | Manuales | 55 € | Próximamente |
@@ -792,3 +792,29 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   Ice Cream `plink_1UV6rK4CcdRGidmE9nLDNQrU` ($39) · Wedding `plink_1UV6uO4CcdRGidmEotbwEDkd` ($49), comprobados con la CLI. Gate completo
   LIVE 85 productos · 1102 entregables · 0 fallos; tienda, robots, hub verdes; Miselup 108/108; cripto 200 ×3 (pedidos QA `qa-hotel-en`,
   `qa-icecream-en`, `qa-wedding-en` y `qa-ctrl`, por purgar); parche ES del spa comprobado en producción; sitemap reenviado. Tienda EN: 31.
+
+### ✅ 2026-10-28 (Claude Code en el Mac + VPS) — **Plan de Negocio: Cafetería Móvil para Eventos (ES, 45 €, nº 55) + Coffee Cart Business Plan Kit (EN, $39)** — LOS DOS LIVE
+
+- John: «escoge con qué producto español continuar» y dejar su versión EN también en producción el mismo día. Elegida la Cafetería
+  Móvil (tarjeta «Próximamente», 45 €) frente a la Hamburguesería Smash: ES ~10/mes las dos, pero EN «coffee truck business plan»
+  720/mes de media + «coffee cart business plan» 320. La «subida ×8» era la serie de DataForSEO invertida (arreglado `scripts/dataforseo.py`).
+- PR **#177 (ES) → `176b10d0`** · **#178 (EN, apilado) → `13734218`**. Links: ES `plink_1UVeuY4CcdRGidmEKFfsfmBH` (45 EUR) · EN
+  `plink_1UVf3T4CcdRGidmEpptCpIzi` (39 USD), comprobados con la CLI (one_time, exclusive, factura, redirección a su `/access`).
+- LIVE: postpago completo 87 productos · 1114 entregables · 0 fallos; `--only` ×2 verdes; tienda, robots, hub (Cafetería primera) y
+  Miselup 110/110 verdes; nombre-gate ✅ para el slug nuevo; cripto 200 ×2 (pedidos QA `qa-cafemovil` y `qa-coffeecart`, por purgar);
+  sitemap reenviado. `fase6-gate` da 3 falsos positivos de umbrales viejos (recuento del sitemap de julio y `hreflang` contado en todo
+  el HTML: la portada tiene sus 8 `<link>` correctos).
+- **Correos:** ES **13-dic 08:00Z** (borrador `54186da9`, routine `trig_01DfJRFTEchp9u5wvki9gQVj` el 13-nov) · EN **10-mar-2027 14:00Z**
+  (borrador `bd617950`, routine `trig_019sy8y23xamjrAcohMyZzfH` el 9-feb). Prueba a John enviada. **Siguiente hueco: ES 18-dic · EN 15-mar-2027.**
+- **Cola decidida con John al cierre (28-oct):** 1) Plan de Negocio Taquería ES (35 €, idea nº 58, concepto monoproducto como la pizzería;
+  la Guía Restaurante Mexicano es el concepto amplio) + Taco Shop Business Plan Kit EN ($39) · 2) Taco Shop Checklist Templates EN ($19,
+  desde el Kit Taquería v2.0) · 3) **Asador de Pollos**: UN plan de negocio + guía de creación con todas las corrientes (pollo a la brasa
+  peruano, venezolano, asador español, rôtisserie francesa) ES + EN, y el kit de tareas suelto (= la tarjeta anunciada «Tareas Recurrentes:
+  Pollería y Pollo a la Brasa») · 4) Plan Sushi Bar ES + EN (idea nº 50) · 5) Hamburguesería Smash. El Excel del plan maestro
+  (`/Users/johnguerrero/productos-digitales/`, hoja 8 nueva) está al día con esta cola.
+- Handoff: `SESSION_HANDOFF_2026-10-28-cafeteria-movil-coffee-cart.md`.
+- **29-oct (John): el pollo sube a producción justo detrás de la Taquería.** Orden vigente: 1) Taquería ES + Taco Shop EN (F1 en curso) ·
+  2) **Pollería / Asador de Pollos** (plan + guía ES + gemelo EN «Rotisserie Chicken Restaurant Business Plan Kit») y el kit «Tareas
+  Recurrentes: Pollería y Pollo a la Brasa» · 3) Taco Shop Checklist Templates EN · 4) Sushi Bar · 5) Hamburguesería Smash. Mapa de palabras
+  clave por mercado (ES 7 países + US/UK/AU): `scripts/productos-digitales/plan-polleria/F0-mapa-keywords-es-en.md`.
+

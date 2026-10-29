@@ -1,5 +1,5 @@
 ---
-title: "IA para Pizzerías: Masa, Food Cost y Delivery en 2026"
+title: "IA para Pizzerías: Masa, Food Cost y Delivery en {year}"
 description: "IA para pizzerías proceso a proceso: masas y fermentación, food cost por pizza, cartas, delivery y marketing local. Empieza con AI Chef Pro."
 pubDate: 2026-01-27
 modDate: 2026-08-31

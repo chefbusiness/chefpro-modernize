@@ -1,6 +1,6 @@
 ---
-title: "IA para Restaurantes 2026: Guía por Áreas y Herramientas"
-description: "IA para restaurantes en 2026: qué herramienta usar en mermas, escandallos, carta, marketing y reservas, y por dónde empezar sin gastar de más."
+title: "IA para Restaurantes {year}: Guía por Áreas y Herramientas"
+description: "IA para restaurantes en {year}: qué herramienta usar en mermas, escandallos, carta, marketing y reservas, y por dónde empezar sin gastar de más."
 pubDate: 2026-03-13
 modDate: 2026-08-31
 category: ia-en-gastronomia

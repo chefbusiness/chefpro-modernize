@@ -1,6 +1,6 @@
 ---
 title: "30 Hacks con Inteligencia Artificial de AI Chef Pro para Mejorar la Gestión de tu Restaurante"
-description: "¿Sientes que tu restaurante podría rendir mucho más, pero no sabes exactamente por dónde empezar con la inteligencia artificial? No eres el único. En 2026…"
+description: "¿Sientes que tu restaurante podría rendir mucho más, pero no sabes exactamente por dónde empezar con la inteligencia artificial? No eres el único. En {year}…"
 pubDate: 2026-02-20
 modDate: 2026-08-31
 category: libreria-de-prompts

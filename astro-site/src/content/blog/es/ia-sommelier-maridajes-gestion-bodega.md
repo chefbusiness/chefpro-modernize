@@ -1,5 +1,5 @@
 ---
-title: "IA para Sommelier: Maridajes Inteligentes y Gestión de Bodega 2026"
+title: "IA para Sommelier: Maridajes Inteligentes y Gestión de Bodega {year}"
 description: "La figura del sommelier ha evolucionado dramáticamente en los últimos años. Lo que antes era un profesional basado exclusivamente en el conocimiento…"
 pubDate: 2026-03-30
 modDate: 2026-08-31
