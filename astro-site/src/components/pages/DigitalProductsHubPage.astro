@@ -59,20 +59,24 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Rotisserie Chicken Restaurant Business Plan Kit (29-oct-2026, decimotercera tanda de planes EN): el más nuevo → 1; el Taco Shop Business
+  // Plan Kit y el resto de vivos bajan un puesto. SUSTITUYE a la tarjeta provisional «Business Plan: Rotisserie Chicken Restaurant» que metió
+  // la F3 del ES (apuntaba al ES y describía el kit español: guía de equivalencias para Latinoamérica); una sola tarjeta por producto.
+  // Imagen: el hero ES de la pollería (sin texto).
   {
-    name: 'Business Plan: Rotisserie Chicken Restaurant',
+    name: 'Rotisserie Chicken Restaurant Business Plan Kit',
     slug: '/plan-negocio-polleria',
-    description: 'Complete business plan to open a rotisserie chicken restaurant: a 3-year, 9-sheet Excel financial plan, a 10-section Word plan covering the five rotisserie chicken revenue streams, an 80-task opening checklist, a chicken, rotisserie and per-order costing calculator and the Equivalents Guide for Latin America.',
+    description: 'Rotisserie chicken restaurant business plan template for a counter-service pollo a la brasa shop: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in covers per day, cash flow and loan schedule, a chicken yield, rotisserie and costing calculator, and an 80-task startup checklist.',
     features: [
       '10-section business plan in Word',
-      '9-sheet Excel financial plan with month-by-month cash flow',
-      'Opening checklist: 80 tasks in 6 phases',
-      'Chicken, rotisserie and per-order costing calculator and Equivalents Guide for Latin America',
+      '9-sheet Excel financial projections with 12-month cash flow',
+      'Chicken cost and rotisserie calculator: cost per bird, food cost per plate, birds per load',
+      '80 tasks: Type I hood, gas line, health permit, beer and wine license',
     ],
     iconName: 'Flame',
     image: '/lovable-uploads/ai-gallery/plan-polleria-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'rotisserie-chicken', 'chicken', 'business-plan'],
   },
   // Taco Shop Business Plan Kit (29-oct-2026, duodécima tanda de planes EN): el más nuevo → 1; el Coffee Cart Business Plan Kit

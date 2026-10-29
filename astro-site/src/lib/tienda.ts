@@ -215,11 +215,12 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
-    // Pollería y Asador de Pollos (29-oct-2026): ES vivo; Rotisserie Chicken Restaurant Business Plan (EN) reservado (vivo: false) hasta que nazca la edición inglesa.
+    // Tienda EN (29-oct-2026): Rotisserie Chicken Restaurant Business Plan Kit (SPEC business-plans-en-13 / plan-polleria F1-camino §6-§7). vivo: true en la
+    // rama, que se fusiona cuando existe el Payment Link (mismo criterio que el resto de planes EN de la tienda).
     familia: 'plan-negocio-polleria',
     productos: {
       es: { slug: 'plan-negocio-polleria', vivo: true },
-      en: { slug: 'rotisserie-chicken-restaurant-business-plan', vivo: false },
+      en: { slug: 'rotisserie-chicken-restaurant-business-plan', vivo: true },
     },
   },
   {

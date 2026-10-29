@@ -1,0 +1,2804 @@
+{
+ "tanda": "GPOL-check",
+ "salida": "scripts/productos-digitales/business-plans-en-13/textos_en/GPOL-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 109,
+ "n_palabras": 2879,
+ "pistas": {
+  "P01": "US §6.2: Type I hood + fire suppression (UL 300) + makeup air sobre rotisseries y freidoras; «ask the fire marshal in writing»",
+  "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P03": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P04": "US §9: «rotisserie chicken restaurant» (negocio), «commercial rotisserie» (equipo), «rotisserie chicken» (producto); NUNCA «poultry shop», «roaster» ni «pollo asado» (en EE. UU. = pollo mexicano a la parrilla)",
+  "P05": "charcoal (lump/hardwood) · charcoal-fired · NFPA 96 solid fuel: variante, no el caso",
+  "P06": "licensed gas contractor; gas service and regulator sized for two rotisseries + fryers",
+  "P07": "spit · load · spitting (8-spit rotisserie, 48 birds per load)",
+  "P08": "Peruvian pollo a la brasa · soy sauce (sillao) · aji panca · huacatay (sin tildes)",
+  "P09": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P10": "«LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P11": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P12": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P13": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P14": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P15": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P16": "heated display (merchandiser) · hot holding ≥ 135 °F · TPHC 4 h con procedimiento escrito (US §6.1)",
+  "P17": "pre-orders · party trays · catering orders (franja de recogida y depósito)",
+  "P18": "Glosario: mostrador → «counter»; el caso US no tiene barra",
+  "P19": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P20": "offer letters, I-9, W-4, state minimum wage, W-2 por horas (sin convenio; sin «digital obligatorio»)",
+  "P21": "«zoning check before signing» · «building permit + certificate of occupancy» · business license + sales tax permit",
+  "P22": "grease interceptor · used cooking oil pickup",
+  "P23": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P24": "US §6.1: aves 165 °F; hot holding ≥ 135 °F; cooling 135 → 70 °F en 2 h y → 41 °F en 6 h; reheating 165 °F; la métrica solo entre paréntesis",
+  "P25": "marinade · marinated 24-48 hours (soy sauce, beer, garlic, cumin, aji panca, huacatay, vinegar): soy + wheat",
+  "P26": "sides: yuca fries, fries, rice & beans, maduros, house salad, salchipapas (sin croquetas ni ensaladilla: carta US §1)",
+  "P27": "US §6.4: plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan",
+  "P28": "giblets: el caso compra WOG (without giblets)",
+  "P29": "family meal (whole + 2 large sides) · half · quarter (dark = leg & thigh / white = breast & wing)",
+  "P30": "aji verde · aji amarillo · huancaina · rocoto (sin tildes); alérgenos egg / milk / wheat según receta",
+  "P31": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P32": "family-meal boxes, vented clamshells, foil bags, sauce cups; local packaging ordinances",
+  "P33": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P34": "Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P35": "US §6.5: 9 major allergens incl. sesame (UK 14); marinade = soy + wheat; aji verde = egg + milk; huancaina = milk + wheat",
+  "P36": "US §6.7: «beer & wine license» (estado + local; «apply early», sin prometerla) · liquor liability",
+  "P37": "US §6.5: NO prometer «gluten-free» (21 CFR 101.91), ni del pollo ni de las yuca fries",
+  "P38": "DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2)",
+  "P39": "own drivers = W-2 + hired & non-owned auto insurance (check your state)",
+  "P40": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P41": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P42": "el pollo al ast catalán NO cruza: en EE. UU. la quinta corriente es «charcoal chicken»",
+  "P43": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P44": "«POS that reports sales tax» (sin Veri*factu)",
+  "P45": "sin equivalente US: packaging ordinances locales; TPHC y cold holding ≤ 41 °F",
+  "P46": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P47": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P48": "«Music licensing (ASCAP/BMI/SESAC)»",
+  "P49": "cooked yield (70-75 %, Kit) · shrink / holding waste («Every bird counts»: ≤ 5 % de los pollos cargados)",
+  "P50": "US §8: el caso cuenta «covers» (130 equivalentes; una family meal = 3.5 covers); «orders» solo para pre-orders y pickup orders; nunca «customers» para el volumen diario"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state/local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "pollería / asador de pollos (negocio)": "rotisserie chicken restaurant · Peruvian chicken place/restaurant · chicken shop (solo UK); NUNCA «poultry shop/store» (pollo crudo) ni «roaster»",
+  "pollo a la brasa": "pollo a la brasa (sin traducir) · Peruvian rotisserie chicken · Peruvian chicken",
+  "asador / horno de pollos (equipo)": "commercial rotisserie (oven) · chicken rotisserie machine; el pollero peruano = charcoal rotisserie",
+  "espada · cesta · carga / tanda": "spit (8-spit rotisserie) · basket (basket rotisserie) · load",
+  "pollo asado (España)": "rotisserie chicken; «pollo asado» en EE. UU. = pollo mexicano a la parrilla (El Pollo Loco): NO es sinónimo",
+  "brasa / carbón vegetal": "charcoal (lump/hardwood charcoal) · charcoal-fired",
+  "pollo entero · medio · cuarto (muslo / pechuga)": "whole · half · quarter chicken (dark = leg & thigh / white = breast & wing)",
+  "menú familiar": "family meal (whole chicken + 2 large sides)",
+  "guarniciones": "sides (regular / large): yuca fries (no «yucca»), fries, rice & beans, maduros (sweet plantains), house salad, coleslaw, salchipapas",
+  "salsas / cremas": "aji verde (Peruvian green sauce), aji amarillo, rocoto, huancaina, huacatay (sin tildes)",
+  "bebidas peruanas": "Inca Kola · chicha morada (purple corn drink)",
+  "adobo / maceración": "marinade · «marinated 24-48 hours»",
+  "rendimiento · merma": "cooked yield · shrink / holding waste",
+  "vitrina caliente": "heated display (merchandiser) · hot holding",
+  "pollo de 1,2-1,4 kg": "broiler/fryer (2.5-4.5 lb) · WOG (without giblets); «roaster» = pollo grande, no el asador",
+  "encargos para fiestas": "pre-orders · party trays · catering orders",
+  "para llevar · plataforma": "take-out / to-go / pickup · third-party delivery marketplace",
+  "mostrador": "counter service · fast casual · QSR",
+  "cubierto equivalente · pedido · ticket medio": "covers · average check (excl. sales tax and tip)",
+  "escandallo": "food cost per bird / per plate · recipe costing",
+  "campana · carbón": "Type I hood · fire suppression (UL 300) · solid-fuel cooking (NFPA 96) · spark arrester",
+  "enfriar · recalentar · control por tiempo": "cooling · reheating for hot holding · time as a public health control (TPHC)",
+  "manipulador de alimentos": "food handler card · Certified Food Protection Manager (CFPM)",
+  "pollo broaster": "pressure-fried chicken («Broaster» es marca)",
+  "piri-piri portugués": "peri-peri (minúscula, genérico)",
+  "agotado": "86'd",
+  "63 °C · 75 °C": "135 °F · 165 °F",
+  "ordenanza de humos": "Type I hood + local fire/mechanical code (+ air district)",
+  "licencia de apertura": "business license + certificate of occupancy",
+  "IVA · fianza": "sales tax · deposit",
+  "autónomo / SL": "LLC"
+ },
+ "pestanas_es_en": {
+  "POLP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "POLC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local, humos y gas": "Phase 2 - Hood, Gas & Permits",
+   "F3 - Cocina, asador y sanidad": "Phase 3 - Rotisserie & Health",
+   "F4 - Personal y alérgenos": "Phase 4 - Staff & Allergens",
+   "F5 - Carta, marca y encargos": "Phase 5 - Menu & Pre-Orders",
+   "F6 - Apertura y 90 días": "Phase 6 - Opening & 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "☐"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US ROTISSERIE CHICKEN BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del «Plan de Negocio: Pollería y Asador de Pollos» de AI Chef Pro.": "This file is part of the Rotisserie Chicken Restaurant Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — POLLERÍA Y ASADOR DE POLLOS": "ROTISSERIE CHICKEN RESTAURANT STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Pollería y Asador de Pollos": "HOW TO USE THIS WORKBOOK — Rotisserie Chicken Restaurant Financial Projections",
+  "PLAN DE NEGOCIO: POLLERÍA Y ASADOR DE POLLOS": "ROTISSERIE CHICKEN RESTAURANT BUSINESS PLAN: PERUVIAN-STYLE COUNTER SERVICE",
+  "Inversión inicial estimada — pollería-asador de barrio con asador de gas, mostrador y 20 plazas": "Estimated Startup Costs — counter-service rotisserie chicken restaurant with two gas rotisseries and 40 seats",
+  "Ajusta las cifras a tu proyecto: son las de un caso tipo en una ciudad media, sin traspaso. Pon tus presupuestos reales en las celdas de importe.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — pollería-asador con mostrador, encargos, plataforma y sala": "Base case — rotisserie chicken restaurant: counter, pickup & pre-orders, delivery and dine-in",
+  "Punto de equilibrio mensual y diario — pollería-asador de barrio": "Monthly and daily break-even — neighborhood rotisserie chicken restaurant",
+  "FASE 2: LOCAL, SALIDA DE HUMOS, GAS Y LICENCIA (semanas 3-14)": "PHASE 2: SITE, HOOD, GAS & PERMITS (weeks 3-14)",
+  "FASE 3: OBRADOR, ASADOR Y REGISTRO SANITARIO (semanas 6-14)": "PHASE 3: KITCHEN, ROTISSERIES & HEALTH PERMIT (weeks 6-14)",
+  "FASE 5: CARTA, MARCA, ENCARGOS Y PROVEEDORES (semanas 8-16)": "PHASE 5: MENU, BRAND, PRE-ORDERS & SUPPLIERS (weeks 8-16)",
+  "Proyecto técnico de actividad y de salida de humos, y dirección de obra": "Architect, MEP & hood drawings, plan review & permit fees",
+  "Obra y acondicionamiento del local, rótulo y fachada": "Build-out (second-generation space, 1,600 sq ft), signage & facade",
+  "Conducto de extracción exclusivo hasta cubierta": "Type I hood (about 14 ft), UL 300 fire suppression & makeup air",
+  "Instalación eléctrica trifásica, cuadro y boletín": "Electrical service, panel & gas lines",
+  "Fontanería, separador de grasas, climatización e instalación de gas": "Plumbing, grease interceptor & HVAC",
+  "Asador de pollos de gas de doce espadas y juego de espadas": "Commercial gas rotisseries × 2 (8 spits, 48 birds per load each)",
+  "Vitrina caliente de mostrador y mantenedor de patatas": "Heated display merchandiser, steam table & holding cabinet",
+  "Freidora doble y fogón": "Fryers × 2 (50 lb) & range with stock-pot burners",
+  "Campana extractora con motor y filtros": "Walk-in cooler (6×8)",
+  "Frío: armarios de pollo crudo y adobado, congelador y vitrina refrigerada": "Refrigerated prep table & reach-in freezer",
+  "Lavavajillas de capota, fregaderos, lavamanos y mesas inox de espetar": "3-comp sink, dish machine, hand & poultry prep sinks, shelving & stainless",
+  "Utillaje: sondas, básculas, GN, tijeras de trinchar, etiquetadora y vajilla": "Smallwares & sauce station (spare spits, hotel pans, probes, blender, marinating tubs)",
+  "Botellero y nevera de bebida para llevar": "Beverage cooler & ice machine",
+  "Mobiliario de sala": "Furniture (40 seats)",
+  "TPV con Veri*factu, datáfono, impresora y tablet de plataformas": "POS, online ordering, kiosk & delivery tablets",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal & food safety plan",
+  "Marca, web, fotos y lanzamiento": "Branding, website, photos & launch",
+  "Stock inicial: pollo, patata, aceite, envases y bebida": "Opening inventory",
+  "Ventas de pollo asado y cocina (mostrador, encargos, plataforma y sala)": "Food sales (rotisserie chicken plates, family meals & sides: counter, pickup, pre-orders, delivery & dine-in)",
+  "Ventas de bebida (refrescos, agua, cerveza y vino)": "Beverage sales (sodas, Inca Kola, chicha morada, beer & wine)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property + workers' comp)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento de la campana extractora, el gas, el asador y el frío": "Maintenance (quarterly hood cleaning, rotisserie service, refrigeration)",
+  "Software, TPV, teléfono e internet": "Software, POS & online ordering",
+  "Limpieza, lavandería, EPI y análisis de autocontrol": "Cleaning, linens & uniforms",
+  "Gestión de residuos y del aceite y la grasa usados": "Waste, grease & used-oil hauling + permit renewals",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales, vigilancia de la salud y formación": "Food safety & staff training (CFPM, allergens, OSHA)",
+  "Titular — maestro/a asador: compra del pollo, adobos, asador, encargos y gestión": "Owner / GM & head of rotisserie",
+  "Asador/a-cocinero/a: espetar, freidora, guarniciones y croquetas": "Rotisserie cook (spitting, loads, carving)",
+  "Dependiente/a de mostrador y caja": "Counter lead / cashier",
+  "Camarero/a de sala": "Counter, packing & expo (part-time W-2)",
+  "Ayudante de cocina y friegue de fin de semana": "Dish & prep (part-time W-2)",
+  "Refuerzo de sábado, domingo y festivos": "Fry & line cook (part-time W-2, weekends & peak days)",
+  "Suplencias de vacaciones y descansos": "Prep & relief rotisserie cook (marinades, sides, sauces; days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0613",
+   "es": "Consulta urbanística previa: salida de humos, potencia trifásica y aforo",
+   "donde": [
+    "POLC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0616",
+   "es": "Pregunta al ayuntamiento si el uso permite un asador de pollos con freidora y sala, si el local admite un conducto de humos exclusivo hasta la cubierta (en Madrid, que supere en 1 m lo que haya en 15 m: Ordenanza 4/2021, art. 12 y anexo I), qué potencia tiene (¿trifásica?) y qué aforo. Sin salida de humos a cubierta no hay asador ni freidora",
+   "donde": [
+    "POLC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0617",
+   "es": "Decidir asador de gas o brasa de leña o carbón ANTES de firmar el local",
+   "donde": [
+    "POLC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0619",
+   "es": "El asador de gas de espadas (el del plan) cabe en una salida de humos normal, con la instalación por empresa habilitada (RD 919/2006). El horno de brasa de leña o carbón de la pollería peruana y la parrilla de carbón piden además filtro de partículas en el conducto (en Madrid, Ordenanza 4/2021, art. 23): pregunta en la consulta previa si tu local lo admite. Es decisión de producto, no de decoración",
+   "donde": [
+    "POLC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P04",
+    "P07",
+    "P05",
+    "P08",
+    "P01",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0620",
+   "es": "Decidir el tamaño del asador con la cuenta del domingo",
+   "donde": [
+    "POLC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0621",
+   "es": "Con la hoja del asador de la calculadora del pack: cuántos pollos vendes el domingo, cuántos caben por carga y cuántas cargas salen antes de las tres. Con doce espadas caben unos 60 por carga; con ocho, unos 40, y agosto y los festivos van justos. El asador tiene que caber en el local con su campana extractora",
+   "donde": [
+    "POLC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P04",
+    "P07",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0630",
+   "es": "Alta censal (modelo 036) en el epígrafe 677.9 del IAE y, con sala, en el 671 o el 673.2",
+   "donde": [
+    "POLC · F1 - Constitución!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P10"
+   ]
+  },
+  {
+   "id": "c0632",
+   "es": "El 677.9 cubre la condimentación y venta de comida para consumir fuera del local; con mesas, el grupo 671 (restaurante, por categoría) o el 673.2, que facultan a vender en el propio local (RDLeg 1175/1990). NUNCA sólo el 642.5 («pollería» de aves crudas): no ampara asar. Confírmalo con tu gestoría. Exento de cuota con una cifra de negocio inferior a 1 millón de euros (art. 82.1.c de la Ley de Haciendas Locales)",
+   "donde": [
+    "POLC · F1 - Constitución!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11",
+    "P12",
+    "P13",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0643",
+   "es": "Lleva el plan financiero completo, con la tesorería mes a mes. Pide también oferta de leasing o renting del asador, el frío y la freidora y de una línea ICO",
+   "donde": [
+    "POLC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0647",
+   "es": "RC de al menos 300.000 € y multirriesgo con incendio y avería del frío. Dile a la aseguradora que trabajas con asador de pollos y freidora a gas",
+   "donde": [
+    "POLC · F1 - Constitución!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P04",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0650",
+   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "donde": [
+    "POLC · F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error)",
+    "POLC · F2 - Local, humos y gas!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 (dv-error)",
+    "POLC · F3 - Cocina, asador y sanidad!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 (dv-error)",
+    "POLC · F4 - Personal y alérgenos!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)",
+    "POLC · F5 - Carta, marca y encargos!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)",
+    "POLC · F6 - Apertura y 90 días!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)"
+   ],
+   "max_len": 255,
+   "propuesta_en": "Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.",
+   "propuesta_de": "GTAQ-check c0654 (TAQC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 / TAQC F2 - Local, humos y gas!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19)"
+  },
+  {
+   "id": "c0653",
+   "es": "Elegir el local: unos 80 m² con salida de humos a cubierta posible",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0655",
+   "es": "Obrador y zona de asado de unos 25 m² a la vista, mostrador con vitrina caliente, sala de 16 plazas en mesa y 4 en barra, aseos (uno adaptado) y almacén. Barrio residencial con paso de familias el fin de semana y cómodo para parar el coche y recoger el encargo",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15",
+    "P16",
+    "P17",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0659",
+   "es": "Freidora, frío, extracción, climatización y lavavajillas en la luz (trifásica si el asador es eléctrico: ampliarla tarda de 4 a 8 semanas); asador y fogón en el gas, natural o envasado. Pregunta plazo y coste a la distribuidora",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P08",
+    "P01",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0662",
+   "es": "Conducto exclusivo, continuo y estanco hasta la cubierta, por patio o fachada, con el permiso de la comunidad de propietarios si cruza zonas comunes. Con doce espadas, la extracción ronda los 1.800-2.200 m³/h",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0664",
+   "es": "El plan cuenta dos meses de renta antes de abrir y dos de fianza. Pide carencia mientras duran la obra, el conducto y el gas",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P19",
+    "P09",
+    "P01",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0665",
+   "es": "Contrato de arrendamiento con el uso de asador con salida de humos",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P01",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0668",
+   "es": "Que diga «restaurante» o «asador de pollos con cocina» y que autorice la obra del conducto y la salida de humos a cubierta",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0672",
+   "es": "Distribución del obrador y del mostrador, potencia, aforo, ventilación, accesibilidad, la instalación de gas y el conducto a cubierta. Fuera de Madrid, pide la ordenanza de humos y de calidad del aire de tu ayuntamiento",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P01",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0675",
+   "es": "Las pollerías y los asadores de pollos no están en el anexo de la Ley 12/2012: van por el régimen de tu ayuntamiento, licencia o declaración responsable según su ordenanza. Pregunta cuál te toca en la consulta previa",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P04",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "Gas por empresa instaladora habilitada y certificado del asador",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0682",
+   "es": "Certificado de la instalación, puesta en marcha certificada del asador, la freidora y el fogón e inspección (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 07 e ITC-ICG 08). Un técnico de conexión sin certificado no vale",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P04",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0683",
+   "es": "Conducto exclusivo a cubierta y filtro de partículas si hay leña o carbón",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0686",
+   "es": "Ejemplo de Madrid (Ordenanza 4/2021): conducto exclusivo que supere en 1 m lo que haya en 15 m (art. 12 y anexo I) y, con leña, carbón u otro combustible sólido, sistemas específicos de filtrado de partículas (art. 23). Con asador de gas, el conducto normal",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P01",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0687",
+   "es": "Obra del obrador, el mostrador y la sala: superficies lavables",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0689",
+   "es": "Paredes alicatadas, suelo antideslizante (también alrededor del asador), falsos techos lavables, lavamanos de accionamiento no manual, aseos (uno adaptado) y aislamiento acústico si hay vecinos",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "Agua fría y caliente en el obrador, desagües con separador de grasas (el asador y la freidora echan mucha) y climatización de la sala",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P16",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0693",
+   "es": "Campana extractora sobre el asador, la freidora y el fogón",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0695",
+   "es": "Campana extractora con motor y filtros de grasa que cubra toda la línea de fuego, conectada al conducto exclusivo. Pide al instalador el caudal y el plan de limpieza de los filtros",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E17"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Type I hood over the trompos, griddle, comal and fryer, with grease filters, a UL 300 fire suppression system and makeup air. Ask the installer for the airflow figures and the filter cleaning schedule. The fire marshal inspects and signs off; keep a Class K extinguisher within reach of the fryer.",
+   "propuesta_de": "GTAQ-check c0703 (TAQC F2 - Local, humos y gas!E18)",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0696",
+   "es": "Instalación eléctrica trifásica, boletín y certificado final de obra",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0700",
+   "es": "Rótulo y fachada con el teléfono de encargos",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!B19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Titular / Rotulista",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!C19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0703",
+   "es": "Pregunta en la consulta previa si tu ayuntamiento pide un permiso aparte para el rótulo. Pon el teléfono de encargos bien visible desde la calle",
+   "donde": [
+    "POLC · F2 - Local, humos y gas!E19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0706",
+   "es": "Comprar el asador, la vitrina caliente, la freidora y el fogón",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0707",
+   "es": "Asador de pollos de gas de doce espadas (de 4.373 a 5.967 € sin IVA en catálogo, espadas aparte), vitrina caliente que mantenga 63 °C o más, freidora doble y fogón. Pide ficha técnica, pollos por espada, consumo de gas, plazo de entrega y montaje",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11",
+    "P23",
+    "P04",
+    "P07",
+    "P16",
+    "P06",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0708",
+   "es": "Comprar el frío: armarios de pollo crudo y adobado, congelador y vitrina",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0710",
+   "es": "Armarios para el pollo crudo y el adobado a 4 °C o menos, congelador y una vitrina refrigerada que mantenga las guarniciones del mostrador a 4 °C o menos",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16",
+    "P26",
+    "P25",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0714",
+   "es": "Va al registro sanitario de tu comunidad autónoma (RD 1021/2022). El registro estatal (RGSEAA) sólo aplica si sirves a otros negocios por encima de lo que permite el art. 3 del mismo real decreto (venta marginal, localizada y restringida: por ejemplo, pollo asado o croquetas a un bar de otro titular)",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P04",
+    "P26",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0715",
+   "es": "APPCC del pollo crudo: cámara a 4 °C o menos y mollejas a 3 °C o menos",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P28",
+    "P27",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "La carne de aves va a 4 °C o menos, los despojos de aves a 3 °C o menos y el pollo adobado crudo es un preparado de carne: también a 4 °C o menos (RD 1021/2022, art. 4.1). Anota la temperatura de cada recepción",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P25",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "Mesa de crudo separada y el pollo crudo sin lavar",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0720",
+   "es": "Maestro/a asador",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!C9",
+    "POLC · F3 - Cocina, asador y sanidad!C10",
+    "POLC · F3 - Cocina, asador y sanidad!C16",
+    "POLC · F5 - Carta, marca y encargos!C6",
+    "POLC · F6 - Apertura y 90 días!C8",
+    "POLC · F6 - Apertura y 90 días!C13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Espetar y adobar en una mesa de acero inoxidable SEPARADA de la de servir, con sus tablas y utensilios. El pollo crudo no se lava: salpica y contamina la zona",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "APPCC del asado: sonda a 74 °C o más en el muslo y registro",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P29",
+    "P27",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0723",
+   "es": "Ninguna norma fija la temperatura de cocción del pollo: tu APPCC la fija. El caso pide 74 °C o más en la parte más gruesa del muslo, con sonda en cada carga y registro. Dorado por fuera no quiere decir hecho junto al hueso",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P07",
+    "P29",
+    "P27",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "Vitrina caliente a 63 °C o más con hora límite propia",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0725",
+   "es": "Dependiente/a de mostrador",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!C11",
+    "POLC · F4 - Personal y alérgenos!C16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0726",
+   "es": "El pollo asado en vitrina, a 63 °C o más (RD 1086/2020, art. 30, en la redacción del RD 1021/2022). Ninguna norma fija cuánto puede estar en la vitrina: la hora límite la fija tu APPCC y se anota",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P04",
+    "P16",
+    "P27",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0727",
+   "es": "Pollo sobrante: enfriado de 60 a 10 °C en menos de 2 horas y su destino",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0728",
+   "es": "Asador/a-cocinero/a",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!C12",
+    "POLC · F3 - Cocina, asador y sanidad!C13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "Lo que sobra al cierre o se mantiene a 63 °C o más, o se enfría de 60 a 10 °C en menos de 2 horas y se reaprovecha al día siguiente (croquetas, ensalada de pollo) recalentando a 74 °C durante 15 segundos en el centro (RD 1086/2020, art. 30, en la redacción del RD 1021/2022). Anota cuántos pollos sobran cada día",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P16",
+    "P26",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "Alioli, mayonesa, ensaladilla y cremas: ovoproducto, 8 °C y 24 horas",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P30",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Lo que lleva huevo y no se cocina se hace con ovoproducto de un establecimiento autorizado, a 8 °C o menos, se consume en 24 horas y se registra la fecha y la hora de elaboración (RD 1021/2022, art. 9.2 y 9.3). Nada de huevo crudo",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "Etiqueta completa en lo que envases antes de que el cliente lo pida",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P31",
+    "P09",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0733",
+   "es": "El pollo que embolsas al pedirlo o el encargo preparado a nombre del cliente llevan denominación y alérgenos (RD 126/2015, art. 4). Las bandejas de medio pollo, croquetas o ensaladilla ya cerradas en la vitrina llevan TODA la información del Reglamento (UE) 1169/2011 menos la nutricional: ingredientes, alérgenos resaltados, peso, fecha y conservación (art. 5)",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P31",
+    "P33",
+    "P16",
+    "P17",
+    "P29",
+    "P26",
+    "P20",
+    "P34",
+    "P35",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0736",
+   "es": "Lote, fecha y temperatura de recepción del pollo, temperaturas del frío, de la sonda y de la vitrina, enfriado del sobrante y proveedor de cada materia prima",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Fichas técnicas por producto con sus alérgenos",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Adobo (soja y gluten si lleva sillao o cerveza; sulfitos si lleva vino), alioli y ensaladilla (huevo), croquetas (gluten, leche y huevo), cremas peruanas (huevo, leche y cacahuete según receta) y patata pelada envasada con conservante (sulfitos). Con la calculadora del pack, el coste de cada uno",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P30",
+    "P25",
+    "P08",
+    "P36",
+    "P35",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0741",
+   "es": "En la venta a distancia, la información de alérgenos tiene que estar disponible antes de que el cliente compre (Reglamento (UE) 1169/2011, art. 14). Revisa la ficha de cada producto en cada plataforma",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P31",
+    "P09",
+    "P33",
+    "P34",
+    "P35",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0744",
+   "es": "Bolsas térmicas y envases que mantengan la temperatura durante el transporte (RD 1021/2022, art. 4.3), también en el reparto de la plataforma; el pollo entero viaja bien, las patatas fritas no",
+   "donde": [
+    "POLC · F3 - Cocina, asador y sanidad!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P26",
+    "P39",
+    "P38",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0749",
+   "es": "La pollería va al convenio provincial de hostelería: el art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería no la nombra, pero incluye los restaurantes y el reparto de comidas preparadas. Pon su salario más bajo en la hoja de Supuestos del plan",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P40",
+    "P09",
+    "P04",
+    "P20",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0752",
+   "es": "Contratar al segundo asador antes de abrir",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "Que aprenda contigo a espetar, cargar, sondear y trinchar antes de abrir: si sólo tú sabes llevar el asador, una baja cierra el domingo, que es un tercio de la semana",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P04",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "Cuadrante del domingo y de los festivos",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0759",
+   "es": "De martes a domingo al mediodía y las cenas de jueves a sábado, con el lunes de cierre. El domingo de 11:00 a 15:30 hacen falta unas seis personas: el maestro asador, el segundo asador, el mostrador, la sala, el refuerzo y el ayudante. Los festivos, como un domingo",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0764",
+   "es": "La da y la acredita la empresa (no hay un documento oficial que sacar): higiene, crudo y cocinado separados, temperaturas de la sonda, la vitrina y el enfriado, ovoproducto, alérgenos y contacto cruzado",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P16",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0765",
+   "es": "Formación del asador: espetar, cargar, sondear y trinchar",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P07",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0766",
+   "es": "Calibre y bridado del pollo, espetado sin dejar huecos, orden de carga, sonda en el muslo y trinchado en medios y cuartos: es inversión, no gasto",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0769",
+   "es": "Obligatorio (Ley 31/1995): quemaduras del asador, las espadas calientes y la freidora, cortes al trinchar y al espetar, gas, calor y cargas",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P04",
+    "P07",
+    "P16",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0775",
+   "es": "Cartel de alérgenos en el mostrador",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0776",
+   "es": "Cada adobo, salsa y guarnición con sus alérgenos a la vista del cliente: soja y gluten del adobo, huevo del alioli, leche y cacahuete de las cremas según tu receta. Revísalo cada vez que cambie una receta",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P31",
+    "P33",
+    "P26",
+    "P30",
+    "P25",
+    "P35",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0777",
+   "es": "No prometer «sin gluten» con freidora compartida",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "«Sin gluten» sólo con 20 mg/kg o menos tal como se vende (Reglamento de Ejecución (UE) 828/2014). El pollo asado sin adobo con gluten no lo lleva por receta, pero las patatas fritas en la misma freidora que las croquetas rompen la promesa: informa del alérgeno y de las trazas, no lo prometas",
+   "donde": [
+    "POLC · F4 - Personal y alérgenos!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P13",
+    "P33",
+    "P04",
+    "P26",
+    "P25",
+    "P35",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "Decidir el tipo de pollería y su carta",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "Asador solo para llevar de fin de semana, pollería-asador de barrio con sala (este plan), pollo al ast con allioli y patates rostides, o pollería peruana con horno de brasa y cremas: cada una con otra inversión, otro local y otro margen. Para un restaurante peruano de mesa, la Guía Restaurante Peruano de AI Chef Pro",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P05",
+    "P30",
+    "P08",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Carta corta con combos y su escandallo",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0786",
+   "es": "Escandalla el pollo entero, el medio y el cuarto y cada combo (con patatas, con croquetas, el menú de sala y el familiar del domingo): el pollo solo deja poco, el margen está en lo que lo acompaña. Usa la calculadora del pollo, el asador y el escandallo del pack",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P29",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "IVA de la carta para llevar: pollo al 10 %, cerveza y refrescos azucarados al 21 %",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "En sala, todo al 10 % (Ley 37/1992, art. 91.Uno.2.2.º). Para llevar y por plataforma, la comida al 10 %, pero la cerveza, el vino y los refrescos y zumos con azúcares o edulcorantes añadidos van al 21 % (art. 91.Uno.1.1.º a y b); el pan común que vendas suelto, al 4 % (91.Dos.1.1.º a). Configúralo así en el TPV y en cada plataforma",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P43",
+    "P09",
+    "P44",
+    "P36",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Los recipientes de plástico de un solo uso para llevar se cobran aparte en el tique (Ley 7/2022, art. 55). Las bandejas de cartón sin recubrimiento de plástico no lo son; la bolsa de pollo con lámina y la bandeja de aluminio, pregúntalo a tu proveedor",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P45",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "Dos proveedores de pollo con calibre fijo y temperatura de recepción",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0795",
+   "es": "Pollo de asar de calibre fijo (1,4-1,5 kg en canal), recibido a 4 °C o menos y anotado. El precio del pollo se movió un 10-12 % en un año: dos proveedores y el precio por escrito. Un calibre irregular descuadra las cargas y el escandallo",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41",
+    "P46",
+    "P07",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "Proveedores de patata, aceite, envases y bebida",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Patata congelada o fresca (la fresca baja el coste pero pide pelado y corte), aceite de girasol alto oleico, bolsas térmicas y envases. El plan los estima con precios de referencia: pon los tuyos",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0798",
+   "es": "Gestor autorizado del aceite y de la grasa de la bandeja de goteo",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Contrato con un gestor autorizado que retire el aceite de la freidora y la grasa del asador con certificado de cada recogida. Nunca por el desagüe",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P12",
+    "P04",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "Sistema de encargos: teléfono, WhatsApp y hora de recogida",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0801",
+   "es": "Encargos con nombre, teléfono y hora de recogida, cerrados el sábado para el domingo: con ellos sabes cuántos pollos cargar. Un cartel en el mostrador y el teléfono en las bolsas",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P17",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0803",
+   "es": "Lee la comisión (del 13 al 35 % más IVA según la plataforma y la zona), cada cuánto liquidan, quién paga las promociones y el coste de la tablet. Fija un techo: en este plan, el 11 % de las ventas. Recoger en el mostrador no paga comisión: empújalo con precio",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "Identidad, fotos y web con la carta, los alérgenos y los encargos",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P14",
+    "P33",
+    "P17",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0810",
+   "es": "Fotos reales del asador y de los combos; web con la carta, los alérgenos, el horario, el teléfono de encargos y la cláusula de protección de datos de cada canal",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P33",
+    "P04",
+    "P17",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Ficha de Google Business, redes y música ambiental",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P47"
+   ]
+  },
+  {
+   "id": "c0812",
+   "es": "Horario del mediodía y de las cenas, fotos del asador y respuesta a cada reseña. Si pones música, pide las dos licencias de propiedad intelectual (SGAE y AGEDI-AIE), distintas de la municipal",
+   "donde": [
+    "POLC · F5 - Carta, marca y encargos!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P47",
+    "P04",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0819",
+   "es": "Plan de limpieza del obrador, el asador y la vitrina",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0820",
+   "es": "Asador, espadas y bandeja de goteo, freidora, filtros de la campana extractora, vitrina caliente, mesa de crudo y frío, con su registro",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P07",
+    "P16",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0821",
+   "es": "Pruebas de carga del asador con la carta completa",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0823",
+   "es": "Varias cargas de prueba para ajustar el adobo, el tiempo de asado, la sonda y el trinchado, y un domingo de ensayo con encargos de amigos antes de abrir",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P07",
+    "P17",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0826",
+   "es": "Cámara del pollo, sonda de cada carga, vitrina caliente, enfriado del sobrante, ovoproducto y la hoja de limpieza; corrige cualquier desviación antes de servir",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P07",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Fichas de alérgenos, etiquetas de lo envasado, trazabilidad, registros de temperatura, de enfriado y de limpieza, formación y DDD",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P33",
+    "P34",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "Al menos una vez al año (Madrid, Ordenanza 4/2021, art. 23); el plan cuenta dos por la grasa del asador. Los filtros de grasa, con la frecuencia que fije tu plan de limpieza",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0834",
+   "es": "Revisión del gas cada 5 años y mantenimiento anual del asador",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 07), y una revisión al año de los quemadores, el motor y las espadas del asador. Apunta las fechas",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P04",
+    "P07",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Medir el rendimiento del pollo y el tiempo de carga y recalcular",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0839",
+   "es": "Pesa cinco pollos crudos y asados de la misma carga, cronometra una carga completa y anota los pollos que sobran al cierre; lleva las medias a la calculadora del pack: el rendimiento y el tiempo de asado del plan son estimaciones del kit",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0840",
+   "es": "Cuadrante y stock del verano y de los encargos de Navidad",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0841",
+   "es": "Mayo y noviembre",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0842",
+   "es": "Julio y agosto son el pico del año (la semana del 15 de agosto, la más fuerte) y diciembre repunta con los encargos de Nochebuena y Nochevieja: prepara el cuadrante, las cargas y el pollo con tiempo",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0845",
+   "es": "Ventas, comisión, promociones y envases: si la plataforma pasa del 11 % de las ventas o su margen no cubre la comisión, recorta o sube precio. Reparto propio, sólo con contrato laboral y cuando el volumen lo pague",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20",
+    "P39",
+    "P38",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0847",
+   "es": "Pedidos al día, ticket, pollos vendidos, mercancía y personal frente a la cuenta de resultados del Excel; revisa el escandallo cada vez que cambie el precio del pollo",
+   "donde": [
+    "POLC · F6 - Apertura y 90 días!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P50"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GRC": {
+   "salida": "scripts/productos-digitales/business-plans-en-13/textos_en/GRC.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 113,
+   "cadenas": [
+    {
+     "id": "c0608",
+     "es": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (semanas 1-4)",
+     "en_actual": "PHASE 1: BUSINESS SETUP & TAXES (weeks 1-4)",
+     "de": "GRC c0612 (TAQC F1 - Constitución!A2)",
+     "donde": [
+      "POLC · F1 - Constitución!A2"
+     ]
+    },
+    {
+     "id": "c0614",
+     "es": "Titular / Técnico",
+     "en_actual": "Owner / Code consultant",
+     "de": "GRC c0618 (TAQC F1 - Constitución!C5)",
+     "donde": [
+      "POLC · F1 - Constitución!C5"
+     ]
+    },
+    {
+     "id": "c0615",
+     "es": "Antes de firmar el alquiler",
+     "en_actual": "Before signing the lease",
+     "de": "GRC c0619 (TAQC F1 - Constitución!D5 / TAQC F1 - Constitución!D6)",
+     "donde": [
+      "POLC · F1 - Constitución!D5",
+      "POLC · F1 - Constitución!D6",
+      "POLC · F1 - Constitución!D7"
+     ]
+    },
+    {
+     "id": "c0622",
+     "es": "Elegir forma jurídica: SL unipersonal o autónomo",
+     "en_actual": "Choose your legal structure: LLC vs S corp",
+     "de": "GRC c0626 (TAQC F1 - Constitución!B8)",
+     "donde": [
+      "POLC · F1 - Constitución!B8"
+     ]
+    },
+    {
+     "id": "c0623",
+     "es": "Gestoría",
+     "en_actual": "Accountant",
+     "de": "GRC c0627 (TAQC F1 - Constitución!C8 / TAQC F1 - Constitución!C10)",
+     "donde": [
+      "POLC · F1 - Constitución!C8",
+      "POLC · F1 - Constitución!C10",
+      "POLC · F1 - Constitución!C11",
+      "POLC · F4 - Personal y alérgenos!C5"
+     ]
+    },
+    {
+     "id": "c0625",
+     "es": "El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF: compara las dos opciones con tu gestoría con las cifras del plan",
+     "en_actual": "The financial plan assumes an effective income tax rate of 25% (21% federal plus state), as for a C corporation. An LLC taxed as a pass-through pays through your personal return instead, and early losses carry forward as net operating losses. Compare an LLC vs S corp election with your CPA, using the plan's numbers.",
+     "de": "GRC c0629 (TAQC F1 - Constitución!E8)",
+     "donde": [
+      "POLC · F1 - Constitución!E8"
+     ]
+    },
+    {
+     "id": "c0626",
+     "es": "Constituir la SL o darte de alta como autónomo",
+     "en_actual": "Form the LLC with your state and get the EIN",
+     "de": "GRC c0630 (TAQC F1 - Constitución!B9)",
+     "donde": [
+      "POLC · F1 - Constitución!B9"
+     ]
+    },
+    {
+     "id": "c0627",
+     "es": "Notaría / Gestoría",
+     "en_actual": "Attorney / CPA",
+     "de": "GRC c0631 (TAQC F1 - Constitución!C9)",
+     "donde": [
+      "POLC · F1 - Constitución!C9"
+     ]
+    },
+    {
+     "id": "c0628",
+     "es": "Semanas 1-2",
+     "en_actual": "Weeks 1-2",
+     "de": "GRC c0632 (TAQC F1 - Constitución!D9)",
+     "donde": [
+      "POLC · F1 - Constitución!D9"
+     ]
+    },
+    {
+     "id": "c0629",
+     "es": "La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)",
+     "en_actual": "Filing fees, annual reports and franchise taxes vary by state. Check your Secretary of State's website before you file.",
+     "de": "GRC c0633 (TAQC F1 - Constitución!E9)",
+     "donde": [
+      "POLC · F1 - Constitución!E9"
+     ]
+    },
+    {
+     "id": "c0631",
+     "es": "Semana 2",
+     "en_actual": "Week 2",
+     "de": "GRC c0635 (TAQC F1 - Constitución!D10 / TAQC F1 - Constitución!D11)",
+     "donde": [
+      "POLC · F1 - Constitución!D10",
+      "POLC · F1 - Constitución!D11",
+      "POLC · F1 - Constitución!D13"
+     ]
+    },
+    {
+     "id": "c0633",
+     "es": "Alta en la Seguridad Social (administrador o autónomo)",
+     "en_actual": "State payroll and unemployment registration (and workers' comp insurance)",
+     "de": "GRC c0637 (TAQC F1 - Constitución!B11)",
+     "donde": [
+      "POLC · F1 - Constitución!B11"
+     ]
+    },
+    {
+     "id": "c0634",
+     "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+     "en_actual": "Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.",
+     "de": "GRC c0638 (TAQC F1 - Constitución!E11)",
+     "donde": [
+      "POLC · F1 - Constitución!E11"
+     ]
+    },
+    {
+     "id": "c0635",
+     "es": "Certificado digital",
+     "en_actual": "Apply for the beer & wine license (state + local)",
+     "de": "GRC c0639 (TAQC F1 - Constitución!B12)",
+     "donde": [
+      "POLC · F1 - Constitución!B12"
+     ]
+    },
+    {
+     "id": "c0636",
+     "es": "Imprescindible para Hacienda, la Seguridad Social, el ayuntamiento y el registro sanitario",
+     "en_actual": "Start in week 1: ask your state alcohol beverage control (ABC) agency and your city what they need, and file as soon as you sign the lease: state and local approval can take months, and costs and timelines vary widely. Never open counting on it, and add liquor liability to your insurance.",
+     "de": "GRC c0640 (TAQC F1 - Constitución!E12)",
+     "donde": [
+      "POLC · F1 - Constitución!E12"
+     ]
+    },
+    {
+     "id": "c0637",
+     "es": "Cuenta bancaria y tarjeta del negocio",
+     "en_actual": "Business bank account and business card",
+     "de": "GRC c0641 (TAQC F1 - Constitución!B13)",
+     "donde": [
+      "POLC · F1 - Constitución!B13"
+     ]
+    },
+    {
+     "id": "c0638",
+     "es": "Separadas de las personales: por ellas pasan las liquidaciones del datáfono y de las plataformas y los pagos a proveedores",
+     "en_actual": "Keep them separate from personal accounts: card terminal settlements, delivery marketplace payouts and supplier payments all run through them.",
+     "de": "GRC c0642 (TAQC F1 - Constitución!E13)",
+     "donde": [
+      "POLC · F1 - Constitución!E13"
+     ]
+    },
+    {
+     "id": "c0639",
+     "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+     "en_actual": "Accountant / bookkeeper and a POS that reports sales tax",
+     "de": "GRC c0643 (TAQC F1 - Constitución!B14)",
+     "donde": [
+      "POLC · F1 - Constitución!B14"
+     ]
+    },
+    {
+     "id": "c0640",
+     "es": "Semanas 2-4",
+     "en_actual": "Weeks 2-4",
+     "de": "GRC c0644 (TAQC F1 - Constitución!D14 / TAQC F1 - Constitución!D15)",
+     "donde": [
+      "POLC · F1 - Constitución!D14",
+      "POLC · F1 - Constitución!D15"
+     ]
+    },
+    {
+     "id": "c0641",
+     "es": "Nóminas y contratos de la plantilla. El software de facturación del TPV tiene que cumplir Veri*factu: consulta con tu gestoría la fecha que te aplica antes de comprar el TPV",
+     "en_actual": "Payroll and onboarding for your team. Pick a POS that calculates and reports sales tax by jurisdiction before you buy it, and ask your CPA how often your state wants sales tax returns.",
+     "de": "GRC c0645 (TAQC F1 - Constitución!E14)",
+     "donde": [
+      "POLC · F1 - Constitución!E14"
+     ]
+    },
+    {
+     "id": "c0642",
+     "es": "Presentar el plan al banco y pedir dos ofertas de préstamo",
+     "en_actual": "Take the plan to two SBA 7(a) lenders and compare loan offers",
+     "de": "GRC c0646 (TAQC F1 - Constitución!B15)",
+     "donde": [
+      "POLC · F1 - Constitución!B15"
+     ]
+    },
+    {
+     "id": "c0644",
+     "es": "Seguro de responsabilidad civil y multirriesgo con incendio",
+     "en_actual": "General liability, liquor liability, property and workers' comp insurance",
+     "de": "GRC c0648 (TAQC F1 - Constitución!B16)",
+     "donde": [
+      "POLC · F1 - Constitución!B16"
+     ]
+    },
+    {
+     "id": "c0645",
+     "es": "Corredor de seguros",
+     "en_actual": "Insurance broker",
+     "de": "GRC c0649 (TAQC F1 - Constitución!C16)",
+     "donde": [
+      "POLC · F1 - Constitución!C16"
+     ]
+    },
+    {
+     "id": "c0646",
+     "es": "Antes de la obra",
+     "en_actual": "Before construction",
+     "de": "GRC c0650 (TAQC F1 - Constitución!D16 / TAQC F2 - Local, humos y gas!D11)",
+     "donde": [
+      "POLC · F1 - Constitución!D16",
+      "POLC · F2 - Local, humos y gas!D11"
+     ]
+    },
+    {
+     "id": "c0654",
+     "es": "Semanas 3-6",
+     "en_actual": "Weeks 3-6",
+     "de": "GRC c0658 (TAQC F2 - Local, humos y gas!D5)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D5"
+     ]
+    },
+    {
+     "id": "c0656",
+     "es": "Comprobar la potencia eléctrica y la acometida de gas",
+     "en_actual": "Check the electrical service and the gas capacity",
+     "de": "GTAQ-check c0660 (TAQC F2 - Local, humos y gas!B6)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!B6"
+     ]
+    },
+    {
+     "id": "c0657",
+     "es": "Técnico / Distribuidora",
+     "en_actual": "Electrician / Utility",
+     "de": "GRC c0661 (TAQC F2 - Local, humos y gas!C6)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C6"
+     ]
+    },
+    {
+     "id": "c0658",
+     "es": "Antes de firmar",
+     "en_actual": "Before signing",
+     "de": "GRC c0662 (TAQC F2 - Local, humos y gas!D6 / TAQC F2 - Local, humos y gas!D7)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D6",
+      "POLC · F2 - Local, humos y gas!D7",
+      "POLC · F2 - Local, humos y gas!D8"
+     ]
+    },
+    {
+     "id": "c0660",
+     "es": "Comprobar con el técnico el recorrido del conducto hasta cubierta",
+     "en_actual": "Confirm the hood and duct route to the roof with your mechanical contractor",
+     "de": "GTAQ-check c0664 (TAQC F2 - Local, humos y gas!B7)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!B7"
+     ]
+    },
+    {
+     "id": "c0661",
+     "es": "Técnico",
+     "en_actual": "Architect / engineer",
+     "de": "GRC c0665 (TAQC F2 - Local, humos y gas!C7)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C7"
+     ]
+    },
+    {
+     "id": "c0663",
+     "es": "Negociar el alquiler: carencia de obra y fianza",
+     "en_actual": "Negotiate the lease: free-rent period during build-out and security deposit",
+     "de": "GRC c0667 (TAQC F2 - Local, humos y gas!B8)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!B8"
+     ]
+    },
+    {
+     "id": "c0666",
+     "es": "Titular / Abogado",
+     "en_actual": "Owner / Attorney",
+     "de": "GRC c0670 (TAQC F2 - Local, humos y gas!C9)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C9"
+     ]
+    },
+    {
+     "id": "c0667",
+     "es": "Semana 6",
+     "en_actual": "Week 6",
+     "de": "GRC c0671 (TAQC F2 - Local, humos y gas!D9)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D9"
+     ]
+    },
+    {
+     "id": "c0669",
+     "es": "Encargar el proyecto técnico de la actividad y de la salida de humos",
+     "en_actual": "Commission architect and MEP drawings, including the hood and duct",
+     "de": "GTAQ-check c0673 (TAQC F2 - Local, humos y gas!B10)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!B10"
+     ]
+    },
+    {
+     "id": "c0670",
+     "es": "Arquitecto/a o ingeniero/a",
+     "en_actual": "Architect / Engineer",
+     "de": "GRC c0674 (TAQC F2 - Local, humos y gas!C10)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C10"
+     ]
+    },
+    {
+     "id": "c0671",
+     "es": "Semanas 6-8",
+     "en_actual": "Weeks 6-8",
+     "de": "GRC c0675 (TAQC F2 - Local, humos y gas!D10 / TAQC F3 - Cocina, trompo y sanidad!D5)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D10",
+      "POLC · F3 - Cocina, asador y sanidad!D5"
+     ]
+    },
+    {
+     "id": "c0673",
+     "es": "Licencia o declaración responsable de la actividad",
+     "en_actual": "Zoning approval and certificate of occupancy",
+     "de": "GRC c0677 (TAQC F2 - Local, humos y gas!B11)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!B11"
+     ]
+    },
+    {
+     "id": "c0674",
+     "es": "Técnico / Ayuntamiento",
+     "en_actual": "Owner / City planning office",
+     "de": "GRC c0678 (TAQC F2 - Local, humos y gas!C11 / TAQC F2 - Local, humos y gas!C12)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C11",
+      "POLC · F2 - Local, humos y gas!C12"
+     ]
+    },
+    {
+     "id": "c0676",
+     "es": "Licencia, declaración o comunicación previa de la obra",
+     "en_actual": "Building permit for the build-out and the hood",
+     "de": "GTAQ-check c0680 (TAQC F2 - Local, humos y gas!B12)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!B12"
+     ]
+    },
+    {
+     "id": "c0677",
+     "es": "Semanas 6-8, antes de empezar la obra",
+     "en_actual": "Weeks 6-8, before construction starts",
+     "de": "GRC c0681 (TAQC F2 - Local, humos y gas!D12)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D12"
+     ]
+    },
+    {
+     "id": "c0678",
+     "es": "La obra y el conducto van por su propio trámite municipal: pregunta en la consulta previa qué título piden",
+     "en_actual": "The build-out and the hood run through their own building permit and inspections: ask the building department which drawings and sign-offs they require.",
+     "de": "GTAQ-check c0682 (TAQC F2 - Local, humos y gas!E12)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!E12"
+     ]
+    },
+    {
+     "id": "c0680",
+     "es": "Instalador de gas habilitado",
+     "en_actual": "Licensed gas contractor",
+     "de": "GRC c0688 (TAQC F2 - Local, humos y gas!C14 / TAQC F6 - Apertura y 90 días!C12)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C13",
+      "POLC · F6 - Apertura y 90 días!C12"
+     ]
+    },
+    {
+     "id": "c0681",
+     "es": "Durante la obra",
+     "en_actual": "During construction",
+     "de": "GRC c0689 (TAQC F2 - Local, humos y gas!D14)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D13"
+     ]
+    },
+    {
+     "id": "c0684",
+     "es": "Instalador / Técnico",
+     "en_actual": "Installer / Engineer",
+     "de": "GRC c0692 (TAQC F2 - Local, humos y gas!C15)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C14"
+     ]
+    },
+    {
+     "id": "c0685",
+     "es": "Semanas 8-12",
+     "en_actual": "Weeks 8-12",
+     "de": "GRC c0693 (TAQC F2 - Local, humos y gas!D15 / TAQC F2 - Local, humos y gas!D16)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D14",
+      "POLC · F2 - Local, humos y gas!D15",
+      "POLC · F2 - Local, humos y gas!D16",
+      "POLC · F5 - Carta, marca y encargos!D10"
+     ]
+    },
+    {
+     "id": "c0688",
+     "es": "Constructor",
+     "en_actual": "Contractor",
+     "de": "GRC c0696 (TAQC F2 - Local, humos y gas!C16)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C15"
+     ]
+    },
+    {
+     "id": "c0690",
+     "es": "Fontanería, separador de grasas y climatización",
+     "en_actual": "Plumbing, grease interceptor and HVAC",
+     "de": "GTAQ-check c0698 (TAQC F2 - Local, humos y gas!B17)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!B16"
+     ]
+    },
+    {
+     "id": "c0694",
+     "es": "Semanas 10-12",
+     "en_actual": "Weeks 10-12",
+     "de": "GRC c0702 (TAQC F2 - Local, humos y gas!D18 / TAQC F4 - Personal y alérgenos!D7)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D17",
+      "POLC · F4 - Personal y alérgenos!D7"
+     ]
+    },
+    {
+     "id": "c0697",
+     "es": "Instalador autorizado / Técnico",
+     "en_actual": "Licensed electrician / Inspector",
+     "de": "GRC c0705 (TAQC F2 - Local, humos y gas!C19)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!C18"
+     ]
+    },
+    {
+     "id": "c0698",
+     "es": "Durante la obra y al acabarla",
+     "en_actual": "During and after construction",
+     "de": "GRC c0706 (TAQC F2 - Local, humos y gas!D19)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D18"
+     ]
+    },
+    {
+     "id": "c0699",
+     "es": "El boletín (certificado de la instalación) para el contrato de luz y el certificado final del técnico. Guárdalos con el del gas: te los pedirá el ayuntamiento",
+     "en_actual": "The final sign-offs (electrical, gas, mechanical, fire and building) and the certificate of occupancy. Keep them together with the gas paperwork: your health department and your insurer may ask for them.",
+     "de": "GTAQ-check c0707 (TAQC F2 - Local, humos y gas!E19)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!E18"
+     ]
+    },
+    {
+     "id": "c0702",
+     "es": "Semanas 10-14",
+     "en_actual": "Weeks 10-14",
+     "de": "GRC c0791 (TAQC F5 - Carta, marca y delivery!D6 / TAQC F5 - Carta, marca y delivery!D11)",
+     "donde": [
+      "POLC · F2 - Local, humos y gas!D19",
+      "POLC · F5 - Carta, marca y encargos!D6",
+      "POLC · F5 - Carta, marca y encargos!D11"
+     ]
+    },
+    {
+     "id": "c0709",
+     "es": "Semanas 8-10",
+     "en_actual": "Weeks 8-10",
+     "de": "GRC c0713 (TAQC F3 - Cocina, trompo y sanidad!D6)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!D6"
+     ]
+    },
+    {
+     "id": "c0711",
+     "es": "Declaración responsable al registro sanitario autonómico",
+     "en_actual": "Submit your plans for health department plan review, apply for the health permit and book the pre-opening inspection",
+     "de": "GRC c0715 (TAQC F3 - Cocina, trompo y sanidad!B7)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!B7"
+     ]
+    },
+    {
+     "id": "c0712",
+     "es": "Titular / Gestoría",
+     "en_actual": "Owner / Health department",
+     "de": "GRC c0716 (TAQC F3 - Cocina, trompo y sanidad!C7)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!C7"
+     ]
+    },
+    {
+     "id": "c0713",
+     "es": "Antes de la primera prueba de carta",
+     "en_actual": "Before construction starts",
+     "de": "GRC c0717 (TAQC F3 - Cocina, trompo y sanidad!D7)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!D7"
+     ]
+    },
+    {
+     "id": "c0716",
+     "es": "Consultor / Titular",
+     "en_actual": "Consultant / Owner",
+     "de": "GRC c0720 (TAQC F3 - Cocina, trompo y sanidad!C8)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!C8"
+     ]
+    },
+    {
+     "id": "c0734",
+     "es": "Trazabilidad y registros: lotes, temperaturas y proveedores",
+     "en_actual": "Traceability and records: lots, temperatures and suppliers",
+     "de": "GTAQ-check c0739 (TAQC F3 - Cocina, trompo y sanidad!B15)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!B15"
+     ]
+    },
+    {
+     "id": "c0735",
+     "es": "Desde la primera compra",
+     "en_actual": "From the first purchase",
+     "de": "GTAQ-check c0740 (TAQC F3 - Cocina, trompo y sanidad!D15)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!D15"
+     ]
+    },
+    {
+     "id": "c0739",
+     "es": "Alérgenos en la venta por plataforma o por tu web",
+     "en_actual": "Allergens on delivery marketplaces and on your website",
+     "de": "GRC c0744 (TAQC F3 - Cocina, trompo y sanidad!B17)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!B17"
+     ]
+    },
+    {
+     "id": "c0740",
+     "es": "Antes de darte de alta",
+     "en_actual": "Before you sign up",
+     "de": "GRC c0745 (TAQC F3 - Cocina, trompo y sanidad!D17)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!D17"
+     ]
+    },
+    {
+     "id": "c0742",
+     "es": "Temperatura de los pedidos que salen del local",
+     "en_actual": "Temperature of orders leaving the shop",
+     "de": "GRC c0747 (TAQC F3 - Cocina, trompo y sanidad!B18)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!B18"
+     ]
+    },
+    {
+     "id": "c0743",
+     "es": "Antes del primer pedido",
+     "en_actual": "Before the first order",
+     "de": "GRC c0748 (TAQC F3 - Cocina, trompo y sanidad!D18)",
+     "donde": [
+      "POLC · F3 - Cocina, asador y sanidad!D18"
+     ]
+    },
+    {
+     "id": "c0746",
+     "es": "FASE 4: PERSONAL, FORMACIÓN, PREVENCIÓN Y ALÉRGENOS (semanas 10-14)",
+     "en_actual": "PHASE 4: STAFF, TRAINING, SAFETY & ALLERGENS (weeks 10-14)",
+     "de": "GTAQ-check c0751 (TAQC F4 - Personal y alérgenos!A2)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!A2"
+     ]
+    },
+    {
+     "id": "c0747",
+     "es": "Copiar la tabla salarial del convenio provincial de hostelería",
+     "en_actual": "Set pay rates against the state and local minimum wage and post the labor law posters",
+     "de": "GRC c0752 (TAQC F4 - Personal y alérgenos!B5)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B5"
+     ]
+    },
+    {
+     "id": "c0748",
+     "es": "Semana 10",
+     "en_actual": "Week 10",
+     "de": "GRC c0753 (TAQC F4 - Personal y alérgenos!D5)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!D5"
+     ]
+    },
+    {
+     "id": "c0750",
+     "es": "Contratos por escrito a jornada completa y parcial",
+     "en_actual": "Offer letters for full-time and part-time staff",
+     "de": "GRC c0755 (TAQC F4 - Personal y alérgenos!B6)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B6"
+     ]
+    },
+    {
+     "id": "c0751",
+     "es": "Con su horario y su grupo del convenio. Una factura de «autónomo» con tu horario y tu dirección es falso autónomo (art. 1.1 del Estatuto de los Trabajadores)",
+     "en_actual": "With schedule, pay rate and role. Collect a W-4 and an I-9 (with identity documents) from every hire, the I-9 within 3 business days of the start date. Classify people correctly: a 1099 contractor who works your schedule at your address is a misclassification risk.",
+     "de": "GRC c0756 (TAQC F4 - Personal y alérgenos!E6)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!E6"
+     ]
+    },
+    {
+     "id": "c0754",
+     "es": "Registro de jornada",
+     "en_actual": "Time clock and overtime records",
+     "de": "GRC c0759 (TAQC F4 - Personal y alérgenos!B8)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B8"
+     ]
+    },
+    {
+     "id": "c0756",
+     "es": "Obligatorio para toda la plantilla (art. 34.9 ET), también a tiempo parcial. Acuerda con tu gestoría cómo llevarlo y consérvalo",
+     "en_actual": "Keep hours for every employee, part-time included (FLSA recordkeeping). A time clock in the POS makes it simple; agree with your CPA how to store the records.",
+     "de": "GTAQ-check c0761 (TAQC F4 - Personal y alérgenos!E8)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!E8"
+     ]
+    },
+    {
+     "id": "c0758",
+     "es": "Semana 12",
+     "en_actual": "Week 12",
+     "de": "GRC c0763 (TAQC F4 - Personal y alérgenos!D9)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!D9"
+     ]
+    },
+    {
+     "id": "c0760",
+     "es": "Reparto propio: sólo con contrato laboral",
+     "en_actual": "Own delivery drivers: W-2 employees only",
+     "de": "GRC c0765 (TAQC F4 - Personal y alérgenos!B10)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B10"
+     ]
+    },
+    {
+     "id": "c0761",
+     "es": "Si repartes tú",
+     "en_actual": "If you deliver yourself",
+     "de": "GRC c0766 (TAQC F4 - Personal y alérgenos!D10)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!D10"
+     ]
+    },
+    {
+     "id": "c0762",
+     "es": "El repartidor propio es hostelería (ALEH VI, art. 4) y trabaja por cuenta ajena; en el reparto organizado por una plataforma digital, la ley presume la relación laboral (ET, disposición adicional 23.ª). Nunca con «autónomos»",
+     "en_actual": "Your own drivers are employees on payroll (W-2), and because they drive their own cars on your behalf you also need hired and non-owned auto insurance (check your state). Do not treat them as independent contractors. Drivers for DoorDash, Uber Eats and Grubhub work for the marketplace, not for you.",
+     "de": "GRC c0767 (TAQC F4 - Personal y alérgenos!E10)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!E10"
+     ]
+    },
+    {
+     "id": "c0763",
+     "es": "Formación de manipuladores de alimentos",
+     "en_actual": "Food handler cards and a Certified Food Protection Manager (CFPM)",
+     "de": "GRC c0768 (TAQC F4 - Personal y alérgenos!B11)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B11"
+     ]
+    },
+    {
+     "id": "c0767",
+     "es": "Plan de prevención de riesgos laborales",
+     "en_actual": "OSHA basics: safety plan and training",
+     "de": "GRC c0772 (TAQC F4 - Personal y alérgenos!B13)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B13"
+     ]
+    },
+    {
+     "id": "c0768",
+     "es": "Servicio de prevención",
+     "en_actual": "Insurance carrier / Consultant",
+     "de": "GRC c0773 (TAQC F4 - Personal y alérgenos!C13 / TAQC F4 - Personal y alérgenos!C14)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!C13",
+      "POLC · F4 - Personal y alérgenos!C14"
+     ]
+    },
+    {
+     "id": "c0770",
+     "es": "Vigilancia de la salud de la plantilla",
+     "en_actual": "Employee health policy and first aid",
+     "de": "GRC c0775 (TAQC F4 - Personal y alérgenos!B14)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B14"
+     ]
+    },
+    {
+     "id": "c0771",
+     "es": "Al contratar",
+     "en_actual": "At hire",
+     "de": "GRC c0776 (TAQC F4 - Personal y alérgenos!D14)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!D14"
+     ]
+    },
+    {
+     "id": "c0772",
+     "es": "Reconocimientos médicos ofrecidos a cada persona que entra",
+     "en_actual": "Have every new hire sign an employee health agreement (report illness symptoms; Food Code 2-201) and stock a first aid kit.",
+     "de": "GRC c0777 (TAQC F4 - Personal y alérgenos!E14)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!E14"
+     ]
+    },
+    {
+     "id": "c0773",
+     "es": "Información de alérgenos por escrito o de palabra con registro",
+     "en_actual": "Allergen information on the menu or by staff script, with a written record",
+     "de": "GTAQ-check c0778 (TAQC F4 - Personal y alérgenos!B15)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!B15"
+     ]
+    },
+    {
+     "id": "c0774",
+     "es": "Por escrito en la carta o, si la das de palabra, registrada por escrito o en formato electrónico en el local, accesible y con un cartel que diga dónde pedirla (RD 126/2015, arts. 4.1.b y 6.5.a)",
+     "en_actual": "In writing on the menu or, if staff give it verbally, backed by a written record kept on site and a sign telling guests to ask. Keep one allergen matrix up to date for the whole menu.",
+     "de": "GTAQ-check c0779 (TAQC F4 - Personal y alérgenos!E15)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!E15"
+     ]
+    },
+    {
+     "id": "c0778",
+     "es": "Antes de imprimir la carta",
+     "en_actual": "Before printing the menu",
+     "de": "GRC c0783 (TAQC F4 - Personal y alérgenos!D17)",
+     "donde": [
+      "POLC · F4 - Personal y alérgenos!D17"
+     ]
+    },
+    {
+     "id": "c0783",
+     "es": "Semana 8",
+     "en_actual": "Week 8",
+     "de": "GRC c0788 (TAQC F5 - Carta, marca y delivery!D5)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!D5"
+     ]
+    },
+    {
+     "id": "c0788",
+     "es": "Gestoría / Titular",
+     "en_actual": "CPA / Owner",
+     "de": "GTAQ-check c0794 (TAQC F5 - Carta, marca y delivery!C7)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!C7"
+     ]
+    },
+    {
+     "id": "c0790",
+     "es": "Aviso en la carta: el cliente puede llevarse lo que no consuma",
+     "en_actual": "Utensils and napkins on request for to-go orders",
+     "de": "GRC c0796 (TAQC F5 - Carta, marca y delivery!B8)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!B8"
+     ]
+    },
+    {
+     "id": "c0791",
+     "es": "Sin coste, salvo el del envase de plástico de un solo uso si lo hay, y avisado de forma visible, mejor en la carta (Ley 1/2025, art. 8). Ten envases para ello",
+     "en_actual": "Hand out utensils and napkins only when guests ask for them, and keep the to-go containers in stock; check your city's packaging rules.",
+     "de": "GRC c0797 (TAQC F5 - Carta, marca y delivery!E8)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!E8"
+     ]
+    },
+    {
+     "id": "c0792",
+     "es": "Cobro aparte del envase de plástico de un solo uso",
+     "en_actual": "Local packaging ordinances: fees and bans",
+     "de": "GRC c0798 (TAQC F5 - Carta, marca y delivery!B9)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!B9"
+     ]
+    },
+    {
+     "id": "c0802",
+     "es": "Contrato y alta en las plataformas de reparto",
+     "en_actual": "Sign up with the delivery marketplaces (DoorDash, Uber Eats, Grubhub)",
+     "de": "GRC c0804 (TAQC F5 - Carta, marca y delivery!B12)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!B14"
+     ]
+    },
+    {
+     "id": "c0804",
+     "es": "Registro de la marca en la OEPM",
+     "en_actual": "Trademark search and registration (USPTO)",
+     "de": "GRC c0808 (TAQC F5 - Carta, marca y delivery!B14)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!B15"
+     ]
+    },
+    {
+     "id": "c0805",
+     "es": "Semanas 2-8",
+     "en_actual": "Weeks 2-8",
+     "de": "GTAQ-check c0809 (TAQC F5 - Carta, marca y delivery!D14)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!D15"
+     ]
+    },
+    {
+     "id": "c0806",
+     "es": "Comprueba antes que el nombre no está registrado en tu clase (servicios de restauración)",
+     "en_actual": "Run a trademark search first to make sure the name is not registered in your class (restaurant services), and check your state's business name registry.",
+     "de": "GTAQ-check c0810 (TAQC F5 - Carta, marca y delivery!E14)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!E15"
+     ]
+    },
+    {
+     "id": "c0808",
+     "es": "Diseñador/a",
+     "en_actual": "Designer",
+     "de": "GRC c0812 (TAQC F5 - Carta, marca y delivery!C15)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!C16"
+     ]
+    },
+    {
+     "id": "c0809",
+     "es": "Semanas 8-14",
+     "en_actual": "Weeks 8-14",
+     "de": "GRC c0813 (TAQC F5 - Carta, marca y delivery!D15)",
+     "donde": [
+      "POLC · F5 - Carta, marca y encargos!D16"
+     ]
+    },
+    {
+     "id": "c0814",
+     "es": "FASE 6: APERTURA Y PRIMEROS 90 DÍAS",
+     "en_actual": "PHASE 6: OPENING & FIRST 90 DAYS",
+     "de": "GRC c0820 (TAQC F6 - Apertura y 90 días!A2)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!A2"
+     ]
+    },
+    {
+     "id": "c0815",
+     "es": "Abrir en enero, el Mes 1 del plan",
+     "en_actual": "Open in January, Month 1 of the plan",
+     "de": "GTAQ-check c0821 (TAQC F6 - Apertura y 90 días!B5)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!B5"
+     ]
+    },
+    {
+     "id": "c0817",
+     "es": "El plan arranca en enero y la rampa cae sobre los meses más flojos, enero y febrero: por eso el fondo de maniobra cuenta. Si abres en otro mes, gira la fila de estacionalidad de la Tesorería",
+     "en_actual": "The plan starts in January and the ramp-up falls on the slowest months, January and February: that is why working capital matters. If you open in another month, rotate the seasonality row of the \"12-Month Cash Flow\" tab.",
+     "de": "GTAQ-check c0823 (TAQC F6 - Apertura y 90 días!E5)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!E5"
+     ]
+    },
+    {
+     "id": "c0818",
+     "es": "Empresa del ROESB",
+     "en_actual": "Licensed pest control operator",
+     "de": "GRC c0824 (TAQC F6 - Apertura y 90 días!C6)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!C6"
+     ]
+    },
+    {
+     "id": "c0822",
+     "es": "Semana previa",
+     "en_actual": "Week before opening",
+     "de": "GRC c0828 (TAQC F6 - Apertura y 90 días!D8)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!D8"
+     ]
+    },
+    {
+     "id": "c0824",
+     "es": "Comprobar temperaturas y registros del primer día",
+     "en_actual": "Check temperatures and records on day one",
+     "de": "GRC c0830 (TAQC F6 - Apertura y 90 días!B9)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!B9"
+     ]
+    },
+    {
+     "id": "c0825",
+     "es": "Día 1",
+     "en_actual": "Day 1",
+     "de": "GRC c0831 (TAQC F6 - Apertura y 90 días!D9)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!D9"
+     ]
+    },
+    {
+     "id": "c0827",
+     "es": "Inspección sanitaria: APPCC y registros a mano",
+     "en_actual": "Health inspection: written food safety plan and records at hand",
+     "de": "GRC c0833 (TAQC F6 - Apertura y 90 días!B10)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!B10"
+     ]
+    },
+    {
+     "id": "c0828",
+     "es": "Desde el día 1",
+     "en_actual": "From day 1",
+     "de": "GRC c0834 (TAQC F6 - Apertura y 90 días!D10)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!D10"
+     ]
+    },
+    {
+     "id": "c0830",
+     "es": "Calendario de limpieza de la campana extractora y del conducto",
+     "en_actual": "Hood cleaning schedule (NFPA 96)",
+     "de": "GTAQ-check c0836 (TAQC F6 - Apertura y 90 días!B11)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!B11"
+     ]
+    },
+    {
+     "id": "c0831",
+     "es": "Titular / Empresa de mantenimiento",
+     "en_actual": "Owner / Maintenance contractor",
+     "de": "GRC c0837 (TAQC F6 - Apertura y 90 días!C11)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!C11"
+     ]
+    },
+    {
+     "id": "c0832",
+     "es": "Desde el mes 1",
+     "en_actual": "From month 1",
+     "de": "GRC c0838 (TAQC F6 - Apertura y 90 días!D11)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!D11"
+     ]
+    },
+    {
+     "id": "c0835",
+     "es": "Calendario",
+     "en_actual": "On a set calendar",
+     "de": "GTAQ-check c0841 (TAQC F6 - Apertura y 90 días!D12)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!D12"
+     ]
+    },
+    {
+     "id": "c0838",
+     "es": "Semanas 1-12",
+     "en_actual": "Weeks 1-12",
+     "de": "GTAQ-check c0844 (TAQC F6 - Apertura y 90 días!D13)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!D13"
+     ]
+    },
+    {
+     "id": "c0843",
+     "es": "Revisar la cuenta de la plataforma cada mes",
+     "en_actual": "Review the delivery marketplace statement each month",
+     "de": "GRC c0849 (TAQC F6 - Apertura y 90 días!B15)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!B15"
+     ]
+    },
+    {
+     "id": "c0844",
+     "es": "Mensual",
+     "en_actual": "Monthly",
+     "de": "GRC c0850 (TAQC F6 - Apertura y 90 días!D15 / TAQC F6 - Apertura y 90 días!D16)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!D15",
+      "POLC · F6 - Apertura y 90 días!D16",
+      "POLC · F6 - Apertura y 90 días!D17"
+     ]
+    },
+    {
+     "id": "c0846",
+     "es": "Comparar ventas y costes reales con el plan cada mes",
+     "en_actual": "Compare actual sales and costs with the plan each month",
+     "de": "GRC c0852 (TAQC F6 - Apertura y 90 días!B16)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!B16"
+     ]
+    },
+    {
+     "id": "c0848",
+     "es": "Seguir la tesorería mes a mes y el saldo mínimo",
+     "en_actual": "Track cash flow month by month and the minimum balance",
+     "de": "GRC c0854 (TAQC F6 - Apertura y 90 días!B17)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!B17"
+     ]
+    },
+    {
+     "id": "c0849",
+     "es": "Enero y febrero son los meses más flojos y coinciden con el arranque: mira el saldo de cada mes antes de un pago grande",
+     "en_actual": "January and February are the slowest months and coincide with the launch: look at the balance of each month before a big payment.",
+     "de": "GTAQ-check c0855 (TAQC F6 - Apertura y 90 días!E17)",
+     "donde": [
+      "POLC · F6 - Apertura y 90 días!E17"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "carpeta": "/root/wt-rotisserie-en/astro-site/public/dl/rotisserie-chicken-restaurant-business-plan",
+ "parcial": false,
+ "piezas": 1708,
+ "fallos": 0,
+ "ficheros": {
+  "rotisserie-chicken-restaurant-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 9130,
+   "piezas": 116,
+   "sha256": "4301cd6c2ee27222635378036ca540b11272d1a7f4eea700e922be4911f614d1",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "rotisserie-chicken-restaurant-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 736,
+   "piezas": 764,
+   "sha256": "66bd508db56f990c0c55a753a810b1fb5668eaae339f88e7d02506084caa1a10",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "rotisserie-chicken-restaurant-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 495,
+   "sha256": "f0d73e5c57ddaac9434450ffe1aa58e1472ea31d5fdc56871fc335d1dc6e29d8",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "rotisserie-chicken-yield-costing-calculator.xlsx": {
+   "hojas": 4,
+   "formulas": 210,
+   "piezas": 333,
+   "sha256": "d0087c9a5caac832585e85a2464b075373678cf6bcb1b5ae595ff36088423cef",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}

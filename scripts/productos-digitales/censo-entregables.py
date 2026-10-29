@@ -162,6 +162,7 @@ PRODUCTOS_LETTER = frozenset({'food-cost-templates', 'restaurant-inventory-templ
                               'wedding-venue-business-plan',
                               'coffee-cart-business-plan',
                               'taco-shop-business-plan',
+                              'rotisserie-chicken-restaurant-business-plan',
                               'food-cost-menu-engineering-guide', 'how-to-open-a-pastry-shop',
                               'restaurant-checklist-templates', 'bar-checklist-templates',
                               'chocolate-shop-checklist-templates',
