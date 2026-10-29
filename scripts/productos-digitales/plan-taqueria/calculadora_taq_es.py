@@ -659,7 +659,7 @@ INSTRUCCIONES = [
      'crudo con la referencia de un puesto de la Ciudad de México, unos 25 por kg (Milenio). Si sirves más gramos, saldrán menos tacos.', False),
     ('4. «Carne cruda para los N tacos» te dice cuánta carne montar para un pedido grande. Las otras proteínas (carnitas, suadero, cochinita, '
      'barbacoa, tinga y campechano) usan su propio rendimiento tras la cocción, más bajo que el del cono.', False),
-    ('5. Seguridad alimentaria. El cono montado y adobado es un preparado de carne: manténlo a 4 °C como máximo hasta que entre al asador, mide '
+    ('5. Seguridad alimentaria. El cono montado y adobado es un preparado de carne: mantenlo a 4 °C como máximo hasta que entre al asador, mide '
      'con sonda y registra la temperatura en tu plan de APPCC. Pregunta a tu ayuntamiento y a tu comunidad por lo que exigen en tu zona.', False),
     ('HOJA «TORTILLA»', True),
     ('1. Escribe el precio del paquete, las piezas y el peso de cada tortilla, y los datos del nixtamal propio. Las tortillas por kg comprado '

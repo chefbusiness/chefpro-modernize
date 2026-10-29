@@ -74,8 +74,8 @@ VOCABULARIO = {
         'El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro',
     # Tesorería!O5 (nota del motor de la fila de estacionalidad), F1-camino §2: Mes 1 = enero
     'Perfil de tu zona: agosto flojo en ciudad y fuerte en costa':
-        'Mes 1 = ENERO, en el orden del calendario: enero y agosto son los meses más flojos y los picos llegan en '
-        'septiembre (Independencia de México, 15 y 16), noviembre (Día de Muertos) y diciembre. Si abres en otro mes, '
+        'Mes 1 = ENERO, en el orden del calendario: enero y agosto son los meses más flojos, diciembre es el pico y '
+        'septiembre (Independencia de México, 15 y 16) y noviembre (Día de Muertos) traen las fechas mexicanas. Si abres en otro mes, '
         'gira la fila',
 }
 
@@ -476,7 +476,7 @@ INSTRUCCIONES = {
         ('Coste del taco al pastor', 'Un 22,5 % de su precio sin IVA (un 24 % en la orden de 3)',
          'Estimación del kit con los gramajes de la calculadora del pack (editables)',
          'Tortilla, 35 g de carne servida, piña, cebolla, cilantro, lima y salsa, con un 5 % de merma. La carne y la '
-         'tortilla no tienen precio profesional publicado: pon los de tu proveedor'),
+         'tortilla son precios estimados por el kit: pon los de tu proveedor'),
         ('Rendimiento del trompo', 'Unos 25 tacos por kg de carne cruda',
          'Puesto de Ciudad de México citado por Milenio (prensa)',
          'Con 35 g servidos y un 65 % de rendimiento salen unos 18-19 tacos por kg crudo: mide el tuyo con la '

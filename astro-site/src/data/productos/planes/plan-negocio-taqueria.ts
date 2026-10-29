@@ -38,7 +38,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: '¿Cuál es el margen de un taco?',
-    a: 'Depende de lo que pagues por la carne, del gramaje y de lo que se te quede por el camino en el trompo. Con los supuestos del kit (una estimación, editable), el taco al pastor sale a unos 0,61 € de coste y a un food cost de alrededor del 22,5 % sobre el precio de venta del caso (3,00 € con IVA). La calculadora del trompo y escandallo te deja poner tus precios, tus gramos y tu merma y te da el food cost y el margen de cada taco y de cada orden, para que no fijes el precio a ojo.',
+    a: 'Depende de lo que pagues por la carne, del gramaje y de lo que se te quede por el camino en el trompo. Con los supuestos del kit (una estimación, editable), el taco al pastor sale a unos 0,61 € de coste y a un food cost de alrededor del 22,5 % del precio sin IVA (en el caso, el taco se vende a 3,00 € con IVA). La calculadora del trompo y escandallo te deja poner tus precios, tus gramos y tu merma y te da el food cost y el margen de cada taco y de cada orden, para que no fijes el precio a ojo.',
   },
   {
     q: '¿Cuántos tacos salen de un trompo?',
@@ -54,7 +54,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: '¿Qué IVA llevan las bebidas y las aguas frescas para llevar?',
-    a: 'En sala, comida y bebida van al 10 %. Para llevar o a domicilio, la comida sigue al 10 %, pero el alcohol (cerveza, mezcal, tequila…) y los refrescos y aguas frescas con azúcares o edulcorantes añadidos van al 21 %. Parece un detalle y se nota en el margen: el Excel lo trae ya partido, con la bebida en una línea propia. Lo de las temperaturas del trompo y de la cámara tiene su norma aparte (art. 30 del RD 1086/2020, en la redacción del RD 1021/2022) y el Word la cita tal cual. Confirma tu caso concreto con tu asesoría.',
+    a: 'En sala, comida y bebida van al 10 %. Para llevar o a domicilio, la comida sigue al 10 %, pero el alcohol (cerveza, mezcal, tequila…) y los refrescos y aguas frescas con azúcares o edulcorantes añadidos van al 21 %. Parece un detalle y se nota en el margen: el Excel lo trae ya partido, con la bebida en una línea propia. Las temperaturas tienen su norma aparte: la cámara del pastor marinado (preparado de carne, a 4 °C o menos) la fija el art. 4.1 del RD 1021/2022, y el mantenimiento en caliente, el art. 30 del RD 1086/2020 en la redacción del RD 1021/2022; el Word las cita tal cual. Confirma tu caso concreto con tu asesoría.',
   },
   {
     q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',

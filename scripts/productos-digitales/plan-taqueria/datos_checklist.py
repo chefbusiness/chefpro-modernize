@@ -50,7 +50,7 @@ FASES = [
         ('Decidir tortilla comprada o nixtamal propio ANTES de firmar el local', 'Titular', 'Antes de firmar el alquiler',
          'El plan compra la tortilla. Hacerla en casa pide molino, cocedor y tortilladora, sitio en la cocina y un '
          'tortillero: por coste sólo compensa por encima de unas 700 tortillas al día (la calculadora del pack hace la '
-         'cuenta con tus precios). Si la haces tú, el local tiene que caberla'),
+         'cuenta con tus precios). Si la haces tú, el molino y la tortilladora tienen que caber en el local'),
         ('Elegir forma jurídica: SL unipersonal o autónomo', 'Gestoría', 'Semana 1',
          'El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF: '
          'compara las dos opciones con tu gestoría con las cifras del plan'),
@@ -240,13 +240,13 @@ FASES = [
          'carta (Ley 1/2025, art. 8). Ten envases para ello'),
         ('Cobro aparte del envase de plástico de un solo uso', 'Titular', 'Antes de abrir',
          'Los recipientes de plástico de un solo uso para llevar se cobran aparte en el tique (Ley 7/2022, art. 55). '
-         'Las bandejas de cartón no son plástico; las de aluminio, pregúntalo a tu proveedor'),
+         'Las bandejas de cartón sin recubrimiento de plástico no lo son; las de aluminio, pregúntalo a tu proveedor'),
         ('Importador de chiles secos y producto mexicano: plazo y segundo proveedor', 'Titular', 'Semanas 8-12',
          'Los chiles secos, el achiote, la masa y el producto importado tardan semanas en llegar: pide el plazo por '
          'escrito, ten stock de seguridad y un segundo proveedor. Es el cuello de botella real del negocio'),
         ('Proveedor de tortilla: lote, temperatura de recepción y segundo proveedor', 'Titular', 'Semanas 10-14',
          'Tortilla de maíz nixtamalizado con lote y fecha, recibida a la temperatura que marque su etiqueta y anotada. '
-         'Pide muestra a dos fabricantes y precio por caja: el plan la estima, no la ha leído en una tarifa'),
+         'Pide muestra a dos fabricantes y precio por caja: el plan la estima con un precio de referencia: pon el tuyo'),
         ('Contrato y alta en las plataformas de reparto', 'Titular', 'Antes de abrir',
          'Lee la comisión (del 15 al 35 % más IVA según la plataforma y la zona), cada cuánto liquidan, quién paga las '
          'promociones y el coste de la tablet. Fija un techo: en este plan, el 12 % de las ventas'),
@@ -292,7 +292,7 @@ FASES = [
          'Pesa el cono crudo y el sobrante al cierre cada día con la hoja del Kit de Tareas Recurrentes: Taquería '
          'Mexicana y lleva la media a la calculadora del pack: mide en el kit, recalcula en el plan'),
         ('Cuadrante del sábado por la noche y de las fechas fuertes', 'Titular', 'Agosto',
-         'Septiembre, noviembre y diciembre son los picos del año: prepara el cuadrante y el stock con tiempo'),
+         'Diciembre es el pico del año y septiembre y noviembre traen las fechas mexicanas: prepara el cuadrante y el stock con tiempo'),
         ('Revisar la cuenta de la plataforma cada mes', 'Titular', 'Mensual',
          'Ventas, comisión, promociones y envases: si la plataforma pasa del 12 % de las ventas o su margen no cubre '
          'la comisión, recorta o sube precio. Reparto propio, sólo con contrato laboral y cuando el volumen lo pague'),
