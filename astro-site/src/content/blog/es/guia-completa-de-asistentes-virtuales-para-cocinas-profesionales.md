@@ -1,5 +1,5 @@
 ---
-title: "Asistentes Virtuales para Cocinas: Tu Copiloto IA 2026"
+title: "Asistentes Virtuales para Cocinas: Tu Copiloto IA {year}"
 description: "Guía de asistentes virtuales para cocinas: qué son, los 3 tipos, qué delegar y qué no, y cómo empezar con AI Chef Pro y sus +70 agentes IA."
 pubDate: 2025-03-02
 modDate: 2026-09-05

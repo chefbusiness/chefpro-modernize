@@ -1,5 +1,5 @@
 ---
-title: "Heladería Artesanal: Rentabilidad Real con IA 2026"
+title: "Heladería Artesanal: Rentabilidad Real con IA {year}"
 description: "Cómo mejorar la rentabilidad de tu heladería artesanal con IA: escandallo del cucurucho, equilibrado de la mezcla, estacionalidad y marketing local."
 pubDate: 2025-03-08
 modDate: 2026-08-31

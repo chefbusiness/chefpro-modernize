@@ -1,6 +1,6 @@
 ---
-title: "151 Prompts para Restaurantes: Guía por Áreas 2026"
-description: "151 prompts para restaurantes por áreas: cocina, costes, carta, marketing, RRHH y eventos. Plantillas, variantes y ejemplos listos para usar en 2026."
+title: "151 Prompts para Restaurantes: Guía por Áreas {year}"
+description: "151 prompts para restaurantes por áreas: cocina, costes, carta, marketing, RRHH y eventos. Plantillas, variantes y ejemplos listos para usar en {year}."
 pubDate: 2025-11-10
 modDate: 2026-08-31
 category: libreria-de-prompts

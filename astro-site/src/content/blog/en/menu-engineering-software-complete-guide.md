@@ -1,6 +1,6 @@
 ---
-title: "Best Menu Engineering Software 2026: 10 Tools Compared for Profit Optimization"
-description: "Menu engineering software in 2026: what it does, how it differs from a POS, and how it connects to recipe costing. A practical comparison for independent restaurants."
+title: "Best Menu Engineering Software {year}: 10 Tools Compared for Profit Optimization"
+description: "Menu engineering software in {year}: what it does, how it differs from a POS, and how it connects to recipe costing. A practical comparison for independent restaurants."
 pubDate: 2026-04-24
 modDate: 2026-10-22
 category: ai-in-gastronomy

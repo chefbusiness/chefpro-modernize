@@ -1,5 +1,5 @@
 ---
-title: "Gestión de Inventario Restaurante con IA: Guía 2026"
+title: "Gestión de Inventario Restaurante con IA: Guía {year}"
 description: "Guía práctica de gestión de inventario en restaurantes con IA: conteos, PMP, rotación, pedidos sugeridos y escandallos. Con tabla de KPIs y proceso semanal."
 pubDate: 2026-03-13
 modDate: 2026-08-31

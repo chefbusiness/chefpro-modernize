@@ -1,6 +1,6 @@
 ---
-title: "Recursos Gratis de IA para Gastronomía: 30 Herramientas 2026"
-description: "Las 30 mejores herramientas y recursos gratis de IA para gastronomía en 2026: food cost, alérgenos, cartas y menús. En español, más AI Chef Pro desde 10 €."
+title: "Recursos Gratis de IA para Gastronomía: 30 Herramientas {year}"
+description: "Las 30 mejores herramientas y recursos gratis de IA para gastronomía en {year}: food cost, alérgenos, cartas y menús. En español, más AI Chef Pro desde 10 €."
 pubDate: 2026-02-12
 modDate: 2026-09-05
 category: ia-en-gastronomia

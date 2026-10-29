@@ -1,6 +1,6 @@
 ---
-title: "Die 7 besten KI-Apps für Rezepte 2026: Agenten statt Chat"
-description: "Die 7 besten KI-Apps für Rezepte 2026, gelesen als KI-Agenten für die Gastronomie. Ohne erfundene Noten: welches Werkzeug welche Aufgabe wirklich löst."
+title: "Die 7 besten KI-Apps für Rezepte {year}: Agenten statt Chat"
+description: "Die 7 besten KI-Apps für Rezepte {year}, gelesen als KI-Agenten für die Gastronomie. Ohne erfundene Noten: welches Werkzeug welche Aufgabe wirklich löst."
 pubDate: 2026-10-22
 modDate: 2026-10-22
 category: ki-in-der-gastronomie

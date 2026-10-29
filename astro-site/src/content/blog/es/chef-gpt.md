@@ -1,5 +1,5 @@
 ---
-title: "ChefGPT.xyz: qué es, reseña y alternativas 2026"
+title: "ChefGPT.xyz: qué es, reseña y alternativas {year}"
 description: "Reseña del producto ChefGPT.xyz: modos PantryChef, MasterChef y MacrosChef, para quién sirve en casa y qué no cubre en un restaurante. El chef GPT en español es otra guía."
 pubDate: 2026-01-30
 modDate: 2026-10-22

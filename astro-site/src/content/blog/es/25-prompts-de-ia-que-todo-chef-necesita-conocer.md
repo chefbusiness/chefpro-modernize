@@ -1,5 +1,5 @@
 ---
-title: "25 Prompts de IA que Todo Chef Necesita Conocer [Guía 2026]"
+title: "25 Prompts de IA que Todo Chef Necesita Conocer [Guía {year}]"
 description: "La diferencia entre un chef que usa inteligencia artificial de forma amateur y uno que obtiene resultados profesionales está en una sola palabra: prompts…"
 pubDate: 2025-12-28
 modDate: 2026-09-05

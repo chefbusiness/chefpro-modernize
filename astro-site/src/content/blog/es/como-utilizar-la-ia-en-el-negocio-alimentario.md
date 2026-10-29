@@ -1,5 +1,5 @@
 ---
-title: "Cómo Utilizar la IA en el Negocio Alimentario: Guía Completa para Profesionales de la Hostelería 2026"
+title: "Cómo Utilizar la IA en el Negocio Alimentario: Guía Completa para Profesionales de la Hostelería {year}"
 description: "La inteligencia artificial en el negocio alimentario ha dejado de ser una promesa futurista para convertirse en una realidad transformadora que está…"
 pubDate: 2026-01-12
 modDate: 2026-09-05

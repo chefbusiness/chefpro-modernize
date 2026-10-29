@@ -1,5 +1,5 @@
 ---
-title: "Timlup: Checklist Digital para Restaurantes y Gestión de Tareas Recurrentes en Hostelería [Reseña 2026]"
+title: "Timlup: Checklist Digital para Restaurantes y Gestión de Tareas Recurrentes en Hostelería [Reseña {year}]"
 description: "Checklist digital para restaurantes: con Timlup organizas las tareas recurrentes de tu negocio, aseguras el APPCC y consigues firma y trazabilidad reales…"
 pubDate: 2026-06-09
 modDate: 2026-08-31

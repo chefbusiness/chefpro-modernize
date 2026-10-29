@@ -1,5 +1,5 @@
 ---
-title: "Mejor IA para Restaurantes: Cómo Elegir la Tuya en 2026"
+title: "Mejor IA para Restaurantes: Cómo Elegir la Tuya en {year}"
 description: "No hay una sola mejor IA para restaurantes: depende de tu tipo de local, tamaño y presupuesto. Marco de decisión, tablas y ejemplos prácticos para elegir."
 pubDate: 2026-01-18
 modDate: 2026-09-05

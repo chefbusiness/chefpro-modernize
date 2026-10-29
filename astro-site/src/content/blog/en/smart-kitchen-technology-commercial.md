@@ -1,5 +1,5 @@
 ---
-title: "Smart Kitchen Technology for Commercial Kitchens: The Complete 2026 Guide"
+title: "Smart Kitchen Technology for Commercial Kitchens: The Complete {year} Guide"
 description: "The commercial kitchen landscape is undergoing a transformation unlike anything we’ve witnessed since the advent of stainless steel. The smart kitchen market…"
 pubDate: 2026-03-16
 modDate: 2026-08-31

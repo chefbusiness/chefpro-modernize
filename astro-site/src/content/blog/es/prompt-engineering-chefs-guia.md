@@ -1,5 +1,5 @@
 ---
-title: "Prompt Engineering para Chefs: Guía Práctica de Prompts 2026"
+title: "Prompt Engineering para Chefs: Guía Práctica de Prompts {year}"
 description: "Domina el prompt engineering para chefs: anatomía de un buen prompt (rol, contexto, tarea, formato), 10 ejemplos antes/después y errores a evitar."
 pubDate: 2026-03-10
 modDate: 2026-08-31

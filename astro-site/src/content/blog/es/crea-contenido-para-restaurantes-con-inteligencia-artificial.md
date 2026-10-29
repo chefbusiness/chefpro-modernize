@@ -1,5 +1,5 @@
 ---
-title: "Crea Contenido para Restaurantes con Inteligencia Artificial: Guía Completa 2025"
+title: "Crea Contenido para Restaurantes con Inteligencia Artificial: Guía Completa {year}"
 description: "En la era digital, los restaurantes enfrentan el reto de mantener una presencia online dinámica. La inteligencia artificial, a través de herramientas como Ai…"
 pubDate: 2025-02-22
 modDate: 2026-08-31

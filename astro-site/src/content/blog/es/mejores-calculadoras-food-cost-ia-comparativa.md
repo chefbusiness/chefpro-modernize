@@ -1,6 +1,6 @@
 ---
-title: "Calculadora de Food Cost: Comparativa 2026 con IA y Excel"
-description: "Comparativa 2026 de calculadoras de food cost: tabla honesta, cuándo basta una hoja de Excel y cuándo necesitas IA. Incluye la de AI Chef Pro, de pago."
+title: "Calculadora de Food Cost: Comparativa {year} con IA y Excel"
+description: "Comparativa {year} de calculadoras de food cost: tabla honesta, cuándo basta una hoja de Excel y cuándo necesitas IA. Incluye la de AI Chef Pro, de pago."
 pubDate: 2026-03-20
 modDate: 2026-09-03
 category: ia-en-gastronomia

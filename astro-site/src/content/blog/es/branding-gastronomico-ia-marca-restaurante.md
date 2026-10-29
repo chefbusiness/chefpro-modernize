@@ -1,5 +1,5 @@
 ---
-title: "Branding para Restaurantes: Crea tu Marca con IA 2026"
+title: "Branding para Restaurantes: Crea tu Marca con IA {year}"
 description: "Branding para restaurantes con IA: naming, tono, identidad visual y la carta como pieza de marca, paso a paso. Con tablas de elementos y errores a evitar."
 pubDate: 2026-04-01
 modDate: 2026-08-31

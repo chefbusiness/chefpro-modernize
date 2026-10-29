@@ -1,5 +1,5 @@
 ---
-title: "15 Herramientas de IA para Chefs que Sí Usarás en 2026"
+title: "15 Herramientas de IA para Chefs que Sí Usarás en {year}"
 description: "Las 15 herramientas de IA para chefs por oficio: creatividad, escandallos, fotografía, gestión y formación. Plan AI Chef Miembro: 10 €/mes con 10.000 créditos, sin permanencia."
 pubDate: 2025-12-26
 modDate: 2026-08-31

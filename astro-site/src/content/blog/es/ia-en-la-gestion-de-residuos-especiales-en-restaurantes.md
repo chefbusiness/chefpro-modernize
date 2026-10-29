@@ -1,6 +1,6 @@
 ---
-title: "IA en la Gestión de Residuos Especiales en Restaurantes: Guía Completa de Sostenibilidad 2026"
-description: "La gestión de residuos especiales representa uno de los desafíos más críticos que enfrentan los profesionales de la hostelería en 2026. Los restaurantes…"
+title: "IA en la Gestión de Residuos Especiales en Restaurantes: Guía Completa de Sostenibilidad {year}"
+description: "La gestión de residuos especiales representa uno de los desafíos más críticos que enfrentan los profesionales de la hostelería en {year}. Los restaurantes…"
 pubDate: 2026-02-06
 modDate: 2026-08-31
 category: ia-en-gastronomia

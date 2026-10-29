@@ -2,6 +2,7 @@
 // (mismo conversor que el feed ES, con las URLs y el <language> del árbol EN).
 import { SITE } from '../../../i18n/config';
 import { blogBase, getPublishedPosts, postPath, postSlug } from '../../../lib/blog';
+import { resolveDatePlaceholders } from '../../../lib/date-placeholders.mjs';
 
 const esc = (s: string): string =>
   s
@@ -16,10 +17,10 @@ export async function GET() {
     .map((p) => {
       const url = `${SITE}${postPath(postSlug(p), 'en')}`;
       return `    <item>
-      <title>${esc(p.data.title)}</title>
+      <title>${esc(resolveDatePlaceholders(p.data.title, undefined, 'en'))}</title>
       <link>${url}</link>
       <guid isPermaLink="true">${url}</guid>
-      <description>${esc(p.data.description)}</description>
+      <description>${esc(resolveDatePlaceholders(p.data.description, undefined, 'en'))}</description>
       <pubDate>${p.data.pubDate.toUTCString()}</pubDate>
     </item>`;
     })

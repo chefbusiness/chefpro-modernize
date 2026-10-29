@@ -1,5 +1,5 @@
 ---
-title: "Ghost Kitchen Guide 2026: How to Start, Run, and Scale a Virtual Restaurant"
+title: "Ghost Kitchen Guide {year}: How to Start, Run, and Scale a Virtual Restaurant"
 description: "— Launch Your Ghost Kitchen with AI-Powered Tools AI Chef Pro offers 75+ tools for menu development, recipe scaling, food cost analysis, and more — perfect…"
 pubDate: 2026-03-20
 modDate: 2026-10-18

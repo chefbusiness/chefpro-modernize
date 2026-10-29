@@ -1,5 +1,5 @@
 ---
-title: "Domina la IA en tu Cocina Profesional: La Guía Definitiva para Revolucionar tu Gestión Culinaria en 2025"
+title: "Domina la IA en tu Cocina Profesional: La Guía Definitiva para Revolucionar tu Gestión Culinaria en {year}"
 description: "La revolución de la inteligencia artificial ha llegado a las cocinas profesionales, transformando para siempre la manera en que chefs, cocineros y gerentes…"
 pubDate: 2025-08-17
 modDate: 2026-09-05

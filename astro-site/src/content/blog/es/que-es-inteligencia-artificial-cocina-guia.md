@@ -1,5 +1,5 @@
 ---
-title: "Qué es la Inteligencia Artificial en Cocina: Guía Completa 2026"
+title: "Qué es la Inteligencia Artificial en Cocina: Guía Completa {year}"
 description: "Descubre qué es la IA en cocina, sus 4 tipos principales y cómo transforma la gastronomía. Guía completa para chefs profesionales con beneficios medibles y…"
 pubDate: 2026-03-03
 modDate: 2026-09-05

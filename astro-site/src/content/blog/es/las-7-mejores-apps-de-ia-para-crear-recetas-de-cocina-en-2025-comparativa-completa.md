@@ -1,6 +1,6 @@
 ---
-title: "Las 7 Mejores Apps de IA para Crear Recetas en 2026"
-description: "Comparativa 2026 de las mejores apps de IA para crear recetas: 7 herramientas analizadas por caso de uso, precio y veredicto franco. Descubre cuál elegir."
+title: "Las 7 Mejores Apps de IA para Crear Recetas en {year}"
+description: "Comparativa {year} de las mejores apps de IA para crear recetas: 7 herramientas analizadas por caso de uso, precio y veredicto franco. Descubre cuál elegir."
 pubDate: 2025-09-02
 modDate: 2026-10-22
 category: ai-chef-pro

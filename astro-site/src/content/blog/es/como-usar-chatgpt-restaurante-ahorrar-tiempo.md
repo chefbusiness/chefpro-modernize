@@ -1,5 +1,5 @@
 ---
-title: "ChatGPT para Restaurantes: 10 Tareas y sus Límites 2026"
+title: "ChatGPT para Restaurantes: 10 Tareas y sus Límites {year}"
 description: "Descubre 10 tareas donde ChatGPT para restaurantes te ahorra tiempo, sus límites reales en cocina profesional y cuándo conviene un agente especializado."
 pubDate: 2026-01-11
 modDate: 2026-08-31
