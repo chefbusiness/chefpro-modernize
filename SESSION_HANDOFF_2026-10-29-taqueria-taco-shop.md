@@ -48,3 +48,15 @@ Taco Shop Checklist Templates EN ($19), Sushi Bar y Hamburguesería Smash.
   (3) contrastar SIEMPRE la landing EN con los entregables antes de abrir el PR (8 correcciones en el Taco y 8 en el Rotisserie).
 - **Carril Cursor**: enlazar desde el blog (posts de pollo a la brasa, cocina peruana, asador, comida para llevar) → `/plan-negocio-polleria`;
   posts EN de Peruvian chicken / rotisserie → el kit EN; caso de uso `restaurante-peruano` (`src/data/use-cases-content.es.ts:3690`).
+
+## 7. Próxima sesión (programada al cierre, 30-oct · sesión Claude Code)
+1. **Arranque en el Mac**: `istats cpu temp` · `pkill -STOP photoanalysisd mediaanalysisd` · vigilante `nohup zsh scripts/termica/watchdog-termico.sh <scratchpad>/watchdog &`
+   · `git pull` en el Mac y en el VPS · el directorio principal SIEMPRE en `main`; cada producto en su `git worktree`.
+2. **Producto**: **Taco Shop Checklist Templates EN ($19)**, duplicado del Kit de Tareas Taquería ES v2.0 (`scripts/generate-tareas-taqueria.py`
+   + `scripts/productos-digitales/kit-tareas-taqueria/`) con el circuito de las checklists EN ya publicadas (Restaurant/Hotel Checklists EN);
+   jerga US del research `business-plans-en-12/F1-research-us-delta.md` §9; enlazar desde el Taco Shop Business Plan Kit y el hub EN.
+   Producto S: 1 sesión, ≤ 2,5 M tokens.
+3. **Tanda de arreglos sin correo** (si cabe): checklist de la Taquería LIVE F6 «ITC-ICG 08» → «ITC-ICG 07 e ITC-ICG 08»
+   (`plan-taqueria/datos_checklist.py:289`, regenerar en el VPS con `plan-taqueria/ciclo.sh` y comprobar que solo cambia esa celda).
+4. Después, en la cola: Plan Sushi Bar ES + EN → Hamburguesería Smash → Kit de Tareas Pollería («Próximos»).
+5. Comprobar `list_runs` de las routines de correo cuando toquen (18-nov Taquería, 23-nov Pollería).
