@@ -551,6 +551,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
     urlByLang: { en: '/en/digital-products/pizza-shop-business-plan' },
     priceByLang: { en: '$39' },
   },
+  'plan-negocio-taqueria': {
+    id: 'plan-negocio-taqueria',
+    url: '/plan-negocio-taqueria',
+    price: '€35',
+    name: { es: 'Plan de Negocio: Taquería', en: 'Mexican Taqueria Business Plan' },
+    description: {
+      es: 'Taquería con trompo al pastor: plan financiero Excel, plan en Word, checklist de apertura y calculadora del trompo y escandallo por taco.',
+      en: 'Word business plan, Excel financial projections, opening checklist and spit and per-taco costing calculator for a Mexican taqueria.',
+    },
+  },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',
     url: '/plan-negocio-tapas-bar',

@@ -14,7 +14,7 @@ const data: GuiaData = {
   seo: {
     title: 'Cómo Montar un Restaurante Mexicano 80 Plazas — Guía Completa España | AI Chef Pro',
     description: 'Guía premium para montar un restaurante mexicano en España: 20 capítulos, 22 páginas, proveedores de productos mexicanos, barra de tequilas, tacos, escandallos. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
-    keywords: 'como montar restaurante mexicano españa, abrir taqueria, restaurante mexicano autentico, proveedores productos mexicanos españa, barra tequilas mezcal, tacos al pastor, plan financiero restaurante mexicano, AI Chef Pro',
+    keywords: 'como montar restaurante mexicano españa, restaurante mexicano autentico, proveedores productos mexicanos españa, barra tequilas mezcal, tacos al pastor, plan financiero restaurante mexicano, AI Chef Pro',
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-mexicano-hero.jpg',
   },
 
@@ -169,6 +169,7 @@ const data: GuiaData = {
   footerLinks: [
     { label: 'aichef.pro', href: 'https://aichef.pro' },
     { label: 'Kit de Tareas: Taquería Mexicana', href: '/kit-tareas-taqueria' },
+    { label: 'Plan de Negocio: Taquería', href: '/plan-negocio-taqueria' },
     { label: 'Guía Restaurante Casual', href: '/guia-restaurante-casual' },
     { label: 'Guía Restaurante Gastronómico', href: '/guia-restaurante-gastronomico' },
     { label: 'Todos los Productos', href: '/productos-digitales' },

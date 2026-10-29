@@ -1331,6 +1331,13 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-masa': '/dl/plan-negocio-pizzeria/calculadora-masa-escandallo-pizzeria.xlsx',
     'guia-equivalencias': '/dl/plan-negocio-pizzeria/guia-equivalencias-plan-negocio-pizzeria.docx',
   },
+  'plan-negocio-taqueria': {
+    'plan-financiero': '/dl/plan-negocio-taqueria/plan-financiero-taqueria.xlsx',
+    'plan-negocio': '/dl/plan-negocio-taqueria/plan-de-negocio-taqueria.docx',
+    'checklist-apertura': '/dl/plan-negocio-taqueria/checklist-apertura-taqueria.xlsx',
+    'calculadora-trompo': '/dl/plan-negocio-taqueria/calculadora-trompo-escandallo-taqueria.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-taqueria/guia-equivalencias-plan-negocio-taqueria.docx',
+  },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',

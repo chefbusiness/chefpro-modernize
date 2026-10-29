@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Taquería',
+    slug: '/plan-negocio-taqueria',
+    price: '€35',
+    description: 'Plan de negocio completo para abrir una taquería con trompo al pastor: plan financiero a 3 años en Excel de 9 hojas, plan en Word de 10 secciones, checklist de apertura de 80 tareas, calculadora del trompo y escandallo por taco y la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel de 9 hojas con tesorería mes a mes',
+      'Checklist de apertura: 80 tareas en 6 fases',
+      'Calculadora del trompo y escandallo por taco y Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: UtensilsCrossed,
+    image: '/lovable-uploads/ai-gallery/plan-taqueria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'taqueria', 'mexicano', 'plan-negocio'],
+  },
+  {
     name: 'Plan de Negocio: Cafetería Móvil para Eventos',
     slug: '/plan-negocio-cafeteria-movil-eventos',
     price: '€45',
@@ -128,8 +145,8 @@ const products = [
     ],
     icon: Coffee,
     image: '/lovable-uploads/ai-gallery/guia-churreria-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'chocolateria'],
   },
   {

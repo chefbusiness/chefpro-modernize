@@ -2,7 +2,22 @@
 
 > Sesión Claude Code (Mac).
 
-## ⏳ PENDIENTES (28-oct-2026): los DOS de la cafetería móvil, ES y EN — John: «un producto nuevo en español y su versión en inglés en producción, las dos tareas de hoy»
+## ✅ HECHO (29-oct-2026): Plan de Negocio: Taquería (ES) — PR #181
+
+Link de John: https://buy.stripe.com/fZu5kwbcEcsCcrt1wV6oo2a (`plink_1UVou74CcdRGidmEufF1axkD`). Comprobado con la CLI: 3500 EUR, pago único,
+*exclusive*, impuesto automático, factura y redirección a `/plan-negocio-taqueria-access`. Env de Netlify creada (builds) y `payment-links.ts` regenerado.
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Taquería - AI Chef Pro |
+| Precio | **35,00 EUR**, pago único, impuesto automático con precio *exclusive* (como pizzería y cafetería móvil) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-taqueria-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 245 caracteres) | Plan de negocio para montar una taquería con trompo, barra de salsas y para llevar: plan en Word de 10 secciones, plan financiero en Excel a 3 años, checklist de 80 tareas, calculadora del trompo y escandallo por taco, y guía para Latinoamérica. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_TAQUERIA` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-taqueria-hero.jpg` |
+
+## ✅ HECHOS (28-oct-2026): los DOS de la cafetería móvil, ES y EN, LIVE (#177 `176b10d0` · #178 `13734218`) — John: «un producto nuevo en español y su versión en inglés en producción, las dos tareas de hoy»
 
 ### 1. Plan de Negocio: Cafetería Móvil para Eventos (ES) — PR #177
 
