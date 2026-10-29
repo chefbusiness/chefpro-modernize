@@ -1438,6 +1438,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-29): twin of plan-negocio-taqueria, independent product.
+  'taco-shop-business-plan': {
+    id: 'taco-shop-business-plan',
+    name: 'Taco Shop Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/taco-shop-business-plan/access',
+    emailSubject: 'Your access to Taco Shop Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Taco Shop Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the taco cost and trompo yield calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Taco Shop Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the taco cost and trompo yield calculator and the 80-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/taco-shop-business-plan/taco-shop-business-plan.docx',
+      'plan-financiero': '/dl/taco-shop-business-plan/taco-shop-financial-projections.xlsx',
+      'checklist-apertura': '/dl/taco-shop-business-plan/taco-shop-startup-checklist.xlsx',
+      'calculadora-trompo': '/dl/taco-shop-business-plan/taco-cost-trompo-yield-calculator.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
   'food-cost-menu-engineering-guide': {
     id: 'food-cost-menu-engineering-guide',

@@ -916,6 +916,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'modelos-contrato': '/dl/coffee-cart-business-plan/coffee-catering-service-agreement-template.docx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-29): Taco Shop Business Plan Kit. Claves = las del ES plan-negocio-taqueria salvo el bonus, que aquí es el
+  // común `equivalents-guide` como en toda la familia EN (= TEMPLATES de src/pages/TacoShopBusinessPlanDashboard.tsx) → los 4
+  // ficheros EN de /dl/taco-shop-business-plan/ (SPEC business-plans-en-12) y el bonus común de equivalencias EN.
+  'taco-shop-business-plan': {
+    'plan-negocio': '/dl/taco-shop-business-plan/taco-shop-business-plan.docx',
+    'plan-financiero': '/dl/taco-shop-business-plan/taco-shop-financial-projections.xlsx',
+    'checklist-apertura': '/dl/taco-shop-business-plan/taco-shop-startup-checklist.xlsx',
+    'calculadora-trompo': '/dl/taco-shop-business-plan/taco-cost-trompo-yield-calculator.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

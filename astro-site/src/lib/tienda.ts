@@ -206,11 +206,12 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
-    // Taquería (29-oct-2026): ES vivo; Taco Shop Business Plan Kit (EN) reservado (vivo: false) hasta que nazca la edición inglesa.
+    // Tienda EN (29-oct-2026): Taco Shop Business Plan Kit (SPEC business-plans-en-12 / plan-taqueria F1-camino §6). vivo: true en la
+    // rama, que se fusiona cuando existe el Payment Link (mismo criterio que el resto de planes EN de la tienda).
     familia: 'plan-negocio-taqueria',
     productos: {
       es: { slug: 'plan-negocio-taqueria', vivo: true },
-      en: { slug: 'taco-shop-business-plan', vivo: false },
+      en: { slug: 'taco-shop-business-plan', vivo: true },
     },
   },
   {

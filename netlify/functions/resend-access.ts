@@ -418,6 +418,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-29): gemelo de plan-negocio-taqueria (ver verify-purchase.ts).
+  'taco-shop-business-plan': {
+    accessPath: '/en/digital-products/taco-shop-business-plan/access',
+    emailSubject: 'Your access to Taco Shop Business Plan Kit',
+    emailTitle: 'Access your Taco Shop Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the taco cost and trompo yield calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu (ver verify-purchase.ts).
   'food-cost-menu-engineering-guide': {
     accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',

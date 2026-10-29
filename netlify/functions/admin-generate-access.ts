@@ -41,6 +41,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'bbq-catering-business-plan': { accessPath: '/en/digital-products/bbq-catering-business-plan/access', label: 'BBQ Catering Business Plan Kit', lang: 'en' },
   'paella-catering-business-plan': { accessPath: '/en/digital-products/paella-catering-business-plan/access', label: 'Paella Catering Business Plan Kit', lang: 'en' },
   'pizza-shop-business-plan': { accessPath: '/en/digital-products/pizza-shop-business-plan/access', label: 'Pizza Shop Business Plan Kit', lang: 'en' },
+  'taco-shop-business-plan': { accessPath: '/en/digital-products/taco-shop-business-plan/access', label: 'Taco Shop Business Plan Kit', lang: 'en' },
   'ice-cream-shop-business-plan': { accessPath: '/en/digital-products/ice-cream-shop-business-plan/access', label: 'Ice Cream Shop Business Plan Kit', lang: 'en' },
   'wedding-venue-business-plan': { accessPath: '/en/digital-products/wedding-venue-business-plan/access', label: 'Wedding Venue Business Plan Kit', lang: 'en' },
   'coffee-cart-business-plan': { accessPath: '/en/digital-products/coffee-cart-business-plan/access', label: 'Coffee Cart Business Plan Kit', lang: 'en' },

@@ -59,20 +59,24 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Taco Shop Business Plan Kit (29-oct-2026, duodécima tanda de planes EN): el más nuevo → 1; el Coffee Cart Business Plan Kit
+  // y el resto de vivos bajan un puesto. SUSTITUYE a la tarjeta provisional «Business Plan: Mexican Taqueria» que metió la F3 del
+  // ES (apuntaba al ES y describía el kit español: guía de equivalencias para Latinoamérica, plan en España); una sola tarjeta
+  // por producto. Imagen: el hero ES de la taquería (sin texto).
   {
-    name: 'Business Plan: Mexican Taqueria',
+    name: 'Taco Shop Business Plan Kit',
     slug: '/plan-negocio-taqueria',
-    description: 'Complete business plan to open a Mexican taqueria with a trompo al pastor: a 3-year, 9-sheet Excel financial plan, a 10-section Word plan, an 80-task opening checklist, a spit and per-taco costing calculator and the Equivalents Guide for Latin America.',
+    description: 'Taco shop business plan template for a counter-service taqueria with a trompo for al pastor: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in covers per day, cash flow and loan schedule, a taco cost and trompo yield calculator, and an 80-task startup checklist.',
     features: [
       '10-section business plan in Word',
-      '9-sheet Excel financial plan with month-by-month cash flow',
-      'Opening checklist: 80 tasks in 6 phases',
-      'Spit and per-taco costing calculator and Equivalents Guide for Latin America',
+      '9-sheet Excel financial projections with 12-month cash flow',
+      'Taco cost and trompo yield calculator: tacos per cone, food cost per taco',
+      '80 tasks: Type I hood, gas line, health permit, beer and wine license',
     ],
     iconName: 'UtensilsCrossed',
     image: '/lovable-uploads/ai-gallery/plan-taqueria-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'taqueria', 'mexican', 'business-plan'],
   },
   // Coffee Cart Business Plan Kit (28-oct-2026, undécima tanda de planes EN): el más nuevo → 1; el Wedding Venue Business Plan Kit y
