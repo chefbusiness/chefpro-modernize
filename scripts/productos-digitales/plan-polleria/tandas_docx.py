@@ -356,7 +356,8 @@ PROHIBIDOS = [
     r'\btapas?\b', r'gastrobar', r'vermut', r'\bpinchos?\b', r'tapeo', r'afterwork', r'salamandra', r'rational',
     r'[Ff]ichero v1\.1',
     # restos de la Heladería
-    r'helad', r'sorbete', r'pasteuriz', r'granizad', r'horchata', r'mantec', r'cubeta',
+    r'helad', r'sorbete', r'granizad',  # «pasteuriz» fuera: el ovoproducto pasteurizado es la norma (RD 1021/2022 art. 9)
+    r'horchata', r'mantec', r'cubeta',
     # restos de la Pizzería (sin leña ni horno: son oficio de la brasa peruana; la chimenea va a AVISOS)
     r'pizz', r'napol[ei]t', r'margherita', r'levadura', r'amasad', r'bolas? de masa', r'fior di latte', r'mozzarella',
     r'c[uú]pula', r'\bETG\b', r'pliego', r'97/2010', r'AVPN',
