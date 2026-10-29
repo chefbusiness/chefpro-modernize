@@ -63,7 +63,7 @@ EST = ' Estimación del kit, editable.'
 #: hoja Pollo: (clave, rótulo, formato, valor por defecto, constante gris, nota)
 ENT_P = [
     ('P', 'Peso medio del pollo en canal (kg)', '#,##0.00', 1.45, False, 'Pollo limpio de 1,4 a 1,5 kg: el calibre que pide el asador. Pésalo en la recepción.' + EST),
-    ('Pk', 'Precio del pollo en canal (€/kg, sin IVA)', EUR, 3.05, False, 'Entre 3,05 y 3,25 € el kilo en mayorista. Pon el de tu proveedor.' + EST),
+    ('Pk', 'Precio del pollo en canal (€/kg, sin IVA)', EUR, 3.05, False, 'Unos 2,96 € el kilo en origen y 3,25 € en Makro (octubre de 2026): el kit pone 3,05 €. Pon el de tu proveedor.' + EST),
     ('S', 'Sazón, aceite y sal por pollo (€, sin IVA)', EUR, 0.13, False, 'Adobo, aceite y sal de un pollo.' + EST),
     ('r', 'Rendimiento del asado (peso asado ÷ peso en canal)', PCT, 0.76, False,
      'Lo que queda del pollo tras el asado, con hueso. Mídelo con 5 pollos de la misma carga (hoja «Instrucciones»).' + EST),
@@ -111,7 +111,7 @@ ENT_S = [
     ('hp', 'Parte del domingo que se vende en la punta (%)', PCT, 0.80, False, 'Entre las 12:30 y las 15:00.' + EST),
     ('ag', 'Subida del domingo de agosto o de un festivo (%)', PCT, 0.15, False, 'Sobre un domingo normal. En la costa puede ser mayor.' + EST),
     ('kw', 'Potencia media de gas que consume el asador (kW)', DEC, 60.0, False,
-     'La ficha de un asador de 8 espadas da 56 kW a pleno rendimiento; la media real es menor. Pon la de tu ficha.' + EST),
+     'La ficha de un asador de 8 espadas da 56 kW a pleno rendimiento; el de 12 espadas gasta más y su media real queda por debajo del máximo de su ficha. Pon la de la tuya.' + EST),
     ('ekwh', 'Precio del gas (€/kWh, sin IVA)', '#,##0.000 €', 0.10, False, 'Butano o propano. Pon el de tu contrato o tu bombona.' + EST),
     ('MH', 'Minutos por hora (constante)', ENT, 60, True, 'Constante: una hora son 60 minutos. No se edita.'),
 ]
@@ -143,7 +143,7 @@ SAL_S = [
 #: hoja Escandallo
 ESC_IN = [
     ('iva', 'IVA de la comida (%)', PCT, 0.10, 'Comida preparada, en sala, para llevar y a domicilio: 10 % (Ley 37/1992, art. 91).'),
-    ('ivab', 'IVA de la bebida que sale del local (%)', PCT, 0.21, 'Cerveza y refrescos con azúcares añadidos para llevar: 21 % (Ley 37/1992, art. 91).'),
+    ('ivab', 'IVA de la bebida que sale del local (%)', PCT, 0.21, 'Cerveza, vino y refrescos con azúcares o edulcorantes añadidos para llevar: 21 % (Ley 37/1992, art. 91).'),
     ('ivap', 'IVA del pan vendido suelto (%)', PCT, 0.04, 'Pan común: 4 % (Ley 37/1992, art. 91).'),
     ('obj', 'Food cost objetivo (% sobre el precio sin IVA)', PCT, 0.33, 'Referencia del pedido tipo para llevar: 33 %.' + EST),
     ('tol', 'Margen de vigilancia sobre el objetivo (puntos)', PCT, 0.06, 'Hasta este margen por encima del objetivo, el semáforo dice «Vigila el coste». El pollo entero suele caer aquí.'),
@@ -153,7 +153,7 @@ ESC_IN = [
     ('rec', 'Recargo de precio en la plataforma (%)', PCT, 0.15, 'Lo que subes el precio en la plataforma para compensar (unos 2 € por pieza).' + EST),
 ]
 #: gramos: (ingrediente, precio €/kg, origen del precio)
-PF, PA, CRO, ENS, ENL, ALI, YOG = ('Patatas fritas (congeladas, con aceite)', 'Patatas asadas al horno (frescas)', 'Croquetas de pollo (con el sobrante)',
+PF, PA, CRO, ENS, ENL, ALI, YOG = ('Patatas fritas (congeladas, con aceite)', 'Patatas asadas (frescas)', 'Croquetas de pollo (con el sobrante)',
                                    'Ensaladilla (con ovoproducto)', 'Ensalada mixta', 'Alioli (con ovoproducto pasteurizado)',
                                    'Salsa de yogur y hierbas (sin huevo)')
 ING_G = [
@@ -600,7 +600,7 @@ def hoja_escandallo(wb):
     ws.row_dimensions[CH['rank']].height = 32
     _f(ws, 'A%d' % E_FIN, 'El food cost de la tabla es el del plato servido en sala. En el mostrador y el encargo se descuenta el envase del '
                           'pedido; en la plataforma, además, se sube el precio con el recargo y se descuenta la comisión sobre ese precio. '
-                          'AVISO FIJO: en la plataforma, vende el pollo entero con patatas al horno o asadas: las fritas llegan blandas. '
+                          'AVISO FIJO: en la plataforma, vende el pollo entero con patatas asadas: las fritas llegan blandas. '
                           'Las bebidas sueltas no están en este escandallo.', i=True, wrap=True)
     ws.merge_cells('A%d:%s%d' % (E_FIN, ORI, E_FIN))
     ws.row_dimensions[E_FIN].height = 48
@@ -650,8 +650,8 @@ INSTRUCCIONES = [
      'para llegar a tu objetivo. Abajo, el margen en sala, en el mostrador y el encargo y en la plataforma, y el puesto de cada plato por margen. '
      'El pollo entero suele quedar por encima del objetivo; los combos con guarniciones lo compensan.', False),
     ('PRECIOS, IVA Y FUENTES', True),
-    ('El IVA de la comida preparada para consumir en el local, para llevar o a domicilio es el 10 % (Ley 37/1992, art. 91). La cerveza y los '
-     'refrescos con azúcares añadidos que salen del local llevan el 21 %; el pan común, el 4 %. El alioli, la ensaladilla y las cremas sin '
+    ('El IVA de la comida preparada para consumir en el local, para llevar o a domicilio es el 10 % (Ley 37/1992, art. 91). La cerveza, el vino y los '
+     'refrescos con azúcares o edulcorantes añadidos que salen del local llevan el 21 %; el pan común, el 4 %. El alioli, la ensaladilla y las cremas sin '
      'cocción se hacen con ovoproducto, a 8 °C como máximo y se consumen en 24 horas, con fecha y hora de elaboración (RD 1021/2022, art. 9).', False),
     ('Los precios y rendimientos salen del estudio de mercado del kit (octubre 2026) y de estimaciones del kit; la referencia de rendimiento '
      'viene del USDA. Ninguna cifra de esta calculadora es un dato publicado de tu negocio: sustitúyelas por las tuyas.', False),

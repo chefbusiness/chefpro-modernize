@@ -130,7 +130,7 @@ SUPUESTOS = {
     'coste_comida': (
         None, None, 0.32, None,
         'Materia prima de la comida sobre sus ventas: el pollo entero sale a un 38,8 % (el pollo es caro y se vende '
-        'barato), el medio a un 35,8 %, las patatas a un 28 %, la ensaladilla a un 25 %, el menú de sala a un 24 % y las '
+        'barato), el medio a un 35,8 %, las patatas a un 28 %, la ensaladilla a un 25 %, el menú de sala a un 26 % y las '
         'croquetas, hechas con el pollo del día anterior, a un 22 %: el pedido tipo para llevar queda en un 33 % y la sala '
         'en un 25 %. Un 31 % de media, más 1,5 puntos de merma (pollos que sobran y no llegan a croqueta, patata frita '
         'que se tira) y menos medio de redondeo. Cada 10 % que suba el pollo resta unos 6.700 € al resultado: el pollo '
@@ -492,7 +492,7 @@ INSTRUCCIONES = {
         ('Mercado del pollo asado en España', 'Unos 2,5 millones de pollos a la semana en unos 12.000 locales',
          'Interempresas / Efeagro, julio de 2026',
          'Unos 208 pollos por asador y semana de media; en verano, un 15 % más en el interior y hasta un 35 % más en la '
-         'costa. El caso vende unos 302'),
+         'costa. El caso vende unos 301'),
         ('Pollo entero asado para llevar', '11-14 € con IVA',
          'Cartas de asadores de pollos de Getxo, Sevilla y Ciudad Real leídas en 2026',
          'El caso lo pone a 12,90 €. En Barcelona, el pollo al ast va de 13,90 a 20,50 €; en la pollería peruana, el '

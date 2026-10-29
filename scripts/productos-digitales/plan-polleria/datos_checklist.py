@@ -312,7 +312,7 @@ FASES = [
          'Al menos una vez al año (Madrid, Ordenanza 4/2021, art. 23); el plan cuenta dos por la grasa del asador. Los '
          'filtros de grasa, con la frecuencia que fije tu plan de limpieza'),
         ('Revisión del gas cada 5 años y mantenimiento anual del asador', 'Instalador de gas habilitado', 'Calendario',
-         'Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 08), y una revisión '
+         'Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 07), y una revisión '
          'al año de los quemadores, el motor y las espadas del asador. Apunta las fechas'),
         ('Medir el rendimiento del pollo y el tiempo de carga y recalcular', 'Maestro/a asador', 'Semanas 1-12',
          'Pesa cinco pollos crudos y asados de la misma carga, cronometra una carga completa y anota los pollos que '
