@@ -222,5 +222,9 @@
  "plan-negocio-taqueria": {
   "producto": "Plan de Negocio Taquería",
   "ejemplos": "el «chile» se dice «ají» en Argentina, Colombia y Chile; el «aguacate» es «palta» en Argentina y Chile; el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina; el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú"
+ },
+ "plan-negocio-polleria": {
+  "producto": "Plan de Negocio Pollería y Asador de Pollos",
+  "ejemplos": "el local de pollo asado es «rosticería» en México, «rotisería» en Argentina y «asadero» en Colombia; las «patatas» que acompañan al pollo son «papas»; el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina, y el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú"
  }
 }

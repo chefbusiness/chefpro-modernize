@@ -10164,7 +10164,7 @@
     "rebozado": 0,
     "carne_picada": 2,
     "ternera": 0,
-    "cerdo": 6,
+    "cerdo": 4,
     "solomillo": 0,
     "panceta": 0,
     "jamon_serrano": 0,
@@ -10180,7 +10180,7 @@
     "mejillones": 0,
     "requeson": 0,
     "cafe_cortado": 5,
-    "refresco": 12,
+    "refresco": 13,
     "cana_cerveza": 0,
     "cerveza_botellin": 0,
     "cubata": 0,
@@ -10203,7 +10203,7 @@
     "cuenta": 0,
     "propina": 0,
     "menu_dia": 0,
-    "carta": 58,
+    "carta": 59,
     "racion": 1,
     "tapeo": 0,
     "barra": 39,
@@ -10232,7 +10232,7 @@
     "coste": 98,
     "gastos_fijos": 0,
     "tesoreria": 18,
-    "factura": 8,
+    "factura": 7,
     "albaran": 0,
     "stock": 5,
     "pedido_proveedor": 0,
@@ -10244,7 +10244,7 @@
     "nomina": 7,
     "finiquito": 0,
     "autonomo": 13,
-    "iva": 129,
+    "iva": 130,
     "seguridad_social": 11,
     "convenio_colectivo": 1,
     "baja_laboral": 0,
@@ -10303,7 +10303,7 @@
     "cafeteria": 0,
     "bar_copas": 0,
     "chiringuito": 0,
-    "asador": 10,
+    "asador": 9,
     "polleria": 0,
     "pasteleria": 0,
     "bodega": 0,
@@ -10332,6 +10332,217 @@
     "paga_extra": 7,
     "smi": 7,
     "iae": 2,
+    "recargo_equivalencia": 0,
+    "registro_horario": 2,
+    "salamandra": 0,
+    "pase_cocina": 0,
+    "partida_cocina": 0
+   }
+  },
+  "plan-negocio-polleria": {
+   "archivos": 4,
+   "terminos": {
+    "patata": 37,
+    "nata": 0,
+    "zumo": 2,
+    "melocoton": 0,
+    "judias_verdes": 0,
+    "guisantes": 0,
+    "gambas": 0,
+    "fresa": 0,
+    "aguacate": 2,
+    "maiz": 0,
+    "pimiento": 1,
+    "cacahuete": 3,
+    "alubias": 0,
+    "champinon": 0,
+    "calabacin": 0,
+    "calabaza": 0,
+    "bollería": 0,
+    "bizcocho": 0,
+    "tarta": 0,
+    "magdalena": 0,
+    "nata_montada": 0,
+    "azucar_glas": 0,
+    "azucar_moreno": 0,
+    "harina_fuerza": 0,
+    "levadura_prensada": 0,
+    "levadura_quimica": 0,
+    "mantequilla": 0,
+    "chocolate_taza": 0,
+    "churro": 0,
+    "napolitana": 0,
+    "rebozado": 0,
+    "carne_picada": 0,
+    "ternera": 0,
+    "cerdo": 0,
+    "solomillo": 0,
+    "panceta": 0,
+    "jamon_serrano": 0,
+    "jamon_york": 0,
+    "embutido": 0,
+    "bocadillo": 0,
+    "tortilla_patata": 0,
+    "tapa_pincho": 0,
+    "pimenton": 1,
+    "aceite_girasol": 2,
+    "legumbres": 0,
+    "marisco": 0,
+    "mejillones": 0,
+    "requeson": 0,
+    "cafe_cortado": 1,
+    "refresco": 17,
+    "cana_cerveza": 1,
+    "cerveza_botellin": 1,
+    "cubata": 0,
+    "chupito": 0,
+    "camarero": 4,
+    "jefe_partida": 0,
+    "ayudante_cocina": 2,
+    "pinche": 0,
+    "friegaplatos": 0,
+    "encargado": 0,
+    "maitre": 0,
+    "jefe_sala": 0,
+    "sous_chef": 0,
+    "jefe_cocina": 0,
+    "barman": 0,
+    "repartidor": 6,
+    "pastelero": 0,
+    "parrillero": 0,
+    "comanda": 0,
+    "cuenta": 0,
+    "propina": 0,
+    "menu_dia": 0,
+    "carta": 47,
+    "racion": 3,
+    "tapeo": 0,
+    "barra": 6,
+    "terraza": 0,
+    "velador": 0,
+    "entrante": 0,
+    "primer_plato": 0,
+    "segundo_plato": 0,
+    "para_llevar": 37,
+    "a_domicilio": 3,
+    "sala_comedor": 68,
+    "camarera_pisos": 0,
+    "turno_partido": 0,
+    "fregadero": 2,
+    "escandallo": 20,
+    "merma": 11,
+    "ticket_medio": 6,
+    "cierre_caja": 0,
+    "cuadrante": 7,
+    "prevision_ventas": 0,
+    "punto_equilibrio": 11,
+    "margen_bruto": 7,
+    "beneficio": 1,
+    "cuenta_resultados": 5,
+    "food_cost": 12,
+    "coste": 95,
+    "gastos_fijos": 0,
+    "tesoreria": 19,
+    "factura": 8,
+    "albaran": 0,
+    "stock": 2,
+    "pedido_proveedor": 0,
+    "tpv": 7,
+    "datafono": 3,
+    "fondo_caja": 0,
+    "amortizacion": 20,
+    "subvencion": 1,
+    "nomina": 7,
+    "finiquito": 0,
+    "autonomo": 13,
+    "iva": 126,
+    "seguridad_social": 10,
+    "convenio_colectivo": 1,
+    "baja_laboral": 0,
+    "alta_trabajador": 1,
+    "contrato_indefinido": 0,
+    "contrato_temporal": 0,
+    "horas_extra": 0,
+    "gestoria": 25,
+    "licencia_actividad": 0,
+    "ayuntamiento": 16,
+    "comunidad_autonoma": 2,
+    "hacienda": 1,
+    "irpf": 1,
+    "impuesto_sociedades": 11,
+    "sociedad_limitada": 0,
+    "mutua": 0,
+    "prevencion_riesgos": 3,
+    "cotizacion": 0,
+    "traspaso": 3,
+    "alquiler": 0,
+    "fianza": 6,
+    "dni": 0,
+    "appcc": 16,
+    "manipulador_alimentos": 2,
+    "camara_frigorifica": 0,
+    "abatidor": 0,
+    "fifo": 0,
+    "caducidad": 0,
+    "consumo_preferente": 0,
+    "desinfeccion": 7,
+    "control_plagas": 0,
+    "basura": 0,
+    "nevera": 5,
+    "fogon": 14,
+    "cocina_gas": 0,
+    "encimera": 0,
+    "campana_extractora": 14,
+    "plancha": 0,
+    "batidora": 0,
+    "lavavajillas": 6,
+    "vitrina": 30,
+    "mostrador": 0,
+    "office": 0,
+    "almacen": 2,
+    "economato": 0,
+    "vestuario": 0,
+    "aseos": 4,
+    "extintor": 0,
+    "salida_humos": 19,
+    "obrador": 10,
+    "estanteria": 0,
+    "fregona": 0,
+    "bayeta": 0,
+    "paño_cocina": 0,
+    "gorro": 0,
+    "cafeteria": 0,
+    "bar_copas": 0,
+    "chiringuito": 0,
+    "asador": 199,
+    "polleria": 51,
+    "pasteleria": 0,
+    "bodega": 0,
+    "vinoteca": 0,
+    "catering": 0,
+    "banquetes": 0,
+    "traspaso_negocio": 0,
+    "hosteleria": 18,
+    "restauracion": 3,
+    "hostelero": 0,
+    "abrir_negocio": 0,
+    "plan_negocio": 0,
+    "tercio": 6,
+    "garrafa": 0,
+    "bombona": 2,
+    "barrica": 0,
+    "cubitera": 0,
+    "envase": 27,
+    "tupper": 0,
+    "pajita": 0,
+    "desechable": 0,
+    "roscon": 0,
+    "cava": 0,
+    "torrijas": 0,
+    "tostada": 0,
+    "paga_extra": 7,
+    "smi": 7,
+    "iae": 4,
     "recargo_equivalencia": 0,
     "registro_horario": 2,
     "salamandra": 0,
@@ -11819,8 +12030,8 @@
  },
  "terminos": {
   "patata": {
-   "total": 185,
-   "productos": 17,
+   "total": 222,
+   "productos": 18,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -11831,8 +12042,8 @@
      42
     ],
     [
-     "mega-pack-tareas",
-     22
+     "plan-negocio-polleria",
+     37
     ]
    ]
   },
@@ -11855,8 +12066,8 @@
    ]
   },
   "zumo": {
-   "total": 165,
-   "productos": 28,
+   "total": 167,
+   "productos": 29,
    "top": [
     [
      "mega-pack-tareas",
@@ -11955,8 +12166,8 @@
    ]
   },
   "aguacate": {
-   "total": 62,
-   "productos": 11,
+   "total": 64,
+   "productos": 12,
    "top": [
     [
      "kit-escandallos",
@@ -11991,8 +12202,8 @@
    ]
   },
   "pimiento": {
-   "total": 36,
-   "productos": 12,
+   "total": 37,
+   "productos": 13,
    "top": [
     [
      "mega-pack-tareas",
@@ -12009,8 +12220,8 @@
    ]
   },
   "cacahuete": {
-   "total": 90,
-   "productos": 13,
+   "total": 93,
+   "productos": 14,
    "top": [
     [
      "guia-chocolateria-obrador",
@@ -12384,7 +12595,7 @@
    ]
   },
   "cerdo": {
-   "total": 94,
+   "total": 92,
    "productos": 14,
    "top": [
     [
@@ -12542,8 +12753,8 @@
    ]
   },
   "pimenton": {
-   "total": 25,
-   "productos": 7,
+   "total": 26,
+   "productos": 8,
    "top": [
     [
      "plan-negocio-parrillero-asador-eventos",
@@ -12560,8 +12771,8 @@
    ]
   },
   "aceite_girasol": {
-   "total": 13,
-   "productos": 5,
+   "total": 15,
+   "productos": 6,
    "top": [
     [
      "kit-escandallos",
@@ -12637,8 +12848,8 @@
    "top": []
   },
   "cafe_cortado": {
-   "total": 33,
-   "productos": 13,
+   "total": 34,
+   "productos": 14,
    "top": [
     [
      "manual-chef-ejecutivo",
@@ -12655,26 +12866,26 @@
    ]
   },
   "refresco": {
-   "total": 231,
-   "productos": 32,
+   "total": 249,
+   "productos": 33,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
      50
     ],
     [
-     "mega-pack-tareas",
-     13
+     "plan-negocio-polleria",
+     17
     ],
     [
-     "guia-panaderia-obrador",
+     "mega-pack-tareas",
      13
     ]
    ]
   },
   "cana_cerveza": {
-   "total": 13,
-   "productos": 9,
+   "total": 14,
+   "productos": 10,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -12691,8 +12902,8 @@
    ]
   },
   "cerveza_botellin": {
-   "total": 4,
-   "productos": 2,
+   "total": 5,
+   "productos": 3,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -12700,6 +12911,10 @@
     ],
     [
      "kit-escandallos",
+     1
+    ],
+    [
+     "plan-negocio-polleria",
      1
     ]
    ]
@@ -12737,8 +12952,8 @@
    ]
   },
   "camarero": {
-   "total": 601,
-   "productos": 37,
+   "total": 605,
+   "productos": 38,
    "top": [
     [
      "mega-pack-tareas",
@@ -12773,8 +12988,8 @@
    ]
   },
   "ayudante_cocina": {
-   "total": 34,
-   "productos": 12,
+   "total": 36,
+   "productos": 13,
    "top": [
     [
      "manual-chef-ejecutivo",
@@ -12927,8 +13142,8 @@
    ]
   },
   "repartidor": {
-   "total": 64,
-   "productos": 13,
+   "total": 70,
+   "productos": 14,
    "top": [
     [
      "mega-pack-tareas",
@@ -13045,8 +13260,8 @@
    ]
   },
   "carta": {
-   "total": 3285,
-   "productos": 52,
+   "total": 3333,
+   "productos": 53,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -13063,8 +13278,8 @@
    ]
   },
   "racion": {
-   "total": 1226,
-   "productos": 24,
+   "total": 1229,
+   "productos": 25,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -13099,8 +13314,8 @@
    ]
   },
   "barra": {
-   "total": 2140,
-   "productos": 45,
+   "total": 2146,
+   "productos": 46,
    "top": [
     [
      "mega-pack-tareas",
@@ -13199,8 +13414,8 @@
    ]
   },
   "para_llevar": {
-   "total": 417,
-   "productos": 25,
+   "total": 454,
+   "productos": 26,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -13211,14 +13426,14 @@
      39
     ],
     [
-     "plan-negocio-pizzeria",
-     31
+     "plan-negocio-polleria",
+     37
     ]
    ]
   },
   "a_domicilio": {
-   "total": 111,
-   "productos": 20,
+   "total": 114,
+   "productos": 21,
    "top": [
     [
      "plan-negocio-pizzeria",
@@ -13235,8 +13450,8 @@
    ]
   },
   "sala_comedor": {
-   "total": 2238,
-   "productos": 49,
+   "total": 2306,
+   "productos": 50,
    "top": [
     [
      "mega-pack-tareas",
@@ -13285,8 +13500,8 @@
    ]
   },
   "fregadero": {
-   "total": 57,
-   "productos": 23,
+   "total": 59,
+   "productos": 24,
    "top": [
     [
      "plan-negocio-cafeteria-movil-eventos",
@@ -13303,8 +13518,8 @@
    ]
   },
   "escandallo": {
-   "total": 842,
-   "productos": 38,
+   "total": 862,
+   "productos": 39,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -13321,8 +13536,8 @@
    ]
   },
   "merma": {
-   "total": 1001,
-   "productos": 47,
+   "total": 1012,
+   "productos": 48,
    "top": [
     [
      "kit-escandallos",
@@ -13339,8 +13554,8 @@
    ]
   },
   "ticket_medio": {
-   "total": 440,
-   "productos": 35,
+   "total": 446,
+   "productos": 36,
    "top": [
     [
      "guia-chocolateria-obrador",
@@ -13375,8 +13590,8 @@
    ]
   },
   "cuadrante": {
-   "total": 242,
-   "productos": 24,
+   "total": 249,
+   "productos": 25,
    "top": [
     [
      "manual-manager-restaurante",
@@ -13411,8 +13626,8 @@
    ]
   },
   "punto_equilibrio": {
-   "total": 271,
-   "productos": 28,
+   "total": 282,
+   "productos": 29,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -13429,8 +13644,8 @@
    ]
   },
   "margen_bruto": {
-   "total": 290,
-   "productos": 27,
+   "total": 297,
+   "productos": 28,
    "top": [
     [
      "kit-escandallos",
@@ -13447,8 +13662,8 @@
    ]
   },
   "beneficio": {
-   "total": 110,
-   "productos": 24,
+   "total": 111,
+   "productos": 25,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -13465,8 +13680,8 @@
    ]
   },
   "cuenta_resultados": {
-   "total": 150,
-   "productos": 27,
+   "total": 155,
+   "productos": 28,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -13483,8 +13698,8 @@
    ]
   },
   "food_cost": {
-   "total": 1219,
-   "productos": 46,
+   "total": 1231,
+   "productos": 47,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -13501,8 +13716,8 @@
    ]
   },
   "coste": {
-   "total": 4142,
-   "productos": 51,
+   "total": 4237,
+   "productos": 52,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -13537,8 +13752,8 @@
    ]
   },
   "tesoreria": {
-   "total": 408,
-   "productos": 19,
+   "total": 427,
+   "productos": 20,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -13555,8 +13770,8 @@
    ]
   },
   "factura": {
-   "total": 515,
-   "productos": 44,
+   "total": 522,
+   "productos": 45,
    "top": [
     [
      "plan-negocio-finca-eventos-bodas",
@@ -13591,8 +13806,8 @@
    ]
   },
   "stock": {
-   "total": 1059,
-   "productos": 55,
+   "total": 1061,
+   "productos": 56,
    "top": [
     [
      "mega-pack-tareas",
@@ -13627,8 +13842,8 @@
    ]
   },
   "tpv": {
-   "total": 705,
-   "productos": 45,
+   "total": 712,
+   "productos": 46,
    "top": [
     [
      "mega-pack-tareas",
@@ -13645,8 +13860,8 @@
    ]
   },
   "datafono": {
-   "total": 128,
-   "productos": 27,
+   "total": 131,
+   "productos": 28,
    "top": [
     [
      "mega-pack-tareas",
@@ -13681,8 +13896,8 @@
    ]
   },
   "amortizacion": {
-   "total": 434,
-   "productos": 29,
+   "total": 454,
+   "productos": 30,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -13699,8 +13914,8 @@
    ]
   },
   "subvencion": {
-   "total": 22,
-   "productos": 20,
+   "total": 23,
+   "productos": 21,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -13717,8 +13932,8 @@
    ]
   },
   "nomina": {
-   "total": 234,
-   "productos": 32,
+   "total": 241,
+   "productos": 33,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -13749,8 +13964,8 @@
    ]
   },
   "autonomo": {
-   "total": 276,
-   "productos": 29,
+   "total": 289,
+   "productos": 30,
    "top": [
     [
      "manual-chef-ejecutivo",
@@ -13767,8 +13982,8 @@
    ]
   },
   "iva": {
-   "total": 3398,
-   "productos": 37,
+   "total": 3525,
+   "productos": 38,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -13785,8 +14000,8 @@
    ]
   },
   "seguridad_social": {
-   "total": 330,
-   "productos": 29,
+   "total": 340,
+   "productos": 30,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -13803,8 +14018,8 @@
    ]
   },
   "convenio_colectivo": {
-   "total": 44,
-   "productos": 20,
+   "total": 45,
+   "productos": 21,
    "top": [
     [
      "manual-manager-restaurante",
@@ -13835,8 +14050,8 @@
    ]
   },
   "alta_trabajador": {
-   "total": 29,
-   "productos": 15,
+   "total": 30,
+   "productos": 16,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -13907,9 +14122,13 @@
    ]
   },
   "gestoria": {
-   "total": 278,
-   "productos": 30,
+   "total": 303,
+   "productos": 31,
    "top": [
+    [
+     "plan-negocio-polleria",
+     25
+    ],
     [
      "plan-negocio-heladeria",
      24
@@ -13917,10 +14136,6 @@
     [
      "plan-negocio-taqueria",
      24
-    ],
-    [
-     "plan-negocio-pizzeria",
-     23
     ]
    ]
   },
@@ -13943,8 +14158,8 @@
    ]
   },
   "ayuntamiento": {
-   "total": 356,
-   "productos": 24,
+   "total": 372,
+   "productos": 25,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -13961,8 +14176,8 @@
    ]
   },
   "comunidad_autonoma": {
-   "total": 229,
-   "productos": 26,
+   "total": 231,
+   "productos": 27,
    "top": [
     [
      "pack-appcc",
@@ -13979,8 +14194,8 @@
    ]
   },
   "hacienda": {
-   "total": 57,
-   "productos": 28,
+   "total": 58,
+   "productos": 29,
    "top": [
     [
      "guia-dark-kitchen",
@@ -13997,8 +14212,8 @@
    ]
   },
   "irpf": {
-   "total": 49,
-   "productos": 19,
+   "total": 50,
+   "productos": 20,
    "top": [
     [
      "plan-negocio-parrillero-asador-eventos",
@@ -14015,8 +14230,8 @@
    ]
   },
   "impuesto_sociedades": {
-   "total": 182,
-   "productos": 18,
+   "total": 193,
+   "productos": 19,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -14065,8 +14280,8 @@
    ]
   },
   "prevencion_riesgos": {
-   "total": 71,
-   "productos": 23,
+   "total": 74,
+   "productos": 24,
    "top": [
     [
      "manual-chef-ejecutivo",
@@ -14101,8 +14316,8 @@
    ]
   },
   "traspaso": {
-   "total": 240,
-   "productos": 16,
+   "total": 243,
+   "productos": 17,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -14137,8 +14352,8 @@
    ]
   },
   "fianza": {
-   "total": 185,
-   "productos": 20,
+   "total": 191,
+   "productos": 21,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -14173,8 +14388,8 @@
    ]
   },
   "appcc": {
-   "total": 669,
-   "productos": 45,
+   "total": 685,
+   "productos": 46,
    "top": [
     [
      "pack-appcc",
@@ -14191,8 +14406,8 @@
    ]
   },
   "manipulador_alimentos": {
-   "total": 82,
-   "productos": 33,
+   "total": 84,
+   "productos": 34,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -14299,8 +14514,8 @@
    ]
   },
   "desinfeccion": {
-   "total": 190,
-   "productos": 35,
+   "total": 197,
+   "productos": 36,
    "top": [
     [
      "mega-pack-tareas",
@@ -14353,8 +14568,8 @@
    ]
   },
   "nevera": {
-   "total": 186,
-   "productos": 28,
+   "total": 191,
+   "productos": 29,
    "top": [
     [
      "guia-chocolateria-obrador",
@@ -14371,8 +14586,8 @@
    ]
   },
   "fogon": {
-   "total": 99,
-   "productos": 25,
+   "total": 113,
+   "productos": 26,
    "top": [
     [
      "plan-negocio-paellero-eventos",
@@ -14383,8 +14598,8 @@
      18
     ],
     [
-     "plan-negocio-taqueria",
-     11
+     "plan-negocio-polleria",
+     14
     ]
    ]
   },
@@ -14425,8 +14640,8 @@
    ]
   },
   "campana_extractora": {
-   "total": 117,
-   "productos": 34,
+   "total": 131,
+   "productos": 35,
    "top": [
     [
      "mega-pack-tareas",
@@ -14437,8 +14652,8 @@
      15
     ],
     [
-     "plan-negocio-taqueria",
-     12
+     "plan-negocio-polleria",
+     14
     ]
    ]
   },
@@ -14479,8 +14694,8 @@
    ]
   },
   "lavavajillas": {
-   "total": 76,
-   "productos": 27,
+   "total": 82,
+   "productos": 28,
    "top": [
     [
      "mega-pack-tareas",
@@ -14491,14 +14706,14 @@
      6
     ],
     [
-     "plan-negocio-cafeteria",
-     5
+     "plan-negocio-polleria",
+     6
     ]
    ]
   },
   "vitrina": {
-   "total": 1129,
-   "productos": 28,
+   "total": 1159,
+   "productos": 29,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -14551,8 +14766,8 @@
    ]
   },
   "almacen": {
-   "total": 530,
-   "productos": 41,
+   "total": 532,
+   "productos": 42,
    "top": [
     [
      "mega-pack-tareas",
@@ -14605,8 +14820,8 @@
    ]
   },
   "aseos": {
-   "total": 160,
-   "productos": 21,
+   "total": 164,
+   "productos": 22,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -14641,8 +14856,8 @@
    ]
   },
   "salida_humos": {
-   "total": 124,
-   "productos": 16,
+   "total": 143,
+   "productos": 17,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -14659,8 +14874,8 @@
    ]
   },
   "obrador": {
-   "total": 2369,
-   "productos": 26,
+   "total": 2379,
+   "productos": 27,
    "top": [
     [
      "guia-pasteleria-obrador",
@@ -14797,9 +15012,13 @@
    ]
   },
   "asador": {
-   "total": 148,
-   "productos": 5,
+   "total": 346,
+   "productos": 6,
    "top": [
+    [
+     "plan-negocio-polleria",
+     199
+    ],
     [
      "plan-negocio-parrillero-asador-eventos",
      62
@@ -14807,17 +15026,17 @@
     [
      "kit-tareas-asador",
      58
-    ],
-    [
-     "kit-tareas-taqueria",
-     10
     ]
    ]
   },
   "polleria": {
-   "total": 4,
-   "productos": 1,
+   "total": 55,
+   "productos": 2,
    "top": [
+    [
+     "plan-negocio-polleria",
+     51
+    ],
     [
      "guia-restaurante-peruano",
      4
@@ -14925,8 +15144,8 @@
    ]
   },
   "hosteleria": {
-   "total": 529,
-   "productos": 38,
+   "total": 547,
+   "productos": 39,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -14943,8 +15162,8 @@
    ]
   },
   "restauracion": {
-   "total": 152,
-   "productos": 27,
+   "total": 155,
+   "productos": 28,
    "top": [
     [
      "guia-food-cost-ingenieria-menu",
@@ -15011,8 +15230,8 @@
    ]
   },
   "tercio": {
-   "total": 35,
-   "productos": 9,
+   "total": 41,
+   "productos": 10,
    "top": [
     [
      "guia-chocolateria-obrador",
@@ -15023,8 +15242,8 @@
      7
     ],
     [
-     "guia-pasteleria-obrador",
-     5
+     "plan-negocio-polleria",
+     6
     ]
    ]
   },
@@ -15047,8 +15266,8 @@
    ]
   },
   "bombona": {
-   "total": 33,
-   "productos": 6,
+   "total": 35,
+   "productos": 7,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -15097,8 +15316,8 @@
    ]
   },
   "envase": {
-   "total": 418,
-   "productos": 39,
+   "total": 445,
+   "productos": 40,
    "top": [
     [
      "guia-chocolateria-obrador",
@@ -15237,8 +15456,8 @@
    ]
   },
   "paga_extra": {
-   "total": 97,
-   "productos": 17,
+   "total": 104,
+   "productos": 18,
    "top": [
     [
      "plan-negocio-bar-restaurante",
@@ -15255,8 +15474,8 @@
    ]
   },
   "smi": {
-   "total": 139,
-   "productos": 19,
+   "total": 146,
+   "productos": 20,
    "top": [
     [
      "guia-churreria-chocolateria",
@@ -15273,8 +15492,8 @@
    ]
   },
   "iae": {
-   "total": 81,
-   "productos": 27,
+   "total": 85,
+   "productos": 28,
    "top": [
     [
      "guia-chocolateria-obrador",
@@ -15296,8 +15515,8 @@
    "top": []
   },
   "registro_horario": {
-   "total": 106,
-   "productos": 27,
+   "total": 108,
+   "productos": 28,
    "top": [
     [
      "manual-manager-restaurante",
