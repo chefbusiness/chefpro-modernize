@@ -38,6 +38,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit (EN, $39)' },
   { id: 'paella-catering-business-plan', label: 'Paella Catering Business Plan Kit (EN, $39)' },
   { id: 'pizza-shop-business-plan', label: 'Pizza Shop Business Plan Kit (EN, $39)' },
+  { id: 'taco-shop-business-plan', label: 'Taco Shop Business Plan Kit (EN, $39)' },
   { id: 'ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit (EN, $39)' },
   { id: 'wedding-venue-business-plan', label: 'Wedding Venue Business Plan Kit (EN, $49)' },
   { id: 'coffee-cart-business-plan', label: 'Coffee Cart Business Plan Kit (EN, $39)' },

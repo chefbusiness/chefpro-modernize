@@ -888,6 +888,30 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-29): Taco Shop Business Plan Kit, edición inglesa del plan-negocio-taqueria (SPEC business-plans-en-12:
+  // counter-service taqueria con trompo, 30 asientos + patio de 12, caso US). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  // Primera versión del producto: '2.2' (numeración de la familia EN). Cifras = cifras_caso.json (medidas en el libro).
+  'taco-shop-business-plan': {
+    version: '2.2',
+    updated: '2026-10-29',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-29',
+        title: 'First release',
+        changes: [
+          'First release of the Taco Shop Business Plan Kit for a counter-service taqueria with a trompo for al pastor, about 30 seats plus a patio, a salsa bar, dine-in, take-out and delivery: a 10-section business plan in Word, an Excel financial model with 9 sheets, a taco cost and trompo yield calculator and an 80-task startup checklist, set up for the US with notes for the UK, Canada and Australia.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story: 115 covers a day at a $17.50 average check for 308 days, $619,850 in year-1 sales and a modest net margin, not the 15-25% that sales pages promise.',
+          'The model runs on covers per day, average check per cover and days open per year, with the break-even measured in covers per day and checked against the cash you actually need. Sales tax is collected on the whole check and remitted separately.',
+          'Payroll with employer payroll taxes and a federal and a state or local minimum wage floor, plus startup costs that include the Type I hood and fire suppression, the vertical broilers and the walk-in cooler.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and checked against a 1.25× DSCR target.',
+          'New Taco Cost & Trompo Yield Calculator: the weight of the cone, the marinade, the cooking loss and the ounces per taco in pounds and ounces with metric beside them, the tacos per cone, corn tortillas bought or made from masa harina with their break-even, and the food cost, margin and menu price of ten items. Every starting value is a kit estimate, editable, and there is a cell for your county\'s cook temperature.',
+          '80-task startup checklist in 6 phases: business setup, hood, gas and permits (zoning, building permit, fire marshal, health permit, beer and wine license), kitchen, trompo and health, staff, training, safety and allergens, menu, brand, delivery and suppliers, and opening day plus your first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units with metric alongside, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-24): Paella Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-paellero-eventos
   // con otro concepto (SPEC business-plans-en-7 D114-D132: live paella caterer que cocina en el evento desde una commissary +
   // calculadora de paelleras, arroz y precio por invitado). Textos en inglés: los pinta <ProductChangelog lang="en"/>.

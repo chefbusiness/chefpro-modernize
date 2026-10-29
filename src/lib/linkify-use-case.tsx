@@ -61,6 +61,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'BBQ Catering Business Plan Kit': '/en/digital-products/bbq-catering-business-plan',
   'Paella Catering Business Plan Kit': '/en/digital-products/paella-catering-business-plan',
   'Pizza Shop Business Plan Kit': '/en/digital-products/pizza-shop-business-plan',
+  'Taco Shop Business Plan Kit': '/en/digital-products/taco-shop-business-plan',
   'Ice Cream Shop Business Plan Kit': '/en/digital-products/ice-cream-shop-business-plan',
   'Wedding Venue Business Plan Kit': '/en/digital-products/wedding-venue-business-plan',
   'Coffee Cart Business Plan Kit': '/en/digital-products/coffee-cart-business-plan',
