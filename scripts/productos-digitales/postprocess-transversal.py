@@ -108,6 +108,8 @@ SCRATCH = os.environ.get(
 #: contratos de `contrato_wed.py` (SPEC business-plans-en-9 D158, D168, D171-D172).
 #: taco-shop-business-plan: Taco Shop Business Plan Kit (EN), ídem + la calculadora de `calculadora_taq.py`
 #: (business-plans-en-12, F1-camino §6-§7 de plan-taqueria).
+#: rotisserie-chicken-restaurant-business-plan: Rotisserie Chicken Restaurant Business Plan Kit (EN), ídem + la calculadora
+#: de `calculadora_pol.py` (business-plans-en-13, F1-camino §6-§7 de plan-polleria).
 #: food-cost-menu-engineering-guide: Food Cost + Menu Engineering Guide (EN), traducción por celda de los 8 xlsx de la
 #: guía ES (SPEC guia-food-cost-en D12: Letter, metadatos EN, «Instructions»); no lleva el vocabulario ES de la casilla.
 #: how-to-open-a-pastry-shop: How to Open a Pastry Shop (EN), traducción por celda de los 8 xlsx de la guía ES
@@ -136,6 +138,7 @@ EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'wedding-venue-business-plan',
              'coffee-cart-business-plan',
              'taco-shop-business-plan',
+             'rotisserie-chicken-restaurant-business-plan',
              'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates',
              'catering-checklist-templates', 'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
              'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',

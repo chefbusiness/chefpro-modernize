@@ -1,0 +1,2291 @@
+{
+ "meta": {
+  "generado": "2026-10-29T13:11:15+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "pol",
+  "fichero_es": "astro-site/public/dl/plan-negocio-polleria/plan-de-negocio-polleria.docx",
+  "sha256": "cd12837f309dbeea59b92f6de2dfe9e04286c650f244ff5a82822eb0b4447fa4",
+  "fichero_en": "astro-site/public/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-restaurant-business-plan.docx",
+  "titulo_en": "Rotisserie Chicken Restaurant Business Plan (10 Sections)",
+  "n_parrafos": 131,
+  "n_con_texto": 110,
+  "n_sin_runs": 17,
+  "n_un_run": 114,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 121,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 61,
+   "vacio": 21,
+   "fijo": 18,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 61,
+  "palabras_traducir": 7883,
+  "tandas": {
+   "pol_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     46,
+     47,
+     48,
+     49,
+     50,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "palabras": 3319
+   },
+   "pol_b": {
+    "parrafos": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117
+    ],
+    "palabras": 4564
+   }
+  },
+  "pagina_emu": [
+   7560310,
+   10692130
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average covers per day, year 1: dine-in + take-out/pickup and pre-orders + delivery (a family meal counts as 3.5 covers)",
+   "clientes_a2": "average covers per day, year 2",
+   "clientes_a3": "average covers per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "disposables (family-meal boxes, foil bags, sauce cups, heated-display bags), % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (base rent of the premises)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out, years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "rent per year (occupancy)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even covers per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even covers per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: covers per day",
+   "optimista_clientes": "optimistic scenario: covers per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "pesimista_ticket": "pessimistic scenario: average check excl. sales tax",
+   "optimista_ticket": "optimistic scenario: average check excl. sales tax",
+   "pesimista_dias": "pessimistic scenario: operating days",
+   "optimista_dias": "optimistic scenario: operating days",
+   "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
+   "inv_proyecto": "architect, MEP & hood drawings, plan review and permit fees",
+   "inv_obra": "build-out of a second-generation space (1,600 sq ft), signage and facade",
+   "inv_campana": "Type I hood (about 14 ft), UL 300 fire suppression and makeup air",
+   "inv_instalaciones": "electrical service, panel and gas lines",
+   "inv_fontaneria": "plumbing, grease interceptor and HVAC",
+   "inv_rotisseries": "two commercial gas rotisseries (8 spits, 48 birds per load each)",
+   "inv_display": "heated display merchandiser, steam table and holding cabinet",
+   "inv_freidora": "two 50 lb fryers and a range with stock-pot burners",
+   "inv_camara": "walk-in cooler (6×8)",
+   "inv_frio": "refrigerated prep table and reach-in freezer",
+   "inv_lavado": "3-compartment sink, dish machine, hand and poultry prep sinks, shelving and stainless",
+   "inv_utillaje": "smallwares and sauce station (spare spits, hotel pans, probes, blender, marinating tubs)",
+   "inv_bebida": "beverage cooler and ice machine",
+   "inv_mobiliario": "furniture (40 seats)",
+   "inv_tpv": "POS, online ordering, kiosk and delivery tablets",
+   "inv_constitucion": "LLC, legal and food safety plan",
+   "inv_lanzamiento": "branding, website, photos and launch",
+   "inv_stock": "opening inventory",
+   "aforo": "indoor seats",
+   "comida_pct": "food share of sales",
+   "bebida_pct": "beverage share of sales",
+   "plataforma_pct": "share of sales through third-party delivery marketplaces",
+   "comision_pct": "marketplace commission on those orders",
+   "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales)",
+   "meses_alquiler_previo": "months of rent paid before opening (build-out and permits)",
+   "costes_variables_pct": "all variable costs year 1 (cost of goods + disposables + marketplace + card fees + contingency), % of sales",
+   "otros_variables_pct": "disposables + marketplace + card fees + contingency, % of sales",
+   "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount (only if it is a loss)",
+   "cogs_pct_xl": "cost of goods, % of sales, rounded as Excel shows it (P&L B52)",
+   "plantilla_jornadas_xl": "staff in FTE, rounded as Excel shows it (Staffing C12)"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Pollería y Asador de Pollos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Rotisserie Chicken Restaurant"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, análisis de mercado,\nestrategia operativa y checklist de apertura\npara montar una pollería-asador con asador de gas, mostrador de encargos, plataforma y sala",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and startup checklist\nto open a Peruvian-style rotisserie chicken restaurant in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Versión 1.0 · noviembre 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoría Gastronómica con fines informativos y orientativos. Las cifras salen del Excel del plan financiero que lo acompaña, con un caso de ejemplo que debes sustituir por el tuyo; las fuentes de los datos de mercado y de las normas se citan en el texto. Los resultados reales pueden variar. No constituye asesoramiento financiero, legal ni fiscal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "ÍNDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist de Apertura Excel + Calculadora del Pollo, el Asador y el Escandallo Excel + Guía de Equivalencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Rotisserie Chicken Restaurant Financial Projections (Excel) + Rotisserie Chicken Yield & Costing Calculator (Excel) + Rotisserie Chicken Restaurant Startup Checklist (Excel) + Equivalents Guide"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "Este plan describe una pollería-asador de barrio: un asador de pollos de gas con doce espadas (las barras donde se ensartan los pollos) a la vista, un mostrador con vitrina caliente y encargos, y una sala de 20 plazas, 16 en mesa y 4 en barra. Una aclaración: en España «pollería» es también la tienda de pollo crudo y huevos, y aquí hablamos del asador de pollos. Se abre en un barrio residencial de una ciudad media, de entre 100.000 y 300.000 habitantes, en un local de 80 m² con salida de humos a cubierta, sin traspaso y cómodo para parar el coche y recoger el encargo. Lo explota una SL unipersonal, con tu papel de maestro asador. Abre en enero, de martes a domingo a mediodía y de jueves a sábado también por la noche, y cierra los lunes y 10 días en enero.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 145,
+   "nota": "§1 1/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «pollo a la brasa» y «peruvian chicken» ≈ 40,500 búsquedas/mes cada una y «peruvian chicken restaurant» 2,900 = demanda de CONSUMO; las colas de «rotisserie chicken restaurant business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "Las cifras clave del caso son estas. Una media de 77 pedidos al día, entre mostrador, encargos, plataforma y clientes de sala, a 15,80 € por pedido sin IVA, durante 300 días de apertura, que son unos 301 pollos a la semana y dan unas ventas de 364.980 € en el primer año y un resultado neto de 25.704 €, un 7,0 % de las ventas. Esa media incluye la rampa de arranque: el Excel reparte el año mes a mes y el Mes 1 es enero, uno de los meses más flojos. El equilibrio contable está en 67 pedidos al día y el de caja, que además cubre la devolución del principal (ninguna el primer año, el de carencia), en 64 ese primer año. No es una rentabilidad garantizada: es un punto de partida para que cambies las hipótesis y pongas tus propios números.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 145,
+   "nota": "§1 2/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «pollo a la brasa» y «peruvian chicken» ≈ 40,500 búsquedas/mes cada una y «peruvian chicken restaurant» 2,900 = demanda de CONSUMO; las colas de «rotisserie chicken restaurant business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total es de 142.176 €: 93.100 € de obra, asador, equipo y puesta en marcha, 2.400 € de fianza y 2.400 € de renta previa, que suman 97.900 € de inversión sin el fondo, y 44.276 € de fondo de maniobra. A eso se suma el IVA de la inversión, 19.425 €, que se adelanta y se recupera con las declaraciones de IVA, así que la necesidad de caja llega a 161.601 €. Se financia con 50.000 € de recursos propios y un préstamo de 112.000 € a 7 años, con 1 año de carencia de principal y un tipo del 6 %. Los fondos suman 162.000 € y sobran 399 €. La cuota anual, ya sin carencia, es de 22.777 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 124,
+   "nota": "§1 3/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «pollo a la brasa» y «peruvian chicken» ≈ 40,500 búsquedas/mes cada una y «peruvian chicken restaurant» 2,900 = demanda de CONSUMO; las colas de «rotisserie chicken restaurant business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "A partir de ahí, los pedidos crecen un 6 % en el segundo año y un 4 % en el tercero, con el mismo ticket, y la plantilla crece con ellos: las ventas pasan a 386.879 € y 402.354 €, y el neto, a 31.605 € y 30.969 €. La holgura de caja sobre el equilibrio es de 21,8 % el primer año, pero porque hay carencia. En el segundo baja a 14,8 %, porque empieza a devolverse el principal, y en el tercero es de 15,9 %. Son los años que hay que vigilar. El payback antes de la deuda, en años, sale en la Tesorería del Excel: «Más de 3 años» con el fondo de maniobra dentro y «2,2» sin él.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 123,
+   "nota": "§1 4/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «pollo a la brasa» y «peruvian chicken» ≈ 40,500 búsquedas/mes cada una y «peruvian chicken restaurant» 2,900 = demanda de CONSUMO; las colas de «rotisserie chicken restaurant business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "El equipo es corto y se apoya en ti. Eres el maestro asador y llevas el asador cada día; te acompañan un segundo asador-cocinero, un dependiente de mostrador y caja, un camarero de sala, un ayudante de fin de semana, un refuerzo de sábado, domingo y festivos y las suplencias de vacaciones, en una plantilla de 7 personas que suman 4,60 jornadas completas. El kit incluye este plan de diez secciones, el Excel de nueve hojas, el checklist de 80 tareas, la calculadora del pollo y la guía de equivalencias. Lo que lo distingue son el pollo y el asador con números: 60 pollos por tanda (la carga que entra a la vez) y 180 asados antes de las tres del domingo en el ejemplo, estimaciones que mides tú.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 129,
+   "nota": "§1 5/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2-§3: «pollo a la brasa» y «peruvian chicken» ≈ 40,500 búsquedas/mes cada una y «peruvian chicken restaurant» 2,900 = demanda de CONSUMO; las colas de «rotisserie chicken restaurant business plan» son pequeñas: no las cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "44": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "45": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "No todas las pollerías son el mismo negocio, y conviene elegir antes de firmar nada. El asador solo para llevar, de viernes a domingo y festivos, cabe en 50-60 m², sin sala y con plantilla de temporada: es el clásico de fin de semana. La pollería peruana con sala y horno de brasa de leña o carbón pide 120-150 m² y 50-60 plazas, con otro conducto y otra inversión: la cubre la Guía Restaurante Peruano de AI Chef Pro. La churrasqueira, la parrilla portuguesa de carbón, es otro oficio. La de este plan es la pollería-asador de barrio con mostrador, encargos y sala, que sirve igual al cliente del asador español que al de la pollería latina.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 117,
+   "nota": "§2 1/5: Concepto y propuesta (ES ¶46-¶47 adaptados): el formato elegido frente a otros (solo-para-llevar de fin de semana; restaurante peruano de sala con horno de carbón = otro plan, SIN citar producto); las CINCO corrientes que el cliente US trae en la cabeza: (1) Peruvian pollo a la brasa = el caso (marinado de 24-48 h con soy sauce, cerveza, ajo, comino, aji panca, huacatay y vinagre; papas o yuca fries, ensalada y salsas aji verde / aji amarillo / huancaina; nació hacia 1950 en Lima); (2) peri-peri (chile africano a la portuguesa, en minúscula, sin marcas); (3) charcoal chicken (el mismo pollo sobre carbón vegetal: la identidad del asador limeño, aquí variante de combustible sólido); (4) la rotisserie francesa (poulet rôti en espadas horizontales, patatas en los jugos); (5) el pollo en brasa venezolano con guasacaca. «Pollo asado» = mexicano a la parrilla (El Pollo Loco), NO sinónimo. Sin «authentic» ‖ FORMA: la sección §2 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "El mostrador admite cinco corrientes del pollo asado, y conviene conocerlas porque tu cliente las trae en la cabeza. La española: sal, ajo, pimentón, hierbas y limón según la casa, con patatas, croquetas, ensaladilla y pimientos, y el encargo del domingo; en Cataluña es el pollo al ast (pollastre a l'ast), con allioli y patates rostides. La peruana, el pollo a la brasa: adobo con sillao (salsa de soja), ají panca, comino y cerveza negra, en horno rotativo de leña o carbón, con papas, ensalada y cremas (ají, huacatay, ocopa y mayonesa); nació hacia 1950 en La Granja Azul, en Perú. La venezolana, el pollo en brasa: ajo, comino y onoto, con yuca y guasacaca, una salsa de aguacate. La francesa, la rôtisserie: pollo de granja con las patatas dorándose debajo, con su jugo. Y la portuguesa, la churrasqueira: pollo abierto a la parrilla de carbón, con piri-piri, una guindilla. Las cinco son contenido de guía, sin Excel propio: el caso hace la española y el medio pollo a la brasa al estilo peruano en el mismo asador de gas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 180,
+   "nota": "§2 2/5: Concepto y propuesta (ES ¶46-¶47 adaptados): el formato elegido frente a otros (solo-para-llevar de fin de semana; restaurante peruano de sala con horno de carbón = otro plan, SIN citar producto); las CINCO corrientes que el cliente US trae en la cabeza: (1) Peruvian pollo a la brasa = el caso (marinado de 24-48 h con soy sauce, cerveza, ajo, comino, aji panca, huacatay y vinagre; papas o yuca fries, ensalada y salsas aji verde / aji amarillo / huancaina; nació hacia 1950 en Lima); (2) peri-peri (chile africano a la portuguesa, en minúscula, sin marcas); (3) charcoal chicken (el mismo pollo sobre carbón vegetal: la identidad del asador limeño, aquí variante de combustible sólido); (4) la rotisserie francesa (poulet rôti en espadas horizontales, patatas en los jugos); (5) el pollo en brasa venezolano con guasacaca. «Pollo asado» = mexicano a la parrilla (El Pollo Loco), NO sinónimo. Sin «authentic» ‖ FORMA: la sección §2 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "La carta del caso, con IVA, es corta y se vende en combos: el pollo entero a 12,90 €, el medio a 7,00 €, las patatas a 3,50 €, las 8 croquetas caseras a 8,50 €, la ensaladilla a 5,50 € y la ensalada a 4,50 €. En sala, el menú de cuarto de pollo (muslo o pechuga) con patatas y ensalada a 9,50 € y el medio pollo a la brasa al estilo peruano a 14,50 €. El pollo entero cuesta 4,55 € de mercancía, un 38,8 % sobre 11,73 € sin IVA, con precio estimado por el kit.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 100,
+   "nota": "§2 3/5: Concepto y propuesta (ES ¶46-¶47 adaptados): el formato elegido frente a otros (solo-para-llevar de fin de semana; restaurante peruano de sala con horno de carbón = otro plan, SIN citar producto); las CINCO corrientes que el cliente US trae en la cabeza: (1) Peruvian pollo a la brasa = el caso (marinado de 24-48 h con soy sauce, cerveza, ajo, comino, aji panca, huacatay y vinagre; papas o yuca fries, ensalada y salsas aji verde / aji amarillo / huancaina; nació hacia 1950 en Lima); (2) peri-peri (chile africano a la portuguesa, en minúscula, sin marcas); (3) charcoal chicken (el mismo pollo sobre carbón vegetal: la identidad del asador limeño, aquí variante de combustible sólido); (4) la rotisserie francesa (poulet rôti en espadas horizontales, patatas en los jugos); (5) el pollo en brasa venezolano con guasacaca. «Pollo asado» = mexicano a la parrilla (El Pollo Loco), NO sinónimo. Sin «authentic» ‖ FORMA: la sección §2 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El ticket del caso es de 15,80 € por pedido y sin IVA, es decir, 17,43 € con IVA. Un pedido de mostrador (0,8 pollos, 0,85 raciones de patatas, algún extra, pan, salsas y bebida) suma unos 17,70 € con IVA; el de plataforma, unos 20,50 € con su precio más alto; y el cliente de sala, con el menú de cuarto o el medio a la brasa, algo para compartir, 1,1 bebidas y postre, unos 16,10 €. El driver del plan es el pedido, sea de mostrador, un encargo, de plataforma o un cliente sentado. La mezcla de ventas es de 90 % de comida y 10 % de bebida. Por canal, el mostrador y el encargo pesan un 61 % de las ventas, sin comisión; la plataforma, un 11 %, y la sala, un 28 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 138,
+   "nota": "§2 4/5: Concepto y propuesta (ES ¶46-¶47 adaptados): el formato elegido frente a otros (solo-para-llevar de fin de semana; restaurante peruano de sala con horno de carbón = otro plan, SIN citar producto); las CINCO corrientes que el cliente US trae en la cabeza: (1) Peruvian pollo a la brasa = el caso (marinado de 24-48 h con soy sauce, cerveza, ajo, comino, aji panca, huacatay y vinagre; papas o yuca fries, ensalada y salsas aji verde / aji amarillo / huancaina; nació hacia 1950 en Lima); (2) peri-peri (chile africano a la portuguesa, en minúscula, sin marcas); (3) charcoal chicken (el mismo pollo sobre carbón vegetal: la identidad del asador limeño, aquí variante de combustible sólido); (4) la rotisserie francesa (poulet rôti en espadas horizontales, patatas en los jugos); (5) el pollo en brasa venezolano con guasacaca. «Pollo asado» = mexicano a la parrilla (El Pollo Loco), NO sinónimo. Sin «authentic» ‖ FORMA: la sección §2 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "Un detalle que te ahorra un disgusto es decir bien qué eres. La propuesta es un pollo de asar de calibre fijo (1,4-1,5 kg en canal), bien hecho y sondeado, encargos del domingo con hora, combos que dan el margen y una sala pequeña con el medio pollo a la brasa. Eso no es un broaster, que es pollo frito a presión, ni la tienda de pollo crudo. Tampoco prometas «sin gluten» si la freidora se comparte con las croquetas, ni uses sellos de origen como promesa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 87,
+   "nota": "§2 5/5: Concepto y propuesta (ES ¶46-¶47 adaptados): el formato elegido frente a otros (solo-para-llevar de fin de semana; restaurante peruano de sala con horno de carbón = otro plan, SIN citar producto); las CINCO corrientes que el cliente US trae en la cabeza: (1) Peruvian pollo a la brasa = el caso (marinado de 24-48 h con soy sauce, cerveza, ajo, comino, aji panca, huacatay y vinagre; papas o yuca fries, ensalada y salsas aji verde / aji amarillo / huancaina; nació hacia 1950 en Lima); (2) peri-peri (chile africano a la portuguesa, en minúscula, sin marcas); (3) charcoal chicken (el mismo pollo sobre carbón vegetal: la identidad del asador limeño, aquí variante de combustible sólido); (4) la rotisserie francesa (poulet rôti en espadas horizontales, patatas en los jugos); (5) el pollo en brasa venezolano con guasacaca. «Pollo asado» = mexicano a la parrilla (El Pollo Loco), NO sinónimo. Sin «authentic» ‖ FORMA: la sección §2 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "51": {
+   "estilo": "Heading 1",
+   "texto": "3. Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "Para dimensionar el mercado hay un dato con fuente, el de Interempresas y Efeagro de julio de 2026: el sector vende unos 2,5 millones de pollos a la semana en unos 12.000 establecimientos, con el pollo entero entre 10 y 14 €. Salen unos 208 pollos por asador de pollos y semana de media, y el caso vende unos 301. El verano es un 15 % más fuerte en el interior y hasta un 35 % en la costa, y la semana del 15 de agosto es la más fuerte del año (Diari de Tarragona, julio de 2025). No hay más tamaños de mercado en este plan: sin fuente, no se escriben.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 112,
+   "nota": "§3 1/6: Mercado y competencia: US §2, §5.1 y §7 (ciudad media: quarter + 2 sides $10-13, half + 2 $16-18, family meal $31-34 = Kit estimate de una lectura de menús; Mister Pio $59 el entero = outlier premium; cadenas como El Pollo Loco o Boston Market no son el modelo del comprador); el pollo asado del supermercado es el ancla de precio del cliente (sin cifra): se compite en marinado, salsas y sides; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "La demanda también se mide por lo que se busca. Según DataForSEO, el 29 de octubre de 2026 estas son las búsquedas mensuales en Google España: «asador de pollos» 8.100, «pollo al ast» 6.600, «pollo piri piri» 2.900, «pollo a la brasa peruano» 2.400, «churrasqueira» 1.600, «pollos asados para llevar» 590 y «pollería peruana» 260. Hay una diferencia curiosa entre quien come y quien abre: «cómo montar una pollería», «plan de negocio pollería» o «franquicia pollos asados» tienen apenas 10-30. Como termómetro, en México «pollo rostizado» tiene 60.500 y «rosticería» 22.200, y en Perú «pollo a la brasa» 60.500 y «pollería» 33.100; el marco legal y los precios de este plan son los de España.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 115,
+   "nota": "§3 2/6: Mercado y competencia: US §2, §5.1 y §7 (ciudad media: quarter + 2 sides $10-13, half + 2 $16-18, family meal $31-34 = Kit estimate de una lectura de menús; Mister Pio $59 el entero = outlier premium; cadenas como El Pollo Loco o Boston Market no son el modelo del comprador); el pollo asado del supermercado es el ancla de precio del cliente (sin cifra): se compite en marinado, salsas y sides; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "Sobre precios, estas son cartas y guías leídas en 2026, con IVA y sin nombres. El asador español vende el pollo entero a 11-14 €: en Getxo, a 11 €; en Sevilla, de 12 € solo a 14 € con patatas. El pollo al ast de Barcelona va de 13,90 a 20,50 €. La pollería peruana de Madrid cobra el medio con papas a 14,50-16 € y el entero con todo a 25,50-27 €. En las plataformas, cada pieza cuesta 1,50-2 € más. El caso se pone en 12,90 € el entero, dentro de la banda del asador español.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 99,
+   "nota": "§3 3/6: Mercado y competencia: US §2, §5.1 y §7 (ciudad media: quarter + 2 sides $10-13, half + 2 $16-18, family meal $31-34 = Kit estimate de una lectura de menús; Mister Pio $59 el entero = outlier premium; cadenas como El Pollo Loco o Boston Market no son el modelo del comprador); el pollo asado del supermercado es el ancla de precio del cliente (sin cifra): se compite en marinado, salsas y sides; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "Con el Mes 1 en enero y en el orden del calendario, la venta sigue la estacionalidad, y aquí va al revés que en otros locales: el verano sube. Enero y febrero son los meses más flojos, un 7 % del año; julio y agosto, el pico, con un 9,6 y un 9,8 %, y diciembre repunta con los encargos de Nochebuena y Nochevieja. Entre el mejor mes y el peor hay un 40 %. La rampa del arranque cae sobre enero y febrero, y por eso el fondo de maniobra cuenta. En la costa el verano sube más, hasta un 35 %; en el centro de una gran ciudad agosto puede bajar: cambia los pesos de la fila de estacionalidad de la Tesorería.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 124,
+   "nota": "§3 4/6: Mercado y competencia: US §2, §5.1 y §7 (ciudad media: quarter + 2 sides $10-13, half + 2 $16-18, family meal $31-34 = Kit estimate de una lectura de menús; Mister Pio $59 el entero = outlier premium; cadenas como El Pollo Loco o Boston Market no son el modelo del comprador); el pollo asado del supermercado es el ancla de precio del cliente (sin cifra): se compite en marinado, salsas y sides; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "El hueco es claro. Ningún resultado español da una cuenta de resultados en euros: hay planes en dólares o en soles, trabajos de clase y foros. Nadie cuenta cuántos pollos salen del asador antes de las tres del domingo, la etiqueta de lo envasado, el ovoproducto del alioli y las cremas, el IAE 677.9 frente al 642.5 (que no ampara asar) ni el sobrante convertido en croqueta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 67,
+   "nota": "§3 5/6: Mercado y competencia: US §2, §5.1 y §7 (ciudad media: quarter + 2 sides $10-13, half + 2 $16-18, family meal $31-34 = Kit estimate de una lectura de menús; Mister Pio $59 el entero = outlier premium; cadenas como El Pollo Loco o Boston Market no son el modelo del comprador); el pollo asado del supermercado es el ancla de precio del cliente (sin cifra): se compite en marinado, salsas y sides; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "La demanda tiene riesgos que el plan nombra. El precio del pollo se movió un 10-12 % en un año y manda sobre el margen. La guerra de precios del pollo entero presiona el ticket. La plataforma, con su comisión del 30 %, se come el margen si la dejas crecer por encima del techo del plan. Y un asador pequeño se queda corto el domingo. Por eso conviene tener dos proveedores, un escandallo por combo, la capacidad medida y la recogida en el mostrador empujada con precio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 88,
+   "nota": "§3 6/6: Mercado y competencia: US §2, §5.1 y §7 (ciudad media: quarter + 2 sides $10-13, half + 2 $16-18, family meal $31-34 = Kit estimate de una lectura de menús; Mister Pio $59 el entero = outlier premium; cadenas como El Pollo Loco o Boston Market no son el modelo del comprador); el pollo asado del supermercado es el ancla de precio del cliente (sin cifra): se compite en marinado, salsas y sides; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "59": {
+   "estilo": "Heading 1",
+   "texto": "4. Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "Antes de fijar ningún precio, dibuja el mapa de quién compite contigo en tu barrio y en tu ciudad. En el pollo asado la competencia llega de seis lados: los asadores de barrio para llevar de fin de semana, los asadores de franquicia, las pollerías peruanas con sala, las churrasqueiras y el pollo piri-piri, las rosticerías del pollo al ast en Cataluña y la comida para llevar por plataforma.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 69,
+   "nota": "§4 1/6: Cliente y posicionamiento: familias, comida y cena, pickup y pre-orders fuertes, domingo = pico (≈ 1.6-1.8 × un día laborable, Kit); el check de {{ticket}} por cover equivalente (platos + sides extra + salsas + 0.65 bebidas, US §8; la family meal cuenta como 3.5 covers); el pickup directo (0 % de comisión) frente a los marketplaces ‖ FORMA: la sección §4 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "Los asadores de barrio para llevar de fin de semana compiten con la costumbre del domingo y con el precio, con el pollo entero a 11-14 €. Los asadores de franquicia traen marca y proveedor: Asasur, que se presenta como la única franquicia en España de asadores de pollos y comida para llevar, pide desde 45.000 € de inversión y un canon de entrada de 6.600 €, y sus fichas no coinciden en el royalty: pregúntalo por escrito. Las pollerías peruanas con sala venden el medio pollo a la brasa con papas a 14,50-16 €. Las churrasqueiras y el pollo piri-piri ponen el carbón y el picante; las rosticerías catalanas, el pollo al ast con su allioli. Y la plataforma no es un local, sino un escaparate donde el cliente compara precios con un clic y paga el reparto. Tu hueco está en juntar en un solo local lo que cada uno hace por separado: encargo del domingo con hora, mostrador, sala pequeña y medio pollo a la brasa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 169,
+   "nota": "§4 2/6: Cliente y posicionamiento: familias, comida y cena, pickup y pre-orders fuertes, domingo = pico (≈ 1.6-1.8 × un día laborable, Kit); el check de {{ticket}} por cover equivalente (platos + sides extra + salsas + 0.65 bebidas, US §8; la family meal cuenta como 3.5 covers); el pickup directo (0 % de comisión) frente a los marketplaces ‖ FORMA: la sección §4 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "Franquicia frente a marca propia es una cuenta que conviene hacer por escrito. La franquicia trae marca, proveedor y formación a cambio del canon y de la cuota mensual, y su cifra de entrada es un punto de partida: pide la inversión completa. Con marca propia, este plan pone la inversión en 142.176 € y te quedas el margen, pero el oficio lo aprendes tú: el calibre, la tanda, el sondeo y el domingo. Compara las dos cuentas con los mismos supuestos antes de firmar y pregunta a la franquicia por canon, royalty, publicidad, proveedor obligado y condiciones de salida.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 100,
+   "nota": "§4 3/6: Cliente y posicionamiento: familias, comida y cena, pickup y pre-orders fuertes, domingo = pico (≈ 1.6-1.8 × un día laborable, Kit); el check de {{ticket}} por cover equivalente (platos + sides extra + salsas + 0.65 bebidas, US §8; la family meal cuenta como 3.5 covers); el pickup directo (0 % de comisión) frente a los marketplaces ‖ FORMA: la sección §4 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Las barreras de entrada son de cumplimiento y de caja. La apertura se tramita con licencia o declaración responsable según la ordenanza de tu ayuntamiento, y la salida de humos a cubierta es el filtro del local: un asador de pollos de gas produce humos y grasa, y si el edificio no permite la salida, el concepto no cabe. A eso se suman el conducto, la campana extractora y la inversión en obra, asador y equipo. Compruébalo todo en tu ayuntamiento antes de firmar el alquiler.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 86,
+   "nota": "§4 4/6: Cliente y posicionamiento: familias, comida y cena, pickup y pre-orders fuertes, domingo = pico (≈ 1.6-1.8 × un día laborable, Kit); el check de {{ticket}} por cover equivalente (platos + sides extra + salsas + 0.65 bebidas, US §8; la family meal cuenta como 3.5 covers); el pickup directo (0 % de comisión) frente a los marketplaces ‖ FORMA: la sección §4 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Cuatro factores deciden si funciona. El primero es el producto: un pollo de calibre fijo, bien hecho, sondeado y constante cada día, y combos que dejan margen. El segundo es el sitio: un barrio residencial, un local con salida de humos y un sitio cómodo para parar el coche y recoger el encargo. El tercero es el control del coste: el escandallo de cada combo y la capacidad del asador, que se mide y no se supone. El cuarto es el equipo: un maestro asador constante y un mostrador que cuida a la clientela de barrio que encarga cada semana, porque la recomendación del vecino vende más que cualquier anuncio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 110,
+   "nota": "§4 5/6: Cliente y posicionamiento: familias, comida y cena, pickup y pre-orders fuertes, domingo = pico (≈ 1.6-1.8 × un día laborable, Kit); el check de {{ticket}} por cover equivalente (platos + sides extra + salsas + 0.65 bebidas, US §8; la family meal cuenta como 3.5 covers); el pickup directo (0 % de comisión) frente a los marketplaces ‖ FORMA: la sección §4 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El DAFO de este concepto es claro. Fortalezas: pollo de calibre fijo y sondeado, encargos del domingo con hora, combos, el medio pollo a la brasa en sala y un margen bruto del 59,1 % en el primer año. Debilidades: un local con requisitos de humos, un asador pequeño para el domingo y una caja más ajustada en los años de devolución del préstamo, con una holgura de 14,8 % en el segundo. Oportunidades: un oficio que se busca mucho, el verano y los encargos de Navidad. Amenazas: el precio del pollo, la guerra de precios del pollo entero y la comisión de la plataforma. La defensa de cada punto débil está en dos proveedores, el escandallo por combo, la capacidad medida y la recogida en el mostrador.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 128,
+   "nota": "§4 6/6: Cliente y posicionamiento: familias, comida y cena, pickup y pre-orders fuertes, domingo = pico (≈ 1.6-1.8 × un día laborable, Kit); el check de {{ticket}} por cover equivalente (platos + sides extra + salsas + 0.65 bebidas, US §8; la family meal cuenta como 3.5 covers); el pickup directo (0 % de comisión) frente a los marketplaces ‖ FORMA: la sección §4 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "67": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "69": {
+   "estilo": "Normal",
+   "texto": "La estrategia de marketing empieza por el barrio y sigue el calendario. Se abre en enero, y conviene tener claro qué esperar: los curiosos llegan el primer mes y los encargos fijos del domingo se construyen en un trimestre. Por eso el plan no cuenta con un lleno desde el primer día, sino con una rampa. Durante esa rampa mandan tres cosas: el asador a la vista, que se explica solo desde la calle, un pollo bien hecho a precio de barrio y un encargo fácil de hacer. Todo lo demás, las redes, la ficha de Google, los combos y la tarjeta de sellos, sirve para que esa primera visita se repita.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 112,
+   "nota": "§5 1/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (las espadas girando venden en vídeo); fechas: Mother's Day, Super Bowl Sunday, Nochebuena y Nochevieja en las familias latinas, Pollo a la Brasa Day (tercer domingo de julio) y Fiestas Patrias (28 de julio) en la comunidad peruana; pre-orders con franja de recogida y depósito; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; el pollo viaja bien en envase ventilado, las fries no: radio corto ‖ FORMA: la sección §5 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "Las redes sociales son el escaparate del asador. Publica el asador cargado, las espadas girando, el pollo saliendo y el cuarto que se trocea delante de la cámara: funcionan mejor los vídeos cortos que las fotos de carta. Enseña también cómo se encarga, con la hora del domingo, el teléfono y el WhatsApp, porque esa es la parte que más duda al que no te conoce. Y deja ver la vitrina caliente a la hora en que se llena. No hace falta publicar todos los días: es mejor una frecuencia que puedas mantener que una ráfaga de apertura que se apaga.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 101,
+   "nota": "§5 2/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (las espadas girando venden en vídeo); fechas: Mother's Day, Super Bowl Sunday, Nochebuena y Nochevieja en las familias latinas, Pollo a la Brasa Day (tercer domingo de julio) y Fiestas Patrias (28 de julio) en la comunidad peruana; pre-orders con franja de recogida y depósito; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; el pollo viaja bien en envase ventilado, las fries no: radio corto ‖ FORMA: la sección §5 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "La ficha de Google Business es tu mejor anuncio gratuito, porque casi todo el que busca pollo asado cerca la consulta. Complétala con fotos del asador, del mostrador, de la sala y del pollo saliendo, y mantén al día el horario, de martes a domingo a mediodía y de jueves a sábado también por la noche, sin olvidar los lunes y los 10 días de enero en que cierras. Responde a cada reseña, también a las malas, con calma y con el nombre de la casa. Una respuesta cuidada se lee como un compromiso, y cuenta para quien aún no ha venido.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 102,
+   "nota": "§5 3/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (las espadas girando venden en vídeo); fechas: Mother's Day, Super Bowl Sunday, Nochebuena y Nochevieja en las familias latinas, Pollo a la Brasa Day (tercer domingo de julio) y Fiestas Patrias (28 de julio) en la comunidad peruana; pre-orders con franja de recogida y depósito; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; el pollo viaja bien en envase ventilado, las fries no: radio corto ‖ FORMA: la sección §5 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La captación local empieza en la puerta y en el buzón. Las tarjetas de encargo con el teléfono y el WhatsApp, el buzoneo en el barrio y el teléfono impreso en cada bolsa son la forma sencilla de convertir al vecino en cliente de los domingos. El calendario te da fechas con las que trabajar: el verano, con la semana del 15 de agosto, y los encargos de Nochebuena y Nochevieja; y, si haces el medio pollo a la brasa, el Día del Pollo a la Brasa, el tercer domingo de julio, una fecha peruana. Y para que vuelvan, una tarjeta de sellos del encargo. No prometas números de conversión que no tienes: empieza con la tarjeta, mide cuántas se completan y ajusta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 123,
+   "nota": "§5 4/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (las espadas girando venden en vídeo); fechas: Mother's Day, Super Bowl Sunday, Nochebuena y Nochevieja en las familias latinas, Pollo a la Brasa Day (tercer domingo de julio) y Fiestas Patrias (28 de julio) en la comunidad peruana; pre-orders con franja de recogida y depósito; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; el pollo viaja bien en envase ventilado, las fries no: radio corto ‖ FORMA: la sección §5 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "Plataforma o reparto propio es una decisión de números. El plan vende por plataforma, con su reparto, un 11 % de las ventas (40.148 € al año) y paga una comisión del 30 % (12.044 € al año). Las guías sitúan a Uber Eats en torno al 30 % más IVA, a Glovo entre el 15 y el 35 % y a Just Eat entre el 13 y el 35 %. Un repartidor propio de viernes a domingo (0,35 jornada, unos 8.800 € al año con la Seguridad Social) más moto, seguro y gasolina (unos 2.500 €) cuesta unos 11.300 €: un 28 %, poco menos que la comisión, pero sin el escaparate que trae el pedido y con riesgo laboral. Solo compensa con pedidos propios y una zona corta y densa, siempre con contrato.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 135,
+   "nota": "§5 5/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (las espadas girando venden en vídeo); fechas: Mother's Day, Super Bowl Sunday, Nochebuena y Nochevieja en las familias latinas, Pollo a la Brasa Day (tercer domingo de julio) y Fiestas Patrias (28 de julio) en la comunidad peruana; pre-orders con franja de recogida y depósito; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; el pollo viaja bien en envase ventilado, las fries no: radio corto ‖ FORMA: la sección §5 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "La recogida en el mostrador no paga comisión, así que empújala con precio: un pequeño descuento al pedido que se recoge puede salir más barato que la comisión, y trae al cliente a tu puerta, donde ve el asador y puede pedir algo más. Haz la cuenta con tus números. En el reparto hay además un tema de producto: el pollo entero aguanta bien el viaje, pero las patatas fritas llegan blandas, así que en la plataforma van mejor las patatas asadas, y por eso el techo del plan es ese 11 % de las ventas. Reparto propio no hay en el plan: si algún día lo montas, que sea con los números de arriba delante.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 116,
+   "nota": "§5 6/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (las espadas girando venden en vídeo); fechas: Mother's Day, Super Bowl Sunday, Nochebuena y Nochevieja en las familias latinas, Pollo a la Brasa Day (tercer domingo de julio) y Fiestas Patrias (28 de julio) en la comunidad peruana; pre-orders con franja de recogida y depósito; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; el pollo viaja bien en envase ventilado, las fries no: radio corto ‖ FORMA: la sección §5 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "El presupuesto de marketing del caso es de 3.500 € al año, sobre todo para las tarjetas de encargo, el buzoneo y el material de los combos. La marca, la web, las fotos y el lanzamiento van aparte, dentro de la inversión inicial (4.000 €). No lo gastes de golpe: reparte el presupuesto con el calendario y deja una parte para los meses más flojos, enero y febrero, y otra para el empujón del verano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "pol_a",
+   "palabras": 75,
+   "nota": "§5 7/7: Marketing y ventas: Google Business Profile, Yelp, Instagram (las espadas girando venden en vídeo); fechas: Mother's Day, Super Bowl Sunday, Nochebuena y Nochevieja en las familias latinas, Pollo a la Brasa Day (tercer domingo de julio) y Fiestas Patrias (28 de julio) en la comunidad peruana; pre-orders con franja de recogida y depósito; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers (US §5.2); el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; el pollo viaja bien en envase ventilado, las fries no: radio corto ‖ FORMA: la sección §5 del Taco EN (business-plans-en-12/docx_en_taq_a.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "76": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "El pollo manda en este asador de pollos, y sus números se calculan, no se suponen. La calculadora del kit parte de un pollo de asar de 1,45 kg en canal, a 3,05 € el kilo sin IVA, más 0,13 € de sazón, aceite y sal: cuesta 4,55 €. Con un rendimiento del asado del 76 % salen unos 1,10 kg de pollo asado. El USDA da un 78 % para el pollo entero asado con piel, con un rango del 68 al 84 %, pero es un dato de horno, no de asador de espadas. Vendido entero a 12,90 € con IVA, su food cost es un 38,8 % sobre el precio sin IVA, que son 11,73 €. Todo esto son estimaciones del kit, editables en la calculadora, y el precio del kilo es el que pagues tú. Pesa cinco pollos crudos y asados de la misma tanda y lleva tu rendimiento a la hoja «Pollo» de la calculadora. Mide en el kit, recalcula en el plan.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 168,
+   "nota": "§6 1/5: Operaciones y equipo: dos rotisseries de gas ({{inv_rotisseries}}), heated display ({{inv_display}}), freidoras y fogones ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}) para el pollo crudo y el marinado; marinado la víspera, primera carga a las 9:00, 48 pollos por carga (8 espadas × 6) de 75-90 min (Kit); domingo 65-70 pollos y días punta 120-150 con pre-orders; cooked yield 70-75 % (Kit: mídelo con la calculadora). «EVERY BIRD COUNTS» (US §8): el pollo marinado cuesta $5.99; uno que pasa su ventana de 4 h y se tira cuesta $5.99, uno enfriado con registro para sandwich/bowl ($13.50, 5 oz) vale ≈ $2.70 de producto → cargar por franjas con el histórico del POS + pre-orders, nunca «llenar el asador por si acaso»; merma ≤ 5 % de los pollos cargados. Variantes: carbón (NFPA 96; rotisserie listada $27,500-35,950 + escape propio: +$45,000-60,000 de CAPEX) y ventless solo para la rotisserie (las freidoras siguen bajo Type I) ‖ FORMA: la sección §6 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "El asador y el domingo mandan en la capacidad. El domingo hace un tercio de los pollos de la semana: unos 106 un domingo medio y unos 122 en agosto. Con doce espadas y 5 pollos por espada (la ficha técnica da de 4 a 6) salen 60 pollos por tanda. Con tandas de unos 90 minutos, contando la carga y la descarga, el asador entrega 180 pollos asados antes de las tres. El tiempo de asado no lo publica ningún fabricante: mídelo tú con tu aparato. Con ocho espadas saldrían unos 120, justo en agosto y en los festivos. Por eso el caso lleva doce, y la hoja «Asador» de la calculadora hace esta cuenta con tus datos. La producción del caso son unos 301 pollos a la semana y unos 15.067 al año.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 135,
+   "nota": "§6 2/5: Operaciones y equipo: dos rotisseries de gas ({{inv_rotisseries}}), heated display ({{inv_display}}), freidoras y fogones ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}) para el pollo crudo y el marinado; marinado la víspera, primera carga a las 9:00, 48 pollos por carga (8 espadas × 6) de 75-90 min (Kit); domingo 65-70 pollos y días punta 120-150 con pre-orders; cooked yield 70-75 % (Kit: mídelo con la calculadora). «EVERY BIRD COUNTS» (US §8): el pollo marinado cuesta $5.99; uno que pasa su ventana de 4 h y se tira cuesta $5.99, uno enfriado con registro para sandwich/bowl ($13.50, 5 oz) vale ≈ $2.70 de producto → cargar por franjas con el histórico del POS + pre-orders, nunca «llenar el asador por si acaso»; merma ≤ 5 % de los pollos cargados. Variantes: carbón (NFPA 96; rotisserie listada $27,500-35,950 + escape propio: +$45,000-60,000 de CAPEX) y ventless solo para la rotisserie (las freidoras siguen bajo Type I) ‖ FORMA: la sección §6 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "El equipo se compra con precio y fuente, no a ojo. El asador de gas del caso cuesta 5.000 €; en catálogo, el de doce espadas va de 4.373 a 5.967 € sin IVA y el de ocho, de 2.493 a 4.126 €, con las espadas aparte, y el de ocho declara 56 kW. La vitrina caliente y el mantenedor de patatas suman 2.000 €; la freidora doble y el fogón, 3.000 €; la campana extractora, 2.000 €, de 1.800 a 2.200 m³/h para doce espadas; el frío, 5.500 €; y el conducto exclusivo a cubierta, 6.000 €. El asador de gas cabe en una salida de humos normal, con instalación por empresa habilitada y revisión cada 5 años. El eléctrico de ocho espadas pide 8-10 kW trifásicos. Pide presupuesto con instalación y plazo de entrega, porque el precio cambia según la marca.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 143,
+   "nota": "§6 3/5: Operaciones y equipo: dos rotisseries de gas ({{inv_rotisseries}}), heated display ({{inv_display}}), freidoras y fogones ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}) para el pollo crudo y el marinado; marinado la víspera, primera carga a las 9:00, 48 pollos por carga (8 espadas × 6) de 75-90 min (Kit); domingo 65-70 pollos y días punta 120-150 con pre-orders; cooked yield 70-75 % (Kit: mídelo con la calculadora). «EVERY BIRD COUNTS» (US §8): el pollo marinado cuesta $5.99; uno que pasa su ventana de 4 h y se tira cuesta $5.99, uno enfriado con registro para sandwich/bowl ($13.50, 5 oz) vale ≈ $2.70 de producto → cargar por franjas con el histórico del POS + pre-orders, nunca «llenar el asador por si acaso»; merma ≤ 5 % de los pollos cargados. Variantes: carbón (NFPA 96; rotisserie listada $27,500-35,950 + escape propio: +$45,000-60,000 de CAPEX) y ventless solo para la rotisserie (las freidoras siguen bajo Type I) ‖ FORMA: la sección §6 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "Hay una alternativa que el plan financiero no modela: la brasa de leña o carbón. El horno rotativo del pollo a la brasa peruano (el rotombo) y la parrilla de carbón de la churrasqueira portuguesa piden además filtro de partículas en el conducto y no tienen precio publicado en España. Son variantes sin Excel, con más inversión y con una ordenanza que las admita. El caso hace el asador español y el medio pollo a la brasa al estilo peruano en el mismo asador de gas. Si te tienta la brasa por el sabor, compara las dos cuentas con presupuestos reales antes de firmar el local. La pollería peruana de sala con horno de brasa es otro negocio, el de la Guía Restaurante Peruano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 124,
+   "nota": "§6 4/5: Operaciones y equipo: dos rotisseries de gas ({{inv_rotisseries}}), heated display ({{inv_display}}), freidoras y fogones ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}) para el pollo crudo y el marinado; marinado la víspera, primera carga a las 9:00, 48 pollos por carga (8 espadas × 6) de 75-90 min (Kit); domingo 65-70 pollos y días punta 120-150 con pre-orders; cooked yield 70-75 % (Kit: mídelo con la calculadora). «EVERY BIRD COUNTS» (US §8): el pollo marinado cuesta $5.99; uno que pasa su ventana de 4 h y se tira cuesta $5.99, uno enfriado con registro para sandwich/bowl ($13.50, 5 oz) vale ≈ $2.70 de producto → cargar por franjas con el histórico del POS + pre-orders, nunca «llenar el asador por si acaso»; merma ≤ 5 % de los pollos cargados. Variantes: carbón (NFPA 96; rotisserie listada $27,500-35,950 + escape propio: +$45,000-60,000 de CAPEX) y ventless solo para la rotisserie (las freidoras siguen bajo Type I) ‖ FORMA: la sección §6 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "El horario del caso va de martes a domingo de 12:00 a 16:30 y, de jueves a sábado, también de 20:00 a 23:00; el domingo se enciende el asador a las 10:30. El pollo crudo, a 4 °C o menos; las mollejas, a 3 °C o menos; y el pollo adobado crudo, que es preparado de carne, a 4 °C o menos. Mesa de espetar (ensartar el pollo en la espada) separada de la de servir, el pollo crudo sin lavar y sonda en el muslo en cada tanda. Dos proveedores de pollo con calibre fijo y la temperatura de recepción anotada: un calibre irregular descuadra las tandas y el escandallo. Los encargos (pedidos con hora de recogida) entran por teléfono y WhatsApp con nombre y hora, y se cierran el sábado. Los suministros salen a 1.000 € al mes de media y el mantenimiento a 2.800 € al año, con dos limpiezas de la campana extractora y del conducto por la grasa del asador, y revisión del gas, del asador y del frío.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 174,
+   "nota": "§6 5/5: Operaciones y equipo: dos rotisseries de gas ({{inv_rotisseries}}), heated display ({{inv_display}}), freidoras y fogones ({{inv_freidora}}), Type I hood + UL 300 + makeup air ({{inv_campana}}), walk-in ({{inv_camara}}) para el pollo crudo y el marinado; marinado la víspera, primera carga a las 9:00, 48 pollos por carga (8 espadas × 6) de 75-90 min (Kit); domingo 65-70 pollos y días punta 120-150 con pre-orders; cooked yield 70-75 % (Kit: mídelo con la calculadora). «EVERY BIRD COUNTS» (US §8): el pollo marinado cuesta $5.99; uno que pasa su ventana de 4 h y se tira cuesta $5.99, uno enfriado con registro para sandwich/bowl ($13.50, 5 oz) vale ≈ $2.70 de producto → cargar por franjas con el histórico del POS + pre-orders, nunca «llenar el asador por si acaso»; merma ≤ 5 % de los pollos cargados. Variantes: carbón (NFPA 96; rotisserie listada $27,500-35,950 + escape propio: +$45,000-60,000 de CAPEX) y ventless solo para la rotisserie (las freidoras siguen bajo Type I) ‖ FORMA: la sección §6 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "83": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El equipo del caso es corto y está pensado para que nadie sea imprescindible. Tú eres el maestro asador: compra del pollo, adobos, asador, encargos y gestión, con 1.900 € brutos al mes en 14 pagas. Como administrador de la SL cotizas en el régimen de autónomos: confírmalo con tu gestoría. A tu lado hay un segundo asador-cocinero que espeta, lleva la freidora, las guarniciones y las croquetas y sabe sondear y trinchar; un dependiente de mostrador y caja, que atiende los encargos, el teléfono, las plataformas y la información de alérgenos; un camarero o camarera de sala de 30 horas; un ayudante de cocina y friegue el sábado y el domingo por la mañana; y un refuerzo de fin de semana y festivos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 124,
+   "nota": "§7 1/6: Organización y personal: Owner / GM & head of rotisserie, rotisserie cook, counter lead / cashier, counter, packing & expo part-time W-2 (4), dish & prep, fry & line cook de fin de semana y el prep & relief rotisserie cook que cubre los descansos ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE; 7 días piden más FTE que un local que cierra un día); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "Con las suplencias de vacaciones y descansos, el cuadro suma 7 personas, equivalentes a 4,60 jornadas completas, y cuesta 128.683 € el primer año, el 35,3 % de las ventas. Es el mayor gasto del negocio, por encima del alquiler. El cuadrante contrata 8.464 horas frente a las 7.650 necesarias, una cobertura del 111 %: con poco margen para bajas. El domingo de 11:00 a 15:30 hacen falta seis personas y el cuadrante anual no lo ve: ponlo en el turno. El refuerzo cubre el mostrador y los encargos de sábado, domingo y festivos, sin reparto propio. La plantilla crece con personas, no con un porcentaje: 6.000 € de incorporaciones el segundo año y otro tanto el tercero.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 118,
+   "nota": "§7 2/6: Organización y personal: Owner / GM & head of rotisserie, rotisserie cook, counter lead / cashier, counter, packing & expo part-time W-2 (4), dish & prep, fry & line cook de fin de semana y el prep & relief rotisserie cook que cubre los descansos ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE; 7 días piden más FTE que un local que cierra un día); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "El convenio aplicable es el provincial de hostelería. El art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería no nombra la pollería ni el asador de pollos, pero incluye los restaurantes y el reparto de comidas preparadas. Todos cobran por encima del SMI de 2026 (1.221 € al mes en 14 pagas, Real Decreto 126/2026), en proporción a su jornada, y con contrato por escrito. Lleva el registro de jornada, que es obligatorio según el art. 34.9 del Estatuto de los Trabajadores. Tu gestoría te confirma qué convenio provincial aplica en tu caso.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 98,
+   "nota": "§7 3/6: Organización y personal: Owner / GM & head of rotisserie, rotisserie cook, counter lead / cashier, counter, packing & expo part-time W-2 (4), dish & prep, fry & line cook de fin de semana y el prep & relief rotisserie cook que cubre los descansos ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE; 7 días piden más FTE que un local que cierra un día); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "Una advertencia: nunca sustituyas plantilla por autónomos que te facturan con tu horario. Eso es falso autónomo (art. 1.1 del Estatuto de los Trabajadores) y una sanción esperando. Y piensa en el asador único: es un riesgo, no un ahorro. Si falta quien sabe espetar, sondear y trinchar, no abres el día que hace un tercio de la semana. Por eso el segundo asador-cocinero es la mejor cobertura que vas a pagar. Fórmalo desde el principio, no el día en que lo necesites, y reparte los adobos entre los dos para que la receta no viva en una sola cabeza.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 100,
+   "nota": "§7 4/6: Organización y personal: Owner / GM & head of rotisserie, rotisserie cook, counter lead / cashier, counter, packing & expo part-time W-2 (4), dish & prep, fry & line cook de fin de semana y el prep & relief rotisserie cook que cubre los descansos ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE; 7 días piden más FTE que un local que cierra un día); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "Si algún día quieres un repartidor propio, tiene que ir con contrato laboral del convenio de hostelería. En el reparto que organiza una plataforma por algoritmo, la ley presume la relación laboral (disposición adicional 23.ª del Estatuto), y es la plataforma quien la asume. Por eso el caso vende por plataforma, con techo y sin reparto propio. Un repartidor tuyo suma moto, seguro, gasolina y el riesgo laboral a tu cargo, y pierdes el escaparate de la plataforma, a cambio de ahorrarte la comisión (30 %). Antes de montarlo, haz la cuenta con tus pedidos reales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 96,
+   "nota": "§7 5/6: Organización y personal: Owner / GM & head of rotisserie, rotisserie cook, counter lead / cashier, counter, packing & expo part-time W-2 (4), dish & prep, fry & line cook de fin de semana y el prep & relief rotisserie cook que cubre los descansos ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE; 7 días piden más FTE que un local que cierra un día); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "Forma al equipo antes de abrir. La formación de manipuladores la acredita la empresa (el antiguo carné de manipulador ya no existe) y debe cubrir el crudo y el cocinado separados, la sonda, la vitrina, el enfriado, el ovoproducto y los alérgenos. Aparte, necesitas formación del asador: calibre, espetado, orden de carga, sonda y trinchado. Y no olvides la prevención de riesgos laborales: las quemaduras del asador, de las espadas calientes y de la freidora, los cortes al trinchar y al espetar, el gas y el calor son los riesgos de esta cocina. Programa un repaso corto cuando entre alguien nuevo, porque lo que no se repite se olvida.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 109,
+   "nota": "§7 6/6: Organización y personal: Owner / GM & head of rotisserie, rotisserie cook, counter lead / cashier, counter, packing & expo part-time W-2 (4), dish & prep, fry & line cook de fin de semana y el prep & relief rotisserie cook que cubre los descansos ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE; 7 días piden más FTE que un local que cierra un día); ≥ $15/h, propinas del mostrador para el equipo (no para el dueño), sin tip credit modelado; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager: «draw in addition from net profit» ‖ FORMA: la sección §7 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "91": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "Para abrir necesitas 142.176 €. Son 93.100 € de obra, conducto, asador, equipo y puesta en marcha, 2.400 € de fianza y 2.400 € de renta antes de abrir, que suman 97.900 € de inversión sin el fondo, más 44.276 € de fondo de maniobra. El IVA de la inversión, 19.425 €, lo adelantas, así que la necesidad de caja llega a 161.601 €; cómo recuperarlo, confírmalo con tu gestoría. Se financia con 50.000 € propios y un préstamo de 112.000 € al 6 %, a 7 años con 1 año de carencia y una cuota anual de 22.777 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 100,
+   "nota": "§8 1/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el precio del pollo es volátil (composite USDA, rango regional 88-149 ¢/lb, resumen) y la merma de display mueve el food cost: dilo sin cifra inventada; food & paper del caso frente al 24.5 % de una cadena con escala de compra (El Pollo Loco, resumen) ‖ FORMA: la sección §8 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "La cuenta de resultados a tres años proyecta unas ventas de 364.980 €, 386.879 € y 402.354 €. El margen bruto del primer año es del 59,1 %, después de todos los costes variables: mercancía (el 31,8 % de las ventas), envases, plataforma, medios de pago y varios. El personal suma 128.683 €, el alquiler 14.400 € (un 3,9 % de las ventas) y los residuos y el aceite usado 900 €, que es orientativo: pon la tasa de tu ayuntamiento. El resultado de explotación antes de amortizaciones e intereses es de 45.320 €, un 12,4 %. El neto es de 25.704 €, 31.605 € y 30.969 €, un 7,0 %, un 8,2 % y un 7,7 %; el tercer año tributa al tipo general del Impuesto de Sociedades, un 25 %, y si tu cifra de negocios no llega a 1 millón de euros el tuyo será más bajo: confírmalo con tu asesor. Con honestidad: el food cost de la comida es del 32,0 %, la media de toda la carta más la merma, no el del pollo entero, que sale a 38,8 % sobre el precio sin IVA; las patatas van a un 28 % y las croquetas a un 22 %. El margen de una pollería está en lo que acompaña al pollo. El plan estima el pollo a 3,05 € el kilo sin IVA, un precio estimado por el kit; en origen se pagaba a unos 2,96 € (Diari de Tarragona) y en Makro el pollo entero limpio estaba a 3,25 € en octubre de 2026. Con el precio de Makro, la comida sube a un 33,5 %, el resultado de explotación del año 1 baja unos 4.900 € y el neto del año 3 queda en un 6,7 % (cálculo del kit con este mismo Excel). Cada punto de food cost de la comida mueve unos 3.300 € al año, y la palanca es el precio del pollo entero (a 13,50 € sigue dentro de los 11-14 € del mercado), nunca más deuda. Pon el precio de tu proveedor.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 344,
+   "nota": "§8 2/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el precio del pollo es volátil (composite USDA, rango regional 88-149 ¢/lb, resumen) y la merma de display mueve el food cost: dilo sin cifra inventada; food & paper del caso frente al 24.5 % de una cadena con escala de compra (El Pollo Loco, resumen) ‖ FORMA: la sección §8 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "El crecimiento es el que hace el Excel, y su unidad es el pedido: uno de mostrador o un encargo, uno de plataforma o un cliente sentado en la sala. Suben los pedidos un 6 % el segundo año y un 4 % el tercero, de 77 a 82 y 85 al día, con el mismo ticket de 15,80 € sin IVA, y la plantilla crece con personas (6.000 € al año), no con un porcentaje. En el IVA, la comida va al 10 % en sala, para llevar y por plataforma; el pan común suelto va al 4 %, pero es una parte mínima y el Excel lo deja en la comida. De la bebida, la parte que sale del local con alcohol o con azúcares o edulcorantes añadidos es el 31,0 % de la bebida, un 3,1 % de las ventas, y va al 21 %; el resto va al 10 % y el IVA medio de la bebida queda en 13,4 %. En las compras, el IVA soportado de la comida es 9,1 % y el de la bebida, 17,7 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 184,
+   "nota": "§8 3/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el precio del pollo es volátil (composite USDA, rango regional 88-149 ¢/lb, resumen) y la merma de display mueve el food cost: dilo sin cifra inventada; food & paper del caso frente al 24.5 % de una cadena con escala de compra (El Pollo Loco, resumen) ‖ FORMA: la sección §8 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "El equilibrio contable está en 67 pedidos al día, con unos ingresos de 313.812 €, y deja una holgura del 16,3 %. El de caja está en 64 pedidos al día, unos 250 pollos a la semana, con una holgura del 21,8 %, pero esa cifra es la del primer año, el de carencia, en el que solo pagas intereses. Desde el segundo devuelves principal: la holgura baja al 14,8 %, con 72 pedidos al día de equilibrio, y en el tercero queda en el 15,9 %, con 74 pedidos. Esos son los años que hay que vigilar. Las 20 plazas de la sala no son el techo del negocio: lo es el asador el domingo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 116,
+   "nota": "§8 4/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el precio del pollo es volátil (composite USDA, rango regional 88-149 ¢/lb, resumen) y la merma de display mueve el food cost: dilo sin cifra inventada; food & paper del caso frente al 24.5 % de una cadena con escala de compra (El Pollo Loco, resumen) ‖ FORMA: la sección §8 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "La tesorería numera los meses del 1 al 12 y el Mes 1 es enero. La rampa arranca al 75 % y llega al ritmo de crucero en 4 meses, en abril, así que cae sobre enero y febrero, los meses más flojos, y por eso el fondo de maniobra cuenta. El saldo mínimo, 50.818 €, es el del Mes 1, enero, y el año acaba en diciembre con 106.517 €. Julio y agosto, el pico, llenan la caja. Las pagas extra salen en julio y diciembre, y el IVA se liquida por trimestres naturales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 95,
+   "nota": "§8 5/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el precio del pollo es volátil (composite USDA, rango regional 88-149 ¢/lb, resumen) y la merma de display mueve el food cost: dilo sin cifra inventada; food & paper del caso frente al 24.5 % de una cadena con escala de compra (El Pollo Loco, resumen) ‖ FORMA: la sección §8 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "El DSCR mínimo es de 1,98, con 2,05 en el segundo año y 1,98 en el tercero: el negocio cubre la deuda con margen, aunque el banco querrá ver tu plan de ventas. El payback antes de la deuda, en años, es «Más de 3 años» con el fondo de maniobra dentro y «2,2» sin él. No es una inversión de recuperación rápida, sino un negocio de oficio que te paga 1.900 € brutos al mes y devuelve el capital con paciencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 82,
+   "nota": "§8 6/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el precio del pollo es volátil (composite USDA, rango regional 88-149 ¢/lb, resumen) y la merma de display mueve el food cost: dilo sin cifra inventada; food & paper del caso frente al 24.5 % de una cadena con escala de compra (El Pollo Loco, resumen) ‖ FORMA: la sección §8 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "El escenario pesimista es un año flojo: 66 pedidos al día a 15,00 € durante 295 días dan unas ventas de 292.050 € y un neto de −12.861 €, es decir, pérdidas. En el optimista, 88 pedidos a 16,50 € durante 305 días dan unas ventas de 442.860 € y un neto de 64.827 €. La distancia entre uno y otro separa un buen año de uno malo. Y recuerda: el Excel manda, y si cambias una celda verde este documento se queda atrás.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 84,
+   "nota": "§8 7/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el precio del pollo es volátil (composite USDA, rango regional 88-149 ¢/lb, resumen) y la merma de display mueve el food cost: dilo sin cifra inventada; food & paper del caso frente al 24.5 % de una cadena con escala de compra (El Pollo Loco, resumen) ‖ FORMA: la sección §8 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "100": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Puedes abrir como SL unipersonal, con un capital desde 1 € (Ley 18/2022), o como autónomo. En el IAE (Real Decreto Legislativo 1175/1990), el epígrafe 677.9 comprende «la condimentación y venta de alimentos para ser consumidos fuera del lugar de elaboración en raciones»: es el del asador de pollos para llevar. Con sala, el grupo 671 (restaurante, por categoría) o el 673.2, cuya nota común faculta a «vender, en el propio establecimiento, los productos objeto del respectivo servicio», más el 677.9 si la venta para llevar es la principal: lo decide la gestoría, que también hace el alta censal (modelo 036). El 642.5, el de la pollería de crudos, no ampara asar ni vender comida preparada. Con una cifra de negocio inferior a 1 millón de euros estás exento de cuota (art. 82.1.c de la Ley de Haciendas Locales).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 139,
+   "nota": "§9 1/7: el marco US por niveles (federal, estatal, condado, ciudad); LLC + EIN; sales tax permit; business license; zoning check ANTES de firmar; plan review (Food Code 8-201.11) + building permit → certificate of occupancy; fire marshal; sales tax {{sales_tax}} de ejemplo, un solo tipo («some states tax to-go food differently», sin cifra) ‖ FORMA: la sección §9 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "Los restaurantes no figuran en el anexo de la Ley 12/2012, así que la apertura va por licencia o declaración responsable, según la ordenanza de tu ayuntamiento, con una consulta urbanística previa sobre uso, salida de humos a cubierta, potencia trifásica y aforo. Los humos los decide la ordenanza: la cocina de un restaurante no es actividad potencialmente contaminadora de la atmósfera (RD 100/2011, actualizado por el RD 1042/2017). Como ejemplo, la de Madrid (Ordenanza 4/2021 de Calidad del Aire) exige un conducto exclusivo a cubierta que supere en 1 m la altura del edificio propio y la de cualquier otro en 15 m de radio (art. 12 y anexo I), limpieza al menos una vez al año y, con leña, carbón u otro combustible sólido, sistemas de filtrado de partículas (art. 23). En tu ciudad, pide la ordenanza.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 139,
+   "nota": "§9 2/7: campana, gas y fuego: Type I hood + supresión UL 300 sobre rotisseries y freidoras; makeup air; grease interceptor; limpieza de campana trimestral (NFPA 96, Tabla 11.4: combustible sólido, mensual); dos rotisseries de ≈ 177,500 BTU + freidoras → acometida y regulador de gas dimensionados, con permiso; ventless solo con equipo listado con su campana; CARBÓN = combustible sólido (NFPA 96 cap. 14: escape propio, arrestachispas, ceniza mojada a diario en contenedor metálico, ≤ 1 día de combustible junto al aparato), aparato listado (UL/ETL) y NSF/ANSI 4; los asadores importados de Perú pueden no tener listing; reglas de calidad del aire: «ask your air district» ‖ FORMA: la sección §9 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "104": {
+   "estilo": "Normal",
+   "texto": "El gas del asador, la freidora y el fogón lo instala una empresa habilitada, con puesta en marcha certificada de cada aparato e inspección o revisión cada 5 años (RD 919/2006, ITC-ICG 07 e ITC-ICG 08). En sanidad presentas una declaración responsable ante el registro sanitario de tu comunidad (RD 1021/2022); el RGSEAA solo aplica si suministras a otros negocios por encima de lo que permite el art. 3 del RD 1021/2022 (venta marginal, localizada y restringida), por ejemplo si vendes pollo asado o croquetas a un bar de otro titular. Tu APPCC se apoya en la flexibilidad del art. 20 del RD 1021/2022. La cocción del pollo no tiene temperatura legal: la fija tu APPCC (el caso, 74 °C en el muslo con sonda), y ninguna norma fija el tiempo máximo en vitrina.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 134,
+   "nota": "§9 3/7: health permit + inspección previa; Certified Food Protection Manager (2-102.12) + food handler cards según estado; FDA Food Code 2022 (cada estado adopta su edición): aves a 165 °F (3-401.11); hot holding ≥ 135 °F (3-501.16); cooling 135 → 70 °F en 2 h y → 41 °F en 6 h en total (3-501.14); reheating para hot holding a 165 °F (3-403.11); pollo con inspección USDA (approved source); pollo crudo abajo en el walk-in, tablas por color, no lavar el pollo crudo ‖ FORMA: la sección §9 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "Lo que se vende sin envasar o se envasa a petición del cliente, como el pollo que se embolsa al pedirlo o el encargo preparado a su nombre, informa de la denominación y los alérgenos (RD 126/2015, art. 4). Lo que el propio local envasa antes del pedido para su venta inmediata, como las bandejas ya cerradas de la vitrina del domingo, lleva todas las menciones de los arts. 9 y 10 del Reglamento (UE) 1169/2011 salvo la información nutricional: ingredientes, alérgenos resaltados, peso, fecha y conservación (art. 5). Los alérgenos pueden darse por escrito o de palabra si la información queda registrada en el establecimiento y es accesible (RD 126/2015, arts. 4.1.b y 6.5.a), y en la venta a distancia, antes de comprar (art. 14 del Reglamento (UE) 1169/2011). En la pollería tocan la soja y el gluten del adobo peruano (sillao, la salsa de soja, y cerveza negra), el huevo del alioli y de las cremas (las salsas de mesa peruanas: ají, huacatay, ocopa y mayonesa), la leche y el cacahuete de algunas cremas según la receta, el gluten, la leche y el huevo de las croquetas y los sulfitos de la patata pelada envasada o de un adobo con vino. «Sin gluten» solo con 20 mg/kg o menos tal como se vende (Reglamento de Ejecución (UE) 828/2014): con la freidora compartida con las croquetas, no se promete. El cartel de «elaboración propia» es opcional (art. 11 del RD 1021/2022).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 242,
+   "nota": "§9 4/7: el SOP del heated display: TPHC (3-501.19) hasta 4 h con la hora marcada y procedimiento escrito; a las 4 h o si baja de 135 °F, se enfría con registro para el sandwich/bowl del día siguiente o se tira; nunca vuelve al display sin pasar por 165 °F; pollos envasados en autoservicio: etiqueta (3-602.11); rice & beans = TCS (B. cereus): hot holding ≥ 135 °F; «keep a rotisserie chicken warm for 2 hours» → ≥ 135 °F o TPHC con SOP ‖ FORMA: la sección §9 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "El art. 4.1 del RD 1021/2022 fija la carne de aves de corral a 4 °C o menos, los despojos de aves (las mollejas) a 3 °C o menos, los preparados de carne (el pollo adobado crudo lo es) a 4 °C o menos y los vegetales cortados o pelados listos para consumo (la ensalada, la guasacaca venezolana de aguacate) a 4 °C o menos. Lo que no está en esa tabla va a la temperatura de su etiqueta (art. 4.2), y el transporte de lo que sale, en medios que mantengan la temperatura (art. 4.3).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 96,
+   "nota": "§9 5/7: alérgenos: 9 mayores US incluido el sésamo (FASTER Act); marinado = soy sauce (soy + wheat) + cerveza (wheat/barley); aji verde a menudo con mayonesa (egg) y queso fresco o cotija (milk), según receta; huancaina = queso fresco y leche evaporada (milk) + galletas saladas (wheat); pan del sandwich = wheat (sesame si lleva semillas); freidora compartida con empanados → contacto cruzado; «gluten-free»: 21 CFR 101.91, NO se promete ni del pollo ni de las yuca fries ‖ FORMA: la sección §9 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "Las comidas preparadas (el pollo asado en vitrina, las croquetas, la ensaladilla) siguen el art. 30 del RD 1086/2020, en la redacción del RD 1021/2022. En caliente, a 63 °C o más; refrigeradas, a 4 °C o menos si su vida útil pasa de 24 horas y a 8 °C o menos si es menor. El enfriamiento va de 60 °C a 10 °C en menos de dos horas, y el recalentado, a por lo menos 74 °C durante al menos quince segundos en el centro del alimento, en el término de una hora desde que sale del frigorífico. Por eso el sobrante del domingo necesita plan: o se mantiene a 63 °C, o se enfría y al día siguiente se convierte en croquetas o ensalada de pollo. Lo que lleva huevo y no se cocina (alioli, mayonesa, ensaladilla, cremas) pide ovoproductos de establecimientos autorizados, a 8 °C o menos, consumidos en un máximo de 24 horas y con la fecha y la hora de elaboración anotadas (art. 9.2 y 9.3 del RD 1021/2022).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 174,
+   "nota": "§9 6/7: beer & wine license (agencia estatal + aprobación local; coste y plazos muy distintos: «apply early», NO prometer licencia); liquor liability en el seguro ({{seguros_anual}} con general liability, property y workers' comp); personal: W-2 por horas (nada de 1099 para cocineros o cajeros), I-9, W-4, salario mínimo estatal (federal $7.25/h, DOL), propinas del equipo; música ASCAP/BMI/SESAC; packaging ordinances locales; nombres: «peri-peri» genérico (nunca «PERi-PERi») y «pressure-fried chicken» («Broaster» es marca) ‖ FORMA: la sección §9 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "En el IVA (Ley 37/1992, art. 91), en sala todo va al 10 %. Para llevar y por plataforma, la comida va al 10 %, pero la cerveza, el vino y los refrescos con azúcares o edulcorantes añadidos que salen del local van al 21 %; el pan común, al 4 %. La versión del art. 91 que entra en vigor el 1 de diciembre de 2026 no cambia nada de esto para la restauración. El alcohol para llevar tiene los horarios de tu comunidad autónoma y nunca a menores. Según el art. 8 de la Ley 1/2025, el cliente puede llevarse lo que no consuma sin coste, salvo el envase de plástico de un solo uso, y debes avisarlo de forma visible, mejor en la carta; el art. 55 de la Ley 7/2022 pide cobrar aparte ese envase en el tique (las bandejas de cartón sin recubrimiento de plástico no lo son; la bolsa de pollo con lámina y la bandeja de aluminio, consúltalo con tu proveedor). El aceite de la freidora y la grasa del asador van a un gestor autorizado, con certificado de cada recogida. En personal aplican el convenio de hostelería, el SMI de 2026, el Estatuto de los Trabajadores y la Ley 31/1995 de prevención. Factura con software Veri*factu: consulta con tu gestoría la fecha que te aplica. El asador ambulante de mercadillo es otro negocio (grupo 675 del IAE). El marco es el español: en Perú, México y el resto de Latinoamérica los trámites son otros. Lo demás, compruébalo con tu gestoría, tu ayuntamiento o el inspector.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 263,
+   "nota": "§9 7/7: venta desde casa: las cottage food laws no cubren el pollo cocinado (TCS): este plan es de local con permiso («check your state»); y, como ÚLTIMA frase o frases, la NOTA UK: registro del food business en el council 28 días antes, FHRS 0-5, VAT 20 % en comida caliente (también para llevar), 14 alérgenos (apio y mostaza en los marinados, sulfitos, altramuces), premises + personal licence para el alcohol; «chicken shop» solo aquí. Sin Australia (va en la FAQ de la landing) ‖ FORMA: la sección §9 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "109": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "La conclusión es que una pollería-asador de este tamaño es viable, pero exigente. Con 77 pedidos al día a 15,80 € por pedido, sin IVA, el primer año deja un neto de 25.704 € y una holgura de caja del 21,8 %. Pero esa holgura baja al 14,8 % en el segundo año y al 15,9 % en el tercero, cuando ya devuelves el principal. El DSCR mínimo es de 1,98, el saldo mínimo de caja es de 50.818 € en enero y el payback antes de la deuda, en años, es «Más de 3 años». No es un negocio para ir con el capital justo, y la palanca que más pesa es el precio del pollo entero, nunca más deuda.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 121,
+   "nota": "§10 1/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood, gas & permits; rotisseries & health; staff & allergens; menu & pre-orders; opening & 90 days); la beer & wine license se pide al firmar el local; las reglas de tu condado para el pollo y el hot holding por escrito ANTES de comprar el display; el holiday pre-order plan antes del primer Mother's Day; cierre con el Excel, la calculadora de rendimiento y coste del pollo y el checklist ‖ FORMA: la sección §10 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "El primer riesgo, y el más caro, es firmar un local sin salida de humos a cubierta o sin potencia suficiente: sin conducto no hay asador ni freidora. Consúltalo con el ayuntamiento y con un técnico antes de firmar el alquiler. El segundo es darte de alta solo en el 642.5, que no ampara asar: pregunta a tu gestoría por el 677.9 y, con sala, por el 671 o el 673.2. El tercero es un asador pequeño para el domingo, o uno grande para el martes: la hoja «Asador» de la calculadora lo mide con tus datos. El cuarto es no sondear, y que quede dorado por fuera y crudo junto al hueso, o mezclar crudo y cocinado en la mesa de espetar. El quinto es el sobrante del domingo sin plan de enfriado ni destino: decide antes de abrir si se mantiene a 63 °C o se enfría para convertirlo en croquetas o ensalada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 155,
+   "nota": "§10 2/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood, gas & permits; rotisseries & health; staff & allergens; menu & pre-orders; opening & 90 days); la beer & wine license se pide al firmar el local; las reglas de tu condado para el pollo y el hot holding por escrito ANTES de comprar el display; el holiday pre-order plan antes del primer Mother's Day; cierre con el Excel, la calculadora de rendimiento y coste del pollo y el checklist ‖ FORMA: la sección §10 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "El sexto es hacer alioli, ensaladilla o cremas con huevo crudo: ovoproducto de establecimiento autorizado, a 8 °C o menos y con la hora anotada. El séptimo, envasar el domingo por la mañana sin la etiqueta completa, que pide ingredientes, alérgenos resaltados, peso, fecha y conservación. El octavo, olvidar los alérgenos del adobo: la soja y el gluten del sillao y de la cerveza negra. El noveno, cobrar al 10 % la cerveza, el vino y los refrescos con azúcares o edulcorantes añadidos para llevar, cuando van al 21 %. Es un error de tique que se repite cientos de veces al año, y se arregla con la configuración de la caja. Repasa con tu gestoría qué línea de la carta tributa a cada tipo antes de abrir.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 128,
+   "nota": "§10 3/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood, gas & permits; rotisseries & health; staff & allergens; menu & pre-orders; opening & 90 days); la beer & wine license se pide al firmar el local; las reglas de tu condado para el pollo y el hot holding por escrito ANTES de comprar el display; el holiday pre-order plan antes del primer Mother's Day; cierre con el Excel, la calculadora de rendimiento y coste del pollo y el checklist ‖ FORMA: la sección §10 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "El décimo es vender el pollo solo, sin combos: el entero sale a 38,8 % de food cost y el margen está en lo que lo acompaña. El undécimo, depender de un solo proveedor de pollo y sin calibre fijo. El duodécimo, meterte en la brasa de leña o carbón sin proyecto: pide filtro de partículas y una ordenanza que la admita. El decimotercero, el maestro asador único y el domingo sin refuerzo. El decimocuarto, abrirte a la plataforma sin cuentas: entre la comisión, las promociones y el envase, la caja se come el margen, y por eso el caso pone un techo del 11 % de las ventas. Y hay un riesgo que decide el plan: la caja de los años 2 y 3. Con 14,8 % y 15,9 % de holgura, no sobra margen. Mide los pedidos cada mes frente a los 72 pedidos al día que necesitas de equilibrio en el segundo año, y ten presente que el escenario pesimista cierra con un neto de −12.861 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 170,
+   "nota": "§10 4/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood, gas & permits; rotisseries & health; staff & allergens; menu & pre-orders; opening & 90 days); la beer & wine license se pide al firmar el local; las reglas de tu condado para el pollo y el hot holding por escrito ANTES de comprar el display; el holiday pre-order plan antes del primer Mother's Day; cierre con el Excel, la calculadora de rendimiento y coste del pollo y el checklist ‖ FORMA: la sección §10 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "Casi todos estos riesgos se evitan con tres hábitos: medir, anotar y repasar. Mide el rendimiento del pollo y el tiempo de tu tanda con tu asador, no con el de la ficha. Anota en tu APPCC las temperaturas de recepción, de la sonda, de la vitrina y del enfriado. Y repasa los alérgenos y la etiqueta cada vez que cambies un adobo, una crema o un proveedor. Ninguno de estos puntos es caro de evitar si se ve a tiempo y todos salen caros si se descubren después de abrir. Revisa la lista con tu gestoría y con tu equipo antes de abrir, y vuelve a ella a los tres meses, cuando el trabajo diario se acumula y lo importante se queda para luego. Y no pierdas de vista el calendario: el domingo hace un tercio de la semana, así que el asador, el refuerzo y los encargos del sábado se preparan pensando en ese día.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 157,
+   "nota": "§10 5/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood, gas & permits; rotisseries & health; staff & allergens; menu & pre-orders; opening & 90 days); la beer & wine license se pide al firmar el local; las reglas de tu condado para el pollo y el hot holding por escrito ANTES de comprar el display; el holiday pre-order plan antes del primer Mother's Day; cierre con el Excel, la calculadora de rendimiento y coste del pollo y el checklist ‖ FORMA: la sección §10 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "El plan de acción tiene seis fases y 80 tareas en el checklist que acompaña al kit. La fase 1 es Constitución y fiscalidad, con 12 tareas. La fase 2, Local, salida de humos, gas y licencia, con 15. La fase 3, Obrador, asador y registro sanitario, con 14. La fase 4, Personal, formación, prevención y alérgenos, con 13. La fase 5, Carta, marca, encargos y proveedores, con 13. Y la fase 6, Apertura y primeros 90 días, con otras 13. Sigue el orden: la consulta urbanística sobre la salida de humos va antes de firmar el alquiler. Marca cada tarea al cerrarla, y si una se retrasa, mira qué otras dependen de ella antes de mover la fecha de apertura.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 121,
+   "nota": "§10 6/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood, gas & permits; rotisseries & health; staff & allergens; menu & pre-orders; opening & 90 days); la beer & wine license se pide al firmar el local; las reglas de tu condado para el pollo y el hot holding por escrito ANTES de comprar el display; el holiday pre-order plan antes del primer Mother's Day; cierre con el Excel, la calculadora de rendimiento y coste del pollo y el checklist ‖ FORMA: la sección §10 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "El siguiente paso es completar el Excel con tus cifras: tu alquiler real, tu ticket, tus pedidos, tu préstamo, tu plantilla y tu calendario de apertura. Cambia solo las celdas verdes; este documento recoge los números del caso, y los tuyos los marca tu hoja de cálculo. Después mide el rendimiento de tu pollo y el tiempo de tanda de tu asador, y escandalla tu carta entera con la calculadora, no solo el pollo entero. Con tus datos delante, vuelve a la sección del plan financiero y comprueba qué te queda de caja en los años 2 y 3 si el año es el pesimista. Si la caja aguanta, tienes un plan sólido para llevar al banco; si no, ajusta la inversión, la plantilla o el calendario antes de firmar nada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "pol_b",
+   "palabras": 131,
+   "nota": "§10 7/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood, gas & permits; rotisseries & health; staff & allergens; menu & pre-orders; opening & 90 days); la beer & wine license se pide al firmar el local; las reglas de tu condado para el pollo y el hot holding por escrito ANTES de comprar el display; el holiday pre-order plan antes del primer Mother's Day; cierre con el Excel, la calculadora de rendimiento y coste del pollo y el checklist ‖ FORMA: la sección §10 del Taco EN (business-plans-en-12/docx_en_taq_b.json) da el registro y la longitud; su vocabulario de taquería (taco, trompo, tortilla, salsa bar, patio, «closed Mondays»…) y sus cifras NO valen"
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "aichef.pro\ninfo@aichef.pro"
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost Kit Pro · HACCP Food Safety Kit Pro"
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "→ Pack Plantillas APPCC",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Restaurant Checklists Kit Pro"
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "→ Guía Restaurante Peruano",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Truck Business Plan Kit (for a rotisserie chicken truck)"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}
