@@ -834,6 +834,6 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - **Correos:** ES **18-dic 08:00Z** (borrador `e125a746`, routine `trig_01TEKYVQu3egcewC5fss64zM` el 18-nov 15:07Z) · EN **15-mar-2027
   14:00Z** (borrador `fe7baa89`, routine `trig_01RLdVGQKRp4dUy9W8scMmit` el 14-feb-2027). Prueba de los dos a John.
   **Siguiente hueco: ES 23-dic · EN 20-mar-2027.**
-- Gasto ≈ 4,9 M tokens de subagentes la pareja (F1 incluida), dentro del techo M de 5 M. Siguiente en la cola: **Pollería / Asador de Pollos**
+- Gasto de subagentes hoy ≈ 3,7 M (ES 1,9 · EN 1,8) + la F1 de la noche anterior: la pareja queda en torno al techo M de 5 M. Siguiente en la cola: **Pollería / Asador de Pollos**
   (plan + guía ES + EN; mapa de keywords en `plan-polleria/F0-mapa-keywords-es-en.md`).
 - Handoff: `SESSION_HANDOFF_2026-10-29-taqueria-taco-shop.md`.
