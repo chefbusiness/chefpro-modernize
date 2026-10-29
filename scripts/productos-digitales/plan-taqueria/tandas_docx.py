@@ -199,8 +199,10 @@ PISTAS = {
        'neto {NETO_A1}/{NETO_A2}/{NETO_A3} ({NETO_PCT_A1}/{NETO_PCT_A2}/{NETO_PCT_A3}; el año 3 tributa ya al tipo '
        'general del Impuesto de Sociedades). EL FOOD COST CON HONESTIDAD: la comida va al {FOOD_COST} (la media de '
        'TODA la carta más la merma, no el taco al pastor), por debajo del 28-33 % que publica nuestra Guía Restaurante '
-       'Mexicano para un restaurante de mesa: la carne y la tortilla no tienen precio profesional publicado y el plan '
-       'las estima; cada punto de food cost de la comida mueve unos 2.900 € al año, y con la comida al 30 % el neto '
+       'Mexicano para un restaurante de mesa: el plan estima la carne del pastor a 5,50 € el kilo (en Makro, la paleta '
+       'de cerdo sin hueso de gama selecta estaba a 6,99 € con IVA en octubre de 2026: en mayorista va de unos 5,50-7 € '
+       'según corte y calidad) y la tortilla de maíz a 0,14 € (en Makro, unos 0,11-0,12 €: el caso va del lado '
+       'prudente); cada punto de food cost de la comida mueve unos 2.900 € al año, y con la comida al 30 % el neto '
        'del año 2 baja a un 8 % (cálculo del kit con este mismo Excel): pon los precios de tu proveedor. CRECIMIENTO tal '
        'cual lo hace el Excel: suben los comensales un {CREC_A2} y un {CREC_A3} (de {COMENSALES_DIA} a '
        '{COMENSALES_DIA_A2} y {COMENSALES_DIA_A3} al día) con el mismo ticket, y la plantilla crece con personas '
@@ -359,7 +361,7 @@ PERMITIDAS = set('''0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 2
 6,00 6,50 7,50 8,50 9,90 10,90 12,50 15,50 17,43 19,50 2,10 1,30 3,63 0,40 0,10 0,14 0,32 0,35 0,61 0,75 1,1 1,5 1,8 6,2
 18,5 18-19 10-11 15-20 30-35 50-100 1.250-2.500 1.279-1.784 15.000-25.000 150.000-300.000 22-28 26-30 28-33 3-5 8-10 12-15
 15-35 25-35 7-15 13:30 16:30 20:00 23:30 12/15/14/13/13/13 82.1 91.Uno.1.1 91.Uno.2.2 91.Dos.1.1 1.1 4.1 4.2 4.3 8.1 30.2
-30.3 30.6 30.7 34.9 23.ª 9,6 −18 −20 −35 –20 –35 1,25 2,2 1,37'''.split())
+30.3 30.6 30.7 34.9 23.ª 9,6 −18 −20 −35 –20 –35 1,25 2,2 1,37 5,50-7 6,99 0,11-0,12'''.split())
 RX_NUM = re.compile(r'(?<![\w{])[−+]?\d[\d.,/:−-]*\d|(?<![\w{])\d')
 #: Caracteres admitidos además del latín básico/extendido: tipografía española y los signos de temperatura (−, ≤, ≥, ≈).
 RX_RARO = re.compile(r'[^\x00-ɏ‐-‧€°→ ‑«»¿¡ºª·…–—“”‘’−≤≥≈²$]')
