@@ -8,6 +8,7 @@ import { t } from '../i18n/translations';
 import GoogleTag from '../components/GoogleTag.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import DataFast from '../components/DataFast.astro';
+import RedditPixel from '../components/RedditPixel.astro';
 // Botón flotante de WhatsApp — GLOBAL desde 2026-09-03 (orden de John: tiene que
 // estar en TODAS las páginas). Antes lo montaba CADA página a mano y sólo llegaba a
 // 655 de las 1.312 del dist: lo tenían las 7 homes, /usos, las pSEO de ciudades,
@@ -250,6 +251,9 @@ const emittedSchemas = omitGlobalApp
     <GoogleTag />
     {/* DataFast va DESPUÉS del tag de Google: lee el consentimiento que éste publica. */}
     <DataFast />
+    {/* Reddit Pixel: solo páginas EN indexables (no la zona app post-pago `noindex`).
+        Va después de GoogleTag porque engancha window.aichefConsent. */}
+    {lang === 'en' && !noindex && <RedditPixel />}
     <title>{pageTitle}</title>
     {pageDescription && <meta name="description" content={pageDescription} />}
     {keywords && <meta name="keywords" content={keywords} />}
