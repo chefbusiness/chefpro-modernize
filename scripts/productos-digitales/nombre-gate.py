@@ -27,6 +27,13 @@ Uso:
     /usr/local/bin/python3 scripts/productos-digitales/nombre-gate.py
     /usr/local/bin/python3 scripts/productos-digitales/nombre-gate.py --only guia-pasteleria-obrador
 
+EN (tienda inglesa, fichas en astro-site/src/data/productos-en/**): la regla es la misma pero
+el "nombre" es `name.en` del catálogo (se llega a la ficha por `urlByLang.en` = /en/digital-products/<slug>)
+y el H1 NO es igual al nombre —en EN el H1 es la forma corta: «Taco Shop Business Plan» frente a
+«Taco Shop Business Plan Kit»—, así que se exige que el nombre EMPIECE por el H1. Se comparan: name.en,
+`schema.productName`, label de los footerLinks hermanos a /en/digital-products/<slug> y `<title>` del
+dashboard (zona-app.ts, sin sufijos). Se ejecuta tras el bucle ES; `--only` acepta también un slug EN.
+
 Sin `--only` recorre todos los productos que tengan ficha .ts con `slug:` y entrada en el
 catálogo. Los que no tengan alguna de las superficies (p. ej. una landing sin dashboard)
 se saltan esa comprobación e informan de ello, pero no fallan por ausencia: este gate mide
@@ -46,6 +53,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 CATALOGO = ROOT / 'src' / 'data' / 'products-catalog.ts'
 FICHAS_DIR = ROOT / 'astro-site' / 'src' / 'data' / 'productos'
+FICHAS_EN_DIR = ROOT / 'astro-site' / 'src' / 'data' / 'productos-en'
 ZONA_APP = ROOT / 'astro-site' / 'src' / 'lib' / 'zona-app.ts'
 SPA_PAGES = ROOT / 'src' / 'pages'
 
@@ -73,10 +81,10 @@ def catalogo_nombres():
     return out
 
 
-def fichas():
+def fichas(base=None):
     """{slug: (ruta, texto)} de todas las fichas .ts de producto."""
     out = {}
-    for f in sorted(FICHAS_DIR.rglob('*.ts')):
+    for f in sorted((base or FICHAS_DIR).rglob('*.ts')):
         if f.name == 'types.ts':
             continue
         txt = f.read_text(encoding='utf-8')
@@ -114,6 +122,93 @@ def labels_cruzados(slug, todas):
     return out
 
 
+def catalogo_nombres_en():
+    """{slug_en: name.en} de las entradas del catálogo con urlByLang.en = /en/digital-products/<slug>."""
+    txt = CATALOGO.read_text(encoding='utf-8')
+    out = {}
+    starts = list(re.finditer(r"^  '[a-z0-9-]+': \{", txt, re.M))
+    for i, m in enumerate(starts):
+        seg = txt[m.start():starts[i + 1].start() if i + 1 < len(starts) else len(txt)]
+        u = re.search(r"urlByLang: \{[^}]*en: '/en/digital-products/([a-z0-9-]+)'", seg)
+        n = re.search(r"name: \{ es: '(?:[^'\\]|\\.)*', en: '((?:[^'\\]|\\.)*)'", seg)
+        if u and n:
+            out[u.group(1)] = n.group(1).replace("\\'", "'")
+    return out
+
+
+def labels_cruzados_en(slug, todas):
+    out = []
+    h = re.escape('/en/digital-products/' + slug)
+    for otro, (ruta, txt) in sorted(todas.items()):
+        if otro == slug:
+            continue
+        for m in re.finditer(r"\{ href: '" + h + r"', label: '([^']*)' \}"
+                             r"|\{ label: '([^']*)', href: '" + h + r"' \}", txt):
+            out.append((ruta.name, m.group(1) or m.group(2)))
+    return out
+
+
+def title_dashboard_en(slug):
+    reg = ZONA_APP.read_text(encoding='utf-8')
+    m = re.search(r"\{ productId: '" + re.escape(slug) + r"',[^\n]*?dashboardComponent: '([^']+)'", reg)
+    if not m:
+        return None, 'sin entrada en zona-app.ts'
+    f = SPA_PAGES / (m.group(1) + '.tsx')
+    if not f.exists():
+        return None, 'no existe %s' % f.name
+    titles = re.findall(r'<title>([^<]+)</title>', f.read_text(encoding='utf-8'))
+    if len(titles) != 1:
+        return None, '%s tiene %d <title> (esperado 1)' % (f.name, len(titles))
+    t = titles[0]
+    for s in SUFIJOS_TITLE:
+        t = t.replace(s, '')
+    return t.strip(), f.name
+
+
+def comprobar_en(slugs_pedidos):
+    """Misma regla para la tienda EN. Devuelve (comprobados, fallos)."""
+    cat = catalogo_nombres_en()
+    fis = fichas(FICHAS_EN_DIR)
+    slugs = slugs_pedidos if slugs_pedidos else sorted(set(cat) & set(fis))
+    fallos = 0
+    print('--- EN')
+    for slug in slugs:
+        if slug not in fis:
+            print('❌ %s: no hay ficha EN con ese slug' % slug)
+            fallos += 1
+            continue
+        nombre = cat.get(slug)
+        if nombre is None:
+            print('❌ %s: sin name.en/urlByLang.en en products-catalog.ts' % slug)
+            fallos += 1
+            continue
+        ruta, txt = fis[slug]
+        h1 = h1_de(txt)
+        pn = product_name_de(txt)
+        cruz = labels_cruzados_en(slug, fis)
+        tit, nota = title_dashboard_en(slug)
+        malas = []
+        if h1 is None or not nombre.startswith(h1):
+            malas.append('H1 de %s: %r (el nombre debe empezar por el H1)' % (ruta.name, h1))
+        if pn != nombre:
+            malas.append('schema.productName de %s: %r' % (ruta.name, pn))
+        for fichero, label in cruz:
+            if label != nombre:
+                malas.append('footerLink en %s: %r' % (fichero, label))
+        if tit is not None and tit != nombre:
+            malas.append('<title> de %s (sin sufijos): %r' % (nota, tit))
+        if malas:
+            fallos += 1
+            print('❌ %s — name.en del catálogo es %r y NO coincide con:' % (slug, nombre))
+            for m in malas:
+                print('     · %s' % m)
+        else:
+            print('✅ %s — %r en catálogo, H1, JSON-LD, %d enlace(s) cruzado(s)%s'
+                  % (slug, nombre, len(cruz),
+                     ' y <title> del dashboard' if tit is not None else '  (⚠️ dashboard no comprobado: %s)' % nota))
+    return len(slugs), fallos
+
+
 def title_dashboard(slug):
     """<title> del dashboard de la zona app, sin los sufijos de familia."""
     reg = ZONA_APP.read_text(encoding='utf-8')
@@ -141,6 +236,10 @@ def main():
     fis = fichas()
     slugs = [args.only] if args.only else sorted(set(cat) & set(fis))
     if args.only and args.only not in fis:
+        if args.only in fichas(FICHAS_EN_DIR):
+            n, f = comprobar_en([args.only])
+            print('---\n%d producto(s) EN comprobado(s) · %d con el nombre roto' % (n, f))
+            sys.exit(1 if f else 0)
         sys.exit('❌ %s: no hay ficha .ts con ese slug en %s'
                  % (args.only, FICHAS_DIR.relative_to(ROOT)))
 
@@ -181,6 +280,11 @@ def main():
 
     print('---')
     print('%d producto(s) comprobado(s) · %d con el nombre roto' % (len(slugs), fallos))
+    if not args.only:
+        n_en, f_en = comprobar_en(None)
+        print('---')
+        print('%d producto(s) EN comprobado(s) · %d con el nombre roto' % (n_en, f_en))
+        fallos += f_en
     sys.exit(1 if fallos else 0)
 
 

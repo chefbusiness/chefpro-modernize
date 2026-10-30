@@ -711,8 +711,9 @@ def hoja_supuestos(wb):
         'Lo que suele pedir una entidad para dar el préstamo sin garantías '
         'adicionales.')
     ent('holgura', 'Holgura mínima sobre el punto de equilibrio (%)', 0.15,
-        C.PCT, 'Cuánto puedes caer sobre lo previsto antes de entrar en '
-        'pérdidas.')
+        C.PCT, 'Cuánto deben superar las ventas previstas a las del equilibrio de '
+        'caja (costes fijos y cuota del préstamo). La caída que aguantas es algo '
+        'menor: con un 15 % de holgura, un 13 % de lo previsto.')
     ent('neto_suelo', 'Margen neto de referencia, suelo (%)', 0.08, C.PCT,
         'Rentabilidad neta de una pastelería «yendo bien» declarada por el '
         'gerente de una casa de cuarta generación: 8-12 %. No es un objetivo '
@@ -1385,8 +1386,9 @@ def hoja_equilibrio(wb):
     linea(E['holgura'], 'Holgura sobre el equilibrio de CAJA (%)',
           lambda c: g(c, 'IF({0}{1}<=0,"",{0}{2}/{0}{1}-1)'
                       .format(c, E['tkc_dia'], E['tk_previstos'])), C.PCT,
-          'Cuánto puedes caer sobre lo previsto antes de no poder pagar los '
-          'fijos y la cuota. El mínimo exigible está en «0. Supuestos».')
+          'Cuánto superan tus ventas previstas a las del equilibrio de caja. '
+          'La caída que aguantas antes de no poder pagar los fijos y la cuota es '
+          'algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en «0. Supuestos».')
     linea(E['semaforo'], 'Lectura de la holgura',
           lambda c: g(c, 'IF({0}{1}<0,"Por debajo del equilibrio",'
                       'IF({0}{1}<{2},"Ajustada","Suficiente"))'

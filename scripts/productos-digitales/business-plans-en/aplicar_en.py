@@ -66,6 +66,7 @@ sys.path.insert(1, SCRIPTS)
 import openpyxl                                              # noqa: E402
 
 import mapas                                                 # noqa: E402
+from parche_xml_xlsx import fundir_literales                 # noqa: E402
 import extraer_textos                                        # noqa: E402
 
 logging.disable(logging.CRITICAL)
@@ -235,7 +236,9 @@ def transformar_es(corto, hoja_es, coord, f_es):
     cub = _CUBIERTAS.get((corto, hoja_es, coord))
     if cub is not None:
         return cub
-    f = mapas.parchear_formula_es(corto, hoja_es, coord, f_es)
+    # 30-oct-2026: los ES LIVE llevan troceados en «"…"&"…"» los literales > 255 (Excel); las CLAVES y los parches E2
+    # se escribieron sobre el literal entero → se funde antes. El EN sale entero y lo trocea inject_cache AL FINAL.
+    f = mapas.parchear_formula_es(corto, hoja_es, coord, fundir_literales(f_es))
     return Transformador(mapas.HOJAS_POR_LIBRO[corto]).celda(f)
 
 

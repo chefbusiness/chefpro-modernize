@@ -163,7 +163,8 @@ RX_VERDES = re.compile(r'^Las celdas VERDES')
 #: desplegable real de los checklists de esta familia es «✓,☐,N/A»: el
 #: comprador desplegaba buscando una opción que no existe. La marca de
 #: «pendiente» que se nombra es la del vocabulario que traen los ficheros
-#: (`☐`), no `VOCAB_MARCA[1]`, que es el que el motor usaría al CREAR uno.
+#: (`☐`). Desde el 30-oct-2026 `VOCAB_MARCA[1]` (el que el motor usa al CREAR
+#: un desplegable) es también `☐`.
 MARCA_PENDIENTE_TXT = '☐'
 LEYENDA_OK = ('Columna OK: elige ✓ (hecho), ' + MARCA_PENDIENTE_TXT
               + ' (pendiente) o N/A (no aplica). '
@@ -2384,7 +2385,7 @@ def hipervinculos(wb, det, informe):
 # ==========================================================================
 # Checklists — columna OK, desplegable y contador (§1.5 + §7-bis.21)
 # ==========================================================================
-MARCA_OK, MARCA_NO, MARCA_NA = '✓', '—', 'N/A'
+MARCA_OK, MARCA_NO, MARCA_NA = '✓', MARCA_PENDIENTE_TXT, 'N/A'
 VOCAB_MARCA = (MARCA_OK, MARCA_NO, MARCA_NA)
 SEM_CHECK = ((MARCA_OK, CF_VERDE_BG, CF_VERDE_FG),)
 
