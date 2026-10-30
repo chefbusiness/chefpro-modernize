@@ -1,0 +1,75 @@
+---
+/**
+ * Reddit Pixel (base + PageVisit) para aichef.pro/en. SOLO páginas en inglés.
+ *
+ * Píxel: a2_hnxkfmixtspy (cuenta de anuncios a2_hnxkfmixtspy, Reddit Ads, EUR).
+ *
+ * POR QUÉ ASÍ (mismo patrón que GoogleTag.astro y DataFast.astro):
+ *   · Consent-aware: NO se carga nada de Reddit hasta que el visitante ha
+ *     aceptado (cookie `aichef_consent=accepted` en .aichef.pro). Hasta entonces
+ *     no existe `window.rdt` y no sale ninguna petición a redditstatic.com.
+ *   · Si el visitante acepta en esta misma página (banner), enganchamos
+ *     `window.aichefConsent` (lo define GoogleTag.astro, que va ANTES en el
+ *     <head>) y cargamos el píxel en ese momento, con su PageVisit.
+ *   · Si rechaza/revoca: `rdt('disableFirstPartyCookies')` por si ya estaba
+ *     cargado. Reddit avisa de que eso NO detiene el envío de eventos, por eso
+ *     la protección real es no cargarlo sin consentimiento y recargar.
+ *   · Solo bajo aichef.pro (no deploy previews de Netlify, staging ni localhost),
+ *     igual que DataFast.
+ *   · SIN Advanced Matching (`aam`) ni match keys: no se envía email ni nada
+ *     personal. El init es solo el ID.
+ *
+ * Los eventos SignUp y Purchase NO van aquí: ocurren en enapp.aichef.pro
+ * (Pickaxe), ver snippets/pickaxe_en_*.html.
+ */
+const REDDIT_PIXEL_ID = 'a2_hnxkfmixtspy';
+const CONSENT_COOKIE = 'aichef_consent';
+---
+
+<script is:inline define:vars={{ REDDIT_PIXEL_ID, CONSENT_COOKIE }}>
+  (function () {
+    if (!/(^|\.)aichef\.pro$/.test(location.hostname)) return;
+
+    function leeConsent() {
+      if (typeof window.aichefLeeConsent === 'function') return window.aichefLeeConsent();
+      var m = document.cookie.match(new RegExp('(?:^|; )' + CONSENT_COOKIE + '=([^;]*)'));
+      return m ? decodeURIComponent(m[1]) : null;
+    }
+
+    var cargado = false;
+    function cargar() {
+      if (cargado) return;
+      cargado = true;
+      // Loader oficial de Reddit (Ads Help > "Manual Conversion Events with the Reddit Pixel").
+      !function (w, d) {
+        if (!w.rdt) {
+          var p = w.rdt = function () {
+            p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
+          };
+          p.callQueue = [];
+          var t = d.createElement('script');
+          t.src = 'https://www.redditstatic.com/ads/pixel.js';
+          t.async = true;
+          var s = d.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(t, s);
+        }
+      }(window, document);
+      window.rdt('init', REDDIT_PIXEL_ID);
+      window.rdt('track', 'PageVisit');
+    }
+
+    // Visitante que ya aceptó en una visita anterior (o en aichef.pro).
+    if (leeConsent() === 'accepted') cargar();
+
+    // Visitante que decide AHORA en el banner de esta página.
+    var previo = window.aichefConsent;
+    window.aichefConsent = function (ok) {
+      if (typeof previo === 'function') previo(ok);
+      if (ok) {
+        cargar();
+      } else if (typeof window.rdt === 'function') {
+        try { window.rdt('disableFirstPartyCookies'); } catch (e) { /* noop */ }
+      }
+    };
+  })();
+</script>
