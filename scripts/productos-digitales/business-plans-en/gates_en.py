@@ -215,7 +215,7 @@ def gateG1(R, carpetas, datos):
                     except Exception as e:                       # noqa: BLE001
                         R.f(G, '%s %s!%s: no se puede transformar la fórmula ES: %s' % (corto, h_es, x, e))
                         continue
-                    if vb != esp:
+                    if A.fundir_literales(vb) != A.fundir_literales(esp):    # inject_cache trocea los > 255
                         R.f(G, '%s %s!%s: fórmula %r ≠ esperada %r' % (corto, h_es, x, str(vb)[:70], esp[:70]))
                 elif es_num(va):
                     if not (es_num(vb) or (vb is None and (h_es, x) in vac)):

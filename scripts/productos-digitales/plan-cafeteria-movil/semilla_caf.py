@@ -199,7 +199,7 @@ def checklist(salida):
             ws.row_dimensions[r].height = None
         ws.data_validations.dataValidation = []
         ws.conditional_formatting = type(ws.conditional_formatting)()
-        # revisión final m24: sin desplegable previo, el motor crea «✓,—,N/A» (motor.VOCAB_MARCA) mientras su leyenda
+        # revisión final m24: sin desplegable previo, el motor creaba «✓,—,N/A» (motor.VOCAB_MARCA; «✓,☐,N/A» desde el 30-oct-2026) mientras su leyenda
         # de Instrucciones y las casillas dicen «☐»; con este, el motor lo REUTILIZA (`_dv_marca_existente`) y el
         # desplegable, la leyenda y las casillas hablan el mismo idioma («✓,☐,N/A», el de la familia: motor.py:162)
         dv = DataValidation(type='list', formula1='"✓,☐,N/A"', allow_blank=True)

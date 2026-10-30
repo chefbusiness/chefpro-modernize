@@ -45,6 +45,7 @@ from openpyxl.utils import get_column_letter, range_boundaries
 AQUI = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(AQUI, '..', '..', '..'))
 sys.path.insert(0, AQUI)
+sys.path.insert(1, os.path.dirname(AQUI))                     # parche_xml_xlsx (literales troceados)
 import mapas                                                     # noqa: E402
 
 VERDE = 'E8F5E9'
@@ -135,7 +136,9 @@ def tiene_letra(s):
 
 
 def literales(formula):
-    return [m.group(1).replace('""', '"') for m in RX_LITERAL.finditer(formula or '')]
+    # 30-oct-2026: un literal > 255 troceado («"…"&"…"», Excel) cuenta como UN literal: se funde antes.
+    from parche_xml_xlsx import fundir_literales
+    return [m.group(1).replace('""', '"') for m in RX_LITERAL.finditer(fundir_literales(formula or ''))]
 
 
 def refs_hoja(formula):

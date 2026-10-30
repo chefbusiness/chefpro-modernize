@@ -2538,8 +2538,9 @@ PPE_18 = {
         'del principal del préstamo, que no es gasto pero sale de la cuenta.',
         'Dar los tickets al día que hacen falta para cada uno y la holgura '
         'sobre el equilibrio de caja en el año de crucero, y explicar cómo se '
-        'lee esa holgura: es cuánto puedes caer sobre lo previsto sin entrar '
-        'en pérdidas de caja.',
+        'lee esa holgura: es cuánto superan las ventas previstas a las del equilibrio de '
+        'caja (no cuánto puedes caer); la caída que aguantas sin pérdidas de caja '
+        'es algo menor, holgura/(1+holgura): con 25 %, un 20 %.',
         'Usar como contraste el único par publicado de gastos fijos y '
         'facturación de equilibrio que cuadra con la regla única, con su '
         'fuente, y explicar por qué los demás pares que circulan no se pueden '

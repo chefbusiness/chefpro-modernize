@@ -286,7 +286,7 @@ FASES = [
          'Al menos una vez al año (Madrid, Ordenanza 4/2021, art. 23); los filtros de grasa, con la frecuencia que fije '
          'tu plan de limpieza'),
         ('Revisión de la instalación de gas cada 5 años', 'Instalador de gas habilitado', 'Calendario',
-         'Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 08). Apunta la '
+         'Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 07 e ITC-ICG 08). Apunta la '
          'fecha'),
         ('Medir el rendimiento del trompo y recalcular', 'Taquero/a jefe', 'Semanas 1-12',
          'Pesa el cono crudo y el sobrante al cierre cada día con la hoja del Kit de Tareas Recurrentes: Taquería '
