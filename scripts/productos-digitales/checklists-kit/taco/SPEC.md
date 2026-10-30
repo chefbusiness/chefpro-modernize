@@ -79,8 +79,8 @@ del base (importa `mapas` directo): no aplica. **Código común tocado en F1: ni
 | Días fuertes de una taquería US · kg → lb, litros → qt | [criterio del kit]; research ES §7.3 (Cinco de Mayo, fiesta sobre todo de EE. UU.) |
 
 °F que el kit puede afirmar (G7, `GRADOS_F_SPEC`; el autotest exige la igualdad con POR_CELDA + ADAPTAR + reglas propias):
-−31, −4, 0, 32, 41, 70, 135, 145, 155, 165. `CELSIUS_SIN_F` vacío: las 31 celdas ES con °C llevan ADAPTAR o POR_CELDA
-(`cruzar_censo` lo exige). `CITA_AUTOTEST` = 3-501.18 (la 3-501.19 sí está en las reglas).
+−31, −4, 0, 32, 41, 70, 100 (lavamanos, regla base), 135, 145, 155, 165. Las 31 celdas ES con °C llevan ADAPTAR o
+POR_CELDA (`cruzar_censo` lo exige); `CELSIUS_SIN_F` = 01 «Apertura» B15 (F2: con el reorden, su °F va en la B14). `CITA_AUTOTEST` = 3-501.18 (la 3-501.19 sí está en las reglas).
 
 ## 4. Memoria de traducción (`../heredar.py --kit taco`; `MEMORIA`: base, pizzería, hamburguesería, cafetería, ghost kitchen)
 
