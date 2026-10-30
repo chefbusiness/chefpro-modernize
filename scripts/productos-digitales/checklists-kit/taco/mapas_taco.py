@@ -59,8 +59,8 @@ TERMINOS_PROHIBIDOS = (r'(?i:\b(?:restaurants?(?! consultant)|host stands?|head 
                        r'(?<!sidewalk )cafes?|baristas?|shift leads?|kitchen leads?|bussers?|barbacks?|banquets?|'
                        r'BEOs?|commissary|venues?|line-up|pizzas?|pizzerias?|burgers?|plancha|tex-mex)\b)|\bMOD\b')
 TERMINO_PROHIBIDO_EJEMPLO = 'Scrape the plancha.'
-# gates_en.py G2 (gancho de la F2, SPEC §1 D-G2): nombres de plato US con palabra funcional española
-FRASES_OK_EXTRA = ('al pastor', 'Al pastor', 'Al Pastor')
+# gates_en.py G2 (FRASES_OK += FRASES_OK_EXTRA): nombres de plato US con palabra funcional española
+FRASES_OK_EXTRA = ('al pastor', 'Al pastor', 'Al Pastor', 'tinga de pollo', 'Tinga de pollo')
 REFERENCIAS_TRADUCTOR = ['taco/SPEC.md', 'SPEC.md §0-§3 y §7.2 (brief)', 'textos_en/glosario.json (glosario de la '
                          'prosa del kit base)', 'taco/textos_en/heredado.json (cómo se dijo ya cada cosa: base, '
                          'pizzería, hamburguesería, cafetería y ghost kitchen)', 'taco/mapas_taco.py: GLOSARIO, '
@@ -590,9 +590,9 @@ def autotest():
     if usados != GRADOS_F_SPEC:
         err.append('GRADOS_F_SPEC ≠ los °F de POR_CELDA / ADAPTAR / reglas de la taquería: sobra %s, falta %s'
                    % (sorted(GRADOS_F_SPEC - usados), sorted(usados - GRADOS_F_SPEC)))
-    for f in FRASES_OK_EXTRA:
-        if 'pastor' not in f.lower():
-            err.append('FRASES_OK_EXTRA solo para «al pastor»: %r' % f)
+    for f in FRASES_OK_EXTRA:                                    # solo platos con palabra funcional ES (si no, sobra)
+        if not re.search(r'\b(?:al|de|del|con|en)\b', f.lower()):
+            err.append('FRASES_OK_EXTRA sin palabra funcional ES (no hace falta): %r' % f)
     return err
 
 
