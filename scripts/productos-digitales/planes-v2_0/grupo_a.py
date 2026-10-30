@@ -304,7 +304,9 @@ SUPUESTOS_BASE = (
      'adicionales'),
     ('holgura_min', 'B67',
      'Holgura mínima sobre el punto de equilibrio', 0.15, motor.FMT_PCT,
-     'Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas'),
+     'Cuánto deben superar las ventas previstas a las del punto de equilibrio. '
+     'La caída que aguantas antes de entrar en pérdidas es algo menor: con un '
+     '15 % de holgura, un 13 % de lo previsto'),
     ('salario_convenio', 'B68',
      'Suelo salarial anual del convenio provincial (€)', 0, motor.FMT_EUR0,
      'El convenio PROVINCIAL de hostelería, no el SMI, es el suelo real. '
@@ -2906,8 +2908,11 @@ class Plan(object):
                 formulas=dict(
                     [(c, (lambda R, cc=c: '=' + R.c('cub_plan', cc) + '/'
                           + R.c('cub_dia_caja', cc) + '-1')) for c in cols]
-                    + [('E', '="Cuánto puedes caer antes de no poder pagar '
-                        'los costes fijos y la cuota. El mínimo exigible '
+                    + [('E', '="Cuánto superan tus ventas previstas a las del '
+                        'equilibrio de caja. La caída que aguantas antes de no '
+                        'poder pagar los costes fijos y la cuota es algo '
+                        'menor: con un 25 % de holgura, un 20 %. El '
+                        'mínimo exigible '
                         'está en la hoja de Supuestos"')]))
         # RD-22 — el umbral vivía DENTRO de la fórmula del formato
         # condicional, contra §7-bis.11: el comprador no podía ajustarlo sin

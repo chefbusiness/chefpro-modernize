@@ -15,7 +15,7 @@ línea sin punto final). Solo `traducir: true` va a los subagentes, en la tanda 
 Comprueba (sale ≠ 0 si falla): nº de párrafos = SPEC (131 / 167); TODO párrafo con texto tiene UN run (si alguno
 tuviera varios, lo lista en meta.multi_run con sus formatos: el ensamblador solo los acepta si todos los runs
 comparten formato); encabezados D22 en mapas.DOCX_ENCABEZADOS con estilo Heading 1; índice; cada fijo de mapas tiene
-texto en el ES; los índices de DOCX_MOVER / DOCX_RPR_DE / DOCX_NOTAS existen; página US Letter.
+texto en el ES; los índices de DOCX_MOVER / DOCX_RPR_DE / DOCX_NOTAS existen; página US Letter o A4 (el Word ES publicado es A4; el EN sale Letter por ensamblar_docx.py).
 
     python3 extraer_docx.py [--origen-repo DIR] [--salida DIR]
 """
@@ -36,6 +36,11 @@ import mapas                                                     # noqa: E402
 
 N_PARRAFOS_SPEC = mapas.DOCX_N_PARRAFOS
 LETTER = (7772400, 10058400)
+A4 = (7560310, 10692130)
+
+
+def _cerca(a, b, tol=20000):
+    return abs(a[0] - b[0]) <= tol and abs(a[1] - b[1]) <= tol
 
 
 def sha256(path):
@@ -148,8 +153,9 @@ def extraer(plan, repo):
         errores.append('%s: los Heading 1 del ES no son mapas.DOCX_ENCABEZADOS' % plan)
     s = d.sections[0]
     pagina = (s.page_width, s.page_height)
-    if pagina != LETTER:
-        errores.append('%s: la página no es US Letter (%s)' % (plan, pagina))
+    # El docx ES publicado es A4 (el ensamblador lo pasa a Letter en el EN): se acepta A4 o Letter en el ORIGEN ES.
+    if not (_cerca(pagina, LETTER) or _cerca(pagina, A4)):
+        errores.append('%s: la página no es US Letter ni A4 (%s)' % (plan, pagina))
     trad = [k for k, e in out.items() if e['traducir']]
     meta = OrderedDict([
         ('generado', datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()),

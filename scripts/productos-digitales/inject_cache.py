@@ -33,7 +33,7 @@ openpyxl, NO con regex sobre el XML (openpyxl escribe tildes como entidades &#24
 # 2026-08-22 (AICP): pycel devuelve a veces escalares de numpy (np.float64,
 # np.str_) y mas abajo solo se inyectan int/float/str nativos -> la celda se
 # quedaba sin cache en silencio. _nativo() los convierte antes de clasificar.
-import openpyxl, zipfile, re, shutil, os, html, logging, contextlib
+import openpyxl, zipfile, re, shutil, os, sys, html, logging, contextlib
 logging.disable(logging.CRITICAL)
 from pycel import ExcelCompiler
 
@@ -125,6 +125,15 @@ def inject(path):
             w = w.replace('</workbook>', '<calcPr calcId="124519" fullCalcOnLoad="1"/></workbook>')
         parts['xl/workbook.xml'] = w.encode('utf-8')
     z.close()
+    # 30-oct-2026 — Excel limita a 255 caracteres cada literal de texto de una fórmula: uno más largo le obliga a
+    # «reparar» el libro y borra la fórmula. Aquí se trocea en «"…"&"…"» (mismo valor y misma caché) en todo lo que
+    # pasa por este último paso. Detalle y gate (`--check`) en parche_xml_xlsx.py.
+    if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import parche_xml_xlsx as _plit
+    for n in list(parts):
+        if re.match(r'xl/worksheets/sheet\d+\.xml$', n):
+            parts[n] = _plit.parchear_xml(parts[n].decode('utf-8'), [], [], n).encode('utf-8')
     tmp = path + '.tmp'
     with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as zout:
         for n, data in parts.items():

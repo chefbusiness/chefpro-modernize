@@ -2384,7 +2384,7 @@ def hipervinculos(wb, det, informe):
 # ==========================================================================
 # Checklists — columna OK, desplegable y contador (§1.5 + §7-bis.21)
 # ==========================================================================
-MARCA_OK, MARCA_NO, MARCA_NA = '✓', '—', 'N/A'
+MARCA_OK, MARCA_NO, MARCA_NA = '✓', MARCA_PENDIENTE_TXT, 'N/A'
 VOCAB_MARCA = (MARCA_OK, MARCA_NO, MARCA_NA)
 SEM_CHECK = ((MARCA_OK, CF_VERDE_BG, CF_VERDE_FG),)
 
