@@ -429,8 +429,9 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
         ADAPTAR[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = 'Evento EN: «%s». %s' % (_evento, _dir)
 # aplicar_en.objetivo_ajuste / G3: la EN activa el ajuste también donde el ES tampoco cabía (lección de la pizzería)
 AJUSTE_MAQUETA_ES = True
-# Celdas ES con °C cuya EN NO lleva cifra en °F: ninguna (todas llevan su ADAPTAR o su POR_CELDA)
-CELSIUS_SIN_F = frozenset()
+# Celdas ES con °C cuya EN NO lleva cifra en °F: 01 «Apertura» B15 (F2: la errata del orden sube la comprobación del
+# cono, con sus °F, a la B14; en la B15 queda el montaje, sin temperatura)
+CELSIUS_SIN_F = frozenset({_AP + ('B15',)})
 
 # ==========================================================================
 # REGLAS_US: las del base + las de la taquería (fuente única de las cifras y normas que el kit puede afirmar)
@@ -468,8 +469,9 @@ REGLAS_US.update([
                       'research ES §7.3 (Cinco de Mayo, fiesta sobre todo de EE. UU.)')),
     ('unidades', ('kg → lb, litros → qt', '[criterio del kit] conversión')),
 ])
-# °F que el kit puede afirmar (G7): las del base que usa la taquería + 32 (calibración) + 145 / 155 (trompo)
-GRADOS_F_SPEC = {-31, -4, 0, 32, 41, 70, 135, 145, 155, 165}
+# °F que el kit puede afirmar (G7 = las cifras °F de mapas: POR_CELDA, ADAPTAR y REGLAS_US, también las del base, como
+# el lavamanos a 100 °F): las del base + 32 (calibración) + 145 / 155 (trompo)
+GRADOS_F_SPEC = {-31, -4, 0, 32, 41, 70, 100, 135, 145, 155, 165}
 
 # ==========================================================================
 # Pistas y dependencias de la taquería (extraer_textos.py)
@@ -584,11 +586,10 @@ def autotest():
             err.append('pestaña con coma (rompe el área de impresión): %r' % HOJAS[es])
     if CITA_AUTOTEST.strip('()').split()[-1] in ' '.join(f for _v, f in REGLAS_US.values()):
         err.append('CITA_AUTOTEST está en REGLAS_US: G7 no la cazaría')
-    # G7: los °F que dicen POR_CELDA, ADAPTAR y las reglas propias de la taquería son exactamente GRADOS_F_SPEC
-    usados = _grados(list(POR_CELDA.values()) + list(ADAPTAR.values())
-                     + [v for k, (v, _f) in REGLAS_US.items() if k not in _base.REGLAS_US])
+    # G7: los °F que dicen POR_CELDA, ADAPTAR y REGLAS_US (con las del base) son exactamente GRADOS_F_SPEC
+    usados = _grados(list(POR_CELDA.values()) + list(ADAPTAR.values()) + [v for v, _f in REGLAS_US.values()])
     if usados != GRADOS_F_SPEC:
-        err.append('GRADOS_F_SPEC ≠ los °F de POR_CELDA / ADAPTAR / reglas de la taquería: sobra %s, falta %s'
+        err.append('GRADOS_F_SPEC ≠ los °F de POR_CELDA / ADAPTAR / REGLAS_US: sobra %s, falta %s'
                    % (sorted(GRADOS_F_SPEC - usados), sorted(usados - GRADOS_F_SPEC)))
     for f in FRASES_OK_EXTRA:                                    # solo platos con palabra funcional ES (si no, sobra)
         if not re.search(r'\b(?:al|de|del|con|en)\b', f.lower()):
