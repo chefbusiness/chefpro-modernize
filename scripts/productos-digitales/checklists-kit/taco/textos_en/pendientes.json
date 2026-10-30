@@ -1,0 +1,5873 @@
+{
+ "meta": {
+  "kit": "taco",
+  "producto": "Taco Shop Checklists Kit Pro",
+  "n_pendientes": 458,
+  "n_palabras": 4982,
+  "motivos": {
+   "contexto": 1,
+   "nueva": 457
+  },
+  "n_heredadas": 32,
+  "heredadas_por_via": {
+   "exacta": 32
+  },
+  "heredadas_por_fuente": {
+   "base": 32
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "taco/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "taco/textos_en/heredado.json (cómo se dijo ya cada cosa: base, pizzería, hamburguesería, cafetería y ghost kitchen)",
+   "taco/mapas_taco.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../business-plans-en-12/F1-research-us-delta.md §6 y §9 (jerga del Taco Shop Business Plan Kit)",
+   "../GLOSARIO-JERGA-ES-EN.md (sección Taquería)"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0016",
+   "es": "▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "01 · Instrucciones · B20",
+    "02 · Instrucciones · B20",
+    "03 · Instrucciones · B20",
+    "… +6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ \"N/A\" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). \"—\" = not done: it still counts as pending and lowers the percentage, which is the point."
+  },
+  {
+   "id": "c0024",
+   "es": "Dónde encaja este fichero",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Instrucciones · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0025",
+   "es": "▸ Estás en 01-apertura-cierre-taqueria.xlsx: este ES el DETALLE por área del día (taquería) — cómo se abre y se cierra cada zona. Este kit no trae un fichero aparte de negocio ni de caja: el marco del día es este mismo.",
+   "grupo": "G1",
+   "palabras": 43,
+   "donde": [
+    "01 · Instrucciones · B35"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0030",
+   "es": "Checklist de Apertura — Taquería",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Taquería · A1"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0031",
+   "es": "Fecha: ___/___/______    Turno: ☐ Almuerzo  ☐ Cena    Responsable: _________________________",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Taquería · A2",
+    "01 · Cierre Taquería · A2",
+    "02 · Marinado y Montaje del Trompo · A2",
+    "… +16"
+   ],
+   "pistas": [
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»",
+    "Formularios: «Responsable de turno:» → «Shift manager:»; «Responsable:» → «Manager:»"
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0039",
+   "es": "  TEMPERATURAS Y EQUIPOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Taquería · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0040",
+   "es": "Registrar temperatura de la cámara de carne marinada (≤ 4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura Taquería · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe; carne marinada en el walk-in",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0043",
+   "es": "Registrar temperatura del congelador (≤ −18 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Apertura Taquería · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0044",
+   "es": "Registrar temperatura de la cámara de salsas y vegetales (≤ 4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "01 · Apertura Taquería · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "Comprobar que el expositor de la barra de salsas mantiene ≤ 4 °C antes de abrir",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura Taquería · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Pico de gallo y salsas con tomate cortado son TCS (FDA Food Code 1-201.10): a 41 °F o menos; el guacamole, trátalo como TCS; si la barra no mantiene 41 °F, time as a public health control con procedimiento escrito: hora de puesta marcada y descarte a las 4 h (FDA Food Code 3-501.19). Coletilla «— log reading: ____ °F» si la tarea pide lectura",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "Calibrar la sonda de temperatura del turno y anotar la desviación medida",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Apertura Taquería · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0050",
+   "es": "Comprobar el funcionamiento de la campana extractora y el sistema de extracción",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Apertura Taquería · B11"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "  TROMPO, PLANCHA Y COMAL",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Taquería · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0053",
+   "es": "Encender el trompo (asador vertical) y comprobar llama uniforme en todos los quemadores",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Taquería · B13"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "adaptar": "Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal y llama a la compañía de gas o al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0057",
+   "es": "Calibrar plancha y comal por zonas (alta y media) y anotar la temperatura de trabajo",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura Taquería · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0058",
+   "es": "Comprobar el nivel y el estado del aceite de la freidora antes del servicio",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Apertura Taquería · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0059",
+   "es": "Afilar el cuchillo de corte del trompo y dejarlo listo en su funda",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Taquería · B18"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0060",
+   "es": "  SALSAS Y GUARNICIONES",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Taquería · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Sacar las salsas crudas a la barra fría y comprobar ≤ 4 °C antes de abrir",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura Taquería · B20"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Pico de gallo y salsas con tomate cortado son TCS (FDA Food Code 1-201.10): a 41 °F o menos; el guacamole, trátalo como TCS; si la barra no mantiene 41 °F, time as a public health control con procedimiento escrito: hora de puesta marcada y descarte a las 4 h (FDA Food Code 3-501.19). Coletilla «— log reading: ____ °F» si la tarea pide lectura",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0062",
+   "es": "Verificar que el cartel de alérgenos está visible y marca la salsa macha (cacahuete y/o sésamo)",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "01 · Apertura Taquería · B21"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una taquería: salsa macha = cacahuete y/o sésamo, moles = frutos de cáscara, cacahuete o sésamo según la receta, tortilla de harina = trigo, queso y crema = leche; en UK, los 14; cartel = allergen sign",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Reponer cebolla, cilantro y limón en recipientes limpios, nunca sobre el resto anterior",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Taquería · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "Preparar la salsa macha (cacahuete y/o sésamo) del día y etiquetarla con fecha y hora",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "01 · Apertura Taquería · B23"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "Comprobar que cada salsa tiene su utensilio propio y que ninguno se comparte con la macha",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "01 · Apertura Taquería · B24"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0066",
+   "es": "Montar el encurtido de cebolla morada y jalapeños y etiquetarlo con fecha",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Apertura Taquería · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0067",
+   "es": "  TORTILLA Y GUISADOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Taquería · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0068",
+   "es": "Poner los guisados (cazuelas de relleno) en baño maría y comprobar ≥ 63 °C",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Taquería · B27"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "baño maría → steam table"
+   ],
+   "adaptar": "Mantenimiento en caliente (steam table): 135 °F o más (FDA Food Code 3-501.16); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0069",
+   "es": "Calentar el comal y calibrar el grosor de la primera tanda de tortilla de maíz",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Apertura Taquería · B28"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "Comprobar la reserva de tortilla de harina y de tortilla de maíz por separado",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Apertura Taquería · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0073",
+   "es": "Anotar la hora de entrada en baño maría de cada guisado (cazuelas de relleno)",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Apertura Taquería · B30"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "baño maría → steam table"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "Revisar el stock de limón, sal y salsas embotelladas de la barra",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Apertura Taquería · B31"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "  SALA, MOSTRADOR Y DELIVERY",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Taquería · A32"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0076",
+   "es": "Abrir el TPV y comprobar el fondo de caja inicial",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Taquería · B33"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Revisar mesas, barra y exterior: limpieza, sillas y cartelería",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Taquería · B34"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0080",
+   "es": "Comprobar que las apps de delivery están activas y con la carta actualizada",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Taquería · B35"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0081",
+   "es": "Revisar la previsión de reservas y grupos del turno",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Taquería · B36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0082",
+   "es": "Hacer el briefing pre-servicio con el equipo: trompo del día, guisados y salsas",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Apertura Taquería · B37"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "Checklist de Cierre — Taquería",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Taquería · A1"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "  TROMPO Y PLANCHA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Taquería · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0092",
+   "es": "Apagar el trompo (asador vertical) al cierre",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Taquería · B6"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Retirar la carne sobrante del trompo y registrar su destino: abatida o descartada",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Cierre Taquería · B7"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "abatir → cool (enfriado 135 → 70 °F en 2 h y → 41 °F en 4 h más, FDA Food Code 3-501.14); abatidor → blast chiller"
+   ],
+   "adaptar": "Carne sobrante del trompo: reutilizarla solo si tu departamento de salud lo permite (la regla del cono sobrante la fija el condado); si se guarda: Enfriado (sin «abatir»): de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14); tapado y con date marking: 7 días como máximo a 41 °F, día 1 = el de preparación (FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0094",
+   "es": "Vaciar, lavar y desinfectar la bandeja de grasas del asador vertical",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Cierre Taquería · B8"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0095",
+   "es": "Rascar y engrasar la plancha en caliente; limpiar el comal antes de que enfríe",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Cierre Taquería · B9"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0096",
+   "es": "Filtrar el aceite de la freidora y anotar la fecha del último cambio",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Cierre Taquería · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0097",
+   "es": "Guardar el cuchillo de corte del trompo limpio y en su funda",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Cierre Taquería · B11"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0098",
+   "es": "  SALSAS Y GUISADOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Taquería · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0099",
+   "es": "Descartar las salsas crudas del día y anotar la merma en litros",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Cierre Taquería · B13"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "kg → lb; tacos por kilo → tacos per pound; litros → quarts (qt)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "Descartar la salsa macha (cacahuete y/o sésamo) sobrante del día",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Cierre Taquería · B14"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0101",
+   "es": "Abatir el guisado apto y etiquetarlo con fecha y hora",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Taquería · B15"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "abatir → cool (enfriado 135 → 70 °F en 2 h y → 41 °F en 4 h más, FDA Food Code 3-501.14); abatidor → blast chiller"
+   ],
+   "adaptar": "Enfriado (sin «abatir»): de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14); tapado y con date marking: 7 días como máximo a 41 °F, día 1 = el de preparación (FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Descartar el guisado no apto y anotar el motivo",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Taquería · B16"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "Guardar la tortilla de maíz y la de harina sobrantes en recipientes separados",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Cierre Taquería · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "  LIMPIEZA Y RESIDUOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Taquería · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "Limpiar y desinfectar la barra de salsas por completo",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Taquería · B19"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Barra de salsas: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "Sacar la basura y separar los residuos según la normativa del municipio",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Cierre Taquería · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "Limpiar y desinfectar la licuadora y el molcajete del turno",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Taquería · B21"
+   ],
+   "pistas": [
+    "molcajete → molcajete; licuadora → blender"
+   ],
+   "adaptar": "Licuadora y molcajete: lavar, aclarar y sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); el lavado es lo que quita el alérgeno, no el sanitizante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0109",
+   "es": "Barrer y fregar cocina, barra y sala antes del cierre",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Taquería · B22"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0110",
+   "es": "Revisar que no quedan cuchillos ni utensilios fuera de su sitio",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Cierre Taquería · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "Comprobar que la puerta de la cámara y el congelador cierran bien",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Cierre Taquería · B24"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "  CAJA Y CIERRE DE NEGOCIO",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Taquería · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0113",
+   "es": "Hacer el arqueo de caja y anotar cualquier descuadre",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Taquería · B26"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank"
+   ],
+   "adaptar": "Arqueo → cash count; descuadre → over/short (cash drawer contra el POS Z report)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0114",
+   "es": "Repartir las propinas del turno entre el equipo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Taquería · B27"
+   ],
+   "pistas": [
+    "propinas → tips (tip pool por escrito; managers fuera del pool)"
+   ],
+   "adaptar": "Propinas: según tu política escrita de tip pool; los managers y supervisors no se quedan propinas (FLSA, 29 U.S.C. 203(m)(2)(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Cerrar el canal de delivery en todas las apps activas",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Taquería · B28"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Revisar que la hoja de temperaturas del turno queda firmada y archivada",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "01 · Cierre Taquería · B29"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0117",
+   "es": "Apagar luces, activar la alarma y cerrar la puerta principal",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Taquería · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0127",
+   "es": "▸ 01-apertura-cierre-taqueria.xlsx — el mismo día con el DETALLE por área (taquería).",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Instrucciones · B35",
+    "03 · Instrucciones · B35",
+    "04 · Instrucciones · B35",
+    "… +7"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "▸ Estás en 02-trompo-plancha-comal.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G1",
+   "palabras": 25,
+   "donde": [
+    "02 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "02-trompo-plancha-comal.xlsx",
+     "en": "02-trompo-griddle-comal-checklists.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "Checklist: Marinado y Montaje del Trompo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · A1"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "  MARINADO (VÍSPERA)",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "Pesar carne y adobo por lote; anotar número de lote y hora de inicio del marinado",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "Mantener el marinado a ≤ 4 °C el tiempo definido en tu ficha: ______ h",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe; el tiempo de marinado, el de tu receta (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0133",
+   "es": "Registrar el proveedor y el lote del cerdo y del adobo utilizados",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "Comprobar que el recipiente del marinado queda tapado y etiquetado",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Remover el lote a mitad del marinado y anotar la hora",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Registrar la temperatura de la cámara donde reposa el marinado — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "  MONTAJE DEL TROMPO (SI APLICA)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0138",
+   "es": "Comprobar el cono recibido: ≤ −18 °C si congelado, ≤ 4 °C si refrigerado",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "adaptar": "Cono (cone) recibido: congelado a 0 °F o menos o refrigerado a 41 °F o menos (FDA Food Code 3-501.16); si la tarea pide lectura, «____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "Montar el trompo (asador vertical): capas, grasa, piña y cebolla; anotar peso total",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B14"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0140",
+   "es": "Anotar la hora de montaje y la hora límite definida en tu APPCC (HACCP): ______ (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G1",
+   "palabras": 29,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B15"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); la hora límite la fija tu plan HACCP o tu departamento de salud (sin cifra); en el trompo, también el tiempo máximo en el broiler que fije tu condado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Comprobar que el trompo queda centrado y equilibrado sobre el eje",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B16"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Esperar a que la capa exterior esté cocinada antes del primer corte",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0143",
+   "es": "Registrar la temperatura de la capa exterior antes del primer corte — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B18"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Al pastor en el trompo (vertical broiler): la capa que se corta, al menos 145 °F (cerdo entero en capas, FDA Food Code 3-401.11) o la cifra de tu condado si es más estricta (algunos piden 155 °F); los 70 °C del ES NO se convierten (son la guía española); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0144",
+   "es": "  RENDIMIENTO",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0145",
+   "es": "Anotar el peso sobrante del trompo al cierre y calcular el rendimiento en tacos por kilo",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B20"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)",
+    "kg → lb; tacos por kilo → tacos per pound; litros → quarts (qt)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0146",
+   "es": "Anotar la merma de grasa y recortes del trompo del día",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B21"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0147",
+   "es": "Comparar el rendimiento del día con la media de la semana y anotar la desviación",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B22",
+    "04 · Nixtamal y Molienda · B20"
+   ],
+   "pistas": [
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0148",
+   "es": "Registrar el número de conos montados y consumidos en el turno",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0149",
+   "es": "Revisar el rendimiento del marinado: kilos de carne por lote frente a tacos servidos",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B24"
+   ],
+   "pistas": [
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)",
+    "kg → lb; tacos por kilo → tacos per pound; litros → quarts (qt)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0150",
+   "es": "Registrar cualquier incidencia del trompo del día para el parte de mantenimiento",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Marinado y Montaje del Trompo · B25"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0151",
+   "es": "Checklist: Corte, Plancha y Comal",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Corte, Plancha y Comal · A1"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0152",
+   "es": "  SONDA Y CORTE (SI APLICA)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Corte, Plancha y Comal · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0153",
+   "es": "Sondar la capa exterior antes de cada tanda de corte — anota la lectura: ____ °C (≥ 70 °C)",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Al pastor en el trompo (vertical broiler): la capa que se corta, al menos 145 °F (cerdo entero en capas, FDA Food Code 3-401.11) o la cifra de tu condado si es más estricta (algunos piden 155 °F); los 70 °C del ES NO se convierten (son la guía española); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0154",
+   "es": "Registrar la sonda al inicio y a mitad del servicio, como mínimo",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B7",
+    "06 · Taquero del Trompo · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0155",
+   "es": "Cortar sólo la capa cocinada; no rebanar hacia el interior todavía crudo",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0156",
+   "es": "Anotar la hora límite del fileteado definida en tu APPCC (HACCP): ______ (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G1",
+   "palabras": 26,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B9"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); la hora límite la fija tu plan HACCP o tu departamento de salud (sin cifra); en el trompo, también el tiempo máximo en el broiler que fije tu condado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0157",
+   "es": "Limpiar cuchillo y tabla del trompo antes de tocar producto listo para consumo",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B10",
+    "06 · Taquero del Trompo · B13"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0158",
+   "es": "  PLANCHA",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "02 · Corte, Plancha y Comal · A11",
+    "06 · Plancha y Freidora · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "Pasar a mantenimiento ≥ 63 °C la carne cortada que no se sirve al momento; nunca a ambiente",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B12"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Mantenimiento en caliente (steam table): 135 °F o más (FDA Food Code 3-501.16); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0160",
+   "es": "Comprobar la temperatura de trabajo de la plancha por zonas y anotarla",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Dorar los tacos y quesadillas a la plancha sin mezclar tandas de carne distintas",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B14"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Limpiar la plancha entre tandas para evitar que se acumule grasa quemada",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0163",
+   "es": "  COMAL",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "02 · Corte, Plancha y Comal · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0164",
+   "es": "Registrar las mermas de tortilla de maíz del comal por turno",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B17"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Calentar la tortilla de maíz y la de harina en zonas separadas del comal",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B18"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Comprobar que el comal mantiene temperatura uniforme y anotar cualquier zona fría",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Doblar y guardar la tortilla de maíz calentada en el cajón térmico hasta el servicio",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Limpiar los restos de masa del comal entre tandas",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B21"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0169",
+   "es": "  CONTAMINACIÓN CRUZADA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Corte, Plancha y Comal · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Usar tabla y cuchillo distintos para carne cruda y carne ya cocinada del trompo",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B23"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "Separar pinzas y bandejas de la tortilla de harina (gluten) de las de maíz",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B24"
+   ],
+   "pistas": [
+    "el alérgeno US es el trigo (wheat): «tortilla de harina (gluten)» → «flour tortilla (wheat)»; nunca prometer «gluten-free»"
+   ],
+   "adaptar": "Trigo, no «gluten»: el alérgeno US es el trigo (wheat). La tortilla de maíz no lleva gluten por receta, pero con freidora o comal compartidos NO se promete «gluten-free» (21 CFR 101.91)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0172",
+   "es": "Lavarse las manos entre la manipulación del cono crudo y del producto cortado",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B25"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Comprobar que ningún utensilio de la salsa macha (cacahuete y/o sésamo) toca otra salsa",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "02 · Corte, Plancha y Comal · B26"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0179",
+   "es": "▸ Estás en 03-appcc-salsas-alergenos.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G1",
+   "palabras": 25,
+   "donde": [
+    "03 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "03-appcc-salsas-alergenos.xlsx",
+     "en": "03-taco-shop-food-safety-salsa-bar-allergens.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Checklist: Temperaturas y Trazabilidad",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · A1"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "  TEMPERATURAS (2 VECES POR TURNO)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0182",
+   "es": "Registrar cámaras de refrigeración (≤ 4 °C) dos veces por turno — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Registrar el congelador (≤ −18 °C) dos veces por turno — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0184",
+   "es": "Comprobar que los guisados (cazuelas de relleno) están en baño maría antes de cada lectura",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B8"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "baño maría → steam table"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Registrar el baño maría de guisados (≥ 63 °C) dos veces por turno — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "baño maría → steam table"
+   ],
+   "adaptar": "Mantenimiento en caliente (steam table): 135 °F o más (FDA Food Code 3-501.16); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "Registrar la barra fría de salsas (≤ 4 °C) dos veces por turno — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Pico de gallo y salsas con tomate cortado son TCS (FDA Food Code 1-201.10): a 41 °F o menos; el guacamole, trátalo como TCS; si la barra no mantiene 41 °F, time as a public health control con procedimiento escrito: hora de puesta marcada y descarte a las 4 h (FDA Food Code 3-501.19). Coletilla «— log reading: ____ °F» si la tarea pide lectura",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0187",
+   "es": "Calibrar la sonda de temperatura al inicio del turno y anotar el resultado",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "  RECEPCIÓN Y TRAZABILIDAD",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Anotar lote y proveedor de la carne de pastor, de la masa o tortilla y de los chiles secos",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B13"
+   ],
+   "pistas": [
+    "al pastor → al pastor (tacos al pastor; nunca «pastor style»)",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "Registrar cada recepción: temperatura, estado del envase, caducidad y número de albarán",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "albarán → invoice / packing slip; caducidad → use-by / expiration date"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Comprobar que el cono del trompo (asador vertical) llega a ≤ −18 °C si congelado o ≤ 4 °C si refrigerado",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "adaptar": "Cono (cone) recibido: congelado a 0 °F o menos o refrigerado a 41 °F o menos (FDA Food Code 3-501.16); si la tarea pide lectura, «____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Rechazar y anotar cualquier recepción fuera de rango o con el envase dañado",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0194",
+   "es": "Etiquetar cada producto recibido con proveedor, lote y fecha de caducidad",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B17"
+   ],
+   "pistas": [
+    "albarán → invoice / packing slip; caducidad → use-by / expiration date"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0196",
+   "es": "Archivar los albaranes del día para la trazabilidad del turno",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B18"
+   ],
+   "pistas": [
+    "albarán → invoice / packing slip; caducidad → use-by / expiration date"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0197",
+   "es": "  CONGELACIÓN DE CRUDOS (SI APLICA) Y RECALENTADO",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Etiquetar el pescado congelado en preventiva con fecha de inicio y de fin del proceso",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "Registrar la hora de inicio y de fin del proceso de congelación preventiva del pescado",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Recalentar los guisados a ≥ 74 °C durante 15 s en el centro, en menos de 1 hora",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B23"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "adaptar": "Recalentado para mantener en caliente: 165 °F durante 15 s en el centro, en 2 h como máximo (FDA Food Code 3-403.11); sin la «1 hora» ni los 74 °C del ES",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Comprobar que el recalentado sale del frigorífico y alcanza su temperatura en el término de 1 hora",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B24"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recalentado para mantener en caliente: 165 °F durante 15 s en el centro, en 2 h como máximo (FDA Food Code 3-403.11); sin la «1 hora» ni los 74 °C del ES",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Descartar cualquier recalentado que no alcance ≥ 74 °C durante 15 s en el centro",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "03 · Temperaturas y Trazabilidad · B25"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recalentado para mantener en caliente: 165 °F durante 15 s en el centro, en 2 h como máximo (FDA Food Code 3-403.11); sin la «1 hora» ni los 74 °C del ES",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0204",
+   "es": "Checklist: Barra de Salsas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Barra de Salsas · A1"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0205",
+   "es": "  MONTAJE DE LA BARRA",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Barra de Salsas · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0206",
+   "es": "Medir la temperatura de pico de gallo, guacamole y salsas crudas — anota la lectura: ____ °C (≤ 4 °C)",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "03 · Barra de Salsas · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Pico de gallo y salsas con tomate cortado son TCS (FDA Food Code 1-201.10): a 41 °F o menos; el guacamole, trátalo como TCS; si la barra no mantiene 41 °F, time as a public health control con procedimiento escrito: hora de puesta marcada y descarte a las 4 h (FDA Food Code 3-501.19). Coletilla «— log reading: ____ °F» si la tarea pide lectura",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0207",
+   "es": "Anotar la hora de puesta en barra de cada salsa y su hora de descarte",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Barra de Salsas · B7"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Pico de gallo y salsas con tomate cortado son TCS (FDA Food Code 1-201.10): a 41 °F o menos; el guacamole, trátalo como TCS; si la barra no mantiene 41 °F, time as a public health control con procedimiento escrito: hora de puesta marcada y descarte a las 4 h (FDA Food Code 3-501.19). Coletilla «— log reading: ____ °F» si la tarea pide lectura",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0208",
+   "es": "Comprobar que cada salsa lleva su etiqueta con nombre y nivel de picante",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Barra de Salsas · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0209",
+   "es": "Verificar que el cartel de alérgenos marca la salsa macha (cacahuete y/o sésamo) en la barra",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "03 · Barra de Salsas · B9"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)",
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una taquería: salsa macha = cacahuete y/o sésamo, moles = frutos de cáscara, cacahuete o sésamo según la receta, tortilla de harina = trigo, queso y crema = leche; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0210",
+   "es": "Comprobar que cada salsa tiene su cuchara o pinza propia antes de abrir",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Barra de Salsas · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "  REPOSICIÓN POR TANDAS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Barra de Salsas · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0212",
+   "es": "Reponer por tandas pequeñas en recipiente limpio; PROHIBIDO rellenar sobre el resto anterior",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Barra de Salsas · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0213",
+   "es": "Cambiar cucharas y pinzas de cada salsa por turno y registrar el cambio",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Barra de Salsas · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Revisar visualmente la barra cada turno: restos, derrames y manipulación por el cliente",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Barra de Salsas · B14"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0215",
+   "es": "Reponer la salsa macha (cacahuete y/o sésamo) sin mezclar el recipiente nuevo con el usado",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "03 · Barra de Salsas · B15"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Comprobar la temperatura de la barra a mitad de servicio — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Barra de Salsas · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Pico de gallo y salsas con tomate cortado son TCS (FDA Food Code 1-201.10): a 41 °F o menos; el guacamole, trátalo como TCS; si la barra no mantiene 41 °F, time as a public health control con procedimiento escrito: hora de puesta marcada y descarte a las 4 h (FDA Food Code 3-501.19). Coletilla «— log reading: ____ °F» si la tarea pide lectura",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0217",
+   "es": "  DESCARTE Y MERMA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Barra de Salsas · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0218",
+   "es": "Descartar al cierre las salsas crudas del día y anotar la merma",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "03 · Barra de Salsas · B18"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0219",
+   "es": "Descartar la salsa macha (cacahuete y/o sésamo) sobrante y anotar la cantidad",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Barra de Salsas · B19"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Registrar cualquier salsa descartada antes de su hora por rotura de cadena de frío",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "03 · Barra de Salsas · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Limpiar y desinfectar los recipientes de la barra al cierre",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Barra de Salsas · B21"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Recipientes: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0222",
+   "es": "Comprobar que ningún recipiente queda con resto de salsa al guardarlo",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "03 · Barra de Salsas · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0223",
+   "es": "Checklist: Alérgenos y Cruzada",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Alérgenos y Cruzada · A1"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "  CACAHUETE Y SÉSAMO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Alérgenos y Cruzada · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "Marcar la salsa macha (cacahuete y/o sésamo) en el cartel y separarla físicamente del resto",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B6",
+    "06 · Salsas · B11"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Comprobar que la salsa macha (cacahuete y/o sésamo) no comparte utensilio con ninguna otra",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B7"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0227",
+   "es": "Revisar que el mostrador avisa siempre de la salsa macha (cacahuete y/o sésamo) al servir",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B8"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)",
+    "mostrador → counter; el puesto «Mostrador» → counter (staff)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0228",
+   "es": "Limpiar y desinfectar licuadora y molcajete tras preparar la salsa macha (cacahuete y/o sésamo)",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B9"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)",
+    "molcajete → molcajete; licuadora → blender"
+   ],
+   "adaptar": "Licuadora y molcajete tras la salsa macha: lavar, aclarar y sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); el lavado es lo que quita el alérgeno, no el sanitizante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0229",
+   "es": "  GLUTEN: MAÍZ FRENTE A HARINA",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Alérgenos y Cruzada · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0230",
+   "es": "Separar la tortilla de maíz (sin gluten) de la de harina de trigo: freidora, pinzas y superficie distintas",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B11"
+   ],
+   "pistas": [
+    "el alérgeno US es el trigo (wheat): «tortilla de harina (gluten)» → «flour tortilla (wheat)»; nunca prometer «gluten-free»"
+   ],
+   "adaptar": "Trigo, no «gluten»: el alérgeno US es el trigo (wheat). La tortilla de maíz no lleva gluten por receta, pero con freidora o comal compartidos NO se promete «gluten-free» (21 CFR 101.91)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0231",
+   "es": "Comprobar que la cesta de la freidora para tortilla de harina no toca la de tortilla de maíz",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "Revisar la ficha de alérgenos de totopos y tacos dorados antes del servicio",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B13"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "totopos → tortilla chips; capeados → battered (fish); tostadas y aguachiles → tostadas, aguachile"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0233",
+   "es": "Etiquetar la zona de tortilla de harina para que el equipo no la confunda con la de maíz",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "  LÁCTEOS Y FRUTOS DE CÁSCARA",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Alérgenos y Cruzada · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0235",
+   "es": "Revisar la ficha de alérgenos de los moles (frutos de cáscara, sésamo) antes del servicio",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B16"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una taquería: salsa macha = cacahuete y/o sésamo, moles = frutos de cáscara, cacahuete o sésamo según la receta, tortilla de harina = trigo, queso y crema = leche; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0236",
+   "es": "Comprobar los lácteos (crema, queso) de cada guarnición en la ficha de alérgenos",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B17"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Separar los frutos de cáscara de repostería del resto de la barra de salsas",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B18"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0238",
+   "es": "  FICHAS Y CAMBIOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Alérgenos y Cruzada · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "Comprobar que el mostrador sabe dar la información de alérgenos de los 14 de declaración obligatoria",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B20"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "mostrador → counter; el puesto «Mostrador» → counter (staff)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una taquería: salsa macha = cacahuete y/o sésamo, moles = frutos de cáscara, cacahuete o sésamo según la receta, tortilla de harina = trigo, queso y crema = leche; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Registrar cada cambio de proveedor o de receta que altere una ficha de alérgenos",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B21"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "Comprobar que la información de alérgenos es gratuita y accesible al cliente, por escrito",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B22"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Aviso ESCRITO de los alérgenos principales en lo que se sirve sin envasar (carta, cartel o tarjeta), donde tu estado haya adoptado el FDA Food Code 2022 (3-602.12(C)); sin «14 de declaración obligatoria» ni «gratuita»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Actualizar la carta y la app de delivery tras cualquier cambio de ficha de alérgenos",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Alérgenos y Cruzada · B23"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "▸ Estás en 04-nixtamal-tortilla-guisados.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G1",
+   "palabras": 25,
+   "donde": [
+    "04 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "04-nixtamal-tortilla-guisados.xlsx",
+     "en": "04-nixtamal-masa-tortilla-guisados-checklists.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Checklist: Nixtamal y Molienda",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Nixtamal y Molienda · A1"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0250",
+   "es": "  COCCIÓN Y REPOSO (SI APLICA)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Nixtamal y Molienda · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0251",
+   "es": "Pesar maíz y cal, y anotar la hora de inicio de cocción del nixtamal (maíz cocido con cal)",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "04 · Nixtamal y Molienda · B6"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0252",
+   "es": "Registrar el proveedor y el lote del maíz y de la cal utilizados",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "04 · Nixtamal y Molienda · B7"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Anotar cualquier incidencia de la cocción: maíz duro, exceso de cal o tiempo fuera de rango",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "04 · Nixtamal y Molienda · B8"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0254",
+   "es": "Registrar el tiempo de reposo y la hora de lavado del nixtamal",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "04 · Nixtamal y Molienda · B9"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Comprobar que el maíz queda bien enjuagado antes de pasar a la molienda",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "04 · Nixtamal y Molienda · B10"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "  MOLIENDA",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Nixtamal y Molienda · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Limpiar y desinfectar el molino ANTES de moler: punto crítico de la tortillería (obrador de tortilla de maíz)",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "04 · Nixtamal y Molienda · B12"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "adaptar": "Molino: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0258",
+   "es": "Anotar la hora de molienda y la temperatura de conservación de la masa",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "04 · Nixtamal y Molienda · B13",
+    "06 · Tortillería · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "adaptar": "La masa fresca y el nixtamal son alimento vegetal tratado por calor, TCS (FDA Food Code 1-201.10): a 41 °F o menos, o time as a public health control con procedimiento escrito (FDA Food Code 3-501.19); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Comprobar la textura y el grosor de la masa recién molida",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "04 · Nixtamal y Molienda · B14"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Limpiar y desinfectar el molino DESPUÉS de moler y dejarlo seco",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "04 · Nixtamal y Molienda · B15"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Registrar cualquier avería o incidencia del molino para el parte de mantenimiento",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "04 · Nixtamal y Molienda · B16"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "  RENDIMIENTO Y CONSERVACIÓN",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Nixtamal y Molienda · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Anotar la hora límite de la masa definida en tu APPCC (HACCP): ______ (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G1",
+   "palabras": 27,
+   "donde": [
+    "04 · Nixtamal y Molienda · B18",
+    "06 · Tortillería · B9"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); la hora límite la fija tu plan HACCP o tu departamento de salud (sin cifra) | «Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); la hora límite la fija tu plan HACCP o tu departamento de salud (sin cifra). La masa fresca y el nixtamal son alimento vegetal tratado por calor, TCS (FDA Food Code 1-201.10): a 41 °F o menos, o time as a public health control con procedimiento escrito (FDA Food Code 3-501.19); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Registrar el rendimiento: kg de maíz, kg de masa y número de tortillas",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "04 · Nixtamal y Molienda · B19"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina",
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)",
+    "kg → lb; tacos por kilo → tacos per pound; litros → quarts (qt)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0265",
+   "es": "Comprobar la temperatura de conservación de la masa hasta su uso — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "04 · Nixtamal y Molienda · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "adaptar": "La masa fresca y el nixtamal son alimento vegetal tratado por calor, TCS (FDA Food Code 1-201.10): a 41 °F o menos, o time as a public health control con procedimiento escrito (FDA Food Code 3-501.19); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0266",
+   "es": "Descartar la masa que supere la hora límite definida en tu APPCC (HACCP) (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G1",
+   "palabras": 27,
+   "donde": [
+    "04 · Nixtamal y Molienda · B22"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); la hora límite la fija tu plan HACCP o tu departamento de salud (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0267",
+   "es": "Checklist: Tortilla y Comal",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Tortilla y Comal · A1"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0268",
+   "es": "  CALIBRADO",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Tortilla y Comal · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0269",
+   "es": "Calibrar la tortilladora al arranque: grosor y peso por pieza",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "04 · Tortilla y Comal · B6",
+    "06 · Tortillería · B11"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Calentar el comal y comprobar que mantiene temperatura uniforme por zonas",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "04 · Tortilla y Comal · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "Ajustar el grosor de la tortilla de maíz frente al de la tortilla de harina",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "04 · Tortilla y Comal · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0272",
+   "es": "Comprobar el peso de una muestra de tortillas de maíz al inicio del turno",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "04 · Tortilla y Comal · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0273",
+   "es": "  PRODUCCIÓN Y MERMAS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Tortilla y Comal · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0274",
+   "es": "Anotar las mermas de tortilla de maíz y de harina por turno y su causa",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "04 · Tortilla y Comal · B11"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "Doblar y guardar la tortilla de maíz en el cajón térmico hasta el servicio",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "04 · Tortilla y Comal · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0276",
+   "es": "Registrar la producción total de tortilla de maíz y de harina del turno",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "04 · Tortilla y Comal · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0277",
+   "es": "Limpiar los restos de masa del comal y de la tortilladora entre tandas",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "04 · Tortilla y Comal · B14"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0278",
+   "es": "  TORTILLA COMPRADA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Tortilla y Comal · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Registrar la recepción de tortilla de maíz o de harina comprada: proveedor, lote y temperatura",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "04 · Tortilla y Comal · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "Comprobar que la tortilla de harina se almacena separada de la de maíz",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "04 · Tortilla y Comal · B17",
+    "06 · Tortillería · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "Revisar la fecha de caducidad de la tortilla comprada, de maíz o de harina, antes de usarla",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "04 · Tortilla y Comal · B18"
+   ],
+   "pistas": [
+    "albarán → invoice / packing slip; caducidad → use-by / expiration date"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "Checklist: Guisados y Rotación",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Guisados y Rotación · A1"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "  ELABORACIÓN",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Guisados y Rotación · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "Registrar el lote de carne y de verdura usado en cada guisado (cazuelas de relleno) del día",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "04 · Guisados y Rotación · B6"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "Anotar hora de elaboración y hora de entrada en baño maría de cada guisado (cazuelas de relleno)",
+   "grupo": "G1",
+   "palabras": 17,
+   "donde": [
+    "04 · Guisados y Rotación · B7"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "baño maría → steam table"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "Cocinar el pollo del guisado (tinga) a ≥ 74 °C durante ≥ 1 s en el centro",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "04 · Guisados y Rotación · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "adaptar": "Aves: 165 °F en el centro, instantáneo (FDA Food Code 3-401.11); sin «74 °C durante ≥ 1 s»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "Etiquetar cada guisado con nombre, fecha y hora de elaboración",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "04 · Guisados y Rotación · B9"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "  BAÑO MARÍA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Guisados y Rotación · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "Comprobar ≥ 63 °C en cada cazuela con dos lecturas por turno — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 16,
+   "donde": [
+    "04 · Guisados y Rotación · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "adaptar": "Mantenimiento en caliente (steam table): 135 °F o más (FDA Food Code 3-501.16); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "Anotar la hora límite de cada guisado (cazuela de relleno) en servicio",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "04 · Guisados y Rotación · B12"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Remover cada guisado del baño maría para evitar zonas frías",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "04 · Guisados y Rotación · B13"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "baño maría → steam table"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Recalentar a ≥ 74 °C durante 15 s en el centro, en menos de 1 hora desde que sale del frío",
+   "grupo": "G1",
+   "palabras": 20,
+   "donde": [
+    "04 · Guisados y Rotación · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recalentado para mantener en caliente: 165 °F durante 15 s en el centro, en 2 h como máximo (FDA Food Code 3-403.11); sin la «1 hora» ni los 74 °C del ES",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Comprobar la rotación: primero lo elaborado antes (PEPS)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Guisados y Rotación · B15"
+   ],
+   "pistas": [
+    "PEPS → FIFO"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "  SOBRANTE Y MERMA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Guisados y Rotación · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0295",
+   "es": "Comprobar que ningún sobrante supera la hora límite definida en tu APPCC (HACCP) (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G1",
+   "palabras": 27,
+   "donde": [
+    "04 · Guisados y Rotación · B17"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); la hora límite la fija tu plan HACCP o tu departamento de salud (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0296",
+   "es": "Etiquetar y abatir el sobrante apto; descartar el no apto y anotar la merma",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "04 · Guisados y Rotación · B18"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)",
+    "abatir → cool (enfriado 135 → 70 °F en 2 h y → 41 °F en 4 h más, FDA Food Code 3-501.14); abatidor → blast chiller"
+   ],
+   "adaptar": "Enfriado (sin «abatir»): de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14); tapado y con date marking: 7 días como máximo a 41 °F, día 1 = el de preparación (FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0297",
+   "es": "Registrar la merma de cada guisado del turno y su motivo",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "04 · Guisados y Rotación · B19"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0298",
+   "es": "Comparar la merma del día con la media de la semana y anotar la desviación",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "04 · Guisados y Rotación · B20"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "▸ Estás en 05-tareas-manager.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "05 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "05-tareas-manager.xlsx",
+     "en": "05-taqueria-manager-checklist.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "Checklist: Tareas Diarias Manager",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Tareas Diarias Manager · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "  ANTES DE APERTURA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Diarias Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0306",
+   "es": "Revisar la hoja de temperaturas firmada del turno anterior y archivarla",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Tareas Diarias Manager · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "Medir el rendimiento del trompo (asador vertical) del día: kilos montados y sobrante",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · Tareas Diarias Manager · B7"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)",
+    "kg → lb; tacos por kilo → tacos per pound; litros → quarts (qt)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "Repasar la previsión de reservas y de grupos del turno",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · Tareas Diarias Manager · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Comprobar que la barra de salsas está lista antes de abrir",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Tareas Diarias Manager · B9"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Revisar la previsión de delivery del turno",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Diarias Manager · B10"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Supervisar los tiempos y las incidencias del canal de delivery",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · Tareas Diarias Manager · B12"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Revisar el escandallo (costeo) del taco al pastor con las ventas del día",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · Tareas Diarias Manager · B13"
+   ],
+   "pistas": [
+    "al pastor → al pastor (tacos al pastor; nunca «pastor style»)",
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Revisar el escandallo (costeo) de los guisados (cazuelas de relleno) más vendidos",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "05 · Tareas Diarias Manager · B14"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Registrar la merma del trompo del turno y anotar la causa",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Tareas Diarias Manager · B15"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Resolver las incidencias de sala y de mostrador que suban del turno",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "05 · Tareas Diarias Manager · B16"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "mostrador → counter; el puesto «Mostrador» → counter (staff)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "  CIERRE DE NEGOCIO",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Diarias Manager · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Hacer el arqueo y el cuadre de caja y dejar constancia del reparto de propinas",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "05 · Tareas Diarias Manager · B18"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "propinas → tips (tip pool por escrito; managers fuera del pool)"
+   ],
+   "adaptar": "Arqueo y cuadre → cash count y over/short; Propinas: según tu política escrita de tip pool; los managers y supervisors no se quedan propinas (FLSA, 29 U.S.C. 203(m)(2)(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0320",
+   "es": "Cerrar el canal de delivery y revisar el balance del turno",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Tareas Diarias Manager · B19"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0321",
+   "es": "Responder las reseñas del día",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Tareas Diarias Manager · B20"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "reseñas → reviews (Google, Yelp); redes → social media"
+   ],
+   "adaptar": "Plataformas US: Google y Yelp",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Revisar la merma de la barra de salsas y anotar el total del turno",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "05 · Tareas Diarias Manager · B21"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0323",
+   "es": "Repasar con el equipo las incidencias del turno antes de cerrar",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Tareas Diarias Manager · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0324",
+   "es": "Checklist: Tareas Semanales Manager",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Tareas Semanales Manager · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "  COMPRAS E IMPORTACIÓN",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Semanales Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Lanzar el pedido al importador de chile seco y de masa, con su plazo: ______ días",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "05 · Tareas Semanales Manager · B6"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina",
+    "importador → Mexican food distributor (en EE. UU. no se importa)"
+   ],
+   "adaptar": "En EE. UU. el chile seco, la masa harina y el maíz para nixtamal se compran a un distribuidor de productos mexicanos (Mexican food distributor), no a un «importador»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0327",
+   "es": "Comparar precios de cerdo y de res con al menos dos proveedores",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "05 · Tareas Semanales Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "Revisar el estado de la recepción y la documentación del último pedido de importación",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "05 · Tareas Semanales Manager · B8"
+   ],
+   "pistas": [
+    "importador → Mexican food distributor (en EE. UU. no se importa)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0329",
+   "es": "Hacer inventario de bebida, mezcal y tequila",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Semanales Manager · B9"
+   ],
+   "pistas": [
+    "mezcal, tequila y cerveza solo con licencia de alcohol, 21+ con ID"
+   ],
+   "adaptar": "Mezcal, tequila y cerveza solo si tu taquería tiene la licencia de alcohol del estado (beer & wine o liquor license); venta a mayores de 21 con ID",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0330",
+   "es": "  COSTES",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Tareas Semanales Manager · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0331",
+   "es": "Revisar el escandallo (costeo) de los 5 tacos más vendidos de la semana",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · Tareas Semanales Manager · B11",
+    "07 · Tareas Semanales · B19"
+   ],
+   "pistas": [
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0332",
+   "es": "Comparar la merma semanal del trompo con la semana anterior",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · Tareas Semanales Manager · B12"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0333",
+   "es": "Revisar el gasto de la barra de salsas frente a la venta de la semana",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "05 · Tareas Semanales Manager · B13"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "Planificar los turnos de la semana siguiente",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Semanales Manager · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0337",
+   "es": "Dar 15 minutos de formación al equipo y anotar el tema tratado",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "05 · Tareas Semanales Manager · B17",
+    "07 · Tareas Semanales · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "▸ Estás en 06-tareas-perfiles.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "06 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "06-tareas-perfiles.xlsx",
+     "en": "06-taco-shop-duties-by-role.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "Checklist: Taquero del Trompo",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Taquero del Trompo · A1"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0347",
+   "es": "  MONTAJE Y SONDA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Taquero del Trompo · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0348",
+   "es": "Comprobar el cono del trompo (asador vertical) recibido: ≤ −18 °C si congelado, ≤ 4 °C si refrigerado",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "06 · Taquero del Trompo · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "adaptar": "Cono (cone) recibido: congelado a 0 °F o menos o refrigerado a 41 °F o menos (FDA Food Code 3-501.16); si la tarea pide lectura, «____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0349",
+   "es": "Montar el trompo del día: capas, grasa, piña y cebolla, y anotar el peso total",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "06 · Taquero del Trompo · B7"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "Sondar la capa exterior antes de cada tanda de corte y anotar la lectura: ____ °C",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "06 · Taquero del Trompo · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Al pastor en el trompo (vertical broiler): la capa que se corta, al menos 145 °F (cerdo entero en capas, FDA Food Code 3-401.11) o la cifra de tu condado si es más estricta (algunos piden 155 °F); los 70 °C del ES NO se convierten (son la guía española); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "  CORTE Y LIMPIEZA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Taquero del Trompo · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0352",
+   "es": "Cortar sólo la capa cocinada del trompo; no rebanar hacia el interior todavía crudo",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Taquero del Trompo · B11"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0353",
+   "es": "Pasar a mantenimiento ≥ 63 °C la carne cortada que no se sirve al momento",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Taquero del Trompo · B12"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Mantenimiento en caliente (steam table): 135 °F o más (FDA Food Code 3-501.16); si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0354",
+   "es": "Vaciar, lavar y desinfectar la bandeja de grasas del trompo al cierre",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "06 · Taquero del Trompo · B14"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "Checklist: Tortillería",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Tortillería · A1"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0356",
+   "es": "  NIXTAMAL Y MOLIENDA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Tortillería · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0357",
+   "es": "Pesar el maíz y la cal del nixtamal y anotar la hora de inicio de la cocción",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "06 · Tortillería · B6"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0358",
+   "es": "Desinfectar el molino de la tortillería (obrador de tortilla de maíz) antes de moler",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Tortillería · B7"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "adaptar": "Molino: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0359",
+   "es": "  PRENSADO Y COMAL",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Tortillería · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0360",
+   "es": "Anotar las mermas de tortilla por turno y su causa",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Tortillería · B12"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0361",
+   "es": "Limpiar a fondo la tortilladora al cierre y dejarla seca",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Tortillería · B14"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0362",
+   "es": "Checklist: Salsas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Salsas · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0363",
+   "es": "  SALSAS Y BARRA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Salsas · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0364",
+   "es": "Asignar al salsero/a (responsable de salsas) la molienda y el etiquetado de las salsas del día",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "06 · Salsas · B6"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina",
+    "salsero/a → salsa prep cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0366",
+   "es": "Tostar y moler los chiles del día y anotar la cantidad",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Salsas · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0367",
+   "es": "Elaborar las salsas cocidas y etiquetarlas con fecha y hora de elaboración",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "06 · Salsas · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "Montar la barra y comprobar ≤ 4 °C en las salsas crudas",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Salsas · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Pico de gallo y salsas con tomate cortado son TCS (FDA Food Code 1-201.10): a 41 °F o menos; el guacamole, trátalo como TCS; si la barra no mantiene 41 °F, time as a public health control con procedimiento escrito: hora de puesta marcada y descarte a las 4 h (FDA Food Code 3-501.19). Coletilla «— log reading: ____ °F» si la tarea pide lectura",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "  ALÉRGENOS Y LIMPIEZA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Salsas · A10"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0370",
+   "es": "Reponer por tandas en recipiente limpio; nunca rellenar sobre el resto anterior",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "06 · Salsas · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0371",
+   "es": "Descartar las salsas crudas al cierre y anotar la merma",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Salsas · B13"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0372",
+   "es": "Limpiar y desinfectar licuadora y molcajete entre salsas distintas",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Salsas · B14"
+   ],
+   "pistas": [
+    "molcajete → molcajete; licuadora → blender"
+   ],
+   "adaptar": "lavar, aclarar y sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); el lavado es lo que quita el alérgeno, no el sanitizante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Checklist: Plancha y Freidora",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Plancha y Freidora · A1"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0374",
+   "es": "Calibrar la plancha por zonas al arranque y anotar la temperatura de trabajo",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "06 · Plancha y Freidora · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0375",
+   "es": "Dorar los tacos y quesadillas a la plancha vigilando que no se quemen",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "06 · Plancha y Freidora · B7"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "Rascar y engrasar la plancha entre tandas de servicio",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Plancha y Freidora · B8"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0377",
+   "es": "Rascar y engrasar la plancha en caliente al cierre",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Plancha y Freidora · B9"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle / griddle (NUNCA «plancha»); el puesto «Plancha» → griddle cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "  FREIDORA Y SEPARACIÓN",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Plancha y Freidora · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "Comprobar el punto de humo del aceite antes del servicio y anotar la incidencia",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Plancha y Freidora · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "Usar pinzas y cesta distintas para la tortilla de harina y la de maíz",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Plancha y Freidora · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Filtrar el aceite de la freidora al cierre y anotar la fecha del último cambio",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "06 · Plancha y Freidora · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "Registrar las mermas de totopos y tortilla frita por turno",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Plancha y Freidora · B14"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "totopos → tortilla chips; capeados → battered (fish); tostadas y aguachiles → tostadas, aguachile",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "Checklist: Mostrador y Caja",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Mostrador y Caja · A1"
+   ],
+   "pistas": [
+    "mostrador → counter; el puesto «Mostrador» → counter (staff)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "  COMANDA Y ALÉRGENOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Mostrador y Caja · A5"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Preguntar por alergias e intolerancias antes de cerrar cada comanda",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Mostrador y Caja · B6"
+   ],
+   "pistas": [
+    "comanda → ticket; 86 → 86'd"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Dar la información de alérgenos por escrito cuando el cliente la pida",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "06 · Mostrador y Caja · B7"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Aviso ESCRITO de los alérgenos principales en lo que se sirve sin envasar (carta, cartel o tarjeta), donde tu estado haya adoptado el FDA Food Code 2022 (3-602.12(C)); sin «14 de declaración obligatoria» ni «gratuita»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0387",
+   "es": "Avisar en cocina si un pedido lleva salsa macha (cacahuete y/o sésamo) aparte",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Mostrador y Caja · B8"
+   ],
+   "pistas": [
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Repetir la comanda al cliente antes de cobrar",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Mostrador y Caja · B9"
+   ],
+   "pistas": [
+    "comanda → ticket; 86 → 86'd"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "  COBRO Y DELIVERY",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Mostrador y Caja · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0390",
+   "es": "Cobrar y entregar el ticket con el desglose correcto",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Mostrador y Caja · B11"
+   ],
+   "adaptar": "Ticket → receipt, con el sales tax desglosado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0391",
+   "es": "Gestionar la cola en hora punta y avisar a cocina si se satura",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "06 · Mostrador y Caja · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0392",
+   "es": "Comprobar que el pedido de delivery sale sellado y con el ticket correcto",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "06 · Mostrador y Caja · B13"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Registrar las incidencias de cobro y de delivery del turno",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Mostrador y Caja · B14"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Checklist: Reparto y Delivery",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Reparto y Delivery · A1"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "  PREPARACIÓN Y SELLADO (SI APLICA)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Reparto y Delivery · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Sellar cada pedido de delivery con el precinto de garantía",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Reparto y Delivery · B6"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "adaptar": "Precinto de garantía → tamper-evident seal (etiqueta o bolsa sellada)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0399",
+   "es": "Comprobar que el pedido lleva los cubiertos y las salsas solicitadas",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Reparto y Delivery · B7"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0400",
+   "es": "Medir la temperatura de salida del pedido caliente antes de entregarlo al repartidor",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "06 · Reparto y Delivery · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "adaptar": "Bolsa térmica (insulated delivery bag): lo caliente a 135 °F o más y lo frío aparte a 41 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0401",
+   "es": "Anotar la hora de salida y la hora estimada de entrega de cada pedido",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Reparto y Delivery · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0402",
+   "es": "  TIEMPOS Y TEMPERATURA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Reparto y Delivery · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0403",
+   "es": "Registrar el tiempo real de entrega frente al estimado",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Reparto y Delivery · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0404",
+   "es": "Avisar a mostrador si un pedido supera el tiempo máximo de entrega",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "06 · Reparto y Delivery · B12"
+   ],
+   "pistas": [
+    "mostrador → counter; el puesto «Mostrador» → counter (staff)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0405",
+   "es": "Registrar cualquier incidencia de reparto: devolución, retraso o reclamación",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Reparto y Delivery · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0406",
+   "es": "Revisar el estado de las bolsas térmicas y sustituir las dañadas",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Reparto y Delivery · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0411",
+   "es": "▸ Estás en 07-semanales-mensuales.xlsx: lo que NO es diario (semanal, mensual, trimestral y anual). El día a día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G2",
+   "palabras": 27,
+   "donde": [
+    "07 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "07-semanales-mensuales.xlsx",
+     "en": "07-taco-shop-weekly-monthly-cleaning-checklist.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0412",
+   "es": "Checklist: Tareas Semanales",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "07 · Tareas Semanales · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0415",
+   "es": "  LIMPIEZA PROFUNDA",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "07 · Tareas Semanales · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0416",
+   "es": "Desengrasar a fondo el trompo (asador vertical) y la campana extractora",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Tareas Semanales · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
+   ],
+   "adaptar": "Campana (hood): los filtros los desengrasa el equipo; los conductos y la campana completa, una empresa certificada (NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Afilar los cuchillos de corte y registrar la fecha",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Tareas Semanales · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Limpiar a fondo el molino y la tortilladora, con desmontaje completo",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Tareas Semanales · B8"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Limpiar a fondo la freidora y cambiar el aceite",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Tareas Semanales · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Desinfectar a fondo la barra de salsas y sus utensilios",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "07 · Tareas Semanales · B10"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)"
+   ],
+   "adaptar": "Barra de salsas y utensilios: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "  INVENTARIO Y ALMACÉN",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "07 · Tareas Semanales · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "Hacer inventario de chiles secos y revisar el control de plagas del almacén seco",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "07 · Tareas Semanales · B12"
+   ],
+   "adaptar": "Control de plagas por un licensed pest control operator; el equipo revisa señales en el almacén seco",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "Revisar la caducidad de los productos en cámara y descartar lo caducado",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "07 · Tareas Semanales · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "albarán → invoice / packing slip; caducidad → use-by / expiration date"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Contar el stock de tortilla comprada y de envases de delivery",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Tareas Semanales · B14"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0431",
+   "es": "Revisar el inventario de mezcal y tequila de la semana",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "07 · Tareas Semanales · B15"
+   ],
+   "pistas": [
+    "mezcal, tequila y cerveza solo con licencia de alcohol, 21+ con ID"
+   ],
+   "adaptar": "Mezcal, tequila y cerveza solo si tu taquería tiene la licencia de alcohol del estado (beer & wine o liquor license); venta a mayores de 21 con ID",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0432",
+   "es": "Comprobar el estado de las bolsas térmicas y del material de reparto",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "07 · Tareas Semanales · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "Responder las reseñas acumuladas de la semana",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Tareas Semanales · B20"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "reseñas → reviews (Google, Yelp); redes → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0435",
+   "es": "Repasar con el equipo las incidencias de la semana antes del fin de semana",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "07 · Tareas Semanales · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0436",
+   "es": "Checklist: Tareas Mensuales",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "07 · Tareas Mensuales · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "  INSTALACIONES",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "07 · Tareas Mensuales · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "Revisar la instalación de gas del trompo (asador vertical) y del comal, y archivar el parte",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "07 · Tareas Mensuales · B6",
+    "B02 · Calendario Anual · C8"
+   ],
+   "pistas": [
+    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "adaptar": "Evento EN: «Gas equipment check». Gas en EE. UU.: el personal hace la inspección visual (mangueras, conexiones y llaves del trompo, la plancha (griddle) y el comal; sin olor a gas); la instalación la revisa un profesional con licencia con la frecuencia que pida tu código local, y se archiva su informe. Si huele a gas: no encender nada, salir y llamar a la compañía de gas o al 911 desde fuera | Gas en EE. UU.: el personal hace la inspección visual (mangueras, conexiones y llaves del trompo, la plancha (griddle) y el comal; sin olor a gas); la instalación la revisa un profesional con licencia con la frecuencia que pida tu código local, y se archiva su informe. Si huele a gas: no encender nada, salir y llamar a la compañía de gas o al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0442",
+   "es": "Calibrar las sondas y los termómetros y anotar la desviación medida",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Tareas Mensuales · B7",
+    "B02 · Calendario Anual · C10"
+   ],
+   "adaptar": "Calibración por el método del punto de hielo (32 °F) | Evento EN: «Thermometer calibration». Calibrar sondas y termómetros por el método del punto de hielo (32 °F) y anotar la desviación",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0444",
+   "es": "Limpiar los filtros de extracción y registrar la fecha y el responsable",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "07 · Tareas Mensuales · B8",
+    "B02 · Calendario Anual · C25"
+   ],
+   "adaptar": "Campana (hood): los filtros los desengrasa el equipo; los conductos y la campana completa, una empresa certificada (NFPA 96) | Evento EN: «Hood filter cleaning». Campana (hood): los filtros los desengrasa el equipo; los conductos y la campana completa, una empresa certificada (NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0445",
+   "es": "Revisar el sistema de gas y la campana extractora de la tortillería (obrador de tortilla de maíz)",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "07 · Tareas Mensuales · B9"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer"
+   ],
+   "adaptar": "Gas en EE. UU.: el personal hace la inspección visual (mangueras, conexiones y llaves del trompo, la plancha (griddle) y el comal; sin olor a gas); la instalación la revisa un profesional con licencia con la frecuencia que pida tu código local, y se archiva su informe. Si huele a gas: no encender nada, salir y llamar a la compañía de gas o al 911 desde fuera. Campana (hood): los filtros los desengrasa el equipo; los conductos y la campana completa, una empresa certificada (NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0447",
+   "es": "  APPCC Y DOCUMENTACIÓN (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "07 · Tareas Mensuales · A10"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Revisar el plan APPCC (HACCP) y las fichas de alérgenos (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "07 · Tareas Mensuales · B11"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0449",
+   "es": "Archivar las hojas de temperaturas del mes y comprobar que están firmadas",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "07 · Tareas Mensuales · B12"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0452",
+   "es": "Comprobar que la ficha de alérgenos de las salsas y de los guisados (cazuelas de relleno) está actualizada",
+   "grupo": "G2",
+   "palabras": 18,
+   "donde": [
+    "07 · Tareas Mensuales · B14"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0453",
+   "es": "  PROVEEDORES",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "07 · Tareas Mensuales · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0454",
+   "es": "Auditar a los proveedores de importación: plazos, incidencias y documentación",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "07 · Tareas Mensuales · B16"
+   ],
+   "pistas": [
+    "importador → Mexican food distributor (en EE. UU. no se importa)"
+   ],
+   "adaptar": "En EE. UU. el chile seco, la masa harina y el maíz para nixtamal se compran a un distribuidor de productos mexicanos (Mexican food distributor), no a un «importador»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0455",
+   "es": "Comparar precios de cerdo, de res y de chile seco con el mes anterior",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "07 · Tareas Mensuales · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0456",
+   "es": "Revisar el escandallo (costeo) mensual del taco al pastor y de los guisados",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "07 · Tareas Mensuales · B18"
+   ],
+   "pistas": [
+    "al pastor → al pastor (tacos al pastor; nunca «pastor style»)",
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)",
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0457",
+   "es": "Cerrar el inventario mensual de bebida, mezcal y tequila",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Tareas Mensuales · B19"
+   ],
+   "pistas": [
+    "mezcal, tequila y cerveza solo con licencia de alcohol, 21+ con ID"
+   ],
+   "adaptar": "Mezcal, tequila y cerveza solo si tu taquería tiene la licencia de alcohol del estado (beer & wine o liquor license); venta a mayores de 21 con ID",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0462",
+   "es": "▸ Estás en 08-eventos-estacionales.xlsx: lo excepcional (eventos, festivos, temporada). El día a día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "08 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "08-eventos-estacionales.xlsx",
+     "en": "08-taco-shop-event-seasonal-checklists.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0463",
+   "es": "Checklist: Temporadas y Producto",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Temporadas y Producto · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0466",
+   "es": "  CHILES EN NOGADA (15-JUL A FIN DE SEP)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "08 · Temporadas y Producto · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0467",
+   "es": "Reservar con el importador la nuez de Castilla y la granada para los chiles en nogada",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "08 · Temporadas y Producto · B6"
+   ],
+   "pistas": [
+    "importador → Mexican food distributor (en EE. UU. no se importa)",
+    "chiles en nogada → chiles en nogada; nuez de Castilla → fresh walnuts; manzana panochera, pera lechera, durazno criollo → panochera apples, lechera pears, criollo peaches"
+   ],
+   "adaptar": "En EE. UU. el chile seco, la masa harina y el maíz para nixtamal se compran a un distribuidor de productos mexicanos (Mexican food distributor), no a un «importador»; nuez de Castilla → fresh walnuts",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0469",
+   "es": "Anotar el inicio real de la temporada de chiles en nogada, que depende de la cosecha",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "08 · Temporadas y Producto · B7"
+   ],
+   "pistas": [
+    "chiles en nogada → chiles en nogada; nuez de Castilla → fresh walnuts; manzana panochera, pera lechera, durazno criollo → panochera apples, lechera pears, criollo peaches"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0471",
+   "es": "Revisar la disponibilidad de manzana panochera, pera lechera y durazno criollo",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "08 · Temporadas y Producto · B8"
+   ],
+   "pistas": [
+    "chiles en nogada → chiles en nogada; nuez de Castilla → fresh walnuts; manzana panochera, pera lechera, durazno criollo → panochera apples, lechera pears, criollo peaches"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0473",
+   "es": "  CHILE SECO POR CAMPAÑA",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Temporadas y Producto · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0474",
+   "es": "Anotar la campaña y el lote de cada chile seco recibido",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "08 · Temporadas y Producto · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0475",
+   "es": "Comparar precio del chile seco de la campaña con la anterior antes de renovar el pedido",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "08 · Temporadas y Producto · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0476",
+   "es": "Revisar el estado de conservación del chile seco almacenado",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "08 · Temporadas y Producto · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0477",
+   "es": "  CARNE Y MAÍZ",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "08 · Temporadas y Producto · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0478",
+   "es": "Comprobar el precio del cerdo para pastor frente al de la campaña anterior",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "08 · Temporadas y Producto · B14"
+   ],
+   "pistas": [
+    "al pastor → al pastor (tacos al pastor; nunca «pastor style»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0479",
+   "es": "Revisar el precio y la disponibilidad del maíz para nixtamal antes de renovar el pedido",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "08 · Temporadas y Producto · B15"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0480",
+   "es": "Comparar precios de res con al menos dos proveedores del trimestre",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "08 · Temporadas y Producto · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0481",
+   "es": "  PRODUCTO FRESCO",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Temporadas y Producto · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0482",
+   "es": "Revisar precio y disponibilidad del aguacate antes de fijar la carta del trimestre",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "08 · Temporadas y Producto · B18",
+    "B02 · Calendario Anual · C19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0483",
+   "es": "Comprobar la disponibilidad de cilantro y limón de temporada con el proveedor",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "08 · Temporadas y Producto · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0485",
+   "es": "Revisar la disponibilidad de chile fresco de temporada antes de ajustar la carta",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "08 · Temporadas y Producto · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0486",
+   "es": "Checklist: Calendario de Eventos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Calendario de Eventos · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0487",
+   "es": "  PRIMER TRIMESTRE",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Calendario de Eventos · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0488",
+   "es": "Día de Reyes (6 de enero): previsión de rosca y de turno reforzado",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "08 · Calendario de Eventos · B6"
+   ],
+   "pistas": [
+    "Día de Reyes → Three Kings Day; rosca → rosca de Reyes (con R mayúscula, así)"
+   ],
+   "adaptar": "Three Kings Day (6-ene): rosca de Reyes (escrito así) y turno reforzado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0490",
+   "es": "Candelaria (2 de febrero): producción de tamales y comunicación en redes",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "08 · Calendario de Eventos · B7"
+   ],
+   "pistas": [
+    "reseñas → reviews (Google, Yelp); redes → social media",
+    "Grito → the Grito / Mexican Independence Day (nunca «El Grito»: el gate lee «el» como español); Virgen de Guadalupe → Our Lady of Guadalupe; Posadas → Posadas; Candelaria → Candelaria (Candlemas)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0491",
+   "es": "Cuaresma y Vigilia: reforzar tacos de pescado y capeados; activar el registro de congelación",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "08 · Calendario de Eventos · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "totopos → tortilla chips; capeados → battered (fish); tostadas y aguachiles → tostadas, aguachile"
+   ],
+   "adaptar": "Viernes de Cuaresma (Lent Fridays): tacos de pescado y capeados (battered fish); para el pescado crudo, el registro de destrucción de parásitos (FDA Food Code 3-402.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0493",
+   "es": "Semana Santa: revisar el aforo y la previsión con el equipo de sala",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "08 · Calendario de Eventos · B9"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "adaptar": "Sustituye a Semana Santa: «Holy Week & Easter (varies)»: revisar aforo y previsión con el equipo; decidir el horario del domingo de Pascua",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0496",
+   "es": "  SEGUNDO TRIMESTRE",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Calendario de Eventos · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0497",
+   "es": "Cinco de Mayo (5 de mayo): campaña sobre todo para EE. UU.; en México se celebra en Puebla",
+   "grupo": "G2",
+   "palabras": 18,
+   "donde": [
+    "08 · Calendario de Eventos · B11"
+   ],
+   "adaptar": "Cinco de Mayo: en EE. UU. es de los días más fuertes del año para una taquería [criterio del kit]; en México se celebra sobre todo en Puebla",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0499",
+   "es": "Terrazas de verano: revisar el aforo y el horario ampliado",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "08 · Calendario de Eventos · B12"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Sustituye a las terrazas: «Patio season»: permiso de la ciudad (outdoor dining / sidewalk cafe permit), aforo y horario ampliado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0500",
+   "es": "Inicio de verano: comprobar la previsión de reservas y de grupos",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "08 · Calendario de Eventos · B13"
+   ],
+   "adaptar": "Sustituye al inicio de verano: «Memorial Day weekend (last Monday of May)»: previsión de clientes, grupos y pedidos grandes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0501",
+   "es": "Verano: revisar la disponibilidad del aguacate y del chile fresco",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "08 · Calendario de Eventos · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0502",
+   "es": "  TERCER TRIMESTRE",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Calendario de Eventos · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0503",
+   "es": "Grito e Independencia (15 y 16 de septiembre): pico del año fuera de México; pozole y mezcal",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "08 · Calendario de Eventos · B16"
+   ],
+   "pistas": [
+    "mezcal, tequila y cerveza solo con licencia de alcohol, 21+ con ID",
+    "Grito → the Grito / Mexican Independence Day (nunca «El Grito»: el gate lee «el» como español); Virgen de Guadalupe → Our Lady of Guadalupe; Posadas → Posadas; Candelaria → Candelaria (Candlemas)"
+   ],
+   "adaptar": "Grito e Independencia (15-16 sep): fecha fuerte para la clientela mexicana y latina de EE. UU.; pozole; Mezcal, tequila y cerveza solo si tu taquería tiene la licencia de alcohol del estado (beer & wine o liquor license); venta a mayores de 21 con ID",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0504",
+   "es": "Chiles en Nogada (15 de julio a fin de septiembre): activar la campaña con el importador",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "08 · Calendario de Eventos · B17"
+   ],
+   "pistas": [
+    "importador → Mexican food distributor (en EE. UU. no se importa)",
+    "chiles en nogada → chiles en nogada; nuez de Castilla → fresh walnuts; manzana panochera, pera lechera, durazno criollo → panochera apples, lechera pears, criollo peaches"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0505",
+   "es": "Temporada alta de verano: revisar la previsión de personal",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "08 · Calendario de Eventos · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0506",
+   "es": "  CUARTO TRIMESTRE",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Calendario de Eventos · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0507",
+   "es": "Día de Muertos (1 y 2 de noviembre): pan de muerto y calabaza en tacha",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "08 · Calendario de Eventos · B20"
+   ],
+   "pistas": [
+    "Día de Muertos → Day of the Dead (sin tilde ni «Día»); pan de muerto → pan de muerto (así)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0508",
+   "es": "Virgen de Guadalupe (12 de diciembre): previsión de servicio y de personal",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "08 · Calendario de Eventos · B21"
+   ],
+   "pistas": [
+    "Grito → the Grito / Mexican Independence Day (nunca «El Grito»: el gate lee «el» como español); Virgen de Guadalupe → Our Lady of Guadalupe; Posadas → Posadas; Candelaria → Candelaria (Candlemas)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0509",
+   "es": "Posadas (16 a 24 de diciembre) y comidas de empresa: cerrar aforos y menús cerrados",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "08 · Calendario de Eventos · B22"
+   ],
+   "pistas": [
+    "Grito → the Grito / Mexican Independence Day (nunca «El Grito»: el gate lee «el» como español); Virgen de Guadalupe → Our Lady of Guadalupe; Posadas → Posadas; Candelaria → Candelaria (Candlemas)"
+   ],
+   "adaptar": "Posadas (16-24 dic) y fiestas de empresa (holiday parties: bandejas y taco bar para oficinas): cerrar aforos y menús cerrados",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0513",
+   "es": "▸ Escribe tus tareas en las celdas verdes de la columna «Tarea»",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "09 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Tarea",
+     "en": "Task"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0514",
+   "es": "▸ Renombra las secciones con los bloques reales de tu taquería",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "09 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0515",
+   "es": "▸ El contador arranca en 0 y sube a medida que escribes: cuenta lo que hay",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "09 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0516",
+   "es": "▸ Estás en 09-plantilla-personalizable.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre-taqueria.xlsx.",
+   "grupo": "G2",
+   "palabras": 24,
+   "donde": [
+    "09 · Instrucciones · B34"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "09-plantilla-personalizable.xlsx",
+     "en": "09-blank-taco-shop-checklist-template.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0517",
+   "es": "Plantilla en Blanco — Taquería Mexicana",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "09 · Plantilla en Blanco · A1"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0518",
+   "es": "  SECCIÓN 1 (PERSONALIZAR)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "09 · Plantilla en Blanco · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0519",
+   "es": "  SECCIÓN 2 (PERSONALIZAR)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "09 · Plantilla en Blanco · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0520",
+   "es": "  SECCIÓN 3 (PERSONALIZAR)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "09 · Plantilla en Blanco · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0523",
+   "es": "Briefing Pre-Servicio — Taquería Mexicana",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Instrucciones · B2",
+    "B01 · Briefing Pre-Servicio · B1"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0524",
+   "es": "▸ Imprime una hoja por turno y rellénala antes del pase",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0525",
+   "es": "▸ El encargado la repasa con el equipo en dos minutos y firma al pie",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "B01 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "encargado/a → shift manager (NUNCA «shift lead»); el responsable sanitario = person in charge"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0526",
+   "es": "▸ Archívala con la hoja de temperaturas del mismo turno",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B01 · Instrucciones · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0527",
+   "es": "▸ Las celdas verdes son editables — escribe ahí los datos del turno",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B01 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0528",
+   "es": "▸ Añade o quita líneas de guisado y de salsa según tu carta",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B01 · Instrucciones · B13"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0529",
+   "es": "▸ Estás en BONUS-01-briefing-servicio.xlsx: el briefing abre el turno que luego se trabaja con 01-apertura-cierre-taqueria.xlsx y 08-eventos-estacionales.xlsx.",
+   "grupo": "G2",
+   "palabras": 27,
+   "donde": [
+    "B01 · Instrucciones · B18"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "BONUS-01-briefing-servicio.xlsx",
+     "en": "BONUS-01-taco-shop-pre-shift-meeting-template.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre-taqueria.xlsx",
+     "en": "01-taco-shop-opening-closing-checklists.xlsx"
+    },
+    {
+     "es": "08-eventos-estacionales.xlsx",
+     "en": "08-taco-shop-event-seasonal-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0530",
+   "es": "Fecha: ___/___/______    Turno: ☐ Almuerzo  ☐ Cena    Responsable briefing: _________________________",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B2"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "Turnos US: «Shift: ☐ AM ☐ PM ☐ Overnight»; en el briefing «☐ Lunch ☐ Dinner»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0531",
+   "es": "TROMPO DEL DÍA (SI APLICA)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0532",
+   "es": "Peso montado (kg):",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B5"
+   ],
+   "pistas": [
+    "kg → lb; tacos por kilo → tacos per pound; litros → quarts (qt)"
+   ],
+   "adaptar": "kg → lb",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0533",
+   "es": "Hora de montaje:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0534",
+   "es": "Hora límite definida en tu APPCC (HACCP): (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B7"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»"
+   ],
+   "adaptar": "«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates); la hora límite la fija tu plan HACCP o tu departamento de salud (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0535",
+   "es": "Previsión de cortes:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0536",
+   "es": "GUISADOS DEL DÍA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0537",
+   "es": "Guisado 1 (cazuela de relleno) — hora de entrada / hora límite:",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B11"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0538",
+   "es": "Guisado 2 — hora de entrada / hora límite:",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B12"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0539",
+   "es": "Guisado 3 — hora de entrada / hora límite:",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B13"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0540",
+   "es": "Guisado 4 — hora de entrada / hora límite:",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B14"
+   ],
+   "pistas": [
+    "guisados (cazuelas de relleno) → guisados (stews in clay pots / hotel pans)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0541",
+   "es": "SALSAS DEL DÍA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0542",
+   "es": "Salsa 1 (picante: suave / medio / alto):",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0543",
+   "es": "Salsa 2 (picante: suave / medio / alto):",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0544",
+   "es": "Salsa 3 (picante: suave / medio / alto):",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0545",
+   "es": "Salsa 4 (picante: suave / medio / alto):",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0546",
+   "es": "Salsa 5 (picante: suave / medio / alto):",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0547",
+   "es": "AVISO DE ALÉRGENOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B23"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0548",
+   "es": "Salsa macha en barra (cacahuete y/o sésamo) — sí/no:",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B24"
+   ],
+   "pistas": [
+    "barra de salsas → salsa bar; barra fría → cold salsa bar; la zona «Barra» → salsa bar (no es una barra de bar)",
+    "salsa macha → salsa macha (peanuts and/or sesame: los dos son alérgenos principales US)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0549",
+   "es": "Mole del día (frutos de cáscara) — sí/no:",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B25"
+   ],
+   "adaptar": "Mole: frutos de cáscara, cacahuete o sésamo según la receta",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0550",
+   "es": "Tortilla de harina disponible (gluten) — sí/no:",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B26"
+   ],
+   "pistas": [
+    "el alérgeno US es el trigo (wheat): «tortilla de harina (gluten)» → «flour tortilla (wheat)»; nunca prometer «gluten-free»"
+   ],
+   "adaptar": "Tortilla de harina = trigo (wheat), no «gluten»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0551",
+   "es": "ROTURAS Y «86»",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B28"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "«86» / «86s» es jerga US: se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0552",
+   "es": "Sin (producto 1):",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0553",
+   "es": "Sin (producto 2):",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0554",
+   "es": "Sin (producto 3):",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0555",
+   "es": "Sin (producto 4):",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0556",
+   "es": "Sin (producto 5):",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0557",
+   "es": "SALA Y DELIVERY",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B35"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0558",
+   "es": "Reservas:",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0559",
+   "es": "Grupos:",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0560",
+   "es": "Previsión de delivery:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B38"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0561",
+   "es": "Personal del turno:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Servicio · B39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0566",
+   "es": "▸ Imprímelo en A4 apaisado y cuélgalo en la oficina",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D17: US Letter"
+   ],
+   "adaptar": "A4 apaisado → US Letter apaisado (landscape)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0567",
+   "es": "▸ Cada fila es una fecha o una tarea anual con su antelación",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0568",
+   "es": "▸ Las filas verdes del final son para tus fechas locales",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Instrucciones · B8"
+   ],
+   "adaptar": "Añade la nota UK: Mothering Sunday (marzo), bank holidays y Boxing Day en las filas libres",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0569",
+   "es": "▸ Las celdas verdes son editables — escribe ahí tus fechas",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0570",
+   "es": "▸ Ajusta la antelación a los plazos de tus proveedores",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Instrucciones · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0571",
+   "es": "▸ Estás en BONUS-02-calendario-anual.xlsx: cada fecha de este calendario se ejecuta con los checklists de 08-eventos-estacionales.xlsx.",
+   "grupo": "G2",
+   "palabras": 22,
+   "donde": [
+    "B02 · Instrucciones · B18"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "BONUS-02-calendario-anual.xlsx",
+     "en": "BONUS-02-taco-shop-annual-calendar.xlsx"
+    },
+    {
+     "es": "08-eventos-estacionales.xlsx",
+     "en": "08-taco-shop-event-seasonal-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0572",
+   "es": "Calendario Anual — Fechas Clave de la Taquería",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · A1"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0573",
+   "es": "Año: ______    Taquería: _________________________",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · A2"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Taquería Mexicana»; taquería → taco shop (nombre) / taqueria (sin tilde, en prosa); nunca «Tex-Mex» ni «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0579",
+   "es": "Previsión de rosca y turno reforzado en la fecha",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Calendario Anual · C5"
+   ],
+   "pistas": [
+    "Día de Reyes → Three Kings Day; rosca → rosca de Reyes (con R mayúscula, así)"
+   ],
+   "adaptar": "Evento EN: «Jan 6 — Three Kings Day». Las familias mexicanas y latinas de EE. UU. lo celebran: rosca de Reyes (escrito así) encargada a tu panadería o proveedor y turno reforzado ese día",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0582",
+   "es": "Revisar el calendario de vacaciones y el turno de cierre por descanso",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C6"
+   ],
+   "adaptar": "Evento EN: «Staff time off (slow weeks)». En EE. UU. pocas taquerías cierran por vacaciones: reparte el time off del equipo en las semanas flojas de enero y, si cierras unos días, avísalo en Google Business Profile, Yelp y las apps de delivery",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0586",
+   "es": "Producción de tamales; comunicarlo en Google Business Profile y en redes",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C7"
+   ],
+   "pistas": [
+    "reseñas → reviews (Google, Yelp); redes → social media"
+   ],
+   "adaptar": "Evento EN: «Feb 2 — Candelaria + Super Bowl Sunday (2nd Sunday in Feb)». Candelaria: tamales y aviso en Google Business Profile y redes (como el ES). Añade la Super Bowl, de los días fuertes de pedidos para llevar en EE. UU. [criterio del kit]: pedidos anticipados de bandejas (party trays, taco bar), personal extra de mostrador y de delivery",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0590",
+   "es": "Reforzar tacos de pescado y capeados; activar el registro de congelación de crudos",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "totopos → tortilla chips; capeados → battered (fish); tostadas y aguachiles → tostadas, aguachile"
+   ],
+   "adaptar": "Evento EN: «Lent Fridays (from Ash Wednesday, varies)». Viernes de Cuaresma: reforzar tacos de pescado y capeados (battered fish); el pescado crudo de aguachiles y tostadas, con su registro de destrucción de parásitos (FDA Food Code 3-402.11) y el aviso al consumidor en la carta (FDA Food Code 3-603.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0594",
+   "es": "Revisar el escandallo (costeo) de los tacos más vendidos antes de la primavera",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C11"
+   ],
+   "pistas": [
+    "escandallo (costeo) → taco costing / food cost per taco; rendimiento → yield (trompo yield, tacos per pound)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0597",
+   "es": "Desmontar y limpiar a fondo el molino y la tortilladora antes del verano",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C12"
+   ],
+   "pistas": [
+    "comal → comal; tortilladora → tortilla machine; prensa → tortilla press; tortillería → tortilleria; tortillero/a → tortilla maker; cajón térmico → tortilla warmer",
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0600",
+   "es": "Campaña sobre todo para EE. UU.; en México se celebra en Puebla",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C13"
+   ],
+   "adaptar": "Evento EN: «May 5 — Cinco de Mayo». En EE. UU. es de los días más fuertes del año para una taquería [criterio del kit]: pedidos anticipados, producto extra (tortillas, al pastor, salsas), personal y horario ampliados; en México se celebra sobre todo en Puebla (la fiesta nacional es el 16 de septiembre). Margaritas o cerveza solo con licencia, 21+ con ID",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0603",
+   "es": "Ampliar horario y revisar el aforo autorizado antes del verano",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C14"
+   ],
+   "adaptar": "Evento EN: «Patio season prep (before Memorial Day)». Terraza = patio; el permiso es el «outdoor dining / sidewalk cafe permit» de la ciudad: renovarlo, revisar el aforo autorizado y ampliar el horario",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0606",
+   "es": "Reforzar personal de sala y de delivery para el verano",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C15"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0608",
+   "es": "Revisar y responder las reseñas acumuladas antes de la temporada alta",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C16"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "reseñas → reviews (Google, Yelp); redes → social media"
+   ],
+   "adaptar": "Evento EN: «Online review check». Plataformas US: Google y Yelp",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0610",
+   "es": "Auditar plazos, incidencias y documentación del importador de chile seco y masa",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · C17"
+   ],
+   "pistas": [
+    "nixtamal → nixtamal; masa → masa; molino → corn mill (molino); moler → grind; cal → food-grade lime (cal); harina de maíz nixtamalizado → masa harina",
+    "importador → Mexican food distributor (en EE. UU. no se importa)"
+   ],
+   "adaptar": "Evento EN: «Supplier audit (dried chiles & masa)». En EE. UU. el chile seco, la masa harina y el maíz para nixtamal se compran a un distribuidor de productos mexicanos (Mexican food distributor), no a un «importador»: auditar plazos, incidencias y documentación",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0613",
+   "es": "Reservar con el importador la nuez de Castilla y la granada; depende de la cosecha",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "B02 · Calendario Anual · C18"
+   ],
+   "pistas": [
+    "importador → Mexican food distributor (en EE. UU. no se importa)",
+    "chiles en nogada → chiles en nogada; nuez de Castilla → fresh walnuts; manzana panochera, pera lechera, durazno criollo → panochera apples, lechera pears, criollo peaches"
+   ],
+   "adaptar": "Evento EN: «Jul 15 to late Sep — Chiles en nogada season». Reservar con el proveedor la nuez fresca (fresh walnuts; sin «nuez de Castilla») y la granada; la temporada depende de la cosecha",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0618",
+   "es": "Mes de mayor disponibilidad; reforzar producción y comunicarlo en redes",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C20"
+   ],
+   "pistas": [
+    "reseñas → reviews (Google, Yelp); redes → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0620",
+   "es": "Revisar el control de plagas del almacén seco en el mes de más calor",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "B02 · Calendario Anual · C21"
+   ],
+   "adaptar": "Evento EN: «Pest control check (hottest month)». Control de plagas por un licensed pest control operator; el equipo revisa señales en el almacén seco",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0623",
+   "es": "Pico del año fuera de México; reforzar pozole y mezcal",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C22"
+   ],
+   "pistas": [
+    "mezcal, tequila y cerveza solo con licencia de alcohol, 21+ con ID"
+   ],
+   "adaptar": "Evento EN: «Sep 15–16 — Mexican Independence Day (the Grito)». En EE. UU. es de las fechas fuertes para la clientela mexicana y latina [criterio del kit]: pozole y especiales; mezcal o tequila solo con licencia, 21+ con ID",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0625",
+   "es": "Revisar el plan APPCC (HACCP) y las fichas de alérgenos antes del otoño (si tienes el Pack APPCC, regístralo allí; si no, anótalo junto a la tarea)",
+   "grupo": "G2",
+   "palabras": 27,
+   "donde": [
+    "B02 · Calendario Anual · C23"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Evento EN: «HACCP plan review». «Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0628",
+   "es": "Encargar pan de muerto y calabaza con antelación al proveedor",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · C24"
+   ],
+   "adaptar": "Evento EN: «Day of the Dead prep». Encargar con antelación el pan de muerto (escrito así) y la calabaza para la calabaza en tacha",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0632",
+   "es": "Producción de pan de muerto y calabaza en tacha",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Calendario Anual · C26"
+   ],
+   "adaptar": "Evento EN: «Nov 1–2 — Day of the Dead». Pan de muerto (escrito así) y calabaza en tacha",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0634",
+   "es": "Cerrar menús y aforos para las comidas de empresa de diciembre",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C27"
+   ],
+   "adaptar": "Evento EN: «Thanksgiving + holiday party bookings». Thanksgiving (4.º jueves de noviembre): decidir si se abre (muchos cierran). Y, como el ES, cerrar menús y aforos de las fiestas de empresa de diciembre (holiday parties: bandejas y taco bar para oficinas)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0636",
+   "es": "Hacer inventario de bebida, mezcal y tequila antes de la campaña de diciembre",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C28"
+   ],
+   "pistas": [
+    "mezcal, tequila y cerveza solo con licencia de alcohol, 21+ con ID"
+   ],
+   "adaptar": "Evento EN: «Bar inventory (if licensed)». Mezcal, tequila y cerveza solo si tu taquería tiene la licencia de alcohol del estado (beer & wine o liquor license); venta a mayores de 21 con ID; inventario antes de diciembre",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0639",
+   "es": "Previsión de servicio y de personal reforzado",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · C29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0641",
+   "es": "Cerrar aforos y menús cerrados",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0643",
+   "es": "Reforzar turnos de cierre y la previsión de delivery de fin de año",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C31"
+   ],
+   "pistas": [
+    "repartidor → delivery driver; apps de delivery → DoorDash, Uber Eats, Grubhub; bolsa térmica → insulated delivery bag"
+   ],
+   "adaptar": "Evento EN: «Christmas & New Year's Eve». Sin uvas ni cava. Como el ES: turnos de cierre y previsión de delivery de fin de año reforzados; decidir el horario del 24-25 y del 31 (muchos cierran el 25)",
+   "motivo": "nueva"
+  }
+ ]
+}

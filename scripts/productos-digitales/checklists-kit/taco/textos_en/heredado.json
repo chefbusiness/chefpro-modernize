@@ -1,0 +1,162 @@
+{
+ "c0005": {
+  "en": "How to use these templates",
+  "origen": "c0009",
+  "via": "exacta"
+ },
+ "c0006": {
+  "en": "▸ Print the sheet for your shift (opening or closing)",
+  "origen": "c0010",
+  "via": "exacta"
+ },
+ "c0007": {
+  "en": "▸ The shift manager assigns tasks to the team",
+  "origen": "c0011",
+  "via": "exacta"
+ },
+ "c0008": {
+  "en": "▸ Each person checks ✓ when their task is done and initials it",
+  "origen": "c0012",
+  "via": "exacta"
+ },
+ "c0009": {
+  "en": "▸ At shift end, the shift manager verifies and signs at the bottom",
+  "origen": "c0013",
+  "via": "exacta"
+ },
+ "c0010": {
+  "en": "▸ File the signed sheets — they prove the work was done, and who did it",
+  "origen": "c0014",
+  "via": "exacta"
+ },
+ "c0011": {
+  "en": "How to customize",
+  "origen": "c0015",
+  "via": "exacta"
+ },
+ "c0012": {
+  "en": "▸ Green cells are editable — change assignments and times",
+  "origen": "c0016",
+  "via": "exacta"
+ },
+ "c0013": {
+  "en": "▸ Adjust the due-by times to your real schedule",
+  "origen": "c0017",
+  "via": "exacta"
+ },
+ "c0014": {
+  "en": "How the counter works",
+  "origen": "c0018",
+  "via": "exacta"
+ },
+ "c0015": {
+  "en": "▸ Mark ✓ in the \"✓ Done\" column (dropdown): that is the column that counts completed tasks.",
+  "origen": "c0019",
+  "via": "exacta"
+ },
+ "c0017": {
+  "en": "▸ The denominator counts the tasks written in the \"Task\" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.",
+  "origen": "c0021",
+  "via": "exacta"
+ },
+ "c0018": {
+  "en": "Free rows",
+  "origen": "c0022",
+  "via": "exacta"
+ },
+ "c0019": {
+  "en": "▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.",
+  "origen": "c0023",
+  "via": "exacta"
+ },
+ "c0020": {
+  "en": "▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.",
+  "origen": "c0024",
+  "via": "exacta"
+ },
+ "c0021": {
+  "en": "Sheet protection",
+  "origen": "c0025",
+  "via": "exacta"
+ },
+ "c0022": {
+  "en": "▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.",
+  "origen": "c0026",
+  "via": "exacta"
+ },
+ "c0023": {
+  "en": "▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.",
+  "origen": "c0027",
+  "via": "exacta"
+ },
+ "c0027": {
+  "en": "Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es",
+  "origen": "c0035",
+  "via": "exacta"
+ },
+ "c0028": {
+  "en": "Contact: info@aichef.pro",
+  "origen": "c0036",
+  "via": "exacta"
+ },
+ "c0088": {
+  "en": "Invalid mark",
+  "origen": "c0097",
+  "via": "exacta"
+ },
+ "c0089": {
+  "en": "Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending.",
+  "origen": "c0098",
+  "via": "exacta"
+ },
+ "c0126": {
+  "en": "Works with",
+  "origen": "c0028",
+  "via": "exacta"
+ },
+ "c0312": {
+  "en": "  DURING SERVICE",
+  "origen": "c0240",
+  "via": "exacta"
+ },
+ "c0334": {
+  "en": "  TEAM",
+  "origen": "c0399",
+  "via": "exacta"
+ },
+ "c0413": {
+  "en": "Week of ___/___/______ to ___/___/______    Manager: _________________________",
+  "origen": "c0347",
+  "via": "exacta"
+ },
+ "c0437": {
+  "en": "Month: ________________   Year: ______    Manager: _________________________",
+  "origen": "c0390",
+  "via": "exacta"
+ },
+ "c0464": {
+  "en": "Event / season: ___________________    Date: ___/___/______    Manager: _________________________",
+  "origen": "c0674",
+  "via": "exacta"
+ },
+ "c0562": {
+  "en": "Shift manager signature: _________________________",
+  "origen": "c0986",
+  "via": "exacta"
+ },
+ "c0574": {
+  "en": "Month",
+  "origen": "c0996",
+  "via": "exacta"
+ },
+ "c0575": {
+  "en": "Date / Event",
+  "origen": "c0997",
+  "via": "exacta"
+ },
+ "c0576": {
+  "en": "Key Tasks",
+  "origen": "c0998",
+  "via": "exacta"
+ }
+}
