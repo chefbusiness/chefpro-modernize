@@ -53,6 +53,21 @@ ARREGLOS += [
      'los fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %.'),
     ('plan-negocio-taqueria/checklist-apertura-taqueria.xlsx',
      '(RD 919/2006, ITC-ICG 08). Apunta la', '(RD 919/2006, ITC-ICG 07 e ITC-ICG 08). Apunta la'),
+    # Ronda 2 (revisión adversarial 30-oct): la holgura mínima de B67 se compara con la holgura de CAJA (costes fijos y
+    # cuota), no con las pérdidas contables; y el mismo defecto en los planes EN.
+    ('*', 'Cuánto deben superar las ventas previstas a las del punto de equilibrio. La caída que aguantas antes de entrar '
+          'en pérdidas es algo menor: con un 15 % de holgura, un 13 % de lo previsto',
+     'Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La '
+     'caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto'),
+    ('*', 'How far you can fall below plan before you start losing money',
+     'How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb '
+     'is somewhat smaller: with a 15% cushion, about 13% of plan'),
+    ('*', 'How far you can fall before you cannot pay the fixed costs and the loan payment.',
+     'How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs '
+     'and the loan payment is somewhat smaller: with a 25% cushion, 20%.'),
+    ('*', 'Fourth-quarter sales tax is settled in January of the following year, so it does not appear in this table.',
+     'Fourth-quarter sales tax is settled in Month 13 (January of the following year when Month 1 is January), so it '
+     'does not appear in this table.'),
     # Planes EN anteriores al Ice Cream: los meses sólo eran exactos con el Mes 1 en enero.
     ('*', 'The model settles quarterly (April, July, October, January):',
      'The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10, and the fourth quarter '
@@ -107,12 +122,17 @@ def _valor(lit):
     return lit.replace('""', '"')
 
 
+def _largo(lit):
+    """Longitud en unidades UTF-16, como la cuenta Excel (un emoji fuera del BMP son 2)."""
+    return len(_valor(lit).encode('utf-16-le')) // 2
+
+
 def _trocear(lit):
     """Trozos crudos de `lit` con un valor ≤ TROZO cada uno; corta tras un espacio si lo hay cerca; nunca parte «""»."""
     trozos, actual, i = [], '', 0
     while i < len(lit):
         tok = '""' if lit.startswith('""', i) else lit[i]
-        if len(_valor(actual)) + 1 > TROZO:
+        if _largo(actual) + 2 > TROZO:
             k = actual.rfind(' ')
             if k >= TROZO // 2:
                 trozos.append(actual[:k + 1])
@@ -129,13 +149,13 @@ def _trocear(lit):
 def partir_literales(formula):
     """Devuelve la fórmula (sin escapar XML) con los literales > 255 troceados, o la misma si no hace falta."""
     segs = _segmentos(formula)
-    if not any(es and len(_valor(t)) > MAX_LIT for es, t in segs):
+    if not any(es and _largo(t) > MAX_LIT for es, t in segs):
         return formula
     if any(not es and '{' in t for es, t in segs):
         raise ValueError('constante de matriz: un literal no se puede trocear con &')
     out = []
     for es, t in segs:
-        if es and len(_valor(t)) > MAX_LIT:
+        if es and _largo(t) > MAX_LIT:
             out.append('&'.join('"' + p + '"' for p in _trocear(t)))
         elif es:
             out.append('"' + t + '"')
@@ -158,9 +178,26 @@ def _sin_trocear(formula):
     return out
 
 
+def fundir_literales(formula):
+    """Inverso del troceo: «"a"&"b"» → «"ab"» (mismo valor). Para los circuitos que buscan cada literal ES por su clave
+    o comparan fórmulas con un registro escrito sin trocear (business-plans-en: aplicar_en, gates_en, extraer_textos)."""
+    try:
+        segs = _segmentos(formula)
+    except ValueError:
+        return formula
+    out = []
+    for es, t in segs:
+        if es and len(out) >= 2 and out[-1] == (False, '&') and out[-2][0]:
+            out.pop()
+            out[-1] = (True, out[-1][1] + t)
+        else:
+            out.append((es, t))
+    return ''.join('"' + t + '"' if es else t for es, t in out)
+
+
 def literales_largos(formula):
     try:
-        return [len(_valor(t)) for es, t in _segmentos(formula) if es and len(_valor(t)) > MAX_LIT]
+        return [_largo(t) for es, t in _segmentos(formula) if es and _largo(t) > MAX_LIT]
     except ValueError:
         return []
 
@@ -169,7 +206,7 @@ def literales_largos(formula):
 def _escapar(texto, original, atributo=False):
     s = texto.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
     if atributo:
-        s = s.replace('"', '&quot;')
+        s = s.replace('"', '&quot;').replace('\n', '&#10;').replace('\r', '&#13;').replace('\t', '&#9;')
     if '&#' in original:                     # respetar el estilo del fichero (referencias numéricas para lo no ASCII)
         s = ''.join(c if ord(c) < 128 else '&#%d;' % ord(c) for c in s)
     return s
@@ -177,10 +214,10 @@ def _escapar(texto, original, atributo=False):
 
 def _sustituir(texto, reglas):
     usadas = []
-    for viejo, nuevo in reglas:
+    for k, viejo, nuevo in reglas:
         if viejo in texto:
             texto = texto.replace(viejo, nuevo)
-            usadas.append(viejo)
+            usadas.append(k)
     return texto, usadas
 
 
@@ -194,8 +231,8 @@ def parchear_xml(xml, reglas, informe, nombre):
         abre, tag, crudo, cierra = m.group(1), m.group(2), m.group(3), m.group(4)
         texto = html.unescape(crudo)
         nuevo, usadas = _sustituir(texto, reglas)
-        for u in usadas:
-            informe.append('%s <%s> «%s…»' % (nombre, tag, u[:40]))
+        for k in usadas:
+            informe.append('%s <%s> regla %d' % (nombre, tag, k))
         if tag == 'f':
             try:
                 partido = partir_literales(nuevo)
@@ -212,8 +249,8 @@ def parchear_xml(xml, reglas, informe, nombre):
     def attr(m):
         texto = html.unescape(m.group(2))
         nuevo, usadas = _sustituir(texto, reglas)
-        for u in usadas:
-            informe.append('%s <dv@> «%s…»' % (nombre, u[:40]))
+        for k in usadas:
+            informe.append('%s <dv@> regla %d' % (nombre, k))
         return m.group(0) if nuevo == texto else m.group(1) + _escapar(nuevo, m.group(2), True) + m.group(3)
 
     xml = RX_ELEM.sub(elem, xml)
@@ -222,7 +259,7 @@ def parchear_xml(xml, reglas, informe, nombre):
 
 def parchear(ruta, apply=False, rel=None):
     rel = rel or os.path.basename(ruta)
-    reglas = [(v, n) for pat, v, n in ARREGLOS if fnmatch.fnmatch(rel, pat)]
+    reglas = [(k, v, n) for k, (pat, v, n) in enumerate(ARREGLOS) if fnmatch.fnmatch(rel, pat)]
     informe = []
     with zipfile.ZipFile(ruta) as zin:
         entradas = [(i, zin.read(i.filename)) for i in zin.infolist()]
@@ -266,9 +303,9 @@ def main(argv):
         if apply or not check:
             informe, partes = parchear(r, apply=apply, rel=rel)
             for linea in informe:
-                for k, (_, viejo, _) in enumerate(ARREGLOS):
-                    if '«%s…»' % viejo[:40] in linea:
-                        usos[k] += 1
+                m = re.search(r' regla (\d+)$', linea)
+                if m:
+                    usos[int(m.group(1))] += 1
             if partes:
                 total += 1
                 print('%s %s: %d cambios en %s' % ('APLICADO' if apply else 'SIMULADO', rel, len(informe),

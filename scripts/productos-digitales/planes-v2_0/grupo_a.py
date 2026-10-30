@@ -304,9 +304,9 @@ SUPUESTOS_BASE = (
      'adicionales'),
     ('holgura_min', 'B67',
      'Holgura mínima sobre el punto de equilibrio', 0.15, motor.FMT_PCT,
-     'Cuánto deben superar las ventas previstas a las del punto de equilibrio. '
-     'La caída que aguantas antes de entrar en pérdidas es algo menor: con un '
-     '15 % de holgura, un 13 % de lo previsto'),
+     'Cuánto deben superar las ventas previstas a las del equilibrio de caja '
+     '(costes fijos y cuota del préstamo). La caída que aguantas es algo menor: '
+     'con un 15 % de holgura, un 13 % de lo previsto'),
     ('salario_convenio', 'B68',
      'Suelo salarial anual del convenio provincial (€)', 0, motor.FMT_EUR0,
      'El convenio PROVINCIAL de hostelería, no el SMI, es el suelo real. '
@@ -4435,7 +4435,7 @@ class Plan(object):
         checklist pasaba de 59 a 69 sin que nadie lo hubiera pedido.
         """
         # REF-04 — la marca de «sin marcar» se COPIA de una fila heredada
-        # (nunca se inventa `motor.VOCAB_MARCA[1]`, que es «—»: los ficheros
+        # (nunca se inventa `motor.VOCAB_MARCA[1]` —«☐» desde el 30-oct-2026—: los ficheros
         # de esta familia ya traen su propio vocabulario, «☐»/«✓»/«N/A», y
         # escribir un símbolo distinto del que usa el resto de la hoja
         # rompería la lectura visual de las filas heredadas).

@@ -711,8 +711,8 @@ def hoja_supuestos(wb):
         'Lo que suele pedir una entidad para dar el préstamo sin garantías '
         'adicionales.')
     ent('holgura', 'Holgura mínima sobre el punto de equilibrio (%)', 0.15,
-        C.PCT, 'Cuánto deben superar las ventas previstas a las del punto de '
-        'equilibrio. La caída que aguantas antes de entrar en pérdidas es algo '
+        C.PCT, 'Cuánto deben superar las ventas previstas a las del equilibrio de '
+        'caja (costes fijos y cuota del préstamo). La caída que aguantas es algo '
         'menor: con un 15 % de holgura, un 13 % de lo previsto.')
     ent('neto_suelo', 'Margen neto de referencia, suelo (%)', 0.08, C.PCT,
         'Rentabilidad neta de una pastelería «yendo bien» declarada por el '
