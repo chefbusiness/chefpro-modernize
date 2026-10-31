@@ -86,6 +86,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'plan-negocio-pizzeria', label: 'Plan de Negocio: Pizzería Napolitana (€35)' },
   { id: 'plan-negocio-taqueria', label: 'Plan de Negocio: Taquería (€35)' },
   { id: 'plan-negocio-polleria', label: 'Plan de Negocio: Pollería y Asador de Pollos (€35)' },
+  { id: 'plan-negocio-sushi-bar', label: 'Plan de Negocio: Sushi Bar (€35)' },
   { id: 'plan-negocio-food-truck', label: 'Plan de Negocio Food Truck (€29)' },
   { id: 'plan-negocio-cocteleria-eventos', label: 'Plan de Negocio Coctelería de Eventos (€55)' },
   { id: 'plan-negocio-parrillero-asador-eventos', label: 'Plan de Negocio Parrillero / Asador Eventos (€45)' },

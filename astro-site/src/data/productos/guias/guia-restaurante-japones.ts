@@ -13,7 +13,7 @@ const data: GuiaData = {
   seo: {
     title: 'Cómo Montar un Restaurante Japonés 60 Plazas — Guía Completa España | AI Chef Pro',
     description: 'Guía premium para montar un restaurante japonés en España: 20 capítulos, 23 páginas, sushi-ya, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi-grade. 8 plantillas Excel + 6 checklists + business plan. 65 EUR.',
-    keywords: 'como montar restaurante japones españa, abrir sushi bar, restaurante japones autentico, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi grade, anisakis, sake, whisky japones, plan financiero restaurante japones, AI Chef Pro',
+    keywords: 'como montar restaurante japones españa, restaurante japones autentico, ramen-ya, izakaya, omakase, robatayaki, proveedores pescado sashimi grade, anisakis, sake, whisky japones, plan financiero restaurante japones, AI Chef Pro',
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg',
   },
 
@@ -168,6 +168,7 @@ const data: GuiaData = {
 
   footerLinks: [
     { label: 'aichef.pro', href: 'https://aichef.pro' },
+    { label: 'Plan de Negocio: Sushi Bar', href: '/plan-negocio-sushi-bar' },
     { label: 'Guía Restaurante Peruano', href: '/guia-restaurante-peruano' },
     { label: 'Guía Restaurante Mexicano', href: '/guia-restaurante-mexicano' },
     { label: 'Todos los Productos', href: '/productos-digitales' },

@@ -62,6 +62,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Business Plan: Sushi Bar',
+    slug: '/plan-negocio-sushi-bar',
+    description: 'Business plan completo per aprire un sushi bar o un ristorante di sushi con bancone, asporto e consegna a domicilio: piano finanziario in Excel a 3 anni di 9 fogli, piano in Word di 10 sezioni, checklist di apertura di 80 attività, calcolatore del pesce, del riso e del costo per pezzo e Guida alle Equivalenze per l\'America Latina.',
+    features: [
+      'Business plan in Word di 10 sezioni',
+      'Piano finanziario in Excel di 9 fogli con la tesoreria mese per mese',
+      'Checklist di apertura: 80 attività in 6 fasi',
+      'Calcolatore del pesce, del riso e del costo per pezzo e Guida alle Equivalenze per l\'America Latina',
+    ],
+    iconName: 'Fish',
+    image: '/lovable-uploads/ai-gallery/plan-sushi-bar-hero.jpg',
+    badge: '✨ Novità',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'sushi-bar', 'japanese', 'business-plan'],
+  },
+  {
     name: 'Business Plan: Rosticceria di Polli',
     slug: '/plan-negocio-polleria',
     description: 'Business plan completo per aprire una rosticceria di polli: piano finanziario in Excel a 3 anni di 9 fogli, piano in Word di 10 sezioni con le cinque fonti di ricavo del pollo arrosto, checklist di apertura di 80 attività, calcolatore del pollo, dello spiedo e del costo per ordine e Guida alle Equivalenze per l\'America Latina.',
@@ -137,8 +153,8 @@ const products = [
     ],
     iconName: 'PartyPopper',
     image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
-    badge: '✨ Novità',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Novità',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'catering', 'events', 'business-plan'],
   },
   {
@@ -871,7 +887,7 @@ const products = [
     slug: '/kit-tareas-sushi-bar',
     description: '11 checklist operative per sushi bar con il protocollo HACCP obbligatorio per l\'anisakis secondo la normativa alimentare spagnola, controllo del pH del riso da sushi, gestione della vetrina neta e ruoli di itamae e omakase.',
     features: [
-      'HACCP anisakis: abbattimento a -20°C per almeno 7 giorni per lotto',
+      'HACCP anisakis: abbattimento a -20°C per almeno 24 ore (o -35°C per 15 ore) per lotto',
       'Riso per sushi con controllo del pH (≤4,6)',
       'Vetrina neta (2-4°C) con rotazione FIFO',
       'Figure professionali: itamae, assistente, sala e delivery',
