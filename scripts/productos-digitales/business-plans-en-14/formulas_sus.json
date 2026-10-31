@@ -1,8 +1,8 @@
 {
  "SUSP|0. Supuestos|C9": {
-  "en": "=IFERROR(\"Average check excl. sales tax plus the weighted sales tax of your sales lines (\"&TEXT(SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)*100,\"0\")&\"%), rounded. In the US, menu prices usually exclude sales tax and it is added at the register; the beverage share in column H of the beverage line of the P&L only moves this average if your state taxes alcohol at another rate. In the UK, menu prices include VAT.\",\"\")",
-  "de": "TAQP|0. Supuestos|C9",
-  "metodo": "auto"
+  "en": "=IFERROR(\"Average check excl. sales tax plus the weighted sales tax of your sales lines (\"&TEXT(SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)*100,\"0\")&\"%), rounded. In the US, menu prices usually exclude sales tax and it is added at the register; the beverage share in column H of the beverage line of the P&L only moves this average if your state taxes alcohol at another rate. \"&\"In the UK, menu prices include VAT.\",\"\")",
+  "de": null,
+  "metodo": "manual"
  },
  "SUSP|0. Supuestos|C50": {
   "en": "=IFERROR(\"That is \"&TEXT(INT(ROUND(B50,1)),\"0\")&\".\"&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),\"0\")&\" seat turns per day on the \"&TEXT($B$51,\"0\")&\" seats in the cell below. \"&\"It includes the take-out and delivery covers (1 order = 1.6 covers), which do not take a seat: the real turns of your dining room are lower (in the example, about six in ten covers eat in). Compare it with the ceiling on seat turns typed in \"\"Break-Even\"\".\",\"\")",

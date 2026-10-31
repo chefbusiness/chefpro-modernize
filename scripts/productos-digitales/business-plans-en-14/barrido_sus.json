@@ -1,0 +1,46 @@
+{
+ "carpeta": "/root/wt-sushi-en/astro-site/public/dl/sushi-restaurant-business-plan",
+ "parcial": false,
+ "piezas": 1718,
+ "fallos": 0,
+ "ficheros": {
+  "sushi-fish-rice-costing-calculator.xlsx": {
+   "hojas": 4,
+   "formulas": 180,
+   "piezas": 329,
+   "sha256": "49441b0d473ab2ce054c4eea8aff002b4d7db045561b6c2c97122830d75dc545",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "sushi-restaurant-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 7583,
+   "piezas": 116,
+   "sha256": "13423e591d678ccfcedab676b569f1e4db51dac0aa1cd04c141dd05d65f08bb3",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "sushi-restaurant-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 741,
+   "piezas": 778,
+   "sha256": "581a54fc92560aae59139ca3f30ca1879a94a3d60d3741c2d2489079d9cbda79",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "sushi-restaurant-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 495,
+   "sha256": "35eed8b672703349d58ed3ca8d04936ee703ecb5a8555b05f3613610c87825b6",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}
