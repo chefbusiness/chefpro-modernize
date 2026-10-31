@@ -127,6 +127,7 @@ SCRATCH = os.environ.get(
 #: pastry-shop-checklist-templates: Pastry Shop Checklists Kit Pro (EN), `--kit pastry` (checklists-kit/pastry/SPEC.md).
 #: hotel-checklist-templates: Hotel Checklists Kit Pro (EN), `--kit hotel` (checklists-kit/hotel/SPEC.md).
 #: taco-shop-checklist-templates: Taco Shop Checklists Kit Pro (EN), `--kit taco` (checklists-kit/taco/SPEC.md).
+#: food-truck-checklist-templates: Food Truck Checklists Kit Pro (EN), `--kit foodtruck` (checklists-kit/foodtruck/SPEC.md).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
              'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan',
@@ -144,7 +145,8 @@ EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'catering-checklist-templates', 'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
              'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',
              'chocolate-shop-checklist-templates', 'pastry-shop-checklist-templates',
-             'hotel-checklist-templates', 'taco-shop-checklist-templates'}
+             'hotel-checklist-templates', 'taco-shop-checklist-templates',
+             'food-truck-checklist-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'

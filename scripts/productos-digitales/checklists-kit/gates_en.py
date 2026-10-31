@@ -84,6 +84,10 @@ CAJA_SPEC = {'total_1_de_cada': 204.91, 'fondo': 200, 'contado': 1250, 'tarjetas
 # G5 calcula mapas.CASOS_G5 y G1 admite las fórmulas con hoja que el EN añade (mapas.FORMULAS_CON_HOJA_EXTRA)
 HOJA_CAJA = getattr(mapas, 'HOJA_CAJA', ('09', 'Cierre de Caja'))
 SIN_CAJA = HOJA_CAJA is None          # taquería (taco/SPEC.md D12): el ES no trae libro de caja → G5 no aplica
+# molde PLANO (foodtruck/SPEC.md §0.1): una hoja por libro, sin «Instrucciones» ni línea de versión, título interior
+# en mapas.CELDA_TITULO, tareas sin número en A (extraer_textos.filas_tarea). Lo que no se puede comprobar porque el
+# ES no lo trae (fórmulas, caja, horas, firma) sale como «n/a», no como verde. Falso en los demás kits.
+PLANO = X.PLANO
 CASOS_G5 = getattr(mapas, 'CASOS_G5', None)
 CON_HOJA_EXTRA = getattr(mapas, 'FORMULAS_CON_HOJA_EXTRA', {})
 SIN_MARCA = frozenset(getattr(mapas, 'LIBROS_SIN_MARCA', ()))   # libros cuyo ES no trae la línea de marca D19
@@ -321,7 +325,9 @@ def num(v):
 
 
 def tareas(ws):
-    """Filas de tarea (como el censo): nº entero en A y texto en B, desde la fila 5."""
+    """Filas de tarea (como el censo): nº entero en A y texto en B, desde la fila 5 (molde plano: filas_tarea)."""
+    if PLANO:
+        return X.filas_tarea(ws)
     out = set()
     for (r, c), cel in list(ws._cells.items()):
         if c == 1 and r >= 5 and isinstance(cel.value, int) and not isinstance(cel.value, bool):
@@ -743,25 +749,42 @@ def gateG3(R, carpeta, datos, mes):
                     if dn_ is None or not dn_.height or dn_.height + 1e-9 < d.height:
                         R.fallo('%s:%s: la fila %d baja de %s a %s' % (en, ws.title, r, d.height,
                                                                      dn_.height if dn_ is not None else None))
-        ins = wb[A.HOJA_INSTR_EN]
-        vers = [c.value for c in ins._cells.values() if isinstance(c.value, str) and c.value.startswith('Version ')]
-        if len(vers) != 1 or not rx_version.match(vers[0]):
-            R.fallo('%s: línea de versión D19 %r' % (en, vers))
+        if PLANO:
+            # molde plano: sin hoja de instrucciones ni línea de versión (el ES no la trae); título en CELDA_TITULO
+            vers = [c.value for ws in wb.worksheets for c in ws._cells.values()
+                    if isinstance(c.value, str) and c.value.startswith('Version ')]
+            if vers:
+                R.fallo('%s: línea de versión %r en un libro de molde plano (el ES no la trae)' % (en, vers))
+            ws_t = wb[mapas.HOJAS[ce['hojas'][0]]]
+            if ws_t[mapas.CELDA_TITULO].value != mapas.titulo_interior(es):
+                R.fallo('%s: %s!%s %r ≠ título interior D5 %r' % (en, ws_t.title, mapas.CELDA_TITULO,
+                                                                ws_t[mapas.CELDA_TITULO].value, mapas.titulo_interior(es)))
+            else:
+                n['titulos_interiores'] += 1
         else:
-            n['versiones'] += 1
+            ins = wb[A.HOJA_INSTR_EN]
+            vers = [c.value for c in ins._cells.values() if isinstance(c.value, str) and c.value.startswith('Version ')]
+            if len(vers) != 1 or not rx_version.match(vers[0]):
+                R.fallo('%s: línea de versión D19 %r' % (en, vers))
+            else:
+                n['versiones'] += 1
         p = wb.properties
         esp = {'title': mapas.TITULOS[en], 'subject': A.SUBJECT, 'keywords': A.KEYWORDS, 'description': A.DESCRIPTION,
                'category': A.CATEGORY, 'creator': A.CREATOR}
         for k, v in esp.items():
             if getattr(p, k) != v:
                 R.fallo('%s: docProps %s %r ≠ %r' % (en, k, getattr(p, k), v))
-        if ins['B2'].value != mapas.titulo_interior(es):
+        if not PLANO and ins['B2'].value != mapas.titulo_interior(es):
             R.fallo('%s: Instructions!B2 %r ≠ título interior D5 %r' % (en, ins['B2'].value, mapas.titulo_interior(es)))
     T0 = censo['totales']
     n_pies = sum(len(hd['cabeceras_pies']) for i in censo['libros'].values() for hd in i['hojas_detalle'].values())
     if n['hojas'] != T0['hojas'] or n['pies'] != n_pies:
         R.fallo('hojas %d / pies %d ≠ censo %d / %d' % (n['hojas'], n['pies'], T0['hojas'], n_pies))
-    if n['versiones'] != len(mapas.FICHEROS):
+    if PLANO:
+        if n['titulos_interiores'] != len(mapas.FICHEROS):
+            R.fallo('títulos interiores %d ≠ %d' % (n['titulos_interiores'], len(mapas.FICHEROS)))
+        R.dato('versiones', 'n/a (molde plano: el ES no trae línea de versión)')
+    elif n['versiones'] != len(mapas.FICHEROS):
         R.fallo('versiones %d ≠ %d' % (n['versiones'], len(mapas.FICHEROS)))
     for k, v in sorted(n.items()):
         R.dato(k, v)
@@ -857,7 +880,10 @@ def gateG4(R, carpeta, datos, mes):
         if got_es != v_es or got != v_en or isinstance(got, bool):
             R.fallo('%s %s!%s: valor fijado %r (ES %r) ≠ %r (ES %r)' % (c, mapas.HOJAS[h_es], coord, got, got_es,
                                                                        v_en, v_es))
-    if not n['firmas'] and not datos['parcial']:
+    if PLANO:                                                    # el ES plano no trae firma de autor ni horas
+        n['firmas'] = n['firmas'] or 'n/a (el ES no trae firma)'
+        n['horas'] = n['horas'] or 'n/a (0 horas en el ES)'
+    elif not n['firmas'] and not datos['parcial']:
         R.fallo('firma de autor no comprobada (¿cadena ausente?)')
     for k, v in sorted(n.items()):
         R.dato(k, v)
@@ -958,6 +984,8 @@ def gateG5(R, carpeta, datos):
     R.gate('G5 caja')
     if SIN_CAJA:
         R.dato('libro_de_caja', 'ninguno (D12)')
+        if PLANO:
+            R.dato('n/a', 'sin libro de caja')
         return
     hc = mapas.HOJAS[HOJA_CAJA[1]]
     ws = cargar(fichero_en(carpeta, HOJA_CAJA[0]))[hc]
@@ -1080,6 +1108,8 @@ def gateG6(R, carpeta, datos):
         R.fallo('fórmulas %d ≠ censo %d' % (n['formulas'], datos['censo']['totales']['celdas_formula']))
     for k, v in sorted(n.items()):
         R.dato(k, v)
+    if PLANO and not datos['censo']['totales']['celdas_formula']:
+        R.dato('n/a', '0 fórmulas en el ES: nada que calcular')
 
 
 # ==========================================================================
@@ -1208,7 +1238,8 @@ def _libro(corto):
 
 F01, F02, F03, F06 = (_libro(c) for c in ('01', '02', '03', '06'))
 F09 = _libro(HOJA_CAJA[0]) if not SIN_CAJA else None      # catering: 09-cobros-… · hotel: 19-… · taquería: sin caja
-H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][1]]      # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
+_I1 = 0 if PLANO else 1                                    # molde plano: no hay «Instrucciones» delante
+H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][_I1]]    # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
 H_CC = mapas.HOJAS[HOJA_CAJA[1]] if not SIN_CAJA else None   # base: «Cash Drawer Closing» · catering: «Event Settlement»
 _HH = getattr(mapas, 'HOJA_HORAS', None)                   # catering: las horas de celda están en el 08
 F_HORAS = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_HH[0] + '-'))] if _HH else F01
@@ -1219,8 +1250,12 @@ F_VERDE = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_HV[0] 
 H_VERDE = mapas.HOJAS[_HV[1]] if _HV else H_KO
 F_CAJA0 = mapas.DENOMINACIONES[0][0] if not SIN_CAJA else None   # base: 27 · catering: 30
 # base: «Valentine's Day» · hotel: su 06 tiene una sola checklist (mapas.HOJA_AREA_AUTOTEST)
-H_AREA = mapas.HOJAS[getattr(mapas, 'HOJA_AREA_AUTOTEST', None) or mapas.HOJAS_ES_POR_LIBRO['06'][2]]
-H_DIARIO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['03'][1]]  # «Manager Daily»
+H_AREA = mapas.HOJAS[getattr(mapas, 'HOJA_AREA_AUTOTEST', None) or mapas.HOJAS_ES_POR_LIBRO['06'][0 if PLANO else 2]]
+H_DIARIO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['03'][_I1]]  # «Manager Daily»
+# celda de texto donde las mutaciones de G2 / G7 escriben: Instructions!B6 o, en el molde plano, una tarea del 01
+_HT, _CT = (H_KO, getattr(mapas, 'CELDA_AUTOTEST', 'B5')) if PLANO else (mapas.HOJAS['Instrucciones'], 'B6')
+_CON_HORAS = bool(json.load(open(os.path.join(kit.DATOS, 'censo_es.json'), encoding='utf-8'))['totales']['horas_24h']) \
+    if PLANO else True
 RX_HORA_US = re.compile(r'^\d{1,2}:\d{2} [AP]M$')
 
 
@@ -1306,43 +1341,53 @@ def _contador_mal(wb):
 
 
 def _grados_mal(wb):
-    ws = wb[mapas.HOJAS['Instrucciones']]
+    ws = wb[_HT]
     g = next(x for x in range(38, 0, -1) if x not in GRADOS_F_SPEC)   # base: 38 · bar (38 °F es la cerveza): 37
-    ws['B6'].value = (ws['B6'].value or '') + ' Hold cold food at %d °F.' % g
+    ws[_CT].value = (ws[_CT].value or '') + ' Hold cold food at %d °F.' % g
 
 
 def _cita_mal(wb):
-    ws = wb[mapas.HOJAS['Instrucciones']]
+    ws = wb[_HT]
     if hasattr(mapas, 'CITA_AUTOTEST'):        # el kit fija su cita no permitida
-        ws['B6'].value = (ws['B6'].value or '') + ' ' + CITA_MAL
+        ws[_CT].value = (ws[_CT].value or '') + ' ' + CITA_MAL
         return
     ok = permitidas()[0]                       # base y bar: 3-501.19 · cafe (la cita en REGLAS_US, ronda 1 M4): la siguiente
     cod = next(c for c in ('3-501.19', '3-501.18', '3-202.11', '3-401.11', '3-304.11', '4-204.112')
                if not set(citas_de('FDA Food Code ' + c)) <= ok)
-    ws['B6'].value = (ws['B6'].value or '') + ' (FDA Food Code %s)' % cod
+    ws[_CT].value = (ws[_CT].value or '') + ' (FDA Food Code %s)' % cod
+
+
+def _titulo_mal(wb):
+    """Molde plano: el título interior (CELDA_TITULO) cambiado: G3 tiene que cazarlo."""
+    ws = wb[H_KO]
+    ws[mapas.CELDA_TITULO].value = (ws[mapas.CELDA_TITULO].value or '') + ' (draft)'
 
 
 MUTACIONES = [
     ('G1', F_VERDE, _bloquear_verde, 'desbloqueadas'),
     ('G1', F01, _quitar_tarea, 'tareas'),
     ('G1', F06, _area_rota, 'área de impresión'),
-    ('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Revisa cada tarea con el equipo'), 'ES'),
-    ('G2', F03, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Petty cash: 150 € per week'), 'moneda'),
-    ('G2', F_HORAS, _hora_24, '24 h'),
-    ('G2', F02, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Budget $5 per station'), '«$»'),
+    ('G2', F01, lambda wb: _set(wb[_HT], _CT, 'Revisa cada tarea con el equipo'), 'ES'),
+    ('G2', F03, lambda wb: _set(wb[_HT if not PLANO else mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['03'][0]]], _CT,
+                                'Petty cash: 150 € per week'), 'moneda'),
+    *([('G2', F_HORAS, _hora_24, '24 h')] if _CON_HORAS else []),
+    ('G2', F02, lambda wb: _set(wb[_HT if not PLANO else mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['02'][0]]], _CT,
+                                'Budget $5 per station'), '«$»'),
     ('G3', F03, lambda wb: setattr(wb[H_DIARIO].page_setup, 'paperSize', 9), 'paperSize'),
     ('G3', F01, lambda wb: setattr(wb[H_KO].oddFooter.center, 'text', 'Page &P'), 'pie'),
     ('G3', F01, _titulo_largo, 'ajuste'),
     ('G4', F01, _celda_glosario, 'mapa-glosario'),
-    ('G4', F_HORAS, _hora_mal, 'hora_us'),
+    *([('G4', F_HORAS, _hora_mal, 'hora_us')] if _CON_HORAS else []),
     *([('G5', F09, _caja_mal, 'caja'), ('G6', F09, _cache_mal, 'número')] if not SIN_CAJA else
-      [('G6', F01, _contador_mal, 'número')]),
+      [('G6', F01, _contador_mal, 'número')] if not PLANO else []),    # plano: 0 fórmulas, G6 no tiene qué cazar
     ('G7', F01, _grados_mal, '°F'),
     ('G7', F01, _cita_mal, 'cita normativa'),
 ]
 if mapas.TERMINOS_PROHIBIDOS:                                    # vertical con términos prohibidos (cafe)
-    MUTACIONES.append(('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', (
-        wb[mapas.HOJAS['Instrucciones']]['B6'].value or '') + ' ' + mapas.TERMINO_PROHIBIDO_EJEMPLO), 'término prohibido'))
+    MUTACIONES.append(('G2', F01, lambda wb: _set(wb[_HT], _CT, (
+        wb[_HT][_CT].value or '') + ' ' + mapas.TERMINO_PROHIBIDO_EJEMPLO), 'término prohibido'))
+if PLANO:                                                        # molde plano: el título interior en CELDA_TITULO
+    MUTACIONES.append(('G3', F01, _titulo_mal, 'título interior'))
 if A.CF_POR_CELDA:                                               # vertical con CF cambiada a propósito (catering M5)
     _KCF, (_CF_ES, _CF_EN) = next(iter(A.CF_POR_CELDA.items()))
 
@@ -1433,6 +1478,8 @@ def ejecutar(carpeta, mes, solo, datos, silencioso=False):
         g = R.gates[R.actual]
         if not silencioso:
             estado = 'OK' if not g['fallos'] else 'FALLA (%d)' % len(g['fallos'])
+            if PLANO and not g['fallos'] and 'n/a' in g['datos']:     # molde plano: nada que comprobar ≠ verde
+                estado = 'N/A'
             resumen = ' · '.join('%s=%s' % (k, v) for k, v in list(g['datos'].items())[:16] if not isinstance(v, list))
             print('%-24s %s  %s' % (R.actual, estado, resumen[:320]))
             for f in g['fallos'][:int(os.environ.get('CHECKLISTS_MAX_FALLOS', '15'))]:
@@ -1464,8 +1511,10 @@ def main():
     if args.json:
         with open(args.json, 'w', encoding='utf-8') as fh:
             json.dump(R.gates, fh, ensure_ascii=False, indent=1, default=str)
-    print('\n%s: %d gates, %d fallos (%s)%s' % ('VERDE' if not fallos else 'ROJO', len(R.gates), fallos, carpeta,
-                                              ' · PARCIAL' if args.parcial else ''))
+    na = [g.split()[0] for g, v in R.gates.items() if PLANO and not v['fallos'] and 'n/a' in v['datos']]
+    print('\n%s: %d gates, %d fallos (%s)%s%s' % ('VERDE' if not fallos else 'ROJO', len(R.gates), fallos, carpeta,
+                                                ' · PARCIAL' if args.parcial else '',
+                                                ' · N/A (sin nada que comprobar): %s' % ', '.join(na) if na else ''))
     sys.exit(1 if fallos else 0)
 
 

@@ -234,6 +234,23 @@ def clasificar_celda(fichero, ws, cel, texto, hojas_libro, claves_hoja):
     return 'traducir', None
 
 
+PLANO = getattr(mapas, 'MOLDE', None) == 'plano'     # foodtruck/SPEC.md §0: una hoja por libro, sin columna Nº
+
+
+def filas_tarea(ws):
+    """Filas de tarea del molde PLANO (foodtruck/SPEC.md §0.1): por debajo de la cabecera (mapas.FILA_CABECERA), texto
+    en A y en B (B sin fórmula) y A que no es el ancla de una banda fusionada (sección, título, línea de marca). El
+    molde del kit base sigue con su regla (nº entero en A y texto en B, desde la fila 5)."""
+    bandas = {(m.min_row, m.min_col) for m in ws.merged_cells.ranges if m.max_col > m.min_col}
+    out = set()
+    for r in range(mapas.FILA_CABECERA + 1, ws.max_row + 1):
+        a, b = ws.cell(row=r, column=1), ws.cell(row=r, column=2)
+        if (isinstance(a.value, str) and a.value.strip() and isinstance(b.value, str) and b.value.strip()
+                and b.data_type != 'f' and (r, 1) not in bandas):
+            out.add(r)
+    return out
+
+
 def dependencias_de(texto, entera=True):
     out = []
     for dep, (_etq, rx, _dest) in DEPENDENCIAS.items():
@@ -364,6 +381,8 @@ def censar_libro(path, fichero):
         tareas = sum(1 for r in range(5, ws.max_row + 1)
                      if isinstance(ws.cell(row=r, column=1).value, int) and
                      isinstance(ws.cell(row=r, column=2).value, str) and ws.cell(row=r, column=2).data_type != 'f')
+        if PLANO:                                                # molde plano: tareas sin número en A
+            tareas = len(filas_tarea(ws))
         hd['tareas'] = tareas if ws.title != 'Instrucciones' else 0
         hd['celdas_texto'] = n_txt
         hd['celdas_numero'] = n_num
