@@ -8,7 +8,9 @@ burger = Burger Joint Checklists Kit Pro · ghost = Ghost Kitchen Checklists Kit
 Checklists Kit Pro, molde híbrido: el 01-07 y los bonus en el molde ligero del catering, el 08 y el 09 en el del base ·
 chocolate = Chocolate Shop Checklists Kit Pro · pastry = Pastry Shop Checklists Kit Pro, con 4 libros propios del 10 al 13 ·
 hotel = Hotel Checklists Kit Pro, 19 libros: 01-15 y los bonus en el molde ligero, el 18 y el 19 = el 08 y el 09 del base ·
-taco = Taco Shop Checklists Kit Pro, mapa de libros propio en el molde del base y SIN libro de caja).
+taco = Taco Shop Checklists Kit Pro, mapa de libros propio en el molde del base y SIN libro de caja ·
+foodtruck = Food Truck Checklists Kit Pro, el primero en el MOLDE PLANO de origen ChefBusiness: una hoja por libro,
+sin «Instrucciones», sin contadores ni versión, título en A2 y SIN libro de caja; ganchos de F2 en foodtruck/SPEC.md).
 
     python3 extraer_textos.py --kit bar          # o CHECKLISTS_KIT=bar python3 extraer_textos.py
     python3 extraer_textos.py --kit cafe
@@ -21,6 +23,7 @@ taco = Taco Shop Checklists Kit Pro, mapa de libros propio en el molde del base 
     python3 extraer_textos.py --kit pastry
     python3 extraer_textos.py --kit hotel
     python3 extraer_textos.py --kit taco
+    python3 extraer_textos.py --kit foodtruck
 
 Sin --kit (ni la variable) todo es el kit base de siempre, byte a byte: `mapas.py`, origen `dl/kit-tareas` y los
 datos junto a los scripts (censo_es.json, textos_es.json, textos_en/). Con --kit <v>:
@@ -53,7 +56,7 @@ def _de_argv(argv):
 
 
 VERTICALES = ('bar', 'cafe', 'catering', 'pizza', 'burger', 'ghost', 'icecream', 'chocolate', 'pastry', 'hotel',
-              'taco')     # <v>/mapas_<v>.py, SPEC en <v>/SPEC.md
+              'taco', 'foodtruck')     # <v>/mapas_<v>.py, SPEC en <v>/SPEC.md
 NOMBRE = _de_argv(sys.argv) or os.environ.get('CHECKLISTS_KIT') or 'base'
 os.environ['CHECKLISTS_KIT'] = NOMBRE
 BASE = NOMBRE == 'base'
