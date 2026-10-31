@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generado": "2026-10-11T15:08:52Z",
+  "generado": "2026-10-31T03:49:43Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "10a76f21",
+  "commit": "8a0d6dab",
   "libros": {
    "CATP": {
     "es": "plan-financiero-food-truck.xlsx",
     "en": "catering-financial-projections.xlsx",
-    "sha256": "77bfb0b1cf86c072007016203dfc2314a20c39390030a0d5d1e7e53f0fc7c13c"
+    "sha256": "deb006d717358b1b7c63f98f93f9a01a7a206913d12304e769239e0807a096aa"
    },
    "CATC": {
     "es": "checklist-apertura-food-truck.xlsx",
@@ -65,7 +65,7 @@
     "id": "GX",
     "descripcion": "NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps",
     "n_cadenas": 143,
-    "n_palabras": 775,
+    "n_palabras": 821,
     "n_plan": 133,
     "n_check": 19,
     "n_localizar": 0,
@@ -8720,7 +8720,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0578",
-    "en": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly (April, July, October, January): if your state requires monthly filing, expect smaller payments every month instead",
+    "en": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10, and the fourth quarter in Month 13: April, July, October and January when Month 1 is January): if your state requires monthly filing, expect smaller payments every month instead",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en (Food Truck EN publicado)",
     "donde": [
@@ -9363,7 +9363,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0598",
-    "en": "Fourth-quarter sales tax is settled in January of the following year, so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
+    "en": "Fourth-quarter sales tax is settled in Month 13 (January of the following year when Month 1 is January), so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en (Food Truck EN publicado)",
     "donde": [
@@ -29949,15 +29949,15 @@
   },
   {
    "id": "c0115",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "cat"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
-   "sha1": "721896d9dc29",
+   "palabras": 35,
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "CATP",
@@ -31321,15 +31321,15 @@
   },
   {
    "id": "c0306",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "cat"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
-   "sha1": "a40f4860d483",
+   "palabras": 45,
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "CATP",

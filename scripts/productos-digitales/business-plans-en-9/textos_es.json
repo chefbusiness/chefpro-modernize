@@ -1,31 +1,31 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:26:06Z",
+  "generado": "2026-10-31T03:49:47Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "16b01f7a",
+  "commit": "8a0d6dab",
   "libros": {
    "WEDP": {
     "es": "plan-financiero-finca-eventos-bodas.xlsx",
     "en": "wedding-venue-financial-projections.xlsx",
-    "sha256": "c4ffdd64fd75319ef40c26c5a42c32269107d6ec59aae6a58c184bf2bb782fe5"
+    "sha256": "79df7e70ed3920a217a205990663dd1819ee3acc8189e1cc16f5581528d8dcf6"
    },
    "WEDC": {
     "es": "checklist-apertura-finca-eventos-bodas.xlsx",
     "en": "wedding-venue-startup-checklist.xlsx",
-    "sha256": "58acc337d81203ae565d3fc99eef81e5862881c4b9d048cf024d6ffc3ee29f5d"
+    "sha256": "7e75d12f2cfc07874e0fe1c0d19b796165d979f335979edbbd14317990c1ecb3"
    }
   },
   "n_cadenas": 879,
   "n_traducir": 690,
   "n_localizar": 55,
-  "n_palabras_subagentes": 10011,
+  "n_palabras_subagentes": 10057,
   "n_apariciones": 1139,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: mismo ES exacto que una cadena GM (motor común) de la Pizza EN o de BP/BP2, con EN sin vocabulario de restaurante (RX_REESCRIBIR). preparar_tandas escribe su EN. No van a los traductores",
     "n_cadenas": 306,
-    "n_palabras": 3063,
+    "n_palabras": 3109,
     "n_plan": 289,
     "n_check": 18,
     "n_localizar": 0,
@@ -81,9 +81,8 @@
    "cadenas": {
     "AI Chef Pro": 2,
     "OK": 6,
-    "☐": 84,
+    "☐": 90,
     "✓": 6,
-    "—": 6,
     "N/A": 6
    },
    "literales_formula": {
@@ -1650,18 +1649,19 @@
   },
   {
    "id": "c0115",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "wed"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
+   "palabras": 35,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+    "Glosario §9: well (¿public water system?: ask your state drinking water program)"
    ],
-   "sha1": "721896d9dc29",
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "WEDP",
@@ -1674,7 +1674,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0116",
-    "en": "How far you can fall below plan before you start losing money",
+    "en": "How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb is somewhat smaller: with a 15% cushion, about 13% of plan",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN)",
     "origen": "texto",
@@ -5308,18 +5308,19 @@
   },
   {
    "id": "c0322",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "wed"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
+   "palabras": 45,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "Glosario §9: well (¿public water system?: ask your state drinking water program)"
    ],
-   "sha1": "a40f4860d483",
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "WEDP",
@@ -5332,7 +5333,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0320",
-    "en": "How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the \"0. Assumptions\" tab",
+    "en": "How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs and the loan payment is somewhat smaller: with a 25% cushion, 20%. The required minimum is set in the \"0. Assumptions\" tab",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN)",
     "origen": "texto",
@@ -7960,9 +7961,6 @@
    ],
    "n_apariciones": 1,
    "palabras": 41,
-   "pistas": [
-    "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota"
-   ],
    "sha1": "ff3929d13e5b",
    "donde": [
     {
@@ -7972,18 +7970,7 @@
      "t": "celda",
      "tr": "traducir"
     }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0531",
-    "en": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10: December, March and June with Month 1 in September; the fourth quarter is remitted in Month 13): if your state requires monthly filing, expect smaller payments every month instead",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-8 (Pizza EN)",
-    "origen": "texto",
-    "donde": [
-     "PIZP Tesorería 12 meses!O20"
-    ]
-   }
+   ]
   },
   {
    "id": "c0530",
@@ -17982,7 +17969,7 @@
   },
   {
    "id": "c0656",
-   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "es": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
    "grupo": "GWED-check",
    "tratamiento": "traducir",
    "planes": [
@@ -17994,7 +17981,7 @@
    "pistas": [
     "DV de la columna OK: en el EN la lista es «✓, ☐, N/A» (CLAVES['—'] = '☐'): escribe «☐ = pending», NUNCA «—» (la Pizza EN publicada lo dejó con «—»: F2-NOTAS §5)"
    ],
-   "sha1": "99fc84bf8389",
+   "sha1": "12fbeb7eedbe",
    "donde": [
     {
      "f": "WEDC",
@@ -18042,7 +18029,7 @@
    "reuso": {
     "grupo": "GR",
     "id": "c0659",
-    "en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+    "en": "Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN)",
     "origen": "texto",
@@ -23578,7 +23565,7 @@
      "c": "A9",
      "t": "celda",
      "tr": "regenerar",
-     "det": "decisión de la SPEC (mapas.FIJOS)"
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -23739,7 +23726,7 @@
      "c": "A39",
      "t": "celda",
      "tr": "regenerar",
-     "det": "decisión de la SPEC (mapas.FIJOS)"
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -23762,7 +23749,7 @@
      "c": "A40",
      "t": "celda",
      "tr": "regenerar",
-     "det": "decisión de la SPEC (mapas.FIJOS)"
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },

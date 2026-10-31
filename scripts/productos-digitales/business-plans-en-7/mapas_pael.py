@@ -173,8 +173,8 @@ RX_REESCRIBIR = re.compile(
 # sha256 del diccionario en cadena (D119/D132): 8 del BBQ cerrado (`../business-plans-en-6/`, fijados el 24-oct-2026
 # sobre 4610f8da) + los 8 del catering publicado (`../business-plans-en-4/`, los mismos que mapas_bbq)
 SHA_BBQ = OrderedDict([
-    ('textos_es.json', '7c9c8ce0afb478dc48076740d3b5dad7094162cf7dfba2d6cef50e263d4f0d88'),
-    ('textos_en/GM.json', 'd9a2a597eccff769d34461c2a797f25973d569c1f96bff2ea20db7e6dbaa6943'),
+    ('textos_es.json', 'c824e3621a9db5192e8da7733fec0891ec88ca9e307f5c7b9481420f6f6155cc'),
+    ('textos_en/GM.json', '2a79d54156dede61e434c9f4859af30aa7c8c9765ae1f63ec5770ba3594ea6a8'),
     ('textos_en/GRC-plan.json', '123034ac4137fe8b266bca8873012f86d421d40d6dfca8a527b649568a4f60e5'),
     ('textos_en/GRC-plan.revision.json', '7bd6735fe4a6fd5a3c02c4cb30bfec482728cdee852e4eb3dad54bab75a11081'),
     ('textos_en/GBQ-plan.json', '65a13976b21ff44ff0f593cef5565378e382295cbb09c5ceb1d5f7089798f49c'),
@@ -183,8 +183,8 @@ SHA_BBQ = OrderedDict([
     ('docx_en_bbq_b.json', '102f7417b4b1a8440acab3c9642842c59e17d5391b273a0dfe77fc87cc512e67'),
 ])
 SHA_DICCIONARIO = OrderedDict([
-    ('textos_es.json', '9d02ffbeb6c088ae84f5f1ad80364a7f0e1bcb1ad264d8c57a16739b64f574f1'),
-    ('textos_en/GM.json', 'b05fd56a3ed3eb562b7eb1dcc114e751f14d525ec0feefc7151388ede96c35d1'),
+    ('textos_es.json', '942033c95c5e11323cd49c556f0e019a888e55aad420187098b842c34eae2555'),
+    ('textos_en/GM.json', 'a65dbc65e834e73376ed99d32243cd5512a6b96af8b40521f91db3d25a35503c'),
     ('textos_en/GR.json', '7e2e0f23be5f1d6f9e2e8cc5d60def04fd15030a7d1ea6d677ea7f8942b883ea'),
     ('textos_en/GR.revision.json', '976190192b0c069cad212a5c7e40a5dc2761917cc5a920edfd6f8fff3097b13e'),
     ('textos_en/GCAT-plan.json', '849c96d84281bd39825fac07cae8668b9f8a61d7549f2030e6d2e3725d2b569e'),

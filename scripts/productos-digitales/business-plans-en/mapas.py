@@ -1285,9 +1285,18 @@ elif CONJUNTO == 'pol':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-13'))
     import mapas_pol as _pol                                                       # noqa: E402
     _pol.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'sus':
+    # Sushi Restaurant Business Plan Kit (F2 de business-plans-en-14, 31-oct-2026): libro ES del sushi bar = MISMA rejilla
+    # que el de la taquería (misma semilla, ROTACION encendida: Break-Even NO se desplaza), código del Taco EN
+    # (E2/E4/E5); diccionario en cadena = Taco EN por celda → Taco EN por texto → Rotisserie EN → Pizza EN → Bakery → Bar
+    # → BP; datos en business-plans-en-14/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-14'))
+    import mapas_sus as _sus                                                       # noqa: E402
+    _sus.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
     raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar | bbq | pael | piz | ice | wed | '
-                     'cof | taq | pol)' % CONJUNTO)
+                     'cof | taq | pol | sus)' % CONJUNTO)
 
 
 if __name__ == '__main__':

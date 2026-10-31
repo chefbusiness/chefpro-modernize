@@ -706,6 +706,25 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'guia-equivalencias': '/dl/plan-negocio-polleria/guia-equivalencias-plan-negocio-polleria.docx',
     },
   },
+  'plan-negocio-sushi-bar': {
+    id: 'plan-negocio-sushi-bar',
+    name: 'Plan de Negocio: Sushi Bar',
+    priceLabel: '€35',
+    accessPath: '/plan-negocio-sushi-bar-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Sushi Bar',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Sushi Bar</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora del pescado, el arroz y el escandallo de 4 hojas y guía de equivalencias para Hispanoamérica:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+    emailTitleResend: 'Accede a tu Plan de Negocio: Sushi Bar',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word, el plan financiero en Excel, el checklist de apertura, la calculadora del pescado, el arroz y el escandallo y la Guía de Equivalencias:',
+    files: {
+      'plan-financiero': '/dl/plan-negocio-sushi-bar/plan-financiero-sushi-bar.xlsx',
+      'plan-negocio': '/dl/plan-negocio-sushi-bar/plan-de-negocio-sushi-bar.docx',
+      'checklist-apertura': '/dl/plan-negocio-sushi-bar/checklist-apertura-sushi-bar.xlsx',
+      'calculadora-sushi': '/dl/plan-negocio-sushi-bar/calculadora-pescado-arroz-escandallo-sushi-bar.xlsx',
+      'guia-equivalencias': '/dl/plan-negocio-sushi-bar/guia-equivalencias-plan-negocio-sushi-bar.docx',
+    },
+  },
   'plan-negocio-cafeteria': {
     id: 'plan-negocio-cafeteria',
     name: 'Plan de Negocio Cafetería / Brunch',
@@ -1475,6 +1494,8 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'checklist-apertura': '/dl/taco-shop-business-plan/taco-shop-startup-checklist.xlsx',
       'calculadora-trompo': '/dl/taco-shop-business-plan/taco-cost-trompo-yield-calculator.xlsx',
     },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-29): twin of plan-negocio-polleria, independent product.
   'rotisserie-chicken-restaurant-business-plan': {
     id: 'rotisserie-chicken-restaurant-business-plan',
@@ -1495,6 +1516,24 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-31): twin of plan-negocio-sushi-bar, independent product.
+  'sushi-restaurant-business-plan': {
+    id: 'sushi-restaurant-business-plan',
+    name: 'Sushi Restaurant Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/sushi-restaurant-business-plan/access',
+    emailSubject: 'Your access to Sushi Restaurant Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Sushi Restaurant Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the fish, sushi rice and costing calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Sushi Restaurant Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the fish, sushi rice and costing calculator and the 80-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/sushi-restaurant-business-plan/sushi-restaurant-business-plan.docx',
+      'plan-financiero': '/dl/sushi-restaurant-business-plan/sushi-restaurant-financial-projections.xlsx',
+      'checklist-apertura': '/dl/sushi-restaurant-business-plan/sushi-restaurant-startup-checklist.xlsx',
+      'calculadora-sushi': '/dl/sushi-restaurant-business-plan/sushi-fish-rice-costing-calculator.xlsx',
+    },
     lang: 'en',
   },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.

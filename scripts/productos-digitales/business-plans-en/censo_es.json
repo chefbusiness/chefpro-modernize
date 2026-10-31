@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generado": "2026-10-04T17:50:38Z",
+  "generado": "2026-10-31T03:49:40Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-food-truck",
    "astro-site/public/dl/plan-negocio-cafeteria"
   ],
-  "commit": "3c57801a",
+  "commit": "8a0d6dab",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -14,7 +14,7 @@
    "corto": "FTP",
    "plan": "ft",
    "tipo": "plan",
-   "sha256": "77bfb0b1cf86c072007016203dfc2314a20c39390030a0d5d1e7e53f0fc7c13c",
+   "sha256": "deb006d717358b1b7c63f98f93f9a01a7a206913d12304e769239e0807a096aa",
    "nombre_en": "food-truck-financial-projections.xlsx",
    "titulo_en": "Food Truck Financial Projections: 3-Year P&L, Cash Flow & Financing",
    "hojas": [
@@ -964,7 +964,7 @@
       "de los ": 1,
       "del mes": 1
      },
-     "huella_formulas_sha1": "a3cae822d7dcba325aeeb8cf9a4de6f98e6cb654",
+     "huella_formulas_sha1": "c0f6a2ad2d2858766dfc9295b0bae5669e2220ae",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF(COUNT(B{r}:B{r})=0,\"\",SUM(B{r}:B{r})),\"\")",
@@ -1009,7 +1009,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Vehículo food truck (nuevo o segunda mano), Adaptación y rotulación vehículo, Instalación gas (si aplica), Depósito de agua + aguas residuales y Proyecto técnico sanitario), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Vehículo food truck (nuevo o segunda mano), Adaptación y rotulación vehículo, Instalación gas (si aplica), Depósito de agua + aguas residuales y Proyecto técnico sanitario), no \"&\"del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
        "n": 1,
        "celdas": "D23",
        "cifras": false
@@ -1057,7 +1057,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
        "n": 1,
        "celdas": "D28",
        "cifras": false
@@ -1093,7 +1093,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencias y permisos (promedio), Stock inicial de producto, Marketing lanzamiento, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
+       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencias y permisos (promedio), Stock inicial de producto, Marketing lanzamiento, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón \"&\"operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
        "n": 1,
        "celdas": "D33",
        "cifras": false
@@ -1124,7 +1124,7 @@
       "D22": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
       "B23": "=IFERROR(IF(COUNT(B7,B8,B11,B12,B15)=0,\"\",ROUND((B7+B8+B11+B12+B15)*'0. Supuestos'!$B$55,0)),\"\")",
       "C23": "=IFERROR(B23/$B$26,\"\")",
-      "D23": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Vehículo food truck (nuevo o segunda mano), Adaptación y rotulación vehículo, Instalación gas (si aplica), Depósito de agua + aguas residuales y Proyecto técnico sanitario), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D23": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Vehículo food truck (nuevo o segunda mano), Adaptación y rotulación vehículo, Instalación gas (si aplica), Depósito de agua + aguas residuales y Proyecto técnico sanitario), no \"&\"del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "B24": "=IFERROR(IF(B25=\"\",\"\",B25),\"\")",
       "C24": "=IFERROR(B24/$B$26,\"\")",
       "B25": "=IFERROR(IF('0. Supuestos'!$B$35*('PyG 3 Años'!$B$38-'PyG 3 Años'!$B$36)=0,\"\",'0. Supuestos'!$B$35*('PyG 3 Años'!$B$38-'PyG 3 Años'!$B$36)/12),\"\")",
@@ -1134,25 +1134,25 @@
       "D26": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C24,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
       "B27": "=IFERROR(B26-B24,\"\")",
       "B28": "=IFERROR(IF(B26=\"\",\"\",SUMIF($E$7:$E$23,\"Sí\",$B$7:$B$23)*'0. Supuestos'!$B$41),\"\")",
-      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "B29": "=IFERROR(B26+B28,\"\")",
       "B31": "=IFERROR(IF(B7=\"\",\"\",B7+B8+B11+B12+B15+B23),\"\")",
       "D31": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "B32": "=IFERROR(IF(B9=\"\",\"\",B9+B10+B16+B17+B20),\"\")",
       "D32": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
       "B33": "=IFERROR(B31/MAX(1,'0. Supuestos'!$B$44)+B32/MAX(1,'0. Supuestos'!$B$45),\"\")",
-      "D33": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencias y permisos (promedio), Stock inicial de producto, Marketing lanzamiento, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B26-B31-B32,\"0\")&\" € de los \"&TEXT(B26,\"0\")&\" € de inversión.\",\"\")"
+      "D33": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencias y permisos (promedio), Stock inicial de producto, Marketing lanzamiento, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón \"&\"operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B26-B31-B32,\"0\")&\" € de los \"&TEXT(B26,\"0\")&\" € de inversión.\",\"\")"
      },
      "formulas_texto": {
       "D21": "=IFERROR(\"\"&TEXT('0. Supuestos'!$B$25,\"0\")&\" meses de renta, al tipo de la hoja de Supuestos. Es un activo recuperable al cerrar: ni se amortiza ni lleva IVA\",\"\")",
       "D22": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
-      "D23": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Vehículo food truck (nuevo o segunda mano), Adaptación y rotulación vehículo, Instalación gas (si aplica), Depósito de agua + aguas residuales y Proyecto técnico sanitario), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D23": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Vehículo food truck (nuevo o segunda mano), Adaptación y rotulación vehículo, Instalación gas (si aplica), Depósito de agua + aguas residuales y Proyecto técnico sanitario), no \"&\"del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "D25": "=IFERROR(\"Cubre \"&TEXT('0. Supuestos'!$B$35,\"0\")&IF('0. Supuestos'!$B$35=1,\" mes\",\" meses\")&\" de costes fijos DE CAJA del año 1 (los del P&L menos la amortización, que no se paga), que es el mínimo que exigen las Instrucciones de este libro\",\"\")",
       "D26": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C24,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
-      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "D31": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "D32": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
-      "D33": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencias y permisos (promedio), Stock inicial de producto, Marketing lanzamiento, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B26-B31-B32,\"0\")&\" € de los \"&TEXT(B26,\"0\")&\" € de inversión.\",\"\")"
+      "D33": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencias y permisos (promedio), Stock inicial de producto, Marketing lanzamiento, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón \"&\"operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B26-B31-B32,\"0\")&\" € de los \"&TEXT(B26,\"0\")&\" € de inversión.\",\"\")"
      },
      "etiquetas": {
       "1": "PLAN DE NEGOCIO: FOOD TRUCK",
@@ -11234,6 +11234,14 @@
      "literales_cf": {}
     }
    },
+   "tareas_por_fase": [
+    11,
+    13,
+    12,
+    10,
+    12,
+    10
+   ],
    "totales": {
     "hojas": 7,
     "celdas_texto": 403,
@@ -11277,7 +11285,7 @@
    "corto": "CAFP",
    "plan": "caf",
    "tipo": "plan",
-   "sha256": "c2af06f0c954f1081712bce8d36e7f6861e850e6ae428b36cacf9562124924d3",
+   "sha256": "070c15c57281cceee5840716a5ffe13ffb88ae8545f2f9e24fda1652296ade02",
    "nombre_en": "coffee-shop-financial-projections.xlsx",
    "titulo_en": "Coffee Shop Financial Projections: 3-Year P&L, Cash Flow & Financing",
    "hojas": [
@@ -12261,7 +12269,7 @@
       "de los ": 1,
       "del mes": 1
      },
-     "huella_formulas_sha1": "1114df1e2774fbc61653d8e06f92f368eb8019ae",
+     "huella_formulas_sha1": "85711975beaaeea789bc4128ab55175c4ae158e1",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF(COUNT(B{r}:B{r})=0,\"\",SUM(B{r}:B{r})),\"\")",
@@ -12306,7 +12314,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación, Decoración + iluminación y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación, Decoración + iluminación y Rotulación + imagen \"&\"exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
        "n": 1,
        "celdas": "D32",
        "cifras": false
@@ -12354,7 +12362,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
        "n": 1,
        "celdas": "D37",
        "cifras": false
@@ -12390,7 +12398,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (inocua), Marketing lanzamiento (web + RRSS + Google), Stock inicial (café, leche, bollería, etc.), Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
+       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (inocua), Marketing lanzamiento (web + RRSS + Google), Stock inicial (café, leche, bollería, etc.), Fianza del alquiler, Alquiler de los \"&\"meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
        "n": 1,
        "celdas": "D42",
        "cifras": false
@@ -12430,7 +12438,7 @@
       "D31": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
       "B32": "=IFERROR(IF(COUNT(B9,B10,B11,B12,B24,B25)=0,\"\",ROUND((B9+B10+B11+B12+B24+B25)*'0. Supuestos'!$B$55,0)),\"\")",
       "C32": "=IFERROR(B32/$B$35,\"\")",
-      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación, Decoración + iluminación y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación, Decoración + iluminación y Rotulación + imagen \"&\"exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "B33": "=IFERROR(IF(B34=\"\",\"\",B34),\"\")",
       "C33": "=IFERROR(B33/$B$35,\"\")",
       "B34": "=IFERROR(IF('0. Supuestos'!$B$35*('PyG 3 Años'!$B$37-'PyG 3 Años'!$B$35)=0,\"\",'0. Supuestos'!$B$35*('PyG 3 Años'!$B$37-'PyG 3 Años'!$B$35)/12),\"\")",
@@ -12440,25 +12448,25 @@
       "D35": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C33,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
       "B36": "=IFERROR(B35-B33,\"\")",
       "B37": "=IFERROR(IF(B35=\"\",\"\",SUMIF($E$7:$E$32,\"Sí\",$B$7:$B$32)*'0. Supuestos'!$B$41),\"\")",
-      "D37": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D37": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "B38": "=IFERROR(B35+B37,\"\")",
       "B40": "=IFERROR(IF(B9=\"\",\"\",B9+B10+B11+B12+B24+B25+B32),\"\")",
       "D40": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "B41": "=IFERROR(IF(B13=\"\",\"\",B13+B14+B15+B16+B17+B18+B19+B20+B21+B22+B23+B28+B29),\"\")",
       "D41": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
       "B42": "=IFERROR(B40/MAX(1,'0. Supuestos'!$B$44)+B41/MAX(1,'0. Supuestos'!$B$45),\"\")",
-      "D42": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (inocua), Marketing lanzamiento (web + RRSS + Google), Stock inicial (café, leche, bollería, etc.), Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B35-B40-B41,\"0\")&\" € de los \"&TEXT(B35,\"0\")&\" € de inversión.\",\"\")"
+      "D42": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (inocua), Marketing lanzamiento (web + RRSS + Google), Stock inicial (café, leche, bollería, etc.), Fianza del alquiler, Alquiler de los \"&\"meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B35-B40-B41,\"0\")&\" € de los \"&TEXT(B35,\"0\")&\" € de inversión.\",\"\")"
      },
      "formulas_texto": {
       "D30": "=IFERROR(\"\"&TEXT('0. Supuestos'!$B$25,\"0\")&\" meses de renta, al tipo de la hoja de Supuestos. Es un activo recuperable al cerrar: ni se amortiza ni lleva IVA\",\"\")",
       "D31": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
-      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación, Decoración + iluminación y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación, Decoración + iluminación y Rotulación + imagen \"&\"exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "D34": "=IFERROR(\"Cubre \"&TEXT('0. Supuestos'!$B$35,\"0\")&IF('0. Supuestos'!$B$35=1,\" mes\",\" meses\")&\" de costes fijos DE CAJA del año 1 (los del P&L menos la amortización, que no se paga), que es el mínimo que exigen las Instrucciones de este libro\",\"\")",
       "D35": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C33,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
-      "D37": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D37": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "D40": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "D41": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
-      "D42": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (inocua), Marketing lanzamiento (web + RRSS + Google), Stock inicial (café, leche, bollería, etc.), Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B35-B40-B41,\"0\")&\" € de los \"&TEXT(B35,\"0\")&\" € de inversión.\",\"\")"
+      "D42": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (inocua), Marketing lanzamiento (web + RRSS + Google), Stock inicial (café, leche, bollería, etc.), Fianza del alquiler, Alquiler de los \"&\"meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B35-B40-B41,\"0\")&\" € de los \"&TEXT(B35,\"0\")&\" € de inversión.\",\"\")"
      },
      "etiquetas": {
       "1": "PLAN DE NEGOCIO: CAFETERÍA / BRUNCH",
@@ -22772,6 +22780,14 @@
      "literales_cf": {}
     }
    },
+   "tareas_por_fase": [
+    11,
+    13,
+    15,
+    12,
+    14,
+    10
+   ],
    "totales": {
     "hojas": 7,
     "celdas_texto": 438,

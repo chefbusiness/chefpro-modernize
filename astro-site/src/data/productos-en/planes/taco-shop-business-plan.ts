@@ -336,6 +336,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/rotisserie-chicken-restaurant-business-plan', label: 'Rotisserie Chicken Restaurant Business Plan Kit' },
+    { href: '/en/digital-products/sushi-restaurant-business-plan', label: 'Sushi Restaurant Business Plan Kit' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },

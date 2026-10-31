@@ -38,7 +38,7 @@ const data: KitTareasData = {
       {
         author: 'María López',
         rating: '5',
-        body: 'El protocolo de anisakis con registro de congelación a -20 ºC durante 7 días nos ha salvado en dos inspecciones de Sanidad. Imprescindible.',
+        body: 'El protocolo de anisakis con registro de congelación a -20 ºC durante al menos 24 horas nos ha salvado en dos inspecciones de Sanidad. Imprescindible.',
       },
       {
         author: 'Carlos Méndez',
@@ -321,7 +321,7 @@ const data: KitTareasData = {
       {
         name: 'María López',
         role: 'Propietaria Restaurante Japonés, Valencia',
-        text: 'El protocolo de anisakis con registro de congelación a -20 ºC durante 7 días nos ha salvado en dos inspecciones de Sanidad. Lo tenemos todo documentado por lote y por proveedor. Imprescindible.',
+        text: 'El protocolo de anisakis con registro de congelación a -20 ºC durante al menos 24 horas nos ha salvado en dos inspecciones de Sanidad. Lo tenemos todo documentado por lote y por proveedor. Imprescindible.',
         avatar: '/avatars/avatar-2.jpg',
       },
       {
@@ -377,6 +377,7 @@ const data: KitTareasData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/kit-tareas-chef-privado', label: 'Kit Tareas Chef Privado' },
+    { href: '/plan-negocio-sushi-bar', label: 'Plan de Negocio: Sushi Bar' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },

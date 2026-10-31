@@ -1,31 +1,31 @@
 {
  "meta": {
-  "generado": "2026-10-29T13:11:14Z",
+  "generado": "2026-10-31T03:49:50Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "8c34fa09",
+  "commit": "8a0d6dab",
   "libros": {
    "POLP": {
     "es": "plan-financiero-polleria.xlsx",
     "en": "rotisserie-chicken-restaurant-financial-projections.xlsx",
-    "sha256": "c8d54739c2e3b51b236bddba13c8b5a8b31ac3fb785640e06ab58ba9e0510376"
+    "sha256": "5080ac3bb261dc8883cb8ed23045b9cb1d603098f637eb195f9f4f1557efdcaf"
    },
    "POLC": {
     "es": "checklist-apertura-polleria.xlsx",
     "en": "rotisserie-chicken-restaurant-startup-checklist.xlsx",
-    "sha256": "c2db78d38b272ec25a8c598feabc36070f5cff8e9e38817276c2828f56327a42"
+    "sha256": "0fdb65f57d7a2dc07aa297a49829c0a9210be671b36e2af89b8b1b591a11c724"
    }
   },
   "n_cadenas": 855,
   "n_traducir": 684,
   "n_localizar": 48,
-  "n_palabras_subagentes": 12040,
+  "n_palabras_subagentes": 12086,
   "n_apariciones": 1114,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: motor común (mismo ES que una cadena GM del Taco EN, de la Pizza EN, del Bar EN o de BP) con un EN sin vocabulario ni caso de otro negocio. preparar_tandas escribe su EN. No van a los traductores",
     "n_cadenas": 357,
-    "n_palabras": 3597,
+    "n_palabras": 3643,
     "n_plan": 341,
     "n_check": 17,
     "n_localizar": 0,
@@ -91,9 +91,8 @@
    "cadenas": {
     "AI Chef Pro": 2,
     "OK": 6,
-    "☐": 80,
+    "☐": 86,
     "✓": 6,
-    "—": 6,
     "N/A": 6
    },
    "literales_formula": {
@@ -2287,18 +2286,18 @@
   },
   {
    "id": "c0115",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "pol"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
+   "palabras": 35,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»"
    ],
-   "sha1": "721896d9dc29",
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "POLP",
@@ -2311,7 +2310,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0116",
-    "en": "How far you can fall below plan before you start losing money",
+    "en": "How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb is somewhat smaller: with a 15% cushion, about 13% of plan",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-12 (Taco EN cerrada)",
     "origen": "celda-taq",
@@ -6664,18 +6663,18 @@
   },
   {
    "id": "c0319",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "pol"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
+   "palabras": 45,
    "pistas": [
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
    ],
-   "sha1": "a40f4860d483",
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "POLP",
@@ -6688,7 +6687,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0320",
-    "en": "How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the \"0. Assumptions\" tab",
+    "en": "How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs and the loan payment is somewhat smaller: with a 25% cushion, 20%. The required minimum is set in the \"0. Assumptions\" tab",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-12 (Taco EN cerrada)",
     "origen": "celda-taq",
@@ -10426,7 +10425,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0546",
-    "en": "Fourth-quarter sales tax is settled in January of the following year, so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
+    "en": "Fourth-quarter sales tax is settled in Month 13 (January of the following year when Month 1 is January), so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-12 (Taco EN cerrada)",
     "origen": "celda-taq",
@@ -22247,7 +22246,7 @@
   },
   {
    "id": "c0650",
-   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "es": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
    "grupo": "GPOL-check",
    "tratamiento": "traducir",
    "planes": [
@@ -22256,7 +22255,7 @@
    "n_apariciones": 6,
    "palabras": 12,
    "max_len": 255,
-   "sha1": "99fc84bf8389",
+   "sha1": "12fbeb7eedbe",
    "donde": [
     {
      "f": "POLC",
@@ -26310,7 +26309,7 @@
    "es": "Ventas de bebida (refrescos, agua, cerveza y vino)",
    "grupo": "GX",
    "tratamiento": "regenerar",
-   "en_mapa": "Beverage sales (sodas, Inca Kola, chicha morada, beer & wine)",
+   "en_mapa": "Beverage sales (sodas, chicha morada, beer & wine)",
    "planes": [
     "pol"
    ],

@@ -1,10 +1,10 @@
 {
- "textos_es.json": "c477dc83a61609ec7de3ebe3d23937b27267c7e48000d389271e382ad630319b",
- "textos_en/GM.json": "93b2451ebd54ce5584ca4714679b6faa529695c7bfa2fbd843d3508b6482e5de",
- "textos_en/GR.json": "5392e3689a7a511fab85a2401afc74f6bf9a9fc4ff522f45348ca250f9ccf0b8",
+ "textos_es.json": "7f504ed3ffc1ec12e95b36888dbf4e92711b7d1cc4319cb6128251deea817986",
+ "textos_en/GM.json": "0f6cd4198a3c533331cca1111dde7a5de26c87b173e0d2712abafac72e6c08ed",
+ "textos_en/GR.json": "ef088edc5b1709acd9ad28ab3f5d7023a6421f505fc0d0dfedb63a7f099e8151",
  "textos_en/GPIZ-plan.json": "a52044a121fd9e28c7931534c3ee54adabe856a186c543c5f13e6aa08a7dc3b6",
  "textos_en/GPIZ-check.json": "c3d62514b899edb9d0aa9a1c32fcaa3517a22229fe4121bd72d2b978d43556da",
  "formulas_piz.json": "286b3675b30e2eed71982781e209f4aa063fe4c8be2e7c616ebbd54877caebb2",
- "censo_es.json": "2c8a1f63f2b5de0db1d46794327831bc16405744f5fe6e8b0ddc68286708b933",
+ "censo_es.json": "442b610642a4a11ea781c1790d02a74bf5c41b4e9da5fa790b8ab2c3fe1bf53b",
  "cifras_caso.json": "901173f74dd06891b2433761911bbfa48172348b6091626d1891d4563b6a6b44"
 }

@@ -936,6 +936,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-pollo': '/dl/rotisserie-chicken-restaurant-business-plan/rotisserie-chicken-yield-costing-calculator.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-31): Sushi Restaurant Business Plan Kit. Claves = las del ES plan-negocio-sushi-bar salvo el bonus, que aquí es el
+  // común `equivalents-guide` como en toda la familia EN (= TEMPLATES de src/pages/SushiRestaurantBusinessPlanDashboard.tsx) → los 4
+  // ficheros EN de /dl/sushi-restaurant-business-plan/ (SPEC business-plans-en-14) y el bonus común de equivalencias EN.
+  'sushi-restaurant-business-plan': {
+    'plan-negocio': '/dl/sushi-restaurant-business-plan/sushi-restaurant-business-plan.docx',
+    'plan-financiero': '/dl/sushi-restaurant-business-plan/sushi-restaurant-financial-projections.xlsx',
+    'checklist-apertura': '/dl/sushi-restaurant-business-plan/sushi-restaurant-startup-checklist.xlsx',
+    'calculadora-sushi': '/dl/sushi-restaurant-business-plan/sushi-fish-rice-costing-calculator.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.
@@ -1452,6 +1462,13 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/plan-negocio-polleria/checklist-apertura-polleria.xlsx',
     'calculadora-pollo': '/dl/plan-negocio-polleria/calculadora-pollo-asador-escandallo-polleria.xlsx',
     'guia-equivalencias': '/dl/plan-negocio-polleria/guia-equivalencias-plan-negocio-polleria.docx',
+  },
+  'plan-negocio-sushi-bar': {
+    'plan-financiero': '/dl/plan-negocio-sushi-bar/plan-financiero-sushi-bar.xlsx',
+    'plan-negocio': '/dl/plan-negocio-sushi-bar/plan-de-negocio-sushi-bar.docx',
+    'checklist-apertura': '/dl/plan-negocio-sushi-bar/checklist-apertura-sushi-bar.xlsx',
+    'calculadora-sushi': '/dl/plan-negocio-sushi-bar/calculadora-pescado-arroz-escandallo-sushi-bar.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-sushi-bar/guia-equivalencias-plan-negocio-sushi-bar.docx',
   },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',

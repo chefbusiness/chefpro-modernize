@@ -1,0 +1,87 @@
+{
+ "SUSP|0. Supuestos|C9": {
+  "en": "=IFERROR(\"Average check excl. sales tax plus the weighted sales tax of your sales lines (\"&TEXT(SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)*100,\"0\")&\"%), rounded. In the US, menu prices usually exclude sales tax and it is added at the register; the beverage share in column H of the beverage line of the P&L only moves this average if your state taxes alcohol at another rate. \"&\"In the UK, menu prices include VAT.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "SUSP|0. Supuestos|C50": {
+  "en": "=IFERROR(\"That is \"&TEXT(INT(ROUND(B50,1)),\"0\")&\".\"&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),\"0\")&\" seat turns per day on the \"&TEXT($B$51,\"0\")&\" seats in the cell below. \"&\"It includes the take-out and delivery covers (1 order = 1.6 covers), which do not take a seat: the real turns of your dining room are lower (in the example, about six in ten covers eat in). Compare it with the ceiling on seat turns typed in \"\"Break-Even\"\".\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "SUSP|Inversión Inicial|D25": {
+  "en": "=IFERROR(\"\"&TEXT('0. Assumptions'!$B$25,\"0\")&IF('0. Assumptions'!$B$25=1,\" month\",\" months\")&\" of rent, from \"\"0. Assumptions\"\". Refundable when the lease ends: it is not depreciated and carries no tax\",\"\")",
+  "de": "TAQP|Inversión Inicial|D25",
+  "metodo": "auto"
+ },
+ "SUSP|Inversión Inicial|D26": {
+  "en": "=IFERROR(\"Rent \"&IF('0. Assumptions'!$B$54=1,\"for the month\",\"for the \"&TEXT('0. Assumptions'!$B$54,\"0\")&\" months\")&\" of build-out and permits before opening. It does not overlap the P&L, which starts on opening day: its twelve months are twelve trading months\",\"\")",
+  "de": "TAQP|Inversión Inicial|D26",
+  "metodo": "auto"
+ },
+ "SUSP|Inversión Inicial|D27": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$55,\"0%\")&\" of the BUILD-OUT items of this block (architect, MEP & hood drawings and permit fees; build-out with the sushi bar counter, signage & facade; Type I hood (about 10 ft), UL 300 fire suppression & makeup air; \"&\"electrical service & panel; plumbing, grease interceptor, HVAC & gas lines), not of the whole block: the sushi case, the rice cookers, the equipment and the other items are left out. \"&\"No lender funds a build-out without a cushion: the percentage is in \"\"0. Assumptions\"\"\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "SUSP|Inversión Inicial|D29": {
+  "en": "=IFERROR(\"Covers \"&TEXT('0. Assumptions'!$B$35,\"0\")&IF('0. Assumptions'!$B$35=1,\" month\",\" months\")&\" of year-1 CASH fixed costs (the P&L fixed costs minus depreciation, which is not paid out), the minimum the Instructions of this workbook ask for\",\"\")",
+  "de": "TAQP|Inversión Inicial|D29",
+  "metodo": "auto"
+ },
+ "SUSP|Inversión Inicial|D30": {
+  "en": "=IFERROR(\"The percentages in column C are read on this figure, which includes the working capital (\"&TEXT(C28,\"0%\")&\" of the total). To compare the breakdown with another plan, use the CAPEX row below.\",\"\")",
+  "de": "TAQP|Inversión Inicial|D30",
+  "metodo": "auto"
+ },
+ "SUSP|Inversión Inicial|D32": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$41,\"0%\")&\" on the items marked \"\"Yes\"\" in the tax column. US: the sales tax you pay on equipment is part of its cost and is not recovered, so this rate is 0. UK (VAT-registered): 20%, reclaimed on your VAT return, but you pay it first, so the loan has to cover it\",\"\")",
+  "de": "TAQP|Inversión Inicial|D32",
+  "metodo": "auto"
+ },
+ "SUSP|Inversión Inicial|D35": {
+  "en": "=IFERROR(\"Depreciated over \"&TEXT('0. Assumptions'!$B$44,\"0\")&\" years\",\"\")",
+  "de": "TAQP|Inversión Inicial|D35",
+  "metodo": "auto"
+ },
+ "SUSP|Inversión Inicial|D36": {
+  "en": "=IFERROR(\"Depreciated over \"&TEXT('0. Assumptions'!$B$45,\"0\")&\" years\",\"\")",
+  "de": "TAQP|Inversión Inicial|D35",
+  "metodo": "auto"
+ },
+ "SUSP|Inversión Inicial|D37": {
+  "en": "=IFERROR(\"Not depreciated, because they are not fixed assets: LLC, legal and food safety plan; branding, website, photos and launch; opening inventory; security deposit; pre-opening rent and the working capital reserve. They add up to \"&TEXT(B30-B35-B36,\"#,##0\")&\" of the \"&TEXT(B30,\"#,##0\")&\" total investment.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "SUSP|PyG 3 Años|F13": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$13,\"0%\")&\" of FOOD sales, not of total sales: beverages have their own line · \"&\"fish and seafood, sushi rice, nori, imitation crab, avocado, produce, sauces and tempura ingredients: check it against your distributor invoices and the Sushi Fish, Rice & Costing Calculator\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "SUSP|PyG 3 Años|F14": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$14,\"0%\")&\" of BEVERAGE sales\",\"\")",
+  "de": "TAQP|PyG 3 Años|F14",
+  "metodo": "auto"
+ },
+ "SUSP|PyG 3 Años|F18": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$28,\"0%\")&\" of sales. It is a VARIABLE cost: it moves with revenue, so it cannot sit in fixed costs\",\"\")",
+  "de": "TAQP|PyG 3 Años|F18",
+  "metodo": "auto"
+ },
+ "SUSP|Punto Equilibrio|A28": {
+  "en": "=IFERROR(\"With the average check excl. sales tax above, you need \"&TEXT(ROUNDUP(B15,0),\"0\")&\" covers a day over your \"&TEXT(B11,\"0\")&\" opening days to avoid losing money (accounting break-even, depreciation included), and \"&TEXT(ROUNDUP(B20,0),\"0\")&\" for cash to hold (cash break-even: depreciation out, because it is not paid, and the year's loan payment in\"&IF(B12=0,\"; no principal is repaid this year (interest-only period or no loan)\",\"\")&\"). The \"\"Revenue needed per year\"\" rows show the same figures in your currency.\",\"\")",
+  "de": "TAQP|Punto Equilibrio|A28",
+  "metodo": "auto"
+ },
+ "SUSP|Personal|A2": {
+  "en": "=IFERROR(\"Payroll — \"&TEXT('0. Assumptions'!$B$21,\"0\")&\" pay periods + employer taxes \"&TEXT('0. Assumptions'!$B$20*100,\"0\")&\"%\",\"\")",
+  "de": "TAQP|Personal|A2",
+  "metodo": "auto"
+ },
+ "SUSP|Tesorería 12 meses|O11": {
+  "en": "=IFERROR(\"Food and beverage purchases, consumables, fees and contingencies, each at ITS tax rate (column G of the P&L; 0 in the US, where the sales tax you pay is part of the cost) and with the supplier payment days from \"\"0. Assumptions\"\".\"&IF('0. Assumptions'!$B$59=0,\"\",\" With \"&TEXT('0. Assumptions'!$B$59,\"0\")&\" payment days, the last purchases of the year are paid next year: the \"\"Year\"\" column of this row holds \"&TEXT(MAX(0,12-ROUNDUP('0. Assumptions'!$B$59/30,0)),\"0\")&\" months of purchases, not the year's cost.\"),\"\")",
+  "de": "TAQP|Tesorería 12 meses|O11",
+  "metodo": "auto"
+ }
+}

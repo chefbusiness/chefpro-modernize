@@ -1,31 +1,31 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:30:45Z",
+  "generado": "2026-10-31T03:49:48Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "bc11d67f",
+  "commit": "8a0d6dab",
   "libros": {
    "HELP": {
     "es": "plan-financiero-heladeria.xlsx",
     "en": "ice-cream-shop-financial-projections.xlsx",
-    "sha256": "a99b1686751b25ced5d71b6f66585ba199355ee75c8f07bb3ffb76031d378ba7"
+    "sha256": "88fb799117a29f59cb51f46ff984f866d6f4015f8bf65380af385ef3c5d514f2"
    },
    "HELC": {
     "es": "checklist-apertura-heladeria.xlsx",
     "en": "ice-cream-shop-startup-checklist.xlsx",
-    "sha256": "d8ec6c6fa3910f8234d7aa4074897ad7ebdf0e8e371d296c8b08d511475113bc"
+    "sha256": "d0e70601d5247a26b1d47b6a631553a9ea030cfd927a4951e8d103a280e33988"
    }
   },
   "n_cadenas": 866,
   "n_traducir": 692,
   "n_localizar": 52,
-  "n_palabras_subagentes": 9874,
+  "n_palabras_subagentes": 9920,
   "n_apariciones": 1121,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: motor común (mismo ES que una cadena GM de la Pizza EN, del Bar EN o de BP) con un EN sin vocabulario ni caso de otro negocio. preparar_tandas escribe su EN. No van a los traductores",
     "n_cadenas": 369,
-    "n_palabras": 3681,
+    "n_palabras": 3727,
     "n_plan": 351,
     "n_check": 19,
     "n_localizar": 0,
@@ -91,9 +91,8 @@
    "cadenas": {
     "AI Chef Pro": 2,
     "OK": 6,
-    "☐": 80,
+    "☐": 86,
     "✓": 6,
-    "—": 6,
     "N/A": 6
    },
    "literales_formula": {
@@ -2362,18 +2361,18 @@
   },
   {
    "id": "c0115",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "ice"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
+   "palabras": 35,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»"
    ],
-   "sha1": "721896d9dc29",
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "HELP",
@@ -2386,7 +2385,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0116",
-    "en": "How far you can fall below plan before you start losing money",
+    "en": "How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb is somewhat smaller: with a 15% cushion, about 13% of plan",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN cerrada)",
     "origen": "celda-piz",
@@ -6966,18 +6965,18 @@
   },
   {
    "id": "c0322",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "ice"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
+   "palabras": 45,
    "pistas": [
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
    ],
-   "sha1": "a40f4860d483",
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "HELP",
@@ -6990,7 +6989,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0320",
-    "en": "How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the \"0. Assumptions\" tab",
+    "en": "How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs and the loan payment is somewhat smaller: with a 25% cushion, 20%. The required minimum is set in the \"0. Assumptions\" tab",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN cerrada)",
     "origen": "celda-piz",
@@ -20866,7 +20865,7 @@
   },
   {
    "id": "c0654",
-   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "es": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
    "grupo": "GICE-check",
    "tratamiento": "traducir",
    "planes": [
@@ -20875,10 +20874,7 @@
    "n_apariciones": 6,
    "palabras": 12,
    "max_len": 255,
-   "pistas": [
-    "D199: la lista de la DV EN es «✓,☐,N/A»: ☐ = pendiente; el texto EN nunca dice «—»"
-   ],
-   "sha1": "99fc84bf8389",
+   "sha1": "12fbeb7eedbe",
    "donde": [
     {
      "f": "HELC",
@@ -20926,7 +20922,7 @@
    "reuso": {
     "grupo": "GR",
     "id": "c0659",
-    "en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+    "en": "Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN cerrada)",
     "origen": "texto-piz",

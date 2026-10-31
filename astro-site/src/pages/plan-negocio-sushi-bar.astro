@@ -1,0 +1,36 @@
+---
+// /plan-negocio-sushi-bar — LÍNEA PLANES (sub-línea A). Thin wrapper: pasa el objeto data al
+// template PlanNegocioLandingPage y el SEO a BaseLayout.
+//
+// hreflang: alternatesFamilia('plan-negocio-sushi-bar') (lib/tienda.ts). Mientras el gemelo EN (Sushi Restaurant Business Plan Kit)
+// no esté vivo devuelve locales ['es'] sin alternates (hreflang es + x-default); con EN vivo emite es + en + x-default
+// recíprocos. Patrón = plan-negocio-paellero-eventos.astro.
+// Canonical: https://aichef.pro/plan-negocio-sushi-bar. Meta robots se OMITE (desviación
+// cross-cutting; se añade en el cutover). Patrón = plan-negocio-bar-restaurante.astro. Build format 'file'.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PlanNegocioLandingPage from '../components/pages/PlanNegocioLandingPage.astro';
+import data from '../data/productos/planes/plan-negocio-sushi-bar';
+import { alternatesFamilia } from '../lib/tienda';
+
+const lang = 'es';
+const hreflang = alternatesFamilia('plan-negocio-sushi-bar');
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback) para que
+// Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_SUSHI_BAR || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/${data.slug}`}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
+  ogImage={data.seo.ogImage}
+>
+  <PlanNegocioLandingPage data={data} stripeLink={stripeLink} />
+</BaseLayout>
