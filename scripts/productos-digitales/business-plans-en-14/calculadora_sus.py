@@ -96,8 +96,8 @@ OPC = [  # desplegable informativo: (opción, recordatorio)
      "Keep the supplier's written agreement or statement for every lot: it must show the freezing time and temperature. Keep it 90 days after you "
      'serve the fish (3-402.12).'),
     ('Exempt: tuna species or feed-raised aquaculture',
-     'Tuna (Thunnus species) and feed-raised aquaculture fish such as farmed salmon are exempt only with a written statement from the supplier or '
-     'the farm. File it and ask again if the source changes.'),
+     'Tuna (Thunnus species) is exempt; feed-raised aquaculture fish such as farmed salmon is exempt only with a written statement from the supplier or '
+     'the farm. Keep the tuna invoice that names the species, file the statement and ask again if the source changes.'),
 ]
 #: bloque B (entradas comunes de la hoja Fish Yield): (clave, rótulo, formato, valor, constante, nota)
 ENT_PE = [
@@ -148,7 +148,7 @@ PE_O1 = PE_O0 + len(OPC) - 1
 #: hoja Sushi Rice: (clave, rótulo, formato, valor, constante, nota)
 ENT_A = [
     ('ak', 'Raw sushi rice ($/lb, before tax)', USD, 1.04, False,
-     '50 lb bag $51.99 = $1.04/lb, webstaurantstore.com, Oct 2026; medium grain $1.24-1.28/lb.'),
+     '50 lb bag $51.99 = $1.04/lb, webstaurantstore.com, Oct 2026; other medium-grain brands $1.24-1.28/lb.'),
     ('f', 'Raw to cooked factor (×)', '#,##0.00', 2.2, False, '1 lb of raw rice gives 2.2 lb of cooked rice.' + EST),
     ('z', 'Sushi vinegar (sushi-zu) per lb of cooked rice (fl oz)', DEC, 1.5, False,
      'Rice vinegar, sugar and salt: about 1.5 fl oz per lb of cooked rice.' + EST),
@@ -445,7 +445,7 @@ def hoja_pescado(wb):
     ws.row_dimensions[2].height = 32
     _f(ws, 'A3', 'FIXED NOTICE. Parasite destruction (FDA Food Code 2022, 3-402.11): fish served raw or undercooked is frozen at −4 °F or below '
                  'for 168 hours (7 days), or at −31 °F until solid and held 15 hours, or at −31 °F until solid and held 24 hours at −4 °F. '
-                 'Tuna species and feed-raised aquaculture fish are exempt only with a written statement from the supplier or the farm. Keep the '
+                 'Tuna species are exempt; feed-raised aquaculture fish only with a written statement from the supplier or the farm. Keep the '
                  "records 90 days (3-402.12). Your county's rules may be stricter. The cleaning minutes (25) have no source: time it.",
        wrap=True, b=True, fill=GRIS)
     ws.merge_cells('A3:F3')
@@ -689,7 +689,7 @@ def instrucciones():
          'usable lb buying the whole fish still pays off.', False),
         ('4. Parasite destruction (FDA Food Code 2022, 3-402.11). Fish served raw or undercooked is frozen at −4 °F or below for 168 hours (7 days), '
          'or at −31 °F until solid and held 15 hours, or at −31 °F until solid and held 24 hours at −4 °F. Tuna species and feed-raised aquaculture '
-         'fish such as farmed salmon are exempt only with a written statement from the supplier or the farm. If the fish arrives frozen, keep the '
+         'fish such as farmed salmon are exempt; the farmed fish only with a written statement from the supplier or the farm, and the kit also files the tuna invoice that names the species. If the fish arrives frozen, keep the '
          "supplier's written agreement or statement for every lot, showing the freezing time and temperature. Keep the records 90 days (3-402.12). "
          '"Sushi-grade" has no legal definition: a supplier label is no substitute for the freezing records or the written statement. The dropdown '
          'on the sheet is a reminder only: it changes no figure.', False),

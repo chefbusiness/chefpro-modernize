@@ -4,8 +4,8 @@
  "ficheros": {
   "sushi-restaurant-financial-projections.xlsx": {
    "titulo": "Sushi Restaurant Financial Projections: 3-Year P&L, Cash Flow & Financing",
-   "sha256": "581a54fc92560aae59139ca3f30ca1879a94a3d60d3741c2d2489079d9cbda79",
-   "bytes": 70607,
+   "sha256": "027979656270ceb38553620bb95eb75d471c433716a1effbb32f9c9883bff10f",
+   "bytes": 70638,
    "hojas": [
     "0. Assumptions",
     "Startup Costs",
@@ -22,8 +22,8 @@
   },
   "sushi-restaurant-startup-checklist.xlsx": {
    "titulo": "Sushi Restaurant Startup Checklist (80 Tasks)",
-   "sha256": "35eed8b672703349d58ed3ca8d04936ee703ecb5a8555b05f3613610c87825b6",
-   "bytes": 29286,
+   "sha256": "c8be8548c56f5dcf495fcad603dc06f70aec4f6a040abee59b369671b38f9b46",
+   "bytes": 29436,
    "hojas": [
     "Phase 1 - Business Setup",
     "Phase 2 - Hood & Permits",
@@ -47,11 +47,11 @@
   },
   "sushi-restaurant-business-plan.docx": {
    "titulo": "Sushi Restaurant Business Plan (10 Sections)",
-   "sha256": "13423e591d678ccfcedab676b569f1e4db51dac0aa1cd04c141dd05d65f08bb3",
-   "bytes": 53292,
+   "sha256": "128ea08bc715e9a11268ffa366228049fb9bf9b3724a9a03ccb3e7a36ef19600",
+   "bytes": 53447,
    "parrafos": 131,
    "con_texto": 110,
-   "palabras": 7583,
+   "palabras": 7665,
    "encabezados": [
     "1. Executive Summary",
     "2. Concept & Value Proposition",

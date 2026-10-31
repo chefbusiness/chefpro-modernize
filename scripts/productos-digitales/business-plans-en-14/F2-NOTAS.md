@@ -54,3 +54,46 @@ mientras limpiarlo cueste < $12.65/lb útil · 2.41 lb de shari por lb de arroz 
 food cost: nigiri de salmón 23.4 %, California 12.2 %, spicy tuna 39.2 %, platter de 24 24.8 %, ponderado 24.2 % (el plan
 usa 32 %: el puente, en `0. Assumptions!C13` y en la fila 38 de D19) · margen del platter de 24: $31.60 en sala, $24.83 por
 marketplace.
+
+## 4. Tandas (sonnet, UNA a la vez; validación por ssh en el VPS, `BRIEF-TRADUCTORES.md` §5)
+| Tanda | Cadenas · palabras ES | Resultado |
+|---|---|---|
+| (a) GSUS-plan + revisión GR | 117 (69 + 48 de D19) · 3,723 + 39 GR | OK; 1 corrección de GR (c0253) |
+| (b) GSUS-check + revisión GRC | 123 · 3,165 + 97 GRC | OK; 2 correcciones de GRC (c0803, c0642: el sake con la licencia de vino) |
+| (c)+(d) sus_a + sus_b (un solo agente, en serie) | 29 · 3,207 + 32 · 4,197 | OK; Word de 131 párrafos, 7,583 palabras |
+Inyección en `check_textos` (18 defectos: authentic, 79 covers, 20.00, sushiman, combinado, sushi-grade, gluten-free, IVA,
+−20 °C 24 h, surimi, taco, rotisserie, 300 days, kg, open 7 days, Spain, €, comensal): **caza los 18**.
+Las cifras de la calculadora (no son tokens) son citables en el Word desde `cifras_calculadora.md` (añadido a
+`M.FUENTES_CIFRAS` en `mapas_sus.instalar`): sin él, el check rechazaba $11.28, 23 %… y el traductor las quitaba.
+
+## 5. Paso real (VPS) y lo que cazaron los gates
+`bp14.py mapas` → `aplicar_en --idempotencia --json /tmp/sus-real.json` → `calibracion` → `ensamblar_docx --plan sus` →
+`calculadora --salida $D` → `gates_en` (+ `--autotest`) → `ensamblar_docx --autotest --dir /tmp/sus-docx-at` → `barrido` →
+`resumen_entregables.py` → `../censo-entregables.py --fail --letter --only sushi-restaurant-business-plan` + `../gate-no-latinos.py
+--only …` → `../parche_xml_xlsx.py --check $D/*.xlsx` → `volcar_en.py --salida /tmp/sus_rev` → revisión opus → 2.ª pasada `canon.py`.
+Primer paso real: **G2/barrido ROJOS** por (1) `0. Assumptions!C9` (derivada del Taco EN, literal de 262 car.): `inject_cache`
+lo troceaba a 255 y «VAT.» quedaba en un trozo sin «UK» → **C9 manual troceado antes de «In the UK»** (= Rotisserie EN); (2)
+falso positivo del regex del ticket ES «20.00» con el precio «7.50 · 20.00 · 23.00 $/lb» de la calculadora → **regex
+restringido** a check/ticket o «€» (se arregla el regex, no el texto: lección del Rotisserie); (3) el autotest A del
+ensamblador (7/8) marcaba «sus» (clave del plan, funcional ES) en su párrafo sintético → frase sintética retirada del detector
+solo en este conjunto. `derivar_formulas` dejaba D32 pendiente porque el ES LIVE trae el literal troceado → funde antes.
+
+## 6. Regresión (código común: solo la rama `elif 'sus'` y dos altas de lista)
+`regresion_sus.sh` (13 conjuntos): **22/22 IGUAL** (docx y calculadoras, sha256 canónico), `mapas` rc 0 en todos. Los
+`aplicar_en --dry-run` de los xlsx de los 13 conjuntos **abortan antes de construir** por una deriva PREEXISTENTE: #186
+reescribió en los ES LIVE la nota «Holgura mínima» (`0. Supuestos!C67`) sin re-extraer el `textos_es.json` de cada conjunto EN
+(«textos_es.json dice 'Cuánto puedes caer…' y el ES trae 'Cuánto deben superar…'»). No la causa este cambio (una rama elif no
+toca otros conjuntos) y no se arregla aquí: **deuda para la próxima tanda de arreglos** (re-extraer y re-pasar los 13, o fijar
+la fuente ES de cada uno a su sha de publicación).
+
+## 7. Revisión final y cierre (detalle en `REVISION-FINAL.md`)
+Una ronda opus: **0 B · 2 M · 14 m, los 16 arreglados en fuente** (M1 ticket por canal del marketplace = M1 del ES; M2 el atún
+exento sin papel, la declaración escrita es para la acuicultura). Gates finales TODO VERDE, 2.ª pasada `canon.py` 4/4 IGUAL,
+sha256 Mac = VPS.
+**Para la F3 (landing, nombres exactos)**: `sushi-restaurant-business-plan.docx` («Sushi Restaurant Business Plan (10
+Sections)») · `sushi-restaurant-financial-projections.xlsx` (9 hojas) · `sushi-restaurant-startup-checklist.xlsx` (80 tareas,
+pestañas «Phase 1 - Business Setup» · «Phase 2 - Hood & Permits» · «Phase 3 - Raw Fish & Health» · «Phase 4 - Staff &
+Allergens» · «Phase 5 - Menu, Brand, Delivery» · «Phase 6 - Opening & 90 Days») · `sushi-fish-rice-costing-calculator.xlsx`
+(«Sushi Fish, Rice & Costing Calculator»: `Fish Yield` · `Sushi Rice` · `Costing` · `Instructions`) + bonus común de
+equivalencias. Cifras para la FAQ: las de §3 (`cifras_caso.json`, `cifras_calculadora.md`); la landing NO promete «sushi-grade»,
+ni pH legal, ni la licencia; replica M1 (marketplace ≈ el mismo pedido con la carta un 12-15 % más cara) y M2 (atún exento).

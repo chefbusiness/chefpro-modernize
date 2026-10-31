@@ -231,7 +231,7 @@
  "c0406": "HOW TO USE THIS WORKBOOK",
  "c0407": "This financial plan is a MODEL: you type only in the GREEN cells and everything else recalculates on its own.",
  "c0409": "2. Startup cost items, fixed costs and staffing are typed in their own tab, also in green. No number is typed twice.",
- "c0410": "3. On \"Break-Even\" you only type the seat-turn ceiling your space allows; everything else derives from the rest. The other three tabs also have green cells you can change: the pessimistic and optimistic scenarios on \"Scenarios\", the seasonality and the launch ramp-up on \"12-Month Cash Flow\", and the other financing sources on \"Financing\" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+ "c0410": "3. On \"Break-Even\" you only type the seat-turn ceiling your space allows; everything else derives from the rest. The other three tabs also have green cells you can change: the pessimistic and optimistic scenarios on \"Scenarios\", the seasonality and the launch ramp-up on \"12-Month Cash Flow\", and the other financing sources on \"Financing\" (rows 8-11 count as sources but are not amortized: your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
  "c0412": "5. If you change the staffing, the P&L reads it on its own: labor cost comes from the \"Staffing\" tab, not from a separate estimate.",
  "c0416": "RATIOS AUDITED BY THIS WORKBOOK",
  "c0417": "Thresholds live in the \"Threshold\" column of the KEY RATIOS block of the P&L: change them there and the traffic light changes with them.",
