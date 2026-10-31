@@ -362,6 +362,15 @@ ADAPTAR = OrderedDict([
     (('02', 'Instrucciones', 'B18'), _A[('02', 'Fríos', 'B6')]),
     (('02', 'Pre-elab Largo', 'B17'), _PARASITOS),
     (('02', 'Pre-elab Largo', 'B23'), _SOUS_VIDE),
+    # ronda de revisión (31-oct): ROP del pescado y los confitados en bolsa; recalentado y mantenimiento en caliente;
+    # permiso de evento temporal en el pop-up
+    (('02', 'Pre-elab Largo', 'B24'), _SOUS_VIDE),
+    (('02', 'Pre-elab Largo', 'B25'), _SOUS_VIDE),
+    (('04', 'Partida Caliente', 'B7'), 'Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16); ' + _LOG),
+    (('04', 'Partida Caliente', 'B8'), 'Lo cocinado y enfriado se recalienta a 165 °F en 2 h como máximo para mantenerlo '
+                                       'en caliente (FDA Food Code 3-403.11) y se mantiene a 135 °F o más (3-501.16)'),
+    (('07', 'Pop-ups', 'B6'), 'Evento fuera del local: temporary food event permit y aprobación del departamento de '
+                              'salud; lavamanos portátil y mantenimiento en frío y en caliente en el sitio'),
     (('02', 'Pre-elab Medio', 'B6'), _HUEVO),
     (('02', 'Pre-elab Día', 'B18'), _PARASITOS + '; las «2 h» antes del pase son el estándar de la casa'),
     (('02', 'Pre-elab Día', 'B24'), _A[('02', 'Fríos', 'B6')]),

@@ -328,7 +328,7 @@ const data: KitTareasData = {
     },
     {
       q: 'Does it include sommelier and wine cellar tasks?',
-      a: "Yes, a whole file for the sommelier: the pairing designed course by course (wine or drink, glass, temperature and pour, about 60–80 ml per course), a non-alcoholic pairing for every course, signature cocktails served only under your license and to guests 21+ with ID, and the wine cellar: monthly inventory, minimum stock for each pairing label, FIFO, temperature and humidity, receipts and outflows, tasting sheets with notes for the dining room's storytelling, winery and distributor relationships, weekly team training and beverage cost per cover.",
+      a: "Yes, a whole file for the sommelier: the pairing designed course by course (wine or drink, glass, temperature and pour, about 2–2.5 fl oz (60–80 ml) per course), a non-alcoholic pairing for every course, signature cocktails served only under your license and to guests 21+ with ID, and the wine cellar: monthly inventory, minimum stock for each pairing label, FIFO, temperature and humidity, receipts and outflows, tasting sheets with notes for the dining room's storytelling, winery and distributor relationships, weekly team training and beverage cost per cover.",
     },
     {
       q: 'Does it cover food photography, social media and the guides?',
