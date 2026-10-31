@@ -230,5 +230,9 @@
  "plan-negocio-sushi-bar": {
   "producto": "Plan de Negocio Sushi Bar",
   "ejemplos": "el «aguacate» del uramaki es «palta» en Argentina y Chile; el «langostino» de la tempura es «camarón» en México y Colombia; el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina, y el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú"
+ },
+ "plan-negocio-hamburgueseria": {
+  "producto": "Plan de Negocio Hamburguesería Smash",
+  "ejemplos": "la «patata» de las patatas fritas es «papa» en toda Latinoamérica y el «pan de patata» es «pan de papa» en Argentina y Chile; la «carne picada» es «carne molida» en México, Colombia, Perú y Chile; el «batido» de leche es «malteada» en México, Colombia y Perú; y los pedidos «a domicilio» son «domicilios» en Colombia y «delivery» en Argentina, Chile y Perú"
  }
 }
