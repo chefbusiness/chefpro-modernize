@@ -89,7 +89,7 @@ SUPUESTOS = {
     'cubiertos_dia': (
         None, None, 79, None,
         'Comensales equivalentes al día, media del año: unos 45 en sala (barra y mesas) y unos 34 de para llevar y '
-        'domicilio, que son los pedidos (unos 7,5 para recoger y 14 de plataforma al día) contando cada pedido como '
+        'domicilio, que son los pedidos (unos 8,5 para recoger y 13 de plataforma al día) contando cada pedido como '
         '1,6 comensales. Un sábado, unos 114 con los pedidos; un martes, unos 52. Contrástalo con el paso de gente de '
         'tu calle un viernes por la noche y un martes a mediodía',
         'R §3 [estimado]'),
@@ -98,7 +98,7 @@ SUPUESTOS = {
         'SIN IVA, por comensal: en sala, el menú del día de mediodía (14,90 € con IVA, un 30 % de la sala) y la cena '
         'o el fin de semana (28,60 € con IVA) dejan unos 22,26 € sin IVA; el pedido para llevar (un combinado de 24 '
         'piezas y un extra, 27,00 € con IVA) sale a 15,34 € por comensal equivalente y el de plataforma, con el precio '
-        'un 15 % más alto, a 18,47 €. La media de los tres canales da 20,14 €; el caso se queda en 20,00 €. El precio '
+        'un 15 % más alto, a 18,47 €. La media de los tres canales da 20,08 €; el caso se queda en 20,00 €. El precio '
         'con IVA está en la fila «PVP equivalente con IVA» de abajo',
         'R §2-§3 (carta del caso) [estimado]'),
     'dias_apertura': (
@@ -147,10 +147,10 @@ SUPUESTOS = {
         'de plástico de un solo uso se cobra aparte en el tique (Ley 7/2022, art. 55)',
         'R §1-§3 [estimado] · BOE'),
     'pct_delivery': (
-        None, None, 0.25, None,
+        None, None, 0.24, None,
         'Ventas por PLATAFORMA con su reparto (Glovo, Just Eat, Uber Eats) sobre el total. Lo que se recoge en el local '
-        'NO paga comisión y no va aquí. El combinado viaja bien; la tempura y las gyozas llegan peor: no subas de aquí '
-        'sin probarlo',
+        'NO paga comisión y no va aquí: empújalo. El combinado viaja bien; la tempura y las gyozas llegan peor: no subas '
+        'de aquí sin probarlo',
         'R §3 [estimado]'),
     'comision_delivery': (
         None, None, 0.30, None,
@@ -193,10 +193,11 @@ SUPUESTOS = {
         'Aportación de los socios. Un banco pide entre el 25 y el 30 % de la necesidad de caja con dinero propio',
         'R §3 [estimado]'),
     'prestamo': (
-        None, None, 128000, None,
+        None, None, 131000, None,
         'Principal solicitado. La hoja de Financiación compara lo que aportas con la necesidad de caja de la hoja de '
         'inversión y te dice si sobra o falta: ajústalo con ese dato',
-        'calibrado D9: cubre la necesidad de caja del libro con 55.000 € propios (R §3: unos 128.000 €)'),
+        'calibrado D9, vuelta 1: cubre la necesidad de caja del libro con 55.000 € propios (R §3: unos 128.000 €; el libro '
+        'pide unos 2.400 € más: RD-34 dio −1,3 % con 128.000 €)'),
     'tipo_prestamo': (
         None, None, 0.06, None,
         'Tipo nominal anual. Pide oferta a dos entidades y a una línea ICO antes de fijarlo; el frío y el equipo de '
@@ -271,7 +272,7 @@ SUPUESTOS = {
     'dias_cobro': (
         None, None, 2, None,
         'Media ponderada: la sala y lo que se recoge en el local cobran al momento y la plataforma liquida cada semana '
-        'o cada quince días lo que vende por ella (un 25 % de las ventas). Con liquidación semanal salen unos 2 días',
+        'o cada quince días lo que vende por ella (un 24 % de las ventas). Con liquidación semanal salen unos 2 días',
         'R §3 [derivado]'),
     'dias_pago': (
         None, None, 30, None,
@@ -300,8 +301,8 @@ SUPUESTOS = {
 #: Supuestos). La comida va al 10 % sin partir; la bebida, PARTIDA (sexto campo).
 LINEAS_INGRESO = (
     ('Ventas de sushi y cocina (sala, para llevar y a domicilio)', 0.85, 'comida',
-     'Sushi, sashimi y poke, gyozas, tempura, sopa de miso y postres: en sala unos 62 % de las ventas, para llevar unos '
-     '12 % y por plataforma unos 26 %. Todo al 10 % de IVA, se coma en la barra o salga del local (art. 91.Uno.1.1.º y '
+     'Sushi, sashimi y poke, gyozas, tempura, sopa de miso y postres: en sala unos 63 % de las ventas, para llevar unos '
+     '13 % y por plataforma unos 24 %. Todo al 10 % de IVA, se coma en la barra o salga del local (art. 91.Uno.1.1.º y '
      '2.2.º de la Ley 37/1992)',
      'R §3 [estimado] · LIVA (BOE)'),
     ('Ventas de bebida (cerveza, sake, vino, refrescos, agua y té)', 0.15, 'bebida',
@@ -429,11 +430,11 @@ FIJOS = {
 FIJOS_EXTRA = ()
 
 #: (clave, rótulo, valor, comentario). Margen bruto al 52 %: el caso da un 57,8 % tras TODOS los costes variables (la
-#: plataforma pesa un 25 % de las ventas).
+#: plataforma pesa un 24 % de las ventas).
 UMBRALES = (
     ('r_mb', 'Margen bruto / Ventas', 0.52,
      'Suelo del margen tras TODOS los costes variables (mercancía, envases, plataforma, medios de pago y varios). Con '
-     'un cuarto de las ventas por plataforma, un sushi bar deja menos que una sala sola. Estimación del kit'),
+     'casi un cuarto de las ventas por plataforma, un sushi bar deja menos que una sala sola. Estimación del kit'),
     ('r_cogs', 'Coste de mercancía / Ventas', 0.31,
      'Techo de la materia prima sobre ventas: el salmón paga la carta y el atún, el langostino y la merma de la vitrina '
      'la encarecen. Estimación del kit'),
@@ -479,7 +480,7 @@ INSTRUCCIONES = {
          'más flojo. Si abres en otro mes, gira la fila de estacionalidad de la Tesorería'),
         ('Sushi en el reparto a domicilio', 'El maki, segundo plato más pedido',
          'Gastrómetro de Just Eat 2025, publicado en prensa en diciembre de 2025',
-         'Sólo lo supera la hamburguesa. Por eso el caso cuenta un 25 % de las ventas por plataforma'),
+         'Sólo lo supera la hamburguesa. Por eso el caso cuenta un 24 % de las ventas por plataforma'),
         ('Nigiri y combinado en carta', '2,50-2,60 € la pieza de nigiri · 24,90-30,60 € el combinado de 24 piezas',
          'Cartas de cadenas y restaurantes de sushi leídas en octubre de 2026',
          'El caso: nigiri de salmón a 2,60 € la pieza (5,20 € las dos), combinado de 24 piezas a 29,00 € y menú del día '

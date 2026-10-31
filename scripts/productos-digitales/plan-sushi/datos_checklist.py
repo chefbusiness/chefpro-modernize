@@ -274,7 +274,7 @@ FASES = [
          'y la carta del mes. El Kit de Tareas Sushi Bar trae el calendario anual'),
         ('Contrato y alta en las plataformas de reparto con un techo', 'Titular', 'Antes de abrir',
          'Lee la comisión (del 13 al 35 % más IVA según la plataforma y la zona), cada cuánto liquidan, quién paga las '
-         'promociones y el coste de las tablets. Fija un techo: en este plan, el 25 % de las ventas'),
+         'promociones y el coste de las tablets. Fija un techo: en este plan, el 24 % de las ventas'),
         ('Precios para la plataforma y para la recogida en el local', 'Titular', 'Antes de abrir',
          'Calcula el margen del combinado en la plataforma con su comisión, el recargo y la caja; la recogida en el '
          'local no paga comisión: empújala. La tempura y las gyozas viajan mal: déjalas fuera del reparto o con envase '
@@ -326,7 +326,7 @@ FASES = [
          'Diciembre es el pico del año, con las bandejas de Nochebuena y Nochevieja, y febrero sube con San Valentín; '
          'agosto es el valle, con el cierre de 10 días: prepara el cuadrante, el pescado y los encargos con tiempo'),
         ('Revisar la cuenta de la plataforma cada mes', 'Titular', 'Mensual',
-         'Ventas, comisión, promociones y cajas: si la plataforma pasa del 25 % de las ventas o su margen no cubre la '
+         'Ventas, comisión, promociones y cajas: si la plataforma pasa del 24 % de las ventas o su margen no cubre la '
          'comisión, recorta o sube precio. Reparto propio, sólo con contrato laboral y cuando el volumen lo pague'),
         ('Comparar ventas y costes reales con el plan cada mes', 'Titular', 'Mensual',
          'Comensales al día, ticket, mercancía y personal frente a la cuenta de resultados del Excel; revisa el '
