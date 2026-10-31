@@ -187,8 +187,8 @@ def main():
     t0 = time.time()
     es, en, prodtext, prodfiles, stats = load_all()
     print('Productos ES: %d (EN excluidos: %d)' % (len(es), len(en)))
-    if len(es) != 57:
-        print('ERROR: se esperaban 57 productos ES. Lista:')
+    if len(es) != 58:
+        print('ERROR: se esperaban 58 productos ES. Lista:')
         for s in es:
             print(' ', s, len(es[s]))
         sys.exit(1)
