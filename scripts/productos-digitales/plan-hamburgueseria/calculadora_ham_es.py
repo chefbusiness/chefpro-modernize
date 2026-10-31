@@ -90,7 +90,7 @@ OPC = [  # desplegable informativo: (opción, recordatorio)
      '4 °C o menos. Pide al proveedor la ficha técnica con el blend, el % de grasa y la fecha de sacrificio o de envasado.'),
     ('Pico la carne en el local',
      'RD 1021/2022, arts. 7.2 y 7.3: la carne que picas en el local es del día y nunca de un día para otro; músculo sin recortes, con '
-     'como máximo 6 días desde el sacrificio o 15 si va envasada al vacío. Nada de carne madurada más de 15 días (Inf26008).'),
+     'como máximo 6 días desde el sacrificio o 15 si va envasada al vacío. La carne madurada semanas queda fuera de ese plazo (Inf26008).'),
     ('Compro bolas porcionadas',
      'La bola salada antes de la plancha es un preparado de carne: 4 °C o menos (RD 1021/2022). Guarda la ficha técnica y la etiqueta con '
      'la fecha de cada lote.'),
@@ -467,7 +467,7 @@ def hoja_carne(wb):
     ws.row_dimensions[2].height = 32
     _f(ws, 'A3', 'AVISO FIJO. Carne picada (RD 1021/2022, arts. 4.1, 7.2 y 7.3): comprada picada o picada en el local, se conserva a 2 °C o '
                  'menos; la bola salada antes de la plancha es un preparado de carne, a 4 °C o menos; la picada en el local es del día y nunca de '
-                 'un día para otro. Nada de carne madurada más de 15 días (Inf26008). Los minutos de limpiar y picar (6) y la merma de cocción '
+                 'un día para otro. La carne madurada semanas queda fuera del plazo de picado de 6 días desde el sacrificio (15 si es vacuno al vacío) (Inf26008). Los minutos de limpiar y picar (6) y la merma de cocción '
                  'no tienen fuente: mídelos.', wrap=True, b=True, fill=GRIS)
     ws.merge_cells('A3:F3')
     ws.row_dimensions[3].height = 64
@@ -723,7 +723,7 @@ def instrucciones():
          % (_n(d['X']), _n(d['lab_kg']), d['sem']), False),
         ('5. Carne picada (RD 1021/2022, arts. 4.1, 7.2 y 7.3). Comprada picada o picada en el local, se conserva a 2 °C o menos; la bola salada '
          'antes de la plancha es un preparado de carne, a 4 °C o menos; la picada en el local es del día y nunca de un día para otro, con músculo '
-         'sin recortes y como máximo 6 días desde el sacrificio, o 15 si va envasada al vacío. Nada de carne madurada más de 15 días (Inf26008). '
+         'sin recortes y como máximo 6 días desde el sacrificio, o 15 si va envasada al vacío. La carne madurada semanas queda fuera de ese plazo (Inf26008). '
          'El desplegable de la hoja es solo un recordatorio: no cambia ningún cálculo.', False),
         ('HOJA «PATATAS»', True),
         ('1. Pesa 10 raciones de patata y usa la media. Si usas fresca, pesa 10 kg sin pelar y lo que queda cortado para medir el aprovechamiento, y '

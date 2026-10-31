@@ -2,6 +2,21 @@
 
 > Sesión Claude Code (Mac).
 
+## ⏳ PENDIENTE (31-oct-2026): Plan de Negocio: Hamburguesería Smash (ES) — rama `feat/plan-negocio-hamburgueseria`
+
+Producto nº 59, 35 €. La landing (`/plan-negocio-hamburgueseria`) deja el botón en `#comprar` hasta que exista el link. Cuando lo crees,
+Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio: Hamburguesería Smash - AI Chef Pro |
+| Precio | **35,00 EUR**, pago único, impuesto automático con precio *exclusive* (como pizzería, taquería, pollería y sushi bar) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-hamburgueseria-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 259 caracteres) | Plan de negocio para montar una hamburguesería smash con sala, para llevar y a domicilio: plan en Word de 10 secciones, plan financiero en Excel a 3 años, checklist de 80 tareas, calculadora de la carne, las patatas y el escandallo, y guía para Latinoamérica. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_HAMBURGUESERIA` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-hamburgueseria-hero.jpg` |
+
 ## ✅ HECHO (31-oct-2026): Lote de 4 checklists EN — PR #189
 
 Links de John comprobados con la CLI (`--live`): pago único, *exclusive*, impuesto automático, factura y redirección a

@@ -59,6 +59,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Businessplan: smashburgerrestaurant',
+    slug: '/plan-negocio-hamburgueseria',
+    description: 'Volledig businessplan voor het openen van een smashburgerrestaurant met zaal, afhaal en bezorging: financieel plan in Excel over 3 jaar met 9 bladen, businessplan in Word met 10 secties, openingschecklist met 80 taken, calculator voor vlees, friet en kostprijs per burger en Equivalentiegids voor Latijns-Amerika.',
+    features: [
+      'Businessplan in Word met 10 secties',
+      'Financieel plan in Excel met 9 bladen en liquiditeit maand per maand',
+      'Openingschecklist: 80 taken in 6 fasen',
+      'Calculator voor vlees, friet en kostprijs per burger en Equivalentiegids voor Latijns-Amerika',
+    ],
+    iconName: 'Sandwich',
+    image: '/lovable-uploads/ai-gallery/plan-hamburgueseria-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'burger', 'business-plan'],
+  },
+  {
     name: 'Businessplan: Sushibar',
     slug: '/plan-negocio-sushi-bar',
     description: 'Volledig businessplan voor het openen van een sushibar of sushirestaurant met bar, afhaal en bezorging: financieel plan in Excel over 3 jaar met 9 bladen, businessplan in Word met 10 secties, openingschecklist met 80 taken, calculator voor vis, rijst en kostprijs per stuk en de Equivalentiegids voor Latijns-Amerika.',
@@ -134,8 +150,8 @@ const products = [
     ],
     iconName: 'Pizza',
     image: '/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg',
-    badge: '✨ Nieuw',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'pizzeria', 'business-plan'],
   },
   {
@@ -996,7 +1012,6 @@ const products = [
 
 const comingSoon = [
   { iconName: 'BarChart3', name: 'Operationeel dashboardpakket', desc: 'Omzet per tijdvak en eetgedeelte, gemiddelde besteding, tafelomloopsnelheid en productiviteit per uur, in één dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
-  { iconName: 'Sandwich', name: 'Businessplan: smashburgerzaak', desc: 'Van het smashconcept tot break-even: investering, menukaart, kosten en een prognose per maand.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },
   { iconName: 'Flame', name: 'Terugkerende taken: rotisseriekippenzaak', desc: 'Braadspitten, braadtijden, uitvalpercentage en service tijdens piekuren, met de routines voor elke dienst.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
   { iconName: 'Utensils', name: 'Terugkerende taken: arepazaak', desc: 'Deeg, vullingen, bakplaat en afsluiting: de dagelijkse routine van een arepazaak, per dienst vastgelegd.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
   { iconName: 'Beef', name: 'Businessplan: steakhouse', desc: 'Een vast pand met een dry-aging-kast en een houtskoolgrill: investering, menukaart, receptuurberekening en prognose.', tags: ['business-plan', 'restaurant', 'excel'], phase: 'Q1 2027' },
