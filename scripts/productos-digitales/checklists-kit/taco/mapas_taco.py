@@ -261,11 +261,24 @@ CALENDARIO = OrderedDict([
 # POR_CELDA: textos EN fijados (no van al traductor)
 # ==========================================================================
 POR_CELDA = OrderedDict()
-# 01 · Apertura (errata ES, §5): el cono recibido se comprobaba DESPUÉS de montar el trompo. Mismas filas y horas:
-# la comprobación sube a la 14 (11:00) y el montaje baja a la 15 (11:05)
+# 01 · Apertura (errata ES, §5): el cono recibido se comprobaba DESPUÉS de montar el trompo. Revisión final (31-oct,
+# MAJOR 1): la línea del trompo, alineada con el 02 (cono 9:30, montaje 9:45, encendido, primer corte 10:20, servicio
+# 11:00): la sección «Trompo, plancha y comal» queda cono (B13) → montaje (B14) → encendido (B15, el ES lo tenía en B13
+# a las 10:50) → plancha, freidora y cuchillo (B16-B18, horas del ES). Sin cifras nuevas de cocción
 _AP = ('01', 'Apertura Taquería')
-POR_CELDA[_AP + ('B14',)] = 'Check the cone as received: frozen at 0 °F or below, or refrigerated at 41 °F or below'
-POR_CELDA[_AP + ('B15',)] = "Stack the day's trompo: layer order, fat, pineapple and onion; note weight and time"
+for _celda, _v in (
+        ('B13', 'Check the cone as received: frozen at 0 °F or below, or refrigerated at 41 °F or below'),
+        ('E13', '9:30 AM'),
+        ('B14', "Stack the day's trompo: layer order, fat, pineapple and onion; note weight and time"),
+        ('E14', '9:45 AM'),
+        ('B15', 'Light the trompo (vertical broiler) and check for an even flame on every burner. Gas smell: light '
+                'nothing, flip no switches, get out and call the gas company or 911 from outside'),
+        ('E15', '9:50 AM')):
+    POR_CELDA[_AP + (_celda,)] = _v
+# 06 · Taquero (revisión final, MAJOR 1): mismas horas que el 02 (cono 9:30, montaje 9:45, primera sonda 10:20) y la
+# segunda lectura a mitad de turno; el ES las tenía a las 10:30, 10:45, 13:00 y 13:15 (después de abrir)
+for _celda, _v in (('E6', '9:30 AM'), ('E7', '9:45 AM'), ('E8', '10:20 AM'), ('E9', '2:00 PM')):
+    POR_CELDA[('06', 'Taquero del Trompo', _celda)] = _v
 # 03 · pescado crudo de aguachiles y tostadas: destrucción de parásitos (base, FDA Food Code 3-402.11/3-402.12) +
 # aviso al consumidor (3-603.11)
 POR_CELDA[('03', 'Temperaturas y Trazabilidad', 'B20')] = (
@@ -329,12 +342,13 @@ ADAPTAR = OrderedDict([
     # 01 · Apertura
     (_AP + ('B6',), _FRIO + '; carne marinada en el walk-in'),
     (_AP + ('B7',), _FRIO), (_AP + ('B8',), _FRIO), (_AP + ('B9',), _SALSA_TCS),
-    (_AP + ('B13',), _A[('01', 'Apertura Cocina', 'B14')]),
     (_AP + ('B20',), _SALSA_TCS), (_AP + ('B21',), _ALERGENOS + '; cartel = allergen sign'),
     (_AP + ('B27',), _CALIENTE), (_AP + ('B35',), _APPS),
     # 01 · Cierre
     (('01', 'Cierre Taquería', 'B7'), 'Carne sobrante del trompo: reutilizarla solo si tu departamento de salud lo '
-                                      'permite (la regla del cono sobrante la fija el condado); si se guarda: ' + _ENFRIAR),
+                                      'permite (la regla del cono sobrante la fija el condado); si se guarda: ' + _ENFRIAR
+                                      + '; y antes de volver al mantenimiento en caliente, recalentar a 165 °F en 2 h '
+                                      'como máximo (FDA Food Code 3-403.11)'),
     (('01', 'Cierre Taquería', 'B15'), _ENFRIAR),
     (('01', 'Cierre Taquería', 'B19'), 'Barra de salsas: limpiar y luego sanitizar con ' + _TIRA),
     (('01', 'Cierre Taquería', 'B21'), 'Licuadora y molcajete: ' + _LAVAR),
@@ -429,8 +443,8 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
         ADAPTAR[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = 'Evento EN: «%s». %s' % (_evento, _dir)
 # aplicar_en.objetivo_ajuste / G3: la EN activa el ajuste también donde el ES tampoco cabía (lección de la pizzería)
 AJUSTE_MAQUETA_ES = True
-# Celdas ES con °C cuya EN NO lleva cifra en °F: 01 «Apertura» B15 (F2: la errata del orden sube la comprobación del
-# cono, con sus °F, a la B14; en la B15 queda el montaje, sin temperatura)
+# Celdas ES con °C cuya EN NO lleva cifra en °F: 01 «Apertura» B15 (el reorden sube la comprobación del cono, con sus
+# °F, a la B13; en la B15 queda el encendido del trompo, sin temperatura)
 CELSIUS_SIN_F = frozenset({_AP + ('B15',)})
 
 # ==========================================================================
@@ -591,6 +605,10 @@ def autotest():
     if usados != GRADOS_F_SPEC:
         err.append('GRADOS_F_SPEC ≠ los °F de POR_CELDA / ADAPTAR / REGLAS_US: sobra %s, falta %s'
                    % (sorted(GRADOS_F_SPEC - usados), sorted(usados - GRADOS_F_SPEC)))
+    for k, v in POR_CELDA.items():
+        if k[2].startswith('E') and k[1] in ('Apertura Taquería', 'Taquero del Trompo') and not re.match(
+                r'^\d{1,2}:\d{2} [AP]M$', v):
+            err.append('POR_CELDA: hora fijada %r sin formato US: %r' % (k, v))
     for f in FRASES_OK_EXTRA:                                    # solo platos con palabra funcional ES (si no, sobra)
         if not re.search(r'\b(?:al|de|del|con|en)\b', f.lower()):
             err.append('FRASES_OK_EXTRA sin palabra funcional ES (no hace falta): %r' % f)
@@ -614,7 +632,8 @@ def cruzar_censo(p):
         if '°C' in t and k not in ADAPTAR and k not in POR_CELDA and k not in CELSIUS_SIN_F:
             err.append('celda ES con °C sin ADAPTAR ni POR_CELDA: %r → %r' % (k, t[:70]))
     # lo que POR_CELDA reescribe es lo que el ES dice en esa celda
-    esperado = [(_AP + ('B14',), 'Montar el trompo del día'), (_AP + ('B15',), 'Comprobar el cono recibido'),
+    esperado = [(_AP + ('B13',), 'Encender el trompo'), (_AP + ('B14',), 'Montar el trompo del día'),
+                (_AP + ('B15',), 'Comprobar el cono recibido'),
                 (('03', 'Temperaturas y Trazabilidad', 'B20'), 'Verificar la congelación del pescado crudo'),
                 (('05', 'Tareas Semanales Manager', 'B16'), 'Cerrar y firmar el registro de jornada'),
                 (('07', 'Tareas Mensuales', 'B13'), 'Revisar el registro de jornada')]
