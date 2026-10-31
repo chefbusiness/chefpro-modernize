@@ -47,3 +47,12 @@ se reescribe sin la cifra. Ninguna traducción tocada tras el primer montaje.
   permiso (food establishment), no para la venta casera.
 
 Erratas del ES: `SPEC.md` §5.
+
+## Ronda de revisión de contenido (31-oct · sesión Claude Code; 0 bloqueantes)
+
+Aplicado (`68694d7d` textos y mapas, `e6778f5c` remontaje y republicación): 01 B5 «Turn on the ovens and the proofer: deck /
+rack oven»; 07 B6 «(carbon, grease)». **Orden por horas del 01**: en la apertura, el control de la sala del obrador (ES B10,
+03:00) quedaba tras las 03:30; mover la fila arrastraría la nota F7 («Calibrated scale»), así que **se ajusta la hora a 3:30
+AM** (la del amasado y el agua) sin mover filas. En el cierre, las tareas de las 2:00 PM antes que las de las 2:30 PM
+(`_MOVIDAS_01`: filas 29-32 con su zona, responsable y hora; sin notas en F). Resultado: **VERDE 8/0** (G5 y G6 N/A),
+autotest 16/16, idempotencia 0, censo-entregables / no-latinos / LIT255 en 0; 213 pendientes (4 cadenas movidas a GM).

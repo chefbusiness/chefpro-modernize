@@ -55,3 +55,10 @@ Arreglo de la F2: la línea de marca pasa a «AI Chef Pro · aichef.pro · Food 
 
 Erratas del ES: las de `SPEC.md` §5 (cabeceras C3 / D3 del 02 y el 03, tildes, 63 °C, arqueo y vitrina prometidos, 05 y
 09 sin desplegable, food cost < 25 %).
+
+## Ronda de revisión de contenido (31-oct · sesión Claude Code; 0 bloqueantes)
+
+Aplicado (`68694d7d` textos y mapas, `e6778f5c` remontaje y republicación): 01 B12 y 03 B7 — el 0 °F ya no se ata a
+3-501.16: «41 °F or below (FDA Food Code 3-501.16); frozen food stays frozen (0 °F or below is the common target)» (y el
+`_FRIO` de los ADAPTAR, igual); 06 C27 «When» = «Any time» (repetía la frecuencia «Weekly» de D27, `POR_CELDA`). Resultado:
+**VERDE 8/0** (G5 y G6 N/A), autotest 14/14, idempotencia 0, censo-entregables / no-latinos / LIT255 en 0.

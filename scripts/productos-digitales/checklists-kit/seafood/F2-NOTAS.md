@@ -40,3 +40,16 @@ truck, `f35b7355`).
   UK solo en la FAQ; enlace cruzado natural con el **HACCP Food Safety Kit Pro** y el **Restaurant Checklists Kit Pro**.
 
 Erratas del ES: `SPEC.md` §5.
+
+## Ronda de revisión de contenido (31-oct · sesión Claude Code; 0 bloqueantes, 1 major)
+
+Aplicado (`68694d7d` textos y mapas, `e6778f5c` remontaje y republicación): **MAJOR** 01 B15 — el walk-in de marisco vivo ya
+no dice «varies by species» (contradecía el CCP 1): «shellstock at 41 °F or below once received (FDA Food Code 3-202.11);
+live crustaceans per your supplier». **Albariño** con eñe (`FRASES_OK_EXTRA`, sin tocar `gates_en.py`) y, en las
+sugerencias de maridaje, Sauvignon Blanc, Muscadet y Chablis en vez de Godello y Txakoli (06 B32, 07 B12, B01 B23). 06 B13
+«fry». CCP 3: + picado 155 °F 17 s y relleno 165 °F (3-401.11(A)(2)-(3); `GRADOS_F_SPEC` + 155). CCP 5: + especies exentas
+(3-402.11(B)). CCP 1: el 0 °F, objetivo habitual (no la cifra de 3-202.11). CCP 4 alineado con el 04 (hielo cada 90 min,
+agua cada 60, rotación cada 2 h). **Orden por horas del 01** (`_MOVIDAS_01`, mismas filas): la descongelación de las 7:30 AM
+sube a la fila 17 (tras las comprobaciones de las 7:00) y la cubertería de sala de las 11:00 PM a la 31 (tras el vivero);
+el resto baja una fila con su zona, responsable y hora. Resultado: **VERDE 8/0** (G5 y G6 N/A), autotest 16/16,
+idempotencia 0, censo-entregables / no-latinos / LIT255 en 0; 203 pendientes (las 10 cadenas movidas pasan a GM).
