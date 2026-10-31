@@ -7,7 +7,7 @@ de Burger Restaurant Business Plan Kit). Clon de `../business-plans-en-14/bp14.p
 final (`mapas_bur.SHA_ES`) y de los diccionarios del Sushi EN (`mapas_bur.SHA_SUS`), del Taco EN (`SHA_TAQ`), del Rotisserie EN
 (`SHA_POL`) y de la Pizza EN (`SHA_PIZ`).
 
-FUENTE ES: `astro-site/public/dl/plan-negocio-hamburgueseria/` (el ES FINAL y revisado, F2 ES `17117feb`; `BUR_FUENTE_ES=/ruta` solo para pruebas).
+FUENTE ES: `astro-site/public/dl/plan-negocio-hamburgueseria/` (el ES FINAL y cerrado, F3 ES `e883ebaa`; `BUR_FUENTE_ES=/ruta` solo para pruebas).
 
   Mac (solo JSON):
     python3 bp15.py mapas                          # autotest + cruce con censo_es.json + verificar (abajo)

@@ -21,7 +21,7 @@ MANUAL = {
         '=IFERROR("That is "&TEXT(INT(ROUND(B50,1)),"0")&"."&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),"0")&" seat turns '
         'per day on the "&TEXT($B$51,"0")&" seats in the cell below. "&"It includes the take-out and delivery covers (1 '
         'order = 1.6 covers), which do not take a seat: the real turns of your dining room are lower (in the example, '
-        'a little over half of the covers eat in). Compare it with the ceiling on seat turns typed in ""Break-Even"".","")'),
+        'a little over half of the covers eat in). "&"Compare it with the ceiling on seat turns typed in ""Break-Even"".","")'),
     'BURP|Inversión Inicial|D27': (
         '=IFERROR("At "&TEXT(\'0. Assumptions\'!$B$55,"0%")&" of the BUILD-OUT items of this block (architect, MEP & '
         'hood drawings, plan review & permit fees; build-out with order counter, signage & facade; hood exhaust duct to '

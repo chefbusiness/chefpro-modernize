@@ -16,7 +16,7 @@ desplaza. Van los parches E2 (G14), E4 (Staffing!C12) y E5 (G11), G13 → 0 y el
      6. BAR EN; 7. BP/BP2 (GM → REST → CAF → FT).
 
 FUENTE ES: `FUENTE_ES` = `$BUR_FUENTE_ES` o, sin la variable, `astro-site/public/dl/plan-negocio-hamburgueseria` (el ES
-FINAL y revisado de la F2 ES, `17117feb`: no hay paso 1c). Grupos:
+FINAL y cerrado de la F3 ES, `e883ebaa`: no hay paso 1c). Grupos:
   GM          motor común: mismo ES que una cadena GM (Sushi EN, Taco EN, Rotisserie EN, Pizza EN, Bar EN o BP) con un EN
               limpio (RX_REESCRIBIR).
   GR · GRC    EN de GSUS-* / GR / GRC del Sushi EN, del Taco EN, del Rotisserie EN, de la Pizza EN, de la Bakery, del Bar o
@@ -264,12 +264,12 @@ SHA_PIZ = OrderedDict([
     ('censo_es.json', '442b610642a4a11ea781c1790d02a74bf5c41b4e9da5fa790b8ab2c3fe1bf53b'),
     ('datos_piz.py', '44c178d7bb9ae94eb696f26d8f964ba98f510e275e4104ce5baece71e1d2158e'),
 ])
-# sha256 del ES FINAL (F2 ES revisada, 17117feb = plan-hamburgueseria/REVISION-FINAL.md; Mac = VPS el 31-oct): si el ES
-# cambia (la F3 ES retoca frases legales españolas que no cruzan), manda el ES nuevo: resync_es.py --solo business-plans-en-15
+# sha256 del ES FINAL (F3 ES cerrada, e883ebaa: la F2 revisada 17117feb + las frases legales ES de la carne madurada y del
+# batido, que no cruzan; Mac = VPS el 31-oct): si el ES cambia, manda el ES nuevo: resync_es.py --solo business-plans-en-15
 SHA_ES = OrderedDict([
-    ('plan-financiero-hamburgueseria.xlsx', '05eb9365960653a325f6c60a20db116c62edf66e2c62d68f95e334bba601aa7f'),
-    ('checklist-apertura-hamburgueseria.xlsx', 'f997c9a68c08bcd1d7a78af92856c252469d22f25340d3352f9677637a683ee0'),
-    ('plan-de-negocio-hamburgueseria.docx', '0ea51bd9777f91fe2fe0b66e068b39194e9f18847e1ec222ce03d0546104920f'),
+    ('plan-financiero-hamburgueseria.xlsx', 'ad0fad746d29317460d6c9f97e91d980535bfb808c755ec4426a448859f164c3'),
+    ('checklist-apertura-hamburgueseria.xlsx', '1d061df4ddf2e3faf7dea003c74f2aab73e1c6e802253d53ad451e566e4d6805'),
+    ('plan-de-negocio-hamburgueseria.docx', 'ec69d114663151e9351d4c1ff95d85bd1c997253ff33441045a7e936f7439980'),
 ])
 
 
