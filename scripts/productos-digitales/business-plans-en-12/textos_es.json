@@ -1,31 +1,31 @@
 {
  "meta": {
-  "generado": "2026-10-29T07:53:22Z",
+  "generado": "2026-10-31T03:49:49Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "f5c5b269",
+  "commit": "8a0d6dab",
   "libros": {
    "TAQP": {
     "es": "plan-financiero-taqueria.xlsx",
     "en": "taco-shop-financial-projections.xlsx",
-    "sha256": "5778011f9bd918657c364488d145e62163d38996c18eae7e6f280147c21c0ad6"
+    "sha256": "c3f2ca9e35ef545e5163012b544edef8dd3a59ba5026eb3571dc17ee3f8a4e00"
    },
    "TAQC": {
     "es": "checklist-apertura-taqueria.xlsx",
     "en": "taco-shop-startup-checklist.xlsx",
-    "sha256": "27b6962cdb60e38fa86eb53dca7f411c662ec82134a683d2e4bdd50aa4f4d339"
+    "sha256": "b7c4363496e97a6455cfdb2d819738eafaeab92523df476ecb88ad367269122f"
    }
   },
   "n_cadenas": 861,
   "n_traducir": 693,
   "n_localizar": 47,
-  "n_palabras_subagentes": 11359,
+  "n_palabras_subagentes": 11409,
   "n_apariciones": 1123,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: motor común (mismo ES que una cadena GM de la Pizza EN, del Bar EN o de BP) con un EN sin vocabulario ni caso de otro negocio. preparar_tandas escribe su EN. No van a los traductores",
     "n_cadenas": 361,
-    "n_palabras": 3688,
+    "n_palabras": 3734,
     "n_plan": 345,
     "n_check": 17,
     "n_localizar": 0,
@@ -65,7 +65,7 @@
     "id": "GTAQ-check",
     "descripcion": "Nuevas del checklist (TAQC): las 80 tareas, sus cabeceras y los mensajes de la DV (con propuesta cuando la Pizza EN tiene el mismo ES)",
     "n_cadenas": 124,
-    "n_palabras": 2759,
+    "n_palabras": 2763,
     "n_plan": 0,
     "n_check": 124,
     "n_localizar": 0,
@@ -91,9 +91,8 @@
    "cadenas": {
     "AI Chef Pro": 2,
     "OK": 6,
-    "☐": 80,
+    "☐": 86,
     "✓": 6,
-    "—": 6,
     "N/A": 6
    },
    "literales_formula": {
@@ -2328,18 +2327,18 @@
   },
   {
    "id": "c0116",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "taq"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
+   "palabras": 35,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»"
    ],
-   "sha1": "721896d9dc29",
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "TAQP",
@@ -2352,7 +2351,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0116",
-    "en": "How far you can fall below plan before you start losing money",
+    "en": "How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb is somewhat smaller: with a 15% cushion, about 13% of plan",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN cerrada)",
     "origen": "celda-piz",
@@ -6733,18 +6732,18 @@
   },
   {
    "id": "c0320",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "taq"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
+   "palabras": 45,
    "pistas": [
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
    ],
-   "sha1": "a40f4860d483",
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "TAQP",
@@ -6757,7 +6756,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0320",
-    "en": "How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the \"0. Assumptions\" tab",
+    "en": "How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs and the loan payment is somewhat smaller: with a 25% cushion, 20%. The required minimum is set in the \"0. Assumptions\" tab",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN cerrada)",
     "origen": "celda-piz",
@@ -10612,7 +10611,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0625",
-    "en": "Fourth-quarter sales tax is settled in January of the following year, so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
+    "en": "Fourth-quarter sales tax is settled in Month 13 (January of the following year when Month 1 is January), so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-3 (Bar EN)",
     "origen": "texto-bar",
@@ -21938,7 +21937,7 @@
   },
   {
    "id": "c0654",
-   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "es": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
    "grupo": "GTAQ-check",
    "tratamiento": "traducir",
    "planes": [
@@ -21947,7 +21946,7 @@
    "n_apariciones": 6,
    "palabras": 12,
    "max_len": 255,
-   "sha1": "99fc84bf8389",
+   "sha1": "12fbeb7eedbe",
    "donde": [
     {
      "f": "TAQC",
@@ -21995,7 +21994,7 @@
    "reuso": {
     "grupo": "GR",
     "id": "c0659",
-    "en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+    "en": "Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-8 (Pizza EN cerrada)",
     "origen": "texto-piz",
@@ -24597,19 +24596,19 @@
   },
   {
    "id": "c0842",
-   "es": "Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 08). Apunta la fecha",
+   "es": "Inspección periódica (red) o revisión (gas envasado) cada 5 años (RD 919/2006, ITC-ICG 07 e ITC-ICG 08). Apunta la fecha",
    "grupo": "GTAQ-check",
    "tratamiento": "traducir",
    "planes": [
     "taq"
    ],
    "n_apariciones": 1,
-   "palabras": 19,
+   "palabras": 23,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "licensed gas contractor; gas lines in the build-out"
    ],
-   "sha1": "48b46153ff42",
+   "sha1": "a2c5f9a8d4dd",
    "donde": [
     {
      "f": "TAQC",

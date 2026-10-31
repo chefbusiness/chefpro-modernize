@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-11T11:28:50Z",
+  "generado": "2026-10-31T03:49:42Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-tapas-bar"
   ],
-  "commit": "6fedd0e3",
+  "commit": "8a0d6dab",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -13,7 +13,7 @@
    "corto": "BARP",
    "plan": "bar",
    "tipo": "plan",
-   "sha256": "a757e15d7edb0c8d48b991da382162fbbb89fa40c3ac4c96979e0ac389f40a52",
+   "sha256": "e5c16b7880fbbeaeedc8958fb8f4325b05da437f9f8b9466a5215efdf09b61e7",
    "nombre_en": "bar-financial-projections.xlsx",
    "titulo_en": "Bar Financial Projections: 3-Year P&L, Cash Flow & Financing",
    "hojas": [
@@ -108,7 +108,7 @@
       "Son ": 1,
       "Ticket sin IVA más el IVA medio ponderado de tus líneas de venta: ": 1
      },
-     "huella_formulas_sha1": "3250c4efccd16a77a6f4f01df17238457c183a54",
+     "huella_formulas_sha1": "d6f7be70bd0e8b01bf8161fe2d8369b251737a32",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF($B$5=\"\",\"\",$B$5*(1+SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11))),\"\")",
@@ -135,7 +135,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Son \"&TEXT(INT(ROUND(B{r},1)),\"0\")&\",\"&TEXT(ROUND(MOD(ROUND(B{r},1),1)*10,0),\"0\")&\" servicios por plaza y día sobre las \"&TEXT($B$51,\"0\")&\" plazas de la celda de arriba. El documento de este plan pide 1,8 servicios por cubierto en el almuerzo y 1,5 en la cena, que sumados son unas 3,3 rotaciones al día: por encima del techo de 3 que trae por defecto la hoja «Punto Equilibrio». Ajusta ese techo a tu horario y a tu aforo reales antes de dar por buena ninguna de las dos cifras.\",\"\")",
+       "patron": "=IFERROR(\"Son \"&TEXT(INT(ROUND(B{r},1)),\"0\")&\",\"&TEXT(ROUND(MOD(ROUND(B{r},1),1)*10,0),\"0\")&\" servicios por plaza y día sobre las \"&TEXT($B$51,\"0\")&\" plazas de la celda de arriba. El documento de este plan pide 1,8 servicios por cubierto en el almuerzo y 1,5 en la cena, que sumados son unas 3,3 rotaciones al día: por encima del techo de 3 que trae por defecto la hoja «Punto \"&\"Equilibrio». Ajusta ese techo a tu horario y a tu aforo reales antes de dar por buena ninguna de las dos cifras.\",\"\")",
        "n": 1,
        "celdas": "C50",
        "cifras": false
@@ -146,11 +146,11 @@
       "C9": "=IFERROR(\"Ticket sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. En sala todo va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992, alcohol incluido); el alcohol que sale por delivery y el pan común, si los tienes, mueven la media. Aquí va redondeado. Compáralo con el rango del sector, que va con IVA.\",\"\")",
       "B12": "=IFERROR(IF(COUNT(B11)=0,\"\",1-B11),\"\")",
       "B50": "=IFERROR($B$4/$B$51,\"\")",
-      "C50": "=IFERROR(\"Son \"&TEXT(INT(ROUND(B50,1)),\"0\")&\",\"&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),\"0\")&\" servicios por plaza y día sobre las \"&TEXT($B$51,\"0\")&\" plazas de la celda de arriba. El documento de este plan pide 1,8 servicios por cubierto en el almuerzo y 1,5 en la cena, que sumados son unas 3,3 rotaciones al día: por encima del techo de 3 que trae por defecto la hoja «Punto Equilibrio». Ajusta ese techo a tu horario y a tu aforo reales antes de dar por buena ninguna de las dos cifras.\",\"\")"
+      "C50": "=IFERROR(\"Son \"&TEXT(INT(ROUND(B50,1)),\"0\")&\",\"&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),\"0\")&\" servicios por plaza y día sobre las \"&TEXT($B$51,\"0\")&\" plazas de la celda de arriba. El documento de este plan pide 1,8 servicios por cubierto en el almuerzo y 1,5 en la cena, que sumados son unas 3,3 rotaciones al día: por encima del techo de 3 que trae por defecto la hoja «Punto \"&\"Equilibrio». Ajusta ese techo a tu horario y a tu aforo reales antes de dar por buena ninguna de las dos cifras.\",\"\")"
      },
      "formulas_texto": {
       "C9": "=IFERROR(\"Ticket sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. En sala todo va al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992, alcohol incluido); el alcohol que sale por delivery y el pan común, si los tienes, mueven la media. Aquí va redondeado. Compáralo con el rango del sector, que va con IVA.\",\"\")",
-      "C50": "=IFERROR(\"Son \"&TEXT(INT(ROUND(B50,1)),\"0\")&\",\"&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),\"0\")&\" servicios por plaza y día sobre las \"&TEXT($B$51,\"0\")&\" plazas de la celda de arriba. El documento de este plan pide 1,8 servicios por cubierto en el almuerzo y 1,5 en la cena, que sumados son unas 3,3 rotaciones al día: por encima del techo de 3 que trae por defecto la hoja «Punto Equilibrio». Ajusta ese techo a tu horario y a tu aforo reales antes de dar por buena ninguna de las dos cifras.\",\"\")"
+      "C50": "=IFERROR(\"Son \"&TEXT(INT(ROUND(B50,1)),\"0\")&\",\"&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),\"0\")&\" servicios por plaza y día sobre las \"&TEXT($B$51,\"0\")&\" plazas de la celda de arriba. El documento de este plan pide 1,8 servicios por cubierto en el almuerzo y 1,5 en la cena, que sumados son unas 3,3 rotaciones al día: por encima del techo de 3 que trae por defecto la hoja «Punto \"&\"Equilibrio». Ajusta ese techo a tu horario y a tu aforo reales antes de dar por buena ninguna de las dos cifras.\",\"\")"
      },
      "etiquetas": {
       "1": "SUPUESTOS — aquí se teclean las TASAS y los DRIVERS del modelo",
@@ -999,7 +999,7 @@
       "de los ": 1,
       "del mes": 1
      },
-     "huella_formulas_sha1": "c7706f338675ab45f017e1b813a6eca17a872d35",
+     "huella_formulas_sha1": "ba87b2f60a75df29c336d28d0296812f6a89b3ee",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF(COUNT(B{r}:B{r})=0,\"\",SUM(B{r}:B{r})),\"\")",
@@ -1044,7 +1044,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación + extracciones, Grifos cerveza + instalación, Decoración + iluminación ambiente y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación + extracciones, Grifos cerveza + instalación, \"&\"Decoración + iluminación ambiente y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
        "n": 1,
        "celdas": "D27",
        "cifras": false
@@ -1092,7 +1092,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
        "n": 1,
        "celdas": "D32",
        "cifras": false
@@ -1128,7 +1128,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (clasificada), Marketing lanzamiento, Stock inicial (producto, vinos, cervezas), Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
+       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (clasificada), Marketing lanzamiento, Stock inicial (producto, vinos, cervezas), Fianza del alquiler, Alquiler de los meses previos a la \"&\"apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
        "n": 1,
        "celdas": "D37",
        "cifras": false
@@ -1163,7 +1163,7 @@
       "D26": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
       "B27": "=IFERROR(IF(COUNT(B9,B10,B11,B12,B16,B20,B21)=0,\"\",ROUND((B9+B10+B11+B12+B16+B20+B21)*'0. Supuestos'!$B$55,0)),\"\")",
       "C27": "=IFERROR(B27/$B$30,\"\")",
-      "D27": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación + extracciones, Grifos cerveza + instalación, Decoración + iluminación ambiente y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D27": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación + extracciones, Grifos cerveza + instalación, \"&\"Decoración + iluminación ambiente y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "B28": "=IFERROR(IF(B29=\"\",\"\",B29),\"\")",
       "C28": "=IFERROR(B28/$B$30,\"\")",
       "B29": "=IFERROR(IF('0. Supuestos'!$B$35*('PyG 3 Años'!$B$37-'PyG 3 Años'!$B$35)=0,\"\",'0. Supuestos'!$B$35*('PyG 3 Años'!$B$37-'PyG 3 Años'!$B$35)/12),\"\")",
@@ -1173,25 +1173,25 @@
       "D30": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C28,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
       "B31": "=IFERROR(B30-B28,\"\")",
       "B32": "=IFERROR(IF(B30=\"\",\"\",SUMIF($E$7:$E$27,\"Sí\",$B$7:$B$27)*'0. Supuestos'!$B$41),\"\")",
-      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "B33": "=IFERROR(B30+B32,\"\")",
       "B35": "=IFERROR(IF(B9=\"\",\"\",B9+B10+B11+B12+B16+B20+B21+B27),\"\")",
       "D35": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "B36": "=IFERROR(IF(B13=\"\",\"\",B13+B14+B15+B17+B18+B19+B24),\"\")",
       "D36": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
       "B37": "=IFERROR(B35/MAX(1,'0. Supuestos'!$B$44)+B36/MAX(1,'0. Supuestos'!$B$45),\"\")",
-      "D37": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (clasificada), Marketing lanzamiento, Stock inicial (producto, vinos, cervezas), Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B30-B35-B36,\"0\")&\" € de los \"&TEXT(B30,\"0\")&\" € de inversión.\",\"\")"
+      "D37": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (clasificada), Marketing lanzamiento, Stock inicial (producto, vinos, cervezas), Fianza del alquiler, Alquiler de los meses previos a la \"&\"apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B30-B35-B36,\"0\")&\" € de los \"&TEXT(B30,\"0\")&\" € de inversión.\",\"\")"
      },
      "formulas_texto": {
       "D25": "=IFERROR(\"\"&TEXT('0. Supuestos'!$B$25,\"0\")&\" meses de renta, al tipo de la hoja de Supuestos. Es un activo recuperable al cerrar: ni se amortiza ni lleva IVA\",\"\")",
       "D26": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
-      "D27": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación + extracciones, Grifos cerveza + instalación, Decoración + iluminación ambiente y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D27": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico + certificación, Obra civil y adecuación local, Instalación eléctrica + climatización, Fontanería + evacuación + extracciones, Grifos cerveza + instalación, \"&\"Decoración + iluminación ambiente y Rotulación + imagen exterior), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "D29": "=IFERROR(\"Cubre \"&TEXT('0. Supuestos'!$B$35,\"0\")&IF('0. Supuestos'!$B$35=1,\" mes\",\" meses\")&\" de costes fijos DE CAJA del año 1 (los del P&L menos la amortización, que no se paga), que es el mínimo que exigen las Instrucciones de este libro\",\"\")",
       "D30": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C28,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
-      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D32": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "D35": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "D36": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
-      "D37": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (clasificada), Marketing lanzamiento, Stock inicial (producto, vinos, cervezas), Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B30-B35-B36,\"0\")&\" € de los \"&TEXT(B30,\"0\")&\" € de inversión.\",\"\")"
+      "D37": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Constitución SL + notaría + registro, Licencia de actividad (clasificada), Marketing lanzamiento, Stock inicial (producto, vinos, cervezas), Fianza del alquiler, Alquiler de los meses previos a la \"&\"apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B30-B35-B36,\"0\")&\" € de los \"&TEXT(B30,\"0\")&\" € de inversión.\",\"\")"
      },
      "etiquetas": {
       "1": "PLAN DE NEGOCIO: TAPAS BAR / GASTROBAR",

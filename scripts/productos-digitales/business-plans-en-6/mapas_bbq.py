@@ -167,8 +167,8 @@ RX_REESCRIBIR = re.compile(
 # sha256 del diccionario (EN publicado del catering, `../business-plans-en-4/`) — D101/D109: no puede derivar. Los MISMOS
 # 8 que `mapas_mbar.SHA_DICCIONARIO` (comprobados el 24-oct-2026)
 SHA_DICCIONARIO = OrderedDict([
-    ('textos_es.json', '9d02ffbeb6c088ae84f5f1ad80364a7f0e1bcb1ad264d8c57a16739b64f574f1'),
-    ('textos_en/GM.json', 'b05fd56a3ed3eb562b7eb1dcc114e751f14d525ec0feefc7151388ede96c35d1'),
+    ('textos_es.json', '942033c95c5e11323cd49c556f0e019a888e55aad420187098b842c34eae2555'),
+    ('textos_en/GM.json', 'a65dbc65e834e73376ed99d32243cd5512a6b96af8b40521f91db3d25a35503c'),
     ('textos_en/GR.json', '7e2e0f23be5f1d6f9e2e8cc5d60def04fd15030a7d1ea6d677ea7f8942b883ea'),
     ('textos_en/GR.revision.json', '976190192b0c069cad212a5c7e40a5dc2761917cc5a920edfd6f8fff3097b13e'),
     ('textos_en/GCAT-plan.json', '849c96d84281bd39825fac07cae8668b9f8a61d7549f2030e6d2e3725d2b569e'),

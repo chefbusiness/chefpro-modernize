@@ -545,7 +545,15 @@ def main():
     ap.add_argument('--origen-repo', default=REPO, help='raíz del repo de la que salen los dl/ ES')
     ap.add_argument('--salida', default=mapas.DATOS)
     ap.add_argument('--md', action='store_true', help='imprime la tabla §0 de F1-inventario-es.md')
+    ap.add_argument('--fijar-clasificacion', default=None, metavar='TEXTOS_ES_PUBLICADO',
+                    help='re-extracción de un conjunto YA publicado (p. ej. tras un parche del ES LIVE): exige los '
+                         'mismos ids con las mismas apariciones y conserva el grupo y el tratamiento publicados de cada '
+                         'cadena (las reglas de grupo_de miran el texto: sin esto, un texto ES corregido cambia de '
+                         'grupo y aplicar_en aborta porque su EN vive en otro textos_en/*.json)')
     args = ap.parse_args()
+    publicado = None
+    if args.fijar_clasificacion:                                  # se lee ANTES de escribir (puede ser el mismo fichero)
+        publicado = {c['id']: c for c in json.load(open(args.fijar_clasificacion, encoding='utf-8'))['cadenas']}
 
     try:
         commit = subprocess.check_output(['git', '-C', REPO, 'rev-parse', '--short', 'HEAD'],
@@ -648,6 +656,8 @@ def main():
                 e['reuso'] = r
         else:
             e['grupo'] = 'GX'
+    if publicado is not None:
+        fijar_clasificacion(cadenas, publicado)
     DESC = mapas.GRUPOS_DESC
     grupos = []
     for gid, desc in DESC.items():
@@ -723,6 +733,42 @@ def main():
                                                     if not isinstance(v, (dict, list))}, ensure_ascii=False)))
     if args.md:
         print(tabla_md(censo))
+
+
+def fijar_clasificacion(cadenas, publicado):
+    """--fijar-clasificacion: mismos ids con las mismas apariciones que el textos_es.json publicado; si una cadena
+    cambia de grupo o de tratamiento (p. ej. la regla D199 de la heladería mira «—» en el texto y el ES ya trae «☐»),
+    manda la clasificación publicada, que es con la que se construyó el EN LIVE. Aborta si los ids no casan."""
+    def apariciones(c):
+        return [(o.get('f'), o.get('h'), o.get('c'), o.get('t')) for o in c['donde']]
+    ids = {e['id'] for e in cadenas}
+    if ids != set(publicado):
+        sys.exit('--fijar-clasificacion: los ids no casan (%d nuevos, %d desaparecen): re-extraer sin fijar' % (
+            len(ids - set(publicado)), len(set(publicado) - ids)))
+    n = 0
+    for e in cadenas:
+        p = publicado[e['id']]
+        if apariciones(e) != apariciones(p):
+            sys.exit('--fijar-clasificacion: %s cambia de apariciones (%r → %r): los ids no casan' % (
+                e['id'], apariciones(p)[:2], apariciones(e)[:2]))
+        if (e['grupo'], e['tratamiento'], [o['tr'] for o in e['donde']]) == \
+                (p['grupo'], p['tratamiento'], [o['tr'] for o in p['donde']]):
+            continue
+        print('  clasificación publicada %s: %s/%s → %s/%s · %r' % (e['id'], e['grupo'], e['tratamiento'], p['grupo'],
+                                                                    p['tratamiento'], e['es'][:50]))
+        e['grupo'], e['tratamiento'] = p['grupo'], p['tratamiento']
+        if 'tratamientos' in p:
+            e['tratamientos'] = p['tratamientos']
+        else:
+            e.pop('tratamientos', None)
+        for o, q in zip(e['donde'], p['donde']):
+            o['tr'] = q['tr']
+            if 'det' in q:
+                o['det'] = q['det']
+            else:
+                o.pop('det', None)
+        n += 1
+    print('--fijar-clasificacion: %d cadenas con la clasificación publicada' % n)
 
 
 COLS_MD = [('hojas', 'Hojas'), ('celdas_texto', 'Texto'), ('celdas_formula', 'Fórmulas'),

@@ -184,22 +184,22 @@ TERMINOS_MX = ('al pastor', 'pico de gallo', 'Cinco de Mayo', 'chiles? de [aá]r
 # sha256 del diccionario de la Pizza EN (cerrada y publicada; fijados el 27-oct-2026 sobre db6c741b y re-medidos el
 # 29-oct en f5c5b269: iguales). Si cambian, hay que re-extraer y rehacer preparar_tandas (bp12.py verificar avisa)
 SHA_PIZ = OrderedDict([
-    ('textos_es.json', 'c477dc83a61609ec7de3ebe3d23937b27267c7e48000d389271e382ad630319b'),
-    ('textos_en/GM.json', '93b2451ebd54ce5584ca4714679b6faa529695c7bfa2fbd843d3508b6482e5de'),
-    ('textos_en/GR.json', '5392e3689a7a511fab85a2401afc74f6bf9a9fc4ff522f45348ca250f9ccf0b8'),
+    ('textos_es.json', '7f504ed3ffc1ec12e95b36888dbf4e92711b7d1cc4319cb6128251deea817986'),
+    ('textos_en/GM.json', '0f6cd4198a3c533331cca1111dde7a5de26c87b173e0d2712abafac72e6c08ed'),
+    ('textos_en/GR.json', 'ef088edc5b1709acd9ad28ab3f5d7023a6421f505fc0d0dfedb63a7f099e8151'),
     ('textos_en/GM.revision.json', 'b6d5e7768ba1fa4240dd3c055355db4fc17559b3eec0249f57978cbf574d7876'),
     ('textos_en/GR.revision.json', 'fc7cfb4e679c7f30c5571381cc72b9d4bec3094283172fdb5c30e508147941d0'),
     ('textos_en/GPIZ-plan.json', 'a52044a121fd9e28c7931534c3ee54adabe856a186c543c5f13e6aa08a7dc3b6'),
     ('textos_en/GPIZ-check.json', 'c3d62514b899edb9d0aa9a1c32fcaa3517a22229fe4121bd72d2b978d43556da'),
     ('formulas_piz.json', '286b3675b30e2eed71982781e209f4aa063fe4c8be2e7c616ebbd54877caebb2'),
-    ('censo_es.json', '2c8a1f63f2b5de0db1d46794327831bc16405744f5fe6e8b0ddc68286708b933'),
+    ('censo_es.json', '442b610642a4a11ea781c1790d02a74bf5c41b4e9da5fa790b8ab2c3fe1bf53b'),
     ('datos_piz.py', '44c178d7bb9ae94eb696f26d8f964ba98f510e275e4104ce5baece71e1d2158e'),
 ])
 # sha256 del ES FINAL (F2 ES revisada, f5c5b269 = plan-taqueria/REVISION-FINAL.md): si el ES cambia, manda el ES nuevo
 # (re-extraer y avisar)
 SHA_ES = OrderedDict([
-    ('plan-financiero-taqueria.xlsx', '5778011f9bd918657c364488d145e62163d38996c18eae7e6f280147c21c0ad6'),
-    ('checklist-apertura-taqueria.xlsx', '27b6962cdb60e38fa86eb53dca7f411c662ec82134a683d2e4bdd50aa4f4d339'),
+    ('plan-financiero-taqueria.xlsx', 'c3f2ca9e35ef545e5163012b544edef8dd3a59ba5026eb3571dc17ee3f8a4e00'),
+    ('checklist-apertura-taqueria.xlsx', 'b7c4363496e97a6455cfdb2d819738eafaeab92523df476ecb88ad367269122f'),
     ('plan-de-negocio-taqueria.docx', 'c028c2bb753df9b09b9f023e376e633d6f098468300dbb62424e962ed40d63d5'),
 ])
 

@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generado": "2026-10-11T11:28:50Z",
+  "generado": "2026-10-31T03:49:42Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "6fedd0e3",
+  "commit": "8a0d6dab",
   "libros": {
    "BARP": {
     "es": "plan-financiero-tapas-bar.xlsx",
     "en": "bar-financial-projections.xlsx",
-    "sha256": "a757e15d7edb0c8d48b991da382162fbbb89fa40c3ac4c96979e0ac389f40a52"
+    "sha256": "e5c16b7880fbbeaeedc8958fb8f4325b05da437f9f8b9466a5215efdf09b61e7"
    },
    "BARC": {
     "es": "checklist-apertura-tapas-bar.xlsx",
@@ -18,14 +18,14 @@
   "n_cadenas": 913,
   "n_traducir": 662,
   "n_localizar": 128,
-  "n_palabras_subagentes": 8906,
+  "n_palabras_subagentes": 8952,
   "n_apariciones": 1174,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: idénticas a una cadena común de FT/CAF ya traducida (../business-plans-en/textos_en/GM.json); preparar_tandas escribe su EN con los ids de este conjunto. No van a los traductores",
     "n_cadenas": 396,
-    "n_palabras": 4224,
+    "n_palabras": 4270,
     "n_plan": 342,
     "n_check": 56,
     "n_localizar": 0,
@@ -2349,18 +2349,18 @@
   },
   {
    "id": "c0116",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "bar"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
+   "palabras": 35,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»"
    ],
-   "sha1": "721896d9dc29",
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "BARP",
@@ -2373,7 +2373,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0115",
-    "en": "How far you can fall below plan before you start losing money",
+    "en": "How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb is somewhat smaller: with a 15% cushion, about 13% of plan",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en",
     "donde": [
@@ -6626,18 +6626,18 @@
   },
   {
    "id": "c0314",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "bar"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
+   "palabras": 45,
    "pistas": [
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
    ],
-   "sha1": "a40f4860d483",
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "BARP",
@@ -6650,7 +6650,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0306",
-    "en": "How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the \"0. Assumptions\" tab",
+    "en": "How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs and the loan payment is somewhat smaller: with a 25% cushion, 20%. The required minimum is set in the \"0. Assumptions\" tab",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en",
     "donde": [
@@ -9778,7 +9778,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0578",
-    "en": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly (April, July, October, January): if your state requires monthly filing, expect smaller payments every month instead",
+    "en": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10, and the fourth quarter in Month 13: April, July, October and January when Month 1 is January): if your state requires monthly filing, expect smaller payments every month instead",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en",
     "donde": [
@@ -10470,7 +10470,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0598",
-    "en": "Fourth-quarter sales tax is settled in January of the following year, so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
+    "en": "Fourth-quarter sales tax is settled in Month 13 (January of the following year when Month 1 is January), so it does not appear in this table. The model pays year-1 income tax in July of year 2 (a simplification: estimated tax payments are usually quarterly). The loan payment is spread in twelve equal parts following the ANNUAL schedule in the Financing tab, and payroll in twelve monthly installments (plus extra pay periods in their month, only if pay periods > 12).",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en",
     "donde": [
