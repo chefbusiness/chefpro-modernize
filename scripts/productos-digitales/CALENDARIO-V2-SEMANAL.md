@@ -853,3 +853,17 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Siguiente en la cola: Taco Shop Checklist Templates EN ($19) → Sushi Bar ES + EN → Hamburguesería Smash; el kit de tareas de pollería
   («Tareas Recurrentes: Pollería y Pollo a la Brasa», tarjeta de Próximos) sigue pendiente.
 - Handoff: `SESSION_HANDOFF_2026-10-29-taqueria-taco-shop.md` §6.
+
+### ✅ 2026-10-30/31 (Claude Code en el Mac + VPS) — **Tanda de arreglos sin correo (#186, #187) + Taco Shop Checklists Kit Pro (EN, $19) LIVE (#188)**
+
+- **#186 → `554d962c`**: 41 xlsx LIVE por parche XML (literales > 255 en fórmulas que Excel «reparaba» borrando la fórmula; desplegable
+  ✓/☐/N/A; holgura; ITC del gas; notas EN) + guía y planes modelo de pastelería y chocolatería regenerados. **#187 → `666c117e`**: caché
+  de los contadores del 05 en 4 kits de tareas ES. Sin correo (arreglos). Detalle: `SESSION_HANDOFF_2026-10-30-tanda-arreglos.md`.
+- **#188 → `8c753f0d`**: Taco Shop Checklists Kit Pro (`checklists-kit/taco/`): 11 xlsx, 36 hojas, 298 tareas, sin libro de caja; F1-F3
+  en una sesión; revisión 0 B · 2 M (horario del trompo, 9 alérgenos) corregidos. Link EN `plink_1UWQA54CcdRGidmEOVg6j434` (19 USD),
+  comprobado con la CLI (`--live`). LIVE: postpago 0 fallos (92 productos, 1.146 entregables), robots, sitemap + GSC, cripto 200 (QA
+  `qa-tacochecklists`, por purgar).
+- **Correo EN 25-mar-2027 14:00Z** (borrador `879dace8`, routine `trig_016VjznzFMEiBM2vXBAkDsAw` el 24-feb-2027 15:07Z). Prueba a John.
+  **Siguiente hueco: ES 28-dic · EN 30-mar-2027.**
+- Siguiente en la cola: Sushi Bar ES + EN → Hamburguesería Smash → Kit de Tareas Pollería (Próximos); 22 productos ES sin gemelo EN.
+- Handoff: `SESSION_HANDOFF_2026-10-31-taco-shop-checklists.md`.
