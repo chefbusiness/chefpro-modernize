@@ -1,5 +1,6 @@
 import type { Handler } from '@netlify/functions';
 import { validatePurchase } from '../shared/purchase-validation';
+import { purchaseFromSession } from '../shared/purchase-measurement';
 import { emailI18n, type TiendaLang } from '../shared/email-i18n';
 
 // ── Product config ──────────────────────────────────────────────
@@ -802,7 +803,7 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/plan-negocio-hamburgueseria-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Hamburguesería Smash',
     emailTitle: '¡Gracias por tu compra!',
-    emailBody: 'Tu acceso al <strong>Plan de Negocio: Hamburguesería Smash</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora de la carne, las patatas y el escandallo de 4 hojas y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día de la plancha, la freidora y el mostrador, el <a href="https://aichef.pro/kit-tareas-hamburgueseria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Recurrentes: Hamburguesería</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Hamburguesería Smash</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora de la carne, las patatas y el escandallo de 4 hojas y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día de la plancha, la freidora y el mostrador, el <a href="https://aichef.pro/kit-tareas-hamburgueseria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Recurrentes: Hamburguesería</a> (12 €) es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
   'plan-negocio-food-truck': {
@@ -904,17 +905,23 @@ export const handler: Handler = async (event) => {
           console.error('sendAccessEmail failed:', err);
         });
 
+        // Solo una Checkout Session pagada. El gate lo usa para Ads/GA4/Meta
+        // y deduplica por transactionId. Sin importe o moneda no se incluye:
+        // el acceso sigue igual. Las compras cripto no llegan a esta rama.
+        const purchase = purchaseFromSession(session, productId);
+
         return {
           statusCode: 200,
           headers,
-          body: JSON.stringify({ valid: true, jwt: token }),
+          body: JSON.stringify(purchase ? { valid: true, jwt: token, purchase } : { valid: true, jwt: token }),
         };
       }
 
       return { statusCode: 403, headers, body: JSON.stringify({ valid: false }) };
     }
 
-    // Case 2: Verify existing JWT (magic link from email)
+    // Case 2: Verify existing JWT (magic link from email).
+    // No lleva `purchase`: reabrir el email no es una transacción nueva.
     if (existingJwt) {
       const jwt = (await import('jsonwebtoken')).default;
       try {

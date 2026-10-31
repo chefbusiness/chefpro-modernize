@@ -27,6 +27,35 @@
   Resumen, y mirar el *Estado* de las acciones **principales**. La de aichef.pro
   llevaba tiempo optimizando hacia una **inactiva con 0,00 conversiones**.
 
+### Compra de producto digital: el gate `-access` (2026-10-31)
+
+No hay página de gracias aparte. Stripe ya redirige a `accessPath?session_id={CHECKOUT_SESSION_ID}`
+y `verify-purchase` solo añade `purchase` (importe, moneda, id de sesión y, si existe,
+`payment_intent`) cuando la Checkout Session está `paid`. El magic link `?jwt=` no lo
+lleva: no es una transacción nueva. Las compras cripto (NOWPayments → `/pago-cripto`)
+no pasan por aquí.
+
+Lo dispara `src/lib/medicion-compra.ts` desde `ProductAccessGate` y los dos gates
+vanilla (`AccessGate`, `KitEscandallosAccessGate`), una vez por `transactionId`,
+antes de saltar al dashboard:
+
+- `GOOGLE_ADS_PURCHASE_LABEL = ARzvCKiTuq8dELTL67VC` — `send_to`
+  `AW-17829651892/ARzvCKiTuq8dELTL67VC`, con `value`, `currency` (EUR en los
+  cobros en euros; la de la sesión si Stripe cobra en otra) y `transaction_id`.
+- `GA4_MEASUREMENT_ID = G-7SWN171DEX` — el mismo `gtag('config')` en
+  `GoogleTag.astro`, en todas las páginas. Consent Mode ya pone
+  `analytics_storage` según la cookie `aichef_consent` (denegado si no hay
+  «Aceptar»). Un solo loader `gtag/js` (el de Ads); no se añade otro script.
+  En el gate, el `purchase` lleva `send_to` de esa propiedad, `value`,
+  `currency` (EUR en los cobros en euros; la de la sesión si Stripe cobra en
+  otra), `transaction_id` e `items`. No espera: no retrasa el dashboard.
+- `META_PIXEL_ID` vacío — no se carga `fbevents.js`. Meta, si algún día hay ID,
+  solo con la cookie `aichef_consent=accepted` (el Consent Mode de Google no lo cubre).
+
+`gtag` se encola con el consentimiento que ya fijó `GoogleTag.astro`. Con el
+label de Ads activo, el gate espera el `event_callback` o 800 ms. El `purchase`
+de GA4 no añade espera. Meta, vacío, tampoco.
+
 ### Analítica: DataFast en todo el sitio (desde 2026-09-20)
 
 - `components/DataFast.astro`, montado en `BaseLayout.astro` **después** de `<GoogleTag />`

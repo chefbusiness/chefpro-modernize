@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Loader2 } from 'lucide-react';
+import { compraDesdeRespuesta, medirCompraVerificada } from '../lib/medicion-compra';
 
 type Status = 'loading' | 'error';
 
@@ -31,10 +32,18 @@ export default function KitEscandallosAccessGate() {
           body: JSON.stringify(body),
         });
 
-        const data = await res.json();
+        const data = await res.json() as { valid?: boolean; jwt?: string; purchase?: unknown };
 
         if (data.valid && data.jwt) {
           localStorage.setItem('kit-escandallos-jwt', data.jwt);
+          const compra = compraDesdeRespuesta(data.purchase);
+          if (compra) {
+            try {
+              await medirCompraVerificada(compra, 'Kit de Escandallos');
+            } catch {
+              /* la medición no bloquea el acceso */
+            }
+          }
           navigate('/kit-escandallos-library', { replace: true });
         } else {
           setStatus('error');

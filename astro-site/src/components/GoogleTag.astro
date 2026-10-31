@@ -35,11 +35,18 @@
  * y por eso el subdominio la lee sola. Cazado el 2026-08-02.
  */
 const GOOGLE_ADS_ID = 'AW-17829651892';
+/**
+ * Misma propiedad que `GA4_MEASUREMENT_ID` en src/lib/medicion-compra.ts.
+ * Un solo loader de gtag.js (el de Ads, abajo): el `config` de GA4 viaja en
+ * el mismo dataLayer. Un segundo `<script src="gtag/js?id=G-…">` cargaría
+ * la librería dos veces.
+ */
+const GA4_MEASUREMENT_ID = 'G-7SWN171DEX';
 /** Cookie de consentimiento. Mismo nombre en la landing y en Pickaxe. */
 const CONSENT_COOKIE = 'aichef_consent';
 ---
 
-<script is:inline define:vars={{ GOOGLE_ADS_ID, CONSENT_COOKIE }}>
+<script is:inline define:vars={{ GOOGLE_ADS_ID, GA4_MEASUREMENT_ID, CONSENT_COOKIE }}>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   window.gtag = gtag;
@@ -68,6 +75,11 @@ const CONSENT_COOKIE = 'aichef_consent';
 
   gtag('js', new Date());
   gtag('config', GOOGLE_ADS_ID);
+  // GA4 en cada página. `analytics_storage` ya quedó granted/denied arriba,
+  // según la cookie aichef_consent: sin aceptar no hay cookie de analítica.
+  if (/^G-[A-Z0-9]{6,}$/.test(GA4_MEASUREMENT_ID)) {
+    gtag('config', GA4_MEASUREMENT_ID);
+  }
 
   /** La llama el banner. `ok` true = aceptar, false = rechazar. */
   window.aichefConsent = function (ok) {
