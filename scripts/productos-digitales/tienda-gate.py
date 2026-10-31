@@ -109,7 +109,8 @@ GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia
 # /kit-tareas-chocolateria (gemelo EN: Chocolate Shop Checklists Kit Pro, 24-oct-2026) y /kit-tareas-pasteleria
 # (gemelo EN: Pastry Shop Checklists Kit Pro, 24-oct-2026) y /kit-tareas-hotel (gemelo EN: Hotel Checklists Kit Pro,
 # 27-oct-2026) y /kit-tareas-taqueria (gemelo EN: Taco Shop Checklists Kit Pro, 31-oct-2026) y /kit-tareas-food-truck
-# (gemelo EN: Food Truck Checklists Kit Pro, 31-oct-2026).
+# (gemelo EN: Food Truck Checklists Kit Pro, 31-oct-2026) y /kit-tareas-panaderia (gemelo EN: Bakery Checklists Kit Pro,
+# 31-oct-2026).
 TAREAS_ES = ['/kit-tareas', '/kit-tareas-asador', '/kit-tareas-bar', '/kit-tareas-cafeteria', '/kit-tareas-catering',
              '/kit-tareas-chef-privado', '/kit-tareas-chocolateria', '/kit-tareas-dark-kitchen',
              '/kit-tareas-food-truck', '/kit-tareas-hamburgueseria', '/kit-tareas-heladeria', '/kit-tareas-hotel',
@@ -429,7 +430,11 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # Ídem, Taco Shop Checklists Kit Pro (31-oct): testimonios del Kit de Tareas Recurrentes: Taquería Mexicana
            # traducidos tal cual («Miguel Ángel Torres» solo lleva mayúscula acentuada; los otros cuatro nombres no llevan
            # tilde) y el nombre de esa edición española en su subtítulo.
-           'Patricia Domínguez', 'Sofía Ramírez', 'Carmen Ibáñez', 'Kit de Tareas Recurrentes: Taquería Mexicana']
+           'Patricia Domínguez', 'Sofía Ramírez', 'Carmen Ibáñez', 'Kit de Tareas Recurrentes: Taquería Mexicana',
+           # Ídem, Bakery Checklists Kit Pro (31-oct): testimonios del Kit de Tareas Recurrentes: Panadería / Obrador
+           # traducidos tal cual (sus cinco nombres con tilde ya van arriba) y el nombre de esa edición española en su
+           # subtítulo. El Food Truck Checklists Kit Pro (31-oct) no añade nada: mismos nombres y «Food Truck» sin restos.
+           'Kit de Tareas Recurrentes: Panadería / Obrador']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.

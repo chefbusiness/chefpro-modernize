@@ -1175,6 +1175,23 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario-anual': '/dl/food-truck-checklist-templates/BONUS-02-food-truck-annual-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-31): Bakery Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-panaderia (las de TEMPLATES de
+  // src/pages/BakeryChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/bakery-checklist-templates/ (SPEC
+  // checklists-kit/bakery §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'bakery-checklist-templates': {
+    'apertura-cierre': '/dl/bakery-checklist-templates/01-bakery-opening-closing-checklist.xlsx',
+    'masas-madre-fermentacion': '/dl/bakery-checklist-templates/02-sourdough-starter-fermentation-checklist.xlsx',
+    'hornos-coccion': '/dl/bakery-checklist-templates/03-bakery-oven-baking-checklist.xlsx',
+    'expositor-venta': '/dl/bakery-checklist-templates/04-bakery-display-counter-checklist.xlsx',
+    'tareas-manager': '/dl/bakery-checklist-templates/05-bakery-manager-checklist.xlsx',
+    'tareas-perfiles': '/dl/bakery-checklist-templates/06-bakery-duties-by-role.xlsx',
+    'semanales-mensuales': '/dl/bakery-checklist-templates/07-bakery-cleaning-maintenance-schedule.xlsx',
+    'eventos-estacionales': '/dl/bakery-checklist-templates/08-bakery-seasonal-holiday-checklist.xlsx',
+    'plantilla-personalizable': '/dl/bakery-checklist-templates/09-blank-bakery-checklist-template.xlsx',
+    'bonus-briefing-produccion': '/dl/bakery-checklist-templates/BONUS-01-bakery-daily-production-sheet.xlsx',
+    'bonus-calendario-anual': '/dl/bakery-checklist-templates/BONUS-02-bakery-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-24): Chocolate Shop Checklists Kit Pro. MISMAS claves que kit-tareas-chocolateria (las de TEMPLATES de
   // src/pages/ChocolateShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx EN de /dl/chocolate-shop-checklist-templates/
   // (SPEC checklists-kit/chocolate §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.

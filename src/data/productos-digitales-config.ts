@@ -1858,6 +1858,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-31): twin of kit-tareas-panaderia, independent product.
+  'bakery-checklist-templates': {
+    id: 'bakery-checklist-templates',
+    name: 'Bakery Checklists Kit Pro',
+    priceLabel: '$15',
+    accessPath: '/en/digital-products/bakery-checklist-templates/access',
+    emailSubject: 'Your access to Bakery Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Bakery Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Bakery Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'apertura-cierre': '/dl/bakery-checklist-templates/01-bakery-opening-closing-checklist.xlsx',
+      'masas-madre-fermentacion': '/dl/bakery-checklist-templates/02-sourdough-starter-fermentation-checklist.xlsx',
+      'hornos-coccion': '/dl/bakery-checklist-templates/03-bakery-oven-baking-checklist.xlsx',
+      'expositor-venta': '/dl/bakery-checklist-templates/04-bakery-display-counter-checklist.xlsx',
+      'tareas-manager': '/dl/bakery-checklist-templates/05-bakery-manager-checklist.xlsx',
+      'tareas-perfiles': '/dl/bakery-checklist-templates/06-bakery-duties-by-role.xlsx',
+      'semanales-mensuales': '/dl/bakery-checklist-templates/07-bakery-cleaning-maintenance-schedule.xlsx',
+      'eventos-estacionales': '/dl/bakery-checklist-templates/08-bakery-seasonal-holiday-checklist.xlsx',
+      'plantilla-personalizable': '/dl/bakery-checklist-templates/09-blank-bakery-checklist-template.xlsx',
+      'bonus-briefing-produccion': '/dl/bakery-checklist-templates/BONUS-01-bakery-daily-production-sheet.xlsx',
+      'bonus-calendario-anual': '/dl/bakery-checklist-templates/BONUS-02-bakery-annual-calendar.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-24): twin of kit-tareas-chocolateria, independent product.
   'chocolate-shop-checklist-templates': {
     id: 'chocolate-shop-checklist-templates',

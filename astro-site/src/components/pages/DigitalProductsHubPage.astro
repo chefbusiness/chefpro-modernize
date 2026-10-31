@@ -59,6 +59,27 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Bakery Checklists Kit Pro (31-oct-2026, decimotercer hermano vertical del Restaurant Checklists Kit Pro, molde plano,
+  // $15): el más nuevo → 1; el Food Truck Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA tarjeta que
+  // ya estaba («Recurring Tasks: Bakery / Production Kitchen»): se sube y su copy pasa a describir la edición EN (decía
+  // «steam convection ovens» y «Christmas, Epiphany, and Easter campaigns»: el kit EN no trae convección ni Reyes).
+  {
+    name: 'Bakery Checklists Kit Pro',
+    slug: '/kit-tareas-panaderia',
+    description: "9 templates + 3 bonuses (12 files) with 135 bread bakery tasks already written in Excel: the overnight bake shift, the sourdough starter, deck and rack ovens with a bake table in °F, the display case and labels, manager, roles, cleaning and seasons. Print it, hand it to your team, check it off.",
+    features: [
+      "Overnight bake shift from 3:00 AM, task by task",
+      "Sourdough starter log, poolish and biga",
+      "Deck and rack ovens with a bake table in °F",
+      "Labels, allergens and the display case",
+      "Holiday breads and orders, from Easter to Thanksgiving",
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'bakery', 'production-kitchen', 'sourdough'],
+  },
   // Food Truck Checklists Kit Pro (31-oct-2026, duodécimo hermano vertical del Restaurant Checklists Kit Pro, el primero de
   // molde plano, $15): el más nuevo → 1; el Taco Shop Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA
   // tarjeta que ya estaba («Recurring Tasks: Food Truck», entre los kits del ES): se sube y su copy pasa a describir la
@@ -1092,22 +1113,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'management', 'tapas', 'gastropub', 'bar'],
-  },
-  {
-    name: 'Recurring Tasks: Bakery / Production Kitchen',
-    slug: '/kit-tareas-panaderia',
-    description: '11 operational checklists for bakeries and production kitchens: early shift from 03:00, sourdough and pre-ferments (poolish, biga), deck and rotary ovens, display case and sales, team roles, and seasonal campaigns.',
-    features: [
-      'Early shift: bakery opening from 03:00',
-      'Sourdough, poolish, biga, and fermentation control',
-      'Deck, rotary, and steam convection ovens',
-      'Christmas, Epiphany, and Easter campaigns',
-    ],
-    iconName: 'Wheat',
-    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'bakery', 'production-kitchen', 'sourdough'],
   },
   {
     name: 'Recurring Tasks Mega Pack — 13 Kits',

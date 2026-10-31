@@ -1280,6 +1280,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'bakery-checklist-templates': {
+    version: '1.1',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '1.1',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 1.1: 9 checklist templates plus 2 bonuses (11 Excel files, one sheet each) with 135 bread bakery tasks already written, adapted to the US with notes for the UK.",
+          "US bakery roles (head baker, baker, bakery assistant, counter staff, manager), the overnight bake shift task by task from 3:00 AM to 2:30 PM on a 12-hour clock, and an OK column with a ✓ / — / N/A drop-down that turns the row green on 7 of the checklists.",
+          "Sourdough starter and fermentation: daily 1:1:1 feeding, pH 3.8–4.2, starter at 75–82 °F, the float test, a backup in the refrigerator and the log; dough at 75–79 °F after mixing, bulk time by bakehouse temperature, the windowpane test, a cold retard at 37–41 °F, the final proof and the poke test; fresh yeast at 36–39 °F, poolish and biga, with a column for each reading.",
+          "Deck and rack ovens with the process temperatures converted to °F: preheating, the deck checked with an infrared thermometer at 430–500 °F, steam and the damper, and a bake table for 7 breads, from baguette at 465–480 °F to brioche at 355–375 °F.",
+          "The shop under the FDA Food Code: labels with name, ingredients, net weight and allergens for everything bagged or boxed on site (3-602.11), a written allergen notice for unwrapped bread where adopted (3-602.12(C)), the 9 major allergens with wheat and sesame, meat empanadas and cream fillings held at 41 °F or 135 °F, gluten-free only under 20 ppm (21 CFR 101.91), organic only under USDA Organic rules and a legal-for-trade scale for sales by weight.",
+          "Manager, weekly and monthly lists for a US bread bakery: production planned from sales and orders, waste under 8% (the kit's target), flour quality (protein, ash, falling number), weekly food cost against a 28–35% benchmark, gas ovens serviced by a licensed technician and pest control by a licensed operator.",
+          "Seasons and holidays for a US bakery (stollen, panettone and dinner rolls for the holidays, Easter hot cross buns, World Bread Day, Thanksgiving pre-orders) and a 12-month calendar with Mardi Gras king cakes, St. Patrick's soda bread, Rosh Hashanah challah, maintenance and team training. Plus a daily production sheet, every sheet set up to print on US Letter paper, and the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
   'ghost-kitchen-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',

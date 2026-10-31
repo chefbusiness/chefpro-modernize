@@ -670,11 +670,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-panaderia',
     url: '/kit-tareas-panaderia',
     price: '€12',
-    name: { es: 'Tareas: Panadería / Obrador', en: 'Tasks: Bakery' },
+    name: { es: 'Tareas: Panadería / Obrador', en: 'Bakery Checklists Kit Pro' },
     description: {
       es: 'Turno de madrugada, masa madre, hornos y expositor.',
-      en: 'Night shift, sourdough, ovens and display case.',
+      en: 'Bread bakery checklists for opening and closing on the overnight bake shift, the sourdough starter, deck and rack ovens, the display case and labels, the manager, duties by role and cleaning: 135 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `bakery-checklist-templates`, $15 USD.
+    urlByLang: { en: '/en/digital-products/bakery-checklist-templates' },
+    priceByLang: { en: '$15' },
   },
   'kit-tareas-asador': {
     id: 'kit-tareas-asador',
