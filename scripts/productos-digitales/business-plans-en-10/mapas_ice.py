@@ -179,21 +179,21 @@ RX_REESCRIBIR = re.compile(
 # sha256 del diccionario de la Pizza EN (cerrada y publicada; fijados el 27-oct-2026 sobre db6c741b). Si cambian, hay
 # que re-extraer y rehacer preparar_tandas antes de los traductores (bp10.py verificar avisa)
 SHA_PIZ = OrderedDict([
-    ('textos_es.json', 'c477dc83a61609ec7de3ebe3d23937b27267c7e48000d389271e382ad630319b'),
-    ('textos_en/GM.json', '93b2451ebd54ce5584ca4714679b6faa529695c7bfa2fbd843d3508b6482e5de'),
-    ('textos_en/GR.json', '5392e3689a7a511fab85a2401afc74f6bf9a9fc4ff522f45348ca250f9ccf0b8'),
+    ('textos_es.json', '7f504ed3ffc1ec12e95b36888dbf4e92711b7d1cc4319cb6128251deea817986'),
+    ('textos_en/GM.json', '0f6cd4198a3c533331cca1111dde7a5de26c87b173e0d2712abafac72e6c08ed'),
+    ('textos_en/GR.json', 'ef088edc5b1709acd9ad28ab3f5d7023a6421f505fc0d0dfedb63a7f099e8151'),
     ('textos_en/GM.revision.json', 'b6d5e7768ba1fa4240dd3c055355db4fc17559b3eec0249f57978cbf574d7876'),
     ('textos_en/GR.revision.json', 'fc7cfb4e679c7f30c5571381cc72b9d4bec3094283172fdb5c30e508147941d0'),
     ('textos_en/GPIZ-plan.json', 'a52044a121fd9e28c7931534c3ee54adabe856a186c543c5f13e6aa08a7dc3b6'),
     ('textos_en/GPIZ-check.json', 'c3d62514b899edb9d0aa9a1c32fcaa3517a22229fe4121bd72d2b978d43556da'),
     ('formulas_piz.json', '286b3675b30e2eed71982781e209f4aa063fe4c8be2e7c616ebbd54877caebb2'),
-    ('censo_es.json', '2c8a1f63f2b5de0db1d46794327831bc16405744f5fe6e8b0ddc68286708b933'),
+    ('censo_es.json', '442b610642a4a11ea781c1790d02a74bf5c41b4e9da5fa790b8ab2c3fe1bf53b'),
     ('datos_piz.py', '44c178d7bb9ae94eb696f26d8f964ba98f510e275e4104ce5baece71e1d2158e'),
 ])
 # sha256 del ES FINAL medido en F1 (inv. cabecera): si el ES cambia, manda el ES nuevo (re-medir y avisar)
 SHA_ES = OrderedDict([
-    ('plan-financiero-heladeria.xlsx', 'a99b1686751b25ced5d71b6f66585ba199355ee75c8f07bb3ffb76031d378ba7'),
-    ('checklist-apertura-heladeria.xlsx', 'd8ec6c6fa3910f8234d7aa4074897ad7ebdf0e8e371d296c8b08d511475113bc'),
+    ('plan-financiero-heladeria.xlsx', '88fb799117a29f59cb51f46ff984f866d6f4015f8bf65380af385ef3c5d514f2'),
+    ('checklist-apertura-heladeria.xlsx', 'd0e70601d5247a26b1d47b6a631553a9ea030cfd927a4951e8d103a280e33988'),
     ('plan-de-negocio-heladeria.docx', '04739dfec3f0dbef3b1bf9b221adbd2fecf9c6f3fadcfdfde0bc8881b02ee74b'),
 ])
 

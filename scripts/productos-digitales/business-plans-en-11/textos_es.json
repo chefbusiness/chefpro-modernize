@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generado": "2026-10-28T18:08:30Z",
+  "generado": "2026-10-31T03:49:48Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "d8984ffd",
+  "commit": "8a0d6dab",
   "libros": {
    "COFP": {
     "es": "plan-financiero-food-truck.xlsx",
     "en": "coffee-cart-financial-projections.xlsx",
-    "sha256": "77bfb0b1cf86c072007016203dfc2314a20c39390030a0d5d1e7e53f0fc7c13c"
+    "sha256": "deb006d717358b1b7c63f98f93f9a01a7a206913d12304e769239e0807a096aa"
    },
    "COFC": {
     "es": "checklist-apertura-food-truck.xlsx",
@@ -75,7 +75,7 @@
     "id": "GX",
     "descripcion": "NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps",
     "n_cadenas": 167,
-    "n_palabras": 1025,
+    "n_palabras": 1071,
     "n_plan": 157,
     "n_check": 19,
     "n_localizar": 0,
@@ -29261,7 +29261,7 @@
    "es": "IVA repercutido/soportado general",
    "grupo": "GX",
    "tratamiento": "regenerar",
-   "en_mapa": "Sales tax rate on alcohol sold (licensed only)",
+   "en_mapa": "Sales tax rate on alcohol (not used: no alcohol in this plan)",
    "planes": [
     "cof"
    ],
@@ -29528,15 +29528,15 @@
   },
   {
    "id": "c0115",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "cof"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
-   "sha1": "721896d9dc29",
+   "palabras": 35,
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "COFP",
@@ -31213,15 +31213,15 @@
   },
   {
    "id": "c0306",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GX",
    "tratamiento": "regenerar",
    "planes": [
     "cof"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
-   "sha1": "a40f4860d483",
+   "palabras": 45,
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "COFP",

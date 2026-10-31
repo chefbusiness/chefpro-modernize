@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generado": "2026-10-04T17:50:38Z",
+  "generado": "2026-10-31T03:49:40Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "3c57801a",
+  "commit": "8a0d6dab",
   "libros": {
    "FTP": {
     "es": "plan-financiero-food-truck.xlsx",
     "en": "food-truck-financial-projections.xlsx",
-    "sha256": "77bfb0b1cf86c072007016203dfc2314a20c39390030a0d5d1e7e53f0fc7c13c"
+    "sha256": "deb006d717358b1b7c63f98f93f9a01a7a206913d12304e769239e0807a096aa"
    },
    "FTC": {
     "es": "checklist-apertura-food-truck.xlsx",
@@ -17,7 +17,7 @@
    "CAFP": {
     "es": "plan-financiero-cafeteria-brunch.xlsx",
     "en": "coffee-shop-financial-projections.xlsx",
-    "sha256": "c2af06f0c954f1081712bce8d36e7f6861e850e6ae428b36cacf9562124924d3"
+    "sha256": "070c15c57281cceee5840716a5ffe13ffb88ae8545f2f9e24fda1652296ade02"
    },
    "CAFC": {
     "es": "checklist-apertura-cafeteria-brunch.xlsx",
@@ -28,14 +28,14 @@
   "n_cadenas": 1292,
   "n_traducir": 959,
   "n_localizar": 251,
-  "n_palabras_subagentes": 14315,
+  "n_palabras_subagentes": 14361,
   "n_apariciones": 2314,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "Comunes a FT y CAF (motor 2.2 + molde del checklist): se traducen PRIMERO y fijan el glosario",
     "n_cadenas": 427,
-    "n_palabras": 4607,
+    "n_palabras": 4653,
     "n_plan": 370,
     "n_check": 59,
     "n_localizar": 0,
@@ -2265,7 +2265,7 @@
   },
   {
    "id": "c0115",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
@@ -2273,11 +2273,11 @@
     "ft"
    ],
    "n_apariciones": 2,
-   "palabras": 11,
+   "palabras": 35,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»"
    ],
-   "sha1": "721896d9dc29",
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "FTP",
@@ -7193,7 +7193,7 @@
   },
   {
    "id": "c0306",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
@@ -7201,11 +7201,11 @@
     "ft"
    ],
    "n_apariciones": 2,
-   "palabras": 23,
+   "palabras": 45,
    "pistas": [
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
    ],
-   "sha1": "a40f4860d483",
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "FTP",

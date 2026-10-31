@@ -180,8 +180,8 @@ RX_REESCRIBIR = re.compile(
 # sha256 del diccionario en cadena (D221): 10 de la Paella cerrada y LIVE (`../business-plans-en-7/`, fijados el
 # 28-oct-2026 sobre d8984ffd) + los 8 del catering publicado (`../business-plans-en-4/`, los mismos de mapas_pael)
 SHA_PAEL = OrderedDict([
-    ('textos_es.json', '30b07f0339d7e02a9e9e5c61f2926c841f8aa17df89fcaaaf082e2d9cce25927'),
-    ('textos_en/GM.json', 'd9a2a597eccff769d34461c2a797f25973d569c1f96bff2ea20db7e6dbaa6943'),
+    ('textos_es.json', '3ab8bb5bb19de57d0a16577e529f9089fd37315d7b5b84a98cae4c18550bf2fe'),
+    ('textos_en/GM.json', '2a79d54156dede61e434c9f4859af30aa7c8c9765ae1f63ec5770ba3594ea6a8'),
     ('textos_en/GRB-plan.json', '95cafd3ec2348249b46ceef838801b3b886743412d70ae9bebb0953cb7401252'),
     ('textos_en/GRB-plan.revision.json', '11963df99a2c562db91eec31a5faf06d7ab92b0260574e5dffb2725684b61e09'),
     ('textos_en/GLB-check.json', 'd48e825a10eeb8972ac285898bb1fd46997684c505baafe40384a56f997f5cfb'),
@@ -192,8 +192,8 @@ SHA_PAEL = OrderedDict([
     ('docx_en_pael_b.json', '90d2a3cacd48b3f9347af88290c7d1256814ab521616b21ae718e5e8872b7436'),
 ])
 SHA_DICCIONARIO = OrderedDict([
-    ('textos_es.json', '9d02ffbeb6c088ae84f5f1ad80364a7f0e1bcb1ad264d8c57a16739b64f574f1'),
-    ('textos_en/GM.json', 'b05fd56a3ed3eb562b7eb1dcc114e751f14d525ec0feefc7151388ede96c35d1'),
+    ('textos_es.json', '942033c95c5e11323cd49c556f0e019a888e55aad420187098b842c34eae2555'),
+    ('textos_en/GM.json', 'a65dbc65e834e73376ed99d32243cd5512a6b96af8b40521f91db3d25a35503c'),
     ('textos_en/GR.json', '7e2e0f23be5f1d6f9e2e8cc5d60def04fd15030a7d1ea6d677ea7f8942b883ea'),
     ('textos_en/GR.revision.json', '976190192b0c069cad212a5c7e40a5dc2761917cc5a920edfd6f8fff3097b13e'),
     ('textos_en/GCAT-plan.json', '849c96d84281bd39825fac07cae8668b9f8a61d7549f2030e6d2e3725d2b569e'),

@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:26:06Z",
+  "generado": "2026-10-31T03:49:47Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-finca-eventos-bodas"
   ],
-  "commit": "16b01f7a",
+  "commit": "8a0d6dab",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -13,7 +13,7 @@
    "corto": "WEDP",
    "plan": "wed",
    "tipo": "plan",
-   "sha256": "c4ffdd64fd75319ef40c26c5a42c32269107d6ec59aae6a58c184bf2bb782fe5",
+   "sha256": "79df7e70ed3920a217a205990663dd1819ee3acc8189e1cc16f5581528d8dcf6",
    "nombre_en": "wedding-venue-financial-projections.xlsx",
    "titulo_en": "Wedding Venue Financial Projections: 3-Year P&L, Cash Flow & Financing",
    "hojas": [
@@ -87,7 +87,7 @@
       "0": 1,
       "Precio por invitado sin IVA más el IVA medio ponderado de tus líneas de venta: ": 1
      },
-     "huella_formulas_sha1": "4b588c7f01143707b6caaa5f76413a9e7fe5b6ba",
+     "huella_formulas_sha1": "155357ccc347a495fd9d2e097d32f51b6c93a5ae",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF($B$5=\"\",\"\",$B$5*(1+SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11))),\"\")",
@@ -96,7 +96,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Precio por invitado sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. La finca factura el espacio, los servicios y el canon al 21 %, el tipo general; el menú y la barra los factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), y no entran en este libro. Aquí va redondeado. Compáralo con el rango del sector, que va con IVA.\",\"\")",
+       "patron": "=IFERROR(\"Precio por invitado sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. La finca factura el espacio, los servicios y el canon al 21 %, el tipo general; el menú y la barra los factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), y no entran en este libro. Aquí va redondeado. \"&\"Compáralo con el rango del sector, que va con IVA.\",\"\")",
        "n": 1,
        "celdas": "C9",
        "cifras": false
@@ -110,11 +110,11 @@
      ],
      "formulas": {
       "B9": "=IFERROR(IF($B$5=\"\",\"\",$B$5*(1+SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11))),\"\")",
-      "C9": "=IFERROR(\"Precio por invitado sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. La finca factura el espacio, los servicios y el canon al 21 %, el tipo general; el menú y la barra los factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), y no entran en este libro. Aquí va redondeado. Compáralo con el rango del sector, que va con IVA.\",\"\")",
+      "C9": "=IFERROR(\"Precio por invitado sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. La finca factura el espacio, los servicios y el canon al 21 %, el tipo general; el menú y la barra los factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), y no entran en este libro. Aquí va redondeado. \"&\"Compáralo con el rango del sector, que va con IVA.\",\"\")",
       "B12": "=IFERROR(IF(COUNT(B11)=0,\"\",1-B11),\"\")"
      },
      "formulas_texto": {
-      "C9": "=IFERROR(\"Precio por invitado sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. La finca factura el espacio, los servicios y el canon al 21 %, el tipo general; el menú y la barra los factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), y no entran en este libro. Aquí va redondeado. Compáralo con el rango del sector, que va con IVA.\",\"\")"
+      "C9": "=IFERROR(\"Precio por invitado sin IVA más el IVA medio ponderado de tus líneas de venta: \"&TEXT(SUMPRODUCT('PyG 3 Años'!$E$10:$E$11,'PyG 3 Años'!$G$10:$G$11)*100,\"0\")&\" %. La finca factura el espacio, los servicios y el canon al 21 %, el tipo general; el menú y la barra los factura el catering a los novios, al 10 % (art. 91.Uno.2.2.º de la Ley 37/1992), y no entran en este libro. Aquí va redondeado. \"&\"Compáralo con el rango del sector, que va con IVA.\",\"\")"
      },
      "etiquetas": {
       "1": "SUPUESTOS — aquí se teclean las TASAS y los DRIVERS del modelo",
@@ -961,7 +961,7 @@
       "de los ": 1,
       "del mes": 1
      },
-     "huella_formulas_sha1": "a96ae5122dfb54e852d368ddf83d80074af6878b",
+     "huella_formulas_sha1": "c67c00cf3a2e3b10aa985562a7486684eaf645b4",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF(COUNT(B{r}:B{r})=0,\"\",SUM(B{r}:B{r})),\"\")",
@@ -1006,7 +1006,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Adecuación del salón: suelos, cerramientos, carpintería y pintura, Acústica y aislamiento del salón, Aseos: dos bloques y uno adaptado, Instalación eléctrica: cuadro, alumbrado exterior y de emergencia, Climatización del salón, Office del catering: cámara, fregaderos, mesas inox, agua y desagüe, Aparcamiento y caminos: zahorra, señalización e iluminación, Jardinería, paisajismo y riego inicial y Protección contra incendios, señalización de evacuación y accesibilidad), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Adecuación del salón: suelos, cerramientos, carpintería y pintura, Acústica y aislamiento del salón, Aseos: dos bloques y uno adaptado, \"&\"Instalación eléctrica: cuadro, alumbrado exterior y de emergencia, Climatización del salón, Office del catering: cámara, fregaderos, mesas inox, agua y desagüe, Aparcamiento y caminos: zahorra, señalización e iluminación, Jardinería, \"&\"paisajismo y riego inicial y Protección contra incendios, señalización de evacuación y accesibilidad), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en \"&\"la hoja de Supuestos\",\"\")",
        "n": 1,
        "celdas": "D28",
        "cifras": false
@@ -1054,7 +1054,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
        "n": 1,
        "celdas": "D33",
        "cifras": false
@@ -1090,7 +1090,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Licencias, tasas, calificación urbanística y prestación compensatoria o canon, Web, fotos, vídeo y marca, Constitución de la SL, Lanzamiento: feria nupcial, puertas abiertas y escaparate premium, Fianza del arrendamiento, Renta de la finca durante la obra ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
+       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Licencias, tasas, calificación urbanística y prestación compensatoria o canon, Web, fotos, vídeo y marca, Constitución de la SL, Lanzamiento: feria nupcial, puertas abiertas y escaparate premium, \"&\"Fianza del arrendamiento, Renta de la finca durante la obra ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
        "n": 1,
        "celdas": "D38",
        "cifras": false
@@ -1126,7 +1126,7 @@
       "D27": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
       "B28": "=IFERROR(IF(COUNT(B7,B9,B10,B12,B13,B15,B16,B20,B21,B22)=0,\"\",ROUND((B7+B9+B10+B12+B13+B15+B16+B20+B21+B22)*'0. Supuestos'!$B$55,0)),\"\")",
       "C28": "=IFERROR(B28/$B$31,\"\")",
-      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Adecuación del salón: suelos, cerramientos, carpintería y pintura, Acústica y aislamiento del salón, Aseos: dos bloques y uno adaptado, Instalación eléctrica: cuadro, alumbrado exterior y de emergencia, Climatización del salón, Office del catering: cámara, fregaderos, mesas inox, agua y desagüe, Aparcamiento y caminos: zahorra, señalización e iluminación, Jardinería, paisajismo y riego inicial y Protección contra incendios, señalización de evacuación y accesibilidad), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Adecuación del salón: suelos, cerramientos, carpintería y pintura, Acústica y aislamiento del salón, Aseos: dos bloques y uno adaptado, \"&\"Instalación eléctrica: cuadro, alumbrado exterior y de emergencia, Climatización del salón, Office del catering: cámara, fregaderos, mesas inox, agua y desagüe, Aparcamiento y caminos: zahorra, señalización e iluminación, Jardinería, \"&\"paisajismo y riego inicial y Protección contra incendios, señalización de evacuación y accesibilidad), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en \"&\"la hoja de Supuestos\",\"\")",
       "B29": "=IFERROR(IF(B30=\"\",\"\",B30),\"\")",
       "C29": "=IFERROR(B29/$B$31,\"\")",
       "B30": "=IFERROR(IF('0. Supuestos'!$B$35*('PyG 3 Años'!$B$38-'PyG 3 Años'!$B$36)=0,\"\",'0. Supuestos'!$B$35*('PyG 3 Años'!$B$38-'PyG 3 Años'!$B$36)/12),\"\")",
@@ -1136,25 +1136,25 @@
       "D31": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C29,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
       "B32": "=IFERROR(B31-B29,\"\")",
       "B33": "=IFERROR(IF(B31=\"\",\"\",SUMIF($E$7:$E$28,\"Sí\",$B$7:$B$28)*'0. Supuestos'!$B$41),\"\")",
-      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "B34": "=IFERROR(B31+B33,\"\")",
       "B36": "=IFERROR(IF(B7=\"\",\"\",B7+B9+B10+B12+B13+B15+B16+B20+B21+B22+B28),\"\")",
       "D36": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "B37": "=IFERROR(IF(B11=\"\",\"\",B11+B14+B17+B18+B19),\"\")",
       "D37": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
       "B38": "=IFERROR(B36/MAX(1,'0. Supuestos'!$B$44)+B37/MAX(1,'0. Supuestos'!$B$45),\"\")",
-      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Licencias, tasas, calificación urbanística y prestación compensatoria o canon, Web, fotos, vídeo y marca, Constitución de la SL, Lanzamiento: feria nupcial, puertas abiertas y escaparate premium, Fianza del arrendamiento, Renta de la finca durante la obra ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
+      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Licencias, tasas, calificación urbanística y prestación compensatoria o canon, Web, fotos, vídeo y marca, Constitución de la SL, Lanzamiento: feria nupcial, puertas abiertas y escaparate premium, \"&\"Fianza del arrendamiento, Renta de la finca durante la obra ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
      },
      "formulas_texto": {
       "D26": "=IFERROR(\"\"&TEXT('0. Supuestos'!$B$25,\"0\")&\" meses de renta, al tipo de la hoja de Supuestos. Es un activo recuperable al cerrar: ni se amortiza ni lleva IVA\",\"\")",
       "D27": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
-      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Adecuación del salón: suelos, cerramientos, carpintería y pintura, Acústica y aislamiento del salón, Aseos: dos bloques y uno adaptado, Instalación eléctrica: cuadro, alumbrado exterior y de emergencia, Climatización del salón, Office del catering: cámara, fregaderos, mesas inox, agua y desagüe, Aparcamiento y caminos: zahorra, señalización e iluminación, Jardinería, paisajismo y riego inicial y Protección contra incendios, señalización de evacuación y accesibilidad), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Adecuación del salón: suelos, cerramientos, carpintería y pintura, Acústica y aislamiento del salón, Aseos: dos bloques y uno adaptado, \"&\"Instalación eléctrica: cuadro, alumbrado exterior y de emergencia, Climatización del salón, Office del catering: cámara, fregaderos, mesas inox, agua y desagüe, Aparcamiento y caminos: zahorra, señalización e iluminación, Jardinería, \"&\"paisajismo y riego inicial y Protección contra incendios, señalización de evacuación y accesibilidad), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en \"&\"la hoja de Supuestos\",\"\")",
       "D30": "=IFERROR(\"Cubre \"&TEXT('0. Supuestos'!$B$35,\"0\")&IF('0. Supuestos'!$B$35=1,\" mes\",\" meses\")&\" de costes fijos DE CAJA del año 1 (los del P&L menos la amortización, que no se paga), que es el mínimo que exigen las Instrucciones de este libro\",\"\")",
       "D31": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C29,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
-      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "D36": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "D37": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
-      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Licencias, tasas, calificación urbanística y prestación compensatoria o canon, Web, fotos, vídeo y marca, Constitución de la SL, Lanzamiento: feria nupcial, puertas abiertas y escaparate premium, Fianza del arrendamiento, Renta de la finca durante la obra ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
+      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Licencias, tasas, calificación urbanística y prestación compensatoria o canon, Web, fotos, vídeo y marca, Constitución de la SL, Lanzamiento: feria nupcial, puertas abiertas y escaparate premium, \"&\"Fianza del arrendamiento, Renta de la finca durante la obra ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
      },
      "etiquetas": {
       "1": "PLAN DE NEGOCIO: FINCA DE EVENTOS Y BODAS",
@@ -10060,7 +10060,7 @@
    "corto": "WEDC",
    "plan": "wed",
    "tipo": "check",
-   "sha256": "58acc337d81203ae565d3fc99eef81e5862881c4b9d048cf024d6ffc3ee29f5d",
+   "sha256": "7e75d12f2cfc07874e0fe1c0d19b796165d979f335979edbbd14317990c1ecb3",
    "nombre_en": "wedding-venue-startup-checklist.xlsx",
    "titulo_en": "Wedding Venue Startup Checklist (84 Tasks)",
    "hojas": [
@@ -10243,14 +10243,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 12,
@@ -10431,14 +10431,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A20",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 16,
@@ -10603,14 +10603,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 15,
@@ -10782,14 +10782,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 13,
@@ -10954,14 +10954,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 14,
@@ -11130,14 +11130,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 14,

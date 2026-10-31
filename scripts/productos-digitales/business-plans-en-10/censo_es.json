@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-27T07:30:45Z",
+  "generado": "2026-10-31T03:49:48Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-heladeria"
   ],
-  "commit": "bc11d67f",
+  "commit": "8a0d6dab",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -13,7 +13,7 @@
    "corto": "HELP",
    "plan": "ice",
    "tipo": "plan",
-   "sha256": "a99b1686751b25ced5d71b6f66585ba199355ee75c8f07bb3ffb76031d378ba7",
+   "sha256": "88fb799117a29f59cb51f46ff984f866d6f4015f8bf65380af385ef3c5d514f2",
    "nombre_en": "ice-cream-shop-financial-projections.xlsx",
    "titulo_en": "Ice Cream Shop Financial Projections: 3-Year P&L, Cash Flow & Financing",
    "hojas": [
@@ -965,7 +965,7 @@
       "de los ": 1,
       "del mes": 1
      },
-     "huella_formulas_sha1": "2d6e86c17e019c57b59903b715392dbbcd38d639",
+     "huella_formulas_sha1": "efcbe4b252ad576b171f4cf29c731c731f0f4eda",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF(COUNT(B{r}:B{r})=0,\"\",SUM(B{r}:B{r})),\"\")",
@@ -1010,7 +1010,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Obra y acondicionamiento del obrador y la tienda, Instalación eléctrica trifásica, cuadro y boletín, Fontanería, desagües, climatización y ventilación y Rótulo y escaparate), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Obra y acondicionamiento del obrador y la tienda, Instalación eléctrica trifásica, cuadro y boletín, Fontanería, desagües, climatización y \"&\"ventilación y Rótulo y escaparate), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
        "n": 1,
        "celdas": "D28",
        "cifras": false
@@ -1058,7 +1058,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
        "n": 1,
        "celdas": "D33",
        "cifras": false
@@ -1094,7 +1094,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Formación técnica de heladería, Marca, web, fotos y lanzamiento, Constitución de la SL, licencia, tasas, registro sanitario y APPCC, Stock inicial de materias primas y envases, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
+       "patron": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Formación técnica de heladería, Marca, web, fotos y lanzamiento, Constitución de la SL, licencia, tasas, registro sanitario y APPCC, Stock inicial de materias primas y envases, Fianza del alquiler, \"&\"Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B{r}-B{r}-B{r},\"0\")&\" € de los \"&TEXT(B{r},\"0\")&\" € de inversión.\",\"\")",
        "n": 1,
        "celdas": "D38",
        "cifras": false
@@ -1130,7 +1130,7 @@
       "D27": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
       "B28": "=IFERROR(IF(COUNT(B7,B8,B9,B10,B11)=0,\"\",ROUND((B7+B8+B9+B10+B11)*'0. Supuestos'!$B$55,0)),\"\")",
       "C28": "=IFERROR(B28/$B$31,\"\")",
-      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Obra y acondicionamiento del obrador y la tienda, Instalación eléctrica trifásica, cuadro y boletín, Fontanería, desagües, climatización y ventilación y Rótulo y escaparate), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Obra y acondicionamiento del obrador y la tienda, Instalación eléctrica trifásica, cuadro y boletín, Fontanería, desagües, climatización y \"&\"ventilación y Rótulo y escaparate), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "B29": "=IFERROR(IF(B30=\"\",\"\",B30),\"\")",
       "C29": "=IFERROR(B29/$B$31,\"\")",
       "B30": "=IFERROR(IF('0. Supuestos'!$B$35*('PyG 3 Años'!$B$38-'PyG 3 Años'!$B$36)=0,\"\",'0. Supuestos'!$B$35*('PyG 3 Años'!$B$38-'PyG 3 Años'!$B$36)/12),\"\")",
@@ -1140,25 +1140,25 @@
       "D31": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C29,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
       "B32": "=IFERROR(B31-B29,\"\")",
       "B33": "=IFERROR(IF(B31=\"\",\"\",SUMIF($E$7:$E$28,\"Sí\",$B$7:$B$28)*'0. Supuestos'!$B$41),\"\")",
-      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "B34": "=IFERROR(B31+B33,\"\")",
       "B36": "=IFERROR(IF(B7=\"\",\"\",B7+B8+B9+B10+B11+B28),\"\")",
       "D36": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "B37": "=IFERROR(IF(B12=\"\",\"\",B12+B13+B14+B15+B16+B17+B18+B19+B20+B21),\"\")",
       "D37": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
       "B38": "=IFERROR(B36/MAX(1,'0. Supuestos'!$B$44)+B37/MAX(1,'0. Supuestos'!$B$45),\"\")",
-      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Formación técnica de heladería, Marca, web, fotos y lanzamiento, Constitución de la SL, licencia, tasas, registro sanitario y APPCC, Stock inicial de materias primas y envases, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
+      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Formación técnica de heladería, Marca, web, fotos y lanzamiento, Constitución de la SL, licencia, tasas, registro sanitario y APPCC, Stock inicial de materias primas y envases, Fianza del alquiler, \"&\"Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
      },
      "formulas_texto": {
       "D26": "=IFERROR(\"\"&TEXT('0. Supuestos'!$B$25,\"0\")&\" meses de renta, al tipo de la hoja de Supuestos. Es un activo recuperable al cerrar: ni se amortiza ni lleva IVA\",\"\")",
       "D27": "=IFERROR(\"Renta \"&IF('0. Supuestos'!$B$54=1,\"del mes\",\"de los \"&TEXT('0. Supuestos'!$B$54,\"0\")&\" meses\")&\" de obra y licencias. NO se solapa con el P&L, que arranca el día de la apertura: los doce meses del P&L son los doce de explotación\",\"\")",
-      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Obra y acondicionamiento del obrador y la tienda, Instalación eléctrica trifásica, cuadro y boletín, Fontanería, desagües, climatización y ventilación y Rótulo y escaparate), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
+      "D28": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$55,\"0%\")&\" de las partidas de OBRA Y ACONDICIONAMIENTO de este bloque (Proyecto técnico y dirección de obra, Obra y acondicionamiento del obrador y la tienda, Instalación eléctrica trifásica, cuadro y boletín, Fontanería, desagües, climatización y \"&\"ventilación y Rótulo y escaparate), no del bloque entero: el resto de partidas del bloque quedan fuera. Un banco no financia una reforma sin colchón: el porcentaje está en la hoja de Supuestos\",\"\")",
       "D30": "=IFERROR(\"Cubre \"&TEXT('0. Supuestos'!$B$35,\"0\")&IF('0. Supuestos'!$B$35=1,\" mes\",\" meses\")&\" de costes fijos DE CAJA del año 1 (los del P&L menos la amortización, que no se paga), que es el mínimo que exigen las Instrucciones de este libro\",\"\")",
       "D31": "=IFERROR(\"Los porcentajes de la columna C se leen sobre esta cifra, que incluye el fondo de maniobra (\"&TEXT(C29,\"0%\")&\" del total). Para comparar el desglose con otro plan, usa la fila de CAPEX de abajo.\",\"\")",
-      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí (21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
+      "D33": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$41,\"0%\")&\" sobre las partidas marcadas con «Sí» en la columna de IVA. Las tasas y licencias no están sujetas y los seguros están exentos (art. 20.Uno.16 LIVA). Las tasas y aranceles registrales no llevan IVA; los honorarios de notaría y gestoría sí \"&\"(21 %, deducible). Se recupera con el modelo 303, pero hay que adelantarlo\",\"\")",
       "D36": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$44,\"0\")&\" años\",\"\")",
       "D37": "=IFERROR(\"Se amortiza en \"&TEXT('0. Supuestos'!$B$45,\"0\")&\" años\",\"\")",
-      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Formación técnica de heladería, Marca, web, fotos y lanzamiento, Constitución de la SL, licencia, tasas, registro sanitario y APPCC, Stock inicial de materias primas y envases, Fianza del alquiler, Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
+      "D38": "=IFERROR(\"No se amortizan, por no ser inmovilizado, Formación técnica de heladería, Marca, web, fotos y lanzamiento, Constitución de la SL, licencia, tasas, registro sanitario y APPCC, Stock inicial de materias primas y envases, Fianza del alquiler, \"&\"Alquiler de los meses previos a la apertura ni Colchón operativo hasta alcanzar el equilibrio. Suman \"&TEXT(B31-B36-B37,\"0\")&\" € de los \"&TEXT(B31,\"0\")&\" € de inversión.\",\"\")"
      },
      "etiquetas": {
       "1": "PLAN DE NEGOCIO: HELADERÍA ARTESANAL",
@@ -2039,7 +2039,7 @@
       "No": 3,
       "Sí": 3
      },
-     "huella_formulas_sha1": "53b49082d0729004488db4091108c63fabd50a1a",
+     "huella_formulas_sha1": "6b60a7f32977e4f2f71dfba0a5e687113f4e6e2f",
      "patrones_formula": [
       {
        "patron": "=IFERROR(IF('0. Supuestos'!$B$4=\"\",\"\",'0. Supuestos'!$B$4),\"\")",
@@ -2192,7 +2192,7 @@
        "cifras": false
       },
       {
-       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$13,\"0%\")&\" de las ventas de COMIDA, no del total: la bebida tiene su propia línea · El IVA que SOPORTAS al comprar: la leche, los huevos, la fruta y los quesos van al 4 % (art. 91.Dos.1.1.º de la Ley 37/1992) y la nata, el azúcar, el chocolate, las pastas y los barquillos al 10 %; con un 30 % de la compra al 4 % sale un 8,2 %. Ajústalo a tus facturas\",\"\")",
+       "patron": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$13,\"0%\")&\" de las ventas de COMIDA, no del total: la bebida tiene su propia línea · El IVA que SOPORTAS al comprar: la leche, los huevos, la fruta y los quesos van al 4 % (art. 91.Dos.1.1.º de la Ley 37/1992) y la nata, el azúcar, el chocolate, las \"&\"pastas y los barquillos al 10 %; con un 30 % de la compra al 4 % sale un 8,2 %. Ajústalo a tus facturas\",\"\")",
        "n": 1,
        "celdas": "F13",
        "cifras": false
@@ -2616,7 +2616,7 @@
       "C13": "=IFERROR(IF(C9=\"\",\"\",C9*'0. Supuestos'!$B$11*'0. Supuestos'!$B$13),\"\")",
       "D13": "=IFERROR(IF(D9=\"\",\"\",D9*'0. Supuestos'!$B$11*'0. Supuestos'!$B$13),\"\")",
       "E13": "=IFERROR(B13/$B$9,\"\")",
-      "F13": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$13,\"0%\")&\" de las ventas de COMIDA, no del total: la bebida tiene su propia línea · El IVA que SOPORTAS al comprar: la leche, los huevos, la fruta y los quesos van al 4 % (art. 91.Dos.1.1.º de la Ley 37/1992) y la nata, el azúcar, el chocolate, las pastas y los barquillos al 10 %; con un 30 % de la compra al 4 % sale un 8,2 %. Ajústalo a tus facturas\",\"\")",
+      "F13": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$13,\"0%\")&\" de las ventas de COMIDA, no del total: la bebida tiene su propia línea · El IVA que SOPORTAS al comprar: la leche, los huevos, la fruta y los quesos van al 4 % (art. 91.Dos.1.1.º de la Ley 37/1992) y la nata, el azúcar, el chocolate, las \"&\"pastas y los barquillos al 10 %; con un 30 % de la compra al 4 % sale un 8,2 %. Ajústalo a tus facturas\",\"\")",
       "B14": "=IFERROR(IF(B9=\"\",\"\",B9*'0. Supuestos'!$B$12*'0. Supuestos'!$B$14),\"\")",
       "C14": "=IFERROR(IF(C9=\"\",\"\",C9*'0. Supuestos'!$B$12*'0. Supuestos'!$B$14),\"\")",
       "D14": "=IFERROR(IF(D9=\"\",\"\",D9*'0. Supuestos'!$B$12*'0. Supuestos'!$B$14),\"\")",
@@ -2776,7 +2776,7 @@
       "D57": "=IFERROR(IF(D9=\"\",\"\",IF(D9>='Punto Equilibrio'!$D$16,\"Sí\",\"No\")),\"\")"
      },
      "formulas_texto": {
-      "F13": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$13,\"0%\")&\" de las ventas de COMIDA, no del total: la bebida tiene su propia línea · El IVA que SOPORTAS al comprar: la leche, los huevos, la fruta y los quesos van al 4 % (art. 91.Dos.1.1.º de la Ley 37/1992) y la nata, el azúcar, el chocolate, las pastas y los barquillos al 10 %; con un 30 % de la compra al 4 % sale un 8,2 %. Ajústalo a tus facturas\",\"\")",
+      "F13": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$13,\"0%\")&\" de las ventas de COMIDA, no del total: la bebida tiene su propia línea · El IVA que SOPORTAS al comprar: la leche, los huevos, la fruta y los quesos van al 4 % (art. 91.Dos.1.1.º de la Ley 37/1992) y la nata, el azúcar, el chocolate, las \"&\"pastas y los barquillos al 10 %; con un 30 % de la compra al 4 % sale un 8,2 %. Ajústalo a tus facturas\",\"\")",
       "F14": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$14,\"0%\")&\" de las ventas de BEBIDA\",\"\")",
       "F18": "=IFERROR(\"Al \"&TEXT('0. Supuestos'!$B$28,\"0%\")&\" de las ventas. Es un coste VARIABLE: sube y baja con la facturación, así que no puede vivir en los costes fijos\",\"\")"
      },
@@ -10089,7 +10089,7 @@
    "corto": "HELC",
    "plan": "ice",
    "tipo": "check",
-   "sha256": "d8ec6c6fa3910f8234d7aa4074897ad7ebdf0e8e371d296c8b08d511475113bc",
+   "sha256": "d0e70601d5247a26b1d47b6a631553a9ea030cfd927a4951e8d103a280e33988",
    "nombre_en": "ice-cream-shop-startup-checklist.xlsx",
    "titulo_en": "Ice Cream Shop Startup Checklist (80 Tasks)",
    "hojas": [
@@ -10270,14 +10270,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 12,
@@ -10458,14 +10458,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 15,
@@ -10643,14 +10643,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 15,
@@ -10825,14 +10825,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 12,
@@ -10997,14 +10997,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 13,
@@ -11169,14 +11169,14 @@
        "sqref": "A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17",
        "type": "list",
        "operator": null,
-       "formula1": "\"✓,—,N/A\"",
+       "formula1": "\"✓,☐,N/A\"",
        "formula2": null,
        "allow_blank": true,
        "showErrorMessage": true,
        "showInputMessage": false,
        "errorStyle": null,
        "errorTitle": "Marca no válida",
-       "error": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+       "error": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
        "promptTitle": null,
        "prompt": null,
        "n_celdas": 13,

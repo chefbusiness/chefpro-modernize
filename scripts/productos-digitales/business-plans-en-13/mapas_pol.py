@@ -206,8 +206,8 @@ def _alias(es):
 # sha256 del diccionario del Taco EN (cerrado y LIVE, bf18ff72; medidos el 29-oct sobre 8c34fa09) y de la Pizza EN
 # (= mapas_taq.SHA_PIZ). Si cambian, hay que re-extraer y rehacer preparar_tandas (bp13.py verificar avisa)
 SHA_TAQ = OrderedDict([
-    ('textos_es.json', 'e0a469d45ad3668226661c97d5eea89000400e9eb42e40d0c02c20931a92d584'),
-    ('textos_en/GM.json', '27b19193d152ce69e47707b01b0748642f7f76c4725ca03bed8852c55bbc5678'),
+    ('textos_es.json', '6ea5f29803fe74e6013738f7896931c473b4bb143cca529dd3c850d49725874c'),
+    ('textos_en/GM.json', '17bceb7b136363c3869b5e713fac64e6972bd87114bd45db58a993c08d23a877'),
     ('textos_en/GM.revision.json', 'bfc5dfa013ee8661d33e1181fcafdea1c291c8f2d23068dc1c1c967f72905d6e'),
     ('textos_en/GR.json', 'ead32eecbe8cd17532ce8e8a560d9ffc22aa91bd16a921e931792441fc0b5b27'),
     ('textos_en/GR.revision.json', 'b632ba77785bcebb14d96c666f4b91b8d3f2d12837ef1220cb30aec18f855682'),
@@ -216,26 +216,26 @@ SHA_TAQ = OrderedDict([
     ('textos_en/GTAQ-plan.json', 'e2fdac65fca460a019411ea99c7c01c92bd4ec8af9cf8f3d8ed1c9eecab2a014'),
     ('textos_en/GTAQ-check.json', '33ab5e40c525f126e37f3ae67b51defa00631e3048ce51e945f61d313e4effd6'),
     ('formulas_taq.json', '32ebc9b30708271f45ec8c6534da31cef637b108f7e3228ecd52e4559fd05c10'),
-    ('censo_es.json', '633aaaa18ef07b790e1b5791c919fc9269fa29044608661147abd2f37f69a8b9'),
+    ('censo_es.json', '0626cb6d3731262445961ff212bbbbad6c6492558c21a6339f4e85dd036aff68'),
     ('datos_taq.py', '0f0342a6eaf357eb8b97aba07c74a9f80548034b86bb48a30a6d7bdf877185ab'),
 ])
 SHA_PIZ = OrderedDict([
-    ('textos_es.json', 'c477dc83a61609ec7de3ebe3d23937b27267c7e48000d389271e382ad630319b'),
-    ('textos_en/GM.json', '93b2451ebd54ce5584ca4714679b6faa529695c7bfa2fbd843d3508b6482e5de'),
-    ('textos_en/GR.json', '5392e3689a7a511fab85a2401afc74f6bf9a9fc4ff522f45348ca250f9ccf0b8'),
+    ('textos_es.json', '7f504ed3ffc1ec12e95b36888dbf4e92711b7d1cc4319cb6128251deea817986'),
+    ('textos_en/GM.json', '0f6cd4198a3c533331cca1111dde7a5de26c87b173e0d2712abafac72e6c08ed'),
+    ('textos_en/GR.json', 'ef088edc5b1709acd9ad28ab3f5d7023a6421f505fc0d0dfedb63a7f099e8151'),
     ('textos_en/GM.revision.json', 'b6d5e7768ba1fa4240dd3c055355db4fc17559b3eec0249f57978cbf574d7876'),
     ('textos_en/GR.revision.json', 'fc7cfb4e679c7f30c5571381cc72b9d4bec3094283172fdb5c30e508147941d0'),
     ('textos_en/GPIZ-plan.json', 'a52044a121fd9e28c7931534c3ee54adabe856a186c543c5f13e6aa08a7dc3b6'),
     ('textos_en/GPIZ-check.json', 'c3d62514b899edb9d0aa9a1c32fcaa3517a22229fe4121bd72d2b978d43556da'),
     ('formulas_piz.json', '286b3675b30e2eed71982781e209f4aa063fe4c8be2e7c616ebbd54877caebb2'),
-    ('censo_es.json', '2c8a1f63f2b5de0db1d46794327831bc16405744f5fe6e8b0ddc68286708b933'),
+    ('censo_es.json', '442b610642a4a11ea781c1790d02a74bf5c41b4e9da5fa790b8ab2c3fe1bf53b'),
     ('datos_piz.py', '44c178d7bb9ae94eb696f26d8f964ba98f510e275e4104ce5baece71e1d2158e'),
 ])
 # sha256 del ES FINAL (F2 ES revisada, 8c34fa09 = plan-polleria/REVISION-FINAL.md): si el ES cambia, manda el ES nuevo
 # (re-extraer y avisar)
 SHA_ES = OrderedDict([
-    ('plan-financiero-polleria.xlsx', 'c8d54739c2e3b51b236bddba13c8b5a8b31ac3fb785640e06ab58ba9e0510376'),
-    ('checklist-apertura-polleria.xlsx', 'c2db78d38b272ec25a8c598feabc36070f5cff8e9e38817276c2828f56327a42'),
+    ('plan-financiero-polleria.xlsx', '5080ac3bb261dc8883cb8ed23045b9cb1d603098f637eb195f9f4f1557efdcaf'),
+    ('checklist-apertura-polleria.xlsx', '0fdb65f57d7a2dc07aa297a49829c0a9210be671b36e2af89b8b1b591a11c724'),
     ('plan-de-negocio-polleria.docx', 'cd12837f309dbeea59b92f6de2dfe9e04286c650f244ff5a82822eb0b4447fa4'),
 ])
 
