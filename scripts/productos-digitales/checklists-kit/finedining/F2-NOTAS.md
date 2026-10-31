@@ -51,3 +51,22 @@ Nota de git: el worktree compartido tenía cambios sin commit de la F3 de los ki
   FAQ; enlaces naturales: Restaurant Checklists Kit Pro, HACCP Food Safety Kit Pro, Food Cost / Recipe Costing.
 
 Erratas del ES: `SPEC.md` §5 (orden del 10 «Cierre del Negocio»; «14 UE» como alérgenos «comunes»).
+
+## Ronda de revisión final de contenido (31-oct · sesión Claude Code; 0 bloqueantes, 2 major de seguridad alimentaria)
+
+Aplicado (`f5a8bb7d` textos, mapas y FAQ de la landing; `de11cf0a` remontaje y republicación):
+- **MAJOR 1** 02 «Long-Lead Prep» B24 (sous vide de pescado y marisco) y B25 (confitados): si van en bolsa y se enfrían o
+  se guardan (reduced oxygen packaging), HACCP plan o variance del departamento de salud (FDA Food Code 3-502.11 /
+  3-502.12) y enfriado según 3-501.14 (ADAPTAR declarado).
+- **MAJOR 2** 04 «Hot Line» B8: lo cocinado y enfriado se recalienta a 165 °F en 2 h como máximo para mantenerlo en
+  caliente (3-403.11) y se mantiene a 135 °F o más (3-501.16); el control de mantenimiento en caliente va en una tarea que ya
+  existía de la línea caliente (B7 «Main cooking: proteins, hot sides» + lectura en °F), sin filas nuevas.
+- Menores: B23 cita las tablas de tiempo y temperatura de 3-401.11; maridaje en **fl oz** (06 «Instructions» B13 «≈2–2.5 fl
+  oz (60–80 ml)» y las 8 filas «…, temp., oz»; los gramos de hidrocoloides se quedan); B02 de mayo a julio con producto US
+  (morels, ramps, soft-shell crab; chilled soups; heirloom tomatoes, corn, stone fruit) en vez de níspero, atún rojo,
+  gazpachos y pescado azul; 07 «Pop-Up Events» B6 con temporary food event permit, aprobación sanitaria, lavamanos y
+  mantenimiento en frío y en caliente en el sitio. Sin cambios: «chef de partie» ya va en minúscula en el texto y en Title
+  Case en títulos; no hay fila de ostras crudas que ampliar (opcional, no aplicado).
+- FAQ de la landing (`fine-dining-checklist-templates.ts`): «about 2–2.5 fl oz (60–80 ml) per course».
+
+Resultado: **VERDE 8/0**, autotest 19/19, idempotencia 0, censo-entregables / no-latinos / LIT255 en 0.
