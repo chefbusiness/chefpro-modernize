@@ -4,8 +4,8 @@
  "ficheros": {
   "burger-restaurant-financial-projections.xlsx": {
    "titulo": "Burger Restaurant Financial Projections: 3-Year P&L, Cash Flow & Financing",
-   "sha256": "2dffd45bc21cd59ec5df85e14ae2de8f0787026ab4a629a3175ad32f0cb2c7c0",
-   "bytes": 70593,
+   "sha256": "bc522e291386d04cc6acb231674b28848483f7794c9a5c3daa6375d8b52eae30",
+   "bytes": 70597,
    "hojas": [
     "0. Assumptions",
     "Startup Costs",
@@ -22,8 +22,8 @@
   },
   "burger-restaurant-startup-checklist.xlsx": {
    "titulo": "Burger Restaurant Startup Checklist (80 Tasks)",
-   "sha256": "12f8ba732d26b38925e9d8ca9cd999114bc9ad7bf6377585eca636a6b594ebce",
-   "bytes": 29010,
+   "sha256": "838eaad7ba4d2112c0c3ef336d4c404d1ba7dec9015dfcbe3e804b62962b85da",
+   "bytes": 28996,
    "hojas": [
     "Phase 1 - Business Setup",
     "Phase 2 - Hood & Permits",
@@ -47,11 +47,11 @@
   },
   "burger-restaurant-business-plan.docx": {
    "titulo": "Burger Restaurant Business Plan (10 Sections)",
-   "sha256": "38d627cf482507cc4373113921c8d09093f78620d3510a41011560720f53357b",
-   "bytes": 54200,
+   "sha256": "214fe3f387dfd04bf417bb492ec5a40d6b7b76ee342bece8b669440bf1dd614d",
+   "bytes": 54190,
    "parrafos": 131,
    "con_texto": 110,
-   "palabras": 8225,
+   "palabras": 8237,
    "encabezados": [
     "1. Executive Summary",
     "2. Concept & Value Proposition",

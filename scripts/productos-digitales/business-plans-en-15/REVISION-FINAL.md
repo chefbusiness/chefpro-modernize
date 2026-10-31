@@ -40,3 +40,13 @@ español, cero vocabulario de sushi, taco, pollo o pizza (barrido y `RX_BUR_NO`)
 ## Gates finales (VPS, tras la ronda) y sha256 (Mac = VPS)
 Ver `F2-NOTAS.md` §5 y el informe de cierre de la sesión: `check_textos --todas` 0 errores · `aplicar_en --idempotencia` 0 dif. · D15
 VERDE · G1-G9 · `--autotest` · docx autotest · barrido · resumen · censo `--letter` · no latinos · LIT255.
+
+Resultado tras la ronda: `check_textos --todas` 0 errores · `mapas` 0 errores · `aplicar_en --idempotencia` 0 dif. · **D15 VERDE**
+($253,000; 7.6 / 9.3 / 10.3 %; DSCR 3.37×) · `ensamblar_docx` G8 VERDE · calculadora + autotest **1,271 GREEN** · `gates_en` **G1-G9 TODO
+VERDE** · `--autotest` 20/20 · docx 8/8 · barrido 4 ficheros / 1,746 piezas / 0 fallos · resumen 3,388 piezas 0/0/0 · `censo-entregables
+--fail --letter` 0 defectos · `gate-no-latinos` 0 · `parche_xml_xlsx.py --check` LIT255 VERDE.
+
+- `burger-restaurant-business-plan.docx` 214fe3f387dfd04bf417bb492ec5a40d6b7b76ee342bece8b669440bf1dd614d
+- `burger-restaurant-financial-projections.xlsx` bc522e291386d04cc6acb231674b28848483f7794c9a5c3daa6375d8b52eae30
+- `burger-restaurant-startup-checklist.xlsx` 838eaad7ba4d2112c0c3ef336d4c404d1ba7dec9015dfcbe3e804b62962b85da
+- `smash-burger-patty-costing-calculator.xlsx` ffa3b184c27f895e8958db10637865cbb1559f8c4d7de9f2b7c812f60024bb0c
