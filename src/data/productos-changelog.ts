@@ -1239,6 +1239,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'taco-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses (11 Excel files, 36 sheets) with 298 taco shop tasks already written, adapted to the US with notes for the UK.',
+          'US taqueria roles and areas (shift manager, taquero, griddle cook, tortilla maker, salsa prep cook, counter, delivery driver; kitchen, walk-in, salsa bar, tortilleria, counter, dining area, receiving, storage, office), duties for 6 roles, due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'The trompo for al pastor: the cone checked as received (0 °F or below frozen, 41 °F or below refrigerated) before it is stacked, the outer layer probed before each carving batch at 145 °F or above (or your county\'s figure if stricter), only the cooked layer carved, carved meat held at 135 °F or above, and the leftover cone and maximum broiler time set by your county.',
+          'Food safety under the FDA Food Code in °F: raw salsas, pico de gallo and guacamole at 41 °F or below (or time as a public health control with a written procedure), each salsa timed on and off the salsa bar, restocked in small batches and never topped off; masa from the nixtamal handled as TCS; guisados in the steam table at 135 °F or above, reheated to 165 °F for 15 seconds within 2 hours and cooled by the two-stage rule with 7-day date marking; chicken tinga cooked to 165 °F; raw fish for aguachiles with its parasite-destruction record and the consumer advisory.',
+          'Allergens at the salsa bar: the salsa macha (peanuts and/or sesame) separated with its own utensil, flour tortillas (wheat) kept apart from corn, the moles checked, the 9 major allergens (the UK\'s 14 noted), a written allergen notice for unpackaged food, and the blender and molcajete washed, rinsed and sanitized, checked with a test strip.',
+          'Nixtamal and tortillas: corn cooked with food-grade lime, the corn mill cleaned and sanitized before and after grinding, the tortilla machine calibrated, the yield from pounds of corn to pounds of masa to tortillas, and purchased tortillas checked at receiving.',
+          'Manager, weekly and monthly lists for a US taqueria: orders to your Mexican food distributor, taco costing, tips split by a written tip pool (managers and supervisors don\'t keep tips), time-clock records under the FLSA, mezcal, tequila and beer only with a state license (21+ with ID), gas checks by a licensed professional, hood ducts by a certified contractor (NFPA 96), ice-point thermometer calibration and licensed pest control.',
+          "An annual calendar with 27 dates and yearly tasks for a US taco shop, from Three Kings Day, Candelaria and Super Bowl Sunday, Lent Fridays and Cinco de Mayo to Mexican Independence Day, Day of the Dead, Our Lady of Guadalupe, the posadas, Thanksgiving and New Year's Eve, plus 5 rows for your own and a UK note. Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
   'ghost-kitchen-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',

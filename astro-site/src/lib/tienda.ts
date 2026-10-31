@@ -364,6 +364,16 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (31-oct-2026): Taco Shop Checklists Kit Pro, undécimo hermano vertical del Restaurant Checklists Kit Pro
+    // (SPEC checklists-kit/taco D1-D4). Gemelo del Kit de Tareas Recurrentes: Taquería Mexicana (/kit-tareas-taqueria).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-taqueria',
+    productos: {
+      es: { slug: 'kit-tareas-taqueria', vivo: true },
+      en: { slug: 'taco-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
     // Tienda EN (24-oct-2026): Chocolate Shop Checklists Kit Pro, octavo hermano vertical del Restaurant Checklists Kit
     // Pro (SPEC checklists-kit/chocolate D1-D4). Gemelo del Kit de Tareas Chocolatería. vivo: true en la rama, que se
     // fusiona cuando existe el Payment Link (mismo criterio que los siete hermanos anteriores).

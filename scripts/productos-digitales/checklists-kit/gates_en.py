@@ -62,6 +62,9 @@ import openpyxl                                          # noqa: E402
 import kit                                               # noqa: E402  (--kit base|bar: kit.py)
 from kit import mapas                                    # noqa: E402
 import aplicar_en as A                                   # noqa: E402
+if SCRIPTS not in sys.path:
+    sys.path.append(SCRIPTS)                             # al final: los kit.py / mapas.py de aquí mandan
+from parche_xml_xlsx import fundir_literales             # noqa: E402  (inject_cache trocea literales > 255, PR #186)
 
 X = A.extraer_textos
 logging.disable(logging.CRITICAL)
@@ -80,6 +83,7 @@ CAJA_SPEC = {'total_1_de_cada': 204.91, 'fondo': 200, 'contado': 1250, 'tarjetas
 # vertical con el 09 como libro propio (catering: cobros por evento): la tabla de billetes vive en mapas.HOJA_CAJA,
 # G5 calcula mapas.CASOS_G5 y G1 admite las fórmulas con hoja que el EN añade (mapas.FORMULAS_CON_HOJA_EXTRA)
 HOJA_CAJA = getattr(mapas, 'HOJA_CAJA', ('09', 'Cierre de Caja'))
+SIN_CAJA = HOJA_CAJA is None          # taquería (taco/SPEC.md D12): el ES no trae libro de caja → G5 no aplica
 CASOS_G5 = getattr(mapas, 'CASOS_G5', None)
 CON_HOJA_EXTRA = getattr(mapas, 'FORMULAS_CON_HOJA_EXTRA', {})
 SIN_MARCA = frozenset(getattr(mapas, 'LIBROS_SIN_MARCA', ()))   # libros cuyo ES no trae la línea de marca D19
@@ -101,6 +105,7 @@ LISTA_BLANCA_TILDE = {'entrée', 'entrées', 'sauté', 'sautéed', 'sautéing', 
 FRASES_OK = ('Cinco de Mayo', 'al dente', 'pico de gallo', 'chili con carne', 'à la carte', 'a la carte',
              'Mise en Place', 'mise en place', 'sous vide', 'Sous Vide', 'dulce de leche',   # heladería: el término US
              'rosca de Reyes', 'Rosca de Reyes', 'pan de muerto', 'Pan de muerto')   # pastelería: nombres US (D14)
+FRASES_OK += tuple(getattr(mapas, 'FRASES_OK_EXTRA', ()))   # vertical: platos US con palabra funcional ES (taquería: al pastor)
 FUNCIONALES_ES = {
     'de', 'del', 'las', 'el', 'los', 'y', 'que', 'con', 'para', 'por', 'una', 'unos', 'unas', 'es', 'al', 'se',
     'su', 'sus', 'como', 'pero', 'muy', 'cuando', 'donde', 'porque', 'este', 'esta', 'esto', 'estos', 'desde',
@@ -384,7 +389,7 @@ def gateG1(R, carpeta, datos):
                 except A.Aborta as e:
                     esperado_f, por_celda = '<<%s>>' % e, False
                 tot['formulas_por_celda'] += por_celda
-                if esperado_f != fn:
+                if esperado_f != fn and fundir_literales(esperado_f) != fundir_literales(fn):   # «"a"&"b"» = «"ab"»
                     R.fallo('%s!%s: fórmula EN %r ≠ esperada %r' % (lugar, k, fn[:80], esperado_f[:80]))
                 if X.refs_hoja(fn):
                     con_hoja += 1
@@ -951,6 +956,9 @@ def casos_g5(carpeta):
 
 def gateG5(R, carpeta, datos):
     R.gate('G5 caja')
+    if SIN_CAJA:
+        R.dato('libro_de_caja', 'ninguno (D12)')
+        return
     hc = mapas.HOJAS[HOJA_CAJA[1]]
     ws = cargar(fichero_en(carpeta, HOJA_CAJA[0]))[hc]
     total = 0
@@ -1199,9 +1207,9 @@ def _libro(corto):
 
 
 F01, F02, F03, F06 = (_libro(c) for c in ('01', '02', '03', '06'))
-F09 = _libro(HOJA_CAJA[0])                                 # catering: 09-cobros-… · hotel: 19-…
+F09 = _libro(HOJA_CAJA[0]) if not SIN_CAJA else None      # catering: 09-cobros-… · hotel: 19-… · taquería: sin caja
 H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][1]]      # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
-H_CC = mapas.HOJAS[HOJA_CAJA[1]]                           # base: «Cash Drawer Closing» · catering: «Event Settlement»
+H_CC = mapas.HOJAS[HOJA_CAJA[1]] if not SIN_CAJA else None   # base: «Cash Drawer Closing» · catering: «Event Settlement»
 _HH = getattr(mapas, 'HOJA_HORAS', None)                   # catering: las horas de celda están en el 08
 F_HORAS = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_HH[0] + '-'))] if _HH else F01
 H_HORAS = mapas.HOJAS[_HH[1]] if _HH else H_KO
@@ -1209,7 +1217,7 @@ CITA_MAL = getattr(mapas, 'CITA_AUTOTEST', '(FDA Food Code 3-501.19)')
 _HV = getattr(mapas, 'HOJA_VERDE', None)                   # catering: el 01 no protege sus verdes (el 08 sí)
 F_VERDE = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_HV[0] + '-'))] if _HV else F01
 H_VERDE = mapas.HOJAS[_HV[1]] if _HV else H_KO
-F_CAJA0 = mapas.DENOMINACIONES[0][0]                       # base: 27 · catering: 30
+F_CAJA0 = mapas.DENOMINACIONES[0][0] if not SIN_CAJA else None   # base: 27 · catering: 30
 # base: «Valentine's Day» · hotel: su 06 tiene una sola checklist (mapas.HOJA_AREA_AUTOTEST)
 H_AREA = mapas.HOJAS[getattr(mapas, 'HOJA_AREA_AUTOTEST', None) or mapas.HOJAS_ES_POR_LIBRO['06'][2]]
 H_DIARIO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['03'][1]]  # «Manager Daily»
@@ -1290,6 +1298,13 @@ def _cache_mal(wb):
     wb[H_CC][getattr(mapas, 'CELDA_CACHE_MAL', 'C50')].value = 100
 
 
+def _contador_mal(wb):
+    """Sin caja (taquería): una tarea marcada ✓ cambia la caché del contador frente al ES (0): G6 tiene que cazarla."""
+    ws = wb[H_KO]
+    f = next(r for r in range(5, ws.max_row + 1) if str(ws['A%d' % r].value or '').isdigit() and ws['B%d' % r].value)
+    ws['F%d' % f].value = '✓'
+
+
 def _grados_mal(wb):
     ws = wb[mapas.HOJAS['Instrucciones']]
     g = next(x for x in range(38, 0, -1) if x not in GRADOS_F_SPEC)   # base: 38 · bar (38 °F es la cerveza): 37
@@ -1320,8 +1335,8 @@ MUTACIONES = [
     ('G3', F01, _titulo_largo, 'ajuste'),
     ('G4', F01, _celda_glosario, 'mapa-glosario'),
     ('G4', F_HORAS, _hora_mal, 'hora_us'),
-    ('G5', F09, _caja_mal, 'caja'),
-    ('G6', F09, _cache_mal, 'número'),
+    *([('G5', F09, _caja_mal, 'caja'), ('G6', F09, _cache_mal, 'número')] if not SIN_CAJA else
+      [('G6', F01, _contador_mal, 'número')]),
     ('G7', F01, _grados_mal, '°F'),
     ('G7', F01, _cita_mal, 'cita normativa'),
 ]

@@ -707,11 +707,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-taqueria',
     url: '/kit-tareas-taqueria',
     price: '€14',
-    name: { es: 'Tareas: Taquería Mexicana', en: 'Tasks: Mexican Taquería' },
+    name: { es: 'Tareas: Taquería Mexicana', en: 'Taco Shop Checklists Kit Pro' },
     description: {
       es: 'Trompo al pastor, nixtamal y tortillería, barra de salsas y APPCC.',
-      en: 'Pastor spit, nixtamal and tortilla making, salsa bar and HACCP.',
+      en: 'Taco shop checklists for opening and closing, the trompo, griddle and comal, food safety with the salsa bar and allergens, nixtamal, masa, tortillas and guisados, the manager, duties by role and cleaning: 298 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `taco-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/taco-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-tapas-bar': {
     id: 'kit-tareas-tapas-bar',

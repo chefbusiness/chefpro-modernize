@@ -1804,6 +1804,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-31): twin of kit-tareas-taqueria, independent product.
+  'taco-shop-checklist-templates': {
+    id: 'taco-shop-checklist-templates',
+    name: 'Taco Shop Checklists Kit Pro',
+    priceLabel: '$19',
+    accessPath: '/en/digital-products/taco-shop-checklist-templates/access',
+    emailSubject: 'Your access to Taco Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Taco Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Taco Shop Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'apertura-cierre': '/dl/taco-shop-checklist-templates/01-taco-shop-opening-closing-checklists.xlsx',
+      'trompo-plancha-comal': '/dl/taco-shop-checklist-templates/02-trompo-griddle-comal-checklists.xlsx',
+      'appcc-salsas-alergenos': '/dl/taco-shop-checklist-templates/03-taco-shop-food-safety-salsa-bar-allergens.xlsx',
+      'nixtamal-tortilla-guisados': '/dl/taco-shop-checklist-templates/04-nixtamal-masa-tortilla-guisados-checklists.xlsx',
+      'manager': '/dl/taco-shop-checklist-templates/05-taqueria-manager-checklist.xlsx',
+      'perfiles': '/dl/taco-shop-checklist-templates/06-taco-shop-duties-by-role.xlsx',
+      'semanales-mensuales': '/dl/taco-shop-checklist-templates/07-taco-shop-weekly-monthly-cleaning-checklist.xlsx',
+      'eventos-estacionales': '/dl/taco-shop-checklist-templates/08-taco-shop-event-seasonal-checklists.xlsx',
+      'plantilla-personalizable': '/dl/taco-shop-checklist-templates/09-blank-taco-shop-checklist-template.xlsx',
+      'bonus-briefing': '/dl/taco-shop-checklist-templates/BONUS-01-taco-shop-pre-shift-meeting-template.xlsx',
+      'bonus-calendario': '/dl/taco-shop-checklist-templates/BONUS-02-taco-shop-annual-calendar.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-24): twin of kit-tareas-chocolateria, independent product.
   'chocolate-shop-checklist-templates': {
     id: 'chocolate-shop-checklist-templates',

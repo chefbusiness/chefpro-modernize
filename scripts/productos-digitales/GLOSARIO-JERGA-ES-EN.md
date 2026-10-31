@@ -221,6 +221,20 @@ vasos compostables → **compostable cups** (regla LOCAL, p. ej. Seattle) · fer
 event permit, organizer / vendor fee) · bollería → **pastries from a licensed bakery** (la cottage food no se revende) · tostador →
 **roaster** · café de especialidad → **specialty coffee** · coctelería (espresso martini) → fuera: **«partner with a licensed mobile bar»**.
 
+## Taquería (Taco Shop Business Plan Kit + Taco Shop Checklists Kit Pro, F1 28 y 31-oct-2026; fuentes en `business-plans-en-12/F1-research-us-delta.md` §9 y `checklists-kit/taco/SPEC.md`)
+
+Estado: research US §9 (DataForSEO y menús, 28-oct) + lo que fija `taco/mapas_taco.py`. taquería → **taco shop** (nombre) /
+**taqueria** (sin tilde, prosa) · nunca «Tex-Mex» ni «authentic» · trompo / asador vertical → **trompo** · **vertical broiler**
+(equipo) · cono → **cone** (stack) · montar → **stack** · cortar → **carve / slice** · al pastor → **al pastor** · taquero →
+**taquero** · plancha → **flat-top griddle** (NUNCA «plancha»; el puesto → **griddle cook**) · comal → **comal** · tortillería →
+**tortilleria** · tortillero/a → **tortilla maker** · tortilladora → **tortilla machine** · cajón térmico → **tortilla warmer** ·
+nixtamal / masa / harina nixtamalizada → **nixtamal / masa / masa harina** · molino → **corn mill** · salsero/a → **salsa prep cook** ·
+barra de salsas → **salsa bar** · salsa macha → **salsa macha** (peanuts and/or sesame) · baño maría → **steam table** · guisados →
+**guisados** · totopos → **tortilla chips** · capeados → **battered** · mostrador → **counter** · recepción (mercancía) →
+**receiving** · escandallo / rendimiento → **taco costing / yield** (tacos per pound) · importador → **Mexican food distributor** ·
+precinto → **tamper-evident seal** · Día de Reyes → **Three Kings Day** (rosca de Reyes) · Día de Muertos → **Day of the Dead** ·
+Grito → **the Grito / Mexican Independence Day** · Virgen de Guadalupe → **Our Lady of Guadalupe** · nuez de Castilla → **fresh walnuts**.
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en

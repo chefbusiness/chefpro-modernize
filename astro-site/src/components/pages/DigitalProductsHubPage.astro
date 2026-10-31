@@ -59,6 +59,28 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Taco Shop Checklists Kit Pro (31-oct-2026, undécimo hermano vertical del Restaurant Checklists Kit Pro): el más nuevo → 1;
+  // el Rotisserie Chicken Restaurant Business Plan Kit y el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba
+  // («Recurring Tasks: Mexican Taqueria», entre las guías y kits del ES): se sube y su copy pasa a describir la edición EN
+  // (decía «HACCP and allergens (EU allergen rules)», «the 14 mandatory allergens» y «Spanish campaigns»). Imagen: el hero de
+  // la landing EN (sin texto en español).
+  {
+    name: 'Taco Shop Checklists Kit Pro',
+    slug: '/kit-tareas-taqueria',
+    description: '9 templates + 3 bonuses (12 files) with 298 taco shop tasks already written in Excel: opening and closing, the trompo for al pastor, salsa bar and allergens, nixtamal and tortillas, guisados, manager, roles, cleaning and an annual calendar. Print it, delegate it, initial it.',
+    features: [
+      'Trompo: cone check, stacking, probe at 145 °F and yield',
+      'Salsa bar, temperature logs and the 9 major allergens',
+      'Nixtamal, masa, tortillas and guisados',
+      'Manager, 6 roles, weekly and monthly cleaning',
+      'Annual calendar: Mexican holidays and US busy days',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'taqueria', 'mexican', 'restaurant'],
+  },
   // Rotisserie Chicken Restaurant Business Plan Kit (29-oct-2026, decimotercera tanda de planes EN): el más nuevo → 1; el Taco Shop Business
   // Plan Kit y el resto de vivos bajan un puesto. SUSTITUYE a la tarjeta provisional «Business Plan: Rotisserie Chicken Restaurant» que metió
   // la F3 del ES (apuntaba al ES y describía el kit español: guía de equivalencias para Latinoamérica); una sola tarjeta por producto.
@@ -760,22 +782,6 @@ const products = [
     badge: '✨ New',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
     tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
-  },
-  {
-    name: 'Recurring Tasks: Mexican Taqueria',
-    slug: '/kit-tareas-taqueria',
-    description: '11 operational checklists for a Mexican taqueria: al pastor spit, nixtamal and tortilla making, salsa bar, HACCP and allergens (EU allergen rules), and an annual task calendar.',
-    features: [
-      'Vertical spit (trompo): marinating, assembly and temperature probe',
-      'Nixtamal and tortilla making: in-house milling and calibration',
-      'Salsa bar + the 14 mandatory allergens',
-      'Annual calendar: Mexican holidays and Spanish campaigns',
-    ],
-    iconName: 'UtensilsCrossed',
-    image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
-    tags: ['excel', 'templates', 'management', 'taqueria', 'mexican', 'restaurant'],
   },
   {
     name: 'How to Open a Chocolate Boutique & Atelier',
