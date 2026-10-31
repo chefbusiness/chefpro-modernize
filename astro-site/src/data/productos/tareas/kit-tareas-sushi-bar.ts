@@ -38,7 +38,7 @@ const data: KitTareasData = {
       {
         author: 'María López',
         rating: '5',
-        body: 'El protocolo de anisakis con registro de congelación a -20 ºC durante 7 días nos ha salvado en dos inspecciones de Sanidad. Imprescindible.',
+        body: 'El protocolo de anisakis con registro de congelación a -20 ºC durante al menos 24 horas nos ha salvado en dos inspecciones de Sanidad. Imprescindible.',
       },
       {
         author: 'Carlos Méndez',
@@ -321,7 +321,7 @@ const data: KitTareasData = {
       {
         name: 'María López',
         role: 'Propietaria Restaurante Japonés, Valencia',
-        text: 'El protocolo de anisakis con registro de congelación a -20 ºC durante 7 días nos ha salvado en dos inspecciones de Sanidad. Lo tenemos todo documentado por lote y por proveedor. Imprescindible.',
+        text: 'El protocolo de anisakis con registro de congelación a -20 ºC durante al menos 24 horas nos ha salvado en dos inspecciones de Sanidad. Lo tenemos todo documentado por lote y por proveedor. Imprescindible.',
         avatar: '/avatars/avatar-2.jpg',
       },
       {

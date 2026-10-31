@@ -87,7 +87,7 @@ export default function PlanNegocioSushiBarDashboard() {
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">5 Documentos + Bonus · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">4 Documentos + Bonus · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;

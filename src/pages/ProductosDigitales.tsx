@@ -1001,7 +1001,7 @@ const products = [
     discount: '-80%',
     description: '11 checklists operativos para sushi bar con protocolo anisakis APPCC obligatorio (RD 1021/2022, art. 8.1), control de pH del arroz, vitrina neta case, perfiles itamae y omakase.',
     features: [
-      'Anisakis APPCC: -20 ºC / 7 días por lote',
+      'Anisakis APPCC: -20 ºC ≥ 24 h o -35 ºC ≥ 15 h por lote',
       'Arroz sushi con control de pH (≤4.6)',
       'Vitrina neta case (2-4 ºC) + rotación FIFO',
       'Perfiles itamae, ayudante, sala, delivery',
