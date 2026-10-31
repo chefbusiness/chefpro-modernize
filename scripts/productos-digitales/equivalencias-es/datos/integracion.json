@@ -226,5 +226,9 @@
  "plan-negocio-polleria": {
   "producto": "Plan de Negocio Pollería y Asador de Pollos",
   "ejemplos": "el local de pollo asado es «rosticería» en México, «rotisería» en Argentina y «asadero» en Colombia; las «patatas» que acompañan al pollo son «papas»; el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina, y el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú"
+ },
+ "plan-negocio-sushi-bar": {
+  "producto": "Plan de Negocio Sushi Bar",
+  "ejemplos": "el «aguacate» del uramaki es «palta» en Argentina y Chile; el «langostino» de la tempura es «camarón» en México y Colombia; el «camarero» es «mesero» en México y Colombia y «mozo» en Argentina, y el pedido «a domicilio» se dice «delivery» en Argentina, Chile y Perú"
  }
 }

@@ -177,7 +177,7 @@ FASES = [
          'demuestras a sanidad (RD 1086/2020, art. 30.5), con el pH de cada tanda y un tiempo máximo. Si no, '
          'refrigerado. Ninguna norma española fija un pH ni un tiempo para el arroz de sushi'),
         ('pH del shari en cada tanda con un pH-metro calibrado', 'Sushiman', 'Desde la primera tanda',
-         'Mide y anota el pH de cada tanda en la hoja 03 del Kit de Tareas Sushi Bar: su APPCC fija como límite crítico '
+         'Mide y anota el pH de cada tanda en la plantilla 02 del Kit de Tareas Sushi Bar: su APPCC fija como límite crítico '
          'un pH de 4,6 o menos (criterio del Codex, no cifra legal); apunta a 4,2-4,3 para tener margen. Calibra el '
          'pH-metro con sus soluciones antes de empezar'),
         ('Cocina caliente: gyozas, tempura y miso a 63 °C, enfriado y recalentado', 'Cocinero/a de cocina caliente',

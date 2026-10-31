@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Sushi Bar',
+    slug: '/plan-negocio-sushi-bar',
+    price: '€35',
+    description: 'Plan de negocio completo para abrir un sushi bar o restaurante de sushi con barra, para llevar y a domicilio: plan financiero a 3 años en Excel de 9 hojas, plan en Word de 10 secciones, checklist de apertura de 80 tareas, calculadora del pescado, el arroz y el escandallo y la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel de 9 hojas con tesorería mes a mes',
+      'Checklist de apertura: 80 tareas en 6 fases',
+      'Calculadora del pescado, el arroz y el escandallo y Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: Fish,
+    image: '/lovable-uploads/ai-gallery/plan-sushi-bar-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'sushi-bar', 'japones', 'plan-negocio'],
+  },
+  {
     name: 'Plan de Negocio: Pollería y Asador de Pollos',
     slug: '/plan-negocio-polleria',
     price: '€35',
@@ -128,8 +145,8 @@ const products = [
     ],
     icon: PartyPopper,
     image: '/lovable-uploads/ai-gallery/plan-finca-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'plantillas', 'costes', 'catering', 'eventos', 'plan-negocio'],
   },
   {
@@ -984,7 +1001,7 @@ const products = [
     discount: '-80%',
     description: '11 checklists operativos para sushi bar con protocolo anisakis APPCC obligatorio (RD 1021/2022, art. 8.1), control de pH del arroz, vitrina neta case, perfiles itamae y omakase.',
     features: [
-      'Anisakis APPCC: -20 ºC / 7 días por lote',
+      'Anisakis APPCC: -20 ºC ≥ 24 h o -35 ºC ≥ 15 h por lote',
       'Arroz sushi con control de pH (≤4.6)',
       'Vitrina neta case (2-4 ºC) + rotación FIFO',
       'Perfiles itamae, ayudante, sala, delivery',

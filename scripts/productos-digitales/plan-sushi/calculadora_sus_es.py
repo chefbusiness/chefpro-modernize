@@ -514,7 +514,7 @@ def hoja_arroz(wb):
                  'estimación del kit, editable: pesa tus bolas de shari y cambia los gramos por los tuyos.', wrap=True)
     ws.merge_cells('A2:I2')
     ws.row_dimensions[2].height = 32
-    _f(ws, 'A3', 'AVISO FIJO. El pH de cada tanda se registra en el Kit de Tareas Sushi Bar (hoja 03). El shari a temperatura ambiente, sólo '
+    _f(ws, 'A3', 'AVISO FIJO. El pH de cada tanda se registra en el Kit de Tareas Sushi Bar (plantilla 02). El shari a temperatura ambiente, sólo '
                  'si tu APPCC lo justifica con el pH de cada tanda y un tiempo máximo y lo demuestras a sanidad (RD 1086/2020, art. 30.5); si no, refrigerado.', wrap=True, b=True, fill=GRIS)
     ws.merge_cells('A3:I3')
     ws.row_dimensions[3].height = 36
@@ -660,7 +660,7 @@ INSTRUCCIONES = [
      'nigiris que das por cada kilo de arroz crudo. Con eso sabes cuánto arroz tienes que comprar al día para tus comensales.', False),
     ('3. Seguridad del shari. A temperatura ambiente solo puede mantenerse si tu APPCC lo justifica y lo demuestras a sanidad (RD 1086/2020, art. 30.5); '
      'si no, se mantiene refrigerado. El pH de 4,6 o menos es el límite crítico del APPCC del Kit de Tareas Sushi Bar, no una cifra legal. '
-     'El pH de cada tanda se registra en el Kit de Tareas Sushi Bar (hoja 03).', False),
+     'El pH de cada tanda se registra en el Kit de Tareas Sushi Bar (plantilla 02).', False),
     ('HOJA «ESCANDALLO»', True),
     ('1. Escribe el IVA, el food cost objetivo, el margen de vigilancia, las cajas de para llevar y de plataforma, el recargo y la comisión de la '
      'plataforma.', False),

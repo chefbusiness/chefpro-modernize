@@ -688,6 +688,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones con las cinco corrientes del pollo asado, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora del pollo, el asador y el escandallo de 4 hojas y guía de equivalencias para Hispanoamérica:',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
+  'plan-negocio-sushi-bar': {
+    accessPath: '/plan-negocio-sushi-bar-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Sushi Bar',
+    emailTitle: 'Accede a tu Plan de Negocio: Sushi Bar',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora del pescado, el arroz y el escandallo de 4 hojas y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día de la barra, el arroz y el pescado, el <a href="https://aichef.pro/kit-tareas-sushi-bar?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Recurrentes: Sushi Bar</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
   'plan-negocio-food-truck': {
     accessPath: '/plan-negocio-food-truck-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Food Truck',
