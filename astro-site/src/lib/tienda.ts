@@ -233,11 +233,12 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
-    // Hamburguesería Smash (31-oct-2026): ES vivo; Burger Restaurant Business Plan Kit (EN) reservado (vivo: false) hasta que nazca la edición inglesa.
+    // Tienda EN (31-oct-2026): Burger Restaurant Business Plan Kit (SPEC business-plans-en-15 / plan-hamburgueseria F1-camino §6-§7). vivo: true en la
+    // rama, que se fusiona cuando existe el Payment Link (mismo criterio que el resto de planes EN de la tienda).
     familia: 'plan-negocio-hamburgueseria',
     productos: {
       es: { slug: 'plan-negocio-hamburgueseria', vivo: true },
-      en: { slug: 'burger-restaurant-business-plan', vivo: false },
+      en: { slug: 'burger-restaurant-business-plan', vivo: true },
     },
   },
   {

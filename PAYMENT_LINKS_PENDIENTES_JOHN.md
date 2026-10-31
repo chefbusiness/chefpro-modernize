@@ -17,6 +17,21 @@ Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link co
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_HAMBURGUESERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-hamburgueseria-hero.jpg` |
 
+## ⏳ PENDIENTE (31-oct-2026): Burger Restaurant Business Plan Kit (EN) — rama `feat/burger-restaurant-business-plan-en` (apilada, se fusiona DESPUÉS del Plan Hamburguesería ES)
+
+Tienda EN, $39. La landing (`/en/digital-products/burger-restaurant-business-plan`) deja el botón en `#comprar` hasta que exista el link.
+Cuando lo crees, Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Burger Restaurant Business Plan Kit - AI Chef Pro |
+| Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* (como Taco Shop, Rotisserie y Sushi Restaurant) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/burger-restaurant-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 234 caracteres) | Business plan kit to open a smash burger restaurant with take-out and delivery: 10-section Word plan, 3-year Excel financial projections with SBA loan, 80-task startup checklist, and a smash burger patty, fries and costing calculator. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_BURGER_RESTAURANT_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-hamburgueseria-hero.jpg` |
+
 ## ✅ HECHO (31-oct-2026): Lote de 4 checklists EN — PR #189
 
 Links de John comprobados con la CLI (`--live`): pago único, *exclusive*, impuesto automático, factura y redirección a

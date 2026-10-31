@@ -329,6 +329,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
     { href: '/en/digital-products/rotisserie-chicken-restaurant-business-plan', label: 'Rotisserie Chicken Restaurant Business Plan Kit' },
     { href: '/en/digital-products/sushi-restaurant-business-plan', label: 'Sushi Restaurant Business Plan Kit' },
+    { href: '/en/digital-products/burger-restaurant-business-plan', label: 'Burger Restaurant Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.2 · October 2026',

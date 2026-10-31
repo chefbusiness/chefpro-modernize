@@ -492,6 +492,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-31): gemelo de plan-negocio-hamburgueseria, producto independiente con su propio acceso
+  // (mismo patrón que sushi-restaurant-business-plan).
+  'burger-restaurant-business-plan': {
+    accessPath: '/en/digital-products/burger-restaurant-business-plan/access',
+    emailSubject: 'Your access to Burger Restaurant Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Burger Restaurant Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the smash burger patty, fries and costing calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
   // (mismo patrón que mobile-bar-business-plan).
   'food-cost-menu-engineering-guide': {

@@ -946,6 +946,16 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-sushi': '/dl/sushi-restaurant-business-plan/sushi-fish-rice-costing-calculator.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-31): Burger Restaurant Business Plan Kit. Claves = las del ES plan-negocio-hamburgueseria salvo el bonus, que aquí es el
+  // común `equivalents-guide` como en toda la familia EN (= TEMPLATES de src/pages/BurgerRestaurantBusinessPlanDashboard.tsx) → los 4
+  // ficheros EN de /dl/burger-restaurant-business-plan/ (SPEC business-plans-en-15) y el bonus común de equivalencias EN.
+  'burger-restaurant-business-plan': {
+    'plan-negocio': '/dl/burger-restaurant-business-plan/burger-restaurant-business-plan.docx',
+    'plan-financiero': '/dl/burger-restaurant-business-plan/burger-restaurant-financial-projections.xlsx',
+    'checklist-apertura': '/dl/burger-restaurant-business-plan/burger-restaurant-startup-checklist.xlsx',
+    'calculadora-hamburguesa': '/dl/burger-restaurant-business-plan/smash-burger-patty-costing-calculator.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
   // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
   // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.

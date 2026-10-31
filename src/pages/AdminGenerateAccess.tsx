@@ -41,6 +41,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'taco-shop-business-plan', label: 'Taco Shop Business Plan Kit (EN, $39)' },
   { id: 'rotisserie-chicken-restaurant-business-plan', label: 'Rotisserie Chicken Restaurant Business Plan Kit (EN, $39)' },
   { id: 'sushi-restaurant-business-plan', label: 'Sushi Restaurant Business Plan Kit (EN, $39)' },
+  { id: 'burger-restaurant-business-plan', label: 'Burger Restaurant Business Plan Kit (EN, $39)' },
   { id: 'ice-cream-shop-business-plan', label: 'Ice Cream Shop Business Plan Kit (EN, $39)' },
   { id: 'wedding-venue-business-plan', label: 'Wedding Venue Business Plan Kit (EN, $49)' },
   { id: 'coffee-cart-business-plan', label: 'Coffee Cart Business Plan Kit (EN, $39)' },

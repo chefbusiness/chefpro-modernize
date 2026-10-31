@@ -10,6 +10,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'bar-checklist-templates': { usd: 19 },
   'bbq-catering-business-plan': { usd: 39 },
   'burger-joint-checklist-templates': { usd: 19 },
+  'burger-restaurant-business-plan': { usd: 39 },
   'catering-business-plan': { usd: 39 },
   'catering-checklist-templates': { usd: 19 },
   'chocolate-shop-checklist-templates': { usd: 19 },
