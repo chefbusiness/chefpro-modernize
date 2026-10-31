@@ -154,7 +154,7 @@ SUPUESTOS = {
         'Ventas por PLATAFORMA con su reparto (Glovo, Just Eat, Uber Eats) sobre el total: unos 12 pedidos al día. Lo '
         'que se recoge en el local (unos 13 pedidos al día, por la web o por teléfono) NO paga comisión y no va aquí: '
         'empújalo. La hamburguesa viaja bien; las patatas, peor (cucurucho ventilado y fritas al final). Si la '
-        'plataforma llegara a un tercio de las ventas, pagarías unos 12.000 € más de comisión al año',
+        'plataforma llegara a un tercio de las ventas, pagarías unos 12.300 € más de comisión al año',
         'R §3 [criterio del plan] · F1-camino §2 (0,24 < 0,25 de la demo §2.11.9)'),
     'comision_delivery': (
         None, None, 0.30, None,
