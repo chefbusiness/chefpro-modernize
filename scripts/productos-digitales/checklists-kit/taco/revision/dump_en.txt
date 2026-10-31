@@ -1,0 +1,2560 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/taco-shop-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-taco-shop-opening-closing-checklists.xlsx
+# docProps: title='Taco Shop Opening & Closing Checklists: Trompo, Salsa Bar, Tortillas & Counter' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$42 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 01 · Taco Shop Opening & Closing Checklists: Trompo, Salsa Bar, Tortillas & Counter
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Where this file fits
+B35    : ▸ You are in 01-taco-shop-opening-closing-checklists.xlsx: this IS the area-by-area DETAIL of the day (taqueria) — how each zone opens and closes. This kit has no separate business or cash file: the frame of the day is this one.
+B37    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B39    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B40    : Contact: info@aichef.pro
+B42    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Taco Shop Opening» · protegida=True · área='Taco Shop Opening'!$A$1:$G$48 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Checklist — Taco Shop
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   TEMPERATURES AND EQUIPMENT
+A6     : 1
+B6     : Log the marinated meat walk-in cooler temperature (41 °F or below) — log reading: ____ °F
+C6     : Walk-in
+D6     : Shift manager
+E6     : 10:30 AM
+A7     : 2
+B7     : Log the walk-in freezer temperature (0 °F or below) — log reading: ____ °F
+C7     : Walk-in
+D7     : Shift manager
+E7     : 10:32 AM
+A8     : 3
+B8     : Log the salsa and produce walk-in cooler temperature (41 °F or below) — log reading: ____ °F
+C8     : Salsa bar
+D8     : Shift manager
+E8     : 10:34 AM
+A9     : 4
+B9     : Check the salsa bar display holds 41 °F or below before opening
+C9     : Salsa bar
+D9     : Counter
+E9     : 10:40 AM
+A10    : 5
+B10    : Calibrate the shift's thermometer probe and note the measured variance
+C10    : Kitchen
+D10    : Shift manager
+E10    : 10:42 AM
+A11    : 6
+B11    : Check the hood and exhaust system are working
+C11    : Kitchen
+D11    : Griddle cook
+E11    : 10:45 AM
+A12    :   TROMPO, GRIDDLE AND COMAL
+A13    : 7
+B13    : Check the cone as received: frozen at 0 °F or below, or refrigerated at 41 °F or below
+C13    : Kitchen
+D13    : Taquero
+E13    : 9:30 AM
+A14    : 8
+B14    : Stack the day's trompo: layer order, fat, pineapple and onion; note weight and time
+C14    : Kitchen
+D14    : Taquero
+E14    : 9:45 AM
+A15    : 9
+B15    : Light the trompo (vertical broiler) and check for an even flame on every burner. Gas smell: light nothing, flip no switches, get out and call the gas company or 911 from outside
+C15    : Kitchen
+D15    : Taquero
+E15    : 9:50 AM
+A16    : 10
+B16    : Calibrate the flat-top griddle and comal by zone (high and medium) and note the working temperature
+C16    : Kitchen
+D16    : Griddle cook
+E16    : 11:10 AM
+A17    : 11
+B17    : Check the fryer oil level and condition before service
+C17    : Kitchen
+D17    : Griddle cook
+E17    : 11:12 AM
+A18    : 12
+B18    : Sharpen the trompo carving knife and leave it ready in its sheath
+C18    : Kitchen
+D18    : Taquero
+E18    : 11:15 AM
+A19    :   SALSAS AND GARNISHES
+A20    : 13
+B20    : Move the raw salsas to the cold salsa bar and check 41 °F or below before opening
+C20    : Salsa bar
+D20    : Counter
+E20    : 11:20 AM
+A21    : 14
+B21    : Verify the allergen sign is visible and flags the salsa macha (peanuts and/or sesame)
+C21    : Salsa bar
+D21    : Counter
+E21    : 11:22 AM
+A22    : 15
+B22    : Restock onion, cilantro and limes in clean containers, never on top of the previous batch
+C22    : Salsa bar
+D22    : Counter
+E22    : 11:25 AM
+A23    : 16
+B23    : Prepare the day's salsa macha (peanuts and/or sesame) and label it with date and time
+C23    : Kitchen
+D23    : Griddle cook
+E23    : 11:28 AM
+A24    : 17
+B24    : Check every salsa has its own utensil and none is shared with the macha
+C24    : Salsa bar
+D24    : Counter
+E24    : 11:30 AM
+A25    : 18
+B25    : Make the pickled red onion and jalapeños and label with the date
+C25    : Kitchen
+D25    : Griddle cook
+E25    : 11:32 AM
+A26    :   TORTILLAS AND GUISADOS
+A27    : 19
+B27    : Set the guisados (stews in hotel pans) in the steam table and check 135 °F or above
+C27    : Kitchen
+D27    : Griddle cook
+E27    : 11:35 AM
+A28    : 20
+B28    : Heat the comal and calibrate the thickness of the first batch of corn tortillas
+C28    : Tortilleria
+D28    : Tortilla maker
+E28    : 11:38 AM
+A29    : 21
+B29    : Check the flour tortilla and corn tortilla supply separately
+C29    : Tortilleria
+D29    : Tortilla maker
+E29    : 11:40 AM
+A30    : 22
+B30    : Note the time each guisado (stew in a hotel pan) went into the steam table
+C30    : Kitchen
+D30    : Griddle cook
+E30    : 11:42 AM
+A31    : 23
+B31    : Check the stock of limes, salt and bottled salsas at the salsa bar
+C31    : Salsa bar
+D31    : Counter
+E31    : 11:45 AM
+A32    :   DINING AREA, COUNTER AND DELIVERY
+A33    : 24
+B33    : Open the POS and check the starting bank
+C33    : Counter
+D33    : Counter
+E33    : 11:48 AM
+A34    : 25
+B34    : Check the tables, salsa bar and outside: cleanliness, chairs and signage
+C34    : Dining area
+D34    : All staff
+E34    : 11:50 AM
+A35    : 26
+B35    : Check the delivery apps (DoorDash, Uber Eats, Grubhub) are on and the menu is current
+C35    : Counter
+D35    : Counter
+E35    : 11:52 AM
+A36    : 27
+B36    : Review the shift's catering and large-order forecast
+C36    : Dining area
+D36    : Shift manager
+E36    : 11:55 AM
+A37    : 28
+B37    : Hold the pre-shift meeting with the team: today's trompo, guisados and salsas
+C37    : Kitchen
+D37    : Shift manager
+E37    : 11:58 AM
+A44    : Tasks done:
+D44    = =COUNTIFS(B5:B42,"?*",F5:F42,"✓")   → caché 0.0
+E44    : of
+F44    = =COUNTIF(B5:B42,"?*")-COUNTIF(F5:F42,"N/A")   → caché 28.0
+A46    : Verified by:
+E46    : Signature:
+A48    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F25 F27 F28 F29 F30 F31 F33 F34 F35 F36 F37 F38 F39 F40 F41 F42 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G42 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Taco Shop Closing» · protegida=True · área='Taco Shop Closing'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Closing Checklist — Taco Shop
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   TROMPO AND GRIDDLE
+A6     : 1
+B6     : Turn off the trompo (vertical broiler) at close
+C6     : Kitchen
+D6     : Taquero
+E6     : 11:00 PM
+A7     : 2
+B7     : Pull the leftover meat off the trompo and log where it went: cooled or tossed. Reuse only if your health department allows it (the county sets the leftover-cone rule). If kept: cool from 135 °F to 70 °F within 2 h and to 41 °F within 4 more hours, covered and date-marked, 7 days max at 41 °F (day 1 = prep day); reheat to 165 °F within 2 h before it goes back to hot holding
+C7     : Kitchen
+D7     : Taquero
+E7     : 11:05 PM
+A8     : 3
+B8     : Empty, wash and sanitize the vertical broiler's drip tray
+C8     : Kitchen
+D8     : Taquero
+E8     : 11:10 PM
+A9     : 4
+B9     : Scrape and oil the flat-top griddle while hot; clean the comal before it cools
+C9     : Kitchen
+D9     : Griddle cook
+E9     : 11:15 PM
+A10    : 5
+B10    : Filter the fryer oil and note the date of the last change
+C10    : Kitchen
+D10    : Griddle cook
+E10    : 11:18 PM
+A11    : 6
+B11    : Store the trompo carving knife clean and in its sheath
+C11    : Kitchen
+D11    : Taquero
+E11    : 11:20 PM
+A12    :   SALSAS AND GUISADOS
+A13    : 7
+B13    : Toss the day's raw salsas and log the waste in quarts
+C13    : Salsa bar
+D13    : Counter
+E13    : 11:25 PM
+A14    : 8
+B14    : Toss the leftover salsa macha (peanuts and/or sesame) from the day
+C14    : Salsa bar
+D14    : Counter
+E14    : 11:28 PM
+A15    : 9
+B15    : Cool the guisado that qualifies (135 °F to 70 °F in 2 h, then to 41 °F in 4 h more) and label it with date and time
+C15    : Kitchen
+D15    : Griddle cook
+E15    : 11:30 PM
+A16    : 10
+B16    : Toss the guisado that does not qualify and note why
+C16    : Kitchen
+D16    : Griddle cook
+E16    : 11:33 PM
+A17    : 11
+B17    : Store leftover corn and flour tortillas in separate containers
+C17    : Tortilleria
+D17    : Tortilla maker
+E17    : 11:35 PM
+A18    :   CLEANING AND TRASH
+A19    : 12
+B19    : Clean, then sanitize the whole salsa bar (sanitizer at label concentration, checked with a test strip)
+C19    : Salsa bar
+D19    : Counter
+E19    : 11:40 PM
+A20    : 13
+B20    : Take out the trash and sort the waste per your city's rules
+C20    : Outside
+D20    : All staff
+E20    : 11:42 PM
+A21    : 14
+B21    : Wash, rinse and sanitize the shift's blender and molcajete (washing removes the allergen; sanitizer at label concentration, checked with a test strip)
+C21    : Kitchen
+D21    : Griddle cook
+E21    : 11:45 PM
+A22    : 15
+B22    : Sweep and mop the kitchen, salsa bar and dining area before closing
+C22    : Kitchen
+D22    : All staff
+E22    : 11:48 PM
+A23    : 16
+B23    : Check no knives or utensils are out of place
+C23    : Kitchen
+D23    : Shift manager
+E23    : 11:50 PM
+A24    : 17
+B24    : Check the walk-in cooler and freezer doors close tight
+C24    : Walk-in
+D24    : Shift manager
+E24    : 11:52 PM
+A25    :   REGISTER AND SHOP CLOSE
+A26    : 18
+B26    : Do the cash count and note any over/short
+C26    : Counter
+D26    : Shift manager
+E26    : 11:55 PM
+A27    : 19
+B27    : Split the shift's tips among the team per your written tip pool policy (managers and supervisors don't keep tips)
+C27    : Counter
+D27    : Shift manager
+E27    : 12:00 AM
+A28    : 20
+B28    : Turn off the delivery channel on every active app
+C28    : Counter
+D28    : Counter
+E28    : 12:03 AM
+A29    : 21
+B29    : Check the shift's temperature log is signed and filed
+C29    : Kitchen
+D29    : Shift manager
+E29    : 12:05 AM
+A30    : 22
+B30    : Turn off the lights, set the alarm and lock the front door
+C30    : Dining area
+D30    : Shift manager
+E30    : 12:10 AM
+A37    : Tasks done:
+D37    = =COUNTIFS(B5:B35,"?*",F5:F35,"✓")   → caché 0.0
+E37    : of
+F37    = =COUNTIF(B5:B35,"?*")-COUNTIF(F5:F35,"N/A")   → caché 22.0
+A39    : Verified by:
+E39    : Signature:
+A41    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F26 F27 F28 F29 F30 F31 F32 F33 F34 F35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 02-trompo-griddle-comal-checklists.xlsx
+# docProps: title='Trompo, Griddle & Comal Checklists: Al Pastor Marinade, Stacking & Carving' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$43 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 02 · Trompo, Griddle & Comal Checklists: Al Pastor Marinade, Stacking & Carving
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B36    : ▸ You are in 02-trompo-griddle-comal-checklists.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B40    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B41    : Contact: info@aichef.pro
+B43    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Marinade & Trompo Stacking» · protegida=True · área='Marinade & Trompo Stacking'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Marinade & Trompo Stacking
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   MARINADE (DAY BEFORE)
+A6     : 1
+B6     : Weigh meat and adobo by batch; note the batch number and marinade start time
+C6     : Kitchen
+D6     : Taquero
+E6     : 7:00 PM
+A7     : 2
+B7     : Hold the marinade at 41 °F or below for the time on your recipe card: ______ h
+C7     : Walk-in
+D7     : Taquero
+E7     : 7:05 PM
+A8     : 3
+B8     : Log the supplier and lot of the pork and adobo used
+C8     : Kitchen
+D8     : Shift manager
+E8     : 7:02 PM
+A9     : 4
+B9     : Check the marinade container is covered and labeled
+C9     : Walk-in
+D9     : Taquero
+E9     : 7:10 PM
+A10    : 5
+B10    : Stir the batch halfway through the marinade and note the time
+C10    : Walk-in
+D10    : Taquero
+E10    : 8:00 PM
+A11    : 6
+B11    : Log the temperature of the walk-in cooler where the marinade rests — log reading: ____ °F
+C11    : Walk-in
+D11    : Taquero
+E11    : 7:15 PM
+A12    :   STACKING THE TROMPO (IF APPLICABLE)
+A13    : 7
+B13    : Check the received cone: 0 °F or below if frozen, 41 °F or below if refrigerated
+C13    : Kitchen
+D13    : Taquero
+E13    : 9:30 AM
+A14    : 8
+B14    : Stack the trompo (vertical broiler): layers, fat, pineapple and onion; note total weight
+C14    : Kitchen
+D14    : Taquero
+E14    : 9:45 AM
+A15    : 9
+B15    : Note the stacking time and the time limit set in your HACCP plan: ______ (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task). On the trompo, also the maximum broiler time your county sets
+C15    : Kitchen
+D15    : Taquero
+E15    : 9:50 AM
+A16    : 10
+B16    : Check the trompo sits centered and balanced on the spit
+C16    : Kitchen
+D16    : Taquero
+E16    : 9:55 AM
+A17    : 11
+B17    : Wait until the outer layer is cooked before the first cut
+C17    : Kitchen
+D17    : Taquero
+E17    : 10:15 AM
+A18    : 12
+B18    : Log the outer layer temperature before the first cut: at least 145 °F, or your county's figure if stricter — log reading: ____ °F
+C18    : Kitchen
+D18    : Taquero
+E18    : 10:20 AM
+A19    :   YIELD
+A20    : 13
+B20    : Note the trompo's leftover weight at close and calculate the yield in tacos per pound
+C20    : Kitchen
+D20    : Shift manager
+E20    : 11:30 PM
+A21    : 14
+B21    : Note the day's fat and trim waste from the trompo
+C21    : Kitchen
+D21    : Taquero
+E21    : 11:20 PM
+A22    : 15
+B22    : Compare the day's yield with the week's average and note the variance
+C22    : Kitchen
+D22    : Shift manager
+E22    : 11:35 PM
+A23    : 16
+B23    : Log the number of cones stacked and used in the shift
+C23    : Kitchen
+D23    : Shift manager
+E23    : 11:40 PM
+A24    : 17
+B24    : Review the marinade yield: pounds of meat per batch vs. tacos served
+C24    : Kitchen
+D24    : Shift manager
+E24    : 11:45 PM
+A25    : 18
+B25    : Log any trompo issue from the day for the maintenance report
+C25    : Kitchen
+D25    : Shift manager
+E25    : 11:50 PM
+A32    : Tasks done:
+D32    = =COUNTIFS(B5:B30,"?*",F5:F30,"✓")   → caché 0.0
+E32    : of
+F32    = =COUNTIF(B5:B30,"?*")-COUNTIF(F5:F30,"N/A")   → caché 18.0
+A34    : Verified by:
+E34    : Signature:
+A36    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 F30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Carving + Griddle + Comal» · protegida=True · área='Carving + Griddle + Comal'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Carving + Griddle + Comal
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PROBE AND CARVING (IF APPLICABLE)
+A6     : 1
+B6     : Probe the outer layer before each carving batch: at least 145 °F, or your county's figure if stricter — log reading: ____ °F
+C6     : Kitchen
+D6     : Taquero
+E6     : 11:00 AM
+A7     : 2
+B7     : Log the probe reading at the start and middle of service, at minimum
+C7     : Kitchen
+D7     : Taquero
+E7     : 11:05 AM
+A8     : 3
+B8     : Carve only the cooked layer; don't slice into the still-raw interior
+C8     : Kitchen
+D8     : Taquero
+E8     : 11:10 AM
+A9     : 4
+B9     : Note the carving time limit set in your HACCP plan: ______ (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task). On the trompo, also the maximum broiler time your county sets
+C9     : Kitchen
+D9     : Taquero
+E9     : 11:15 AM
+A10    : 5
+B10    : Clean the trompo knife and board before touching ready-to-eat food
+C10    : Kitchen
+D10    : Taquero
+E10    : 11:20 AM
+A11    :   GRIDDLE
+A12    : 6
+B12    : Move carved meat that isn't served right away to hot holding at 135 °F or above; never leave it at room temperature
+C12    : Kitchen
+D12    : Griddle cook
+E12    : 11:25 AM
+A13    : 7
+B13    : Check the griddle's working temperature by zone and note it
+C13    : Kitchen
+D13    : Griddle cook
+E13    : 11:30 AM
+A14    : 8
+B14    : Brown the tacos and quesadillas on the griddle without mixing different meat batches
+C14    : Kitchen
+D14    : Griddle cook
+E14    : 11:35 AM
+A15    : 9
+B15    : Clean the griddle between batches so burnt grease doesn't build up
+C15    : Kitchen
+D15    : Griddle cook
+E15    : 11:40 AM
+A16    :   COMAL
+A17    : 10
+B17    : Log the shift's corn tortilla waste from the comal
+C17    : Tortilleria
+D17    : Tortilla maker
+E17    : 11:45 AM
+A18    : 11
+B18    : Heat the corn and flour tortillas on separate zones of the comal
+C18    : Tortilleria
+D18    : Tortilla maker
+E18    : 11:50 AM
+A19    : 12
+B19    : Check the comal holds an even temperature and note any cold spot
+C19    : Tortilleria
+D19    : Tortilla maker
+E19    : 11:55 AM
+A20    : 13
+B20    : Fold and store the heated corn tortillas in the tortilla warmer until service
+C20    : Tortilleria
+D20    : Tortilla maker
+E20    : 12:00 PM
+A21    : 14
+B21    : Scrape the masa residue off the comal between batches
+C21    : Tortilleria
+D21    : Tortilla maker
+E21    : 12:05 PM
+A22    :   CROSS-CONTACT
+A23    : 15
+B23    : Use separate boards and knives for raw meat and cooked trompo meat
+C23    : Kitchen
+D23    : Taquero
+E23    : 12:10 PM
+A24    : 16
+B24    : Keep tongs and trays for flour tortillas (wheat) apart from those for corn
+C24    : Tortilleria
+D24    : Tortilla maker
+E24    : 12:15 PM
+A25    : 17
+B25    : Wash your hands between handling the raw cone and the carved meat
+C25    : Kitchen
+D25    : Taquero
+E25    : 12:20 PM
+A26    : 18
+B26    : Check no salsa macha utensil (peanuts and/or sesame) touches another salsa
+C26    : Kitchen
+D26    : Griddle cook
+E26    : 12:25 PM
+A33    : Tasks done:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : of
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 18.0
+A35    : Verified by:
+E35    : Signature:
+A37    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 03-taco-shop-food-safety-salsa-bar-allergens.xlsx
+# docProps: title='Taco Shop Food Safety Checklists: Temperature Logs, Salsa Bar & Allergens' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$43 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 03 · Taco Shop Food Safety Checklists: Temperature Logs, Salsa Bar & Allergens
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B36    : ▸ You are in 03-taco-shop-food-safety-salsa-bar-allergens.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B40    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B41    : Contact: info@aichef.pro
+B43    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Temp Logs & Receiving» · protegida=True · área='Temp Logs & Receiving'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Temp Logs & Receiving
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   TEMPERATURES (TWICE PER SHIFT)
+A6     : 1
+B6     : Log the walk-in coolers (41 °F or below) twice per shift — log reading: ____ °F
+C6     : Walk-in
+D6     : Shift manager
+E6     : 11:00 AM
+A7     : 2
+B7     : Log the freezer (0 °F or below) twice per shift — log reading: ____ °F
+C7     : Walk-in
+D7     : Shift manager
+E7     : 11:02 AM
+A8     : 3
+B8     : Check the guisados (stews in hotel pans) are in the steam table before each reading
+C8     : Kitchen
+D8     : Griddle cook
+E8     : 11:03 AM
+A9     : 4
+B9     : Log the guisados steam table (135 °F or above) twice per shift — log reading: ____ °F
+C9     : Kitchen
+D9     : Griddle cook
+E9     : 11:04 AM
+A10    : 5
+B10    : Log the cold salsa bar (41 °F or below) twice per shift — log reading: ____ °F
+C10    : Salsa bar
+D10    : Counter
+E10    : 11:06 AM
+A11    : 6
+B11    : Calibrate the thermometer probe at the start of the shift and note the result
+C11    : Kitchen
+D11    : Shift manager
+E11    : 11:10 AM
+A12    :   RECEIVING AND TRACEABILITY
+A13    : 7
+B13    : Note the lot and supplier of the al pastor meat, the masa or tortillas and the dried chiles
+C13    : Receiving
+D13    : Shift manager
+E13    : 9:00 AM
+A14    : 8
+B14    : Log every delivery: temperature, package condition, use-by date and invoice number
+C14    : Receiving
+D14    : Shift manager
+E14    : 9:05 AM
+A15    : 9
+B15    : Check the trompo (vertical broiler) cone arrives at 0 °F or below if frozen or 41 °F or below if refrigerated
+C15    : Receiving
+D15    : Taquero
+E15    : 9:10 AM
+A16    : 10
+B16    : Reject and log any delivery out of range or with damaged packaging
+C16    : Receiving
+D16    : Shift manager
+E16    : 9:15 AM
+A17    : 11
+B17    : Label each item received with supplier, lot and use-by date
+C17    : Storage
+D17    : Shift manager
+E17    : 9:20 AM
+A18    : 12
+B18    : File the day's delivery invoices for the shift's traceability
+C18    : Storage
+D18    : Shift manager
+E18    : 9:25 AM
+A19    :   FREEZING RAW FISH (IF APPLICABLE) AND REHEATING
+A20    : 13
+B20    : Raw fish for aguachiles and tostadas — parasite destruction (FDA Food Code 3-402.11): confirm it was frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record 90 days (FDA Food Code 3-402.12) and the consumer advisory on the menu (FDA Food Code 3-603.11)
+C20    : Walk-in
+D20    : Shift manager
+E20    : 9:30 AM
+A21    : 14
+B21    : Label fish frozen for parasite destruction with the start and end dates of the process
+C21    : Walk-in
+D21    : Shift manager
+E21    : 9:35 AM
+A22    : 15
+B22    : Log the start and end time of the parasite-destruction freezing of the fish
+C22    : Walk-in
+D22    : Shift manager
+E22    : 9:40 AM
+A23    : 16
+B23    : Reheat the guisados to 165 °F for 15 s in the center, within 2 hours
+C23    : Kitchen
+D23    : Griddle cook
+E23    : 12:00 PM
+A24    : 17
+B24    : Check reheated food comes out of the cooler and reaches 165 °F within 2 hours
+C24    : Kitchen
+D24    : Griddle cook
+E24    : 12:05 PM
+A25    : 18
+B25    : Toss any reheated food that doesn't reach 165 °F for 15 s in the center
+C25    : Kitchen
+D25    : Griddle cook
+E25    : 12:10 PM
+A32    : Tasks done:
+D32    = =COUNTIFS(B5:B30,"?*",F5:F30,"✓")   → caché 0.0
+E32    : of
+F32    = =COUNTIF(B5:B30,"?*")-COUNTIF(F5:F30,"N/A")   → caché 18.0
+A34    : Verified by:
+E34    : Signature:
+A36    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 F30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Salsa Bar» · protegida=True · área='Salsa Bar'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Salsa Bar
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   SALSA BAR SETUP
+A6     : 1
+B6     : Measure the temperature of the pico de gallo, guacamole and raw salsas — log reading: ____ °F (41 °F or below)
+C6     : Salsa bar
+D6     : Counter
+E6     : 11:15 AM
+A7     : 2
+B7     : Note when each salsa goes on the salsa bar and when it gets tossed (if using TPHC: written procedure, toss at 4 h)
+C7     : Salsa bar
+D7     : Counter
+E7     : 11:18 AM
+A8     : 3
+B8     : Check every salsa has a label with its name and heat level
+C8     : Salsa bar
+D8     : Counter
+E8     : 11:20 AM
+A9     : 4
+B9     : Verify the allergen sign flags the salsa macha (peanuts and/or sesame) at the salsa bar
+C9     : Salsa bar
+D9     : Counter
+E9     : 11:22 AM
+A10    : 5
+B10    : Check each salsa has its own spoon or tongs before opening
+C10    : Salsa bar
+D10    : Counter
+E10    : 11:25 AM
+A11    :   RESTOCKING IN BATCHES
+A12    : 6
+B12    : Restock in small batches in a clean container; NEVER top off on top of the previous batch
+C12    : Salsa bar
+D12    : Counter
+E12    : 1:00 PM
+A13    : 7
+B13    : Swap each salsa's spoons and tongs every shift and log the change
+C13    : Salsa bar
+D13    : Counter
+E13    : 1:05 PM
+A14    : 8
+B14    : Eyeball the salsa bar every shift: leftovers, spills and customer mishandling
+C14    : Salsa bar
+D14    : Counter
+E14    : 1:10 PM
+A15    : 9
+B15    : Restock the salsa macha (peanuts and/or sesame) without mixing the new container with the used one
+C15    : Salsa bar
+D15    : Counter
+E15    : 1:15 PM
+A16    : 10
+B16    : Check the salsa bar temperature midway through service — log reading: ____ °F
+C16    : Salsa bar
+D16    : Counter
+E16    : 2:00 PM
+A17    :   DISCARD AND WASTE
+A18    : 11
+B18    : Toss the day's raw salsas at close and log the waste
+C18    : Salsa bar
+D18    : Counter
+E18    : 11:20 PM
+A19    : 12
+B19    : Toss the leftover salsa macha (peanuts and/or sesame) and note the amount
+C19    : Salsa bar
+D19    : Counter
+E19    : 11:22 PM
+A20    : 13
+B20    : Log any salsa tossed early because of a cold-chain break
+C20    : Salsa bar
+D20    : Shift manager
+E20    : 11:24 PM
+A21    : 14
+B21    : Clean, then sanitize the salsa bar containers at close (sanitizer at label concentration, checked with a test strip)
+C21    : Salsa bar
+D21    : Counter
+E21    : 11:26 PM
+A22    : 15
+B22    : Check no container goes into storage with salsa residue
+C22    : Salsa bar
+D22    : Counter
+E22    : 11:28 PM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Verified by:
+E31    : Signature:
+A33    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Allergens & Cross-Contact» · protegida=True · área='Allergens & Cross-Contact'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Allergens & Cross-Contact
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PEANUTS AND SESAME
+A6     : 1
+B6     : Mark the salsa macha (peanuts and/or sesame) on the sign and physically separate it from the rest
+C6     : Salsa bar
+D6     : Counter
+E6     : 11:00 AM
+A7     : 2
+B7     : Check the salsa macha (peanuts and/or sesame) shares no utensil with any other salsa
+C7     : Salsa bar
+D7     : Counter
+E7     : 11:05 AM
+A8     : 3
+B8     : Check the counter always warns about the salsa macha (peanuts and/or sesame) when serving
+C8     : Counter
+D8     : Counter
+E8     : 11:10 AM
+A9     : 4
+B9     : Wash, rinse and sanitize the blender and molcajete after making the salsa macha (peanuts and/or sesame); washing removes the allergen, sanitizer at label concentration, checked with a test strip
+C9     : Kitchen
+D9     : Griddle cook
+E9     : 11:15 AM
+A10    :   WHEAT: CORN VS. FLOUR
+A11    : 5
+B11    : Keep corn tortillas apart from wheat flour tortillas: separate fryer, tongs and surface
+C11    : Tortilleria
+D11    : Tortilla maker
+E11    : 11:20 AM
+A12    : 6
+B12    : Check the fryer basket for flour tortillas never touches the one for corn tortillas
+C12    : Kitchen
+D12    : Griddle cook
+E12    : 11:25 AM
+A13    : 7
+B13    : Review the allergen sheet for tortilla chips and crispy fried tacos before service
+C13    : Kitchen
+D13    : Griddle cook
+E13    : 11:30 AM
+A14    : 8
+B14    : Label the flour tortilla area so the team doesn't mix it up with corn
+C14    : Tortilleria
+D14    : Tortilla maker
+E14    : 11:35 AM
+A15    :   DAIRY AND TREE NUTS
+A16    : 9
+B16    : Review the allergen sheet for the moles (tree nuts, peanuts or sesame, per recipe) before service
+C16    : Kitchen
+D16    : Griddle cook
+E16    : 11:40 AM
+A17    : 10
+B17    : Check the dairy (crema, cheese) in each garnish against the allergen sheet
+C17    : Kitchen
+D17    : Griddle cook
+E17    : 11:45 AM
+A18    : 11
+B18    : Keep tree nuts (almonds, pecans, walnuts) apart from the rest of the salsa bar
+C18    : Salsa bar
+D18    : Counter
+E18    : 11:50 AM
+A19    :   ALLERGEN SHEETS AND CHANGES
+A20    : 12
+B20    : Check the counter team can give allergen info on all 9 major allergens: also shrimp and fish, and the egg, milk and soy in batters, crema and marinades (UK: 14)
+C20    : Counter
+D20    : Counter
+E20    : 11:55 AM
+A21    : 13
+B21    : Log every supplier or recipe change that alters an allergen sheet
+C21    : Kitchen
+D21    : Shift manager
+E21    : 12:00 PM
+A22    : 14
+B22    : Check allergen information is available to customers in writing: a written notice of the major allergens on unpackaged food (menu, sign or card)
+C22    : Counter
+D22    : Counter
+E22    : 12:05 PM
+A23    : 15
+B23    : Update the menu and the delivery apps after any allergen sheet change
+C23    : Counter
+D23    : Shift manager
+E23    : 12:10 PM
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 15.0
+A32    : Verified by:
+E32    : Signature:
+A34    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 04-nixtamal-masa-tortilla-guisados-checklists.xlsx
+# docProps: title='Nixtamal, Masa, Tortilla & Guisados Checklists' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$43 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 04 · Nixtamal, Masa, Tortilla & Guisados Checklists
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B36    : ▸ You are in 04-nixtamal-masa-tortilla-guisados-checklists.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B40    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B41    : Contact: info@aichef.pro
+B43    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Nixtamal & Masa Milling» · protegida=True · área='Nixtamal & Masa Milling'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Nixtamal & Masa Milling
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   COOKING AND RESTING (IF APPLICABLE)
+A6     : 1
+B6     : Weigh the corn and lime, and note the nixtamal cooking start time (corn cooked with food-grade lime)
+C6     : Tortilleria
+D6     : Tortilla maker
+E6     : 5:00 AM
+A7     : 2
+B7     : Log the supplier and lot of the corn and lime used
+C7     : Receiving
+D7     : Tortilla maker
+E7     : 5:30 AM
+A8     : 3
+B8     : Note any cooking issue: hard corn, too much lime or time out of range
+C8     : Tortilleria
+D8     : Tortilla maker
+E8     : 6:00 AM
+A9     : 4
+B9     : Log the resting time and the nixtamal rinse time
+C9     : Tortilleria
+D9     : Tortilla maker
+E9     : 6:30 AM
+A10    : 5
+B10    : Check the corn is well rinsed before it goes to the mill
+C10    : Tortilleria
+D10    : Tortilla maker
+E10    : 7:00 AM
+A11    :   GRINDING
+A12    : 6
+B12    : Clean, then sanitize the corn mill BEFORE grinding (sanitizer at label concentration, checked with a test strip): critical point of the tortilleria
+C12    : Tortilleria
+D12    : Tortilla maker
+E12    : 7:15 AM
+A13    : 7
+B13    : Note the grind time and the masa holding temperature (41 °F or below, or TPHC with a written procedure)
+C13    : Tortilleria
+D13    : Tortilla maker
+E13    : 7:45 AM
+A14    : 8
+B14    : Check the texture and thickness of the freshly ground masa
+C14    : Tortilleria
+D14    : Tortilla maker
+E14    : 8:00 AM
+A15    : 9
+B15    : Clean and sanitize the corn mill AFTER grinding and leave it dry
+C15    : Tortilleria
+D15    : Tortilla maker
+E15    : 8:30 AM
+A16    : 10
+B16    : Log any breakdown or issue with the corn mill for the maintenance report
+C16    : Tortilleria
+D16    : Shift manager
+E16    : 8:35 AM
+A17    :   YIELD AND STORAGE
+A18    : 11
+B18    : Note the masa time limit set in your HACCP plan: ______ (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task). Masa is TCS: 41 °F or below, or time as a public health control with a written procedure
+C18    : Tortilleria
+D18    : Tortilla maker
+E18    : 8:40 AM
+A19    : 12
+B19    : Log the yield: lb of corn, lb of masa and number of tortillas
+C19    : Tortilleria
+D19    : Shift manager
+E19    : 8:45 AM
+A20    : 13
+B20    : Compare the day's yield with the week's average and note the variance
+C20    : Tortilleria
+D20    : Shift manager
+E20    : 8:50 AM
+A21    : 14
+B21    : Check the masa holding temperature until use (41 °F or below, or TPHC with a written procedure) — log reading: ____ °F
+C21    : Tortilleria
+D21    : Tortilla maker
+E21    : 9:00 AM
+A22    : 15
+B22    : Toss any masa past the time limit set in your HACCP plan (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task)
+C22    : Tortilleria
+D22    : Tortilla maker
+E22    : 9:30 AM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Verified by:
+E31    : Signature:
+A33    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Tortillas & Comal» · protegida=True · área='Tortillas & Comal'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Tortillas & Comal
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   CALIBRATION
+A6     : 1
+B6     : Calibrate the tortilla machine at startup: thickness and weight per piece
+C6     : Tortilleria
+D6     : Tortilla maker
+E6     : 9:35 AM
+A7     : 2
+B7     : Heat the comal and check it holds an even temperature by zone
+C7     : Tortilleria
+D7     : Tortilla maker
+E7     : 9:40 AM
+A8     : 3
+B8     : Adjust the corn tortilla thickness against the flour tortilla
+C8     : Tortilleria
+D8     : Tortilla maker
+E8     : 9:45 AM
+A9     : 4
+B9     : Weigh a sample of corn tortillas at the start of the shift
+C9     : Tortilleria
+D9     : Tortilla maker
+E9     : 9:50 AM
+A10    :   PRODUCTION AND WASTE
+A11    : 5
+B11    : Note corn and flour tortilla waste per shift and its cause
+C11    : Tortilleria
+D11    : Tortilla maker
+E11    : 12:30 PM
+A12    : 6
+B12    : Fold and store the corn tortillas in the tortilla warmer until service
+C12    : Tortilleria
+D12    : Tortilla maker
+E12    : 11:00 AM
+A13    : 7
+B13    : Log the shift's total corn and flour tortilla production
+C13    : Tortilleria
+D13    : Shift manager
+E13    : 11:00 PM
+A14    : 8
+B14    : Scrape the masa residue off the comal and the tortilla machine between batches
+C14    : Tortilleria
+D14    : Tortilla maker
+E14    : 3:00 PM
+A15    :   PURCHASED TORTILLAS
+A16    : 9
+B16    : Log receipt of purchased corn or flour tortillas: supplier, lot and temperature
+C16    : Receiving
+D16    : Shift manager
+E16    : 9:00 AM
+A17    : 10
+B17    : Check flour tortillas are stored apart from corn
+C17    : Storage
+D17    : Shift manager
+E17    : 9:05 AM
+A18    : 11
+B18    : Check the use-by date on purchased tortillas, corn or flour, before using them
+C18    : Storage
+D18    : Tortilla maker
+E18    : 9:10 AM
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Verified by:
+E27    : Signature:
+A29    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Guisados & Rotation» · protegida=True · área='Guisados & Rotation'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Guisados & Rotation
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREPARATION
+A6     : 1
+B6     : Log the meat and vegetable lot used in each guisado of the day
+C6     : Kitchen
+D6     : Shift manager
+E6     : 9:55 AM
+A7     : 2
+B7     : Note the prep time and the time each guisado went into the steam table
+C7     : Kitchen
+D7     : Griddle cook
+E7     : 10:00 AM
+A8     : 3
+B8     : Cook the chicken for the guisado (tinga) to 165 °F in the center (instant)
+C8     : Kitchen
+D8     : Griddle cook
+E8     : 10:30 AM
+A9     : 4
+B9     : Label each guisado with name, prep date and time
+C9     : Kitchen
+D9     : Griddle cook
+E9     : 10:45 AM
+A10    :   STEAM TABLE
+A11    : 5
+B11    : Check 135 °F or above in every pan with two readings per shift — log reading: ____ °F
+C11    : Kitchen
+D11    : Griddle cook
+E11    : 11:00 AM
+A12    : 6
+B12    : Note the time limit of each guisado in service
+C12    : Kitchen
+D12    : Griddle cook
+E12    : 11:05 AM
+A13    : 7
+B13    : Stir each guisado in the steam table to avoid cold spots
+C13    : Kitchen
+D13    : Griddle cook
+E13    : 12:00 PM
+A14    : 8
+B14    : Reheat to 165 °F for 15 s in the center, within 2 hours of leaving the cooler
+C14    : Kitchen
+D14    : Griddle cook
+E14    : 1:00 PM
+A15    : 9
+B15    : Check rotation: first made, first used (FIFO)
+C15    : Kitchen
+D15    : Shift manager
+E15    : 12:30 PM
+A16    :   LEFTOVERS AND WASTE
+A17    : 10
+B17    : Check no leftover exceeds the time limit set in your HACCP plan (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task)
+C17    : Kitchen
+D17    : Griddle cook
+E17    : 10:45 PM
+A18    : 11
+B18    : Label and cool the leftover that qualifies (135 °F to 70 °F in 2 h, then to 41 °F in 4 h more; covered, date-marked, 7 days max at 41 °F); toss the rest and log the waste
+C18    : Kitchen
+D18    : Griddle cook
+E18    : 11:00 PM
+A19    : 12
+B19    : Log the waste of each guisado in the shift and the reason
+C19    : Kitchen
+D19    : Shift manager
+E19    : 11:10 PM
+A20    : 13
+B20    : Compare the day's waste with the week's average and note the variance
+C20    : Kitchen
+D20    : Shift manager
+E20    : 11:20 PM
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Verified by:
+E29    : Signature:
+A31    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 05-taqueria-manager-checklist.xlsx
+# docProps: title='Taqueria Manager Checklist: Daily & Weekly' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$43 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 05 · Taqueria Manager Checklist: Daily & Weekly
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B36    : ▸ You are in 05-taqueria-manager-checklist.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B40    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B41    : Contact: info@aichef.pro
+B43    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Manager Daily» · protegida=True · área='Manager Daily'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Manager Daily
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE OPENING
+A6     : 1
+B6     : Review the previous shift's signed temperature log and file it
+C6     : Office
+D6     : Shift manager
+E6     : 8:30 AM
+A7     : 2
+B7     : Measure the day's trompo (vertical broiler) yield: pounds stacked and leftover
+C7     : Kitchen
+D7     : Shift manager
+E7     : 9:00 AM
+A8     : 3
+B8     : Review the shift's catering and large-order forecast
+C8     : Office
+D8     : Shift manager
+E8     : 9:15 AM
+A9     : 4
+B9     : Check the salsa bar is ready before opening
+C9     : Salsa bar
+D9     : Shift manager
+E9     : 9:30 AM
+A10    : 5
+B10    : Review the shift's delivery forecast
+C10    : Office
+D10    : Shift manager
+E10    : 9:45 AM
+A11    :   DURING SERVICE
+A12    : 6
+B12    : Monitor the delivery channel's timing and issues
+C12    : Office
+D12    : Shift manager
+E12    : 1:00 PM
+A13    : 7
+B13    : Review the al pastor taco costing against the day's sales
+C13    : Office
+D13    : Shift manager
+E13    : 1:30 PM
+A14    : 8
+B14    : Review the costing of the best-selling guisados
+C14    : Office
+D14    : Shift manager
+E14    : 2:00 PM
+A15    : 9
+B15    : Log the shift's trompo waste and note the cause
+C15    : Kitchen
+D15    : Shift manager
+E15    : 3:00 PM
+A16    : 10
+B16    : Resolve the dining area and counter issues escalated from the shift
+C16    : Dining area
+D16    : Shift manager
+E16    : 3:30 PM
+A17    :   SHOP CLOSE
+A18    : 11
+B18    : Do the cash count and over/short, and record the tip split per your written tip pool policy (managers and supervisors don't keep tips)
+C18    : Office
+D18    : Shift manager
+E18    : 11:30 PM
+A19    : 12
+B19    : Close the delivery channel and review the shift's numbers
+C19    : Office
+D19    : Shift manager
+E19    : 11:40 PM
+A20    : 13
+B20    : Reply to the day's reviews (Google, Yelp)
+C20    : Office
+D20    : Shift manager
+E20    : 11:50 PM
+A21    : 14
+B21    : Review the salsa bar waste and note the shift total
+C21    : Salsa bar
+D21    : Shift manager
+E21    : 11:55 PM
+A22    : 15
+B22    : Go over the shift's issues with the team before closing
+C22    : Dining area
+D22    : Shift manager
+E22    : 12:00 AM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Verified by:
+E31    : Signature:
+A33    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Weekly» · protegida=True · área='Manager Weekly'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Manager Weekly
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PURCHASING AND SOURCING
+A6     : 1
+B6     : Place the order with your Mexican food distributor for dried chiles and masa, lead time: ______ days
+C6     : Storage
+D6     : Shift manager
+E6     : 10:00 AM
+A7     : 2
+B7     : Compare pork and beef prices with at least two suppliers
+C7     : Office
+D7     : Shift manager
+E7     : 10:15 AM
+A8     : 3
+B8     : Review the receiving condition and paperwork of the last distributor order
+C8     : Storage
+D8     : Shift manager
+E8     : 10:30 AM
+A9     : 4
+B9     : Take inventory of beverages, mezcal and tequila (only with a state alcohol license; 21+ with ID)
+C9     : Storage
+D9     : Shift manager
+E9     : 10:45 AM
+A10    :   COSTS
+A11    : 5
+B11    : Review the taco costing of the week's top 5 best-selling tacos
+C11    : Office
+D11    : Shift manager
+E11    : 11:00 AM
+A12    : 6
+B12    : Compare the week's trompo waste with the previous week
+C12    : Office
+D12    : Shift manager
+E12    : 11:15 AM
+A13    : 7
+B13    : Review salsa bar spend against the week's sales
+C13    : Office
+D13    : Shift manager
+E13    : 11:30 AM
+A14    :   TEAM
+A15    : 8
+B15    : Plan next week's shifts
+C15    : Office
+D15    : Shift manager
+E15    : 11:45 AM
+A16    : 9
+B16    : Review, approve and file the week's time-clock punches (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C16    : Office
+D16    : Shift manager
+E16    : 12:00 PM
+A17    : 10
+B17    : Give the team 15 minutes of training and note the topic covered
+C17    : Dining area
+D17    : Shift manager
+E17    : 12:15 PM
+A24    : Tasks done:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : of
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 10.0
+A26    : Verified by:
+E26    : Signature:
+A28    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 06-taco-shop-duties-by-role.xlsx
+# docProps: title='Taco Shop Duties by Role: Taquero, Tortilla Maker, Salsa Prep, Griddle, Counter & Driver' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$43 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 06 · Taco Shop Duties by Role: Taquero, Tortilla Maker, Salsa Prep, Griddle, Counter & Driver
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B36    : ▸ You are in 06-taco-shop-duties-by-role.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B40    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B41    : Contact: info@aichef.pro
+B43    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Taquero (Trompo)» · protegida=True · área='Taquero (Trompo)'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Taquero (Trompo)
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   STACKING AND PROBE
+A6     : 1
+B6     : Check the received trompo (vertical broiler) cone: 0 °F or below if frozen, 41 °F or below if refrigerated
+C6     : Kitchen
+D6     : Taquero
+E6     : 9:30 AM
+A7     : 2
+B7     : Stack the day's trompo: layers, fat, pineapple and onion, and note total weight
+C7     : Kitchen
+D7     : Taquero
+E7     : 9:45 AM
+A8     : 3
+B8     : Probe the outer layer before each carving batch (at least 145 °F, or your county's figure if stricter) — log reading: ____ °F
+C8     : Kitchen
+D8     : Taquero
+E8     : 10:20 AM
+A9     : 4
+B9     : Log the probe reading at the start and middle of service, at minimum
+C9     : Kitchen
+D9     : Taquero
+E9     : 2:00 PM
+A10    :   CARVING AND CLEANING
+A11    : 5
+B11    : Carve only the cooked layer of the trompo; don't slice into the still-raw interior
+C11    : Kitchen
+D11    : Taquero
+E11    : 1:30 PM
+A12    : 6
+B12    : Move carved meat that isn't served right away to hot holding at 135 °F or above
+C12    : Kitchen
+D12    : Taquero
+E12    : 2:00 PM
+A13    : 7
+B13    : Clean the trompo knife and board before touching ready-to-eat food
+C13    : Kitchen
+D13    : Taquero
+E13    : 8:00 PM
+A14    : 8
+B14    : Empty, wash and sanitize the trompo drip tray at close
+C14    : Kitchen
+D14    : Taquero
+E14    : 11:30 PM
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Verified by:
+E23    : Signature:
+A25    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Tortilla Maker» · protegida=True · área='Tortilla Maker'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Tortilla Maker
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   NIXTAMAL AND MILLING
+A6     : 1
+B6     : Weigh the corn and lime for the nixtamal and note the cooking start time
+C6     : Tortilleria
+D6     : Tortilla maker
+E6     : 6:00 AM
+A7     : 2
+B7     : Clean, then sanitize the corn mill before grinding (sanitizer at label concentration, checked with a test strip)
+C7     : Tortilleria
+D7     : Tortilla maker
+E7     : 6:30 AM
+A8     : 3
+B8     : Note the grind time and the masa holding temperature (41 °F or below, or TPHC with a written procedure)
+C8     : Tortilleria
+D8     : Tortilla maker
+E8     : 7:00 AM
+A9     : 4
+B9     : Note the masa time limit set in your HACCP plan: ______ (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task). Masa is TCS: 41 °F or below, or time as a public health control with a written procedure
+C9     : Tortilleria
+D9     : Tortilla maker
+E9     : 7:15 AM
+A10    :   PRESSING AND COMAL
+A11    : 5
+B11    : Calibrate the tortilla machine at startup: thickness and weight per piece
+C11    : Tortilleria
+D11    : Tortilla maker
+E11    : 9:00 AM
+A12    : 6
+B12    : Note tortilla waste per shift and its cause
+C12    : Tortilleria
+D12    : Tortilla maker
+E12    : 1:00 PM
+A13    : 7
+B13    : Check flour tortillas are stored apart from corn
+C13    : Tortilleria
+D13    : Tortilla maker
+E13    : 1:15 PM
+A14    : 8
+B14    : Deep-clean the tortilla machine at close and leave it dry
+C14    : Tortilleria
+D14    : Tortilla maker
+E14    : 11:30 PM
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Verified by:
+E23    : Signature:
+A25    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Salsa Prep» · protegida=True · área='Salsa Prep'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Salsa Prep
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   SALSAS AND SALSA BAR
+A6     : 1
+B6     : Take charge of the day's salsas: grinding and labeling each one
+C6     : Salsa bar
+D6     : Salsa prep cook
+E6     : 9:00 AM
+A7     : 2
+B7     : Toast and grind the day's chiles and note the amount
+C7     : Salsa bar
+D7     : Salsa prep cook
+E7     : 9:15 AM
+A8     : 3
+B8     : Make the cooked salsas and label them with prep date and time
+C8     : Salsa bar
+D8     : Salsa prep cook
+E8     : 9:30 AM
+A9     : 4
+B9     : Set up the salsa bar and check the raw salsas are 41 °F or below
+C9     : Salsa bar
+D9     : Salsa prep cook
+E9     : 10:45 AM
+A10    :   ALLERGENS AND CLEANING
+A11    : 5
+B11    : Mark the salsa macha (peanuts and/or sesame) on the sign and physically separate it from the rest
+C11    : Salsa bar
+D11    : Salsa prep cook
+E11    : 10:50 AM
+A12    : 6
+B12    : Restock in batches in a clean container; never top off on top of the previous batch
+C12    : Salsa bar
+D12    : Salsa prep cook
+E12    : 12:00 PM
+A13    : 7
+B13    : Toss the raw salsas at close and log the waste
+C13    : Salsa bar
+D13    : Salsa prep cook
+E13    : 11:30 PM
+A14    : 8
+B14    : Wash, rinse and sanitize the blender and molcajete between different salsas (washing removes the allergen; sanitizer at label concentration, checked with a test strip)
+C14    : Salsa bar
+D14    : Salsa prep cook
+E14    : 11:45 PM
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Verified by:
+E23    : Signature:
+A25    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Griddle & Fryer» · protegida=True · área='Griddle & Fryer'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Griddle & Fryer
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   GRIDDLE
+A6     : 1
+B6     : Calibrate the griddle by zone at startup and note the working temperature
+C6     : Kitchen
+D6     : Griddle cook
+E6     : 10:45 AM
+A7     : 2
+B7     : Brown the tacos and quesadillas on the griddle, watching they don't burn
+C7     : Kitchen
+D7     : Griddle cook
+E7     : 1:00 PM
+A8     : 3
+B8     : Scrape and oil the griddle between service batches
+C8     : Kitchen
+D8     : Griddle cook
+E8     : 3:00 PM
+A9     : 4
+B9     : Scrape and oil the griddle while hot at close
+C9     : Kitchen
+D9     : Griddle cook
+E9     : 11:40 PM
+A10    :   FRYER AND SEPARATION
+A11    : 5
+B11    : Check the fryer oil's condition (color, odor, foaming) before service and note any issue
+C11    : Kitchen
+D11    : Griddle cook
+E11    : 10:50 AM
+A12    : 6
+B12    : Use separate tongs and baskets for flour and corn tortillas
+C12    : Kitchen
+D12    : Griddle cook
+E12    : 1:15 PM
+A13    : 7
+B13    : Filter the fryer oil at close and note the date of the last change
+C13    : Kitchen
+D13    : Griddle cook
+E13    : 11:45 PM
+A14    : 8
+B14    : Log the waste of tortilla chips and fried tortillas per shift
+C14    : Kitchen
+D14    : Griddle cook
+E14    : 11:50 PM
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Verified by:
+E23    : Signature:
+A25    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Counter & Register» · protegida=True · área='Counter & Register'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Counter & Register
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   ORDER AND ALLERGENS
+A6     : 1
+B6     : Ask about allergies and intolerances when taking each order
+C6     : Counter
+D6     : Counter
+E6     : 11:30 AM
+A7     : 2
+B7     : Give allergen information in writing when a customer asks; keep a written notice of the major allergens on unpackaged food (menu, sign or card)
+C7     : Counter
+D7     : Counter
+E7     : 11:45 AM
+A8     : 3
+B8     : Tell the kitchen if an order has salsa macha (peanuts and/or sesame) on the side
+C8     : Counter
+D8     : Counter
+E8     : 12:00 PM
+A9     : 4
+B9     : Repeat the order back to the customer before charging
+C9     : Counter
+D9     : Counter
+E9     : 12:15 PM
+A10    :   PAYMENT AND DELIVERY
+A11    : 5
+B11    : Charge and hand over the receipt with the correct breakdown, sales tax itemized
+C11    : Counter
+D11    : Counter
+E11    : 12:30 PM
+A12    : 6
+B12    : Manage the line at rush hour and warn the kitchen if it backs up
+C12    : Counter
+D12    : Counter
+E12    : 2:00 PM
+A13    : 7
+B13    : Check the delivery order goes out sealed and with the right receipt
+C13    : Counter
+D13    : Counter
+E13    : 8:00 PM
+A14    : 8
+B14    : Log the shift's payment and delivery issues
+C14    : Counter
+D14    : Counter
+E14    : 12:05 AM
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Verified by:
+E23    : Signature:
+A25    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Delivery Driver» · protegida=True · área='Delivery Driver'!$A$1:$G$25 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Delivery Driver
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PACKING AND SEALING (IF APPLICABLE)
+A6     : 1
+B6     : Seal every delivery order with a tamper-evident seal
+C6     : Delivery
+D6     : Delivery driver
+E6     : 12:00 PM
+A7     : 2
+B7     : Check the order has the utensils and salsas requested
+C7     : Delivery
+D7     : Delivery driver
+E7     : 12:15 PM
+A8     : 3
+B8     : Check the hot order is at 135 °F or above at pickup, before you leave (cold items apart at 41 °F or below) — log reading: ____ °F
+C8     : Delivery
+D8     : Delivery driver
+E8     : 1:00 PM
+A9     : 4
+B9     : Note each order's departure time and estimated delivery time
+C9     : Delivery
+D9     : Delivery driver
+E9     : 1:10 PM
+A10    :   TIMES AND TEMPERATURE
+A11    : 5
+B11    : Log the actual delivery time against the estimate
+C11    : Delivery
+D11    : Delivery driver
+E11    : 2:00 PM
+A12    : 6
+B12    : Alert the counter if an order exceeds the maximum delivery time
+C12    : Delivery
+D12    : Delivery driver
+E12    : 2:15 PM
+A13    : 7
+B13    : Log any delivery incident: refund, delay or complaint
+C13    : Delivery
+D13    : Delivery driver
+E13    : 8:00 PM
+A14    : 8
+B14    : Check the condition of the insulated delivery bags and replace damaged ones
+C14    : Delivery
+D14    : Delivery driver
+E14    : 11:30 PM
+A21    : Tasks done:
+D21    = =COUNTIFS(B5:B19,"?*",F5:F19,"✓")   → caché 0.0
+E21    : of
+F21    = =COUNTIF(B5:B19,"?*")-COUNTIF(F5:F19,"N/A")   → caché 8.0
+A23    : Verified by:
+E23    : Signature:
+A25    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F18 F19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G19 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 07-taco-shop-weekly-monthly-cleaning-checklist.xlsx
+# docProps: title='Taco Shop Weekly & Monthly Checklists: Deep Cleaning, Inventory & Maintenance' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$43 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 07 · Taco Shop Weekly & Monthly Checklists: Deep Cleaning, Inventory & Maintenance
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B36    : ▸ You are in 07-taco-shop-weekly-monthly-cleaning-checklist.xlsx: what is NOT daily (weekly, monthly, quarterly and annual). The day-to-day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B40    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B41    : Contact: info@aichef.pro
+B43    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Weekly Tasks» · protegida=True · área='Weekly Tasks'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Weekly Tasks
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   DEEP CLEANING
+A6     : 1
+B6     : Degrease the trompo (vertical broiler) and the hood filters; ducts and the full hood go to a certified contractor (NFPA 96)
+C6     : Kitchen
+D6     : Taquero
+E6     : Monday
+A7     : 2
+B7     : Sharpen the carving knives and log the date
+C7     : Kitchen
+D7     : Taquero
+E7     : Monday
+A8     : 3
+B8     : Deep-clean the corn mill and tortilla machine, fully disassembled
+C8     : Tortilleria
+D8     : Tortilla maker
+E8     : Tuesday
+A9     : 4
+B9     : Deep-clean the fryer and change the oil
+C9     : Kitchen
+D9     : Griddle cook
+E9     : Wednesday
+A10    : 5
+B10    : Deep-sanitize the salsa bar and its utensils (clean first, sanitizer at label concentration, checked with a test strip)
+C10    : Salsa bar
+D10    : Salsa prep cook
+E10    : Thursday
+A11    :   INVENTORY AND STORAGE
+A12    : 6
+B12    : Take inventory of dried chiles and check dry storage for pests (licensed pest control operator; staff watch for signs)
+C12    : Storage
+D12    : Shift manager
+E12    : Friday
+A13    : 7
+B13    : Check expiration dates on walk-in items and toss anything expired
+C13    : Walk-in
+D13    : Shift manager
+E13    : Friday
+A14    : 8
+B14    : Count the stock of purchased tortillas and delivery packaging
+C14    : Storage
+D14    : Counter
+E14    : Saturday
+A15    : 9
+B15    : Review the week's mezcal and tequila inventory (only with a state alcohol license; 21+ with ID)
+C15    : Storage
+D15    : Shift manager
+E15    : Saturday
+A16    : 10
+B16    : Check the condition of insulated delivery bags and delivery supplies
+C16    : Delivery
+D16    : Delivery driver
+E16    : Sunday
+A17    :   TEAM
+A18    : 11
+B18    : Give the team 15 minutes of training and note the topic covered
+C18    : Dining area
+D18    : Shift manager
+E18    : Monday
+A19    : 12
+B19    : Review the taco costing of the week's top 5 best-selling tacos
+C19    : Office
+D19    : Shift manager
+E19    : Tuesday
+A20    : 13
+B20    : Reply to the week's accumulated reviews (Google, Yelp)
+C20    : Office
+D20    : Shift manager
+E20    : Wednesday
+A21    : 14
+B21    : Go over the week's issues with the team before the weekend
+C21    : Dining area
+D21    : All staff
+E21    : Friday
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Verified by:
+E30    : Signature:
+A32    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Monthly Tasks» · protegida=True · área='Monthly Tasks'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Monthly Tasks
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   FACILITIES
+A6     : 1
+B6     : Gas equipment check: staff visually inspect hoses, connections and valves on the trompo, griddle and comal (no gas smell); a licensed professional inspects the installation as often as local code requires; file the report. Gas smell: light nothing, get out and call the gas company or 911 from outside
+C6     : Kitchen
+D6     : Shift manager
+E6     : 1st of month
+A7     : 2
+B7     : Calibrate probes and thermometers by the ice-point method (32 °F) and note the measured variance
+C7     : Kitchen
+D7     : Shift manager
+E7     : Biweekly
+A8     : 3
+B8     : Clean the hood filters (staff; ducts and the full hood by a certified contractor, NFPA 96) and log the date and who did it
+C8     : Kitchen
+D8     : Shift manager
+E8     : Biweekly
+A9     : 4
+B9     : Check the tortilleria gas system and hood (corn tortilla production area): staff inspect visually and clean the filters; a licensed professional checks the gas installation per local code; a certified contractor cleans ducts and the full hood (NFPA 96)
+C9     : Tortilleria
+D9     : Shift manager
+E9     : Monthly
+A10    :   HACCP AND PAPERWORK (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task)
+A11    : 5
+B11    : Review the HACCP plan and the allergen sheets (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task)
+C11    : Office
+D11    : Shift manager
+E11    : Monthly
+A12    : 6
+B12    : File the month's temperature logs and check they are signed
+C12    : Office
+D12    : Shift manager
+E12    : 1st of month
+A13    : 7
+B13    : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C13    : Office
+D13    : Shift manager
+E13    : Month-end
+A14    : 8
+B14    : Check the allergen sheets for the salsas and guisados are up to date
+C14    : Office
+D14    : Shift manager
+E14    : Monthly
+A15    :   SUPPLIERS
+A16    : 9
+B16    : Audit your Mexican food distributors: lead times, issues and paperwork
+C16    : Office
+D16    : Shift manager
+E16    : Month-end
+A17    : 10
+B17    : Compare pork, beef and dried chile prices with last month
+C17    : Office
+D17    : Shift manager
+E17    : Month-end
+A18    : 11
+B18    : Review the monthly taco costing of the al pastor taco and the guisados
+C18    : Office
+D18    : Shift manager
+E18    : Month-end
+A19    : 12
+B19    : Close the monthly inventory of beverages, mezcal and tequila (only with a state alcohol license; 21+ with ID)
+C19    : Storage
+D19    : Shift manager
+E19    : Month-end
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Verified by:
+E28    : Signature:
+A30    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 08-taco-shop-event-seasonal-checklists.xlsx
+# docProps: title='Taco Shop Event & Seasonal Checklists: Holidays, Busy Days & Seasonal Ingredients' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$43 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 08 · Taco Shop Event & Seasonal Checklists: Holidays, Busy Days & Seasonal Ingredients
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B36    : ▸ You are in 08-taco-shop-event-seasonal-checklists.xlsx: the exceptional (events, holidays, seasons). The day-to-day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B40    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B41    : Contact: info@aichef.pro
+B43    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Seasonal Ingredients» · protegida=True · área='Seasonal Ingredients'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Seasonal Ingredients
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   CHILES EN NOGADA (JUL 15 TO LATE SEP)
+A6     : 1
+B6     : Reserve fresh walnuts and pomegranate for the chiles en nogada with your Mexican food distributor
+C6     : Storage
+D6     : Shift manager
+E6     : 1 month out
+A7     : 2
+B7     : Note the real start of chiles en nogada season, which depends on the harvest
+C7     : Office
+D7     : Shift manager
+E7     : When confirmed
+A8     : 3
+B8     : Check availability of panochera apples, lechera pears and criollo peaches (or your distributor's equivalents)
+C8     : Storage
+D8     : Shift manager
+E8     : 2 weeks out
+A9     :   DRIED CHILES BY HARVEST
+A10    : 4
+B10    : Note the harvest and lot of each dried chile received
+C10    : Storage
+D10    : Shift manager
+E10    : When confirmed
+A11    : 5
+B11    : Compare this harvest's dried chile price with the last one before renewing the order
+C11    : Office
+D11    : Shift manager
+E11    : 2 weeks out
+A12    : 6
+B12    : Check the storage condition of the dried chiles in stock
+C12    : Storage
+D12    : Shift manager
+E12    : When confirmed
+A13    :   MEAT AND CORN
+A14    : 7
+B14    : Check the pork price for al pastor against the previous season's
+C14    : Office
+D14    : Shift manager
+E14    : 2 weeks out
+A15    : 8
+B15    : Check the price and availability of corn for nixtamal before renewing the order
+C15    : Storage
+D15    : Shift manager
+E15    : 2 weeks out
+A16    : 9
+B16    : Compare beef prices with at least two suppliers this quarter
+C16    : Office
+D16    : Shift manager
+E16    : 1 month out
+A17    :   FRESH PRODUCE
+A18    : 10
+B18    : Check avocado price and availability before setting the quarter's menu
+C18    : Office
+D18    : Shift manager
+E18    : 2 weeks out
+A19    : 11
+B19    : Check seasonal cilantro and lime availability with the supplier
+C19    : Storage
+D19    : Shift manager
+E19    : Day before
+A20    : 12
+B20    : Check seasonal fresh chile availability before adjusting the menu
+C20    : Storage
+D20    : Shift manager
+E20    : Day before
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 12.0
+A29    : Verified by:
+E29    : Signature:
+A31    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Event Calendar» · protegida=True · área='Event Calendar'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Checklist: Event Calendar
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   FIRST QUARTER
+A6     : 1
+B6     : Three Kings Day (Jan 6): rosca de Reyes forecast and a reinforced shift
+C6     : MX
+D6     : Shift manager
+E6     : 2 weeks out
+A7     : 2
+B7     : Candelaria (Feb 2): tamale production and social media posts
+C7     : MX
+D7     : Shift manager
+E7     : 2 weeks out
+A8     : 3
+B8     : Lent Fridays: push fish tacos and battered fish; for raw fish, start the parasite-destruction record (FDA Food Code 3-402.11)
+C8     : All
+D8     : Shift manager
+E8     : When confirmed
+A9     : 4
+B9     : Holy Week & Easter (varies): review capacity and forecast with the team; decide Easter Sunday hours
+C9     : US
+D9     : Shift manager
+E9     : 1 week out
+A10    :   SECOND QUARTER
+A11    : 5
+B11    : Cinco de Mayo (May 5): one of the biggest days of the year for a US taco shop; in Mexico it is mostly celebrated in Puebla
+C11    : US
+D11    : Shift manager
+E11    : 1 week out
+A12    : 6
+B12    : Patio season: city permit (outdoor dining / sidewalk cafe permit), capacity and extended hours
+C12    : US
+D12    : Shift manager
+E12    : 2 weeks out
+A13    : 7
+B13    : Memorial Day weekend (last Monday of May): forecast of customers, parties and large orders
+C13    : US
+D13    : Shift manager
+E13    : 1 week out
+A14    : 8
+B14    : Summer: check avocado and fresh chile availability
+C14    : All
+D14    : Shift manager
+E14    : 2 weeks out
+A15    :   THIRD QUARTER
+A16    : 9
+B16    : The Grito and Mexican Independence Day (Sep 15–16): a big date for the Mexican and Latino clientele in the US; pozole; mezcal and tequila only with a state alcohol license (beer & wine or liquor), 21+ with ID
+C16    : US
+D16    : Shift manager
+E16    : 2 weeks out
+A17    : 10
+B17    : Chiles en nogada (Jul 15 to late Sep): start the campaign with your Mexican food distributor
+C17    : MX
+D17    : Shift manager
+E17    : 1 month out
+A18    : 11
+B18    : Summer peak: review the staffing forecast
+C18    : All
+D18    : Shift manager
+E18    : 2 weeks out
+A19    :   FOURTH QUARTER
+A20    : 12
+B20    : Day of the Dead (Nov 1–2): pan de muerto and calabaza en tacha
+C20    : MX
+D20    : Shift manager
+E20    : 2 weeks out
+A21    : 13
+B21    : Our Lady of Guadalupe (Dec 12): service and staffing forecast
+C21    : MX
+D21    : Shift manager
+E21    : 2 weeks out
+A22    : 14
+B22    : Posadas (Dec 16–24) and holiday parties (trays and taco bar for offices): lock in headcounts and set menus
+C22    : All
+D22    : Shift manager
+E22    : 1 month out
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 14.0
+A31    : Verified by:
+E31    : Signature:
+A33    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F16 F17 F18 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-blank-taco-shop-checklist-template.xlsx
+# docProps: title='Blank Taco Shop Checklist Template (Editable)' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$41 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : 09 · Blank Taco Shop Checklist Template (Editable)
+B4     : How to use these templates
+B6     : ▸ Write your tasks in the green cells of the "Task" column
+B7     : ▸ Rename the sections with the real blocks of your taco shop
+B8     : ▸ The counter starts at 0 and goes up as you write: it counts what is there
+B10    : How to customize
+B12    : ▸ Green cells are editable — change assignments and times
+B13    : ▸ Adjust the due-by times to your real schedule
+B15    : How the counter works
+B17    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B18    : ▸ "N/A" = not applicable at your taco shop: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B19    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B21    : Free rows
+B23    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B24    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B26    : Sheet protection
+B28    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B29    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B31    : Works with
+B33    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B34    : ▸ You are in 09-blank-taco-shop-checklist-template.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 01-taco-shop-opening-closing-checklists.xlsx.
+B36    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B38    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B39    : Contact: info@aichef.pro
+B41    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Blank Template» · protegida=True · área='Blank Template'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   SECTION 1 (CUSTOMIZE)
+A6     : 1
+A7     : 2
+A8     : 3
+A9     : 4
+A10    : 5
+A11    :   SECTION 2 (CUSTOMIZE)
+A12    : 6
+A13    : 7
+A14    : 8
+A15    : 9
+A16    : 10
+A17    :   SECTION 3 (CUSTOMIZE)
+A18    : 11
+A19    : 12
+A20    : 13
+A21    : 14
+A22    : 15
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 0.0
+A31    : Verified by:
+E31    : Signature:
+A33    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# BONUS-01-taco-shop-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Taco Shop Pre-Shift Meeting Template (Huddle Notes)' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$25 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : BONUS: Taco Shop Pre-Shift Meeting Template (Huddle Notes)
+B4     : How to use these templates
+B6     : ▸ Print one sheet per shift and fill it in before service starts
+B7     : ▸ The shift manager goes over it with the team in two minutes and signs at the bottom
+B8     : ▸ File it with the same shift's temperature log
+B10    : How to customize
+B12    : ▸ Green cells are editable — write the shift's data there
+B13    : ▸ Add or remove guisado and salsa lines to match your menu
+B15    : Works with
+B17    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B18    : ▸ You are in BONUS-01-taco-shop-pre-shift-meeting-template.xlsx: the pre-shift meeting opens the shift that is then worked with 01-taco-shop-opening-closing-checklists.xlsx and 08-taco-shop-event-seasonal-checklists.xlsx.
+B20    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B22    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B23    : Contact: info@aichef.pro
+B25    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Meeting» · protegida=True · área='Pre-Shift Meeting'!$A$1:$B$44 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B1     : Pre-Shift Meeting
+B2     : Date: ___/___/______    Shift: ☐ Lunch  ☐ Dinner    Meeting led by: _________________________
+B4     : TROMPO OF THE DAY (IF APPLICABLE)
+B5     : Weight stacked (lb):
+B6     : Stacking time:
+B7     : Time limit set in your HACCP plan: (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task)
+B8     : Carving forecast:
+B10    : GUISADOS OF THE DAY
+B11    : Guisado 1 (hotel pan) — time in / time limit:
+B12    : Guisado 2 — time in / time limit:
+B13    : Guisado 3 — time in / time limit:
+B14    : Guisado 4 — time in / time limit:
+B16    : SALSAS OF THE DAY
+B17    : Salsa 1 (heat: mild / medium / hot):
+B18    : Salsa 2 (heat: mild / medium / hot):
+B19    : Salsa 3 (heat: mild / medium / hot):
+B20    : Salsa 4 (heat: mild / medium / hot):
+B21    : Salsa 5 (heat: mild / medium / hot):
+B23    : ALLERGEN NOTICE
+B24    : Salsa macha on the salsa bar (peanuts and/or sesame) — yes/no:
+B25    : Mole of the day (tree nuts, peanuts or sesame, per recipe) — yes/no:
+B26    : Flour tortillas available (wheat) — yes/no:
+B28    : STOCKOUTS AND "86"
+B29    : 86'd (item 1):
+B30    : 86'd (item 2):
+B31    : 86'd (item 3):
+B32    : 86'd (item 4):
+B33    : 86'd (item 5):
+B35    : DINING AREA AND DELIVERY
+B36    : Catering orders:
+B37    : Large orders:
+B38    : Delivery forecast:
+B39    : Staff on shift:
+B42    : Shift manager signature: _________________________
+B44    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+####################################################################################################
+# BONUS-02-taco-shop-annual-calendar.xlsx
+# docProps: title='BONUS: Taco Shop Annual Calendar: Holidays, Busy Days & Upkeep (US)' · subject='Taco Shop Checklists Kit Pro · v2.0' · keywords='taco shop checklist, taqueria checklist, taco shop opening checklist, taco shop closing checklist, salsa bar checklist, trompo, al pastor, AI Chef Pro' · description='aichef.pro/en/digital-products/taco-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$25 · títulos=None · paneles=None · papel=1 · orientación=portrait
+B2     : BONUS: Taco Shop Annual Calendar: Holidays, Busy Days & Upkeep (US)
+B4     : How to use these templates
+B6     : ▸ Print it on US Letter landscape and hang it in the office
+B7     : ▸ Each row is a date or a yearly task with its lead time
+B8     : ▸ The green rows at the end are for your local dates. UK: add Mothering Sunday (March), bank holidays and Boxing Day in the free rows
+B10    : How to customize
+B12    : ▸ Green cells are editable — write your dates there
+B13    : ▸ Adjust the lead time to your suppliers' deadlines
+B15    : Works with
+B17    : ▸ 01-taco-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (taqueria).
+B18    : ▸ You are in BONUS-02-taco-shop-annual-calendar.xlsx: every date in this calendar is carried out with the checklists in 08-taco-shop-event-seasonal-checklists.xlsx.
+B20    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B22    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B23    : Contact: info@aichef.pro
+B25    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/taco-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Annual Calendar» · protegida=True · área='Annual Calendar'!$A$1:$D$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Annual Calendar — Key Dates for the Taco Shop
+A2     : Year: ______    Taco shop: _________________________
+A4     : Month
+B4     : Date / Event
+C4     : Key Tasks
+D4     : Lead time
+A5     : January
+B5     : Jan 6 — Three Kings Day
+C5     : Mexican and Latino families in the US celebrate it: order the rosca de Reyes from your bakery or supplier and reinforce the shift that day
+D5     : 2 weeks
+A6     : January
+B6     : Staff time off (slow weeks)
+C6     : Few US taco shops close for vacation: spread the team's time off across the slow weeks of January and, if you do close a few days, post it on Google Business Profile, Yelp and the delivery apps
+D6     : 1 month
+A7     : February
+B7     : Feb 2 — Candelaria + Super Bowl Sunday (2nd Sunday in Feb)
+C7     : Candelaria: tamale production and a notice on Google Business Profile and social media. Super Bowl, one of the biggest take-out days in the US: pre-orders for party trays (taco bar), extra counter and delivery staff
+D7     : 2 weeks
+A8     : February
+B8     : Gas equipment check
+C8     : Gas equipment check: staff visually inspect hoses, connections and valves on the trompo, griddle and comal (no gas smell); a licensed professional inspects the installation as often as local code requires; file the report. Gas smell: light nothing, get out and call the gas company or 911 from outside
+D8     : 1 month
+A9     : February–April
+B9     : Lent Fridays (from Ash Wednesday, varies)
+C9     : Push fish tacos and battered fish; raw fish for aguachiles and tostadas needs its parasite-destruction record (FDA Food Code 3-402.11) and the consumer advisory on the menu (FDA Food Code 3-603.11)
+D9     : 2 weeks
+A10    : March
+B10    : Thermometer calibration
+C10    : Calibrate probes and thermometers by the ice-point method (32 °F) and note the measured variance
+D10    : 2 weeks
+A11    : March
+B11    : Spring menu costing review
+C11    : Review the taco costing of your best sellers before spring
+D11    : 2 weeks
+A12    : April
+B12    : Corn mill deep clean
+C12    : Take apart and deep-clean the corn mill and tortilla machine before summer
+D12    : 2 weeks
+A13    : May
+B13    : May 5 — Cinco de Mayo
+C13    : One of the biggest days of the year for a US taco shop: pre-orders, extra product (tortillas, al pastor, salsas), extended staff and hours. In Mexico it is mostly celebrated in Puebla (the national holiday is Sep 16). Margaritas or beer only with a license, 21+ with ID
+D13    : 1 week
+A14    : May
+B14    : Patio season prep (before Memorial Day)
+C14    : Patio = terrace: renew the city outdoor dining / sidewalk cafe permit, check the authorized capacity and extend hours
+D14    : 2 weeks
+A15    : May–June
+B15    : Summer kickoff (Memorial Day, last Monday of May)
+C15    : Add dining area and delivery staff for summer
+D15    : 1 week
+A16    : June
+B16    : Online review check
+C16    : Check and reply to accumulated reviews (Google, Yelp) before peak season
+D16    : 1 week
+A17    : June
+B17    : Supplier audit (dried chiles & masa)
+C17    : Audit lead times, issues and paperwork from your Mexican food distributor of dried chiles and masa
+D17    : 1 month
+A18    : July–September
+B18    : Jul 15 to late Sep — Chiles en nogada season
+C18    : Reserve fresh walnuts and pomegranate with your supplier; the season depends on the harvest
+D18    : 1 month
+A19    : July
+B19    : Avocado price check
+C19    : Check avocado price and availability before setting the quarter's menu
+D19    : 2 weeks
+A20    : August
+B20    : Chiles en nogada peak
+C20    : Peak availability month; boost production and promote it on social media
+D20    : 1 week
+A21    : August
+B21    : Pest control check (hottest month)
+C21    : Pest control by a licensed pest control operator; staff check dry storage for signs
+D21    : 2 weeks
+A22    : September
+B22    : Sep 15–16 — Mexican Independence Day (the Grito)
+C22    : A big date for the Mexican and Latino clientele in the US: pozole and specials; mezcal or tequila only with a license, 21+ with ID
+D22    : 2 weeks
+A23    : September
+B23    : HACCP plan review
+C23    : Review the HACCP plan and allergen sheets before fall (if you have the HACCP Food Safety Kit Pro, log it there; if not, note it next to the task)
+D23    : 1 month
+A24    : October
+B24    : Day of the Dead prep
+C24    : Order pan de muerto and calabaza (for calabaza en tacha) from your supplier in advance
+D24    : 1 month
+A25    : October
+B25    : Hood filter cleaning
+C25    : Clean the hood filters (staff; ducts and the full hood by a certified contractor, NFPA 96) and log the date and who did it
+D25    : 2 weeks
+A26    : November
+B26    : Nov 1–2 — Day of the Dead
+C26    : Pan de muerto and calabaza en tacha production
+D26    : 2 weeks
+A27    : November
+B27    : Thanksgiving + holiday party bookings
+C27    : Thanksgiving (4th Thursday of November): decide whether to open (many close). Lock in menus and headcounts for December holiday parties (trays and taco bar for offices)
+D27    : 1 month
+A28    : November
+B28    : Bar inventory (if licensed)
+C28    : Take inventory of beverages, mezcal and tequila before the December push (only with a state alcohol license: beer & wine or liquor; 21+ with ID)
+D28    : 2 weeks
+A29    : December
+B29    : Dec 12 — Our Lady of Guadalupe
+C29    : Service forecast and reinforced staffing
+D29    : 2 weeks
+A30    : December
+B30    : Dec 16–24 — Posadas + holiday parties
+C30    : Lock in headcounts and set menus
+D30    : 1 month
+A31    : December
+B31    : Christmas & New Year's Eve
+C31    : Reinforce closing shifts and the year-end delivery forecast; decide hours for Dec 24–25 and Dec 31 (many close on the 25th)
+D31    : 2 weeks
+A32    : (Your date)
+B32    : (Add here)
+C32    : (Key tasks)
+D32    : (Lead time)
+A33    : (Your date)
+B33    : (Add here)
+C33    : (Key tasks)
+D33    : (Lead time)
+A34    : (Your date)
+B34    : (Add here)
+C34    : (Key tasks)
+D34    : (Lead time)
+A35    : (Your date)
+B35    : (Add here)
+C35    : (Key tasks)
+D35    : (Lead time)
+A36    : (Your date)
+B36    : (Add here)
+C36    : (Key tasks)
+D36    : (Lead time)
+A38    : — Taco Shop Checklists Kit Pro · AI Chef Pro · aichef.pro

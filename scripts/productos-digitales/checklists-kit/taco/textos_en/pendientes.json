@@ -2,11 +2,11 @@
  "meta": {
   "kit": "taco",
   "producto": "Taco Shop Checklists Kit Pro",
-  "n_pendientes": 458,
-  "n_palabras": 4982,
+  "n_pendientes": 457,
+  "n_palabras": 4969,
   "motivos": {
    "contexto": 1,
-   "nueva": 457
+   "nueva": 456
   },
   "n_heredadas": 32,
   "heredadas_por_via": {
@@ -210,20 +210,6 @@
    "donde": [
     "01 · Apertura Taquería · A12"
    ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0053",
-   "es": "Encender el trompo (asador vertical) y comprobar llama uniforme en todos los quemadores",
-   "grupo": "G1",
-   "palabras": 13,
-   "donde": [
-    "01 · Apertura Taquería · B13"
-   ],
-   "pistas": [
-    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
-   ],
-   "adaptar": "Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal y llama a la compañía de gas o al 911 desde fuera",
    "motivo": "nueva"
   },
   {
@@ -555,7 +541,7 @@
     "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
     "abatir → cool (enfriado 135 → 70 °F en 2 h y → 41 °F en 4 h más, FDA Food Code 3-501.14); abatidor → blast chiller"
    ],
-   "adaptar": "Carne sobrante del trompo: reutilizarla solo si tu departamento de salud lo permite (la regla del cono sobrante la fija el condado); si se guarda: Enfriado (sin «abatir»): de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14); tapado y con date marking: 7 días como máximo a 41 °F, día 1 = el de preparación (FDA Food Code 3-501.17)",
+   "adaptar": "Carne sobrante del trompo: reutilizarla solo si tu departamento de salud lo permite (la regla del cono sobrante la fija el condado); si se guarda: Enfriado (sin «abatir»): de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14); tapado y con date marking: 7 días como máximo a 41 °F, día 1 = el de preparación (FDA Food Code 3-501.17); y antes de volver al mantenimiento en caliente, recalentar a 165 °F en 2 h como máximo (FDA Food Code 3-403.11)",
    "motivo": "nueva"
   },
   {

@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-30T23:24:23Z",
+  "generado": "2026-10-31T00:15:57Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-taqueria",
-  "commit": "fc015f6b",
+  "commit": "1cc0175b",
   "libros": {
    "01": {
     "es": "01-apertura-cierre-taqueria.xlsx",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 648,
-  "n_traducir": 490,
-  "n_adaptar": 110,
-  "n_palabras_subagentes": 5275,
+  "n_traducir": 489,
+  "n_adaptar": 109,
+  "n_palabras_subagentes": 5262,
   "n_apariciones": 1940,
   "grupos": [
    {
@@ -76,9 +76,9 @@
      "03",
      "04"
     ],
-    "n_cadenas": 245,
-    "n_adaptar": 52,
-    "n_palabras": 2927
+    "n_cadenas": 244,
+    "n_adaptar": 51,
+    "n_palabras": 2914
    },
    {
     "id": "G2",
@@ -98,9 +98,9 @@
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 55 mapa-glosario, 26 mapa-hoja, 77 regenerar",
-    "n_cadenas": 158,
-    "n_palabras": 645
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 55 mapa-glosario, 26 mapa-hoja, 78 regenerar",
+    "n_cadenas": 159,
+    "n_palabras": 658
    }
   ],
   "excluidas": {
@@ -2311,30 +2311,6 @@
    ]
   },
   {
-   "id": "c0053",
-   "es": "Encender el trompo (asador vertical) y comprobar llama uniforme en todos los quemadores",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 13,
-   "con_cifra": false,
-   "adaptar": "Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal y llama a la compañía de gas o al 911 desde fuera",
-   "pistas": [
-    "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice"
-   ],
-   "sha1": "b8f4dbcde580",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura Taquería",
-     "c": "B13",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0057",
    "es": "Calibrar plancha y comal por zonas (alta y media) y anotar la temperatura de trabajo",
    "grupo": "G1",
@@ -3260,7 +3236,7 @@
    "n_apariciones": 1,
    "palabras": 13,
    "con_cifra": false,
-   "adaptar": "Carne sobrante del trompo: reutilizarla solo si tu departamento de salud lo permite (la regla del cono sobrante la fija el condado); si se guarda: Enfriado (sin «abatir»): de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14); tapado y con date marking: 7 días como máximo a 41 °F, día 1 = el de preparación (FDA Food Code 3-501.17)",
+   "adaptar": "Carne sobrante del trompo: reutilizarla solo si tu departamento de salud lo permite (la regla del cono sobrante la fija el condado); si se guarda: Enfriado (sin «abatir»): de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14); tapado y con date marking: 7 días como máximo a 41 °F, día 1 = el de preparación (FDA Food Code 3-501.17); y antes de volver al mantenimiento en caliente, recalentar a 165 °F en 2 h como máximo (FDA Food Code 3-403.11)",
    "pistas": [
     "trompo → trompo; asador vertical → vertical broiler; cono → cone (stack); montar el trompo → stack the trompo; cortar → carve / slice",
     "abatir → cool (enfriado 135 → 70 °F en 2 h y → 41 °F en 4 h más, FDA Food Code 3-501.14); abatidor → blast chiller"
@@ -18159,6 +18135,28 @@
    ]
   },
   {
+   "id": "c0053",
+   "es": "Encender el trompo (asador vertical) y comprobar llama uniforme en todos los quemadores",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check the cone as received: frozen at 0 °F or below, or refrigerated at 41 °F or below",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 13,
+   "con_cifra": false,
+   "sha1": "b8f4dbcde580",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura Taquería",
+     "c": "B13",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0054",
    "es": "Taquero",
    "grupo": "GM",
@@ -18481,7 +18479,7 @@
    "es": "Montar el trompo del día: orden de capas, grasa, piña y cebolla; anotar peso y hora",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Check the cone as received: frozen at 0 °F or below, or refrigerated at 41 °F or below",
+   "en_por_celda": "Stack the day's trompo: layer order, fat, pineapple and onion; note weight and time",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 16,
@@ -18503,7 +18501,7 @@
    "es": "Comprobar el cono recibido a ≤ −18 °C si congelado o ≤ 4 °C si refrigerado",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Stack the day's trompo: layer order, fat, pineapple and onion; note weight and time",
+   "en_por_celda": "Light the trompo (vertical broiler) and check for an even flame on every burner. Gas smell: light nothing, flip no switches, get out and call the gas company or 911 from outside",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 14,
