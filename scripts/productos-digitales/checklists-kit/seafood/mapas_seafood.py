@@ -51,6 +51,8 @@ NO_HEREDAR = {}
 TERMINOS_PROHIBIDOS = (r'(?i:\b(?:plancha|mariscadas?|lonjas?|viveros?|auctions?|workshops?|obrador|food trucks?|'
                        r'window staff|butane|allergen (?:2|14))\b)|\bMOD\b')
 TERMINO_PROHIBIDO_EJEMPLO = 'Confirm the order before the auction closes.'
+# gates_en.py G2 (FRASES_OK += FRASES_OK_EXTRA): la uva con su eñe (ronda de revisión); no es español en la EN
+FRASES_OK_EXTRA = ('Albariño', 'albariño')
 REFERENCIAS_TRADUCTOR = ['seafood/SPEC.md', 'foodtruck/SPEC.md §0 (molde plano)', 'SPEC.md §0-§3 y §7.2 (brief)',
                          'seafood/mapas_seafood.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US',
                          '../GLOSARIO-JERGA-ES-EN.md']
@@ -211,18 +213,42 @@ for _celda, _v in (
         # alérgenos US (la numeración 2 / 14 es la UE): pescado y crustáceos son de los 9; los moluscos, no (UK: sí)
         ('A11', 'ALLERGENS — Fish & Shellfish'), ('A12', 'Crustaceans'), ('A13', 'Molluscs'),
         ('F6', 'FDA Seafood List (market names)'),
-        ('B18', 'Receiving: fresh fish at 41 °F or below, frozen at 0 °F or below and frozen solid; shellstock per NSSP '
-                'rules (on ice, or shipped at 45 °F air or 50 °F internal or below), then held at 41 °F (FDA Food Code '
-                '3-202.11)'),
+        ('B18', 'Receiving: fresh fish at 41 °F or below; frozen food received frozen solid (0 °F or below is the '
+                'common target); shellstock per NSSP rules (on ice, or shipped at 45 °F air or 50 °F internal or below), '
+                'then held at 41 °F (FDA Food Code 3-202.11)'),
         ('F18', 'Reject if above 41 °F'),
-        ('B20', 'Cooking: fish and shellfish to 145 °F for 15 s internal (FDA Food Code 3-401.11)'),
-        ('B22', 'Raw or undercooked fish (crudo, ceviche, tartare) — parasite destruction (FDA Food Code 3-402.11): '
+        ('B20', 'Cooking: whole fish and shellfish to 145 °F for 15 s internal; comminuted fish 155 °F for 17 s; '
+                'stuffed fish 165 °F (FDA Food Code 3-401.11)'),
+        ('B22', 'Raw or undercooked fish (crudo, ceviche, tartare) — parasite destruction (FDA Food Code 3-402.11; '
+                'some species are exempt, see 3-402.11(B)): '
                 'frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at '
                 '−31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for '
                 '24 h; keep the record 90 days (FDA Food Code 3-402.12) and the consumer advisory on the menu (FDA Food '
                 'Code 3-603.11)'),
         ('F22', 'Required (FDA Food Code 3-402.11)')):
     POR_CELDA[_T3 + (_celda,)] = _v
+# Ronda de revisión (31-oct): el orden por horas del 01. Apertura «Cocina»: la descongelación (7:30 AM, ES B21) va
+# tras las comprobaciones de las 7:00 AM; cierre: la cubertería de sala (11:00 PM, ES B35) tras el vivero (11:00 PM).
+# Mismas filas; B, C y D (y A en el cierre) se mueven con su tarea. Sin cifras nuevas
+_AC = ('01', 'Apertura y Cierre')
+_MOVIDAS_01 = [  # fila destino, fila ES de origen, A EN (None = la de la fila no cambia), B EN, C EN, D EN
+    (17, 21, None, "Thaw scheduled products (FIFO, lot log): in the walk-in at 41 °F or below or under cold running water at 70 °F or below (FDA Food Code 3-501.13); take vacuum-packed (ROP) frozen fish out of the bag when thawing", 'Kitchen', '7:30 AM'),
+    (18, 17, None, "Mise en place sauces: cocktail sauce, mignonette, tartar, remoulade, drawn butter", 'Sauce station', '8:00 AM'),
+    (19, 18, None, "Make today's fish stock / fumet", 'Stock station', '8:00 AM'),
+    (20, 19, None, "Check side stock: potatoes, peppers, greens", 'Kitchen', '8:30 AM'),
+    (21, 20, None, "Set up mise en place for the flat-top griddle / grill", 'Grill cook', '8:30 AM'),
+    (31, 35, 'FOH', "Collect the seafood service tools, wash and store them", 'FOH', '11:00 PM'),
+    (32, 31, 'Kitchen', "Fish / shellfish inventory: stock left vs. tomorrow's order", 'Head chef', '11:15 PM'),
+    (33, 32, 'Kitchen', "Log today's waste (high-value product)", 'Head chef', '11:15 PM'),
+    (34, 33, 'Kitchen', "Deep clean the fish area and cutting boards, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)", 'Kitchen', '11:30 PM'),
+    (35, 34, 'Kitchen', "Check walk-ins: temperature and doors closed", 'Kitchen', '11:30 PM'),
+]
+for _d, _o, _a, _b, _c, _h in _MOVIDAS_01:
+    if _a:
+        POR_CELDA[_AC + ('A%d' % _d,)] = _a
+    POR_CELDA[_AC + ('B%d' % _d,)] = _b
+    POR_CELDA[_AC + ('C%d' % _d,)] = _c
+    POR_CELDA[_AC + ('D%d' % _d,)] = _h
 POR_CELDA[('02', 'Vivero y Lonjas', 'B15')] = (
     'Paperwork for every lot: shellstock tags (harvest area and date, certified shipper number) kept 90 days after the '
     'container is emptied (FDA Food Code 3-203.12); finfish: species, origin and supplier on the invoice')
@@ -286,13 +312,7 @@ ADAPTAR = OrderedDict([
     (('01', 'Apertura y Cierre', 'B12'), _HIELO),
     (('01', 'Apertura y Cierre', 'B14'), _FRIO + '; pescado sobre hielo en el walk-in'),
     (('01', 'Apertura y Cierre', 'B16'), _FRIO),
-    (('01', 'Apertura y Cierre', 'B17'), 'Salsas de una marisquería US: cocktail sauce, mignonette, tartar, remoulade, '
-                                         'drawn butter (en vez de vizcaína, gallega, verde, romesco y ajada)'),
-    (('01', 'Apertura y Cierre', 'B21'), 'Descongelación (FDA Food Code 3-501.13): en el walk-in a 41 °F o menos o bajo '
-                                         'agua fría corriente a 70 °F o menos; el pescado congelado al vacío (ROP) se '
-                                         'saca de la bolsa al descongelar'),
     (('01', 'Apertura y Cierre', 'B26'), 'Barra de aperitivos → raw bar: ostras y almejas sobre hielo. ' + _NSSP),
-    (('01', 'Apertura y Cierre', 'B33'), _LIMPIAR),
     (('01', 'Apertura y Cierre', 'B36'), _DISTRIBUIDOR),
     (('01', 'Apertura y Cierre', 'B37'), _CAJA),
     # 02
@@ -367,7 +387,9 @@ CELSIUS_SIN_F = frozenset()
 # ==========================================================================
 REGLAS_US = OrderedDict(_base.REGLAS_US)
 REGLAS_US.update([
-    ('coccion_pescado', ('pescado y marisco 145 °F 15 s', 'FDA Food Code 2022 §3-401.11(A)(1)')),
+    ('coccion_pescado', ('pescado entero y marisco 145 °F 15 s; pescado picado 155 °F 17 s; relleno 165 °F',
+                         'FDA Food Code 2022 §3-401.11(A)(1), (A)(2) y (A)(3)')),
+    ('parasitos_exentos', ('algunas especies quedan exentas de la congelación', 'FDA Food Code 2022 §3-402.11(B)')),
     ('recepcion', ('pescado fresco 41 °F o menos; congelado 0 °F y duro; shellstock según NSSP (en hielo o transporte a '
                    '45 °F de aire o 50 °F interna como máximo) y luego 41 °F', 'FDA Food Code 2022 §3-202.11 (B: la '
                    'temperatura de la ley del marisco); NSSP Guide (ISSC); S.C. Code Regs. 61-25 §3-202')),
@@ -394,7 +416,7 @@ REGLAS_US.update([
     ('dias_fuertes', ('Lent Fridays, Valentine\'s, Mother\'s Day, Jul 4, Thanksgiving, Christmas Eve (Seven Fishes), '
                       'NYE', '[criterio del kit] calendario comercial; 5 U.S.C. 6103 (base)')),
 ])
-GRADOS_F_SPEC = {-31, -4, 0, 41, 45, 50, 70, 100, 135, 145, 165}
+GRADOS_F_SPEC = {-31, -4, 0, 41, 45, 50, 70, 100, 135, 145, 155, 165}
 
 # ==========================================================================
 # Pistas y dependencias (el ES va SIN tildes: las regex las toleran)
@@ -432,8 +454,8 @@ PISTAS_EXTRA = [
     (r'FAO|[Aa]rte de pesca', 'zona FAO → harvest area / origin; arte de pesca → catch method'),
     (r'[Mm]ermas', 'mermas → waste (waste log)'),
     (r'[Cc]aja', 'caja → POS; cierre de caja → cash count, over/short'),
-    (r'[Aa]lbari|[Gg]odello|[Tt]xakoli|[Vv]inos', 'vinos: Albarino (sin eñe en la EN: el gate la lee como español), '
-                                                 'Godello, Txakoli; 21+ con ID'),
+    (r'[Aa]lbari|[Gg]odello|[Tt]xakoli|[Vv]inos', 'vinos: Albariño (con eñe: FRASES_OK_EXTRA), '
+                                                 'Sauvignon Blanc, Muscadet, Chablis; 21+ con ID'),
     (r'RRSS', 'RRSS → social media'),
     (r'[Mm]aitre|[Jj]efe (de )?cocina|[Cc]amarero|[Pp]artida', 'maître → FOH manager; jefe de cocina → head chef; '
                                                                 'camarero → server; partida → station'),
@@ -539,6 +561,12 @@ def cruzar_censo(p):
                 (('02', 'Vivero y Lonjas', 'B15'), 'Etiquetado obligatorio'),
                 (_T8 + ('A14',), 'Navidad'), (_T8 + ('A15',), 'Nochevieja'), (_T8 + ('A17',), 'Semana Santa'),
                 (_T8 + ('B21',), 'Consultar calendario de vedas'), (_T8 + ('B24',), 'Licencia sanitaria')]
+    # filas movidas del 01: el ES de la fila de origen es la tarea que se mueve
+    for _d, _o, _a, _b, _c, _h in _MOVIDAS_01:
+        if not tx.get(_AC + ('B%d' % _o,)) or not RX_HORA_CELDA.match(tx.get(_AC + ('D%d' % _o,), '')):
+            err.append('01 fila de origen %d sin tarea u hora en el ES' % _o)
+        if hora_us(tx.get(_AC + ('D%d' % _o,), '00:00')) != _h:
+            err.append('01 fila %d: la hora %r no es la del ES de la fila %d' % (_d, _h, _o))
     for k, ini in esperado:
         if not tx.get(k, '').startswith(ini):
             err.append('POR_CELDA %r: el ES no empieza por %r (trae %r)' % (k, ini, tx.get(k)))

@@ -224,6 +224,21 @@ for (_corto, _celda), _v in (
         (('03', 'B23'), '355–375 °F, 20–25 min'),
         (('03', 'B24'), '445–465 °F with steam, 40–50 min (by size)')):
     POR_CELDA[(_corto, HOJA_DE[_corto], _celda)] = _v
+# Ronda de revisión (31-oct): orden por horas del 01. Apertura: el control de la sala de obrador (ES B10, 03:00) va
+# tras el pesado y el amasado; mover la fila arrastraría la nota de F7, así que se ajusta la HORA a 3:30 AM (la del
+# amasado y el agua), sin mover filas. Cierre: las tareas de las 2:00 PM antes que las de las 2:30 PM (mismas filas 29-32;
+# A, B, C y D se mueven con su tarea; sin notas en F)
+_AC = ('01', 'Apertura y Cierre')
+POR_CELDA[_AC + ('D10',)] = '3:30 AM'
+_MOVIDAS_01 = [  # fila destino, fila ES de origen, A EN, B EN, C EN, D EN
+    (29, 30, 'Shop', "Count day-old bread: donate, make breadcrumbs or croutons", 'Counter staff', '2:00 PM'),
+    (30, 32, 'General', "Order flour and ingredients for tomorrow", 'Manager', '2:00 PM'),
+    (31, 29, 'Production', "Check ovens are off and clean; gas ovens: burners, gaskets and connections serviced by a licensed technician as your local code requires. Gas smell: light nothing, get out and call the gas company or 911 from outside", 'Baker', '2:30 PM'),
+    (32, 31, 'Shop', "Close out the register and log sales: cash count and over/short against the POS Z report", 'Manager', '2:30 PM'),
+]
+for _d, _o, _a, _b, _c, _h in _MOVIDAS_01:
+    for _col, _v in (('A', _a), ('B', _b), ('C', _c), ('D', _h)):
+        POR_CELDA[_AC + ('%s%d' % (_col, _d),)] = _v
 # 08 · campañas españolas (Navidad con roscón y turrón, Semana Santa, Día del Pan, Comuniones) → calendario US
 for _fila, (_a, _b) in ((11, ('Holiday season', 'Stollen, panettone, holiday breads and dinner rolls; pre-orders and '
                                                 'gift boxes')),
@@ -268,8 +283,6 @@ ADAPTAR = OrderedDict([
     (('01', 'Apertura y Cierre', 'B24'), 'caja registradora → POS; ' + _CAJA),
     (('01', 'Apertura y Cierre', 'B25'), _LIMPIAR),
     (('01', 'Apertura y Cierre', 'B28'), _LIMPIAR),
-    (('01', 'Apertura y Cierre', 'B29'), _GAS),
-    (('01', 'Apertura y Cierre', 'B31'), _CAJA),
     # 04
     (('04', 'Expositor y Venta', 'B6'), _ETIQUETAS + '. ' + _BASCULA),
     (('04', 'Expositor y Venta', 'B7'), 'napolitanas → pain au chocolat; ensaimadas → danishes (o la bollería de tu '
@@ -474,7 +487,8 @@ def cruzar_censo(p):
             err.append('molde plano: %s sin UNA línea de marca %r' % (c, MARCA_ES))
     # lo que POR_CELDA reescribe es lo que el ES dice en esa celda (°C de proceso y campañas del 08)
     for k, v in POR_CELDA.items():
-        if k[2] == CELDA_TITULO or k[0] == HOJA_CAL[0]:
+        if k[2] == CELDA_TITULO or k[0] == HOJA_CAL[0] or (k[:2] == _AC and (k[2] == 'D10' or
+                                                                          int(k[2][1:]) in range(29, 33))):
             continue
         es = tx.get(k, '')
         if k[0] == '08':
@@ -484,6 +498,11 @@ def cruzar_censo(p):
     esperado = [(('08', 'Eventos y Temporadas', 'A11'), 'Navidad'), (('08', 'Eventos y Temporadas', 'A12'), 'Semana Santa'),
                 (('08', 'Eventos y Temporadas', 'A13'), 'San Valentin'), (('08', 'Eventos y Temporadas', 'A14'), 'Halloween'),
                 (('08', 'Eventos y Temporadas', 'A15'), 'Dia del Pan'), (('08', 'Eventos y Temporadas', 'A16'), 'Comuniones')]
+    for _d, _o, _a, _b, _c, _h in _MOVIDAS_01:
+        if hora_us(tx.get(_AC + ('D%d' % _o,), '00:00')) != _h or not tx.get(_AC + ('B%d' % _o,)):
+            err.append('01 fila %d: la hora %r o la tarea no es la del ES de la fila %d' % (_d, _h, _o))
+    if tx.get(_AC + ('D10',)) != '03:00' or tx.get(_AC + ('D9',)) != '03:30':
+        err.append('01 D10: el ES ya no trae las 03:00 tras las 03:30 de D9 (errata)')
     for k, ini in esperado:
         if not tx.get(k, '').startswith(ini):
             err.append('POR_CELDA %r: el ES no empieza por %r (trae %r)' % (k, ini, tx.get(k)))

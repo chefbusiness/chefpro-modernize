@@ -234,6 +234,8 @@ for _celda in ('C18', 'C19', 'C20'):
     POR_CELDA[('01', 'Setup y Teardown', _celda)] = 'Window staff'
 for _fila in range(17, 22):
     POR_CELDA[('06', 'Perfiles', 'A%d' % _fila)] = 'Window staff'
+# Ronda de revisión (31-oct): 06 C27 «Momento» = «Semanal» repetía la frecuencia de D27 → «Any time»
+POR_CELDA[('06', 'Perfiles', 'C27')] = 'Any time'
 # 03 · temperaturas de cocción (FDA Food Code 3-401.11; el ES dice «>=74 °C aves, >=63 °C otros»)
 POR_CELDA[('03', 'APPCC Movil', 'B8')] = (
     'Probe internal cooking temps: poultry 165 °F; ground beef and other ground meats 155 °F for 17 s; fish and '
@@ -266,7 +268,8 @@ for _fila, (_mes, _ev) in CALENDARIO.items():
 # va por POR_CELDA (cruzar_censo lo exige).
 # ==========================================================================
 _A = _base.ADAPTAR
-_FRIO = ('Frío: 41 °F o menos; congelado, 0 °F o menos (FDA Food Code 3-501.16); nevera portátil → cooler, mesa '
+_FRIO = ('Frío: 41 °F o menos (FDA Food Code 3-501.16); lo congelado, que siga congelado (0 °F o menos es el objetivo '
+         'habitual, no la cifra de 3-501.16); nevera portátil → cooler, mesa '
          'refrigerada → refrigerated prep table; si la tarea pide lectura, coletilla «— log reading: ____ °F»')
 _CALIENTE = ('Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16), o time as a public health control '
              'con procedimiento escrito: hora marcada y servir o descartar en 4 h (FDA Food Code 3-501.19); sin los '
