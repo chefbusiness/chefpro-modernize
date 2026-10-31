@@ -46,7 +46,7 @@ const TEMPLATES = [
     icon: Calculator,
     type: '.xlsx',
     title: 'Sushi Fish, Rice & Costing Calculator',
-    desc: "Fish yield (cost per usable lb of whole salmon, fillet and tuna saku, per slice and per roll, and whether the whole fish pays off), sushi rice (lb of sushi rice per lb of raw rice, nigiri per lb, rice to cook a day) and the food cost, suggested price and margin by channel of 14 products, in pounds and ounces. The starting values are kit estimates: replace them with your own.",
+    desc: "Fish yield (cost per usable lb of whole salmon, fillet and tuna saku, per slice and per roll, and whether the whole fish pays off), sushi rice (lb of sushi rice per lb of raw rice, nigiri per lb of raw rice, rice to cook a day) and the food cost, suggested price and margin by channel of 14 products, in pounds and ounces. The starting values are kit estimates: replace them with your own.",
   },
   {
     key: 'equivalents-guide',
