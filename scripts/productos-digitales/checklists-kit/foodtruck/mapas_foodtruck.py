@@ -484,9 +484,10 @@ REGLAS_US.update([
     ('propano', ('propano según NFPA 58; inspección del fire marshal (propano, extintores, extinción)', 'NFPA 58; '
                  '[local] fire marshal (research US §5)')),
     ('fugas', ('prueba de fugas con agua jabonosa tras cada cambio de bombona', 'NFPA 1 §50.7 / NFPA 58 (fichas de '
-               'bomberos: Orangeburg SC, North Port FL; la numeración cambia con la edición)')),
+               'bomberos: Yonkers NY; North Davis UT «NFPA Food Truck Safety Fact Sheet»; la numeración cambia con la '
+               'edición)')),
     ('separacion', ('al menos 10 ft libres de edificios, otros vehículos y combustibles', 'NFPA 1 §50.8 / NFPA 96 '
-                    'cap. 17, según la edición adoptada (NFPA Food Truck Safety Fact Sheet; TAMU EHS 2024)')),
+                    'cap. 17, según la edición adoptada (fichas de bomberos: Estero FL; TAMU EHS 2024)')),
     ('extintor_k', ('extintor de clase K donde se fríe con aceite o grasa', 'NFPA 10')),
     ('generador', ('generador fuera del truck, lejos de la ventanilla y de las tomas de aire (monóxido de carbono); '
                    'repostar apagado y frío', '[criterio del kit] + manual del fabricante; [local] organizador y fire '
