@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-31T02:36:17Z",
+  "generado": "2026-10-31T09:21:03Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-sushi-bar"
   ],
-  "commit": "9d6dd150",
+  "commit": "8cfde6bb",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -10237,7 +10237,7 @@
    "corto": "SUSC",
    "plan": "sus",
    "tipo": "check",
-   "sha256": "db87cd9e4c05c467840822ced9de33b73b4e70c93a6a5cdb192a9c1923ab7030",
+   "sha256": "298a99d182643d76c87863680e1e881e188b2686c7903a12bfc2ec96e8bae594",
    "nombre_en": "sushi-restaurant-startup-checklist.xlsx",
    "titulo_en": "Sushi Restaurant Startup Checklist (80 Tasks)",
    "hojas": [

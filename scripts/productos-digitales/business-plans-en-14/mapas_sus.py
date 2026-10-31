@@ -200,7 +200,7 @@ RX_REESCRIBIR = re.compile(
 # (LIVE 26e618f8 + #186) y de la Pizza EN (+ #186), medidos el 31-oct sobre 51060183. Si cambian, hay que re-extraer y
 # rehacer preparar_tandas (bp14.py verificar avisa)
 SHA_TAQ = OrderedDict([
-    ('textos_es.json', 'e0a469d45ad3668226661c97d5eea89000400e9eb42e40d0c02c20931a92d584'),
+    ('textos_es.json', '6ea5f29803fe74e6013738f7896931c473b4bb143cca529dd3c850d49725874c'),
     ('textos_en/GM.json', '17bceb7b136363c3869b5e713fac64e6972bd87114bd45db58a993c08d23a877'),
     ('textos_en/GM.revision.json', 'bfc5dfa013ee8661d33e1181fcafdea1c291c8f2d23068dc1c1c967f72905d6e'),
     ('textos_en/GR.json', 'ead32eecbe8cd17532ce8e8a560d9ffc22aa91bd16a921e931792441fc0b5b27'),
@@ -210,11 +210,11 @@ SHA_TAQ = OrderedDict([
     ('textos_en/GTAQ-plan.json', 'e2fdac65fca460a019411ea99c7c01c92bd4ec8af9cf8f3d8ed1c9eecab2a014'),
     ('textos_en/GTAQ-check.json', '33ab5e40c525f126e37f3ae67b51defa00631e3048ce51e945f61d313e4effd6'),
     ('formulas_taq.json', '32ebc9b30708271f45ec8c6534da31cef637b108f7e3228ecd52e4559fd05c10'),
-    ('censo_es.json', '633aaaa18ef07b790e1b5791c919fc9269fa29044608661147abd2f37f69a8b9'),
+    ('censo_es.json', '0626cb6d3731262445961ff212bbbbad6c6492558c21a6339f4e85dd036aff68'),
     ('datos_taq.py', '0f0342a6eaf357eb8b97aba07c74a9f80548034b86bb48a30a6d7bdf877185ab'),
 ])
 SHA_POL = OrderedDict([
-    ('textos_es.json', 'f39efae33c6742303aefbf873ee81b6badef64d0b236ff4b0d94db971dd1fd5b'),
+    ('textos_es.json', '587ef9920989718002a1ab7071c0bedf12d24faa2ef5919e64d4aad1aa2d6ea7'),
     ('textos_en/GM.json', '007679a592c311b2f11519c696ab3d52d1699b154d06252c2683f4159a3946ec'),
     ('textos_en/GR.json', '764fabde7a5f42a4091f0405bf4811c328cf840eeebe46b509d5853272a6c34e'),
     ('textos_en/GR.revision.json', '9141fde9272e0fa6d3a239f3b84020c5d47a4e927977ba307b24d27f6c02658b'),
@@ -224,7 +224,7 @@ SHA_POL = OrderedDict([
     ('textos_en/GPOL-check.json', 'f4b33e4997c124695850f19acc9d4b8943fd77e5e3bc23de7f9e5378f967fc58'),
 ])
 SHA_PIZ = OrderedDict([
-    ('textos_es.json', 'c477dc83a61609ec7de3ebe3d23937b27267c7e48000d389271e382ad630319b'),
+    ('textos_es.json', '7f504ed3ffc1ec12e95b36888dbf4e92711b7d1cc4319cb6128251deea817986'),
     ('textos_en/GM.json', '0f6cd4198a3c533331cca1111dde7a5de26c87b173e0d2712abafac72e6c08ed'),
     ('textos_en/GR.json', 'ef088edc5b1709acd9ad28ab3f5d7023a6421f505fc0d0dfedb63a7f099e8151'),
     ('textos_en/GM.revision.json', 'b6d5e7768ba1fa4240dd3c055355db4fc17559b3eec0249f57978cbf574d7876'),
@@ -232,14 +232,14 @@ SHA_PIZ = OrderedDict([
     ('textos_en/GPIZ-plan.json', 'a52044a121fd9e28c7931534c3ee54adabe856a186c543c5f13e6aa08a7dc3b6'),
     ('textos_en/GPIZ-check.json', 'c3d62514b899edb9d0aa9a1c32fcaa3517a22229fe4121bd72d2b978d43556da'),
     ('formulas_piz.json', '286b3675b30e2eed71982781e209f4aa063fe4c8be2e7c616ebbd54877caebb2'),
-    ('censo_es.json', '2c8a1f63f2b5de0db1d46794327831bc16405744f5fe6e8b0ddc68286708b933'),
+    ('censo_es.json', '442b610642a4a11ea781c1790d02a74bf5c41b4e9da5fa790b8ab2c3fe1bf53b'),
     ('datos_piz.py', '44c178d7bb9ae94eb696f26d8f964ba98f510e275e4104ce5baece71e1d2158e'),
 ])
 # sha256 del ES FINAL (F2 ES revisada y regenerada, 51060183 = plan-sushi/REVISION-FINAL.md; Mac = VPS el 31-oct): si el
 # ES cambia, manda el ES nuevo (re-extraer y avisar)
 SHA_ES = OrderedDict([
     ('plan-financiero-sushi-bar.xlsx', '9d6c2fdc314de00507180d30cb3bb68ff57c2c929b091849229c7c6e712c6f6c'),
-    ('checklist-apertura-sushi-bar.xlsx', 'db87cd9e4c05c467840822ced9de33b73b4e70c93a6a5cdb192a9c1923ab7030'),
+    ('checklist-apertura-sushi-bar.xlsx', '298a99d182643d76c87863680e1e881e188b2686c7903a12bfc2ec96e8bae594'),
     ('plan-de-negocio-sushi-bar.docx', 'ac6a4994f526bff56a2ac0d35082467f6933a1e4bd123d627d684b2723d3b368'),
 ])
 

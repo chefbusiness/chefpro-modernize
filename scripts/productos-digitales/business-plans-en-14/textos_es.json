@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-31T02:36:17Z",
+  "generado": "2026-10-31T09:21:03Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "9d6dd150",
+  "commit": "8cfde6bb",
   "libros": {
    "SUSP": {
     "es": "plan-financiero-sushi-bar.xlsx",
@@ -12,7 +12,7 @@
    "SUSC": {
     "es": "checklist-apertura-sushi-bar.xlsx",
     "en": "sushi-restaurant-startup-checklist.xlsx",
-    "sha256": "db87cd9e4c05c467840822ced9de33b73b4e70c93a6a5cdb192a9c1923ab7030"
+    "sha256": "298a99d182643d76c87863680e1e881e188b2686c7903a12bfc2ec96e8bae594"
    }
   },
   "n_cadenas": 858,
@@ -13161,15 +13161,15 @@
     }
    ],
    "reuso": {
-    "grupo": "GM",
-    "id": "c0733",
-    "en": "Use the dropdown: ✓, ☐, N/A. N/A = not applicable, it comes out of the total.",
+    "grupo": "GTAQ-check",
+    "id": "c0654",
+    "en": "Use the dropdown: ✓, ☐, N/A. ✓ = done, ☐ = pending, N/A = not applicable and comes out of the total.",
     "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-3 (Bar EN)",
-    "origen": "texto-bar",
+    "conjunto": "business-plans-en-12 (Taco EN cerrada)",
+    "origen": "texto-taq",
     "donde": [
-     "BARC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15",
-     "BARC F2 - Local!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17"
+     "TAQC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16",
+     "TAQC F2 - Local, humos y gas!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19"
     ]
    }
   },
@@ -19156,7 +19156,18 @@
      "t": "celda",
      "tr": "traducir"
     }
-   ]
+   ],
+   "reuso": {
+    "grupo": "GM",
+    "id": "c0116",
+    "en": "How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb is somewhat smaller: with a 15% cushion, about 13% of plan",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-12 (Taco EN cerrada)",
+    "origen": "celda-taq",
+    "donde": [
+     "TAQP 0. Supuestos!C67"
+    ]
+   }
   },
   {
    "id": "c0118",
@@ -19936,7 +19947,18 @@
      "t": "celda",
      "tr": "traducir"
     }
-   ]
+   ],
+   "reuso": {
+    "grupo": "GM",
+    "id": "c0320",
+    "en": "How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs and the loan payment is somewhat smaller: with a 25% cushion, 20%. The required minimum is set in the \"0. Assumptions\" tab",
+    "tratamiento_origen": "traducir",
+    "conjunto": "business-plans-en-12 (Taco EN cerrada)",
+    "origen": "celda-taq",
+    "donde": [
+     "TAQP Punto Equilibrio!E24"
+    ]
+   }
   },
   {
    "id": "c0322",
@@ -23201,7 +23223,7 @@
   },
   {
    "id": "c0737",
-   "es": "Mide y anota el pH de cada tanda en la hoja 03 del Kit de Tareas Sushi Bar: su APPCC fija como límite crítico un pH de 4,6 o menos (criterio del Codex, no cifra legal); apunta a 4,2-4,3 para tener margen. Calibra el pH-metro con sus soluciones antes de empezar",
+   "es": "Mide y anota el pH de cada tanda en la plantilla 02 del Kit de Tareas Sushi Bar: su APPCC fija como límite crítico un pH de 4,6 o menos (criterio del Codex, no cifra legal); apunta a 4,2-4,3 para tener margen. Calibra el pH-metro con sus soluciones antes de empezar",
    "grupo": "GSUS-check",
    "tratamiento": "traducir",
    "planes": [
@@ -23216,7 +23238,7 @@
     "US §6.2: sushi rice = TCS: TPHC 4 h (3-501.19) por defecto o variance + HACCP plan (3-502.11; pH del condado); sin pH «legal»",
     "plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan (HACCP plan solo si hay variance)"
    ],
-   "sha1": "922afc6a9acf",
+   "sha1": "5e3dfe36ecb3",
    "donde": [
     {
      "f": "SUSC",
