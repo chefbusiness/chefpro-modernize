@@ -21,7 +21,7 @@
 | 9 | PRODUCTS `lang: 'en'` | `verify-purchase.ts`, `resend-access.ts` | ✅ |
 | 10 | Descargas: claves del ES → 11 xlsx EN + `equivalents-guide` | `get-download-urls.ts` (+ `productos-digitales-config.ts`) | ✅ nombres = `SPEC.md` §2 = `dl/` en disco; `gate-flujo-postpago --offline`: 12 ficheros = 12 tarjetas |
 | 11 | Precio `{ usd: 19 }` | `product-prices.ts` vía `sync-product-prices.py` | ✅ `--check` verde (92 productos) |
-| 12 | Payment Link | `payment-links.ts` vía `sync-payment-links.py` | ⏳ John |
+| 12 | Payment Link | `payment-links.ts` vía `sync-payment-links.py` | ✅ 31-oct (John): `https://buy.stripe.com/bJecMY0y0csC8bd7Vj6oo2e`, env `VITE_STRIPE_PAYMENT_LINK_TACO_SHOP_CHECKLISTS_KIT` (scope builds, todos los contextos); `--check` verde (92) |
 | 13 | Admin de accesos | `admin-generate-access.ts`, `AdminGenerateAccess.tsx` | ✅ |
 | 14 | Config SPA y changelog | `productos-digitales-config.ts`, `productos-changelog.ts` | ✅ v2.0 «First English edition» (la versión de los xlsx es 2.0 · October 2026) |
 | 15 | Catálogo: `name.en`, `description.en`, `urlByLang.en`, `priceByLang.en` | `src/data/products-catalog.ts` | ✅ `$19`; + `digital-products-catalogue.json` (entrada EN, como las hermanas) |
