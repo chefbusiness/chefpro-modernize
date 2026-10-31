@@ -1158,6 +1158,23 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/taco-shop-checklist-templates/BONUS-02-taco-shop-annual-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-31): Food Truck Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-food-truck (las de TEMPLATES de
+  // src/pages/FoodTruckChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/food-truck-checklist-templates/ (SPEC
+  // checklists-kit/foodtruck §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'food-truck-checklist-templates': {
+    'setup-teardown': '/dl/food-truck-checklist-templates/01-food-truck-setup-teardown-checklist.xlsx',
+    'operaciones-moviles-vehiculo': '/dl/food-truck-checklist-templates/02-food-truck-pre-trip-vehicle-checklist.xlsx',
+    'appcc-seguridad-alimentaria-movil': '/dl/food-truck-checklist-templates/03-food-truck-health-inspection-food-safety-checklist.xlsx',
+    'permisos-eventos-localizaciones': '/dl/food-truck-checklist-templates/04-food-truck-permits-events-locations-checklist.xlsx',
+    'tareas-manager': '/dl/food-truck-checklist-templates/05-food-truck-manager-checklist.xlsx',
+    'tareas-perfiles': '/dl/food-truck-checklist-templates/06-food-truck-duties-by-role.xlsx',
+    'semanales-mensuales': '/dl/food-truck-checklist-templates/07-food-truck-weekly-monthly-cleaning-maintenance-checklist.xlsx',
+    'eventos-estacionales': '/dl/food-truck-checklist-templates/08-food-truck-events-seasons-checklist.xlsx',
+    'plantilla-personalizable': '/dl/food-truck-checklist-templates/09-blank-food-truck-checklist-template.xlsx',
+    'bonus-briefing-pre-evento': '/dl/food-truck-checklist-templates/BONUS-01-food-truck-pre-event-briefing-template.xlsx',
+    'bonus-calendario-anual': '/dl/food-truck-checklist-templates/BONUS-02-food-truck-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-24): Chocolate Shop Checklists Kit Pro. MISMAS claves que kit-tareas-chocolateria (las de TEMPLATES de
   // src/pages/ChocolateShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx EN de /dl/chocolate-shop-checklist-templates/
   // (SPEC checklists-kit/chocolate §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.

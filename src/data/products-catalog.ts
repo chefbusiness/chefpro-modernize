@@ -657,11 +657,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-food-truck',
     url: '/kit-tareas-food-truck',
     price: '€12',
-    name: { es: 'Tareas: Food Truck', en: 'Tasks: Food Truck' },
+    name: { es: 'Tareas: Food Truck', en: 'Food Truck Checklists Kit Pro' },
     description: {
       es: 'Setup y teardown, APPCC móvil, permisos y eventos.',
-      en: 'Setup and teardown, mobile HACCP, permits and events.',
+      en: 'Food truck checklists for setup and teardown, the pre-trip and vehicle check, health inspection prep, permits and events, the manager, duties by role and cleaning: 141 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `food-truck-checklist-templates`, $15 USD.
+    urlByLang: { en: '/en/digital-products/food-truck-checklist-templates' },
+    priceByLang: { en: '$15' },
   },
   'kit-tareas-panaderia': {
     id: 'kit-tareas-panaderia',

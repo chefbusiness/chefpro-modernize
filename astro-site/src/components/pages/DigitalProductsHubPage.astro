@@ -59,6 +59,27 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Food Truck Checklists Kit Pro (31-oct-2026, duodécimo hermano vertical del Restaurant Checklists Kit Pro, el primero de
+  // molde plano, $15): el más nuevo → 1; el Taco Shop Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA
+  // tarjeta que ya estaba («Recurring Tasks: Food Truck», entre los kits del ES): se sube y su copy pasa a describir la
+  // edición EN (decía «mobile HACCP», «licenses and insurance per event» y «vehicle and generator maintenance» sin más).
+  {
+    name: 'Food Truck Checklists Kit Pro',
+    slug: '/kit-tareas-food-truck',
+    description: "9 templates + 3 bonuses (12 files) with 141 food truck tasks already written in Excel: setup and teardown, the pre-trip and vehicle check, health inspection prep, permits and events, manager, roles, cleaning and an annual calendar. Print it, hand it to your crew, check it off.",
+    features: [
+      "Health inspection prep in °F under the FDA Food Code",
+      "Pre-trip: generator, propane leak test, water tanks",
+      "Setup and teardown at every vending spot",
+      "Permits, commissary, insurance and 6 event types",
+      "Annual calendar: US events, menus and maintenance",
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'food-truck', 'street-food', 'events', 'mobile-catering'],
+  },
   // Taco Shop Checklists Kit Pro (31-oct-2026, undécimo hermano vertical del Restaurant Checklists Kit Pro): el más nuevo → 1;
   // el Rotisserie Chicken Restaurant Business Plan Kit y el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba
   // («Recurring Tasks: Mexican Taqueria», entre las guías y kits del ES): se sube y su copy pasa a describir la edición EN
@@ -1071,22 +1092,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'management', 'tapas', 'gastropub', 'bar'],
-  },
-  {
-    name: 'Recurring Tasks: Food Truck',
-    slug: '/kit-tareas-food-truck',
-    description: '11 operational checklists for food trucks: setup and teardown, mobile vehicle and generator operations, mobile HACCP food safety, permits and events, team roles, and annual calendar.',
-    features: [
-      'Setup / teardown: generator, gas, kitchen, service',
-      'Mobile HACCP: cold chain and variable temperatures',
-      'Permits, licenses, and insurance per event',
-      'Vehicle and generator maintenance',
-    ],
-    iconName: 'Truck',
-    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'food-truck', 'street-food', 'events', 'mobile-catering'],
   },
   {
     name: 'Recurring Tasks: Bakery / Production Kitchen',

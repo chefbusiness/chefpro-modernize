@@ -108,7 +108,8 @@ GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia
 # Pro, 18-oct-2026), /kit-tareas-heladeria (gemelo EN: Ice Cream Shop Checklists Kit Pro, 24-oct-2026),
 # /kit-tareas-chocolateria (gemelo EN: Chocolate Shop Checklists Kit Pro, 24-oct-2026) y /kit-tareas-pasteleria
 # (gemelo EN: Pastry Shop Checklists Kit Pro, 24-oct-2026) y /kit-tareas-hotel (gemelo EN: Hotel Checklists Kit Pro,
-# 27-oct-2026) y /kit-tareas-taqueria (gemelo EN: Taco Shop Checklists Kit Pro, 31-oct-2026).
+# 27-oct-2026) y /kit-tareas-taqueria (gemelo EN: Taco Shop Checklists Kit Pro, 31-oct-2026) y /kit-tareas-food-truck
+# (gemelo EN: Food Truck Checklists Kit Pro, 31-oct-2026).
 TAREAS_ES = ['/kit-tareas', '/kit-tareas-asador', '/kit-tareas-bar', '/kit-tareas-cafeteria', '/kit-tareas-catering',
              '/kit-tareas-chef-privado', '/kit-tareas-chocolateria', '/kit-tareas-dark-kitchen',
              '/kit-tareas-food-truck', '/kit-tareas-hamburgueseria', '/kit-tareas-heladeria', '/kit-tareas-hotel',

@@ -1260,6 +1260,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'food-truck-checklist-templates': {
+    version: '1.1',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '1.1',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 1.1: 9 checklist templates plus 2 bonuses (11 Excel files, one sheet each) with 141 food truck tasks already written, adapted to the US with notes for the UK.",
+          "US food truck roles (food truck chef, prep cook, window staff, driver / tech, manager), the time each setup and teardown task takes, and an OK column with a ✓ / — / N/A drop-down that turns the row green on 7 of the checklists.",
+          "Setup, teardown and the pre-trip check: parking only in a legal vending spot, the generator outside and away from the window (carbon monoxide), propane cylinders secured with a soapy-water leak test after every swap (NFPA 58), ABC and Class K extinguishers tagged, the hood suppression system every 6 months (NFPA 96), registration with your state DMV and a CDL only at 26,001 lb GVWR or more.",
+          "Food safety under the FDA Food Code in °F: cold at 41 °F or below before loading, in transit and on arrival, cooking to 165, 155 or 145 °F, hot holding at 135 °F or time as a public health control, leftovers cooled by the two-stage rule with 7-day date marking, a handwashing sink at 100 °F or above, no bare-hand contact, sanitizer checked with test strips, the 9 major allergens (the UK's 14 noted) and a written allergen notice.",
+          "Water and the commissary: potable water from an approved source, a wastewater tank at least 15% larger than the fresh tank and dumped only at the commissary or an approved servicing area, and prep never in a home kitchen.",
+          "US permits and events: mobile vending license, mobile food unit health permit and commissary agreement, general liability insurance and a certificate of insurance, business license, seller's permit and EIN, sales tax by vending location, temporary food event permits, and 6 event types from food truck parks to weddings.",
+          "Manager, weekly and monthly lists for a US food truck: the route within each city's vending rules, food cost against a 28–35% benchmark, ROI per event, the daily cash reconciliation with a written tip pool (managers and supervisors don't keep tips), food truck apps and a monthly check that every permit is current. Plus a pre-event briefing, a 12-month US calendar of events, menus, maintenance and marketing, every sheet set up to print on US Letter paper, and the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
   'ghost-kitchen-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',

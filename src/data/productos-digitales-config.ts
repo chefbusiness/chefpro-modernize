@@ -1831,6 +1831,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-31): twin of kit-tareas-food-truck, independent product.
+  'food-truck-checklist-templates': {
+    id: 'food-truck-checklist-templates',
+    name: 'Food Truck Checklists Kit Pro',
+    priceLabel: '$15',
+    accessPath: '/en/digital-products/food-truck-checklist-templates/access',
+    emailSubject: 'Your access to Food Truck Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Food Truck Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Food Truck Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'setup-teardown': '/dl/food-truck-checklist-templates/01-food-truck-setup-teardown-checklist.xlsx',
+      'operaciones-moviles-vehiculo': '/dl/food-truck-checklist-templates/02-food-truck-pre-trip-vehicle-checklist.xlsx',
+      'appcc-seguridad-alimentaria-movil': '/dl/food-truck-checklist-templates/03-food-truck-health-inspection-food-safety-checklist.xlsx',
+      'permisos-eventos-localizaciones': '/dl/food-truck-checklist-templates/04-food-truck-permits-events-locations-checklist.xlsx',
+      'tareas-manager': '/dl/food-truck-checklist-templates/05-food-truck-manager-checklist.xlsx',
+      'tareas-perfiles': '/dl/food-truck-checklist-templates/06-food-truck-duties-by-role.xlsx',
+      'semanales-mensuales': '/dl/food-truck-checklist-templates/07-food-truck-weekly-monthly-cleaning-maintenance-checklist.xlsx',
+      'eventos-estacionales': '/dl/food-truck-checklist-templates/08-food-truck-events-seasons-checklist.xlsx',
+      'plantilla-personalizable': '/dl/food-truck-checklist-templates/09-blank-food-truck-checklist-template.xlsx',
+      'bonus-briefing-pre-evento': '/dl/food-truck-checklist-templates/BONUS-01-food-truck-pre-event-briefing-template.xlsx',
+      'bonus-calendario-anual': '/dl/food-truck-checklist-templates/BONUS-02-food-truck-annual-calendar.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-24): twin of kit-tareas-chocolateria, independent product.
   'chocolate-shop-checklist-templates': {
     id: 'chocolate-shop-checklist-templates',
