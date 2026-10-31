@@ -286,7 +286,7 @@ const data: KitTareasData = {
     },
     {
       q: 'What should a bakery cleaning schedule include?',
-      a: 'Daily cleaning goes in the closing checklist. On top of that, the kit schedules a weekly deep clean of the ovens (ash and grease) and of the mixer, divider and proofer, sanitized at label strength and checked with test strips, plus the scale calibration, the inventory and the use-by dates; and monthly upkeep: preventive oven maintenance (burners, gaskets, thermostats; gas ovens by a licensed technician), mixer maintenance (belts, gears, lubrication), a review of your temperature, cleaning and allergen logs, and pest control by a licensed operator with the service report on file while the team checks traps and signs in the flour storage.',
+      a: 'Daily cleaning goes in the closing checklist. On top of that, the kit schedules a weekly deep clean of the ovens (carbon and grease) and of the mixer, divider and proofer, sanitized at label strength and checked with test strips, plus the scale calibration, the inventory and the use-by dates; and monthly upkeep: preventive oven maintenance (burners, gaskets, thermostats; gas ovens by a licensed technician), mixer maintenance (belts, gears, lubrication), a review of your temperature, cleaning and allergen logs, and pest control by a licensed operator with the service report on file while the team checks traps and signs in the flour storage.',
     },
     {
       q: 'Does it include a daily production sheet?',
@@ -464,6 +464,7 @@ const data: KitTareasData = {
     { href: '/en/digital-products/taco-shop-checklist-templates', label: 'Taco Shop Checklists Kit Pro' },
     { href: '/en/digital-products/food-truck-checklist-templates', label: 'Food Truck Checklists Kit Pro' },
     { href: '/en/digital-products/seafood-restaurant-checklist-templates', label: 'Seafood Restaurant Checklists Kit Pro' },
+    { href: '/en/digital-products/fine-dining-checklist-templates', label: 'Fine Dining Checklists Kit Pro' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },

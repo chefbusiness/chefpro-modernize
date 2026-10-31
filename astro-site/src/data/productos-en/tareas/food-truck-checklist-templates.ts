@@ -60,7 +60,7 @@ const data: KitTareasData = {
     faqs: [
       {
         q: 'What is on a food truck health inspection checklist?',
-        a: 'Cold food at 41 °F or below in transit and on arrival, frozen at 0 °F or below, cooking temperatures (poultry 165 °F, ground meats 155 °F, fish and whole-muscle meats 145 °F), hot holding at 135 °F or above, a stocked handwashing sink with hot water at 100 °F or above, no bare-hand contact with ready-to-eat food, sanitizer checked with test strips, the 9 major allergens, and the paperwork in the truck: health permit, temperature and commissary logs, food handler cards and a Certified Food Protection Manager.',
+        a: 'Cold food at 41 °F or below in transit and on arrival, frozen food kept frozen (0 °F or below is the common target), cooking temperatures (poultry 165 °F, ground meats 155 °F, fish and whole-muscle meats 145 °F), hot holding at 135 °F or above, a stocked handwashing sink with hot water at 100 °F or above, no bare-hand contact with ready-to-eat food, sanitizer checked with test strips, the 9 major allergens, and the paperwork in the truck: health permit, temperature and commissary logs, food handler cards and a Certified Food Protection Manager.',
       },
       {
         q: 'What should a food truck fire inspection checklist cover?',
@@ -144,7 +144,7 @@ const data: KitTareasData = {
       {
         icon: 'ShieldCheck',
         title: 'Food Truck Food Safety & Health Inspection Prep Checklist (FDA Food Code)',
-        desc: 'Temperatures before loading, in transit and on arrival (41 °F or below, frozen at 0 °F or below), cooking (poultry 165 °F, ground meats 155 °F, fish and whole-muscle meats 145 °F), hot holding at 135 °F or time as a public health control, thawing, the handwashing sink at 100 °F, no bare-hand contact, test strips, the 9 major allergens and the paperwork the inspector asks to see. 18 checks.',
+        desc: 'Temperatures before loading, in transit and on arrival (41 °F or below, frozen food kept frozen (0 °F or below is the common target)), cooking (poultry 165 °F, ground meats 155 °F, fish and whole-muscle meats 145 °F), hot holding at 135 °F or time as a public health control, thawing, the handwashing sink at 100 °F, no bare-hand contact, test strips, the 9 major allergens and the paperwork the inspector asks to see. 18 checks.',
       },
       {
         icon: 'MapPin',
@@ -280,7 +280,7 @@ const data: KitTareasData = {
   faqs: [
     {
       q: 'What is on a food truck health inspection checklist?',
-      a: 'The same things the inspector checks, in the order you can prove them. Temperatures: the cooler at 41 °F or below before loading, logged in transit and checked again on arrival (cold 41 °F or below, frozen 0 °F or below), cooking temperatures probed (poultry 165 °F; ground beef and other ground meats 155 °F for 17 seconds; fish and whole-muscle pork or beef 145 °F for 15 seconds), hot food held at 135 °F or above or under time as a public health control with a written procedure, and thawing never at room temperature. Handling: a handwashing sink with hot water at 100 °F or above, soap and paper towels (hand sanitizer only after washing), no bare-hand contact with ready-to-eat food, sanitizer checked with test strips, raw and cooked foods apart and color-coded cutting boards. Allergens and paperwork: an allergen chart at the window with the 9 major allergens, a crew trained to answer allergy questions, the health permit posted, temperature and commissary logs in the truck, food handler cards for the crew and a Certified Food Protection Manager in charge. The "Food Safety & Inspection" checklist has those 18 checks already written, with blanks for the °F readings.',
+      a: 'The same things the inspector checks, in the order you can prove them. Temperatures: the cooler at 41 °F or below before loading, logged in transit and checked again on arrival (cold 41 °F or below, frozen food kept frozen, 0 °F or below as the common target), cooking temperatures probed (poultry 165 °F; ground beef and other ground meats 155 °F for 17 seconds; fish and whole-muscle pork or beef 145 °F for 15 seconds), hot food held at 135 °F or above or under time as a public health control with a written procedure, and thawing never at room temperature. Handling: a handwashing sink with hot water at 100 °F or above, soap and paper towels (hand sanitizer only after washing), no bare-hand contact with ready-to-eat food, sanitizer checked with test strips, raw and cooked foods apart and color-coded cutting boards. Allergens and paperwork: an allergen chart at the window with the 9 major allergens, a crew trained to answer allergy questions, the health permit posted, temperature and commissary logs in the truck, food handler cards for the crew and a Certified Food Protection Manager in charge. The "Food Safety & Inspection" checklist has those 18 checks already written, with blanks for the °F readings.',
     },
     {
       q: 'What should a food truck fire inspection checklist cover?',
@@ -461,6 +461,7 @@ const data: KitTareasData = {
     { href: '/en/digital-products/taco-shop-checklist-templates', label: 'Taco Shop Checklists Kit Pro' },
     { href: '/en/digital-products/bakery-checklist-templates', label: 'Bakery Checklists Kit Pro' },
     { href: '/en/digital-products/seafood-restaurant-checklist-templates', label: 'Seafood Restaurant Checklists Kit Pro' },
+    { href: '/en/digital-products/fine-dining-checklist-templates', label: 'Fine Dining Checklists Kit Pro' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },

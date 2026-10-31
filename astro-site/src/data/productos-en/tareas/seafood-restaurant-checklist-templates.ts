@@ -287,7 +287,7 @@ const data: KitTareasData = {
   faqs: [
     {
       q: 'What should be on a seafood restaurant opening checklist?',
-      a: "Everything a restaurant opening checklist has, plus the live product. The live tank and the display first: the water temperature checked by species (per your supplier and the tank maker's spec), aeration and filters, live shellfish condition, dead animals removed and logged, the display set on drained crushed ice (display ice is never used in food), today's seafood laid out by family with price labels, and the display at 41 °F or below. Then the kitchen: the fresh fish walk-in at 41 °F or below with the fish on ice, the live shellfish walk-in at the right temperature for each species, the freezer at 0 °F or below, the sauces (cocktail sauce, mignonette, tartar, remoulade, drawn butter), the fish stock, the sides, the griddle and grill, and the day's thawing done in the walk-in or under cold running water at 70 °F or below. Then the dining room: tables set with seafood tools, bibs, wet wipes and lemons, today's menu with the catch and prices, the raw bar with shellfish from NSSP-listed shippers, and the reservations with shellfish allergy notes. The \"Opening & Closing\" checklist has those 21 opening tasks already written, each with a time and who does it.",
+      a: "Everything a restaurant opening checklist has, plus the live product. The live tank and the display first: the water temperature checked by species (per your supplier and the tank maker's spec), aeration and filters, live shellfish condition, dead animals removed and logged, the display set on drained crushed ice (display ice is never used in food), today's seafood laid out by family with price labels, and the display at 41 °F or below. Then the kitchen: the fresh fish walk-in at 41 °F or below with the fish on ice, the live shellfish walk-in with shellstock at 41 °F or below once received, the freezer at 0 °F or below, the sauces (cocktail sauce, mignonette, tartar, remoulade, drawn butter), the fish stock, the sides, the griddle and grill, and the day's thawing done in the walk-in or under cold running water at 70 °F or below. Then the dining room: tables set with seafood tools, bibs, wet wipes and lemons, today's menu with the catch and prices, the raw bar with shellfish from NSSP-listed shippers, and the reservations with shellfish allergy notes. The \"Opening & Closing\" checklist has those 21 opening tasks already written, each with a time and who does it.",
     },
     {
       q: 'What goes on a seafood restaurant closing checklist?',
@@ -472,6 +472,7 @@ const data: KitTareasData = {
     { href: '/en/digital-products/taco-shop-checklist-templates', label: 'Taco Shop Checklists Kit Pro' },
     { href: '/en/digital-products/food-truck-checklist-templates', label: 'Food Truck Checklists Kit Pro' },
     { href: '/en/digital-products/bakery-checklist-templates', label: 'Bakery Checklists Kit Pro' },
+    { href: '/en/digital-products/fine-dining-checklist-templates', label: 'Fine Dining Checklists Kit Pro' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
