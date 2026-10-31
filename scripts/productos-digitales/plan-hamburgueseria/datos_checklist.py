@@ -26,7 +26,7 @@ lista de tareas obligadas de R §3 (lo marcado 🟡 va como «compruébalo» o �
     bola salada o aliñada); anexo III, secc. V, cap. II (sólo músculo esquelético con su grasa, sin recortes ni
     desperdicios; carne a ≤ 7 °C al picar) y cap. III (picada dentro de los 6 días siguientes al sacrificio o de los 15
     si es vacuno deshuesado y envasado al vacío; ≤ 2 °C nada más picarla);
-  · Madrid Salud, informe Inf26008 (2-feb-2026): no se pica carne madurada más de 15 días; la Comunidad de Madrid: la
+  · Madrid Salud, informe Inf26008 (2-feb-2026): la carne madurada semanas queda fuera del plazo de picado de 853/2004; la Comunidad de Madrid: la
     carne picada de carne madurada «no es una práctica permitida»;
   · AESAN, «Toxiinfección por Escherichia coli» (18-abr-2022): RECOMIENDA el cocinado completo a ≥ 70 °C durante al
     menos 2 minutos (recomendación, no norma: en España no hay temperatura legal de cocción de la hamburguesa; la fija el
@@ -189,7 +189,8 @@ FASES = [
          'vacuno deshuesado y envasado al vacío (RD 1021/2022, art. 7.3, y Reglamento (CE) 853/2004, anexo III, sección '
          'V, capítulos II y III). Pide la fecha de sacrificio en cada albarán'),
         ('Nada de carne madurada para picar', 'Titular', 'Antes de diseñar la carta',
-         'No se pica carne madurada más de 15 días: Madrid Salud lo dejó escrito en su informe Inf26008 (febrero de '
+         'Se pica dentro de los 6 días siguientes al sacrificio (15 si es vacuno deshuesado y envasado al vacío), según el '
+         'Reglamento 853/2004: una carne madurada semanas queda fuera de plazo, y Madrid Salud lo aplicó así en su informe Inf26008 (febrero de '
          '2026) ante una hamburguesería que servía bolas de carne madurada. La «dry aged burger» que vende internet no '
          'cabe en un plan que vas a enseñar a un inspector'),
         ('Punto de control crítico de la cocción con sonda', 'Consultor / Titular', 'Antes de abrir',
@@ -295,8 +296,8 @@ FASES = [
          'cerveza y los refrescos con azúcares o edulcorantes añadidos, también los zero, van al 21 % (art. '
          '91.Uno.1.1.º a y b). Configúralo así en el TPV y en cada plataforma'),
         ('El batido y el menú para llevar: confírmalos con tu gestoría', 'Gestoría', 'Antes de abrir',
-         'El batido de leche no es una bebida refrescante: el plan lo lleva al 10 %, pero pide a tu gestoría que lo '
-         'confirme. El menú que sale del local se desglosa por componentes en el tique: la comida al 10 % y la bebida a '
+         'El art. 91 no recoge el batido expresamente: el plan lo lleva al 10 % como bebida de leche; confírmalo con tu gestoría, '
+         'porque con azúcares o edulcorantes añadidos podría considerarse bebida refrescante (21 %). El menú que sale del local se desglosa por componentes en el tique: la comida al 10 % y la bebida a '
          'su tipo'),
         ('Envases: lo que no se consume, sin coste; el plástico de un solo uso, cobrado', 'Titular', 'Antes de abrir',
          'El cliente puede llevarse lo que no consuma sin coste, y hay que avisarlo de forma visible, mejor en la carta '
