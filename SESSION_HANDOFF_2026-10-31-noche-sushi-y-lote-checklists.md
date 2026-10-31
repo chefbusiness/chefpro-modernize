@@ -89,3 +89,19 @@ John creó los 6 Payment Links y pidió «fusiona los 4». Hecho:
 - **Pendiente de John**: purgar también los QA cripto de hoy (`qa-sushibar`, `qa-sushi-en`, `qa-foodtruck-en`, `qa-bakery-en`,
   `qa-seafood-en`, `qa-finedining-en`) con el resto de la lista del handoff del 30-oct §4.
 - Térmica: un pico de 61 °C tras los gates LIVE; pausa hasta 54 °C antes de seguir.
+
+## 8. Cierre de sesión (31-oct, sesión Claude Code)
+
+- **Estado**: `main` limpio y sincronizado con `origin/main`; producción con los 6 productos nuevos (98 en el registro). Worktrees de
+  esta sesión borrados en el Mac y en el VPS; las ramas remotas de #189-#192 siguen en GitHub (se pueden borrar sin pérdida). Los
+  worktrees `.claude/worktrees/agent-*` (hub-de, hub-fr, hub-it, hub-nl, hub-pt…) son de otras sesiones: no tocarlos.
+- **Térmica**: cierre a 43 °C. El vigilante (`scripts/termica/watchdog-termico.sh`) sigue en bucle; `photoanalysisd`, `mediaanalysisd`
+  y `knowledgeconstructiond` siguen congelados (`pkill -CONT <nombre>` para reanudarlos).
+- **Pendiente de John**: (1) purgar los pedidos cripto QA sin pagar —los 6 de hoy (§7) + los 15 del handoff del Taco Shop §4— con
+  `crypto-report.py --purge-unpaid-before` (la CLI devuelve 401; necesita `ADMIN_PASSWORD`); (2) `CUTOVER_ENBLOG_PENDIENTE.md`.
+- **A vigilar**: el 29-nov-2026 (15:07Z) corre el routine del correo ES del Sushi Bar y el 21-mar-2027 el de los 5 EN; comprobar su
+  `list_runs` y que los borradores pasen a programados.
+- **Siguiente sesión**: Hamburguesería Smash (ES, y luego su EN) → Kit de Tareas Pollería («Próximos»). Alternativa rápida: traducir
+  al inglés alguno de los 18 productos ES que siguen sin gemelo EN (los kits de tareas son lo más corto). Antes de traducir un kit ES
+  de molde plano o v1.1, mirar la deuda de §5.
+- **Siguiente hueco de correo**: ES 2-ene-2027 · EN 24-abr-2027.
