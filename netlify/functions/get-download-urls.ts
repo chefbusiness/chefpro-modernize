@@ -1168,6 +1168,76 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/taco-shop-checklist-templates/BONUS-02-taco-shop-annual-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-31): Food Truck Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-food-truck (las de TEMPLATES de
+  // src/pages/FoodTruckChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/food-truck-checklist-templates/ (SPEC
+  // checklists-kit/foodtruck §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'food-truck-checklist-templates': {
+    'setup-teardown': '/dl/food-truck-checklist-templates/01-food-truck-setup-teardown-checklist.xlsx',
+    'operaciones-moviles-vehiculo': '/dl/food-truck-checklist-templates/02-food-truck-pre-trip-vehicle-checklist.xlsx',
+    'appcc-seguridad-alimentaria-movil': '/dl/food-truck-checklist-templates/03-food-truck-health-inspection-food-safety-checklist.xlsx',
+    'permisos-eventos-localizaciones': '/dl/food-truck-checklist-templates/04-food-truck-permits-events-locations-checklist.xlsx',
+    'tareas-manager': '/dl/food-truck-checklist-templates/05-food-truck-manager-checklist.xlsx',
+    'tareas-perfiles': '/dl/food-truck-checklist-templates/06-food-truck-duties-by-role.xlsx',
+    'semanales-mensuales': '/dl/food-truck-checklist-templates/07-food-truck-weekly-monthly-cleaning-maintenance-checklist.xlsx',
+    'eventos-estacionales': '/dl/food-truck-checklist-templates/08-food-truck-events-seasons-checklist.xlsx',
+    'plantilla-personalizable': '/dl/food-truck-checklist-templates/09-blank-food-truck-checklist-template.xlsx',
+    'bonus-briefing-pre-evento': '/dl/food-truck-checklist-templates/BONUS-01-food-truck-pre-event-briefing-template.xlsx',
+    'bonus-calendario-anual': '/dl/food-truck-checklist-templates/BONUS-02-food-truck-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-31): Bakery Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-panaderia (las de TEMPLATES de
+  // src/pages/BakeryChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/bakery-checklist-templates/ (SPEC
+  // checklists-kit/bakery §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'bakery-checklist-templates': {
+    'apertura-cierre': '/dl/bakery-checklist-templates/01-bakery-opening-closing-checklist.xlsx',
+    'masas-madre-fermentacion': '/dl/bakery-checklist-templates/02-sourdough-starter-fermentation-checklist.xlsx',
+    'hornos-coccion': '/dl/bakery-checklist-templates/03-bakery-oven-baking-checklist.xlsx',
+    'expositor-venta': '/dl/bakery-checklist-templates/04-bakery-display-counter-checklist.xlsx',
+    'tareas-manager': '/dl/bakery-checklist-templates/05-bakery-manager-checklist.xlsx',
+    'tareas-perfiles': '/dl/bakery-checklist-templates/06-bakery-duties-by-role.xlsx',
+    'semanales-mensuales': '/dl/bakery-checklist-templates/07-bakery-cleaning-maintenance-schedule.xlsx',
+    'eventos-estacionales': '/dl/bakery-checklist-templates/08-bakery-seasonal-holiday-checklist.xlsx',
+    'plantilla-personalizable': '/dl/bakery-checklist-templates/09-blank-bakery-checklist-template.xlsx',
+    'bonus-briefing-produccion': '/dl/bakery-checklist-templates/BONUS-01-bakery-daily-production-sheet.xlsx',
+    'bonus-calendario-anual': '/dl/bakery-checklist-templates/BONUS-02-bakery-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-31): Seafood Restaurant Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-marisqueria (las de TEMPLATES de
+  // src/pages/SeafoodRestaurantChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/seafood-restaurant-checklist-templates/ (SPEC
+  // checklists-kit/seafood §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'seafood-restaurant-checklist-templates': {
+    'apertura-cierre': '/dl/seafood-restaurant-checklist-templates/01-seafood-restaurant-opening-closing-checklist.xlsx',
+    'vivero-lonjas': '/dl/seafood-restaurant-checklist-templates/02-live-tank-seafood-receiving-checklist.xlsx',
+    'trazabilidad-appcc': '/dl/seafood-restaurant-checklist-templates/03-seafood-haccp-traceability-shellfish-tags.xlsx',
+    'expositor-barra': '/dl/seafood-restaurant-checklist-templates/04-raw-bar-seafood-display-checklist.xlsx',
+    'manager': '/dl/seafood-restaurant-checklist-templates/05-seafood-restaurant-manager-checklist.xlsx',
+    'perfiles': '/dl/seafood-restaurant-checklist-templates/06-seafood-restaurant-duties-by-role.xlsx',
+    'semanales-mensuales': '/dl/seafood-restaurant-checklist-templates/07-seafood-restaurant-weekly-monthly-checklist.xlsx',
+    'eventos-estacionales': '/dl/seafood-restaurant-checklist-templates/08-seafood-seasons-events-checklist.xlsx',
+    'plantilla-personalizable': '/dl/seafood-restaurant-checklist-templates/09-blank-seafood-restaurant-checklist-template.xlsx',
+    'bonus-briefing': '/dl/seafood-restaurant-checklist-templates/BONUS-01-seafood-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/seafood-restaurant-checklist-templates/BONUS-02-seafood-restaurant-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
+  // Tienda EN (2026-10-31): Fine Dining Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-restaurante-creativo (las de TEMPLATES de
+  // src/pages/FineDiningChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/fine-dining-checklist-templates/ (SPEC
+  // checklists-kit/finedining §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'fine-dining-checklist-templates': {
+    'apertura-cierre': '/dl/fine-dining-checklist-templates/01-fine-dining-opening-closing-checklist.xlsx',
+    'mise-en-place': '/dl/fine-dining-checklist-templates/02-tasting-menu-mise-en-place-checklist.xlsx',
+    'id-menu': '/dl/fine-dining-checklist-templates/03-menu-development-rd-checklist.xlsx',
+    'brigada': '/dl/fine-dining-checklist-templates/04-kitchen-brigade-duties-by-role.xlsx',
+    'periodicas': '/dl/fine-dining-checklist-templates/05-fine-dining-weekly-monthly-maintenance-checklist.xlsx',
+    'sumiller': '/dl/fine-dining-checklist-templates/06-sommelier-wine-pairing-checklist.xlsx',
+    'eventos': '/dl/fine-dining-checklist-templates/07-chefs-table-special-events-checklist.xlsx',
+    'fotografia': '/dl/fine-dining-checklist-templates/08-food-photography-social-media-press-checklist.xlsx',
+    'personalizable': '/dl/fine-dining-checklist-templates/09-blank-fine-dining-checklist-template.xlsx',
+    'apertura-negocio': '/dl/fine-dining-checklist-templates/10-restaurant-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/fine-dining-checklist-templates/11-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/fine-dining-checklist-templates/BONUS-01-fine-dining-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/fine-dining-checklist-templates/BONUS-02-fine-dining-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-24): Chocolate Shop Checklists Kit Pro. MISMAS claves que kit-tareas-chocolateria (las de TEMPLATES de
   // src/pages/ChocolateShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx EN de /dl/chocolate-shop-checklist-templates/
   // (SPEC checklists-kit/chocolate §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.

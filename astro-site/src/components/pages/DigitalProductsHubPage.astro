@@ -59,6 +59,90 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Fine Dining Checklists Kit Pro (31-oct-2026, decimoquinto hermano vertical del Restaurant Checklists Kit Pro, molde v2.0,
+  // $19): el más nuevo → 1; el Seafood Restaurant Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA
+  // tarjeta que ya estaba («Recurring Tasks: Creative / Chef-Driven Restaurant»): se sube y su copy pasa a describir la
+  // edición EN (decía «11 pre-filled» y «live cooking shows»).
+  {
+    name: 'Fine Dining Checklists Kit Pro',
+    slug: '/kit-tareas-restaurante-creativo',
+    description: "11 templates + 3 bonuses (14 files) with 477 fine dining tasks already written in Excel: tasting menu mise en place and the plating bible, R&D, the brigade, sommelier and pairing, chef's table and events, the whole restaurant and the cash drawer. Print it, delegate it, sign it off.",
+    features: [
+      "Tasting menu mise en place and plating bible",
+      "Brigade duties from executive chef to maître d'",
+      "R&D: test sessions and recipe documentation",
+      "Sommelier, wine pairing and the chef's table",
+      "Cash drawer count in US dollars",
+    ],
+    iconName: 'ChefHat',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'fine-dining'],
+  },
+  // Seafood Restaurant Checklists Kit Pro (31-oct-2026, decimocuarto hermano vertical del Restaurant Checklists Kit Pro,
+  // molde plano, $15): el más nuevo → 1; el Bakery Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA
+  // tarjeta que ya estaba («Recurring Tasks: Seafood Restaurant with Live Tanks & HACCP»): se sube y su copy pasa a
+  // describir la edición EN (decía «EU allergen rules», «fish markets» y «Official Spanish fishing seasons and closures»).
+  {
+    name: 'Seafood Restaurant Checklists Kit Pro',
+    slug: '/kit-tareas-marisqueria',
+    description: "9 templates + 3 bonuses (12 files) with 165 seafood restaurant tasks already written in Excel: opening and closing, the live tank and receiving, shellfish tags and HACCP, the raw bar and ice display, manager, roles, cleaning and US seafood seasons. Print it, hand it to your team, check it off.",
+    features: [
+      "Live tank: oxygen, salinity, pH and mortality",
+      "Receiving, shellfish tags kept 90 days, histamine",
+      "Raw bar on drained ice at 41 °F",
+      "HACCP with 5 critical control points",
+      "US seafood seasons and events, from crawfish to the Seven Fishes",
+    ],
+    iconName: 'Shell',
+    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'seafood-restaurant', 'fish', 'seafood'],
+  },
+  // Bakery Checklists Kit Pro (31-oct-2026, decimotercer hermano vertical del Restaurant Checklists Kit Pro, molde plano,
+  // $15): el más nuevo → 1; el Food Truck Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA tarjeta que
+  // ya estaba («Recurring Tasks: Bakery / Production Kitchen»): se sube y su copy pasa a describir la edición EN (decía
+  // «steam convection ovens» y «Christmas, Epiphany, and Easter campaigns»: el kit EN no trae convección ni Reyes).
+  {
+    name: 'Bakery Checklists Kit Pro',
+    slug: '/kit-tareas-panaderia',
+    description: "9 templates + 3 bonuses (12 files) with 135 bread bakery tasks already written in Excel: the overnight bake shift, the sourdough starter, deck and rack ovens with a bake table in °F, the display case and labels, manager, roles, cleaning and seasons. Print it, hand it to your team, check it off.",
+    features: [
+      "Overnight bake shift from 3:00 AM, task by task",
+      "Sourdough starter checklist, poolish and biga",
+      "Deck and rack ovens with a bake table in °F",
+      "Labels, allergens and the display case",
+      "Holiday breads and orders, from Easter to Thanksgiving",
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'bakery', 'production-kitchen', 'sourdough'],
+  },
+  // Food Truck Checklists Kit Pro (31-oct-2026, duodécimo hermano vertical del Restaurant Checklists Kit Pro, el primero de
+  // molde plano, $15): el más nuevo → 1; el Sushi Restaurant Business Plan Kit y el resto de vivos bajan un puesto. Es la MISMA
+  // tarjeta que ya estaba («Recurring Tasks: Food Truck», entre los kits del ES): se sube y su copy pasa a describir la
+  // edición EN (decía «mobile HACCP», «licenses and insurance per event» y «vehicle and generator maintenance» sin más).
+  {
+    name: 'Food Truck Checklists Kit Pro',
+    slug: '/kit-tareas-food-truck',
+    description: "9 templates + 3 bonuses (12 files) with 141 food truck tasks already written in Excel: setup and teardown, the pre-trip and vehicle check, health inspection prep, permits and events, manager, roles, cleaning and an annual calendar. Print it, hand it to your crew, check it off.",
+    features: [
+      "Health inspection prep in °F under the FDA Food Code",
+      "Pre-trip: generator, propane leak test, water tanks",
+      "Setup and teardown at every vending spot",
+      "Permits, commissary, insurance and 6 event types",
+      "Annual calendar: US events, menus and maintenance",
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'food-truck', 'street-food', 'events', 'mobile-catering'],
+  },
   // Sushi Restaurant Business Plan Kit (31-oct-2026, decimocuarta tanda de planes EN): el más nuevo → 1; el Taco Shop Checklists Kit
   // Pro y el resto de vivos bajan un puesto. SUSTITUYE a la tarjeta provisional «Business Plan: Sushi Bar» que metió la F3 del ES
   // (apuntaba al ES y describía el kit español: guía de equivalencias para Latinoamérica); una sola tarjeta por producto.
@@ -997,22 +1081,6 @@ const products = [
   },
 
   {
-    name: 'Recurring Tasks: Creative / Chef-Driven Restaurant',
-    slug: '/kit-tareas-restaurante-creativo',
-    description: '11 pre-filled operational checklists for creative and chef-driven restaurants: R&D, tasting menus, creative brigade, sommelier, events, photography, and storytelling.',
-    features: [
-      'R&D: technical sheets, trials, and costing',
-      'Tasting menu mise en place and course timing',
-      'Sommelier: cellar, pairings, tastings',
-      'Chef\'s table, live cooking shows, and press',
-    ],
-    iconName: 'ChefHat',
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'restaurant'],
-  },
-  {
     name: 'Recurring Tasks: Private Chef / Personal Chef',
     slug: '/kit-tareas-chef-privado',
     description: '9 professional checklists for private chefs: client profile with allergies, equipment and transport, mobile HACCP, full service, client retention, and self-employed administration.',
@@ -1061,22 +1129,6 @@ const products = [
     tags: ['excel', 'templates', 'management', 'grill-house', 'grill', 'josper'],
   },
   {
-    name: 'Recurring Tasks: Seafood Restaurant with Live Tanks & HACCP',
-    slug: '/kit-tareas-marisqueria',
-    description: '11 operational checklists for seafood restaurants: live tank control (oxygen, salinity, temperature), ice display, HACCP traceability and allergens for crustaceans and shellfish, fish markets, and Spanish fishing seasons.',
-    features: [
-      'Live tanks: oxygen, salinity, temperature, mortality',
-      'HACCP traceability and EU allergen rules',
-      'Ice display and FIFO rotation',
-      'Official Spanish fishing seasons and closures',
-    ],
-    iconName: 'Shell',
-    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'seafood-restaurant', 'fish', 'seafood'],
-  },
-  {
     name: 'Recurring Tasks: Tapas Bar / Gastrobar',
     slug: '/kit-tareas-tapas-bar',
     description: '11 operational checklists for tapas bars and gastrobars: cold tapas and pintxos counter, small-plates kitchen (griddle, fryer, stews), draft beer, wine by the glass, vermouth, terrace, and seasonal menu rotation.',
@@ -1091,38 +1143,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'management', 'tapas', 'gastropub', 'bar'],
-  },
-  {
-    name: 'Recurring Tasks: Food Truck',
-    slug: '/kit-tareas-food-truck',
-    description: '11 operational checklists for food trucks: setup and teardown, mobile vehicle and generator operations, mobile HACCP food safety, permits and events, team roles, and annual calendar.',
-    features: [
-      'Setup / teardown: generator, gas, kitchen, service',
-      'Mobile HACCP: cold chain and variable temperatures',
-      'Permits, licenses, and insurance per event',
-      'Vehicle and generator maintenance',
-    ],
-    iconName: 'Truck',
-    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'food-truck', 'street-food', 'events', 'mobile-catering'],
-  },
-  {
-    name: 'Recurring Tasks: Bakery / Production Kitchen',
-    slug: '/kit-tareas-panaderia',
-    description: '11 operational checklists for bakeries and production kitchens: early shift from 03:00, sourdough and pre-ferments (poolish, biga), deck and rotary ovens, display case and sales, team roles, and seasonal campaigns.',
-    features: [
-      'Early shift: bakery opening from 03:00',
-      'Sourdough, poolish, biga, and fermentation control',
-      'Deck, rotary, and steam convection ovens',
-      'Christmas, Epiphany, and Easter campaigns',
-    ],
-    iconName: 'Wheat',
-    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'bakery', 'production-kitchen', 'sourdough'],
   },
   {
     name: 'Recurring Tasks Mega Pack — 13 Kits',

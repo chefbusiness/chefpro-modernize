@@ -1,0 +1,3401 @@
+Volcado de 13 xlsx de ../../../astro-site/public/dl/fine-dining-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-fine-dining-opening-closing-checklist.xlsx
+# docProps: title='Fine Dining Opening & Closing Checklist: Kitchen, Modernist Equipment & Dining Room' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Fine Dining Opening & Closing Checklist: Kitchen, Modernist Equipment & Dining Room
+B4     : How to use this template:
+B5     : ▸ Print daily or use on a tablet for each shift.
+B6     : ▸ The shift lead checks off each task as it is completed.
+B7     : ▸ Check active ferments and log the pH.
+B8     : ▸ Verify that all modernist equipment is working.
+B10    : Color zones:
+B11    : ▸ Orange = Main kitchen
+B12    : ▸ Blue = Dining room / front of house
+B13    : ▸ Amber = Administration
+B14    : ▸ Brown = Cleaning
+B16    : Before turning anything on:
+B17    : ▸ The first section of "AM Opening" covers personal hygiene and a safe start-up: hood first, then the gas check, and only then the immersion circulator, ovens, dehydrator and torches.
+B18    : ▸ Walk-ins are not "turned on" in the morning: you CHECK that they ran all night. Log the reading in the task itself (cooler 41 °F or below, freezer 0 °F or below, FDA Food Code 3-501.16 — log reading: ____ °F); for dry-aging cabinets, also log temperature and humidity (% RH) within your parameters.
+B19    : ▸ Closing includes the brigade's daily time records: they are required, validated every day and kept 2 years (FLSA), with payroll records kept 3 years; some states require more, e.g., NY 6.
+B21    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B22    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «AM Opening» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AM Opening Checklist
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🧼 OPENING — PERSONAL HYGIENE & SAFE START-UP
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)
+C6     : Kitchen
+A7     : 2
+B7     : No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics
+C7     : Kitchen
+A8     : 3
+B8     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C8     : Kitchen
+A9     : 4
+B9     : Wash hands at the handwashing sink on arrival and at every change of task: soap, hot water (at least 100 °F, FDA Food Code 5-202.12) and single-use paper towels
+C9     : Kitchen
+A10    : 5
+B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
+C10    : Kitchen
+A11    : 6
+B11    : Turn on the exhaust hood and ventilate the kitchen BEFORE lighting anything else
+C11    : Kitchen
+A12    : 7
+B12    : If the kitchen has gas: open the main valve and check there is NO gas smell. If you smell gas, don't turn anything on or touch any switches: get out and call the gas company or 911 from outside, then alert the licensed gas technician
+C12    : Kitchen
+A13    : 8
+B13    : Butane torch cartridges and N2O chargers: closed, upright and away from ovens, the salamander and heat sources
+C13    : Kitchen
+A14    : 🌅 OPENING — MODERNIST EQUIPMENT
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Turn on water baths / immersion circulators / sous vide equipment (only after the hood and the gas check)
+C16    : Kitchen
+A17    : 2
+B17    : Check immersion circulator temperature (adjust to the day's production)
+C17    : Kitchen
+A18    : 3
+B18    : Turn on the dehydrator and check trays in progress
+C18    : Kitchen
+A19    : 4
+B19    : Check active ferments: measure pH and log it
+C19    : R&D
+A20    : 5
+B20    : Check that the dry-aging cabinets ran all night: temperature and humidity within your parameters — log reading: ____ °F / ____ % RH. If out of range, do not use the piece until it is assessed
+C20    : Walk-in
+A21    : 6
+B21    : Check that the walk-in coolers and freezer ran all night and log the temperature (cooler 41 °F or below / freezer 0 °F or below, FDA Food Code 3-501.16) — log reading: ____ °F. If out of range, do not use the product until it is assessed
+C21    : Walk-in
+A22    : 7
+B22    : Turn on the Pacojet / ice cream machine (if producing)
+C22    : Pastry
+A23    : 8
+B23    : Set up the whipping siphons and load N2O chargers as the menu requires
+C23    : Kitchen
+A24    : 9
+B24    : Check dehydrator status: textures, time remaining
+C24    : Kitchen
+A26    : 🔥 OPENING — BASES & MISE EN PLACE
+A27    : #
+B27    : Task
+C27    : Area
+D27    : Assigned to
+E27    : ✓
+F27    : Time
+G27    : Notes
+A28    : 1
+B28    : Check stock of bases: stocks, glaces, demi-glace
+C28    : Kitchen
+A29    : 2
+B29    : Check infused oils and fermented vinegars
+C29    : R&D
+A30    : 3
+B30    : Check stock of hydrocolloids and texturizers
+C30    : R&D
+A31    : 4
+B31    : Check prep in progress (sous vide 24–72 hr)
+C31    : Kitchen
+A32    : 5
+B32    : Set up the stations for each course of the menu
+C32    : Mise en place
+A33    : 6
+B33    : Check that the plating bible is up to date and visible at every pass
+C33    : Plating
+A34    : 7
+B34    : Check stock of microgreens and edible flowers
+C34    : Kitchen
+A35    : 8
+B35    : Check cuts and portions for the day (0.01 g precision)
+C35    : Kitchen
+A37    : 🍽️ OPENING — DINING ROOM & PRE-SHIFT
+A38    : #
+B38    : Task
+C38    : Area
+D38    : Assigned to
+E38    : ✓
+F38    : Time
+G38    : Notes
+A39    : 1
+B39    : Dining room climate: temperature, scent, humidity
+C39    : Dining room
+A40    : 2
+B40    : Lighting: check the lighting scenes for each shift
+C40    : Dining room
+A41    : 3
+B41    : Ambient music: playlist selected for service
+C41    : Dining room
+A42    : 4
+B42    : Set the tables: linens, signature tableware, flatware
+C42    : Dining room
+A43    : 5
+B43    : Check that the pairing glasses are set for each table
+C43    : Sommelier
+A44    : 6
+B44    : Kitchen pre-shift: menu of the day, changes, allergens on today's reservations
+C44    : Kitchen
+A45    : 7
+B45    : Dining room pre-shift: story behind each course, VIPs, allergens
+C45    : Maître d'
+A46    : 8
+B46    : Check today's reservations and update the floor plan
+C46    : Maître d'
+B47    : Tasks done:
+C47    = =COUNTIFS(B6:B46,"?*",E6:E46,"✓")-COUNTIFS(B6:B46,"Task",E6:E46,"✓")   → caché 0.0
+D47    : of
+E47    = =COUNTIF(B6:B46,"?*")-COUNTIF(B6:B46,"Task")-COUNTIF(E6:E46,"N/A")   → caché 33.0
+A48    : Signed off by: _________________  Date: ___/___/______
+A49    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E16 E17 E18 E19 E20 E21 E22 E23 E24 E28 E29 E30 E31 E32 E33 E34 E35 E39 E40 E41 E42 E43 E44 E45 E46 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G46 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «PM Closing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : PM Closing Checklist
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🌙 CLOSING — LOGS & TEMPERATURES
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Log the temperature of all walk-in coolers and the freezer (cooler 41 °F or below / freezer 0 °F or below, FDA Food Code 3-501.16) — log reading: ____ °F
+C6     : Walk-in
+A7     : 2
+B7     : Log dry-aging cabinet temperatures — log reading: ____ °F
+C7     : Walk-in
+A8     : 3
+B8     : Log pH of active ferments (overnight)
+C8     : R&D
+A9     : 4
+B9     : Log status of long-lead sous vide (time remaining)
+C9     : Kitchen
+A10    : 5
+B10    : Label ALL prep (date, time, contents) and write the use-by date (7 days maximum at 41 °F, day 1 = the day of preparation; FDA Food Code 3-501.17); freezer shelf life by family is in the table at the bottom of "Weekly" (file 05)
+C10    : Kitchen
+A12    : 🧹 CLOSING — CLEANING & EQUIPMENT
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Deep-clean siphons, nozzles and chargers
+C14    : Cleaning
+A15    : 2
+B15    : Clean plating tweezers, squeeze bottles and stencils
+C15    : Cleaning
+A16    : 3
+B16    : Turn off immersion circulators / water baths (except overnight cooks)
+C16    : Kitchen
+A17    : 4
+B17    : Turn off the dehydrator (except processes running more than 12 hr)
+C17    : Kitchen
+A18    : 5
+B18    : Clean and dry the Pacojet / ice cream machine
+C18    : Cleaning
+A19    : 6
+B19    : Clean torches, smokers and specialty equipment
+C19    : Cleaning
+A20    : 7
+B20    : Clean and organize the plating station
+C20    : Cleaning
+A21    : 8
+B21    : Check that overnight ferments are sealed
+C21    : R&D
+A23    : 📋 CLOSING — ADMINISTRATION & FEEDBACK
+A24    : #
+B24    : Task
+C24    : Area
+D24    : Assigned to
+E24    : ✓
+F24    : Time
+G24    : Notes
+A25    : 1
+B25    : Close out the register and log the day's sales
+C25    : Office
+A26    : 2
+B26    : Log covers served (lunch + dinner)
+C26    : Office
+A27    : 3
+B27    : Note service incidents
+C27    : Office
+A28    : 4
+B28    : Log the chef's feedback on the day's dishes
+C28    : R&D
+A29    : 5
+B29    : Note the dishes the dining room liked best and least
+C29    : Dining room
+A30    : 6
+B30    : Log the day's waste (product, quantity and reason): it is the data that corrects the plate cost and tomorrow's order
+C30    : Office
+A31    : 7
+B31    : Confirm reservations and allergens for tomorrow
+C31    : Maître d'
+A32    : 8
+B32    : Close and validate the daily time records for the whole brigade (kitchen and dining room) with actual clock-in and clock-out times: required by FLSA, kept 2 years (payroll records 3; some states longer, e.g., NY 6)
+C32    : Office
+A33    : 9
+B33    : Set the alarm and lock up the premises
+C33    : Office
+B34    : Tasks done:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Task",E6:E33,"✓")   → caché 0.0
+D34    : of
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Task")-COUNTIF(E6:E33,"N/A")   → caché 22.0
+A35    : Signed off by: _________________  Date: ___/___/______
+A36    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E20 E21 E25 E26 E27 E28 E29 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G33 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 02-tasting-menu-mise-en-place-checklist.xlsx
+# docProps: title='Tasting Menu Mise en Place Checklist: Long, Mid & Same-Day Prep + Plating Bible' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Tasting Menu Mise en Place Checklist: Long, Mid & Same-Day Prep + Plating Bible
+B4     : How to use this template:
+B5     : ▸ Organize the mise en place by course of the tasting menu.
+B6     : ▸ Separate prep by lead time.
+B7     : ▸ Control every plating component with the plating bible.
+B8     : ▸ Adapt the sheet to the number of courses on your menu (7–15).
+B10    : Prep lead times:
+B11    : ▸ Long-lead (24–72 hr): stocks, ferments, marinades
+B12    : ▸ Mid-lead (6–12 hr): sous vide, infusions, gels
+B13    : ▸ Same-day (2–4 hr): foams, hot sauces, fresh cuts
+B14    : ▸ Minute zero: microgreens, flowers, snows, crisps
+B16    : Raw fish and other products that go to the plate raw:
+B17    : ▸ Any fish served raw or undercooked (tartare, ceviche, crudo, marinated, cured or cold-smoked, that is, not reaching 145 °F) needs parasite destruction by freezing (FDA Food Code 3-402.11): at −4 °F or below for 7 days, or at −31 °F until solid and held 15 hr, or at −31 °F until solid and then 24 hr at −4 °F. Keep the supplier's letter or record for 90 days (3-402.12) and print the consumer advisory on the menu (3-603.11). The citrus acid in ceviche does NOT replace freezing.
+B18    : ▸ Microgreens, edible flowers and herbs go raw to the pass with no heat step afterward: wash them under running potable water (if you use a produce wash or chlorine, only one approved for fruits and vegetables, at the label dose) and RINSE them before they enter the plating station (FDA Food Code 3-302.15).
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Long-Lead Prep» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Long-Lead Prep (24–72 hr)
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🕐 BROTHS, STOCKS & GLACES
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Brown veal stock (48–72 hr, slow reduction)
+C6     : Kitchen
+A7     : 2
+B7     : Signature dashi (kombu + bonito + dried mushrooms)
+C7     : Kitchen
+A8     : 3
+B8     : Poultry glace (24 hr reduction)
+C8     : Kitchen
+A9     : 4
+B9     : Clarified consommé (24 hr cold or 12 hr hot)
+C9     : Kitchen
+A10    : 5
+B10    : Concentrated shellfish fumet (24 hr)
+C10    : Kitchen
+A12    : 🧪 FERMENTS & MARINADES
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Lacto-fermented vegetables (measure pH daily)
+C14    : R&D
+A15    : 2
+B15    : Garum / fermented sauce in progress (log the day)
+C15    : R&D
+A16    : 3
+B16    : Koji: check culture status, temperature and humidity
+C16    : R&D
+A17    : 4
+B17    : Long marinades (meat/fish in oil, salt, spices): fish that is raw or undercooked (not reaching 145 °F) — marinated, cured or cold-smoked — must come from parasite-destruction freezing (FDA Food Code 3-402.11; see "Same-Day Prep")
+C17    : Kitchen
+A18    : 5
+B18    : Seasonal pickles (check acidity)
+C18    : R&D
+A19    : 6
+B19    : Fruit vinegars in progress (active mother)
+C19    : R&D
+A21    : ♨️ SOUS VIDE & AGING
+A22    : #
+B22    : Task
+C22    : Area
+D22    : Assigned to
+E22    : ✓
+F22    : Time
+G22    : Notes
+A23    : 1
+B23    : Long sous vide: meat cuts (48–72 hr at low temp.). Cook to the time and temperature of your validated recipe (FDA Food Code 3-401.11 time/temperature tables); if chilled and stored in the bag (reduced oxygen packaging), you need a HACCP plan or health department variance (FDA Food Code 3-502.11 / 3-502.12); chill from 135 °F to 70 °F within 2 hr and to 41 °F within 4 more hr (3-501.14)
+C23    : Kitchen
+A24    : 2
+B24    : Mid-lead sous vide: fish and shellfish (6–12 hr); if bagged and chilled or held (reduced oxygen packaging), a HACCP plan or health department variance (FDA Food Code 3-502.11 / 3-502.12); chill per 3-501.14
+C24    : Kitchen
+A25    : 3
+B25    : Slow confits (duck, pork, octopus); if bagged and chilled, the same HACCP plan or variance (FDA Food Code 3-502.11 / 3-502.12); chill per 3-501.14
+C25    : Kitchen
+A26    : 4
+B26    : Controlled aging in the cabinet (log the day)
+C26    : Walk-in
+A27    : 5
+B27    : Cold infusions of oils and butters (24–48 hr)
+C27    : R&D
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E23 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Mid-Lead Prep» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Mid-Lead Prep (6–12 hr)
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : ⏳ SOUS VIDE & INFUSIONS (6–12 hr)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Sous vide egg (145 °F / 75 min or per recipe; FDA Food Code 3-401.11 — if served undercooked, add the consumer advisory, 3-603.11)
+C6     : Kitchen
+A7     : 2
+B7     : Sous vide vegetables for controlled textures
+C7     : Kitchen
+A8     : 3
+B8     : Hot herb infusions for sauces
+C8     : Kitchen
+A9     : 4
+B9     : Cold gels (agar, gellan, kappa)
+C9     : R&D
+A10    : 5
+B10    : Basic and reverse spherification (prepare the baths)
+C10    : R&D
+A11    : 6
+B11    : Creams and veloute with slow infusion
+C11    : Kitchen
+A13    : ❄️ ICE CREAMS & SORBETS
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Signature ice cream base (age 12 hr, chilled)
+C15    : Pastry
+A16    : 2
+B16    : Seasonal fruit sorbets (age the base)
+C16    : Pastry
+A17    : 3
+B17    : Granitas / snows for plating (prepare the base)
+C17    : Pastry
+A18    : 4
+B18    : Savory ice cream (cheese, olive oil, foie gras)
+C18    : Pastry
+B19    : Tasks done:
+C19    = =COUNTIFS(B6:B18,"?*",E6:E18,"✓")-COUNTIFS(B6:B18,"Task",E6:E18,"✓")   → caché 0.0
+D19    : of
+E19    = =COUNTIF(B6:B18,"?*")-COUNTIF(B6:B18,"Task")-COUNTIF(E6:E18,"N/A")   → caché 10.0
+A20    : Signed off by: _________________  Date: ___/___/______
+A21    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G18 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Same-Day Prep» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Same-Day Prep (2–4 hr)
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🔥 SAUCES & FOAMS
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Hot foams in the siphon (check the N2O charge)
+C6     : Kitchen
+A7     : 2
+B7     : Cold foams (whip, charge, refrigerate)
+C7     : Kitchen
+A8     : 3
+B8     : Hot sauces for the menu (reduce to order)
+C8     : Kitchen
+A9     : 4
+B9     : Airs / bubbles (soy lecithin, xanthan)
+C9     : R&D
+A10    : 5
+B10    : Signature vinaigrettes (stable emulsions)
+C10    : Kitchen
+A12    : 🔪 CUTS & PORTIONS
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Main protein cuts (portion to the gram)
+C14    : Kitchen
+A15    : 2
+B15    : Fish and shellfish cuts (technique, precision)
+C15    : Kitchen
+A16    : 3
+B16    : Turned and cut signature vegetables
+C16    : Kitchen
+A17    : 4
+B17    : Slices and carpaccios (uniform thickness)
+C17    : Garde manger
+A18    : 5
+B18    : Tartares and ceviches: cut to order, never more than 2 hr before the pass. Raw or undercooked fish (not reaching 145 °F) needs parasite destruction by freezing (FDA Food Code 3-402.11): at −4 °F or below for 7 days, or at −31 °F until solid and held 15 hr, or at −31 °F until solid and then 24 hr at −4 °F. Require the supplier's letter or freeze it yourself, log the lot and keep the record 90 days (3-402.12); print the consumer advisory on the menu (3-603.11). Citrus acid does NOT replace freezing
+C18    : Garde manger
+A20    : 🌿 MINUTE-ZERO PLATING
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Check stock of fresh microgreens (parsley, shiso, radish)
+C22    : Kitchen
+A23    : 2
+B23    : Check edible flowers (freshness, color)
+C23    : Kitchen
+A24    : 3
+B24    : Wash the microgreens, edible flowers and herbs that go RAW to the plate under running potable water (if you use a produce wash or chlorine, only one approved for fruits and vegetables, at the label dose) and RINSE well (FDA Food Code 3-302.15)
+C24    : Kitchen
+A25    : 4
+B25    : Prepare snows / granitas to order
+C25    : Pastry
+A26    : 5
+B26    : Prepare last-minute crisps (tempura, chips)
+C26    : Kitchen
+A27    : 6
+B27    : Fill squeeze bottles with sauces for plating
+C27    : Plating
+A28    : 7
+B28    : Check that stencils, tweezers and signature spoons are clean
+C28    : Plating
+B29    : Tasks done:
+C29    = =COUNTIFS(B6:B28,"?*",E6:E28,"✓")-COUNTIFS(B6:B28,"Task",E6:E28,"✓")   → caché 0.0
+D29    : of
+E29    = =COUNTIF(B6:B28,"?*")-COUNTIF(B6:B28,"Task")-COUNTIF(E6:E28,"N/A")   → caché 17.0
+A30    : Signed off by: _________________  Date: ___/___/______
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 E28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G28 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Plating Bible» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Plating Bible Control by Course
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 📖 CHECKLIST BY COURSE (ADAPT TO YOUR 7–15 COURSE MENU)
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Course 1 — Snack: reference photo visible, weight verified
+C6     : Plating
+A7     : 2
+B7     : Course 1 — Snack: components in the right position
+C7     : Plating
+A8     : 3
+B8     : Course 2 — Amuse-bouche: reference photo visible, weight verified
+C8     : Plating
+A9     : 4
+B9     : Course 2 — Amuse-bouche: components in the right position
+C9     : Plating
+A10    : 5
+B10    : Course 3 — Cold appetizer: reference photo, weight, position
+C10    : Plating
+A11    : 6
+B11    : Course 4 — Hot appetizer: reference photo, weight, position
+C11    : Plating
+A12    : 7
+B12    : Course 5 — Fish: reference photo, weight, position
+C12    : Plating
+A13    : 8
+B13    : Course 6 — Meat: reference photo, weight, position
+C13    : Plating
+A14    : 9
+B14    : Course 7 — Pre-dessert: reference photo, weight, position
+C14    : Plating
+A15    : 10
+B15    : Course 8 — Dessert: reference photo, weight, position
+C15    : Plating
+A16    : 11
+B16    : Course 9 — Petit fours: reference photo, weight, position
+C16    : Plating
+A17    : 12
+B17    : Check that the signature tableware is selected for each course
+C17    : Plating
+A18    : 13
+B18    : Check the special flatware for each course (if applicable)
+C18    : Dining room
+A20    : 🛠️ PLATING TOOLS BY COURSE
+A21    : #
+B21    : Task
+C21    : Area
+D21    : Assigned to
+E21    : ✓
+F21    : Time
+G21    : Notes
+A22    : 1
+B22    : Precision tweezers clean and at the station
+C22    : Plating
+A23    : 2
+B23    : Squeeze bottles filled with the matching sauces
+C23    : Plating
+A24    : 3
+B24    : Stencils / decoration templates ready
+C24    : Plating
+A25    : 4
+B25    : Torches filled (for caramelizing, browning)
+C25    : Plating
+A26    : 5
+B26    : Signature spoons (quenelle, swooshes) clean
+C26    : Plating
+A27    : 6
+B27    : Smoker / smoking cloche ready (if applicable)
+C27    : Plating
+A28    : 7
+B28    : Graters and microplanes (truffle, citrus, spices) at the station
+C28    : Plating
+B29    : Tasks done:
+C29    = =COUNTIFS(B6:B28,"?*",E6:E28,"✓")-COUNTIFS(B6:B28,"Task",E6:E28,"✓")   → caché 0.0
+D29    : of
+E29    = =COUNTIF(B6:B28,"?*")-COUNTIF(B6:B28,"Task")-COUNTIF(E6:E28,"N/A")   → caché 20.0
+A30    : Signed off by: _________________  Date: ___/___/______
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 E28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G28 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 03-menu-development-rd-checklist.xlsx
+# docProps: title='Menu Development & R&D Checklist: Test Sessions & Recipe Documentation' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Menu Development & R&D Checklist: Test Sessions & Recipe Documentation
+B4     : How to use this template:
+B5     : ▸ Manage the full culinary innovation cycle.
+B6     : ▸ Document every trial with a complete recipe sheet (3 iterations minimum).
+B7     : ▸ Assess operational feasibility before adding a dish to the menu.
+B8     : ▸ Keep a seasonal calendar with 4 menu changes per year.
+B10    : R&D protocol:
+B11    : ▸ Every new dish: at least 3 iterations with photo and feedback.
+B12    : ▸ Hydrocolloids: document to 0.01 g for repeatability.
+B13    : ▸ Log ALL techniques tested, including the discarded ones.
+B15    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B16    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «R&D Sessions» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : R&D Session Calendar & Management
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🧪 R&D SESSION CALENDAR
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Set a fixed weekly day and time for R&D sessions
+C6     : R&D
+A7     : 2
+B7     : Set aside specific ingredients for R&D (do not touch service stock)
+C7     : R&D
+A8     : 3
+B8     : Assign a team to the R&D session (chef + sous chef minimum)
+C8     : R&D
+A9     : 4
+B9     : Define the session goal: concept, technique or ingredient
+C9     : R&D
+A10    : 5
+B10    : Prepare a pre-research sheet (references, inspiration)
+C10    : R&D
+A11    : 6
+B11    : Reserve special equipment for the session
+C11    : R&D
+A13    : 📝 NEW DISH SHEET
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Working title / dish concept
+C15    : R&D
+A16    : 2
+B16    : Inspiration and reference (origin, season, emotion)
+C16    : R&D
+A17    : 3
+B17    : List of main and secondary ingredients
+C17    : R&D
+A18    : 4
+B18    : Main technique(s) to be used
+C18    : Technique
+A19    : 5
+B19    : Estimated cost per portion (ingredients)
+C19    : Food cost
+A20    : 6
+B20    : Estimated execution time during service
+C20    : R&D
+A21    : 7
+B21    : Plating difficulty (1–5 scale)
+C21    : Plating
+A22    : 8
+B22    : Compatibility with the 9 major allergens (milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy, sesame; FALCPA + FASTER Act); where your state has adopted the FDA Food Code 2022, post a written notice of each dish's allergens (3-602.12(C)); UK: 14
+C22    : R&D
+A24    : 🔄 TEST PROTOCOL (3 iterations minimum)
+A25    : #
+B25    : Task
+C25    : Area
+D25    : Assigned to
+E25    : ✓
+F25    : Time
+G25    : Notes
+A26    : 1
+B26    : Iteration 1: run the recipe, photograph the result
+C26    : R&D
+A27    : 2
+B27    : Iteration 1: kitchen team feedback (flavor, texture, looks)
+C27    : R&D
+A28    : 3
+B28    : Iteration 1: log the adjustments needed
+C28    : R&D
+A29    : 4
+B29    : Iteration 2: apply the adjustments, photograph the result
+C29    : R&D
+A30    : 5
+B30    : Iteration 2: kitchen + dining room team feedback
+C30    : R&D
+A31    : 6
+B31    : Iteration 2: log improvements and validate the concept
+C31    : R&D
+A32    : 7
+B32    : Iteration 3: final version, definitive plating photo
+C32    : R&D
+A33    : 8
+B33    : Iteration 3: timing test in a service simulation
+C33    : R&D
+A34    : 9
+B34    : Iteration 3: executive chef approval
+C34    : R&D
+B35    : Tasks done:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Task",E6:E34,"✓")   → caché 0.0
+D35    : of
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Task")-COUNTIF(E6:E34,"N/A")   → caché 23.0
+A36    : Signed off by: _________________  Date: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E21 E22 E26 E27 E28 E29 E30 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G34 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Recipe Documentation» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Final Recipe Documentation
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 📋 COMPLETE RECIPE SHEET
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Final name of the dish
+C6     : Recipe cards
+A7     : 2
+B7     : Exact ingredients with weights (0.01 g for hydrocolloids)
+C7     : Recipe cards
+A8     : 3
+B8     : Numbered step-by-step process
+C8     : Recipe cards
+A9     : 4
+B9     : Exact temperatures and times for each phase
+C9     : Recipe cards
+A10    : 5
+B10    : Final plating photo (overhead + 45° angle)
+C10    : Recipe cards
+A11    : 6
+B11    : Cross-section / interior photo (if applicable)
+C11    : Recipe cards
+A12    : 7
+B12    : Allergens in the final dish (the 9 major: milk, egg, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy, sesame; FALCPA + FASTER Act); written notice per dish where your state has adopted the FDA Food Code 2022 (3-602.12(C)); UK: 14
+C12    : Recipe cards
+A13    : 8
+B13    : Actual food cost per portion
+C13    : Food cost
+A14    : 9
+B14    : Target margin met (yes/no)
+C14    : Food cost
+A16    : ⚙️ OPERATIONAL FEASIBILITY
+A17    : #
+B17    : Task
+C17    : Area
+D17    : Assigned to
+E17    : ✓
+F17    : Time
+G17    : Notes
+A18    : 1
+B18    : Doable in a 40-cover service? (yes/no, adjustments)
+C18    : R&D
+A19    : 2
+B19    : Total plating time per portion
+C19    : Plating
+A20    : 3
+B20    : Number of cooks needed for this course
+C20    : R&D
+A21    : 4
+B21    : Prep required and total time
+C21    : R&D
+A22    : 5
+B22    : Special equipment needed (available yes/no)
+C22    : R&D
+A23    : 6
+B23    : Main ingredient supplier confirmed
+C23    : Suppliers
+A24    : 7
+B24    : Seasonal availability of the key ingredient
+C24    : Suppliers
+A26    : 📅 SEASONAL CALENDAR (4 changes/year)
+A27    : #
+B27    : Task
+C27    : Area
+D27    : Assigned to
+E27    : ✓
+F27    : Time
+G27    : Notes
+A28    : 1
+B28    : Spring (Mar–May): set new dishes and retire old ones
+C28    : R&D
+A29    : 2
+B29    : Summer (Jun–Aug): set new dishes and retire old ones
+C29    : R&D
+A30    : 3
+B30    : Fall (Sep–Nov): set new dishes and retire old ones
+C30    : R&D
+A31    : 4
+B31    : Winter (Dec–Feb): set new dishes and retire old ones
+C31    : R&D
+A32    : 5
+B32    : Log suppliers by seasonal ingredient
+C32    : Suppliers
+A33    : 6
+B33    : Update the plating bible with each menu change
+C33    : Recipe cards
+A35    : 📚 TECHNIQUE LIBRARY
+A36    : #
+B36    : Task
+C36    : Area
+D36    : Assigned to
+E36    : ✓
+F36    : Time
+G36    : Notes
+A37    : 1
+B37    : Log a tested technique: name, result, application
+C37    : Technique
+A38    : 2
+B38    : Log a discarded technique: reason for discarding
+C38    : Technique
+A39    : 3
+B39    : Update the catalog of tested hydrocolloids and ratios
+C39    : Technique
+A40    : 4
+B40    : Update the catalog of active ferments and timings
+C40    : Technique
+A41    : 5
+B41    : Document successful technique-ingredient pairings
+C41    : Technique
+B42    : Tasks done:
+C42    = =COUNTIFS(B6:B41,"?*",E6:E41,"✓")-COUNTIFS(B6:B41,"Task",E6:E41,"✓")   → caché 0.0
+D42    : of
+E42    = =COUNTIF(B6:B41,"?*")-COUNTIF(B6:B41,"Task")-COUNTIF(E6:E41,"N/A")   → caché 27.0
+A43    : Signed off by: _________________  Date: ___/___/______
+A44    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E18 E19 E20 E21 E22 E23 E24 E28 E29 E30 E31 E32 E33 E37 E38 E39 E40 E41 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G41 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 04-kitchen-brigade-duties-by-role.xlsx
+# docProps: title='Kitchen Brigade Duties by Role: Executive Chef, Sous Chef, Chefs de Partie, Pastry, Sommelier & Maître' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Kitchen Brigade Duties by Role: Executive Chef, Sous Chef, Chefs de Partie, Pastry, Sommelier & Maître
+B4     : How to use this template:
+B5     : ▸ Assign clear responsibilities to every member of the brigade.
+B6     : ▸ Each role has specific daily tasks before and during service.
+B7     : ▸ The executive chef signs off at the final pass.
+B8     : ▸ Kitchen–dining room coordination is CRITICAL on a tasting menu.
+B10    : Key roles:
+B11    : ▸ Executive Chef — creative vision, R&D, final pass
+B12    : ▸ Sous Chef — operations management, mise en place
+B13    : ▸ Pastry Chef — signature desserts, ice creams, sweet ferments
+B14    : ▸ Sommelier — pairing, wine cellar, dining room training
+B15    : ▸ Maître d' — storytelling, table timing, coordination
+B17    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B18    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Executive Chef» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Tasks — Executive Chef
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 👨‍🍳 EXECUTIVE CHEF — DAILY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review the menu of the day: adjustments, seasonal substitutions
+C6     : Kitchen
+A7     : 2
+B7     : R&D session scheduled (if it is the assigned day)
+C7     : R&D
+A8     : 3
+B8     : Contact with premium suppliers (truffle, shellfish, live product)
+C8     : Suppliers
+A9     : 4
+B9     : Weekly food cost review
+C9     : Food cost
+A10    : 5
+B10    : Approve the mise en place before service
+C10    : Kitchen
+A11    : 6
+B11    : Plating supervision: check against the plating bible
+C11    : Plating
+A12    : 7
+B12    : Final pass: quality control of every plate before it goes to the dining room
+C12    : The pass
+A13    : 8
+B13    : Communication with the maître d' on timing and sequence
+C13    : Maître d'
+A14    : 9
+B14    : Post-service feedback to the team
+C14    : Kitchen
+B15    : Tasks done:
+C15    = =COUNTIFS(B6:B14,"?*",E6:E14,"✓")-COUNTIFS(B6:B14,"Task",E6:E14,"✓")   → caché 0.0
+D15    : of
+E15    = =COUNTIF(B6:B14,"?*")-COUNTIF(B6:B14,"Task")-COUNTIF(E6:E14,"N/A")   → caché 9.0
+A16    : Signed off by: _________________  Date: ___/___/______
+A17    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G14 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Sous Chef» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Tasks — Sous Chef
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🔥 SOUS CHEF — DAILY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Coordinate the mise en place of all stations
+C6     : Mise en place
+A7     : 2
+B7     : Brigade management: task assignment by shift
+C7     : Kitchen
+A8     : 3
+B8     : Oversee long-lead prep
+C8     : Kitchen
+A9     : 4
+B9     : Temperature control (sous vide, ferments, walk-ins)
+C9     : Walk-in
+A10    : 5
+B10    : Check labeling of ALL prep
+C10    : Kitchen
+A11    : 6
+B11    : Restock during service
+C11    : Inventory
+A12    : 7
+B12    : Plating support during the service peak
+C12    : Plating
+A13    : 8
+B13    : Review supplier orders for tomorrow
+C13    : Suppliers
+A14    : 9
+B14    : Kitchen close: equipment and cleaning checklist
+C14    : Cleaning
+B15    : Tasks done:
+C15    = =COUNTIFS(B6:B14,"?*",E6:E14,"✓")-COUNTIFS(B6:B14,"Task",E6:E14,"✓")   → caché 0.0
+D15    : of
+E15    = =COUNTIF(B6:B14,"?*")-COUNTIF(B6:B14,"Task")-COUNTIF(E6:E14,"N/A")   → caché 9.0
+A16    : Signed off by: _________________  Date: ___/___/______
+A17    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G14 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Hot Line» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Tasks — Chef de Partie, Hot Line
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🔥 HOT LINE — DAILY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Prepare the day's stocks and sauces
+C6     : Hot line
+A7     : 2
+B7     : Main cooking: proteins, hot sides; hot food held at 135 °F or above (FDA Food Code 3-501.16) — log reading: ____ °F
+C7     : Hot line
+A8     : 3
+B8     : Manage sous vide during service (rethermalize, sear): cooked-and-chilled food reheated to 165 °F within 2 hr for hot holding (FDA Food Code 3-403.11); hold hot food at 135 °F or above (3-501.16)
+C8     : Hot line
+A9     : 4
+B9     : Meat finishing: searing, glazing, resting
+C9     : Hot line
+A10    : 5
+B10    : Fish finishing: griddle, charcoal grill, steam
+C10    : Hot line
+A11    : 6
+B11    : Hot sauces to order (reduce, mount)
+C11    : Hot line
+A12    : 7
+B12    : Coordinate timing with the pass and plating
+C12    : The pass
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Garde Manger» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Tasks — Chef de Partie, Garde Manger / Creative
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : ❄️ GARDE MANGER / CREATIVE — DAILY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Conceptual salads: assembly, dressing to order
+C6     : Garde manger
+A7     : 2
+B7     : Ceviches and tartares: cut no more than 2 hr before service and ONLY with fish that has gone through parasite-destruction freezing (see 02 · "Same-Day Prep")
+C7     : Garde manger
+A8     : 3
+B8     : Crudo and carpaccio: slice, temper
+C8     : Garde manger
+A9     : 4
+B9     : Quick marinades (citrus, vinegars): acid does NOT replace freezing, it only changes the texture; raw or undercooked fish still needs parasite destruction (FDA Food Code 3-402.11), the supplier's letter or record kept 90 days (3-402.12) and the consumer advisory (3-603.11)
+C9     : Garde manger
+A10    : 5
+B10    : Cold emulsions, signature vinaigrettes
+C10    : Garde manger
+A11    : 6
+B11    : Assemble cold courses per the plating bible
+C11    : Plating
+A12    : 7
+B12    : Product temperature control on the cold line
+C12    : Walk-in
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Pastry Chef» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Tasks — Creative Pastry Chef
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🍰 CREATIVE PASTRY CHEF — DAILY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Pre-desserts: component prep and assembly
+C6     : Pastry
+A7     : 2
+B7     : Main dessert: mise en place and plating
+C7     : Pastry
+A8     : 3
+B8     : Petit fours: production and assembly for service
+C8     : Petit fours
+A9     : 4
+B9     : Signature ice creams: spin, store, temper
+C9     : Pastry
+A10    : 5
+B10    : Sorbets and snows: the day's production
+C10    : Pastry
+A11    : 6
+B11    : Sweet ferments: check status (kombucha, kefir)
+C11    : R&D
+A12    : 7
+B12    : Crisps and sweet textures: tuiles, snaps, candies
+C12    : Pastry
+A13    : 8
+B13    : Check the dessert plating bible: photo and position
+C13    : Plating
+A14    : 9
+B14    : Coordinate with the kitchen on pre-dessert/dessert timing
+C14    : The pass
+B15    : Tasks done:
+C15    = =COUNTIFS(B6:B14,"?*",E6:E14,"✓")-COUNTIFS(B6:B14,"Task",E6:E14,"✓")   → caché 0.0
+D15    : of
+E15    = =COUNTIF(B6:B14,"?*")-COUNTIF(B6:B14,"Task")-COUNTIF(E6:E14,"N/A")   → caché 9.0
+A16    : Signed off by: _________________  Date: ___/___/______
+A17    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G14 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Sommelier» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Tasks — Sommelier
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🍷 SOMMELIER — DAILY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Check the day's pairing: adjust if the menu changes
+C6     : Pairing
+A7     : 2
+B7     : Prepare the pairing wines: temperature, decanting
+C7     : Wine cellar
+A8     : 3
+B8     : Prepare the alternative pairing (mocktails, kombucha, beer)
+C8     : Pairing
+A9     : 4
+B9     : Brief the dining room team on the pairing and storytelling
+C9     : Dining room
+A10    : 5
+B10    : Wine service synchronized with the kitchen
+C10    : Service
+A11    : 6
+B11    : Wine cellar stock control after service
+C11    : Wine cellar
+A12    : 7
+B12    : Log the day's wine consumption
+C12    : Wine cellar
+B13    : Tasks done:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Task",E6:E12,"✓")   → caché 0.0
+D13    : of
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Task")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Signed off by: _________________  Date: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Maître & Dining Room» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Tasks — Maître d' & Dining Room Team
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🎩 MAÎTRE D' / DINING ROOM MANAGER — DAILY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Storytelling: prepare the narrative of each course for guests
+C6     : Storytelling
+A7     : 2
+B7     : Table timing: coordinate the course sequence with the kitchen
+C7     : Maître d'
+A8     : 3
+B8     : VIP management: special attention, preferences
+C8     : Maître d'
+A9     : 4
+B9     : Oversee synchronized service (table ↔ kitchen)
+C9     : Service
+A10    : 5
+B10    : Handle dining room issues (allergens, complaints, requests)
+C10    : Maître d'
+A11    : 6
+B11    : Personalized farewell at each table
+C11    : Dining room
+A13    : 🍽️ TASTING MENU SERVER — DAILY
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Synchronized service: receive the course from the kitchen and serve
+C15    : Server
+A16    : 2
+B16    : Explain each course to the guest (brief storytelling)
+C16    : Storytelling
+A17    : 3
+B17    : Verify allergens at each table BEFORE every course
+C17    : Server
+A18    : 4
+B18    : Clear plates in coordination with the kitchen
+C18    : Server
+A19    : 5
+B19    : Serve bread, water and extras between courses
+C19    : Server
+A20    : 6
+B20    : Relay guest feedback to the maître d'
+C20    : Server
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 05-fine-dining-weekly-monthly-maintenance-checklist.xlsx
+# docProps: title='Fine Dining Weekly, Monthly, Quarterly & Annual Checklists' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Fine Dining Weekly, Monthly, Quarterly & Annual Checklists
+B4     : How to use this template:
+B5     : ▸ Schedule weekly tasks on a fixed day (Monday recommended).
+B6     : ▸ Monthly tasks are scheduled for the first Monday of the month.
+B7     : ▸ Log each check with the date and the signature of the person responsible.
+B9     : Key points:
+B10    : ▸ Weekly inventory of premium products (truffle, caviar, etc.).
+B11    : ▸ Preventive maintenance of modernist equipment.
+B12    : ▸ Review actual vs. target food cost every month.
+B14    : Beyond the month:
+B15    : ▸ The "Quarterly & Annual" sheet covers what you CONTRACT and what an inspector asks for in writing: licensed pest control, hood and duct cleaning (NFPA 96), gas, refrigeration (EPA 608), probe calibration (32 °F), used cooking oil, fire extinguishers (OSHA) and hood suppression, fire alarm (NFPA 72) and emergency lighting (NFPA 101), Legionella (ASHRAE 188 if applicable), electrical (NFPA 70B), emergency plan, insurance, FLSA time records, POS and sales tax, permits and licenses.
+B16    : ▸ Write the service report number of each check in "Notes" and the date of the next one; the "Frequency" column already shows the legal or recommended frequency of each.
+B17    : ▸ At the bottom of "Weekly" there is an editable table of freezer shelf life by family: adjust it to your product and your supplier. It sits outside the counter because it is a reference, not a task.
+B19    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B20    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Weekly» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Tasks
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 📦 WEEKLY INVENTORY & STOCK
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Inventory of premium products (truffle, caviar, saffron, vanilla)
+C6     : Inventory
+A7     : 2
+B7     : Inventory of hydrocolloids and texturizers (agar, gellan, xanthan)
+C7     : Inventory
+A8     : 3
+B8     : Inventory of gases (N2O for siphons, CO2, butane for torches)
+C8     : Inventory
+A9     : 4
+B9     : Check stock of microgreens and edible flowers
+C9     : Inventory
+A10    : 5
+B10    : Check the freezer and chest freezer: FIFO rotation, legible labels, and discard anything past the shelf life in the table at the bottom of this sheet
+C10    : Inventory
+A11    : 6
+B11    : Weekly order to premium suppliers
+C11    : Suppliers
+A12    : 7
+B12    : Log the week's waste and its causes
+C12    : Office
+A14    : 🧪 FERMENTS & AGING
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Measure the pH of ALL active ferments
+C16    : R&D
+A17    : 2
+B17    : Check the status of koji / active cultures
+C17    : R&D
+A18    : 3
+B18    : Monitor aging in the cabinet (temp., humidity, day)
+C18    : Walk-in
+A19    : 4
+B19    : Evaluate ferments ready for use on the menu
+C19    : R&D
+A20    : 5
+B20    : Discard ferments that are out of parameters
+C20    : R&D
+A22    : 🔧 EQUIPMENT MAINTENANCE
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Pacojet maintenance: deep clean, check the blades
+C24    : Kitchen
+A25    : 2
+B25    : Immersion circulator / sous vide maintenance: calibration, cleaning
+C25    : Kitchen
+A26    : 3
+B26    : Dehydrator maintenance: clean trays and filters
+C26    : Kitchen
+A27    : 4
+B27    : Check calibration of precision scales (0.01 g)
+C27    : Kitchen
+A28    : 5
+B28    : Siphon maintenance: gaskets, valves, cleaning
+C28    : Kitchen
+A29    : 6
+B29    : If your kitchen fries (tempura, crisps, fritters): filter or change the oil following the fryer manufacturer's procedure (built-in filters work at service temperature; by hand, let it cool first, wear heat-resistant gloves and use a stable container), and put used oil in your used cooking oil recycler's container
+C29    : Cleaning
+A31    : 👥 TEAM & TRAINING
+A32    : #
+B32    : Task
+C32    : Area
+D32    : Assigned to
+E32    : ✓
+F32    : Time
+G32    : Notes
+A33    : 1
+B33    : Weekly team meeting (feedback, planning)
+C33    : Kitchen
+A34    : 2
+B34    : Review that recipe cards are up to date
+C34    : Recipe cards
+A35    : 3
+B35    : Update the plating bible if there were changes
+C35    : Plating
+B36    : Tasks done:
+C36    = =COUNTIFS(B6:B35,"?*",E6:E35,"✓")-COUNTIFS(B6:B35,"Task",E6:E35,"✓")   → caché 0.0
+D36    : of
+E36    = =COUNTIF(B6:B35,"?*")-COUNTIF(B6:B35,"Task")-COUNTIF(E6:E35,"N/A")   → caché 21.0
+A37    : Signed off by: _________________  Date: ___/___/______
+A39    : APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier
+B40    : Food group
+C40    : Freezer time
+D40    : Notes
+B41    : Raw red meat and poultry, whole cuts
+C41    : 6–12 months
+D41    : Portion BEFORE freezing: never thaw and refreeze
+B42    : Ground meat and meat preparations
+C42    : 3 months
+D42    : More exposed surface, it goes rancid sooner
+B43    : Oily fish (tuna, mackerel, sardine)
+C43    : 2–3 months
+D43    : The fat oxidizes: vacuum-pack it and date it on the way in
+B44    : Raw white fish and shellfish
+C44    : 3–6 months
+D44    : If it will be served raw, parasite destruction also applies (FDA Food Code 3-402.11: −4 °F for 7 days or −31 °F)
+B45    : Stocks, glaces, broths and consommé
+C45    : 4–6 months
+D45    : Freeze in service portions: thawing a whole block for one course is guaranteed waste
+B46    : Cooked and chilled sous vide, in its bag
+C46    : 3 months
+D46    : Chill first (135 °F to 70 °F within 2 hr, then to 41 °F within 4 more hr; FDA Food Code 3-501.14) and freeze at 0 °F
+B47    : Purees, creams and ice cream bases
+C47    : 3–4 months
+D47    : Those with egg or dairy, in the short range
+B48    : Raw doughs, laminated doughs and unbaked crisps
+C48    : 2–3 months
+D48    : They lose their lift: label them with the production date
+B49    : Blanched fruits and vegetables, or purees
+C49    : 8–12 months
+D49    : Blanch before freezing: unblanched, they lose color and texture within a few weeks
+B50    : Product that has already gone out to a course or to the table
+C50    : Do not freeze
+D50    : Anything that has gone out to the dining room or broken the cold chain does not go back in the freezer: discard it and log it as waste
+A51    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 E29 E33 E34 E35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G35 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Monthly» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Tasks
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🔄 MENU & TASTING MENU
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Partial menu rotation: evaluate 2–3 dishes for replacement
+C6     : R&D
+A7     : 2
+B7     : Review the dishes with the lowest guest acceptance
+C7     : R&D
+A8     : 3
+B8     : Plan new dishes for next month
+C8     : R&D
+A9     : 4
+B9     : Full plating bible update
+C9     : Recipe cards
+A11    : 🧹 DEEP CLEAN & CALIBRATION
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Deep clean the lab / R&D area
+C13    : Cleaning
+A14    : 2
+B14    : Deep clean the dry-aging cabinets
+C14    : Cleaning
+A15    : 3
+B15    : Internal check of the scales with their reference weight, adjusting if needed (probe and thermometer calibration and certified external calibration go in "Quarterly & Annual")
+C15    : Kitchen
+A16    : 4
+B16    : Review all modernist equipment
+C16    : Kitchen
+A17    : 5
+B17    : Walk-in maintenance (filters, gaskets)
+C17    : Cleaning
+A19    : 💰 FINANCE & MANAGEMENT
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Full wine cellar inventory
+C21    : Wine cellar
+A22    : 2
+B22    : Supplier review: quality, price, deliveries
+C22    : Suppliers
+A23    : 3
+B23    : Actual vs. target food cost (analysis by dish)
+C23    : Food cost
+A24    : 4
+B24    : Beverage cost per cover
+C24    : Food cost
+A25    : 5
+B25    : Review monthly waste and the reduction plan
+C25    : Office
+A26    : 6
+B26    : File the month's time records with payroll and contracts: FLSA requires keeping them 2 years (payroll 3; some states more, e.g., NY 6) and they are the first thing a Department of Labor audit asks for
+C26    : Office
+A28    : 📚 TRAINING & DEVELOPMENT
+A29    : #
+B29    : Task
+C29    : Area
+D29    : Assigned to
+E29    : ✓
+F29    : Time
+G29    : Notes
+A30    : 1
+B30    : Team training session (new technique or refresher)
+C30    : R&D
+A31    : 2
+B31    : Informal performance review by role
+C31    : Office
+A32    : 3
+B32    : Plan next month's special events
+C32    : Events
+A33    : 4
+B33    : Review the month's goals and KPIs
+C33    : Office
+B34    : Tasks done:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Task",E6:E33,"✓")   → caché 0.0
+D34    : of
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Task")-COUNTIF(E6:E33,"N/A")   → caché 19.0
+A35    : Signed off by: _________________  Date: ___/___/______
+A36    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 E25 E26 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G33 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🐜 HYGIENE, PESTS & WATER — licensed company
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Frequency
+G5     : Notes
+A6     : 1
+B6     : Pest control by a licensed pest management company: service visit and signed service report on file
+C6     : Office
+F6     : Monthly
+A7     : 2
+B7     : Hood and duct cleaning by a certified contractor at the NFPA 96 frequency for your cooking volume (quarterly if high volume, semiannual if moderate): service report on file
+C7     : Cleaning
+F7     : Semiannual
+A8     : 3
+B8     : Optional third-party food safety audit or ATP swab testing to verify your cleaning plan
+C8     : Kitchen
+F8     : Semiannual
+A9     : 4
+B9     : Review your food safety plan (HACCP where your health department or a variance requires one, e.g. sous vide or reduced oxygen packaging) and supplier approvals: the menu changes of the year
+C9     : Office
+F9     : Annual
+A10    : 5
+B10    : Check food handler cards are current for the whole brigade, extras included (as your state requires), and that a certified food protection manager is on staff (FDA Food Code 2-102.12)
+C10    : Office
+F10    : Annual
+A11    : 6
+B11    : Check your health permit covers your current activity and equipment (sous vide, curing, dry aging and reduced oxygen packaging may need a variance)
+C11    : Office
+F11    : Annual
+A13    : 🔧 EQUIPMENT, REFRIGERATION & GAS
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Frequency
+G14    : Notes
+A15    : 1
+B15    : Gas lines and appliance connections checked by a licensed pro (as often as your local code requires)
+C15    : Kitchen
+F15    : Annual
+A16    : 2
+B16    : Refrigeration and dry-aging cabinets serviced by an EPA 608-certified tech: coils, gaskets, probes, defrost and refrigerant leak check
+C16    : Walk-in
+F16    : Annual
+A17    : 3
+B17    : Certified external calibration of the precision scales (0.01 g)
+C17    : Kitchen
+F17    : Annual
+A18    : 4
+B18    : Service check by an authorized technician of immersion circulators / water baths, blast chiller, dehydrator, Pacojet and siphons
+C18    : Kitchen
+F18    : Annual
+A19    : 5
+B19    : Calibrate probes and thermometers in ice water (32 °F) and log any offset
+C19    : Kitchen
+F19    : Quarterly
+A20    : 6
+B20    : Used cooking oil pickup by a licensed recycler: file the pickup receipts
+C20    : Cleaning
+F20    : Quarterly
+A22    : 🧯 PREMISES SAFETY
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Frequency
+G23    : Notes
+A24    : 1
+B24    : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157(e)(3)); hood fire suppression system every 6 months (NFPA 96)
+C24    : Office
+F24    : Annual
+A25    : 2
+B25    : Fire alarm inspection (NFPA 72) and emergency lighting tests (NFPA 101: 30 s monthly, 90 min yearly)
+C25    : Office
+F25    : Annual
+A26    : 3
+B26    : Legionella water management program (ASHRAE 188) only if you have a cooling tower, decorative fountain or high-risk hot water system
+C26    : Office
+F26    : Semiannual
+A27    : 4
+B27    : Electrical maintenance (NFPA 70B): infrared scan of main panels by a qualified electrician
+C27    : Office
+F27    : Annual
+A28    : 5
+B28    : Emergency action plan review and evacuation walk-through with kitchen and dining room staff, as your local fire code requires
+C28    : Office
+F28    : Annual
+A30    : 📄 DOCUMENTATION, INSURANCE & TAXES
+A31    : #
+B31    : Task
+C31    : Area
+D31    : Assigned to
+E31    : ✓
+F31    : Frequency
+G31    : Notes
+A32    : 1
+B32    : Review insurance (general liability, property, liquor liability, workers' comp): limits, capacity and covered activities (chef's table, pop-ups, off-site events)
+C32    : Office
+F32    : Annual
+A33    : 2
+B33    : File the quarter's time records (FLSA: time cards 2 years, payroll 3 years; some states require longer) and review overtime and new-hire paperwork (Form I-9)
+C33    : Office
+F33    : Quarterly
+A34    : 3
+B34    : POS check: software updates, sales tax rates and settings, user permissions and PCI DSS for card data
+C34    : Office
+F34    : Annual
+A35    : 4
+B35    : Update plate costs and menu prices with real supplier prices
+C35    : Food cost
+F35    : Quarterly
+A36    : 5
+B36    : Renew permits and licenses: business license, health permit, liquor license and, if you have one, outdoor dining permit; insurance renewal dates
+C36    : Office
+F36    : Annual
+A37    : 6
+B37    : Write the report number of each inspection and the date of the next one in "Notes"
+C37    : Office
+F37    : Quarterly
+B38    : Tasks done:
+C38    = =COUNTIFS(B6:B37,"?*",E6:E37,"✓")-COUNTIFS(B6:B37,"Task",E6:E37,"✓")   → caché 0.0
+D38    : of
+E38    = =COUNTIF(B6:B37,"?*")-COUNTIF(B6:B37,"Task")-COUNTIF(E6:E37,"N/A")   → caché 23.0
+A39    : Signed off by: _________________  Date: ___/___/______
+A40    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 E32 E33 E34 E35 E36 E37 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A6:G37 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 06-sommelier-wine-pairing-checklist.xlsx
+# docProps: title='Sommelier & Wine Pairing Checklist: Tasting Menu Pairing & Wine Cellar' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Sommelier & Wine Pairing Checklist: Tasting Menu Pairing & Wine Cellar
+B4     : How to use this template:
+B5     : ▸ Design the pairing for each course of the tasting menu.
+B6     : ▸ Manage the wine cellar with stock and temperature control.
+B7     : ▸ Include alternative (non-alcoholic) pairing options.
+B8     : ▸ Train the dining room team on the story behind each wine.
+B10    : Service protocol:
+B11    : ▸ The right glass for each type of wine/drink.
+B12    : ▸ Exact serving temperature.
+B13    : ▸ Pour per pairing glass (≈2–2.5 fl oz (60–80 ml) per course).
+B15    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B16    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Tasting Menu Pairing» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pairing Design by Course
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🍷 PAIRING — TASTING MENU
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Course 1 — Snack: wine/drink selected, glass, temp., oz
+C6     : Pairing
+A7     : 2
+B7     : Course 2 — Amuse-bouche: wine/drink, glass, temp., oz
+C7     : Pairing
+A8     : 3
+B8     : Course 3 — Cold appetizer: wine/drink, glass, temp., oz
+C8     : Pairing
+A9     : 4
+B9     : Course 4 — Hot appetizer: wine/drink, glass, temp., oz
+C9     : Pairing
+A10    : 5
+B10    : Course 5 — Fish: wine/drink, glass, temp., oz
+C10    : Pairing
+A11    : 6
+B11    : Course 6 — Meat: wine/drink, glass, temp., oz
+C11    : Pairing
+A12    : 7
+B12    : Course 7 — Pre-dessert: wine/drink, glass, temp., oz
+C12    : Pairing
+A13    : 8
+B13    : Course 8 — Dessert: wine/drink, glass, temp., oz
+C13    : Pairing
+A15    : 🍹 NON-ALCOHOLIC PAIRING
+A16    : #
+B16    : Task
+C16    : Area
+D16    : Assigned to
+E16    : ✓
+F16    : Time
+G16    : Notes
+A17    : 1
+B17    : Course 1 — Snack: mocktail/kombucha/juice, description
+C17    : Pairing
+A18    : 2
+B18    : Course 2 — Amuse-bouche: non-alcoholic alternative
+C18    : Pairing
+A19    : 3
+B19    : Course 3–4 — Appetizers: non-alcoholic alternative
+C19    : Pairing
+A20    : 4
+B20    : Course 5 — Fish: non-alcoholic alternative
+C20    : Pairing
+A21    : 5
+B21    : Course 6 — Meat: non-alcoholic alternative
+C21    : Pairing
+A22    : 6
+B22    : Course 7–8 — Desserts: non-alcoholic alternative
+C22    : Pairing
+A23    : 7
+B23    : Signature cocktails (alcoholic): list and recipes — served only under the restaurant's license and to guests 21+ with ID (23 U.S.C. 158)
+C23    : Pairing
+A24    : 8
+B24    : Craft beers selected for each course (if applicable)
+C24    : Pairing
+B25    : Tasks done:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Task",E6:E24,"✓")   → caché 0.0
+D25    : of
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Task")-COUNTIF(E6:E24,"N/A")   → caché 16.0
+A26    : Signed off by: _________________  Date: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G24 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Wine Cellar» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Wine Cellar Management
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🏪 STOCK & ROTATION
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Full wine cellar inventory (update monthly)
+C6     : Wine cellar
+A7     : 2
+B7     : Minimum stock control for each pairing label
+C7     : Wine cellar
+A8     : 3
+B8     : Strict FIFO rotation (first in, first out)
+C8     : Wine cellar
+A9     : 4
+B9     : Wine cellar temperature checked (reds, whites, sparkling zones)
+C9     : Wine cellar
+A10    : 5
+B10    : Wine cellar humidity checked
+C10    : Wine cellar
+A11    : 6
+B11    : Log wine receipts (date, supplier, price)
+C11    : Wine cellar
+A12    : 7
+B12    : Log wine outflows (date, service, quantity)
+C12    : Wine cellar
+A14    : 📋 TASTING SHEETS
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : A tasting sheet for every wine in the active pairing
+C16    : Sommelier
+A17    : 2
+B17    : Tasting notes for dining room storytelling
+C17    : Sommelier
+A18    : 3
+B18    : Optimal serving temperature logged
+C18    : Sommelier
+A19    : 4
+B19    : Decanting time (if applicable)
+C19    : Sommelier
+A20    : 5
+B20    : Recommended pairing (dish + technique)
+C20    : Sommelier
+A22    : 🤝 SUPPLIERS & TRAINING
+A23    : #
+B23    : Task
+C23    : Area
+D23    : Assigned to
+E23    : ✓
+F23    : Time
+G23    : Notes
+A24    : 1
+B24    : Winery relationships: contact, terms, volume rebate
+C24    : Suppliers
+A25    : 2
+B25    : Distributor relationships: catalog, deliveries, credit
+C25    : Suppliers
+A26    : 3
+B26    : Weekly dining room team training (the pairing wine)
+C26    : Dining room
+A27    : 4
+B27    : Beverage cost per cover control
+C27    : Food cost
+B28    : Tasks done:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Task",E6:E27,"✓")   → caché 0.0
+D28    : of
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Task")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Signed off by: _________________  Date: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G27 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 07-chefs-table-special-events-checklist.xlsx
+# docProps: title="Chef's Table & Special Events Checklist: Pop-Ups & Wine Dinners" · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Chef's Table & Special Events Checklist: Pop-Ups & Wine Dinners
+B4     : How to use this template:
+B5     : ▸ Organize each type of event with its specific checklist.
+B6     : ▸ The chef's table requires direct coordination between the chef and the guests.
+B7     : ▸ Pop-ups need special logistics (portable equipment).
+B8     : ▸ Plan the annual events calendar starting in January.
+B10    : Event types:
+B11    : ▸ Chef's table — premium experience with direct interaction
+B12    : ▸ Pop-ups — portable logistics, adapted mise en place
+B13    : ▸ Pairing dinners — collaboration with guest wineries
+B14    : ▸ Cooking demos — demonstrations for an audience
+B15    : ▸ Private dinners — menu, decor, billing
+B17    : Before accepting a private reservation:
+B18    : ▸ The first section of "Special Dinners" is what is agreed WHEN YOU CONFIRM: allergens and intolerances in writing, final guest count, price per guest, deposit and cancellation terms. Anything agreed verbally cannot be proven afterward.
+B19    : ▸ Allergens arrive in writing and are settled with the kitchen before the menu is finalized, not on the same night: on a ten-course tasting menu, an improvised substitution breaks the whole sequence.
+B20    : ▸ On the night of the dinner nothing is "confirmed" again: at the pass you CROSS-CHECK the allergens already confirmed in writing against each guest's ticket. One step agrees and the other verifies; they are not the same check twice.
+B22    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Chef's Table» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Chef's Table Checklist
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🍽️ CHEF'S TABLE — PREP
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Review with the kitchen the final guest count and the allergens already confirmed in writing at booking (see "Special Dinners" → "WHEN YOU CONFIRM THE RESERVATION")
+C6     : Chef's table
+A7     : 2
+B7     : Design the special chef's table menu (extended or exclusive)
+C7     : Kitchen
+A8     : 3
+B8     : Prepare the storytelling for each course (chef in person)
+C8     : Storytelling
+A9     : 4
+B9     : Visible mise en place: set up the station for interaction
+C9     : Mise en place
+A10    : 5
+B10    : Check special tableware / exclusive pieces
+C10    : Dining room
+A11    : 6
+B11    : Coordinate the special pairing with the sommelier
+C11    : Pairing
+A13    : 🎭 CHEF'S TABLE — SERVICE
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Chef's introduction to the guests
+C15    : Chef's table
+A16    : 2
+B16    : Interaction during plating (explain the technique live)
+C16    : Chef's table
+A17    : 3
+B17    : Course timing adapted to the pace of the table
+C17    : Chef's table
+A18    : 4
+B18    : Offer extra bites / off-menu items (chef's surprise)
+C18    : Chef's table
+A19    : 5
+B19    : Photograph the experience (with the guest's permission)
+C19    : Photography
+A20    : 6
+B20    : Personalized farewell from the chef
+C20    : Chef's table
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Pop-Up Events» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pop-Ups & Off-Site Events Checklist
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🚐 POP-UP — LOGISTICS
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Select the location and check the facilities (water, power, gas); temporary food event permit and health department approval; handwashing station and hot / cold holding on site
+C6     : Events
+A7     : 2
+B7     : List of portable equipment needed
+C7     : Events
+A8     : 3
+B8     : Transport of equipment and product
+C8     : Events
+A9     : 4
+B9     : Mise en place adapted to the limits of the space
+C9     : Mise en place
+A10    : 5
+B10    : Menu adapted to the pop-up format (simplified but impactful)
+C10    : Kitchen
+A11    : 6
+B11    : Staff needed: kitchen + dining room + logistics
+C11    : Events
+A13    : 🎤 COOKING DEMOS & DEMONSTRATIONS
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Define the topic/technique of the demo
+C15    : Events
+A16    : 2
+B16    : Prepare the script and timing (45–90 min typical)
+C16    : Events
+A17    : 3
+B17    : List of ingredients and equipment needed
+C17    : Events
+A18    : 4
+B18    : Check the venue's facilities (power, water, exhaust)
+C18    : Events
+A19    : 5
+B19    : Support materials (screen, overhead camera, microphone)
+C19    : Events
+B20    : Tasks done:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Task",E6:E19,"✓")   → caché 0.0
+D20    : of
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Task")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Signed off by: _________________  Date: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G19 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Special Dinners» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pairing Dinners & Private Dinners
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 🍷 PAIRING DINNERS WITH A GUEST WINERY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Contact the winery: choose wines, terms
+C6     : Sommelier
+A7     : 2
+B7     : Design a menu that makes each pairing wine shine
+C7     : Kitchen
+A8     : 3
+B8     : Set the event price and number of seats
+C8     : Office
+A9     : 4
+B9     : Marketing materials (social media, newsletter, website)
+C9     : Social media
+A10    : 5
+B10    : Prepare tasting sheets for guests
+C10    : Sommelier
+A11    : 6
+B11    : Coordinate the winemaker's presence in the dining room
+C11    : Events
+A13    : 📝 WHEN YOU CONFIRM THE RESERVATION (private dinner, event or chef's table)
+A14    : #
+B14    : Task
+C14    : Area
+D14    : Assigned to
+E14    : ✓
+F14    : Time
+G14    : Notes
+A15    : 1
+B15    : Allergens and intolerances of ALL guests in writing (email or form), never verbal, with the table name
+C15    : Office
+A16    : 2
+B16    : Final guest count and change deadline, noted on the event sheet
+C16    : Office
+A17    : 3
+B17    : Price per guest and what it includes (menu, pairing, extras, service, sales tax) confirmed in writing; a mandatory service charge is business revenue, not a tip (IRS Rev. Rul. 2012-18): tell the guest in writing
+C17    : Office
+A18    : 4
+B18    : Deposit collected and cancellation terms accepted in writing
+C18    : Office
+A19    : 5
+B19    : Final menu locked with the kitchen, with the alternatives for each allergen already worked out and tested
+C19    : Kitchen
+A20    : 6
+B20    : Special requests noted on the sheet: diet, celebration, decor, cake, departure time
+C20    : Events
+A21    : 🕯️ PRIVATE DINNERS
+A22    : #
+B22    : Task
+C22    : Area
+D22    : Assigned to
+E22    : ✓
+F22    : Time
+G22    : Notes
+A23    : 1
+B23    : Produce the menu as finalized with the client: specific order, mise en place and a run-through of the courses exclusive to this table
+C23    : Kitchen
+A24    : 2
+B24    : Cross-check at the pass the allergens confirmed in writing against each guest's ticket
+C24    : Kitchen
+A25    : 3
+B25    : Exclusive service: assigned staff
+C25    : Service
+A26    : 4
+B26    : Special table / room decor
+C26    : Dining room
+A27    : 5
+B27    : Close the billing at the end of the dinner: extras actually consumed, deposit already collected deducted and sales tax applied; a mandatory service charge is business revenue, not a tip (IRS Rev. Rul. 2012-18): tell the client in writing
+C27    : Office
+A29    : 📅 ANNUAL EVENTS CALENDAR
+A30    : #
+B30    : Task
+C30    : Area
+D30    : Assigned to
+E30    : ✓
+F30    : Time
+G30    : Notes
+A31    : 1
+B31    : Plan events by quarter (min. 1/month)
+C31    : Events
+A32    : 2
+B32    : Annual budget for special events
+C32    : Office
+A33    : 3
+B33    : Calendar of winery collaborations
+C33    : Sommelier
+A34    : 4
+B34    : Calendar of pop-ups and cooking demos
+C34    : Events
+B35    : Tasks done:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Task",E6:E34,"✓")   → caché 0.0
+D35    : of
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Task")-COUNTIF(E6:E34,"N/A")   → caché 21.0
+A36    : Signed off by: _________________  Date: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E23 E24 E25 E26 E27 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G34 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 08-food-photography-social-media-press-checklist.xlsx
+# docProps: title='Food Photography, Social Media & Press Checklist (Storytelling & Guides)' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Food Photography, Social Media & Press Checklist (Storytelling & Guides)
+B4     : How to use this template:
+B5     : ▸ Photograph every new dish BEFORE adding it to the menu.
+B6     : ▸ Keep a consistent social media editorial calendar.
+B7     : ▸ Storytelling is part of the product: document it.
+B8     : ▸ Manage your relationships with the press and food guides.
+B10    : Recommended frequency:
+B11    : ▸ 4–7 feed posts/week (Instagram/TikTok).
+B12    : ▸ 2–3 Stories daily (behind the scenes).
+B13    : ▸ 1 Reel/TikTok weekly (creative process).
+B15    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B16    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Food Photography» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Dish Photography Session
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 📸 PHOTO SESSION — EVERY NEW DISH
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Plate the perfect dish per the plating bible
+C6     : Plating
+A7     : 2
+B7     : Overhead shot (90°) with controlled lighting
+C7     : Photography
+A8     : 3
+B8     : 45° angle shot (the most used on social media)
+C8     : Photography
+A9     : 4
+B9     : Detail / macro shot (texture, cut, finish)
+C9     : Photography
+A10    : 5
+B10    : Cross-section / interior shot (if applicable)
+C10    : Photography
+A11    : 6
+B11    : Check backgrounds and props (signature plate, tablecloth, flatware)
+C11    : Photography
+A12    : 7
+B12    : Editing and retouching (brightness, contrast, consistent color)
+C12    : Photography
+A13    : 8
+B13    : Save in a folder organized by dish and season
+C13    : Photography
+A15    : 📱 PHOTOGRAPHY KIT — STANDARDS
+A16    : #
+B16    : Task
+C16    : Area
+D16    : Assigned to
+E16    : ✓
+F16    : Time
+G16    : Notes
+A17    : 1
+B17    : Angles defined for the restaurant (overhead, 45°, side)
+C17    : Photography
+A18    : 2
+B18    : Lighting: natural or softbox, consistent direction
+C18    : Photography
+A19    : 3
+B19    : Backgrounds: dark wood, stone, fabric, per the restaurant's style
+C19    : Photography
+A20    : 4
+B20    : Props: signature tableware, flatware, glassware, vegetables
+C20    : Photography
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Social Media» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Editorial Calendar & Social Media
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 📅 WEEKLY EDITORIAL CALENDAR
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Monday: post of a menu dish (professional photo)
+C6     : Social media
+A7     : 2
+B7     : Tuesday: behind-the-scenes Story (kitchen, R&D)
+C7     : Social media
+A8     : 3
+B8     : Wednesday: Reel / TikTok (creative process, plating)
+C8     : Social media
+A9     : 4
+B9     : Thursday: Story of the team / a supplier
+C9     : Social media
+A10    : 5
+B10    : Friday: weekend prep post
+C10    : Social media
+A11    : 6
+B11    : Saturday: live service Stories
+C11    : Social media
+A12    : 7
+B12    : Sunday: inspiration / chef's philosophy post
+C12    : Social media
+A14    : 🎬 BEHIND-THE-SCENES CONTENT
+A15    : #
+B15    : Task
+C15    : Area
+D15    : Assigned to
+E15    : ✓
+F15    : Time
+G15    : Notes
+A16    : 1
+B16    : Filmed R&D session (dish creation process)
+C16    : Social media
+A17    : 2
+B17    : Plating in detail (overhead camera at the pass)
+C17    : Social media
+A18    : 3
+B18    : Supplier visit (market, farm, fishmonger)
+C18    : Social media
+A19    : 4
+B19    : Team: introduce each member of the brigade
+C19    : Social media
+A20    : 5
+B20    : Technique explained (sous vide, fermentation, spherification)
+C20    : Social media
+B21    : Tasks done:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Task",E6:E20,"✓")   → caché 0.0
+D21    : of
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Task")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Signed off by: _________________  Date: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G20 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+
+=== Hoja «Press & Guides» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Press & Food Guides
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 📰 NARRATIVE & STORYTELLING
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Narrative of each dish documented (for the menu, website, dining room)
+C6     : Storytelling
+A7     : 2
+B7     : Restaurant story updated (for press)
+C7     : Marketing
+A8     : 3
+B8     : Chef's bio updated
+C8     : Marketing
+A9     : 4
+B9     : Culinary philosophy in 3–5 sentences (for communications)
+C9     : Marketing
+A11    : ⭐ REVIEW & PRESS MANAGEMENT
+A12    : #
+B12    : Task
+C12    : Area
+D12    : Assigned to
+E12    : ✓
+F12    : Time
+G12    : Notes
+A13    : 1
+B13    : Monitor Google, Tripadvisor, Yelp and OpenTable reviews
+C13    : Social media
+A14    : 2
+B14    : Respond to reviews (positive and negative) within 24–48 hr
+C14    : Social media
+A15    : 3
+B15    : Food press management (press releases, invitations)
+C15    : Press
+A16    : 4
+B16    : Material for guides: Michelin Guide (in the cities it covers), The World's 50 Best / North America's 50 Best, OAD, James Beard Awards and local press
+C16    : Press
+A17    : 5
+B17    : Press kit updated (photos, copy, milestones)
+C17    : Press
+A18    : 6
+B18    : Influencer and food blogger management (invitations)
+C18    : Social media
+B19    : Tasks done:
+C19    = =COUNTIFS(B6:B18,"?*",E6:E18,"✓")-COUNTIFS(B6:B18,"Task",E6:E18,"✓")   → caché 0.0
+D19    : of
+E19    = =COUNTIF(B6:B18,"?*")-COUNTIF(B6:B18,"Task")-COUNTIF(E6:E18,"N/A")   → caché 10.0
+A20    : Signed off by: _________________  Date: ___/___/______
+A21    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G18 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# 09-blank-fine-dining-checklist-template.xlsx
+# docProps: title='Blank Fine Dining Checklist Templates (Editable)' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Blank Fine Dining Checklist Templates (Editable)
+B4     : How to use this template:
+B5     : ▸ Use these three sheets to build your own checklists: each has three example rows you can rewrite or delete.
+B6     : ▸ Copy the structure of any other file in the kit.
+B7     : ▸ Add tasks specific to your fine dining restaurant.
+B8     : ▸ Each template runs on a different axis (A time block · B station · C profile): details below.
+B10    : Ideas for use:
+B11    : ▸ Seasonal menu change checklist
+B12    : ▸ Inspection or guide visit protocol
+B13    : ▸ Tasks for a one-off event
+B15    : Each template has its own axis:
+B16    : ▸ Template A — BY TIME BLOCK: one row per moment of the day (morning mise en place, service and closing). It is the one you print and hang at the pass.
+B17    : ▸ Template B — BY STATION: one row per station (R&D, cold, hot and pastry). It splits the menu's work among the people who execute it.
+B18    : ▸ Template C — BY PROFILE: one row per person (chef de cuisine, chef de partie, sommelier and dining room manager), with the profile written in the "Assigned to" column.
+B19    : ▸ The examples cover three values of each axis; the fourth of B (pastry) and the one of C (chef de partie) you write in the first free green row.
+B21    : The three example rows:
+B22    : ▸ Each template starts with three EXAMPLE rows in gray italics: they are there to show you the level of detail that works, not to be done. Write over them or delete them.
+B23    : ▸ They are marked "N/A" on purpose, which is why they do not count in "Tasks completed". If you write your task over one of them, change that mark or the row will still not count.
+B24    : ▸ The vocabulary is this house's (tasting menu, mise en place, course, stations, pairing): change it to yours.
+B26    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B27    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Template A» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template A — By Time Block
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+A5     : 1
+B5     : Example — MORNING MISE EN PLACE (write over it or delete the row): pull the day's prep and check it against the courses of the tasting menu
+C5     : Mise en place
+E5     : N/A
+A6     : 2
+B6     : Example — SERVICE (write over it or delete the row): pre-shift meeting with the brigade before the first course — guests, allergens and storytelling
+C6     : The pass
+E6     : N/A
+A7     : 3
+B7     : Example — CLOSING (write over it or delete the row): log the day's waste (product, quantity and reason) and close the walk-ins and the pass
+C7     : Kitchen
+E7     : N/A
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Template B» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template B — By Station
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+A5     : 1
+B5     : Example — R&D STATION (write over it or delete the row): finalize the new dish sheet — courses, order on the menu and timing
+C5     : R&D
+E5     : N/A
+A6     : 2
+B6     : Example — COLD STATION (write over it or delete the row): review the pickles, ferments and edible flowers on the menu
+C6     : Garde manger
+E6     : N/A
+A7     : 3
+B7     : Example — HOT STATION (write over it or delete the row): water baths, stocks and sauces ready before the first course
+C7     : Hot line
+E7     : N/A
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Template C» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Customizable Template C — By Profile
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : ✓
+F4     : Time
+G4     : Notes
+A5     : 1
+B5     : Example — CHEF DE CUISINE (write over it or delete the row): validate the plate cost and recipe sheet of the new dish before it goes on the menu
+C5     : Kitchen
+D5     : Chef de cuisine
+E5     : N/A
+A6     : 2
+B6     : Example — SOMMELIER (write over it or delete the row): review the pairing course by course and the open bottles (level and date)
+C6     : Wine cellar
+D6     : Sommelier
+E6     : N/A
+A7     : 3
+B7     : Example — DINING ROOM MANAGER (write over it or delete the row): assign sections and review allergens by table with the dining room team
+C7     : Dining room
+D7     : Dining room manager
+E7     : N/A
+B30    : Tasks done:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Task",E5:E29,"✓")   → caché 0.0
+D30    : of
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Task")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+####################################################################################################
+# 10-restaurant-opening-closing-checklist.xlsx
+# docProps: title='Restaurant Opening & Closing Checklist (Whole Building)' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$45 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 10 · Restaurant Opening & Closing Checklist (Whole Building)
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day.
+B8     : How to use
+B10    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.
+B11    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B13    : Editable cells
+B15    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 10-restaurant-opening-closing-checklist.xlsx — the checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B36    : ▸ 11-cash-drawer-opening-closing.xlsx — the CASH DRAWER: float, count by denomination, POS Z report and over/short.
+B37    : ▸ Order of use: rounds → cash drawer. Each file covers one level: the rounds file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B38    : ▸ You are in 10-restaurant-opening-closing-checklist.xlsx: this IS the frame of the day — the MILESTONE of opening and closing the restaurant; the MONEY goes in 11-cash-drawer-opening-closing.xlsx.
+B40    : — Fine Dining Checklists Kit Pro · AI Chef Pro · aichef.pro
+B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B43    : Contact: info@aichef.pro
+B45    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Restaurant Opening» · protegida=True · área='Restaurant Opening'!$A$1:$H$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Restaurant Opening Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm
+C5     : Entrance
+D5     : Shift manager
+E5     : 7:00 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Shift manager
+E6     : 7:00 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Shift manager
+E7     : 7:00 AM
+A8     : 4
+B8     : Raise security gate and open front door
+C8     : Entrance
+D8     : Shift manager
+E8     : 7:00 AM
+A9     : 5
+B9     : Set up outdoor signage / menu board
+C9     : Outside
+D9     : Shift manager
+E9     : 7:00 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Shift manager
+E10    : 7:00 AM
+A11    : 7
+B11    : Turn on the reservation system / order tablet
+C11    : Host stand
+D11    : Shift manager
+E11    : 7:15 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Shift manager
+E12    : 7:15 AM
+A13    : 9
+B13    : Review today's reservations and special events
+C13    : Host stand
+D13    : Shift manager
+E13    : 7:15 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Shift manager
+E14    : 7:15 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Shift manager
+E15    : 7:15 AM
+A16    : 12
+B16    : Check furniture condition (chairs, tables, lighting)
+C16    : Dining room
+D16    : Shift manager
+E16    : 7:15 AM
+A17    : 13
+B17    : Set up the patio if applicable (tables, chairs, umbrellas or patio heaters)
+C17    : Patio
+D17    : Shift manager
+E17    : 7:30 AM
+A18    : 14
+B18    : Check that menus are in order
+C18    : Dining room
+D18    : Shift manager
+E18    : 7:30 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Shift manager
+E19    : 7:30 AM
+A20    : 16
+B20    : Check dining room mise en place (flowers, decor)
+C20    : Dining room
+D20    : Shift manager
+E20    : 7:30 AM
+A21    : 17
+B21    : Verify the wine list is up to date
+C21    : Dining room
+D21    : Shift manager
+E21    : 7:30 AM
+A22    : 18
+B22    : Dining room pre-shift: tasting menu of the day
+C22    : Dining room
+D22    : Shift manager
+E22    : 7:30 AM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 18.0
+A30    : Manager signature: _________________________     Completion time: ________
+A31    : — Fine Dining Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Restaurant Closing» · protegida=True · área='Restaurant Closing'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Restaurant Closing Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Turn off background music
+C5     : General
+D5     : Shift manager
+E5     : Close
+A6     : 2
+B6     : Check no guests are left in the restaurant
+C6     : Dining room
+D6     : Shift manager
+E6     : Close
+A7     : 3
+B7     : Remove fresh table decorations
+C7     : Dining room
+D7     : Shift manager
+E7     : Close
+A8     : 4
+B8     : Update the wine list if anything changed
+C8     : Dining room
+D8     : Shift manager
+E8     : Close
+A9     : 5
+B9     : Clean up and bring in the patio, if you have one
+C9     : Patio
+D9     : Shift manager
+E9     : Close
+A10    : 6
+B10    : Bring in the outdoor signage
+C10    : Outside
+D10    : Shift manager
+E10    : Close
+A11    : 7
+B11    : Turn off the POS / card terminal (or leave it on standby)
+C11    : Register
+D11    : Shift manager
+E11    : Close
+A12    : 8
+B12    : Empty trash cans in common areas and restrooms
+C12    : Restrooms
+D12    : Shift manager
+E12    : Close
+A13    : 9
+B13    : Check that windows are closed
+C13    : General
+D13    : Shift manager
+E13    : Close
+A14    : 10
+B14    : Turn off HVAC
+C14    : General
+D14    : Shift manager
+E14    : Close
+A15    : 11
+B15    : Turn off lights (leave security lighting on)
+C15    : General
+D15    : Shift manager
+E15    : Close
+A16    : 12
+B16    : Final safety check (gas, water, outlets)
+C16    : General
+D16    : Shift manager
+E16    : Close
+A17    : 13
+B17    : Close the security gate / shutters and doors
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A18    : 14
+B18    : Arm the alarm
+C18    : Entrance
+D18    : Last one out
+E18    : Close
+A19    : 15
+B19    : Lock up and verify it is locked
+C19    : Entrance
+D19    : Last one out
+E19    : Close
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Manager signature: _________________________     Completion time: ________
+A28    : — Fine Dining Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 11-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$56 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 11 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 10-restaurant-opening-closing-checklist.xlsx — the checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B47    : ▸ 11-cash-drawer-opening-closing.xlsx — the CASH DRAWER: float, count by denomination, POS Z report and over/short.
+B48    : ▸ Order of use: rounds → cash drawer. Each file covers one level: the rounds file marks the MILESTONE (turn on, open, close) and the cash file carries the MONEY. If a task shows up in both, it's on purpose: one is the milestone and the other the detail.
+B49    : ▸ You are in 11-cash-drawer-opening-closing.xlsx: this is the CASH DRAWER — the day's MONEY (float, count, POS Z report and over/short); the frame of the day is in 10-restaurant-opening-closing-checklist.xlsx.
+B51    : — Fine Dining Checklists Kit Pro · AI Chef Pro · aichef.pro
+B53    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B54    : Contact: info@aichef.pro
+B56    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / MOD
+D5     : 7:15 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / MOD
+D6     : 7:15 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / MOD
+D7     : 7:15 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / MOD
+D8     : 7:15 AM
+A9     : 5
+B9     : Check that the POS is on and open the register shift
+C9     : Cashier / MOD
+D9     : 7:30 AM
+A10    : 6
+B10    : Print the opening X report (start-of-day report)
+C10    : Cashier / MOD
+D10    : 7:30 AM
+A11    : 7
+B11    : Check the receipt paper roll
+C11    : Cashier / MOD
+D11    : 7:30 AM
+A12    : 8
+B12    : Check the card terminal works
+C12    : Cashier / MOD
+D12    : 7:30 AM
+A13    : 9
+B13    : Check the payment gateway connection
+C13    : Cashier / MOD
+D13    : 7:45 AM
+A14    : 10
+B14    : Note issues from the previous shift
+C14    : Cashier / MOD
+D14    : 7:45 AM
+A15    : 11
+B15    : Opening manager sign-off
+C15    : Cashier / MOD
+D15    : 7:45 AM
+A22    : Tasks done:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Starting bank (opening float)
+C23    : 0
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
+A25    : Manager signature: _________________________     Time: ________
+A26    : — Fine Dining Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / MOD
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / MOD
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / MOD
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / MOD
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / MOD
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / MOD
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / MOD
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / MOD
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / MOD
+D13    : Close
+A14    : 10
+B14    : Set aside tomorrow's starting bank
+C14    : Cashier / MOD
+D14    : Close
+A15    : 11
+B15    : Prepare the bank deposit / put it in the safe
+C15    : Cashier / MOD
+D15    : Close
+A16    : 12
+B16    : Closing manager sign-off
+C16    : Cashier / MOD
+D16    : Close
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Cash Count by Denomination
+A25    : Denomination
+B25    : Quantity
+C25    : Subtotal
+A26    : BILLS
+A27    : $100
+B27    : 0
+C27    = =B27*100   → caché 0.0
+A28    : $50
+B28    : 0
+C28    = =B28*50   → caché 0.0
+A29    : $20
+B29    : 0
+C29    = =B29*20   → caché 0.0
+A30    : $10
+B30    : 0
+C30    = =B30*10   → caché 0.0
+A31    : $5
+B31    : 0
+C31    = =B31*5   → caché 0.0
+A32    : $2
+B32    : 0
+C32    = =B32*2   → caché 0.0
+A33    : $1
+B33    : 0
+C33    = =B33*1   → caché 0.0
+A34    : COINS
+A35    : $1 coin
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : 50¢
+B36    : 0
+C36    = =B36*0.5   → caché 0.0
+A37    : 25¢
+B37    : 0
+C37    = =B37*0.25   → caché 0.0
+A38    : 10¢
+B38    : 0
+C38    = =B38*0.1   → caché 0.0
+A39    : 5¢
+B39    : 0
+C39    = =B39*0.05   → caché 0.0
+A40    : 1¢
+B40    : 0
+C40    = =B40*0.01   → caché 0.0
+A41    : 25¢ roll
+B41    : 0
+C41    = =B41*10   → caché 0.0
+A42    : 10¢ roll
+B42    : 0
+C42    = =B42*5   → caché 0.0
+A43    : TOTAL CASH
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Closing Summary
+A46    : Item
+C46    : Amount
+A47    : Total cash (count)
+C47    = =C43   → caché 0.0
+A48    : Starting bank (−)
+C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
+A49    : Net cash (counted − starting bank)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Card sales, excl. tips
+C50    : 0
+A51    : Other tenders + card tips paid in cash
+C51    : 0
+A52    : TOTAL COLLECTED
+C52    = =C49+C50+C51   → caché 0.0
+A53    : POS Z report: sales + tax, excl. tips
+C53    : 0
+A54    : OVER / SHORT
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Manager signature: _________________________     Time: ________
+A57    : — Fine Dining Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : General manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Fine Dining Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-fine-dining-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Fine Dining Pre-Shift Meeting Template' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Fine Dining Pre-Shift Meeting Template
+B4     : How to use this template:
+B5     : ▸ Fill out BEFORE every service (lunch and/or dinner).
+B6     : ▸ The executive chef and the maître d' review it together.
+B7     : ▸ Share it with the WHOLE team (kitchen + dining room).
+B8     : ▸ It is the central communication document of the service.
+B10    : Key elements of the pre-shift meeting:
+B11    : ▸ Menu of the day with possible changes or substitutions.
+B12    : ▸ Allergens on confirmed reservations.
+B13    : ▸ VIPs, press, guides, special events.
+B14    : ▸ Updated storytelling for each course.
+B16    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B17    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Meeting» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Pre-Shift Meeting
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : 📋 MENU & CHANGES OF THE DAY
+A5     : #
+B5     : Task
+C5     : Area
+D5     : Assigned to
+E5     : ✓
+F5     : Time
+G5     : Notes
+A6     : 1
+B6     : Tasting menu of the day: confirm all courses
+C6     : Kitchen
+A7     : 2
+B7     : Changes or substitutions from the previous day
+C7     : Kitchen
+A8     : 3
+B8     : Dishes in testing (R&D) served today (if applicable)
+C8     : R&D
+A9     : 4
+B9     : Product availability: all stock confirmed
+C9     : Inventory
+A10    : 5
+B10    : Limited-production dishes (state the maximum portions)
+C10    : Kitchen
+A12    : ⚠️ ALLERGENS & RESTRICTIONS
+A13    : #
+B13    : Task
+C13    : Area
+D13    : Assigned to
+E13    : ✓
+F13    : Time
+G13    : Notes
+A14    : 1
+B14    : Review reservations: list allergens by table
+C14    : Maître d'
+A15    : 2
+B15    : Identify tables with special restrictions (vegan, halal, etc.)
+C15    : Maître d'
+A16    : 3
+B16    : Prepare alternatives for tables with allergens
+C16    : Kitchen
+A17    : 4
+B17    : Communicate each table's restrictions to the dining room team
+C17    : Dining room
+A19    : ⭐ VIPs, PRESS & EVENTS
+A20    : #
+B20    : Task
+C20    : Area
+D20    : Assigned to
+E20    : ✓
+F20    : Time
+G20    : Notes
+A21    : 1
+B21    : Identify the day's VIPs (name, table, preferences)
+C21    : Maître d'
+A22    : 2
+B22    : Press/guides/influencers: service protocol
+C22    : Maître d'
+A23    : 3
+B23    : Chef's table today: confirm menu, timing, storytelling
+C23    : Chef's table
+A24    : 4
+B24    : Private dinner / special event: details confirmed
+C24    : Events
+A26    : 🍷 PAIRING & STORYTELLING
+A27    : #
+B27    : Task
+C27    : Area
+D27    : Assigned to
+E27    : ✓
+F27    : Time
+G27    : Notes
+A28    : 1
+B28    : Day's pairing confirmed by the sommelier
+C28    : Pairing
+A29    : 2
+B29    : Pairing changes from the previous day
+C29    : Sommelier
+A30    : 3
+B30    : Storytelling for each course: run-through with the dining room team
+C30    : Storytelling
+A31    : 4
+B31    : Facts on the day's wine and winery for conversation with the guest
+C31    : Sommelier
+A33    : 🧪 DISHES IN TESTING / R&D
+A34    : #
+B34    : Task
+C34    : Area
+D34    : Assigned to
+E34    : ✓
+F34    : Time
+G34    : Notes
+A35    : 1
+B35    : Dish in testing today (if offered to a selected table)
+C35    : R&D
+A36    : 2
+B36    : Feedback to collect: flavor, texture, presentation, opinion
+C36    : R&D
+A37    : 3
+B37    : Person responsible for collecting dining room feedback
+C37    : Dining room
+B38    : Tasks done:
+C38    = =COUNTIFS(B6:B37,"?*",E6:E37,"✓")-COUNTIFS(B6:B37,"Task",E6:E37,"✓")   → caché 0.0
+D38    : of
+E38    = =COUNTIF(B6:B37,"?*")-COUNTIF(B6:B37,"Task")-COUNTIF(E6:E37,"N/A")   → caché 20.0
+A39    : Signed off by: _________________  Date: ___/___/______
+A40    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E21 E22 E23 E24 E28 E29 E30 E31 E35 E36 E37 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=Mark ✓ if done
+CF A6:G37 · expression  · fórmula=['AND($E6="✓",$B6<>"Task")'] · texto=None
+####################################################################################################
+# BONUS-02-fine-dining-annual-calendar.xlsx
+# docProps: title='BONUS: Fine Dining Annual Calendar: Menu Changes, Key Dates & Seasons (US)' · subject='Fine Dining Checklists Kit Pro · v2.0' · keywords="fine dining checklist, tasting menu, chef's table, fine dining steps of service, mise en place checklist, kitchen brigade, sommelier, AI Chef Pro" · description='aichef.pro/en/digital-products/fine-dining-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área= · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Fine Dining Annual Calendar: Menu Changes, Key Dates & Seasons (US)
+B4     : How to use this template:
+B5     : ▸ Plan the whole year with seasonal menu changes.
+B6     : ▸ Identify key dates for special menus.
+B7     : ▸ Coordinate participation in food festivals.
+B8     : ▸ Prepare ahead with enough lead time.
+B10    : Recommended menu changes:
+B11    : ▸ 4 main seasonal changes.
+B12    : ▸ Partial monthly rotation (2–3 dishes).
+B13    : ▸ Special menus for key dates.
+B15    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B16    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
+
+=== Hoja «Annual Calendar» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Annual Calendar — Fine Dining Restaurant
+A2     : AI Chef Pro · aichef.pro — Fine Dining Checklists Kit Pro
+A4     : Month
+B4     : Key Actions / Key Dates
+C4     : Star Ingredients
+D4     : Demand
+E4     : ✓
+F4     : Notes
+A5     : January
+B5     : Winter menu established. Black truffle (peak season). Farm-raised game, if your supplier has it. New Year's Day menu (Jan 1). Annual event planning.
+C5     : Black truffle, game, tubers
+D5     : Medium
+A6     : February
+B6     : Valentine's Day (Feb 14): special tasting menu for couples. Black truffle (final phase). Seasonal citrus. Prep for the spring menu change.
+C6     : Truffle, citrus, artichokes
+D6     : High
+A7     : March
+B7     : SPRING MENU CHANGE. Asparagus, peas, fava beans. R&D sessions for new spring dishes. St. Patrick's Day (Mar 17) only if it suits your house. Local food festival (check).
+C7     : Asparagus, peas, lamb
+D7     : Medium
+A8     : April
+B8     : Spring menu up and running. Easter and Passover (dates vary): high covers, special menu. Spring celebration season starts (graduations in May–June): midday groups, set menu and deposit. Artichokes, edible flowers. Prepare the seasonal pop-up.
+C8     : Artichokes, flowers, strawberries
+D8     : High
+A9     : May
+B9     : Graduations in full swing + Mother's Day (2nd Sunday): two of the fullest midday services of the year. Memorial Day (last Monday). Strawberries, asparagus, morels, ramps, soft-shell crab (start of season). Prep for the summer menu change.
+C9     : Morels, ramps, asparagus
+D9     : High
+A10    : June
+B10    : SUMMER MENU CHANGE. Last graduations and weddings of the season. Seasonal tomatoes, peach, apricot. Signature chilled soups. Father's Day (3rd Sunday). Patio / outdoor dinners.
+C10    : Tomato, peach, shrimp
+D10    : High
+A11    : July
+B11    : Summer menu established. Independence Day (Jul 4): decide your hours. Figs, melon, watermelon. Pairing with crisp wines and rosé wines. Culinary tourism: high covers.
+C11    : Heirloom tomatoes, corn, stone fruit
+D11    : High
+A12    : August
+B12    : Peak summer occupancy. No federal holiday in August: stagger team vacations and set the schedules weeks in advance. Peppers, eggplant, zucchini. Signature ice creams (extra production). Prep for the fall menu change.
+C12    : Pepper, eggplant, ice cream
+D12    : High
+A13    : September
+B13    : FALL MENU CHANGE. Wild mushrooms (start of season). Grapes, late figs. Harvest pairing dinners with wineries. Labor Day (1st Monday).
+C13    : Mushrooms, grapes, figs
+D13    : High
+A14    : October
+B14    : Full mushroom season (porcini, chanterelle, black trumpet). Pumpkin, sweet potato. Chestnuts. Local fall food festival. Halloween (Oct 31) if it fits.
+C14    : Mushrooms, pumpkin, chestnuts
+D14    : High
+A15    : November
+B15    : Thanksgiving (4th Thursday): decide whether to open or run a prix fixe menu. Black truffle (start of season). Game. Prep holiday menus. December reservations open.
+C15    : Truffle, game, root vegetables
+D15    : Medium
+A16    : December
+B16    : WINTER MENU CHANGE. Holiday parties (corporate dinners), Christmas Eve and Christmas Day (many close on the 25th), New Year's Eve (gala menu, champagne toast for guests 21+). Truffle, foie gras, shellfish, caviar. Peak revenue of the year.
+C16    : Truffle, foie gras, shellfish, caviar
+D16    : High
+A18    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None

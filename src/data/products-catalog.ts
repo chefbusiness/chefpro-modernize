@@ -283,11 +283,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-restaurante-creativo',
     url: '/kit-tareas-restaurante-creativo',
     price: '€12',
-    name: { es: 'Tareas: Restaurante Creativo', en: 'Tasks: Creative Restaurant' },
+    name: { es: 'Tareas: Restaurante Creativo', en: 'Fine Dining Checklists Kit Pro' },
     description: {
       es: 'Operativa para restaurantes de autor y creativos.',
-      en: 'Operations playbook for chef-driven and creative restaurants.',
+      en: 'Fine dining checklists for opening and closing, tasting menu mise en place, R&D, the kitchen brigade, sommelier and pairing, chef\'s table and events, the whole restaurant and the cash drawer: 477 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `fine-dining-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/fine-dining-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-chef-privado': {
     id: 'kit-tareas-chef-privado',
@@ -670,21 +673,27 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-food-truck',
     url: '/kit-tareas-food-truck',
     price: '€12',
-    name: { es: 'Tareas: Food Truck', en: 'Tasks: Food Truck' },
+    name: { es: 'Tareas: Food Truck', en: 'Food Truck Checklists Kit Pro' },
     description: {
       es: 'Setup y teardown, APPCC móvil, permisos y eventos.',
-      en: 'Setup and teardown, mobile HACCP, permits and events.',
+      en: 'Food truck checklists for setup and teardown, the pre-trip and vehicle check, health inspection prep, permits and events, the manager, duties by role and cleaning: 141 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `food-truck-checklist-templates`, $15 USD.
+    urlByLang: { en: '/en/digital-products/food-truck-checklist-templates' },
+    priceByLang: { en: '$15' },
   },
   'kit-tareas-panaderia': {
     id: 'kit-tareas-panaderia',
     url: '/kit-tareas-panaderia',
     price: '€12',
-    name: { es: 'Tareas: Panadería / Obrador', en: 'Tasks: Bakery' },
+    name: { es: 'Tareas: Panadería / Obrador', en: 'Bakery Checklists Kit Pro' },
     description: {
       es: 'Turno de madrugada, masa madre, hornos y expositor.',
-      en: 'Night shift, sourdough, ovens and display case.',
+      en: 'Bread bakery checklists for opening and closing on the overnight bake shift, the sourdough starter, deck and rack ovens, the display case and labels, the manager, duties by role and cleaning: 135 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `bakery-checklist-templates`, $15 USD.
+    urlByLang: { en: '/en/digital-products/bakery-checklist-templates' },
+    priceByLang: { en: '$15' },
   },
   'kit-tareas-asador': {
     id: 'kit-tareas-asador',
@@ -700,11 +709,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-marisqueria',
     url: '/kit-tareas-marisqueria',
     price: '€14',
-    name: { es: 'Tareas: Marisquería', en: 'Tasks: Seafood Restaurant' },
+    name: { es: 'Tareas: Marisquería', en: 'Seafood Restaurant Checklists Kit Pro' },
     description: {
       es: 'Vivero, cadena de frío y APPCC de producto vivo.',
-      en: 'Live tank, cold chain and HACCP for live shellfish.',
+      en: 'Seafood restaurant checklists for opening and closing, the live tank and receiving, shellfish tags and HACCP, the raw bar and ice display, the manager, duties by role and cleaning: 165 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `seafood-restaurant-checklist-templates`, $15 USD.
+    urlByLang: { en: '/en/digital-products/seafood-restaurant-checklist-templates' },
+    priceByLang: { en: '$15' },
   },
   'kit-tareas-sushi-bar': {
     id: 'kit-tareas-sushi-bar',

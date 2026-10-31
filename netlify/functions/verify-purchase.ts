@@ -609,6 +609,42 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-31): gemelo de kit-tareas-food-truck, producto independiente con su propio acceso.
+  'food-truck-checklist-templates': {
+    accessPath: '/en/digital-products/food-truck-checklist-templates/access',
+    emailSubject: 'Your access to Food Truck Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Food Truck Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-31): gemelo de kit-tareas-panaderia, producto independiente con su propio acceso.
+  'bakery-checklist-templates': {
+    accessPath: '/en/digital-products/bakery-checklist-templates/access',
+    emailSubject: 'Your access to Bakery Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Bakery Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-31): gemelo de kit-tareas-marisqueria, producto independiente con su propio acceso.
+  'seafood-restaurant-checklist-templates': {
+    accessPath: '/en/digital-products/seafood-restaurant-checklist-templates/access',
+    emailSubject: 'Your access to Seafood Restaurant Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Seafood Restaurant Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-31): gemelo de kit-tareas-restaurante-creativo, producto independiente con su propio acceso.
+  'fine-dining-checklist-templates': {
+    accessPath: '/en/digital-products/fine-dining-checklist-templates/access',
+    emailSubject: 'Your access to Fine Dining Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Fine Dining Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-24): gemelo de kit-tareas-chocolateria, producto independiente con su propio acceso
   // (mismo patrón que restaurant-schedule-templates).
   'chocolate-shop-checklist-templates': {

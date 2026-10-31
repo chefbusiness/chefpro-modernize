@@ -1285,6 +1285,86 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'food-truck-checklist-templates': {
+    version: '1.1',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '1.1',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 1.1: 9 checklist templates plus 2 bonuses (11 Excel files, one sheet each) with 141 food truck tasks already written, adapted to the US with notes for the UK.",
+          "US food truck roles (food truck chef, prep cook, window staff, driver / tech, manager), the time each setup and teardown task takes, and an OK column with a ✓ / — / N/A drop-down that turns the row green on 7 of the checklists.",
+          "Setup, teardown and the pre-trip check: parking only in a legal vending spot, the generator outside and away from the window (carbon monoxide), propane cylinders secured with a soapy-water leak test after every swap (NFPA 58), ABC and Class K extinguishers tagged, the hood suppression system every 6 months (NFPA 96), registration with your state DMV and a CDL only at 26,001 lb GVWR or more.",
+          "Food safety under the FDA Food Code in °F: cold at 41 °F or below before loading, in transit and on arrival, cooking to 165, 155 or 145 °F, hot holding at 135 °F or time as a public health control, leftovers cooled by the two-stage rule with 7-day date marking, a handwashing sink at 100 °F or above, no bare-hand contact, sanitizer checked with test strips, the 9 major allergens (the UK's 14 noted) and a written allergen notice.",
+          "Water and the commissary: potable water from an approved source, a wastewater tank at least 15% larger than the fresh tank and dumped only at the commissary or an approved servicing area, and prep never in a home kitchen.",
+          "US permits and events: mobile vending license, mobile food unit health permit and commissary agreement, general liability insurance and a certificate of insurance, business license, seller's permit and EIN, sales tax by vending location, temporary food event permits, and 6 event types from food truck parks to weddings.",
+          "Manager, weekly and monthly lists for a US food truck: the route within each city's vending rules, food cost against a 28–35% benchmark, ROI per event, the daily cash reconciliation with a written tip pool (managers and supervisors don't keep tips), food truck apps and a monthly check that every permit is current. Plus a pre-event briefing, a 12-month US calendar of events, menus, maintenance and marketing, every sheet set up to print on US Letter paper, and the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
+  'bakery-checklist-templates': {
+    version: '1.1',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '1.1',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 1.1: 9 checklist templates plus 2 bonuses (11 Excel files, one sheet each) with 135 bread bakery tasks already written, adapted to the US with notes for the UK.",
+          "US bakery roles (head baker, baker, bakery assistant, counter staff, manager), the overnight bake shift task by task from 3:00 AM to 2:30 PM on a 12-hour clock, and an OK column with a ✓ / — / N/A drop-down that turns the row green on 7 of the checklists.",
+          "Sourdough starter and fermentation: daily 1:1:1 feeding, pH 3.8–4.2, starter at 75–82 °F, the float test, a backup in the refrigerator and the log; dough at 75–79 °F after mixing, bulk time by bakehouse temperature, the windowpane test, a cold retard at 37–41 °F, the final proof and the poke test; fresh yeast at 36–39 °F, poolish and biga, with a column for each reading.",
+          "Deck and rack ovens with the process temperatures converted to °F: preheating, the deck checked with an infrared thermometer at 430–500 °F, steam and the damper, and a bake table for 7 breads, from baguette at 465–480 °F to brioche at 355–375 °F.",
+          "The shop under the FDA Food Code: labels with name, ingredients, net weight and allergens for everything bagged or boxed on site (3-602.11), a written allergen notice for unwrapped bread where adopted (3-602.12(C)), the 9 major allergens with wheat and sesame, meat empanadas and cream fillings held at 41 °F or 135 °F, gluten-free only under 20 ppm (21 CFR 101.91), organic only under USDA Organic rules and a legal-for-trade scale for sales by weight.",
+          "Manager, weekly and monthly lists for a US bread bakery: production planned from sales and orders, waste under 8% (the kit's target), flour quality (protein, ash, falling number), weekly food cost against a 28–35% benchmark, gas ovens serviced by a licensed technician and pest control by a licensed operator.",
+          "Seasons and holidays for a US bakery (stollen, panettone and dinner rolls for the holidays, Easter hot cross buns, World Bread Day, Thanksgiving pre-orders) and a 12-month calendar with Mardi Gras king cakes, St. Patrick's soda bread, Rosh Hashanah challah, maintenance and team training. Plus a daily production sheet, every sheet set up to print on US Letter paper, and the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
+  'seafood-restaurant-checklist-templates': {
+    version: '1.1',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '1.1',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 1.1: 9 checklist templates plus 2 bonuses (11 Excel files, one sheet each) with 165 seafood restaurant tasks already written, adapted to the US with notes for the UK.",
+          "US seafood restaurant roles (head chef and seafood buyer, fish station, shellfish station, FOH manager, server), opening and closing task by task from 7:00 AM to 11:45 PM on a 12-hour clock, and an OK column with a ✓ / — / N/A drop-down that turns the row green on 7 of the checklists.",
+          "The live tank every day: water temperature by species per your supplier and the tank maker, dissolved oxygen, salinity, pH, the filter, mortality and feeding, with a weekly drain, sanitize and refill; a display tank for live molluscan shellfish only with a health department variance and a HACCP plan.",
+          "Receiving and traceability under the FDA Food Code in °F: your seafood distributor or dock-to-door supplier, 41 °F cold and 0 °F frozen, shellstock per NSSP rules (45 °F air or 50 °F internal), shellfish only from NSSP-listed shippers with tags kept 90 days, histamine-forming fish rejected if warm, the FDA Seafood List market name, lot traceability and freshness signs.",
+          "HACCP with 5 critical control points (receiving, storage, cooking to 145 °F for 15 seconds, the display on drained ice at 41 °F, raw fish with parasite destruction and its 90-day record) and the consumer advisory; allergens with fish and crustacean shellfish as major US allergens and molluscs noted for the UK's 14.",
+          "Raw bar and ice display (drained crushed ice, ice every 90 minutes, FIFO, oysters shucked to order with the lot tag kept), manager, weekly and monthly lists (market price items, food cost under 32% as the kit's target, refrigeration by an EPA 608-certified tech, licensed pest control, a written tip pool) and wine pairings for guests 21+ with ID.",
+          "US seafood seasons as a guide (dates vary by state: crawfish, soft-shell crabs, wild salmon, lobster, stone and king crab, bay scallops, oysters), key events from Lent Fridays to the Feast of the Seven Fishes, state closures, minimum sizes and IUU seafood. Plus a pre-shift meeting template, a 12-month US calendar, every sheet set up to print on US Letter paper, and the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
+  'fine-dining-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 2.0: 11 checklist templates plus 2 bonuses (13 Excel files, 49 sheets) with 477 fine dining tasks already written, adapted to the US with notes for the UK.",
+          "A US fine dining brigade (executive chef, sous chef, chefs de partie on the hot line and in garde manger, creative pastry chef, sommelier, maître d' and tasting menu servers), a counter on every checklist that leaves out the tasks marked N/A, and whole-restaurant and cash drawer files with who does it and a due-by time on a 12-hour clock.",
+          "The modernist kitchen under the FDA Food Code in °F: a safe start-up (hood first, then the gas check), walk-ins at 41 °F or below and freezers at 0 °F or below, raw or undercooked fish with parasite destruction (−4 °F for 7 days or −31 °F), its 90-day record and the consumer advisory (citrus acid does not replace freezing), the sous vide egg at 145 °F, sous vide stored in the bag only with a HACCP plan or variance, cooling from 135 °F to 70 °F within 2 hours and to 41 °F within 4 more, 7-day date marking, microgreens washed under running water and the 9 major allergens (the UK's 14 noted).",
+          "Tasting menu mise en place by lead time with a plating bible course by course, menu development and R&D with 3 test iterations and recipe documentation, and a freezer shelf-life table at 0 °F.",
+          "A Quarterly & Annual sheet of contracted services for a US restaurant: licensed pest control, hood and duct cleaning (NFPA 96), gas, refrigeration by an EPA 608-certified tech, probes calibrated at 32 °F, extinguishers (OSHA) and hood suppression, fire alarm (NFPA 72) and emergency lighting (NFPA 101), insurance, FLSA time records and Form I-9, the POS and sales tax, and permit renewals.",
+          "Sommelier and wine pairing with a non-alcoholic pairing and signature cocktails only under your license for guests 21+ with ID; the chef's table, pop-ups and wine dinners with private dinners confirmed in writing and a mandatory service charge billed as business revenue, not a tip (IRS Rev. Rul. 2012-18); food photography, social media and the guides (Michelin Guide in the cities it covers, the 50 Best lists, OAD, James Beard Awards).",
+          "A cash drawer count by US bill and coin with the starting bank, the POS Z report and an automatic over/short, plus a monthly cash log; a pre-shift meeting template and a 12-month US calendar of menu changes, key dates, star ingredients and demand. Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
   'ghost-kitchen-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',

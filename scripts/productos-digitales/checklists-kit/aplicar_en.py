@@ -87,6 +87,9 @@ FORMATOS = OrderedDict(mapas.FORMATOS_EN)                             # D13
 INVARIABLES = set(extraer_textos.INVARIABLES)
 RX_VERSION_ES = extraer_textos.RX_VERSION
 HOJA_INSTR_EN = mapas.HOJAS['Instrucciones']
+# molde PLANO (foodtruck/SPEC.md §0.1): una hoja por libro, sin «Instrucciones»; el título interior va en
+# mapas.CELDA_TITULO de la única hoja y lo escribe capa_por_celda (mapas.POR_CELDA). Falso en los demás kits.
+PLANO = extraer_textos.PLANO
 CLAVES = mapas.CLAVES
 CAMPO_DV = {'dv-error-titulo': 'errorTitle', 'dv-error': 'error', 'dv-prompt-titulo': 'promptTitle', 'dv-prompt': 'prompt'}
 DV_MENSAJES_EN = getattr(mapas, 'DV_MENSAJES_EN', OrderedDict())      # arreglos por aparición (si los hubiera)
@@ -535,6 +538,8 @@ def reescribir_dv_cf(L, T):
 # Capas regeneradas (mapas.py)
 # ==========================================================================
 def capa_titulo(L, fname_es):
+    if PLANO:                                    # el título va por POR_CELDA (CELDA_TITULO de la única hoja)
+        return
     L.poner('Instrucciones', 'B2', mapas.titulo_interior(fname_es), es_texto)
 
 
@@ -787,6 +792,13 @@ def metadatos(L, fname_en):
 def comprobar_titulo(L, fname_es):
     """D5: el título interior (Instructions!B2) es EXACTAMENTE mapas.titulo_interior. Nunca se parchea."""
     esperado = mapas.titulo_interior(fname_es)
+    if PLANO:
+        ws = L.wb.worksheets[0]
+        v = ws[mapas.CELDA_TITULO].value
+        if v != esperado:
+            raise Aborta('%s: %s!%s %r ≠ D5 %r' % (fname_es, ws.title, mapas.CELDA_TITULO, v, esperado))
+        L.rep['titulo'] = v
+        return
     v = L.wb[HOJA_INSTR_EN]['B2'].value
     if v != esperado:
         raise Aborta('%s: Instructions!B2 %r ≠ D5 %r' % (fname_es, v, esperado))

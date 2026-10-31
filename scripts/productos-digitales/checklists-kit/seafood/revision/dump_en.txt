@@ -1,0 +1,978 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/seafood-restaurant-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-seafood-restaurant-opening-closing-checklist.xlsx
+# docProps: title='Seafood Restaurant Opening & Closing Checklist: Live Tank, Display, Kitchen & Dining Room' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Opening & Closing» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 01 · Seafood Restaurant Opening & Closing Checklist: Live Tank, Display, Kitchen & Dining Room
+A3     : Area
+B3     : Task
+C3     : Assigned to
+D3     : Time
+E3     : OK
+F3     : Notes
+A4     : OPENING — Live Tank & Display
+A5     : Live tank
+B5     : Check live tank water temperature (by species, per your supplier and the tank maker's spec) — log reading: ____ °F
+C5     : Kitchen
+D5     : 7:00 AM
+A6     : Live tank
+B6     : Check tank aeration and filters
+C6     : Kitchen
+D6     : 7:00 AM
+A7     : Live tank
+B7     : Check live shellfish condition (mortality, activity)
+C7     : Head chef
+D7     : 7:15 AM
+A8     : Live tank
+B8     : Remove dead animals and log the waste
+C8     : Kitchen
+D8     : 7:15 AM
+A9     : Display
+B9     : Set up the display: crushed ice on a stainless tray, drained (FDA Food Code 3-303.12); display ice is never used in food (FDA Food Code 3-303.11)
+C9     : Kitchen
+D9     : 7:30 AM
+A10    : Display
+B10    : Lay out today's fresh seafood by family (crustaceans, molluscs, cephalopods)
+C10    : Kitchen
+D10    : 7:30 AM
+A11    : Display
+B11    : Price and origin labels (origin on the menu: house standard; check your state's rules)
+C11    : FOH
+D11    : 7:45 AM
+A12    : Display
+B12    : Check display temperature: 41 °F or below on drained ice (FDA Food Code 3-501.16) — log reading: ____ °F
+C12    : Kitchen
+D12    : 7:45 AM
+A13    : OPENING — Kitchen
+A14    : Walk-ins
+B14    : Check the fresh fish walk-in: 41 °F or below, fish on ice (FDA Food Code 3-501.16) — log reading: ____ °F
+C14    : Kitchen
+D14    : 7:00 AM
+A15    : Walk-ins
+B15    : Check the live shellfish walk-in temperature: shellstock at 41 °F or below once received (FDA Food Code 3-202.11); live crustaceans per your supplier — log reading: ____ °F
+C15    : Kitchen
+D15    : 7:00 AM
+A16    : Walk-ins
+B16    : Check the freezer: 0 °F or below — log reading: ____ °F
+C16    : Kitchen
+D16    : 7:00 AM
+A17    : Kitchen
+B17    : Thaw scheduled products (FIFO, lot log): in the walk-in at 41 °F or below or under cold running water at 70 °F or below (FDA Food Code 3-501.13); take vacuum-packed (ROP) frozen fish out of the bag when thawing
+C17    : Kitchen
+D17    : 7:30 AM
+A18    : Kitchen
+B18    : Mise en place sauces: cocktail sauce, mignonette, tartar, remoulade, drawn butter
+C18    : Sauce station
+D18    : 8:00 AM
+A19    : Kitchen
+B19    : Make today's fish stock / fumet
+C19    : Stock station
+D19    : 8:00 AM
+A20    : Kitchen
+B20    : Check side stock: potatoes, peppers, greens
+C20    : Kitchen
+D20    : 8:30 AM
+A21    : Kitchen
+B21    : Set up mise en place for the flat-top griddle / grill
+C21    : Grill cook
+D21    : 8:30 AM
+A22    : OPENING — Dining Room
+A23    : FOH
+B23    : Set tables with seafood service: crackers, picks, finger bowls
+C23    : FOH
+D23    : 9:00 AM
+A24    : FOH
+B24    : Check stock of bibs, wet wipes, lemons
+C24    : FOH
+D24    : 9:00 AM
+A25    : FOH
+B25    : Prepare today's menu with fresh catch and prices
+C25    : FOH manager
+D25    : 9:30 AM
+A26    : Raw bar
+B26    : Set up the raw bar: oysters, clams, razor clams on ice; shellfish only from NSSP-listed shippers (FDA Food Code 3-201.15), tags kept 90 days (FDA Food Code 3-203.12)
+C26    : Raw bar
+D26    : 9:30 AM
+A27    : FOH
+B27    : Review reservations and assign tables (shellfish allergy notes)
+C27    : FOH manager
+D27    : 9:45 AM
+A28    : CLOSING
+A29    : Display
+B29    : Pull seafood from the display and store it in the walk-in on ice
+C29    : Kitchen
+D29    : 11:00 PM
+A30    : Live tank
+B30    : Check the live tank: temperature, oxygen, overnight mortality
+C30    : Kitchen
+D30    : 11:00 PM
+A31    : FOH
+B31    : Collect the seafood service tools, wash and store them
+C31    : FOH
+D31    : 11:00 PM
+A32    : Kitchen
+B32    : Fish / shellfish inventory: stock left vs. tomorrow's order
+C32    : Head chef
+D32    : 11:15 PM
+A33    : Kitchen
+B33    : Log today's waste (high-value product)
+C33    : Head chef
+D33    : 11:15 PM
+A34    : Kitchen
+B34    : Deep clean the fish area and cutting boards, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C34    : Kitchen
+D34    : 11:30 PM
+A35    : Kitchen
+B35    : Check walk-ins: temperature and doors closed
+C35    : Kitchen
+D35    : 11:30 PM
+A36    : General
+B36    : Order from your seafood distributor / dock-to-door supplier for tomorrow (confirm before 11:30 PM)
+C36    : Head chef
+D36    : 11:30 PM
+A37    : General
+B37    : Close out the register and log sales by fresh item: cash count and over/short against the POS Z report; tips per your written tip pool (FLSA, 29 U.S.C. 203(m)(2)(B))
+C37    : FOH manager
+D37    : 11:45 PM
+A39    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E14 E15 E16 E17 E18 E19 E20 E21 E23 E24 E25 E26 E27 E29 E30 E31 E32 E33 E34 E35 E36 E37 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F37 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 02-live-tank-seafood-receiving-checklist.xlsx
+# docProps: title='Live Tank & Seafood Receiving Checklist: Water Quality, Suppliers & Freshness Signs' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Live Tank & Receiving» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 02 · Live Tank & Seafood Receiving Checklist: Water Quality, Suppliers & Freshness Signs
+A3     : Category
+B3     : Task / Check
+C3     : Frequency
+D3     : Assigned to
+E3     : Reading
+F3     : OK
+G3     : Notes
+A4     : LIVE TANK — Daily Checks
+A5     : Live tank
+B5     : Water temperature by species, per your supplier and the tank maker's spec (cold-water lobster runs colder than spiny lobster) — log reading: ____ °F
+C5     : 2× a day
+D5     : Kitchen
+A6     : Live tank
+B6     : Dissolved oxygen (min 6 mg/L)
+C6     : 2× a day
+D6     : Kitchen
+A7     : Live tank
+B7     : Water salinity (30–35 ppt for Atlantic shellfish)
+C7     : Daily
+D7     : Kitchen
+A8     : Live tank
+B8     : Water pH (7.5–8.5 target range)
+C8     : Daily
+D8     : Kitchen
+A9     : Live tank
+B9     : Mechanical filter: clear debris
+C9     : Daily
+D9     : Kitchen
+A10    : Live tank
+B10    : Mortality: remove dead animals, log them
+C10    : 2× a day
+D10    : Kitchen
+A11    : Live tank
+B11    : Feeding (if needed, by species and turnover)
+C11    : Per schedule
+D11    : Kitchen
+A12    : SUPPLIERS & RECEIVING
+A13    : Buying
+B13    : Delivery time with your seafood distributor / dock-to-door supplier and refrigerated transport (41 °F or below)
+C13    : Daily
+D13    : Purchasing
+A14    : Buying
+B14    : Check the day's catch from your distributor: species, size, freshness
+C14    : Daily
+D14    : Head chef
+A15    : Buying
+B15    : Paperwork for every lot: shellstock tags (harvest area and date, certified shipper number) kept 90 days after the container is emptied (FDA Food Code 3-203.12); finfish: species, origin and supplier on the invoice
+C15    : Every lot
+D15    : Purchasing
+A16    : Receiving
+B16    : Receiving: temperature, appearance, smell, eyes; cold 41 °F or below, frozen 0 °F or below; histamine-forming fish (tuna, mackerel, mahi-mahi, sardines, anchovies) must arrive cold: reject warm product, cooking does not destroy histamine
+C16    : Every delivery
+D16    : Kitchen
+A17    : Receiving
+B17    : Traceability log: lot, supplier, date, weight
+C17    : Every delivery
+D17    : Kitchen
+A18    : Receiving
+B18    : Store in the walk-in right away (max 15 min out)
+C18    : Every delivery
+D18    : Kitchen
+A19    : Receiving
+B19    : Compare prices: dock-to-door suppliers vs. seafood distributors
+C19    : Weekly
+D19    : Purchasing
+A20    : FRESHNESS — Visual Signs
+A21    : Fish
+B21    : Eyes: bright, convex, black pupils
+C21    : Every lot
+D21    : Kitchen
+G21    : Reject if cloudy
+A22    : Fish
+B22    : Gills: red / pink, no slime
+C22    : Every lot
+D22    : Kitchen
+G22    : Reject if brown
+A23    : Fish
+B23    : Texture: firm, springs back when pressed
+C23    : Every lot
+D23    : Kitchen
+A24    : Fish
+B24    : Smell: fresh ocean, iodine, seaweed — NEVER ammonia
+C24    : Every lot
+D24    : Kitchen
+A25    : Shellfish
+B25    : Live crustaceans: active, bright color
+C25    : Every lot
+D25    : Kitchen
+A26    : Shellfish
+B26    : Bivalves: shells closed or close when tapped; only from NSSP-listed shippers, tags kept 90 days (FDA Food Code 3-201.15, 3-203.12)
+C26    : Every lot
+D26    : Kitchen
+G26    : Discard open ones
+A27    : Shellfish
+B27    : Cephalopods: intact skin, natural color, neutral smell
+C27    : Every lot
+D27    : Kitchen
+A29    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+DV F5 F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:G27 · expression  · fórmula=['$F4="✓"'] · texto=None
+####################################################################################################
+# 03-seafood-haccp-traceability-shellfish-tags.xlsx
+# docProps: title='Seafood HACCP & Traceability Checklist: Shellfish Tags, Allergens & Critical Control Points' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «HACCP & Traceability» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 03 · Seafood HACCP & Traceability Checklist: Shellfish Tags, Allergens & Critical Control Points
+A3     : Record
+B3     : Detail / Procedure
+C3     : Frequency
+D3     : Assigned to
+E3     : OK
+F3     : Notes
+A4     : TRACEABILITY RECORDS
+A5     : Lot log
+B5     : Lot number, species, harvest area / origin, date, weight, supplier
+C5     : Every delivery
+D5     : Kitchen
+A6     : Labeling
+B6     : Species (FDA Seafood List market name + scientific name), origin, catch method
+C6     : Every lot
+D6     : Kitchen
+F6     : FDA Seafood List (market names)
+A7     : Temperature
+B7     : Log receiving temperature: fresh fish 41 °F or below — log reading: ____ °F
+C7     : Every delivery
+D7     : Kitchen
+A8     : Temperature
+B8     : Log walk-ins 2× a day (cooler + freezer)
+C8     : 2× a day
+D8     : Kitchen
+A9     : Shelf life
+B9     : Check dates: fresh shellfish within 48 h (house standard), frozen per package; cooked ready-to-eat seafood date-marked, 7 days max at 41 °F (FDA Food Code 3-501.17)
+C9     : Daily
+D9     : Kitchen
+A10    : Thawing
+B10    : Log: product, lot, start date, use date, method (thawing per FDA Food Code 3-501.13; vacuum-packed fish out of the bag)
+C10    : Every time
+D10    : Kitchen
+F10    : Never refreeze
+A11    : ALLERGENS — Fish & Shellfish
+A12    : Crustaceans
+B12    : Crustacean shellfish (a major US allergen): shrimp, prawns, lobster, crab, langoustines
+C12    : Ongoing
+D12    : FOH + kitchen
+A13    : Molluscs
+B13    : Molluscs: mussels, clams, razor clams, cockles, oysters, scallops, octopus, squid; not a major US allergen (tell guests who ask); UK: one of the 14
+C13    : Ongoing
+D13    : FOH + kitchen
+A14    : Cross-contact
+B14    : Separate prep areas: crustaceans / molluscs / fish
+C14    : Always
+D14    : Kitchen
+A15    : Menu
+B15    : Written allergen notice for each dish on the menu where your state has adopted the 2022 FDA Food Code (3-602.12(C))
+C15    : Every menu change
+D15    : FOH manager
+A16    : Training
+B16    : Staff trained in severe allergy protocols (anaphylaxis)
+C16    : Quarterly
+D16    : Management
+A17    : HACCP — Seafood Critical Control Points
+A18    : CCP 1
+B18    : Receiving: fresh fish at 41 °F or below; frozen food received frozen solid (0 °F or below is the common target); shellstock per NSSP rules (on ice, or shipped at 45 °F air or 50 °F internal or below), then held at 41 °F (FDA Food Code 3-202.11)
+C18    : Every delivery
+D18    : Kitchen
+F18    : Reject if above 41 °F
+A19    : CCP 2
+B19    : Storage: separate walk-ins (fish, live shellfish, frozen)
+C19    : Ongoing
+D19    : Kitchen
+A20    : CCP 3
+B20    : Cooking: whole fish and shellfish to 145 °F for 15 s internal; comminuted fish 155 °F for 17 s; stuffed fish 165 °F (FDA Food Code 3-401.11)
+C20    : Every service
+D20    : Kitchen
+A21    : CCP 4
+B21    : Display: seafood on drained ice at 41 °F or below (FDA Food Code 3-501.16): ice replenished every 90 min, melt water drained every 60 min, product rotated every 2 h
+C21    : Ongoing
+D21    : Kitchen
+A22    : CCP 5
+B22    : Raw or undercooked fish (crudo, ceviche, tartare) — parasite destruction (FDA Food Code 3-402.11; some species are exempt, see 3-402.11(B)): frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record 90 days (FDA Food Code 3-402.12) and the consumer advisory on the menu (FDA Food Code 3-603.11)
+C22    : Every lot
+D22    : Kitchen
+F22    : Required (FDA Food Code 3-402.11)
+A23    : Cleaning
+B23    : Fish area cleaning plan: surfaces, boards, knives; sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C23    : Daily
+D23    : Kitchen
+A25    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E18 E19 E20 E21 E22 E23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F23 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 04-raw-bar-seafood-display-checklist.xlsx
+# docProps: title='Raw Bar & Seafood Display Checklist: Ice Display, Service & Close' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Raw Bar & Display» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 04 · Raw Bar & Seafood Display Checklist: Ice Display, Service & Close
+A3     : Area
+B3     : Task
+C3     : Frequency
+D3     : Assigned to
+E3     : OK
+F3     : Notes
+A4     : DISPLAY SETUP
+A5     : Display
+B5     : Crushed ice on a tray with a drain (no standing water; FDA Food Code 3-303.12)
+C5     : Daily
+D5     : Kitchen
+A6     : Display
+B6     : Lay out crustaceans: lobster, spiny lobster, crab, langoustines
+C6     : Daily
+D6     : Kitchen
+A7     : Display
+B7     : Lay out bivalves: oysters, clams (littlenecks, cherrystones), mussels, razor clams; NSSP-listed shippers, tags kept 90 days (FDA Food Code 3-203.12)
+C7     : Daily
+D7     : Kitchen
+A8     : Display
+B8     : Lay out cephalopods: octopus, baby squid, cuttlefish
+C8     : Daily
+D8     : Kitchen
+A9     : Display
+B9     : Lay out whole fish of the day (branzino, turbot, sea bream, hake)
+C9     : Daily
+D9     : Kitchen
+A10    : Display
+B10    : Price labels by species (origin: house standard)
+C10    : Daily
+D10    : FOH
+A11    : Display
+B11    : Garnish: lemons, parsley, seaweed, carved ice
+C11    : Daily
+D11    : Kitchen
+A12    : DURING SERVICE
+A13    : Display
+B13    : Replenish ice every 90 min (keep 41 °F or below)
+C13    : Every 90 min
+D13    : Kitchen
+A14    : Display
+B14    : FIFO rotation: move older product to the front
+C14    : Ongoing
+D14    : Kitchen
+A15    : Display
+B15    : Drain melted ice water
+C15    : Every 60 min
+D15    : Kitchen
+A16    : Display
+B16    : Check the look and smell of every piece
+C16    : Ongoing
+D16    : Kitchen
+A17    : Display
+B17    : Update prices when a species sells out
+C17    : As needed
+D17    : FOH
+A18    : Raw bar
+B18    : Shuck oysters to order (proper technique, no shell fragments); keep the lot tag; consumer advisory on the menu for raw or undercooked items (FDA Food Code 3-603.11)
+C18    : To order
+D18    : Kitchen
+A19    : Raw bar
+B19    : Serve griddled razor clams and scallops right away
+C19    : To order
+D19    : Griddle cook
+A20    : DISPLAY CLOSE
+A21    : Display
+B21    : Pull all product and sort by freshness
+C21    : Daily
+D21    : Kitchen
+A22    : Display
+B22    : Good product: store in the walk-in on fresh ice
+C22    : Daily
+D22    : Kitchen
+A23    : Display
+B23    : Unfit product: log as waste and discard
+C23    : Daily
+D23    : Kitchen
+A24    : Display
+B24    : Clean the tray, drain and surface, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C24    : Daily
+D24    : Kitchen
+A25    : Display
+B25    : Dry and set up for tomorrow
+C25    : Daily
+D25    : Kitchen
+A27    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E13 E14 E15 E16 E17 E18 E19 E21 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F25 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 05-seafood-restaurant-manager-checklist.xlsx
+# docProps: title='Seafood Restaurant Manager Checklist: Purchasing, Market Price, Waste & Food Cost' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Manager Tasks» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 05 · Seafood Restaurant Manager Checklist: Purchasing, Market Price, Waste & Food Cost
+A3     : Category
+B3     : Task
+C3     : Frequency
+D3     : Priority
+E3     : Status
+F3     : Notes
+A4     : PURCHASING & SUPPLIERS
+A5     : Purchasing
+B5     : Daily order to your seafood distributor / dock-to-door supplier (confirm before their cutoff)
+C5     : Daily
+D5     : High
+A6     : Purchasing
+B6     : Negotiate prices with fresh seafood wholesalers
+C6     : Weekly
+D6     : High
+A7     : Purchasing
+B7     : Rate deliveries (log issues)
+C7     : Every delivery
+D7     : High
+A8     : Purchasing
+B8     : Compare prices: distributor vs. dock-to-door vs. imported
+C8     : Weekly
+D8     : Medium
+A9     : Inventory
+B9     : Inventory of fresh and frozen product
+C9     : Daily
+D9     : High
+A10    : Inventory
+B10    : Waste control (% of purchases)
+C10    : Daily
+D10    : High
+A11    : OPERATIONS
+A12    : Team
+B12    : Pre-shift meeting: today's catch, prices, allergens
+C12    : Daily
+D12    : High
+A13    : Team
+B13    : Assign stations and service roles
+C13    : Daily
+D13    : High
+A14    : Revenue
+B14    : Review yesterday's sales by item
+C14    : Daily
+D14    : High
+A15    : Revenue
+B15    : Adjust menu prices to today's cost (market price items)
+C15    : Daily
+D15    : Medium
+A16    : Quality
+B16    : Check display setup and freshness
+C16    : Daily
+D16    : High
+A17    : Quality
+B17    : Taste dishes before service (flavor, temperature, presentation)
+C17    : Daily
+D17    : High
+A18    : STAFF & ADMINISTRATION
+A19    : Staff
+B19    : Review shifts and the weekly schedule
+C19    : Weekly
+D19    : High
+A20    : Staff
+B20    : Ongoing training: species, seasons, techniques
+C20    : Monthly
+D20    : Medium
+A21    : Office
+B21    : Review supplier invoices and pending payments
+C21    : Weekly
+D21    : High
+A22    : Office
+B22    : Weekly food cost review (target under 32%, kit target)
+C22    : Weekly
+D22    : High
+A23    : Office
+B23    : Manage group bookings and special events
+C23    : Daily
+D23    : Medium
+A24    : Marketing
+B24    : Update social media with today's catch and specials
+C24    : Daily
+D24    : Medium
+A26    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+####################################################################################################
+# 06-seafood-restaurant-duties-by-role.xlsx
+# docProps: title='Seafood Restaurant Duties by Role: Head Chef, Fish & Shellfish Stations, FOH Manager & Server' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Duties by Role» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 06 · Seafood Restaurant Duties by Role: Head Chef, Fish & Shellfish Stations, FOH Manager & Server
+A3     : Role
+B3     : Task
+C3     : When
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : HEAD CHEF / SEAFOOD BUYER
+A5     : Head chef
+B5     : Buy from your distributor or dock: size, freshness, price per lb
+C5     : Early morning
+D5     : Daily
+A6     : Head chef
+B6     : Receiving quality check and sorting by species
+C6     : Morning
+D6     : Daily
+A7     : Head chef
+B7     : Decide today's menu from the catch available
+C7     : Morning
+D7     : Daily
+A8     : Head chef
+B8     : Oversee the live tank and display
+C8     : Pre-shift
+D8     : Daily
+A9     : Head chef
+B9     : Track waste and log it in the production log
+C9     : After service
+D9     : Daily
+A10    : FISH STATION COOK
+A11    : Fish station
+B11    : Clean, fillet and portion today's fish
+C11    : Morning
+D11    : Daily
+A12    : Fish station
+B12    : Prep bases: fumets, stocks, side sauces
+C12    : Morning
+D12    : Daily
+A13    : Fish station
+B13    : Cook fish: oven, griddle, grill, steam, fry
+C13    : Service
+D13    : Daily
+A14    : Fish station
+B14    : Check internal cooking temperatures (145 °F for 15 s, FDA Food Code 3-401.11) — log reading: ____ °F
+C14    : Service
+D14    : Daily
+A15    : Fish station
+B15    : Plate to the restaurant's standard
+C15    : Service
+D15    : Daily
+A16    : SHELLFISH STATION COOK
+A17    : Shellfish station
+B17    : Cook shellfish: steamed, griddled, boiled, salt-baked
+C17    : Service
+D17    : Daily
+A18    : Shellfish station
+B18    : Cooking times by species and size
+C18    : Service
+D18    : Daily
+A19    : Shellfish station
+B19    : Make seafood rice dishes, casseroles and stews
+C19    : Service
+D19    : Daily
+A20    : Shellfish station
+B20    : Open bivalves: oysters, razor clams, griddled clams
+C20    : To order
+D20    : Daily
+A21    : Shellfish station
+B21    : Track stock during service; tell the manager when something sells out
+C21    : Service
+D21    : Daily
+A22    : FOH MANAGER
+A23    : FOH manager
+B23    : Know today's catch, prices and the chef's specials
+C23    : Pre-shift
+D23    : Daily
+A24    : FOH manager
+B24    : Recommend seafood and fish to each guest's taste
+C24    : Service
+D24    : Daily
+A25    : FOH manager
+B25    : Run tableside seafood tower service (cracking, presentation)
+C25    : Service
+D25    : Daily
+A26    : FOH manager
+B26    : Tell each table about allergens: fish and crustacean shellfish (major US allergens); molluscs on request (UK: one of the 14)
+C26    : Service
+D26    : Daily
+A27    : FOH manager
+B27    : Coordinate timing between kitchen and dining room
+C27    : Service
+D27    : Daily
+A28    : SERVER / BUSSER
+A29    : Server
+B29    : Serve seafood with the right tools (crackers, picks)
+C29    : Service
+D29    : Daily
+A30    : Server
+B30    : Offer finger bowls and bibs when needed
+C30    : Service
+D30    : Daily
+A31    : Server
+B31    : Clear shells and scraps between courses
+C31    : Service
+D31    : Daily
+A32    : Server
+B32    : Suggest white wine pairings (Albariño, Sauvignon Blanc, Muscadet, Chablis; 21+ with ID, 23 U.S.C. 158)
+C32    : Service
+D32    : Daily
+A33    : Server
+B33    : Keep the table clean during long seafood feasts
+C33    : Service
+D33    : Daily
+A35    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E17 E18 E19 E20 E21 E23 E24 E25 E26 E27 E29 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F33 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 07-seafood-restaurant-weekly-monthly-checklist.xlsx
+# docProps: title='Seafood Restaurant Weekly & Monthly Checklists: Live Tank, Walk-Ins, Maintenance & Audits' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Weekly & Monthly» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 07 · Seafood Restaurant Weekly & Monthly Checklists: Live Tank, Walk-Ins, Maintenance & Audits
+A3     : Period
+B3     : Task
+C3     : Assigned to
+D3     : Day / Week
+E3     : OK
+F3     : Notes
+A4     : WEEKLY
+A5     : Weekly
+B5     : Deep clean the live tank: drain, sanitize, refill (per the maker and your health department)
+C5     : Kitchen
+D5     : Monday
+A6     : Weekly
+B6     : Check and service the tank filters and pump
+C6     : Maintenance
+D6     : Monday
+A7     : Weekly
+B7     : Full inventory of fresh and frozen product
+C7     : Head chef
+D7     : Sunday
+A8     : Weekly
+B8     : Weekly waste review and corrective actions
+C8     : Manager
+D8     : Monday
+A9     : Weekly
+B9     : Deep clean the walk-ins, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C9     : Kitchen
+D9     : Monday
+A10    : Weekly
+B10    : Check use-by dates in the freezer
+C10    : Kitchen
+D10    : Wednesday
+A11    : Weekly
+B11    : Sharpen knives (filleting, scaling)
+C11    : Kitchen
+D11    : Tuesday
+A12    : Weekly
+B12    : Check white wine stock (Albariño, Sauvignon Blanc, Muscadet, Chablis)
+C12    : FOH manager
+D12    : Monday
+A13    : Weekly
+B13    : Deep clean the display and stainless tray
+C13    : Kitchen
+D13    : Monday
+A14    : MONTHLY
+A15    : Monthly
+B15    : HACCP and traceability records review (ready for the health inspection)
+C15    : Manager
+D15    : 1st week
+A16    : Monthly
+B16    : Rate suppliers: quality, price, reliability
+C16    : Purchasing
+D16    : 1st week
+A17    : Monthly
+B17    : Menu review by fishing season and availability
+C17    : Head chef
+D17    : 2nd week
+A18    : Monthly
+B18    : Preventive refrigeration maintenance (compressor, gaskets) by an EPA 608-certified tech
+C18    : Maintenance
+D18    : 2nd week
+A19    : Monthly
+B19    : Team training: new species, techniques, pairings
+C19    : Head chef
+D19    : 3rd week
+A20    : Monthly
+B20    : Monthly food cost review against target
+C20    : Manager
+D20    : 1st week
+A21    : Monthly
+B21    : Review menu prices against actual market cost
+C21    : Manager
+D21    : 1st week
+A22    : Monthly
+B22    : Pest control by a licensed pest control operator (traps, records, issues)
+C22    : Maintenance
+D22    : 4th week
+A24    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E15 E16 E17 E18 E19 E20 E21 E22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F22 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 08-seafood-seasons-events-checklist.xlsx
+# docProps: title='Seafood Seasons & Events Checklist: US Seasons, Holidays & Regulations' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Seasons & Events» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 08 · Seafood Seasons & Events Checklist: US Seasons, Holidays & Regulations
+A3     : Season / Event
+B3     : Action / Task
+C3     : Assigned to
+D3     : Lead time
+E3     : OK
+F3     : Notes
+A4     : SEAFOOD SEASONS — US (dates vary by state)
+A5     : Winter–Spring
+B5     : Crawfish season (Gulf states; peak in spring)
+C5     : Purchasing
+D5     : 2 weeks
+F5     : Peak varies by year
+A6     : Spring
+B6     : Soft-shell crabs (Mid-Atlantic and Gulf)
+C6     : Purchasing
+D6     : 1 week
+F6     : Star item
+A7     : Spring–Summer
+B7     : Wild salmon runs (Pacific Northwest and Alaska; openers vary)
+C7     : Purchasing
+D7     : 2 weeks
+A8     : Summer
+B8     : Lobster peak season (Northeast, summer and fall)
+C8     : Purchasing
+D8     : 1 week
+A9     : Fall
+B9     : Stone crab (Florida) and king crab (Alaska) seasons open
+C9     : Purchasing
+D9     : 2 weeks
+A10    : Fall–Winter
+B10    : Scallops: bay scallop seasons (dates vary by state)
+C10    : Purchasing
+D10    : 2 weeks
+A11    : Sep–Apr
+B11    : Oysters: peak in the cold months (R months)
+C11    : Purchasing
+D11    : 2 weeks
+A12    : Year-round
+B12    : Shrimp, farmed oysters and mussels (with seasonal closures)
+C12    : Purchasing
+D12    : Per season closures
+A13    : KEY SALES EVENTS
+A14    : Christmas Eve
+B14    : Feast of the Seven Fishes: special order with your distributor + reservations
+C14    : Manager
+D14    : 3 weeks
+F14    : Sales peak
+A15    : New Year's Eve
+B15    : Year-end seafood towers: lobster, crab, oysters, caviar
+C15    : Head chef
+D15    : 3 weeks
+A16    : Valentine's Day
+B16    : Seafood tasting menu for couples
+C16    : Head chef
+D16    : 2 weeks
+A17    : Lent
+B17    : Lent Fridays: fish specials, fish fry, lobster and seafood boils
+C17    : Head chef
+D17    : 2 weeks
+A18    : Local festivals
+B18    : Oyster and seafood festivals (adapt to your city)
+C18    : Marketing
+D18    : 1 month
+A19    : Summer
+B19    : Patio and raw bar: chilled seafood, oysters, ceviche
+C19    : Head chef
+D19    : 1 month
+A20    : SEASONS & REGULATIONS
+A21    : Seasons
+B21    : Check your state's seasons and closures (state fish and wildlife agency, NOAA Fisheries)
+C21    : Purchasing
+D21    : Monthly
+A22    : Seasons
+B22    : Legal minimum size by species, per your state (lobster and crab above all): check every lot
+C22    : Kitchen
+D22    : Every lot
+A23    : Seasons
+B23    : Document the origin of every product (avoid IUU seafood)
+C23    : Purchasing
+D23    : Every purchase
+A24    : Regulation
+B24    : Shellfish display tank: only with a health department variance and HACCP plan (FDA Food Code); health permit current
+C24    : Management
+D24    : Annual
+A26    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E14 E15 E16 E17 E18 E19 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F24 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 09-blank-seafood-restaurant-checklist-template.xlsx
+# docProps: title='Blank Seafood Restaurant Checklist Template (Editable)' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Blank Template» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 09 · Blank Seafood Restaurant Checklist Template (Editable)
+A3     : Area
+B3     : Task
+C3     : Assigned to
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : YOUR CUSTOM TASKS
+A26    : Instructions: Add your own recurring tasks. You can copy rows from the other sheets in the kit and adapt them to your seafood restaurant.
+A27    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+####################################################################################################
+# BONUS-01-seafood-pre-shift-meeting-template.xlsx
+# docProps: title="BONUS: Seafood Pre-Shift Meeting Template (Today's Catch)" · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Pre-Shift Meeting» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : BONUS: Seafood Pre-Shift Meeting Template (Today's Catch)
+A3     : Section
+B3     : Information
+C3     : Detail
+D3     : Notes
+A4     : TODAY'S CATCH
+A5     : Fresh fish
+B5     : Species 1:
+C5     : Origin / Weight / Price
+A6     : Fresh fish
+B6     : Species 2:
+C6     : Origin / Weight / Price
+A7     : Fresh fish
+B7     : Species 3:
+C7     : Origin / Weight / Price
+A8     : Live shellfish
+B8     : Species 1:
+C8     : Origin / Size / Price
+A9     : Live shellfish
+B9     : Species 2:
+C9     : Origin / Size / Price
+A10    : Live shellfish
+B10    : Species 3:
+C10    : Origin / Size / Price
+A11    : SPECIALS & OFF-MENU
+A12    : Special 1
+C12    : Preparation / Price
+A13    : Special 2
+C13    : Preparation / Price
+A14    : Off-menu special
+C14    : Today's special item
+A15    : ALLERGENS & ALERTS
+A16    : Allergens
+B16    : Dishes with crustacean shellfish:
+A17    : Allergens
+B17    : Dishes with molluscs (UK allergen):
+A18    : Intolerances
+B18    : Reserved tables + allergy notes:
+A19    : RESERVATIONS & VIPs
+A20    : Reservations
+B20    : Total covers:
+A21    : VIP
+B21    : Special tables / regulars:
+A22    : Events
+B22    : Group seafood feasts / celebrations:
+A23    : Wine
+B23    : Wine pick of the day (Albariño, Sauvignon Blanc, Muscadet, Chablis; 21+ with ID):
+A25    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
+####################################################################################################
+# BONUS-02-seafood-restaurant-annual-calendar.xlsx
+# docProps: title='BONUS: Seafood Restaurant Annual Calendar: Seasons, Events, Maintenance & Training (US)' · subject='Seafood Restaurant Checklists Kit Pro · v1.1' · keywords='seafood restaurant checklist, raw bar checklist, oyster bar, shellfish tags, seafood receiving, live lobster tank, AI Chef Pro' · description='aichef.pro/en/digital-products/seafood-restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Annual Calendar» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : BONUS: Seafood Restaurant Annual Calendar: Seasons, Events, Maintenance & Training (US)
+A3     : Month
+B3     : Seafood Season
+C3     : Sales Events
+D3     : Maintenance
+E3     : Training
+A4     : January
+B4     : Oysters, Dungeness and stone crab, scallops
+C4     : New Year's Day, corporate dinners
+D4     : Post-holiday live tank check
+E4     : Winter species, cuts
+A5     : February
+B5     : Oysters, crawfish (season starts), Dungeness crab
+C5     : Valentine's Day, Mardi Gras crawfish boils, Lent begins (date varies)
+D5     : Walk-in maintenance
+E5     : Wine + seafood pairings
+A6     : March
+B6     : Crawfish, oysters, halibut (season opens in Alaska)
+C6     : Lent Fridays (fish Fridays), St. Patrick's Day
+D6     : Live tank filter check
+E6     : Seafood rice dishes
+A7     : April
+B7     : Crawfish (peak), halibut, soft-shell crabs (start)
+C7     : Lent Fridays and Easter (date varies)
+D7     : Spring deep clean
+E7     : Ceviche and tartare
+A8     : May
+B8     : Wild salmon (season opens), soft-shell crabs, crawfish
+C8     : Mother's Day (2nd Sunday), Memorial Day
+D8     : A/C check
+E8     : Griddled and grilled seafood
+A9     : June
+B9     : Wild salmon, soft-shell crabs, lobster
+C9     : Father's Day (3rd Sunday), summer patio and raw bar
+D9     : Get the patio ready
+E9     : Patio service + chilled seafood
+A10    : July
+B10    : Lobster, wild salmon, blue crab, clams
+C10    : Jul 4 — Independence Day, peak summer, tourism
+D10    : Intensive refrigeration maintenance
+E10    : Chilled seafood, oysters
+A11    : August
+B11    : Lobster, blue crab, wild salmon, clams
+C11    : Peak summer, clambakes and lobster bakes
+D11    : Check equipment under load
+E11    : Serving tourists (languages)
+A12    : September
+B12    : Blue crab, lobster, oysters (cold-month season starts)
+C12    : Labor Day, back to routine
+D12    : Post-summer maintenance
+E12    : New cooking techniques
+A13    : October
+B13    : Stone crab (Florida opens), king crab (Alaska), oysters
+C13    : Oyster and seafood festivals (local), Halloween
+D13    : Winter live tank check
+E13    : Fall–winter species
+A14    : November
+B14    : Dungeness crab (opener varies), bay scallops, oysters
+C14    : Thanksgiving (4th Thursday), Black Friday, holiday pre-sales
+D14    : Calibrate equipment before the peak
+E14    : Seafood towers and service protocols
+A15    : December
+B15    : Oysters, Dungeness and stone crab, lobster
+C15    : Christmas Eve (Feast of the Seven Fishes), New Year's Eve, holiday parties
+D15    : Full pre-holiday check
+E15    : High-volume service
+A17    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro

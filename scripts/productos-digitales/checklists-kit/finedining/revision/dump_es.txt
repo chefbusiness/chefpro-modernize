@@ -1,0 +1,3401 @@
+Volcado de 13 xlsx de ../../../astro-site/public/dl/kit-tareas-restaurante-creativo (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-apertura-cierre.xlsx
+# docProps: title='01 · Apertura y Cierre — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 01 · Apertura y Cierre — Restaurante Creativo
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Imprime diariamente o usa en tablet para cada turno.
+B6     : ▸ El responsable de turno marca cada tarea al completarla.
+B7     : ▸ Revisa las fermentaciones activas y registra pH.
+B8     : ▸ Verifica que todo el equipamiento de vanguardia esté operativo.
+B10    : Zonas de color:
+B11    : ▸ Naranja = Cocina principal
+B12    : ▸ Azul = Sala / Front of house
+B13    : ▸ Ámbar = Administración
+B14    : ▸ Marrón = Limpieza
+B16    : Antes de encender nada:
+B17    : ▸ La primera sección de «Apertura AM» es de higiene personal y de arranque seguro: campana primero, comprobación del gas después y sólo entonces Roner, hornos, deshidratador y sopletes.
+B18    : ▸ Las cámaras no se «encienden» por la mañana: se COMPRUEBA que han funcionado toda la noche. Anota la lectura en la propia tarea (refrigeración 0-4 °C, congelación ≤ −18 °C, y en las de maduración también la humedad).
+B19    : ▸ El cierre incluye el registro diario de jornada de la brigada: es obligatorio, se valida cada día y se conserva 4 años.
+B21    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B22    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Apertura AM» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Apertura AM
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🧼 APERTURA — HIGIENE PERSONAL Y ARRANQUE SEGURO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Uniforme y calzado de trabajo limpios, delantal cambiado y pelo recogido (gorro o redecilla)
+C6     : Cocina
+A7     : 2
+B7     : Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin esmalte
+C7     : Cocina
+A8     : 3
+B8     : Heridas y cortes cubiertos con apósito impermeable de color visible y guante encima
+C8     : Cocina
+A9     : 4
+B9     : Lavado de manos al entrar y en cada cambio de tarea: jabón, agua caliente y papel de un solo uso
+C9     : Cocina
+A10    : 5
+B10    : Declarar síntomas digestivos o respiratorios: quien los tenga no manipula alimentos
+C10    : Cocina
+A11    : 6
+B11    : Encender la campana extractora y ventilar la cocina ANTES de encender nada más
+C11    : Cocina
+A12    : 7
+B12    : Si la cocina tiene gas: abrir la llave general y comprobar que NO huele a gas; si huele, no enciendas nada, ventila y avisa al mantenedor
+C12    : Cocina
+A13    : 8
+B13    : Cartuchos de butano de los sopletes y cargadores de N2O: cerrados, en vertical y lejos de hornos, salamandra y focos de calor
+C13    : Cocina
+A14    : 🌅 APERTURA — EQUIPAMIENTO VANGUARDIA
+A15    : #
+B15    : Tarea
+C15    : Zona
+D15    : Responsable
+E15    : ✓
+F15    : Hora
+G15    : Notas
+A16    : 1
+B16    : Encender baños térmicos / Roner / equipos sous-vide (sólo después de la campana y del control del gas)
+C16    : Cocina
+A17    : 2
+B17    : Verificar temperatura del Roner (ajustar según prod. del día)
+C17    : Cocina
+A18    : 3
+B18    : Encender deshidratador y verificar bandejas en proceso
+C18    : Cocina
+A19    : 4
+B19    : Revisar fermentaciones activas: medir pH y registrar
+C19    : I+D
+A20    : 5
+B20    : Comprobar que las cámaras de maduración han funcionado toda la noche: temperatura y humedad dentro de tus parámetros — anota la lectura: ____ °C / ____ % HR. Si hay desviación, no uses la pieza hasta valorarla
+C20    : Cámara
+A21    : 6
+B21    : Comprobar que las cámaras frigoríficas y el congelador han funcionado toda la noche y registrar la temperatura (refrigeración 0-4 °C / congelación ≤ −18 °C) — anota la lectura: ____ °C. Si hay desviación, no uses el género hasta valorarlo
+C21    : Cámara
+A22    : 7
+B22    : Encender Pacojet / máquina de helados (si hay producción)
+C22    : Pastelería
+A23    : 8
+B23    : Encender sifones y cargar N2O según necesidad del menú
+C23    : Cocina
+A24    : 9
+B24    : Verificar estado del deshidratador: texturas, tiempos restantes
+C24    : Cocina
+A26    : 🔥 APERTURA — BASES Y MISE EN PLACE
+A27    : #
+B27    : Tarea
+C27    : Zona
+D27    : Responsable
+E27    : ✓
+F27    : Hora
+G27    : Notas
+A28    : 1
+B28    : Verificar stock de bases: caldos, glacés, demi-glace
+C28    : Cocina
+A29    : 2
+B29    : Verificar aceites infusionados, vinagres fermentados
+C29    : I+D
+A30    : 3
+B30    : Comprobar stock de hidrocoloides y texturizantes
+C30    : I+D
+A31    : 4
+B31    : Revisar pre-elaboraciones en curso (sous-vide 24-72h)
+C31    : Cocina
+A32    : 5
+B32    : Montar estaciones de partida por cada pase del menú
+C32    : Mise en place
+A33    : 6
+B33    : Verificar plating bible actualizada y visible en cada pase
+C33    : Emplatado
+A34    : 7
+B34    : Comprobar stock de microbrotes, flores comestibles
+C34    : Cocina
+A35    : 8
+B35    : Verificar cortes y porciones del día (0,01g precisión)
+C35    : Cocina
+A37    : 🍽️ APERTURA — SALA Y BRIEFING
+A38    : #
+B38    : Tarea
+C38    : Zona
+D38    : Responsable
+E38    : ✓
+F38    : Hora
+G38    : Notas
+A39    : 1
+B39    : Climatización sala: temperatura, aroma, humedad
+C39    : Sala
+A40    : 2
+B40    : Iluminación: verificar escenas de luz por turno
+C40    : Sala
+A41    : 3
+B41    : Música ambiente: playlist seleccionada para el servicio
+C41    : Sala
+A42    : 4
+B42    : Montar mesas: mantelería, vajilla de autor, cubertería
+C42    : Sala
+A43    : 5
+B43    : Verificar copas de maridaje preparadas por mesa
+C43    : Sumiller
+A44    : 6
+B44    : Briefing cocina: menú del día, cambios, alérgenos reservas
+C44    : Cocina
+A45    : 7
+B45    : Briefing sala: storytelling de cada pase, VIPs, alérgenos
+C45    : Maître
+A46    : 8
+B46    : Comprobar reservas del día y mapa de sala actualizado
+C46    : Maître
+B47    : Tareas completadas:
+C47    = =COUNTIFS(B6:B46,"?*",E6:E46,"✓")-COUNTIFS(B6:B46,"Tarea",E6:E46,"✓")   → caché 0.0
+D47    : de
+E47    = =COUNTIF(B6:B46,"?*")-COUNTIF(B6:B46,"Tarea")-COUNTIF(E6:E46,"N/A")   → caché 33.0
+A48    : Firma responsable: _________________  Fecha: ___/___/______
+A49    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E16 E17 E18 E19 E20 E21 E22 E23 E24 E28 E29 E30 E31 E32 E33 E34 E35 E39 E40 E41 E42 E43 E44 E45 E46 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G46 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Cierre PM» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Cierre PM
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🌙 CIERRE — REGISTROS Y TEMPERATURAS
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Registrar la temperatura de todas las cámaras frigoríficas y del congelador (refrigeración 0-4 °C / congelación ≤ −18 °C) — anota la lectura: ____ °C
+C6     : Cámara
+A7     : 2
+B7     : Registrar temperaturas de cámaras de maduración
+C7     : Cámara
+A8     : 3
+B8     : Registrar pH de fermentaciones activas (nocturno)
+C8     : I+D
+A9     : 4
+B9     : Registrar estado de sous-vide largo recorrido (tiempo restante)
+C9     : Cocina
+A10    : 5
+B10    : Etiquetar TODAS las pre-elaboraciones (fecha, hora, contenido) y anotar la fecha límite de uso: la vida útil por familia en congelación está en la tabla del pie de «Semanales» (05-tareas-semanales-mensuales)
+C10    : Cocina
+A12    : 🧹 CIERRE — LIMPIEZA Y EQUIPAMIENTO
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Limpieza profunda de sifones, boquillas y cargadores
+C14    : Limpieza
+A15    : 2
+B15    : Limpieza de pinzas de emplatado, biberones, stencils
+C15    : Limpieza
+A16    : 3
+B16    : Apagar Roner / baños térmicos (excepto cocciones nocturnas)
+C16    : Cocina
+A17    : 4
+B17    : Apagar deshidratador (excepto procesos en curso >12h)
+C17    : Cocina
+A18    : 5
+B18    : Limpieza y secado de Pacojet / máquina de helados
+C18    : Limpieza
+A19    : 6
+B19    : Limpieza de sopletes, ahumadores, equipamiento especial
+C19    : Limpieza
+A20    : 7
+B20    : Limpiar y organizar estación de emplatado
+C20    : Limpieza
+A21    : 8
+B21    : Verificar que fermentaciones nocturnas están selladas
+C21    : I+D
+A23    : 📋 CIERRE — ADMINISTRACIÓN Y FEEDBACK
+A24    : #
+B24    : Tarea
+C24    : Zona
+D24    : Responsable
+E24    : ✓
+F24    : Hora
+G24    : Notas
+A25    : 1
+B25    : Cierre de caja y registro de ventas del día
+C25    : Admin
+A26    : 2
+B26    : Registrar covers servidos (almuerzos + cenas)
+C26    : Admin
+A27    : 3
+B27    : Anotar incidencias de servicio
+C27    : Admin
+A28    : 4
+B28    : Registrar feedback del chef sobre platos del día
+C28    : I+D
+A29    : 5
+B29    : Anotar platos con mejor/peor aceptación de sala
+C29    : Sala
+A30    : 6
+B30    : Anotar las mermas del día (producto, cantidad y motivo): es el dato que corrige el escandallo del plato y el pedido de mañana
+C30    : Admin
+A31    : 7
+B31    : Confirmar reservas y alérgenos para mañana
+C31    : Maître
+A32    : 8
+B32    : Cerrar y validar el registro diario de jornada de toda la brigada (cocina y sala), con las horas reales de entrada y salida: es obligatorio y hay que conservarlo 4 años
+C32    : Admin
+A33    : 9
+B33    : Activar alarma y cerrar instalaciones
+C33    : Admin
+B34    : Tareas completadas:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Tarea",E6:E33,"✓")   → caché 0.0
+D34    : de
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Tarea")-COUNTIF(E6:E33,"N/A")   → caché 22.0
+A35    : Firma responsable: _________________  Fecha: ___/___/______
+A36    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E20 E21 E25 E26 E27 E28 E29 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G33 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 02-mise-en-place-degustacion.xlsx
+# docProps: title='02 · Mise en Place — Menú Degustación · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 02 · Mise en Place — Menú Degustación
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Organiza la mise en place por pases del menú degustación.
+B6     : ▸ Distingue pre-elaboraciones por tiempo de ejecución.
+B7     : ▸ Controla cada componente del emplatado con la plating bible.
+B8     : ▸ Adapta la hoja según el número de pases de tu menú (7-15).
+B10    : Tiempos de pre-elaboración:
+B11    : ▸ Largo recorrido (24-72h): caldos, fermentaciones, marinados
+B12    : ▸ Medio (6-12h): sous-vide, infusiones, gelificaciones
+B13    : ▸ Del día (2-4h): espumas, salsas calientes, cortes frescos
+B14    : ▸ Minuto cero: microbrotes, flores, nieves, crujientes
+B16    : Pescado crudo y producto que va crudo al plato:
+B17    : ▸ Todo pescado que se sirva crudo o semicrudo (tartar, ceviche, marinado, curado, ahumado en frío) necesita congelación previa: ≥24 h a −20 °C o 15 h a −35 °C. Pide el certificado al proveedor y anota el lote; el cítrico del ceviche NO mata el anisakis.
+B18    : ▸ Microbrotes, flores comestibles y hierbas van crudos al pase y no reciben ningún tratamiento térmico después: se desinfectan y se ACLARAN con agua potable antes de entrar en la estación de emplatado.
+B20    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B21    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Pre-elab Largo» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Pre-elaboraciones Largo Recorrido (24-72h)
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🕐 CALDOS, FONDOS Y GLACÉS
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Fondo oscuro de ternera (48-72h, reducción lenta)
+C6     : Cocina
+A7     : 2
+B7     : Caldo dashi de autor (kombu + bonito + setas deshidratadas)
+C7     : Cocina
+A8     : 3
+B8     : Glacé de ave (24h reducción)
+C8     : Cocina
+A9     : 4
+B9     : Consomé clarificado (24h frío o 12h caliente)
+C9     : Cocina
+A10    : 5
+B10    : Fumet concentrado de marisco (24h)
+C10    : Cocina
+A12    : 🧪 FERMENTACIONES Y MARINADOS
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Fermentación láctica de vegetales (medir pH diario)
+C14    : I+D
+A15    : 2
+B15    : Garum / salsa fermentada en proceso (registrar día)
+C15    : I+D
+A16    : 3
+B16    : Koji: verificar estado del cultivo, temp. y humedad
+C16    : I+D
+A17    : 4
+B17    : Marinados largos (carnes/pescados en aceite, sal, especias): el pescado que no se cocine por encima de 60 °C —marinado, curado o ahumado en frío— tiene que venir de congelación preventiva frente al ANISAKIS (ver «Pre-elab Día»)
+C17    : Cocina
+A18    : 5
+B18    : Encurtidos de temporada (verificar acidez)
+C18    : I+D
+A19    : 6
+B19    : Vinagres de fruta en proceso (madre activa)
+C19    : I+D
+A21    : ♨️ SOUS-VIDE Y MADURACIONES
+A22    : #
+B22    : Tarea
+C22    : Zona
+D22    : Responsable
+E22    : ✓
+F22    : Hora
+G22    : Notas
+A23    : 1
+B23    : Sous-vide largo: piezas de carne (48-72h a baja temp.)
+C23    : Cocina
+A24    : 2
+B24    : Sous-vide medio: pescados y mariscos (6-12h)
+C24    : Cocina
+A25    : 3
+B25    : Confitados lentos (pato, cerdo, pulpo)
+C25    : Cocina
+A26    : 4
+B26    : Maduraciones controladas en cámara (registrar día)
+C26    : Cámara
+A27    : 5
+B27    : Infusiones en frío de aceites y mantequillas (24-48h)
+C27    : I+D
+B28    : Tareas completadas:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Tarea",E6:E27,"✓")   → caché 0.0
+D28    : de
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Tarea")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Firma responsable: _________________  Fecha: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E19 E23 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G27 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Pre-elab Medio» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Pre-elaboraciones Medio Recorrido (6-12h)
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : ⏳ SOUS-VIDE E INFUSIONES (6-12h)
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Huevo sous-vide (63 °C / 75 min o según receta)
+C6     : Cocina
+A7     : 2
+B7     : Vegetales sous-vide para texturas controladas
+C7     : Cocina
+A8     : 3
+B8     : Infusiones calientes de hierbas para salsas
+C8     : Cocina
+A9     : 4
+B9     : Gelificaciones en frío (agar, gellan, kappa)
+C9     : I+D
+A10    : 5
+B10    : Esfericaciones básicas e inversas (preparar baños)
+C10    : I+D
+A11    : 6
+B11    : Cremas y velouté con infusión lenta
+C11    : Cocina
+A13    : ❄️ HELADOS Y SORBETES
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Base de helado de autor (madurar 12h en frío)
+C15    : Pastelería
+A16    : 2
+B16    : Sorbetes de fruta de temporada (madurar base)
+C16    : Pastelería
+A17    : 3
+B17    : Granizados / nieves para emplatado (preparar base)
+C17    : Pastelería
+A18    : 4
+B18    : Helado salado (queso, aceite de oliva, foie)
+C18    : Pastelería
+B19    : Tareas completadas:
+C19    = =COUNTIFS(B6:B18,"?*",E6:E18,"✓")-COUNTIFS(B6:B18,"Tarea",E6:E18,"✓")   → caché 0.0
+D19    : de
+E19    = =COUNTIF(B6:B18,"?*")-COUNTIF(B6:B18,"Tarea")-COUNTIF(E6:E18,"N/A")   → caché 10.0
+A20    : Firma responsable: _________________  Fecha: ___/___/______
+A21    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G18 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Pre-elab Día» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Pre-elaboraciones del Día (2-4h)
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🔥 SALSAS Y ESPUMAS
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Espumas calientes en sifón (verificar carga N2O)
+C6     : Cocina
+A7     : 2
+B7     : Espumas frías (montar y cargar, refrigerar)
+C7     : Cocina
+A8     : 3
+B8     : Salsas calientes del menú (reducir al momento)
+C8     : Cocina
+A9     : 4
+B9     : Aires / bubble (lecitina de soja, xantana)
+C9     : I+D
+A10    : 5
+B10    : Vinagretas de autor (emulsiones estables)
+C10    : Cocina
+A12    : 🔪 CORTES Y PORCIONES
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Cortes de proteína principal (porcionar al gramo)
+C14    : Cocina
+A15    : 2
+B15    : Cortes de pescado/marisco (técnica, precisión)
+C15    : Cocina
+A16    : 3
+B16    : Torneado y cortes de vegetales de autor
+C16    : Cocina
+A17    : 4
+B17    : Láminas y carpaccios (grosor uniforme)
+C17    : Frío
+A18    : 5
+B18    : Tartares y ceviches: cortar en el momento, nunca más de 2 h antes del pase. Prevención de ANISAKIS: el pescado que se sirve crudo o semicrudo debe haberse congelado antes ≥24 h a −20 °C (o 15 h a −35 °C) — exige el certificado al proveedor o congélalo tú, y anota el lote
+C18    : Frío
+A20    : 🌿 EMPLATADO MINUTO CERO
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Hora
+G21    : Notas
+A22    : 1
+B22    : Verificar stock microbrotes frescos (perejil, shiso, rábano)
+C22    : Cocina
+A23    : 2
+B23    : Verificar flores comestibles (frescura, color)
+C23    : Cocina
+A24    : 3
+B24    : Desinfectar microbrotes, flores comestibles y hierbas que van CRUDOS al plato: lejía apta para uso alimentario según la dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARAR con agua potable abundante
+C24    : Cocina
+A25    : 4
+B25    : Preparar nieves / granizados al momento
+C25    : Pastelería
+A26    : 5
+B26    : Preparar crujientes de última hora (tempura, chip)
+C26    : Cocina
+A27    : 6
+B27    : Montar biberones con salsas para emplatado
+C27    : Emplatado
+A28    : 7
+B28    : Verificar stencils, pinzas, cucharas de autor limpias
+C28    : Emplatado
+B29    : Tareas completadas:
+C29    = =COUNTIFS(B6:B28,"?*",E6:E28,"✓")-COUNTIFS(B6:B28,"Tarea",E6:E28,"✓")   → caché 0.0
+D29    : de
+E29    = =COUNTIF(B6:B28,"?*")-COUNTIF(B6:B28,"Tarea")-COUNTIF(E6:E28,"N/A")   → caché 17.0
+A30    : Firma responsable: _________________  Fecha: ___/___/______
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 E28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G28 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Plating Bible» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Control Plating Bible por Pase
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 📖 CHECKLIST POR PASE (adaptar a tu menú 7-15 pases)
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Pase 1 — Snack: foto referencia visible, peso verificado
+C6     : Emplatado
+A7     : 2
+B7     : Pase 1 — Snack: componentes en posición correcta
+C7     : Emplatado
+A8     : 3
+B8     : Pase 2 — Aperitivo: foto referencia visible, peso verificado
+C8     : Emplatado
+A9     : 4
+B9     : Pase 2 — Aperitivo: componentes en posición correcta
+C9     : Emplatado
+A10    : 5
+B10    : Pase 3 — Entrante frío: foto referencia, peso, posición
+C10    : Emplatado
+A11    : 6
+B11    : Pase 4 — Entrante caliente: foto referencia, peso, posición
+C11    : Emplatado
+A12    : 7
+B12    : Pase 5 — Pescado: foto referencia, peso, posición
+C12    : Emplatado
+A13    : 8
+B13    : Pase 6 — Carne: foto referencia, peso, posición
+C13    : Emplatado
+A14    : 9
+B14    : Pase 7 — Pre-postre: foto referencia, peso, posición
+C14    : Emplatado
+A15    : 10
+B15    : Pase 8 — Postre: foto referencia, peso, posición
+C15    : Emplatado
+A16    : 11
+B16    : Pase 9 — Petit fours: foto referencia, peso, posición
+C16    : Emplatado
+A17    : 12
+B17    : Verificar vajilla de autor seleccionada por pase
+C17    : Emplatado
+A18    : 13
+B18    : Verificar cubertería especial por pase (si aplica)
+C18    : Sala
+A20    : 🛠️ HERRAMIENTAS DE EMPLATADO POR PASE
+A21    : #
+B21    : Tarea
+C21    : Zona
+D21    : Responsable
+E21    : ✓
+F21    : Hora
+G21    : Notas
+A22    : 1
+B22    : Pinzas de precisión limpias y en estación
+C22    : Emplatado
+A23    : 2
+B23    : Biberones cargados con salsas correspondientes
+C23    : Emplatado
+A24    : 3
+B24    : Stencils / plantillas de decoración preparados
+C24    : Emplatado
+A25    : 4
+B25    : Sopletes cargados (para caramelizar, dorar)
+C25    : Emplatado
+A26    : 5
+B26    : Cucharas de autor (quenelle, rayas) limpias
+C26    : Emplatado
+A27    : 6
+B27    : Ahumador / campana de humo preparado (si aplica)
+C27    : Emplatado
+A28    : 7
+B28    : Ralladores (trufa, cítricos, especias) en estación
+C28    : Emplatado
+B29    : Tareas completadas:
+C29    = =COUNTIFS(B6:B28,"?*",E6:E28,"✓")-COUNTIFS(B6:B28,"Tarea",E6:E28,"✓")   → caché 0.0
+D29    : de
+E29    = =COUNTIF(B6:B28,"?*")-COUNTIF(B6:B28,"Tarea")-COUNTIF(E6:E28,"N/A")   → caché 20.0
+A30    : Firma responsable: _________________  Fecha: ___/___/______
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E22 E23 E24 E25 E26 E27 E28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G28 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 03-id-desarrollo-menu.xlsx
+# docProps: title='03 · I+D y Desarrollo de Menú · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 03 · I+D y Desarrollo de Menú
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Gestiona el ciclo completo de innovación culinaria.
+B6     : ▸ Documenta cada prueba con ficha completa (3 iteraciones mín.).
+B7     : ▸ Evalúa viabilidad operativa antes de incluir en carta.
+B8     : ▸ Mantén un calendario estacional con 4 cambios de carta/año.
+B10    : Protocolo I+D:
+B11    : ▸ Cada plato nuevo: mínimo 3 iteraciones con foto y feedback.
+B12    : ▸ Hidrocoloides: documentar al 0,01g para replicabilidad.
+B13    : ▸ Registrar TODAS las técnicas probadas, incluidas las descartadas.
+B15    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B16    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Sesiones I+D» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Calendario y Gestión de Sesiones I+D
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🧪 CALENDARIO SESIONES I+D
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Definir día/horario fijo semanal para sesiones I+D
+C6     : I+D
+A7     : 2
+B7     : Reservar ingredientes específicos para I+D (no tocar servicio)
+C7     : I+D
+A8     : 3
+B8     : Asignar equipo para sesión I+D (chef + sous-chef mínimo)
+C8     : I+D
+A9     : 4
+B9     : Definir objetivo de la sesión: concepto, técnica o ingrediente
+C9     : I+D
+A10    : 5
+B10    : Preparar ficha de investigación previa (referencias, inspiración)
+C10    : I+D
+A11    : 6
+B11    : Reservar equipamiento especial para la sesión
+C11    : I+D
+A13    : 📝 FICHA NUEVO PLATO
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Nombre provisional / concepto del plato
+C15    : I+D
+A16    : 2
+B16    : Inspiración y referencia (origen, temporada, emoción)
+C16    : I+D
+A17    : 3
+B17    : Lista de ingredientes principales y secundarios
+C17    : I+D
+A18    : 4
+B18    : Técnica/s principal/es a emplear
+C18    : Técnica
+A19    : 5
+B19    : Coste estimado por ración (ingredientes)
+C19    : Food cost
+A20    : 6
+B20    : Tiempo de ejecución estimado en servicio
+C20    : I+D
+A21    : 7
+B21    : Dificultad de emplatado (1-5 escala)
+C21    : Emplatado
+A22    : 8
+B22    : Compatibilidad con alérgenos comunes (14 UE)
+C22    : I+D
+A24    : 🔄 PROTOCOLO DE PRUEBA (3 iteraciones mín.)
+A25    : #
+B25    : Tarea
+C25    : Zona
+D25    : Responsable
+E25    : ✓
+F25    : Hora
+G25    : Notas
+A26    : 1
+B26    : Iteración 1: ejecutar receta, fotografiar resultado
+C26    : I+D
+A27    : 2
+B27    : Iteración 1: feedback equipo cocina (sabor, textura, visual)
+C27    : I+D
+A28    : 3
+B28    : Iteración 1: registrar ajustes necesarios
+C28    : I+D
+A29    : 4
+B29    : Iteración 2: aplicar ajustes, fotografiar resultado
+C29    : I+D
+A30    : 5
+B30    : Iteración 2: feedback equipo cocina + sala
+C30    : I+D
+A31    : 6
+B31    : Iteración 2: registrar mejoras y validar concepto
+C31    : I+D
+A32    : 7
+B32    : Iteración 3: versión final, foto emplatado definitivo
+C32    : I+D
+A33    : 8
+B33    : Iteración 3: prueba de tiempos en simulación de servicio
+C33    : I+D
+A34    : 9
+B34    : Iteración 3: aprobación del chef ejecutivo
+C34    : I+D
+B35    : Tareas completadas:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Tarea",E6:E34,"✓")   → caché 0.0
+D35    : de
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Tarea")-COUNTIF(E6:E34,"N/A")   → caché 23.0
+A36    : Firma responsable: _________________  Fecha: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E21 E22 E26 E27 E28 E29 E30 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G34 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Documentación» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Documentación de Receta Final
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 📋 FICHA TÉCNICA COMPLETA
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Nombre definitivo del plato
+C6     : Fichas
+A7     : 2
+B7     : Ingredientes exactos con gramajes (0,01g para hidrocoloides)
+C7     : Fichas
+A8     : 3
+B8     : Proceso paso a paso numerado
+C8     : Fichas
+A9     : 4
+B9     : Temperaturas y tiempos exactos de cada fase
+C9     : Fichas
+A10    : 5
+B10    : Foto de emplatado final (ángulo cenital + 45°)
+C10    : Fichas
+A11    : 6
+B11    : Foto de corte/interior (si aplica)
+C11    : Fichas
+A12    : 7
+B12    : Alérgenos presentes en el plato final
+C12    : Fichas
+A13    : 8
+B13    : Food cost real por ración
+C13    : Food cost
+A14    : 9
+B14    : Margen objetivo cumplido (sí/no)
+C14    : Food cost
+A16    : ⚙️ VIABILIDAD OPERATIVA
+A17    : #
+B17    : Tarea
+C17    : Zona
+D17    : Responsable
+E17    : ✓
+F17    : Hora
+G17    : Notas
+A18    : 1
+B18    : ¿Ejecutable en servicio de 40 covers? (sí/no, ajustes)
+C18    : I+D
+A19    : 2
+B19    : Tiempo total de emplatado por ración
+C19    : Emplatado
+A20    : 3
+B20    : Número de cocineros necesarios para este pase
+C20    : I+D
+A21    : 4
+B21    : Pre-elaboraciones requeridas y tiempo total
+C21    : I+D
+A22    : 5
+B22    : Equipamiento especial necesario (disponible sí/no)
+C22    : I+D
+A23    : 6
+B23    : Proveedor del ingrediente principal confirmado
+C23    : Proveedores
+A24    : 7
+B24    : Disponibilidad estacional del ingrediente clave
+C24    : Proveedores
+A26    : 📅 CALENDARIO ESTACIONAL (4 cambios/año)
+A27    : #
+B27    : Tarea
+C27    : Zona
+D27    : Responsable
+E27    : ✓
+F27    : Hora
+G27    : Notas
+A28    : 1
+B28    : Primavera (mar-may): definir platos nuevos y retirar
+C28    : I+D
+A29    : 2
+B29    : Verano (jun-ago): definir platos nuevos y retirar
+C29    : I+D
+A30    : 3
+B30    : Otoño (sep-nov): definir platos nuevos y retirar
+C30    : I+D
+A31    : 4
+B31    : Invierno (dic-feb): definir platos nuevos y retirar
+C31    : I+D
+A32    : 5
+B32    : Registrar proveedores por ingrediente estacional
+C32    : Proveedores
+A33    : 6
+B33    : Actualizar plating bible con cada cambio de carta
+C33    : Fichas
+A35    : 📚 BIBLIOTECA DE TÉCNICAS
+A36    : #
+B36    : Tarea
+C36    : Zona
+D36    : Responsable
+E36    : ✓
+F36    : Hora
+G36    : Notas
+A37    : 1
+B37    : Registrar técnica probada: nombre, resultado, aplicación
+C37    : Técnica
+A38    : 2
+B38    : Registrar técnica descartada: razón del descarte
+C38    : Técnica
+A39    : 3
+B39    : Actualizar catálogo de hidrocoloides probados y ratios
+C39    : Técnica
+A40    : 4
+B40    : Actualizar catálogo de fermentaciones activas y tiempos
+C40    : Técnica
+A41    : 5
+B41    : Documentar maridajes técnica-ingrediente exitosos
+C41    : Técnica
+B42    : Tareas completadas:
+C42    = =COUNTIFS(B6:B41,"?*",E6:E41,"✓")-COUNTIFS(B6:B41,"Tarea",E6:E41,"✓")   → caché 0.0
+D42    : de
+E42    = =COUNTIF(B6:B41,"?*")-COUNTIF(B6:B41,"Tarea")-COUNTIF(E6:E41,"N/A")   → caché 27.0
+A43    : Firma responsable: _________________  Fecha: ___/___/______
+A44    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 E18 E19 E20 E21 E22 E23 E24 E28 E29 E30 E31 E32 E33 E37 E38 E39 E40 E41 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G41 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 04-tareas-brigada-creativa.xlsx
+# docProps: title='04 · Tareas por Rol — Brigada Creativa · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 04 · Tareas por Rol — Brigada Creativa
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Asigna responsabilidades claras a cada miembro de la brigada.
+B6     : ▸ Cada rol tiene tareas diarias específicas pre-servicio y servicio.
+B7     : ▸ El chef ejecutivo valida el pase final.
+B8     : ▸ La coordinación cocina-sala es CRÍTICA en menú degustación.
+B10    : Roles clave:
+B11    : ▸ Chef Ejecutivo — visión creativa, I+D, pase final
+B12    : ▸ Sous-Chef — gestión operativa, mise en place
+B13    : ▸ Chef Pastelero — postres de autor, helados, fermentaciones dulces
+B14    : ▸ Sumiller — maridaje, bodega, formación sala
+B15    : ▸ Maître — storytelling, tiempos de mesa, coordinación
+B17    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B18    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Chef Ejecutivo» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Chef Ejecutivo
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 👨‍🍳 CHEF EJECUTIVO — DIARIO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Revisión del menú del día: ajustes, sustituciones estacionales
+C6     : Cocina
+A7     : 2
+B7     : Sesión I+D programada (si es día asignado)
+C7     : I+D
+A8     : 3
+B8     : Contacto con proveedores premium (trufa, marisco, producto vivo)
+C8     : Proveedores
+A9     : 4
+B9     : Revisión de food cost semanal
+C9     : Food cost
+A10    : 5
+B10    : Aprobación de mise en place antes del servicio
+C10    : Cocina
+A11    : 6
+B11    : Supervisión de emplatado: verificar plating bible
+C11    : Emplatado
+A12    : 7
+B12    : Pase final: control de calidad de cada plato antes de sala
+C12    : Pase
+A13    : 8
+B13    : Comunicación con maître sobre tiempos y secuencia
+C13    : Maître
+A14    : 9
+B14    : Feedback post-servicio al equipo
+C14    : Cocina
+B15    : Tareas completadas:
+C15    = =COUNTIFS(B6:B14,"?*",E6:E14,"✓")-COUNTIFS(B6:B14,"Tarea",E6:E14,"✓")   → caché 0.0
+D15    : de
+E15    = =COUNTIF(B6:B14,"?*")-COUNTIF(B6:B14,"Tarea")-COUNTIF(E6:E14,"N/A")   → caché 9.0
+A16    : Firma responsable: _________________  Fecha: ___/___/______
+A17    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G14 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Sous-Chef» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Sous-Chef
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🔥 SOUS-CHEF — DIARIO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Coordinación de mise en place de todas las partidas
+C6     : Mise en place
+A7     : 2
+B7     : Gestión de la brigada: asignación de tareas por turno
+C7     : Cocina
+A8     : 3
+B8     : Supervisión de pre-elaboraciones largo recorrido
+C8     : Cocina
+A9     : 4
+B9     : Control de temperaturas (sous-vide, fermentaciones, cámaras)
+C9     : Cámara
+A10    : 5
+B10    : Verificar etiquetado de TODAS las pre-elaboraciones
+C10    : Cocina
+A11    : 6
+B11    : Reposición de stock durante servicio
+C11    : Stock
+A12    : 7
+B12    : Apoyo en emplatado durante pico de servicio
+C12    : Emplatado
+A13    : 8
+B13    : Revisión de pedidos a proveedores para mañana
+C13    : Proveedores
+A14    : 9
+B14    : Cierre de cocina: checklist de equipamiento y limpieza
+C14    : Limpieza
+B15    : Tareas completadas:
+C15    = =COUNTIFS(B6:B14,"?*",E6:E14,"✓")-COUNTIFS(B6:B14,"Tarea",E6:E14,"✓")   → caché 0.0
+D15    : de
+E15    = =COUNTIF(B6:B14,"?*")-COUNTIF(B6:B14,"Tarea")-COUNTIF(E6:E14,"N/A")   → caché 9.0
+A16    : Firma responsable: _________________  Fecha: ___/___/______
+A17    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G14 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Partida Caliente» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Chef de Partida Caliente
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🔥 PARTIDA CALIENTE — DIARIO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Preparación de fondos y salsas del día
+C6     : Caliente
+A7     : 2
+B7     : Cocciones principales: proteínas, guarniciones calientes
+C7     : Caliente
+A8     : 3
+B8     : Gestión de sous-vide en servicio (regenerar, sellar)
+C8     : Caliente
+A9     : 4
+B9     : Acabados de carne: sellado, glaseado, reposo
+C9     : Caliente
+A10    : 5
+B10    : Acabados de pescado: a la plancha, brasa, vapor
+C10    : Caliente
+A11    : 6
+B11    : Salsas calientes al momento (reducir, montar)
+C11    : Caliente
+A12    : 7
+B12    : Coordinación de tiempos con pase y emplatado
+C12    : Pase
+B13    : Tareas completadas:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Tarea",E6:E12,"✓")   → caché 0.0
+D13    : de
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Tarea")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Firma responsable: _________________  Fecha: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Partida Fría» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Chef de Partida Fría / Creativo
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : ❄️ PARTIDA FRÍA / CREATIVO — DIARIO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Ensaladas conceptuales: montaje, aliño al momento
+C6     : Frío
+A7     : 2
+B7     : Ceviches y tartares: cortar máx. 2 h antes del servicio y SÓLO con pescado que haya pasado la congelación preventiva frente al ANISAKIS (ver 02 · «Pre-elab Día»)
+C7     : Frío
+A8     : 3
+B8     : Crudos y carpaccios: laminar, temperar
+C8     : Frío
+A9     : 4
+B9     : Marinados rápidos (cítricos, vinagres): el ácido NO mata el anisakis ni sustituye a la congelación previa — sólo cambia la textura
+C9     : Frío
+A10    : 5
+B10    : Emulsiones frías, vinagretas de autor
+C10    : Frío
+A11    : 6
+B11    : Montaje de pases fríos según plating bible
+C11    : Emplatado
+A12    : 7
+B12    : Control de temperatura de producto en línea fría
+C12    : Cámara
+B13    : Tareas completadas:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Tarea",E6:E12,"✓")   → caché 0.0
+D13    : de
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Tarea")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Firma responsable: _________________  Fecha: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Chef Pastelero» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Chef Pastelero Creativo
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🍰 CHEF PASTELERO CREATIVO — DIARIO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Pre-postres: preparación y montaje de componentes
+C6     : Pastelería
+A7     : 2
+B7     : Postre principal: mise en place y emplatado
+C7     : Pastelería
+A8     : 3
+B8     : Petit fours: producción y montaje para servicio
+C8     : Petit fours
+A9     : 4
+B9     : Helados de autor: turbinar, almacenar, temperar
+C9     : Pastelería
+A10    : 5
+B10    : Sorbetes y nieves: producción del día
+C10    : Pastelería
+A11    : 6
+B11    : Fermentaciones dulces: verificar estado (kombucha, kéfir)
+C11    : I+D
+A12    : 7
+B12    : Crujientes y texturas dulces: tuiles, snaps, caramelos
+C12    : Pastelería
+A13    : 8
+B13    : Verificar plating bible de postres: foto y posición
+C13    : Emplatado
+A14    : 9
+B14    : Coordinación con cocina para timing pre-postre/postre
+C14    : Pase
+B15    : Tareas completadas:
+C15    = =COUNTIFS(B6:B14,"?*",E6:E14,"✓")-COUNTIFS(B6:B14,"Tarea",E6:E14,"✓")   → caché 0.0
+D15    : de
+E15    = =COUNTIF(B6:B14,"?*")-COUNTIF(B6:B14,"Tarea")-COUNTIF(E6:E14,"N/A")   → caché 9.0
+A16    : Firma responsable: _________________  Fecha: ___/___/______
+A17    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E14 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G14 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Sumiller» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Sumiller
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🍷 SUMILLER — DIARIO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Verificar maridaje del día: ajustar si hay cambios en menú
+C6     : Maridaje
+A7     : 2
+B7     : Preparar vinos del maridaje: temperatura, decantación
+C7     : Bodega
+A8     : 3
+B8     : Preparar maridaje alternativo (mocktails, kombucha, cerveza)
+C8     : Maridaje
+A9     : 4
+B9     : Briefing a equipo de sala sobre maridaje y storytelling
+C9     : Sala
+A10    : 5
+B10    : Servicio de vinos sincronizado con cocina
+C10    : Servicio
+A11    : 6
+B11    : Control de stock de bodega post-servicio
+C11    : Bodega
+A12    : 7
+B12    : Registrar consumo de vinos del día
+C12    : Bodega
+B13    : Tareas completadas:
+C13    = =COUNTIFS(B6:B12,"?*",E6:E12,"✓")-COUNTIFS(B6:B12,"Tarea",E6:E12,"✓")   → caché 0.0
+D13    : de
+E13    = =COUNTIF(B6:B12,"?*")-COUNTIF(B6:B12,"Tarea")-COUNTIF(E6:E12,"N/A")   → caché 7.0
+A14    : Firma responsable: _________________  Fecha: ___/___/______
+A15    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G12 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Maître-Sala» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Maître y Equipo de Sala
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🎩 MAÎTRE / JEFE DE SALA — DIARIO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Storytelling: preparar narrativa de cada pase para comensales
+C6     : Storytelling
+A7     : 2
+B7     : Tiempos de mesa: coordinar con cocina secuencia de pases
+C7     : Maître
+A8     : 3
+B8     : Gestión de VIPs: atención especial, preferencias
+C8     : Maître
+A9     : 4
+B9     : Supervisión del servicio sincronizado (mesa ↔ cocina)
+C9     : Servicio
+A10    : 5
+B10    : Gestión de incidencias en sala (alérgenos, quejas, peticiones)
+C10    : Maître
+A11    : 6
+B11    : Despedida personalizada a cada mesa
+C11    : Sala
+A13    : 🍽️ CAMARERO MENÚ DEGUSTACIÓN — DIARIO
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Servicio sincronizado: recibir pase de cocina y servir
+C15    : Camarero
+A16    : 2
+B16    : Explicación de cada pase al comensal (storytelling breve)
+C16    : Storytelling
+A17    : 3
+B17    : Verificar alérgenos por mesa ANTES de cada pase
+C17    : Camarero
+A18    : 4
+B18    : Retirada de platos coordinada con cocina
+C18    : Camarero
+A19    : 5
+B19    : Servicio de pan, agua, extras entre pases
+C19    : Camarero
+A20    : 6
+B20    : Comunicar feedback de comensales al maître
+C20    : Camarero
+B21    : Tareas completadas:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Tarea",E6:E20,"✓")   → caché 0.0
+D21    : de
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Tarea")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Firma responsable: _________________  Fecha: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G20 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 05-tareas-semanales-mensuales.xlsx
+# docProps: title='05 · Tareas Semanales y Mensuales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 05 · Tareas Semanales y Mensuales
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Programa las tareas semanales en un día fijo (lunes recomendado).
+B6     : ▸ Las tareas mensuales se programan el primer lunes del mes.
+B7     : ▸ Registra cada revisión con fecha y firma del responsable.
+B9     : Puntos clave:
+B10    : ▸ Inventario semanal de productos premium (trufa, caviar, etc.).
+B11    : ▸ Mantenimiento preventivo de equipamiento de vanguardia.
+B12    : ▸ Revisión de food cost real vs. objetivo cada mes.
+B14    : Más allá del mes:
+B15    : ▸ La hoja «Trimestral y Anual» recoge lo que se CONTRATA y se pide por escrito en una inspección: DDD, conductos de extracción, analíticas, instalación de gas, frigorista, calibración de básculas y sondas, extintores, legionela, eléctrica, RGSEAA, carnés de manipulador, póliza y facturación.
+B16    : ▸ Anota en «Notas» el número de parte de cada revisión y la fecha de la siguiente; la columna «Cadencia» ya trae la periodicidad legal o recomendada de cada una.
+B17    : ▸ Al pie de «Semanales» tienes una tabla editable de vida útil en congelación por familia: ajústala a tu producto y a tu proveedor. Está fuera del contador porque es una referencia, no una tarea.
+B19    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B20    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Semanales» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Semanales
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 📦 INVENTARIO Y STOCK SEMANAL
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Inventario productos premium (trufa, caviar, azafrán, vainilla)
+C6     : Stock
+A7     : 2
+B7     : Inventario hidrocoloides y texturizantes (agar, gellan, xantana)
+C7     : Stock
+A8     : 3
+B8     : Inventario gases (N2O sifones, CO2, butano sopletes)
+C8     : Stock
+A9     : 4
+B9     : Verificar stock de microbrotes y flores comestibles
+C9     : Stock
+A10    : 5
+B10    : Revisar el congelador y el arcón: rotación FIFO, etiquetas legibles y descarte de lo que ha superado la vida útil de la tabla del pie de esta hoja
+C10    : Stock
+A11    : 6
+B11    : Pedido semanal a proveedores premium
+C11    : Proveedores
+A12    : 7
+B12    : Registrar mermas de la semana y causas
+C12    : Admin
+A14    : 🧪 FERMENTACIONES Y MADURACIONES
+A15    : #
+B15    : Tarea
+C15    : Zona
+D15    : Responsable
+E15    : ✓
+F15    : Hora
+G15    : Notas
+A16    : 1
+B16    : Medir pH de TODAS las fermentaciones activas
+C16    : I+D
+A17    : 2
+B17    : Verificar estado de koji / cultivos activos
+C17    : I+D
+A18    : 3
+B18    : Controlar maduraciones en cámara (temp., humedad, día)
+C18    : Cámara
+A19    : 4
+B19    : Evaluar fermentaciones listas para uso en carta
+C19    : I+D
+A20    : 5
+B20    : Descartar fermentaciones fuera de parámetros
+C20    : I+D
+A22    : 🔧 MANTENIMIENTO EQUIPAMIENTO
+A23    : #
+B23    : Tarea
+C23    : Zona
+D23    : Responsable
+E23    : ✓
+F23    : Hora
+G23    : Notas
+A24    : 1
+B24    : Mantenimiento Pacojet: limpieza profunda, verificar cuchillas
+C24    : Cocina
+A25    : 2
+B25    : Mantenimiento Roner/sous-vide: calibración, limpieza
+C25    : Cocina
+A26    : 3
+B26    : Mantenimiento deshidratador: limpieza bandejas, filtros
+C26    : Cocina
+A27    : 4
+B27    : Verificar calibración de básculas de precisión (0,01g)
+C27    : Cocina
+A28    : 5
+B28    : Mantenimiento sifones: juntas, válvulas, limpieza
+C28    : Cocina
+A29    : 6
+B29    : Si tu cocina fríe (tempura, crujientes, buñuelos): filtrar o cambiar el aceite SOLO en frío, por debajo de 40 °C — nunca en caliente — y entregarlo a gestor autorizado
+C29    : Limpieza
+A31    : 👥 EQUIPO Y FORMACIÓN
+A32    : #
+B32    : Tarea
+C32    : Zona
+D32    : Responsable
+E32    : ✓
+F32    : Hora
+G32    : Notas
+A33    : 1
+B33    : Reunión semanal de equipo (feedback, planificación)
+C33    : Cocina
+A34    : 2
+B34    : Revisión de fichas técnicas actualizadas
+C34    : Fichas
+A35    : 3
+B35    : Actualización de plating bible si hubo cambios
+C35    : Emplatado
+B36    : Tareas completadas:
+C36    = =COUNTIFS(B6:B35,"?*",E6:E35,"✓")-COUNTIFS(B6:B35,"Tarea",E6:E35,"✓")   → caché 0.0
+D36    : de
+E36    = =COUNTIF(B6:B35,"?*")-COUNTIF(B6:B35,"Tarea")-COUNTIF(E6:E35,"N/A")   → caché 21.0
+A37    : Firma responsable: _________________  Fecha: ___/___/______
+A39    : VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C — ajústala a tu producto y a tu proveedor
+B40    : Familia
+C40    : Vida útil
+D40    : Notas
+B41    : Carnes rojas y aves crudas, en pieza
+C41    : 6-12 meses
+D41    : Porciona ANTES de congelar: descongelar y volver a congelar no se hace
+B42    : Carne picada y preparados de carne
+C42    : 3 meses
+D42    : Más superficie expuesta, se enrancia antes
+B43    : Pescado azul (atún, caballa, sardina)
+C43    : 2-3 meses
+D43    : La grasa se oxida: envasa al vacío y ponle fecha de entrada
+B44    : Pescado blanco y marisco crudo
+C44    : 3-6 meses
+D44    : Si va a servirse crudo, la congelación cuenta además como tratamiento anti-ANISAKIS: ≥24 h a −20 °C
+B45    : Fondos, glacés, caldos y consomés
+C45    : 4-6 meses
+D45    : Congela en porciones de servicio: descongelar un bloque entero para un pase es merma segura
+B46    : Sous-vide ya cocinado y abatido, en su bolsa
+C46    : 3 meses
+D46    : Abate primero a ≤ −18 °C; la bolsa intacta o la vida útil no vale
+B47    : Purés, cremas y bases de helado
+C47    : 3-4 meses
+D47    : Las que llevan huevo o lácteo, en el tramo corto
+B48    : Masas crudas, hojaldres y crujientes sin hornear
+C48    : 2-3 meses
+D48    : Pierden gasificación: rotúlalas con la fecha de elaboración
+B49    : Frutas y verduras blanqueadas o en puré
+C49    : 8-12 meses
+D49    : Blanquea antes de congelar: sin blanquear pierden color y textura en pocas semanas
+B50    : Producto que ya ha salido a un pase o a la mesa
+C50    : No congelar
+D50    : Lo que ha salido a sala o ha roto la cadena de frío no vuelve al congelador: se retira y se anota como merma
+A51    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 E29 E33 E34 E35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G35 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Mensuales» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Mensuales
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🔄 CARTA Y MENÚ
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Rotación parcial carta: evaluar 2-3 platos para cambio
+C6     : I+D
+A7     : 2
+B7     : Evaluación de platos con menor aceptación
+C7     : I+D
+A8     : 3
+B8     : Planificación de nuevos platos para próximo mes
+C8     : I+D
+A9     : 4
+B9     : Actualización de plating bible completa
+C9     : Fichas
+A11    : 🧹 DEEP CLEAN Y CALIBRACIÓN
+A12    : #
+B12    : Tarea
+C12    : Zona
+D12    : Responsable
+E12    : ✓
+F12    : Hora
+G12    : Notas
+A13    : 1
+B13    : Deep clean del laboratorio / zona I+D
+C13    : Limpieza
+A14    : 2
+B14    : Deep clean de cámaras de maduración
+C14    : Limpieza
+A15    : 3
+B15    : Verificación interna de las básculas con su pesa patrón y ajuste si hace falta (el contraste de sondas y termómetros y la calibración externa certificada van en «Trimestral y Anual»)
+C15    : Cocina
+A16    : 4
+B16    : Revisión de todos los equipos de vanguardia
+C16    : Cocina
+A17    : 5
+B17    : Mantenimiento de cámaras frigoríficas (filtros, juntas)
+C17    : Limpieza
+A19    : 💰 FINANZAS Y GESTIÓN
+A20    : #
+B20    : Tarea
+C20    : Zona
+D20    : Responsable
+E20    : ✓
+F20    : Hora
+G20    : Notas
+A21    : 1
+B21    : Inventario completo de bodega
+C21    : Bodega
+A22    : 2
+B22    : Revisión de proveedores: calidad, precio, entregas
+C22    : Proveedores
+A23    : 3
+B23    : Food cost real vs. objetivo (análisis por plato)
+C23    : Food cost
+A24    : 4
+B24    : Coste de bebida por cubierto
+C24    : Food cost
+A25    : 5
+B25    : Revisión de mermas mensuales y plan de reducción
+C25    : Admin
+A26    : 6
+B26    : Archivar los registros de jornada del mes junto a nóminas y contratos: hay que conservarlos 4 años y es lo primero que pide una inspección de Trabajo
+C26    : Admin
+A28    : 📚 FORMACIÓN Y DESARROLLO
+A29    : #
+B29    : Tarea
+C29    : Zona
+D29    : Responsable
+E29    : ✓
+F29    : Hora
+G29    : Notas
+A30    : 1
+B30    : Sesión de formación equipo (técnica nueva o repaso)
+C30    : I+D
+A31    : 2
+B31    : Evaluación de desempeño informal por rol
+C31    : Admin
+A32    : 3
+B32    : Planificación de eventos especiales del próximo mes
+C32    : Eventos
+A33    : 4
+B33    : Revisión de objetivos y KPIs del mes
+C33    : Admin
+B34    : Tareas completadas:
+C34    = =COUNTIFS(B6:B33,"?*",E6:E33,"✓")-COUNTIFS(B6:B33,"Tarea",E6:E33,"✓")   → caché 0.0
+D34    : de
+E34    = =COUNTIF(B6:B33,"?*")-COUNTIF(B6:B33,"Tarea")-COUNTIF(E6:E33,"N/A")   → caché 19.0
+A35    : Firma responsable: _________________  Fecha: ___/___/______
+A36    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E21 E22 E23 E24 E25 E26 E30 E31 E32 E33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G33 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Trimestral y Anual» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Mantenimiento Trimestral y Anual — Revisiones Contratadas
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🐜 HIGIENE, PLAGAS Y AGUA — empresa autorizada
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Cadencia
+G5     : Notas
+A6     : 1
+B6     : Control de plagas (DDD): visita de la empresa autorizada, parte firmado y certificado en vigor
+C6     : Admin
+F6     : Trimestral
+A7     : 2
+B7     : Limpieza de campana y conductos de extracción por empresa homologada, con certificado
+C7     : Limpieza
+F7     : Anual
+A8     : 3
+B8     : Analítica de superficies y de producto en laboratorio externo (verificación del plan de limpieza)
+C8     : Cocina
+F8     : Semestral
+A9     : 4
+B9     : Revisar el plan APPCC y las fichas de proveedor: altas, bajas y cambios de carta del año
+C9     : Admin
+F9     : Anual
+A10    : 5
+B10    : Renovar los carnés de manipulador de alimentos de toda la brigada, extras incluidos
+C10    : Admin
+F10    : Anual
+A11    : 6
+B11    : Comprobar que el registro sanitario (RGSEAA) recoge la actividad y las instalaciones actuales
+C11    : Admin
+F11    : Anual
+A13    : 🔧 EQUIPOS, FRÍO Y GAS
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Cadencia
+G14    : Notas
+A15    : 1
+B15    : Revisión de la instalación de gas por empresa habilitada, si la cocina tiene gas
+C15    : Cocina
+F15    : Cada 5 años
+A16    : 2
+B16    : Revisión de cámaras frigoríficas y de maduración por frigorista: gas, juntas, sondas y desescarche
+C16    : Cámara
+F16    : Anual
+A17    : 3
+B17    : Calibración externa certificada de las básculas de precisión (0,01 g)
+C17    : Cocina
+F17    : Anual
+A18    : 4
+B18    : Revisión por el SAT de Roner/baños térmicos, abatidor, deshidratador, Pacojet y sifones
+C18    : Cocina
+F18    : Anual
+A19    : 5
+B19    : Contraste de sondas y termómetros contra un patrón conocido (agua con hielo, 0 °C) y anotar la desviación
+C19    : Cocina
+F19    : Trimestral
+A20    : 6
+B20    : Retirada del aceite de fritura usado por gestor autorizado y archivo del documento de entrega
+C20    : Limpieza
+F20    : Trimestral
+A22    : 🧯 SEGURIDAD DEL LOCAL
+A23    : #
+B23    : Tarea
+C23    : Zona
+D23    : Responsable
+E23    : ✓
+F23    : Cadencia
+G23    : Notas
+A24    : 1
+B24    : Revisión de extintores y BIE por empresa mantenedora (etiqueta y acta)
+C24    : Admin
+F24    : Anual
+A25    : 2
+B25    : Revisión del sistema de detección y de las luces de emergencia
+C25    : Admin
+F25    : Anual
+A26    : 3
+B26    : Plan de prevención de legionela si hay torre de refrigeración, spa o agua caliente sanitaria de riesgo
+C26    : Admin
+F26    : Semestral
+A27    : 4
+B27    : Revisión de la instalación eléctrica por instalador autorizado (local de pública concurrencia)
+C27    : Admin
+F27    : Cada 5 años
+A28    : 5
+B28    : Simulacro y repaso del plan de emergencia con la brigada y con sala
+C28    : Admin
+F28    : Anual
+A30    : 📄 DOCUMENTACIÓN, SEGUROS Y FISCAL
+A31    : #
+B31    : Tarea
+C31    : Zona
+D31    : Responsable
+E31    : ✓
+F31    : Cadencia
+G31    : Notas
+A32    : 1
+B32    : Revisar la póliza de responsabilidad civil: suma asegurada, aforo y actividades cubiertas (chef's table, pop-ups, showcookings)
+C32    : Admin
+F32    : Anual
+A33    : 2
+B33    : Archivar los registros de jornada del trimestre y revisar contratos, altas y horas extra
+C33    : Admin
+F33    : Trimestral
+A34    : 3
+B34    : Revisión del TPV y del software de facturación (requisitos antifraude / Verifactu)
+C34    : Admin
+F34    : Anual
+A35    : 4
+B35    : Actualizar escandallos y precios de carta con los precios reales de proveedor
+C35    : Food cost
+F35    : Trimestral
+A36    : 5
+B36    : Renovar licencias, tasa de terraza y seguros del local
+C36    : Admin
+F36    : Anual
+A37    : 6
+B37    : Anotar en «Notas» el nº de parte de cada revisión y la fecha de la siguiente
+C37    : Admin
+F37    : Trimestral
+B38    : Tareas completadas:
+C38    = =COUNTIFS(B6:B37,"?*",E6:E37,"✓")-COUNTIFS(B6:B37,"Tarea",E6:E37,"✓")   → caché 0.0
+D38    : de
+E38    = =COUNTIF(B6:B37,"?*")-COUNTIF(B6:B37,"Tarea")-COUNTIF(E6:E37,"N/A")   → caché 23.0
+A39    : Firma responsable: _________________  Fecha: ___/___/______
+A40    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E24 E25 E26 E27 E28 E32 E33 E34 E35 E36 E37 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A6:G37 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 06-sumiller-maridajes.xlsx
+# docProps: title='06 · Sumiller y Maridajes · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 06 · Sumiller y Maridajes
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Diseña el maridaje para cada pase del menú degustación.
+B6     : ▸ Gestiona la bodega con control de stock y temperaturas.
+B7     : ▸ Incluye opciones de maridaje alternativo (sin alcohol).
+B8     : ▸ Forma al equipo de sala en el storytelling de cada vino.
+B10    : Protocolo de servicio:
+B11    : ▸ Copa correcta por tipo de vino/bebida.
+B12    : ▸ Temperatura exacta de servicio.
+B13    : ▸ Cantidad por copa en maridaje (≈60-80ml por pase).
+B15    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B16    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Maridaje Menú» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Diseño de Maridaje por Pase
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🍷 MARIDAJE — MENÚ DEGUSTACIÓN
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Pase 1 — Snack: vino/bebida seleccionada, copa, temp., ml
+C6     : Maridaje
+A7     : 2
+B7     : Pase 2 — Aperitivo: vino/bebida, copa, temp., ml
+C7     : Maridaje
+A8     : 3
+B8     : Pase 3 — Entrante frío: vino/bebida, copa, temp., ml
+C8     : Maridaje
+A9     : 4
+B9     : Pase 4 — Entrante caliente: vino/bebida, copa, temp., ml
+C9     : Maridaje
+A10    : 5
+B10    : Pase 5 — Pescado: vino/bebida, copa, temp., ml
+C10    : Maridaje
+A11    : 6
+B11    : Pase 6 — Carne: vino/bebida, copa, temp., ml
+C11    : Maridaje
+A12    : 7
+B12    : Pase 7 — Pre-postre: vino/bebida, copa, temp., ml
+C12    : Maridaje
+A13    : 8
+B13    : Pase 8 — Postre: vino/bebida, copa, temp., ml
+C13    : Maridaje
+A15    : 🍹 MARIDAJE ALTERNATIVO (sin alcohol)
+A16    : #
+B16    : Tarea
+C16    : Zona
+D16    : Responsable
+E16    : ✓
+F16    : Hora
+G16    : Notas
+A17    : 1
+B17    : Pase 1 — Snack: mocktail/kombucha/zumo, descripción
+C17    : Maridaje
+A18    : 2
+B18    : Pase 2 — Aperitivo: alternativa sin alcohol
+C18    : Maridaje
+A19    : 3
+B19    : Pase 3-4 — Entrantes: alternativa sin alcohol
+C19    : Maridaje
+A20    : 4
+B20    : Pase 5 — Pescado: alternativa sin alcohol
+C20    : Maridaje
+A21    : 5
+B21    : Pase 6 — Carne: alternativa sin alcohol
+C21    : Maridaje
+A22    : 6
+B22    : Pase 7-8 — Postres: alternativa sin alcohol
+C22    : Maridaje
+A23    : 7
+B23    : Cócteles de autor (con alcohol): lista y recetas
+C23    : Maridaje
+A24    : 8
+B24    : Cervezas artesanas seleccionadas por pase (si aplica)
+C24    : Maridaje
+B25    : Tareas completadas:
+C25    = =COUNTIFS(B6:B24,"?*",E6:E24,"✓")-COUNTIFS(B6:B24,"Tarea",E6:E24,"✓")   → caché 0.0
+D25    : de
+E25    = =COUNTIF(B6:B24,"?*")-COUNTIF(B6:B24,"Tarea")-COUNTIF(E6:E24,"N/A")   → caché 16.0
+A26    : Firma responsable: _________________  Fecha: ___/___/______
+A27    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G24 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Gestión Bodega» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Gestión de Bodega
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🏪 STOCK Y ROTACIÓN
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Inventario completo de bodega (actualizar mensual)
+C6     : Bodega
+A7     : 2
+B7     : Control de stock mínimo por referencia del maridaje
+C7     : Bodega
+A8     : 3
+B8     : Rotación FIFO estricta (primero en entrar, primero en salir)
+C8     : Bodega
+A9     : 4
+B9     : Temperatura de bodega verificada (zona tintos, blancos, espumosos)
+C9     : Bodega
+A10    : 5
+B10    : Humedad de bodega verificada
+C10    : Bodega
+A11    : 6
+B11    : Registrar entradas de vino (fecha, proveedor, precio)
+C11    : Bodega
+A12    : 7
+B12    : Registrar salidas de vino (fecha, servicio, cantidad)
+C12    : Bodega
+A14    : 📋 FICHAS DE CATA
+A15    : #
+B15    : Tarea
+C15    : Zona
+D15    : Responsable
+E15    : ✓
+F15    : Hora
+G15    : Notas
+A16    : 1
+B16    : Ficha de cata por cada vino del maridaje activo
+C16    : Sumiller
+A17    : 2
+B17    : Notas de cata para storytelling de sala
+C17    : Sumiller
+A18    : 3
+B18    : Temperatura óptima de servicio registrada
+C18    : Sumiller
+A19    : 4
+B19    : Tiempo de decantación (si aplica)
+C19    : Sumiller
+A20    : 5
+B20    : Maridaje recomendado (plato + técnica)
+C20    : Sumiller
+A22    : 🤝 PROVEEDORES Y FORMACIÓN
+A23    : #
+B23    : Tarea
+C23    : Zona
+D23    : Responsable
+E23    : ✓
+F23    : Hora
+G23    : Notas
+A24    : 1
+B24    : Relación con bodegas: contacto, condiciones, rappel
+C24    : Proveedores
+A25    : 2
+B25    : Relación con distribuidores: catálogo, entregas, crédito
+C25    : Proveedores
+A26    : 3
+B26    : Formación semanal equipo de sala (vino del maridaje)
+C26    : Sala
+A27    : 4
+B27    : Control coste de bebida por cubierto
+C27    : Food cost
+B28    : Tareas completadas:
+C28    = =COUNTIFS(B6:B27,"?*",E6:E27,"✓")-COUNTIFS(B6:B27,"Tarea",E6:E27,"✓")   → caché 0.0
+D28    : de
+E28    = =COUNTIF(B6:B27,"?*")-COUNTIF(B6:B27,"Tarea")-COUNTIF(E6:E27,"N/A")   → caché 16.0
+A29    : Firma responsable: _________________  Fecha: ___/___/______
+A30    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G27 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 07-chefs-table-eventos.xlsx
+# docProps: title="07 · Chef's Table y Eventos Especiales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor" · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 07 · Chef's Table y Eventos Especiales
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Organiza cada tipo de evento con su checklist específico.
+B6     : ▸ El chef's table requiere coordinación directa chef-comensales.
+B7     : ▸ Los pop-ups necesitan logística especial (equipamiento portátil).
+B8     : ▸ Planifica el calendario anual de eventos desde enero.
+B10    : Tipos de evento:
+B11    : ▸ Chef's table — experiencia premium con interacción directa
+B12    : ▸ Pop-ups — logística portátil, mise en place adaptada
+B13    : ▸ Cenas maridaje — colaboración con bodegas invitadas
+B14    : ▸ Showcookings — demostraciones para público
+B15    : ▸ Cenas privadas — menú, decoración, facturación
+B17    : Antes de aceptar una reserva privada:
+B18    : ▸ La primera sección de «Cenas Especiales» es lo que se pacta AL CONFIRMAR: alérgenos e intolerancias por escrito, número de comensales cerrado, precio por comensal, señal y condiciones de cancelación. Lo de palabra no se puede demostrar después.
+B19    : ▸ Los alérgenos llegan por escrito y se resuelven con cocina antes de cerrar el menú, no la misma noche: en un degustación de diez pases, una alternativa improvisada rompe la secuencia entera.
+B20    : ▸ La noche de la cena no se vuelve a «confirmar» nada: lo que se hace en el pase es COTEJAR los alérgenos ya confirmados por escrito con la comanda de cada comensal. Uno pacta y el otro comprueba; no son dos veces el mismo control.
+B22    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B23    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Chef's Table» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Chef's Table
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🍽️ CHEF'S TABLE — PREPARACIÓN
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Repasar con cocina el número final de comensales y los alérgenos ya confirmados por escrito al reservar (ver «Cenas Especiales» → «AL CONFIRMAR LA RESERVA»)
+C6     : Chef's table
+A7     : 2
+B7     : Diseñar menú especial chef's table (ampliado o exclusivo)
+C7     : Cocina
+A8     : 3
+B8     : Preparar storytelling de cada pase (chef directo)
+C8     : Storytelling
+A9     : 4
+B9     : Mise en place visible: organizar estación para interacción
+C9     : Mise en place
+A10    : 5
+B10    : Verificar vajilla especial / piezas exclusivas
+C10    : Sala
+A11    : 6
+B11    : Coordinar con sumiller maridaje especial
+C11    : Maridaje
+A13    : 🎭 CHEF'S TABLE — SERVICIO
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Presentación del chef a los comensales
+C15    : Chef's table
+A16    : 2
+B16    : Interacción durante emplatado (explicar técnica en vivo)
+C16    : Chef's table
+A17    : 3
+B17    : Timing de pases adaptado al ritmo de la mesa
+C17    : Chef's table
+A18    : 4
+B18    : Ofrecer bocados extra / fuera de carta (sorpresa del chef)
+C18    : Chef's table
+A19    : 5
+B19    : Fotografía de la experiencia (con permiso del comensal)
+C19    : Fotografía
+A20    : 6
+B20    : Despedida personalizada del chef
+C20    : Chef's table
+B21    : Tareas completadas:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Tarea",E6:E20,"✓")   → caché 0.0
+D21    : de
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Tarea")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Firma responsable: _________________  Fecha: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G20 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Pop-ups» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Pop-ups y Eventos Externos
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🚐 POP-UP — LOGÍSTICA
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Seleccionar ubicación y verificar instalaciones (agua, luz, gas)
+C6     : Eventos
+A7     : 2
+B7     : Lista de equipamiento portátil necesario
+C7     : Eventos
+A8     : 3
+B8     : Transporte de equipamiento y producto
+C8     : Eventos
+A9     : 4
+B9     : Mise en place adaptada a las limitaciones del espacio
+C9     : Mise en place
+A10    : 5
+B10    : Menú adaptado al formato pop-up (simplificado pero impactante)
+C10    : Cocina
+A11    : 6
+B11    : Personal necesario: cocina + sala + logística
+C11    : Eventos
+A13    : 🎤 SHOWCOOKINGS Y DEMOSTRACIONES
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Definir tema/técnica de la demostración
+C15    : Eventos
+A16    : 2
+B16    : Preparar guion y timing (45-90 min habitual)
+C16    : Eventos
+A17    : 3
+B17    : Lista de ingredientes y equipamiento necesario
+C17    : Eventos
+A18    : 4
+B18    : Verificar instalaciones del lugar (corriente, agua, extractor)
+C18    : Eventos
+A19    : 5
+B19    : Material de apoyo (pantalla, cámara cenital, micrófono)
+C19    : Eventos
+B20    : Tareas completadas:
+C20    = =COUNTIFS(B6:B19,"?*",E6:E19,"✓")-COUNTIFS(B6:B19,"Tarea",E6:E19,"✓")   → caché 0.0
+D20    : de
+E20    = =COUNTIF(B6:B19,"?*")-COUNTIF(B6:B19,"Tarea")-COUNTIF(E6:E19,"N/A")   → caché 11.0
+A21    : Firma responsable: _________________  Fecha: ___/___/______
+A22    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G19 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Cenas Especiales» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cenas Maridaje y Cenas Privadas
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 🍷 CENAS MARIDAJE CON BODEGA INVITADA
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Contactar bodega: seleccionar vinos, condiciones
+C6     : Sumiller
+A7     : 2
+B7     : Diseñar menú que potencie cada vino del maridaje
+C7     : Cocina
+A8     : 3
+B8     : Definir precio del evento y número de plazas
+C8     : Admin
+A9     : 4
+B9     : Material de comunicación (RRSS, newsletter, web)
+C9     : RRSS
+A10    : 5
+B10    : Preparar fichas de cata para comensales
+C10    : Sumiller
+A11    : 6
+B11    : Coordinar presencia del enólogo/bodeguero en sala
+C11    : Eventos
+A13    : 📝 AL CONFIRMAR LA RESERVA (cena privada, evento o chef's table)
+A14    : #
+B14    : Tarea
+C14    : Zona
+D14    : Responsable
+E14    : ✓
+F14    : Hora
+G14    : Notas
+A15    : 1
+B15    : Alérgenos e intolerancias de TODOS los comensales por escrito (correo o formulario), nunca de palabra, y con nombre de la mesa
+C15    : Admin
+A16    : 2
+B16    : Número de comensales cerrado y fecha límite para cambios, anotada en la ficha del evento
+C16    : Admin
+A17    : 3
+B17    : Precio por comensal y qué incluye (menú, maridaje, extras, servicio, IVA) confirmado por escrito
+C17    : Admin
+A18    : 4
+B18    : Señal o anticipo cobrado y condiciones de cancelación aceptadas por escrito
+C18    : Admin
+A19    : 5
+B19    : Menú definitivo cerrado con cocina, con las alternativas de cada alérgeno ya resueltas y probadas
+C19    : Cocina
+A20    : 6
+B20    : Peticiones especiales anotadas en la ficha: dieta, celebración, decoración, tarta, horario de salida
+C20    : Eventos
+A21    : 🕯️ CENAS PRIVADAS
+A22    : #
+B22    : Tarea
+C22    : Zona
+D22    : Responsable
+E22    : ✓
+F22    : Hora
+G22    : Notas
+A23    : 1
+B23    : Producir el menú ya cerrado con el cliente: pedido específico, mise en place y prueba de los pases exclusivos de esta mesa
+C23    : Cocina
+A24    : 2
+B24    : Cotejar en el pase los alérgenos confirmados por escrito con la comanda de cada comensal
+C24    : Cocina
+A25    : 3
+B25    : Servicio exclusivo: personal asignado
+C25    : Servicio
+A26    : 4
+B26    : Decoración especial de la mesa/sala
+C26    : Sala
+A27    : 5
+B27    : Cerrar la facturación al terminar la cena: extras realmente consumidos, señal ya cobrada descontada e IVA aplicado
+C27    : Admin
+A29    : 📅 CALENDARIO ANUAL DE EVENTOS
+A30    : #
+B30    : Tarea
+C30    : Zona
+D30    : Responsable
+E30    : ✓
+F30    : Hora
+G30    : Notas
+A31    : 1
+B31    : Planificar eventos por trimestre (mín. 1/mes)
+C31    : Eventos
+A32    : 2
+B32    : Presupuesto anual de eventos especiales
+C32    : Admin
+A33    : 3
+B33    : Calendario de colaboraciones con bodegas
+C33    : Sumiller
+A34    : 4
+B34    : Calendario de pop-ups y showcookings
+C34    : Eventos
+B35    : Tareas completadas:
+C35    = =COUNTIFS(B6:B34,"?*",E6:E34,"✓")-COUNTIFS(B6:B34,"Tarea",E6:E34,"✓")   → caché 0.0
+D35    : de
+E35    = =COUNTIF(B6:B34,"?*")-COUNTIF(B6:B34,"Tarea")-COUNTIF(E6:E34,"N/A")   → caché 21.0
+A36    : Firma responsable: _________________  Fecha: ___/___/______
+A37    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E15 E16 E17 E18 E19 E20 E23 E24 E25 E26 E27 E31 E32 E33 E34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G34 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 08-fotografia-storytelling.xlsx
+# docProps: title='08 · Fotografía, RRSS y Storytelling · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 08 · Fotografía, RRSS y Storytelling
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Fotografía cada plato nuevo ANTES de incluirlo en carta.
+B6     : ▸ Mantén un calendario editorial de RRSS constante.
+B7     : ▸ El storytelling es parte del producto: documéntalo.
+B8     : ▸ Gestiona la relación con prensa y guías gastronómicas.
+B10    : Frecuencia recomendada:
+B11    : ▸ 4-7 posts/semana en feed (Instagram/TikTok).
+B12    : ▸ 2-3 Stories diarias (behind the scenes).
+B13    : ▸ 1 Reel/TikTok semanal (proceso creativo).
+B15    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B16    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Fotografía Platos» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Sesión de Fotografía de Platos
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 📸 SESIÓN FOTOGRÁFICA — CADA PLATO NUEVO
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Preparar emplatado perfecto según plating bible
+C6     : Emplatado
+A7     : 2
+B7     : Foto cenital (90°) con iluminación controlada
+C7     : Fotografía
+A8     : 3
+B8     : Foto ángulo 45° (la más usada en RRSS)
+C8     : Fotografía
+A9     : 4
+B9     : Foto detalle / macro (textura, corte, acabado)
+C9     : Fotografía
+A10    : 5
+B10    : Foto de corte / interior (si aplica)
+C10    : Fotografía
+A11    : 6
+B11    : Verificar fondos y props (plato de autor, mantel, cubiertos)
+C11    : Fotografía
+A12    : 7
+B12    : Edición y retoque (brillo, contraste, color consistente)
+C12    : Fotografía
+A13    : 8
+B13    : Guardar en carpeta organizada por plato y temporada
+C13    : Fotografía
+A15    : 📱 KIT FOTOGRAFÍA — ESTÁNDARES
+A16    : #
+B16    : Tarea
+C16    : Zona
+D16    : Responsable
+E16    : ✓
+F16    : Hora
+G16    : Notas
+A17    : 1
+B17    : Ángulos definidos para el restaurante (cenital, 45°, lateral)
+C17    : Fotografía
+A18    : 2
+B18    : Iluminación: natural o softbox, dirección consistente
+C18    : Fotografía
+A19    : 3
+B19    : Fondos: madera oscura, piedra, tela según estilo del restaurante
+C19    : Fotografía
+A20    : 4
+B20    : Props: vajilla de autor, cubiertos, cristalería, vegetales
+C20    : Fotografía
+B21    : Tareas completadas:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Tarea",E6:E20,"✓")   → caché 0.0
+D21    : de
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Tarea")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Firma responsable: _________________  Fecha: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E13 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G20 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «RRSS» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Calendario Editorial y RRSS
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 📅 CALENDARIO EDITORIAL SEMANAL
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Lunes: post de plato de la carta (foto profesional)
+C6     : RRSS
+A7     : 2
+B7     : Martes: Story behind the scenes (cocina, I+D)
+C7     : RRSS
+A8     : 3
+B8     : Miércoles: Reel / TikTok (proceso creativo, emplatado)
+C8     : RRSS
+A9     : 4
+B9     : Jueves: Story del equipo / proveedor
+C9     : RRSS
+A10    : 5
+B10    : Viernes: post de preparación del fin de semana
+C10    : RRSS
+A11    : 6
+B11    : Sábado: Stories de servicio en directo
+C11    : RRSS
+A12    : 7
+B12    : Domingo: post de inspiración / filosofía del chef
+C12    : RRSS
+A14    : 🎬 CONTENIDO BEHIND-THE-SCENES
+A15    : #
+B15    : Tarea
+C15    : Zona
+D15    : Responsable
+E15    : ✓
+F15    : Hora
+G15    : Notas
+A16    : 1
+B16    : Sesión I+D filmada (proceso de creación de plato)
+C16    : RRSS
+A17    : 2
+B17    : Emplatado en detalle (cámara cenital de pase)
+C17    : RRSS
+A18    : 3
+B18    : Visita a proveedor (mercado, huerta, pescadería)
+C18    : RRSS
+A19    : 4
+B19    : Equipo: presentar a cada miembro de la brigada
+C19    : RRSS
+A20    : 5
+B20    : Técnica explicada (sous-vide, fermentación, esferificación)
+C20    : RRSS
+B21    : Tareas completadas:
+C21    = =COUNTIFS(B6:B20,"?*",E6:E20,"✓")-COUNTIFS(B6:B20,"Tarea",E6:E20,"✓")   → caché 0.0
+D21    : de
+E21    = =COUNTIF(B6:B20,"?*")-COUNTIF(B6:B20,"Tarea")-COUNTIF(E6:E20,"N/A")   → caché 12.0
+A22    : Firma responsable: _________________  Fecha: ___/___/______
+A23    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E11 E12 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G20 · expression  · fórmula=['$E6="✓"'] · texto=None
+
+=== Hoja «Prensa-Guías» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Prensa y Guías Gastronómicas
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 📰 NARRATIVA Y STORYTELLING
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Narrativa de cada plato documentada (para carta, web, sala)
+C6     : Storytelling
+A7     : 2
+B7     : Historia del restaurante actualizada (para prensa)
+C7     : Marketing
+A8     : 3
+B8     : Biografía del chef actualizada
+C8     : Marketing
+A9     : 4
+B9     : Filosofía culinaria en 3-5 frases (para comunicación)
+C9     : Marketing
+A11    : ⭐ GESTIÓN DE RESEÑAS Y PRENSA
+A12    : #
+B12    : Tarea
+C12    : Zona
+D12    : Responsable
+E12    : ✓
+F12    : Hora
+G12    : Notas
+A13    : 1
+B13    : Monitorizar reseñas Google, TripAdvisor, TheFork
+C13    : RRSS
+A14    : 2
+B14    : Responder reseñas (positivas y negativas) en 24-48h
+C14    : RRSS
+A15    : 3
+B15    : Gestión de prensa gastronómica (notas, invitaciones)
+C15    : Prensa
+A16    : 4
+B16    : Material para guías: Michelin, Repsol, 50 Best, OAD
+C16    : Prensa
+A17    : 5
+B17    : Dossier de prensa actualizado (fotos, textos, hitos)
+C17    : Prensa
+A18    : 6
+B18    : Gestión de influencers y food bloggers (invitaciones)
+C18    : RRSS
+B19    : Tareas completadas:
+C19    = =COUNTIFS(B6:B18,"?*",E6:E18,"✓")-COUNTIFS(B6:B18,"Tarea",E6:E18,"✓")   → caché 0.0
+D19    : de
+E19    = =COUNTIF(B6:B18,"?*")-COUNTIF(B6:B18,"Tarea")-COUNTIF(E6:E18,"N/A")   → caché 10.0
+A20    : Firma responsable: _________________  Fecha: ___/___/______
+A21    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E13 E14 E15 E16 E17 E18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G18 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# 09-plantilla-personalizable.xlsx
+# docProps: title='09 · Plantilla Personalizable · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : 09 · Plantilla Personalizable
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Usa estas tres hojas para montar tus propios checklists: cada una trae tres filas de ejemplo que puedes reescribir o borrar.
+B6     : ▸ Copia la estructura de cualquier otro archivo del kit.
+B7     : ▸ Añade tareas específicas de tu restaurante creativo.
+B8     : ▸ Cada plantilla va por un eje distinto (A franja horaria · B partida · C perfil): el detalle, más abajo.
+B10    : Ideas de uso:
+B11    : ▸ Checklist de cambio de carta estacional
+B12    : ▸ Protocolo de visita de inspección o guía
+B13    : ▸ Tareas específicas de un evento puntual
+B15    : Cada plantilla tiene su propio eje:
+B16    : ▸ Plantilla A — POR FRANJA HORARIA: una fila por momento del día (mise en place de mañana, pase y cierre). Es la que se imprime y se cuelga en el pase.
+B17    : ▸ Plantilla B — POR PARTIDA: una fila por partida (I+D, frío, caliente y pastelería). Reparte el trabajo del menú entre quien lo ejecuta.
+B18    : ▸ Plantilla C — POR PERFIL: una fila por persona (jefe de cocina, jefe de partida, sumiller y jefe de sala), con el perfil escrito en la columna «Responsable».
+B19    : ▸ Los ejemplos cubren tres valores de cada eje; el cuarto de B (pastelería) y el de C (jefe de partida) los escribes tú en la primera fila verde libre.
+B21    : Las tres filas de ejemplo:
+B22    : ▸ Cada plantilla arranca con tres filas de EJEMPLO en gris y en cursiva: están para enseñarte el nivel de detalle que funciona, no para hacerlas. Escribe encima o bórralas.
+B23    : ▸ Van marcadas «N/A» a propósito, que es como no cuentan en «Tareas completadas». Si escribes tu tarea sobre una de ellas, cambia esa marca o la fila seguirá sin sumar.
+B24    : ▸ El vocabulario es el de esta casa (menú degustación, mise en place, pase, partidas, maridaje): cámbialo por el tuyo.
+B26    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B27    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Plantilla A» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla Personalizable A — Por Franja Horaria
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : ✓
+F4     : Hora
+G4     : Notas
+A5     : 1
+B5     : Ejemplo — MISE EN PLACE DE MAÑANA (escribe encima o borra la fila): sacar las pre-elaboraciones del día y cotejarlas con el pase del menú degustación
+C5     : Mise en place
+E5     : N/A
+A6     : 2
+B6     : Ejemplo — PASE (escribe encima o borra la fila): briefing con la brigada antes del primer pase — comensales, alérgenos y storytelling
+C6     : Pase
+E6     : N/A
+A7     : 3
+B7     : Ejemplo — CIERRE (escribe encima o borra la fila): anotar las mermas del día (producto, cantidad y motivo) y cerrar cámaras y pase
+C7     : Cocina
+E7     : N/A
+B30    : Tareas completadas:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Tarea",E5:E29,"✓")   → caché 0.0
+D30    : de
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Tarea")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Plantilla B» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla Personalizable B — Por Partida
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : ✓
+F4     : Hora
+G4     : Notas
+A5     : 1
+B5     : Ejemplo — PARTIDA DE I+D (escribe encima o borra la fila): cerrar la ficha del plato nuevo — pases, orden en el menú y tiempos
+C5     : I+D
+E5     : N/A
+A6     : 2
+B6     : Ejemplo — PARTIDA DE FRÍO (escribe encima o borra la fila): repasar encurtidos, fermentados y flores comestibles del menú
+C6     : Frío
+E6     : N/A
+A7     : 3
+B7     : Ejemplo — PARTIDA DE CALIENTE (escribe encima o borra la fila): baños térmicos, fondos y salsas a punto antes del primer pase
+C7     : Caliente
+E7     : N/A
+B30    : Tareas completadas:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Tarea",E5:E29,"✓")   → caché 0.0
+D30    : de
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Tarea")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Plantilla C» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla Personalizable C — Por Perfil
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : ✓
+F4     : Hora
+G4     : Notas
+A5     : 1
+B5     : Ejemplo — JEFE DE COCINA (escribe encima o borra la fila): validar escandallo y ficha del plato nuevo antes de que entre en el menú
+C5     : Cocina
+D5     : Jefe de cocina
+E5     : N/A
+A6     : 2
+B6     : Ejemplo — SUMILLER (escribe encima o borra la fila): repasar el maridaje pase a pase y las botellas abiertas (nivel y fecha)
+C6     : Bodega
+D6     : Sumiller
+E6     : N/A
+A7     : 3
+B7     : Ejemplo — JEFE DE SALA (escribe encima o borra la fila): repartir rangos y repasar alérgenos por mesa con la brigada de sala
+C7     : Sala
+D7     : Jefe de sala
+E7     : N/A
+B30    : Tareas completadas:
+C30    = =COUNTIFS(B5:B29,"?*",E5:E29,"✓")-COUNTIFS(B5:B29,"Tarea",E5:E29,"✓")   → caché 0.0
+D30    : de
+E30    = =COUNTIF(B5:B29,"?*")-COUNTIF(B5:B29,"Tarea")-COUNTIF(E5:E29,"N/A")   → caché 0.0
+A31    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E24 E25 E26 E27 E28 E29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A5:G29 · expression  · fórmula=['$E5="✓"'] · texto=None
+####################################################################################################
+# 10-apertura-cierre-negocio.xlsx
+# docProps: title='Apertura y Cierre del Negocio — Restaurante Creativo / De Autor · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$45 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre del Negocio — Restaurante Creativo
+B4     : Qué resuelve
+B6     : ▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.
+B8     : Cómo usar
+B10    : ▸ Imprime la hoja del turno (apertura o cierre) o úsala en tablet; el responsable reparte y cada persona firma su tarea.
+B11    : ▸ Cada tarea trae Responsable y Hora Límite precargados con el criterio del kit: ajústalos a tu horario real, son celdas verdes.
+B13    : Celdas editables
+B15    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma y Notas.
+B17    : Cómo cuenta el contador
+B19    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B20    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B21    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B23    : Filas libres
+B25    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B26    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B28    : Protección de la hoja
+B30    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B31    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B33    : Se conecta con
+B35    : ▸ 10-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B36    : ▸ 11-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B37    : ▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.
+B38    : ▸ Estás en 10-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 11-apertura-cierre-caja.xlsx.
+B40    : — Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro
+B42    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B43    : Contacto: info@aichef.pro
+B45    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Apertura del Negocio» · protegida=True · área='Apertura del Negocio'!$A$1:$H$31 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura del Negocio — Restaurante Creativo / De Autor
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Desactivar alarma del local
+C5     : Acceso
+D5     : Encargado
+E5     : 07:00
+A6     : 2
+B6     : Encender luces generales (interior y exterior)
+C6     : General
+D6     : Encargado
+E6     : 07:00
+A7     : 3
+B7     : Encender climatización (HVAC) / calefacción según temporada
+C7     : General
+D7     : Encargado
+E7     : 07:00
+A8     : 4
+B8     : Abrir persianas / puerta principal
+C8     : Acceso
+D8     : Encargado
+E8     : 07:00
+A9     : 5
+B9     : Montar señalización exterior / pizarra de menú
+C9     : Exterior
+D9     : Encargado
+E9     : 07:00
+A10    : 6
+B10    : Encender TPV / POS / datáfono
+C10    : Caja
+D10    : Encargado
+E10    : 07:00
+A11    : 7
+B11    : Encender sistema de reservas / tablet de pedidos
+C11    : Recepción
+D11    : Encargado
+E11    : 07:15
+A12    : 8
+B12    : Poner música ambiente al volumen adecuado
+C12    : General
+D12    : Encargado
+E12    : 07:15
+A13    : 9
+B13    : Revisar reservas del día y eventos especiales
+C13    : Recepción
+D13    : Encargado
+E13    : 07:15
+A14    : 10
+B14    : Comprobar baños: papel, jabón, limpieza, ambientador
+C14    : Baños
+D14    : Encargado
+E14    : 07:15
+A15    : 11
+B15    : Verificar limpieza de zonas comunes (entrada, pasillos)
+C15    : Zonas comunes
+D15    : Encargado
+E15    : 07:15
+A16    : 12
+B16    : Revisar estado del mobiliario (sillas, mesas, iluminación)
+C16    : Sala
+D16    : Encargado
+E16    : 07:15
+A17    : 13
+B17    : Montar terraza si aplica (mesas, sillas, sombrillas/estufas)
+C17    : Terraza
+D17    : Encargado
+E17    : 07:30
+A18    : 14
+B18    : Comprobar que las cartas/menús están en orden
+C18    : Sala
+D18    : Encargado
+E18    : 07:30
+A19    : 15
+B19    : Encender displays / pantallas informativas si las hay
+C19    : General
+D19    : Encargado
+E19    : 07:30
+A20    : 16
+B20    : Comprobar mise en place de sala (flores, decoración)
+C20    : Sala
+D20    : Encargado
+E20    : 07:30
+A21    : 17
+B21    : Verificar carta de vinos actualizada
+C21    : Sala
+D21    : Encargado
+E21    : 07:30
+A22    : 18
+B22    : Briefing de sala: menú degustación del día
+C22    : Sala
+D22    : Encargado
+E22    : 07:30
+A29    : Tareas completadas:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : de
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 18.0
+A30    : Firma del responsable: _________________________     Hora de finalización: ________
+A31    : — Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre del Negocio» · protegida=True · área='Cierre del Negocio'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre del Negocio — Restaurante Creativo / De Autor
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Apagar música ambiente
+C5     : General
+D5     : Encargado
+E5     : Cierre
+A6     : 2
+B6     : Verificar que no quedan clientes en el local
+C6     : Sala
+D6     : Encargado
+E6     : Cierre
+A7     : 3
+B7     : Limpiar y recoger terraza si aplica
+C7     : Terraza
+D7     : Encargado
+E7     : Cierre
+A8     : 4
+B8     : Apagar TPV / POS / datáfono (o dejar en standby)
+C8     : Caja
+D8     : Encargado
+E8     : Cierre
+A9     : 5
+B9     : Cerrar persianas y puertas
+C9     : Acceso
+D9     : Encargado
+E9     : Cierre
+A10    : 6
+B10    : Apagar luces (dejar mínimas de seguridad)
+C10    : General
+D10    : Encargado
+E10    : Cierre
+A11    : 7
+B11    : Apagar climatización
+C11    : General
+D11    : Encargado
+E11    : Cierre
+A12    : 8
+B12    : Recoger señalización exterior
+C12    : Exterior
+D12    : Encargado
+E12    : Cierre
+A13    : 9
+B13    : Comprobar que ventanas están cerradas
+C13    : General
+D13    : Encargado
+E13    : Cierre
+A14    : 10
+B14    : Vaciar papeleras de zonas comunes y baños
+C14    : Baños
+D14    : Encargado
+E14    : Cierre
+A15    : 11
+B15    : Revisión final de seguridad (gas, agua, enchufes)
+C15    : General
+D15    : Encargado
+E15    : Cierre
+A16    : 12
+B16    : Activar alarma
+C16    : Acceso
+D16    : Encargado
+E16    : Cierre
+A17    : 13
+B17    : Cerrar con llave y verificar cierre
+C17    : Acceso
+D17    : Último en salir
+E17    : Cierre
+A18    : 14
+B18    : Retirar decoración fresca de mesas
+C18    : Sala
+D18    : Último en salir
+E18    : Cierre
+A19    : 15
+B19    : Actualizar carta de vinos si hubo cambios
+C19    : Sala
+D19    : Último en salir
+E19    : Cierre
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Firma del responsable: _________________________     Hora de finalización: ________
+A28    : — Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 11-apertura-cierre-caja.xlsx
+# docProps: title='Apertura y Cierre de Caja — Restaurante Creativo / De Autor · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$56 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre de Caja — Restaurante Creativo
+B4     : Qué resuelve
+B6     : ▸ El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre — y el registro mensual para ver de un vistazo qué días no cuadraron.
+B8     : Cómo usar — Apertura de Caja
+B10    : ▸ Cuenta el fondo y escribe el importe en la celda VERDE «Fondo de caja inicial (€)». De ahí lo lee el cierre: no hay que volver a teclearlo.
+B12    : Cómo usar — Cierre de Caja
+B14    : ▸ En «Recuento de Efectivo por Denominación» rellena SOLO la columna «Cantidad» (número de billetes o monedas, entero): el subtotal y el TOTAL EFECTIVO se calculan solos.
+B15    : ▸ En el «Resumen de Cierre» sólo escribes tres cifras: Total Tarjetas, Total Otros y la Z del TPV. Lo demás es fórmula.
+B16    : ▸ El fondo se descuenta solo: TOTAL FACTURADO = (efectivo contado − fondo) + tarjetas + otros.
+B17    : ▸ DESCUADRE = TOTAL FACTURADO − Z del TPV. Si la casilla se pone ÁMBAR, la caja no cuadra: revísalo ANTES de firmar.
+B19    : Registro Mensual
+B21    : ▸ Una fila por día: escribe fondo, ventas por medio de pago, Z del TPV y depósito; el Total Facturado y el Descuadre se calculan solos y el descuadre se pone ámbar.
+B22    : ▸ El fondo de caja es un saldo, no una venta: la fila TOTALES muestra el fondo MEDIO de los días anotados, no su suma.
+B24    : Celdas editables
+B26    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma, Notas, las cantidades del recuento y los importes del resumen.
+B28    : Cómo cuenta el contador
+B30    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B31    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B32    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B34    : Filas libres
+B36    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B37    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B39    : Protección de la hoja
+B41    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B42    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B44    : Se conecta con
+B46    : ▸ 10-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B47    : ▸ 11-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B48    : ▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.
+B49    : ▸ Estás en 11-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 10-apertura-cierre-negocio.xlsx.
+B51    : — Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro
+B53    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B54    : Contacto: info@aichef.pro
+B56    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Apertura de Caja» · protegida=True · área='Apertura de Caja'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura de Caja — Restaurante Creativo / De Autor
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Hora Límite
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Verificar fondo de caja del día anterior
+C5     : Responsable de caja
+D5     : 07:15
+A6     : 2
+B6     : Contar fondo de caja inicial
+C6     : Responsable de caja
+D6     : 07:15
+A7     : 3
+B7     : Anotar el fondo de caja en la celda verde de abajo
+C7     : Responsable de caja
+D7     : 07:15
+A8     : 4
+B8     : Verificar cambio suficiente (monedas, billetes pequeños)
+C8     : Responsable de caja
+D8     : 07:15
+A9     : 5
+B9     : Comprobar que el TPV está encendido y abrir turno de caja
+C9     : Responsable de caja
+D9     : 07:30
+A10    : 6
+B10    : Imprimir X de apertura (informe de inicio)
+C10    : Responsable de caja
+D10    : 07:30
+A11    : 7
+B11    : Comprobar rollo de papel de ticket
+C11    : Responsable de caja
+D11    : 07:30
+A12    : 8
+B12    : Verificar datáfono operativo
+C12    : Responsable de caja
+D12    : 07:30
+A13    : 9
+B13    : Verificar conexión de pasarela de pago
+C13    : Responsable de caja
+D13    : 07:45
+A14    : 10
+B14    : Anotar incidencias del turno anterior
+C14    : Responsable de caja
+D14    : 07:45
+A15    : 11
+B15    : Firma del responsable de apertura
+C15    : Responsable de caja
+D15    : 07:45
+A22    : Tareas completadas:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : de
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Fondo de caja inicial (€)
+C23    : 0
+D23    : Se descuenta del efectivo en el Cierre de Caja
+A25    : Firma del responsable: _________________________     Hora: ________
+A26    : — Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cierre de Caja» · protegida=True · área='Cierre de Caja'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre de Caja — Restaurante Creativo / De Autor
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Cuándo
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Imprimir Z de cierre (informe final del día)
+C5     : Responsable de caja
+D5     : Cierre
+A6     : 2
+B6     : Recuento de efectivo por denominación (ver tabla inferior)
+C6     : Responsable de caja
+D6     : Cierre
+A7     : 3
+B7     : Calcular total efectivo
+C7     : Responsable de caja
+D7     : Cierre
+A8     : 4
+B8     : Anotar total tarjetas (Visa/Mastercard)
+C8     : Responsable de caja
+D8     : Cierre
+A9     : 5
+B9     : Anotar otros medios (Bizum, vales, invitaciones)
+C9     : Responsable de caja
+D9     : Cierre
+A10    : 6
+B10    : Total facturado = efectivo contado − fondo + tarjetas + otros
+C10    : Responsable de caja
+D10    : Cierre
+A11    : 7
+B11    : Comparar con Z del TPV → calcular diferencia/descuadre
+C11    : Responsable de caja
+D11    : Cierre
+A12    : 8
+B12    : Registrar devoluciones del día
+C12    : Responsable de caja
+D12    : Cierre
+A13    : 9
+B13    : Registrar anulaciones del día
+C13    : Responsable de caja
+D13    : Cierre
+A14    : 10
+B14    : Separar fondo de caja para mañana
+C14    : Responsable de caja
+D14    : Cierre
+A15    : 11
+B15    : Preparar depósito bancario / guardar en caja fuerte
+C15    : Responsable de caja
+D15    : Cierre
+A16    : 12
+B16    : Firma del responsable de cierre
+C16    : Responsable de caja
+D16    : Cierre
+A23    : Tareas completadas:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : de
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Recuento de Efectivo por Denominación
+A25    : Denominación
+B25    : Cantidad
+C25    : Subtotal (€)
+A26    : BILLETES
+A27    : 500 €
+B27    : 0
+C27    = =B27*500   → caché 0.0
+A28    : 200 €
+B28    : 0
+C28    = =B28*200   → caché 0.0
+A29    : 100 €
+B29    : 0
+C29    = =B29*100   → caché 0.0
+A30    : 50 €
+B30    : 0
+C30    = =B30*50   → caché 0.0
+A31    : 20 €
+B31    : 0
+C31    = =B31*20   → caché 0.0
+A32    : 10 €
+B32    : 0
+C32    = =B32*10   → caché 0.0
+A33    : 5 €
+B33    : 0
+C33    = =B33*5   → caché 0.0
+A34    : MONEDAS
+A35    : 2 €
+B35    : 0
+C35    = =B35*2   → caché 0.0
+A36    : 1 €
+B36    : 0
+C36    = =B36*1   → caché 0.0
+A37    : 0,50 €
+B37    : 0
+C37    = =B37*0.5   → caché 0.0
+A38    : 0,20 €
+B38    : 0
+C38    = =B38*0.2   → caché 0.0
+A39    : 0,10 €
+B39    : 0
+C39    = =B39*0.1   → caché 0.0
+A40    : 0,05 €
+B40    : 0
+C40    = =B40*0.05   → caché 0.0
+A41    : 0,02 €
+B41    : 0
+C41    = =B41*0.02   → caché 0.0
+A42    : 0,01 €
+B42    : 0
+C42    = =B42*0.01   → caché 0.0
+A43    : TOTAL EFECTIVO
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Resumen de Cierre
+A46    : Concepto
+C46    : Importe (€)
+A47    : Total Efectivo (recuento)
+C47    = =C43   → caché 0.0
+A48    : Fondo de caja inicial (−)
+C48    = =IFERROR('Apertura de Caja'!C23,0)   → caché 0.0
+A49    : Ventas en efectivo (contado − fondo)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Total Tarjetas (Visa/MC)
+C50    : 0
+A51    : Total Otros (Bizum, Vales)
+C51    : 0
+A52    : TOTAL FACTURADO
+C52    = =C49+C50+C51   → caché 0.0
+A53    : Z del TPV
+C53    : 0
+A54    : DESCUADRE
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Firma del responsable: _________________________     Hora: ________
+A57    : — Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Cantidad no válida · error=Escribe el número de billetes o monedas: un número entero y positivo, sin decimales. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Registro Mensual» · protegida=True · área='Registro Mensual'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Registro Mensual de Caja — Restaurante Creativo / De Autor
+A2     : Mes: ________________     Año: ________
+F2     : Responsable general: _________________________
+A4     : Fecha
+B4     : Fondo Apertura
+C4     : Efectivo Contado
+D4     : Ventas Tarjeta
+E4     : Ventas Otros
+F4     : Total Facturado
+G4     : Z del TPV
+H4     : Descuadre
+I4     : Depósito
+J4     : Responsable
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALES
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : «Efectivo Contado» es el recuento del cajón TAL CUAL, con el fondo dentro: el Total Facturado ya lo descuenta. En TOTALES, «Fondo Apertura» es el fondo MEDIO de los días anotados (un saldo no se suma) y «Descuadre» es el descuadre ACUMULADO en valor absoluto: un +50 y un −50 son 100 € de descuadre, no 0.
+A38    : — Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-briefing-servicio.xlsx
+# docProps: title='BONUS · Briefing Diario de Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS · Briefing Diario de Servicio
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Rellena ANTES de cada servicio (almuerzo y/o cena).
+B6     : ▸ El chef ejecutivo y el maître revisan juntos.
+B7     : ▸ Se comparte con TODO el equipo (cocina + sala).
+B8     : ▸ Es el documento central de comunicación del servicio.
+B10    : Elementos clave del briefing:
+B11    : ▸ Menú del día con posibles cambios o sustituciones.
+B12    : ▸ Alérgenos de reservas confirmadas.
+B13    : ▸ VIPs, prensa, guías, eventos especiales.
+B14    : ▸ Storytelling actualizado de cada pase.
+B16    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B17    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Briefing Servicio» · protegida=False · área= · títulos=$5:$5 · paneles=A6 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Briefing Diario Pre-Servicio
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : 📋 MENÚ Y CAMBIOS DEL DÍA
+A5     : #
+B5     : Tarea
+C5     : Zona
+D5     : Responsable
+E5     : ✓
+F5     : Hora
+G5     : Notas
+A6     : 1
+B6     : Menú degustación del día: confirmar todos los pases
+C6     : Cocina
+A7     : 2
+B7     : Cambios o sustituciones respecto al día anterior
+C7     : Cocina
+A8     : 3
+B8     : Platos en prueba (I+D) que se sirven hoy (si aplica)
+C8     : I+D
+A9     : 4
+B9     : Disponibilidad de producto: confirmado todo el stock
+C9     : Stock
+A10    : 5
+B10    : Platos con producción limitada (indicar máximo de raciones)
+C10    : Cocina
+A12    : ⚠️ ALÉRGENOS Y RESTRICCIONES
+A13    : #
+B13    : Tarea
+C13    : Zona
+D13    : Responsable
+E13    : ✓
+F13    : Hora
+G13    : Notas
+A14    : 1
+B14    : Revisar reservas: listar alérgenos por mesa
+C14    : Maître
+A15    : 2
+B15    : Identificar mesas con restricciones especiales (vegano, halal, etc.)
+C15    : Maître
+A16    : 3
+B16    : Preparar alternativas para mesas con alérgenos
+C16    : Cocina
+A17    : 4
+B17    : Comunicar al equipo de sala cada restricción por mesa
+C17    : Sala
+A19    : ⭐ VIPs, PRENSA Y EVENTOS
+A20    : #
+B20    : Tarea
+C20    : Zona
+D20    : Responsable
+E20    : ✓
+F20    : Hora
+G20    : Notas
+A21    : 1
+B21    : Identificar VIPs del día (nombre, mesa, preferencias)
+C21    : Maître
+A22    : 2
+B22    : Prensa/guías/influencers: protocolo de atención
+C22    : Maître
+A23    : 3
+B23    : Chef's table hoy: confirmar menú, timing, storytelling
+C23    : Chef's table
+A24    : 4
+B24    : Cena privada / evento especial: detalles confirmados
+C24    : Eventos
+A26    : 🍷 MARIDAJE Y STORYTELLING
+A27    : #
+B27    : Tarea
+C27    : Zona
+D27    : Responsable
+E27    : ✓
+F27    : Hora
+G27    : Notas
+A28    : 1
+B28    : Maridaje del día confirmado por el sumiller
+C28    : Maridaje
+A29    : 2
+B29    : Cambios en maridaje respecto al día anterior
+C29    : Sumiller
+A30    : 3
+B30    : Storytelling de cada pase: repaso con equipo de sala
+C30    : Storytelling
+A31    : 4
+B31    : Datos del vino/bodega del día para conversación con comensal
+C31    : Sumiller
+A33    : 🧪 PLATOS EN PRUEBA / I+D
+A34    : #
+B34    : Tarea
+C34    : Zona
+D34    : Responsable
+E34    : ✓
+F34    : Hora
+G34    : Notas
+A35    : 1
+B35    : Plato en prueba hoy (si se ofrece a mesa seleccionada)
+C35    : I+D
+A36    : 2
+B36    : Feedback a recoger: sabor, textura, presentación, opinión
+C36    : I+D
+A37    : 3
+B37    : Responsable de recoger feedback de sala
+C37    : Sala
+B38    : Tareas completadas:
+C38    = =COUNTIFS(B6:B37,"?*",E6:E37,"✓")-COUNTIFS(B6:B37,"Tarea",E6:E37,"✓")   → caché 0.0
+D38    : de
+E38    = =COUNTIF(B6:B37,"?*")-COUNTIF(B6:B37,"Tarea")-COUNTIF(E6:E37,"N/A")   → caché 20.0
+A39    : Firma responsable: _________________  Fecha: ___/___/______
+A40    : © 2026 AI Chef Pro · aichef.pro
+DV E6 E7 E8 E9 E10 E14 E15 E16 E17 E21 E22 E23 E24 E28 E29 E30 E31 E35 E36 E37 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=Marca ✓ si completada
+CF A6:G37 · expression  · fórmula=['$E6="✓"'] · texto=None
+####################################################################################################
+# BONUS-02-calendario-anual.xlsx
+# docProps: title='BONUS · Calendario Anual — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor' · subject='Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0' · keywords='kit tareas restaurante creativo, AI Chef Pro' · description='aichef.pro/kit-tareas-restaurante-creativo' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área= · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS · Calendario Anual — Restaurante Creativo
+B4     : Cómo usar esta plantilla:
+B5     : ▸ Planifica el año completo con cambios estacionales de carta.
+B6     : ▸ Identifica fechas clave para menús especiales.
+B7     : ▸ Coordina participación en festivales gastronómicos.
+B8     : ▸ Anticipa la preparación con timeline suficiente.
+B10    : Cambios de carta recomendados:
+B11    : ▸ 4 cambios estacionales principales.
+B12    : ▸ Rotación parcial mensual (2-3 platos).
+B13    : ▸ Menús especiales para fechas señaladas.
+B15    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B16    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-restaurante-creativo · info@aichef.pro
+
+=== Hoja «Calendario Anual» · protegida=False · área= · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Calendario Anual — Restaurante Creativo / De Autor
+A2     : AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor
+A4     : Mes
+B4     : Acciones clave / Fechas señaladas
+C4     : Producto estrella
+D4     : Demanda
+E4     : ✓
+F4     : Notas
+A5     : Enero
+B5     : Carta de invierno consolidada. Trufa negra (temporada alta). Caza menor. Menú especial Año Nuevo (1 ene). Planificación anual de eventos.
+C5     : Trufa negra, caza, tubérculos
+D5     : Media
+A6     : Febrero
+B6     : San Valentín: menú especial degustación parejas. Trufa negra (última fase). Cítricos de temporada. Prep. cambio carta primavera.
+C6     : Trufa, cítricos, alcachofas
+D6     : Alta
+A7     : Marzo
+B7     : CAMBIO CARTA PRIMAVERA. Espárragos, guisantes, habas. Sesiones I+D nuevos platos primavera. 19 mar — Día del Padre: mediodía familiar, menú especial. Festival gastronómico local (revisar).
+C7     : Espárragos, guisantes, cordero
+D7     : Media
+A8     : Abril
+B8     : Carta primavera rodada. Semana Santa: aforo alto, menú especial. Arranca la temporada de comuniones (abr-jun): grupos familiares de mediodía, menú cerrado y reserva con antelación. Alcachofas, flores comestibles. Preparar pop-up de temporada.
+C8     : Alcachofas, flores, fresas
+D8     : Alta
+A9     : Mayo
+B9     : Comuniones en plena temporada + Día de la Madre (1.er domingo): dos de los mediodías más llenos del año. Cerezas, fresas, nísperos. Espárragos trigueros. Atún rojo (inicio temporada). Preparar cambio carta verano.
+C9     : Atún rojo, cerezas, espárragos
+D9     : Alta
+A10    : Junio
+B10    : CAMBIO CARTA VERANO. Últimas comuniones del año. Tomates de temporada, melocotón, albaricoque. Gazpachos y sopas frías de autor. Terraza / cenas al aire libre.
+C10    : Tomate, melocotón, gambas
+D10    : Alta
+A11    : Julio
+B11    : Carta de verano consolidada. Higos, melón, sandía. Maridaje con vinos frescos y rosados. Turismo gastronómico: aforo alto.
+C11    : Higos, sandía, pescados azules
+D11    : Alta
+A12    : Agosto
+B12    : Verano alta ocupación. 15 ago (Asunción): festivo nacional, aforo alto y plantilla de vacaciones — cierra los turnos con semanas de antelación. Pimientos, berenjenas, calabacín. Helados de autor (producción extra). Prep. cambio carta otoño.
+C12    : Pimiento, berenjena, helados
+D12    : Alta
+A13    : Septiembre
+B13    : CAMBIO CARTA OTOÑO. Setas silvestres (inicio temporada). Uvas, higos tardíos. Cenas maridaje vendimia con bodegas.
+C13    : Setas, uvas, higos
+D13    : Alta
+A14    : Octubre
+B14    : Temporada plena de setas (boletus, rebozuelo, trompeta). Calabaza, boniato. Castañas. Festival gastronómico otoño.
+C14    : Setas, calabaza, castañas
+D14    : Alta
+A15    : Noviembre
+B15    : 1 nov (Todos los Santos): puente y aforo alto. Trufa negra (inicio temporada). Caza mayor y menor. Prep. menús Navidad. Reservas navideñas abiertas.
+C15    : Trufa, caza, raíces
+D15    : Media
+A16    : Diciembre
+B16    : CAMBIO CARTA INVIERNO. Puente 6-8 dic (Constitución e Inmaculada): tres días seguidos de aforo alto, justo antes de las comidas de empresa. Menús Navidad, Nochebuena, Nochevieja. Trufa, foie, marisco, caviar. Máxima facturación del año.
+C16    : Trufa, foie, marisco, caviar
+D16    : Alta
+A18    : © 2026 AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None

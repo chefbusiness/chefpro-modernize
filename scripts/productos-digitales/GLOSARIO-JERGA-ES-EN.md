@@ -235,6 +235,20 @@ barra de salsas → **salsa bar** · salsa macha → **salsa macha** (peanuts an
 precinto → **tamper-evident seal** · Día de Reyes → **Three Kings Day** (rosca de Reyes) · Día de Muertos → **Day of the Dead** ·
 Grito → **the Grito / Mexican Independence Day** · Virgen de Guadalupe → **Our Lady of Guadalupe** · nuez de Castilla → **fresh walnuts**.
 
+## Food truck (Food Truck Checklists Kit Pro, F1 31-oct-2026; fuentes en `checklists-kit/foodtruck/SPEC.md` §3 y `business-plans-en/F1-research-us.md` §5)
+
+Estado: DataForSEO US y SERP (31-oct) + lo que fija `foodtruck/mapas_foodtruck.py`. setup / teardown → **setup / teardown**
+(breakdown) · antes de salir → **pre-trip** (check / inspection) · cocina base → **commissary** (commissary agreement, commissary
+log; «servicing area» en el FDA Food Code) · depósito de agua limpia / residual → **fresh (potable) water tank / wastewater (gray
+water) tank** · bombona → **propane cylinder (tank)** (nunca «butane») · generador → **generator** · toldo / señalética → **awning /
+signage** · calzos → **wheel chocks** · venta ambulante → **mobile vending license** (por ciudad) · registro sanitario →
+**mobile food unit (health) permit** + plan review · permiso del evento → **temporary food event permit** · seguro RC →
+**general liability** + **COI** (additional insured) · ITV → no existe: **DMV registration** (+ CDL solo ≥ 26,001 lb GVWR) · TPV
+/ datáfono / cambio → **POS / card reader / starting bank** · Bizum → **tap to pay** · fee de entrada → **vendor fee** · puesto de
+servicio → **window staff** (la ventanilla = **the window**) · técnico → **driver / tech** · equipo → **crew** · mercados
+gastronómicos → **food truck parks, farmers markets, night markets** · fiestas patronales → **county fairs, street fairs** ·
+punto limpio → **commissary / approved disposal**; nunca al **storm drain** · test de polares → **TPM tester**.
+
 ## Equivalencias por país (US · UK · CA · AU)
 
 > 13-oct-2026 (sesión Claude Code, PR #126). Decisión de John: la tienda EN escribe en inglés US, y UK (2.º mercado en

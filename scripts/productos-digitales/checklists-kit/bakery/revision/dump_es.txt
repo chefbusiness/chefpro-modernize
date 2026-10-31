@@ -1,0 +1,861 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/kit-tareas-panaderia (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-apertura-cierre-panaderia.xlsx
+# docProps: title='Apertura y Cierre (Turno Madrugada) — Panaderia · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Apertura y Cierre» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Apertura y Cierre (Turno Madrugada) — Panaderia
+A3     : Area
+B3     : Tarea
+C3     : Responsable
+D3     : Hora
+E3     : OK
+F3     : Observaciones
+A4     : APERTURA — Turno Madrugada (03:00-05:00)
+A5     : Obrador
+B5     : Encender hornos: camara de fermentacion, horno de piso/rotativo
+C5     : Panadero
+D5     : 03:00
+F5     : Precalentar 45-60 min
+A6     : Obrador
+B6     : Verificar masas madre: actividad, pH, temperatura
+C6     : Panadero
+D6     : 03:00
+F6     : pH optimo 3.8-4.2
+A7     : Obrador
+B7     : Pesar ingredientes segun recetas del dia (harinas, agua, sal, levadura)
+C7     : Panadero
+D7     : 03:15
+F7     : Bascula calibrada
+A8     : Obrador
+B8     : Iniciar amasado de masas base (pan de barra, hogaza, chapata)
+C8     : Panadero
+D8     : 03:30
+A9     : Obrador
+B9     : Verificar temperatura agua de amasado (segun estacion)
+C9     : Panadero
+D9     : 03:30
+F9     : Verano 4-8°C, invierno 18-22°C
+A10    : Obrador
+B10    : Control temperatura obrador (22-26°C ideal)
+C10    : Panadero
+D10    : 03:00
+A11    : Obrador
+B11    : Preparar masas especiales: brioche, croissant, pan integral
+C11    : Oficial
+D11    : 04:00
+A12    : PRODUCCION — Fermentacion y Horneado (05:00-08:00)
+A13    : Obrador
+B13    : Primera fermentacion (bulk): controlar volumen y tiempo
+C13    : Panadero
+D13    : 05:00
+F13    : Depende de masa madre/levadura
+A14    : Obrador
+B14    : Division, pesaje y formado de piezas
+C14    : Panadero
+D14    : 05:30
+F14    : Pesos estandar por tipo
+A15    : Obrador
+B15    : Segunda fermentacion en bandejas/cestos (pointage)
+C15    : Panadero
+D15    : 06:00
+A16    : Obrador
+B16    : Greñado/cortes decorativos antes de hornear
+C16    : Panadero
+D16    : 06:30
+F16    : Cuchilla afilada o lame
+A17    : Obrador
+B17    : Horneado: temperatura y tiempo segun tipo de pan
+C17    : Panadero
+D17    : 06:45
+F17    : Ver tabla de horneado
+A18    : Obrador
+B18    : Control de vapor en horno (primeros 10 min)
+C18    : Panadero
+D18    : 06:45
+F18    : Clave para corteza
+A19    : Obrador
+B19    : Enfriado en rejillas antes de embolsar/servir
+C19    : Panadero
+D19    : 07:30
+F19    : Min 30 min antes de cortar
+A20    : APERTURA TIENDA (08:00-09:00)
+A21    : Tienda
+B21    : Montar expositor de panes y bolleria
+C21    : Dependiente
+D21    : 08:00
+A22    : Tienda
+B22    : Etiquetado: alergenos (gluten, leche, huevo, soja)
+C22    : Dependiente
+D22    : 08:00
+F22    : Obligatorio
+A23    : Tienda
+B23    : Verificar stock de bolleria, empanadas, tartas
+C23    : Dependiente
+D23    : 08:15
+A24    : Tienda
+B24    : Encender caja registradora, preparar cambio
+C24    : Dependiente
+D24    : 08:30
+A25    : Tienda
+B25    : Limpiar vitrinas y superficies de venta
+C25    : Dependiente
+D25    : 08:30
+A26    : CIERRE
+A27    : Obrador
+B27    : Preparar masa madre para manana (refresco nocturno)
+C27    : Panadero
+D27    : 14:00
+A28    : Obrador
+B28    : Limpiar amasadora, mesa de trabajo, utensilios
+C28    : Ayudante
+D28    : 14:00
+A29    : Obrador
+B29    : Verificar hornos apagados y limpios
+C29    : Panadero
+D29    : 14:30
+A30    : Tienda
+B30    : Inventario pan sobrante: donacion, pan rallado, tostadas
+C30    : Dependiente
+D30    : 14:00
+A31    : Tienda
+B31    : Cierre de caja y registro de ventas
+C31    : Encargado
+D31    : 14:30
+A32    : General
+B32    : Pedido de harina y materias primas para manana
+C32    : Encargado
+D32    : 14:00
+A34    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+DV E5 E6 E7 E8 E9 E10 E11 E13 E14 E15 E16 E17 E18 E19 E21 E22 E23 E24 E25 E27 E28 E29 E30 E31 E32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F32 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 02-masas-madre-fermentacion.xlsx
+# docProps: title='Masas Madre y Fermentacion · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Masas Madre» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Masas Madre y Fermentacion
+A3     : Tipo Masa
+B3     : Tarea / Control
+C3     : Frecuencia
+D3     : Responsable
+E3     : Valor
+F3     : OK
+G3     : Notas
+A4     : MASA MADRE NATURAL (Sourdough)
+A5     : MM Natural
+B5     : Refresco diario: 1:1:1 (madre:harina:agua)
+C5     : Diario
+D5     : Panadero
+G5     : Misma hora cada dia
+A6     : MM Natural
+B6     : Control pH antes de usar (optimo 3.8-4.2)
+C6     : Pre-amasado
+D6     : Panadero
+G6     : Tiras pH o pHmetro
+A7     : MM Natural
+B7     : Control temperatura madre (24-28°C ideal)
+C7     : 2x dia
+D7     : Panadero
+A8     : MM Natural
+B8     : Test flotacion: pico de actividad = flota en agua
+C8     : Pre-amasado
+D8     : Panadero
+A9     : MM Natural
+B9     : Backup: guardar porcion en nevera (refresco semanal)
+C9     : Semanal
+D9     : Panadero
+G9     : Seguro ante perdida
+A10    : MM Natural
+B10    : Registro: fecha refresco, pH, temperatura, actividad
+C10    : Diario
+D10    : Panadero
+A11    : FERMENTACION — Controles
+A12    : Bulk
+B12    : Temperatura masa tras amasado (24-26°C objetivo)
+C12    : Cada masa
+D12    : Panadero
+A13    : Bulk
+B13    : Tiempo bulk fermentacion segun temperatura obrador
+C13    : Cada masa
+D13    : Panadero
+G13    : Mayor temp = menos tiempo
+A14    : Bulk
+B14    : Test de ventana (gluten desarrollado)
+C14    : Post-amasado
+D14    : Panadero
+A15    : Retardo
+B15    : Fermentacion en frio (3-5°C) si aplica (12-72h)
+C15    : Segun receta
+D15    : Panadero
+G15    : Mas sabor y aroma
+A16    : Final
+B16    : Segunda fermentacion (pointage): volumen +80-100%
+C16    : Pre-horneado
+D16    : Panadero
+A17    : Final
+B17    : Test del dedo: recuperacion lenta = listo para hornear
+C17    : Pre-horneado
+D17    : Panadero
+A18    : LEVADURAS COMERCIALES
+A19    : Fresca
+B19    : Almacenar a 2-4°C, verificar fecha caducidad
+C19    : Semanal
+D19    : Panadero
+G19    : 30g fresca = 10g seca
+A20    : Seca
+B20    : Almacenar en lugar seco y fresco, cerrado hermetico
+C20    : Mensual
+D20    : Panadero
+A21    : Poolish
+B21    : Preparar poolish la noche anterior (1:1 harina:agua + levadura)
+C21    : Noche antes
+D21    : Panadero
+G21    : 12-16h fermentacion
+A22    : Biga
+B22    : Preparar biga (50-60% hidratacion + levadura)
+C22    : Noche antes
+D22    : Panadero
+G22    : Mas rigida que poolish
+A24    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+DV F5 F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:G22 · expression  · fórmula=['$F4="✓"'] · texto=None
+####################################################################################################
+# 03-hornos-coccion.xlsx
+# docProps: title='Hornos y Coccion — Panaderia · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Hornos y Coccion» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Hornos y Coccion — Panaderia
+A3     : Tipo Horno
+B3     : Tarea / Control
+C3     : Frecuencia
+D3     : Responsable
+E3     : OK
+F3     : Notas
+A4     : HORNO DE PISO / SOLERA
+A5     : Piso
+B5     : Precalentar min 45-60 min antes de cargar
+C5     : Pre-produccion
+D5     : Panadero
+A6     : Piso
+B6     : Verificar temperatura solera con pirometro (220-260°C segun pan)
+C6     : Pre-horneado
+D6     : Panadero
+A7     : Piso
+B7     : Inyectar vapor al cargar (primeros 8-10 min)
+C7     : Horneado
+D7     : Panadero
+F7     : Clave para corteza
+A8     : Piso
+B8     : Abrir tiro de vapor tras 10 min para secar corteza
+C8     : Horneado
+D8     : Panadero
+A9     : Piso
+B9     : Rotar piezas a mitad de coccion si necesario
+C9     : Horneado
+D9     : Panadero
+A10    : Piso
+B10    : Limpiar solera con escoba de horno al cierre
+C10    : Post-produccion
+D10    : Ayudante
+A11    : HORNO ROTATIVO
+A12    : Rotativo
+B12    : Precalentar segun especificaciones (15-30 min)
+C12    : Pre-produccion
+D12    : Panadero
+A13    : Rotativo
+B13    : Cargar carros con bandejas distribuidas uniformemente
+C13    : Pre-horneado
+D13    : Ayudante
+A14    : Rotativo
+B14    : Programar tiempo, temperatura y vapor
+C14    : Horneado
+D14    : Panadero
+A15    : Rotativo
+B15    : Verificar rotacion uniforme del carro
+C15    : Horneado
+D15    : Panadero
+A16    : Rotativo
+B16    : Limpiar interior y bandejas al cierre
+C16    : Post-produccion
+D16    : Ayudante
+A17    : TABLA DE TEMPERATURAS Y TIEMPOS
+A18    : Barra/Baguette
+B18    : 240-250°C con vapor, 18-22 min
+C18    : Por hornada
+D18    : Panadero
+A19    : Hogaza rustica
+B19    : 230-240°C con vapor, 35-45 min
+C19    : Por hornada
+D19    : Panadero
+A20    : Chapata
+B20    : 230°C con vapor, 20-25 min
+C20    : Por hornada
+D20    : Panadero
+A21    : Pan integral
+B21    : 220-230°C, 30-40 min
+C21    : Por hornada
+D21    : Panadero
+A22    : Croissant
+B22    : 190-200°C sin vapor, 15-18 min
+C22    : Por hornada
+D22    : Panadero
+A23    : Brioche
+B23    : 180-190°C, 20-25 min
+C23    : Por hornada
+D23    : Panadero
+A24    : Masa madre
+B24    : 230-240°C con vapor, 40-50 min (segun tamaño)
+C24    : Por hornada
+D24    : Panadero
+A26    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E18 E19 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F24 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 04-expositor-venta.xlsx
+# docProps: title='Expositor, Venta y Atencion al Cliente · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Expositor y Venta» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Expositor, Venta y Atencion al Cliente
+A3     : Zona
+B3     : Tarea
+C3     : Frecuencia
+D3     : Responsable
+E3     : OK
+F3     : Notas
+A4     : MONTAJE EXPOSITOR
+A5     : Expositor
+B5     : Colocar panes por tipo: barra, hogaza, integral, especiales
+C5     : Diario
+D5     : Dependiente
+A6     : Expositor
+B6     : Etiquetado con nombre, peso, precio y alergenos
+C6     : Diario
+D6     : Dependiente
+F6     : Obligatorio
+A7     : Expositor
+B7     : Bolleria dulce: croissants, napolitanas, ensaimadas
+C7     : Diario
+D7     : Dependiente
+A8     : Expositor
+B8     : Bolleria salada: empanadas, cocas, panes rellenos
+C8     : Diario
+D8     : Dependiente
+A9     : Expositor
+B9     : Productos especiales: sin gluten, ecologico (si aplica)
+C9     : Diario
+D9     : Dependiente
+F9     : Separar de gluten
+A10    : Expositor
+B10    : Rotacion FIFO: producto del dia atras, ayer al frente
+C10    : Diario
+D10    : Dependiente
+A11    : ATENCION AL CLIENTE
+A12    : Venta
+B12    : Informar sobre panes del dia y novedades
+C12    : Servicio
+D12    : Dependiente
+A13    : Venta
+B13    : Sugerir maridajes y usos de cada pan
+C13    : Servicio
+D13    : Dependiente
+A14    : Venta
+B14    : Cortar y embolsar pan bajo pedido del cliente
+C14    : Servicio
+D14    : Dependiente
+A15    : Venta
+B15    : Informar alergenos al cliente cuando pregunte
+C15    : Servicio
+D15    : Dependiente
+A16    : Venta
+B16    : Gestionar encargos especiales (bodas, eventos, empresas)
+C16    : Bajo pedido
+D16    : Encargado
+A17    : CIERRE TIENDA
+A18    : Tienda
+B18    : Inventario pan sobrante y decision: descuento, donacion, pan rallado
+C18    : Cierre
+D18    : Dependiente
+A19    : Tienda
+B19    : Limpiar vitrinas, mostrador, suelo
+C19    : Cierre
+D19    : Dependiente
+A20    : Tienda
+B20    : Cierre caja y registro ventas por categoria
+C20    : Cierre
+D20    : Encargado
+A22    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F20 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 05-tareas-manager.xlsx
+# docProps: title='Tareas del Manager — Panaderia / Obrador · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Tareas Manager» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Tareas del Manager — Panaderia / Obrador
+A3     : Categoria
+B3     : Tarea
+C3     : Frecuencia
+D3     : Prioridad
+E3     : Estado
+F3     : Notas
+A4     : PRODUCCION
+A5     : Produccion
+B5     : Planificar produccion diaria segun ventas y pedidos
+C5     : Diario
+D5     : Alta
+A6     : Produccion
+B6     : Supervisar calidad de panes y bolleria
+C6     : Diario
+D6     : Alta
+A7     : Produccion
+B7     : Ajustar recetas segun temporada (hidratacion, temperatura)
+C7     : Estacional
+D7     : Media
+A8     : Produccion
+B8     : Desarrollar nuevos productos: panes especiales, ecologicos
+C8     : Mensual
+D8     : Media
+A9     : COMPRAS Y STOCK
+A10    : Compras
+B10    : Pedido harina: tipo, proveedor, cantidad semanal
+C10    : Semanal
+D10    : Alta
+A11    : Compras
+B11    : Stock materias primas: levadura, sal, semillas, mantequilla
+C11    : Semanal
+D11    : Alta
+A12    : Stock
+B12    : Control mermas: pan sobrante vs producido (objetivo <8%)
+C12    : Diario
+D12    : Alta
+A13    : Proveedores
+B13    : Evaluar calidad harina: W, P/L, cenizas, proteina
+C13    : Trimestral
+D13    : Media
+A14    : FINANZAS Y RRHH
+A15    : Finanzas
+B15    : Food cost semanal (objetivo <30% en panaderia)
+C15    : Semanal
+D15    : Alta
+A16    : Finanzas
+B16    : Revisar precios carta vs coste harina y energia
+C16    : Mensual
+D16    : Alta
+A17    : RRHH
+B17    : Cuadrante turnos madrugada (rotacion equipo)
+C17    : Semanal
+D17    : Alta
+A18    : RRHH
+B18    : Formacion: nuevas tecnicas, masas madre, tendencias
+C18    : Mensual
+D18    : Media
+A19    : Marketing
+B19    : RRSS: foto pan del dia, proceso de elaboracion
+C19    : Diario
+D19    : Media
+A21    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+####################################################################################################
+# 06-tareas-perfiles.xlsx
+# docProps: title='Tareas por Perfil Profesional — Panaderia · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Perfiles» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Tareas por Perfil Profesional — Panaderia
+A3     : Perfil
+B3     : Tarea
+C3     : Momento
+D3     : Frecuencia
+E3     : OK
+F3     : Notas
+A4     : MAESTRO PANADERO / JEFE OBRADOR
+A5     : Maestro
+B5     : Supervisar masa madre y pre-fermentos
+C5     : Madrugada
+D5     : Diario
+A6     : Maestro
+B6     : Dirigir amasado, formado y horneado
+C6     : Produccion
+D6     : Diario
+A7     : Maestro
+B7     : Control calidad: corteza, miga, sabor, aroma
+C7     : Post-horneado
+D7     : Diario
+A8     : Maestro
+B8     : Ajustar recetas segun condiciones (humedad, temperatura)
+C8     : Produccion
+D8     : Diario
+A9     : Maestro
+B9     : Decidir produccion del dia y panes especiales
+C9     : Pre-produccion
+D9     : Diario
+A10    : OFICIAL PANADERO
+A11    : Oficial
+B11    : Pesar ingredientes segun receta del dia
+C11    : Madrugada
+D11    : Diario
+A12    : Oficial
+B12    : Amasar masas base en amasadora
+C12    : Madrugada
+D12    : Diario
+A13    : Oficial
+B13    : Division, pesaje y formado de piezas
+C13    : Produccion
+D13    : Diario
+A14    : Oficial
+B14    : Cargar y descargar hornos
+C14    : Produccion
+D14    : Diario
+A15    : Oficial
+B15    : Preparar bolleria: croissants, napolitanas, brioches
+C15    : Produccion
+D15    : Diario
+A16    : AYUDANTE PANADERO
+A17    : Ayudante
+B17    : Preparar bandejas, cestos y utensilios
+C17    : Pre-produccion
+D17    : Diario
+A18    : Ayudante
+B18    : Greñar piezas bajo supervision
+C18    : Produccion
+D18    : Diario
+A19    : Ayudante
+B19    : Enfriar, embalar y etiquetar producto terminado
+C19    : Post-produccion
+D19    : Diario
+A20    : Ayudante
+B20    : Limpieza de obrador: mesas, amasadora, suelos
+C20    : Cierre
+D20    : Diario
+A21    : DEPENDIENTE / VENDEDOR
+A22    : Dependiente
+B22    : Montar expositor y etiquetar panes
+C22    : Apertura tienda
+D22    : Diario
+A23    : Dependiente
+B23    : Atender clientes: informar, cortar, embolsar
+C23    : Servicio
+D23    : Diario
+A24    : Dependiente
+B24    : Gestionar encargos y pedidos especiales
+C24    : Servicio
+D24    : Diario
+A25    : Dependiente
+B25    : Cierre caja e inventario sobrante
+C25    : Cierre
+D25    : Diario
+A27    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E17 E18 E19 E20 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F25 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 07-semanales-mensuales.xlsx
+# docProps: title='Tareas Semanales y Mensuales — Panaderia · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Semanales y Mensuales» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Tareas Semanales y Mensuales — Panaderia
+A3     : Periodo
+B3     : Tarea
+C3     : Responsable
+D3     : Dia/Semana
+E3     : OK
+F3     : Observaciones
+A4     : SEMANALES
+A5     : Semanal
+B5     : Limpieza profunda amasadora y divisora
+C5     : Ayudante
+D5     : Lunes
+A6     : Semanal
+B6     : Limpieza profunda hornos (cenizas, grasa)
+C6     : Ayudante
+D6     : Lunes
+A7     : Semanal
+B7     : Calibrar bascula de precision
+C7     : Panadero
+D7     : Lunes
+A8     : Semanal
+B8     : Inventario harinas, semillas, levaduras, mantequilla
+C8     : Encargado
+D8     : Domingo
+A9     : Semanal
+B9     : Revision caducidades materias primas
+C9     : Ayudante
+D9     : Miercoles
+A10    : Semanal
+B10    : Backup masa madre en nevera
+C10    : Panadero
+D10    : Viernes
+A11    : Semanal
+B11    : Analisis mermas y ajuste produccion
+C11    : Encargado
+D11    : Lunes
+A12    : Semanal
+B12    : Limpieza profunda camara de fermentacion
+C12    : Ayudante
+D12    : Lunes
+A13    : MENSUALES
+A14    : Mensual
+B14    : Mantenimiento preventivo hornos: quemadores, juntas, termostatos
+C14    : Mantenimiento
+D14    : 1a semana
+A15    : Mensual
+B15    : Mantenimiento amasadora: correas, engranajes, lubricacion
+C15    : Mantenimiento
+D15    : 2a semana
+A16    : Mensual
+B16    : Auditoria APPCC: registros temperaturas, limpieza, alergenos
+C16    : Encargado
+D16    : 1a semana
+A17    : Mensual
+B17    : Food cost mensual y analisis rentabilidad por producto
+C17    : Encargado
+D17    : 1a semana
+A18    : Mensual
+B18    : Evaluacion proveedores harina: calidad, precio, servicio
+C18    : Encargado
+D18    : 2a semana
+A19    : Mensual
+B19    : Formacion equipo: nuevas tecnicas, tendencias, recetas
+C19    : Maestro
+D19    : 3a semana
+A20    : Mensual
+B20    : Revision precios venta vs coste real
+C20    : Encargado
+D20    : 1a semana
+A21    : Mensual
+B21    : Control de plagas: trampas, registros, incidencias
+C21    : Mantenimiento
+D21    : 4a semana
+A23    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+DV E5 E6 E7 E8 E9 E10 E11 E12 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F21 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 08-eventos-estacionales.xlsx
+# docProps: title='Eventos y Temporadas — Panaderia · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Eventos y Temporadas» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Eventos y Temporadas — Panaderia
+A3     : Temporada/Evento
+B3     : Accion / Tarea
+C3     : Responsable
+D3     : Anticipacion
+E3     : OK
+F3     : Notas
+A4     : TEMPORADAS PANADERAS
+A5     : Invierno
+B5     : Panes de hogaza, centeno, nueces, pasas, especias
+C5     : Maestro
+D5     : 2 semanas
+A6     : Primavera
+B6     : Panes con hierbas frescas, aceitunas, tomates secos
+C6     : Maestro
+D6     : 2 semanas
+A7     : Verano
+B7     : Panes frios: focaccia, ciabatta, panes de cerveza
+C7     : Maestro
+D7     : 2 semanas
+F7     : Ajustar hidratacion
+A8     : Otono
+B8     : Panes con calabaza, castana, frutos secos
+C8     : Maestro
+D8     : 2 semanas
+A9     : Todo ano
+B9     : Pan de barra, hogaza blanca, integral, chapata (basicos)
+C9     : Equipo
+D9     : Permanente
+A10    : EVENTOS COMERCIALES
+A11    : Navidad
+B11    : Roscones de Reyes, panettone, stollen, turrones
+C11    : Maestro
+D11    : 1 mes
+F11    : Pico produccion
+A12    : Semana Santa
+B12    : Monas de Pascua, torrijas, pan de vigilia
+C12    : Maestro
+D12    : 2 semanas
+A13    : San Valentin
+B13    : Bolleria especial corazones, packaging regalo
+C13    : Maestro
+D13    : 2 semanas
+A14    : Halloween
+B14    : Pan de calabaza, bolleria tematica
+C14    : Maestro
+D14    : 2 semanas
+A15    : Dia del Pan
+B15    : 16 octubre: promociones, catas, obrador abierto
+C15    : Encargado
+D15    : 1 mes
+F15    : Marketing
+A16    : Comuniones
+B16    : Encargos especiales: mini bolleria, panes decorados
+C16    : Encargado
+D16    : 1 mes
+A17    : TENDENCIAS Y ESPECIALIDADES
+A18    : Masa madre
+B18    : Crecimiento demanda: pan artesano, larga fermentacion
+C18    : Maestro
+D18    : Permanente
+F18    : Premium
+A19    : Sin gluten
+B19    : Linea sin gluten: obrador separado o protocolo estricto
+C19    : Maestro
+D19    : Trimestral
+A20    : Ecologico
+B20    : Pan ecologico certificado (harina eco, proceso documentado)
+C20    : Encargado
+D20    : Trimestral
+A21    : Cereales
+B21    : Espelta, kamut, trigo sarraceno, centeno integral
+C21    : Maestro
+D21    : Estacional
+A23    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E16 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F21 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 09-plantilla-personalizable.xlsx
+# docProps: title='Plantilla Personalizable — Panaderia · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Personalizable» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : Plantilla Personalizable — Panaderia
+A3     : Area
+B3     : Tarea
+C3     : Responsable
+D3     : Frecuencia
+E3     : OK
+F3     : Observaciones
+A4     : TUS TAREAS PERSONALIZADAS
+A26    : Instrucciones: Anade tus propias tareas. Puedes copiar filas de otras hojas del kit y adaptarlas a tu panaderia.
+A27    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+####################################################################################################
+# BONUS-01-briefing-produccion.xlsx
+# docProps: title='BONUS: Briefing de Produccion Diaria — Panaderia · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Briefing Produccion» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : BONUS: Briefing de Produccion Diaria — Panaderia
+A3     : Seccion
+B3     : Informacion
+C3     : Detalle
+D3     : Notas
+A4     : PRODUCCION DEL DIA
+A5     : Pan basico
+B5     : Cantidad barras / hogazas / chapatas:
+A6     : Especiales
+B6     : Panes especiales del dia:
+A7     : Bolleria
+B7     : Croissants / napolitanas / brioches:
+A8     : Encargos
+B8     : Pedidos especiales confirmados:
+A9     : MASA MADRE Y PRE-FERMENTOS
+A10    : Masa madre
+B10    : Estado: pH / temperatura / actividad:
+A11    : Poolish
+B11    : Preparado noche anterior: SI / NO
+A12    : Levadura
+B12    : Stock levadura fresca/seca:
+A13    : HORNOS Y EQUIPOS
+A14    : Horno piso
+B14    : Temperatura / Estado:
+A15    : Horno rotativo
+B15    : Temperatura / Estado:
+A16    : Amasadora
+B16    : Funcionando correctamente: SI / NO
+A17    : EQUIPO Y NOTAS
+A18    : Personal
+B18    : Equipo presente hoy:
+A19    : Stock
+B19    : Alertas de stock bajo:
+A20    : Notas
+B20    : Observaciones del dia:
+A22    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan
+####################################################################################################
+# BONUS-02-calendario-anual.xlsx
+# docProps: title='BONUS: Calendario Anual — Panaderia / Obrador · Kit de Tareas Recurrentes: Panadería / Obrador' · subject='Kit de Tareas Recurrentes: Panadería / Obrador · v1.1' · keywords='kit tareas panaderia, AI Chef Pro' · description='aichef.pro/kit-tareas-panaderia' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Calendario Anual» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : ChefBusiness Consultoria Gastronomica
+A2     : BONUS: Calendario Anual — Panaderia / Obrador
+A3     : Mes
+B3     : Panes Temporada
+C3     : Eventos/Encargos
+D3     : Mantenimiento
+E3     : Formacion
+A4     : Enero
+B4     : Panes integrales, centeno, frutos secos
+C4     : Roscones Reyes (pico), encargos empresa
+D4     : Revision post-Navidad hornos
+E4     : Roscones y masas dulces
+A5     : Febrero
+B5     : Pan de cerveza, hogaza campesina
+C5     : Carnaval, San Valentin (bolleria especial)
+D5     : Calibracion basculas
+E5     : Masas hojaldradas
+A6     : Marzo
+B6     : Panes con hierbas, focaccia primavera
+C6     : Semana Santa (torrijas, monas)
+D6     : Revision camara fermentacion
+E6     : Fermentacion larga
+A7     : Abril
+B7     : Pan de aceite, chapata con olivas
+C7     : Comuniones (encargos), Pascua
+D7     : Mantenimiento amasadora
+E7     : Panes con masa madre
+A8     : Mayo
+B8     : Pan de tomate seco, hierbas provenzales
+C8     : Dia de la Madre, comuniones
+D8     : Revision aire acondicionado
+E8     : Bolleria francesa
+A9     : Junio
+B9     : Focaccia, pan de cerveza, panes frios
+C9     : Inicio eventos verano
+D9     : Preparar obrador para calor
+E9     : Hidratacion en verano
+A10    : Julio
+B10    : Pan gazpacho, coca, chapata ligera
+C10    : Encargos hosteleria verano
+D10    : Ajustar temperaturas agua
+E10    : Panes sin amasado
+A11    : Agosto
+B11    : Pan de pipas, centeno ligero, ciabatta
+C11    : Fiestas locales, turismo
+D11    : Mantenimiento intensivo hornos
+E11    : Descanso rotativo equipo
+A12    : Septiembre
+B12    : Pan calabaza, nueces, pasas
+C12    : Vuelta al cole, rentrée
+D12    : Revision post-verano completa
+E12    : Nuevas recetas otono
+A13    : Octubre
+B13    : Pan castana, setas, especias
+C13    : Dia del Pan (16 oct), Halloween
+D13    : Revision quemadores hornos
+E13    : Panes regionales
+A14    : Noviembre
+B14    : Pan de centeno, espelta, integral
+C14    : Preventa Navidad, encargos empresa
+D14    : Calibrar todo pre-Navidad
+E14    : Roscones y panettone
+A15    : Diciembre
+B15    : Roscon, panettone, stollen, turrones
+C15    : Navidad (pico maximo), Nochevieja
+D15    : Revision total fin de ano
+E15    : Produccion alto volumen
+A17    : ChefBusiness.co — Kit de Tareas Recurrentes: Panaderia / Obrador Pan

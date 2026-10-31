@@ -1,0 +1,866 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/food-truck-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-food-truck-setup-teardown-checklist.xlsx
+# docProps: title='Food Truck Setup & Teardown Checklist: Arrival, Kitchen, Service & Closing' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Setup & Teardown» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 01 · Food Truck Setup & Teardown Checklist: Arrival, Kitchen, Service & Closing
+A3     : Phase
+B3     : Task
+C3     : Assigned to
+D3     : Time
+E3     : OK
+F3     : Notes
+A4     : SETUP — Arrival at the Vending Spot
+A5     : Arrival
+B5     : Park and level the truck (wheel chocks if needed): only in a legal vending spot under your city's rules, or with the owner's written permission on private property
+C5     : Driver
+D5     : 10 min
+A6     : Arrival
+B6     : Hook up the generator or event power: generator outside the truck, away from the window, air intakes and people (carbon monoxide), where the organizer and fire marshal allow; route cords so no one trips
+C6     : Driver / tech
+D6     : 5 min
+A7     : Arrival
+B7     : Check propane pressure and cylinders: secured upright, valves closed in transit; system per NFPA 58 and your fire marshal's inspection
+C7     : Kitchen
+D7     : 3 min
+A8     : Arrival
+B8     : Put out the awning and outdoor signage
+C8     : Crew
+D8     : 10 min
+A9     : Arrival
+B9     : Set up the service counter and checkout point
+C9     : Crew
+D9     : 5 min
+A10    : SETUP — Kitchen
+A11    : Kitchen
+B11    : Turn on the flat-top griddle, fryer and oven and check temperatures; hood and fire suppression system working first. Gas smell: light nothing, close the cylinder, get out and call 911 from outside
+C11    : Kitchen
+D11    : 10 min
+A12    : Kitchen
+B12    : Plug in cold equipment (cooler, refrigerated prep table): 41 °F or below (FDA Food Code 3-501.16); frozen food stays frozen (0 °F or below is the common target) — log reading: ____ °F
+C12    : Kitchen
+D12    : 5 min
+A13    : Kitchen
+B13    : Organize mise en place for a tight workspace
+C13    : Kitchen
+D13    : 15 min
+A14    : Kitchen
+B14    : Check full stock: proteins, bread, sauces, sides
+C14    : Kitchen
+D14    : 5 min
+A15    : Kitchen
+B15    : Set out sauce dispensers and napkin holders
+C15    : Kitchen
+D15    : 3 min
+A16    : Kitchen
+B16    : Set up the plating / to-go packaging station
+C16    : Kitchen
+D16    : 5 min
+A17    : SETUP — Service
+A18    : Service
+B18    : Post the menu where customers can see it (menu board, banner, screen)
+C18    : Window staff
+D18    : 3 min
+A19    : Service
+B19    : Set up the POS, card reader and starting bank (cash float)
+C19    : Window staff
+D19    : 5 min
+A20    : Service
+B20    : Set up the waiting area with napkin holders and a trash can
+C20    : Window staff
+D20    : 3 min
+A21    : Service
+B21    : Check water: fresh (potable) water tank full, wastewater (gray water) tank empty (it must be at least 15% larger than the fresh tank, FDA Food Code 5-401.11); hot water at the handwashing sink, 100 °F or above (FDA Food Code 5-202.12)
+C21    : Driver / tech
+D21    : 3 min
+A22    : TEARDOWN — Breakdown & Close
+A23    : Teardown
+B23    : Turn off cooking equipment and close the propane cylinder valves
+C23    : Kitchen
+D23    : 2 min
+A24    : Teardown
+B24    : Leftovers: cool from 135 °F to 70 °F within 2 h and to 41 °F within 4 more h (FDA Food Code 3-501.14), cover, date-mark (7 days max at 41 °F, day 1 = prep day; FDA Food Code 3-501.17), log and refrigerate at the commissary
+C24    : Kitchen
+D24    : 10 min
+A25    : Teardown
+B25    : Clean the flat-top griddle, fryer and work surfaces, then sanitize with an approved sanitizer at label strength, checked with test strips (FDA Food Code 4-501.114)
+C25    : Kitchen
+D25    : 15 min
+A26    : Teardown
+B26    : Empty and clean the water and waste tanks: wastewater only at the commissary or an approved servicing area, never in the street, on the ground or down a storm drain (FDA Food Code 5-402.14)
+C26    : Driver / tech
+D26    : 10 min
+A27    : Teardown
+B27    : Pack up the awning, signage and outdoor furniture
+C27    : Crew
+D27    : 10 min
+A28    : Teardown
+B28    : Close out the cash drawer and log the day's sales: cash count and over/short against the POS Z report (card sales without tips); tips per your written tip pool policy, with no managers or supervisors in the pool (FLSA, 29 U.S.C. 203(m)(2)(B))
+C28    : Manager
+D28    : 5 min
+A29    : Teardown
+B29    : Shut down the generator / disconnect power
+C29    : Driver / tech
+D29    : 2 min
+A30    : Teardown
+B30    : Secure the truck for the road: doors, equipment, propane cylinders strapped in with valves closed
+C30    : Driver
+D30    : 5 min
+A32    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E16 E18 E19 E20 E21 E23 E24 E25 E26 E27 E28 E29 E30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F30 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 02-food-truck-pre-trip-vehicle-checklist.xlsx
+# docProps: title='Food Truck Pre-Trip & Vehicle Checklist: Generator, Propane, Water & Waste' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Vehicle & Mobile Ops» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 02 · Food Truck Pre-Trip & Vehicle Checklist: Generator, Propane, Water & Waste
+A3     : Category
+B3     : Task / Check
+C3     : Assigned to
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : VEHICLE — Pre-Trip
+A5     : Vehicle
+B5     : Enough fuel for the round trip
+C5     : Driver
+D5     : Pre-trip
+A6     : Vehicle
+B6     : Tire pressure correct (extra load from equipment)
+C6     : Driver
+D6     : Weekly
+A7     : Vehicle
+B7     : Lights, turn signals and brakes working
+C7     : Driver
+D7     : Pre-trip
+A8     : Vehicle
+B8     : Vehicle registration and title current with your state DMV and commercial auto insurance in force; vehicle safety inspection only where your state requires one; CDL only if GVWR is 26,001 lb or more (49 CFR 383.91)
+C8     : Manager
+D8     : Annual
+A9     : Vehicle
+B9     : Kitchen equipment secured for transport
+C9     : Kitchen
+D9     : Pre-trip
+A10    : Vehicle
+B10    : Fire extinguishers accessible and tagged (required): one ABC plus a Class K for the fryer (NFPA 10); monthly visual check and annual service tag (29 CFR 1910.157(e)(2)-(3)); hood suppression system every 6 months (NFPA 96)
+C10    : Manager
+D10    : Monthly
+A11    : GENERATOR & POWER
+A12    : Generator
+B12    : Generator fuel level (gasoline, diesel or propane, per the unit); refuel only with the generator off and cool, as its manual says
+C12    : Driver / tech
+D12    : Pre-trip
+A13    : Generator
+B13    : Test-start the generator before leaving (no surprises at the event)
+C13    : Driver / tech
+D13    : Pre-trip
+A14    : Generator
+B14    : Extension cords in good condition, connections secure
+C14    : Driver / tech
+D14    : Pre-trip
+A15    : Generator
+B15    : Preventive maintenance: oil, filter, spark plugs (per the manufacturer's service hours)
+C15    : Driver / tech
+D15    : Monthly
+A16    : Propane
+B16    : Propane cylinders: enough for the shift, secured upright, valves closed in transit (NFPA 58 and your fire marshal's inspection)
+C16    : Kitchen
+D16    : Pre-trip
+A17    : Propane
+B17    : Gas connections leak-free: soapy-water test, never a flame, at every connection and after each cylinder swap (NFPA 1 / NFPA 58, per the edition your fire marshal uses)
+C17    : Driver / tech
+D17    : Weekly
+A18    : WATER & WASTE
+A19    : Water
+B19    : Fresh water tank full (capacity per your permit): potable water from an approved source (FDA Food Code 5-101.11), filled at the commissary with a food-grade drinking-water hose used for nothing else
+C19    : Driver / tech
+D19    : Pre-trip
+A20    : Water
+B20    : Wastewater tank empty and clean: dump only at the commissary or an approved servicing area, never on the ground or down a storm drain (FDA Food Code 5-402.14)
+C20    : Driver / tech
+D20    : Pre-trip
+A21    : Water
+B21    : Water pump working properly
+C21    : Driver / tech
+D21    : Pre-trip
+A22    : Waste
+B22    : Enough trash bags
+C22    : Crew
+D22    : Pre-trip
+A23    : Waste
+B23    : Used cooking oil container (if you have a fryer), closed, for a licensed recycler or the commissary's
+C23    : Kitchen
+D23    : After service
+A24    : Waste
+B24    : Event waste plan: trash, grease and wastewater go to the commissary or the area the organizer assigns; nothing on the ground or down a storm drain (FDA Food Code 5-402.14)
+C24    : Manager
+D24    : Pre-event
+A26    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E17 E19 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F24 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 03-food-truck-health-inspection-food-safety-checklist.xlsx
+# docProps: title='Food Truck Food Safety & Health Inspection Prep Checklist (FDA Food Code)' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Food Safety & Inspection» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 03 · Food Truck Food Safety & Health Inspection Prep Checklist (FDA Food Code)
+A3     : Records
+B3     : Detail / Procedure
+C3     : Assigned to
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : TEMPERATURES & COLD CHAIN
+A5     : Cold temps
+B5     : Cooler at 41 °F or below before loading (FDA Food Code 3-501.16) — log reading: ____ °F
+C5     : Kitchen
+D5     : Pre-trip
+A6     : Cold temps
+B6     : Log temperatures in transit (thermometer): 41 °F or below — log reading: ____ °F
+C6     : Kitchen
+D6     : In transit
+A7     : Cold temps
+B7     : Check temperatures on arrival at the vending spot: cold 41 °F or below (FDA Food Code 3-501.16); frozen food still frozen (0 °F or below is the common target) — log reading: ____ °F
+C7     : Kitchen
+D7     : Setup
+A8     : Cooking temps
+B8     : Probe internal cooking temps: poultry 165 °F; ground beef and other ground meats 155 °F for 17 s; fish and whole-muscle pork or beef 145 °F for 15 s (FDA Food Code 3-401.11) — log reading: ____ °F
+C8     : Kitchen
+D8     : Service
+A9     : Hot holding
+B9     : Hot food held at 135 °F or above (FDA Food Code 3-501.16), or time as a public health control with a written procedure: time-marked, served or discarded within 4 h (FDA Food Code 3-501.19) — log reading: ____ °F
+C9     : Kitchen
+D9     : Service
+A10    : Thawing
+B10    : Thaw in the refrigerator at 41 °F or below, under cold running water at 70 °F or below, in the microwave if cooked right away, or as part of cooking (FDA Food Code 3-501.13); NEVER at room temperature
+C10    : Kitchen
+D10    : Before service
+A11    : FOOD HANDLING & CLEANING
+A12    : Hygiene
+B12    : Handwashing sink stocked: hot water at 100 °F or above (FDA Food Code 5-202.12), soap and paper towels; hand sanitizer only AFTER washing, never instead (FDA Food Code 2-301.16)
+C12    : Crew
+D12    : Ongoing
+A13    : Hygiene
+B13    : No bare-hand contact with ready-to-eat food: gloves, tongs or deli paper (FDA Food Code 3-301.11); fresh gloves when switching tasks
+C13    : Kitchen
+D13    : Service
+A14    : Surfaces
+B14    : Clean surfaces, then sanitize with an approved sanitizer at label strength, checked with test strips (FDA Food Code 4-501.114)
+C14    : Kitchen
+D14    : Before & after
+A15    : Cross-contamination
+B15    : Keep raw and cooked foods apart in storage and prep
+C15    : Kitchen
+D15    : Always
+A16    : Utensils
+B16    : Color-coded cutting boards (meat / produce / bread)
+C16    : Kitchen
+D16    : Always
+A17    : Trash
+B17    : Lidded foot-pedal trash can, emptied often
+C17    : Crew
+D17    : Every 2 h
+A18    : ALLERGENS & PAPERWORK
+A19    : Allergens
+B19    : Allergen chart posted at the window: the 9 major US allergens (milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soy, sesame; FALCPA + FASTER Act), in writing where your state has adopted the 2022 FDA Food Code (3-602.12(C)); UK: 14
+C19    : Manager
+D19    : Always
+F19    : 9 major US allergens (UK: 14)
+A20    : Allergens
+B20    : Crew trained to answer allergy questions
+C20    : Manager
+D20    : Quarterly
+A21    : Records
+B21    : Mobile food unit health permit posted; temperature logs and commissary log (or commissary agreement) in the truck for inspection
+C21    : Manager
+D21    : Always
+A22    : Records
+B22    : Food handler cards current for the whole crew (per your state) and a Certified Food Protection Manager (CFPM, e.g. ServSafe Manager) as person in charge (FDA Food Code 2-102.12)
+C22    : Manager
+D22    : Annual
+A23    : Permits
+B23    : Mobile vending license current (city or county; one per truck, non-transferable) plus the county health department's mobile food unit permit
+C23    : Manager
+D23    : Annual
+F23    : Varies by city / county
+A24    : Permits
+B24    : General liability insurance current; many events ask for a certificate of insurance (COI) naming the organizer as additional insured
+C24    : Manager
+D24    : Annual
+A26    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E17 E19 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F24 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 04-food-truck-permits-events-locations-checklist.xlsx
+# docProps: title='Food Truck Permits, Events & Locations Checklist' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Permits & Events» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 04 · Food Truck Permits, Events & Locations Checklist
+A3     : Type
+B3     : Task / Requirement
+C3     : Lead time
+D3     : Assigned to
+E3     : OK
+F3     : Notes
+A4     : PERMITS & LICENSES
+A5     : License
+B5     : Mobile vending license from the city (or county): one per truck, non-transferable, plus the mobile food unit permit from the county health department
+C5     : 2–3 months
+D5     : Manager
+F5     : Annual renewal
+A6     : License
+B6     : Mobile food unit health permit from your local (county or city) health department (plan review + inspection), with your commissary agreement
+C6     : 1 month
+D6     : Manager
+F6     : Required
+A7     : Insurance
+B7     : General liability insurance (events and property owners often ask for $1M per occurrence and a certificate of insurance naming them)
+C7     : Annual
+D7     : Manager
+A8     : Insurance
+B8     : Commercial auto insurance for the truck
+C8     : Annual
+D8     : Manager
+A9     : Tax
+B9     : Business license (city or county) + state sales tax registration (seller's permit); free EIN from the IRS (needed with employees or a multi-member LLC)
+C9     : Before opening
+D9     : Manager
+A10    : Tax
+B10    : POS set up to collect and report sales tax by vending location; receipt on request
+C10    : Always
+D10    : Manager
+A11    : EVENTS — Pre-Event
+A12    : Event
+B12    : Confirm exact location, access and setup time
+C12    : 1 week
+D12    : Manager
+A13    : Event
+B13    : Confirm the power hookup or the need for a generator
+C13    : 1 week
+D13    : Driver / tech
+A14    : Event
+B14    : Estimate sales volume and prep stock to match
+C14    : 3 days
+D14    : Kitchen
+A15    : Event
+B15    : Build an event menu (price, format, speed)
+C15    : 3 days
+D15    : Kitchen
+A16    : Event
+B16    : Confirm event and site permits: temporary food event permit if the health department requires one, plus the organizer's requirements (COI, fire marshal inspection; many require at least 10 ft of clearance from buildings, other vehicles and combustibles, NFPA 1 / NFPA 96)
+C16    : 2 weeks
+D16    : Manager
+A17    : Event
+B17    : Post on social media: location, hours and event menu (Instagram, Google Business Profile, food truck apps such as Roaming Hunger and StreetFoodFinder)
+C17    : 1 week
+D17    : Marketing
+A18    : EVENT TYPES
+A19    : Market
+B19    : Food truck parks, farmers markets and night markets (weekly)
+D19    : Manager
+F19    : Foodie crowd
+A20    : Festival
+B20    : Music festivals, county fairs and street fairs (high demand)
+D20    : Manager
+F20    : 3× stock
+A21    : Corporate
+B21    : Corporate events, team building, private catering
+D21    : Manager
+F21    : Set menu
+A22    : Weddings
+B22    : Food truck for weddings and celebrations
+D22    : Manager
+F22    : Custom menu
+A23    : Sports
+B23    : Races, tournaments, sporting events
+D23    : Manager
+F23    : Fast service
+A24    : Regular spot
+B24    : Regular daily spot (business park, campus, office district): only where your city's vending and parking rules allow, or with the owner's written permission
+D24    : Manager
+F24    : Regulars
+A26    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E17 E19 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F24 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 05-food-truck-manager-checklist.xlsx
+# docProps: title='Food Truck Manager Checklist: Route, Inventory, Food Cost & Marketing' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Manager Tasks» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 05 · Food Truck Manager Checklist: Route, Inventory, Food Cost & Marketing
+A3     : Category
+B3     : Task
+C3     : Frequency
+D3     : Priority
+E3     : Status
+F3     : Notes
+A4     : OPERATIONS
+A5     : Planning
+B5     : Plan the weekly route: spots, events, hours (per each city's vending zones and parking rules, or written permission on private property)
+C5     : Weekly
+D5     : High
+A6     : Planning
+B6     : Confirm event bookings and permits
+C6     : Weekly
+D6     : High
+A7     : Inventory
+B7     : Order supplies based on the event calendar
+C7     : 2–3× a week
+D7     : High
+A8     : Inventory
+B8     : Track waste and post-event leftovers (waste log)
+C8     : After event
+D8     : High
+A9     : Quality
+B9     : Taste dishes and check consistency
+C9     : Daily
+D9     : High
+A10    : Revenue
+B10    : Analyze sales by spot / event (which one earns the most)
+C10    : Weekly
+D10    : High
+A11    : FINANCE
+A12    : Food cost
+B12    : Weekly food cost % against your plan's target (about 28–35% for a US food truck, kit benchmark)
+C12    : Weekly
+D12    : High
+A13    : Pricing
+B13    : Review prices against cost and local competition
+C13    : Monthly
+D13    : Medium
+A14    : Event fees
+B14    : Calculate ROI per event (vendor fee + costs vs. sales)
+C14    : After event
+D14    : High
+A15    : Cash
+B15    : Daily cash reconciliation (cash + POS): cash count and over/short against the POS Z report (card sales without tips); tips per your written tip pool, with no managers or supervisors (FLSA, 29 U.S.C. 203(m)(2)(B))
+C15    : Daily
+D15    : High
+A16    : MARKETING & GROWTH
+A17    : Social media
+B17    : Post today's location on Instagram, TikTok, Google Business Profile and food truck apps (Roaming Hunger, StreetFoodFinder)
+C17    : Daily
+D17    : High
+A18    : Social media
+B18    : Visual content: service, dishes and setup videos
+C18    : 3× a week
+D18    : Medium
+A19    : Reviews
+B19    : Reply to reviews on Google, Yelp and social media
+C19    : Weekly
+D19    : Medium
+A20    : Networking
+B20    : Reach out to new event organizers and markets
+C20    : Monthly
+D20    : Medium
+A21    : Loyalty
+B21    : Loyalty card / repeat-customer program
+C21    : Ongoing
+D21    : Medium
+A23    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+####################################################################################################
+# 06-food-truck-duties-by-role.xlsx
+# docProps: title='Food Truck Duties by Role: Chef, Prep Cook, Window Staff & Driver' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Duties by Role» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 06 · Food Truck Duties by Role: Chef, Prep Cook, Window Staff & Driver
+A3     : Role
+B3     : Task
+C3     : When
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : COOK / FOOD TRUCK CHEF
+A5     : Chef
+B5     : Prep mise en place before service, at the commissary or in the truck, never in a home kitchen (FDA Food Code 3-201.11)
+C5     : Before service
+D5     : Daily
+A6     : Chef
+B6     : Cook every menu item during service
+C6     : Service
+D6     : Daily
+A7     : Chef
+B7     : Quality check: flavor, presentation, temperature
+C7     : Service
+D7     : Daily
+A8     : Chef
+B8     : Manage wait times (target under 5 min per order)
+C8     : Service
+D8     : Daily
+A9     : Chef
+B9     : Clean equipment and surfaces at close, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C9     : Teardown
+D9     : Daily
+A10    : PREP COOK
+A11    : Prep cook
+B11    : Mise en place: cut, portion, make sauces
+C11    : Before service
+D11    : Daily
+A12    : Prep cook
+B12    : Assembly line: build dishes to order
+C12    : Service
+D12    : Daily
+A13    : Prep cook
+B13    : Restock the line during service
+C13    : Service
+D13    : Daily
+A14    : Prep cook
+B14    : Fryer: timing, temperature, filtering
+C14    : Service
+D14    : Daily
+A15    : Prep cook
+B15    : Clean and organize the station
+C15    : Teardown
+D15    : Daily
+A16    : MANAGER / CASHIER / WINDOW STAFF
+A17    : Window staff
+B17    : Serve customers: take orders, explain the menu
+C17    : Service
+D17    : Daily
+A18    : Window staff
+B18    : Take payment: POS, cash, change, tap to pay (Apple Pay, Google Pay)
+C18    : Service
+D18    : Daily
+A19    : Window staff
+B19    : Hand out orders in the right packaging
+C19    : Service
+D19    : Daily
+A20    : Window staff
+B20    : Answer allergen and diet questions (vegan, gluten-free): the 9 major US allergens (UK: 14); call a dish gluten-free only if you can back it, never with a shared fryer or flat-top griddle (21 CFR 101.91)
+C20    : Service
+D20    : Daily
+A21    : Window staff
+B21    : Keep the waiting area clean, restock napkins
+C21    : Service
+D21    : Daily
+A22    : DRIVER / TECH
+A23    : Driver
+B23    : Drive the truck to the vending spot (safely, on time)
+C23    : Pre-event
+D23    : Daily
+A24    : Driver
+B24    : Level the truck and make sure it is stable
+C24    : Setup
+D24    : Daily
+A25    : Driver
+B25    : Run the generator: start-up, fuel, noise (outside the truck, away from the window, air intakes and people because of carbon monoxide; noise and hours per event and city rules)
+C25    : Service
+D25    : Daily
+A26    : Driver
+B26    : Manage the fresh and wastewater (gray water) tanks: dump only at the commissary or an approved servicing area (FDA Food Code 5-402.14)
+C26    : Before & after
+D26    : Daily
+A27    : Driver
+B27    : Basic truck and equipment maintenance
+C27    : Any time
+D27    : Weekly
+A29    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E17 E18 E19 E20 E21 E23 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F27 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 07-food-truck-weekly-monthly-cleaning-maintenance-checklist.xlsx
+# docProps: title='Food Truck Weekly & Monthly Checklists: Deep Cleaning, Maintenance & Inventory' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Weekly & Monthly» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 07 · Food Truck Weekly & Monthly Checklists: Deep Cleaning, Maintenance & Inventory
+A3     : Period
+B3     : Task
+C3     : Assigned to
+D3     : Day / Week
+E3     : OK
+F3     : Notes
+A4     : WEEKLY
+A5     : Weekly
+B5     : Deep clean the inside of the truck
+C5     : Crew
+D5     : Monday
+A6     : Weekly
+B6     : Deep clean the hood and filters: the crew degreases the filters; hood and ducts by a certified contractor as often as NFPA 96 requires; hood suppression system every 6 months (NFPA 96)
+C6     : Kitchen
+D6     : Monday
+A7     : Weekly
+B7     : Full inventory: ingredients, packaging, sauces
+C7     : Manager
+D7     : Sunday
+A8     : Weekly
+B8     : Change the fryer oil (or when a TPM tester or test strip says so); used oil to a licensed recycler
+C8     : Kitchen
+D8     : As needed
+A9     : Weekly
+B9     : Check propane: cylinder levels and a soapy-water leak test at every connection, never a flame (NFPA 1 / NFPA 58)
+C9     : Driver / tech
+D9     : Monday
+A10    : Weekly
+B10    : Check water tanks and pump: clean and sanitize the fresh water tank, pump and hose as your health department requires; wastewater only at the commissary (FDA Food Code 5-402.14)
+C10    : Driver / tech
+D10    : Monday
+A11    : Weekly
+B11    : Review the week's sales by spot / event
+C11    : Manager
+D11    : Monday
+A12    : Weekly
+B12    : Plan next week's route and events
+C12    : Manager
+D12    : Sunday
+A13    : MONTHLY
+A14    : Monthly
+B14    : Generator maintenance: oil, filter, spark plugs (per the manufacturer's service hours)
+C14    : Driver / tech
+D14    : 1st week
+A15    : Monthly
+B15    : Mechanical check: brakes, tires, lights
+C15    : Driver / tech
+D15    : 2nd week
+A16    : Monthly
+B16    : HACCP review: temperature, cleaning and commissary logs
+C16    : Manager
+D16    : 1st week
+A17    : Monthly
+B17    : Monthly food cost and profitability review
+C17    : Manager
+D17    : 1st week
+A18    : Monthly
+B18    : Menu review: rotate dishes by season / demand
+C18    : Chef
+D18    : 2nd week
+A19    : Monthly
+B19    : Check permits and licenses are current: mobile food unit health permit, each city's mobile vending license, commissary agreement, fire marshal inspection, DMV registration and insurance
+C19    : Manager
+D19    : 1st week
+A20    : Monthly
+B20    : Restock packaging and disposables
+C20    : Manager
+D20    : 3rd week
+A21    : Monthly
+B21    : Crew training: new dishes, service, safety (food handler cards current)
+C21    : Chef
+D21    : 4th week
+A23    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F21 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 08-food-truck-events-seasons-checklist.xlsx
+# docProps: title='Food Truck Event & Seasonal Checklists: Festivals, Fairs, Markets & Weddings' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Events & Seasons» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 08 · Food Truck Event & Seasonal Checklists: Festivals, Fairs, Markets & Weddings
+A3     : Season / Event
+B3     : Action / Task
+C3     : Assigned to
+D3     : Lead time
+E3     : OK
+F3     : Notes
+A4     : SEASONS
+A5     : Spring
+B5     : Event season starts: festivals, farmers markets, food truck rallies
+C5     : Manager
+D5     : 1 month
+A6     : Summer
+B6     : Peak season (Memorial Day to Labor Day): festivals, beaches, county fairs, July 4th
+C6     : Manager
+D6     : 2 months
+F6     : Sales peak
+A7     : Summer
+B7     : Refreshing menu: bowls, smoothies, artisan ice cream
+C7     : Chef
+D7     : 2 weeks
+A8     : Fall
+B8     : Food markets and fall festivals
+C8     : Manager
+D8     : 1 month
+A9     : Fall
+B9     : Comfort food menu: stews, soups, hot dishes
+C9     : Chef
+D9     : 2 weeks
+A10    : Winter
+B10    : Less outdoor activity: look for indoor events
+C10    : Manager
+D10    : 1 month
+A11    : Winter
+B11    : Holidays: holiday markets, corporate holiday parties
+C11    : Manager
+D11    : 2 months
+A12    : KEY SALES EVENTS
+A13    : Food truck festivals
+B13    : Regional food truck festivals and rallies (vendor application)
+C13    : Manager
+D13    : 2 months
+A14    : Farmers & night markets
+B14    : Farmers markets and night markets in several towns (seasonal vendor spot)
+C14    : Manager
+D14    : 2 months
+A15    : County & state fairs
+B15    : County and state fairs, street fairs and local festivals (apply when vendor applications open)
+C15    : Manager
+D15    : 2 months
+A16    : Wedding season
+B16    : May–October: peak wedding season for food trucks
+C16    : Manager
+D16    : 3 months
+A17    : Black Friday
+B17    : Special promotion + presence at shopping centers
+C17    : Marketing
+D17    : 1 month
+A18    : New Year's Eve
+B18    : New Year's Eve countdown events and private parties (no alcohol sales without a license)
+C18    : Manager
+D18    : 2 months
+A20    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E13 E14 E15 E16 E17 E18 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F18 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 09-blank-food-truck-checklist-template.xlsx
+# docProps: title='Blank Food Truck Checklist Template (Editable)' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Blank Template» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 09 · Blank Food Truck Checklist Template (Editable)
+A3     : Area
+B3     : Task
+C3     : Assigned to
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : YOUR CUSTOM TASKS
+A26    : Instructions: Add your own tasks. You can copy rows from the other sheets in the kit and adapt them to your food truck.
+A27    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+####################################################################################################
+# BONUS-01-food-truck-pre-event-briefing-template.xlsx
+# docProps: title='BONUS: Food Truck Pre-Event Briefing Template' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Pre-Event Briefing» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : BONUS: Food Truck Pre-Event Briefing Template
+A3     : Section
+B3     : Information
+C3     : Detail
+D3     : Notes
+A4     : EVENT
+A5     : Event name
+C5     : Type / Organizer
+A6     : Location
+C6     : Address / GPS / Access
+A7     : Schedule
+C7     : Setup / Open / Close
+A8     : Expected crowd
+C8     : Estimated attendance
+A9     : LOGISTICS
+A10    : Power
+C10    : Hookup available / Generator needed
+A11    : Water
+C11    : Water source / Enough tank capacity
+A12    : Parking
+C12    : Assigned spot / Dimensions
+A13    : Vendor fee
+C13    : Flat fee / % of sales
+A14    : MENU & STOCK
+A15    : Event menu
+C15    : Selected items / Prices
+A16    : Estimated stock
+C16    : Units per item (by crowd size)
+A17    : Packaging
+C17    : Type and quantity needed
+A18    : Allergens
+C18    : Allergen chart (9 major US allergens) printed and posted
+A19    : CREW
+A20    : Staff
+C20    : Names and assigned roles
+A21    : Meet-up time
+C21    : Departure point and time
+A22    : Vehicle
+C22    : Fuel / Condition / Driver
+A24    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
+####################################################################################################
+# BONUS-02-food-truck-annual-calendar.xlsx
+# docProps: title='BONUS: Food Truck Annual Calendar: Events, Menu, Maintenance & Marketing (US)' · subject='Food Truck Checklists Kit Pro · v1.1' · keywords='food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck setup checklist, food truck commissary, pre-trip inspection, AI Chef Pro' · description='aichef.pro/en/digital-products/food-truck-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Annual Calendar» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : BONUS: Food Truck Annual Calendar: Events, Menu, Maintenance & Marketing (US)
+A3     : Month
+B3     : Event Types
+C3     : Suggested Menu
+D3     : Maintenance
+E3     : Marketing
+A4     : January
+B4     : Indoor events and winter markets (slow season)
+C4     : Comfort food, soups, hot sandwiches
+D4     : Full post-holiday check
+E4     : Plan the spring season
+A5     : February
+B5     : Super Bowl Sunday (party orders), Valentine's Day, Mardi Gras (varies), indoor events
+C5     : Valentine's specials, game-day party platters
+D5     : Vehicle safety inspection if your state requires one, DMV renewal if due, generator check
+E5     : Contact spring markets
+A6     : March
+B6     : Outdoor markets reopen, St. Patrick's Day (Mar 17), spring break
+C6     : Transition: warm dishes, wraps
+D6     : Pre-season tune-up
+E6     : Launch the event calendar on social media
+A7     : April
+B7     : Easter (varies), spring festivals, food truck rallies
+C7     : Varied menu, vegetarian options
+D7     : Check tires, propane, water
+E7     : Open summer wedding bookings
+A8     : May
+B8     : Cinco de Mayo, Memorial Day weekend (last Monday), graduations, wedding season starts
+C8     : Spring menu: salads, bowls, fresh dishes
+D8     : Truck A/C and ventilation
+E8     : Summer social media campaign
+A9     : June
+B9     : Music festivals, street fairs, graduations, Father's Day (3rd Sunday)
+C9     : Summer menu: tacos, poke, ice cream
+D9     : Thorough check of cold equipment
+E9     : Festival video content
+A10    : July
+B10    : Jul 4 — Independence Day, county fairs, festivals, weddings
+C10    : Refreshing menu, fast service
+D10    : Generator at full load
+E10    : Post daily location
+A11    : August
+B11    : Peak season: county and state fairs, festivals, summer tourism
+C11    : Top-seller menu, max production
+D11    : Reactive maintenance as needed
+E11    : Peak social media activity
+A12    : September
+B12    : Labor Day (1st Monday), back to school (campus and office routes), fall festivals
+C12    : Transition: comfort food + salads
+D12    : Full post-summer check
+E12    : Plan fall–winter
+A13    : October
+B13    : Fall festivals and food markets, Halloween (Oct 31)
+C13    : Comfort food: stews, pulled pork, soups
+D13    : Preventive vehicle maintenance
+E13    : Contact holiday events (holiday markets, corporate parties)
+A14    : November
+B14    : Thanksgiving (4th Thursday), holiday markets, corporate events
+C14    : Winter menu: stews, gourmet hot dogs
+D14    : Winterize the truck
+E14    : Holiday and corporate catering campaign
+A15    : December
+B15    : Holiday markets, corporate holiday parties, New Year's Eve
+C15    : Holiday menu: gourmet items, desserts, festive non-alcoholic drinks
+D15    : Full year-end check
+E15    : Annual review and plan next year
+A17    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro

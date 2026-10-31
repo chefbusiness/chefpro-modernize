@@ -383,6 +383,46 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (2026-10-31): Food Truck Checklists Kit Pro, duodécimo hermano vertical del Restaurant Checklists Kit Pro y primero del molde PLANO
+    // (SPEC checklists-kit/foodtruck D1-D4, $15). Gemelo del Kit de Tareas Recurrentes: Food Truck (/kit-tareas-food-truck).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-food-truck',
+    productos: {
+      es: { slug: 'kit-tareas-food-truck', vivo: true },
+      en: { slug: 'food-truck-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (2026-10-31): Bakery Checklists Kit Pro, decimotercer hermano vertical del Restaurant Checklists Kit Pro y segundo del molde PLANO
+    // (SPEC checklists-kit/bakery D1-D4, $15). Gemelo del Kit de Tareas Recurrentes: Panadería / Obrador (/kit-tareas-panaderia).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-panaderia',
+    productos: {
+      es: { slug: 'kit-tareas-panaderia', vivo: true },
+      en: { slug: 'bakery-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (2026-10-31): Seafood Restaurant Checklists Kit Pro, decimocuarto hermano vertical del Restaurant Checklists Kit Pro y tercero y último del molde PLANO
+    // (SPEC checklists-kit/seafood D1-D4, $15). Gemelo del Kit de Tareas Recurrentes: Marisquería con Vivero y APPCC (/kit-tareas-marisqueria).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-marisqueria',
+    productos: {
+      es: { slug: 'kit-tareas-marisqueria', vivo: true },
+      en: { slug: 'seafood-restaurant-checklist-templates', vivo: true },
+    },
+  },
+  {
+    // Tienda EN (2026-10-31): Fine Dining Checklists Kit Pro, decimoquinto hermano vertical del Restaurant Checklists Kit Pro y molde v2.0 híbrido como el hotel
+    // (SPEC checklists-kit/finedining D1-D4, $19). Gemelo del Kit de Tareas Recurrentes: Restaurante Creativo / De Autor (/kit-tareas-restaurante-creativo).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-restaurante-creativo',
+    productos: {
+      es: { slug: 'kit-tareas-restaurante-creativo', vivo: true },
+      en: { slug: 'fine-dining-checklist-templates', vivo: true },
+    },
+  },
+  {
     // Tienda EN (24-oct-2026): Chocolate Shop Checklists Kit Pro, octavo hermano vertical del Restaurant Checklists Kit
     // Pro (SPEC checklists-kit/chocolate D1-D4). Gemelo del Kit de Tareas Chocolatería. vivo: true en la rama, que se
     // fusiona cuando existe el Payment Link (mismo criterio que los siete hermanos anteriores).
