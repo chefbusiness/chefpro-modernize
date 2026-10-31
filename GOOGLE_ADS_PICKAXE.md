@@ -237,6 +237,12 @@ No entran en conflicto. Pero conviene saber que existe: si algún día se quiere
 importar conversiones desde GA4 en vez de medirlas con la etiqueta de Ads, la
 propiedad ya está ahí. Ojo con no acabar contando la misma alta dos veces.
 
+La web de marketing (`aichef.pro`, Astro) mide con **`G-7SWN171DEX`**:
+`GoogleTag.astro` y el `purchase` de `src/lib/medicion-compra.ts`. Esa
+propiedad no va en el snippet de Pickaxe. `G-KVMQGZ1PH4` se queda en la app
+(`app.aichef.pro` y el resto de workspaces que ya lo traían): no es la
+propiedad de la web y no hay que copiarla a `GoogleTag`.
+
 ---
 
 ## La campaña optimizaba hacia una señal muerta

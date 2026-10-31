@@ -5,8 +5,9 @@
  * respuesta trae `purchase` (Checkout Session pagada). El magic link `?jwt=`
  * y las compras cripto no lo traen.
  *
- * Google Ads ya tiene label. GA4 y Meta siguen vacíos: esos canales no se
- * disparan y no hacen esperar al dashboard.
+ * Google Ads ya tiene label. GA4 (`G-7SWN171DEX`) se configura en todo el sitio
+ * desde `GoogleTag.astro` y aquí solo añade el `purchase`. Meta sigue vacío:
+ * no se dispara y no hace esperar al dashboard. El `purchase` tampoco espera.
  */
 
 /** Misma cuenta que `GOOGLE_ADS_ID` en astro-site/src/components/GoogleTag.astro. */
@@ -18,8 +19,12 @@ export const GOOGLE_ADS_ID = 'AW-17829651892';
  */
 export const GOOGLE_ADS_PURCHASE_LABEL = 'ARzvCKiTuq8dELTL67VC';
 
-/** ID GA4 (`G-…`). En el repo no hay ninguno. Vacío = no se envía `purchase`. */
-export const GA4_MEASUREMENT_ID = '';
+/**
+ * Propiedad GA4 de aichef.pro. La misma cadena va en `GoogleTag.astro`, que
+ * hace el `gtag('config')` de cada página (Consent Mode ya fijado). Vacío =
+ * no se envía `purchase`.
+ */
+export const GA4_MEASUREMENT_ID = 'G-7SWN171DEX';
 
 /** Píxel de Meta. Vacío = no se carga fbevents.js ni se envía `Purchase`. */
 export const META_PIXEL_ID = '';
@@ -171,8 +176,11 @@ export function medirCompraVerificada(compra: CompraVerificada, itemName: string
       }));
     }
     if (puedeGtag && ga4) {
+      // `send_page_view: false`: GoogleTag ya mandó la página. `send_to` deja
+      // el purchase solo en GA4; la conversión de Ads sigue en el evento de arriba.
       gtag('config', GA4_MEASUREMENT_ID, { send_page_view: false });
       gtag('event', 'purchase', {
+        send_to: GA4_MEASUREMENT_ID,
         transaction_id: compra.transactionId,
         value: compra.value,
         currency: compra.currency,

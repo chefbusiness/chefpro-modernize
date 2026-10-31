@@ -42,13 +42,19 @@ antes de saltar al dashboard:
 - `GOOGLE_ADS_PURCHASE_LABEL = ARzvCKiTuq8dELTL67VC` — `send_to`
   `AW-17829651892/ARzvCKiTuq8dELTL67VC`, con `value`, `currency` (EUR en los
   cobros en euros; la de la sesión si Stripe cobra en otra) y `transaction_id`.
-- `GA4_MEASUREMENT_ID` vacío — en el repo no hay `G-…`. No se envía `purchase`.
+- `GA4_MEASUREMENT_ID = G-7SWN171DEX` — el mismo `gtag('config')` en
+  `GoogleTag.astro`, en todas las páginas. Consent Mode ya pone
+  `analytics_storage` según la cookie `aichef_consent` (denegado si no hay
+  «Aceptar»). Un solo loader `gtag/js` (el de Ads); no se añade otro script.
+  En el gate, el `purchase` lleva `send_to` de esa propiedad, `value`,
+  `currency` (EUR en los cobros en euros; la de la sesión si Stripe cobra en
+  otra), `transaction_id` e `items`. No espera: no retrasa el dashboard.
 - `META_PIXEL_ID` vacío — no se carga `fbevents.js`. Meta, si algún día hay ID,
   solo con la cookie `aichef_consent=accepted` (el Consent Mode de Google no lo cubre).
 
 `gtag` se encola con el consentimiento que ya fijó `GoogleTag.astro`. Con el
-label de Ads activo, el gate espera el `event_callback` o 800 ms. GA4 y Meta,
-mientras estén vacíos, no añaden espera.
+label de Ads activo, el gate espera el `event_callback` o 800 ms. El `purchase`
+de GA4 no añade espera. Meta, vacío, tampoco.
 
 ### Analítica: DataFast en todo el sitio (desde 2026-09-20)
 
