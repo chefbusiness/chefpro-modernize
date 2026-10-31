@@ -32,7 +32,7 @@ REPO = os.path.abspath(os.path.join(P, '..', '..'))
 DL = os.path.join(REPO, 'astro-site', 'public', 'dl')
 
 CONJUNTOS = [('business-plans-en', 'extraer_textos.py')] + [
-    ('business-plans-en-%d' % n, 'bp%d.py' % n) for n in range(2, 14)]
+    ('business-plans-en-%d' % n, 'bp%d.py' % n) for n in range(2, 15)]
 
 # (fichero mapas, variable OrderedDict de sha, carpeta de las claves)
 BLOQUES = [
@@ -50,6 +50,10 @@ BLOQUES = [
     ('business-plans-en-13/mapas_pol.py', 'SHA_TAQ', os.path.join(P, 'business-plans-en-12')),
     ('business-plans-en-13/mapas_pol.py', 'SHA_PIZ', os.path.join(P, 'business-plans-en-8')),
     ('business-plans-en-13/mapas_pol.py', 'SHA_ES', os.path.join(DL, 'plan-negocio-polleria')),
+    ('business-plans-en-14/mapas_sus.py', 'SHA_TAQ', os.path.join(P, 'business-plans-en-12')),
+    ('business-plans-en-14/mapas_sus.py', 'SHA_POL', os.path.join(P, 'business-plans-en-13')),
+    ('business-plans-en-14/mapas_sus.py', 'SHA_PIZ', os.path.join(P, 'business-plans-en-8')),
+    ('business-plans-en-14/mapas_sus.py', 'SHA_ES', os.path.join(DL, 'plan-negocio-sushi-bar')),
 ]
 SHA_JSON = [('business-plans-en-9/sha_piz.json', os.path.join(P, 'business-plans-en-8'))]
 RX_PAR = re.compile(r"\('([^']+)', '([0-9a-f]{64})'\)")
@@ -111,7 +115,7 @@ def remedir():
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[1])
-    ap.add_argument('--solo', default='', help='carpetas separadas por comas (por defecto, los 13 conjuntos)')
+    ap.add_argument('--solo', default='', help='carpetas separadas por comas (por defecto, los 14 conjuntos)')
     args = ap.parse_args()
     reextraer({x for x in args.solo.split(',') if x})
     remedir()
