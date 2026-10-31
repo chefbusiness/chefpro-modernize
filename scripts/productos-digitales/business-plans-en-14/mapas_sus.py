@@ -484,5 +484,7 @@ def instalar(M):
     M.NOTAS_F2 = os.path.join(AQUI, 'F2-NOTAS.md')
     # G4: el checklist ES del sushi bar ya nace con la DV "✓,☐,N/A" (parche del 30-oct en la semilla, medido el 31-oct) y
     # las 80 celdas OK en «☐»: el EN la copia tal cual; sin la clave «—» → ☐ de los conjuntos taq/pol (F1-camino §6).
-    # Sin términos con artículos del español que retirar del detector de restos (la jerga japonesa no los lleva)
+    # La jerga japonesa no lleva artículos del español; lo único que se retira del detector de restos es la frase sintética
+    # del autotest de ensamblar_docx («… of the sus plan for the assembly test»: «sus» = clave del plan, y es funcional ES)
+    M.RX_LUGARES_US = re.compile(M.RX_LUGARES_US.pattern + r'|\bof the sus plan for the assembly test\b')
     completar(M)

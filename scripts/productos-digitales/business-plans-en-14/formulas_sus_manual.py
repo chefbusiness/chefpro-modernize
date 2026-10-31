@@ -2,7 +2,7 @@
 """
 formulas_sus_manual.py — las fórmulas con texto de SUSP SIN gemela (F1-camino §6): las 4 que el sushi bar ES escribe
 distinto de la taquería ES (medido el 31-oct sobre 51060183: C50, D27, D37 y F13, las mismas 4 que la taquería frente a la
-pizzería). `derivar_formulas_sus.py` las deja pendientes; aquí, el EN del Taco EN (`../business-plans-en-12/
+pizzería) + C9 (troceo, revisión de gates). `derivar_formulas_sus.py` las deja pendientes; aquí, el EN del Taco EN (`../business-plans-en-12/
 formulas_taq_manual.py`), con las MISMAS referencias y la misma lógica que el ES (sesión Claude Code, 31-oct-2026, F2-EN):
 
   C50   rotaciones: incluye take-out y delivery (1 order = 1.6 covers, = ES), que no ocupan mesa; sin la cifra del caso ES
@@ -10,12 +10,19 @@ formulas_taq_manual.py`), con las MISMAS referencias y la misma lógica que el E
   D27   imprevistos sobre las partidas de OBRA del bloque (filas 7-11 = B35 de la amortización), rótulos de datos_sus
         (el hood de ≈ 10 ft) y «the sushi case, the rice cookers, the equipment…» fuera.
   D37   = Taco EN (lo que no se amortiza: filas 22, 23, 24, 25, 26 y 29; miles con «#,##0»).
+  C9    = Taco EN con el literal de 262 caracteres troceado A MANO antes de «In the UK…» (= Rotisserie EN): si lo trocea
+        inject_cache a 255, «VAT.» queda en un trozo sin «UK» y el veto «VAT fuera de la nota UK» salta (G2 y barrido).
   F13   nota del food cost del sushi (pescado, arroz, nori, imitation crab, aguacate…) sin los tipos de IVA y con la
         calculadora del kit.
 Cada literal ≤ 255 caracteres (Excel): los largos van troceados con «"…"&"…"».
 """
 
 MANUAL = {
+    'SUSP|0. Supuestos|C9': (
+        '=IFERROR("Average check excl. sales tax plus the weighted sales tax of your sales lines ("&TEXT(SUMPRODUCT(\'3-Year '
+        'P&L\'!$E$10:$E$11,\'3-Year P&L\'!$G$10:$G$11)*100,"0")&"%), rounded. In the US, menu prices usually exclude sales tax '
+        'and it is added at the register; the beverage share in column H of the beverage line of the P&L only moves this '
+        'average if your state taxes alcohol at another rate. "&"In the UK, menu prices include VAT.","")'),
     'SUSP|0. Supuestos|C50': (
         '=IFERROR("That is "&TEXT(INT(ROUND(B50,1)),"0")&"."&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),"0")&" seat turns '
         'per day on the "&TEXT($B$51,"0")&" seats in the cell below. "&"It includes the take-out and delivery covers (1 '

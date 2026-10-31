@@ -192,7 +192,9 @@ def _frases_es():
         (r'(?i)€|\bEUR\b', 'moneda ES'),
         (r'(?i)\b79 (?:covers|guests|customers|diners|orders)\b', 'caso ES (79 comensales/día)'),
         (r'(?i)\b36 (?:seats|covers)\b', 'caso ES (36 plazas)'),
-        (r'(?<![\d$])20[.,]00\b(?!\s?(?:lb|oz|%))', 'ticket ES (20,00 €)'),
+        # ticket ES: solo como check/ticket o con «€» (gates F2: «7.50 · 20.00 · 23.00 $/lb» de la calculadora es un precio US)
+        (r'(?i)(?:check|ticket)[^.;$]{0,20}(?<![\d$])20[.,]00\b|(?<![\d$])20[.,]00\s?(?:€|EUR|per (?:cover|guest|diner))',
+         'ticket ES (20,00 €)'),
         (r'(?i)\b300 (?:opening )?days\b', 'días del ES (300; el caso US abre 310)'),
         (r'(?i)\b14 (?:pay periods|payments|paychecks|salaries|monthly)', 'pagas del ES (14 pagas)'),
         (r'(?i)(?:payroll|social security|employer)[^.;]{0,60}?\b33\s?%', 'Seguridad Social del ES (33 %)'),
