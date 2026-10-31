@@ -112,6 +112,8 @@ SCRATCH = os.environ.get(
 #: de `calculadora_pol.py` (business-plans-en-13, F1-camino §6-§7 de plan-polleria).
 #: sushi-restaurant-business-plan: Sushi Restaurant Business Plan Kit (EN), ídem + la calculadora de `calculadora_sus.py`
 #: (business-plans-en-14, F1-camino §6-§7 de plan-sushi).
+#: burger-restaurant-business-plan: Burger Restaurant Business Plan Kit (EN), ídem + la calculadora de `calculadora_bur.py`
+#: (business-plans-en-15, F1-camino §6-§7 de plan-hamburgueseria).
 #: food-cost-menu-engineering-guide: Food Cost + Menu Engineering Guide (EN), traducción por celda de los 8 xlsx de la
 #: guía ES (SPEC guia-food-cost-en D12: Letter, metadatos EN, «Instructions»); no lleva el vocabulario ES de la casilla.
 #: how-to-open-a-pastry-shop: How to Open a Pastry Shop (EN), traducción por celda de los 8 xlsx de la guía ES
@@ -147,6 +149,7 @@ EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'taco-shop-business-plan',
              'rotisserie-chicken-restaurant-business-plan',
              'sushi-restaurant-business-plan',
+             'burger-restaurant-business-plan',
              'restaurant-checklist-templates', 'bar-checklist-templates', 'coffee-shop-checklist-templates',
              'catering-checklist-templates', 'pizza-shop-checklist-templates', 'burger-joint-checklist-templates',
              'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',
