@@ -28,7 +28,7 @@ DV `"✓,—,N/A"` en la columna E (7 hojas, 126 celdas) y CF `$E4="✓"` (7); 0
 **Tareas: 141** (01-08) + 12 meses del B02 = las 153 de la SPEC CB. `extraer_textos`, `heredar` y `mapas_foodtruck`
 (autotest + `cruzar_censo`: **0 errores**) sirven tal cual. **Código común tocado en F1: ninguno** (solo `kit.py`).
 
-### 0.1 Ganchos de F2 (molde plano; los leen `mapas.MOLDE = 'plano'`, `CELDA_TITULO = 'A2'`, `FILA_CABECERA = 3`)
+### 0.1 Ganchos de F2 (molde plano; HECHOS en `f35b7355`, regresión 15/15 idéntica: `F2-NOTAS.md`)
 
 Sin ellos `aplicar_en.py` aborta (escribe `Instrucciones!B2`) y `gates_en.py` da rojos falsos. Todos condicionados a
 `MOLDE == 'plano'` → regresión byte a byte de `gates_en.py --kit <v>` sobre los 12 publicados (base + 11), como la taquería.
