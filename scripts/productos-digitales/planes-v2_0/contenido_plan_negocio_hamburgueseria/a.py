@@ -129,11 +129,11 @@ SUPUESTOS = {
     'coste_comida': (
         None, None, 0.28, None,
         'Materia prima de la comida sobre sus ventas: un 28 %, el lado prudente. El escandallo teórico de la '
-        'calculadora del pack sale en un 24 % de media ponderada (la smash doble con queso, en un 27 %; la ración de '
-        'patatas congeladas, en un 8 %), pero la cuenta real es lo que compras frente a lo que vendes: las bolas, el pan '
-        'y las salsas que se tiran al cierre suman un punto y medio; las comidas del personal, las invitaciones, los '
-        'errores y las reclamaciones de la plataforma, otro punto y medio, y las promociones de la plataforma (el dos '
-        'por uno, la primera compra), un punto más. La carne es un precio estimado por el kit. Mide tu consumo el primer '
+        'calculadora del pack sale en un 24,4 % de media ponderada (la smash doble con queso, en un 26,8 %; la ración '
+        'de patatas congeladas, en un 8 %), pero la cuenta real es lo que compras frente a lo que vendes: entre la '
+        'receta y la caja se pierden las bolas, el pan y las salsas que se tiran al cierre, las comidas del personal, '
+        'las invitaciones, los errores y las reclamaciones de la plataforma y sus promociones (el dos por uno, la '
+        'primera compra), unos 4 puntos en el caso. La carne es un precio estimado por el kit. Mide tu consumo el primer '
         'trimestre y cambia esta celda: cada punto vale unos 3.800 € al año',
         'R §2-§3 [criterio del plan] · calculadora (FC_PONDERADO, FC_DOBLE, FC de la patata congelada)'),
     'coste_bebida': (
@@ -154,7 +154,7 @@ SUPUESTOS = {
         'Ventas por PLATAFORMA con su reparto (Glovo, Just Eat, Uber Eats) sobre el total: unos 12 pedidos al día. Lo '
         'que se recoge en el local (unos 13 pedidos al día, por la web o por teléfono) NO paga comisión y no va aquí: '
         'empújalo. La hamburguesa viaja bien; las patatas, peor (cucurucho ventilado y fritas al final). Si la '
-        'plataforma llegara a un tercio de las ventas, pagarías unos 12.300 € más de comisión al año',
+        'plataforma llegara al 33 % de las ventas, pagarías unos 12.300 € más de comisión al año',
         'R §3 [criterio del plan] · F1-camino §2 (0,24 < 0,25 de la demo §2.11.9)'),
     'comision_delivery': (
         None, None, 0.30, None,

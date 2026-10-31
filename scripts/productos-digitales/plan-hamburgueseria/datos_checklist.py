@@ -214,7 +214,7 @@ FASES = [
          'que lo haces'),
         ('Aceite de fritura: compuestos polares por debajo del 25 % y registro de cambios',
          'Cocinero/a de montaje y freidora', 'Antes de abrir',
-         'Los compuestos polares tienen que quedar por debajo del 25 %, nada se añade al baño y el aceite usado no vuelve '
+         'Los compuestos polares tienen que quedar por debajo del 25 %, no se añade al baño nada ajeno al aceite y el usado no vuelve '
          'a la cocina (Orden de 26 de enero de 1989, arts. 6.3 y 9). La norma no te obliga a tener un medidor: tu APPCC '
          'elige tiras, medidor o cambio por frecuencia. Filtra, rellena y anota cada cambio'),
         ('Salsas cocinadas y elaboraciones en caliente: 63 °C, enfriado y recalentado', 'Cocinero/a de montaje y freidora',
@@ -281,10 +281,10 @@ FASES = [
     ]),
     ('F5 - Carta, marca y delivery', 'FASE 5: CARTA, MARCA, DELIVERY Y PROVEEDORES (semanas 8-16)', [
         ('Carta corta de unas 14 referencias y el menú', 'Jefe/a de plancha', 'Semana 8',
-         'Seis smash (simple, doble, triple, con bacon, con cebolla a la plancha y la de la casa), un pollo crujiente, '
-         'una vegetal, patatas clásicas y cargadas, tres salsas, tres batidos, refrescos, cerveza de tirador, agua y dos '
-         'postres, más el menú de doble con patatas y bebida. Una carta de 12 hamburguesas y 6 salsas llena la cámara de '
-         'pan y de ingredientes que se tiran'),
+         'Seis smash (simple, doble, triple, con bacon, estilo Oklahoma y la de la casa), un pollo crujiente, una vegetal, '
+         'patatas clásicas y cargadas, batido, postre, el menú de doble con patatas y bebida y el pedido para dos: las 14 '
+         'filas del escandallo de la calculadora. Aparte, tres salsas, refrescos, cerveza de tirador y agua. Una carta de '
+         '12 hamburguesas y 6 salsas llena la cámara de pan y de ingredientes que se tiran'),
         ('Escandallo de cada hamburguesa y del menú por canal', 'Jefe/a de plancha', 'Semanas 10-14',
          'Con la calculadora de la carne, las patatas y el escandallo del pack: el coste de cada producto, siempre sobre '
          'el precio SIN IVA, y el margen en sala, para llevar y en plataforma. En plataforma, el margen del menú cae '

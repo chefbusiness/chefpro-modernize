@@ -103,7 +103,7 @@ ENT_C = [
     ('mc', 'Merma de cocción en plancha (% del peso de la bola)', PCT, 0.25, False,
      'Sin fuente: mídelo. Pesa 10 bolas antes de la plancha y después, y usa la media. Solo cambia los gramos servidos.' + EST),
     ('hh', 'Coste por hora del cocinero (€/h)', EUR, 16.0, False,
-     '23.000 € brutos al año + 33 % de cargas ÷ 1.840 h ≈ 16 €/h (un cocinero de cadena gana de 22.000 a 25.000 €).' + EST),
+     '22.000 € brutos al año (lo más bajo de un cocinero de cadena, que gana de 22.000 a 25.000 €) + 33 % de cargas ÷ 1.840 h ≈ 16 €/h.' + EST),
     ('bc', 'Bolas por comensal', '#,##0.00', 1.6, False,
      'Criterio del plan, mídelo: con el 90 % de tus comensales en sencilla o doble y los menús, salen unas 1,6 bolas por comensal.' + EST),
     ('cd', 'Comensales equivalentes al día', ENT, 95, False,
@@ -569,7 +569,7 @@ def hoja_patatas(wb):
     ws.row_dimensions[2].height = 32
     _f(ws, 'A3', 'AVISO FIJO. Acrilamida (Reglamento (UE) 2017/2158): fríe a menos de 175 °C, guarda la patata fresca a más de 6 °C, remójala o '
                  'escáldala antes de freírla y compara el color con la guía de colores de patatas. Aceite (Orden de 26 de enero de 1989): polares '
-                 'por debajo del 25 %, sin añadir aceite nuevo al baño usado y entregado a un gestor autorizado; la norma no obliga a tener un medidor.',
+                 'por debajo del 25 %, nada ajeno al aceite añadido al baño y el usado, a un gestor autorizado; la norma no obliga a tener un medidor.',
        wrap=True, b=True, fill=GRIS)
     ws.merge_cells('A3:I3')
     ws.row_dimensions[3].height = 50
@@ -669,7 +669,7 @@ def hoja_escandallo(wb):
                           'plataforma, además, se sube el precio con el recargo y se descuenta la comisión sobre ese precio. El margen se ordena por '
                           'el de sala. AVISO FIJO: las patatas viajan mal; en la plataforma, envase ventilado o déjalas fuera del pedido de reparto. '
                           'El menú se calcula con un solo IVA, el de la comida; si vendes mucha bebida, separa las dos bases. Este coste es TEÓRICO: '
-                          'el plan de negocio trabaja con un 28 %%, el lado prudente; la diferencia entre la receta y la caja está explicada en la '
+                          'el plan de negocio trabaja con un 28 %, el lado prudente; la diferencia entre la receta y la caja está explicada en la '
                           'hoja «Instrucciones».', i=True, wrap=True)
     ws.merge_cells('A%d:%s%d' % (E_FIN, CRK, E_FIN))
     ws.row_dimensions[E_FIN].height = 66
@@ -735,8 +735,8 @@ def instrucciones():
         ('3. Con %s raciones al día (comensales × 0,8) necesitas unos %s kg de patata congelada al día, o %s kg de fresca sin pelar, y unos %s litros '
          'de aceite al mes.' % (_n(a['rac_dia'], 0), _n(a['kg_cong_dia'], 1), _n(a['kg_fre_dia'], 1), _n(a['l_mes'], 0)), False),
         ('4. Acrilamida (Reglamento (UE) 2017/2158): fríe a menos de 175 °C, guarda la patata fresca a más de 6 °C, remójala o escáldala antes de '
-         'freírla y compara el color con la guía de colores de patatas. Aceite (Orden de 26 de enero de 1989): polares por debajo del 25 %, sin '
-         'añadir aceite nuevo al baño usado y entregado a un gestor autorizado; la norma no obliga a tener un medidor, pero conviene medir.', False),
+         'freírla y compara el color con la guía de colores de patatas. Aceite (Orden de 26 de enero de 1989): polares por debajo del 25 %, nada '
+         'ajeno al aceite añadido al baño y el usado, a un gestor autorizado; la norma no obliga a tener un medidor, pero conviene medir.', False),
         ('HOJA «ESCANDALLO»', True),
         ('1. Escribe el IVA, el food cost objetivo, el margen de vigilancia, qué carne y qué patata usas (los números de las hojas anteriores), el '
          'pan, el queso, las cajas de para llevar y de plataforma, el recargo y la comisión de la plataforma.', False),
@@ -758,10 +758,10 @@ def instrucciones():
         ('Tu comparación real es esta: las compras de comida del mes ÷ las ventas de comida sin IVA del mes. Si después del primer trimestre sale '
          'por encima o por debajo del 28 %, cambia la celda de coste de mercancía sobre las ventas de comida del plan.', False),
         ('PRECIOS, IVA Y FUENTES', True),
-        ('El IVA de la comida preparada para consumir en el local, para llevar o a domicilio es el 10 % (Ley 37/1992, art. 91). Las bebidas con '
-         'azúcares o edulcorantes que salen del local, también las zero, llevan el 21 %: esta calculadora usa un solo IVA, el de la comida. Los '
+        ('El IVA de la comida preparada para consumir en el local, para llevar o a domicilio es el 10 % (Ley 37/1992, art. 91). La cerveza y los '
+         'refrescos con azúcares o edulcorantes añadidos que salen del local, también los zero, van al 21 %: esta calculadora usa un solo IVA, el de la comida. Los '
          'importes van sin IVA, salvo el precio de carta.', False),
-        ('Cocción. La norma no fija una cifra para la hamburguesa: la AESAN recomienda 70 °C durante 2 minutos como mínimo, tu APPCC decide el '
+        ('Cocción. La norma no fija una cifra para la hamburguesa: la AESAN recomienda 70 °C o más durante al menos 2 minutos, tu APPCC decide el '
          'punto crítico con una sonda y la smash fina sale hecha por su grosor.', False),
         ('Los precios y rendimientos salen del estudio de mercado del kit (octubre de 2026): carne picada y patata de minorista y mayorista, queso y '
          'pan de minorista y la carta de varias hamburgueserías de smash como referencia de precios. Ninguna cifra de esta calculadora es un dato '

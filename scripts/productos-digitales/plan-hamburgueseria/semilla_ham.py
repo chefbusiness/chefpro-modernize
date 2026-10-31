@@ -76,7 +76,7 @@ INVERSION = [
      'Agua fría y caliente en la cocina, desagües con separador de grasas, climatización de la sala y la instalación '
      'de gas de la plancha por una empresa instaladora habilitada, con su certificado (RD 919/2006)', 'Sí'),
     ('Plancha fry-top de acero a gas y tostador de pan', 4000,
-     'La plancha de acero (fry-top) donde se aplasta cada bola: una de 80 cm va de unos 771 a 1.399 € sin IVA según la '
+     'La plancha de acero (fry-top) donde se aplasta cada bola: una de 60 a 80 cm va de unos 771 a 1.399 € sin IVA según la '
      'gama; el caso cuenta una de 100 cm, más el tostador del pan. Estimación del kit', 'Sí'),
     ('Dos freidoras eléctricas de doble cuba y mantenedor de patatas', 3500,
      'Dos freidoras para no mezclar las patatas con los rebozados (alérgenos y contacto cruzado) y el mantenedor de '
