@@ -48,3 +48,20 @@ Rama con `origin/main` fusionado (PR #186: `inject_cache` trocea literales > 255
 - Ninguna traducción tocada: G1.json salió limpio en G2 (español, términos prohibidos, «[criterio del kit]»), G4 y G7.
 
 Erratas del ES: las de `SPEC.md` §5 (orden cono / montaje del 01, gas mensual del 07 y el B02, horas fuera de orden).
+
+## Ronda de revisión final (31-oct · sesión Claude Code; revisión adversarial: 0 bloqueantes)
+
+Aplicado (`1cc0175b` textos y mapas, `3ea32be7` remontaje): **M1** línea del trompo alineada con el 02 — 01 «Taco Shop
+Opening»: cono 9:30 AM (B13) → montaje 9:45 AM (B14) → encendido 9:50 AM (B15; el ES lo tenía en B13 a las 10:50),
+plancha, freidora y cuchillo con sus horas del ES (`POR_CELDA` B13-B15 y E13-E15; `c0053` sale de G1.json); 06 «Taquero
+(Trompo)»: 9:30 / 9:45 / primera sonda 10:20 AM / segunda a mitad de turno 2:00 PM (`POR_CELDA` E6-E9). Sin cifras nuevas
+de cocción. **M2** alérgenos: 03 B18 «tree nuts (almonds, pecans, walnuts)» y B20 con los 9 explícitos (marisco, pescado,
+huevo, leche y soja en rebozados, crema y adobos). **Menores** (G1.json): driver en su propia hoja (135 °F al recoger),
+recalentado a 165 °F en 2 h del trompo reutilizado (y en su ADAPTAR), alergias «when taking each order», salsas en primera
+persona, estado del aceite (color, olor, espuma), «the corn mill», «catering and large-order forecast» (01, 05 y B01),
+variedades «or your distributor's equivalents». **No aplicado**: el orden Grito / chiles en nogada del 08 (mover dos filas
+traducidas a `POR_CELDA`; queda el orden del ES) y las horas desordenadas del ES (SPEC §5).
+
+Resultado: extraer_textos con ids estables (solo `c0053` pasa a GM), 457 pendientes; montaje con 0 diferencias de
+idempotencia; **gates VERDE 8/0** (dry-run y publicado), **autotest 16/16**, censo-entregables y no-latinos 0, LIT255
+verde; volcados `revision/dump_en.txt` y `dump_es.txt` (2.560 líneas cada uno).
