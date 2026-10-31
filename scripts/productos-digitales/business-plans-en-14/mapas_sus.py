@@ -479,7 +479,8 @@ def instalar(M):
                         os.path.join(BP2, 'F1-research-us-delta.md'), os.path.join(BP2, 'SPEC-delta.md'),
                         os.path.join(PIZ, 'F1-research-us-delta.md'), os.path.join(PIZ, 'SPEC-delta.md'),
                         os.path.join(TAQ, 'F1-research-us-delta.md'), os.path.join(POL, 'F1-research-us-delta.md'),
-                        os.path.join(AQUI, 'F1-research-us-delta.md')]
+                        os.path.join(AQUI, 'F1-research-us-delta.md'),
+                        os.path.join(AQUI, 'cifras_calculadora.md')]      # caché de la calculadora EN (F2-NOTAS §3)
     M.NOTAS_F2 = os.path.join(AQUI, 'F2-NOTAS.md')
     # G4: el checklist ES del sushi bar ya nace con la DV "✓,☐,N/A" (parche del 30-oct en la semilla, medido el 31-oct) y
     # las 80 celdas OK en «☐»: el EN la copia tal cual; sin la clave «—» → ☐ de los conjuntos taq/pol (F1-camino §6).
