@@ -186,7 +186,7 @@ ESC_IN = [
     ('iva', 'IVA de la comida (%)', PCT, 0.10, 'Comida preparada, en sala, para llevar y a domicilio: 10 % (Ley 37/1992, art. 91).'),
     ('obj', 'Food cost objetivo (% sobre el precio sin IVA)', PCT, 0.30, 'Objetivo de la carta del sushi bar.' + EST),
     ('tol', 'Margen de vigilancia sobre el objetivo (puntos)', PCT, 0.05, 'Hasta este margen por encima del objetivo, el semáforo dice «Vigila el coste».'),
-    ('cl', 'Caja para llevar por pedido (€, sin IVA)', EUR, 0.40, 'Bandeja, tapa, bolsa, salsas y palillos de un pedido para llevar.' + EST),
+    ('cl', 'Caja para llevar por pedido (€, sin IVA)', EUR, 0.40, 'Bandeja, cierre, bolsa, salsas y palillos de un pedido para llevar.' + EST),
     ('cp', 'Caja de plataforma por pedido (€, sin IVA)', EUR, 0.90, 'Envase de reparto más sellado.' + EST),
     ('rec', 'Recargo de precio en la plataforma (%)', PCT, 0.15, 'Lo que subes el precio en la plataforma para compensar.' + EST),
     ('com', 'Comisión de la plataforma de reparto (%)', PCT, 0.30, 'Sobre el precio sin IVA del pedido. Revisa tu contrato.' + EST),
@@ -514,8 +514,8 @@ def hoja_arroz(wb):
                  'estimación del kit, editable: pesa tus bolas de shari y cambia los gramos por los tuyos.', wrap=True)
     ws.merge_cells('A2:I2')
     ws.row_dimensions[2].height = 32
-    _f(ws, 'A3', 'AVISO FIJO. El pH de cada tanda se registra en el Kit de Tareas Sushi Bar (hoja 03). Con el pH y el tiempo de tu APPCC validado '
-                 'decides si el shari se mantiene a temperatura ambiente (RD 1086/2020, art. 30.5); si no, va refrigerado.', wrap=True, b=True, fill=GRIS)
+    _f(ws, 'A3', 'AVISO FIJO. El pH de cada tanda se registra en el Kit de Tareas Sushi Bar (hoja 03). El shari a temperatura ambiente, sólo '
+                 'si tu APPCC lo justifica con el pH de cada tanda y un tiempo máximo y lo demuestras a sanidad (RD 1086/2020, art. 30.5); si no, refrigerado.', wrap=True, b=True, fill=GRIS)
     ws.merge_cells('A3:I3')
     ws.row_dimensions[3].height = 36
     _bloque(ws, 'A. EL ARROZ Y EL SHARI', ENT_A, M_A, M_RA, SAL_A, S_A, ('kgs', 'cs', 'nigkg', 'arroz_dia'))
@@ -658,7 +658,7 @@ INSTRUCCIONES = [
      'uramaki, un temaki y un poke.', False),
     ('2. Los resultados clave son los kilos de shari por kilo de arroz crudo (2,42 con los valores del kit), el coste por kilo de shari y los '
      'nigiris que das por cada kilo de arroz crudo. Con eso sabes cuánto arroz tienes que comprar al día para tus comensales.', False),
-    ('3. Seguridad del shari. A temperatura ambiente solo puede mantenerse con el APPCC validado y comunicado a sanidad (RD 1086/2020, art. 30.5); '
+    ('3. Seguridad del shari. A temperatura ambiente solo puede mantenerse si tu APPCC lo justifica y lo demuestras a sanidad (RD 1086/2020, art. 30.5); '
      'si no, se mantiene refrigerado. El pH de 4,6 o menos es el límite crítico del APPCC del Kit de Tareas Sushi Bar, no una cifra legal. '
      'El pH de cada tanda se registra en el Kit de Tareas Sushi Bar (hoja 03).', False),
     ('HOJA «ESCANDALLO»', True),

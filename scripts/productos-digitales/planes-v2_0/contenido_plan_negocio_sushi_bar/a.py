@@ -507,7 +507,7 @@ INSTRUCCIONES = {
          'Real Decreto 1021/2022, art. 8',
          'O que llegue tratado de una etapa anterior con su documento, o de acuicultura libre de anisakis acreditada por '
          'escrito. Y hay que informar al cliente en la carta o en un cartel (art. 8.2)'),
-        ('Shari a temperatura ambiente', 'Sólo con una temperatura validada ante sanidad',
+        ('Shari a temperatura ambiente', 'Sólo con una temperatura justificada ante sanidad',
          'Real Decreto 1086/2020, art. 30.5',
          'La comida preparada se refrigera, se mantiene a 63 °C o más o se sirve cuanto antes (RD 1086/2020, art. 30.2). '
          'El shari a '

@@ -171,7 +171,7 @@ FASES = [
          'Mide la temperatura de cada entrega y rechaza la que llegue fuera de la que fije tu APPCC. Con el atún, la '
          'caballa y el bonito, la cadena de frío desde la recepción es la defensa contra la histamina, que no se va ni '
          'con la congelación ni con la cocción'),
-        ('Shari: temperatura validada ante sanidad o refrigerado', 'Consultor / Titular', 'Antes de abrir',
+        ('Shari: temperatura justificada ante sanidad o refrigerado', 'Consultor / Titular', 'Antes de abrir',
          'La comida preparada se refrigera, se mantiene a 63 °C o más o se sirve cuanto antes (RD 1086/2020, art. '
          '30.2). El shari a temperatura ambiente sólo si tu APPCC lo justifica con evidencias científicas y lo '
          'demuestras a sanidad (RD 1086/2020, art. 30.5), con el pH de cada tanda y un tiempo máximo. Si no, '
