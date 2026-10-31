@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "test": "node --test src/lib/date-placeholders.test.mjs"
+    "test": "node --experimental-strip-types --test src/lib/date-placeholders.test.mjs ../src/lib/medicion-compra.test.mjs ../netlify/shared/purchase-measurement.test.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",

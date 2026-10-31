@@ -1,5 +1,6 @@
 import type { Handler } from '@netlify/functions';
 import { validatePurchase } from '../shared/purchase-validation';
+import { purchaseFromSession } from '../shared/purchase-measurement';
 import { emailI18n, type TiendaLang } from '../shared/email-i18n';
 
 // ── Product config ──────────────────────────────────────────────
@@ -904,17 +905,23 @@ export const handler: Handler = async (event) => {
           console.error('sendAccessEmail failed:', err);
         });
 
+        // Solo una Checkout Session pagada. El gate lo usa para Ads/GA4/Meta
+        // y deduplica por transactionId. Sin importe o moneda no se incluye:
+        // el acceso sigue igual. Las compras cripto no llegan a esta rama.
+        const purchase = purchaseFromSession(session, productId);
+
         return {
           statusCode: 200,
           headers,
-          body: JSON.stringify({ valid: true, jwt: token }),
+          body: JSON.stringify(purchase ? { valid: true, jwt: token, purchase } : { valid: true, jwt: token }),
         };
       }
 
       return { statusCode: 403, headers, body: JSON.stringify({ valid: false }) };
     }
 
-    // Case 2: Verify existing JWT (magic link from email)
+    // Case 2: Verify existing JWT (magic link from email).
+    // No lleva `purchase`: reabrir el email no es una transacción nueva.
     if (existingJwt) {
       const jwt = (await import('jsonwebtoken')).default;
       try {
