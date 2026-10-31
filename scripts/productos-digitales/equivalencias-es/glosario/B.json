@@ -5804,5 +5804,61 @@
   "igual": [],
   "nota": "En EE. UU. se dice «station» o «línea» (line); en AR y CL el «sector» es la partida de cocina.",
   "confianza": "media"
+ },
+ {
+  "id": "batido",
+  "es": "batido, batidos",
+  "variantes": [
+   {
+    "termino": "malteada, malteadas",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CO",
+     "EC",
+     "PE",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "milkshake, batido",
+    "paises": [
+     "CL",
+     "AR"
+    ]
+   },
+   {
+    "termino": "batida (de fruta); malteada",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "milk-shake",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "VE",
+   "BO",
+   "UY",
+   "PY"
+  ],
+  "nota": "El de leche con helado: «malteada» en MX, Centroamérica, CO, EC y PE; en CL y AR se oye «milkshake». En DO «batida» es el de fruta.",
+  "confianza": "media",
+  "evidencia": [
+   "F0 hamburguesería §1: «malteada» MX 14.800/mes, CO 4.400, PE 1.300",
+   "F0 §1: «milkshake» ES 49.500 frente a «batido» 4.400"
+  ]
  }
 ]

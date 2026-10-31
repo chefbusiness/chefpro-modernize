@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Plan de Negocio: Hamburguesería Smash',
+    slug: '/plan-negocio-hamburgueseria',
+    price: '€35',
+    description: 'Plan de negocio completo para abrir una hamburguesería smash con sala, para llevar y a domicilio: plan financiero a 3 años en Excel de 9 hojas, plan en Word de 10 secciones, checklist de apertura de 80 tareas, calculadora de la carne, las patatas y el escandallo y la Guía de Equivalencias para Latinoamérica.',
+    features: [
+      'Plan de negocio en Word de 10 secciones',
+      'Plan financiero Excel de 9 hojas con tesorería mes a mes',
+      'Checklist de apertura: 80 tareas en 6 fases',
+      'Calculadora de la carne, las patatas y el escandallo y Guía de Equivalencias para Latinoamérica',
+    ],
+    icon: Sandwich,
+    image: '/lovable-uploads/ai-gallery/plan-hamburgueseria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'costes', 'hamburgueseria', 'plan-negocio'],
+  },
+  {
     name: 'Plan de Negocio: Sushi Bar',
     slug: '/plan-negocio-sushi-bar',
     price: '€35',
@@ -128,8 +145,8 @@ const products = [
     ],
     icon: Pizza,
     image: '/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'plantillas', 'costes', 'pizzeria', 'plan-negocio'],
   },
   {
@@ -1132,7 +1149,6 @@ const products = [
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
   { icon: BarChart3, name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
-  { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
   { icon: Flame, name: 'Tareas Recurrentes: Pollería y Pollo a la Brasa', desc: 'Espetones, tiempos de asado, mermas y despacho en hora punta, con las rutinas de cada turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
   { icon: Utensils, name: 'Tareas Recurrentes: Arepería', desc: 'Masa, rellenos, plancha y cierre: el día a día de una arepería puesto por escrito, turno a turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
   { icon: Beef, name: 'Plan de Negocio: Steakhouse / Restaurante de Carnes', desc: 'Local fijo con cámara de maduración y brasa: inversión, carta, escandallo y previsión.', tags: ['plan-negocio', 'restaurante', 'excel'], phase: 'Q1 2027' },
