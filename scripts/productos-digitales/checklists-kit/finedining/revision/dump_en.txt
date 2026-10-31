@@ -354,13 +354,13 @@ E22    : ✓
 F22    : Time
 G22    : Notes
 A23    : 1
-B23    : Long sous vide: meat cuts (48–72 hr at low temp.). Cook to the time and temperature of your validated recipe; if chilled and stored in the bag (reduced oxygen packaging), you need a HACCP plan or health department variance (FDA Food Code 3-502.11 / 3-502.12); chill from 135 °F to 70 °F within 2 hr and to 41 °F within 4 more hr (3-501.14)
+B23    : Long sous vide: meat cuts (48–72 hr at low temp.). Cook to the time and temperature of your validated recipe (FDA Food Code 3-401.11 time/temperature tables); if chilled and stored in the bag (reduced oxygen packaging), you need a HACCP plan or health department variance (FDA Food Code 3-502.11 / 3-502.12); chill from 135 °F to 70 °F within 2 hr and to 41 °F within 4 more hr (3-501.14)
 C23    : Kitchen
 A24    : 2
-B24    : Mid-lead sous vide: fish and shellfish (6–12 hr)
+B24    : Mid-lead sous vide: fish and shellfish (6–12 hr); if bagged and chilled or held (reduced oxygen packaging), a HACCP plan or health department variance (FDA Food Code 3-502.11 / 3-502.12); chill per 3-501.14
 C24    : Kitchen
 A25    : 3
-B25    : Slow confits (duck, pork, octopus)
+B25    : Slow confits (duck, pork, octopus); if bagged and chilled, the same HACCP plan or variance (FDA Food Code 3-502.11 / 3-502.12); chill per 3-501.14
 C25    : Kitchen
 A26    : 4
 B26    : Controlled aging in the cabinet (log the day)
@@ -995,10 +995,10 @@ A6     : 1
 B6     : Prepare the day's stocks and sauces
 C6     : Hot line
 A7     : 2
-B7     : Main cooking: proteins, hot sides
+B7     : Main cooking: proteins, hot sides; hot food held at 135 °F or above (FDA Food Code 3-501.16) — log reading: ____ °F
 C7     : Hot line
 A8     : 3
-B8     : Manage sous vide during service (rethermalize, sear)
+B8     : Manage sous vide during service (rethermalize, sear): cooked-and-chilled food reheated to 165 °F within 2 hr for hot holding (FDA Food Code 3-403.11); hold hot food at 135 °F or above (3-501.16)
 C8     : Hot line
 A9     : 4
 B9     : Meat finishing: searing, glazing, resting
@@ -1634,7 +1634,7 @@ B8     : ▸ Train the dining room team on the story behind each wine.
 B10    : Service protocol:
 B11    : ▸ The right glass for each type of wine/drink.
 B12    : ▸ Exact serving temperature.
-B13    : ▸ Pour per pairing glass (≈60–80 ml per course).
+B13    : ▸ Pour per pairing glass (≈2–2.5 fl oz (60–80 ml) per course).
 B15    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B16    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/fine-dining-checklist-templates · info@aichef.pro
 
@@ -1651,28 +1651,28 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Course 1 — Snack: wine/drink selected, glass, temp., ml
+B6     : Course 1 — Snack: wine/drink selected, glass, temp., oz
 C6     : Pairing
 A7     : 2
-B7     : Course 2 — Amuse-bouche: wine/drink, glass, temp., ml
+B7     : Course 2 — Amuse-bouche: wine/drink, glass, temp., oz
 C7     : Pairing
 A8     : 3
-B8     : Course 3 — Cold appetizer: wine/drink, glass, temp., ml
+B8     : Course 3 — Cold appetizer: wine/drink, glass, temp., oz
 C8     : Pairing
 A9     : 4
-B9     : Course 4 — Hot appetizer: wine/drink, glass, temp., ml
+B9     : Course 4 — Hot appetizer: wine/drink, glass, temp., oz
 C9     : Pairing
 A10    : 5
-B10    : Course 5 — Fish: wine/drink, glass, temp., ml
+B10    : Course 5 — Fish: wine/drink, glass, temp., oz
 C10    : Pairing
 A11    : 6
-B11    : Course 6 — Meat: wine/drink, glass, temp., ml
+B11    : Course 6 — Meat: wine/drink, glass, temp., oz
 C11    : Pairing
 A12    : 7
-B12    : Course 7 — Pre-dessert: wine/drink, glass, temp., ml
+B12    : Course 7 — Pre-dessert: wine/drink, glass, temp., oz
 C12    : Pairing
 A13    : 8
-B13    : Course 8 — Dessert: wine/drink, glass, temp., ml
+B13    : Course 8 — Dessert: wine/drink, glass, temp., oz
 C13    : Pairing
 A15    : 🍹 NON-ALCOHOLIC PAIRING
 A16    : #
@@ -1902,7 +1902,7 @@ E5     : ✓
 F5     : Time
 G5     : Notes
 A6     : 1
-B6     : Select the location and check the facilities (water, power, gas)
+B6     : Select the location and check the facilities (water, power, gas); temporary food event permit and health department approval; handwashing station and hot / cold holding on site
 C6     : Events
 A7     : 2
 B7     : List of portable equipment needed
@@ -3366,16 +3366,16 @@ B8     : Spring menu up and running. Easter and Passover (dates vary): high cove
 C8     : Artichokes, flowers, strawberries
 D8     : High
 A9     : May
-B9     : Graduations in full swing + Mother's Day (2nd Sunday): two of the fullest midday services of the year. Memorial Day (last Monday). Cherries, strawberries, loquats. Green asparagus. Bluefin tuna (start of season). Prep for the summer menu change.
-C9     : Bluefin tuna, cherries, asparagus
+B9     : Graduations in full swing + Mother's Day (2nd Sunday): two of the fullest midday services of the year. Memorial Day (last Monday). Strawberries, asparagus, morels, ramps, soft-shell crab (start of season). Prep for the summer menu change.
+C9     : Morels, ramps, asparagus
 D9     : High
 A10    : June
-B10    : SUMMER MENU CHANGE. Last graduations and weddings of the season. Seasonal tomatoes, peach, apricot. Signature gazpachos and cold soups. Father's Day (3rd Sunday). Patio / outdoor dinners.
+B10    : SUMMER MENU CHANGE. Last graduations and weddings of the season. Seasonal tomatoes, peach, apricot. Signature chilled soups. Father's Day (3rd Sunday). Patio / outdoor dinners.
 C10    : Tomato, peach, shrimp
 D10    : High
 A11    : July
 B11    : Summer menu established. Independence Day (Jul 4): decide your hours. Figs, melon, watermelon. Pairing with crisp wines and rosé wines. Culinary tourism: high covers.
-C11    : Figs, watermelon, oily fish
+C11    : Heirloom tomatoes, corn, stone fruit
 D11    : High
 A12    : August
 B12    : Peak summer occupancy. No federal holiday in August: stagger team vacations and set the schedules weeks in advance. Peppers, eggplant, zucchini. Signature ice creams (extra production). Prep for the fall menu change.

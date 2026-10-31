@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-31T01:58:55Z",
+  "generado": "2026-10-31T02:48:34Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-restaurante-creativo",
-  "commit": "faa06131",
+  "commit": "f5a8bb7d",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -73,7 +73,7 @@
   },
   "n_cadenas": 1006,
   "n_traducir": 784,
-  "n_adaptar": 55,
+  "n_adaptar": 60,
   "n_palabras_subagentes": 6875,
   "n_apariciones": 2309,
   "grupos": [
@@ -88,7 +88,7 @@
      "05"
     ],
     "n_cadenas": 416,
-    "n_adaptar": 30,
+    "n_adaptar": 34,
     "n_palabras": 3452
    },
    {
@@ -105,7 +105,7 @@
      "B02"
     ],
     "n_cadenas": 368,
-    "n_adaptar": 25,
+    "n_adaptar": 26,
     "n_palabras": 3423
    },
    {
@@ -3634,6 +3634,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": true,
+   "adaptar": "Sous vide en EE. UU.: cocción a la temperatura y el tiempo de tu receta validada; si se enfría y se guarda en bolsa (reduced oxygen packaging), HACCP plan o variance del departamento de salud (FDA Food Code 3-502.11 / 3-502.12); enfriado de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (3-501.14)",
    "pistas": [
     "Roner / baño térmico → immersion circulator (water bath); sous-vide → sous vide"
    ],
@@ -3657,6 +3658,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
+   "adaptar": "Sous vide en EE. UU.: cocción a la temperatura y el tiempo de tu receta validada; si se enfría y se guarda en bolsa (reduced oxygen packaging), HACCP plan o variance del departamento de salud (FDA Food Code 3-502.11 / 3-502.12); enfriado de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (3-501.14)",
    "sha1": "051990e9bd33",
    "donde": [
     {
@@ -7112,6 +7114,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
+   "adaptar": "Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
    "sha1": "dda8538d3fcc",
    "donde": [
     {
@@ -7132,6 +7135,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
+   "adaptar": "Lo cocinado y enfriado se recalienta a 165 °F en 2 h como máximo para mantenerlo en caliente (FDA Food Code 3-403.11) y se mantiene a 135 °F o más (3-501.16)",
    "pistas": [
     "Roner / baño térmico → immersion circulator (water bath); sous-vide → sous vide"
    ],
@@ -11923,6 +11927,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
+   "adaptar": "Evento fuera del local: temporary food event permit y aprobación del departamento de salud; lavamanos portátil y mantenimiento en frío y en caliente en el sitio",
    "sha1": "7b6c8d8a6a6b",
    "donde": [
     {
