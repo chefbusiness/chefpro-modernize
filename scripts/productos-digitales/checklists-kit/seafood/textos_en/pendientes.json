@@ -1,0 +1,2597 @@
+{
+ "meta": {
+  "kit": "seafood",
+  "producto": "Seafood Restaurant Checklists Kit Pro",
+  "n_pendientes": 213,
+  "n_palabras": 1311,
+  "motivos": {
+   "nueva": 213
+  },
+  "n_heredadas": 8,
+  "heredadas_por_via": {
+   "exacta": 8
+  },
+  "heredadas_por_fuente": {
+   "bakery": 4,
+   "foodtruck": 4
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "seafood/SPEC.md",
+   "foodtruck/SPEC.md §0 (molde plano)",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "seafood/mapas_seafood.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0010",
+   "es": "APERTURA — Vivero y Expositor",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura y Cierre · A4"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen",
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0012",
+   "es": "Verificar temperatura agua vivero (12-16°C segun especie)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura y Cierre · B5"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
+   ],
+   "adaptar": "Temperatura del agua del vivero (live tank) por especie, según tu proveedor y el fabricante del tanque (sin las cifras del ES, que son de especies europeas); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0014",
+   "es": "Comprobar oxigenacion y filtros del vivero",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B6"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0015",
+   "es": "Revisar estado de mariscos vivos (mortalidad, actividad)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0017",
+   "es": "Retirar ejemplares muertos y registrar mermas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B8"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0019",
+   "es": "Montar expositor de hielo picado sobre bandeja de acero",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura y Cierre · B9"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "adaptar": "Expositor sobre hielo escurrido (drained ice) a 41 °F o menos (FDA Food Code 3-501.16; 3-303.12); el hielo del expositor no se usa como ingrediente (FDA Food Code 3-303.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0020",
+   "es": "Colocar marisco fresco del dia por familias (crustaceos, moluscos, cefalopodos)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura y Cierre · B10"
+   ],
+   "pistas": [
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles",
+    "cefalópodos → cephalopods; pulpo → octopus; calamar → squid; sepia → cuttlefish; chipirones → baby squid"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0021",
+   "es": "Etiquetado de precios y procedencia (obligatorio por ley)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B11"
+   ],
+   "adaptar": "Precio y origen: en EE. UU. el origen en la carta no es obligatorio para un restaurante (salvo leyes estatales): estándar de la casa",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0023",
+   "es": "Verificar temperatura expositor (0-4°C)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B12"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "adaptar": "Expositor sobre hielo escurrido (drained ice) a 41 °F o menos (FDA Food Code 3-501.16; 3-303.12); el hielo del expositor no se usa como ingrediente (FDA Food Code 3-303.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0024",
+   "es": "APERTURA — Cocina",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura y Cierre · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0026",
+   "es": "Control temperatura camara pescado fresco (0-2°C)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "adaptar": "Frío: 41 °F o menos (FDA Food Code 3-501.16); congelado, 0 °F o menos; coletilla «— log reading: ____ °F»; pescado sobre hielo en el walk-in",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0027",
+   "es": "Control temperatura camara marisco vivo (variable por especie)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0028",
+   "es": "Control camara congelacion (-18°C o inferior)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "adaptar": "Frío: 41 °F o menos (FDA Food Code 3-501.16); congelado, 0 °F o menos; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0029",
+   "es": "Mise en place salsas: vizcaina, gallega, verde, romesco, ajada",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura y Cierre · B17"
+   ],
+   "adaptar": "Salsas de una marisquería US: cocktail sauce, mignonette, tartar, remoulade, drawn butter (en vez de vizcaína, gallega, verde, romesco y ajada)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0031",
+   "es": "Preparar caldo de pescado/fumets del dia",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B18"
+   ],
+   "pistas": [
+    "fumet → fish stock (fumet)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0033",
+   "es": "Verificar stock guarniciones: patatas, pimientos, grelos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0034",
+   "es": "Preparar mise en place plancha/parrilla",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B20"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0036",
+   "es": "Descongelar productos programados (FIFO, registro lote)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Descongelación (FDA Food Code 3-501.13): en el walk-in a 41 °F o menos o bajo agua fría corriente a 70 °F o menos; el pescado congelado al vacío (ROP) se saca de la bolsa al descongelar",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0037",
+   "es": "APERTURA — Sala",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura y Cierre · A22"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0038",
+   "es": "Montaje mesas: cuberteria marisco (tenazas, pinchos, finger bowls)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B23"
+   ],
+   "pistas": [
+    "tenazas → crackers; pinchos → seafood picks; baberos → bibs; finger bowls → finger bowls"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0039",
+   "es": "Verificar stock baberos, toallitas humedas, limones",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B24"
+   ],
+   "pistas": [
+    "tenazas → crackers; pinchos → seafood picks; baberos → bibs; finger bowls → finger bowls"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0040",
+   "es": "Preparar carta del dia con capturas frescas y precios",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura y Cierre · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0043",
+   "es": "Montar barra de aperitivos: navajas, almejas, zamburinas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B26"
+   ],
+   "pistas": [
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops"
+   ],
+   "adaptar": "Barra de aperitivos → raw bar: ostras y almejas sobre hielo. Moluscos (ostras, almejas, mejillones) solo de proveedores aprobados de la lista NSSP (Interstate Certified Shellfish Shippers List; FDA Food Code 3-201.15), con su etiqueta (tag) guardada 90 días (FDA Food Code 3-203.12)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0044",
+   "es": "Revisar reservas y asignar mesas (notas alergias marisco)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "Retirar marisco del expositor, almacenar en camara con hielo",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura y Cierre · B29"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0047",
+   "es": "Verificar vivero: temperatura, oxigeno, mortalidad nocturna",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B30"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "Inventario pescado/marisco: stock restante vs pedido manana",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0049",
+   "es": "Registro mermas del dia (producto de alto valor)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B32"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0050",
+   "es": "Limpieza profunda zona de pescado y tablas de corte",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura y Cierre · B33"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0051",
+   "es": "Verificar camaras: temperatura y cierre correcto",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B34"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Recoger cuberteria especial marisco, lavar y almacenar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "Pedido a lonja/proveedor para manana (confirmar antes de 23:30)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Apertura y Cierre · B36"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)",
+    "lonja → seafood distributor / dock-to-door supplier (NUNCA «auction»)"
+   ],
+   "adaptar": "Lonja → seafood distributor / dock-to-door supplier (en EE. UU. el restaurante no compra en subasta)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0055",
+   "es": "Cierre de caja y registro de ventas por producto fresco",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura y Cierre · B37"
+   ],
+   "pistas": [
+    "caja → POS; cierre de caja → cash count, over/short"
+   ],
+   "adaptar": "Cierre de caja → cash count y over/short contra el POS Z report; propinas según tu tip pool (FLSA, 29 U.S.C. 203(m)(2)(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0070",
+   "es": "VIVERO — Control Diario",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Vivero y Lonjas · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0071",
+   "es": "Temperatura agua por especie (bogavante 8-12°C, langosta 14-18°C)",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Vivero y Lonjas · B5"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles"
+   ],
+   "adaptar": "Temperatura del agua del vivero (live tank) por especie, según tu proveedor y el fabricante del tanque (sin las cifras del ES, que son de especies europeas); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0073",
+   "es": "Nivel oxigeno disuelto (min 6 mg/L)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Vivero y Lonjas · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "Salinidad agua (30-35 ppt para marisco atlantico)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Vivero y Lonjas · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0076",
+   "es": "pH del agua (7.5-8.5 rango optimo)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Vivero y Lonjas · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Filtro mecanico: limpiar residuos y restos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Vivero y Lonjas · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0078",
+   "es": "Mortalidad: retirar ejemplares muertos, registrar",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Vivero y Lonjas · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0079",
+   "es": "Alimentacion (si aplica, segun especie y rotacion)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Vivero y Lonjas · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0081",
+   "es": "LONJA / PROVEEDORES",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Vivero y Lonjas · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0083",
+   "es": "Hora de subasta y transporte refrigerado (0-2°C)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Vivero y Lonjas · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "lonja → seafood distributor / dock-to-door supplier (NUNCA «auction»)"
+   ],
+   "adaptar": "Lonja → seafood distributor / dock-to-door supplier (en EE. UU. el restaurante no compra en subasta); transporte refrigerado a 41 °F o menos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0085",
+   "es": "Verificar capturas del dia: especie, calibre, frescura",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Vivero y Lonjas · B14"
+   ],
+   "adaptar": "Lonja → seafood distributor / dock-to-door supplier (en EE. UU. el restaurante no compra en subasta)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0089",
+   "es": "Recepcion mercancia: temperatura, aspecto, olor, ojos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Vivero y Lonjas · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recepción: Frío: 41 °F o menos (FDA Food Code 3-501.16); congelado, 0 °F o menos; coletilla «— log reading: ____ °F». Pescado formador de histamina (atún, caballa, mahi-mahi, sardina, anchoa): siempre frío; rechazar lo que llegue caliente; la cocción no destruye la histamina (FDA Fish and Fishery Products Hazards Guide, cap. 7)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Registro trazabilidad: lote, proveedor, fecha, peso",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Vivero y Lonjas · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0092",
+   "es": "Almacenar inmediatamente en camara (max 15 min fuera)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Vivero y Lonjas · B18"
+   ],
+   "pistas": [
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Comparar precios lonja vs proveedores mayoristas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Vivero y Lonjas · B19"
+   ],
+   "pistas": [
+    "lonja → seafood distributor / dock-to-door supplier (NUNCA «auction»)"
+   ],
+   "adaptar": "Lonja → seafood distributor / dock-to-door supplier (en EE. UU. el restaurante no compra en subasta)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0095",
+   "es": "FRESCURA — Indicadores Visuales",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Vivero y Lonjas · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0097",
+   "es": "Ojos: brillantes, convexos, pupila negra",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Vivero y Lonjas · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0098",
+   "es": "Rechazar si opacos",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Vivero y Lonjas · G21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0099",
+   "es": "Branquias: rojas/rosadas, sin mucosidad",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Vivero y Lonjas · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "Rechazar si marrones",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Vivero y Lonjas · G22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0101",
+   "es": "Textura: firme al tacto, elastica (vuelve a forma)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Vivero y Lonjas · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Olor: a mar, yodo, algas — NUNCA amoniacal",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Vivero y Lonjas · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "Crustaceos vivos: movimiento activo, color vivo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Vivero y Lonjas · B25"
+   ],
+   "pistas": [
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "Bivalvos: conchas cerradas o que cierran al golpear",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Vivero y Lonjas · B26"
+   ],
+   "pistas": [
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops"
+   ],
+   "adaptar": "Moluscos (ostras, almejas, mejillones) solo de proveedores aprobados de la lista NSSP (Interstate Certified Shellfish Shippers List; FDA Food Code 3-201.15), con su etiqueta (tag) guardada 90 días (FDA Food Code 3-203.12)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "Desechar abiertos",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Vivero y Lonjas · G26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0107",
+   "es": "Cefalopodos: piel intacta, color natural, olor neutro",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Vivero y Lonjas · B27"
+   ],
+   "pistas": [
+    "cefalópodos → cephalopods; pulpo → octopus; calamar → squid; sepia → cuttlefish; chipirones → baby squid"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0113",
+   "es": "TRAZABILIDAD OBLIGATORIA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Trazabilidad APPCC · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Numero de lote, especie, zona FAO captura, fecha, peso, proveedor",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Trazabilidad APPCC · B5"
+   ],
+   "pistas": [
+    "zona FAO → harvest area / origin; arte de pesca → catch method"
+   ],
+   "adaptar": "zona FAO → origen (país o zona de captura)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0117",
+   "es": "Especie (nombre comercial + cientifico), origen, arte pesca",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Trazabilidad APPCC · B6"
+   ],
+   "adaptar": "Nombre de mercado aceptado (FDA Seafood List) + nombre científico, origen y método; sin el Reglamento UE",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0120",
+   "es": "Registro temperatura recepcion (pescado fresco 0-2°C)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Trazabilidad APPCC · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Recepción: Frío: 41 °F o menos (FDA Food Code 3-501.16); congelado, 0 °F o menos; coletilla «— log reading: ____ °F»; sin los «0-2 °C» del ES",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0121",
+   "es": "Registro camaras 2x dia (refrigeracion + congelacion)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Trazabilidad APPCC · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0123",
+   "es": "Control fechas: marisco fresco max 48h, congelado segun envase",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Trazabilidad APPCC · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Las «48 h» son el estándar de la casa; lo cocinado y listo para comer, date marking: 7 días como máximo a 41 °F (FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0125",
+   "es": "Registro: producto, lote, fecha inicio, fecha uso, metodo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Trazabilidad APPCC · B10"
+   ],
+   "adaptar": "Descongelación (FDA Food Code 3-501.13); el pescado congelado al vacío (ROP) se saca de la bolsa al descongelar",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0127",
+   "es": "Nunca recongelar",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Trazabilidad APPCC · F10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Crustaceos: gamba, langostino, bogavante, centollo, necora, cigala",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Trazabilidad APPCC · B12"
+   ],
+   "pistas": [
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles"
+   ],
+   "adaptar": "Crustáceos (shrimp, prawns, lobster, crab, langoustines): alérgeno principal US (crustacean shellfish)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "Moluscos: mejillon, almeja, navaja, berberecho, ostra, vieira, pulpo, calamar",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Trazabilidad APPCC · B13"
+   ],
+   "pistas": [
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops",
+    "cefalópodos → cephalopods; pulpo → octopus; calamar → squid; sepia → cuttlefish; chipirones → baby squid"
+   ],
+   "adaptar": "Alérgenos US: pescado y crustáceos son de los 9 principales (FALCPA + FASTER Act); los moluscos NO lo son en EE. UU. (dilo si preguntan) y sí en UK (uno de los 14); sin los números 2 y 14 de la UE",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Separar zonas de manipulacion: crustaceos / moluscos / pescado",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Trazabilidad APPCC · B14"
+   ],
+   "pistas": [
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "Indicar alergenos en cada plato de la carta (simbolos EU)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Trazabilidad APPCC · B15"
+   ],
+   "pistas": [
+    "alérgenos US: pescado y crustáceos (de los 9); moluscos no (UK sí); sin números UE"
+   ],
+   "adaptar": "Aviso escrito de alérgenos en la carta donde tu estado haya adoptado el FDA Food Code 2022 (3-602.12(C)); sin los símbolos UE",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Staff formado en protocolos de alergias graves (anafilaxia)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Trazabilidad APPCC · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0145",
+   "es": "HACCP — Puntos Criticos Marisqueria",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Trazabilidad APPCC · A17"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Marisqueria»; marisquería → seafood restaurant"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0150",
+   "es": "Almacenamiento: camaras separadas (pescado, marisco vivo, congelado)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Trazabilidad APPCC · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0156",
+   "es": "Expositor: marisco en hielo max 4°C, rotacion cada 2h",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Trazabilidad APPCC · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "adaptar": "Expositor sobre hielo escurrido (drained ice) a 41 °F o menos (FDA Food Code 3-501.16; 3-303.12); el hielo del expositor no se usa como ingrediente (FDA Food Code 3-303.11); rotación cada 2 h",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Plan de limpieza zona pescado: superficies, tablas, cuchillos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Trazabilidad APPCC · B23"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Base de hielo picado sobre bandeja con desague (evitar agua estancada)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "04 · Expositor y Barra · B5"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "adaptar": "Expositor sobre hielo escurrido (drained ice) a 41 °F o menos (FDA Food Code 3-501.16; 3-303.12); el hielo del expositor no se usa como ingrediente (FDA Food Code 3-303.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Colocar crustaceos: bogavante, langosta, centollo, necoras, cigalas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Barra · B6"
+   ],
+   "pistas": [
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles"
+   ],
+   "adaptar": "bogavante → lobster; langosta → spiny lobster; centollo y nécoras → crab; cigalas → langoustines",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0169",
+   "es": "Colocar bivalvos: almejas, navajas, berberechos, ostras, mejillones",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Barra · B7"
+   ],
+   "pistas": [
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops"
+   ],
+   "adaptar": "Bivalvos US: oysters, clams (littlenecks, cherrystones), mussels, razor clams. Moluscos (ostras, almejas, mejillones) solo de proveedores aprobados de la lista NSSP (Interstate Certified Shellfish Shippers List; FDA Food Code 3-201.15), con su etiqueta (tag) guardada 90 días (FDA Food Code 3-203.12)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Colocar cefalopodos: pulpo, chipiriones, sepia",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Expositor y Barra · B8"
+   ],
+   "pistas": [
+    "cefalópodos → cephalopods; pulpo → octopus; calamar → squid; sepia → cuttlefish; chipirones → baby squid"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "Colocar pescados enteros del dia (lubina, rodaballo, besugo, merluza)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Expositor y Barra · B9"
+   ],
+   "pistas": [
+    "lubina → branzino; rodaballo → turbot; besugo → sea bream; merluza → hake; bacalao → cod; rape → monkfish; bonito → bonito; atún → tuna; sardinas → sardines; boquerones → anchovies"
+   ],
+   "adaptar": "lubina → branzino; rodaballo → turbot; besugo → sea bream; merluza → hake",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0172",
+   "es": "Etiquetas de precio y procedencia por especie (obligatorio)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Barra · B10"
+   ],
+   "adaptar": "Precio por especie; el origen, estándar de la casa",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Decoracion: limones, perejil, algas, hielo esculpido",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Expositor y Barra · B11"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "MANTENIMIENTO DURANTE SERVICIO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Expositor y Barra · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0175",
+   "es": "Reponer hielo cada 90 min (mantener 0-4°C)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Expositor y Barra · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "adaptar": "Expositor sobre hielo escurrido (drained ice) a 41 °F o menos (FDA Food Code 3-501.16; 3-303.12); el hielo del expositor no se usa como ingrediente (FDA Food Code 3-303.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "Rotacion FIFO: mover producto antiguo al frente",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Barra · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "Retirar agua de deshielo acumulada",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Expositor y Barra · B15"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Verificar aspecto visual y olor de cada pieza",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Barra · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "Actualizar precios si se agota alguna especie",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Barra · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Abrir ostras bajo pedido (tecnica correcta, sin fragmentos)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Barra · B18"
+   ],
+   "pistas": [
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops"
+   ],
+   "adaptar": "Abrir (shuck) al momento; guardar la etiqueta del lote; aviso al consumidor en la carta para lo crudo o poco hecho (FDA Food Code 3-603.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Servir navajas, zamburinas a la plancha al momento",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Barra · B19"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops",
+    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
+   ],
+   "adaptar": "plancha → flat-top griddle",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0187",
+   "es": "CIERRE EXPOSITOR",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Expositor y Barra · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "Retirar todo el producto, clasificar por frescura",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Barra · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Producto apto: almacenar en camara con hielo fresco",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Barra · B22"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "Producto no apto: registrar merma y desechar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Barra · B23"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "Limpiar bandeja, desague y superficie con desinfectante alimentario",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Barra · B24"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Secar y dejar preparado para montaje manana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Barra · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0198",
+   "es": "COMPRAS Y PROVEEDORES",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Manager · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Pedido diario a lonja (confirmar antes del cierre de subasta)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · Tareas Manager · B5"
+   ],
+   "pistas": [
+    "lonja → seafood distributor / dock-to-door supplier (NUNCA «auction»)"
+   ],
+   "adaptar": "Lonja → seafood distributor / dock-to-door supplier (en EE. UU. el restaurante no compra en subasta): confirmar antes de su hora de corte",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Negociar precios con mayoristas de marisco fresco",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Evaluar calidad de entregas (registro incidencias)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Comparar precios lonja vs proveedor directo vs importacion",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B8"
+   ],
+   "pistas": [
+    "lonja → seafood distributor / dock-to-door supplier (NUNCA «auction»)"
+   ],
+   "adaptar": "lonja vs directo vs importación → distributor vs dock-to-door vs imported",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0206",
+   "es": "Inventario de producto fresco y congelado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0207",
+   "es": "Control de mermas y desperdicio (% sobre compra)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B10"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0210",
+   "es": "Briefing pre-servicio: capturas del dia, precios, alergenos",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B12"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "alérgenos US: pescado y crustáceos (de los 9); moluscos no (UK sí); sin números UE"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Asignar partidas y roles del servicio",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B13"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "maître → FOH manager; jefe de cocina → head chef; camarero → server; partida → station"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0213",
+   "es": "Revisar ventas del dia anterior por producto",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Ajustar precios carta segun coste del dia (producto de lonja)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "05 · Tareas Manager · B15"
+   ],
+   "pistas": [
+    "lonja → seafood distributor / dock-to-door supplier (NUNCA «auction»)"
+   ],
+   "adaptar": "Producto de lonja → market price (MP) items",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Supervisar montaje del expositor y frescura",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B16"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0217",
+   "es": "Probar platos antes de servicio (sabor, temperatura, presentacion)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0218",
+   "es": "RRHH Y ADMINISTRACION",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Manager · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Revision de turnos y cuadrante semanal",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Formacion continua: especies, temporadas, tecnicas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Tareas Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "Revision facturas proveedores y pagos pendientes",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "Analisis food cost semanal (objetivo <32% en marisqueria)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B22"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Marisqueria»; marisquería → seafood restaurant"
+   ],
+   "adaptar": "El «< 32 %» es el objetivo del kit: «target under 32% (kit target)»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Gestion reservas grupos y eventos especiales",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0228",
+   "es": "Actualizar RRSS con capturas del dia y platos especiales",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Tareas Manager · B24"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "JEFE DE COCINA / MARISCADOR",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Perfiles · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0235",
+   "es": "Seleccion en lonja: calibre, frescura, precio/kg",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B5"
+   ],
+   "pistas": [
+    "lonja → seafood distributor / dock-to-door supplier (NUNCA «auction»)"
+   ],
+   "adaptar": "Lonja → seafood distributor / dock-to-door supplier (en EE. UU. el restaurante no compra en subasta)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Control calidad recepcion y clasificacion por especie",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "Decidir carta del dia segun capturas disponibles",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Supervisar vivero y expositor",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Perfiles · B8"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen",
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Controlar mermas y registrar en libro de produccion",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B9"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "COCINERO PARTIDA PESCADOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Perfiles · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Limpieza, fileteado y porcionado de pescados del dia",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0247",
+   "es": "Preparacion de bases: fumets, caldos, salsas de acompanamiento",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B12"
+   ],
+   "pistas": [
+    "fumet → fish stock (fumet)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Coccion pescados: horno, plancha, parrilla, vapor, frito",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B13"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0250",
+   "es": "Control temperaturas internas de coccion (>=63°C)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Cocción: 145 °F durante 15 s en el centro (FDA Food Code 3-401.11); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0251",
+   "es": "Emplatado y presentacion segun estandar del restaurante",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0252",
+   "es": "COCINERO PARTIDA MARISCOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Perfiles · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0254",
+   "es": "Coccion mariscos: al vapor, a la plancha, hervidos, a la sal",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Perfiles · B17"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Tiempos de coccion por especie y calibre",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Preparar arroces, cazuelas y zarzuelas de marisco",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Apertura de bivalvos: ostras, navajas, almejas a la plancha",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Perfiles · B20"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops",
+    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0258",
+   "es": "Control de stock durante servicio, avisar al manager si se agota",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Perfiles · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "MAITRE / JEFE DE SALA",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Perfiles · A22"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Conocer capturas del dia, precios y sugerencias del chef",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Perfiles · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Recomendar mariscos y pescados segun preferencia del cliente",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Gestionar servicio de mariscada en mesa (trinchado, presentacion)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B25"
+   ],
+   "pistas": [
+    "mariscada → seafood tower / seafood platter (NUNCA «mariscada»)"
+   ],
+   "adaptar": "Servicio de mariscada → seafood tower / seafood platter",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Informar alergenos crustaceos y moluscos a cada mesa",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B26"
+   ],
+   "pistas": [
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles",
+    "alérgenos US: pescado y crustáceos (de los 9); moluscos no (UK sí); sin números UE"
+   ],
+   "adaptar": "Alérgenos US: pescado y crustáceos son de los 9 principales (FALCPA + FASTER Act); los moluscos NO lo son en EE. UU. (dilo si preguntan) y sí en UK (uno de los 14); sin los números 2 y 14 de la UE",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Coordinar tiempos de salida entre cocina y sala",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B27"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0265",
+   "es": "CAMARERO / AYUDANTE SALA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Perfiles · A28"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0267",
+   "es": "Servir marisco con cuberteria especial (tenazas, pinchos)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B29"
+   ],
+   "pistas": [
+    "tenazas → crackers; pinchos → seafood picks; baberos → bibs; finger bowls → finger bowls"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0268",
+   "es": "Ofrecer finger bowls y baberos cuando proceda",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B30"
+   ],
+   "pistas": [
+    "tenazas → crackers; pinchos → seafood picks; baberos → bibs; finger bowls → finger bowls"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0269",
+   "es": "Retirar conchas y restos entre platos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Sugerir vinos blancos y albarinos para maridaje",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B32"
+   ],
+   "pistas": [
+    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+   ],
+   "adaptar": "vino con la licencia de alcohol del local; mayores de 21 con ID (23 U.S.C. 158)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "Mantener mesa limpia durante mariscadas largas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B33"
+   ],
+   "pistas": [
+    "mariscada → seafood tower / seafood platter (NUNCA «mariscada»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0278",
+   "es": "Limpieza profunda vivero: vaciado, desinfeccion, recarga",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B5"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
+   ],
+   "adaptar": "Limpieza profunda del live tank según el fabricante y tu departamento de salud",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "Revision y mantenimiento filtros y bomba del vivero",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B6"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "Inventario completo de producto fresco y congelado",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Semanales y Mensuales · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "Analisis de mermas semanal y acciones correctoras",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Semanales y Mensuales · B8"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "Limpieza profunda camaras frigorificas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "07 · Semanales y Mensuales · B9"
+   ],
+   "pistas": [
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "Revision de caducidades en camara de congelados",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Semanales y Mensuales · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "Afilado de cuchillos (fileteado, desescamado)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Revision de stock de vinos blancos y albarinos",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B12"
+   ],
+   "pistas": [
+    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Limpieza profunda de expositor y bandeja de acero",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B13"
+   ],
+   "pistas": [
+    "expositor → seafood display (on drained ice); hielo picado → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "Auditoria registros APPCC y trazabilidad (preparar para Sanidad)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B15"
+   ],
+   "pistas": [
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "APPCC → HACCP; PCC → CCP; Sanidad → health department / health inspection"
+   ],
+   "adaptar": "APPCC → HACCP; Sanidad → health inspection",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0296",
+   "es": "Evaluacion de proveedores: calidad, precio, cumplimiento",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0297",
+   "es": "Revision carta segun temporada de pesca y disponibilidad",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0299",
+   "es": "Mantenimiento preventivo equipos frio (compresor, juntas)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B18"
+   ],
+   "adaptar": "Equipos de frío: técnico certificado EPA 608",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0300",
+   "es": "Formacion equipo: nuevas especies, tecnicas, maridajes",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Analisis food cost mensual y comparativa con objetivo",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "Revision de precios carta vs coste real de mercado",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "07 · Semanales y Mensuales · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "Control de plagas: trampas, registro, incidencias",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B22"
+   ],
+   "adaptar": "Control de plagas por un licensed pest control operator, con su informe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "TEMPORADAS DE PESCA — Espana",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Eventos y Temporadas · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0338",
+   "es": "Pico de ventas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "08 · Eventos y Temporadas · F14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "VEDAS Y REGULACIONES",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "08 · Eventos y Temporadas · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0353",
+   "es": "Talla minima legal por especie (verificar en cada lote)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "08 · Eventos y Temporadas · B22"
+   ],
+   "pistas": [
+    "veda → season closure; talla mínima → minimum legal size; comunidad autónoma → your state"
+   ],
+   "adaptar": "Talla mínima legal por especie (langosta y cangrejo, sobre todo): la de tu estado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0354",
+   "es": "Documentar origen de todo producto (evitar pesca ilegal)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Eventos y Temporadas · B23"
+   ],
+   "adaptar": "Pesca ilegal → IUU seafood (illegal, unreported, unregulated)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0363",
+   "es": "Instrucciones: Anade tus propias tareas recurrentes. Puedes copiar filas de otras hojas del kit y adaptarlas a tu marisqueria.",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "09 · Personalizable · A26"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Marisqueria»; marisquería → seafood restaurant"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0370",
+   "es": "CAPTURAS DEL DIA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Servicio · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0372",
+   "es": "Especie 1:",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Servicio · B5",
+    "B01 · Briefing Servicio · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Origen / Peso / Precio",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Servicio · C5",
+    "B01 · Briefing Servicio · C6",
+    "B01 · Briefing Servicio · C7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0374",
+   "es": "Especie 2:",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Servicio · B6",
+    "B01 · Briefing Servicio · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0375",
+   "es": "Especie 3:",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Servicio · B7",
+    "B01 · Briefing Servicio · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0377",
+   "es": "Origen / Calibre / Precio",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Servicio · C8",
+    "B01 · Briefing Servicio · C9",
+    "B01 · Briefing Servicio · C10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "SUGERENCIAS Y FUERA DE CARTA",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Servicio · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "Sugerencia 1",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Servicio · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "Preparacion / Precio",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Servicio · C12",
+    "B01 · Briefing Servicio · C13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Sugerencia 2",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Servicio · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "Producto especial del dia",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Servicio · C14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "ALERGENOS Y ALERTAS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Servicio · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Platos con crustaceos (alergeno 2):",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Servicio · B16"
+   ],
+   "pistas": [
+    "bogavante → lobster; langosta → spiny lobster; centollo / nécora → crab; cigala → langoustine; gamba / langostino → shrimp / prawns; percebes → gooseneck barnacles",
+    "alérgenos US: pescado y crustáceos (de los 9); moluscos no (UK sí); sin números UE"
+   ],
+   "adaptar": "Sin «alérgeno 2»: «Dishes with crustacean shellfish:»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0387",
+   "es": "Platos con moluscos (alergeno 14):",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Servicio · B17"
+   ],
+   "pistas": [
+    "alérgenos US: pescado y crustáceos (de los 9); moluscos no (UK sí); sin números UE"
+   ],
+   "adaptar": "Sin «alérgeno 14»: «Dishes with molluscs (UK allergen):»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "Mesas con reserva + notas alergias:",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Servicio · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0390",
+   "es": "RESERVAS Y VIPs",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Servicio · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0392",
+   "es": "N. total de cubiertos:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Servicio · B20"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "adaptar": "cubiertos → covers",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Mesas especiales / clientes habituales:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Servicio · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Mariscadas grupales / celebraciones:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Servicio · B22"
+   ],
+   "pistas": [
+    "mariscada → seafood tower / seafood platter (NUNCA «mariscada»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Recomendacion del dia (albariño, godello, txakoli):",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Servicio · B23"
+   ],
+   "pistas": [
+    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+   ],
+   "adaptar": "vino con la licencia de alcohol del local; mayores de 21 con ID (23 U.S.C. 158)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "Revision vivero post-Navidad",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D4"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen",
+    "calendario US: Christmas Eve (Seven Fishes), NYE, Lent Fridays; terraza → patio; sin chiringuitos"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Especies invernales, cortes",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "Mantenimiento camaras",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · D5"
+   ],
+   "pistas": [
+    "cámara → walk-in (cooler / freezer)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Maridajes vino+marisco",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Revision filtros vivero",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D6"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Arroces marineros",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · E6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Limpieza profunda primavera",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Ceviches y tartares",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E7"
+   ],
+   "pistas": [
+    "crudo / marinado → raw or undercooked: parásitos 3-402.11 + aviso 3-603.11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Plancha y parrilla marisco",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E8"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Preparar terraza exterior",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D9"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "calendario US: Christmas Eve (Seven Fishes), NYE, Lent Fridays; terraza → patio; sin chiringuitos"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "Servicio terraza + frios",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E9"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "calendario US: Christmas Eve (Seven Fishes), NYE, Lent Fridays; terraza → patio; sin chiringuitos"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0438",
+   "es": "Mantenimiento intensivo frio",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "Mariscos frios, ostras",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E10"
+   ],
+   "pistas": [
+    "ostras → oysters; almejas → clams; navajas → razor clams; mejillones → mussels; berberechos → cockles; zamburiñas → queen scallops; vieiras → scallops"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0443",
+   "es": "Revision equipos bajo carga",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0444",
+   "es": "Atencion turistas (idiomas)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Mantenimiento post-verano",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0449",
+   "es": "Nuevas tecnicas coccion",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0453",
+   "es": "Revision vivero invierno",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D13"
+   ],
+   "pistas": [
+    "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0454",
+   "es": "Especies de otono-invierno",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0458",
+   "es": "Calibrar equipos para pico",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0459",
+   "es": "Mariscadas y protocolos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E14"
+   ],
+   "pistas": [
+    "mariscada → seafood tower / seafood platter (NUNCA «mariscada»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0463",
+   "es": "Revision total pre-Navidad",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D15"
+   ],
+   "pistas": [
+    "calendario US: Christmas Eve (Seven Fishes), NYE, Lent Fridays; terraza → patio; sin chiringuitos"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0464",
+   "es": "Servicio de alto volumen",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E15"
+   ],
+   "motivo": "nueva"
+  }
+ ]
+}

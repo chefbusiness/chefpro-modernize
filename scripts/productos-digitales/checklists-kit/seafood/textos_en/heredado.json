@@ -1,0 +1,50 @@
+{
+ "c0045": {
+  "en": "CLOSING",
+  "origen": "c0048",
+  "via": "exacta",
+  "fuente": "bakery"
+ },
+ "c0166": {
+  "en": "DISPLAY SETUP",
+  "origen": "c0159",
+  "via": "exacta",
+  "fuente": "bakery"
+ },
+ "c0208": {
+  "en": "OPERATIONS",
+  "origen": "c0199",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0277": {
+  "en": "WEEKLY",
+  "origen": "c0273",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0293": {
+  "en": "MONTHLY",
+  "origen": "c0285",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0334": {
+  "en": "KEY SALES EVENTS",
+  "origen": "c0298",
+  "via": "exacta",
+  "fuente": "bakery"
+ },
+ "c0362": {
+  "en": "YOUR CUSTOM TASKS",
+  "origen": "c0335",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0428": {
+  "en": "A/C check",
+  "origen": "c0388",
+  "via": "exacta",
+  "fuente": "bakery"
+ }
+}
