@@ -59,21 +59,24 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
-  // Plan de Negocio: Sushi Bar (31-oct-2026): tarjeta ES PROVISIONAL (apunta al plan en español) hasta que nazca su gemelo EN, el Sushi Restaurant Business Plan Kit, que la sustituirá.
+  // Sushi Restaurant Business Plan Kit (31-oct-2026, decimocuarta tanda de planes EN): el más nuevo → 1; el Taco Shop Checklists Kit
+  // Pro y el resto de vivos bajan un puesto. SUSTITUYE a la tarjeta provisional «Business Plan: Sushi Bar» que metió la F3 del ES
+  // (apuntaba al ES y describía el kit español: guía de equivalencias para Latinoamérica); una sola tarjeta por producto.
+  // Imagen: el hero ES del sushi bar (sin texto).
   {
-    name: 'Business Plan: Sushi Bar',
+    name: 'Sushi Restaurant Business Plan Kit',
     slug: '/plan-negocio-sushi-bar',
-    description: 'Complete business plan to open a sushi bar or sushi restaurant with counter seating, takeaway and delivery: a 3-year Excel financial plan with 9 sheets, a 10-section Word business plan, an 80-task opening checklist, a fish, sushi rice and per-piece costing calculator and the Equivalents Guide for Latin America.',
+    description: 'Sushi restaurant business plan template for a neighborhood sushi bar with tables, take-out and delivery: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in covers per day, cash flow and loan schedule, a fish, sushi rice and costing calculator, and an 80-task startup checklist.',
     features: [
       '10-section business plan in Word',
-      '9-sheet Excel financial plan with month-by-month cash flow',
-      'Opening checklist: 80 tasks in 6 phases',
-      'Fish, sushi rice and per-piece costing calculator and Equivalents Guide for Latin America',
+      '9-sheet Excel financial projections with 12-month cash flow',
+      'Fish, rice & costing calculator: cost per usable lb, nigiri per lb of raw rice, food cost per piece',
+      '80 tasks: Type I hood, raw-fish freezing records, sushi rice TPHC, beer and wine license',
     ],
     iconName: 'Fish',
     image: '/lovable-uploads/ai-gallery/plan-sushi-bar-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'sushi-bar', 'japanese', 'business-plan'],
   },
   // Taco Shop Checklists Kit Pro (31-oct-2026, undécimo hermano vertical del Restaurant Checklists Kit Pro): el más nuevo → 1;

@@ -912,6 +912,31 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-31): Sushi Restaurant Business Plan Kit, edición inglesa del plan-negocio-sushi-bar (SPEC business-plans-en-14:
+  // neighborhood sushi restaurant con sushi bar de 10 taburetes y 30 plazas en mesa, abre 6 días, caso US). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN). Cifras = cifras_caso.json y
+  // cifras_calculadora.md (medidas en los libros).
+  'sushi-restaurant-business-plan': {
+    version: '2.2',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-31',
+        title: 'First release',
+        changes: [
+          'First release of the Sushi Restaurant Business Plan Kit for a neighborhood sushi restaurant with a sushi bar in view, 40 seats, take-out and marketplace delivery: a 10-section business plan in Word, an Excel financial model with 9 sheets, a fish, sushi rice and costing calculator and an 80-task startup checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story: 115 covers a day at a $32.50 average check for 310 days, $1,158,625 in year-1 sales and a modest net margin of 8.5% in year 1.',
+          'The model runs on covers per day, average check per cover and days open per year, with the break-even measured in covers per day and checked against the cash you actually need. Sales tax is collected on the whole check and remitted separately.',
+          'Payroll for a restaurant open Tuesday through Sunday, with a head sushi chef, servers on W-2 with tips on top, employer payroll taxes and a federal and a state or local minimum wage floor, plus startup costs that include the Type I hood and fire suppression, the refrigerated sushi case, the gas rice cookers and a -4 °F freezer with a temperature logger.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and checked against a 1.25× DSCR target.',
+          'New Sushi Fish, Rice & Costing Calculator: the cost per usable pound of whole salmon, salmon fillet and tuna saku and whether breaking down the whole fish pays off, the sushi rice per pound of raw rice and the nigiri it makes, and the food cost, suggested price and margin of 14 products dine-in, on take-out and on a marketplace. Every starting value is a kit estimate, editable.',
+          '80-task startup checklist in 6 phases: business setup, hood and permits, raw fish and health (parasite destruction records, the consumer advisory, TPHC or a variance for the sushi rice), staff and allergens, menu, brand and delivery, and opening day plus your first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   // Tienda EN (2026-10-29): Rotisserie Chicken Restaurant Business Plan Kit, edición inglesa del plan-negocio-polleria (SPEC business-plans-en-13:
   // counter-service rotisserie chicken restaurant estilo peruano, 40 plazas, abierto 7 días, caso US). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
   // Primera versión del producto: '2.2' (numeración de la familia EN). Cifras = cifras_caso.json (medidas en el libro).

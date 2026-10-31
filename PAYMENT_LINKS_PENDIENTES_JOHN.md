@@ -17,6 +17,21 @@ Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link co
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_SUSHI_BAR` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-sushi-bar-hero.jpg` |
 
+## ⏳ PENDIENTE (31-oct-2026): Sushi Restaurant Business Plan Kit (EN) — rama `feat/sushi-restaurant-business-plan-en` (apilada, se fusiona DESPUÉS del Sushi Bar ES)
+
+Tienda EN, $39. La landing (`/en/digital-products/sushi-restaurant-business-plan`) deja el botón en `#comprar` hasta que exista el link.
+Cuando lo crees, Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Sushi Restaurant Business Plan Kit - AI Chef Pro |
+| Precio | **39,00 USD**, pago único, impuesto automático con precio *exclusive* (como Taco Shop y Rotisserie) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/en/digital-products/sushi-restaurant-business-plan/access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 244 caracteres) | Business plan kit to open a neighborhood sushi restaurant with a sushi bar, take-out and delivery: 10-section Word plan, 3-year Excel financial projections with SBA loan, 80-task startup checklist, and a fish, sushi rice and costing calculator. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_SUSHI_RESTAURANT_BUSINESS_PLAN` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-sushi-bar-hero.jpg` |
+
 ## ✅ HECHO (29-oct-2026): Plan de Negocio: Taquería (ES) — PR #181
 
 Link de John: https://buy.stripe.com/fZu5kwbcEcsCcrt1wV6oo2a (`plink_1UVou74CcdRGidmEufF1axkD`). Comprobado con la CLI: 3500 EUR, pago único,
