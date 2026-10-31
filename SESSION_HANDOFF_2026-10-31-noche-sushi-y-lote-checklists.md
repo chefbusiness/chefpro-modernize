@@ -64,3 +64,28 @@ preparados en `scripts/productos-digitales/emails/` de cada rama.
 
 Toda la noche entre 42 y 56 °C con 2-4 agentes (API) y todo el cálculo en el VPS; vigilante en bucle. `knowledgeconstructiond` congelado
 desde el 30-oct (`pkill -CONT knowledgeconstructiond` para reanudarlo).
+
+## 7. Mañana del 31-oct (sesión Claude Code): los seis LIVE
+
+John creó los 6 Payment Links y pidió «fusiona los 4». Hecho:
+
+- **Links** comprobados con `stripe … --live` (nombre, importe, pago único, *exclusive*, factura, redirección) y sus 6 envs en Netlify
+  (builds); `payment-links.ts` regenerado en cada rama. Detalle en `PAYMENT_LINKS_PENDIENTES_JOHN.md`.
+- **Fusiones** (squash): #191 `6a927b25` → #190 `664c6038` → #192 `07e7513a` → #189 `8b02f1e7`.
+  - #192 chocaba con el squash de #190 en 6 ficheros (hub EN, `tienda.ts`, `products-catalog.ts`, `tienda-gate.py`, `llms.txt`,
+    PAYMENT_LINKS): main traía exactamente la rama ES final y #192 ya la contenía + el EN → versión de #192. Comprobado: la fusión solo
+    añadía el parche de #191 byte a byte.
+  - #192 tras #191: `resync_es.py` ya conoce `business-plans-en-14` (CONJUNTOS + 4 bloques de sha). Re-extracción con la clasificación
+    publicada (recoge «plantilla 02 del Kit» de la F3 del ES en `SUSC F3!E14`; el EN de esa celda no cita el kit español) y 6 sha
+    re-medidos. VPS: `bp14 verificar` OK; regresión de los 13 conjuntos 49 IGUAL + 3 xlsx parcheados en #186 IGUAL-SEM; el Sushi EN
+    regenerado: 3 xlsx IGUAL-SEM (0 difs) y docx IGUAL.
+  - #189 tras #192: hub EN con los 4 kits arriba (Fine Dining 1 → Food Truck 4), luego Sushi Restaurant y Taco Shop Checklists (59
+    tarjetas, sin duplicados); `llms.txt` ES 58 · EN 39; mapas regenerados (98 productos).
+- **LIVE**: postpago 0 fallos y 0 avisos (98 productos, 1.206 entregables); robots verde; tienda-gate verde en los previews de #192 y #189;
+  landings 200 con el link en las 4 posiciones; sitemap + `llms.txt`; GSC reenviado; cripto 200 ×6.
+- **Correos**: ver §4 y `CALENDARIO-V2-SEMANAL.md` (entrada del 31-oct). ES 28-dic (routine `trig_01Jm6Rwvrkm6y7jihtxjfCzS`, 29-nov) · EN
+  30-mar → 19-abr-2027 (un routine, `trig_01SUhZPtzFnR44opoYmqs4VL`, 21-mar-2027). Pruebas a John ×6. **Siguiente hueco: ES 2-ene-2027 ·
+  EN 24-abr-2027.**
+- **Pendiente de John**: purgar también los QA cripto de hoy (`qa-sushibar`, `qa-sushi-en`, `qa-foodtruck-en`, `qa-bakery-en`,
+  `qa-seafood-en`, `qa-finedining-en`) con el resto de la lista del handoff del 30-oct §4.
+- Térmica: un pico de 61 °C tras los gates LIVE; pausa hasta 54 °C antes de seguir.

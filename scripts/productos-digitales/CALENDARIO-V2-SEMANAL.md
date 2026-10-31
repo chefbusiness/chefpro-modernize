@@ -867,3 +867,19 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   **Siguiente hueco: ES 28-dic · EN 30-mar-2027.**
 - Siguiente en la cola: Sushi Bar ES + EN → Hamburguesería Smash → Kit de Tareas Pollería (Próximos); 22 productos ES sin gemelo EN.
 - Handoff: `SESSION_HANDOFF_2026-10-31-taco-shop-checklists.md`.
+
+### ✅ 2026-10-31 (Claude Code en el Mac + VPS) — **Plan de Negocio: Sushi Bar (ES, 35 €, nº 58) + Sushi Restaurant Business Plan Kit (EN, $39) + 4 checklists EN (Food Truck, Bakery, Seafood Restaurant $15 · Fine Dining $19)** — LOS SEIS LIVE
+
+- Fusionados en orden: **#191 → `6a927b25`** (conjuntos EN de planes regenerables tras #186 + fila 34 del 12-Month Cash Flow, sin correo) ·
+  **#190 → `664c6038`** · **#192 → `07e7513a`** · **#189 → `8b02f1e7`**. Links de John comprobados con la CLI (`--live`): Sushi Bar
+  `plink_1UWXiC4C…` 35 EUR · Sushi Restaurant `plink_1UWXmt4C…` 39 USD · Food Truck `plink_1UWXsu4C…`, Bakery `plink_1UWXx04C…`, Seafood
+  `plink_1UWY134C…` 15 USD · Fine Dining `plink_1UWY3e4C…` 19 USD.
+- LIVE: postpago 0 fallos y 0 avisos (98 productos, 1.206 entregables); robots verde; tienda-gate verde contra los previews; sitemap y
+  `llms.txt` (ES 58 · EN 39) con las 6 URLs y sitemap reenviado a GSC; cripto 200 ×6 (QA `qa-sushibar`, `qa-sushi-en`, `qa-foodtruck-en`,
+  `qa-bakery-en`, `qa-seafood-en`, `qa-finedining-en`, por purgar).
+- **Correos:** ES **28-dic 08:00Z** (borrador `bbef651a`, routine `trig_01Jm6Rwvrkm6y7jihtxjfCzS` el 29-nov 15:07Z) · EN a las 14:00Z,
+  un solo routine `trig_01SUhZPtzFnR44opoYmqs4VL` el 21-mar-2027 15:07Z: Sushi Restaurant **30-mar** (`906dd8c4`) · Food Truck **4-abr**
+  (`631f4426`) · Bakery **9-abr** (`82bc111a`) · Seafood **14-abr** (`263a0544`) · Fine Dining **19-abr** (`abf28c5c`). Pruebas a John ×6.
+  **Siguiente hueco: ES 2-ene-2027 · EN 24-abr-2027.**
+- Siguiente en la cola: Hamburguesería Smash → Kit de Tareas Pollería (Próximos); 18 productos ES sin gemelo EN.
+- Handoff: `SESSION_HANDOFF_2026-10-31-noche-sushi-y-lote-checklists.md` §7.

@@ -2,10 +2,23 @@
 
 > Sesión Claude Code (Mac).
 
-## ⏳ PENDIENTE (31-oct-2026): Plan de Negocio: Sushi Bar (ES) — rama `feat/plan-negocio-sushi`
+## ✅ HECHO (31-oct-2026): Lote de 4 checklists EN — PR #189
 
-Producto nº 58, 35 €. La landing (`/plan-negocio-sushi-bar`) deja el botón en `#comprar` hasta que exista el link. Cuando lo crees,
-Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+Links de John comprobados con la CLI (`--live`): pago único, *exclusive*, impuesto automático, factura y redirección a
+`/en/digital-products/<slug>/access?session_id={CHECKOUT_SESSION_ID}`. Envs de Netlify creadas (builds) y `payment-links.ts` regenerado.
+
+| Producto Stripe | Precio | Link | Env |
+|---|---|---|---|
+| Food Truck Checklists Kit Pro | 15 USD | https://buy.stripe.com/9B6bIUdkMdwGfDF6Rf6oo2h (`plink_1UWXsu4CcdRGidmElGA8qDvw`) | `VITE_STRIPE_PAYMENT_LINK_FOOD_TRUCK_CHECKLISTS_KIT` |
+| Bakery Checklists Kit Pro | 15 USD | https://buy.stripe.com/dRmfZadkMboyfDFcbz6oo2i (`plink_1UWXx04CcdRGidmEmuFhlUp2`) | `VITE_STRIPE_PAYMENT_LINK_BAKERY_CHECKLISTS_KIT` |
+| Seafood Restaurant Checklists Kit Pro | 15 USD | https://buy.stripe.com/5kQ28k3Kcboy1MP2AZ6oo2j (`plink_1UWY134CcdRGidmES3rTqNn5`) | `VITE_STRIPE_PAYMENT_LINK_SEAFOOD_RESTAURANT_CHECKLISTS_KIT` |
+| Fine Dining Checklists Kit Pro | 19 USD | https://buy.stripe.com/5kQ6oAcgI8cmajlfnL6oo2k (`plink_1UWY3e4CcdRGidmEnz6cQgL7`) | `VITE_STRIPE_PAYMENT_LINK_FINE_DINING_CHECKLISTS_KIT` |
+
+## ✅ HECHO (31-oct-2026): Plan de Negocio: Sushi Bar (ES) — PR #190
+
+Link de John: https://buy.stripe.com/00w6oA0y0boy6357Vj6oo2f (`plink_1UWXiC4CcdRGidmEKmziMiYi`). Comprobado con la CLI (`--live`): 35 EUR,
+pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-negocio-sushi-bar-access`. Env de Netlify creada (builds) y
+`payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
@@ -17,10 +30,10 @@ Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link co
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_SUSHI_BAR` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-sushi-bar-hero.jpg` |
 
-## ⏳ PENDIENTE (31-oct-2026): Sushi Restaurant Business Plan Kit (EN) — rama `feat/sushi-restaurant-business-plan-en` (apilada, se fusiona DESPUÉS del Sushi Bar ES)
+## ✅ HECHO (31-oct-2026): Sushi Restaurant Business Plan Kit (EN) — PR #192 (apilado, fusionado DESPUÉS del Sushi Bar ES)
 
-Tienda EN, $39. La landing (`/en/digital-products/sushi-restaurant-business-plan`) deja el botón en `#comprar` hasta que exista el link.
-Cuando lo crees, Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+Link de John: https://buy.stripe.com/5kQfZabcEeAKfDFcbz6oo2g (`plink_1UWXmt4CcdRGidmEyUH8Az1d`). Comprobado con la CLI (`--live`): 39 USD,
+pago único, *exclusive*, impuesto automático, factura y redirección a `/access`. Env de Netlify creada (builds) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
