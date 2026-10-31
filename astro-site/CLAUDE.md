@@ -37,17 +37,18 @@ no pasan por aquí.
 
 Lo dispara `src/lib/medicion-compra.ts` desde `ProductAccessGate` y los dos gates
 vanilla (`AccessGate`, `KitEscandallosAccessGate`), una vez por `transactionId`,
-antes de saltar al dashboard. Marcadores en ese fichero, y mientras lo sean no sale
-ese canal:
+antes de saltar al dashboard:
 
-- `GOOGLE_ADS_PURCHASE_LABEL = PENDIENTE_LABEL` — la conversión **aún no existe**
-  en `AW-17829651892`.
-- `GA4_MEASUREMENT_ID` vacío — en el repo no hay `G-…`.
+- `GOOGLE_ADS_PURCHASE_LABEL = ARzvCKiTuq8dELTL67VC` — `send_to`
+  `AW-17829651892/ARzvCKiTuq8dELTL67VC`, con `value`, `currency` (EUR en los
+  cobros en euros; la de la sesión si Stripe cobra en otra) y `transaction_id`.
+- `GA4_MEASUREMENT_ID` vacío — en el repo no hay `G-…`. No se envía `purchase`.
 - `META_PIXEL_ID` vacío — no se carga `fbevents.js`. Meta, si algún día hay ID,
   solo con la cookie `aichef_consent=accepted` (el Consent Mode de Google no lo cubre).
 
-`gtag` se encola con el consentimiento que ya fijó `GoogleTag.astro`. Con los
-marcadores vacíos la navegación al dashboard no espera.
+`gtag` se encola con el consentimiento que ya fijó `GoogleTag.astro`. Con el
+label de Ads activo, el gate espera el `event_callback` o 800 ms. GA4 y Meta,
+mientras estén vacíos, no añaden espera.
 
 ### Analítica: DataFast en todo el sitio (desde 2026-09-20)
 

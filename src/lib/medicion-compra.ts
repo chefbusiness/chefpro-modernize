@@ -5,19 +5,18 @@
  * respuesta trae `purchase` (Checkout Session pagada). El magic link `?jwt=`
  * y las compras cripto no lo traen.
  *
- * Marcadores: mientras no se sustituyan, ese canal no se dispara y el gate
- * no espera. La conversión de Google Ads AÚN NO EXISTE en la cuenta.
+ * Google Ads ya tiene label. GA4 y Meta siguen vacíos: esos canales no se
+ * disparan y no hacen esperar al dashboard.
  */
 
 /** Misma cuenta que `GOOGLE_ADS_ID` en astro-site/src/components/GoogleTag.astro. */
 export const GOOGLE_ADS_ID = 'AW-17829651892';
 
 /**
- * Label de la acción «compra de producto digital».
- * MARCADOR: la conversión aún no existe en AW-17829651892.
- * Pegar aquí la parte de `send_to` que va tras la barra.
+ * Label de la acción «compra de producto digital» en AW-17829651892.
+ * `send_to` queda `AW-17829651892/ARzvCKiTuq8dELTL67VC`.
  */
-export const GOOGLE_ADS_PURCHASE_LABEL = 'PENDIENTE_LABEL';
+export const GOOGLE_ADS_PURCHASE_LABEL = 'ARzvCKiTuq8dELTL67VC';
 
 /** ID GA4 (`G-…`). En el repo no hay ninguno. Vacío = no se envía `purchase`. */
 export const GA4_MEASUREMENT_ID = '';
@@ -166,6 +165,7 @@ export function medirCompraVerificada(compra: CompraVerificada, itemName: string
       waits.push(esperarConversion(gtag, {
         send_to: `${GOOGLE_ADS_ID}/${GOOGLE_ADS_PURCHASE_LABEL}`,
         value: compra.value,
+        // EUR en los Payment Links en euros; si Stripe cobra en otra, esa.
         currency: compra.currency,
         transaction_id: compra.transactionId,
       }));
