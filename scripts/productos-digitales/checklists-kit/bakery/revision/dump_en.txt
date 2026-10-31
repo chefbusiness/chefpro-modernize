@@ -1,0 +1,861 @@
+Volcado de 11 xlsx de ../../../astro-site/public/dl/bakery-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-bakery-opening-closing-checklist.xlsx
+# docProps: title='Bakery Opening & Closing Checklist: Overnight Bake Shift, Production & Shop' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Opening & Closing» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 01 · Bakery Opening & Closing Checklist: Overnight Bake Shift, Production & Shop
+A3     : Area
+B3     : Task
+C3     : Assigned to
+D3     : Time
+E3     : OK
+F3     : Notes
+A4     : OPENING — Overnight Bake Shift (3:00–5:00 AM)
+A5     : Production
+B5     : Turn on the ovens: proofer, deck / rack oven
+C5     : Baker
+D5     : 3:00 AM
+F5     : Preheat 45–60 min
+A6     : Production
+B6     : Check sourdough starters: activity, pH, temperature
+C6     : Baker
+D6     : 3:00 AM
+F6     : Ideal pH 3.8–4.2
+A7     : Production
+B7     : Scale ingredients for today's recipes (flours, water, salt, yeast)
+C7     : Baker
+D7     : 3:15 AM
+F7     : Calibrated scale
+A8     : Production
+B8     : Start mixing base doughs (baguette, rustic loaf, ciabatta)
+C8     : Baker
+D8     : 3:30 AM
+A9     : Production
+B9     : Check mixing water temperature (by season)
+C9     : Baker
+D9     : 3:30 AM
+F9     : Summer 39–46 °F, winter 64–72 °F
+A10    : Production
+B10    : Check bakehouse temperature (72–79 °F ideal)
+C10    : Baker
+D10    : 3:00 AM
+A11    : Production
+B11    : Prepare specialty doughs: brioche, croissant, whole wheat
+C11    : Baker
+D11    : 4:00 AM
+A12    : PRODUCTION — Fermentation & Baking (5:00–8:00 AM)
+A13    : Production
+B13    : Bulk fermentation: check volume and time
+C13    : Baker
+D13    : 5:00 AM
+F13    : Depends on starter / yeast
+A14    : Production
+B14    : Divide, scale and shape
+C14    : Baker
+D14    : 5:30 AM
+F14    : Standard weights by type
+A15    : Production
+B15    : Final proof in trays / baskets (bannetons)
+C15    : Baker
+D15    : 6:00 AM
+A16    : Production
+B16    : Score loaves before baking
+C16    : Baker
+D16    : 6:30 AM
+F16    : Sharp blade or lame
+A17    : Production
+B17    : Bake: temperature and time by bread type
+C17    : Baker
+D17    : 6:45 AM
+F17    : See the bake table (file 03)
+A18    : Production
+B18    : Steam the oven (first 10 min)
+C18    : Baker
+D18    : 6:45 AM
+F18    : Key to the crust
+A19    : Production
+B19    : Cool on racks before bagging / serving
+C19    : Baker
+D19    : 7:30 AM
+F19    : At least 30 min before slicing
+A20    : SHOP OPENING (8:00–9:00 AM)
+A21    : Shop
+B21    : Set up the bread display and pastry case
+C21    : Counter staff
+D21    : 8:00 AM
+A22    : Shop
+B22    : Allergen labels: everything bagged or boxed on site shows name, ingredients, net weight and the major allergens (FDA Food Code 3-602.11); the 9 major US allergens, in a bakery mainly wheat, milk, eggs, soy, sesame, tree nuts and peanuts; unwrapped bread gets a written allergen notice where your state has adopted the 2022 FDA Food Code (3-602.12(C)); UK: 14
+C22    : Counter staff
+D22    : 8:00 AM
+F22    : Required
+A23    : Shop
+B23    : Check stock of pastries, empanadas and tarts: meat empanadas and cream-filled items are TCS, cold at 41 °F or below or hot at 135 °F or above (FDA Food Code 3-501.16)
+C23    : Counter staff
+D23    : 8:15 AM
+A24    : Shop
+B24    : Turn on the POS and set up the starting bank (cash float)
+C24    : Counter staff
+D24    : 8:30 AM
+A25    : Shop
+B25    : Clean the display cases and sales surfaces, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C25    : Counter staff
+D25    : 8:30 AM
+A26    : CLOSING
+A27    : Production
+B27    : Feed the starter for tomorrow (overnight feeding)
+C27    : Baker
+D27    : 2:00 PM
+A28    : Production
+B28    : Clean the mixer, workbench and utensils, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C28    : Bakery assistant
+D28    : 2:00 PM
+A29    : Production
+B29    : Check ovens are off and clean; gas ovens: burners, gaskets and connections serviced by a licensed technician as your local code requires. Gas smell: light nothing, get out and call the gas company or 911 from outside
+C29    : Baker
+D29    : 2:30 PM
+A30    : Shop
+B30    : Count day-old bread: donate, make breadcrumbs or croutons
+C30    : Counter staff
+D30    : 2:00 PM
+A31    : Shop
+B31    : Close out the register and log sales: cash count and over/short against the POS Z report
+C31    : Manager
+D31    : 2:30 PM
+A32    : General
+B32    : Order flour and ingredients for tomorrow
+C32    : Manager
+D32    : 2:00 PM
+A34    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E13 E14 E15 E16 E17 E18 E19 E21 E22 E23 E24 E25 E27 E28 E29 E30 E31 E32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F32 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 02-sourdough-starter-fermentation-checklist.xlsx
+# docProps: title='Sourdough Starter & Fermentation Checklist: Starter, Bulk, Retard & Preferments' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Starter & Fermentation» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 02 · Sourdough Starter & Fermentation Checklist: Starter, Bulk, Retard & Preferments
+A3     : Dough Type
+B3     : Task / Check
+C3     : Frequency
+D3     : Assigned to
+E3     : Reading
+F3     : OK
+G3     : Notes
+A4     : NATURAL SOURDOUGH STARTER
+A5     : Starter
+B5     : Daily feeding: 1:1:1 (starter:flour:water)
+C5     : Daily
+D5     : Baker
+G5     : Same time every day
+A6     : Starter
+B6     : Check pH before use (ideal 3.8–4.2)
+C6     : Before mixing
+D6     : Baker
+G6     : pH strips or pH meter
+A7     : Starter
+B7     : Check starter temperature (75–82 °F ideal)
+C7     : 2× a day
+D7     : Baker
+A8     : Starter
+B8     : Float test: at peak activity it floats in water
+C8     : Before mixing
+D8     : Baker
+A9     : Starter
+B9     : Backup: keep a portion in the refrigerator (feed weekly)
+C9     : Weekly
+D9     : Baker
+G9     : Insurance against loss
+A10    : Starter
+B10    : Log: feeding date, pH, temperature, activity
+C10    : Daily
+D10    : Baker
+A11    : FERMENTATION — Checks
+A12    : Bulk
+B12    : Dough temperature after mixing (75–79 °F target)
+C12    : Every batch
+D12    : Baker
+A13    : Bulk
+B13    : Bulk fermentation time by bakehouse temperature
+C13    : Every batch
+D13    : Baker
+G13    : Warmer = shorter
+A14    : Bulk
+B14    : Windowpane test (gluten developed)
+C14    : After mixing
+D14    : Baker
+A15    : Retard
+B15    : Cold retard (37–41 °F) if used (12–72 h)
+C15    : Per recipe
+D15    : Baker
+G15    : More flavor and aroma
+A16    : Final proof
+B16    : Final proof: volume +80–100%
+C16    : Before baking
+D16    : Baker
+A17    : Final proof
+B17    : Poke test: slow spring-back = ready to bake
+C17    : Before baking
+D17    : Baker
+A18    : COMMERCIAL YEAST
+A19    : Fresh yeast
+B19    : Store at 36–39 °F; check the use-by date
+C19    : Weekly
+D19    : Baker
+G19    : 30 g fresh = 10 g dry
+A20    : Dry yeast
+B20    : Store in a cool, dry place, airtight
+C20    : Monthly
+D20    : Baker
+A21    : Poolish
+B21    : Make the poolish the night before (1:1 flour:water + yeast)
+C21    : Night before
+D21    : Baker
+G21    : 12–16 h fermentation
+A22    : Biga
+B22    : Make the biga (50–60% hydration + yeast)
+C22    : Night before
+D22    : Baker
+G22    : Stiffer than poolish
+A24    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+DV F5 F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:G22 · expression  · fórmula=['$F4="✓"'] · texto=None
+####################################################################################################
+# 03-bakery-oven-baking-checklist.xlsx
+# docProps: title='Bakery Oven Checklist: Deck & Rack Ovens, Steam and Bake Times' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Ovens & Baking» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 03 · Bakery Oven Checklist: Deck & Rack Ovens, Steam and Bake Times
+A3     : Oven Type
+B3     : Task / Check
+C3     : Frequency
+D3     : Assigned to
+E3     : OK
+F3     : Notes
+A4     : DECK OVEN
+A5     : Deck
+B5     : Preheat at least 45–60 min before loading
+C5     : Before production
+D5     : Baker
+A6     : Deck
+B6     : Check deck temperature with an infrared thermometer (430–500 °F, by bread)
+C6     : Before baking
+D6     : Baker
+A7     : Deck
+B7     : Steam on loading (first 8–10 min)
+C7     : Baking
+D7     : Baker
+F7     : Key to the crust
+A8     : Deck
+B8     : Open the steam damper after 10 min to dry the crust
+C8     : Baking
+D8     : Baker
+A9     : Deck
+B9     : Rotate loaves halfway through the bake if needed
+C9     : Baking
+D9     : Baker
+A10    : Deck
+B10    : Brush the deck with an oven brush at close
+C10    : After production
+D10    : Bakery assistant
+A11    : RACK OVEN
+A12    : Rack
+B12    : Preheat per the manufacturer's specs (15–30 min)
+C12    : Before production
+D12    : Baker
+A13    : Rack
+B13    : Load racks with evenly spaced pans
+C13    : Before baking
+D13    : Bakery assistant
+A14    : Rack
+B14    : Program time, temperature and steam
+C14    : Baking
+D14    : Baker
+A15    : Rack
+B15    : Check the rack rotates evenly
+C15    : Baking
+D15    : Baker
+A16    : Rack
+B16    : Clean the oven interior and pans at close
+C16    : After production
+D16    : Bakery assistant
+A17    : BAKE TABLE: TEMPERATURES & TIMES
+A18    : Baguette
+B18    : 465–480 °F with steam, 18–22 min
+C18    : Every bake
+D18    : Baker
+A19    : Rustic loaf
+B19    : 445–465 °F with steam, 35–45 min
+C19    : Every bake
+D19    : Baker
+A20    : Ciabatta
+B20    : 445 °F with steam, 20–25 min
+C20    : Every bake
+D20    : Baker
+A21    : Whole wheat
+B21    : 430–445 °F, 30–40 min
+C21    : Every bake
+D21    : Baker
+A22    : Croissant
+B22    : 375–390 °F without steam, 15–18 min
+C22    : Every bake
+D22    : Baker
+A23    : Brioche
+B23    : 355–375 °F, 20–25 min
+C23    : Every bake
+D23    : Baker
+A24    : Sourdough
+B24    : 445–465 °F with steam, 40–50 min (by size)
+C24    : Every bake
+D24    : Baker
+A26    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E18 E19 E20 E21 E22 E23 E24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F24 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 04-bakery-display-counter-checklist.xlsx
+# docProps: title='Bakery Display & Counter Checklist: Bread Case, Labels & Customer Service' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Display & Counter» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 04 · Bakery Display & Counter Checklist: Bread Case, Labels & Customer Service
+A3     : Area
+B3     : Task
+C3     : Frequency
+D3     : Assigned to
+E3     : OK
+F3     : Notes
+A4     : DISPLAY SETUP
+A5     : Display
+B5     : Arrange breads by type: baguettes, rustic loaves, whole wheat, specialty
+C5     : Daily
+D5     : Counter staff
+A6     : Display
+B6     : Labels with name, weight, price and allergens: everything bagged or boxed on site lists name, ingredients, net weight and the major allergens (FDA Food Code 3-602.11); unwrapped items get a written allergen notice where your state has adopted the 2022 FDA Food Code (3-602.12(C)); if you sell by weight, use a legal-for-trade (NTEP) scale inspected by your state or county weights & measures
+C6     : Daily
+D6     : Counter staff
+F6     : Required
+A7     : Display
+B7     : Sweet pastries: croissants, pain au chocolat, danishes
+C7     : Daily
+D7     : Counter staff
+A8     : Display
+B8     : Savory: empanadas, flatbreads, filled breads (meat empanadas and cream-filled items are TCS: 41 °F or below or 135 °F or above, FDA Food Code 3-501.16)
+C8     : Daily
+D8     : Counter staff
+A9     : Display
+B9     : Specialty items: gluten-free, organic (if offered). Call it gluten-free only if you can back it: under 20 ppm gluten (21 CFR 101.91), with strict separation in a bakery that uses wheat flour; organic only with certified flour and USDA Organic rules (7 CFR Part 205)
+C9     : Daily
+D9     : Counter staff
+F9     : Keep away from wheat flour
+A10    : Display
+B10    : FIFO rotation: today's product in back, yesterday's in front
+C10    : Daily
+D10    : Counter staff
+A11    : CUSTOMER SERVICE
+A12    : Sales
+B12    : Tell customers about today's breads and what's new
+C12    : Service
+D12    : Counter staff
+A13    : Sales
+B13    : Suggest pairings and uses for each bread
+C13    : Service
+D13    : Counter staff
+A14    : Sales
+B14    : Slice and bag bread on request
+C14    : Service
+D14    : Counter staff
+A15    : Sales
+B15    : Answer allergen questions: the 9 major US allergens (wheat, milk, eggs, soy, sesame, tree nuts, peanuts, fish, crustacean shellfish); UK: 14
+C15    : Service
+D15    : Counter staff
+A16    : Sales
+B16    : Handle special orders (weddings, events, corporate)
+C16    : On order
+D16    : Manager
+A17    : SHOP CLOSING
+A18    : Shop
+B18    : Count day-old bread and decide: discount, donation, breadcrumbs
+C18    : Close
+D18    : Counter staff
+A19    : Shop
+B19    : Clean display cases, counter and floor, then sanitize food-contact surfaces at label strength, checked with test strips (FDA Food Code 4-501.114)
+C19    : Close
+D19    : Counter staff
+A20    : Shop
+B20    : Close out the register and log sales by category (cash count and over/short against the POS Z report)
+C20    : Close
+D20    : Manager
+A22    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E12 E13 E14 E15 E16 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F20 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 05-bakery-manager-checklist.xlsx
+# docProps: title='Bakery Manager Checklist: Production Planning, Flour Orders, Waste & Food Cost' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Manager Tasks» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 05 · Bakery Manager Checklist: Production Planning, Flour Orders, Waste & Food Cost
+A3     : Category
+B3     : Task
+C3     : Frequency
+D3     : Priority
+E3     : Status
+F3     : Notes
+A4     : PRODUCTION
+A5     : Production
+B5     : Plan daily production from sales and orders
+C5     : Daily
+D5     : High
+A6     : Production
+B6     : Check quality of breads and pastries
+C6     : Daily
+D6     : High
+A7     : Production
+B7     : Adjust recipes by season (hydration, temperature)
+C7     : Seasonal
+D7     : Medium
+A8     : Production
+B8     : Develop new products: specialty and organic breads
+C8     : Monthly
+D8     : Medium
+A9     : PURCHASING & INVENTORY
+A10    : Purchasing
+B10    : Flour order: type, supplier, weekly quantity
+C10    : Weekly
+D10    : High
+A11    : Purchasing
+B11    : Ingredient stock: yeast, salt, seeds, butter
+C11    : Weekly
+D11    : High
+A12    : Inventory
+B12    : Waste control: unsold vs. baked bread (target under 8%, kit target)
+C12    : Daily
+D12    : High
+A13    : Suppliers
+B13    : Check flour quality: protein %, ash, falling number, absorption (W and P/L only if your mill provides them)
+C13    : Quarterly
+D13    : Medium
+A14    : FINANCE & STAFF
+A15    : Finance
+B15    : Weekly food cost (target about 30%; US bakeries run 28–35%, kit benchmark)
+C15    : Weekly
+D15    : High
+A16    : Finance
+B16    : Review menu prices against flour and energy costs
+C16    : Monthly
+D16    : High
+A17    : Staff
+B17    : Overnight shift schedule (team rotation)
+C17    : Weekly
+D17    : High
+A18    : Staff
+B18    : Training: new techniques, sourdough, trends
+C18    : Monthly
+D18    : Medium
+A19    : Marketing
+B19    : Social media: today's bread photo, behind-the-scenes process (Instagram, Google Business Profile)
+C19    : Daily
+D19    : Medium
+A21    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+####################################################################################################
+# 06-bakery-duties-by-role.xlsx
+# docProps: title='Bakery Duties by Role: Head Baker, Baker, Bakery Assistant & Counter Staff' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Duties by Role» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 06 · Bakery Duties by Role: Head Baker, Baker, Bakery Assistant & Counter Staff
+A3     : Role
+B3     : Task
+C3     : When
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : HEAD BAKER
+A5     : Head baker
+B5     : Oversee the sourdough starter and preferments
+C5     : Overnight
+D5     : Daily
+A6     : Head baker
+B6     : Lead mixing, shaping and baking
+C6     : Production
+D6     : Daily
+A7     : Head baker
+B7     : Quality check: crust, crumb, flavor, aroma
+C7     : After baking
+D7     : Daily
+A8     : Head baker
+B8     : Adjust recipes to conditions (humidity, temperature)
+C8     : Production
+D8     : Daily
+A9     : Head baker
+B9     : Decide the day's production and specialty breads
+C9     : Before production
+D9     : Daily
+A10    : BAKER
+A11    : Baker
+B11    : Scale ingredients for today's recipe
+C11    : Overnight
+D11    : Daily
+A12    : Baker
+B12    : Mix base doughs in the mixer
+C12    : Overnight
+D12    : Daily
+A13    : Baker
+B13    : Divide, scale and shape
+C13    : Production
+D13    : Daily
+A14    : Baker
+B14    : Load and unload the ovens
+C14    : Production
+D14    : Daily
+A15    : Baker
+B15    : Make pastries: croissants, pain au chocolat, brioche
+C15    : Production
+D15    : Daily
+A16    : BAKERY ASSISTANT
+A17    : Bakery assistant
+B17    : Prepare pans, baskets and utensils
+C17    : Before production
+D17    : Daily
+A18    : Bakery assistant
+B18    : Score loaves under supervision
+C18    : Production
+D18    : Daily
+A19    : Bakery assistant
+B19    : Cool, pack and label finished products
+C19    : After production
+D19    : Daily
+A20    : Bakery assistant
+B20    : Clean production: tables, mixer, floors; sanitize food-contact surfaces at label strength, checked with test strips (FDA Food Code 4-501.114)
+C20    : Close
+D20    : Daily
+A21    : COUNTER STAFF
+A22    : Counter staff
+B22    : Set up the display and label the breads
+C22    : Shop opening
+D22    : Daily
+A23    : Counter staff
+B23    : Serve customers: advise, slice, bag
+C23    : Service
+D23    : Daily
+A24    : Counter staff
+B24    : Handle orders and special requests
+C24    : Service
+D24    : Daily
+A25    : Counter staff
+B25    : Close out the register (cash count and over/short against the POS Z report) and count day-old bread
+C25    : Close
+D25    : Daily
+A27    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E17 E18 E19 E20 E22 E23 E24 E25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F25 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 07-bakery-cleaning-maintenance-schedule.xlsx
+# docProps: title='Bakery Weekly & Monthly Checklists: Deep Cleaning, Maintenance & Inventory' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Weekly & Monthly» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 07 · Bakery Weekly & Monthly Checklists: Deep Cleaning, Maintenance & Inventory
+A3     : Period
+B3     : Task
+C3     : Assigned to
+D3     : Day / Week
+E3     : OK
+F3     : Notes
+A4     : WEEKLY
+A5     : Weekly
+B5     : Deep clean the mixer and divider, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C5     : Bakery assistant
+D5     : Monday
+A6     : Weekly
+B6     : Deep clean the ovens (ash, grease)
+C6     : Bakery assistant
+D6     : Monday
+A7     : Weekly
+B7     : Calibrate the precision scale; if you sell by weight, the shop scale must be legal-for-trade (NTEP) and inspected by your state or county weights & measures
+C7     : Baker
+D7     : Monday
+A8     : Weekly
+B8     : Inventory flours, seeds, yeast, butter
+C8     : Manager
+D8     : Sunday
+A9     : Weekly
+B9     : Check ingredient use-by dates
+C9     : Bakery assistant
+D9     : Wednesday
+A10    : Weekly
+B10    : Sourdough starter backup in the refrigerator
+C10    : Baker
+D10    : Friday
+A11    : Weekly
+B11    : Review waste and adjust production
+C11    : Manager
+D11    : Monday
+A12    : Weekly
+B12    : Deep clean the proofer, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
+C12    : Bakery assistant
+D12    : Monday
+A13    : MONTHLY
+A14    : Monthly
+B14    : Preventive oven maintenance: burners, gaskets, thermostats; gas ovens serviced by a licensed technician as your local code requires
+C14    : Maintenance
+D14    : 1st week
+A15    : Monthly
+B15    : Mixer maintenance: belts, gears, lubrication
+C15    : Maintenance
+D15    : 2nd week
+A16    : Monthly
+B16    : HACCP review: temperature, cleaning and allergen logs
+C16    : Manager
+D16    : 1st week
+A17    : Monthly
+B17    : Monthly food cost and profitability by product
+C17    : Manager
+D17    : 1st week
+A18    : Monthly
+B18    : Review flour suppliers: quality, price, service
+C18    : Manager
+D18    : 2nd week
+A19    : Monthly
+B19    : Team training: new techniques, trends, recipes
+C19    : Head baker
+D19    : 3rd week
+A20    : Monthly
+B20    : Review selling prices against actual cost
+C20    : Manager
+D20    : 1st week
+A21    : Monthly
+B21    : Pest control by a licensed pest control operator (service report on file); the team checks traps and signs in the flour storage
+C21    : Maintenance
+D21    : 4th week
+A23    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F21 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 08-bakery-seasonal-holiday-checklist.xlsx
+# docProps: title='Bakery Seasonal & Holiday Checklist: Seasonal Breads, Holiday Orders & Specialties' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Seasons & Holidays» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 08 · Bakery Seasonal & Holiday Checklist: Seasonal Breads, Holiday Orders & Specialties
+A3     : Season / Event
+B3     : Action / Task
+C3     : Assigned to
+D3     : Lead time
+E3     : OK
+F3     : Notes
+A4     : BAKING SEASONS
+A5     : Winter
+B5     : Rustic loaves, rye, walnut, raisin and spice breads
+C5     : Head baker
+D5     : 2 weeks
+A6     : Spring
+B6     : Breads with fresh herbs, olives, sun-dried tomatoes
+C6     : Head baker
+D6     : 2 weeks
+A7     : Summer
+B7     : Summer breads: focaccia, ciabatta, beer breads
+C7     : Head baker
+D7     : 2 weeks
+F7     : Adjust hydration
+A8     : Fall
+B8     : Pumpkin, chestnut and nut breads
+C8     : Head baker
+D8     : 2 weeks
+A9     : Year-round
+B9     : Baguette, white loaf, whole wheat, ciabatta (the basics)
+C9     : Team
+D9     : Ongoing
+A10    : KEY SALES EVENTS
+A11    : Holiday season
+B11    : Stollen, panettone, holiday breads and dinner rolls; pre-orders and gift boxes
+C11    : Head baker
+D11    : 1 month
+F11    : Production peak
+A12    : Easter
+B12    : Hot cross buns and braided Easter breads (date varies)
+C12    : Head baker
+D12    : 2 weeks
+A13    : Valentine's Day
+B13    : Heart-shaped breads and pastries, gift packaging
+C13    : Head baker
+D13    : 2 weeks
+A14    : Halloween
+B14    : Pumpkin bread, themed pastries
+C14    : Head baker
+D14    : 2 weeks
+A15    : World Bread Day
+B15    : Oct 16: promotions, tastings, open bakehouse
+C15    : Manager
+D15    : 1 month
+F15    : Marketing
+A16    : Thanksgiving
+B16    : Pre-orders: dinner rolls, stuffing bread, pumpkin bread (4th Thursday of November)
+C16    : Manager
+D16    : 1 month
+A17    : TRENDS & SPECIALTIES
+A18    : Sourdough
+B18    : Growing demand: artisan bread, long fermentation
+C18    : Head baker
+D18    : Ongoing
+F18    : Premium
+A19    : Gluten-free
+B19    : Gluten-free line: separate production area or a strict protocol; call it gluten-free only if you can back it (under 20 ppm gluten, 21 CFR 101.91)
+C19    : Head baker
+D19    : Quarterly
+A20    : Organic
+B20    : Certified organic bread (organic flour, documented process; USDA Organic rules, 7 CFR Part 205)
+C20    : Manager
+D20    : Quarterly
+A21    : Grains
+B21    : Spelt, kamut, buckwheat, whole rye
+C21    : Head baker
+D21    : Seasonal
+A23    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E16 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
+CF A4:F21 · expression  · fórmula=['$E4="✓"'] · texto=None
+####################################################################################################
+# 09-blank-bakery-checklist-template.xlsx
+# docProps: title='Blank Bakery Checklist Template (Editable)' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Blank Template» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : 09 · Blank Bakery Checklist Template (Editable)
+A3     : Area
+B3     : Task
+C3     : Assigned to
+D3     : Frequency
+E3     : OK
+F3     : Notes
+A4     : YOUR CUSTOM TASKS
+A26    : Instructions: Add your own tasks. You can copy rows from the other sheets in the kit and adapt them to your bakery.
+A27    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+####################################################################################################
+# BONUS-01-bakery-daily-production-sheet.xlsx
+# docProps: title='BONUS: Bakery Daily Production Sheet (Pre-Shift Briefing)' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Daily Production Sheet» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : BONUS: Bakery Daily Production Sheet (Pre-Shift Briefing)
+A3     : Section
+B3     : Information
+C3     : Detail
+D3     : Notes
+A4     : TODAY'S PRODUCTION
+A5     : Basic breads
+B5     : Baguettes / loaves / ciabattas:
+A6     : Specialty
+B6     : Today's specialty breads:
+A7     : Pastries
+B7     : Croissants / pain au chocolat / brioche:
+A8     : Orders
+B8     : Confirmed special orders:
+A9     : STARTER & PREFERMENTS
+A10    : Sourdough
+B10    : Status: pH / temperature / activity:
+A11    : Poolish
+B11    : Made the night before: YES / NO
+A12    : Yeast
+B12    : Fresh / dry yeast stock:
+A13    : OVENS & EQUIPMENT
+A14    : Deck oven
+B14    : Temperature / Status:
+A15    : Rack oven
+B15    : Temperature / Status:
+A16    : Mixer
+B16    : Working properly: YES / NO
+A17    : TEAM & NOTES
+A18    : Staff
+B18    : Team on shift today:
+A19    : Inventory
+B19    : Low-stock alerts:
+A20    : Notes
+B20    : Today's notes:
+A22    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
+####################################################################################################
+# BONUS-02-bakery-annual-calendar.xlsx
+# docProps: title='BONUS: Bakery Annual Calendar: Seasonal Breads, Orders, Maintenance & Training (US)' · subject='Bakery Checklists Kit Pro · v1.1' · keywords='bakery checklist, bakery opening checklist, bakery cleaning checklist, bakery production schedule, bread bakery, sourdough starter, AI Chef Pro' · description='aichef.pro/en/digital-products/bakery-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Annual Calendar» · protegida=False · área= · títulos=$3:$3 · paneles=A4 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : AI Chef Pro
+A2     : BONUS: Bakery Annual Calendar: Seasonal Breads, Orders, Maintenance & Training (US)
+A3     : Month
+B3     : Seasonal Breads
+C3     : Events / Orders
+D3     : Maintenance
+E3     : Training
+A4     : January
+B4     : Whole-grain, rye and nut breads
+C4     : New Year's and corporate orders (slow month)
+D4     : Post-holiday oven check
+E4     : Sweet enriched doughs
+A5     : February
+B5     : Beer bread, country loaf
+C5     : Super Bowl party orders, Valentine's Day, Mardi Gras king cakes (varies)
+D5     : Scale calibration
+E5     : Laminated doughs
+A6     : March
+B6     : Herb breads, spring focaccia
+C6     : St. Patrick's Day (Irish soda bread), Easter prep (date varies)
+D6     : Proofer check
+E6     : Long fermentation
+A7     : April
+B7     : Olive oil bread, olive ciabatta
+C7     : Easter and Passover (dates vary), spring weddings
+D7     : Mixer maintenance
+E7     : Sourdough breads
+A8     : May
+B8     : Sun-dried tomato and herb breads
+C8     : Mother's Day (2nd Sunday), graduations, Memorial Day
+D8     : A/C check
+E8     : French pastries (viennoiserie)
+A9     : June
+B9     : Focaccia, beer bread, summer breads
+C9     : Father's Day (3rd Sunday), weddings, farmers market season
+D9     : Get the bakehouse ready for the heat
+E9     : Summer hydration
+A10    : July
+B10    : Flatbreads, light ciabatta
+C10    : Jul 4 cookouts (buns and rolls), farmers markets
+D10    : Adjust water temperatures
+E10    : No-knead breads
+A11    : August
+B11    : Sunflower seed bread, light rye, ciabatta
+C11    : Back to school, end-of-summer events
+D11    : Intensive oven maintenance
+E11    : Team vacation rotation
+A12    : September
+B12    : Pumpkin, walnut and raisin bread
+C12    : Labor Day, Rosh Hashanah (round challah, date varies)
+D12    : Full post-summer check
+E12    : New fall recipes
+A13    : October
+B13    : Chestnut, mushroom and spice breads
+C13    : World Bread Day (Oct 16), Halloween, fall festivals
+D13    : Oven burner check
+E13    : Regional breads
+A14    : November
+B14    : Rye, spelt and whole wheat bread
+C14    : Thanksgiving pre-orders (dinner rolls, 4th Thursday), holiday corporate orders
+D14    : Pre-holiday calibration of everything
+E14    : Holiday breads: panettone and stollen
+A15    : December
+B15    : Panettone, stollen, holiday breads
+C15    : Christmas and holiday season (peak), New Year's Eve
+D15    : Full year-end check
+E15    : High-volume production
+A17    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro

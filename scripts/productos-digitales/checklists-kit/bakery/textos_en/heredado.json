@@ -1,0 +1,44 @@
+{
+ "c0250": {
+  "en": "WEEKLY",
+  "origen": "c0273",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0263": {
+  "en": "MONTHLY",
+  "origen": "c0285",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0325": {
+  "en": "YOUR CUSTOM TASKS",
+  "origen": "c0335",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0340": {
+  "en": "Orders",
+  "origen": "c1039",
+  "via": "exacta",
+  "fuente": "pastry"
+ },
+ "c0354": {
+  "en": "Staff",
+  "origen": "c0369",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0408": {
+  "en": "Full post-summer check",
+  "origen": "c0424",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ },
+ "c0423": {
+  "en": "Full year-end check",
+  "origen": "c0439",
+  "via": "exacta",
+  "fuente": "foodtruck"
+ }
+}

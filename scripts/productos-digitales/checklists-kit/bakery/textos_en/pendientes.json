@@ -1,0 +1,2586 @@
+{
+ "meta": {
+  "kit": "bakery",
+  "producto": "Bakery Checklists Kit Pro",
+  "n_pendientes": 217,
+  "n_palabras": 1107,
+  "motivos": {
+   "nueva": 217
+  },
+  "n_heredadas": 7,
+  "heredadas_por_via": {
+   "exacta": 7
+  },
+  "heredadas_por_fuente": {
+   "foodtruck": 6,
+   "pastry": 1
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "bakery/SPEC.md",
+   "foodtruck/SPEC.md §0 (molde plano)",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "bakery/mapas_bakery.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../business-plans-en-2/F1-research-us-delta.md (Bakery Business Plan Kit: jerga y ratios)",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0010",
+   "es": "APERTURA — Turno Madrugada (03:00-05:00)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · A4"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0012",
+   "es": "Encender hornos: camara de fermentacion, horno de piso/rotativo",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura y Cierre · B5"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder",
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "adaptar": "cámara de fermentación → proofer; horno de piso → deck oven; rotativo → rack oven",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0014",
+   "es": "Precalentar 45-60 min",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura y Cierre · F5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0015",
+   "es": "Verificar masas madre: actividad, pH, temperatura",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0016",
+   "es": "pH optimo 3.8-4.2",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · F6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0017",
+   "es": "Pesar ingredientes segun recetas del dia (harinas, agua, sal, levadura)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura y Cierre · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0018",
+   "es": "Bascula calibrada",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Apertura y Cierre · F7"
+   ],
+   "pistas": [
+    "báscula → scale (legal-for-trade si vendes al peso)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0019",
+   "es": "Iniciar amasado de masas base (pan de barra, hogaza, chapata)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura y Cierre · B8"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider",
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0020",
+   "es": "Verificar temperatura agua de amasado (segun estacion)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0023",
+   "es": "Preparar masas especiales: brioche, croissant, pan integral",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B11"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0025",
+   "es": "PRODUCCION — Fermentacion y Horneado (05:00-08:00)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · A12"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)",
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0026",
+   "es": "Primera fermentacion (bulk): controlar volumen y tiempo",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B13"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0027",
+   "es": "Depende de masa madre/levadura",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura y Cierre · F13"
+   ],
+   "pistas": [
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0028",
+   "es": "Division, pesaje y formado de piezas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B14",
+    "06 · Perfiles · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0029",
+   "es": "Pesos estandar por tipo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura y Cierre · F14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0030",
+   "es": "Segunda fermentacion en bandejas/cestos (pointage)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B15"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0031",
+   "es": "Greñado/cortes decorativos antes de hornear",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B16"
+   ],
+   "pistas": [
+    "greñar / greñado → score / scoring; cuchilla → lame"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0032",
+   "es": "Cuchilla afilada o lame",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura y Cierre · F16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0033",
+   "es": "Horneado: temperatura y tiempo segun tipo de pan",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0034",
+   "es": "Ver tabla de horneado",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura y Cierre · F17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0035",
+   "es": "Control de vapor en horno (primeros 10 min)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B18"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0036",
+   "es": "Clave para corteza",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura y Cierre · F18",
+    "03 · Hornos y Coccion · F7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0037",
+   "es": "Enfriado en rejillas antes de embolsar/servir",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0038",
+   "es": "Min 30 min antes de cortar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · F19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0039",
+   "es": "APERTURA TIENDA (08:00-09:00)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · A20"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0041",
+   "es": "Montar expositor de panes y bolleria",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B21"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat",
+    "expositor → bread display / bakery case; vitrina → display case"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0043",
+   "es": "Etiquetado: alergenos (gluten, leche, huevo, soja)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B22"
+   ],
+   "pistas": [
+    "alérgenos US: los 9 (trigo, no «gluten»; sésamo); etiqueta de lo envasado en tienda (FDA Food Code 3-602.11)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act); en panadería pesan el trigo (no «gluten»), la leche, el huevo, la soja, el sésamo (semillas), los frutos de cáscara y el cacahuete; en UK, los 14. Lo que embolsas o encajas en la tienda lleva etiqueta con nombre, ingredientes, peso neto y los alérgenos principales (FDA Food Code 3-602.11); lo que se vende sin envasar, aviso escrito de alérgenos donde tu estado haya adoptado el FDA Food Code 2022 (3-602.12(C))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0045",
+   "es": "Verificar stock de bolleria, empanadas, tartas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B23"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "adaptar": "Las empanadas con carne y lo relleno de crema o nata son TCS: frío a 41 °F o menos o caliente a 135 °F o más (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "Encender caja registradora, preparar cambio",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura y Cierre · B24"
+   ],
+   "pistas": [
+    "caja → POS / register; cambio → starting bank; cierre de caja → cash count y over/short"
+   ],
+   "adaptar": "caja registradora → POS; Cierre de caja → cash count y over/short contra el POS Z report; cambio → starting bank (cash float)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0047",
+   "es": "Limpiar vitrinas y superficies de venta",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B25"
+   ],
+   "pistas": [
+    "expositor → bread display / bakery case; vitrina → display case"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "CIERRE",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "01 · Apertura y Cierre · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0049",
+   "es": "Preparar masa madre para manana (refresco nocturno)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B27"
+   ],
+   "pistas": [
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0050",
+   "es": "Limpiar amasadora, mesa de trabajo, utensilios",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura y Cierre · B28"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Verificar hornos apagados y limpios",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura y Cierre · B29"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "adaptar": "Hornos de gas: quemadores, juntas y conexiones por un técnico con licencia, con la frecuencia de tu código local; si huele a gas, no encender nada, salir y llamar a la compañía de gas o al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0053",
+   "es": "Inventario pan sobrante: donacion, pan rallado, tostadas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B30"
+   ],
+   "pistas": [
+    "mermas → waste; pan sobrante → day-old bread (discount, donation, breadcrumbs)",
+    "pan rallado → breadcrumbs; tostadas → croutons / toast"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "Cierre de caja y registro de ventas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura y Cierre · B31"
+   ],
+   "pistas": [
+    "caja → POS / register; cambio → starting bank; cierre de caja → cash count y over/short"
+   ],
+   "adaptar": "Cierre de caja → cash count y over/short contra el POS Z report; cambio → starting bank (cash float)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0057",
+   "es": "Pedido de harina y materias primas para manana",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura y Cierre · B32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "MASA MADRE NATURAL (Sourdough)",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Masas Madre · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "Refresco diario: 1:1:1 (madre:harina:agua)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Masas Madre · B5"
+   ],
+   "pistas": [
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0076",
+   "es": "Misma hora cada dia",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Masas Madre · G5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Control pH antes de usar (optimo 3.8-4.2)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Masas Madre · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0079",
+   "es": "Tiras pH o pHmetro",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Masas Madre · G6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0082",
+   "es": "Test flotacion: pico de actividad = flota en agua",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Masas Madre · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0083",
+   "es": "Backup: guardar porcion en nevera (refresco semanal)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Masas Madre · B9"
+   ],
+   "pistas": [
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0085",
+   "es": "Seguro ante perdida",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Masas Madre · G9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0086",
+   "es": "Registro: fecha refresco, pH, temperatura, actividad",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Masas Madre · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0087",
+   "es": "FERMENTACION — Controles",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Masas Madre · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Tiempo bulk fermentacion segun temperatura obrador",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Masas Madre · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "obrador → production / bakehouse (NUNCA «workshop»)",
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0092",
+   "es": "Mayor temp = menos tiempo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Masas Madre · G13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Test de ventana (gluten desarrollado)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Masas Madre · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0098",
+   "es": "Mas sabor y aroma",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Masas Madre · G15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "Segunda fermentacion (pointage): volumen +80-100%",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Masas Madre · B16"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Test del dedo: recuperacion lenta = listo para hornear",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Masas Madre · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "LEVADURAS COMERCIALES",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Masas Madre · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "30g fresca = 10g seca",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Masas Madre · G19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "Almacenar en lugar seco y fresco, cerrado hermetico",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Masas Madre · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "Preparar poolish la noche anterior (1:1 harina:agua + levadura)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Masas Madre · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0113",
+   "es": "12-16h fermentacion",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Masas Madre · G21"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Preparar biga (50-60% hidratacion + levadura)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Masas Madre · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Mas rigida que poolish",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Masas Madre · G22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0121",
+   "es": "HORNO DE PISO / SOLERA",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Hornos y Coccion · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0123",
+   "es": "Precalentar min 45-60 min antes de cargar",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Hornos y Coccion · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "Inyectar vapor al cargar (primeros 8-10 min)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Hornos y Coccion · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "Abrir tiro de vapor tras 10 min para secar corteza",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Hornos y Coccion · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "Rotar piezas a mitad de coccion si necesario",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Hornos y Coccion · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Limpiar solera con escoba de horno al cierre",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Hornos y Coccion · B10"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "HORNO ROTATIVO",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Hornos y Coccion · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "Precalentar segun especificaciones (15-30 min)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Hornos y Coccion · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Cargar carros con bandejas distribuidas uniformemente",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Hornos y Coccion · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Programar tiempo, temperatura y vapor",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Hornos y Coccion · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "Verificar rotacion uniforme del carro",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Hornos y Coccion · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0138",
+   "es": "Limpiar interior y bandejas al cierre",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Hornos y Coccion · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "TABLA DE TEMPERATURAS Y TIEMPOS",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Hornos y Coccion · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "MONTAJE EXPOSITOR",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Expositor y Venta · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Colocar panes por tipo: barra, hogaza, integral, especiales",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Venta · B5"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Etiquetado con nombre, peso, precio y alergenos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Venta · B6"
+   ],
+   "pistas": [
+    "alérgenos US: los 9 (trigo, no «gluten»; sésamo); etiqueta de lo envasado en tienda (FDA Food Code 3-602.11)"
+   ],
+   "adaptar": "Lo que embolsas o encajas en la tienda lleva etiqueta con nombre, ingredientes, peso neto y los alérgenos principales (FDA Food Code 3-602.11); lo que se vende sin envasar, aviso escrito de alérgenos donde tu estado haya adoptado el FDA Food Code 2022 (3-602.12(C)). Si vendes al peso, la báscula de la tienda debe ser legal-for-trade (NTEP) y la inspecciona weights & measures de tu estado o condado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0163",
+   "es": "Bolleria dulce: croissants, napolitanas, ensaimadas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Expositor y Venta · B7"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "adaptar": "napolitanas → pain au chocolat; ensaimadas → danishes (o la bollería de tu carta)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0164",
+   "es": "Bolleria salada: empanadas, cocas, panes rellenos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Expositor y Venta · B8"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "adaptar": "cocas → flatbreads. Las empanadas con carne y lo relleno de crema o nata son TCS: frío a 41 °F o menos o caliente a 135 °F o más (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Productos especiales: sin gluten, ecologico (si aplica)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Venta · B9"
+   ],
+   "pistas": [
+    "sin gluten → gluten-free (21 CFR 101.91); ecológico → organic (7 CFR Part 205)"
+   ],
+   "adaptar": "«Gluten-free» solo si lo puedes sostener: menos de 20 ppm de gluten (21 CFR 101.91), y en un obrador con harina de trigo exige separación y control estrictos; «ecológico» → organic, con harina certificada y las reglas del USDA Organic (7 CFR Part 205) para llamarlo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Separar de gluten",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Expositor y Venta · F9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Rotacion FIFO: producto del dia atras, ayer al frente",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Expositor y Venta · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "ATENCION AL CLIENTE",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Expositor y Venta · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Informar sobre panes del dia y novedades",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Venta · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0172",
+   "es": "Sugerir maridajes y usos de cada pan",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Venta · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Cortar y embolsar pan bajo pedido del cliente",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Expositor y Venta · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "Informar alergenos al cliente cuando pregunte",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Expositor y Venta · B15"
+   ],
+   "pistas": [
+    "alérgenos US: los 9 (trigo, no «gluten»; sésamo); etiqueta de lo envasado en tienda (FDA Food Code 3-602.11)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act); en panadería pesan el trigo (no «gluten»), la leche, el huevo, la soja, el sésamo (semillas), los frutos de cáscara y el cacahuete; en UK, los 14",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0175",
+   "es": "Gestionar encargos especiales (bodas, eventos, empresas)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Expositor y Venta · B16"
+   ],
+   "pistas": [
+    "encargo → special order / pre-order"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "CIERRE TIENDA",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Expositor y Venta · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "Inventario pan sobrante y decision: descuento, donacion, pan rallado",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Expositor y Venta · B18"
+   ],
+   "pistas": [
+    "mermas → waste; pan sobrante → day-old bread (discount, donation, breadcrumbs)",
+    "pan rallado → breadcrumbs; tostadas → croutons / toast"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Limpiar vitrinas, mostrador, suelo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Expositor y Venta · B19"
+   ],
+   "pistas": [
+    "expositor → bread display / bakery case; vitrina → display case"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "Cierre caja y registro ventas por categoria",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Expositor y Venta · B20"
+   ],
+   "pistas": [
+    "caja → POS / register; cambio → starting bank; cierre de caja → cash count y over/short"
+   ],
+   "adaptar": "Cierre de caja → cash count y over/short contra el POS Z report; cambio → starting bank (cash float)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "PRODUCCION",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Tareas Manager · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "Planificar produccion diaria segun ventas y pedidos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Supervisar calidad de panes y bolleria",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B6"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Ajustar recetas segun temporada (hidratacion, temperatura)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0196",
+   "es": "Desarrollar nuevos productos: panes especiales, ecologicos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B8"
+   ],
+   "pistas": [
+    "sin gluten → gluten-free (21 CFR 101.91); ecológico → organic (7 CFR Part 205)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0197",
+   "es": "COMPRAS Y STOCK",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Manager · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Pedido harina: tipo, proveedor, cantidad semanal",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "Stock materias primas: levadura, sal, semillas, mantequilla",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Control mermas: pan sobrante vs producido (objetivo <8%)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B12"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste; pan sobrante → day-old bread (discount, donation, breadcrumbs)"
+   ],
+   "adaptar": "El «< 8 %» es el objetivo del kit: «target under 8% (kit target)»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0204",
+   "es": "Evaluar calidad harina: W, P/L, cenizas, proteina",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B13"
+   ],
+   "adaptar": "Ficha de harina US: proteína %, cenizas (ash), falling number y absorción; W y P/L (alveógrafo europeo) solo si tu molino los da",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0206",
+   "es": "FINANZAS Y RRHH",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Manager · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0208",
+   "es": "Food cost semanal (objetivo <30% en panaderia)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B15"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Panaderia»; panadería → bakery (bread bakery en el título); panadero → baker"
+   ],
+   "adaptar": "Food cost: «target about 30% (US bakeries run 28–35%, kit benchmark)»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0209",
+   "es": "Revisar precios carta vs coste harina y energia",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Cuadrante turnos madrugada (rotacion equipo)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Tareas Manager · B17"
+   ],
+   "pistas": [
+    "cuadrante de turnos → shift schedule (overnight shift)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0212",
+   "es": "Formacion: nuevas tecnicas, masas madre, tendencias",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "RRSS: foto pan del dia, proceso de elaboracion",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B19"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "adaptar": "RRSS → social media (Instagram, Google Business Profile)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "MAESTRO PANADERO / JEFE OBRADOR",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Perfiles · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0222",
+   "es": "Supervisar masa madre y pre-fermentos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B5"
+   ],
+   "pistas": [
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "Dirigir amasado, formado y horneado",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B6"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "Control calidad: corteza, miga, sabor, aroma",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0227",
+   "es": "Ajustar recetas segun condiciones (humedad, temperatura)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0228",
+   "es": "Decidir produccion del dia y panes especiales",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0229",
+   "es": "OFICIAL PANADERO",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Perfiles · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0230",
+   "es": "Pesar ingredientes segun receta del dia",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0231",
+   "es": "Amasar masas base en amasadora",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B12"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "Cargar y descargar hornos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Perfiles · B14"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0233",
+   "es": "Preparar bolleria: croissants, napolitanas, brioches",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B15"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "AYUDANTE PANADERO",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Perfiles · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0235",
+   "es": "Preparar bandejas, cestos y utensilios",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0236",
+   "es": "Greñar piezas bajo supervision",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Perfiles · B18"
+   ],
+   "pistas": [
+    "greñar / greñado → score / scoring; cuchilla → lame"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Enfriar, embalar y etiquetar producto terminado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B19"
+   ],
+   "pistas": [
+    "alérgenos US: los 9 (trigo, no «gluten»; sésamo); etiqueta de lo envasado en tienda (FDA Food Code 3-602.11)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0238",
+   "es": "Limpieza de obrador: mesas, amasadora, suelos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B20"
+   ],
+   "pistas": [
+    "obrador → production / bakehouse (NUNCA «workshop»)",
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "DEPENDIENTE / VENDEDOR",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Perfiles · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Montar expositor y etiquetar panes",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B22"
+   ],
+   "pistas": [
+    "expositor → bread display / bakery case; vitrina → display case",
+    "alérgenos US: los 9 (trigo, no «gluten»; sésamo); etiqueta de lo envasado en tienda (FDA Food Code 3-602.11)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Atender clientes: informar, cortar, embolsar",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Gestionar encargos y pedidos especiales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B24"
+   ],
+   "pistas": [
+    "encargo → special order / pre-order"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "Cierre caja e inventario sobrante",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B25"
+   ],
+   "pistas": [
+    "mermas → waste; pan sobrante → day-old bread (discount, donation, breadcrumbs)",
+    "caja → POS / register; cambio → starting bank; cierre de caja → cash count y over/short"
+   ],
+   "adaptar": "Cierre de caja → cash count y over/short contra el POS Z report; cambio → starting bank (cash float)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0251",
+   "es": "Limpieza profunda amasadora y divisora",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B5"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Limpieza profunda hornos (cenizas, grasa)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B6"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0254",
+   "es": "Calibrar bascula de precision",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "07 · Semanales y Mensuales · B7"
+   ],
+   "pistas": [
+    "báscula → scale (legal-for-trade si vendes al peso)"
+   ],
+   "adaptar": "Si vendes al peso, la báscula de la tienda debe ser legal-for-trade (NTEP) y la inspecciona weights & measures de tu estado o condado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Inventario harinas, semillas, levaduras, mantequilla",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Revision caducidades materias primas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "07 · Semanales y Mensuales · B9"
+   ],
+   "pistas": [
+    "caducidad → use-by date"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Backup masa madre en nevera",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B10"
+   ],
+   "pistas": [
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Analisis mermas y ajuste produccion",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B11"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste; pan sobrante → day-old bread (discount, donation, breadcrumbs)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Limpieza profunda camara de fermentacion",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B12"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "adaptar": "cámara de fermentación → proofer. Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Mantenimiento preventivo hornos: quemadores, juntas, termostatos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B14"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "adaptar": "Hornos de gas: quemadores, juntas y conexiones por un técnico con licencia, con la frecuencia de tu código local; si huele a gas, no encender nada, salir y llamar a la compañía de gas o al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0267",
+   "es": "Mantenimiento amasadora: correas, engranajes, lubricacion",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B15"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0269",
+   "es": "Auditoria APPCC: registros temperaturas, limpieza, alergenos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»",
+    "alérgenos US: los 9 (trigo, no «gluten»; sésamo); etiqueta de lo envasado en tienda (FDA Food Code 3-602.11)"
+   ],
+   "adaptar": "APPCC → HACCP: revisar los registros de temperaturas, limpieza y alérgenos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Food cost mensual y analisis rentabilidad por producto",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "Evaluacion proveedores harina: calidad, precio, servicio",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0272",
+   "es": "Formacion equipo: nuevas tecnicas, tendencias, recetas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0274",
+   "es": "Revision precios venta vs coste real",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "Control de plagas: trampas, registros, incidencias",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B21"
+   ],
+   "adaptar": "Control de plagas por un licensed pest control operator, con su informe; el equipo revisa trampas y señales en el almacén de harinas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "TEMPORADAS PANADERAS",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Eventos y Temporadas · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "Panes de hogaza, centeno, nueces, pasas, especias",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Eventos y Temporadas · B5"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "Panes con hierbas frescas, aceitunas, tomates secos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Eventos y Temporadas · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "Panes frios: focaccia, ciabatta, panes de cerveza",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Eventos y Temporadas · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Ajustar hidratacion",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Eventos y Temporadas · F7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Panes con calabaza, castana, frutos secos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "08 · Eventos y Temporadas · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0295",
+   "es": "Pan de barra, hogaza blanca, integral, chapata (basicos)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Eventos y Temporadas · B9"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0298",
+   "es": "EVENTOS COMERCIALES",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Eventos y Temporadas · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Pico produccion",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Eventos y Temporadas · F11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "TENDENCIAS Y ESPECIALIDADES",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "08 · Eventos y Temporadas · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Crecimiento demanda: pan artesano, larga fermentacion",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "08 · Eventos y Temporadas · B18"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Premium",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "08 · Eventos y Temporadas · F18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Linea sin gluten: obrador separado o protocolo estricto",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Eventos y Temporadas · B19"
+   ],
+   "pistas": [
+    "obrador → production / bakehouse (NUNCA «workshop»)",
+    "sin gluten → gluten-free (21 CFR 101.91); ecológico → organic (7 CFR Part 205)"
+   ],
+   "adaptar": "«Gluten-free» solo si lo puedes sostener: menos de 20 ppm de gluten (21 CFR 101.91), y en un obrador con harina de trigo exige separación y control estrictos; «ecológico» → organic, con harina certificada y las reglas del USDA Organic (7 CFR Part 205) para llamarlo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Pan ecologico certificado (harina eco, proceso documentado)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Eventos y Temporadas · B20"
+   ],
+   "pistas": [
+    "sin gluten → gluten-free (21 CFR 101.91); ecológico → organic (7 CFR Part 205)"
+   ],
+   "adaptar": "«Gluten-free» solo si lo puedes sostener: menos de 20 ppm de gluten (21 CFR 101.91), y en un obrador con harina de trigo exige separación y control estrictos; «ecológico» → organic, con harina certificada y las reglas del USDA Organic (7 CFR Part 205) para llamarlo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0321",
+   "es": "Espelta, kamut, trigo sarraceno, centeno integral",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "08 · Eventos y Temporadas · B21"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Instrucciones: Anade tus propias tareas. Puedes copiar filas de otras hojas del kit y adaptarlas a tu panaderia.",
+   "grupo": "G2",
+   "palabras": 18,
+   "donde": [
+    "09 · Personalizable · A26"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Panaderia»; panadería → bakery (bread bakery en el título); panadero → baker"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0333",
+   "es": "PRODUCCION DEL DIA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Produccion · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0334",
+   "es": "Pan basico",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Produccion · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "Cantidad barras / hogazas / chapatas:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Produccion · B5"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0336",
+   "es": "Especiales",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Produccion · A6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0337",
+   "es": "Panes especiales del dia:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Produccion · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0338",
+   "es": "Bolleria",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Produccion · A7"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0339",
+   "es": "Croissants / napolitanas / brioches:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Produccion · B7"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0341",
+   "es": "Pedidos especiales confirmados:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Produccion · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0342",
+   "es": "MASA MADRE Y PRE-FERMENTOS",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Produccion · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0343",
+   "es": "Estado: pH / temperatura / actividad:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Produccion · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0344",
+   "es": "Preparado noche anterior: SI / NO",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Produccion · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "Levadura",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Produccion · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "Stock levadura fresca/seca:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Produccion · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0347",
+   "es": "HORNOS Y EQUIPOS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Produccion · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0348",
+   "es": "Horno piso",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Produccion · A14"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0349",
+   "es": "Temperatura / Estado:",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Produccion · B14",
+    "B01 · Briefing Produccion · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "Horno rotativo",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Produccion · A15"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "Amasadora",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Produccion · A16"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0352",
+   "es": "Funcionando correctamente: SI / NO",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Produccion · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0353",
+   "es": "EQUIPO Y NOTAS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Produccion · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "Equipo presente hoy:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Produccion · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0356",
+   "es": "Alertas de stock bajo:",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Produccion · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0357",
+   "es": "Observaciones del dia:",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Produccion · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0366",
+   "es": "Panes integrales, centeno, frutos secos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · B4"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "Revision post-Navidad hornos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D4"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer",
+    "calendario US: sin roscón, turrones, monas, torrijas ni Reyes; Navidad → holiday season"
+   ],
+   "adaptar": "post-Navidad → post-holiday",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "Roscones y masas dulces",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E4"
+   ],
+   "pistas": [
+    "calendario US: sin roscón, turrones, monas, torrijas ni Reyes; Navidad → holiday season"
+   ],
+   "adaptar": "Sin roscones: «sweet enriched doughs»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0371",
+   "es": "Pan de cerveza, hogaza campesina",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · B5"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Calibracion basculas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · D5"
+   ],
+   "pistas": [
+    "báscula → scale (legal-for-trade si vendes al peso)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0374",
+   "es": "Masas hojaldradas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · E5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "Panes con hierbas, focaccia primavera",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "Revision camara fermentacion",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D6"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "Fermentacion larga",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · E6"
+   ],
+   "pistas": [
+    "primera fermentación → bulk fermentation; segunda / pointage → final proof; fermentación en frío → cold retard; cámara de fermentación → proofer; retardadora → retarder"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Pan de aceite, chapata con olivas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · B7"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "Mantenimiento amasadora",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · D7"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "Panes con masa madre",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E7"
+   ],
+   "pistas": [
+    "masa madre → sourdough starter (starter, levain); refresco → feeding; masa madre (pan) → sourdough"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Pan de tomate seco, hierbas provenzales",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Revision aire acondicionado",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "Bolleria francesa",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · E8"
+   ],
+   "pistas": [
+    "bollería → pastries / viennoiserie; napolitana → pain au chocolat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0391",
+   "es": "Focaccia, pan de cerveza, panes frios",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Preparar obrador para calor",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D9"
+   ],
+   "pistas": [
+    "obrador → production / bakehouse (NUNCA «workshop»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Hidratacion en verano",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Pan gazpacho, coca, chapata ligera",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · B10"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat",
+    "calendario US: sin roscón, turrones, monas, torrijas ni Reyes; Navidad → holiday season"
+   ],
+   "adaptar": "Sin pan gazpacho ni coca: «flatbreads, light ciabatta»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Ajustar temperaturas agua",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0399",
+   "es": "Panes sin amasado",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E10"
+   ],
+   "pistas": [
+    "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0401",
+   "es": "Pan de pipas, centeno ligero, ciabatta",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0403",
+   "es": "Mantenimiento intensivo hornos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D11"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0404",
+   "es": "Descanso rotativo equipo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E11"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0406",
+   "es": "Pan calabaza, nueces, pasas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Nuevas recetas otono",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0411",
+   "es": "Pan castana, setas, especias",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "Revision quemadores hornos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D13"
+   ],
+   "pistas": [
+    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Panes regionales",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · E13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0416",
+   "es": "Pan de centeno, espelta, integral",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · B14"
+   ],
+   "pistas": [
+    "barra → baguette; hogaza → rustic loaf (boule); chapata → ciabatta; integral → whole wheat"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Calibrar todo pre-Navidad",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D14"
+   ],
+   "pistas": [
+    "calendario US: sin roscón, turrones, monas, torrijas ni Reyes; Navidad → holiday season"
+   ],
+   "adaptar": "pre-Navidad → pre-holiday",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Roscones y panettone",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E14"
+   ],
+   "pistas": [
+    "calendario US: sin roscón, turrones, monas, torrijas ni Reyes; Navidad → holiday season"
+   ],
+   "adaptar": "Sin roscones: «holiday breads: panettone and stollen»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Roscon, panettone, stollen, turrones",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · B15"
+   ],
+   "pistas": [
+    "calendario US: sin roscón, turrones, monas, torrijas ni Reyes; Navidad → holiday season"
+   ],
+   "adaptar": "Sin roscón ni turrones: «panettone, stollen, holiday breads»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Produccion alto volumen",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E15"
+   ],
+   "motivo": "nueva"
+  }
+ ]
+}
