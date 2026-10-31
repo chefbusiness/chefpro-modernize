@@ -81,7 +81,8 @@ KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gesti
 # /plan-negocio-heladeria (gemelo EN: Ice Cream Shop Business Plan Kit, 27-oct-2026) y
 # /plan-negocio-finca-eventos-bodas (gemelo EN: Wedding Venue Business Plan Kit, 27-oct-2026) y
 # /plan-negocio-taqueria (gemelo EN: Taco Shop Business Plan Kit, 29-oct-2026) y
-# /plan-negocio-polleria (gemelo EN: Rotisserie Chicken Restaurant Business Plan Kit, 29-oct-2026).
+# /plan-negocio-polleria (gemelo EN: Rotisserie Chicken Restaurant Business Plan Kit, 29-oct-2026) y
+# /plan-negocio-sushi-bar (gemelo EN: Sushi Restaurant Business Plan Kit, 31-oct-2026).
 PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
              '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
              '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',
@@ -90,8 +91,8 @@ PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-
              '/plan-negocio-finca-eventos-bodas',  # nace el 25-oct-2026; gemelo EN: Wedding Venue Business Plan Kit (27-oct-2026)
              '/plan-negocio-pizzeria',  # nace el 25-oct-2026 (noche); gemelo EN: Pizza Shop Business Plan Kit
              '/plan-negocio-taqueria',  # nace el 29-oct-2026; gemelo EN: Taco Shop Business Plan Kit
-             '/plan-negocio-polleria',  # nace el 29-oct-2026; gemelo EN reservado (vivo: false): Rotisserie Chicken Restaurant Business Plan
-             '/plan-negocio-sushi-bar']  # nace el 31-oct-2026; gemelo EN reservado (vivo: false): Sushi Restaurant Business Plan
+             '/plan-negocio-polleria',  # nace el 29-oct-2026; gemelo EN: Rotisserie Chicken Restaurant Business Plan Kit
+             '/plan-negocio-sushi-bar']  # nace el 31-oct-2026; gemelo EN: Sushi Restaurant Business Plan Kit (31-oct-2026)
 # GuiaLandingPage recibe `lang` desde el 15-oct-2026 (Food Cost + Menu Engineering Guide EN): sus 14
 # landings ES (12 guías + 2 manuales) tienen que seguir byte a byte iguales, igual que las de arriba.
 GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia-dark-kitchen',

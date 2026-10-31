@@ -224,11 +224,12 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
-    // Sushi Bar (31-oct-2026): ES vivo; Sushi Restaurant Business Plan (EN) reservado (vivo: false) hasta que nazca la edición inglesa.
+    // Tienda EN (31-oct-2026): Sushi Restaurant Business Plan Kit (SPEC business-plans-en-14 / plan-sushi F1-camino §6-§7). vivo: true en la
+    // rama, que se fusiona cuando existe el Payment Link (mismo criterio que el resto de planes EN de la tienda).
     familia: 'plan-negocio-sushi-bar',
     productos: {
       es: { slug: 'plan-negocio-sushi-bar', vivo: true },
-      en: { slug: 'sushi-restaurant-business-plan', vivo: false },
+      en: { slug: 'sushi-restaurant-business-plan', vivo: true },
     },
   },
   {
