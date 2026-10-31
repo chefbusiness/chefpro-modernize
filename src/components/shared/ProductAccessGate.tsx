@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Loader2 } from 'lucide-react';
+import { compraDesdeRespuesta, medirCompraVerificada } from '../../lib/medicion-compra';
 
 interface Props {
   productId: string;
@@ -71,10 +72,18 @@ export default function ProductAccessGate({
           body: JSON.stringify(body),
         });
 
-        const data = await res.json();
+        const data = await res.json() as { valid?: boolean; jwt?: string; purchase?: unknown };
 
         if (data.valid && data.jwt) {
           localStorage.setItem(storageKey, data.jwt);
+          const compra = compraDesdeRespuesta(data.purchase);
+          if (compra) {
+            try {
+              await medirCompraVerificada(compra, productLabel);
+            } catch {
+              /* la medición no bloquea el acceso */
+            }
+          }
           navigate(dashboardPath, { replace: true });
         } else {
           setStatus('error');
@@ -85,7 +94,7 @@ export default function ProductAccessGate({
     };
 
     verify();
-  }, [params, navigate, productId, storageKey, dashboardPath]);
+  }, [params, navigate, productId, storageKey, dashboardPath, productLabel]);
 
   return (
     <>
