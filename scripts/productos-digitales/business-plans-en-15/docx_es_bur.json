@@ -1,0 +1,2292 @@
+{
+ "meta": {
+  "generado": "2026-10-31T22:12:26+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "bur",
+  "fichero_es": "astro-site/public/dl/plan-negocio-hamburgueseria/plan-de-negocio-hamburgueseria.docx",
+  "sha256": "ec69d114663151e9351d4c1ff95d85bd1c997253ff33441045a7e936f7439980",
+  "fichero_en": "astro-site/public/dl/burger-restaurant-business-plan/burger-restaurant-business-plan.docx",
+  "titulo_en": "Burger Restaurant Business Plan (10 Sections)",
+  "n_parrafos": 131,
+  "n_con_texto": 110,
+  "n_sin_runs": 17,
+  "n_un_run": 114,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 121,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 61,
+   "vacio": 21,
+   "fijo": 18,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 61,
+  "palabras_traducir": 7934,
+  "tandas": {
+   "bur_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     46,
+     47,
+     48,
+     49,
+     50,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "palabras": 3371
+   },
+   "bur_b": {
+    "parrafos": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117
+    ],
+    "palabras": 4563
+   }
+  },
+  "pagina_emu": [
+   7560310,
+   10692130
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average covers per day, year 1: dine-in + take-out/pickup and delivery equivalents (1 order = 1.6 covers)",
+   "clientes_a2": "average covers per day, year 2",
+   "clientes_a3": "average covers per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "disposables (wrappers, burger boxes, fry cups, sauce cups, bags), % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (base rent of the premises)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out, years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "rent per year (occupancy)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even covers per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even covers per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: covers per day",
+   "optimista_clientes": "optimistic scenario: covers per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "pesimista_ticket": "pessimistic scenario: average check excl. sales tax",
+   "optimista_ticket": "optimistic scenario: average check excl. sales tax",
+   "pesimista_dias": "pessimistic scenario: operating days",
+   "optimista_dias": "optimistic scenario: operating days",
+   "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
+   "inv_proyecto": "architect, MEP & hood drawings, plan review and permit fees",
+   "inv_obra": "build-out of a second-generation space (1,700 sq ft) with the order counter, signage and facade",
+   "inv_conducto": "hood exhaust duct to the roof and makeup air",
+   "inv_instalaciones": "electrical service, panel and HVAC",
+   "inv_fontaneria": "plumbing, gas lines and grease interceptor",
+   "inv_plancha": "two 48\" gas flat-tops, bun toaster, smash presses and scrapers",
+   "inv_freidoras": "three gas fryers with filtration and the fry station",
+   "inv_campana": "Type I hood with UL 300 fire suppression",
+   "inv_montaje": "make-line unit, refrigerated chef base and cheese/holding station",
+   "inv_frio": "walk-in cooler, reach-ins, freezer and ice machine",
+   "inv_batidos": "shake machine, blenders and beverage station",
+   "inv_lavado": "3-compartment sink, dish machine, hand sinks, shelving and stainless",
+   "inv_utillaje": "smallwares (portion scale, ball portioner, probe thermometers, TPM tester, labels, to-go station)",
+   "inv_mobiliario": "furniture and seating (44 seats) and the order counter",
+   "inv_tpv": "POS, self-order kiosk, KDS, online ordering and delivery tablets",
+   "inv_constitucion": "LLC, legal, licenses, food safety plan and pre-opening training",
+   "inv_lanzamiento": "branding, website, photos and launch video",
+   "inv_stock": "opening inventory",
+   "aforo": "seats (tables and a window counter; counter service)",
+   "rotaciones_dia": "implied seat turns per day (take-out and delivery covers included)",
+   "comida_pct": "food share of sales",
+   "bebida_pct": "beverage share of sales",
+   "plataforma_pct": "share of sales through third-party delivery marketplaces",
+   "comision_pct": "marketplace commission on those orders",
+   "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales)",
+   "meses_alquiler_previo": "months of rent paid before opening (build-out and permits)",
+   "costes_variables_pct": "all variable costs year 1 (cost of goods + disposables + marketplace + card fees + contingency), % of sales",
+   "otros_variables_pct": "disposables + marketplace + card fees + contingency, % of sales",
+   "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount (only if it is a loss)",
+   "cogs_pct_xl": "cost of goods, % of sales, rounded as Excel shows it (P&L B52)",
+   "plantilla_jornadas_xl": "staff in FTE, rounded as Excel shows it (Staffing C12)"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Hamburguesería Smash",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Burger Restaurant"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, análisis de mercado,\nestrategia operativa y checklist de apertura\npara montar una hamburguesería de smash burgers con sala, para llevar y a domicilio",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and startup checklist\nto open a smash burger restaurant with counter service, take-out and delivery in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Versión 1.0 · noviembre 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoría Gastronómica con fines informativos y orientativos. Las cifras salen del Excel del plan financiero que lo acompaña, con un caso de ejemplo que debes sustituir por el tuyo; las fuentes de los datos de mercado y de las normas se citan en el texto. Los resultados reales pueden variar. No constituye asesoramiento financiero, legal ni fiscal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "ÍNDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist de Apertura Excel + Calculadora de la Carne, las Patatas y el Escandallo Excel + Guía de Equivalencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Burger Restaurant Financial Projections (Excel) + Smash Burger Patty, Fries & Costing Calculator (Excel) + Burger Restaurant Startup Checklist (Excel) + Equivalents Guide"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "Este plan describe una hamburguesería de smash burgers de servicio rápido: la bola, la porción de carne cruda de 100 g, se aplasta contra la plancha muy caliente hasta que hace costra, la superficie tostada. Está en una ciudad media española, de entre 150.000 y 500.000 habitantes, o en un barrio de Madrid, Barcelona o Valencia, en un local de unos 90 m² que ya fue de restauración, con salida de humos a cubierta posible y sin traspaso. Tiene cocina a la vista, un mostrador de pedidos con pantalla de turnos, una sala de 30 plazas y 6 taburetes en una barra de ventana (36 plazas en total) y una zona de empaquetado y de recogida de los riders, los repartidores de la plataforma, junto a la puerta. Lo explota una SL unipersonal, tú como gerente y jefe de plancha, y abre en enero, de martes a domingo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 148,
+   "nota": "§1 1/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2: «smash burger» ≈ 673,000 búsquedas/mes y «burger restaurant» 110,000 = demanda de CONSUMO; «how to start a burger business» ≈ 20: no lo cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "Las cifras clave del caso son estas. Una media de 95 comensales equivalentes al día, unos 53 en sala y el resto, unos 25 pedidos al día para llevar y a domicilio, contando cada pedido como 1,7 comensales, a 16,00 € por comensal sin IVA, durante 300 días de apertura, que dan unas ventas de 456.000 € el primer año y un resultado neto de 46.512 €, un 10,2 % de las ventas. Esa media incluye la rampa de arranque, que va de enero a abril: el Excel reparte el año mes a mes y el Mes 1 es enero. El equilibrio de caja, que además cubre la devolución del principal (ninguna el primer año, el de carencia), está en 73 comensales al día. No es una rentabilidad garantizada: es un punto de partida para que cambies las hipótesis y pongas tus propios números.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 144,
+   "nota": "§1 2/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2: «smash burger» ≈ 673,000 búsquedas/mes y «burger restaurant» 110,000 = demanda de CONSUMO; «how to start a burger business» ≈ 20: no lo cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total es de 162.144 €: 104.350 € de obra, cocina, frío, equipo y puesta en marcha, 3.000 € de fianza y 3.000 € de renta previa, que suman 110.350 € de inversión sin el fondo, y 51.794 € de fondo de maniobra. A eso se suma el IVA de la inversión, 21.914 €, que se adelanta y se recupera con las declaraciones de IVA, así que la necesidad de caja llega a 184.057 €. Se financia con 55.000 € de recursos propios y un préstamo de 130.000 € a 7 años, con 1 año de carencia de principal y un tipo del 6 %. Los fondos suman 185.000 € y sobran 943 €. La cuota anual, ya sin carencia, es de 26.437 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 125,
+   "nota": "§1 3/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2: «smash burger» ≈ 673,000 búsquedas/mes y «burger restaurant» 110,000 = demanda de CONSUMO; «how to start a burger business» ≈ 20: no lo cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "A partir de ahí, los comensales crecen un 6 % en el segundo año y un 4 % en el tercero, con el mismo ticket: las ventas pasan a 483.360 € y 502.694 €, y el neto, a 55.244 € y 53.709 €. La holgura de caja sobre el equilibrio es del 30,9 % el primer año, pero porque hay carencia. En el segundo baja al 24,0 %, porque empieza a devolverse el principal, y en el tercero es del 25,7 %. Son los años que hay que vigilar. El payback antes de la deuda, en años, sale en la Tesorería del Excel: «2,4» con el fondo de maniobra dentro y «1,6» sin él.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 114,
+   "nota": "§1 4/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2: «smash burger» ≈ 673,000 búsquedas/mes y «burger restaurant» 110,000 = demanda de CONSUMO; «how to start a burger business» ≈ 20: no lo cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "Tú eres el gerente y el jefe de plancha, y te acompañan un cocinero de plancha, uno de montaje y freidora, un encargado de mostrador y pedidos, un auxiliar de sala y empaquetado y un refuerzo de viernes a domingo: con las suplencias, 7 personas que suman 5,35 jornadas completas. El kit incluye este plan, el Excel, el checklist de 80 tareas, la calculadora de la carne y la guía de equivalencias para Latinoamérica. Lo que lo distingue: 10 bolas de 100 g por kilo y unos 15,2 kilos de carne al día (estimaciones del kit que mides tú), y la norma contada bien: el art. 7.2 del RD 1021/2022 si picas en el local y una cocción sin temperatura legal, que decide tu APPCC.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 125,
+   "nota": "§1 5/5: Resumen ejecutivo: concepto (US §1), la oportunidad (US §2: «smash burger» ≈ 673,000 búsquedas/mes y «burger restaurant» 110,000 = demanda de CONSUMO; «how to start a burger business» ≈ 20: no lo cites como mercado), inversión y financiación SOLO con tokens ({{inversion_total}}, {{capex}}, {{prestamo}} SBA 7(a) {{tipo_prestamo}} a {{plazo_prestamo}} años), ventas ({{ventas_a1}}, {{clientes_dia}} covers × {{ticket}} × {{dias}} días), neto {{margen_neto_a1}} y DSCR {{dscr_min}} ‖ FORMA: la sección §1 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "44": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "45": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "No todas las hamburgueserías son el mismo negocio. La de solo reparto a domicilio ocupa de 40 a 60 m² y no tiene sala: si el reparto es la actividad principal, el IAE es el 677.9, y para ese caso está la Guía Dark Kitchen de AI Chef Pro. La de servicio de mesa, en 120-150 m² con 60-80 plazas y un ticket de 25-30 €, trabaja con una bola gruesa de 180 g que el cliente pide poco hecha: su riesgo es la cocción, que decide el APPCC, y su inversión se parece a la de una franquicia. El carrito o el puesto de smash en la calle y en eventos es el Plan de Negocio: Food Truck de AI Chef Pro. La smash de servicio rápido, con sala, para llevar y a domicilio, es la de este plan.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 140,
+   "nota": "§2 1/5: Concepto y propuesta: el formato elegido (smash burgers con counter service + take-out + delivery) frente a las variantes: gourmet burger bar con servers (más ticket, más personal, propinas aparte), ghost kitchen / delivery-only (sin sala, todo marketplace) y burger truck (otro kit); la carta corta (single, double, triple, combo, chicken sandwich, fries, shakes); glosa smash burger, ball / puck / patty, flat-top, crust y lacy edges, smash press, potato bun y make line la primera vez; sin «authentic» ni «gourmet» ‖ FORMA: la sección §2 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor es una carta corta, de unas 14 referencias, y una bola de 100 g bien hecha. La carne es un blend, la mezcla de cortes de la carne picada (aguja, falda y pecho, con un 20 % de grasa), que se aplasta con el smasher, la prensa de acero, sobre el fry-top, la plancha de acero de cocina profesional. Cada hamburguesa se monta en la línea de montaje, la mesa refrigerada donde se prepara cada pedido, con pan tostado, y las patatas fritas salen con su guía de colores. En la sala, el runner lleva la bandeja del mostrador a la mesa cuando la pantalla de turnos llama el pedido. Entre los extras están las patatas cargadas, con queso y bacon, y la smash estilo Oklahoma, con cebolla muy fina aplastada con la carne. La recogida en el local se empuja con precio y la plataforma tiene techo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 152,
+   "nota": "§2 2/5: Concepto y propuesta: el formato elegido (smash burgers con counter service + take-out + delivery) frente a las variantes: gourmet burger bar con servers (más ticket, más personal, propinas aparte), ghost kitchen / delivery-only (sin sala, todo marketplace) y burger truck (otro kit); la carta corta (single, double, triple, combo, chicken sandwich, fries, shakes); glosa smash burger, ball / puck / patty, flat-top, crust y lacy edges, smash press, potato bun y make line la primera vez; sin «authentic» ni «gourmet» ‖ FORMA: la sección §2 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "La carta del caso, con IVA, tiene la smash simple con queso a 8,90 €, la doble a 11,90 €, la triple a 14,50 €, la ración de patatas a 3,90 € y el menú de doble con patatas y refresco a 15,90 €. La doble sale en un 26,8 % de food cost (el coste de su materia prima) sobre sus 10,82 € sin IVA, y la simple, en un 22,2 %: son estimaciones del kit que mides tú, con el precio estimado por el kit de la carne, el pan, el queso y la patata. La loncha de queso es de 20 g por bola.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 107,
+   "nota": "§2 3/5: Concepto y propuesta: el formato elegido (smash burgers con counter service + take-out + delivery) frente a las variantes: gourmet burger bar con servers (más ticket, más personal, propinas aparte), ghost kitchen / delivery-only (sin sala, todo marketplace) y burger truck (otro kit); la carta corta (single, double, triple, combo, chicken sandwich, fries, shakes); glosa smash burger, ball / puck / patty, flat-top, crust y lacy edges, smash press, potato bun y make line la primera vez; sin «authentic» ni «gourmet» ‖ FORMA: la sección §2 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El ticket del caso es de 16,00 € por comensal equivalente y sin IVA, es decir, 17,68 € con IVA, y sale de tres canales. El comensal de sala deja 17,00 € con IVA, 15,45 € sin IVA: hamburguesa, patatas, bebida y algún extra, con el descuento del menú. El pedido para recoger, de media 29,10 € con IVA (casi dos menús), sale a 15,56 € por comensal equivalente; y el de plataforma, con la carta un 15 % más cara, 33,47 € con IVA, a 17,90 € por comensal equivalente. La mezcla de ventas es de un 84 % de comida y un 16 % de bebida: en sala, la bebida es un 19 % de lo que se vende; fuera, un 12 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 125,
+   "nota": "§2 4/5: Concepto y propuesta: el formato elegido (smash burgers con counter service + take-out + delivery) frente a las variantes: gourmet burger bar con servers (más ticket, más personal, propinas aparte), ghost kitchen / delivery-only (sin sala, todo marketplace) y burger truck (otro kit); la carta corta (single, double, triple, combo, chicken sandwich, fries, shakes); glosa smash burger, ball / puck / patty, flat-top, crust y lacy edges, smash press, potato bun y make line la primera vez; sin «authentic» ni «gourmet» ‖ FORMA: la sección §2 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "Un detalle que te ahorra un disgusto es decir bien qué eres. Esto es una hamburguesería smash de servicio rápido, no una de servicio de mesa ni un restaurante de carta larga, y no hace falta prometer «auténtica» ni «gourmet» para venderla: lo que cuenta es la costra, el pan tostado y la plancha limpia. No prometas «sin gluten»: el pan, la freidora y la plancha comparten superficies y utensilios. Y deja fuera de la carta la «dry aged burger»: el Reglamento (CE) 853/2004 exige picar la carne refrigerada dentro de los 6 días siguientes al sacrificio (15 si es vacuno deshuesado y envasado al vacío), y una carne madurada semanas queda fuera de plazo, como aplica Madrid Salud (Inf26008).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 120,
+   "nota": "§2 5/5: Concepto y propuesta: el formato elegido (smash burgers con counter service + take-out + delivery) frente a las variantes: gourmet burger bar con servers (más ticket, más personal, propinas aparte), ghost kitchen / delivery-only (sin sala, todo marketplace) y burger truck (otro kit); la carta corta (single, double, triple, combo, chicken sandwich, fries, shakes); glosa smash burger, ball / puck / patty, flat-top, crust y lacy edges, smash press, potato bun y make line la primera vez; sin «authentic» ni «gourmet» ‖ FORMA: la sección §2 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "51": {
+   "estilo": "Heading 1",
+   "texto": "3. Análisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "La demanda se mide mejor con datos que tienen fuente que con tamaños de mercado sin ella. Las hamburgueserías facturaron 3.730 millones de euros en 2025, un 5,2 % más, y suponen el 61 % de la comida rápida, aunque las aperturas crecen solo un 0,8 % (DBK, septiembre de 2026). Según DataForSEO, el 31 de octubre de 2026 estas son las búsquedas mensuales en Google España: «smash burger» 49.500, «hamburguesería» 22.200, «pan brioche» 14.800, «patatas fritas» 12.100, «batido» 4.400, «hamburguesería smash» 2.900 y «hamburguesas a domicilio» 1.000. Léelas como interés de la gente, no como clientes que ya tienes. No hay una cifra fiable del número de hamburgueserías en España ni de su ticket medio, y por eso el plan no las da.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 124,
+   "nota": "§3 1/6: Mercado y competencia: US §2 y §5 (carta del caso: single $8.49 · double $10.99 · triple $13.49 · combo $15.99 · chicken sandwich $10.49 · fries $3.99-4.99 · shake $6.49, Kit estimate; Shake Shack como referencia de precio nacional solo con «secondary source»); las franquicias (Smashburger $1,239,500-$2,255,500 y Freddy's $785,936-$2,753,566 de Item 7, «reported by third-party franchise directories; check the FDD») como comparación de inversión, nunca como caso; el AI Overview de «$30,000 to $130,000» es de un pop-up sin hood; se compite en la crust, la velocidad y el precio del double; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "Hay una diferencia curiosa entre quien come y quien abre. El consumidor busca muchísimo, pero quien va a abrir busca poco: «franquicia hamburguesería» tiene 210 búsquedas al mes en Google España, y «cómo montar una hamburguesería» o «plan de negocio hamburguesería», 10. Es un público que decide con datos. En México, «smash burger» tiene 18.100 y «negocio de hamburguesas», 320, aunque el marco legal del plan es el español. Hay además una razón para contar con la plataforma: la hamburguesa es el plato más pedido a domicilio en España por tercer año, según el Gastrómetro de Just Eat 2025. Y el smash es el formato de moda: una cadena portuguesa con 35 locales abrió en Madrid a finales de septiembre de 2026 (Alimarket).",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 123,
+   "nota": "§3 2/6: Mercado y competencia: US §2 y §5 (carta del caso: single $8.49 · double $10.99 · triple $13.49 · combo $15.99 · chicken sandwich $10.49 · fries $3.99-4.99 · shake $6.49, Kit estimate; Shake Shack como referencia de precio nacional solo con «secondary source»); las franquicias (Smashburger $1,239,500-$2,255,500 y Freddy's $785,936-$2,753,566 de Item 7, «reported by third-party franchise directories; check the FDD») como comparación de inversión, nunca como caso; el AI Overview de «$30,000 to $130,000» es de un pop-up sin hood; se compite en la crust, la velocidad y el precio del double; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "Sobre precios, estas son cartas leídas en octubre de 2026, con IVA y sin nombres. Una cadena de smash de Málaga vende la hamburguesa a 11,50 € con bola de 100 g, los menús de 13,90 a 21,90 €, las patatas a 4,00 € y la lata a 2,50 €; en Barcelona, la smash cuesta 13 € y el menú, 15 €. El caso pone la doble a 11,90 € y el menú a 15,90 €, dentro de esa banda. Son referencias para situarte, no precios que debas copiar: mide los de tu zona.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 94,
+   "nota": "§3 3/6: Mercado y competencia: US §2 y §5 (carta del caso: single $8.49 · double $10.99 · triple $13.49 · combo $15.99 · chicken sandwich $10.49 · fries $3.99-4.99 · shake $6.49, Kit estimate; Shake Shack como referencia de precio nacional solo con «secondary source»); las franquicias (Smashburger $1,239,500-$2,255,500 y Freddy's $785,936-$2,753,566 de Item 7, «reported by third-party franchise directories; check the FDD») como comparación de inversión, nunca como caso; el AI Overview de «$30,000 to $130,000» es de un pop-up sin hood; se compite en la crust, la velocidad y el precio del double; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "Con el Mes 1 en enero y en el orden del calendario, el plan reparte la venta con la estacionalidad. Enero es el valle, con un 7,2 % del año, por el cierre de 10 días y la cuesta de enero; mayo es el pico, con un 8,9 %, por el buen tiempo y el fin de curso; junio le sigue, con un 8,8 %; y agosto baja, con un 7,6 %, con la ciudad vacía. Entre el mejor mes y el peor hay un 24 %. En la costa, julio y agosto suben: cambia los pesos de la fila de estacionalidad de la Tesorería. La rampa del arranque va de enero a abril, y el saldo mínimo de caja cae en enero, con 61.952 €, por eso el fondo de maniobra cuenta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 133,
+   "nota": "§3 4/6: Mercado y competencia: US §2 y §5 (carta del caso: single $8.49 · double $10.99 · triple $13.49 · combo $15.99 · chicken sandwich $10.49 · fries $3.99-4.99 · shake $6.49, Kit estimate; Shake Shack como referencia de precio nacional solo con «secondary source»); las franquicias (Smashburger $1,239,500-$2,255,500 y Freddy's $785,936-$2,753,566 de Item 7, «reported by third-party franchise directories; check the FDD») como comparación de inversión, nunca como caso; el AI Overview de «$30,000 to $130,000» es de un pop-up sin hood; se compite en la crust, la velocidad y el precio del double; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "El hueco es claro. Para «montar una hamburguesería», la SERP de Google (la página de resultados) da páginas de software y de modelos con inversiones sin fuente («en torno a 80.000 €», «60.000-80.000 € para 30-50 m²»), foros y un curso. Nadie cuenta el picado del día del art. 7.2 del RD 1021/2022, el plazo de 6 días desde el sacrificio (15 en vacuno envasado al vacío) que deja fuera la carne madurada, la acrilamida ni el coste de cada bola por canal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 83,
+   "nota": "§3 5/6: Mercado y competencia: US §2 y §5 (carta del caso: single $8.49 · double $10.99 · triple $13.49 · combo $15.99 · chicken sandwich $10.49 · fries $3.99-4.99 · shake $6.49, Kit estimate; Shake Shack como referencia de precio nacional solo con «secondary source»); las franquicias (Smashburger $1,239,500-$2,255,500 y Freddy's $785,936-$2,753,566 de Item 7, «reported by third-party franchise directories; check the FDD») como comparación de inversión, nunca como caso; el AI Overview de «$30,000 to $130,000» es de un pop-up sin hood; se compite en la crust, la velocidad y el precio del double; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "La demanda tiene riesgos que el plan nombra. El precio de la carne mueve el food cost, y la plataforma, con su comisión del 30 %, se come el margen si la dejas crecer por encima del techo del plan. Depender de un solo proveedor de carne es un punto débil: si falla, falla la plancha. Por eso la carta es corta, la recogida en el local se empuja con precio y conviene tener un segundo proveedor a mano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 79,
+   "nota": "§3 6/6: Mercado y competencia: US §2 y §5 (carta del caso: single $8.49 · double $10.99 · triple $13.49 · combo $15.99 · chicken sandwich $10.49 · fries $3.99-4.99 · shake $6.49, Kit estimate; Shake Shack como referencia de precio nacional solo con «secondary source»); las franquicias (Smashburger $1,239,500-$2,255,500 y Freddy's $785,936-$2,753,566 de Item 7, «reported by third-party franchise directories; check the FDD») como comparación de inversión, nunca como caso; el AI Overview de «$30,000 to $130,000» es de un pop-up sin hood; se compite en la crust, la velocidad y el precio del double; sin datos de mercado sin fuente ‖ FORMA: la sección §3 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "59": {
+   "estilo": "Heading 1",
+   "texto": "4. Análisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "Antes de fijar ningún precio, dibuja el mapa de quién compite contigo en tu barrio. En hamburguesas la competencia llega de cuatro lados: las grandes cadenas de comida rápida; las cadenas de hamburguesería con sala y servicio de mesa y las de smash; las dark kitchens que solo venden por plataforma; y la hamburguesería de barrio. Cada una te quita al cliente por una razón distinta: el precio, la rapidez, la comodidad o la cercanía.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 75,
+   "nota": "§4 1/6: Cliente y posicionamiento: comida rápida de calidad para oficinas, familias, estudiantes y fines de semana; el check de {{ticket}} por cover equivalente (US §8: cover de sala ≈ $15.00 = comida $12.00 + bebida $3.00; take-out ≈ $28.00 por pedido y marketplace ≈ $32.00 con la carta un 15 % más cara; 1 pedido = 1.6 covers; ≈ 107 de sala, ≈ 36 pedidos de take-out y ≈ 19 de marketplace al día); el pickup directo (0 % de comisión) frente a los marketplaces; sin propina (counter service) ‖ FORMA: la sección §4 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "Las cinco fuerzas de Porter se ven así en una hamburguesería smash. El poder de los proveedores es alto: la carne picada depende de pocos mayoristas, un fallo se nota enseguida en la plancha y el precio de la carne sube y baja. El poder del cliente es alto, porque cambia de local o de plataforma con un clic y compara precios. La amenaza de nuevos entrantes es alta: el smash es el formato de moda y abrir parece fácil, pero la barrera es un local con salida de humos y una plancha bien llevada. La de sustitutos es alta, con las grandes cadenas, el pollo crujiente, el kebab y las dark kitchens. La rivalidad es intensa entre las cadenas de smash y las de servicio de mesa. La defensa es una carta corta, la carne con su ficha técnica, el escandallo por canal, la recogida en el local y una clientela de barrio que vuelve.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 156,
+   "nota": "§4 2/6: Cliente y posicionamiento: comida rápida de calidad para oficinas, familias, estudiantes y fines de semana; el check de {{ticket}} por cover equivalente (US §8: cover de sala ≈ $15.00 = comida $12.00 + bebida $3.00; take-out ≈ $28.00 por pedido y marketplace ≈ $32.00 con la carta un 15 % más cara; 1 pedido = 1.6 covers; ≈ 107 de sala, ≈ 36 pedidos de take-out y ≈ 19 de marketplace al día); el pickup directo (0 % de comisión) frente a los marketplaces; sin propina (counter service) ‖ FORMA: la sección §4 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "Frente a una franquicia, el plan es una marca propia. Según emprendedores.es, La Pepita Burger Bar pide 250.000 € de inversión en un local de 140 m² o más, con un canon de 30.000 € y un 4,5 % más un 1,5 % de royalty y publicidad; otras cadenas de hamburguesas piden de 200.000 a 300.000 € en 120-180 m² según los portales de franquicias (compruébalo con cada marca). Con marca propia, la inversión es 162.144 € en 90 m² y te quedas el margen, pero también el riesgo: la carta, la carne y la plancha dependen de ti. Las cifras de franquicia no sirven para un local de 90 m²: compara las dos cuentas antes de firmar. Y como aviso de mercado, no como caso: Goiko vendió 109 millones de euros en 2025, un 11,2 % menos, y perdió 36,4 millones (Alimarket); el tamaño no garantiza nada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 148,
+   "nota": "§4 3/6: Cliente y posicionamiento: comida rápida de calidad para oficinas, familias, estudiantes y fines de semana; el check de {{ticket}} por cover equivalente (US §8: cover de sala ≈ $15.00 = comida $12.00 + bebida $3.00; take-out ≈ $28.00 por pedido y marketplace ≈ $32.00 con la carta un 15 % más cara; 1 pedido = 1.6 covers; ≈ 107 de sala, ≈ 36 pedidos de take-out y ≈ 19 de marketplace al día); el pickup directo (0 % de comisión) frente a los marketplaces; sin propina (counter service) ‖ FORMA: la sección §4 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Las barreras de entrada son de cumplimiento y de caja. La apertura se tramita con licencia o declaración responsable según la ordenanza de tu ayuntamiento, y la salida de humos a cubierta es el filtro del local: si el edificio no la permite, la plancha y la freidora no caben. A eso se suman la norma de la carne picada y de la freidora, que se cumple con documentos y registros, y la inversión en obra, cocina, frío y campana extractora. Compruébalo todo en tu ayuntamiento antes de firmar el alquiler.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 91,
+   "nota": "§4 4/6: Cliente y posicionamiento: comida rápida de calidad para oficinas, familias, estudiantes y fines de semana; el check de {{ticket}} por cover equivalente (US §8: cover de sala ≈ $15.00 = comida $12.00 + bebida $3.00; take-out ≈ $28.00 por pedido y marketplace ≈ $32.00 con la carta un 15 % más cara; 1 pedido = 1.6 covers; ≈ 107 de sala, ≈ 36 pedidos de take-out y ≈ 19 de marketplace al día); el pickup directo (0 % de comisión) frente a los marketplaces; sin propina (counter service) ‖ FORMA: la sección §4 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Cuatro factores deciden si funciona. El primero es el producto: la carne con su ficha técnica, una costra constante cada día y una carta corta. En el kit, el kilo útil del blend comprado picado sale a 9,18 € y el de la pieza picada en el local a 8,59 €, antes de la mano de obra de limpiarla y picarla, con los valores del kit. El segundo es el sitio: un barrio con vida de noche o una zona universitaria, con paso y un local con salida de humos. El tercero es el control del coste: el escandallo de cada bola y el rendimiento de la carne se miden y no se suponen. El cuarto es el equipo: un jefe de plancha y un segundo que sepa llevarla.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 129,
+   "nota": "§4 5/6: Cliente y posicionamiento: comida rápida de calidad para oficinas, familias, estudiantes y fines de semana; el check de {{ticket}} por cover equivalente (US §8: cover de sala ≈ $15.00 = comida $12.00 + bebida $3.00; take-out ≈ $28.00 por pedido y marketplace ≈ $32.00 con la carta un 15 % más cara; 1 pedido = 1.6 covers; ≈ 107 de sala, ≈ 36 pedidos de take-out y ≈ 19 de marketplace al día); el pickup directo (0 % de comisión) frente a los marketplaces; sin propina (counter service) ‖ FORMA: la sección §4 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El DAFO de este concepto es claro. Fortalezas: cocina a la vista, carne con su ficha técnica, carta corta, escandallo por canal y un margen bruto del 59,5 % en el primer año. Debilidades: un local con requisitos de humos, una plancha que es el cuello de botella del servicio y una caja más ajustada en los años de devolución del préstamo, con una holgura del 24,0 % en el segundo. Oportunidades: un producto que se busca muchísimo, el smash de moda y la recogida en el local. Amenazas: el precio de la carne y la plataforma, donde el margen del menú cae casi un tercio, de 10,83 € en sala a 7,41 €. La defensa está en dos proveedores, el escandallo por canal y un segundo que sepa llevar la plancha.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 132,
+   "nota": "§4 6/6: Cliente y posicionamiento: comida rápida de calidad para oficinas, familias, estudiantes y fines de semana; el check de {{ticket}} por cover equivalente (US §8: cover de sala ≈ $15.00 = comida $12.00 + bebida $3.00; take-out ≈ $28.00 por pedido y marketplace ≈ $32.00 con la carta un 15 % más cara; 1 pedido = 1.6 covers; ≈ 107 de sala, ≈ 36 pedidos de take-out y ≈ 19 de marketplace al día); el pickup directo (0 % de comisión) frente a los marketplaces; sin propina (counter service) ‖ FORMA: la sección §4 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "67": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captación",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "69": {
+   "estilo": "Normal",
+   "texto": "La estrategia de marketing empieza por el barrio y sigue el calendario. Se abre en enero, y conviene tener claro qué esperar: los curiosos llegan el primer mes, pero la clientela fija y la nota en las plataformas tardan un trimestre. Por eso el plan no cuenta con un lleno desde el primer día, sino con una rampa. Durante esa rampa mandan tres cosas: la cocina a la vista, que se explica sola desde la calle, una hamburguesa que sale rápida del mostrador y una atención que haga volver. Todo lo demás es apoyo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 94,
+   "nota": "§5 1/7: Marketing y ventas: Google Business Profile, Yelp, Instagram y TikTok (el smash en la plancha vende en vídeo); fechas: National Burger Month (mayo), Super Bowl Sunday y March Madness (take-out de multi-packs), graduaciones y verano; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers; el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; la smash llega peor que otras comidas (la crust se ablanda en unos 15 minutos: fries en envase ventilado y carta del marketplace un 15 % más cara); el consumer advisory también en los listados de marketplace si ofreces cooked to order ‖ FORMA: la sección §5 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "Las redes sociales son el escaparate de la plancha, porque la smash se vende en vídeo. Publica el aplastado de la bola, la costra que se forma y la hamburguesa montándose en la línea de montaje: funcionan mejor los vídeos cortos, con el smasher en la mano y el queso que se funde, que las fotos de carta. Enseña también cómo se pide en el mostrador, qué lleva cada hamburguesa y cuándo sale tu pedido en la pantalla de turnos. No hace falta publicar todos los días: es mejor una frecuencia que puedas mantener que una ráfaga seguida de silencio. Y si un cliente te etiqueta con un vídeo, pídele permiso para compartirlo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 113,
+   "nota": "§5 2/7: Marketing y ventas: Google Business Profile, Yelp, Instagram y TikTok (el smash en la plancha vende en vídeo); fechas: National Burger Month (mayo), Super Bowl Sunday y March Madness (take-out de multi-packs), graduaciones y verano; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers; el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; la smash llega peor que otras comidas (la crust se ablanda en unos 15 minutos: fries en envase ventilado y carta del marketplace un 15 % más cara); el consumer advisory también en los listados de marketplace si ofreces cooked to order ‖ FORMA: la sección §5 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "La ficha de Google Business es tu mejor anuncio gratuito, porque casi todo el que busca hamburguesas cerca la consulta. Complétala con fotos reales de la plancha y de las hamburguesas, y mantén al día el horario, de martes a domingo, de 13:00 a 16:30 y de 20:00 a 24:00, sin olvidar los lunes y los 10 días de la segunda quincena de enero en que cierras. Responde a cada reseña, también a las malas, con calma y con el nombre de la casa. Una respuesta cuidada se lee como un compromiso, y cuenta para quien aún no ha venido.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 100,
+   "nota": "§5 3/7: Marketing y ventas: Google Business Profile, Yelp, Instagram y TikTok (el smash en la plancha vende en vídeo); fechas: National Burger Month (mayo), Super Bowl Sunday y March Madness (take-out de multi-packs), graduaciones y verano; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers; el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; la smash llega peor que otras comidas (la crust se ablanda en unos 15 minutos: fries en envase ventilado y carta del marketplace un 15 % más cara); el consumer advisory también en los listados de marketplace si ofreces cooked to order ‖ FORMA: la sección §5 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La captación local empieza en la puerta. En la zona universitaria y en las oficinas, el mediodía es la forma sencilla de llenar la sala entre semana, con el menú de doble, patatas y refresco. A lo largo del año, el calendario te marca fechas: mayo y junio, los picos del año, con el buen tiempo y el fin de curso; la vuelta de septiembre; octubre, con el fútbol y Halloween; y enero, el valle, con promociones de recogida. Y para que vuelvan, algo sencillo: el pedido propio por la web o el teléfono para recoger, sin comisión. No hace falta prometer cifras de conversión que nadie ha medido.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 109,
+   "nota": "§5 4/7: Marketing y ventas: Google Business Profile, Yelp, Instagram y TikTok (el smash en la plancha vende en vídeo); fechas: National Burger Month (mayo), Super Bowl Sunday y March Madness (take-out de multi-packs), graduaciones y verano; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers; el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; la smash llega peor que otras comidas (la crust se ablanda en unos 15 minutos: fries en envase ventilado y carta del marketplace un 15 % más cara); el consumer advisory también en los listados de marketplace si ofreces cooked to order ‖ FORMA: la sección §5 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "Plataforma o recogida es una decisión de números. El plan vende por plataforma, con su reparto, un 24 % de las ventas (109.440 € al año) y paga una comisión del 30 % (32.832 € al año). Las guías del sector sitúan el plan básico de Uber Eats en torno al 30 % más IVA, Glovo entre el 15 y el 35 % según la zona y Just Eat entre el 13 y el 35 %, más las promociones y la caja. Un repartidor propio solo con contrato laboral y cuando el volumen lo pague.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 95,
+   "nota": "§5 5/7: Marketing y ventas: Google Business Profile, Yelp, Instagram y TikTok (el smash en la plancha vende en vídeo); fechas: National Burger Month (mayo), Super Bowl Sunday y March Madness (take-out de multi-packs), graduaciones y verano; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers; el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; la smash llega peor que otras comidas (la crust se ablanda en unos 15 minutos: fries en envase ventilado y carta del marketplace un 15 % más cara); el consumer advisory también en los listados de marketplace si ofreces cooked to order ‖ FORMA: la sección §5 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "Pasar 10 puntos de las ventas de la plataforma a la recogida en el local ahorra unos 13.700 € de comisión al año, menos lo que dejes de cobrar por el precio más alto de la plataforma. Si la plataforma llegara al 33 % de las ventas, pagarías unos 12.300 € más; y con el 45 % de una cadena que nació casi solo a domicilio, unos 28.700 € más. La recogida no paga comisión, así que empújala con precio. En el reparto hay además un problema de producto: la hamburguesa viaja bien, pero las patatas, peor, así que van en un cucurucho ventilado y se fríen al final. Por eso el techo del plan es ese 24 % de las ventas por plataforma.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 124,
+   "nota": "§5 6/7: Marketing y ventas: Google Business Profile, Yelp, Instagram y TikTok (el smash en la plancha vende en vídeo); fechas: National Burger Month (mayo), Super Bowl Sunday y March Madness (take-out de multi-packs), graduaciones y verano; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers; el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; la smash llega peor que otras comidas (la crust se ablanda en unos 15 minutos: fries en envase ventilado y carta del marketplace un 15 % más cara); el consumer advisory también en los listados de marketplace si ofreces cooked to order ‖ FORMA: la sección §5 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "El presupuesto de marketing del caso es de 4.500 € al año, sobre todo para fotografía, la ficha de Google, anuncios locales y las promociones de recogida de enero. La marca, la web, las fotos y el vídeo de lanzamiento van aparte, dentro de la inversión inicial (5.000 €). No lo gastes de golpe: reparte el presupuesto con el calendario y deja una parte para los meses más flojos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bur_a",
+   "palabras": 69,
+   "nota": "§5 7/7: Marketing y ventas: Google Business Profile, Yelp, Instagram y TikTok (el smash en la plancha vende en vídeo); fechas: National Burger Month (mayo), Super Bowl Sunday y March Madness (take-out de multi-packs), graduaciones y verano; marketplaces DoorDash / Uber Eats / Grubhub con sus tiers; el caso pone {{plataforma_pct}} de las ventas al {{comision_pct}}; la smash llega peor que otras comidas (la crust se ablanda en unos 15 minutos: fries en envase ventilado y carta del marketplace un 15 % más cara); el consumer advisory también en los listados de marketplace si ofreces cooked to order ‖ FORMA: la sección §5 del Sushi EN (business-plans-en-14/docx_en_sus_a.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "76": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "La carne se calcula, no se supone. La calculadora del kit parte de un blend (la mezcla de cortes de la carne picada: aguja, falda y pecho, con un 20 % de grasa) de vacuno comprado ya picado a 8,90 € el kilo sin IVA, un precio estimado por el kit, y con la merma de cierre del 3 % el kilo útil sale a 9,18 €. La pieza para picar en el local, a 7,50 € el kilo con un 90 % de aprovechamiento que no tiene fuente (mídelo tú), sale a 8,59 € antes de la mano de obra, y la calculadora te dice hasta qué coste de limpiar y picar te compensa. De un kilo salen 10 bolas de 100 g en crudo, es decir, cinco hamburguesas dobles, y 9,7 con la merma de cierre. Con unas 1,6 bolas por comensal, el caso pide unos 15,2 kilos de carne al día, que dimensionan el pedido diario y, si picas, el picado del día del art. 7.2 del RD 1021/2022. El escandallo va siempre sobre el precio sin IVA: la smash simple con queso cuesta 1,80 €, un 22,2 % de 8,09 € sin IVA, y la doble 2,90 €, un 26,8 % de 10,82 € sin IVA, con una loncha de queso de 20 g por bola. La ración de patatas congeladas sale a 0,28 € y la fresca cortada en casa a 0,19 €, antes de la mano de obra; el aceite pone 0,05 € por ración y la semana ponderada del kit sale en un 24,4 %. El plan usa patata congelada: la fresca es una decisión de marca, no de coste.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 277,
+   "nota": "§6 1/5: Operaciones y equipo: dos flat-tops de 48\" con bun toaster y smash presses ({{inv_plancha}}), tres fryers con filtrado ({{inv_freidoras}}), Type I hood + UL 300 ({{inv_campana}}) y el duct con makeup air ({{inv_conducto}}), make line ({{inv_montaje}}), walk-in y reach-ins ({{inv_frio}}), shake machine ({{inv_batidos}}); la apertura a las 8:30 (balls, cortes, salsas); «THE BALL IS THE BUSINESS» (US §8): cada onza cuenta, pesar las balls con báscula (nunca a ojo), no mezclar lotes en el flat-top, merma objetivo ≤ 4 % de la carne comprada; carne comprada ya picada o en balls con el establishment number del proveedor; aceite filtrado cada noche y cambiado por TPM; mide la merma de plancha, las balls por lb y el coste por burger con la calculadora del kit (sin inventar cifras: las da la calculadora) ‖ FORMA: la sección §6 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "El equipo se compra con precio y fuente. La plancha fry-top (la plancha de acero de cocina profesional) a gas de 100 cm, con el tostador de pan, cuesta 4.000 €; una de 60 a 80 cm va de unos 771 a 1.399 € sin IVA según la gama. Las dos freidoras de doble cuba y el mantenedor de patatas suman 3.500 €: son dos para no mezclar las patatas con los rebozados. La campana extractora cuesta 2.200 €; la mesa refrigerada de montaje y el bajo plancha refrigerado para las bolas, 3.800 €; el frío, 5.000 €, con el armario de carne a 2 °C o menos; la barra de batidos y cerveza, 2.500 €, y el utillaje, con los smashers (la prensa con la que se aplasta la bola), 2.000 €. El conducto exclusivo a cubierta cuesta 6.000 €. Ese conducto es la partida más delicada del local: pide presupuesto antes de firmar el alquiler.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 157,
+   "nota": "§6 2/5: Operaciones y equipo: dos flat-tops de 48\" con bun toaster y smash presses ({{inv_plancha}}), tres fryers con filtrado ({{inv_freidoras}}), Type I hood + UL 300 ({{inv_campana}}) y el duct con makeup air ({{inv_conducto}}), make line ({{inv_montaje}}), walk-in y reach-ins ({{inv_frio}}), shake machine ({{inv_batidos}}); la apertura a las 8:30 (balls, cortes, salsas); «THE BALL IS THE BUSINESS» (US §8): cada onza cuenta, pesar las balls con báscula (nunca a ojo), no mezclar lotes en el flat-top, merma objetivo ≤ 4 % de la carne comprada; carne comprada ya picada o en balls con el establishment number del proveedor; aceite filtrado cada noche y cambiado por TPM; mide la merma de plancha, las balls por lb y el coste por burger con la calculadora del kit (sin inventar cifras: las da la calculadora) ‖ FORMA: la sección §6 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "El oficio manda en la plancha, y lo que sigue es orientativo: la plancha a 220-250 °C, unos 90 segundos del primer lado y 60 del segundo. No es una regla legal, porque la cocción no tiene temperatura legal en España. El horario del caso va de martes a domingo, de 13:00 a 16:30 y de 20:00 a 24:00. La producción se hace antes de abrir, unas 2,5 horas al día: porcionar las bolas, preparar las salsas, cortar la verdura y reponer la línea de montaje, que es la mesa refrigerada donde se monta cada hamburguesa. Con eso hecho, en el servicio la plancha solo aplasta, da la vuelta y saca, y el montaje no se para. Si dejas la producción para cuando ya hay cola, la plancha espera al montaje y el mostrador se atasca.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 136,
+   "nota": "§6 3/5: Operaciones y equipo: dos flat-tops de 48\" con bun toaster y smash presses ({{inv_plancha}}), tres fryers con filtrado ({{inv_freidoras}}), Type I hood + UL 300 ({{inv_campana}}) y el duct con makeup air ({{inv_conducto}}), make line ({{inv_montaje}}), walk-in y reach-ins ({{inv_frio}}), shake machine ({{inv_batidos}}); la apertura a las 8:30 (balls, cortes, salsas); «THE BALL IS THE BUSINESS» (US §8): cada onza cuenta, pesar las balls con báscula (nunca a ojo), no mezclar lotes en el flat-top, merma objetivo ≤ 4 % de la carne comprada; carne comprada ya picada o en balls con el establishment number del proveedor; aceite filtrado cada noche y cambiado por TPM; mide la merma de plancha, las balls por lb y el coste por burger con la calculadora del kit (sin inventar cifras: las da la calculadora) ‖ FORMA: la sección §6 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "La higiene va dentro de la operación, no al lado. La carne vive en un armario a 2 °C o menos (RD 1021/2022, art. 4.1). La bola se sala en la plancha: salada antes es preparado de carne y pasa a 4 °C o menos. Si picas en el local, solo lo del día, y nunca de un día para otro. Las espátulas y las bandejas de crudo van separadas de las de lo hecho, y la verdura cortada, a 4 °C o menos. Cada tanda de bolas se mide con sonda, con la temperatura que fije tu APPCC (la AESAN recomienda 70 °C o más durante al menos 2 minutos). La freidora trabaja por debajo de 175 °C con la guía de colores a la vista; los compuestos polares del aceite, por debajo del 25 %, con cada cambio anotado, y el aceite usado va a un gestor autorizado. El Kit de Tareas Recurrentes: Hamburguesería de AI Chef Pro trae las hojas de la plancha, la freidora, la línea de montaje y el reparto.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 175,
+   "nota": "§6 4/5: Operaciones y equipo: dos flat-tops de 48\" con bun toaster y smash presses ({{inv_plancha}}), tres fryers con filtrado ({{inv_freidoras}}), Type I hood + UL 300 ({{inv_campana}}) y el duct con makeup air ({{inv_conducto}}), make line ({{inv_montaje}}), walk-in y reach-ins ({{inv_frio}}), shake machine ({{inv_batidos}}); la apertura a las 8:30 (balls, cortes, salsas); «THE BALL IS THE BUSINESS» (US §8): cada onza cuenta, pesar las balls con báscula (nunca a ojo), no mezclar lotes en el flat-top, merma objetivo ≤ 4 % de la carne comprada; carne comprada ya picada o en balls con el establishment number del proveedor; aceite filtrado cada noche y cambiado por TPM; mide la merma de plancha, las balls por lb y el coste por burger con la calculadora del kit (sin inventar cifras: las da la calculadora) ‖ FORMA: la sección §6 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "Necesitas dos proveedores de carne, cada uno con su ficha técnica: el blend, el porcentaje de grasa y la fecha de sacrificio o de envasado en cada albarán. Añade uno de pan, brioche o de patata, con sus alérgenos, y la patata con su ficha. Los precios de la carne, el pan, el queso y la patata son «precio estimado por el kit»: confírmalos con tus proveedores. Los suministros cuestan 1.100 € al mes de media, entre el gas de la plancha, la luz de las freidoras, la extracción, el frío y el clima. El mantenimiento son 2.000 € al año: la limpieza de la campana extractora y del conducto, la plancha y el gas, las freidoras y el frío. Los residuos y el aceite usado, 600 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 128,
+   "nota": "§6 5/5: Operaciones y equipo: dos flat-tops de 48\" con bun toaster y smash presses ({{inv_plancha}}), tres fryers con filtrado ({{inv_freidoras}}), Type I hood + UL 300 ({{inv_campana}}) y el duct con makeup air ({{inv_conducto}}), make line ({{inv_montaje}}), walk-in y reach-ins ({{inv_frio}}), shake machine ({{inv_batidos}}); la apertura a las 8:30 (balls, cortes, salsas); «THE BALL IS THE BUSINESS» (US §8): cada onza cuenta, pesar las balls con báscula (nunca a ojo), no mezclar lotes en el flat-top, merma objetivo ≤ 4 % de la carne comprada; carne comprada ya picada o en balls con el establishment number del proveedor; aceite filtrado cada noche y cambiado por TPM; mide la merma de plancha, las balls por lb y el coste por burger con la calculadora del kit (sin inventar cifras: las da la calculadora) ‖ FORMA: la sección §6 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "83": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El equipo del caso es corto, con siete filas en la hoja Personal. Tú eres el gerente y el jefe de plancha: compras la carne, eliges el blend y los proveedores, firmas la carta y el APPCC, llevas la plancha en el servicio fuerte y gestionas las plataformas, con 2.000 € brutos al mes en 14 pagas. Como administrador de la SL cotizas en el régimen de autónomos: confírmalo con tu gestoría. Te acompañan un cocinero de plancha, que aplasta cada bola y saca la costra; un cocinero de montaje y freidora; un encargado de mostrador y pedidos; un auxiliar de sala y empaquetado de 30 horas, que hace de runner (quien lleva la bandeja del mostrador a la mesa); y un refuerzo de viernes a domingo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 127,
+   "nota": "§7 1/6: Organización y personal: Owner / GM, shift lead, grill cooks (2, smash station), fry & prep cook, counter crew (3 part-time W-2: cashier, expo, to-go packing), weekend crew (3 part-time W-2) y dish & prep ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE); contrata al grill cook líder ANTES de la obra (diseña la línea); ≥ $15/h, counter service sin servers ni tip credit, las propinas del tip jar o del POS son del equipo; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager de cadena: «owner's draw in addition from net profit» ‖ FORMA: la sección §7 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "Con las suplencias de vacaciones y descansos, el cuadro suma 7 personas, equivalentes a 5,35 jornadas completas, y cuesta 152.274 € el primer año, el 33,4 % de las ventas. La cobertura de horas es del 109 %: hay 9.844 horas contratadas frente a 9.000 necesarias. Pero el cuadrante anual no ve un detalle: el viernes y el sábado por la noche hacen falta seis personas, dos en la plancha, una en montaje y freidora, una en el mostrador, una empaquetando y una llevando bandejas. Ponlo en el turno. Un jefe de plancha único es un riesgo, no un ahorro: si falta, la plancha no sale. La plantilla crece con personas, no con un porcentaje: 6.000 € de incorporaciones el segundo año y otro tanto el tercero.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 127,
+   "nota": "§7 2/6: Organización y personal: Owner / GM, shift lead, grill cooks (2, smash station), fry & prep cook, counter crew (3 part-time W-2: cashier, expo, to-go packing), weekend crew (3 part-time W-2) y dish & prep ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE); contrata al grill cook líder ANTES de la obra (diseña la línea); ≥ $15/h, counter service sin servers ni tip credit, las propinas del tip jar o del POS son del equipo; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager de cadena: «owner's draw in addition from net profit» ‖ FORMA: la sección §7 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "El convenio aplicable es el provincial de hostelería. El art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería nombra expresamente las hamburgueserías. Todos los puestos cobran por encima del SMI de 2026, que es de 1.221 € al mes en 14 pagas (Real Decreto 126/2026), en proporción a la jornada. Los contratos van por escrito y el registro de jornada es obligatorio (art. 34.9 del Estatuto de los Trabajadores): que cada persona lo rellene cada día, no al final del mes. Confirma con tu gestoría las tablas de tu provincia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 95,
+   "nota": "§7 3/6: Organización y personal: Owner / GM, shift lead, grill cooks (2, smash station), fry & prep cook, counter crew (3 part-time W-2: cashier, expo, to-go packing), weekend crew (3 part-time W-2) y dish & prep ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE); contrata al grill cook líder ANTES de la obra (diseña la línea); ≥ $15/h, counter service sin servers ni tip credit, las propinas del tip jar o del POS son del equipo; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager de cadena: «owner's draw in addition from net profit» ‖ FORMA: la sección §7 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "La plancha es el cuello de botella, así que su cocinero es la contratación clave. En los portales de empleo (octubre de 2026), un cocinero de cadena cobra de 22.000 a 25.000 € brutos al año, y un ayudante de hamburguesería, de 16.000 a 18.000 €. Contrata a quien va a llevar la plancha antes de la obra y pídele opinión sobre la línea y el frío. Una advertencia más: nunca sustituyas plantilla por autónomos que te facturan con tu horario. Eso es falso autónomo (art. 1.1 del Estatuto de los Trabajadores) y una sanción esperando.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 96,
+   "nota": "§7 4/6: Organización y personal: Owner / GM, shift lead, grill cooks (2, smash station), fry & prep cook, counter crew (3 part-time W-2: cashier, expo, to-go packing), weekend crew (3 part-time W-2) y dish & prep ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE); contrata al grill cook líder ANTES de la obra (diseña la línea); ≥ $15/h, counter service sin servers ni tip credit, las propinas del tip jar o del POS son del equipo; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager de cadena: «owner's draw in addition from net profit» ‖ FORMA: la sección §7 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "Si algún día quieres un repartidor propio, tiene que ir con contrato laboral del convenio de hostelería. En el reparto que organiza una plataforma por algoritmo, la ley presume la relación laboral (disposición adicional 23.ª del Estatuto de los Trabajadores). Por eso el caso no tiene reparto propio: los pedidos de plataforma los lleva el rider, el repartidor de la plataforma, y el refuerzo de fin de semana se dedica a la plancha y al empaquetado. Antes de poner un repartidor en plantilla, haz la cuenta con tus pedidos (en el caso son 12 al día de plataforma): es un coste fijo, mientras que la plataforma cobra su servicio con una comisión del 30 % solo cuando vendes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 118,
+   "nota": "§7 5/6: Organización y personal: Owner / GM, shift lead, grill cooks (2, smash station), fry & prep cook, counter crew (3 part-time W-2: cashier, expo, to-go packing), weekend crew (3 part-time W-2) y dish & prep ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE); contrata al grill cook líder ANTES de la obra (diseña la línea); ≥ $15/h, counter service sin servers ni tip credit, las propinas del tip jar o del POS son del equipo; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager de cadena: «owner's draw in addition from net profit» ‖ FORMA: la sección §7 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "Forma al equipo antes de abrir. La formación de manipuladores la acredita la empresa (el antiguo carné de manipulador ya no existe) y tiene que cubrir la carne picada, la sonda de cocción, el aceite de la freidora, los alérgenos y el contacto cruzado. La línea necesita además formación propia: los gramos de la bola, el aplastado y el montaje; pesa diez bolas de cada persona. Aparte, la prevención de riesgos laborales (Ley 31/1995) cubre las quemaduras de la plancha y de las freidoras, los resbalones con la grasa, los cortes y las cargas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 94,
+   "nota": "§7 6/6: Organización y personal: Owner / GM, shift lead, grill cooks (2, smash station), fry & prep cook, counter crew (3 part-time W-2: cashier, expo, to-go packing), weekend crew (3 part-time W-2) y dish & prep ({{plantilla_puestos}} personas = {{plantilla_jornadas_xl}} FTE); contrata al grill cook líder ANTES de la obra (diseña la línea); ≥ $15/h, counter service sin servers ni tip credit, las propinas del tip jar o del POS son del equipo; employer payroll taxes {{cargas_pct}}; el dueño se paga por debajo de un manager de cadena: «owner's draw in addition from net profit» ‖ FORMA: la sección §7 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "91": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "Para abrir necesitas 162.144 €. Son 104.350 € de obra, cocina, frío, equipo y puesta en marcha, 3.000 € de fianza y 3.000 € de renta antes de abrir, que suman 110.350 € de inversión sin el fondo, más 51.794 € de fondo de maniobra. A eso se suma el IVA de la inversión, 21.914 €, que adelantas y recuperas después, y la necesidad de caja queda en 184.057 €. La financiación son 55.000 € propios y un préstamo de 130.000 € al 6 %, a 7 años, con una carencia, en años, de 1 y una cuota anual de 26.437 €.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 102,
+   "nota": "§8 1/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del plan es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon y los shakes: el coste teórico por burger de la calculadora sale más bajo (el puente, con las cifras de la calculadora que diga cifras_calculadora.md o sin cifra); el precio de la carne es el riesgo del caso: +$0.75/lb ≈ +$0.28 por double; revisar el precio cada 4 semanas ‖ FORMA: la sección §8 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "La cuenta de resultados a tres años proyecta unas ventas de 456.000 €, 483.360 € y 502.694 €. El margen bruto del primer año es del 59,5 %, después de todos los costes variables: mercancía (el 27,5 % de las ventas), envases, plataforma, medios de pago y varios. El personal suma 152.274 €, el alquiler 18.000 € (un 3,9 % de las ventas) y los residuos y el aceite usado 600 €, una cifra orientativa: pon la tasa de tu ayuntamiento. El resultado de explotación antes de amortizaciones e intereses es de 71.854 €, un 15,8 %. El neto es de 46.512 €, 55.244 € y 53.709 €, un 10,2 %, un 11,4 % y un 10,7 %; el tercer año tributa al tipo general del Impuesto de Sociedades, un 25 %, y si tu cifra de negocios no llega a 1 millón de euros el tuyo será más bajo: confírmalo con tu asesor. Con honestidad sobre el food cost: la comida va al 28,0 %, el lado prudente, y el escandallo teórico de la calculadora sale en un 24,4 % de media ponderada (la doble, en un 26,8 %, siempre sobre el precio sin IVA). La diferencia, unos cuatro puntos, es lo que se pierde entre la receta y la caja: las bolas, el pan y las salsas que se tiran al cierre, las comidas del personal, los errores y las reclamaciones de la plataforma, y sus promociones.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 239,
+   "nota": "§8 2/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del plan es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon y los shakes: el coste teórico por burger de la calculadora sale más bajo (el puente, con las cifras de la calculadora que diga cifras_calculadora.md o sin cifra); el precio de la carne es el riesgo del caso: +$0.75/lb ≈ +$0.28 por double; revisar el precio cada 4 semanas ‖ FORMA: la sección §8 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "El crecimiento es el que hace el Excel: suben los comensales equivalentes un 6 % el segundo año y un 4 % el tercero, de 95 a 101 y 105 al día, con el mismo ticket de 16,00 € sin IVA, y la plantilla crece con personas (6.000 € de incorporaciones al año), no con un porcentaje. En el IVA, la comida va al 10 %. De la bebida, la parte que sale del local con alcohol o con azúcares o edulcorantes añadidos (la cerveza y los refrescos, también los zero) es el 28,0 % de la bebida, un 4,5 % de las ventas, y va al 21 %; el resto va al 10 % y el IVA medio de la bebida queda en un 13,1 %. En las compras, el IVA soportado de la comida es del 9,0 %: el queso, la patata fresca y la verdura van al 4 %; el pan de hamburguesa, que no es pan común, y el aceite de girasol, al 10 %. El de la bebida es del 18,3 %.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 177,
+   "nota": "§8 3/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del plan es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon y los shakes: el coste teórico por burger de la calculadora sale más bajo (el puente, con las cifras de la calculadora que diga cifras_calculadora.md o sin cifra); el precio de la carne es el riesgo del caso: +$0.75/lb ≈ +$0.28 por double; revisar el precio cada 4 semanas ‖ FORMA: la sección §8 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "El equilibrio contable está en 76 comensales equivalentes al día, con unos ingresos de 364.004 €, y deja una holgura del 25,3 %. El de caja está en 73 comensales equivalentes al día, con una holgura del 30,9 %, pero esa cifra es la del primer año, el de carencia, en el que solo pagas intereses. Desde el segundo devuelves principal: la holgura baja al 24,0 %, con 82 al día de equilibrio, y en el tercero queda en el 25,7 %, con 84. Esos son los años que hay que vigilar. El caso pide 2,6 comensales por plaza y día con los pedidos dentro, frente a un techo físico de 3,5 (comidas y cenas, con pedido en el mostrador y estancias de 30-40 minutos); el equilibrio de caja pide 2,02. En la sala sola, sin los pedidos, la rotación ronda 1,5.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 142,
+   "nota": "§8 4/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del plan es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon y los shakes: el coste teórico por burger de la calculadora sale más bajo (el puente, con las cifras de la calculadora que diga cifras_calculadora.md o sin cifra); el precio de la carne es el riesgo del caso: +$0.75/lb ≈ +$0.28 por double; revisar el precio cada 4 semanas ‖ FORMA: la sección §8 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "La tesorería numera los meses del 1 al 12 y el Mes 1 es enero, en el orden del calendario. La rampa arranca al 75 % y llega al ritmo de crucero en 4 meses, en abril, y por eso el fondo de maniobra cuenta. El saldo mínimo, 61.952 €, es el del Mes 1, enero, el valle del año, y la tesorería acaba en diciembre con 144.816 €. Mayo es el pico, junio le sigue y agosto baja. Las pagas extra salen en julio y diciembre. En la costa, julio y agosto suben: cambia los pesos de la fila de estacionalidad del Excel.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 104,
+   "nota": "§8 5/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del plan es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon y los shakes: el coste teórico por burger de la calculadora sale más bajo (el puente, con las cifras de la calculadora que diga cifras_calculadora.md o sin cifra); el precio de la carne es el riesgo del caso: +$0.75/lb ≈ +$0.28 por double; revisar el precio cada 4 semanas ‖ FORMA: la sección §8 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "El DSCR mínimo es de 2,64, con 2,74 en el segundo año y 2,64 en el tercero: el negocio cubre la deuda con margen. El payback antes de la deuda, en años, es «2,4» con el fondo de maniobra dentro y «1,6» sin él. La recuperación depende de que la plancha rinda cada día: es un negocio de oficio, no una renta. Si los números no salen, la palanca es el precio de la carta, nunca más deuda.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 78,
+   "nota": "§8 6/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del plan es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon y los shakes: el coste teórico por burger de la calculadora sale más bajo (el puente, con las cifras de la calculadora que diga cifras_calculadora.md o sin cifra); el precio de la carne es el riesgo del caso: +$0.75/lb ≈ +$0.28 por double; revisar el precio cada 4 semanas ‖ FORMA: la sección §8 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "El escenario pesimista es un año flojo: 80 comensales equivalentes al día a 15,25 € durante 295 días dan unas ventas de 359.900 € y un neto de −2.441 €, es decir, pérdidas. En el optimista, 110 comensales equivalentes a 16,75 € durante 305 días dan 561.963 € y un neto de 100.084 €. Cada punto de food cost de la comida vale unos 3.830 € al año, y si la carne sube un 20 %, el resultado antes de impuestos baja unos 11.800 €. Mide tu consumo real (compras de comida entre ventas de comida del mes) el primer trimestre y cambia la celda.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 105,
+   "nota": "§8 7/7: Plan financiero: TODO con tokens (ventas años 1-3, mezcla {{comida_pct}}/{{bebida_pct}}, COGS {{cogs_pct_xl}}, personal {{personal_pct}}, prime cost {{prime_cost_pct}}, alquiler {{ocupacion_pct}}, EBITDA, neto, equilibrio {{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers/día, holgura {{holgura_caja_pct}}, DSCR {{dscr_min}}, saldo mínimo {{saldo_minimo}}, escenarios); el food cost del plan es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon y los shakes: el coste teórico por burger de la calculadora sale más bajo (el puente, con las cifras de la calculadora que diga cifras_calculadora.md o sin cifra); el precio de la carne es el riesgo del caso: +$0.75/lb ≈ +$0.28 por double; revisar el precio cada 4 semanas ‖ FORMA: la sección §8 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "100": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Puedes abrir como SL unipersonal, con un capital desde 1 € (Ley 18/2022), o como autónomo. En el IAE (Real Decreto Legislativo 1175/1990), la sala con comedor va en el grupo 671, restaurantes, por categoría; el mostrador sin comedor separado, en el 673, y la nota común de esos grupos faculta para vender para llevar. Si el reparto a domicilio fuera la actividad principal, sería el 677.9: la gestoría decide. El alta censal es el modelo 036, y con menos de 1 millón de cifra de negocio estás exento de cuota (art. 82.1.c de la Ley de Haciendas Locales). Facturarás con software Veri*factu: consulta con tu gestoría la fecha que te aplica.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 112,
+   "nota": "§9 1/7: el marco US por niveles (federal, estatal, condado, ciudad); LLC + EIN; sales tax permit; business license; zoning check ANTES de firmar; plan review (Food Code 8-201.11) + building permit → certificate of occupancy; fire marshal; sales tax {{sales_tax}} de ejemplo, un solo tipo («some states tax to-go food differently», sin cifra) ‖ FORMA: la sección §9 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "Los restaurantes no figuran en el anexo de la Ley 12/2012, así que la apertura va por licencia o declaración responsable según la ordenanza de tu ayuntamiento, con una consulta urbanística previa sobre el uso, la extracción a cubierta, la potencia, el gas y el aforo. Los humos los decide cada ordenanza; como ejemplo, la Ordenanza 4/2021 de Calidad del Aire de Madrid pide un conducto exclusivo a cubierta que supere en 1 m la altura de lo que haya en 15 m (art. 12 y anexo I) y su limpieza al menos una vez al año (art. 23); en tu ciudad, pide la ordenanza. El gas lo instala una empresa habilitada, con certificado, puesta en marcha de cada aparato e inspección o revisión cada 5 años (RD 919/2006). En sanidad presentas una declaración responsable ante el registro sanitario de tu comunidad autónoma (RD 1021/2022); el RGSEAA solo aplica si suministras a otros negocios por encima de lo que permite su art. 3.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 163,
+   "nota": "§9 2/7: campana y fuego: Type I hood + supresión UL 300 sobre los flat-tops y las fryers; makeup air; limpieza de campana y conductos según NFPA 96 (trimestral con volumen alto de grasa, semestral si es moderado: pregúntalo al fire marshal); Class K + extintores; grease interceptor (lo dimensiona el condado en el plan review); aceite: filtrado cada noche, cambio por TPM o por el fabricante (SIN límite federal de polares) y el usado a un renderer autorizado; health permit + inspección previa; Certified Food Protection Manager (2-102.12) + food handler cards según estado ‖ FORMA: la sección §9 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "104": {
+   "estilo": "Normal",
+   "texto": "El RD 1021/2022 se aplica a la restauración (art. 2.2.a): la carne picada va a 2 °C o menos y los preparados de carne, a 4 °C o menos (art. 4.1). La bola sin sal es carne picada (menos de 1 % de sal, Reglamento (CE) 853/2004, anexo I, 1.13) y, salada antes de la plancha, pasa a preparado de carne (1.15): la smash se sala en la plancha. Si picas en el local, el picado puede hacerse con carácter previo según las necesidades del despacho diario, «no pudiendo conservarse de un día para otro» (art. 7.2), y cumples los capítulos II y III de la sección V del anexo III del Reglamento (CE) 853/2004 (art. 7.3). Si la compras picada a una carnicería, ese suministro entre minoristas tiene que ser marginal, localizado y restringido (art. 3). Y nada de «dry aged burger»: el Reglamento (CE) 853/2004 (anexo III, sección V, cap. III) exige picar la carne refrigerada dentro de los 6 días siguientes al sacrificio, o 15 si es vacuno deshuesado y envasado al vacío; una carne madurada semanas queda fuera de plazo, y Madrid Salud (Inf26008) lo aplica así.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 191,
+   "nota": "§9 3/7: carne picada: FDA Food Code 2022 (cada estado adopta su edición) 3-401.11(A)(2): 155 °F (68 °C) durante 17 segundos para la carne picada (comminuted), o 145 °F 3 min · 150 °F 1 min · 158 °F instantáneo; SOP del kit: TODAS las smash a ≥ 155 °F 17 s con sonda de punta fina a una muestra por tanda (el color y la crust no certifican la temperatura); cold holding ≤ 41 °F (3-501.16) y la carne cruda separada por debajo de lo listo para comer y por especie (3-302.11); carne comprada ya picada o en balls con el establishment number del proveedor y lotes; grinding logs: el kit NO afirma que sean obligatorios para un restaurante (la regla de FSIS de 2015 es para «retail stores and official establishments that grind raw beef»): si picas en casa, lleva un house-grind log (lotes, establishment numbers, hora de cada picada y de la limpieza) y pregunta a tu health department; poultry 165 °F ‖ FORMA: la sección §9 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "Lo que se vende sin envasar, o se envasa a petición del cliente, informa de la denominación y de los alérgenos (RD 126/2015, art. 4), por escrito o de palabra si la información queda registrada en el local y es accesible (arts. 4.1.b y 6.5.a); en la venta a distancia, antes de comprar y en la ficha de cada plato de cada plataforma (Reglamento (UE) 1169/2011, art. 14). Las hamburguesas que envuelves antes del pedido para tenerlas listas llevan las menciones de los arts. 9 y 10 de ese reglamento, salvo la nutricional (art. 5 del RD 126/2015). Hay alérgenos en el pan (gluten, huevo, leche y a veces sésamo o soja), el queso (leche), las salsas (huevo y mostaza), los encurtidos (mostaza y sulfitos), los rebozados (gluten, huevo y leche) y los batidos (leche). «Sin gluten» solo con 20 mg/kg o menos (Reglamento de Ejecución (UE) 828/2014): con pan de trigo en la misma plancha y una freidora compartida con los rebozados, no se promete.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 166,
+   "nota": "§9 4/7: consumer advisory 3-603.11: solo si ofreces la burger «cooked to order» (poco hecha a petición del cliente, 3-401.11(D)): disclosure («hamburgers (can be cooked to order)» o asterisco) + reminder («Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness»), en la carta, en la web y en los listados de marketplace; NUNCA en el menú infantil ni para highly susceptible populations (3-801.11: catering a residencias o colegios, cocción completa); el caso sirve todo cocido y no necesita advisory; acrilamida: SIN límite federal para restaurantes; en California, Prop 65 (el estado demandó en 2005 a las cadenas por las fries; KFC acordó en 2007 avisar y pagar $208,000 + $133,000): «if you open in California, ask your attorney about the Prop 65 warning for fried potatoes» ‖ FORMA: la sección §9 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "En España no hay una temperatura legal de cocción de la hamburguesa. El art. 30 del RD 1086/2020, en la redacción del RD 1021/2022, fija el mantenimiento en caliente a 63 °C o más (30.2), las refrigeradas a 4 °C u 8 °C (30.3), el enfriado de 60 a 10 °C en menos de 2 horas (30.6) y el recalentado a 74 °C durante 15 segundos (30.7), no un cocinado. La AESAN recomienda cocinar a 70 °C o más durante al menos 2 minutos, y tu APPCC fija el punto de control con sonda. La smash fina sale hecha en la plancha: el riesgo es la bola gruesa que se pide poco hecha.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 113,
+   "nota": "§9 5/7: alérgenos: 9 mayores US incluido el sésamo (FASTER Act, desde 2023): el bun (wheat; milk, egg y soy según la receta; sesame en las semillas y a veces en el aceite), el American cheese (milk), las salsas (mayo = egg), los shakes (milk; mix-ins con peanuts o tree nuts), el chicken sandwich rebozado (wheat, egg, milk) y el aceite de freír compartido (cross-contact); el flat-top compartido pasa wheat y sesame del bun a la carne si se tuesta en él; la mostaza NO es major en EE. UU. (sí en UK); «gluten-free»: 21 CFR 101.91, NO se promete; allergen matrix ‖ FORMA: la sección §9 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "En la acrilamida (Reglamento (UE) 2017/2158), la restauración aplica el anexo II, parte A: patatas con poco azúcar y almacenadas a una temperatura superior a 6 °C; la fresca, en remojo en agua fría de 30 minutos a 2 horas y enjuagada; la congelada, con las instrucciones del fabricante; y la freidora por debajo de 175 °C, lo más baja posible, espumando el aceite y con la guía de colores a la vista, también para el pan tostado. No hay muestreo, pero sí pruebas de que lo aplicas. En el aceite (Orden de 26 de enero de 1989), los compuestos polares quedan por debajo del 25 % (art. 6.3), no se añaden al baño sustancias ajenas al aceite y el usado no vuelve a la cadena alimentaria: gestor autorizado (art. 9). La norma no obliga a un medidor: tu APPCC elige tiras, medidor o cambio por frecuencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 147,
+   "nota": "§9 6/7: beer license o beer & wine license (agencia estatal + aprobación local; «apply early», NO prometer licencia); liquor liability en el seguro ({{seguros_anual}} con general liability, product liability, property y workers' comp); personal: W-2 por horas (nada de 1099 para grill cooks o counter crew), I-9, W-4, salario mínimo estatal (federal $7.25/h, DOL); sin servers y sin tip credit: las propinas del tip jar son del equipo (los managers y el dueño nunca se quedan propinas); OSHA (quemaduras del flat-top y de las fryers); música ASCAP/BMI/SESAC; packaging ordinances locales (prohibiciones de poliestireno) ‖ FORMA: la sección §9 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "En el IVA (Ley 37/1992, art. 91), en sala todo va al 10 % (91.Uno.2.2.º). Para llevar y a domicilio, la comida va al 10 %, pero se excluyen del reducido las bebidas alcohólicas y las refrescantes, zumos y gaseosas con azúcares o edulcorantes añadidos (91.Uno.1.1.º, a y b): la cerveza y los refrescos, también los zero, que salen del local van al 21 %. El art. 91 no recoge el batido expresamente: el plan lo lleva al 10 % como bebida de leche, pero confírmalo con tu gestoría, porque con azúcares o edulcorantes añadidos podría considerarse bebida refrescante (21 %). Lo mismo vale para el desglose por componentes del menú que sale del local (compruébalo con ella). El alcohol para llevar, nunca a menores y con los horarios de tu comunidad autónoma. Según la Ley 1/2025 (art. 8), el cliente puede llevarse lo que no consuma sin coste y el local lo avisa de forma visible, mejor en la carta; el envase de plástico de un solo uso para llevar se cobra aparte en el tique (Ley 7/2022, art. 55). Este marco es el español: en México y el resto de Latinoamérica los trámites y la norma de la carne molida, del aceite y de la acrilamida son otros, y la guía de equivalencias adapta los términos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 218,
+   "nota": "§9 7/7: venta desde casa: las cottage food laws no cubren la carne (TCS): este plan es de local con permiso («check your state»); y, como ÚLTIMA frase o frases, las notas UK y Australia SIN cifras de cocción: UK: registro del food business en el council 28 días antes, FHRS 0-5; la FSA espera las burgers de carne picada bien hechas salvo controles validados («ask your local authority»); VAT 20 % en sala y en la comida caliente para llevar («check HMRC VAT Notice 709/1»); 14 alérgenos (mostaza, apio, sulfitos, altramuces, moluscos); premises + personal licence para el alcohol; Australia en una línea: Food Safety Supervisor y GST 10 % ‖ FORMA: la sección §9 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "109": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Acción",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "La conclusión es que una hamburguesería smash de barrio de este tamaño es viable, pero exigente. Con 95 comensales equivalentes al día a 16,00 € por comensal equivalente, sin IVA, el primer año deja un neto de 46.512 € y una holgura de caja del 30,9 %, que es la del año de carencia. Esa holgura baja al 24,0 % en el segundo año y se queda en el 25,7 % en el tercero, cuando ya devuelves el principal. El DSCR mínimo es de 2,64, el saldo mínimo de caja es de 61.952 € en enero y el payback antes de la deuda, en años, es «2,4» con el fondo de maniobra dentro y «1,6» sin él. Es un negocio de oficio, que se sostiene con la plancha llena cada día, y no es para ir con el capital justo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 140,
+   "nota": "§10 1/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood & permits; beef & health; staff & allergens; menu, brand & delivery; opening & 90 days); decide ANTES de abrir si ofreces cooked to order (si sí, consumer advisory en carta, web y marketplaces); el establishment number y los lotes de cada proveedor de carne archivados; la beer & wine license se pide al firmar el local; el grill cook líder contratado antes de la obra; cierre con el Excel, la calculadora de la carne, las fries y el coste por burger, y el checklist ‖ FORMA: la sección §10 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "Estos son los trece errores de una hamburguesería y cómo evitarlos. El primero es picar hoy para mañana: la carne picada en el local no se guarda de un día para otro (art. 7.2 del RD 1021/2022), así que pica solo lo del día. El segundo es la «dry aged burger»: el Reglamento (CE) 853/2004 exige picar dentro de los 6 días siguientes al sacrificio (15 si es vacuno deshuesado y envasado al vacío), una carne madurada semanas queda fuera de plazo y Madrid Salud (Inf26008) lo aplica así, así que fuera de la carta las bolas de carne madurada. El tercero es dejar en la cámara a 4 °C unas bolas ya saladas creyendo que son carne picada: son un preparado de carne, y la picada va a 2 °C o menos; sala en la plancha. El cuarto es prometer el punto sin sonda ni APPCC, o servir poco hecha una carne cuyo proveedor pide cocinarla: la cocción no tiene temperatura legal, y el punto de control lo fija tu APPCC con sonda.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 174,
+   "nota": "§10 2/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood & permits; beef & health; staff & allergens; menu, brand & delivery; opening & 90 days); decide ANTES de abrir si ofreces cooked to order (si sí, consumer advisory en carta, web y marketplaces); el establishment number y los lotes de cada proveedor de carne archivados; la beer & wine license se pide al firmar el local; el grill cook líder contratado antes de la obra; cierre con el Excel, la calculadora de la carne, las fries y el coste por burger, y el checklist ‖ FORMA: la sección §10 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "El quinto es freír demasiado caliente y cambiar el aceite «cuando huele»: la freidora va por debajo de 175 °C y los compuestos polares, por debajo del 25 %, con cada cambio anotado. El sexto es una sola freidora para las patatas y los rebozados, y luego prometer «patatas sin gluten»: no se promete, y dos freidoras separan las patatas de los rebozados. El séptimo es la plataforma sin techo. La comisión, el IVA de la comisión y la caja se comen el margen, y la hamburguesa viaja bien, pero las patatas no: por eso el techo del plan es el 24 % de las ventas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 106,
+   "nota": "§10 3/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood & permits; beef & health; staff & allergens; menu, brand & delivery; opening & 90 days); decide ANTES de abrir si ofreces cooked to order (si sí, consumer advisory en carta, web y marketplaces); el establishment number y los lotes de cada proveedor de carne archivados; la beer & wine license se pide al firmar el local; el grill cook líder contratado antes de la obra; cierre con el Excel, la calculadora de la carne, las fries y el coste por burger, y el checklist ‖ FORMA: la sección §10 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "El octavo es poner precio al menú sin escandallo por canal: en sala el menú deja 10,83 € y en plataforma 7,41 €, así que el margen cae casi un tercio cuando sale por reparto. Haz el escandallo de cada canal con la calculadora antes de fijar la carta. El noveno es una carta larga, con merma de pan y de ingredientes que acabas tirando: una carta corta acelera el servicio, reduce la merma y hace más fácil medir el food cost real. El décimo es depender de un solo proveedor de carne y sin ficha técnica del blend: tener dos, con su ficha y la fecha de sacrificio o de envasado en cada albarán, es el seguro de la plancha.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 121,
+   "nota": "§10 4/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood & permits; beef & health; staff & allergens; menu, brand & delivery; opening & 90 days); decide ANTES de abrir si ofreces cooked to order (si sí, consumer advisory en carta, web y marketplaces); el establishment number y los lotes de cada proveedor de carne archivados; la beer & wine license se pide al firmar el local; el grill cook líder contratado antes de la obra; cierre con el Excel, la calculadora de la carne, las fries y el coste por burger, y el checklist ‖ FORMA: la sección §10 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "El undécimo es cobrar al 10 % la cerveza y los refrescos con azúcares o edulcorantes añadidos para llevar: van al 21 %, también los zero. El duodécimo es copiar la inversión de una franquicia de 140-180 m² para un local de 90 m²: sirve para comparar, no para presupuestar tu caso. Y el decimotercero es abrir sin cuadrante del viernes y el sábado, cuando la plancha es el cuello de botella: el cuadrante con seis personas por la noche se hace antes de abrir. Si solo te quedas con un error, que sea el de la carne: la que se pica, se sala o se cocina mal es la que pone en riesgo al cliente y al negocio. Casi todos estos errores tienen su tarea en el checklist, puesta en el orden en que conviene hacerla.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 137,
+   "nota": "§10 5/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood & permits; beef & health; staff & allergens; menu, brand & delivery; opening & 90 days); decide ANTES de abrir si ofreces cooked to order (si sí, consumer advisory en carta, web y marketplaces); el establishment number y los lotes de cada proveedor de carne archivados; la beer & wine license se pide al firmar el local; el grill cook líder contratado antes de la obra; cierre con el Excel, la calculadora de la carne, las fries y el coste por burger, y el checklist ‖ FORMA: la sección §10 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "El plan de acción tiene seis fases y 80 tareas en el checklist que acompaña al kit, repartidas en 12, 15, 14, 13, 13 y 13. Sigue el orden: la consulta urbanística sobre la extracción va antes de firmar el alquiler, y la contratación de quien va a llevar la plancha, antes de la obra. Los permisos pesan más que la obra: sin licencia o declaración responsable no abres, y el conducto exclusivo a cubierta es la partida que más condiciona el local. Pide presupuesto del conducto, de la campana extractora y del gas cuanto antes. Marca cada tarea al cerrarla y, si una se retrasa, mira qué otras dependen de ella antes de mover la fecha de apertura. Y no dejes para el final lo que no se improvisa: el APPCC, la ficha de alérgenos de cada plato, los dos proveedores de carne y el cuadrante del viernes y el sábado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 152,
+   "nota": "§10 6/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood & permits; beef & health; staff & allergens; menu, brand & delivery; opening & 90 days); decide ANTES de abrir si ofreces cooked to order (si sí, consumer advisory en carta, web y marketplaces); el establishment number y los lotes de cada proveedor de carne archivados; la beer & wine license se pide al firmar el local; el grill cook líder contratado antes de la obra; cierre con el Excel, la calculadora de la carne, las fries y el coste por burger, y el checklist ‖ FORMA: la sección §10 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "El siguiente paso es completar el Excel con tus cifras: tu alquiler real, tu ticket, tus comensales, tu préstamo, tu plantilla y tu calendario de apertura. Cambia solo las celdas verdes; este documento recoge los números del caso, y los tuyos los marca tu hoja. Después, con la calculadora, pesa diez bolas, mide la merma de cocción y las raciones de patata por kilo, y durante el primer trimestre compara tu consumo real con el 28,0 % del plan. Para las hojas de la plancha, la freidora, la línea de montaje y el reparto, usa el Kit de Tareas Recurrentes: Hamburguesería, y para el escandallo de toda la carta, el Kit de Escandallos Pro. Y si lo que te atrae es otro formato, el reparto a domicilio sin sala tiene su Guía Dark Kitchen, y el carrito o el puesto, el Plan de Negocio: Food Truck.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bur_b",
+   "palabras": 146,
+   "nota": "§10 7/7: Hoja de ruta: el orden del checklist (80 tareas en 6 fases: setup; hood & permits; beef & health; staff & allergens; menu, brand & delivery; opening & 90 days); decide ANTES de abrir si ofreces cooked to order (si sí, consumer advisory en carta, web y marketplaces); el establishment number y los lotes de cada proveedor de carne archivados; la beer & wine license se pide al firmar el local; el grill cook líder contratado antes de la obra; cierre con el Excel, la calculadora de la carne, las fries y el coste por burger, y el checklist ‖ FORMA: la sección §10 del Sushi EN (business-plans-en-14/docx_en_sus_b.json, el mismo esqueleto de párrafos) da el registro y la longitud; su vocabulario de sushi (sushi bar, nigiri, rolls, sake, raw fish, servers, closed Mondays…) y sus cifras NO valen"
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "Consultoría Gastronómica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "aichef.pro\ninfo@aichef.pro"
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Tareas Recurrentes: Hamburguesería",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Burger Joint Checklists Kit Pro · Food Cost Kit Pro"
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "→ Guía Dark Kitchen",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ HACCP Food Safety Kit Pro"
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost + Menu Engineering Guide (cost per burger and menu mix)"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}

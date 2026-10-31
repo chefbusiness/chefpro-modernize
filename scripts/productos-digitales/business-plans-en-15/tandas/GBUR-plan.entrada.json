@@ -1,0 +1,2577 @@
+{
+ "tanda": "GBUR-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-15/textos_en/GBUR-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 115,
+ "n_palabras": 3691,
+ "pistas": {
+  "P01": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P02": "US §8: el caso cuenta «covers» (195 equivalentes; 1 order = 1.6 covers); «orders» para take-out y marketplace; nunca «customers» para el volumen diario",
+  "P03": "take-out order · pickup order · marketplace order (1 order = 1.6 covers)",
+  "P04": "order counter · window counter",
+  "P05": "DoorDash / Uber Eats / Grubhub con sus tiers (PIZ-US §5.3)",
+  "P06": "lunch combo: el «menú del día» español no cruza",
+  "P07": "US §8: caso US = 195 covers/día equivalentes (≈ 107 en sala, 44 plazas, counter service; ≈ 36 pedidos de take-out/pickup = 57.6 covers; ≈ 19 pedidos de marketplace = 30.4 covers; 1 pedido = 1.6 covers) × $16.50 (sin sales tax; counter service, sin propina) × 360 días (abre 7 días); beer; sin cifras del ES ni historia de versiones; media del año 1 con la rampa de apertura; compárala con el paso de gente de tu calle y con los pedidos que caben en una hora punta",
+  "P08": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P09": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P10": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P11": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P12": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P13": "combo (burger + fries + drink); nunca «value meal»",
+  "P14": "fries (frozen 3/8\" crinkle o fresh-cut)",
+  "P15": "US §8: caso US = 195 covers/día equivalentes (≈ 107 en sala, 44 plazas, counter service; ≈ 36 pedidos de take-out/pickup = 57.6 covers; ≈ 19 pedidos de marketplace = 30.4 covers; 1 pedido = 1.6 covers) × $16.50 (sin sales tax; counter service, sin propina) × 360 días (abre 7 días); beer; sin cifras del ES ni historia de versiones; check de $16.50 por cover equivalente = sala 107 × $15.00 (comida $12.00 + bebida $3.00) + take-out 36 pedidos × $28.00 + marketplace 19 pedidos × $32.00 (carta un 15 % más cara) = (1,605 + 1,008 + 608) ÷ 195 = $16.52 (Kit estimate, US §8); el precio con impuesto lo calcula la fila \"Menu price incl. sales tax\"",
+  "P16": "el caso US no cierra en enero ni en agosto: abre 7 días (360)",
+  "P17": "National Burger Month (mayo) · Super Bowl Sunday · March Madness · graduaciones",
+  "P18": "US §8: caso US = 195 covers/día equivalentes (≈ 107 en sala, 44 plazas, counter service; ≈ 36 pedidos de take-out/pickup = 57.6 covers; ≈ 19 pedidos de marketplace = 30.4 covers; 1 pedido = 1.6 covers) × $16.50 (sin sales tax; counter service, sin propina) × 360 días (abre 7 días); beer; sin cifras del ES ni historia de versiones; 360 días = abre 7 días a la semana; cierra Thanksgiving, Christmas Day, New Year's Day y 2 días de mantenimiento de la campana y las fryers",
+  "P19": "Clientela que repite y más pedidos de pickup el año 2; se aplica a los covers con el mismo check; el personal NO sube con este porcentaje (va en Staffing)",
+  "P20": "flat-top (la plancha de gas); NUNCA «fry-top»",
+  "P21": "Sobre el año 2. Conservador: el techo lo ponen los dos flat-tops, las 44 plazas del viernes y el sábado y los pedidos que caben en una hora punta",
+  "P22": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P23": "smash burger (nunca «smashed burger») · «smashed on the flat-top» · smash press / smasher",
+  "P24": "ball (la bola cruda, 3 oz) · puck · patty (el disco cocinado)",
+  "P25": "bun · potato bun · brioche bun",
+  "P26": "American cheese (en lonchas)",
+  "P27": "required public notices (health permit, beer license, labor law posters)",
+  "P28": "US §5.2 y §8: food cost 34 % (Kit estimate): el coste TEÓRICO por burger de la calculadora del kit sale más bajo (el double con fries, a $5.25/lb, ronda un cuarto del precio de carta); el 34 % es el consumo real de TODA la carta con la merma, los comps, el pollo, el bacon, los shakes y la carne al alza; sin cifra de la calculadora inventada",
+  "P29": "shake",
+  "P30": "US §6.6: «beer license» o «beer & wine license» («apply early», sin prometerla) · liquor liability",
+  "P31": "US §8: beverage cost 20 % (soft drinks de fountain, shakes y beer ≈ 25 % de la bebida; Kit estimate)",
+  "P32": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P33": "sin equivalente US: packaging ordinances locales (wrappers, burger boxes, fry cups)",
+  "P34": "US §8: disposables 4.5 % (wrappers, burger boxes, fry cups, tarrinas de salsa, bolsas, vasos; packaging ordinances locales)",
+  "P35": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P36": "own drivers = W-2 + hired & non-owned auto insurance (check your state); el caso no tiene reparto propio",
+  "P37": "US §8: 19 % de las ventas por marketplaces (DoorDash, Uber Eats, Grubhub, ≈ 19 pedidos al día); el pickup directo por teléfono, web o kiosk no paga comisión: empújalo; la smash llega peor que la pizza (la crust se ablanda): fries en envase ventilado",
+  "P38": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P39": "fryer (de gas, con filtrado)",
+  "P40": "US §6.6: Type I hood + fire suppression (UL 300) + makeup air sobre los flat-tops y las fryers; NFPA 96; «ask the fire marshal in writing»",
+  "P41": "US §8: $4,500/mes = 1,700 sq ft × ~$32/sq ft/año (Kit estimate, editable); local de segunda generación que ya fue restaurante, con ruta posible para la campana",
+  "P42": "gas lines por un plumber o gas fitter licenciado con su permiso (sin RD 919/2006)",
+  "P43": "US §8: $1,900/mes (gas de los flat-tops y las fryers, electricidad del walk-in, los reach-ins y la campana con su makeup air, agua; Kit estimate): pide el histórico del local",
+  "P44": "US §8: $7,500/año = general liability + product liability + liquor liability (beer) + property + workers' comp (Kit estimate)",
+  "P45": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P46": "offer letters, I-9, W-4, state minimum wage, W-2 por horas (sin convenio; sin «digital obligatorio»)",
+  "P47": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P48": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P49": "«POS that reports sales tax» (sin Veri*factu)",
+  "P50": "US §1: 44 plazas en mesas y una window counter (sin patio); counter service: se pide en el counter o el kiosk; quien se lleva el pedido o lo recibe en casa no ocupa mesa",
+  "P51": "burger restaurant (título) · burger joint / burger shop (prosa coloquial)",
+  "P52": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P53": "grease interceptor · used cooking oil pickup (renderer)",
+  "P54": "Plazo de pago a los proveedores de carne, buns, fries y bebida (14 días en el caso): negócialo por escrito; si el proveedor de carne pide pago semanal o COD, baja la cifra",
+  "P55": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P56": "«zoning check before signing» · «building permit + certificate of occupancy» · business license + sales tax permit",
+  "P57": "F1-camino §6: arquitecto, planos MEP y de la campana, plan review y permit fees ($12,000, Kit estimate); sin licencia ni declaración responsable españolas",
+  "P58": "F1-camino §6: local de segunda generación (ya fue restaurante) de 1,700 sq ft con el order counter, la cocina a la vista, signage & facade ($67,500, Kit estimate)",
+  "P59": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P60": "F1-camino §6: el duct de la campana hasta la cubierta y el makeup air ($8,000; la campana Type I con la supresión va en la fila 14); NADA de la ordenanza de Madrid",
+  "P61": "F1-camino §6: servicio eléctrico y panel (walk-in, reach-ins, shake machine, kiosk, makeup air) y el HVAC ($12,000): pregunta la potencia disponible ANTES de firmar",
+  "P62": "F1-camino §6: fontanería, líneas de gas de los flat-tops y las fryers y el grease interceptor que dimensiona el condado ($12,000)",
+  "P63": "US §4: flat-top de gas de 36\" de $589 (Avantco) a $4,858 (Imperial, plancha de 1\"), webstaurantstore oct-2026; el de 48\" sin precio leído: el caso cuenta dos de 48\" con bun toaster, smash presses ($10.49-25.99 cada una) y scrapers ($10,000, Kit estimate)",
+  "P64": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P65": "US §6.9: 9 major allergens incl. sesame (UK 14); bun = wheat (+ milk, egg, soy, sesame según receta); American cheese = milk; mayo = egg; la mostaza NO es major en EE. UU.",
+  "P66": "F1-camino §6: tres fryers de gas con filtrado (fries aparte del pollo rebozado por cross-contact) y la fry station ($9,000, Kit estimate, sin precio leído)",
+  "P67": "F1-camino §6: campana Type I con supresión UL 300 sobre los flat-tops y las fryers ($12,000, Kit estimate); limpieza según NFPA 96",
+  "P68": "make line · expo",
+  "P69": "F1-camino §6: make-line unit, chef base refrigerada bajo el flat-top para las balls a 41 °F y la estación de queso y holding ($6,500, Kit estimate)",
+  "P70": "ground beef (80/20) · ground chuck · blend (chuck, brisket, short rib)",
+  "P71": "US §6.1: 155 °F (68 °C) 17 s (Food Code 3-401.11(A)(2)); sonda de punta fina por tanda; cold holding ≤ 41 °F; hot holding ≥ 135 °F; la métrica solo entre paréntesis",
+  "P72": "US §4 y F1-camino §6: walk-in 6×8 (≈ $12,800, webstaurantstore) + reach-ins, freezer de fries y máquina de hielo ($20,800 en total); cold holding ≤ 41 °F",
+  "P73": "F1-camino §6: shake machine, blenders y estación de bebida (fountain, beer) ($4,000, Kit estimate)",
+  "P74": "US §6.7: TPM (total polar materials), SIN límite federal; filtrado nocturno; used oil a renderer",
+  "P75": "plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan",
+  "P76": "US §8: báscula de porciones en oz, ball portioner, termómetros de sonda de punta fina, tester de TPM o tiras, etiquetas y la estación to-go ($4,000)",
+  "P77": "US §1: 44 plazas en mesas y una window counter, y el order counter; sin patio",
+  "P78": "US §8: POS con self-order kiosk, KDS, online ordering y las tablets de los marketplaces; sin Veri*factu",
+  "P79": "«LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P80": "F1-camino §6: LLC, abogado, licencias, food safety plan y la formación de pre-apertura de 2 semanas ($10,500)",
+  "P81": "US §8: marca, web con carta y alérgenos, fotos y el vídeo de lanzamiento (el smash vende en vídeo)",
+  "P82": "US §8: carne (ya picada o en balls, con establishment number), potato buns, American cheese, fries congeladas, aceite, salsas, disposables y bebida",
+  "P83": "US §8: burgers, chicken sandwich, fries y sides: ≈ 50 % de las ventas en sala, ≈ 31 % take-out y ≈ 19 % por marketplaces; un solo sales tax en el ejemplo",
+  "P84": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P85": "Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P86": "Suelo del margen tras TODOS los variables: con el 44.5 % de variables del caso (comida y bebida, disposables, marketplace, tarjeta y varios) el suelo es 52 %; si los marketplaces suben, baja",
+  "P87": "Techo de la mercancía sobre ventas: la carne es más de la mitad de la compra de comida y su precio manda (Kit estimate)",
+  "P88": "Techo del personal sobre ventas con counter service, dos flat-tops y 7 días (Kit estimate)",
+  "P89": "Suelo de resultado neto a régimen para que el plan se sostenga (Kit estimate; sin la cifra española del 8-10 %)",
+  "P90": "US §8 y F1-camino §6: 5 servicios completos por plaza y día (11 h abiertas, pedido en el counter y estancias de 20-30 min); techo físico, no objetivo; solo la sala da ≈ 2.4; el equilibrio de caja pide menos (fila 26)",
+  "P91": "Owner / GM (1 × 1.0, $4,500/mes): compra de la carne y sus proveedores, carta, marketplaces y gestión; cubre los picos en la línea; cobra por debajo de un manager de cadena: «owner's draw in addition from net profit»",
+  "P92": "crust · lacy edges",
+  "P93": "Grill cooks (2 × 1.0, $5,892/mes en total ≈ $17/h, BLS 35-2014 mediana ≈ $17.98): la smash station en el flat-top: aplastar, la crust, los tiempos y la sonda por tanda; con un solo grill cook, una baja cierra la línea",
+  "P94": "Fry & prep cook (1 × 1.0, $2,773/mes ≈ $16/h): fryers, fries, el filtrado del aceite, salsas, balls porcionadas y mise en place",
+  "P95": "Shift lead (1 × 1.0, $3,639/mes ≈ $21/h): abre o cierra, caja, kiosk, marketplaces, el registro de temperaturas y la información de alérgenos",
+  "P96": "Counter crew (3 × 0.75, $6,044/mes en total ≈ $15.50/h): cashier, expo y to-go packing; sin propinas modeladas (las del tip jar son del equipo)",
+  "P97": "Weekend crew (3 × 0.4, $3,223/mes en total ≈ $15.50/h, part-time W-2): viernes a domingo, segundo flat-top y empaquetado; nunca como 1099",
+  "P98": "US §8: 11 h de servicio al día (11:00-22:00; 23:00 viernes y sábado), sin cierre de tarde",
+  "P99": "US §8: 3.5 personas de media a la vez (flat-top, fryer, counter y expo); el viernes y el sábado por la noche hacen falta más (entra el weekend crew)",
+  "P100": "US §8: 2.5 h de producción (balls porcionadas, cortes, salsas, reponer la línea) antes de abrir, desde las 8:30",
+  "P101": "US §8: 2 personas en producción (un grill cook y el fry & prep cook)",
+  "P102": "SPEC §4.1 línea 4 (Bar): sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; un solo tipo en el ejemplo (B39 = B40 = 8 %)",
+  "P103": "F1-camino §6: Mes 1 = ENERO, en el orden del calendario (febrero el más flojo, enero y noviembre detrás; mayo y el verano, los picos); sin el cierre de enero ni el agosto español",
+  "P104": "El Word cita las cifras de este Excel (si cambias el libro, manda el Excel); la calculadora de la carne, las fries y el coste por burger (Smash Burger Patty, Fries & Costing Calculator) va aparte y su food cost por burger NO se copia en \"0. Assumptions\" (allí va el food cost medio de toda la carta, con la merma)",
+  "P105": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P106": "fila → «Month 1 of the plan» · «January» · «Plan decision» · nota: orden del calendario; febrero el más flojo, enero y noviembre detrás; mayo y el verano, los picos; si abres en otro mes, gira la fila de \"12-Month Cash Flow\"",
+  "P107": "fila (sustituye la hamburguesa en el reparto español) → «Consumer demand (US searches)» · «\"smash burger\" about 673,000 a month; \"burger restaurant\" 110,000; \"smash burger restaurant\" 4,400» · «DataForSEO, US, Oct 2026» · nota: demanda de consumo, no de compradores del plan",
+  "P108": "fila → «Menu prices (this plan)» · «single $8.49 · double $10.99 · triple $13.49 · combo $15.99 · shake $6.49» · «Kit estimate (Oct 2026)» · nota: dine-in cover $15.00 (food $12.00 + beverage $3.00); marketplace menu about 15% higher",
+  "P109": "fila → «Ball (raw) for a smash burger» · «3 oz (85 g); 2-4 oz» · «Kit estimate» · nota: el double lleva dos balls (6 oz crudas); el coste se calcula sobre el peso CRUDO",
+  "P110": "fila → «Burgers per pound of beef» · «about 5 balls of 3 oz (16 oz ÷ 3 = 5.3)» · «Smash Burger Patty, Fries & Costing Calculator» · nota: pesa tus balls y mide la merma de plancha en la hoja \"Beef & Patty\"",
+  "P111": "fila → «Delivery marketplace commission» · «DoorDash 15 / 25 / 30% + 6% pickup; Uber Eats 15-30%» · «merchants.ubereats.com; DoorDash tiers (Oct 2026)» · nota: este plan, 25 % sobre el 19 % de las ventas; el pickup directo no paga comisión",
+  "P112": "fila (sustituye el IVA de la hamburguesería) → «Sales tax» · «8% (example: state + local)» · «Kit example: look up your state and city rate» · nota: un solo tipo en el libro; algunos estados gravan distinto la comida para llevar",
+  "P113": "fila (sustituye la carne picada del RD 1021/2022) → «Ground beef (cooking)» · «155 °F (68 °C) for 17 seconds» · «FDA Food Code 2022, 3-401.11(A)(2)» · nota: todas las smash cocidas; sonda en una por tanda; cooked to order solo a petición y con consumer advisory (3-603.11)",
+  "P114": "fila (sustituye los 175 °C de la acrilamida) → «Ground beef (cold holding)» · «41 °F (5 °C) or below; raw beef below ready-to-eat food» · «FDA Food Code 2022 (3-501.16, 3-302.11)» · nota: compra la carne ya picada o en balls con el establishment number del proveedor; house-grind log si picas tú",
+  "P115": "US §6.8: sin límite federal para restaurantes; Prop 65 en California («ask your attorney»)",
+  "P116": "fila (sustituye los polares de la Orden de 1989) → «Frying oil» · «no federal limit on total polar materials (TPM)» · «Kit summary» · nota: filtra cada noche y cambia por la lectura de TPM o por el fabricante; el usado, a un renderer autorizado",
+  "P117": "fila (sustituye el SMI) → «Minimum wage» · «federal $7.25/h + your state» · «U.S. Department of Labor (dol.gov)» · nota: este plan presupuesta ≥ $15/h; teclea el suelo de tu estado en \"0. Assumptions\"",
+  "P118": "fila (sustituye el convenio) → «Labor cost / sales» · «about 30-32% with counter service» · «Kit estimate» · nota: sin servers ni propinas modeladas; el sueldo del dueño va en la fila del GM"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state/local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "hamburguesería (negocio)": "burger restaurant (título) · burger joint / burger shop (prosa)",
+  "smash burger · hamburguesa aplastada": "smash burger (nunca «smashed burger») · «smashed on the flat-top»",
+  "bola de carne": "ball (cruda, 3 oz) · puck · patty (el disco cocinado)",
+  "plancha · fry-top": "flat-top · griddle; NUNCA «fry-top»",
+  "smasher · espátula": "smash press / smasher · burger scraper / spatula",
+  "costra · bordes": "crust · lacy edges",
+  "pan de patata": "potato bun",
+  "simple · doble · triple": "single · double · triple",
+  "menú · combinado": "combo; nunca «value meal»",
+  "batido": "shake",
+  "línea de montaje · pase": "make line · expo",
+  "cocinero de plancha · de freidora": "grill cook · fry cook · line cook · shift lead",
+  "para llevar · plataforma": "take-out / to-go / pickup · third-party delivery marketplace",
+  "comensal equivalente · ticket": "covers · average check (excl. sales tax)",
+  "escandallo": "recipe costing · cost per burger · plate cost",
+  "carne picada 80/20": "ground beef (80/20) · ground chuck · blend: chuck, brisket, short rib",
+  "aviso al consumidor": "consumer advisory (disclosure + reminder)",
+  "contaminación cruzada": "cross-contact (alérgenos) · cross-contamination (patógenos)",
+  "merma de plancha": "cook loss / shrink",
+  "compuestos polares": "TPM (total polar materials)",
+  "75 °C · temperatura de cocción": "155 °F (68 °C) for 17 seconds (Food Code 3-401.11(A)(2))",
+  "14 alérgenos": "9 major allergens (US; UK 14)",
+  "licencia de apertura": "business license + certificate of occupancy",
+  "IVA · fianza": "sales tax · deposit",
+  "autónomo / SL": "LLC",
+  "menú del día": "lunch combo"
+ },
+ "pestanas_es_en": {
+  "BURP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "BURC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local, humos y gas": "Phase 2 - Hood & Permits",
+   "F3 - Carne, fritura y sanidad": "Phase 3 - Beef & Health",
+   "F4 - Personal y alérgenos": "Phase 4 - Staff & Allergens",
+   "F5 - Carta, marca y delivery": "Phase 5 - Menu, Brand, Delivery",
+   "F6 - Apertura y 90 días": "Phase 6 - Opening & 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US BURGER RESTAURANT BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del «Plan de Negocio: Hamburguesería Smash» de AI Chef Pro.": "This file is part of the Burger Restaurant Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — HAMBURGUESERÍA SMASH": "BURGER RESTAURANT STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Hamburguesería Smash": "HOW TO USE THIS WORKBOOK — Burger Restaurant Financial Projections",
+  "PLAN DE NEGOCIO: HAMBURGUESERÍA SMASH": "BURGER RESTAURANT BUSINESS PLAN: SMASH BURGERS, TAKE-OUT & DELIVERY",
+  "Inversión inicial estimada — hamburguesería de smash burgers con sala, para llevar y a domicilio": "Estimated Startup Costs — smash burger restaurant with counter service, 44 seats, take-out and delivery",
+  "Ajusta las cifras a tu proyecto: son las de un caso tipo en una ciudad media, sin traspaso. Pon tus presupuestos reales en las celdas de importe.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — hamburguesería de smash burgers con sala, para llevar y a domicilio": "Base case — smash burger restaurant: counter service, take-out and delivery",
+  "Punto de equilibrio mensual y diario — hamburguesería de smash burgers con sala, para llevar y a domicilio": "Monthly and daily break-even — smash burger restaurant with counter service, take-out and delivery",
+  "FASE 2: LOCAL, HUMOS, GAS Y LICENCIA (semanas 3-14)": "PHASE 2: SITE, HOOD, GAS & PERMITS (weeks 3-14)",
+  "FASE 3: CARNE, FRITURA Y REGISTRO SANITARIO (semanas 6-14)": "PHASE 3: BEEF, FRYERS & HEALTH PERMIT (weeks 6-14)",
+  "Proyecto técnico de actividad y de extracción, y dirección de obra": "Architect, MEP & hood drawings, plan review & permit fees",
+  "Obra del local con mostrador de pedidos y cocina a la vista, rótulo y fachada": "Build-out (second-generation space, 1,700 sq ft) with order counter, signage & facade",
+  "Conducto de extracción exclusivo hasta cubierta": "Hood exhaust duct to the roof & makeup air",
+  "Instalación eléctrica, cuadro y boletín": "Electrical service, panel & HVAC",
+  "Fontanería, separador de grasas, climatización e instalación de gas": "Plumbing, gas lines & grease interceptor",
+  "Plancha fry-top de acero a gas y tostador de pan": "Two 48\" gas flat-tops, bun toaster, smash presses & scrapers",
+  "Dos freidoras eléctricas de doble cuba y mantenedor de patatas": "Three gas fryers with filtration & fry station",
+  "Campana extractora con motor y filtros": "Type I hood with UL 300 fire suppression",
+  "Mesa refrigerada de montaje y bajo plancha refrigerado para las bolas": "Make-line unit, refrigerated chef base & cheese/holding station",
+  "Frío: armario de carne, armarios de cocina, congelador de patatas y nevera de bebidas": "Walk-in cooler, reach-ins, freezer & ice machine",
+  "Barra: batidora de batidos, arcón de helado, tirador de cerveza y botellero": "Shake machine, blenders & beverage station",
+  "Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías": "3-comp sink, dish machine, hand sinks, shelving & stainless",
+  "Utillaje: smashers, espátulas, básculas, sondas, medidor de compuestos polares y etiquetadora": "Smallwares (portion scale, ball portioner, probe thermometers, TPM tester, labels, to-go station)",
+  "Mobiliario de sala, barra de ventana y mostrador": "Furniture & seating (44 seats) and order counter",
+  "TPV con Veri*factu, pantalla de turnos, datáfono, impresora de comandas e integrador de plataformas": "POS, self-order kiosk, KDS, online ordering & delivery tablets",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal, licenses, food safety plan & pre-opening training",
+  "Marca, web, fotos y vídeo de lanzamiento": "Branding, website, photos & launch video",
+  "Stock inicial: carne, pan, patatas, aceite, salsas, envases y bebida": "Opening inventory (beef, buns, cheese, fries, oil, disposables, beverage)",
+  "Ventas de hamburguesas y cocina (sala, para llevar y a domicilio)": "Food sales (burgers, chicken, fries & sides: dine-in, take-out & delivery)",
+  "Ventas de bebida (refrescos, cerveza, batidos y agua)": "Beverage sales (soft drinks, shakes & beer)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property + workers' comp)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento de la campana extractora y el conducto, la plancha y el gas, las freidoras y el frío": "Maintenance (quarterly hood cleaning, fryers, flat-tops, refrigeration)",
+  "Software, TPV, integrador de plataformas, teléfono e internet": "Software, POS, kiosk & online ordering",
+  "Limpieza, lavandería, EPI y análisis de autocontrol": "Cleaning, linens & uniforms",
+  "Gestión de residuos y del aceite usado de las freidoras": "Waste, grease & used-oil pickup",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales, vigilancia de la salud y formación": "Training & permit renewals (CFPM, food handler cards, allergens, OSHA)",
+  "Titular — gerente y jefe/a de plancha: compra de la carne, carta y gestión": "Owner / GM",
+  "Cocinero/a de plancha: smash, costra y tiempos": "Grill cooks (smash station)",
+  "Cocinero/a de montaje y freidora": "Fry & prep cook",
+  "Encargado/a de mostrador y pedidos": "Shift lead",
+  "Auxiliar de sala y empaquetado": "Counter crew (cashier, expo, to-go packing)",
+  "Refuerzo de viernes a domingo: segunda plancha y empaquetado": "Weekend crew (part-time W-2)",
+  "Suplencias de vacaciones y descansos": "Dish & prep"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Comensales equivalentes al día, media del año: unos 53 en sala (mesas y barra de ventana) y unos 42 de para llevar y domicilio, que son los pedidos (unos 13 para recoger y 12 de plataforma al día) contando cada pedido como 1,7 comensales. Un sábado, unos 138 con los pedidos; un martes, unos 61. Contrástalo con el paso de gente de tu calle un viernes por la noche y un martes a mediodía",
+   "donde": [
+    "BURP · 0. Supuestos!C4"
+   ],
+   "fila": "Comensales/día (media del año 1)",
+   "valor_us": 195,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA, por comensal: en sala, la hamburguesa con patatas, bebida y algún extra, con el descuento del menú, deja unos 17,00 € con IVA (15,45 € sin IVA); el pedido para llevar (de media 29,10 € con IVA: casi dos menús) sale a 15,56 € por comensal equivalente y el de plataforma, con la carta un 15 % más cara (33,47 € con IVA), a 17,90 €. La media de los tres canales da 16,00 €. El precio con IVA está en la fila «PVP equivalente con IVA» de abajo",
+   "donde": [
+    "BURP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 16.5,
+   "pistas": [
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P01",
+    "P02",
+    "P03",
+    "P13",
+    "P14",
+    "P05",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "365 días menos los 52 lunes de cierre, 10 días de cierre en la segunda quincena de enero y 3 festivos sueltos (Navidad, Año Nuevo y Reyes). El año de la apertura, la rampa del arranque absorbe ese enero. Es el MISMO dato para la cuenta de resultados, el punto de equilibrio, los escenarios y las horas de personal",
+   "donde": [
+    "BURP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 360,
+   "pistas": [
+    "P16",
+    "P17",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "Clientela que repite y más pedidos para recoger el segundo año. Se aplica a los comensales con el mismo ticket; el personal NO sube con este porcentaje: sale de la hoja Personal",
+   "donde": [
+    "BURP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.06,
+   "pistas": [
+    "P11",
+    "P02",
+    "P03",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "Sobre el año 2. Conservador: el techo lo ponen la plancha, las 36 plazas los viernes y los sábados por la noche y los pedidos que caben en una hora punta",
+   "donde": [
+    "BURP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "valor_us": 0.04,
+   "pistas": [
+    "P03",
+    "P20",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Materia prima de la comida sobre sus ventas: un 28 %, el lado prudente. El escandallo teórico de la calculadora del pack sale en un 24,4 % de media ponderada (la smash doble con queso, en un 26,8 %; la ración de patatas congeladas, en un 8 %), pero la cuenta real es lo que compras frente a lo que vendes: entre la receta y la caja se pierden las bolas, el pan y las salsas que se tiran al cierre, las comidas del personal, las invitaciones, los errores y las reclamaciones de la plataforma y sus promociones (el dos por uno, la primera compra), unos 4 puntos en el caso. La carne es un precio estimado por el kit. Mide tu consumo el primer trimestre y cambia esta celda: cada punto vale unos 3.800 € al año",
+   "donde": [
+    "BURP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.34,
+   "pistas": [
+    "P09",
+    "P22",
+    "P01",
+    "P23",
+    "P24",
+    "P25",
+    "P14",
+    "P26",
+    "P27",
+    "P05",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "La lata de refresco ronda un 19 % de su precio de venta, el tercio de cerveza un 22 % y el batido un 18 %, pero en el menú la bebida se vende con descuento y la cerveza de tirador tiene merma: el caso cuenta un 25 %. Pide por escrito las condiciones de la cervecera (si te cede el tirador, el volumen mínimo y los descuentos)",
+   "donde": [
+    "BURP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.2,
+   "pistas": [
+    "P13",
+    "P29",
+    "P30",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Cajas de hamburguesa, cucuruchos de patatas, tarrinas de salsa, bolsas, precinto, papel, servilletas y guantes (unos 1,10 € por pedido que sale del local y 0,20 € por comensal de sala) y los envases para que el cliente se lleve lo que no consuma (Ley 1/2025, art. 8). El envase de plástico de un solo uso se cobra aparte en el tique (Ley 7/2022, art. 55)",
+   "donde": [
+    "BURP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.045,
+   "pistas": [
+    "P08",
+    "P09",
+    "P11",
+    "P32",
+    "P01",
+    "P02",
+    "P03",
+    "P14",
+    "P33",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "Ventas por PLATAFORMA con su reparto (Glovo, Just Eat, Uber Eats) sobre el total: unos 12 pedidos al día. Lo que se recoge en el local (unos 13 pedidos al día, por la web o por teléfono) NO paga comisión y no va aquí: empújalo. La hamburguesa viaja bien; las patatas, peor (cucurucho ventilado y fritas al final). Si la plataforma llegara al 33 % de las ventas, pagarías unos 12.300 € más de comisión al año",
+   "donde": [
+    "BURP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0.19,
+   "pistas": [
+    "P09",
+    "P35",
+    "P03",
+    "P14",
+    "P36",
+    "P05",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "Local de 90 m² que ya fue de restauración, con salida de humos a cubierta posible: cocina a la vista con la plancha y dos freidoras, mostrador de pedidos con pantalla de turnos, sala de 30 plazas y 6 taburetes en una barra de ventana, y una zona de empaquetado y de recogida de los repartidores junto a la puerta, en un barrio con vida de noche o una zona universitaria de una ciudad de 150.000 a 500.000 habitantes, sin traspaso: unos 16,7 € el m². El peso sobre las ventas lo calcula el propio libro en la fila «Alquiler / Ventas» del P&L",
+   "donde": [
+    "BURP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 4500,
+   "pistas": [
+    "P09",
+    "P38",
+    "P32",
+    "P12",
+    "P01",
+    "P03",
+    "P20",
+    "P39",
+    "P04",
+    "P40",
+    "P36",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Gas de la plancha, luz de las freidoras eléctricas, de la extracción (potente: la plancha y las freidoras echan mucha grasa), del frío y de la climatización, y agua. Pide el histórico del local",
+   "donde": [
+    "BURP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 1900,
+   "pistas": [
+    "P20",
+    "P39",
+    "P40",
+    "P42",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil de al menos 300.000 € y multirriesgo con incendio y avería del frío. Dile a la aseguradora que trabajas con una plancha de gas y dos freidoras: cambia la prima y las condiciones",
+   "donde": [
+    "BURP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 7500,
+   "pistas": [
+    "P09",
+    "P20",
+    "P39",
+    "P42",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual. Pide oferta a dos entidades y a una línea ICO antes de fijarlo; la plancha, las freidoras y el frío se pueden pagar con leasing o renting: compáralo",
+   "donde": [
+    "BURP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P08",
+    "P45",
+    "P32",
+    "P20",
+    "P39",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0061",
+   "es": "El primer año sólo intereses: la obra, el conducto de extracción y la cocina antes de facturar. Desde el segundo año se devuelve el principal: mira la holgura de caja de ese año en el Punto de Equilibrio",
+   "donde": [
+    "BURP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0,
+   "pistas": [
+    "P32",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0063",
+   "es": "Tres meses de costes fijos: el colchón para la rampa del arranque, que con el Mes 1 en enero va de enero a abril, y para agosto, cuando la ciudad se vacía",
+   "donde": [
+    "BURP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)",
+   "valor_us": 3,
+   "pistas": [
+    "P16"
+   ]
+  },
+  {
+   "id": "c0072",
+   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por la bebida que sale para llevar o a domicilio (es una entrega de bienes). El alcohol servido en sala va al reducido, como fija la línea de bebida del P&L. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. En las compras, el libro manda al general la parte de la bebida que declara la celda «Bebida que compras al 21 %» de esta hoja: la cerveza y los refrescos con azúcares o edulcorantes añadidos (también los zero), cuya factura va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
+   "donde": [
+    "BURP · 0. Supuestos!C40"
+   ],
+   "fila": "IVA repercutido/soportado general",
+   "valor_us": 0.08,
+   "pistas": [
+    "P08",
+    "P32",
+    "P12",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Obra con el mostrador y la cocina a la vista, conducto de extracción hasta cubierta, instalación eléctrica y de gas, fontanería, climatización, rótulo y fachada. Coeficientes de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades: confírmalo con tu asesor",
+   "donde": [
+    "BURP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P08",
+    "P47",
+    "P04",
+    "P40",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Plancha, freidoras, campana extractora, mesa refrigerada, frío, barra de bebidas, lavavajillas, utillaje, mobiliario y TPV: un 10 % anual, dentro del coeficiente máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades para la maquinaria (12 %) y para el mobiliario (10 %). Confírmalo con tu asesor",
+   "donde": [
+    "BURP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P08",
+    "P47",
+    "P48",
+    "P20",
+    "P39",
+    "P49",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "Aforo del local (plazas sentadas, con la barra de ventana)",
+   "donde": [
+    "BURP · 0. Supuestos!A51"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0088",
+   "es": "Plazas interiores: 30 en mesa y 6 taburetes en la barra de ventana. Quien se lleva el pedido o lo recibe en casa no ocupa mesa: por eso la rotación de la fila de arriba es más alta que la real de tu sala",
+   "donde": [
+    "BURP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas, con la barra de ventana)",
+   "valor_us": 44,
+   "pistas": [
+    "P03",
+    "P04",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0090",
+   "es": "Una hamburguesería que abre trae curiosos el primer mes, pero la clientela fija y la nota en las plataformas tardan un trimestre: el Mes 1 (enero) factura un 75 % de lo que facturará a los cuatro meses. Con 100 % se elimina la rampa",
+   "donde": [
+    "BURP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "valor_us": 0.75,
+   "pistas": [
+    "P22",
+    "P11",
+    "P51",
+    "P05",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0094",
+   "es": "Dos meses de renta antes de abrir: la obra, el conducto de extracción, la instalación de gas y la licencia. Si el banco te da el préstamo al empezar la obra, súmale los intereses de esos meses, que este libro no cuenta, y ten en cuenta que la carencia corre desde la firma",
+   "donde": [
+    "BURP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler ANTES de abrir (obra y licencias)",
+   "valor_us": 2,
+   "pistas": [
+    "P08",
+    "P45",
+    "P52",
+    "P32",
+    "P40",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0096",
+   "es": "Colchón sobre la obra y las instalaciones del local, que es donde aparecen las sorpresas (el conducto hasta cubierta, la potencia de las freidoras, la acometida de gas, el separador de grasas). Un banco no financia una reforma sin él",
+   "donde": [
+    "BURP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "valor_us": 0.1,
+   "pistas": [
+    "P45",
+    "P39",
+    "P40",
+    "P42",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0101",
+   "es": "Plazo de pago a los proveedores de carne, pan, patatas y bebida: lo que te financian. Negócialo por escrito: si el proveedor de carne te pide pago semanal, baja esta cifra",
+   "donde": [
+    "BURP · 0. Supuestos!C59"
+   ],
+   "fila": "Días medios de pago a proveedor",
+   "valor_us": 14,
+   "pistas": [
+    "P25",
+    "P14",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0118",
+   "es": "Las hamburgueserías van al convenio PROVINCIAL de hostelería: el art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería las nombra expresamente. Copia aquí el salario base del grupo más bajo de la tabla de TU provincia. Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "BURP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P08",
+    "P55",
+    "P51",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0145",
+   "es": "Proyecto de la actividad y del conducto de extracción, memoria para la licencia o la declaración responsable y certificado final de obra",
+   "donde": [
+    "BURP · Inversión Inicial!D7"
+   ],
+   "fila": "Proyecto técnico de actividad y de extracción, y dirección de obra",
+   "valor_us": 12000,
+   "propuesta_en": "Architect, MEP and hood drawings, plan review (Food Code 8-201.11) and permit fees. If you choose a variance for the sushi rice, ask your health department for the plan review fee of the HACCP plan: in some counties it can pass $2,000",
+   "propuesta_de": "GSUS-plan c0145 (SUSP Inversión Inicial!D7)",
+   "pistas": [
+    "P56",
+    "P40",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0148",
+   "es": "Mostrador de pedidos con la cocina a la vista, cocina alicatada, suelo antideslizante, aseos (uno adaptado), falsos techos y aislamiento acústico, más el rótulo y la fachada. Estimación del kit: pide dos presupuestos",
+   "donde": [
+    "BURP · Inversión Inicial!D8"
+   ],
+   "fila": "Obra del local con mostrador de pedidos y cocina a la vista, rótulo y fachada",
+   "valor_us": 67500,
+   "pistas": [
+    "P03",
+    "P04",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0150",
+   "es": "Conducto exclusivo hasta la cubierta para la plancha y las freidoras, que echan mucha grasa: Madrid pide superar en 1 m lo que haya en 15 m (Ordenanza 4/2021). Ningún fabricante da precio por metro: pide oferta con tu proyecto",
+   "donde": [
+    "BURP · Inversión Inicial!D9"
+   ],
+   "fila": "Conducto de extracción exclusivo hasta cubierta",
+   "valor_us": 8000,
+   "pistas": [
+    "P59",
+    "P20",
+    "P39",
+    "P40",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0152",
+   "es": "Las freidoras eléctricas suelen pedir corriente trifásica, más el frío, la extracción y la climatización. Pregunta la potencia disponible ANTES de firmar: una acometida nueva tarda",
+   "donde": [
+    "BURP · Inversión Inicial!D10"
+   ],
+   "fila": "Instalación eléctrica, cuadro y boletín",
+   "valor_us": 12000,
+   "pistas": [
+    "P39",
+    "P40",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0154",
+   "es": "Agua fría y caliente en la cocina, desagües con separador de grasas, climatización de la sala y la instalación de gas de la plancha por una empresa instaladora habilitada, con su certificado (RD 919/2006)",
+   "donde": [
+    "BURP · Inversión Inicial!D11"
+   ],
+   "fila": "Fontanería, separador de grasas, climatización e instalación de gas",
+   "valor_us": 12000,
+   "pistas": [
+    "P08",
+    "P20",
+    "P42",
+    "P53",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0156",
+   "es": "La plancha de acero (fry-top) donde se aplasta cada bola: una de 60 a 80 cm va de unos 771 a 1.399 € sin IVA según la gama; el caso cuenta una de 100 cm, más el tostador del pan. Estimación del kit",
+   "donde": [
+    "BURP · Inversión Inicial!D12"
+   ],
+   "fila": "Plancha fry-top de acero a gas y tostador de pan",
+   "valor_us": 10000,
+   "pistas": [
+    "P08",
+    "P09",
+    "P10",
+    "P23",
+    "P24",
+    "P20",
+    "P25",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0158",
+   "es": "Dos freidoras para no mezclar las patatas con los rebozados (alérgenos y contacto cruzado) y el mantenedor de patatas. Las de gama ligera bajan de 300 € sin IVA, pero aguantan poco en un servicio fuerte: pide la ficha técnica",
+   "donde": [
+    "BURP · Inversión Inicial!D13"
+   ],
+   "fila": "Dos freidoras eléctricas de doble cuba y mantenedor de patatas",
+   "valor_us": 9000,
+   "pistas": [
+    "P08",
+    "P09",
+    "P10",
+    "P64",
+    "P39",
+    "P14",
+    "P65",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0160",
+   "es": "Campana extractora con motor y filtros de grasa sobre la plancha y las freidoras (una de 1,5 a 2 m va de unos 543 a 813 € sin IVA; el caso cuenta una de 3 m)",
+   "donde": [
+    "BURP · Inversión Inicial!D14"
+   ],
+   "fila": "Campana extractora con motor y filtros",
+   "valor_us": 12000,
+   "pistas": [
+    "P08",
+    "P09",
+    "P10",
+    "P01",
+    "P20",
+    "P39",
+    "P40",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0162",
+   "es": "La línea de montaje con los ingredientes en frío y el bajo plancha con cajones para tener las bolas a mano y en frío durante el servicio (una mesa refrigerada va de unos 1.177 a 1.948 € sin IVA)",
+   "donde": [
+    "BURP · Inversión Inicial!D15"
+   ],
+   "fila": "Mesa refrigerada de montaje y bajo plancha refrigerado para las bolas",
+   "valor_us": 6500,
+   "pistas": [
+    "P08",
+    "P09",
+    "P10",
+    "P24",
+    "P20",
+    "P68",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0164",
+   "es": "Armario de carne a 2 °C o menos (la carne picada va a esa temperatura y los preparados de carne, a 4 °C o menos: RD 1021/2022, art. 4.1), armarios refrigerados de cocina, congelador de patatas y nevera de bebidas",
+   "donde": [
+    "BURP · Inversión Inicial!D16"
+   ],
+   "fila": "Frío: armario de carne, armarios de cocina, congelador de patatas y nevera de bebidas",
+   "valor_us": 20800,
+   "pistas": [
+    "P08",
+    "P70",
+    "P71",
+    "P14",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0166",
+   "es": "La batidora y el arcón de helado de los batidos, el tirador de cerveza (si no te lo cede la cervecera) y el botellero",
+   "donde": [
+    "BURP · Inversión Inicial!D17"
+   ],
+   "fila": "Barra: batidora de batidos, arcón de helado, tirador de cerveza y botellero",
+   "valor_us": 4000,
+   "pistas": [
+    "P29",
+    "P30",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0170",
+   "es": "Smashers (las prensas para aplastar la bola), espátulas y raspadores, básculas de porcionado, termómetros sonda, el medidor de compuestos polares del aceite (de 399 a 499 € sin IVA; tu APPCC puede elegir tiras), cubetas GN, dispensadores de salsa y la etiquetadora",
+   "donde": [
+    "BURP · Inversión Inicial!D19"
+   ],
+   "fila": "Utillaje: smashers, espátulas, básculas, sondas, medidor de compuestos polares y etiquetadora",
+   "valor_us": 4000,
+   "pistas": [
+    "P08",
+    "P09",
+    "P10",
+    "P23",
+    "P24",
+    "P71",
+    "P74",
+    "P75",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0172",
+   "es": "Mesas y sillas para 30 plazas, 6 taburetes en la barra de ventana y el mueble del mostrador",
+   "donde": [
+    "BURP · Inversión Inicial!D20"
+   ],
+   "fila": "Mobiliario de sala, barra de ventana y mostrador",
+   "valor_us": 11000,
+   "pistas": [
+    "P04",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0174",
+   "es": "Software de facturación conforme a Veri*factu, la pantalla que llama los turnos, datáfono, impresora de cocina y el integrador que junta los pedidos de las plataformas",
+   "donde": [
+    "BURP · Inversión Inicial!D21"
+   ],
+   "fila": "TPV con Veri*factu, pantalla de turnos, datáfono, impresora de comandas e integrador de plataformas",
+   "valor_us": 7000,
+   "pistas": [
+    "P08",
+    "P48",
+    "P03",
+    "P49",
+    "P05",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0176",
+   "es": "SL unipersonal, licencia o declaración responsable, tasas municipales, registro sanitario autonómico y redacción del plan APPCC con la carne picada, la cocción y la freidora. Las tasas no llevan IVA; los honorarios sí: cambia la columna de al lado si tu presupuesto es sobre todo de honorarios",
+   "donde": [
+    "BURP · Inversión Inicial!D22"
+   ],
+   "fila": "Constitución de la SL, licencia, tasas, registro sanitario y APPCC",
+   "valor_us": 10500,
+   "pistas": [
+    "P08",
+    "P70",
+    "P71",
+    "P39",
+    "P79",
+    "P56",
+    "P75",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0179",
+   "es": "Identidad, web con la carta, los alérgenos y los pedidos para recoger, sesión de fotos y el vídeo de la apertura (la smash se vende en vídeo)",
+   "donde": [
+    "BURP · Inversión Inicial!D23"
+   ],
+   "fila": "Marca, web, fotos y vídeo de lanzamiento",
+   "valor_us": 5500,
+   "pistas": [
+    "P45",
+    "P64",
+    "P03",
+    "P23",
+    "P65",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0181",
+   "es": "Carne, pan, patatas, aceite, salsas, el primer pedido de cajas y bolsas para llevar y a domicilio y la bebida",
+   "donde": [
+    "BURP · Inversión Inicial!D24"
+   ],
+   "fila": "Stock inicial: carne, pan, patatas, aceite, salsas, envases y bebida",
+   "valor_us": 6000,
+   "pistas": [
+    "P03",
+    "P25",
+    "P74",
+    "P14",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0215",
+   "es": "Hamburguesas, patatas, entrantes y postres: en sala, alrededor del 54 % de las ventas; para llevar, del 22 %, y por plataforma, del 24 %. Todo al 10 % de IVA, se coma en el local o salga de él (art. 91.Uno.1.1.º y 2.2.º de la Ley 37/1992)",
+   "donde": [
+    "BURP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de hamburguesas y cocina (sala, para llevar y a domicilio)",
+   "pistas": [
+    "P08",
+    "P32",
+    "P14",
+    "P05",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0241",
+   "es": "La limpieza de la campana extractora y del conducto al menos una vez al año (Madrid lo exige en su Ordenanza 4/2021, art. 23; mira la de tu ayuntamiento), la revisión de la plancha y de la instalación de gas, las freidoras y el frigorista para los armarios, el congelador y la mesa refrigerada",
+   "donde": [
+    "BURP · PyG 3 Años!F27"
+   ],
+   "fila": "Mantenimiento de la campana extractora y el conducto, la plancha y el gas, las freidoras y el frío",
+   "valor_us": 4000,
+   "pistas": [
+    "P08",
+    "P59",
+    "P20",
+    "P39",
+    "P40",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Ficha de Google Business, redes sociales con vídeo (la smash se vende en vídeo), fotos y las promociones de las plataformas; la campaña de apertura va en la inversión",
+   "donde": [
+    "BURP · PyG 3 Años!F28"
+   ],
+   "fila": "Marketing y publicidad",
+   "valor_us": 6500,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0245",
+   "es": "Cuota del TPV con Veri*factu, el integrador que junta los pedidos de las plataformas en una pantalla, teléfono e internet",
+   "donde": [
+    "BURP · PyG 3 Años!F29"
+   ],
+   "fila": "Software, TPV, integrador de plataformas, teléfono e internet",
+   "valor_us": 3300,
+   "pistas": [
+    "P08",
+    "P48",
+    "P03",
+    "P49",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0249",
+   "es": "La tasa de basuras, el cartón de las cajas y el aceite usado de las freidoras, que recoge un gestor autorizado: nunca al desagüe ni de vuelta a la cocina. Pon las de tu ayuntamiento",
+   "donde": [
+    "BURP · PyG 3 Años!F31"
+   ],
+   "fila": "Gestión de residuos y del aceite usado de las freidoras",
+   "valor_us": 2400,
+   "pistas": [
+    "P08",
+    "P84",
+    "P74",
+    "P39",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0255",
+   "es": "El plan de prevención es obligatorio (Ley 31/1995): quemaduras de la plancha y de las freidoras, cortes, resbalones con la grasa y cargas; los reconocimientos médicos de la plantilla y la formación en higiene de la carne picada y en alérgenos",
+   "donde": [
+    "BURP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales, vigilancia de la salud y formación",
+   "valor_us": 2100,
+   "pistas": [
+    "P08",
+    "P64",
+    "P20",
+    "P70",
+    "P39",
+    "P42",
+    "P85",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0279",
+   "es": "Suelo del margen tras TODOS los costes variables (mercancía, envases, plataforma, medios de pago y varios). Con casi un cuarto de las ventas por plataforma, una hamburguesería deja menos que una sala sola. Estimación del kit",
+   "donde": [
+    "BURP · PyG 3 Años!F50"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.52,
+   "pistas": [
+    "P51",
+    "P33",
+    "P05",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0282",
+   "es": "Techo de la materia prima sobre ventas: la carne es más de la mitad de la compra de comida y su precio manda. Estimación del kit",
+   "donde": [
+    "BURP · PyG 3 Años!F52"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.33,
+   "pistas": [
+    "P87"
+   ]
+  },
+  {
+   "id": "c0284",
+   "es": "Techo del personal sobre ventas con plancha, montaje, mostrador y dos servicios. Estimación del kit",
+   "donde": [
+    "BURP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.36,
+   "pistas": [
+    "P20",
+    "P04",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0288",
+   "es": "Suelo de resultado neto a régimen para que el plan se sostenga. Una hamburguesería bien llevada deja en torno a un 8-10 %. Estimación del kit",
+   "donde": [
+    "BURP · PyG 3 Años!F55"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05,
+   "pistas": [
+    "P51",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0322",
+   "es": "Servicios completos por plaza y día que puedes hacer con comidas y cenas, pedido en el mostrador y estancias de 30-40 minutos. Es el techo físico del local, no un objetivo",
+   "donde": [
+    "BURP · Punto Equilibrio!E25"
+   ],
+   "fila": "Rotaciones al día que da el local como máximo",
+   "valor_us": 5,
+   "pistas": [
+    "P03",
+    "P04",
+    "P90"
+   ]
+  },
+  {
+   "id": "c0363",
+   "es": "El jefe de plancha y gerente: compra la carne y elige el blend (la mezcla de cortes) y los proveedores, firma la carta y el APPCC, lleva la plancha en el servicio fuerte, las plataformas y la gestión. Como administrador de la SL cotiza en el régimen de autónomos: el libro le imputa el 33 % de Seguridad Social sobre 14 pagas como si fuera nómina, que es el lado prudente. Confirma con tu gestoría la cuota real y si te aplica la reducida de inicio",
+   "donde": [
+    "BURP · Personal!J5"
+   ],
+   "fila": "Titular — gerente y jefe/a de plancha: compra de la carne, carta y gestión",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 4500
+   },
+   "pistas": [
+    "P08",
+    "P55",
+    "P84",
+    "P20",
+    "P70",
+    "P79",
+    "P42",
+    "P75",
+    "P46",
+    "P05",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0365",
+   "es": "La plancha en los dos servicios: aplasta cada bola, saca la costra y lleva los tiempos de la comanda. Es inversión, no gasto: si sólo el titular sabe llevar la plancha, una baja la cierra",
+   "donde": [
+    "BURP · Personal!J6"
+   ],
+   "fila": "Cocinero/a de plancha: smash, costra y tiempos",
+   "valor_us": {
+    "B": 2,
+    "C": 1.0,
+    "D": 5892
+   },
+   "pistas": [
+    "P23",
+    "P24",
+    "P20",
+    "P92",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0367",
+   "es": "La línea de montaje, las patatas, las salsas, el porcionado de las bolas y la mise en place",
+   "donde": [
+    "BURP · Personal!J7"
+   ],
+   "fila": "Cocinero/a de montaje y freidora",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 2773
+   },
+   "pistas": [
+    "P24",
+    "P14",
+    "P68",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0369",
+   "es": "Todo el año: caja, pantalla de turnos, los pedidos para recoger, las tablets de las plataformas, el empaquetado y la información de alérgenos",
+   "donde": [
+    "BURP · Personal!J8"
+   ],
+   "fila": "Encargado/a de mostrador y pedidos",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 3639
+   },
+   "pistas": [
+    "P64",
+    "P03",
+    "P85",
+    "P65",
+    "P05",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0371",
+   "es": "30 horas a la semana: lleva las bandejas a la mesa, recoge, friega y ayuda a empaquetar en las horas fuertes",
+   "donde": [
+    "BURP · Personal!J9"
+   ],
+   "fila": "Auxiliar de sala y empaquetado",
+   "valor_us": {
+    "B": 3,
+    "C": 0.75,
+    "D": 6044
+   },
+   "pistas": [
+    "P96"
+   ]
+  },
+  {
+   "id": "c0373",
+   "es": "Segunda plancha y empaquetado de las noches fuertes. Este plan NO tiene reparto propio: si lo pones, el repartidor va con contrato laboral del convenio de hostelería, nunca como autónomo",
+   "donde": [
+    "BURP · Personal!J10"
+   ],
+   "fila": "Refuerzo de viernes a domingo: segunda plancha y empaquetado",
+   "valor_us": {
+    "B": 3,
+    "C": 0.4,
+    "D": 3223
+   },
+   "pistas": [
+    "P08",
+    "P55",
+    "P20",
+    "P79",
+    "P46",
+    "P36",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0389",
+   "es": "Horas con el local abierto al público, sumando las comidas (13:00-16:30) y las cenas (20:00-24:00). La tarde de cierre entre los dos servicios no se cuenta",
+   "donde": [
+    "BURP · Personal!J21"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "valor_us": 11,
+   "pistas": [
+    "P98"
+   ]
+  },
+  {
+   "id": "c0391",
+   "es": "Presencia media a la vez entre la plancha, el montaje y la freidora, el mostrador y la sala. El viernes y el sábado por la noche hacen falta seis (dos en la plancha, uno en montaje y freidora, uno en el mostrador, uno empaquetando y uno llevando bandejas): entran el refuerzo y el auxiliar (el cuadrante anual no lo ve: ponlo en el turno)",
+   "donde": [
+    "BURP · Personal!J22"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "valor_us": 3.5,
+   "pistas": [
+    "P20",
+    "P39",
+    "P04",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0393",
+   "es": "El porcionado de las bolas, las salsas, la verdura cortada y reponer la línea antes de abrir",
+   "donde": [
+    "BURP · Personal!J23"
+   ],
+   "fila": "Horas de producción al día ANTES de abrir",
+   "valor_us": 2.5,
+   "pistas": [
+    "P32",
+    "P24",
+    "P100"
+   ]
+  },
+  {
+   "id": "c0395",
+   "es": "El cocinero de montaje con el de plancha o el titular. El cierre, la limpieza de la plancha y de las freidoras y las compras quedan fuera de este cuadrante: son el margen entre las horas contratadas y las necesarias",
+   "donde": [
+    "BURP · Personal!J24"
+   ],
+   "fila": "Personas en el turno de producción",
+   "valor_us": 2,
+   "pistas": [
+    "P20",
+    "P39",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0411",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —las hamburguesas y las patatas incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o los zumos con azúcares o edulcorantes añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica a la parte de la bebida que declara la columna H de su línea en el P&L. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "BURP · Instrucciones!A8"
+   ],
+   "pistas": [
+    "P08",
+    "P10",
+    "P22",
+    "P11",
+    "P32",
+    "P12",
+    "P01",
+    "P14",
+    "P30",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0413",
+   "es": "6. La hoja «Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. Su Mes 1 es ENERO, en el orden del calendario: la rampa del arranque va de enero a abril, enero es el mes más flojo (cierre de 10 días y cuesta de enero), agosto baja con la ciudad vacía y mayo es el pico; por eso el fondo de maniobra cuenta. Si abres en otro mes, gira la fila de estacionalidad. El saldo mínimo del año nunca puede salir en rojo.",
+   "donde": [
+    "BURP · Instrucciones!A10"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "pistas": [
+    "P12",
+    "P16",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0415",
+   "es": "8. El plan de negocio en Word de este pack cita las cifras de este Excel: si cambias una celda verde, el Excel manda. La calculadora de la carne, las patatas y el escandallo del pack va aparte: saca el coste por kilo útil de la carne, las bolas que salen de cada kilo, el coste de cada ración de patatas y del aceite, y ESCANDALLA cada hamburguesa y el menú en cada canal. No copies el food cost de una hamburguesa en la hoja de Supuestos: la celda «Coste de mercancía sobre las ventas de COMIDA» es la media ponderada de TODA la carta más lo que se tira al cierre, las comidas del personal y las promociones de la plataforma, y por eso sale más alta que el escandallo teórico. Con los escandallos de tu carta, comprueba que esa media cuadra.",
+   "donde": [
+    "BURP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P12",
+    "P24",
+    "P13",
+    "P74",
+    "P14",
+    "P05",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0433",
+   "es": "Mes 1 del plan",
+   "donde": [
+    "BURP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0434",
+   "es": "Enero",
+   "donde": [
+    "BURP · Instrucciones!B35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P16",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Decisión del plan",
+   "donde": [
+    "BURP · Instrucciones!C35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "En el orden del calendario: la rampa cae sobre enero-abril, enero es el mes más flojo y mayo el pico. Si abres en otro mes, gira la fila de estacionalidad de la Tesorería",
+   "donde": [
+    "BURP · Instrucciones!D35"
+   ],
+   "fila": "Mes 1 del plan",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P16",
+    "P106"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "Hamburguesa en el reparto a domicilio",
+   "donde": [
+    "BURP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P36",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "El plato más pedido por tercer año",
+   "donde": [
+    "BURP · Instrucciones!B36"
+   ],
+   "fila": "Hamburguesa en el reparto a domicilio",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P03",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0439",
+   "es": "Gastrómetro de Just Eat 2025, publicado en prensa en diciembre de 2025",
+   "donde": [
+    "BURP · Instrucciones!C36"
+   ],
+   "fila": "Hamburguesa en el reparto a domicilio",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P05",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0440",
+   "es": "Por eso el caso cuenta un 24 % de las ventas por plataforma, con techo",
+   "donde": [
+    "BURP · Instrucciones!D36"
+   ],
+   "fila": "Hamburguesa en el reparto a domicilio",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P05",
+    "P107"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "Smash y menú en carta",
+   "donde": [
+    "BURP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P23",
+    "P13",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "11,50-13,00 € la hamburguesa · 13,90-15,00 € el menú",
+   "donde": [
+    "BURP · Instrucciones!B37"
+   ],
+   "fila": "Smash y menú en carta",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P09",
+    "P01",
+    "P13",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0443",
+   "es": "Cartas de una cadena de smash burgers en Málaga y Barcelona leídas en octubre de 2026",
+   "donde": [
+    "BURP · Instrucciones!C37"
+   ],
+   "fila": "Smash y menú en carta",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P59",
+    "P23",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0444",
+   "es": "El caso: menú de smash doble con patatas y bebida a 15,90 € con IVA",
+   "donde": [
+    "BURP · Instrucciones!D37"
+   ],
+   "fila": "Smash y menú en carta",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P09",
+    "P10",
+    "P01",
+    "P23",
+    "P13",
+    "P14",
+    "P108"
+   ]
+  },
+  {
+   "id": "c0445",
+   "es": "Bola de carne de una smash",
+   "donde": [
+    "BURP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P23",
+    "P24",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0446",
+   "es": "80-100 g",
+   "donde": [
+    "BURP · Instrucciones!B38"
+   ],
+   "fila": "Bola de carne de una smash",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "Cartas de hamburgueserías de smash leídas en octubre de 2026",
+   "donde": [
+    "BURP · Instrucciones!C38"
+   ],
+   "fila": "Bola de carne de una smash",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P51",
+    "P23",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0448",
+   "es": "El caso usa bolas de 100 g: la smash doble lleva dos",
+   "donde": [
+    "BURP · Instrucciones!D38"
+   ],
+   "fila": "Bola de carne de una smash",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P23",
+    "P24",
+    "P109"
+   ]
+  },
+  {
+   "id": "c0449",
+   "es": "Hamburguesas por kilo de carne",
+   "donde": [
+    "BURP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0450",
+   "es": "10 bolas de 100 g",
+   "donde": [
+    "BURP · Instrucciones!B39"
+   ],
+   "fila": "Hamburguesas por kilo de carne",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P24",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0451",
+   "es": "Cálculo de la calculadora del pack",
+   "donde": [
+    "BURP · Instrucciones!C39"
+   ],
+   "fila": "Hamburguesas por kilo de carne",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0452",
+   "es": "Cinco hamburguesas dobles. Con la merma de cierre salen menos: pesa tus bolas y lleva tus gramos a la calculadora",
+   "donde": [
+    "BURP · Instrucciones!D39"
+   ],
+   "fila": "Hamburguesas por kilo de carne",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P24",
+    "P110"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "Comisión de la plataforma con su reparto",
+   "donde": [
+    "BURP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P36",
+    "P05",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "13-35 % más IVA",
+   "donde": [
+    "BURP · Instrucciones!B40"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "Guías del sector, 2025-2026: compruébalo en tu contrato",
+   "donde": [
+    "BURP · Instrucciones!C40"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P46",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "El plan básico de Uber Eats ronda el 30 %. Lo que se recoge en el local no paga comisión",
+   "donde": [
+    "BURP · Instrucciones!D40"
+   ],
+   "fila": "Comisión de la plataforma con su reparto",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P35",
+    "P05",
+    "P111"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "IVA de la hamburguesería",
+   "donde": [
+    "BURP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P51",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "10 % en la venta · 21 % la cerveza y los refrescos para llevar",
+   "donde": [
+    "BURP · Instrucciones!B41"
+   ],
+   "fila": "IVA de la hamburguesería",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P30",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "Ley 37/1992, art. 91.Uno.1.1.º, 91.Uno.2.2.º y 91.Dos.1.1.º",
+   "donde": [
+    "BURP · Instrucciones!C41"
+   ],
+   "fila": "IVA de la hamburguesería",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "La comida, al 10 % en sala, para llevar y a domicilio. La cerveza y los refrescos con azúcares o edulcorantes añadidos (también los zero) que salen del local, al 21 %. El queso, el huevo, la leche, la patata fresca y la verdura se compran al 4 %; el pan de hamburguesa no es pan común: va al 10 %",
+   "donde": [
+    "BURP · Instrucciones!D41"
+   ],
+   "fila": "IVA de la hamburguesería",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P32",
+    "P25",
+    "P14",
+    "P26",
+    "P30",
+    "P112"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "Carne picada",
+   "donde": [
+    "BURP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P70",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "2 °C o menos · del día si la picas tú",
+   "donde": [
+    "BURP · Instrucciones!B42"
+   ],
+   "fila": "Carne picada",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P71",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "Real Decreto 1021/2022, arts. 4.1 y 7.2",
+   "donde": [
+    "BURP · Instrucciones!C42"
+   ],
+   "fila": "Carne picada",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "Los preparados de carne (la bola salada o aliñada antes de la plancha), a 4 °C o menos. Si picas en el local, sólo lo que vayas a vender ese día: nunca de un día para otro",
+   "donde": [
+    "BURP · Instrucciones!D42"
+   ],
+   "fila": "Carne picada",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P32",
+    "P24",
+    "P20",
+    "P71",
+    "P113"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "Temperatura de fritura",
+   "donde": [
+    "BURP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P114"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "Por debajo de 175 °C",
+   "donde": [
+    "BURP · Instrucciones!B43"
+   ],
+   "fila": "Temperatura de fritura",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P71",
+    "P114"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "Reglamento (UE) 2017/2158, anexo II, parte A",
+   "donde": [
+    "BURP · Instrucciones!C43"
+   ],
+   "fila": "Temperatura de fritura",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P114"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "Contra la acrilamida: patatas guardadas a más de 6 °C, la fresca en remojo o escaldada y una guía de colores a la vista del personal",
+   "donde": [
+    "BURP · Instrucciones!D43"
+   ],
+   "fila": "Temperatura de fritura",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P71",
+    "P115",
+    "P14",
+    "P114"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "Aceite de fritura",
+   "donde": [
+    "BURP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P74",
+    "P116"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "Menos de un 25 % de compuestos polares",
+   "donde": [
+    "BURP · Instrucciones!B44"
+   ],
+   "fila": "Aceite de fritura",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P74",
+    "P116"
+   ]
+  },
+  {
+   "id": "c0471",
+   "es": "Orden de 26 de enero de 1989, art. 6.3",
+   "donde": [
+    "BURP · Instrucciones!C44"
+   ],
+   "fila": "Aceite de fritura",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P16",
+    "P116"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "Cámbialo antes de llegar ahí y anota cada cambio; el usado, a un gestor autorizado. Tu APPCC elige cómo lo controlas: tiras, medidor o cambio por frecuencia",
+   "donde": [
+    "BURP · Instrucciones!D44"
+   ],
+   "fila": "Aceite de fritura",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P84",
+    "P32",
+    "P75",
+    "P116"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "Salario mínimo interprofesional 2026",
+   "donde": [
+    "BURP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P117"
+   ]
+  },
+  {
+   "id": "c0474",
+   "es": "1.221 € al mes en 14 pagas",
+   "donde": [
+    "BURP · Instrucciones!B45"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P09",
+    "P55",
+    "P42",
+    "P117"
+   ]
+  },
+  {
+   "id": "c0475",
+   "es": "Real Decreto 126/2026",
+   "donde": [
+    "BURP · Instrucciones!C45"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P117"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "A prorrata en jornada parcial",
+   "donde": [
+    "BURP · Instrucciones!D45"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P117"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "BURP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P55",
+    "P46",
+    "P118"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "Provincial de hostelería",
+   "donde": [
+    "BURP · Instrucciones!B46"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P118"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería, art. 4",
+   "donde": [
+    "BURP · Instrucciones!C46"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P08",
+    "P118"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Nombra expresamente las hamburgueserías. Copia tu tabla salarial en la celda de Supuestos",
+   "donde": [
+    "BURP · Instrucciones!D46"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P105",
+    "P51",
+    "P118"
+   ]
+  },
+  {
+   "id": "c0519",
+   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en sala, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); la parte de la bebida que sale para llevar o a domicilio y declara la columna H de su línea (cerveza y refrescos con azúcares o edulcorantes añadidos, también los zero), al general (art. 91.Uno.1.1.º a y b); la comida, también la que sale para llevar o a domicilio, al reducido (art. 91.Uno.1.1.º y 2.2.º)",
+   "donde": [
+    "BURP · Tesorería 12 meses!O16"
+   ],
+   "fila": "IVA repercutido del mes (memoria)",
+   "pistas": [
+    "P08",
+    "P32",
+    "P30"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GR": {
+   "salida": "scripts/productos-digitales/business-plans-en-15/textos_en/GR.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 41,
+   "cadenas": [
+    {
+     "id": "c0005",
+     "es": "Comensales/día (media del año 1)",
+     "en_actual": "Covers per day (year-1 average)",
+     "de": "GR c0005 (SUSP 0. Supuestos!A4)",
+     "donde": [
+      "BURP · 0. Supuestos!A4"
+     ]
+    },
+    {
+     "id": "c0030",
+     "es": "Comisión de la plataforma con su reparto sobre lo que vende ese canal: el plan básico de Uber Eats ronda el 30 % más IVA, Glovo va del 15 al 35 % según la zona y Just Eat, del 13 al 35 %. Compruébala en tu contrato. Si repartes tú, pon 0 y suma el repartidor, con contrato laboral, a la hoja Personal",
+     "en_actual": "The example uses 25%, a Plus plan on DoorDash or Uber Eats (the Basic plan is about 15% with little visibility, Premier is 30%, and app pickup orders add 6-10%). Check your contract. If you deliver yourself, enter 0 and add the driver to the \"Staffing\" tab as a W-2 employee, with hired and non-owned auto insurance (check your state)",
+     "de": "GR c0030 (SUSP 0. Supuestos!C17)",
+     "donde": [
+      "BURP · 0. Supuestos!C17"
+     ]
+    },
+    {
+     "id": "c0032",
+     "es": "Tarjeta y bizum sobre el total facturado",
+     "en_actual": "Card and mobile wallet (contactless) processing fees on total sales. Ask your POS provider for its rate",
+     "de": "GR c0032 (SUSP 0. Supuestos!C18)",
+     "donde": [
+      "BURP · 0. Supuestos!C18"
+     ]
+    },
+    {
+     "id": "c0044",
+     "es": "Dos meses de renta, lo habitual en un contrato de local de negocio: compruébalo con tu abogado",
+     "en_actual": "Security deposit, in months of rent. The example uses two; commercial leases commonly ask for one to three, and some landlords also want a personal guarantee: check it with your attorney",
+     "de": "GR c0044 (SUSP 0. Supuestos!C25)",
+     "donde": [
+      "BURP · 0. Supuestos!C25"
+     ]
+    },
+    {
+     "id": "c0050",
+     "es": "Colchón de gasto corriente no presupuestado (pequeñas reparaciones, utillaje que se rompe, pruebas de carta)",
+     "en_actual": "Cushion for unbudgeted running costs (small repairs, broken smallwares, menu tests)",
+     "de": "GR c0050 (SUSP 0. Supuestos!C28)",
+     "donde": [
+      "BURP · 0. Supuestos!C28"
+     ]
+    },
+    {
+     "id": "c0053",
+     "es": "Aportación de los socios. Un banco pide entre el 25 y el 30 % de la necesidad de caja con dinero propio",
+     "en_actual": "Owner's cash. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) toward the cash need",
+     "de": "GR c0053 (SUSP 0. Supuestos!C30)",
+     "donde": [
+      "BURP · 0. Supuestos!C30"
+     ]
+    },
+    {
+     "id": "c0055",
+     "es": "Principal solicitado. La hoja de Financiación compara lo que aportas con la necesidad de caja de la hoja de inversión y te dice si sobra o falta: ajústalo con ese dato",
+     "en_actual": "Principal requested. The \"Financing\" tab compares what you put in with the cash need on \"Startup Costs\" and tells you whether you have a surplus or a shortfall: adjust the loan with that figure. The example is an SBA 7(a) loan, which you apply for through your lender (SBA Microloans go up to $50,000)",
+     "de": "GR c0055 (SUSP 0. Supuestos!C31)",
+     "donde": [
+      "BURP · 0. Supuestos!C31"
+     ]
+    },
+    {
+     "id": "c0092",
+     "es": "Cuatro meses hasta el ritmo de crucero: de enero a abril",
+     "en_actual": "Four months to reach cruising speed: January to April",
+     "de": "GSUS-plan c0092 (SUSP 0. Supuestos!C53)",
+     "donde": [
+      "BURP · 0. Supuestos!C53"
+     ]
+    },
+    {
+     "id": "c0099",
+     "es": "Media ponderada: la sala y lo que se recoge en el local cobran al momento y la plataforma liquida cada semana o cada quince días lo que vende por ella (un 24 % de las ventas). Con liquidación semanal salen unos 2 días",
+     "en_actual": "Weighted average: dine-in and pickup are paid on the spot, while delivery marketplaces settle weekly what they sell (15% of sales). With weekly payouts that is about 2 days",
+     "de": "GSUS-plan c0099 (SUSP 0. Supuestos!C58)",
+     "donde": [
+      "BURP · 0. Supuestos!C58"
+     ]
+    },
+    {
+     "id": "c0103",
+     "es": "Mes de la TESORERÍA en el que sale la paga extra de verano: julio es el Mes 7, porque el Mes 1 del plan es enero",
+     "en_actual": "Month of the 12-Month Cash Flow in which a summer extra payment falls. It only matters if you enter more than 12 pay periods; with 12 there are no extra payments. If you use it, July is Month 7, because Month 1 of the plan is January",
+     "de": "GR c0103 (SUSP 0. Supuestos!C60)",
+     "donde": [
+      "BURP · 0. Supuestos!C60"
+     ]
+    },
+    {
+     "id": "c0105",
+     "es": "Mes de la TESORERÍA en el que sale la paga extra de Navidad: diciembre es el Mes 12, porque el Mes 1 del plan es enero",
+     "en_actual": "Month of the 12-Month Cash Flow in which a holiday extra payment falls. It only matters if you enter more than 12 pay periods; with 12 there are no extra payments. If you use it, December is Month 12, because Month 1 of the plan is January",
+     "de": "GR c0105 (SUSP 0. Supuestos!C61)",
+     "donde": [
+      "BURP · 0. Supuestos!C61"
+     ]
+    },
+    {
+     "id": "c0116",
+     "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
+     "en_actual": "How far projected sales must exceed cash break-even sales (fixed costs plus the loan payment). The drop you can absorb is a bit smaller: with a 15% cushion, 13% of projected sales",
+     "de": "GSUS-plan c0116 (SUSP 0. Supuestos!C67)",
+     "donde": [
+      "BURP · 0. Supuestos!C67"
+     ]
+    },
+    {
+     "id": "c0168",
+     "es": "Lavavajillas, fregaderos, lavamanos de accionamiento no manual, mesas de acero inoxidable y estanterías",
+     "en_actual": "Three-compartment sink, dish machine, hands-free hand sinks, stainless tables and shelving",
+     "de": "GR c0168 (SUSP Inversión Inicial!D18)",
+     "donde": [
+      "BURP · Inversión Inicial!D18"
+     ]
+    },
+    {
+     "id": "c0209",
+     "es": "Comensales/día (media)",
+     "en_actual": "Covers per day (average)",
+     "de": "GR c0209 (SUSP PyG 3 Años!A6)",
+     "donde": [
+      "BURP · PyG 3 Años!A6"
+     ]
+    },
+    {
+     "id": "c0231",
+     "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Los dos meses de renta previos a la apertura están en la hoja de Inversión y NO se cuentan dos veces",
+     "en_actual": "The monthly amount is on the \"0. Assumptions\" tab; here it is multiplied by twelve. The two months of rent before opening are on \"Startup Costs\" and are NOT counted twice",
+     "de": "GR c0231 (SUSP PyG 3 Años!F22)",
+     "donde": [
+      "BURP · PyG 3 Años!F22"
+     ]
+    },
+    {
+     "id": "c0239",
+     "es": "Contabilidad, impuestos de la SL, nóminas y contratos de la plantilla",
+     "en_actual": "Bookkeeping, income tax and payroll filings for the LLC, payroll processing and the staff paperwork (offer letters, I-9, W-4)",
+     "de": "GR c0239 (SUSP PyG 3 Años!F26)",
+     "donde": [
+      "BURP · PyG 3 Años!F26"
+     ]
+    },
+    {
+     "id": "c0247",
+     "es": "Productos de limpieza y desengrasantes, lavado de uniformes y paños, guantes y los análisis de autocontrol que fije tu APPCC",
+     "en_actual": "Cleaning supplies and degreasers, uniform and towel laundry, gloves and any lab tests or records your written food safety plan calls for",
+     "de": "GPOL-plan c0246 (POLP PyG 3 Años!F30)",
+     "donde": [
+      "BURP · PyG 3 Años!F30"
+     ]
+    },
+    {
+     "id": "c0251",
+     "es": "Contrato con una empresa inscrita en el ROESB: forma parte de los prerrequisitos del APPCC",
+     "en_actual": "Contract with a licensed pest control operator: it is part of the prerequisites of your written food safety plan.",
+     "de": "GR c0251 (SUSP PyG 3 Años!F32 / SUSC F6 - Apertura y 90 días!E6)",
+     "donde": [
+      "BURP · PyG 3 Años!F32",
+      "BURC · F6 - Apertura y 90 días!E6"
+     ]
+    },
+    {
+     "id": "c0253",
+     "es": "SGAE y AGEDI-AIE son dos licencias distintas; el importe depende de los metros y del aforo de tu sala",
+     "en_actual": "ASCAP, BMI and SESAC are separate licenses; the fee depends on the square footage and the seating of your restaurant",
+     "de": "GR c0253 (SUSP PyG 3 Años!F33)",
+     "donde": [
+      "BURP · PyG 3 Años!F33"
+     ]
+    },
+    {
+     "id": "c0286",
+     "es": "Techo del alquiler sobre ventas para un local con salida de humos a cubierta: estimación del kit",
+     "en_actual": "Ceiling for rent on sales for a space with a Type I hood and exhaust to the roof: Kit estimate",
+     "de": "GR c0286 (SUSP PyG 3 Años!F54)",
+     "donde": [
+      "BURP · PyG 3 Años!F54"
+     ]
+    },
+    {
+     "id": "c0300",
+     "es": "Coste variable por comensal",
+     "en_actual": "Variable cost per cover",
+     "de": "GR c0300 (SUSP Punto Equilibrio!A9)",
+     "donde": [
+      "BURP · Punto Equilibrio!A9"
+     ]
+    },
+    {
+     "id": "c0302",
+     "es": "Margen de contribución por comensal",
+     "en_actual": "Contribution margin per cover",
+     "de": "GR c0302 (SUSP Punto Equilibrio!A10)",
+     "donde": [
+      "BURP · Punto Equilibrio!A10"
+     ]
+    },
+    {
+     "id": "c0308",
+     "es": "Comensales necesarios al año",
+     "en_actual": "Covers needed per year",
+     "de": "GR c0308 (SUSP Punto Equilibrio!A14)",
+     "donde": [
+      "BURP · Punto Equilibrio!A14"
+     ]
+    },
+    {
+     "id": "c0309",
+     "es": "Comensales necesarios al día",
+     "en_actual": "Covers needed per day",
+     "de": "GR c0309 (SUSP Punto Equilibrio!A15)",
+     "donde": [
+      "BURP · Punto Equilibrio!A15"
+     ]
+    },
+    {
+     "id": "c0314",
+     "es": "Comensales necesarios al año (caja)",
+     "en_actual": "Covers needed per year (cash)",
+     "de": "GR c0314 (SUSP Punto Equilibrio!A19)",
+     "donde": [
+      "BURP · Punto Equilibrio!A19"
+     ]
+    },
+    {
+     "id": "c0315",
+     "es": "Comensales necesarios al día (caja)",
+     "en_actual": "Covers needed per day (cash)",
+     "de": "GR c0315 (SUSP Punto Equilibrio!A20)",
+     "donde": [
+      "BURP · Punto Equilibrio!A20"
+     ]
+    },
+    {
+     "id": "c0318",
+     "es": "Comensales/día previstos en el plan",
+     "en_actual": "Covers per day forecast in the plan",
+     "de": "GR c0318 (SUSP Punto Equilibrio!A23)",
+     "donde": [
+      "BURP · Punto Equilibrio!A23"
+     ]
+    },
+    {
+     "id": "c0320",
+     "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
+     "en_actual": "How far your projected sales exceed cash break-even sales. The drop you can absorb before you cannot pay the fixed costs and the loan payment is a bit smaller: with a 25% cushion, 20%. The minimum required is on the \"0. Assumptions\" tab",
+     "de": "GSUS-plan c0320 (SUSP Punto Equilibrio!E24)",
+     "donde": [
+      "BURP · Punto Equilibrio!E24"
+     ]
+    },
+    {
+     "id": "c0324",
+     "es": "Comensales de equilibrio entre las plazas que declara la hoja de Supuestos. Por encima del techo de arriba, el punto de equilibrio está fuera del alcance del local",
+     "en_actual": "Break-even covers spread across the seats declared on the \"0. Assumptions\" tab. If it is above the ceiling in the row above, the break-even is out of reach for the space",
+     "de": "GR c0324 (SUSP Punto Equilibrio!E26)",
+     "donde": [
+      "BURP · Punto Equilibrio!E26"
+     ]
+    },
+    {
+     "id": "c0327",
+     "es": "Comensales/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por comensal (filas). En verde, los que están por debajo de los comensales que prevé el plan.",
+     "en_actual": "Covers per day needed to cover costs for each average check (columns) and each variable cost per cover (rows). Green cells are below the covers per day the plan forecasts.",
+     "de": "GR c0327 (SUSP Punto Equilibrio!A31)",
+     "donde": [
+      "BURP · Punto Equilibrio!A31"
+     ]
+    },
+    {
+     "id": "c0328",
+     "es": "Comensales/día necesarios: ticket medio sin IVA (columnas) × coste variable por comensal (filas)",
+     "en_actual": "Covers per day needed: average check excl. sales tax (columns) × variable cost per cover (rows)",
+     "de": "GR c0328 (SUSP Punto Equilibrio!A33)",
+     "donde": [
+      "BURP · Punto Equilibrio!A33"
+     ]
+    },
+    {
+     "id": "c0336",
+     "es": "Comensales/día",
+     "en_actual": "Covers per day",
+     "de": "GR c0336 (SUSP Escenarios!A5)",
+     "donde": [
+      "BURP · Escenarios!A5"
+     ]
+    },
+    {
+     "id": "c0341",
+     "es": "Comensales/día para el equilibrio",
+     "en_actual": "Covers per day to break even",
+     "de": "GR c0341 (SUSP Escenarios!A21)",
+     "donde": [
+      "BURP · Escenarios!A21"
+     ]
+    },
+    {
+     "id": "c0344",
+     "es": "Comensales al año por jornada equivalente",
+     "en_actual": "Covers per year per full-time equivalent",
+     "de": "GR c0344 (SUSP Escenarios!A24)",
+     "donde": [
+      "BURP · Escenarios!A24"
+     ]
+    },
+    {
+     "id": "c0345",
+     "es": "Comensales que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+     "en_actual": "Covers each full-time employee in the \"Staffing\" tab would have to serve. In the optimistic scenario it tells you whether you need to hire",
+     "de": "GR c0345 (SUSP Escenarios!E24)",
+     "donde": [
+      "BURP · Escenarios!E24"
+     ]
+    },
+    {
+     "id": "c0350",
+     "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los comensales, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+     "en_actual": "The \"Base\" column reads its three inputs from the \"0. Assumptions\" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: the only things that change are covers, average check and days. FIXED COSTS are the same in all three: miscellaneous and contingency, which is a percentage of sales, sits at the top with the variable costs and each scenario carries its own.",
+     "de": "GR c0350 (SUSP Escenarios!A28)",
+     "donde": [
+      "BURP · Escenarios!A28"
+     ]
+    },
+    {
+     "id": "c0375",
+     "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal del equipo de todo el año",
+     "en_actual": "Dishwashing, rice washing and prep: about $16 per hour in the example. Vacations and days off are already counted in the weeks worked per person below. Paid sick leave is required by some states and cities: check yours",
+     "de": "GR c0375 (SUSP Personal!J11)",
+     "donde": [
+      "BURP · Personal!J11"
+     ]
+    },
+    {
+     "id": "c0408",
+     "es": "1. «0. Supuestos» es la hoja de mando: comensales, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+     "en_actual": "1. \"0. Assumptions\" is the control sheet: covers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, rent, financing and taxes.",
+     "de": "GR c0408 (SUSP Instrucciones!A5)",
+     "donde": [
+      "BURP · Instrucciones!A5"
+     ]
+    },
+    {
+     "id": "c0414",
+     "es": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
+     "en_actual": "7. The \"Financing\" tab matches what you need with what you put in and builds the amortization schedule of the loan. If the difference is red, the plan is not funded.",
+     "de": "GR c0414 (SUSP Instrucciones!A11)",
+     "donde": [
+      "BURP · Instrucciones!A11"
+     ]
+    },
+    {
+     "id": "c0426",
+     "es": "Comensales/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+     "en_actual": "Covers per day for the ACCOUNTING break-even (depreciation included)",
+     "de": "GR c0426 (SUSP Instrucciones!A30)",
+     "donde": [
+      "BURP · Instrucciones!A30"
+     ]
+    },
+    {
+     "id": "c0544",
+     "es": "Mide cuánto tarda el negocio en devolver la inversión con lo que genera ANTES de pagar al banco, con la MISMA base de flujo en los tres años; si puedes pagar la cuota lo dice el DSCR de la hoja de Financiación. El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro",
+     "en_actual": "Measures how long the business takes to pay back the investment with what it generates BEFORE paying the lender, on the SAME cash flow basis in all three years; whether you can make the loan payment is answered by the DSCR on the \"Financing\" tab. The Word business plan quotes this figure; if you change a green cell, this workbook rules",
+     "de": "GR c0544 (SUSP Tesorería 12 meses!D31)",
+     "donde": [
+      "BURP · Tesorería 12 meses!D31"
+     ]
+    }
+   ]
+  }
+ }
+}
