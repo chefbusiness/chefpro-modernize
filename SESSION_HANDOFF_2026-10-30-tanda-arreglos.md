@@ -71,3 +71,16 @@ LIT255 verde en los 753 xlsx de `dl/`** y `business-plans-en/gates_en.py --solo 
 Decidir con John: producto nuevo (Taco Shop Checklist Templates EN $19, ya en cola; Sushi Bar; Smash) o traducciones.
 23 productos ES sin gemelo EN (catálogo, 30-oct): 9 kits de tareas (12-18 €), mega-pack de tareas (89 €), 10 guías
 (24-85 €), 2 manuales (55-65 €), plan chef privado (45 €).
+
+## 6. Secuela (31-oct, sesión Claude Code): los 13 conjuntos EN de planes, regenerables otra vez
+
+La deuda que cazó el lead del Sushi EN (`business-plans-en-14/F2-NOTAS.md` §6 de su rama): este PR parcheó los ES LIVE sin
+re-extraer el `textos_es.json` / `censo_es.json` de cada conjunto EN, y todos los `aplicar_en --dry-run` abortaban
+(«textos_es.json dice 'Cuánto puedes caer…' y el ES trae 'Cuánto deben superar…'»). Arreglado en la rama
+`fix/en-sets-resync-tras-186` con `business-plans-en/resync_es.py` (VPS): re-extrae los 13 en orden de cadena con
+`extraer_textos --fijar-clasificacion` (mismos ids y el grupo/tratamiento publicados: las reglas de `grupo_de` miran el
+texto y, con «☐» en vez de «—», 5 cadenas cambiaban de grupo → aplicar_en abortaba) y re-mide los sha fijados de los
+diccionarios hermanos y de la fuente ES. Prueba: los 30 xlsx regenerados = LIVE por contenido (`comparar_sem.py`) y
+22/22 docx y calculadoras = LIVE por bytes. **Regla para el siguiente parche de un ES LIVE con gemelo EN: correr
+`resync_es.py` + la regresión en el mismo PR.** El canon de bytes de los planes ya no sale IGUAL (12 de 15): alto de la
+fila 34 de la tesorería (134.75 en LIVE, 149.5 al regenerar) y el punto de troceo de 3 literales; ver el PR.

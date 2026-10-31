@@ -162,14 +162,14 @@ RX_REESCRIBIR = re.compile(
 # sha256 del diccionario del Bar EN (cerrado y publicado; fijados el 25-oct-2026 sobre 8beee70e). Si cambian, hay que
 # re-extraer y rehacer preparar_tandas antes de los traductores (bp8.py verificar avisa)
 SHA_BAR = OrderedDict([
-    ('textos_es.json', '7ff7c653499cf1c2599bdcd756d9635b4c91072d9cdec8e42c79eb15ed1d602b'),
-    ('textos_en/GM.json', '0e55128a45b2383ffe4857a168e4a5c42b9dabfb8f18a7838e20eef10893a097'),
+    ('textos_es.json', 'ae6c5c44bf81d5fd617817384d73d81036c891148ff59010631660ad27828108'),
+    ('textos_en/GM.json', 'e40aee8f22f745b5d80219c9ce94ddcf0cf674b727177b759d11efae22a9a2ea'),
     ('textos_en/GR.json', '3de14dffc6cd9c752c68864655b4dd9714758f49d39cef6fcd9bdf356d6eb3a3'),
     ('textos_en/GR.revision.json', '05f108dafaf1715c6055e1cc3f8981c3521085bdd9641771797e3d20480eb611'),
     ('textos_en/GBAR-plan.json', 'dfd6769997098ed659f72820e7a4d3ba1703b87f6cefa9a32854a45499fef523'),
     ('textos_en/GBAR-check.json', '1cd062007913b8801c3130d6e2689e1a8647685407beedfd5ef63e0d3a25828e'),
     ('formulas_bar.json', '91d1ad137be39960453cf4feb861cd31ab4d0aaa2c19787f70a0e21b66c390d8'),
-    ('censo_es.json', '16ebea870d07e443cc23c4563f3229b6cce0858bce4029ae0ab9298e6ba553ab'),
+    ('censo_es.json', '22570e6375164e19e3935f6804645d797866583538230163aff153f072795e88'),
     ('datos_bar.py', 'bdff86b942fa78cf71209a7460a0e1e6aa066fbcd3618b94a160ba056a907bac'),
 ])
 

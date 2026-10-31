@@ -1,31 +1,31 @@
 {
  "meta": {
-  "generado": "2026-10-25T19:48:01Z",
+  "generado": "2026-10-31T03:49:46Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "25bd7e02",
+  "commit": "8a0d6dab",
   "libros": {
    "PIZP": {
     "es": "plan-financiero-pizzeria.xlsx",
     "en": "pizza-shop-financial-projections.xlsx",
-    "sha256": "afa03288a49e74ed115fabbb9774063ecb2a6609023aa275480a3f83814e2217"
+    "sha256": "6f495503f4a170cb98135468ca45fe882623a93ec962ff0f8fee96fca7a966d4"
    },
    "PIZC": {
     "es": "checklist-apertura-pizzeria.xlsx",
     "en": "pizza-shop-startup-checklist.xlsx",
-    "sha256": "306e3fc3c261ebed2eda6bb48186c10abbdda29bdce13356c4ba9cec3fa5752b"
+    "sha256": "e7f6791e4d04bd0c4256ee37d9230d697b561c32e67e0769a6a5314662a19ef9"
    }
   },
   "n_cadenas": 867,
   "n_traducir": 695,
   "n_localizar": 52,
-  "n_palabras_subagentes": 10670,
+  "n_palabras_subagentes": 10716,
   "n_apariciones": 1127,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: mismo ES que el Bar EN en la MISMA celda (o cadena común del motor, GM del Bar) y EN sin vocabulario ni caso del bar. preparar_tandas escribe su EN. No van a los traductores",
     "n_cadenas": 361,
-    "n_palabras": 3623,
+    "n_palabras": 3669,
     "n_plan": 344,
     "n_check": 18,
     "n_localizar": 0,
@@ -81,9 +81,8 @@
    "cadenas": {
     "AI Chef Pro": 2,
     "OK": 6,
-    "☐": 80,
+    "☐": 86,
     "✓": 6,
-    "—": 6,
     "N/A": 6
    },
    "literales_formula": {
@@ -2318,18 +2317,19 @@
   },
   {
    "id": "c0116",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "es": "Cuánto deben superar las ventas previstas a las del equilibrio de caja (costes fijos y cuota del préstamo). La caída que aguantas es algo menor: con un 15 % de holgura, un 13 % de lo previsto",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 11,
+   "palabras": 35,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+    "D146: pizza boxes; local packaging ordinances"
    ],
-   "sha1": "721896d9dc29",
+   "sha1": "82850307bc95",
    "donde": [
     {
      "f": "PIZP",
@@ -2342,7 +2342,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0116",
-    "en": "How far you can fall below plan before you start losing money",
+    "en": "How far planned sales must sit above cash break-even (fixed costs and the loan payment). The drop you can absorb is somewhat smaller: with a 15% cushion, about 13% of plan",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-3 (Bar EN cerrado)",
     "origen": "celda",
@@ -6733,18 +6733,19 @@
   },
   {
    "id": "c0320",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "es": "Cuánto superan tus ventas previstas a las del equilibrio de caja. La caída que aguantas antes de no poder pagar los costes fijos y la cuota es algo menor: con un 25 % de holgura, un 20 %. El mínimo exigible está en la hoja de Supuestos",
    "grupo": "GM",
    "tratamiento": "traducir",
    "planes": [
     "piz"
    ],
    "n_apariciones": 1,
-   "palabras": 23,
+   "palabras": 45,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D146: pizza boxes; local packaging ordinances"
    ],
-   "sha1": "a40f4860d483",
+   "sha1": "fbce2be4a456",
    "donde": [
     {
      "f": "PIZP",
@@ -6757,7 +6758,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0314",
-    "en": "How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the \"0. Assumptions\" tab",
+    "en": "How far planned sales sit above cash break-even. The drop you can absorb before you cannot pay the fixed costs and the loan payment is somewhat smaller: with a 25% cushion, 20%. The required minimum is set in the \"0. Assumptions\" tab",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-3 (Bar EN cerrado)",
     "origen": "celda",
@@ -9967,7 +9968,7 @@
    "reuso": {
     "grupo": "GM",
     "id": "c0605",
-    "en": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly (April, July, October, January): if your state requires monthly filing, expect smaller payments every month instead",
+    "en": "Cash only leaves when the quarter's result is positive. Months without a settlement are left blank, not zero. The cell turns RED when the payment takes more cash than is left that month. The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10, and the fourth quarter in Month 13: April, July, October and January when Month 1 is January): if your state requires monthly filing, expect smaller payments every month instead",
     "tratamiento_origen": "traducir",
     "conjunto": "business-plans-en-3 (Bar EN cerrado)",
     "origen": "celda",
@@ -14461,7 +14462,7 @@
   },
   {
    "id": "c0659",
-   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "es": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
    "grupo": "GR",
    "tratamiento": "traducir",
    "planes": [
@@ -14470,7 +14471,7 @@
    "n_apariciones": 6,
    "palabras": 12,
    "max_len": 255,
-   "sha1": "99fc84bf8389",
+   "sha1": "12fbeb7eedbe",
    "donde": [
     {
      "f": "PIZC",
@@ -14516,14 +14517,15 @@
     }
    ],
    "reuso": {
-    "grupo": "GREST",
-    "id": "c0856",
-    "en": "Use the dropdown: ✓, —, N/A. ✓ = done, — = pending, N/A = not applicable and comes out of the total.",
+    "grupo": "GM",
+    "id": "c0733",
+    "en": "Use the dropdown: ✓, ☐, N/A. N/A = not applicable, it comes out of the total.",
     "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en-2",
-    "origen": "texto-bp",
+    "conjunto": "business-plans-en-3 (Bar EN cerrado)",
+    "origen": "texto-bar-GM",
     "donde": [
-     "RESTC Checklist Apertura!E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E16 E17 E18 E19 E20 E21 E22 E23 E25 E26 E27 E28 E29 E30 E31 E32 E34 E35 E36 E37 E38 E39 E40 E42 E43 E44 E45 E46 E47 E48 E49 E51 E52 E53 E54 E55 E56 E57 E58 E59 E60 E61 E62 E63 E64 E65 E67 E68 E69 E70 E71 E72 E73 E74"
+     "BARC F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15",
+     "BARC F2 - Local!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17"
     ]
    }
   },
