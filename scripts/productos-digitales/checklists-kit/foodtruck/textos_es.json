@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-31T01:06:37Z",
+  "generado": "2026-10-31T01:18:38Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-food-truck",
-  "commit": "79a658b2",
+  "commit": "f35b7355",
   "libros": {
    "01": {
     "es": "01-setup-teardown-food-truck.xlsx",
