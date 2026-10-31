@@ -126,7 +126,7 @@ HOJAS.update([
     ('Maître-Sala', 'Maître & Dining Room'),
     ('Semanales', 'Weekly'), ('Mensuales', 'Monthly'),
     ('Maridaje Menú', 'Tasting Menu Pairing'), ('Gestión Bodega', 'Wine Cellar'),
-    ("Chef's Table", "Chef's Table"), ('Pop-ups', 'Pop-Ups'), ('Cenas Especiales', 'Special Dinners'),
+    ("Chef's Table", "Chef's Table"), ('Pop-ups', 'Pop-Up Events'), ('Cenas Especiales', 'Special Dinners'),
     ('Fotografía Platos', 'Food Photography'), ('RRSS', 'Social Media'), ('Prensa-Guías', 'Press & Guides'),
     ('Plantilla A', 'Template A'), ('Plantilla B', 'Template B'), ('Plantilla C', 'Template C'),
     ('Briefing Servicio', 'Pre-Shift Meeting'), ('Calendario Anual', 'Annual Calendar'),
