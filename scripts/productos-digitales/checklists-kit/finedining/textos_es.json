@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-31T01:54:03Z",
+  "generado": "2026-10-31T01:56:56Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-restaurante-creativo",
-  "commit": "df9fa8f5",
+  "commit": "0427bf1f",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -72,9 +72,9 @@
    }
   },
   "n_cadenas": 1006,
-  "n_traducir": 799,
-  "n_adaptar": 56,
-  "n_palabras_subagentes": 6954,
+  "n_traducir": 784,
+  "n_adaptar": 55,
+  "n_palabras_subagentes": 6875,
   "n_apariciones": 2309,
   "grupos": [
    {
@@ -104,15 +104,15 @@
      "B01",
      "B02"
     ],
-    "n_cadenas": 383,
-    "n_adaptar": 26,
-    "n_palabras": 3502
+    "n_cadenas": 368,
+    "n_adaptar": 25,
+    "n_palabras": 3423
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 72 mapa-glosario, 37 mapa-hoja, 98 regenerar",
-    "n_cadenas": 207,
-    "n_palabras": 908
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 71 mapa-glosario, 37 mapa-hoja, 114 regenerar",
+    "n_cadenas": 222,
+    "n_palabras": 987
    }
   ],
   "excluidas": {
@@ -15727,327 +15727,6 @@
    ]
   },
   {
-   "id": "c0802",
-   "es": "Apagar música ambiente",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 3,
-   "con_cifra": false,
-   "pistas": [
-    "hidrocoloides → hydrocolloids; esferificación → spherification"
-   ],
-   "sha1": "004a75d51476",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B5",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0804",
-   "es": "Verificar que no quedan clientes en el local",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "sha1": "33aabb562e1a",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0805",
-   "es": "Limpiar y recoger terraza si aplica",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "adaptar": "Terraza → patio",
-   "pistas": [
-    "D15: terraza → patio"
-   ],
-   "sha1": "fb2f8ea321ae",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B7",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0806",
-   "es": "Apagar TPV / POS / datáfono (o dejar en standby)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "pistas": [
-    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
-    "hidrocoloides → hydrocolloids; esferificación → spherification"
-   ],
-   "sha1": "c6673c0db64a",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0807",
-   "es": "Cerrar persianas y puertas",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "sha1": "24a08603fd51",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0808",
-   "es": "Apagar luces (dejar mínimas de seguridad)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "pistas": [
-    "hidrocoloides → hydrocolloids; esferificación → spherification"
-   ],
-   "sha1": "9793a17f0cd2",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0809",
-   "es": "Apagar climatización",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 2,
-   "con_cifra": false,
-   "pistas": [
-    "hidrocoloides → hydrocolloids; esferificación → spherification"
-   ],
-   "sha1": "c79629b63dda",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B11",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0810",
-   "es": "Recoger señalización exterior",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 3,
-   "con_cifra": false,
-   "pistas": [
-    "Glosario: señal / anticipo → deposit",
-    "señal → deposit"
-   ],
-   "sha1": "bc200ce1f9cc",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B12",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0811",
-   "es": "Comprobar que ventanas están cerradas",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "sha1": "8231ec189b7d",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B13",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0812",
-   "es": "Vaciar papeleras de zonas comunes y baños",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "sha1": "a671c7fe62ad",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B14",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0813",
-   "es": "Revisión final de seguridad (gas, agua, enchufes)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "sha1": "5144c3677375",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B15",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0814",
-   "es": "Activar alarma",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 2,
-   "con_cifra": false,
-   "sha1": "dac8b9248030",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B16",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0815",
-   "es": "Cerrar con llave y verificar cierre",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "sha1": "24071e529964",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B17",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0817",
-   "es": "Retirar decoración fresca de mesas",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "sha1": "cc75737efad7",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B18",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0818",
-   "es": "Actualizar carta de vinos si hubo cambios",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "sha1": "fb7a13ed431f",
-   "donde": [
-    {
-     "f": "10",
-     "h": "Cierre del Negocio",
-     "c": "B19",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0824",
    "es": "▸ El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre — y el registro mensual para ver de un vistazo qué días no cuadraron.",
    "grupo": "G2",
@@ -24382,6 +24061,10 @@
    "es": "Sala",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Dining room",
    "n_ficheros": 8,
    "n_apariciones": 22,
@@ -24530,24 +24213,24 @@
      "h": "Cierre del Negocio",
      "c": "C6",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C18",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C19",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "B01",
@@ -29797,6 +29480,10 @@
    "es": "Acceso",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Entrance",
    "n_ficheros": 1,
    "n_apariciones": 5,
@@ -29825,24 +29512,24 @@
      "h": "Cierre del Negocio",
      "c": "C9",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C16",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C17",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -29851,6 +29538,10 @@
    "es": "Encargado",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Shift manager",
    "n_ficheros": 1,
    "n_apariciones": 30,
@@ -30007,96 +29698,96 @@
      "h": "Cierre del Negocio",
      "c": "D5",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D6",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D7",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D9",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D10",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D11",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D12",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D13",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D14",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D15",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D16",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30105,6 +29796,10 @@
    "es": "General",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "General",
    "n_ficheros": 1,
    "n_apariciones": 9,
@@ -30149,40 +29844,40 @@
      "h": "Cierre del Negocio",
      "c": "C5",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C10",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C11",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C13",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "C15",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30191,6 +29886,10 @@
    "es": "Exterior",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Outside",
    "n_ficheros": 1,
    "n_apariciones": 2,
@@ -30211,8 +29910,8 @@
      "h": "Cierre del Negocio",
      "c": "C12",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30221,6 +29920,10 @@
    "es": "Caja",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Register",
    "n_ficheros": 1,
    "n_apariciones": 2,
@@ -30241,8 +29944,8 @@
      "h": "Cierre del Negocio",
      "c": "C8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30281,6 +29984,10 @@
    "es": "Baños",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Restrooms",
    "n_ficheros": 1,
    "n_apariciones": 2,
@@ -30301,8 +30008,8 @@
      "h": "Cierre del Negocio",
      "c": "C14",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30333,6 +30040,10 @@
    "es": "Terraza",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Patio",
    "n_ficheros": 1,
    "n_apariciones": 2,
@@ -30353,8 +30064,8 @@
      "h": "Cierre del Negocio",
      "c": "C7",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30385,6 +30096,28 @@
      "t": "celda",
      "tr": "mapa-glosario",
      "det": "mapas.GLOSARIO"
+    }
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Apagar música ambiente",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn off background music",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 3,
+   "con_cifra": false,
+   "sha1": "004a75d51476",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B5",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30619,11 +30352,275 @@
    ]
   },
   {
+   "id": "c0804",
+   "es": "Verificar que no quedan clientes en el local",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check no guests are left in the restaurant",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "33aabb562e1a",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B6",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Limpiar y recoger terraza si aplica",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Remove fresh table decorations",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "fb2f8ea321ae",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B7",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0806",
+   "es": "Apagar TPV / POS / datáfono (o dejar en standby)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Update the wine list if anything changed",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "c6673c0db64a",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B8",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "Cerrar persianas y puertas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Clean up and bring in the patio, if you have one",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "24a08603fd51",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Apagar luces (dejar mínimas de seguridad)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Bring in the outdoor signage",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "9793a17f0cd2",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B10",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0809",
+   "es": "Apagar climatización",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn off the POS / card terminal (or leave it on standby)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 2,
+   "con_cifra": false,
+   "sha1": "c79629b63dda",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B11",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0810",
+   "es": "Recoger señalización exterior",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Empty trash cans in common areas and restrooms",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 3,
+   "con_cifra": false,
+   "sha1": "bc200ce1f9cc",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B12",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Comprobar que ventanas están cerradas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check that windows are closed",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "8231ec189b7d",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B13",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0812",
+   "es": "Vaciar papeleras de zonas comunes y baños",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn off HVAC",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "a671c7fe62ad",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B14",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0813",
+   "es": "Revisión final de seguridad (gas, agua, enchufes)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn off lights (leave security lighting on)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "5144c3677375",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B15",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "Activar alarma",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Final safety check (gas, water, outlets)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 2,
+   "con_cifra": false,
+   "sha1": "dac8b9248030",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B16",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0815",
+   "es": "Cerrar con llave y verificar cierre",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Close the security gate / shutters and doors",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "24071e529964",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B17",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0816",
    "es": "Último en salir",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Last one out",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Last one out",
    "n_ficheros": 1,
    "n_apariciones": 3,
    "palabras": 3,
@@ -30635,24 +30632,68 @@
      "h": "Cierre del Negocio",
      "c": "D17",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D18",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "10",
      "h": "Cierre del Negocio",
      "c": "D19",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0817",
+   "es": "Retirar decoración fresca de mesas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Arm the alarm",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "cc75737efad7",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B18",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0818",
+   "es": "Actualizar carta de vinos si hubo cambios",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Lock up and verify it is locked",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "fb7a13ed431f",
+   "donde": [
+    {
+     "f": "10",
+     "h": "Cierre del Negocio",
+     "c": "B19",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },

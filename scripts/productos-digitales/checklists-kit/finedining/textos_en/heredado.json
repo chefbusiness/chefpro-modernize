@@ -312,66 +312,6 @@
   "origen": "c0843",
   "via": "sufijo"
  },
- "c0802": {
-  "en": "Turn off background music",
-  "origen": "c0844",
-  "via": "exacta"
- },
- "c0804": {
-  "en": "Make sure no guests remain in the restaurant",
-  "origen": "c0845",
-  "via": "exacta"
- },
- "c0806": {
-  "en": "Turn off the POS / card terminal (or leave on standby)",
-  "origen": "c0847",
-  "via": "exacta"
- },
- "c0807": {
-  "en": "Close security gate and doors",
-  "origen": "c0848",
-  "via": "exacta"
- },
- "c0808": {
-  "en": "Turn off lights (leave security lighting)",
-  "origen": "c0849",
-  "via": "exacta"
- },
- "c0809": {
-  "en": "Turn off HVAC",
-  "origen": "c0850",
-  "via": "exacta"
- },
- "c0810": {
-  "en": "Bring in the outdoor signage",
-  "origen": "c0851",
-  "via": "exacta"
- },
- "c0811": {
-  "en": "Check that windows are closed",
-  "origen": "c0852",
-  "via": "exacta"
- },
- "c0812": {
-  "en": "Empty trash cans in common areas and restrooms",
-  "origen": "c0853",
-  "via": "exacta"
- },
- "c0813": {
-  "en": "Final safety check (gas, water, outlets)",
-  "origen": "c0854",
-  "via": "exacta"
- },
- "c0814": {
-  "en": "Set the alarm",
-  "origen": "c0855",
-  "via": "exacta"
- },
- "c0815": {
-  "en": "Lock up and verify it is locked",
-  "origen": "c0856",
-  "via": "exacta"
- },
  "c0824": {
   "en": "▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.",
   "origen": "c0862",

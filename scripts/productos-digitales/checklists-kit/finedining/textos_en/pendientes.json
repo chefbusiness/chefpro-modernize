@@ -2,21 +2,21 @@
  "meta": {
   "kit": "finedining",
   "producto": "Fine Dining Checklists Kit Pro",
-  "n_pendientes": 684,
-  "n_palabras": 5788,
+  "n_pendientes": 681,
+  "n_palabras": 5770,
   "motivos": {
-   "nueva": 679,
-   "adaptar": 4,
+   "nueva": 677,
+   "adaptar": 3,
    "contexto": 1
   },
-  "n_heredadas": 115,
+  "n_heredadas": 103,
   "heredadas_por_via": {
-   "exacta": 110,
+   "exacta": 98,
    "sufijo": 5
   },
   "heredadas_por_fuente": {
    "hotel": 11,
-   "base": 102,
+   "base": 90,
    "chocolate": 2
   },
   "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
@@ -7168,41 +7168,6 @@
     "Glosario: briefing de servicio → pre-shift meeting (line-up)",
     "menú degustación → tasting menu; pase → course; pase (lugar) → the pass",
     "maître → maître d'; jefe de sala → dining room manager; sala → dining room; camarero → server; ayudante de sala → back server / busser; runner → food runner; capitán → captain"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0805",
-   "es": "Limpiar y recoger terraza si aplica",
-   "grupo": "G2",
-   "palabras": 6,
-   "donde": [
-    "10 · Cierre del Negocio · B7"
-   ],
-   "pistas": [
-    "D15: terraza → patio"
-   ],
-   "adaptar": "Terraza → patio",
-   "motivo": "adaptar",
-   "base_en": "Clean and bring in the patio if used"
-  },
-  {
-   "id": "c0817",
-   "es": "Retirar decoración fresca de mesas",
-   "grupo": "G2",
-   "palabras": 5,
-   "donde": [
-    "10 · Cierre del Negocio · B18"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0818",
-   "es": "Actualizar carta de vinos si hubo cambios",
-   "grupo": "G2",
-   "palabras": 7,
-   "donde": [
-    "10 · Cierre del Negocio · B19"
    ],
    "motivo": "nueva"
   },
