@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-31T01:56:56Z",
+  "generado": "2026-10-31T01:58:55Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-restaurante-creativo",
-  "commit": "0427bf1f",
+  "commit": "faa06131",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -28546,7 +28546,7 @@
    "es": "Pop-ups",
    "grupo": "GM",
    "tratamiento": "mapa-hoja",
-   "en_hoja": "Pop-Ups",
+   "en_hoja": "Pop-Up Events",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,

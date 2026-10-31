@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-31T01:56:56Z",
+  "generado": "2026-10-31T01:58:55Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-restaurante-creativo",
-  "commit": "0427bf1f",
+  "commit": "faa06131",
   "nota": "Censo del Kit de Tareas Recurrentes v2.0 PUBLICADO (11 xlsx). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. patrones_formula = fórmulas con las filas normalizadas a {r} (mapas.patron); «cifras» = el patrón compara con un número. tareas = filas con número en A y texto en B. dependencias = lo que depende de España (F1-inventario §1)."
  },
  "libros": {
@@ -6896,7 +6896,7 @@
    "hojas_en": [
     "Instructions",
     "Chef's Table",
-    "Pop-Ups",
+    "Pop-Up Events",
     "Special Dinners"
    ],
    "nombres_definidos": [],
@@ -7253,7 +7253,7 @@
      }
     },
     "Pop-ups": {
-     "nombre_en": "Pop-Ups",
+     "nombre_en": "Pop-Up Events",
      "dimension": "A1:G22",
      "max_fila": 22,
      "max_col": 7,
