@@ -58,6 +58,10 @@ TERMINOS_PROHIBIDOS = (r'(?i:\b(?:hotels?(?! pans?)|housekeeping|front desk|room
                        r'scoopers?|dipping cabinets?|pastry shops?|bakery cases?|chocolate shops?|food trucks?|'
                        r'commissary|plancha|workshops?|obrador|casual dining)\b)')
 TERMINO_PROHIBIDO_EJEMPLO = 'Ask housekeeping to restock the dipping cabinet.'
+# gates_en.py G2 (FRASES_OK += FRASES_OK_EXTRA): la brigada francesa que usa la cocina US, con «de» funcional ES
+FRASES_OK_EXTRA = ('chef de partie', 'Chef de partie', 'CHEF DE PARTIE', 'chefs de partie', 'Chefs de partie',
+                   'CHEFS DE PARTIE', 'chef de cuisine', 'Chef de cuisine', 'CHEF DE CUISINE', 'Chef de Cuisine',
+                   'Chef de Partie')
 REFERENCIAS_TRADUCTOR = ['finedining/SPEC.md', 'SPEC.md §0-§3 y §7.2 (brief)', 'textos_en/glosario.json (glosario de '
                          'la prosa del kit base)', 'finedining/textos_en/heredado.json', 'finedining/mapas_finedining.py: '
                          'GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US', '../GLOSARIO-JERGA-ES-EN.md']

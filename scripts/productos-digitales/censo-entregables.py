@@ -172,7 +172,7 @@ PRODUCTOS_LETTER = frozenset({'food-cost-templates', 'restaurant-inventory-templ
                               'ghost-kitchen-checklist-templates', 'ice-cream-shop-checklist-templates',
                               'hotel-checklist-templates', 'taco-shop-checklist-templates',
                               'food-truck-checklist-templates', 'bakery-checklist-templates',
-                              'seafood-restaurant-checklist-templates'})
+                              'seafood-restaurant-checklist-templates', 'fine-dining-checklist-templates'})
 PAPEL_A4, PAPEL_LETTER = 9, 1
 HOJAS_TEXTO = ('Instrucciones', 'Índice', 'Indice', 'Instructions')
 
