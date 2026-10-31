@@ -320,7 +320,7 @@ PISTAS = {
         'llega a −18 °C usado para el anisakis; el shari a temperatura ambiente sin validar ante sanidad (art. 30.5 del '
         'RD 1086/2020) ni registro de pH; la plataforma sin techo (comisión, IVA de la comisión y caja: el combinado viaja '
         'bien, la tempura no; techo del {DELIVERY_PCT}); una carta larga que llena la vitrina de neta que se tira; el '
-        'precio del combinado sin escandallo por canal (en plataforma el margen cae casi a la mitad); un solo proveedor de '
+        'precio del combinado sin escandallo por canal (en plataforma el margen del combinado cae más de un cuarto); un solo proveedor de '
         'pescado; los alérgenos incompletos (el pescado, la mostaza del wasabi, el trigo de la soja y del surimi); las '
         'bandejas cerradas en la vitrina sin la etiqueta del art. 5 del RD 126/2015; cobrar al 10 % la cerveza y los '
         'refrescos azucarados para llevar; prometer «sin gluten»; y copiar cifras de franquicia (180 m², 300.000 €) para '

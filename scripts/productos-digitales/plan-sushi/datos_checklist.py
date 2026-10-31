@@ -252,7 +252,7 @@ FASES = [
          'miso y mochi, más el menú del día de mediodía. Una carta de 60 platos llena la vitrina de neta que se tira'),
         ('Escandallo de cada pieza y de cada combinado por canal', 'Itamae', 'Semanas 10-14',
          'Con la calculadora del pescado, el arroz y el escandallo del pack: el coste de cada pieza y el margen en sala, '
-         'para llevar y en plataforma. En plataforma el margen del combinado cae casi a la mitad'),
+         'para llevar y en plataforma. En plataforma el margen del combinado cae más de un cuarto'),
         ('IVA de la carta para llevar: la comida al 10 %, el alcohol y las bebidas azucaradas al 21 %',
          'Gestoría / Titular', 'Antes de abrir',
          'En sala, todo al 10 % (Ley 37/1992, art. 91.Uno.2.2.º). Para llevar y a domicilio, la comida al 10 %, pero la '
