@@ -70,7 +70,38 @@ de R §3 (holgura A1 27,8 % ≥ 15 %; neto 9,1/10,4/9,8 %, dentro de 7-12 %).
 **D9 VERDE** (19). `calculadora_sus_es.py --autotest`: **580 comprobaciones VERDE**. `barrido_es.py` sobre los 3 xlsx:
 **0**, 3 avisos revisados (−18 °C «no sirve para el anisakis» y dos «no prometer sin gluten»: correctos).
 `gate_restos_ft.py --rx-extra` (Taquería, Pollería, Pizzería y pids): **VERDE**. `parche_xml_xlsx.py --check` en los 3
-xlsx: **LIT255 VERDE**. sha256 Mac = VPS: plan `28a80501…`, checklist `7526c491…`, calculadora `736de5e8…`.
+xlsx: **LIT255 VERDE**. Word: `tandas_docx.py check` a y b **0 errores** (8 + 9 avisos revisados: longitud de los párrafos
+legales, «no se promete sin gluten», «−18 °C no sirve», franquicias sólo como comparación) · `docx_sus_es.py` **VERDE**
+(131 párrafos, 10 Heading 1, 7.663 palabras) · barrido de los 4 ficheros **0** (15 avisos, todos usos correctos) ·
+`gate_restos_ft.py` 4 ficheros **VERDE**. Tras la revisión, todo regenerado: tokens del Excel idénticos al JSON del Word
+(`cmp`). sha256 Mac = VPS: calculadora `f371fe16…`, checklist `db87cd9e…`, Word `ac6a4994…`, plan `9d6c2fdc…`.
+
+## 7. Word y revisión
+
+- Redacción: 2 Sonnet en serie (`sus_es_a` 29 párrafos, `sus_es_b` 32; ≤ 4 rondas de `check` cada uno). El redactor B cazó
+  que «en plataforma el margen del combinado cae casi a la mitad» (pista §10 y checklist F5) no casa con la calculadora
+  (22,16 → 16,12 €, −27 %): ahora «cae más de un cuarto» en las dos fuentes.
+- Revisión adversarial Opus (`REVISION-FINAL.md`): **0 B · 1 M · 24 m** (21 arreglados, 4 aceptados), sin mover cifras ni
+  fórmulas. M1: el ticket por canal decía «un combinado de 24 piezas y un extra, 27,00 €» con el combinado a 29,00 € y
+  «plataforma un 15 % más cara» sin casar con 15,34 × 1,15: reescrito (Word [49] y `Supuestos!C5`).
+
+## 8. Para la F3 ES (landing, dashboard, correo)
+
+- **Nombre** «Plan de Negocio: Sushi Bar» · 35 € · nº 58 · `calculadora-sushi` = `calculadora-pescado-arroz-escandallo-sushi-bar.xlsx`.
+- **Recuentos**: plan de 10 secciones (131 párrafos, unas 7.700 palabras) · Excel de **9 hojas** · checklist de **80
+  tareas** en 6 fases (12/15/14/13/13/13; pestañas «F1 - Constitución», «F2 - Local, frío y extracción», «F3 - Pescado, arroz
+  y sanidad», «F4 - Personal y alérgenos», «F5 - Carta, marca y delivery», «F6 - Apertura y 90 días») · calculadora de **4
+  hojas** (`Pescado` · `Arroz` · `Escandallo` con **14 productos** · `Instrucciones`) · bonus guía de equivalencias.
+- **Claims con cifra del Excel** (FAQ de R §6): inversión **163.658 €** (partidas 103.350 €) y necesidad de caja **185.404
+  €** (55.000 € propios + 131.000 €) · neto **9,1 %** el año 1 (43.149 €; 10,4/9,8 % los años 2 y 3) · equilibrio de caja
+  **62 comensales/día** (holgura 27,8 %) · **121 nigiris por kilo de arroz crudo** (2,42 kg de shari) · sushiman: ofertas
+  de 12.000-22.000 €/año, el caso 1.650 €/mes en 14 pagas · franquicias 39.950-300.000 € (emprendedores.es) frente al caso.
+- **Repetir en la landing** lo que arregló la revisión: el ticket por canal sin «combinado de 24 + extra = 27 €»; la regla
+  del 21 % entera (cerveza, sake, vino y refrescos con azúcares o edulcorantes añadidos que salen del local); el lomo
+  comprado a **24,16 €/kg útil**; plataforma **24 %** (no 25-26 %); el margen de plataforma cae **más de un cuarto**; food
+  cost teórico **16 %** frente al **29 %** prudente del plan (no «20-22 %»); RD 1420/2006 sólo como derogado; shari a
+  temperatura ambiente sólo con el art. 30.5 del RD 1086/2020; nada de «sushi grade».
+
 
 ## 6. Comandos
 
