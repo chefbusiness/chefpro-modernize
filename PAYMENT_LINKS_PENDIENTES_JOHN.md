@@ -2,6 +2,21 @@
 
 > Sesión Claude Code (Mac).
 
+## ⏳ PENDIENTE (31-oct-2026): Plan de Negocio: Sushi Bar (ES) — rama `feat/plan-negocio-sushi`
+
+Producto nº 58, 35 €. La landing (`/plan-negocio-sushi-bar`) deja el botón en `#comprar` hasta que exista el link. Cuando lo crees,
+Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+
+| Campo | Valor |
+|---|---|
+| Nombre del producto | Plan de Negocio Sushi Bar - AI Chef Pro |
+| Precio | **35,00 EUR**, pago único, impuesto automático con precio *exclusive* (como pizzería, taquería y pollería) |
+| Factura | activada |
+| Después del pago | redirigir a `https://aichef.pro/plan-negocio-sushi-bar-access?session_id={CHECKOUT_SESSION_ID}` |
+| Descripción (prosa, 249 caracteres) | Plan de negocio para montar un sushi bar o restaurante de sushi: plan en Word de 10 secciones, plan financiero en Excel a 3 años, checklist de 80 tareas, calculadora del pescado, el arroz y el escandallo por pieza y canal, y guía para Latinoamérica. |
+| Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_SUSHI_BAR` (scope builds) |
+| Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-sushi-bar-hero.jpg` |
+
 ## ✅ HECHO (29-oct-2026): Plan de Negocio: Taquería (ES) — PR #181
 
 Link de John: https://buy.stripe.com/fZu5kwbcEcsCcrt1wV6oo2a (`plink_1UVou74CcdRGidmEufF1axkD`). Comprobado con la CLI: 3500 EUR, pago único,
