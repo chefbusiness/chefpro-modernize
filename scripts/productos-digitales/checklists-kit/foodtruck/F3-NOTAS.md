@@ -59,7 +59,9 @@ role, weekly and monthly upkeep, a pre-event briefing and a 12-month US calendar
   `gate-flujo-postpago.py --offline --only food-truck-checklist-templates`: 12 = 12, falla SOLO «SIN Payment Link».
 - esbuild (stdin) sobre los TS/TSX tocados y el frontmatter de los `.astro` tocados (landing, access, library, gemelo ES,
   hub): 0 errores. JSON de catálogo y sitemap: válidos.
-- **No hecho (necesita preview):** `tienda-gate --base`, `--es-identico --esperadas /kit-tareas-food-truck`, render visual.
+- **No hecho (necesita preview):** `tienda-gate --base`, `--es-identico --esperadas /kit-tareas-food-truck` (el `<head>`), render visual.
+- **Cierre conjunto de los tres (CPU 44-49 °C):** `es-identico-local/comparar.mjs --ref main --en …`: **ES idénticas 40 · distintas 0** (la plantilla no se toca: sin flag de molde plano; las otras 12 fichas EN solo ganan sus líneas de pie, comprobado con `git diff origin/main`); render EN de las tres (≈ 253 KB) con `revisar_texto` de `tienda-gate` sin fallos, las mismas apariciones de la pasarela cripto y la nota de reembolso que el Taco Shop, 0 `aggregateRating`, `priceCurrency` USD. `robots-gate.py` estático verde.
+- **Auditoría adversarial (un agente opus, refutador, contra los volcados):** 0 cifras mal (recontó las 141 / 135 / 165 tareas y los campos de los bonus). Arreglado lo que señaló en esta ficha: «18 tasks with lead times» (solo 12 la llevan), «pre-event tasks for each» event type (son 6 genéricas), «a blank for each °F reading» (5), las 18 del 02 como «pre-trip» (11 lo son; el resto semanal, mensual o anual), «the hood … degreased by the crew» (solo los filtros), «11 Excel checklists» → «11 Excel files» (SEO, CTA, llms, correo) y «Manager checklists» → «A manager checklist».
 
 ## 3. Decisiones de contenido
 

@@ -50,6 +50,7 @@ calendar. Lifetime access to the dashboard.»
   (6 mg/L, 30–35 ppt, pH 7.5–8.5, 90 min, 2 h, 48 h, < 32 %, 15 h / 24 h / 7 days, EPA 608) presentes en el volcado.
 - `tienda-gate.py` estático verde; `sync-product-prices --check` verde; `gate-flujo-postpago --offline --only
   seafood-restaurant-checklist-templates`: 12 = 12, falla SOLO «SIN Payment Link»; esbuild 0 errores.
+- Cierre conjunto (ver `../foodtruck/F3-NOTAS.md` §2): ES idénticas 40/40, render EN sin fallos de `revisar_texto`. **Auditoría adversarial:** arreglados el testimonio de Ana García (las vedas están en el 08, no en el calendario, y la gamba del kit EN es de todo el año → «frozen lobster tails … fresh lobster season»), «a column for each reading», «lot log» / «parasite-destruction record» como si fueran hojas (son filas que mandan llevarlos: → «lot traceability», «record kept 90 days»; keywords sin «receiving log» ni «tag log»), la repetición del testimonio de Carlos Méndez, «the tank checked overnight» (al cierre), el walk-in de vivos «a 0 °F», «receiving … twice a day» (en cada entrega), la destrucción de parásitos bajo la barra de crudos (es el PCC 5 del 03), «11 Excel checklists» y «Manager checklists».
 
 ## 3. Decisiones de contenido
 

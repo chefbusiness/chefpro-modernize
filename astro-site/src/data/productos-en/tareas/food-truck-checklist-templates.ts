@@ -42,7 +42,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Food Truck Checklists Kit Pro: Inspection, Setup & Teardown Checklist Templates for Excel',
     description:
-      '11 Excel food truck checklists with 141 tasks already written: health inspection prep, pre-trip, setup & teardown, propane, permits, events. One-time $15.',
+      '11 Excel files with 141 food truck tasks already written: health inspection prep, pre-trip, setup & teardown, propane, permits, events. One-time $15.',
     keywords:
       'food truck checklist, food truck inspection checklist, food truck health inspection checklist, food truck fire inspection checklist, food truck pre-trip inspection checklist, food truck setup checklist, food truck teardown checklist, food truck opening checklist, food truck closing checklist, food truck daily checklist, food truck permits checklist, food truck commissary, AI Chef Pro',
     // OG = el hero de la ficha (como los hermanos EN): el og-kit-tareas-food-truck.jpg del ES lleva texto en español y €.
@@ -68,7 +68,7 @@ const data: KitTareasData = {
       },
       {
         q: 'What is a food truck pre-trip inspection?',
-        a: 'The check you run before the truck rolls: fuel, tire pressure, lights, turn signals and brakes, registration and commercial auto insurance current, kitchen equipment secured, extinguishers tagged, the generator test-started, propane cylinders strapped in with the valves closed, the fresh water tank full and the wastewater tank empty. The kit\'s pre-trip and vehicle checklist has 18 of those checks already written.',
+        a: 'The check you run before the truck rolls: fuel, tire pressure, lights, turn signals and brakes, registration and commercial auto insurance current, kitchen equipment secured, extinguishers tagged, the generator test-started, propane cylinders strapped in with the valves closed, the fresh water tank full and the wastewater tank empty. The kit\'s vehicle checklist has 18 checks already written, 11 of them marked pre-trip and the rest weekly, monthly or yearly.',
       },
       {
         q: 'Is there a free food truck checklist template in Excel or PDF?',
@@ -116,7 +116,7 @@ const data: KitTareasData = {
       'Pre-trip and vehicle: fuel, tires, lights, registration, extinguishers, generator, propane leak test and water tanks',
       'Health inspection prep in °F: cold at 41 °F, cooking at 165 / 155 / 145 °F, hot holding at 135 °F, handwashing and allergens',
       'Permits and events: mobile vending license, health permit, commissary agreement, insurance and a COI, temporary event permits',
-      'Manager checklists, duties for 4 roles (chef, prep cook, window staff, driver / tech) and weekly and monthly upkeep',
+      'A manager checklist, duties for 4 roles (chef, prep cook, window staff, driver / tech) and weekly and monthly upkeep',
       'Bonuses: a pre-event briefing and a 12-month US calendar of events, menus, maintenance and marketing',
     ],
     ctaLabel: 'BUY NOW — $15',
@@ -149,7 +149,7 @@ const data: KitTareasData = {
       {
         icon: 'MapPin',
         title: 'Food Truck Permits, Events & Locations Checklist',
-        desc: 'Permits and licenses (mobile vending license, mobile food unit health permit and commissary agreement, general liability and commercial auto insurance, business license, seller\'s permit and EIN, sales tax by vending location), the pre-event tasks (location, power, stock, event menu, temporary event permit, COI, fire marshal) and 6 event types, from truck parks and night markets to weddings. 18 tasks with lead times.',
+        desc: 'Permits and licenses (mobile vending license, mobile food unit health permit and commissary agreement, general liability and commercial auto insurance, business license, seller\'s permit and EIN, sales tax by vending location), the pre-event tasks (location, power, stock, event menu, temporary event permit, COI, fire marshal) and 6 event types, from truck parks and night markets to weddings. 18 tasks, the permits and pre-event ones with lead times.',
       },
       {
         icon: 'Users',
@@ -280,7 +280,7 @@ const data: KitTareasData = {
   faqs: [
     {
       q: 'What is on a food truck health inspection checklist?',
-      a: 'The same things the inspector checks, in the order you can prove them. Temperatures: the cooler at 41 °F or below before loading, logged in transit and checked again on arrival (cold 41 °F or below, frozen 0 °F or below), cooking temperatures probed (poultry 165 °F; ground beef and other ground meats 155 °F for 17 seconds; fish and whole-muscle pork or beef 145 °F for 15 seconds), hot food held at 135 °F or above or under time as a public health control with a written procedure, and thawing never at room temperature. Handling: a handwashing sink with hot water at 100 °F or above, soap and paper towels (hand sanitizer only after washing), no bare-hand contact with ready-to-eat food, sanitizer checked with test strips, raw and cooked foods apart and color-coded cutting boards. Allergens and paperwork: an allergen chart at the window with the 9 major allergens, a crew trained to answer allergy questions, the health permit posted, temperature and commissary logs in the truck, food handler cards for the crew and a Certified Food Protection Manager in charge. The "Food Safety & Inspection" checklist has those 18 checks already written, with a blank for each °F reading.',
+      a: 'The same things the inspector checks, in the order you can prove them. Temperatures: the cooler at 41 °F or below before loading, logged in transit and checked again on arrival (cold 41 °F or below, frozen 0 °F or below), cooking temperatures probed (poultry 165 °F; ground beef and other ground meats 155 °F for 17 seconds; fish and whole-muscle pork or beef 145 °F for 15 seconds), hot food held at 135 °F or above or under time as a public health control with a written procedure, and thawing never at room temperature. Handling: a handwashing sink with hot water at 100 °F or above, soap and paper towels (hand sanitizer only after washing), no bare-hand contact with ready-to-eat food, sanitizer checked with test strips, raw and cooked foods apart and color-coded cutting boards. Allergens and paperwork: an allergen chart at the window with the 9 major allergens, a crew trained to answer allergy questions, the health permit posted, temperature and commissary logs in the truck, food handler cards for the crew and a Certified Food Protection Manager in charge. The "Food Safety & Inspection" checklist has those 18 checks already written, with blanks for the °F readings.',
     },
     {
       q: 'What should a food truck fire inspection checklist cover?',
@@ -288,7 +288,7 @@ const data: KitTareasData = {
     },
     {
       q: 'What is a food truck pre-trip inspection?',
-      a: 'The check you run before the truck rolls, so nothing fails on the road or at the event. The "Vehicle & Mobile Ops" checklist covers it in 18 checks: enough fuel for the round trip, tire pressure for the extra weight, lights, turn signals and brakes, registration with your state DMV and commercial auto insurance current (a vehicle safety inspection only where your state requires one, and a CDL only if the truck is 26,001 lb GVWR or more), kitchen equipment secured, extinguishers tagged; the generator fueled and test-started, extension cords in good shape; propane cylinders for the shift, secured and leak-tested; the fresh water tank filled from an approved source and the wastewater tank empty, the water pump working, and trash bags and the used-oil container on board.',
+      a: 'The check you run before the truck rolls, so nothing fails on the road or at the event. The "Vehicle & Mobile Ops" checklist has 18 checks, 11 of them marked pre-trip and the rest weekly, monthly or yearly: enough fuel for the round trip, tire pressure for the extra weight, lights, turn signals and brakes, registration with your state DMV and commercial auto insurance current (a vehicle safety inspection only where your state requires one, and a CDL only if the truck is 26,001 lb GVWR or more), kitchen equipment secured, extinguishers tagged; the generator fueled and test-started, extension cords in good shape; propane cylinders for the shift, secured and leak-tested; the fresh water tank filled from an approved source and the wastewater tank empty, the water pump working, and trash bags and the used-oil container on board.',
     },
     {
       q: 'What should be on a food truck setup checklist?',
@@ -312,11 +312,11 @@ const data: KitTareasData = {
     },
     {
       q: 'Does it work for different types of events?',
-      a: 'Yes. The permits checklist covers 6 event types (food truck parks, farmers markets and night markets; music festivals, county fairs and street fairs; corporate events and private catering; weddings and celebrations; races and sporting events; and a regular daily spot where your city allows it), with the pre-event tasks for each: location, access and setup time, power, expected sales, an event menu and the permits. The pre-event briefing bonus puts it all on one sheet, and the seasonal checklist and annual calendar plan the festivals, fairs, wedding season and holiday markets ahead.',
+      a: 'Yes. The permits checklist covers 6 event types (food truck parks, farmers markets and night markets; music festivals, county fairs and street fairs; corporate events and private catering; weddings and celebrations; races and sporting events; and a regular daily spot where your city allows it), plus 6 pre-event tasks to run before any of them: location, access and setup time, power, expected sales, an event menu and the permits. The pre-event briefing bonus puts it all on one sheet, and the seasonal checklist and annual calendar plan the festivals, fairs, wedding season and holiday markets ahead.',
     },
     {
       q: 'What should a food truck cleaning checklist include?',
-      a: 'Daily cleaning goes in the teardown: the griddle, fryer and work surfaces cleaned and sanitized, and the tanks emptied. On top of that, the kit schedules a weekly deep clean inside the truck, the hood and filters degreased by the crew (with the hood and ducts cleaned by a certified contractor as often as NFPA 96 requires), the fryer oil changed and used oil sent to a licensed recycler, and the fresh water tank, pump and hose cleaned and sanitized; and monthly upkeep: generator service, brakes, tires and lights, a review of your temperature, cleaning and commissary logs, and packaging restocked.',
+      a: 'Daily cleaning goes in the teardown: the griddle, fryer and work surfaces cleaned and sanitized, and the tanks emptied. On top of that, the kit schedules a weekly deep clean inside the truck, the hood filters degreased by the crew (with the hood and ducts cleaned by a certified contractor as often as NFPA 96 requires), the fryer oil changed and used oil sent to a licensed recycler, and the fresh water tank, pump and hose cleaned and sanitized; and monthly upkeep: generator service, brakes, tires and lights, a review of your temperature, cleaning and commissary logs, and packaging restocked.',
     },
     {
       q: 'Is there a free food truck checklist template in Excel or PDF?',
@@ -361,7 +361,7 @@ const data: KitTareasData = {
   ],
 
   cta: {
-    heading: 'Your Food Truck, Organized from Pre-Trip to Teardown — in 11 Checklists',
+    heading: 'Your Food Truck, Organized from Pre-Trip to Teardown — in 11 Excel Files',
     subtitle:
       '9 templates + 3 bonuses (12 files) for the critical areas of your truck: setup and teardown, the vehicle, propane and water, food safety, permits, events and roles. For a one-time $15.',
     items: [

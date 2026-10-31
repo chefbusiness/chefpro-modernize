@@ -52,6 +52,7 @@ US calendar. Lifetime access to the dashboard.»
   grains» (→ «specialty grains»: el 08 dice spelt, kamut, buckwheat, whole rye).
 - `tienda-gate.py` estático verde; `sync-product-prices --check` verde; `gate-flujo-postpago --offline --only
   bakery-checklist-templates`: 12 = 12, falla SOLO «SIN Payment Link»; esbuild 0 errores (TS/TSX y frontmatter).
+- Cierre conjunto (ver `../foodtruck/F3-NOTAS.md` §2): ES idénticas 40/40, render EN sin fallos de `revisar_texto`. **Auditoría adversarial:** arreglados «sourdough starter log» (el 02 es un checklist con una fila de registro y una columna «Reading», no una hoja de registro: ficha, keywords, hub, correo), «a column for each reading» (es una), el testimonio de María López («poolish y biga registrados con temperaturas y horas» → la fila no las pide; frase cambiada), «the damper … for each oven» (solo el de solera), «11 Excel checklists» → «11 Excel files» y «Manager checklists».
 
 ## 3. Decisiones de contenido
 

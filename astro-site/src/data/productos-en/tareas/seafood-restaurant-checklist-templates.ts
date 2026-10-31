@@ -49,9 +49,9 @@ const data: KitTareasData = {
   seo: {
     title: 'Seafood Restaurant Checklists Kit Pro: Raw Bar, Receiving & Opening Checklist Templates for Excel',
     description:
-      '11 Excel seafood restaurant checklists with 165 tasks already written: opening & closing, live tank, receiving, shellfish tags, raw bar, HACCP. One-time $15.',
+      '11 Excel files with 165 seafood restaurant tasks already written: opening & closing, live tank, receiving, shellfish tags, raw bar, HACCP. One-time $15.',
     keywords:
-      'seafood restaurant checklist, seafood restaurant opening checklist, seafood restaurant closing checklist, restaurant opening checklist, raw bar checklist, raw bar setup checklist, oyster bar checklist, seafood receiving checklist, seafood receiving log, shellfish tag log, live lobster tank checklist, seafood HACCP checklist, AI Chef Pro',
+      'seafood restaurant checklist, seafood restaurant opening checklist, seafood restaurant closing checklist, restaurant opening checklist, raw bar checklist, raw bar setup checklist, oyster bar checklist, seafood receiving checklist, shellfish tags 90 days, live lobster tank checklist, seafood HACCP checklist, AI Chef Pro',
     // OG = el hero de la ficha (como los hermanos EN): el og-kit-tareas-marisqueria.jpg del ES lleva texto en español y €.
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
   },
@@ -120,9 +120,9 @@ const data: KitTareasData = {
     checkItems: [
       'Opening and closing for the live tank, the ice display, the kitchen and the dining room, task by task with times',
       'Live tank and receiving: oxygen, salinity and pH, mortality, the day\'s catch, freshness signs and histamine-forming fish',
-      'Shellfish tags kept 90 days, shellfish only from NSSP-listed shippers and a lot log for traceability',
-      'Raw bar on drained ice at 41 °F, oysters shucked to order, parasite destruction and the consumer advisory for raw fish',
-      'Manager checklists, duties for 5 roles (head chef, fish station, shellfish station, FOH manager, server) and upkeep',
+      'Shellfish tags kept 90 days, shellfish only from NSSP-listed shippers and lot traceability (lot, supplier, date, weight)',
+      'Raw bar on drained ice at 41 °F and oysters shucked to order with the consumer advisory; parasite destruction for raw fish',
+      'A manager checklist, duties for 5 roles (head chef, fish station, shellfish station, FOH manager, server) and upkeep',
       'Bonuses: a pre-shift meeting template with today\'s catch and a 12-month US calendar of seafood seasons and events',
     ],
     ctaLabel: 'BUY NOW — $15',
@@ -140,17 +140,17 @@ const data: KitTareasData = {
       {
         icon: 'DoorOpen',
         title: 'Seafood Restaurant Opening & Closing Checklist: Live Tank, Display, Kitchen & Dining Room',
-        desc: 'Opening for the live tank and the display (8 tasks), the kitchen (8) and the dining room (5): water and aeration checked, dead animals logged, the display on drained ice at 41 °F, walk-ins and freezer, sauces and fish stock, safe thawing, the raw bar, seafood tools and today\'s catch. Closing (9): the display into the walk-in on ice, the tank checked overnight, waste, the fish area sanitized, tomorrow\'s order and the register. 30 tasks, each with a time and who does it.',
+        desc: 'Opening for the live tank and the display (8 tasks), the kitchen (8) and the dining room (5): water and aeration checked, dead animals logged, the display on drained ice at 41 °F, walk-ins and freezer, sauces and fish stock, safe thawing, the raw bar, seafood tools and today\'s catch. Closing (9): the display into the walk-in on ice, the tank checked at close for overnight mortality, waste, the fish area sanitized, tomorrow\'s order and the register. 30 tasks, each with a time and who does it.',
       },
       {
         icon: 'Droplets',
         title: 'Live Tank & Seafood Receiving Checklist: Water Quality, Suppliers & Freshness Signs',
-        desc: 'Daily live tank checks (water temperature by species per your supplier and the tank maker, dissolved oxygen at 6 mg/L or more, salinity, pH, filter, mortality, feeding), receiving from your seafood distributor or dock-to-door supplier (refrigerated transport, the day\'s catch, shellstock tags and invoices, 41 °F cold and 0 °F frozen, histamine-forming fish rejected if warm, the lot log) and the freshness signs for fish, live crustaceans, bivalves and cephalopods. 21 checks with a column for each reading.',
+        desc: 'Daily live tank checks (water temperature by species per your supplier and the tank maker, dissolved oxygen at 6 mg/L or more, salinity, pH, filter, mortality, feeding), receiving from your seafood distributor or dock-to-door supplier (refrigerated transport, the day\'s catch, shellstock tags and invoices, 41 °F cold and 0 °F frozen, histamine-forming fish rejected if warm, lot traceability) and the freshness signs for fish, live crustaceans, bivalves and cephalopods. 21 checks with a Reading column.',
       },
       {
         icon: 'ShieldCheck',
         title: 'Seafood HACCP & Traceability Checklist: Shellfish Tags, Allergens & Critical Control Points',
-        desc: 'Traceability (lot, species with its FDA Seafood List market name, harvest area or origin, dates, receiving and walk-in temperatures, thawing), allergens (crustacean shellfish and fish are major US allergens, molluscs are not; separate prep areas, a written notice, anaphylaxis training) and 5 critical control points: receiving with shellstock per NSSP rules, storage, cooking to 145 °F, the display on drained ice and raw fish with its parasite-destruction record and consumer advisory. 17 checks.',
+        desc: 'Traceability (lot, species with its FDA Seafood List market name, harvest area or origin, dates, receiving and walk-in temperatures, thawing), allergens (crustacean shellfish and fish are major US allergens, molluscs are not; separate prep areas, a written notice, anaphylaxis training) and 5 critical control points: receiving with shellstock per NSSP rules, storage, cooking to 145 °F, the display on drained ice and raw fish with parasite destruction (record kept 90 days) and the consumer advisory. 17 checks.',
       },
       {
         icon: 'Snowflake',
@@ -215,7 +215,7 @@ const data: KitTareasData = {
       {
         icon: 'ShieldCheck',
         title: 'Shellfish Tags and HACCP',
-        desc: 'Shellstock tags kept 90 days, shellfish only from NSSP-listed shippers, a lot log, 5 critical control points and the parasite-destruction record for raw fish. Ready when the health inspector asks.',
+        desc: 'Shellstock tags kept 90 days, shellfish only from NSSP-listed shippers, lot traceability, 5 critical control points and parasite destruction for raw fish, with its record kept 90 days. Ready when the health inspector asks.',
       },
       {
         icon: 'RefreshCw',
@@ -287,7 +287,7 @@ const data: KitTareasData = {
   faqs: [
     {
       q: 'What should be on a seafood restaurant opening checklist?',
-      a: "Everything a restaurant opening checklist has, plus the live product. The live tank and the display first: the water temperature checked by species (per your supplier and the tank maker's spec), aeration and filters, live shellfish condition, dead animals removed and logged, the display set on drained crushed ice (display ice is never used in food), today's seafood laid out by family with price labels, and the display at 41 °F or below. Then the kitchen: the fresh fish walk-in at 41 °F or below with the fish on ice, the live shellfish walk-in and the freezer at 0 °F or below, the sauces (cocktail sauce, mignonette, tartar, remoulade, drawn butter), the fish stock, the sides, the griddle and grill, and the day's thawing done in the walk-in or under cold running water at 70 °F or below. Then the dining room: tables set with seafood tools, bibs, wet wipes and lemons, today's menu with the catch and prices, the raw bar with shellfish from NSSP-listed shippers, and the reservations with shellfish allergy notes. The \"Opening & Closing\" checklist has those 21 opening tasks already written, each with a time and who does it.",
+      a: "Everything a restaurant opening checklist has, plus the live product. The live tank and the display first: the water temperature checked by species (per your supplier and the tank maker's spec), aeration and filters, live shellfish condition, dead animals removed and logged, the display set on drained crushed ice (display ice is never used in food), today's seafood laid out by family with price labels, and the display at 41 °F or below. Then the kitchen: the fresh fish walk-in at 41 °F or below with the fish on ice, the live shellfish walk-in at the right temperature for each species, the freezer at 0 °F or below, the sauces (cocktail sauce, mignonette, tartar, remoulade, drawn butter), the fish stock, the sides, the griddle and grill, and the day's thawing done in the walk-in or under cold running water at 70 °F or below. Then the dining room: tables set with seafood tools, bibs, wet wipes and lemons, today's menu with the catch and prices, the raw bar with shellfish from NSSP-listed shippers, and the reservations with shellfish allergy notes. The \"Opening & Closing\" checklist has those 21 opening tasks already written, each with a time and who does it.",
     },
     {
       q: 'What goes on a seafood restaurant closing checklist?',
@@ -303,7 +303,7 @@ const data: KitTareasData = {
     },
     {
       q: 'What should a seafood receiving checklist cover?',
-      a: 'The delivery time with your seafood distributor or dock-to-door supplier and refrigerated transport at 41 °F or below; the day\'s catch checked for species, size and freshness; the paperwork for every lot (shellstock tags, and species, origin and supplier on the invoice for finfish); the receiving check (temperature, appearance, smell, eyes; cold at 41 °F or below, frozen at 0 °F or below and frozen solid; shellstock received per NSSP rules, on ice or shipped at 45 °F air or 50 °F internal or below, then held at 41 °F); a traceability log with lot, supplier, date and weight; and the product in the walk-in right away. The freshness signs are spelled out: bright, convex eyes, red gills, firm flesh, a fresh ocean smell and never ammonia, live crustaceans active, bivalves closed or closing when tapped.',
+      a: 'The delivery time with your seafood distributor or dock-to-door supplier and refrigerated transport at 41 °F or below; the day\'s catch checked for species, size and freshness; the paperwork for every lot (shellstock tags, and species, origin and supplier on the invoice for finfish); the receiving check (temperature, appearance, smell, eyes; cold at 41 °F or below, frozen at 0 °F or below and frozen solid; shellstock received per NSSP rules, on ice or shipped at 45 °F air or 50 °F internal or below, then held at 41 °F); lot, supplier, date and weight logged for traceability; and the product in the walk-in right away. The freshness signs are spelled out: bright, convex eyes, red gills, firm flesh, a fresh ocean smell and never ammonia, live crustaceans active, bivalves closed or closing when tapped.',
     },
     {
       q: 'Does it cover the live lobster tank?',
@@ -311,7 +311,7 @@ const data: KitTareasData = {
     },
     {
       q: 'Does it cover HACCP and traceability?',
-      a: 'Yes. The traceability records cover the lot number, species (with its FDA Seafood List market name and scientific name), harvest area or origin, catch method, date, weight and supplier; receiving and walk-in temperatures twice a day; shelf life (fresh shellfish within 48 hours as a house standard, cooked ready-to-eat seafood date-marked for 7 days at 41 °F); and thawing. The HACCP section lists 5 critical control points: receiving, storage in separate walk-ins, cooking fish and shellfish to 145 °F for 15 seconds, the display on drained ice at 41 °F or below rotated every 2 hours, and raw or undercooked fish with its parasite-destruction record. The monthly checklist reviews the records so they are ready for the health inspection.',
+      a: 'Yes. The traceability records cover the lot number, species (with its FDA Seafood List market name and scientific name), harvest area or origin, catch method, date, weight and supplier; the receiving temperature of every delivery and the walk-ins twice a day; shelf life (fresh shellfish within 48 hours as a house standard, cooked ready-to-eat seafood date-marked for 7 days at 41 °F); and thawing. The HACCP section lists 5 critical control points: receiving, storage in separate walk-ins, cooking fish and shellfish to 145 °F for 15 seconds, the display on drained ice at 41 °F or below rotated every 2 hours, and raw or undercooked fish with parasite destruction and its record. The monthly checklist reviews the records so they are ready for the health inspection.',
     },
     {
       q: 'Does it cover raw fish, ceviche and crudo?',
@@ -339,7 +339,7 @@ const data: KitTareasData = {
     },
     {
       q: 'How do you check off the tasks?',
-      a: 'Each checklist has columns for the area, the task, who does it, when (a time on the opening and closing list, a frequency, a day or a lead time in the others), OK and notes; the live tank and receiving checklist adds a column for each reading. In 7 of the checklists the OK column has a ✓ / — / N/A drop-down, and the row turns green when you pick ✓; the manager checklist has a status column you fill in yourself. Print the list and hand it to the team, or keep it open on a tablet.',
+      a: 'Each checklist has columns for the area, the task, who does it, when (a time on the opening and closing list, a frequency, a day or a lead time in the others), OK and notes; the live tank and receiving checklist adds a Reading column. In 7 of the checklists the OK column has a ✓ / — / N/A drop-down, and the row turns green when you pick ✓; the manager checklist has a status column you fill in yourself. Print the list and hand it to the team, or keep it open on a tablet.',
     },
     {
       q: 'How is it different from checklist apps?',
@@ -372,13 +372,13 @@ const data: KitTareasData = {
   ],
 
   cta: {
-    heading: 'Your Seafood Restaurant, Organized from the Live Tank to the Raw Bar — in 11 Checklists',
+    heading: 'Your Seafood Restaurant, Organized from the Live Tank to the Raw Bar — in 11 Excel Files',
     subtitle:
       '9 templates + 3 bonuses (12 files) for the critical areas of your seafood restaurant: the live tank, receiving, traceability, the raw bar, roles and seasons. For a one-time $15.',
     items: [
       'Opening and closing for the live tank, the display, the kitchen and the dining room',
       'Live tank: oxygen, salinity, pH, filters and mortality, every day',
-      'Receiving and traceability: shellstock tags kept 90 days, lot log, histamine-forming fish (FDA Food Code)',
+      'Receiving and traceability: shellstock tags kept 90 days, lot traceability, histamine-forming fish (FDA Food Code)',
       'Raw bar on drained ice at 41 °F, FIFO and oysters shucked to order',
       'Tasks by role: head chef, fish station, shellfish station, FOH manager, server',
       'US seafood seasons and events, from crawfish to the Feast of the Seven Fishes',
@@ -411,7 +411,7 @@ const data: KitTareasData = {
       {
         name: 'Carlos Méndez',
         role: 'Director, seafood restaurant group (3 locations)',
-        text: 'We rolled it out in all 3 locations. The ice display, FIFO rotation and oyster shucking now follow the same standard. Same standard in Vigo, Madrid and Marbella.',
+        text: 'We rolled it out in all 3 locations. The ice display, FIFO rotation and oyster shucking are now consistent: the same standard in Vigo, Madrid and Marbella.',
         avatar: '/avatars/avatar-3.jpg',
       },
       {
@@ -429,7 +429,7 @@ const data: KitTareasData = {
       {
         name: 'Ana García',
         role: 'Manager, fish restaurant in Barcelona',
-        text: 'The calendar with the seafood seasons and closures lets us plan the menu and our orders ahead. No more buying frozen shrimp right in the middle of the fresh season.',
+        text: 'The seasons checklist, with the closures, and the annual calendar let us plan the menu and our orders ahead. No more buying frozen lobster tails right in the middle of fresh lobster season.',
         avatar: '/avatars/avatar-4.jpg',
       },
       {

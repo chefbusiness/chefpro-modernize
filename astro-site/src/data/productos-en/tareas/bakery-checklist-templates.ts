@@ -41,9 +41,9 @@ const data: KitTareasData = {
   seo: {
     title: 'Bakery Checklists Kit Pro: Bread Bakery Opening, Production & Closing Checklist Templates for Excel',
     description:
-      '11 Excel bakery checklists with 135 tasks already written: overnight bake shift, sourdough starter, ovens, display & labels, manager, roles. One-time $15.',
+      '11 Excel files with 135 bakery tasks already written: overnight bake shift, sourdough starter, ovens, display & labels, manager, roles. One-time $15.',
     keywords:
-      'bakery checklist, bakery opening checklist, bakery closing checklist, bakery opening and closing checklist, bakery cleaning checklist, bakery cleaning schedule, bakery production schedule, bakery daily checklist, bread bakery checklist, sourdough bakery checklist, sourdough starter log, bakery manager checklist, AI Chef Pro',
+      'bakery checklist, bakery opening checklist, bakery closing checklist, bakery opening and closing checklist, bakery cleaning checklist, bakery cleaning schedule, bakery production schedule, bakery daily checklist, bread bakery checklist, sourdough bakery checklist, sourdough starter checklist, bakery manager checklist, AI Chef Pro',
     // OG = el hero de la ficha (como los hermanos EN): el og-kit-tareas-panaderia.jpg del ES lleva texto en español y €.
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
   },
@@ -65,8 +65,8 @@ const data: KitTareasData = {
         a: 'The starter fed for tomorrow, the mixer, workbench and utensils cleaned and sanitized, the ovens off and clean (gas ovens serviced by a licensed technician), day-old bread counted for donation, breadcrumbs or croutons, the register closed out with the cash count and over/short, and the flour order for tomorrow.',
       },
       {
-        q: 'Does it include a sourdough starter log?',
-        a: 'Yes. The starter checklist covers the daily 1:1:1 feeding, pH before use (3.8–4.2), starter temperature (75–82 °F), the float test, a backup in the refrigerator and a log of feeding date, pH, temperature and activity, with a column for each reading.',
+        q: 'Does it include a sourdough starter checklist?',
+        a: 'Yes. The starter checklist covers the daily 1:1:1 feeding, pH before use (3.8–4.2), starter temperature (75–82 °F), the float test, a backup in the refrigerator and a reminder to log feeding date, pH, temperature and activity, with a Reading column for your figures.',
       },
       {
         q: 'Is there a free bakery checklist template in Excel or PDF?',
@@ -110,10 +110,10 @@ const data: KitTareasData = {
       '9 templates + 3 bonuses (12 files) with 135 bread bakery tasks already written in Excel: the overnight bake shift from 3:00 AM, the sourdough starter and preferments, deck and rack ovens, the display case and labels, the manager, roles, cleaning and seasons. Print it, hand it to your team and check it off.',
     checkItems: [
       'Opening and closing on the overnight bake shift, task by task from 3:00 AM to 2:30 PM',
-      'Sourdough starter log: 1:1:1 feeding, pH 3.8–4.2, starter at 75–82 °F, float test, poolish and biga',
+      'Sourdough starter checklist: 1:1:1 feeding, pH 3.8–4.2, starter at 75–82 °F, float test, poolish and biga',
       'Deck and rack ovens with a bake table in °F: baguette, rustic loaf, ciabatta, whole wheat, croissant, brioche, sourdough',
       'Display case and counter: labels and the 9 major allergens, FIFO, gluten-free and organic only when you can back them',
-      'Manager checklists, duties for 4 roles (head baker, baker, bakery assistant, counter staff) and weekly and monthly upkeep',
+      'A manager checklist, duties for 4 roles (head baker, baker, bakery assistant, counter staff) and weekly and monthly upkeep',
       'Bonuses: a daily production sheet and a 12-month US calendar of seasonal breads, holiday orders, maintenance and training',
     ],
     ctaLabel: 'BUY NOW — $15',
@@ -136,7 +136,7 @@ const data: KitTareasData = {
       {
         icon: 'Wheat',
         title: 'Sourdough Starter & Fermentation Checklist: Starter, Bulk, Retard & Preferments',
-        desc: 'The natural starter (1:1:1 feeding, pH 3.8–4.2, 75–82 °F, float test, a backup in the refrigerator, the log), fermentation checks (dough at 75–79 °F after mixing, bulk time by bakehouse temperature, windowpane test, cold retard at 37–41 °F, final proof and the poke test) and yeast and preferments (fresh yeast at 36–39 °F, poolish and biga the night before). 16 checks with a column for each reading.',
+        desc: 'The natural starter (1:1:1 feeding, pH 3.8–4.2, 75–82 °F, float test, a backup in the refrigerator, the log), fermentation checks (dough at 75–79 °F after mixing, bulk time by bakehouse temperature, windowpane test, cold retard at 37–41 °F, final proof and the poke test) and yeast and preferments (fresh yeast at 36–39 °F, poolish and biga the night before). 16 checks with a Reading column.',
       },
       {
         icon: 'Flame',
@@ -206,7 +206,7 @@ const data: KitTareasData = {
       {
         icon: 'Flame',
         title: 'Deck and Rack Ovens, Down to the Detail',
-        desc: 'Preheating, steam, the damper and loading for each oven, and a bake table in °F for 7 breads, from baguette to brioche. Fewer batches lost to avoidable mistakes.',
+        desc: 'Preheating, steam and loading for each oven, the deck oven\'s damper, and a bake table in °F for 7 breads, from baguette to brioche. Fewer batches lost to avoidable mistakes.',
       },
       {
         icon: 'RefreshCw',
@@ -322,7 +322,7 @@ const data: KitTareasData = {
     },
     {
       q: 'Is there a free bakery checklist template in Excel or PDF?',
-      a: 'Yes, you will find free checklist templates online, and a blank one is fine to get started. This kit is something else: 11 Excel workbooks with 135 bread bakery tasks already written and sorted by shift, area and role, a sourdough starter log, a bake table and process temperatures in °F, and a ✓ / — / N/A drop-down on the checklists. Print it on US Letter, or save any sheet as a PDF from Excel.',
+      a: 'Yes, you will find free checklist templates online, and a blank one is fine to get started. This kit is something else: 11 Excel workbooks with 135 bread bakery tasks already written and sorted by shift, area and role, a sourdough starter checklist, a bake table and process temperatures in °F, and a ✓ / — / N/A drop-down on the checklists. Print it on US Letter, or save any sheet as a PDF from Excel.',
     },
     {
       q: 'Are the tasks already filled in for a bakery?',
@@ -363,12 +363,12 @@ const data: KitTareasData = {
   ],
 
   cta: {
-    heading: 'Your Bakery, Organized from the 3:00 AM Bake to the Close — in 11 Checklists',
+    heading: 'Your Bakery, Organized from the 3:00 AM Bake to the Close — in 11 Excel Files',
     subtitle:
       '9 templates + 3 bonuses (12 files) for the critical areas of your bakery: the overnight bake shift, the starter, the ovens, the display case, roles and seasons. For a one-time $15.',
     items: [
       'Opening and closing on the overnight bake shift, task by task with times',
-      'Sourdough starter log, fermentation checks, poolish and biga',
+      'Sourdough starter checklist, fermentation checks, poolish and biga',
       'Deck and rack ovens with a bake table in °F for 7 breads',
       'Display case and counter: labels, allergens, FIFO and special orders',
       'Tasks by role: head baker, baker, bakery assistant, counter staff',
@@ -397,7 +397,7 @@ const data: KitTareasData = {
       {
         name: 'María López',
         role: 'Bakery Owner, Barcelona',
-        text: 'Tracking our starters and preferments saved us. Now every feeding, every poolish and every biga is logged with its temperatures and times. No more lost batches.',
+        text: 'Tracking our starters and preferments saved us. Now every feeding is logged with its pH and temperature, and the poolish and biga go on the list every night. No more lost batches.',
         avatar: '/avatars/avatar-2.jpg',
       },
       {
