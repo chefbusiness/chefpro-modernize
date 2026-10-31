@@ -2,10 +2,10 @@
  "meta": {
   "kit": "seafood",
   "producto": "Seafood Restaurant Checklists Kit Pro",
-  "n_pendientes": 213,
-  "n_palabras": 1311,
+  "n_pendientes": 203,
+  "n_palabras": 1239,
   "motivos": {
-   "nueva": 213
+   "nueva": 203
   },
   "n_heredadas": 8,
   "heredadas_por_via": {
@@ -201,68 +201,6 @@
    "motivo": "nueva"
   },
   {
-   "id": "c0029",
-   "es": "Mise en place salsas: vizcaina, gallega, verde, romesco, ajada",
-   "grupo": "G1",
-   "palabras": 9,
-   "donde": [
-    "01 · Apertura y Cierre · B17"
-   ],
-   "adaptar": "Salsas de una marisquería US: cocktail sauce, mignonette, tartar, remoulade, drawn butter (en vez de vizcaína, gallega, verde, romesco y ajada)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0031",
-   "es": "Preparar caldo de pescado/fumets del dia",
-   "grupo": "G1",
-   "palabras": 7,
-   "donde": [
-    "01 · Apertura y Cierre · B18"
-   ],
-   "pistas": [
-    "fumet → fish stock (fumet)"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0033",
-   "es": "Verificar stock guarniciones: patatas, pimientos, grelos",
-   "grupo": "G1",
-   "palabras": 6,
-   "donde": [
-    "01 · Apertura y Cierre · B19"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0034",
-   "es": "Preparar mise en place plancha/parrilla",
-   "grupo": "G1",
-   "palabras": 6,
-   "donde": [
-    "01 · Apertura y Cierre · B20"
-   ],
-   "pistas": [
-    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
-    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0036",
-   "es": "Descongelar productos programados (FIFO, registro lote)",
-   "grupo": "G1",
-   "palabras": 6,
-   "donde": [
-    "01 · Apertura y Cierre · B21"
-   ],
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
-   ],
-   "adaptar": "Descongelación (FDA Food Code 3-501.13): en el walk-in a 41 °F o menos o bajo agua fría corriente a 70 °F o menos; el pescado congelado al vacío (ROP) se saca de la bolsa al descongelar",
-   "motivo": "nueva"
-  },
-  {
    "id": "c0037",
    "es": "APERTURA — Sala",
    "grupo": "G1",
@@ -360,65 +298,6 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "vivero → live tank (lobster tank); oxígeno → dissolved oxygen"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0048",
-   "es": "Inventario pescado/marisco: stock restante vs pedido manana",
-   "grupo": "G1",
-   "palabras": 8,
-   "donde": [
-    "01 · Apertura y Cierre · B31"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0049",
-   "es": "Registro mermas del dia (producto de alto valor)",
-   "grupo": "G1",
-   "palabras": 8,
-   "donde": [
-    "01 · Apertura y Cierre · B32"
-   ],
-   "pistas": [
-    "Glosario: mermas → waste (waste log)",
-    "mermas → waste (waste log)"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0050",
-   "es": "Limpieza profunda zona de pescado y tablas de corte",
-   "grupo": "G1",
-   "palabras": 9,
-   "donde": [
-    "01 · Apertura y Cierre · B33"
-   ],
-   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0051",
-   "es": "Verificar camaras: temperatura y cierre correcto",
-   "grupo": "G1",
-   "palabras": 6,
-   "donde": [
-    "01 · Apertura y Cierre · B34"
-   ],
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
-    "cámara → walk-in (cooler / freezer)"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0052",
-   "es": "Recoger cuberteria especial marisco, lavar y almacenar",
-   "grupo": "G1",
-   "palabras": 7,
-   "donde": [
-    "01 · Apertura y Cierre · B35"
    ],
    "motivo": "nueva"
   },
@@ -1807,7 +1686,7 @@
     "06 · Perfiles · B32"
    ],
    "pistas": [
-    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+    "vinos: Albariño (con eñe: FRASES_OK_EXTRA), Sauvignon Blanc, Muscadet, Chablis; 21+ con ID"
    ],
    "adaptar": "vino con la licencia de alcohol del local; mayores de 21 con ID (23 U.S.C. 158)",
    "motivo": "nueva"
@@ -1926,7 +1805,7 @@
     "07 · Semanales y Mensuales · B12"
    ],
    "pistas": [
-    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+    "vinos: Albariño (con eñe: FRASES_OK_EXTRA), Sauvignon Blanc, Muscadet, Chablis; 21+ con ID"
    ],
    "motivo": "nueva"
   },
@@ -2321,7 +2200,7 @@
     "B01 · Briefing Servicio · B23"
    ],
    "pistas": [
-    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+    "vinos: Albariño (con eñe: FRASES_OK_EXTRA), Sauvignon Blanc, Muscadet, Chablis; 21+ con ID"
    ],
    "adaptar": "vino con la licencia de alcohol del local; mayores de 21 con ID (23 U.S.C. 158)",
    "motivo": "nueva"

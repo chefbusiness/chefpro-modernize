@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-31T01:29:28Z",
+  "generado": "2026-10-31T02:34:12Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-panaderia",
-  "commit": "1b75dcf4",
+  "commit": "68694d7d",
   "libros": {
    "01": {
     "es": "01-apertura-cierre-panaderia.xlsx",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 425,
-  "n_traducir": 224,
-  "n_adaptar": 35,
-  "n_palabras_subagentes": 1123,
+  "n_traducir": 220,
+  "n_adaptar": 33,
+  "n_palabras_subagentes": 1096,
   "n_apariciones": 832,
   "grupos": [
    {
@@ -76,9 +76,9 @@
      "03",
      "04"
     ],
-    "n_cadenas": 91,
-    "n_adaptar": 15,
-    "n_palabras": 539
+    "n_cadenas": 87,
+    "n_adaptar": 13,
+    "n_palabras": 512
    },
    {
     "id": "G2",
@@ -98,9 +98,9 @@
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 112 mapa-glosario, 11 mapa-hoja, 78 regenerar",
-    "n_cadenas": 201,
-    "n_palabras": 604
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 111 mapa-glosario, 11 mapa-hoja, 83 regenerar",
+    "n_cadenas": 205,
+    "n_palabras": 631
    }
   ],
   "excluidas": {
@@ -883,98 +883,6 @@
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "B28",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0052",
-   "es": "Verificar hornos apagados y limpios",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "adaptar": "Hornos de gas: quemadores, juntas y conexiones por un técnico con licencia, con la frecuencia de tu código local; si huele a gas, no encender nada, salir y llamar a la compañía de gas o al 911 desde fuera",
-   "pistas": [
-    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
-   ],
-   "sha1": "02e6a71c2d85",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B29",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0053",
-   "es": "Inventario pan sobrante: donacion, pan rallado, tostadas",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "pistas": [
-    "mermas → waste; pan sobrante → day-old bread (discount, donation, breadcrumbs)",
-    "pan rallado → breadcrumbs; tostadas → croutons / toast"
-   ],
-   "sha1": "41aa60f4985a",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B30",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0054",
-   "es": "Cierre de caja y registro de ventas",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "adaptar": "Cierre de caja → cash count y over/short contra el POS Z report; cambio → starting bank (cash float)",
-   "pistas": [
-    "caja → POS / register; cambio → starting bank; cierre de caja → cash count y over/short"
-   ],
-   "sha1": "d82c4806d749",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B31",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0057",
-   "es": "Pedido de harina y materias primas para manana",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "sha1": "4f08703f0bca",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B32",
      "t": "celda",
      "tr": "traducir"
     }
@@ -5473,6 +5381,10 @@
    "es": "Obrador",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Production",
    "n_ficheros": 1,
    "n_apariciones": 17,
@@ -5613,8 +5525,8 @@
      "h": "Apertura y Cierre",
      "c": "A29",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -5623,6 +5535,10 @@
    "es": "Panadero",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Baker",
    "n_ficheros": 4,
    "n_apariciones": 48,
@@ -5747,8 +5663,8 @@
      "h": "Apertura y Cierre",
      "c": "C29",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "02",
@@ -6127,6 +6043,10 @@
    "es": "Tienda",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Shop",
    "n_ficheros": 2,
    "n_apariciones": 10,
@@ -6179,16 +6099,16 @@
      "h": "Apertura y Cierre",
      "c": "A30",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "A31",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "04",
@@ -6221,6 +6141,10 @@
    "es": "Dependiente",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Counter staff",
    "n_ficheros": 3,
    "n_apariciones": 22,
@@ -6273,8 +6197,8 @@
      "h": "Apertura y Cierre",
      "c": "C30",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "04",
@@ -6547,10 +6471,80 @@
    ]
   },
   {
+   "id": "c0052",
+   "es": "Verificar hornos apagados y limpios",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Count day-old bread: donate, make breadcrumbs or croutons",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "02e6a71c2d85",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B29",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0053",
+   "es": "Inventario pan sobrante: donacion, pan rallado, tostadas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Order flour and ingredients for tomorrow",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "41aa60f4985a",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B30",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0054",
+   "es": "Cierre de caja y registro de ventas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check ovens are off and clean; gas ovens: burners, gaskets and connections serviced by a licensed technician as your local code requires. Gas smell: light nothing, get out and call the gas company or 911 from outside",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "d82c4806d749",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B31",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0055",
    "es": "Encargado",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Manager",
    "n_ficheros": 4,
    "n_apariciones": 13,
@@ -6563,16 +6557,16 @@
      "h": "Apertura y Cierre",
      "c": "C31",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "C32",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "04",
@@ -6668,8 +6662,8 @@
    "id": "c0056",
    "es": "General",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "General",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Shop",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 1,
@@ -6681,8 +6675,30 @@
      "h": "Apertura y Cierre",
      "c": "A32",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Pedido de harina y materias primas para manana",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Close out the register and log sales: cash count and over/short against the POS Z report",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "4f08703f0bca",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B32",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },

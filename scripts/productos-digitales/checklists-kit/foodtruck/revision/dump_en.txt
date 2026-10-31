@@ -40,7 +40,7 @@ B11    : Turn on the flat-top griddle, fryer and oven and check temperatures; ho
 C11    : Kitchen
 D11    : 10 min
 A12    : Kitchen
-B12    : Plug in cold equipment (cooler, refrigerated prep table): 41 °F or below, frozen 0 °F or below (FDA Food Code 3-501.16) — log reading: ____ °F
+B12    : Plug in cold equipment (cooler, refrigerated prep table): 41 °F or below (FDA Food Code 3-501.16); frozen food stays frozen (0 °F or below is the common target) — log reading: ____ °F
 C12    : Kitchen
 D12    : 5 min
 A13    : Kitchen
@@ -228,7 +228,7 @@ B6     : Log temperatures in transit (thermometer): 41 °F or below — log read
 C6     : Kitchen
 D6     : In transit
 A7     : Cold temps
-B7     : Check temperatures on arrival at the vending spot: cold 41 °F or below, frozen 0 °F or below — log reading: ____ °F
+B7     : Check temperatures on arrival at the vending spot: cold 41 °F or below (FDA Food Code 3-501.16); frozen food still frozen (0 °F or below is the common target) — log reading: ____ °F
 C7     : Kitchen
 D7     : Setup
 A8     : Cooking temps
@@ -566,7 +566,7 @@ C26    : Before & after
 D26    : Daily
 A27    : Driver
 B27    : Basic truck and equipment maintenance
-C27    : Weekly
+C27    : Any time
 D27    : Weekly
 A29    : AI Chef Pro · aichef.pro · Food Truck Checklists Kit Pro
 DV E5 E6 E7 E8 E9 E11 E12 E13 E14 E15 E17 E18 E19 E20 E21 E23 E24 E25 E26 E27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None

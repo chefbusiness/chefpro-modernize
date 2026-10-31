@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-31T01:41:26Z",
+  "generado": "2026-10-31T02:33:59Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-marisqueria",
-  "commit": "4614fc9f",
+  "commit": "68694d7d",
   "libros": {
    "01": {
     "es": "01-apertura-cierre-marisqueria.xlsx",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 465,
-  "n_traducir": 221,
-  "n_adaptar": 57,
-  "n_palabras_subagentes": 1325,
+  "n_traducir": 211,
+  "n_adaptar": 54,
+  "n_palabras_subagentes": 1253,
   "n_apariciones": 944,
   "grupos": [
    {
@@ -76,9 +76,9 @@
      "03",
      "04"
     ],
-    "n_cadenas": 99,
-    "n_adaptar": 37,
-    "n_palabras": 668
+    "n_cadenas": 89,
+    "n_adaptar": 34,
+    "n_palabras": 596
    },
    {
     "id": "G2",
@@ -98,9 +98,9 @@
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 127 mapa-glosario, 11 mapa-hoja, 106 regenerar",
-    "n_cadenas": 244,
-    "n_palabras": 758
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 124 mapa-glosario, 11 mapa-hoja, 119 regenerar",
+    "n_cadenas": 254,
+    "n_palabras": 830
    }
   ],
   "excluidas": {
@@ -440,118 +440,6 @@
    ]
   },
   {
-   "id": "c0029",
-   "es": "Mise en place salsas: vizcaina, gallega, verde, romesco, ajada",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 9,
-   "con_cifra": false,
-   "adaptar": "Salsas de una marisquería US: cocktail sauce, mignonette, tartar, remoulade, drawn butter (en vez de vizcaína, gallega, verde, romesco y ajada)",
-   "sha1": "f8768e3918a9",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B17",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0031",
-   "es": "Preparar caldo de pescado/fumets del dia",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "pistas": [
-    "fumet → fish stock (fumet)"
-   ],
-   "sha1": "3936d847f6ff",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B18",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0033",
-   "es": "Verificar stock guarniciones: patatas, pimientos, grelos",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "sha1": "8137e6ccb2a8",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B19",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0034",
-   "es": "Preparar mise en place plancha/parrilla",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "pistas": [
-    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
-    "plancha → flat-top griddle (NUNCA «plancha»); parrilla → grill"
-   ],
-   "sha1": "1dc386c34c11",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B20",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0036",
-   "es": "Descongelar productos programados (FIFO, registro lote)",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "adaptar": "Descongelación (FDA Food Code 3-501.13): en el walk-in a 41 °F o menos o bajo agua fría corriente a 70 °F o menos; el pescado congelado al vacío (ROP) se saca de la bolsa al descongelar",
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
-   ],
-   "sha1": "c4b102ad196b",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B21",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0037",
    "es": "APERTURA — Sala",
    "grupo": "G1",
@@ -747,115 +635,6 @@
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "B30",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0048",
-   "es": "Inventario pescado/marisco: stock restante vs pedido manana",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "sha1": "f55b7987a75c",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B31",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0049",
-   "es": "Registro mermas del dia (producto de alto valor)",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "pistas": [
-    "Glosario: mermas → waste (waste log)",
-    "mermas → waste (waste log)"
-   ],
-   "sha1": "e2a311bbe299",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B32",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0050",
-   "es": "Limpieza profunda zona de pescado y tablas de corte",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 9,
-   "con_cifra": false,
-   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
-   "sha1": "14cfee2212de",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B33",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0051",
-   "es": "Verificar camaras: temperatura y cierre correcto",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
-    "cámara → walk-in (cooler / freezer)"
-   ],
-   "sha1": "fa5a6e99d2c6",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B34",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0052",
-   "es": "Recoger cuberteria especial marisco, lavar y almacenar",
-   "grupo": "G1",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "sha1": "40427ae05e85",
-   "donde": [
-    {
-     "f": "01",
-     "h": "Apertura y Cierre",
-     "c": "B35",
      "t": "celda",
      "tr": "traducir"
     }
@@ -3428,7 +3207,7 @@
    "con_cifra": false,
    "adaptar": "vino con la licencia de alcohol del local; mayores de 21 con ID (23 U.S.C. 158)",
    "pistas": [
-    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+    "vinos: Albariño (con eñe: FRASES_OK_EXTRA), Sauvignon Blanc, Muscadet, Chablis; 21+ con ID"
    ],
    "sha1": "9fb6f146db2d",
    "donde": [
@@ -3656,7 +3435,7 @@
    "palabras": 8,
    "con_cifra": false,
    "pistas": [
-    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+    "vinos: Albariño (con eñe: FRASES_OK_EXTRA), Sauvignon Blanc, Muscadet, Chablis; 21+ con ID"
    ],
    "sha1": "04a84b6fa0c8",
    "donde": [
@@ -4510,7 +4289,7 @@
    "con_cifra": false,
    "adaptar": "vino con la licencia de alcohol del local; mayores de 21 con ID (23 U.S.C. 158)",
    "pistas": [
-    "vinos: Albarino (sin eñe en la EN: el gate la lee como español), Godello, Txakoli; 21+ con ID"
+    "vinos: Albariño (con eñe: FRASES_OK_EXTRA), Sauvignon Blanc, Muscadet, Chablis; 21+ con ID"
    ],
    "sha1": "6056caa3459f",
    "donde": [
@@ -5608,6 +5387,10 @@
    "es": "Cocina",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Kitchen",
    "n_ficheros": 6,
    "n_apariciones": 76,
@@ -5716,8 +5499,8 @@
      "h": "Apertura y Cierre",
      "c": "C19",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
@@ -5740,8 +5523,8 @@
      "h": "Apertura y Cierre",
      "c": "C21",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
@@ -5764,48 +5547,48 @@
      "h": "Apertura y Cierre",
      "c": "A31",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "A32",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "A33",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "C33",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "A34",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "C34",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "02",
@@ -6230,6 +6013,10 @@
    "es": "Jefe cocina",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Head chef",
    "n_ficheros": 5,
    "n_apariciones": 17,
@@ -6250,16 +6037,16 @@
      "h": "Apertura y Cierre",
      "c": "C31",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "C32",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
@@ -6570,6 +6357,10 @@
    "es": "Sala",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "FOH",
    "n_ficheros": 2,
    "n_apariciones": 11,
@@ -6638,16 +6429,16 @@
      "h": "Apertura y Cierre",
      "c": "A35",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
      "h": "Apertura y Cierre",
      "c": "C35",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "04",
@@ -6706,11 +6497,33 @@
    ]
   },
   {
+   "id": "c0029",
+   "es": "Mise en place salsas: vizcaina, gallega, verde, romesco, ajada",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Thaw scheduled products (FIFO, lot log): in the walk-in at 41 °F or below or under cold running water at 70 °F or below (FDA Food Code 3-501.13); take vacuum-packed (ROP) frozen fish out of the bag when thawing",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 9,
+   "con_cifra": false,
+   "sha1": "f8768e3918a9",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B17",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0030",
    "es": "Partida salsas",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Sauce station",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Kitchen",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -6722,8 +6535,30 @@
      "h": "Apertura y Cierre",
      "c": "C17",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0031",
+   "es": "Preparar caldo de pescado/fumets del dia",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Mise en place sauces: cocktail sauce, mignonette, tartar, remoulade, drawn butter",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "3936d847f6ff",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B18",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -6731,8 +6566,8 @@
    "id": "c0032",
    "es": "Partida caldos",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Stock station",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Sauce station",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -6744,8 +6579,52 @@
      "h": "Apertura y Cierre",
      "c": "C18",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0033",
+   "es": "Verificar stock guarniciones: patatas, pimientos, grelos",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Make today's fish stock / fumet",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "8137e6ccb2a8",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B19",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0034",
+   "es": "Preparar mise en place plancha/parrilla",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check side stock: potatoes, peppers, greens",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "1dc386c34c11",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B20",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -6753,8 +6632,8 @@
    "id": "c0035",
    "es": "Parrilla",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Grill cook",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Kitchen",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 1,
@@ -6766,8 +6645,30 @@
      "h": "Apertura y Cierre",
      "c": "C20",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0036",
+   "es": "Descongelar productos programados (FIFO, registro lote)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Set up mise en place for the flat-top griddle / grill",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "c4b102ad196b",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B21",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -6908,6 +6809,116 @@
      "t": "celda",
      "tr": "mapa-glosario",
      "det": "mapas.GLOSARIO"
+    }
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Inventario pescado/marisco: stock restante vs pedido manana",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Collect the seafood service tools, wash and store them",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "f55b7987a75c",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B31",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0049",
+   "es": "Registro mermas del dia (producto de alto valor)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Fish / shellfish inventory: stock left vs. tomorrow's order",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "e2a311bbe299",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B32",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Limpieza profunda zona de pescado y tablas de corte",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Log today's waste (high-value product)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 9,
+   "con_cifra": false,
+   "sha1": "14cfee2212de",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B33",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0051",
+   "es": "Verificar camaras: temperatura y cierre correcto",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Deep clean the fish area and cutting boards, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "fa5a6e99d2c6",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B34",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0052",
+   "es": "Recoger cuberteria especial marisco, lavar y almacenar",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check walk-ins: temperature and doors closed",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "40427ae05e85",
+   "donde": [
+    {
+     "f": "01",
+     "h": "Apertura y Cierre",
+     "c": "B35",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -9532,7 +9543,7 @@
    "es": "Recepcion: temperatura pescado fresco <=2°C, congelado <=-18°C",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Receiving: fresh fish at 41 °F or below, frozen at 0 °F or below and frozen solid; shellstock per NSSP rules (on ice, or shipped at 45 °F air or 50 °F internal or below), then held at 41 °F (FDA Food Code 3-202.11)",
+   "en_por_celda": "Receiving: fresh fish at 41 °F or below; frozen food received frozen solid (0 °F or below is the common target); shellstock per NSSP rules (on ice, or shipped at 45 °F air or 50 °F internal or below), then held at 41 °F (FDA Food Code 3-202.11)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 9,
@@ -9666,7 +9677,7 @@
    "es": "Coccion: temperatura interna >=63°C en pescados y mariscos cocidos",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Cooking: fish and shellfish to 145 °F for 15 s internal (FDA Food Code 3-401.11)",
+   "en_por_celda": "Cooking: whole fish and shellfish to 145 °F for 15 s internal; comminuted fish 155 °F for 17 s; stuffed fish 165 °F (FDA Food Code 3-401.11)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 10,
@@ -9754,7 +9765,7 @@
    "es": "Anisakis: congelación previa −20 °C/24 h (o −35 °C/15 h) si se sirve crudo o marinado",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Raw or undercooked fish (crudo, ceviche, tartare) — parasite destruction (FDA Food Code 3-402.11): frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record 90 days (FDA Food Code 3-402.12) and the consumer advisory on the menu (FDA Food Code 3-603.11)",
+   "en_por_celda": "Raw or undercooked fish (crudo, ceviche, tartare) — parasite destruction (FDA Food Code 3-402.11; some species are exempt, see 3-402.11(B)): frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record 90 days (FDA Food Code 3-402.12) and the consumer advisory on the menu (FDA Food Code 3-603.11)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 18,

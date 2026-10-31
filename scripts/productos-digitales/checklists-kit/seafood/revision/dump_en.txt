@@ -52,7 +52,7 @@ B14    : Check the fresh fish walk-in: 41 °F or below, fish on ice (FDA Food Co
 C14    : Kitchen
 D14    : 7:00 AM
 A15    : Walk-ins
-B15    : Check the live shellfish walk-in temperature (varies by species)
+B15    : Check the live shellfish walk-in temperature: shellstock at 41 °F or below once received (FDA Food Code 3-202.11); live crustaceans per your supplier — log reading: ____ °F
 C15    : Kitchen
 D15    : 7:00 AM
 A16    : Walk-ins
@@ -60,25 +60,25 @@ B16    : Check the freezer: 0 °F or below — log reading: ____ °F
 C16    : Kitchen
 D16    : 7:00 AM
 A17    : Kitchen
-B17    : Mise en place sauces: cocktail sauce, mignonette, tartar, remoulade, drawn butter
-C17    : Sauce station
-D17    : 8:00 AM
+B17    : Thaw scheduled products (FIFO, lot log): in the walk-in at 41 °F or below or under cold running water at 70 °F or below (FDA Food Code 3-501.13); take vacuum-packed (ROP) frozen fish out of the bag when thawing
+C17    : Kitchen
+D17    : 7:30 AM
 A18    : Kitchen
-B18    : Make today's fish stock / fumet
-C18    : Stock station
+B18    : Mise en place sauces: cocktail sauce, mignonette, tartar, remoulade, drawn butter
+C18    : Sauce station
 D18    : 8:00 AM
 A19    : Kitchen
-B19    : Check side stock: potatoes, peppers, greens
-C19    : Kitchen
-D19    : 8:30 AM
+B19    : Make today's fish stock / fumet
+C19    : Stock station
+D19    : 8:00 AM
 A20    : Kitchen
-B20    : Set up mise en place for the flat-top griddle / grill
-C20    : Grill cook
+B20    : Check side stock: potatoes, peppers, greens
+C20    : Kitchen
 D20    : 8:30 AM
 A21    : Kitchen
-B21    : Thaw scheduled products (FIFO, lot log): in the walk-in at 41 °F or below or under cold running water at 70 °F or below (FDA Food Code 3-501.13); take vacuum-packed (ROP) frozen fish out of the bag when thawing
-C21    : Kitchen
-D21    : 7:30 AM
+B21    : Set up mise en place for the flat-top griddle / grill
+C21    : Grill cook
+D21    : 8:30 AM
 A22    : OPENING — Dining Room
 A23    : FOH
 B23    : Set tables with seafood service: crackers, picks, finger bowls
@@ -109,26 +109,26 @@ A30    : Live tank
 B30    : Check the live tank: temperature, oxygen, overnight mortality
 C30    : Kitchen
 D30    : 11:00 PM
-A31    : Kitchen
-B31    : Fish / shellfish inventory: stock left vs. tomorrow's order
-C31    : Head chef
-D31    : 11:15 PM
+A31    : FOH
+B31    : Collect the seafood service tools, wash and store them
+C31    : FOH
+D31    : 11:00 PM
 A32    : Kitchen
-B32    : Log today's waste (high-value product)
+B32    : Fish / shellfish inventory: stock left vs. tomorrow's order
 C32    : Head chef
 D32    : 11:15 PM
 A33    : Kitchen
-B33    : Deep clean the fish area and cutting boards, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
-C33    : Kitchen
-D33    : 11:30 PM
+B33    : Log today's waste (high-value product)
+C33    : Head chef
+D33    : 11:15 PM
 A34    : Kitchen
-B34    : Check walk-ins: temperature and doors closed
+B34    : Deep clean the fish area and cutting boards, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
 C34    : Kitchen
 D34    : 11:30 PM
-A35    : FOH
-B35    : Collect the seafood service tools, wash and store them
-C35    : FOH
-D35    : 11:00 PM
+A35    : Kitchen
+B35    : Check walk-ins: temperature and doors closed
+C35    : Kitchen
+D35    : 11:30 PM
 A36    : General
 B36    : Order from your seafood distributor / dock-to-door supplier for tomorrow (confirm before 11:30 PM)
 C36    : Head chef
@@ -312,7 +312,7 @@ C16    : Quarterly
 D16    : Management
 A17    : HACCP — Seafood Critical Control Points
 A18    : CCP 1
-B18    : Receiving: fresh fish at 41 °F or below, frozen at 0 °F or below and frozen solid; shellstock per NSSP rules (on ice, or shipped at 45 °F air or 50 °F internal or below), then held at 41 °F (FDA Food Code 3-202.11)
+B18    : Receiving: fresh fish at 41 °F or below; frozen food received frozen solid (0 °F or below is the common target); shellstock per NSSP rules (on ice, or shipped at 45 °F air or 50 °F internal or below), then held at 41 °F (FDA Food Code 3-202.11)
 C18    : Every delivery
 D18    : Kitchen
 F18    : Reject if above 41 °F
@@ -321,15 +321,15 @@ B19    : Storage: separate walk-ins (fish, live shellfish, frozen)
 C19    : Ongoing
 D19    : Kitchen
 A20    : CCP 3
-B20    : Cooking: fish and shellfish to 145 °F for 15 s internal (FDA Food Code 3-401.11)
+B20    : Cooking: whole fish and shellfish to 145 °F for 15 s internal; comminuted fish 155 °F for 17 s; stuffed fish 165 °F (FDA Food Code 3-401.11)
 C20    : Every service
 D20    : Kitchen
 A21    : CCP 4
-B21    : Display: seafood on drained ice at 41 °F or below (FDA Food Code 3-501.16), rotate every 2 h
+B21    : Display: seafood on drained ice at 41 °F or below (FDA Food Code 3-501.16): ice replenished every 90 min, melt water drained every 60 min, product rotated every 2 h
 C21    : Ongoing
 D21    : Kitchen
 A22    : CCP 5
-B22    : Raw or undercooked fish (crudo, ceviche, tartare) — parasite destruction (FDA Food Code 3-402.11): frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record 90 days (FDA Food Code 3-402.12) and the consumer advisory on the menu (FDA Food Code 3-603.11)
+B22    : Raw or undercooked fish (crudo, ceviche, tartare) — parasite destruction (FDA Food Code 3-402.11; some species are exempt, see 3-402.11(B)): frozen and stored at −4 °F or below for 7 days, or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h, or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h; keep the record 90 days (FDA Food Code 3-402.12) and the consumer advisory on the menu (FDA Food Code 3-603.11)
 C22    : Every lot
 D22    : Kitchen
 F22    : Required (FDA Food Code 3-402.11)
@@ -571,7 +571,7 @@ B12    : Prep bases: fumets, stocks, side sauces
 C12    : Morning
 D12    : Daily
 A13    : Fish station
-B13    : Cook fish: oven, griddle, grill, steam, fried
+B13    : Cook fish: oven, griddle, grill, steam, fry
 C13    : Service
 D13    : Daily
 A14    : Fish station
@@ -638,7 +638,7 @@ B31    : Clear shells and scraps between courses
 C31    : Service
 D31    : Daily
 A32    : Server
-B32    : Suggest white wines and Albarino pairings (21+ with ID, 23 U.S.C. 158)
+B32    : Suggest white wine pairings (Albariño, Sauvignon Blanc, Muscadet, Chablis; 21+ with ID, 23 U.S.C. 158)
 C32    : Service
 D32    : Daily
 A33    : Server
@@ -692,7 +692,7 @@ B11    : Sharpen knives (filleting, scaling)
 C11    : Kitchen
 D11    : Tuesday
 A12    : Weekly
-B12    : Check white wine and Albarino stock
+B12    : Check white wine stock (Albariño, Sauvignon Blanc, Muscadet, Chablis)
 C12    : FOH manager
 D12    : Monday
 A13    : Weekly
@@ -900,7 +900,7 @@ B21    : Special tables / regulars:
 A22    : Events
 B22    : Group seafood feasts / celebrations:
 A23    : Wine
-B23    : Wine pick of the day (Albarino, Godello, Txakoli; 21+ with ID):
+B23    : Wine pick of the day (Albariño, Sauvignon Blanc, Muscadet, Chablis; 21+ with ID):
 A25    : AI Chef Pro · aichef.pro · Seafood Restaurant Checklists Kit Pro
 ####################################################################################################
 # BONUS-02-seafood-restaurant-annual-calendar.xlsx

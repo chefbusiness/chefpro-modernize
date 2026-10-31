@@ -15,7 +15,7 @@ E3     : OK
 F3     : Notes
 A4     : OPENING — Overnight Bake Shift (3:00–5:00 AM)
 A5     : Production
-B5     : Turn on the ovens: proofer, deck / rack oven
+B5     : Turn on the ovens and the proofer: deck / rack oven
 C5     : Baker
 D5     : 3:00 AM
 F5     : Preheat 45–60 min
@@ -41,7 +41,7 @@ F9     : Summer 39–46 °F, winter 64–72 °F
 A10    : Production
 B10    : Check bakehouse temperature (72–79 °F ideal)
 C10    : Baker
-D10    : 3:00 AM
+D10    : 3:30 AM
 A11    : Production
 B11    : Prepare specialty doughs: brioche, croissant, whole wheat
 C11    : Baker
@@ -112,22 +112,22 @@ A28    : Production
 B28    : Clean the mixer, workbench and utensils, then sanitize at label strength, checked with test strips (FDA Food Code 4-501.114)
 C28    : Bakery assistant
 D28    : 2:00 PM
-A29    : Production
-B29    : Check ovens are off and clean; gas ovens: burners, gaskets and connections serviced by a licensed technician as your local code requires. Gas smell: light nothing, get out and call the gas company or 911 from outside
-C29    : Baker
-D29    : 2:30 PM
-A30    : Shop
-B30    : Count day-old bread: donate, make breadcrumbs or croutons
-C30    : Counter staff
+A29    : Shop
+B29    : Count day-old bread: donate, make breadcrumbs or croutons
+C29    : Counter staff
+D29    : 2:00 PM
+A30    : General
+B30    : Order flour and ingredients for tomorrow
+C30    : Manager
 D30    : 2:00 PM
-A31    : Shop
-B31    : Close out the register and log sales: cash count and over/short against the POS Z report
-C31    : Manager
+A31    : Production
+B31    : Check ovens are off and clean; gas ovens: burners, gaskets and connections serviced by a licensed technician as your local code requires. Gas smell: light nothing, get out and call the gas company or 911 from outside
+C31    : Baker
 D31    : 2:30 PM
-A32    : General
-B32    : Order flour and ingredients for tomorrow
+A32    : Shop
+B32    : Close out the register and log sales: cash count and over/short against the POS Z report
 C32    : Manager
-D32    : 2:00 PM
+D32    : 2:30 PM
 A34    : AI Chef Pro · aichef.pro · Bakery Checklists Kit Pro
 DV E5 E6 E7 E8 E9 E10 E11 E13 E14 E15 E16 E17 E18 E19 E21 E22 E23 E24 E25 E27 E28 E29 E30 E31 E32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=None · error=None · promptTitle=None · prompt=None
 CF A4:F32 · expression  · fórmula=['$E4="✓"'] · texto=None
@@ -578,7 +578,7 @@ B5     : Deep clean the mixer and divider, then sanitize at label strength, chec
 C5     : Bakery assistant
 D5     : Monday
 A6     : Weekly
-B6     : Deep clean the ovens (ash, grease)
+B6     : Deep clean the ovens (carbon, grease)
 C6     : Bakery assistant
 D6     : Monday
 A7     : Weekly

@@ -2,10 +2,10 @@
  "meta": {
   "kit": "bakery",
   "producto": "Bakery Checklists Kit Pro",
-  "n_pendientes": 217,
-  "n_palabras": 1107,
+  "n_pendientes": 213,
+  "n_palabras": 1080,
   "motivos": {
-   "nueva": 217
+   "nueva": 213
   },
   "n_heredadas": 7,
   "heredadas_por_via": {
@@ -434,58 +434,6 @@
     "amasar → mix; amasadora → mixer (spiral mixer); divisora → divider"
    ],
    "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0052",
-   "es": "Verificar hornos apagados y limpios",
-   "grupo": "G1",
-   "palabras": 5,
-   "donde": [
-    "01 · Apertura y Cierre · B29"
-   ],
-   "pistas": [
-    "horno de piso / solera → deck oven / deck; rotativo → rack oven; tiro de vapor → steam damper; escoba de horno → oven brush; pirómetro → infrared thermometer"
-   ],
-   "adaptar": "Hornos de gas: quemadores, juntas y conexiones por un técnico con licencia, con la frecuencia de tu código local; si huele a gas, no encender nada, salir y llamar a la compañía de gas o al 911 desde fuera",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0053",
-   "es": "Inventario pan sobrante: donacion, pan rallado, tostadas",
-   "grupo": "G1",
-   "palabras": 7,
-   "donde": [
-    "01 · Apertura y Cierre · B30"
-   ],
-   "pistas": [
-    "mermas → waste; pan sobrante → day-old bread (discount, donation, breadcrumbs)",
-    "pan rallado → breadcrumbs; tostadas → croutons / toast"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0054",
-   "es": "Cierre de caja y registro de ventas",
-   "grupo": "G1",
-   "palabras": 7,
-   "donde": [
-    "01 · Apertura y Cierre · B31"
-   ],
-   "pistas": [
-    "caja → POS / register; cambio → starting bank; cierre de caja → cash count y over/short"
-   ],
-   "adaptar": "Cierre de caja → cash count y over/short contra el POS Z report; cambio → starting bank (cash float)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0057",
-   "es": "Pedido de harina y materias primas para manana",
-   "grupo": "G1",
-   "palabras": 8,
-   "donde": [
-    "01 · Apertura y Cierre · B32"
-   ],
    "motivo": "nueva"
   },
   {
