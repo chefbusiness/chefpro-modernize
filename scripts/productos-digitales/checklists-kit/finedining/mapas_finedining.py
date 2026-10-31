@@ -184,7 +184,13 @@ CLAVES.update([('Tarea', 'Task')])
 # CF_POR_CELDA (desviación DECLARADA, la del catering, la heladería y el hotel): en las hojas cuyo rango de CF contiene
 # una cabecera interna («Tarea» en B, «✓» en E) la EN excluye esas filas. La lista la fija el censo (cruzar_censo
 # exige que coincida): F1
-_CF_HOJAS = []
+_CF_HOJAS = [('01', 'Apertura AM', 'A6:G46'), ('01', 'Cierre PM', 'A6:G33'), ('02', 'Pre-elab Largo', 'A6:G27'),
+             ('02', 'Pre-elab Medio', 'A6:G18'), ('02', 'Pre-elab Día', 'A6:G28'), ('02', 'Plating Bible', 'A6:G28'),
+             ('03', 'Sesiones I+D', 'A6:G34'), ('03', 'Documentación', 'A6:G41'), ('04', 'Maître-Sala', 'A6:G20'),
+             ('05', 'Semanales', 'A6:G35'), ('05', 'Mensuales', 'A6:G33'), ('05', 'Trimestral y Anual', 'A6:G37'),
+             ('06', 'Maridaje Menú', 'A6:G24'), ('06', 'Gestión Bodega', 'A6:G27'), ('07', "Chef's Table", 'A6:G20'),
+             ('07', 'Pop-ups', 'A6:G19'), ('07', 'Cenas Especiales', 'A6:G34'), ('08', 'Fotografía Platos', 'A6:G20'),
+             ('08', 'RRSS', 'A6:G20'), ('08', 'Prensa-Guías', 'A6:G18'), ('B01', 'Briefing Servicio', 'A6:G37')]
 CF_POR_CELDA = OrderedDict(((c, h, sq), ('$E6="✓"', 'AND($E6="✓",$B6<>"%s")' % CLAVES['Tarea']))
                            for c, h, sq in _CF_HOJAS)
 LIBROS_SIN_MARCA = ('01', '02', '03', '04', '05', '06', '07', '08', '09', 'B01', 'B02')
