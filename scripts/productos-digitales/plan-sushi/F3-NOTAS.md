@@ -53,6 +53,18 @@ esbuild de los .ts/.tsx tocados: OK · `sync-product-prices.py --check`: VERDE (
 --base`, `gate-flujo-postpago.py --base … --crypto-products all --crypto-exclude pro-prompts-ebook` (3 puertas + `<dialog>`; la plantilla
 las monta con `cryptoEnabledFor`, y la nota de devoluciones va con ella), JSON-LD y tarjeta de `/usos/` en el `dist`.
 
-## 5. Revisión adversarial
+## 5. Revisión adversarial (Opus, una pasada) · 0 B · 2 M · 8 m, todo arreglado (`42b72c12` + entregables)
 
-(se completa al cerrar)
+- **M1** La tarjeta del Kit de Tareas Sushi Bar en los 7 hubs + SPA y dos frases de sus testimonios decían «-20 ºC / 7 días» (la
+  opción FDA); sus plantillas (03, VPS) y este plan dicen ≥ 24 h a −20 °C o ≥ 15 h a −35 °C → solo esa frase (regla del 11-oct).
+- **M2** CTA «anisakis, shari y licencia antes de firmar el local» → consulta urbanística y anisakis antes de firmar; licencia y shari,
+  antes de abrir (= fases del checklist).
+- **m** arroz del día con merma (5,2 kg, `Arroz!B44`) · margen para llevar 21,76 € (`Escandallo!O26`) · comisión «del 30 %, editable»
+  (no «real»; landing ×2 y correo) · IVA del 21 %: «poco dinero, pero IVA que Hacienda reclama» (1,1 % de las ventas) · anisakis «o menos
+  en todo el producto» · «79 comensales EQUIVALENTES» (cada pedido = 1,6; Word [40]) · dashboard «4 Documentos + Bonus» · el pH del shari
+  va en la **plantilla 02** del Kit de Tareas (no la 03): `datos_checklist.py` y `calculadora_sus_es.py` → checklist y calculadora
+  regenerados en el VPS (`/root/tmp-sus-f3/`): `ciclo.sh` TODO VERDE, `--autotest` 580 VERDE, `cifras --calc` D9 VERDE con tokens
+  idénticos (`cmp`), barrido 0, LIT255 VERDE, restos 4 ficheros VERDE; diff celda a celda = solo `F3!E14`, `Arroz!A3` e
+  `Instrucciones!A14`. sha256 Mac = VPS: checklist `298a99d1…`, calculadora `9832c00a…` (plan y Word, sin tocar).
+- Comprobado sin hallazgo: todas las cifras del caso y de la calculadora, recuentos, legal, arreglos de la F2 no reintroducidos, restos de
+  hermanas, saludo y colores del correo, claves de las functions, enlaces.
