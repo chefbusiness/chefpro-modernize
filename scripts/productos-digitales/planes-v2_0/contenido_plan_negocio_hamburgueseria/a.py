@@ -179,10 +179,11 @@ SUPUESTOS = {
         'Dos meses de renta, lo habitual en un contrato de local de negocio: compruébalo con tu abogado',
         'R §3 [estimado]'),
     'suministros_mes': (
-        None, None, 1150, None,
+        None, None, 1100, None,
         'Gas de la plancha, luz de las freidoras eléctricas, de la extracción (potente: la plancha y las freidoras echan '
         'mucha grasa), del frío y de la climatización, y agua. Pide el histórico del local',
-        'R §3 [criterio del plan]'),
+        'R §3 (1.150 €) [criterio del plan] · calibrado F2: 1.100 € (= Sushi Bar) para que la demo §2.11.5 encuentre su '
+        'escenario (con 1.150 €, a 74 comensales la suma del RAI de los 3 años salía en −80 €: F2-NOTAS §2)'),
     'seguros_ano': (
         None, None, 1500, None,
         'Responsabilidad civil de al menos 300.000 € y multirriesgo con incendio y avería del frío. Dile a la '
