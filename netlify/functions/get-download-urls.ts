@@ -1209,6 +1209,25 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/seafood-restaurant-checklist-templates/BONUS-02-seafood-restaurant-annual-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-31): Fine Dining Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-restaurante-creativo (las de TEMPLATES de
+  // src/pages/FineDiningChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/fine-dining-checklist-templates/ (SPEC
+  // checklists-kit/finedining §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'fine-dining-checklist-templates': {
+    'apertura-cierre': '/dl/fine-dining-checklist-templates/01-fine-dining-opening-closing-checklist.xlsx',
+    'mise-en-place': '/dl/fine-dining-checklist-templates/02-tasting-menu-mise-en-place-checklist.xlsx',
+    'id-menu': '/dl/fine-dining-checklist-templates/03-menu-development-rd-checklist.xlsx',
+    'brigada': '/dl/fine-dining-checklist-templates/04-kitchen-brigade-duties-by-role.xlsx',
+    'periodicas': '/dl/fine-dining-checklist-templates/05-fine-dining-weekly-monthly-maintenance-checklist.xlsx',
+    'sumiller': '/dl/fine-dining-checklist-templates/06-sommelier-wine-pairing-checklist.xlsx',
+    'eventos': '/dl/fine-dining-checklist-templates/07-chefs-table-special-events-checklist.xlsx',
+    'fotografia': '/dl/fine-dining-checklist-templates/08-food-photography-social-media-press-checklist.xlsx',
+    'personalizable': '/dl/fine-dining-checklist-templates/09-blank-fine-dining-checklist-template.xlsx',
+    'apertura-negocio': '/dl/fine-dining-checklist-templates/10-restaurant-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/fine-dining-checklist-templates/11-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/fine-dining-checklist-templates/BONUS-01-fine-dining-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/fine-dining-checklist-templates/BONUS-02-fine-dining-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-24): Chocolate Shop Checklists Kit Pro. MISMAS claves que kit-tareas-chocolateria (las de TEMPLATES de
   // src/pages/ChocolateShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx EN de /dl/chocolate-shop-checklist-templates/
   // (SPEC checklists-kit/chocolate §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.

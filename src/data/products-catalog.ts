@@ -283,11 +283,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-restaurante-creativo',
     url: '/kit-tareas-restaurante-creativo',
     price: '€12',
-    name: { es: 'Tareas: Restaurante Creativo', en: 'Tasks: Creative Restaurant' },
+    name: { es: 'Tareas: Restaurante Creativo', en: 'Fine Dining Checklists Kit Pro' },
     description: {
       es: 'Operativa para restaurantes de autor y creativos.',
-      en: 'Operations playbook for chef-driven and creative restaurants.',
+      en: 'Fine dining checklists for opening and closing, tasting menu mise en place, R&D, the kitchen brigade, sommelier and pairing, chef\'s table and events, the whole restaurant and the cash drawer: 477 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `fine-dining-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/fine-dining-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-chef-privado': {
     id: 'kit-tareas-chef-privado',

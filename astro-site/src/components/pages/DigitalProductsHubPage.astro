@@ -59,6 +59,27 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Fine Dining Checklists Kit Pro (31-oct-2026, decimoquinto hermano vertical del Restaurant Checklists Kit Pro, molde v2.0,
+  // $19): el más nuevo → 1; el Seafood Restaurant Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA
+  // tarjeta que ya estaba («Recurring Tasks: Creative / Chef-Driven Restaurant»): se sube y su copy pasa a describir la
+  // edición EN (decía «11 pre-filled» y «live cooking shows»).
+  {
+    name: 'Fine Dining Checklists Kit Pro',
+    slug: '/kit-tareas-restaurante-creativo',
+    description: "11 templates + 3 bonuses (14 files) with 477 fine dining tasks already written in Excel: tasting menu mise en place and the plating bible, R&D, the brigade, sommelier and pairing, chef's table and events, the whole restaurant and the cash drawer. Print it, delegate it, sign it off.",
+    features: [
+      "Tasting menu mise en place and plating bible",
+      "Brigade duties from executive chef to maître d'",
+      "R&D: test sessions and recipe documentation",
+      "Sommelier, wine pairing and the chef's table",
+      "Cash drawer count in US dollars",
+    ],
+    iconName: 'ChefHat',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'fine-dining'],
+  },
   // Seafood Restaurant Checklists Kit Pro (31-oct-2026, decimocuarto hermano vertical del Restaurant Checklists Kit Pro,
   // molde plano, $15): el más nuevo → 1; el Bakery Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA
   // tarjeta que ya estaba («Recurring Tasks: Seafood Restaurant with Live Tanks & HACCP»): se sube y su copy pasa a
@@ -1039,22 +1060,6 @@ const products = [
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
   },
 
-  {
-    name: 'Recurring Tasks: Creative / Chef-Driven Restaurant',
-    slug: '/kit-tareas-restaurante-creativo',
-    description: '11 pre-filled operational checklists for creative and chef-driven restaurants: R&D, tasting menus, creative brigade, sommelier, events, photography, and storytelling.',
-    features: [
-      'R&D: technical sheets, trials, and costing',
-      'Tasting menu mise en place and course timing',
-      'Sommelier: cellar, pairings, tastings',
-      'Chef\'s table, live cooking shows, and press',
-    ],
-    iconName: 'ChefHat',
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'restaurant'],
-  },
   {
     name: 'Recurring Tasks: Private Chef / Personal Chef',
     slug: '/kit-tareas-chef-privado',

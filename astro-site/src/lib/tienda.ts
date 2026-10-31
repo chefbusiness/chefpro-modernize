@@ -404,6 +404,16 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (2026-10-31): Fine Dining Checklists Kit Pro, decimoquinto hermano vertical del Restaurant Checklists Kit Pro y molde v2.0 híbrido como el hotel
+    // (SPEC checklists-kit/finedining D1-D4, $19). Gemelo del Kit de Tareas Recurrentes: Restaurante Creativo / De Autor (/kit-tareas-restaurante-creativo).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-restaurante-creativo',
+    productos: {
+      es: { slug: 'kit-tareas-restaurante-creativo', vivo: true },
+      en: { slug: 'fine-dining-checklist-templates', vivo: true },
+    },
+  },
+  {
     // Tienda EN (24-oct-2026): Chocolate Shop Checklists Kit Pro, octavo hermano vertical del Restaurant Checklists Kit
     // Pro (SPEC checklists-kit/chocolate D1-D4). Gemelo del Kit de Tareas Chocolatería. vivo: true en la rama, que se
     // fusiona cuando existe el Payment Link (mismo criterio que los siete hermanos anteriores).

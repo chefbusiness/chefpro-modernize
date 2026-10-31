@@ -344,6 +344,7 @@ const data: KitExcelData = {
     { href: '/en/digital-products/food-truck-checklist-templates', label: 'Food Truck Checklists Kit Pro' },
     { href: '/en/digital-products/bakery-checklist-templates', label: 'Bakery Checklists Kit Pro' },
     { href: '/en/digital-products/seafood-restaurant-checklist-templates', label: 'Seafood Restaurant Checklists Kit Pro' },
+    { href: '/en/digital-products/fine-dining-checklist-templates', label: 'Fine Dining Checklists Kit Pro' },
     { href: '/en/digital-products/restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro' },
     { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },

@@ -1320,6 +1320,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'fine-dining-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 2.0: 11 checklist templates plus 2 bonuses (13 Excel files, 49 sheets) with 477 fine dining tasks already written, adapted to the US with notes for the UK.",
+          "A US fine dining brigade (executive chef, sous chef, chefs de partie on the hot line and in garde manger, creative pastry chef, sommelier, maître d' and tasting menu servers), a counter on every checklist that leaves out the tasks marked N/A, and whole-restaurant and cash drawer files with who does it and a due-by time on a 12-hour clock.",
+          "The modernist kitchen under the FDA Food Code in °F: a safe start-up (hood first, then the gas check), walk-ins at 41 °F or below and freezers at 0 °F or below, raw or undercooked fish with parasite destruction (−4 °F for 7 days or −31 °F), its 90-day record and the consumer advisory (citrus acid does not replace freezing), the sous vide egg at 145 °F, sous vide stored in the bag only with a HACCP plan or variance, cooling from 135 °F to 70 °F within 2 hours and to 41 °F within 4 more, 7-day date marking, microgreens washed under running water and the 9 major allergens (the UK's 14 noted).",
+          "Tasting menu mise en place by lead time with a plating bible course by course, menu development and R&D with 3 test iterations and recipe documentation, and a freezer shelf-life table at 0 °F.",
+          "A Quarterly & Annual sheet of contracted services for a US restaurant: licensed pest control, hood and duct cleaning (NFPA 96), gas, refrigeration by an EPA 608-certified tech, probes calibrated at 32 °F, extinguishers (OSHA) and hood suppression, fire alarm (NFPA 72) and emergency lighting (NFPA 101), insurance, FLSA time records and Form I-9, the POS and sales tax, and permit renewals.",
+          "Sommelier and wine pairing with a non-alcoholic pairing and signature cocktails only under your license for guests 21+ with ID; the chef's table, pop-ups and wine dinners with private dinners confirmed in writing and a mandatory service charge billed as business revenue, not a tip (IRS Rev. Rul. 2012-18); food photography, social media and the guides (Michelin Guide in the cities it covers, the 50 Best lists, OAD, James Beard Awards).",
+          "A cash drawer count by US bill and coin with the starting bank, the POS Z report and an automatic over/short, plus a monthly cash log; a pre-shift meeting template and a 12-month US calendar of menu changes, key dates, star ingredients and demand. Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
   'ghost-kitchen-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',
