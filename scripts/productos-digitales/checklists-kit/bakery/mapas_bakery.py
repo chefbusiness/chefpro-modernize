@@ -319,7 +319,7 @@ REGLAS_US.update([
                               '75–82 °F; retardo 37–41 °F; levadura fresca 36–39 °F; hornos 355–500 °F (piso 430–500 '
                               '°F; barra 465–480 °F; hogaza y masa madre 445–465 °F; chapata 445 °F; integral 430–445 '
                               '°F; croissant 375–390 °F; brioche 355–375 °F)',
-                              '[criterio del kit] las cifras de proceso del ES convertidas (hornos redondeados a 5 °F)')),
+                              '[criterio del kit] las cifras de proceso del ES convertidas (hornos redondeados de cinco en cinco grados)')),
     ('tcs_panaderia', ('empanadas con carne y rellenos de crema = TCS: 41 °F o menos / 135 °F o más',
                        'FDA Food Code 2022 §1-201.10 (TCS) y §3-501.16')),
     ('etiquetas', ('lo envasado en la tienda: etiqueta con nombre, ingredientes, peso neto y alérgenos principales; lo '
