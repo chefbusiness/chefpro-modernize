@@ -1383,6 +1383,13 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-pollo': '/dl/plan-negocio-polleria/calculadora-pollo-asador-escandallo-polleria.xlsx',
     'guia-equivalencias': '/dl/plan-negocio-polleria/guia-equivalencias-plan-negocio-polleria.docx',
   },
+  'plan-negocio-sushi-bar': {
+    'plan-financiero': '/dl/plan-negocio-sushi-bar/plan-financiero-sushi-bar.xlsx',
+    'plan-negocio': '/dl/plan-negocio-sushi-bar/plan-de-negocio-sushi-bar.docx',
+    'checklist-apertura': '/dl/plan-negocio-sushi-bar/checklist-apertura-sushi-bar.xlsx',
+    'calculadora-sushi': '/dl/plan-negocio-sushi-bar/calculadora-pescado-arroz-escandallo-sushi-bar.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-sushi-bar/guia-equivalencias-plan-negocio-sushi-bar.docx',
+  },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',

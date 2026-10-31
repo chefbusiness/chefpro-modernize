@@ -90,7 +90,8 @@ PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-
              '/plan-negocio-finca-eventos-bodas',  # nace el 25-oct-2026; gemelo EN: Wedding Venue Business Plan Kit (27-oct-2026)
              '/plan-negocio-pizzeria',  # nace el 25-oct-2026 (noche); gemelo EN: Pizza Shop Business Plan Kit
              '/plan-negocio-taqueria',  # nace el 29-oct-2026; gemelo EN: Taco Shop Business Plan Kit
-             '/plan-negocio-polleria']  # nace el 29-oct-2026; gemelo EN reservado (vivo: false): Rotisserie Chicken Restaurant Business Plan
+             '/plan-negocio-polleria',  # nace el 29-oct-2026; gemelo EN reservado (vivo: false): Rotisserie Chicken Restaurant Business Plan
+             '/plan-negocio-sushi-bar']  # nace el 31-oct-2026; gemelo EN reservado (vivo: false): Sushi Restaurant Business Plan
 # GuiaLandingPage recibe `lang` desde el 15-oct-2026 (Food Cost + Menu Engineering Guide EN): sus 14
 # landings ES (12 guías + 2 manuales) tienen que seguir byte a byte iguales, igual que las de arriba.
 GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia-dark-kitchen',

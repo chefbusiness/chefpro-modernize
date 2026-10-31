@@ -377,6 +377,7 @@ const data: KitTareasData = {
     { href: 'https://aichef.pro', label: 'aichef.pro' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/kit-tareas-chef-privado', label: 'Kit Tareas Chef Privado' },
+    { href: '/plan-negocio-sushi-bar', label: 'Plan de Negocio: Sushi Bar' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },

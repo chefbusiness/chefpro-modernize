@@ -577,6 +577,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
     urlByLang: { en: '/en/digital-products/rotisserie-chicken-restaurant-business-plan' },
     priceByLang: { en: '$39' },
   },
+  'plan-negocio-sushi-bar': {
+    id: 'plan-negocio-sushi-bar',
+    url: '/plan-negocio-sushi-bar',
+    price: '€35',
+    name: { es: 'Plan de Negocio: Sushi Bar', en: 'Sushi Restaurant Business Plan' },
+    description: {
+      es: 'Sushi bar y restaurante de sushi: plan financiero Excel, plan en Word, checklist de apertura y calculadora del pescado, el arroz y el escandallo.',
+      en: 'Word business plan, Excel financial projections, opening checklist and fish yield, sushi rice and per-piece costing calculator for a sushi bar.',
+    },
+  },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',
     url: '/plan-negocio-tapas-bar',
