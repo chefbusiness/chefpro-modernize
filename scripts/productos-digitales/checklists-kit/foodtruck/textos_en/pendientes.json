@@ -1,0 +1,2856 @@
+{
+ "meta": {
+  "kit": "foodtruck",
+  "producto": "Food Truck Checklists Kit Pro",
+  "n_pendientes": 237,
+  "n_palabras": 1233,
+  "motivos": {
+   "nueva": 237
+  },
+  "n_heredadas": 0,
+  "heredadas_por_via": {},
+  "heredadas_por_fuente": {},
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "foodtruck/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "foodtruck/mapas_foodtruck.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../business-plans-en/F1-research-us.md §5 y SPEC.md §2.3 y §4.2 (jerga y trámites del Food Truck Business Plan Kit)",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0010",
+   "es": "SETUP — Llegada al Punto de Venta",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Setup y Teardown · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0012",
+   "es": "Aparcar y nivelar el food truck (calzos si necesario)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Setup y Teardown · B5"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»",
+    "calzos → wheel chocks"
+   ],
+   "adaptar": "Solo donde lo permitan las normas de venta y aparcamiento de tu ciudad (vending zones, horarios y distancias) o con permiso escrito del dueño en propiedad privada; calzos → wheel chocks",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0015",
+   "es": "Conectar generador o toma electrica del evento",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B6"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "adaptar": "Generador fuera del truck, lejos de la ventanilla, de las tomas de aire y de la gente (monóxido de carbono), donde lo permitan el organizador y el fire marshal; cables sin riesgo de tropiezo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0018",
+   "es": "Verificar presion gas (bombona propano/butano)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Setup y Teardown · B7"
+   ],
+   "pistas": [
+    "bombona → propane cylinder (tank); butano → NO (en EE. UU., propano); prueba de fugas con agua jabonosa"
+   ],
+   "adaptar": "Propano (en EE. UU. no se usa butano): bombonas → propane cylinders (tanks), sujetas en vertical y con la válvula cerrada en ruta; sistema según NFPA 58 y la inspección de tu fire marshal",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0021",
+   "es": "Desplegar toldo/marquesina y senaletica exterior",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Setup y Teardown · B8"
+   ],
+   "pistas": [
+    "señalética → signage; toldo / marquesina → awning; pizarra → menu board"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0023",
+   "es": "Montar mostrador de servicio y punto de cobro",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Setup y Teardown · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0024",
+   "es": "SETUP — Cocina",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Setup y Teardown · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0025",
+   "es": "Encender plancha, freidora, horno — verificar temperaturas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Setup y Teardown · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (NUNCA «plancha»)"
+   ],
+   "adaptar": "plancha → flat-top griddle; antes de encender, campana y sistema de extinción (hood suppression) operativos; si huele a gas: no encender nada, cerrar la bombona, salir y llamar al 911 desde fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0026",
+   "es": "Conectar equipos frio (nevera portatil, mesa refrigerada)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B12"
+   ],
+   "pistas": [
+    "nevera portátil → cooler; mesa refrigerada → refrigerated prep table; cámara / nevera → refrigerator (en el truck no hay walk-in)"
+   ],
+   "adaptar": "Frío: 41 °F o menos; congelado, 0 °F o menos (FDA Food Code 3-501.16); nevera portátil → cooler, mesa refrigerada → refrigerated prep table; si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0027",
+   "es": "Organizar mise en place en espacios reducidos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0029",
+   "es": "Verificar stock completo: proteinas, pan, salsas, guarniciones",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0030",
+   "es": "Instalar dispensadores de salsas y servilleteros",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Setup y Teardown · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0031",
+   "es": "Preparar zona de emplatado/packaging",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Setup y Teardown · B16"
+   ],
+   "pistas": [
+    "packaging → to-go packaging; emplatado → plating / order assembly"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0032",
+   "es": "SETUP — Servicio",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Setup y Teardown · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0034",
+   "es": "Colocar carta/menu visible (pizarra, banner, pantalla)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B18"
+   ],
+   "pistas": [
+    "señalética → signage; toldo / marquesina → awning; pizarra → menu board",
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0035",
+   "es": "Preparar TPV/datafono y cambio en efectivo",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B19"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV → POS; datáfono → card reader; cambio → starting bank (cash float); efectivo → cash"
+   ],
+   "adaptar": "TPV → POS; datáfono → card reader; cambio en efectivo → starting bank (cash float)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0036",
+   "es": "Montar zona de espera con servilleteros y papelera",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Setup y Teardown · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0037",
+   "es": "Verificar agua (deposito limpio y deposito residual)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B21"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "adaptar": "Depósito limpio → fresh (potable) water tank, lleno; depósito residual → wastewater (gray water) tank, vacío y al menos un 15 % mayor que el de agua limpia (FDA Food Code 5-401.11); agua caliente en el lavamanos, 100 °F o más (FDA Food Code 5-202.12)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0038",
+   "es": "TEARDOWN — Desmontaje",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Setup y Teardown · A22"
+   ],
+   "pistas": [
+    "setup → setup; teardown → teardown (breakdown); montar → set up; recoger → pack up"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0040",
+   "es": "Apagar equipos de coccion y gas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Setup y Teardown · B23"
+   ],
+   "pistas": [
+    "bombona → propane cylinder (tank); butano → NO (en EE. UU., propano); prueba de fugas con agua jabonosa"
+   ],
+   "adaptar": "Y cerrar las válvulas de las bombonas de propano (propane cylinders)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0042",
+   "es": "Almacenar producto sobrante en nevera con registro",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B24"
+   ],
+   "pistas": [
+    "nevera portátil → cooler; mesa refrigerada → refrigerated prep table; cámara / nevera → refrigerator (en el truck no hay walk-in)"
+   ],
+   "adaptar": "Enfriado: de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14), tapado y con date marking (7 días como máximo a 41 °F, día 1 = el de preparación; FDA Food Code 3-501.17); se guarda en el commissary",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0043",
+   "es": "Limpiar plancha, freidora, superficies de trabajo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Setup y Teardown · B25"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (NUNCA «plancha»)"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); plancha → flat-top griddle",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0044",
+   "es": "Vaciar y limpiar depositos de agua y residuos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Setup y Teardown · B26"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "adaptar": "Las aguas residuales (wastewater / gray water) solo se vacían en el commissary o en un servicing area aprobado, nunca en la calle, en el suelo ni en un sumidero de pluviales (storm drain) (FDA Food Code 5-402.14)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0045",
+   "es": "Recoger toldo, senaletica, mobiliario exterior",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Setup y Teardown · B27"
+   ],
+   "pistas": [
+    "señalética → signage; toldo / marquesina → awning; pizarra → menu board"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "Cierre de caja y registro de ventas del dia",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Setup y Teardown · B28"
+   ],
+   "adaptar": "Cierre de caja → cash count y over/short (cash drawer contra el POS Z report; ventas con tarjeta sin propinas); Propinas: según tu política escrita de tip pool; los managers y supervisors no se quedan propinas (FLSA, 29 U.S.C. 203(m)(2)(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "Desconectar generador/electricidad",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Setup y Teardown · B29"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0049",
+   "es": "Asegurar food truck para transporte (puertas, equipos)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Setup y Teardown · B30"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»"
+   ],
+   "adaptar": "Incluye las bombonas de propano sujetas y con la válvula cerrada para el trayecto",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "VEHICULO — Antes de Salir",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Operaciones Moviles · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "Nivel combustible suficiente para ida y vuelta",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Operaciones Moviles · B5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0067",
+   "es": "Presion neumaticos correcta (carga extra por equipos)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Operaciones Moviles · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0069",
+   "es": "Luces, intermitentes, frenos funcionando",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Operaciones Moviles · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0070",
+   "es": "ITV vigente y seguro del vehiculo al dia",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Operaciones Moviles · B8"
+   ],
+   "pistas": [
+    "ITV → no existe: DMV registration; state vehicle safety inspection solo donde se exija"
+   ],
+   "adaptar": "Sin ITV: registro y título del vehículo en el DMV de tu estado al día y seguro commercial auto en vigor; inspección de seguridad del vehículo solo donde tu estado la exija; licencia CDL solo si el GVWR es de 26,001 lb o más (49 CFR 383.91)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "Equipos de cocina asegurados para transporte",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Operaciones Moviles · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0073",
+   "es": "Extintor accesible y en fecha (obligatorio)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Operaciones Moviles · B10"
+   ],
+   "adaptar": "Extintores: uno ABC y, con freidora, otro de clase K (NFPA 10); inspección visual mensual y mantenimiento anual con etiqueta (29 CFR 1910.157(e)(2)-(3)); el sistema de extinción de la campana, cada 6 meses (NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "GENERADOR Y ENERGIA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Operaciones Moviles · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Nivel combustible del generador (diesel/gasolina)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Operaciones Moviles · B12"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "adaptar": "Gasolina o diésel (o propano, según el generador); repostar con el generador apagado y frío, como indique su manual",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0078",
+   "es": "Test de arranque antes de salir (evitar fallos en evento)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Operaciones Moviles · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0079",
+   "es": "Cables de extension en buen estado, conexiones seguras",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Operaciones Moviles · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0080",
+   "es": "Mantenimiento preventivo: aceite, filtro, bujias",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Operaciones Moviles · B15"
+   ],
+   "adaptar": "Según las horas de uso que marque el manual del fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0082",
+   "es": "Bombona propano/butano: nivel suficiente para el servicio",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Operaciones Moviles · B16"
+   ],
+   "pistas": [
+    "bombona → propane cylinder (tank); butano → NO (en EE. UU., propano); prueba de fugas con agua jabonosa"
+   ],
+   "adaptar": "Propano (en EE. UU. no se usa butano): bombonas → propane cylinders (tanks), sujetas en vertical y con la válvula cerrada en ruta; sistema según NFPA 58 y la inspección de tu fire marshal",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0083",
+   "es": "Conexiones de gas estancas (test con agua jabonosa)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Operaciones Moviles · B17"
+   ],
+   "pistas": [
+    "bombona → propane cylinder (tank); butano → NO (en EE. UU., propano); prueba de fugas con agua jabonosa"
+   ],
+   "adaptar": "Prueba de fugas con agua jabonosa, nunca con llama, en las conexiones y tras cada cambio de bombona (NFPA 1 / NFPA 58, según la edición que aplique tu fire marshal)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0084",
+   "es": "AGUA Y RESIDUOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Operaciones Moviles · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0086",
+   "es": "Deposito agua limpia lleno (capacidad segun servicio)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Operaciones Moviles · B19"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "adaptar": "Agua potable de una fuente aprobada (FDA Food Code 5-101.11), cargada en el commissary con una manguera de agua potable (food-grade) que no se usa para nada más; capacidad = la que fije tu permiso",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0087",
+   "es": "Deposito agua residual vacio y limpio",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Operaciones Moviles · B20"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "adaptar": "Las aguas residuales (wastewater / gray water) solo se vacían en el commissary o en un servicing area aprobado, nunca en la calle, en el suelo ni en un sumidero de pluviales (storm drain) (FDA Food Code 5-402.14)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0088",
+   "es": "Bomba de agua funcionando correctamente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Operaciones Moviles · B21"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "Bolsas de basura suficientes",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Operaciones Moviles · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "Contenedor de aceite usado (si aplica freidora)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Operaciones Moviles · B23"
+   ],
+   "pistas": [
+    "punto limpio → commissary / approved disposal; aceite usado → used cooking oil (licensed recycler)"
+   ],
+   "adaptar": "Aceite usado → used cooking oil, en contenedor cerrado para el reciclador con licencia (licensed recycler) o el del commissary",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Punto limpio: donde verter residuos tras evento",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Operaciones Moviles · B24"
+   ],
+   "pistas": [
+    "punto limpio → commissary / approved disposal; aceite usado → used cooking oil (licensed recycler)"
+   ],
+   "adaptar": "Punto limpio → plan de residuos del evento: basura, grasa y aguas residuales al commissary o a la zona que indique el organizador; nada al suelo ni al storm drain (FDA Food Code 5-402.14)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "TEMPERATURAS Y CADENA DE FRIO",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · APPCC Movil · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Nevera portatil: verificar 0-4°C antes de cargar",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · APPCC Movil · B5"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "nevera portátil → cooler; mesa refrigerada → refrigerated prep table; cámara / nevera → refrigerator (en el truck no hay walk-in)"
+   ],
+   "adaptar": "Frío: 41 °F o menos; congelado, 0 °F o menos (FDA Food Code 3-501.16); nevera portátil → cooler, mesa refrigerada → refrigerated prep table; si la tarea pide lectura, coletilla «— log reading: ____ °F»; sin los «0-4 °C» del ES",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "Registro temperatura durante transporte (termometro)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · APPCC Movil · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Frío: 41 °F o menos; congelado, 0 °F o menos (FDA Food Code 3-501.16); nevera portátil → cooler, mesa refrigerada → refrigerated prep table; si la tarea pide lectura, coletilla «— log reading: ____ °F»; lectura en ruta",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "Verificar temperatura al llegar al punto de venta",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · APPCC Movil · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Frío: 41 °F o menos; congelado, 0 °F o menos (FDA Food Code 3-501.16); nevera portátil → cooler, mesa refrigerada → refrigerated prep table; si la tarea pide lectura, coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0110",
+   "es": "Producto caliente mantenido >65°C o servido <2h",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · APPCC Movil · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16), o time as a public health control con procedimiento escrito: hora marcada y servir o descartar en 4 h (FDA Food Code 3-501.19); sin los «65 °C» ni las «2 h» del ES; coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Descongelar en camara/nevera, NUNCA a temperatura ambiente",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · APPCC Movil · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "nevera portátil → cooler; mesa refrigerada → refrigerated prep table; cámara / nevera → refrigerator (en el truck no hay walk-in)"
+   ],
+   "adaptar": "Descongelar en el refrigerador a 41 °F o menos, bajo agua corriente fría a 70 °F o menos, en el microondas si se cocina enseguida o como parte de la cocción (FDA Food Code 3-501.13); nunca a temperatura ambiente; cámara/nevera → refrigerator",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0114",
+   "es": "MANIPULACION Y LIMPIEZA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · APPCC Movil · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Lavado de manos: jabon, agua, gel hidroalcoholico disponible",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · APPCC Movil · B12"
+   ],
+   "pistas": [
+    "gel hidroalcohólico → hand sanitizer: solo después de lavarse las manos (FDA Food Code 2-301.16)",
+    "alcohol: un food truck no lo vende sin licencia"
+   ],
+   "adaptar": "Lavamanos (handwashing sink) con agua caliente, 100 °F o más (FDA Food Code 5-202.12), jabón y toallas de papel; el gel (hand sanitizer) solo DESPUÉS de lavarse, nunca en su lugar (FDA Food Code 2-301.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0118",
+   "es": "Guantes desechables para manipulacion directa",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · APPCC Movil · B13"
+   ],
+   "adaptar": "Sin contacto de mano desnuda con alimento listo para comer: guantes, pinzas o papel (FDA Food Code 3-301.11); guantes nuevos al cambiar de tarea",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0120",
+   "es": "Limpiar superficies con desinfectante alimentario",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · APPCC Movil · B14"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0123",
+   "es": "Separar crudos de cocinados en almacenamiento y preparacion",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · APPCC Movil · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "Tablas de corte diferenciadas por color (carne/verdura/pan)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · APPCC Movil · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "Contenedor con tapa y pedal, vaciado frecuente",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · APPCC Movil · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "ALERGENOS Y DOCUMENTACION",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · APPCC Movil · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "Carta de alergenos visible en el punto de venta",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · APPCC Movil · B19"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); aviso escrito en el menú o en la ventanilla donde tu estado haya adoptado el FDA Food Code 2022 (3-602.12(C)); en UK, los 14; carta de alérgenos → allergen chart",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "Staff formado en responder preguntas de alergias",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · APPCC Movil · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Libro de registro sanitario disponible en el truck",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · APPCC Movil · B21"
+   ],
+   "pistas": [
+    "registro sanitario → mobile food unit health permit (county); plan review; commissary agreement"
+   ],
+   "adaptar": "Sin «libro de registro sanitario»: el health permit de la unidad móvil a la vista y, en el truck, los registros de temperaturas y el commissary log (o el commissary agreement) para la inspección",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "Carnet de manipulador de alimentos vigente (todo el equipo)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · APPCC Movil · B22"
+   ],
+   "pistas": [
+    "carnet de manipulador → food handler card; responsable → Certified Food Protection Manager (CFPM)",
+    "equipo (personas) → crew"
+   ],
+   "adaptar": "Carnet de manipulador → food handler card (según el estado) para el equipo y un Certified Food Protection Manager (CFPM, p. ej. ServSafe Manager) como person in charge (FDA Food Code 2-102.12)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "Licencia de venta ambulante vigente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · APPCC Movil · B23"
+   ],
+   "pistas": [
+    "licencia de venta ambulante → mobile vending license (city)"
+   ],
+   "adaptar": "Licencia de venta ambulante → mobile vending license de la ciudad (o del condado), una por truck e intransferible, además del mobile food unit permit del departamento de salud del condado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0140",
+   "es": "Variable por municipio",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · APPCC Movil · F23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Seguro de responsabilidad civil vigente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · APPCC Movil · B24"
+   ],
+   "adaptar": "Seguro RC → general liability insurance; muchos eventos piden un certificate of insurance (COI) con el organizador como additional insured",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0148",
+   "es": "PERMISOS Y LICENCIAS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Permisos y Eventos · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0150",
+   "es": "Licencia de venta ambulante del municipio",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Permisos y Eventos · B5"
+   ],
+   "pistas": [
+    "licencia de venta ambulante → mobile vending license (city)"
+   ],
+   "adaptar": "Licencia de venta ambulante → mobile vending license de la ciudad (o del condado), una por truck e intransferible, además del mobile food unit permit del departamento de salud del condado; renovación anual",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0152",
+   "es": "Renovacion anual",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Permisos y Eventos · F5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0155",
+   "es": "Obligatorio",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Permisos y Eventos · F6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0158",
+   "es": "Seguro del vehiculo con cobertura comercial",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Permisos y Eventos · B8"
+   ],
+   "adaptar": "Seguro del vehículo con cobertura comercial → commercial auto insurance",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Facturacion y TPV: emitir ticket/factura en cada venta",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Permisos y Eventos · B10"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV → POS; datáfono → card reader; cambio → starting bank (cash float); efectivo → cash",
+    "IAE → business license + seller's permit; ticket/factura → receipt; el POS cobra el sales tax"
+   ],
+   "adaptar": "POS configurado para cobrar y declarar el sales tax según el lugar de venta; recibo (receipt) si el cliente lo pide; sin «factura» española",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0163",
+   "es": "EVENTOS — Pre-evento",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Permisos y Eventos · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Confirmar ubicacion exacta, acceso y horario de montaje",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Permisos y Eventos · B12"
+   ],
+   "pistas": [
+    "setup → setup; teardown → teardown (breakdown); montar → set up; recoger → pack up"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Confirmar toma electrica o necesidad de generador",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Permisos y Eventos · B13"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Estimar volumen de ventas y preparar stock acorde",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Permisos y Eventos · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "Preparar menu adaptado al evento (precio, formato, rapidez)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Permisos y Eventos · B15"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "Confirmar permisos especificos del evento/recinto",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Permisos y Eventos · B16"
+   ],
+   "adaptar": "Permiso temporal del evento (temporary food event permit) si lo pide el departamento de salud, y los requisitos del organizador (COI, inspección del fire marshal). Muchos fire marshals exigen al menos 10 ft libres entre el truck y edificios, otros vehículos y materiales combustibles (NFPA 1 / NFPA 96, según la edición que aplique tu jurisdicción)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Comunicar en RRSS: ubicacion, horario, menu del evento",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Permisos y Eventos · B17"
+   ],
+   "pistas": [
+    "RRSS → social media; Google Maps → Google Business Profile; food truck apps (Roaming Hunger, StreetFoodFinder)",
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "adaptar": "RRSS → social media; Google Maps → Google Business Profile; añade las food truck apps (Roaming Hunger, StreetFoodFinder)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0175",
+   "es": "TIPOS DE EVENTO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Permisos y Eventos · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "Mercados gastronomicos / street food markets (semanal)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Permisos y Eventos · B19"
+   ],
+   "pistas": [
+    "mercados gastronómicos / street food markets → food truck parks, farmers markets, night markets; mercadillos navideños → holiday markets"
+   ],
+   "adaptar": "street food markets → food truck parks, farmers markets y night markets",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "Publico foodie",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Permisos y Eventos · F19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Festivales musica, fiestas patronales (alta demanda)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Permisos y Eventos · B20"
+   ],
+   "pistas": [
+    "fiestas patronales / locales → county fairs, street fairs, local festivals; ferias → festivals / fairs"
+   ],
+   "adaptar": "fiestas patronales → county fairs y street fairs",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "Stock x3",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Permisos y Eventos · F20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Eventos empresa, team building, catering privado",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Permisos y Eventos · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0184",
+   "es": "Menu cerrado",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Permisos y Eventos · F21"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "Food truck para bodas y celebraciones",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Permisos y Eventos · B22"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0187",
+   "es": "Menu personalizado",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Permisos y Eventos · F22"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Carreras, torneos, eventos deportivos",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Permisos y Eventos · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "Servicio rapido",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Permisos y Eventos · F23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Ubicacion fija diaria (polígono, campus, zona oficinas)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Permisos y Eventos · B24"
+   ],
+   "pistas": [
+    "polígono → business park; zona de oficinas → office district; campus → campus"
+   ],
+   "adaptar": "polígono → business park; Solo donde lo permitan las normas de venta y aparcamiento de tu ciudad (vending zones, horarios y distancias) o con permiso escrito del dueño en propiedad privada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Clientela recurrente",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Permisos y Eventos · F24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "OPERACIONES",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "05 · Tareas Manager · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Planificar ruta semanal: ubicaciones, eventos, horarios",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B5"
+   ],
+   "adaptar": "Solo donde lo permitan las normas de venta y aparcamiento de tu ciudad (vending zones, horarios y distancias) o con permiso escrito del dueño en propiedad privada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Confirmar reservas de eventos y permisos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0205",
+   "es": "Pedido de materia prima segun calendario de eventos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0207",
+   "es": "Control de mermas y producto sobrante post-evento",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B8"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0210",
+   "es": "Probar platos y verificar consistencia",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "05 · Tareas Manager · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0213",
+   "es": "Analizar ventas por ubicacion/evento (cual renta mas)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "FINANZAS",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "05 · Tareas Manager · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Food cost semanal (objetivo <25% en food truck)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B12"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»"
+   ],
+   "adaptar": "Sin el «<25 %» del ES (sin base US): food cost % contra el objetivo de tu plan; referencia del kit: «about 28–35% for a US food truck (kit benchmark)»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0218",
+   "es": "Revisar precios vs coste y competencia local",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Calcular ROI por evento (fee entrada + coste vs ventas)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "05 · Tareas Manager · B14"
+   ],
+   "pistas": [
+    "fee de entrada → vendor fee (flat or % of sales)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0223",
+   "es": "Cuadre de caja diario (efectivo + TPV)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B15"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV → POS; datáfono → card reader; cambio → starting bank (cash float); efectivo → cash"
+   ],
+   "adaptar": "Cierre de caja → cash count y over/short (cash drawer contra el POS Z report; ventas con tarjeta sin propinas); Propinas: según tu política escrita de tip pool; los managers y supervisors no se quedan propinas (FLSA, 29 U.S.C. 203(m)(2)(B))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "MARKETING Y CRECIMIENTO",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "05 · Tareas Manager · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Publicar ubicacion diaria en Instagram/TikTok/Google Maps",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "05 · Tareas Manager · B17"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "RRSS → social media; Google Maps → Google Business Profile; food truck apps (Roaming Hunger, StreetFoodFinder)"
+   ],
+   "adaptar": "RRSS → social media; Google Maps → Google Business Profile; añade las food truck apps (Roaming Hunger, StreetFoodFinder)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0227",
+   "es": "Contenido visual: videos servicio, platos, montaje",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B18"
+   ],
+   "pistas": [
+    "setup → setup; teardown → teardown (breakdown); montar → set up; recoger → pack up"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0230",
+   "es": "Responder resenas Google y redes sociales",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B19"
+   ],
+   "pistas": [
+    "RRSS → social media; Google Maps → Google Business Profile; food truck apps (Roaming Hunger, StreetFoodFinder)",
+    "reseñas → reviews (Google, Yelp)"
+   ],
+   "adaptar": "Plataformas US: Google y Yelp",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "Contactar organizadores de eventos y mercados nuevos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "05 · Tareas Manager · B20"
+   ],
+   "pistas": [
+    "mercados gastronómicos / street food markets → food truck parks, farmers markets, night markets; mercadillos navideños → holiday markets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "Tarjeta de fidelidad / programa de repeticion",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "05 · Tareas Manager · B21"
+   ],
+   "pistas": [
+    "tarjeta de fidelidad → loyalty program (punch card o en el POS)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "COCINERO / CHEF FOOD TRUCK",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Perfiles · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Preparar mise en place pre-servicio (en cocina base o in-truck)",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "06 · Perfiles · B5"
+   ],
+   "pistas": [
+    "cocina base → commissary"
+   ],
+   "adaptar": "cocina base → commissary: la mise en place se prepara en el commissary o en el truck, nunca en una cocina de casa (FDA Food Code 3-201.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "Cocinar todos los platos del menu durante servicio",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Perfiles · B6"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0245",
+   "es": "Control de calidad: sabor, presentacion, temperatura",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Gestionar tiempos de espera (objetivo <5 min por pedido)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Perfiles · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0247",
+   "es": "Limpieza de equipos y superficies al cierre",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B9"
+   ],
+   "adaptar": "Limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "AYUDANTE DE COCINA",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Perfiles · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0251",
+   "es": "Mise en place: cortar, porcionar, preparar salsas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0252",
+   "es": "Linea de montaje: ensamblar platos segun pedido",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B12"
+   ],
+   "pistas": [
+    "setup → setup; teardown → teardown (breakdown); montar → set up; recoger → pack up"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Reponer ingredientes en la linea durante servicio",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0254",
+   "es": "Freidora: control de tiempos, temperatura, filtrado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Limpieza y organizacion del puesto de trabajo",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "ENCARGADO / CAJERO / SERVICIO",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Perfiles · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Atender clientes: tomar pedidos, informar carta",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Perfiles · B17"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0258",
+   "es": "Cobrar: TPV, efectivo, cambio, Bizum si aplica",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B18"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV → POS; datáfono → card reader; cambio → starting bank (cash float); efectivo → cash",
+    "Bizum → tap to pay / mobile wallet (Apple Pay, Google Pay)"
+   ],
+   "adaptar": "TPV → POS; Bizum → pagos con el móvil (tap to pay: Apple Pay, Google Pay)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Entregar pedidos con packaging correcto",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B19"
+   ],
+   "pistas": [
+    "packaging → to-go packaging; emplatado → plating / order assembly"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Informar alergenos y opciones (vegano, sin gluten)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B20"
+   ],
+   "pistas": [
+    "vegano → vegan; sin gluten → gluten-free solo si se puede sostener (21 CFR 101.91)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); aviso escrito en el menú o en la ventanilla donde tu estado haya adoptado el FDA Food Code 2022 (3-602.12(C)); en UK, los 14. «Sin gluten» → «gluten-free» solo si lo puedes sostener: con freidora o plancha (flat-top griddle) compartidas, no se promete (21 CFR 101.91)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Mantener zona de espera limpia, reponer servilletas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Perfiles · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "CONDUCTOR / TECNICO",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Perfiles · A22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Conducir food truck al punto de venta (seguro, puntual)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Perfiles · B23"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Nivelar vehiculo y asegurar estabilidad",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0265",
+   "es": "Gestionar generador: arranque, combustible, ruido",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B25"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "adaptar": "Generador fuera del truck, lejos de la ventanilla, de las tomas de aire y de la gente (monóxido de carbono), donde lo permitan el organizador y el fire marshal; cables sin riesgo de tropiezo; ruido y horario según las normas del evento y de la ciudad",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0266",
+   "es": "Gestionar depositos agua limpia/residual",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B26"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "adaptar": "fresh water tank / wastewater (gray water) tank; Las aguas residuales (wastewater / gray water) solo se vacían en el commissary o en un servicing area aprobado, nunca en la calle, en el suelo ni en un sumidero de pluviales (storm drain) (FDA Food Code 5-402.14)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0267",
+   "es": "Mantenimiento basico vehiculo y equipos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Perfiles · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0273",
+   "es": "SEMANALES",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "07 · Semanales y Mensuales · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0274",
+   "es": "Limpieza profunda interior del food truck",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B5"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0276",
+   "es": "Limpieza profunda campana extractora y filtros",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "Campana (hood): los filtros los desengrasa el equipo; la campana y los conductos, una empresa certificada con la frecuencia de NFPA 96; el sistema de extinción de la campana, cada 6 meses (NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0277",
+   "es": "Inventario completo: materia prima, packaging, salsas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B7"
+   ],
+   "pistas": [
+    "packaging → to-go packaging; emplatado → plating / order assembly"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Cambio aceite freidora (o segun test polares)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Semanales y Mensuales · B8"
+   ],
+   "pistas": [
+    "TPV → POS; datáfono → card reader; cambio → starting bank (cash float); efectivo → cash",
+    "test de polares → TPM (total polar materials) tester o tiras"
+   ],
+   "adaptar": "test de polares → TPM tester o tiras (total polar materials); el aceite usado, al reciclador con licencia",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "Verificar gas: nivel bombona, conexiones estancas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B9"
+   ],
+   "pistas": [
+    "bombona → propane cylinder (tank); butano → NO (en EE. UU., propano); prueba de fugas con agua jabonosa"
+   ],
+   "adaptar": "Propano (sin butano): nivel de las bombonas y prueba de fugas con agua jabonosa, nunca con llama, en las conexiones y tras cada cambio de bombona (NFPA 1 / NFPA 58, según la edición que aplique tu fire marshal)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "Revision depositos agua y bomba",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B10"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "adaptar": "Limpiar y sanitizar el depósito de agua potable, la bomba y la manguera como pida tu departamento de salud; Las aguas residuales (wastewater / gray water) solo se vacían en el commissary o en un servicing area aprobado, nunca en la calle, en el suelo ni en un sumidero de pluviales (storm drain) (FDA Food Code 5-402.14)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "Analisis ventas por ubicacion/evento de la semana",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "07 · Semanales y Mensuales · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "Planificar ruta y eventos proxima semana",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "MENSUALES",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "07 · Semanales y Mensuales · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "Mantenimiento generador: aceite, filtro, bujias",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B14"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "adaptar": "Según las horas de uso que marque el manual del fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "Revision mecanica vehiculo: frenos, neumaticos, luces",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "Auditoria APPCC: registros temperaturas, limpieza",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D10: APPCC → HACCP; «Pack APPCC» → «HACCP Food Safety Kit Pro»"
+   ],
+   "adaptar": "APPCC → HACCP: revisar los registros de temperaturas, de limpieza y el commissary log",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Food cost mensual y analisis rentabilidad",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Revision carta: rotar platos segun temporada/demanda",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Semanales y Mensuales · B18"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Revision permisos y licencias vigentes",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B19"
+   ],
+   "pistas": [
+    "licencia de venta ambulante → mobile vending license (city)"
+   ],
+   "adaptar": "Health permit de la unidad móvil, mobile vending license de cada ciudad, commissary agreement, inspección del fire marshal, registro del DMV y seguros",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "Renovar packaging y material desechable",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Semanales y Mensuales · B20"
+   ],
+   "pistas": [
+    "packaging → to-go packaging; emplatado → plating / order assembly"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0296",
+   "es": "Formacion equipo: nuevos platos, servicio, seguridad",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Semanales y Mensuales · B21"
+   ],
+   "pistas": [
+    "equipo (personas) → crew"
+   ],
+   "adaptar": "Incluye las food handler cards del equipo al día",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "TEMPORADAS",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "08 · Eventos y Temporadas · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "Inicio temporada eventos: ferias, mercados al aire libre",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Eventos y Temporadas · B5"
+   ],
+   "pistas": [
+    "mercados gastronómicos / street food markets → food truck parks, farmers markets, night markets; mercadillos navideños → holiday markets",
+    "fiestas patronales / locales → county fairs, street fairs, local festivals; ferias → festivals / fairs"
+   ],
+   "adaptar": "ferias → festivals; mercados al aire libre → farmers markets y food truck rallies",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "Temporada alta: festivales, playas, chiringuitos, fiestas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "08 · Eventos y Temporadas · B6"
+   ],
+   "pistas": [
+    "fiestas patronales / locales → county fairs, street fairs, local festivals; ferias → festivals / fairs",
+    "chiringuitos → fuera; playas → beaches (boardwalk)"
+   ],
+   "adaptar": "Temporada alta US (de Memorial Day a Labor Day): festivales, playas, county fairs y el 4 de julio; sin «chiringuitos»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "Pico ventas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "08 · Eventos y Temporadas · F6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Menu refrescante: bowls, smoothies, helados artesanales",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "08 · Eventos y Temporadas · B7"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Mercados gastronomicos, jornadas de otono",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Eventos y Temporadas · B8"
+   ],
+   "pistas": [
+    "mercados gastronómicos / street food markets → food truck parks, farmers markets, night markets; mercadillos navideños → holiday markets"
+   ],
+   "adaptar": "jornadas de otoño → fall festivals",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Menu comfort food: guisos, sopas, platos calientes",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Eventos y Temporadas · B9"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Menor actividad exterior, buscar eventos cubiertos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "08 · Eventos y Temporadas · B10"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Navidad: mercadillos navidenos, eventos empresa",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Eventos y Temporadas · B11"
+   ],
+   "pistas": [
+    "mercados gastronómicos / street food markets → food truck parks, farmers markets, night markets; mercadillos navideños → holiday markets",
+    "calendario US (Super Bowl, Memorial Day, 4 de julio, Labor Day, Thanksgiving, holiday markets, New Year's Eve): sin fiestas españolas"
+   ],
+   "adaptar": "Navidad: mercadillos navideños → holiday markets; eventos de empresa → corporate holiday parties",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "EVENTOS COMERCIALES CLAVE",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "08 · Eventos y Temporadas · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Mayo-octubre: temporada alta bodas food truck",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Eventos y Temporadas · B16"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "Promocion especial + presencia en centros comerciales",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "08 · Eventos y Temporadas · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0330",
+   "es": "Eventos especiales fin de ano en plazas y recintos",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "08 · Eventos y Temporadas · B18"
+   ],
+   "adaptar": "Nochevieja = New Year's Eve: eventos de cuenta atrás (countdown) y fiestas privadas; sin uvas; nada de alcohol sin licencia",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "TUS TAREAS PERSONALIZADAS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "09 · Personalizable · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0336",
+   "es": "Instrucciones: Anade tus propias tareas. Puedes copiar filas de otras hojas del kit y adaptarlas a tu food truck.",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "09 · Personalizable · A26"
+   ],
+   "pistas": [
+    "D2: sin el sufijo «— Food Truck» de los títulos; food truck → food truck; el camión → the truck; nunca «restaurant»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0343",
+   "es": "EVENTO",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0344",
+   "es": "Nombre evento",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "Tipo / Organizador",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "Ubicacion",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0347",
+   "es": "Direccion / GPS / Acceso",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0348",
+   "es": "Horario",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0349",
+   "es": "Montaje / Apertura / Cierre",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C7"
+   ],
+   "pistas": [
+    "setup → setup; teardown → teardown (breakdown); montar → set up; recoger → pack up"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0350",
+   "es": "Publico esperado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "Estimacion asistentes",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0352",
+   "es": "LOGISTICA",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0353",
+   "es": "Electricidad",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0354",
+   "es": "Toma disponible / Generador necesario",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C10"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "Punto de agua / Depositos suficientes",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C11"
+   ],
+   "pistas": [
+    "depósito de agua limpia → fresh (potable) water tank; residual → wastewater (gray water) tank; bomba → water pump"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0356",
+   "es": "Parking",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0357",
+   "es": "Espacio asignado / Dimensiones",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0358",
+   "es": "Fee entrada",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A13"
+   ],
+   "pistas": [
+    "fee de entrada → vendor fee (flat or % of sales)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0359",
+   "es": "Coste participacion / % sobre ventas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C13"
+   ],
+   "pistas": [
+    "fee de entrada → vendor fee (flat or % of sales)"
+   ],
+   "adaptar": "Fee de entrada → vendor fee (fijo o % de las ventas)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0360",
+   "es": "MENU Y STOCK",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0361",
+   "es": "Menu evento",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A15"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0362",
+   "es": "Platos seleccionados / Precios",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0363",
+   "es": "Stock estimado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0364",
+   "es": "Unidades por plato (segun publico)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0365",
+   "es": "Packaging",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A17"
+   ],
+   "pistas": [
+    "packaging → to-go packaging; emplatado → plating / order assembly"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0366",
+   "es": "Tipo y cantidad necesaria",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0367",
+   "es": "Carta alergenos impresa y visible",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C18"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "adaptar": "Allergen chart con los 9 alérgenos principales de EE. UU., impresa y a la vista",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "EQUIPO",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "Personal",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0370",
+   "es": "Nombres y roles asignados",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0371",
+   "es": "Hora encuentro",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B01 · Briefing Pre-Evento · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0372",
+   "es": "Punto y hora de salida",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Combustible / Estado / Conductor",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Pre-Evento · C22"
+   ],
+   "pistas": [
+    "encargado → manager; cajero → cashier; ayudante de cocina → prep cook; conductor → driver; técnico → driver / tech; servicio (puesto) → window staff"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "Comfort food, sopas, bocadillos calientes",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "Revision post-Navidad completa",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D4"
+   ],
+   "pistas": [
+    "calendario US (Super Bowl, Memorial Day, 4 de julio, Labor Day, Thanksgiving, holiday markets, New Year's Eve): sin fiestas españolas"
+   ],
+   "adaptar": "post-Navidad → post-holiday",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Planificar temporada primavera",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Menu especial parejas, comida festiva",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C5"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "ITV si toca, revision generador",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D5"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)",
+    "ITV → no existe: DMV registration; state vehicle safety inspection solo donde se exija"
+   ],
+   "adaptar": "Sin ITV: inspección de seguridad del vehículo solo si tu estado la exige; renovar el registro del DMV si toca",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0390",
+   "es": "Contactar mercados primavera",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E5"
+   ],
+   "pistas": [
+    "mercados gastronómicos / street food markets → food truck parks, farmers markets, night markets; mercadillos navideños → holiday markets"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Transicion: platos templados, wraps",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · C6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Puesta a punto pre-temporada",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "Lanzar calendario eventos RRSS",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E6"
+   ],
+   "pistas": [
+    "RRSS → social media; Google Maps → Google Business Profile; food truck apps (Roaming Hunger, StreetFoodFinder)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Menu variado, opciones vegetarianas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · C7"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0399",
+   "es": "Revision neumaticos, gas, agua",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D7"
+   ],
+   "pistas": [
+    "bombona → propane cylinder (tank); butano → NO (en EE. UU., propano); prueba de fugas con agua jabonosa"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0400",
+   "es": "Abrir reservas bodas verano",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0403",
+   "es": "Menu primavera: ensaladas, bowls, fresco",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C8"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0404",
+   "es": "Aire acondicionado/ventilacion truck",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0405",
+   "es": "Campana RRSS verano",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E8"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "RRSS → social media; Google Maps → Google Business Profile; food truck apps (Roaming Hunger, StreetFoodFinder)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "Menu verano: tacos, poke, helados",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C9"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Revision intensiva equipos frio",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0410",
+   "es": "Contenido video festivales",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E9"
+   ],
+   "pistas": [
+    "fiestas patronales / locales → county fairs, street fairs, local festivals; ferias → festivals / fairs"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "Menu refrescante, servicio rapido",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · C10"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Generador bajo carga maxima",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D10"
+   ],
+   "pistas": [
+    "generador → generator (fuera del truck, lejos de la ventanilla: monóxido de carbono)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0415",
+   "es": "Publicar ubicacion diaria",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Menu top sellers, produccion maxima",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C11"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Mantenimiento reactivo si necesario",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0420",
+   "es": "Maxima actividad RRSS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E11"
+   ],
+   "pistas": [
+    "RRSS → social media; Google Maps → Google Business Profile; food truck apps (Roaming Hunger, StreetFoodFinder)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Transicion: comfort food + ensaladas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · C12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Revision post-verano completa",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "Planificar otono-invierno",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "Comfort food: guisos, pulled pork, sopas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Mantenimiento preventivo vehiculo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0430",
+   "es": "Contactar eventos Navidad",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · E13"
+   ],
+   "pistas": [
+    "calendario US (Super Bowl, Memorial Day, 4 de julio, Labor Day, Thanksgiving, holiday markets, New Year's Eve): sin fiestas españolas"
+   ],
+   "adaptar": "eventos de Navidad → holiday events (holiday markets y fiestas de empresa)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Menu invernal: estofados, hot dogs gourmet",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C14"
+   ],
+   "pistas": [
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "Preparar truck para frio",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0435",
+   "es": "Campana Navidad y empresa",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · E14"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "calendario US (Super Bowl, Memorial Day, 4 de julio, Labor Day, Thanksgiving, holiday markets, New Year's Eve): sin fiestas españolas"
+   ],
+   "adaptar": "campaña de Navidad y empresa → holiday and corporate catering campaign",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0438",
+   "es": "Menu festivo: gourmet, champan, postres",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C15"
+   ],
+   "pistas": [
+    "alcohol: un food truck no lo vende sin licencia",
+    "menú / carta → menu (menu board en la ventanilla)"
+   ],
+   "adaptar": "Sin champán: un food truck no sirve alcohol sin licencia; bebidas festivas sin alcohol",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "Revision total fin de ano",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "Balance anual y planificar siguiente",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · E15"
+   ],
+   "motivo": "nueva"
+  }
+ ]
+}
