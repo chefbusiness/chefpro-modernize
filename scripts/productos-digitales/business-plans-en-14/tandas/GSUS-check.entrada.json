@@ -1,0 +1,2760 @@
+{
+ "tanda": "GSUS-check",
+ "salida": "scripts/productos-digitales/business-plans-en-14/textos_en/GSUS-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 123,
+ "n_palabras": 3165,
+ "pistas": {
+  "P01": "US §6.7: Type I hood + fire suppression (UL 300) + makeup air sobre la freidora de tempura; «ask the fire marshal in writing»",
+  "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P03": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P04": "sushi bar / sushi counter (10 plazas) · chef's counter (solo omakase)",
+  "P05": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P06": "US §6.1: parasite destruction (Food Code 3-402.11): −4 °F 7 días o las dos de −31 °F; atún y acuicultura con pienso exentos con declaración; supplier letter; registros 90 días",
+  "P07": "US: cold holding ≤ 41 °F; receiving de atún ≤ 40 °F; freezer −4 °F; hot holding ≥ 135 °F; la métrica solo entre paréntesis",
+  "P08": "«LLC vs S corp with your CPA» · «EIN + state payroll / unemployment registration»",
+  "P09": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P10": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P11": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P12": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P13": "take-out order · pickup order · marketplace order (1 order = 1.6 covers)",
+  "P14": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P15": "offer letters, I-9, W-4, state minimum wage, W-2 por horas (sin convenio; sin «digital obligatorio»)",
+  "P16": "«zoning check before signing» · «building permit + certificate of occupancy» · business license + sales tax permit",
+  "P17": "sushi case (refrigerated display): solo para la neta del servicio",
+  "P18": "neta (topping) · sushi rice (shari) · sushi vinegar (sushi-zu) · saku block · hangiri",
+  "P19": "grease interceptor · used cooking oil pickup",
+  "P20": "US §6.4: 9 major allergens incl. sesame (UK 14); soy sauce = soy + wheat; spicy mayo = egg; cream cheese = milk; moluscos y mostaza NO son major en EE. UU.",
+  "P21": "own drivers = W-2 + hired & non-owned auto insurance (check your state); el caso no tiene reparto propio",
+  "P22": "DoorDash / Uber Eats / Grubhub con sus tiers (PIZ-US §5.3)",
+  "P23": "sushi trays, soy cups, chopsticks, bags; local packaging ordinances",
+  "P24": "plan review (Food Code 8-201.11) + health permit + inspection; written food safety plan (HACCP plan solo si hay variance)",
+  "P25": "nigiri · sashimi · maki (thin roll) · inside-out roll · hand roll · classic roll · specialty roll",
+  "P26": "scombrotoxin (histamine): receiving ≤ 40 °F; tuna species exempt from freezing in the US",
+  "P27": "head sushi chef (itamae, glosado una vez) · sushi chef; NUNCA «sushiman»",
+  "P28": "farmed Atlantic salmon (feed-raised aquaculture: exempt with a written supplier statement)",
+  "P29": "consumer advisory (3-603.11): disclosure + reminder, también en los listados online",
+  "P30": "Certified Food Protection Manager (2-102.12) + food handler cards (según estado)",
+  "P31": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P32": "US §6.2: sushi rice = TCS: TPHC 4 h (3-501.19) por defecto o variance + HACCP plan (3-502.11; pH del condado); sin pH «legal»",
+  "P33": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P34": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P35": "imitation crab («kani» o «krab» en carta)",
+  "P36": "US §6.7: «beer & wine license» (el sake suele ir con la de vino: «ask your state ABC»; «apply early», sin prometerla) · liquor liability",
+  "P37": "US §6.4: NO prometer «gluten-free» (21 CFR 101.91); tamari solo si la etiqueta lo dice",
+  "P38": "sushi platter / combo · party platter (encargo)",
+  "P39": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P40": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P41": "lunch specials (bento or roll combos): el «menú del día» español no cruza",
+  "P42": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P43": "«POS that reports sales tax» (sin Veri*factu)",
+  "P44": "sin equivalente US: packaging ordinances locales",
+  "P45": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P46": "fish seasonality (ask your supplier): sin el calendario español",
+  "P47": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P48": "Valentine's Day · New Year's Eve party platters · holiday parties",
+  "P49": "el caso US no cierra en agosto: cierra el lunes y tres festivos",
+  "P50": "US §8: el caso cuenta «covers» (115 equivalentes; 1 order = 1.6 covers); «orders» para take-out y marketplace; nunca «customers» para el volumen diario"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state/local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit + plan review",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "sushi bar (negocio)": "sushi restaurant (título) · sushi bar (prosa)",
+  "itamae · sushiman": "head sushi chef · sushi chef; «itamae» glosado una vez; NUNCA «sushiman»",
+  "barra de sushi · vitrina de neta": "sushi bar / sushi counter · sushi case (refrigerated display) · «chef's counter» (omakase)",
+  "neta · shari · sushi-zu · saku": "neta (topping) · sushi rice (shari) · sushi vinegar (sushi-zu) · saku block",
+  "nigiri · sashimi · hosomaki · uramaki · temaki · futomaki": "nigiri · sashimi · maki (thin roll) · roll / inside-out roll · hand roll · futomaki; «classic roll», «specialty roll»",
+  "combinado": "sushi platter / combo · «party platter» (encargo)",
+  "surimi": "imitation crab («kani» o «krab» en carta)",
+  "para llevar · plataforma": "take-out / to-go / pickup · third-party delivery marketplace",
+  "comensal equivalente · ticket": "covers · average check (excl. sales tax and tip)",
+  "escandallo": "recipe costing · cost per piece / per roll",
+  "congelación anti-anisakis": "parasite destruction (freezing) · «frozen per Food Code 3-402.11» · supplier letter",
+  "control por tiempo del arroz · validación": "TPHC (time as a public health control) · variance · HACCP plan · pH log",
+  "información al consumidor": "consumer advisory (disclosure + reminder)",
+  "histamina": "scombrotoxin (histamine) · receiving temperature",
+  "manipulador · APPCC": "food handler card · CFPM · HACCP",
+  "merma de vitrina": "shrink · case waste",
+  "−20 °C 24 h": "−4 °F for 7 days (or the −31 °F options)",
+  "art. 30.5": "TPHC or variance",
+  "licencia de apertura": "business license + certificate of occupancy",
+  "IVA · fianza": "sales tax · deposit",
+  "autónomo / SL": "LLC",
+  "menú del día": "lunch special"
+ },
+ "pestanas_es_en": {
+  "SUSP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "SUSC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local, frío y extracción": "Phase 2 - Hood & Permits",
+   "F3 - Pescado, arroz y sanidad": "Phase 3 - Raw Fish & Health",
+   "F4 - Personal y alérgenos": "Phase 4 - Staff & Allergens",
+   "F5 - Carta, marca y delivery": "Phase 5 - Menu, Brand, Delivery",
+   "F6 - Apertura y 90 días": "Phase 6 - Opening & 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US SUSHI RESTAURANT BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del «Plan de Negocio: Sushi Bar» de AI Chef Pro.": "This file is part of the Sushi Restaurant Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST DE APERTURA — SUSHI BAR": "SUSHI RESTAURANT STARTUP CHECKLIST",
+  "INSTRUCCIONES DE USO — Plan financiero Sushi Bar": "HOW TO USE THIS WORKBOOK — Sushi Restaurant Financial Projections",
+  "PLAN DE NEGOCIO: SUSHI BAR": "SUSHI RESTAURANT BUSINESS PLAN: SUSHI BAR, TAKE-OUT & DELIVERY",
+  "Inversión inicial estimada — sushi bar con barra a la vista, mesas, para llevar y a domicilio": "Estimated Startup Costs — sushi restaurant with a sushi bar counter, 40 seats, take-out and delivery",
+  "Ajusta las cifras a tu proyecto: son las de un caso tipo en una ciudad media, sin traspaso. Pon tus presupuestos reales en las celdas de importe.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — sushi bar con barra a la vista, mesas, para llevar y a domicilio": "Base case — sushi restaurant: sushi bar and tables, take-out and delivery",
+  "Punto de equilibrio mensual y diario — sushi bar con barra a la vista, mesas, para llevar y a domicilio": "Monthly and daily break-even — sushi restaurant with sushi bar, tables, take-out and delivery",
+  "FASE 2: LOCAL, EXTRACCIÓN, FRÍO Y LICENCIA (semanas 3-14)": "PHASE 2: SITE, HOOD, REFRIGERATION & PERMITS (weeks 3-14)",
+  "FASE 3: PESCADO, ARROZ Y REGISTRO SANITARIO (semanas 6-14)": "PHASE 3: RAW FISH, SUSHI RICE & HEALTH PERMIT (weeks 6-14)",
+  "Proyecto técnico de actividad y de extracción, y dirección de obra": "Architect, MEP & hood drawings, plan review & permit fees",
+  "Obra del local con barra de sushi a la vista, rótulo y fachada": "Build-out (second-generation space, 1,800 sq ft) with sushi bar counter, signage & facade",
+  "Conducto de extracción exclusivo hasta cubierta": "Type I hood (about 10 ft), UL 300 fire suppression & makeup air",
+  "Instalación eléctrica, cuadro y boletín": "Electrical service & panel",
+  "Fontanería, separador de grasas y climatización": "Plumbing, grease interceptor, HVAC & gas lines",
+  "Vitrina refrigerada de sushi para la barra": "Refrigerated sushi case (6 ft)",
+  "Arroceras industriales, mantenedor de arroz y hangiri": "Commercial gas rice cookers × 2 & rice warmers",
+  "Armario congelador de -20 °C con registrador y arcón": "Freezer (−4 °F or colder) with temperature logger",
+  "Cocina caliente: inducción, freidora de tempura y plancha": "Fryer, range & griddle (tempura, gyoza, miso)",
+  "Campana extractora con motor y filtros": "Walk-in cooler (6×8)",
+  "Frío: armario de pescado, armarios de cocina, mesa refrigerada y nevera de bebida y sake": "Reach-in fish refrigerators (32-34 °F), prep tables, beverage & sake cooler, ice machine",
+  "Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías": "3-comp sink, dish machine, hand sinks, shelving & stainless",
+  "Utillaje: cuchillos japoneses, tablas por colores, sondas, básculas, pH-metro y etiquetadora": "Smallwares (Japanese knives, color-coded boards, hangiri, calibrated pH meter, probes, to-go station)",
+  "Mobiliario de sala y barra": "Furniture & sushi bar seating (40 seats)",
+  "TPV con Veri*factu, datáfono, impresora de comandas y tablets": "POS, online ordering, KDS & delivery tablets",
+  "Constitución de la SL, licencia, tasas, registro sanitario y APPCC": "LLC, legal & food safety plan",
+  "Marca, web, fotos y lanzamiento": "Branding, website, photos & launch",
+  "Stock inicial: pescado, arroz, algas, salsas, cajas de pedidos y bebida": "Opening inventory (fish, rice, nori, sauces, disposables, beverage)",
+  "Ventas de sushi y cocina (sala, para llevar y a domicilio)": "Food sales (sushi, rolls & kitchen: dine-in, take-out & delivery)",
+  "Ventas de bebida (cerveza, sake, vino, refrescos, agua y té)": "Beverage sales (beer, sake, wine, soft drinks & tea)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property + workers' comp)",
+  "Gestoría laboral, fiscal y contable": "Accounting & bookkeeping",
+  "Mantenimiento del frío, el congelador, la campana extractora y el pH-metro": "Maintenance (semiannual hood cleaning, refrigeration & freezer, rice cookers)",
+  "Software, TPV, teléfono e internet": "Software, POS & online ordering",
+  "Limpieza, lavandería, EPI y análisis de autocontrol": "Cleaning, linens & uniforms",
+  "Gestión de residuos y del aceite usado de la freidora": "Waste, grease & used-oil hauling",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE y AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales, vigilancia de la salud y formación": "Training & permit renewals (CFPM, allergens, HACCP plan or variance, OSHA)",
+  "Titular — itamae y gerente: compra y corte del pescado, carta y gestión": "Owner / GM",
+  "Sushiman o sushiwoman: shari, rolls y combinados": "Head sushi chef (itamae)",
+  "Cocinero/a de cocina caliente y arroz": "Kitchen line cook (tempura, gyoza, rice)",
+  "Encargado/a de sala y pedidos": "Sushi chef",
+  "Camarero/a de cenas y fines de semana": "Servers, host & to-go packing (W-2, tips on top)",
+  "Refuerzo de viernes a domingo: sala y empaquetado de pedidos": "Sushi chef (part-time W-2, weekends & dinner peaks)",
+  "Suplencias de vacaciones y descansos": "Dish & prep"
+ },
+ "cadenas": [
+  {
+   "id": "c0618",
+   "es": "Consulta urbanística previa: extracción, potencia eléctrica y aforo",
+   "donde": [
+    "SUSC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0621",
+   "es": "Pregunta al ayuntamiento si el uso permite un restaurante con freidora y plancha, si el local admite un conducto exclusivo de extracción hasta la cubierta (en Madrid, que supere en 1 m lo que haya en 15 m: Ordenanza 4/2021, art. 12 y anexo I), qué potencia eléctrica tiene y qué aforo. Sin salida a cubierta no hay freidora de tempura ni plancha de gyozas: la carta se queda en frío",
+   "donde": [
+    "SUSC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0622",
+   "es": "Decidir el formato ANTES de firmar el local: barra y mesas, para llevar u omakase",
+   "donde": [
+    "SUSC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0624",
+   "es": "Barra a la vista con mesas, para llevar y a domicilio (este plan: 36 plazas en unos 95 m²); sólo para llevar y a domicilio en 40-60 m²; una barra omakase de 10-12 plazas con reserva; o un kaiten o un buffet libre de 150-250 m². Cada uno pide otro local, otra inversión y otro margen. Para un japonés completo con ramen o robata, la Guía Restaurante Japonés de AI Chef Pro; para un nikkei, la Guía Restaurante Nikkei",
+   "donde": [
+    "SUSC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0625",
+   "es": "Decidir cómo cumplirás el anisakis: congelador propio o pescado ya tratado",
+   "donde": [
+    "SUSC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0626",
+   "es": "Semanas 1-4",
+   "donde": [
+    "SUSC · F1 - Constitución!D7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0627",
+   "es": "El pescado que se sirve crudo se congela a -20 °C o menos en la totalidad del producto durante al menos 24 horas, o a -35 °C o menos durante al menos 15 horas, en tu local o en una etapa anterior con su documento; la acuicultura libre de anisakis sólo con acreditación escrita del proveedor (RD 1021/2022, art. 8.1). Si congelas tú, el congelador y su sitio entran en el proyecto del local",
+   "donde": [
+    "SUSC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0636",
+   "es": "Alta censal (modelo 036) en el grupo 671 o 673 del IAE, o en el 677.9 si sólo vendes para llevar",
+   "donde": [
+    "SUSC · F1 - Constitución!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0638",
+   "es": "Con comedor y servicio de mesa, el grupo 671 («servicios en restaurantes», por categoría); de barra sin comedor separado, el 673. La nota común de esos grupos ya te faculta para vender para llevar. Si los pedidos fueran tu actividad principal (sólo para llevar y a domicilio), el 677.9 (RDLeg 1175/1990). Confírmalo con tu gestoría. Exento de cuota con una cifra de negocio inferior a 1 millón de euros (art. 82.1.c de la Ley de Haciendas Locales)",
+   "donde": [
+    "SUSC · F1 - Constitución!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0650",
+   "es": "Seguro de responsabilidad civil y multirriesgo con avería del frío",
+   "donde": [
+    "SUSC · F1 - Constitución!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0653",
+   "es": "RC de al menos 300.000 € y multirriesgo con incendio y avería del frío, que es el pescado de la cámara y del congelador. Dile a la aseguradora que sirves pescado crudo y que trabajas con freidora",
+   "donde": [
+    "SUSC · F1 - Constitución!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0659",
+   "es": "Elegir el local: 90-100 m² ya de restauración con salida a cubierta posible",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0661",
+   "es": "Sitio para una barra de sushi a la vista con 8 taburetes y una sala de 28 plazas, cocina, cuarto frío, aseos (uno adaptado) y una zona de empaquetado de pedidos junto a la puerta. Barrio con vida de noche y paso de gente el fin de semana",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0662",
+   "es": "Comprobar la potencia eléctrica para una cocina toda eléctrica",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0665",
+   "es": "Arroceras, inducción, freidora, plancha, el frío del pescado, el congelador, la extracción y la climatización van a la luz. Una ampliación de potencia o una acometida nueva tarda: pregunta plazo y coste a la distribuidora",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0670",
+   "es": "El plan cuenta dos meses de renta antes de abrir y dos de fianza. Pide carencia mientras duran la obra de la barra y el conducto",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P14",
+    "P11",
+    "P01",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0671",
+   "es": "Contrato de arrendamiento con el uso de restaurante y la salida de humos",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0674",
+   "es": "Que diga «restaurante» y que autorice la obra de la barra, del cuarto frío y del conducto a cubierta",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12",
+    "P01",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0675",
+   "es": "Encargar el proyecto técnico de la actividad y de la extracción",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0678",
+   "es": "Distribución de la barra y de la cocina, potencia, aforo, ventilación, accesibilidad y el conducto a cubierta. Fuera de Madrid, pide la ordenanza de humos y de calidad del aire de tu ayuntamiento",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P01",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0681",
+   "es": "Los restaurantes no están en el anexo de la Ley 12/2012: van por el régimen de tu ayuntamiento, licencia o declaración responsable según su ordenanza. Pregunta cuál te toca en la consulta previa",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0685",
+   "es": "Conducto exclusivo de extracción a cubierta",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0688",
+   "es": "Ejemplo de Madrid (Ordenanza 4/2021): conducto exclusivo que supere en 1 m lo que haya en 15 m (art. 12 y anexo I). Una robata de carbón, si algún día la pones, pide además filtro de partículas (art. 23)",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0689",
+   "es": "Obra de la barra, la cocina y la sala: superficies lisas y lavables",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0691",
+   "es": "Barra de sushi con encimera lisa y lavable, paredes alicatadas, suelo antideslizante, falsos techos lavables, lavamanos de accionamiento no manual cerca de la barra y en la cocina, aseos (uno adaptado) y aislamiento acústico si hay vecinos",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "Cuarto frío y zona de limpieza del pescado separada del corte",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0693",
+   "es": "Constructor / Titular",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!C15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0694",
+   "es": "El pescado entero se limpia en una zona con su fregadero, lejos del corte de la barra y de la cocina caliente; el armario de pescado y el congelador, en el cuarto frío. Ordena el recorrido: recepción, frío, limpieza, corte, barra",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0696",
+   "es": "Agua fría y caliente en la cocina y en la barra, desagües con separador de grasas (la freidora echa mucha) y climatización de la sala: la vitrina de la neta trabaja peor con la sala caliente",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P18",
+    "P19",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0697",
+   "es": "Campana extractora sobre la freidora, la plancha y la inducción",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0699",
+   "es": "Campana extractora con motor y filtros de grasa que cubra la línea caliente, conectada al conducto exclusivo. Pide al instalador el caudal y el plan de limpieza de los filtros",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Zona de empaquetado de pedidos junto a la puerta",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Una mesa con las cajas, las tarrinas de soja y las bolsas, la impresora de comandas y las tablets de las plataformas, para que los repartidores no crucen la sala ni entren en la cocina",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20",
+    "P21",
+    "P22",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0705",
+   "es": "El boletín (certificado de la instalación) para el contrato de luz y el certificado final del técnico. Guárdalos: te los pedirá el ayuntamiento",
+   "donde": [
+    "SUSC · F2 - Local, frío y extracción!E19"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0708",
+   "es": "Comprar el congelador de -20 °C con registrador, la vitrina de la neta y las arroceras",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P18",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0709",
+   "es": "Semanas 6-10",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0710",
+   "es": "Pide la ficha técnica del congelador: tiene que llevar el pescado a -20 °C o menos en el centro y registrar la temperatura; uno que sólo marca -18 °C sirve para el congelado general, no para el anisakis. La vitrina, que mantenga la neta entre 0 y 4 °C con la sala llena; las arroceras, con el tamaño de tus tandas",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P18",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0715",
+   "es": "APPCC con el anisakis como punto de control crítico",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P06",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "Pescado para consumir crudo o casi crudo (nigiri, sashimi, maki, tartar, poke): a -20 °C o menos en la totalidad del producto durante al menos 24 horas, o a -35 °C o menos durante al menos 15 horas (RD 1021/2022, art. 8.1). El atún y el pescado salvaje no están exentos: congelación o documento",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P25",
+    "P06",
+    "P26",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "Registro de congelación por lote",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0720",
+   "es": "Itamae",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!C8",
+    "SUSC · F3 - Pescado, arroz y sanidad!C11",
+    "SUSC · F3 - Pescado, arroz y sanidad!C12",
+    "SUSC · F3 - Pescado, arroz y sanidad!C17",
+    "SUSC · F4 - Personal y alérgenos!C12",
+    "SUSC · F4 - Personal y alérgenos!C16",
+    "… y 5 apariciones más"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "Especie, origen, lote, fecha y hora de entrada y de salida del congelador y temperatura, en cada lote que congeles tú. El Kit de Tareas Sushi Bar de AI Chef Pro trae la hoja de registro (03, seguridad y anisakis)",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0723",
+   "es": "Documento del proveedor si el pescado llega congelado o es de acuicultura",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "Con cada proveedor",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0725",
+   "es": "Si el pescado llega ya congelado para consumir crudo, que el documento lo diga; si es de acuicultura libre de anisakis (el salmón de piscifactoría, por ejemplo), sólo con la acreditación escrita del proveedor (Reglamento (CE) 853/2004, anexo III, sección VIII). Archívalos con el lote: es lo primero que pide la inspección",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0726",
+   "es": "Cartel o carta con la información del anisakis",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P29",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0727",
+   "es": "Hay que informar al cliente de que el pescado para consumir crudo se ha congelado o procede de acuicultura libre de anisakis, en la carta o en un cartel (RD 1021/2022, art. 8.2). Ponlo también en la ficha de cada plataforma y en tu web",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P31",
+    "P06",
+    "P29",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0728",
+   "es": "Pescado fresco y vitrina entre 0 y 4 °C; descongelación en cámara",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "El pescado fresco va entre 0 y 4 °C (RD 1021/2022, art. 4.1), en la cámara y en la vitrina de la barra. Descongela en cámara, nunca a temperatura ambiente, y anota cuándo sale del congelador",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P17",
+    "P06",
+    "P07",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "Recepción del pescado: temperatura, aspecto y cuidado con el atún",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Mide la temperatura de cada entrega y rechaza la que llegue fuera de la que fije tu APPCC. Con el atún, la caballa y el bonito, la cadena de frío desde la recepción es la defensa contra la histamina, que no se va ni con la congelación ni con la cocción",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P06",
+    "P26",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "Shari: temperatura justificada ante sanidad o refrigerado",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0733",
+   "es": "La comida preparada se refrigera, se mantiene a 63 °C o más o se sirve cuanto antes (RD 1086/2020, art. 30.2). El shari a temperatura ambiente sólo si tu APPCC lo justifica con evidencias científicas y lo demuestras a sanidad (RD 1086/2020, art. 30.5), con el pH de cada tanda y un tiempo máximo. Si no, refrigerado. Ninguna norma española fija un pH ni un tiempo para el arroz de sushi",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11",
+    "P03",
+    "P18",
+    "P32",
+    "P24",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0734",
+   "es": "pH del shari en cada tanda con un pH-metro calibrado",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0735",
+   "es": "Sushiman",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!C14",
+    "SUSC · F6 - Apertura y 90 días!C12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27"
+   ]
+  },
+  {
+   "id": "c0736",
+   "es": "Desde la primera tanda",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0737",
+   "es": "Mide y anota el pH de cada tanda en la hoja 03 del Kit de Tareas Sushi Bar: su APPCC fija como límite crítico un pH de 4,6 o menos (criterio del Codex, no cifra legal); apunta a 4,2-4,3 para tener margen. Calibra el pH-metro con sus soluciones antes de empezar",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P11",
+    "P33",
+    "P32",
+    "P24"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Cocina caliente: gyozas, tempura y miso a 63 °C, enfriado y recalentado",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0739",
+   "es": "Cocinero/a de cocina caliente",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!C15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0742",
+   "es": "Lote y fecha del pescado, el arroz, las algas y las salsas, registros de congelación, temperaturas de la cámara, del congelador y de la vitrina, pH del shari y proveedor de cada materia prima",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P18",
+    "P06",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "Fichas técnicas por pieza con sus alérgenos",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0744",
+   "es": "Pescado; crustáceos (langostino, ebi); moluscos (pulpo, vieira); soja y el trigo de la salsa de soja; sésamo; huevo (tamago, mayonesa japonesa); leche (queso crema); gluten de la tempura, el panko y el surimi; mostaza de algunas pastas de wasabi; sulfitos del vino y de algunos encurtidos. Lee cada etiqueta: cambian por marca. Con la calculadora del pack, el coste de cada pieza",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35",
+    "P36",
+    "P20",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "Etiqueta completa en las bandejas cerradas antes del pedido",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P13",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "Las bandejas de combinado que preparas antes de que el cliente las pida, para la vitrina o para recoger, son envasado para la venta inmediata: denominación, ingredientes con los alérgenos resaltados, peso, fecha y conservación (RD 126/2015, art. 5). Lo que envasas a petición del cliente sólo necesita denominación y alérgenos (art. 4)",
+   "donde": [
+    "SUSC · F3 - Pescado, arroz y sanidad!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P31",
+    "P11",
+    "P34",
+    "P17",
+    "P38",
+    "P15",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0748",
+   "es": "FASE 4: PERSONAL, FORMACIÓN, PREVENCIÓN Y ALÉRGENOS (semanas 6-14)",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!A2"
+   ]
+  },
+  {
+   "id": "c0751",
+   "es": "El sushi bar va al convenio provincial de hostelería: el art. 4 del VI Acuerdo Laboral de ámbito Estatal para el sector de Hostelería no lo nombra, pero incluye los restaurantes. Pon su salario más bajo en la hoja de Supuestos del plan",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P39",
+    "P11",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0752",
+   "es": "Contratar al itamae y al sushiman ANTES de la obra",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P27"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "Si no eres tú el itamae (el jefe de barra que compra, limpia y corta el pescado), es la contratación difícil: las ofertas de sushiman van de 12.000 a 22.000 € brutos al año y las de un omakase parten de 2.500 € al mes. Que los dos opinen sobre la barra y el frío antes de cerrar la obra: una baja del único que corta cierra la barra",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P11",
+    "P27",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Cuadrante de los dos servicios y de las noches del viernes y el sábado",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0761",
+   "es": "Comidas y cenas de martes a domingo, con el lunes de cierre; el viernes y el sábado por la noche hacen falta unas seis personas: dos en la barra, una en la cocina caliente, dos en sala y una empaquetando pedidos",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0765",
+   "es": "Formación de manipuladores con el pescado crudo",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0766",
+   "es": "La da y la acredita la empresa (no hay un documento oficial que sacar): higiene, congelación del anisakis, temperaturas de la vitrina, pH del shari, alérgenos y contacto cruzado",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34",
+    "P17",
+    "P18",
+    "P06",
+    "P32",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0767",
+   "es": "Formación de la barra: corte, gramos de neta y de shari",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P30",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0768",
+   "es": "Todo el equipo de barra corta y forma con los mismos gramos: pesa 10 lonchas y 10 bolas de shari de cada uno y corrige. La neta y el shari que pesan de más son el food cost que no sale en el escandallo",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0771",
+   "es": "Obligatorio (Ley 31/1995): cortes con los cuchillos de la barra, quemaduras de la freidora y la plancha, el frío del congelador y las cargas",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P06",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0777",
+   "es": "Matriz de los 14 alérgenos con el pescado, el wasabi y la soja",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0778",
+   "es": "Una fila por pieza y una columna por alérgeno, con lo que más se olvida: el pescado, la mostaza de algunas pastas de wasabi, el trigo de la salsa de soja y el del surimi y el sésamo de los uramaki. Revísala cada vez que cambie un proveedor o una receta",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34",
+    "P25",
+    "P35",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "No prometer «sin gluten» con soja de trigo, tempura y freidora compartida",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12",
+    "P20",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0781",
+   "es": "«Sin gluten» sólo con 20 mg/kg o menos tal como se vende (Reglamento de Ejecución (UE) 828/2014). La salsa de soja lleva trigo, la tempura y el panko también y la freidora es compartida: informa del alérgeno y de las trazas y ofrece tamari sin prometerlo",
+   "donde": [
+    "SUSC · F4 - Personal y alérgenos!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P40",
+    "P12",
+    "P34",
+    "P20",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "Carta corta de unas 35 referencias y el menú del día",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P41"
+   ]
+  },
+  {
+   "id": "c0786",
+   "es": "Nigiri, sashimi, hosomaki, uramaki, temaki, combinados de 12, 24 y 36 piezas, poke, gyozas, edamame, sopa de miso y mochi, más el menú del día de mediodía. Una carta de 60 platos llena la vitrina de neta que se tira",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P18",
+    "P25",
+    "P38",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "Escandallo de cada pieza y de cada combinado por canal",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38"
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "Con la calculadora del pescado, el arroz y el escandallo del pack: el coste de cada pieza y el margen en sala, para llevar y en plataforma. En plataforma el margen del combinado cae más de un cuarto",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38",
+    "P32",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0790",
+   "es": "IVA de la carta para llevar: la comida al 10 %, el alcohol y las bebidas azucaradas al 21 %",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "En sala, todo al 10 % (Ley 37/1992, art. 91.Uno.2.2.º). Para llevar y a domicilio, la comida al 10 %, pero la cerveza, el sake, el vino y los refrescos con azúcares o edulcorantes añadidos van al 21 % (art. 91.Uno.1.1.º a y b). Configúralo así en el TPV y en cada plataforma",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P42",
+    "P11",
+    "P43",
+    "P36",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Envases: lo que no se consume, sin coste; el plástico de un solo uso, cobrado",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "El cliente puede llevarse lo que no consuma sin coste, y hay que avisarlo de forma visible, mejor en la carta (Ley 1/2025, art. 8). Los recipientes de plástico de un solo uso para llevar se cobran aparte en el tique (Ley 7/2022, art. 55): pregunta a tu proveedor cuáles de tus cajas de sushi lo son",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P31",
+    "P44",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Dos proveedores de pescado con su documentación",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0796",
+   "es": "Uno de salmón y otro de atún y del resto, o dos de todo: con un solo proveedor, una mala semana te deja sin carta. Pide a cada uno el documento de congelación o de acuicultura, la temperatura de entrega y el precio por escrito: el plan los estima",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P26",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Proveedor de arroz para sushi, nori y salsas con su ficha técnica",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P32"
+   ]
+  },
+  {
+   "id": "c0798",
+   "es": "Arroz de grano corto o medio para sushi (de 1,81 a 1,85 € el kilo sin IVA en sacos de 5 kg de mayorista, octubre de 2026), nori, vinagre de arroz, soja y wasabi, cada uno con su ficha y sus alérgenos",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P09",
+    "P40",
+    "P45",
+    "P33",
+    "P34",
+    "P32",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Calendario de temporadas del pescado",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P46"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "Bonito del norte de junio a octubre, atún rojo de almadraba de abril a junio: las temporadas cambian el precio y la carta del mes. El Kit de Tareas Sushi Bar trae el calendario anual",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0801",
+   "es": "Contrato y alta en las plataformas de reparto con un techo",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08",
+    "P15",
+    "P21",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Lee la comisión (del 13 al 35 % más IVA según la plataforma y la zona), cada cuánto liquidan, quién paga las promociones y el coste de las tablets. Fija un techo: en este plan, el 24 % de las ventas",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0804",
+   "es": "Calcula el margen del combinado en la plataforma con su comisión, el recargo y la caja; la recogida en el local no paga comisión: empújala. La tempura y las gyozas viajan mal: déjalas fuera del reparto o con envase ventilado",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38",
+    "P21",
+    "P22",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Pedidos: alérgenos antes de comprar y frío durante el viaje",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P34",
+    "P13",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "En la venta a distancia, la información de alérgenos tiene que estar disponible antes de que el cliente compre (Reglamento (UE) 1169/2011, art. 14). Y el pedido viaja en cajas y bolsas que mantengan la temperatura (RD 1021/2022, art. 4.3), también en el reparto de la plataforma",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P31",
+    "P11",
+    "P34",
+    "P13",
+    "P30",
+    "P20",
+    "P21",
+    "P22",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Marca en la OEPM, identidad, fotos y web con la carta y los alérgenos",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P47",
+    "P34",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0809",
+   "es": "Titular / Diseñador/a",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!C15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0810",
+   "es": "Semanas 2-14",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!D15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0811",
+   "es": "Comprueba antes que el nombre no está registrado en tu clase (servicios de restauración). Fotos reales de la barra y de las piezas; web con la carta, los alérgenos, el horario, los pedidos para recoger y la cláusula de protección de datos de cada canal",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P34",
+    "P13",
+    "P20",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0812",
+   "es": "Ficha de Google Business, redes y fechas fuertes",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0813",
+   "es": "Horario de comidas y cenas, fotos de la barra y respuesta a cada reseña. En el calendario, San Valentín y las bandejas de Nochebuena y Nochevieja, con encargo previo",
+   "donde": [
+    "SUSC · F5 - Carta, marca y delivery!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38",
+    "P48",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0820",
+   "es": "El plan arranca en enero y la rampa va de enero a abril; agosto, con el cierre de vacaciones, es el mes más flojo: por eso el fondo de maniobra cuenta. Si abres en otro mes, gira la fila de estacionalidad de la Tesorería",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P39",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0822",
+   "es": "Plan de limpieza de la barra, la vitrina y la cocina",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0823",
+   "es": "Vitrina de la neta, tablas por colores, cuchillos, arroceras y hangiri, freidora, plancha, filtros de la campana extractora y cuarto frío, con su registro",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17",
+    "P18",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0826",
+   "es": "Varios servicios de prueba para ajustar los gramos de neta y de shari, los tiempos de la barra y el empaquetado de los pedidos antes de abrir",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P13",
+    "P18",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Cámara, congelador, vitrina de la neta, pH del shari, caliente de las gyozas y la hoja de limpieza; corrige cualquier desviación antes de servir",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P17",
+    "P18",
+    "P06",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0832",
+   "es": "Registros de congelación y documentos de los proveedores, pH del shari, fichas de alérgenos, trazabilidad, temperaturas, limpieza, formación y DDD",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P34",
+    "P18",
+    "P06",
+    "P32",
+    "P30",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "Mantenimiento del frío, del congelador y de la campana extractora",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "Revisión del frigorista con la comprobación de que el congelador sigue llegando a -20 °C en el centro del pescado; la campana extractora y el conducto, al menos una vez al año (Madrid, Ordenanza 4/2021, art. 23)",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P03",
+    "P06",
+    "P01",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Calibración del pH-metro",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P32"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "Según su fabricante",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!D12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0839",
+   "es": "Con sus soluciones de calibración y anotada; un pH-metro sin calibrar da por bueno un shari que no lo está",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0840",
+   "es": "Medir el rendimiento del salmón y los gramos reales, y recalcular",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0842",
+   "es": "Limpia y pesa 3 salmones enteros, pesa 10 lonchas y 10 bolas de shari y lleva las medias a la calculadora del pack; compara después tu consumo real (compras de comida ÷ ventas de comida del mes) con el 29 % del plan",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0843",
+   "es": "Cuadrante y stock de las fechas fuertes y de agosto",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P49"
+   ]
+  },
+  {
+   "id": "c0844",
+   "es": "Enero y julio",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0845",
+   "es": "Diciembre es el pico del año, con las bandejas de Nochebuena y Nochevieja, y febrero sube con San Valentín; agosto es el valle, con el cierre de 10 días: prepara el cuadrante, el pescado y los encargos con tiempo",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P38",
+    "P49",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0848",
+   "es": "Ventas, comisión, promociones y cajas: si la plataforma pasa del 24 % de las ventas o su margen no cubre la comisión, recorta o sube precio. Reparto propio, sólo con contrato laboral y cuando el volumen lo pague",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15",
+    "P21",
+    "P22",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0850",
+   "es": "Comensales al día, ticket, mercancía y personal frente a la cuenta de resultados del Excel; revisa el escandallo cada vez que cambie el precio del salmón o del atún",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P50",
+    "P26",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0852",
+   "es": "Enero abre la rampa y agosto es el mes más flojo: mira el saldo de cada mes antes de un pago grande",
+   "donde": [
+    "SUSC · F6 - Apertura y 90 días!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P49"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GRC": {
+   "salida": "scripts/productos-digitales/business-plans-en-14/textos_en/GRC.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 97,
+   "cadenas": [
+    {
+     "id": "c0613",
+     "es": "FASE 1: CONSTITUCIÓN Y FISCALIDAD (semanas 1-4)",
+     "en_actual": "PHASE 1: BUSINESS SETUP & TAXES (weeks 1-4)",
+     "de": "GRC c0612 (TAQC F1 - Constitución!A2)",
+     "donde": [
+      "SUSC · F1 - Constitución!A2"
+     ]
+    },
+    {
+     "id": "c0619",
+     "es": "Titular / Técnico",
+     "en_actual": "Owner / Code consultant",
+     "de": "GRC c0618 (TAQC F1 - Constitución!C5)",
+     "donde": [
+      "SUSC · F1 - Constitución!C5"
+     ]
+    },
+    {
+     "id": "c0620",
+     "es": "Antes de firmar el alquiler",
+     "en_actual": "Before signing the lease",
+     "de": "GRC c0619 (TAQC F1 - Constitución!D5 / TAQC F1 - Constitución!D6)",
+     "donde": [
+      "SUSC · F1 - Constitución!D5",
+      "SUSC · F1 - Constitución!D6"
+     ]
+    },
+    {
+     "id": "c0628",
+     "es": "Elegir forma jurídica: SL unipersonal o autónomo",
+     "en_actual": "Choose your legal structure: LLC vs S corp",
+     "de": "GRC c0626 (TAQC F1 - Constitución!B8)",
+     "donde": [
+      "SUSC · F1 - Constitución!B8"
+     ]
+    },
+    {
+     "id": "c0629",
+     "es": "Gestoría",
+     "en_actual": "Accountant",
+     "de": "GRC c0627 (TAQC F1 - Constitución!C8 / TAQC F1 - Constitución!C10)",
+     "donde": [
+      "SUSC · F1 - Constitución!C8",
+      "SUSC · F1 - Constitución!C10",
+      "SUSC · F1 - Constitución!C11",
+      "SUSC · F4 - Personal y alérgenos!C5"
+     ]
+    },
+    {
+     "id": "c0631",
+     "es": "El plan financiero está hecho para una SL (Impuesto de Sociedades). Como autónomo tributas por IRPF: compara las dos opciones con tu gestoría con las cifras del plan",
+     "en_actual": "The financial plan assumes an effective income tax rate of 25% (21% federal plus state), as for a C corporation. An LLC taxed as a pass-through pays through your personal return instead, and early losses carry forward as net operating losses. Compare an LLC vs S corp election with your CPA, using the plan's numbers.",
+     "de": "GRC c0629 (TAQC F1 - Constitución!E8)",
+     "donde": [
+      "SUSC · F1 - Constitución!E8"
+     ]
+    },
+    {
+     "id": "c0632",
+     "es": "Constituir la SL o darte de alta como autónomo",
+     "en_actual": "Form the LLC with your state and get the EIN",
+     "de": "GRC c0630 (TAQC F1 - Constitución!B9)",
+     "donde": [
+      "SUSC · F1 - Constitución!B9"
+     ]
+    },
+    {
+     "id": "c0633",
+     "es": "Notaría / Gestoría",
+     "en_actual": "Attorney / CPA",
+     "de": "GRC c0631 (TAQC F1 - Constitución!C9)",
+     "donde": [
+      "SUSC · F1 - Constitución!C9"
+     ]
+    },
+    {
+     "id": "c0634",
+     "es": "Semanas 1-2",
+     "en_actual": "Weeks 1-2",
+     "de": "GRC c0632 (TAQC F1 - Constitución!D9)",
+     "donde": [
+      "SUSC · F1 - Constitución!D9"
+     ]
+    },
+    {
+     "id": "c0635",
+     "es": "La SL se puede constituir con 1 € de capital (Ley 18/2022, «Crea y Crece»)",
+     "en_actual": "Filing fees, annual reports and franchise taxes vary by state. Check your Secretary of State's website before you file.",
+     "de": "GRC c0633 (TAQC F1 - Constitución!E9)",
+     "donde": [
+      "SUSC · F1 - Constitución!E9"
+     ]
+    },
+    {
+     "id": "c0637",
+     "es": "Semana 2",
+     "en_actual": "Week 2",
+     "de": "GRC c0635 (TAQC F1 - Constitución!D10 / TAQC F1 - Constitución!D11)",
+     "donde": [
+      "SUSC · F1 - Constitución!D10",
+      "SUSC · F1 - Constitución!D11",
+      "SUSC · F1 - Constitución!D13"
+     ]
+    },
+    {
+     "id": "c0639",
+     "es": "Alta en la Seguridad Social (administrador o autónomo)",
+     "en_actual": "State payroll and unemployment registration (and workers' comp insurance)",
+     "de": "GRC c0637 (TAQC F1 - Constitución!B11)",
+     "donde": [
+      "SUSC · F1 - Constitución!B11"
+     ]
+    },
+    {
+     "id": "c0640",
+     "es": "Consulta la cuota del ejercicio en curso y si te aplica la cuota reducida de inicio de actividad",
+     "en_actual": "Premiums depend on your state, your payroll and your job classes. Get quotes from your insurance broker or the state fund.",
+     "de": "GRC c0638 (TAQC F1 - Constitución!E11)",
+     "donde": [
+      "SUSC · F1 - Constitución!E11"
+     ]
+    },
+    {
+     "id": "c0641",
+     "es": "Certificado digital",
+     "en_actual": "Apply for the beer & wine license (state + local)",
+     "de": "GRC c0639 (TAQC F1 - Constitución!B12)",
+     "donde": [
+      "SUSC · F1 - Constitución!B12"
+     ]
+    },
+    {
+     "id": "c0642",
+     "es": "Imprescindible para Hacienda, la Seguridad Social, el ayuntamiento y el registro sanitario",
+     "en_actual": "Start in week 1: ask your state alcohol beverage control (ABC) agency and your city what they need, and file as soon as you sign the lease: state and local approval can take months, and costs and timelines vary widely. Never open counting on it, and add liquor liability to your insurance.",
+     "de": "GRC c0640 (TAQC F1 - Constitución!E12)",
+     "donde": [
+      "SUSC · F1 - Constitución!E12"
+     ]
+    },
+    {
+     "id": "c0643",
+     "es": "Cuenta bancaria y tarjeta del negocio",
+     "en_actual": "Business bank account and business card",
+     "de": "GRC c0641 (TAQC F1 - Constitución!B13)",
+     "donde": [
+      "SUSC · F1 - Constitución!B13"
+     ]
+    },
+    {
+     "id": "c0644",
+     "es": "Separadas de las personales: por ellas pasan las liquidaciones del datáfono y de las plataformas y los pagos a proveedores",
+     "en_actual": "Keep them separate from personal accounts: card terminal settlements, delivery marketplace payouts and supplier payments all run through them.",
+     "de": "GRC c0642 (TAQC F1 - Constitución!E13)",
+     "donde": [
+      "SUSC · F1 - Constitución!E13"
+     ]
+    },
+    {
+     "id": "c0645",
+     "es": "Gestoría laboral y fiscal y software de facturación Veri*factu",
+     "en_actual": "Accountant / bookkeeper and a POS that reports sales tax",
+     "de": "GRC c0643 (TAQC F1 - Constitución!B14)",
+     "donde": [
+      "SUSC · F1 - Constitución!B14"
+     ]
+    },
+    {
+     "id": "c0646",
+     "es": "Semanas 2-4",
+     "en_actual": "Weeks 2-4",
+     "de": "GRC c0644 (TAQC F1 - Constitución!D14 / TAQC F1 - Constitución!D15)",
+     "donde": [
+      "SUSC · F1 - Constitución!D14",
+      "SUSC · F1 - Constitución!D15"
+     ]
+    },
+    {
+     "id": "c0647",
+     "es": "Nóminas y contratos de la plantilla. El software de facturación del TPV tiene que cumplir Veri*factu: consulta con tu gestoría la fecha que te aplica antes de comprar el TPV",
+     "en_actual": "Payroll and onboarding for your team. Pick a POS that calculates and reports sales tax by jurisdiction before you buy it, and ask your CPA how often your state wants sales tax returns.",
+     "de": "GRC c0645 (TAQC F1 - Constitución!E14)",
+     "donde": [
+      "SUSC · F1 - Constitución!E14"
+     ]
+    },
+    {
+     "id": "c0648",
+     "es": "Presentar el plan al banco y pedir dos ofertas de préstamo",
+     "en_actual": "Take the plan to two SBA 7(a) lenders and compare loan offers",
+     "de": "GRC c0646 (TAQC F1 - Constitución!B15)",
+     "donde": [
+      "SUSC · F1 - Constitución!B15"
+     ]
+    },
+    {
+     "id": "c0649",
+     "es": "Lleva el plan financiero completo, con la tesorería mes a mes. Pide también oferta de leasing o renting del frío y del equipo de cocina y de una línea ICO",
+     "en_actual": "Bring the complete financial plan, with the month-by-month cash flow. Ask for quotes on equipment leasing for the walk-in cooler and the kitchen line, and ask each lender about the SBA Microloan (up to $50,000) as a complement. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%).",
+     "de": "GTAQ-check c0647 (TAQC F1 - Constitución!E15)",
+     "donde": [
+      "SUSC · F1 - Constitución!E15"
+     ]
+    },
+    {
+     "id": "c0651",
+     "es": "Corredor de seguros",
+     "en_actual": "Insurance broker",
+     "de": "GRC c0649 (TAQC F1 - Constitución!C16)",
+     "donde": [
+      "SUSC · F1 - Constitución!C16"
+     ]
+    },
+    {
+     "id": "c0652",
+     "es": "Antes de la obra",
+     "en_actual": "Before construction",
+     "de": "GRC c0650 (TAQC F1 - Constitución!D16 / TAQC F2 - Local, humos y gas!D11)",
+     "donde": [
+      "SUSC · F1 - Constitución!D16",
+      "SUSC · F2 - Local, frío y extracción!D11"
+     ]
+    },
+    {
+     "id": "c0660",
+     "es": "Semanas 3-6",
+     "en_actual": "Weeks 3-6",
+     "de": "GRC c0658 (TAQC F2 - Local, humos y gas!D5)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D5"
+     ]
+    },
+    {
+     "id": "c0663",
+     "es": "Técnico / Distribuidora",
+     "en_actual": "Electrician / Utility",
+     "de": "GRC c0661 (TAQC F2 - Local, humos y gas!C6)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C6"
+     ]
+    },
+    {
+     "id": "c0664",
+     "es": "Antes de firmar",
+     "en_actual": "Before signing",
+     "de": "GRC c0662 (TAQC F2 - Local, humos y gas!D6 / TAQC F2 - Local, humos y gas!D7)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D6",
+      "SUSC · F2 - Local, frío y extracción!D7",
+      "SUSC · F2 - Local, frío y extracción!D8"
+     ]
+    },
+    {
+     "id": "c0666",
+     "es": "Comprobar con el técnico el recorrido del conducto hasta cubierta",
+     "en_actual": "Confirm the hood and duct route to the roof with your mechanical contractor",
+     "de": "GTAQ-check c0664 (TAQC F2 - Local, humos y gas!B7)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!B7"
+     ]
+    },
+    {
+     "id": "c0667",
+     "es": "Técnico",
+     "en_actual": "Architect / engineer",
+     "de": "GRC c0665 (TAQC F2 - Local, humos y gas!C7)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C7"
+     ]
+    },
+    {
+     "id": "c0668",
+     "es": "Conducto exclusivo, continuo y estanco hasta la cubierta, por patio o fachada, con el permiso de la comunidad de propietarios si cruza zonas comunes",
+     "en_actual": "A dedicated, continuous, sealed duct to the roof, through a shaft or up an exterior wall, with the landlord's written approval if it crosses shared areas or the building exterior.",
+     "de": "GRC c0666 (TAQC F2 - Local, humos y gas!E7)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!E7"
+     ]
+    },
+    {
+     "id": "c0669",
+     "es": "Negociar el alquiler: carencia de obra y fianza",
+     "en_actual": "Negotiate the lease: free-rent period during build-out and security deposit",
+     "de": "GRC c0667 (TAQC F2 - Local, humos y gas!B8)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!B8"
+     ]
+    },
+    {
+     "id": "c0672",
+     "es": "Titular / Abogado",
+     "en_actual": "Owner / Attorney",
+     "de": "GRC c0670 (TAQC F2 - Local, humos y gas!C9)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C9"
+     ]
+    },
+    {
+     "id": "c0673",
+     "es": "Semana 6",
+     "en_actual": "Week 6",
+     "de": "GRC c0671 (TAQC F2 - Local, humos y gas!D9)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D9"
+     ]
+    },
+    {
+     "id": "c0676",
+     "es": "Arquitecto/a o ingeniero/a",
+     "en_actual": "Architect / Engineer",
+     "de": "GRC c0674 (TAQC F2 - Local, humos y gas!C10)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C10"
+     ]
+    },
+    {
+     "id": "c0677",
+     "es": "Semanas 6-8",
+     "en_actual": "Weeks 6-8",
+     "de": "GRC c0675 (TAQC F2 - Local, humos y gas!D10 / TAQC F3 - Cocina, trompo y sanidad!D5)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D10",
+      "SUSC · F4 - Personal y alérgenos!D6"
+     ]
+    },
+    {
+     "id": "c0679",
+     "es": "Licencia o declaración responsable de la actividad",
+     "en_actual": "Zoning approval and certificate of occupancy",
+     "de": "GRC c0677 (TAQC F2 - Local, humos y gas!B11)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!B11"
+     ]
+    },
+    {
+     "id": "c0680",
+     "es": "Técnico / Ayuntamiento",
+     "en_actual": "Owner / City planning office",
+     "de": "GRC c0678 (TAQC F2 - Local, humos y gas!C11 / TAQC F2 - Local, humos y gas!C12)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C11",
+      "SUSC · F2 - Local, frío y extracción!C12"
+     ]
+    },
+    {
+     "id": "c0682",
+     "es": "Licencia, declaración o comunicación previa de la obra",
+     "en_actual": "Building permit for the build-out and the hood",
+     "de": "GTAQ-check c0680 (TAQC F2 - Local, humos y gas!B12)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!B12"
+     ]
+    },
+    {
+     "id": "c0683",
+     "es": "Semanas 6-8, antes de empezar la obra",
+     "en_actual": "Weeks 6-8, before construction starts",
+     "de": "GRC c0681 (TAQC F2 - Local, humos y gas!D12)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D12"
+     ]
+    },
+    {
+     "id": "c0684",
+     "es": "La obra y el conducto van por su propio trámite municipal: pregunta en la consulta previa qué título piden",
+     "en_actual": "The build-out and the hood run through their own building permit and inspections: ask the building department which drawings and sign-offs they require.",
+     "de": "GTAQ-check c0682 (TAQC F2 - Local, humos y gas!E12)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!E12"
+     ]
+    },
+    {
+     "id": "c0686",
+     "es": "Instalador / Técnico",
+     "en_actual": "Installer / Engineer",
+     "de": "GRC c0692 (TAQC F2 - Local, humos y gas!C15)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C13"
+     ]
+    },
+    {
+     "id": "c0687",
+     "es": "Semanas 8-12",
+     "en_actual": "Weeks 8-12",
+     "de": "GRC c0693 (TAQC F2 - Local, humos y gas!D15 / TAQC F2 - Local, humos y gas!D16)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D13",
+      "SUSC · F2 - Local, frío y extracción!D14",
+      "SUSC · F2 - Local, frío y extracción!D15",
+      "SUSC · F2 - Local, frío y extracción!D16"
+     ]
+    },
+    {
+     "id": "c0690",
+     "es": "Constructor",
+     "en_actual": "Contractor",
+     "de": "GRC c0696 (TAQC F2 - Local, humos y gas!C16)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C14"
+     ]
+    },
+    {
+     "id": "c0698",
+     "es": "Semanas 10-12",
+     "en_actual": "Weeks 10-12",
+     "de": "GRC c0702 (TAQC F2 - Local, humos y gas!D18 / TAQC F4 - Personal y alérgenos!D7)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D17",
+      "SUSC · F2 - Local, frío y extracción!D18"
+     ]
+    },
+    {
+     "id": "c0702",
+     "es": "Boletín eléctrico y certificado final de obra",
+     "en_actual": "Final inspections and certificate of occupancy",
+     "de": "GTAQ-check c0704 (TAQC F2 - Local, humos y gas!B19)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!B19"
+     ]
+    },
+    {
+     "id": "c0703",
+     "es": "Instalador autorizado / Técnico",
+     "en_actual": "Licensed electrician / Inspector",
+     "de": "GRC c0705 (TAQC F2 - Local, humos y gas!C19)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!C19"
+     ]
+    },
+    {
+     "id": "c0704",
+     "es": "Durante la obra y al acabarla",
+     "en_actual": "During and after construction",
+     "de": "GRC c0706 (TAQC F2 - Local, humos y gas!D19)",
+     "donde": [
+      "SUSC · F2 - Local, frío y extracción!D19"
+     ]
+    },
+    {
+     "id": "c0711",
+     "es": "Declaración responsable al registro sanitario autonómico",
+     "en_actual": "Submit your plans for health department plan review, apply for the health permit and book the pre-opening inspection",
+     "de": "GRC c0715 (TAQC F3 - Cocina, trompo y sanidad!B7)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!B6"
+     ]
+    },
+    {
+     "id": "c0712",
+     "es": "Titular / Gestoría",
+     "en_actual": "Owner / Health department",
+     "de": "GRC c0716 (TAQC F3 - Cocina, trompo y sanidad!C7)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!C6"
+     ]
+    },
+    {
+     "id": "c0713",
+     "es": "Antes de la primera prueba de carta",
+     "en_actual": "Before construction starts",
+     "de": "GRC c0717 (TAQC F3 - Cocina, trompo y sanidad!D7)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!D6"
+     ]
+    },
+    {
+     "id": "c0714",
+     "es": "Va al registro sanitario de tu comunidad autónoma (RD 1021/2022). El registro estatal (RGSEAA) sólo aplica si sirves a otros negocios por encima de lo que permite el art. 3 del mismo real decreto",
+     "en_actual": "Submit the menu, equipment list, floor plan and finishes to your local health department for plan review (Food Code 8-201.11) before you build. After the final inspection you receive the health permit. Rules vary by state and county, so ask what they need.",
+     "de": "GPIZ-check c0725 (PIZC F3 - Cocina, horno y sanidad!E8)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!E6"
+     ]
+    },
+    {
+     "id": "c0716",
+     "es": "Consultor / Titular",
+     "en_actual": "Consultant / Owner",
+     "de": "GRC c0720 (TAQC F3 - Cocina, trompo y sanidad!C8)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!C7",
+      "SUSC · F3 - Pescado, arroz y sanidad!C13"
+     ]
+    },
+    {
+     "id": "c0721",
+     "es": "Desde la primera compra",
+     "en_actual": "From the first purchase",
+     "de": "GTAQ-check c0740 (TAQC F3 - Cocina, trompo y sanidad!D15)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!D8",
+      "SUSC · F3 - Pescado, arroz y sanidad!D12",
+      "SUSC · F3 - Pescado, arroz y sanidad!D16"
+     ]
+    },
+    {
+     "id": "c0740",
+     "es": "En caliente, a 63 °C o más; lo que se guarda, enfriado de 60 a 10 °C en menos de 2 horas, y recalentado a 74 °C durante 15 segundos en el centro en la hora siguiente a sacarlo del frío (RD 1086/2020, art. 30, en la redacción del RD 1021/2022)",
+     "en_actual": "Hot holding at 135 °F (57 °C) or above. Cool what you store with a written procedure that follows the Food Code cooling steps, and reheat to 165 °F (74 °C) within 2 hours. Log the temperatures.",
+     "de": "GTAQ-check c0730 (TAQC F3 - Cocina, trompo y sanidad!E11)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!E15"
+     ]
+    },
+    {
+     "id": "c0741",
+     "es": "Trazabilidad y registros: lotes, temperaturas y proveedores",
+     "en_actual": "Traceability and records: lots, temperatures and suppliers",
+     "de": "GTAQ-check c0739 (TAQC F3 - Cocina, trompo y sanidad!B15)",
+     "donde": [
+      "SUSC · F3 - Pescado, arroz y sanidad!B16"
+     ]
+    },
+    {
+     "id": "c0749",
+     "es": "Copiar la tabla salarial del convenio provincial de hostelería",
+     "en_actual": "Set pay rates against the state and local minimum wage and post the labor law posters",
+     "de": "GRC c0752 (TAQC F4 - Personal y alérgenos!B5)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!B5"
+     ]
+    },
+    {
+     "id": "c0750",
+     "es": "Semana 10",
+     "en_actual": "Week 10",
+     "de": "GRC c0753 (TAQC F4 - Personal y alérgenos!D5)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!D5"
+     ]
+    },
+    {
+     "id": "c0754",
+     "es": "Contratos por escrito a jornada completa y parcial",
+     "en_actual": "Offer letters for full-time and part-time staff",
+     "de": "GRC c0755 (TAQC F4 - Personal y alérgenos!B6)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!B7"
+     ]
+    },
+    {
+     "id": "c0755",
+     "es": "Con su horario y su grupo del convenio. Una factura de «autónomo» con tu horario y tu dirección es falso autónomo (art. 1.1 del Estatuto de los Trabajadores)",
+     "en_actual": "With schedule, pay rate and role. Collect a W-4 and an I-9 (with identity documents) from every hire, the I-9 within 3 business days of the start date. Classify people correctly: a 1099 contractor who works your schedule at your address is a misclassification risk.",
+     "de": "GRC c0756 (TAQC F4 - Personal y alérgenos!E6)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!E7"
+     ]
+    },
+    {
+     "id": "c0756",
+     "es": "Registro de jornada",
+     "en_actual": "Time clock and overtime records",
+     "de": "GRC c0759 (TAQC F4 - Personal y alérgenos!B8)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!B8"
+     ]
+    },
+    {
+     "id": "c0758",
+     "es": "Obligatorio para toda la plantilla (art. 34.9 ET), también a tiempo parcial. Acuerda con tu gestoría cómo llevarlo y consérvalo",
+     "en_actual": "Keep hours for every employee, part-time included (FLSA recordkeeping). A time clock in the POS makes it simple; agree with your CPA how to store the records.",
+     "de": "GTAQ-check c0761 (TAQC F4 - Personal y alérgenos!E8)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!E8"
+     ]
+    },
+    {
+     "id": "c0760",
+     "es": "Semana 12",
+     "en_actual": "Week 12",
+     "de": "GRC c0763 (TAQC F4 - Personal y alérgenos!D9)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!D9",
+      "SUSC · F5 - Carta, marca y delivery!D11"
+     ]
+    },
+    {
+     "id": "c0762",
+     "es": "Reparto propio: sólo con contrato laboral",
+     "en_actual": "Own delivery drivers: W-2 employees only",
+     "de": "GRC c0765 (TAQC F4 - Personal y alérgenos!B10)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!B10"
+     ]
+    },
+    {
+     "id": "c0763",
+     "es": "Si repartes tú",
+     "en_actual": "If you deliver yourself",
+     "de": "GRC c0766 (TAQC F4 - Personal y alérgenos!D10)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!D10"
+     ]
+    },
+    {
+     "id": "c0764",
+     "es": "El repartidor propio es hostelería (ALEH VI, art. 4) y trabaja por cuenta ajena; en el reparto organizado por una plataforma digital, la ley presume la relación laboral (ET, disposición adicional 23.ª). Nunca con «autónomos»",
+     "en_actual": "Your own drivers are employees on payroll (W-2), and because they drive their own cars on your behalf you also need hired and non-owned auto insurance (check your state). Do not treat them as independent contractors. Drivers for DoorDash, Uber Eats and Grubhub work for the marketplace, not for you.",
+     "de": "GRC c0767 (TAQC F4 - Personal y alérgenos!E10)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!E10"
+     ]
+    },
+    {
+     "id": "c0769",
+     "es": "Plan de prevención de riesgos laborales",
+     "en_actual": "OSHA basics: safety plan and training",
+     "de": "GRC c0772 (TAQC F4 - Personal y alérgenos!B13)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!B13"
+     ]
+    },
+    {
+     "id": "c0770",
+     "es": "Servicio de prevención",
+     "en_actual": "Insurance carrier / Consultant",
+     "de": "GRC c0773 (TAQC F4 - Personal y alérgenos!C13 / TAQC F4 - Personal y alérgenos!C14)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!C13",
+      "SUSC · F4 - Personal y alérgenos!C14"
+     ]
+    },
+    {
+     "id": "c0772",
+     "es": "Vigilancia de la salud de la plantilla",
+     "en_actual": "Employee health policy and first aid",
+     "de": "GRC c0775 (TAQC F4 - Personal y alérgenos!B14)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!B14"
+     ]
+    },
+    {
+     "id": "c0773",
+     "es": "Al contratar",
+     "en_actual": "At hire",
+     "de": "GRC c0776 (TAQC F4 - Personal y alérgenos!D14)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!D14"
+     ]
+    },
+    {
+     "id": "c0774",
+     "es": "Reconocimientos médicos ofrecidos a cada persona que entra",
+     "en_actual": "Have every new hire sign an employee health agreement (report illness symptoms; Food Code 2-201) and stock a first aid kit.",
+     "de": "GRC c0777 (TAQC F4 - Personal y alérgenos!E14)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!E14"
+     ]
+    },
+    {
+     "id": "c0775",
+     "es": "Información de alérgenos por escrito o de palabra con registro",
+     "en_actual": "Allergen information on the menu or by staff script, with a written record",
+     "de": "GTAQ-check c0778 (TAQC F4 - Personal y alérgenos!B15)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!B15"
+     ]
+    },
+    {
+     "id": "c0776",
+     "es": "Por escrito en la carta o, si la das de palabra, registrada por escrito o en formato electrónico en el local, accesible y con un cartel que diga dónde pedirla (RD 126/2015, arts. 4.1.b y 6.5.a)",
+     "en_actual": "In writing on the menu or, if staff give it verbally, backed by a written record kept on site and a sign telling guests to ask. Keep one allergen matrix up to date for the whole menu.",
+     "de": "GTAQ-check c0779 (TAQC F4 - Personal y alérgenos!E15)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!E15"
+     ]
+    },
+    {
+     "id": "c0780",
+     "es": "Antes de imprimir la carta",
+     "en_actual": "Before printing the menu",
+     "de": "GRC c0783 (TAQC F4 - Personal y alérgenos!D17)",
+     "donde": [
+      "SUSC · F4 - Personal y alérgenos!D17"
+     ]
+    },
+    {
+     "id": "c0783",
+     "es": "FASE 5: CARTA, MARCA, DELIVERY Y PROVEEDORES (semanas 8-16)",
+     "en_actual": "PHASE 5: MENU, BRAND, DELIVERY & SUPPLIERS (weeks 8-16)",
+     "de": "GTAQ-check c0786 (TAQC F5 - Carta, marca y delivery!A2)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!A2"
+     ]
+    },
+    {
+     "id": "c0785",
+     "es": "Semana 8",
+     "en_actual": "Week 8",
+     "de": "GRC c0788 (TAQC F5 - Carta, marca y delivery!D5)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!D5"
+     ]
+    },
+    {
+     "id": "c0788",
+     "es": "Semanas 10-14",
+     "en_actual": "Weeks 10-14",
+     "de": "GRC c0791 (TAQC F5 - Carta, marca y delivery!D6)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!D6"
+     ]
+    },
+    {
+     "id": "c0791",
+     "es": "Gestoría / Titular",
+     "en_actual": "CPA / Owner",
+     "de": "GTAQ-check c0794 (TAQC F5 - Carta, marca y delivery!C7)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!C7"
+     ]
+    },
+    {
+     "id": "c0803",
+     "es": "Precios para la plataforma y para la recogida en el local",
+     "en_actual": "Prices for the marketplace and for pickup at the shop",
+     "de": "GRC c0806 (TAQC F5 - Carta, marca y delivery!B13)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!B13"
+     ]
+    },
+    {
+     "id": "c0806",
+     "es": "Antes del primer pedido",
+     "en_actual": "Before the first order",
+     "de": "GRC c0748 (TAQC F3 - Cocina, trompo y sanidad!D18)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!D14"
+     ]
+    },
+    {
+     "id": "c0814",
+     "es": "Música ambiental: licencias de SGAE y AGEDI-AIE",
+     "en_actual": "Background music: ASCAP, BMI and SESAC licenses",
+     "de": "GRC c0817 (TAQC F5 - Carta, marca y delivery!B17)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!B17"
+     ]
+    },
+    {
+     "id": "c0815",
+     "es": "Son dos licencias de propiedad intelectual, distintas de la municipal: pide las dos si pones música",
+     "en_actual": "These are separate music licenses from performing-rights organizations, different from any city permit. Get all of them if you play music, or use a streaming service licensed for business.",
+     "de": "GRC c0818 (TAQC F5 - Carta, marca y delivery!E17)",
+     "donde": [
+      "SUSC · F5 - Carta, marca y delivery!E17"
+     ]
+    },
+    {
+     "id": "c0817",
+     "es": "FASE 6: APERTURA Y PRIMEROS 90 DÍAS",
+     "en_actual": "PHASE 6: OPENING & FIRST 90 DAYS",
+     "de": "GRC c0820 (TAQC F6 - Apertura y 90 días!A2)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!A2"
+     ]
+    },
+    {
+     "id": "c0818",
+     "es": "Abrir en enero, el Mes 1 del plan",
+     "en_actual": "Open in January, Month 1 of the plan",
+     "de": "GTAQ-check c0821 (TAQC F6 - Apertura y 90 días!B5)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!B5"
+     ]
+    },
+    {
+     "id": "c0821",
+     "es": "Empresa del ROESB",
+     "en_actual": "Licensed pest control operator",
+     "de": "GRC c0824 (TAQC F6 - Apertura y 90 días!C6)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!C6"
+     ]
+    },
+    {
+     "id": "c0824",
+     "es": "Servicios de prueba con la carta completa",
+     "en_actual": "Trial services with the full menu",
+     "de": "GTAQ-check c0827 (TAQC F6 - Apertura y 90 días!B8)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!B8"
+     ]
+    },
+    {
+     "id": "c0825",
+     "es": "Semana previa",
+     "en_actual": "Week before opening",
+     "de": "GRC c0828 (TAQC F6 - Apertura y 90 días!D8)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!D8"
+     ]
+    },
+    {
+     "id": "c0827",
+     "es": "Comprobar temperaturas y registros del primer día",
+     "en_actual": "Check temperatures and records on day one",
+     "de": "GRC c0830 (TAQC F6 - Apertura y 90 días!B9)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!B9"
+     ]
+    },
+    {
+     "id": "c0828",
+     "es": "Día 1",
+     "en_actual": "Day 1",
+     "de": "GRC c0831 (TAQC F6 - Apertura y 90 días!D9)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!D9"
+     ]
+    },
+    {
+     "id": "c0830",
+     "es": "Inspección sanitaria: APPCC y registros a mano",
+     "en_actual": "Health inspection: written food safety plan and records at hand",
+     "de": "GRC c0833 (TAQC F6 - Apertura y 90 días!B10)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!B10"
+     ]
+    },
+    {
+     "id": "c0831",
+     "es": "Desde el día 1",
+     "en_actual": "From day 1",
+     "de": "GRC c0834 (TAQC F6 - Apertura y 90 días!D10)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!D10"
+     ]
+    },
+    {
+     "id": "c0834",
+     "es": "Titular / Empresa de mantenimiento",
+     "en_actual": "Owner / Maintenance contractor",
+     "de": "GRC c0837 (TAQC F6 - Apertura y 90 días!C11)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!C11"
+     ]
+    },
+    {
+     "id": "c0835",
+     "es": "Desde el mes 1",
+     "en_actual": "From month 1",
+     "de": "GRC c0838 (TAQC F6 - Apertura y 90 días!D11)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!D11"
+     ]
+    },
+    {
+     "id": "c0841",
+     "es": "Semanas 1-12",
+     "en_actual": "Weeks 1-12",
+     "de": "GTAQ-check c0844 (TAQC F6 - Apertura y 90 días!D13)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!D13"
+     ]
+    },
+    {
+     "id": "c0846",
+     "es": "Revisar la cuenta de la plataforma cada mes",
+     "en_actual": "Review the delivery marketplace statement each month",
+     "de": "GRC c0849 (TAQC F6 - Apertura y 90 días!B15)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!B15"
+     ]
+    },
+    {
+     "id": "c0847",
+     "es": "Mensual",
+     "en_actual": "Monthly",
+     "de": "GRC c0850 (TAQC F6 - Apertura y 90 días!D15 / TAQC F6 - Apertura y 90 días!D16)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!D15",
+      "SUSC · F6 - Apertura y 90 días!D16",
+      "SUSC · F6 - Apertura y 90 días!D17"
+     ]
+    },
+    {
+     "id": "c0849",
+     "es": "Comparar ventas y costes reales con el plan cada mes",
+     "en_actual": "Compare actual sales and costs with the plan each month",
+     "de": "GRC c0852 (TAQC F6 - Apertura y 90 días!B16)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!B16"
+     ]
+    },
+    {
+     "id": "c0851",
+     "es": "Seguir la tesorería mes a mes y el saldo mínimo",
+     "en_actual": "Track cash flow month by month and the minimum balance",
+     "de": "GRC c0854 (TAQC F6 - Apertura y 90 días!B17)",
+     "donde": [
+      "SUSC · F6 - Apertura y 90 días!B17"
+     ]
+    }
+   ]
+  }
+ }
+}

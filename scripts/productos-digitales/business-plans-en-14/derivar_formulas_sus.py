@@ -7,7 +7,8 @@ Clon de `../business-plans-en-13/derivar_formulas_pol.py` con las mismas CINCO f
 (el libro ES del sushi bar sale de la taquería LIVE con la MISMA rejilla: `../business-plans-en-12/censo_es.json` +
 `formulas_taq.json`), la PIZZA EN, REST/PAN, el BAR EN y FT/CAF. Mismo ESQUELETO (literales idénticos, referencias como
 marcador, pestañas canónicas) → EN de la gemela con las referencias reescritas. Las que el sushi bar ES escribe distinto
-de la taquería ES (C50, D27, D37, F13, medido el 31-oct) van a mano en `formulas_sus_manual.py`. Escribe
+de la taquería ES (C50, D27, D37, F13, medido el 31-oct) van a mano en `formulas_sus_manual.py`. Las ES se FUNDEN antes
+(`parche_xml_xlsx.fundir_literales`: el ES LIVE trae troceados en «"…"&"…"» los literales > 255 desde el 30-oct). Escribe
 `formulas_sus.json` y falla si queda alguna sin EN o con español en un literal.
 
     python3 derivar_formulas_sus.py         (o: python3 bp14.py derivar_formulas)
@@ -30,6 +31,8 @@ sys.path.insert(0, BP2)
 sys.path.insert(0, PIZ)
 sys.path.insert(0, TAQ)
 sys.path.insert(0, AQUI)
+sys.path.insert(0, PD)
+from parche_xml_xlsx import fundir_literales                     # noqa: E402  (30-oct: «"…"&"…"» de Excel)
 os.environ.pop('BP_CONJUNTO', None)
 import mapas as M                                                # noqa: E402  (ftcaf: FORMULAS_EN de FT/CAF)
 import mapas_rp as RP                                            # noqa: E402
@@ -72,6 +75,7 @@ def _refs(s):
 
 
 def esqueleto(f):
+    f = fundir_literales(f)
     return tuple((t, v if t != 'ref' else (None if v[0] is None else M.norm_hoja(v[0]))) for t, v in trozos(f))
 
 
@@ -122,6 +126,7 @@ def main():
         c = info['corto']
         for h, hd in info['hojas_detalle'].items():
             for x, f in hd['formulas_texto'].items():
+                f = fundir_literales(f)
                 clave = '%s|%s|%s' % (c, h, x)
                 if clave in MANUAL:
                     out[clave] = OrderedDict([('en', MANUAL[clave]), ('de', None), ('metodo', 'manual')])
@@ -131,6 +136,7 @@ def main():
                          if M.norm_hoja(k[1]) == M.norm_hoja(h) and esqueleto(fes) == esq]
                 hecho = None
                 for k, fes, fen in cands:
+                    fes = fundir_literales(fes)
                     a, b = [v for t, v in trozos(fes) if t == 'ref'], [v for t, v in trozos(f) if t == 'ref']
                     mapa, ok = {}, True
                     for (ha, ca), (hb, cb) in zip(a, b):
