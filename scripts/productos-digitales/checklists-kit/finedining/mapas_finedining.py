@@ -279,6 +279,31 @@ for _f, (_b, _cad) in _SERVICIOS_05.items():
     POR_CELDA[_T05 + ('B%d' % _f,)] = _b
     if _cad:
         POR_CELDA[_T05 + ('F%d' % _f,)] = _cad
+# 10 · Cierre (errata ES): «Retirar decoración» y «Actualizar carta de vinos» van DESPUÉS de activar la alarma y cerrar
+# con llave, y las persianas se cierran antes de recoger la señalización. Mismas 15 filas (E = «Close»): sala → patio y
+# señalización → caja → papeleras → el local → persiana, alarma y llave al final (como el 18 del hotel)
+_CN = ('10', 'Cierre del Negocio')
+_CIERRE_10 = [  # fila ES de origen, EN, zona EN, responsable EN
+    (5, 'Turn off background music', 'General', 'Shift manager'),
+    (6, 'Check no guests are left in the restaurant', 'Dining room', 'Shift manager'),
+    (18, 'Remove fresh table decorations', 'Dining room', 'Shift manager'),
+    (19, 'Update the wine list if anything changed', 'Dining room', 'Shift manager'),
+    (7, 'Clean up and bring in the patio, if you have one', 'Patio', 'Shift manager'),
+    (12, 'Bring in the outdoor signage', 'Outside', 'Shift manager'),
+    (8, 'Turn off the POS / card terminal (or leave it on standby)', 'Register', 'Shift manager'),
+    (14, 'Empty trash cans in common areas and restrooms', 'Restrooms', 'Shift manager'),
+    (13, 'Check that windows are closed', 'General', 'Shift manager'),
+    (11, 'Turn off HVAC', 'General', 'Shift manager'),
+    (10, 'Turn off lights (leave security lighting on)', 'General', 'Shift manager'),
+    (15, 'Final safety check (gas, water, outlets)', 'General', 'Shift manager'),
+    (9, 'Close the security gate / shutters and doors', 'Entrance', 'Last one out'),
+    (16, 'Arm the alarm', 'Entrance', 'Last one out'),
+    (17, 'Lock up and verify it is locked', 'Entrance', 'Last one out'),
+]
+_RESPONSABLE_CAMBIA = frozenset({18, 19, 9, 16})
+for _fila, (_o, _b, _c, _d) in enumerate(_CIERRE_10, 5):
+    for _col, _v in (('B', _b), ('C', _c), ('D', _d)):
+        POR_CELDA[_CN + ('%s%d' % (_col, _fila),)] = _v
 for _f, _es, _xes, _en, _xen in DENOMINACIONES:
     POR_CELDA[(HOJA_CAJA[0], HOJA_CAJA[1], 'A%d' % _f)] = _en
 VALORES_EN = OrderedDict()
@@ -367,7 +392,6 @@ ADAPTAR = OrderedDict([
     # 10 (= 08 del base)
     (('10', 'Apertura del Negocio', 'B8'), _A[('08', 'Apertura del Negocio', 'B8')]),
     (('10', 'Apertura del Negocio', 'B17'), 'Terraza → patio (mesas, sillas, sombrillas o patio heaters)'),
-    (('10', 'Cierre del Negocio', 'B7'), 'Terraza → patio'),
 ])
 # 11 (= 09 del base): el ADAPTAR del base, con la clave renumerada
 _HEREDA_ADAPTAR = [k for k in _A if k[0] == '09']
@@ -544,6 +568,20 @@ def cruzar_censo(p):
             dic = POR_CELDA.get(k) or ADAPTAR.get(k) or ''
             if '°F' not in dic:
                 err.append('°C del ES sin °F en POR_CELDA/ADAPTAR: %r → %r' % (k, t[:60]))
+    # 10 cierre: permutación de 5-19 con persiana, alarma y llave al final; zona y responsable = los del ES salvo los
+    # declarados
+    if sorted(o for o, *_r in _CIERRE_10) != list(range(5, 20)) or [o for o, *_r in _CIERRE_10][-3:] != [9, 16, 17]:
+        err.append('10 cierre: no es una permutación de 5-19 con persiana, alarma y llave al final')
+    for o, _b, c_en, d_en in _CIERRE_10:
+        z_es = tx.get((_CN[0], _CN[1], 'C%d' % o))
+        if GLOSARIO.get(z_es) != c_en:
+            err.append('10 cierre: la zona de la fila %d (%r) no es %r' % (o, z_es, c_en))
+        r_es = tx.get((_CN[0], _CN[1], 'D%d' % o))
+        if GLOSARIO.get(r_es) != d_en and o not in _RESPONSABLE_CAMBIA:
+            err.append('10 cierre: el responsable de la fila %d (%r) no es %r' % (o, r_es, d_en))
+    if not tx.get((_CN[0], _CN[1], 'B18'), '').startswith('Retirar decoración') or \
+            not tx.get((_CN[0], _CN[1], 'B16'), '').startswith('Activar alarma'):
+        err.append('10 cierre: el ES ya no trae la errata del orden (¿corregida en el ES?)')
     horas = sorted({(k[0], k[1]) for k, t in tx.items() if RX_HORA_CELDA.match(t)})
     if horas != [('10', 'Apertura del Negocio'), ('11', 'Apertura de Caja')]:
         err.append('horas de celda fuera del 10 «Apertura» y el 11 «Apertura de Caja»: %r' % horas)
