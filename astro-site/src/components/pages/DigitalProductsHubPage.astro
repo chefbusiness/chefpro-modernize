@@ -59,6 +59,27 @@ const ALL_TAGS = [
 // el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
 // (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Seafood Restaurant Checklists Kit Pro (31-oct-2026, decimocuarto hermano vertical del Restaurant Checklists Kit Pro,
+  // molde plano, $15): el más nuevo → 1; el Bakery Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA
+  // tarjeta que ya estaba («Recurring Tasks: Seafood Restaurant with Live Tanks & HACCP»): se sube y su copy pasa a
+  // describir la edición EN (decía «EU allergen rules», «fish markets» y «Official Spanish fishing seasons and closures»).
+  {
+    name: 'Seafood Restaurant Checklists Kit Pro',
+    slug: '/kit-tareas-marisqueria',
+    description: "9 templates + 3 bonuses (12 files) with 165 seafood restaurant tasks already written in Excel: opening and closing, the live tank and receiving, shellfish tags and HACCP, the raw bar and ice display, manager, roles, cleaning and US seafood seasons. Print it, hand it to your team, check it off.",
+    features: [
+      "Live tank: oxygen, salinity, pH and mortality",
+      "Receiving, shellfish tags kept 90 days, histamine",
+      "Raw bar on drained ice at 41 °F",
+      "HACCP with 5 critical control points",
+      "US seafood seasons and events, from crawfish to the Seven Fishes",
+    ],
+    iconName: 'Shell',
+    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'seafood-restaurant', 'fish', 'seafood'],
+  },
   // Bakery Checklists Kit Pro (31-oct-2026, decimotercer hermano vertical del Restaurant Checklists Kit Pro, molde plano,
   // $15): el más nuevo → 1; el Food Truck Checklists Kit Pro y el resto de vivos bajan un puesto. Es la MISMA tarjeta que
   // ya estaba («Recurring Tasks: Bakery / Production Kitchen»): se sube y su copy pasa a describir la edición EN (decía
@@ -1081,22 +1102,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'management', 'grill-house', 'grill', 'josper'],
-  },
-  {
-    name: 'Recurring Tasks: Seafood Restaurant with Live Tanks & HACCP',
-    slug: '/kit-tareas-marisqueria',
-    description: '11 operational checklists for seafood restaurants: live tank control (oxygen, salinity, temperature), ice display, HACCP traceability and allergens for crustaceans and shellfish, fish markets, and Spanish fishing seasons.',
-    features: [
-      'Live tanks: oxygen, salinity, temperature, mortality',
-      'HACCP traceability and EU allergen rules',
-      'Ice display and FIFO rotation',
-      'Official Spanish fishing seasons and closures',
-    ],
-    iconName: 'Shell',
-    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'seafood-restaurant', 'fish', 'seafood'],
   },
   {
     name: 'Recurring Tasks: Tapas Bar / Gastrobar',

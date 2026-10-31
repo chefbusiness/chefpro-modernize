@@ -1300,6 +1300,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'seafood-restaurant-checklist-templates': {
+    version: '1.1',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '1.1',
+        date: '2026-10-31',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the kit, built from content version 1.1: 9 checklist templates plus 2 bonuses (11 Excel files, one sheet each) with 165 seafood restaurant tasks already written, adapted to the US with notes for the UK.",
+          "US seafood restaurant roles (head chef and seafood buyer, fish station, shellfish station, FOH manager, server), opening and closing task by task from 7:00 AM to 11:45 PM on a 12-hour clock, and an OK column with a ✓ / — / N/A drop-down that turns the row green on 7 of the checklists.",
+          "The live tank every day: water temperature by species per your supplier and the tank maker, dissolved oxygen, salinity, pH, the filter, mortality and feeding, with a weekly drain, sanitize and refill; a display tank for live molluscan shellfish only with a health department variance and a HACCP plan.",
+          "Receiving and traceability under the FDA Food Code in °F: your seafood distributor or dock-to-door supplier, 41 °F cold and 0 °F frozen, shellstock per NSSP rules (45 °F air or 50 °F internal), shellfish only from NSSP-listed shippers with tags kept 90 days, histamine-forming fish rejected if warm, the FDA Seafood List market name, a lot log and freshness signs.",
+          "HACCP with 5 critical control points (receiving, storage, cooking to 145 °F for 15 seconds, the display on drained ice at 41 °F, raw fish with parasite destruction and its 90-day record) and the consumer advisory; allergens with fish and crustacean shellfish as major US allergens and molluscs noted for the UK's 14.",
+          "Raw bar and ice display (drained crushed ice, ice every 90 minutes, FIFO, oysters shucked to order with the lot tag kept), manager, weekly and monthly lists (market price items, food cost under 32% as the kit's target, refrigeration by an EPA 608-certified tech, licensed pest control, a written tip pool) and wine pairings for guests 21+ with ID.",
+          "US seafood seasons as a guide (dates vary by state: crawfish, soft-shell crabs, wild salmon, lobster, stone and king crab, bay scallops, oysters), key events from Lent Fridays to the Feast of the Seven Fishes, state closures, minimum sizes and IUU seafood. Plus a pre-shift meeting template, a 12-month US calendar, every sheet set up to print on US Letter paper, and the US · UK · Canada · Australia Equivalents Guide.",
+        ],
+      },
+    ],
+  },
   'ghost-kitchen-checklist-templates': {
     version: '2.0',
     updated: '2026-10-18',

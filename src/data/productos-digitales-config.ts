@@ -1885,6 +1885,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-31): twin of kit-tareas-marisqueria, independent product.
+  'seafood-restaurant-checklist-templates': {
+    id: 'seafood-restaurant-checklist-templates',
+    name: 'Seafood Restaurant Checklists Kit Pro',
+    priceLabel: '$15',
+    accessPath: '/en/digital-products/seafood-restaurant-checklist-templates/access',
+    emailSubject: 'Your access to Seafood Restaurant Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Seafood Restaurant Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Seafood Restaurant Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'apertura-cierre': '/dl/seafood-restaurant-checklist-templates/01-seafood-restaurant-opening-closing-checklist.xlsx',
+      'vivero-lonjas': '/dl/seafood-restaurant-checklist-templates/02-live-tank-seafood-receiving-checklist.xlsx',
+      'trazabilidad-appcc': '/dl/seafood-restaurant-checklist-templates/03-seafood-haccp-traceability-shellfish-tags.xlsx',
+      'expositor-barra': '/dl/seafood-restaurant-checklist-templates/04-raw-bar-seafood-display-checklist.xlsx',
+      'manager': '/dl/seafood-restaurant-checklist-templates/05-seafood-restaurant-manager-checklist.xlsx',
+      'perfiles': '/dl/seafood-restaurant-checklist-templates/06-seafood-restaurant-duties-by-role.xlsx',
+      'semanales-mensuales': '/dl/seafood-restaurant-checklist-templates/07-seafood-restaurant-weekly-monthly-checklist.xlsx',
+      'eventos-estacionales': '/dl/seafood-restaurant-checklist-templates/08-seafood-seasons-events-checklist.xlsx',
+      'plantilla-personalizable': '/dl/seafood-restaurant-checklist-templates/09-blank-seafood-restaurant-checklist-template.xlsx',
+      'bonus-briefing': '/dl/seafood-restaurant-checklist-templates/BONUS-01-seafood-pre-shift-meeting-template.xlsx',
+      'bonus-calendario': '/dl/seafood-restaurant-checklist-templates/BONUS-02-seafood-restaurant-annual-calendar.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-24): twin of kit-tareas-chocolateria, independent product.
   'chocolate-shop-checklist-templates': {
     id: 'chocolate-shop-checklist-templates',

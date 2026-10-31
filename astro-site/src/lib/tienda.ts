@@ -394,6 +394,16 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (2026-10-31): Seafood Restaurant Checklists Kit Pro, decimocuarto hermano vertical del Restaurant Checklists Kit Pro y tercero y último del molde PLANO
+    // (SPEC checklists-kit/seafood D1-D4, $15). Gemelo del Kit de Tareas Recurrentes: Marisquería con Vivero y APPCC (/kit-tareas-marisqueria).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link (mismo criterio que los demás Checklists Kit Pro).
+    familia: 'kit-tareas-marisqueria',
+    productos: {
+      es: { slug: 'kit-tareas-marisqueria', vivo: true },
+      en: { slug: 'seafood-restaurant-checklist-templates', vivo: true },
+    },
+  },
+  {
     // Tienda EN (24-oct-2026): Chocolate Shop Checklists Kit Pro, octavo hermano vertical del Restaurant Checklists Kit
     // Pro (SPEC checklists-kit/chocolate D1-D4). Gemelo del Kit de Tareas Chocolatería. vivo: true en la rama, que se
     // fusiona cuando existe el Payment Link (mismo criterio que los siete hermanos anteriores).

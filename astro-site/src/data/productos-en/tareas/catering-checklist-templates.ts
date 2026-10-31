@@ -452,6 +452,7 @@ const data: KitTareasData = {
     { href: '/en/digital-products/taco-shop-checklist-templates', label: 'Taco Shop Checklists Kit Pro' },
     { href: '/en/digital-products/food-truck-checklist-templates', label: 'Food Truck Checklists Kit Pro' },
     { href: '/en/digital-products/bakery-checklist-templates', label: 'Bakery Checklists Kit Pro' },
+    { href: '/en/digital-products/seafood-restaurant-checklist-templates', label: 'Seafood Restaurant Checklists Kit Pro' },
     { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: '/en/digital-products/bbq-catering-business-plan', label: 'BBQ Catering Business Plan Kit' },
     { href: '/en/digital-products/paella-catering-business-plan', label: 'Paella Catering Business Plan Kit' },

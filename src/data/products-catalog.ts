@@ -693,11 +693,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-marisqueria',
     url: '/kit-tareas-marisqueria',
     price: '€14',
-    name: { es: 'Tareas: Marisquería', en: 'Tasks: Seafood Restaurant' },
+    name: { es: 'Tareas: Marisquería', en: 'Seafood Restaurant Checklists Kit Pro' },
     description: {
       es: 'Vivero, cadena de frío y APPCC de producto vivo.',
-      en: 'Live tank, cold chain and HACCP for live shellfish.',
+      en: 'Seafood restaurant checklists for opening and closing, the live tank and receiving, shellfish tags and HACCP, the raw bar and ice display, the manager, duties by role and cleaning: 165 tasks already written.',
     },
+    // Tienda EN (31-oct-2026): producto propio, `seafood-restaurant-checklist-templates`, $15 USD.
+    urlByLang: { en: '/en/digital-products/seafood-restaurant-checklist-templates' },
+    priceByLang: { en: '$15' },
   },
   'kit-tareas-sushi-bar': {
     id: 'kit-tareas-sushi-bar',

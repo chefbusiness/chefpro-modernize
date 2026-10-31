@@ -1192,6 +1192,23 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario-anual': '/dl/bakery-checklist-templates/BONUS-02-bakery-annual-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-31): Seafood Restaurant Checklists Kit Pro (molde plano). MISMAS claves que kit-tareas-marisqueria (las de TEMPLATES de
+  // src/pages/SeafoodRestaurantChecklistsKitDashboard.tsx, en el orden del ES) → los 11 xlsx EN de /dl/seafood-restaurant-checklist-templates/ (SPEC
+  // checklists-kit/seafood §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm (`guia-equivalencias`).
+  'seafood-restaurant-checklist-templates': {
+    'apertura-cierre': '/dl/seafood-restaurant-checklist-templates/01-seafood-restaurant-opening-closing-checklist.xlsx',
+    'vivero-lonjas': '/dl/seafood-restaurant-checklist-templates/02-live-tank-seafood-receiving-checklist.xlsx',
+    'trazabilidad-appcc': '/dl/seafood-restaurant-checklist-templates/03-seafood-haccp-traceability-shellfish-tags.xlsx',
+    'expositor-barra': '/dl/seafood-restaurant-checklist-templates/04-raw-bar-seafood-display-checklist.xlsx',
+    'manager': '/dl/seafood-restaurant-checklist-templates/05-seafood-restaurant-manager-checklist.xlsx',
+    'perfiles': '/dl/seafood-restaurant-checklist-templates/06-seafood-restaurant-duties-by-role.xlsx',
+    'semanales-mensuales': '/dl/seafood-restaurant-checklist-templates/07-seafood-restaurant-weekly-monthly-checklist.xlsx',
+    'eventos-estacionales': '/dl/seafood-restaurant-checklist-templates/08-seafood-seasons-events-checklist.xlsx',
+    'plantilla-personalizable': '/dl/seafood-restaurant-checklist-templates/09-blank-seafood-restaurant-checklist-template.xlsx',
+    'bonus-briefing': '/dl/seafood-restaurant-checklist-templates/BONUS-01-seafood-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/seafood-restaurant-checklist-templates/BONUS-02-seafood-restaurant-annual-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   // Tienda EN (2026-10-24): Chocolate Shop Checklists Kit Pro. MISMAS claves que kit-tareas-chocolateria (las de TEMPLATES de
   // src/pages/ChocolateShopChecklistsKitDashboard.tsx; la 02 es `partidas`, como en el ES) → los 11 xlsx EN de /dl/chocolate-shop-checklist-templates/
   // (SPEC checklists-kit/chocolate §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.

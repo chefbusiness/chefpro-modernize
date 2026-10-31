@@ -57,6 +57,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'taco-shop-checklist-templates', label: 'Taco Shop Checklists Kit Pro (EN, $19)' },
   { id: 'food-truck-checklist-templates', label: 'Food Truck Checklists Kit Pro (EN, $15)' },
   { id: 'bakery-checklist-templates', label: 'Bakery Checklists Kit Pro (EN, $15)' },
+  { id: 'seafood-restaurant-checklist-templates', label: 'Seafood Restaurant Checklists Kit Pro (EN, $15)' },
   { id: 'chocolate-shop-checklist-templates', label: 'Chocolate Shop Checklists Kit Pro (EN, $19)' },
   { id: 'pastry-shop-checklist-templates', label: 'Pastry Shop Checklists Kit Pro (EN, $19)' },
   { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
