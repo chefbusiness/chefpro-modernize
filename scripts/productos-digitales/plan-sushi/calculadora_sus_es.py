@@ -68,7 +68,7 @@ PESCADOS = [
 P_ROW = OrderedDict([('pr', 6), ('rd', 7), ('rc', 8)])
 P_NOTAS = OrderedDict([
     ('pr', 'Salmón noruego entero de acuicultura: unos 11,95 €/kg en minorista y 6-7,5 € en origen; lomo o filete congelado, de 20,7 a 21,8 €/kg '
-           '(Makro); atún aleta amarilla en saku ultracongelado, 26 €/kg. El kit pone 9,50 · 21,80 · 26,00 €/kg.' + EST),
+           '(Makro); el atún aleta amarilla en saku ultracongelado no tiene precio publicado en España. El kit pone 9,50 · 21,80 · 26,00 €/kg.' + EST),
     ('rd', 'Parte del pescado entero que queda como lomo limpio para sushi: de 50 a 60 % en el salmón entero. Mídelo con 3 salmones '
            '(hoja «Instrucciones»). En el atún en saku es la parte que se aprovecha al cortar.' + EST),
     ('rc', 'Recorte que reaprovechas (tartar, maki, poke), en % del peso comprado. Lo que tiras no cuenta aquí.' + EST),
@@ -129,7 +129,7 @@ PE_O1 = PE_O0 + len(OPC) - 1
 
 #: hoja Arroz: (clave, rótulo, formato, valor, constante, nota)
 ENT_A = [
-    ('ak', 'Arroz crudo para sushi (€/kg, sin IVA)', EUR, 1.85, False, 'Entre 1,81 €/kg (METRO Chef, 5 kg) y 1,85 €/kg (DACSA, 5 kg), 2,50 € en saco de 20 kg.' + EST),
+    ('ak', 'Arroz crudo para sushi (€/kg, sin IVA)', EUR, 1.85, False, 'Entre 1,81 €/kg (METRO Chef, 5 kg) y 1,85 €/kg (DACSA, 5 kg); otra marca, a 2,50 €/kg en saco de 20 kg.' + EST),
     ('f', 'Factor de arroz crudo a cocido (×)', '#,##0.00', 2.2, False, 'Un kilo de arroz crudo da 2,2 kg de arroz cocido.' + EST),
     ('z', 'Sushi-zu (aliño de vinagre) por kg de arroz cocido (ml)', ENT, 100, False, 'Vinagre de arroz, azúcar y sal: unos 100 ml por kilo de arroz cocido.' + EST),
     ('zp', 'Sushi-zu (€/l, sin IVA)', EUR, 4.40, False, 'Vinagre, azúcar y sal.' + EST),
@@ -645,7 +645,7 @@ INSTRUCCIONES = [
      'y escribe la media en «Rendimiento». Pesa también el recorte que reaprovechas (tartar, maki, poke) y escríbelo en «Recorte que '
      'reaprovechas». Pesa 10 lonchas de nigiri y 10 cortes de sashimi y usa la media en los gramos.', False),
     ('2. El coste por kilo útil es el precio ÷ (rendimiento + recorte) ÷ (1 − merma de vitrina). Es el número que alimenta el escandallo: '
-     'con los valores del kit sale a 14,29 €/kg en el salmón entero, 24,15 en el lomo comprado y 28,81 en el atún en saku.', False),
+     'con los valores del kit sale a 14,29 €/kg en el salmón entero, 24,16 en el lomo comprado y 28,81 en el atún en saku.', False),
     ('3. La limpieza también cuesta. El kit supone 25 minutos por pieza entera, un dato sin fuente: cronométralo. El coste por hora del '
      'itamae (el jefe de barra: compra, limpia y corta el pescado) se estima en 22 €/h: 2.200 € brutos × 14 pagas + 33 % de cargas ÷ 1.840 h '
      '≈ 22 €/h. La hoja te dice hasta qué coste de limpieza por kilo útil te compensa comprar el pescado entero.', False),
@@ -678,7 +678,7 @@ INSTRUCCIONES = [
      'de pedido, y el menú del día, que deja poco margen; además, los precios del pescado son estimaciones del kit. Un restaurante japonés con '
      'pescado de calidad suele trabajar con un 30-35 %.', False),
     ('Tu comparación real es esta: las compras de comida del mes ÷ las ventas de comida sin IVA del mes. Si después del primer trimestre sale '
-     'por debajo del 29 %, cambia la celda «Coste de mercancía sobre las ventas de COMIDA» del plan: cada punto vale unos 4.000 € al año.',
+     'por encima o por debajo del 29 %, cambia la celda «Coste de mercancía sobre las ventas de COMIDA» del plan: cada punto vale unos 4.000 € al año.',
      False),
     ('PRECIOS, IVA Y FUENTES', True),
     ('El IVA de la comida preparada para consumir en el local, para llevar o a domicilio es el 10 % (Ley 37/1992, art. 91). La compra de arroz '

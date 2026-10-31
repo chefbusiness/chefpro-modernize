@@ -66,7 +66,7 @@ VOCABULARIO = {
     '91.Dos.1.1.º':
         'la parte de la bebida que sale para llevar o a domicilio y declara la columna H de su línea (cerveza, sake, '
         'vino y refrescos con azúcares o edulcorantes añadidos), al general (art. 91.Uno.1.1.º a y b); la comida, '
-        'también la que sale para llevar o a domicilio, al reducido (art. 91.Uno.2.2.º',
+        'también la que sale para llevar o a domicilio, al reducido (art. 91.Uno.1.1.º y 2.2.º',
     'los alimentos —bollería y pastelería incluidas—, que son':
         'los alimentos —el sushi y el poke incluidos—, que son',
     # Instrucciones!A8 (frase del motor; LIVA art. 91.Uno.1.1.º b): «azúcares o edulcorantes añadidos»
@@ -96,9 +96,9 @@ SUPUESTOS = {
     'ticket_medio': (
         None, None, 20.00, None,
         'SIN IVA, por comensal: en sala, el menú del día de mediodía (14,90 € con IVA, un 30 % de la sala) y la cena '
-        'o el fin de semana (28,60 € con IVA) dejan unos 22,26 € sin IVA; el pedido para llevar (un combinado de 24 '
-        'piezas y un extra, 27,00 € con IVA) sale a 15,34 € por comensal equivalente y el de plataforma, con el precio '
-        'un 15 % más alto, a 18,47 €. La media de los tres canales da 20,08 €; el caso se queda en 20,00 €. El precio '
+        'o el fin de semana (28,60 € con IVA) dejan unos 22,26 € sin IVA; el pedido para llevar (de media 27,00 € con '
+        'IVA: un combinado y algún extra) sale a 15,34 € por comensal equivalente y el de plataforma, con la carta un '
+        '15 % más cara y un pedido algo mayor, a 18,47 €. La media de los tres canales da 20,08 €; el caso se queda en 20,00 €. El precio '
         'con IVA está en la fila «PVP equivalente con IVA» de abajo',
         'R §2-§3 (carta del caso) [estimado]'),
     'dias_apertura': (
@@ -444,7 +444,7 @@ UMBRALES = (
      'Techo del alquiler sobre ventas para un local con salida de humos a cubierta: estimación del kit'),
     ('r_neto', 'Resultado neto / Ventas', 0.05,
      'Suelo de resultado neto a régimen para que el plan se sostenga. Un sushi bar bien llevado deja en torno a un '
-     '8-9 %. Estimación del kit'),
+     '8-10 %. Estimación del kit'),
 )
 
 #: (comensales al día, € por comensal sin IVA, días de apertura). R §3.
@@ -511,7 +511,7 @@ INSTRUCCIONES = {
          'Real Decreto 1086/2020, art. 30.5',
          'La comida preparada se refrigera, se mantiene a 63 °C o más o se sirve cuanto antes (RD 1086/2020, art. 30.2). '
          'El shari a '
-         'temperatura ambiente sólo si tu APPCC lo justifica con evidencia científica y lo comunicas a sanidad: pH de '
+         'temperatura ambiente sólo si tu APPCC lo justifica con evidencia científica y lo demuestras a sanidad: pH de '
          'cada tanda y tiempo máximo. Si no, refrigerado'),
         ('Salario mínimo interprofesional 2026', '1.221 € al mes en 14 pagas', 'Real Decreto 126/2026',
          'A prorrata en jornada parcial'),

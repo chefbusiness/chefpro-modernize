@@ -206,7 +206,7 @@ FASES = [
          'Supuestos del plan'),
         ('Contratar al itamae y al sushiman ANTES de la obra', 'Titular', 'Semanas 6-8',
          'Si no eres tú el itamae (el jefe de barra que compra, limpia y corta el pescado), es la contratación difícil: '
-         'las ofertas de sushiman van de 12.000 a 22.000 € brutos al año y las de un omakase pasan de 2.500 € al mes. '
+         'las ofertas de sushiman van de 12.000 a 22.000 € brutos al año y las de un omakase parten de 2.500 € al mes. '
          'Que los dos opinen sobre la barra y el frío antes de cerrar la obra: una baja del único que corta cierra la '
          'barra'),
         ('Contratos por escrito a jornada completa y parcial', 'Gestoría', 'Antes de abrir',

@@ -79,17 +79,17 @@ INVERSION = [
      'Dos arroceras (la de 8 litros ronda los 484 € sin IVA), un mantenedor y el hangiri, la tina de madera donde se '
      'aliña el shari. Estimación del kit', 'Sí'),
     ('Armario congelador de −20 °C con registrador y arcón', 2000,
-     'El congelador del anisakis tiene que llevar el pescado a −20 °C o menos en la totalidad del producto durante 24 '
-     'horas (RD 1021/2022, art. 8.1) y registrar la temperatura; un congelador que sólo marca −18 °C no sirve para '
+     'El congelador del anisakis tiene que llevar el pescado a −20 °C o menos en la totalidad del producto durante al '
+     'menos 24 horas, o a −35 °C o menos 15 horas (RD 1021/2022, art. 8.1), y registrar la temperatura; un congelador que sólo marca −18 °C no sirve para '
      'eso. El arcón, para el resto del congelado. Estimación del kit: pide la ficha técnica', 'Sí'),
     ('Cocina caliente: inducción, freidora de tempura y plancha', 3500,
      'Placas de inducción para el miso y los caldos, freidora para la tempura y plancha para las gyozas. Estimación '
      'del kit', 'Sí'),
     ('Campana extractora con motor y filtros', 1500,
-     'Campana extractora con motor y filtros de grasa sobre la freidora, la plancha y la inducción (una de 1,5-2 m '
-     'ronda los 815 € sin IVA)', 'Sí'),
+     'Campana extractora con motor y filtros de grasa sobre la freidora, la plancha y la inducción (una de 1,5 a 2 m '
+     'va de unos 543 a 813 € sin IVA)', 'Sí'),
     ('Frío: armario de pescado, armarios de cocina, mesa refrigerada y nevera de bebida y sake', 7500,
-     'Armario de pescado a 0-2 °C (el pescado fresco va a 4 °C o menos: RD 1021/2022, art. 4.1), armarios '
+     'Armario de pescado a 0-2 °C (el pescado fresco va entre 0 y 4 °C: RD 1021/2022, art. 4.1), armarios '
      'refrigerados de cocina, mesa refrigerada de trabajo para la barra y nevera de bebida y sake', 'Sí'),
     ('Lavavajillas de capota, fregaderos, lavamanos, mesas inox y estanterías', 5500,
      'Lavavajillas, fregaderos, lavamanos de accionamiento no manual, mesas de acero inoxidable y estanterías', 'Sí'),
