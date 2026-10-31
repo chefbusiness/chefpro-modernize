@@ -42,7 +42,7 @@ VERSION_ES = '1.1'                                               # productos-cha
 # Marca (D19 + precedente D34 del Restaurant Business Plan Kit): A1 «ChefBusiness Consultoria Gastronomica» → «AI Chef
 # Pro» (GLOSARIO) y la última fila de cada hoja, la línea de marca
 MARCA_ES = 'ChefBusiness.co — Kit de Tareas Recurrentes: Food Truck'
-MARCA_EN = 'AI Chef Pro · aichef.pro — ' + PRODUCTO
+MARCA_EN = 'AI Chef Pro · aichef.pro · ' + PRODUCTO          # sin «—»: G2 lee «— Food Truck» como sufijo ES
 VARIANTES_ES = ('— Food Truck',)
 # Molde PLANO (SPEC §0): lo leen los ganchos de la F2 en aplicar_en.py y gates_en.py (título interior en A2 de la única
 # hoja, sin hoja de instrucciones ni línea de versión, tareas sin número en A). Hasta entonces, solo documentan.
