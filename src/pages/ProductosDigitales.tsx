@@ -809,7 +809,7 @@ const products = [
     price: '€12',
     originalPrice: '€39',
     discount: '-69%',
-    description: '302 tareas pre-rellenadas: plancha/grill, smash burgers, freidora, línea de montaje, delivery y packaging. Imprime, delega y firma.',
+    description: '346 tareas pre-rellenadas: plancha/grill, smash burgers, freidora, línea de montaje, delivery y packaging. Imprime, delega y firma.',
     features: [
       'Control de plancha y punto de carne',
       'Smash burger y técnica de grill',
