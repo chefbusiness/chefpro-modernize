@@ -163,6 +163,7 @@ const data: GuiaData = {
     { label: 'aichef.pro', href: 'https://aichef.pro' },
     { label: 'Kit Tareas Dark Kitchen', href: '/kit-tareas-dark-kitchen' },
     { label: 'Kit Plan Financiero', href: '/kit-plan-financiero' },
+    { label: 'Plan de Negocio: Hamburguesería Smash', href: '/plan-negocio-hamburgueseria' },
     { label: 'Todos los Productos', href: '/productos-digitales' },
     { label: 'Contacto', href: 'mailto:info@aichef.pro' },
   ],

@@ -916,6 +916,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
   // neighborhood sushi restaurant con sushi bar de 10 taburetes y 30 plazas en mesa, abre 6 días, caso US). Textos en inglés: los pinta
   // <ProductChangelog lang="en"/>. Primera versión del producto: '2.2' (numeración de la familia EN). Cifras = cifras_caso.json y
   // cifras_calculadora.md (medidas en los libros).
+  'burger-restaurant-business-plan': {
+    version: '2.2',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-31',
+        title: 'First release',
+        changes: [
+          'First release of the Burger Restaurant Business Plan Kit for a counter-service smash burger restaurant with take-out and marketplace delivery: a 10-section business plan in Word, an Excel financial model with 9 sheets, a smash burger patty, fries and costing calculator and an 80-task startup checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story: 195 covers a day at a $16.50 average check for 360 days, $1,158,300 in year-1 sales, a $382,704 total investment and a net margin of 7.6% in year 1.',
+          'The model runs on covers per day, average check per cover and days open per year, with the break-even measured in covers per day and checked against the cash you actually need. Sales tax is collected on the whole check and remitted separately.',
+          'Counter-service payroll with grill cooks, a fry and prep cook, a shift lead and counter crew on W-2, employer payroll taxes and a federal and a state or local minimum wage floor, plus startup costs that include the Type I hood and UL 300 fire suppression, the flat-top griddles and the fryers.',
+          'Financing sheet with owner equity and a bank or SBA 7(a) loan, amortized with no interest-only period by default and checked against a 1.25× DSCR target.',
+          'New Smash Burger Patty, Fries & Costing Calculator: the cost per usable pound of beef bought ground or ground in house, the balls you get per pound, the frozen or fresh fries and the fryer oil, and the food cost, suggested price and margin of 14 products dine-in, on take-out and on a marketplace. A smash burger travels worse than it eats in the room, so the combo margin falls from $12.07 dine-in to $9.12 through a marketplace. Every starting value is a kit estimate, editable.',
+          '80-task startup checklist in 6 phases: business setup, hood and permits, beef and health (cooking to 155 °F for 17 seconds, grinding and allergens), staff and allergens, menu, brand and delivery, and opening day plus your first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), US units, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'sushi-restaurant-business-plan': {
     version: '2.2',
     updated: '2026-10-31',
@@ -2424,6 +2445,20 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
         title: 'Primera edición',
         changes: [
           'Primera edición del Plan de Negocio: Sushi Bar, con sus cinco ficheros: plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 80 tareas en 6 fases, calculadora del pescado, el arroz y el escandallo de 4 hojas y la guía de equivalencias para Hispanoamérica.',
+        ],
+      },
+    ],
+  },
+  'plan-negocio-hamburgueseria': {
+    version: '1.0',
+    updated: '2026-10-31',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-31',
+        title: 'Primera edición',
+        changes: [
+          'Primera edición del Plan de Negocio: Hamburguesería Smash, con sus cinco ficheros: plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas con fórmulas vivas, checklist de apertura de 80 tareas en 6 fases, calculadora de la carne, las patatas y el escandallo de 4 hojas y la guía de equivalencias para Hispanoamérica.',
         ],
       },
     ],

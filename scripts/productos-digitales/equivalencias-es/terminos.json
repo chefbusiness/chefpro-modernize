@@ -2122,5 +2122,15 @@
   ],
   "comun": false,
   "nota": "Estación (MX/AR), línea, sección"
+ },
+ {
+  "id": "batido",
+  "es": "batido, batidos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "batidos?"
+  ],
+  "comun": false,
+  "nota": "Milkshake: malteada en MX, Centroamérica, CO, EC y PE; milkshake o batido en CL y AR"
  }
 ]

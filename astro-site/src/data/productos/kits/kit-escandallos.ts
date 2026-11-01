@@ -327,6 +327,7 @@ const data: KitExcelData = {
     { href: '/guia-chocolateria-obrador', label: 'Cómo Montar una Chocolatería Boutique & Atelier' },
     { href: '/guia-churreria-chocolateria', label: 'Cómo Montar una Churrería-Chocolatería' },
     { href: '/manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo' },
+    { href: '/plan-negocio-hamburgueseria', label: 'Plan de Negocio: Hamburguesería Smash' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 2.1 · septiembre 2026',

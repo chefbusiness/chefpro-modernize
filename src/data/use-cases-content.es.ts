@@ -2471,7 +2471,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         '23:30 · Cierre — limpieza, APPCC firmado, reporte del día y mermas registradas.',
       ],
       productsTitle: 'Plantillas y Kits Descargables para Hamburguesería',
-      productIds: ['kit-tareas-hamburgueseria', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal', 'pro-prompts-ebook'],
+      productIds: ['kit-tareas-hamburgueseria', 'plan-negocio-hamburgueseria', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal'],
       testimonialQuote: 'Bajamos el food cost del 36 % al 31 % en 60 días con escandallos precisos y control sistemático de mermas. La inversión en AI Chef Pro se pagó en una semana solo con eso. La foto IA para Glovo subió nuestro ranking del puesto 8 al 3.',
       testimonialAuthor: 'Pablo Hernández',
       testimonialRole: 'Propietario, hamburguesería gourmet con 2 marcas en delivery',

@@ -61,6 +61,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Businessplan: Smash-Burger-Restaurant',
+    slug: '/plan-negocio-hamburgueseria',
+    description: 'Vollständiger Businessplan für die Eröffnung eines Smash-Burger-Restaurants mit Gastraum, Take-away und Lieferservice: Excel-Finanzplan über 3 Jahre mit 9 Blättern, Businessplan in Word mit 10 Abschnitten, Eröffnungs-Checkliste mit 80 Aufgaben, Kalkulator für Fleisch, Pommes und Kosten pro Burger und der Äquivalenzleitfaden für Lateinamerika.',
+    features: [
+      'Businessplan in Word mit 10 Abschnitten',
+      'Excel-Finanzplan mit 9 Blättern und Liquidität Monat für Monat',
+      'Eröffnungs-Checkliste: 80 Aufgaben in 6 Phasen',
+      'Kalkulator für Fleisch, Pommes und Kosten pro Burger und Äquivalenzleitfaden für Lateinamerika',
+    ],
+    iconName: 'Sandwich',
+    image: '/lovable-uploads/ai-gallery/plan-hamburgueseria-hero.jpg',
+    badge: '✨ Neu',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'costs', 'burger', 'business-plan'],
+  },
+  {
     name: 'Businessplan: Sushi-Bar',
     slug: '/plan-negocio-sushi-bar',
     description: 'Vollständiger Businessplan für die Eröffnung einer Sushi-Bar oder eines Sushi-Restaurants mit Theke, Take-away und Lieferservice: Excel-Finanzplan über 3 Jahre mit 9 Blättern, Businessplan in Word mit 10 Abschnitten, Eröffnungs-Checkliste mit 80 Aufgaben, Kalkulator für Fisch, Reis und Kosten pro Stück und der Äquivalenzleitfaden für Lateinamerika.',
@@ -136,8 +152,8 @@ const products = [
     ],
     iconName: 'Pizza',
     image: '/lovable-uploads/ai-gallery/plan-pizzeria-hero.jpg',
-    badge: '✨ Neu',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Neu',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'pizzeria', 'business-plan'],
   },
   {
@@ -998,7 +1014,6 @@ const products = [
 
 const comingSoon = [
   { iconName: 'BarChart3', name: 'Betriebs-Dashboard-Kit', desc: 'Umsätze nach Zeitfenster und Gastraum, durchschnittlicher Bon, Tischumschlag und Produktivität pro Stunde – in einem einzigen Dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
-  { iconName: 'Sandwich', name: 'Businessplan: Smash-Burger-Laden', desc: 'Vom Smash-Konzept bis zur Gewinnschwelle: Investition, Speisekarte, Kosten und eine Monatsprognose.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },
   { iconName: 'Flame', name: 'Wiederkehrende Aufgaben: Hähnchenbraterei', desc: 'Spieße, Garzeiten, Gewichtsverlust und Service in der Stoßzeit, mit den Abläufen für jede Schicht.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
   { iconName: 'Utensils', name: 'Wiederkehrende Aufgaben: Arepa-Laden', desc: 'Teig, Füllungen, Plancha und Abschluss: der Tagesablauf eines Arepa-Ladens, Schicht für Schicht dokumentiert.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
   { iconName: 'Beef', name: 'Businessplan: Steakhouse', desc: 'Ein festes Lokal mit Dry-Aging-Schrank und Holzkohlegrill: Investition, Speisekarte, Rezeptkalkulation und Prognose.', tags: ['business-plan', 'restaurant', 'excel'], phase: 'Q1 2027' },

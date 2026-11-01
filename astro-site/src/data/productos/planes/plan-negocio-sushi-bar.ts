@@ -249,6 +249,7 @@ const data: PlanNegocioData = {
     { href: '/guia-restaurante-japones', label: 'Guía Restaurante Japonés' },
     { href: '/kit-escandallos', label: 'Kit de Escandallos Pro' },
     { href: '/plan-negocio-taqueria', label: 'Plan de Negocio: Taquería' },
+    { href: '/plan-negocio-hamburgueseria', label: 'Plan de Negocio: Hamburguesería Smash' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto nuevo · Versión 1.0 · noviembre 2026',

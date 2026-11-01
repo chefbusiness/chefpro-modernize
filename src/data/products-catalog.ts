@@ -593,6 +593,19 @@ const RAW: Record<string, ProductCatalogRaw> = {
     urlByLang: { en: '/en/digital-products/sushi-restaurant-business-plan' },
     priceByLang: { en: '$39' },
   },
+  'plan-negocio-hamburgueseria': {
+    id: 'plan-negocio-hamburgueseria',
+    url: '/plan-negocio-hamburgueseria',
+    price: '€35',
+    name: { es: 'Plan de Negocio: Hamburguesería Smash', en: 'Burger Restaurant Business Plan Kit' },
+    description: {
+      es: 'Hamburguesería smash: plan financiero Excel, plan en Word, checklist de apertura y calculadora de la carne, las patatas y el escandallo.',
+      en: 'Word business plan, Excel financial projections, smash burger patty, fries and costing calculator and startup checklist.',
+    },
+    // Tienda EN (31-oct-2026): producto propio, `burger-restaurant-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/burger-restaurant-business-plan' },
+    priceByLang: { en: '$39' },
+  },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',
     url: '/plan-negocio-tapas-bar',

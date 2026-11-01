@@ -445,6 +445,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-31): gemelo de plan-negocio-hamburgueseria (ver verify-purchase.ts).
+  'burger-restaurant-business-plan': {
+    accessPath: '/en/digital-products/burger-restaurant-business-plan/access',
+    emailSubject: 'Your access to Burger Restaurant Business Plan Kit',
+    emailTitle: 'Access your Burger Restaurant Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the smash burger patty, fries and costing calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu (ver verify-purchase.ts).
   'food-cost-menu-engineering-guide': {
     accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',
@@ -738,6 +747,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailSubject: 'Tu acceso al Plan de Negocio: Sushi Bar',
     emailTitle: 'Accede a tu Plan de Negocio: Sushi Bar',
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora del pescado, el arroz y el escandallo de 4 hojas y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día de la barra, el arroz y el pescado, el <a href="https://aichef.pro/kit-tareas-sushi-bar?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Recurrentes: Sushi Bar</a> es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-hamburgueseria': {
+    accessPath: '/plan-negocio-hamburgueseria-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Hamburguesería Smash',
+    emailTitle: 'Accede a tu Plan de Negocio: Hamburguesería Smash',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan de negocio en Word de 10 secciones, plan financiero en Excel de 9 hojas, checklist de apertura de 80 tareas en 6 fases, calculadora de la carne, las patatas y el escandallo de 4 hojas y guía de equivalencias para Hispanoamérica:<br /><br />Para el día a día de la plancha, la freidora y el mostrador, el <a href="https://aichef.pro/kit-tareas-hamburgueseria?utm_source=email&amp;utm_medium=postpago&amp;utm_campaign=cross-sell" style="color: #b8860b;">Kit de Tareas Recurrentes: Hamburguesería</a> (12 €) es su hermano: el plan te dice cómo abrir, el kit cómo operar cada turno.',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
   'plan-negocio-food-truck': {

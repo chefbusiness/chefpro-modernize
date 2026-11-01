@@ -52,7 +52,7 @@ const data: KitTareasData = {
       },
       {
         q: '¿Incluye tareas de plancha, grill y smash burger?',
-        a: 'Sí. Encendido, limpieza, temperatura, técnica smash burger, punto de carne (rare a well done) y limpieza entre turnos.',
+        a: 'Sí. Encendido, limpieza, temperatura, técnica smash burger, cocción con sonda (70 °C en el centro) y limpieza entre turnos.',
       },
       {
         q: '¿En qué se diferencia de Trail?',
@@ -109,7 +109,7 @@ const data: KitTareasData = {
       '9 plantillas + 3 bonus (12 ficheros) en Excel con 346 tareas de tu hamburguesería ya escritas: plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre: plancha/grill, freidora, línea de montaje, sala, barra',
-      'Control de plancha y grill: temperatura, limpieza, punto de carne (rare a well done)',
+      'Control de plancha y grill: temperatura, limpieza, cocción con sonda: 70 °C en el centro',
       'Tareas del parrillero: smash burger, punto de carne, test polares aceite freidora',
       'Gestión de delivery y take-away: packaging burger, riders, control de tiempos',
       '3 plantillas maestras personalizables + briefing de servicio',
@@ -198,7 +198,7 @@ const data: KitTareasData = {
       {
         icon: 'Flame',
         title: 'Control de Plancha y Punto de Carne',
-        desc: 'Encendido de plancha, temperatura óptima, técnica smash burger, punto de carne (rare a well done), test polares de aceite de freidora. Las tareas que los sistemas genéricos no cubren.',
+        desc: 'Encendido de plancha, temperatura óptima, técnica smash burger, cocción con sonda (70 °C en el centro), test polares de aceite de freidora. Las tareas que los sistemas genéricos no cubren.',
       },
       {
         icon: 'Users',
@@ -277,7 +277,7 @@ const data: KitTareasData = {
     },
     {
       q: '¿Incluye tareas de plancha, grill y smash burger?',
-      a: 'Sí. Las tareas de plancha y grill cubren encendido, limpieza de superficie, control de temperatura, técnica smash burger (peso de bola, presión, tiempo), punto de carne (rare a well done) y limpieza entre turnos.',
+      a: 'Sí. Las tareas de plancha y grill cubren encendido, limpieza de superficie, control de temperatura, técnica smash burger (peso de bola, presión, tiempo), cocción con sonda (70 °C en el centro) y limpieza entre turnos.',
     },
     {
       q: '¿Incluye tareas de freidora y control de aceite?',
@@ -362,7 +362,7 @@ const data: KitTareasData = {
       {
         name: 'Sergio Ramos',
         role: 'Parrillero, Grill House BCN',
-        text: 'Solo la parte de punto de carne ya vale el precio. Tenemos una guía clara para cada grosor y tipo de burger: rare, medium rare, medium, well done. Las quejas por punto bajaron a cero.',
+        text: 'Solo la parte de punto de carne ya vale el precio. Tenemos una guía clara para cada grosor y tipo de burger: cocción con sonda, 70 °C en el centro. Las quejas por punto bajaron a cero.',
         avatar: '/avatars/avatar-7.jpg',
       },
       {
@@ -402,6 +402,7 @@ const data: KitTareasData = {
     { href: '/kit-escandallos', label: 'Kit Escandallos' },
     { href: '/kit-tareas', label: 'Kit Tareas Restaurante' },
     { href: '/kit-tareas-pizzeria', label: 'Kit Tareas Pizzería' },
+    { href: '/plan-negocio-hamburgueseria', label: 'Plan de Negocio: Hamburguesería Smash' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
