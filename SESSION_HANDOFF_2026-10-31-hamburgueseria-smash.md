@@ -79,4 +79,15 @@ John pasó los dos links («dale, arregla también el Kit de Tareas Hamburgueser
   7-ene-2027 · EN 29-abr-2027.
 - **Pendiente de John:** purgar los QA cripto (21 de antes + `qa-hamburgueseria` y `qa-burger-en`) y `CUTOVER_ENBLOG_PENDIENTE.md`.
 - **Siguiente:** Kit de Tareas Pollería (Próximos) o traducir alguno de los 18 ES sin gemelo EN.
-- Térmica: el Mac llegó a 63 °C con el gate LIVE completo y el Chrome de John abierto; los gates de 100 productos, mejor desde el VPS.
+- Térmica: el Mac llegó a 63 → 67 °C con el gate LIVE completo y el Chrome de John abierto; los gates de catálogo entero, desde el VPS.
+
+## 8. Para arrancar la sesión nueva
+
+- Estado: `main` = `479f8bbd` + este cierre, limpio en el Mac y en el VPS; sin PR abiertos de esta línea ni worktrees de la sesión
+  (los `.claude/worktrees/agent-*` del Mac son de sesiones antiguas: no tocarlos sin mirar).
+- Primeros pasos en el Mac: `istats cpu temp`, `pkill -STOP photoanalysisd mediaanalysisd knowledgeconstructiond`, vigilante con log
+  en el scratchpad; `ssh vps 'cd /root/chefpro-modernize && git pull -q'`.
+- Opciones (decide la sesión con la regla de proporcionalidad): **Kit de Tareas Pollería** (Próximos; molde kit-tareas v2.0 de la
+  Taquería, S ≤ 2,5 M) · o **traducir al EN** uno de los 18 ES sin gemelo (duplicar y adaptar, M ≤ 5 M).
+- Vigilar las routines: 29-nov (Sushi ES) · 3-dic (Hamburguesería ES) · 21-mar-2027 (5 EN) · 25-mar-2027 (Burger EN).
+- De John: purga QA cripto (23) · `CUTOVER_ENBLOG_PENDIENTE.md`. Deuda: `nombre-gate` con `ai-prompts-for-restaurants` (EN).
