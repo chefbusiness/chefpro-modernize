@@ -18,10 +18,11 @@ pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-
 | Env de Netlify (la pone Claude) | `VITE_STRIPE_PAYMENT_LINK_PLAN_HAMBURGUESERIA` (scope builds) |
 | Imagen | `astro-site/public/lovable-uploads/ai-gallery/plan-hamburgueseria-hero.jpg` |
 
-## ⏳ PENDIENTE (31-oct-2026): Burger Restaurant Business Plan Kit (EN) — rama `feat/burger-restaurant-business-plan-en` (apilada, se fusiona DESPUÉS del Plan Hamburguesería ES)
+## ✅ HECHO (1-nov-2026): Burger Restaurant Business Plan Kit (EN) — PR #196 (apilado, se fusiona DESPUÉS del Plan Hamburguesería ES)
 
-Tienda EN, $39. La landing (`/en/digital-products/burger-restaurant-business-plan`) deja el botón en `#comprar` hasta que exista el link.
-Cuando lo crees, Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+Link de John: https://buy.stripe.com/7sY8wIa8A78iezBdfD6oo2n (`plink_1UWvJP4CcdRGidmEybCI2iGk`). Comprobado con la CLI (`--live`): 39 USD,
+pago único, *exclusive*, impuesto automático, factura y redirección a `/en/digital-products/burger-restaurant-business-plan/access`. Env de
+Netlify creada (builds) y `payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|

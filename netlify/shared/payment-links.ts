@@ -9,6 +9,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'bar-checklist-templates': 'https://buy.stripe.com/aFa4gs94wboyezB2AZ6oo1Q',
   'bbq-catering-business-plan': 'https://buy.stripe.com/fZufZafsUdwG4Z1fnL6oo1Z',
   'burger-joint-checklist-templates': 'https://buy.stripe.com/fZu7sE3Kc3W6fDFejH6oo1U',
+  'burger-restaurant-business-plan': 'https://buy.stripe.com/7sY8wIa8A78iezBdfD6oo2n',
   'catering-business-plan': 'https://buy.stripe.com/fZuaEQa8AdwGfDF0sR6oo1K',
   'catering-checklist-templates': 'https://buy.stripe.com/9B6bIUgwY64e2QTfnL6oo1S',
   'chocolate-shop-checklist-templates': 'https://buy.stripe.com/eVqdR2dkM78iajl0sR6oo1X',
