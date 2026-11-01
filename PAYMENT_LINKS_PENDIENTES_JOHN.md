@@ -2,10 +2,11 @@
 
 > Sesión Claude Code (Mac).
 
-## ⏳ PENDIENTE (31-oct-2026): Plan de Negocio: Hamburguesería Smash (ES) — rama `feat/plan-negocio-hamburgueseria`
+## ✅ HECHO (1-nov-2026): Plan de Negocio: Hamburguesería Smash (ES) — PR #195
 
-Producto nº 59, 35 €. La landing (`/plan-negocio-hamburgueseria`) deja el botón en `#comprar` hasta que exista el link. Cuando lo crees,
-Claude pone la env de Netlify, regenera `payment-links.ts`, comprueba el link con la CLI y fusiona.
+Link de John: https://buy.stripe.com/8x26oA1C40JUajl8Zn6oo2m (`plink_1UWuzw4CcdRGidmEHUPKMI6N`). Comprobado con la CLI (`--live`): 35 EUR,
+pago único, *exclusive*, impuesto automático, factura y redirección a `/plan-negocio-hamburgueseria-access`. Env de Netlify creada (builds) y
+`payment-links.ts` regenerado.
 
 | Campo | Valor |
 |---|---|
