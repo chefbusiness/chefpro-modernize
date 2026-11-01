@@ -1470,6 +1470,13 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-sushi': '/dl/plan-negocio-sushi-bar/calculadora-pescado-arroz-escandallo-sushi-bar.xlsx',
     'guia-equivalencias': '/dl/plan-negocio-sushi-bar/guia-equivalencias-plan-negocio-sushi-bar.docx',
   },
+  'plan-negocio-hamburgueseria': {
+    'plan-financiero': '/dl/plan-negocio-hamburgueseria/plan-financiero-hamburgueseria.xlsx',
+    'plan-negocio': '/dl/plan-negocio-hamburgueseria/plan-de-negocio-hamburgueseria.docx',
+    'checklist-apertura': '/dl/plan-negocio-hamburgueseria/checklist-apertura-hamburgueseria.xlsx',
+    'calculadora-hamburguesa': '/dl/plan-negocio-hamburgueseria/calculadora-carne-patatas-escandallo-hamburgueseria.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-hamburgueseria/guia-equivalencias-plan-negocio-hamburgueseria.docx',
+  },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',

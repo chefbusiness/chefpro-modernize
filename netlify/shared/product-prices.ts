@@ -80,6 +80,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'plan-negocio-cocteleria-eventos': { eur: 55 },
   'plan-negocio-finca-eventos-bodas': { eur: 45 },
   'plan-negocio-food-truck': { eur: 29 },
+  'plan-negocio-hamburgueseria': { eur: 35 },
   'plan-negocio-heladeria': { eur: 35 },
   'plan-negocio-paellero-eventos': { eur: 45 },
   'plan-negocio-panaderia': { eur: 35 },
