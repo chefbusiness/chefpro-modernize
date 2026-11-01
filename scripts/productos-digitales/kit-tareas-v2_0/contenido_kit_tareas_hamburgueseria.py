@@ -443,8 +443,13 @@ UTENSILIO_CRUDO = [
 
 #: contenido_pendiente «Aceite de freidora en frío», rama del 02: aquí el orden
 #: YA era correcto (apagar → filtrar), sólo faltaba la cifra.
-FILTRAR_02 = ('Filtrar el aceite o cambiarlo si está oscuro o huele — SOLO por '
-              'debajo de 40 °C, nunca en caliente')
+#: 1-nov-2026: el criterio de cambio pasa a los compuestos polares (< 25 %, Orden
+#: de 26-ene-1989, art. 6.3), como el Plan de Negocio Hamburguesería Smash. En el
+#: LIVE lo aplicó `parche_xml_xlsx.py` (ARREGLOS), igual que la freidora «por
+#: debajo de 175 °C» de las dos tareas que vienen del kit base (01 y 02).
+FILTRAR_02 = ('Filtrar el aceite y cambiarlo antes de que los compuestos polares '
+              'lleguen al 25 % (tira, medidor o la frecuencia de tu APPCC; anota '
+              'cada cambio) — SOLO por debajo de 40 °C, nunca en caliente')
 
 #: DOM-26 en su versión hamburguesería: la lechuga y el tomate van CRUDOS entre
 #: el patty y el pan, sin ningún paso térmico posterior.
@@ -602,9 +607,12 @@ VIDA_UTIL_TAREA = [
 TITULO_TABLA = ('VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C — '
                 'ajústala a tu producto y a tu proveedor')
 TABLA_VIDA_UTIL = [
-    ('Patties y carne picada cruda', '3-4 meses', 'Congélalos ya porcionados '
-     'y separados con papel: la picada tiene mucha superficie expuesta y se '
-     'enrancia antes que la pieza entera'),
+    # 1-nov-2026: aviso del RD 1021/2022, art. 7.2 (picado del día).
+    ('Patties y carne picada cruda', '3-4 meses', 'Vale para los patties que '
+     'compras hechos: la carne que picas en el local es solo del día y no se '
+     'guarda de un día para otro (RD 1021/2022, art. 7.2). Congélalos '
+     'porcionados y separados con papel: la picada se enrancia antes que la '
+     'pieza entera'),
     ('Bacon y panceta', '1-2 meses', 'La grasa se enrancia aunque esté '
      'congelada: es lo primero que sabe a viejo'),
     ('Pollo crudo (crispy, tenders, nuggets)', '3-6 meses', 'Del congelador a '

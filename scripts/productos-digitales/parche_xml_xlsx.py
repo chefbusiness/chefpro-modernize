@@ -72,6 +72,24 @@ ARREGLOS += [
     ('*', 'The model settles quarterly (April, July, October, January):',
      'The model settles quarterly, in the month after each plan quarter (Months 4, 7 and 10, and the fourth quarter '
      'in Month 13: April, July, October and January when Month 1 is January):'),
+    # Kit de Tareas Hamburguesería (1-nov-2026): la fritura y la picada, como el Plan de Negocio Hamburguesería Smash
+    # (acrilamida: Rgto. (UE) 2017/2158, anexo II, parte A; polares: Orden de 26-ene-1989, art. 6.3; RD 1021/2022, art. 7.2).
+    ('kit-tareas-hamburgueseria/01-apertura-cierre.xlsx',
+     'Verificar temperatura del aceite (175-180 °C para patatas)',
+     'Verificar la temperatura del aceite: por debajo de 175 °C para las patatas (acrilamida, Rgto. (UE) 2017/2158)'),
+    ('kit-tareas-hamburgueseria/02-partidas-cocina.xlsx',
+     'Encender freidora y precalentar (175-180 °C)',
+     'Encender freidora y precalentar por debajo de 175 °C (acrilamida)'),
+    ('kit-tareas-hamburgueseria/02-partidas-cocina.xlsx',
+     'Filtrar el aceite o cambiarlo si está oscuro o huele — SOLO por debajo de 40 °C, nunca en caliente',
+     'Filtrar el aceite y cambiarlo antes de que los compuestos polares lleguen al 25 % (tira, medidor o la frecuencia '
+     'de tu APPCC; anota cada cambio) — SOLO por debajo de 40 °C, nunca en caliente'),
+    ('kit-tareas-hamburgueseria/05-tareas-semanales-mensuales.xlsx',
+     'Congélalos ya porcionados y separados con papel: la picada tiene mucha superficie expuesta y se enrancia antes '
+     'que la pieza entera',
+     'Vale para los patties que compras hechos: la carne que picas en el local es solo del día y no se guarda de un '
+     'día para otro (RD 1021/2022, art. 7.2). Congélalos porcionados y separados con papel: la picada se enrancia '
+     'antes que la pieza entera'),
 ]
 
 
