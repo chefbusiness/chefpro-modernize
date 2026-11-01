@@ -64,6 +64,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Taco Shop Business Plan Kit': '/en/digital-products/taco-shop-business-plan',
   'Rotisserie Chicken Restaurant Business Plan Kit': '/en/digital-products/rotisserie-chicken-restaurant-business-plan',
   'Sushi Restaurant Business Plan Kit': '/en/digital-products/sushi-restaurant-business-plan',
+  'Burger Restaurant Business Plan Kit': '/en/digital-products/burger-restaurant-business-plan',
   'Ice Cream Shop Business Plan Kit': '/en/digital-products/ice-cream-shop-business-plan',
   'Wedding Venue Business Plan Kit': '/en/digital-products/wedding-venue-business-plan',
   'Coffee Cart Business Plan Kit': '/en/digital-products/coffee-cart-business-plan',

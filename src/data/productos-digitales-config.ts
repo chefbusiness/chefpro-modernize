@@ -1555,6 +1555,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-31): twin of plan-negocio-hamburgueseria, independent product.
+  'burger-restaurant-business-plan': {
+    id: 'burger-restaurant-business-plan',
+    name: 'Burger Restaurant Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/burger-restaurant-business-plan/access',
+    emailSubject: 'Your access to Burger Restaurant Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Burger Restaurant Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the smash burger patty, fries and costing calculator and the 80-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Burger Restaurant Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the smash burger patty, fries and costing calculator and the 80-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/burger-restaurant-business-plan/burger-restaurant-business-plan.docx',
+      'plan-financiero': '/dl/burger-restaurant-business-plan/burger-restaurant-financial-projections.xlsx',
+      'checklist-apertura': '/dl/burger-restaurant-business-plan/burger-restaurant-startup-checklist.xlsx',
+      'calculadora-hamburguesa': '/dl/burger-restaurant-business-plan/smash-burger-patty-costing-calculator.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-10-15): twin of guia-food-cost-ingenieria-menu, independent product.
   'food-cost-menu-engineering-guide': {
     id: 'food-cost-menu-engineering-guide',

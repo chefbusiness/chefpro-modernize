@@ -1,0 +1,46 @@
+{
+ "carpeta": "/root/wt-burger-en/astro-site/public/dl/burger-restaurant-business-plan",
+ "parcial": false,
+ "piezas": 1746,
+ "fallos": 0,
+ "ficheros": {
+  "burger-restaurant-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 8237,
+   "piezas": 116,
+   "sha256": "214fe3f387dfd04bf417bb492ec5a40d6b7b76ee342bece8b669440bf1dd614d",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "burger-restaurant-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 741,
+   "piezas": 780,
+   "sha256": "bc522e291386d04cc6acb231674b28848483f7794c9a5c3daa6375d8b52eae30",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "burger-restaurant-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 495,
+   "sha256": "838eaad7ba4d2112c0c3ef336d4c404d1ba7dec9015dfcbe3e804b62962b85da",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "smash-burger-patty-costing-calculator.xlsx": {
+   "hojas": 4,
+   "formulas": 183,
+   "piezas": 355,
+   "sha256": "ffa3b184c27f895e8958db10637865cbb1559f8c4d7de9f2b7c812f60024bb0c",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}
