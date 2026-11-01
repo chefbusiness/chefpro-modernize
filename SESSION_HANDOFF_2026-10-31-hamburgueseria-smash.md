@@ -56,3 +56,27 @@ Siguiente hueco tras estos: ES 7-ene-2027 · EN 29-abr-2027.
 
 ≈ 4,4 M tokens de subagentes para la pareja (F1 ≈ 0,8 · ES F2+F3 ≈ 2,0 · EN F2+F3 ≈ 1,5), dentro del techo de 5 M. Imágenes: 10
 generaciones Nano Banana (≈ 0,70 $). Mac entre 38 y 50 °C todo el tiempo; todo el cálculo en el VPS (`/root/wt-smash`, `/root/wt-burger-en`).
+
+## 7. Cierre 1-nov-2026 (sesión Claude Code, Mac) — LOS DOS LIVE + arreglo del Kit de Tareas Hamburguesería
+
+John pasó los dos links («dale, arregla también el Kit de Tareas Hamburguesería…») y luego «dale, fusiona #195, #196 y #197».
+
+- **Links** comprobados con la CLI (`stripe get /v1/payment_links/<plink>/line_items --live`): ES `plink_1UWuzw4CcdRGidmEHUPKMI6N`
+  (https://buy.stripe.com/8x26oA1C40JUajl8Zn6oo2m) 35 EUR · EN `plink_1UWvJP4CcdRGidmEybCI2iGk` (https://buy.stripe.com/7sY8wIa8A78iezBdfD6oo2n)
+  39 USD; los dos one_time, *exclusive*, impuesto automático, factura y redirección correcta. Envs de Netlify (builds) y `payment-links.ts`.
+- **Fusiones:** #195 → `f8d57859` · #196 → `5448a0be` (merge de main en la rama EN: 5 conflictos resueltos con la versión EN; lo único que se
+  iba de main eran los marcadores provisionales `vivo: false`) · #197 → `782ff7c2`.
+- **#197, Kit de Tareas Hamburguesería (sin correo):** `parche_xml_xlsx.py` reglas 26-29 — `01 Apertura Cocina!B16` y `02 Freidora!B7` «por
+  debajo de 175 °C» (acrilamida), `02 Freidora!B19` cambio del aceite por polares < 25 %, `05 FIFO Semanal!D28` picada del día (RD 1021/2022,
+  art. 7.2); hubs ×6 + SPA 302 → 346. Comprobado en el VPS: solo esas 4 celdas, fórmulas y cachés `<v>` idénticas. `contenido_kit_tareas_
+  hamburgueseria.py` con los mismos textos. **Burger Joint EN sin cambios**: ya dice 350-355 °F y TPM, como su plan.
+- **LIVE:** landings 200 con link ×4 y 3 puertas cripto; access y library 200; hubs ES/EN con la tarjeta; postpago 100 productos · 1.216
+  entregables · 0 fallos reales (el ✗ de `plan-catering-tematico-eventos` fue un timeout: curl 200 con su link ×4); robots verde; sitemap y
+  llms con las 2 URLs; GSC `sitemap-index.xml` reenviado; cripto 200 ×2 (`qa-hamburgueseria`, `qa-burger-en`); xlsx del kit en producción =
+  sha de main.
+- **Correos:** ES 2-ene-2027 08:00Z (borrador `55f37b6c`, routine `trig_01XD8NCV8Kah27UzZKaqfhQU` el 3-dic-2026 15:07Z) · EN 24-abr-2027
+  14:00Z (borrador `dcdfb158`, routine `trig_01JGs9hu2GGziArFS39q1cmk` el 25-mar-2027 15:07Z). Pruebas a John ×2. Siguiente hueco: ES
+  7-ene-2027 · EN 29-abr-2027.
+- **Pendiente de John:** purgar los QA cripto (21 de antes + `qa-hamburgueseria` y `qa-burger-en`) y `CUTOVER_ENBLOG_PENDIENTE.md`.
+- **Siguiente:** Kit de Tareas Pollería (Próximos) o traducir alguno de los 18 ES sin gemelo EN.
+- Térmica: el Mac llegó a 63 °C con el gate LIVE completo y el Chrome de John abierto; los gates de 100 productos, mejor desde el VPS.

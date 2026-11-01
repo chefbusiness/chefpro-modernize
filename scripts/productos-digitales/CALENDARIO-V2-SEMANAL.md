@@ -883,3 +883,17 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   **Siguiente hueco: ES 2-ene-2027 · EN 24-abr-2027.**
 - Siguiente en la cola: Hamburguesería Smash → Kit de Tareas Pollería (Próximos); 18 productos ES sin gemelo EN.
 - Handoff: `SESSION_HANDOFF_2026-10-31-noche-sushi-y-lote-checklists.md` §7.
+
+### ✅ 2026-11-01 (Claude Code en el Mac + VPS) — **Plan de Negocio: Hamburguesería Smash (ES, 35 €, nº 59) + Burger Restaurant Business Plan Kit (EN, $39)** — LOS DOS LIVE + arreglo del Kit de Tareas Hamburguesería
+
+- Fusionados en orden: **#195 → `f8d57859`** · **#196 → `5448a0be`** · **#197 → `782ff7c2`** (Kit de Tareas Hamburguesería, sin correo:
+  freidora < 175 °C, aceite por polares < 25 %, picada del día del RD 1021/2022 art. 7.2 y 346 tareas en los hubs; el gemelo Burger Joint
+  EN ya cuadraba con su plan). Links de John comprobados con la CLI (`--live`): Hamburguesería `plink_1UWuzw4C…` 35 EUR · Burger Restaurant
+  `plink_1UWvJP4C…` 39 USD.
+- LIVE: landings 200 con el link ×4 y las 3 puertas cripto; acceso y biblioteca 200; robots verde; sitemap y `llms.txt` (ES 59 · EN 40)
+  con las 2 URLs y sitemap reenviado a GSC; cripto 200 ×2 (QA `qa-hamburgueseria`, `qa-burger-en`, por purgar).
+- **Correos:** ES **2-ene-2027 08:00Z** (borrador `55f37b6c`, routine `trig_01XD8NCV8Kah27UzZKaqfhQU` el 3-dic 15:07Z) · EN **24-abr-2027
+  14:00Z** (borrador `dcdfb158`, routine `trig_01JGs9hu2GGziArFS39q1cmk` el 25-mar-2027 15:07Z). Pruebas a John ×2.
+  **Siguiente hueco: ES 7-ene-2027 · EN 29-abr-2027.**
+- Siguiente en la cola: Kit de Tareas Pollería (Próximos); 18 productos ES sin gemelo EN.
+- Handoff: `SESSION_HANDOFF_2026-10-31-hamburgueseria-smash.md` §7.
