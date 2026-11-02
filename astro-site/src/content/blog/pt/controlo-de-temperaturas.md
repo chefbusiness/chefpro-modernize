@@ -41,4 +41,5 @@ faq:
 
 <h2>O seu próximo passo</h2>
 
+<p>A massa mãe de uma padaria também se conduz com a temperatura que a sonda marcou na água, na massa e na sala, escrita na folha, não com um grau copiado de um texto. O planeamento desse refresco está em <a href="https://aichef.pro/pt/blog/massa-mae">massa mãe</a>. Os limites das câmaras, esses, continuam a ser os deste artigo.</p>
 <p>O primeiro passo desta semana não é comprar equipamento novo nem contratar um técnico. É escolher um equipamento — a câmara que mais usa, ou a arca onde guarda o gelado — e medir e registar a sua temperatura duas vezes por dia durante sete dias seguidos. No fim da semana, olhe para a folha: vai ver o padrão real, não o padrão imaginado. Se os valores forem estáveis, tem um sistema que funciona. Se oscilarem, tem um problema identificado a tempo — que é exatamente para isso que o registo serve. O controlo de temperaturas não é ciência nem burocracia: é um hábito, e os hábitos começam com um gesto simples, repetido todos os dias.</p>
