@@ -28,7 +28,7 @@ El blog `/nl/blog` abre con el post 1 del roadmap. Keyword y intención por piez
 |---|---|---|---|
 | 1 | allergenenlijst | El operador quiere el listado de 14 para imprimir en cocina y sala, no una guía de paciente ni una oferta de empleo de la NVWA | Publicado: `/nl/blog/allergenenlijst` |
 | 2 | 14 allergenen | Quiere la lista numerada y qué producto de cocina la esconde | Publicado: `/nl/blog/14-allergenen` |
-| 3 | kruisbesmetting | Cómo separar alérgenos en el pase, no un artículo clínico | Borrador pendiente de OK (PR #PENDIENTE) |
+| 3 | kruisbesmetting | Cómo separar alérgenos en el pase, no un artículo clínico | Borrador pendiente de OK (PR #198) |
 | 4 | hygiënecode (también hygienecode, serie distinta por el diacrítico) | Qué obliga el código de higiene neerlandés en la hostelería. No aplica en Flandes | Pendiente. No se adelanta dentro del post de la allergenenlijst |
 | 5 | haccp betekenis / haccp horeca | Definición operativa, no un curso genérico | Pendiente |
 | 6 | haccp lijsten | Plantillas. Se puede dejar caer si hay que podar | Pendiente |
@@ -48,7 +48,7 @@ Ya publicados, entre otros: haccp, alergenios, contaminação cruzada, higiene, 
 | Orden | Keyword nativa | Intención | Estado |
 |---|---|---|---|
 | 1 | ficha técnica de pratos | La ficha que usa el operador (dosis, coste, alérgenos), no un trabajo escolar | Publicado: `/pt/blog/ficha-tecnica-de-pratos` |
-| 2 | massa mãe | Producción de obrador. La Portaria 254/2003 es el marco portugués. No es una receta de pan casero | Borrador pendiente de OK (PR #PENDIENTE) |
+| 2 | massa mãe | Producción de obrador. La Portaria 254/2003 es el marco portugués. No es una receta de pan casero | Borrador pendiente de OK (PR #198) |
 | 3 | garum | Pieza de autoridad histórica y de uso profesional, no una receta de fin de semana | Pendiente |
 
 Cocina molecular, cócteles y food truck se midieron con head terms contaminados. No se escriben hasta tener una variante profesional medida. APPCC y «alérgenos» son notas de Brasil en el roadmap, no la lengua de la página: aquí se dice alergénios y HACCP.
