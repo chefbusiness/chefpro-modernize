@@ -806,7 +806,7 @@ export default function GeneradorMenuDegustacion() {
           <div className="max-w-3xl mx-auto text-center">
             <HeroSocialProof />
             <Badge className="bg-indigo-100 text-indigo-700 border-0 mb-4 px-3 py-1">
-              {hero?.badge || 'Gratis — Sin registro'}
+              {hero?.badge || 'Sin registro'}
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
               {hero?.h1 || 'Generador de Menú Degustación con IA'}
@@ -1145,7 +1145,7 @@ export default function GeneradorMenuDegustacion() {
                 className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3"
                 onClick={() => document.getElementById('tool-section')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                {ctaSection?.cta_primary || 'Crear menú degustación gratis'}
+                {ctaSection?.cta_primary || 'Crear menú degustación'}
               </Button>
               <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3" asChild>
                 <Link to={hubSlug}>

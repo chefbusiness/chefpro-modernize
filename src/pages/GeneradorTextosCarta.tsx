@@ -447,7 +447,7 @@ export default function GeneradorTextosCarta() {
           <div className="max-w-3xl mx-auto text-center">
             <HeroSocialProof />
             <Badge className="bg-blue-100 text-blue-700 border-0 mb-4 px-3 py-1">
-              {hero?.badge || 'Gratis — Sin registro'}
+              {hero?.badge || 'Sin registro'}
             </Badge>
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
@@ -735,7 +735,7 @@ export default function GeneradorTextosCarta() {
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
                 onClick={() => document.getElementById('tool-section')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                {ctaSection?.cta_primary || 'Generar textos gratis'}
+                {ctaSection?.cta_primary || 'Generar textos'}
               </Button>
               <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3" asChild>
                 <Link to={hubSlug}>
