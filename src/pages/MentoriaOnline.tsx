@@ -806,7 +806,7 @@ const MentoriaOnline = () => {
               </h2>
               <p className="text-muted-foreground mb-6">
                 {currentLanguage === 'es' 
-                  ? 'Agenda una micro-sesión de 15 minutos para discutir tus necesidades y determinar cuál es la mejor opción para tu negocio.' 
+                  ? 'Agenda una micro-sesión gratuita de 15 minutos para discutir tus necesidades y determinar cuál es la mejor opción para tu negocio.' 
                   : t('mentoriaOnline.sections.free_consultation.description')
                 }
               </p>
@@ -815,7 +815,7 @@ const MentoriaOnline = () => {
                   variant="outline" 
                   onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/micro-sesion-gratuita-15-min', '_blank')}
                 >
-                  {currentLanguage === 'es' ? 'Agendar micro-sesión' : t('mentoriaOnline.sections.free_consultation.button1')}
+                  {currentLanguage === 'es' ? 'Agendar micro-sesión gratuita' : t('mentoriaOnline.sections.free_consultation.button1')}
                 </Button>
                 <Button 
                   variant="outline" 

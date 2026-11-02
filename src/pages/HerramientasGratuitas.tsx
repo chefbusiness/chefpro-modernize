@@ -272,7 +272,7 @@ export default function HerramientasGratuitas() {
           </div>
         </section>
 
-        {/* Why these tools exist */}
+        {/* Why Free */}
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
