@@ -977,8 +977,8 @@
       },
       "free_consultation": {
         "title": "¿No estás seguro de qué paquete elegir?",
-        "description": "Agenda una micro-sesión de 15 minutos para discutir tus necesidades y determinar cuál es la mejor opción para tu negocio.",
-        "button1": "Agendar micro-sesión",
+        "description": "Reserva una micro-sesión de 15 minutos por 29 € para aclarar tus necesidades y elegir la mejor opción para tu negocio. Si después contratas una mentoría, descontamos los 29 €.",
+        "button1": "Reservar micro-sesión (29 €)",
         "button2": "Contactar ahora"
       }
     }
@@ -2671,16 +2671,16 @@
   "toolHub": {
     "seo": {
       "title": "8 herramientas para tu restaurante | AI Chef Pro",
-      "description": "Herramientas para tu restaurante: food cost, alérgenos y rentabilidad, sin registro. La suite de pago reúne 75+ agentes de IA. Pruébala hoy.",
+      "description": "Herramientas para tu restaurante: food cost, alérgenos y rentabilidad. Demo con límites; las 8 herramientas completas, con descarga y guardado, están incluidas en la Membresía (10 €/mes).",
       "keywords": "herramientas restaurante, calculadora food cost, simulador rentabilidad, 75+ agentes de ia, ai chef pro"
     },
     "breadcrumb": "Herramientas",
     "other_tools_title": "Otras herramientas",
     "see_all_tools": "Ver todas las herramientas",
     "hero": {
-      "badge": "Sin registro",
+      "badge": "Incluidas en la Membresía",
       "h1": "8 Herramientas para tu Restaurante",
-      "subtitle": "Calcula tu food cost, detecta alérgenos, simula tu rentabilidad y más. Sin registrarte, sin pagar, sin límites.",
+      "subtitle": "Calcula tu food cost, detecta alérgenos, simula tu rentabilidad y más. Prueba la demo con límites; con la Membresía (10 €/mes, 10k créditos) tienes las 8 herramientas completas, con descarga y guardado.",
       "tagline": "De los creadores de AI Chef Pro — la suite de IA para gastronomía"
     },
     "tools": [
@@ -2734,10 +2734,10 @@
       }
     ],
     "why": {
-      "title": "¿Por qué existen estas herramientas?",
-      "body": "Creemos que cualquier restaurante, sea cual sea su tamaño, merece acceso a herramientas profesionales. Estas calculadoras son nuestra forma de aportar valor al sector.",
+      "title": "Incluidas en tu Membresía",
+      "body": "Las 8 herramientas están incluidas en la Membresía de AI Chef Pro, desde 10 €/mes con 10k créditos. Sin Membresía puedes probar una demo con límites, sin descarga ni guardado.",
       "items": [
-        "Sin registro ni tarjeta de crédito",
+        "Incluidas en la Membresía de 10 €/mes",
         "Resultados instantáneos en tu navegador",
         "Basadas en estándares reales del sector",
         "Usadas por más de {{userCount}} profesionales"
@@ -2747,19 +2747,19 @@
     "cta": {
       "title": "¿Necesitas más potencia?",
       "subtitle": "Estas calculadoras son solo una muestra de los 75+ agentes de IA de AI Chef Pro.",
-      "primary": "Ver Plan Premium",
+      "primary": "Ver planes desde 10 €/mes",
       "secondary": "Empezar AI Chef Pro"
     }
   },
   "toolFoodCost": {
     "seo": {
       "title": "Calculadora Food Cost Restaurante | AI Chef Pro",
-      "description": "Calcula el food cost de tus platos: ingredientes, gramajes y precio de venta. Resultado instantáneo con semáforo de rentabilidad. Sin registro.",
+      "description": "Calcula el food cost de tus platos: ingredientes, gramajes y precio de venta. Resultado instantáneo con semáforo de rentabilidad. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "keywords": "calculadora food cost restaurante, calcular food cost, food cost porcentaje, coste plato restaurante"
     },
     "breadcrumb": "Calculadora Food Cost",
     "hero": {
-      "badge": "Sin registro",
+      "badge": "Demo · Incluida en la Membresía",
       "h1": "Calculadora de Food Cost para Restaurantes",
       "subtitle": "Calcula el porcentaje de food cost de cualquier plato en segundos. Añade ingredientes, gramajes y precio de venta.",
       "cta_tool": "Ir a la calculadora ↓",
@@ -2904,12 +2904,12 @@
   "toolRentabilidad": {
     "seo": {
       "title": "Simulador Rentabilidad Restaurante | AI Chef Pro",
-      "description": "Calcula si tu restaurante es rentable: introduce comensales, ticket medio y costes. Beneficio neto y punto de equilibrio al instante. Sin registro.",
+      "description": "Calcula si tu restaurante es rentable: introduce comensales, ticket medio y costes. Beneficio neto y punto de equilibrio al instante. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "keywords": "simulador rentabilidad restaurante, calcular beneficio restaurante, punto de equilibrio restaurante, rentabilidad hostelería"
     },
     "breadcrumb": "Simulador de Rentabilidad",
     "hero": {
-      "badge": "Sin registro",
+      "badge": "Demo · Incluida en la Membresía",
       "h1": "Simulador de Rentabilidad para Restaurantes",
       "subtitle": "Calcula si tu restaurante genera beneficios reales. Introduce tus datos y obtén tu beneficio mensual y punto de equilibrio.",
       "cta_tool": "Ir al simulador ↓",
@@ -3050,12 +3050,12 @@
   "toolScore": {
     "seo": {
       "title": "Test Digitalización Restaurante | AI Chef Pro",
-      "description": "Descubre en qué nivel de digitalización está tu restaurante en 2 minutos. 6 preguntas, resultado inmediato con plan de acción personalizado. Sin registro.",
+      "description": "Descubre en qué nivel de digitalización está tu restaurante en 2 minutos. 6 preguntas, resultado inmediato con plan de acción personalizado. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "keywords": "test digitalización restaurante, nivel digital restaurante, digitalización hostelería, herramientas digitales restaurante"
     },
     "breadcrumb": "Test de Digitalización",
     "hero": {
-      "badge": "Sin registro — 2 minutos",
+      "badge": "Demo — 2 minutos",
       "h1": "Test de Digitalización para Restaurantes",
       "subtitle": "¿Qué tan digitalizado está tu restaurante? Responde 6 preguntas y obtén tu nivel digital con un plan de acción personalizado.",
       "cta_tool": "Hacer el test ↓",
@@ -3211,7 +3211,7 @@
         {
           "step": "1",
           "title": "Responde 6 preguntas",
-          "description": "Preguntas sobre reservas, delivery, TPV, carta, redes sociales e IA. Sin trampa, sin registro."
+          "description": "Preguntas sobre reservas, delivery, TPV, carta, redes sociales e IA. Sin trampa."
         },
         {
           "step": "2",
@@ -3300,12 +3300,12 @@
   "toolAlergenos": {
     "seo": {
       "title": "Detector Alérgenos Restaurante | AI Chef Pro",
-      "description": "Detecta los 14 alérgenos de declaración obligatoria en cualquier plato al instante. Introduce los ingredientes y obtén la ficha de alérgenos. Sin registro.",
+      "description": "Detecta los 14 alérgenos de declaración obligatoria en cualquier plato al instante. Introduce los ingredientes y obtén la ficha de alérgenos. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "keywords": "detector alergenos restaurante, alergenos obligatorios restaurante, ficha alergenos plato, reglamento 1169 2011"
     },
     "breadcrumb": "Detector de Alérgenos",
     "hero": {
-      "badge": "Sin registro — Obligatorio por ley",
+      "badge": "Demo — Obligatorio por ley",
       "h1": "Detector de Alérgenos para Restaurantes",
       "subtitle": "Identifica los 14 alérgenos de declaración obligatoria (Reglamento EU 1169/2011) en cualquier plato al instante. Copia la ficha para tu carta.",
       "cta_tool": "Ir al detector ↓",
@@ -3673,12 +3673,12 @@
   "toolBrigada": {
     "seo": {
       "title": "Calculadora Brigada Cocina | AI Chef Pro",
-      "description": "Calcula cuántos empleados necesitas en cocina y sala según tu volumen de servicio. Sin registro. Basado en estándares reales de hostelería.",
+      "description": "Calcula cuántos empleados necesitas en cocina y sala según tu volumen de servicio. Demo con límites; versión completa incluida en la Membresía (10 €/mes). Basado en estándares reales de hostelería.",
       "keywords": "calculadora brigada cocina, cuantos cocineros necesito, personal restaurante, brigada hostelería"
     },
     "breadcrumb": "Calculadora de Brigada",
     "hero": {
-      "badge": "Sin registro",
+      "badge": "Demo · Incluida en la Membresía",
       "h1": "Calculadora de Brigada de Cocina",
       "subtitle": "Descubre cuántos cocineros y camareros necesitas según tus comensales, turnos y tipo de servicio. Basado en ratios reales del sector.",
       "cta_tool": "Ir a la calculadora ↓",
@@ -3833,15 +3833,15 @@
   "toolCalendario": {
     "seo": {
       "title": "Calendario de Contenidos Restaurante | AI Chef Pro",
-      "description": "Genera un calendario editorial de 30 días para tu restaurante. Ideas de posts para Instagram, TikTok y Facebook personalizadas para tu local. Sin registro.",
+      "description": "Genera un calendario editorial de 30 días para tu restaurante. Ideas de posts para Instagram, TikTok y Facebook personalizadas para tu local. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "keywords": "calendario contenidos restaurante, ideas posts restaurante, marketing redes sociales hosteleria, content calendar restaurante"
     },
     "breadcrumb": "Calendario de Contenidos",
     "breadcrumb_hub": "Herramientas",
     "hero": {
-      "badge": "Sin registro",
+      "badge": "Demo · Incluida en la Membresía",
       "h1": "Calendario de Contenidos para tu Restaurante",
-      "subtitle": "Genera 30 días de ideas de publicaciones para Instagram, TikTok y Facebook, adaptadas a tu tipo de establecimiento. Sin API, sin registro, sin coste.",
+      "subtitle": "Genera 30 días de ideas de publicaciones para Instagram, TikTok y Facebook, adaptadas a tu tipo de establecimiento. Sin API. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "cta_tool": "Generar mi calendario",
       "cta_premium": "Plan Premium →"
     },
@@ -4074,13 +4074,13 @@
   "toolMenuCopy": {
     "seo": {
       "title": "Generador Textos Carta Restaurante | AI Chef Pro",
-      "description": "Genera 3 versiones de descripción para cada plato de tu carta: clásica, emocional y km0. Sin registro. Mejora tu carta y atrae más clientes.",
+      "description": "Genera 3 versiones de descripción para cada plato de tu carta: clásica, emocional y km0. Demo con límites; versión completa incluida en la Membresía (10 €/mes). Mejora tu carta y atrae más clientes.",
       "keywords": "generador textos carta restaurante, descripcion platos restaurante, textos carta menu, copywriting gastronomico"
     },
     "hero": {
-      "badge": "Sin registro",
+      "badge": "Demo · Incluida en la Membresía",
       "h1": "Generador de Textos para tu Carta",
-      "subtitle": "Introduce el nombre del plato e ingredientes y obtén 3 descripciones listas para tu carta: clásica, emocional y km0. Sin API, sin registro, sin coste.",
+      "subtitle": "Introduce el nombre del plato e ingredientes y obtén 3 descripciones listas para tu carta: clásica, emocional y km0. Sin API. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "cta_tool": "Generar textos para mi carta",
       "cta_premium": "Plan Premium →"
     },
@@ -4200,11 +4200,11 @@
   "toolDegustacion": {
     "seo": {
       "title": "Generador Menú Degustación | AI Chef Pro",
-      "description": "Crea un menú degustación completo con IA: nombre poético, descripción sensorial, técnica y maridaje para cada pase. Sin registro.",
+      "description": "Crea un menú degustación completo con IA: nombre poético, descripción sensorial, técnica y maridaje para cada pase. Demo con límites; versión completa incluida en la Membresía (10 €/mes).",
       "keywords": "generador menu degustacion, menu degustacion ia, crear menu degustacion restaurante, menu degustacion"
     },
     "hero": {
-      "badge": "Sin registro",
+      "badge": "Demo · Incluida en la Membresía",
       "h1": "Generador de Menú Degustación con IA",
       "subtitle": "Selecciona tus ingredientes estrella, número de pases y estilo culinario. Obtén al instante un menú degustación completo con nombre poético, descripción sensorial, técnica y maridaje para cada pase.",
       "cta_tool": "Crear mi menú degustación",

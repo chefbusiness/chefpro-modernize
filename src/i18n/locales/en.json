@@ -305,8 +305,8 @@
       },
       "free_consultation": {
         "title": "Not sure which package to choose?",
-        "description": "Schedule a 15-minute micro-session to discuss your needs and determine the best option for your business.",
-        "button1": "Schedule micro-session",
+        "description": "Book a 15-minute micro-session for €29 to discuss your needs and find the best option for your business. If you later book mentoring, the €29 is deducted.",
+        "button1": "Book micro-session (€29)",
         "button2": "Contact now"
       }
     }
@@ -2685,16 +2685,16 @@
   "toolHub": {
     "seo": {
       "title": "8 restaurant tools you can use today | AI Chef Pro",
-      "description": "Tools for your restaurant: food cost, allergens and profit, with no sign-up. When you need more, the suite has 75+ AI agents. Try it today.",
+      "description": "Tools for your restaurant: food cost, allergens and profit. Demo with limits; all 8 full tools, with download and saving, are included in the Member plan (€10/month).",
       "keywords": "restaurant tools, food cost calculator, allergen detector, 75+ ai agents, ai chef pro"
     },
     "breadcrumb": "Tools",
     "other_tools_title": "Other tools",
     "see_all_tools": "See all tools",
     "hero": {
-      "badge": "No sign-up",
+      "badge": "Included in the Member plan",
       "h1": "8 Tools for Your Restaurant",
-      "subtitle": "Calculate your food cost, check allergens, simulate your profitability and more. No sign-up, no payment, no limits.",
+      "subtitle": "Calculate your food cost, check allergens, simulate your profitability and more. Try the demo with limits; the Member plan (€10/month, 10k credits) includes all 8 full tools, with download and saving.",
       "tagline": "From the creators of AI Chef Pro — the AI suite for gastronomy"
     },
     "tools": [
@@ -2748,10 +2748,10 @@
       }
     ],
     "why": {
-      "title": "Why do these tools exist?",
-      "body": "We believe any restaurant, regardless of size, deserves access to professional tools. These calculators are our way of adding value to the industry.",
+      "title": "Included in your Member plan",
+      "body": "All 8 tools are included in the AI Chef Pro Member plan, from €10/month with 10k credits. Without a plan you can try a demo with limits, with no download or saving.",
       "items": [
-        "No registration or credit card needed",
+        "Included in the €10/month Member plan",
         "Instant results in your browser",
         "Based on real industry standards",
         "Used by more than {{userCount}} professionals"
@@ -2761,19 +2761,19 @@
     "cta": {
       "title": "Need more power?",
       "subtitle": "These calculators are just a sample of the 75+ AI agents in AI Chef Pro.",
-      "primary": "See Premium Plan",
+      "primary": "See plans from €10/month",
       "secondary": "Start AI Chef Pro"
     }
   },
   "toolFoodCost": {
     "seo": {
       "title": "AI Food Cost Calculator for Restaurants | AI Chef Pro",
-      "description": "AI food cost calculator for restaurants. Add ingredients, weights and selling price — get instant food cost percentage with profitability analysis. No registration.",
+      "description": "AI food cost calculator for restaurants. Add ingredients, weights and selling price — get instant food cost percentage with profitability analysis. Demo with limits; full version included in the Member plan (€10/month).",
       "keywords": "ai food cost calculator, food cost calculator restaurant, food cost calculator, calculate food cost, food cost percentage, restaurant food cost, dish cost calculator"
     },
     "breadcrumb": "Food Cost Calculator",
     "hero": {
-      "badge": "No registration",
+      "badge": "Demo · Included in the Member plan",
       "h1": "Food Cost Calculator for Restaurants",
       "subtitle": "Calculate the food cost percentage of any dish in seconds. Add ingredients, quantities and selling price.",
       "cta_tool": "Go to calculator ↓",
@@ -2918,12 +2918,12 @@
   "toolRentabilidad": {
     "seo": {
       "title": "Restaurant Profit Simulator | AI Chef Pro",
-      "description": "Calculate if your restaurant is profitable: enter covers, average ticket and costs. Net profit and break-even point instantly. No registration.",
+      "description": "Calculate if your restaurant is profitable: enter covers, average ticket and costs. Net profit and break-even point instantly. Demo with limits; full version included in the Member plan (€10/month).",
       "keywords": "restaurant profit simulator, calculate restaurant profit, restaurant break-even, hospitality profitability"
     },
     "breadcrumb": "Profit Simulator",
     "hero": {
-      "badge": "No registration",
+      "badge": "Demo · Included in the Member plan",
       "h1": "Restaurant Profit Simulator",
       "subtitle": "Calculate if your restaurant generates real profits. Enter your data and get your monthly profit and break-even point.",
       "cta_tool": "Go to simulator ↓",
@@ -3064,12 +3064,12 @@
   "toolScore": {
     "seo": {
       "title": "Restaurant Digitalization Test | AI Chef Pro",
-      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. No registration.",
+      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. Demo with limits; full version included in the Member plan (€10/month).",
       "keywords": "restaurant digitalization test, digital level restaurant, hospitality digitalization, digital tools restaurant"
     },
     "breadcrumb": "Digitalization Test",
     "hero": {
-      "badge": "No registration — 2 minutes",
+      "badge": "Demo — 2 minutes",
       "h1": "Restaurant Digitalization Test",
       "subtitle": "How digitalized is your restaurant? Answer 6 questions and get your digital level with a personalized action plan.",
       "cta_tool": "Take the test ↓",
@@ -3225,7 +3225,7 @@
         {
           "step": "1",
           "title": "Answer 6 questions",
-          "description": "Questions about bookings, delivery, POS, menu, social media and AI. No tricks, no registration."
+          "description": "Questions about bookings, delivery, POS, menu, social media and AI. No tricks."
         },
         {
           "step": "2",
@@ -3314,12 +3314,12 @@
   "toolAlergenos": {
     "seo": {
       "title": "Restaurant Allergen Checker | AI Chef Pro",
-      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. No registration.",
+      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Demo with limits; full version included in the Member plan (€10/month).",
       "keywords": "allergen checker restaurant, mandatory allergens restaurant, allergen declaration dish, EU regulation 1169 2011"
     },
     "breadcrumb": "Allergen Checker",
     "hero": {
-      "badge": "No registration — Legally required",
+      "badge": "Demo — Legally required",
       "h1": "Allergen Checker for Restaurants",
       "subtitle": "Identify the 14 mandatory declaration allergens (EU Regulation 1169/2011) in any dish instantly. Copy the declaration for your menu.",
       "cta_tool": "Go to checker ↓",
@@ -3664,12 +3664,12 @@
   "toolBrigada": {
     "seo": {
       "title": "Kitchen Brigade Calculator | AI Chef Pro",
-      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. No registration. Based on real hospitality standards.",
+      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. Demo with limits; full version included in the Member plan (€10/month). Based on real hospitality standards.",
       "keywords": "kitchen brigade calculator, how many chefs do I need, restaurant staff, kitchen brigade"
     },
     "breadcrumb": "Brigade Calculator",
     "hero": {
-      "badge": "No registration",
+      "badge": "Demo · Included in the Member plan",
       "h1": "Kitchen Brigade Calculator",
       "subtitle": "Find out how many chefs and waiters you need based on your covers, shifts and service type. Based on real industry ratios.",
       "cta_tool": "Go to calculator ↓",
@@ -3824,15 +3824,15 @@
   "toolCalendario": {
     "seo": {
       "title": "Restaurant Content Calendar | AI Chef Pro",
-      "description": "Generate a 30-day editorial calendar for your restaurant. Post ideas for Instagram, TikTok and Facebook tailored to your type of business. No sign-up.",
+      "description": "Generate a 30-day editorial calendar for your restaurant. Post ideas for Instagram, TikTok and Facebook tailored to your type of business. Demo with limits; full version included in the Member plan (€10/month).",
       "keywords": "restaurant content calendar, restaurant post ideas, social media marketing restaurant, content calendar restaurant"
     },
     "breadcrumb": "Content Calendar",
     "breadcrumb_hub": "Tools",
     "hero": {
-      "badge": "No sign-up",
+      "badge": "Demo · Included in the Member plan",
       "h1": "Content Calendar for Your Restaurant",
-      "subtitle": "Generate 30 days of post ideas for Instagram, TikTok and Facebook, tailored to your type of venue. No API, no sign-up, no cost.",
+      "subtitle": "Generate 30 days of post ideas for Instagram, TikTok and Facebook, tailored to your type of venue. No API. Demo with limits; full version included in the Member plan (€10/month).",
       "cta_tool": "Generate my calendar",
       "cta_premium": "Premium Plan →"
     },
@@ -4065,13 +4065,13 @@
   "toolMenuCopy": {
     "seo": {
       "title": "Restaurant Menu Copy Generator | AI Chef Pro",
-      "description": "Generate 3 menu descriptions for every dish: classic, emotional and local/km0. No signup. Improve your menu and attract more customers.",
+      "description": "Generate 3 menu descriptions for every dish: classic, emotional and local/km0. Demo with limits; full version included in the Member plan (€10/month). Improve your menu and attract more customers.",
       "keywords": "restaurant menu copy generator, menu description generator, dish description writer, menu copywriting tool"
     },
     "hero": {
-      "badge": "No signup",
+      "badge": "Demo · Included in the Member plan",
       "h1": "Restaurant Menu Copy Generator",
-      "subtitle": "Enter the dish name and main ingredients to get 3 ready-to-use menu descriptions: classic, emotional and km0/local. No API, no registration, no cost.",
+      "subtitle": "Enter the dish name and main ingredients to get 3 ready-to-use menu descriptions: classic, emotional and km0/local. No API. Demo with limits; full version included in the Member plan (€10/month).",
       "cta_tool": "Generate menu copy",
       "cta_premium": "See Premium Plan →"
     },
@@ -4187,11 +4187,11 @@
   "toolDegustacion": {
     "seo": {
       "title": "Tasting Menu Generator | AI Chef Pro",
-      "description": "Create a complete tasting menu with AI: poetic name, sensory description, technique and wine pairing for each course. No sign-up.",
+      "description": "Create a complete tasting menu with AI: poetic name, sensory description, technique and wine pairing for each course. Demo with limits; full version included in the Member plan (€10/month).",
       "keywords": "tasting menu generator, ai tasting menu, create tasting menu restaurant, tasting menu"
     },
     "hero": {
-      "badge": "No sign-up",
+      "badge": "Demo · Included in the Member plan",
       "h1": "AI Tasting Menu Generator",
       "subtitle": "Select your star ingredients, number of courses and culinary style. Get an instant complete tasting menu with poetic names, sensory descriptions, techniques and wine pairings for each course.",
       "cta_tool": "Create my tasting menu",

@@ -797,7 +797,7 @@ const MentoriaOnline = () => {
           </div>
         </section>
 
-        {/* Free Consultation CTA */}
+        {/* Micro-sesión de pago (29 €, 15 min, descontable) */}
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-2xl mx-auto">
@@ -806,16 +806,16 @@ const MentoriaOnline = () => {
               </h2>
               <p className="text-muted-foreground mb-6">
                 {currentLanguage === 'es' 
-                  ? 'Agenda una micro-sesión de 15 minutos para discutir tus necesidades y determinar cuál es la mejor opción para tu negocio.' 
+                  ? 'Reserva una micro-sesión de 15 minutos por 29 € para aclarar tus necesidades y elegir la mejor opción para tu negocio. Si después contratas una mentoría, descontamos los 29 €.' 
                   : t('mentoriaOnline.sections.free_consultation.description')
                 }
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   variant="outline" 
-                  onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/micro-sesion-gratuita-15-min', '_blank')}
+                  onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/micro-sesion-15-min', '_blank')}
                 >
-                  {currentLanguage === 'es' ? 'Agendar micro-sesión' : t('mentoriaOnline.sections.free_consultation.button1')}
+                  {currentLanguage === 'es' ? 'Reservar micro-sesión (29 €)' : t('mentoriaOnline.sections.free_consultation.button1')}
                 </Button>
                 <Button 
                   variant="outline" 
