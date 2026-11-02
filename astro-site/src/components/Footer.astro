@@ -21,9 +21,9 @@ const { lang = 'es' } = Astro.props;
 
 const AI_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-ia-para-restaurantes', en: 'en/ai-tools-for-restaurants', fr: 'fr/outils-ia-restaurant', de: 'de/ki-tools-restaurant', it: 'it/strumenti-ia-ristorante', pt: 'pt/ferramentas-ia-restaurante', nl: 'nl/ai-tools-restaurant' };
 // El hub de free tools existe en los 7 idiomas (verificado en producción). Antes
-// estaba cableado a /herramientas-gratuitas, así que las 83 páginas italianas
+// estaba cableado a /herramientas-restaurante, así que las 83 páginas italianas
 // enlazaban con etiqueta italiana a una página en español.
-const FREE_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-gratuitas', en: 'en/free-tools-restaurants', fr: 'fr/outils-gratuits-restaurant', de: 'de/kostenlose-tools-restaurant', it: 'it/strumenti-gratuiti-ristorante', pt: 'pt/ferramentas-gratuitas-restaurante', nl: 'nl/gratis-tools-restaurant' };
+const FREE_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-restaurante', en: 'en/restaurant-tools', fr: 'fr/outils-restaurant', de: 'de/tools-restaurant', it: 'it/strumenti-ristorante', pt: 'pt/ferramentas-restaurante', nl: 'nl/tools-restaurant' };
 const COSTES_SLUGS: Record<string, string> = { es: 'reducir-costes-restaurante-ia', en: 'en/reduce-restaurant-costs-ai', fr: 'fr/reduire-couts-restaurant-ia', de: 'de/restaurantkosten-senken-ki', it: 'it/ridurre-costi-ristorante-ia', pt: 'pt/reduzir-custos-restaurante-ia', nl: 'nl/restaurantkosten-verlagen-ai' };
 const MENU_SLUGS: Record<string, string> = { es: 'carta-menu-restaurante-ia', en: 'en/restaurant-menu-ai', fr: 'fr/carte-menu-restaurant-ia', de: 'de/speisekarte-restaurant-ki', it: 'it/menu-ristorante-ia', pt: 'pt/cardapio-restaurante-ia', nl: 'nl/restaurantmenu-ai' };
 const MARKETING_SLUGS: Record<string, string> = { es: 'marketing-restaurante-ia', en: 'en/restaurant-marketing-ai', fr: 'fr/marketing-restaurant-ia', de: 'de/restaurant-marketing-ki', it: 'it/marketing-ristorante-ia', pt: 'pt/marketing-restaurante-ia-pt', nl: 'nl/restaurant-marketing-ai-nl' };

@@ -298,13 +298,13 @@ const App = () => (
             <Route path="/nl/food-cost-berekening-restaurant-ai" element={<EscandallosRestaurante />} />
 
             {/* Hub Herramientas Gratuitas — todos los idiomas */}
-            <Route path="/herramientas-gratuitas" element={<HerramientasGratuitas />} />
-            <Route path="/en/free-tools-restaurants" element={<HerramientasGratuitas />} />
-            <Route path="/fr/outils-gratuits-restaurant" element={<HerramientasGratuitas />} />
-            <Route path="/de/kostenlose-tools-restaurant" element={<HerramientasGratuitas />} />
-            <Route path="/it/strumenti-gratuiti-ristorante" element={<HerramientasGratuitas />} />
-            <Route path="/pt/ferramentas-gratuitas-restaurante" element={<HerramientasGratuitas />} />
-            <Route path="/nl/gratis-tools-restaurant" element={<HerramientasGratuitas />} />
+            <Route path="/herramientas-restaurante" element={<HerramientasGratuitas />} />
+            <Route path="/en/restaurant-tools" element={<HerramientasGratuitas />} />
+            <Route path="/fr/outils-restaurant" element={<HerramientasGratuitas />} />
+            <Route path="/de/tools-restaurant" element={<HerramientasGratuitas />} />
+            <Route path="/it/strumenti-ristorante" element={<HerramientasGratuitas />} />
+            <Route path="/pt/ferramentas-restaurante" element={<HerramientasGratuitas />} />
+            <Route path="/nl/tools-restaurant" element={<HerramientasGratuitas />} />
 
             {/* Calculadora Food Cost — todos los idiomas */}
             <Route path="/calculadora-food-cost-restaurante" element={<CalculadoraFoodCost />} />

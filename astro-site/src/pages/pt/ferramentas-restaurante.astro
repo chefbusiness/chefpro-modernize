@@ -3,12 +3,12 @@
 // Fase 6: la página de la SPA (src/pages/HerramientasGratuitas.tsx) se monta como island (D5,
 // patrón Fase 5); el head SEO sale server-side del head-module (claves i18n
 // verbatim de la SPA — SEOHead/Helmet son la spec).
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { SITE } from '../i18n/config';
-import { head } from '../lib/marketing-heads/herramientas-gratuitas';
-import HerramientasGratuitasIsland from '../islands/marketing/HerramientasGratuitasIsland';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/herramientas-gratuitas';
+import HerramientasGratuitasIsland from '../../islands/marketing/HerramientasGratuitasIsland';
 
-const lang = 'es';
+const lang = 'pt';
 const h = head(lang);
 ---
 
@@ -17,7 +17,7 @@ const h = head(lang);
   description={h.description}
   keywords={h.keywords}
   lang={lang}
-  alternates={{"es": "/herramientas-gratuitas", "en": "/en/free-tools-restaurants", "fr": "/fr/outils-gratuits-restaurant", "de": "/de/kostenlose-tools-restaurant", "it": "/it/strumenti-gratuiti-ristorante", "pt": "/pt/ferramentas-gratuitas-restaurante", "nl": "/nl/gratis-tools-restaurant"}}
+  alternates={{"es": "/herramientas-restaurante", "en": "/en/restaurant-tools", "fr": "/fr/outils-restaurant", "de": "/de/tools-restaurant", "it": "/it/strumenti-ristorante", "pt": "/pt/ferramentas-restaurante", "nl": "/nl/tools-restaurant"}}
   ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
 >
   {h.schemas.map((s) => (

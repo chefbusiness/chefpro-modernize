@@ -301,7 +301,7 @@ export default function CalculadoraFoodCost() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Herramientas', item: `${SITE_URL}/herramientas-gratuitas` },
+      { '@type': 'ListItem', position: 2, name: 'Herramientas', item: `${SITE_URL}/herramientas-restaurante` },
       { '@type': 'ListItem', position: 3, name: s('breadcrumb'), item: canonicalUrl },
     ],
   };

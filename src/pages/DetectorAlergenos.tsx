@@ -24,13 +24,13 @@ const LANG_SLUGS: Record<string, string> = {
 };
 
 const HUB_SLUGS: Record<string, string> = {
-  es: '/herramientas-gratuitas',
-  en: '/en/free-tools-restaurants',
-  fr: '/fr/outils-gratuits-restaurant',
-  de: '/de/kostenlose-tools-restaurant',
-  it: '/it/strumenti-gratuiti-ristorante',
-  pt: '/pt/ferramentas-gratuitas-restaurante',
-  nl: '/nl/gratis-tools-restaurant',
+  es: '/herramientas-restaurante',
+  en: '/en/restaurant-tools',
+  fr: '/fr/outils-restaurant',
+  de: '/de/tools-restaurant',
+  it: '/it/strumenti-ristorante',
+  pt: '/pt/ferramentas-restaurante',
+  nl: '/nl/tools-restaurant',
 };
 
 interface Allergen {
@@ -515,7 +515,7 @@ export default function DetectorAlergenos() {
                   </a>
                 </Button>
                 <Button variant="outline" asChild size="lg" className="border-red-300 text-red-700 hover:bg-red-50 px-8">
-                  <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-gratuitas'}>
+                  <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-restaurante'}>
                     {ctaSection.secondary}
                   </Link>
                 </Button>

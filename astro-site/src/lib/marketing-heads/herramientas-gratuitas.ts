@@ -1,4 +1,4 @@
-// Head module server-side de la página /herramientas-gratuitas (hub de herramientas gratuitas).
+// Head module server-side de la página /herramientas-restaurante (hub de herramientas gratuitas).
 // Origen: src/pages/HerramientasGratuitas.tsx (SPA). En Astro esa página se monta como island
 // client:only, cuyo <Helmet> es un no-op shim; por eso todo lo SEO-relevante del head sale de aquí en build.
 // Decisiones no obvias: (1) title/description/keywords se pasan EXPLÍCITOS a SEOHead con las claves
@@ -13,13 +13,13 @@ import type { Locale } from '../../i18n/config';
 const SITE_URL = 'https://aichef.pro';
 
 const LANG_SLUGS: Record<string, string> = {
-  es: 'herramientas-gratuitas',
-  en: 'en/free-tools-restaurants',
-  fr: 'fr/outils-gratuits-restaurant',
-  de: 'de/kostenlose-tools-restaurant',
-  it: 'it/strumenti-gratuiti-ristorante',
-  pt: 'pt/ferramentas-gratuitas-restaurante',
-  nl: 'nl/gratis-tools-restaurant',
+  es: 'herramientas-restaurante',
+  en: 'en/restaurant-tools',
+  fr: 'fr/outils-restaurant',
+  de: 'de/tools-restaurant',
+  it: 'it/strumenti-ristorante',
+  pt: 'pt/ferramentas-restaurante',
+  nl: 'nl/tools-restaurant',
 };
 
 export function head(lang: Locale): {

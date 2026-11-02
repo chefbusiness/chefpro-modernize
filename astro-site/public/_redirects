@@ -1,4 +1,23 @@
 
+# ── Hubs de herramientas: slugs sin «gratis/free» (2026-11-02) ──
+# 301 permanentes del slug viejo (y de cualquier subruta, por si existiera) al nuevo.
+# Van PRIMERO (first match wins). La query string (UTM, gclid…) se conserva por defecto.
+# Sin cadenas: ningún destino es origen de otra regla. Las barras finales las cubre Netlify.
+/herramientas-gratuitas  /herramientas-restaurante  301
+/herramientas-gratuitas/*  /herramientas-restaurante/:splat  301
+/en/free-tools-restaurants  /en/restaurant-tools  301
+/en/free-tools-restaurants/*  /en/restaurant-tools/:splat  301
+/fr/outils-gratuits-restaurant  /fr/outils-restaurant  301
+/fr/outils-gratuits-restaurant/*  /fr/outils-restaurant/:splat  301
+/de/kostenlose-tools-restaurant  /de/tools-restaurant  301
+/de/kostenlose-tools-restaurant/*  /de/tools-restaurant/:splat  301
+/it/strumenti-gratuiti-ristorante  /it/strumenti-ristorante  301
+/it/strumenti-gratuiti-ristorante/*  /it/strumenti-ristorante/:splat  301
+/pt/ferramentas-gratuitas-restaurante  /pt/ferramentas-restaurante  301
+/pt/ferramentas-gratuitas-restaurante/*  /pt/ferramentas-restaurante/:splat  301
+/nl/gratis-tools-restaurant  /nl/tools-restaurant  301
+/nl/gratis-tools-restaurant/*  /nl/tools-restaurant/:splat  301
+
 # Glosario tanda 1 (2026-10-22): el slug duplicado de Maillard
 # va al canónico. La regla del apex cubre el enlace interno viejo;
 # la del subdominio va antes de la genérica blog.aichef.pro/:slug.

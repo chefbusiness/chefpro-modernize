@@ -9,17 +9,17 @@ import { subscribeLead } from '@/lib/subscribe-lead';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 
 // El hub de herramientas gratuitas existe en los 7 idiomas. Antes estaba
-// cableado a /herramientas-gratuitas: las 17 páginas italianas que montan
+// cableado a /herramientas-restaurante: las 17 páginas italianas que montan
 // ESTE footer (no el Footer.astro) enlazaban con etiqueta italiana a una
 // página en español.
 const FREE_TOOLS_SLUGS: Record<string, string> = {
-  es: 'herramientas-gratuitas',
-  en: 'en/free-tools-restaurants',
-  fr: 'fr/outils-gratuits-restaurant',
-  de: 'de/kostenlose-tools-restaurant',
-  it: 'it/strumenti-gratuiti-ristorante',
-  pt: 'pt/ferramentas-gratuitas-restaurante',
-  nl: 'nl/gratis-tools-restaurant',
+  es: 'herramientas-restaurante',
+  en: 'en/restaurant-tools',
+  fr: 'fr/outils-restaurant',
+  de: 'de/tools-restaurant',
+  it: 'it/strumenti-ristorante',
+  pt: 'pt/ferramentas-restaurante',
+  nl: 'nl/tools-restaurant',
 };
 
 // Tienda de productos digitales (2026-09-24, fase 0.C). DUPLICADO a propósito de

@@ -338,7 +338,7 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
   },
 
   // ── Free Tools ──
-  '/herramientas-gratuitas': {
+  '/herramientas-restaurante': {
     title: '8 Herramientas Gratuitas de IA para Restaurantes | AI Chef Pro',
     description: 'Herramientas gratuitas de IA para restaurantes: calculadora food cost, simulador de rentabilidad, detector alérgenos, generador de menú y más. Sin registro.',
     image: 'https://aichef.pro/og-image.jpg',
