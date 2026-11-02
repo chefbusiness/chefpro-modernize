@@ -2685,7 +2685,7 @@
   "toolHub": {
     "seo": {
       "title": "8 restaurant tools you can use today | AI Chef Pro",
-      "description": "Tools for your restaurant: food cost, allergens and profit. Demo with limits; all 8 full tools, with download and saving, are included in the Member plan (€10/month).",
+      "description": "Tools for your restaurant: food cost, allergens and profit. All 8 tools are included in the Member plan (€10/month).",
       "keywords": "restaurant tools, food cost calculator, allergen detector, 75+ ai agents, ai chef pro"
     },
     "breadcrumb": "Tools",
@@ -2694,7 +2694,7 @@
     "hero": {
       "badge": "Included in the Member plan",
       "h1": "8 Tools for Your Restaurant",
-      "subtitle": "Calculate your food cost, check allergens, simulate your profitability and more. Try the demo with limits; the Member plan (€10/month, 10k credits) includes all 8 full tools, with download and saving.",
+      "subtitle": "Calculate your food cost, check allergens, simulate your profitability and more. Try them here; all 8 tools are included in the Member plan (€10/month, 10k credits).",
       "tagline": "From the creators of AI Chef Pro — the AI suite for gastronomy"
     },
     "tools": [
@@ -2749,7 +2749,7 @@
     ],
     "why": {
       "title": "Included in your Member plan",
-      "body": "All 8 tools are included in the AI Chef Pro Member plan, from €10/month with 10k credits. Without a plan you can try a demo with limits, with no download or saving.",
+      "body": "All 8 tools are included in the AI Chef Pro Member plan, from €10/month with 10k credits.",
       "items": [
         "Included in the €10/month Member plan",
         "Instant results in your browser",
@@ -2768,7 +2768,7 @@
   "toolFoodCost": {
     "seo": {
       "title": "AI Food Cost Calculator for Restaurants | AI Chef Pro",
-      "description": "AI food cost calculator for restaurants. Add ingredients, weights and selling price — get instant food cost percentage with profitability analysis. Demo with limits; full version included in the Member plan (€10/month).",
+      "description": "AI food cost calculator for restaurants. Add ingredients, weights and selling price — get instant food cost percentage with profitability analysis. Included in the Member plan (€10/month).",
       "keywords": "ai food cost calculator, food cost calculator restaurant, food cost calculator, calculate food cost, food cost percentage, restaurant food cost, dish cost calculator"
     },
     "breadcrumb": "Food Cost Calculator",
@@ -2918,7 +2918,7 @@
   "toolRentabilidad": {
     "seo": {
       "title": "Restaurant Profit Simulator | AI Chef Pro",
-      "description": "Calculate if your restaurant is profitable: enter covers, average ticket and costs. Net profit and break-even point instantly. Demo with limits; full version included in the Member plan (€10/month).",
+      "description": "Calculate if your restaurant is profitable: enter covers, average ticket and costs. Net profit and break-even point instantly. Included in the Member plan (€10/month).",
       "keywords": "restaurant profit simulator, calculate restaurant profit, restaurant break-even, hospitality profitability"
     },
     "breadcrumb": "Profit Simulator",
@@ -3064,7 +3064,7 @@
   "toolScore": {
     "seo": {
       "title": "Restaurant Digitalization Test | AI Chef Pro",
-      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. Demo with limits; full version included in the Member plan (€10/month).",
+      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. Included in the Member plan (€10/month).",
       "keywords": "restaurant digitalization test, digital level restaurant, hospitality digitalization, digital tools restaurant"
     },
     "breadcrumb": "Digitalization Test",
@@ -3314,7 +3314,7 @@
   "toolAlergenos": {
     "seo": {
       "title": "Restaurant Allergen Checker | AI Chef Pro",
-      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Demo with limits; full version included in the Member plan (€10/month).",
+      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Included in the Member plan (€10/month).",
       "keywords": "allergen checker restaurant, mandatory allergens restaurant, allergen declaration dish, EU regulation 1169 2011"
     },
     "breadcrumb": "Allergen Checker",
@@ -3664,7 +3664,7 @@
   "toolBrigada": {
     "seo": {
       "title": "Kitchen Brigade Calculator | AI Chef Pro",
-      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. Demo with limits; full version included in the Member plan (€10/month). Based on real hospitality standards.",
+      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. Included in the Member plan (€10/month). Based on real hospitality standards.",
       "keywords": "kitchen brigade calculator, how many chefs do I need, restaurant staff, kitchen brigade"
     },
     "breadcrumb": "Brigade Calculator",
@@ -3824,7 +3824,7 @@
   "toolCalendario": {
     "seo": {
       "title": "Restaurant Content Calendar | AI Chef Pro",
-      "description": "Generate a 30-day editorial calendar for your restaurant. Post ideas for Instagram, TikTok and Facebook tailored to your type of business. Demo with limits; full version included in the Member plan (€10/month).",
+      "description": "Generate a 30-day editorial calendar for your restaurant. Post ideas for Instagram, TikTok and Facebook tailored to your type of business. Included in the Member plan (€10/month).",
       "keywords": "restaurant content calendar, restaurant post ideas, social media marketing restaurant, content calendar restaurant"
     },
     "breadcrumb": "Content Calendar",
@@ -3832,7 +3832,7 @@
     "hero": {
       "badge": "Demo · Included in the Member plan",
       "h1": "Content Calendar for Your Restaurant",
-      "subtitle": "Generate 30 days of post ideas for Instagram, TikTok and Facebook, tailored to your type of venue. No API. Demo with limits; full version included in the Member plan (€10/month).",
+      "subtitle": "Generate 30 days of post ideas for Instagram, TikTok and Facebook, tailored to your type of venue. No API. Included in the Member plan (€10/month).",
       "cta_tool": "Generate my calendar",
       "cta_premium": "Premium Plan →"
     },
@@ -4065,13 +4065,13 @@
   "toolMenuCopy": {
     "seo": {
       "title": "Restaurant Menu Copy Generator | AI Chef Pro",
-      "description": "Generate 3 menu descriptions for every dish: classic, emotional and local/km0. Demo with limits; full version included in the Member plan (€10/month). Improve your menu and attract more customers.",
+      "description": "Generate 3 menu descriptions for every dish: classic, emotional and local/km0. Included in the Member plan (€10/month). Improve your menu and attract more customers.",
       "keywords": "restaurant menu copy generator, menu description generator, dish description writer, menu copywriting tool"
     },
     "hero": {
       "badge": "Demo · Included in the Member plan",
       "h1": "Restaurant Menu Copy Generator",
-      "subtitle": "Enter the dish name and main ingredients to get 3 ready-to-use menu descriptions: classic, emotional and km0/local. No API. Demo with limits; full version included in the Member plan (€10/month).",
+      "subtitle": "Enter the dish name and main ingredients to get 3 ready-to-use menu descriptions: classic, emotional and km0/local. No API. Included in the Member plan (€10/month).",
       "cta_tool": "Generate menu copy",
       "cta_premium": "See Premium Plan →"
     },
@@ -4187,7 +4187,7 @@
   "toolDegustacion": {
     "seo": {
       "title": "Tasting Menu Generator | AI Chef Pro",
-      "description": "Create a complete tasting menu with AI: poetic name, sensory description, technique and wine pairing for each course. Demo with limits; full version included in the Member plan (€10/month).",
+      "description": "Create a complete tasting menu with AI: poetic name, sensory description, technique and wine pairing for each course. Included in the Member plan (€10/month).",
       "keywords": "tasting menu generator, ai tasting menu, create tasting menu restaurant, tasting menu"
     },
     "hero": {

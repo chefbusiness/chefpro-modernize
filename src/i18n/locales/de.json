@@ -2946,7 +2946,7 @@
   "toolHub": {
     "seo": {
       "title": "8 Tools für Ihr Restaurant | AI Chef Pro",
-      "description": "Tools für Ihr Restaurant: Food Cost, Allergene und Rentabilität. Demo mit Einschränkungen; alle 8 Tools in der Vollversion, mit Download und Speichern, sind in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "description": "Tools für Ihr Restaurant: Food Cost, Allergene und Rentabilität. Alle 8 Tools sind in der Mitgliedschaft (10 €/Monat) enthalten.",
       "keywords": "tools restaurant, food cost rechner, 75+ ki-agenten, ai chef pro"
     },
     "breadcrumb": "Tools",
@@ -2955,7 +2955,7 @@
     "hero": {
       "badge": "In der Mitgliedschaft enthalten",
       "h1": "8 Tools für Ihr Restaurant",
-      "subtitle": "Berechnen Sie Ihren Food Cost, prüfen Sie Allergene, simulieren Sie Ihre Rentabilität und mehr. Testen Sie die Demo mit Einschränkungen; die Mitgliedschaft (10 €/Monat, 10k Credits) enthält alle 8 Tools in der Vollversion, mit Download und Speichern.",
+      "subtitle": "Berechnen Sie Ihren Food Cost, prüfen Sie Allergene, simulieren Sie Ihre Rentabilität und mehr. Probieren Sie sie hier aus; alle 8 Tools sind in der Mitgliedschaft (10 €/Monat, 10k Credits) enthalten.",
       "tagline": "Von den Machern von AI Chef Pro — die KI-Suite für die Gastronomie"
     },
     "tools": [
@@ -3010,7 +3010,7 @@
     ],
     "why": {
       "title": "In Ihrer Mitgliedschaft enthalten",
-      "body": "Alle 8 Tools sind in der AI-Chef-Pro-Mitgliedschaft enthalten, ab 10 €/Monat mit 10k Credits. Ohne Mitgliedschaft können Sie eine Demo mit Einschränkungen testen, ohne Download und ohne Speichern.",
+      "body": "Alle 8 Tools sind in der AI-Chef-Pro-Mitgliedschaft enthalten, ab 10 €/Monat mit 10k Credits.",
       "items": [
         "In der Mitgliedschaft für 10 €/Monat enthalten",
         "Sofortige Ergebnisse in Ihrem Browser",
@@ -3029,7 +3029,7 @@
   "toolFoodCost": {
     "seo": {
       "title": "Restaurant Food Cost Rechner | AI Chef Pro",
-      "description": "Berechnen Sie den Food Cost Ihrer Gerichte: Zutaten, Mengen und Verkaufspreis. Sofortiges Ergebnis mit Rentabilitätsampel. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "description": "Berechnen Sie den Food Cost Ihrer Gerichte: Zutaten, Mengen und Verkaufspreis. Sofortiges Ergebnis mit Rentabilitätsampel. In der Mitgliedschaft (10 €/Monat) enthalten.",
       "keywords": "Food Cost Rechner Restaurant, Food Cost berechnen, Food Cost Prozentsatz, Gerichtkosten Restaurant"
     },
     "breadcrumb": "Food Cost Rechner",
@@ -3179,7 +3179,7 @@
   "toolRentabilidad": {
     "seo": {
       "title": "Restaurant Rentabilitätssimulator | AI Chef Pro",
-      "description": "Berechnen Sie, ob Ihr Restaurant rentabel ist: Gäste, Durchschnittsbon und Kosten eingeben. Nettogewinn und Break-Even sofort. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "description": "Berechnen Sie, ob Ihr Restaurant rentabel ist: Gäste, Durchschnittsbon und Kosten eingeben. Nettogewinn und Break-Even sofort. In der Mitgliedschaft (10 €/Monat) enthalten.",
       "keywords": "Rentabilitätssimulator Restaurant, Restaurant Gewinn berechnen, Break-Even Restaurant, Gastronomie Rentabilität"
     },
     "breadcrumb": "Rentabilitätssimulator",
@@ -3325,7 +3325,7 @@
   "toolScore": {
     "seo": {
       "title": "Digitalisierungstest Restaurant | AI Chef Pro",
-      "description": "Entdecken Sie in 2 Minuten den Digitalisierungsgrad Ihres Restaurants. 6 Fragen, sofortiges Ergebnis mit personalisiertem Aktionsplan. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "description": "Entdecken Sie in 2 Minuten den Digitalisierungsgrad Ihres Restaurants. 6 Fragen, sofortiges Ergebnis mit personalisiertem Aktionsplan. In der Mitgliedschaft (10 €/Monat) enthalten.",
       "keywords": "digitalisierungstest restaurant, digitales niveau restaurant, digitalisierung gastronomie, digitale werkzeuge restaurant"
     },
     "breadcrumb": "Digitalisierungstest",
@@ -3575,7 +3575,7 @@
   "toolAlergenos": {
     "seo": {
       "title": "Allergenkontrolle Restaurant | AI Chef Pro",
-      "description": "Erkennen Sie die 14 deklarationspflichtigen Allergene in jedem Gericht sofort. Geben Sie die Zutaten ein und erhalten Sie die Allergendeklaration. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "description": "Erkennen Sie die 14 deklarationspflichtigen Allergene in jedem Gericht sofort. Geben Sie die Zutaten ein und erhalten Sie die Allergendeklaration. In der Mitgliedschaft (10 €/Monat) enthalten.",
       "keywords": "allergenkontrolle restaurant, pflichtallergene restaurant, allergendeklaration gericht, verordnung 1169 2011"
     },
     "breadcrumb": "Allergendetektor",
@@ -3952,7 +3952,7 @@
   "toolBrigada": {
     "seo": {
       "title": "Brigaderechner Küche | AI Chef Pro",
-      "description": "Berechnen Sie, wie viele Mitarbeiter Sie in Küche und Service benötigen. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten. Basierend auf echten Gastronomiestandards.",
+      "description": "Berechnen Sie, wie viele Mitarbeiter Sie in Küche und Service benötigen. In der Mitgliedschaft (10 €/Monat) enthalten. Basierend auf echten Gastronomiestandards.",
       "keywords": "brigaderechner küche, wie viele köche brauche ich, personal restaurant, brigade gastronomie"
     },
     "breadcrumb": "Brigaderechner",
@@ -4112,7 +4112,7 @@
   "toolCalendario": {
     "seo": {
       "title": "Content-Kalender Restaurant | AI Chef Pro",
-      "description": "Erstellen Sie einen 30-Tage-Redaktionskalender für Ihr Restaurant. Post-Ideen für Instagram, TikTok und Facebook, angepasst an Ihren Betrieb. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "description": "Erstellen Sie einen 30-Tage-Redaktionskalender für Ihr Restaurant. Post-Ideen für Instagram, TikTok und Facebook, angepasst an Ihren Betrieb. In der Mitgliedschaft (10 €/Monat) enthalten.",
       "keywords": "content kalender restaurant, post ideen restaurant, social media marketing gastronomie, redaktionskalender"
     },
     "breadcrumb": "Content-Kalender",
@@ -4120,7 +4120,7 @@
     "hero": {
       "badge": "Demo · In der Mitgliedschaft enthalten",
       "h1": "Content-Kalender für Ihr Restaurant",
-      "subtitle": "Erstellen Sie 30 Tage Post-Ideen für Instagram, TikTok und Facebook, angepasst an Ihre Betriebsart. Ohne API. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "subtitle": "Erstellen Sie 30 Tage Post-Ideen für Instagram, TikTok und Facebook, angepasst an Ihre Betriebsart. Ohne API. In der Mitgliedschaft (10 €/Monat) enthalten.",
       "cta_tool": "Kalender erstellen",
       "cta_premium": "Premium-Plan →"
     },
@@ -4353,13 +4353,13 @@
   "toolMenuCopy": {
     "seo": {
       "title": "Speisekarten-Text-Generator | AI Chef Pro",
-      "description": "Generieren Sie 3 Beschreibungen für jedes Gericht: klassisch, emotional und km0/lokal. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten. Verbessern Sie Ihre Speisekarte.",
+      "description": "Generieren Sie 3 Beschreibungen für jedes Gericht: klassisch, emotional und km0/lokal. In der Mitgliedschaft (10 €/Monat) enthalten. Verbessern Sie Ihre Speisekarte.",
       "keywords": "Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen"
     },
     "hero": {
       "badge": "Demo · In der Mitgliedschaft enthalten",
       "h1": "Speisekarten-Text-Generator",
-      "subtitle": "Geben Sie Gerichtsname und Zutaten ein und erhalten Sie 3 fertige Beschreibungen: klassisch, emotional und km0/lokal. Ohne API. Demo mit Einschränkungen; Vollversion in der Mitgliedschaft (10 €/Monat) enthalten.",
+      "subtitle": "Geben Sie Gerichtsname und Zutaten ein und erhalten Sie 3 fertige Beschreibungen: klassisch, emotional und km0/lokal. Ohne API. In der Mitgliedschaft (10 €/Monat) enthalten.",
       "cta_tool": "Speisekartentexte generieren",
       "cta_premium": "Premium-Plan →"
     },

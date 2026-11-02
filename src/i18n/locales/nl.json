@@ -2928,7 +2928,7 @@
   "toolHub": {
     "seo": {
       "title": "8 tools voor uw restaurant, direct | AI Chef Pro",
-      "description": "Tools voor uw restaurant: foodcost, allergenen en winst. Demo met beperkingen; alle 8 tools in de volledige versie, met download en opslaan, zijn inbegrepen in het Lid-abonnement (10 €/maand).",
+      "description": "Tools voor uw restaurant: foodcost, allergenen en winst. Alle 8 tools zijn inbegrepen in het Lid-abonnement (10 €/maand).",
       "keywords": "tools restaurant, foodcost calculator, 75+ ai-agenten, ai chef pro"
     },
     "breadcrumb": "Tools",
@@ -2937,7 +2937,7 @@
     "hero": {
       "badge": "Inbegrepen in het Lid-abonnement",
       "h1": "8 Tools voor uw Restaurant",
-      "subtitle": "Bereken uw food cost, controleer allergenen, simuleer uw winstgevendheid en meer. Probeer de demo met beperkingen; met het Lid-abonnement (10 €/maand, 10k credits) krijgt u alle 8 tools in de volledige versie, met download en opslaan.",
+      "subtitle": "Bereken uw food cost, controleer allergenen, simuleer uw winstgevendheid en meer. Probeer ze hier uit; alle 8 tools zijn inbegrepen in het Lid-abonnement (10 €/maand, 10k credits).",
       "tagline": "Van de makers van AI Chef Pro — de AI-suite voor gastronomie"
     },
     "tools": [
@@ -2992,7 +2992,7 @@
     ],
     "why": {
       "title": "Inbegrepen in uw Lid-abonnement",
-      "body": "Alle 8 tools zijn inbegrepen in het AI Chef Pro Lid-abonnement, vanaf 10 €/maand met 10k credits. Zonder abonnement kunt u een demo met beperkingen proberen, zonder download en zonder opslaan.",
+      "body": "Alle 8 tools zijn inbegrepen in het AI Chef Pro Lid-abonnement, vanaf 10 €/maand met 10k credits.",
       "items": [
         "Inbegrepen in het Lid-abonnement van 10 €/maand",
         "Directe resultaten in uw browser",
@@ -3011,7 +3011,7 @@
   "toolFoodCost": {
     "seo": {
       "title": "Restaurant Food Cost Calculator | AI Chef Pro",
-      "description": "Bereken de food cost van uw gerechten: ingrediënten, gewichten en verkoopprijs. Direct resultaat met winstgevendheids-stoplicht. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "description": "Bereken de food cost van uw gerechten: ingrediënten, gewichten en verkoopprijs. Direct resultaat met winstgevendheids-stoplicht. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "keywords": "food cost calculator restaurant, food cost berekenen, food cost percentage, gerecht kosten restaurant"
     },
     "breadcrumb": "Food Cost Calculator",
@@ -3161,7 +3161,7 @@
   "toolRentabilidad": {
     "seo": {
       "title": "Restaurant Winstgevendheids-simulator | AI Chef Pro",
-      "description": "Bereken of uw restaurant winstgevend is: voer couverts, gemiddeld besteding en kosten in. Nettowinst en break-even direct. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "description": "Bereken of uw restaurant winstgevend is: voer couverts, gemiddeld besteding en kosten in. Nettowinst en break-even direct. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "keywords": "winstgevendheids-simulator restaurant, restaurant winst berekenen, break-even restaurant, horeca winstgevendheid"
     },
     "breadcrumb": "Winstgevendheids-simulator",
@@ -3307,7 +3307,7 @@
   "toolScore": {
     "seo": {
       "title": "Digitaliseringstest Restaurant | AI Chef Pro",
-      "description": "Ontdek in 2 minuten het digitaliseringsniveau van uw restaurant. 6 vragen, direct resultaat met gepersonaliseerd actieplan. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "description": "Ontdek in 2 minuten het digitaliseringsniveau van uw restaurant. 6 vragen, direct resultaat met gepersonaliseerd actieplan. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "keywords": "digitaliseringstest restaurant, digitaal niveau restaurant, digitalisering horeca, digitale tools restaurant"
     },
     "breadcrumb": "Digitaliseringstest",
@@ -3557,7 +3557,7 @@
   "toolAlergenos": {
     "seo": {
       "title": "Allergenendetector Restaurant | AI Chef Pro",
-      "description": "Detecteer de 14 verplicht te vermelden allergenen in elk gerecht direct. Voer de ingrediënten in en krijg de allergenendeclaratie. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "description": "Detecteer de 14 verplicht te vermelden allergenen in elk gerecht direct. Voer de ingrediënten in en krijg de allergenendeclaratie. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "keywords": "allergenendetector restaurant, verplichte allergenen restaurant, allergenendeclaratie gerecht, verordening 1169 2011"
     },
     "breadcrumb": "Allergenendetector",
@@ -3931,7 +3931,7 @@
   "toolBrigada": {
     "seo": {
       "title": "Keukenteamcalculator | AI Chef Pro",
-      "description": "Bereken hoeveel medewerkers u nodig heeft in de keuken en de zaal op basis van uw servicevolume. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand). Gebaseerd op echte horecastandaarden.",
+      "description": "Bereken hoeveel medewerkers u nodig heeft in de keuken en de zaal op basis van uw servicevolume. Inbegrepen in het Lid-abonnement (10 €/maand). Gebaseerd op echte horecastandaarden.",
       "keywords": "keukenteamcalculator, hoeveel koks heb ik nodig, personeel restaurant, keukenteam horeca"
     },
     "breadcrumb": "Keukenteamcalculator",
@@ -4091,7 +4091,7 @@
   "toolCalendario": {
     "seo": {
       "title": "Content Kalender Restaurant | AI Chef Pro",
-      "description": "Genereer een 30-daagse redactionele kalender voor uw restaurant. Post-ideeën voor Instagram, TikTok en Facebook afgestemd op uw type horecabedrijf. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "description": "Genereer een 30-daagse redactionele kalender voor uw restaurant. Post-ideeën voor Instagram, TikTok en Facebook afgestemd op uw type horecabedrijf. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "keywords": "content kalender restaurant, post ideen restaurant, social media marketing horeca, redactionele kalender"
     },
     "breadcrumb": "Content Kalender",
@@ -4099,7 +4099,7 @@
     "hero": {
       "badge": "Demo · Inbegrepen in het Lid-abonnement",
       "h1": "Content Kalender voor Uw Restaurant",
-      "subtitle": "Genereer 30 dagen post-ideeën voor Instagram, TikTok en Facebook, afgestemd op uw type horecabedrijf. Zonder API. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "subtitle": "Genereer 30 dagen post-ideeën voor Instagram, TikTok en Facebook, afgestemd op uw type horecabedrijf. Zonder API. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "cta_tool": "Mijn kalender genereren",
       "cta_premium": "Premium Plan →"
     },
@@ -4332,13 +4332,13 @@
   "toolMenuCopy": {
     "seo": {
       "title": "Menukaart Tekst Generator | AI Chef Pro",
-      "description": "Genereer 3 beschrijvingen voor elk gerecht: klassiek, emotioneel en km0/lokaal. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand). Verbeter uw menukaart en trek meer klanten aan.",
+      "description": "Genereer 3 beschrijvingen voor elk gerecht: klassiek, emotioneel en km0/lokaal. Inbegrepen in het Lid-abonnement (10 €/maand). Verbeter uw menukaart en trek meer klanten aan.",
       "keywords": "menukaart tekst generator, gerecht beschrijving restaurant, menu copywriting"
     },
     "hero": {
       "badge": "Demo · Inbegrepen in het Lid-abonnement",
       "h1": "Menukaart Tekst Generator",
-      "subtitle": "Voer de naam van het gerecht en ingrediënten in en ontvang 3 kant-en-klare beschrijvingen: klassiek, emotioneel en km0/lokaal. Zonder API. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "subtitle": "Voer de naam van het gerecht en ingrediënten in en ontvang 3 kant-en-klare beschrijvingen: klassiek, emotioneel en km0/lokaal. Zonder API. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "cta_tool": "Menukaart teksten genereren",
       "cta_premium": "Premium Plan →"
     },
@@ -4458,7 +4458,7 @@
   "toolDegustacion": {
     "seo": {
       "title": "Proefmenu Generator | AI Chef Pro",
-      "description": "Maak een compleet proefmenu met AI: poëtische naam, sensorische beschrijving, techniek en wijnadvies voor elk gerecht. Demo met beperkingen; volledige versie inbegrepen in het Lid-abonnement (10 €/maand).",
+      "description": "Maak een compleet proefmenu met AI: poëtische naam, sensorische beschrijving, techniek en wijnadvies voor elk gerecht. Inbegrepen in het Lid-abonnement (10 €/maand).",
       "keywords": "proefmenu generator, proefmenu ai, proefmenu maken restaurant, proefmenu"
     },
     "hero": {

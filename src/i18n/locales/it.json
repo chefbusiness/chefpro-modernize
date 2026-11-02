@@ -2950,7 +2950,7 @@
   "toolHub": {
     "seo": {
       "title": "8 strumenti per il tuo ristorante | AI Chef Pro",
-      "description": "Strumenti per il tuo ristorante: food cost, allergeni e redditività. Demo con limiti; gli 8 strumenti completi, con download e salvataggio, sono inclusi nel piano Membro (10 €/mese).",
+      "description": "Strumenti per il tuo ristorante: food cost, allergeni e redditività. Tutti e 8 gli strumenti sono inclusi nel piano Membro (10 €/mese).",
       "keywords": "strumenti ristorante, calcolatore food cost, 75+ agenti ia, ai chef pro"
     },
     "breadcrumb": "Strumenti",
@@ -2959,7 +2959,7 @@
     "hero": {
       "badge": "Inclusi nel piano Membro",
       "h1": "8 Strumenti per il tuo Ristorante",
-      "subtitle": "Calcola il tuo food cost, verifica gli allergeni, simula la tua redditività e altro. Prova la demo con limiti; con il piano Membro (10 €/mese, 10k crediti) hai tutti e 8 gli strumenti completi, con download e salvataggio.",
+      "subtitle": "Calcola il tuo food cost, verifica gli allergeni, simula la tua redditività e altro. Provali qui; tutti e 8 gli strumenti sono inclusi nel piano Membro (10 €/mese, 10k crediti).",
       "tagline": "Dai creatori di AI Chef Pro — la suite IA per la gastronomia"
     },
     "tools": [
@@ -3014,7 +3014,7 @@
     ],
     "why": {
       "title": "Inclusi nel tuo piano Membro",
-      "body": "Gli 8 strumenti sono inclusi nel piano Membro di AI Chef Pro, da 10 €/mese con 10k crediti. Senza piano puoi provare una demo con limiti, senza download né salvataggio.",
+      "body": "Gli 8 strumenti sono inclusi nel piano Membro di AI Chef Pro, da 10 €/mese con 10k crediti.",
       "items": [
         "Inclusi nel piano Membro da 10 €/mese",
         "Risultati istantanei nel tuo browser",
@@ -3033,7 +3033,7 @@
   "toolFoodCost": {
     "seo": {
       "title": "Calcolatore Food Cost Ristorante | AI Chef Pro",
-      "description": "Calcola il food cost dei tuoi piatti: ingredienti, grammi e prezzo di vendita. Risultato istantaneo con semaforo di redditività. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "description": "Calcola il food cost dei tuoi piatti: ingredienti, grammi e prezzo di vendita. Risultato istantaneo con semaforo di redditività. Inclusa nel piano Membro (10 €/mese).",
       "keywords": "calcolatore food cost ristorante, calcolare food cost, food cost percentuale, costo piatto ristorante"
     },
     "breadcrumb": "Calcolatore Food Cost",
@@ -3183,7 +3183,7 @@
   "toolRentabilidad": {
     "seo": {
       "title": "Simulatore Redditività Ristorante | AI Chef Pro",
-      "description": "Calcola se il tuo ristorante è redditizio: inserisci coperti, scontrino medio e costi. Utile netto e punto di pareggio all'istante. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "description": "Calcola se il tuo ristorante è redditizio: inserisci coperti, scontrino medio e costi. Utile netto e punto di pareggio all'istante. Inclusa nel piano Membro (10 €/mese).",
       "keywords": "simulatore redditività ristorante, calcolare utile ristorante, punto di pareggio ristorante, redditività ristorazione"
     },
     "breadcrumb": "Simulatore di Redditività",
@@ -3329,7 +3329,7 @@
   "toolScore": {
     "seo": {
       "title": "Test Digitalizzazione Ristorante | AI Chef Pro",
-      "description": "Scopri in 2 minuti il livello di digitalizzazione del tuo ristorante. 6 domande, risultato immediato con piano d'azione personalizzato. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "description": "Scopri in 2 minuti il livello di digitalizzazione del tuo ristorante. 6 domande, risultato immediato con piano d'azione personalizzato. Inclusa nel piano Membro (10 €/mese).",
       "keywords": "test digitalizzazione ristorante, livello digitale ristorante, digitalizzazione ristorazione, strumenti digitali ristorante"
     },
     "breadcrumb": "Test di Digitalizzazione",
@@ -3579,7 +3579,7 @@
   "toolAlergenos": {
     "seo": {
       "title": "Rilevatore Allergeni Ristorante | AI Chef Pro",
-      "description": "Rileva i 14 allergeni a dichiarazione obbligatoria in qualsiasi piatto all'istante. Inserisci gli ingredienti e ottieni la scheda allergeni. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "description": "Rileva i 14 allergeni a dichiarazione obbligatoria in qualsiasi piatto all'istante. Inserisci gli ingredienti e ottieni la scheda allergeni. Inclusa nel piano Membro (10 €/mese).",
       "keywords": "rilevatore allergeni ristorante, allergeni obbligatori ristorante, scheda allergeni piatto, regolamento 1169 2011"
     },
     "breadcrumb": "Rilevatore Allergeni",
@@ -3953,7 +3953,7 @@
   "toolBrigada": {
     "seo": {
       "title": "Calcolatore Brigata Cucina | AI Chef Pro",
-      "description": "Calcola quanti dipendenti hai bisogno in cucina e in sala in base al tuo volume di servizio. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese). Basato su standard reali della ristorazione.",
+      "description": "Calcola quanti dipendenti hai bisogno in cucina e in sala in base al tuo volume di servizio. Inclusa nel piano Membro (10 €/mese). Basato su standard reali della ristorazione.",
       "keywords": "calcolatore brigata cucina, quanti cuochi mi servono, personale ristorante, brigata ristorazione"
     },
     "breadcrumb": "Calcolatore Brigata",
@@ -4113,7 +4113,7 @@
   "toolCalendario": {
     "seo": {
       "title": "Calendario Contenuti Ristorante | AI Chef Pro",
-      "description": "Genera un calendario editoriale di 30 giorni per il tuo ristorante. Idee post per Instagram, TikTok e Facebook personalizzate per il tuo locale. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "description": "Genera un calendario editoriale di 30 giorni per il tuo ristorante. Idee post per Instagram, TikTok e Facebook personalizzate per il tuo locale. Inclusa nel piano Membro (10 €/mese).",
       "keywords": "calendario contenuti ristorante, idee post ristorante, marketing social media ristorazione, calendario editoriale"
     },
     "breadcrumb": "Calendario Contenuti",
@@ -4121,7 +4121,7 @@
     "hero": {
       "badge": "Demo · Incluso nel piano Membro",
       "h1": "Calendario di Contenuti per il Tuo Ristorante",
-      "subtitle": "Genera 30 giorni di idee di post per Instagram, TikTok e Facebook, adattate al tuo tipo di locale. Senza API. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "subtitle": "Genera 30 giorni di idee di post per Instagram, TikTok e Facebook, adattate al tuo tipo di locale. Senza API. Inclusa nel piano Membro (10 €/mese).",
       "cta_tool": "Genera il mio calendario",
       "cta_premium": "Piano Premium →"
     },
@@ -4354,13 +4354,13 @@
   "toolMenuCopy": {
     "seo": {
       "title": "Generatore Testi Menu Ristorante | AI Chef Pro",
-      "description": "Genera 3 descrizioni per ogni piatto del tuo menu: classica, emotiva e km0/locale. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese). Migliora il tuo menu e attrai più clienti.",
+      "description": "Genera 3 descrizioni per ogni piatto del tuo menu: classica, emotiva e km0/locale. Inclusa nel piano Membro (10 €/mese). Migliora il tuo menu e attrai più clienti.",
       "keywords": "generatore testi menu ristorante, descrizione piatti ristorante, copywriting gastronomico"
     },
     "hero": {
       "badge": "Demo · Incluso nel piano Membro",
       "h1": "Generatore di Testi per il tuo Menu",
-      "subtitle": "Inserisci il nome del piatto e gli ingredienti e ottieni 3 descrizioni pronte per il tuo menu: classica, emotiva e km0/locale. Senza API. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "subtitle": "Inserisci il nome del piatto e gli ingredienti e ottieni 3 descrizioni pronte per il tuo menu: classica, emotiva e km0/locale. Senza API. Inclusa nel piano Membro (10 €/mese).",
       "cta_tool": "Genera testi per il mio menu",
       "cta_premium": "Piano Premium →"
     },
@@ -4480,7 +4480,7 @@
   "toolDegustacion": {
     "seo": {
       "title": "Generatore Menu Degustazione | AI Chef Pro",
-      "description": "Crea un menu degustazione completo con l'IA: nome poetico, descrizione sensoriale, tecnica e abbinamento vino per ogni portata. Demo con limiti; versione completa inclusa nel piano Membro (10 €/mese).",
+      "description": "Crea un menu degustazione completo con l'IA: nome poetico, descrizione sensoriale, tecnica e abbinamento vino per ogni portata. Inclusa nel piano Membro (10 €/mese).",
       "keywords": "generatore menu degustazione, menu degustazione ia, creare menu degustazione ristorante, menu degustazione"
     },
     "hero": {

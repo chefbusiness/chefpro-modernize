@@ -813,7 +813,7 @@ const MentoriaOnline = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   variant="outline" 
-                  onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/micro-sesion-15-min', '_blank')}
+                  onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/micro-sesion-gratuita-15-min', '_blank')}
                 >
                   {currentLanguage === 'es' ? 'Reservar micro-sesión (29 €)' : t('mentoriaOnline.sections.free_consultation.button1')}
                 </Button>
