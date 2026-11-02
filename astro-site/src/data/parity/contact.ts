@@ -72,7 +72,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
     ],
     blocks: [],
-    ctaTitle: 'Try the suite while you decide',
+    ctaTitle: 'See the platform while you decide',
     ctaBody:
       'The Member plan is €10 per month with 10,000 credits. The English pricing page includes the 75+ agents. Cancel any time.',
     ctaPrimary: 'Email info@aichef.pro',
@@ -146,7 +146,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
     ],
     blocks: [],
-    ctaTitle: 'Essayez la suite avant de trancher',
+    ctaTitle: 'Découvrez la plateforme avant de trancher',
     ctaBody:
       'Le forfait Membre est à 10 € par mois, avec 10 000 crédits. La page tarifs en français indique aujourd’hui 75+ agents. Vous résiliez quand vous voulez.',
     ctaPrimary: 'Écrire à info@aichef.pro',
@@ -220,7 +220,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
     ],
     blocks: [],
-    ctaTitle: 'Testen Sie die Suite, bevor Sie entscheiden',
+    ctaTitle: 'Sehen Sie sich die Plattform an, bevor Sie entscheiden',
     ctaBody:
       'Der Mitgliedsplan kostet 10 € im Monat mit 10.000 Credits. Die deutsche Preisseite nennt heute 75+ Agenten. Sie kündigen, wann Sie wollen.',
     ctaPrimary: 'E-Mail an info@aichef.pro',
@@ -294,7 +294,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
     ],
     blocks: [],
-    ctaTitle: 'Prova la suite mentre decidi',
+    ctaTitle: 'Scopri la piattaforma mentre decidi',
     ctaBody:
       'Il piano Membro costa 10 € al mese, con 10.000 crediti. La pagina prezzi in italiano indica oggi 75+ agenti. Disdici quando vuoi.',
     ctaPrimary: 'Scrivi a info@aichef.pro',
@@ -368,7 +368,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
     ],
     blocks: [],
-    ctaTitle: 'Experimenta a suite enquanto decides',
+    ctaTitle: 'Vê a plataforma enquanto decides',
     ctaBody:
       'O plano Membro custa 10 € por mês, com 10.000 créditos. A página de preços em português indica hoje 75+ agentes. Cancelas quando quiseres.',
     ctaPrimary: 'Escrever para info@aichef.pro',
@@ -442,7 +442,7 @@ export const CONTACT: Record<ParityLang, PageCopy> = {
       },
     ],
     blocks: [],
-    ctaTitle: 'Probeer de suite terwijl je nadenkt',
+    ctaTitle: 'Bekijk het platform terwijl je nadenkt',
     ctaBody:
       'Het Lid-abonnement kost € 10 per maand, met 10.000 credits. De Nederlandse prijspagina noemt vandaag 75+ agenten. Je zegt op wanneer je wilt.',
     ctaPrimary: 'Mail info@aichef.pro',

@@ -294,9 +294,9 @@
         "button": "Pläne ansehen und jetzt buchen"
       },
       "free_consultation": {
-        "title": "🎁 Kostenlose Mikro-Session",
-        "description": "Nicht sicher, welcher Plan für Sie richtig ist? Buchen Sie eine kostenlose 30-minütige Beratung.",
-        "button1": "Kostenlose Beratung buchen",
+        "title": "🎁 Mikro-Session",
+        "description": "Nicht sicher, welcher Plan für Sie richtig ist? Buchen Sie eine 30-minütige Beratung.",
+        "button1": "Beratung buchen",
         "button2": "Jetzt kontaktieren"
       }
     }
@@ -1233,7 +1233,7 @@
     "nav_recetas": "KI-Rezepte",
     "nav_escandallos": "Food-Cost-Rechner KI",
     "nav_ai_tools": "KI-Agenten",
-    "nav_free_tools": "Kostenlose Tools",
+    "nav_free_tools": "Tools",
     "contact_title": "Kontakt",
     "plans_button": "Pläne Ansehen",
     "try_free_button": "Testen AI Chef Pro",
@@ -1257,7 +1257,7 @@
     "roadmap": "AI Chef Pro Roadmap",
     "app_tools": "75+ KI-Agenten",
     "app_login": "Anmelden",
-    "free_tools_hub": "Kostenlose Tools",
+    "free_tools_hub": "Tools",
     "mentoria_online": "Online-Mentoring",
     "formacion_presencial": "Präsenztraining",
     "planes_precios": "Pläne & Preise",
@@ -1474,8 +1474,8 @@
     "mentoria_hero": "Personalisierte Online-Mentoring-Sitzung mit AI Chef Pro für Gastronomie-Profis"
   },
   "announcement_bar": {
-    "text": "8 kostenlose Tools für dein Restaurant – ohne Registrierung",
-    "text_short": "8 kostenlose Tools, ohne Registrierung",
+    "text": "8 Tools für dein Restaurant – ohne Registrierung",
+    "text_short": "8 Tools, ohne Registrierung",
     "cta": "Jetzt ausprobieren"
   },
   "landingCostes": {
@@ -2945,17 +2945,17 @@
   },
   "toolHub": {
     "seo": {
-      "title": "8 kostenlose Tools für Ihr Restaurant | AI Chef Pro",
-      "description": "Kostenlose Tools für Ihr Restaurant: Food Cost, Allergene und Rentabilität, ohne Anmeldung. Die kostenpflichtige Suite hat 75+ KI-Agenten. Testen Sie sie heute.",
-      "keywords": "kostenlose tools restaurant, food cost rechner gratis, 75+ ki-agenten, ai chef pro"
+      "title": "8 Tools für Ihr Restaurant | AI Chef Pro",
+      "description": "Tools für Ihr Restaurant: Food Cost, Allergene und Rentabilität, ohne Anmeldung. Die kostenpflichtige Suite hat 75+ KI-Agenten. Testen Sie sie heute.",
+      "keywords": "tools restaurant, food cost rechner, 75+ ki-agenten, ai chef pro"
     },
-    "breadcrumb": "Kostenlose Tools",
-    "other_tools_title": "Weitere kostenlose Tools",
+    "breadcrumb": "Tools",
+    "other_tools_title": "Weitere Tools",
     "see_all_tools": "Alle Tools ansehen",
     "hero": {
-      "badge": "100% Kostenlos — Keine Anmeldung",
-      "h1": "8 Kostenlose Tools für Ihr Restaurant",
-      "subtitle": "Berechnen Sie Ihren Food Cost, prüfen Sie Allergene, simulieren Sie Ihre Rentabilität und mehr. Ohne Anmeldung, kostenlos, ohne Limits.",
+      "badge": "Keine Anmeldung",
+      "h1": "8 Tools für Ihr Restaurant",
+      "subtitle": "Berechnen Sie Ihren Food Cost, prüfen Sie Allergene, simulieren Sie Ihre Rentabilität und mehr. Ohne Anmeldung,, ohne Limits.",
       "tagline": "Von den Machern von AI Chef Pro — die KI-Suite für die Gastronomie"
     },
     "tools": [
@@ -3009,7 +3009,7 @@
       }
     ],
     "why": {
-      "title": "Warum sind sie kostenlos?",
+      "title": "Warum gibt es diese Tools?",
       "body": "Wir glauben, dass jedes Restaurant, unabhängig von seiner Größe, Zugang zu professionellen Tools verdient.",
       "items": [
         "Keine Anmeldung oder Kreditkarte erforderlich",
@@ -3028,13 +3028,13 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "Kostenloser Restaurant Food Cost Rechner | AI Chef Pro",
-      "description": "Berechnen Sie den Food Cost Ihrer Gerichte kostenlos: Zutaten, Mengen und Verkaufspreis. Sofortiges Ergebnis mit Rentabilitätsampel. Ohne Anmeldung.",
-      "keywords": "Food Cost Rechner Restaurant, Food Cost kostenlos berechnen, Food Cost Prozentsatz, Gerichtkosten Restaurant"
+      "title": "Restaurant Food Cost Rechner | AI Chef Pro",
+      "description": "Berechnen Sie den Food Cost Ihrer Gerichte: Zutaten, Mengen und Verkaufspreis. Sofortiges Ergebnis mit Rentabilitätsampel. Ohne Anmeldung.",
+      "keywords": "Food Cost Rechner Restaurant, Food Cost berechnen, Food Cost Prozentsatz, Gerichtkosten Restaurant"
     },
     "breadcrumb": "Food Cost Rechner",
     "hero": {
-      "badge": "Kostenlos — Keine Anmeldung",
+      "badge": "Keine Anmeldung",
       "h1": "Food Cost Rechner für Restaurants",
       "subtitle": "Berechnen Sie den Food Cost-Prozentsatz jedes Gerichts in Sekunden. Fügen Sie Zutaten, Mengen und Verkaufspreis hinzu.",
       "cta_tool": "Zum Rechner ↓",
@@ -3120,7 +3120,7 @@
     },
     "pricing": {
       "title": "Mehr Leistung mit AI Chef Pro",
-      "subtitle": "Der kostenlose Rechner ist nur eine Probe. Mit AI Chef Pro berechnen Sie Ihre gesamte Speisekarte mit Abfallkontrolle.",
+      "subtitle": "Der Rechner ist nur eine Probe. Mit AI Chef Pro berechnen Sie Ihre gesamte Speisekarte mit Abfallkontrolle.",
       "plans": [
         {
           "name": "Mitglied",
@@ -3162,7 +3162,7 @@
       },
       {
         "question": "Beinhaltet dieser Rechner Abfälle?",
-        "answer": "Diese kostenlose Version arbeitet mit den Nettogewichten, die Sie eingeben. Für automatische Abfallberechnung nutzen Sie das Kalkulations-Tool von AI Chef Pro Premium."
+        "answer": "Diese Version arbeitet mit den Nettogewichten, die Sie eingeben. Für automatische Abfallberechnung nutzen Sie das Kalkulations-Tool von AI Chef Pro Premium."
       },
       {
         "question": "Wie verbessert man einen hohen Food Cost?",
@@ -3178,13 +3178,13 @@
   },
   "toolRentabilidad": {
     "seo": {
-      "title": "Kostenloser Restaurant Rentabilitätssimulator | AI Chef Pro",
-      "description": "Berechnen Sie, ob Ihr Restaurant rentabel ist: Gäste, Durchschnittsbon und Kosten eingeben. Nettogewinn und Break-Even sofort. Kostenlos, ohne Anmeldung.",
-      "keywords": "Rentabilitätssimulator Restaurant, Restaurant Gewinn berechnen, Break-Even Restaurant, Gastronomie Rentabilität kostenlos"
+      "title": "Restaurant Rentabilitätssimulator | AI Chef Pro",
+      "description": "Berechnen Sie, ob Ihr Restaurant rentabel ist: Gäste, Durchschnittsbon und Kosten eingeben. Nettogewinn und Break-Even sofort. Ohne Anmeldung.",
+      "keywords": "Rentabilitätssimulator Restaurant, Restaurant Gewinn berechnen, Break-Even Restaurant, Gastronomie Rentabilität"
     },
     "breadcrumb": "Rentabilitätssimulator",
     "hero": {
-      "badge": "Kostenlos — Keine Anmeldung",
+      "badge": "Keine Anmeldung",
       "h1": "Rentabilitätssimulator für Restaurants",
       "subtitle": "Berechnen Sie, ob Ihr Restaurant echte Gewinne erzielt. Geben Sie Ihre Daten ein und erhalten Sie Ihren monatlichen Gewinn und Break-Even.",
       "cta_tool": "Zum Simulator ↓",
@@ -3266,7 +3266,7 @@
     },
     "pricing": {
       "title": "Vollständige Finanzanalyse mit AI Chef Pro",
-      "subtitle": "Der einfache Simulator ist kostenlos. Mit AI Chef Pro erhalten Sie Gerichte-Analysen, Jahresprognosen und Kostenabweichungsalarme.",
+      "subtitle": "Der einfache Simulator ist ein Ausgangspunkt. Mit AI Chef Pro erhalten Sie Gerichte-Analysen, Jahresprognosen und Kostenabweichungsalarme.",
       "plans": [
         {
           "name": "Mitglied",
@@ -3324,13 +3324,13 @@
   },
   "toolScore": {
     "seo": {
-      "title": "Digitalisierungstest Restaurant Kostenlos | AI Chef Pro",
-      "description": "Entdecken Sie in 2 Minuten den Digitalisierungsgrad Ihres Restaurants. 6 Fragen, sofortiges Ergebnis mit personalisiertem Aktionsplan. Kostenlos, ohne Registrierung.",
+      "title": "Digitalisierungstest Restaurant | AI Chef Pro",
+      "description": "Entdecken Sie in 2 Minuten den Digitalisierungsgrad Ihres Restaurants. 6 Fragen, sofortiges Ergebnis mit personalisiertem Aktionsplan. Ohne Registrierung.",
       "keywords": "digitalisierungstest restaurant, digitales niveau restaurant, digitalisierung gastronomie, digitale werkzeuge restaurant"
     },
     "breadcrumb": "Digitalisierungstest",
     "hero": {
-      "badge": "Kostenlos — Keine Registrierung — 2 Minuten",
+      "badge": "Keine Registrierung — 2 Minuten",
       "h1": "Digitalisierungstest für Restaurants",
       "subtitle": "Wie digital ist Ihr Restaurant? Beantworten Sie 6 Fragen und erhalten Sie Ihr digitales Niveau mit einem personalisierten Aktionsplan.",
       "cta_tool": "Test machen ↓",
@@ -3574,13 +3574,13 @@
   },
   "toolAlergenos": {
     "seo": {
-      "title": "Allergenkontrolle Restaurant Kostenlos | AI Chef Pro",
-      "description": "Erkennen Sie die 14 deklarationspflichtigen Allergene in jedem Gericht sofort. Geben Sie die Zutaten ein und erhalten Sie die Allergendeklaration. Kostenlos, ohne Registrierung.",
+      "title": "Allergenkontrolle Restaurant | AI Chef Pro",
+      "description": "Erkennen Sie die 14 deklarationspflichtigen Allergene in jedem Gericht sofort. Geben Sie die Zutaten ein und erhalten Sie die Allergendeklaration. Ohne Registrierung.",
       "keywords": "allergenkontrolle restaurant, pflichtallergene restaurant, allergendeklaration gericht, verordnung 1169 2011"
     },
     "breadcrumb": "Allergendetektor",
     "hero": {
-      "badge": "Kostenlos — Keine Registrierung — Gesetzlich vorgeschrieben",
+      "badge": "Keine Registrierung — Gesetzlich vorgeschrieben",
       "h1": "Allergendetektor für Restaurants",
       "subtitle": "Identifizieren Sie die 14 deklarationspflichtigen Allergene (EU-Verordnung 1169/2011) in jedem Gericht sofort. Kopieren Sie die Deklaration für Ihre Speisekarte.",
       "cta_tool": "Zum Detektor ↓",
@@ -3889,7 +3889,7 @@
     },
     "pricing": {
       "title": "Komplette Allergenverwaltung mit AI Chef Pro",
-      "subtitle": "Der Basisdetektor ist kostenlos. Mit AI Chef Pro verwalten Sie die Allergene Ihrer gesamten Speisekarte mit automatischen Warnungen.",
+      "subtitle": "Der Basisdetektor ist ein Ausgangspunkt. Mit AI Chef Pro verwalten Sie die Allergene Ihrer gesamten Speisekarte mit automatischen Warnungen.",
       "plans": [
         {
           "name": "Mitglied",
@@ -3951,13 +3951,13 @@
   },
   "toolBrigada": {
     "seo": {
-      "title": "Brigaderechner Küche Kostenlos | AI Chef Pro",
-      "description": "Berechnen Sie, wie viele Mitarbeiter Sie in Küche und Service benötigen. Kostenlos, ohne Registrierung. Basierend auf echten Gastronomiestandards.",
+      "title": "Brigaderechner Küche | AI Chef Pro",
+      "description": "Berechnen Sie, wie viele Mitarbeiter Sie in Küche und Service benötigen. Ohne Registrierung. Basierend auf echten Gastronomiestandards.",
       "keywords": "brigaderechner küche, wie viele köche brauche ich, personal restaurant, brigade gastronomie"
     },
     "breadcrumb": "Brigaderechner",
     "hero": {
-      "badge": "Kostenlos — Keine Registrierung",
+      "badge": "Keine Registrierung",
       "h1": "Küchenbrigaderechner",
       "subtitle": "Erfahren Sie, wie viele Köche und Kellner Sie je nach Ihrer Gästeanzahl, Schichten und Serviceart benötigen. Basierend auf echten Branchenquoten.",
       "cta_tool": "Zum Rechner ↓",
@@ -4053,7 +4053,7 @@
     },
     "pricing": {
       "title": "Optimieren Sie Ihr Team mit AI Chef Pro",
-      "subtitle": "Der Basisrechner ist kostenlos. Mit AI Chef Pro optimieren Sie Schichten, Personalkosten und Produktivität Ihrer Brigade.",
+      "subtitle": "Der Basisrechner ist ein Ausgangspunkt. Mit AI Chef Pro optimieren Sie Schichten, Personalkosten und Produktivität Ihrer Brigade.",
       "plans": [
         {
           "name": "Mitglied",
@@ -4111,14 +4111,14 @@
   },
   "toolCalendario": {
     "seo": {
-      "title": "Kostenloser Content-Kalender Restaurant | AI Chef Pro",
-      "description": "Erstellen Sie kostenlos einen 30-Tage-Redaktionskalender für Ihr Restaurant. Post-Ideen für Instagram, TikTok und Facebook, angepasst an Ihren Betrieb. Ohne Anmeldung.",
-      "keywords": "content kalender restaurant, post ideen restaurant, social media marketing gastronomie, redaktionskalender kostenlos"
+      "title": "Content-Kalender Restaurant | AI Chef Pro",
+      "description": "Erstellen Sie einen 30-Tage-Redaktionskalender für Ihr Restaurant. Post-Ideen für Instagram, TikTok und Facebook, angepasst an Ihren Betrieb. Ohne Anmeldung.",
+      "keywords": "content kalender restaurant, post ideen restaurant, social media marketing gastronomie, redaktionskalender"
     },
     "breadcrumb": "Content-Kalender",
-    "breadcrumb_hub": "Kostenlose Tools",
+    "breadcrumb_hub": "Tools",
     "hero": {
-      "badge": "Kostenlos — Ohne Anmeldung",
+      "badge": "Ohne Anmeldung",
       "h1": "Content-Kalender für Ihr Restaurant",
       "subtitle": "Erstellen Sie 30 Tage Post-Ideen für Instagram, TikTok und Facebook, angepasst an Ihre Betriebsart. Ohne API, ohne Anmeldung, ohne Kosten.",
       "cta_tool": "Kalender erstellen",
@@ -4286,7 +4286,7 @@
     },
     "pricing": {
       "title": "Vollständige Inhalte mit AI Chef Pro erstellen",
-      "subtitle": "Der Ideenkalender ist kostenlos. Mit AI Chef Pro Premium generieren Sie fertige Texte zum Veröffentlichen, mit für jedes Netzwerk optimierten Hashtags.",
+      "subtitle": "Der Ideenkalender ist ein Ausgangspunkt. Mit AI Chef Pro Premium generieren Sie fertige Texte zum Veröffentlichen, mit für jedes Netzwerk optimierten Hashtags.",
       "cta": "Premium-Plan ansehen",
       "note": "Keine Bindung · Jederzeit kündbar",
       "plans": [
@@ -4344,7 +4344,7 @@
     "cta_section": {
       "title": "Bereit, die sozialen Medien Ihres Restaurants zu dominieren?",
       "subtitle": "Erstellen Sie jetzt Ihren Redaktionskalender und bringen Sie die digitale Präsenz Ihres Restaurants auf das nächste Level.",
-      "cta_primary": "Kostenlosen Kalender erstellen",
+      "cta_primary": "Kalender erstellen",
       "cta_secondary": "Alle Tools ansehen",
       "primary": "AI Chef Pro testen",
       "secondary": "Alle Pläne ansehen"
@@ -4352,12 +4352,12 @@
   },
   "toolMenuCopy": {
     "seo": {
-      "title": "Kostenloser Speisekarten-Text-Generator | AI Chef Pro",
-      "description": "Generieren Sie 3 Beschreibungen für jedes Gericht: klassisch, emotional und km0/lokal. Kostenlos, ohne Anmeldung. Verbessern Sie Ihre Speisekarte.",
-      "keywords": "Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen kostenlos"
+      "title": "Speisekarten-Text-Generator | AI Chef Pro",
+      "description": "Generieren Sie 3 Beschreibungen für jedes Gericht: klassisch, emotional und km0/lokal. Ohne Anmeldung. Verbessern Sie Ihre Speisekarte.",
+      "keywords": "Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen"
     },
     "hero": {
-      "badge": "Kostenlos — Ohne Anmeldung",
+      "badge": "Ohne Anmeldung",
       "h1": "Speisekarten-Text-Generator",
       "subtitle": "Geben Sie Gerichtsname und Zutaten ein und erhalten Sie 3 fertige Beschreibungen: klassisch, emotional und km0/lokal. Ohne API, ohne Registrierung.",
       "cta_tool": "Speisekartentexte generieren",
@@ -4366,7 +4366,7 @@
     "tool": {
       "title": "Speisekarten-Text-Generator",
       "breadcrumb": "Speisekarten-Text-Generator",
-      "breadcrumb_hub": "Kostenlose Tools",
+      "breadcrumb_hub": "Tools",
       "faq_title": "Häufig gestellte Fragen",
       "nombre_label": "Aktueller Gerichtsname",
       "nombre_placeholder": "z.B.: Jamón-Kroketten",
@@ -4440,14 +4440,14 @@
     "cta_section": {
       "title": "Bereit, Ihre Speisekarte zu verbessern?",
       "subtitle": "Erstellen Sie professionelle Texte für jedes Gericht und steigern Sie die Wahrnehmung Ihres Restaurants.",
-      "cta_primary": "Kostenlose Texte generieren",
+      "cta_primary": "Texte generieren",
       "cta_secondary": "Alle Tools ansehen",
       "primary": "AI Chef Pro testen",
       "secondary": "Alle Pläne ansehen"
     },
     "pricing": {
       "title": "Optimiere deine gesamte Speisekarte mit AI Chef Pro",
-      "subtitle": "Der kostenlose Generator ist ein Ausgangspunkt. Mit AI Chef Pro Premium erstellen Sie Texte für Ihre gesamte Speisekarte, optimiert für lokales SEO und Conversions.",
+      "subtitle": "Der Generator ist ein Ausgangspunkt. Mit AI Chef Pro Premium erstellen Sie Texte für Ihre gesamte Speisekarte, optimiert für lokales SEO und Conversions.",
       "plans": [
         {
           "name": "Mitglied",
@@ -4478,12 +4478,12 @@
   },
   "toolDegustacion": {
     "seo": {
-      "title": "Kostenloses Degustationsmenü-Generator | AI Chef Pro",
-      "description": "Erstellen Sie ein vollständiges Degustationsmenü mit KI: poetischer Name, sensorische Beschreibung, Technik und Weinbegleitung für jeden Gang. Kostenlos.",
-      "keywords": "degustationsmenü generator, degustationsmenü ki, degustationsmenü erstellen restaurant, degustationsmenü kostenlos"
+      "title": "Degustationsmenü-Generator | AI Chef Pro",
+      "description": "Erstellen Sie ein vollständiges Degustationsmenü mit KI: poetischer Name, sensorische Beschreibung, Technik und Weinbegleitung für jeden Gang.",
+      "keywords": "degustationsmenü generator, degustationsmenü ki, degustationsmenü erstellen restaurant, degustationsmenü"
     },
     "hero": {
-      "badge": "Kostenlos — Ohne Registrierung",
+      "badge": "Ohne Registrierung",
       "h1": "KI-Degustationsmenü-Generator",
       "subtitle": "Wählen Sie Ihre Star-Zutaten, Anzahl der Gänge und Kochstil. Erhalten Sie sofort ein vollständiges Degustationsmenü mit poetischem Namen, sensorischer Beschreibung, Technik und Weinbegleitung.",
       "cta_tool": "Mein Degustationsmenü erstellen",
@@ -4492,7 +4492,7 @@
     "tool": {
       "title": "Gestalten Sie Ihr Degustationsmenü",
       "breadcrumb": "Degustationsmenü-Generator",
-      "breadcrumb_hub": "Kostenlose Tools",
+      "breadcrumb_hub": "Tools",
       "faq_title": "Häufig gestellte Fragen",
       "ingredientes_label": "Star-Zutaten (bis zu 5)",
       "ingredientes_placeholder": "z.B. schwarzer Trüffel",
@@ -4562,14 +4562,14 @@
     "cta_section": {
       "title": "Bereit, Ihr nächstes Degustationsmenü zu erstellen?",
       "subtitle": "Generieren Sie Vorschläge in Sekunden und passen Sie das Ergebnis an die Identität Ihres Restaurants an.",
-      "cta_primary": "Degustationsmenü kostenlos erstellen",
+      "cta_primary": "Degustationsmenü erstellen",
       "cta_secondary": "Alle Tools anzeigen",
       "primary": "AI Chef Pro testen",
       "secondary": "Alle Pläne anzeigen"
     },
     "pricing": {
       "title": "Heben Sie Ihr Degustationsmenü auf das nächste Level",
-      "subtitle": "Der kostenlose Generator erstellt die Menüstruktur. Mit AI Chef Pro Premium generieren Sie vollständige Rezepte und Rezeptkarten für jeden Gang.",
+      "subtitle": "Der Generator erstellt die Menüstruktur. Mit AI Chef Pro Premium generieren Sie vollständige Rezepte und Rezeptkarten für jeden Gang.",
       "plans": [
         {
           "name": "Mitglied",

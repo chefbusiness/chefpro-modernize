@@ -289,9 +289,9 @@
         "button": "Bekijk Plannen en Boek Nu"
       },
       "free_consultation": {
-        "title": "🎁 Gratis Micro-Sessie",
-        "description": "Niet zeker welk plan geschikt is voor u? Boek een gratis 30-minuten consultatie.",
-        "button1": "Boek Gratis Consultatie",
+        "title": "🎁 Micro-Sessie",
+        "description": "Niet zeker welk plan geschikt is voor u? Boek een 30-minuten consultatie.",
+        "button1": "Boek Consultatie",
         "button2": "Neem nu contact op"
       }
     }
@@ -1215,7 +1215,7 @@
     "nav_recetas": "AI-Recepten",
     "nav_escandallos": "Food Cost Berekening AI",
     "nav_ai_tools": "AI-agenten",
-    "nav_free_tools": "Gratis Tools",
+    "nav_free_tools": "Tools",
     "contact_title": "Contact",
     "plans_button": "Bekijk Plannen",
     "try_free_button": "Probeer AI Chef Pro",
@@ -1239,7 +1239,7 @@
     "roadmap": "AI Chef Pro Roadmap",
     "app_tools": "75+ AI-agenten",
     "app_login": "Inloggen",
-    "free_tools_hub": "Gratis Tools",
+    "free_tools_hub": "Tools",
     "mentoria_online": "Online Mentoring",
     "formacion_presencial": "Aanwezigheidsopleding",
     "planes_precios": "Plannen en Prijzen",
@@ -1456,8 +1456,8 @@
     "mentoria_hero": "Gepersonaliseerde online mentorschap sessie met AI Chef Pro voor gastronomische professionals"
   },
   "announcement_bar": {
-    "text": "8 gratis tools voor je restaurant — zonder registratie",
-    "text_short": "8 gratis tools, zonder registratie",
+    "text": "8 tools voor je restaurant — zonder registratie",
+    "text_short": "8 tools, zonder registratie",
     "cta": "Nu uitproberen"
   },
   "landingCostes": {
@@ -2927,16 +2927,16 @@
   },
   "toolHub": {
     "seo": {
-      "title": "8 gratis tools voor uw restaurant, direct | AI Chef Pro",
-      "description": "Gratis tools voor uw restaurant: foodcost, allergenen en winst, zonder account. De betaalde suite heeft 75+ AI-agenten. Probeer die vandaag.",
-      "keywords": "gratis tools restaurant, foodcost calculator gratis, 75+ ai-agenten, ai chef pro"
+      "title": "8 tools voor uw restaurant, direct | AI Chef Pro",
+      "description": "Tools voor uw restaurant: foodcost, allergenen en winst, zonder account. De betaalde suite heeft 75+ AI-agenten. Probeer die vandaag.",
+      "keywords": "tools restaurant, foodcost calculator, 75+ ai-agenten, ai chef pro"
     },
-    "breadcrumb": "Gratis Tools",
-    "other_tools_title": "Andere gratis tools",
+    "breadcrumb": "Tools",
+    "other_tools_title": "Andere tools",
     "see_all_tools": "Alle tools bekijken",
     "hero": {
-      "badge": "100% Gratis — Geen registratie",
-      "h1": "8 Gratis Tools voor uw Restaurant",
+      "badge": "Geen registratie",
+      "h1": "8 Tools voor uw Restaurant",
       "subtitle": "Bereken uw food cost, controleer allergenen, simuleer uw winstgevendheid en meer. Geen registratie, geen betaling, geen limieten.",
       "tagline": "Van de makers van AI Chef Pro — de AI-suite voor gastronomie"
     },
@@ -2991,7 +2991,7 @@
       }
     ],
     "why": {
-      "title": "Waarom zijn ze gratis?",
+      "title": "Waarom bestaan deze tools?",
       "body": "Wij geloven dat elk restaurant, ongeacht de grootte, toegang verdient tot professionele tools.",
       "items": [
         "Geen registratie of creditcard nodig",
@@ -3010,13 +3010,13 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "Gratis Restaurant Food Cost Calculator | AI Chef Pro",
-      "description": "Bereken gratis de food cost van uw gerechten: ingrediënten, gewichten en verkoopprijs. Direct resultaat met winstgevendheids-stoplicht. Zonder registratie.",
-      "keywords": "food cost calculator restaurant, food cost gratis berekenen, food cost percentage, gerecht kosten restaurant"
+      "title": "Restaurant Food Cost Calculator | AI Chef Pro",
+      "description": "Bereken de food cost van uw gerechten: ingrediënten, gewichten en verkoopprijs. Direct resultaat met winstgevendheids-stoplicht. Zonder registratie.",
+      "keywords": "food cost calculator restaurant, food cost berekenen, food cost percentage, gerecht kosten restaurant"
     },
     "breadcrumb": "Food Cost Calculator",
     "hero": {
-      "badge": "Gratis — Geen registratie",
+      "badge": "Geen registratie",
       "h1": "Food Cost Calculator voor Restaurants",
       "subtitle": "Bereken het food cost percentage van elk gerecht in seconden. Voeg ingrediënten, hoeveelheden en verkoopprijs toe.",
       "cta_tool": "Naar de calculator ↓",
@@ -3102,7 +3102,7 @@
     },
     "pricing": {
       "title": "Meer kracht met AI Chef Pro",
-      "subtitle": "De gratis calculator is slechts een voorbeeld. Met AI Chef Pro berekent u uw hele menukaart met verspillingscontrole.",
+      "subtitle": "De calculator is slechts een voorbeeld. Met AI Chef Pro berekent u uw hele menukaart met verspillingscontrole.",
       "plans": [
         {
           "name": "Lid",
@@ -3144,7 +3144,7 @@
       },
       {
         "question": "Bevat deze calculator verspilling?",
-        "answer": "Deze gratis versie werkt met de netto gewichten die u invoert. Voor automatische verspillingsberekening, gebruik het receptenberekenings-tool van AI Chef Pro Premium."
+        "answer": "Deze versie werkt met de netto gewichten die u invoert. Voor automatische verspillingsberekening, gebruik het receptenberekenings-tool van AI Chef Pro Premium."
       },
       {
         "question": "Hoe verbetert u een hoge food cost?",
@@ -3160,13 +3160,13 @@
   },
   "toolRentabilidad": {
     "seo": {
-      "title": "Gratis Restaurant Winstgevendheids-simulator | AI Chef Pro",
-      "description": "Bereken of uw restaurant winstgevend is: voer couverts, gemiddeld besteding en kosten in. Nettowinst en break-even direct. Gratis, geen registratie.",
-      "keywords": "winstgevendheids-simulator restaurant, restaurant winst berekenen, break-even restaurant, horeca winstgevendheid gratis"
+      "title": "Restaurant Winstgevendheids-simulator | AI Chef Pro",
+      "description": "Bereken of uw restaurant winstgevend is: voer couverts, gemiddeld besteding en kosten in. Nettowinst en break-even direct. Geen registratie.",
+      "keywords": "winstgevendheids-simulator restaurant, restaurant winst berekenen, break-even restaurant, horeca winstgevendheid"
     },
     "breadcrumb": "Winstgevendheids-simulator",
     "hero": {
-      "badge": "Gratis — Geen registratie",
+      "badge": "Geen registratie",
       "h1": "Winstgevendheids-simulator voor Restaurants",
       "subtitle": "Bereken of uw restaurant echte winst genereert. Voer uw gegevens in en ontvang uw maandelijkse winst en break-evenpunt.",
       "cta_tool": "Naar de simulator ↓",
@@ -3248,7 +3248,7 @@
     },
     "pricing": {
       "title": "Volledige financiële analyse met AI Chef Pro",
-      "subtitle": "De basissimulator is gratis. Met AI Chef Pro krijgt u per-gerecht analyses, jaarprognoses en kostenafwijkingswaarschuwingen.",
+      "subtitle": "De basissimulator is een startpunt. Met AI Chef Pro krijgt u per-gerecht analyses, jaarprognoses en kostenafwijkingswaarschuwingen.",
       "plans": [
         {
           "name": "Lid",
@@ -3306,13 +3306,13 @@
   },
   "toolScore": {
     "seo": {
-      "title": "Digitaliseringstest Restaurant Gratis | AI Chef Pro",
-      "description": "Ontdek in 2 minuten het digitaliseringsniveau van uw restaurant. 6 vragen, direct resultaat met gepersonaliseerd actieplan. Gratis, zonder registratie.",
+      "title": "Digitaliseringstest Restaurant | AI Chef Pro",
+      "description": "Ontdek in 2 minuten het digitaliseringsniveau van uw restaurant. 6 vragen, direct resultaat met gepersonaliseerd actieplan. Zonder registratie.",
       "keywords": "digitaliseringstest restaurant, digitaal niveau restaurant, digitalisering horeca, digitale tools restaurant"
     },
     "breadcrumb": "Digitaliseringstest",
     "hero": {
-      "badge": "Gratis — Geen registratie — 2 minuten",
+      "badge": "Geen registratie — 2 minuten",
       "h1": "Digitaliseringstest voor Restaurants",
       "subtitle": "Hoe gedigitaliseerd is uw restaurant? Beantwoord 6 vragen en krijg uw digitaal niveau met een gepersonaliseerd actieplan.",
       "cta_tool": "Test doen ↓",
@@ -3556,13 +3556,13 @@
   },
   "toolAlergenos": {
     "seo": {
-      "title": "Allergenendetector Restaurant Gratis | AI Chef Pro",
-      "description": "Detecteer de 14 verplicht te vermelden allergenen in elk gerecht direct. Voer de ingrediënten in en krijg de allergenendeclaratie. Gratis, zonder registratie.",
+      "title": "Allergenendetector Restaurant | AI Chef Pro",
+      "description": "Detecteer de 14 verplicht te vermelden allergenen in elk gerecht direct. Voer de ingrediënten in en krijg de allergenendeclaratie. Zonder registratie.",
       "keywords": "allergenendetector restaurant, verplichte allergenen restaurant, allergenendeclaratie gerecht, verordening 1169 2011"
     },
     "breadcrumb": "Allergenendetector",
     "hero": {
-      "badge": "Gratis — Geen registratie — Wettelijk verplicht",
+      "badge": "Geen registratie — Wettelijk verplicht",
       "h1": "Allergenendetector voor Restaurants",
       "subtitle": "Identificeer de 14 verplicht te vermelden allergenen (EU-Verordening 1169/2011) in elk gerecht direct. Kopieer de declaratie voor uw menukaart.",
       "cta_tool": "Naar de detector ↓",
@@ -3868,7 +3868,7 @@
     },
     "pricing": {
       "title": "Volledig allergenenmanagement met AI Chef Pro",
-      "subtitle": "De basisdetector is gratis. Met AI Chef Pro beheert u de allergenen van uw hele menukaart met automatische waarschuwingen.",
+      "subtitle": "De basisdetector is een startpunt. Met AI Chef Pro beheert u de allergenen van uw hele menukaart met automatische waarschuwingen.",
       "plans": [
         {
           "name": "Lid",
@@ -3930,13 +3930,13 @@
   },
   "toolBrigada": {
     "seo": {
-      "title": "Keukenteamcalculator Gratis | AI Chef Pro",
-      "description": "Bereken hoeveel medewerkers u nodig heeft in de keuken en de zaal op basis van uw servicevolume. Gratis, zonder registratie. Gebaseerd op echte horecastandaarden.",
+      "title": "Keukenteamcalculator | AI Chef Pro",
+      "description": "Bereken hoeveel medewerkers u nodig heeft in de keuken en de zaal op basis van uw servicevolume. Zonder registratie. Gebaseerd op echte horecastandaarden.",
       "keywords": "keukenteamcalculator, hoeveel koks heb ik nodig, personeel restaurant, keukenteam horeca"
     },
     "breadcrumb": "Keukenteamcalculator",
     "hero": {
-      "badge": "Gratis — Geen registratie",
+      "badge": "Geen registratie",
       "h1": "Keukenteamcalculator",
       "subtitle": "Ontdek hoeveel koks en obers u nodig heeft op basis van uw couverts, diensten en servicetype. Gebaseerd op echte brancheverhoudingen.",
       "cta_tool": "Naar de calculator ↓",
@@ -4032,7 +4032,7 @@
     },
     "pricing": {
       "title": "Optimaliseer uw team met AI Chef Pro",
-      "subtitle": "De basiscalculator is gratis. Met AI Chef Pro optimaliseert u diensten, personeelskosten en productiviteit van uw team.",
+      "subtitle": "De basiscalculator is een startpunt. Met AI Chef Pro optimaliseert u diensten, personeelskosten en productiviteit van uw team.",
       "plans": [
         {
           "name": "Lid",
@@ -4090,14 +4090,14 @@
   },
   "toolCalendario": {
     "seo": {
-      "title": "Gratis Content Kalender Restaurant | AI Chef Pro",
-      "description": "Genereer een 30-daagse redactionele kalender voor uw restaurant gratis. Post-ideeën voor Instagram, TikTok en Facebook afgestemd op uw type horecabedrijf. Geen registratie.",
-      "keywords": "content kalender restaurant, post ideen restaurant, social media marketing horeca, redactionele kalender gratis"
+      "title": "Content Kalender Restaurant | AI Chef Pro",
+      "description": "Genereer een 30-daagse redactionele kalender voor uw restaurant. Post-ideeën voor Instagram, TikTok en Facebook afgestemd op uw type horecabedrijf. Geen registratie.",
+      "keywords": "content kalender restaurant, post ideen restaurant, social media marketing horeca, redactionele kalender"
     },
     "breadcrumb": "Content Kalender",
-    "breadcrumb_hub": "Gratis Tools",
+    "breadcrumb_hub": "Tools",
     "hero": {
-      "badge": "Gratis — Geen registratie",
+      "badge": "Geen registratie",
       "h1": "Content Kalender voor Uw Restaurant",
       "subtitle": "Genereer 30 dagen post-ideeën voor Instagram, TikTok en Facebook, afgestemd op uw type horecabedrijf. Geen API, geen registratie, geen kosten.",
       "cta_tool": "Mijn kalender genereren",
@@ -4265,7 +4265,7 @@
     },
     "pricing": {
       "title": "Maak complete content met AI Chef Pro",
-      "subtitle": "De ideenkalender is gratis. Met AI Chef Pro Premium genereert u complete teksten publicatieklaar, met voor elk netwerk geoptimaliseerde hashtags.",
+      "subtitle": "De ideenkalender is een startpunt. Met AI Chef Pro Premium genereert u complete teksten publicatieklaar, met voor elk netwerk geoptimaliseerde hashtags.",
       "cta": "Premium Plan bekijken",
       "note": "Geen verplichting · Annuleer wanneer u wilt",
       "plans": [
@@ -4323,7 +4323,7 @@
     "cta_section": {
       "title": "Klaar om de sociale media van uw restaurant te domineren?",
       "subtitle": "Genereer nu uw redactionele kalender en til de digitale aanwezigheid van uw restaurant naar het volgende niveau.",
-      "cta_primary": "Mijn gratis kalender genereren",
+      "cta_primary": "Mijn kalender genereren",
       "cta_secondary": "Alle tools bekijken",
       "primary": "AI Chef Pro uitproberen",
       "secondary": "Alle plannen bekijken"
@@ -4331,12 +4331,12 @@
   },
   "toolMenuCopy": {
     "seo": {
-      "title": "Gratis Menukaart Tekst Generator | AI Chef Pro",
-      "description": "Genereer 3 beschrijvingen voor elk gerecht: klassiek, emotioneel en km0/lokaal. Gratis, zonder aanmelding. Verbeter uw menukaart en trek meer klanten aan.",
-      "keywords": "menukaart tekst generator, gerecht beschrijving restaurant, menu copywriting gratis"
+      "title": "Menukaart Tekst Generator | AI Chef Pro",
+      "description": "Genereer 3 beschrijvingen voor elk gerecht: klassiek, emotioneel en km0/lokaal. Zonder aanmelding. Verbeter uw menukaart en trek meer klanten aan.",
+      "keywords": "menukaart tekst generator, gerecht beschrijving restaurant, menu copywriting"
     },
     "hero": {
-      "badge": "Gratis — Zonder aanmelding",
+      "badge": "Zonder aanmelding",
       "h1": "Menukaart Tekst Generator",
       "subtitle": "Voer de naam van het gerecht en ingrediënten in en ontvang 3 kant-en-klare beschrijvingen: klassiek, emotioneel en km0/lokaal. Zonder API, zonder registratie.",
       "cta_tool": "Menukaart teksten genereren",
@@ -4345,7 +4345,7 @@
     "tool": {
       "title": "Menukaart Tekst Generator",
       "breadcrumb": "Menukaart Tekst Generator",
-      "breadcrumb_hub": "Gratis Tools",
+      "breadcrumb_hub": "Tools",
       "faq_title": "Veelgestelde vragen",
       "nombre_label": "Huidige naam van het gerecht",
       "nombre_placeholder": "Bijv.: Jamón kroketten",
@@ -4419,14 +4419,14 @@
     "cta_section": {
       "title": "Klaar om de menukaart van uw restaurant te verbeteren?",
       "subtitle": "Genereer professionele teksten voor elk gerecht en verhoog de perceptie van uw restaurant.",
-      "cta_primary": "Gratis teksten genereren",
+      "cta_primary": "Teksten genereren",
       "cta_secondary": "Alle tools bekijken",
       "primary": "AI Chef Pro uitproberen",
       "secondary": "Alle plannen bekijken"
     },
     "pricing": {
       "title": "Optimaliseer je volledige menukaart met AI Chef Pro",
-      "subtitle": "De gratis generator is een startpunt. Met AI Chef Pro Premium maakt u teksten voor uw volledige menukaart, geoptimaliseerd voor lokale SEO en conversie.",
+      "subtitle": "De generator is een startpunt. Met AI Chef Pro Premium maakt u teksten voor uw volledige menukaart, geoptimaliseerd voor lokale SEO en conversie.",
       "plans": [
         {
           "name": "Lid",
@@ -4457,12 +4457,12 @@
   },
   "toolDegustacion": {
     "seo": {
-      "title": "Gratis Proefmenu Generator | AI Chef Pro",
-      "description": "Maak een compleet proefmenu met AI: poëtische naam, sensorische beschrijving, techniek en wijnadvies voor elk gerecht. Gratis, zonder aanmelding.",
-      "keywords": "proefmenu generator, proefmenu ai, proefmenu maken restaurant, proefmenu gratis"
+      "title": "Proefmenu Generator | AI Chef Pro",
+      "description": "Maak een compleet proefmenu met AI: poëtische naam, sensorische beschrijving, techniek en wijnadvies voor elk gerecht. Zonder aanmelding.",
+      "keywords": "proefmenu generator, proefmenu ai, proefmenu maken restaurant, proefmenu"
     },
     "hero": {
-      "badge": "Gratis — Geen aanmelding",
+      "badge": "Geen aanmelding",
       "h1": "AI Proefmenu Generator",
       "subtitle": "Selecteer uw sterringrediënten, aantal gangen en culinaire stijl. Krijg direct een compleet proefmenu met poëtische naam, sensorische beschrijving, techniek en wijnadvies voor elke gang.",
       "cta_tool": "Mijn proefmenu maken",
@@ -4471,7 +4471,7 @@
     "tool": {
       "title": "Ontwerp Uw Proefmenu",
       "breadcrumb": "Proefmenu Generator",
-      "breadcrumb_hub": "Gratis Tools",
+      "breadcrumb_hub": "Tools",
       "faq_title": "Veelgestelde vragen",
       "ingredientes_label": "Sterringrediënten (tot 5)",
       "ingredientes_placeholder": "Bv: zwarte truffel",
@@ -4541,14 +4541,14 @@
     "cta_section": {
       "title": "Klaar om uw volgende proefmenu te maken?",
       "subtitle": "Genereer voorstellen in seconden en pas het resultaat aan uw restaurantidentiteit aan.",
-      "cta_primary": "Proefmenu gratis maken",
+      "cta_primary": "Proefmenu maken",
       "cta_secondary": "Alle tools bekijken",
       "primary": "AI Chef Pro proberen",
       "secondary": "Alle plannen bekijken"
     },
     "pricing": {
       "title": "Til uw proefmenu naar het volgende niveau",
-      "subtitle": "De gratis generator maakt de menustructuur. Met AI Chef Pro Premium genereert u volledige recepten en technische kaarten voor elke gang.",
+      "subtitle": "De generator maakt de menustructuur. Met AI Chef Pro Premium genereert u volledige recepten en technische kaarten voor elke gang.",
       "plans": [
         {
           "name": "Lid",

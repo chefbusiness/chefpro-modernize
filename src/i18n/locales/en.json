@@ -305,8 +305,8 @@
       },
       "free_consultation": {
         "title": "Not sure which package to choose?",
-        "description": "Schedule a free 15-minute micro-session to discuss your needs and determine the best option for your business.",
-        "button1": "Schedule free micro-session",
+        "description": "Schedule a 15-minute micro-session to discuss your needs and determine the best option for your business.",
+        "button1": "Schedule micro-session",
         "button2": "Contact now"
       }
     }
@@ -943,7 +943,7 @@
     "nav_recetas": "AI Recipes",
     "nav_escandallos": "Food Cost Calculator",
     "nav_ai_tools": "AI agents",
-    "nav_free_tools": "Free Tools",
+    "nav_free_tools": "Tools",
     "contact_title": "Contact",
     "plans_button": "View Plans",
     "try_free_button": "Try AI Chef Pro",
@@ -966,7 +966,7 @@
     "roadmap": "AI Chef Pro Roadmap",
     "app_tools": "75+ AI agents",
     "app_login": "Log In",
-    "free_tools_hub": "Free Tools",
+    "free_tools_hub": "Tools",
     "mentoria_online": "Online Mentoring",
     "formacion_presencial": "In-Person Training",
     "planes_precios": "Plans & Pricing",
@@ -2684,16 +2684,16 @@
   },
   "toolHub": {
     "seo": {
-      "title": "8 free restaurant tools you can use today | AI Chef Pro",
-      "description": "Free tools for your restaurant: food cost, allergens and profit, with no sign-up. When you need more, the suite has 75+ AI agents. Try it today.",
-      "keywords": "free restaurant tools, free food cost calculator, free allergen detector, 75+ ai agents, ai chef pro"
+      "title": "8 restaurant tools you can use today | AI Chef Pro",
+      "description": "Tools for your restaurant: food cost, allergens and profit, with no sign-up. When you need more, the suite has 75+ AI agents. Try it today.",
+      "keywords": "restaurant tools, food cost calculator, allergen detector, 75+ ai agents, ai chef pro"
     },
-    "breadcrumb": "Free Tools",
-    "other_tools_title": "Other free tools",
+    "breadcrumb": "Tools",
+    "other_tools_title": "Other tools",
     "see_all_tools": "See all tools",
     "hero": {
-      "badge": "100% Free — No sign-up",
-      "h1": "8 Free Tools for Your Restaurant",
+      "badge": "No sign-up",
+      "h1": "8 Tools for Your Restaurant",
       "subtitle": "Calculate your food cost, check allergens, simulate your profitability and more. No sign-up, no payment, no limits.",
       "tagline": "From the creators of AI Chef Pro — the AI suite for gastronomy"
     },
@@ -2748,7 +2748,7 @@
       }
     ],
     "why": {
-      "title": "Why are they free?",
+      "title": "Why do these tools exist?",
       "body": "We believe any restaurant, regardless of size, deserves access to professional tools. These calculators are our way of adding value to the industry.",
       "items": [
         "No registration or credit card needed",
@@ -2767,13 +2767,13 @@
   },
   "toolFoodCost": {
     "seo": {
-      "title": "AI Food Cost Calculator — Free for Restaurants | AI Chef Pro",
-      "description": "Free AI food cost calculator for restaurants. Add ingredients, weights and selling price — get instant food cost percentage with profitability analysis. No registration.",
-      "keywords": "ai food cost calculator, food cost calculator restaurant, food cost calculator free, calculate food cost, food cost percentage, restaurant food cost, dish cost calculator"
+      "title": "AI Food Cost Calculator for Restaurants | AI Chef Pro",
+      "description": "AI food cost calculator for restaurants. Add ingredients, weights and selling price — get instant food cost percentage with profitability analysis. No registration.",
+      "keywords": "ai food cost calculator, food cost calculator restaurant, food cost calculator, calculate food cost, food cost percentage, restaurant food cost, dish cost calculator"
     },
     "breadcrumb": "Food Cost Calculator",
     "hero": {
-      "badge": "Free — No registration",
+      "badge": "No registration",
       "h1": "Food Cost Calculator for Restaurants",
       "subtitle": "Calculate the food cost percentage of any dish in seconds. Add ingredients, quantities and selling price.",
       "cta_tool": "Go to calculator ↓",
@@ -2859,7 +2859,7 @@
     },
     "pricing": {
       "title": "More power with AI Chef Pro",
-      "subtitle": "The free calculator is just a sample. With AI Chef Pro you calculate your entire menu with waste control and automatic price updates.",
+      "subtitle": "The calculator is just a sample. With AI Chef Pro you calculate your entire menu with waste control and automatic price updates.",
       "plans": [
         {
           "name": "Member",
@@ -2901,7 +2901,7 @@
       },
       {
         "question": "Does this calculator include waste?",
-        "answer": "This free version works with the net weights you enter. To automatically include cleaning, cooking and evaporation waste, use the recipe costing tool in AI Chef Pro Premium."
+        "answer": "This version works with the net weights you enter. To automatically include cleaning, cooking and evaporation waste, use the recipe costing tool in AI Chef Pro Premium."
       },
       {
         "question": "How to improve a high food cost?",
@@ -2917,13 +2917,13 @@
   },
   "toolRentabilidad": {
     "seo": {
-      "title": "Free Restaurant Profit Simulator | AI Chef Pro",
-      "description": "Calculate if your restaurant is profitable: enter covers, average ticket and costs. Net profit and break-even point instantly. Free, no registration.",
-      "keywords": "restaurant profit simulator, calculate restaurant profit, restaurant break-even, hospitality profitability free"
+      "title": "Restaurant Profit Simulator | AI Chef Pro",
+      "description": "Calculate if your restaurant is profitable: enter covers, average ticket and costs. Net profit and break-even point instantly. No registration.",
+      "keywords": "restaurant profit simulator, calculate restaurant profit, restaurant break-even, hospitality profitability"
     },
     "breadcrumb": "Profit Simulator",
     "hero": {
-      "badge": "Free — No registration",
+      "badge": "No registration",
       "h1": "Restaurant Profit Simulator",
       "subtitle": "Calculate if your restaurant generates real profits. Enter your data and get your monthly profit and break-even point.",
       "cta_tool": "Go to simulator ↓",
@@ -3005,7 +3005,7 @@
     },
     "pricing": {
       "title": "Complete financial analysis with AI Chef Pro",
-      "subtitle": "The basic simulator is free. With AI Chef Pro you get per-dish analysis, annual projections and cost deviation alerts.",
+      "subtitle": "The basic simulator is a starting point. With AI Chef Pro you get per-dish analysis, annual projections and cost deviation alerts.",
       "plans": [
         {
           "name": "Member",
@@ -3063,13 +3063,13 @@
   },
   "toolScore": {
     "seo": {
-      "title": "Free Restaurant Digitalization Test | AI Chef Pro",
-      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. Free, no registration.",
+      "title": "Restaurant Digitalization Test | AI Chef Pro",
+      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. No registration.",
       "keywords": "restaurant digitalization test, digital level restaurant, hospitality digitalization, digital tools restaurant"
     },
     "breadcrumb": "Digitalization Test",
     "hero": {
-      "badge": "Free — No registration — 2 minutes",
+      "badge": "No registration — 2 minutes",
       "h1": "Restaurant Digitalization Test",
       "subtitle": "How digitalized is your restaurant? Answer 6 questions and get your digital level with a personalized action plan.",
       "cta_tool": "Take the test ↓",
@@ -3313,13 +3313,13 @@
   },
   "toolAlergenos": {
     "seo": {
-      "title": "Free Restaurant Allergen Checker | AI Chef Pro",
-      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Free, no registration.",
+      "title": "Restaurant Allergen Checker | AI Chef Pro",
+      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. No registration.",
       "keywords": "allergen checker restaurant, mandatory allergens restaurant, allergen declaration dish, EU regulation 1169 2011"
     },
     "breadcrumb": "Allergen Checker",
     "hero": {
-      "badge": "Free — No registration — Legally required",
+      "badge": "No registration — Legally required",
       "h1": "Allergen Checker for Restaurants",
       "subtitle": "Identify the 14 mandatory declaration allergens (EU Regulation 1169/2011) in any dish instantly. Copy the declaration for your menu.",
       "cta_tool": "Go to checker ↓",
@@ -3601,7 +3601,7 @@
     },
     "pricing": {
       "title": "Complete allergen management with AI Chef Pro",
-      "subtitle": "The basic checker is free. With AI Chef Pro you manage allergens for your entire menu with automatic alerts.",
+      "subtitle": "The basic checker is a starting point. With AI Chef Pro you manage allergens for your entire menu with automatic alerts.",
       "plans": [
         {
           "name": "Member",
@@ -3663,13 +3663,13 @@
   },
   "toolBrigada": {
     "seo": {
-      "title": "Free Kitchen Brigade Calculator | AI Chef Pro",
-      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. Free, no registration. Based on real hospitality standards.",
+      "title": "Kitchen Brigade Calculator | AI Chef Pro",
+      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. No registration. Based on real hospitality standards.",
       "keywords": "kitchen brigade calculator, how many chefs do I need, restaurant staff, kitchen brigade"
     },
     "breadcrumb": "Brigade Calculator",
     "hero": {
-      "badge": "Free — No registration",
+      "badge": "No registration",
       "h1": "Kitchen Brigade Calculator",
       "subtitle": "Find out how many chefs and waiters you need based on your covers, shifts and service type. Based on real industry ratios.",
       "cta_tool": "Go to calculator ↓",
@@ -3765,7 +3765,7 @@
     },
     "pricing": {
       "title": "Optimize your team with AI Chef Pro",
-      "subtitle": "The basic calculator is free. With AI Chef Pro you optimize shifts, staff costs and your brigade's productivity.",
+      "subtitle": "The basic calculator is a starting point. With AI Chef Pro you optimize shifts, staff costs and your brigade's productivity.",
       "plans": [
         {
           "name": "Member",
@@ -3823,14 +3823,14 @@
   },
   "toolCalendario": {
     "seo": {
-      "title": "Free Restaurant Content Calendar | AI Chef Pro",
-      "description": "Generate a 30-day editorial calendar for your restaurant for free. Post ideas for Instagram, TikTok and Facebook tailored to your type of business. No sign-up.",
-      "keywords": "restaurant content calendar, restaurant post ideas, social media marketing restaurant, free content calendar restaurant"
+      "title": "Restaurant Content Calendar | AI Chef Pro",
+      "description": "Generate a 30-day editorial calendar for your restaurant. Post ideas for Instagram, TikTok and Facebook tailored to your type of business. No sign-up.",
+      "keywords": "restaurant content calendar, restaurant post ideas, social media marketing restaurant, content calendar restaurant"
     },
     "breadcrumb": "Content Calendar",
-    "breadcrumb_hub": "Free Tools",
+    "breadcrumb_hub": "Tools",
     "hero": {
-      "badge": "Free — No sign-up",
+      "badge": "No sign-up",
       "h1": "Content Calendar for Your Restaurant",
       "subtitle": "Generate 30 days of post ideas for Instagram, TikTok and Facebook, tailored to your type of venue. No API, no sign-up, no cost.",
       "cta_tool": "Generate my calendar",
@@ -3998,7 +3998,7 @@
     },
     "pricing": {
       "title": "Create complete content with AI Chef Pro",
-      "subtitle": "The idea calendar is free. With AI Chef Pro Premium you generate complete texts ready to publish, with hashtags optimised for each network.",
+      "subtitle": "The idea calendar is a starting point. With AI Chef Pro Premium you generate complete texts ready to publish, with hashtags optimised for each network.",
       "cta": "See Premium Plan",
       "note": "No commitment · Cancel anytime",
       "plans": [
@@ -4056,7 +4056,7 @@
     "cta_section": {
       "title": "Ready to dominate social media for your restaurant?",
       "subtitle": "Generate your editorial calendar now and take your restaurant's digital presence to the next level.",
-      "cta_primary": "Generate my free calendar",
+      "cta_primary": "Generate my calendar",
       "cta_secondary": "See all tools",
       "primary": "Try AI Chef Pro",
       "secondary": "See all plans"
@@ -4064,12 +4064,12 @@
   },
   "toolMenuCopy": {
     "seo": {
-      "title": "Free Restaurant Menu Copy Generator | AI Chef Pro",
-      "description": "Generate 3 menu descriptions for every dish: classic, emotional and local/km0. Free, no signup. Improve your menu and attract more customers.",
-      "keywords": "restaurant menu copy generator, menu description generator, dish description writer, free menu copywriting tool"
+      "title": "Restaurant Menu Copy Generator | AI Chef Pro",
+      "description": "Generate 3 menu descriptions for every dish: classic, emotional and local/km0. No signup. Improve your menu and attract more customers.",
+      "keywords": "restaurant menu copy generator, menu description generator, dish description writer, menu copywriting tool"
     },
     "hero": {
-      "badge": "Free — No signup",
+      "badge": "No signup",
       "h1": "Restaurant Menu Copy Generator",
       "subtitle": "Enter the dish name and main ingredients to get 3 ready-to-use menu descriptions: classic, emotional and km0/local. No API, no registration, no cost.",
       "cta_tool": "Generate menu copy",
@@ -4078,7 +4078,7 @@
     "tool": {
       "title": "Menu Copy Generator",
       "breadcrumb": "Menu Copy Generator",
-      "breadcrumb_hub": "Free Tools",
+      "breadcrumb_hub": "Tools",
       "faq_title": "Frequently asked questions",
       "nombre_label": "Current dish name",
       "nombre_placeholder": "E.g.: Jamón croquettes",
@@ -4148,14 +4148,14 @@
     "cta_section": {
       "title": "Ready to improve your restaurant menu?",
       "subtitle": "Generate professional copy for each dish and elevate how your restaurant is perceived.",
-      "cta_primary": "Generate free menu copy",
+      "cta_primary": "Generate menu copy",
       "cta_secondary": "See all tools",
       "primary": "Try AI Chef Pro",
       "secondary": "See all plans"
     },
     "pricing": {
       "title": "Optimise your entire menu with AI Chef Pro",
-      "subtitle": "The free generator is a starting point. With AI Chef Pro Premium you create copy for your entire menu optimised for local SEO and conversion.",
+      "subtitle": "The generator is a starting point. With AI Chef Pro Premium you create copy for your entire menu optimised for local SEO and conversion.",
       "plans": [
         {
           "name": "Member",
@@ -4186,12 +4186,12 @@
   },
   "toolDegustacion": {
     "seo": {
-      "title": "Free Tasting Menu Generator | AI Chef Pro",
-      "description": "Create a complete tasting menu with AI: poetic name, sensory description, technique and wine pairing for each course. Free, no sign-up.",
-      "keywords": "tasting menu generator, ai tasting menu, create tasting menu restaurant, tasting menu free"
+      "title": "Tasting Menu Generator | AI Chef Pro",
+      "description": "Create a complete tasting menu with AI: poetic name, sensory description, technique and wine pairing for each course. No sign-up.",
+      "keywords": "tasting menu generator, ai tasting menu, create tasting menu restaurant, tasting menu"
     },
     "hero": {
-      "badge": "Free — No sign-up",
+      "badge": "No sign-up",
       "h1": "AI Tasting Menu Generator",
       "subtitle": "Select your star ingredients, number of courses and culinary style. Get an instant complete tasting menu with poetic names, sensory descriptions, techniques and wine pairings for each course.",
       "cta_tool": "Create my tasting menu",
@@ -4200,7 +4200,7 @@
     "tool": {
       "title": "Design Your Tasting Menu",
       "breadcrumb": "Tasting Menu Generator",
-      "breadcrumb_hub": "Free Tools",
+      "breadcrumb_hub": "Tools",
       "faq_title": "Frequently asked questions",
       "ingredientes_label": "Star ingredients (up to 5)",
       "ingredientes_placeholder": "e.g. black truffle",
@@ -4270,14 +4270,14 @@
     "cta_section": {
       "title": "Ready to create your next tasting menu?",
       "subtitle": "Generate proposals in seconds and adapt the result to your restaurant's identity.",
-      "cta_primary": "Create tasting menu free",
-      "cta_secondary": "See all free tools",
+      "cta_primary": "Create tasting menu",
+      "cta_secondary": "See all tools",
       "primary": "Try AI Chef Pro",
       "secondary": "See all plans"
     },
     "pricing": {
       "title": "Take your tasting menu to the next level",
-      "subtitle": "The free generator creates the menu structure. With AI Chef Pro Premium generate full recipes, food costs and technical sheets for each course.",
+      "subtitle": "The generator creates the menu structure. With AI Chef Pro Premium generate full recipes, food costs and technical sheets for each course.",
       "plans": [
         {
           "name": "Member",
