@@ -205,7 +205,7 @@ const FormacionPresencial = () => {
     attendees: 'Hasta 200 personas',
     price: '990€',
     idealFor: 'Eventos, congresos, jornadas de asociaciones, inauguraciones de curso',
-    includes: ['Material digital para asistentes', 'Certificado de asistencia personalizado'],
+    includes: ['Material digital para asistentes', 'Código de prueba AI Chef Pro (7 días)', 'Certificado de asistencia personalizado'],
     content: ['Estado actual de la IA en gastronomía mundial', 'Demostración en vivo de herramientas AI Chef Pro', 'Casos de éxito y ROI demostrable', 'El futuro inmediato: tendencias 2025-2030', 'Sesión de preguntas y networking']
   }, {
     id: 'workshop',
