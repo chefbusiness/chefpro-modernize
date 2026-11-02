@@ -27,8 +27,8 @@ El blog `/nl/blog` abre con el post 1 del roadmap. Keyword y intención por piez
 | Orden | Keyword nativa | Intención | Estado |
 |---|---|---|---|
 | 1 | allergenenlijst | El operador quiere el listado de 14 para imprimir en cocina y sala, no una guía de paciente ni una oferta de empleo de la NVWA | Publicado: `/nl/blog/allergenenlijst` |
-| 2 | 14 allergenen | Quiere la lista numerada y qué producto de cocina la esconde | Borrador pendiente de OK (PR #167) |
-| 3 | kruisbesmetting | Cómo separar alérgenos en el pase, no un artículo clínico | Pendiente |
+| 2 | 14 allergenen | Quiere la lista numerada y qué producto de cocina la esconde | Publicado: `/nl/blog/14-allergenen` |
+| 3 | kruisbesmetting | Cómo separar alérgenos en el pase, no un artículo clínico | Borrador pendiente de OK (PR #PENDIENTE) |
 | 4 | hygiënecode (también hygienecode, serie distinta por el diacrítico) | Qué obliga el código de higiene neerlandés en la hostelería. No aplica en Flandes | Pendiente. No se adelanta dentro del post de la allergenenlijst |
 | 5 | haccp betekenis / haccp horeca | Definición operativa, no un curso genérico | Pendiente |
 | 6 | haccp lijsten | Plantillas. Se puede dejar caer si hay que podar | Pendiente |
@@ -47,8 +47,8 @@ Ya publicados, entre otros: haccp, alergenios, contaminação cruzada, higiene, 
 
 | Orden | Keyword nativa | Intención | Estado |
 |---|---|---|---|
-| 1 | ficha técnica de pratos | La ficha que usa el operador (dosis, coste, alérgenos), no un trabajo escolar | Borrador pendiente de OK (PR #176) |
-| 2 | massa mãe | Producción de obrador. La Portaria 254/2003 es el marco portugués. No es una receta de pan casero | Pendiente |
+| 1 | ficha técnica de pratos | La ficha que usa el operador (dosis, coste, alérgenos), no un trabajo escolar | Publicado: `/pt/blog/ficha-tecnica-de-pratos` |
+| 2 | massa mãe | Producción de obrador. La Portaria 254/2003 es el marco portugués. No es una receta de pan casero | Borrador pendiente de OK (PR #PENDIENTE) |
 | 3 | garum | Pieza de autoridad histórica y de uso profesional, no una receta de fin de semana | Pendiente |
 
 Cocina molecular, cócteles y food truck se midieron con head terms contaminados. No se escriben hasta tener una variante profesional medida. APPCC y «alérgenos» son notas de Brasil en el roadmap, no la lengua de la página: aquí se dice alergénios y HACCP.
@@ -63,7 +63,7 @@ La segunda ola no se rellena con posts de ciudad españoles ni con el glosario. 
 
 Hay unos 70 posts. La siguiente ola, después de un pase de SERP, son intenciones de operador de Estados Unidos y Reino Unido: los 9 alérgenos mayores de la FDA (sésamo desde 2023) frente a los 14 europeos, food cost percentage, permisos sanitarios. No se traduce el glosario español. El corte de enblog lo hace John y no entra aquí.
 
-`/en/blog/best-ai-tools-for-chefs-2026` se reposiciona a agentes de IA (mismo slug): qué es un agente y cómo lo usa un chef en escandallo, carta, alérgenos, producción y compras. Estado: Borrador pendiente de OK (PR #176). No se toca enblog.
+`/en/blog/best-ai-tools-for-chefs-2026` se reposiciona a agentes de IA (mismo slug): qué es un agente y cómo lo usa un chef en escandallo, carta, alérgenos, producción y compras. Estado: Publicado (PR #176). No se toca enblog.
 
 ## Formación y contacto — hechos que no se negocian al localizar
 

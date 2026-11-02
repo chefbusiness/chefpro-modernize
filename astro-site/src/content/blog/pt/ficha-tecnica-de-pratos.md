@@ -154,4 +154,6 @@ Uma receita nova, ainda em rascunho, pode começar em [receitas com IA para rest
 
 A folha assinada fica na praça e uma cópia fica com quem compra. O preço de venda sem IVA volta à [calculadora de food cost](https://aichef.pro/pt/calculadora-food-cost-restaurante) quando quiser ver a percentagem de uma dose isolada. Os planos da suite estão em [preços](https://aichef.pro/pt/precos). A página de convidado, em português, abre o espaço de trabalho sem o mandar para um agente com nome: [página de convidado](https://ptapp.aichef.pro/guest?utm_source=aichef.pro&utm_medium=blog&utm_campaign=ficha-tecnica-de-pratos).
 
+Numa padaria, a capitação da massa mãe — o peso que entra no lote, a hidratação que a casa escreve, a hora do refresco — segue a mesma lógica desta folha. O método de produção está em [massa mãe](https://aichef.pro/pt/blog/massa-mae).
+
 A pergunta que trouxe esta página — o que é a ficha técnica de pratos, e o que leva quando quem a pede é a cozinha e não a escola — fica respondida nos campos acima e nas perguntas do fim.

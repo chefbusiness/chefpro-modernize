@@ -81,7 +81,7 @@ faq:
 
 <p>Een wissel van merk is een nieuwe lijst, ook als de gerechtnaam gelijk blijft. Een andere sojasaus kan tarwe bevatten waar de vorige dat niet deed. Een andere mayonaise kan ei of mosterd verplaatsen. De gast ziet hetzelfde bord.</p>
 
-<p>Kruisbesmetting is een andere vraag dan deze lijst. Dit artikel gaat over wat u in het recept stopt, niet over hoe u snijplanken scheidt. Sporen die u niet bewust toevoegt, staan niet als nummer in bijlage II. U verzint er geen extra regel bij.</p>
+<p>Kruisbesmetting is een andere vraag dan deze lijst. Dit artikel gaat over wat u in het recept stopt, niet over <a href="https://aichef.pro/nl/blog/kruisbesmetting">hoe u snijplanken, frituur en tang op de pass scheidt</a>. Sporen die u niet bewust toevoegt, staan niet als nummer in bijlage II. U verzint er geen extra regel bij.</p>
 
 <aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">AI-agents voor de keuken</p><p class="mt-2 text-foreground">Een AI-agent legt een recept naast deze 14 en wijst aan waar u het etiket moet lezen. Hij vervangt het blad in de keuken niet, en hij vervangt de NVWA niet.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://nlapp.aichef.pro/guest?utm_source=aichef.pro&amp;utm_medium=blog&amp;utm_campaign=14-allergenen">De gastpagina openen</a></p></aside>
 
