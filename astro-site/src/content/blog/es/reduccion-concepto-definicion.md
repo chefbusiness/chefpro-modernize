@@ -1,255 +1,125 @@
 ---
-title: "Reducción en cocina: qué es y cómo hacerla"
-description: "La reducción en cocina concentra el sabor de un líquido al evaporar agua a fuego controlado. Aprende la prueba de la cuchara, los errores típicos y sus usos."
+title: "Reducción: qué es en cocina y cómo se hace"
+description: "Una reducción es un líquido cocido destapado hasta que pierde agua y gana sabor. La prueba de la cuchara, los errores habituales y para qué se usa."
 pubDate: 2026-03-24
-modDate: 2026-09-05
+modDate: 2026-11-03
 category: glosario
-image: /blog-assets/2026/03/reduccion-featured.jpg
-imageAlt: "Reducción: Concepto y Definición"
+tags: ["reducción", "salsas", "fondos"]
 lang: es
+image: /blog-assets/2026/03/reduccion-featured.jpg
+imageAlt: "Sartén de cobre con una reducción oscura de frutos rojos cociendo en una cocina profesional"
 wpId: 3270
+translations:
+  es: "reduccion-concepto-definicion"
+  en: "what-is-reduction-in-cooking"
+definedTerm:
+  name: "Reducción"
+  description: "La reducción es cocer un líquido destapado para que parte del agua se evapore y lo que queda sepa más y tenga más cuerpo. Sirve con un fondo, un vino, un vinagre o el jugo de un asado. No lleva harina: el espesor, cuando llega, sale del propio líquido. Se prueba al final, porque la sal también se concentra."
+faq:
+  - q: "¿Qué es una reducción en cocina?"
+    a: "Es un líquido cocido sin tapa para evaporar agua. El sabor y la sal se quedan en menos volumen. Un fondo, un vino o un vinagre pueden reducirse. La harina no forma parte de la técnica."
+  - q: "¿Hay que tapar la sartén?"
+    a: "No. La tapa devuelve el vapor al líquido y la reducción se para. Se cuece destapado, en un recipiente ancho, a fuego que mantenga un hervor suave."
+  - q: "¿Cuándo se echa la sal?"
+    a: "Al final, cuando el volumen ya no baja. Si el líquido entró salado, al reducirlo sabe mucho más salado. Un fondo para reducir se hace sin sal, o muy justo de sal."
+  - q: "¿En qué se diferencia de una salsa con roux?"
+    a: "El roux espesa con almidón cocido en grasa. La reducción espesa, cuando espesa, porque se va el agua y queda la gelatina del fondo o el azúcar del líquido. Una salsa puede usar las dos cosas, pero no son el mismo trabajo."
+  - q: "¿Cómo sé que ya está?"
+    a: "Con la prueba de la cuchara, el punto nappé: el dorso queda cubierto y, si pasas el dedo, el surco se mantiene. Un glaseado de vinagre va más lejos y queda almibarado. El reloj no lo dice."
+  - q: "¿Sirve cualquier vino?"
+    a: "Sirve un vino que beberías. Al reducirlo se van parte del alcohol y del agua, y se quedan el ácido, el tanino y el defecto, si lo tenía. Un vino avinagrado o sucio sale peor, no mejor."
+faqInBody: true
 ---
 
-<p>La <strong>reducción</strong> es una de las técnicas fundamentales de la cocina clásica y moderna, un proceso químico simple pero poderoso que transforma líquidos ordinarios en salsas extraordinarias. Desde el fondo de cocción que se convierte en glaseado espeso hasta el vino que se transforma en esencia aromática, la reducción es el secreto detrás de muchos de los sabores más intensos y memorables de la gastronomía.</p>
-<p>Aunque aparentemente simple —hervir hasta evaporar agua— la reducción requiere comprensión técnica para lograr resultados óptimos. En este artículo del glosario culinario de AI Chef Pro, exploraremos qué es exactamente la reducción, la ciencia detrás del proceso, técnicas específicas, y cómo dominar este arte esencial de la cocina profesional.</p>
-<h2>¿Qué es la Reducción?</h2>
-<p>La <strong>reducción</strong> es un <strong>proceso de cocción en el que un líquido se calienta hasta evaporar parte de su contenido de agua, concentrando así sus sabores, azúcares y otras sustancias disueltas</strong>. El resultado es un producto más espeso, intenso y con mayor cuerpo que el original.</p>
-<h3>Características del Proceso:</h3>
-<ul>
-<li><strong>Evaporación controlada:</strong> El agua se pierde como vapor.</li>
-<li><strong>Concentración:</strong> Los sólidos disueltos permanecen, aumentando proporción.</li>
-<li><strong>Desarrollo de sabores:</strong> Ocurren reacciones de Maillard y caramelo.</li>
-<li><strong>Cambio de textura:</strong> Mayor viscosidad y cuerpo.</li>
-<li><strong>No reversible:</strong> Una vez reducido, no se puede «diluir» recuperando el original.</li>
-</ul>
-<h3>Líquidos que se Pueden Reducir</h3>
-<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
-<thead>
-<tr style="background: #000000; color: white;">
-<th style="padding: 14px; border: 1px solid #ddd;">Líquido Base</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Resultado Típico</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Usos</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Fondos de cocción</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Salsas espesas, glaseados</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Carnes, aves</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Vinos</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Reducciones concentradas</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Salsas, marinadas</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Jugos cárnicos</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Jus, esencias</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Platos de carne</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Caldo/Stock</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Consommé, bases concentradas</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Sopas, salsas</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Jugos de frutas</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Coulis, glaseados dulces</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Postres, salsas agridulces</td>
-</tr>
-</tbody>
-</table></div>
-<p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/reduccion-interna.jpg" alt="Reducción de caldo en sartén ancha" style="width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 8px;"></p>
-<h2>Ciencia de la Reducción</h2>
+La reducción es cocer un líquido destapado para que parte del agua se evapore y lo que queda sepa más y tenga más cuerpo. Sirve con un fondo, un vino, un vinagre o el jugo de un asado. No lleva harina: el espesor, cuando llega, sale del propio líquido. Se prueba al final, porque la sal también se concentra.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Panadería con Obrador</h3><p class="mt-2 text-muted-foreground">Modelo artesanal con masa madre: 20 capítulos, 9 Excel y manual del obrador.</p><a href="/guia-panaderia-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=reduccion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Panadería con Obrador por €65</a></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro recetas, fichas técnicas y variaciones de esta técnica adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=reduccion-concepto-definicion">Ver la ficha de chef jefe de cocina</a></p></aside>
 
-<h3>Mecanismo Físico-Químico</h3>
-<p><strong>1. Evaporación del Agua:</strong></p>
-<ul>
-<li>El agua hierve a 100°C (a nivel del mar).</li>
-<li>El vapor de agua escapa al ambiente.</li>
-<li>Los sólidos disueltos permanecen en el líquido restante.</li>
-</ul>
-<p><strong>2. Concentración de Solutos:</strong></p>
-<ul>
-<li>Sales, azúcares, aminoácidos se concentran.</li>
-<li>Aumenta la densidad del líquido.</li>
-<li>Mayor viscosidad (espesor).</li>
-</ul>
-<p><strong>3. Reacciones Químicas:</strong></p>
-<ul>
-<li><strong>Reacción de Maillard:</strong> Aminoácidos + azúcares → compuestos aromáticos (sabores tostados).</li>
-<li><strong>Caramelo:</strong> Azúcares se degradan térmicamente (color y sabor dulce-amargo).</li>
-<li><strong>Concentración de ácidos:</strong> Mayor percepción de acidez.</li>
-</ul>
-<h3>Punto de Ebullición en Reducción</h3>
-<p>A medida que el líquido se reduce:</p>
-<ul>
-<li>El punto de ebullición aumenta (debido a los solutos).</li>
-<li>Una salsa reducida al 50% hierve a ~105°C.</li>
-<li>Un glaseado muy espeso puede hervir a 110-115°C.</li>
-</ul>
-<h3>Reducciones Logarítmicas</h3>
-<p>Cuanto más concentrado está el líquido, más lenta es la reducción adicional:</p>
-<ul>
-<li>Reducir 1000ml a 500ml: rápido (50% del volumen).</li>
-<li>Reducir 500ml a 250ml: más lento.</li>
-<li>Reducir 250ml a 125ml: mucho más lento (mayor viscosidad).</li>
-</ul>
-<h2>Técnicas de Reducción</h2>
-<h3>Reducción a Fuego Lento (Método Clásico)</h3>
-<p><strong>Proceso:</strong></p>
-<ol>
-<li>Verter el líquido en cacerola ancha (mayor superficie = mayor evaporación).</li>
-<li>Calentar a fuego medio hasta que hierva suavemente.</li>
-<li>Reducir fuego para mantener una ebullición suave (no violenta).</li>
-<li>Dejar reducir hasta la consistencia deseada.</li>
-<li>Controlar frecuentemente para evitar quemado.</li>
-</ol>
-<p><strong>Ventajas:</strong> Control total, desarrollo gradual de sabores.</p>
-<h3>Reducción Rápida (Nappe)</h3>
-<p>Para cuando se necesita velocidad:</p>
-<ul>
-<li>Fuego alto, cacerola muy ancha.</li>
-<li>Revolver constantemente.</li>
-<li>Riesgo: quemado si no se controla.</li>
-</ul>
-<h3>Test de la Cuchara (Nappe)</h3>
-<p>Para verificar si una reducción está lista:</p>
-<ol>
-<li>Sumergir cuchara en la salsa.</li>
-<li>Pasar el dedo por el dorso de la cuchara.</li>
-<li>Si la línea permanece limpia (no se cierra), está en «nappe».</li>
-</ol>
-<h3>Reducción de Vinos</h3>
-<p><strong>Vino tinto:</strong></p>
-<ul>
-<li>Reduce a 1/4 o 1/8 de su volumen original.</li>
-<li>Desarrolla sabores frutales concentrados, taninos suavizados.</li>
-<li>Usar vinos de calidad (si no es bueno para beber, no para cocinar).</li>
-</ul>
-<p><strong>Vino blanco:</strong></p>
-<ul>
-<li>Reduce a 1/3 del volumen.</li>
-<li>Mantener acidez fresca.</li>
-<li>Ideal para salsas de pescado y ave.</li>
-</ul>
-<h2>Aplicaciones Profesionales</h2>
-<h3>Salsas Clásicas Basadas en Reducción</h3>
-<p><strong>Salsa Bordalesa:</strong></p>
-<ul>
-<li>Reducción de vino tinto + shallots + fondo de ternera + mantequilla.</li>
-<li>Reducción: vino a 1/4, luego integrar fondo.</li>
-</ul>
-<p><strong>Salsa Robert:</strong></p>
-<ul>
-<li>Reducción de vino blanco + mostaza + fondo.</li>
-<li>Mostaza añadida al final para no amargar.</li>
-</ul>
-<p><strong>Glaseados (Glazes):</strong></p>
-<ul>
-<li>Reducción extrema hasta consistencia de jarabe.</li>
-<li>Brillo intenso, sabor concentrado.</li>
-<li>Ejemplo: balsamic glaze (reducción de vinagre balsámico).</li>
-</ul>
-<h3>Reducción de Caldos</h3>
-<p><strong>Consommé:</strong></p>
-<ul>
-<li>Caldo clarificado reducido lentamente.</li>
-<li>Máxima concentración de sabor.</li>
-</ul>
-<p><strong>Fondos Concentrados:</strong></p>
-<ul>
-<li>Reducir fondos hasta 1/10 del volumen.</li>
-<li>Congelar en cubos para usar como «cubitos de sabor».</li>
-</ul>
-<h3>Postres y Aplicaciones Dulces</h3>
-<p><strong>Coulis de Frutas:</strong></p>
-<ul>
-<li>Jugo de fruta + azúcar, reducido hasta espesar.</li>
-<li>Colar para eliminar semillas.</li>
-</ul>
-<p><strong>Glaseados de Balsámico:</strong></p>
-<ul>
-<li>Vinagre balsámico reducido a 1/4 con un toque de azúcar.</li>
-<li>Textura de jarabe, sabor dulce-ácido complejo.</li>
-</ul>
-<p><strong>Cajeta/Dulce de Leche:</strong></p>
-<ul>
-<li>Leche + azúcar reducida lentamente.</li>
-<li>Caramelo y Maillard desarrollan color y sabor.</li>
-</ul>
+## Qué es una reducción
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Cafetería / Brunch</h3><p class="mt-2 text-muted-foreground">Apertura, cierre, barra y sala con plantilla específica de cafetería.</p><a href="/kit-tareas-cafeteria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=reduccion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Cafetería / Brunch por €12</a></aside>
+El agua se va en vapor. Lo que estaba disuelto se queda: sal, azúcares, ácidos, gelatina de un fondo, taninos de un vino. Menos volumen, más sabor por cucharada. Por eso se llama reducción: baja la cantidad, no se añade nada para espesar.
 
-<h2>Errores Comunes y Soluciones</h2>
-<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
-<thead>
-<tr style="background: #000000; color: white;">
-<th style="padding: 14px; border: 1px solid #ddd;">Problema</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Causa</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Solución</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Sabor quemado</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Fuego muy alto</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Reducir fuego, usar cacerola con fondo grueso</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Demasiado salado</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Reducción excesiva con caldo salado</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Usar caldo sin sal, corregir al final</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Demasiado ácido</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Reducción excesiva de vino</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Equilibrar con mantequilla o crema</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Grumos</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Almidones no disueltos</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Colar, usar roux o beurre manié</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;"><strong>Se separa</strong></td>
-<td style="padding: 12px; border: 1px solid #ddd;">Grasa liberada, emulsión rota</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Batir con túrmix, agregar agua</td>
-</tr>
-</tbody>
-</table></div>
-<h2>Equipamiento Óptimo</h2>
-<h3>Cacerolas para Reducción</h3>
-<p><strong>Características ideales:</strong></p>
-<ul>
-<li><strong>Fondo grueso:</strong> Distribución uniforme del calor, evita quemados.</li>
-<li><strong>Bordes vertedores:</strong> Facilitan el vertido controlado.</li>
-<li><strong>Superficie ancha:</strong> Mayor evaporación.</li>
-<li><strong>Material:</strong> Cobre (mejor), acero inoxidable (práctico).</li>
-</ul>
-<h3>Tamaño de Cacerola</h3>
-<ul>
-<li>El líquido no debe llenar más de 1/3 de la capacidad.</li>
-<li>Mayor superficie libre = mayor evaporación.</li>
-</ul>
-<h2>Preguntas Frecuentes</h2>
-<p><strong>¿Cuánto tiempo se tarda en reducir una salsa?</strong><br /> Depende del volumen inicial, superficie de evaporación y temperatura. Generalmente 15-45 minutos para reducciones medias.</p>
-<p><strong>¿Se puede reducir demasiado?</strong><br /> Sí. Una reducción excesiva puede volverse salada, amarga o caramelizada en exceso. Es mejor quedarse corto y ajustar.</p>
-<p><strong>¿Por qué mi reducción de vino está amarga?</strong><br /> Probablemente se redujo demasiado, concentrando taninos. Agregar un poco de agua o mantequilla puede suavizarla.</p>
-<p><strong>¿Puedo usar maicena para espesar en lugar de reducir?</strong><br /> Son técnicas diferentes. La maicena añade espesor pero no concentra sabores. La reducción desarrolla sabores complejos que no se logran con espesantes.</p>
-<p><strong>¿Cómo evito que se forme «nata» en la superficie?</strong><n> La «nata» (proteínas coaguladas) se puede retirar con una espumadera o filtrar la salsa al final. No afecta el sabor, solo la estética.</p>
+No es lo mismo que otras cosas que también cambian una salsa.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Sushi Bar</h3><p class="mt-2 text-muted-foreground">Arroz y corte de pescado, barra, y protocolo anisakis.</p><a href="/kit-tareas-sushi-bar?utm_source=blog&amp;utm_medium=banner&amp;utm_content=reduccion-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Sushi Bar por €14</a></aside>
+| Qué pasa | Qué hace | Ejemplo |
+| --- | --- | --- |
+| Reducción | Evapora agua y concentra lo que ya había | Un fondo que pasa a [napar](https://aichef.pro/blog/napar-una-salsa) |
+| Espesar con almidón | El [roux](https://aichef.pro/blog/roux-concepto-y-definicion) o una fécula atrapan agua | Una bechamel, un velouté |
+| [Hidrólisis](https://aichef.pro/blog/hidrolisis-concepto-definicion) | El agua parte moléculas | El colágeno de un fondo largo que ya es gelatina |
+| Montar con mantequilla | Se emulsiona grasa al final | Una salsa brillante, que puede seguir estando líquida |
 
-<h2>Conclusión</h2>
-<p>La <strong>reducción</strong> es una técnica que encapsula la esencia de la cocina: transformación mediante la aplicación controlada del calor. Este proceso, que aprovecha principios físicos y químicos fundamentales, permite al chef concentrar y potenciar sabores, crear texturas sedosas y desarrollar complejidad en preparaciones que de otro modo serían simples.</p>
-<p>Desde las salsas clásicas francesas hasta los glaseados modernos, la reducción sigue siendo una herramienta indispensable en la cocina profesional. Dominarla requiere paciencia, atención y comprensión, pero las recompensas son salsas y preparaciones de profundidad y carácter inigualables.</p>
-<div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
-<h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Domina Técnicas Clásicas con AI Chef Pro</h3>
-<p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para salsas, reducciones y técnicas de cocina profesional.<br />     Calculadoras de reducción y recetas paso a paso.   </p>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=reduccion-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR MIEMBRO AHORA →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     Desde 10 € al mes · Sin permanencia · 48.733+ recetas generadas   </p>
-</p></div>
-<p><strong>¿Listo para crear salsas profesionales?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=reduccion-concepto-definicion">AI Chef Pro</a>.</p>
+Un fondo puede hacer las dos primeras cosas en orden. Primero la cocción larga, que es hidrólisis. Después, ya colado, la reducción. Reducir no parte el colágeno: solo concentra la gelatina que ya se formó.
+
+Si el líquido no tenía cuerpo, reducir lo deja más sabroso y no lo convierte en salsa. Un vino reducido es intenso. No napa solo por haber perdido agua, salvo que lleve azúcar bastante como para volverse jarabe.
+
+## De dónde sale
+
+La operación es antigua: cualquier caldo que se deja al fuego pierde agua. Quien la escribió como técnica de salsa fue la cocina francesa del siglo XIX, y de ahí vienen los nombres que aún se usan. [Glace de viande](https://aichef.pro/blog/glace-de-viande) es un fondo oscuro reducido hasta un jarabe. La [demi-glace](https://aichef.pro/blog/demi-glace-concepto-y-definicion) clásica mezcla salsa española y fondo oscuro y los reduce hasta que queda salsa, no jarabe.
+
+En la práctica de hoy, «reducir» se dice de casi cualquier líquido que se cuece destapado a propósito: un jugo de asado, un vinagre, el fondo de una sartén después de desglasarla. El resultado depende de lo que hubiera dentro.
+
+## Cómo se hace
+
+<figure><img src="/blog-assets/2026/03/reduccion-interna.jpg" alt="Reducción de color ámbar cociendo a fuego suave en una sartén ancha" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+
+**1. Elige el recipiente.** Ancho y destapado. A igual cantidad de líquido, una sartén baja evapora antes que una olla estrecha, porque hay más superficie. El fondo grueso perdona un poco si el fuego se pasa.
+
+**2. Cuece a hervor suave.** Fuego medio o medio-bajo, con burbujas tranquilas. Un hervor violento salpica, pega en el borde y, si hay grasa, enturbia. Espuma de un fondo se retira con una cuchara: si se queda, la reducción sale sucia.
+
+**3. No tapes y no sales.** La sal se concentra al mismo ritmo que el sabor. Escoffier pedía los fondos sin sal precisamente por esto, y la ficha de la demi-glace lo recuerda. Prueba cuando el volumen ya se ha quedado quieto.
+
+**4. Para en el punto, no en un minuto.** Para una salsa de carne, el punto habitual es el [nappé](https://aichef.pro/blog/napar-una-salsa): cuchara cubierta y surco que no se cierra. Para un vino que luego va a recibir fondo, muchos cocineros llegan más lejos, hasta que queda almibarado o casi seco. Eso se llama au sec. No es una medida universal: es el punto en el que el vino ya no sabe a vino crudo.
+
+## Cómo saber que está y cómo corregirla
+
+La cuchara manda. Si el líquido se escurre y deja el metal a la vista, sigue. Si cubre y el dedo abre un surco limpio, una salsa de fondo ya napa. Si parece mermelada y sabe salada o amarga, te has pasado.
+
+**Quedó salada.** Reducir más la empeora. Aligera con fondo o agua sin sal, a cucharadas, y vuelve a probar. El sabor baja junto con la sal. Si el daño es grande, no se disimula: se parte la salsa con algo neutro o se hace otra.
+
+**Se pegó el fondo.** Lo quemado amarga enseguida. No lo rasques para aprovecharlo. Vierte con cuidado lo que aún sepa limpio y deja la costra en la sartén. Si ya sabe a quemado, se tira.
+
+**No espesa.** Un fumet o un fondo corto de verdura no tienen la gelatina de un [fondo oscuro](https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion). Reducirlos los concentra y, pasado un punto, los amarga. El [fumet de pescado](https://aichef.pro/blog/fumet-de-pescado) se retira en cuanto sabe limpio. Si hace falta cuerpo, el arreglo es otro: un poco de [beurre manié](https://aichef.pro/blog/beurre-manie), una fécula, o apoyar la salsa en un fondo que sí gelifique. No más minutos de espina.
+
+**Se cortó al montarla.** La reducción ya estaba hecha y la mantequilla se separó porque el fuego seguía fuerte. Aparta la sartén, añade un poco de líquido frío y bate. El método completo está en [montar al burro](https://aichef.pro/blog/montar-al-burro): mantequilla fría, fuera del hervor.
+
+**La tapa estaba puesta «para que no ensucie».** El vapor vuelve al líquido. Destapa, sube un poco la superficie (pasa a una sartén más ancha) y sigue.
+
+## En el servicio
+
+La reducción de un vino o de un vinagre se puede dejar hecha en la mise en place y terminar la salsa en el momento. Una salsa ya montada con mantequilla o con nata no debería hervir en el baño: se mantiene caliente, por debajo del hervor, y se aligera si al esperar se espesó demasiado.
+
+En el servicio, una reducción sirve para mojar, no para tapar el plato. Una cucharada que napa la carne basta. Si se escurre hasta el borde del plato, estaba líquida. Si se queda un pegote, estaba demasiado espesa: un chorrito de fondo caliente lo abre.
+
+El jugo de una sartén de carne es la reducción más corta que hay. Se retira la pieza, se tira la grasa sobrante, se desglasa con vino o con fondo y se deja reducir hasta que cubra la cuchara. Ahí está la salsa del plato.
+
+## Variantes y con qué se sirve
+
+**Fondo oscuro.** Es la reducción de las carnes. Llevada a jarabe es glace. Parada cuando napa, y montada o no con mantequilla, es la salsa de un asado, una carrillera o un lomo. El [fondo blanco](https://aichef.pro/blog/fondo-blanco-concepto-y-definicion) se reduce menos y con más cuidado: tiene menos gelatina y se nota antes la sal.
+
+**Vino tinto.** Va con ternera, cordero y setas. Se reduce hasta perder el pico de alcohol y quedar frutal. Si el tanino raspa, no se arregla con azúcar: o se alarga con fondo, o el vino no era para la cazuela.
+
+**Vino blanco y vinagre.** Son la base del [beurre blanc](https://aichef.pro/blog/beurre-blanc): chalota, vino y vinagre reducidos a un par de cucharadas, y después la mantequilla. Sin esa reducción corta y ácida, la salsa es mantequilla fundida.
+
+**Gastrique y balsámico.** Un [gastrique](https://aichef.pro/blog/gastrique) es azúcar caramelizado y vinagre, reducidos juntos: dulce y ácido, para cerdo, pato o una verdura amarga. El [balsámico](https://aichef.pro/blog/balsamico-concepto-definicion) reducido es un glaseado, no una salsa de carne. Unas gotas sobre un queso o una fresa. Si lo hierves hasta quedar negro, amarga.
+
+**Jugo de frutas.** Un zumo reducido queda dulce y espeso, útil en un postre o en un contraste ácido si partes de un cítrico. No es un coulis: el coulis es fruta triturada, no un líquido evaporado.
+
+## Preguntas frecuentes
+
+**¿Qué es una reducción en cocina?**
+Es un líquido cocido sin tapa para evaporar agua. El sabor y la sal se quedan en menos volumen. Un fondo, un vino o un vinagre pueden reducirse. La harina no forma parte de la técnica.
+
+**¿Hay que tapar la sartén?**
+No. La tapa devuelve el vapor al líquido y la reducción se para. Se cuece destapado, en un recipiente ancho, a fuego que mantenga un hervor suave.
+
+**¿Cuándo se echa la sal?**
+Al final, cuando el volumen ya no baja. Si el líquido entró salado, al reducirlo sabe mucho más salado. Un fondo para reducir se hace sin sal, o muy justo de sal.
+
+**¿En qué se diferencia de una salsa con roux?**
+El roux espesa con almidón cocido en grasa. La reducción espesa, cuando espesa, porque se va el agua y queda la gelatina del fondo o el azúcar del líquido. Una salsa puede usar las dos cosas, pero no son el mismo trabajo.
+
+**¿Cómo sé que ya está?**
+Con la prueba de la cuchara, el punto nappé: el dorso queda cubierto y, si pasas el dedo, el surco se mantiene. Un glaseado de vinagre va más lejos y queda almibarado. El reloj no lo dice.
+
+**¿Sirve cualquier vino?**
+Sirve un vino que beberías. Al reducirlo se van parte del alcohol y del agua, y se quedan el ácido, el tanino y el defecto, si lo tenía. Un vino avinagrado o sucio sale peor, no mejor.

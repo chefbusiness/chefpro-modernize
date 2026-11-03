@@ -1,203 +1,134 @@
 ---
-title: "Mandolina de cocina: qué es y cómo se usa"
-description: "La mandolina es un utensilio con cuchilla para cortar láminas uniformes. Descubre sus tipos, la tabla de cortes, cómo usarla con seguridad y limpiarla."
+title: "Qué es una mandolina: cortes, cuchillas y seguridad"
+description: "Una mandolina es un utensilio de cuchilla para láminas del mismo grosor. Tipos de cuchilla, el protector, el guante anticorte y cómo usarla."
 pubDate: 2026-03-08
-modDate: 2026-08-31
+modDate: 2026-11-03
 category: glosario
-image: /blog-assets/2026/03/mandolina-featured.jpg
-imageAlt: "Mandolina: Concepto y Definición"
+tags: ["mandolina", "cortes", "utensilios"]
 lang: es
+image: /blog-assets/2026/03/mandolina-featured.jpg
+imageAlt: "Mandolina de acero con regulador de grosor y láminas de pepino sobre mármol"
 wpId: 3182
+translations:
+  es: "mandolina-concepto-definicion"
+  en: "what-is-a-mandoline-slicer"
+definedTerm:
+  name: "Mandolina"
+  description: "Una mandolina es un utensilio con una cuchilla fija y una rampa por la que se desliza el alimento. Saca láminas, bastones o juliana del mismo grosor en cada pasada. Ese corte cuece igual y se ve igual en el plato. La cuchilla va al descubierto: se usa con el protector y con un guante anticorte."
+faq:
+  - q: "¿Qué es una mandolina de cocina?"
+    a: "Es un utensilio con una cuchilla fija. El alimento se desliza por una rampa y sale en láminas o en tiras del mismo grosor. No es el instrumento de cuerda, aunque el nombre venga de ahí."
+  - q: "¿Qué significa mandolina cuando no es el instrumento?"
+    a: "En cocina es el utensilio de corte. En música es el instrumento de cuerda, que se escribe igual. Si la frase habla de láminas, juliana o de un protector de dedos, es el utensilio."
+  - q: "¿Cómo se usa sin cortarse?"
+    a: "Con el protector puesto, el alimento bien pinchado y la mandolina quieta. Un guante anticorte en la mano que sujeta añade una capa. Cuando el trozo ya es pequeño, se para. Casi todos los cortes llegan en esa última pasada."
+  - q: "¿Hace falta el guante si ya uso el protector?"
+    a: "El protector es lo primero: mantiene los dedos fuera de la cuchilla. El guante anticorte no lo sustituye, lo respalda si el alimento se suelta o si la mano se va. En una cocina profesional se usan los dos."
+  - q: "¿Qué cuchillas lleva?"
+    a: "La lisa corta láminas. La de juliana corta bastones. La ondulada, o de gofre, marca ondas o rejilla. No todos los modelos traen las tres: las de casa a veces solo cambian el grosor de la lisa."
+  - q: "¿Qué alimentos no conviene pasar?"
+    a: "Los que no asientan: un tomate muy maduro, un aguacate, un trozo redondo que baila. Se les hace un corte plano con el cuchillo antes, o se dejan para el cuchillo. Un alimento duro y grande, como una calabaza entera, tampoco: primero se parte."
+faqInBody: true
 ---
 
-<p>La <strong>mandolina</strong> es uno de los utensilios más versátiles y eficientes en la cocina profesional. Esta herramienta de corte permite obtener láminas, rodajas y julianas de grosor perfectamente uniforme en una fracción del tiempo que tomaría hacerlo con cuchillo. Aunque su uso requiere respeto y precaución debido a la extremada nitidez de sus cuchillas, dominar la mandolina es una habilidad que transforma la eficiencia y la presentación en cualquier cocina.</p>
-<p>En este artículo del glosario culinario de AI Chef Pro, exploraremos qué es exactamente una mandolina, los diferentes tipos disponibles, técnicas de uso seguro y profesional, y cómo esta herramienta se ha convertido en indispensable tanto en restaurantes de alta cocina como en cocinas domésticas exigentes.</p>
-<h2>¿Qué es una Mandolina?</h2>
-<p>Una <strong>mandolina</strong> es un <strong>utensilio de cocina diseñado para cortar alimentos en rodajas, láminas o tiras de grosor uniforme y preciso</strong>. Consiste en una plataforma plana, generalmente inclinada, con una o más cuchillas afiladas integradas en uno de sus extremos.</p>
-<p>El funcionamiento es simple pero efectivo: el alimento se desliza a lo largo de la superficie de la mandolina, pasando por la cuchilla que corta láminas del grosor deseado. La uniformidad de las piezas resultantes garantiza una cocción homogénea y una presentación profesional imposible de lograr con el corte manual.</p>
-<h3>Componentes principales:</h3>
-<ul>
-<li><strong>Plataforma/Rampa:</strong> Superficie por donde se desliza el alimento.</li>
-<li><strong>Cuchilla:</strong> Generalmente de acero inoxidable de alta calidad.</li>
-<li><strong>Regulador de grosor:</strong> Permite ajustar el espesor del corte (1-10 mm).</li>
-<li><strong>Protector de dedos:</strong> Elemento de seguridad esencial.</li>
-<li><strong>Pies antideslizantes:</strong> Estabilidad durante el uso.</li>
-</ul>
-<p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/mandolina-cortes.jpg" alt="Variedades de cortes con mandolina: láminas de patata, calabacín y zanahoria" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
-<h2>Historia y Evolución de la Mandolina</h2>
-<p>La mandolina moderna tiene sus raíces en la <strong>tradición culinaria europea del siglo XIX</strong>, aunque herramientas similares para cortar finamente alimentos existían desde la antigüedad. El nombre «mandolina» se popularizó en Francia, posiblemente por la similitud de la forma del utensilio con el instrumento musical de cuerda.</p>
-<p>La evolución de la mandolina ha pasado por varias etapas:</p>
-<ul>
-<li><strong>Siglo XIX:</strong> Primeras mandolinas de madera con cuchillas fijas.</li>
-<li><strong>Principios del XX:</strong> Introducción de mandolinas metálicas ajustables.</li>
-<li><strong>Finales del XX:</strong> Mandolinas profesionales con múltiples cuchillas intercambiables.</li>
-<li><strong>Actualidad:</strong> Modelos con sistemas de seguridad avanzados y materiales sintéticos de alta resistencia.</li>
-</ul>
-<p>La marca <strong>De Buyer</strong> francesa, fundada en 1835, popularizó las mandolinas profesionales que hoy son estándar en la industria gastronómica.</p>
-<h2>Tipos de Mandolina</h2>
-<h3>Mandolinas Domésticas</h3>
-<p>Diseñadas para uso ocasional en casa. Características:</p>
-<ul>
-<li>Cuchillas fijas o limitadas opciones de corte.</li>
-<li>Material: plástico o acero inoxidable básico.</li>
-<li>Grosores predefinidos (generalmente 2-3 opciones).</li>
-<li>Precio: 20-60€.</li>
-<li>Ideal para: cocineros casuales, preparaciones simples.</li>
-</ul>
-<h3>Mandolinas Profesionales</h3>
-<p>Equipamiento estándar en restaurantes y cocinas industriales:</p>
-<ul>
-<li>Cuchillas intercambiables (láminas, juliana, ondulado, brunoise).</li>
-<li>Construcción en acero inoxidable de grado quirúrgico.</li>
-<li>Regulación continua del grosor (1-10 mm).</li>
-<li>Sistema de seguridad reforzado.</li>
-<li>Precio: 80-300€.</li>
-<li>Marcas líderes: Bron Coucke, De Buyer, Matfer Bourgeat.</li>
-</ul>
+Una mandolina es un utensilio con una cuchilla fija y una rampa por la que se desliza el alimento. Saca láminas, bastones o juliana del mismo grosor en cada pasada. Ese corte cuece igual y se ve igual en el plato. La cuchilla va al descubierto: se usa con el protector y con un guante anticorte.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit Control de Inventario</h3><p class="mt-2 text-muted-foreground">Inventario, compras, mermas y proveedores.</p><a href="/kit-inventario?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mandolina-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit Control de Inventario por €14</a></aside>
+<aside class="not-prose my-8 rounded-xl border border-primary/20 bg-primary/5 p-6"><p class="text-sm font-semibold uppercase tracking-wide text-primary">Cocina con agentes de IA</p><p class="mt-2 text-foreground">Pide a los agentes de IA de AI Chef Pro fichas de corte y preparaciones con este utensilio, adaptadas a tu cocina.</p><p class="mt-4"><a class="inline-block rounded-lg bg-primary px-5 py-2.5 font-semibold text-primary-foreground" href="https://aichef.pro/usos/rol/chef-jefe-cocina?utm_source=web&amp;utm_medium=glosario&amp;utm_content=mandolina-concepto-definicion">Ver la ficha de chef jefe de cocina</a></p></aside>
 
-<h3>Mandolinas Japonesas (Benriner)</h3>
-<p>Especializadas en cortes ultra-finos:</p>
-<ul>
-<li>Diseño compacto y ligero.</li>
-<li>Cuchillas de acero japonés extremadamente afiladas.</li>
-<li>Ideal para vegetales asiáticos, pickles, carpaccios vegetales.</li>
-<li>Permiten cortes de menos de 1 mm de grosor.</li>
-</ul>
-<h2>Tabla de Cortes y Aplicaciones</h2>
-<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
-<thead>
-<tr style="background: #000000; color: white;">
-<th style="padding: 14px; border: 1px solid #ddd;">Tipo de Corte</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Grosor</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Aplicación</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Ejemplo</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;">Láminas finas</td>
-<td style="padding: 12px; border: 1px solid #ddd;">1-2 mm</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Carpaccio, chips</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Remolacha, chirivía</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;">Láminas medianas</td>
-<td style="padding: 12px; border: 1px solid #ddd;">3-4 mm</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Gratinados, milhojas</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Patata, calabacín</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;">Juliana</td>
-<td style="padding: 12px; border: 1px solid #ddd;">3&#215;3 mm</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Salteados, wok</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Zanahoria, pimiento</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;">Bastón</td>
-<td style="padding: 12px; border: 1px solid #ddd;">6&#215;6 mm</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Guarniciones, fritas</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Patata, batata</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;">Ondulado</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Variable</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Decoración, chips</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Calabacín, remolacha</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;">Brunoise</td>
-<td style="padding: 12px; border: 1px solid #ddd;">3x3x3 mm</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Garnishes, tartares</td>
-<td style="padding: 12px; border: 1px solid #ddd;">Zanahoria, apio</td>
-</tr>
-</tbody>
-</table></div>
-<h2>Técnica de Uso Profesional</h2>
-<h3>Paso 1: Preparación</h3>
-<ol>
-<li><strong>Estabilizar:</strong> Colocar la mandolina sobre superficie plana y seca, asegurando que los pies antideslizantes hagan contacto.</li>
-<li><strong>Seleccionar cuchilla:</strong> Elegir el tipo de corte deseado.</li>
-<li><strong>Ajustar grosor:</strong> Regular según la preparación (empezar con pruebas).</li>
-<li><strong>Preparar alimento:</strong> Cortar el vegetal en trozos manejables, eliminando extremos irregulares.</li>
-</ol>
-<h3>Paso 2: Corte</h3>
-<ol>
-<li><strong>Posición:</strong> Sujetar el alimento con la mano dominante desde arriba.</li>
-<li><strong>Ángulo:</strong> Mantener el alimento perpendicular a la cuchilla.</li>
-<li><strong>Movimiento:</strong> Deslizar en un solo movimiento fluido y constante, aplicando presión uniforme.</li>
-<li><strong>Ritmo:</strong> No forzar la velocidad; la cuchilla hace el trabajo.</li>
-</ol>
-<h3>Paso 3: Seguridad</h3>
-<ol>
-<li><strong>Protector:</strong> Usar SIEMPRE el protector de dedos cuando el alimento sea menor de 5 cm.</li>
-<li><strong>Guante:</strong> Considerar guante anticorte (nivel 5) para protección adicional.</li>
-<li><strong>Atención:</strong> Nunca distraerse mientras se usa la mandolina.</li>
-<li><strong>Limpieza:</strong> Limpiar inmediatamente después del uso para evitar resbalones.</li>
-</ol>
-<p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/mandolina-seguridad.jpg" alt="Mandolina con protector de seguridad y guante anticorte" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
+## Qué es una mandolina
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Marisquería</h3><p class="mt-2 text-muted-foreground">Vivero, cadena de frío y APPCC de producto vivo.</p><a href="/kit-tareas-marisqueria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mandolina-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Marisquería por €14</a></aside>
+La cuchilla no se mueve. Se mueve el alimento. Por eso el grosor sale igual en la primera lámina y en la última, algo que con el cuchillo depende de la mano y del cansancio. En un gratinado, unas chips o una juliana para saltear, esa igualdad se nota al cocer: los trozos gruesos quedan crudos cuando los finos ya se han pasado.
 
-<h2>Seguridad: Reglas de Oro</h2>
-<p>Las lesiones con mandolina son frecuentes en cocinas profesionales. Sigue estas reglas:</p>
-<ul>
-<li><strong>🚨 NUNCA tocar la cuchilla:</strong> Ni siquiera «rápidamente» para limpiar o ajustar.</li>
-<li><strong>🚨 Protector obligatorio:</strong> Cuando el alimento quede pequeño, usar SIEMPRE el protector de dedos.</li>
-<li><strong>🚨 No recoger caídos:</strong> Si un trope cae cerca de la cuchilla, no intentar agarrarlo.</li>
-<li><strong>🚨 Guante recomendado:</strong> En uso profesional continuo, usar guante anticorte en mano no dominante.</li>
-<li><strong>🚨 Cuchillas afiladas:</strong> Las cuchillas desafiladas son más peligrosas (requieren más fuerza). Mantener afiladas o reemplazar.</li>
-<li><strong>🚨 Limpieza segura:</strong> Usar cepillo, nunca los dedos, para limpiar la cuchilla.</li>
-</ul>
-<h2>Mantenimiento de la Mandolina</h2>
-<h3>Limpieza</h3>
-<ul>
-<li>Limpiar inmediatamente después del uso.</li>
-<li>Usar agua caliente y jabón.</li>
-<li>Cepillo de cerdas para la cuchilla (nunca esponja que se desgarre).</li>
-<li>Secar completamente para evitar oxidación.</li>
-</ul>
-<h3>Conservación de Cuchillas</h3>
-<ul>
-<li>Almacenar con protector de cuchilla colocado.</li>
-<li>No apilar con otros utensilios que puedan dañar el filo.</li>
-<li>Reemplazar cuchillas cuando se desafilen (no intentar afilar).</li>
-</ul>
-<h2>Usos Profesionales de la Mandolina</h2>
-<h3>Restaurantes Fine Dining</h3>
-<p>La mandolina es esencial para:</p>
-<ul>
-<li><strong>Carpaccios vegetales:</strong> Láminas finísimas de remolacha, chirivía o calabacín.</li>
-<li><strong>Milhojas:</strong> Láminas uniformes de patata, berenjena o calabacín.</li>
-<li><strong>Chips:</strong> Rodajas consistentes para fritura perfecta.</li>
-<li><strong>Garnishes:</strong> Juliana precisa para decoración.</li>
-<li><strong>Tartares:</strong> Brunoise perfecta para tartares vegetales.</li>
-</ul>
-<h3>Cocina Asiática</h3>
-<p>Las mandolinas japonesas permiten:</p>
-<ul>
-<li>Cortes ultra-finos para pickles (tsukemono).</li>
-<li>Rodajas consistentes para hotpot (shabu-shabu).</li>
-<li>Preparación rápida de vegetales para wok.</li>
-</ul>
-<h2>Preguntas Frecuentes sobre Mandolina</h2>
-<p><strong>¿Puedo usar la mandolina para carne o pescado?</strong><br /> Sí, pero debe estar parcialmente congelado (15-20 min en congelador) para mantener la forma. Ideal para carpaccios de ternera o salmón. Usar cuchilla exclusiva para proteger contra contaminación cruzada.</p>
-<p><strong>¿Por qué mis cortes salen irregulares?</strong><br /> Probablemente el alimento no está perpendicular a la cuchilla o la presión es inconsistente. También puede ser que la cuchilla esté desafilada y «agarre» el alimento.</p>
-<p><strong>¿Cuánto duran las cuchillas de una mandolina profesional?</strong><br /> Con uso diario profesional, 6-12 meses. En uso doméstico ocasional, pueden durar años. Señales de desgaste: cortes irregulares, necesidad de más presión, desgarros en lugar de cortes limpios.</p>
-<p><strong>¿Es mejor mandolina o procesador de alimentos?</strong><br /> Son herramientas diferentes. El procesador es más rápido para grandes cantidades pero no ofrece la precisión ni la uniformidad de la mandolina. Para presentación profesional, la mandolina es insustituible.</p>
-<p><strong>¿Puedo llevar una mandolina en equipaje de mano?</strong><br /> NO. Las cuchillas de mandolina están prohibidas en equipaje de mano en aeropuertos. Debe ir en equipaje facturado.</p>
+No sustituye al cuchillo. Un brunoise, un cincelado o una pieza con hueso siguen siendo trabajo de hoja. La mandolina entra cuando hace falta mucho corte repetido y fino. Los nombres de esos cortes están en la ficha de [tipos de cortes](https://aichef.pro/blog/tipos-de-cortes-en-la-cocina-profesional).
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Plan de Negocio: Food Truck</h3><p class="mt-2 text-muted-foreground">Plan financiero Excel, inversión inicial y checklist de apertura.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=mandolina-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Plan de Negocio: Food Truck por €29</a></aside>
+Las piezas que importan son pocas:
 
-<h2>Conclusión</h2>
-<p>La <strong>mandolina</strong> es una herramienta de precisión que separa la cocina amateur de la profesional. Su capacidad para producir cortes uniformes consistentemente no solo mejora la estética de los platos, sino que garantiza una cocción homogénea y optimiza los tiempos de preparación.</p>
-<p>Sin embargo, es una herramienta que exige respeto. Las lesiones con mandolina son frecuentes y generalmente graves debido a la nitidez de sus cuchillas. La seguridad debe ser la prioridad absoluta: protector de dedos, guante anticorte y atención plena son obligatorios.</p>
-<p>Para el chef profesional, dominar la mandolina es tan importante como dominar el cuchillo chef. Es una extensión de la técnica que, usada correctamente, eleva la calidad y la eficiencia de la cocina a niveles superiores.</p>
-<div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
-<h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Domina Técnicas Profesionales con AI Chef Pro</h3>
-<p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para perfeccionar tu técnica culinaria.<br />     Cortes, preparaciones y creatividad potenciada.   </p>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=mandolina-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR AI CHEF MIEMBRO →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     10 €/mes, sin permanencia • 48.733+ recetas generadas   </p>
-</p></div>
-<p><strong>¿Listo para perfeccionar tu técnica de corte?</strong> Descubre más herramientas y recursos profesionales en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=mandolina-concepto-definicion">AI Chef Pro</a>.</p>
+- La rampa, por donde baja el alimento.
+- La cuchilla, fija en el extremo.
+- El regulador de grosor, de dial continuo o de muescas.
+- El protector de dedos, también llamado guarda o empujador, con púas para clavar el alimento.
+- Los pies, que tienen que quedarse quietos.
+
+## De dónde viene el nombre
+
+Mandolina es el nombre del instrumento de cuerda. El utensilio se llamó así en la cocina francesa por el parecido: una tabla inclinada, con algo que cruza como las cuerdas. No hay un inventor con fecha firme. La herramienta, de madera y con hoja fija, ya estaba en las cocinas europeas del siglo XIX. Lo que cambió después fue el metal, el grosor regulable y las cuchillas de quita y pon.
+
+Hoy conviven tres familias. La francesa de patas, con cuchillas intercambiables, es la de partida en un restaurante. La japonesa de mano, corta y ligera, es la de los cortes muy finos: el modelo que todo el mundo reconoce es la Benriner. La de plástico, con dos o tres grosores fijos, basta en casa para una ensalada y se queda corta si el servicio pide juliana y gofre el mismo día.
+
+## Tipos de cuchilla
+
+| Cuchilla | Qué sale | Para qué |
+| --- | --- | --- |
+| Lisa | Láminas del grosor que marques | Chips, gratinados, milhojas de verdura, carpaccio |
+| Juliana | Bastones finos | Salteados, una cama de verdura, wok |
+| Ondulada o de gofre | Lámina con ondas, o rejilla si se gira el alimento | Chips decoradas, ensalada |
+| De casa, solo lisa | El mismo corte, con menos grosores | Uso ocasional |
+
+El grosor se mira en el regulador, no se adivina. Una lámina para gratinar patata es más gruesa que una para una chip que tiene que secarse en el horno. Si el modelo no trae números, se hace una pasada de prueba y se corrige antes de seguir con toda la partida.
+
+La juliana de mandolina no es un bastón de cuchillo medido al milímetro. Es regular, que es lo que pide la cocción. Si después hace falta un dado pequeño, esas tiras se reúnen y se cortan con el cuchillo. La mandolina no hace el dado sola.
+
+<figure><img src="/blog-assets/2026/03/mandolina-cortes.jpg" alt="Mandolina con protector de alimentos y guante anticorte, cortando patata en láminas" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;" /></figure>
+
+## Cómo se usa
+
+**1. Déjala quieta.** Superficie seca y plana. Si los pies resbalan, un paño húmedo debajo de la tabla frena el movimiento. Una mandolina que anda por la encimera es la que corta un dedo.
+
+**2. Prepara el alimento.** Lávalo, sécalo y hazle una cara plana con el cuchillo si es redondo. Una patata o una remolacha que ruedan no bajan rectas. La [mise en place](https://aichef.pro/blog/mise-en-place) va antes: bol para lo cortado, y el resto de la partida ya listo, para no dejar la mandolina a medias con la cuchilla al aire.
+
+**3. Pincha y baja.** El alimento va en el protector, con las púas bien clavadas. Se desliza de arriba abajo, sin apretar fuerte: la cuchilla corta, el peso de más solo dobla la lámina o engancha. Una pasada, se recoge, se vuelve a subir. No se hace un vaivén corto encima del filo.
+
+**4. Para a tiempo.** Cuando el trozo ya no llena el protector, se acaba. Ese resto va al fondo o a un sofrito. No se empuja con los dedos «para aprovecharlo».
+
+## Seguridad: protector y guante
+
+La cuchilla está donde irían los dedos si se sujetara el alimento con la mano. Por eso el protector no es un accesorio: es parte del utensilio. Se usa también para cuatro láminas. Quitarlo «un momento» es como llegan casi todos los cortes.
+
+El guante anticorte, de fibra resistente o de malla, va en la mano que guía el protector. No convierte la mandolina en un juguete. Si el alimento se suelta, el guante da un margen que la piel no da. La otra mano sujeta el marco, lejos de la hoja.
+
+Otras reglas que se cumplen siempre:
+
+- La cuchilla afilada resbala menos que la mellada. Una hoja roma pide fuerza, y la fuerza es la que se va de lado.
+- No se pasa la mano por el filo para quitar un resto. Se usa el cepillo o se desmonta la cuchilla y se lava desde el lomo.
+- No se deja en el fregadero, entre platos. Se lava, se seca y se guarda con la cuchilla cubierta, en su posición cerrada si el modelo la tiene, fuera del alcance de quien no la espera.
+- No se ajusta el grosor con el aparato en marcha ni con el alimento ya apoyado en la hoja.
+
+## Errores y cómo evitarlos
+
+**Apurar el último centímetro.** Es el corte típico. Se para antes. El resto no justifica una uña.
+
+**Trabajar sin cara plana.** El alimento baila, la lámina sale en cuña y la mano corrige con un giro. Ese giro es el que acerca los dedos. Se aplana antes con el cuchillo.
+
+**Apretar hacia abajo.** La lámina se aplasta, se parte o se engancha. Se afloja la presión y, si sigue atascada, se para y se retira el trozo con el protector, no con el dedo.
+
+**Elegir un alimento blando.** Un tomate maduro se hace puré contra la cuchilla. Un aguacate también. Esos van al cuchillo. La mandolina quiere algo firme: patata, zanahoria, calabacín, remolacha, hinojo, manzana, col, rábano, pepino.
+
+**Limpiarla a ciegas.** Muchos cortes no son al laminar, son al fregar. Se mira la hoja, se pasa un cepillo en dirección contraria al filo y se seca del todo. Guardarla húmeda oxida el acero.
+
+## Para qué se usa en el servicio
+
+Una partida de patatas para gratinar, cien láminas del mismo grosor, sale en minutos y cuece pareja. Una juliana de zanahoria y puerro es la cama de un [papillote](https://aichef.pro/blog/papillote-concepto-definicion): si la verdura va gorda, el pescado está hecho y la verdura sigue cruda. Una lámina fina de remolacha o de champiñón es un carpaccio vegetal. Una chip de patata o de alcachofa, secada en el horno, es guarnición.
+
+En el servicio no se improvisa el grosor. Se deja marcado en la ficha el número del regulador, igual que se marca un corte de cuchillo. Si hoy sale más fina que ayer, el tiempo de horno ya no vale.
+
+También sirve fuera del salado. Manzana o pera en lámina fina para un milhojas, o chocolate que no: el chocolate no se mandolina. La fruta firme, sí, siempre con protector.
+
+## Preguntas frecuentes
+
+**¿Qué es una mandolina de cocina?**
+Es un utensilio con una cuchilla fija. El alimento se desliza por una rampa y sale en láminas o en tiras del mismo grosor. No es el instrumento de cuerda, aunque el nombre venga de ahí.
+
+**¿Qué significa mandolina cuando no es el instrumento?**
+En cocina es el utensilio de corte. En música es el instrumento de cuerda, que se escribe igual. Si la frase habla de láminas, juliana o de un protector de dedos, es el utensilio.
+
+**¿Cómo se usa sin cortarse?**
+Con el protector puesto, el alimento bien pinchado y la mandolina quieta. Un guante anticorte en la mano que sujeta añade una capa. Cuando el trozo ya es pequeño, se para. Casi todos los cortes llegan en esa última pasada.
+
+**¿Hace falta el guante si ya uso el protector?**
+El protector es lo primero: mantiene los dedos fuera de la cuchilla. El guante anticorte no lo sustituye, lo respalda si el alimento se suelta o si la mano se va. En una cocina profesional se usan los dos.
+
+**¿Qué cuchillas lleva?**
+La lisa corta láminas. La de juliana corta bastones. La ondulada, o de gofre, marca ondas o rejilla. No todos los modelos traen las tres: las de casa a veces solo cambian el grosor de la lisa.
+
+**¿Qué alimentos no conviene pasar?**
+Los que no asientan: un tomate muy maduro, un aguacate, un trozo redondo que baila. Se les hace un corte plano con el cuchillo antes, o se dejan para el cuchillo. Un alimento duro y grande, como una calabaza entera, tampoco: primero se parte.
