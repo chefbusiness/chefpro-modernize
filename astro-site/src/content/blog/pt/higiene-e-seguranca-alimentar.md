@@ -2,7 +2,7 @@
 title: "Higiene e segurança alimentar na restauração: as regras de ouro que protegem a sua cozinha"
 description: "Saiba como garantir a higiene e segurança alimentar na sua cozinha: regras de higiene pessoal, armazenagem, limpeza vs desinfeção e plano de higienização."
 pubDate: 2026-08-22
-modDate: 2026-08-22
+modDate: 2026-11-04
 category: gestao-de-restaurantes
 tags: ["higiene e segurança alimentar", "boas práticas", "haccp", "asae", "restauração"]
 image: /blog-assets/2026/08/higiene-pt-destacada.jpg
@@ -104,7 +104,7 @@ faq:
 
 <p>Desinfetar por cima da gordura não serve de nada. O desinfetante precisa de uma superfície limpa para atuar; se houver matéria orgânica à frente, fica neutralizado. Por isso, o detergente faz o trabalho grosso e o desinfetante faz o trabalho fino — sempre nesta ordem, e com o tempo de contacto que o fabricante indica. Não vale passar o desinfetante e limpar logo a seguir, como quem apaga um risco: o produto precisa de tempo para agir.</p>
 
-<p>Os produtos de limpeza e desinfeção têm de ser aptos para uso alimentar e guardados fora da zona de alimentos, fechados e rotulados. Nunca ao lado das facas, nunca perto da zona de confeção. E há um detalhe que vale uma cozinha inteira: o pano multiusos é um vetor de <a href="https://aichef.pro/pt/blog/contaminacao-cruzada">contaminação cruzada</a>. Panos dedicados por zona e trocados a cada turno, ou descartáveis. Um pano que limpa a bancada de cru e depois passa pelo pronto-a-comer é uma catástrofe silenciosa. Na padaria, a farinha no ar é outro veículo: a forma de a escrever na ficha da massa mãe está em <a href="https://aichef.pro/pt/blog/massa-mae">massa mãe</a>.</p>
+<p>Os produtos de limpeza e desinfeção têm de ser aptos para uso alimentar e guardados fora da zona de alimentos, fechados e rotulados. Nunca ao lado das facas, nunca perto da zona de confeção. E há um detalhe que vale uma cozinha inteira: o pano multiusos é um vetor de <a href="https://aichef.pro/pt/blog/contaminacao-cruzada">contaminação cruzada</a>. Panos dedicados por zona e trocados a cada turno, ou descartáveis. Um pano que limpa a bancada de cru e depois passa pelo pronto-a-comer é uma catástrofe silenciosa. Na padaria, a farinha no ar é outro veículo: a forma de a escrever na ficha da massa mãe está em <a href="https://aichef.pro/pt/blog/massa-mae">massa mãe</a>. Um garum de peixe, salgado ou com koji, é outro lote de produção: o método e os alergénios estão em <a href="https://aichef.pro/pt/blog/garum">garum</a>.</p>
 
 <p>Para que isto não fique no plano das intenções, o plano de higienização deve ser explícito. Uma forma simples de o organizar é esta:</p>
 

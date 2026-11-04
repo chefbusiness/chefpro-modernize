@@ -2,7 +2,7 @@
 title: "Massa mãe na padaria: refrescos, hidratação e fornada"
 description: "Massa mãe na produção de padaria: manutenção, refrescos, hidratação, temperatura medida e planificação da fornada. Não é uma receita de pão caseiro."
 pubDate: 2026-11-02
-modDate: 2026-11-02
+modDate: 2026-11-04
 category: tecnica-e-receitas
 tags: ["massa mãe", "padaria", "refresco", "hidratação", "panificação"]
 image: /blog-assets/2026/07/prefermentos-comparativa.jpg
@@ -126,7 +126,7 @@ A farinha de trigo, de centeio, de cevada ou de aveia é um cereal com glúten p
 
 A farinha no ar é um veículo. Um pão que a ficha declara sem um determinado alergénio não pode partilhar a mesma nuvem de farinha, a mesma tábua e o mesmo pano sem que a casa o tenha decidido por escrito. A [higiene e segurança alimentar](https://aichef.pro/pt/blog/higiene-e-seguranca-alimentar) trata o pano, a bancada e a receção. O plano em si está em [HACCP](https://aichef.pro/pt/blog/haccp). A massa mãe é uma entrada desse plano, não o plano.
 
-A ASAE fiscaliza. A ficha não substitui o rótulo do saco de farinha. Mudou o saco, lê-se o saco.
+A ASAE fiscaliza. A ficha não substitui o rótulo do saco de farinha. Mudou o saco, lê-se o saco. Um molho de peixe fermentado é outra folha de produção, não esta cultura: o método está em [garum](https://aichef.pro/pt/blog/garum).
 
 ## A Portaria n.º 254/2003
 

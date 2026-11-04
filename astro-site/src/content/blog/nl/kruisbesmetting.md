@@ -2,7 +2,7 @@
 title: "Kruisbesmetting in de horeca: allergenen scheiden op de pass"
 description: "Kruisbesmetting met allergenen op de pass: wat op het bord komt zonder in het recept te staan, en hoe u plank, frituur en tang scheidt. Geen medisch advies."
 pubDate: 2026-11-02
-modDate: 2026-11-02
+modDate: 2026-11-04
 category: voedselveiligheid
 tags: ["kruisbesmetting", "allergenen", "horeca", "pass"]
 image: /blog-assets/2026/08/allergenkz-matrix.jpg
@@ -116,7 +116,7 @@ Een «kan bevatten» onderaan de kaart, zonder blad en zonder scheiding op de pa
 
 ## Vlaanderen
 
-De lijst van 14 is Europees. In België houdt het FAVV toezicht. De Nederlandse beleidsregel en de Nederlandse uitleg over mondeling informeren gelden daar niet automatisch. Belgische zaken werken met hun autocontrolegids. Dit artikel legt die gids niet uit, en het legt de hygiënecode niet uit. Die code is een volgend onderwerp, niet een alinea hier.
+De lijst van 14 is Europees. In België houdt het FAVV toezicht. De Nederlandse beleidsregel en de Nederlandse uitleg over mondeling informeren gelden daar niet automatisch. Belgische zaken werken met hun autocontrolegids. Dit artikel legt die gids niet uit. Wat de Nederlandse code een restaurant verplicht, staat in [de hygiënecode voor de horeca](https://aichef.pro/nl/blog/hygienecode).
 
 <aside class="dp-banner not-prose" data-product="pastry-shop-checklist-templates"><a class="dp-banner__photo-link" href="https://aichef.pro/en/digital-products/pastry-shop-checklist-templates?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=kruisbesmetting" target="_blank" rel="noopener"><img class="dp-banner__photo" src="https://aichef.pro/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg" alt="Pastry Shop Checklists Kit Pro" loading="lazy" decoding="async" /></a><div class="dp-banner__body"><div class="dp-banner__top"><p class="dp-banner__tag">Digital product</p><img class="dp-banner__logo" src="/email-assets/aichef-pro-logo-white.png" alt="AI Chef Pro" /></div><p class="dp-banner__title"><a class="dp-banner__title-link" href="https://aichef.pro/en/digital-products/pastry-shop-checklist-templates?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=kruisbesmetting" target="_blank" rel="noopener">Pastry Shop Checklists Kit Pro</a></p><p class="dp-banner__price">$19</p><a class="dp-banner__cta" href="https://aichef.pro/en/digital-products/pastry-shop-checklist-templates?utm_source=aichef&amp;utm_medium=blog&amp;utm_campaign=productos-digitales&amp;utm_content=kruisbesmetting" target="_blank" rel="noopener">View product →</a></div></aside>
 
