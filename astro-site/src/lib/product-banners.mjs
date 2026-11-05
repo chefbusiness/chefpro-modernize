@@ -16,12 +16,23 @@
  *   · Título, precio e imagen salen del catálogo. Sin claims inventados.
  */
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-const CATALOGUE_PATH = fileURLToPath(new URL('../data/digital-products-catalogue.json', import.meta.url));
-const BLOG_DIR = fileURLToPath(new URL('../content/blog', import.meta.url));
+// Al importar ProductBanner desde una página, Vite mete este módulo en el
+// bundle SSR y `import.meta.url` deja de ser `src/lib/`. El remark del blog
+// sigue cargando el fichero suelto, donde la ruta de al lado sí existe.
+function resolveBesideModule(relativeUrl) {
+  const besideModule = fileURLToPath(new URL(relativeUrl, import.meta.url));
+  if (existsSync(besideModule)) return besideModule;
+  const fromSite = path.join(process.cwd(), 'src', relativeUrl.replace(/^\.\.\//, ''));
+  if (existsSync(fromSite)) return fromSite;
+  return besideModule;
+}
+
+const CATALOGUE_PATH = resolveBesideModule('../data/digital-products-catalogue.json');
+const BLOG_DIR = resolveBesideModule('../content/blog');
 
 /**
  * Catálogo que vende cada idioma del blog.

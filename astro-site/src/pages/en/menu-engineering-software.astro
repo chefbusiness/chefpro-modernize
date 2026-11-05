@@ -1,0 +1,355 @@
+---
+// Landing comercial EN, solo este idioma. No pasa por fase6-generate-marketing.py:
+// no hay gemela ES/FR/DE/IT/PT/NL en este cambio, y el registro de marketing
+// exige los siete slugs. El head usa el mismo BaseLayout que /en/pricing
+// (hreflang solo en), y el cuerpo reutiliza Header, Footer, Pricing y ProductBanner.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Pricing from '../../components/Pricing.astro';
+import ProductBanner from '../../components/blog/ProductBanner.astro';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { SITE } from '../../i18n/config';
+import { appCtaUrl } from '../../lib/app-url';
+
+type CatalogueRow = { url: string; title: string; image: string; price: string };
+
+// Importar el JSON desde la página lo busca en dist/pages/data y el build aborta.
+// El catálogo se lee en el servidor, en el mismo sitio que product-banners.mjs.
+const catalogue = JSON.parse(
+  readFileSync(join(process.cwd(), 'src/data/digital-products-catalogue.json'), 'utf8'),
+) as { en: CatalogueRow[] };
+
+const lang = 'en';
+const basePath = '/menu-engineering-software';
+const canonical = `${SITE}/en/menu-engineering-software`;
+
+const title = 'Menu Engineering Software for Restaurants | AI Chef Pro';
+const description =
+  'AI menu engineering for restaurants: classify stars, puzzles, plowhorses and dogs, cost every plate and rebuild the menu. Member from €10/month. No free plan.';
+const keywords =
+  'menu engineering software, AI menu engineering, restaurant menu profitability, recipe costing, food cost, stars puzzles plowhorses dogs';
+
+const h1 = 'Menu engineering software for restaurants';
+
+const cta = (content: string) => appCtaUrl(lang, 'landing-menu-engineering', content);
+
+const enProducts = catalogue.en;
+
+function bannerFor(slug: string) {
+  const row = enProducts.find((product) => product.url.split('/').filter(Boolean).pop() === slug);
+  if (!row) {
+    throw new Error(`EN catalogue has no product «${slug}»`);
+  }
+  const href = new URL(row.url);
+  href.searchParams.set('utm_source', 'aichef');
+  href.searchParams.set('utm_medium', 'landing');
+  href.searchParams.set('utm_campaign', 'productos-digitales');
+  href.searchParams.set('utm_content', 'menu-engineering-software');
+  return {
+    id: slug,
+    title: row.title,
+    price: row.price,
+    image: row.image,
+    href: href.toString(),
+    catalogue: 'en' as const,
+  };
+}
+
+const guideBanner = bannerFor('food-cost-menu-engineering-guide');
+const kitBanner = bannerFor('food-cost-templates');
+const financialBanner = bannerFor('restaurant-financial-plan-templates');
+
+const faqs = [
+  {
+    q: 'What is menu engineering software?',
+    a: 'Menu engineering software ranks each dish on contribution margin and popularity, then sorts the menu into stars, puzzles, plowhorses and dogs. The point is to decide what to promote, reprice, rewrite or remove. A single-dish food cost percentage is a different job.',
+  },
+  {
+    q: 'What is AI menu engineering?',
+    a: 'AI menu engineering is the same classification, done with hospitality AI agents instead of a blank spreadsheet. In AI Chef Pro you cost the recipe, load your vendor prices, and the agents help you read which dishes earn their place on the menu. It is part of the paid membership, starting with AI Chef Member at €10/month.',
+  },
+  {
+    q: 'How is AI Chef Pro different from meez, MarketMan or MarginEdge?',
+    a: 'meez, MarketMan and MarginEdge are inventory and purchasing platforms: invoices, stock and recipe costing tied to what you buy. meez also markets AI menu analysis on that culinary record. AI Chef Pro does not replace them. It does not capture invoices, run stock counts or act as the purchasing system of record. It is a paid suite of AI agents for food cost, recipe costing and menu analysis. Supplier prices are typed in or imported from a spreadsheet. A CSV cost card can be imported into MarketMan, MarginEdge, Toast, Square or Lightspeed when those tools accept CSV. That handoff is an export, not a live inventory sync.',
+  },
+  {
+    q: 'Is there a free menu engineering plan?',
+    a: 'No. AI Chef Pro has no free plan. The entry membership is AI Chef Member at €10 per month, with 10,000 credits and the 75+ AI agents. You can cancel anytime. The Food Cost Calculator for Restaurants is a separate single-dish calculator and is not this software.',
+  },
+  {
+    q: 'What does the Member plan include for menu work?',
+    a: 'AI Chef Member is €10/month and includes 10,000 credits, the 75+ AI agents and email support. Premium Pro is €25/month (85,000 credits), Premium Plus is €50/month (175,000 credits), Premium Max is €95/month with unlimited credits, and Premium Max Annual is €950/year. Digital packs such as the Food Cost Kit Pro are one-time purchases, not included as a free tier.',
+  },
+  {
+    q: 'Do I have to drop my inventory system to use it?',
+    a: 'No. Keep meez, MarketMan, MarginEdge or your POS as the system that receives invoices and counts stock. Use AI Chef Pro to cost plates and engineer the menu, then move a CSV cost card across if your inventory tool imports CSV. Direct supplier connections are not part of the membership today.',
+  },
+];
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/en` },
+      { '@type': 'ListItem', position: 2, name: 'Menu engineering software', item: canonical },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    headline: h1,
+    description,
+    url: canonical,
+    inLanguage: 'en',
+    isPartOf: { '@type': 'WebSite', name: 'AI Chef Pro', url: SITE },
+  },
+];
+
+const classes = [
+  { name: 'Stars', detail: 'High contribution margin and high popularity. Keep them where guests can see them.' },
+  { name: 'Puzzles', detail: 'High margin, low popularity. They need a clearer description, a better position or a price check.' },
+  { name: 'Plowhorses', detail: 'Low margin, high popularity. They fill the pass and can pull food cost % up.' },
+  { name: 'Dogs', detail: 'Low margin and low popularity. Candidates to rework or take off the menu.' },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  locales={['en']}
+  basePath={basePath}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}
+  </Fragment>
+
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+    <header class="mx-auto mb-16 max-w-3xl text-center">
+      <p class="mb-4 inline-flex rounded-full border border-border bg-card px-3 py-1 text-sm font-medium text-foreground">
+        Paid membership · not a free tool
+      </p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground text-balance sm:text-5xl">
+        {h1}
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground text-balance">
+        AI menu engineering that sorts every dish by contribution margin and popularity, then shows what to promote, reprice or take off the menu. The membership starts at €10/month.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={cta('hero')}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Start with Member
+        </a>
+        <a
+          href="#pricing"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          See plans and pricing
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-muted-foreground">
+        AI Chef Member · €10/month · 10,000 credits · Cancel anytime
+      </p>
+    </header>
+
+    <section class="mx-auto max-w-3xl" aria-labelledby="what-it-is">
+      <h2 id="what-it-is" class="text-3xl font-bold text-foreground">What menu engineering software is</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        Menu engineering software ranks each dish on two numbers the dining room already feels: how much money is left after food cost (contribution margin) and how often the dish sells (popularity). The grid has four names.
+      </p>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {classes.map((item) => (
+          <li class="rounded-xl border border-border bg-card p-5">
+            <h3 class="text-lg font-semibold text-foreground">{item.name}</h3>
+            <p class="mt-2 text-sm leading-6 text-muted-foreground">{item.detail}</p>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-6 text-muted-foreground leading-7">
+        That classification is the job of this page. A one-plate percentage is a different job. If you only need the food cost of a single dish, use the
+        <a href="/en/food-cost-calculator-restaurant" class="font-semibold text-primary hover:underline">Food Cost Calculator for Restaurants</a>.
+        It does not require an account, and it is not a plan of AI Chef Pro. Menu engineering across the whole card is the paid membership.
+      </p>
+    </section>
+
+    <div class="mx-auto mt-10 max-w-3xl">
+      <ProductBanner {...guideBanner} />
+    </div>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="how-it-runs">
+      <h2 id="how-it-runs" class="text-3xl font-bold text-foreground">How AI menu engineering runs in AI Chef Pro</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        The same membership that costs a recipe also reads the menu. Nothing here is a free tier. You work inside the agents, on credits, from the Member plan up.
+      </p>
+      <ol class="mt-8 space-y-6">
+        <li class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-lg font-semibold text-foreground">1. Recipe costing</h3>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">
+            Describe the dish. The AI agents return a recipe and a cost card. You enter real vendor prices, typed in or pasted from a spreadsheet, and the card shows plate cost and food cost %. The step-by-step for that workflow is
+            <a href="/en/use-cases/task/recipe-costing-with-ai" class="font-semibold text-primary hover:underline">How to Build Recipe Costing with AI</a>.
+          </p>
+        </li>
+        <li class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-lg font-semibold text-foreground">2. Menu analysis</h3>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">
+            With plates costed, the agents classify the menu into stars, puzzles, plowhorses and dogs and point at what to promote, redesign or drop. That is the menu engineering step.
+          </p>
+        </li>
+        <li class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-lg font-semibold text-foreground">3. Menu rewrite</h3>
+          <p class="mt-2 text-sm leading-6 text-muted-foreground">
+            Names, descriptions and where a dish sits on the card come after the matrix, not before it. The design companion is
+            <a href="/en/restaurant-menu-ai" class="font-semibold text-primary hover:underline">Restaurant Menu Design with AI</a>.
+            This page stays on profitability.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <div class="mx-auto mt-10 max-w-3xl">
+      <ProductBanner {...kitBanner} />
+    </div>
+
+    <section class="mt-16" aria-labelledby="not-an-erp">
+      <div class="mx-auto max-w-3xl">
+        <h2 id="not-an-erp" class="text-3xl font-bold text-foreground">How this differs from meez, MarketMan and MarginEdge</h2>
+        <p class="mt-4 text-muted-foreground leading-7">
+          meez, MarketMan and MarginEdge are inventory and purchasing platforms. meez presents recipe management and food costing for groups, and it markets AI menu analysis on that record. MarketMan centers on inventory, purchasing and recipe costing. MarginEdge centers on invoice processing, recipe costing and inventory. Those descriptions follow what each vendor publishes. This page does not quote their prices.
+        </p>
+        <p class="mt-4 text-muted-foreground leading-7">
+          AI Chef Pro does not replace that stack. It does not capture invoices, count stock or sit as the system of record for purchasing. Direct supplier connections are not part of the membership today. You type vendor prices or import a spreadsheet. When a cost card needs to live in an inventory tool, the recipe-costing page already describes the handoff: a CSV you can import into MarketMan, MarginEdge, Toast, Square or Lightspeed if that product accepts CSV. An export is not a live sync.
+        </p>
+      </div>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-border">
+        <table class="w-full min-w-[640px] border-collapse text-sm">
+          <thead>
+            <tr class="bg-muted/50 text-left">
+              <th class="p-4 font-semibold text-foreground">Question</th>
+              <th class="p-4 font-semibold text-foreground">meez, MarketMan, MarginEdge</th>
+              <th class="p-4 font-semibold text-foreground">AI Chef Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-border">
+              <th class="p-4 text-left font-medium text-foreground" scope="row">Built around</th>
+              <td class="p-4 text-muted-foreground">Purchasing, invoices and inventory. meez also markets AI menu analysis on its recipe record.</td>
+              <td class="p-4 text-muted-foreground">Paid AI agents for food cost, recipe costing and menu analysis.</td>
+            </tr>
+            <tr class="border-t border-border">
+              <th class="p-4 text-left font-medium text-foreground" scope="row">How prices arrive</th>
+              <td class="p-4 text-muted-foreground">Invoice capture and supplier feeds on their platforms.</td>
+              <td class="p-4 text-muted-foreground">You type prices or paste a spreadsheet. No invoice inbox.</td>
+            </tr>
+            <tr class="border-t border-border">
+              <th class="p-4 text-left font-medium text-foreground" scope="row">Menu engineering</th>
+              <td class="p-4 text-muted-foreground">Where the vendor offers it, it sits on top of the inventory record.</td>
+              <td class="p-4 text-muted-foreground">Stars, puzzles, plowhorses and dogs from contribution margin and popularity.</td>
+            </tr>
+            <tr class="border-t border-border">
+              <th class="p-4 text-left font-medium text-foreground" scope="row">What you pay here</th>
+              <td class="p-4 text-muted-foreground">Their own subscription. Not listed on this page.</td>
+              <td class="p-4 text-muted-foreground">Member €10/month. Premium from €25/month. See the plans below.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="packs">
+      <h2 id="packs" class="text-3xl font-bold text-foreground">One-time packs, separate from the membership</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        The guides and workbooks are a one-time purchase with lifetime access to their files. They do not replace the subscription, and they are not a free plan. The Food Cost + Menu Engineering Guide and the Food Cost Kit Pro sit next to the menu work. The Restaurant Financial Plan Kit Pro is the venue workbook for projections and cash flow once the menu is costed. It is not menu engineering software.
+      </p>
+      <ProductBanner {...financialBanner} />
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl" aria-labelledby="keep-reading">
+      <h2 id="keep-reading" class="text-3xl font-bold text-foreground">Keep reading</h2>
+      <p class="mt-4 text-muted-foreground leading-7">
+        These pages go deeper on a slice of the same work. They are not a second copy of this offer. Plans and signup stay on
+        <a href="/en/pricing" class="font-semibold text-primary hover:underline">AI Chef Pro pricing</a>
+        and on the English app.
+      </p>
+      <ul class="mt-6 space-y-3 text-muted-foreground">
+        <li>
+          <a href="/en/blog/menu-engineering-software-complete-guide" class="font-semibold text-primary hover:underline">Best Menu Engineering Software: 10 Tools Compared for Profit Optimization</a>
+          <span> — a comparison article, not the product page.</span>
+        </li>
+        <li>
+          <a href="/en/blog/ai-menu-engineering-software" class="font-semibold text-primary hover:underline">AI Menu Engineering Software: How Artificial Intelligence Optimizes Restaurant Menus</a>
+          <span> — how the matrix changes when an agent does the first pass.</span>
+        </li>
+        <li>
+          <a href="/en/blog/best-recipe-costing-software-compared" class="font-semibold text-primary hover:underline">Best Recipe Costing Software: 10 Tools Compared</a>
+          <span> — the costing cluster, before you engineer the menu.</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="-mx-4 mt-8">
+      <Pricing lang={lang} medium="landing-menu-engineering" schema={false} />
+    </div>
+
+    <section class="mx-auto mt-4 max-w-3xl" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="mb-8 text-center text-3xl font-bold text-foreground">Questions about menu engineering software</h2>
+      <div class="space-y-3">
+        {faqs.map((faq) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-foreground">
+              {faq.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm leading-6 text-muted-foreground">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-8 text-center sm:p-10">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Engineer the menu on a paid plan</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Open the English app, choose AI Chef Member at €10/month, and put the first menu through recipe costing and the four-class matrix. Upgrade only when the credit count says you should. Full prices sit on
+        <a href="/en/pricing" class="font-semibold text-primary hover:underline">the pricing page</a>.
+      </p>
+      <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={cta('final')}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex h-11 items-center justify-center rounded-md bg-accent px-6 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark"
+        >
+          Start with Member
+        </a>
+        <a
+          href="#pricing"
+          class="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-muted"
+        >
+          Compare plans
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>
